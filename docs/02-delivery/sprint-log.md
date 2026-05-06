@@ -16,6 +16,23 @@ last_reviewed: 2026-05-06
 
 # Sprint log
 
+
+## Sprint cerrado — Sprint 20: Tutor GCM Consolidation and Closure
+- **Estado**: CERRADO LOCAL (QA + DOCUMENTACION)
+- **Fecha**: 2026-05-06
+- **Objetivo**: corregir drift funcional/copy de acciones guiadas, preservar borrador en textarea y reconciliar documentacion viva del frente Tutor GCM sin tocar backend critico.
+
+### Entregado
+- `TutorInterface`: acciones guiadas alineadas con intents actuales (`give_hint`, `clarify_concept`, `explain_question`, `analyze_user_rationale`, `explain_feedback`, `recommend_study_plan`).
+- `TutorInterface`: click en accion guiada ya no sobreescribe ni destruye permanentemente el borrador escrito en textarea.
+- `tutor.test.ts`: cobertura adicional para validar mapeo de copy guiado -> intent esperado y mantener guardrails pre-respuesta.
+- Documentacion viva reconciliada (`status`, `sprint-log`, `change-log`, `backlog`) con estado Sprint 15/15.1/16/17/18/19/20 sin inventar cierres no verificables.
+
+### Guardrails preservados
+- Sin cambios en scoring, avance, cierre de sesion o seleccion de items.
+- Sin cambios en contrato de trazas ni endpoint de resumen.
+- Sin cambios de Docker/VPS/deploy en este sprint.
+
 ## Sprint cerrado — Sprint 13: Fuente de verdad normativa sintetizada v1
 - **Estado**: CERRADO CON WARN EXPLICITO
 - **Fecha**: 2026-05-04

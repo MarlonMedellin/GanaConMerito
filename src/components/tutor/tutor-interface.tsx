@@ -10,12 +10,12 @@ interface TutorInterfaceProps {
 
 export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps) {
   const guidedActions = [
-    "Dame una pista inicial sin revelar la clave",
-    "Ayúdame a interpretar el enunciado",
+    "Dame una pista",
+    "Explícame esta pregunta",
     "Compara las opciones sin decir cuál es la correcta",
-    "Revisa mi razonamiento y señala mejoras",
-    "Explícame este feedback en palabras simples",
-    "Sugiere qué tema debo reforzar después",
+    "Analiza mi justificación",
+    "Explícame el feedback",
+    "Qué tema debo reforzar",
   ];
   const [isOpen, setIsOpen] = useState(true);
   const [message, setMessage] = useState("");
@@ -23,7 +23,7 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  async function sendMessage(nextMessage: string) {
+  async function sendMessage(nextMessage: string, options?: { clearMessage?: boolean }) {
     if (!nextMessage.trim() || loading) return;
     setLoading(true);
     setError(null);
@@ -46,7 +46,9 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
       }
 
       setLastResponse(data.output);
-      setMessage("");
+      if (options?.clearMessage ?? true) {
+        setMessage("");
+      }
     } catch (err) {
       setError(err instanceof Error ? err.message : "Error desconocido");
     } finally {
@@ -60,8 +62,7 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
   }
 
   async function handleGuidedAction(action: string) {
-    setMessage(action);
-    await sendMessage(action);
+    await sendMessage(action, { clearMessage: false });
   }
 
   if (!isOpen) {
