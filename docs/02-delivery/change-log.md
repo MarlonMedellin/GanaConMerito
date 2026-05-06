@@ -15,6 +15,14 @@ last_reviewed: 2026-05-06
 # Change log
 
 ## 2026-05-06
+- tipo: fix+qa+docs
+- modulo: tutor/ui/tests/documentation
+- resumen: sprint 20 de consolidacion Tutor GCM. Se normaliza copy de acciones guiadas para recuperar compatibilidad con `detectTutorIntent` sin tocar backend; se corrige UX para que una accion guiada no destruya el borrador del textarea; se agregan pruebas locales de mapeo accion->intent y se reconcilia documentacion viva hasta Sprint 20 con notas explicitas de verificabilidad.
+- sprint: Sprint 20 — Tutor GCM Consolidation and Closure
+- agente: ChatGPT
+- relacionados: src/components/tutor/tutor-interface.tsx, src/lib/tutor/tutor.test.ts, docs/project/status.md, docs/02-delivery/sprint-log.md, docs/01-product/backlog.md
+
+## 2026-05-06
 - tipo: docs+governance+ops
 - modulo: governance/release/runtime
 - resumen: se actualiza la gobernanza operativa para dejar explicito que la fuente de verdad del producto es el repo principal `https://github.com/ProfeMarlonMDE/GanaConMerito`; que existen multiples origenes de edicion concurrentes; que toda promocion estable debe pasar por Pull Request a `master`; que luego debe sincronizarse `~/.openclaw/product`, despues `/opt/gcm/app` y finalmente Docker en el VPS OCI; y que la validacion relevante debe correrse contra `https://cnsc.profemarlon.com`. Tambien se fija la continuidad del roadmap desde Sprint 14 porque la fuente ya tiene evidencia hasta Sprint 13.

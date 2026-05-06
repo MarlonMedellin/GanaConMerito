@@ -10,11 +10,11 @@ last_reviewed: 2026-05-06
 
 # Project Status — GanaConMerito
 
-Ultima actualizacion: 2026-05-06 — Estado confirmado hasta Sprint 13 y continuidad planificada desde Sprint 14.
+Ultima actualizacion: 2026-05-06 — Estado reconciliado hasta Sprint 20 para el frente Tutor GCM (consolidacion local y documental).
 
 ## Estado general
 
-**Estado:** Sprint 13 cerrado como fuente normativa sintetizada v1 gobernada, no verificada.  
+**Estado:** Sprint 20 de consolidacion Tutor GCM cerrado a nivel local (QA + docs), manteniendo la fuente normativa sintetizada v1 como no verificada.  
 **Producto:** producto activo con core operativo, Tutor GCM gobernado, dashboard con metricas prudentes y contrato de fuente normativa minima.  
 **Rama canonica:** `master`.  
 **Version declarada en `package.json`:** `0.6.0`.
@@ -136,3 +136,18 @@ El estado actual se considera cerrado si:
 - el Tutor GCM sigue degradando cuando falta evidencia;
 - no se toca scoring, avance, cierre de sesion, Docker, VPS ni Supabase Dashboard;
 - los documentos `runtime-flow-map.md` y `server-side-service-role-policy.md` quedan creados.
+
+
+## Consolidacion Tutor GCM (Sprint 15 -> Sprint 20)
+
+- Sprint 15: trazas/metricas del tutor reportadas en el roadmap, pero sin verificacion publica nueva en este checkout.
+- Sprint 15.1: hardening de agregados y filtrado de guardrails reportado como continuidad; mantener nota de verificacion pendiente contra runtime publico.
+- Sprint 16: UX guiada del tutor introducida con acciones sugeridas y textarea libre coexistiendo.
+- Sprint 17: consumidor visual del resumen de trazas disponible en dashboard/practica (sin cambios de contrato en este sprint).
+- Sprint 18: normalizacion de copy de acciones guiadas y mensajes de apoyo.
+- Sprint 19: hardening QA local del tutor solo parcialmente verificable en este checkout; no se declara cierre publico desde aqui.
+- Sprint 20: se corrige compatibilidad de copy guiado con intents actuales, se evita perdida permanente del borrador en textarea y se actualiza documentacion viva.
+
+**Riesgos abiertos:**
+- La fuente normativa sigue en `synthesized_governed_unverified`.
+- Falta validacion publica final de cierre Tutor GCM posterior a esta consolidacion local.

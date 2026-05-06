@@ -62,14 +62,16 @@ GanaConMerito tiene activo el core real de producto:
 
 ## Now
 1. Mantener Sprint 13 como fuente normativa sintetizada no verificada hasta cargar documentos oficiales.
-2. Mantener disciplina de promocion: PR al repo principal -> `master` -> `~/.openclaw/product` -> `/opt/gcm/app` -> Docker OCI -> validacion en `https://cnsc.profemarlon.com`.
-3. Agregar script general `npm test` y baseline local de QA.
-4. Preparar persistencia de `TutorTurnTrace` para metricas pedagogicas.
-5. Mantener Tutor GCM bajo contrato: sin scoring, sin avance, sin cierre, sin fuente normativa inventada.
+2. Consolidacion Sprint 20 aplicada: copy guiado del tutor compatible con intents actuales y preservacion de borrador en textarea (localmente validado).
+3. Mantener disciplina de promocion: PR al repo principal -> `master` -> `~/.openclaw/product` -> `/opt/gcm/app` -> Docker OCI -> validacion en `https://cnsc.profemarlon.com`.
+4. Agregar script general `npm test` y baseline local de QA.
+5. Preparar persistencia de `TutorTurnTrace` para metricas pedagogicas.
+6. Mantener Tutor GCM bajo contrato: sin scoring, sin avance, sin cierre, sin fuente normativa inventada.
 
 ## Next
-1. **Sprint 14 — Persistencia y metricas del Tutor GCM**: guardar `TutorTurnTrace` para metricas pedagogicas y auditoria operativa.
-2. **Sprint 15 — Fuente normativa oficial verificada**: cargar acuerdo, guia metodologica, estructura de prueba, perfiles/empleos y versionado de fuente.
+1. **Cierre final Tutor GCM (post Sprint 20)**: validacion publica final del frente con evidencia runtime y PR de cierre.
+2. **Sprint 14 — Persistencia y metricas del Tutor GCM**: guardar `TutorTurnTrace` para metricas pedagogicas y auditoria operativa.
+3. **Sprint 15 — Fuente normativa oficial verificada**: cargar acuerdo, guia metodologica, estructura de prueba, perfiles/empleos y versionado de fuente.
 3. **Sprint 16 — Release y runtime confiables**: CI minima en GitHub Actions, build, tests unitarios, validacion documental y disciplina publica de runtime.
 4. **UX guiada del Tutor GCM**: reemplazar caja libre dominante por acciones pedagogicas guiadas.
 5. **Runtime topology doc**: documentar `docker-compose.yml`, env file, dominio, proxy y politica de secretos.
