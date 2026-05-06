@@ -249,6 +249,9 @@ function compareDashboardSummary({ actual, expected, collector, label = 'Dashboa
   collector.check(JSON.stringify(actual.weakestCompetencies || []) === JSON.stringify(expected.weakestCompetencies || []), `${label} weakestCompetencies no cuadra con contrato de señal`, `esperado=${JSON.stringify(expected.weakestCompetencies)} actual=${JSON.stringify(actual.weakestCompetencies)}`);
   collector.check(String(actual.signalLevel || '') === String(expected.signalLevel || ''), `${label} signalLevel no cuadra con contrato de señal`, `esperado=${expected.signalLevel} actual=${actual.signalLevel}`);
   collector.check(String(actual.signalLabel || '') === String(expected.signalLabel || ''), `${label} signalLabel no cuadra con contrato de señal`, `esperado=${expected.signalLabel} actual=${actual.signalLabel}`);
+  collector.check(Boolean(actual.canShowStrongConclusion) === Boolean(expected.canShowStrongConclusion), `${label} canShowStrongConclusion no cuadra con contrato de señal`, `esperado=${expected.canShowStrongConclusion} actual=${actual.canShowStrongConclusion}`);
+  collector.check(Boolean(actual.canShowTrend) === Boolean(expected.canShowTrend), `${label} canShowTrend no cuadra con contrato de señal`, `esperado=${expected.canShowTrend} actual=${actual.canShowTrend}`);
+  collector.check(Boolean(actual.canShowPercentile) === Boolean(expected.canShowPercentile), `${label} canShowPercentile no cuadra con contrato de señal`, `esperado=${expected.canShowPercentile} actual=${actual.canShowPercentile}`);
 }
 
 function normalizeDashboardText(input) {
