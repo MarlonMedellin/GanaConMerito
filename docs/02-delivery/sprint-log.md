@@ -16,6 +16,29 @@ last_reviewed: 2026-05-04
 
 # Sprint log
 
+## Sprint cerrado — Sprint 20: Auditoría Runtime Tutor GCM
+- **Estado**: CERRADO CON PASS (LIMITACIÓN EN ONBOARDING)
+- **Fecha**: 2026-05-07
+- **Commit en master/runtime validado**: `9cd7ce44ab60ff7f24a996c244244239bb5f3b97`
+- **Short hash runtime**: `9cd7ce4`
+- **Objetivo**: auditar la integridad funcional y pedagógica del Tutor GCM en el entorno de producción, verificando el cumplimiento de guardrails y la persistencia de sesión post-despliegue.
+
+### Entregado
+- `docs/02-delivery/tutor-gcm-sprint-20-runtime-audit.md` (Reporte de auditoría detallado).
+- `artifacts/qa/tutor-gcm-latest-sprints-report.json` (Evidencia JSON sanitizada).
+- `artifacts/qa/tutor-gcm-sprint-20-evidence.png` (Evidencia visual sanitizada).
+
+### Validaciones Ejecutadas
+- [x] Integridad de Commit: el runtime muestra `9cd7ce4`.
+- [x] Persistencia de sesión: el estado autenticado se mantiene tras inyección de cookies.
+- [x] Guardrail Pre-Respuesta: el tutor rechaza revelar la clave antes de que el usuario responda.
+- [x] Explicación Post-Respuesta: el tutor explica la clave registrada tras la validación del ítem.
+- [x] Dashboard: operativo y navegable.
+
+### Riesgos y Notas Operativas
+- **Bypass Onboarding**: se utilizó bypass a nivel de DB para estabilizar la prueba automatizada. El flujo UI de onboarding no fue validado de punta a punta.
+- **Seguridad**: se reporta exposición de secretos en logs de terminal previos. Se recomienda la rotación de `SUPABASE_SERVICE_ROLE_KEY`.
+
 ## Sprint cerrado — Sprint 13: Fuente de verdad normativa sintetizada v1
 - **Estado**: CERRADO CON WARN EXPLICITO
 - **Fecha**: 2026-05-04

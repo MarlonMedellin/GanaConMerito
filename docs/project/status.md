@@ -5,12 +5,12 @@ project: ganaconmerito
 owner: marlon-arcila
 status: active
 artifact_type: project
-last_reviewed: 2026-05-04
+last_reviewed: 2026-05-07
 ---
 
 # Project Status — GanaConMerito
 
-Ultima actualizacion: 2026-05-04 — Cierre Sprint 13.
+Ultima actualizacion: 2026-05-07 — Cierre Sprint 20.
 
 ## Estado general
 
@@ -21,11 +21,11 @@ Ultima actualizacion: 2026-05-04 — Cierre Sprint 13.
 
 ## Verdad operativa actual
 
-- **HEAD base de Sprint 13:** `88f997c232dcf2cb1958642e9055e26f0805778d`.
-- **Ultimo runtime productivo validado antes de Sprint 13:** `64d78de`.
-- **Build time productivo validado antes de Sprint 13:** `2026-05-04T03:24:21Z`.
+- **HEAD base de Sprint 20:** `9cd7ce44ab60ff7f24a996c244244239bb5f3b97`.
+- **Ultimo runtime productivo validado:** `9cd7ce4`.
+- **Build time productivo validado:** `2026-05-06T23:08:12Z`.
 - **Entorno publico validado:** `https://cnsc.profemarlon.com`.
-- **Nota:** Sprint 13 modifica contratos/documentacion y no despliega runtime desde esta ejecucion.
+- **Nota:** Auditoría de Sprint 20 centrada en Tutor GCM y guardrails pedagógicos.
 
 ## Modulos activos
 

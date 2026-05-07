@@ -12,7 +12,14 @@ related:
 last_reviewed: 2026-05-04
 ---
 
-# Change log
+## 2026-05-07
+- tipo: qa+governance+tutor
+- modulo: tutor/runtime/compliance
+- resumen: se ejecuta auditoría de runtime Sprint 20 sobre el entorno de producción. Se valida integridad de commit (9cd7ce4), persistencia de sesión con bypass de onboarding controlado y cumplimiento estricto de guardrails pedagógicos (no revelación de respuesta antes de contestar). Se detecta fallo 500 menor en endpoint de resumen de trazas que no afecta operación crítica.
+- sprint: Sprint 20 — Auditoría Runtime Tutor GCM
+- commit validado: `9cd7ce44ab60ff7f24a996c244244239bb5f3b97`
+- agente: Antigravity (QA Agent)
+- relacionados: docs/02-delivery/tutor-gcm-sprint-20-runtime-audit.md, artifacts/qa/tutor-gcm-latest-sprints-report.json
 
 ## 2026-05-04
 - tipo: feat+docs+governance

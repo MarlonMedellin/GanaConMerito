@@ -11,7 +11,7 @@ related:
   - PROD-VISION
   - DEL-SPRINT-LOG
   - QUAL-DEBT-REGISTER
-last_reviewed: 2026-05-04
+last_reviewed: 2026-05-07
 ---
 
 # Backlog de producto
@@ -31,8 +31,14 @@ GanaConMerito tiene activo el core real de producto:
 - fuente normativa sintetizada v1 en estado `synthesized_governed_unverified`
 - metricas prudentes para no vender conclusiones fuertes con poca senal
 - runtime con metadata visible y disciplina de triple verificacion
+- **Auditoría de Runtime (Sprint 20):** PASS con limitación en onboarding.
 
 ## Implementado y validado recientemente
+
+### Sprint 20 — Auditoría Runtime Tutor GCM
+- Estado: CERRADO CON PASS.
+- Resultado: Validación exitosa de guardrails pedagógicos y runtime commit integrity sobre VPS.
+- Riesgo: Se detectó necesidad de rotación de secretos (Supabase Service Role Key).
 
 ### Sprint 13 — Fuente de verdad normativa sintetizada v1
 - Estado: CERRADO CON WARN EXPLICITO.
@@ -63,9 +69,10 @@ GanaConMerito tiene activo el core real de producto:
 ## Now
 1. Mantener Sprint 13 como fuente normativa sintetizada no verificada hasta cargar documentos oficiales.
 2. Mantener disciplina de triple verificacion `~/.openclaw/product = /opt/gcm/app = runtime visible`.
-3. Agregar script general `npm test` y baseline local de QA.
-4. Preparar persistencia de `TutorTurnTrace` para metricas pedagogicas.
-5. Mantener Tutor GCM bajo contrato: sin scoring, sin avance, sin cierre, sin fuente normativa inventada.
+3. Ejecutar rotación de `SUPABASE_SERVICE_ROLE_KEY` (Riesgo identificado en Sprint 20).
+4. Agregar script general `npm test` y baseline local de QA.
+5. Preparar persistencia de `TutorTurnTrace` para metricas pedagogicas.
+6. Mantener Tutor GCM bajo contrato: sin scoring, sin avance, sin cierre, sin fuente normativa inventada.
 
 ## Next
 1. **Persistencia de trazas del Tutor GCM**: guardar `TutorTurnTrace` para metricas pedagogicas y auditoria.
