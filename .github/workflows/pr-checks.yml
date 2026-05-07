@@ -8,10 +8,24 @@ on:
     branches:
       - master
 
+concurrency:
+  group: pr-checks-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
 jobs:
   build-and-test:
-    name: Build and unit tests
+    name: Build, test, and runtime smoke
     runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    env:
+      CI: true
+      NEXT_PUBLIC_APP_COMMIT: ${{ github.sha }}
+      NEXT_PUBLIC_APP_BUILD_TIME: ${{ github.event.pull_request.updated_at || github.event.head_commit.timestamp }}
+      PORT: 3000
 
     steps:
       - name: Checkout
@@ -37,6 +51,34 @@ jobs:
 
       - name: Build
         run: npm run build
-        env:
-          NEXT_PUBLIC_APP_COMMIT: ${{ github.sha }}
-          NEXT_PUBLIC_APP_BUILD_TIME: ${{ github.event.head_commit.timestamp }}
+
+      - name: Verify production start and health
+        run: |
+          npm run start &
+          APP_PID=$!
+          trap "kill $APP_PID" EXIT
+          for i in {1..30}; do
+            if curl -fsS "http://127.0.0.1:${PORT}" >/dev/null; then
+              echo "Application responded on ${PORT}"
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "App failed to become ready in time" >&2
+          exit 1
+
+  docker-build:
+    name: Container build reproducibility
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: |
+          docker build \
+            --build-arg APP_COMMIT="${GITHUB_SHA}" \
+            --build-arg APP_BUILD_TIME="$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
+            -t gcm-app:ci .
