@@ -1,0 +1,373 @@
+import { open, rm } from "node:fs/promises";
+import { spawn } from "node:child_process";
+
+export interface CommandResult {
+  command: string;
+  cwd: string;
+  exitCode: number | null;
+  durationMs: number;
+  stdout: string;
+  stderr: string;
+}
+
+export interface StepResult {
+  id: string;
+  title: string;
+  ok: boolean;
+  summary: string;
+  startedAt: string;
+  finishedAt: string;
+  details?: Record<string, unknown>;
+  commands: CommandResult[];
+}
+
+export interface UpdateReport {
+  ok: boolean;
+  requestedAt: string;
+  startedAt: string;
+  finishedAt: string;
+  durationMs: number;
+  targetBranch: string;
+  sourceOfTruth: string;
+  productDir: string;
+  deployDir: string;
+  composeFile: string;
+  runtimeBaseUrl: string;
+  productHeadBefore?: string | null;
+  productHeadAfter?: string | null;
+  deployHeadBefore?: string | null;
+  deployHeadAfter?: string | null;
+  testsExecuted: string[];
+  steps: StepResult[];
+  error?: string;
+}
+
+const CONFIG = {
+  repoUrl: process.env.GCM_REPO_URL ?? "https://github.com/ProfeMarlonMDE/GanaConMerito.git",
+  branch: process.env.GCM_DEPLOY_BRANCH ?? "master",
+  productDir: process.env.GCM_PRODUCT_DIR ?? "/home/ubuntu/.openclaw/product",
+  deployDir: process.env.GCM_DEPLOY_DIR ?? "/opt/gcm/app",
+  composeFile: process.env.GCM_DOCKER_COMPOSE_FILE ?? "/opt/gcm/docker-compose.yml",
+  runtimeBaseUrl: process.env.GCM_RUNTIME_BASE_URL ?? "http://127.0.0.1:3000",
+  qaBaseUrl: process.env.GCM_QA_BASE_URL ?? "http://127.0.0.1:3000",
+  envFile: process.env.GCM_DEPLOY_ENV_FILE ?? "/opt/gcm/env/gcm-app.env",
+  lockFile: process.env.GCM_WEB_UPDATE_LOCK_FILE ?? "/tmp/gcm-web-update.lock",
+} as const;
+
+const PREDEPLOY_TESTS = ["npm run lint", "npm run build", "npm run test:unit"] as const;
+const POSTDEPLOY_TESTS = [
+  "npm run qa:runtime:smoke",
+  "QA_BASE_URL=http://127.0.0.1:3000 npm run qa:smoke:postdeploy",
+  "QA_BASE_URL=http://127.0.0.1:3000 npm run qa:e2e:api",
+  "QA_BASE_URL=http://127.0.0.1:3000 npm run qa:e2e:ui",
+] as const;
+
+export async function runWebUpdate(): Promise<UpdateReport> {
+  const requestedAt = nowIso();
+  const startedTimestamp = Date.now();
+  const startedAt = nowIso();
+  const steps: StepResult[] = [];
+  const testsExecuted = [...PREDEPLOY_TESTS, ...POSTDEPLOY_TESTS];
+  let lockHandle: Awaited<ReturnType<typeof open>> | null = null;
+
+  const report: UpdateReport = {
+    ok: false,
+    requestedAt,
+    startedAt,
+    finishedAt: startedAt,
+    durationMs: 0,
+    targetBranch: CONFIG.branch,
+    sourceOfTruth: CONFIG.repoUrl,
+    productDir: CONFIG.productDir,
+    deployDir: CONFIG.deployDir,
+    composeFile: CONFIG.composeFile,
+    runtimeBaseUrl: CONFIG.runtimeBaseUrl,
+    testsExecuted,
+    steps,
+  };
+
+  try {
+    lockHandle = await open(CONFIG.lockFile, "wx");
+
+    const productProbe = await runCommand(`git -C "${CONFIG.productDir}" rev-parse --short HEAD`);
+    report.productHeadBefore = productProbe.stdout.trim() || null;
+    await pushStep(
+      steps,
+      await runStep("sync-product", "Sincronizar product con la fuente de verdad", async () => {
+        const commands: CommandResult[] = [];
+        commands.push(await runCommand(`test -d "${CONFIG.productDir}/.git"`));
+        commands.push(await runCommand(`git -C "${CONFIG.productDir}" remote get-url origin`));
+        commands.push(await runCommand(`git -C "${CONFIG.productDir}" status --short --branch`));
+        commands.push(await runCommand(`git -C "${CONFIG.productDir}" fetch origin --prune`));
+        commands.push(await runCommand(`git -C "${CONFIG.productDir}" checkout "${CONFIG.branch}"`));
+        commands.push(await runCommand(`git -C "${CONFIG.productDir}" pull --ff-only origin "${CONFIG.branch}"`));
+        commands.push(await runCommand(`git -C "${CONFIG.productDir}" rev-parse --short HEAD`));
+
+        const remoteUrl = commands[1].stdout.trim();
+        if (remoteUrl !== CONFIG.repoUrl) {
+          const error = new Error(`El remoto de product no coincide con la fuente esperada: ${remoteUrl}`);
+          (error as Error & { commands?: CommandResult[] }).commands = commands;
+          throw error;
+        }
+
+        const statusOutput = commands[2].stdout;
+        const statusLines = statusOutput
+          .split("\n")
+          .map((line) => line.trim())
+          .filter(Boolean)
+          .filter((line) => !line.startsWith("##"));
+        if (statusLines.length > 0) {
+          const error = new Error("La carpeta product tiene cambios locales. Se aborta para no pisar trabajo no promovido.");
+          (error as Error & { commands?: CommandResult[] }).commands = commands;
+          throw error;
+        }
+
+        report.productHeadAfter = commands[6].stdout.trim() || null;
+        return {
+          summary: `product quedó alineado en ${report.productHeadAfter ?? "n/d"}.`,
+          commands,
+          details: {
+            headBefore: report.productHeadBefore,
+            headAfter: report.productHeadAfter,
+            remote: remoteUrl,
+          },
+        };
+      }),
+    );
+
+    const deployProbe = await runCommand(`git -C "${CONFIG.deployDir}" rev-parse --short HEAD`);
+    report.deployHeadBefore = deployProbe.stdout.trim() || null;
+    await pushStep(
+      steps,
+      await runStep("sync-deploy", "Alinear árbol de deploy", async () => {
+        const commands: CommandResult[] = [];
+        commands.push(await runCommand(`test -d "${CONFIG.deployDir}/.git"`));
+        commands.push(await runCommand(`git -C "${CONFIG.deployDir}" fetch origin --prune`));
+        commands.push(await runCommand(`git -C "${CONFIG.deployDir}" checkout "${CONFIG.branch}"`));
+        commands.push(await runCommand(`git -C "${CONFIG.deployDir}" reset --hard "origin/${CONFIG.branch}"`));
+        commands.push(await runCommand(`git -C "${CONFIG.deployDir}" rev-parse --short HEAD`));
+
+        report.deployHeadAfter = commands[4].stdout.trim() || null;
+        return {
+          summary: `deploy quedó alineado en ${report.deployHeadAfter ?? "n/d"}.`,
+          commands,
+          details: {
+            headBefore: report.deployHeadBefore,
+            headAfter: report.deployHeadAfter,
+          },
+        };
+      }),
+    );
+
+    await pushStep(
+      steps,
+      await runStep("predeploy-tests", "Ejecutar validación local no interactiva", async () => {
+        const commands: CommandResult[] = [];
+        commands.push(await runCommand(`test -f "${CONFIG.envFile}"`));
+        commands.push(await runCommand("npm run lint", { cwd: CONFIG.productDir }));
+        commands.push(await runCommand("npm run build", { cwd: CONFIG.productDir }));
+        commands.push(await runCommand("npm run test:unit", { cwd: CONFIG.productDir }));
+
+        return {
+          summary: "Build, lint y tests unitarios quedaron ejecutados sobre product.",
+          commands,
+          details: {
+            envFile: CONFIG.envFile,
+          },
+        };
+      }),
+    );
+
+    await pushStep(
+      steps,
+      await runStep("docker-deploy", "Reconstruir y recrear Docker", async () => {
+        const appCommit = report.deployHeadAfter ?? report.productHeadAfter ?? "unknown";
+        const appBuildTime = nowIso();
+        const commands: CommandResult[] = [];
+        commands.push(await runCommand(`test -f "${CONFIG.composeFile}"`));
+        commands.push(await runCommand(`docker compose -f "${CONFIG.composeFile}" config`));
+        commands.push(
+          await runCommand(
+            `docker compose -f "${CONFIG.composeFile}" build --build-arg APP_COMMIT="${appCommit}" --build-arg APP_BUILD_TIME="${appBuildTime}" gcm-app`,
+          ),
+        );
+        commands.push(await runCommand(`docker compose -f "${CONFIG.composeFile}" up -d gcm-app`));
+        commands.push(await runCommand(`docker compose -f "${CONFIG.composeFile}" ps`));
+
+        return {
+          summary: `Docker reconstruido con APP_COMMIT=${appCommit} y APP_BUILD_TIME=${appBuildTime}.`,
+          commands,
+          details: {
+            appCommit,
+            appBuildTime,
+          },
+        };
+      }),
+    );
+
+    await pushStep(
+      steps,
+      await runStep("postdeploy-tests", "Correr smoke y E2E automatizadas del VPS", async () => {
+        const commands: CommandResult[] = [];
+        commands.push(
+          await runCommand("npm run qa:runtime:smoke", {
+            cwd: CONFIG.deployDir,
+            env: {
+              QA_BASE_URL: CONFIG.runtimeBaseUrl,
+              REQUIRE_RUNTIME_METADATA: "1",
+            },
+          }),
+        );
+        commands.push(
+          await runCommand("npm run qa:smoke:postdeploy", {
+            cwd: CONFIG.deployDir,
+            env: {
+              QA_BASE_URL: CONFIG.qaBaseUrl,
+            },
+          }),
+        );
+        commands.push(
+          await runCommand("npm run qa:e2e:api", {
+            cwd: CONFIG.deployDir,
+            env: {
+              QA_BASE_URL: CONFIG.qaBaseUrl,
+            },
+          }),
+        );
+        commands.push(
+          await runCommand("npm run qa:e2e:ui", {
+            cwd: CONFIG.deployDir,
+            env: {
+              QA_BASE_URL: CONFIG.qaBaseUrl,
+            },
+          }),
+        );
+
+        return {
+          summary: "Smoke runtime, smoke postdeploy y E2E API/UI quedaron ejecutadas.",
+          commands,
+          details: {
+            runtimeBaseUrl: CONFIG.runtimeBaseUrl,
+            qaBaseUrl: CONFIG.qaBaseUrl,
+          },
+        };
+      }),
+    );
+
+    report.ok = true;
+    return report;
+  } catch (error) {
+    report.error = error instanceof Error ? error.message : "Falló la actualización.";
+    return report;
+  } finally {
+    report.finishedAt = nowIso();
+    report.durationMs = Date.now() - startedTimestamp;
+    if (lockHandle) {
+      await lockHandle.close().catch(() => undefined);
+      await rm(CONFIG.lockFile, { force: true }).catch(() => undefined);
+    }
+  }
+}
+
+async function pushStep(steps: StepResult[], step: StepResult) {
+  steps.push(step);
+  if (!step.ok) {
+    throw new Error(step.summary);
+  }
+}
+
+async function runStep(
+  id: string,
+  title: string,
+  work: () => Promise<{ summary: string; commands: CommandResult[]; details?: Record<string, unknown> }>,
+): Promise<StepResult> {
+  const startedAt = nowIso();
+  try {
+    const result = await work();
+    return {
+      id,
+      title,
+      ok: true,
+      summary: result.summary,
+      startedAt,
+      finishedAt: nowIso(),
+      details: result.details,
+      commands: result.commands,
+    };
+  } catch (error) {
+    const commandError = error as Error & { commands?: CommandResult[]; details?: Record<string, unknown> };
+    return {
+      id,
+      title,
+      ok: false,
+      summary: commandError.message,
+      startedAt,
+      finishedAt: nowIso(),
+      details: commandError.details,
+      commands: commandError.commands ?? [],
+    };
+  }
+}
+
+async function runCommand(
+  command: string,
+  options: { cwd?: string; env?: Record<string, string> } = {},
+): Promise<CommandResult> {
+  const cwd = options.cwd ?? CONFIG.productDir;
+  const startedAt = Date.now();
+
+  return new Promise((resolve, reject) => {
+    const child = spawn("bash", ["-lc", command], {
+      cwd,
+      env: {
+        ...process.env,
+        ...options.env,
+      },
+    });
+
+    let stdout = "";
+    let stderr = "";
+
+    child.stdout.on("data", (chunk) => {
+      stdout += chunk.toString();
+    });
+
+    child.stderr.on("data", (chunk) => {
+      stderr += chunk.toString();
+    });
+
+    child.on("error", (error) => {
+      reject(error);
+    });
+
+    child.on("close", (exitCode) => {
+      const result: CommandResult = {
+        command,
+        cwd,
+        exitCode,
+        durationMs: Date.now() - startedAt,
+        stdout: trimOutput(stdout),
+        stderr: trimOutput(stderr),
+      };
+
+      if (exitCode === 0) {
+        resolve(result);
+        return;
+      }
+
+      const failure = new Error(`Falló el comando: ${command}`);
+      (failure as Error & { commands?: CommandResult[] }).commands = [result];
+      reject(failure);
+    });
+  });
+}
+
+function trimOutput(value: string) {
+  const maxLength = 40_000;
+  if (value.length <= maxLength) return value;
+  return `${value.slice(0, maxLength)}\n\n[output truncado: ${value.length - maxLength} caracteres omitidos]`;
+}
+
+function nowIso() {
+  return new Date().toISOString();
+}
