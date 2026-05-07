@@ -5,16 +5,16 @@ project: ganaconmerito
 owner: marlon-arcila
 status: active
 artifact_type: project
-last_reviewed: 2026-05-07
+last_reviewed: 2026-05-06
 ---
 
 # Project Status — GanaConMerito
 
-Ultima actualizacion: 2026-05-07 — Cierre Sprint 20 (Auditoría Runtime y Consolidación).
+Ultima actualizacion: 2026-05-06 — Sprint 21 (Tutor GCM Final Runtime Closure).
 
 ## Estado general
 
-**Estado:** Sprint 20 de consolidacion Tutor GCM cerrado a nivel local (QA + docs), manteniendo la fuente normativa sintetizada v1 como no verificada.  
+**Estado:** Tutor GCM queda funcionalmente cerrado con **PASS con WARN** sobre runtime publico, manteniendo la fuente normativa sintetizada v1 como no verificada.  
 **Producto:** producto activo con core operativo, Tutor GCM gobernado, dashboard con metricas prudentes y contrato de fuente normativa minima.  
 **Rama canonica:** `master`.  
 **Version declarada en `package.json`:** `0.6.0`.
@@ -24,11 +24,11 @@ Ultima actualizacion: 2026-05-07 — Cierre Sprint 20 (Auditoría Runtime y Cons
 - **Fuente de verdad del producto:** `https://github.com/ProfeMarlonMDE/GanaConMerito`.
 - **Copia sincronizada operativa en VPS:** `~/.openclaw/product`.
 - **Arbol de deploy:** `/opt/gcm/app`.
-- **HEAD base de Sprint 20:** `9cd7ce44ab60ff7f24a996c244244239bb5f3b97`.
-- **Ultimo runtime productivo validado:** `9cd7ce4`.
-- **Build time productivo validado:** `2026-05-06T23:08:12Z`.
+- **HEAD base de cierre Sprint 21:** `400c7e33e2467e1cadb110b09b2ff7f70ee99a95`.
+- **Ultimo runtime publico observado directamente:** `9cd7ce4`.
+- **Build time publico observado directamente:** `2026-05-06T23:08:12Z`.
 - **Entorno publico validado:** `https://cnsc.profemarlon.com`.
-- **Nota:** Auditoría de Sprint 20 centrada en Tutor GCM y guardrails pedagógicos.
+- **Nota:** Sprint 21 consolida el cierre funcional del frente Tutor GCM con contraste entre observacion publica directa y evidencia QA sanitizada previa.
 
 ## Modulos activos
 
@@ -135,7 +135,7 @@ El estado actual se considera cerrado si:
 - los documentos `runtime-flow-map.md` y `server-side-service-role-policy.md` quedan creados.
 
 
-## Consolidacion Tutor GCM (Sprint 15 -> Sprint 20)
+## Consolidacion Tutor GCM (Sprint 15 -> Sprint 21)
 
 - Sprint 15: trazas/metricas del tutor reportadas en el roadmap, pero sin verificacion publica nueva en este checkout.
 - Sprint 15.1: hardening de agregados y filtrado de guardrails reportado como continuidad; mantener nota de verificacion pendiente contra runtime publico.
@@ -144,7 +144,9 @@ El estado actual se considera cerrado si:
 - Sprint 18: normalizacion de copy de acciones guiadas y mensajes de apoyo.
 - Sprint 19: hardening QA local del tutor solo parcialmente verificable en este checkout; no se declara cierre publico desde aqui.
 - Sprint 20: se corrige compatibilidad de copy guiado con intents actuales, se evita perdida permanente del borrador en textarea y se actualiza documentacion viva.
+- Sprint 21: cierre funcional del frente con metadata publica vigente, rutas privadas protegidas sin sesion y evidencia QA sanitizada suficiente para declarar PASS con WARN.
 
 **Riesgos abiertos:**
 - La fuente normativa sigue en `synthesized_governed_unverified`.
-- Falta validacion publica final de cierre Tutor GCM posterior a esta consolidacion local.
+- El bypass de onboarding QA sigue siendo workaround controlado, no flujo estandar.
+- El resumen visual de trazas en dashboard no queda en PASS explicito desde esta revision por falta de evidencia aislada suficiente.

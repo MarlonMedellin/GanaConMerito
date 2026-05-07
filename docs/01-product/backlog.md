@@ -11,7 +11,7 @@ related:
   - PROD-VISION
   - DEL-SPRINT-LOG
   - QUAL-DEBT-REGISTER
-last_reviewed: 2026-05-07
+last_reviewed: 2026-05-06
 ---
 
 # Backlog de producto
@@ -31,14 +31,14 @@ GanaConMerito tiene activo el core real de producto:
 - fuente normativa sintetizada v1 en estado `synthesized_governed_unverified`
 - metricas prudentes para no vender conclusiones fuertes con poca senal
 - runtime con metadata visible y disciplina de triple verificacion
-- **Auditoría de Runtime (Sprint 20):** PASS con limitación en onboarding.
+- **Cierre funcional Tutor GCM (Sprint 21):** PASS con WARN explícito.
 
 ## Implementado y validado recientemente
 
-### Sprint 20 — Auditoría Runtime Tutor GCM
-- Estado: CERRADO CON PASS.
-- Resultado: Validación exitosa de guardrails pedagógicos y runtime commit integrity sobre VPS.
-- Riesgo: Se detectó necesidad de rotación de secretos (Supabase Service Role Key).
+### Sprint 21 — Tutor GCM Final Runtime Closure
+- Estado: CERRADO CON PASS CON WARN.
+- Resultado: cierre funcional del frente Tutor GCM con metadata publica vigente y evidencia QA sanitizada suficiente para visibilidad del tutor, acciones guiadas, guardrail pre-respuesta y explicacion post-respuesta.
+- WARN vigente: fuente normativa no verificada, bypass de onboarding QA como workaround controlado y ausencia de evidencia aislada suficiente para marcar PASS explicito del resumen visual de trazas en dashboard.
 
 ### Sprint 13 — Fuente de verdad normativa sintetizada v1
 - Estado: CERRADO CON WARN EXPLICITO.
@@ -73,13 +73,13 @@ GanaConMerito tiene activo el core real de producto:
 4. Agregar script general `npm test` y baseline local de QA.
 5. Preparar persistencia de `TutorTurnTrace` para metricas pedagogicas.
 6. Mantener Tutor GCM bajo contrato: sin scoring, sin avance, sin cierre, sin fuente normativa inventada.
+7. Mantener el bypass de onboarding QA explicitamente como workaround controlado hasta reemplazarlo por un mecanismo oficial y auditable.
 
 ## Next
-1. **Cierre final Tutor GCM (post Sprint 20)**: validacion publica final del frente con evidencia runtime y PR de cierre.
-2. **Sprint 14 — Persistencia y metricas del Tutor GCM**: guardar `TutorTurnTrace` para metricas pedagogicas y auditoria operativa.
-3. **Sprint 15 — Fuente normativa oficial verificada**: cargar acuerdo, guia metodologica, estructura de prueba, perfiles/empleos y versionado de fuente.
+1. **Sprint 14 — Persistencia y metricas del Tutor GCM**: guardar `TutorTurnTrace` para metricas pedagogicas y auditoria operativa.
+2. **Sprint 15 — Fuente normativa oficial verificada**: cargar acuerdo, guia metodologica, estructura de prueba, perfiles/empleos y versionado de fuente.
 3. **Sprint 16 — Release y runtime confiables**: CI minima en GitHub Actions, build, tests unitarios, validacion documental y disciplina publica de runtime.
-4. **UX guiada del Tutor GCM**: reemplazar caja libre dominante por acciones pedagogicas guiadas.
+4. **Validacion visual aislada del resumen de trazas**: obtener evidencia publica nueva del bloque de resumen del tutor en dashboard si sigue siendo artefacto de cierre requerido.
 5. **Runtime topology doc**: documentar `docker-compose.yml`, env file, dominio, proxy y politica de secretos.
 
 ## Later
@@ -99,9 +99,9 @@ GanaConMerito tiene activo el core real de producto:
 
 ### Media prioridad
 - `PracticeSession` crece como componente grande; refactor futuro, no inmediato.
-- `TutorInterface` sigue siendo UI basica de pregunta abierta; evolucionar a acciones guiadas.
 - Falta documento formal de topologia runtime.
 - Falta CI minimo.
+- La parte normativa del tutor sigue abierta aunque el frente funcional ya cierre con PASS con WARN.
 
 ## Relacion con modulos
 - `auth`: activo y prioritario; mantener estable.
