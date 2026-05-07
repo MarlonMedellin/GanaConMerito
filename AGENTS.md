@@ -149,6 +149,103 @@ Ninguna carpeta local de esos entornos debe tratarse como fuente final si no est
 
 ---
 
+## Directrices Obligatorias Sprint 33
+
+Mientras Sprint 33 siga activo, las directrices creadas en los documentos Sprint 33 son **normativas y de obligatorio cumplimiento** para cualquier agente que trabaje sobre el repositorio.
+
+### Regla de aplicacion
+
+Antes de tocar codigo, pruebas, documentacion, infraestructura o migraciones, el agente debe identificar si la tarea cae en alguno de los frentes Sprint 33 y consultar el documento correspondiente.
+
+Si una tarea contradice una directriz Sprint 33, el agente debe:
+
+1. detener el cambio;
+2. reportar el conflicto;
+3. pedir decision humana o dejar `accepted-risk` documentado;
+4. no proceder como si fuera una decision libre.
+
+### Prioridad de instrucciones
+
+Cuando haya conflicto entre documentos internos:
+
+1. `AGENTS.md` gobierna disciplina operativa, fuente de verdad, commits, PRs, runtime y forma de entrega.
+2. Los documentos Sprint 33 gobiernan criterios tecnicos especificos por area.
+3. `status.md`, `sprint-log.md` y backlog reflejan estado vivo, pero no pueden relajar una regla P0/P1 sin decision documentada.
+4. La instruccion humana explicita puede cambiar prioridad, pero debe quedar registrada en PR, commit o documento de cierre.
+
+### Freeze funcional
+
+Mientras Sprint 33 este activo:
+
+- no abrir features nuevas;
+- no expandir Tutor GCM;
+- no promover `source_verified` sin anexos oficiales;
+- no declarar cierre productivo sin runtime validado;
+- no cerrar P0/P1 como `fixed` solo con documentacion.
+
+### Documentos obligatorios por frente
+
+#### Delivery / Governance
+- `docs/02-delivery/sprint-33-stabilization-plan.md`
+- `docs/06-governance/sprint-33-execution-board.md`
+- `docs/01-product/sprint-33-remediation-backlog.md`
+- `docs/02-delivery/sprint-33-post-merge-checklist.md`
+- `docs/02-delivery/sprint-33-repo-only-closeout.md`
+
+#### Backend/API
+- `docs/03-architecture/api-contract-standard-v1.md`
+- `docs/03-architecture/api-endpoint-contract-map.md`
+- `docs/03-architecture/api-contract-migration-plan.md`
+- `src/lib/api/contracts.ts`
+- `src/lib/api/error-codes.ts`
+- `src/lib/api/request-id.ts`
+
+#### AppSec
+- `docs/07-compliance/appsec-remediation-matrix-sprint-33.md`
+- `docs/07-compliance/security-acceptance-criteria-sprint-33.md`
+- `docs/07-compliance/auth-callback-hardening-plan.md`
+
+#### QA
+- `docs/06-governance/qa-smoke-vs-forensic-policy.md`
+- `docs/04-quality/playwright-selector-standard.md`
+- `docs/04-quality/idempotency-gate-remediation-plan.md`
+
+#### DevOps / Release
+- `docs/06-governance/runtime-release-rollback-policy.md`
+- `docs/05-ops/playwright-ci-readiness.md`
+- `docs/05-ops/semantic-healthcheck-policy.md`
+- `docs/05-ops/mvp-slo-sli-policy.md`
+- `docs/05-ops/manual-rollback-runbook.md`
+
+#### Data / Supabase
+- `docs/03-architecture/rate-limiting-adr-001.md`
+- `docs/03-architecture/session-concurrency-adr-002.md`
+- `docs/03-architecture/supabase-migration-governance.md`
+- `docs/03-architecture/trace-retention-policy.md`
+- `docs/03-architecture/migration-0008-remediation-plan.md`
+
+#### Observability
+- `docs/03-architecture/mvp-event-taxonomy.md`
+
+#### Technical Debt
+- `docs/technical-debt/sprint-33-actionable-debt-matrix.md`
+
+#### UX
+- `docs/ux/sprint-33-ux-remediation-plan.md`
+
+### Criterio de cierre obligatorio
+
+Ningun agente puede declarar Sprint 33 cerrado completamente si falta cualquiera de estas condiciones:
+
+- backend/API deja de estar blocked;
+- QA critica deja de depender de assertions fragiles;
+- riesgos AppSec P0 quedan fixed o accepted-risk formal;
+- runtime post-merge queda validado;
+- rollback runbook queda probado o aceptado formalmente;
+- `status.md` y `sprint-log.md` quedan alineados despues del merge.
+
+---
+
 ## Entrega Final Obligatoria
 
 Al cerrar cualquier tarea relevante, el agente debe reportar:
@@ -167,6 +264,7 @@ Al cerrar cualquier tarea relevante, el agente debe reportar:
 - PR creado o actualizado, si aplica
 - commit creado (hash + mensaje), si aplica
 - identidad reportada de `Agent`, `Via` y `Contributor`
+- directrices Sprint 33 consultadas cuando aplique
 
 ---
 
@@ -183,3 +281,8 @@ Roster de agentes:
 
 Politica de aprobacion humana:
 → [`docs/06-governance/human-approval-policy.md`](docs/06-governance/human-approval-policy.md)
+
+Directrices obligatorias Sprint 33:
+→ [`docs/02-delivery/sprint-33-repo-only-closeout.md`](docs/02-delivery/sprint-33-repo-only-closeout.md)
+→ [`docs/06-governance/sprint-33-execution-board.md`](docs/06-governance/sprint-33-execution-board.md)
+→ [`docs/01-product/sprint-33-remediation-backlog.md`](docs/01-product/sprint-33-remediation-backlog.md)
