@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { TutorOutput } from "@/types/tutor-turn";
 
 interface TutorInterfaceProps {
@@ -8,12 +8,50 @@ interface TutorInterfaceProps {
   currentItemId: string;
 }
 
+const guidedPrompts = [
+  "Dame una pista sin decirme la respuesta correcta.",
+  "Compárame dos opciones sin revelar la correcta.",
+  "Explícame el feedback oficial después de responder.",
+] as const;
+
 export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps) {
   const [isOpen, setIsOpen] = useState(true);
   const [message, setMessage] = useState("");
   const [lastResponse, setLastResponse] = useState<TutorOutput | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const messageInputRef = useRef<HTMLTextAreaElement | null>(null);
+  const draftStorageKey = `tutor-gcm:draft:${sessionId}:${currentItemId}`;
+
+  useEffect(() => {
+    setLastResponse(null);
+    setError(null);
+
+    if (typeof window === "undefined") {
+      setMessage("");
+      return;
+    }
+
+    setMessage(window.sessionStorage.getItem(draftStorageKey) ?? "");
+  }, [draftStorageKey]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    if (message.trim()) {
+      window.sessionStorage.setItem(draftStorageKey, message);
+      return;
+    }
+
+    window.sessionStorage.removeItem(draftStorageKey);
+  }, [draftStorageKey, message]);
+
+  function applyGuidedPrompt(prompt: (typeof guidedPrompts)[number]) {
+    if (loading) return;
+    setMessage(prompt);
+    setError(null);
+    messageInputRef.current?.focus();
+  }
 
   async function handleSendMessage(e: React.FormEvent) {
     e.preventDefault();
@@ -98,6 +136,21 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
         Puedes pedir una pista, comparar opciones sin revelar la clave o solicitar explicación del feedback después de responder.
       </p>
 
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+        {guidedPrompts.map((prompt) => (
+          <button
+            key={prompt}
+            type="button"
+            className="subtle"
+            onClick={() => applyGuidedPrompt(prompt)}
+            disabled={loading}
+            style={{ border: "1px solid var(--border-subtle)", borderRadius: "999px", padding: "6px 10px" }}
+          >
+            {prompt}
+          </button>
+        ))}
+      </div>
+
       {lastResponse ? (
         <div className="feedback-card" style={{ margin: 0, background: "var(--surface-secondary)" }}>
           <p className="body-sm" style={{ whiteSpace: "pre-wrap" }}>{lastResponse.visibleMessage}</p>
@@ -117,6 +170,7 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
         <div className="form-field">
           <label className="field-label" htmlFor="tutor-gcm-message">Pregunta al Tutor GCM</label>
           <textarea
+            ref={messageInputRef}
             id="tutor-gcm-message"
             data-testid="tutor-gcm-message"
             className="text-area"

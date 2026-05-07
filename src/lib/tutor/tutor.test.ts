@@ -192,3 +192,32 @@ test("selectAnsweredTurnForItem chooses the matching answered turn for the item"
   assert.strictEqual(turn?.id, "turn-2");
   assert.strictEqual(turn?.selected_option, "A");
 });
+
+test("selectAnsweredTurnForItem ignores a newer unanswered turn for the same item", () => {
+  const turn = selectAnsweredTurnForItem(
+    [
+      {
+        id: "turn-3",
+        item_id: "item-1",
+        selected_option: null,
+        user_rationale: null,
+        model_feedback: null,
+        created_at: "2026-01-03T00:00:00.000Z",
+      },
+      {
+        id: "turn-2",
+        item_id: "item-1",
+        selected_option: "B",
+        user_rationale: "Descarto distractores",
+        model_feedback: "Feedback oficial",
+        created_at: "2026-01-02T00:00:00.000Z",
+        is_correct: true,
+        competency_score: 90,
+      },
+    ],
+    "item-1",
+  );
+
+  assert.strictEqual(turn?.id, "turn-2");
+  assert.strictEqual(turn?.selected_option, "B");
+});

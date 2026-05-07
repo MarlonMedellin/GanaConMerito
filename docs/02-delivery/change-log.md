@@ -9,10 +9,21 @@ modules: [core, platform]
 tags: [changelog, cambios, entregas]
 related:
   - DEL-SPRINT-LOG
-last_reviewed: 2026-05-04
+last_reviewed: 2026-05-06
 ---
 
 # Change log
+
+## 2026-05-06
+- tipo: fix+test+docs
+- modulo: tutor/qa/delivery
+- resumen: se cierra Sprint 20.2 como hardening final del frente Tutor GCM. La UI visible del tutor ahora limpia respuesta/error al cambiar de item, preserva borrador por `sessionId + itemId` y ofrece prompts guiados seguros sin tocar backend critico. Tambien se agrega una prueba puntual para blindar la seleccion de evidencia respondida cuando existe un turno mas nuevo aun no contestado, y se consolida la auditoria runtime reciente junto con la deuda tecnica del bypass de onboarding QA como workaround controlado.
+- sprint: Sprint 20.2 — Tutor GCM Closure Hardening
+- base repo: `1b331d1b08ff86aed83b4b79aa77ced48753eeed`
+- runtime observado: `9cd7ce44ab60ff7f24a996c244244239bb5f3b97`
+- validacion: `npm test` PASS, `npm run build` PASS, `https://cnsc.profemarlon.com/login` 200 con metadata visible
+- agente: Codex
+- relacionados: src/components/tutor/tutor-interface.tsx, src/lib/tutor/tutor.test.ts, docs/02-delivery/tutor-gcm-sprint-20-runtime-audit.md, docs/project/status.md, docs/01-product/backlog.md, docs/02-delivery/sprint-log.md
 
 ## 2026-05-04
 - tipo: feat+docs+governance

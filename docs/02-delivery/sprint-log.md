@@ -11,10 +11,44 @@ related:
   - PROD-BACKLOG
   - DEL-CHANGE-LOG
   - QUAL-RISK-REGISTER
-last_reviewed: 2026-05-04
+last_reviewed: 2026-05-06
 ---
 
 # Sprint log
+
+## Sprint cerrado — Sprint 20.2: Tutor GCM Closure Hardening
+- **Estado**: CERRADO CON PASS/WARN CONTROLADO
+- **Fecha**: 2026-05-06
+- **Base de trabajo en repo**: `1b331d1b08ff86aed83b4b79aa77ced48753eeed`
+- **Objetivo**: cerrar pendientes residuales del frente Tutor GCM sin abrir features nuevas, sin tocar scoring/avance/cierre y sin intervenir infraestructura.
+
+### Entregado
+- `src/components/tutor/tutor-interface.tsx` endurecido en capa visible permitida:
+  - limpia respuesta y error al cambiar de item;
+  - preserva borrador por `sessionId + itemId`;
+  - expone acciones guiadas seguras para pista, comparacion de opciones y explicacion post-respuesta.
+- `src/lib/tutor/tutor.test.ts` endurecido con un caso puntual: ignorar un turno mas nuevo no respondido cuando ya existe evidencia respondida valida para el mismo item.
+- `docs/02-delivery/tutor-gcm-sprint-20-runtime-audit.md` creado para consolidar la auditoria runtime reciente sin logs crudos ni secretos.
+- `docs/project/status.md`, `docs/02-delivery/change-log.md`, `docs/01-product/backlog.md` y este `sprint-log.md` reconciliados para cierre formal del frente.
+- La deuda del bypass de onboarding QA queda registrada como workaround controlado y no como flujo deseado.
+
+### Guardrails preservados
+- No se toco `src/app/api/tutor/turn/route.ts`.
+- No se toco `src/lib/tutor/tutor-orchestrator.ts`.
+- No se toco scoring.
+- No se toco avance de sesion.
+- No se toco cierre de sesion.
+- No se tocaron migraciones Supabase.
+- No se toco Docker, VPS ni deploy.
+
+### Validacion
+- `npm test`: PASS.
+- `npm run build`: PASS.
+- Runtime publico observado en `https://cnsc.profemarlon.com/login`: `200 OK`, commit visible `9cd7ce44ab60ff7f24a996c244244239bb5f3b97`, `buildTime=2026-05-06T23:08:12Z`.
+
+### Warn controlado
+- La observacion runtime reciente corresponde a la URL publica y no constituye deploy ejecutado desde esta rama.
+- El bypass de onboarding QA sigue existiendo como workaround controlado; queda documentado como deuda tecnica pendiente de reemplazo.
 
 ## Sprint cerrado — Sprint 13: Fuente de verdad normativa sintetizada v1
 - **Estado**: CERRADO CON WARN EXPLICITO
