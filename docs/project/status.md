@@ -5,17 +5,19 @@ project: ganaconmerito
 owner: marlon-arcila
 status: active
 artifact_type: project
-last_reviewed: 2026-05-06
+last_reviewed: 2026-05-07
 ---
 
 # Project Status — GanaConMerito
 
-Ultima actualizacion: 2026-05-06 — Sprint 22 (Tutor GCM Normative Source Verification).
+Ultima actualizacion: 2026-05-07 — Sprint 33 (Stabilization, Governance and Runtime Confidence).
 
 ## Estado general
 
-**Estado:** Tutor GCM permanece funcionalmente cerrado y el frente normativo queda en **PASS con WARN**, manteniendo la fuente normativa sintetizada v1 como no verificada.  
+**Estado:** MVP en fase activa de estabilizacion tecnica. El core sigue operativo, pero la expansion funcional permanece congelada hasta cerrar hallazgos P0/P1 del control MVP.  
 **Producto:** producto activo con core operativo, Tutor GCM gobernado, dashboard con metricas prudentes y contrato de fuente normativa minima explicitamente clasificado como no oficial/verificado.  
+**Sprint actual:** Sprint 33 — Stabilization, Governance and Runtime Confidence.  
+**Rama de trabajo Sprint 33:** `sprint-33-stabilization-governance`.  
 **Rama canonica:** `master`.  
 **Version declarada en `package.json`:** `0.6.0`.
 
@@ -28,8 +30,37 @@ Ultima actualizacion: 2026-05-06 — Sprint 22 (Tutor GCM Normative Source Verif
 - **Ultimo runtime publico observado directamente:** `9cd7ce4`.
 - **Build time publico observado directamente:** `2026-05-06T23:08:12Z`.
 - **Entorno publico validado:** `https://cnsc.profemarlon.com`.
-- **Nota:** Sprint 21 consolida el cierre funcional del frente Tutor GCM con contraste entre observacion publica directa y evidencia QA sanitizada previa.
+- **Nota:** Sprint 33 se ejecuta inicialmente solo con acceso al repo; no declara validacion runtime nueva.
 - **Nota normativa Sprint 22:** la revision documental cruzada confirma alineacion entre producto, arquitectura y compliance, pero no encuentra anexos oficiales suficientes para promover `source_verified`.
+
+## Sprint 33 — foco activo
+
+### Objetivo
+Cerrar deuda tecnica critica y elevar la confianza operativa del MVP antes de reabrir expansion funcional.
+
+### Frentes activos
+- Backend/API hardening.
+- QA stabilization.
+- Security remediation.
+- Data integrity.
+- Release confidence.
+- Gobernanza documental.
+
+### Entregables iniciales del Sprint 33
+- `docs/02-delivery/sprint-33-stabilization-plan.md`.
+- `docs/03-architecture/api-contract-standard-v1.md`.
+- `docs/06-governance/runtime-release-rollback-policy.md`.
+- `docs/06-governance/qa-smoke-vs-forensic-policy.md`.
+- `docs/03-architecture/rate-limiting-adr-001.md`.
+- `docs/03-architecture/session-concurrency-adr-002.md`.
+- `docs/07-compliance/appsec-remediation-matrix-sprint-33.md`.
+
+### Guardrails Sprint 33
+- No abrir nuevas funcionalidades.
+- No expandir Tutor GCM.
+- No tocar runtime/VPS desde esta rama documental.
+- No declarar cierre productivo sin validacion runtime posterior.
+- No promover `source_verified` sin anexos oficiales.
 
 ## Modulos activos
 
@@ -39,6 +70,7 @@ Ultima actualizacion: 2026-05-06 — Sprint 22 (Tutor GCM Normative Source Verif
 - Rutas privadas protegidas.
 - Logout validado con proteccion post-logout.
 - Fix de configuracion publica Supabase aplicado en PR #1.
+- Sprint 33 prioriza hardening de callback origin allowlist y middleware privado.
 
 ### Practica
 - Inicio de sesion real desde backend.
@@ -47,7 +79,7 @@ Ultima actualizacion: 2026-05-06 — Sprint 22 (Tutor GCM Normative Source Verif
 - Persistencia de turnos y eventos de evaluacion.
 - Avance con `advance_session_atomic`.
 - Rotacion controlada de item inicial y siguientes items aplicada en PR #3.
-- Refactor liviano de `PracticeSession` queda planificado como sprint futuro, no ejecutado en Sprint 13.
+- Sprint 33 prioriza revisar concurrencia e idempotencia de avance.
 
 ### Dashboard / metricas
 - Dashboard historico y por sesion activos.
@@ -70,6 +102,7 @@ Ultima actualizacion: 2026-05-06 — Sprint 22 (Tutor GCM Normative Source Verif
 - Antes de responder no revela clave.
 - Despues de responder puede explicar clave, feedback, distractores y justificacion.
 - No tiene autoridad sobre scoring, avance, cierre de sesion ni seleccion de items.
+- Sprint 33 no expande Tutor GCM; solo permite hardening de seguridad, rate limiting y observabilidad.
 
 ### Banco de preguntas
 - Corpus activo gobernado de 27 items segun documentacion vigente.
@@ -77,6 +110,11 @@ Ultima actualizacion: 2026-05-06 — Sprint 22 (Tutor GCM Normative Source Verif
 - Expansion editorial del banco sigue fuera de alcance inmediato salvo decision explicita.
 
 ## Historial reciente reconciliado
+
+### Sprint 33 — Stabilization, Governance and Runtime Confidence
+- **Foco:** remediar hallazgos del control MVP sin abrir features nuevas.
+- **Resultado parcial:** se crean documentos de plan de estabilizacion, contrato API, rollback, QA smoke/forensic, ADR de rate limiting, ADR de concurrencia y matriz AppSec.
+- **Advertencia:** aun falta implementacion de codigo y validacion runtime; no declarar cierre operativo todavia.
 
 ### Sprint 22 — Verificacion normativa documental del Tutor GCM
 - **Foco:** separar con precision lo verificado en repo, lo sintetizado no verificado y lo faltante para cierre normativo real.
@@ -115,33 +153,36 @@ Ultima actualizacion: 2026-05-06 — Sprint 22 (Tutor GCM Normative Source Verif
 
 ### PR #1 — Fix de login/Supabase runtime config
 - **Foco:** corregir ausencia de variables publicas Supabase en browser bundle.
-- **Resultado:** fallback runtime para configuracion publica y login operativo.
+- **Resultado:** fallback runtime para configuracion publica Supabase y login operativo.
 
 ## Deuda tecnica viva
 
-1. **Verificacion normativa real:** cargar acuerdo, guia metodologica, estructura de prueba y perfiles/empleos oficiales para pasar de `synthesized_governed_unverified` a `source_verified`.
-2. **Persistencia de `TutorTurnTrace`:** el contrato existe, pero falta tabla/escritura para metricas del tutor.
-3. **Admin de fuente de verdad:** aun no existe superficie administrativa para editar concursos, guias, perfiles y sintesis normativas.
-4. **CI y test script general:** falta script `npm test` agregado como contrato general de QA local.
-5. **Runtime topology:** falta documento especifico sobre ubicacion de `docker-compose.yml`, env file, proxy/dominio y politica de secretos.
-6. **Refactor liviano de `PracticeSession`:** planificado, no ejecutado.
+1. **Backend/API contract drift:** estandarizar envelopes, errores, requestId, validacion y rate limiting.
+2. **Seguridad AppSec P0/P1:** callback origin allowlist, middleware privado, endpoints de validacion y logs sanitizados.
+3. **QA frágil:** idempotencia debe usar senal estable, no `main.innerText`; separar smoke vs forensic.
+4. **Concurrencia de avance de sesion:** cerrar estrategia atomica/idempotente para turnos y session advance.
+5. **Verificacion normativa real:** cargar acuerdo, guia metodologica, estructura de prueba y perfiles/empleos oficiales para pasar de `synthesized_governed_unverified` a `source_verified`.
+6. **Admin de fuente de verdad:** aun no existe superficie administrativa para editar concursos, guias, perfiles y sintesis normativas.
+7. **Runtime rollback:** falta automatizacion real; Sprint 33 deja politica documental inicial.
 
 ## Proximos pasos recomendados
 
-1. **Cierre normativo real:** cargar anexos oficiales y rehacer revision cruzada antes de evaluar `source_verified`.
-2. **Persistencia y metricas del Tutor GCM:** mantener `TutorTurnTrace` como siguiente deuda funcional segura.
-3. **Disciplina de release y CI minima:** sostener trazabilidad entre repo, VPS y runtime publico sin abrir nuevas afirmaciones normativas.
+1. **Implementacion backend/API:** aplicar contrato API v1 en rutas P0.
+2. **Hardening AppSec:** cerrar P0 de callback origin y middleware.
+3. **QA estable:** corregir idempotency gate con senal estable y ejecutar Playwright en entorno con browsers.
+4. **Datos:** decidir e implementar estrategia de concurrencia para avance de sesion.
+5. **Release:** validar politica de rollback contra runtime luego del merge.
 
 ## Criterio de cierre del estado actual
 
-El estado actual se considera cerrado si:
+El estado Sprint 33 se considera cerrado si:
 
-- la fuente normativa sintetizada v1 queda integrada al evidence builder;
-- la fuente queda marcada como no verificada cuando corresponde;
-- el Tutor GCM sigue degradando cuando falta evidencia;
-- no se toca scoring, avance, cierre de sesion, Docker, VPS ni Supabase Dashboard;
-- los documentos `runtime-flow-map.md` y `server-side-service-role-policy.md` quedan creados.
-
+- Backend/API deja de estar bloqueado por alcance.
+- QA critica deja de depender de assertions fragiles.
+- Riesgos AppSec P0 quedan corregidos o aceptados formalmente.
+- Concurrencia de sesion queda definida e implementable.
+- Release/rollback queda documentado y validado al menos manualmente.
+- No se agregan features nuevas antes de estabilizar.
 
 ## Consolidacion Tutor GCM (Sprint 15 -> Sprint 21)
 
