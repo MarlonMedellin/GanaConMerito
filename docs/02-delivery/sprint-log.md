@@ -16,6 +16,30 @@ last_reviewed: 2026-05-06
 
 # Sprint log
 
+## Sprint cerrado — Sprint 22: Tutor GCM Normative Source Verification
+- **Estado**: CERRADO CON PASS CON WARN
+- **Fecha**: 2026-05-06
+- **Base en master**: `a056da2e69bf302473609e7192e36dc76132383b`
+- **Objetivo**: reducir riesgo normativo del Tutor GCM dejando clasificacion honesta entre contrato verificado, sintesis no verificada y faltantes reales para `source_verified`, sin tocar runtime ni backend critico.
+
+### Entregado
+- `docs/02-delivery/tutor-gcm-normative-verification.md` creado como reporte canonico del frente normativo.
+- Alineacion documental de `docs/01-product/source-truth/normative-source-truth-v1.md`, `docs/03-architecture/runtime-flow-map.md` y `docs/07-compliance/server-side-service-role-policy.md`.
+- Actualizacion de `status`, `sprint-log`, `change-log` y `backlog` para dejar trazabilidad ejecutiva del estado normativo real.
+
+### Validaciones Ejecutadas
+- [x] Revision documental cruzada de producto, arquitectura y compliance.
+- [x] Confirmacion en repo del estado tecnico `synthesized_governed_unverified`.
+- [x] Confirmacion de placeholders pendientes para acuerdo, guia metodologica y estructura de prueba.
+- [x] Confirmacion de que el tutor degrada y no se presenta como `source_verified`.
+- [ ] Verificacion de nuevos anexos oficiales en repo.
+- [ ] Cierre normativo total del Tutor GCM.
+
+### Riesgos y Notas Operativas
+- **Cierre funcional vs. cierre normativo**: Sprint 21 sigue cerrando el frente funcional; Sprint 22 no convierte eso en cierre normativo.
+- **Fuente oficial faltante**: no hay evidencia suficiente en repo para acuerdo, guia metodologica, estructura de prueba y soporte de convocatoria/manual.
+- **Decision vigente**: el frente normativo queda en **PASS con WARN**, no en PASS pleno.
+
 ## Sprint cerrado — Sprint 21: Tutor GCM Final Runtime Closure
 - **Estado**: CERRADO CON PASS CON WARN
 - **Fecha**: 2026-05-06

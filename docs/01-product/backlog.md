@@ -32,8 +32,14 @@ GanaConMerito tiene activo el core real de producto:
 - metricas prudentes para no vender conclusiones fuertes con poca senal
 - runtime con metadata visible y disciplina de triple verificacion
 - **Cierre funcional Tutor GCM (Sprint 21):** PASS con WARN explícito.
+- **Frente normativo Tutor GCM (Sprint 22):** PASS con WARN explícito; contrato y guardrails verificados, fuente oficial suficiente pendiente.
 
 ## Implementado y validado recientemente
+
+### Sprint 22 — Tutor GCM Normative Source Verification
+- Estado: CERRADO CON PASS CON WARN.
+- Resultado: se clasifica con precision lo verificado en repo, lo sintetizado pero no verificado y lo faltante para `source_verified`.
+- WARN vigente: faltan acuerdo oficial, guia metodologica, estructura de prueba y soporte de convocatoria/manual trazables en repo.
 
 ### Sprint 21 — Tutor GCM Final Runtime Closure
 - Estado: CERRADO CON PASS CON WARN.
@@ -67,18 +73,19 @@ GanaConMerito tiene activo el core real de producto:
 - Rotacion controlada de seleccion de items implementada.
 
 ## Now
-1. Mantener Sprint 13 como fuente normativa sintetizada no verificada hasta cargar documentos oficiales.
-2. Mantener disciplina de promocion: PR al repo principal -> `master` -> `~/.openclaw/product` -> `/opt/gcm/app` -> Docker OCI -> validacion en `https://cnsc.profemarlon.com`.
-3. Ejecutar rotación de `SUPABASE_SERVICE_ROLE_KEY` (Riesgo identificado en Sprint 20).
-4. Agregar script general `npm test` y baseline local de QA.
-5. Preparar persistencia de `TutorTurnTrace` para metricas pedagogicas.
-6. Mantener Tutor GCM bajo contrato: sin scoring, sin avance, sin cierre, sin fuente normativa inventada.
-7. Mantener el bypass de onboarding QA explicitamente como workaround controlado hasta reemplazarlo por un mecanismo oficial y auditable.
+1. Prioridad normativa alta: cargar acuerdo oficial, guia metodologica, estructura de prueba y soporte de convocatoria/manual antes de volver a evaluar `source_verified`.
+2. Mantener Sprint 22 como clasificacion vigente del frente normativo hasta que exista nueva evidencia documental real.
+3. Mantener disciplina de promocion: PR al repo principal -> `master` -> `~/.openclaw/product` -> `/opt/gcm/app` -> Docker OCI -> validacion en `https://cnsc.profemarlon.com`.
+4. Ejecutar rotación de `SUPABASE_SERVICE_ROLE_KEY` (Riesgo identificado en Sprint 20).
+5. Agregar script general `npm test` y baseline local de QA.
+6. Preparar persistencia de `TutorTurnTrace` para metricas pedagogicas.
+7. Mantener Tutor GCM bajo contrato: sin scoring, sin avance, sin cierre, sin fuente normativa inventada.
+8. Mantener el bypass de onboarding QA explicitamente como workaround controlado hasta reemplazarlo por un mecanismo oficial y auditable.
 
 ## Next
-1. **Sprint 14 — Persistencia y metricas del Tutor GCM**: guardar `TutorTurnTrace` para metricas pedagogicas y auditoria operativa.
-2. **Sprint 15 — Fuente normativa oficial verificada**: cargar acuerdo, guia metodologica, estructura de prueba, perfiles/empleos y versionado de fuente.
-3. **Sprint 16 — Release y runtime confiables**: CI minima en GitHub Actions, build, tests unitarios, validacion documental y disciplina publica de runtime.
+1. **Cierre normativo real del tutor**: cargar anexos oficiales, reemplazar placeholders y rehacer revision documental cruzada.
+2. **Persistencia y metricas del Tutor GCM**: guardar `TutorTurnTrace` para metricas pedagogicas y auditoria operativa.
+3. **Release y runtime confiables**: CI minima en GitHub Actions, build, tests unitarios, validacion documental y disciplina publica de runtime.
 4. **Validacion visual aislada del resumen de trazas**: obtener evidencia publica nueva del bloque de resumen del tutor en dashboard si sigue siendo artefacto de cierre requerido.
 5. **Runtime topology doc**: documentar `docker-compose.yml`, env file, dominio, proxy y politica de secretos.
 
@@ -95,6 +102,7 @@ GanaConMerito tiene activo el core real de producto:
 ### Alta prioridad
 - No existe `npm test` como contrato general.
 - Fuente normativa del Tutor GCM aun no esta verificada con documentos oficiales completos.
+- El frente normativo del tutor no debe declararse cerrado mientras el repo no tenga anexos oficiales trazables.
 - `TutorTurnTrace` no se persiste aun en base de datos.
 
 ### Media prioridad

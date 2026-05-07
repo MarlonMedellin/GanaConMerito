@@ -7,7 +7,7 @@ status: active
 artifact_type: architecture
 modules: [auth, onboarding, practice, dashboard, tutor, deploy]
 tags: [runtime, flow, architecture, qa]
-last_reviewed: 2026-05-04
+last_reviewed: 2026-05-06
 ---
 
 # Runtime flow map — GanaConMerito
@@ -105,6 +105,13 @@ PracticeSession -> TutorInterface -> /api/tutor/turn -> requireOwnedSession -> b
 - Antes de responder, el tutor no revela clave.
 - Despues de respuesta confirmada, puede explicar clave, feedback y distractores.
 - Si falta fuente normativa verificable, debe degradar o referirse solo a lo disponible.
+- El flujo actual verifica contrato y guardrails del estado normativo, no la existencia de una carga oficial completa.
+
+### Estado normativo documentado del flujo
+- `contest`, `aspirationalProfile` y `question` se construyen con soporte tecnico real en repo.
+- El estado cargado por defecto es `synthesized_governed_unverified`.
+- Los identificadores `agreement-source-pending`, `methodological-guide-source-pending` y `test-structure-source-pending` implican ausencia de anexos oficiales suficientes en esta fuente.
+- El runtime no debe presentarse como respaldo de `source_verified` mientras esos pendientes sigan abiertos.
 
 ## 6. Dashboard
 

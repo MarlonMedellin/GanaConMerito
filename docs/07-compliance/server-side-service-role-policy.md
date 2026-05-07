@@ -7,7 +7,7 @@ status: active
 artifact_type: compliance
 modules: [supabase, auth, api, tutor, dashboard]
 tags: [service-role, rls, security, server-side]
-last_reviewed: 2026-05-04
+last_reviewed: 2026-05-06
 ---
 
 # Política de uso server-side del service role
@@ -102,6 +102,11 @@ La fuente normativa sintetizada puede ser leída por el Tutor GCM como referenci
 - las ediciones deben quedar limitadas a admin;
 - cada versión debe tener estado de verificación;
 - el Tutor debe degradar si la fuente está incompleta.
+
+### Clasificación vigente
+- El repo sí verifica que el tutor transporte y respete `source_truth_status`.
+- El repo no acredita todavía acuerdo, guía metodológica, estructura de prueba ni convocatoria oficial suficientes para elevar el estado a `source_verified`.
+- Ninguna ruta server-side debe afirmar cierre normativo total mientras la fuente siga en `synthesized_governed_unverified`.
 
 ## Registro recomendado para auditoría futura
 Cuando exista persistencia de trazas del Tutor, guardar:
