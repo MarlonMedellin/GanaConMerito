@@ -17,6 +17,8 @@ interface PracticeItem {
   options: { key: "A" | "B" | "C" | "D"; text: string }[];
 }
 
+type OptionKey = "A" | "B" | "C" | "D";
+
 interface SessionStartResult {
   sessionId: string;
   currentState: string;
@@ -39,7 +41,7 @@ interface AdvanceResult {
 export function PracticeSession() {
   const [session, setSession] = useState<SessionStartResult | null>(null);
   const [item, setItem] = useState<PracticeItem | null>(null);
-  const [selectedOption, setSelectedOption] = useState<"A" | "B" | "C" | "D" | null>(null);
+  const [selectedOption, setSelectedOption] = useState<OptionKey | null>(null);
   const [userRationale, setUserRationale] = useState("");
   const [feedback, setFeedback] = useState<AdvanceResult | null>(null);
   const [pendingNextItemId, setPendingNextItemId] = useState<string | null>(null);
@@ -54,6 +56,15 @@ export function PracticeSession() {
 
   const sessionDashboardHref = session ? `/dashboard?sessionId=${encodeURIComponent(session.sessionId)}` : null;
   const canStartAnother = sessionEnded || (!item && Boolean(sessionMessage));
+  const hasFeedback = Boolean(feedback);
+
+  function resetItemState() {
+    setItem(null);
+    setSelectedOption(null);
+    setUserRationale("");
+    setFeedback(null);
+    setPendingNextItemId(null);
+  }
 
   async function loadItem(sessionId: string, itemId: string) {
     const response = await fetch(
@@ -75,46 +86,41 @@ export function PracticeSession() {
   async function handleStart() {
     setLoading(true);
     setError(null);
-    setFeedback(null);
     setSessionMessage(null);
-    setItem(null);
-    setPendingNextItemId(null);
-
-    const response = await fetch("/api/session/start", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ mode: "practice" }),
-    });
-
-    const data = await response.json();
-
-    if (!response.ok) {
-      setError(data.error ?? "No se pudo iniciar la sesión.");
-      setLoading(false);
-      return;
-    }
-
-    setSession(data);
-
-    if (data.currentState === "onboarding") {
-      setSessionMessage("Debes completar el onboarding antes de iniciar una práctica real.");
-      setLoading(false);
-      return;
-    }
-
-    if (!data.currentItemId) {
-      setSessionMessage("La sesión fue creada, pero no hay un ítem disponible todavía para continuar.");
-      setLoading(false);
-      return;
-    }
+    resetItemState();
 
     try {
+      const response = await fetch("/api/session/start", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ mode: "practice" }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        setError(data.error ?? "No se pudo iniciar la sesión.");
+        return;
+      }
+
+      setSession(data);
+
+      if (data.currentState === "onboarding") {
+        setSessionMessage("Debes completar el onboarding antes de iniciar una práctica real.");
+        return;
+      }
+
+      if (!data.currentItemId) {
+        setSessionMessage("La sesión fue creada, pero no hay un ítem disponible todavía para continuar.");
+        return;
+      }
+
       await loadItem(data.sessionId, data.currentItemId);
     } catch (loadError) {
       setError(loadError instanceof Error ? loadError.message : "No se pudo cargar el ítem inicial.");
+    } finally {
+      setLoading(false);
     }
-
-    setLoading(false);
   }
 
   async function handleSubmitAnswer() {
@@ -124,41 +130,43 @@ export function PracticeSession() {
     setError(null);
     setSessionMessage(null);
 
-    const response = await fetch("/api/session/advance", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        sessionId: session.sessionId,
-        itemId: item.id,
-        selectedOption,
-        userRationale: userRationale.trim() || undefined,
-      }),
-    });
+    try {
+      const response = await fetch("/api/session/advance", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          sessionId: session.sessionId,
+          itemId: item.id,
+          selectedOption,
+          userRationale: userRationale.trim() || undefined,
+        }),
+      });
 
-    const data = await response.json();
+      const data = await response.json();
 
-    if (!response.ok) {
-      setError(data.error ?? "No se pudo avanzar la sesión.");
+      if (!response.ok) {
+        setError(data.error ?? "No se pudo avanzar la sesión.");
+        return;
+      }
+
+      setFeedback(data);
+
+      if (data.currentState === "session_close") {
+        setPendingNextItemId(null);
+        setSessionMessage("La sesión terminó correctamente. Ya puedes revisar esta corrida en el dashboard de la sesión.");
+        return;
+      }
+
+      if (data.nextItemId) {
+        setPendingNextItemId(data.nextItemId);
+      } else {
+        setSessionMessage("No hay un siguiente ítem disponible en este momento.");
+      }
+    } catch (submitError) {
+      setError(submitError instanceof Error ? submitError.message : "No se pudo avanzar la sesión.");
+    } finally {
       setLoading(false);
-      return;
     }
-
-    setFeedback(data);
-
-    if (data.currentState === "session_close") {
-      setPendingNextItemId(null);
-      setSessionMessage("La sesión terminó correctamente. Ya puedes revisar esta corrida en el dashboard de la sesión.");
-      setLoading(false);
-      return;
-    }
-
-    if (data.nextItemId) {
-      setPendingNextItemId(data.nextItemId);
-    } else {
-      setSessionMessage("No hay un siguiente ítem disponible en este momento.");
-    }
-
-    setLoading(false);
   }
 
   async function handleContinue() {
@@ -178,13 +186,9 @@ export function PracticeSession() {
 
   function resetPractice() {
     setSession(null);
-    setItem(null);
-    setSelectedOption(null);
-    setUserRationale("");
-    setFeedback(null);
+    resetItemState();
     setError(null);
     setSessionMessage(null);
-    setPendingNextItemId(null);
     setLoading(false);
   }
 
@@ -243,7 +247,7 @@ export function PracticeSession() {
               const className = [
                 "option-card",
                 isSelected ? "selected" : "",
-                feedback && feedback.evaluation.isCorrect && isSelected ? "correct" : "",
+                feedback?.evaluation.isCorrect && isSelected ? "correct" : "",
                 feedback && !isSelected ? "dimmed" : "",
               ].filter(Boolean).join(" ");
 
@@ -252,8 +256,8 @@ export function PracticeSession() {
                   key={option.key}
                   type="button"
                   className={className}
-                  onClick={() => !feedback && setSelectedOption(option.key)}
-                  disabled={loading || Boolean(feedback)}
+                  onClick={() => !hasFeedback && setSelectedOption(option.key)}
+                  disabled={loading || hasFeedback}
                 >
                   <span className="option-key">{option.key}</span>
                   <span>{option.text}</span>
@@ -271,7 +275,7 @@ export function PracticeSession() {
               onChange={(event) => setUserRationale(event.target.value)}
               placeholder="Explica brevemente por qué elegiste esa respuesta"
               rows={5}
-              disabled={loading || Boolean(feedback)}
+              disabled={loading || hasFeedback}
             />
           </div>
 
