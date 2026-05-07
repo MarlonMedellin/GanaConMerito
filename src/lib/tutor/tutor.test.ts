@@ -156,6 +156,31 @@ test("TutorOrchestrator maps post-answer feedback phrasing to explain_feedback i
   assert.match(result.output.visibleMessage, /puntaje oficial/i);
 });
 
+
+
+test("TutorOrchestrator keeps guided actions compatible with current intent detection", async () => {
+  const hint = await new TutorOrchestrator().processTurn(makeInput("Dame una pista"));
+  assert.strictEqual(hint.output.intent, "give_hint");
+  assert.strictEqual(hint.output.canRevealCorrectAnswer, false);
+
+  const rationale = await new TutorOrchestrator().processTurn(makeInput("Analiza mi justificación"));
+  assert.strictEqual(rationale.output.intent, "analyze_user_rationale");
+
+  const feedback = await new TutorOrchestrator().processTurn(
+    makeInput("Explícame el feedback", {
+      ...baseEvidence,
+      userSession: {
+        ...baseEvidence.userSession,
+        selectedOption: "A",
+        feedback: "La elección no atendió el criterio principal.",
+      },
+    }),
+  );
+
+  assert.strictEqual(feedback.output.intent, "explain_feedback");
+  assert.strictEqual(feedback.output.canRevealCorrectAnswer, true);
+});
+
 test("selectAnsweredTurnForItem chooses the matching answered turn for the item", () => {
   const turn = selectAnsweredTurnForItem(
     [

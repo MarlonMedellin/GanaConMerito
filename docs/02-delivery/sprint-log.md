@@ -16,45 +16,36 @@ last_reviewed: 2026-05-06
 
 # Sprint log
 
-## Sprint cerrado — Sprint 20.2: Tutor GCM Closure Hardening
-- **Estado**: CERRADO CON PASS/WARN CONTROLADO
-- **Fecha**: 2026-05-06
-- **Base de trabajo en repo**: `1b331d1b08ff86aed83b4b79aa77ced48753eeed`
-- **Objetivo**: cerrar pendientes residuales del frente Tutor GCM sin abrir features nuevas, sin tocar scoring/avance/cierre y sin intervenir infraestructura.
+## Sprint cerrado — Sprint 20: Auditoría Runtime y Consolidación Tutor GCM
+- **Estado**: CERRADO CON PASS (LIMITACIÓN EN ONBOARDING)
+- **Fecha**: 2026-05-07
+- **Commit en master/runtime validado**: `9cd7ce44ab60ff7f24a996c244244239bb5f3b97`
+- **Short hash runtime**: `9cd7ce4`
+- **Objetivo**: auditar la integridad funcional/pedagógica en producción y consolidar el frente Tutor GCM (copy, intents y UX de textarea) sin tocar el backend crítico.
 
 ### Entregado
-- `src/components/tutor/tutor-interface.tsx` endurecido en capa visible permitida:
-  - limpia respuesta y error al cambiar de item;
-  - preserva borrador por `sessionId + itemId`;
-  - expone acciones guiadas seguras para pista, comparacion de opciones y explicacion post-respuesta.
-- `src/lib/tutor/tutor.test.ts` endurecido con un caso puntual: ignorar un turno mas nuevo no respondido cuando ya existe evidencia respondida valida para el mismo item.
-- `docs/02-delivery/tutor-gcm-sprint-20-runtime-audit.md` creado para consolidar la auditoria runtime reciente sin logs crudos ni secretos.
-- `docs/project/status.md`, `docs/02-delivery/change-log.md`, `docs/01-product/backlog.md` y este `sprint-log.md` reconciliados para cierre formal del frente.
-- La deuda del bypass de onboarding QA queda registrada como workaround controlado y no como flujo deseado.
+- `docs/02-delivery/tutor-gcm-sprint-20-runtime-audit.md` (Reporte de auditoría detallado).
+- `artifacts/qa/tutor-gcm-latest-sprints-report.json` (Evidencia JSON sanitizada).
+- `artifacts/qa/tutor-gcm-sprint-20-evidence.png` (Evidencia visual sanitizada).
+- `TutorInterface`: acciones guiadas alineadas con intents actuales y preservación de borrador en textarea (validado localmente).
+- `tutor.test.ts`: cobertura adicional para mapeo de copy guiado -> intent esperado.
 
-### Guardrails preservados
-- No se toco `src/app/api/tutor/turn/route.ts`.
-- No se toco `src/lib/tutor/tutor-orchestrator.ts`.
-- No se toco scoring.
-- No se toco avance de sesion.
-- No se toco cierre de sesion.
-- No se tocaron migraciones Supabase.
-- No se toco Docker, VPS ni deploy.
+### Validaciones Ejecutadas
+- [x] Integridad de Commit: el runtime muestra `9cd7ce4`.
+- [x] Persistencia de sesión: el estado autenticado se mantiene tras inyección de cookies.
+- [x] Guardrail Pre-Respuesta: el tutor rechaza revelar la clave antes de que el usuario responda.
+- [x] Explicación Post-Respuesta: el tutor explica la clave registrada tras la validación del ítem.
+- [x] Dashboard: operativo y navegable.
 
-### Validacion
-- `npm test`: PASS.
-- `npm run build`: PASS.
-- Runtime publico observado en `https://cnsc.profemarlon.com/login`: `200 OK`, commit visible `9cd7ce44ab60ff7f24a996c244244239bb5f3b97`, `buildTime=2026-05-06T23:08:12Z`.
-
-### Warn controlado
-- La observacion runtime reciente corresponde a la URL publica y no constituye deploy ejecutado desde esta rama.
-- El bypass de onboarding QA sigue existiendo como workaround controlado; queda documentado como deuda tecnica pendiente de reemplazo.
+### Riesgos y Notas Operativas
+- **Bypass Onboarding**: se utilizó bypass a nivel de DB para la prueba automatizada. El flujo UI de onboarding no fue validado de punta a punta.
+- **Seguridad**: se reporta exposición de secretos en logs previos. Se recomienda la rotación de `SUPABASE_SERVICE_ROLE_KEY`.
 
 ## Sprint cerrado — Sprint 13: Fuente de verdad normativa sintetizada v1
 - **Estado**: CERRADO CON WARN EXPLICITO
 - **Fecha**: 2026-05-04
 - **Base**: `88f997c232dcf2cb1958642e9055e26f0805778d`
-- **Objetivo**: cerrar una fuente de verdad normativa mínima y gobernada para Tutor GCM, evitando construir un sistema gigante y evitando inventar reglas no verificadas.
+- **Objetivo**: cerrar una fuente de verdad normativa minima y gobernada para Tutor GCM, evitando construir un sistema gigante y evitando inventar reglas no verificadas.
 
 ### Entregado
 - `docs/03-architecture/runtime-flow-map.md` creado.
@@ -67,69 +58,77 @@ last_reviewed: 2026-05-06
 
 ### Estado de fuente
 - Estado actual: `synthesized_governed_unverified`.
-- Motivo: los adjuntos normativos previos expiraron y no se cargaron de nuevo acuerdos/guías oficiales completos.
-- Criterio: el Tutor GCM puede usar la síntesis para orientación general, pero debe degradar si se le pide una regla normativa específica no cargada.
+- Motivo: los adjuntos normativos previos expiraron y no se cargaron de nuevo acuerdos/guias oficiales completos.
+- Criterio: el Tutor GCM puede usar la sintesis para orientacion general, pero debe degradar si se le pide una regla normativa especifica no cargada.
 
 ### Guardrails preservados
-- No se conectó LLM real.
-- No se tocó scoring.
-- No se tocó avance de sesión.
-- No se tocó cierre de sesión.
+- No se conecto LLM real.
+- No se toco scoring.
+- No se toco avance de sesion.
+- No se toco cierre de sesion.
 - No se tocaron migraciones Supabase.
-- No se tocó VPS ni Docker.
-- No se ejecutó el refactor de `PracticeSession`; solo quedó planificado.
+- No se toco VPS ni Docker.
+- No se ejecuto el refactor de `PracticeSession`; solo quedo planificado.
 
-## Sprint cerrado — Sprint 12: Métricas confiables y útiles v1
+## Continuidad planificada desde Sprint 14
+- La fuente de verdad del producto es `https://github.com/ProfeMarlonMDE/GanaConMerito`.
+- Todas las fuentes de trabajo deben promover cambios por Pull Request hacia `master`.
+- Despues del merge se debe actualizar `~/.openclaw/product`, luego `/opt/gcm/app`, luego Docker en el VPS OCI.
+- Las pruebas relevantes deben validarse en `https://cnsc.profemarlon.com`.
+- Las diferencias de hash entre `master` y ramas de sprint no bastan por si solas para declarar drift.
+- La continuidad nominal de roadmap queda en Sprint 14, Sprint 15 y Sprint 16.
+
+## Sprint cerrado — Sprint 12: Metricas confiables y utiles v1
 - **Estado**: CERRADO CON PASS/WARN MENOR ACEPTADO
 - **Fecha**: 2026-05-04
 - **PR**: #6
 - **Commit en master/runtime validado**: `64d78def1d8dd4f98ec9ae5ba55a3fed97e4e4ba`
 - **Short hash runtime**: `64d78de`
 - **Build time validado**: `2026-05-04T03:24:21Z`
-- **Objetivo**: fortalecer el contrato, lógica y presentación de métricas para que el dashboard sea prudente, simple y accionable sin vender conclusiones fuertes con poca evidencia.
+- **Objetivo**: fortalecer el contrato, logica y presentacion de metricas para que el dashboard sea prudente, simple y accionable sin vender conclusiones fuertes con poca evidencia.
 
 ### Entregado
-- `MetricSignalLevel` y `MetricInterpretation` incorporados al contrato de evaluación.
-- `buildDashboardSummaryMetrics` devuelve nivel de señal, descripción, acción recomendada y flags de confiabilidad.
+- `MetricSignalLevel` y `MetricInterpretation` incorporados al contrato de evaluacion.
+- `buildDashboardSummaryMetrics` devuelve nivel de senal, descripcion, accion recomendada y flags de confiabilidad.
 - Fortalezas, refuerzos, percentil y tendencia quedan condicionados por evidencia suficiente.
-- Dashboard histórico y por sesión ajustados con copy prudente.
-- E2E online reportado como PASS/WARN menor sobre producción.
+- Dashboard historico y por sesion ajustados con copy prudente.
+- E2E online reportado como PASS/WARN menor sobre produccion.
 
 ### Guardrails preservados
-- No se tocó scoring.
-- No se tocó avance de sesión.
-- No se tocó Tutor GCM.
+- No se toco scoring.
+- No se toco avance de sesion.
+- No se toco Tutor GCM.
 - No se inventaron percentiles ni promesas de resultado.
-- No se ocultaron datos: se calificó su confiabilidad.
+- No se ocultaron datos: se califico su confiabilidad.
 
-## Sprint cerrado — Sprint 11: Tutor GCM sincronización post-respuesta y trazabilidad operativa v1
+## Sprint cerrado — Sprint 11: Tutor GCM sincronizacion post-respuesta y trazabilidad operativa v1
 - **Estado**: CERRADO CON PASS
 - **Fecha**: 2026-05-03
 - **PR**: #5
 - **Commit en master/runtime validado**: `1dc454291b22bff41b95125fcbd68e373d8f578a`
-- **Objetivo**: corregir el estado post-respuesta del Tutor GCM para permitir explicación de clave, feedback y distractores solo después de respuesta confirmada server-side.
+- **Objetivo**: corregir el estado post-respuesta del Tutor GCM para permitir explicacion de clave, feedback y distractores solo despues de respuesta confirmada server-side.
 
 ### Entregado
 - `buildTutorEvidence` resuelve el turno respondido por `sessionId + itemId`.
 - Evidencia post-respuesta complementa `session_turns` con `evaluation_events`.
-- `canRevealCorrectAnswer` queda en `false` antes de responder y `true` después de respuesta confirmada.
-- El tutor puede explicar feedback, clave registrada y distractores después de responder.
+- `canRevealCorrectAnswer` queda en `false` antes de responder y `true` despues de respuesta confirmada.
+- El tutor puede explicar feedback, clave registrada y distractores despues de responder.
 - E2E online Sprint 11 reportado como PASS.
 
-## Sprint cerrado — Sprint 10: Tutor GCM fuente de verdad y contrato pedagógico v1
+## Sprint cerrado — Sprint 10: Tutor GCM fuente de verdad y contrato pedagogico v1
 - **Estado**: CERRADO CON PASS/WARN MENOR ACEPTADO
 - **Fecha**: 2026-05-03
 - **PR**: #4
 - **Commit en master/runtime validado**: `7a380328af9fcb974c9ab6497b35380ce9bd06ed`
-- **Objetivo**: implementar la base contractual del Tutor GCM para que opere con fuente de verdad gobernada, modos pedagógicos, evidencia server-side y degradación honesta.
+- **Objetivo**: implementar la base contractual del Tutor GCM para que opere con fuente de verdad gobernada, modos pedagogicos, evidencia server-side y degradacion honesta.
 
 ### Entregado
 - Contratos `ContestTruth`, `AspirationalProfileTruth`, `QuestionTruth`, `UserSessionTruth`, `TutorTurnResponse` y `TutorTurnTrace`.
 - Modos `current_question`, `contest_preparation` y `performance_analysis`.
-- Intenciones pedagógicas v1.
+- Intenciones pedagogicas v1.
 - `tutor-evidence-builder` server-side.
 - Guardrails de autoridad y fuente insuficiente.
-- `/api/tutor/turn` mantiene payload mínimo desde cliente.
+- `/api/tutor/turn` mantiene payload minimo desde cliente.
 
 ### No alcance
 - LLM real.
@@ -138,72 +137,72 @@ last_reviewed: 2026-05-06
 - Persistencia real de `TutorTurnTrace`.
 - Fuente normativa completa.
 
-## Sprint cerrado — Rotación controlada de selección de ítems
+## Sprint cerrado — Rotacion controlada de seleccion de items
 - **Estado**: CERRADO
 - **PR**: #3
 - **Objetivo**: evitar que nuevas sesiones inicien siempre con la misma pregunta para el mismo usuario.
-- **Entregado**: pool de candidatos, exclusión de ítems recientes, rotación determinística y fallback seguro.
+- **Entregado**: pool de candidatos, exclusion de items recientes, rotacion deterministica y fallback seguro.
 
-## Sprint cerrado — Humanización UX de etiquetas técnicas
+## Sprint cerrado — Humanizacion UX de etiquetas tecnicas
 - **Estado**: CERRADO
 - **PR**: #2
 - **Objetivo**: eliminar slugs crudos en UI como `gestion · lectura_de_indicadores`.
-- **Entregado**: helper `formatTechnicalLabel`, `formatAreaCompetency`, dashboard y práctica humanizados.
+- **Entregado**: helper `formatTechnicalLabel`, `formatAreaCompetency`, dashboard y practica humanizados.
 
 ## Sprint cerrado — Fix de login / Supabase runtime public config
 - **Estado**: CERRADO
 - **PR**: #1
-- **Objetivo**: corregir bloqueo de login por ausencia de variables públicas Supabase en el browser bundle.
-- **Entregado**: fallback runtime de configuración pública Supabase y login operativo.
+- **Objetivo**: corregir bloqueo de login por ausencia de variables publicas Supabase en el browser bundle.
+- **Entregado**: fallback runtime de configuracion publica Supabase y login operativo.
 
 ---
 
-## Sprint cerrado — Sprint 9: Integración funcional mínima gobernada de Tutor GCM
+## Sprint cerrado — Sprint 9: Integracion funcional minima gobernada de Tutor GCM
 - **Estado**: CERRADO OPERATIVAMENTE
 - **Fecha**: 2026-05-02
 - **Commit funcional/deploy verificado**: `8ec0ee7`
 - **Commit documental operativo previo**: `da3a8e66c4ce5d38fcf138725c81575836c7dfdd`
-- **Objetivo**: integrar al Tutor GCM en la UX de práctica de forma visible y útil pero estrictamente gobernada, sin abrir chat libre ni transferir autoridad al LLM.
+- **Objetivo**: integrar al Tutor GCM en la UX de practica de forma visible y util pero estrictamente gobernada, sin abrir chat libre ni transferir autoridad al LLM.
 
 ### Comprometido
 - componente UI `TutorInterface` premium
 - API Route `/api/tutor/turn` autenticada
 - orquestador con guardrails de autoridad y contexto de tema
-- integración en `PracticeSession` sin romper el core
+- integracion en `PracticeSession` sin romper el core
 - cierre operativo con source, deploy y runtime alineados
 
 ### Entregado
 - Hecho: `src/components/tutor/tutor-interface.tsx` implementado.
-- Hecho: `src/app/api/tutor/turn/route.ts` implementado con sesión autenticada y contexto derivado del servidor.
-- Hecho: integración en `PracticeSession` verificada con build reportado como exitoso.
-- Hecho: `TutorOrchestrator` mantenido dentro de guardrails: sin scoring, sin avance y sin cierre de sesión.
-- Hecho: cliente reducido a payload mínimo permitido (`sessionId`, `itemId`, `message`) para evitar inyección de contexto operativo sensible.
-- Hecho: triple verificación operativa reportada: `~/.openclaw/product` = `/opt/gcm/app` = runtime visible sobre `8ec0ee7`.
+- Hecho: `src/app/api/tutor/turn/route.ts` implementado con sesion autenticada y contexto derivado del servidor.
+- Hecho: integracion en `PracticeSession` verificada con build reportado como exitoso.
+- Hecho: `TutorOrchestrator` mantenido dentro de guardrails: sin scoring, sin avance y sin cierre de sesion.
+- Hecho: cliente reducido a payload minimo permitido (`sessionId`, `itemId`, `message`) para evitar inyeccion de contexto operativo sensible.
+- Hecho: triple verificacion operativa reportada: `~/.openclaw/product` = `/opt/gcm/app` = runtime visible sobre `8ec0ee7`.
 - Hecho: runtime visible reportado en `:3000/login` con `buildTime=2026-05-02T20:21:39Z`.
 
 ### Guardrails preservados
 - Tutor GCM no es chat libre.
 - Tutor GCM no decide scoring.
 - Tutor GCM no decide avance.
-- Tutor GCM no decide cierre de sesión.
+- Tutor GCM no decide cierre de sesion.
 - Tutor GCM no decide verdad operativa del sistema.
-- El backend no confía en `currentTopic`, `itemsCompleted`, `currentScore` ni señales críticas enviadas por frontend.
-- El contexto autorizado se deriva desde servidor y sesión propia.
+- El backend no confia en `currentTopic`, `itemsCompleted`, `currentScore` ni senales criticas enviadas por frontend.
+- El contexto autorizado se deriva desde servidor y sesion propia.
 
 ### No alcance
-- integración con proveedor LLM real
-- expansión editorial/question-bank
+- integracion con proveedor LLM real
+- expansion editorial/question-bank
 - cambios de scoring
-- cambios de avance o cierre de sesión
+- cambios de avance o cierre de sesion
 - nuevas migraciones o cambios de schema
 
 ### Criterio de cierre cumplido
-- [x] Tutor GCM visible en práctica.
+- [x] Tutor GCM visible en practica.
 - [x] Ruta `/api/tutor/turn` autenticada y gobernada.
-- [x] Contexto crítico derivado desde servidor.
+- [x] Contexto critico derivado desde servidor.
 - [x] Core sin cambios funcionales fuera del alcance autorizado.
 - [x] Source, deploy y runtime reportados como alineados sobre `8ec0ee7`.
-- [x] Documentación viva alineada con cierre operativo.
+- [x] Documentacion viva alineada con cierre operativo.
 
 ## Sprint cerrado — Sprint 8: Runtime confiable, QA postdeploy y disciplina operativa verificable
 - **Estado**: CERRADO
@@ -220,8 +219,8 @@ last_reviewed: 2026-05-06
 - `qa:e2e:ui` verde.
 
 ### Criterio de cierre cumplido
-- [x] Triple verificación confirmada sobre `c7ec88c`.
-- [x] Saneamiento de ruido efímero en fuente canónica completado.
+- [x] Triple verificacion confirmada sobre `c7ec88c`.
+- [x] Saneamiento de ruido efimero en fuente canonica completado.
 - [x] Evidencia de QA fresca persistida en VPS.
 - [x] Drift documental corregido y sincronizado con Git.
 
@@ -229,18 +228,18 @@ last_reviewed: 2026-05-06
 - **Estado**: CERRADO
 - **Fecha**: 2026-05-02
 - **Commit documental de cierre**: `c7ec88c`
-- **Objetivo**: reabrir de forma selectiva y gobernada el frente editorial/question-bank, validando el corpus activo y reduciendo drift entre repo, documentación y runtime esperado.
+- **Objetivo**: reabrir de forma selectiva y gobernada el frente editorial/question-bank, validando el corpus activo y reduciendo drift entre repo, documentacion y runtime esperado.
 
 ### Entregado
-- `docs/project/current-corpus-runtime-activation-map.md` con el listado de 27 ítems activos.
-- Actualización documental de `status`, `backlog` y `change-log` para reflejar el banco activo gobernado.
-- Validación reportada del corpus activo sin drift entre DB y repo.
+- `docs/project/current-corpus-runtime-activation-map.md` con el listado de 27 items activos.
+- Actualizacion documental de `status`, `backlog` y `change-log` para reflejar el banco activo gobernado.
+- Validacion reportada del corpus activo sin drift entre DB y repo.
 - Mantenimiento del core sin cambios funcionales ni regresiones reportadas.
 
 ### No alcance
-- expansión del corpus por encima de 27 ítems
+- expansion del corpus por encima de 27 items
 - cambios de UI del core
-- integración visible adicional de Tutor GCM
+- integracion visible adicional de Tutor GCM
 - nuevas migraciones o cambios de schema de Supabase
 
 ## Sprint cerrado — Sprint 6: Disciplina operativa de release y runtime
@@ -248,58 +247,58 @@ last_reviewed: 2026-05-06
 - **Fecha**: 2026-05-02
 - **Commit funcional**: `deb265c`
 - **Commit documental de cierre**: `c8309f6`
-- **Objetivo**: endurecer el proceso de release, asegurar triple verificación y reducir drift entre fuente, deploy y runtime.
+- **Objetivo**: endurecer el proceso de release, asegurar triple verificacion y reducir drift entre fuente, deploy y runtime.
 
 ### Entregado
 - checklist formal de release en `docs/02-delivery/release-checklist.md`
-- actualización de versión a `0.6.0`
+- actualizacion de version a `0.6.0`
 - saneamiento de permisos Git en VPS para pulls limpios
-- deploy validado con triple verificación `Source = Deploy = Runtime`
-- verificación visible de `commit` y `buildTime` en `/login`
+- deploy validado con triple verificacion `Source = Deploy = Runtime`
+- verificacion visible de `commit` y `buildTime` en `/login`
 - cierre documental consolidado en `status`, `sprint-log` y `change-log`
 
 ### No alcance
 - nuevas features funcionales del producto
 - reapertura de editorial/question-bank
-- integración visible adicional de Tutor GCM
+- integracion visible adicional de Tutor GCM
 - cambios de schema o migraciones de Supabase
 
-## Sprint cerrado — Sprint 5: Tutor GCM: base técnica gobernada
+## Sprint cerrado — Sprint 5: Tutor GCM: base tecnica gobernada
 - **Estado**: CERRADO FUNCIONALMENTE
 - **Fecha**: 2026-05-02
 - **Commit funcional**: `5e918a5`
-- **Objetivo**: diseñar e implementar la infraestructura mínima gobernada para Tutor GCM sin darle autoridad sobre negocio.
+- **Objetivo**: disenar e implementar la infraestructura minima gobernada para Tutor GCM sin darle autoridad sobre negocio.
 
 ### Entregado
 - contrato v1 del turno implementado (`TutorInput`, `TutorOutput`, `TutorTrace`)
-- reglas de autoridad explícitas en `src/domain/tutor/contract.ts`
-- orquestador con fallback y validación en `src/lib/tutor/tutor-orchestrator.ts`
+- reglas de autoridad explicitas en `src/domain/tutor/contract.ts`
+- orquestador con fallback y validacion en `src/lib/tutor/tutor-orchestrator.ts`
 - QA negativa validando rechazo de acciones no autorizadas
 - build del core sin regresiones
 
 ### No alcance
-- integración real con proveedor LLM
+- integracion real con proveedor LLM
 - UI conversacional visible para usuario final
-- autoridad sobre scoring, avance o cierre de sesión
+- autoridad sobre scoring, avance o cierre de sesion
 
-## Sprint cerrado — Sprint 4: Productización del core
+## Sprint cerrado — Sprint 4: Productizacion del core
 - **Estado**: CERRADO
 - **Fecha**: 2026-05-02
 - **Commit funcional**: `304f950`
 - **Commit documental de cierre**: `ef13a4f`
-- **Objetivo**: endurecer el core, mejorar UX móvil y retirar superficies no prioritarias del flujo principal.
+- **Objetivo**: endurecer el core, mejorar UX movil y retirar superficies no prioritarias del flujo principal.
 
 ### Entregado
-- `AppNav` reducido a `Inicio / Práctica / Métricas`
-- biblioteca/editorial fuera de la navegación principal del usuario
+- `AppNav` reducido a `Inicio / Practica / Metricas`
+- biblioteca/editorial fuera de la navegacion principal del usuario
 - componentes `LoadingState`, `EmptyState` y `ErrorState`
 - mejoras de continuidad en `Home` y endurecimiento de flujo en `Practice`
-- versión declarada `0.5.0`
-- build validado y `test:dashboard` verde en fuente canónica
-- validación de runtime/E2E reportada sobre VPS para el runtime funcional del sprint
+- version declarada `0.5.0`
+- build validado y `test:dashboard` verde en fuente canonica
+- validacion de runtime/E2E reportada sobre VPS para el runtime funcional del sprint
 
 ### No alcance
-- implementación funcional de `Tutor GCM`
+- implementacion funcional de `Tutor GCM`
 - reapertura de editorial como producto de usuario final
 - cambios de migraciones o schema de Supabase
 - cambios estructurales nuevos de arquitectura fuera del hardening del sprint
@@ -308,18 +307,18 @@ last_reviewed: 2026-05-06
 
 ## Historial operativo anterior
 
-### Sprint 3 - Normalización operativa final y preparación del frente de asistentes
+### Sprint 3 - Normalizacion operativa final y preparacion del frente de asistentes
 - **Estado**: CERRADO FORMAL Y OPERATIVAMENTE
 - **Fecha de cierre efectiva**: 2026-05-01
 - **Deploy triple-verificado**: `701ebcf`
 - **buildTime visible validado**: `2026-05-01T18:25:50Z`
 - **Resultado**: worktree residual resuelto, mapa de features activas consolidado, ADR-002 aprobado con guardrails y checklist de deploy aplicada.
 
-### Sprint 2 - Maduración operativa del producto
+### Sprint 2 - Maduracion operativa del producto
 - **Estado**: CERRADO OPERATIVAMENTE
 - **Fecha de cierre efectiva**: 2026-05-01
-- **Resultado**: navegación/auth consolidada, onboarding endurecido, QA postdeploy validada, gobernanza inicial de asistentes formalizada y regla de verdad runtime documentada.
+- **Resultado**: navegacion/auth consolidada, onboarding endurecido, QA postdeploy validada, gobernanza inicial de asistentes formalizada y regla de verdad runtime documentada.
 
-### Sprint 1 - Gobernanza mínima y baseline operable del producto
+### Sprint 1 - Gobernanza minima y baseline operable del producto
 - **Estado**: CERRADO
-- **Resultado**: baseline inicial de práctica/dashboard/sesiones, QA semántica y banco de preguntas operativo inicial documentado.
+- **Resultado**: baseline inicial de practica/dashboard/sesiones, QA semantica y banco de preguntas operativo inicial documentado.

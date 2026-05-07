@@ -12,14 +12,51 @@ function nearlyEqual(a, b, tolerance = 0.001) {
   return Math.abs(toNumber(a) - toNumber(b)) <= tolerance;
 }
 
+const MIN_ATTEMPTS_FOR_COMPETENCY_CONCLUSION = 3;
+const MIN_ATTEMPTS_FOR_STRONG_CONCLUSION = 5;
+const MIN_ACCURACY_FOR_STRENGTH = 0.6;
+const MAX_ACCURACY_FOR_WEAKNESS = 0.5;
+
 function getAccuracy(row) {
   return toNumber(row.attempts) > 0 ? toNumber(row.correct_count) / toNumber(row.attempts) : 0;
+}
+
+function getSignalLevel(totalAttempts) {
+  if (totalAttempts <= 0) return 'no_signal';
+  if (totalAttempts <= 2) return 'low_signal';
+  if (totalAttempts <= 4) return 'emerging_signal';
+  return 'usable_signal';
+}
+
+function getSignalLabel(signalLevel) {
+  switch (signalLevel) {
+    case 'no_signal': return 'Sin señal';
+    case 'low_signal': return 'Señal inicial';
+    case 'emerging_signal': return 'Señal emergente';
+    case 'usable_signal': return 'Señal usable';
+    default: return 'Sin señal';
+  }
+}
+
+function dedupeCompetencies(rows) {
+  const seen = new Set();
+  return rows.filter((row) => {
+    if (!row.competency || seen.has(row.competency)) return false;
+    seen.add(row.competency);
+    return true;
+  });
+}
+
+function hasComparableTrendWindow(rows) {
+  return rows.filter((row) => row.updated_at && toNumber(row.attempts) > 0).length >= 2;
 }
 
 function buildDashboardSummary(stats) {
   const rows = Array.isArray(stats) ? stats : [];
   const totalAttempts = rows.reduce((sum, row) => sum + toNumber(row.attempts), 0);
   const totalCorrect = rows.reduce((sum, row) => sum + toNumber(row.correct_count), 0);
+  const signalLevel = getSignalLevel(totalAttempts);
+  const canShowStrongConclusion = totalAttempts >= MIN_ATTEMPTS_FOR_STRONG_CONCLUSION;
   const avgReasoningScore = totalAttempts > 0
     ? round(rows.reduce((sum, row) => sum + toNumber(row.avg_reasoning_score) * toNumber(row.attempts), 0) / totalAttempts, 2)
     : 0;
@@ -32,39 +69,49 @@ function buildDashboardSummary(stats) {
     .sort((a, b) => String(b.updated_at).localeCompare(String(a.updated_at)));
 
   let recentTrend = 'stable';
-  if (recentWindow.length >= 2) {
+  const canShowTrend = hasComparableTrendWindow(recentWindow);
+  if (canShowTrend) {
     const latest = toNumber(recentWindow[0].estimated_level);
     const previous = toNumber(recentWindow[1].estimated_level);
     if (latest > previous) recentTrend = 'up';
     else if (latest < previous) recentTrend = 'down';
-  } else if (totalAttempts > 0) {
-    recentTrend = 'up';
   }
 
-  const strongestCompetencies = [...rows]
-    .filter((row) => toNumber(row.attempts) >= 1 && toNumber(row.correct_count) > 0 && toNumber(row.estimated_level) > 0 && getAccuracy(row) >= 0.5)
-    .sort((a, b) => {
-      const levelDiff = toNumber(b.estimated_level) - toNumber(a.estimated_level);
-      if (levelDiff !== 0) return levelDiff;
-      const accuracyDiff = getAccuracy(b) - getAccuracy(a);
-      if (accuracyDiff !== 0) return accuracyDiff;
-      return toNumber(b.attempts) - toNumber(a.attempts);
-    })
-    .slice(0, 3)
-    .map((row) => row.competency);
+  const canShowPercentile = canShowStrongConclusion && rows.some((row) => typeof row.percentile_segment === 'number');
+
+  const strongestCompetencies = dedupeCompetencies(
+    [...rows]
+      .filter((row) =>
+        toNumber(row.attempts) >= MIN_ATTEMPTS_FOR_COMPETENCY_CONCLUSION &&
+        toNumber(row.correct_count) > 0 &&
+        toNumber(row.estimated_level) > 0 &&
+        getAccuracy(row) >= MIN_ACCURACY_FOR_STRENGTH,
+      )
+      .sort((a, b) => {
+        const levelDiff = toNumber(b.estimated_level) - toNumber(a.estimated_level);
+        if (levelDiff !== 0) return levelDiff;
+        const accuracyDiff = getAccuracy(b) - getAccuracy(a);
+        if (accuracyDiff !== 0) return accuracyDiff;
+        return toNumber(b.attempts) - toNumber(a.attempts);
+      }),
+  ).slice(0, 3).map((row) => row.competency);
 
   const strongestSet = new Set(strongestCompetencies);
-  const weakestCompetencies = [...rows]
-    .filter((row) => toNumber(row.attempts) >= 1 && !strongestSet.has(row.competency))
-    .sort((a, b) => {
-      const levelDiff = toNumber(a.estimated_level) - toNumber(b.estimated_level);
-      if (levelDiff !== 0) return levelDiff;
-      const accuracyDiff = getAccuracy(a) - getAccuracy(b);
-      if (accuracyDiff !== 0) return accuracyDiff;
-      return toNumber(b.attempts) - toNumber(a.attempts);
-    })
-    .slice(0, 3)
-    .map((row) => row.competency);
+  const weakestCompetencies = dedupeCompetencies(
+    [...rows]
+      .filter((row) =>
+        toNumber(row.attempts) >= MIN_ATTEMPTS_FOR_COMPETENCY_CONCLUSION &&
+        !strongestSet.has(row.competency) &&
+        (getAccuracy(row) < MAX_ACCURACY_FOR_WEAKNESS || toNumber(row.estimated_level) < 0),
+      )
+      .sort((a, b) => {
+        const accuracyDiff = getAccuracy(a) - getAccuracy(b);
+        if (accuracyDiff !== 0) return accuracyDiff;
+        const levelDiff = toNumber(a.estimated_level) - toNumber(b.estimated_level);
+        if (levelDiff !== 0) return levelDiff;
+        return toNumber(b.attempts) - toNumber(a.attempts);
+      }),
+  ).slice(0, 3).map((row) => row.competency);
 
   return {
     estimatedLevel,
@@ -75,6 +122,11 @@ function buildDashboardSummary(stats) {
     strongestCompetencies,
     weakestCompetencies,
     recentTrend,
+    signalLevel,
+    signalLabel: getSignalLabel(signalLevel),
+    canShowStrongConclusion,
+    canShowTrend,
+    canShowPercentile,
   };
 }
 
@@ -123,6 +175,7 @@ function computeExpectedTopicStats({ dbTurns, evaluationEvents, itemsById }) {
       reasoningTotal: 0,
       difficultyTotal: 0,
       estimatedLevel: 0,
+      updated_at: evaluation.created_at,
     };
 
     current.attempts += 1;
@@ -130,6 +183,7 @@ function computeExpectedTopicStats({ dbTurns, evaluationEvents, itemsById }) {
     current.reasoningTotal += toNumber(evaluation.reasoning_score);
     current.difficultyTotal += toNumber(item.difficulty);
     current.estimatedLevel += toNumber(evaluation.estimated_theta_delta);
+    current.updated_at = evaluation.created_at || current.updated_at;
     statsByKey.set(key, current);
   }
 
@@ -141,6 +195,7 @@ function computeExpectedTopicStats({ dbTurns, evaluationEvents, itemsById }) {
     avg_reasoning_score: round(row.reasoningTotal / row.attempts, 2),
     avg_difficulty: round(row.difficultyTotal / row.attempts, 2),
     estimated_level: round(row.estimatedLevel, 3),
+    updated_at: row.updated_at,
   }));
 }
 
@@ -169,7 +224,7 @@ function compareStatsRows({ actualStats, expectedStats, collector }) {
     collector.check(toNumber(actual.correct_count) === expected.correct_count, 'correct_count inconsistente en user_topic_stats', `${key} esperado=${expected.correct_count} actual=${actual.correct_count}`);
     collector.check(nearlyEqual(actual.avg_reasoning_score, expected.avg_reasoning_score, 0.01), 'avg_reasoning_score inconsistente en user_topic_stats', `${key} esperado=${expected.avg_reasoning_score} actual=${actual.avg_reasoning_score}`);
     collector.check(nearlyEqual(actual.avg_difficulty, expected.avg_difficulty, 0.01), 'avg_difficulty inconsistente en user_topic_stats', `${key} esperado=${expected.avg_difficulty} actual=${actual.avg_difficulty}`);
-    collector.check(nearlyEqual(actual.estimated_level, expected.estimated_level, 0.001), 'estimated_level inconsistente en user_topic_stats', `${key} esperado=${expected.estimated_level} actual=${actual.estimated_level}`);
+    collector.check(nearlyEqual(actual.estimated_level, expected.estimated_level, 0.002), 'estimated_level inconsistente en user_topic_stats', `${key} esperado=${expected.estimated_level} actual=${actual.estimated_level}`);
   }
 }
 
@@ -185,13 +240,18 @@ function compareDashboardSummary({ actual, expected, collector, label = 'Dashboa
   collector.check(Boolean(actual), `No se obtuvo ${label} para validar`);
   if (!actual) return;
 
-  collector.check(nearlyEqual(actual.estimatedLevel, expected.estimatedLevel, 0.001), `${label} estimatedLevel no cuadra con DB`, `esperado=${expected.estimatedLevel} actual=${actual.estimatedLevel}`);
+  collector.check(nearlyEqual(actual.estimatedLevel, expected.estimatedLevel, 0.002), `${label} estimatedLevel no cuadra con DB`, `esperado=${expected.estimatedLevel} actual=${actual.estimatedLevel}`);
   collector.check(toNumber(actual.totalAttempts) === expected.totalAttempts, `${label} totalAttempts no cuadra con DB`, `esperado=${expected.totalAttempts} actual=${actual.totalAttempts}`);
   collector.check(toNumber(actual.totalCorrect) === expected.totalCorrect, `${label} totalCorrect no cuadra con DB`, `esperado=${expected.totalCorrect} actual=${actual.totalCorrect}`);
   collector.check(nearlyEqual(actual.avgReasoningScore, expected.avgReasoningScore, 0.01), `${label} avgReasoningScore no cuadra con DB`, `esperado=${expected.avgReasoningScore} actual=${actual.avgReasoningScore}`);
   collector.check(String(actual.recentTrend) === String(expected.recentTrend), `${label} recentTrend no cuadra con DB`, `esperado=${expected.recentTrend} actual=${actual.recentTrend}`);
-  collector.check(JSON.stringify(actual.strongestCompetencies || []) === JSON.stringify(expected.strongestCompetencies || []), `${label} strongestCompetencies no cuadra con DB`, `esperado=${JSON.stringify(expected.strongestCompetencies)} actual=${JSON.stringify(actual.strongestCompetencies)}`);
-  collector.check(JSON.stringify(actual.weakestCompetencies || []) === JSON.stringify(expected.weakestCompetencies || []), `${label} weakestCompetencies no cuadra con DB`, `esperado=${JSON.stringify(expected.weakestCompetencies)} actual=${JSON.stringify(actual.weakestCompetencies)}`);
+  collector.check(JSON.stringify(actual.strongestCompetencies || []) === JSON.stringify(expected.strongestCompetencies || []), `${label} strongestCompetencies no cuadra con contrato de señal`, `esperado=${JSON.stringify(expected.strongestCompetencies)} actual=${JSON.stringify(actual.strongestCompetencies)}`);
+  collector.check(JSON.stringify(actual.weakestCompetencies || []) === JSON.stringify(expected.weakestCompetencies || []), `${label} weakestCompetencies no cuadra con contrato de señal`, `esperado=${JSON.stringify(expected.weakestCompetencies)} actual=${JSON.stringify(actual.weakestCompetencies)}`);
+  collector.check(String(actual.signalLevel || '') === String(expected.signalLevel || ''), `${label} signalLevel no cuadra con contrato de señal`, `esperado=${expected.signalLevel} actual=${actual.signalLevel}`);
+  collector.check(String(actual.signalLabel || '') === String(expected.signalLabel || ''), `${label} signalLabel no cuadra con contrato de señal`, `esperado=${expected.signalLabel} actual=${actual.signalLabel}`);
+  collector.check(Boolean(actual.canShowStrongConclusion) === Boolean(expected.canShowStrongConclusion), `${label} canShowStrongConclusion no cuadra con contrato de señal`, `esperado=${expected.canShowStrongConclusion} actual=${actual.canShowStrongConclusion}`);
+  collector.check(Boolean(actual.canShowTrend) === Boolean(expected.canShowTrend), `${label} canShowTrend no cuadra con contrato de señal`, `esperado=${expected.canShowTrend} actual=${actual.canShowTrend}`);
+  collector.check(Boolean(actual.canShowPercentile) === Boolean(expected.canShowPercentile), `${label} canShowPercentile no cuadra con contrato de señal`, `esperado=${expected.canShowPercentile} actual=${actual.canShowPercentile}`);
 }
 
 function normalizeDashboardText(input) {

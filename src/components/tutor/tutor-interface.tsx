@@ -8,13 +8,15 @@ interface TutorInterfaceProps {
   currentItemId: string;
 }
 
-const guidedPrompts = [
-  "Dame una pista sin decirme la respuesta correcta.",
-  "Compárame dos opciones sin revelar la correcta.",
-  "Explícame el feedback oficial después de responder.",
-] as const;
-
 export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps) {
+  const guidedActions = [
+    "Dame una pista",
+    "Explícame esta pregunta",
+    "Compara las opciones sin decir cuál es la correcta",
+    "Analiza mi justificación",
+    "Explícame el feedback",
+    "Qué tema debo reforzar",
+  ];
   const [isOpen, setIsOpen] = useState(true);
   const [message, setMessage] = useState("");
   const [lastResponse, setLastResponse] = useState<TutorOutput | null>(null);
@@ -46,17 +48,8 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
     window.sessionStorage.removeItem(draftStorageKey);
   }, [draftStorageKey, message]);
 
-  function applyGuidedPrompt(prompt: (typeof guidedPrompts)[number]) {
-    if (loading) return;
-    setMessage(prompt);
-    setError(null);
-    messageInputRef.current?.focus();
-  }
-
-  async function handleSendMessage(e: React.FormEvent) {
-    e.preventDefault();
-    if (!message.trim() || loading) return;
-
+  async function sendMessage(nextMessage: string, options?: { clearMessage?: boolean }) {
+    if (!nextMessage.trim() || loading) return;
     setLoading(true);
     setError(null);
 
@@ -67,7 +60,7 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
         body: JSON.stringify({
           sessionId,
           itemId: currentItemId,
-          message: message.trim(),
+          message: nextMessage.trim(),
         }),
       });
 
@@ -78,12 +71,23 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
       }
 
       setLastResponse(data.output);
-      setMessage("");
+      if (options?.clearMessage ?? true) {
+        setMessage("");
+      }
     } catch (err) {
       setError(err instanceof Error ? err.message : "Error desconocido");
     } finally {
       setLoading(false);
     }
+  }
+
+  async function handleSendMessage(e: React.FormEvent) {
+    e.preventDefault();
+    await sendMessage(message);
+  }
+
+  async function handleGuidedAction(action: string) {
+    await sendMessage(action, { clearMessage: false });
   }
 
   if (!isOpen) {
@@ -99,10 +103,10 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
           <div className="avatar-chip" style={{ width: "32px", height: "32px", fontSize: "14px" }}>T</div>
           <div>
             <p className="eyebrow" style={{ margin: 0 }}>Tutor GCM</p>
-            <p className="body-sm" style={{ margin: 0 }}>¿Tienes dudas sobre esta pregunta?</p>
+            <p className="body-sm" style={{ margin: 0 }}>¿Quieres orientación para resolver esta pregunta?</p>
           </div>
         </div>
-        <span className="status-pill premium">Preguntar</span>
+        <span className="status-pill premium">Abrir tutor</span>
       </button>
     );
   }
@@ -119,7 +123,7 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
           <div className="avatar-chip" style={{ width: "32px", height: "32px", fontSize: "14px" }}>T</div>
           <div>
             <p className="eyebrow" style={{ margin: 0 }}>Tutor GCM</p>
-            <h3 className="section-title" style={{ fontSize: "1rem", margin: 0 }}>Acompañamiento de esta pregunta</h3>
+            <h3 className="section-title" style={{ fontSize: "1rem", margin: 0 }}>Guía paso a paso para esta pregunta</h3>
           </div>
         </div>
         <button
@@ -133,22 +137,36 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
       </div>
 
       <p className="body-sm" style={{ margin: 0 }}>
-        Puedes pedir una pista, comparar opciones sin revelar la clave o solicitar explicación del feedback después de responder.
+        Usa una acción guiada si necesitas apoyo puntual. También puedes escribir tu duda en texto libre; el tutor orienta sin revelar la clave antes de que respondas.
       </p>
 
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-        {guidedPrompts.map((prompt) => (
-          <button
-            key={prompt}
-            type="button"
-            className="subtle"
-            onClick={() => applyGuidedPrompt(prompt)}
-            disabled={loading}
-            style={{ border: "1px solid var(--border-subtle)", borderRadius: "999px", padding: "6px 10px" }}
-          >
-            {prompt}
-          </button>
-        ))}
+      <div style={{ display: "grid", gap: "8px" }}>
+        <p className="eyebrow" style={{ margin: 0 }}>
+          Acciones guiadas recomendadas
+        </p>
+        <p className="subtle" style={{ fontSize: "11px", margin: 0 }}>
+          Elige la acción que mejor describa tu necesidad actual para recibir una ayuda más precisa.
+        </p>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+          {guidedActions.map((action) => (
+            <button
+              key={action}
+              type="button"
+              className="subtle"
+              style={{
+                border: "1px solid var(--line)",
+                borderRadius: "999px",
+                padding: "6px 10px",
+                background: "var(--surface)",
+                cursor: loading ? "not-allowed" : "pointer",
+              }}
+              disabled={loading}
+              onClick={() => handleGuidedAction(action)}
+            >
+              {action}
+            </button>
+          ))}
+        </div>
       </div>
 
       {lastResponse ? (
@@ -168,14 +186,14 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
 
       <form onSubmit={handleSendMessage} style={{ display: "grid", gap: "10px" }} data-testid="tutor-gcm-form">
         <div className="form-field">
-          <label className="field-label" htmlFor="tutor-gcm-message">Pregunta al Tutor GCM</label>
+          <label className="field-label" htmlFor="tutor-gcm-message">Escribe tu consulta al Tutor GCM</label>
           <textarea
             ref={messageInputRef}
             id="tutor-gcm-message"
             data-testid="tutor-gcm-message"
             className="text-area"
             style={{ minHeight: "80px", fontSize: "14px" }}
-            placeholder="Ejemplo: Dame una pista sin decirme la respuesta correcta."
+            placeholder="Ejemplo: Estoy entre dos opciones. ¿Qué criterio puedo usar para compararlas sin ver la respuesta?"
             value={message}
             onChange={(event) => setMessage(event.target.value)}
             disabled={loading}
@@ -188,12 +206,12 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
           style={{ minHeight: "44px" }}
           disabled={loading || !message.trim()}
         >
-          {loading ? "Pensando..." : "Consultar Tutor"}
+          {loading ? "Pensando..." : "Pedir orientación"}
         </button>
       </form>
 
       <p className="subtle" style={{ fontSize: "11px", textAlign: "center" }}>
-        El tutor no tiene autoridad sobre tu puntaje, avance de sesión ni cierre de sesión.
+        El tutor no modifica tu puntaje ni el avance de tu sesión; solo te guía para razonar mejor.
       </p>
     </section>
   );

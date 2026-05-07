@@ -5,6 +5,7 @@ import {
 } from "@/lib/dashboard/summary";
 import { requireAuthenticatedUser } from "@/lib/supabase/guards";
 import { formatAreaCompetency, formatTechnicalLabel } from "@/lib/ui/format-label";
+import { TutorTraceSummaryCard } from "@/components/tutor/tutor-trace-summary-card";
 
 interface DashboardPageProps {
   searchParams?: Promise<{
@@ -183,6 +184,8 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
           )) : <p className="subtle">Todavía no hay señal suficiente para priorizar un refuerzo claro.</p>}
         </article>
       </section>
+
+      <TutorTraceSummaryCard />
 
       <section className="surface-card" style={{ padding: 22 }}>
         <div className="inline-cluster" style={{ justifyContent: "space-between" }}>

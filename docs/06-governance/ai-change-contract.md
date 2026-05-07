@@ -10,7 +10,7 @@ tags: [agentes, responsabilidades, gobernanza, handoff]
 related:
   - GOV-AGENT-ROSTER
   - GOV-WORKING-AGREEMENT
-last_reviewed: 2026-05-02
+last_reviewed: 2026-05-06
 ---
 
 # Contrato de Cambios y Handoff de IA
@@ -53,10 +53,28 @@ Usa GitHub para inspeccionar repositorio, commits, ramas, archivos, issues y PRs
 
 ### Regla de commits
 
-- todo commit debe incluir de forma visible el nombre del agente que realizó la tarea
-- formato preferido: `tipo(agente): resumen breve`
-- ejemplo: `docs(PM-Gauss): aclara fuente de verdad y disciplina de commits`
+- todo commit debe incluir de forma visible el agente, la vía y el contributor operativo
+- formato obligatorio del subject: `tipo(agente/via): resumen breve`
+- ejemplo: `docs(PM-DocControl/codex-marlonmedellin): aclara fuente de verdad y disciplina de commits`
 - tipos preferidos: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, `governance`
+
+#### Trailers obligatorios
+
+Todo commit debe cerrar con:
+
+```text
+Agent: NOMBRE-DEL-AGENTE
+Via: codex-marlonmedellin | codex-owner | chatgpt
+Contributor: NOMBRE-DE-CUENTA-O-PERSONA
+```
+
+#### Vías reconocidas al 2026-05-06
+
+- `codex-marlonmedellin`
+- `codex-owner`
+- `chatgpt`
+
+No se debe inventar una vía nueva dentro de un commit productivo sin actualizar antes la gobernanza.
 
 ## Rama de Trabajo Obligatoria
 
@@ -95,3 +113,4 @@ Al terminar, el agente debe reportar siempre este listado completo:
 - si el runtime fue verificado o no
 - rama real usada
 - commit creado
+- identidad declarada de `Agent`, `Via` y `Contributor`

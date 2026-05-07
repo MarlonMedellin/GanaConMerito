@@ -11,7 +11,7 @@ related:
   - PROD-VISION
   - DEL-SPRINT-LOG
   - QUAL-DEBT-REGISTER
-last_reviewed: 2026-05-06
+last_reviewed: 2026-05-07
 ---
 
 # Backlog de producto
@@ -31,15 +31,14 @@ GanaConMerito tiene activo el core real de producto:
 - fuente normativa sintetizada v1 en estado `synthesized_governed_unverified`
 - metricas prudentes para no vender conclusiones fuertes con poca senal
 - runtime con metadata visible y disciplina de triple verificacion
-- cierre funcional/documental del frente Tutor GCM endurecido hasta Sprint 20.2
+- **Auditoría de Runtime (Sprint 20):** PASS con limitación en onboarding.
 
 ## Implementado y validado recientemente
 
-### Sprint 20.2 — Tutor GCM Closure Hardening
-- Estado: CERRADO CON PASS/WARN CONTROLADO.
-- Resultado: cierre visible y documental del frente Tutor GCM sin tocar backend critico ni infraestructura.
-- Entregado: prompts guiados seguros, preservacion de borrador por item, limpieza de estado visible al cambiar de pregunta, prueba puntual residual valiosa y auditoria runtime reciente consolidada.
-- Advertencia: el bypass de onboarding QA sigue siendo workaround controlado, no flujo estandar.
+### Sprint 20 — Auditoría Runtime Tutor GCM
+- Estado: CERRADO CON PASS.
+- Resultado: Validación exitosa de guardrails pedagógicos y runtime commit integrity sobre VPS.
+- Riesgo: Se detectó necesidad de rotación de secretos (Supabase Service Role Key).
 
 ### Sprint 13 — Fuente de verdad normativa sintetizada v1
 - Estado: CERRADO CON WARN EXPLICITO.
@@ -69,17 +68,19 @@ GanaConMerito tiene activo el core real de producto:
 
 ## Now
 1. Mantener Sprint 13 como fuente normativa sintetizada no verificada hasta cargar documentos oficiales.
-2. Mantener disciplina de triple verificacion `~/.openclaw/product = /opt/gcm/app = runtime visible`.
-3. Reemplazar el bypass de onboarding QA por un mecanismo oficial de preparacion de usuarios de prueba.
-4. Preparar persistencia de `TutorTurnTrace` para metricas pedagogicas.
-5. Mantener Tutor GCM bajo contrato: sin scoring, sin avance, sin cierre, sin fuente normativa inventada.
+2. Mantener disciplina de promocion: PR al repo principal -> `master` -> `~/.openclaw/product` -> `/opt/gcm/app` -> Docker OCI -> validacion en `https://cnsc.profemarlon.com`.
+3. Ejecutar rotación de `SUPABASE_SERVICE_ROLE_KEY` (Riesgo identificado en Sprint 20).
+4. Agregar script general `npm test` y baseline local de QA.
+5. Preparar persistencia de `TutorTurnTrace` para metricas pedagogicas.
+6. Mantener Tutor GCM bajo contrato: sin scoring, sin avance, sin cierre, sin fuente normativa inventada.
 
 ## Next
-1. **Mecanismo oficial de QA user prep**: reemplazar el bypass manual/controlado de onboarding por seed, admin action o helper auditable que deje al usuario listo para practicar sin falsear el flujo real.
-2. **Persistencia de trazas del Tutor GCM**: guardar `TutorTurnTrace` para metricas pedagogicas y auditoria.
-3. **Carga verificada de fuente normativa oficial**: acuerdo, guia metodologica, estructura de prueba, perfiles/empleos y versionado de fuente.
-4. **CI minimo en GitHub Actions**: build, tests unitarios, validacion documental y validacion de contenido.
-5. **Reconciliacion runtime/documentacion**: alinear la linea documental de `master` con el runtime publico reciente antes del cierre total del frente Tutor GCM.
+1. **Cierre final Tutor GCM (post Sprint 20)**: validacion publica final del frente con evidencia runtime y PR de cierre.
+2. **Sprint 14 — Persistencia y metricas del Tutor GCM**: guardar `TutorTurnTrace` para metricas pedagogicas y auditoria operativa.
+3. **Sprint 15 — Fuente normativa oficial verificada**: cargar acuerdo, guia metodologica, estructura de prueba, perfiles/empleos y versionado de fuente.
+3. **Sprint 16 — Release y runtime confiables**: CI minima en GitHub Actions, build, tests unitarios, validacion documental y disciplina publica de runtime.
+4. **UX guiada del Tutor GCM**: reemplazar caja libre dominante por acciones pedagogicas guiadas.
+5. **Runtime topology doc**: documentar `docker-compose.yml`, env file, dominio, proxy y politica de secretos.
 
 ## Later
 1. Admin para editar fuente de verdad normativa y perfiles.
@@ -92,13 +93,13 @@ GanaConMerito tiene activo el core real de producto:
 ## Deuda tecnica viva
 
 ### Alta prioridad
+- No existe `npm test` como contrato general.
 - Fuente normativa del Tutor GCM aun no esta verificada con documentos oficiales completos.
 - `TutorTurnTrace` no se persiste aun en base de datos.
-- El bypass de onboarding usado en QA no es flujo estandar y debe reemplazarse por un mecanismo oficial de preparacion de usuarios.
 
 ### Media prioridad
 - `PracticeSession` crece como componente grande; refactor futuro, no inmediato.
-- Persisten oportunidades futuras de UX guiada mas profunda del Tutor GCM, pero Sprint 20.2 no abre ese alcance.
+- `TutorInterface` sigue siendo UI basica de pregunta abierta; evolucionar a acciones guiadas.
 - Falta documento formal de topologia runtime.
 - Falta CI minimo.
 
