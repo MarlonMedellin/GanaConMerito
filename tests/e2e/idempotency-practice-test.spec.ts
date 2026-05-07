@@ -78,6 +78,6 @@ test.describe("GanaConMerito - Idempotency Practice Test", () => {
     
     // El test pasa si la ejecución termina, el veredicto real se lee en la consola/JSON.
     // Si el usuario quiere que "siempre salga la misma", validamos eso.
-    // expect(areIdentical).toBe(true); 
+    expect(areIdentical, "La misma sesión debe conservar la pregunta al reingresar a /practice").toBe(true);
   });
 });
