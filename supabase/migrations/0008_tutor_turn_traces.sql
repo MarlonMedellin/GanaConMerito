@@ -28,28 +28,48 @@ create index if not exists idx_tutor_turn_traces_created_at on public.tutor_turn
 
 alter table public.tutor_turn_traces enable row level security;
 
-create policy tutor_turn_traces_select_own
-on public.tutor_turn_traces
-for select
-using (
-  exists (
+do $$
+begin
+  if not exists (
     select 1
-    from public.profiles p
-    where p.id = tutor_turn_traces.profile_id
-      and p.auth_user_id = auth.uid()
-  )
-);
+    from pg_policies
+    where schemaname = 'public'
+      and tablename = 'tutor_turn_traces'
+      and policyname = 'tutor_turn_traces_select_own'
+  ) then
+    create policy tutor_turn_traces_select_own
+    on public.tutor_turn_traces
+    for select
+    using (
+      exists (
+        select 1
+        from public.profiles p
+        where p.id = tutor_turn_traces.profile_id
+          and p.auth_user_id = auth.uid()
+      )
+    );
+  end if;
 
-create policy tutor_turn_traces_insert_own
-on public.tutor_turn_traces
-for insert
-with check (
-  exists (
+  if not exists (
     select 1
-    from public.profiles p
-    where p.id = tutor_turn_traces.profile_id
-      and p.auth_user_id = auth.uid()
-  )
-);
+    from pg_policies
+    where schemaname = 'public'
+      and tablename = 'tutor_turn_traces'
+      and policyname = 'tutor_turn_traces_insert_own'
+  ) then
+    create policy tutor_turn_traces_insert_own
+    on public.tutor_turn_traces
+    for insert
+    with check (
+      exists (
+        select 1
+        from public.profiles p
+        where p.id = tutor_turn_traces.profile_id
+          and p.auth_user_id = auth.uid()
+      )
+    );
+  end if;
+end
+$$;
 
 commit;

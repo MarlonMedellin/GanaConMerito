@@ -9,7 +9,7 @@ modules: [core, platform]
 tags: [agentes, responsabilidades, gobernanza]
 related:
   - GOV-WORKING-AGREEMENT
-last_reviewed: 2026-04-23
+last_reviewed: 2026-05-06
 ---
 
 # Agent roster
@@ -45,6 +45,36 @@ last_reviewed: 2026-04-23
 - Owner humano mínimo del producto: Marlon Arcila
 - Aprobador de ADRs y decisiones estructurales: Marlon Arcila
 - Owner operativo inicial de arquitectura, datos/auth, editorial y gobernanza documental: Marlon Arcila
+
+## Vías de contribución reconocidas
+
+### codex-marlonmedellin
+- canal: Codex
+- contributor operativo esperado: `MarlonMedellin`
+- identidad humana asociada: Profe Marlon Arcila
+- uso esperado: contribución como collaborator desde cuenta secundaria de trabajo
+
+### codex-owner
+- canal: Codex
+- contributor operativo esperado: cuenta dueña del repositorio
+- identidad humana asociada: Profe Marlon Arcila
+- uso esperado: cambios ejecutados desde el perfil owner del repo
+
+### chatgpt
+- canal: ChatGPT
+- contributor operativo esperado: el humano que materializa el cambio en Git
+- identidad humana asociada: Profe Marlon Arcila u otro contributor autorizado
+- uso esperado: propuestas o cambios originados en ChatGPT que luego se aterrizan en el repo
+
+## Regla de trazabilidad por commit
+
+Cada commit de agentes debe poder responder estas tres preguntas sin ambigüedad:
+
+- qué agente hizo el trabajo
+- por cuál vía llegó el cambio
+- qué contributor/cuenta lo materializó en GitHub
+
+La convención canónica se define en [AGENTS.md](../../AGENTS.md) y en [ai-change-contract.md](ai-change-contract.md).
 
 ## Roles operativos de apoyo
 - Architecture Agent: propone y analiza impacto, no aprueba.

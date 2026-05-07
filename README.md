@@ -10,7 +10,7 @@ tags: [repositorio, onboarding, fuente-de-verdad]
 related:
   - GOV-WORKING-AGREEMENT
   - ARCH-SYSTEM-OVERVIEW
-last_reviewed: 2026-04-23
+last_reviewed: 2026-05-06
 ---
 
 # GanaConMerito
@@ -82,6 +82,52 @@ Si hay divergencia entre `~/.openclaw/product` y `/opt/gcm/app`, la corrección 
 - Desarrollo: `npm run dev` si existe script definido
 - Validación documental: `python3 scripts/validate_docs.py`
 - Índice contextual: `python3 scripts/build_context_index.py`
+
+## Operación local verificada
+
+### Instalación
+- Gestor verificado: `npm`
+- Evidencia local: existe `package-lock.json` y el 2026-05-06 se ejecutó `npm install` correctamente
+- Comando exacto: `npm install`
+
+### Variables de entorno
+- Archivo base requerido: `.env`
+- Plantilla disponible: [`.env.example`](.env.example)
+- Claves requeridas por la plantilla actual:
+  - `NEXT_PUBLIC_SUPABASE_URL`
+  - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+  - `SUPABASE_SERVICE_ROLE_KEY`
+- Nota operativa: el login browser puede intentar fallback runtime vía `/api/auth/public-config`, pero esa ruta también depende de `NEXT_PUBLIC_SUPABASE_URL` y `NEXT_PUBLIC_SUPABASE_ANON_KEY` en servidor
+
+### Arranque local
+- Comando exacto: `npm run dev`
+- Script actual: `next dev`
+
+### Build
+- Comando exacto: `npm run build`
+- Evidencia local: verificado OK el 2026-05-06
+
+### Lint
+- Comando exacto: `npm run lint`
+- Script actual: `npm run typecheck`
+- Evidencia local previa: antes de este ajuste `npm run lint` no existía
+
+### Tests
+- Comando exacto principal: `npm run test`
+- Comandos relacionados:
+  - `npm run test:unit`
+  - `npm run test:dashboard`
+  - `npm run test:tutor`
+  - `npm run qa:local`
+- Evidencia local: `npm run test` pasó OK el 2026-05-06
+
+### Smoke de runtime
+- Comando exacto: `npm run qa:runtime:smoke`
+- Uso típico local: con la app levantada en `http://localhost:3000`
+- Uso típico remoto: `QA_BASE_URL=https://cnsc.profemarlon.com npm run qa:runtime:smoke`
+- Cobertura actual:
+  - `/login` responde y expone `commit` y `buildTime`
+  - `/api/auth/public-config` responde con configuración pública de Supabase
 
 ## Aprobación humana obligatoria
 Requieren aprobación humana explícita:

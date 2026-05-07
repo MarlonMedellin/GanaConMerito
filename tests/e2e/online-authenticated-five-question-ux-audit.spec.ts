@@ -132,7 +132,13 @@ test.describe("GanaConMerito - Online UX & Flow Audit", () => {
 
   test.afterAll(async () => {
     // Evaluate verdict
-    const hasCriticalErrors = report.networkErrors.some(e => e.status >= 500) || report.brokenLinks.length > 0 || report.logoutStatus !== "Success" || report.postLogoutProtectionStatus !== "Protected" || report.sessionApiResponses.start >= 400 || report.sessionApiResponses.item >= 400;
+    const hasCriticalErrors =
+      report.networkErrors.some((e) => e.status >= 500) ||
+      report.brokenLinks.length > 0 ||
+      report.logoutStatus !== "Success" ||
+      report.postLogoutProtectionStatus !== "Protected" ||
+      (report.sessionApiResponses.start ?? 0) >= 400 ||
+      (report.sessionApiResponses.item ?? 0) >= 400;
     
     if (hasCriticalErrors || report.finalUrls["home"]?.includes("/login") || report.totalQuestionsAnswered === 0) {
       report.verdict = "FAIL";

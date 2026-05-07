@@ -9,7 +9,7 @@ modules: [core, platform]
 tags: [changelog, cambios, entregas]
 related:
   - DEL-SPRINT-LOG
-last_reviewed: 2026-05-04
+last_reviewed: 2026-05-06
 ---
 
 ## 2026-05-07
@@ -20,6 +20,22 @@ last_reviewed: 2026-05-04
 - commit validado: `9cd7ce44ab60ff7f24a996c244244239bb5f3b97`
 - agente: Antigravity (QA Agent)
 - relacionados: docs/02-delivery/tutor-gcm-sprint-20-runtime-audit.md, artifacts/qa/tutor-gcm-latest-sprints-report.json
+
+## 2026-05-06
+- tipo: fix+qa+docs
+- modulo: tutor/ui/tests/documentation
+- resumen: sprint 20 de consolidacion Tutor GCM. Se normaliza copy de acciones guiadas para recuperar compatibilidad con `detectTutorIntent` sin tocar backend; se corrige UX para que una accion guiada no destruya el borrador del textarea; se agregan pruebas locales de mapeo accion->intent y se reconcilia documentacion viva hasta Sprint 20 con notas explicitas de verificabilidad.
+- sprint: Sprint 20 — Tutor GCM Consolidation and Closure
+- agente: ChatGPT
+- relacionados: src/components/tutor/tutor-interface.tsx, src/lib/tutor/tutor.test.ts, docs/project/status.md, docs/02-delivery/sprint-log.md, docs/01-product/backlog.md
+
+## 2026-05-06
+- tipo: docs+governance+ops
+- modulo: governance/release/runtime
+- resumen: se actualiza la gobernanza operativa para dejar explicito que la fuente de verdad del producto es el repo principal `https://github.com/ProfeMarlonMDE/GanaConMerito`; que existen multiples origenes de edicion concurrentes; que toda promocion estable debe pasar por Pull Request a `master`; que luego debe sincronizarse `~/.openclaw/product`, despues `/opt/gcm/app` y finalmente Docker en el VPS OCI; y que la validacion relevante debe correrse contra `https://cnsc.profemarlon.com`. Tambien se fija la continuidad del roadmap desde Sprint 14 porque la fuente ya tiene evidencia hasta Sprint 13.
+- sprint: Gobernanza operativa posterior a Sprint 13
+- agente: ChatGPT
+- relacionados: AGENTS.md, docs/06-governance/gcm-operating-context.md, docs/project/status.md, docs/02-delivery/sprint-log.md, docs/01-product/backlog.md
 
 ## 2026-05-04
 - tipo: feat+docs+governance
@@ -42,7 +58,7 @@ last_reviewed: 2026-05-04
 ## 2026-05-04
 - tipo: feat+dashboard+metrics+qa
 - modulo: dashboard/metrics
-- resumen: se cerro Sprint 12 con contrato de metricas confiables y utiles. El dashboard ya no presenta conclusiones fuertes con poca senal; incorpora niveles `no_signal`, `low_signal`, `emerging_signal` y `usable_signal`, copy prudente, percentil condicionado, tendencia condicionada y recomendaciones accionables sin promesas de resultado.
+- resumen: se cerro Sprint 12 con contrato de metricas confiables y utiles. El dashboard ya no presenta conclusiones fuertes con poca senal; incorpora niveles `no_signal`, `low_signal`, `emerging_signal`, `usable_signal`, copy prudente, percentil condicionado, tendencia condicionada y recomendaciones accionables sin promesas de resultado.
 - sprint: Sprint 12 — Metricas confiables y utiles v1
 - pr: #6
 - commit master/runtime: `64d78def1d8dd4f98ec9ae5ba55a3fed97e4e4ba`
@@ -90,4 +106,4 @@ last_reviewed: 2026-05-04
 - relacionados: src/app/api/auth/public-config/route.ts, src/lib/supabase/client.ts, src/lib/supabase/auth.ts
 
 ## Historial previo
-El historial anterior completo se conserva en Git. Este archivo mantiene la vista ejecutiva de cambios recientes y canónicos para operación de agentes.
+El historial anterior completo se conserva en Git. Este archivo mantiene la vista ejecutiva de cambios recientes y canonicos para operacion de agentes.

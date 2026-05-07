@@ -10,17 +10,20 @@ last_reviewed: 2026-05-07
 
 # Project Status — GanaConMerito
 
-Ultima actualizacion: 2026-05-07 — Cierre Sprint 20.
+Ultima actualizacion: 2026-05-07 — Cierre Sprint 20 (Auditoría Runtime y Consolidación).
 
 ## Estado general
 
-**Estado:** Sprint 13 cerrado como fuente normativa sintetizada v1 gobernada, no verificada.  
-**Producto:** MVP avanzado con core operativo, Tutor GCM gobernado, dashboard con metricas prudentes y contrato de fuente normativa minima.  
+**Estado:** Sprint 20 de consolidacion Tutor GCM cerrado a nivel local (QA + docs), manteniendo la fuente normativa sintetizada v1 como no verificada.  
+**Producto:** producto activo con core operativo, Tutor GCM gobernado, dashboard con metricas prudentes y contrato de fuente normativa minima.  
 **Rama canonica:** `master`.  
 **Version declarada en `package.json`:** `0.6.0`.
 
 ## Verdad operativa actual
 
+- **Fuente de verdad del producto:** `https://github.com/ProfeMarlonMDE/GanaConMerito`.
+- **Copia sincronizada operativa en VPS:** `~/.openclaw/product`.
+- **Arbol de deploy:** `/opt/gcm/app`.
 - **HEAD base de Sprint 20:** `9cd7ce44ab60ff7f24a996c244244239bb5f3b97`.
 - **Ultimo runtime productivo validado:** `9cd7ce4`.
 - **Build time productivo validado:** `2026-05-06T23:08:12Z`.
@@ -117,10 +120,9 @@ Ultima actualizacion: 2026-05-07 — Cierre Sprint 20.
 
 ## Proximos pasos recomendados
 
-1. Sprint 14 recomendado: Persistencia y metricas del Tutor GCM.
-2. Sprint futuro: Refactor liviano de `PracticeSession` con E2E online.
-3. Sprint futuro: Carga verificada de fuentes normativas oficiales.
-4. Sprint futuro: UX guiada del Tutor GCM con intenciones pedagogicas.
+1. **Sprint 14 recomendado:** persistencia y metricas del Tutor GCM.
+2. **Sprint 15 recomendado:** carga verificada de fuentes normativas oficiales y trazabilidad de versionado.
+3. **Sprint 16 recomendado:** disciplina de release, CI minima y cierre de drift entre repo, VPS y runtime publico.
 
 ## Criterio de cierre del estado actual
 
@@ -131,3 +133,18 @@ El estado actual se considera cerrado si:
 - el Tutor GCM sigue degradando cuando falta evidencia;
 - no se toca scoring, avance, cierre de sesion, Docker, VPS ni Supabase Dashboard;
 - los documentos `runtime-flow-map.md` y `server-side-service-role-policy.md` quedan creados.
+
+
+## Consolidacion Tutor GCM (Sprint 15 -> Sprint 20)
+
+- Sprint 15: trazas/metricas del tutor reportadas en el roadmap, pero sin verificacion publica nueva en este checkout.
+- Sprint 15.1: hardening de agregados y filtrado de guardrails reportado como continuidad; mantener nota de verificacion pendiente contra runtime publico.
+- Sprint 16: UX guiada del tutor introducida con acciones sugeridas y textarea libre coexistiendo.
+- Sprint 17: consumidor visual del resumen de trazas disponible en dashboard/practica (sin cambios de contrato en este sprint).
+- Sprint 18: normalizacion de copy de acciones guiadas y mensajes de apoyo.
+- Sprint 19: hardening QA local del tutor solo parcialmente verificable en este checkout; no se declara cierre publico desde aqui.
+- Sprint 20: se corrige compatibilidad de copy guiado con intents actuales, se evita perdida permanente del borrador en textarea y se actualiza documentacion viva.
+
+**Riesgos abiertos:**
+- La fuente normativa sigue en `synthesized_governed_unverified`.
+- Falta validacion publica final de cierre Tutor GCM posterior a esta consolidacion local.
