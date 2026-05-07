@@ -16,6 +16,35 @@ last_reviewed: 2026-05-06
 
 # Sprint log
 
+## Sprint cerrado — Sprint 21: Tutor GCM Final Runtime Closure
+- **Estado**: CERRADO CON PASS CON WARN
+- **Fecha**: 2026-05-06
+- **Base en master**: `400c7e33e2467e1cadb110b09b2ff7f70ee99a95`
+- **Commit/runtime publico observado**: `9cd7ce44ab60ff7f24a996c244244239bb5f3b97`
+- **Short hash runtime**: `9cd7ce4`
+- **Build time runtime**: `2026-05-06T23:08:12Z`
+- **Objetivo**: cerrar funcionalmente Tutor GCM con evidencia publica verificable y documentacion viva alineada, sin abrir cambios de producto ni tocar infraestructura.
+
+### Entregado
+- `docs/02-delivery/tutor-gcm-final-runtime-closure.md` creado como reporte canonico de cierre funcional.
+- Actualizacion documental de `status`, `sprint-log`, `change-log` y `backlog`.
+- Contraste explicito entre observacion publica actual y evidencia QA sanitizada previa.
+
+### Validaciones Ejecutadas
+- [x] `/login` publico responde `200` y expone metadata visible de commit/build.
+- [x] `/practice` y `/dashboard` sin sesion redirigen `307 -> /login`.
+- [x] Evidencia sanitizada previa confirma Tutor GCM visible en practica.
+- [x] Evidencia sanitizada previa confirma acciones guiadas visibles.
+- [x] Evidencia sanitizada previa confirma guardrail pre-respuesta.
+- [x] Evidencia sanitizada previa confirma explicacion post-respuesta.
+- [ ] PASS explicito del resumen visual de trazas en dashboard desde esta revision.
+- [ ] Logout fresco del mismo usuario validado dentro de esta corrida.
+
+### Riesgos y Notas Operativas
+- **Bypass Onboarding**: se mantiene como workaround controlado de QA; no documentarlo como flujo estandar.
+- **Normativa**: la fuente sigue en `synthesized_governed_unverified`; el cierre funcional del tutor no equivale a cierre normativo total.
+- **Dashboard Tutor**: el dashboard general queda respaldado por evidencia previa, pero el resumen visual de trazas no se marca PASS explicito sin evidencia aislada adicional.
+
 ## Sprint cerrado — Sprint 20: Auditoría Runtime y Consolidación Tutor GCM
 - **Estado**: CERRADO CON PASS (LIMITACIÓN EN ONBOARDING)
 - **Fecha**: 2026-05-07

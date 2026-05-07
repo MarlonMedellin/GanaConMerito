@@ -13,6 +13,14 @@ last_reviewed: 2026-05-06
 ---
 
 ## 2026-05-07
+- tipo: qa+docs+closure
+- modulo: tutor/runtime/documentation
+- resumen: se ejecuta Sprint 21 de cierre funcional del frente Tutor GCM. Se contrasta observacion publica directa de `https://cnsc.profemarlon.com` contra evidencia QA sanitizada previa; el runtime expone `commit=9cd7ce44ab60ff7f24a996c244244239bb5f3b97` y `buildTime=2026-05-06T23:08:12Z`, `/practice` y `/dashboard` redirigen a `/login` sin sesion, y el frente queda cerrado con PASS con WARN por fuente normativa aun no verificada, bypass de onboarding QA controlado y ausencia de evidencia aislada suficiente para marcar PASS explicito del resumen visual de trazas en dashboard.
+- sprint: Sprint 21 — Tutor GCM Final Runtime Closure
+- commit/runtime observado: `9cd7ce44ab60ff7f24a996c244244239bb5f3b97`
+- agente: ChatGPT
+- relacionados: docs/02-delivery/tutor-gcm-final-runtime-closure.md, docs/project/status.md, docs/02-delivery/sprint-log.md, docs/01-product/backlog.md
+
 - tipo: qa+governance+tutor
 - modulo: tutor/runtime/compliance
 - resumen: se ejecuta auditoría de runtime Sprint 20 sobre el entorno de producción. Se valida integridad de commit (9cd7ce4), persistencia de sesión con bypass de onboarding controlado y cumplimiento estricto de guardrails pedagógicos (no revelación de respuesta antes de contestar). Se detecta fallo 500 menor en endpoint de resumen de trazas que no afecta operación crítica.
