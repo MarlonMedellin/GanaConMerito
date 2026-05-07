@@ -7,7 +7,7 @@ status: active
 artifact_type: product
 modules: [tutor, contest, profile, question-bank]
 tags: [source-truth, tutor-gcm, cnsc, normativa, contrato]
-last_reviewed: 2026-05-04
+last_reviewed: 2026-05-06
 ---
 
 # Fuente de verdad normativa sintetizada v1 — Tutor GCM
@@ -30,6 +30,26 @@ El Tutor GCM responde con base en evidencia disponible. Si falta fuente suficien
 - Integrado: `src/lib/tutor/tutor-evidence-builder.ts`.
 - Contratos extendidos: `src/types/tutor-turn.ts`.
 - Estado de fuente: `synthesized_governed_unverified`.
+
+## Clasificación vigente de verificabilidad
+
+### Verificado en repo
+- Existe un contrato explícito de fuente normativa mínima para Tutor GCM.
+- El runtime del tutor propaga `sourceTruthStatus` y referencias de fuente desde servidor.
+- El estado técnico cargado por defecto es `synthesized_governed_unverified`, no `source_verified`.
+- El tutor degrada cuando se le exige una regla específica no soportada por evidencia suficiente.
+
+### Sintetizado pero no verificado
+- `evaluationStructureSummary` y `evaluationRulesSummary` del concurso son síntesis prudentes, no transcripción oficial.
+- Los resúmenes funcionales, comportamentales y de alineación MIPG del perfil son síntesis gobernadas de uso pedagógico general.
+- `normativeAlignmentSummary` en preguntas describe alineación pedagógica general, no validación normativa fina por ítem.
+
+### Faltante para cierre normativo
+- Acuerdo oficial del concurso efectivamente cargado y referenciado.
+- Guía metodológica oficial efectivamente cargada y referenciada.
+- Estructura oficial de prueba efectivamente cargada y referenciada.
+- Convocatoria específica y manual/perfil de empleo que permitan validar funciones y alcance por perfil.
+- Evidencia documental trazable por versión para promover el estado a `source_verified`.
 
 ## Elementos mínimos de fuente de verdad
 
@@ -138,6 +158,13 @@ No puede:
 | Competencias comportamentales | Síntesis general | Debe mantenerse en lenguaje general. |
 | MIPG | Síntesis general | No reemplaza fuente oficial detallada. |
 | Pregunta | Activa desde banco | La alineación normativa fina queda pendiente. |
+
+## Qué no debe afirmarse todavía
+
+- Que el Tutor GCM opera con fuente normativa oficial completa.
+- Que cada pregunta ya está validada contra acuerdo y guía metodológica específicos.
+- Que los perfiles/empleos ya reflejan convocatoria y manual oficial cargados en repo.
+- Que el estado puede promoverse a `source_verified`.
 
 ## Criterio de cierre Sprint 13
 Sprint 13 queda cerrado si:

@@ -10,12 +10,12 @@ last_reviewed: 2026-05-06
 
 # Project Status — GanaConMerito
 
-Ultima actualizacion: 2026-05-06 — Sprint 21 (Tutor GCM Final Runtime Closure).
+Ultima actualizacion: 2026-05-06 — Sprint 22 (Tutor GCM Normative Source Verification).
 
 ## Estado general
 
-**Estado:** Tutor GCM queda funcionalmente cerrado con **PASS con WARN** sobre runtime publico, manteniendo la fuente normativa sintetizada v1 como no verificada.  
-**Producto:** producto activo con core operativo, Tutor GCM gobernado, dashboard con metricas prudentes y contrato de fuente normativa minima.  
+**Estado:** Tutor GCM permanece funcionalmente cerrado y el frente normativo queda en **PASS con WARN**, manteniendo la fuente normativa sintetizada v1 como no verificada.  
+**Producto:** producto activo con core operativo, Tutor GCM gobernado, dashboard con metricas prudentes y contrato de fuente normativa minima explicitamente clasificado como no oficial/verificado.  
 **Rama canonica:** `master`.  
 **Version declarada en `package.json`:** `0.6.0`.
 
@@ -29,6 +29,7 @@ Ultima actualizacion: 2026-05-06 — Sprint 21 (Tutor GCM Final Runtime Closure)
 - **Build time publico observado directamente:** `2026-05-06T23:08:12Z`.
 - **Entorno publico validado:** `https://cnsc.profemarlon.com`.
 - **Nota:** Sprint 21 consolida el cierre funcional del frente Tutor GCM con contraste entre observacion publica directa y evidencia QA sanitizada previa.
+- **Nota normativa Sprint 22:** la revision documental cruzada confirma alineacion entre producto, arquitectura y compliance, pero no encuentra anexos oficiales suficientes para promover `source_verified`.
 
 ## Modulos activos
 
@@ -64,6 +65,8 @@ Ultima actualizacion: 2026-05-06 — Sprint 21 (Tutor GCM Final Runtime Closure)
 - Sincronizacion post-respuesta corregida en PR #5.
 - Fuente normativa sintetizada v1 integrada al evidence builder en Sprint 13.
 - Estado de fuente normativa actual: `synthesized_governed_unverified`.
+- Estado normativo Sprint 22: **PASS con WARN**.
+- Lo verificado en repo es el contrato, el guardrail de degradacion y la propagacion de `sourceTruthStatus`; no la carga oficial completa.
 - Antes de responder no revela clave.
 - Despues de responder puede explicar clave, feedback, distractores y justificacion.
 - No tiene autoridad sobre scoring, avance, cierre de sesion ni seleccion de items.
@@ -74,6 +77,11 @@ Ultima actualizacion: 2026-05-06 — Sprint 21 (Tutor GCM Final Runtime Closure)
 - Expansion editorial del banco sigue fuera de alcance inmediato salvo decision explicita.
 
 ## Historial reciente reconciliado
+
+### Sprint 22 — Verificacion normativa documental del Tutor GCM
+- **Foco:** separar con precision lo verificado en repo, lo sintetizado no verificado y lo faltante para cierre normativo real.
+- **Resultado:** `docs/02-delivery/tutor-gcm-normative-verification.md` deja veredicto explicito PASS con WARN, inventario de evidencia y ruta de promocion sin inventar fuentes oficiales.
+- **Advertencia:** el cierre funcional previo no equivale a `source_verified`; siguen faltando acuerdo, guia metodologica, estructura de prueba y soporte de convocatoria/manual.
 
 ### Sprint 13 — Fuente de verdad normativa sintetizada v1
 - **Foco:** cerrar estructura minima de fuente normativa para Tutor GCM sin crear un sistema gigante ni inventar acuerdos/guias oficiales.
@@ -120,9 +128,9 @@ Ultima actualizacion: 2026-05-06 — Sprint 21 (Tutor GCM Final Runtime Closure)
 
 ## Proximos pasos recomendados
 
-1. **Sprint 14 recomendado:** persistencia y metricas del Tutor GCM.
-2. **Sprint 15 recomendado:** carga verificada de fuentes normativas oficiales y trazabilidad de versionado.
-3. **Sprint 16 recomendado:** disciplina de release, CI minima y cierre de drift entre repo, VPS y runtime publico.
+1. **Cierre normativo real:** cargar anexos oficiales y rehacer revision cruzada antes de evaluar `source_verified`.
+2. **Persistencia y metricas del Tutor GCM:** mantener `TutorTurnTrace` como siguiente deuda funcional segura.
+3. **Disciplina de release y CI minima:** sostener trazabilidad entre repo, VPS y runtime publico sin abrir nuevas afirmaciones normativas.
 
 ## Criterio de cierre del estado actual
 
@@ -148,5 +156,6 @@ El estado actual se considera cerrado si:
 
 **Riesgos abiertos:**
 - La fuente normativa sigue en `synthesized_governed_unverified`.
+- El frente normativo del tutor no puede declararse cerrado mientras no existan anexos oficiales trazables en repo.
 - El bypass de onboarding QA sigue siendo workaround controlado, no flujo estandar.
 - El resumen visual de trazas en dashboard no queda en PASS explicito desde esta revision por falta de evidencia aislada suficiente.

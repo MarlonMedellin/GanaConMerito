@@ -12,6 +12,15 @@ related:
 last_reviewed: 2026-05-06
 ---
 
+## 2026-05-06
+- tipo: docs+governance+compliance
+- modulo: tutor/source-truth/architecture/compliance
+- resumen: se ejecuta Sprint 22 de verificacion normativa documental del Tutor GCM. Se cruza la fuente normativa v1 con arquitectura y compliance, se confirma que el repo solo acredita contrato, guardrails y propagacion de `sourceTruthStatus`, y se deja decision explicita PASS con WARN porque siguen faltando acuerdo oficial, guia metodologica, estructura de prueba y soporte de convocatoria/manual para promover `source_verified`.
+- sprint: Sprint 22 — Tutor GCM Normative Source Verification
+- base: `a056da2e69bf302473609e7192e36dc76132383b`
+- agente: ChatGPT
+- relacionados: docs/02-delivery/tutor-gcm-normative-verification.md, docs/01-product/source-truth/normative-source-truth-v1.md, docs/03-architecture/runtime-flow-map.md, docs/07-compliance/server-side-service-role-policy.md, docs/project/status.md, docs/02-delivery/sprint-log.md, docs/01-product/backlog.md
+
 ## 2026-05-07
 - tipo: qa+docs+closure
 - modulo: tutor/runtime/documentation
