@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { TutorOutput } from "@/types/tutor-turn";
 
 interface TutorInterfaceProps {
@@ -22,6 +22,31 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
   const [lastResponse, setLastResponse] = useState<TutorOutput | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const messageInputRef = useRef<HTMLTextAreaElement | null>(null);
+  const draftStorageKey = `tutor-gcm:draft:${sessionId}:${currentItemId}`;
+
+  useEffect(() => {
+    setLastResponse(null);
+    setError(null);
+
+    if (typeof window === "undefined") {
+      setMessage("");
+      return;
+    }
+
+    setMessage(window.sessionStorage.getItem(draftStorageKey) ?? "");
+  }, [draftStorageKey]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    if (message.trim()) {
+      window.sessionStorage.setItem(draftStorageKey, message);
+      return;
+    }
+
+    window.sessionStorage.removeItem(draftStorageKey);
+  }, [draftStorageKey, message]);
 
   async function sendMessage(nextMessage: string, options?: { clearMessage?: boolean }) {
     if (!nextMessage.trim() || loading) return;
@@ -163,6 +188,7 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
         <div className="form-field">
           <label className="field-label" htmlFor="tutor-gcm-message">Escribe tu consulta al Tutor GCM</label>
           <textarea
+            ref={messageInputRef}
             id="tutor-gcm-message"
             data-testid="tutor-gcm-message"
             className="text-area"
