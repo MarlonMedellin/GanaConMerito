@@ -91,7 +91,7 @@ Toda entrada debe:
 
 ### Prioridad P0
 - /api/tutor/turn
-- /api/practice/advance
+- /api/session/advance
 - /api/content/validate
 - /api/content/upload
 
