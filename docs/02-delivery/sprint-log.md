@@ -11,10 +11,44 @@ related:
   - PROD-BACKLOG
   - DEL-CHANGE-LOG
   - QUAL-RISK-REGISTER
-last_reviewed: 2026-05-06
+last_reviewed: 2026-05-07
 ---
 
 # Sprint log
+
+## Sprint activo — Sprint 33: Stabilization, Governance and Runtime Confidence
+- **Estado**: ACTIVO
+- **Fecha de apertura**: 2026-05-07
+- **Rama de trabajo**: `sprint-33-stabilization-governance`
+- **Objetivo**: remediar hallazgos P0/P1 del control MVP y estabilizar backend/API, QA, seguridad, datos y release sin abrir expansion funcional.
+
+### Entregado parcialmente
+- `docs/02-delivery/sprint-33-stabilization-plan.md` creado.
+- `docs/03-architecture/api-contract-standard-v1.md` creado.
+- `docs/06-governance/runtime-release-rollback-policy.md` creado.
+- `docs/06-governance/qa-smoke-vs-forensic-policy.md` creado.
+- `docs/03-architecture/rate-limiting-adr-001.md` creado.
+- `docs/03-architecture/session-concurrency-adr-002.md` creado.
+- `docs/07-compliance/appsec-remediation-matrix-sprint-33.md` creado.
+- `docs/project/status.md` actualizado para declarar Sprint 33 como sprint activo.
+
+### Validaciones ejecutadas
+- [x] Revision de `AGENTS.md` en rama de trabajo.
+- [x] Creacion documental por GitHub API.
+- [x] Alineacion inicial de status operativo.
+- [ ] Validacion runtime publica.
+- [ ] Ejecucion de tests locales o CI.
+- [ ] Implementacion de codigo backend/API.
+- [ ] Correccion real del gate QA de idempotencia.
+
+### Riesgos y notas operativas
+- **Sin runtime**: esta apertura se ejecuto solo con acceso al repo; no declara validacion en `https://cnsc.profemarlon.com`.
+- **Sin codigo productivo**: los cambios iniciales son documentales y de gobernanza.
+- **Backend/API**: sigue pendiente desbloquear cambios reales en `src/app/api/**`.
+- **QA**: sigue pendiente reemplazar assertions fragiles basadas en texto completo de pagina.
+- **AppSec**: P0/P1 priorizados, pero aun no corregidos en codigo.
+
+---
 
 ## Sprint cerrado — Sprint 22: Tutor GCM Normative Source Verification
 - **Estado**: CERRADO CON PASS CON WARN
