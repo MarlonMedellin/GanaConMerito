@@ -25,6 +25,10 @@ export interface ContentItem {
   competency: string;
   difficulty: number;
   targetLevel?: string;
+  targetRole?: string;
+  targetPosition?: string;
+  applicantProfile?: string;
+  tags?: string[];
   itemType: ItemType;
   stem: string;
   options: ItemOption[];
@@ -44,6 +48,7 @@ export interface ParsedContentSummary {
   difficulty: number;
   correctOption: OptionKey;
   optionCount: number;
+  targetPosition?: string;
 }
 
 export interface ValidateContentRequest {
