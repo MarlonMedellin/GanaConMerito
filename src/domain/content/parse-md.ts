@@ -1,5 +1,16 @@
 import matter from "gray-matter";
-import type { ContentItem, ItemOption, OptionKey, ParsedContentSummary } from "../../types/content";
+import {
+  APPLICANT_PROFILES,
+  TARGET_POSITIONS,
+  TARGET_ROLES,
+  type ApplicantProfile,
+  type ContentItem,
+  type ItemOption,
+  type OptionKey,
+  type ParsedContentSummary,
+  type TargetPosition,
+  type TargetRole,
+} from "../../types/content";
 import { validateOptions } from "./validate-item";
 
 export interface ContentValidationResult {
@@ -35,6 +46,28 @@ function parseStringArray(value: unknown): string[] | undefined {
   }
 
   return value.map((entry) => String(entry));
+}
+
+function parseOptionalCatalogValue<T extends string>(
+  value: unknown,
+  validValues: readonly T[],
+  fieldName: string,
+  errors: string[],
+): T | undefined {
+  if (value === undefined || value === null || value === "") {
+    return undefined;
+  }
+
+  const normalizedValue = String(value) as T;
+
+  if (!validValues.includes(normalizedValue)) {
+    errors.push(
+      `${fieldName} inválido. Valores permitidos: ${validValues.join(", ")}.`,
+    );
+    return undefined;
+  }
+
+  return normalizedValue;
 }
 
 export function parseMarkdownItem(rawMarkdown: string): ContentValidationResult {
@@ -78,6 +111,27 @@ export function parseMarkdownItem(rawMarkdown: string): ContentValidationResult 
   if (data.itemType && data.itemType !== "multiple_choice") {
     errors.push("itemType inválido. Solo se admite multiple_choice en este MVP.");
   }
+
+  const targetRole = parseOptionalCatalogValue<TargetRole>(
+    data.targetRole,
+    TARGET_ROLES,
+    "targetRole",
+    errors,
+  );
+
+  const targetPosition = parseOptionalCatalogValue<TargetPosition>(
+    data.targetPosition,
+    TARGET_POSITIONS,
+    "targetPosition",
+    errors,
+  );
+
+  const applicantProfile = parseOptionalCatalogValue<ApplicantProfile>(
+    data.applicantProfile,
+    APPLICANT_PROFILES,
+    "applicantProfile",
+    errors,
+  );
 
   if (!stem) {
     errors.push("Falta la sección Enunciado.");
@@ -135,9 +189,9 @@ export function parseMarkdownItem(rawMarkdown: string): ContentValidationResult 
     competency: String(data.competency),
     difficulty: Number(data.difficulty),
     targetLevel: data.targetLevel ? String(data.targetLevel) : undefined,
-    targetRole: data.targetRole ? String(data.targetRole) : undefined,
-    targetPosition: data.targetPosition ? String(data.targetPosition) : undefined,
-    applicantProfile: data.applicantProfile ? String(data.applicantProfile) : undefined,
+    targetRole,
+    targetPosition,
+    applicantProfile,
     tags: parseStringArray(data.tags),
     itemType: "multiple_choice",
     stem,
