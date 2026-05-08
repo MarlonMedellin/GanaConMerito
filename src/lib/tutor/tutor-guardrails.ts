@@ -60,7 +60,8 @@ function hasEvidenceForIntent(evidence: TutorEvidence, mode: TutorMode, intent: 
 
 function getEvidenceUsed(evidence: TutorEvidence, mode: TutorMode, intent: TutorIntent): TutorEvidenceKey[] {
   const used = new Set<TutorEvidenceKey>(["user_session"]);
-  if (hasQuestionEvidence(evidence) && mode === "current_question") used.add("question");
+  const questionModes: TutorMode[] = ["current_question", "pre_answer", "hint_mode", "post_answer_feedback", "review_mode"];
+  if (hasQuestionEvidence(evidence) && questionModes.includes(mode)) used.add("question");
   if (hasContestEvidence(evidence) && (mode === "contest_preparation" || intent === "explain_contest_rule")) used.add("contest");
   if (hasProfileEvidence(evidence) && (mode === "contest_preparation" || intent === "explain_profile_alignment")) {
     used.add("aspirational_profile");
