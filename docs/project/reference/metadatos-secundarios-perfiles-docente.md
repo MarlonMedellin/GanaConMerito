@@ -13,6 +13,10 @@ La organización base sigue siendo:
 
 La segunda capa no reemplaza esa estructura. Solo la complementa.
 
+## Catálogo controlado
+
+Estos metadatos ya no deben llenarse libremente. Deben usar el catálogo acordado para evitar deriva editorial.
+
 ## Metadatos opcionales recomendados
 
 ### `targetRole`
@@ -26,7 +30,7 @@ targetRole: docente
 ### `targetPosition`
 Perfil puntual al que el ítem apunta de manera principal.
 
-Valores recomendados:
+Valores permitidos:
 - `rector_director_rural`
 - `coordinador`
 - `docente_aula_preescolar`
@@ -37,7 +41,7 @@ Valores recomendados:
 ### `applicantProfile`
 Agrupador más amplio para análisis, filtros y cobertura.
 
-Valores recomendados:
+Valores permitidos:
 - `directivo_docente`
 - `docente_de_aula`
 - `docente_orientador`
