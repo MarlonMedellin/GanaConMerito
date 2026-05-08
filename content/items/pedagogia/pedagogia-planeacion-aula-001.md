@@ -8,6 +8,10 @@ examType: docente
 competency: planeacion_pedagogica
 difficulty: 0.5
 targetLevel: intermedio
+targetRole: docente
+applicantProfile: docente_de_aula
+tags:
+  - foco:planeacion_de_aula
 itemType: multiple_choice
 normativeRefs: []
 published: true
