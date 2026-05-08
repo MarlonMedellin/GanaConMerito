@@ -8,6 +8,10 @@ examType: docente
 competency: evaluacion_formativa
 difficulty: 0.2
 targetLevel: basico
+targetRole: docente
+applicantProfile: docente_de_aula
+tags:
+  - foco:evaluacion_formativa
 itemType: multiple_choice
 normativeRefs: []
 published: true
