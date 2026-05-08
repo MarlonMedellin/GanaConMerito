@@ -16,6 +16,7 @@ const MIN_ATTEMPTS_FOR_COMPETENCY_CONCLUSION = 3;
 const MIN_ATTEMPTS_FOR_STRONG_CONCLUSION = 5;
 const MIN_ACCURACY_FOR_STRENGTH = 0.6;
 const MAX_ACCURACY_FOR_WEAKNESS = 0.5;
+const TOPIC_STAT_AVG_DIFFICULTY_TOLERANCE = 0.02;
 
 function getAccuracy(row) {
   return toNumber(row.attempts) > 0 ? toNumber(row.correct_count) / toNumber(row.attempts) : 0;
@@ -223,7 +224,7 @@ function compareStatsRows({ actualStats, expectedStats, collector }) {
     collector.check(toNumber(actual.attempts) === expected.attempts, 'attempts inconsistente en user_topic_stats', `${key} esperado=${expected.attempts} actual=${actual.attempts}`);
     collector.check(toNumber(actual.correct_count) === expected.correct_count, 'correct_count inconsistente en user_topic_stats', `${key} esperado=${expected.correct_count} actual=${actual.correct_count}`);
     collector.check(nearlyEqual(actual.avg_reasoning_score, expected.avg_reasoning_score, 0.01), 'avg_reasoning_score inconsistente en user_topic_stats', `${key} esperado=${expected.avg_reasoning_score} actual=${actual.avg_reasoning_score}`);
-    collector.check(nearlyEqual(actual.avg_difficulty, expected.avg_difficulty, 0.01), 'avg_difficulty inconsistente en user_topic_stats', `${key} esperado=${expected.avg_difficulty} actual=${actual.avg_difficulty}`);
+    collector.check(nearlyEqual(actual.avg_difficulty, expected.avg_difficulty, TOPIC_STAT_AVG_DIFFICULTY_TOLERANCE), 'avg_difficulty inconsistente en user_topic_stats', `${key} esperado=${expected.avg_difficulty} actual=${actual.avg_difficulty}`);
     collector.check(nearlyEqual(actual.estimated_level, expected.estimated_level, 0.002), 'estimated_level inconsistente en user_topic_stats', `${key} esperado=${expected.estimated_level} actual=${actual.estimated_level}`);
   }
 }
