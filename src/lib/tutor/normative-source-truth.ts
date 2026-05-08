@@ -1,5 +1,5 @@
 import { TUTOR_CONTRACT_VERSION } from "../../domain/tutor/contract";
-import type { AspirationalProfileTruth, ContestTruth, QuestionTruth, SourceTruthStatus } from "../../types/tutor-turn";
+import type { AspirationalProfileTruth, ContestTruth, QuestionTruth, SourceTruthStatus, TutorSupportContract } from "../../types/tutor-turn";
 
 export const NORMATIVE_SOURCE_TRUTH_VERSION = `${TUTOR_CONTRACT_VERSION}:normative-synth-v1`;
 
@@ -79,4 +79,37 @@ export function enrichQuestionTruthWithNormativeSource(question: QuestionTruth):
 
 export function getNormativeSourceTruthRefs(): string[] {
   return SOURCE_REFS;
+}
+
+export function buildTutorSupportContract(question?: QuestionTruth): TutorSupportContract | undefined {
+  if (!question) return undefined;
+
+  return {
+    instructionalGoal: `Fortalecer ${question.competency} sin revelar la clave antes de la respuesta del usuario.`,
+    canonicalRationale: question.correctExplanation,
+    misconceptionMap: [
+      {
+        misconception: "Elegir por intuición sin contrastar el enunciado con la competencia evaluada.",
+        safeRedirect: "Vuelve a la tarea esperada y compara cada opción contra ese criterio antes de elegir.",
+      },
+    ],
+    hintLadder: [
+      { level: 1, hint: `Ubica qué pide exactamente la tarea esperada: ${question.expectedUserTask}` },
+      { level: 2, hint: "Descarta solo por falta de coherencia con el enunciado, no por pistas de forma." },
+      { level: 3, hint: "Justifica tu elección con una razón y una alternativa descartada." },
+    ],
+    normativeReasoning:
+      question.normativeAlignmentSummary ??
+      "Usa la fuente normativa sintetizada solo como orientación general y degrada si falta evidencia específica.",
+    responsePolicy: {
+      noRevealCorrectAnswer: true,
+      noRevealCorrectLetter: true,
+      noOptionEliminationByDiscard: true,
+      noVerbatimCorrectOptionQuote: true,
+      noScoring: true,
+      noAttemptStateMutation: true,
+    },
+    qualityFlags: ["sidecar_minimal", "backward_compatible", "safe_fallback"],
+    sourceTruthRefs: question.sourceRefs,
+  };
 }

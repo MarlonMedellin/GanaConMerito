@@ -78,6 +78,7 @@ export class TutorOrchestrator {
   ): string {
     const question = input.evidence.question;
     const session = input.evidence.userSession;
+    const support = input.evidence.tutorSupport;
     const maxWords = input.evidence.userSession.selectedOption ? 220 : 120;
 
     if (!question) return TUTOR_INSUFFICIENT_EVIDENCE_MESSAGE;
@@ -90,15 +91,18 @@ export class TutorOrchestrator {
     }
 
     if (intent === "give_hint") {
+      const safeHint = support?.hintLadder?.[0]?.hint;
       return trimToWordLimit(
-        `Pista: enfócate en la competencia "${question.competency}". Antes de elegir, separa el caso del enunciado de las opciones. La mejor alternativa debe resolver la tarea esperada: ${question.expectedUserTask}`,
+        `Pista: enfócate en la competencia "${question.competency}". ${safeHint ?? `Antes de elegir, separa el caso del enunciado de las opciones. La mejor alternativa debe resolver la tarea esperada: ${question.expectedUserTask}`}`,
         maxWords,
       );
     }
 
     if (intent === "compare_options") {
       const options = question.options.map((option) => `${option.key}: revisa si responde directamente al enunciado`).join(" ");
-      const suffix = canRevealCorrectAnswer ? ` La clave registrada es ${question.correctOption}: ${question.correctExplanation}` : " Aún no diré cuál es correcta.";
+      const suffix = canRevealCorrectAnswer
+        ? ` La clave registrada existe en la fuente y su razonamiento canónico es: ${support?.canonicalRationale ?? question.correctExplanation}`
+        : " Aún no diré cuál es correcta.";
       return trimToWordLimit(`${options}.${suffix}`, maxWords);
     }
 
@@ -116,7 +120,7 @@ export class TutorOrchestrator {
 
     if (intent === "explain_feedback" && canRevealCorrectAnswer) {
       return trimToWordLimit(
-        `La opción correcta registrada es ${question.correctOption}. ${question.correctExplanation} ${session.feedback ? `Feedback oficial registrado: ${session.feedback}` : ""} Si marcaste ${session.selectedOption}, revisa por qué esa elección quedó bien o mal frente al enunciado. Los distractores deben leerse como alternativas que no satisfacen completamente la tarea esperada. Esta explicación es pedagógica y no cambia el puntaje oficial ni avanza la sesión.`,
+        `La respuesta esperada registrada en la fuente se sustenta así: ${support?.canonicalRationale ?? question.correctExplanation} ${session.feedback ? `Feedback oficial registrado: ${session.feedback}` : ""} Revisa por qué tu elección quedó bien o mal frente al enunciado. Los distractores deben leerse como alternativas que no satisfacen completamente la tarea esperada. Esta explicación es pedagógica y no cambia el puntaje oficial ni avanza la sesión.`,
         maxWords,
       );
     }
@@ -144,7 +148,7 @@ export class TutorOrchestrator {
     }
 
     const answerLine = hasUserAnswered(input.evidence)
-      ? `La clave registrada es ${question.correctOption}: ${question.correctExplanation}`
+      ? `La clave registrada existe y su explicación es: ${support?.canonicalRationale ?? question.correctExplanation}`
       : "No revelo la clave antes de que respondas.";
     return trimToWordLimit(
       `La pregunta evalúa ${question.competency} en ${question.area}. Tu tarea es: ${question.expectedUserTask} ${answerLine}`,
