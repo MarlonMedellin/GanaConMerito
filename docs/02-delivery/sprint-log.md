@@ -16,19 +16,27 @@ last_reviewed: 2026-05-08
 
 # Sprint log
 
-## Sprint activo — Sprint 37: Tutor Trace Signals and Governance Stabilization Prep
-- **Estado**: ACTIVO
+## Sprint cerrado — Sprint 37.1: Runtime Parity & Operational Verification
+- **Estado**: PASS
+- **Fecha de cierre**: 2026-05-08
+- **Runtime verified**: yes
+- **Deploy parity**: yes
+- **Docker verified**: yes
+- **Validaciones**: Se resolvieron errores de tipos en los tests E2E y se alinearon la versión de `product` y `app`. `update.html` funciona y las pruebas CI y Playwright pasaron en `/opt/gcm/app` sobre el entorno `cnsc.profemarlon.com`.
+
+## Sprint cerrado — Sprint 37: Tutor Trace Signals and Governance Stabilization Prep
+- **Estado**: CERRADO
 - **Fecha de apertura**: 2026-05-08
 - **Rama de trabajo esperada**: `sprint-37-tutor-trace-signals-governance-prep`
 - **Nota de entorno actual**: la rama disponible localmente es `work`; se deja desvio reportado sin tocar deploy.
 - **Objetivo**: alinear contrato documental reciente, endurecer guardrails tutor de no revelacion y agregar trazas minimas sin persistencia pesada.
 
-### Validaciones esperadas
+### Validaciones ejecutadas
 - [x] Lectura obligatoria de status/sprint-log/change-log/backlog/normative-source-truth.
 - [x] Ajuste de contrato documental para evitar hardcode obsoleto Sprint 33/34.
 - [x] Hardening minimo de guardrails tutor con prueba de regresion.
 - [x] Señales minimas de trazabilidad en respuesta/trace del tutor.
-- [ ] Validacion runtime publica (fuera de alcance de esta corrida).
+- [x] Validacion runtime publica (validado a través del Sprint 37.1).
 
 ---
 

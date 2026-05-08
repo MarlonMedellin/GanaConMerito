@@ -10,14 +10,14 @@ last_reviewed: 2026-05-08
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-05-08 — Sprint 37 (Tutor Trace Signals and Governance Stabilization Prep).
+Ultima actualizacion: 2026-05-08 — Sprint 37.1 (Runtime Parity & Operational Verification).
 
 ## Estado general
 
 **Estado:** MVP estabilizado operativamente despues del cierre de Sprint 33. El core esta desplegado, Docker construye correctamente, smoke local/publico fue reportado como PASS y la suite UI E2E fue reportada como PASS.  
 **Producto:** producto activo con core operativo, Tutor GCM gobernado, dashboard con metricas prudentes y contrato de fuente normativa minima explicitamente clasificado como no oficial/verificado.  
-**Sprint actual:** Sprint 37 — Tutor Trace Signals and Governance Stabilization Prep.  
-**Sprint anterior cerrado:** Sprint 36 — Tutor Hint Ladder, Misconception Feedback and Safe Modes.  
+**Sprint actual:** Ninguno (cerrando 37.1).  
+**Sprint anterior cerrado:** Sprint 37.1 — Runtime Parity & Operational Verification.  
 **Rama canonica:** `master`.  
 **Version declarada en `package.json`:** `0.6.0`.
 
@@ -26,14 +26,19 @@ Ultima actualizacion: 2026-05-08 — Sprint 37 (Tutor Trace Signals and Governan
 - **Fuente de verdad del producto:** `https://github.com/ProfeMarlonMDE/GanaConMerito`.
 - **Copia sincronizada operativa en VPS:** `~/.openclaw/product`.
 - **Árbol de deploy:** `/opt/gcm/app`.
-- **Commit Sprint 33 desplegado y verificado:** `ecf541688275fc53d48c811ed5ffa80a44a8bdb9`.
-- **Short hash Sprint 33 verificado:** `ecf5416`.
+- **Commit actual desplegado y verificado:** `3f3ccc0` (con TS tests arreglados en `99c1ab8`).
+- **Short hash verificado:** `3f3ccc0`.
 
-## Sprint 37 — foco activo
+## Sprint 37.1 — cerrado
+- **Sprint 37.1 — Runtime Parity & Operational Verification**
+- **Estado:** PASS
+- **Runtime verified:** yes
+- **Deploy parity:** yes
+- **Docker verified:** yes
 
-- Sprint 35 y Sprint 36 se registran como ejecutados con `npm run test:tutor` en verde.
-- Runtime publico/VPS de Sprint 35-37: NO VALIDADO EN ESTA CORRIDA (solo repo).
-- `npm run test:unit` quedo bloqueado por contrato documental obsoleto y se atiende en Sprint 37.
+- Sprint 35 y Sprint 36 ejecutados con `npm run test:tutor` en verde.
+- Runtime publico/VPS de Sprint 35-37.1: VALIDADO EN ESTA CORRIDA.
+- Las QA pipelines `qa:runtime:smoke`, `qa:smoke:postdeploy`, `qa:e2e:api` y `qa:e2e:ui` pasaron limpiamente.
 
 ## Resumen de situación
 
