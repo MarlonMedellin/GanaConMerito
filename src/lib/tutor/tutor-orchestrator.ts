@@ -1,7 +1,7 @@
 import { TUTOR_CONTRACT_VERSION, TUTOR_INSUFFICIENT_EVIDENCE_MESSAGE, hasUserAnswered, validateTutorTurnRequest } from "../../domain/tutor/contract";
 import type { TutorIntent, TutorTurnRequest, TutorTurnResponse, TutorTurnResult, TutorTurnTrace } from "../../types/tutor-turn";
 import { evaluateTutorGuardrails } from "./tutor-guardrails";
-import { classifyRationale, detectTutorIntent, detectTutorMode, requestsCorrectAnswer, trimToWordLimit } from "./tutor-response-policy";
+import { classifyRationale, detectTutorIntent, detectTutorMode, enforceNoRevealMessage, requestsCorrectAnswer, trimToWordLimit } from "./tutor-response-policy";
 
 export class TutorOrchestrator {
   public async processTurn(input: TutorTurnRequest): Promise<TutorTurnResult> {
@@ -50,7 +50,8 @@ export class TutorOrchestrator {
     }
 
     const rationaleQuality = classifyRationale(input.evidence.userSession.userRationale);
-    const visibleMessage = this.buildVisibleMessage(input, intent, guardrail.canRevealCorrectAnswer, rationaleQuality);
+    const rawVisibleMessage = this.buildVisibleMessage(input, intent, guardrail.canRevealCorrectAnswer, rationaleQuality);
+    const sanitized = enforceNoRevealMessage(rawVisibleMessage, guardrail.canRevealCorrectAnswer);
     const confidence = guardrail.canRevealCorrectAnswer || !requestsCorrectAnswer(input.message) ? 0.82 : 0.68;
 
     return this.createTurn({
@@ -59,7 +60,7 @@ export class TutorOrchestrator {
       createdAt,
       mode,
       intent,
-      visibleMessage,
+      visibleMessage: sanitized.message,
       degraded: false,
       confidence,
       guardrailsApplied: guardrail.guardrailsApplied,
@@ -67,6 +68,14 @@ export class TutorOrchestrator {
       canRevealCorrectAnswer: guardrail.canRevealCorrectAnswer,
       rationaleQuality: intent === "analyze_user_rationale" || rationaleQuality ? rationaleQuality : undefined,
       suggestedAction: this.suggestAction(intent, guardrail.canRevealCorrectAnswer),
+      traceSignals: {
+        dossierAvailable: Boolean(input.evidence.question),
+        responseModeUsed: this.mapResponseMode(intent, guardrail.canRevealCorrectAnswer),
+        hintLevelUsed: intent === "give_hint" ? this.detectHintLevel(input.message) : undefined,
+        misconceptionDetected: Boolean(input.evidence.userSession.feedback && /error|equivoc|misconcep/i.test(input.evidence.userSession.feedback)),
+        guardrailTriggered: sanitized.guardrailTriggered || guardrail.guardrailsApplied.length > 0,
+        fallbackReason: guardrail.degraded ? guardrail.degradationMessage : undefined,
+      },
     });
   }
 
@@ -152,6 +161,20 @@ export class TutorOrchestrator {
     );
   }
 
+  private mapResponseMode(intent: TutorIntent, canRevealCorrectAnswer: boolean): "pre_answer" | "hint_mode" | "post_answer_feedback" | "review_mode" {
+    if (intent === "give_hint") return "hint_mode";
+    if (canRevealCorrectAnswer && intent === "explain_feedback") return "post_answer_feedback";
+    if (canRevealCorrectAnswer) return "review_mode";
+    return "pre_answer";
+  }
+
+  private detectHintLevel(message: string): 1 | 2 | 3 {
+    const normalized = message.toLowerCase();
+    if (/nivel\s*3|muy directa|casi respuesta/.test(normalized)) return 3;
+    if (/nivel\s*2|mas detalle|más detalle/.test(normalized)) return 2;
+    return 1;
+  }
+
   private suggestAction(intent: TutorIntent, canRevealCorrectAnswer: boolean): string | undefined {
     if (intent === "give_hint" || !canRevealCorrectAnswer) return "Responde la pregunta y luego pide explicación de la clave.";
     if (intent === "analyze_user_rationale") return "Reescribe tu justificación contrastando al menos un distractor.";
@@ -172,6 +195,7 @@ export class TutorOrchestrator {
     degraded: boolean;
     suggestedAction?: string;
     rationaleQuality?: "weak" | "acceptable" | "strong";
+    traceSignals?: TutorTurnResponse["traceSignals"];
   }): TutorTurnResult {
     const sourceTruthRefs = buildSourceTruthRefs(params.input);
     const output: TutorTurnResponse = {
@@ -186,6 +210,7 @@ export class TutorOrchestrator {
       degraded: params.degraded,
       suggestedAction: params.suggestedAction,
       rationaleQuality: params.rationaleQuality,
+      traceSignals: params.traceSignals,
     };
     const trace: TutorTurnTrace = {
       traceId: params.traceId,
@@ -203,6 +228,7 @@ export class TutorOrchestrator {
       degraded: params.degraded,
       confidence: params.confidence,
       rationaleQuality: params.rationaleQuality,
+      traceSignals: params.traceSignals,
       createdAt: params.createdAt,
     };
 

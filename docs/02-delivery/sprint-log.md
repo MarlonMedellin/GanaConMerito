@@ -11,10 +11,38 @@ related:
   - PROD-BACKLOG
   - DEL-CHANGE-LOG
   - QUAL-RISK-REGISTER
-last_reviewed: 2026-05-07
+last_reviewed: 2026-05-08
 ---
 
 # Sprint log
+
+## Sprint activo — Sprint 37: Tutor Trace Signals and Governance Stabilization Prep
+- **Estado**: ACTIVO
+- **Fecha de apertura**: 2026-05-08
+- **Rama de trabajo esperada**: `sprint-37-tutor-trace-signals-governance-prep`
+- **Nota de entorno actual**: la rama disponible localmente es `work`; se deja desvio reportado sin tocar deploy.
+- **Objetivo**: alinear contrato documental reciente, endurecer guardrails tutor de no revelacion y agregar trazas minimas sin persistencia pesada.
+
+### Validaciones esperadas
+- [x] Lectura obligatoria de status/sprint-log/change-log/backlog/normative-source-truth.
+- [x] Ajuste de contrato documental para evitar hardcode obsoleto Sprint 33/34.
+- [x] Hardening minimo de guardrails tutor con prueba de regresion.
+- [x] Señales minimas de trazabilidad en respuesta/trace del tutor.
+- [ ] Validacion runtime publica (fuera de alcance de esta corrida).
+
+---
+
+## Sprint cerrado — Sprint 36: Tutor Hint Ladder, Misconception Feedback and Safe Modes
+- **Estado**: CERRADO EN REPO (SIN VALIDACION RUNTIME EN ESTA CORRIDA)
+- **Fecha**: 2026-05-08
+- **Base de referencia**: `21862b5`
+- **Resultado**: modos pedagogicos seguros (`pre_answer`, `hint_mode`, `post_answer_feedback`, `review_mode`) y QA negativa del tutor documentada; `npm run test:tutor` verde.
+
+## Sprint cerrado — Sprint 35: Tutor Support Contract Safe Evidence
+- **Estado**: CERRADO EN REPO (SIN VALIDACION RUNTIME EN ESTA CORRIDA)
+- **Fecha**: 2026-05-08
+- **Base de referencia**: `107ca39`
+- **Resultado**: sidecar opcional `TutorSupportContract` con fallback seguro y campos minimos de soporte; `npm run test:tutor` verde.
 
 ## Sprint activo — Sprint 33: Stabilization, Governance and Runtime Confidence
 - **Estado**: ACTIVO

@@ -105,6 +105,16 @@ export interface TutorTurnRequest {
   evidence: TutorEvidence;
 }
 
+
+export interface TutorTraceSignals {
+  dossierAvailable: boolean;
+  responseModeUsed: "pre_answer" | "hint_mode" | "post_answer_feedback" | "review_mode";
+  hintLevelUsed?: 1 | 2 | 3;
+  misconceptionDetected: boolean;
+  guardrailTriggered: boolean;
+  fallbackReason?: string;
+}
+
 export interface TutorTurnResponse {
   mode: TutorMode;
   intent: TutorIntent;
@@ -117,6 +127,7 @@ export interface TutorTurnResponse {
   degraded: boolean;
   suggestedAction?: string;
   rationaleQuality?: RationaleQuality;
+  traceSignals?: TutorTraceSignals;
 }
 
 export interface TutorTurnTrace {
@@ -135,6 +146,7 @@ export interface TutorTurnTrace {
   degraded: boolean;
   confidence: number;
   rationaleQuality?: RationaleQuality;
+  traceSignals?: TutorTraceSignals;
   createdAt: string;
 }
 
