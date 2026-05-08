@@ -8,6 +8,12 @@ examType: docente
 competency: planeacion_estrategica
 difficulty: 0.6
 targetLevel: intermedio
+targetRole: docente
+targetPosition: coordinador
+applicantProfile: directivo_docente
+tags:
+  - perfil:coordinador
+  - foco:planeacion_institucional
 itemType: multiple_choice
 normativeRefs: []
 published: true
