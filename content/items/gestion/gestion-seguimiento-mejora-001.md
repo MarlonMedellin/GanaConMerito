@@ -8,6 +8,11 @@ examType: docente
 competency: lectura_de_indicadores
 difficulty: 0.2
 targetLevel: basico
+targetRole: docente
+applicantProfile: directivo_docente
+tags:
+  - foco:seguimiento_y_mejora
+  - fuente:pruebas_saber
 itemType: multiple_choice
 normativeRefs: []
 published: true
