@@ -31,6 +31,7 @@ GanaConMerito tiene activo el core real de producto:
 - fuente normativa sintetizada v1 en estado `synthesized_governed_unverified`
 - metricas prudentes para no vender conclusiones fuertes con poca senal
 - runtime con metadata visible y disciplina de triple verificacion
+- sistema editorial del banco definido por taxonomia primaria (`area`, `subarea`, `competency`) y segmentacion secundaria opcional por perfil docente
 - **Cierre funcional Tutor GCM (Sprint 21):** PASS con WARN explícito.
 - **Frente normativo Tutor GCM (Sprint 22):** PASS con WARN explícito; contrato y guardrails verificados, fuente oficial suficiente pendiente.
 
@@ -81,6 +82,7 @@ GanaConMerito tiene activo el core real de producto:
 6. Preparar persistencia de `TutorTurnTrace` para metricas pedagogicas.
 7. Mantener Tutor GCM bajo contrato: sin scoring, sin avance, sin cierre, sin fuente normativa inventada.
 8. Mantener el bypass de onboarding QA explicitamente como workaround controlado hasta reemplazarlo por un mecanismo oficial y auditable.
+9. Mantener la expansion del banco bajo la regla editorial: taxonomia primero, perfiles como segunda capa opcional.
 
 ## Next
 1. **Cierre normativo real del tutor**: cargar anexos oficiales, reemplazar placeholders y rehacer revision documental cruzada.
@@ -88,6 +90,7 @@ GanaConMerito tiene activo el core real de producto:
 3. **Release y runtime confiables**: CI minima en GitHub Actions, build, tests unitarios, validacion documental y disciplina publica de runtime.
 4. **Validacion visual aislada del resumen de trazas**: obtener evidencia publica nueva del bloque de resumen del tutor en dashboard si sigue siendo artefacto de cierre requerido.
 5. **Runtime topology doc**: documentar `docker-compose.yml`, env file, dominio, proxy y politica de secretos.
+6. **Adopcion progresiva de metadatos de perfil en runtime**: decidir si `targetRole`, `targetPosition` y `applicantProfile` deben pasar del Markdown editorial a los contratos activos de lectura.
 
 ## Later
 1. Admin para editar fuente de verdad normativa y perfiles.
@@ -110,15 +113,16 @@ GanaConMerito tiene activo el core real de producto:
 - Falta documento formal de topologia runtime.
 - Falta CI minimo.
 - La parte normativa del tutor sigue abierta aunque el frente funcional ya cierre con PASS con WARN.
+- La segunda capa por perfiles docentes aun no se refleja de punta a punta en todos los contratos de runtime.
 
 ## Relacion con modulos
 - `auth`: activo y prioritario; mantener estable.
 - `onboarding`: activo y endurecido.
 - `practice`: nucleo principal del producto; debe seguir siendo practice-first.
 - `dashboard`: activo; debe reflejar progreso real sin inflar capacidades analiticas.
-- `editorial`: biblioteca documental de solo lectura; no tratar como CMS activo.
+- `editorial`: biblioteca documental de solo lectura y sistema de gobierno del banco; no tratar como CMS activo.
 - `ai`: Tutor GCM activo con guardrails y fuente normativa sintetizada v1 no verificada.
-- `question-bank`: activo y gobernado; expansion solo con decision ejecutiva.
+- `question-bank`: activo y gobernado; base taxonomica en `content/items/` y segmentacion secundaria opcional por perfil.
 
 ## Criterios de priorizacion
 1. Seguridad/auth/datos antes que UX cosmetica.
@@ -126,7 +130,7 @@ GanaConMerito tiene activo el core real de producto:
 3. Trazabilidad antes que personalizacion avanzada.
 4. Metricas honestas antes que claims de progreso.
 5. Documentacion canonica actualizada antes de abrir nuevos frentes grandes.
-
+6. No fragmentar el banco por cargo cuando basta con taxonomia base mas metadatos secundarios.
 
 ## Deuda Sprint 35-36 formalizada en Sprint 37
 - Admin futuro de Tutor Dossier: edicion editorial por item, validacion de hint ladder, validacion de misconceptions y previsualizacion de no revelacion.
