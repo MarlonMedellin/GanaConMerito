@@ -8,6 +8,11 @@ examType: docente
 competency: interpretacion_normativa
 difficulty: 0.5
 targetLevel: intermedio
+targetRole: docente
+applicantProfile: docente_de_aula
+tags:
+  - foco:ruta_de_atencion_integral
+  - uso:reporte_a_autoridad
 itemType: multiple_choice
 normativeRefs:
   - "Ley 1620"
