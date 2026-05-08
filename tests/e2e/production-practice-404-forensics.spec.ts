@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect, Request, ConsoleMessage } from "@playwright/test";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -182,7 +182,7 @@ test.describe("Forense 404 producción /practice", () => {
       });
     });
 
-    page.on("requestfailed", (request) => {
+    page.on("requestfailed", (request: Request) => {
       playwrightFailedRequests.push({
         source: "playwright",
         method: request.method(),
@@ -192,7 +192,7 @@ test.describe("Forense 404 producción /practice", () => {
       });
     });
 
-    page.on("console", (msg) => {
+    page.on("console", (msg: ConsoleMessage) => {
       if (msg.type() === "error") {
         consoleErrors.push({
           type: msg.type(),
