@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect, Request, ConsoleMessage, TestInfo, Response } from "@playwright/test";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -119,7 +119,7 @@ function extractCommit(text: string) {
 }
 
 test.describe("Forense 404 producción /practice", () => {
-  test("identifica URL, tipo e iniciador del 404 fantasma", async ({ page }, testInfo) => {
+  test("identifica URL, tipo e iniciador del 404 fantasma", async ({ page }, testInfo: TestInfo) => {
     const artifactDir = path.join(process.cwd(), "artifacts", "production-practice-404-forensics");
     ensureDir(artifactDir);
 
@@ -170,7 +170,7 @@ test.describe("Forense 404 producción /practice", () => {
       });
     });
 
-    page.on("response", (response) => {
+    page.on("response", (response: Response) => {
       const request = response.request();
 
       playwrightResponses.push({
@@ -182,7 +182,7 @@ test.describe("Forense 404 producción /practice", () => {
       });
     });
 
-    page.on("requestfailed", (request) => {
+    page.on("requestfailed", (request: Request) => {
       playwrightFailedRequests.push({
         source: "playwright",
         method: request.method(),
@@ -192,7 +192,7 @@ test.describe("Forense 404 producción /practice", () => {
       });
     });
 
-    page.on("console", (msg) => {
+    page.on("console", (msg: ConsoleMessage) => {
       if (msg.type() === "error") {
         consoleErrors.push({
           type: msg.type(),

@@ -8,6 +8,11 @@ examType: docente
 competency: interpretacion_normativa
 difficulty: 0.25
 targetLevel: basico
+targetRole: docente
+applicantProfile: docente_de_aula
+tags:
+  - foco:convivencia_escolar
+  - uso:mediacion_inmediata
 itemType: multiple_choice
 normativeRefs:
   - "Guía 49"

@@ -12,7 +12,7 @@ related:
   - DEL-SPRINT-LOG
   - ARCH-ASSISTANT-COMPONENT-SPEC
   - ADR-002-assistant-component-governance
-last_reviewed: 2026-05-04
+last_reviewed: 2026-05-08
 ---
 
 # Mapa formal de features activas con estado real
@@ -33,6 +33,7 @@ Mantener inventario explícito de lo que está activo, activo con guardrails, di
 - El Tutor GCM tiene **fuente normativa sintetizada v1**, marcada como `synthesized_governed_unverified`.
 - El dashboard tiene **contrato de métricas prudentes** para no vender humo.
 - El banco de preguntas está **operativo como corpus activo curado**.
+- El banco ya tiene una **estructura editorial definida**: base taxonómica en `content/items/` y segunda capa opcional por perfiles docentes.
 - Editorial sigue como **biblioteca documental de solo lectura**.
 - `PracticeSession` sigue funcional; su refactor liviano queda planificado, no ejecutado.
 
@@ -203,10 +204,20 @@ Mantener inventario explícito de lo que está activo, activo con guardrails, di
 
 ### Corpus activo curado
 - Estado: **Activo y gobernado**
-- Evidencia: `content/items/**`, scripts de validación/importación
+- Evidencia: `content/items/**`, scripts de validación/importación, documentación de referencia del banco
 - Alcance real:
   - corpus activo de 27 preguntas según documentación vigente
   - validación e importación controlada disponibles
+  - estructura editorial primaria por `area`, `subarea` y `competency`
+  - metadatos secundarios opcionales por perfil docente en Markdown (`targetRole`, `targetPosition`, `applicantProfile`, `tags`)
+
+### Capa secundaria por perfiles docentes
+- Estado: **Activa como convención editorial**
+- Evidencia: `content/profiles/docente/**`, `docs/project/reference/estructura-hibrida-taxonomia-perfiles-docente.md`, `docs/project/reference/metadatos-secundarios-perfiles-docente.md`
+- Alcance real:
+  - organización operativa de lotes, mapas y cobertura por perfil
+  - no reemplaza la carpeta canónica de ítems
+  - no duplica ítems finales
 
 ### Operación editorial del banco
 - Estado: **Diferido**
@@ -214,6 +225,7 @@ Mantener inventario explícito de lo que está activo, activo con guardrails, di
   - expansión masiva del corpus
   - workflows administrativos
   - revisión editorial multiusuario
+  - adopción completa en runtime de la segunda capa por perfiles si se aprueba su valor operacional
 
 ## 8. QA, deploy y trazabilidad
 
@@ -243,6 +255,7 @@ Mantener inventario explícito de lo que está activo, activo con guardrails, di
 - Analítica avanzada longitudinal.
 - Refactor de `PracticeSession` ejecutado.
 - Multi-asistente visible.
+- Segmentación rígida del banco por carpetas principales de cargo.
 
 ## 10. Prioridades derivadas
 1. Persistir trazas de Tutor GCM para métricas pedagógicas.
@@ -250,3 +263,4 @@ Mantener inventario explícito de lo que está activo, activo con guardrails, di
 3. Agregar `npm test` y CI mínimo.
 4. Evolucionar TutorInterface hacia acciones pedagógicas guiadas.
 5. Ejecutar refactor liviano de `PracticeSession` solo con E2E online.
+6. Decidir si la segunda capa por perfil debe llegar a contratos activos de lectura en runtime.

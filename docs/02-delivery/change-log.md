@@ -11,6 +11,14 @@ related:
   - DEL-SPRINT-LOG
 last_reviewed: 2026-05-08
 ---
+## 2026-05-08
+- tipo: qa+ops+closure
+- modulo: ops/deploy/qa
+- resumen: Sprint 37.1 cierra la deuda operacional de Sprint 37. Se logra paridad total entre repositorio, deploy tree `/opt/gcm/app` y entorno Docker runtime publico en `https://cnsc.profemarlon.com`. Se resolvieron errores de TypeScript en tests E2E, se alineo la firma de `runWebUpdate` y todas las pipelines de QA (smoke, postdeploy, api, ui) y test suites (`npm run test:tutor`, `npm run test:unit`) pasaron exitosamente.
+- sprint: Sprint 37.1 — Runtime Parity & Operational Verification
+- agente: PM-Gauss (via antigravity)
+- relacionados: docs/project/status.md, docs/02-delivery/sprint-log.md, tests/e2e/*.spec.ts, src/app/api/ops/update/route.ts
+
 
 ## 2026-05-08
 - tipo: governance+test+tutor

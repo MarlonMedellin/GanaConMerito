@@ -10,6 +10,17 @@ Este contrato resuelve tres problemas inmediatos sin rehacer la arquitectura:
 
 ---
 
+## Nota de coherencia editorial
+El sistema editorial vigente del banco ya distingue:
+- eje principal: `area`, `subarea`, `competency`
+- eje secundario opcional: `targetRole`, `targetPosition`, `applicantProfile`, `tags`
+- carpeta canónica de ítems finales: `content/items/`
+- carpeta secundaria de trabajo editorial por perfil: `content/profiles/docente/`
+
+Este documento describe solo el **contrato mínimo de lectura activa en runtime**. La segunda capa por perfiles docentes ya existe en el Markdown editorial, pero no debe asumirse como completamente adoptada aquí hasta que exista migración o contrato explícito de base de datos para ello.
+
+---
+
 ## 1. Catálogo activo propuesto
 
 ### Identidad mínima
@@ -32,11 +43,18 @@ Este contrato resuelve tres problemas inmediatos sin rehacer la arquitectura:
 - `explanation text` — solo para feedback o revisión
 - `version integer`
 
-### Segmentación mínima
+### Segmentación mínima operativa actual
 - `thematic_nucleus_id uuid`
 - `thematic_nucleus_code text`
 - `thematic_nucleus_name text`
 - `thematic_nucleus_is_universal boolean`
+
+### Segmentación editorial secundaria futura
+Estos campos aún no forman parte del contrato mínimo activo, pero ya existen en la capa Markdown editorial y podrían adoptarse después:
+- `target_role text`
+- `target_position text`
+- `applicant_profile text`
+- `tags text[]` o estructura equivalente
 
 ### Trazabilidad mínima
 - `status text`
@@ -151,6 +169,7 @@ Notas de implementación:
 - `security_invoker = true` evita que la vista amplíe acceso por encima de la RLS vigente.
 - `classification_bucket` y `classification_reason` quedan reservadas para clasificaciones editoriales futuras.
 - `thematic_nucleus_is_active` deja visible el último gate antes de `read_state = 'active'`.
+- La ausencia de `target_role`, `target_position` y `applicant_profile` en esta vista no significa que la capa editorial no exista; solo significa que aún no es parte del contrato mínimo de runtime.
 
 ### Regla operativa de uso
 Toda lectura de producto debe agregar:
@@ -194,6 +213,7 @@ No cambiar todavía:
 ### Referencias puente
 - `docs/database/schema.md` — resumen del modelo y referencia al contrato activo
 - `docs/api/contracts.md` — declarar que los endpoints de sesión leen del contrato activo, no de `item_bank` directo
+- `docs/database/content-model.md` — declarar que la capa editorial Markdown incluye metadatos secundarios por perfil aunque el contrato mínimo activo aún no los use
 
 ### Razón
 Este diseño es principalmente un **contrato de lectura de datos**, no una feature de UI ni una migración editorial completa.
@@ -221,6 +241,9 @@ Mantener `item_bank` como tabla base de escritura durante la transición.
 Más adelante reemplazar el CTE `classified_content` por una tabla editorial explícita, por ejemplo:
 - `public.item_bank_read_overrides`
 
+### Paso 6
+Si la segunda capa por perfiles demuestra valor estable en producto, definir una adopción explícita y gobernada para esos metadatos en la capa de lectura activa.
+
 ---
 
 ## 7. Recomendación final
@@ -230,5 +253,6 @@ La solución mínima y segura es:
 - **no migrar todavía el modelo editorial completo**
 - **sí introducir una vista de lectura estable del banco activo**
 - **sí centralizar ahí la exclusión de legado y bloqueados**
+- **sí documentar por separado que la capa editorial del banco ya soporta segmentación secundaria por perfil**
 
 Con eso, la app deja de depender del estado accidental de `item_bank` y gana un puente claro entre banco cargado y consumo seguro.

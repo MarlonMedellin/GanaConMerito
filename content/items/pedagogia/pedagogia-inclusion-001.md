@@ -8,6 +8,10 @@ examType: docente
 competency: atencion_a_la_diversidad
 difficulty: 0.6
 targetLevel: intermedio
+targetRole: docente
+applicantProfile: docente_de_aula
+tags:
+  - foco:atencion_a_la_diversidad
 itemType: multiple_choice
 normativeRefs: []
 published: true

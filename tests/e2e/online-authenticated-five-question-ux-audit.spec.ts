@@ -1,4 +1,4 @@
-import { test, expect, request } from "@playwright/test";
+import { test, expect, request, ConsoleMessage } from "@playwright/test";
 import path from "node:path";
 import fs from "node:fs";
 
@@ -175,7 +175,7 @@ test.describe("GanaConMerito - Online UX & Flow Audit", () => {
       }
     });
 
-    page.on("console", (msg) => {
+    page.on("console", (msg: ConsoleMessage) => {
       if (msg.type() === "error" && !msg.text().includes("google") && !msg.text().includes("analytics")) {
         report.consoleErrors.push(msg.text());
       }

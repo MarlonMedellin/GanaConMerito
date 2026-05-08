@@ -8,6 +8,12 @@ examType: docente
 competency: toma_de_decisiones_institucionales
 difficulty: 0.3
 targetLevel: basico
+targetRole: docente
+targetPosition: coordinador
+applicantProfile: directivo_docente
+tags:
+  - perfil:coordinador
+  - foco:seguimiento_y_mejora
 itemType: multiple_choice
 normativeRefs: []
 published: true

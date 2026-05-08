@@ -56,6 +56,9 @@ Esas variables pueden agregarse después como filtros secundarios.
 ### Nivel 6
 - tipo de examen (`examType`)
 
+### Nivel 7 opcional
+- segmentación secundaria por perfil docente (`targetRole`, `targetPosition`, `applicantProfile`, `tags`)
+
 ---
 
 ## Áreas actuales del proyecto
@@ -97,6 +100,12 @@ Aunque el sistema actual usa `multiple_choice`, el corpus debe contemplarse edit
 - `published`
 - `version`
 
+### Frontmatter opcional de segunda capa
+- `targetRole`
+- `targetPosition`
+- `applicantProfile`
+- `tags`
+
 ### Cuerpo mínimo
 - `Enunciado`
 - `Opciones`
@@ -118,6 +127,7 @@ Cada pregunta debe:
 - tener distractores razonables
 - incluir explicación útil
 - poder importarse sin errores técnicos
+- no sustituir la taxonomía base por etiquetas de cargo
 
 ---
 
@@ -155,7 +165,24 @@ content/items/
   gestion/
   lectura_critica/
   competencias_ciudadanas/
+
+content/profiles/
+  docente/
+    rector_director_rural/
+    coordinador/
+    docente_aula_preescolar/
+    docente_aula_basica_primaria/
+    docente_aula_secundaria_media/
+    docente_orientador/
 ```
+
+---
+
+## Regla de uso de carpetas
+
+- `content/items/` guarda los ítems finales canónicos.
+- `content/profiles/docente/` guarda mapas, lotes, criterios y trabajo editorial por perfil.
+- Los ítems finales no deben duplicarse entre ambas superficies.
 
 ---
 
@@ -193,5 +220,8 @@ Ese debe ser el criterio rector del banco.
 - `docs/project/reference/descripcion-del-corpus-de-preguntas.md`
 - `docs/project/reference/plantillas-y-estructura-de-preguntas.md`
 - `docs/project/reference/taxonomia-y-nomenclatura-del-banco-de-preguntas.md`
+- `docs/project/reference/estructura-hibrida-taxonomia-perfiles-docente.md`
+- `docs/project/reference/metadatos-secundarios-perfiles-docente.md`
+- `docs/project/reference/guia-decision-perfiles-docente.md`
 - `docs/project/reference/ejemplos-modelo-de-preguntas.md`
 - `docs/project/reference/checklist-de-validacion-editorial.md`

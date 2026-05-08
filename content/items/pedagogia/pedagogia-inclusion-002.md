@@ -8,6 +8,11 @@ examType: docente
 competency: diseno_universal_de_aprendizaje
 difficulty: 0.8
 targetLevel: avanzado
+targetRole: docente
+applicantProfile: docente_de_aula
+tags:
+  - foco:inclusion
+  - enfoque:dua
 itemType: multiple_choice
 normativeRefs: []
 published: true

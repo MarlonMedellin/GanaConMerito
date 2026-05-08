@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect, Request, Response, ConsoleMessage, TestInfo } from "@playwright/test";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -79,7 +79,7 @@ function extractCommit(text: string) {
 }
 
 test.describe("Contrato producción /practice", () => {
-  test("valida auth boundary, metadata y severidad de errores", async ({ page }, testInfo) => {
+  test("valida auth boundary, metadata y severidad de errores", async ({ page }, testInfo: TestInfo) => {
     const artifactDir = path.join(process.cwd(), "artifacts", "production-practice-contract");
     ensureDir(artifactDir);
 
@@ -87,7 +87,7 @@ test.describe("Contrato producción /practice", () => {
     const failedRequests: FailedRequest[] = [];
     const consoleErrors: string[] = [];
 
-    page.on("response", (response) => {
+    page.on("response", (response: Response) => {
       const request = response.request();
       const url = response.url();
 
@@ -101,7 +101,7 @@ test.describe("Contrato producción /practice", () => {
       });
     });
 
-    page.on("requestfailed", (request) => {
+    page.on("requestfailed", (request: Request) => {
       const url = request.url();
 
       if (!isSameDomain(url)) return;
@@ -114,7 +114,7 @@ test.describe("Contrato producción /practice", () => {
       });
     });
 
-    page.on("console", (msg) => {
+    page.on("console", (msg: ConsoleMessage) => {
       if (msg.type() === "error") {
         consoleErrors.push(msg.text());
       }

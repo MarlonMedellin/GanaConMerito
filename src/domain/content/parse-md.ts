@@ -1,5 +1,16 @@
 import matter from "gray-matter";
-import type { ContentItem, ItemOption, OptionKey, ParsedContentSummary } from "../../types/content";
+import {
+  APPLICANT_PROFILES,
+  TARGET_POSITIONS,
+  TARGET_ROLES,
+  type ApplicantProfile,
+  type ContentItem,
+  type ItemOption,
+  type OptionKey,
+  type ParsedContentSummary,
+  type TargetPosition,
+  type TargetRole,
+} from "../../types/content";
 import { validateOptions } from "./validate-item";
 
 export interface ContentValidationResult {
@@ -27,6 +38,36 @@ function parseOptions(section: string): ItemOption[] {
       key: match[1].toUpperCase() as OptionKey,
       text: match[2].trim(),
     }));
+}
+
+function parseStringArray(value: unknown): string[] | undefined {
+  if (!Array.isArray(value)) {
+    return undefined;
+  }
+
+  return value.map((entry) => String(entry));
+}
+
+function parseOptionalCatalogValue<T extends string>(
+  value: unknown,
+  validValues: readonly T[],
+  fieldName: string,
+  errors: string[],
+): T | undefined {
+  if (value === undefined || value === null || value === "") {
+    return undefined;
+  }
+
+  const normalizedValue = String(value) as T;
+
+  if (!validValues.includes(normalizedValue)) {
+    errors.push(
+      `${fieldName} inválido. Valores permitidos: ${validValues.join(", ")}.`,
+    );
+    return undefined;
+  }
+
+  return normalizedValue;
 }
 
 export function parseMarkdownItem(rawMarkdown: string): ContentValidationResult {
@@ -71,6 +112,27 @@ export function parseMarkdownItem(rawMarkdown: string): ContentValidationResult 
     errors.push("itemType inválido. Solo se admite multiple_choice en este MVP.");
   }
 
+  const targetRole = parseOptionalCatalogValue<TargetRole>(
+    data.targetRole,
+    TARGET_ROLES,
+    "targetRole",
+    errors,
+  );
+
+  const targetPosition = parseOptionalCatalogValue<TargetPosition>(
+    data.targetPosition,
+    TARGET_POSITIONS,
+    "targetPosition",
+    errors,
+  );
+
+  const applicantProfile = parseOptionalCatalogValue<ApplicantProfile>(
+    data.applicantProfile,
+    APPLICANT_PROFILES,
+    "applicantProfile",
+    errors,
+  );
+
   if (!stem) {
     errors.push("Falta la sección Enunciado.");
   }
@@ -111,6 +173,7 @@ export function parseMarkdownItem(rawMarkdown: string): ContentValidationResult 
             difficulty: Number(data.difficulty ?? 0),
             correctOption: (correctOption || "A") as OptionKey,
             optionCount: options.length,
+            targetPosition: data.targetPosition ? String(data.targetPosition) : undefined,
           }
         : undefined,
     };
@@ -126,6 +189,10 @@ export function parseMarkdownItem(rawMarkdown: string): ContentValidationResult 
     competency: String(data.competency),
     difficulty: Number(data.difficulty),
     targetLevel: data.targetLevel ? String(data.targetLevel) : undefined,
+    targetRole,
+    targetPosition,
+    applicantProfile,
+    tags: parseStringArray(data.tags),
     itemType: "multiple_choice",
     stem,
     options,
@@ -151,6 +218,7 @@ export function parseMarkdownItem(rawMarkdown: string): ContentValidationResult 
       difficulty: item.difficulty,
       correctOption: item.correctOption,
       optionCount: item.options.length,
+      targetPosition: item.targetPosition,
     },
     item,
   };
