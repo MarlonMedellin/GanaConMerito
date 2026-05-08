@@ -11,7 +11,7 @@ related:
   - PROD-VISION
   - DEL-SPRINT-LOG
   - QUAL-DEBT-REGISTER
-last_reviewed: 2026-05-06
+last_reviewed: 2026-05-08
 ---
 
 # Backlog de producto
@@ -126,3 +126,10 @@ GanaConMerito tiene activo el core real de producto:
 3. Trazabilidad antes que personalizacion avanzada.
 4. Metricas honestas antes que claims de progreso.
 5. Documentacion canonica actualizada antes de abrir nuevos frentes grandes.
+
+
+## Deuda Sprint 35-36 formalizada en Sprint 37
+- Admin futuro de Tutor Dossier: edicion editorial por item, validacion de hint ladder, validacion de misconceptions y previsualizacion de no revelacion.
+- Gobernanza del dossier: versionado propio, auditoria editorial y relacion explicita con item version.
+- Guardrails: Sprint 37 centraliza enforcement minimo; si el tutor crece, se requiere capa formal dedicada.
+- Coherencia normativa: mantener `normative-source-truth-v1` como base sintetizada; el dossier tutorial no reemplaza fuente normativa primaria.

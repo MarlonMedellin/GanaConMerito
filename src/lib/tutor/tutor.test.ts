@@ -73,6 +73,8 @@ test("TutorOrchestrator denies correct answer before user answers", async () => 
   assert.strictEqual(result.output.canRevealCorrectAnswer, false);
   assert.match(result.output.visibleMessage, /no puedo revelar/i);
   assert.ok(result.output.guardrailsApplied.includes("no_correct_answer_before_user_answer"));
+  assert.strictEqual(result.output.traceSignals?.responseModeUsed, "pre_answer");
+  assert.strictEqual(result.output.traceSignals?.dossierAvailable, true);
 });
 
 test("TutorOrchestrator gives hint without revealing correct answer", async () => {
@@ -245,4 +247,12 @@ test("selectAnsweredTurnForItem ignores a newer unanswered turn for the same ite
 
   assert.strictEqual(turn?.id, "turn-2");
   assert.strictEqual(turn?.selected_option, "B");
+});
+
+
+test("TutorOrchestrator enforces no-reveal sanitization in pre-answer mode", async () => {
+  const result = await new TutorOrchestrator().processTurn(makeInput("Compara opciones"));
+  assert.strictEqual(result.output.canRevealCorrectAnswer, false);
+  assert.doesNotMatch(result.output.visibleMessage, /la correcta es\s+[A-D]|elige\s+[A-D]/i);
+  assert.strictEqual(result.output.traceSignals?.guardrailTriggered, true);
 });

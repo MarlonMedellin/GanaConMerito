@@ -11,16 +11,17 @@ async function assertRepoFileExists(relativePath: string) {
   await access(resolve(process.cwd(), relativePath));
 }
 
-test("Sprint governance reflects closed Sprint 33 and active Sprint 34", async () => {
+test("Sprint governance reflects closed Sprint 33 baseline and active Sprint 37 prep", async () => {
   const sprintLog = await readRepoFile("docs/02-delivery/sprint-log.md");
   const status = await readRepoFile("docs/project/status.md");
 
-  assert.match(sprintLog, /Sprint cerrado — Sprint 33: Stabilization, Governance and Runtime Confidence/i);
-  assert.match(sprintLog, /Deployment Status:\s*SUCCESS/i);
-  assert.match(sprintLog, /Operational Status:\s*STABLE/i);
+  assert.match(sprintLog, /Sprint activo — Sprint 37: Tutor Trace Signals and Governance Stabilization Prep/i);
+  assert.match(sprintLog, /Sprint cerrado — Sprint 36: Tutor Hint Ladder, Misconception Feedback and Safe Modes/i);
+  assert.match(sprintLog, /Sprint cerrado — Sprint 35: Tutor Support Contract Safe Evidence/i);
 
-  assert.match(status, /Sprint actual:\s*Sprint 34 — Runtime Confidence and Post-Stabilization Governance/i);
-  assert.match(status, /Estado:\s*MVP estabilizado operativamente/i);
+  assert.match(status, /\*\*Sprint actual:\*\*\s*Sprint 37 — Tutor Trace Signals and Governance Stabilization Prep/i);
+  assert.match(status, /Runtime publico\/VPS de Sprint 35-37:\s*NO VALIDADO EN ESTA CORRIDA/i);
+  assert.match(status, /`?npm run test:unit`? quedo bloqueado por contrato documental obsoleto/i);
 
   await assertRepoFileExists("docs/02-delivery/sprint-33-stabilization-plan.md");
   await assertRepoFileExists("docs/03-architecture/api-contract-standard-v1.md");

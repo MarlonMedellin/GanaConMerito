@@ -9,8 +9,16 @@ modules: [core, platform]
 tags: [changelog, cambios, entregas]
 related:
   - DEL-SPRINT-LOG
-last_reviewed: 2026-05-06
+last_reviewed: 2026-05-08
 ---
+
+## 2026-05-08
+- tipo: governance+test+tutor
+- modulo: delivery/tutor
+- resumen: Sprint 37 prepara estabilizacion de arrastre Sprint 35-36: se corrige `scripts/recent-sprints-contract.test.ts` para eliminar rigidez obsoleta Sprint 33/34 y exigir coherencia con Sprint 37 activo; se agrega enforcement minimo de no revelacion en tutor y señales minimas de trazabilidad (`dossierAvailable`, `responseModeUsed`, `hintLevelUsed`, `misconceptionDetected`, `guardrailTriggered`, `fallbackReason`) sin migraciones ni analytics pesadas; `npm run test:tutor` y `npm run test:unit` quedan en verde en repo local.
+- sprint: Sprint 37 — Tutor Trace Signals and Governance Stabilization Prep
+- agente: PM-Dev
+- relacionados: scripts/recent-sprints-contract.test.ts, src/lib/tutor/tutor-response-policy.ts, src/lib/tutor/tutor-orchestrator.ts, src/types/tutor-turn.ts, src/lib/tutor/tutor.test.ts, docs/project/status.md, docs/02-delivery/sprint-log.md, docs/01-product/backlog.md
 
 ## 2026-05-06
 - tipo: docs+governance+compliance

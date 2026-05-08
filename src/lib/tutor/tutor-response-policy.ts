@@ -73,3 +73,16 @@ export function trimToWordLimit(message: string, maxWords: number): string {
 function normalize(message: string): string {
   return message.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
+
+
+export function enforceNoRevealMessage(message: string, canRevealCorrectAnswer: boolean): { message: string; guardrailTriggered: boolean } {
+  if (canRevealCorrectAnswer) return { message, guardrailTriggered: false };
+  const risky = /(la correcta es\s+[A-D])|(elige\s+[A-D])|(opci[oó]n\s+correcta\s+es\s+[A-D])|(solo queda\s+[A-D])/i;
+  if (!risky.test(message)) return { message, guardrailTriggered: false };
+  const safe = message
+    .replace(/la correcta es\s+[A-D]/gi, "debo evitar revelar la clave")
+    .replace(/elige\s+[A-D]/gi, "enfócate en justificar tu elección")
+    .replace(/opci[oó]n\s+correcta\s+es\s+[A-D]/gi, "no puedo indicar la opción correcta todavía")
+    .replace(/solo queda\s+[A-D]/gi, "aún debes contrastar todas las alternativas");
+  return { message: safe, guardrailTriggered: true };
+}
