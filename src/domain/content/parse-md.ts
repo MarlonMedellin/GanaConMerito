@@ -29,6 +29,14 @@ function parseOptions(section: string): ItemOption[] {
     }));
 }
 
+function parseStringArray(value: unknown): string[] | undefined {
+  if (!Array.isArray(value)) {
+    return undefined;
+  }
+
+  return value.map((entry) => String(entry));
+}
+
 export function parseMarkdownItem(rawMarkdown: string): ContentValidationResult {
   const errors: string[] = [];
   const warnings: string[] = [];
@@ -111,6 +119,7 @@ export function parseMarkdownItem(rawMarkdown: string): ContentValidationResult 
             difficulty: Number(data.difficulty ?? 0),
             correctOption: (correctOption || "A") as OptionKey,
             optionCount: options.length,
+            targetPosition: data.targetPosition ? String(data.targetPosition) : undefined,
           }
         : undefined,
     };
@@ -126,6 +135,10 @@ export function parseMarkdownItem(rawMarkdown: string): ContentValidationResult 
     competency: String(data.competency),
     difficulty: Number(data.difficulty),
     targetLevel: data.targetLevel ? String(data.targetLevel) : undefined,
+    targetRole: data.targetRole ? String(data.targetRole) : undefined,
+    targetPosition: data.targetPosition ? String(data.targetPosition) : undefined,
+    applicantProfile: data.applicantProfile ? String(data.applicantProfile) : undefined,
+    tags: parseStringArray(data.tags),
     itemType: "multiple_choice",
     stem,
     options,
@@ -151,6 +164,7 @@ export function parseMarkdownItem(rawMarkdown: string): ContentValidationResult 
       difficulty: item.difficulty,
       correctOption: item.correctOption,
       optionCount: item.options.length,
+      targetPosition: item.targetPosition,
     },
     item,
   };
