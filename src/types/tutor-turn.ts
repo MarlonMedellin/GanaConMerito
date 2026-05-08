@@ -1,4 +1,11 @@
-export type TutorMode = "current_question" | "contest_preparation" | "performance_analysis";
+export type TutorMode =
+  | "current_question"
+  | "contest_preparation"
+  | "performance_analysis"
+  | "pre_answer"
+  | "hint_mode"
+  | "post_answer_feedback"
+  | "review_mode";
 
 export type TutorIntent =
   | "explain_question"
@@ -59,6 +66,11 @@ export interface QuestionTruthOption {
   isCorrect?: boolean;
 }
 
+export interface MisconceptionHint {
+  pattern: string;
+  feedback: string;
+}
+
 export interface QuestionTruth {
   itemId: string;
   area: string;
@@ -72,6 +84,9 @@ export interface QuestionTruth {
   options: QuestionTruthOption[];
   correctOption: string;
   correctExplanation: string;
+  canonicalRationale?: string;
+  normativeReasoning?: string;
+  misconceptionMap?: MisconceptionHint[];
   evaluatesCompetency?: boolean;
   userExpectedAnswer?: string;
   normativeAlignmentSummary?: string;
@@ -90,11 +105,43 @@ export interface UserSessionTruth {
   recentPerformanceSummary?: string;
 }
 
+export interface TutorSupportMisconception {
+  misconception: string;
+  safeRedirect: string;
+  pattern?: string;
+}
+
+export interface TutorSupportHint {
+  level: 1 | 2 | 3;
+  hint: string;
+}
+
+export interface TutorSupportResponsePolicy {
+  noRevealCorrectAnswer: boolean;
+  noRevealCorrectLetter: boolean;
+  noOptionEliminationByDiscard: boolean;
+  noVerbatimCorrectOptionQuote: boolean;
+  noScoring: boolean;
+  noAttemptStateMutation: boolean;
+}
+
+export interface TutorSupportContract {
+  instructionalGoal?: string;
+  canonicalRationale?: string;
+  misconceptionMap?: TutorSupportMisconception[];
+  hintLadder?: TutorSupportHint[];
+  normativeReasoning?: string;
+  responsePolicy?: TutorSupportResponsePolicy;
+  qualityFlags?: string[];
+  sourceTruthRefs?: string[];
+}
+
 export interface TutorEvidence {
   contest?: ContestTruth;
   aspirationalProfile?: AspirationalProfileTruth;
   question?: QuestionTruth;
   userSession: UserSessionTruth;
+  tutorSupport?: TutorSupportContract;
 }
 
 export interface TutorTurnRequest {
@@ -104,7 +151,6 @@ export interface TutorTurnRequest {
   message: string;
   evidence: TutorEvidence;
 }
-
 
 export interface TutorTraceSignals {
   dossierAvailable: boolean;

@@ -4,6 +4,7 @@ import type { TutorEvidence } from "../../types/tutor-turn";
 import {
   buildAspirationalProfileTruthV1,
   buildContestTruthV1,
+  buildTutorSupportContract,
   enrichQuestionTruthWithNormativeSource,
 } from "./normative-source-truth";
 
@@ -146,6 +147,7 @@ export async function buildTutorEvidence(params: {
     contest,
     aspirationalProfile,
     question,
+    tutorSupport: buildTutorSupportContract(question),
     userSession: {
       sessionId,
       userId,
