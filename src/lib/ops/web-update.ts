@@ -42,6 +42,9 @@ export interface UpdateReport {
   error?: string;
 }
 
+type CommandOptions = { cwd?: string; env?: Record<string, string> };
+type StepWorkResult = { summary: string; commands: CommandResult[]; details?: Record<string, unknown> };
+
 const CONFIG = {
   repoUrl: process.env.GCM_REPO_URL ?? "https://github.com/ProfeMarlonMDE/GanaConMerito.git",
   branch: process.env.GCM_DEPLOY_BRANCH ?? "master",
@@ -54,7 +57,7 @@ const CONFIG = {
   lockFile: process.env.GCM_WEB_UPDATE_LOCK_FILE ?? "/tmp/gcm-web-update.lock",
 } as const;
 
-const PREDEPLOY_TESTS = ["npm run lint", "npm run build", "npm run test:unit"] as const;
+const PREDEPLOY_TESTS = ["npm run lint", "npm run build", "npm run test:recent-sprints", "npm run test:unit"] as const;
 const POSTDEPLOY_TESTS = [
   "npm run qa:runtime:smoke",
   "QA_BASE_URL=http://127.0.0.1:3000 npm run qa:smoke:postdeploy",
@@ -110,8 +113,7 @@ export async function runWebUpdate(): Promise<UpdateReport> {
           throw error;
         }
 
-        const statusOutput = commands[2].stdout;
-        const statusLines = statusOutput
+        const statusLines = commands[2].stdout
           .split("\n")
           .map((line) => line.trim())
           .filter(Boolean)
@@ -126,11 +128,7 @@ export async function runWebUpdate(): Promise<UpdateReport> {
         return {
           summary: `product quedó alineado en ${report.productHeadAfter ?? "n/d"}.`,
           commands,
-          details: {
-            headBefore: report.productHeadBefore,
-            headAfter: report.productHeadAfter,
-            remote: remoteUrl,
-          },
+          details: { headBefore: report.productHeadBefore, headAfter: report.productHeadAfter, remote: remoteUrl },
         };
       }),
     );
@@ -151,10 +149,7 @@ export async function runWebUpdate(): Promise<UpdateReport> {
         return {
           summary: `deploy quedó alineado en ${report.deployHeadAfter ?? "n/d"}.`,
           commands,
-          details: {
-            headBefore: report.deployHeadBefore,
-            headAfter: report.deployHeadAfter,
-          },
+          details: { headBefore: report.deployHeadBefore, headAfter: report.deployHeadAfter },
         };
       }),
     );
@@ -166,15 +161,10 @@ export async function runWebUpdate(): Promise<UpdateReport> {
         commands.push(await runCommand(`test -f "${CONFIG.envFile}"`));
         commands.push(await runCommand("npm run lint", { cwd: CONFIG.productDir }));
         commands.push(await runCommand("npm run build", { cwd: CONFIG.productDir }));
+        commands.push(await runCommand("npm run test:recent-sprints", { cwd: CONFIG.productDir }));
         commands.push(await runCommand("npm run test:unit", { cwd: CONFIG.productDir }));
 
-        return {
-          summary: "Build, lint y tests unitarios quedaron ejecutados sobre product.",
-          commands,
-          details: {
-            envFile: CONFIG.envFile,
-          },
-        };
+        return { summary: "Build, lint y tests unitarios quedaron ejecutados sobre product.", commands, details: { envFile: CONFIG.envFile } };
       }),
     );
 
@@ -194,14 +184,7 @@ export async function runWebUpdate(): Promise<UpdateReport> {
         commands.push(await runCommand(`docker compose -f "${CONFIG.composeFile}" up -d gcm-app`));
         commands.push(await runCommand(`docker compose -f "${CONFIG.composeFile}" ps`));
 
-        return {
-          summary: `Docker reconstruido con APP_COMMIT=${appCommit} y APP_BUILD_TIME=${appBuildTime}.`,
-          commands,
-          details: {
-            appCommit,
-            appBuildTime,
-          },
-        };
+        return { summary: `Docker reconstruido con APP_COMMIT=${appCommit} y APP_BUILD_TIME=${appBuildTime}.`, commands, details: { appCommit, appBuildTime } };
       }),
     );
 
@@ -209,48 +192,12 @@ export async function runWebUpdate(): Promise<UpdateReport> {
       steps,
       await runStep("postdeploy-tests", "Correr smoke y E2E automatizadas del VPS", async () => {
         const commands: CommandResult[] = [];
-        commands.push(
-          await runCommand("npm run qa:runtime:smoke", {
-            cwd: CONFIG.deployDir,
-            env: {
-              QA_BASE_URL: CONFIG.runtimeBaseUrl,
-              REQUIRE_RUNTIME_METADATA: "1",
-            },
-          }),
-        );
-        commands.push(
-          await runCommand("npm run qa:smoke:postdeploy", {
-            cwd: CONFIG.deployDir,
-            env: {
-              QA_BASE_URL: CONFIG.qaBaseUrl,
-            },
-          }),
-        );
-        commands.push(
-          await runCommand("npm run qa:e2e:api", {
-            cwd: CONFIG.deployDir,
-            env: {
-              QA_BASE_URL: CONFIG.qaBaseUrl,
-            },
-          }),
-        );
-        commands.push(
-          await runCommand("npm run qa:e2e:ui", {
-            cwd: CONFIG.deployDir,
-            env: {
-              QA_BASE_URL: CONFIG.qaBaseUrl,
-            },
-          }),
-        );
+        commands.push(await runCommand("npm run qa:runtime:smoke", { cwd: CONFIG.deployDir, env: { QA_BASE_URL: CONFIG.runtimeBaseUrl, REQUIRE_RUNTIME_METADATA: "1" } }));
+        commands.push(await runCommand("npm run qa:smoke:postdeploy", { cwd: CONFIG.deployDir, env: { QA_BASE_URL: CONFIG.qaBaseUrl } }));
+        commands.push(await runCommand("npm run qa:e2e:api", { cwd: CONFIG.deployDir, env: { QA_BASE_URL: CONFIG.qaBaseUrl } }));
+        commands.push(await runCommand("npm run qa:e2e:ui", { cwd: CONFIG.deployDir, env: { QA_BASE_URL: CONFIG.qaBaseUrl } }));
 
-        return {
-          summary: "Smoke runtime, smoke postdeploy y E2E API/UI quedaron ejecutadas.",
-          commands,
-          details: {
-            runtimeBaseUrl: CONFIG.runtimeBaseUrl,
-            qaBaseUrl: CONFIG.qaBaseUrl,
-          },
-        };
+        return { summary: "Smoke runtime, smoke postdeploy y E2E API/UI quedaron ejecutadas.", commands, details: { runtimeBaseUrl: CONFIG.runtimeBaseUrl, qaBaseUrl: CONFIG.qaBaseUrl } };
       }),
     );
 
@@ -271,75 +218,71 @@ export async function runWebUpdate(): Promise<UpdateReport> {
 
 async function pushStep(steps: StepResult[], step: StepResult) {
   steps.push(step);
-  if (!step.ok) {
-    throw new Error(step.summary);
-  }
+  if (!step.ok) throw new Error(step.summary);
 }
 
-async function runStep(
-  id: string,
-  title: string,
-  work: () => Promise<{ summary: string; commands: CommandResult[]; details?: Record<string, unknown> }>,
-): Promise<StepResult> {
+async function runStep(id: string, title: string, work: () => Promise<StepWorkResult>): Promise<StepResult> {
   const startedAt = nowIso();
   try {
     const result = await work();
-    return {
-      id,
-      title,
-      ok: true,
-      summary: result.summary,
-      startedAt,
-      finishedAt: nowIso(),
-      details: result.details,
-      commands: result.commands,
-    };
+    return { id, title, ok: true, summary: result.summary, startedAt, finishedAt: nowIso(), details: result.details, commands: result.commands };
   } catch (error) {
     const commandError = error as Error & { commands?: CommandResult[]; details?: Record<string, unknown> };
-    return {
-      id,
-      title,
-      ok: false,
-      summary: commandError.message,
-      startedAt,
-      finishedAt: nowIso(),
-      details: commandError.details,
-      commands: commandError.commands ?? [],
-    };
+    return { id, title, ok: false, summary: commandError.message, startedAt, finishedAt: nowIso(), details: commandError.details, commands: commandError.commands ?? [] };
   }
 }
 
-async function runCommand(
-  command: string,
-  options: { cwd?: string; env?: Record<string, string> } = {},
-): Promise<CommandResult> {
+async function runCommand(command: string, options: CommandOptions = {}): Promise<CommandResult> {
   const cwd = options.cwd ?? CONFIG.productDir;
   const startedAt = Date.now();
+  const shells = getShellCandidates();
+  const errors: string[] = [];
 
+  for (const shell of shells) {
+    try {
+      return await spawnCommandWithShell(shell, command, cwd, startedAt, options.env);
+    } catch (error) {
+      const nodeError = error as NodeJS.ErrnoException;
+      if (nodeError.code === "ENOENT") {
+        errors.push(`${shell}: ${nodeError.message}`);
+        continue;
+      }
+      throw error;
+    }
+  }
+
+  const result: CommandResult = {
+    command,
+    cwd,
+    exitCode: null,
+    durationMs: Date.now() - startedAt,
+    stdout: "",
+    stderr: trimOutput(errors.join("\n")),
+  };
+  const failure = new Error(`No se encontró un shell ejecutable para correr: ${command}`);
+  (failure as Error & { commands?: CommandResult[] }).commands = [result];
+  throw failure;
+}
+
+function spawnCommandWithShell(
+  shell: string,
+  command: string,
+  cwd: string,
+  startedAt: number,
+  env?: Record<string, string>,
+): Promise<CommandResult> {
   return new Promise((resolve, reject) => {
-    const child = spawn("bash", ["-lc", command], {
-      cwd,
-      env: {
-        ...process.env,
-        ...options.env,
-      },
-    });
-
+    const child = spawn(shell, ["-lc", command], { cwd, env: { ...process.env, ...env } });
     let stdout = "";
     let stderr = "";
 
     child.stdout.on("data", (chunk) => {
       stdout += chunk.toString();
     });
-
     child.stderr.on("data", (chunk) => {
       stderr += chunk.toString();
     });
-
-    child.on("error", (error) => {
-      reject(error);
-    });
-
+    child.on("error", reject);
     child.on("close", (exitCode) => {
       const result: CommandResult = {
         command,
@@ -349,17 +292,20 @@ async function runCommand(
         stdout: trimOutput(stdout),
         stderr: trimOutput(stderr),
       };
-
       if (exitCode === 0) {
         resolve(result);
         return;
       }
-
       const failure = new Error(`Falló el comando: ${command}`);
       (failure as Error & { commands?: CommandResult[] }).commands = [result];
       reject(failure);
     });
   });
+}
+
+function getShellCandidates() {
+  const configuredShell = process.env.GCM_COMMAND_SHELL;
+  return [...new Set([configuredShell, "/bin/sh", "sh", "/bin/bash", "bash"].filter(Boolean) as string[])];
 }
 
 function trimOutput(value: string) {
