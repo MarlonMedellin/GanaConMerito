@@ -23,6 +23,12 @@ ENV NODE_ENV=production
 ENV PORT=3000
 ENV NEXT_PUBLIC_APP_COMMIT=${APP_COMMIT}
 ENV NEXT_PUBLIC_APP_BUILD_TIME=${APP_BUILD_TIME}
+RUN apk add --no-cache \
+    bash \
+    curl \
+    docker-cli \
+    docker-cli-compose \
+    git
 COPY --from=builder /app ./
 EXPOSE 3000
 CMD ["npm", "run", "start"]
