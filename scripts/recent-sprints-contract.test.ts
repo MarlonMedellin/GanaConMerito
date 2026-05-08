@@ -11,13 +11,16 @@ async function assertRepoFileExists(relativePath: string) {
   await access(resolve(process.cwd(), relativePath));
 }
 
-test("Latest sprint contract is visible in sprint log and status", async () => {
+test("Sprint governance reflects closed Sprint 33 and active Sprint 34", async () => {
   const sprintLog = await readRepoFile("docs/02-delivery/sprint-log.md");
   const status = await readRepoFile("docs/project/status.md");
 
-  assert.match(sprintLog, /Sprint activo — Sprint 33: Stabilization, Governance and Runtime Confidence/i);
-  assert.match(status, /Sprint actual:\s*Sprint 33 — Stabilization, Governance and Runtime Confidence/i);
-  assert.match(status, /No abrir nuevas funcionalidades/i);
+  assert.match(sprintLog, /Sprint cerrado — Sprint 33: Stabilization, Governance and Runtime Confidence/i);
+  assert.match(sprintLog, /Deployment Status:\s*SUCCESS/i);
+  assert.match(sprintLog, /Operational Status:\s*STABLE/i);
+
+  assert.match(status, /Sprint actual:\s*Sprint 34 — Runtime Confidence and Post-Stabilization Governance/i);
+  assert.match(status, /Estado:\s*MVP estabilizado operativamente/i);
 
   await assertRepoFileExists("docs/02-delivery/sprint-33-stabilization-plan.md");
   await assertRepoFileExists("docs/03-architecture/api-contract-standard-v1.md");
@@ -39,4 +42,11 @@ test("Sprint 22 remains explicitly non-source-verified in current repo state", a
   assert.match(status, /no encuentra anexos oficiales suficientes para promover `source_verified`/i);
   assert.match(normativeVerification, /PASS con WARN/i);
   assert.match(normativeVerification, /acuerdo oficial del concurso cargado en repo/i);
+});
+
+test("Semantic QA tolerances allow controlled decimal drift", async () => {
+  const semanticAssertions = await readRepoFile("scripts/qa-e2e-semantic-assertions.js");
+
+  assert.match(semanticAssertions, /TOPIC_STAT_AVG_DIFFICULTY_TOLERANCE\s*=\s*0\.02/i);
+  assert.match(semanticAssertions, /avg_difficulty inconsistente en user_topic_stats/i);
 });
