@@ -191,7 +191,7 @@ async function getAuthCookies() {
     await firstOption.click();
     await page.getByLabel('Justificación opcional').fill(`Turno ${turn}: selección automatizada en Chromium para validar UI, red y feedback.`);
     const responsePromise = page.waitForResponse((resp) => resp.url().includes('/api/session/advance') && resp.request().method() === 'POST', { timeout: 45000 });
-    await page.getByRole('button', { name: 'Responder' }).click();
+    await page.getByRole('button', { name: 'Responder', exact: true }).click();
     const advanceResponse = await responsePromise;
     let advanceJson = null;
     try { advanceJson = await advanceResponse.json(); } catch {}
