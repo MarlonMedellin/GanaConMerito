@@ -9,8 +9,10 @@ competency: lectura_de_indicadores
 difficulty: 0.2
 targetLevel: basico
 targetRole: docente
+targetPosition: rector_director_rural
 applicantProfile: directivo_docente
 tags:
+  - perfil:rector_director_rural
   - foco:seguimiento_y_mejora
   - fuente:pruebas_saber
 itemType: multiple_choice
