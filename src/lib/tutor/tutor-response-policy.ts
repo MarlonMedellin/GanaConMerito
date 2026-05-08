@@ -14,18 +14,21 @@ const CURRENT_QUESTION_PATTERNS = [
   "feedback",
 ];
 
-export function detectTutorMode(message: string): TutorMode {
+export function detectTutorMode(message: string, hasUserAnswered = false): TutorMode {
   const normalized = normalize(message);
+  if (["revisa", "repaso", "review"].some((term) => normalized.includes(term))) return "review_mode";
+  if (["pista", "ayuda", "hint"].some((term) => normalized.includes(term))) return "hint_mode";
+  if (hasUserAnswered || ["feedback", "por que mi respuesta", "porque mi respuesta"].some((term) => normalized.includes(term))) {
+    return "post_answer_feedback";
+  }
   if (["desempeño", "rendimiento", "practicar", "siguiente", "debo estudiar"].some((term) => normalized.includes(term))) {
     return "performance_analysis";
   }
   if (["concurso", "perfil", "empleo", "convocatoria", "regla", "acuerdo"].some((term) => normalized.includes(term))) {
     return "contest_preparation";
   }
-  if (CURRENT_QUESTION_PATTERNS.some((term) => normalized.includes(term))) {
-    return "current_question";
-  }
-  return "current_question";
+  if (CURRENT_QUESTION_PATTERNS.some((term) => normalized.includes(term))) return "pre_answer";
+  return "pre_answer";
 }
 
 export function detectTutorIntent(message: string): TutorIntent {
@@ -34,7 +37,7 @@ export function detectTutorIntent(message: string): TutorIntent {
     return "explain_feedback";
   }
   if (["respuesta correcta", "correcta", "cuál es", "cual es"].some((term) => normalized.includes(term))) return "explain_question";
-  if (["pista", "ayuda"].some((term) => normalized.includes(term))) return "give_hint";
+  if (["pista", "ayuda", "hint"].some((term) => normalized.includes(term))) return "give_hint";
   if (["compara", "comparar", "diferencia", "opciones"].some((term) => normalized.includes(term))) return "compare_options";
   if (["concepto", "tema", "significa"].some((term) => normalized.includes(term))) return "clarify_concept";
   if (["qué me piden", "que me piden", "tarea", "espera"].some((term) => normalized.includes(term))) return "explain_expected_task";
@@ -44,6 +47,13 @@ export function detectTutorIntent(message: string): TutorIntent {
   if (["perfil", "empleo", "cargo"].some((term) => normalized.includes(term))) return "explain_profile_alignment";
   if (["regla", "concurso", "acuerdo", "guía", "guia"].some((term) => normalized.includes(term))) return "explain_contest_rule";
   return "clarify_concept";
+}
+
+export function detectHintLevel(message: string): 1 | 2 | 3 {
+  const normalized = normalize(message);
+  if (/nivel\s*3|tercer|muy directa|casi respuesta/.test(normalized)) return 3;
+  if (/nivel\s*2|segunda|segundo|mas detalle|más detalle/.test(normalized)) return 2;
+  return 1;
 }
 
 export function requestsCorrectAnswer(message: string): boolean {
@@ -74,15 +84,15 @@ function normalize(message: string): string {
   return message.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
 
-
 export function enforceNoRevealMessage(message: string, canRevealCorrectAnswer: boolean): { message: string; guardrailTriggered: boolean } {
   if (canRevealCorrectAnswer) return { message, guardrailTriggered: false };
-  const risky = /(la correcta es\s+[A-D])|(elige\s+[A-D])|(opci[oó]n\s+correcta\s+es\s+[A-D])|(solo queda\s+[A-D])/i;
+  const risky = /(la correcta es\s+[A-D])|(elige\s+[A-D])|(opci[oó]n\s+correcta\s+es\s+[A-D])|(solo queda\s+[A-D])|(clave registrada es\s+[A-D])/i;
   if (!risky.test(message)) return { message, guardrailTriggered: false };
   const safe = message
     .replace(/la correcta es\s+[A-D]/gi, "debo evitar revelar la clave")
     .replace(/elige\s+[A-D]/gi, "enfócate en justificar tu elección")
     .replace(/opci[oó]n\s+correcta\s+es\s+[A-D]/gi, "no puedo indicar la opción correcta todavía")
+    .replace(/clave registrada es\s+[A-D]/gi, "la clave registrada no debe revelarse todavía")
     .replace(/solo queda\s+[A-D]/gi, "aún debes contrastar todas las alternativas");
   return { message: safe, guardrailTriggered: true };
 }
