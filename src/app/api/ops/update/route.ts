@@ -22,7 +22,8 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Credenciales inválidas." }, { status: 401 });
     }
 
-    const report = await runWebUpdate();
+    const action = typeof body.action === "string" ? body.action : "all";
+    const report = await runWebUpdate(action as never);
     return NextResponse.json(report, {
       status: report.ok ? 200 : 500,
       headers: {
