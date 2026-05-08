@@ -43,6 +43,27 @@ Estas carpetas sirven para:
 - mapeo entre perfiles y taxonomía
 - organización de trabajo futuro sin duplicar ítems canónicos
 
+## Segunda capa dentro del ítem
+
+Además de la carpeta por perfil, cada ítem puede llevar metadatos opcionales para segmentación secundaria.
+
+Campos recomendados:
+- `targetRole`
+- `targetPosition`
+- `applicantProfile`
+- `tags`
+
+### Ejemplo
+
+```yaml
+targetRole: docente
+targetPosition: coordinador
+applicantProfile: directivo_docente
+tags:
+  - perfil:coordinador
+  - foco:seguimiento_academico
+```
+
 ## Regla de uso
 
 ### Guardar aquí
@@ -105,6 +126,25 @@ Mayor afinidad con:
 - `competencias_ciudadanas`
 - `normatividad`
 - `gestion`
+
+## Esto mejora o complica
+
+Mejora la estructura si se usa como capa secundaria, porque:
+- no parte el banco en silos por cargo
+- deja filtrar por perfil cuando sí importa
+- conserva reusabilidad entre perfiles
+- reduce duplicación editorial
+
+Complica la estructura si se abusa, por ejemplo:
+- marcando todos los ítems con demasiadas etiquetas
+- creando nuevos perfiles sin catálogo controlado
+- usando la capa secundaria como sustituto del eje taxonómico
+
+## Criterio operativo
+
+Usa la segunda capa solo cuando el perfil profesional añade valor real a la interpretación, selección o curación del ítem.
+
+Si no añade valor, deja el ítem solo con su taxonomía principal.
 
 ## Convención práctica sugerida
 
