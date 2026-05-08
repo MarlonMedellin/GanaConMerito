@@ -1,4 +1,5 @@
-import { open, rm } from "node:fs/promises";
+import { access, open, rm } from "node:fs/promises";
+import { constants } from "node:fs";
 import { spawn } from "node:child_process";
 
 export interface CommandResult {
@@ -91,6 +92,21 @@ export async function runWebUpdate(): Promise<UpdateReport> {
 
   try {
     lockHandle = await open(CONFIG.lockFile, "wx");
+
+    await pushStep(steps, await runStep("preflight", "Validar entorno operativo del update web", async () => {
+      await assertAccessiblePath(CONFIG.productDir, "GCM_PRODUCT_DIR/product");
+      await assertAccessiblePath(CONFIG.deployDir, "GCM_DEPLOY_DIR/deploy");
+      await assertAccessiblePath(CONFIG.composeFile, "GCM_DOCKER_COMPOSE_FILE/docker-compose.yml");
+      return {
+        summary: "El contenedor puede ver product, deploy y docker-compose del host.",
+        commands: [],
+        details: {
+          productDir: CONFIG.productDir,
+          deployDir: CONFIG.deployDir,
+          composeFile: CONFIG.composeFile,
+        },
+      };
+    }));
 
     const productProbe = await runCommand(`git -C "${CONFIG.productDir}" rev-parse --short HEAD`);
     report.productHeadBefore = productProbe.stdout.trim() || null;
@@ -216,6 +232,17 @@ export async function runWebUpdate(): Promise<UpdateReport> {
   }
 }
 
+async function assertAccessiblePath(path: string, label: string) {
+  try {
+    await access(path, constants.R_OK);
+  } catch {
+    throw new Error(
+      `${label} no es visible desde el contenedor: ${path}. ` +
+        "Monta esa ruta del host como volumen del servicio gcm-app antes de ejecutar update.html.",
+    );
+  }
+}
+
 async function pushStep(steps: StepResult[], step: StepResult) {
   steps.push(step);
   if (!step.ok) throw new Error(step.summary);
@@ -238,6 +265,15 @@ async function runCommand(command: string, options: CommandOptions = {}): Promis
   const shells = getShellCandidates();
   const errors: string[] = [];
 
+  try {
+    await access(cwd, constants.R_OK);
+  } catch {
+    const result: CommandResult = { command, cwd, exitCode: null, durationMs: Date.now() - startedAt, stdout: "", stderr: "cwd no visible desde el contenedor" };
+    const failure = new Error(`Directorio de trabajo no visible desde el contenedor: ${cwd}`);
+    (failure as Error & { commands?: CommandResult[] }).commands = [result];
+    throw failure;
+  }
+
   for (const shell of shells) {
     try {
       return await spawnCommandWithShell(shell, command, cwd, startedAt, options.env);
@@ -251,47 +287,23 @@ async function runCommand(command: string, options: CommandOptions = {}): Promis
     }
   }
 
-  const result: CommandResult = {
-    command,
-    cwd,
-    exitCode: null,
-    durationMs: Date.now() - startedAt,
-    stdout: "",
-    stderr: trimOutput(errors.join("\n")),
-  };
+  const result: CommandResult = { command, cwd, exitCode: null, durationMs: Date.now() - startedAt, stdout: "", stderr: trimOutput(errors.join("\n")) };
   const failure = new Error(`No se encontró un shell ejecutable para correr: ${command}`);
   (failure as Error & { commands?: CommandResult[] }).commands = [result];
   throw failure;
 }
 
-function spawnCommandWithShell(
-  shell: string,
-  command: string,
-  cwd: string,
-  startedAt: number,
-  env?: Record<string, string>,
-): Promise<CommandResult> {
+function spawnCommandWithShell(shell: string, command: string, cwd: string, startedAt: number, env?: Record<string, string>): Promise<CommandResult> {
   return new Promise((resolve, reject) => {
     const child = spawn(shell, ["-lc", command], { cwd, env: { ...process.env, ...env } });
     let stdout = "";
     let stderr = "";
 
-    child.stdout.on("data", (chunk) => {
-      stdout += chunk.toString();
-    });
-    child.stderr.on("data", (chunk) => {
-      stderr += chunk.toString();
-    });
+    child.stdout.on("data", (chunk) => { stdout += chunk.toString(); });
+    child.stderr.on("data", (chunk) => { stderr += chunk.toString(); });
     child.on("error", reject);
     child.on("close", (exitCode) => {
-      const result: CommandResult = {
-        command,
-        cwd,
-        exitCode,
-        durationMs: Date.now() - startedAt,
-        stdout: trimOutput(stdout),
-        stderr: trimOutput(stderr),
-      };
+      const result: CommandResult = { command, cwd, exitCode, durationMs: Date.now() - startedAt, stdout: trimOutput(stdout), stderr: trimOutput(stderr) };
       if (exitCode === 0) {
         resolve(result);
         return;
