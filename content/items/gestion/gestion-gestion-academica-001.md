@@ -8,6 +8,11 @@ examType: docente
 competency: analisis_de_gestion
 difficulty: 0.55
 targetLevel: intermedio
+targetRole: docente
+applicantProfile: directivo_docente
+tags:
+  - foco:gestion_academica
+  - uso:mejora_institucional
 itemType: multiple_choice
 normativeRefs: []
 published: true
