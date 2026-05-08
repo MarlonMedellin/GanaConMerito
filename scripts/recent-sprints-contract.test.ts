@@ -21,7 +21,7 @@ test("Sprint governance reflects closed Sprint 33 baseline and active Sprint 37 
 
   assert.match(status, /\*\*Sprint actual:\*\*\s*Sprint 37 — Tutor Trace Signals and Governance Stabilization Prep/i);
   assert.match(status, /Runtime publico\/VPS de Sprint 35-37:\s*NO VALIDADO EN ESTA CORRIDA/i);
-  assert.match(status, /`?npm run test:unit`? quedo bloqueado por contrato documental obsoleto/i);
+  assert.match(status, /`?npm run test:unit`? corre en verde en repo local/i);
 
   await assertRepoFileExists("docs/02-delivery/sprint-33-stabilization-plan.md");
   await assertRepoFileExists("docs/03-architecture/api-contract-standard-v1.md");

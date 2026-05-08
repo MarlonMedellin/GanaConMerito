@@ -38,25 +38,7 @@ Ultima actualizacion: 2026-05-08 — Sprint 37 (Tutor Trace Signals and Governan
 
 - Sprint 35 y Sprint 36 se registran como ejecutados con `npm run test:tutor` en verde.
 - Runtime publico/VPS de Sprint 35-37: NO VALIDADO EN ESTA CORRIDA (solo repo).
-- `npm run test:unit` quedo bloqueado por contrato documental obsoleto y se atiende en Sprint 37.
-
-## Sprint 34 — foco activo
-
-### Objetivo
-Mantener confianza runtime post-estabilizacion, verificar que CI/VPS/produccion sigan alineados y preparar los siguientes cierres sin abrir expansion funcional prematura.
-
-### Frentes activos
-- Reconciliacion CI vs VPS.
-- Validacion post-correccion de tolerancias semanticas.
-- Confirmacion de metadata publica de runtime.
-- Seguimiento de deuda AppSec P0/P1.
-- Planeacion de siguiente iteracion tecnica.
-
-### Guardrails Sprint 34
-- No declarar `source_verified` sin anexos oficiales.
-- No abrir features nuevas hasta sostener CI y VPS en verde.
-- No relajar tests de negocio criticos; solo tolerancias justificadas para drift decimal controlado.
-- Mantener Tutor GCM sin autoridad sobre scoring, avance, cierre de sesion ni seleccion de items.
+- `npm run test:unit` corre en verde en repo local despues del ajuste de coherencia documental de Sprint 37.
 
 ## Sprint 33 — cierre operacional
 
@@ -135,10 +117,10 @@ Sprint 33 queda cerrado operacionalmente como estabilizacion de gobernanza, runt
 
 ## Criterio de cierre del estado actual
 
-El estado Sprint 34 se considerara listo para avanzar cuando:
+El estado Sprint 37 se considerara listo para cierre de repo cuando:
 
 - GitHub Actions y VPS reporten PASS en la misma version de `master`.
-- `test:recent-sprints` valide Sprint 33 cerrado y Sprint 34 vigente.
+- `test:recent-sprints` valide Sprint 33 cerrado y Sprint 37 activo.
 - `qa:e2e:api` deje de fallar por drift decimal controlado.
 - `qa:e2e:ui` siga pasando en modo live Playwright Chromium.
 - La metadata publica de `/login` coincida con el HEAD desplegado.
