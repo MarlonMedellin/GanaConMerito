@@ -8,6 +8,11 @@ examType: docente
 competency: aplicacion_del_marco_legal
 difficulty: 0.6
 targetLevel: intermedio
+targetRole: docente
+applicantProfile: docente_de_aula
+tags:
+  - foco:educacion_inclusiva
+  - referencia:decreto_1421
 itemType: multiple_choice
 normativeRefs:
   - "Decreto 1421"
