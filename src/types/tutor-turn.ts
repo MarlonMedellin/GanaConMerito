@@ -90,11 +90,42 @@ export interface UserSessionTruth {
   recentPerformanceSummary?: string;
 }
 
+export interface TutorSupportMisconception {
+  misconception: string;
+  safeRedirect: string;
+}
+
+export interface TutorSupportHint {
+  level: number;
+  hint: string;
+}
+
+export interface TutorSupportResponsePolicy {
+  noRevealCorrectAnswer: boolean;
+  noRevealCorrectLetter: boolean;
+  noOptionEliminationByDiscard: boolean;
+  noVerbatimCorrectOptionQuote: boolean;
+  noScoring: boolean;
+  noAttemptStateMutation: boolean;
+}
+
+export interface TutorSupportContract {
+  instructionalGoal?: string;
+  canonicalRationale?: string;
+  misconceptionMap?: TutorSupportMisconception[];
+  hintLadder?: TutorSupportHint[];
+  normativeReasoning?: string;
+  responsePolicy?: TutorSupportResponsePolicy;
+  qualityFlags?: string[];
+  sourceTruthRefs?: string[];
+}
+
 export interface TutorEvidence {
   contest?: ContestTruth;
   aspirationalProfile?: AspirationalProfileTruth;
   question?: QuestionTruth;
   userSession: UserSessionTruth;
+  tutorSupport?: TutorSupportContract;
 }
 
 export interface TutorTurnRequest {

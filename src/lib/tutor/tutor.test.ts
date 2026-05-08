@@ -107,7 +107,8 @@ test("TutorOrchestrator can explain correct option after user answers", async ()
   );
 
   assert.strictEqual(result.output.canRevealCorrectAnswer, true);
-  assert.match(result.output.visibleMessage, /opción correcta registrada es B/i);
+  assert.doesNotMatch(result.output.visibleMessage, /opción correcta registrada es B|clave registrada es B/i);
+  assert.match(result.output.visibleMessage, /respuesta esperada registrada en la fuente/i);
   assert.match(result.output.visibleMessage, /feedback oficial registrado/i);
   assert.match(result.output.visibleMessage, /distractores/i);
   assert.strictEqual(result.trace.canRevealCorrectAnswer, true);
@@ -137,6 +138,29 @@ test("TutorOrchestrator keeps blocking correct answer without answered evidence"
 
   assert.strictEqual(result.output.canRevealCorrectAnswer, false);
   assert.doesNotMatch(result.output.visibleMessage, /clave registrada es B|opción correcta registrada es B/i);
+});
+
+test("TutorOrchestrator uses tutorSupport sidecar when available", async () => {
+  const result = await new TutorOrchestrator().processTurn(
+    makeInput("Dame una pista", {
+      ...baseEvidence,
+      tutorSupport: {
+        instructionalGoal: "Evitar respuesta por descarte superficial.",
+        canonicalRationale: "La mejor alternativa resuelve el caso y mantiene coherencia pedagógica.",
+        hintLadder: [{ level: 1, hint: "Primero identifica la tarea esperada antes de mirar opciones." }],
+        responsePolicy: {
+          noRevealCorrectAnswer: true,
+          noRevealCorrectLetter: true,
+          noOptionEliminationByDiscard: true,
+          noVerbatimCorrectOptionQuote: true,
+          noScoring: true,
+          noAttemptStateMutation: true,
+        },
+      },
+    }),
+  );
+
+  assert.match(result.output.visibleMessage, /Primero identifica la tarea esperada/i);
 });
 
 test("TutorOrchestrator maps post-answer feedback phrasing to explain_feedback intent", async () => {

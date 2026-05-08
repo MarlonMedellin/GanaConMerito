@@ -4,6 +4,7 @@ import type { TutorEvidence } from "../../types/tutor-turn";
 import {
   buildAspirationalProfileTruthV1,
   buildContestTruthV1,
+  buildTutorSupportContract,
   enrichQuestionTruthWithNormativeSource,
 } from "./normative-source-truth";
 
@@ -157,6 +158,7 @@ export async function buildTutorEvidence(params: {
       feedback: currentTurn?.model_feedback ?? undefined,
       recentPerformanceSummary,
     },
+    tutorSupport: buildTutorSupportContract(question),
   };
 }
 
