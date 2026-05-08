@@ -10,15 +10,20 @@ last_reviewed: 2026-05-08
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-05-08 — Sprint 37.1 (Runtime Parity & Operational Verification).
+Ultima actualizacion: 2026-05-08 — Sprint 38 (Update Runtime Parity and Progressive Pipeline).
 
 ## Estado general
 
-**Estado:** MVP estabilizado operativamente despues del cierre de Sprint 33. El core esta desplegado, Docker construye correctamente, smoke local/publico fue reportado como PASS y la suite UI E2E fue reportada como PASS.  
-**Producto:** producto activo con core operativo, Tutor GCM gobernado, dashboard con metricas prudentes y contrato de fuente normativa minima explicitamente clasificado como no oficial/verificado.  
-**Sprint actual:** Ninguno (cerrando 37.1).  
-**Sprint anterior cerrado:** Sprint 37.1 — Runtime Parity & Operational Verification.  
-**Rama canonica:** `master`.  
+**Estado:** MVP estabilizado operativamente despues del cierre de Sprint 33. El core esta desplegado, Docker construye correctamente, smoke local/publico fue reportado como PASS y la suite UI E2E fue reportada como PASS.
+
+**Producto:** producto activo con core operativo, Tutor GCM gobernado, dashboard con metricas prudentes y contrato de fuente normativa minima explicitamente clasificado como no oficial/verificado.
+
+**Sprint actual:** Sprint 38 — Update Runtime Parity and Progressive Pipeline.
+
+**Sprint anterior cerrado:** Sprint 37.1 — Runtime Parity & Operational Verification.
+
+**Rama canonica:** `master`.
+
 **Version declarada en `package.json`:** `0.6.0`.
 
 ## Verdad operativa actual
@@ -26,22 +31,72 @@ Ultima actualizacion: 2026-05-08 — Sprint 37.1 (Runtime Parity & Operational V
 - **Fuente de verdad del producto:** `https://github.com/ProfeMarlonMDE/GanaConMerito`.
 - **Copia sincronizada operativa en VPS:** `~/.openclaw/product`.
 - **Árbol de deploy:** `/opt/gcm/app`.
-- **Commit actual desplegado y verificado:** `3f3ccc0` (con TS tests arreglados en `99c1ab8`).
+- **URL pública canónica:** `https://cnsc.profemarlon.com`.
+- **Consola operacional:** `https://cnsc.profemarlon.com/update.html`.
+- **Commit actual desplegado y verificado:** `3f3ccc0`.
 - **Short hash verificado:** `3f3ccc0`.
 
 ## Sprint 37.1 — cerrado
-- **Sprint 37.1 — Runtime Parity & Operational Verification**
-- **Estado:** PASS
-- **Runtime verified:** yes
-- **Deploy parity:** yes
-- **Docker verified:** yes
 
+### Runtime Parity & Operational Verification
+
+**Estado:** PASS
+
+Validaciones completadas:
+- Runtime verified: yes
+- Deploy parity: yes
+- Docker verified: yes
+- Smoke local/publico: PASS
+- qa:e2e:api: PASS
+- qa:e2e:ui: PASS
+- npm run lint: PASS
+- npm run build: PASS
+- npm run test:recent-sprints: PASS
+- npm run test:unit: PASS
+
+Adicionalmente:
 - Sprint 35 y Sprint 36 ejecutados con `npm run test:tutor` en verde.
-- Runtime publico/VPS de Sprint 35-37.1: VALIDADO EN ESTA CORRIDA.
-- Las QA pipelines `qa:runtime:smoke`, `qa:smoke:postdeploy`, `qa:e2e:api` y `qa:e2e:ui` pasaron limpiamente.
+- Runtime publico/VPS de Sprint 35-37.1 validado en la misma corrida operacional.
+- El endpoint `/update.html` quedo operativo con mounts, docker.sock y shell tools disponibles dentro de `gcm-app`.
+
+## Sprint 38 — activo
+
+### Update Runtime Parity and Progressive Pipeline
+
+Objetivo principal:
+Convertir `/update.html` en una consola operacional progresiva y observable para el VPS.
+
+Estado actual:
+- Acciones parciales implementadas:
+  - product
+  - deploy
+  - tests
+  - docker
+  - smoke
+  - all
+- Drift detection implementado:
+  - productVsDeploy
+  - deployVsRuntime
+  - imageStale
+  - composeStale
+- Runtime metadata implementada:
+  - runtimeHead
+  - runtimeBuildTime
+- Selector de modo agregado en UI.
+- Resumen visual de parity/runtime agregado.
+- Password protection y lock file preservados.
+
+Pendiente dentro de Sprint 38:
+- Streaming incremental live de stdout/stderr.
+- Timeline operacional live.
+- Mejor UX de logs y progreso.
 
 ## Resumen de situación
 
-El proyecto ha completado la fase de estabilización crítica (Sprint 33). El sistema se encuentra desplegado en producción (`https://cnsc.profemarlon.com`) con una suite de pruebas automatizada que valida tanto el contrato de gobernanza como la integridad del runtime.
+El proyecto completó la fase crítica de estabilización iniciada en Sprint 33 y actualmente se encuentra en una fase de endurecimiento operacional del pipeline de despliegue.
 
-**Nota sobre Sprint 22:** Se mantiene en estado `synthesized_governed_unverified` dado que el sistema no encuentra anexos oficiales suficientes para promover `source_verified`.
+La prioridad actual ya no es estabilización funcional del producto sino observabilidad, parity runtime y control operacional del proceso de release.
+
+## Estado normativo
+
+Sprint 22 se mantiene en estado `synthesized_governed_unverified` dado que el sistema todavía no cuenta con anexos oficiales suficientes para promover `source_verified`.
