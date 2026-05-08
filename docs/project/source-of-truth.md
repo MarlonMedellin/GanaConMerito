@@ -128,8 +128,11 @@ La meta operativa estable debe ser:
 - **Telegram / control UI = dirección técnica**
 
 Regla específica para banco de preguntas:
-- contenido canónico, arquitectura, roadmap y esquemas de ingestión pertenecen a producto (`master`).
-- prompts, índices operativos, trazabilidad de sesiones y contexto de agencia pertenecen a `openclaw-workspace`.
+- contenido canónico de ítems finales: `content/items/`
+- organización canónica del banco: `area -> subarea -> competency`
+- segmentación secundaria opcional por perfil docente: frontmatter del Markdown (`targetRole`, `targetPosition`, `applicantProfile`, `tags`)
+- trabajo editorial por perfil, lotes y mapas: `content/profiles/docente/`
+- prompts, índices operativos, trazabilidad de sesiones y contexto de agencia pertenecen a `openclaw-workspace`
 
 ---
 
