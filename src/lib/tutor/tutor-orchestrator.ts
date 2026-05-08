@@ -1,13 +1,13 @@
 import { TUTOR_CONTRACT_VERSION, TUTOR_INSUFFICIENT_EVIDENCE_MESSAGE, hasUserAnswered, validateTutorTurnRequest } from "../../domain/tutor/contract";
 import type { TutorIntent, TutorTurnRequest, TutorTurnResponse, TutorTurnResult, TutorTurnTrace } from "../../types/tutor-turn";
 import { evaluateTutorGuardrails } from "./tutor-guardrails";
-import { classifyRationale, detectTutorIntent, detectTutorMode, requestsCorrectAnswer, trimToWordLimit } from "./tutor-response-policy";
+import { classifyRationale, detectHintLevel, detectTutorIntent, detectTutorMode, requestsCorrectAnswer, trimToWordLimit } from "./tutor-response-policy";
 
 export class TutorOrchestrator {
   public async processTurn(input: TutorTurnRequest): Promise<TutorTurnResult> {
     const traceId = crypto.randomUUID();
     const createdAt = new Date().toISOString();
-    const mode = detectTutorMode(input.message);
+    const mode = detectTutorMode(input.message, hasUserAnswered(input.evidence));
     const intent = detectTutorIntent(input.message);
 
     if (!validateTutorTurnRequest(input)) {
@@ -90,33 +90,38 @@ export class TutorOrchestrator {
     }
 
     if (intent === "give_hint") {
-      return trimToWordLimit(
-        `Pista: enfócate en la competencia "${question.competency}". Antes de elegir, separa el caso del enunciado de las opciones. La mejor alternativa debe resolver la tarea esperada: ${question.expectedUserTask}`,
-        maxWords,
-      );
+      const level = detectHintLevel(input.message);
+      const ladder = {
+        1: `Pista nivel 1: identifica exactamente qué tarea exige el caso (${question.expectedUserTask}) y evita decidir por intuición.`,
+        2: `Pista nivel 2: conecta la competencia "${question.competency}" con señales del caso y descarta opciones que no cumplan esa tarea.`,
+        3: `Pista nivel 3: usa el razonamiento normativo (${question.normativeReasoning ?? "aplica criterio de coherencia técnica"}) y compara por qué una opción se sostiene mejor que los distractores, sin buscar letra.`
+      } as const;
+      return trimToWordLimit(ladder[level], maxWords);
     }
 
     if (intent === "compare_options") {
       const options = question.options.map((option) => `${option.key}: revisa si responde directamente al enunciado`).join(" ");
-      const suffix = canRevealCorrectAnswer ? ` La clave registrada es ${question.correctOption}: ${question.correctExplanation}` : " Aún no diré cuál es correcta.";
+      const suffix = " Prioriza justificar por qué una opción satisface mejor la tarea esperada, sin enfocarte en letra.";
       return trimToWordLimit(`${options}.${suffix}`, maxWords);
     }
 
     if (intent === "analyze_user_rationale" && session.userRationale && rationaleQuality) {
+      const misconception = question.misconceptionMap?.find((entry) => session.userRationale?.toLowerCase().includes(entry.pattern.toLowerCase()));
+      const misconceptionLine = misconception ? ` Posible misconception detectada: ${misconception.feedback}` : "";
       const labels = {
         weak: "débil: necesita conectar mejor la opción con el enunciado.",
         acceptable: "aceptable: presenta una razón útil, pero puede contrastar distractores.",
         strong: "fuerte: justifica y contrasta con claridad.",
       };
       return trimToWordLimit(
-        `Tu justificación es ${labels[rationaleQuality]} Esta valoración es pedagógica y no cambia el puntaje oficial. ${session.feedback ? `Feedback registrado: ${session.feedback}` : ""} ${canRevealCorrectAnswer ? `La clave registrada es ${question.correctOption} y los distractores deben descartarse porque no sostienen tan bien la tarea esperada.` : ""}`,
+        `Tu justificación es ${labels[rationaleQuality]} Esta valoración es pedagógica y no cambia el puntaje oficial. ${session.feedback ? `Feedback registrado: ${session.feedback}` : ""} ${canRevealCorrectAnswer ? `Usa la justificación canónica (${question.canonicalRationale ?? question.correctExplanation}) para revisar por qué tu razonamiento mejora, sin centrarte en letra.` : ""}${misconceptionLine}`,
         maxWords,
       );
     }
 
     if (intent === "explain_feedback" && canRevealCorrectAnswer) {
       return trimToWordLimit(
-        `La opción correcta registrada es ${question.correctOption}. ${question.correctExplanation} ${session.feedback ? `Feedback oficial registrado: ${session.feedback}` : ""} Si marcaste ${session.selectedOption}, revisa por qué esa elección quedó bien o mal frente al enunciado. Los distractores deben leerse como alternativas que no satisfacen completamente la tarea esperada. Esta explicación es pedagógica y no cambia el puntaje oficial ni avanza la sesión.`,
+        `${session.feedback ? `Feedback oficial registrado: ${session.feedback}.` : ""} Revisa por qué tu elección (${session.selectedOption ?? "sin opción registrada"}) se alinea o no con la tarea esperada. Contrasta distractores con el razonamiento canónico: ${question.canonicalRationale ?? question.correctExplanation}. Esta explicación es pedagógica y no cambia el puntaje oficial ni avanza la sesión.`,
         maxWords,
       );
     }
@@ -144,7 +149,7 @@ export class TutorOrchestrator {
     }
 
     const answerLine = hasUserAnswered(input.evidence)
-      ? `La clave registrada es ${question.correctOption}: ${question.correctExplanation}`
+      ? `Ya respondiste: analiza tu decisión con el razonamiento canónico (${question.canonicalRationale ?? question.correctExplanation}).`
       : "No revelo la clave antes de que respondas.";
     return trimToWordLimit(
       `La pregunta evalúa ${question.competency} en ${question.area}. Tu tarea es: ${question.expectedUserTask} ${answerLine}`,

@@ -124,3 +124,11 @@ last_reviewed: 2026-05-06
 
 ## Historial previo
 El historial anterior completo se conserva en Git. Este archivo mantiene la vista ejecutiva de cambios recientes y canonicos para operacion de agentes.
+
+## 2026-05-08
+- tipo: feat+tutor+qa
+- modulo: tutor/pedagogy/guardrails
+- resumen: Sprint 36 inicia con ladder de pistas (niveles 1-3), modos explicitos de tutoria, feedback por misconceptionMap y razonamiento canonico/normativo, con pruebas negativas para evitar fugas de respuesta.
+- sprint: Sprint 36 — Tutor hint ladder and misconception feedback
+- agente: PM-Dev (Codex)
+- relacionados: src/lib/tutor/tutor-orchestrator.ts, src/lib/tutor/tutor-response-policy.ts, src/lib/tutor/tutor.test.ts, src/types/tutor-turn.ts

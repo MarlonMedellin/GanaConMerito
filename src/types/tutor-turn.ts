@@ -1,4 +1,4 @@
-export type TutorMode = "current_question" | "contest_preparation" | "performance_analysis";
+export type TutorMode = "current_question" | "contest_preparation" | "performance_analysis" | "pre_answer" | "hint_mode" | "post_answer_feedback" | "review_mode";
 
 export type TutorIntent =
   | "explain_question"
@@ -59,6 +59,11 @@ export interface QuestionTruthOption {
   isCorrect?: boolean;
 }
 
+export interface MisconceptionHint {
+  pattern: string;
+  feedback: string;
+}
+
 export interface QuestionTruth {
   itemId: string;
   area: string;
@@ -72,6 +77,9 @@ export interface QuestionTruth {
   options: QuestionTruthOption[];
   correctOption: string;
   correctExplanation: string;
+  canonicalRationale?: string;
+  normativeReasoning?: string;
+  misconceptionMap?: MisconceptionHint[];
   evaluatesCompetency?: boolean;
   userExpectedAnswer?: string;
   normativeAlignmentSummary?: string;

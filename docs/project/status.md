@@ -142,3 +142,5 @@ El estado Sprint 34 se considerara listo para avanzar cuando:
 - La fuente normativa sigue en `synthesized_governed_unverified`.
 - El frente normativo del tutor no puede declararse cerrado mientras no existan anexos oficiales trazables en repo.
 - El bypass de onboarding QA sigue siendo workaround controlado, no flujo estandar.
+
+- Sprint 36 en curso: mejora pedagógica del Tutor GCM (hint ladder, misconception feedback y modos explícitos) sin revelar respuesta correcta ni tocar scoring/avance.
