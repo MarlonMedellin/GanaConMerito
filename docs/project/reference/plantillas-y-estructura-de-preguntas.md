@@ -76,6 +76,13 @@ Cada pregunta en el proyecto debe seguir el modelo editorial actual del sistema.
 - `published`
 - `version`
 
+## Campos secundarios opcionales
+
+- `targetRole`
+- `targetPosition`
+- `applicantProfile`
+- `tags`
+
 ## Secciones mínimas del cuerpo
 
 - `Enunciado`
@@ -247,7 +254,77 @@ targetLevel: avanzado
 
 ---
 
-## 3.10 `itemType`
+## 3.10 `targetRole`
+### Qué es
+Rol macro o familia general de la población objetivo.
+
+### Regla
+Usarlo solo cuando añada valor de segmentación.
+
+### Ejemplo
+```yaml
+targetRole: docente
+```
+
+---
+
+## 3.11 `targetPosition`
+### Qué es
+Cargo o perfil principal al que se orienta el ítem.
+
+### Regla
+Usarlo solo cuando el ítem tenga una pertinencia clara para un perfil específico.
+
+### Valores recomendados para esta línea del banco
+- `rector_director_rural`
+- `coordinador`
+- `docente_aula_preescolar`
+- `docente_aula_basica_primaria`
+- `docente_aula_secundaria_media`
+- `docente_orientador`
+
+### Ejemplo
+```yaml
+targetPosition: coordinador
+```
+
+---
+
+## 3.12 `applicantProfile`
+### Qué es
+Agrupador editorial más amplio para reunir varios cargos afines.
+
+### Valores recomendados
+- `directivo_docente`
+- `docente_de_aula`
+- `docente_orientador`
+
+### Ejemplo
+```yaml
+applicantProfile: directivo_docente
+```
+
+---
+
+## 3.13 `tags`
+### Qué es
+Lista de etiquetas opcionales para afinidades secundarias o filtros livianos.
+
+### Regla
+- usar pocas
+- mantener vocabulario controlado
+- no reemplazar `area`, `subarea` ni `competency`
+
+### Ejemplo
+```yaml
+tags:
+  - perfil:coordinador
+  - foco:seguimiento_academico
+```
+
+---
+
+## 3.14 `itemType`
 ### Qué es
 Tipo de pregunta.
 
@@ -262,7 +339,7 @@ itemType: multiple_choice
 
 ---
 
-## 3.11 `normativeRefs`
+## 3.15 `normativeRefs`
 ### Qué es
 Lista de referencias normativas asociadas al ítem.
 
@@ -280,7 +357,7 @@ normativeRefs:
 
 ---
 
-## 3.12 `published`
+## 3.16 `published`
 ### Qué es
 Indica si el ítem está publicado para uso efectivo.
 
@@ -294,7 +371,7 @@ published: true
 
 ---
 
-## 3.13 `version`
+## 3.17 `version`
 ### Qué es
 Versión editorial del ítem.
 
@@ -395,6 +472,11 @@ examType: docente
 competency: competencia_especifica
 difficulty: 0.45
 targetLevel: intermedio
+targetRole: docente
+targetPosition: coordinador
+applicantProfile: directivo_docente
+tags:
+  - perfil:coordinador
 itemType: multiple_choice
 normativeRefs: []
 published: true
@@ -562,9 +644,13 @@ Porque:
 ## Eje 3 — actual del sistema
 - examType
 
-## Eje 4 — futuro opcional
-- cargo
-- aspirante
+## Eje 4 — opcional
+- `targetRole`
+- `targetPosition`
+- `applicantProfile`
+- `tags`
+
+## Eje 5 — futuro opcional
 - convocatoria
 - entidad
 - contexto territorial
@@ -591,6 +677,7 @@ Porque:
 - redacción clara
 - sin ambigüedad innecesaria
 - referencia normativa si aplica
+- metadatos secundarios solo cuando agregan valor real
 
 ---
 
@@ -609,10 +696,11 @@ Organiza las preguntas así:
 - por **nivel objetivo**
 - por **tipo de examen**
 
+### Tercera capa opcional
+- por **perfil docente** usando metadatos secundarios
+
 ### Futuro
 Agrega luego filtros por:
-- cargo
-- aspirante
 - convocatoria
 - entidad
 
