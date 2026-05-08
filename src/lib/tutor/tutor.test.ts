@@ -45,6 +45,9 @@ const baseEvidence: TutorEvidence = {
     ],
     correctOption: "B",
     correctExplanation: "B responde mejor al propósito formativo.",
+    canonicalRationale: "La alternativa válida conecta evidencia del caso con la tarea esperada y descarta respuestas sancionatorias.",
+    normativeReasoning: "Aplicar proporcionalidad pedagógica y pertinencia frente al propósito evaluado.",
+    misconceptionMap: [{ pattern: "sancion", feedback: "Confundes evaluación formativa con castigo; vuelve al propósito de mejora." }],
   },
   userSession: {
     sessionId: "session-1",
@@ -107,9 +110,9 @@ test("TutorOrchestrator can explain correct option after user answers", async ()
   );
 
   assert.strictEqual(result.output.canRevealCorrectAnswer, true);
-  assert.match(result.output.visibleMessage, /opción correcta registrada es B/i);
+  assert.doesNotMatch(result.output.visibleMessage, /opción correcta registrada|clave registrada|B/i);
   assert.match(result.output.visibleMessage, /feedback oficial registrado/i);
-  assert.match(result.output.visibleMessage, /distractores/i);
+  assert.match(result.output.visibleMessage, /razonamiento canónico|razonamiento canonico/i);
   assert.strictEqual(result.trace.canRevealCorrectAnswer, true);
 });
 
@@ -128,7 +131,7 @@ test("TutorOrchestrator classifies user rationale without scoring", async () => 
 
   assert.strictEqual(result.output.rationaleQuality, "strong");
   assert.match(result.output.visibleMessage, /no cambia el puntaje oficial/i);
-  assert.match(result.output.visibleMessage, /distractores/i);
+  assert.match(result.output.visibleMessage, /justificación canónica|justificacion canonica/i);
   assert.ok(result.output.guardrailsApplied.includes("no_score_mutation"));
 });
 
@@ -245,4 +248,25 @@ test("selectAnsweredTurnForItem ignores a newer unanswered turn for the same ite
 
   assert.strictEqual(turn?.id, "turn-2");
   assert.strictEqual(turn?.selected_option, "B");
+});
+
+
+test("TutorOrchestrator builds progressive hint ladder levels without answer leakage", async () => {
+  const t = new TutorOrchestrator();
+  const h1 = await t.processTurn(makeInput("Dame una pista"));
+  const h2 = await t.processTurn(makeInput("Dame una pista nivel 2"));
+  const h3 = await t.processTurn(makeInput("Dame una pista nivel 3"));
+  assert.match(h1.output.visibleMessage, /nivel 1/i);
+  assert.match(h2.output.visibleMessage, /nivel 2/i);
+  assert.match(h3.output.visibleMessage, /nivel 3/i);
+  assert.doesNotMatch(`${h1.output.visibleMessage} ${h2.output.visibleMessage} ${h3.output.visibleMessage}`, /clave registrada|respuesta correcta|B/i);
+});
+
+test("TutorOrchestrator gives misconception feedback from misconceptionMap", async () => {
+  const result = await new TutorOrchestrator().processTurn(makeInput("Analiza mi justificación", {
+    ...baseEvidence,
+    userSession: { ...baseEvidence.userSession, selectedOption: "A", userRationale: "Creo que debe sancionar para corregir" },
+  }));
+  assert.match(result.output.visibleMessage, /misconception detectada/i);
+  assert.match(result.output.visibleMessage, /formativa con castigo/i);
 });

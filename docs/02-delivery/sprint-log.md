@@ -409,3 +409,11 @@ last_reviewed: 2026-05-07
 ### Sprint 1 - Gobernanza minima y baseline operable del producto
 - **Estado**: CERRADO
 - **Resultado**: baseline inicial de practica/dashboard/sesiones, QA semantica y banco de preguntas operativo inicial documentado.
+
+
+## Sprint activo — Sprint 36: Tutor hint ladder and misconception feedback
+- **Estado**: EN CURSO
+- **Fecha de apertura**: 2026-05-08
+- **Rama de trabajo**: `sprint-36-tutor-hint-ladder-misconception-feedback`
+- **Objetivo**: mejorar calidad pedagógica del tutor con pistas progresivas y feedback estructurado sin revelar respuestas correctas.
+- **Validaciones iniciales**: contrato TutorSupportContract/guardrails/fallback de Sprint 35 y no regresión básica en pruebas de tutor.
