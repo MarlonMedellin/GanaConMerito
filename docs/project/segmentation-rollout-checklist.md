@@ -3,6 +3,17 @@
 ## Objetivo
 Aplicar y validar la segmentación por perfil profesional + núcleos temáticos sin romper el flujo actual de práctica.
 
+## Nota de coherencia editorial
+Esta checklist describe una capa de segmentación de base de datos y runtime.
+
+No reemplaza la arquitectura editorial vigente del banco, que sigue esta regla:
+- `content/items/` = ítems finales canónicos
+- organización primaria del banco = `area -> subarea -> competency`
+- `content/profiles/docente/` = capa secundaria de trabajo editorial por perfil
+- metadatos como `targetRole`, `targetPosition` y `applicantProfile` = segmentación editorial secundaria opcional en Markdown
+
+La capa de segmentación operacional no debe reinterpretarse como una orden para reorganizar carpetas principales por cargo.
+
 ## Alcance de este rollout
 - `0006_profiles_nuclei_editorial_base.sql`
 - `0007_backfill_profiles_nuclei.sql`
@@ -150,6 +161,11 @@ where status = 'published'
   and is_active = true;
 ```
 
+### 6.3 Recordatorio de coherencia con el sistema editorial
+- [ ] Confirmar que el rollout de segmentación no introdujo carpetas principales por cargo en `content/items/`
+- [ ] Confirmar que la taxonomía base `area`, `subarea`, `competency` sigue siendo el eje editorial primario
+- [ ] Confirmar que la segunda capa por perfil sigue siendo opcional y gobernada
+
 ---
 
 ## 7. Validación de aplicación
@@ -229,6 +245,7 @@ La Épica 1 se considera validada si:
 - [ ] `/practice` inicia sesión correctamente
 - [ ] `start` y `advance` usan la nueva selección sin fallos
 - [ ] no aparecen errores 500 por incompatibilidad de esquema
+- [ ] no se rompió la coherencia entre segmentación operacional y estructura editorial del banco
 
 ---
 
@@ -238,6 +255,7 @@ La Épica 1 se considera validada si:
 - [ ] no asumir que `legacy-general` es clasificación final
 - [ ] no endurecer toda la lógica de elegibilidad en RLS sin evidencia de necesidad
 - [ ] no eliminar `is_published` hasta cerrar la transición de queries críticas
+- [ ] no usar esta checklist como justificación para convertir el banco en carpetas primarias por perfil
 
 ---
 
@@ -246,3 +264,4 @@ La Épica 1 se considera validada si:
 1. ajustar onboarding para `learning_profiles.professional_profile_id`
 2. definir reclasificación progresiva del banco desde `legacy-general`
 3. luego avanzar a biblioteca editorial y admin
+4. decidir si parte de esta segmentación debe leer también los metadatos editoriales secundarios del Markdown
