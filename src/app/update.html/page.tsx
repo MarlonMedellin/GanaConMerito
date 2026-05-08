@@ -22,6 +22,8 @@ type StepResult = {
   commands: CommandResult[];
 };
 
+type UpdateAction = "product" | "deploy" | "tests" | "docker" | "smoke" | "all";
+
 type UpdateReport = {
   ok: boolean;
   startedAt: string;
@@ -38,6 +40,9 @@ type UpdateReport = {
   productHeadAfter?: string | null;
   deployHeadBefore?: string | null;
   deployHeadAfter?: string | null;
+  runtimeHead?: string | null;
+  runtimeBuildTime?: string | null;
+  drift: { productVsDeploy: boolean; deployVsRuntime: boolean; imageStale: boolean; composeStale: boolean };
   testsExecuted: string[];
   steps: StepResult[];
   error?: string;
@@ -48,6 +53,7 @@ export default function UpdatePage() {
   const [running, setRunning] = useState(false);
   const [report, setReport] = useState<UpdateReport | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [action, setAction] = useState<UpdateAction>("all");
 
   const statusText = useMemo(() => {
     if (running) return "Ejecutando actualización...";
@@ -67,7 +73,7 @@ export default function UpdatePage() {
         headers: {
           "content-type": "application/json",
         },
-        body: JSON.stringify({ password }),
+        body: JSON.stringify({ password, action }),
       });
 
       const payload = (await response.json()) as UpdateReport | { error: string };
@@ -108,6 +114,9 @@ export default function UpdatePage() {
             Contraseña
           </label>
           <div style={styles.controls}>
+            <select value={action} onChange={(event) => setAction(event.target.value as UpdateAction)} style={styles.select} disabled={running}>
+              <option value="all">Pipeline completo</option><option value="product">Solo product</option><option value="deploy">Solo deploy</option><option value="tests">Solo tests</option><option value="docker">Solo docker</option><option value="smoke">Solo smoke</option>
+            </select>
             <input
               id="password"
               type="password"
@@ -135,6 +144,8 @@ export default function UpdatePage() {
               <SummaryItem label="Duración" value={`${Math.round(report.durationMs / 1000)} s`} />
               <SummaryItem label="Product HEAD" value={report.productHeadAfter ?? "n/d"} />
               <SummaryItem label="Deploy HEAD" value={report.deployHeadAfter ?? "n/d"} />
+              <SummaryItem label="Runtime HEAD" value={report.runtimeHead ?? "n/d"} />
+              <SummaryItem label="Runtime BuildTime" value={report.runtimeBuildTime ?? "n/d"} />
             </div>
 
             <div style={styles.block}>
@@ -180,7 +191,7 @@ export default function UpdatePage() {
               </div>
             </div>
 
-            {report.error ? (
+            <div style={styles.block}><h2 style={styles.blockTitle}>Drift</h2><ul style={styles.list}><li>product != deploy: {String(report.drift.productVsDeploy)}</li><li>deploy != runtime: {String(report.drift.deployVsRuntime)}</li><li>image stale: {String(report.drift.imageStale)}</li><li>compose stale: {String(report.drift.composeStale)}</li></ul></div>{report.error ? (
               <div style={styles.block}>
                 <h2 style={styles.blockTitle}>Error final</h2>
                 <pre style={styles.pre}>{report.error}</pre>
@@ -278,6 +289,7 @@ const styles: Record<string, CSSProperties> = {
     gap: "12px",
     flexWrap: "wrap",
   },
+  select: { minHeight: "48px", borderRadius: "8px", border: "1px solid #b9aa84", padding: "0 10px", background: "#fffdf8" },
   input: {
     flex: "1 1 320px",
     minHeight: "48px",
