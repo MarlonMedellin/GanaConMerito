@@ -5,8 +5,13 @@ project: ganaconmerito
 owner: marlon-arcila
 status: active
 artifact_type: project
+modules: [question-bank, editorial]
 tags: [corpus, question-bank, runtime, activation]
-last_reviewed: 2026-05-02
+related:
+  - docs/05-ops/question-bank-load-runbook.md
+  - docs/database/content-model.md
+  - docs/project/reference/estructura-hibrida-taxonomia-perfiles-docente.md
+last_reviewed: 2026-05-08
 ---
 
 # Current Corpus Runtime Activation Map
@@ -18,6 +23,7 @@ Este documento sirve como la verdad estática y auditable del banco de preguntas
 - **Estado de validación**: VERDE (validado el 2026-05-02)
 - **Fuente de verdad en repo**: `content/items/`
 - **Fuente de verdad en runtime**: `public.v_item_bank_active` (Supabase)
+- **Regla estructural**: el listado activo sigue una base taxonómica por área; los metadatos de perfil docente, si existen, son una segunda capa editorial y no alteran esta lista de activación.
 
 ## Listado de ítems activados
 
@@ -64,3 +70,4 @@ Este documento sirve como la verdad estática y auditable del banco de preguntas
 - **Reentrada**: Para que un ítem nuevo entre a esta lista, debe ser validado con `npm run content:validate` y cargado a Supabase.
 - **Exclusión**: Los ítems no listados aquí se consideran `legacy` o `inactive` y no deben ser servidos por la vista `v_item_bank_active`.
 - **Trazabilidad**: Cada release debe incluir una verificación de que el `activeCount` en base de datos coincide con los 27 ítems aquí listados.
+- **Estructura editorial**: La activación en runtime sigue leyendo archivos finales desde `content/items/`; `content/profiles/docente/` no es una lista paralela de activación.
