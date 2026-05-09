@@ -86,3 +86,5 @@ Este sprint se centró en la estabilización de la infraestructura, alineación 
 ## Sprint cerrado — Sprint 22: Tutor GCM Normative Source Verification
 - Estado: CERRADO CON PASS CON WARN
 - Resultado: El tutor cumple los guardrails pedagógicos, pero se requiere seguimiento sobre la veracidad de fuentes normativas.
+
+- 2026-05-09: Sprint 40 activado. Tutor GCM ahora consume metadata rica de ítems (taxonomía, perfiles, metadatos psicométricos) con fallback legacy compatible.
