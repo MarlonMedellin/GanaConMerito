@@ -45,12 +45,14 @@ export function getNormativeSourceTruthRefs(): string[] { return SOURCE_REFS; }
 export function buildTutorSupportContract(question?: QuestionTruth): TutorSupportContract | undefined {
   if (!question) return undefined;
   const topicDetail = [question.area, question.subarea, question.competency].filter(Boolean).join(" → ");
+  const affirmation = question.affirmation ? ` Afirmación evaluada: ${question.affirmation}.` : "";
+  const evidenceCue = question.evidenceStatement ? ` Evidencia esperada: ${question.evidenceStatement}.` : "";
   const contextHint = question.context ? ` Contexto de ítem: ${question.context}.` : "";
   const levelHint = [question.difficulty, question.cognitiveLevel].filter(Boolean).join(" / ");
-  const riskFlags = question.technicalRisks ?? [];
+  const riskFlags = Array.isArray(question.technicalRisks) ? question.technicalRisks : (question.technicalRisks?.notes ?? []);
 
   return {
-    instructionalGoal: `Fortalecer ${topicDetail || question.competency} sin revelar la clave antes de la respuesta del usuario.${contextHint}`,
+    instructionalGoal: `Fortalecer ${topicDetail || question.competency} sin revelar la clave antes de la respuesta del usuario.${contextHint}${affirmation}${evidenceCue}`,
     canonicalRationale: question.canonicalRationale ?? question.correctExplanation,
     misconceptionMap: [
       ...(question.misconceptionMap ?? []).map((entry) => ({ misconception: entry.feedback, safeRedirect: "Revisa el enunciado, la competencia y la tarea esperada antes de decidir.", pattern: entry.pattern })),
@@ -61,7 +63,7 @@ export function buildTutorSupportContract(question?: QuestionTruth): TutorSuppor
     hintLadder: [
       { level: 1, hint: `Ubica qué pide exactamente la tarea esperada: ${question.expectedUserTask}` },
       { level: 2, hint: `Contrasta señales del caso contra ${question.subarea ?? question.competency} antes de mirar la letra.` },
-      { level: 3, hint: `Justifica tu elección con una razón y una alternativa descartada${levelHint ? ` (nivel ${levelHint})` : ""}, sin pedir la clave.` },
+      { level: 3, hint: `Justifica tu elección con una razón y una alternativa descartada${levelHint ? ` (nivel ${levelHint})` : ""}, sin pedir la clave${question.targetPosition ? ` y considerando el rol ${question.targetPosition}` : ""}.` },
     ],
     normativeReasoning: question.normativeReasoning ?? question.evidenceStatement ?? question.normativeAlignmentSummary ?? "Usa la fuente normativa sintetizada solo como orientación general y degrada si falta evidencia específica.",
     responsePolicy: { noRevealCorrectAnswer: true, noRevealCorrectLetter: true, noOptionEliminationByDiscard: true, noVerbatimCorrectOptionQuote: true, noScoring: true, noAttemptStateMutation: true },

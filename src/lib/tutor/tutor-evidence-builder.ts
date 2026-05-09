@@ -136,43 +136,13 @@ export async function buildTutorEvidence(params: {
   const contest = buildContestTruthV1();
   const aspirationalProfile = buildAspirationalProfileTruthV1(professionalProfile);
   const question = item
-    ? enrichQuestionTruthWithNormativeSource({
-        itemId: item.id,
-        area: item.area ?? "general",
-        competency: item.competency ?? "competencia no especificada",
-        topic: [item.area, item.subarea, item.competency].filter(Boolean).join(" - ") || "tema no especificado",
-        cognitiveIntent: "Identificar la opción que mejor responde al caso según el enunciado y la competencia evaluada.",
-        expectedUserTask: "Leer el enunciado, contrastar opciones y seleccionar la alternativa más consistente.",
-        sourceType: item.source_type ?? "runtime_item_bank",
-        sourceRefs: item.source_path ? [item.source_path] : [`item_bank:${item.id}`],
-        stem: item.stem ?? "",
-        options: options
-          .filter((option) => option.option_key && option.option_text)
-          .map((option) => ({
-            key: option.option_key as string,
-            text: option.option_text as string,
-            rationale: buildOptionRationale(option.option_key as string, item.correct_option),
-            isCorrect: currentTurn?.selected_option ? option.option_key === item.correct_option : undefined,
-          })),
-        correctOption: item.correct_option ?? "",
-        correctExplanation: item.explanation ?? "",
-        subarea: item.subarea ?? undefined,
-        affirmation: item.afirmacion ?? undefined,
-        evidenceStatement: item.evidencia ?? undefined,
-        educationalLevel: item.nivel_educativo ?? undefined,
-        difficulty: item.dificultad ?? undefined,
-        cognitiveLevel: item.nivel_cognitivo ?? undefined,
-        itemType: item.tipo_item ?? undefined,
-        context: item.contexto ?? undefined,
-        distractorRationales: item.justificacion_distractores ?? undefined,
-        technicalRisks: normalizeTechnicalRisks(item.riesgos_tecnicos),
-        editorialStatus: item.estado ?? undefined,
-        version: item.version ?? undefined,
-        targetRole: item.target_role ?? undefined,
-        targetPosition: item.target_position ?? undefined,
-        applicantProfile: item.applicant_profile ?? undefined,
-        tags: item.tags ?? undefined,
-      })
+    ? enrichQuestionTruthWithNormativeSource(
+        mapItemRecordToQuestionTruth({
+          item,
+          options,
+          selectedOption: currentTurn?.selected_option,
+        }),
+      )
     : undefined;
 
   return {
@@ -240,4 +210,50 @@ function normalizeTechnicalRisks(risks: TutorItemRecord["riesgos_tecnicos"]): st
   if (Array.isArray(risks)) return risks.filter(Boolean);
   if (typeof risks === "string") return [risks];
   return undefined;
+}
+
+
+export function mapItemRecordToQuestionTruth(params: {
+  item: TutorItemRecord;
+  options: TutorOptionRecord[];
+  selectedOption?: string | null;
+}) {
+  const { item, options, selectedOption } = params;
+  return {
+    itemId: item.id,
+    area: item.area ?? "general",
+    competency: item.competency ?? "competencia no especificada",
+    topic: [item.area, item.subarea, item.competency].filter(Boolean).join(" - ") || "tema no especificado",
+    cognitiveIntent: "Identificar la opción que mejor responde al caso según el enunciado y la competencia evaluada.",
+    expectedUserTask: "Leer el enunciado, contrastar opciones y seleccionar la alternativa más consistente.",
+    sourceType: item.source_type ?? "runtime_item_bank",
+    sourceRefs: item.source_path ? [item.source_path] : [`item_bank:${item.id}`],
+    stem: item.stem ?? "",
+    options: options
+      .filter((option) => option.option_key && option.option_text)
+      .map((option) => ({
+        key: option.option_key as string,
+        text: option.option_text as string,
+        rationale: buildOptionRationale(option.option_key as string, item.correct_option),
+        isCorrect: selectedOption ? option.option_key === item.correct_option : undefined,
+      })),
+    correctOption: item.correct_option ?? "",
+    correctExplanation: item.explanation ?? "",
+    subarea: item.subarea ?? undefined,
+    affirmation: item.afirmacion ?? undefined,
+    evidenceStatement: item.evidencia ?? undefined,
+    educationalLevel: item.nivel_educativo ?? undefined,
+    difficulty: item.dificultad ?? undefined,
+    cognitiveLevel: item.nivel_cognitivo ?? undefined,
+    itemType: item.tipo_item ?? undefined,
+    context: item.contexto ?? undefined,
+    distractorRationales: item.justificacion_distractores ?? undefined,
+    technicalRisks: normalizeTechnicalRisks(item.riesgos_tecnicos),
+    editorialStatus: item.estado ?? undefined,
+    version: item.version ?? undefined,
+    targetRole: item.target_role ?? undefined,
+    targetPosition: item.target_position ?? undefined,
+    applicantProfile: item.applicant_profile ?? undefined,
+    tags: item.tags ?? undefined,
+  };
 }

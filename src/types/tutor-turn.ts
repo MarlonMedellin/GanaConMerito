@@ -1,3 +1,5 @@
+import type { ItemDifficulty, EditorialStatus, TargetPosition, TechnicalRiskMetadata } from "./item-taxonomy";
+
 export type TutorMode =
   | "current_question"
   | "contest_preparation"
@@ -88,16 +90,16 @@ export interface QuestionTruth {
   affirmation?: string;
   evidenceStatement?: string;
   educationalLevel?: string;
-  difficulty?: string;
+  difficulty?: ItemDifficulty | string;
   cognitiveLevel?: string;
   itemType?: string;
   context?: string;
   distractorRationales?: Record<string, string>;
-  technicalRisks?: string[];
-  editorialStatus?: string;
+  technicalRisks?: string[] | TechnicalRiskMetadata;
+  editorialStatus?: EditorialStatus | string;
   version?: string;
   targetRole?: string;
-  targetPosition?: string;
+  targetPosition?: TargetPosition | string;
   applicantProfile?: string;
   tags?: string[];
   canonicalRationale?: string;

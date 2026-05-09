@@ -11,15 +11,15 @@ async function assertRepoFileExists(relativePath: string) {
   await access(resolve(process.cwd(), relativePath));
 }
 
-test("Sprint governance reflects closed Sprint 33 baseline and active Sprint 38 prep", async () => {
+test("Sprint governance reflects closed Sprint 33 baseline and active Sprint 40 tutor taxonomy prep", async () => {
   const sprintLog = await readRepoFile("docs/02-delivery/sprint-log.md");
   const status = await readRepoFile("docs/project/status.md");
 
-  assert.match(status, /## Sprint 38 — activo/i);
+  assert.match(status, /## Sprint 40 — activo/i);
   assert.match(sprintLog, /Sprint cerrado — Sprint 36: Tutor Hint Ladder, Misconception Feedback and Safe Modes/i);
   assert.match(sprintLog, /Sprint cerrado — Sprint 35: Tutor Support Contract Safe Evidence/i);
 
-  assert.match(status, /\*\*Sprint actual:\*\*\s*Sprint 38 — Update Runtime Parity and Progressive Pipeline/i);
+  assert.match(status, /\*\*Sprint actual:\*\*\s*Sprint 40 — Tutor Taxonomy-Aware Item Evidence/i);
   assert.match(status, /Runtime publico\/VPS de Sprint 35-37\.1 validado en la misma corrida operacional/i);
   assert.match(status, /\*\*Sprint anterior cerrado:\*\*\s*Sprint 37\.1 — Runtime Parity & Operational Verification/i);
 
