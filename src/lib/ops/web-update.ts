@@ -38,10 +38,28 @@ export interface UpdateReport {
   productHeadAfter?: string | null;
   deployHeadBefore?: string | null;
   deployHeadAfter?: string | null;
+  runtimeHead?: string | null;
+  runtimeBuildTime?: string | null;
+  drift: {
+    productVsDeploy: boolean;
+    deployVsRuntime: boolean;
+    imageStale: boolean;
+    composeStale: boolean;
+  };
   testsExecuted: string[];
   steps: StepResult[];
   error?: string;
 }
+
+export const UPDATE_ACTIONS = ["product", "deploy", "tests", "docker", "smoke", "all"] as const;
+export type UpdateAction = (typeof UPDATE_ACTIONS)[number];
+export type UpdateEvent =
+  | { type: "stage-start"; stageId: string; title: string; startedAt: string }
+  | { type: "command-start"; stageId: string; command: string; cwd: string; startedAt: string }
+  | { type: "command-output"; stageId: string; stream: "stdout" | "stderr"; chunk: string }
+  | { type: "command-end"; stageId: string; exitCode: number | null; durationMs: number }
+  | { type: "stage-end"; stageId: string; ok: boolean; summary: string; finishedAt: string }
+  | { type: "report"; report: UpdateReport };
 
 type CommandOptions = { cwd?: string; env?: Record<string, string> };
 type StepWorkResult = { summary: string; commands: CommandResult[]; details?: Record<string, unknown> };
@@ -66,7 +84,7 @@ const POSTDEPLOY_TESTS = [
   "QA_BASE_URL=http://127.0.0.1:3000 npm run qa:e2e:ui",
 ] as const;
 
-export async function runWebUpdate(): Promise<UpdateReport> {
+export async function runWebUpdate(action: UpdateAction = "all", onEvent?: (event: UpdateEvent) => void): Promise<UpdateReport> {
   const requestedAt = nowIso();
   const startedTimestamp = Date.now();
   const startedAt = nowIso();
@@ -87,6 +105,7 @@ export async function runWebUpdate(): Promise<UpdateReport> {
     composeFile: CONFIG.composeFile,
     runtimeBaseUrl: CONFIG.runtimeBaseUrl,
     testsExecuted,
+    drift: { productVsDeploy: false, deployVsRuntime: false, imageStale: false, composeStale: false },
     steps,
   };
 
@@ -108,9 +127,15 @@ export async function runWebUpdate(): Promise<UpdateReport> {
       };
     }));
 
+    const runProduct = action === "all" || action === "product";
+    const runDeploy = action === "all" || action === "deploy";
+    const runTests = action === "all" || action === "tests";
+    const runDocker = action === "all" || action === "docker";
+    const runSmoke = action === "all" || action === "smoke";
+
     const productProbe = await runCommand(`git -C "${CONFIG.productDir}" rev-parse --short HEAD`);
     report.productHeadBefore = productProbe.stdout.trim() || null;
-    await pushStep(
+    if (runProduct) await pushStep(
       steps,
       await runStep("sync-product", "Sincronizar product con la fuente de verdad", async () => {
         const commands: CommandResult[] = [];
@@ -151,7 +176,7 @@ export async function runWebUpdate(): Promise<UpdateReport> {
 
     const deployProbe = await runCommand(`git -C "${CONFIG.deployDir}" rev-parse --short HEAD`);
     report.deployHeadBefore = deployProbe.stdout.trim() || null;
-    await pushStep(
+    if (runDeploy) await pushStep(
       steps,
       await runStep("sync-deploy", "Alinear árbol de deploy", async () => {
         const commands: CommandResult[] = [];
@@ -170,7 +195,7 @@ export async function runWebUpdate(): Promise<UpdateReport> {
       }),
     );
 
-    await pushStep(
+    if (runTests) await pushStep(
       steps,
       await runStep("predeploy-tests", "Ejecutar validación local no interactiva", async () => {
         const commands: CommandResult[] = [];
@@ -184,7 +209,7 @@ export async function runWebUpdate(): Promise<UpdateReport> {
       }),
     );
 
-    await pushStep(
+    if (runDocker) await pushStep(
       steps,
       await runStep("docker-deploy", "Reconstruir y recrear Docker", async () => {
         const appCommit = report.deployHeadAfter ?? report.productHeadAfter ?? "unknown";
@@ -204,7 +229,7 @@ export async function runWebUpdate(): Promise<UpdateReport> {
       }),
     );
 
-    await pushStep(
+    if (runSmoke) await pushStep(
       steps,
       await runStep("postdeploy-tests", "Correr smoke y E2E automatizadas del VPS", async () => {
         const commands: CommandResult[] = [];
@@ -217,7 +242,24 @@ export async function runWebUpdate(): Promise<UpdateReport> {
       }),
     );
 
+    const runtimeCommitProbe = await runCommand(`curl -fsS "${CONFIG.runtimeBaseUrl}/api/auth/public-config"`).catch(() => null);
+    if (runtimeCommitProbe) {
+      try {
+        const parsed = JSON.parse(runtimeCommitProbe.stdout) as Record<string, unknown>;
+        report.runtimeHead = typeof parsed.commit === "string" ? parsed.commit : null;
+        report.runtimeBuildTime = typeof parsed.buildTime === "string" ? parsed.buildTime : null;
+      } catch {
+        // noop
+      }
+    }
+    report.drift.productVsDeploy = Boolean(report.productHeadAfter && report.deployHeadAfter && report.productHeadAfter !== report.deployHeadAfter);
+    report.drift.deployVsRuntime = Boolean(report.deployHeadAfter && report.runtimeHead && !report.runtimeHead.includes(report.deployHeadAfter));
+    report.drift.imageStale = report.drift.deployVsRuntime;
+    const composeHead = await runCommand(`git -C "${CONFIG.deployDir}" log -1 --pretty=%h -- docker-compose.yml`).catch(() => null);
+    report.drift.composeStale = Boolean(composeHead && report.deployHeadAfter && !report.deployHeadAfter.includes(composeHead.stdout.trim()));
+
     report.ok = true;
+    onEvent?.({ type: "report", report });
     return report;
   } catch (error) {
     report.error = error instanceof Error ? error.message : "Falló la actualización.";
