@@ -5,12 +5,12 @@ project: ganaconmerito
 owner: marlon-arcila
 status: active
 artifact_type: project
-last_reviewed: 2026-05-08
+last_reviewed: 2026-05-09
 ---
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-05-08 — Sprint 38 (Update Runtime Parity and Progressive Pipeline).
+Ultima actualizacion: 2026-05-09 — Sprint 40 (Tutor Taxonomy-Aware Item Evidence).
 
 ## Estado general
 
@@ -18,9 +18,9 @@ Ultima actualizacion: 2026-05-08 — Sprint 38 (Update Runtime Parity and Progre
 
 **Producto:** producto activo con core operativo, Tutor GCM gobernado, dashboard con metricas prudentes y contrato de fuente normativa minima explicitamente clasificado como no oficial/verificado.
 
-**Sprint actual:** Sprint 38 — Update Runtime Parity and Progressive Pipeline.
+**Sprint actual:** Sprint 40 — Tutor Taxonomy-Aware Item Evidence.
 
-**Sprint anterior cerrado:** Sprint 37.1 — Runtime Parity & Operational Verification.
+**Sprint anterior cerrado:** Sprint 39 — Decoupled Update Runtime Worker.
 
 **Rama canonica:** `master`.
 
@@ -33,8 +33,46 @@ Ultima actualizacion: 2026-05-08 — Sprint 38 (Update Runtime Parity and Progre
 - **Árbol de deploy:** `/opt/gcm/app`.
 - **URL pública canónica:** `https://cnsc.profemarlon.com`.
 - **Consola operacional:** `https://cnsc.profemarlon.com/update.html`.
-- **Commit actual desplegado y verificado:** `3f3ccc0`.
-- **Short hash verificado:** `3f3ccc0`.
+- **Commit actual desplegado y verificado:** `07ceb1a`.
+- **Short hash verificado:** `07ceb1a`.
+
+## Sprint 39 — cerrado
+
+### Decoupled Update Runtime Worker
+
+**Estado:** CERRADO CON DESPLIEGUE EJECUTIVO REPORTADO
+
+Validaciones reportadas por operación VPS:
+- `~/.openclaw/product` sincronizado a `07ceb1a`.
+- `/opt/gcm/app` sincronizado a `07ceb1a`.
+- Docker reconstruido con `APP_COMMIT=07ceb1a` y `APP_BUILD_TIME` generado en UTC.
+- Contenedor `gcm-app` reiniciado mediante `docker compose up -d gcm-app`.
+- Aplicación reportada corriendo en producción bajo la nueva versión.
+
+Entregables de Sprint 39:
+- `/api/ops/update` desacoplado por jobs persistentes.
+- `/api/ops/update/status` disponible para polling.
+- `update.html` migrado a flujo job-based.
+- `src/lib/ops/update-jobs.ts` creado para persistencia de jobs/reportes.
+- `ops/run-update-job.sh` versionado como worker host-side de referencia.
+- Documentación de worker desacoplado creada.
+
+Riesgo residual:
+- La instalación/orquestación definitiva del worker host-side en VPS queda como mejora operativa posterior. El cierre de Sprint 39 se acepta por paridad `product/deploy`, rebuild Docker y runtime levantado sobre `07ceb1a`.
+
+## Sprint 40 — activo
+
+### Tutor Taxonomy-Aware Item Evidence
+
+Objetivo principal:
+Hacer que Tutor GCM consuma la nueva estructura rica de ítems, taxonomía, perfiles y metadatos pedagógico-psicométricos, sin romper compatibilidad con el banco actual.
+
+Foco inicial:
+- Contrato de taxonomía `area -> subarea -> competency`.
+- Capa contextual por perfiles sin duplicar ítems.
+- Tipos de item rico.
+- Extensión compatible de `QuestionTruth`.
+- Enriquecimiento de `TutorSupportContract` con afirmación, evidencia, dificultad, nivel cognitivo, distractores y riesgos técnicos.
 
 ## Sprint 37.1 — cerrado
 
@@ -59,43 +97,11 @@ Adicionalmente:
 - Runtime publico/VPS de Sprint 35-37.1 validado en la misma corrida operacional.
 - El endpoint `/update.html` quedo operativo con mounts, docker.sock y shell tools disponibles dentro de `gcm-app`.
 
-## Sprint 38 — activo
-
-### Update Runtime Parity and Progressive Pipeline
-
-Objetivo principal:
-Convertir `/update.html` en una consola operacional progresiva y observable para el VPS.
-
-Estado actual:
-- Acciones parciales implementadas:
-  - product
-  - deploy
-  - tests
-  - docker
-  - smoke
-  - all
-- Drift detection implementado:
-  - productVsDeploy
-  - deployVsRuntime
-  - imageStale
-  - composeStale
-- Runtime metadata implementada:
-  - runtimeHead
-  - runtimeBuildTime
-- Selector de modo agregado en UI.
-- Resumen visual de parity/runtime agregado.
-- Password protection y lock file preservados.
-
-Pendiente dentro de Sprint 38:
-- Streaming incremental live de stdout/stderr.
-- Timeline operacional live.
-- Mejor UX de logs y progreso.
-
 ## Resumen de situación
 
-El proyecto completó la fase crítica de estabilización iniciada en Sprint 33 y actualmente se encuentra en una fase de endurecimiento operacional del pipeline de despliegue.
+El proyecto completó la fase crítica de estabilización iniciada en Sprint 33 y actualmente retoma como prioridad el desarrollo pedagógico del Tutor GCM sobre la nueva taxonomía de ítems.
 
-La prioridad actual ya no es estabilización funcional del producto sino observabilidad, parity runtime y control operacional del proceso de release.
+La prioridad actual ya no es estabilización funcional del producto sino integración del Tutor con evidencia pedagógica, psicométrica y taxonómica más rica.
 
 ## Estado normativo
 
