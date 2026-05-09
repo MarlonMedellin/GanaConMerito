@@ -1,7 +1,7 @@
-import { createUpdateJob } from "../../../../lib/ops/update-jobs";
-import { UpdateAction, UPDATE_ACTIONS } from "../../../../lib/ops/web-update";
 import { createHash, timingSafeEqual } from "node:crypto";
 import { NextResponse } from "next/server";
+import { createUpdateJob } from "../../../../lib/ops/update-jobs";
+import { UpdateAction, UPDATE_ACTIONS } from "../../../../lib/ops/web-update";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -14,11 +14,11 @@ function isAuthorized(password: string) {
   return timingSafeEqual(Buffer.from(provided), Buffer.from(PASSWORD_SHA256));
 }
 
-function parseAction(value: unknown): UpdateAction {
+function parseAction(value: unknown): UpdateAction | null {
   if (typeof value === "string" && UPDATE_ACTIONS.includes(value as UpdateAction)) {
     return value as UpdateAction;
   }
-  return "all";
+  return null;
 }
 
 export async function POST(request: Request) {
@@ -28,7 +28,11 @@ export async function POST(request: Request) {
     const action = parseAction(body.action);
 
     if (!password || !isAuthorized(password)) {
-      return NextResponse.json({ error: "Credenciales inválidas." }, { status: 401 });
+      return NextResponse.json({ error: "Credenciales inválidas." }, { status: 401, headers: { "cache-control": "no-store" } });
+    }
+
+    if (!action) {
+      return NextResponse.json({ error: "Acción inválida." }, { status: 400, headers: { "cache-control": "no-store" } });
     }
 
     const job = await createUpdateJob(action);
@@ -39,17 +43,14 @@ export async function POST(request: Request) {
         jobId: job.jobId,
         action: job.action,
         status: job.status,
-        message: "Actualización encolada. La ejecución continúa en el worker del host VPS.",
+        message: "Actualización encolada. Revisa /api/ops/update/status para el progreso.",
       },
-      {
-        status: 202,
-        headers: { "cache-control": "no-store" },
-      },
+      { status: 202, headers: { "cache-control": "no-store" } },
     );
   } catch (error) {
     return NextResponse.json(
       { error: error instanceof Error ? error.message : "No se pudo crear el job de actualización." },
-      { status: 500 },
+      { status: 500, headers: { "cache-control": "no-store" } },
     );
   }
 }
