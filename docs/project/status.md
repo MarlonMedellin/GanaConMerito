@@ -10,7 +10,7 @@ last_reviewed: 2026-05-08
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-05-08 — Sprint 38 (Update Runtime Parity and Progressive Pipeline).
+Ultima actualizacion: 2026-05-09 — Sprint 40 (Tutor Taxonomy-Aware Item Evidence).
 
 ## Estado general
 
@@ -18,7 +18,7 @@ Ultima actualizacion: 2026-05-08 — Sprint 38 (Update Runtime Parity and Progre
 
 **Producto:** producto activo con core operativo, Tutor GCM gobernado, dashboard con metricas prudentes y contrato de fuente normativa minima explicitamente clasificado como no oficial/verificado.
 
-**Sprint actual:** Sprint 38 — Update Runtime Parity and Progressive Pipeline.
+**Sprint actual:** Sprint 40 — Tutor Taxonomy-Aware Item Evidence.
 
 **Sprint anterior cerrado:** Sprint 37.1 — Runtime Parity & Operational Verification.
 
@@ -59,7 +59,16 @@ Adicionalmente:
 - Runtime publico/VPS de Sprint 35-37.1 validado en la misma corrida operacional.
 - El endpoint `/update.html` quedo operativo con mounts, docker.sock y shell tools disponibles dentro de `gcm-app`.
 
-## Sprint 38 — activo
+## Sprint 39 — cerrado
+
+### Decoupled Update Runtime Worker
+
+**Estado:** CERRADO Y DESPLEGADO
+
+- Resultado: consolidado en repo y validado operativamente en VPS.
+- Alcance: worker de update desacoplado y verificado.
+
+## Sprint 40 — activo
 
 ### Update Runtime Parity and Progressive Pipeline
 

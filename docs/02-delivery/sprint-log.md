@@ -16,6 +16,19 @@ last_reviewed: 2026-05-08
 
 # Sprint log
 
+## Sprint activo — Sprint 40: Tutor Taxonomy-Aware Item Evidence
+- **Estado**: ACTIVO
+- **Fecha de apertura**: 2026-05-09
+- **Rama de trabajo esperada**: `sprint-40-tutor-taxonomy-aware-item-evidence`
+- **Objetivo**: habilitar consumo de taxonomía rica de ítems/perfiles en Tutor GCM con compatibilidad backward con banco legacy.
+
+## Sprint cerrado — Sprint 39: Decoupled Update Runtime Worker
+- **Estado**: CERRADO Y DESPLEGADO
+- **Fecha de cierre**: 2026-05-09
+- **Runtime verified**: yes
+- **Nota**: cierre operativo completado; Sprint 40 retoma foco exclusivo en Tutor GCM.
+
+
 ## Sprint cerrado — Sprint 37.1: Runtime Parity & Operational Verification
 - **Estado**: PASS
 - **Fecha de cierre**: 2026-05-08
