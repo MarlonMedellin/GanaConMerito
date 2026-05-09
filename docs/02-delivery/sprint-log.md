@@ -11,10 +11,49 @@ related:
   - PROD-BACKLOG
   - DEL-CHANGE-LOG
   - QUAL-RISK-REGISTER
-last_reviewed: 2026-05-08
+last_reviewed: 2026-05-09
 ---
 
 # Sprint log
+
+## Sprint cerrado — Sprint 39: Decoupled Update Runtime Worker
+- **Estado**: CERRADO
+- **Fecha de cierre**: 2026-05-09
+- **Rama principal**: `sprint-39-decoupled-update-runtime-worker`
+- **Objetivo**: desacoplar `/update.html` y `/api/ops/update` del ciclo de vida del contenedor `gcm-app` mediante jobs persistentes y polling.
+
+### Entregables principales
+- `POST /api/ops/update` migrado a ejecución async basada en jobs.
+- `GET /api/ops/update/status` agregado para polling.
+- `update.html` migrado a flujo job-based.
+- `src/lib/ops/update-jobs.ts` creado para persistencia de jobs/reportes.
+- `ops/run-update-job.sh` agregado como worker host-side versionado.
+- Documentación operacional desacoplada agregada.
+
+### Evidencia operacional reportada
+- `~/.openclaw/product` sincronizado a `07ceb1a`.
+- `/opt/gcm/app` sincronizado a `07ceb1a`.
+- Docker reconstruido con `APP_COMMIT=07ceb1a`.
+- `gcm-app` reiniciado exitosamente mediante `docker compose up -d gcm-app`.
+- Runtime reportado en producción sobre la nueva versión.
+
+### Riesgo residual
+- El worker host-side aún no queda instalado/orquestado formalmente en VPS mediante scheduler/service persistente.
+- El cierre se acepta por validación de paridad `product/deploy`, rebuild Docker y runtime operativo.
+
+## Sprint activo — Sprint 40: Tutor Taxonomy-Aware Item Evidence
+- **Estado**: ACTIVO
+- **Fecha de apertura**: 2026-05-09
+- **Rama de trabajo esperada**: `sprint-40-tutor-taxonomy-aware-item-evidence`
+- **Objetivo**: integrar la nueva estructura rica de ítems, taxonomía y metadata pedagógico-psicométrica dentro del contrato de evidencia y razonamiento del Tutor GCM.
+
+### Foco del sprint
+- Contrato `area -> subarea -> competency`.
+- Integración de `targetRole`, `targetPosition`, `applicantProfile` y `tags`.
+- Extensión compatible de `QuestionTruth`.
+- Enriquecimiento de `TutorSupportContract`.
+- Soporte para distractores explicables y riesgos técnicos.
+- Compatibilidad backward con ítems legacy.
 
 ## Sprint cerrado — Sprint 37.1: Runtime Parity & Operational Verification
 - **Estado**: PASS
