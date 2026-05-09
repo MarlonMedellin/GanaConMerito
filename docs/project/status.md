@@ -100,3 +100,5 @@ La prioridad actual ya no es estabilización funcional del producto sino observa
 ## Estado normativo
 
 Sprint 22 se mantiene en estado `synthesized_governed_unverified` dado que el sistema todavía no cuenta con anexos oficiales suficientes para promover `source_verified`.
+
+- 2026-05-09: Sprint 39 cerrado temporalmente en repo. Sprint 40 activo con foco Tutor GCM taxonomy-aware evidence.

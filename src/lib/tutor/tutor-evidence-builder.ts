@@ -11,12 +11,28 @@ import {
 interface TutorItemRecord {
   id: string;
   area: string | null;
+  subarea: string | null;
   competency: string | null;
   stem: string | null;
   correct_option: string | null;
   explanation: string | null;
   source_type: string | null;
   source_path: string | null;
+  tipo_item: string | null;
+  nivel_educativo: string | null;
+  afirmacion: string | null;
+  evidencia: string | null;
+  nivel_cognitivo: string | null;
+  dificultad: string | null;
+  contexto: string | null;
+  justificacion_distractores: Record<string, string> | null;
+  riesgos_tecnicos: string[] | string | null;
+  estado: string | null;
+  version: string | null;
+  target_role: string | null;
+  target_position: string | null;
+  applicant_profile: string | null;
+  tags: string[] | null;
 }
 
 interface TutorOptionRecord {
@@ -69,7 +85,7 @@ export async function buildTutorEvidence(params: {
       applyActiveItemBankFilters(
         supabase
           .from(source)
-          .select("id, area, competency, stem, correct_option, explanation, source_type, source_path")
+          .select("id, area, subarea, competency, stem, correct_option, explanation, source_type, source_path, tipo_item, nivel_educativo, afirmacion, evidencia, nivel_cognitivo, dificultad, contexto, justificacion_distractores, riesgos_tecnicos, estado, version, target_role, target_position, applicant_profile, tags")
           .eq("id", itemId),
         source,
       ).single(),
@@ -124,7 +140,7 @@ export async function buildTutorEvidence(params: {
         itemId: item.id,
         area: item.area ?? "general",
         competency: item.competency ?? "competencia no especificada",
-        topic: [item.area, item.competency].filter(Boolean).join(" - ") || "tema no especificado",
+        topic: [item.area, item.subarea, item.competency].filter(Boolean).join(" - ") || "tema no especificado",
         cognitiveIntent: "Identificar la opción que mejor responde al caso según el enunciado y la competencia evaluada.",
         expectedUserTask: "Leer el enunciado, contrastar opciones y seleccionar la alternativa más consistente.",
         sourceType: item.source_type ?? "runtime_item_bank",
@@ -140,6 +156,22 @@ export async function buildTutorEvidence(params: {
           })),
         correctOption: item.correct_option ?? "",
         correctExplanation: item.explanation ?? "",
+        subarea: item.subarea ?? undefined,
+        affirmation: item.afirmacion ?? undefined,
+        evidenceStatement: item.evidencia ?? undefined,
+        educationalLevel: item.nivel_educativo ?? undefined,
+        difficulty: item.dificultad ?? undefined,
+        cognitiveLevel: item.nivel_cognitivo ?? undefined,
+        itemType: item.tipo_item ?? undefined,
+        context: item.contexto ?? undefined,
+        distractorRationales: item.justificacion_distractores ?? undefined,
+        technicalRisks: normalizeTechnicalRisks(item.riesgos_tecnicos),
+        editorialStatus: item.estado ?? undefined,
+        version: item.version ?? undefined,
+        targetRole: item.target_role ?? undefined,
+        targetPosition: item.target_position ?? undefined,
+        applicantProfile: item.applicant_profile ?? undefined,
+        tags: item.tags ?? undefined,
       })
     : undefined;
 
@@ -200,4 +232,12 @@ function buildOptionRationale(optionKey: string, correctOption?: string | null):
   return optionKey === correctOption
     ? "Esta alternativa coincide con la clave registrada en la fuente de verdad."
     : "Esta alternativa funciona como distractor frente a la clave registrada.";
+}
+
+
+function normalizeTechnicalRisks(risks: TutorItemRecord["riesgos_tecnicos"]): string[] | undefined {
+  if (!risks) return undefined;
+  if (Array.isArray(risks)) return risks.filter(Boolean);
+  if (typeof risks === "string") return [risks];
+  return undefined;
 }
