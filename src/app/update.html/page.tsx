@@ -22,6 +22,8 @@ type StepResult = {
   commands: CommandResult[];
 };
 
+type UpdateAction = "product" | "deploy" | "tests" | "docker" | "smoke" | "all";
+
 type UpdateReport = {
   ok: boolean;
   startedAt: string;
@@ -38,22 +40,37 @@ type UpdateReport = {
   productHeadAfter?: string | null;
   deployHeadBefore?: string | null;
   deployHeadAfter?: string | null;
+  runtimeHead?: string | null;
+  runtimeBuildTime?: string | null;
+  drift: { productVsDeploy: boolean; deployVsRuntime: boolean; imageStale: boolean; composeStale: boolean };
   testsExecuted: string[];
   steps: StepResult[];
   error?: string;
 };
+
+const ACTION_OPTIONS: Array<{ value: UpdateAction; label: string; description: string }> = [
+  { value: "all", label: "Pipeline completo", description: "product + deploy + tests + docker + smoke" },
+  { value: "product", label: "Solo product", description: "Sincroniza la fuente de verdad local" },
+  { value: "deploy", label: "Solo deploy", description: "Alinea /opt/gcm/app con master" },
+  { value: "tests", label: "Solo tests", description: "Ejecuta lint, build y unit tests" },
+  { value: "docker", label: "Solo docker", description: "Reconstruye y reinicia gcm-app" },
+  { value: "smoke", label: "Solo smoke", description: "Ejecuta smoke y E2E del runtime" },
+];
 
 export default function UpdatePage() {
   const [password, setPassword] = useState("");
   const [running, setRunning] = useState(false);
   const [report, setReport] = useState<UpdateReport | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [action, setAction] = useState<UpdateAction>("all");
 
   const statusText = useMemo(() => {
-    if (running) return "Ejecutando actualización...";
+    if (running) return `Ejecutando: ${ACTION_OPTIONS.find((option) => option.value === action)?.label ?? action}`;
     if (!report) return "Listo para ejecutar.";
     return report.ok ? "Actualización completada." : "Actualización terminada con errores.";
-  }, [report, running]);
+  }, [action, report, running]);
+
+  const actionDescription = ACTION_OPTIONS.find((option) => option.value === action)?.description ?? "";
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -67,7 +84,7 @@ export default function UpdatePage() {
         headers: {
           "content-type": "application/json",
         },
-        body: JSON.stringify({ password }),
+        body: JSON.stringify({ password, action }),
       });
 
       const payload = (await response.json()) as UpdateReport | { error: string };
@@ -94,7 +111,7 @@ export default function UpdatePage() {
             <h1 style={styles.title}>update.html</h1>
             <p style={styles.lead}>
               Consola web para sincronizar `product`, alinear `deploy`, reconstruir Docker y correr QA no
-              interactiva.
+              interactiva por etapas.
             </p>
           </div>
           <div style={styles.statusCard}>
@@ -104,10 +121,23 @@ export default function UpdatePage() {
         </div>
 
         <form onSubmit={handleSubmit} style={styles.form}>
-          <label htmlFor="password" style={styles.label}>
-            Contraseña
+          <label htmlFor="action" style={styles.label}>
+            Acción
           </label>
           <div style={styles.controls}>
+            <select
+              id="action"
+              value={action}
+              onChange={(event) => setAction(event.target.value as UpdateAction)}
+              style={styles.select}
+              disabled={running}
+            >
+              {ACTION_OPTIONS.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
             <input
               id="password"
               type="password"
@@ -119,9 +149,10 @@ export default function UpdatePage() {
               disabled={running}
             />
             <button type="submit" style={styles.button} disabled={running || password.trim().length === 0}>
-              {running ? "Ejecutando..." : "Actualizar"}
+              {running ? "Ejecutando..." : "Ejecutar"}
             </button>
           </div>
+          <p style={styles.helper}>{actionDescription}</p>
         </form>
 
         {error ? <p style={styles.error}>{error}</p> : null}
@@ -133,12 +164,24 @@ export default function UpdatePage() {
               <SummaryItem label="Inicio" value={report.startedAt} />
               <SummaryItem label="Fin" value={report.finishedAt} />
               <SummaryItem label="Duración" value={`${Math.round(report.durationMs / 1000)} s`} />
-              <SummaryItem label="Product HEAD" value={report.productHeadAfter ?? "n/d"} />
-              <SummaryItem label="Deploy HEAD" value={report.deployHeadAfter ?? "n/d"} />
+              <SummaryItem label="Product HEAD" value={report.productHeadAfter ?? report.productHeadBefore ?? "n/d"} />
+              <SummaryItem label="Deploy HEAD" value={report.deployHeadAfter ?? report.deployHeadBefore ?? "n/d"} />
+              <SummaryItem label="Runtime HEAD" value={report.runtimeHead ?? "n/d"} />
+              <SummaryItem label="Runtime BuildTime" value={report.runtimeBuildTime ?? "n/d"} />
             </div>
 
             <div style={styles.block}>
-              <h2 style={styles.blockTitle}>Pruebas ejecutadas</h2>
+              <h2 style={styles.blockTitle}>Paridad y drift</h2>
+              <div style={styles.driftGrid}>
+                <DriftItem label="product != deploy" value={report.drift.productVsDeploy} />
+                <DriftItem label="deploy != runtime" value={report.drift.deployVsRuntime} />
+                <DriftItem label="image stale" value={report.drift.imageStale} />
+                <DriftItem label="compose stale" value={report.drift.composeStale} />
+              </div>
+            </div>
+
+            <div style={styles.block}>
+              <h2 style={styles.blockTitle}>Pruebas configuradas</h2>
               <ul style={styles.list}>
                 {report.testsExecuted.map((testName) => (
                   <li key={testName}>{testName}</li>
@@ -147,7 +190,7 @@ export default function UpdatePage() {
             </div>
 
             <div style={styles.block}>
-              <h2 style={styles.blockTitle}>Pasos</h2>
+              <h2 style={styles.blockTitle}>Pasos ejecutados</h2>
               <div style={styles.steps}>
                 {report.steps.map((step) => (
                   <article key={step.id} style={styles.stepCard}>
@@ -156,17 +199,16 @@ export default function UpdatePage() {
                       <span style={step.ok ? styles.okBadge : styles.failBadge}>{step.ok ? "OK" : "ERROR"}</span>
                     </div>
                     <p style={styles.stepSummary}>{step.summary}</p>
-                    {step.details ? (
-                      <pre style={styles.pre}>{JSON.stringify(step.details, null, 2)}</pre>
-                    ) : null}
+                    {step.details ? <pre style={styles.pre}>{JSON.stringify(step.details, null, 2)}</pre> : null}
                     {step.commands.map((command, index) => (
                       <details key={`${step.id}-${index}`} style={styles.details}>
                         <summary>
-                          {command.command} ({command.exitCode ?? "running"})
+                          {command.command} ({command.exitCode ?? "running"}) — {Math.round(command.durationMs / 1000)} s
                         </summary>
                         <pre style={styles.pre}>
                           {[
                             `$ ${command.command}`,
+                            `cwd: ${command.cwd}`,
                             "",
                             command.stdout ? `STDOUT\n${command.stdout}` : "STDOUT\n<vacío>",
                             "",
@@ -198,6 +240,15 @@ function SummaryItem({ label, value }: { label: string; value: string }) {
     <div style={styles.summaryItem}>
       <span style={styles.summaryLabel}>{label}</span>
       <strong style={styles.summaryValue}>{value}</strong>
+    </div>
+  );
+}
+
+function DriftItem({ label, value }: { label: string; value: boolean }) {
+  return (
+    <div style={styles.summaryItem}>
+      <span style={styles.summaryLabel}>{label}</span>
+      <strong style={value ? styles.driftBad : styles.driftGood}>{value ? "DRIFT" : "OK"}</strong>
     </div>
   );
 }
@@ -278,6 +329,15 @@ const styles: Record<string, CSSProperties> = {
     gap: "12px",
     flexWrap: "wrap",
   },
+  select: {
+    flex: "1 1 220px",
+    minHeight: "48px",
+    borderRadius: "8px",
+    border: "1px solid #b9aa84",
+    padding: "0 12px",
+    fontSize: "16px",
+    background: "#fffdf8",
+  },
   input: {
     flex: "1 1 320px",
     minHeight: "48px",
@@ -298,6 +358,11 @@ const styles: Record<string, CSSProperties> = {
     fontWeight: 700,
     cursor: "pointer",
   },
+  helper: {
+    margin: "8px 0 0",
+    color: "#6d5c38",
+    fontSize: "14px",
+  },
   error: {
     marginTop: "16px",
     color: "#8b1e1e",
@@ -309,6 +374,11 @@ const styles: Record<string, CSSProperties> = {
     gap: "20px",
   },
   summaryGrid: {
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
+    gap: "12px",
+  },
+  driftGrid: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
     gap: "12px",
@@ -330,6 +400,14 @@ const styles: Record<string, CSSProperties> = {
   summaryValue: {
     fontSize: "15px",
     lineHeight: 1.4,
+  },
+  driftGood: {
+    color: "#1f6a41",
+    fontSize: "15px",
+  },
+  driftBad: {
+    color: "#8c2b2b",
+    fontSize: "15px",
   },
   block: {
     borderTop: "1px solid rgba(28,27,23,0.1)",
