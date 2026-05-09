@@ -50,21 +50,27 @@ export async function createUpdateJob(action: UpdateAction): Promise<UpdateJob> 
 
 export async function readUpdateJobStatus(jobId: string): Promise<UpdateJobReport> {
   const safeJobId = sanitizeJobId(jobId);
-  const reportPath = path.join(REPORTS_DIR, `${safeJobId}.json`);
+  if (!safeJobId) {
+    return unknownReport("", "Identificador de job inválido.");
+  }
 
   try {
-    const raw = await readFile(reportPath, "utf8");
+    const raw = await readFile(path.join(REPORTS_DIR, `${safeJobId}.json`), "utf8");
     return JSON.parse(raw) as UpdateJobReport;
   } catch {
-    return {
-      jobId: safeJobId,
-      action: "all",
-      status: "unknown",
-      createdAt: "",
-      updatedAt: new Date().toISOString(),
-      error: "No se encontró reporte para este job.",
-    };
+    return unknownReport(safeJobId, "No se encontró reporte para este job.");
   }
+}
+
+function unknownReport(jobId: string, error: string): UpdateJobReport {
+  return {
+    jobId,
+    action: "all",
+    status: "unknown",
+    createdAt: "",
+    updatedAt: new Date().toISOString(),
+    error,
+  };
 }
 
 function sanitizeJobId(jobId: string) {
