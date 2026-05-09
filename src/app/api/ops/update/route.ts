@@ -1,4 +1,4 @@
-import { runWebUpdate } from "../../../../lib/ops/web-update";
+import { runWebUpdate, UpdateAction, UPDATE_ACTIONS } from "../../../../lib/ops/web-update";
 import { createHash, timingSafeEqual } from "node:crypto";
 import { NextResponse } from "next/server";
 
@@ -13,16 +13,24 @@ function isAuthorized(password: string) {
   return timingSafeEqual(Buffer.from(provided), Buffer.from(PASSWORD_SHA256));
 }
 
+function parseAction(value: unknown): UpdateAction {
+  if (typeof value === "string" && UPDATE_ACTIONS.includes(value as UpdateAction)) {
+    return value as UpdateAction;
+  }
+  return "all";
+}
+
 export async function POST(request: Request) {
   try {
     const body = await request.json();
     const password = typeof body.password === "string" ? body.password : "";
+    const action = parseAction(body.action);
 
     if (!password || !isAuthorized(password)) {
       return NextResponse.json({ error: "Credenciales inválidas." }, { status: 401 });
     }
 
-    const report = await runWebUpdate();
+    const report = await runWebUpdate(action);
     return NextResponse.json(report, {
       status: report.ok ? 200 : 500,
       headers: {
