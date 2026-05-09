@@ -11,17 +11,17 @@ async function assertRepoFileExists(relativePath: string) {
   await access(resolve(process.cwd(), relativePath));
 }
 
-test("Sprint governance reflects closed Sprint 33 baseline and active Sprint 37 prep", async () => {
+test("Sprint governance reflects closed Sprint 33 baseline and active Sprint 38 prep", async () => {
   const sprintLog = await readRepoFile("docs/02-delivery/sprint-log.md");
   const status = await readRepoFile("docs/project/status.md");
 
-  assert.match(sprintLog, /Sprint activo — Sprint 37: Tutor Trace Signals and Governance Stabilization Prep/i);
+  assert.match(status, /## Sprint 38 — activo/i);
   assert.match(sprintLog, /Sprint cerrado — Sprint 36: Tutor Hint Ladder, Misconception Feedback and Safe Modes/i);
   assert.match(sprintLog, /Sprint cerrado — Sprint 35: Tutor Support Contract Safe Evidence/i);
 
-  assert.match(status, /\*\*Sprint actual:\*\*\s*Sprint 37 — Tutor Trace Signals and Governance Stabilization Prep/i);
-  assert.match(status, /Runtime publico\/VPS de Sprint 35-37:\s*NO VALIDADO EN ESTA CORRIDA/i);
-  assert.match(status, /`?npm run test:unit`? corre en verde en repo local/i);
+  assert.match(status, /\*\*Sprint actual:\*\*\s*Sprint 38 — Update Runtime Parity and Progressive Pipeline/i);
+  assert.match(status, /Runtime publico\/VPS de Sprint 35-37\.1 validado en la misma corrida operacional/i);
+  assert.match(status, /\*\*Sprint anterior cerrado:\*\*\s*Sprint 37\.1 — Runtime Parity & Operational Verification/i);
 
   await assertRepoFileExists("docs/02-delivery/sprint-33-stabilization-plan.md");
   await assertRepoFileExists("docs/03-architecture/api-contract-standard-v1.md");
@@ -40,7 +40,7 @@ test("Sprint 22 remains explicitly non-source-verified in current repo state", a
   assert.match(sprintLog, /Sprint cerrado — Sprint 22: Tutor GCM Normative Source Verification/i);
   assert.match(sprintLog, /CERRADO CON PASS CON WARN/i);
   assert.match(status, /synthesized_governed_unverified/i);
-  assert.match(status, /no encuentra anexos oficiales suficientes para promover `source_verified`/i);
+  assert.match(status, /no cuenta con anexos oficiales suficientes para promover `source_verified`/i);
   assert.match(normativeVerification, /PASS con WARN/i);
   assert.match(normativeVerification, /acuerdo oficial del concurso cargado en repo/i);
 });
