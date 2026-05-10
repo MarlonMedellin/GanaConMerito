@@ -12,6 +12,14 @@ related:
 last_reviewed: 2026-05-10
 ---
 ## 2026-05-10
+- tipo: governance+docs+ci
+- modulo: governance/ops/qa/delivery
+- resumen: Inicio formal del hardening incremental de gobernanza documental y operacional. Se agregan trigger maps advisory, trazabilidad multiagente base, quality gates ejecutivos, baseline runtime/release, snapshot ejecutivo de estado, PR governance template, política de archive, session reporting y advisory CI para sincronización documental. El objetivo explícito es reducir drift silencioso sin introducir enforcement bloqueante prematuro.
+- sprint: Governance Hardening Roadmap — Fases 1 y 2 iniciadas
+- agente: PM-Governance/chatgpt
+- relacionados: docs/02-delivery/governance-hardening-roadmap.md, docs/05-ops/documentation-trigger-map.md, docs/05-ops/agent-traceability.md, docs/04-quality/quality-gates.md, docs/05-ops/runtime-and-release.md, docs/archive/README.md, .github/pull_request_template.md, scripts/check-doc-triggers.ts, .github/workflows/pr-checks.yml
+
+## 2026-05-10
 - tipo: governance+ops
 - modulo: docs/qa/ops
 - resumen: Cierre operacional y probatorio de Sprints 31-43. Se sincroniza el VPS al commit `fee91a4`, se reconstruye el entorno Docker con metadatos reales y se valida el runtime público mediante suite de regresión integral (PASS). Se incluye fix de contrato en `scripts/ops-update-contract.test.ts` para robustez de validación.
