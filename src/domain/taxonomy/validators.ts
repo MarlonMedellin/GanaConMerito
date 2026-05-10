@@ -1,6 +1,7 @@
 import {
   CANONICAL_TAXONOMY,
   TAG_ALIASES,
+  TAG_DEPRECATED,
   TAG_FORBIDDEN,
   TAG_REGISTRY,
   TAXONOMY_ALIASES,
@@ -19,10 +20,12 @@ export function normalizeTaxonomyValue(key: TaxonomyKey, value: string): string 
   if (TAXONOMY_FORBIDDEN.has(normalized)) {
     throw new Error(`Forbidden taxonomy value for ${key}: ${value}`);
   }
+
   const aliased = TAXONOMY_ALIASES[normalized] ?? TAXONOMY_DEPRECATED[normalized] ?? normalized;
   if (!(CANONICAL_TAXONOMY[key] as readonly string[]).includes(aliased)) {
     throw new Error(`Unknown taxonomy value for ${key}: ${value}`);
   }
+
   return aliased;
 }
 
@@ -39,10 +42,12 @@ export function normalizeTag(category: TagCategory, tag: string): string {
   if (TAG_FORBIDDEN.has(normalized)) {
     throw new Error(`Forbidden tag: ${tag}`);
   }
-  const aliased = TAG_ALIASES[normalized] ?? normalized;
+
+  const aliased = TAG_ALIASES[normalized] ?? TAG_DEPRECATED[normalized] ?? normalized;
   if (!(TAG_REGISTRY[category] as readonly string[]).includes(aliased)) {
     throw new Error(`Unknown tag in ${category}: ${tag}`);
   }
+
   return aliased;
 }
 
