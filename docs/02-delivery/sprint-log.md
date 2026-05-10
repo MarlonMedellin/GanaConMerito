@@ -14,9 +14,25 @@ related:
 last_reviewed: 2026-05-10
 ---
 
+## Document control
+- Status: operational
+- Owner: PM-Governance
+- Last reviewed: 2026-05-10
+- Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
+- Update trigger: governance, delivery, documentation, drift
+
 # Sprint log
 
-## Sprint cerrado y verificado — Sprint 43: Learning Paths + Misconception Signals - Base Implementation
+## Current delivery state
+- **Current/last real operational block**: Sprint 43 — Learning Paths + Misconception Signals - Base Implementation (cerrado y verificado en runtime el 2026-05-10).
+- **Last runtime-verified commit**: `fee91a4` (según evidencia vigente en `status.md` y este log).
+- **Governance Hardening Roadmap state**: Fase 1 y Fase 2 iniciadas; Fase 3 en ejecución documental (reducción y clasificación), Fases 4-5 futuras.
+- **Open risks**:
+  - drift activo entre documentos históricos (Sprint 33/remediation/QA antiguos) y documentación canónica actual;
+  - trazabilidad multiagente aún advisory y sin enforcement automático;
+  - parte del QA histórico sigue narrativo y puede competir con baseline ejecutiva.
+
+## Sprint cerrado en repo — Sprint 43: Learning Paths + Misconception Signals - Base Implementation
 - **Estado**: CERRADO Y VERIFICADO EN RUNTIME (PASS)
 - **Fecha de cierre y despliegue**: 2026-05-10
 - **Rama de promoción**: `master`

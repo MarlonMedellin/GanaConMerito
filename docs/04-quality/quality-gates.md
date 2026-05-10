@@ -131,3 +131,32 @@ Fases futuras:
 3. CI parcial bloqueante;
 4. enforcement selectivo;
 5. release governance más estricta.
+
+---
+
+# Governance maturity levels
+
+| Level | Description | Repo applicability |
+|---|---|---|
+| manual | Dependencia principal de disciplina humana y revisión ad hoc. | Histórico/base |
+| advisory | Reglas documentadas con warnings no bloqueantes. | Activo |
+| advisory+CI | Warnings visibles en CI con `continue-on-error`. | Activo parcial |
+| selective enforcement | Bloqueos puntuales para claims críticos y metadata mínima. | Futuro |
+| strict governance | Enforcement amplio y consistente en CI y flujo release. | Futuro |
+
+Estado actual del repo: **advisory-heavy incremental hardening** entre niveles `advisory` y `advisory+CI`, sin enforcement bloqueante.
+
+
+---
+
+# Legacy governance state
+
+| State | Meaning |
+|---|---|
+| uncontrolled legacy | Documentos históricos sin clasificación de autoridad. |
+| classified legacy | Existe inventario con riesgo/severidad y referencias canónicas. |
+| contextualized legacy | Documentos high-conflict tienen headers y notas de no-autoridad ejecutiva. |
+| archived legacy | Históricos movidos de forma controlada a `docs/archive/` con reemplazo explícito. |
+| enforced governance | CI y flujo operativo bloquean contradicciones severas. |
+
+Estado actual real: **entre `classified legacy` y `contextualized legacy`**; todavía sin archive masivo ni enforcement bloqueante.

@@ -42,6 +42,10 @@ Runtime público verificado en `https://cnsc.profemarlon.com` sobre `fee91a4`.
 
 ---
 
+## Canonical documentation index
+- `docs/project/canonical-docs.md` (índice canónico mínimo para evitar competencia entre fuentes).
+- `docs/archive/legacy-candidates.md` (matriz inicial de candidatos legacy para reducción documental fase 3).
+
 ## Estado general
 
 **Estado:** producto activo con core operativo, Tutor GCM gobernado, capa editorial de normalización rica conectada al banco activo y capa base de señales pedagógicas ya integrada en repo.
@@ -68,7 +72,7 @@ Runtime público verificado en `https://cnsc.profemarlon.com` sobre `fee91a4`.
 - **Commit actual desplegado y verificado:** `fee91a4`.
 - **Short hash verificado:** `fee91a4`.
 
-## Sprint 43 — cerrado y verificado en runtime
+## Sprint 43 — cerrado en repo y verificado en runtime
 
 ### Learning Paths + Misconception Signals - Base Implementation
 

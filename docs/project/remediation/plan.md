@@ -1,3 +1,15 @@
+Status: advisory
+Replaced by: docs/project/status.md
+Canonical reference: docs/project/status.md; docs/02-delivery/governance-hardening-roadmap.md
+Do not use for: definir estado ejecutivo actual o roadmap canónico
+Last reviewed: 2026-05-10
+
+## Legacy authority context
+- Este documento ya NO es fuente ejecutiva; es plan histórico de remediación.
+- Consultar `status.md` y roadmap para prioridad vigente.
+- Mantiene valor histórico sobre frentes de deuda identificados.
+---
+
 # Plan de remediación ejecutable
 
 ## Estado

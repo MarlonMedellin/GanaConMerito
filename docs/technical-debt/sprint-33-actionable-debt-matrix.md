@@ -1,3 +1,15 @@
+Status: superseded
+Replaced by: docs/technical-debt/strategic-technical-debt-register-2026-05-07.md
+Canonical reference: docs/project/status.md; docs/technical-debt/strategic-technical-debt-register-2026-05-07.md
+Do not use for: priorización de deuda técnica vigente
+Last reviewed: 2026-05-10
+
+## Legacy authority context
+- Este documento corresponde a Sprint 33 y no debe guiar prioridad actual por sí solo.
+- Consultar registro estratégico y `status.md`.
+- Mantiene trazabilidad histórica de deuda accionable en ese sprint.
+---
+
 # Sprint 33 Actionable Technical Debt Matrix
 
 ## Objetivo

@@ -19,6 +19,13 @@ Update trigger:
 
 ---
 
+## Document control
+- Status: canonical
+- Owner: PM-Governance
+- Last reviewed: 2026-05-10
+- Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
+- Update trigger: governance, delivery, documentation, drift
+
 # Objetivo
 
 Ordenar la transición de GanaConMerito desde documentación acumulativa hacia gobernanza operacional incremental.
@@ -161,3 +168,23 @@ La mejora funciona si:
 No se busca más documentación.
 
 Se busca mejor sincronización, menor ambigüedad y más evidencia operacional.
+
+
+## Estado actual del hardening
+
+- Estado real: advisory-heavy incremental hardening activo, sin enforcement bloqueante.
+- Avance aproximado: **64%** del plan total (Fase 1-2 implementadas, Fase 3 en ejecución por lotes, Fase 4-5 pendientes).
+
+Hitos completados recientes:
+- primer lote archive-ready migrado con stubs reversibles y trazabilidad cruzada;
+
+Próximos milestones:
+1. completar contextualización de documentos High conflict restantes;
+2. consolidar `archive-ready-queue.md` con criterios de migración validados;
+3. ejecutar primer traslado controlado a `docs/archive/` (sin pérdida de trazabilidad);
+4. mantener CI advisory antes de evaluar enforcement selectivo.
+
+Riesgos restantes:
+- persistencia de documentación legacy aún visible sin etiqueta homogénea completa;
+- riesgo de interpretación errónea de claims históricos de runtime;
+- dependencia de disciplina humana para mantener sincronización.
