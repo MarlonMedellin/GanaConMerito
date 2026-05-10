@@ -34,22 +34,35 @@ GanaConMerito tiene activo el core real de producto:
 - sistema editorial del banco definido por taxonomia primaria (`area`, `subarea`, `competency`) y segmentacion secundaria opcional por perfil docente
 - fundacion de gobernanza semantica v1 ajustada en repo para evitar drift taxonomico y tags libres
 - normalizacion editorial rica conectada al corpus activo con warnings legacy y rechazo estructural real
-- capa base de `learningSignals` para misconception detection y siguiente mejor práctica ya integrada en repo
-- **Cierre funcional Tutor GCM (Sprint 21):** PASS con WARN explícito.
-- **Frente normativo Tutor GCM (Sprint 22):** PASS con WARN explícito; contrato y guardrails verificados, fuente oficial suficiente pendiente.
+- capa base de `learningSignals` para misconception detection y siguiente mejor practica ya integrada en repo
+- calibracion interna inicial y metricas/analytics internos del Tutor verificados en runtime sobre `fcc40cb`
+- **Cierre funcional Tutor GCM (Sprint 21):** PASS con WARN explicito.
+- **Frente normativo Tutor GCM (Sprint 22):** PASS con WARN explicito; contrato y guardrails verificados, fuente oficial suficiente pendiente.
 
 ## Implementado y validado recientemente
 
+### Sprint 45 — Calibracion y metricas/analytics internos del Tutor
+- Estado: CERRADO TOTAL Y VERIFICADO EN RUNTIME (PASS).
+- Resultado: intensidad de senales (`strong|weak|insufficient`), `recommendationEvidenceCount`, separacion `evidenceVsInference`, `likelyFalsePositive` y metricas internas agregadas para cobertura, suficiencia y frecuencia de senales del Tutor.
+- Evidencia: Commit `fcc40cb`, VPS y runtime publico validados, smoke/postdeploy/API/UI PASS.
+- Limite aceptado: calibracion aun heuristica y dependiente de calidad del historial y de `trace_signals` persistidos.
+
+### Sprint 44 — Persistencia, calibracion y analytics del Tutor
+- Estado: CERRADO Y VERIFICADO EN RUNTIME (PASS).
+- Resultado: `trace_signals` trazables persistidas, analytics descriptivos simples y dashboard con visibilidad operativa basica.
+- Evidencia: Commit `54efd43`, QA integral y validacion publica en runtime.
+- Limite aceptado: la integracion del Tutor con LLM real sigue fuera de alcance.
+
 ### Sprint 43 — Learning Paths + Misconception Signals - Base Implementation
 - Estado: CERRADO Y VERIFICADO EN RUNTIME (PASS).
-- Resultado: `learningSignals` trazables para misconception, subárea débil, patrón repetido, mismatch cognitivo y siguiente mejor práctica; recomendación pedagógica enriquecida sin mutar scoring ni sesión.
-- Evidencia: Commit `fee91a4`, suite de regresión integral aprobada y validación pública en runtime.
-- Límite aceptado: calibración heurística pendiente con uso real.
+- Resultado: `learningSignals` trazables para misconception, subarea debil, patron repetido, mismatch cognitivo y siguiente mejor practica; recomendacion pedagogica enriquecida sin mutar scoring ni sesion.
+- Evidencia: Commit `fee91a4`, suite de regresion integral aprobada y validacion publica en runtime.
+- Limite aceptado: calibracion heuristica pendiente con uso real.
 
 ### Sprint 42 — Rich Ingestion Normalization
 - Estado: CERRADO EN REPO.
-- Resultado: validación editorial, cobertura por taxonomía/tags/targetPosition, `sourceTaxonomy` preservada y tags planos legacy normalizados sin romper fallback.
-- Limite aceptado: runtime público no verificado en esta corrida y adopción completa de columnas ricas depende de la fuente operativa real.
+- Resultado: validacion editorial, cobertura por taxonomia/tags/targetPosition, `sourceTaxonomy` preservada y tags planos legacy normalizados sin romper fallback.
+- Limite aceptado: runtime publico no verificado en esta corrida y adopcion completa de columnas ricas depende de la fuente operativa real.
 
 ### Sprint 41 — Semantic Governance Foundation v1
 - Estado: IMPLEMENTACION AJUSTADA EN REPO.
@@ -64,19 +77,18 @@ GanaConMerito tiene activo el core real de producto:
 1. Prioridad normativa alta: cargar acuerdo oficial, guia metodologica, estructura de prueba y soporte de convocatoria/manual antes de volver a evaluar `source_verified`.
 2. Mantener Sprint 22 como clasificacion vigente del frente normativo hasta que exista nueva evidencia documental real.
 3. Mantener disciplina de promocion: PR al repo principal -> `master` -> `~/.openclaw/product` -> `/opt/gcm/app` -> Docker OCI -> validacion en `https://cnsc.profemarlon.com`.
-4. Ejecutar rotación de `SUPABASE_SERVICE_ROLE_KEY` (Riesgo identificado en Sprint 20).
-5. Mantener `npm test`, `npm run lint` y `npm run build` como bundle mínimo de cierre para sprints de contrato/taxonomía.
-6. Preparar persistencia de `TutorTurnTrace` para metricas pedagogicas.
+4. Ejecutar rotacion de `SUPABASE_SERVICE_ROLE_KEY` (Riesgo identificado en Sprint 20).
+5. Mantener `npm test`, `npm run lint` y `npm run build` como bundle minimo de cierre para sprints de contrato/taxonomia.
+6. Consolidar la calidad de `trace_signals` persistidos para que la calibracion posterior no dependa de ruido operacional.
 7. Mantener Tutor GCM bajo contrato: sin scoring, sin avance, sin cierre, sin fuente normativa inventada.
 8. Mantener el bypass de onboarding QA explicitamente como workaround controlado hasta reemplazarlo por un mecanismo oficial y auditable.
 9. Mantener la expansion del banco bajo la regla editorial: taxonomia primero, perfiles como segunda capa opcional.
 
 ## Next
-1. Sprint 45 — Calibración y métricas/analytics internos del Tutor: cierre técnico-documental total sujeto a `npm test` en verde y consistencia de contratos documentales de sprint.
-2. Sprint 46 solo después de cierre Sprint 45 (o bloqueo explícito aceptado): no mezclar cierre normativo con deuda documental pendiente.
-3. Cierre normativo real del tutor: cargar anexos oficiales, reemplazar placeholders y rehacer revision documental cruzada.
+1. Sprint 46 — consolidacion tecnica posterior a la calibracion: refinar calidad de evidencia por sesion, revisar ruido/falso positivo y endurecer lectura operativa de metricas sin abrir scoring ni psicometria fuerte.
+2. Cierre normativo real del Tutor: cargar anexos oficiales, reemplazar placeholders y rehacer revision documental cruzada.
 3. Release y runtime confiables: CI minima en GitHub Actions, build, tests unitarios, validacion documental y disciplina publica de runtime.
-4. Validacion visual aislada del resumen de trazas: obtener evidencia publica nueva del bloque de resumen del tutor en dashboard si sigue siendo artefacto de cierre requerido.
+4. Validacion visual aislada del resumen de trazas: obtener evidencia publica nueva del bloque de resumen del Tutor en dashboard si sigue siendo artefacto de cierre requerido.
 5. Runtime topology doc: documentar `docker-compose.yml`, env file, dominio, proxy y politica de secretos.
 
 ## Later
