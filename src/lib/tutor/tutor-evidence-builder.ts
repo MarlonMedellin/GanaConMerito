@@ -58,6 +58,52 @@ interface TutorProfessionalProfileRecord {
   area: string | null;
 }
 
+
+interface LearningSignalInput {
+  turns: TutorSessionTurnWithEvaluation[];
+  currentTurn?: TutorSessionTurnWithEvaluation | null;
+  question?: TutorEvidence["question"];
+}
+
+function detectLearningSignals({ turns, currentTurn, question }: LearningSignalInput): TutorEvidence["userSession"]["learningSignals"] | undefined {
+  if (!question || !currentTurn?.selected_option) return undefined;
+
+  const selectedOption = currentTurn.selected_option;
+  const selected = question.options.find((option) => option.key === selectedOption);
+  const likelyDistractor = selectedOption !== question.correctOption;
+  const misconceptionDetected = likelyDistractor && Boolean(selected?.rationale && /distractor|intuici|parcial/i.test(selected.rationale));
+
+  const recentSameCompetencyErrors = turns
+    .filter((turn) => turn.item_id === question.itemId || Boolean(turn.model_feedback && /competenc|subárea|subarea/i.test(turn.model_feedback ?? "")))
+    .filter((turn) => turn.selected_option && turn.is_correct === false).length;
+
+  const repeatedErrorPattern = recentSameCompetencyErrors >= 2 ? `Se observan ${recentSameCompetencyErrors} errores recientes asociados al foco evaluado.` : undefined;
+  const weakSubareaSignal = repeatedErrorPattern ? `Refuerzo sugerido en subárea relacionada con ${question.competency}.` : undefined;
+
+  const lowScore = Number(currentTurn.competency_score ?? 0) > 0 && Number(currentTurn.competency_score ?? 0) < 60;
+  const highDemand = /analiz|evalu|sintetiz|aplic/i.test(question.cognitiveIntent);
+  const difficultyMismatch = lowScore && highDemand
+    ? "El patrón de respuesta sugiere brecha entre nivel cognitivo esperado y ejecución observada."
+    : undefined;
+
+  const recommendedNextPractice = [question.area, question.topic, question.competency].filter(Boolean).length
+    ? `Practica un nuevo ítem de ${question.area} (${question.competency}) justificando descarte de distractores antes de responder.`
+    : undefined;
+
+  const evidenceSummary = misconceptionDetected || repeatedErrorPattern || difficultyMismatch
+    ? "Se generó señal pedagógica trazable con historial reciente y metadata del ítem."
+    : "No hay evidencia suficiente para una señal fuerte; mantener recomendación conservadora.";
+
+  return {
+    misconceptionDetected,
+    weakSubareaSignal,
+    repeatedErrorPattern,
+    recommendedNextPractice,
+    difficultyMismatch,
+    evidenceSummary,
+  };
+}
+
 export async function buildTutorEvidence(params: {
   supabase: SupabaseClient;
   userId: string;
@@ -146,6 +192,8 @@ export async function buildTutorEvidence(params: {
       )
     : undefined;
 
+  const learningSignals = detectLearningSignals({ turns: turnsWithEvaluation, currentTurn, question });
+
   return {
     contest,
     aspirationalProfile,
@@ -161,6 +209,7 @@ export async function buildTutorEvidence(params: {
       userRationale: currentTurn?.user_rationale ?? undefined,
       feedback: currentTurn?.model_feedback ?? undefined,
       recentPerformanceSummary,
+      learningSignals,
     },
   };
 }
