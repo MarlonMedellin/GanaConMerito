@@ -41,9 +41,10 @@ GanaConMerito tiene activo el core real de producto:
 ## Implementado y validado recientemente
 
 ### Sprint 43 — Learning Paths + Misconception Signals - Base Implementation
-- Estado: CERRADO EN REPO.
+- Estado: CERRADO Y VERIFICADO EN RUNTIME (PASS).
 - Resultado: `learningSignals` trazables para misconception, subárea débil, patrón repetido, mismatch cognitivo y siguiente mejor práctica; recomendación pedagógica enriquecida sin mutar scoring ni sesión.
-- Límite aceptado: runtime público no verificado en esta corrida y calibración heurística pendiente con uso real.
+- Evidencia: Commit `fee91a4`, suite de regresión integral aprobada y validación pública en runtime.
+- Límite aceptado: calibración heurística pendiente con uso real.
 
 ### Sprint 42 — Rich Ingestion Normalization
 - Estado: CERRADO EN REPO.

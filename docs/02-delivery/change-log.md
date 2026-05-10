@@ -12,6 +12,14 @@ related:
 last_reviewed: 2026-05-10
 ---
 ## 2026-05-10
+- tipo: governance+ops
+- modulo: docs/qa/ops
+- resumen: Cierre operacional y probatorio de Sprints 31-43. Se sincroniza el VPS al commit `fee91a4`, se reconstruye el entorno Docker con metadatos reales y se valida el runtime público mediante suite de regresión integral (PASS). Se incluye fix de contrato en `scripts/ops-update-contract.test.ts` para robustez de validación.
+- sprint: Sprint 43 — Learning Paths + Misconception Signals - Base Implementation
+- agente: PM-Dev/Antigravity
+- relacionados: docs/04-quality/sprint-31-43-runtime-regression-report.md, fee91a4
+
+## 2026-05-10
 - tipo: feat+tutor+learning-signals
 - modulo: tutor/evidence/orchestrator/docs
 - resumen: Sprint 43 activa la capa base de `learningSignals` para detectar misconceptions, subáreas débiles, patrones repetidos y siguiente mejor práctica a partir de historial reciente y metadata gobernada, manteniendo guardrails de no revelación, no scoring y no autoridad operativa.

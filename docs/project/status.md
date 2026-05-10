@@ -35,19 +35,22 @@ Ultima actualizacion: 2026-05-10 — Sprint 43 (Learning Paths + Misconception S
 - **Árbol de deploy:** `/opt/gcm/app`.
 - **URL pública canónica:** `https://cnsc.profemarlon.com`.
 - **Consola operacional:** `https://cnsc.profemarlon.com/update.html`.
-- **Commit actual desplegado y verificado:** `07ceb1a`.
-- **Short hash verificado:** `07ceb1a`.
+- **Commit actual desplegado y verificado:** `fee91a4`.
+- **Short hash verificado:** `fee91a4`.
 
-## Sprint 43 — cerrado en repo
+## Sprint 43 — cerrado y verificado en runtime
 
 ### Learning Paths + Misconception Signals - Base Implementation
 
-**Estado:** CERRADO EN REPO; RUNTIME NO VERIFICADO EN ESTA CORRIDA
+**Estado:** CERRADO Y VERIFICADO EN RUNTIME (PASS)
 
 Objetivo principal:
 - transformar la metadata ya gobernada y normalizada en señales pedagógicas accionables para misconceptions, subáreas débiles y siguiente mejor práctica, sin romper los guardrails operativos del Tutor.
 
 Resultado en repo:
+- Implementación de `learningSignals`, `tutor-evidence-builder` y orquestación enriquecida.
+- Suite de pruebas de regresión de Sprints 31-43 ejecutada y aprobada (PASS).
+- Runtime público verificado en `cnsc.profemarlon.com` con paridad total de hash.
 - `src/types/tutor-turn.ts` incorpora `TutorLearningSignal` y `learningSignals` dentro de `userSession`.
 - `src/lib/tutor/tutor-evidence-builder.ts` deriva señales trazables desde historial reciente, desempeño y metadata del ítem con fallback conservador.
 - `src/lib/tutor/tutor-orchestrator.ts` usa esas señales para enriquecer `recommend_next_practice`, mantener disclaimers no oficiales y priorizar `misconceptionDetected` derivado sobre heurísticas más débiles.

@@ -16,11 +16,11 @@ last_reviewed: 2026-05-10
 
 # Sprint log
 
-## Sprint cerrado en repo — Sprint 43: Learning Paths + Misconception Signals - Base Implementation
-- **Estado**: CERRADO EN REPO
-- **Fecha de cierre de implementación**: 2026-05-10
-- **Rama de trabajo**: `codex/execute-sprint-43-for-ganaconmerito`
-- **Rama de promoción**: `Sprint-43-—-Learning-Paths-+-Misconception-Engine`
+## Sprint cerrado y verificado — Sprint 43: Learning Paths + Misconception Signals - Base Implementation
+- **Estado**: CERRADO Y VERIFICADO EN RUNTIME (PASS)
+- **Fecha de cierre y despliegue**: 2026-05-10
+- **Rama de promoción**: `master`
+- **Commit final verificado**: `fee91a4`
 - **Objetivo**: usar la metadata ya gobernada y normalizada para detectar misconceptions, priorizar debilidades y sugerir siguiente mejor práctica sin romper los guardrails del Tutor.
 
 ### Entregables principales
@@ -30,6 +30,13 @@ last_reviewed: 2026-05-10
 - `src/lib/tutor/tutor.test.ts` ampliado con cobertura específica de recomendación guiada por learning signals y preservación de guardrails.
 - `docs/project/status.md`, `docs/02-delivery/change-log.md` y `docs/01-product/backlog.md` alineados con Sprint 43 como implementación base vigente.
 
+### Evidencia operacional
+- `~/.openclaw/product` sincronizado a `fee91a4`.
+- `/opt/gcm/app` sincronizado a `fee91a4`.
+- Docker reconstruido con `APP_COMMIT=fee91a4`.
+- Suite de regresión integral Sprints 31-43: **PASS**.
+- Verificación pública en `https://cnsc.profemarlon.com`: **PASS**.
+
 ### Resultado funcional
 - El Tutor ya puede adjuntar señales `learningSignals` trazables a la sesión.
 - La recomendación de siguiente práctica ya puede usar evidencia reciente y metadata gobernada.
@@ -37,7 +44,6 @@ last_reviewed: 2026-05-10
 - No se transfiere autoridad oficial, scoring ni mutación de sesión al Tutor.
 
 ### Limitación aceptada del sprint
-- No hubo promoción a VPS ni verificación del runtime público en esta corrida.
 - La detección actual de misconceptions sigue siendo heurística y requiere calibración con uso real.
 
 ## Sprint cerrado en repo — Sprint 42: Rich Ingestion Normalization
