@@ -38,11 +38,11 @@ Ultima actualizacion: 2026-05-10 — Sprint 43 (Learning Paths + Misconception S
 - **Commit actual desplegado y verificado:** `07ceb1a`.
 - **Short hash verificado:** `07ceb1a`.
 
-## Sprint 43 — implementación base lista para promoción
+## Sprint 43 — cerrado en repo
 
 ### Learning Paths + Misconception Signals - Base Implementation
 
-**Estado:** IMPLEMENTACION BASE LISTA PARA PROMOCION; RUNTIME NO VERIFICADO EN ESTA CORRIDA
+**Estado:** CERRADO EN REPO; RUNTIME NO VERIFICADO EN ESTA CORRIDA
 
 Objetivo principal:
 - transformar la metadata ya gobernada y normalizada en señales pedagógicas accionables para misconceptions, subáreas débiles y siguiente mejor práctica, sin romper los guardrails operativos del Tutor.
