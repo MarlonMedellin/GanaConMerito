@@ -73,6 +73,34 @@ function emitLegacyWarning(file: string) {
   console.log("Keep advisory mode; do not treat this as CI blocking.");
 }
 
+
+const archiveReadyDocs = [
+  "docs/archive/archive-ready-queue.md",
+  "docs/02-delivery/sprint-33-post-merge-checklist.md",
+  "docs/02-delivery/sprint-33-repo-only-closeout.md"
+];
+
+const supersededDocs = [
+  "docs/02-delivery/sprint-33-post-merge-checklist.md",
+  "docs/02-delivery/sprint-33-repo-only-closeout.md",
+  "docs/technical-debt/sprint-33-actionable-debt-matrix.md"
+];
+
+function emitArchiveReadyWarning(file: string) {
+  console.log("\n[archive-ready-warning]");
+  console.log(`Archive-ready candidate touched: ${file}`);
+  console.log("Review:");
+  console.log("- docs/archive/archive-ready-queue.md");
+  console.log("- docs/project/canonical-docs.md");
+}
+
+function emitSupersededWarning(file: string) {
+  console.log("\n[superseded-doc-warning]");
+  console.log(`Superseded document touched: ${file}`);
+  console.log("Do not promote as executive source. Review drift policy.");
+  console.log("- docs/05-ops/drift-resolution-policy.md");
+}
+
 function main() {
   console.log('\nDocumentation trigger checker (advisory mode)');
   console.log('No blocking enforcement enabled.\n');
@@ -80,6 +108,8 @@ function main() {
   Object.entries(triggerMap).forEach(([source, rule]) => emitWarning(source, rule));
 
   legacyHighConflictDocs.forEach((file) => emitLegacyWarning(file));
+  archiveReadyDocs.forEach((file) => emitArchiveReadyWarning(file));
+  supersededDocs.forEach((file) => emitSupersededWarning(file));
 
   console.log('\nGovernance mode: advisory-heavy incremental hardening.\n');
 }

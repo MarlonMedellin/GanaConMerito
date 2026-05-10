@@ -1,3 +1,15 @@
+Status: legacy-reference
+Replaced by: docs/05-ops/runtime-and-release.md
+Canonical reference: docs/05-ops/runtime-and-release.md; docs/project/status.md
+Do not use for: claims runtime/release vigentes sin evidencia actual
+Last reviewed: 2026-05-10
+
+## Legacy authority context
+- Este documento ya NO define baseline runtime actual.
+- Consultar `runtime-and-release.md` y `status.md` para claims vigentes.
+- Conserva valor histórico de diagnóstico de madurez.
+---
+
 # Runtime Maturity Assessment — GanaConMerito
 
 ## Propósito

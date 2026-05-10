@@ -78,3 +78,27 @@ Corregir inmediatamente cuando:
 - la contradicción cambia interpretación operativa en el presente.
 
 Estado: advisory-only, sin enforcement bloqueante.
+
+
+## Archive transition handling
+
+Mover a archive cuando:
+- el documento ya está clasificado y contextualizado como no ejecutivo;
+- existe reemplazo canónico explícito;
+- la trazabilidad histórica se preserva con header y referencia cruzada.
+
+NO mover todavía cuando:
+- faltan referencias canónicas claras;
+- el documento sigue siendo consultado para auditoría operativa reciente;
+- hay riesgo alto de romper navegación documental actual.
+
+Mantener visible cuando:
+- su valor histórico es alto y aún aporta contexto de decisiones.
+
+Conservar contradicción histórica cuando:
+- está claramente marcada como histórica y no induce claims actuales.
+
+Preservar trazabilidad:
+- mantener archivo íntegro (sin borrado);
+- registrar en `archive-ready-queue.md` y `legacy-candidates.md`;
+- actualizar `change-log.md` al ejecutar migración futura.

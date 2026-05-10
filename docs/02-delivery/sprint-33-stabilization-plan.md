@@ -1,3 +1,15 @@
+Status: legacy-reference
+Replaced by: docs/02-delivery/sprint-log.md
+Canonical reference: docs/project/status.md; docs/02-delivery/sprint-log.md
+Do not use for: definir sprint vigente o estado operativo actual
+Last reviewed: 2026-05-10
+
+## Legacy authority context
+- Este plan es histórico del ciclo Sprint 33.
+- Para estado vigente consultar `status.md` y `sprint-log.md`.
+- Se conserva como evidencia de planeación y estabilización histórica.
+---
+
 # Sprint 33 — Stabilization, Governance and Runtime Confidence
 
 ## Estado

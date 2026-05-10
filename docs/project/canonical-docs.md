@@ -14,8 +14,8 @@ Update trigger:
 
 Objetivo: declarar jerarquía documental, autoridad y resolución de conflictos para reducir drift sin enforcement bloqueante.
 
-| File | Status | Authority priority | Canonical scope | Purpose | When to consult | When NOT to consult | Legacy interaction notes | Update trigger | Related files | Conflict resolution | Recommended owner |
-|---|---|---:|---|---|---|---|---|---|---|---|---|
+| File | Status | Authority priority | Canonical scope | Purpose | When to consult | When NOT to consult | Legacy interaction notes | Update trigger | Related files | Conflict resolution | Archive relationship | Historical dependency | Operational authority level | Recommended owner |
+|---|---|---:|---|---|---|---|---|---|---|---|---|---|---|---|
 | `AGENTS.md` | canonical | 1 | Gobernanza operativa transversal del repo | Reglas operativas para agentes IA. | Cambios de disciplina operativa o trazabilidad. | `docs/project/status.md`, `docs/05-ops/*` | Si contradice otros docs operativos, prevalece AGENTS en proceso de trabajo. | PM-Governance |
 | `docs/project/status.md` | canonical | 2 | Estado ejecutivo principal | Snapshot ejecutivo del estado real del proyecto. | Cambio de sprint activo, runtime reportado, drift crítico. | `docs/02-delivery/sprint-log.md`, `docs/02-delivery/change-log.md` | Ante contradicción de estado, `status.md` gana como fuente ejecutiva principal. | PM-Governance + Product Owner |
 | `docs/02-delivery/governance-hardening-roadmap.md` | canonical | 3 | Estrategia de transición | Fases y criterios del hardening incremental. | Cambio de fase o criterios de salida. | `docs/05-ops/documentation-trigger-map.md`, `docs/05-ops/drift-resolution-policy.md` | Si hay conflicto estratégico, roadmap prevalece sobre planes legacy. | PM-Governance |
