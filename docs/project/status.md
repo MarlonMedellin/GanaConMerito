@@ -51,15 +51,13 @@ Sprint 46 queda **CERRADO EN REPO (DOCUMENTAL)**; runtime no revalidado en esta 
 - `docs/project/canonical-docs.md` (indice canonico minimo para evitar competencia entre fuentes).
 - `docs/archive/legacy-candidates.md` (matriz inicial de candidatos legacy para reduccion documental fase 3).
 
-## capa base de señales pedagógicas ya integrada en repo.
-
 ## Estado general
 
-**Estado:** producto activo con core operativo, Tutor GCM gobernado, capa editorial de normalizacion rica conectada al banco activo, senales pedagogicas persistidas, learning signals integradas y calibracion/metricas internas basicas verificadas en runtime; capa base de senales pedagogicas ya integrada en repo.
+**Estado:** producto activo con core operativo, Tutor GCM gobernado, capa editorial de normalizacion rica conectada al banco activo, senales pedagogicas persistidas, learning signals integradas y calibracion/metricas internas basicas verificadas en runtime; capa base de senales pedagogicas ya integrada en repo (capa base de señales pedagógicas ya integrada en repo).
 
 **Producto:** login, onboarding, practica y dashboard siguen siendo las superficies activas; Tutor GCM permanece bajo contrato, sin autoridad sobre scoring, avance ni estado de sesion.
 
-**Sprint actual en repo:** Sprint 45 — Calibracion interna de senales pedagogicas y metricas internas del Tutor.
+**Sprint actual en repo:** Sprint 46 — Cierre normativo del Tutor GCM y clasificacion de evidencia documental.
 
 **Estado del sprint actual:** CERRADO EN REPO (DOCUMENTAL); runtime no revalidado en esta corrida.
 
@@ -208,7 +206,7 @@ Resultado en repo:
 
 El proyecto ya tiene fundacion semantica, validacion editorial rica, senales pedagogicas trazables, persistencia de senales del Tutor y calibracion/metricas internas basicas verificadas en runtime.
 
-Estado Sprint 45 (calibracion interna de senales): **CERRADO TOTAL Y VERIFICADO EN RUNTIME (PASS)**.
+Estado Sprint 46 (cierre normativo documental): **CERRADO EN REPO (DOCUMENTAL, ADVISORY-HEAVY)**.
 
 ## Estado normativo
 

@@ -45,7 +45,7 @@ GanaConMerito tiene activo el core real de producto:
 ### Sprint 46 — Cierre normativo del Tutor GCM
 - Estado: CERRADO EN REPO (DOCUMENTAL, advisory-heavy).
 - Resultado: clasificacion explicita por evidencia (`source_verified`, `synthesized_governed_unverified`, `placeholder`, `advisory_only`), limites del Tutor/Tutor Truth reforzados y jerarquia documental aclarada.
-- Evidencia: actualizaciones cruzadas en `status`, `sprint-log`, `change-log`, `canonical-docs` y `tutor-gcm-normative-verification`.
+- Evidencia: actualizaciones cruzadas en `status`, `sprint-log`, `change-log`, `backlog` y `tutor-gcm-normative-verification`.
 - Limite aceptado: sin anexos oficiales nuevos, el frente normativo sigue en `synthesized_governed_unverified`.
 
 ### Sprint 45 — Calibracion y metricas/analytics internos del Tutor
