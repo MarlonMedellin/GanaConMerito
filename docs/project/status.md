@@ -5,24 +5,24 @@ project: ganaconmerito
 owner: marlon-arcila
 status: active
 artifact_type: project
-last_reviewed: 2026-05-09
+last_reviewed: 2026-05-10
 ---
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-05-09 — Sprint 41 (Semantic Governance Foundation v1).
+Ultima actualizacion: 2026-05-10 — Sprint 42 (Rich Ingestion Normalization).
 
 ## Estado general
 
-**Estado:** producto activo con core operativo, Tutor GCM gobernado y base semántica v1 consolidada en repo para evitar drift taxonómico antes de la ingesta rica.
+**Estado:** producto activo con core operativo, Tutor GCM gobernado y capa editorial de normalización rica ya conectada al banco activo en repo.
 
 **Producto:** login, onboarding, practica y dashboard siguen siendo las superficies activas; Tutor GCM permanece bajo contrato, sin autoridad sobre scoring, avance ni estado de sesión.
 
-**Sprint actual en repo:** Sprint 41 — Semantic Governance Foundation v1.
+**Sprint actual en repo:** Sprint 42 — Rich Ingestion Normalization.
 
-**Sprint siguiente preparado:** Sprint 42 — Rich Ingestion Normalization.
+**Sprint siguiente preparado:** Sprint 43 — Learning Paths + Misconception Engine.
 
-**Sprint anterior cerrado:** Sprint 39 — Decoupled Update Runtime Worker.
+**Sprint anterior cerrado:** Sprint 41 — Semantic Governance Foundation v1.
 
 **Rama canonica:** `master`.
 
@@ -38,31 +38,44 @@ Ultima actualizacion: 2026-05-09 — Sprint 41 (Semantic Governance Foundation v
 - **Commit actual desplegado y verificado:** `07ceb1a`.
 - **Short hash verificado:** `07ceb1a`.
 
-## Sprint 41 — activo en repo, listo para cierre de implementación
+## Sprint 42 — cerrado en repo
+
+### Rich Ingestion Normalization
+
+**Estado:** CERRADO EN REPO; RUNTIME NO VERIFICADO EN ESTA CORRIDA
+
+Objetivo principal:
+- conectar la gobernanza semántica de Sprint 41 con la lectura real del banco activo para validar y normalizar metadata rica sin romper compatibilidad legacy ni inventar semántica ausente.
+
+Resultado en repo:
+- `scripts/validate-question-bank.ts` produce validación editorial clasificatoria y cobertura por taxonomía, `targetPosition` y categorías de tags.
+- `src/domain/taxonomy/normalize-item.ts` preserva taxonomía fuente, normaliza tags planos del corpus activo y deja warnings trazables en vez de falsos canónicos.
+- `src/domain/taxonomy/validators.ts` separa warnings editoriales legacy de errores estructurales reales.
+- `scripts/recent-sprints-contract.test.ts` quedó realineado al estado documental vigente del repo.
+- La salida editorial ya distingue `apt`, `apt_with_warnings` y `rejected`.
+
+Limitación explícita que queda aceptada:
+- La adopción runtime punta a punta de metadata rica sigue dependiendo de disponibilidad real de columnas y contratos activos del banco en producción.
+- Este cierre no incluye promoción a VPS ni verificación del runtime público.
+
+## Sprint 43 — preparado
+
+### Learning Paths + Misconception Engine
+
+Objetivo principal:
+- convertir la metadata ya gobernada y normalizada en señales pedagógicas accionables para refuerzo, misconceptions y siguiente mejor práctica, sin romper los guardrails del Tutor.
+
+## Sprint 41 — cerrado en repo
 
 ### Semantic Governance Foundation v1
 
-**Estado:** IMPLEMENTACION DE REPO AJUSTADA; CIERRE OPERATIVO PENDIENTE DE BUNDLE DE VALIDACION
-
-Objetivo principal:
-- consolidar taxonomía canónica, validadores, normalización legacy gobernada y adaptadores compatibles del Tutor sin inventar metadata ausente.
+**Estado:** IMPLEMENTACION DE REPO AJUSTADA
 
 Resultado en repo:
 - `src/domain/taxonomy/catalogs.ts` gobierna valores canónicos, aliases, deprecaciones y valores prohibidos.
 - `src/domain/taxonomy/validators.ts` valida taxonomía y tags con rechazo estricto de desconocidos y soporte deprecado explícito.
 - `src/domain/taxonomy/normalize-item.ts` deja de fabricar metadata ausente y la reemplaza por degradación trazable con `missingTaxonomy` y `governanceWarnings`.
 - `src/domain/tutor/question-truth-adapter.ts` preserva el `TutorSupportContract` seguro, incluida `responsePolicy`, mientras integra la gobernanza semántica.
-- `src/lib/tutor/tutor.test.ts` cubre rechazo de tags desconocidos, deprecaciones, ausencia explícita de taxonomía y preservación de guardrails.
-
-Limitación explícita que queda aceptada:
-- La lectura runtime productiva sigue consumiendo principalmente `area` y `competency`; la adopción punta a punta del resto de metadata gobernada se traslada a Sprint 42.
-
-## Sprint 42 — preparado
-
-### Rich Ingestion Normalization
-
-Objetivo principal:
-- llevar la taxonomía y metadata rica ya gobernadas en código hacia la lectura real del banco, la normalización de lotes y la validación editorial por cobertura y errores.
 
 ## Sprint 39 — cerrado
 
@@ -77,33 +90,10 @@ Validaciones reportadas por operación VPS:
 - Contenedor `gcm-app` reiniciado mediante `docker compose up -d gcm-app`.
 - Aplicación reportada corriendo en producción bajo la nueva versión.
 
-## Sprint 37.1 — cerrado
-
-### Runtime Parity & Operational Verification
-
-**Estado:** PASS
-
-Validaciones completadas:
-- Runtime verified: yes
-- Deploy parity: yes
-- Docker verified: yes
-- Smoke local/publico: PASS
-- qa:e2e:api: PASS
-- qa:e2e:ui: PASS
-- npm run lint: PASS
-- npm run build: PASS
-- npm run test:recent-sprints: PASS
-- npm run test:unit: PASS
-
 ## Resumen de situación
 
-El proyecto sale de Sprint 41 con una base semántica más segura en repo y ya puede mover el foco a la normalización real de ingesta, sin vender todavía que toda la metadata rica esté adoptada de punta a punta en runtime.
+El proyecto ya tiene fundación semántica y capa editorial de validación rica en repo. El siguiente frente natural es usar esa metadata para detectar misconceptions, priorizar subáreas débiles y sugerir prácticas de refuerzo sin convertir al Tutor en autoridad operativa.
 
 ## Estado normativo
 
 Sprint 22 se mantiene en estado `synthesized_governed_unverified` dado que el sistema todavía no cuenta con anexos oficiales suficientes para promover `source_verified`.
-
-
-## Sprint 42 — en ejecución
-
-Se implementa normalización de ingesta rica con validación editorial y reporte de cobertura sin romper compatibilidad legacy.
