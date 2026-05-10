@@ -11,41 +11,44 @@ related:
   - PROD-BACKLOG
   - DEL-CHANGE-LOG
   - QUAL-RISK-REGISTER
-last_reviewed: 2026-05-09
+last_reviewed: 2026-05-10
 ---
 
 # Sprint log
 
-## Sprint listo para cierre de implementación — Sprint 41: Semantic Governance Foundation v1
+## Sprint cerrado en repo — Sprint 42: Rich Ingestion Normalization
+- **Estado**: CERRADO EN REPO
+- **Fecha de cierre**: 2026-05-10
+- **Rama de trabajo**: `codex/execute-sprint-42-for-ganaconmerito`
+- **Objetivo**: conectar la gobernanza semántica de Sprint 41 con la lectura real del banco activo mediante validación editorial, cobertura y fallback legacy trazable.
+
+### Entregables principales
+- `scripts/validate-question-bank.ts` actualizado con validación editorial clasificatoria y cobertura verificable.
+- `src/domain/taxonomy/normalize-item.ts` ampliado para preservar `sourceTaxonomy`, normalizar tags planos del corpus activo y transportar shape operativo del item rico sin inventar metadata ausente.
+- `src/domain/taxonomy/validators.ts` ampliado con `validateRichItemEditorial` y normalización de tags planos legacy.
+- `src/lib/tutor/tutor.test.ts` ampliado con cobertura de validación Sprint 42 y normalización del corpus activo.
+- `scripts/recent-sprints-contract.test.ts` realineado al estado documental vigente del repo.
+
+### Resultado funcional
+- El pipeline ya distingue `apt`, `apt_with_warnings` y `rejected`.
+- La cobertura editorial ya se emite por `area/subarea/competency`, `targetPosition` y categorías de tags.
+- Los warnings de taxonomía legacy quedan visibles en vez de convertirse en canon silencioso.
+- Los errores estructurales reales siguen pudiendo rechazar ítems.
+
+### Limitacion aceptada del sprint
+- No hubo promoción a VPS ni verificación del runtime público en esta corrida.
+- La adopción runtime completa de columnas ricas queda condicionada a disponibilidad real en la fuente de datos operativa.
+
+## Sprint siguiente preparado — Sprint 43: Learning Paths + Misconception Engine
+- **Estado**: PREPARADO
+- **Objetivo**: usar la metadata ya gobernada y normalizada para detectar misconceptions, priorizar debilidades y sugerir siguiente mejor práctica sin romper los guardrails del Tutor.
+- **Plan operativo**: `docs/02-delivery/sprint-43-learning-paths-misconception-engine-plan.md`
+
+## Sprint cerrado en repo — Sprint 41: Semantic Governance Foundation v1
 - **Estado**: IMPLEMENTACION AJUSTADA EN REPO
 - **Fecha de ajuste**: 2026-05-09
 - **Rama de trabajo**: `codex/execute-sprint-41-for-semantic-governance`
 - **Objetivo**: consolidar taxonomía canónica, validadores, normalizador legacy gobernado y adaptadores del Tutor sin inventar metadata ausente ni degradar los guardrails ya vigentes.
-
-### Entregables principales
-- `src/domain/taxonomy/catalogs.ts` endurecido con taxonomía canónica, aliases, deprecaciones y valores prohibidos coherentes.
-- `src/domain/taxonomy/validators.ts` corregido para soportar deprecaciones reales de tags.
-- `src/domain/taxonomy/normalize-item.ts` actualizado para dejar explícitos `missingTaxonomy` y `governanceWarnings` en vez de completar silenciosamente metadata faltante.
-- `src/domain/tutor/question-truth-adapter.ts` corregido para preservar `responsePolicy` y el contrato seguro del Tutor.
-- `src/lib/tutor/tutor.test.ts` ampliado con pruebas para ausencia explícita de taxonomía, warnings controlados, deprecaciones y preservación del contrato seguro.
-- `docs/03-architecture/semantic-governance-foundation-v1.md` actualizado para fijar alcance real, limitaciones aceptadas y criterio de cierre.
-
-### Limitacion aceptada del sprint
-- La lectura runtime productiva sigue usando principalmente `area` y `competency` del banco activo.
-- La adopción punta a punta de `subarea`, `nivel_educativo`, `tipo_item`, `nivel_cognitivo`, `dificultad`, `targetPosition`, `targetRole`, `applicantProfile` y `tags` pasa al Sprint 42.
-
-### Cierre operativo pendiente
-- Ejecutar `npm run test:tutor`.
-- Ejecutar `npm run test:recent-sprints`.
-- Ejecutar `npm run test:unit`.
-- Ejecutar `npm run lint`.
-- Ejecutar `npm run build`.
-- Si aplica promoción, alinear `~/.openclaw/product`, luego `/opt/gcm/app`, y después actualizar, reconstruir, reiniciar o verificar Docker antes de validar en `https://cnsc.profemarlon.com`.
-
-## Sprint siguiente preparado — Sprint 42: Rich Ingestion Normalization
-- **Estado**: PREPARADO
-- **Objetivo**: llevar la gobernanza semántica ya versionada en código hacia la lectura real de ítems ricos, el pipeline de normalización, reportes editoriales y cobertura operacional.
-- **Plan operativo**: `docs/02-delivery/sprint-42-rich-ingestion-normalization-plan.md`
 
 ## Sprint cerrado — Sprint 39: Decoupled Update Runtime Worker
 - **Estado**: CERRADO
@@ -67,29 +70,3 @@ last_reviewed: 2026-05-09
 - Docker reconstruido con `APP_COMMIT=07ceb1a`.
 - `gcm-app` reiniciado exitosamente mediante `docker compose up -d gcm-app`.
 - Runtime reportado en producción sobre la nueva versión.
-
-### Riesgo residual
-- El worker host-side aún no queda instalado/orquestado formalmente en VPS mediante scheduler/service persistente.
-- El cierre se acepta por validación de paridad `product/deploy`, rebuild Docker y runtime operativo.
-
-## Sprint cerrado — Sprint 37.1: Runtime Parity & Operational Verification
-- **Estado**: PASS
-- **Fecha de cierre**: 2026-05-08
-- **Runtime verified**: yes
-- **Deploy parity**: yes
-- **Docker verified**: yes
-- **Validaciones**: Se resolvieron errores de tipos en los tests E2E y se alinearon la versión de `product` y `app`. `update.html` funciona y las pruebas CI y Playwright pasaron en `/opt/gcm/app` sobre el entorno `cnsc.profemarlon.com`.
-
-## Sprint cerrado — Sprint 37: Tutor Trace Signals and Governance Stabilization Prep
-- **Estado**: CERRADO
-- **Fecha de apertura**: 2026-05-08
-- **Rama de trabajo esperada**: `sprint-37-tutor-trace-signals-governance-prep`
-- **Nota de entorno actual**: la rama disponible localmente es `work`; se deja desvio reportado sin tocar deploy.
-- **Objetivo**: alinear contrato documental reciente, endurecer guardrails tutor de no revelacion y agregar trazas minimas sin persistencia pesada.
-
-
-## Sprint en ejecución — Sprint 42: Rich Ingestion Normalization
-- **Estado**: EN EJECUCION
-- **Fecha de inicio**: 2026-05-10
-- **Rama de trabajo**: `work`
-- **Avance**: se añadió validación editorial clasificatoria y reporte de cobertura en `scripts/validate-question-bank.ts`, manteniendo fallback legacy.
