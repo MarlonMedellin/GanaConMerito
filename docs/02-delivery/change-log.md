@@ -28,6 +28,23 @@ last_reviewed: 2026-05-10
 - estado: in-progress (fase 3 documental en ejecucion; sin cierre de roadmap)
 - limitaciones: inventario inicial; no se archivaron ni removieron documentos legacy en esta entrega.
 
+
+## 2026-05-10
+- tipo: docs+governance+sprint46-post-review-remediation
+- modulo: tutor/normativa/docs/status-backlog
+- resumen: Remediacion post-review de consistencia documental para Sprint 46. Se alinea `status.md` con Sprint 46 como cierre vigente en repo, se preserva la frase contractual requerida por `recent-sprints-contract` y se corrige en `backlog.md` la referencia de evidencia para no mencionar documentos no tocados en la entrega. La validacion documental y de tests queda cerrada con `npm run check:doc-triggers`, `npm run lint` y `npm test` en PASS.
+- sprint: Sprint 46 — Cierre normativo del Tutor GCM
+- agente: PM-Gauss
+- relacionados: docs/project/status.md, docs/01-product/backlog.md, docs/02-delivery/change-log.md, PR #79
+
+## 2026-05-10
+- tipo: governance+docs+tutor-normative-closure
+- modulo: tutor/normativa/source-truth/docs
+- resumen: Sprint 46 cierra el frente normativo documental del Tutor GCM con taxonomia explicita de evidencia (`source_verified`, `synthesized_governed_unverified`, `placeholder`, `advisory_only`), refuerzo de limites de autoridad y registro de drift/placeholders sin promocionar claims de `source_verified`.
+- sprint: Sprint 46 — Cierre normativo del Tutor GCM
+- agente: PM-Gauss
+- relacionados: docs/project/status.md, docs/project/canonical-docs.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/01-product/backlog.md, docs/02-delivery/tutor-gcm-normative-verification.md, docs/01-product/source-truth/normative-source-truth-v1.md
+
 ## 2026-05-10
 - tipo: qa+ops+runtime+closure
 - modulo: tutor/runtime/docker/vps

@@ -24,7 +24,7 @@ last_reviewed: 2026-05-10
 # Sprint log
 
 ## Current delivery state
-- **Current/last real operational block**: Sprint 45 — Calibracion interna de senales pedagogicas y metricas internas del Tutor (cerrado total y verificado en runtime el 2026-05-10).
+- **Current/last real operational block**: Sprint 46 — Cierre normativo del Tutor GCM (cerrado en repo documental el 2026-05-10).
 - **Last runtime-verified commit**: `fcc40cb`.
 - **Governance Hardening Roadmap state**: Fase 1 y Fase 2 iniciadas; Fase 3 en ejecucion documental (reduccion y clasificacion), Fases 4-5 futuras.
 - **Open risks**:
@@ -32,6 +32,26 @@ last_reviewed: 2026-05-10
   - trazabilidad multiagente aun advisory y sin enforcement automatico;
   - parte del QA historico sigue narrativo y puede competir con baseline ejecutiva;
   - integracion futura del Tutor con LLM real sigue pendiente como deuda tecnica futura.
+
+
+## Sprint 46 — cierre normativo del Tutor GCM
+- **Estado**: CERRADO EN REPO (DOCUMENTAL)
+- **Fecha de cierre**: 2026-05-10
+- **Rama de promocion**: `master`
+- **Objetivo**: cerrar frente normativo del Tutor dejando clasificacion verificable de evidencia y limites de autoridad sin abrir features.
+
+### Entregables principales
+- Clasificacion normativa transversal: `source_verified`, `synthesized_governed_unverified`, `placeholder`, `advisory_only`.
+- Actualizacion de documentos ejecutivos para evitar claims normativos fuertes sin respaldo.
+- Registro explicito de placeholders y drift tolerado en frente Tutor Truth.
+
+### Evidencia operacional
+- Cambios solo documentales en repo local.
+- `npm run check:doc-triggers`, `npm run lint` y `npm test` ejecutados en esta corrida.
+- Runtime publico NO revalidado en esta entrega.
+
+### Limitacion aceptada del sprint
+- No se cargaron anexos oficiales nuevos; se conserva estado `synthesized_governed_unverified`.
 
 ## Sprint 45 — cerrado total y verificado en runtime
 - **Estado**: CERRADO TOTAL Y VERIFICADO EN RUNTIME (PASS)

@@ -41,6 +41,13 @@ GanaConMerito tiene activo el core real de producto:
 
 ## Implementado y validado recientemente
 
+
+### Sprint 46 — Cierre normativo del Tutor GCM
+- Estado: CERRADO EN REPO (DOCUMENTAL, advisory-heavy).
+- Resultado: clasificacion explicita por evidencia (`source_verified`, `synthesized_governed_unverified`, `placeholder`, `advisory_only`), limites del Tutor/Tutor Truth reforzados y jerarquia documental aclarada.
+- Evidencia: actualizaciones cruzadas en `status`, `sprint-log`, `change-log`, `backlog` y `tutor-gcm-normative-verification`.
+- Limite aceptado: sin anexos oficiales nuevos, el frente normativo sigue en `synthesized_governed_unverified`.
+
 ### Sprint 45 — Calibracion y metricas/analytics internos del Tutor
 - Estado: CERRADO TOTAL Y VERIFICADO EN RUNTIME (PASS).
 - Resultado: intensidad de senales (`strong|weak|insufficient`), `recommendationEvidenceCount`, separacion `evidenceVsInference`, `likelyFalsePositive` y metricas internas agregadas para cobertura, suficiencia y frecuencia de senales del Tutor.
@@ -85,7 +92,7 @@ GanaConMerito tiene activo el core real de producto:
 9. Mantener la expansion del banco bajo la regla editorial: taxonomia primero, perfiles como segunda capa opcional.
 
 ## Next
-1. Sprint 46 — consolidacion tecnica posterior a la calibracion: refinar calidad de evidencia por sesion, revisar ruido/falso positivo y endurecer lectura operativa de metricas sin abrir scoring ni psicometria fuerte.
+1. Sprint 47 — consolidacion tecnica posterior a la calibracion: refinar calidad de evidencia por sesion, revisar ruido/falso positivo y endurecer lectura operativa de metricas sin abrir scoring ni psicometria fuerte.
 2. Cierre normativo real del Tutor: cargar anexos oficiales, reemplazar placeholders y rehacer revision documental cruzada.
 3. Release y runtime confiables: CI minima en GitHub Actions, build, tests unitarios, validacion documental y disciplina publica de runtime.
 4. Validacion visual aislada del resumen de trazas: obtener evidencia publica nueva del bloque de resumen del Tutor en dashboard si sigue siendo artefacto de cierre requerido.
