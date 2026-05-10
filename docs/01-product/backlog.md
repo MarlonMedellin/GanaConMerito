@@ -34,10 +34,16 @@ GanaConMerito tiene activo el core real de producto:
 - sistema editorial del banco definido por taxonomia primaria (`area`, `subarea`, `competency`) y segmentacion secundaria opcional por perfil docente
 - fundacion de gobernanza semantica v1 ajustada en repo para evitar drift taxonomico y tags libres
 - normalizacion editorial rica conectada al corpus activo con warnings legacy y rechazo estructural real
+- capa base de `learningSignals` para misconception detection y siguiente mejor práctica ya integrada en repo
 - **Cierre funcional Tutor GCM (Sprint 21):** PASS con WARN explícito.
 - **Frente normativo Tutor GCM (Sprint 22):** PASS con WARN explícito; contrato y guardrails verificados, fuente oficial suficiente pendiente.
 
 ## Implementado y validado recientemente
+
+### Sprint 43 — Learning Paths + Misconception Signals - Base Implementation
+- Estado: IMPLEMENTACION BASE LISTA PARA PROMOCION.
+- Resultado: `learningSignals` trazables para misconception, subárea débil, patrón repetido, mismatch cognitivo y siguiente mejor práctica; recomendación pedagógica enriquecida sin mutar scoring ni sesión.
+- Límite aceptado: runtime público no verificado en esta corrida y calibración heurística pendiente con uso real.
 
 ### Sprint 42 — Rich Ingestion Normalization
 - Estado: CERRADO EN REPO.
@@ -65,12 +71,11 @@ GanaConMerito tiene activo el core real de producto:
 9. Mantener la expansion del banco bajo la regla editorial: taxonomia primero, perfiles como segunda capa opcional.
 
 ## Next
-1. **Sprint 43 — Learning Paths + Misconception Engine**: usar la metadata ya gobernada y normalizada para detectar misconceptions, priorizar debilidades y sugerir siguiente mejor práctica.
-2. **Cierre normativo real del tutor**: cargar anexos oficiales, reemplazar placeholders y rehacer revision documental cruzada.
-3. **Persistencia y metricas del Tutor GCM**: guardar `TutorTurnTrace` para metricas pedagogicas y auditoria operativa.
-4. **Release y runtime confiables**: CI minima en GitHub Actions, build, tests unitarios, validacion documental y disciplina publica de runtime.
-5. **Validacion visual aislada del resumen de trazas**: obtener evidencia publica nueva del bloque de resumen del tutor en dashboard si sigue siendo artefacto de cierre requerido.
-6. **Runtime topology doc**: documentar `docker-compose.yml`, env file, dominio, proxy y politica de secretos.
+1. Persistencia y calibración de `learningSignals` y `TutorTurnTrace` con evidencia real de uso.
+2. Cierre normativo real del tutor: cargar anexos oficiales, reemplazar placeholders y rehacer revision documental cruzada.
+3. Release y runtime confiables: CI minima en GitHub Actions, build, tests unitarios, validacion documental y disciplina publica de runtime.
+4. Validacion visual aislada del resumen de trazas: obtener evidencia publica nueva del bloque de resumen del tutor en dashboard si sigue siendo artefacto de cierre requerido.
+5. Runtime topology doc: documentar `docker-compose.yml`, env file, dominio, proxy y politica de secretos.
 
 ## Later
 1. Admin para editar fuente de verdad normativa y perfiles.
@@ -79,5 +84,3 @@ GanaConMerito tiene activo el core real de producto:
 4. Dashboard interno de uso del Tutor GCM.
 5. Personalizacion pedagogica avanzada por concurso/perfil.
 6. Refactor liviano de `PracticeSession` segun `docs/01-product/future-practice-session-light-refactor.md`.
-
-- [x] Sprint 43 base: misconception engine + learning paths sidecar con fallback honesto y sin autoridad normativa. (2026-05-10)
