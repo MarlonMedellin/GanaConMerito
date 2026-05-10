@@ -28,7 +28,13 @@ last_reviewed: 2026-05-10
 - estado: in-progress (fase 3 documental en ejecución; sin cierre de roadmap)
 - limitaciones: inventario inicial; no se archivaron ni removieron documentos legacy en esta entrega.
 
-
+## 2026-05-10
+- tipo: qa+ops+runtime+closure
+- modulo: tutor/runtime/docker/vps
+- resumen: Sprint 44 queda ampliamente completado tras validación runtime integral en VPS y URL pública sobre `54efd43`. Runtime smoke, postdeploy, API E2E y UI Playwright reportan PASS. Se mantiene pendiente únicamente revisión humana final como aceptación operativa. La integración futura del Tutor con LLM real queda registrada como deuda técnica posterior.
+- sprint: Sprint 44 — Persistencia, calibración y analytics del Tutor
+- agente: GPT-5.5-Thinking
+- relacionados: docs/project/status.md, docs/02-delivery/sprint-log.md, 54efd43, /opt/gcm/env/gcm-app.env, https://cnsc.profemarlon.com
 
 ## 2026-05-10
 - tipo: feat+tutor+calibration-lite
