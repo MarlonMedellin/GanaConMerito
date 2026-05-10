@@ -10,14 +10,14 @@ last_reviewed: 2026-05-10
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-05-10 — Sprint 46 (Cierre normativo del Tutor GCM).
+Ultima actualizacion: 2026-05-10 — Sprint 47 (Mantenimiento menor y saneamiento final).
 
 ---
 
 # Executive Operational Snapshot
 
 ## Current Sprint
-Sprint 46 — Cierre normativo del Tutor GCM y clasificacion de evidencia documental.
+Sprint 47 — Mantenimiento menor y saneamiento final.
 
 ## Current Runtime State
 Runtime publico verificado en `https://cnsc.profemarlon.com` sobre `fcc40cb`.
@@ -26,24 +26,23 @@ Runtime publico verificado en `https://cnsc.profemarlon.com` sobre `fcc40cb`.
 `fcc40cb`
 
 ## Current Sprint Status
-Sprint 46 queda **CERRADO EN REPO (DOCUMENTAL)**; runtime no revalidado en esta corrida.
+Sprint 47 queda **CERRADO EN REPO (CIERRE DOCUMENTAL Y DE TRAZABILIDAD)**; runtime no revalidado en esta corrida.
 
 ## Known Drift
-- Persisten diferencias entre documentacion historica Sprint 33 y estado operativo Sprint 45.
 - Persisten contratos y validaciones parcialmente narrativas fuera del baseline canonico.
 - La trazabilidad multiagente todavia no es enforcement obligatorio.
-- La integracion del Tutor con LLM real queda como deuda tecnica futura y no forma parte del cierre de Sprint 45.
+- La integracion del Tutor con LLM real queda como deuda tecnica futura y no forma parte del cierre de Sprint 47.
 
 ## Pending Debt
 - calibracion posterior de senales con evidencia de uso real;
-- cierre normativo real del Tutor con anexos oficiales suficientes;
+- carga de anexos oficiales suficientes para reevaluar `source_verified`;
 - endurecimiento de trazabilidad;
 - sincronizacion documental automatica;
 - reduccion de documentacion legacy;
 - integracion fuerte rich-only.
 
 ## Last Audit
-2026-05-10 — validacion runtime VPS Sprint 45 y cierre documental operativo.
+2026-05-10 — saneamiento final posterior a Sprint 46; runtime no revalidado en esta entrega.
 
 ---
 
@@ -53,15 +52,15 @@ Sprint 46 queda **CERRADO EN REPO (DOCUMENTAL)**; runtime no revalidado en esta 
 
 ## Estado general
 
-**Estado:** producto activo con core operativo, Tutor GCM gobernado, capa editorial de normalizacion rica conectada al banco activo, senales pedagogicas persistidas, learning signals integradas y calibracion/metricas internas basicas verificadas en runtime; capa base de senales pedagogicas ya integrada en repo (capa base de señales pedagógicas ya integrada en repo).
+**Estado:** producto activo con core operativo, Tutor GCM gobernado, capa editorial de normalizacion rica conectada al banco activo, senales pedagogicas persistidas, learning signals integradas y calibracion/metricas internas basicas verificadas en runtime; cierre normativo documental y saneamiento final de trazabilidad completados en repo sin nuevos claims de runtime.
 
 **Producto:** login, onboarding, practica y dashboard siguen siendo las superficies activas; Tutor GCM permanece bajo contrato, sin autoridad sobre scoring, avance ni estado de sesion.
 
-**Sprint actual en repo:** Sprint 46 — Cierre normativo del Tutor GCM y clasificacion de evidencia documental.
+**Sprint actual en repo:** Sprint 47 — Mantenimiento menor y saneamiento final.
 
-**Estado del sprint actual:** CERRADO EN REPO (DOCUMENTAL); runtime no revalidado en esta corrida.
+**Estado del sprint actual:** CERRADO EN REPO (CIERRE DOCUMENTAL Y DE TRAZABILIDAD); runtime no revalidado en esta corrida.
 
-**Sprint anterior cerrado:** Sprint 44 — Persistencia, calibracion y analytics del Tutor.
+**Sprint anterior cerrado:** Sprint 46 — Cierre normativo del Tutor GCM.
 
 **Rama canonica:** `master`.
 
@@ -77,6 +76,20 @@ Sprint 46 queda **CERRADO EN REPO (DOCUMENTAL)**; runtime no revalidado en esta 
 - **Commit actual desplegado y verificado:** `fcc40cb`.
 - **Short hash verificado:** `fcc40cb`.
 
+## Sprint 47 — mantenimiento menor y saneamiento final
+
+### Estado
+**CERRADO EN REPO (DOCUMENTAL, CIERRE CORTO)**
+
+### Resultado ejecutivo
+- Se alinea el estado ejecutivo post-Sprint 46 entre `status.md`, `sprint-log.md`, `change-log.md` y `backlog.md`.
+- Se corrigen referencias residuales del sprint anterior para que el siguiente frente no compita con la secuencia real ya decidida.
+- Se deja Sprint 47 como bloque corto de cierre, sin abrir cambios funcionales, sin claims de runtime nuevos y sin reabrir hardening grande.
+
+### Evidencia y limites
+- Evidencia positiva: saneamiento de trazabilidad y consistencia canonica en repo.
+- Falta de evidencia: no se reejecutaron validaciones locales desde este entorno por ausencia de checkout operativo del repo.
+- Runtime: no verificado en esta entrega.
 
 ## Sprint 46 — cierre normativo documental del Tutor GCM
 
@@ -206,7 +219,7 @@ Resultado en repo:
 
 El proyecto ya tiene fundacion semantica, validacion editorial rica, senales pedagogicas trazables, persistencia de senales del Tutor y calibracion/metricas internas basicas verificadas en runtime.
 
-Estado Sprint 46 (cierre normativo documental): **CERRADO EN REPO (DOCUMENTAL, ADVISORY-HEAVY)**.
+Estado Sprint 47 (mantenimiento menor y saneamiento final): **CERRADO EN REPO (CIERRE DOCUMENTAL Y DE TRAZABILIDAD)**.
 
 ## Estado normativo
 
