@@ -29,6 +29,14 @@ last_reviewed: 2026-05-10
 - limitaciones: inventario inicial; no se archivaron ni removieron documentos legacy en esta entrega.
 
 
+
+## 2026-05-10
+- tipo: feat+tutor+calibration-lite
+- modulo: tutor/analytics/dashboard
+- resumen: Sprint 44 agrega calibración descriptiva simple sobre trazas del Tutor con `misconceptionRate` y `signalLevel` (`low_signal|emerging_signal|usable_signal`) derivado solo del número de turnos y señales observadas. Sin scoring nuevo, sin ponderaciones complejas y sin psicometría adicional.
+- sprint: Sprint 44 — Persistencia, calibración y analytics
+- agente: GPT-5.3-Codex
+- relacionados: src/lib/tutor/tutor-trace-summary.ts, src/lib/tutor/tutor-trace-summary.test.ts, src/components/tutor/tutor-trace-summary-card.tsx
 ## 2026-05-10
 - tipo: governance+docs+traceability-remediation
 - modulo: tutor/traces/dashboard/docs

@@ -8,6 +8,8 @@ type TopGuardrail = { guardrail: string; count: number };
 type TutorTraceSummary = {
   totalTurns: number;
   degradedTurns: number;
+  signalLevel: "low_signal" | "emerging_signal" | "usable_signal";
+  misconceptionRate: number;
   preAnswerGuardrailHits: number;
   postAnswerExplanations: number;
   misconceptionSignals: number;
@@ -120,6 +122,14 @@ export function TutorTraceSummaryCard() {
             <div className="metric-card">
               <span className="metric-label">Señales de misconception</span>
               <strong className="metric-value">{summary.misconceptionSignals}</strong>
+            </div>
+            <div className="metric-card">
+              <span className="metric-label">Tasa de misconception</span>
+              <strong className="metric-value">{(summary.misconceptionRate * 100).toFixed(1)}%</strong>
+            </div>
+            <div className="metric-card">
+              <span className="metric-label">Nivel de señal</span>
+              <strong className="metric-value">{summary.signalLevel}</strong>
             </div>
           </section>
 

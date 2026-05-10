@@ -36,6 +36,8 @@ test("buildTutorTraceSummary aggregates metrics and top lists", () => {
 
   assert.equal(summary.totalTurns, 3);
   assert.equal(summary.degradedTurns, 1);
+  assert.equal(summary.signalLevel, "emerging_signal");
+  assert.equal(summary.misconceptionRate, 0.667);
   assert.equal(summary.preAnswerGuardrailHits, 2);
   assert.equal(summary.postAnswerExplanations, 1);
   assert.equal(summary.misconceptionSignals, 2);
@@ -75,6 +77,8 @@ test("buildTutorTraceSummary returns zeros for empty input", () => {
   assert.deepEqual(buildTutorTraceSummary([]), {
     totalTurns: 0,
     degradedTurns: 0,
+    signalLevel: "low_signal",
+    misconceptionRate: 0,
     preAnswerGuardrailHits: 0,
     postAnswerExplanations: 0,
     misconceptionSignals: 0,

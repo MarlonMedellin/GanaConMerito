@@ -16,6 +16,8 @@ export type TutorTraceSummaryRow = {
 export type TutorTraceSummary = {
   totalTurns: number;
   degradedTurns: number;
+  signalLevel: "low_signal" | "emerging_signal" | "usable_signal";
+  misconceptionRate: number;
   preAnswerGuardrailHits: number;
   postAnswerExplanations: number;
   misconceptionSignals: number;
@@ -48,6 +50,8 @@ export function buildTutorTraceSummary(rows: TutorTraceSummaryRow[]): TutorTrace
     return {
       totalTurns: 0,
       degradedTurns: 0,
+      signalLevel: "low_signal",
+      misconceptionRate: 0,
       preAnswerGuardrailHits: 0,
       postAnswerExplanations: 0,
       misconceptionSignals: 0,
@@ -113,6 +117,8 @@ export function buildTutorTraceSummary(rows: TutorTraceSummaryRow[]): TutorTrace
   return {
     totalTurns: rows.length,
     degradedTurns,
+    signalLevel: rows.length >= 5 ? "usable_signal" : rows.length >= 3 ? "emerging_signal" : "low_signal",
+    misconceptionRate: Number((misconceptionSignals / rows.length).toFixed(3)),
     preAnswerGuardrailHits,
     postAnswerExplanations,
     misconceptionSignals,
