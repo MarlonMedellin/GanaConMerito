@@ -28,6 +28,15 @@ last_reviewed: 2026-05-10
 - estado: in-progress (fase 3 documental en ejecucion; sin cierre de roadmap)
 - limitaciones: inventario inicial; no se archivaron ni removieron documentos legacy en esta entrega.
 
+
+## 2026-05-10
+- tipo: governance+docs+tutor-normative-closure
+- modulo: tutor/normativa/source-truth/docs
+- resumen: Sprint 46 cierra el frente normativo documental del Tutor GCM con taxonomia explicita de evidencia (`source_verified`, `synthesized_governed_unverified`, `placeholder`, `advisory_only`), refuerzo de limites de autoridad y registro de drift/placeholders sin promocionar claims de `source_verified`.
+- sprint: Sprint 46 — Cierre normativo del Tutor GCM
+- agente: PM-Gauss
+- relacionados: docs/project/status.md, docs/project/canonical-docs.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/01-product/backlog.md, docs/02-delivery/tutor-gcm-normative-verification.md, docs/01-product/source-truth/normative-source-truth-v1.md
+
 ## 2026-05-10
 - tipo: qa+ops+runtime+closure
 - modulo: tutor/runtime/docker/vps

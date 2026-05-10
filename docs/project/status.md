@@ -10,14 +10,14 @@ last_reviewed: 2026-05-10
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-05-10 — Sprint 45 (Calibracion interna de senales pedagogicas y metricas internas del Tutor).
+Ultima actualizacion: 2026-05-10 — Sprint 46 (Cierre normativo del Tutor GCM).
 
 ---
 
 # Executive Operational Snapshot
 
 ## Current Sprint
-Sprint 45 — Calibracion interna de senales pedagogicas y metricas internas del Tutor.
+Sprint 46 — Cierre normativo del Tutor GCM y clasificacion de evidencia documental.
 
 ## Current Runtime State
 Runtime publico verificado en `https://cnsc.profemarlon.com` sobre `fcc40cb`.
@@ -26,7 +26,7 @@ Runtime publico verificado en `https://cnsc.profemarlon.com` sobre `fcc40cb`.
 `fcc40cb`
 
 ## Current Sprint Status
-Sprint 45 esta **CERRADO TOTAL Y VERIFICADO EN RUNTIME (PASS)**.
+Sprint 46 queda **CERRADO EN REPO (DOCUMENTAL)**; runtime no revalidado en esta corrida.
 
 ## Known Drift
 - Persisten diferencias entre documentacion historica Sprint 33 y estado operativo Sprint 45.
@@ -51,6 +51,8 @@ Sprint 45 esta **CERRADO TOTAL Y VERIFICADO EN RUNTIME (PASS)**.
 - `docs/project/canonical-docs.md` (indice canonico minimo para evitar competencia entre fuentes).
 - `docs/archive/legacy-candidates.md` (matriz inicial de candidatos legacy para reduccion documental fase 3).
 
+## capa base de señales pedagógicas ya integrada en repo.
+
 ## Estado general
 
 **Estado:** producto activo con core operativo, Tutor GCM gobernado, capa editorial de normalizacion rica conectada al banco activo, senales pedagogicas persistidas, learning signals integradas y calibracion/metricas internas basicas verificadas en runtime; capa base de senales pedagogicas ya integrada en repo.
@@ -59,7 +61,7 @@ Sprint 45 esta **CERRADO TOTAL Y VERIFICADO EN RUNTIME (PASS)**.
 
 **Sprint actual en repo:** Sprint 45 — Calibracion interna de senales pedagogicas y metricas internas del Tutor.
 
-**Estado del sprint actual:** CERRADO TOTAL Y VERIFICADO EN RUNTIME (PASS).
+**Estado del sprint actual:** CERRADO EN REPO (DOCUMENTAL); runtime no revalidado en esta corrida.
 
 **Sprint anterior cerrado:** Sprint 44 — Persistencia, calibracion y analytics del Tutor.
 
@@ -76,6 +78,24 @@ Sprint 45 esta **CERRADO TOTAL Y VERIFICADO EN RUNTIME (PASS)**.
 - **Consola operacional:** `https://cnsc.profemarlon.com/update.html`.
 - **Commit actual desplegado y verificado:** `fcc40cb`.
 - **Short hash verificado:** `fcc40cb`.
+
+
+## Sprint 46 — cierre normativo documental del Tutor GCM
+
+### Estado
+**CERRADO EN REPO (DOCUMENTAL, ADVISORY-HEAVY)**
+
+### Resultado ejecutivo
+- Se consolida la taxonomia normativa operativa para documentos del Tutor con categorias: `source_verified`, `synthesized_governed_unverified`, `placeholder`, `advisory_only`.
+- Se explicita jerarquia de autoridad y se reduce competencia entre documentos de Tutor Truth, sprint delivery y referencias historicas.
+- Se mantiene `synthesized_governed_unverified` como estado vigente del frente normativo del Tutor por falta de anexos oficiales trazables en repo.
+- Se registran placeholders pendientes y drift tolerado sin promocionar claims fuertes sin evidencia.
+
+### Evidencia y limites
+- Evidencia positiva: contrato de fuente normativa v1, estado tecnico y guardrails vigentes en repo.
+- Falta de evidencia: anexos oficiales de acuerdo, guia metodologica, estructura de prueba y convocatoria/manual vinculados por version.
+- Evidencia negativa: no se encontro soporte documental para promover `source_verified`.
+- Runtime: no verificado en esta entrega (cambio documental).
 
 ## Sprint 45 — cerrado total y verificado en runtime
 
@@ -133,6 +153,8 @@ Limitacion explicita aceptada:
 - La integracion del Tutor con LLM real queda registrada como deuda tecnica futura y debera ejecutarse bajo contrato, sin afectar este cierre.
 
 ## Sprint 43 — cerrado en repo y verificado en runtime
+
+Sprint 43 — Learning Paths + Misconception Signals - Base Implementation.
 
 ### Learning Paths + Misconception Signals - Base Implementation
 

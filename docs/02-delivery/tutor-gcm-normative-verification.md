@@ -41,6 +41,22 @@ Motivo:
 - el contrato, el runtime y compliance están alineados para degradar y no inventar reglas;
 - siguen faltando anexos oficiales críticos para declarar `source_verified`.
 
+
+## Taxonomía normativa operativa vigente
+
+| Categoria | Definicion operativa | Uso permitido |
+|---|---|---|
+| `source_verified` | Existe respaldo oficial cargado en repo y trazable por versión. | Claims normativos fuertes, con referencia explícita. |
+| `synthesized_governed_unverified` | Síntesis gobernada con guardrails, sin anexos oficiales suficientes. | Orientación pedagógica general + disclaimers obligatorios. |
+| `placeholder` | Marcador de fuente faltante o pendiente de carga oficial. | No usar para fundamentar decisiones normativas. |
+| `advisory_only` | Documento orientativo sin autoridad ejecutiva ni normativa. | Contexto operativo/histórico, nunca como verdad normativa final. |
+
+## Clasificación actual por bloque
+- Contrato Tutor Truth v1: `synthesized_governed_unverified`.
+- Referencias `agreement-source-pending`, `methodological-guide-source-pending`, `test-structure-source-pending`: `placeholder`.
+- Guías de operación QA/gobernanza sobre límites del Tutor: `advisory_only` para soporte de proceso (no reemplazan anexos oficiales).
+- Estado `source_verified`: **no alcanzado** por falta de anexos oficiales trazables.
+
 ## Inventario de evidencia disponible
 
 ### Verificado en repo
