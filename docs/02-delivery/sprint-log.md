@@ -33,6 +33,30 @@ last_reviewed: 2026-05-10
   - parte del QA histórico sigue narrativo y puede competir con baseline ejecutiva;
   - integración futura del Tutor con LLM real sigue pendiente como deuda técnica futura.
 
+## Sprint 45 — cierre parcial controlado (repo)
+- **Estado**: CIERRE PARCIAL CONTROLADO
+- **Fecha**: 2026-05-10
+- **Motivo**: se completó calibración interna y métricas, pero el cierre total queda condicionado a consistencia documental global y suite completa `npm test` en verde.
+- **Evidencia**: ajustes de calibración en `src/lib/tutor/*`, tipos en `src/types/tutor-turn.ts`, y saneamiento documental mínimo para contratos de sprint.
+- **Guardrails**: sin scoring, sin avance de sesión, sin autoridad operativa nueva.
+
+## Sprint 45 — Calibración y métricas/analytics internos del Tutor (in-progress en repo)
+- **Estado**: INCREMENTAL EN REPO (sin validación runtime en esta corrida)
+- **Fecha de actualización**: 2026-05-10
+- **Rama de trabajo observada**: `work`
+- **Objetivo**: observar calidad de señales pedagógicas existentes con métricas internas, separación evidencia/inferencia/recomendación y umbrales explícitos de suficiencia.
+
+### Entregables iniciales de calibración
+- Extensión de `trace_signals` para incluir `signalStrength`, `recommendationEvidenceCount`, `evidenceVsInference` y `likelyFalsePositive`.
+- Calibración heurística en `detectLearningSignals` con umbrales explícitos para intensidad y suficiencia.
+- Analytics agregados en summary de trazas: sesiones sin evidencia útil, cobertura/suficiencia de recomendación y frecuencia de señales.
+- Pruebas unitarias de `tutor-trace-summary` actualizadas para validar agregados de Sprint 45.
+
+### Guardrails preservados
+- sin scoring nuevo;
+- sin mutación de progreso o sesión;
+- sin autoridad oficial del Tutor.
+
 ## Sprint 44 — Persistencia, calibración y analytics del Tutor
 - **Estado**: AMPLIAMENTE COMPLETADO; RUNTIME VERIFICADO; REVISION HUMANA FINAL PENDIENTE
 - **Fecha de validación runtime**: 2026-05-10

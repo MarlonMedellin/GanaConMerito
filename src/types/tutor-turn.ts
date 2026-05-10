@@ -100,6 +100,14 @@ export interface TutorLearningSignal {
   recommendedNextPractice?: string;
   difficultyMismatch?: string;
   evidenceSummary?: string;
+  recommendationEvidenceCount?: number;
+  signalStrength?: TutorTraceSignalStrength;
+  evidenceVsInference?: {
+    evidence: string[];
+    inferences: string[];
+    recommendations: string[];
+  };
+  likelyFalsePositive?: boolean;
 }
 
 export interface UserSessionTruth {
@@ -162,11 +170,26 @@ export interface TutorTurnRequest {
   evidence: TutorEvidence;
 }
 
+export type TutorTraceSignalStrength = "strong" | "weak" | "insufficient";
+
 export interface TutorTraceSignals {
   dossierAvailable: boolean;
   responseModeUsed: "pre_answer" | "hint_mode" | "post_answer_feedback" | "review_mode";
   hintLevelUsed?: 1 | 2 | 3;
   misconceptionDetected: boolean;
+  weakSubareaSignal?: string;
+  repeatedErrorPattern?: string;
+  recommendedNextPractice?: string;
+  difficultyMismatch?: string;
+  evidenceSummary?: string;
+  recommendationEvidenceCount?: number;
+  signalStrength?: TutorTraceSignalStrength;
+  evidenceVsInference?: {
+    evidence: string[];
+    inferences: string[];
+    recommendations: string[];
+  };
+  likelyFalsePositive?: boolean;
   guardrailTriggered: boolean;
   fallbackReason?: string;
 }

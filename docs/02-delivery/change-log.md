@@ -29,6 +29,22 @@ last_reviewed: 2026-05-10
 - limitaciones: inventario inicial; no se archivaron ni removieron documentos legacy en esta entrega.
 
 ## 2026-05-10
+- tipo: docs+governance+sprint45-closure-sanitization
+- modulo: docs/status/sprint-log/backlog
+- resumen: saneamiento de cierre Sprint 45 para eliminar inconsistencia documental con contratos de sprint (`recent-sprints-contract`) y declarar estado real como cierre parcial controlado cuando aplique.
+- sprint: Sprint 45 — Calibración y métricas/analytics internos del Tutor
+- agente: GPT-5.3-Codex
+- relacionados: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/01-product/backlog.md
+
+## 2026-05-10
+- tipo: feat+tutor+analytics+calibration
+- modulo: tutor/traces/learning-signals
+- resumen: Sprint 45 agrega calibración interna inicial sobre señales pedagógicas del Tutor: intensidad (`strong|weak|insufficient`), suficiencia de evidencia para `recommendedNextPractice`, conteo de falsos positivos probables y frecuencia agregada de señales sin alterar scoring, avance ni autoridad operativa.
+- sprint: Sprint 45 — Calibración y métricas/analytics internos del Tutor
+- agente: GPT-5.3-Codex
+- relacionados: src/lib/tutor/tutor-evidence-builder.ts, src/lib/tutor/tutor-orchestrator.ts, src/lib/tutor/tutor-trace-summary.ts, src/lib/tutor/tutor-trace-summary.test.ts, src/types/tutor-turn.ts
+
+## 2026-05-10
 - tipo: qa+ops+runtime+closure
 - modulo: tutor/runtime/docker/vps
 - resumen: Sprint 44 queda ampliamente completado tras validación runtime integral en VPS y URL pública sobre `54efd43`. Runtime smoke, postdeploy, API E2E y UI Playwright reportan PASS. Se mantiene pendiente únicamente revisión humana final como aceptación operativa. La integración futura del Tutor con LLM real queda registrada como deuda técnica posterior.

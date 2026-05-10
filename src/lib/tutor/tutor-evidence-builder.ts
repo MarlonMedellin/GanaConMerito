@@ -86,13 +86,18 @@ function detectLearningSignals({ turns, currentTurn, question }: LearningSignalI
     ? "El patrón de respuesta sugiere brecha entre nivel cognitivo esperado y ejecución observada."
     : undefined;
 
-  const recommendedNextPractice = [question.area, question.topic, question.competency].filter(Boolean).length
+  const recommendationEvidence = [misconceptionDetected, Boolean(repeatedErrorPattern), Boolean(difficultyMismatch)].filter(Boolean).length;
+  const recommendedNextPractice = recommendationEvidence >= 1 && [question.area, question.topic, question.competency].filter(Boolean).length
     ? `Practica un nuevo ítem de ${question.area} (${question.competency}) justificando descarte de distractores antes de responder.`
     : undefined;
 
-  const evidenceSummary = misconceptionDetected || repeatedErrorPattern || difficultyMismatch
-    ? "Se generó señal pedagógica trazable con historial reciente y metadata del ítem."
-    : "No hay evidencia suficiente para una señal fuerte; mantener recomendación conservadora.";
+  const signalStrength = recommendationEvidence >= 2 ? "strong" : recommendationEvidence === 1 ? "weak" : "insufficient";
+  const likelyFalsePositive = misconceptionDetected && !Boolean(repeatedErrorPattern) && !Boolean(difficultyMismatch);
+  const evidenceSummary = signalStrength === "strong"
+    ? "Se generó señal fuerte con evidencia convergente de historial y ejecución."
+    : signalStrength === "weak"
+      ? "Se generó señal débil; conviene confirmar con más historial antes de una recomendación fuerte."
+      : "No hay evidencia suficiente para una señal fuerte; mantener recomendación conservadora.";
 
   return {
     misconceptionDetected,
@@ -101,6 +106,21 @@ function detectLearningSignals({ turns, currentTurn, question }: LearningSignalI
     recommendedNextPractice,
     difficultyMismatch,
     evidenceSummary,
+    recommendationEvidenceCount: recommendationEvidence,
+    signalStrength,
+    evidenceVsInference: {
+      evidence: [
+        misconceptionDetected ? "selected_distractor_with_rationale" : "",
+        repeatedErrorPattern ? `recent_same_focus_errors:${recentSameCompetencyErrors}` : "",
+        difficultyMismatch ? "low_competency_score_on_high_cognitive_demand" : "",
+      ].filter(Boolean),
+      inferences: [
+        weakSubareaSignal ? "weak_subarea_signal" : "",
+        difficultyMismatch ? "difficulty_mismatch" : "",
+      ].filter(Boolean),
+      recommendations: [recommendedNextPractice ?? ""].filter(Boolean),
+    },
+    likelyFalsePositive,
   };
 }
 

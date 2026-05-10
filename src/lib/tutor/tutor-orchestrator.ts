@@ -75,6 +75,15 @@ export class TutorOrchestrator {
         misconceptionDetected:
           input.evidence.userSession.learningSignals?.misconceptionDetected ??
           Boolean(input.evidence.userSession.feedback && /error|equivoc|misconcep/i.test(input.evidence.userSession.feedback)),
+        weakSubareaSignal: input.evidence.userSession.learningSignals?.weakSubareaSignal,
+        repeatedErrorPattern: input.evidence.userSession.learningSignals?.repeatedErrorPattern,
+        recommendedNextPractice: input.evidence.userSession.learningSignals?.recommendedNextPractice,
+        difficultyMismatch: input.evidence.userSession.learningSignals?.difficultyMismatch,
+        evidenceSummary: input.evidence.userSession.learningSignals?.evidenceSummary,
+        recommendationEvidenceCount: input.evidence.userSession.learningSignals?.recommendationEvidenceCount,
+        signalStrength: input.evidence.userSession.learningSignals?.signalStrength,
+        evidenceVsInference: input.evidence.userSession.learningSignals?.evidenceVsInference,
+        likelyFalsePositive: input.evidence.userSession.learningSignals?.likelyFalsePositive,
         guardrailTriggered: sanitized.guardrailTriggered || guardrail.guardrailsApplied.length > 0,
         fallbackReason: guardrail.degraded ? guardrail.degradationMessage : undefined,
       },

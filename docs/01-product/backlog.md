@@ -72,8 +72,9 @@ GanaConMerito tiene activo el core real de producto:
 9. Mantener la expansion del banco bajo la regla editorial: taxonomia primero, perfiles como segunda capa opcional.
 
 ## Next
-1. Sprint 44 — Persistencia y calibración de `learningSignals` y `TutorTurnTrace` con evidencia real de uso (en progreso: `trace_signals` persistidas + resumen descriptivo de misconceptions y niveles de pista).
-2. Cierre normativo real del tutor: cargar anexos oficiales, reemplazar placeholders y rehacer revision documental cruzada.
+1. Sprint 45 — Calibración y métricas/analytics internos del Tutor: cierre técnico-documental total sujeto a `npm test` en verde y consistencia de contratos documentales de sprint.
+2. Sprint 46 solo después de cierre Sprint 45 (o bloqueo explícito aceptado): no mezclar cierre normativo con deuda documental pendiente.
+3. Cierre normativo real del tutor: cargar anexos oficiales, reemplazar placeholders y rehacer revision documental cruzada.
 3. Release y runtime confiables: CI minima en GitHub Actions, build, tests unitarios, validacion documental y disciplina publica de runtime.
 4. Validacion visual aislada del resumen de trazas: obtener evidencia publica nueva del bloque de resumen del tutor en dashboard si sigue siendo artefacto de cierre requerido.
 5. Runtime topology doc: documentar `docker-compose.yml`, env file, dominio, proxy y politica de secretos.
