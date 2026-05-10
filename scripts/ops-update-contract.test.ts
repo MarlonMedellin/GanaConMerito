@@ -45,7 +45,7 @@ test("Ops update flow preserves Sprint 38-39 web update contracts", async () => 
 
   assert.match(opsDoc, /POST \/api\/ops\/update/i);
   assert.match(opsDoc, /GET \/api\/ops\/update\/status\?jobId=/i);
-  assert.match(opsDoc, /update\.html hace polling cada 3 segundos/i);
+  assert.match(opsDoc, /`?update\.html`? hace polling cada 3 segundos/i);
 });
 
 test("Historical governance artifacts from Sprint 31 onward remain versioned", async () => {
