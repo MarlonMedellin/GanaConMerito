@@ -162,8 +162,6 @@ test("TutorOrchestrator maps post-answer feedback phrasing to explain_feedback i
   assert.match(result.output.visibleMessage, /puntaje oficial/i);
 });
 
-
-
 test("TutorOrchestrator keeps guided actions compatible with current intent detection", async () => {
   const hint = await new TutorOrchestrator().processTurn(makeInput("Dame una pista"));
   assert.strictEqual(hint.output.intent, "give_hint");
@@ -253,7 +251,6 @@ test("selectAnsweredTurnForItem ignores a newer unanswered turn for the same ite
   assert.strictEqual(turn?.selected_option, "B");
 });
 
-
 test("TutorOrchestrator enforces no-reveal sanitization in pre-answer mode", async () => {
   const result = await new TutorOrchestrator().processTurn(makeInput("Compara opciones"));
   assert.strictEqual(result.output.canRevealCorrectAnswer, false);
@@ -263,6 +260,11 @@ test("TutorOrchestrator enforces no-reveal sanitization in pre-answer mode", asy
 
 test("semantic governance rejects unknown tags", () => {
   assert.throws(() => validateTagRegistry({ content_topic: ["invented_tag"] }), /Unknown tag/i);
+});
+
+test("semantic governance normalizes deprecated tags into the canonical registry", () => {
+  const registry = validateTagRegistry({ content_topic: ["evaluacion"] });
+  assert.deepStrictEqual(registry.content_topic, ["evaluacion_formativa"]);
 });
 
 test("semantic governance rejects invalid targetPosition", () => {
@@ -284,7 +286,33 @@ test("semantic governance validates area and competency through normalization", 
   assert.strictEqual(item.taxonomy.competency, "analisis_pedagogico");
 });
 
-test("legacy compatibility flow builds QuestionTruth and TutorSupportContract", () => {
+test("semantic governance keeps missing taxonomy explicit instead of inventing values", () => {
+  const item = normalizeLegacyItemToRichItem({
+    id: "item-sem-missing",
+    area: "pedagogia",
+    stem: "Caso sin metadata completa",
+  });
+
+  assert.strictEqual(item.taxonomy.area, "pedagogia");
+  assert.strictEqual(item.taxonomy.subarea, undefined);
+  assert.ok(item.missingTaxonomy.includes("subarea"));
+  assert.ok(item.missingTaxonomy.includes("targetPosition"));
+});
+
+test("semantic governance degrades invalid legacy taxonomy into warnings without breaking compatibility", () => {
+  const item = normalizeLegacyItemToRichItem({
+    id: "item-sem-invalid",
+    area: "pedagogia",
+    targetPosition: "astronauta",
+    stem: "Caso con metadata legacy invalida",
+  });
+
+  assert.strictEqual(item.taxonomy.area, "pedagogia");
+  assert.strictEqual(item.taxonomy.targetPosition, undefined);
+  assert.ok(item.governanceWarnings.some((warning) => /targetPosition/i.test(warning)));
+});
+
+test("legacy compatibility flow builds QuestionTruth and preserves TutorSupportContract safety policy", () => {
   const rich = normalizeLegacyItemToRichItem({
     id: "item-sem-2",
     area: "pedagogia",
@@ -305,5 +333,7 @@ test("legacy compatibility flow builds QuestionTruth and TutorSupportContract", 
   assert.strictEqual(truth.itemId, "item-sem-2");
   assert.strictEqual(truth.competency, "evaluacion_formativa");
   assert.ok(support.instructionalGoal);
-  assert.ok(support.qualityFlags?.includes("backward_compatible"));
+  assert.ok(support.qualityFlags?.includes("semantic_governance_v1"));
+  assert.strictEqual(support.responsePolicy?.noRevealCorrectAnswer, true);
+  assert.strictEqual(support.responsePolicy?.noScoring, true);
 });
