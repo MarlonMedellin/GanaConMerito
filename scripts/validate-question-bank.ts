@@ -62,28 +62,63 @@ async function main() {
 
     idToFiles.set(result.item.id, [...(idToFiles.get(result.item.id) ?? []), relativePath]);
     slugToFiles.set(result.item.slug, [...(slugToFiles.get(result.item.slug) ?? []), relativePath]);
+
     const normalized = normalizeLegacyItemToRichItem({
       id: result.item.id,
+      slug: result.item.slug,
+      version: result.item.version,
       area: result.item.area,
       subarea: result.item.subarea,
       competency: result.item.competency,
+      tipo_item: result.item.itemType,
+      targetRole: result.item.targetRole,
+      targetPosition: result.item.targetPosition,
+      applicantProfile: result.item.applicantProfile,
       stem: result.item.stem,
+      tags: result.item.tags,
     });
-    for (const miss of normalized.missingTaxonomy) missingByField.set(miss, (missingByField.get(miss) ?? 0) + 1);
-    const issues = validateRichItemEditorial({ id: normalized.id, taxonomy: normalized.taxonomy, tags: normalized.tags });
-    const hasErrors = issues.some((i) => i.severity === "error");
-    const hasWarnings = issues.some((i) => i.severity === "warning");
-    editorial.push({ file: relativePath, status: hasErrors ? "rejected" : hasWarnings ? "apt_with_warnings" : "apt", issues: issues.map((i) => `${i.type}:${i.field}`) });
-    const area = normalized.taxonomy.area ?? "missing";
-    const subarea = normalized.taxonomy.subarea ?? "missing";
-    const competency = normalized.taxonomy.competency ?? "missing";
-    const key = `${area}/${subarea}/${competency}`;
-    coverageTaxonomy.set(key, (coverageTaxonomy.get(key) ?? 0) + 1);
-    const targetPosition = normalized.taxonomy.targetPosition ?? "missing";
+
+    for (const miss of normalized.missingTaxonomy) {
+      missingByField.set(miss, (missingByField.get(miss) ?? 0) + 1);
+    }
+
+    const issues = validateRichItemEditorial({
+      id: normalized.id,
+      taxonomy: normalized.sourceTaxonomy,
+      tags: normalized.tags,
+      looseTags: result.item.tags,
+      targetPosition: result.item.targetPosition,
+      targetRole: result.item.targetRole,
+      technicalRisks: normalized.technicalRisks,
+      distractorRationales: normalized.distractorRationales,
+    });
+
+    const hasErrors = issues.some((issue) => issue.severity === "error");
+    const hasWarnings = normalized.governanceWarnings.length > 0 || issues.some((issue) => issue.severity === "warning");
+
+    editorial.push({
+      file: relativePath,
+      status: hasErrors ? "rejected" : hasWarnings ? "apt_with_warnings" : "apt",
+      issues: [
+        ...issues.map((issue) => `${issue.type}:${issue.field}`),
+        ...normalized.governanceWarnings.map((warning) => `governance_warning:${warning}`),
+      ],
+    });
+
+    const area = normalized.sourceTaxonomy.area ?? normalized.taxonomy.area ?? "missing";
+    const subarea = normalized.sourceTaxonomy.subarea ?? normalized.taxonomy.subarea ?? "missing";
+    const competency = normalized.sourceTaxonomy.competency ?? normalized.taxonomy.competency ?? "missing";
+    const coverageKey = `${area}/${subarea}/${competency}`;
+    coverageTaxonomy.set(coverageKey, (coverageTaxonomy.get(coverageKey) ?? 0) + 1);
+
+    const targetPosition = normalized.sourceTaxonomy.targetPosition ?? normalized.taxonomy.targetPosition ?? "missing";
     coverageTargetPosition.set(targetPosition, (coverageTargetPosition.get(targetPosition) ?? 0) + 1);
+
     for (const category of Object.keys(normalized.tags)) {
       const count = normalized.tags[category as keyof typeof normalized.tags].length;
-      coverageTagCategory.set(category, (coverageTagCategory.get(category) ?? 0) + count);
+      if (count > 0) {
+        coverageTagCategory.set(category, (coverageTagCategory.get(category) ?? 0) + count);
+      }
     }
   }
 
@@ -105,9 +140,9 @@ async function main() {
     warningCount: warnings.length,
     errorCount: errors.length,
     editorial: {
-      apt: editorial.filter((e) => e.status === "apt").length,
-      aptWithWarnings: editorial.filter((e) => e.status === "apt_with_warnings").length,
-      rejected: editorial.filter((e) => e.status === "rejected").length,
+      apt: editorial.filter((entry) => entry.status === "apt").length,
+      aptWithWarnings: editorial.filter((entry) => entry.status === "apt_with_warnings").length,
+      rejected: editorial.filter((entry) => entry.status === "rejected").length,
       missingByField: Object.fromEntries(missingByField.entries()),
       coverageByAreaSubareaCompetency: Object.fromEntries(coverageTaxonomy.entries()),
       coverageByTargetPosition: Object.fromEntries(coverageTargetPosition.entries()),
@@ -117,7 +152,7 @@ async function main() {
 
   console.log(JSON.stringify({ summary, warnings, errors, editorial }, null, 2));
 
-  if (errors.length > 0) {
+  if (errors.length > 0 || summary.editorial.rejected > 0) {
     process.exit(1);
   }
 }
