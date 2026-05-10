@@ -12,6 +12,14 @@ related:
 last_reviewed: 2026-05-10
 ---
 ## 2026-05-10
+- tipo: feat+tutor+learning-signals
+- modulo: tutor/evidence/orchestrator/docs
+- resumen: Sprint 43 activa la capa base de `learningSignals` para detectar misconceptions, subáreas débiles, patrones repetidos y siguiente mejor práctica a partir de historial reciente y metadata gobernada, manteniendo guardrails de no revelación, no scoring y no autoridad operativa.
+- sprint: Sprint 43 — Learning Paths + Misconception Signals - Base Implementation
+- agente: PM-Dev
+- relacionados: src/types/tutor-turn.ts, src/lib/tutor/tutor-evidence-builder.ts, src/lib/tutor/tutor-orchestrator.ts, src/lib/tutor/tutor.test.ts, docs/project/status.md, docs/02-delivery/sprint-log.md, docs/01-product/backlog.md
+
+## 2026-05-10
 - tipo: feat+taxonomy+qa
 - modulo: tutor/taxonomy/scripts
 - resumen: Sprint 42 queda cerrado en repo tras auditoría y ajuste. Se conecta la validación editorial al banco activo, se preserva `sourceTaxonomy`, se normalizan tags planos del corpus actual, se separan warnings legacy de errores estructurales reales, se realinea el contrato `recent-sprints` y se deja Sprint 43 preparado.
@@ -42,5 +50,3 @@ last_reviewed: 2026-05-10
 - sprint: Sprint 37 — Tutor Trace Signals and Governance Stabilization Prep
 - agente: PM-Dev
 - relacionados: scripts/recent-sprints-contract.test.ts, src/lib/tutor/tutor-response-policy.ts, src/lib/tutor/tutor-orchestrator.ts, src/types/tutor-turn.ts, src/lib/tutor/tutor.test.ts, docs/project/status.md, docs/02-delivery/sprint-log.md, docs/01-product/backlog.md
-
-- 2026-05-10: Tutor agrega señales `learningSignals` (misconception, weakSubarea, repeatedErrorPattern, recommendedNextPractice, difficultyMismatch) derivadas de evidencia reciente y metadata gobernada.
