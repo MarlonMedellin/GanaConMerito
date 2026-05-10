@@ -21,6 +21,12 @@ export const TAXONOMY_ALIASES: Record<string, string> = {
   dificil: "alta",
   difícil: "alta",
   directivo: "directivo_docente",
+  docente: "aula",
+  rector_director_rural: "directivo_docente",
+  docente_aula_preescolar: "docente",
+  docente_aula_basica_primaria: "docente",
+  docente_aula_secundaria_media: "docente",
+  docente_orientador: "docente",
 };
 
 export const TAXONOMY_DEPRECATED: Record<string, string> = {
