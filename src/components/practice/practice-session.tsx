@@ -7,15 +7,7 @@ import { ErrorState } from "@/components/ui/error-state";
 import { EmptyState } from "@/components/ui/empty-state";
 import { TutorInterface } from "@/components/tutor/tutor-interface";
 import { formatAreaCompetency } from "@/lib/ui/format-label";
-
-interface PracticeItem {
-  id: string;
-  title: string;
-  area: string;
-  competency: string;
-  stem: string;
-  options: { key: "A" | "B" | "C" | "D"; text: string }[];
-}
+import type { PracticeQuestionViewModel } from "@/types/session";
 
 type OptionKey = "A" | "B" | "C" | "D";
 
@@ -40,7 +32,7 @@ interface AdvanceResult {
 
 export function PracticeSession() {
   const [session, setSession] = useState<SessionStartResult | null>(null);
-  const [item, setItem] = useState<PracticeItem | null>(null);
+  const [item, setItem] = useState<PracticeQuestionViewModel | null>(null);
   const [selectedOption, setSelectedOption] = useState<OptionKey | null>(null);
   const [userRationale, setUserRationale] = useState("");
   const [feedback, setFeedback] = useState<AdvanceResult | null>(null);

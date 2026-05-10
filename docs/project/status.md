@@ -182,7 +182,7 @@ Resultado en repo:
 - `src/lib/tutor/tutor-evidence-builder.ts` deriva senales trazables desde historial reciente, desempeno y metadata del item con fallback conservador.
 - `src/lib/tutor/tutor-orchestrator.ts` usa esas senales para enriquecer `recommend_next_practice`, mantener disclaimers no oficiales y priorizar `misconceptionDetected` derivado sobre heuristicas mas debiles.
 - `src/lib/tutor/tutor.test.ts` cubre la recomendacion guiada por senales pedagogicas y preserva guardrails de no revelacion y no autoridad operativa.
-- La documentacion canonica ya deja Sprint 43 como la capa base vigente de learning paths y misconception signals.
+- La documentación canónica ya deja Sprint 43 como capa base de señales pedagógicas ya integrada en repo (learning paths + misconception signals).
 
 Limitacion explicita aceptada:
 - La deteccion actual es heuristica y depende de la calidad del historial reciente y del feedback disponible.

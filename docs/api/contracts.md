@@ -73,6 +73,25 @@ Lectura de banco recomendada:
 - metadatos del ítem desde `public.v_item_bank_active`
 - opciones desde `item_options` mientras no exista una vista de detalle consolidada
 
+Salida (compatibilidad + preparación rich):
+- legacy estable para UI actual:
+  - `id`
+  - `title`
+  - `area`
+  - `competency`
+  - `stem`
+  - `options[]`
+- capa extendida de presentación (`PracticeQuestionViewModel`):
+  - `subarea?`
+  - `topicLabel?`
+  - `expectedUserTask?`
+  - `cognitiveIntent?`
+  - `difficulty?`
+  - `tags?`
+  - `misconceptionHints?`
+  - `rationale?`
+  - `sourceTruthStatus?` (uso interno / trazabilidad)
+
 ### `GET /api/dashboard/summary`
 Contrato detallado: `docs/api/dashboard-summary-contract.md`
 
