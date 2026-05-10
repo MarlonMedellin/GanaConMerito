@@ -42,3 +42,5 @@ last_reviewed: 2026-05-10
 - sprint: Sprint 37 — Tutor Trace Signals and Governance Stabilization Prep
 - agente: PM-Dev
 - relacionados: scripts/recent-sprints-contract.test.ts, src/lib/tutor/tutor-response-policy.ts, src/lib/tutor/tutor-orchestrator.ts, src/types/tutor-turn.ts, src/lib/tutor/tutor.test.ts, docs/project/status.md, docs/02-delivery/sprint-log.md, docs/01-product/backlog.md
+
+- 2026-05-10: Tutor agrega señales `learningSignals` (misconception, weakSubarea, repeatedErrorPattern, recommendedNextPractice, difficultyMismatch) derivadas de evidencia reciente y metadata gobernada.

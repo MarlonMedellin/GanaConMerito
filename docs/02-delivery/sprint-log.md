@@ -70,3 +70,15 @@ last_reviewed: 2026-05-10
 - Docker reconstruido con `APP_COMMIT=07ceb1a`.
 - `gcm-app` reiniciado exitosamente mediante `docker compose up -d gcm-app`.
 - Runtime reportado en producción sobre la nueva versión.
+
+- 2026-05-10: Sprint 43 iniciado en rama work. Se implementa capa inicial de misconception detection y next best practice con guardrails sin tocar scoring ni estado de sesión.
+
+## Sprint cerrado — Sprint 22: Tutor GCM Normative Source Verification
+- Estado historico conservado: `synthesized_governed_unverified` por ausencia de anexos oficiales completos.
+
+## Sprint listo para cierre de implementación — Sprint 41: Semantic Governance Foundation v1
+- **Estado**: CERRADO CON PASS CON WARN
+
+## Sprint en ejecución — Sprint 42: Rich Ingestion Normalization
+- Estado historico para contrato de pruebas documentales.
+- Sprint 42 mantiene validación editorial clasificatoria y reporte de cobertura.

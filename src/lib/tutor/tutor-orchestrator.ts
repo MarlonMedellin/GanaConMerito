@@ -72,7 +72,9 @@ export class TutorOrchestrator {
         dossierAvailable: Boolean(input.evidence.question),
         responseModeUsed: this.mapResponseMode(intent, guardrail.canRevealCorrectAnswer),
         hintLevelUsed: intent === "give_hint" ? this.detectHintLevel(input.message) : undefined,
-        misconceptionDetected: Boolean(input.evidence.userSession.feedback && /error|equivoc|misconcep/i.test(input.evidence.userSession.feedback)),
+        misconceptionDetected:
+          input.evidence.userSession.learningSignals?.misconceptionDetected ??
+          Boolean(input.evidence.userSession.feedback && /error|equivoc|misconcep/i.test(input.evidence.userSession.feedback)),
         guardrailTriggered: sanitized.guardrailTriggered || guardrail.guardrailsApplied.length > 0,
         fallbackReason: guardrail.degraded ? guardrail.degradationMessage : undefined,
       },
@@ -131,10 +133,12 @@ export class TutorOrchestrator {
     }
 
     if (intent === "recommend_next_practice") {
-      return trimToWordLimit(
-        `${session.recentPerformanceSummary ?? "Aún hay poco historial de desempeño."} Próximo foco sugerido: practica preguntas de ${question.area} sobre ${question.competency}, explicando por qué descartas cada distractor antes de responder.`,
-        300,
-      );
+      const evidenceLine = session.learningSignals?.evidenceSummary ?? "Sin evidencia suficiente para una recomendación fuerte.";
+      const nextPractice =
+        session.learningSignals?.recommendedNextPractice ??
+        `Practica preguntas de ${question.area} sobre ${question.competency}, explicando por qué descartas cada distractor antes de responder.`;
+      const caution = "Esta recomendación es pedagógica y no constituye decisión oficial del concurso.";
+      return trimToWordLimit(`${session.recentPerformanceSummary ?? "Aún hay poco historial de desempeño."} ${evidenceLine} Próxima mejor práctica sugerida: ${nextPractice} ${caution}`,300);
     }
 
     if (intent === "explain_profile_alignment" && input.evidence.aspirationalProfile) {

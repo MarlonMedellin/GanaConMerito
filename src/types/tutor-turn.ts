@@ -93,6 +93,15 @@ export interface QuestionTruth {
   sourceTruthStatus?: SourceTruthStatus;
 }
 
+export interface TutorLearningSignal {
+  misconceptionDetected: boolean;
+  weakSubareaSignal?: string;
+  repeatedErrorPattern?: string;
+  recommendedNextPractice?: string;
+  difficultyMismatch?: string;
+  evidenceSummary?: string;
+}
+
 export interface UserSessionTruth {
   sessionId: string;
   userId: string;
@@ -103,6 +112,7 @@ export interface UserSessionTruth {
   userRationale?: string;
   feedback?: string;
   recentPerformanceSummary?: string;
+  learningSignals?: TutorLearningSignal;
 }
 
 export interface TutorSupportMisconception {

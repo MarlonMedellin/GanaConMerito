@@ -79,3 +79,5 @@ GanaConMerito tiene activo el core real de producto:
 4. Dashboard interno de uso del Tutor GCM.
 5. Personalizacion pedagogica avanzada por concurso/perfil.
 6. Refactor liviano de `PracticeSession` segun `docs/01-product/future-practice-session-light-refactor.md`.
+
+- [x] Sprint 43 base: misconception engine + learning paths sidecar con fallback honesto y sin autoridad normativa. (2026-05-10)

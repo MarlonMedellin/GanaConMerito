@@ -97,3 +97,7 @@ El proyecto ya tiene fundación semántica y capa editorial de validación rica 
 ## Estado normativo
 
 Sprint 22 se mantiene en estado `synthesized_governed_unverified` dado que el sistema todavía no cuenta con anexos oficiales suficientes para promover `source_verified`.
+
+- 2026-05-10: Sprint 43 en progreso. Tutor mantiene `synthesized_governed_unverified` y suma recomendaciones pedagógicas trazables sin mutar scoring/sesión.
+
+Referencia histórica: normalización de ingesta rica con validación editorial y reporte de cobertura.
