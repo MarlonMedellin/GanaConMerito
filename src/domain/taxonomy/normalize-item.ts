@@ -1,5 +1,19 @@
 import type { SourceTruthStatus } from "../../types/tutor-turn";
-import { validateTagRegistry, validateTaxonomyRecord } from "./validators";
+import { type TagCategory, type TaxonomyKey } from "./catalogs";
+import { normalizeTaxonomyValue, validateTagRegistry } from "./validators";
+
+const GOVERNED_TAXONOMY_FIELDS = [
+  "area",
+  "subarea",
+  "competency",
+  "nivel_educativo",
+  "tipo_item",
+  "nivel_cognitivo",
+  "dificultad",
+  "targetPosition",
+  "targetRole",
+  "applicantProfile",
+] as const satisfies readonly TaxonomyKey[];
 
 export interface LegacyItemInput {
   id: string;
@@ -16,12 +30,14 @@ export interface LegacyItemInput {
   stem?: string | null;
   source_type?: string | null;
   source_path?: string | null;
-  tags?: Partial<Record<"pedagogical_strategy" | "misconception" | "cognitive_process" | "content_topic" | "risk_flag" | "profile_context", string[]>>;
+  tags?: Partial<Record<TagCategory, string[]>>;
 }
 
 export interface NormalizedRichItem {
   itemId: string;
-  taxonomy: ReturnType<typeof validateTaxonomyRecord>;
+  taxonomy: Partial<Record<TaxonomyKey, string>>;
+  missingTaxonomy: TaxonomyKey[];
+  governanceWarnings: string[];
   stem: string;
   sourceType: string;
   sourceRefs: string[];
@@ -30,22 +46,30 @@ export interface NormalizedRichItem {
 }
 
 export function normalizeLegacyItemToRichItem(item: LegacyItemInput): NormalizedRichItem {
-  const taxonomy = validateTaxonomyRecord({
-    area: item.area ?? "pedagogia",
-    subarea: item.subarea ?? "didactica",
-    competency: item.competency ?? "analisis_pedagogico",
-    nivel_educativo: item.nivel_educativo ?? "media",
-    tipo_item: item.tipo_item ?? "caso",
-    nivel_cognitivo: item.nivel_cognitivo ?? "analizar",
-    dificultad: item.dificultad ?? "media",
-    targetPosition: item.targetPosition ?? "docente",
-    targetRole: item.targetRole ?? "aula",
-    applicantProfile: item.applicantProfile ?? "intermedio",
-  });
+  const taxonomy: Partial<Record<TaxonomyKey, string>> = {};
+  const missingTaxonomy: TaxonomyKey[] = [];
+  const governanceWarnings: string[] = [];
+
+  for (const key of GOVERNED_TAXONOMY_FIELDS) {
+    const rawValue = item[key];
+    if (!rawValue || !rawValue.trim()) {
+      missingTaxonomy.push(key);
+      continue;
+    }
+
+    try {
+      taxonomy[key] = normalizeTaxonomyValue(key, rawValue);
+    } catch (error) {
+      missingTaxonomy.push(key);
+      governanceWarnings.push(error instanceof Error ? error.message : `Invalid taxonomy value for ${key}`);
+    }
+  }
 
   return {
     itemId: item.id,
     taxonomy,
+    missingTaxonomy,
+    governanceWarnings,
     stem: item.stem ?? "",
     sourceType: item.source_type ?? "runtime_item_bank",
     sourceRefs: item.source_path ? [item.source_path] : [`item_bank:${item.id}`],
