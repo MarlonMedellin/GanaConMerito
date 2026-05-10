@@ -29,6 +29,14 @@ last_reviewed: 2026-05-10
 - limitaciones: inventario inicial; no se archivaron ni removieron documentos legacy en esta entrega.
 
 ## 2026-05-10
+- tipo: docs+governance+sprint45-closure-sanitization
+- modulo: docs/status/sprint-log/backlog
+- resumen: saneamiento de cierre Sprint 45 para eliminar inconsistencia documental con contratos de sprint (`recent-sprints-contract`) y declarar estado real como cierre parcial controlado cuando aplique.
+- sprint: Sprint 45 — Calibración y métricas/analytics internos del Tutor
+- agente: GPT-5.3-Codex
+- relacionados: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/01-product/backlog.md
+
+## 2026-05-10
 - tipo: feat+tutor+analytics+calibration
 - modulo: tutor/traces/learning-signals
 - resumen: Sprint 45 agrega calibración interna inicial sobre señales pedagógicas del Tutor: intensidad (`strong|weak|insufficient`), suficiencia de evidencia para `recommendedNextPractice`, conteo de falsos positivos probables y frecuencia agregada de señales sin alterar scoring, avance ni autoridad operativa.

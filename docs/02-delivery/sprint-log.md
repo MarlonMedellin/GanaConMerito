@@ -33,6 +33,13 @@ last_reviewed: 2026-05-10
   - parte del QA histórico sigue narrativo y puede competir con baseline ejecutiva;
   - integración futura del Tutor con LLM real sigue pendiente como deuda técnica futura.
 
+## Sprint 45 — cierre parcial controlado (repo)
+- **Estado**: CIERRE PARCIAL CONTROLADO
+- **Fecha**: 2026-05-10
+- **Motivo**: se completó calibración interna y métricas, pero el cierre total queda condicionado a consistencia documental global y suite completa `npm test` en verde.
+- **Evidencia**: ajustes de calibración en `src/lib/tutor/*`, tipos en `src/types/tutor-turn.ts`, y saneamiento documental mínimo para contratos de sprint.
+- **Guardrails**: sin scoring, sin avance de sesión, sin autoridad operativa nueva.
+
 ## Sprint 45 — Calibración y métricas/analytics internos del Tutor (in-progress en repo)
 - **Estado**: INCREMENTAL EN REPO (sin validación runtime en esta corrida)
 - **Fecha de actualización**: 2026-05-10

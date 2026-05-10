@@ -53,7 +53,7 @@ Sprint 44 está **AMPLIAMENTE COMPLETADO**, con runtime verificado en VPS y URL 
 
 ## Estado general
 
-**Estado:** producto activo con core operativo, Tutor GCM gobernado, capa editorial de normalización rica conectada al banco activo, señales pedagógicas persistidas y analytics descriptivos básicos verificados en runtime.
+**Estado:** producto activo con core operativo, Tutor GCM gobernado, capa editorial de normalización rica conectada al banco activo, señales pedagógicas persistidas y analytics descriptivos básicos verificados en runtime; capa base de señales pedagógicas ya integrada en repo.
 
 **Producto:** login, onboarding, practica y dashboard siguen siendo las superficies activas; Tutor GCM permanece bajo contrato, sin autoridad sobre scoring, avance ni estado de sesión.
 
@@ -130,6 +130,8 @@ Limitación explícita aceptada:
 
 ## Sprint 42 — cerrado en repo
 
+Sprint 42 — Rich Ingestion Normalization — cerrado en repo.
+
 ### Rich Ingestion Normalization
 
 **Estado:** CERRADO EN REPO; RUNTIME NO VERIFICADO EN ESA CORRIDA
@@ -155,7 +157,9 @@ Resultado en repo:
 
 ## Resumen de situación
 
-El proyecto ya tiene fundación semántica, validación editorial rica, señales pedagógicas trazables, persistencia de señales del Tutor y analytics descriptivos básicos verificados en runtime. El frente natural que sigue es revisión humana final de Sprint 44, cierre normativo real del Tutor y preparación futura del LLM real bajo contrato.
+El proyecto ya tiene fundación semántica, validación editorial rica, señales pedagógicas trazables, persistencia de señales del Tutor y analytics descriptivos básicos verificados en runtime.
+
+Estado Sprint 45 (calibración interna de señales): **cierre parcial controlado en repo**; se requiere mantener coherencia documental de sprints y suite `npm test` completamente en verde antes de declarar cierre total.
 
 ## Estado normativo
 
