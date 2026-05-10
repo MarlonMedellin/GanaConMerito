@@ -10,15 +10,17 @@ last_reviewed: 2026-05-09
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-05-09 — Sprint 40 (Tutor Taxonomy-Aware Item Evidence).
+Ultima actualizacion: 2026-05-09 — Sprint 41 (Semantic Governance Foundation v1).
 
 ## Estado general
 
-**Estado:** MVP estabilizado operativamente despues del cierre de Sprint 33. El core esta desplegado, Docker construye correctamente, smoke local/publico fue reportado como PASS y la suite UI E2E fue reportada como PASS.
+**Estado:** producto activo con core operativo, Tutor GCM gobernado y base semántica v1 consolidada en repo para evitar drift taxonómico antes de la ingesta rica.
 
-**Producto:** producto activo con core operativo, Tutor GCM gobernado, dashboard con metricas prudentes y contrato de fuente normativa minima explicitamente clasificado como no oficial/verificado.
+**Producto:** login, onboarding, practica y dashboard siguen siendo las superficies activas; Tutor GCM permanece bajo contrato, sin autoridad sobre scoring, avance ni estado de sesión.
 
-**Sprint actual:** Sprint 40 — Tutor Taxonomy-Aware Item Evidence.
+**Sprint actual en repo:** Sprint 41 — Semantic Governance Foundation v1.
+
+**Sprint siguiente preparado:** Sprint 42 — Rich Ingestion Normalization.
 
 **Sprint anterior cerrado:** Sprint 39 — Decoupled Update Runtime Worker.
 
@@ -36,6 +38,32 @@ Ultima actualizacion: 2026-05-09 — Sprint 40 (Tutor Taxonomy-Aware Item Eviden
 - **Commit actual desplegado y verificado:** `07ceb1a`.
 - **Short hash verificado:** `07ceb1a`.
 
+## Sprint 41 — activo en repo, listo para cierre de implementación
+
+### Semantic Governance Foundation v1
+
+**Estado:** IMPLEMENTACION DE REPO AJUSTADA; CIERRE OPERATIVO PENDIENTE DE BUNDLE DE VALIDACION
+
+Objetivo principal:
+- consolidar taxonomía canónica, validadores, normalización legacy gobernada y adaptadores compatibles del Tutor sin inventar metadata ausente.
+
+Resultado en repo:
+- `src/domain/taxonomy/catalogs.ts` gobierna valores canónicos, aliases, deprecaciones y valores prohibidos.
+- `src/domain/taxonomy/validators.ts` valida taxonomía y tags con rechazo estricto de desconocidos y soporte deprecado explícito.
+- `src/domain/taxonomy/normalize-item.ts` deja de fabricar metadata ausente y la reemplaza por degradación trazable con `missingTaxonomy` y `governanceWarnings`.
+- `src/domain/tutor/question-truth-adapter.ts` preserva el `TutorSupportContract` seguro, incluida `responsePolicy`, mientras integra la gobernanza semántica.
+- `src/lib/tutor/tutor.test.ts` cubre rechazo de tags desconocidos, deprecaciones, ausencia explícita de taxonomía y preservación de guardrails.
+
+Limitación explícita que queda aceptada:
+- La lectura runtime productiva sigue consumiendo principalmente `area` y `competency`; la adopción punta a punta del resto de metadata gobernada se traslada a Sprint 42.
+
+## Sprint 42 — preparado
+
+### Rich Ingestion Normalization
+
+Objetivo principal:
+- llevar la taxonomía y metadata rica ya gobernadas en código hacia la lectura real del banco, la normalización de lotes y la validación editorial por cobertura y errores.
+
 ## Sprint 39 — cerrado
 
 ### Decoupled Update Runtime Worker
@@ -48,31 +76,6 @@ Validaciones reportadas por operación VPS:
 - Docker reconstruido con `APP_COMMIT=07ceb1a` y `APP_BUILD_TIME` generado en UTC.
 - Contenedor `gcm-app` reiniciado mediante `docker compose up -d gcm-app`.
 - Aplicación reportada corriendo en producción bajo la nueva versión.
-
-Entregables de Sprint 39:
-- `/api/ops/update` desacoplado por jobs persistentes.
-- `/api/ops/update/status` disponible para polling.
-- `update.html` migrado a flujo job-based.
-- `src/lib/ops/update-jobs.ts` creado para persistencia de jobs/reportes.
-- `ops/run-update-job.sh` versionado como worker host-side de referencia.
-- Documentación de worker desacoplado creada.
-
-Riesgo residual:
-- La instalación/orquestación definitiva del worker host-side en VPS queda como mejora operativa posterior. El cierre de Sprint 39 se acepta por paridad `product/deploy`, rebuild Docker y runtime levantado sobre `07ceb1a`.
-
-## Sprint 40 — activo
-
-### Tutor Taxonomy-Aware Item Evidence
-
-Objetivo principal:
-Hacer que Tutor GCM consuma la nueva estructura rica de ítems, taxonomía, perfiles y metadatos pedagógico-psicométricos, sin romper compatibilidad con el banco actual.
-
-Foco inicial:
-- Contrato de taxonomía `area -> subarea -> competency`.
-- Capa contextual por perfiles sin duplicar ítems.
-- Tipos de item rico.
-- Extensión compatible de `QuestionTruth`.
-- Enriquecimiento de `TutorSupportContract` con afirmación, evidencia, dificultad, nivel cognitivo, distractores y riesgos técnicos.
 
 ## Sprint 37.1 — cerrado
 
@@ -92,16 +95,9 @@ Validaciones completadas:
 - npm run test:recent-sprints: PASS
 - npm run test:unit: PASS
 
-Adicionalmente:
-- Sprint 35 y Sprint 36 ejecutados con `npm run test:tutor` en verde.
-- Runtime publico/VPS de Sprint 35-37.1 validado en la misma corrida operacional.
-- El endpoint `/update.html` quedo operativo con mounts, docker.sock y shell tools disponibles dentro de `gcm-app`.
-
 ## Resumen de situación
 
-El proyecto completó la fase crítica de estabilización iniciada en Sprint 33 y actualmente retoma como prioridad el desarrollo pedagógico del Tutor GCM sobre la nueva taxonomía de ítems.
-
-La prioridad actual ya no es estabilización funcional del producto sino integración del Tutor con evidencia pedagógica, psicométrica y taxonómica más rica.
+El proyecto sale de Sprint 41 con una base semántica más segura en repo y ya puede mover el foco a la normalización real de ingesta, sin vender todavía que toda la metadata rica esté adoptada de punta a punta en runtime.
 
 ## Estado normativo
 
