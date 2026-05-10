@@ -41,6 +41,11 @@ GanaConMerito tiene activo el core real de producto:
 
 ## Implementado y validado recientemente
 
+### Sprint 47 — Mantenimiento menor y saneamiento final
+- Estado: CERRADO EN REPO (CIERRE DOCUMENTAL Y DE TRAZABILIDAD).
+- Resultado: alineacion final de `status`, `sprint-log`, `change-log` y `backlog` con el estado posterior a Sprint 46, correccion de referencias residuales y cierre del bloque corto de saneamiento sin abrir cambios funcionales ni claims de runtime nuevos.
+- Evidencia: actualizaciones cruzadas en documentacion canonica del repo.
+- Limite aceptado: sin revalidacion runtime nueva y sin cierre normativo sustantivo adicional.
 
 ### Sprint 46 — Cierre normativo del Tutor GCM
 - Estado: CERRADO EN REPO (DOCUMENTAL, advisory-heavy).
@@ -92,11 +97,11 @@ GanaConMerito tiene activo el core real de producto:
 9. Mantener la expansion del banco bajo la regla editorial: taxonomia primero, perfiles como segunda capa opcional.
 
 ## Next
-1. Sprint 47 — consolidacion tecnica posterior a la calibracion: refinar calidad de evidencia por sesion, revisar ruido/falso positivo y endurecer lectura operativa de metricas sin abrir scoring ni psicometria fuerte.
-2. Cierre normativo real del Tutor: cargar anexos oficiales, reemplazar placeholders y rehacer revision documental cruzada.
-3. Release y runtime confiables: CI minima en GitHub Actions, build, tests unitarios, validacion documental y disciplina publica de runtime.
-4. Validacion visual aislada del resumen de trazas: obtener evidencia publica nueva del bloque de resumen del Tutor en dashboard si sigue siendo artefacto de cierre requerido.
-5. Runtime topology doc: documentar `docker-compose.yml`, env file, dominio, proxy y politica de secretos.
+1. Carga de anexos oficiales y eventual reevaluacion de `source_verified` para el frente normativo del Tutor.
+2. Release y runtime confiables: CI minima en GitHub Actions, build, tests unitarios, validacion documental y disciplina publica de runtime.
+3. Validacion visual aislada del resumen de trazas: obtener evidencia publica nueva del bloque de resumen del Tutor en dashboard si sigue siendo artefacto de cierre requerido.
+4. Runtime topology doc: documentar `docker-compose.yml`, env file, dominio, proxy y politica de secretos.
+5. Refinamiento posterior de calidad de evidencia y ruido/falso positivo en `trace_signals`, sin abrir scoring ni psicometria fuerte.
 
 ## Later
 1. Admin para editar fuente de verdad normativa y perfiles.
