@@ -356,3 +356,21 @@ test("sprint 42 editorial validation classifies missing fields and invalid value
   assert.ok(issues.some((x) => x.type === "malformed_technical_risk"));
   assert.ok(issues.some((x) => x.type === "distractor_without_rationale"));
 });
+
+test("sprint 42 normalizes current corpus loose tags and preserves raw taxonomy coverage", () => {
+  const item = normalizeLegacyItemToRichItem({
+    id: "item-s42-2",
+    area: "gestion",
+    subarea: "gestion_academica",
+    competency: "analisis_de_gestion",
+    tipo_item: "multiple_choice",
+    targetRole: "docente",
+    applicantProfile: "directivo_docente",
+    tags: ["foco:evaluacion_formativa", "uso:mejora_institucional"],
+  });
+
+  assert.strictEqual(item.taxonomy.area, "gestion_directiva");
+  assert.strictEqual(item.sourceTaxonomy.subarea, "gestion_academica");
+  assert.deepStrictEqual(item.tags.content_topic, ["evaluacion_formativa"]);
+  assert.ok(item.governanceWarnings.some((warning) => /Unknown loose tag/i.test(warning)));
+});
