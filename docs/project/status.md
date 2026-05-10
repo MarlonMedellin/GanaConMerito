@@ -12,6 +12,36 @@ last_reviewed: 2026-05-10
 
 Ultima actualizacion: 2026-05-10 — Sprint 43 (Learning Paths + Misconception Signals - Base Implementation).
 
+---
+
+# Executive Operational Snapshot
+
+## Current Sprint
+Sprint 43 — Learning Paths + Misconception Signals - Base Implementation.
+
+## Current Runtime State
+Runtime público verificado en `https://cnsc.profemarlon.com` sobre `fee91a4`.
+
+## Last Verified Commit
+`fee91a4`
+
+## Known Drift
+- Persisten diferencias entre documentación histórica Sprint 33 y estado operativo Sprint 43.
+- Persisten contratos y validaciones parcialmente narrativas.
+- La trazabilidad multiagente todavía no es enforcement obligatorio.
+
+## Pending Debt
+- endurecimiento de trazabilidad;
+- sincronización documental automática;
+- calibración real de learning signals;
+- reducción de documentación legacy;
+- integración fuerte rich-only.
+
+## Last Audit
+2026-05-10 — auditoría operativa y documental multiagente.
+
+---
+
 ## Estado general
 
 **Estado:** producto activo con core operativo, Tutor GCM gobernado, capa editorial de normalización rica conectada al banco activo y capa base de señales pedagógicas ya integrada en repo.
@@ -59,7 +89,7 @@ Resultado en repo:
 
 Limitación explícita aceptada:
 - La detección actual es heurística y depende de la calidad del historial reciente y del feedback disponible.
-- Este cierre no incluye promoción a VPS ni verificación del runtime público.
+- Persisten riesgos de calibración semántica y editorial.
 
 ## Sprint 42 — cerrado en repo
 
