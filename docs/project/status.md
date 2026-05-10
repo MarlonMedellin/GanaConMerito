@@ -54,7 +54,7 @@ Runtime público verificado en `https://cnsc.profemarlon.com` sobre `fee91a4`.
 
 **Sprint actual en repo:** Sprint 43 — Learning Paths + Misconception Signals - Base Implementation.
 
-**Siguiente frente natural:** calibración y persistencia de señales pedagógicas del Tutor, sin cambio todavía formalizado como nuevo sprint.
+**Siguiente frente natural:** Sprint 44 — Persistencia, calibración y analytics del Tutor (iniciado, parcialmente completado en repo; runtime no verificado para este subfrente).
 
 **Sprint anterior cerrado:** Sprint 42 — Rich Ingestion Normalization.
 

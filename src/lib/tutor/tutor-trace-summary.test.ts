@@ -12,6 +12,7 @@ test("buildTutorTraceSummary aggregates metrics and top lists", () => {
       degraded: false,
       can_reveal_correct_answer: false,
       guardrails_applied: ["no_free_chat"],
+      trace_signals: { misconceptionDetected: false, hintLevelUsed: 1 },
     },
     {
       created_at: "2026-05-02T12:00:00.000Z",
@@ -20,6 +21,7 @@ test("buildTutorTraceSummary aggregates metrics and top lists", () => {
       degraded: true,
       can_reveal_correct_answer: true,
       guardrails_applied: ["degrade_on_missing_evidence"],
+      trace_signals: { misconceptionDetected: true },
     },
     {
       created_at: "2026-05-03T12:00:00.000Z",
@@ -28,6 +30,7 @@ test("buildTutorTraceSummary aggregates metrics and top lists", () => {
       degraded: false,
       can_reveal_correct_answer: false,
       guardrails_applied: ["no_free_chat", "no_score_mutation"],
+      trace_signals: { misconceptionDetected: true, hintLevelUsed: 2 },
     },
   ]);
 
@@ -35,6 +38,11 @@ test("buildTutorTraceSummary aggregates metrics and top lists", () => {
   assert.equal(summary.degradedTurns, 1);
   assert.equal(summary.preAnswerGuardrailHits, 2);
   assert.equal(summary.postAnswerExplanations, 1);
+  assert.equal(summary.misconceptionSignals, 2);
+  assert.deepEqual(summary.hintLevelDistribution, [
+    { level: 1, count: 1 },
+    { level: 2, count: 1 },
+  ]);
   assert.deepEqual(summary.topIntents, [
     { intent: "give_hint", count: 2 },
     { intent: "explain_feedback", count: 1 },
@@ -56,6 +64,7 @@ test("buildTutorTraceSummary ignores metadata tags inside guardrails_applied", (
       degraded: false,
       can_reveal_correct_answer: false,
       guardrails_applied: [TUTOR_CONTRACT_VERSION, "no_free_chat", "non_guardrail_metadata"],
+      trace_signals: {},
     },
   ]);
 
@@ -68,6 +77,8 @@ test("buildTutorTraceSummary returns zeros for empty input", () => {
     degradedTurns: 0,
     preAnswerGuardrailHits: 0,
     postAnswerExplanations: 0,
+    misconceptionSignals: 0,
+    hintLevelDistribution: [],
     topIntents: [],
     topGuardrails: [],
     recentTurns: [],
