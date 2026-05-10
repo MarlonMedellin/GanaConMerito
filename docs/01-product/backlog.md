@@ -41,7 +41,7 @@ GanaConMerito tiene activo el core real de producto:
 ## Implementado y validado recientemente
 
 ### Sprint 43 — Learning Paths + Misconception Signals - Base Implementation
-- Estado: IMPLEMENTACION BASE LISTA PARA PROMOCION.
+- Estado: CERRADO EN REPO.
 - Resultado: `learningSignals` trazables para misconception, subárea débil, patrón repetido, mismatch cognitivo y siguiente mejor práctica; recomendación pedagógica enriquecida sin mutar scoring ni sesión.
 - Límite aceptado: runtime público no verificado en esta corrida y calibración heurística pendiente con uso real.
 
