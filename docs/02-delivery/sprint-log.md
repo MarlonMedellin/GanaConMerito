@@ -24,15 +24,35 @@ last_reviewed: 2026-05-10
 # Sprint log
 
 ## Current delivery state
-- **Current/last real operational block**: Sprint 46 — Cierre normativo del Tutor GCM (cerrado en repo documental el 2026-05-10).
+- **Current/last real operational block**: Sprint 47 — Mantenimiento menor y saneamiento final (cerrado en repo documental el 2026-05-10).
 - **Last runtime-verified commit**: `fcc40cb`.
 - **Governance Hardening Roadmap state**: Fase 1 y Fase 2 iniciadas; Fase 3 en ejecucion documental (reduccion y clasificacion), Fases 4-5 futuras.
 - **Open risks**:
   - la calibracion del Tutor sigue siendo heuristica y requiere evidencia de uso real para refinamiento posterior;
   - trazabilidad multiagente aun advisory y sin enforcement automatico;
   - parte del QA historico sigue narrativo y puede competir con baseline ejecutiva;
-  - integracion futura del Tutor con LLM real sigue pendiente como deuda tecnica futura.
+  - integracion futura del Tutor con LLM real sigue pendiente como deuda tecnica futura;
+  - el frente normativo sigue en `synthesized_governed_unverified` hasta cargar anexos oficiales suficientes.
 
+## Sprint 47 — mantenimiento menor y saneamiento final
+- **Estado**: CERRADO EN REPO (CIERRE DOCUMENTAL Y DE TRAZABILIDAD)
+- **Fecha de cierre**: 2026-05-10
+- **Rama de promocion**: `master`
+- **Objetivo**: cerrar el bloque corto posterior a Sprint 46 corrigiendo inconsistencias residuales de estado, backlog y trazabilidad sin abrir cambios funcionales ni claims nuevos de runtime.
+
+### Entregables principales
+- Alineacion final entre `status.md`, `sprint-log.md`, `change-log.md` y `backlog.md`.
+- Correccion de referencias residuales del sprint anterior para que la secuencia vigente no compita con planes previos.
+- Cierre explicito de Sprint 47 como bloque corto de saneamiento, sin reabrir hardening grande ni nuevos frentes de producto.
+
+### Evidencia operacional
+- Cambios solo documentales en repo.
+- Validaciones locales no reejecutadas desde este entorno por ausencia de checkout operativo del repo.
+- Runtime publico NO revalidado en esta entrega.
+
+### Limitacion aceptada del sprint
+- No se cargaron anexos oficiales nuevos ni se promovio el frente normativo a `source_verified`.
+- No hubo nueva validacion runtime ni de VPS por tratarse de cierre documental menor.
 
 ## Sprint 46 — cierre normativo del Tutor GCM
 - **Estado**: CERRADO EN REPO (DOCUMENTAL)
