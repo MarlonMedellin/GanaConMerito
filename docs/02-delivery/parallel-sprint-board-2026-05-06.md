@@ -19,7 +19,7 @@ last_reviewed: 2026-05-06
 ## Nota de contexto
 
 El repo documenta `Sprint 13` como último sprint cerrado con fecha `2026-05-04`.
-Si el equipo humano decide seguir nombrando este frente como `Sprint 9` por razones operativas externas, debe aclararlo en el siguiente cierre para evitar drift entre conversación y repo.
+Este frente debe referenciarse como `Sprint 44 — Persistencia, calibración y analytics` para evitar drift entre conversación y repo.
 
 ## Objetivo del frente actual
 

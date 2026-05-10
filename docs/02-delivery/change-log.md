@@ -28,6 +28,30 @@ last_reviewed: 2026-05-10
 - estado: in-progress (fase 3 documental en ejecución; sin cierre de roadmap)
 - limitaciones: inventario inicial; no se archivaron ni removieron documentos legacy en esta entrega.
 
+
+
+## 2026-05-10
+- tipo: feat+tutor+calibration-lite
+- modulo: tutor/analytics/dashboard
+- resumen: Sprint 44 agrega calibración descriptiva simple sobre trazas del Tutor con `misconceptionRate` y `signalLevel` (`low_signal|emerging_signal|usable_signal`) derivado solo del número de turnos y señales observadas. Sin scoring nuevo, sin ponderaciones complejas y sin psicometría adicional.
+- sprint: Sprint 44 — Persistencia, calibración y analytics
+- agente: GPT-5.3-Codex
+- relacionados: src/lib/tutor/tutor-trace-summary.ts, src/lib/tutor/tutor-trace-summary.test.ts, src/components/tutor/tutor-trace-summary-card.tsx
+## 2026-05-10
+- tipo: governance+docs+traceability-remediation
+- modulo: tutor/traces/dashboard/docs
+- resumen: Remediación de trazabilidad: la ejecución inicialmente registrada por error como Sprint 9 se corrige a Sprint 44. Se mantiene evidencia funcional del commit `216d96e`, estado parcial y runtime no verificado.
+- sprint: Sprint 44 — Persistencia, calibración y analytics
+- agente: GPT-5.3-Codex
+- relacionados: docs/02-delivery/change-log.md, docs/02-delivery/sprint-log.md, docs/01-product/backlog.md, docs/project/status.md
+
+## 2026-05-10
+- tipo: feat+tutor+analytics+persistence
+- modulo: tutor/traces/dashboard
+- resumen: Sprint 44 (línea persistencia-calibración-analytics) agrega persistencia estructurada de `trace_signals` en `tutor_turn_traces`, índice GIN para consulta analítica y expansión del resumen del dashboard con señales de misconception y distribución de niveles de pista. Se mantiene alcance descriptivo sin mutar scoring ni progreso.
+- sprint: Sprint 44 — Persistencia, calibración y analytics (subfrente tutor)
+- agente: GPT-5.3-Codex
+- relacionados: supabase/migrations/0010_tutor_trace_signals.sql, src/lib/tutor/tutor-trace-repository.ts, src/lib/tutor/tutor-trace-summary.ts, src/app/api/tutor/traces/summary/route.ts, src/components/tutor/tutor-trace-summary-card.tsx
 ## 2026-05-10
 - tipo: governance+docs+ci
 - modulo: governance/ops/qa/delivery

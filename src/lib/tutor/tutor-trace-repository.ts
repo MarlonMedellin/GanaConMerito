@@ -24,6 +24,7 @@ export async function persistTutorTurnTrace(params: {
     degraded: trace.degraded,
     confidence: trace.confidence,
     rationale_quality: trace.rationaleQuality ?? null,
+    trace_signals: trace.traceSignals ?? {},
     created_at: trace.createdAt,
   });
 

@@ -7,13 +7,21 @@ export type TutorTraceSummaryRow = {
   degraded: boolean;
   can_reveal_correct_answer: boolean;
   guardrails_applied: string[] | null;
+  trace_signals?: {
+    misconceptionDetected?: boolean;
+    hintLevelUsed?: 1 | 2 | 3;
+  } | null;
 };
 
 export type TutorTraceSummary = {
   totalTurns: number;
   degradedTurns: number;
+  signalLevel: "low_signal" | "emerging_signal" | "usable_signal";
+  misconceptionRate: number;
   preAnswerGuardrailHits: number;
   postAnswerExplanations: number;
+  misconceptionSignals: number;
+  hintLevelDistribution: Array<{ level: 1 | 2 | 3; count: number }>;
   topIntents: Array<{ intent: string; count: number }>;
   topGuardrails: Array<{ guardrail: string; count: number }>;
   recentTurns: Array<{
@@ -42,8 +50,12 @@ export function buildTutorTraceSummary(rows: TutorTraceSummaryRow[]): TutorTrace
     return {
       totalTurns: 0,
       degradedTurns: 0,
+      signalLevel: "low_signal",
+      misconceptionRate: 0,
       preAnswerGuardrailHits: 0,
       postAnswerExplanations: 0,
+      misconceptionSignals: 0,
+      hintLevelDistribution: [],
       topIntents: [],
       topGuardrails: [],
       recentTurns: [],
@@ -56,6 +68,8 @@ export function buildTutorTraceSummary(rows: TutorTraceSummaryRow[]): TutorTrace
   let degradedTurns = 0;
   let preAnswerGuardrailHits = 0;
   let postAnswerExplanations = 0;
+  let misconceptionSignals = 0;
+  const hintLevelCounts = new Map<1 | 2 | 3, number>();
 
   for (const row of rows) {
     if (row.degraded) degradedTurns += 1;
@@ -64,6 +78,15 @@ export function buildTutorTraceSummary(rows: TutorTraceSummaryRow[]): TutorTrace
       preAnswerGuardrailHits += 1;
     } else {
       postAnswerExplanations += 1;
+    }
+
+    if (row.trace_signals?.misconceptionDetected) {
+      misconceptionSignals += 1;
+    }
+
+    const hintLevel = row.trace_signals?.hintLevelUsed;
+    if (hintLevel) {
+      hintLevelCounts.set(hintLevel, (hintLevelCounts.get(hintLevel) ?? 0) + 1);
     }
 
     intentCounts.set(row.intent, (intentCounts.get(row.intent) ?? 0) + 1);
@@ -94,8 +117,14 @@ export function buildTutorTraceSummary(rows: TutorTraceSummaryRow[]): TutorTrace
   return {
     totalTurns: rows.length,
     degradedTurns,
+    signalLevel: rows.length >= 5 ? "usable_signal" : rows.length >= 3 ? "emerging_signal" : "low_signal",
+    misconceptionRate: Number((misconceptionSignals / rows.length).toFixed(3)),
     preAnswerGuardrailHits,
     postAnswerExplanations,
+    misconceptionSignals,
+    hintLevelDistribution: [1, 2, 3]
+      .filter((level) => hintLevelCounts.has(level as 1 | 2 | 3))
+      .map((level) => ({ level: level as 1 | 2 | 3, count: hintLevelCounts.get(level as 1 | 2 | 3) ?? 0 })),
     topIntents: toTopList(intentCounts, "intent") as Array<{ intent: string; count: number }>,
     topGuardrails: toTopList(guardrailCounts, "guardrail") as Array<{ guardrail: string; count: number }>,
     recentTurns,

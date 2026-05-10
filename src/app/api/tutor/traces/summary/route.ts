@@ -18,7 +18,7 @@ export async function GET() {
   while (true) {
     const { data, error } = await supabase
       .from("tutor_turn_traces")
-      .select("created_at, mode, intent, degraded, can_reveal_correct_answer, guardrails_applied")
+      .select("created_at, mode, intent, degraded, can_reveal_correct_answer, guardrails_applied, trace_signals")
       .eq("profile_id", profile.id)
       .order("created_at", { ascending: false })
       .range(from, from + TRACE_PAGE_SIZE - 1);

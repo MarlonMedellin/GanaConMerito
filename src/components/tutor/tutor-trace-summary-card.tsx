@@ -8,8 +8,12 @@ type TopGuardrail = { guardrail: string; count: number };
 type TutorTraceSummary = {
   totalTurns: number;
   degradedTurns: number;
+  signalLevel: "low_signal" | "emerging_signal" | "usable_signal";
+  misconceptionRate: number;
   preAnswerGuardrailHits: number;
   postAnswerExplanations: number;
+  misconceptionSignals: number;
+  hintLevelDistribution: Array<{ level: 1 | 2 | 3; count: number }>;
   topIntents: TopIntent[];
   topGuardrails: TopGuardrail[];
 };
@@ -115,6 +119,18 @@ export function TutorTraceSummaryCard() {
               <span className="metric-label">Explicaciones post-respuesta</span>
               <strong className="metric-value">{summary.postAnswerExplanations}</strong>
             </div>
+            <div className="metric-card">
+              <span className="metric-label">Señales de misconception</span>
+              <strong className="metric-value">{summary.misconceptionSignals}</strong>
+            </div>
+            <div className="metric-card">
+              <span className="metric-label">Tasa de misconception</span>
+              <strong className="metric-value">{(summary.misconceptionRate * 100).toFixed(1)}%</strong>
+            </div>
+            <div className="metric-card">
+              <span className="metric-label">Nivel de señal</span>
+              <strong className="metric-value">{summary.signalLevel}</strong>
+            </div>
           </section>
 
           <section className="two-column-grid" style={{ marginTop: 14 }}>
@@ -125,6 +141,14 @@ export function TutorTraceSummaryCard() {
             <div className="list-card">
               <h3 className="section-title" style={{ fontSize: "1rem" }}>Guardrails más frecuentes</h3>
               {renderTopList(summary.topGuardrails, (item) => item.guardrail, "Sin guardrails destacados por ahora.")}
+            </div>
+            <div className="list-card">
+              <h3 className="section-title" style={{ fontSize: "1rem" }}>Niveles de pista usados</h3>
+              {renderTopList(
+                summary.hintLevelDistribution,
+                (item) => `Nivel ${item.level}`,
+                "Sin uso de pistas registrado por ahora.",
+              )}
             </div>
           </section>
         </>

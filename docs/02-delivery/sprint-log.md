@@ -61,6 +61,8 @@ last_reviewed: 2026-05-10
 
 ### Limitación aceptada del sprint
 - La detección actual de misconceptions sigue siendo heurística y requiere calibración con uso real.
+- Sprint 44 inicia subfrente de persistencia/calibración del Tutor: `trace_signals` ahora quedan persistidas y el dashboard ya expone conteo de misconceptions y distribución de niveles de pista para lectura operativa descriptiva.
+- Sprint 44 extiende calibración lite con `misconceptionRate` y `signalLevel` basado en umbrales simples de volumen (3 y 5 turnos), manteniendo enfoque descriptivo y auditable.
 
 ## Sprint cerrado en repo — Sprint 42: Rich Ingestion Normalization
 - **Estado**: CERRADO EN REPO
