@@ -11,6 +11,16 @@ related:
   - DEL-SPRINT-LOG
 last_reviewed: 2026-05-10
 ---
+
+## Governance Hardening (executive block)
+- tipo: governance
+- modulo: docs/ops/delivery
+- resumen: Fase 3 activada para reducción documental, clasificación canónica y alineación mínima entre `status.md`, `sprint-log.md` y `change-log.md` sin borrar historial.
+- agente: PM-Governance/codex
+- relacionados: docs/project/status.md, docs/project/canonical-docs.md, docs/archive/legacy-candidates.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/02-delivery/governance-hardening-roadmap.md
+- estado: in-progress (fase 3 documental en ejecución; sin cierre de roadmap)
+- limitaciones: inventario inicial; no se archivaron ni removieron documentos legacy en esta entrega.
+
 ## 2026-05-10
 - tipo: governance+docs+ci
 - modulo: governance/ops/qa/delivery
