@@ -4,6 +4,10 @@ import { TutorOrchestrator } from "./tutor-orchestrator";
 import { selectAnsweredTurnForItem } from "./tutor-evidence-builder";
 import type { TutorEvidence, TutorTurnRequest } from "../../types/tutor-turn";
 
+import { normalizeLegacyItemToRichItem } from "../../domain/taxonomy/normalize-item";
+import { normalizeTaxonomyValue, validateTagRegistry } from "../../domain/taxonomy/validators";
+import { questionTruthToTutorSupportContract, richItemToQuestionTruth } from "../../domain/tutor/question-truth-adapter";
+
 const baseEvidence: TutorEvidence = {
   contest: {
     contestId: "contest-1",
@@ -255,4 +259,51 @@ test("TutorOrchestrator enforces no-reveal sanitization in pre-answer mode", asy
   assert.strictEqual(result.output.canRevealCorrectAnswer, false);
   assert.doesNotMatch(result.output.visibleMessage, /la correcta es\s+[A-D]|elige\s+[A-D]/i);
   assert.strictEqual(result.output.traceSignals?.guardrailTriggered, true);
+});
+
+test("semantic governance rejects unknown tags", () => {
+  assert.throws(() => validateTagRegistry({ content_topic: ["invented_tag"] }), /Unknown tag/i);
+});
+
+test("semantic governance rejects invalid targetPosition", () => {
+  assert.throws(() => normalizeTaxonomyValue("targetPosition", "astronauta"), /Unknown taxonomy value/i);
+});
+
+test("semantic governance normalizes known aliases", () => {
+  assert.strictEqual(normalizeTaxonomyValue("dificultad", "fácil"), "baja");
+});
+
+test("semantic governance validates area and competency through normalization", () => {
+  const item = normalizeLegacyItemToRichItem({
+    id: "item-sem-1",
+    area: "pedagogía",
+    competency: "analisis_pedagogico",
+    stem: "Caso",
+  });
+  assert.strictEqual(item.taxonomy.area, "pedagogia");
+  assert.strictEqual(item.taxonomy.competency, "analisis_pedagogico");
+});
+
+test("legacy compatibility flow builds QuestionTruth and TutorSupportContract", () => {
+  const rich = normalizeLegacyItemToRichItem({
+    id: "item-sem-2",
+    area: "pedagogia",
+    competency: "evaluacion_formativa",
+    stem: "Caso de aula",
+  });
+  const truth = richItemToQuestionTruth(
+    rich,
+    [
+      { key: "A", text: "A" },
+      { key: "B", text: "B" },
+    ],
+    "B",
+    "Rationale",
+  );
+  const support = questionTruthToTutorSupportContract(truth);
+
+  assert.strictEqual(truth.itemId, "item-sem-2");
+  assert.strictEqual(truth.competency, "evaluacion_formativa");
+  assert.ok(support.instructionalGoal);
+  assert.ok(support.qualityFlags?.includes("backward_compatible"));
 });
