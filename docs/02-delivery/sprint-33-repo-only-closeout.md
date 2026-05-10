@@ -1,3 +1,15 @@
+Status: superseded
+Replaced by: docs/project/status.md
+Canonical reference: docs/project/status.md; docs/05-ops/runtime-and-release.md
+Do not use for: declarar paridad runtime actual o cierre operacional global
+Last reviewed: 2026-05-10
+
+## Legacy authority context
+- Este documento ya NO es fuente ejecutiva porque describe cierre repo-only de Sprint 33.
+- Para verdad runtime/release consultar `docs/05-ops/runtime-and-release.md` y `docs/project/status.md`.
+- Sigue siendo útil para trazabilidad histórica de decisiones de cierre parcial.
+---
+
 # Sprint 33 Repo-Only Closeout
 
 ## Objetivo

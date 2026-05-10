@@ -145,3 +145,18 @@ Fases futuras:
 | strict governance | Enforcement amplio y consistente en CI y flujo release. | Futuro |
 
 Estado actual del repo: **advisory-heavy incremental hardening** entre niveles `advisory` y `advisory+CI`, sin enforcement bloqueante.
+
+
+---
+
+# Legacy governance state
+
+| State | Meaning |
+|---|---|
+| uncontrolled legacy | Documentos históricos sin clasificación de autoridad. |
+| classified legacy | Existe inventario con riesgo/severidad y referencias canónicas. |
+| contextualized legacy | Documentos high-conflict tienen headers y notas de no-autoridad ejecutiva. |
+| archived legacy | Históricos movidos de forma controlada a `docs/archive/` con reemplazo explícito. |
+| enforced governance | CI y flujo operativo bloquean contradicciones severas. |
+
+Estado actual real: **entre `classified legacy` y `contextualized legacy`**; todavía sin archive masivo ni enforcement bloqueante.

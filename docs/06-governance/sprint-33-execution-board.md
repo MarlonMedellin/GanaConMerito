@@ -1,3 +1,15 @@
+Status: legacy-reference
+Replaced by: docs/02-delivery/sprint-log.md
+Canonical reference: docs/project/status.md; docs/02-delivery/sprint-log.md; docs/02-delivery/change-log.md
+Do not use for: priorización actual, estado ejecutivo, roadmap vigente
+Last reviewed: 2026-05-10
+
+## Legacy authority context
+- Este documento ya NO es fuente ejecutiva porque representa tablero histórico de ejecución Sprint 33.
+- Para seguimiento vigente consultar `docs/02-delivery/sprint-log.md` y `docs/project/status.md`.
+- Sigue siendo útil para auditoría histórica del plan de ejecución de ese sprint.
+---
+
 # Sprint 33 Execution Board
 
 ## Objetivo del tablero

@@ -57,3 +57,24 @@ Corregir en la misma entrega cuando:
 - Política vigente en modo advisory-heavy.
 - No bloquea CI.
 - No reemplaza revisión humana.
+
+
+## Legacy conflict handling
+
+Cuando un documento histórico contradice uno canónico:
+- prevalece el documento canónico según `canonical-docs.md`;
+- el histórico se preserva, pero se etiqueta como `historic`, `superseded` o `legacy-reference` según corresponda;
+- registrar deuda técnica si la normalización completa excede alcance de la entrega.
+
+Preservar contradicción (drift tolerado) cuando:
+- el valor es puramente histórico y ya está contextualizado con header y bloque ejecutivo;
+- corregirlo implicaría reescritura histórica no necesaria.
+
+Marcar `superseded` cuando:
+- existe reemplazo canónico claro y el uso actual puede inducir decisiones erróneas.
+
+Corregir inmediatamente cuando:
+- el documento legacy realiza claims actuales de runtime, release o estado ejecutivo sin evidencia;
+- la contradicción cambia interpretación operativa en el presente.
+
+Estado: advisory-only, sin enforcement bloqueante.

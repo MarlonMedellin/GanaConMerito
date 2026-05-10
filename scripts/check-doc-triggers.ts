@@ -57,11 +57,29 @@ function emitWarning(source: string, rule: TriggerRule) {
   console.log('If intentionally skipped, register explicit technical debt.');
 }
 
+
+const legacyHighConflictDocs = [
+  "docs/02-delivery/sprint-33-post-merge-checklist.md",
+  "docs/02-delivery/sprint-33-repo-only-closeout.md",
+  "docs/06-governance/sprint-33-execution-board.md"
+];
+
+function emitLegacyWarning(file: string) {
+  console.log("\n[legacy-high-conflict-warning]");
+  console.log(`Legacy file flagged: ${file}`);
+  console.log("Review before editing:");
+  console.log("- docs/project/canonical-docs.md");
+  console.log("- docs/05-ops/drift-resolution-policy.md");
+  console.log("Keep advisory mode; do not treat this as CI blocking.");
+}
+
 function main() {
   console.log('\nDocumentation trigger checker (advisory mode)');
   console.log('No blocking enforcement enabled.\n');
 
   Object.entries(triggerMap).forEach(([source, rule]) => emitWarning(source, rule));
+
+  legacyHighConflictDocs.forEach((file) => emitLegacyWarning(file));
 
   console.log('\nGovernance mode: advisory-heavy incremental hardening.\n');
 }

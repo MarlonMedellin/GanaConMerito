@@ -1,3 +1,15 @@
+Status: superseded
+Replaced by: docs/project/status.md
+Canonical reference: docs/project/status.md; docs/02-delivery/sprint-log.md
+Do not use for: estado ejecutivo vigente, cierre de sprint actual, claims de runtime
+Last reviewed: 2026-05-10
+
+## Legacy authority context
+- Este documento ya NO es fuente ejecutiva porque refleja un checklist táctico de Sprint 33.
+- Para estado operativo vigente consultar `docs/project/status.md`.
+- Sigue siendo útil como evidencia histórica del proceso de post-merge de Sprint 33.
+---
+
 # Sprint 33 Post-Merge Checklist
 
 ## Objetivo
