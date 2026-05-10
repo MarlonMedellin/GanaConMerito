@@ -29,3 +29,11 @@ Objetivo: declarar jerarquía documental, autoridad y resolución de conflictos 
 | `docs/archive/README.md` | advisory | 11 | Referencia histórica no prioritaria | Política para conservación de históricos. | Consultar cuando se prepare migración/etiquetado de documentos legacy. | No usar para estado de producto, QA o runtime actual. | Regula interacción con históricos; no reemplaza canon operativo. | Ajuste de criterios de archivo. | `docs/archive/legacy-candidates.md` | Nunca prevalece sobre docs canónicos; solo contexto histórico. | PM-Governance |
 | `.github/pull_request_template.md` | template | 12 | Plantilla de evidencia PR | Estructura recomendada de reporte y drift. | Cambio de auditoría o trazabilidad. | `AGENTS.md`, `docs/05-ops/agent-traceability.md` | No resuelve conflictos; guía de reporte. | PM-Governance |
 | `scripts/check-doc-triggers.ts` | operational | 13 | Checker advisory | Warns de revisión documental relacionada. | Nuevas categorías/severidades advisory. | `docs/05-ops/documentation-trigger-map.md`, `docs/05-ops/drift-resolution-policy.md` | No prevalece documentalmente; solo emite alertas no bloqueantes. | DevEx / PM-Governance |
+
+
+## Archive migration notes
+
+- `docs/02-delivery/sprint-33-post-merge-checklist.md` migrado a `docs/archive/02-delivery/sprint-33-post-merge-checklist.md` (stub conservado en ruta original).
+- `docs/02-delivery/sprint-33-repo-only-closeout.md` migrado a `docs/archive/02-delivery/sprint-33-repo-only-closeout.md` (stub conservado).
+- `docs/06-governance/sprint-33-execution-board.md` migrado a `docs/archive/06-governance/sprint-33-execution-board.md` (stub conservado).
+- Consultar `docs/archive/archive-ready-queue.md` para estado `migrated/pending/blocked`.

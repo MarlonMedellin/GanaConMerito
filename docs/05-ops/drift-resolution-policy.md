@@ -102,3 +102,11 @@ Preservar trazabilidad:
 - mantener archivo íntegro (sin borrado);
 - registrar en `archive-ready-queue.md` y `legacy-candidates.md`;
 - actualizar `change-log.md` al ejecutar migración futura.
+
+
+## Post-archive handling
+
+- Referenciar documentos archivados siempre desde su stub original y desde `archive-ready-queue.md`.
+- Reactivar un documento histórico solo si falta evidencia crítica no presente en canon operativo.
+- NO consultar archive para definir estado ejecutivo actual, runtime vigente o cierre de sprint activo.
+- Evitar reintroducir drift: cualquier uso de archive en decisiones actuales debe registrar contexto en `change-log.md` o `status.md`.

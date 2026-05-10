@@ -173,7 +173,10 @@ Se busca mejor sincronización, menor ambigüedad y más evidencia operacional.
 ## Estado actual del hardening
 
 - Estado real: advisory-heavy incremental hardening activo, sin enforcement bloqueante.
-- Avance aproximado: **58%** del plan total (Fase 1-2 implementadas, Fase 3 en ejecución por lotes, Fase 4-5 pendientes).
+- Avance aproximado: **64%** del plan total (Fase 1-2 implementadas, Fase 3 en ejecución por lotes, Fase 4-5 pendientes).
+
+Hitos completados recientes:
+- primer lote archive-ready migrado con stubs reversibles y trazabilidad cruzada;
 
 Próximos milestones:
 1. completar contextualización de documentos High conflict restantes;

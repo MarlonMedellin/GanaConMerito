@@ -101,6 +101,33 @@ function emitSupersededWarning(file: string) {
   console.log("- docs/05-ops/drift-resolution-policy.md");
 }
 
+
+const archivedDocs = [
+  "docs/archive/02-delivery/sprint-33-post-merge-checklist.md",
+  "docs/archive/02-delivery/sprint-33-repo-only-closeout.md",
+  "docs/archive/06-governance/sprint-33-execution-board.md"
+];
+
+const movedStubDocs = [
+  "docs/02-delivery/sprint-33-post-merge-checklist.md",
+  "docs/02-delivery/sprint-33-repo-only-closeout.md",
+  "docs/06-governance/sprint-33-execution-board.md"
+];
+
+function emitArchivedWarning(file: string) {
+  console.log("\n[archived-doc-warning]");
+  console.log(`Archived file touched: ${file}`);
+  console.log("Avoid promoting archive content to executive truth.");
+  console.log("- docs/project/canonical-docs.md");
+}
+
+function emitMovedStubWarning(file: string) {
+  console.log("\n[moved-stub-warning]");
+  console.log(`Moved/stubbed file touched: ${file}`);
+  console.log("Ensure stub metadata and archive reference stay synchronized.");
+  console.log("- docs/archive/archive-ready-queue.md");
+}
+
 function main() {
   console.log('\nDocumentation trigger checker (advisory mode)');
   console.log('No blocking enforcement enabled.\n');
@@ -110,6 +137,8 @@ function main() {
   legacyHighConflictDocs.forEach((file) => emitLegacyWarning(file));
   archiveReadyDocs.forEach((file) => emitArchiveReadyWarning(file));
   supersededDocs.forEach((file) => emitSupersededWarning(file));
+  archivedDocs.forEach((file) => emitArchivedWarning(file));
+  movedStubDocs.forEach((file) => emitMovedStubWarning(file));
 
   console.log('\nGovernance mode: advisory-heavy incremental hardening.\n');
 }
