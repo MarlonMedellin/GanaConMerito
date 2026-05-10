@@ -10,35 +10,40 @@ last_reviewed: 2026-05-10
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-05-10 — Sprint 43 (Learning Paths + Misconception Signals - Base Implementation).
+Ultima actualizacion: 2026-05-10 — Sprint 44 (Persistencia, calibración y analytics del Tutor).
 
 ---
 
 # Executive Operational Snapshot
 
 ## Current Sprint
-Sprint 43 — Learning Paths + Misconception Signals - Base Implementation.
+Sprint 44 — Persistencia, calibración y analytics del Tutor.
 
 ## Current Runtime State
-Runtime público verificado en `https://cnsc.profemarlon.com` sobre `fee91a4`.
+Runtime público verificado en `https://cnsc.profemarlon.com` sobre `54efd43`.
 
 ## Last Verified Commit
-`fee91a4`
+`54efd43`
+
+## Current Sprint Status
+Sprint 44 está **AMPLIAMENTE COMPLETADO**, con runtime verificado en VPS y URL pública. Queda pendiente revisión humana final como paso de aceptación, no como bloqueo técnico de runtime.
 
 ## Known Drift
-- Persisten diferencias entre documentación histórica Sprint 33 y estado operativo Sprint 43.
+- Persisten diferencias entre documentación histórica Sprint 33 y estado operativo Sprint 44.
 - Persisten contratos y validaciones parcialmente narrativas.
 - La trazabilidad multiagente todavía no es enforcement obligatorio.
+- La integración del Tutor con LLM real queda como deuda técnica futura y no forma parte del cierre de Sprint 44.
 
 ## Pending Debt
+- revisión humana final de Sprint 44;
+- integración futura del Tutor con LLM real bajo contrato;
 - endurecimiento de trazabilidad;
 - sincronización documental automática;
-- calibración real de learning signals;
 - reducción de documentación legacy;
 - integración fuerte rich-only.
 
 ## Last Audit
-2026-05-10 — auditoría operativa y documental multiagente.
+2026-05-10 — validación runtime VPS Sprint 44 y cierre documental operativo.
 
 ---
 
@@ -48,15 +53,15 @@ Runtime público verificado en `https://cnsc.profemarlon.com` sobre `fee91a4`.
 
 ## Estado general
 
-**Estado:** producto activo con core operativo, Tutor GCM gobernado, capa editorial de normalización rica conectada al banco activo y capa base de señales pedagógicas ya integrada en repo.
+**Estado:** producto activo con core operativo, Tutor GCM gobernado, capa editorial de normalización rica conectada al banco activo, señales pedagógicas persistidas y analytics descriptivos básicos verificados en runtime.
 
 **Producto:** login, onboarding, practica y dashboard siguen siendo las superficies activas; Tutor GCM permanece bajo contrato, sin autoridad sobre scoring, avance ni estado de sesión.
 
-**Sprint actual en repo:** Sprint 43 — Learning Paths + Misconception Signals - Base Implementation.
+**Sprint actual en repo:** Sprint 44 — Persistencia, calibración y analytics del Tutor.
 
-**Siguiente frente natural:** Sprint 44 — Persistencia, calibración y analytics del Tutor (iniciado, parcialmente completado en repo; runtime no verificado para este subfrente).
+**Estado del sprint actual:** AMPLIAMENTE COMPLETADO; runtime verificado; revisión humana final pendiente.
 
-**Sprint anterior cerrado:** Sprint 42 — Rich Ingestion Normalization.
+**Sprint anterior cerrado:** Sprint 43 — Learning Paths + Misconception Signals - Base Implementation.
 
 **Rama canonica:** `master`.
 
@@ -69,8 +74,36 @@ Runtime público verificado en `https://cnsc.profemarlon.com` sobre `fee91a4`.
 - **Árbol de deploy:** `/opt/gcm/app`.
 - **URL pública canónica:** `https://cnsc.profemarlon.com`.
 - **Consola operacional:** `https://cnsc.profemarlon.com/update.html`.
-- **Commit actual desplegado y verificado:** `fee91a4`.
-- **Short hash verificado:** `fee91a4`.
+- **Commit actual desplegado y verificado:** `54efd43`.
+- **Short hash verificado:** `54efd43`.
+
+## Sprint 44 — ampliamente completado y verificado en runtime
+
+### Persistencia, calibración y analytics del Tutor
+
+**Estado:** AMPLIAMENTE COMPLETADO; RUNTIME VERIFICADO; REVISIÓN HUMANA FINAL PENDIENTE
+
+Objetivo principal:
+- persistir señales útiles del Tutor, exponer analytics descriptivos simples y mantener una calibración liviana, explicable y auditable sin introducir scoring, pesos complejos ni modelos psicométricos.
+
+Resultado en repo y runtime:
+- `trace_signals` persistidas en `tutor_turn_traces` con soporte JSONB e índice GIN.
+- Escritura de señales del Tutor integrada en el repositorio de trazas.
+- Summary API ampliado con señales de misconception, distribución de niveles de pista, `misconceptionRate` y `signalLevel`.
+- Dashboard card ampliado para lectura operativa descriptiva.
+- Pruebas internas, API y UI ejecutadas sobre VPS y runtime público con resultado PASS reportado.
+- Runtime público verificado en `https://cnsc.profemarlon.com` sobre `54efd43`.
+
+Guardrails preservados:
+- sin scoring nuevo;
+- sin mutación de progreso o sesión;
+- sin autoridad automática del Tutor;
+- sin psicometría nueva;
+- sin cierre humano reemplazado por el sistema.
+
+Limitación explícita aceptada:
+- La revisión humana final queda pendiente como validación de aceptación.
+- La integración del Tutor con LLM real queda registrada como deuda técnica futura y deberá ejecutarse bajo contrato, sin afectar este cierre.
 
 ## Sprint 43 — cerrado en repo y verificado en runtime
 
@@ -122,7 +155,7 @@ Resultado en repo:
 
 ## Resumen de situación
 
-El proyecto ya tiene fundación semántica, validación editorial rica y una primera capa de señales pedagógicas trazables para orientar práctica siguiente. El frente natural que sigue es endurecer persistencia, calibración y evaluación real de estas señales sin desplazar la autoridad operativa del sistema.
+El proyecto ya tiene fundación semántica, validación editorial rica, señales pedagógicas trazables, persistencia de señales del Tutor y analytics descriptivos básicos verificados en runtime. El frente natural que sigue es revisión humana final de Sprint 44, cierre normativo real del Tutor y preparación futura del LLM real bajo contrato.
 
 ## Estado normativo
 
