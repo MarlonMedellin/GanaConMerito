@@ -24,9 +24,9 @@ export const TAXONOMY_ALIASES: Record<string, string> = {
 };
 
 export const TAXONOMY_DEPRECATED: Record<string, string> = {
-  general: "pedagogia",
-  undefined: "pedagogia",
-  n_a: "pedagogia",
+  primaria_basica: "basica_primaria",
+  secundaria_basica: "basica_secundaria",
+  seleccion_multiple_con_unica_respuesta: "seleccion_multiple",
 };
 
 export const TAXONOMY_FORBIDDEN = new Set(["otro", "misc", "random", "test", "na", "n/a"]);
@@ -48,8 +48,10 @@ export const TAG_ALIASES: Record<string, string> = {
 };
 
 export const TAG_DEPRECATED: Record<string, string> = {
-  free_tag: "content_topic",
-  misc: "content_topic",
+  evaluacion: "evaluacion_formativa",
+  gestion_de_aula: "gestion_aula",
+  fuente_debil: "source_unverified",
+  distractores_debiles: "weak_distractors",
 };
 
 export const TAG_FORBIDDEN = new Set(["whatever", "tmp", "debug", "untagged"]);
