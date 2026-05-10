@@ -24,13 +24,51 @@ last_reviewed: 2026-05-10
 # Sprint log
 
 ## Current delivery state
-- **Current/last real operational block**: Sprint 43 — Learning Paths + Misconception Signals - Base Implementation (cerrado y verificado en runtime el 2026-05-10).
-- **Last runtime-verified commit**: `fee91a4` (según evidencia vigente en `status.md` y este log).
+- **Current/last real operational block**: Sprint 44 — Persistencia, calibración y analytics del Tutor (ampliamente completado y verificado en runtime el 2026-05-10).
+- **Last runtime-verified commit**: `54efd43`.
 - **Governance Hardening Roadmap state**: Fase 1 y Fase 2 iniciadas; Fase 3 en ejecución documental (reducción y clasificación), Fases 4-5 futuras.
 - **Open risks**:
   - drift activo entre documentos históricos (Sprint 33/remediation/QA antiguos) y documentación canónica actual;
   - trazabilidad multiagente aún advisory y sin enforcement automático;
-  - parte del QA histórico sigue narrativo y puede competir con baseline ejecutiva.
+  - parte del QA histórico sigue narrativo y puede competir con baseline ejecutiva;
+  - integración futura del Tutor con LLM real sigue pendiente como deuda técnica futura.
+
+## Sprint 44 — Persistencia, calibración y analytics del Tutor
+- **Estado**: AMPLIAMENTE COMPLETADO; RUNTIME VERIFICADO; REVISION HUMANA FINAL PENDIENTE
+- **Fecha de validación runtime**: 2026-05-10
+- **Rama de promoción**: `master`
+- **Commit runtime verificado**: `54efd43`
+- **Objetivo**: persistir señales del Tutor, habilitar analytics descriptivos simples y dejar calibración liviana, auditable y gobernada sin introducir scoring, psicometría compleja ni autoridad automática.
+
+### Entregables principales
+- `trace_signals` persistidas en `tutor_turn_traces`.
+- Índice GIN para consulta analítica JSONB.
+- `misconceptionRate` y `signalLevel` agregados al summary del Tutor.
+- Distribución de niveles de pista y conteo de misconceptions expuestos en dashboard.
+- Runtime validado en VPS y URL pública.
+- QA interno, API y UI ejecutados con PASS.
+
+### Evidencia operacional
+- `~/.openclaw/product` sincronizado a `54efd43`.
+- `/opt/gcm/app` sincronizado a `54efd43`.
+- Docker reconstruido con `APP_COMMIT=54efd43`.
+- Variables cargadas desde `/opt/gcm/env/gcm-app.env`.
+- QA runtime smoke: PASS.
+- QA postdeploy: PASS.
+- QA API E2E: PASS.
+- QA UI Playwright: PASS.
+- Runtime público verificado en `https://cnsc.profemarlon.com`.
+
+### Resultado funcional
+- El Tutor ya puede persistir señales trazables y exponer analytics descriptivos simples.
+- La calibración actual permanece explícitamente heurística y explicable.
+- El sistema mantiene enfoque read-only y sin mutación de scoring.
+- La UI del dashboard ya expone señales operativas básicas útiles.
+
+### Limitación aceptada del sprint
+- La revisión humana final queda pendiente como aceptación operativa final.
+- La integración del Tutor con LLM real se registra como deuda técnica futura.
+- No se declara autoridad automática del Tutor ni personalización avanzada.
 
 ## Sprint cerrado en repo — Sprint 43: Learning Paths + Misconception Signals - Base Implementation
 - **Estado**: CERRADO Y VERIFICADO EN RUNTIME (PASS)
@@ -61,8 +99,6 @@ last_reviewed: 2026-05-10
 
 ### Limitación aceptada del sprint
 - La detección actual de misconceptions sigue siendo heurística y requiere calibración con uso real.
-- Sprint 44 inicia subfrente de persistencia/calibración del Tutor: `trace_signals` ahora quedan persistidas y el dashboard ya expone conteo de misconceptions y distribución de niveles de pista para lectura operativa descriptiva.
-- Sprint 44 extiende calibración lite con `misconceptionRate` y `signalLevel` basado en umbrales simples de volumen (3 y 5 turnos), manteniendo enfoque descriptivo y auditable.
 
 ## Sprint cerrado en repo — Sprint 42: Rich Ingestion Normalization
 - **Estado**: CERRADO EN REPO
