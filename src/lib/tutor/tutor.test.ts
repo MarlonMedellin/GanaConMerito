@@ -5,7 +5,7 @@ import { selectAnsweredTurnForItem } from "./tutor-evidence-builder";
 import type { TutorEvidence, TutorTurnRequest } from "../../types/tutor-turn";
 
 import { normalizeLegacyItemToRichItem } from "../../domain/taxonomy/normalize-item";
-import { normalizeTaxonomyValue, validateTagRegistry } from "../../domain/taxonomy/validators";
+import { normalizeTaxonomyValue, validateRichItemEditorial, validateTagRegistry } from "../../domain/taxonomy/validators";
 import { questionTruthToTutorSupportContract, richItemToQuestionTruth } from "../../domain/tutor/question-truth-adapter";
 
 const baseEvidence: TutorEvidence = {
@@ -336,4 +336,41 @@ test("legacy compatibility flow builds QuestionTruth and preserves TutorSupportC
   assert.ok(support.qualityFlags?.includes("semantic_governance_v1"));
   assert.strictEqual(support.responsePolicy?.noRevealCorrectAnswer, true);
   assert.strictEqual(support.responsePolicy?.noScoring, true);
+});
+
+test("sprint 42 editorial validation classifies missing fields and invalid values", () => {
+  const issues = validateRichItemEditorial({
+    id: "item-s42-1",
+    taxonomy: { area: "pedagogia", subarea: "inventada", competency: "x" },
+    targetPosition: "astronauta",
+    tags: { content_topic: ["invented_tag", "evaluacion"] },
+    technicalRisks: "bad-format",
+    distractorRationales: { A: "", B: "ok" },
+  });
+  assert.ok(issues.some((x) => x.type === "missing_field"));
+  assert.ok(issues.some((x) => x.type === "nonexistent_subarea"));
+  assert.ok(issues.some((x) => x.type === "non_canonical_competency"));
+  assert.ok(issues.some((x) => x.type === "invalid_target_position_or_role"));
+  assert.ok(issues.some((x) => x.type === "non_allowed_tag"));
+  assert.ok(issues.some((x) => x.type === "deprecated_tag_normalized"));
+  assert.ok(issues.some((x) => x.type === "malformed_technical_risk"));
+  assert.ok(issues.some((x) => x.type === "distractor_without_rationale"));
+});
+
+test("sprint 42 normalizes current corpus loose tags and preserves raw taxonomy coverage", () => {
+  const item = normalizeLegacyItemToRichItem({
+    id: "item-s42-2",
+    area: "gestion",
+    subarea: "gestion_academica",
+    competency: "analisis_de_gestion",
+    tipo_item: "multiple_choice",
+    targetRole: "docente",
+    applicantProfile: "directivo_docente",
+    tags: ["foco:evaluacion_formativa", "uso:mejora_institucional"],
+  });
+
+  assert.strictEqual(item.taxonomy.area, "gestion_directiva");
+  assert.strictEqual(item.sourceTaxonomy.subarea, "gestion_academica");
+  assert.deepStrictEqual(item.tags.content_topic, ["evaluacion_formativa"]);
+  assert.ok(item.governanceWarnings.some((warning) => /Unknown loose tag/i.test(warning)));
 });
