@@ -374,3 +374,29 @@ test("sprint 42 normalizes current corpus loose tags and preserves raw taxonomy 
   assert.deepStrictEqual(item.tags.content_topic, ["evaluacion_formativa"]);
   assert.ok(item.governanceWarnings.some((warning) => /Unknown loose tag/i.test(warning)));
 });
+
+test("TutorOrchestrator uses learning signals for next practice recommendation", async () => {
+  const result = await new TutorOrchestrator().processTurn(
+    makeInput("Recomiéndame siguiente práctica", {
+      ...baseEvidence,
+      userSession: {
+        ...baseEvidence.userSession,
+        selectedOption: "A",
+        learningSignals: {
+          misconceptionDetected: true,
+          repeatedErrorPattern: "Se observan 2 errores recientes asociados al foco evaluado.",
+          weakSubareaSignal: "Refuerzo sugerido en subárea relacionada con evaluación.",
+          recommendedNextPractice:
+            "Practica un nuevo ítem de pedagogia (evaluacion) justificando descarte de distractores antes de responder.",
+          difficultyMismatch: "Brecha cognitiva detectada.",
+          evidenceSummary: "Se generó señal pedagógica trazable con historial reciente y metadata del ítem.",
+        },
+      },
+    }),
+  );
+
+  assert.strictEqual(result.output.intent, "recommend_next_practice");
+  assert.match(result.output.visibleMessage, /próxima mejor práctica sugerida/i);
+  assert.match(result.output.visibleMessage, /no constituye decisión oficial del concurso/i);
+  assert.strictEqual(result.output.traceSignals?.misconceptionDetected, true);
+});
