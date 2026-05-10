@@ -40,6 +40,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Advisory documentation trigger review
+        run: npm run check:doc-triggers
+        continue-on-error: true
+
       - name: Validate active content
         run: npm run content:validate
 
