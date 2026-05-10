@@ -11,7 +11,7 @@ related:
   - PROD-VISION
   - DEL-SPRINT-LOG
   - QUAL-DEBT-REGISTER
-last_reviewed: 2026-05-08
+last_reviewed: 2026-05-09
 ---
 
 # Backlog de producto
@@ -32,10 +32,16 @@ GanaConMerito tiene activo el core real de producto:
 - metricas prudentes para no vender conclusiones fuertes con poca senal
 - runtime con metadata visible y disciplina de triple verificacion
 - sistema editorial del banco definido por taxonomia primaria (`area`, `subarea`, `competency`) y segmentacion secundaria opcional por perfil docente
+- fundacion de gobernanza semantica v1 ajustada en repo para evitar drift taxonomico y tags libres
 - **Cierre funcional Tutor GCM (Sprint 21):** PASS con WARN explícito.
 - **Frente normativo Tutor GCM (Sprint 22):** PASS con WARN explícito; contrato y guardrails verificados, fuente oficial suficiente pendiente.
 
 ## Implementado y validado recientemente
+
+### Sprint 41 — Semantic Governance Foundation v1
+- Estado: IMPLEMENTACION AJUSTADA EN REPO.
+- Resultado: catalogos, validadores, normalizador legacy gobernado y adaptadores del Tutor ya no inventan metadata ausente y preservan `responsePolicy` del contrato seguro.
+- Limite aceptado: la adopcion runtime punta a punta de metadata rica queda para Sprint 42.
 
 ### Sprint 22 — Tutor GCM Normative Source Verification
 - Estado: CERRADO CON PASS CON WARN.
@@ -52,45 +58,24 @@ GanaConMerito tiene activo el core real de producto:
 - Resultado: fuente normativa sintetizada gobernada integrada al Tutor GCM.
 - Advertencia: no equivale a fuente oficial verificada porque los adjuntos normativos previos expiraron y no fueron recargados.
 
-### Sprint 12.1 — Reconciliacion documental y mapa real del producto
-- Estado: CERRADO.
-- Resultado: documentacion canonica alineada con Sprints 10, 11 y 12.
-
-### Sprint 12 / PR #6 — Metricas confiables y utiles v1
-- Estado: CERRADO CON PASS/WARN MENOR.
-- Resultado: dashboard con contrato de senal, copy prudente, percentil condicionado y recomendaciones accionables.
-
-### Sprint 11 / PR #5 — Tutor GCM sincronizacion post-respuesta
-- Estado: CERRADO.
-- Resultado: Tutor reconoce estado post-respuesta y puede explicar clave/feedback/distractores solo cuando corresponde.
-
-### Sprint 10 / PR #4 — Tutor GCM fuente de verdad y contrato pedagogico v1
-- Estado: CERRADO.
-- Resultado: contratos, evidence builder, modos, intenciones, guardrails y degradacion honesta implementados.
-
-### PR #1 a #3
-- Login/Supabase runtime public config corregido.
-- Etiquetas tecnicas humanizadas.
-- Rotacion controlada de seleccion de items implementada.
-
 ## Now
 1. Prioridad normativa alta: cargar acuerdo oficial, guia metodologica, estructura de prueba y soporte de convocatoria/manual antes de volver a evaluar `source_verified`.
 2. Mantener Sprint 22 como clasificacion vigente del frente normativo hasta que exista nueva evidencia documental real.
 3. Mantener disciplina de promocion: PR al repo principal -> `master` -> `~/.openclaw/product` -> `/opt/gcm/app` -> Docker OCI -> validacion en `https://cnsc.profemarlon.com`.
 4. Ejecutar rotación de `SUPABASE_SERVICE_ROLE_KEY` (Riesgo identificado en Sprint 20).
-5. Agregar script general `npm test` y baseline local de QA.
+5. Mantener `npm test`, `npm run lint` y `npm run build` como bundle mínimo de cierre para sprints de contrato/taxonomía.
 6. Preparar persistencia de `TutorTurnTrace` para metricas pedagogicas.
 7. Mantener Tutor GCM bajo contrato: sin scoring, sin avance, sin cierre, sin fuente normativa inventada.
 8. Mantener el bypass de onboarding QA explicitamente como workaround controlado hasta reemplazarlo por un mecanismo oficial y auditable.
 9. Mantener la expansion del banco bajo la regla editorial: taxonomia primero, perfiles como segunda capa opcional.
 
 ## Next
-1. **Cierre normativo real del tutor**: cargar anexos oficiales, reemplazar placeholders y rehacer revision documental cruzada.
-2. **Persistencia y metricas del Tutor GCM**: guardar `TutorTurnTrace` para metricas pedagogicas y auditoria operativa.
-3. **Release y runtime confiables**: CI minima en GitHub Actions, build, tests unitarios, validacion documental y disciplina publica de runtime.
-4. **Validacion visual aislada del resumen de trazas**: obtener evidencia publica nueva del bloque de resumen del tutor en dashboard si sigue siendo artefacto de cierre requerido.
-5. **Runtime topology doc**: documentar `docker-compose.yml`, env file, dominio, proxy y politica de secretos.
-6. **Adopcion progresiva de metadatos de perfil en runtime**: decidir si `targetRole`, `targetPosition` y `applicantProfile` deben pasar del Markdown editorial a los contratos activos de lectura.
+1. **Sprint 42 — Rich Ingestion Normalization**: conectar la gobernanza semantica ya creada con el banco real, parsing, reportes de errores y cobertura editorial.
+2. **Cierre normativo real del tutor**: cargar anexos oficiales, reemplazar placeholders y rehacer revision documental cruzada.
+3. **Persistencia y metricas del Tutor GCM**: guardar `TutorTurnTrace` para metricas pedagogicas y auditoria operativa.
+4. **Release y runtime confiables**: CI minima en GitHub Actions, build, tests unitarios, validacion documental y disciplina publica de runtime.
+5. **Validacion visual aislada del resumen de trazas**: obtener evidencia publica nueva del bloque de resumen del tutor en dashboard si sigue siendo artefacto de cierre requerido.
+6. **Runtime topology doc**: documentar `docker-compose.yml`, env file, dominio, proxy y politica de secretos.
 
 ## Later
 1. Admin para editar fuente de verdad normativa y perfiles.
@@ -103,7 +88,7 @@ GanaConMerito tiene activo el core real de producto:
 ## Deuda tecnica viva
 
 ### Alta prioridad
-- No existe `npm test` como contrato general.
+- La evidencia de cierre operativo de Sprint 41 aun requiere corrida real de `test:tutor`, `test:recent-sprints`, `test:unit`, `lint` y `build` en una copia ejecutable del repo.
 - Fuente normativa del Tutor GCM aun no esta verificada con documentos oficiales completos.
 - El frente normativo del tutor no debe declararse cerrado mientras el repo no tenga anexos oficiales trazables.
 - `TutorTurnTrace` no se persiste aun en base de datos.
@@ -121,7 +106,7 @@ GanaConMerito tiene activo el core real de producto:
 - `practice`: nucleo principal del producto; debe seguir siendo practice-first.
 - `dashboard`: activo; debe reflejar progreso real sin inflar capacidades analiticas.
 - `editorial`: biblioteca documental de solo lectura y sistema de gobierno del banco; no tratar como CMS activo.
-- `ai`: Tutor GCM activo con guardrails y fuente normativa sintetizada v1 no verificada.
+- `ai`: Tutor GCM activo con guardrails, fuente normativa sintetizada v1 no verificada y fundacion de gobernanza semantica v1 ya alineada en repo.
 - `question-bank`: activo y gobernado; base taxonomica en `content/items/` y segmentacion secundaria opcional por perfil.
 
 ## Criterios de priorizacion
@@ -131,9 +116,3 @@ GanaConMerito tiene activo el core real de producto:
 4. Metricas honestas antes que claims de progreso.
 5. Documentacion canonica actualizada antes de abrir nuevos frentes grandes.
 6. No fragmentar el banco por cargo cuando basta con taxonomia base mas metadatos secundarios.
-
-## Deuda Sprint 35-36 formalizada en Sprint 37
-- Admin futuro de Tutor Dossier: edicion editorial por item, validacion de hint ladder, validacion de misconceptions y previsualizacion de no revelacion.
-- Gobernanza del dossier: versionado propio, auditoria editorial y relacion explicita con item version.
-- Guardrails: Sprint 37 centraliza enforcement minimo; si el tutor crece, se requiere capa formal dedicada.
-- Coherencia normativa: mantener `normative-source-truth-v1` como base sintetizada; el dossier tutorial no reemplaza fuente normativa primaria.
