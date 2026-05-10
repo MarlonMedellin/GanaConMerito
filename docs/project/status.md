@@ -102,3 +102,8 @@ El proyecto sale de Sprint 41 con una base semántica más segura en repo y ya p
 ## Estado normativo
 
 Sprint 22 se mantiene en estado `synthesized_governed_unverified` dado que el sistema todavía no cuenta con anexos oficiales suficientes para promover `source_verified`.
+
+
+## Sprint 42 — en ejecución
+
+Se implementa normalización de ingesta rica con validación editorial y reporte de cobertura sin romper compatibilidad legacy.

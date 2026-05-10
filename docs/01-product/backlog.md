@@ -70,7 +70,7 @@ GanaConMerito tiene activo el core real de producto:
 9. Mantener la expansion del banco bajo la regla editorial: taxonomia primero, perfiles como segunda capa opcional.
 
 ## Next
-1. **Sprint 42 — Rich Ingestion Normalization**: conectar la gobernanza semantica ya creada con el banco real, parsing, reportes de errores y cobertura editorial.
+1. **Sprint 42 — Rich Ingestion Normalization**: EN EJECUCION con validacion editorial y reporte de cobertura implementados en scripts y capa taxonomy.
 2. **Cierre normativo real del tutor**: cargar anexos oficiales, reemplazar placeholders y rehacer revision documental cruzada.
 3. **Persistencia y metricas del Tutor GCM**: guardar `TutorTurnTrace` para metricas pedagogicas y auditoria operativa.
 4. **Release y runtime confiables**: CI minima en GitHub Actions, build, tests unitarios, validacion documental y disciplina publica de runtime.

@@ -9,7 +9,7 @@ modules: [core, platform]
 tags: [changelog, cambios, entregas]
 related:
   - DEL-SPRINT-LOG
-last_reviewed: 2026-05-09
+last_reviewed: 2026-05-10
 ---
 ## 2026-05-09
 - tipo: feat+governance+tutor
@@ -69,3 +69,12 @@ last_reviewed: 2026-05-09
 - sprint: Sprint 20 — Tutor GCM Consolidation and Closure
 - agente: ChatGPT
 - relacionados: src/components/tutor/tutor-interface.tsx, src/lib/tutor/tutor.test.ts, docs/project/status.md, docs/02-delivery/sprint-log.md, docs/01-product/backlog.md
+
+
+## 2026-05-10
+- tipo: feat+taxonomy+qa
+- modulo: tutor/taxonomy/scripts
+- resumen: Sprint 42 incorpora shape operativo del item rico, validación editorial clasificatoria (faltantes, taxonomía no canónica, tags no permitidos/deprecados, rol/cargo inválidos, riesgos técnicos mal formados y distractores sin justificación) y reporte de cobertura por taxonomía, targetPosition y tags.
+- sprint: Sprint 42 — Rich Ingestion Normalization
+- agente: PM-Dev
+- relacionados: src/domain/taxonomy/normalize-item.ts, src/domain/taxonomy/validators.ts, scripts/validate-question-bank.ts, src/lib/tutor/tutor.test.ts, docs/project/status.md, docs/02-delivery/sprint-log.md, docs/01-product/backlog.md

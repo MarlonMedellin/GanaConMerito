@@ -34,6 +34,10 @@ export interface LegacyItemInput {
 }
 
 export interface NormalizedRichItem {
+  id: string;
+  slug?: string;
+  version?: string;
+  estado?: string;
   itemId: string;
   taxonomy: Partial<Record<TaxonomyKey, string>>;
   missingTaxonomy: TaxonomyKey[];
@@ -43,6 +47,10 @@ export interface NormalizedRichItem {
   sourceRefs: string[];
   sourceTruthStatus: SourceTruthStatus;
   tags: ReturnType<typeof validateTagRegistry>;
+  evidenceStatement?: string;
+  affirmation?: string;
+  technicalRisks?: string[];
+  distractorRationales?: Record<string, string>;
 }
 
 export function normalizeLegacyItemToRichItem(item: LegacyItemInput): NormalizedRichItem {
@@ -66,6 +74,7 @@ export function normalizeLegacyItemToRichItem(item: LegacyItemInput): Normalized
   }
 
   return {
+    id: item.id,
     itemId: item.id,
     taxonomy,
     missingTaxonomy,

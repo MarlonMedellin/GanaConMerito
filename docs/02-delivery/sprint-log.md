@@ -86,3 +86,10 @@ last_reviewed: 2026-05-09
 - **Rama de trabajo esperada**: `sprint-37-tutor-trace-signals-governance-prep`
 - **Nota de entorno actual**: la rama disponible localmente es `work`; se deja desvio reportado sin tocar deploy.
 - **Objetivo**: alinear contrato documental reciente, endurecer guardrails tutor de no revelacion y agregar trazas minimas sin persistencia pesada.
+
+
+## Sprint en ejecución — Sprint 42: Rich Ingestion Normalization
+- **Estado**: EN EJECUCION
+- **Fecha de inicio**: 2026-05-10
+- **Rama de trabajo**: `work`
+- **Avance**: se añadió validación editorial clasificatoria y reporte de cobertura en `scripts/validate-question-bank.ts`, manteniendo fallback legacy.

@@ -2,6 +2,8 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { parseMarkdownItem } from "../src/domain/content/parse-md";
 import { CURRENT_QUESTION_BANK_FILES } from "./question-bank-current-corpus";
+import { normalizeLegacyItemToRichItem } from "../src/domain/taxonomy/normalize-item";
+import { validateRichItemEditorial } from "../src/domain/taxonomy/validators";
 
 async function listAllItemFiles(itemsDir: string) {
   const areaDirs = await fs.readdir(itemsDir, { withFileTypes: true });
@@ -38,6 +40,11 @@ async function main() {
   const slugToFiles = new Map<string, string[]>();
   const warnings: Array<{ file: string; warnings: string[] }> = [];
   const errors: Array<{ file: string; errors: string[] }> = [];
+  const editorial: Array<{ file: string; status: "apt" | "apt_with_warnings" | "rejected"; issues: string[] }> = [];
+  const missingByField = new Map<string, number>();
+  const coverageTaxonomy = new Map<string, number>();
+  const coverageTargetPosition = new Map<string, number>();
+  const coverageTagCategory = new Map<string, number>();
 
   for (const filePath of selectedFiles) {
     const rawMarkdown = await fs.readFile(filePath, "utf8");
@@ -55,6 +62,29 @@ async function main() {
 
     idToFiles.set(result.item.id, [...(idToFiles.get(result.item.id) ?? []), relativePath]);
     slugToFiles.set(result.item.slug, [...(slugToFiles.get(result.item.slug) ?? []), relativePath]);
+    const normalized = normalizeLegacyItemToRichItem({
+      id: result.item.id,
+      area: result.item.area,
+      subarea: result.item.subarea,
+      competency: result.item.competency,
+      stem: result.item.stem,
+    });
+    for (const miss of normalized.missingTaxonomy) missingByField.set(miss, (missingByField.get(miss) ?? 0) + 1);
+    const issues = validateRichItemEditorial({ id: normalized.id, taxonomy: normalized.taxonomy, tags: normalized.tags });
+    const hasErrors = issues.some((i) => i.severity === "error");
+    const hasWarnings = issues.some((i) => i.severity === "warning");
+    editorial.push({ file: relativePath, status: hasErrors ? "rejected" : hasWarnings ? "apt_with_warnings" : "apt", issues: issues.map((i) => `${i.type}:${i.field}`) });
+    const area = normalized.taxonomy.area ?? "missing";
+    const subarea = normalized.taxonomy.subarea ?? "missing";
+    const competency = normalized.taxonomy.competency ?? "missing";
+    const key = `${area}/${subarea}/${competency}`;
+    coverageTaxonomy.set(key, (coverageTaxonomy.get(key) ?? 0) + 1);
+    const targetPosition = normalized.taxonomy.targetPosition ?? "missing";
+    coverageTargetPosition.set(targetPosition, (coverageTargetPosition.get(targetPosition) ?? 0) + 1);
+    for (const category of Object.keys(normalized.tags)) {
+      const count = normalized.tags[category as keyof typeof normalized.tags].length;
+      coverageTagCategory.set(category, (coverageTagCategory.get(category) ?? 0) + count);
+    }
   }
 
   for (const [id, files] of idToFiles.entries()) {
@@ -74,9 +104,18 @@ async function main() {
     validatedFiles: selectedFiles.length,
     warningCount: warnings.length,
     errorCount: errors.length,
+    editorial: {
+      apt: editorial.filter((e) => e.status === "apt").length,
+      aptWithWarnings: editorial.filter((e) => e.status === "apt_with_warnings").length,
+      rejected: editorial.filter((e) => e.status === "rejected").length,
+      missingByField: Object.fromEntries(missingByField.entries()),
+      coverageByAreaSubareaCompetency: Object.fromEntries(coverageTaxonomy.entries()),
+      coverageByTargetPosition: Object.fromEntries(coverageTargetPosition.entries()),
+      coverageByTagCategory: Object.fromEntries(coverageTagCategory.entries()),
+    },
   };
 
-  console.log(JSON.stringify({ summary, warnings, errors }, null, 2));
+  console.log(JSON.stringify({ summary, warnings, errors, editorial }, null, 2));
 
   if (errors.length > 0) {
     process.exit(1);
