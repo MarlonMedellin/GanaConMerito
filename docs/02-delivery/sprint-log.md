@@ -16,10 +16,11 @@ last_reviewed: 2026-05-10
 
 # Sprint log
 
-## Sprint listo para promoción — Sprint 43: Learning Paths + Misconception Signals - Base Implementation
-- **Estado**: IMPLEMENTACION BASE LISTA PARA PROMOCION
+## Sprint cerrado en repo — Sprint 43: Learning Paths + Misconception Signals - Base Implementation
+- **Estado**: CERRADO EN REPO
 - **Fecha de cierre de implementación**: 2026-05-10
 - **Rama de trabajo**: `codex/execute-sprint-43-for-ganaconmerito`
+- **Rama de promoción**: `Sprint-43-—-Learning-Paths-+-Misconception-Engine`
 - **Objetivo**: usar la metadata ya gobernada y normalizada para detectar misconceptions, priorizar debilidades y sugerir siguiente mejor práctica sin romper los guardrails del Tutor.
 
 ### Entregables principales
