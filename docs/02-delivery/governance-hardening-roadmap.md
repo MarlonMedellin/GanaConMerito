@@ -19,6 +19,13 @@ Update trigger:
 
 ---
 
+## Document control
+- Status: canonical
+- Owner: PM-Governance
+- Last reviewed: 2026-05-10
+- Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
+- Update trigger: governance, delivery, documentation, drift
+
 # Objetivo
 
 Ordenar la transición de GanaConMerito desde documentación acumulativa hacia gobernanza operacional incremental.

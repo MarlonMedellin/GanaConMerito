@@ -3,20 +3,29 @@
 Status: canonical
 Owner: PM-Governance
 Last reviewed: 2026-05-10
+Related files:
+- AGENTS.md
+- docs/project/status.md
+- docs/05-ops/drift-resolution-policy.md
+Update trigger:
+- governance
+- documentation
+- drift
 
-Objetivo: declarar la jerarquía documental mínima para reducir drift operativo y evitar competencia entre fuentes ejecutivas.
+Objetivo: declarar jerarquía documental, autoridad y resolución de conflictos para reducir drift sin enforcement bloqueante.
 
-| File | Status | Purpose | Update trigger | Related files | Recommended owner |
-|---|---|---|---|---|---|
-| `AGENTS.md` | canonical | Gobernanza operativa y reglas de trabajo para agentes. | Cambios de proceso, trazabilidad o disciplina operativa. | `docs/project/status.md`, `docs/05-ops/*`, `.github/pull_request_template.md` | PM-Governance |
-| `docs/project/status.md` | canonical | Snapshot ejecutivo principal del estado real del proyecto. | Cambio de sprint activo, verificación runtime, drift crítico. | `docs/02-delivery/sprint-log.md`, `docs/02-delivery/change-log.md` | PM-Governance + Product Owner |
-| `docs/02-delivery/governance-hardening-roadmap.md` | canonical | Roadmap por fases para endurecimiento de gobernanza. | Cambio de fase, criterios o checks de hardening. | `docs/05-ops/documentation-trigger-map.md`, `docs/05-ops/agent-traceability.md` | PM-Governance |
-| `docs/02-delivery/sprint-log.md` | operational | Bitácora de sprints y evidencia resumida por bloque operativo. | Cierre/ajuste de sprint, nueva evidencia operacional. | `docs/project/status.md`, `docs/02-delivery/change-log.md` | Delivery Lead |
-| `docs/02-delivery/change-log.md` | operational | Historial ejecutivo de cambios por fecha y tipo. | Cambio relevante de repo, governance, runtime o QA. | `docs/02-delivery/sprint-log.md`, `docs/project/status.md` | PM-Governance + Delivery Lead |
-| `docs/05-ops/documentation-trigger-map.md` | canonical | Mapa de archivos que deben revisarse para prevenir drift. | Nuevo archivo crítico, cambio de severidad o flujo. | `scripts/check-doc-triggers.ts`, `docs/04-quality/quality-gates.md` | PM-Governance |
-| `docs/05-ops/agent-traceability.md` | canonical | Política base de metadata y trazabilidad multiagente. | Ajustes de metadata obligatoria/recomendada. | `AGENTS.md`, `.github/pull_request_template.md` | PM-Governance |
-| `docs/04-quality/quality-gates.md` | canonical | Baseline de quality gates y severidad warning/fallo. | Cambio de QA, CI, criterios de release. | `docs/05-ops/runtime-and-release.md`, `package.json` | QA Lead + PM-Governance |
-| `docs/05-ops/runtime-and-release.md` | canonical | Regla mínima de evidencia para runtime y release. | Cambio de flujo deploy/runtime o criterios de evidencia. | `docs/project/status.md`, `docs/04-quality/quality-gates.md` | Ops Lead + PM-Governance |
-| `docs/archive/README.md` | advisory | Política de archivo y trazabilidad de documentos históricos. | Nueva regla de archivado o estructura de archive. | `docs/archive/legacy-candidates.md`, `docs/project/canonical-docs.md` | PM-Governance |
-| `.github/pull_request_template.md` | template | Plantilla operativa para PR con evidencia y drift explícito. | Ajustes de auditoría, governance o trazabilidad requerida. | `AGENTS.md`, `docs/05-ops/agent-traceability.md` | PM-Governance |
-| `scripts/check-doc-triggers.ts` | operational | Check advisory para detectar alineación documental requerida. | Nuevos triggers, cambios de mapa o reglas CI. | `docs/05-ops/documentation-trigger-map.md`, `.github/workflows/pr-checks.yml` | DevEx / PM-Governance |
+| File | Status | Authority priority | Canonical scope | Purpose | Update trigger | Related files | Conflict resolution | Recommended owner |
+|---|---|---:|---|---|---|---|---|---|
+| `AGENTS.md` | canonical | 1 | Gobernanza operativa transversal del repo | Reglas operativas para agentes IA. | Cambios de disciplina operativa o trazabilidad. | `docs/project/status.md`, `docs/05-ops/*` | Si contradice otros docs operativos, prevalece AGENTS en proceso de trabajo. | PM-Governance |
+| `docs/project/status.md` | canonical | 2 | Estado ejecutivo principal | Snapshot ejecutivo del estado real del proyecto. | Cambio de sprint activo, runtime reportado, drift crítico. | `docs/02-delivery/sprint-log.md`, `docs/02-delivery/change-log.md` | Ante contradicción de estado, `status.md` gana como fuente ejecutiva principal. | PM-Governance + Product Owner |
+| `docs/02-delivery/governance-hardening-roadmap.md` | canonical | 3 | Estrategia de transición | Fases y criterios del hardening incremental. | Cambio de fase o criterios de salida. | `docs/05-ops/documentation-trigger-map.md`, `docs/05-ops/drift-resolution-policy.md` | Si hay conflicto estratégico, roadmap prevalece sobre planes legacy. | PM-Governance |
+| `docs/02-delivery/sprint-log.md` | operational | 4 | Historia delivery | Bitácora histórica de sprints y bloque operativo. | Cierre/ajuste de sprint. | `docs/project/status.md`, `docs/02-delivery/change-log.md` | Si difiere de `status.md`, se alinea `sprint-log` y se registra drift. | Delivery Lead |
+| `docs/02-delivery/change-log.md` | operational | 5 | Historial operacional | Registro ejecutivo por fecha/tipo de cambios. | Cambio relevante de repo, governance, runtime o QA. | `docs/02-delivery/sprint-log.md`, `docs/project/status.md` | Si difiere de `status.md`, se corrige `change-log` o se registra limitación explícita. | PM-Governance + Delivery Lead |
+| `docs/05-ops/documentation-trigger-map.md` | canonical | 6 | Mapa advisory de sincronización | Indicar qué revisar para evitar drift silencioso. | Nuevos triggers o severidad. | `scripts/check-doc-triggers.ts`, `docs/05-ops/drift-resolution-policy.md` | Si hay conflicto de cobertura, prevalece el mapa actualizado por PM-Governance. | PM-Governance |
+| `docs/05-ops/drift-resolution-policy.md` | canonical | 7 | Política de resolución de contradicciones | Definir manejo mínimo de drift y deuda técnica. | Nuevos tipos de contradicción o criterios de severidad. | `docs/project/status.md`, `docs/05-ops/documentation-trigger-map.md` | Prevalece para clasificar contradicciones y decidir corrección inmediata vs deuda. | PM-Governance |
+| `docs/05-ops/agent-traceability.md` | canonical | 8 | Trazabilidad multiagente | Política base de metadata y autoría operativa. | Ajustes de metadata requerida/recomendada. | `AGENTS.md`, `.github/pull_request_template.md` | Si hay conflicto de formato, se aplica esta política y AGENTS. | PM-Governance |
+| `docs/04-quality/quality-gates.md` | canonical | 9 | QA/governance maturity baseline | Criterios ejecutivos de gates y madurez de gobernanza. | Cambios en QA/CI o madurez. | `docs/05-ops/runtime-and-release.md`, `package.json` | Si hay conflicto QA narrativo vs baseline, prevalece `quality-gates.md`. | QA Lead + PM-Governance |
+| `docs/05-ops/runtime-and-release.md` | canonical | 10 | Baseline runtime/release | Evidencia mínima para claims de runtime/release. | Cambios de flujo de deploy/runtime. | `docs/project/status.md`, `docs/04-quality/quality-gates.md` | Si hay claims sin evidencia, prevalece este baseline y se marca contradicción severa. | Ops Lead + PM-Governance |
+| `docs/archive/README.md` | advisory | 11 | Referencia histórica no prioritaria | Política para conservación de históricos. | Ajuste de criterios de archivo. | `docs/archive/legacy-candidates.md` | Nunca prevalece sobre docs canónicos; solo contexto histórico. | PM-Governance |
+| `.github/pull_request_template.md` | template | 12 | Plantilla de evidencia PR | Estructura recomendada de reporte y drift. | Cambio de auditoría o trazabilidad. | `AGENTS.md`, `docs/05-ops/agent-traceability.md` | No resuelve conflictos; guía de reporte. | PM-Governance |
+| `scripts/check-doc-triggers.ts` | operational | 13 | Checker advisory | Warns de revisión documental relacionada. | Nuevas categorías/severidades advisory. | `docs/05-ops/documentation-trigger-map.md`, `docs/05-ops/drift-resolution-policy.md` | No prevalece documentalmente; solo emite alertas no bloqueantes. | DevEx / PM-Governance |
