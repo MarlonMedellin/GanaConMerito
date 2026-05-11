@@ -152,14 +152,8 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
             <button
               key={action}
               type="button"
-              className="subtle"
-              style={{
-                border: "1px solid var(--line)",
-                borderRadius: "999px",
-                padding: "6px 10px",
-                background: "var(--surface)",
-                cursor: loading ? "not-allowed" : "pointer",
-              }}
+              className="guided-chip"
+              style={{ cursor: loading ? "not-allowed" : "pointer" }}
               disabled={loading}
               onClick={() => handleGuidedAction(action)}
             >

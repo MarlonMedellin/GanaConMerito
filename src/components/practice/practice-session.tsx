@@ -222,8 +222,8 @@ export function PracticeSession() {
       ) : null}
 
       {item ? (
-        <article className="surface-card" style={{ padding: 24 }}>
-          <div className="inline-cluster" style={{ justifyContent: "space-between", marginBottom: 18 }}>
+        <article className="surface-card">
+          <div className="practice-panel-header" style={{ marginBottom: 18 }}>
             <div>
               <p className="eyebrow">Práctica</p>
               <h2 className="section-title" style={{ fontSize: "1.15rem" }}>{item.title}</h2>
@@ -231,7 +231,37 @@ export function PracticeSession() {
             <span className="status-pill premium">Foco activo</span>
           </div>
 
-          <p className="section-title" style={{ fontSize: "1.45rem", lineHeight: 1.35, marginBottom: 22 }}>{item.stem}</p>
+          <div className="practice-rich-grid">
+            {item.topicLabel ? (
+              <div className="practice-rich-item">
+                <p className="eyebrow" style={{ marginBottom: 4 }}>Mapa temático</p>
+                <p className="body-sm" style={{ margin: 0 }}>{item.topicLabel}</p>
+              </div>
+            ) : null}
+            {item.expectedUserTask ? (
+              <div className="practice-rich-item">
+                <p className="eyebrow" style={{ marginBottom: 4 }}>Tarea esperada</p>
+                <p className="body-sm" style={{ margin: 0 }}>{item.expectedUserTask}</p>
+              </div>
+            ) : null}
+            {item.cognitiveIntent ? (
+              <div className="practice-rich-item">
+                <p className="eyebrow" style={{ marginBottom: 4 }}>Intención cognitiva</p>
+                <p className="body-sm" style={{ margin: 0 }}>{item.cognitiveIntent}</p>
+              </div>
+            ) : null}
+            {item.subarea || item.difficulty ? (
+              <div className="practice-rich-item">
+                <p className="eyebrow" style={{ marginBottom: 4 }}>Contexto del ítem</p>
+                <p className="body-sm" style={{ margin: 0 }}>
+                  {item.subarea ? `Subárea: ${item.subarea}` : "Subárea no especificada"}
+                  {typeof item.difficulty === "number" ? ` · Dificultad ${item.difficulty.toFixed(2)}` : ""}
+                </p>
+              </div>
+            ) : null}
+          </div>
+
+          <p className="practice-stem">{item.stem}</p>
 
           <div className="option-list">
             {item.options.map((option) => {
