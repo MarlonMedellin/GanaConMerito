@@ -1,4 +1,4 @@
--- 0011_question_contract_compatibility.sql
+-- 0012_question_contract_compatibility.sql
 -- Alínea el esquema de item_bank y la vista v_item_bank_active con el contrato de datos requerido por la versión actual.
 -- Garantiza que tags exista y que la vista exponga todas las columnas del contrato estable.
 
@@ -19,7 +19,9 @@ add constraint item_bank_source_type_check
 check (source_type in ('manual', 'markdown', 'import', 'seed', 'official_source'));
 
 -- 3. Recrear v_item_bank_active con el contrato completo + tags
--- Esta vista es la fuente de verdad operativa para el runtime (selector, API item).
+-- Se usa DROP VIEW para evitar error de cambio de firma/orden de columnas en Postgres.
+drop view if exists public.v_item_bank_active cascade;
+
 create or replace view public.v_item_bank_active
 with (security_invoker = true) as
 select
@@ -41,7 +43,7 @@ select
   ib.is_active,
   ib.source_type,
   ib.source_path,
-  ib.tags, -- Columna agregada
+  ib.tags, -- Columna agregada en el contrato operativo
   ib.created_at,
   ib.updated_at,
   ib.thematic_nucleus_id,
