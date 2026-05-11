@@ -1,23 +1,25 @@
 -- 0011_question_contract_compatibility.sql
--- Completa el esquema para soportar el contrato extendido de preguntas (PracticeQuestionViewModel)
+-- Alínea el esquema de item_bank y la vista v_item_bank_active con el contrato de datos requerido por la versión actual.
+-- Garantiza que tags exista y que la vista exponga todas las columnas del contrato estable.
 
 begin;
 
--- 1. Agregar columna tags
-alter table public.item_bank
-  add column if not exists tags text[] not null default '{}';
+-- 1. Agregar columna tags si no existe
+alter table public.item_bank 
+add column if not exists tags text[] default '{}';
 
--- 2. Actualizar el check constraint de source_type para incluir 'official_source'
--- Primero eliminamos el check viejo si existe
-alter table public.item_bank
-  drop constraint if exists item_bank_source_type_check;
+-- 2. Actualizar restricción de source_type para incluir official_source
+-- Se mantienen los valores originales ('manual', 'markdown', 'import', 'seed') y se agrega 'official_source'.
+-- Se evita agregar 'imported' o 'ai_generated' ya que no forman parte del contrato vigente.
+alter table public.item_bank 
+drop constraint if exists item_bank_source_type_check;
 
--- Aplicamos el nuevo check
-alter table public.item_bank
-  add constraint item_bank_source_type_check
-  check (source_type in ('manual', 'markdown', 'import', 'seed', 'official_source'));
+alter table public.item_bank 
+add constraint item_bank_source_type_check 
+check (source_type in ('manual', 'markdown', 'import', 'seed', 'official_source'));
 
--- 3. Recrear la vista v_item_bank_active incluyendo tags
+-- 3. Recrear v_item_bank_active con el contrato completo + tags
+-- Esta vista es la fuente de verdad operativa para el runtime (selector, API item).
 create or replace view public.v_item_bank_active
 with (security_invoker = true) as
 select
@@ -39,7 +41,7 @@ select
   ib.is_active,
   ib.source_type,
   ib.source_path,
-  ib.tags,
+  ib.tags, -- Columna agregada
   ib.created_at,
   ib.updated_at,
   ib.thematic_nucleus_id,
@@ -63,7 +65,13 @@ from public.item_bank ib
 left join public.thematic_nuclei tn
   on tn.id = ib.thematic_nucleus_id;
 
+comment on view public.v_item_bank_active is
+  'Contrato estable de lectura del banco activo. Expone únicamente el estado derivado de activación para consumo runtime.';
+
 comment on column public.v_item_bank_active.tags is
-  'Etiquetas taxonómicas o descriptivas del ítem.';
+  'Metadatos de segmentación editorial secundaria (opcional).';
+
+grant select on public.v_item_bank_active to authenticated;
+grant select on public.v_item_bank_active to service_role;
 
 commit;
