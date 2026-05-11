@@ -182,6 +182,62 @@ pre {
   font-weight: 600;
 }
 
+.cluster-between { justify-content: space-between; }
+.cluster-start { align-items: flex-start; }
+.mt-4 { margin-top: 4px; }
+.mt-8 { margin-top: 8px; }
+.mt-10 { margin-top: 10px; }
+.mt-12 { margin-top: 12px; }
+.mt-14 { margin-top: 14px; }
+.mt-16 { margin-top: 16px; }
+.mt-18 { margin-top: 18px; }
+.mt-20 { margin-top: 20px; }
+.mt-24 { margin-top: 24px; }
+.mb-24 { margin-bottom: 24px; }
+.m-0 { margin: 0; }
+.text-right { text-align: right; }
+.inline-link { display: inline-block; }
+.hero-content { max-width: 560px; }
+.panel-title-sm { font-size: 1.1rem; }
+.panel-title-xs { font-size: 1rem; }
+.panel-title-md { font-size: 1.2rem; }
+.button-grow { flex: 1; }
+.progress-compact { height: 4px; margin-top: 4px; }
+.panel-compact { padding: 22px; }
+.metric-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.metric-card-compact { padding: 14px; }
+.metric-value-lg { font-size: 1.35rem; }
+
+.tutor-panel { padding: 20px; display: grid; gap: 16px; }
+.tutor-head { display: flex; justify-content: space-between; align-items: center; }
+.tutor-head-main { display: flex; align-items: center; gap: 10px; }
+.avatar-mini { width: 32px; height: 32px; font-size: 14px; }
+.tutor-headline { font-size: 1rem; margin: 0; }
+.tutor-minimize { background: none; border: none; cursor: pointer; padding: 4px; }
+.tutor-guided-wrap { display: grid; gap: 8px; }
+.tutor-guided-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.tutor-response-meta { display: flex; justify-content: flex-end; margin-top: 8px; }
+.subtle-xs { font-size: 10px; }
+.subtle-xxs { font-size: 11px; }
+.form-grid-sm { display: grid; gap: 10px; }
+.text-area-compact { min-height: 80px; font-size: 14px; }
+
+.bottom-nav {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  padding: 4px;
+}
+
+.bottom-nav-list { display: flex; gap: 4px; margin: 0; padding: 0; list-style: none; }
+.bottom-nav-link { display: inline-flex; align-items: center; gap: 8px; padding: 8px 10px; border-radius: 999px; color: var(--text-secondary); text-decoration: none; font-size: 13px; font-weight: 600; }
+.bottom-nav-link.active { background: var(--primary); color: var(--text-inverse); }
+
+@media (max-width: 900px) {
+  .bottom-nav-link { padding: 7px 9px; font-size: 12px; }
+  .metric-grid-2 { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 900px) {
   .app-shell {
     width: min(calc(100% - 20px), var(--content-width));

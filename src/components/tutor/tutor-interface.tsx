@@ -97,13 +97,13 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
         onClick={() => setIsOpen(true)}
         className="tutor-chip"
         data-testid="tutor-gcm-open-button"
-        style={{ width: "100%", cursor: "pointer", textAlign: "left" }}
+        style={{ width: "100%", textAlign: "left" }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-          <div className="avatar-chip" style={{ width: "32px", height: "32px", fontSize: "14px" }}>T</div>
+        <div className="tutor-head-main" style={{ gap: "12px" }}>
+          <div className="avatar-chip avatar-mini">T</div>
           <div>
-            <p className="eyebrow" style={{ margin: 0 }}>Tutor GCM</p>
-            <p className="body-sm" style={{ margin: 0 }}>¿Quieres orientación para resolver esta pregunta?</p>
+            <p className="eyebrow m-0">Tutor GCM</p>
+            <p className="body-sm m-0">¿Quieres orientación para resolver esta pregunta?</p>
           </div>
         </div>
         <span className="status-pill premium">Abrir tutor</span>
@@ -113,41 +113,39 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
 
   return (
     <section
-      className="surface-card"
+      className="surface-card tutor-panel"
       data-testid="tutor-gcm-panel"
       aria-label="Tutor GCM"
-      style={{ padding: "20px", display: "grid", gap: "16px" }}
     >
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <div className="avatar-chip" style={{ width: "32px", height: "32px", fontSize: "14px" }}>T</div>
+      <div className="tutor-head">
+        <div className="tutor-head-main">
+          <div className="avatar-chip avatar-mini">T</div>
           <div>
-            <p className="eyebrow" style={{ margin: 0 }}>Tutor GCM</p>
-            <h3 className="section-title" style={{ fontSize: "1rem", margin: 0 }}>Guía paso a paso para esta pregunta</h3>
+            <p className="eyebrow m-0">Tutor GCM</p>
+            <h3 className="section-title tutor-headline">Guía paso a paso para esta pregunta</h3>
           </div>
         </div>
         <button
           type="button"
           onClick={() => setIsOpen(false)}
-          className="subtle"
-          style={{ background: "none", border: "none", cursor: "pointer", padding: "4px" }}
+          className="subtle tutor-minimize"
         >
           Minimizar
         </button>
       </div>
 
-      <p className="body-sm" style={{ margin: 0 }}>
+      <p className="body-sm m-0">
         Usa una acción guiada si necesitas apoyo puntual. También puedes escribir tu duda en texto libre; el tutor orienta sin revelar la clave antes de que respondas.
       </p>
 
-      <div style={{ display: "grid", gap: "8px" }}>
-        <p className="eyebrow" style={{ margin: 0 }}>
+      <div className="tutor-guided-wrap">
+        <p className="eyebrow m-0">
           Acciones guiadas recomendadas
         </p>
-        <p className="subtle" style={{ fontSize: "11px", margin: 0 }}>
+        <p className="subtle subtle-xxs m-0">
           Elige la acción que mejor describa tu necesidad actual para recibir una ayuda más precisa.
         </p>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+        <div className="tutor-guided-list">
           {guidedActions.map((action) => (
             <button
               key={action}
@@ -166,8 +164,8 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
       {lastResponse ? (
         <div className="feedback-card" style={{ margin: 0, background: "var(--surface-secondary)" }}>
           <p className="body-sm" style={{ whiteSpace: "pre-wrap" }}>{lastResponse.visibleMessage}</p>
-          <div style={{ display: "flex", justifyContent: "flex-end", marginTop: "8px" }}>
-            <span className="subtle" style={{ fontSize: "10px" }}>
+          <div className="tutor-response-meta">
+            <span className="subtle subtle-xs">
               {lastResponse.degraded ? "Modo limitado" : "Tutoría orientativa"}
             </span>
           </div>
@@ -178,15 +176,14 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
         <p className="body-sm" style={{ color: "var(--error)", margin: 0 }}>{error}</p>
       ) : null}
 
-      <form onSubmit={handleSendMessage} style={{ display: "grid", gap: "10px" }} data-testid="tutor-gcm-form">
+      <form onSubmit={handleSendMessage} className="form-grid-sm" data-testid="tutor-gcm-form">
         <div className="form-field">
           <label className="field-label" htmlFor="tutor-gcm-message">Escribe tu consulta al Tutor GCM</label>
           <textarea
             ref={messageInputRef}
             id="tutor-gcm-message"
             data-testid="tutor-gcm-message"
-            className="text-area"
-            style={{ minHeight: "80px", fontSize: "14px" }}
+            className="text-area text-area-compact"
             placeholder="Ejemplo: Estoy entre dos opciones. ¿Qué criterio puedo usar para compararlas sin ver la respuesta?"
             value={message}
             onChange={(event) => setMessage(event.target.value)}
@@ -197,14 +194,13 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
           type="submit"
           className="primary-button"
           data-testid="tutor-gcm-submit"
-          style={{ minHeight: "44px" }}
           disabled={loading || !message.trim()}
         >
           {loading ? "Pensando..." : "Pedir orientación"}
         </button>
       </form>
 
-      <p className="subtle" style={{ fontSize: "11px", textAlign: "center" }}>
+      <p className="subtle subtle-xxs" style={{ textAlign: "center" }}>
         El tutor no modifica tu puntaje ni el avance de tu sesión; solo te guía para razonar mejor.
       </p>
     </section>
