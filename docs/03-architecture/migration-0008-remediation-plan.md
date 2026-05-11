@@ -18,7 +18,7 @@ La auditoria de base de datos identifico dos archivos con el mismo prefijo numer
 
 ```text
 supabase/migrations/0008_create_v_item_bank_active.sql
-supabase/migrations/0008_tutor_turn_traces.sql
+supabase/migrations/0010_tutor_turn_traces.sql
 ```
 
 Esto puede generar ambiguedad de orden, drift entre ambientes o confusion al auditar el historial de migraciones.
