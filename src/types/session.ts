@@ -52,3 +52,26 @@ export interface AdvanceSessionRequest {
   responseTimeMs?: number;
   confidenceSelfReport?: 1 | 2 | 3 | 4 | 5;
 }
+
+export interface PracticeQuestionOptionViewModel {
+  key: "A" | "B" | "C" | "D";
+  text: string;
+}
+
+export interface PracticeQuestionViewModel {
+  id: string;
+  title: string;
+  area: string;
+  competency: string;
+  stem: string;
+  options: PracticeQuestionOptionViewModel[];
+  subarea?: string;
+  topicLabel?: string;
+  expectedUserTask?: string;
+  cognitiveIntent?: string;
+  difficulty?: number;
+  tags?: string[];
+  misconceptionHints?: string[];
+  rationale?: string;
+  sourceTruthStatus?: "source_verified" | "synthesized_governed_unverified" | "missing";
+}

@@ -26,7 +26,7 @@ function renderTopList<T extends { count: number }>(
   if (items.length === 0) return <p className="subtle">{emptyText}</p>;
 
   return (
-    <div style={{ marginTop: 10 }}>
+    <div className="mt-10">
       {items.map((item) => (
         <div key={getLabel(item)} className="list-row">
           <span>{getLabel(item)}</span>
@@ -80,29 +80,29 @@ export function TutorTraceSummaryCard() {
   }, [summary]);
 
   return (
-    <article className="surface-card" style={{ padding: 22 }}>
-      <div className="inline-cluster" style={{ justifyContent: "space-between" }}>
+    <article className="surface-card panel-compact">
+      <div className="inline-cluster cluster-between">
         <div>
           <p className="eyebrow">Tutor GCM</p>
           <h2 className="section-title">Resumen de uso reciente</h2>
         </div>
         <span className="status-pill">Solo lectura</span>
       </div>
-      <p className="subtle" style={{ marginTop: 8 }}>
+      <p className="subtle mt-8">
         Métricas descriptivas del uso del tutor. No cambian scoring ni progreso.
       </p>
 
-      {loading ? <p className="subtle" style={{ marginTop: 14 }}>Cargando resumen del tutor...</p> : null}
-      {!loading && error ? <p className="subtle" style={{ marginTop: 14 }}>{error}</p> : null}
+      {loading ? <p className="subtle mt-14">Cargando resumen del tutor...</p> : null}
+      {!loading && error ? <p className="subtle mt-14">{error}</p> : null}
       {!loading && !error && isEmpty ? (
-        <p className="subtle" style={{ marginTop: 14 }}>
+        <p className="subtle mt-14">
           Aún no hay trazas de tutor para mostrar en este resumen.
         </p>
       ) : null}
 
       {!loading && !error && summary && !isEmpty ? (
         <>
-          <section className="metric-grid" style={{ marginTop: 16 }}>
+          <section className="metric-grid mt-16">
             <div className="metric-card">
               <span className="metric-label">Total de turnos</span>
               <strong className="metric-value">{summary.totalTurns}</strong>
@@ -133,17 +133,17 @@ export function TutorTraceSummaryCard() {
             </div>
           </section>
 
-          <section className="two-column-grid" style={{ marginTop: 14 }}>
+          <section className="two-column-grid mt-14">
             <div className="list-card">
-              <h3 className="section-title" style={{ fontSize: "1rem" }}>Intenciones más frecuentes</h3>
+              <h3 className="section-title panel-title-xs">Intenciones más frecuentes</h3>
               {renderTopList(summary.topIntents, (item) => item.intent, "Sin intenciones destacadas por ahora.")}
             </div>
             <div className="list-card">
-              <h3 className="section-title" style={{ fontSize: "1rem" }}>Guardrails más frecuentes</h3>
+              <h3 className="section-title panel-title-xs">Guardrails más frecuentes</h3>
               {renderTopList(summary.topGuardrails, (item) => item.guardrail, "Sin guardrails destacados por ahora.")}
             </div>
             <div className="list-card">
-              <h3 className="section-title" style={{ fontSize: "1rem" }}>Niveles de pista usados</h3>
+              <h3 className="section-title panel-title-xs">Niveles de pista usados</h3>
               {renderTopList(
                 summary.hintLevelDistribution,
                 (item) => `Nivel ${item.level}`,

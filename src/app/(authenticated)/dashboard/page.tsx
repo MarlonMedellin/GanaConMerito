@@ -108,8 +108,8 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
       </section>
 
       <section className="two-column-grid">
-        <article className="surface-card" style={{ padding: 22 }}>
-          <div className="inline-cluster" style={{ justifyContent: "space-between" }}>
+        <article className="surface-card panel-compact">
+          <div className="inline-cluster cluster-between">
             <div>
               <p className="eyebrow">Tendencia</p>
               <h2 className="section-title">{isSessionView ? "Sesión en contexto" : "Progreso histórico acumulado"}</h2>
@@ -119,19 +119,19 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
           <p className="body-sm">
             {contextCopy}
           </p>
-          <div style={{ marginTop: 16 }}>
-            <div className="inline-cluster" style={{ justifyContent: "space-between" }}>
+          <div className="mt-16">
+            <div className="inline-cluster cluster-between">
               <span className="metric-label">Precisión</span>
               <span className="subtle">{activeAccuracy}%</span>
             </div>
-            <div className="progress-rail" style={{ marginTop: 10 }}>
+            <div className="progress-rail mt-10">
               <div className="progress-fill" style={{ width: `${Math.min(100, Math.max(8, activeAccuracy))}%` }} />
             </div>
           </div>
-          <div className="tutor-chip" style={{ marginTop: 18 }}>
+          <div className="tutor-chip mt-18">
             <div>
-              <p className="metric-label" style={{ margin: 0 }}>Tutor GCM</p>
-              <p className="body-sm" style={{ margin: "8px 0 0" }}>
+              <p className="metric-label m-0">Tutor GCM</p>
+              <p className="body-sm mt-8 m-0">
                 {activeSummary.weakestCompetencies.length > 0
                   ? `Siguiente foco sugerido: ${activeSummary.weakestCompetencies[0]}. ${activeSummary.recommendedAction}`
                   : activeSummary.recommendedAction}
@@ -141,7 +141,7 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
           </div>
         </article>
 
-        <article className="surface-card" style={{ padding: 22 }}>
+        <article className="surface-card panel-compact">
           <p className="eyebrow">Lectura ejecutiva</p>
           <div className="list-row">
             <span>Percentil</span>
@@ -160,8 +160,8 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
 
       <section className="two-column-grid">
         <article className="list-card">
-          <div className="inline-cluster" style={{ justifyContent: "space-between" }}>
-            <h2 className="section-title" style={{ fontSize: "1.2rem" }}>Áreas con mejor señal</h2>
+          <div className="inline-cluster cluster-between">
+            <h2 className="section-title panel-title-md">Áreas con mejor señal</h2>
             <span className="status-pill success">{activeSummary.canShowStrongConclusion ? "Fuerte" : "Inicial"}</span>
           </div>
           {topStrong.length > 0 ? topStrong.map((row) => (
@@ -172,8 +172,8 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
           )) : <p className="subtle">Aún no hay evidencia suficiente para hablar de fortalezas consolidadas.</p>}
         </article>
         <article className="list-card">
-          <div className="inline-cluster" style={{ justifyContent: "space-between" }}>
-            <h2 className="section-title" style={{ fontSize: "1.2rem" }}>Focos de refuerzo</h2>
+          <div className="inline-cluster cluster-between">
+            <h2 className="section-title panel-title-md">Focos de refuerzo</h2>
             <span className="status-pill warning">{activeSummary.canShowStrongConclusion ? "Atención" : "Prudente"}</span>
           </div>
           {topWeak.length > 0 ? topWeak.map((row) => (
@@ -187,8 +187,8 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
 
       <TutorTraceSummaryCard />
 
-      <section className="surface-card" style={{ padding: 22 }}>
-        <div className="inline-cluster" style={{ justifyContent: "space-between" }}>
+      <section className="surface-card panel-compact">
+        <div className="inline-cluster cluster-between">
           <div>
             <p className="eyebrow">Desglose</p>
             <h2 className="section-title">Detalle por tema</h2>
@@ -198,14 +198,14 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
         {activeRows.length === 0 ? (
           <p className="subtle">Aún no hay datos suficientes.</p>
         ) : (
-          <div style={{ marginTop: 10 }}>
+          <div className="mt-10">
             {activeRows.map((row) => (
               <div key={`${row.area}-${row.competency}`} className="list-row">
                 <div>
                   <strong>{formatTechnicalLabel(row.area)}</strong>
                   <div className="subtle">{formatTechnicalLabel(row.competency)}</div>
                 </div>
-                <div style={{ textAlign: "right" }}>
+                <div className="text-right">
                   <strong>{getAccuracy(row.correct_count, row.attempts)}%</strong>
                   <div className="subtle">{row.attempts} intentos</div>
                 </div>

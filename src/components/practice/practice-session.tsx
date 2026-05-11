@@ -7,15 +7,7 @@ import { ErrorState } from "@/components/ui/error-state";
 import { EmptyState } from "@/components/ui/empty-state";
 import { TutorInterface } from "@/components/tutor/tutor-interface";
 import { formatAreaCompetency } from "@/lib/ui/format-label";
-
-interface PracticeItem {
-  id: string;
-  title: string;
-  area: string;
-  competency: string;
-  stem: string;
-  options: { key: "A" | "B" | "C" | "D"; text: string }[];
-}
+import type { PracticeQuestionViewModel } from "@/types/session";
 
 type OptionKey = "A" | "B" | "C" | "D";
 
@@ -40,7 +32,7 @@ interface AdvanceResult {
 
 export function PracticeSession() {
   const [session, setSession] = useState<SessionStartResult | null>(null);
-  const [item, setItem] = useState<PracticeItem | null>(null);
+  const [item, setItem] = useState<PracticeQuestionViewModel | null>(null);
   const [selectedOption, setSelectedOption] = useState<OptionKey | null>(null);
   const [userRationale, setUserRationale] = useState("");
   const [feedback, setFeedback] = useState<AdvanceResult | null>(null);
@@ -193,12 +185,12 @@ export function PracticeSession() {
   }
 
   return (
-    <section className="content-stack" style={{ paddingTop: 0 }}>
+    <section className="content-stack">
       {!session ? (
         <div className="hero-card">
           <p className="eyebrow">Sesión real</p>
           <h2 className="section-title">Pregunta, responde y recibe feedback trazable.</h2>
-          <div className="page-actions" style={{ marginTop: 18 }}>
+          <div className="page-actions mt-18">
             {loading ? (
               <LoadingState message="Iniciando sesión..." />
             ) : (
@@ -219,7 +211,7 @@ export function PracticeSession() {
       ) : null}
 
       {session ? (
-        <div className="inline-cluster" style={{ justifyContent: "space-between" }}>
+        <div className="inline-cluster cluster-between">
           <div className="inline-cluster">
             <span className="pill">Sesión {session.sessionId.slice(0, 8)}</span>
             <span className="pill">Estado: {feedback?.currentState ?? session.currentState}</span>
@@ -230,16 +222,46 @@ export function PracticeSession() {
       ) : null}
 
       {item ? (
-        <article className="surface-card" style={{ padding: 24 }}>
-          <div className="inline-cluster" style={{ justifyContent: "space-between", marginBottom: 18 }}>
+        <article className="surface-card">
+          <div className="practice-panel-header mb-24">
             <div>
               <p className="eyebrow">Práctica</p>
-              <h2 className="section-title" style={{ fontSize: "1.15rem" }}>{item.title}</h2>
+              <h2 className="section-title panel-title-sm">{item.title}</h2>
             </div>
             <span className="status-pill premium">Foco activo</span>
           </div>
 
-          <p className="section-title" style={{ fontSize: "1.45rem", lineHeight: 1.35, marginBottom: 22 }}>{item.stem}</p>
+          <div className="practice-rich-grid">
+            {item.topicLabel ? (
+              <div className="practice-rich-item">
+                <p className="eyebrow mt-4">Mapa temático</p>
+                <p className="body-sm m-0">{item.topicLabel}</p>
+              </div>
+            ) : null}
+            {item.expectedUserTask ? (
+              <div className="practice-rich-item">
+                <p className="eyebrow mt-4">Tarea esperada</p>
+                <p className="body-sm m-0">{item.expectedUserTask}</p>
+              </div>
+            ) : null}
+            {item.cognitiveIntent ? (
+              <div className="practice-rich-item">
+                <p className="eyebrow mt-4">Intención cognitiva</p>
+                <p className="body-sm m-0">{item.cognitiveIntent}</p>
+              </div>
+            ) : null}
+            {item.subarea || item.difficulty ? (
+              <div className="practice-rich-item">
+                <p className="eyebrow mt-4">Contexto del ítem</p>
+                <p className="body-sm m-0">
+                  {item.subarea ? `Subárea: ${item.subarea}` : "Subárea no especificada"}
+                  {typeof item.difficulty === "number" ? ` · Dificultad ${item.difficulty.toFixed(2)}` : ""}
+                </p>
+              </div>
+            ) : null}
+          </div>
+
+          <p className="practice-stem">{item.stem}</p>
 
           <div className="option-list">
             {item.options.map((option) => {
@@ -266,7 +288,7 @@ export function PracticeSession() {
             })}
           </div>
 
-          <div className="form-field" style={{ marginTop: 22 }}>
+          <div className="form-field mt-24">
             <label className="field-label" htmlFor="practice-rationale">Justificación opcional</label>
             <textarea
               id="practice-rationale"
@@ -280,29 +302,29 @@ export function PracticeSession() {
           </div>
 
           {feedback ? (
-            <div className={`feedback-card ${feedback.evaluation.isCorrect ? "success" : "error"}`} style={{ marginTop: 22 }}>
-              <div className="inline-cluster" style={{ justifyContent: "space-between" }}>
-                <h3 style={{ margin: 0 }}>{feedback.evaluation.isCorrect ? "Respuesta correcta" : "Respuesta enviada"}</h3>
+            <div className={`feedback-card ${feedback.evaluation.isCorrect ? "success" : "error"} mt-24`}>
+              <div className="inline-cluster cluster-between">
+                <h3 className="m-0">{feedback.evaluation.isCorrect ? "Respuesta correcta" : "Respuesta enviada"}</h3>
                 <span className={`status-pill ${feedback.evaluation.isCorrect ? "success" : "warning"}`}>
                   Nivel de ayuda {feedback.hintLevel}
                 </span>
               </div>
-              <p className="body-sm" style={{ margin: 0 }}>{feedback.feedbackText}</p>
-              <div className="metric-grid" style={{ gridTemplateColumns: "repeat(2, minmax(0, 1fr))", marginTop: 6 }}>
-                <div className="metric-card" style={{ padding: 14 }}>
+              <p className="body-sm m-0">{feedback.feedbackText}</p>
+              <div className="metric-grid metric-grid-2 mt-8">
+                <div className="metric-card metric-card-compact">
                   <span className="metric-label">Razonamiento</span>
-                  <strong className="metric-value" style={{ fontSize: "1.35rem" }}>{feedback.evaluation.reasoningScore}</strong>
+                  <strong className="metric-value metric-value-lg">{feedback.evaluation.reasoningScore}</strong>
                 </div>
-                <div className="metric-card" style={{ padding: 14 }}>
+                <div className="metric-card metric-card-compact">
                   <span className="metric-label">Competencia</span>
-                  <strong className="metric-value" style={{ fontSize: "1.35rem" }}>{feedback.evaluation.competencyScore}</strong>
+                  <strong className="metric-value metric-value-lg">{feedback.evaluation.competencyScore}</strong>
                 </div>
               </div>
-              {feedback.evaluation.qualitativeFeedback ? <p className="subtle" style={{ margin: 0 }}>{feedback.evaluation.qualitativeFeedback}</p> : null}
+              {feedback.evaluation.qualitativeFeedback ? <p className="subtle m-0">{feedback.evaluation.qualitativeFeedback}</p> : null}
             </div>
           ) : null}
 
-          <div style={{ marginTop: 24, marginBottom: 24 }}>
+          <div className="mt-24 mb-24">
             <TutorInterface sessionId={session?.sessionId ?? ""} currentItemId={item.id} />
           </div>
 
@@ -322,7 +344,7 @@ export function PracticeSession() {
 
       {sessionEnded && sessionDashboardHref ? (
         <div className="page-actions">
-          <Link href={sessionDashboardHref} className="secondary-button" style={{ flex: 1 }}>
+          <Link href={sessionDashboardHref} className="secondary-button button-grow">
             Ver dashboard de esta sesión
           </Link>
           <Link href="/home" className="subtle">Volver a inicio</Link>
