@@ -33,12 +33,12 @@ export default async function HomePage() {
 
   return (
     <>
-      <section className="page-header">
+      <section className="page-header home-header">
         <p className="eyebrow">Panel de control</p>
         <h1 className="display-title">Bienvenido, {user.email?.split("@")[0]}</h1>
       </section>
 
-      <section className="hero-card">
+      <section className="hero-card hero-card-premium">
         <div className="inline-cluster cluster-between cluster-start">
           <div className="hero-content">
             <p className="eyebrow">{onboardingComplete ? "Tu enfoque actual" : "Acción inmediata"}</p>
