@@ -69,8 +69,8 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
 
   return (
     <>
-      <section className="page-header">
-        <p className="eyebrow">Dashboard</p>
+      <section className="page-header metrics-header">
+        <p className="eyebrow">Métricas</p>
         <h1 className="display-title">Insights útiles antes que tablas.</h1>
         <p className="body-lg">
           Vista móvil pensada para entender tendencia, fortalezas y focos de refuerzo sin convertir el progreso en ruido.

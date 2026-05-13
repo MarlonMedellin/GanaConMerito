@@ -222,8 +222,8 @@ export function PracticeSession() {
       ) : null}
 
       {item ? (
-        <article className="surface-card">
-          <div className="practice-panel-header mb-24">
+        <article className="surface-card practice-workspace">
+          <div className="practice-panel-header practice-panel-header-strong mb-24">
             <div>
               <p className="eyebrow">Práctica</p>
               <h2 className="section-title panel-title-sm">{item.title}</h2>
@@ -263,7 +263,7 @@ export function PracticeSession() {
 
           <p className="practice-stem">{item.stem}</p>
 
-          <div className="option-list">
+          <div className="option-list option-list-strong">
             {item.options.map((option) => {
               const isSelected = selectedOption === option.key;
               const className = [
@@ -324,7 +324,7 @@ export function PracticeSession() {
             </div>
           ) : null}
 
-          <div className="mt-24 mb-24">
+          <div className="mt-24 mb-24 tutor-zone">
             <TutorInterface sessionId={session?.sessionId ?? ""} currentItemId={item.id} />
           </div>
 

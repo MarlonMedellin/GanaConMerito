@@ -1083,3 +1083,105 @@ pre {
     border-radius: 6px;
   }
 }
+
+/* Phase 5 visual hardening */
+.auth-layout-shell {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+.auth-sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: 28px 18px;
+  border-right: 1px solid var(--border-subtle);
+  background: #f4f8fc;
+  display: grid;
+  align-content: start;
+  gap: 18px;
+}
+
+.sidebar-user-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 14px;
+  border: 1px solid var(--border-subtle);
+  background: #ffffff;
+}
+
+.auth-main-shell { min-width: 0; }
+.auth-topbar-mobile { display: none; }
+.app-shell-auth { padding: 28px 24px 56px; }
+
+.auth-sidebar .bottom-nav {
+  position: static;
+  transform: none;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+  padding: 0;
+}
+
+.auth-sidebar .bottom-nav-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.auth-sidebar .bottom-nav-link {
+  min-height: 48px;
+  padding: 0 12px;
+  grid-auto-flow: column;
+  justify-content: start;
+  border: 1px solid var(--border-subtle);
+  background: #ffffff;
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 13px;
+}
+
+.hero-card-premium {
+  background: linear-gradient(160deg, #ffffff 0%, #f2f7ff 70%);
+  border: 1px solid #d7e3f2;
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
+}
+
+.home-header, .metrics-header, .practice-header {
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid var(--border-subtle);
+  background: #f9fbff;
+}
+
+.metric-card, .surface-card, .list-card {
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.practice-workspace {
+  border: 1px solid #d6e2f0;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+}
+
+.practice-panel-header-strong {
+  padding: 14px;
+  border-radius: 14px;
+  background: #f3f8ff;
+  border: 1px solid #d8e5f5;
+}
+
+.option-list-strong .option-card { border-width: 1.4px; }
+.option-list-strong .option-card:hover { box-shadow: 0 10px 18px rgba(37, 99, 235, 0.1); }
+.tutor-zone .tutor-panel { border: 1px solid #d8e5f5; border-radius: 18px; }
+
+@media (max-width: 1023px) {
+  .auth-layout-shell { display: block; }
+  .auth-sidebar { display: none; }
+  .auth-topbar-mobile { display: block; }
+  .app-shell-auth { padding: 14px 12px 108px; }
+}

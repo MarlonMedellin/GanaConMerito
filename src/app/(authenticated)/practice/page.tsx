@@ -28,7 +28,7 @@ export default async function PracticePage() {
 
   return (
     <>
-      <section className="page-header" style={{ paddingBottom: 0 }}>
+      <section className="page-header practice-header" style={{ paddingBottom: 0 }}>
         <p className="eyebrow">Práctica</p>
         <h1 className="display-title">Pregunta, decide y revisa feedback.</h1>
       </section>
