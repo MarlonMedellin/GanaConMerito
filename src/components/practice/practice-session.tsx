@@ -301,6 +301,18 @@ export function PracticeSession() {
             />
           </div>
 
+          <div className="practice-sticky">
+            {feedback && pendingNextItemId ? (
+              <button onClick={handleContinue} className="primary-button" disabled={loading}>
+                {loading ? "Cargando..." : "Siguiente pregunta"}
+              </button>
+            ) : !feedback ? (
+              <button onClick={handleSubmitAnswer} className="primary-button" disabled={loading || !selectedOption}>
+                {loading ? "Enviando..." : "Responder"}
+              </button>
+            ) : null}
+          </div>
+
           {feedback ? (
             <div className={`feedback-card ${feedback.evaluation.isCorrect ? "success" : "error"} mt-24`}>
               <div className="inline-cluster cluster-between">
@@ -326,18 +338,6 @@ export function PracticeSession() {
 
           <div className="mt-24 mb-24 tutor-zone">
             <TutorInterface sessionId={session?.sessionId ?? ""} currentItemId={item.id} />
-          </div>
-
-          <div className="practice-sticky">
-            {feedback && pendingNextItemId ? (
-              <button onClick={handleContinue} className="primary-button" disabled={loading}>
-                {loading ? "Cargando..." : "Siguiente pregunta"}
-              </button>
-            ) : !feedback ? (
-              <button onClick={handleSubmitAnswer} className="primary-button" disabled={loading || !selectedOption}>
-                {loading ? "Enviando..." : "Responder"}
-              </button>
-            ) : null}
           </div>
         </article>
       ) : null}

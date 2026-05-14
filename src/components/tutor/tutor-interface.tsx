@@ -97,9 +97,9 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
         onClick={() => setIsOpen(true)}
         className="tutor-chip"
         data-testid="tutor-gcm-open-button"
-        style={{ width: "100%", textAlign: "left" }}
+        
       >
-        <div className="tutor-head-main" style={{ gap: "12px" }}>
+        <div className="tutor-head-main tutor-head-main-open">
           <div className="avatar-chip avatar-mini">T</div>
           <div>
             <p className="eyebrow m-0">Tutor GCM</p>
@@ -151,7 +151,7 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
               key={action}
               type="button"
               className="guided-chip"
-              style={{ cursor: loading ? "not-allowed" : "pointer" }}
+              aria-busy={loading ? "true" : "false"}
               disabled={loading}
               onClick={() => handleGuidedAction(action)}
             >
@@ -162,8 +162,8 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
       </div>
 
       {lastResponse ? (
-        <div className="feedback-card" style={{ margin: 0, background: "var(--surface-secondary)" }}>
-          <p className="body-sm" style={{ whiteSpace: "pre-wrap" }}>{lastResponse.visibleMessage}</p>
+        <div className="feedback-card tutor-feedback-card">
+          <p className="body-sm tutor-feedback-text">{lastResponse.visibleMessage}</p>
           <div className="tutor-response-meta">
             <span className="subtle subtle-xs">
               {lastResponse.degraded ? "Modo limitado" : "Tutoría orientativa"}
@@ -173,7 +173,7 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
       ) : null}
 
       {error ? (
-        <p className="body-sm" style={{ color: "var(--error)", margin: 0 }}>{error}</p>
+        <p className="body-sm tutor-error-text">{error}</p>
       ) : null}
 
       <form onSubmit={handleSendMessage} className="form-grid-sm" data-testid="tutor-gcm-form">
@@ -200,7 +200,7 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
         </button>
       </form>
 
-      <p className="subtle subtle-xxs" style={{ textAlign: "center" }}>
+      <p className="subtle subtle-xxs tutor-footnote">
         El tutor no modifica tu puntaje ni el avance de tu sesión; solo te guía para razonar mejor.
       </p>
     </section>
