@@ -1186,11 +1186,15 @@ pre {
   .auth-sidebar { display: none; }
   .auth-topbar-mobile { 
     display: block; 
-    position: sticky; 
+    position: fixed; 
     top: 0; 
-    z-index: 110; 
+    left: 0;
+    right: 0;
+    z-index: 150; 
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   }
-  .app-shell-auth { padding: 14px 12px 108px; }
+  .app-shell-auth { padding: 84px 12px 108px; }
   
   .mobile-nav-container { 
     display: block; 
@@ -1234,10 +1238,10 @@ pre {
   }
 
   .practice-sticky {
-    position: sticky;
-    bottom: 84px;
-    z-index: 90;
-    padding: 12px 0;
-    background: linear-gradient(0deg, var(--surface) 70%, transparent);
+    position: relative;
+    bottom: auto;
+    z-index: 10;
+    padding: 24px 0 12px;
+    background: transparent;
   }
 }
