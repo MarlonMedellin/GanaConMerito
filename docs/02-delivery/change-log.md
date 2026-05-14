@@ -28,6 +28,14 @@ last_reviewed: 2026-05-10
 - estado: in-progress (fase 3 documental en ejecucion; sin cierre de roadmap)
 - limitaciones: inventario inicial; no se archivaron ni removieron documentos legacy en esta entrega.
 
+## 2026-05-13
+- tipo: visual+qa+ops+closure
+- modulo: core/ui/authenticated/layout
+- resumen: Despliegue de Hardening Visual Fase 5 (Layout autenticado, sidebar persistente, topbar móvil, hero premium y workspace cognitivo). Sincronización total de VPS sobre `716ec62`, reconstrucción Docker sin caché y validación runtime completa (smoke, api, ui). Evidencia visual capturada y verificada.
+- sprint: Visual Hardening Phase 5
+- agente: PM-Dev/Antigravity
+- relacionados: src/app/globals.css, src/app/(authenticated)/layout.tsx, 716ec62, https://cnsc.profemarlon.com
+
 ## 2026-05-10
 - tipo: docs+governance+sprint47-final-sanitation
 - modulo: docs/status/sprint-log/backlog/traceability

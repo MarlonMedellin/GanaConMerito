@@ -20,10 +20,10 @@ Ultima actualizacion: 2026-05-10 — Sprint 47 (Mantenimiento menor y saneamient
 Sprint 47 — Mantenimiento menor y saneamiento final.
 
 ## Current Runtime State
-Runtime publico verificado en `https://cnsc.profemarlon.com` sobre `fcc40cb`.
+Runtime publico verificado en `https://cnsc.profemarlon.com` sobre `716ec62`.
 
 ## Last Verified Commit
-`fcc40cb`
+`716ec62`
 
 ## Current Sprint Status
 Sprint 47 queda **CERRADO EN REPO (CIERRE DOCUMENTAL Y DE TRAZABILIDAD)**; runtime no revalidado en esta corrida.
@@ -73,8 +73,8 @@ Sprint 47 queda **CERRADO EN REPO (CIERRE DOCUMENTAL Y DE TRAZABILIDAD)**; runti
 - **Arbol de deploy:** `/opt/gcm/app`.
 - **URL publica canonica:** `https://cnsc.profemarlon.com`.
 - **Consola operacional:** `https://cnsc.profemarlon.com/update.html`.
-- **Commit actual desplegado y verificado:** `fcc40cb`.
-- **Short hash verificado:** `fcc40cb`.
+- **Commit actual desplegado y verificado:** `716ec62`.
+- **Short hash verificado:** `716ec62`.
 
 ## Sprint 47 — mantenimiento menor y saneamiento final
 
