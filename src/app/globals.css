@@ -509,9 +509,9 @@ pre {
 .topbar-wrap {
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: 100;
   backdrop-filter: blur(18px);
-  background: rgba(247, 249, 252, 0.84);
+  background: rgba(247, 249, 252, 0.94);
   border-bottom: 1px solid rgba(226, 232, 240, 0.88);
 }
 
@@ -1113,9 +1113,11 @@ pre {
   background: #ffffff;
 }
 
-.auth-main-shell { min-width: 0; }
+.auth-main-shell { min-width: 0; display: flex; flex-direction: column; min-height: 100vh; }
 .auth-topbar-mobile { display: none; }
-.app-shell-auth { padding: 28px 24px 56px; }
+.app-shell-auth { padding: 28px 24px 56px; flex: 1; }
+
+.mobile-nav-container { display: none; }
 
 .auth-sidebar .bottom-nav {
   position: static;
@@ -1182,6 +1184,60 @@ pre {
 @media (max-width: 1023px) {
   .auth-layout-shell { display: block; }
   .auth-sidebar { display: none; }
-  .auth-topbar-mobile { display: block; }
+  .auth-topbar-mobile { 
+    display: block; 
+    position: sticky; 
+    top: 0; 
+    z-index: 110; 
+  }
   .app-shell-auth { padding: 14px 12px 108px; }
+  
+  .mobile-nav-container { 
+    display: block; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 200;
+    pointer-events: none;
+  }
+  
+  .mobile-nav-container .bottom-nav {
+    pointer-events: auto;
+    bottom: 12px;
+  }
+
+  /* Compact Practice Metadata for Mobile */
+  .practice-rich-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding: 14px;
+    background: #f8fbff;
+    border-radius: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .practice-rich-item {
+    border-bottom: 0;
+    padding: 0;
+  }
+  
+  .practice-rich-item .eyebrow {
+    font-size: 10px;
+    opacity: 0.7;
+    margin-bottom: 2px;
+  }
+  
+  .practice-rich-item .body-sm {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .practice-sticky {
+    position: sticky;
+    bottom: 84px;
+    z-index: 90;
+    padding: 12px 0;
+    background: linear-gradient(0deg, var(--surface) 70%, transparent);
+  }
 }

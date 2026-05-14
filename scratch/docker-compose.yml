@@ -1,0 +1,26 @@
+services:
+  gcm-app:
+    build:
+      context: /opt/gcm/app
+      args:
+        APP_COMMIT: 716ec62
+        APP_BUILD_TIME: 2026-05-14T00:42:00Z
+      dockerfile: Dockerfile
+    container_name: gcm-app
+    restart: unless-stopped
+    env_file:
+      - /opt/gcm/env/gcm-app.env
+    ports:
+      - "127.0.0.1:3000:3000"
+    volumes:
+      - /home/ubuntu/.openclaw/product:/home/ubuntu/.openclaw/product
+      - /opt/gcm/app:/opt/gcm/app
+      - /opt/gcm/env:/opt/gcm/env
+      - /opt/gcm/docker-compose.yml:/opt/gcm/docker-compose.yml
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      GCM_PRODUCT_DIR: /home/ubuntu/.openclaw/product
+      GCM_DEPLOY_DIR: /opt/gcm/app
+      GCM_DOCKER_COMPOSE_FILE: /opt/gcm/docker-compose.yml
+      GCM_RUNTIME_BASE_URL: http://127.0.0.1:3000
+      GCM_QA_BASE_URL: http://127.0.0.1:3000

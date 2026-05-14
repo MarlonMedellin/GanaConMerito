@@ -50,6 +50,9 @@ export default async function AuthenticatedLayout({ children }: { children: Reac
         <main className="app-shell app-shell-auth">
           <div className="content-stack">{children}</div>
         </main>
+        <div className="mobile-nav-container">
+          <AppNav />
+        </div>
       </div>
     </div>
   );
