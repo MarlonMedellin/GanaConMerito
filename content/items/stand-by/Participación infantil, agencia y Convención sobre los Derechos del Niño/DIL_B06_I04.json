@@ -1,0 +1,99 @@
+{
+    "id_item": "DIL_B06_I04",
+    "archivo_sugerido": "DIL_B06_I04_participacion_significativa_no_manipulacion.json",
+    "bloque": {
+        "codigo_bloque": "DIL_B06",
+        "nombre": "Participación infantil, agencia y Convención sobre los Derechos del Niño",
+        "estado_en_lista": "Bloque 6 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 4 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce condiciones mínimas para que la participación infantil sea significativa y no manipulada.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, convivencia, democracia escolar, orientación o ciudadanía infantil.",
+        "blueprint": {
+            "problematica_principal": "Diseño de espacios de participación donde los estudiantes son consultados solo de manera aparente y sin retroalimentación o incidencia.",
+            "fuente_autorizada": [
+                "Convención sobre los Derechos del Niño",
+                "Artículo 12 CDN",
+                "Ley 1098 de 2006",
+                "Participación significativa",
+                "Democracia escolar"
+            ],
+            "componente_modulo": "Participación significativa",
+            "competencia": "Diseño de espacios reales de participación escolar",
+            "afirmacion": "La participación significativa exige información comprensible, voluntariedad, escucha, devolución, protección e incidencia proporcional.",
+            "evidencia_observable": "Distingue entre consulta simbólica y proceso participativo con efectos reales.",
+            "tipo_de_evidencia": "Juicio pedagógico y ciudadano aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "B"
+        },
+        "claim": "El evaluado comprende que escuchar a NNA implica crear condiciones para que sus opiniones sean informadas, consideradas y respondidas.",
+        "evidencia_observable": "Selecciona una estrategia de participación con información, deliberación y retroalimentación.",
+        "tarea_cognitiva": "Evaluar la calidad de un proceso de participación escolar.",
+        "tipo_de_pregunta": "Caso situacional de democracia escolar",
+        "dificultad_esperada": "Media-Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Simular participación sin incidencia",
+                "revision": "La clave exige devolución y efectos proporcionales."
+            },
+            {
+                "riesgo": "Adultocentrismo",
+                "revision": "El ítem valora la voz de NNA."
+            },
+            {
+                "riesgo": "Exponer a estudiantes por opinar",
+                "revision": "La opción correcta incluye protección y respeto."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Una escuela aplica una encuesta a estudiantes sobre convivencia, pero nunca les explica el propósito, no les devuelve resultados y no usa sus opiniones para ninguna decisión. Luego afirma que ya garantizó participación estudiantil.\n\n¿Qué condición falta para que la participación sea significativa?",
+        "opciones": {
+            "A": "Que los estudiantes solo firmen asistencia sin conocer el tema.",
+            "B": "Que reciban información comprensible, puedan expresar su opinión de forma segura, sean escuchados y reciban retroalimentación sobre cómo se consideraron sus aportes.",
+            "C": "Que los adultos decidan todo antes de consultar a los estudiantes.",
+            "D": "Que la participación se limite a posar en fotografías institucionales."
+        },
+        "respuesta_correcta": "B"
+    },
+    "ficha_tecnica": {
+        "componente": "Participación significativa",
+        "competencia": "Diseño de espacios reales de participación escolar",
+        "claim_evaluado": "El evaluado comprende que escuchar a NNA implica crear condiciones para que sus opiniones sean informadas, consideradas y respondidas.",
+        "evidencia": "Selecciona una estrategia de participación con información, deliberación y retroalimentación.",
+        "proceso_cognitivo": "Juicio pedagógico-ciudadano aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media-Alta",
+        "respuesta_correcta": "B",
+        "distractores": {
+            "A": "Reduce la participación a presencia formal.",
+            "C": "Simula consulta sin incidencia.",
+            "D": "Reproduce participación decorativa."
+        },
+        "fuente_autorizada": [
+            "Convención sobre los Derechos del Niño",
+            "Artículo 12 CDN",
+            "Ley 1098 de 2006",
+            "Participación significativa",
+            "Democracia escolar"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque la participación significativa exige información, seguridad, escucha, consideración y devolución de los aportes.",
+        "opcion_A": "Es incorrecta porque firmar asistencia no equivale a participar.",
+        "opcion_C": "Es incorrecta porque consulta sin incidencia real reproduce adultocentrismo.",
+        "opcion_D": "Es incorrecta porque la fotografía institucional puede ser participación decorativa."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem protege el derecho de opinión y evita manipulación o participación meramente simbólica."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre participación infantil, agencia y Convención sobre los Derechos del Niño."
+    }
+}

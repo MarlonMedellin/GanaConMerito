@@ -1,0 +1,99 @@
+{
+    "id_item": "IDD_B14_I02",
+    "archivo_sugerido": "IDD_B14_I02_saberes_previos_ausubel_conflicto_cognitivo.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B14",
+        "nombre": "Diagnóstico pedagógico, saberes previos y evaluación formativa",
+        "estado_en_lista": "Bloque 14 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 2 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende la importancia de identificar saberes previos o misconceptions antes de generar conflicto cognitivo.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, pedagogía, didáctica, evaluación diagnóstica o aprendizaje significativo.",
+        "blueprint": {
+            "problematica_principal": "Intentar generar conflicto cognitivo sin conocer las ideas previas del estudiante.",
+            "fuente_autorizada": [
+                "Ausubel",
+                "Aprendizaje significativo",
+                "Constructivismo",
+                "Ideas previas",
+                "Conflicto cognitivo"
+            ],
+            "componente_modulo": "Aprendizaje Significativo y Saberes Previos",
+            "competencia": "Uso didáctico de ideas previas",
+            "afirmacion": "El aprendizaje significativo exige partir de lo que el estudiante ya sabe, incluyendo concepciones erróneas o incompletas.",
+            "evidencia_observable": "Reconoce que identificar ideas previas permite diseñar mediaciones, preguntas y contrastes pertinentes.",
+            "tipo_de_evidencia": "Comprensión didáctica aplicada",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que las ideas previas son el punto de partida para provocar conflictos cognitivos útiles y no confusión arbitraria.",
+        "evidencia_observable": "Selecciona una explicación que vincula saberes previos, aprendizaje significativo y diseño de conflicto cognitivo.",
+        "tarea_cognitiva": "Explicar por qué el docente debe identificar misconceptions antes de intervenir.",
+        "tipo_de_pregunta": "Pregunta conceptual aplicada",
+        "dificultad_esperada": "Media-Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Tratar las ideas previas como errores vergonzosos",
+                "revision": "La clave las asume como punto de partida."
+            },
+            {
+                "riesgo": "Generar conflicto cognitivo sin mediación",
+                "revision": "La opción correcta exige diseño didáctico intencional."
+            },
+            {
+                "riesgo": "Reducir aprendizaje significativo a motivación",
+                "revision": "El ítem se centra en estructura cognitiva previa y relación con nuevo conocimiento."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Antes de enseñar un concepto nuevo, el docente quiere generar conflicto cognitivo en sus estudiantes. Sin embargo, todavía no sabe qué ideas previas, explicaciones intuitivas o concepciones erróneas tienen sobre el tema.\n\n¿Por qué debe identificarlas primero desde el aprendizaje significativo de Ausubel?",
+        "opciones": {
+            "A": "Porque el nuevo aprendizaje se construye sobre lo que el estudiante ya sabe, y conocer sus ideas previas permite diseñar preguntas, contrastes y mediaciones pertinentes.",
+            "B": "Porque las ideas previas deben eliminarse sin analizarlas.",
+            "C": "Porque el conflicto cognitivo consiste en confundir al estudiante sin propósito.",
+            "D": "Porque el docente debe enseñar sin considerar lo que el estudiante piensa."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Aprendizaje Significativo y Saberes Previos",
+        "competencia": "Uso didáctico de ideas previas",
+        "claim_evaluado": "El evaluado comprende que las ideas previas son el punto de partida para provocar conflictos cognitivos útiles y no confusión arbitraria.",
+        "evidencia": "Selecciona una explicación que vincula saberes previos, aprendizaje significativo y diseño de conflicto cognitivo.",
+        "proceso_cognitivo": "Comprensión didáctica aplicada",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media-Alta",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Niega el valor pedagógico de analizar ideas previas.",
+            "C": "Confunde conflicto cognitivo con confusión sin mediación.",
+            "D": "Representa una enseñanza descontextualizada."
+        },
+        "fuente_autorizada": [
+            "Ausubel",
+            "Aprendizaje significativo",
+            "Constructivismo",
+            "Ideas previas",
+            "Conflicto cognitivo"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque el aprendizaje significativo parte de la estructura cognitiva previa del estudiante.",
+        "opcion_B": "Es incorrecta porque las ideas previas deben comprenderse y transformarse, no eliminarse mecánicamente.",
+        "opcion_C": "Es incorrecta porque el conflicto cognitivo requiere intención y mediación.",
+        "opcion_D": "Es incorrecta porque desconoce el punto de partida del aprendiz."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem valora las ideas previas como punto de partida y evita ridiculizar concepciones iniciales."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 5 preguntas sobre diagnóstico pedagógico, saberes previos y evaluación formativa."
+    }
+}

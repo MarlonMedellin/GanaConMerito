@@ -1,0 +1,99 @@
+{
+    "id_item": "IDD_B12_I02",
+    "archivo_sugerido": "IDD_B12_I02_guias_tradicionales_material_concreto_evaluacion_formativa.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B12",
+        "nombre": "Didáctica de las áreas, resolución de problemas y material concreto",
+        "estado_en_lista": "Bloque 12 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 2 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce que, ante dificultades de comprensión con guías tradicionales, debe ajustar la mediación mediante evaluación formativa y material concreto.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, primaria, didáctica, evaluación formativa o inclusión educativa.",
+        "blueprint": {
+            "problematica_principal": "Persistencia en guías tradicionales aunque el grupo no comprende el concepto.",
+            "fuente_autorizada": [
+                "Evaluación formativa",
+                "Material concreto",
+                "Didáctica de las áreas",
+                "DUA",
+                "Aprendizaje significativo"
+            ],
+            "componente_modulo": "Estrategias de Evaluación Formativa",
+            "competencia": "Ajuste didáctico según evidencias de aprendizaje",
+            "afirmacion": "Cuando una estrategia no logra comprensión, el docente debe analizar evidencias, ajustar la mediación y usar recursos concretos o representacionales.",
+            "evidencia_observable": "Selecciona una acción docente que cambia la mediación, usa material concreto y recoge nuevas evidencias.",
+            "tipo_de_evidencia": "Juicio didáctico-evaluativo aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que la evaluación formativa obliga a modificar la enseñanza cuando las evidencias muestran que los estudiantes no están comprendiendo.",
+        "evidencia_observable": "Elige un ajuste didáctico con material concreto, representación, retroalimentación y seguimiento.",
+        "tarea_cognitiva": "Analizar resultados de comprensión y elegir una estrategia de mejora.",
+        "tipo_de_pregunta": "Caso situacional de juicio evaluativo y didáctico",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Culpar al grupo por no comprender",
+                "revision": "La clave revisa la mediación docente y propone ajustes."
+            },
+            {
+                "riesgo": "Usar material concreto como decoración",
+                "revision": "La opción correcta lo vincula con el concepto y la evidencia de aprendizaje."
+            },
+            {
+                "riesgo": "Repetir la misma guía como recuperación",
+                "revision": "El ítem exige cambio de estrategia."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un grupo de primaria no logra comprender un concepto mediante guías tradicionales. El docente observa errores frecuentes y poca participación, pero todavía tiene oportunidad de ajustar la enseñanza.\n\n¿Qué debe hacer desde la evaluación formativa y el uso de material concreto?",
+        "opciones": {
+            "A": "Repetir la misma guía hasta que los estudiantes memoricen las respuestas.",
+            "B": "Avanzar al siguiente tema porque ya se entregó la actividad.",
+            "C": "Analizar las dificultades, retroalimentar, usar material concreto y representaciones variadas, y recoger nuevas evidencias de comprensión.",
+            "D": "Calificar con bajo desempeño a todo el grupo sin modificar la mediación."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Estrategias de Evaluación Formativa",
+        "competencia": "Ajuste didáctico según evidencias de aprendizaje",
+        "claim_evaluado": "El evaluado comprende que la evaluación formativa obliga a modificar la enseñanza cuando las evidencias muestran que los estudiantes no están comprendiendo.",
+        "evidencia": "Elige un ajuste didáctico con material concreto, representación, retroalimentación y seguimiento.",
+        "proceso_cognitivo": "Análisis y juicio evaluativo-didáctico",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Repite la misma estrategia sin atender la dificultad.",
+            "B": "Cierra el proceso sin aprendizaje suficiente.",
+            "D": "Usa la evaluación para sancionar y no para mejorar."
+        },
+        "fuente_autorizada": [
+            "Evaluación formativa",
+            "Material concreto",
+            "Didáctica de las áreas",
+            "DUA",
+            "Aprendizaje significativo"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque usa la evaluación para tomar decisiones didácticas, diversificar mediaciones y verificar avances.",
+        "opcion_A": "Es incorrecta porque repetir no garantiza comprensión.",
+        "opcion_B": "Es incorrecta porque ignora las evidencias de dificultad.",
+        "opcion_D": "Es incorrecta porque califica sin retroalimentar ni ajustar."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no atribuye la dificultad a incapacidad del grupo, sino a la necesidad de ajustar la enseñanza."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 5 preguntas sobre didáctica de las áreas, resolución de problemas y material concreto."
+    }
+}

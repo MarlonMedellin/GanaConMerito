@@ -1,0 +1,101 @@
+{
+    "id_item": "CEOL_B07_I02",
+    "archivo_sugerido": "CEOL_B07_I02_deconstruccion_idea_previa_sol_amarillo.json",
+    "bloque": {
+        "codigo_bloque": "CEOL_B07",
+        "nombre": "Ideas previas, conflicto cognitivo y desarrollo constructivista",
+        "estado_en_lista": "Bloque 7 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 2 de 6"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce el proceso pedagógico que debe liderar el docente para deconstruir una idea previa fuertemente arraigada.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, didáctica, ciencias naturales o pedagogía.",
+        "blueprint": {
+            "problematica_principal": "Tratamiento superficial de ideas previas o misconceptions en el aula.",
+            "fuente_autorizada": [
+                "Enfoque constructivista",
+                "Aprendizaje significativo",
+                "Didáctica de las ciencias",
+                "Cambio conceptual"
+            ],
+            "componente_modulo": "Conflicto Cognitivo e Ideas Previas",
+            "competencia": "Gestión didáctica de ideas previas",
+            "afirmacion": "Para transformar una idea previa, el docente debe hacerla explícita, contrastarla con evidencias y acompañar la reconstrucción conceptual.",
+            "evidencia_observable": "Selecciona un proceso pedagógico que incluye indagación de ideas iniciales, conflicto cognitivo, contraste, explicación y aplicación.",
+            "tipo_de_evidencia": "Juicio didáctico aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que las ideas previas no se reemplazan con una simple corrección verbal; requieren ser explicitadas, puestas en tensión y reconstruidas mediante evidencias, diálogo y nuevas aplicaciones.",
+        "evidencia_observable": "Selecciona una secuencia didáctica adecuada para deconstruir la idea de que el sol es simplemente amarillo.",
+        "tarea_cognitiva": "Elegir un proceso de cambio conceptual frente a una idea previa arraigada.",
+        "tipo_de_pregunta": "Caso situacional de juicio pedagógico",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Sesgo por conocimiento científico específico",
+                "revision": "El foco está en el proceso pedagógico de cambio conceptual, no en detalles físicos avanzados sobre espectro solar."
+            },
+            {
+                "riesgo": "Ridiculización de la idea previa",
+                "revision": "La clave trata la idea previa como punto de partida legítimo para aprender."
+            },
+            {
+                "riesgo": "Ambigüedad entre corregir y deconstruir",
+                "revision": "La opción correcta exige evidencia, contraste y reconstrucción, no solo decir la respuesta correcta."
+            },
+            {
+                "riesgo": "Memorización de conceptos",
+                "revision": "El ítem evalúa una actuación didáctica contextualizada."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En una clase, varios estudiantes afirman con seguridad que el sol es de color amarillo porque así lo han visto dibujado en libros, caricaturas y actividades escolares. El docente quiere deconstruir esa idea previa sin ridiculizarla.\n\n¿Qué proceso pedagógico debe liderar?",
+        "opciones": {
+            "A": "Hacer explícitas las ideas iniciales, contrastarlas con observaciones o evidencias, generar conflicto cognitivo y orientar una nueva explicación que los estudiantes puedan aplicar.",
+            "B": "Decir que todos están equivocados y pedir que memoricen la respuesta correcta para el examen.",
+            "C": "Evitar discutir la idea previa para no confundir a los estudiantes.",
+            "D": "Calificar negativamente a quienes mantengan la idea inicial."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Conflicto Cognitivo e Ideas Previas",
+        "competencia": "Gestión didáctica de ideas previas",
+        "claim_evaluado": "El evaluado comprende que las ideas previas no se reemplazan con una simple corrección verbal; requieren ser explicitadas, puestas en tensión y reconstruidas mediante evidencias, diálogo y nuevas aplicaciones.",
+        "evidencia": "Selecciona una secuencia didáctica adecuada para deconstruir la idea de que el sol es simplemente amarillo.",
+        "proceso_cognitivo": "Análisis y juicio didáctico",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Reduce el cambio conceptual a corrección memorística.",
+            "C": "Evita el conflicto cognitivo y mantiene intacta la idea previa.",
+            "D": "Sanciona la idea inicial en lugar de usarla como punto de partida."
+        },
+        "fuente_autorizada": [
+            "Enfoque constructivista",
+            "Aprendizaje significativo",
+            "Didáctica de las ciencias",
+            "Cambio conceptual"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque transforma la idea previa en objeto de análisis, la contrasta con evidencias y orienta una reconstrucción conceptual.",
+        "opcion_B": "Es incorrecta porque sustituye la comprensión por memorización.",
+        "opcion_C": "Es incorrecta porque evita una oportunidad de aprendizaje.",
+        "opcion_D": "Es incorrecta porque penaliza la concepción inicial sin favorecer cambio conceptual."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem evita ridiculizar a los estudiantes por sus ideas previas y evalúa una mediación pedagógica respetuosa, basada en evidencias y reconstrucción conceptual."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 6 preguntas sobre ideas previas, conflicto cognitivo y desarrollo constructivista."
+    }
+}

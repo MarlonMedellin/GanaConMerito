@@ -1,0 +1,40 @@
+{
+    "id_item": "MTV_B08_I04",
+    "archivo_sugerido": "MTV_B08_I04_inteligencia_emocional_goleman_habilidades_blandas.json",
+    "proposito_de_uso": "Evaluar si el aspirante reconoce la relación entre inteligencia emocional y habilidades blandas.",
+    "blueprint": {
+        "componente_modulo": "Inteligencia emocional",
+        "competencia": "Relación entre inteligencia emocional y desempeño interpersonal",
+        "afirmacion": "Las habilidades blandas están estrechamente ligadas a la inteligencia emocional, especialmente al autoconocimiento, autocontrol, empatía, motivación y habilidades sociales.",
+        "evidencia_observable": "Selecciona la inteligencia emocional como base de competencias blandas.",
+        "tipo_de_evidencia": "Reconocimiento conceptual aplicado",
+        "dificultad_esperada": "Media",
+        "clave": "A"
+    },
+    "item": {
+        "enunciado": "Según la teoría de Daniel Goleman, las habilidades blandas como la empatía, el autocontrol, la comunicación asertiva, la colaboración y el manejo de conflictos están estrechamente relacionadas con un tipo específico de inteligencia humana.\n\n¿Con cuál inteligencia se relacionan principalmente?",
+        "opciones": {
+            "A": "Inteligencia emocional.",
+            "B": "Inteligencia exclusivamente memorística.",
+            "C": "Inteligencia mecánica de repetición.",
+            "D": "Inteligencia administrativa documental."
+        },
+        "respuesta_correcta": "A"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque la inteligencia emocional fundamenta habilidades de autocontrol, empatía y relación social.",
+        "distractores": {
+            "B": "La memoria no explica por sí sola la empatía ni la regulación emocional.",
+            "C": "La repetición mecánica no corresponde a habilidades socioemocionales.",
+            "D": "La gestión documental no define la inteligencia emocional."
+        }
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado",
+        "argumento": "El ítem evalúa una asociación teórica ampliamente usada en pruebas comportamentales."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Puede usarse como pregunta conceptual directa."
+    }
+}

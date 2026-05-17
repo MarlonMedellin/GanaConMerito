@@ -1,0 +1,105 @@
+{
+    "bloque": {
+        "codigo_bloque": "GA02_B01",
+        "nombre": "Articulación PEI y práctica pedagógica",
+        "estado_en_lista": "Bloque 1 de 8",
+        "decision_del_bloque": "Pregunta única",
+        "preguntas_recomendadas": 1
+    },
+    "preguntas": [
+        {
+            "id_item": "GA02_B01_I01",
+            "archivo_sugerido": "GA02_B01_I01_articulacion_pei_practica_pedagogica.json",
+            "diseno_previo": {
+                "proposito_de_uso": "Evaluar si el aspirante reconoce que el enfoque pedagógico declarado en el PEI debe evidenciarse de manera concreta en la planeación, mediación, actividades, evaluación y retroalimentación de la práctica pedagógica del docente de aula.",
+                "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
+                "blueprint": {
+                    "problematica_principal": "El enfoque pedagógico declarado en el PEI no siempre se evidencia en la práctica docente.",
+                    "fuente_autorizada": [
+                        "Proyecto Educativo Institucional",
+                        "Ley 115 de 1994",
+                        "Lineamientos curriculares del Ministerio de Educación Nacional",
+                        "Orientaciones pedagógicas institucionales"
+                    ],
+                    "componente_modulo": "Gestión Académica",
+                    "competencia": "Articulación curricular y práctica pedagógica",
+                    "afirmacion": "El docente debe evidenciar en su práctica el enfoque pedagógico declarado en el PEI.",
+                    "evidencia_observable": "Selecciona una práctica de aula coherente con el aprendizaje significativo declarado como enfoque pedagógico institucional.",
+                    "tipo_de_evidencia": "Interpretación de situación pedagógica institucional",
+                    "formato": "Selección múltiple con única respuesta",
+                    "numero_opciones": 4,
+                    "clave": "C"
+                },
+                "claim": "El evaluado comprende que la práctica pedagógica del docente de aula debe ser coherente con el PEI y traducir el enfoque de aprendizaje significativo en experiencias que relacionen saberes previos, nuevos conocimientos, contexto, participación activa y evaluación formativa.",
+                "evidencia_observable": "Identifica una acción docente que articula el enfoque de aprendizaje significativo del PEI con la planeación, el desarrollo de la clase y la evaluación.",
+                "tarea_cognitiva": "Analizar una situación de aula y seleccionar la práctica pedagógica más coherente con el enfoque institucional declarado.",
+                "tipo_de_pregunta": "Caso situacional de juicio pedagógico",
+                "dificultad_esperada": "Media",
+                "riesgos_de_fairness": [
+                    {
+                        "riesgo": "Sesgo por conocimiento específico del PEI de una institución particular",
+                        "revision": "El ítem no exige conocer un PEI real específico; presenta explícitamente el enfoque institucional de aprendizaje significativo."
+                    },
+                    {
+                        "riesgo": "Ambigüedad entre aprendizaje significativo y actividad llamativa",
+                        "revision": "La clave diferencia una práctica pedagógica con sentido, conexión con saberes previos y evaluación formativa de actividades aisladas o solo motivacionales."
+                    },
+                    {
+                        "riesgo": "Sesgo por área disciplinar",
+                        "revision": "El caso no pertenece a una asignatura específica; puede aplicarse a cualquier área del currículo."
+                    },
+                    {
+                        "riesgo": "Lenguaje técnico excesivo",
+                        "revision": "Se usan términos pedagógicos habituales, acompañados de acciones concretas de aula."
+                    }
+                ]
+            },
+            "item": {
+                "enunciado": "El PEI de una institución educativa establece el aprendizaje significativo como enfoque pedagógico. En una revisión de prácticas de aula, la coordinación académica observa que algunos docentes siguen desarrollando clases centradas únicamente en explicación magistral, copia de contenidos y evaluación memorística.\n\n¿Cómo debe evidenciarse obligatoriamente el enfoque de aprendizaje significativo en la práctica pedagógica del docente de aula?",
+                "opciones": {
+                    "A": "En la aplicación de talleres extensos e iguales para todos los estudiantes, con el fin de cubrir la mayor cantidad de contenidos posible.",
+                    "B": "En la explicación completa del tema por parte del docente antes de permitir cualquier intervención de los estudiantes.",
+                    "C": "En actividades que partan de saberes previos, relacionen los nuevos aprendizajes con situaciones del contexto y permitan evidenciar comprensión mediante evaluación formativa.",
+                    "D": "En la asignación frecuente de tareas para la casa, independientemente de su relación con los intereses, experiencias o necesidades de los estudiantes."
+                },
+                "respuesta_correcta": "C"
+            },
+            "ficha_tecnica": {
+                "componente": "Gestión Académica",
+                "competencia": "Articulación curricular y práctica pedagógica",
+                "claim_evaluado": "El evaluado comprende que la práctica pedagógica del docente de aula debe ser coherente con el PEI y traducir el enfoque de aprendizaje significativo en experiencias que relacionen saberes previos, nuevos conocimientos, contexto, participación activa y evaluación formativa.",
+                "evidencia": "Identifica una acción docente que articula el enfoque de aprendizaje significativo del PEI con la planeación, el desarrollo de la clase y la evaluación.",
+                "proceso_cognitivo": "Análisis y juicio pedagógico",
+                "tipo_de_item": "Selección múltiple con única respuesta",
+                "nivel_de_dificultad": "Media",
+                "respuesta_correcta": "C",
+                "distractores": {
+                    "A": "Confunde cobertura de contenidos y trabajo uniforme con aprendizaje significativo.",
+                    "B": "Reduce la práctica pedagógica a transmisión magistral y limita la participación activa del estudiante.",
+                    "D": "Asocia la práctica pedagógica con cantidad de tareas, sin garantizar conexión con saberes previos, contexto o comprensión."
+                },
+                "fuente_autorizada": [
+                    "Proyecto Educativo Institucional",
+                    "Ley 115 de 1994",
+                    "Lineamientos curriculares del Ministerio de Educación Nacional",
+                    "Orientaciones pedagógicas institucionales"
+                ]
+            },
+            "justificacion_editorial": {
+                "clave": "La opción C es correcta porque el aprendizaje significativo exige conectar los nuevos contenidos con los saberes previos de los estudiantes, relacionarlos con situaciones comprensibles o contextualizadas y valorar la comprensión mediante procesos de evaluación formativa.",
+                "opcion_A": "Es incorrecta porque un taller extenso e igual para todos no garantiza aprendizaje significativo ni atención a los ritmos, intereses o necesidades del grupo.",
+                "opcion_B": "Es incorrecta porque una explicación magistral completa antes de la participación estudiantil conserva un enfoque transmisivo y no necesariamente favorece construcción de significado.",
+                "opcion_D": "Es incorrecta porque asignar tareas frecuentes no asegura coherencia con el enfoque pedagógico institucional si dichas tareas no se relacionan con experiencias, contexto o comprensión."
+            },
+            "revision_fairness": {
+                "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+                "argumento": "El ítem no exige conocer un PEI institucional concreto, pues el enfoque pedagógico se declara en el enunciado. Tampoco favorece a docentes de un área específica. La clave se basa en principios pedagógicos generales del aprendizaje significativo y en acciones observables de aula."
+            },
+            "dictamen_final": {
+                "estado": "Aprobado",
+                "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+                "uso_recomendado": "Puede usarse como pregunta única del bloque Articulación PEI y práctica pedagógica."
+            }
+        }
+    ]
+}

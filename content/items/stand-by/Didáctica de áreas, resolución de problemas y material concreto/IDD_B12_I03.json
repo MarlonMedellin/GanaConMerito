@@ -1,0 +1,99 @@
+{
+    "id_item": "IDD_B12_I03",
+    "archivo_sugerido": "IDD_B12_I03_resolucion_problemas_contexto_estudiante.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B12",
+        "nombre": "Didáctica de las áreas, resolución de problemas y material concreto",
+        "estado_en_lista": "Bloque 12 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 3 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce la importancia de conectar los contenidos escolares con problemas cotidianos del entorno del estudiante.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, didáctica, currículo, educación básica o evaluación por competencias.",
+        "blueprint": {
+            "problematica_principal": "Desconexión entre contenidos escolares y situaciones significativas del entorno.",
+            "fuente_autorizada": [
+                "Aprendizaje significativo",
+                "Evaluación por competencias",
+                "Didáctica contextualizada",
+                "Lineamientos curriculares",
+                "Resolución de problemas"
+            ],
+            "componente_modulo": "Didáctica de las áreas y contexto de aula",
+            "competencia": "Contextualización del aprendizaje",
+            "afirmacion": "El aprendizaje se fortalece cuando los estudiantes aplican saberes a problemas reales, cercanos o significativos.",
+            "evidencia_observable": "Reconoce que un contenido debe enseñarse con situaciones que permitan uso, transferencia y toma de decisiones.",
+            "tipo_de_evidencia": "Juicio didáctico aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "D"
+        },
+        "claim": "El evaluado comprende que enseñar por competencias implica crear situaciones en las que el estudiante use conocimientos para resolver problemas con sentido.",
+        "evidencia_observable": "Selecciona una estrategia que integra contenidos, contexto y solución de problemas.",
+        "tarea_cognitiva": "Elegir una mediación didáctica contextualizada.",
+        "tipo_de_pregunta": "Pregunta situacional de selección didáctica",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir contexto con simplificación excesiva",
+                "revision": "La clave mantiene exigencia conceptual."
+            },
+            {
+                "riesgo": "Usar ejemplos alejados de la realidad del grupo",
+                "revision": "La opción correcta pide problemas cercanos o significativos."
+            },
+            {
+                "riesgo": "Reducir competencias a actividades prácticas sin reflexión",
+                "revision": "El ítem exige uso, explicación y toma de decisiones."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un docente enseña un contenido únicamente mediante definiciones y ejercicios descontextualizados. Los estudiantes preguntan cómo se relaciona ese tema con problemas de su vida diaria o de su comunidad.\n\n¿Qué ajuste didáctico es más coherente con una enseñanza por competencias?",
+        "opciones": {
+            "A": "Responder que los contenidos no necesitan relación con ningún contexto.",
+            "B": "Pedir que memoricen definiciones aunque no comprendan su uso.",
+            "C": "Eliminar el contenido porque los estudiantes hicieron preguntas sobre su utilidad.",
+            "D": "Diseñar situaciones problema cercanas al entorno, donde los estudiantes usen el contenido para explicar, decidir o resolver algo significativo."
+        },
+        "respuesta_correcta": "D"
+    },
+    "ficha_tecnica": {
+        "componente": "Didáctica de las áreas y contexto de aula",
+        "competencia": "Contextualización del aprendizaje",
+        "claim_evaluado": "El evaluado comprende que enseñar por competencias implica crear situaciones en las que el estudiante use conocimientos para resolver problemas con sentido.",
+        "evidencia": "Selecciona una estrategia que integra contenidos, contexto y solución de problemas.",
+        "proceso_cognitivo": "Juicio didáctico aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "D",
+        "distractores": {
+            "A": "Niega la importancia del sentido y la aplicación.",
+            "B": "Reduce el aprendizaje a memoria.",
+            "C": "Evita la mediación en lugar de mejorarla."
+        },
+        "fuente_autorizada": [
+            "Aprendizaje significativo",
+            "Evaluación por competencias",
+            "Didáctica contextualizada",
+            "Lineamientos curriculares",
+            "Resolución de problemas"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción D es correcta porque conecta el contenido con problemas significativos y permite evidenciar uso competente del saber.",
+        "opcion_A": "Es incorrecta porque desatiende la necesidad de sentido.",
+        "opcion_B": "Es incorrecta porque memorizar sin uso no evidencia competencia.",
+        "opcion_C": "Es incorrecta porque la pregunta por utilidad exige contextualizar, no eliminar el contenido."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem permite adaptar los problemas al contexto del grupo y no exige recursos especializados."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre didáctica de las áreas, resolución de problemas y material concreto."
+    }
+}

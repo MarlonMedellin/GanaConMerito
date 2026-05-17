@@ -1,0 +1,101 @@
+{
+    "id_item": "EFCC_B02_I02",
+    "archivo_sugerido": "EFCC_B02_I02_rubrica_desempeno.json",
+    "bloque": {
+        "codigo_bloque": "EFCC_B02",
+        "nombre": "Criterios, instrumentos y tipos de evaluación",
+        "estado_en_lista": "Bloque 2 de 5",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 2 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende qué es una rúbrica de desempeño y cómo se aplica para valorar aprendizajes con criterios claros y niveles de calidad.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
+        "blueprint": {
+            "problematica_principal": "Uso impreciso de instrumentos de medición y valoración del desempeño.",
+            "fuente_autorizada": [
+                "Evaluación formativa",
+                "Sistema Institucional de Evaluación de los Estudiantes",
+                "Orientaciones pedagógicas institucionales",
+                "Didáctica general"
+            ],
+            "componente_modulo": "Evaluación, Currículo y Didáctica",
+            "competencia": "Diseño y uso de instrumentos de evaluación",
+            "afirmacion": "Una rúbrica permite valorar desempeños mediante criterios explícitos y niveles de calidad previamente definidos.",
+            "evidencia_observable": "Reconoce la estructura y uso de una rúbrica de desempeño en una tarea evaluativa.",
+            "tipo_de_evidencia": "Comprensión instrumental aplicada",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que una rúbrica de desempeño es un instrumento que explicita criterios, niveles de logro y descriptores para valorar una tarea, orientar la retroalimentación y hacer más transparente la evaluación.",
+        "evidencia_observable": "Selecciona la definición y aplicación correcta de una rúbrica en una situación de evaluación.",
+        "tarea_cognitiva": "Identificar la función de un instrumento evaluativo y diferenciarlo de una lista de temas o una calificación global sin criterios.",
+        "tipo_de_pregunta": "Pregunta conceptual aplicada",
+        "dificultad_esperada": "Baja",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Sesgo por familiaridad con formatos institucionales",
+                "revision": "El ítem no exige conocer un formato específico de rúbrica; evalúa su estructura básica."
+            },
+            {
+                "riesgo": "Ambigüedad entre rúbrica y lista de chequeo",
+                "revision": "La clave incluye criterios, niveles de desempeño y descriptores de calidad."
+            },
+            {
+                "riesgo": "Sesgo por área disciplinar",
+                "revision": "La rúbrica puede aplicarse a productos, procesos o desempeños en cualquier área."
+            },
+            {
+                "riesgo": "Confusión entre evaluación y calificación",
+                "revision": "La clave resalta retroalimentación y transparencia, no solo asignación de nota."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un docente solicita a sus estudiantes elaborar una exposición oral. Para evaluarla, decide definir previamente criterios como claridad de ideas, uso de evidencias, organización del discurso y manejo del tiempo. Además, establece niveles de desempeño con descriptores para cada criterio.\n\n¿Qué instrumento está aplicando el docente?",
+        "opciones": {
+            "A": "Una rúbrica de desempeño, porque valora la tarea mediante criterios explícitos, niveles de calidad y descriptores.",
+            "B": "Una nota subjetiva, porque cualquier exposición debe calificarse solo según la impresión general del docente.",
+            "C": "Un estándar curricular, porque reemplaza la evaluación de la exposición por un referente general del área.",
+            "D": "Una sanción académica, porque clasifica a los estudiantes sin posibilidad de retroalimentación."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Evaluación, Currículo y Didáctica",
+        "competencia": "Diseño y uso de instrumentos de evaluación",
+        "claim_evaluado": "El evaluado comprende que una rúbrica de desempeño es un instrumento que explicita criterios, niveles de logro y descriptores para valorar una tarea, orientar la retroalimentación y hacer más transparente la evaluación.",
+        "evidencia": "Selecciona la definición y aplicación correcta de una rúbrica en una situación de evaluación.",
+        "proceso_cognitivo": "Comprensión instrumental aplicada",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Baja",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Confunde evaluación con impresión subjetiva sin criterios.",
+            "C": "Confunde instrumento de valoración con referente curricular amplio.",
+            "D": "Presenta la rúbrica como sanción, desconociendo su valor formativo."
+        },
+        "fuente_autorizada": [
+            "Evaluación formativa",
+            "Sistema Institucional de Evaluación de los Estudiantes",
+            "Orientaciones pedagógicas institucionales",
+            "Didáctica general"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque una rúbrica explicita criterios, niveles de desempeño y descriptores que orientan la valoración y la retroalimentación.",
+        "opcion_B": "Es incorrecta porque una rúbrica busca precisamente reducir la arbitrariedad de la impresión general.",
+        "opcion_C": "Es incorrecta porque el estándar orienta la competencia esperada, pero no reemplaza el instrumento de evaluación.",
+        "opcion_D": "Es incorrecta porque la rúbrica no es una sanción, sino un instrumento de valoración y mejora."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no exige conocer un modelo específico de rúbrica. Presenta los elementos esenciales del instrumento y evalúa su comprensión funcional."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre criterios, instrumentos y tipos de evaluación."
+    }
+}

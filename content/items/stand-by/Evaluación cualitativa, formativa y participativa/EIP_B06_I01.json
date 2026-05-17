@@ -1,0 +1,40 @@
+{
+    "id_item": "EIP_B06_I01",
+    "archivo_sugerido": "EIP_B06_I01_no_reprobacion_preescolar_evaluacion_cualitativa.json",
+    "proposito_de_uso": "Evaluar si el aspirante reconoce que en preescolar no se reprueban grados ni actividades y que la evaluación debe ser cualitativa.",
+    "blueprint": {
+        "componente_modulo": "Evaluación en preescolar",
+        "competencia": "Reconocimiento del enfoque evaluativo del nivel",
+        "afirmacion": "En preescolar los niños no reprueban grados ni actividades; la evaluación debe ser cualitativa, descriptiva y orientada al desarrollo.",
+        "evidencia_observable": "Selecciona una respuesta que evita la reprobación punitiva y propone seguimiento cualitativo.",
+        "tipo_de_evidencia": "Juicio normativo-evaluativo aplicado",
+        "dificultad_esperada": "Media-Alta",
+        "clave": "A"
+    },
+    "item": {
+        "enunciado": "Una docente propone reprobar a un niño de preescolar porque aún no alcanza algunos desempeños al mismo ritmo que sus compañeros. La coordinación le recuerda el enfoque evaluativo del nivel.\n\n¿Cuál actuación es correcta?",
+        "opciones": {
+            "A": "Realizar seguimiento cualitativo, acompañar el desarrollo y elaborar informes descriptivos, sin reprobar grados ni actividades.",
+            "B": "Aplicar reprobación automática para que el niño aprenda disciplina.",
+            "C": "Usar una prueba escrita final como único criterio.",
+            "D": "Suspenderlo de juegos y experiencias lúdicas hasta que iguale al grupo."
+        },
+        "respuesta_correcta": "A"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque el preescolar exige evaluación cualitativa, acompañamiento e informes descriptivos.",
+        "distractores": {
+            "B": "Introduce una lógica punitiva impropia del nivel.",
+            "C": "Reduce el desarrollo integral a una prueba escrita.",
+            "D": "Castiga al niño excluyéndolo de experiencias necesarias."
+        }
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado",
+        "argumento": "El ítem protege los ritmos de desarrollo y evita etiquetar a niños pequeños como fracasados."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem apto para banco con revisión normativa posterior."
+    }
+}

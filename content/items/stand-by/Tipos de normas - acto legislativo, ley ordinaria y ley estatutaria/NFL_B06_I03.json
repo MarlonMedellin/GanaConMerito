@@ -1,0 +1,98 @@
+{
+    "id_item": "NFL_B06_I03",
+    "archivo_sugerido": "NFL_B06_I03_ley_estatutaria_derechos_mecanismos_participacion.json",
+    "bloque": {
+        "codigo_bloque": "NFL_B06",
+        "nombre": "Tipos de normas: acto legislativo, ley ordinaria y ley estatutaria",
+        "estado_en_lista": "Bloque 6 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 3 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce las materias propias de ley estatutaria y su trámite reforzado.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con ciudadanía, ciencias sociales, derecho constitucional, participación democrática o normatividad educativa.",
+        "blueprint": {
+            "problematica_principal": "Creer que una ley estatutaria es simplemente una ley ordinaria con nombre especial.",
+            "fuente_autorizada": [
+                "Constitución Política de Colombia",
+                "Artículo 152 Constitución Política",
+                "Leyes estatutarias",
+                "Derechos fundamentales",
+                "Mecanismos de participación ciudadana"
+            ],
+            "componente_modulo": "Ley estatutaria",
+            "competencia": "Reconocimiento de materias de regulación estatutaria",
+            "afirmacion": "Las leyes estatutarias regulan materias especialmente protegidas, como derechos fundamentales, administración de justicia, partidos, mecanismos de participación y estados de excepción.",
+            "evidencia_observable": "Identifica que la ley estatutaria tiene materia especial y trámite reforzado.",
+            "tipo_de_evidencia": "Comprensión normativa aplicada",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "B"
+        },
+        "claim": "El evaluado comprende que ciertas materias constitucionalmente sensibles requieren una ley estatutaria y no una ley ordinaria común.",
+        "evidencia_observable": "Selecciona una explicación correcta sobre ley estatutaria.",
+        "tarea_cognitiva": "Distinguir materia estatutaria de regulación ordinaria.",
+        "tipo_de_pregunta": "Pregunta conceptual normativa",
+        "dificultad_esperada": "Media-Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir importancia política con materia estatutaria",
+                "revision": "La clave se basa en materias previstas constitucionalmente."
+            },
+            {
+                "riesgo": "Exigir listado exhaustivo",
+                "revision": "La pregunta pide reconocimiento general, no memorización completa."
+            },
+            {
+                "riesgo": "Confundir ley estatutaria con estatuto escolar",
+                "revision": "Los distractores separan la ley del ámbito escolar."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un grupo de estudiantes analiza una norma que regula derechos fundamentales y mecanismos de participación ciudadana. Preguntan si ese tipo de materia se tramita como una ley común sin requisitos especiales.\n\n¿Qué tipo de ley regula estas materias constitucionalmente sensibles?",
+        "opciones": {
+            "A": "Una circular académica.",
+            "B": "Una Ley Estatutaria.",
+            "C": "Un horario escolar.",
+            "D": "Un acta de reunión de padres."
+        },
+        "respuesta_correcta": "B"
+    },
+    "ficha_tecnica": {
+        "componente": "Ley estatutaria",
+        "competencia": "Reconocimiento de materias de regulación estatutaria",
+        "claim_evaluado": "El evaluado comprende que ciertas materias constitucionalmente sensibles requieren una ley estatutaria y no una ley ordinaria común.",
+        "evidencia": "Selecciona una explicación correcta sobre ley estatutaria.",
+        "proceso_cognitivo": "Comprensión normativa aplicada",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media-Alta",
+        "respuesta_correcta": "B",
+        "distractores": {
+            "A": "Una circular no regula materias constitucionales de esta entidad.",
+            "C": "Un horario escolar no tiene naturaleza legislativa.",
+            "D": "Un acta de reunión no es una ley."
+        },
+        "fuente_autorizada": [
+            "Constitución Política de Colombia",
+            "Artículo 152 Constitución Política",
+            "Leyes estatutarias",
+            "Derechos fundamentales"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque las leyes estatutarias regulan materias como derechos fundamentales y mecanismos de participación.",
+        "opcion_A": "Es incorrecta porque una circular no tiene alcance legislativo.",
+        "opcion_C": "Es incorrecta porque un horario escolar no regula derechos fundamentales.",
+        "opcion_D": "Es incorrecta porque un acta de reunión no es una norma legal."
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado con revisión jurídica recomendada.",
+        "argumento": "El ítem presenta la materia estatutaria de forma accesible y sin sobrecargar con procedimiento completo."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Validar con Constitución y material de apoyo usado por la prueba.",
+        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre tipos de normas."
+    }
+}

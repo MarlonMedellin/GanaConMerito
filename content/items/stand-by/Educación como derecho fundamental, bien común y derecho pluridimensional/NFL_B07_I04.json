@@ -1,0 +1,98 @@
+{
+    "id_item": "NFL_B07_I04",
+    "archivo_sugerido": "NFL_B07_I04_educacion_no_solo_servicio_administrativo.json",
+    "bloque": {
+        "codigo_bloque": "NFL_B07",
+        "nombre": "Educación como derecho fundamental, bien común y derecho pluridimensional",
+        "estado_en_lista": "Bloque 7 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 4 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante distingue la educación como derecho exigible de una simple prestación administrativa sin enfoque de derechos.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación, rectoría, gestión pública, orientación escolar o política educativa.",
+        "blueprint": {
+            "problematica_principal": "Atender reclamos educativos como trámites administrativos aislados sin valorar afectación de derechos.",
+            "fuente_autorizada": [
+                "Constitución Política de Colombia artículo 67",
+                "Ley 115 de 1994",
+                "Derecho a la educación",
+                "Función social",
+                "Enfoque de derechos"
+            ],
+            "componente_modulo": "Educación como derecho exigible",
+            "competencia": "Diferenciación entre prestación administrativa y garantía de derechos",
+            "afirmacion": "La gestión educativa debe responder con enfoque de derechos, no solo con lógica de trámite, cupo o prestación formal.",
+            "evidencia_observable": "Reconoce que barreras de acceso, permanencia, inclusión o calidad afectan el derecho a la educación.",
+            "tipo_de_evidencia": "Juicio institucional aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "B"
+        },
+        "claim": "El evaluado comprende que la institución educativa debe analizar decisiones administrativas por sus efectos sobre el derecho a la educación.",
+        "evidencia_observable": "Selecciona una respuesta institucional que valora acceso, permanencia y protección de derechos.",
+        "tarea_cognitiva": "Aplicar enfoque de derechos a una decisión administrativa educativa.",
+        "tipo_de_pregunta": "Caso situacional institucional",
+        "dificultad_esperada": "Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Ignorar barreras bajo argumento de trámite",
+                "revision": "La clave exige valoración de efectos sobre derechos."
+            },
+            {
+                "riesgo": "Desconocer límites institucionales reales",
+                "revision": "La opción correcta habla de gestionar y justificar, no de prometer imposibles."
+            },
+            {
+                "riesgo": "Tratar estudiantes como usuarios sin derechos",
+                "revision": "El ítem refuerza titularidad del derecho a la educación."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Una familia solicita apoyo porque su hijo está matriculado, pero enfrenta barreras de transporte, permanencia y participación que están afectando su trayectoria educativa. La institución responde que ya cumplió porque el cupo está asignado.\n\n¿Por qué esta respuesta es insuficiente desde el enfoque de derecho a la educación?",
+        "opciones": {
+            "A": "Porque la matrícula nunca hace parte del derecho a la educación.",
+            "B": "Porque la garantía del derecho exige analizar barreras reales de acceso, permanencia, participación, inclusión y calidad, no solo verificar un cupo administrativo.",
+            "C": "Porque la escuela debe resolver cualquier problema social sin apoyo de otros actores.",
+            "D": "Porque la educación solo importa cuando el estudiante obtiene notas altas."
+        },
+        "respuesta_correcta": "B"
+    },
+    "ficha_tecnica": {
+        "componente": "Educación como derecho exigible",
+        "competencia": "Diferenciación entre prestación administrativa y garantía de derechos",
+        "claim_evaluado": "El evaluado comprende que la institución educativa debe analizar decisiones administrativas por sus efectos sobre el derecho a la educación.",
+        "evidencia": "Selecciona una respuesta institucional que valora acceso, permanencia y protección de derechos.",
+        "proceso_cognitivo": "Juicio institucional aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Alta",
+        "respuesta_correcta": "B",
+        "distractores": {
+            "A": "Niega que la matrícula sea una condición inicial importante.",
+            "C": "Sobrecarga a la escuela sin corresponsabilidad.",
+            "D": "Reduce el derecho al rendimiento académico."
+        },
+        "fuente_autorizada": [
+            "Constitución Política de Colombia artículo 67",
+            "Ley 115 de 1994",
+            "Derecho a la educación",
+            "Función social"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque el derecho a la educación incluye condiciones efectivas de acceso, permanencia, inclusión, participación y calidad.",
+        "opcion_A": "Es incorrecta porque la matrícula sí es una dimensión inicial, pero no suficiente.",
+        "opcion_C": "Es incorrecta porque la escuela debe articular corresponsabilidad, no asumir sola todo problema social.",
+        "opcion_D": "Es incorrecta porque el derecho no depende solo de notas."
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado con revisión institucional recomendada.",
+        "argumento": "El ítem reconoce barreras reales sin trasladar toda la carga a un único actor."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Validar con ruta institucional de permanencia e inclusión.",
+        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre educación como derecho fundamental, bien común y derecho pluridimensional."
+    }
+}

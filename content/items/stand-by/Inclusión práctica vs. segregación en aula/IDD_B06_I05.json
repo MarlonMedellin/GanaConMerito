@@ -1,0 +1,99 @@
+{
+    "id_item": "IDD_B06_I05",
+    "archivo_sugerido": "IDD_B06_I05_ajustes_aula_sin_bajar_expectativas.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B06",
+        "nombre": "Inclusión práctica vs. segregación en aula",
+        "estado_en_lista": "Bloque 6 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 5 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende que los ajustes de aula deben facilitar acceso y participación sin eliminar automáticamente el propósito de aprendizaje ni reducir expectativas de manera injustificada.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión, coordinación académica, orientación escolar o apoyo pedagógico.",
+        "blueprint": {
+            "problematica_principal": "Confusión entre ajuste razonable, baja de exigencia y exclusión curricular.",
+            "fuente_autorizada": [
+                "Decreto 1421 de 2017",
+                "Ajustes razonables",
+                "DUA",
+                "PIAR",
+                "Educación inclusiva"
+            ],
+            "componente_modulo": "Ajustes de aula y expectativas de aprendizaje",
+            "competencia": "Diseño de apoyos con altas expectativas",
+            "afirmacion": "Los ajustes deben permitir acceder al aprendizaje y evidenciar progreso, sin asumir incapacidad ni eliminar metas sin análisis.",
+            "evidencia_observable": "Reconoce ajustes de acceso, tiempo, mediación, recursos o expresión que conservan el propósito formativo.",
+            "tipo_de_evidencia": "Juicio pedagógico aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "B"
+        },
+        "claim": "El evaluado comprende que ajustar no significa renunciar al aprendizaje, sino ofrecer caminos pertinentes para que el estudiante participe y demuestre lo que sabe.",
+        "evidencia_observable": "Selecciona una opción que mantiene expectativas razonables con apoyos adecuados.",
+        "tarea_cognitiva": "Diferenciar ajuste razonable de eliminación injustificada de exigencias.",
+        "tipo_de_pregunta": "Caso situacional de juicio pedagógico",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Bajar expectativas por discapacidad",
+                "revision": "La clave conserva el propósito de aprendizaje con apoyos."
+            },
+            {
+                "riesgo": "Negar apoyos en nombre de igualdad",
+                "revision": "El ítem reconoce que la igualdad real requiere ajustes."
+            },
+            {
+                "riesgo": "Desconocer ritmos diversos",
+                "revision": "La opción correcta permite flexibilidad de tiempos, recursos y expresión."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un docente debe evaluar la comprensión de un concepto en un estudiante que requiere apoyos. Duda entre eliminar por completo el aprendizaje esperado o aplicar ajustes que le permitan acceder y demostrar su comprensión de otra manera.\n\n¿Cuál decisión es más coherente con una práctica inclusiva?",
+        "opciones": {
+            "A": "Eliminar siempre el propósito de aprendizaje cuando exista una barrera.",
+            "B": "Mantener el propósito formativo y ajustar medios, tiempos, recursos, apoyos o formas de expresión para que el estudiante pueda participar y evidenciar progreso.",
+            "C": "No realizar ningún ajuste para tratar a todos exactamente igual.",
+            "D": "Asignar una actividad sin relación con el contenido y aprobarla automáticamente."
+        },
+        "respuesta_correcta": "B"
+    },
+    "ficha_tecnica": {
+        "componente": "Ajustes de aula y expectativas de aprendizaje",
+        "competencia": "Diseño de apoyos con altas expectativas",
+        "claim_evaluado": "El evaluado comprende que ajustar no significa renunciar al aprendizaje, sino ofrecer caminos pertinentes para que el estudiante participe y demuestre lo que sabe.",
+        "evidencia": "Selecciona una opción que mantiene expectativas razonables con apoyos adecuados.",
+        "proceso_cognitivo": "Juicio pedagógico aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "B",
+        "distractores": {
+            "A": "Confunde ajuste con eliminación automática del aprendizaje.",
+            "C": "Confunde igualdad con homogeneidad rígida.",
+            "D": "Aprueba una tarea desconectada sin evidencia pertinente."
+        },
+        "fuente_autorizada": [
+            "Decreto 1421 de 2017",
+            "Ajustes razonables",
+            "DUA",
+            "PIAR",
+            "Educación inclusiva"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque conserva el propósito formativo y adapta las vías de acceso, participación y expresión.",
+        "opcion_A": "Es incorrecta porque elimina expectativas sin análisis.",
+        "opcion_C": "Es incorrecta porque negar ajustes puede mantener barreras.",
+        "opcion_D": "Es incorrecta porque desconecta evaluación y aprendizaje."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem promueve expectativas educativas con apoyos y evita tanto la sobreexigencia sin ajustes como la baja injustificada de metas."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre inclusión práctica vs. segregación en aula."
+    }
+}

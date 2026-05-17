@@ -1,0 +1,103 @@
+{
+    "id_item": "PPDC_B04_I02",
+    "archivo_sugerido": "PPDC_B04_I02_metodologia_estrategia_tecnica.json",
+    "bloque": {
+        "codigo_bloque": "PPDC_B04",
+        "nombre": "Praxis pedagógica, didáctica y selección metodológica",
+        "estado_en_lista": "Bloque 4 de 7",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 2 de 2"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante diferencia jerárquica y conceptualmente una metodología general, una estrategia didáctica y una técnica de aula, para tomar decisiones pedagógicas coherentes.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
+        "blueprint": {
+            "problematica_principal": "Confusión entre metodología, estrategia didáctica y técnica en el aula.",
+            "fuente_autorizada": [
+                "Didáctica general",
+                "Metodologías activas",
+                "Planeación de aula",
+                "Orientaciones pedagógicas institucionales",
+                "Lineamientos curriculares del Ministerio de Educación Nacional"
+            ],
+            "componente_modulo": "Metodologías Activas y Selección Didáctica",
+            "competencia": "Selección metodológica y didáctica",
+            "afirmacion": "La metodología, la estrategia didáctica y la técnica tienen niveles distintos de organización de la enseñanza.",
+            "evidencia_observable": "Distingue una metodología general como marco amplio, una estrategia como organización intencional de acciones y una técnica como procedimiento puntual de aula.",
+            "tipo_de_evidencia": "Comprensión conceptual aplicada",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que una metodología orienta globalmente el enfoque de enseñanza, una estrategia didáctica organiza acciones para lograr un propósito y una técnica corresponde a un procedimiento concreto usado durante la clase.",
+        "evidencia_observable": "Selecciona la explicación que diferencia correctamente metodología, estrategia y técnica mediante ejemplos de aula.",
+        "tarea_cognitiva": "Comparar niveles de decisión didáctica y reconocer su relación jerárquica y funcional.",
+        "tipo_de_pregunta": "Pregunta conceptual comparativa",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Uso de terminología técnica",
+                "revision": "El ítem acompaña los términos con ejemplos concretos como Aprendizaje Basado en Proyectos, trabajo colaborativo y lluvia de ideas."
+            },
+            {
+                "riesgo": "Ambigüedad jerárquica",
+                "revision": "La clave establece explícitamente niveles: marco general, organización de acciones y procedimiento puntual."
+            },
+            {
+                "riesgo": "Sesgo por experiencia en metodologías activas",
+                "revision": "No exige haber aplicado una metodología específica; evalúa la diferenciación conceptual."
+            },
+            {
+                "riesgo": "Distractores demasiado teóricos",
+                "revision": "Los distractores presentan confusiones frecuentes y comprensibles en la práctica docente."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un equipo docente diseña una secuencia de aula y usa indistintamente las expresiones metodología, estrategia didáctica y técnica. La coordinación académica propone aclarar la diferencia para mejorar la planeación.\n\n¿Cuál explicación establece mejor la diferencia jerárquica y conceptual entre estos tres elementos?",
+        "opciones": {
+            "A": "La metodología es el marco general de enseñanza, como Aprendizaje Basado en Proyectos; la estrategia organiza acciones para lograr un propósito; y la técnica es un procedimiento puntual, como lluvia de ideas, debate o mapa conceptual.",
+            "B": "La metodología es una actividad corta, la estrategia es el nombre del área y la técnica corresponde al documento final de calificación.",
+            "C": "Metodología, estrategia y técnica significan lo mismo, por lo que pueden usarse sin distinción en la planeación.",
+            "D": "La técnica define los fines de la educación, la estrategia reemplaza al currículo y la metodología solo sirve para registrar asistencia."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Metodologías Activas y Selección Didáctica",
+        "competencia": "Selección metodológica y didáctica",
+        "claim_evaluado": "El evaluado comprende que una metodología orienta globalmente el enfoque de enseñanza, una estrategia didáctica organiza acciones para lograr un propósito y una técnica corresponde a un procedimiento concreto usado durante la clase.",
+        "evidencia": "Selecciona la explicación que diferencia correctamente metodología, estrategia y técnica mediante ejemplos de aula.",
+        "proceso_cognitivo": "Comparación conceptual aplicada",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Invierte y distorsiona las funciones de metodología, estrategia y técnica.",
+            "C": "Niega diferencias necesarias para la planeación didáctica.",
+            "D": "Atribuye funciones curriculares y administrativas que no corresponden a estos conceptos."
+        },
+        "fuente_autorizada": [
+            "Didáctica general",
+            "Metodologías activas",
+            "Planeación de aula",
+            "Orientaciones pedagógicas institucionales",
+            "Lineamientos curriculares del Ministerio de Educación Nacional"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque organiza los tres conceptos por nivel de decisión didáctica: metodología como marco general, estrategia como organización intencional de acciones y técnica como procedimiento puntual.",
+        "opcion_B": "Es incorrecta porque confunde los conceptos con actividades, áreas o documentos de evaluación.",
+        "opcion_C": "Es incorrecta porque metodología, estrategia y técnica no son equivalentes y su diferenciación mejora la planeación.",
+        "opcion_D": "Es incorrecta porque asigna a estos términos funciones que pertenecen a fines educativos, currículo o gestión administrativa."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no exige dominio especializado de una metodología activa específica. Proporciona ejemplos suficientes para diferenciar niveles de decisión didáctica y puede responderse desde la comprensión general de la planeación de aula."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 2 preguntas sobre praxis pedagógica, didáctica y selección metodológica."
+    }
+}

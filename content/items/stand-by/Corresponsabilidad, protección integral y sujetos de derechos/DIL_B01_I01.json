@@ -1,0 +1,97 @@
+{
+    "id_item": "DIL_B01_I01",
+    "archivo_sugerido": "DIL_B01_I01_principio_corresponsabilidad_ley_1098.json",
+    "bloque": {
+        "codigo_bloque": "DIL_B01",
+        "nombre": "Corresponsabilidad, protección integral y sujetos de derechos",
+        "estado_en_lista": "Bloque 1 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 1 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce el principio jurídico que obliga a familia, sociedad, Estado e instituciones educativas a concurrir en la garantía de derechos de niños, niñas y adolescentes.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación, rectoría, convivencia escolar o protección integral.",
+        "blueprint": {
+            "problematica_principal": "Desconocimiento de que la protección de un menor no recae en un solo actor, sino en una concurrencia de responsabilidades.",
+            "fuente_autorizada": [
+                "Ley 1098 de 2006",
+                "Constitución Política de Colombia",
+                "Convención sobre los Derechos del Niño",
+                "Sistema Nacional de Bienestar Familiar"
+            ],
+            "componente_modulo": "Derechos, Infancia y Ley 1098",
+            "competencia": "Comprensión del principio de corresponsabilidad",
+            "afirmacion": "La corresponsabilidad obliga a varios actores a concurrir en acciones para garantizar derechos de niños, niñas y adolescentes.",
+            "evidencia_observable": "Identifica la corresponsabilidad como principio jurídico aplicable a familia, sociedad, Estado y escuela.",
+            "tipo_de_evidencia": "Reconocimiento normativo aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "B"
+        },
+        "claim": "El evaluado comprende que la corresponsabilidad exige actuación conjunta y coordinada para proteger y garantizar derechos de niños, niñas y adolescentes.",
+        "evidencia_observable": "Selecciona el principio jurídico correcto ante una situación de protección de un menor.",
+        "tarea_cognitiva": "Reconocer el principio normativo que estructura la obligación conjunta de protección.",
+        "tipo_de_pregunta": "Pregunta conceptual normativa",
+        "dificultad_esperada": "Baja-Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir corresponsabilidad con responsabilidad exclusiva de la familia",
+                "revision": "La clave incluye concurrencia de varios actores."
+            },
+            {
+                "riesgo": "Desconocer el rol docente",
+                "revision": "El enunciado incorpora a docentes como parte de la garantía institucional de derechos."
+            },
+            {
+                "riesgo": "Tratar el principio como simple recomendación",
+                "revision": "La pregunta lo formula como mandato jurídico."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Una institución educativa identifica que un estudiante menor de edad requiere protección porque sus derechos pueden estar siendo vulnerados. Algunos docentes afirman que la situación solo corresponde a la familia, mientras otros recuerdan que la escuela también debe actuar y articularse con otros actores.\n\n¿Cuál es el principio jurídico de la Ley 1098 que obliga a la familia, la sociedad, el Estado y los docentes a concurrir conjuntamente para garantizar la protección del menor?",
+        "opciones": {
+            "A": "Autonomía absoluta de la familia.",
+            "B": "Corresponsabilidad.",
+            "C": "Reserva administrativa.",
+            "D": "Indiferencia institucional."
+        },
+        "respuesta_correcta": "B"
+    },
+    "ficha_tecnica": {
+        "componente": "Derechos, Infancia y Ley 1098",
+        "competencia": "Comprensión del principio de corresponsabilidad",
+        "claim_evaluado": "El evaluado comprende que la corresponsabilidad exige actuación conjunta y coordinada para proteger y garantizar derechos de niños, niñas y adolescentes.",
+        "evidencia": "Selecciona el principio jurídico correcto ante una situación de protección de un menor.",
+        "proceso_cognitivo": "Reconocimiento normativo aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Baja-Media",
+        "respuesta_correcta": "B",
+        "distractores": {
+            "A": "Traslada toda la protección a la familia y desconoce la concurrencia de actores.",
+            "C": "No corresponde al principio de garantía conjunta de derechos.",
+            "D": "Contradice el deber de protección integral."
+        },
+        "fuente_autorizada": [
+            "Ley 1098 de 2006",
+            "Constitución Política de Colombia",
+            "Convención sobre los Derechos del Niño",
+            "Sistema Nacional de Bienestar Familiar"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque la corresponsabilidad implica concurrencia de actores y acciones para garantizar derechos de niños, niñas y adolescentes.",
+        "opcion_A": "Es incorrecta porque la familia no actúa sola ni de manera absoluta.",
+        "opcion_C": "Es incorrecta porque no nombra el principio aplicable.",
+        "opcion_D": "Es incorrecta porque la indiferencia institucional vulnera el enfoque de protección integral."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem evita culpar a un solo actor y promueve actuación conjunta para proteger derechos."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 5 preguntas sobre corresponsabilidad, protección integral y sujetos de derechos."
+    }
+}

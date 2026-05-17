@@ -1,0 +1,101 @@
+{
+    "id_item": "PPDC_B03_I01",
+    "archivo_sugerido": "PPDC_B03_I01_indagacion_constructivista_fotosintesis.json",
+    "bloque": {
+        "codigo_bloque": "PPDC_B03",
+        "nombre": "Constructivismo, indagación y aprendizaje experimental",
+        "estado_en_lista": "Bloque 3 de 7",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 1 de 2"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce cómo orientar una explicación científica desde la indagación constructivista, partiendo de preguntas, evidencias y construcción progresiva del concepto.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, especialmente en ciencias naturales, básica y media.",
+        "blueprint": {
+            "problematica_principal": "Uso de preguntas científicas como oportunidad para promover indagación constructivista.",
+            "fuente_autorizada": [
+                "Lineamientos curriculares de Ciencias Naturales",
+                "Enfoque constructivista",
+                "Didáctica de las ciencias",
+                "Orientaciones pedagógicas institucionales"
+            ],
+            "componente_modulo": "Pedagogía, Didáctica y Constructivismo",
+            "competencia": "Indagación constructivista",
+            "afirmacion": "El docente debe orientar la comprensión científica mediante preguntas, evidencias, experimentación y construcción conceptual.",
+            "evidencia_observable": "Selecciona una explicación que relaciona los fotones con la absorción de energía por la clorofila y el proceso de fotosíntesis, usando una mediación didáctica basada en indagación.",
+            "tipo_de_evidencia": "Juicio didáctico y comprensión científica básica",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "B"
+        },
+        "claim": "El evaluado comprende que una pregunta científica puede convertirse en una situación de indagación cuando el docente orienta a los estudiantes a observar, formular hipótesis, relacionar evidencias y construir explicaciones.",
+        "evidencia_observable": "Identifica una explicación correcta y didácticamente pertinente sobre el papel de los fotones en la fotosíntesis.",
+        "tarea_cognitiva": "Analizar una pregunta científica escolar y seleccionar la mediación que integra explicación conceptual e indagación constructivista.",
+        "tipo_de_pregunta": "Pregunta conceptual aplicada con enfoque didáctico",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Sesgo por conocimiento disciplinar especializado",
+                "revision": "El ítem no exige bioquímica avanzada; se centra en una explicación escolar básica sobre luz, clorofila y producción de alimento en la planta."
+            },
+            {
+                "riesgo": "Ambigüedad entre explicar y memorizar",
+                "revision": "La clave no solo entrega un dato, sino que plantea una mediación con observación, preguntas y construcción conceptual."
+            },
+            {
+                "riesgo": "Sesgo por acceso a laboratorio",
+                "revision": "La opción correcta puede desarrollarse con recursos simples, como observación de plantas, preguntas orientadoras o esquemas."
+            },
+            {
+                "riesgo": "Lenguaje técnico excesivo",
+                "revision": "Se usan términos básicos como fotones, clorofila, energía, dióxido de carbono, agua, glucosa y oxígeno."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En una clase de ciencias, un estudiante pregunta cómo permiten los fotones el proceso de fotosíntesis en las plantas. El docente quiere responder desde una perspectiva de indagación constructivista, evitando que la explicación sea solo una definición para memorizar.\n\n¿Cuál intervención docente es más adecuada?",
+        "opciones": {
+            "A": "Decir que los fotones son alimento de la planta y pedir que los estudiantes memoricen esa frase para la evaluación.",
+            "B": "Guiar una indagación sobre cómo la clorofila absorbe energía de la luz, la cual permite transformar agua y dióxido de carbono en glucosa y oxígeno, apoyándose en preguntas, esquemas y evidencias.",
+            "C": "Explicar que la fotosíntesis ocurre únicamente porque las raíces absorben tierra y la convierten directamente en hojas.",
+            "D": "Evitar la pregunta porque el papel de la luz en la fotosíntesis es demasiado complejo para ser trabajado en clase."
+        },
+        "respuesta_correcta": "B"
+    },
+    "ficha_tecnica": {
+        "componente": "Pedagogía, Didáctica y Constructivismo",
+        "competencia": "Indagación constructivista",
+        "claim_evaluado": "El evaluado comprende que una pregunta científica puede convertirse en una situación de indagación cuando el docente orienta a los estudiantes a observar, formular hipótesis, relacionar evidencias y construir explicaciones.",
+        "evidencia": "Identifica una explicación correcta y didácticamente pertinente sobre el papel de los fotones en la fotosíntesis.",
+        "proceso_cognitivo": "Comprensión conceptual aplicada y juicio didáctico",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "B",
+        "distractores": {
+            "A": "Presenta una explicación científicamente incorrecta y memorística.",
+            "C": "Incluye una concepción errónea sobre la nutrición de las plantas.",
+            "D": "Evita una pregunta que podría convertirse en oportunidad de indagación."
+        },
+        "fuente_autorizada": [
+            "Lineamientos curriculares de Ciencias Naturales",
+            "Enfoque constructivista",
+            "Didáctica de las ciencias",
+            "Orientaciones pedagógicas institucionales"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque explica que los fotones aportan energía luminosa que la clorofila absorbe para impulsar transformaciones químicas en la fotosíntesis. Además, propone una mediación basada en preguntas, esquemas y evidencias.",
+        "opcion_A": "Es incorrecta porque los fotones no son alimento de la planta y la respuesta reduce el aprendizaje a memorización.",
+        "opcion_C": "Es incorrecta porque atribuye erróneamente la fotosíntesis a la transformación directa de la tierra en hojas.",
+        "opcion_D": "Es incorrecta porque evita una pregunta científica que puede abordarse didácticamente con mediación adecuada."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no exige conocimientos avanzados de física o bioquímica. Evalúa una comprensión científica escolar y una actuación didáctica basada en indagación. La situación puede trabajarse con recursos sencillos y no depende de laboratorio especializado."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 2 preguntas sobre constructivismo, indagación y aprendizaje experimental."
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "id_item": "GA02_B05_I02",
+    "archivo_sugerido": "GA02_B05_I02_curriculo_oficial.json",
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce el currículo oficial como aquel formalmente establecido y fundamentado en normas, lineamientos, estándares, orientaciones del Ministerio de Educación Nacional y decisiones institucionales expresadas en el PEI.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
+        "blueprint": {
+            "problematica_principal": "Confusión sobre la naturaleza y fundamento del currículo oficial.",
+            "fuente_autorizada": [
+                "Ley 115 de 1994",
+                "Decretos reglamentarios del sector educativo",
+                "Lineamientos curriculares del Ministerio de Educación Nacional",
+                "Proyecto Educativo Institucional"
+            ],
+            "componente_modulo": "Currículo Educativo",
+            "competencia": "Comprensión curricular",
+            "afirmacion": "El currículo oficial se fundamenta en normas, lineamientos, estándares y orientaciones institucionales formalmente adoptadas.",
+            "evidencia_observable": "Diferencia el currículo oficial de prácticas informales, improvisadas o no documentadas.",
+            "tipo_de_evidencia": "Comprensión conceptual aplicada",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que el currículo oficial corresponde a la propuesta curricular formalmente definida, documentada y sustentada en referentes normativos, pedagógicos e institucionales.",
+        "evidencia_observable": "Selecciona la definición que vincula currículo oficial con leyes, decretos, lineamientos, estándares, PEI y planes institucionales.",
+        "tarea_cognitiva": "Distinguir el currículo oficial de prácticas espontáneas, ocultas o no formalizadas.",
+        "tipo_de_pregunta": "Pregunta conceptual aplicada",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Sesgo por conocimiento jurídico especializado",
+                "revision": "El ítem no exige citar normas específicas; evalúa la comprensión general de currículo oficial."
+            },
+            {
+                "riesgo": "Ambigüedad entre currículo oficial y currículo oculto",
+                "revision": "La clave enfatiza formalidad, documentación y fundamento normativo."
+            },
+            {
+                "riesgo": "Sesgo por experiencia institucional",
+                "revision": "No exige haber participado en la formulación del currículo oficial."
+            },
+            {
+                "riesgo": "Lenguaje técnico",
+                "revision": "El término currículo oficial se explica mediante sus fuentes y función."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Una institución educativa revisa sus documentos curriculares y diferencia entre lo que está formalmente establecido en sus planes, lineamientos y acuerdos institucionales, y aquello que ocurre de manera informal en la vida cotidiana de la escuela.\n\n¿Cómo se define mejor el currículo oficial?",
+        "opciones": {
+            "A": "Como la propuesta curricular formal, documentada y fundamentada en leyes, decretos, lineamientos, estándares, orientaciones del MEN y decisiones institucionales expresadas en el PEI.",
+            "B": "Como el conjunto de aprendizajes no escritos que los estudiantes adquieren por la convivencia diaria y las prácticas culturales de la escuela.",
+            "C": "Como los contenidos planeados que nunca se enseñan por falta de tiempo, pertinencia o mediación pedagógica.",
+            "D": "Como las actividades improvisadas que cada docente decide realizar sin relación con el PEI ni con referentes normativos."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Currículo Educativo",
+        "competencia": "Comprensión curricular",
+        "claim_evaluado": "El evaluado comprende que el currículo oficial corresponde a la propuesta curricular formalmente definida, documentada y sustentada en referentes normativos, pedagógicos e institucionales.",
+        "evidencia": "Selecciona la definición que vincula currículo oficial con leyes, decretos, lineamientos, estándares, PEI y planes institucionales.",
+        "proceso_cognitivo": "Comprensión conceptual aplicada",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Describe el currículo oculto, no el currículo oficial.",
+            "C": "Describe el currículo nulo, no el currículo oficial.",
+            "D": "Describe una práctica improvisada sin sustento curricular formal."
+        },
+        "fuente_autorizada": [
+            "Ley 115 de 1994",
+            "Decretos reglamentarios del sector educativo",
+            "Lineamientos curriculares del Ministerio de Educación Nacional",
+            "Proyecto Educativo Institucional"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque el currículo oficial se caracteriza por estar formalmente documentado y sustentado en referentes normativos, pedagógicos e institucionales.",
+        "opcion_B": "Es incorrecta porque se refiere al currículo oculto, relacionado con aprendizajes implícitos de la vida escolar.",
+        "opcion_C": "Es incorrecta porque alude al currículo nulo, es decir, aquello que se planea o debería enseñarse pero no llega a desarrollarse efectivamente.",
+        "opcion_D": "Es incorrecta porque una práctica improvisada y desconectada del PEI no constituye currículo oficial."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no exige conocer documentos institucionales específicos. Evalúa la distinción general entre currículo oficial, oculto, nulo e improvisado."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre concepto y tipos de currículo."
+    }
+}

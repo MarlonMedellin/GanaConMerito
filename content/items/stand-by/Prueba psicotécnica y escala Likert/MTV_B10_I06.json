@@ -1,0 +1,40 @@
+{
+    "id_item": "MTV_B10_I06",
+    "archivo_sugerido": "MTV_B10_I06_gestion_academica_vs_gestion_comunitaria.json",
+    "proposito_de_uso": "Evaluar si el aspirante diferencia la gestión académica de la gestión comunitaria en una prueba de autoevaluación o Likert.",
+    "blueprint": {
+        "componente_modulo": "Dimensiones de evaluación docente",
+        "competencia": "Diferenciación entre gestión académica y gestión comunitaria",
+        "afirmacion": "La gestión académica se relaciona con currículo, planeación, enseñanza, evaluación y seguimiento del aprendizaje; la gestión comunitaria se relaciona con familias, entorno, participación, convivencia y relaciones con la comunidad.",
+        "evidencia_observable": "Clasifica correctamente ejemplos de actuaciones docentes en la dimensión correspondiente.",
+        "tipo_de_evidencia": "Comprensión comparativa aplicada",
+        "dificultad_esperada": "Media",
+        "clave": "C"
+    },
+    "item": {
+        "enunciado": "En una autoevaluación docente, se debe diferenciar la gestión académica de la gestión comunitaria. ¿Cuál opción presenta una diferencia correcta?",
+        "opciones": {
+            "A": "La gestión académica solo trata de reuniones con padres y la comunitaria solo de calificaciones.",
+            "B": "Ambas significan exactamente lo mismo y no se pueden diferenciar.",
+            "C": "La gestión académica se centra en currículo, planeación, enseñanza y evaluación; la gestión comunitaria en familias, entorno, participación y relación escuela-comunidad.",
+            "D": "La gestión comunitaria no hace parte del desempeño docente."
+        },
+        "respuesta_correcta": "C"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque diferencia los focos de cada dimensión de gestión.",
+        "distractores": {
+            "A": "Invierte y reduce las dimensiones.",
+            "B": "Niega diferencias funcionales claras.",
+            "D": "Desconoce el papel de la escuela en relación con su comunidad."
+        }
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado",
+        "argumento": "El ítem permite ubicar acciones profesionales sin desvalorizar ninguna dimensión."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem útil para pruebas de autoevaluación docente."
+    }
+}

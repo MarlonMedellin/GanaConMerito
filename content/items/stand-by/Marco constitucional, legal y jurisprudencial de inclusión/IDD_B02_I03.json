@@ -1,0 +1,97 @@
+{
+    "id_item": "IDD_B02_I03",
+    "archivo_sugerido": "IDD_B02_I03_sentencia_t051_cambio_paradigma_inclusion.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B02",
+        "nombre": "Marco constitucional, legal y jurisprudencial de inclusión",
+        "estado_en_lista": "Bloque 2 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 3 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende el cambio de paradigma que exige la educación inclusiva frente al modelo tradicional homogéneo.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, inclusión, coordinación o gestión académica.",
+        "blueprint": {
+            "problematica_principal": "Persistencia de un modelo escolar donde el estudiante debe adaptarse completamente a una enseñanza homogénea.",
+            "fuente_autorizada": [
+                "Sentencia T-051 de 2011",
+                "Decreto 1421 de 2017",
+                "Convención sobre los Derechos de las Personas con Discapacidad",
+                "Educación inclusiva"
+            ],
+            "componente_modulo": "Adaptación Curricular y Jurisprudencia Constitucional",
+            "competencia": "Comprensión del cambio de paradigma inclusivo",
+            "afirmacion": "La educación inclusiva exige que la escuela identifique y remueva barreras, adaptando sus prácticas para garantizar participación y aprendizaje.",
+            "evidencia_observable": "Reconoce que la escuela debe transformar ambientes, apoyos, estrategias y evaluaciones, en lugar de exigir adaptación unilateral del estudiante.",
+            "tipo_de_evidencia": "Juicio normativo-pedagógico aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que la inclusión no consiste en permitir la presencia física del estudiante, sino en garantizar su participación, aprendizaje y permanencia mediante transformaciones razonables de la escuela.",
+        "evidencia_observable": "Selecciona una formulación del cambio de paradigma desde integración pasiva hacia educación inclusiva efectiva.",
+        "tarea_cognitiva": "Analizar el cambio entre modelo tradicional e inclusión educativa.",
+        "tipo_de_pregunta": "Pregunta conceptual jurisprudencial aplicada",
+        "dificultad_esperada": "Media-Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir inclusión con simple matrícula",
+                "revision": "La clave exige participación, aprendizaje y apoyos."
+            },
+            {
+                "riesgo": "Culpabilizar al estudiante por no adaptarse",
+                "revision": "El ítem desplaza el foco hacia barreras del entorno y responsabilidades institucionales."
+            },
+            {
+                "riesgo": "Eliminar expectativas académicas",
+                "revision": "La opción correcta habla de apoyos y ajustes, no de renunciar al aprendizaje."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Una institución afirma que ya es inclusiva porque matricula estudiantes con discapacidad, aunque mantiene las mismas clases, evaluaciones, materiales y ritmos para todos, sin apoyos ni ajustes. Desde la jurisprudencia constitucional sobre educación inclusiva, se plantea que debe asumir un cambio de paradigma.\n\n¿Cuál es ese cambio fundamental?",
+        "opciones": {
+            "A": "Mantener la enseñanza igual para todos y esperar que el estudiante con discapacidad se adapte solo.",
+            "B": "Separar a los estudiantes con discapacidad para que no interfieran con el ritmo del grupo regular.",
+            "C": "Pasar de exigir adaptación unilateral del estudiante a transformar prácticas, apoyos, evaluación y ambientes para eliminar barreras y garantizar participación y aprendizaje.",
+            "D": "Eliminar todos los contenidos escolares para evitar dificultades."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Adaptación Curricular y Jurisprudencia Constitucional",
+        "competencia": "Comprensión del cambio de paradigma inclusivo",
+        "claim_evaluado": "El evaluado comprende que la inclusión no consiste en permitir la presencia física del estudiante, sino en garantizar su participación, aprendizaje y permanencia mediante transformaciones razonables de la escuela.",
+        "evidencia": "Selecciona una formulación del cambio de paradigma desde integración pasiva hacia educación inclusiva efectiva.",
+        "proceso_cognitivo": "Análisis normativo-pedagógico",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media-Alta",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Reproduce el modelo tradicional homogéneo.",
+            "B": "Propone segregación.",
+            "D": "Confunde ajuste razonable con eliminación del currículo."
+        },
+        "fuente_autorizada": [
+            "Sentencia T-051 de 2011",
+            "Decreto 1421 de 2017",
+            "Convención sobre los Derechos de las Personas con Discapacidad",
+            "Educación inclusiva"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque la inclusión exige remover barreras y ajustar prácticas para que el estudiante participe y aprenda en el ambiente común.",
+        "opcion_A": "Es incorrecta porque mantiene una exigencia unilateral sobre el estudiante.",
+        "opcion_B": "Es incorrecta porque separa y segrega.",
+        "opcion_D": "Es incorrecta porque inclusión no significa renunciar a enseñar."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem evita responsabilizar al estudiante por las barreras y evalúa la responsabilidad institucional de transformar prácticas."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión normativa y jurisprudencial posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre marco constitucional, legal y jurisprudencial de inclusión."
+    }
+}

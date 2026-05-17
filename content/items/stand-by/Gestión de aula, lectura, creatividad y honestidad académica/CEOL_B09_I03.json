@@ -1,0 +1,97 @@
+{
+    "id_item": "CEOL_B09_I03",
+    "archivo_sugerido": "CEOL_B09_I03_fomento_lectura_no_copia_internet.json",
+    "bloque": {
+        "codigo_bloque": "CEOL_B09",
+        "nombre": "Gestión de aula, lectura, creatividad y honestidad académica",
+        "estado_en_lista": "Bloque 9 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 3 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce estrategias didácticas para fomentar lectura genuina y evitar que los estudiantes resuelvan tareas copiando información de internet.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, lenguaje, lectura crítica o gestión académica.",
+        "blueprint": {
+            "problematica_principal": "Desmotivación lectora y uso de copia de internet como sustituto de comprensión.",
+            "fuente_autorizada": [
+                "Didáctica de la lectura",
+                "Competencia lectora",
+                "Evaluación formativa",
+                "Alfabetización informacional"
+            ],
+            "componente_modulo": "Fomento de la Lectura",
+            "competencia": "Promoción de lectura crítica y autónoma",
+            "afirmacion": "La lectura se fortalece cuando hay elección, propósito, conversación, producción personal, mediación y uso crítico de fuentes.",
+            "evidencia_observable": "Selecciona una estrategia que promueve lectura con sentido, voz propia y manejo responsable de información.",
+            "tipo_de_evidencia": "Juicio didáctico aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que fomentar lectura implica crear experiencias significativas y acompañadas, no solo asignar resúmenes que puedan copiarse.",
+        "evidencia_observable": "Selecciona una intervención que combina selección de textos, conversación, productos auténticos y criterios sobre fuentes.",
+        "tarea_cognitiva": "Analizar una práctica de lectura y elegir una estrategia formativa.",
+        "tipo_de_pregunta": "Caso situacional de juicio didáctico",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Sesgo por acceso a libros",
+                "revision": "La clave permite variedad de textos y mediaciones, no solo bibliotecas amplias."
+            },
+            {
+                "riesgo": "Criminalizar el uso de internet",
+                "revision": "La opción correcta promueve uso crítico de fuentes, no prohibición absoluta."
+            },
+            {
+                "riesgo": "Confundir lectura con resumen obligatorio",
+                "revision": "La clave incluye conversación, elección y producción personal."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un docente observa que muchos estudiantes entregan tareas copiadas de internet y muestran poco interés por leer los textos asignados. Quiere fomentar una relación más genuina con la lectura y desarrollar comprensión crítica.\n\n¿Qué estrategia es más adecuada?",
+        "opciones": {
+            "A": "Asignar resúmenes más largos sin acompañamiento ni conversación sobre los textos.",
+            "B": "Prohibir cualquier consulta en internet sin enseñar criterios para usar fuentes.",
+            "C": "Ofrecer textos diversos, permitir elecciones guiadas, generar conversaciones lectoras, pedir productos con voz propia y enseñar uso crítico de fuentes.",
+            "D": "Calificar solo la extensión del trabajo, aunque el contenido sea copiado."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Fomento de la Lectura",
+        "competencia": "Promoción de lectura crítica y autónoma",
+        "claim_evaluado": "El evaluado comprende que fomentar lectura implica crear experiencias significativas y acompañadas, no solo asignar resúmenes que puedan copiarse.",
+        "evidencia": "Selecciona una intervención que combina selección de textos, conversación, productos auténticos y criterios sobre fuentes.",
+        "proceso_cognitivo": "Análisis y juicio didáctico",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Aumenta la tarea mecánica sin mejorar comprensión.",
+            "B": "Prohíbe sin formar en uso crítico de información.",
+            "D": "Premia extensión y no comprensión ni autoría."
+        },
+        "fuente_autorizada": [
+            "Didáctica de la lectura",
+            "Competencia lectora",
+            "Evaluación formativa",
+            "Alfabetización informacional"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque integra motivación lectora, diversidad textual, conversación, producción propia y alfabetización informacional.",
+        "opcion_A": "Es incorrecta porque más cantidad no garantiza lectura genuina.",
+        "opcion_B": "Es incorrecta porque internet debe abordarse críticamente, no solo prohibirse.",
+        "opcion_D": "Es incorrecta porque ignora comprensión y honestidad académica."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no penaliza el acceso desigual a libros ni demoniza internet; promueve mediación y uso crítico de fuentes."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre gestión de aula, lectura, creatividad y honestidad académica."
+    }
+}

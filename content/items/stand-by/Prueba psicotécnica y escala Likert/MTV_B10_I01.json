@@ -1,0 +1,40 @@
+{
+    "id_item": "MTV_B10_I01",
+    "archivo_sugerido": "MTV_B10_I01_responder_desde_rol_normativo_docente.json",
+    "proposito_de_uso": "Evaluar si el aspirante comprende que en una prueba psicotécnica debe responder desde el rol profesional y normativo, no desde preferencias personales.",
+    "blueprint": {
+        "componente_modulo": "Actitud del servidor público docente",
+        "competencia": "Fundamentación normativa de la respuesta actitudinal",
+        "afirmacion": "Las respuestas en una escala Likert docente deben fundamentarse en el rol profesional, el manual de funciones, la ética del servidor público y las competencias esperadas.",
+        "evidencia_observable": "Selecciona la fuente de criterio profesional para responder, por encima de creencias personales o emociones momentáneas.",
+        "tipo_de_evidencia": "Comprensión psicotécnica aplicada",
+        "dificultad_esperada": "Media",
+        "clave": "B"
+    },
+    "item": {
+        "enunciado": "En una prueba psicotécnica tipo Escala Likert, a un docente se le presenta una proposición sobre atención a estudiantes con dificultades de aprendizaje. El docente duda si debe responder desde lo que personalmente prefiere o desde lo que exige su rol profesional.\n\n¿Desde qué criterio debe fundamentar principalmente su respuesta?",
+        "opciones": {
+            "A": "Desde sus gustos personales, aunque contradigan el deber docente.",
+            "B": "Desde el manual de funciones, el rol docente, la ética del servidor público y las competencias profesionales esperadas.",
+            "C": "Desde lo que haría si no existieran normas institucionales.",
+            "D": "Desde la respuesta que crea que la mayoría de personas marcaría."
+        },
+        "respuesta_correcta": "B"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque en una prueba de actitud profesional el criterio debe ser el rol funcional y ético del docente.",
+        "distractores": {
+            "A": "Reduce la respuesta a preferencias individuales.",
+            "C": "Desconoce el marco institucional y normativo.",
+            "D": "Confunde criterio profesional con imitación de una mayoría."
+        }
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado",
+        "argumento": "El ítem evalúa juicio profesional sin inducir manipulación de la prueba."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem base para explicar la lógica de respuesta en Escala Likert docente."
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id_item": "NFL_B01_I05",
+    "archivo_sugerido": "NFL_B01_I05_formacion_integral_no_solo_contenidos.json",
+    "bloque": {
+        "codigo_bloque": "NFL_B01",
+        "nombre": "Formación integral, fines de la educación y desarrollo de la personalidad",
+        "estado_en_lista": "Bloque 1 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 5 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante distingue una educación integral de una educación puramente academicista o memorística.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, currículo, pedagogía, orientación o gestión educativa.",
+        "blueprint": {
+            "problematica_principal": "Modelo escolar centrado exclusivamente en memorización de contenidos, sin desarrollo humano, ético, social y ciudadano.",
+            "fuente_autorizada": [
+                "Ley 115 de 1994",
+                "Artículo 1 Ley 115",
+                "Artículo 5 Ley 115",
+                "Artículo 92 Ley 115"
+            ],
+            "componente_modulo": "Formación integral",
+            "competencia": "Comprensión amplia del acto educativo",
+            "afirmacion": "La educación es un proceso permanente, personal, cultural y social que involucra dignidad, derechos, deberes y desarrollo humano integral.",
+            "evidencia_observable": "Reconoce que la formación integral incluye conocimientos, habilidades, valores, convivencia, participación y proyecto de vida.",
+            "tipo_de_evidencia": "Comprensión pedagógica conceptual",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "B"
+        },
+        "claim": "El evaluado comprende que la escuela debe articular saber académico con formación humana, social y ciudadana.",
+        "evidencia_observable": "Selecciona una definición de educación integral que supera la memorización de contenidos.",
+        "tarea_cognitiva": "Diferenciar un enfoque integral de un enfoque academicista reducido.",
+        "tipo_de_pregunta": "Pregunta conceptual aplicada",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Desvalorizar el conocimiento disciplinar",
+                "revision": "La clave integra conocimientos con otras dimensiones, no los elimina."
+            },
+            {
+                "riesgo": "Presentar formación integral como discurso abstracto",
+                "revision": "La opción correcta concreta habilidades y valores."
+            },
+            {
+                "riesgo": "Confundir integralidad con acumulación de actividades",
+                "revision": "El ítem centra el proceso en desarrollo humano articulado."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un establecimiento educativo obtiene buenos resultados en memorización de contenidos, pero presenta dificultades en convivencia, responsabilidad, participación, toma de decisiones y solución pacífica de conflictos. El equipo directivo reconoce que la formación integral no se agota en lo académico.\n\n¿Cuál afirmación expresa mejor esa idea?",
+        "opciones": {
+            "A": "La escuela cumple su función si los estudiantes memorizan contenidos, aunque no desarrollen habilidades sociales ni éticas.",
+            "B": "La escuela debe articular conocimientos con formación humana, ética, social, afectiva, ciudadana y comunicativa para favorecer el desarrollo integral.",
+            "C": "La formación integral exige abandonar todos los contenidos disciplinares.",
+            "D": "La convivencia y la participación son asuntos externos al proceso educativo."
+        },
+        "respuesta_correcta": "B"
+    },
+    "ficha_tecnica": {
+        "componente": "Formación integral",
+        "competencia": "Comprensión amplia del acto educativo",
+        "claim_evaluado": "El evaluado comprende que la escuela debe articular saber académico con formación humana, social y ciudadana.",
+        "evidencia": "Selecciona una definición de educación integral que supera la memorización de contenidos.",
+        "proceso_cognitivo": "Comprensión pedagógica conceptual",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "B",
+        "distractores": {
+            "A": "Reduce la educación a memorización.",
+            "C": "Crea una falsa oposición entre contenidos y formación integral.",
+            "D": "Desconoce que convivencia y participación hacen parte de la formación escolar."
+        },
+        "fuente_autorizada": [
+            "Ley 115 de 1994",
+            "Artículo 1 Ley 115",
+            "Artículo 5 Ley 115",
+            "Artículo 92 Ley 115"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque articula saber académico y desarrollo humano, ético, social y ciudadano.",
+        "opcion_A": "Es incorrecta porque la educación no se reduce a memoria.",
+        "opcion_C": "Es incorrecta porque la integralidad no elimina el conocimiento disciplinar.",
+        "opcion_D": "Es incorrecta porque convivencia y participación son dimensiones formativas."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem evita una oposición simplista entre formación académica y formación humana."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre formación integral, fines de la educación y desarrollo de la personalidad."
+    }
+}

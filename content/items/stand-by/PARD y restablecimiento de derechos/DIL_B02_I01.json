@@ -1,0 +1,97 @@
+{
+    "id_item": "DIL_B02_I01",
+    "archivo_sugerido": "DIL_B02_I01_sigla_pard_restablecimiento_derechos.json",
+    "bloque": {
+        "codigo_bloque": "DIL_B02",
+        "nombre": "PARD y restablecimiento de derechos",
+        "estado_en_lista": "Bloque 2 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 1 de 6"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante identifica correctamente el significado de la sigla PARD dentro de la ruta jurídica de protección de derechos de niños, niñas y adolescentes.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación, convivencia, infancia o protección integral.",
+        "blueprint": {
+            "problematica_principal": "Desconocimiento del significado de la sigla PARD y de su relación con derechos inobservados, amenazados o vulnerados.",
+            "fuente_autorizada": [
+                "Ley 1098 de 2006",
+                "ICBF",
+                "Proceso Administrativo de Restablecimiento de Derechos",
+                "Sistema Nacional de Bienestar Familiar"
+            ],
+            "componente_modulo": "Ruta de Restablecimiento",
+            "competencia": "Reconocimiento básico del PARD",
+            "afirmacion": "PARD significa Proceso Administrativo de Restablecimiento de Derechos.",
+            "evidencia_observable": "Identifica la sigla y su función dentro de la ruta de protección.",
+            "tipo_de_evidencia": "Reconocimiento normativo",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado reconoce el PARD como ruta formal para la restauración de derechos de niños, niñas y adolescentes.",
+        "evidencia_observable": "Selecciona el significado correcto de la sigla PARD.",
+        "tarea_cognitiva": "Reconocer una sigla jurídica básica.",
+        "tipo_de_pregunta": "Pregunta normativa de reconocimiento",
+        "dificultad_esperada": "Baja",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir PARD con una sanción disciplinaria escolar",
+                "revision": "La clave lo define como proceso administrativo de restablecimiento."
+            },
+            {
+                "riesgo": "Reducirlo a trámite interno de colegio",
+                "revision": "La fuente autorizada lo ubica en la ruta de protección."
+            },
+            {
+                "riesgo": "Usar lenguaje técnico sin contexto",
+                "revision": "El enunciado explica que se aplica a derechos vulnerados o amenazados."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En una institución educativa se detecta que un estudiante puede tener derechos inobservados, amenazados o vulnerados. El orientador menciona que podría activarse la ruta jurídica correspondiente mediante el PARD.\n\n¿Qué significa exactamente la sigla PARD?",
+        "opciones": {
+            "A": "Proceso Administrativo de Restablecimiento de Derechos.",
+            "B": "Programa Académico de Rendimiento Docente.",
+            "C": "Plan Anual de Registro Disciplinario.",
+            "D": "Procedimiento Alternativo de Revisión Didáctica."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Ruta de Restablecimiento",
+        "competencia": "Reconocimiento básico del PARD",
+        "claim_evaluado": "El evaluado reconoce el PARD como ruta formal para la restauración de derechos de niños, niñas y adolescentes.",
+        "evidencia": "Selecciona el significado correcto de la sigla PARD.",
+        "proceso_cognitivo": "Reconocimiento normativo",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Baja",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Usa palabras educativas, pero no corresponde al proceso jurídico.",
+            "C": "Confunde PARD con registro disciplinario.",
+            "D": "Introduce un procedimiento didáctico inexistente en esta ruta."
+        },
+        "fuente_autorizada": [
+            "Ley 1098 de 2006",
+            "ICBF",
+            "Proceso Administrativo de Restablecimiento de Derechos",
+            "Sistema Nacional de Bienestar Familiar"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque PARD significa Proceso Administrativo de Restablecimiento de Derechos.",
+        "opcion_B": "Es incorrecta porque no corresponde a la sigla jurídica.",
+        "opcion_C": "Es incorrecta porque el PARD no es un registro disciplinario escolar.",
+        "opcion_D": "Es incorrecta porque no existe como ruta jurídica de protección."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "Evalúa un reconocimiento básico y evita confundir protección de derechos con disciplina escolar."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 6 preguntas sobre PARD y restablecimiento de derechos."
+    }
+}

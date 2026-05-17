@@ -1,0 +1,97 @@
+{
+    "id_item": "IDD_B04_I06",
+    "archivo_sugerido": "IDD_B04_I06_dua_planeacion_multiples_representaciones_expresion.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B04",
+        "nombre": "DUA, PIAR y ajustes razonables",
+        "estado_en_lista": "Bloque 4 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 6 de 7"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante identifica los componentes de planeación curricular asociados al DUA para responder a la diversidad del aula.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, diseño curricular, inclusión, orientación escolar o coordinación académica.",
+        "blueprint": {
+            "problematica_principal": "Planeación curricular centrada en una sola forma de explicar, practicar y evaluar.",
+            "fuente_autorizada": [
+                "Diseño Universal para el Aprendizaje",
+                "Decreto 1421 de 2017",
+                "Planeación curricular inclusiva",
+                "Evaluación formativa"
+            ],
+            "componente_modulo": "Prácticas Pedagógicas DUA",
+            "competencia": "Planeación con múltiples formas de representación y expresión",
+            "afirmacion": "El maestro debe planear múltiples formas de motivación, representación, acción y expresión para responder a la diversidad del aula.",
+            "evidencia_observable": "Identifica componentes de planeación que reducen barreras y amplían formas de participación y evaluación.",
+            "tipo_de_evidencia": "Juicio didáctico aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que una planeación DUA anticipa diversidad de estudiantes, diversifica recursos y permite diferentes formas de demostrar aprendizaje sin perder el propósito común.",
+        "evidencia_observable": "Selecciona una planeación que integra recursos visuales, auditivos, manipulativos, colaborativos y diversas formas de expresión.",
+        "tarea_cognitiva": "Elegir una planeación coherente con DUA en una clase heterogénea.",
+        "tipo_de_pregunta": "Caso situacional de diseño didáctico",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir DUA con actividades desordenadas",
+                "revision": "La clave conserva propósito común y criterios."
+            },
+            {
+                "riesgo": "Equiparar accesibilidad con tecnología",
+                "revision": "La opción correcta incluye recursos variados, no solo digitales."
+            },
+            {
+                "riesgo": "Bajar expectativas",
+                "revision": "La planeación mantiene el objetivo de aprendizaje con vías diversas."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Una maestra planea una clase para un grupo heterogéneo. Sabe que algunos estudiantes comprenden mejor con apoyos visuales, otros con ejemplos orales, otros manipulando material concreto y otros expresando sus ideas mediante dibujos, mapas o explicaciones verbales.\n\n¿Qué debe integrar en su planeación curricular desde el DUA?",
+        "opciones": {
+            "A": "Una única explicación oral y una única prueba escrita para todos.",
+            "B": "Actividades diferentes sin relación entre sí ni propósito común.",
+            "C": "Múltiples formas de motivación, representación, acción y expresión, manteniendo el propósito común de aprendizaje.",
+            "D": "La eliminación de toda evaluación para evitar diferencias."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Prácticas Pedagógicas DUA",
+        "competencia": "Planeación con múltiples formas de representación y expresión",
+        "claim_evaluado": "El evaluado comprende que una planeación DUA anticipa diversidad de estudiantes, diversifica recursos y permite diferentes formas de demostrar aprendizaje sin perder el propósito común.",
+        "evidencia": "Selecciona una planeación que integra recursos visuales, auditivos, manipulativos, colaborativos y diversas formas de expresión.",
+        "proceso_cognitivo": "Diseño didáctico aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Reproduce una planeación homogénea.",
+            "B": "Pierde coherencia curricular y propósito común.",
+            "D": "Confunde flexibilidad con ausencia de evaluación."
+        },
+        "fuente_autorizada": [
+            "Diseño Universal para el Aprendizaje",
+            "Decreto 1421 de 2017",
+            "Planeación curricular inclusiva",
+            "Evaluación formativa"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque el DUA propone múltiples formas de acceso, participación y expresión dentro de un propósito común.",
+        "opcion_A": "Es incorrecta porque una única vía puede generar barreras.",
+        "opcion_B": "Es incorrecta porque la diversidad metodológica necesita coherencia.",
+        "opcion_D": "Es incorrecta porque evaluar también puede hacerse de forma flexible."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem reconoce diversidad sin separar estudiantes ni reducir expectativas de aprendizaje."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 6 de un grupo de 7 preguntas sobre DUA, PIAR y ajustes razonables."
+    }
+}

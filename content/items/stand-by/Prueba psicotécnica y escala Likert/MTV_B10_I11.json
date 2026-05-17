@@ -1,0 +1,40 @@
+{
+    "id_item": "MTV_B10_I11",
+    "archivo_sugerido": "MTV_B10_I11_respuesta_profesional_no_socialmente_deseable_vacia.json",
+    "proposito_de_uso": "Evaluar si el aspirante comprende que una respuesta adecuada debe ser profesionalmente coherente, no solo socialmente deseable o exagerada.",
+    "blueprint": {
+        "componente_modulo": "Deseabilidad social y coherencia profesional",
+        "competencia": "Respuesta ética y realista",
+        "afirmacion": "Responder profesionalmente no significa marcar siempre el extremo más favorable sin analizar la proposición, sino interpretar la conducta según el deber, la realidad del rol y la coherencia ética.",
+        "evidencia_observable": "Reconoce que los extremos deben analizarse y no elegirse mecánicamente.",
+        "tipo_de_evidencia": "Juicio psicotécnico crítico",
+        "dificultad_esperada": "Alta",
+        "clave": "C"
+    },
+    "item": {
+        "enunciado": "Un aspirante afirma: 'En una escala Likert siempre debo marcar la opción más extrema y positiva, sin leer bien el enunciado, porque eso me hace ver mejor'.\n\n¿Cuál comentario es más adecuado?",
+        "opciones": {
+            "A": "Es correcto, porque todas las proposiciones positivas se responden igual.",
+            "B": "Es correcto, porque no importa la redacción.",
+            "C": "Es incorrecto, porque se debe analizar la proposición, su polaridad, sus palabras limitantes o absolutas y su coherencia con el rol profesional.",
+            "D": "Es incorrecto únicamente si la prueba tiene muchas preguntas."
+        },
+        "respuesta_correcta": "C"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque una respuesta profesional exige lectura crítica del enunciado.",
+        "distractores": {
+            "A": "Promueve respuesta automática.",
+            "B": "Ignora la importancia de la redacción.",
+            "D": "El problema no depende del número de preguntas."
+        }
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado",
+        "argumento": "El ítem evita enseñar a fingir respuestas y promueve comprensión ética."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Recomendado para preparar lectura responsable de la escala."
+    }
+}

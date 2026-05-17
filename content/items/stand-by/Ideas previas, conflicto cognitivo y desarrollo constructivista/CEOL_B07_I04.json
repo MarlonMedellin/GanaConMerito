@@ -1,0 +1,101 @@
+{
+    "id_item": "CEOL_B07_I04",
+    "archivo_sugerido": "CEOL_B07_I04_asimilacion_ideas_previas_ser_politico.json",
+    "bloque": {
+        "codigo_bloque": "CEOL_B07",
+        "nombre": "Ideas previas, conflicto cognitivo y desarrollo constructivista",
+        "estado_en_lista": "Bloque 7 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 4 de 6"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende el papel de las ideas previas, intereses, contexto y posición del estudiante en el proceso de asimilación de nueva información.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con pedagogía, didáctica, docencia o gestión académica.",
+        "blueprint": {
+            "problematica_principal": "Desconocimiento del papel activo del estudiante en la selección e interpretación de información.",
+            "fuente_autorizada": [
+                "Epistemología genética de Piaget",
+                "Constructivismo",
+                "Aprendizaje significativo",
+                "Didáctica general"
+            ],
+            "componente_modulo": "Proceso de Asimilación",
+            "competencia": "Comprensión de procesos cognitivos constructivistas",
+            "afirmacion": "La asimilación implica incorporar información nueva a esquemas previos, mediados por experiencias, intereses, contexto y sentido para el estudiante.",
+            "evidencia_observable": "Reconoce que el estudiante no recibe pasivamente la información, sino que la interpreta desde sus esquemas y experiencias.",
+            "tipo_de_evidencia": "Comprensión conceptual aplicada",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "B"
+        },
+        "claim": "El evaluado comprende que el proceso de asimilación depende de los esquemas previos del estudiante y de la manera como este da sentido a la información nueva desde su experiencia personal, social y cultural.",
+        "evidencia_observable": "Selecciona una explicación que relaciona ideas previas, contexto, sentido e incorporación de nueva información.",
+        "tarea_cognitiva": "Interpretar el concepto de asimilación en una situación de aula.",
+        "tipo_de_pregunta": "Pregunta conceptual aplicada",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Uso ambiguo de la expresión ser político",
+                "revision": "El ítem la traduce como sujeto situado, con intereses, experiencias, contexto y capacidad de interpretar."
+            },
+            {
+                "riesgo": "Confundir asimilación con obediencia",
+                "revision": "La clave diferencia incorporar información con sentido de aceptar datos pasivamente."
+            },
+            {
+                "riesgo": "Sesgo cultural",
+                "revision": "Reconoce el contexto del estudiante sin convertirlo en déficit."
+            },
+            {
+                "riesgo": "Lenguaje teórico",
+                "revision": "La pregunta contextualiza el concepto en una clase concreta."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Durante una clase, el docente presenta nueva información sobre un problema social. Los estudiantes no la reciben de la misma manera: algunos la relacionan con experiencias familiares, otros con noticias del barrio y otros con ideas previas construidas en su comunidad. El docente reconoce que cada estudiante es un sujeto situado, con historia, intereses y formas propias de interpretar.\n\n¿Qué papel juegan esas ideas previas y ese carácter situado del estudiante en el proceso de asimilación?",
+        "opciones": {
+            "A": "No tienen ningún papel, porque todos los estudiantes incorporan la información exactamente igual.",
+            "B": "Actúan como esquemas desde los cuales el estudiante selecciona, interpreta e incorpora la nueva información con sentido.",
+            "C": "Impiden cualquier aprendizaje, porque las ideas previas siempre deben eliminarse antes de enseñar.",
+            "D": "Hacen innecesaria la mediación docente, porque cada estudiante aprende solo lo que quiere."
+        },
+        "respuesta_correcta": "B"
+    },
+    "ficha_tecnica": {
+        "componente": "Proceso de Asimilación",
+        "competencia": "Comprensión de procesos cognitivos constructivistas",
+        "claim_evaluado": "El evaluado comprende que el proceso de asimilación depende de los esquemas previos del estudiante y de la manera como este da sentido a la información nueva desde su experiencia personal, social y cultural.",
+        "evidencia": "Selecciona una explicación que relaciona ideas previas, contexto, sentido e incorporación de nueva información.",
+        "proceso_cognitivo": "Comprensión conceptual aplicada",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "B",
+        "distractores": {
+            "A": "Niega el papel de los esquemas previos.",
+            "C": "Presenta las ideas previas solo como obstáculo y no como punto de partida.",
+            "D": "Confunde aprendizaje activo con ausencia de mediación docente."
+        },
+        "fuente_autorizada": [
+            "Epistemología genética de Piaget",
+            "Constructivismo",
+            "Aprendizaje significativo",
+            "Didáctica general"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque la asimilación implica incorporar información nueva a esquemas previos, desde los cuales el estudiante interpreta y da sentido.",
+        "opcion_A": "Es incorrecta porque desconoce la diversidad de experiencias y esquemas cognitivos.",
+        "opcion_C": "Es incorrecta porque las ideas previas no se eliminan mecánicamente; se exploran y se transforman.",
+        "opcion_D": "Es incorrecta porque la actividad del estudiante no elimina la necesidad de mediación."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem reconoce la diversidad de contextos e ideas previas sin estigmatizarlas. Evalúa una comprensión constructivista del aprendizaje."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 6 preguntas sobre ideas previas, conflicto cognitivo y desarrollo constructivista."
+    }
+}

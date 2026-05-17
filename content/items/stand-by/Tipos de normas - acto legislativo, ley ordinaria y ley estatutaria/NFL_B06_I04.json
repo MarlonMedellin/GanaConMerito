@@ -1,0 +1,98 @@
+{
+    "id_item": "NFL_B06_I04",
+    "archivo_sugerido": "NFL_B06_I04_ley_ordinaria_materias_generales_unidad_materia.json",
+    "bloque": {
+        "codigo_bloque": "NFL_B06",
+        "nombre": "Tipos de normas: acto legislativo, ley ordinaria y ley estatutaria",
+        "estado_en_lista": "Bloque 6 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 4 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante identifica la ley ordinaria como norma legislativa general y comprende que debe respetar unidad de materia.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con ciudadanía, ciencias sociales, derecho constitucional, normatividad educativa o gestión pública.",
+        "blueprint": {
+            "problematica_principal": "Confundir ley ordinaria con reforma constitucional o ley estatutaria.",
+            "fuente_autorizada": [
+                "Constitución Política de Colombia",
+                "Artículo 158 Constitución Política",
+                "Régimen legislativo colombiano",
+                "Ley ordinaria",
+                "Unidad de materia"
+            ],
+            "componente_modulo": "Ley ordinaria y unidad de materia",
+            "competencia": "Comprensión de legislación general",
+            "afirmacion": "La ley ordinaria regula materias generales mediante trámite común y debe respetar el principio de unidad de materia.",
+            "evidencia_observable": "Reconoce que la ley ordinaria no reforma la Constitución ni regula materias reservadas a estatutaria cuando aplica reserva especial.",
+            "tipo_de_evidencia": "Comprensión normativa comparativa",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende el alcance general de la ley ordinaria y su diferencia frente a normas de trámite especial.",
+        "evidencia_observable": "Selecciona una descripción correcta de ley ordinaria y unidad de materia.",
+        "tarea_cognitiva": "Clasificar una norma legislativa según su materia y trámite.",
+        "tipo_de_pregunta": "Pregunta conceptual normativa",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir ley ordinaria con cualquier norma inferior",
+                "revision": "La clave la ubica como ley del Congreso."
+            },
+            {
+                "riesgo": "Omitir unidad de materia",
+                "revision": "La opción correcta incluye relación temática del proyecto."
+            },
+            {
+                "riesgo": "Exigir detalle de procedimiento legislativo",
+                "revision": "El ítem se centra en función general."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En una discusión sobre normatividad, un estudiante afirma que una ley ordinaria puede reformar la Constitución y regular cualquier materia sin límite temático. El docente corrige la afirmación.\n\n¿Cuál explicación es más adecuada?",
+        "opciones": {
+            "A": "La ley ordinaria reforma la Constitución por trámite especial.",
+            "B": "La ley ordinaria es un simple documento interno de cada colegio.",
+            "C": "La ley ordinaria regula materias generales mediante trámite legislativo común y debe respetar la unidad de materia; no sustituye el acto legislativo ni la ley estatutaria cuando hay reserva especial.",
+            "D": "La ley ordinaria solo sirve para aprobar calendarios académicos institucionales."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Ley ordinaria y unidad de materia",
+        "competencia": "Comprensión de legislación general",
+        "claim_evaluado": "El evaluado comprende el alcance general de la ley ordinaria y su diferencia frente a normas de trámite especial.",
+        "evidencia": "Selecciona una descripción correcta de ley ordinaria y unidad de materia.",
+        "proceso_cognitivo": "Comprensión normativa comparativa",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Confunde ley ordinaria con acto legislativo.",
+            "B": "Confunde ley del Congreso con documento institucional escolar.",
+            "D": "Reduce indebidamente su alcance a un trámite escolar."
+        },
+        "fuente_autorizada": [
+            "Constitución Política de Colombia",
+            "Artículo 158 Constitución Política",
+            "Régimen legislativo colombiano",
+            "Ley ordinaria"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque la ley ordinaria regula materias generales, respeta unidad de materia y no reemplaza procedimientos especiales.",
+        "opcion_A": "Es incorrecta porque la reforma constitucional corresponde a mecanismos como el acto legislativo.",
+        "opcion_B": "Es incorrecta porque una ley ordinaria es una norma expedida por el legislador, no un documento escolar interno.",
+        "opcion_D": "Es incorrecta porque su alcance no se limita a calendarios académicos."
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado con revisión jurídica recomendada.",
+        "argumento": "El ítem evalúa comprensión normativa general sin requerir conocimiento técnico avanzado del trámite legislativo."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Validar con Constitución y guía jurídica usada en la prueba.",
+        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre tipos de normas."
+    }
+}

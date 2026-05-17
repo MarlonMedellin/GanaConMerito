@@ -1,0 +1,98 @@
+{
+    "id_item": "CB07_I01",
+    "bloque": {
+        "numero": 7,
+        "nombre": "Responsabilidad legal",
+        "estado_en_lista": "Bloque 7 de 15",
+        "decision_del_bloque": "Pregunta única",
+        "item_en_grupo": "Ítem 1 de 1"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce que la omisión frente a una situación de riesgo conocida puede comprometer la responsabilidad profesional, funcional o institucional del docente o directivo.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
+        "blueprint": {
+            "problematica_principal": "Omisión frente a riesgo estudiantil",
+            "fuente_autorizada": [
+                "Constitución Política de Colombia, artículo 6",
+                "Normativa sobre responsabilidad de servidores públicos",
+                "Rutas institucionales de atención y protección escolar"
+            ],
+            "componente_modulo": "Responsabilidad docente",
+            "competencia": "Debido cuidado",
+            "afirmacion": "La omisión genera falta.",
+            "evidencia_observable": "Reconoce que no actuar ante un riesgo conocido puede comprometer la responsabilidad institucional o funcional.",
+            "tipo_de_evidencia": "Interpretación de situación institucional",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "B"
+        },
+        "claim": "El evaluado comprende que la responsabilidad docente y directiva incluye actuar oportunamente ante riesgos conocidos para estudiantes, activando los canales institucionales correspondientes.",
+        "evidencia_observable": "Selecciona una valoración que identifica la omisión como actuación inadecuada frente a un riesgo conocido.",
+        "tarea_cognitiva": "Analizar un caso de riesgo y seleccionar la actuación compatible con el deber de cuidado.",
+        "tipo_de_pregunta": "Caso situacional de juicio profesional",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Sesgo por conocimiento jurídico especializado",
+                "revision": "El ítem no exige citar normas ni artículos específicos; evalúa el principio general de deber de cuidado."
+            },
+            {
+                "riesgo": "Ambigüedad sobre la responsabilidad del docente",
+                "revision": "La situación describe un riesgo reiterado y conocido, lo que justifica la activación de canales institucionales."
+            },
+            {
+                "riesgo": "Culpabilización de la familia",
+                "revision": "El ítem evita trasladar la responsabilidad exclusivamente a la familia y se centra en la actuación institucional."
+            },
+            {
+                "riesgo": "Carga emocional del caso",
+                "revision": "El caso plantea una situación de riesgo sin detalles gráficos ni innecesarios."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un docente observa que un estudiante ha recibido amenazas reiteradas de otros compañeros y registra cambios notorios en su comportamiento. Decide no informar la situación porque considera que no quiere involucrarse en problemas familiares o disciplinarios.\n\n¿Cuál valoración es más adecuada?",
+        "opciones": {
+            "A": "La decisión es adecuada, porque el docente solo responde por lo que ocurre durante su clase.",
+            "B": "La decisión puede constituir una omisión, porque ante un riesgo conocido debe activar los canales institucionales correspondientes.",
+            "C": "La decisión es correcta si el estudiante no presenta una queja escrita formal.",
+            "D": "La decisión corresponde exclusivamente a la familia, por lo que la institución no debe intervenir."
+        },
+        "respuesta_correcta": "B"
+    },
+    "ficha_tecnica": {
+        "componente": "Responsabilidad docente",
+        "competencia": "Debido cuidado",
+        "claim_evaluado": "El evaluado comprende que la responsabilidad docente y directiva incluye actuar oportunamente ante riesgos conocidos para estudiantes, activando los canales institucionales correspondientes.",
+        "evidencia": "Selecciona una valoración que identifica la omisión como actuación inadecuada frente a un riesgo conocido.",
+        "proceso_cognitivo": "Análisis y juicio profesional",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "B",
+        "distractores": {
+            "A": "Limita indebidamente el deber de cuidado al tiempo de clase.",
+            "C": "Exige una formalidad que no es condición para actuar ante una situación de riesgo.",
+            "D": "Traslada la responsabilidad institucional exclusivamente a la familia."
+        },
+        "fuente_autorizada": [
+            "Constitución Política de Colombia, artículo 6",
+            "Normativa sobre responsabilidad de servidores públicos",
+            "Rutas institucionales de atención y protección escolar"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque identifica que la inacción frente a un riesgo conocido puede constituir una omisión. El deber profesional exige informar o activar los canales institucionales correspondientes para proteger al estudiante.",
+        "opcion_A": "Es incorrecta porque reduce la responsabilidad docente únicamente al espacio de clase, desconociendo el deber de cuidado frente a situaciones conocidas que afectan al estudiante.",
+        "opcion_C": "Es incorrecta porque la activación institucional no depende exclusivamente de que el estudiante presente una queja escrita formal.",
+        "opcion_D": "Es incorrecta porque la familia puede tener un papel relevante, pero la institución conserva responsabilidades de prevención, protección y atención."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El caso no exige conocimientos jurídicos especializados ni experiencia previa en procesos disciplinarios. Evalúa una responsabilidad profesional básica: actuar ante señales de riesgo conocidas y activar los canales institucionales. Además, evita culpabilizar al estudiante o a su familia."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como pregunta única del bloque Responsabilidad legal."
+    }
+}

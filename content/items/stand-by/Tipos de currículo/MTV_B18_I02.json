@@ -1,0 +1,36 @@
+{
+    "id_item": "MTV_B18_I02",
+    "archivo_sugerido": "MTV_B18_I02_curriculo_oficial_leyes_decretos_lineamientos.json",
+    "proposito_de_uso": "Evaluar si el aspirante reconoce el currículo oficial.",
+    "blueprint": {
+        "componente_modulo": "Currículo oficial",
+        "competencia": "Reconocimiento de fuentes normativas del currículo",
+        "afirmacion": "El currículo oficial está constituido por leyes, decretos, lineamientos, estándares, orientaciones y disposiciones formales del sistema educativo.",
+        "evidencia_observable": "Identifica el currículo oficial cuando se habla de mandatos del Ministerio de Educación y normas vigentes.",
+        "tipo_de_evidencia": "Reconocimiento normativo",
+        "dificultad_esperada": "Media",
+        "clave": "A"
+    },
+    "item": {
+        "enunciado": "Una institución organiza sus planes atendiendo leyes, decretos, lineamientos, estándares y orientaciones emitidas por el Ministerio de Educación y demás autoridades competentes.\n\n¿De qué tipo de currículo se está hablando principalmente?",
+        "opciones": {
+            "A": "Currículo oficial.",
+            "B": "Currículo oculto exclusivamente emocional.",
+            "C": "Currículo nulo.",
+            "D": "Currículo improvisado sin norma."
+        },
+        "respuesta_correcta": "A"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque el currículo oficial se fundamenta en normas y orientaciones formales.",
+        "distractores": {
+            "B": "El currículo oculto no se define por normas oficiales.",
+            "C": "El currículo nulo se refiere a contenidos omitidos.",
+            "D": "La situación describe regulación formal, no improvisación."
+        }
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem claro para currículo oficial."
+    }
+}

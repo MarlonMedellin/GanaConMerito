@@ -1,0 +1,96 @@
+{
+    "id_item": "EIP_B01_I02",
+    "archivo_sugerido": "EIP_B01_I02_transversalidad_no_asignatura_aislada.json",
+    "bloque": {
+        "codigo_bloque": "EIP_B01",
+        "nombre": "Currículo obligatorio y proyectos pedagógicos transversales",
+        "estado_en_lista": "Bloque 1 de 7",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 2 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende que los proyectos pedagógicos transversales deben integrarse al currículo y a la vida institucional, no reducirse a celebraciones aisladas.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, currículo, planeación, coordinación académica o gestión escolar.",
+        "blueprint": {
+            "problematica_principal": "Implementar los proyectos transversales como eventos aislados sin articulación con las áreas, el PEI o la práctica pedagógica.",
+            "fuente_autorizada": [
+                "Ley 115 de 1994",
+                "Artículo 14 Ley 115",
+                "Proyecto Educativo Institucional",
+                "Currículo integrado"
+            ],
+            "componente_modulo": "Transversalidad curricular",
+            "competencia": "Diseño curricular integrado",
+            "afirmacion": "Los proyectos transversales deben permear áreas, ambientes escolares, proyectos institucionales y prácticas pedagógicas.",
+            "evidencia_observable": "Distingue una implementación transversal de una actividad ocasional sin seguimiento.",
+            "tipo_de_evidencia": "Juicio pedagógico-curricular aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que la transversalidad exige integración curricular, continuidad y coherencia institucional.",
+        "evidencia_observable": "Selecciona la opción que integra los proyectos obligatorios al PEI, las áreas y la vida escolar.",
+        "tarea_cognitiva": "Analizar una práctica institucional y valorar su coherencia curricular.",
+        "tipo_de_pregunta": "Caso situacional curricular",
+        "dificultad_esperada": "Media-Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir transversalidad con celebración anual",
+                "revision": "La clave exige integración y continuidad."
+            },
+            {
+                "riesgo": "Sobrecargar al docente con proyectos desconectados",
+                "revision": "La respuesta correcta plantea articulación curricular."
+            },
+            {
+                "riesgo": "Reducir proyectos transversales a carteleras",
+                "revision": "El ítem exige práctica pedagógica real."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un colegio afirma que cumple los proyectos pedagógicos transversales porque realiza una cartelera de medio ambiente en abril, una izada de bandera sobre democracia y una charla aislada de educación sexual al final del año.\n\n¿Qué ajuste sería más coherente con el sentido curricular del artículo 14 de la Ley 115?",
+        "opciones": {
+            "A": "Integrar esos proyectos al PEI, a las áreas, a las prácticas de aula y a la vida institucional mediante acciones continuas, articuladas y evaluables.",
+            "B": "Mantenerlos como celebraciones aisladas, porque la transversalidad significa trabajar una vez al año.",
+            "C": "Eliminar los proyectos transversales porque no hacen parte del currículo obligatorio.",
+            "D": "Convertir cada proyecto en castigo disciplinario para los estudiantes con bajo rendimiento."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Transversalidad curricular",
+        "competencia": "Diseño curricular integrado",
+        "claim_evaluado": "El evaluado comprende que la transversalidad exige integración curricular, continuidad y coherencia institucional.",
+        "evidencia": "Selecciona la opción que integra los proyectos obligatorios al PEI, las áreas y la vida escolar.",
+        "proceso_cognitivo": "Juicio pedagógico-curricular aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media-Alta",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Reduce la transversalidad a eventos puntuales.",
+            "C": "Desconoce el carácter obligatorio de estas enseñanzas.",
+            "D": "Confunde proyecto pedagógico con sanción disciplinaria."
+        },
+        "fuente_autorizada": [
+            "Ley 115 de 1994",
+            "Artículo 14 Ley 115",
+            "Proyecto Educativo Institucional"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque la transversalidad exige continuidad, integración curricular y coherencia institucional.",
+        "opcion_B": "Es incorrecta porque una celebración aislada no garantiza formación transversal.",
+        "opcion_C": "Es incorrecta porque el artículo 14 establece enseñanzas obligatorias.",
+        "opcion_D": "Es incorrecta porque los proyectos transversales tienen finalidad formativa, no punitiva."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem evita convertir la transversalidad en carga fragmentada o en actividad simbólica sin impacto pedagógico."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión curricular institucional posterior.",
+        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 5 preguntas sobre currículo obligatorio y proyectos pedagógicos transversales."
+    }
+}

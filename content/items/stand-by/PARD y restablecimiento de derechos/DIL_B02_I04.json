@@ -1,0 +1,99 @@
+{
+    "id_item": "DIL_B02_I04",
+    "archivo_sugerido": "DIL_B02_I04_duracion_total_pard_con_seguimiento_18_meses.json",
+    "bloque": {
+        "codigo_bloque": "DIL_B02",
+        "nombre": "PARD y restablecimiento de derechos",
+        "estado_en_lista": "Bloque 2 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 4 de 6"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante diferencia el término de definición de situación jurídica del término global del PARD con seguimiento.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con infancia, protección integral, orientación escolar o gestión institucional.",
+        "blueprint": {
+            "problematica_principal": "Confusión entre distintos tiempos del PARD y su seguimiento.",
+            "fuente_autorizada": [
+                "Ley 1098 de 2006",
+                "Ley 1878 de 2018",
+                "Artículo 208 Ley 1955 de 2019",
+                "ICBF",
+                "PARD"
+            ],
+            "componente_modulo": "Duración del PARD con seguimiento",
+            "competencia": "Diferenciación de etapas y tiempos del proceso",
+            "afirmacion": "El PARD con seguimiento tiene un límite temporal distinto al de la definición inicial de situación jurídica.",
+            "evidencia_observable": "Identifica el plazo de 18 meses para el proceso con seguimiento.",
+            "tipo_de_evidencia": "Reconocimiento normativo aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que los tiempos del PARD deben diferenciarse para evitar demoras y confusiones procedimentales.",
+        "evidencia_observable": "Selecciona el plazo correspondiente al proceso con seguimiento.",
+        "tarea_cognitiva": "Diferenciar un plazo global del proceso frente a la decisión inicial.",
+        "tipo_de_pregunta": "Pregunta normativa comparativa",
+        "dificultad_esperada": "Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir 6 meses con 18 meses",
+                "revision": "El enunciado especifica PARD con seguimiento."
+            },
+            {
+                "riesgo": "Aplicar el dato sin revisión de vigencia",
+                "revision": "El dictamen exige revisión normativa."
+            },
+            {
+                "riesgo": "Transformar un plazo jurídico en respuesta pedagógica improvisada",
+                "revision": "El ítem se limita al reconocimiento del término."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En una capacitación sobre restablecimiento de derechos se aclara que no es lo mismo el término para definir la situación jurídica inicial que la duración total del PARD con seguimiento.\n\n¿Cuál es el límite temporal, en meses, asociado al PARD con seguimiento?",
+        "opciones": {
+            "A": "3 meses.",
+            "B": "6 meses.",
+            "C": "18 meses.",
+            "D": "48 meses."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Duración del PARD con seguimiento",
+        "competencia": "Diferenciación de etapas y tiempos del proceso",
+        "claim_evaluado": "El evaluado comprende que los tiempos del PARD deben diferenciarse para evitar demoras y confusiones procedimentales.",
+        "evidencia": "Selecciona el plazo correspondiente al proceso con seguimiento.",
+        "proceso_cognitivo": "Reconocimiento normativo comparativo",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Alta",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Reduce excesivamente el plazo y no corresponde al dato solicitado.",
+            "B": "Corresponde al término de definición jurídica inicial, no al proceso con seguimiento.",
+            "D": "Extiende indebidamente el proceso."
+        },
+        "fuente_autorizada": [
+            "Ley 1098 de 2006",
+            "Ley 1878 de 2018",
+            "Artículo 208 Ley 1955 de 2019",
+            "ICBF",
+            "PARD"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque el PARD con seguimiento se asocia al término de 18 meses.",
+        "opcion_A": "Es incorrecta porque no corresponde al término citado.",
+        "opcion_B": "Es incorrecta para esta pregunta porque alude a la definición jurídica inicial.",
+        "opcion_D": "Es incorrecta porque prolonga el proceso de forma contraria al interés superior."
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado con revisión normativa obligatoria.",
+        "argumento": "El ítem trata un plazo técnico que debe verificarse antes de uso definitivo."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado con revisión normativa obligatoria",
+        "observacion": "Validar la vigencia exacta del plazo y su fuente normativa antes de banco definitivo.",
+        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 6 preguntas sobre PARD y restablecimiento de derechos."
+    }
+}

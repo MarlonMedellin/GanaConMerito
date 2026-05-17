@@ -1,0 +1,99 @@
+{
+    "id_item": "IDD_B17_I01",
+    "archivo_sugerido": "IDD_B17_I01_hindenburg_introduccion_cronologia.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B17",
+        "nombre": "Aptitud verbal y organización textual",
+        "estado_en_lista": "Bloque 17 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 1 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante identifica el párrafo introductorio de un texto a partir de marcas cronológicas y función de enganche.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con comprensión lectora, aptitud verbal, docencia o pruebas de selección.",
+        "blueprint": {
+            "problematica_principal": "Dificultad para ordenar párrafos cuando un texto presenta eventos históricos o secuencias cronológicas.",
+            "fuente_autorizada": [
+                "Comprensión lectora",
+                "Organización textual",
+                "Coherencia y cohesión",
+                "Secuencia cronológica",
+                "Aptitud verbal"
+            ],
+            "componente_modulo": "Concatenación y cronología",
+            "competencia": "Organización secuencial de textos",
+            "afirmacion": "El lector debe identificar marcas temporales, función introductoria y progresión de hechos para ordenar un texto.",
+            "evidencia_observable": "Reconoce que una fecha histórica puede funcionar como punto de entrada o enganche para iniciar la secuencia.",
+            "tipo_de_evidencia": "Juicio textual aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que la introducción de un texto histórico suele presentar el hecho central, la fecha o el contexto inicial desde el cual se organiza la información posterior.",
+        "evidencia_observable": "Selecciona el criterio que permite reconocer el párrafo introductorio en un texto sobre el accidente del dirigible Hindenburg.",
+        "tarea_cognitiva": "Identificar función introductoria y marca temporal en una secuencia textual.",
+        "tipo_de_pregunta": "Pregunta de organización textual",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Exigir conocimiento histórico externo sobre el Hindenburg",
+                "revision": "El ítem evalúa organización textual, no memoria histórica."
+            },
+            {
+                "riesgo": "Confundir fecha con cierre",
+                "revision": "La clave enfatiza que la fecha inicial contextualiza y abre la secuencia."
+            },
+            {
+                "riesgo": "Resolver por dato aislado",
+                "revision": "La opción correcta exige relacionar fecha, presentación del hecho y función introductoria."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En un ejercicio de organización textual sobre el accidente del dirigible Hindenburg, aparecen varios párrafos desordenados. Uno de ellos presenta una fecha histórica, el hecho central y el contexto general del accidente.\n\n¿Cómo se determina cuál párrafo funciona como introducción o enganche del texto?",
+        "opciones": {
+            "A": "Identificando el párrafo que presenta la fecha o contexto inicial del hecho histórico y abre la secuencia de acontecimientos.",
+            "B": "Escogiendo el párrafo que contiene la mayor cantidad de detalles técnicos, aunque no presente el tema.",
+            "C": "Seleccionando el párrafo que contiene la conclusión o valoración final del accidente.",
+            "D": "Eligiendo cualquier párrafo, porque en los textos históricos el orden no depende de la cronología."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Concatenación y cronología",
+        "competencia": "Organización secuencial de textos",
+        "claim_evaluado": "El evaluado comprende que la introducción de un texto histórico suele presentar el hecho central, la fecha o el contexto inicial desde el cual se organiza la información posterior.",
+        "evidencia": "Selecciona el criterio que permite reconocer el párrafo introductorio en un texto sobre el accidente del dirigible Hindenburg.",
+        "proceso_cognitivo": "Análisis textual",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Confunde detalle técnico con función introductoria.",
+            "C": "Confunde introducción con cierre.",
+            "D": "Niega la importancia de la cronología en textos históricos."
+        },
+        "fuente_autorizada": [
+            "Comprensión lectora",
+            "Organización textual",
+            "Coherencia y cohesión",
+            "Secuencia cronológica",
+            "Aptitud verbal"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque la introducción suele ubicar al lector en el tiempo, el hecho central y el contexto inicial.",
+        "opcion_B": "Es incorrecta porque el detalle técnico puede aparecer en el desarrollo.",
+        "opcion_C": "Es incorrecta porque la conclusión no introduce la secuencia.",
+        "opcion_D": "Es incorrecta porque la cronología sí orienta la organización del texto."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no exige saber histórico previo; evalúa marcas textuales y función de párrafo."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 5 preguntas sobre aptitud verbal y organización textual."
+    }
+}

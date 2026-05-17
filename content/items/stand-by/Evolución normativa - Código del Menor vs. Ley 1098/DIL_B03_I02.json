@@ -1,0 +1,97 @@
+{
+    "id_item": "DIL_B03_I02",
+    "archivo_sugerido": "DIL_B03_I02_situacion_irregular_codigo_menor.json",
+    "bloque": {
+        "codigo_bloque": "DIL_B03",
+        "nombre": "Evolución normativa: Código del Menor vs. Ley 1098",
+        "estado_en_lista": "Bloque 3 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 2 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende qué implicaba el enfoque de situación irregular en el antiguo Código del Menor.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con infancia, docencia, orientación, convivencia o protección integral.",
+        "blueprint": {
+            "problematica_principal": "Desconocimiento del significado jurídico-histórico de la situación irregular.",
+            "fuente_autorizada": [
+                "Decreto 2737 de 1989",
+                "Código del Menor",
+                "Historia normativa de infancia",
+                "Protección de menores"
+            ],
+            "componente_modulo": "Código del Menor y situación irregular",
+            "competencia": "Comprensión del paradigma tutelar",
+            "afirmacion": "El enfoque de situación irregular intervenía principalmente cuando el menor era ubicado en condiciones de abandono, peligro, infracción o carencia de protección.",
+            "evidencia_observable": "Reconoce que el antiguo enfoque se activaba sobre categorías de irregularidad, no sobre titularidad universal plena de derechos.",
+            "tipo_de_evidencia": "Comprensión normativa histórica",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que el antiguo paradigma tutelar miraba al menor desde situaciones problemáticas específicas y no desde un enfoque universal de derechos.",
+        "evidencia_observable": "Selecciona la interpretación correcta de la situación irregular.",
+        "tarea_cognitiva": "Interpretar un concepto histórico-jurídico.",
+        "tipo_de_pregunta": "Pregunta conceptual histórica",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Usar el término menor de forma acrítica",
+                "revision": "El ítem lo usa como categoría histórica del Código del Menor."
+            },
+            {
+                "riesgo": "Convertir situación irregular en etiqueta actual",
+                "revision": "Se aclara que corresponde al enfoque antiguo."
+            },
+            {
+                "riesgo": "Culpar al niño por su condición de vulneración",
+                "revision": "La clave describe la categoría jurídica, no atribuye culpa."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En una clase de legislación educativa se explica que el antiguo Código del Menor trabajaba con la noción de situación irregular.\n\n¿Qué significaba principalmente ese enfoque?",
+        "opciones": {
+            "A": "Que la intervención se centraba en menores ubicados en condiciones como abandono, peligro, carencia de protección o infracción, desde una lógica tutelar.",
+            "B": "Que todos los niños eran reconocidos de forma expresa como sujetos plenos de derechos en igualdad de condiciones.",
+            "C": "Que la escuela no tenía ninguna obligación frente a la protección de menores.",
+            "D": "Que los niños podían decidir sin acompañamiento cualquier asunto jurídico."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Código del Menor y situación irregular",
+        "competencia": "Comprensión del paradigma tutelar",
+        "claim_evaluado": "El evaluado comprende que el antiguo paradigma tutelar miraba al menor desde situaciones problemáticas específicas y no desde un enfoque universal de derechos.",
+        "evidencia": "Selecciona la interpretación correcta de la situación irregular.",
+        "proceso_cognitivo": "Comprensión normativa histórica",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Describe el enfoque actual de titularidad de derechos, no el de situación irregular.",
+            "C": "Niega obligaciones de protección que sí existían aunque desde otro paradigma.",
+            "D": "Introduce una idea ajena al enfoque histórico tratado."
+        },
+        "fuente_autorizada": [
+            "Decreto 2737 de 1989",
+            "Código del Menor",
+            "Historia normativa de infancia",
+            "Protección de menores"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque describe el paradigma de situación irregular propio del Código del Menor.",
+        "opcion_B": "Es incorrecta porque corresponde al enfoque garantista posterior.",
+        "opcion_C": "Es incorrecta porque el Código sí contemplaba protección, aunque desde otro modelo.",
+        "opcion_D": "Es incorrecta porque no describe el enfoque de situación irregular."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado con observación.",
+        "argumento": "El término menor se usa solo por fidelidad histórica al Código del Menor; en usos actuales conviene preferir niños, niñas y adolescentes."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado con observación terminológica",
+        "observacion": "Mantener la aclaración de que 'menor' corresponde al lenguaje histórico del Código del Menor.",
+        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre evolución normativa: Código del Menor vs. Ley 1098."
+    }
+}

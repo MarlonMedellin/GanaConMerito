@@ -1,0 +1,36 @@
+{
+    "id_item": "MTV_B11_I07",
+    "archivo_sugerido": "MTV_B11_I07_docente_transmisor_vs_mediador.json",
+    "proposito_de_uso": "Evaluar si el aspirante diferencia el rol del docente transmisor del docente mediador.",
+    "blueprint": {
+        "componente_modulo": "Rol docente",
+        "competencia": "Diferenciación de modelos de enseñanza",
+        "afirmacion": "El docente tecnicista tiende a transmitir contenidos; el docente constructivista media, pregunta, orienta y diseña situaciones de aprendizaje.",
+        "evidencia_observable": "Identifica el rol docente correspondiente a cada enfoque.",
+        "tipo_de_evidencia": "Comprensión comparativa",
+        "dificultad_esperada": "Media",
+        "clave": "B"
+    },
+    "item": {
+        "enunciado": "Un docente considera que enseñar consiste únicamente en dictar contenidos para que los estudiantes los copien y repitan. Otro docente diseña problemas, pregunta por ideas previas, promueve discusión y acompaña la construcción de explicaciones.\n\n¿Cuál comparación es correcta?",
+        "opciones": {
+            "A": "Ambos docentes aplican exactamente el mismo modelo pedagógico.",
+            "B": "El primero se aproxima a un rol transmisor tecnicista; el segundo a un rol mediador constructivista.",
+            "C": "El segundo no enseña porque no dicta todo el tiempo.",
+            "D": "El primero desarrolla aprendizaje significativo por copiar más contenidos."
+        },
+        "respuesta_correcta": "B"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque diferencia transmisión mecánica y mediación pedagógica.",
+        "distractores": {
+            "A": "Los roles pedagógicos descritos son distintos.",
+            "C": "Mediar también es enseñar.",
+            "D": "Copiar contenidos no garantiza aprendizaje significativo."
+        }
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem claro para contraste entre modelos."
+    }
+}

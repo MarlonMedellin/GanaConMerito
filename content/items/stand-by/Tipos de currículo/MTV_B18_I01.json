@@ -1,0 +1,36 @@
+{
+    "id_item": "MTV_B18_I01",
+    "archivo_sugerido": "MTV_B18_I01_curriculo_oculto_ayuda_servicio.json",
+    "proposito_de_uso": "Evaluar si el aspirante reconoce el currículo oculto en acciones formativas no escritas formalmente.",
+    "blueprint": {
+        "componente_modulo": "Currículo oculto",
+        "competencia": "Identificación de aprendizajes implícitos",
+        "afirmacion": "El currículo oculto comprende aprendizajes, valores, normas, actitudes y respuestas formativas que ocurren en la vida escolar aunque no estén formalmente escritos.",
+        "evidencia_observable": "Identifica como currículo oculto la atención a problemáticas emocionales y sociales no previstas en el plan de estudios.",
+        "tipo_de_evidencia": "Reconocimiento conceptual aplicado",
+        "dificultad_esperada": "Media",
+        "clave": "B"
+    },
+    "item": {
+        "enunciado": "Un docente atiende problemáticas emocionales y sociales de sus estudiantes, promueve ayuda y servicio, y acompaña situaciones que no aparecen formalmente escritas en el plan de estudios.\n\n¿A qué tipo de currículo corresponde principalmente esta actuación?",
+        "opciones": {
+            "A": "Currículo nulo.",
+            "B": "Currículo oculto.",
+            "C": "Currículo exclusivamente oficial.",
+            "D": "Currículo inexistente."
+        },
+        "respuesta_correcta": "B"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque se trata de aprendizajes y respuestas formativas no siempre explícitas en el plan escrito.",
+        "distractores": {
+            "A": "El currículo nulo se refiere a lo que se omite o no se enseña.",
+            "C": "El currículo oficial se basa en normas, lineamientos y documentos formales.",
+            "D": "Sí existe una dimensión curricular implícita."
+        }
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem base para currículo oculto."
+    }
+}

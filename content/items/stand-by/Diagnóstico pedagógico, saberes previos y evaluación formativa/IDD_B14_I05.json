@@ -1,0 +1,99 @@
+{
+    "id_item": "IDD_B14_I05",
+    "archivo_sugerido": "IDD_B14_I05_diagnostico_para_dua_y_ajustes.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B14",
+        "nombre": "Diagnóstico pedagógico, saberes previos y evaluación formativa",
+        "estado_en_lista": "Bloque 14 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 5 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende que el diagnóstico pedagógico debe servir para planear DUA, apoyos y ajustes razonables, no solo para clasificar estudiantes.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión, DUA, evaluación diagnóstica, orientación escolar o coordinación académica.",
+        "blueprint": {
+            "problematica_principal": "Uso del diagnóstico para clasificar o etiquetar, sin traducirlo en decisiones de enseñanza.",
+            "fuente_autorizada": [
+                "DUA",
+                "Evaluación diagnóstica",
+                "Decreto 1421",
+                "Educación inclusiva",
+                "Planeación curricular"
+            ],
+            "componente_modulo": "Diagnóstico para DUA y Ajustes",
+            "competencia": "Uso pedagógico del diagnóstico",
+            "afirmacion": "El diagnóstico debe orientar la diversificación de estrategias, recursos, formas de participación y apoyos necesarios.",
+            "evidencia_observable": "Reconoce que la información diagnóstica se usa para planear, acompañar, evaluar y ajustar.",
+            "tipo_de_evidencia": "Juicio pedagógico aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que el diagnóstico cobra sentido cuando informa decisiones pedagógicas concretas de diseño universal, apoyos y seguimiento.",
+        "evidencia_observable": "Selecciona una actuación que transforma los hallazgos diagnósticos en ajustes de planeación.",
+        "tarea_cognitiva": "Elegir el uso correcto de información diagnóstica en una planeación inclusiva.",
+        "tipo_de_pregunta": "Caso situacional de juicio didáctico",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Usar diagnóstico para etiquetar",
+                "revision": "La clave lo usa para planear apoyos."
+            },
+            {
+                "riesgo": "Ignorar hallazgos diagnósticos",
+                "revision": "El ítem exige traducirlos en decisiones didácticas."
+            },
+            {
+                "riesgo": "Confundir DUA con plan paralelo",
+                "revision": "La opción correcta mantiene propósito común con rutas diversas."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Después de realizar un diagnóstico inicial, el docente identifica que en el grupo hay diversidad de ritmos, intereses, barreras de acceso, fortalezas visuales, dificultades de lectura y distintas formas de participación. Ahora debe planear la unidad.\n\n¿Cuál es el uso pedagógico correcto de esa información?",
+        "opciones": {
+            "A": "Diseñar desde el DUA múltiples formas de representación, participación y expresión, prever apoyos y ajustar la mediación según las barreras identificadas.",
+            "B": "Clasificar a los estudiantes en buenos y malos para definir quién merece apoyo.",
+            "C": "Guardar los resultados sin modificar la planeación.",
+            "D": "Hacer una actividad totalmente distinta para cada estudiante sin propósito común."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Diagnóstico para DUA y Ajustes",
+        "competencia": "Uso pedagógico del diagnóstico",
+        "claim_evaluado": "El evaluado comprende que el diagnóstico cobra sentido cuando informa decisiones pedagógicas concretas de diseño universal, apoyos y seguimiento.",
+        "evidencia": "Selecciona una actuación que transforma los hallazgos diagnósticos en ajustes de planeación.",
+        "proceso_cognitivo": "Juicio didáctico aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Usa el diagnóstico para etiquetar.",
+            "C": "No traduce la información en decisiones de enseñanza.",
+            "D": "Fragmenta el grupo y pierde propósito común."
+        },
+        "fuente_autorizada": [
+            "DUA",
+            "Evaluación diagnóstica",
+            "Decreto 1421",
+            "Educación inclusiva",
+            "Planeación curricular"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque usa el diagnóstico para diseñar una enseñanza flexible, accesible y orientada a apoyos concretos.",
+        "opcion_B": "Es incorrecta porque clasifica y estigmatiza.",
+        "opcion_C": "Es incorrecta porque desperdicia la información diagnóstica.",
+        "opcion_D": "Es incorrecta porque la diversidad no implica perder el propósito común."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem evita etiquetas y usa la información diagnóstica para reducir barreras y ampliar participación."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre diagnóstico pedagógico, saberes previos y evaluación formativa."
+    }
+}

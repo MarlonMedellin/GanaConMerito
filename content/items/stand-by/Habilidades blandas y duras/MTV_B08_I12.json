@@ -1,0 +1,40 @@
+{
+    "id_item": "MTV_B08_I12",
+    "archivo_sugerido": "MTV_B08_I12_saber_hacer_aplicacion_conocimiento.json",
+    "proposito_de_uso": "Evaluar si el aspirante diferencia el Saber Hacer del Saber y del Saber Ser.",
+    "blueprint": {
+        "componente_modulo": "Saber Hacer",
+        "competencia": "Aplicación práctica del conocimiento en el aula",
+        "afirmacion": "El Saber Hacer implica aplicar conocimientos y estrategias en situaciones reales de enseñanza, evaluación, convivencia o gestión.",
+        "evidencia_observable": "Reconoce una actuación donde el docente convierte conocimiento en práctica pedagógica.",
+        "tipo_de_evidencia": "Comprensión aplicada",
+        "dificultad_esperada": "Media",
+        "clave": "C"
+    },
+    "item": {
+        "enunciado": "Un docente conoce la teoría de evaluación formativa y la aplica diseñando rúbricas claras, retroalimentando a sus estudiantes y ajustando su planeación según las evidencias del proceso.\n\n¿Qué componente de la competencia se evidencia principalmente?",
+        "opciones": {
+            "A": "Saber Ser, porque solo se evalúa su personalidad.",
+            "B": "Saber memorístico, porque solo repite la teoría.",
+            "C": "Saber Hacer, porque aplica el conocimiento en una práctica pedagógica concreta.",
+            "D": "Ninguno, porque aplicar estrategias no hace parte de la competencia docente."
+        },
+        "respuesta_correcta": "C"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque el docente transforma conocimiento en acción pedagógica.",
+        "distractores": {
+            "A": "El énfasis no está solo en rasgos actitudinales.",
+            "B": "El caso no muestra repetición, sino aplicación.",
+            "D": "La aplicación práctica sí es parte central de la competencia."
+        }
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado",
+        "argumento": "El ítem diferencia adecuadamente conocimiento, aplicación y actitud."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem articulador entre evaluación formativa y competencias."
+    }
+}

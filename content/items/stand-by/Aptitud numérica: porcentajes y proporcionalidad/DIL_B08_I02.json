@@ -1,0 +1,99 @@
+{
+    "id_item": "DIL_B08_I02",
+    "archivo_sugerido": "DIL_B08_I02_proporcionalidad_rock_colegio_a_b.json",
+    "bloque": {
+        "codigo_bloque": "DIL_B08",
+        "nombre": "Aptitud numérica: porcentajes y proporcionalidad",
+        "estado_en_lista": "Bloque 8 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 2 de 3"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante distingue cantidad absoluta y tasa porcentual en una comparación proporcional.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección con componente de aptitud numérica, razonamiento proporcional o interpretación de datos.",
+        "blueprint": {
+            "problematica_principal": "Comparar cantidades absolutas sin considerar el tamaño total de cada grupo.",
+            "fuente_autorizada": [
+                "Matemática escolar",
+                "Proporcionalidad",
+                "Porcentajes",
+                "Interpretación de datos",
+                "Razones y tasas"
+            ],
+            "componente_modulo": "Razonamiento de proporcionalidad",
+            "competencia": "Comparación de tasas porcentuales",
+            "afirmacion": "Para comparar preferencias entre grupos de distinto tamaño se debe calcular la proporción respecto al total de cada grupo.",
+            "evidencia_observable": "Calcula 12/60 = 20% y 18/120 = 15%, y concluye que el Colegio A tiene mayor porcentaje.",
+            "tipo_de_evidencia": "Razonamiento proporcional comparativo",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que una cantidad absoluta menor puede representar una proporción mayor si el total del grupo también es menor.",
+        "evidencia_observable": "Selecciona la comparación porcentual correcta entre los dos colegios.",
+        "tarea_cognitiva": "Calcular y comparar proporciones.",
+        "tipo_de_pregunta": "Problema de razonamiento proporcional",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Elegir por cantidad absoluta",
+                "revision": "Los distractores reflejan ese error común."
+            },
+            {
+                "riesgo": "Ambigüedad de interpretación",
+                "revision": "El enunciado especifica totales y cantidades favorables."
+            },
+            {
+                "riesgo": "Cálculo excesivo",
+                "revision": "Las fracciones son sencillas y convertibles a porcentajes exactos."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En el Colegio A hay 60 estudiantes y a 12 les gusta el rock. En el Colegio B hay 120 estudiantes y a 18 les gusta el rock.\n\nMatemáticamente, ¿por qué la cantidad menor de alumnos del Colegio A representa una mayor tasa porcentual de gusto por el rock?",
+        "opciones": {
+            "A": "Porque en el Colegio A la proporción es 12/60 = 20%, mientras que en el Colegio B es 18/120 = 15%; por eso A tiene mayor porcentaje.",
+            "B": "Porque 12 siempre es mayor que 18 cuando se comparan gustos musicales.",
+            "C": "Porque solo debe compararse la cantidad absoluta y 18 es menor que 12.",
+            "D": "Porque los porcentajes no sirven para comparar grupos de distinto tamaño."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Razonamiento de proporcionalidad",
+        "competencia": "Comparación de tasas porcentuales",
+        "claim_evaluado": "El evaluado comprende que una cantidad absoluta menor puede representar una proporción mayor si el total del grupo también es menor.",
+        "evidencia": "Selecciona la comparación porcentual correcta entre los dos colegios.",
+        "proceso_cognitivo": "Razonamiento proporcional comparativo",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Afirma una comparación numérica falsa.",
+            "C": "Compara cantidades absolutas y además invierte la relación.",
+            "D": "Desconoce que los porcentajes permiten comparar grupos de distinto tamaño."
+        },
+        "fuente_autorizada": [
+            "Matemática escolar",
+            "Proporcionalidad",
+            "Porcentajes",
+            "Interpretación de datos",
+            "Razones y tasas"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque compara tasas: 12 de 60 equivale a 20%, mientras 18 de 120 equivale a 15%.",
+        "opcion_B": "Es incorrecta porque 12 no es mayor que 18.",
+        "opcion_C": "Es incorrecta porque comparar solo cantidades absolutas no responde a la tasa porcentual.",
+        "opcion_D": "Es incorrecta porque precisamente los porcentajes permiten comparar grupos de diferente tamaño."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El problema usa datos claros y evita contextos que puedan sesgar la interpretación."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 3 preguntas sobre aptitud numérica, porcentajes y proporcionalidad."
+    }
+}

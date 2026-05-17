@@ -1,0 +1,98 @@
+{
+    "id_item": "CB15_I02",
+    "bloque": {
+        "numero": 15,
+        "nombre": "Fases enseñanza",
+        "estado_en_lista": "Bloque 15 de 15",
+        "decision_del_bloque": "Grupo de 4 preguntas",
+        "item_en_grupo": "Ítem 2 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce la importancia de activar saberes previos al iniciar una secuencia de enseñanza, especialmente desde un enfoque constructivista.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
+        "blueprint": {
+            "problematica_principal": "Comprensión del constructivismo",
+            "fuente_autorizada": [
+                "Modelo constructivista",
+                "Didáctica general",
+                "Orientaciones pedagógicas institucionales"
+            ],
+            "componente_modulo": "Didáctica",
+            "competencia": "Planeación pedagógica",
+            "afirmacion": "La enseñanza tiene fases secuenciales.",
+            "evidencia_observable": "Reconoce el papel de los saberes previos en la planeación de una clase.",
+            "tipo_de_evidencia": "Reconocimiento de fase didáctica aplicada",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que activar saberes previos permite conectar nuevos aprendizajes con ideas, experiencias y explicaciones que los estudiantes ya poseen.",
+        "evidencia_observable": "Selecciona una acción inicial que permite identificar ideas previas de los estudiantes antes de desarrollar un nuevo contenido.",
+        "tarea_cognitiva": "Elegir la acción inicial más pertinente en una secuencia constructivista.",
+        "tipo_de_pregunta": "Pregunta de procedimiento aplicado",
+        "dificultad_esperada": "Baja",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Sesgo por familiaridad con terminología pedagógica",
+                "revision": "Aunque se usa la expresión saberes previos, las opciones describen acciones concretas que permiten identificar su sentido didáctico."
+            },
+            {
+                "riesgo": "Sesgo por área disciplinar",
+                "revision": "El caso no se asocia a una asignatura específica; puede aplicarse a cualquier área."
+            },
+            {
+                "riesgo": "Ambigüedad en la clave",
+                "revision": "La opción correcta es la única que permite explorar ideas iniciales antes de desarrollar el contenido."
+            },
+            {
+                "riesgo": "Reducción del diagnóstico a calificación",
+                "revision": "Los distractores permiten diferenciar una exploración inicial de una evaluación sancionatoria o memorística."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Antes de iniciar un tema nuevo, una docente quiere conocer qué ideas, experiencias o explicaciones tienen sus estudiantes sobre el asunto.\n\n¿Cuál acción corresponde mejor a la fase de exploración de saberes previos?",
+        "opciones": {
+            "A": "Aplicar una pregunta problema, lluvia de ideas o breve actividad diagnóstica relacionada con el tema.",
+            "B": "Entregar de inmediato una lista de definiciones para memorizar.",
+            "C": "Calificar el tema antes de haberlo trabajado en clase.",
+            "D": "Evitar que los estudiantes participen para no confundirlos."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Didáctica",
+        "competencia": "Planeación pedagógica",
+        "claim_evaluado": "El evaluado comprende que activar saberes previos permite conectar nuevos aprendizajes con ideas, experiencias y explicaciones que los estudiantes ya poseen.",
+        "evidencia": "Selecciona una acción inicial que permite identificar ideas previas de los estudiantes antes de desarrollar un nuevo contenido.",
+        "proceso_cognitivo": "Reconocimiento procedimental aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Baja",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Inicia con transmisión y memorización de información, no con exploración de ideas previas.",
+            "C": "Convierte la fase diagnóstica en calificación anticipada, sin proceso previo de aprendizaje.",
+            "D": "Impide la participación necesaria para conocer las ideas iniciales de los estudiantes."
+        },
+        "fuente_autorizada": [
+            "Modelo constructivista",
+            "Didáctica general",
+            "Orientaciones pedagógicas institucionales"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque permite identificar ideas, experiencias y explicaciones iniciales de los estudiantes, lo cual facilita conectar el nuevo aprendizaje con sus saberes previos.",
+        "opcion_B": "Es incorrecta porque inicia la clase con una acción transmisiva y memorística, sin explorar lo que los estudiantes ya saben o piensan.",
+        "opcion_C": "Es incorrecta porque calificar el tema antes de trabajarlo confunde la exploración diagnóstica con una evaluación sancionatoria.",
+        "opcion_D": "Es incorrecta porque evitar la participación impide conocer las ideas iniciales de los estudiantes y limita la construcción activa del aprendizaje."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no exige experiencia en una metodología especializada ni conocimiento disciplinar específico. La situación es común en la planeación de clases y permite identificar una acción inicial pertinente desde criterios didácticos generales."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada. Por su baja dificultad, puede funcionar como verificación básica de comprensión de la fase inicial de enseñanza.",
+        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre fases de enseñanza y enfoque constructivista."
+    }
+}

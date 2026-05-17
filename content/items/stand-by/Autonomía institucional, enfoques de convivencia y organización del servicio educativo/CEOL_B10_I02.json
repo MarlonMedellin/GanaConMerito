@@ -1,0 +1,97 @@
+{
+    "id_item": "CEOL_B10_I02",
+    "archivo_sugerido": "CEOL_B10_I02_autonomia_institucional_aulas_mediacion.json",
+    "bloque": {
+        "codigo_bloque": "CEOL_B10",
+        "nombre": "Autonomía institucional, enfoques de convivencia y organización del servicio educativo",
+        "estado_en_lista": "Bloque 10 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 2 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende que la autonomía institucional permite diseñar estrategias de convivencia ajustadas al contexto, siempre que respeten la ley, el enfoque de derechos, el debido proceso y la Ruta de Atención Integral.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación, rectoría o gestión de convivencia.",
+        "blueprint": {
+            "problematica_principal": "Confusión entre autonomía institucional e improvisación o arbitrariedad en convivencia.",
+            "fuente_autorizada": [
+                "Ley 1620 de 2013",
+                "Decreto 1965 de 2013",
+                "Proyecto Educativo Institucional",
+                "Manual de convivencia institucional"
+            ],
+            "componente_modulo": "Autonomía Institucional y Convivencia Escolar",
+            "competencia": "Diseño contextualizado de estrategias de convivencia",
+            "afirmacion": "La autonomía permite ajustar estrategias al contexto institucional, pero dentro de los límites normativos y del enfoque de derechos.",
+            "evidencia_observable": "Reconoce que aulas de mediación u otras estrategias deben estar articuladas al Manual de Convivencia, la Ruta de Atención y el PEI.",
+            "tipo_de_evidencia": "Juicio institucional aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que la autonomía institucional en convivencia no autoriza decisiones arbitrarias, sino estrategias contextualizadas, participativas, pedagógicas y coherentes con la normatividad.",
+        "evidencia_observable": "Selecciona una explicación que equilibra libertad institucional, contexto, legalidad, derechos y seguimiento.",
+        "tarea_cognitiva": "Analizar el alcance de la autonomía institucional en el diseño de estrategias de convivencia.",
+        "tipo_de_pregunta": "Pregunta conceptual aplicada",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir autonomía con ausencia de reglas",
+                "revision": "La clave conserva límites legales, Manual de Convivencia y Ruta de Atención."
+            },
+            {
+                "riesgo": "Aplicar modelos externos sin adaptación",
+                "revision": "La opción correcta exige diagnóstico y contexto institucional."
+            },
+            {
+                "riesgo": "Uso punitivo de aulas de mediación",
+                "revision": "La clave las entiende como estrategias pedagógicas y restaurativas, no como castigo."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Una institución quiere crear aulas de mediación y círculos restaurativos para responder a conflictos frecuentes entre estudiantes. Algunos docentes preguntan si la Ley 1620 permite diseñar estrategias propias ajustadas al contexto socioeconómico y cultural del colegio.\n\n¿Cuál explicación es más adecuada?",
+        "opciones": {
+            "A": "La institución puede crear cualquier estrategia, incluso si contradice derechos, debido proceso o la Ruta de Atención.",
+            "B": "La institución no puede diseñar ninguna estrategia propia y debe copiar exactamente modelos externos.",
+            "C": "La institución puede diseñar estrategias contextualizadas, siempre que estén articuladas al PEI, al Manual de Convivencia, a la Ruta de Atención, al enfoque de derechos y al debido proceso.",
+            "D": "La autonomía institucional significa que los conflictos no deben registrarse ni recibir seguimiento."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Autonomía Institucional y Convivencia Escolar",
+        "competencia": "Diseño contextualizado de estrategias de convivencia",
+        "claim_evaluado": "El evaluado comprende que la autonomía institucional en convivencia no autoriza decisiones arbitrarias, sino estrategias contextualizadas, participativas, pedagógicas y coherentes con la normatividad.",
+        "evidencia": "Selecciona una explicación que equilibra libertad institucional, contexto, legalidad, derechos y seguimiento.",
+        "proceso_cognitivo": "Comprensión institucional aplicada",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Confunde autonomía con arbitrariedad.",
+            "B": "Desconoce la posibilidad de contextualización institucional.",
+            "D": "Niega registro, seguimiento y responsabilidad institucional."
+        },
+        "fuente_autorizada": [
+            "Ley 1620 de 2013",
+            "Decreto 1965 de 2013",
+            "Proyecto Educativo Institucional",
+            "Manual de convivencia institucional"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque reconoce autonomía contextualizada dentro de límites normativos, pedagógicos y de derechos.",
+        "opcion_A": "Es incorrecta porque ninguna estrategia institucional puede vulnerar derechos o debido proceso.",
+        "opcion_B": "Es incorrecta porque la institución sí puede adaptar estrategias a su contexto.",
+        "opcion_D": "Es incorrecta porque la autonomía no elimina registro ni seguimiento."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem reconoce la diversidad de contextos escolares y evita tanto la imposición de modelos únicos como la arbitrariedad institucional."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 5 preguntas sobre autonomía institucional, enfoques de convivencia y organización del servicio educativo."
+    }
+}

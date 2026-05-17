@@ -1,0 +1,98 @@
+{
+    "id_item": "CB15_I03",
+    "bloque": {
+        "numero": 15,
+        "nombre": "Fases enseñanza",
+        "estado_en_lista": "Bloque 15 de 15",
+        "decision_del_bloque": "Grupo de 4 preguntas",
+        "item_en_grupo": "Ítem 3 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce el papel de la mediación docente durante la construcción activa del aprendizaje, diferenciándola tanto de la transmisión directa como del abandono de la orientación pedagógica.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
+        "blueprint": {
+            "problematica_principal": "Comprensión del constructivismo",
+            "fuente_autorizada": [
+                "Modelo constructivista",
+                "Didáctica general",
+                "Orientaciones pedagógicas institucionales"
+            ],
+            "componente_modulo": "Didáctica",
+            "competencia": "Planeación pedagógica",
+            "afirmacion": "La enseñanza tiene fases secuenciales.",
+            "evidencia_observable": "Distingue mediación docente de transmisión directa o abandono de la actividad.",
+            "tipo_de_evidencia": "Juicio didáctico en situación de aula",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado identifica que el docente media, pregunta, orienta y retroalimenta durante la construcción activa del conocimiento.",
+        "evidencia_observable": "Selecciona una intervención docente que acompaña la resolución de problemas mediante preguntas, contraste de estrategias, pistas y retroalimentación.",
+        "tarea_cognitiva": "Seleccionar la intervención docente adecuada durante una actividad de aprendizaje.",
+        "tipo_de_pregunta": "Caso situacional de juicio profesional",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confusión entre constructivismo y ausencia de enseñanza",
+                "revision": "El ítem diferencia claramente la mediación docente de dejar solos a los estudiantes sin orientación."
+            },
+            {
+                "riesgo": "Sesgo por área disciplinar",
+                "revision": "La situación de resolución de problemas puede aplicarse a diferentes áreas, no solo a matemáticas o ciencias."
+            },
+            {
+                "riesgo": "Penalización de estilos pedagógicos diversos",
+                "revision": "El ítem no evalúa un estilo único de enseñanza, sino un principio didáctico general: orientar sin sustituir la construcción del estudiante."
+            },
+            {
+                "riesgo": "Ambigüedad en la clave",
+                "revision": "La opción correcta es la única que integra preguntas, contraste de estrategias, pistas y retroalimentación."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Durante una actividad de resolución de problemas, varios estudiantes proponen estrategias diferentes y algunos cometen errores conceptuales. El docente quiere mantener un enfoque constructivista sin dejar de orientar el aprendizaje.\n\n¿Cuál intervención es más adecuada?",
+        "opciones": {
+            "A": "Retirar toda orientación para que los estudiantes descubran solos, aunque consoliden errores.",
+            "B": "Suspender la actividad y dictar la respuesta correcta para evitar discusiones.",
+            "C": "Formular preguntas, contrastar estrategias, ofrecer pistas y retroalimentar para que los estudiantes ajusten sus comprensiones.",
+            "D": "Calificar negativamente cualquier error inicial para que los estudiantes eviten equivocarse."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Didáctica",
+        "competencia": "Planeación pedagógica",
+        "claim_evaluado": "El evaluado identifica que el docente media, pregunta, orienta y retroalimenta durante la construcción activa del conocimiento.",
+        "evidencia": "Selecciona una intervención docente que acompaña la resolución de problemas mediante preguntas, contraste de estrategias, pistas y retroalimentación.",
+        "proceso_cognitivo": "Análisis y juicio didáctico",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Confunde autonomía con ausencia de mediación docente y permite consolidar errores conceptuales.",
+            "B": "Reemplaza la construcción activa por transmisión directa de la respuesta correcta.",
+            "D": "Penaliza el error inicial y desconoce su valor como oportunidad de aprendizaje."
+        },
+        "fuente_autorizada": [
+            "Modelo constructivista",
+            "Didáctica general",
+            "Orientaciones pedagógicas institucionales"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque describe una mediación docente coherente con el enfoque constructivista: el docente pregunta, orienta, ofrece pistas, contrasta estrategias y retroalimenta para que los estudiantes ajusten sus comprensiones.",
+        "opcion_A": "Es incorrecta porque el constructivismo no significa abandonar a los estudiantes ni retirar toda orientación pedagógica.",
+        "opcion_B": "Es incorrecta porque suspender la actividad y dictar la respuesta correcta sustituye la construcción activa del aprendizaje por transmisión directa.",
+        "opcion_D": "Es incorrecta porque calificar negativamente cualquier error inicial puede inhibir la participación y desconoce el error como insumo para aprender."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no depende de una asignatura específica ni exige dominio de una metodología especializada. Evalúa una comprensión didáctica general: orientar el aprendizaje sin anular la participación activa del estudiante ni castigar el error como parte del proceso."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre fases de enseñanza y enfoque constructivista."
+    }
+}

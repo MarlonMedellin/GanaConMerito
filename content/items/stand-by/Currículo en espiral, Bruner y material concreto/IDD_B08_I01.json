@@ -1,0 +1,99 @@
+{
+    "id_item": "IDD_B08_I01",
+    "archivo_sugerido": "IDD_B08_I01_curriculo_espiral_bruner_progresion_cognitiva.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B08",
+        "nombre": "Currículo en espiral y progresión cognitiva",
+        "estado_en_lista": "Bloque 8 de 17",
+        "decision_del_bloque": "Pregunta única",
+        "item_en_grupo": "Ítem 1 de 1"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende el propósito cognitivo del currículo en espiral de Jerome Bruner.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, diseño curricular, pedagogía, coordinación académica o didáctica.",
+        "blueprint": {
+            "problematica_principal": "Enseñanza de conceptos como temas aislados, sin retorno progresivo ni profundización cognitiva.",
+            "fuente_autorizada": [
+                "Jerome Bruner",
+                "Currículo en espiral",
+                "Constructivismo",
+                "Diseño curricular",
+                "Didáctica general"
+            ],
+            "componente_modulo": "Currículo y metodología",
+            "competencia": "Secuenciación curricular progresiva",
+            "afirmacion": "El currículo en espiral permite volver a conceptos centrales en distintos momentos, con mayor profundidad, complejidad y conexión con saberes previos.",
+            "evidencia_observable": "Reconoce que presentar conceptos de manera gradual y reiterativa favorece comprensión, transferencia y consolidación.",
+            "tipo_de_evidencia": "Comprensión conceptual aplicada",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "B"
+        },
+        "claim": "El evaluado comprende que la progresión curricular no consiste en repetir mecánicamente contenidos, sino en retomarlos con creciente complejidad para fortalecer estructuras cognitivas.",
+        "evidencia_observable": "Selecciona una explicación que vincula gradualidad, reiteración, profundización y construcción de significado.",
+        "tarea_cognitiva": "Interpretar el propósito del currículo en espiral en la organización escolar.",
+        "tipo_de_pregunta": "Pregunta conceptual aplicada",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir currículo en espiral con repetición simple",
+                "revision": "La clave enfatiza profundización progresiva."
+            },
+            {
+                "riesgo": "Exigir conocimiento especializado de autor",
+                "revision": "El ítem contextualiza la teoría sin pedir citas o detalles biográficos."
+            },
+            {
+                "riesgo": "Reducirlo a secuencia de contenidos",
+                "revision": "La opción correcta incluye comprensión, transferencia y complejidad creciente."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un equipo académico decide organizar el currículo de manera que los conceptos centrales no se enseñen una sola vez y se abandonen, sino que reaparezcan en distintos grados con mayor profundidad, nuevos ejemplos, relaciones y niveles de complejidad.\n\nSegún la teoría del currículo en espiral de Jerome Bruner, ¿qué propósito cognitivo tiene esta organización?",
+        "opciones": {
+            "A": "Repetir exactamente las mismas actividades cada año sin aumentar la exigencia.",
+            "B": "Favorecer que los estudiantes reconstruyan y profundicen conceptos progresivamente, conectando saberes previos con nuevos niveles de comprensión.",
+            "C": "Evitar que los estudiantes relacionen temas de diferentes grados.",
+            "D": "Sustituir la comprensión por memorización acumulativa de definiciones."
+        },
+        "respuesta_correcta": "B"
+    },
+    "ficha_tecnica": {
+        "componente": "Currículo y metodología",
+        "competencia": "Secuenciación curricular progresiva",
+        "claim_evaluado": "El evaluado comprende que la progresión curricular no consiste en repetir mecánicamente contenidos, sino en retomarlos con creciente complejidad para fortalecer estructuras cognitivas.",
+        "evidencia": "Selecciona una explicación que vincula gradualidad, reiteración, profundización y construcción de significado.",
+        "proceso_cognitivo": "Comprensión conceptual aplicada",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "B",
+        "distractores": {
+            "A": "Confunde espiral con repetición mecánica.",
+            "C": "Niega la conexión progresiva entre aprendizajes.",
+            "D": "Reduce el proceso a memorización."
+        },
+        "fuente_autorizada": [
+            "Jerome Bruner",
+            "Currículo en espiral",
+            "Constructivismo",
+            "Diseño curricular",
+            "Didáctica general"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque el currículo en espiral retoma conceptos centrales con mayor profundidad y complejidad, favoreciendo comprensión progresiva.",
+        "opcion_A": "Es incorrecta porque no se trata de repetir lo mismo sin progresión.",
+        "opcion_C": "Es incorrecta porque la espiral busca conectar aprendizajes.",
+        "opcion_D": "Es incorrecta porque el propósito no es acumular definiciones sino construir comprensión."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no exige conocimiento especializado de Bruner; evalúa la comprensión pedagógica del principio de progresión curricular."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como pregunta única del bloque Currículo en espiral y progresión cognitiva."
+    }
+}

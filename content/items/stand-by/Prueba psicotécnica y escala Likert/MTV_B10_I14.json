@@ -1,0 +1,40 @@
+{
+    "id_item": "MTV_B10_I14",
+    "archivo_sugerido": "MTV_B10_I14_frecuencia_en_proposiciones_likert.json",
+    "proposito_de_uso": "Evaluar si el aspirante comprende el papel de los adverbios de frecuencia en proposiciones Likert.",
+    "blueprint": {
+        "componente_modulo": "Adverbios de frecuencia",
+        "competencia": "Interpretación de alcance y frecuencia",
+        "afirmacion": "Adverbios como siempre, casi siempre, a veces, rara vez y nunca modifican el compromiso actitudinal de la proposición.",
+        "evidencia_observable": "Reconoce cómo la frecuencia afecta la intensidad y coherencia de la respuesta.",
+        "tipo_de_evidencia": "Análisis semántico aplicado",
+        "dificultad_esperada": "Media",
+        "clave": "A"
+    },
+    "item": {
+        "enunciado": "En una escala Likert, dos proposiciones dicen: 'Escucho a mis estudiantes cuando expresan dificultades' y 'Rara vez escucho a mis estudiantes cuando expresan dificultades'.\n\n¿Qué elemento cambia de forma decisiva el sentido profesional de la segunda proposición?",
+        "opciones": {
+            "A": "El adverbio de frecuencia 'rara vez'.",
+            "B": "La palabra estudiantes.",
+            "C": "El uso del punto final.",
+            "D": "La ausencia de una fórmula matemática."
+        },
+        "respuesta_correcta": "A"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque 'rara vez' limita la frecuencia de una conducta profesional esperada.",
+        "distractores": {
+            "B": "La palabra estudiantes no cambia negativamente el sentido por sí sola.",
+            "C": "El punto final no modifica el compromiso actitudinal.",
+            "D": "No se trata de una proposición matemática."
+        }
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado",
+        "argumento": "El ítem evalúa un rasgo lingüístico útil y objetivo."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Muy útil para análisis de formulación."
+    }
+}

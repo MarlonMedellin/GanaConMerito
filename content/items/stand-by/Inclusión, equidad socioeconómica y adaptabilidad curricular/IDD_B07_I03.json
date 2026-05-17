@@ -1,0 +1,99 @@
+{
+    "id_item": "IDD_B07_I03",
+    "archivo_sugerido": "IDD_B07_I03_accesibilidad_discapacidad_fisica_visual_movilidad.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B07",
+        "nombre": "Inclusión, equidad socioeconómica y adaptabilidad curricular",
+        "estado_en_lista": "Bloque 7 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 3 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce estrategias prioritarias de accesibilidad y apoyo ante estudiantes con discapacidad física, visual o de movilidad.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión educativa, coordinación, rectoría, orientación escolar o apoyo pedagógico.",
+        "blueprint": {
+            "problematica_principal": "Atención improvisada o meramente asistencial ante estudiantes con barreras físicas, visuales o de movilidad.",
+            "fuente_autorizada": [
+                "Decreto 1421 de 2017",
+                "Ley 1618 de 2013",
+                "Accesibilidad",
+                "Ajustes razonables",
+                "Educación inclusiva"
+            ],
+            "componente_modulo": "Accesibilidad e inclusión institucional",
+            "competencia": "Gestión de apoyos y accesibilidad",
+            "afirmacion": "La institución debe identificar barreras físicas, comunicativas y pedagógicas, y organizar apoyos para garantizar acceso, movilidad, participación y aprendizaje.",
+            "evidencia_observable": "Selecciona una estrategia que incluye accesibilidad, apoyos, recursos adecuados, comunicación y seguimiento.",
+            "tipo_de_evidencia": "Juicio institucional aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "D"
+        },
+        "claim": "El evaluado comprende que la inclusión de estudiantes con discapacidad física, visual o de movilidad requiere ajustes de entorno, materiales, comunicación, desplazamiento y participación pedagógica.",
+        "evidencia_observable": "Elige una respuesta institucional que no reduce la inclusión a matrícula, sino que organiza condiciones reales de acceso.",
+        "tarea_cognitiva": "Analizar un caso de llegada de estudiantes con discapacidad y seleccionar la acción institucional prioritaria.",
+        "tipo_de_pregunta": "Caso situacional de gestión inclusiva",
+        "dificultad_esperada": "Media-Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Asistencialismo",
+                "revision": "La clave se centra en derechos, acceso y participación, no en caridad."
+            },
+            {
+                "riesgo": "Reducir accesibilidad a rampas",
+                "revision": "La opción correcta incluye barreras físicas, comunicativas y pedagógicas."
+            },
+            {
+                "riesgo": "Condicionar participación a disponibilidad total de recursos",
+                "revision": "La clave plantea gestión progresiva y organizada de apoyos razonables."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "A una institución llegan estudiantes con discapacidad física, visual o de movilidad. El equipo directivo reconoce que no basta con matricularlos, porque existen barreras en desplazamientos, materiales, comunicación y participación en clase.\n\n¿Cuál estrategia prioritaria debe implementar la institución?",
+        "opciones": {
+            "A": "Aceptar la matrícula, pero dejar que cada estudiante resuelva por sí mismo las barreras que encuentre.",
+            "B": "Ubicar a los estudiantes en un lugar apartado para evitar ajustes en el aula común.",
+            "C": "Solicitar que no asistan hasta que la institución tenga condiciones perfectas.",
+            "D": "Identificar barreras físicas, comunicativas y pedagógicas; gestionar accesibilidad, apoyos, materiales adaptados, acompañamiento docente y seguimiento."
+        },
+        "respuesta_correcta": "D"
+    },
+    "ficha_tecnica": {
+        "componente": "Accesibilidad e inclusión institucional",
+        "competencia": "Gestión de apoyos y accesibilidad",
+        "claim_evaluado": "El evaluado comprende que la inclusión de estudiantes con discapacidad física, visual o de movilidad requiere ajustes de entorno, materiales, comunicación, desplazamiento y participación pedagógica.",
+        "evidencia": "Elige una respuesta institucional que no reduce la inclusión a matrícula, sino que organiza condiciones reales de acceso.",
+        "proceso_cognitivo": "Análisis y juicio institucional",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media-Alta",
+        "respuesta_correcta": "D",
+        "distractores": {
+            "A": "Traslada las barreras al estudiante.",
+            "B": "Propone segregación.",
+            "C": "Suspende injustificadamente el acceso al servicio educativo."
+        },
+        "fuente_autorizada": [
+            "Decreto 1421 de 2017",
+            "Ley 1618 de 2013",
+            "Accesibilidad",
+            "Ajustes razonables",
+            "Educación inclusiva"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción D es correcta porque la institución debe identificar barreras y gestionar accesibilidad, apoyos, materiales y seguimiento.",
+        "opcion_A": "Es incorrecta porque responsabiliza al estudiante de resolver barreras institucionales.",
+        "opcion_B": "Es incorrecta porque separa a los estudiantes del ambiente común.",
+        "opcion_C": "Es incorrecta porque condiciona la asistencia a una preparación absoluta y puede vulnerar derechos."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem promueve accesibilidad real y evita respuestas segregadoras o asistencialistas."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre inclusión, equidad socioeconómica y adaptabilidad curricular."
+    }
+}

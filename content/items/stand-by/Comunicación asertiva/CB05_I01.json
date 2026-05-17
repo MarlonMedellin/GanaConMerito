@@ -1,0 +1,98 @@
+{
+    "id_item": "CB05_I01",
+    "bloque": {
+        "numero": 5,
+        "nombre": "Comunicación asertiva",
+        "estado_en_lista": "Bloque 5 de 15",
+        "decision_del_bloque": "Grupo de 3 preguntas",
+        "item_en_grupo": "Ítem 1 de 3"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce prácticas de comunicación asertiva para gestionar desacuerdos escolares mediante escucha, respeto, claridad y construcción de acuerdos.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
+        "blueprint": {
+            "problematica_principal": "Manejo de conflictos escolares",
+            "fuente_autorizada": [
+                "Orientaciones de convivencia escolar",
+                "Competencias socioemocionales",
+                "Manual de convivencia institucional"
+            ],
+            "componente_modulo": "Socioemocional",
+            "competencia": "Comunicación asertiva",
+            "afirmacion": "La comunicación efectiva tiene pasos secuenciales.",
+            "evidencia_observable": "Identifica una intervención comunicativa que expresa escucha, claridad, respeto y búsqueda de acuerdos.",
+            "tipo_de_evidencia": "Interpretación de situación institucional",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "B"
+        },
+        "claim": "El evaluado reconoce que la comunicación asertiva permite abordar conflictos mediante escucha activa, expresión respetuosa y acuerdos verificables.",
+        "evidencia_observable": "Selecciona una actuación comunicativa que permite tramitar un desacuerdo sin evasión, imposición ni exposición innecesaria de las partes.",
+        "tarea_cognitiva": "Seleccionar la secuencia comunicativa más adecuada frente a un desacuerdo escolar.",
+        "tipo_de_pregunta": "Caso situacional de juicio profesional",
+        "dificultad_esperada": "Baja",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Sesgo por estilo comunicativo personal",
+                "revision": "El ítem no evalúa rasgos de personalidad, sino una actuación profesional esperada ante un conflicto."
+            },
+            {
+                "riesgo": "Ambigüedad entre evitar y mediar",
+                "revision": "Los distractores diferencian claramente entre evasión, imposición, exposición pública y diálogo asertivo."
+            },
+            {
+                "riesgo": "Sesgo jerárquico",
+                "revision": "La clave no favorece la autoridad vertical, sino la construcción de acuerdos mediante comunicación respetuosa."
+            },
+            {
+                "riesgo": "Lenguaje técnico excesivo",
+                "revision": "La situación usa términos comprensibles y cotidianos en el ámbito escolar."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Dos docentes tienen un desacuerdo frente a la distribución de actividades de un proyecto institucional. La discusión se ha trasladado a otros espacios y empieza a afectar el trabajo del equipo.\n\n¿Cuál actuación expresa mejor una comunicación asertiva?",
+        "opciones": {
+            "A": "Pedir a ambos docentes que eviten hablar del tema para que el conflicto desaparezca con el tiempo.",
+            "B": "Escuchar las posiciones, describir el problema sin ataques personales, expresar necesidades y acordar compromisos concretos.",
+            "C": "Solicitar a uno de los docentes que ceda, porque la prioridad es terminar rápido el proyecto.",
+            "D": "Exponer públicamente el desacuerdo para que el grupo decida quién tiene la razón."
+        },
+        "respuesta_correcta": "B"
+    },
+    "ficha_tecnica": {
+        "componente": "Socioemocional",
+        "competencia": "Comunicación asertiva",
+        "claim_evaluado": "El evaluado reconoce que la comunicación asertiva permite abordar conflictos mediante escucha activa, expresión respetuosa y acuerdos verificables.",
+        "evidencia": "Selecciona una actuación comunicativa que permite tramitar un desacuerdo sin evasión, imposición ni exposición innecesaria de las partes.",
+        "proceso_cognitivo": "Análisis y juicio profesional",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Baja",
+        "respuesta_correcta": "B",
+        "distractores": {
+            "A": "Evade el conflicto y no promueve solución.",
+            "C": "Impone una salida sin diálogo ni corresponsabilidad.",
+            "D": "Puede escalar el conflicto y personalizar la discusión."
+        },
+        "fuente_autorizada": [
+            "Orientaciones de convivencia escolar",
+            "Competencias socioemocionales",
+            "Manual de convivencia institucional"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque integra escucha activa, descripción objetiva del problema, expresión respetuosa de necesidades y construcción de compromisos concretos.",
+        "opcion_A": "Es incorrecta porque evitar el tema no resuelve la tensión y puede permitir que el conflicto continúe afectando al equipo.",
+        "opcion_C": "Es incorrecta porque sacrifica el diálogo y la corresponsabilidad por una solución rápida e impuesta.",
+        "opcion_D": "Es incorrecta porque expone el conflicto públicamente, puede aumentar la tensión y desplaza el foco hacia quién tiene la razón."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El caso no depende de una cultura institucional específica ni de una jerarquía particular. Evalúa una conducta profesional transferible a distintos contextos escolares: escuchar, expresar con claridad y construir acuerdos sin agresión ni evasión."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 3 preguntas sobre comunicación asertiva y manejo de conflictos escolares."
+    }
+}

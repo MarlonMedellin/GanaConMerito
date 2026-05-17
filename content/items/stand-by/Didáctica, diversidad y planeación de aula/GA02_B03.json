@@ -1,0 +1,199 @@
+{
+    "bloque": {
+        "codigo_bloque": "GA02_B03",
+        "nombre": "Didáctica, diversidad y planeación de aula",
+        "estado_en_lista": "Bloque 3 de 8",
+        "decision_del_bloque": "Grupo de preguntas",
+        "preguntas_recomendadas": 2
+    },
+    "preguntas": [
+        {
+            "id_item": "GA02_B03_I01",
+            "archivo_sugerido": "GA02_B03_I01_didactica_diversidad.json",
+            "diseno_previo": {
+                "proposito_de_uso": "Evaluar si el aspirante reconoce que una estrategia didáctica pertinente debe responder a la diversidad del grupo y no limitarse a actividades homogéneas, extensas e iguales para todos los estudiantes.",
+                "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
+                "blueprint": {
+                    "problematica_principal": "Uso de estrategias homogéneas frente a grupos heterogéneos.",
+                    "fuente_autorizada": [
+                        "Lineamientos curriculares del Ministerio de Educación Nacional",
+                        "Orientaciones pedagógicas institucionales",
+                        "Enfoque de educación inclusiva",
+                        "Proyecto Educativo Institucional"
+                    ],
+                    "componente_modulo": "Didáctica y Planeación de Aula",
+                    "competencia": "Diseño de estrategias didácticas pertinentes",
+                    "afirmacion": "La enseñanza debe responder a la diversidad del grupo mediante estrategias didácticas flexibles y contextualizadas.",
+                    "evidencia_observable": "Reconoce que la homogenización de actividades contradice la atención a la diversidad y limita la pertinencia didáctica.",
+                    "tipo_de_evidencia": "Juicio didáctico en situación de aula",
+                    "formato": "Selección múltiple con única respuesta",
+                    "numero_opciones": 4,
+                    "clave": "C"
+                },
+                "claim": "El evaluado comprende que un grupo heterogéneo requiere estrategias didácticas diferenciadas, flexibles y pertinentes, orientadas a favorecer la participación, comprensión y progreso de todos los estudiantes.",
+                "evidencia_observable": "Selecciona una explicación que identifica por qué una misma actividad extensa para todos puede desconocer ritmos, necesidades, intereses y formas de aprendizaje del grupo.",
+                "tarea_cognitiva": "Analizar una situación de aula heterogénea y seleccionar la razón pedagógica por la cual la homogeneización contradice una didáctica pertinente.",
+                "tipo_de_pregunta": "Caso situacional de juicio pedagógico",
+                "dificultad_esperada": "Media",
+                "riesgos_de_fairness": [
+                    {
+                        "riesgo": "Sesgo por tamaño o composición del grupo",
+                        "revision": "El ítem no presupone un número específico de estudiantes ni una condición particular; se centra en la diversidad como rasgo común de los grupos escolares."
+                    },
+                    {
+                        "riesgo": "Confusión entre igualdad y equidad",
+                        "revision": "La clave diferencia tratar a todos de la misma manera de ofrecer apoyos y estrategias acordes con necesidades diversas."
+                    },
+                    {
+                        "riesgo": "Sesgo por recursos institucionales",
+                        "revision": "La respuesta correcta no exige recursos extraordinarios, sino decisiones didácticas flexibles y pertinentes."
+                    },
+                    {
+                        "riesgo": "Ambigüedad en la clave",
+                        "revision": "La opción correcta es la única que relaciona heterogeneidad del grupo con diversidad de ritmos, necesidades y formas de aprendizaje."
+                    }
+                ]
+            },
+            "item": {
+                "enunciado": "Un docente trabaja con un grupo heterogéneo en el que hay estudiantes con diferentes ritmos de aprendizaje, intereses, niveles de autonomía y formas de participación. Para avanzar más rápido, decide aplicar el mismo taller extenso a todos, con las mismas instrucciones, el mismo tiempo y el mismo producto final.\n\n¿Por qué esta decisión contradice la implementación de estrategias didácticas válidas frente a la diversidad del grupo?",
+                "opciones": {
+                    "A": "Porque todos los estudiantes deben recibir actividades completamente distintas, sin ningún propósito común de aprendizaje.",
+                    "B": "Porque la diversidad del grupo impide realizar cualquier actividad académica compartida.",
+                    "C": "Porque una actividad homogénea puede desconocer ritmos, necesidades y formas de aprendizaje, limitando la participación y comprensión de algunos estudiantes.",
+                    "D": "Porque la única estrategia válida en grupos heterogéneos es eliminar toda evaluación para evitar diferencias de desempeño."
+                },
+                "respuesta_correcta": "C"
+            },
+            "ficha_tecnica": {
+                "componente": "Didáctica y Planeación de Aula",
+                "competencia": "Diseño de estrategias didácticas pertinentes",
+                "claim_evaluado": "El evaluado comprende que un grupo heterogéneo requiere estrategias didácticas diferenciadas, flexibles y pertinentes, orientadas a favorecer la participación, comprensión y progreso de todos los estudiantes.",
+                "evidencia": "Selecciona una explicación que identifica por qué una misma actividad extensa para todos puede desconocer ritmos, necesidades, intereses y formas de aprendizaje del grupo.",
+                "proceso_cognitivo": "Análisis y juicio pedagógico",
+                "tipo_de_item": "Selección múltiple con única respuesta",
+                "nivel_de_dificultad": "Media",
+                "respuesta_correcta": "C",
+                "distractores": {
+                    "A": "Exagera la diferenciación y desconoce que puede existir un propósito común de aprendizaje.",
+                    "B": "Presenta la diversidad como obstáculo absoluto para la enseñanza, lo cual es incorrecto.",
+                    "D": "Confunde atención a la diversidad con eliminación de la evaluación."
+                },
+                "fuente_autorizada": [
+                    "Lineamientos curriculares del Ministerio de Educación Nacional",
+                    "Orientaciones pedagógicas institucionales",
+                    "Enfoque de educación inclusiva",
+                    "Proyecto Educativo Institucional"
+                ]
+            },
+            "justificacion_editorial": {
+                "clave": "La opción C es correcta porque reconoce que un grupo heterogéneo requiere estrategias flexibles que consideren ritmos, necesidades, intereses y formas de aprendizaje. La misma actividad extensa para todos puede limitar la participación y la comprensión de algunos estudiantes.",
+                "opcion_A": "Es incorrecta porque atender la diversidad no significa que cada estudiante deba trabajar siempre actividades sin propósito común.",
+                "opcion_B": "Es incorrecta porque la diversidad no impide realizar actividades compartidas; exige planear apoyos, rutas o mediaciones pertinentes.",
+                "opcion_D": "Es incorrecta porque la atención a la diversidad no implica eliminar la evaluación, sino usarla de manera formativa, pertinente y flexible."
+            },
+            "revision_fairness": {
+                "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+                "argumento": "El caso no responsabiliza a estudiantes por sus diferencias ni asume que la diversidad sea un problema. Evalúa una decisión profesional del docente: diseñar estrategias didácticas pertinentes para favorecer la participación y el aprendizaje de todos."
+            },
+            "dictamen_final": {
+                "estado": "Aprobado",
+                "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+                "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 2 preguntas sobre didáctica, diversidad y planeación de aula."
+            }
+        },
+        {
+            "id_item": "GA02_B03_I02",
+            "archivo_sugerido": "GA02_B03_I02_fases_clase.json",
+            "diseno_previo": {
+                "proposito_de_uso": "Evaluar si el aspirante reconoce una estructura básica de clase organizada en fases y comprende que el cierre pedagógico no es solo finalizar la sesión, sino sintetizar, valorar aprendizajes y proyectar su aplicación.",
+                "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
+                "blueprint": {
+                    "problematica_principal": "Desconocimiento de fases de una clase y de la función pedagógica de la fase final.",
+                    "fuente_autorizada": [
+                        "Didáctica general",
+                        "Orientaciones pedagógicas institucionales",
+                        "Lineamientos curriculares del Ministerio de Educación Nacional",
+                        "Planeación de aula"
+                    ],
+                    "componente_modulo": "Didáctica y Planeación de Aula",
+                    "competencia": "Planeación pedagógica",
+                    "afirmacion": "La enseñanza debe organizarse en fases pedagógicas claras.",
+                    "evidencia_observable": "Identifica las fases básicas de una clase y reconoce que la fase final incluye síntesis, evaluación o retroalimentación y proyección o transferencia.",
+                    "tipo_de_evidencia": "Reconocimiento procedimental aplicado",
+                    "formato": "Selección múltiple con única respuesta",
+                    "numero_opciones": 4,
+                    "clave": "A"
+                },
+                "claim": "El evaluado comprende que una clase puede organizarse en tres fases: inicio, desarrollo y cierre; y que la fase de cierre debe permitir sintetizar lo trabajado, valorar los aprendizajes y proyectar su aplicación o transferencia.",
+                "evidencia_observable": "Selecciona la opción que identifica correctamente las fases de la clase y los componentes pedagógicos de la fase final.",
+                "tarea_cognitiva": "Reconocer la estructura didáctica básica de una clase y la función pedagógica del cierre.",
+                "tipo_de_pregunta": "Pregunta procedimental aplicada",
+                "dificultad_esperada": "Baja",
+                "riesgos_de_fairness": [
+                    {
+                        "riesgo": "Variación terminológica entre instituciones",
+                        "revision": "El ítem usa una estructura ampliamente reconocida: inicio, desarrollo y cierre; además describe la función de cada componente de la fase final."
+                    },
+                    {
+                        "riesgo": "Memorización mecánica",
+                        "revision": "Aunque pregunta por fases, el ítem evalúa comprensión funcional del cierre y no solo recordación de nombres."
+                    },
+                    {
+                        "riesgo": "Sesgo por área disciplinar",
+                        "revision": "La estructura de clase aplica a distintas áreas del currículo."
+                    },
+                    {
+                        "riesgo": "Ambigüedad en la clave",
+                        "revision": "La opción correcta es la única que presenta una secuencia coherente y una fase final con síntesis, valoración y proyección."
+                    }
+                ]
+            },
+            "item": {
+                "enunciado": "Una docente revisa su planeación de aula y quiere verificar si la clase tiene una estructura pedagógica completa. Para ello, organiza la sesión en tres momentos y presta especial atención a la fase final.\n\n¿Cuál opción identifica mejor las fases de una clase y las tres partes que debe incluir la última fase?",
+                "opciones": {
+                    "A": "Inicio, desarrollo y cierre; en el cierre se realiza síntesis de lo aprendido, evaluación o retroalimentación y proyección o transferencia.",
+                    "B": "Diagnóstico, castigo y calificación; en la última fase se asignan notas, se corrigen errores públicamente y se deja tarea obligatoria.",
+                    "C": "Exposición, copia y memorización; en la última fase se repite el contenido, se dicta el resumen y se cierra sin preguntas.",
+                    "D": "Motivación, recreación y descanso; en la última fase se suspende el trabajo académico para evitar cansancio."
+                },
+                "respuesta_correcta": "A"
+            },
+            "ficha_tecnica": {
+                "componente": "Didáctica y Planeación de Aula",
+                "competencia": "Planeación pedagógica",
+                "claim_evaluado": "El evaluado comprende que una clase puede organizarse en tres fases: inicio, desarrollo y cierre; y que la fase de cierre debe permitir sintetizar lo trabajado, valorar los aprendizajes y proyectar su aplicación o transferencia.",
+                "evidencia": "Selecciona la opción que identifica correctamente las fases de la clase y los componentes pedagógicos de la fase final.",
+                "proceso_cognitivo": "Reconocimiento procedimental aplicado",
+                "tipo_de_item": "Selección múltiple con única respuesta",
+                "nivel_de_dificultad": "Baja",
+                "respuesta_correcta": "A",
+                "distractores": {
+                    "B": "Presenta una estructura punitiva y calificativa que no corresponde a una secuencia didáctica.",
+                    "C": "Reduce la clase a exposición, copia y memoria, sin cierre pedagógico formativo.",
+                    "D": "Confunde momentos motivacionales o de descanso con fases de una clase orientada al aprendizaje."
+                },
+                "fuente_autorizada": [
+                    "Didáctica general",
+                    "Orientaciones pedagógicas institucionales",
+                    "Lineamientos curriculares del Ministerio de Educación Nacional",
+                    "Planeación de aula"
+                ]
+            },
+            "justificacion_editorial": {
+                "clave": "La opción A es correcta porque organiza la clase en tres fases básicas: inicio, desarrollo y cierre. Además, reconoce que el cierre debe incluir síntesis de lo aprendido, evaluación o retroalimentación y proyección o transferencia.",
+                "opcion_B": "Es incorrecta porque estructura la clase desde una lógica sancionatoria y reduce el cierre a calificación o castigo.",
+                "opcion_C": "Es incorrecta porque privilegia exposición, copia y memorización, sin considerar retroalimentación ni transferencia del aprendizaje.",
+                "opcion_D": "Es incorrecta porque la motivación y el descanso pueden tener lugar en la dinámica de aula, pero no reemplazan las fases pedagógicas de una clase."
+            },
+            "revision_fairness": {
+                "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+                "argumento": "El ítem reconoce que puede haber variaciones institucionales en la terminología, pero evalúa una estructura didáctica general y funcional. No depende de una asignatura específica ni de un formato institucional particular."
+            },
+            "dictamen_final": {
+                "estado": "Aprobado",
+                "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada. Si la institución maneja una nomenclatura propia para las fases de clase, puede ajustarse la terminología sin cambiar la evidencia evaluada.",
+                "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 2 preguntas sobre didáctica, diversidad y planeación de aula."
+            }
+        }
+    ]
+}

@@ -1,0 +1,103 @@
+{
+    "id_item": "CEOL_B03_I02",
+    "archivo_sugerido": "CEOL_B03_I02_extralimitacion_interrogatorio_menor.json",
+    "bloque": {
+        "codigo_bloque": "CEOL_B03",
+        "nombre": "Rol, funciones y límites del orientador escolar",
+        "estado_en_lista": "Bloque 3 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 2 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce que, ante un presunto caso de abuso o situación Tipo III, el orientador escolar no debe interrogar al menor por cuenta propia, sino brindar contención, preservar confidencialidad y activar la ruta ante las autoridades o instancias competentes.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con orientación escolar, convivencia, coordinación, rectoría o docencia.",
+        "blueprint": {
+            "problematica_principal": "Extralimitación funcional y riesgo de revictimización ante presunta vulneración grave de derechos.",
+            "fuente_autorizada": [
+                "Ley 1620 de 2013",
+                "Decreto 1965 de 2013",
+                "Ley 1098 de 2006",
+                "Manual de convivencia institucional",
+                "Protocolos de atención de situaciones Tipo III"
+            ],
+            "componente_modulo": "Gestión de Conflictos y Protección de Derechos",
+            "competencia": "Activación de rutas y límites funcionales",
+            "afirmacion": "Ante presuntas vulneraciones graves, el orientador debe activar rutas competentes y evitar interrogatorios que revictimicen o excedan su función.",
+            "evidencia_observable": "Reconoce que interrogar al menor para comprobar hechos puede exceder la función institucional y afectar la protección de derechos.",
+            "tipo_de_evidencia": "Juicio profesional ante situación sensible",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "B"
+        },
+        "claim": "El evaluado comprende que el orientador escolar no sustituye a autoridades competentes ni realiza investigación judicial; su papel inicial es proteger, contener, registrar lo necesario y activar la ruta correspondiente.",
+        "evidencia_observable": "Selecciona una actuación que evita interrogatorios improcedentes, protege la confidencialidad y activa el protocolo de atención.",
+        "tarea_cognitiva": "Elegir la actuación institucional adecuada ante una presunta situación Tipo III o vulneración grave de derechos.",
+        "tipo_de_pregunta": "Caso situacional de juicio profesional",
+        "dificultad_esperada": "Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Tratamiento sensible de abuso",
+                "revision": "El ítem no incluye detalles gráficos ni solicita reconstruir hechos."
+            },
+            {
+                "riesgo": "Revictimización",
+                "revision": "La clave evita interrogatorios repetidos o improcedentes."
+            },
+            {
+                "riesgo": "Confusión entre escucha inicial e investigación",
+                "revision": "La opción correcta permite contención y registro básico, pero no interrogatorio para probar hechos."
+            },
+            {
+                "riesgo": "Ambigüedad sobre el rol del orientador",
+                "revision": "La clave delimita el rol: contención, protección, confidencialidad y activación de ruta."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un estudiante comunica al docente orientador que pudo haber sido víctima de una situación de abuso. El orientador, preocupado por aclarar los hechos, considera realizar varias entrevistas detalladas al menor antes de informar a cualquier instancia.\n\n¿Por qué esta actuación puede constituir extralimitación de funciones y riesgo de revictimización?",
+        "opciones": {
+            "A": "Porque el orientador debe ignorar la información hasta que exista una denuncia escrita de la familia.",
+            "B": "Porque el orientador no debe investigar ni interrogar para comprobar hechos; debe brindar contención, preservar confidencialidad, registrar lo necesario y activar la ruta competente.",
+            "C": "Porque toda situación de convivencia debe resolverse únicamente dentro del aula sin informar a nadie.",
+            "D": "Porque el orientador solo puede actuar cuando el estudiante presenta pruebas materiales."
+        },
+        "respuesta_correcta": "B"
+    },
+    "ficha_tecnica": {
+        "componente": "Gestión de Conflictos y Protección de Derechos",
+        "competencia": "Activación de rutas y límites funcionales",
+        "claim_evaluado": "El evaluado comprende que el orientador escolar no sustituye a autoridades competentes ni realiza investigación judicial; su papel inicial es proteger, contener, registrar lo necesario y activar la ruta correspondiente.",
+        "evidencia": "Selecciona una actuación que evita interrogatorios improcedentes, protege la confidencialidad y activa el protocolo de atención.",
+        "proceso_cognitivo": "Análisis y juicio profesional ante situación sensible",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Alta",
+        "respuesta_correcta": "B",
+        "distractores": {
+            "A": "Retrasa indebidamente la protección y la activación de ruta.",
+            "C": "Minimiza una posible vulneración grave de derechos.",
+            "D": "Condiciona la atención a pruebas que no son requisito para activar protección."
+        },
+        "fuente_autorizada": [
+            "Ley 1620 de 2013",
+            "Decreto 1965 de 2013",
+            "Ley 1098 de 2006",
+            "Manual de convivencia institucional",
+            "Protocolos de atención de situaciones Tipo III"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque el orientador escolar no debe asumir funciones investigativas ni judiciales. Debe proteger al estudiante, brindar contención inicial, manejar la información con confidencialidad y activar la ruta correspondiente.",
+        "opcion_A": "Es incorrecta porque esperar una denuncia escrita puede retrasar la protección.",
+        "opcion_C": "Es incorrecta porque una presunta situación de abuso no se resuelve como un conflicto ordinario de aula.",
+        "opcion_D": "Es incorrecta porque la activación de ruta no depende de que el estudiante entregue pruebas."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El caso evita detalles explícitos, no cuestiona la credibilidad del estudiante y evalúa una actuación protectora y no revictimizante."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada. Se recomienda conservar lenguaje sobrio por la sensibilidad del caso.",
+        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 5 preguntas sobre rol, funciones y límites del orientador escolar."
+    }
+}

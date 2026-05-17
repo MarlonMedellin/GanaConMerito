@@ -1,0 +1,99 @@
+{
+    "id_item": "DIL_B10_I02",
+    "archivo_sugerido": "DIL_B10_I02_equidad_igualdad_material_infancia.json",
+    "bloque": {
+        "codigo_bloque": "DIL_B10",
+        "nombre": "Dignidad humana, equidad y columna vertebral del Código de Infancia",
+        "estado_en_lista": "Bloque 10 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 2 de 3"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante diferencia igualdad formal y equidad en la atención de niños, niñas y adolescentes.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, infancia, convivencia, inclusión o protección integral.",
+        "blueprint": {
+            "problematica_principal": "Aplicación uniforme de medidas que ignoran desigualdades reales, barreras o condiciones de vulnerabilidad.",
+            "fuente_autorizada": [
+                "Constitución Política de Colombia",
+                "Ley 1098 de 2006",
+                "Artículo 13 Constitución Política",
+                "Enfoque de equidad",
+                "Protección integral"
+            ],
+            "componente_modulo": "Equidad e igualdad material",
+            "competencia": "Aplicación diferencial y no discriminatoria de derechos",
+            "afirmacion": "La equidad exige adoptar medidas ajustadas a condiciones reales para que la igualdad sea efectiva.",
+            "evidencia_observable": "Reconoce que tratar exactamente igual a estudiantes en condiciones muy distintas puede reproducir desigualdad.",
+            "tipo_de_evidencia": "Juicio ético-normativo aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que la equidad no significa privilegio arbitrario, sino respuesta proporcional a necesidades, barreras y condiciones de vulnerabilidad.",
+        "evidencia_observable": "Selecciona una actuación que ajusta apoyos sin discriminar ni reducir derechos.",
+        "tarea_cognitiva": "Diferenciar trato idéntico, discriminación y equidad.",
+        "tipo_de_pregunta": "Caso situacional de juicio ético-normativo",
+        "dificultad_esperada": "Media-Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir equidad con favoritismo",
+                "revision": "La clave la fundamenta en barreras y condiciones reales."
+            },
+            {
+                "riesgo": "Aplicar igualdad formal que excluye",
+                "revision": "El ítem muestra que el trato idéntico puede ser insuficiente."
+            },
+            {
+                "riesgo": "Etiquetar estudiantes vulnerables",
+                "revision": "La respuesta correcta protege dignidad y derechos."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En una institución educativa, dos estudiantes tienen la misma obligación académica, pero uno enfrenta barreras de acceso, pobreza extrema y falta de acompañamiento familiar. Un docente afirma que la equidad exige hacer ajustes razonables y apoyos, mientras otro dice que todos deben recibir exactamente lo mismo sin importar su situación.\n\n¿Cuál interpretación es más coherente con la equidad en clave de derechos de infancia?",
+        "opciones": {
+            "A": "La equidad exige reconocer condiciones reales y adoptar apoyos proporcionales para que el derecho a aprender y participar sea efectivo.",
+            "B": "La equidad consiste en negar cualquier apoyo porque todos deben recibir idéntico trato formal.",
+            "C": "La equidad permite eliminar todos los deberes del estudiante sin acompañamiento ni proceso pedagógico.",
+            "D": "La equidad autoriza exponer públicamente la situación familiar del estudiante."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Equidad e igualdad material",
+        "competencia": "Aplicación diferencial y no discriminatoria de derechos",
+        "claim_evaluado": "El evaluado comprende que la equidad no significa privilegio arbitrario, sino respuesta proporcional a necesidades, barreras y condiciones de vulnerabilidad.",
+        "evidencia": "Selecciona una actuación que ajusta apoyos sin discriminar ni reducir derechos.",
+        "proceso_cognitivo": "Juicio ético-normativo aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media-Alta",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Confunde igualdad formal con equidad real.",
+            "C": "Confunde apoyo con eliminación total de responsabilidades formativas.",
+            "D": "Vulnera dignidad e intimidad del estudiante."
+        },
+        "fuente_autorizada": [
+            "Constitución Política de Colombia",
+            "Ley 1098 de 2006",
+            "Artículo 13 Constitución Política",
+            "Enfoque de equidad",
+            "Protección integral"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque la equidad busca que la igualdad sea efectiva mediante apoyos proporcionales a condiciones reales.",
+        "opcion_B": "Es incorrecta porque el trato idéntico puede perpetuar barreras.",
+        "opcion_C": "Es incorrecta porque equidad no significa eliminar el proceso pedagógico.",
+        "opcion_D": "Es incorrecta porque exponer información sensible vulnera dignidad e intimidad."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem evita tanto la discriminación por vulnerabilidad como la confusión entre equidad y privilegio arbitrario."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 3 preguntas sobre dignidad humana, equidad y columna vertebral del Código de Infancia."
+    }
+}

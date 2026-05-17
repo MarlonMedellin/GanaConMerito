@@ -1,0 +1,99 @@
+{
+    "id_item": "IDD_B10_I01",
+    "archivo_sugerido": "IDD_B10_I01_critica_locke_vaso_vacio_transmision_frontal.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B10",
+        "nombre": "Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento",
+        "estado_en_lista": "Bloque 10 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 1 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante identifica el error pedagógico de concebir al estudiante como receptor pasivo y al docente como transmisor absoluto del conocimiento.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, pedagogía, didáctica, formación docente o gestión académica.",
+        "blueprint": {
+            "problematica_principal": "Modelo transmisivo que reduce al estudiante a receptor pasivo o vaso vacío.",
+            "fuente_autorizada": [
+                "Modelos pedagógicos",
+                "Constructivismo",
+                "Crítica al empirismo transmisivo",
+                "Didáctica general",
+                "Aprendizaje activo"
+            ],
+            "componente_modulo": "Modelos Pedagógicos y Constructivismo",
+            "competencia": "Comprensión crítica de modelos de enseñanza",
+            "afirmacion": "El aprendizaje requiere actividad mental, interacción, construcción de significado y mediación, no simple recepción pasiva.",
+            "evidencia_observable": "Reconoce por qué dictar clases de forma frontal y autoritaria limita la comprensión y participación del estudiante.",
+            "tipo_de_evidencia": "Juicio pedagógico conceptual",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que el estudiante no es un recipiente vacío, sino un sujeto activo que interpreta, pregunta, relaciona y construye conocimiento con mediación docente.",
+        "evidencia_observable": "Selecciona una explicación crítica del modelo de transmisión frontal.",
+        "tarea_cognitiva": "Analizar una concepción pedagógica y determinar por qué limita el aprendizaje.",
+        "tipo_de_pregunta": "Pregunta conceptual aplicada",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Desvalorizar toda explicación docente",
+                "revision": "La clave critica la transmisión pasiva, no la mediación docente."
+            },
+            {
+                "riesgo": "Caricaturizar modelos pedagógicos",
+                "revision": "El ítem se centra en el problema de la pasividad del estudiante."
+            },
+            {
+                "riesgo": "Confundir autoridad pedagógica con autoritarismo",
+                "revision": "La opción correcta reconoce mediación sin dictadura del docente."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En un modelo de transmisión frontal, el maestro habla todo el tiempo, dicta contenidos y espera que los estudiantes los repitan. Se asume que el estudiante es un receptor pasivo o vaso vacío que debe llenarse con información.\n\n¿Por qué esta concepción representa un error pedagógico grave desde el constructivismo?",
+        "opciones": {
+            "A": "Porque desconoce que el estudiante interpreta, relaciona, pregunta y construye activamente significado a partir de sus experiencias previas y de la mediación docente.",
+            "B": "Porque el docente nunca debe explicar ningún contenido.",
+            "C": "Porque aprender consiste únicamente en copiar lo que dice el maestro.",
+            "D": "Porque todos los estudiantes aprenden de manera automática si permanecen en silencio."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Modelos Pedagógicos y Constructivismo",
+        "competencia": "Comprensión crítica de modelos de enseñanza",
+        "claim_evaluado": "El evaluado comprende que el estudiante no es un recipiente vacío, sino un sujeto activo que interpreta, pregunta, relaciona y construye conocimiento con mediación docente.",
+        "evidencia": "Selecciona una explicación crítica del modelo de transmisión frontal.",
+        "proceso_cognitivo": "Comprensión crítica aplicada",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Confunde crítica al transmisivismo con eliminación de la explicación docente.",
+            "C": "Reproduce el modelo pasivo criticado.",
+            "D": "Asume erróneamente que el silencio equivale a aprendizaje."
+        },
+        "fuente_autorizada": [
+            "Modelos pedagógicos",
+            "Constructivismo",
+            "Crítica al empirismo transmisivo",
+            "Didáctica general",
+            "Aprendizaje activo"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque el constructivismo entiende al estudiante como sujeto activo que construye significados.",
+        "opcion_B": "Es incorrecta porque el docente puede explicar, pero no reducir la enseñanza a transmisión pasiva.",
+        "opcion_C": "Es incorrecta porque copiar no garantiza aprendizaje.",
+        "opcion_D": "Es incorrecta porque el silencio no evidencia comprensión."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no niega la función del docente; critica una concepción pasiva y autoritaria del aprendizaje."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 5 preguntas sobre constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento."
+    }
+}

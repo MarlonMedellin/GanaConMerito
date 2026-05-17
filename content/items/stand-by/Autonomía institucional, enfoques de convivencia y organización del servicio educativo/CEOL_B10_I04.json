@@ -1,0 +1,97 @@
+{
+    "id_item": "CEOL_B10_I04",
+    "archivo_sugerido": "CEOL_B10_I04_cobertura_ausencia_docente_no_acoso_laboral.json",
+    "bloque": {
+        "codigo_bloque": "CEOL_B10",
+        "nombre": "Autonomía institucional, enfoques de convivencia y organización del servicio educativo",
+        "estado_en_lista": "Bloque 10 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 4 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce que la cobertura de ausencias docentes debe organizarse institucionalmente por los directivos responsables, sin imponer cargas arbitrarias o informales a otros docentes.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación, rectoría o gestión escolar.",
+        "blueprint": {
+            "problematica_principal": "Cobertura improvisada de ausencias docentes mediante cargas indebidas a otros pares.",
+            "fuente_autorizada": [
+                "Manual de funciones docente y directivo docente",
+                "Decreto 1850 de 2002",
+                "Normativa laboral docente",
+                "Gestión institucional del servicio educativo"
+            ],
+            "componente_modulo": "Cobertura de Ausencias Docentes",
+            "competencia": "Organización responsable del servicio educativo",
+            "afirmacion": "La ausencia docente debe ser gestionada por la dirección institucional mediante medidas organizadas, proporcionales y ajustadas a funciones y jornada.",
+            "evidencia_observable": "Reconoce que no corresponde trasladar automáticamente la carga a otros docentes como imposición informal, sino organizar institucionalmente la prestación del servicio.",
+            "tipo_de_evidencia": "Juicio administrativo-pedagógico aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que la atención de una ausencia docente es una responsabilidad de organización institucional, liderada por directivos docentes, y debe evitar prácticas que puedan convertirse en sobrecarga indebida o acoso laboral hacia otros pares.",
+        "evidencia_observable": "Selecciona una actuación que activa una solución institucional planificada y respetuosa de funciones, jornada y derechos laborales.",
+        "tarea_cognitiva": "Analizar una situación de ausencia docente y seleccionar la respuesta institucional adecuada.",
+        "tipo_de_pregunta": "Caso situacional de juicio institucional",
+        "dificultad_esperada": "Media-Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Afirmar una obligación absoluta no verificada para un actor específico",
+                "revision": "La clave habla de organización por directivos docentes y plan institucional, no de carga automática a un par."
+            },
+            {
+                "riesgo": "Normalizar acoso laboral",
+                "revision": "La opción correcta evita imponer reemplazos informales o recurrentes sin soporte."
+            },
+            {
+                "riesgo": "Descuidar a los estudiantes",
+                "revision": "La clave conserva la obligación de organizar atención pedagógica durante la ausencia."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un docente no asiste a la institución y varios grupos quedan sin clase. Para resolverlo, se propone obligar de manera informal y reiterada a otros docentes pares a cubrir esas horas, sin revisar su jornada, funciones, asignación ni plan institucional.\n\n¿Cuál actuación evita afectar el servicio educativo y previene cargas indebidas o posibles situaciones de acoso laboral?",
+        "opciones": {
+            "A": "Trasladar automáticamente todas las horas al docente que esté más cerca, sin importar su jornada o funciones.",
+            "B": "Dejar a los estudiantes sin ninguna atención porque la ausencia de un docente no exige gestión institucional.",
+            "C": "Que rectoría o coordinación organicen la contingencia mediante un plan institucional, respetando funciones, jornada, asignación y medidas pedagógicas disponibles.",
+            "D": "Asignar siempre la cobertura al docente orientador, aunque la actividad no corresponda a su función."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Cobertura de Ausencias Docentes",
+        "competencia": "Organización responsable del servicio educativo",
+        "claim_evaluado": "El evaluado comprende que la atención de una ausencia docente es una responsabilidad de organización institucional, liderada por directivos docentes, y debe evitar prácticas que puedan convertirse en sobrecarga indebida o acoso laboral hacia otros pares.",
+        "evidencia": "Selecciona una actuación que activa una solución institucional planificada y respetuosa de funciones, jornada y derechos laborales.",
+        "proceso_cognitivo": "Análisis y juicio institucional",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media-Alta",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Impone una carga informal y potencialmente indebida a otro docente.",
+            "B": "Desconoce la obligación institucional de organizar el servicio educativo.",
+            "D": "Confunde funciones del docente orientador con reemplazo ordinario de ausencias."
+        },
+        "fuente_autorizada": [
+            "Manual de funciones docente y directivo docente",
+            "Decreto 1850 de 2002",
+            "Normativa laboral docente",
+            "Gestión institucional del servicio educativo"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque la ausencia docente debe gestionarse institucionalmente, con liderazgo directivo y medidas respetuosas de funciones, jornada y derechos laborales.",
+        "opcion_A": "Es incorrecta porque impone una solución informal y puede generar sobrecarga indebida.",
+        "opcion_B": "Es incorrecta porque la institución debe garantizar organización del servicio.",
+        "opcion_D": "Es incorrecta porque el orientador no debe convertirse automáticamente en reemplazo de docentes ausentes."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem evita afirmar una obligación absoluta de reemplazo sobre un docente par y promueve una gestión institucional responsable."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado con observación",
+        "observacion": "Conviene revisar contra el manual de funciones y las directrices territoriales específicas antes de uso definitivo, porque la organización de contingencias puede variar por entidad territorial.",
+        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 5 preguntas sobre autonomía institucional, enfoques de convivencia y organización del servicio educativo."
+    }
+}

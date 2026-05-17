@@ -1,0 +1,40 @@
+{
+    "id_item": "MTV_B10_I16",
+    "archivo_sugerido": "MTV_B10_I16_likert_coherencia_item_rol_docente.json",
+    "proposito_de_uso": "Evaluar si el aspirante integra los criterios principales para responder una escala Likert docente.",
+    "blueprint": {
+        "componente_modulo": "Criterios integrales de respuesta Likert",
+        "competencia": "Lectura crítica y respuesta profesional",
+        "afirmacion": "Responder una escala Likert docente exige leer la proposición completa, identificar polaridad, frecuencia, absolutos, dimensión evaluada y coherencia con el rol profesional.",
+        "evidencia_observable": "Selecciona un procedimiento de análisis completo antes de responder.",
+        "tipo_de_evidencia": "Síntesis procedimental",
+        "dificultad_esperada": "Alta",
+        "clave": "D"
+    },
+    "item": {
+        "enunciado": "Antes de responder una proposición en una prueba Likert docente, un aspirante quiere aplicar un procedimiento de lectura responsable.\n\n¿Cuál procedimiento es más adecuado?",
+        "opciones": {
+            "A": "Responder rápido sin leer los adverbios ni las negaciones.",
+            "B": "Marcar siempre el extremo más favorable, sin importar la proposición.",
+            "C": "Responder desde emociones personales o experiencias aisladas.",
+            "D": "Leer la proposición completa, identificar si es positiva, negativa, limitante, absoluta o neutra, ubicar la dimensión evaluada y contrastarla con el rol profesional docente."
+        },
+        "respuesta_correcta": "D"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción D es correcta porque integra lectura completa, análisis lingüístico, dimensión evaluada y rol profesional.",
+        "distractores": {
+            "A": "Aumenta el riesgo de error por lectura superficial.",
+            "B": "Promueve respuesta automática y poco coherente.",
+            "C": "Subordina la respuesta profesional a emociones personales."
+        }
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado",
+        "argumento": "El ítem promueve comprensión ética y técnica de la escala, no manipulación."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem recomendado como cierre del bloque."
+    }
+}

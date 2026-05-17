@@ -1,0 +1,36 @@
+{
+    "id_item": "MTV_B11_I12",
+    "archivo_sugerido": "MTV_B11_I12_conocimiento_previo_constructivismo.json",
+    "proposito_de_uso": "Evaluar si el aspirante reconoce el papel de los saberes previos en el constructivismo.",
+    "blueprint": {
+        "componente_modulo": "Saberes previos",
+        "competencia": "Activación de conocimientos iniciales",
+        "afirmacion": "El constructivismo parte de los saberes previos para construir nuevos significados y generar aprendizaje significativo.",
+        "evidencia_observable": "Identifica una práctica de activación de ideas previas antes de enseñar un concepto.",
+        "tipo_de_evidencia": "Reconocimiento didáctico aplicado",
+        "dificultad_esperada": "Media",
+        "clave": "A"
+    },
+    "item": {
+        "enunciado": "Antes de enseñar un concepto nuevo, una docente pregunta qué saben los estudiantes, qué experiencias han tenido y qué explicaciones iniciales poseen sobre el tema.\n\n¿Qué principio constructivista está aplicando?",
+        "opciones": {
+            "A": "Activación de saberes previos.",
+            "B": "Repetición mecánica sin contexto.",
+            "C": "Evaluación punitiva final.",
+            "D": "Transmisión unilateral del libro."
+        },
+        "respuesta_correcta": "A"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque la docente indaga conocimientos iniciales para construir nuevos aprendizajes.",
+        "distractores": {
+            "B": "No hay repetición mecánica.",
+            "C": "No se trata de castigo o evaluación final.",
+            "D": "La docente no se limita a transmitir contenidos."
+        }
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem básico para enlazar con Ausubel."
+    }
+}

@@ -1,0 +1,99 @@
+{
+    "id_item": "DIL_B05_I03",
+    "archivo_sugerido": "DIL_B05_I03_responsabilidad_penal_adolescente_vs_proteccion_menor_14.json",
+    "bloque": {
+        "codigo_bloque": "DIL_B05",
+        "nombre": "Menor infractor, edad penal y rutas de protección",
+        "estado_en_lista": "Bloque 5 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 3 de 3"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante diferencia la responsabilidad penal adolescente aplicable a mayores de 14 y menores de 18 años de la ruta protectora para personas menores de 14 años.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, convivencia, orientación, coordinación, protección integral o responsabilidad penal adolescente.",
+        "blueprint": {
+            "problematica_principal": "Confusión entre edad mínima de responsabilidad penal adolescente y ruta de protección para menores de 14 años.",
+            "fuente_autorizada": [
+                "Ley 1098 de 2006",
+                "Sistema de Responsabilidad Penal para Adolescentes",
+                "Protección integral",
+                "Justicia restaurativa",
+                "ICBF"
+            ],
+            "componente_modulo": "Edad penal y protección integral",
+            "competencia": "Diferenciación de rutas según edad",
+            "afirmacion": "La ruta cambia según edad: menores de 14 años van a protección y restablecimiento; adolescentes de 14 a 18 años pueden entrar al sistema especializado.",
+            "evidencia_observable": "Distingue correctamente la edad y el tipo de respuesta institucional.",
+            "tipo_de_evidencia": "Comprensión normativa comparativa",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que la edad es un criterio jurídico central para decidir entre ruta de protección y sistema especializado de responsabilidad penal adolescente.",
+        "evidencia_observable": "Selecciona una comparación adecuada entre menor de 14 años y adolescente de 14 a 18 años.",
+        "tarea_cognitiva": "Comparar rutas legales según edad.",
+        "tipo_de_pregunta": "Pregunta comparativa normativa",
+        "dificultad_esperada": "Media-Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Tratar a todos los menores como adultos penales",
+                "revision": "La clave diferencia sistema especializado y protección."
+            },
+            {
+                "riesgo": "Confundir protección con ausencia de medidas",
+                "revision": "La opción correcta incluye medidas de verificación, educación y protección."
+            },
+            {
+                "riesgo": "Ignorar el carácter pedagógico y restaurativo",
+                "revision": "El ítem mantiene enfoque especializado."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En una capacitación institucional se analiza la diferencia entre un niño menor de 14 años que participa en una conducta punible y un adolescente mayor de 14 y menor de 18 años que incurre en una conducta semejante.\n\n¿Cuál comparación es correcta?",
+        "opciones": {
+            "A": "La persona menor de 14 años no entra a responsabilidad penal adolescente y debe remitirse a protección y restablecimiento; el adolescente entre 14 y 18 años puede ingresar al sistema especializado, con enfoque pedagógico, restaurativo y diferenciado.",
+            "B": "Ambos deben ser tratados exactamente como adultos en el sistema penal ordinario.",
+            "C": "El menor de 14 años debe recibir una pena más fuerte por no tener edad suficiente para comprender.",
+            "D": "Ninguno requiere actuación institucional porque toda conducta punible cometida por menores debe ignorarse."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Edad penal y protección integral",
+        "competencia": "Diferenciación de rutas según edad",
+        "claim_evaluado": "El evaluado comprende que la edad es un criterio jurídico central para decidir entre ruta de protección y sistema especializado de responsabilidad penal adolescente.",
+        "evidencia": "Selecciona una comparación adecuada entre menor de 14 años y adolescente de 14 a 18 años.",
+        "proceso_cognitivo": "Comprensión normativa comparativa",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media-Alta",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Desconoce el carácter especializado del sistema de adolescentes.",
+            "C": "Invierte el enfoque protector y pedagógico.",
+            "D": "Confunde no judicialización penal con ausencia de actuación."
+        },
+        "fuente_autorizada": [
+            "Ley 1098 de 2006",
+            "Sistema de Responsabilidad Penal para Adolescentes",
+            "Protección integral",
+            "Justicia restaurativa",
+            "ICBF"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque diferencia la ruta protectora para menores de 14 años y el sistema especializado para adolescentes de 14 a 18 años.",
+        "opcion_B": "Es incorrecta porque los adolescentes no son tratados como adultos ordinarios.",
+        "opcion_C": "Es incorrecta porque propone una sanción más severa incompatible con el enfoque de derechos.",
+        "opcion_D": "Es incorrecta porque debe haber actuación institucional protectora o especializada según el caso."
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado con revisión normativa recomendada.",
+        "argumento": "El ítem evita tanto la criminalización indebida como la omisión institucional."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Validar con normas vigentes del Sistema de Responsabilidad Penal para Adolescentes antes de aplicación definitiva.",
+        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 3 preguntas sobre menor infractor, edad penal y rutas de protección."
+    }
+}

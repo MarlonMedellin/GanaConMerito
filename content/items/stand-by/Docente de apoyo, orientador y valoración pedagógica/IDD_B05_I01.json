@@ -1,0 +1,99 @@
+{
+    "id_item": "IDD_B05_I01",
+    "archivo_sugerido": "IDD_B05_I01_funcion_docente_apoyo_maestro_aula.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B05",
+        "nombre": "Docente de apoyo, orientador y valoración pedagógica",
+        "estado_en_lista": "Bloque 5 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 1 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce la función principal del docente de apoyo frente al maestro de aula que atiende estudiantes con discapacidad.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión educativa, apoyo pedagógico, orientación escolar o coordinación académica.",
+        "blueprint": {
+            "problematica_principal": "Confusión entre acompañamiento pedagógico del docente de apoyo y sustitución del maestro de aula.",
+            "fuente_autorizada": [
+                "Decreto 1421 de 2017",
+                "Manual de funciones docente",
+                "Orientaciones MEN sobre educación inclusiva",
+                "PIAR",
+                "DUA"
+            ],
+            "componente_modulo": "Rol del docente de apoyo",
+            "competencia": "Trabajo colaborativo para la inclusión",
+            "afirmacion": "El docente de apoyo asesora, acompaña y orienta al maestro de aula en la identificación de barreras, ajustes y estrategias inclusivas.",
+            "evidencia_observable": "Reconoce que el docente de apoyo no reemplaza al maestro de aula ni retira al estudiante del proceso común.",
+            "tipo_de_evidencia": "Reconocimiento funcional aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "B"
+        },
+        "claim": "El evaluado comprende que el docente de apoyo cumple una función de asesoría, acompañamiento y articulación pedagógica, mientras el maestro de aula mantiene la responsabilidad directa de la enseñanza.",
+        "evidencia_observable": "Selecciona una definición adecuada del rol del docente de apoyo en relación con el maestro de aula.",
+        "tarea_cognitiva": "Diferenciar apoyo pedagógico colaborativo de sustitución, segregación o delegación total.",
+        "tipo_de_pregunta": "Pregunta conceptual aplicada",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Sobrecargar al docente de apoyo como único responsable de la inclusión",
+                "revision": "La clave distribuye responsabilidades entre maestro de aula, docente de apoyo y equipo institucional."
+            },
+            {
+                "riesgo": "Desresponsabilizar al maestro de aula",
+                "revision": "La opción correcta mantiene su liderazgo pedagógico."
+            },
+            {
+                "riesgo": "Confundir apoyo con retiro del estudiante",
+                "revision": "La clave conserva la participación del estudiante en el aula común."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Una institución recibe a varios estudiantes con discapacidad. Algunos docentes consideran que, desde ese momento, el docente de apoyo debe asumir completamente la enseñanza de esos estudiantes y retirarlos del aula cuando haya dificultades.\n\n¿Cuál es la función principal del docente de apoyo frente al maestro de aula?",
+        "opciones": {
+            "A": "Reemplazar al maestro de aula y enseñar por separado todos los contenidos al estudiante con discapacidad.",
+            "B": "Asesorar, acompañar y orientar al maestro de aula en la identificación de barreras, ajustes razonables, apoyos y estrategias inclusivas.",
+            "C": "Encargarse únicamente de trámites administrativos sin intervenir en procesos pedagógicos.",
+            "D": "Decidir que los estudiantes con discapacidad no participen en las actividades del grupo."
+        },
+        "respuesta_correcta": "B"
+    },
+    "ficha_tecnica": {
+        "componente": "Rol del docente de apoyo",
+        "competencia": "Trabajo colaborativo para la inclusión",
+        "claim_evaluado": "El evaluado comprende que el docente de apoyo cumple una función de asesoría, acompañamiento y articulación pedagógica, mientras el maestro de aula mantiene la responsabilidad directa de la enseñanza.",
+        "evidencia": "Selecciona una definición adecuada del rol del docente de apoyo en relación con el maestro de aula.",
+        "proceso_cognitivo": "Reconocimiento funcional aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "B",
+        "distractores": {
+            "A": "Convierte el apoyo en sustitución y segregación.",
+            "C": "Reduce el rol a gestión administrativa.",
+            "D": "Propone exclusión de la participación común."
+        },
+        "fuente_autorizada": [
+            "Decreto 1421 de 2017",
+            "Manual de funciones docente",
+            "Orientaciones MEN sobre educación inclusiva",
+            "PIAR",
+            "DUA"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque el docente de apoyo orienta y acompaña la inclusión, pero no sustituye al maestro de aula.",
+        "opcion_A": "Es incorrecta porque separa al estudiante y desplaza la responsabilidad pedagógica.",
+        "opcion_C": "Es incorrecta porque desconoce el acompañamiento pedagógico.",
+        "opcion_D": "Es incorrecta porque niega participación y aprendizaje en el aula común."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem evita tanto la segregación del estudiante como la sobrecarga de un solo actor institucional."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre docente de apoyo, orientación y valoración pedagógica."
+    }
+}

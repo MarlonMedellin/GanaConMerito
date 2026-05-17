@@ -1,0 +1,99 @@
+{
+    "id_item": "IDD_B06_I03",
+    "archivo_sugerido": "IDD_B06_I03_estudiante_extranjero_sociales_respeto_realidad_pais.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B06",
+        "nombre": "Inclusión práctica vs. segregación en aula",
+        "estado_en_lista": "Bloque 6 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 3 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce cómo materializar el respeto por un estudiante extranjero en la clase de sociales sin imponer opiniones que vulneren su identidad o realidad nacional.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, ciencias sociales, inclusión, convivencia o educación intercultural.",
+        "blueprint": {
+            "problematica_principal": "Tratamiento de la diversidad cultural desde estereotipos, imposiciones o desconocimiento de la experiencia del estudiante extranjero.",
+            "fuente_autorizada": [
+                "Educación inclusiva",
+                "Interculturalidad",
+                "Ley 1098 de 2006",
+                "Constitución Política de Colombia",
+                "Enfoque de derechos"
+            ],
+            "componente_modulo": "Inclusión práctica en ciencias sociales",
+            "competencia": "Respeto por diversidad cultural y nacional",
+            "afirmacion": "La inclusión cultural exige reconocer la voz del estudiante, evitar estereotipos y construir diálogo respetuoso sobre contextos nacionales.",
+            "evidencia_observable": "Selecciona una estrategia que permite participación, contraste de fuentes y respeto por la experiencia cultural del estudiante.",
+            "tipo_de_evidencia": "Juicio intercultural aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que el respeto por un estudiante extranjero se materializa en prácticas pedagógicas que evitan estigmas, escuchan su experiencia y promueven análisis crítico con fuentes diversas.",
+        "evidencia_observable": "Selecciona una actuación docente que evita imponer una visión única o descalificadora sobre el país de origen del estudiante.",
+        "tarea_cognitiva": "Analizar una situación intercultural y elegir una mediación respetuosa.",
+        "tipo_de_pregunta": "Caso situacional de juicio intercultural",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Estigmatizar una nacionalidad",
+                "revision": "La clave exige evitar generalizaciones y trabajar con fuentes diversas."
+            },
+            {
+                "riesgo": "Forzar al estudiante extranjero a representar a todo su país",
+                "revision": "La opción correcta permite participación voluntaria y respetuosa."
+            },
+            {
+                "riesgo": "Confundir respeto con evitar el análisis crítico",
+                "revision": "La clave permite análisis, pero sin imposición ni menosprecio."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En una clase de sociales se aborda la situación política y económica de distintos países. Hay un estudiante extranjero en el grupo y algunos compañeros hacen comentarios generalizantes sobre su país de origen. El docente quiere promover inclusión real sin imponer opiniones que vulneren su identidad.\n\n¿Qué actuación es más adecuada?",
+        "opciones": {
+            "A": "Abrir un diálogo respetuoso, evitar estereotipos, usar fuentes diversas y permitir que el estudiante participe voluntariamente sin exigirle representar a todo su país.",
+            "B": "Pedirle al estudiante que defienda obligatoriamente a su país frente al grupo.",
+            "C": "Permitir burlas o comentarios ofensivos porque hacen parte del debate.",
+            "D": "Prohibir cualquier conversación sobre otros países para evitar incomodidades."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Inclusión práctica en ciencias sociales",
+        "competencia": "Respeto por diversidad cultural y nacional",
+        "claim_evaluado": "El evaluado comprende que el respeto por un estudiante extranjero se materializa en prácticas pedagógicas que evitan estigmas, escuchan su experiencia y promueven análisis crítico con fuentes diversas.",
+        "evidencia": "Selecciona una actuación docente que evita imponer una visión única o descalificadora sobre el país de origen del estudiante.",
+        "proceso_cognitivo": "Juicio intercultural aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Carga al estudiante con representar obligatoriamente a un país entero.",
+            "C": "Normaliza comentarios ofensivos.",
+            "D": "Evita el aprendizaje intercultural en lugar de orientarlo."
+        },
+        "fuente_autorizada": [
+            "Educación inclusiva",
+            "Interculturalidad",
+            "Ley 1098 de 2006",
+            "Constitución Política de Colombia",
+            "Enfoque de derechos"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque promueve análisis crítico, respeto, fuentes diversas y participación voluntaria sin estigmatizar.",
+        "opcion_B": "Es incorrecta porque obliga al estudiante a asumir una representación injusta.",
+        "opcion_C": "Es incorrecta porque vulnera la dignidad y convivencia.",
+        "opcion_D": "Es incorrecta porque evita el diálogo intercultural necesario."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem evita estereotipos nacionales y protege la participación voluntaria del estudiante extranjero."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre inclusión práctica vs. segregación en aula."
+    }
+}

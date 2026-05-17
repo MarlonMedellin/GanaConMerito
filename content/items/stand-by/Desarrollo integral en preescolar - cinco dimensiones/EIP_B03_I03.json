@@ -1,0 +1,40 @@
+{
+    "id_item": "EIP_B03_I03",
+    "archivo_sugerido": "EIP_B03_I03_dimension_socioafectiva_preescolar.json",
+    "proposito_de_uso": "Evaluar si el aspirante reconoce la dimensión socioafectiva como parte del desarrollo integral en preescolar.",
+    "blueprint": {
+        "componente_modulo": "Dimensión socioafectiva",
+        "competencia": "Comprensión del desarrollo emocional y relacional",
+        "afirmacion": "La dimensión socioafectiva involucra vínculos, emociones, convivencia, autoestima, relación con pares y participación en experiencias de socialización.",
+        "evidencia_observable": "Identifica la importancia de acompañar emociones, vínculos y relaciones en el aula preescolar.",
+        "tipo_de_evidencia": "Juicio pedagógico aplicado",
+        "dificultad_esperada": "Media",
+        "clave": "B"
+    },
+    "item": {
+        "enunciado": "Un niño de preescolar llora al separarse de su acudiente, tiene dificultad para integrarse al grupo y necesita acompañamiento para expresar sus emociones. La docente afirma que eso no hace parte de su trabajo porque no es contenido académico.\n\n¿Qué dimensión del desarrollo integral está dejando de atender?",
+        "opciones": {
+            "A": "La dimensión comercial.",
+            "B": "La dimensión socioafectiva.",
+            "C": "La dimensión contable.",
+            "D": "La dimensión punitiva."
+        },
+        "respuesta_correcta": "B"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque las emociones, vínculos, adaptación y relaciones con otros hacen parte de la dimensión socioafectiva.",
+        "distractores": {
+            "A": "No guarda relación con el desarrollo integral del niño.",
+            "C": "No corresponde al nivel ni al contenido preguntado.",
+            "D": "Refuerza una visión sancionatoria inadecuada para el caso."
+        }
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado",
+        "argumento": "El ítem evita patologizar emociones infantiles y promueve acompañamiento pedagógico."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem apto para banco con revisión psicopedagógica posterior."
+    }
+}

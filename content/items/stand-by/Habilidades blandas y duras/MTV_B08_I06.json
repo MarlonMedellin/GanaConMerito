@@ -1,0 +1,40 @@
+{
+    "id_item": "MTV_B08_I06",
+    "archivo_sugerido": "MTV_B08_I06_habilidad_blanda_comunicacion_asertiva.json",
+    "proposito_de_uso": "Evaluar si el aspirante reconoce la comunicación asertiva como habilidad blanda esencial en el contexto docente.",
+    "blueprint": {
+        "componente_modulo": "Comunicación asertiva",
+        "competencia": "Aplicación de habilidades blandas en interacción escolar",
+        "afirmacion": "La comunicación asertiva permite expresar ideas, límites y desacuerdos con respeto, claridad y autocontrol.",
+        "evidencia_observable": "Selecciona una actuación comunicativa respetuosa ante una situación de conflicto.",
+        "tipo_de_evidencia": "Juicio situacional comportamental",
+        "dificultad_esperada": "Media",
+        "clave": "D"
+    },
+    "item": {
+        "enunciado": "Durante una reunión, un padre de familia cuestiona duramente la metodología de un docente. El docente se siente incómodo, pero decide escuchar, controlar su tono de voz, responder con argumentos y proponer una ruta de diálogo.\n\n¿Qué habilidad blanda está evidenciando principalmente?",
+        "opciones": {
+            "A": "Memorización normativa.",
+            "B": "Cálculo lógico-matemático.",
+            "C": "Dominio exclusivo de contenidos disciplinares.",
+            "D": "Comunicación asertiva."
+        },
+        "respuesta_correcta": "D"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción D es correcta porque el docente expresa y gestiona la situación con respeto, claridad y control emocional.",
+        "distractores": {
+            "A": "Memorizar normas no describe la interacción comunicativa.",
+            "B": "El cálculo lógico no es el eje de la situación.",
+            "C": "El dominio disciplinar no basta para explicar el manejo del conflicto."
+        }
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado",
+        "argumento": "El caso evalúa conducta profesional sin culpar ni caricaturizar al padre o al docente."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem situacional útil para prueba comportamental."
+    }
+}

@@ -1,0 +1,99 @@
+{
+    "id_item": "IDD_B07_I04",
+    "archivo_sugerido": "IDD_B07_I04_equidad_sin_estigmatizacion_contexto_familiar.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B07",
+        "nombre": "Inclusión, equidad socioeconómica y adaptabilidad curricular",
+        "estado_en_lista": "Bloque 7 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 4 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce cómo actuar ante condiciones familiares o sociales que afectan el aprendizaje, sin estigmatizar ni reducir expectativas.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, inclusión educativa, coordinación académica o convivencia escolar.",
+        "blueprint": {
+            "problematica_principal": "Estigmatización de estudiantes por condiciones familiares, económicas o sociales que inciden en el aprendizaje.",
+            "fuente_autorizada": [
+                "Ley 1098 de 2006",
+                "Decreto 1421 de 2017",
+                "Enfoque de equidad",
+                "Educación inclusiva",
+                "Evaluación formativa"
+            ],
+            "componente_modulo": "Equidad, contexto y aprendizaje",
+            "competencia": "Respuesta pedagógica no estigmatizante",
+            "afirmacion": "Las condiciones del contexto deben leerse como factores para orientar apoyos, no como etiquetas que definan la capacidad del estudiante.",
+            "evidencia_observable": "Selecciona una intervención que indaga causas, protege la dignidad, articula apoyos y mantiene expectativas formativas.",
+            "tipo_de_evidencia": "Juicio pedagógico y socioemocional aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que las barreras de contexto deben abordarse con sensibilidad social, confidencialidad, apoyos y seguimiento, evitando etiquetas o juicios de valor.",
+        "evidencia_observable": "Elige una actuación que acompaña sin estigmatizar y ajusta la enseñanza cuando el contexto afecta el aprendizaje.",
+        "tarea_cognitiva": "Analizar una situación de vulnerabilidad contextual y seleccionar una respuesta equitativa.",
+        "tipo_de_pregunta": "Caso situacional de juicio profesional",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Estigmatizar por pobreza o situación familiar",
+                "revision": "La clave evita etiquetas y trabaja con apoyos."
+            },
+            {
+                "riesgo": "Bajar expectativas por contexto",
+                "revision": "La opción correcta mantiene propósitos con acompañamiento."
+            },
+            {
+                "riesgo": "Exponer información sensible",
+                "revision": "La clave incluye confidencialidad y trato digno."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un estudiante presenta bajo rendimiento y entregas incompletas. El docente conoce que atraviesa dificultades familiares y económicas. Algunos compañeros docentes proponen clasificarlo como irresponsable y dejar constancia pública de su situación.\n\n¿Qué actuación es más coherente con equidad e inclusión?",
+        "opciones": {
+            "A": "Etiquetarlo como irresponsable para que el grupo entienda las consecuencias.",
+            "B": "Bajar automáticamente todas las exigencias sin revisar qué apoyos necesita.",
+            "C": "Indagar con discreción, proteger su dignidad, articular apoyos, ajustar mediaciones cuando sea necesario y hacer seguimiento a sus avances.",
+            "D": "Ignorar la situación porque el contexto familiar nunca afecta el aprendizaje."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Equidad, contexto y aprendizaje",
+        "competencia": "Respuesta pedagógica no estigmatizante",
+        "claim_evaluado": "El evaluado comprende que las barreras de contexto deben abordarse con sensibilidad social, confidencialidad, apoyos y seguimiento, evitando etiquetas o juicios de valor.",
+        "evidencia": "Elige una actuación que acompaña sin estigmatizar y ajusta la enseñanza cuando el contexto afecta el aprendizaje.",
+        "proceso_cognitivo": "Análisis y juicio profesional",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Estigmatiza al estudiante y vulnera su dignidad.",
+            "B": "Confunde apoyo con reducción automática de expectativas.",
+            "D": "Desconoce la relación entre contexto, bienestar y aprendizaje."
+        },
+        "fuente_autorizada": [
+            "Ley 1098 de 2006",
+            "Decreto 1421 de 2017",
+            "Enfoque de equidad",
+            "Educación inclusiva",
+            "Evaluación formativa"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque combina confidencialidad, acompañamiento, apoyos y seguimiento sin estigmatizar ni eliminar metas formativas.",
+        "opcion_A": "Es incorrecta porque convierte una situación sensible en etiqueta pública.",
+        "opcion_B": "Es incorrecta porque no analiza necesidades reales de apoyo.",
+        "opcion_D": "Es incorrecta porque el contexto puede incidir en el aprendizaje y la permanencia."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem protege la dignidad del estudiante y evita conclusiones deficitarias sobre su capacidad o responsabilidad."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre inclusión, equidad socioeconómica y adaptabilidad curricular."
+    }
+}

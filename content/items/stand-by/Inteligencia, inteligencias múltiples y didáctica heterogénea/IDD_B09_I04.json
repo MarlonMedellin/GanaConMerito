@@ -1,0 +1,99 @@
+{
+    "id_item": "IDD_B09_I04",
+    "archivo_sugerido": "IDD_B09_I04_evaluacion_diversificada_inteligencias_multiples.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B09",
+        "nombre": "Inteligencia, inteligencias múltiples y didáctica heterogénea",
+        "estado_en_lista": "Bloque 9 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 4 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende que una evaluación inclusiva puede permitir distintas formas de demostrar comprensión, sin perder criterios ni propósito común.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, evaluación formativa, inclusión educativa o didáctica.",
+        "blueprint": {
+            "problematica_principal": "Evaluación homogénea que solo reconoce una forma de evidenciar aprendizaje.",
+            "fuente_autorizada": [
+                "Inteligencias múltiples",
+                "DUA",
+                "Evaluación formativa",
+                "Educación inclusiva",
+                "Evaluación por competencias"
+            ],
+            "componente_modulo": "Evaluación diversificada e inteligencias múltiples",
+            "competencia": "Diseño de evidencias de aprendizaje diversas",
+            "afirmacion": "La evaluación puede diversificar productos y formas de expresión, manteniendo criterios comunes de calidad.",
+            "evidencia_observable": "Reconoce que los estudiantes pueden demostrar comprensión mediante explicación oral, representación gráfica, solución de problemas, producto escrito o actividad colaborativa.",
+            "tipo_de_evidencia": "Juicio evaluativo aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "D"
+        },
+        "claim": "El evaluado comprende que diversificar la evaluación no significa perder rigor, sino ampliar las vías para que los estudiantes evidencien comprensión.",
+        "evidencia_observable": "Selecciona una estrategia evaluativa que ofrece diferentes formas de evidenciar el mismo aprendizaje con criterios claros.",
+        "tarea_cognitiva": "Elegir una práctica evaluativa coherente con diversidad cognitiva e inclusión.",
+        "tipo_de_pregunta": "Caso situacional de juicio evaluativo",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir diversidad evaluativa con evaluación sin criterios",
+                "revision": "La clave mantiene criterios comunes."
+            },
+            {
+                "riesgo": "Favorecer una sola forma de expresión",
+                "revision": "El ítem promueve múltiples evidencias."
+            },
+            {
+                "riesgo": "Bajar rigor por inclusión",
+                "revision": "La opción correcta conserva el propósito y los criterios de calidad."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un docente quiere evaluar la comprensión de un concepto en un grupo heterogéneo. Sabe que algunos estudiantes se expresan mejor oralmente, otros mediante dibujos o esquemas, otros resolviendo problemas y otros escribiendo explicaciones.\n\n¿Qué decisión evaluativa es más coherente con inteligencias múltiples, DUA e inclusión?",
+        "opciones": {
+            "A": "Exigir una única prueba escrita para todos, aunque no sea la mejor vía para evidenciar comprensión.",
+            "B": "Eliminar la evaluación para evitar diferencias entre estudiantes.",
+            "C": "Calificar solo la presentación estética del trabajo, sin criterios de comprensión.",
+            "D": "Permitir distintas formas de producto o expresión, manteniendo el mismo propósito de aprendizaje y criterios claros de evaluación."
+        },
+        "respuesta_correcta": "D"
+    },
+    "ficha_tecnica": {
+        "componente": "Evaluación diversificada e inteligencias múltiples",
+        "competencia": "Diseño de evidencias de aprendizaje diversas",
+        "claim_evaluado": "El evaluado comprende que diversificar la evaluación no significa perder rigor, sino ampliar las vías para que los estudiantes evidencien comprensión.",
+        "evidencia": "Selecciona una estrategia evaluativa que ofrece diferentes formas de evidenciar el mismo aprendizaje con criterios claros.",
+        "proceso_cognitivo": "Juicio evaluativo aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "D",
+        "distractores": {
+            "A": "Mantiene una evaluación homogénea que puede generar barreras.",
+            "B": "Confunde inclusión con ausencia de evaluación.",
+            "C": "Desplaza el foco desde la comprensión hacia la apariencia."
+        },
+        "fuente_autorizada": [
+            "Inteligencias múltiples",
+            "DUA",
+            "Evaluación formativa",
+            "Educación inclusiva",
+            "Evaluación por competencias"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción D es correcta porque diversifica formas de expresión sin perder propósito ni criterios.",
+        "opcion_A": "Es incorrecta porque una única prueba puede no permitir evidenciar comprensión a todos.",
+        "opcion_B": "Es incorrecta porque la evaluación puede ser flexible sin desaparecer.",
+        "opcion_C": "Es incorrecta porque no evalúa la comprensión del concepto."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem promueve diversas formas de demostrar aprendizaje, sin disminuir criterios de calidad ni rigor académico."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre inteligencia, inteligencias múltiples y didáctica heterogénea."
+    }
+}

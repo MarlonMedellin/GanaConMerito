@@ -1,0 +1,98 @@
+{
+    "id_item": "EIP_B02_I04",
+    "archivo_sugerido": "EIP_B02_I04_preescolar_integrado_sistema_educativo_formal.json",
+    "bloque": {
+        "codigo_bloque": "EIP_B02",
+        "nombre": "Marco legal del preescolar y organización del nivel",
+        "estado_en_lista": "Bloque 2 de 7",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 4 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende que el preescolar forma parte de la educación formal y no es simple guardería o cuidado asistencial.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con educación preescolar, educación inicial, gestión educativa, docencia o política pública educativa.",
+        "blueprint": {
+            "problematica_principal": "Reducir el preescolar a cuidado asistencial sin finalidad pedagógica, curricular y formativa.",
+            "fuente_autorizada": [
+                "Ley 115 de 1994",
+                "Decreto 2247 de 1997",
+                "Educación formal",
+                "Educación preescolar",
+                "Desarrollo integral"
+            ],
+            "componente_modulo": "Preescolar dentro del sistema educativo",
+            "competencia": "Comprensión del carácter educativo del preescolar",
+            "afirmacion": "El preescolar está integrado al sistema educativo formal y tiene finalidad pedagógica orientada al desarrollo integral.",
+            "evidencia_observable": "Distingue educación preescolar de simple custodia o asistencia.",
+            "tipo_de_evidencia": "Juicio normativo-pedagógico aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "D"
+        },
+        "claim": "El evaluado comprende que la educación preescolar tiene sentido curricular y pedagógico propio dentro del sistema educativo.",
+        "evidencia_observable": "Selecciona la opción que reconoce el carácter educativo y formal del preescolar.",
+        "tarea_cognitiva": "Interpretar la naturaleza del nivel preescolar dentro del sistema educativo.",
+        "tipo_de_pregunta": "Pregunta conceptual normativa",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Desvalorizar el trabajo pedagógico de maestras de preescolar",
+                "revision": "La clave reconoce el carácter educativo del nivel."
+            },
+            {
+                "riesgo": "Reducir cuidado a algo sin valor",
+                "revision": "La opción correcta integra cuidado y pedagogía dentro del desarrollo integral."
+            },
+            {
+                "riesgo": "Escolarizar prematuramente el preescolar",
+                "revision": "El ítem reconoce finalidad pedagógica propia, no primaria adelantada."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Una familia afirma que el preescolar es solo un lugar para cuidar niños mientras los padres trabajan, y que no requiere planeación pedagógica ni currículo. La institución aclara su lugar dentro del sistema educativo.\n\n¿Cuál explicación es más adecuada?",
+        "opciones": {
+            "A": "El preescolar es únicamente guardería y no tiene finalidad educativa.",
+            "B": "El preescolar debe funcionar como bachillerato adelantado.",
+            "C": "El preescolar no pertenece al sistema educativo formal.",
+            "D": "El preescolar hace parte de la educación formal y busca el desarrollo integral mediante experiencias pedagógicas, lúdicas, participativas y acordes con la edad."
+        },
+        "respuesta_correcta": "D"
+    },
+    "ficha_tecnica": {
+        "componente": "Preescolar dentro del sistema educativo",
+        "competencia": "Comprensión del carácter educativo del preescolar",
+        "claim_evaluado": "El evaluado comprende que la educación preescolar tiene sentido curricular y pedagógico propio dentro del sistema educativo.",
+        "evidencia": "Selecciona la opción que reconoce el carácter educativo y formal del preescolar.",
+        "proceso_cognitivo": "Juicio normativo-pedagógico aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "D",
+        "distractores": {
+            "A": "Reduce el preescolar a custodia asistencial.",
+            "B": "Confunde preescolar con escolarización prematura.",
+            "C": "Desconoce su integración al sistema educativo formal."
+        },
+        "fuente_autorizada": [
+            "Ley 115 de 1994",
+            "Decreto 2247 de 1997",
+            "Educación formal",
+            "Educación preescolar"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción D es correcta porque reconoce el carácter formal, pedagógico e integral del nivel preescolar.",
+        "opcion_A": "Es incorrecta porque el preescolar no es solo cuidado.",
+        "opcion_B": "Es incorrecta porque no debe funcionar como bachillerato ni primaria adelantada.",
+        "opcion_C": "Es incorrecta porque el preescolar sí hace parte del sistema educativo formal."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem valora el cuidado y la pedagogía sin reducir el nivel a asistencia ni exigir escolarización prematura."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión normativa posterior.",
+        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 5 preguntas sobre marco legal del preescolar y organización del nivel."
+    }
+}

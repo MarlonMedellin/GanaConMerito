@@ -1,0 +1,98 @@
+{
+    "id_item": "EIP_B01_I04",
+    "archivo_sugerido": "EIP_B01_I04_educacion_sexual_transversal_no_charla_aislada.json",
+    "bloque": {
+        "codigo_bloque": "EIP_B01",
+        "nombre": "Currículo obligatorio y proyectos pedagógicos transversales",
+        "estado_en_lista": "Bloque 1 de 7",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 4 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende que la educación sexual debe implementarse como proceso pedagógico transversal, gradual, contextualizado y respetuoso de la edad.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, currículo, convivencia, preescolar o gestión institucional.",
+        "blueprint": {
+            "problematica_principal": "Tratar la educación sexual como una charla aislada, tardía o exclusivamente informativa, desconectada del desarrollo y la protección integral.",
+            "fuente_autorizada": [
+                "Ley 115 de 1994",
+                "Artículo 14 Ley 115",
+                "Educación sexual",
+                "Proyecto Educativo Institucional",
+                "Protección integral"
+            ],
+            "componente_modulo": "Educación sexual transversal",
+            "competencia": "Planeación pedagógica gradual y protectora",
+            "afirmacion": "La educación sexual debe trabajarse de forma transversal, gradual, científica, ética y acorde con la edad y el desarrollo de los estudiantes.",
+            "evidencia_observable": "Reconoce que no basta con una charla ocasional o tardía, sino que se requiere proceso pedagógico institucional.",
+            "tipo_de_evidencia": "Juicio curricular y formativo aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que la educación sexual es una enseñanza obligatoria que requiere enfoque pedagógico, desarrollo gradual y corresponsabilidad institucional.",
+        "evidencia_observable": "Selecciona la estrategia que integra educación sexual al currículo de forma adecuada a la edad.",
+        "tarea_cognitiva": "Valorar una forma de implementación curricular de educación sexual.",
+        "tipo_de_pregunta": "Caso situacional curricular",
+        "dificultad_esperada": "Media-Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Formular educación sexual de forma inadecuada para edad preescolar",
+                "revision": "La clave exige gradualidad, edad y desarrollo."
+            },
+            {
+                "riesgo": "Reducirla a biología reproductiva",
+                "revision": "La opción correcta incluye ética, cuidado y protección."
+            },
+            {
+                "riesgo": "Tratarla como actividad opcional",
+                "revision": "El ítem enfatiza su carácter institucional."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Una institución considera que cumple con educación sexual porque invita una vez al año a una charla general para todos los grados, sin diferenciar edades, necesidades, desarrollo ni contexto.\n\n¿Qué implementación sería más coherente con el currículo obligatorio?",
+        "opciones": {
+            "A": "Diseñar un proceso transversal, gradual y contextualizado, acorde con la edad y el desarrollo, articulado al PEI y orientado al cuidado, la dignidad, el respeto y la protección.",
+            "B": "Realizar una charla única y general, porque la educación sexual no requiere continuidad.",
+            "C": "Evitar todo trabajo pedagógico de educación sexual hasta el grado once.",
+            "D": "Delegar completamente el tema a agentes externos sin participación institucional."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Educación sexual transversal",
+        "competencia": "Planeación pedagógica gradual y protectora",
+        "claim_evaluado": "El evaluado comprende que la educación sexual es una enseñanza obligatoria que requiere enfoque pedagógico, desarrollo gradual y corresponsabilidad institucional.",
+        "evidencia": "Selecciona la estrategia que integra educación sexual al currículo de forma adecuada a la edad.",
+        "proceso_cognitivo": "Juicio curricular y formativo aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media-Alta",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Reduce el proceso a una actividad aislada.",
+            "C": "Desconoce la progresividad del trabajo formativo.",
+            "D": "Elude la responsabilidad institucional."
+        },
+        "fuente_autorizada": [
+            "Ley 115 de 1994",
+            "Artículo 14 Ley 115",
+            "Educación sexual",
+            "Proyecto Educativo Institucional"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque la educación sexual requiere proceso pedagógico transversal, gradual y acorde con el desarrollo.",
+        "opcion_B": "Es incorrecta porque una charla única no garantiza formación.",
+        "opcion_C": "Es incorrecta porque posterga indebidamente una enseñanza obligatoria.",
+        "opcion_D": "Es incorrecta porque la institución no puede delegar completamente su responsabilidad."
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado con revisión pedagógica recomendada.",
+        "argumento": "El ítem cuida el enfoque de edad, desarrollo, dignidad y protección integral."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Validar con el proyecto institucional de educación sexual y lineamientos vigentes.",
+        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 5 preguntas sobre currículo obligatorio y proyectos pedagógicos transversales."
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "id_item": "EIP_B07_I03",
+    "archivo_sugerido": "EIP_B07_I03_ciencia_escolar_no_memorizacion_mecanica.json",
+    "proposito_de_uso": "Evaluar si el aspirante diferencia ciencia escolar comprensiva de memorización mecánica.",
+    "blueprint": {
+        "componente_modulo": "Comprensión científica",
+        "competencia": "Diferenciación entre aprendizaje científico y repetición mecánica",
+        "afirmacion": "La ciencia escolar debe desarrollar comprensión, explicación, resolución de problemas, pensamiento crítico y uso de evidencias.",
+        "evidencia_observable": "Distingue una práctica científica formativa de una práctica tecnicista memorística.",
+        "tipo_de_evidencia": "Comprensión didáctica comparativa",
+        "dificultad_esperada": "Media-Alta",
+        "clave": "D"
+    },
+    "item": {
+        "enunciado": "En una clase de ciencias, los estudiantes pueden repetir definiciones y fórmulas, pero no logran explicar fenómenos cotidianos, interpretar evidencias ni resolver problemas sencillos. El docente quiere ajustar su metodología.\n\n¿Qué cambio sería más coherente con el desarrollo del pensamiento científico?",
+        "opciones": {
+            "A": "Aumentar la cantidad de fórmulas para memorizar sin explicación.",
+            "B": "Prohibir toda pregunta de los estudiantes para avanzar más rápido.",
+            "C": "Eliminar los fenómenos cotidianos porque no son científicos.",
+            "D": "Plantear problemas, observar fenómenos, analizar evidencias, discutir explicaciones y aplicar conceptos científicos en contexto."
+        },
+        "respuesta_correcta": "D"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción D es correcta porque desarrolla comprensión científica, pensamiento crítico y aplicación contextualizada.",
+        "distractores": {
+            "A": "Refuerza la memorización mecánica.",
+            "B": "Bloquea la indagación científica.",
+            "C": "Desconoce que los fenómenos cotidianos pueden ser punto de partida para la comprensión científica."
+        }
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado",
+        "argumento": "El ítem valora preguntas, evidencia y contexto sin negar la importancia del conocimiento científico formal."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem apto para banco como cierre del bloque de pensamiento científico."
+    }
+}

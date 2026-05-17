@@ -1,0 +1,99 @@
+{
+    "id_item": "IDD_B11_I03",
+    "archivo_sugerido": "IDD_B11_I03_conflicto_cognitivo_no_correccion_mecanica.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B11",
+        "nombre": "Error, conflicto cognitivo y reestructuración de esquemas",
+        "estado_en_lista": "Bloque 11 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 3 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante diferencia una corrección mecánica de un conflicto cognitivo orientado a reconstruir conocimiento.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, pedagogía, didáctica, evaluación formativa o constructivismo.",
+        "blueprint": {
+            "problematica_principal": "Corrección inmediata del error sin generar reflexión ni reconstrucción conceptual.",
+            "fuente_autorizada": [
+                "Constructivismo",
+                "Piaget",
+                "Conflicto cognitivo",
+                "Evaluación formativa",
+                "Aprendizaje significativo"
+            ],
+            "componente_modulo": "Conflicto cognitivo y aprendizaje",
+            "competencia": "Diseño de mediaciones para cambio conceptual",
+            "afirmacion": "El conflicto cognitivo se produce cuando una idea previa se confronta con evidencia o situación que obliga a reorganizar la comprensión.",
+            "evidencia_observable": "Reconoce una intervención docente que formula preguntas, genera contraste y orienta reflexión.",
+            "tipo_de_evidencia": "Juicio pedagógico aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "D"
+        },
+        "claim": "El evaluado comprende que el conflicto cognitivo no consiste en decir simplemente la respuesta correcta, sino en provocar una tensión productiva entre la idea previa y una nueva evidencia.",
+        "evidencia_observable": "Selecciona una actuación que guía al estudiante a revisar su explicación inicial.",
+        "tarea_cognitiva": "Diferenciar corrección transmisiva de mediación constructivista.",
+        "tipo_de_pregunta": "Pregunta conceptual aplicada con situación de aula",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir conflicto cognitivo con confrontación humillante",
+                "revision": "La clave propone preguntas y contraste respetuoso."
+            },
+            {
+                "riesgo": "Dejar al estudiante en confusión",
+                "revision": "La opción correcta incluye mediación docente."
+            },
+            {
+                "riesgo": "Validar cualquier idea previa sin revisión",
+                "revision": "El ítem exige reconstrucción a partir de evidencia."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un estudiante sostiene una explicación incorrecta sobre un fenómeno. El docente puede decirle simplemente la respuesta correcta o puede generar una situación para que el estudiante compare su idea con nueva evidencia.\n\n¿Cuál actuación corresponde mejor a un conflicto cognitivo formativo?",
+        "opciones": {
+            "A": "Decirle que está equivocado y pedirle copiar diez veces la respuesta correcta.",
+            "B": "Aceptar su explicación aunque contradiga la evidencia, para no incomodarlo.",
+            "C": "Cambiar de tema para evitar confusión.",
+            "D": "Plantear preguntas, mostrar evidencia o contraejemplos y guiar al estudiante para que revise y reorganice su explicación inicial."
+        },
+        "respuesta_correcta": "D"
+    },
+    "ficha_tecnica": {
+        "componente": "Conflicto cognitivo y aprendizaje",
+        "competencia": "Diseño de mediaciones para cambio conceptual",
+        "claim_evaluado": "El evaluado comprende que el conflicto cognitivo no consiste en decir simplemente la respuesta correcta, sino en provocar una tensión productiva entre la idea previa y una nueva evidencia.",
+        "evidencia": "Selecciona una actuación que guía al estudiante a revisar su explicación inicial.",
+        "proceso_cognitivo": "Análisis y juicio pedagógico",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "D",
+        "distractores": {
+            "A": "Reduce el aprendizaje a copia y sanción.",
+            "B": "Evita la reconstrucción conceptual.",
+            "C": "Elude la mediación pedagógica."
+        },
+        "fuente_autorizada": [
+            "Constructivismo",
+            "Piaget",
+            "Conflicto cognitivo",
+            "Evaluación formativa",
+            "Aprendizaje significativo"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción D es correcta porque genera contraste entre idea previa y evidencia, con mediación docente para reorganizar el conocimiento.",
+        "opcion_A": "Es incorrecta porque corrige de forma mecánica y punitiva.",
+        "opcion_B": "Es incorrecta porque no promueve cambio conceptual.",
+        "opcion_C": "Es incorrecta porque desperdicia la oportunidad de aprendizaje."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem evita la humillación del estudiante y presenta el conflicto cognitivo como mediación respetuosa."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre error, conflicto cognitivo y reestructuración de esquemas."
+    }
+}

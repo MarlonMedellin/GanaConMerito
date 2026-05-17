@@ -1,0 +1,97 @@
+{
+    "id_item": "IDD_B02_I02",
+    "archivo_sugerido": "IDD_B02_I02_ley_1098_articulo_8_interes_superior.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B02",
+        "nombre": "Marco constitucional, legal y jurisprudencial de inclusión",
+        "estado_en_lista": "Bloque 2 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 2 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce el principio del interés superior de niños, niñas y adolescentes establecido en la Ley 1098.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, inclusión educativa, convivencia o coordinación.",
+        "blueprint": {
+            "problematica_principal": "Desconocimiento de la prevalencia e integralidad de los derechos de niños, niñas y adolescentes.",
+            "fuente_autorizada": [
+                "Ley 1098 de 2006, artículo 8",
+                "Constitución Política de Colombia, artículo 44",
+                "Decreto 1421 de 2017",
+                "Enfoque de protección integral"
+            ],
+            "componente_modulo": "Inclusión y Marco Legal",
+            "competencia": "Protección integral e interés superior",
+            "afirmacion": "Toda decisión escolar que involucre a niños, niñas y adolescentes debe considerar su interés superior y la satisfacción integral de sus derechos.",
+            "evidencia_observable": "Identifica el interés superior como principio que obliga a garantizar derechos universales, prevalentes e interdependientes.",
+            "tipo_de_evidencia": "Reconocimiento normativo aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "B"
+        },
+        "claim": "El evaluado comprende que el interés superior no es una recomendación opcional, sino un principio orientador de decisiones escolares, pedagógicas, administrativas y de protección.",
+        "evidencia_observable": "Selecciona la interpretación correcta del artículo 8 de la Ley 1098 en relación con los derechos de niños, niñas y adolescentes.",
+        "tarea_cognitiva": "Interpretar un principio legal y aplicarlo al ámbito educativo.",
+        "tipo_de_pregunta": "Pregunta normativa aplicada",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir interés superior con permisividad",
+                "revision": "La clave habla de garantía integral de derechos, no de ausencia de deberes."
+            },
+            {
+                "riesgo": "Reducir derechos a protección asistencial",
+                "revision": "El ítem incluye derechos universales, prevalentes e interdependientes."
+            },
+            {
+                "riesgo": "Ambigüedad entre interés superior y preferencia individual",
+                "revision": "La opción correcta lo define como obligación de garantía integral, no como gusto personal del estudiante."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En una decisión escolar que afecta a un estudiante menor de edad con discapacidad, el equipo institucional debe aplicar la Ley de Infancia y Adolescencia, especialmente el principio del interés superior.\n\n¿Qué establece este principio según el artículo 8 de la Ley 1098?",
+        "opciones": {
+            "A": "Que la institución puede decidir únicamente con base en su conveniencia administrativa.",
+            "B": "Que todas las personas deben garantizar la satisfacción integral y simultánea de los derechos humanos de niños, niñas y adolescentes, por ser universales, prevalentes e interdependientes.",
+            "C": "Que los niños y niñas no tienen deberes dentro de la institución educativa.",
+            "D": "Que la familia puede reemplazar completamente la obligación de la escuela."
+        },
+        "respuesta_correcta": "B"
+    },
+    "ficha_tecnica": {
+        "componente": "Inclusión y Marco Legal",
+        "competencia": "Protección integral e interés superior",
+        "claim_evaluado": "El evaluado comprende que el interés superior no es una recomendación opcional, sino un principio orientador de decisiones escolares, pedagógicas, administrativas y de protección.",
+        "evidencia": "Selecciona la interpretación correcta del artículo 8 de la Ley 1098 en relación con los derechos de niños, niñas y adolescentes.",
+        "proceso_cognitivo": "Interpretación normativa aplicada",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "B",
+        "distractores": {
+            "A": "Desconoce el enfoque de derechos y prioriza la conveniencia administrativa.",
+            "C": "Confunde prevalencia de derechos con ausencia de deberes.",
+            "D": "Traslada indebidamente la responsabilidad institucional a la familia."
+        },
+        "fuente_autorizada": [
+            "Ley 1098 de 2006, artículo 8",
+            "Constitución Política de Colombia, artículo 44",
+            "Decreto 1421 de 2017",
+            "Enfoque de protección integral"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque recoge el núcleo del interés superior: garantizar integral y simultáneamente derechos universales, prevalentes e interdependientes.",
+        "opcion_A": "Es incorrecta porque las decisiones no pueden subordinar derechos a conveniencia administrativa.",
+        "opcion_C": "Es incorrecta porque tener derechos no elimina deberes.",
+        "opcion_D": "Es incorrecta porque la familia participa, pero no reemplaza a la escuela ni al Estado."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem evita presentar el interés superior como privilegio arbitrario y lo vincula con garantía integral de derechos."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 5 preguntas sobre marco constitucional, legal y jurisprudencial de inclusión."
+    }
+}

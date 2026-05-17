@@ -1,0 +1,99 @@
+{
+    "id_item": "IDD_B10_I02",
+    "archivo_sugerido": "IDD_B10_I02_memoria_selectiva_conductismo_skinner.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B10",
+        "nombre": "Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento",
+        "estado_en_lista": "Bloque 10 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 2 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante diferencia la memorización mecánica sin sentido de la memoria selectiva o funcional que puede ayudar a fijar aprendizajes fundamentales.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, pedagogía, didáctica o evaluación del aprendizaje.",
+        "blueprint": {
+            "problematica_principal": "Creencia extrema de que toda memorización es antipedagógica.",
+            "fuente_autorizada": [
+                "Conductismo",
+                "Skinner",
+                "Didáctica general",
+                "Memoria y aprendizaje",
+                "Evaluación formativa"
+            ],
+            "componente_modulo": "Memoria Selectiva vs. Tecnicismo",
+            "competencia": "Comprensión equilibrada de procesos de memoria",
+            "afirmacion": "La memoria puede ser funcional cuando permite fijar aprendizajes básicos significativos y usables, no cuando se reduce a repetición mecánica sin comprensión.",
+            "evidencia_observable": "Reconoce que ciertos automatismos o saberes fundamentales pueden consolidarse mediante práctica guiada y sentido de uso.",
+            "tipo_de_evidencia": "Comprensión conceptual aplicada",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que la crítica pedagógica no se dirige a toda memoria, sino a la memorización vacía, descontextualizada y sin comprensión.",
+        "evidencia_observable": "Selecciona una definición de memoria funcional orientada a aprendizajes fundamentales de largo plazo.",
+        "tarea_cognitiva": "Diferenciar memoria funcional de repetición mecánica.",
+        "tipo_de_pregunta": "Pregunta conceptual aplicada",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Asumir que memorizar siempre es negativo",
+                "revision": "La clave rescata la memoria funcional con sentido."
+            },
+            {
+                "riesgo": "Validar tecnicismo mecánico",
+                "revision": "La opción correcta exige comprensión y uso."
+            },
+            {
+                "riesgo": "Confundir conductismo con castigo",
+                "revision": "El ítem se centra en práctica, fijación y memoria, no en sanción."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En una discusión pedagógica, un docente afirma que toda memorización es antipedagógica. Otro plantea que, aunque la repetición mecánica sin comprensión es limitada, existe una memoria funcional que ayuda a fijar aprendizajes fundamentales.\n\n¿Qué tipo de memoria se rescata en este sentido?",
+        "opciones": {
+            "A": "La repetición ciega de frases sin comprensión ni uso.",
+            "B": "La copia extensa de definiciones para llenar cuadernos.",
+            "C": "La memoria selectiva o funcional que consolida saberes básicos útiles, comprendidos y aplicables a largo plazo.",
+            "D": "La memorización de respuestas para aprobar sin entender."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Memoria Selectiva vs. Tecnicismo",
+        "competencia": "Comprensión equilibrada de procesos de memoria",
+        "claim_evaluado": "El evaluado comprende que la crítica pedagógica no se dirige a toda memoria, sino a la memorización vacía, descontextualizada y sin comprensión.",
+        "evidencia": "Selecciona una definición de memoria funcional orientada a aprendizajes fundamentales de largo plazo.",
+        "proceso_cognitivo": "Comprensión conceptual aplicada",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Describe repetición sin comprensión.",
+            "B": "Confunde memoria funcional con copia mecánica.",
+            "D": "Reduce la memoria a estrategia superficial de aprobación."
+        },
+        "fuente_autorizada": [
+            "Conductismo",
+            "Skinner",
+            "Didáctica general",
+            "Memoria y aprendizaje",
+            "Evaluación formativa"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque rescata una memoria útil, selectiva y vinculada con comprensión y aplicación.",
+        "opcion_A": "Es incorrecta porque representa repetición vacía.",
+        "opcion_B": "Es incorrecta porque copiar no equivale a consolidar saberes.",
+        "opcion_D": "Es incorrecta porque aprobar sin entender no es aprendizaje fundamental."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem evita una postura extrema y diferencia memoria funcional de memorización mecánica."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 5 preguntas sobre constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento."
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "id_item": "NFL_B08_I03",
+    "archivo_sugerido": "NFL_B08_I03_trato_identico_puede_ser_discriminatorio.json",
+    "bloque": {
+        "codigo_bloque": "NFL_B08",
+        "nombre": "Igualdad material, discriminación positiva y debilidad manifiesta",
+        "estado_en_lista": "Bloque 8 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 3 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende que el trato idéntico puede ser discriminatorio cuando ignora barreras significativas de acceso o participación.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión, orientación escolar, convivencia, coordinación o gestión curricular.",
+        "blueprint": {
+            "problematica_principal": "Aplicar las mismas condiciones a todos sin valorar que algunos estudiantes enfrentan barreras que impiden el ejercicio efectivo de sus derechos.",
+            "fuente_autorizada": [
+                "Constitución Política de Colombia artículo 13",
+                "Decreto 1421 de 2017",
+                "Ley 115 de 1994",
+                "Educación inclusiva",
+                "Ajustes razonables"
+            ],
+            "componente_modulo": "Igualdad formal vs igualdad material",
+            "competencia": "Análisis de barreras y apoyos",
+            "afirmacion": "El trato idéntico puede perpetuar desigualdad cuando no considera barreras; la igualdad material exige apoyos razonables.",
+            "evidencia_observable": "Identifica cuándo una medida aparentemente neutral excluye o perjudica a estudiantes en condiciones diferentes.",
+            "tipo_de_evidencia": "Juicio pedagógico-constitucional aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "B"
+        },
+        "claim": "El evaluado comprende que la justicia educativa exige valorar condiciones reales, no solo aplicar reglas iguales de manera ciega.",
+        "evidencia_observable": "Selecciona una explicación de por qué el trato idéntico puede producir exclusión.",
+        "tarea_cognitiva": "Analizar una situación de aparente neutralidad y detectar discriminación indirecta.",
+        "tipo_de_pregunta": "Caso situacional de igualdad material",
+        "dificultad_esperada": "Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Presentar apoyos como ventaja indebida",
+                "revision": "La clave los fundamenta en barreras objetivas."
+            },
+            {
+                "riesgo": "Normalizar discriminación indirecta",
+                "revision": "El ítem muestra cómo la neutralidad aparente puede excluir."
+            },
+            {
+                "riesgo": "Segregar al estudiante",
+                "revision": "La opción correcta busca participación en igualdad de condiciones."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un docente aplica exactamente la misma prueba, el mismo tiempo y el mismo formato a todo el grupo. Uno de los estudiantes tiene una condición documentada que le impide acceder al formato escrito ordinario, pero el docente se niega a cualquier ajuste porque dice que “tratar igual es tratar justo”.\n\n¿Por qué esta afirmación puede ser equivocada desde la igualdad material?",
+        "opciones": {
+            "A": "Porque la igualdad material exige eliminar toda evaluación para todos los estudiantes.",
+            "B": "Porque un trato idéntico puede volverse discriminatorio si ignora barreras reales y niega ajustes razonables necesarios para participar en igualdad de condiciones.",
+            "C": "Porque los estudiantes con barreras no deben participar en actividades comunes.",
+            "D": "Porque la justicia educativa consiste en favorecer sin criterio a quien lo solicite."
+        },
+        "respuesta_correcta": "B"
+    },
+    "ficha_tecnica": {
+        "componente": "Igualdad formal vs igualdad material",
+        "competencia": "Análisis de barreras y apoyos",
+        "claim_evaluado": "El evaluado comprende que la justicia educativa exige valorar condiciones reales, no solo aplicar reglas iguales de manera ciega.",
+        "evidencia": "Selecciona una explicación de por qué el trato idéntico puede producir exclusión.",
+        "proceso_cognitivo": "Juicio pedagógico-constitucional aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Alta",
+        "respuesta_correcta": "B",
+        "distractores": {
+            "A": "Confunde ajustes con eliminación general de la evaluación.",
+            "C": "Propone segregación, contraria a la inclusión.",
+            "D": "Confunde igualdad material con favoritismo sin criterio."
+        },
+        "fuente_autorizada": [
+            "Constitución Política de Colombia artículo 13",
+            "Decreto 1421 de 2017",
+            "Ley 115 de 1994",
+            "Educación inclusiva"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque la igualdad material exige remover barreras y brindar ajustes razonables cuando el trato idéntico excluye.",
+        "opcion_A": "Es incorrecta porque los ajustes no eliminan la evaluación.",
+        "opcion_C": "Es incorrecta porque la inclusión busca participación en el grupo común.",
+        "opcion_D": "Es incorrecta porque los apoyos deben ser razonables y justificados."
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado con revisión de inclusión recomendada.",
+        "argumento": "El ítem evita una lectura formalista de la igualdad y protege la participación real del estudiante."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Validar con lineamientos institucionales de ajustes razonables y evaluación inclusiva.",
+        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre igualdad material, discriminación positiva y debilidad manifiesta."
+    }
+}

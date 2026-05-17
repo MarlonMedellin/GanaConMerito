@@ -1,0 +1,94 @@
+{
+    "id_item": "GA02_B05_I03",
+    "archivo_sugerido": "GA02_B05_I03_curriculo_oculto.json",
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce el currículo oculto como el conjunto de aprendizajes, valores, normas, actitudes, relaciones y respuestas a necesidades emocionales que se transmiten en la vida cotidiana de la escuela sin estar necesariamente escritos en el plan de estudios.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
+        "blueprint": {
+            "problematica_principal": "Dificultad para reconocer aprendizajes no explícitos que inciden en la formación del estudiante.",
+            "fuente_autorizada": [
+                "Teoría curricular",
+                "Lineamientos curriculares del Ministerio de Educación Nacional",
+                "Proyecto Educativo Institucional",
+                "Orientaciones sobre convivencia y formación integral"
+            ],
+            "componente_modulo": "Currículo Educativo",
+            "competencia": "Comprensión curricular",
+            "afirmacion": "El currículo oculto expresa aprendizajes no escritos que se transmiten mediante la cultura escolar, las relaciones, los valores y las prácticas cotidianas.",
+            "evidencia_observable": "Identifica una situación en la que el docente atiende valores, necesidades afectivas o problemáticas invisibles no previstas explícitamente en el plan de estudios.",
+            "tipo_de_evidencia": "Clasificación curricular en situación escolar",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que el currículo oculto opera en las interacciones, normas, valores, expectativas y respuestas cotidianas de la escuela, aunque no esté formalmente escrito como contenido curricular.",
+        "evidencia_observable": "Clasifica como currículo oculto una actuación docente que atiende necesidades emocionales, valores y problemáticas invisibles de los estudiantes en la vida diaria.",
+        "tarea_cognitiva": "Analizar una situación de aula y reconocer el tipo de currículo que se manifiesta.",
+        "tipo_de_pregunta": "Caso situacional de clasificación conceptual",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confusión entre currículo oculto y orientación escolar",
+                "revision": "La clave se centra en aprendizajes y valores no escritos que emergen en la práctica cotidiana, no en una dependencia institucional específica."
+            },
+            {
+                "riesgo": "Sesgo por experiencias personales del aspirante",
+                "revision": "El caso presenta una situación concreta y común en el aula, sin requerir vivencias particulares."
+            },
+            {
+                "riesgo": "Ambigüedad entre currículo oculto y currículo oficial",
+                "revision": "La opción correcta se diferencia porque no está escrita en el plan de estudios, pero sí influye en la formación."
+            },
+            {
+                "riesgo": "Tratamiento de necesidades emocionales",
+                "revision": "El ítem aborda la dimensión emocional sin diagnósticos ni etiquetas sobre estudiantes."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Durante el desarrollo de sus clases, una docente identifica que varios estudiantes presentan dificultades de convivencia, baja autoestima y conflictos que afectan su participación. Aunque estos temas no aparecen como contenidos explícitos del plan de estudios, la docente abre espacios de diálogo, promueve el respeto, trabaja la empatía y atiende situaciones emocionales que inciden en el aprendizaje.\n\n¿Qué tipo de currículo se evidencia principalmente en esta actuación?",
+        "opciones": {
+            "A": "Currículo oficial, porque corresponde exclusivamente a los contenidos definidos en normas, planes y programas institucionales.",
+            "B": "Currículo nulo, porque son contenidos planeados que nunca llegan a enseñarse.",
+            "C": "Currículo oculto, porque se relaciona con valores, normas, actitudes y necesidades no escritas que se transmiten en la vida cotidiana escolar.",
+            "D": "Currículo inexistente, porque todo lo que no está escrito en el plan de estudios carece de valor formativo."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Currículo Educativo",
+        "competencia": "Comprensión curricular",
+        "claim_evaluado": "El evaluado comprende que el currículo oculto opera en las interacciones, normas, valores, expectativas y respuestas cotidianas de la escuela, aunque no esté formalmente escrito como contenido curricular.",
+        "evidencia": "Clasifica como currículo oculto una actuación docente que atiende necesidades emocionales, valores y problemáticas invisibles de los estudiantes en la vida diaria.",
+        "proceso_cognitivo": "Clasificación conceptual en contexto",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Confunde currículo oculto con currículo oficial formalmente documentado.",
+            "B": "Confunde currículo oculto con currículo nulo.",
+            "D": "Niega el valor formativo de aprendizajes no escritos."
+        },
+        "fuente_autorizada": [
+            "Teoría curricular",
+            "Lineamientos curriculares del Ministerio de Educación Nacional",
+            "Proyecto Educativo Institucional",
+            "Orientaciones sobre convivencia y formación integral"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque la situación describe aprendizajes y prácticas formativas no escritos formalmente en el plan de estudios, pero presentes en la vida cotidiana de la escuela: valores, convivencia, empatía, necesidades emocionales y relaciones.",
+        "opcion_A": "Es incorrecta porque el currículo oficial se refiere a lo formalmente establecido en documentos y referentes institucionales.",
+        "opcion_B": "Es incorrecta porque el currículo nulo alude a lo que no se enseña, mientras el caso muestra aprendizajes que sí se transmiten cotidianamente.",
+        "opcion_D": "Es incorrecta porque desconoce que lo no escrito también puede tener efectos formativos importantes."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no patologiza ni etiqueta a los estudiantes. Evalúa la comprensión del currículo oculto como dimensión formativa de la vida escolar cotidiana."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre concepto y tipos de currículo."
+    }
+}

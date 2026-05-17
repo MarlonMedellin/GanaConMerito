@@ -1,0 +1,40 @@
+{
+    "id_item": "EIP_B07_I02",
+    "archivo_sugerido": "EIP_B07_I02_experimentacion_observacion_fenomenos_fisicos.json",
+    "proposito_de_uso": "Evaluar si el aspirante reconoce la función de la observación y la experimentación en la enseñanza de ciencias.",
+    "blueprint": {
+        "componente_modulo": "Didáctica de las ciencias",
+        "competencia": "Diseño de experiencias de indagación científica",
+        "afirmacion": "La observación y la experimentación permiten que el estudiante relacione conceptos científicos con fenómenos reales.",
+        "evidencia_observable": "Selecciona una estrategia didáctica que promueve indagación y comprensión.",
+        "tipo_de_evidencia": "Juicio didáctico aplicado",
+        "dificultad_esperada": "Media",
+        "clave": "A"
+    },
+    "item": {
+        "enunciado": "Un grupo de estudiantes no comprende la relación entre masa, fuerza y aceleración. En lugar de pedirles repetir la fórmula, el docente organiza una experiencia con objetos de distinta masa, empujes controlados, observación y comparación de resultados.\n\n¿Qué aporta esta estrategia al pensamiento científico?",
+        "opciones": {
+            "A": "Permite relacionar conceptos con fenómenos observables, formular explicaciones y comprender la ley física en contexto.",
+            "B": "Impide aprender ciencia porque no se limita a copiar la fórmula.",
+            "C": "Reemplaza toda explicación científica por juego sin sentido.",
+            "D": "Elimina la necesidad de analizar resultados."
+        },
+        "respuesta_correcta": "A"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque la experiencia favorece comprensión contextualizada y razonamiento científico.",
+        "distractores": {
+            "B": "Confunde ciencia con copia mecánica.",
+            "C": "Desvaloriza una experiencia experimental con propósito didáctico.",
+            "D": "Niega el análisis, que es central en la indagación científica."
+        }
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado",
+        "argumento": "El ítem favorece enseñanza activa sin excluir el rigor conceptual."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem apto para banco con revisión didáctica de ciencias."
+    }
+}

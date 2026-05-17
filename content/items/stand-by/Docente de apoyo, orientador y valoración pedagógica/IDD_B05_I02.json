@@ -1,0 +1,99 @@
+{
+    "id_item": "IDD_B05_I02",
+    "archivo_sugerido": "IDD_B05_I02_llegada_estudiantes_discapacidad_estrategia_institucional.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B05",
+        "nombre": "Docente de apoyo, orientador y valoración pedagógica",
+        "estado_en_lista": "Bloque 5 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 2 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce la estrategia prioritaria institucional ante la llegada de estudiantes con discapacidades físicas, visuales o de movilidad.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión, coordinación académica, rectoría, orientación escolar o apoyo pedagógico.",
+        "blueprint": {
+            "problematica_principal": "Ingreso de estudiantes con discapacidad sin planeación institucional de apoyos, accesibilidad y corresponsabilidad.",
+            "fuente_autorizada": [
+                "Decreto 1421 de 2017",
+                "Ley 1618 de 2013",
+                "Educación inclusiva",
+                "Accesibilidad",
+                "PIAR"
+            ],
+            "componente_modulo": "Trabajo en equipo e inclusión",
+            "competencia": "Gestión institucional de apoyos",
+            "afirmacion": "La institución debe organizar una estrategia colaborativa de accesibilidad, ajustes razonables, apoyos y seguimiento.",
+            "evidencia_observable": "Reconoce que la respuesta prioritaria no es rechazar, separar ni improvisar, sino planear apoyos institucionales.",
+            "tipo_de_evidencia": "Juicio institucional aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que la inclusión de estudiantes con discapacidad requiere una respuesta institucional planificada, articulada y corresponsable.",
+        "evidencia_observable": "Selecciona una estrategia que involucra diagnóstico de barreras, adecuaciones, apoyos, docentes, familia y seguimiento.",
+        "tarea_cognitiva": "Analizar una situación de ingreso escolar y elegir la estrategia institucional prioritaria.",
+        "tipo_de_pregunta": "Caso situacional de gestión inclusiva",
+        "dificultad_esperada": "Media-Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Presentar la discapacidad como problema individual",
+                "revision": "La clave se centra en barreras institucionales y apoyos."
+            },
+            {
+                "riesgo": "Reducir inclusión a buena voluntad",
+                "revision": "La opción correcta exige planificación, accesibilidad y seguimiento."
+            },
+            {
+                "riesgo": "Normalizar el rechazo por falta de preparación",
+                "revision": "El ítem sostiene la obligación de organizar apoyos."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "A una institución llegan estudiantes con discapacidad física, visual o de movilidad. Algunos miembros del equipo consideran que lo mejor es esperar a que cada docente resuelva por su cuenta, sin plan institucional.\n\n¿Cuál debe ser la estrategia prioritaria para garantizar su educación?",
+        "opciones": {
+            "A": "Ubicar a los estudiantes en espacios separados hasta que la institución se sienta preparada.",
+            "B": "Aceptar la matrícula, pero no modificar accesos, materiales ni estrategias de enseñanza.",
+            "C": "Organizar un plan institucional de accesibilidad, apoyos, ajustes razonables, trabajo colaborativo con docentes y familia, y seguimiento pedagógico.",
+            "D": "Exigir que las familias contraten todos los apoyos externos antes de permitir la participación en clase."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Trabajo en equipo e inclusión",
+        "competencia": "Gestión institucional de apoyos",
+        "claim_evaluado": "El evaluado comprende que la inclusión de estudiantes con discapacidad requiere una respuesta institucional planificada, articulada y corresponsable.",
+        "evidencia": "Selecciona una estrategia que involucra diagnóstico de barreras, adecuaciones, apoyos, docentes, familia y seguimiento.",
+        "proceso_cognitivo": "Juicio institucional aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media-Alta",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Propone segregación.",
+            "B": "Reduce la inclusión a matrícula sin apoyos.",
+            "D": "Traslada toda la responsabilidad a la familia."
+        },
+        "fuente_autorizada": [
+            "Decreto 1421 de 2017",
+            "Ley 1618 de 2013",
+            "Educación inclusiva",
+            "Accesibilidad",
+            "PIAR"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque plantea una respuesta institucional integral: accesibilidad, apoyos, ajustes, colaboración y seguimiento.",
+        "opcion_A": "Es incorrecta porque separa a los estudiantes.",
+        "opcion_B": "Es incorrecta porque la matrícula sin ajustes no garantiza inclusión.",
+        "opcion_D": "Es incorrecta porque condiciona indebidamente la participación."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no responsabiliza al estudiante ni a la familia de manera exclusiva; promueve organización institucional y accesibilidad."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre docente de apoyo, orientación y valoración pedagógica."
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "id_item": "MTV_B10_I05",
+    "archivo_sugerido": "MTV_B10_I05_premisa_neutra_caracteristica_gramatical.json",
+    "proposito_de_uso": "Evaluar si el aspirante identifica una premisa neutra por su formulación descriptiva, equilibrada y sin carga valorativa extrema.",
+    "blueprint": {
+        "componente_modulo": "Identificación de proposiciones neutras",
+        "competencia": "Análisis gramatical de premisas",
+        "afirmacion": "Una premisa neutra suele describir una situación sin intensificadores extremos, sin insultos, sin absolutos y sin carga valorativa evidente.",
+        "evidencia_observable": "Distingue una proposición neutra de una proposición sesgada, absoluta o emocionalmente cargada.",
+        "tipo_de_evidencia": "Análisis gramatical-semántico",
+        "dificultad_esperada": "Media-Alta",
+        "clave": "B"
+    },
+    "item": {
+        "enunciado": "En una prueba de actitudes, se pide identificar una premisa neutra. ¿Cuál característica gramatical ayuda más a reconocerla?",
+        "opciones": {
+            "A": "El uso de insultos, exageraciones y expresiones emocionales fuertes.",
+            "B": "La redacción descriptiva, sin absolutos, sin intensificadores extremos y sin carga valorativa evidente.",
+            "C": "La presencia obligatoria de palabras como 'nunca', 'siempre' y 'jamás'.",
+            "D": "La formulación de ataques personales contra un grupo."
+        },
+        "respuesta_correcta": "B"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque una premisa neutra suele ser descriptiva y equilibrada.",
+        "distractores": {
+            "A": "Introduce carga emocional y sesgo.",
+            "C": "Los absolutos suelen indicar polarización.",
+            "D": "Los ataques personales eliminan la neutralidad."
+        }
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado",
+        "argumento": "El ítem centra el análisis en rasgos gramaticales observables."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem conceptual importante para lectura de proposiciones."
+    }
+}

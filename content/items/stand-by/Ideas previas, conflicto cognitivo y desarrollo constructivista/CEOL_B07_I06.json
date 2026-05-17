@@ -1,0 +1,101 @@
+{
+    "id_item": "CEOL_B07_I06",
+    "archivo_sugerido": "CEOL_B07_I06_equilibrio_cognitivo_saber_hacer_contexto.json",
+    "bloque": {
+        "codigo_bloque": "CEOL_B07",
+        "nombre": "Ideas previas, conflicto cognitivo y desarrollo constructivista",
+        "estado_en_lista": "Bloque 7 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 6 de 6"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende el equilibrio cognitivo como reorganización funcional del conocimiento que permite actuar en contexto, más allá de decir que se entendió.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con pedagogía, didáctica, evaluación por competencias o docencia.",
+        "blueprint": {
+            "problematica_principal": "Confusión entre entender verbalmente un contenido y alcanzar equilibrio cognitivo evidenciado en desempeño contextualizado.",
+            "fuente_autorizada": [
+                "Epistemología genética de Piaget",
+                "Constructivismo",
+                "Evaluación por competencias",
+                "Aprendizaje significativo"
+            ],
+            "componente_modulo": "Equilibrio Cognitivo y Competencia",
+            "competencia": "Comprensión del saber hacer en contexto",
+            "afirmacion": "El equilibrio cognitivo se evidencia cuando el estudiante reorganiza sus esquemas y puede usar lo aprendido de manera pertinente en contexto.",
+            "evidencia_observable": "Reconoce que el equilibrio no se reduce a repetir una explicación, sino a aplicar y transferir el conocimiento en una situación significativa.",
+            "tipo_de_evidencia": "Comprensión conceptual aplicada",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que el equilibrio cognitivo ocurre cuando el estudiante integra la nueva información en esquemas reorganizados y logra actuar con ella de manera pertinente en un contexto.",
+        "evidencia_observable": "Selecciona una explicación que relaciona equilibrio cognitivo con aplicación, transferencia y saber hacer en contexto.",
+        "tarea_cognitiva": "Diferenciar comprensión declarativa de desempeño competente contextualizado.",
+        "tipo_de_pregunta": "Pregunta conceptual aplicada",
+        "dificultad_esperada": "Media-Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir equilibrio con ausencia de dificultad",
+                "revision": "La clave lo presenta como reorganización funcional, no como perfección absoluta."
+            },
+            {
+                "riesgo": "Reducir competencia a memorización",
+                "revision": "El ítem exige aplicación en contexto."
+            },
+            {
+                "riesgo": "Lenguaje teórico abstracto",
+                "revision": "La pregunta vincula equilibrio con saber hacer en contexto."
+            },
+            {
+                "riesgo": "Ambigüedad entre entender y aplicar",
+                "revision": "La opción correcta diferencia explicación verbal de desempeño contextualizado."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Después de trabajar un concepto, un estudiante afirma que ya lo entendió porque puede repetir la explicación del docente. Sin embargo, al enfrentarse a una situación nueva, todavía no logra usar ese conocimiento para resolver el problema. El docente quiere valorar si realmente alcanzó equilibrio cognitivo desde una perspectiva constructivista y de competencias.\n\n¿En qué momento puede afirmarse que se alcanza ese equilibrio?",
+        "opciones": {
+            "A": "Cuando el estudiante repite exactamente la definición dada por el docente.",
+            "B": "Cuando el estudiante obtiene una nota alta en una pregunta de memoria.",
+            "C": "Cuando reorganiza sus esquemas y logra usar el conocimiento de manera pertinente para actuar o resolver una situación en contexto.",
+            "D": "Cuando deja de hacer preguntas sobre el tema."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Equilibrio Cognitivo y Competencia",
+        "competencia": "Comprensión del saber hacer en contexto",
+        "claim_evaluado": "El evaluado comprende que el equilibrio cognitivo ocurre cuando el estudiante integra la nueva información en esquemas reorganizados y logra actuar con ella de manera pertinente en un contexto.",
+        "evidencia": "Selecciona una explicación que relaciona equilibrio cognitivo con aplicación, transferencia y saber hacer en contexto.",
+        "proceso_cognitivo": "Comprensión conceptual aplicada",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media-Alta",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Reduce el equilibrio cognitivo a repetición literal.",
+            "B": "Confunde memoria evaluada con reorganización conceptual.",
+            "D": "Interpreta ausencia de preguntas como comprensión consolidada."
+        },
+        "fuente_autorizada": [
+            "Epistemología genética de Piaget",
+            "Constructivismo",
+            "Evaluación por competencias",
+            "Aprendizaje significativo"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque el equilibrio cognitivo se evidencia cuando el estudiante reorganiza sus esquemas y puede usar el conocimiento en situaciones significativas.",
+        "opcion_A": "Es incorrecta porque repetir una definición no garantiza reorganización cognitiva.",
+        "opcion_B": "Es incorrecta porque una respuesta memorística no equivale a saber hacer en contexto.",
+        "opcion_D": "Es incorrecta porque dejar de preguntar no prueba comprensión."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no penaliza a estudiantes que aún formulan preguntas; por el contrario, diferencia memoria, silencio y comprensión aplicada."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 6 de un grupo de 6 preguntas sobre ideas previas, conflicto cognitivo y desarrollo constructivista."
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "id_item": "GA02_B05_I01",
+    "archivo_sugerido": "GA02_B05_I01_concepto_curriculo.json",
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende el currículo educativo como un conjunto integral de criterios, planes de estudio, programas, metodologías y procesos orientados a la formación integral, y no como una simple lista de temas.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
+        "blueprint": {
+            "problematica_principal": "Confusión entre currículo integral y listado de contenidos.",
+            "fuente_autorizada": [
+                "Ley 115 de 1994",
+                "Lineamientos curriculares del Ministerio de Educación Nacional",
+                "Proyecto Educativo Institucional",
+                "Orientaciones curriculares institucionales"
+            ],
+            "componente_modulo": "Currículo Educativo",
+            "competencia": "Comprensión curricular",
+            "afirmacion": "El currículo comprende criterios, planes de estudio, programas, metodologías y procesos que contribuyen a la formación integral.",
+            "evidencia_observable": "Selecciona una definición integral de currículo educativo y reconoce sus componentes principales.",
+            "tipo_de_evidencia": "Comprensión conceptual aplicada",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "B"
+        },
+        "claim": "El evaluado reconoce que el currículo educativo es una construcción integral que organiza intenciones formativas, criterios, planes, programas, metodologías, recursos, procesos y evaluación para orientar la formación de los estudiantes.",
+        "evidencia_observable": "Identifica la definición que integra criterios, planes de estudio, programas, metodologías y procesos formativos.",
+        "tarea_cognitiva": "Distinguir una concepción integral de currículo frente a definiciones reducidas o fragmentadas.",
+        "tipo_de_pregunta": "Pregunta conceptual aplicada",
+        "dificultad_esperada": "Baja",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Sesgo por memorización normativa literal",
+                "revision": "El ítem no exige recordar textualmente una norma, sino reconocer el sentido integral del concepto de currículo."
+            },
+            {
+                "riesgo": "Ambigüedad entre currículo y plan de estudios",
+                "revision": "La clave diferencia el currículo como marco amplio frente al plan de estudios como uno de sus componentes."
+            },
+            {
+                "riesgo": "Sesgo por área disciplinar",
+                "revision": "El ítem aplica a cualquier área y no exige conocimiento especializado de una asignatura."
+            },
+            {
+                "riesgo": "Lenguaje técnico excesivo",
+                "revision": "Los términos centrales se presentan en una definición funcional y contextualizada."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En una reunión académica, algunos docentes afirman que el currículo educativo es únicamente la lista de temas que se deben enseñar en cada asignatura. La coordinación propone revisar una definición más integral, coherente con los lineamientos educativos.\n\n¿Cuál opción define mejor el currículo educativo?",
+        "opciones": {
+            "A": "La lista de temas que cada docente decide desarrollar de acuerdo con sus preferencias personales.",
+            "B": "El conjunto de criterios, planes de estudio, programas, metodologías y procesos que contribuyen a la formación integral y a la construcción de la identidad institucional.",
+            "C": "El horario semanal de clases, organizado por asignaturas, docentes y salones.",
+            "D": "El conjunto de actividades extracurriculares que se realizan fuera de la jornada académica."
+        },
+        "respuesta_correcta": "B"
+    },
+    "ficha_tecnica": {
+        "componente": "Currículo Educativo",
+        "competencia": "Comprensión curricular",
+        "claim_evaluado": "El evaluado reconoce que el currículo educativo es una construcción integral que organiza intenciones formativas, criterios, planes, programas, metodologías, recursos, procesos y evaluación para orientar la formación de los estudiantes.",
+        "evidencia": "Identifica la definición que integra criterios, planes de estudio, programas, metodologías y procesos formativos.",
+        "proceso_cognitivo": "Comprensión conceptual aplicada",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Baja",
+        "respuesta_correcta": "B",
+        "distractores": {
+            "A": "Reduce el currículo a decisiones individuales del docente y a listados de temas.",
+            "C": "Confunde currículo con horario escolar.",
+            "D": "Confunde currículo con actividades extracurriculares aisladas."
+        },
+        "fuente_autorizada": [
+            "Ley 115 de 1994",
+            "Lineamientos curriculares del Ministerio de Educación Nacional",
+            "Proyecto Educativo Institucional",
+            "Orientaciones curriculares institucionales"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque presenta el currículo como una construcción integral que incluye criterios, planes de estudio, programas, metodologías y procesos orientados a la formación integral.",
+        "opcion_A": "Es incorrecta porque reduce el currículo a una lista de temas y a preferencias personales del docente.",
+        "opcion_C": "Es incorrecta porque el horario organiza tiempos y espacios, pero no define por sí mismo el currículo.",
+        "opcion_D": "Es incorrecta porque las actividades extracurriculares pueden hacer parte de la vida institucional, pero no equivalen al currículo en sentido integral."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no exige conocimiento normativo literal ni experiencia directa en diseño curricular. La situación ofrece suficiente contexto para reconocer una definición integral de currículo."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre concepto y tipos de currículo."
+    }
+}

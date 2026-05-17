@@ -1,0 +1,101 @@
+{
+    "id_item": "PPDC_B02_I01",
+    "archivo_sugerido": "PPDC_B02_I01_manejo_error_didactica_universo.json",
+    "bloque": {
+        "codigo_bloque": "PPDC_B02",
+        "nombre": "Manejo del error y clima afectivo",
+        "estado_en_lista": "Bloque 2 de 7",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 1 de 2"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce que el error del estudiante debe ser usado como evidencia para orientar la mediación didáctica, ampliar la comprensión y evitar cierres prematuros del aprendizaje mediante juicios descalificadores.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
+        "blueprint": {
+            "problematica_principal": "Uso inadecuado del lenguaje docente frente al error conceptual del estudiante.",
+            "fuente_autorizada": [
+                "Didáctica general",
+                "Enfoque constructivista",
+                "Orientaciones pedagógicas institucionales",
+                "Evaluación formativa"
+            ],
+            "componente_modulo": "Práctica Pedagógica y Didáctica",
+            "competencia": "Manejo pedagógico del error",
+            "afirmacion": "Las palabras del docente pueden abrir o cerrar posibilidades de aprendizaje frente al error.",
+            "evidencia_observable": "Reconoce que el error conceptual debe ser usado para formular preguntas, ampliar representaciones y reestructurar comprensiones.",
+            "tipo_de_evidencia": "Juicio didáctico en situación de aula",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que el lenguaje docente frente al error puede limitar o potenciar el aprendizaje, según favorezca la indagación, la explicación, la comparación de ideas y la reconstrucción conceptual.",
+        "evidencia_observable": "Selecciona una actuación docente que usa el error como punto de partida para ampliar la comprensión del concepto de universo, en lugar de descalificar la respuesta del estudiante.",
+        "tarea_cognitiva": "Analizar una situación de error conceptual y elegir la mediación verbal más adecuada desde una perspectiva didáctica y constructivista.",
+        "tipo_de_pregunta": "Caso situacional de juicio didáctico",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Sesgo por conocimiento científico específico",
+                "revision": "El ítem no evalúa astronomía avanzada; evalúa la actuación pedagógica frente a una representación parcial del estudiante."
+            },
+            {
+                "riesgo": "Humillación o etiquetamiento del estudiante",
+                "revision": "La clave evita expresiones descalificadoras y promueve preguntas que amplían la comprensión."
+            },
+            {
+                "riesgo": "Ambigüedad entre corregir y sancionar",
+                "revision": "La opción correcta permite corregir conceptualmente sin cerrar la participación ni ridiculizar el error."
+            },
+            {
+                "riesgo": "Sesgo por edad o grado escolar",
+                "revision": "La situación puede adaptarse a distintos niveles educativos; se centra en la mediación docente."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En una clase de ciencias, el docente pide a sus estudiantes dibujar el universo. La mayoría dibuja únicamente el sistema solar. Al revisar los trabajos, el docente debe intervenir para ampliar la comprensión del concepto sin bloquear la participación de los estudiantes.\n\n¿Cuál respuesta docente favorece mejor el aprendizaje a partir del error?",
+        "opciones": {
+            "A": "Decirles que todos están mal y que deben repetir el dibujo hasta copiar exactamente el modelo del libro.",
+            "B": "Ignorar los dibujos para no incomodar a los estudiantes y continuar con el siguiente tema.",
+            "C": "Preguntar qué entienden por universo, comparar el sistema solar con otros componentes del cosmos y guiar la ampliación del dibujo con nuevas evidencias.",
+            "D": "Calificar negativamente los dibujos porque muestran que los estudiantes no estudiaron lo suficiente."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Práctica Pedagógica y Didáctica",
+        "competencia": "Manejo pedagógico del error",
+        "claim_evaluado": "El evaluado comprende que el lenguaje docente frente al error puede limitar o potenciar el aprendizaje, según favorezca la indagación, la explicación, la comparación de ideas y la reconstrucción conceptual.",
+        "evidencia": "Selecciona una actuación docente que usa el error como punto de partida para ampliar la comprensión del concepto de universo, en lugar de descalificar la respuesta del estudiante.",
+        "proceso_cognitivo": "Análisis y juicio didáctico",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Corrige mediante descalificación y copia, limitando la construcción conceptual.",
+            "B": "Evita el error y pierde una oportunidad de mediación pedagógica.",
+            "D": "Convierte el error en sanción y no en evidencia para orientar el aprendizaje."
+        },
+        "fuente_autorizada": [
+            "Didáctica general",
+            "Enfoque constructivista",
+            "Orientaciones pedagógicas institucionales",
+            "Evaluación formativa"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque usa la representación inicial de los estudiantes como evidencia de pensamiento. A partir de ella, el docente formula preguntas, compara ideas, introduce nueva información y guía la reestructuración conceptual.",
+        "opcion_A": "Es incorrecta porque descalifica la producción del estudiante y reduce la corrección a copia del modelo.",
+        "opcion_B": "Es incorrecta porque omite una oportunidad de aprendizaje y deja intacta la comprensión limitada.",
+        "opcion_D": "Es incorrecta porque sanciona el error sin convertirlo en insumo didáctico."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no evalúa dominio científico especializado, sino manejo pedagógico del error. Evita ridiculizar a los estudiantes y se centra en la mediación docente como oportunidad para ampliar la comprensión."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 2 preguntas sobre manejo del error y clima afectivo."
+    }
+}

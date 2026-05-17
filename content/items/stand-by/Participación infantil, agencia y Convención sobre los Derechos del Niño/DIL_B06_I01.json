@@ -1,0 +1,97 @@
+{
+    "id_item": "DIL_B06_I01",
+    "archivo_sugerido": "DIL_B06_I01_articulo_12_convencion_derecho_opinion_nna.json",
+    "bloque": {
+        "codigo_bloque": "DIL_B06",
+        "nombre": "Participación infantil, agencia y Convención sobre los Derechos del Niño",
+        "estado_en_lista": "Bloque 6 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 1 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce el contenido esencial del Artículo 12 de la Convención sobre los Derechos del Niño respecto al derecho de opinión de niños, niñas y adolescentes.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación, convivencia, ciudadanía, participación infantil o gestión institucional.",
+        "blueprint": {
+            "problematica_principal": "Desconocimiento del derecho de niños, niñas y adolescentes a ser escuchados en asuntos que les afectan.",
+            "fuente_autorizada": [
+                "Convención sobre los Derechos del Niño",
+                "Artículo 12 CDN",
+                "Ley 1098 de 2006",
+                "Enfoque de participación infantil"
+            ],
+            "componente_modulo": "Marco de derechos y opinión infantil",
+            "competencia": "Reconocimiento del derecho a la participación",
+            "afirmacion": "El Artículo 12 reconoce el derecho del niño a expresar libremente su opinión en asuntos que le afectan, teniendo en cuenta edad y madurez.",
+            "evidencia_observable": "Identifica que escuchar a NNA es un derecho, no un favor adulto.",
+            "tipo_de_evidencia": "Reconocimiento normativo",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que la participación de niños, niñas y adolescentes exige escucha real y consideración progresiva de sus opiniones.",
+        "evidencia_observable": "Selecciona la formulación correcta del Artículo 12 de la Convención.",
+        "tarea_cognitiva": "Reconocer el contenido jurídico del derecho de opinión infantil.",
+        "tipo_de_pregunta": "Pregunta normativa de reconocimiento",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Adultocentrismo",
+                "revision": "La clave reconoce derecho de opinión."
+            },
+            {
+                "riesgo": "Confundir participación con decisión absoluta",
+                "revision": "La opción correcta incluye edad y madurez."
+            },
+            {
+                "riesgo": "Tratar la escucha como favor",
+                "revision": "El ítem la presenta como derecho."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Una institución educativa va a tomar decisiones que afectan directamente la vida escolar de niños, niñas y adolescentes. Algunos adultos consideran que no es necesario escuchar su opinión porque aún no son mayores de edad.\n\n¿Qué establece el Artículo 12 de la Convención sobre los Derechos del Niño?",
+        "opciones": {
+            "A": "Que los niños no deben opinar sobre asuntos que los afectan.",
+            "B": "Que las opiniones de los niños siempre reemplazan cualquier decisión adulta o institucional.",
+            "C": "Que el niño capaz de formarse un juicio propio tiene derecho a expresar libremente su opinión en los asuntos que lo afectan, y que esta debe tenerse en cuenta según su edad y madurez.",
+            "D": "Que la participación infantil solo existe cuando los adultos quieren hacer una actividad simbólica."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Marco de derechos y opinión infantil",
+        "competencia": "Reconocimiento del derecho a la participación",
+        "claim_evaluado": "El evaluado comprende que la participación de niños, niñas y adolescentes exige escucha real y consideración progresiva de sus opiniones.",
+        "evidencia": "Selecciona la formulación correcta del Artículo 12 de la Convención.",
+        "proceso_cognitivo": "Reconocimiento normativo",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Niega el derecho de opinión.",
+            "B": "Confunde derecho a ser escuchado con decisión absoluta.",
+            "D": "Reduce la participación a actividad decorativa."
+        },
+        "fuente_autorizada": [
+            "Convención sobre los Derechos del Niño",
+            "Artículo 12 CDN",
+            "Ley 1098 de 2006",
+            "Enfoque de participación infantil"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque resume el derecho de niños, niñas y adolescentes a expresar su opinión y a que sea considerada según edad y madurez.",
+        "opcion_A": "Es incorrecta porque desconoce el derecho de participación.",
+        "opcion_B": "Es incorrecta porque la Convención no plantea una sustitución automática de toda decisión adulta.",
+        "opcion_D": "Es incorrecta porque confunde derecho de participación con un acto simbólico."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem reconoce la voz de niños, niñas y adolescentes sin convertirla en decisión absoluta descontextualizada."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre participación infantil, agencia y Convención sobre los Derechos del Niño."
+    }
+}

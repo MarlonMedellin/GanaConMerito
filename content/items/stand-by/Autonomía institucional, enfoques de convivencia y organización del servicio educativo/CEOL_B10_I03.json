@@ -1,0 +1,97 @@
+{
+    "id_item": "CEOL_B10_I03",
+    "archivo_sugerido": "CEOL_B10_I03_ambiente_aula_nivel_avanzado.json",
+    "bloque": {
+        "codigo_bloque": "CEOL_B10",
+        "nombre": "Autonomía institucional, enfoques de convivencia y organización del servicio educativo",
+        "estado_en_lista": "Bloque 10 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 3 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante identifica acciones docentes propias de un nivel avanzado en la promoción de entornos seguros y sana convivencia escolar.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación docente, ascenso, reubicación, formación o selección relacionados con docencia y gestión de aula.",
+        "blueprint": {
+            "problematica_principal": "Comprensión limitada del ambiente de aula como simple control disciplinario.",
+            "fuente_autorizada": [
+                "Guía orientadora de evaluación docente",
+                "Competencias docentes",
+                "Convivencia escolar",
+                "Gestión de aula"
+            ],
+            "componente_modulo": "Evaluación para el Ascenso y Reubicación",
+            "competencia": "Ambiente en el aula",
+            "afirmacion": "Un desempeño avanzado promueve ambientes seguros, participativos, respetuosos, preventivos y orientados a la sana convivencia.",
+            "evidencia_observable": "Reconoce acciones que anticipan conflictos, generan participación, protegen derechos y fortalecen convivencia.",
+            "tipo_de_evidencia": "Juicio profesional aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que un ambiente de aula avanzado implica gestión preventiva, participación estudiantil, relaciones respetuosas, acuerdos claros, inclusión y mediación pedagógica de conflictos.",
+        "evidencia_observable": "Selecciona acciones docentes que ilustran promoción activa de entornos seguros y sana convivencia.",
+        "tarea_cognitiva": "Diferenciar un desempeño avanzado de respuestas reactivas o meramente punitivas.",
+        "tipo_de_pregunta": "Caso situacional de juicio profesional",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir ambiente seguro con vigilancia autoritaria",
+                "revision": "La clave enfatiza seguridad, participación, acuerdos, inclusión y mediación."
+            },
+            {
+                "riesgo": "Reducir desempeño avanzado a ausencia de conflictos",
+                "revision": "El ítem reconoce prevención y gestión adecuada, no inexistencia total de conflicto."
+            },
+            {
+                "riesgo": "Sesgo por contexto escolar",
+                "revision": "Las acciones propuestas pueden adaptarse a instituciones con diferentes recursos."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En una evaluación de desempeño, se analiza el criterio de ambiente en el aula. Se busca identificar acciones que evidencien un nivel avanzado frente a la promoción de entornos seguros y sana convivencia escolar.\n\n¿Cuál conjunto de acciones representa mejor ese nivel avanzado?",
+        "opciones": {
+            "A": "Construir acuerdos de aula, anticipar riesgos, promover participación, atender conflictos con mediación, proteger la dignidad de los estudiantes y hacer seguimiento a la convivencia.",
+            "B": "Esperar a que ocurran conflictos graves para aplicar sanciones fuertes.",
+            "C": "Evitar toda participación estudiantil para mantener silencio absoluto.",
+            "D": "Delegar por completo la convivencia al coordinador y limitarse a dictar contenidos."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Evaluación para el Ascenso y Reubicación",
+        "competencia": "Ambiente en el aula",
+        "claim_evaluado": "El evaluado comprende que un ambiente de aula avanzado implica gestión preventiva, participación estudiantil, relaciones respetuosas, acuerdos claros, inclusión y mediación pedagógica de conflictos.",
+        "evidencia": "Selecciona acciones docentes que ilustran promoción activa de entornos seguros y sana convivencia.",
+        "proceso_cognitivo": "Análisis y juicio profesional",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Representa una respuesta reactiva y punitiva.",
+            "C": "Confunde control del aula con supresión de la participación.",
+            "D": "Desconoce la responsabilidad docente en la convivencia del aula."
+        },
+        "fuente_autorizada": [
+            "Guía orientadora de evaluación docente",
+            "Competencias docentes",
+            "Convivencia escolar",
+            "Gestión de aula"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque integra prevención, acuerdos, participación, mediación, dignidad y seguimiento.",
+        "opcion_B": "Es incorrecta porque el nivel avanzado no se limita a reaccionar con sanción.",
+        "opcion_C": "Es incorrecta porque un aula segura no equivale a silenciar la participación.",
+        "opcion_D": "Es incorrecta porque el docente también gestiona el ambiente de aula."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no exige recursos materiales específicos y evalúa prácticas docentes observables y transferibles a distintos contextos."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre autonomía institucional, enfoques de convivencia y organización del servicio educativo."
+    }
+}

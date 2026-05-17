@@ -1,0 +1,98 @@
+{
+    "id_item": "CB06_I01",
+    "bloque": {
+        "numero": 6,
+        "nombre": "Hard Skills",
+        "estado_en_lista": "Bloque 6 de 15",
+        "decision_del_bloque": "Pregunta única",
+        "item_en_grupo": "Ítem 1 de 1"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante diferencia las habilidades técnicas o hard skills de las habilidades socioemocionales, actitudinales o relacionales en un contexto institucional.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
+        "blueprint": {
+            "problematica_principal": "Comprensión de competencias formales",
+            "fuente_autorizada": [
+                "Decreto 1083 de 2015",
+                "Gestión del talento humano",
+                "Referentes de competencias profesionales"
+            ],
+            "componente_modulo": "Talento humano",
+            "competencia": "Competencias profesionales",
+            "afirmacion": "Las hard skills son medibles.",
+            "evidencia_observable": "Distingue competencias técnicas verificables de habilidades actitudinales o relacionales.",
+            "tipo_de_evidencia": "Reconocimiento conceptual aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "B"
+        },
+        "claim": "El evaluado identifica que las hard skills corresponden a conocimientos y destrezas técnicas que pueden demostrarse mediante evidencias observables y verificables.",
+        "evidencia_observable": "Selecciona la definición que caracteriza una hard skill como dominio técnico, procedimental o instrumental requerido para una función.",
+        "tarea_cognitiva": "Reconocer una definición y un ejemplo apropiado de hard skill.",
+        "tipo_de_pregunta": "Pregunta conceptual aplicada",
+        "dificultad_esperada": "Baja",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Sesgo por dominio de terminología en inglés",
+                "revision": "El ítem usa el término hard skill, pero lo contextualiza como habilidad técnica para facilitar la comprensión."
+            },
+            {
+                "riesgo": "Ambigüedad entre habilidades técnicas y socioemocionales",
+                "revision": "Los distractores presentan habilidades relacionales o actitudinales, mientras la clave se centra en dominio técnico verificable."
+            },
+            {
+                "riesgo": "Sesgo por experiencia laboral específica",
+                "revision": "No exige experiencia en un cargo particular ni conocimiento de una herramienta concreta."
+            },
+            {
+                "riesgo": "Lenguaje técnico excesivo",
+                "revision": "La redacción usa vocabulario general de gestión del talento humano sin requerir memorización normativa."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En un proceso de selección institucional se solicita diferenciar entre habilidades técnicas y habilidades socioemocionales.\n\n¿Cuál opción describe mejor una hard skill?",
+        "opciones": {
+            "A": "La capacidad de mantener buenas relaciones interpersonales en cualquier equipo.",
+            "B": "El dominio verificable de una herramienta, procedimiento o conocimiento técnico requerido para una función.",
+            "C": "La disposición personal para escuchar opiniones contrarias con respeto.",
+            "D": "La motivación interna para persistir ante tareas difíciles."
+        },
+        "respuesta_correcta": "B"
+    },
+    "ficha_tecnica": {
+        "componente": "Talento humano",
+        "competencia": "Competencias profesionales",
+        "claim_evaluado": "El evaluado identifica que las hard skills corresponden a conocimientos y destrezas técnicas que pueden demostrarse mediante evidencias observables y verificables.",
+        "evidencia": "Selecciona la definición que caracteriza una hard skill como dominio técnico, procedimental o instrumental requerido para una función.",
+        "proceso_cognitivo": "Reconocimiento conceptual aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Baja",
+        "respuesta_correcta": "B",
+        "distractores": {
+            "A": "Describe una habilidad interpersonal o relacional, no una habilidad técnica.",
+            "C": "Describe una competencia socioemocional asociada a la escucha y al respeto.",
+            "D": "Describe una disposición actitudinal relacionada con la motivación y la perseverancia."
+        },
+        "fuente_autorizada": [
+            "Decreto 1083 de 2015",
+            "Gestión del talento humano",
+            "Referentes de competencias profesionales"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque define una hard skill como un dominio técnico, procedimental o instrumental que puede observarse, demostrarse y verificarse en relación con una función.",
+        "opcion_A": "Es incorrecta porque mantener buenas relaciones interpersonales corresponde a una habilidad blanda o socioemocional.",
+        "opcion_C": "Es incorrecta porque la escucha respetuosa se relaciona con comunicación, convivencia y habilidades socioemocionales.",
+        "opcion_D": "Es incorrecta porque la motivación interna y la persistencia corresponden a rasgos actitudinales o disposiciones personales, no a una habilidad técnica verificable."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no favorece a participantes con experiencia en un sector laboral específico ni exige conocer una herramienta particular. La clave depende de distinguir entre habilidad técnica verificable y habilidades socioemocionales, lo cual es pertinente para procesos generales de gestión del talento humano."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como pregunta única del bloque Hard Skills."
+    }
+}

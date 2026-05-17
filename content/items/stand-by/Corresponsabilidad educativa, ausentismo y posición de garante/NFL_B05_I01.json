@@ -1,0 +1,98 @@
+{
+    "id_item": "NFL_B05_I01",
+    "archivo_sugerido": "NFL_B05_I01_ausentismo_20_dias_omision_docente_posicion_garante.json",
+    "bloque": {
+        "codigo_bloque": "NFL_B05",
+        "nombre": "Corresponsabilidad educativa, ausentismo y posición de garante",
+        "estado_en_lista": "Bloque 5 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 1 de 3"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce el deber institucional de indagar, reportar y activar rutas ante ausentismo escolar prolongado.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación, convivencia, permanencia escolar o gestión institucional.",
+        "blueprint": {
+            "problematica_principal": "Omisión docente o institucional frente a inasistencia prolongada de un estudiante.",
+            "fuente_autorizada": [
+                "Ley 115 de 1994",
+                "Ley 1098 de 2006",
+                "Constitución Política de Colombia",
+                "Corresponsabilidad educativa",
+                "Rutas de permanencia escolar"
+            ],
+            "componente_modulo": "Corresponsabilidad educativa y ausentismo",
+            "competencia": "Seguimiento y protección de la trayectoria escolar",
+            "afirmacion": "La comunidad educativa tiene deber de corresponsabilidad frente al acceso, permanencia y protección del estudiante.",
+            "evidencia_observable": "Reconoce que ante 20 días de inasistencia no basta registrar fallas; debe indagarse, informar y activar apoyos o rutas.",
+            "tipo_de_evidencia": "Juicio normativo-pedagógico aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "B"
+        },
+        "claim": "El evaluado comprende que el ausentismo prolongado puede ser una señal de vulneración de derechos, riesgo de deserción o falla de corresponsabilidad que exige actuación oportuna.",
+        "evidencia_observable": "Selecciona la actuación institucional adecuada ante inasistencia prolongada.",
+        "tarea_cognitiva": "Analizar un caso de ausentismo y elegir la respuesta institucional protectora.",
+        "tipo_de_pregunta": "Caso situacional normativo-pedagógico",
+        "dificultad_esperada": "Media-Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Culpar automáticamente a la familia o al estudiante",
+                "revision": "La clave exige indagar causas y activar apoyos sin prejuzgar."
+            },
+            {
+                "riesgo": "Reducir el ausentismo a una falta disciplinaria",
+                "revision": "El ítem lo trata como posible alerta de protección y permanencia."
+            },
+            {
+                "riesgo": "Sobrecargar al docente individualmente",
+                "revision": "La opción correcta habla de canales institucionales y rutas."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un estudiante acumula 20 días sin asistir a la escuela. El docente solo registra las fallas y no indaga causas, no informa a orientación ni activa canales institucionales de seguimiento.\n\n¿Qué deber constitucional, pedagógico y de posición de garante está vulnerando principalmente?",
+        "opciones": {
+            "A": "Ninguno, porque la asistencia es responsabilidad exclusiva del estudiante.",
+            "B": "El deber de seguimiento, cuidado y corresponsabilidad educativa frente al acceso, permanencia y protección del estudiante.",
+            "C": "El deber de expulsar inmediatamente al estudiante por abandono escolar.",
+            "D": "El deber de ocultar las ausencias para mejorar los indicadores institucionales."
+        },
+        "respuesta_correcta": "B"
+    },
+    "ficha_tecnica": {
+        "componente": "Corresponsabilidad educativa y ausentismo",
+        "competencia": "Seguimiento y protección de la trayectoria escolar",
+        "claim_evaluado": "El evaluado comprende que el ausentismo prolongado puede ser una señal de vulneración de derechos, riesgo de deserción o falla de corresponsabilidad que exige actuación oportuna.",
+        "evidencia": "Selecciona la actuación institucional adecuada ante inasistencia prolongada.",
+        "proceso_cognitivo": "Juicio normativo-pedagógico aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media-Alta",
+        "respuesta_correcta": "B",
+        "distractores": {
+            "A": "Desconoce la corresponsabilidad educativa y la posición de garante.",
+            "C": "Convierte una alerta de permanencia en sanción extrema.",
+            "D": "Promueve ocultamiento institucional y vulnera el seguimiento educativo."
+        },
+        "fuente_autorizada": [
+            "Ley 115 de 1994",
+            "Ley 1098 de 2006",
+            "Constitución Política de Colombia",
+            "Corresponsabilidad educativa"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque el ausentismo prolongado exige indagación, seguimiento, comunicación institucional y eventual activación de apoyos o rutas.",
+        "opcion_A": "Es incorrecta porque la permanencia escolar involucra familia, escuela, sociedad y Estado.",
+        "opcion_C": "Es incorrecta porque la primera respuesta no debe ser expulsar, sino comprender y proteger la trayectoria.",
+        "opcion_D": "Es incorrecta porque ocultar información impide la protección del estudiante."
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado con revisión institucional recomendada.",
+        "argumento": "El ítem evita culpabilizar al estudiante por ausentismo y promueve actuación institucional preventiva."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Validar con protocolo territorial de permanencia escolar y reporte de ausentismo.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 3 preguntas sobre corresponsabilidad educativa, ausentismo y posición de garante."
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "id_item": "MTV_B08_I08",
+    "archivo_sugerido": "MTV_B08_I08_trabajo_en_equipo_habilidad_blanda.json",
+    "proposito_de_uso": "Evaluar si el aspirante identifica el trabajo en equipo como habilidad blanda observable en el desempeño docente.",
+    "blueprint": {
+        "componente_modulo": "Trabajo colaborativo",
+        "competencia": "Reconocimiento de habilidades blandas en interacción profesional",
+        "afirmacion": "El trabajo en equipo implica colaborar, escuchar, aportar, negociar, asumir responsabilidades y construir soluciones con otros.",
+        "evidencia_observable": "Reconoce una conducta docente que evidencia colaboración profesional.",
+        "tipo_de_evidencia": "Juicio comportamental aplicado",
+        "dificultad_esperada": "Media",
+        "clave": "A"
+    },
+    "item": {
+        "enunciado": "Un equipo docente debe diseñar una estrategia para mejorar la convivencia escolar. Una profesora escucha a sus colegas, propone ideas, acepta ajustes, distribuye tareas y cumple los compromisos acordados.\n\n¿Qué habilidad blanda evidencia principalmente?",
+        "opciones": {
+            "A": "Trabajo en equipo.",
+            "B": "Aislamiento profesional.",
+            "C": "Memorización de contenidos.",
+            "D": "Dominio exclusivo de una fórmula matemática."
+        },
+        "respuesta_correcta": "A"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque la profesora colabora, escucha, propone y asume compromisos con otros.",
+        "distractores": {
+            "B": "La situación muestra colaboración, no aislamiento.",
+            "C": "La memoria de contenidos no explica la conducta descrita.",
+            "D": "El dominio de una fórmula no corresponde al trabajo colaborativo."
+        }
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado",
+        "argumento": "El ítem presenta una conducta observable sin depender de rasgos personales subjetivos."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem sencillo y útil para evaluar trabajo colaborativo."
+    }
+}

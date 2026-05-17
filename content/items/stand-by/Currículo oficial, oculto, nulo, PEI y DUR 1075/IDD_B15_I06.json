@@ -1,0 +1,99 @@
+{
+    "id_item": "IDD_B15_I06",
+    "archivo_sugerido": "IDD_B15_I06_pei_curriculo_manual_convivencia_jerarquia.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B15",
+        "nombre": "Currículo oficial, oculto, nulo, PEI y DUR 1075",
+        "estado_en_lista": "Bloque 15 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 6 de 6"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende la relación jerárquica y funcional entre PEI, currículo y Manual de Convivencia.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación, rectoría, gestión curricular o convivencia escolar.",
+        "blueprint": {
+            "problematica_principal": "Confusión entre PEI, currículo y Manual de Convivencia como documentos equivalentes o sin articulación.",
+            "fuente_autorizada": [
+                "Ley 115 de 1994",
+                "Decreto 1075 de 2015",
+                "Proyecto Educativo Institucional",
+                "Manual de Convivencia",
+                "Gestión escolar"
+            ],
+            "componente_modulo": "Jerarquía institucional PEI, currículo y convivencia",
+            "competencia": "Comprensión de organización escolar",
+            "afirmacion": "El PEI orienta el horizonte institucional; el currículo organiza la propuesta formativa; el Manual de Convivencia regula acuerdos, derechos, deberes y procedimientos de convivencia.",
+            "evidencia_observable": "Distingue función y articulación de los tres instrumentos institucionales.",
+            "tipo_de_evidencia": "Comprensión institucional comparativa",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que estos instrumentos no son equivalentes, sino articulados dentro de la organización escolar.",
+        "evidencia_observable": "Selecciona una explicación que ordena PEI, currículo y Manual de Convivencia según su función institucional.",
+        "tarea_cognitiva": "Comparar funciones de documentos institucionales.",
+        "tipo_de_pregunta": "Pregunta conceptual comparativa",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Reducir PEI a manual disciplinario",
+                "revision": "La clave distingue horizonte institucional y convivencia."
+            },
+            {
+                "riesgo": "Separar currículo de PEI",
+                "revision": "La opción correcta muestra articulación."
+            },
+            {
+                "riesgo": "Desconocer la función formativa del Manual de Convivencia",
+                "revision": "El ítem lo ubica en derechos, deberes y procedimientos, no solo sanciones."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En una institución se discute si el PEI, el currículo y el Manual de Convivencia son lo mismo. Un equipo docente necesita aclarar su relación para organizar mejor la gestión escolar.\n\n¿Cuál explicación es más adecuada?",
+        "opciones": {
+            "A": "El PEI orienta el horizonte institucional; el currículo organiza la propuesta formativa y pedagógica; el Manual de Convivencia regula acuerdos, derechos, deberes y procedimientos para la vida escolar.",
+            "B": "El Manual de Convivencia reemplaza el PEI y define por sí solo toda la propuesta educativa.",
+            "C": "El currículo es independiente del PEI y no necesita responder al horizonte institucional.",
+            "D": "El PEI solo contiene sanciones y el currículo solo contiene horarios."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Jerarquía institucional PEI, currículo y convivencia",
+        "competencia": "Comprensión de organización escolar",
+        "claim_evaluado": "El evaluado comprende que estos instrumentos no son equivalentes, sino articulados dentro de la organización escolar.",
+        "evidencia": "Selecciona una explicación que ordena PEI, currículo y Manual de Convivencia según su función institucional.",
+        "proceso_cognitivo": "Comprensión institucional comparativa",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Subordina todo el proyecto educativo al manual de convivencia.",
+            "C": "Desarticula currículo y horizonte institucional.",
+            "D": "Caricaturiza y reduce los tres instrumentos."
+        },
+        "fuente_autorizada": [
+            "Ley 115 de 1994",
+            "Decreto 1075 de 2015",
+            "Proyecto Educativo Institucional",
+            "Manual de Convivencia",
+            "Gestión escolar"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque diferencia y articula la función de PEI, currículo y Manual de Convivencia.",
+        "opcion_B": "Es incorrecta porque el Manual de Convivencia no reemplaza el PEI.",
+        "opcion_C": "Es incorrecta porque el currículo debe articularse al PEI.",
+        "opcion_D": "Es incorrecta porque reduce documentos institucionales complejos a funciones mínimas o equivocadas."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem permite comprender la organización institucional sin favorecer un modelo único de PEI o currículo."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 6 de un grupo de 6 preguntas sobre currículo oficial, oculto, nulo, PEI y DUR 1075."
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "id_item": "CB14_I03",
+    "bloque": {
+        "numero": 14,
+        "nombre": "Propósitos de la educación",
+        "estado_en_lista": "Bloque 14 de 15",
+        "decision_del_bloque": "Grupo de 4 preguntas",
+        "item_en_grupo": "Ítem 3 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce que los propósitos de la educación deben concretarse en experiencias de aprendizaje que articulen conocimientos disciplinares, análisis del contexto, participación estudiantil y construcción de alternativas de solución.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
+        "blueprint": {
+            "problematica_principal": "Desconocimiento de fines educativos",
+            "fuente_autorizada": [
+                "Ley 115 de 1994",
+                "Fines de la educación",
+                "Proyecto Educativo Institucional"
+            ],
+            "componente_modulo": "Gestión académica",
+            "competencia": "Fundamentos educativos",
+            "afirmacion": "La educación tiene propósitos integrales.",
+            "evidencia_observable": "Identifica la relación entre fines educativos y diseño de experiencias de aprendizaje.",
+            "tipo_de_evidencia": "Interpretación de situación pedagógica",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "B"
+        },
+        "claim": "El evaluado comprende que las experiencias de aprendizaje deben articular saberes, valores, habilidades y participación social.",
+        "evidencia_observable": "Selecciona una actividad de aprendizaje que relaciona conceptos del área con problemas del entorno y participación activa de los estudiantes.",
+        "tarea_cognitiva": "Seleccionar una actividad coherente con propósitos integrales de educación.",
+        "tipo_de_pregunta": "Caso situacional de juicio profesional",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Sesgo por área disciplinar",
+                "revision": "El ítem no exige conocimiento especializado de un área específica; se centra en el diseño pedagógico de una experiencia integral."
+            },
+            {
+                "riesgo": "Sesgo territorial",
+                "revision": "La referencia a un problema local puede adaptarse a contextos urbanos, rurales o comunitarios diversos."
+            },
+            {
+                "riesgo": "Ambigüedad entre actividad académica y actividad social",
+                "revision": "La clave articula conocimientos del área, investigación del entorno y propuesta de solución, evitando separar lo académico de lo formativo."
+            },
+            {
+                "riesgo": "Reducción del aprendizaje a memorización",
+                "revision": "Los distractores permiten diferenciar entre reproducción mecánica y experiencia significativa de aprendizaje."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un área desea diseñar una actividad que articule conocimientos disciplinares con análisis de problemas del entorno y participación de los estudiantes en propuestas de solución.\n\n¿Cuál actividad responde mejor a ese propósito?",
+        "opciones": {
+            "A": "Copiar definiciones del libro y calificarlas únicamente por extensión.",
+            "B": "Realizar un proyecto en el que los estudiantes investiguen un problema local, usen conceptos del área y propongan acciones viables.",
+            "C": "Aplicar una prueba memorística semanal sin retroalimentación.",
+            "D": "Reemplazar todas las clases por charlas motivacionales sin relación con contenidos."
+        },
+        "respuesta_correcta": "B"
+    },
+    "ficha_tecnica": {
+        "componente": "Gestión académica",
+        "competencia": "Fundamentos educativos",
+        "claim_evaluado": "El evaluado comprende que las experiencias de aprendizaje deben articular saberes, valores, habilidades y participación social.",
+        "evidencia": "Selecciona una actividad de aprendizaje que relaciona conceptos del área con problemas del entorno y participación activa de los estudiantes.",
+        "proceso_cognitivo": "Análisis y juicio profesional",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "B",
+        "distractores": {
+            "A": "Privilegia copia mecánica sin análisis, participación ni construcción de sentido.",
+            "C": "Evalúa memoria de forma aislada y sin retroalimentación, lo cual limita el propósito formativo.",
+            "D": "Desconecta la motivación de los contenidos disciplinares y de los aprendizajes esperados."
+        },
+        "fuente_autorizada": [
+            "Ley 115 de 1994",
+            "Fines de la educación",
+            "Proyecto Educativo Institucional"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque articula conocimiento disciplinar, análisis del entorno, participación estudiantil y construcción de propuestas viables. Esta integración expresa una comprensión amplia de los propósitos educativos.",
+        "opcion_A": "Es incorrecta porque reduce la actividad a copia de definiciones y no promueve análisis, participación ni relación con el contexto.",
+        "opcion_C": "Es incorrecta porque una prueba memorística semanal sin retroalimentación limita el aprendizaje a reproducción de información.",
+        "opcion_D": "Es incorrecta porque las charlas motivacionales, si no se articulan con contenidos y experiencias de aprendizaje, no garantizan el desarrollo de competencias ni saberes."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no exige que los estudiantes pertenezcan a un contexto específico ni presupone recursos extraordinarios. La actividad propuesta puede adaptarse a diferentes realidades institucionales y evalúa la capacidad de diseñar experiencias de aprendizaje significativas y contextualizadas."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre propósitos de la educación."
+    }
+}

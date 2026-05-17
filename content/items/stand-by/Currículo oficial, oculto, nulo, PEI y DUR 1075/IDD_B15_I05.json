@@ -1,0 +1,99 @@
+{
+    "id_item": "IDD_B15_I05",
+    "archivo_sugerido": "IDD_B15_I05_pei_carta_navegacion_horizonte_calidad.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B15",
+        "nombre": "Currículo oficial, oculto, nulo, PEI y DUR 1075",
+        "estado_en_lista": "Bloque 15 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 5 de 6"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende el PEI como carta de navegación institucional y no como simple documento formal o manual de convivencia.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación, rectoría, gestión académica o currículo.",
+        "blueprint": {
+            "problematica_principal": "Reducción del PEI a un documento archivado o al manual de convivencia.",
+            "fuente_autorizada": [
+                "Ley 115 de 1994",
+                "Decreto 1075 de 2015",
+                "Proyecto Educativo Institucional",
+                "Gestión escolar",
+                "Calidad educativa"
+            ],
+            "componente_modulo": "Definición del PEI",
+            "competencia": "Comprensión del horizonte institucional",
+            "afirmacion": "El PEI orienta la identidad, horizonte, política de calidad, currículo, convivencia, gestión y relación con la comunidad.",
+            "evidencia_observable": "Reconoce el PEI como marco articulador de las decisiones institucionales.",
+            "tipo_de_evidencia": "Comprensión institucional aplicada",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que el PEI define la orientación estratégica, pedagógica y comunitaria de la institución educativa.",
+        "evidencia_observable": "Selecciona una explicación que relaciona PEI con horizonte institucional, currículo, calidad y gestión escolar.",
+        "tarea_cognitiva": "Diferenciar PEI de documento aislado o manual de convivencia.",
+        "tipo_de_pregunta": "Pregunta conceptual institucional",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir PEI con manual de convivencia",
+                "revision": "La clave distingue ambos y ubica el PEI como marco mayor."
+            },
+            {
+                "riesgo": "Presentar el PEI solo como trámite legal",
+                "revision": "La opción correcta lo vincula con decisiones reales de gestión y pedagogía."
+            },
+            {
+                "riesgo": "Desconocer diversidad de proyectos institucionales",
+                "revision": "El ítem permite diferentes identidades institucionales."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En una institución, algunos docentes afirman que el PEI es solo un documento que se guarda en la rectoría o que equivale al Manual de Convivencia. El equipo directivo insiste en que el PEI es la carta de navegación de la escuela.\n\n¿Por qué el PEI se define de esa manera?",
+        "opciones": {
+            "A": "Porque contiene únicamente el listado de sanciones disciplinarias.",
+            "B": "Porque reemplaza todos los planes de área y no necesita aplicarse en la vida escolar.",
+            "C": "Porque orienta el horizonte institucional, la identidad, el currículo, la convivencia, la gestión, la relación con la comunidad y la política de calidad.",
+            "D": "Porque es un documento externo que no afecta las decisiones pedagógicas."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Definición del PEI",
+        "competencia": "Comprensión del horizonte institucional",
+        "claim_evaluado": "El evaluado comprende que el PEI define la orientación estratégica, pedagógica y comunitaria de la institución educativa.",
+        "evidencia": "Selecciona una explicación que relaciona PEI con horizonte institucional, currículo, calidad y gestión escolar.",
+        "proceso_cognitivo": "Comprensión institucional aplicada",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Confunde PEI con manual disciplinario.",
+            "B": "Desconoce la articulación entre PEI y planes de área.",
+            "D": "Reduce el PEI a documento externo sin efecto pedagógico."
+        },
+        "fuente_autorizada": [
+            "Ley 115 de 1994",
+            "Decreto 1075 de 2015",
+            "Proyecto Educativo Institucional",
+            "Gestión escolar",
+            "Calidad educativa"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque el PEI orienta el sentido, la gestión, el currículo, la convivencia y la calidad institucional.",
+        "opcion_A": "Es incorrecta porque el PEI no es solo régimen disciplinario.",
+        "opcion_B": "Es incorrecta porque no reemplaza sin más los planes de área, sino que los orienta.",
+        "opcion_D": "Es incorrecta porque el PEI debe guiar decisiones pedagógicas reales."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem permite reconocer diversas identidades institucionales y evita reducir el PEI a un trámite administrativo."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 6 preguntas sobre currículo oficial, oculto, nulo, PEI y DUR 1075."
+    }
+}

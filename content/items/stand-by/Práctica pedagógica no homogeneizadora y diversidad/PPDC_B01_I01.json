@@ -1,0 +1,94 @@
+{
+    "id_item": "PPDC_B01_I01",
+    "archivo_sugerido": "PPDC_B01_I01_plan_lector_no_homogeneizador.json",
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce que la selección de textos en un plan lector debe responder a criterios pedagógicos, diversidad del grupo, intereses lectores, niveles de comprensión y propósitos formativos, y no a una autoridad absoluta del docente.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, especialmente en lenguaje, humanidades, básica y media.",
+        "blueprint": {
+            "problematica_principal": "Práctica pedagógica homogeneizadora en el diseño de un plan lector.",
+            "fuente_autorizada": [
+                "Lineamientos curriculares del Ministerio de Educación Nacional",
+                "Proyecto Educativo Institucional",
+                "Orientaciones institucionales de lectura, escritura y oralidad",
+                "Enfoques de pedagogía activa y atención a la diversidad"
+            ],
+            "componente_modulo": "Práctica Pedagógica y Didáctica",
+            "competencia": "Diseño de experiencias lectoras pertinentes",
+            "afirmacion": "El docente debe tomar decisiones lectoras con criterios pedagógicos, no desde una autoridad absoluta que desconoce la diversidad del grupo.",
+            "evidencia_observable": "Reconoce que un plan lector pertinente considera propósitos formativos, niveles de lectura, intereses, contexto y participación de los estudiantes.",
+            "tipo_de_evidencia": "Juicio pedagógico en situación de aula",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que el docente orienta el plan lector desde criterios pedagógicos y curriculares, pero no impone de manera absoluta un único texto sin considerar diversidad, intereses y necesidades del grupo.",
+        "evidencia_observable": "Selecciona una decisión que equilibra orientación docente, propósito lector, diversidad de estudiantes y participación en la selección de textos.",
+        "tarea_cognitiva": "Analizar una situación de diseño de plan lector y elegir la actuación menos homogeneizadora y más pertinente.",
+        "tipo_de_pregunta": "Caso situacional de juicio pedagógico",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Sesgo por capital cultural lector",
+                "revision": "El ítem evita asumir que todos los estudiantes tienen el mismo acceso, interés o experiencia previa con los mismos libros."
+            },
+            {
+                "riesgo": "Confusión entre autonomía docente y autoridad absoluta",
+                "revision": "La clave reconoce el rol orientador del docente sin convertirlo en imposición unilateral."
+            },
+            {
+                "riesgo": "Sesgo por área disciplinar",
+                "revision": "Aunque se sitúa en lenguaje, la evidencia evaluada aplica a decisiones didácticas en distintas áreas."
+            },
+            {
+                "riesgo": "Ambigüedad en la clave",
+                "revision": "La opción correcta es la única que articula criterios pedagógicos, diversidad, niveles de lectura e intereses estudiantiles."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En el diseño de un plan lector, un docente de lenguaje decide que todos los estudiantes deben leer el mismo libro, al mismo ritmo y con la misma guía de análisis, sin considerar intereses, niveles de comprensión ni contexto del grupo. Ante una observación de la coordinación, el docente afirma que él tiene autoridad absoluta para escoger el texto.\n\n¿Cuál valoración pedagógica es más adecuada frente a esta decisión?",
+        "opciones": {
+            "A": "Es adecuada, porque la autoridad del docente le permite escoger cualquier libro sin considerar las características del grupo.",
+            "B": "Es adecuada, siempre que el libro sea extenso y reconocido, aunque no dialogue con los intereses ni niveles de lectura de los estudiantes.",
+            "C": "Es limitada, porque el docente orienta el plan lector, pero debe considerar propósitos formativos, diversidad del grupo, niveles de comprensión e intereses lectores.",
+            "D": "Es incorrecta solo si los estudiantes no presentan una queja formal sobre el libro seleccionado."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Práctica Pedagógica y Didáctica",
+        "competencia": "Diseño de experiencias lectoras pertinentes",
+        "claim_evaluado": "El evaluado comprende que el docente orienta el plan lector desde criterios pedagógicos y curriculares, pero no impone de manera absoluta un único texto sin considerar diversidad, intereses y necesidades del grupo.",
+        "evidencia": "Selecciona una decisión que equilibra orientación docente, propósito lector, diversidad de estudiantes y participación en la selección de textos.",
+        "proceso_cognitivo": "Análisis y juicio pedagógico",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Confunde autoridad pedagógica con imposición absoluta.",
+            "B": "Asume que el prestigio o extensión del texto reemplaza la pertinencia didáctica.",
+            "D": "Reduce la pertinencia pedagógica a la existencia de una queja formal."
+        },
+        "fuente_autorizada": [
+            "Lineamientos curriculares del Ministerio de Educación Nacional",
+            "Proyecto Educativo Institucional",
+            "Orientaciones institucionales de lectura, escritura y oralidad",
+            "Enfoques de pedagogía activa y atención a la diversidad"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque reconoce que el docente tiene un rol orientador, pero sus decisiones deben estar mediadas por criterios pedagógicos, diversidad del grupo, intereses lectores, niveles de comprensión y propósitos formativos.",
+        "opcion_A": "Es incorrecta porque convierte la autonomía docente en autoridad absoluta y desconoce la diversidad del grupo.",
+        "opcion_B": "Es incorrecta porque la extensión o reconocimiento de un libro no garantiza pertinencia pedagógica.",
+        "opcion_D": "Es incorrecta porque la validez pedagógica de una decisión no depende únicamente de que exista una queja formal."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no favorece a estudiantes con mayor capital lector ni a docentes de un enfoque específico. Evalúa una decisión profesional general: seleccionar textos de manera pertinente y no homogeneizadora."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre práctica pedagógica no homogeneizadora y diversidad."
+    }
+}

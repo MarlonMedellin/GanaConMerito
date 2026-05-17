@@ -1,0 +1,101 @@
+{
+    "id_item": "EFCC_B02_I03",
+    "archivo_sugerido": "EFCC_B02_I03_evaluacion_coevaluacion_heteroevaluacion.json",
+    "bloque": {
+        "codigo_bloque": "EFCC_B02",
+        "nombre": "Criterios, instrumentos y tipos de evaluación",
+        "estado_en_lista": "Bloque 2 de 5",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 3 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante diferencia evaluación, coevaluación y heteroevaluación según el sujeto que valora el aprendizaje y la finalidad del proceso.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
+        "blueprint": {
+            "problematica_principal": "Confusión entre formas de participación en la evaluación.",
+            "fuente_autorizada": [
+                "Evaluación formativa",
+                "Sistema Institucional de Evaluación de los Estudiantes",
+                "Orientaciones pedagógicas institucionales",
+                "Didáctica general"
+            ],
+            "componente_modulo": "Evaluación, Currículo y Didáctica",
+            "competencia": "Comprensión de tipos de evaluación",
+            "afirmacion": "La evaluación puede involucrar distintos sujetos: docente, pares y estudiantes, según el tipo de valoración.",
+            "evidencia_observable": "Distingue evaluación, coevaluación y heteroevaluación a partir de quién valora y con qué propósito.",
+            "tipo_de_evidencia": "Comparación conceptual aplicada",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "D"
+        },
+        "claim": "El evaluado comprende que la heteroevaluación corresponde a la valoración realizada por otro, usualmente el docente; la coevaluación implica valoración entre pares; y la evaluación, en sentido general, recoge evidencias para valorar y mejorar el aprendizaje.",
+        "evidencia_observable": "Selecciona una explicación que diferencia correctamente evaluación, coevaluación y heteroevaluación.",
+        "tarea_cognitiva": "Comparar tipos de evaluación y seleccionar su caracterización correcta.",
+        "tipo_de_pregunta": "Pregunta conceptual comparativa",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Ambigüedad terminológica",
+                "revision": "La clave define cada tipo de evaluación según el sujeto que valora."
+            },
+            {
+                "riesgo": "Sesgo por experiencia institucional",
+                "revision": "No exige conocer el formato específico del SIEE de una institución."
+            },
+            {
+                "riesgo": "Confusión entre coevaluación y autoevaluación",
+                "revision": "Aunque el ítem no centra la autoevaluación, diferencia la valoración entre pares de la valoración propia."
+            },
+            {
+                "riesgo": "Lenguaje técnico",
+                "revision": "Los conceptos se explican mediante situaciones de aula."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En una clase, el docente valora el trabajo de los estudiantes con una rúbrica; luego, los estudiantes revisan los productos de sus compañeros usando los mismos criterios. Finalmente, el grupo conversa sobre cómo estas valoraciones ayudan a mejorar el aprendizaje.\n\n¿Cuál opción diferencia mejor evaluación, coevaluación y heteroevaluación?",
+        "opciones": {
+            "A": "La coevaluación ocurre cuando el docente califica al estudiante; la heteroevaluación ocurre cuando nadie revisa el trabajo.",
+            "B": "La evaluación solo consiste en poner notas; la coevaluación y la heteroevaluación no hacen parte del proceso formativo.",
+            "C": "La heteroevaluación es la valoración que cada estudiante hace de sí mismo; la coevaluación es una sanción grupal.",
+            "D": "La evaluación recoge evidencias para valorar el aprendizaje; la coevaluación implica valoración entre pares; la heteroevaluación es la valoración realizada por otro, usualmente el docente."
+        },
+        "respuesta_correcta": "D"
+    },
+    "ficha_tecnica": {
+        "componente": "Evaluación, Currículo y Didáctica",
+        "competencia": "Comprensión de tipos de evaluación",
+        "claim_evaluado": "El evaluado comprende que la heteroevaluación corresponde a la valoración realizada por otro, usualmente el docente; la coevaluación implica valoración entre pares; y la evaluación, en sentido general, recoge evidencias para valorar y mejorar el aprendizaje.",
+        "evidencia": "Selecciona una explicación que diferencia correctamente evaluación, coevaluación y heteroevaluación.",
+        "proceso_cognitivo": "Comparación conceptual aplicada",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "D",
+        "distractores": {
+            "A": "Invierte y distorsiona los roles de coevaluación y heteroevaluación.",
+            "B": "Reduce evaluación a nota y excluye su función formativa.",
+            "C": "Confunde heteroevaluación con autoevaluación y coevaluación con sanción."
+        },
+        "fuente_autorizada": [
+            "Evaluación formativa",
+            "Sistema Institucional de Evaluación de los Estudiantes",
+            "Orientaciones pedagógicas institucionales",
+            "Didáctica general"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción D es correcta porque diferencia la evaluación como proceso de valoración del aprendizaje, la coevaluación como valoración entre pares y la heteroevaluación como valoración realizada por otra persona, usualmente el docente.",
+        "opcion_A": "Es incorrecta porque atribuye al docente la coevaluación y define de forma absurda la heteroevaluación.",
+        "opcion_B": "Es incorrecta porque reduce la evaluación a calificación y desconoce formas participativas de valoración.",
+        "opcion_C": "Es incorrecta porque la valoración de sí mismo corresponde a autoevaluación, no a heteroevaluación."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no exige experiencia previa en formatos institucionales complejos. Presenta una situación clara y evalúa la comprensión de roles en la evaluación."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre criterios, instrumentos y tipos de evaluación."
+    }
+}

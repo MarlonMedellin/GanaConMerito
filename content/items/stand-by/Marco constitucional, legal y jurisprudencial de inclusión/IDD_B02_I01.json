@@ -1,0 +1,97 @@
+{
+    "id_item": "IDD_B02_I01",
+    "archivo_sugerido": "IDD_B02_I01_articulo_47_constitucion_integracion_social.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B02",
+        "nombre": "Marco constitucional, legal y jurisprudencial de inclusión",
+        "estado_en_lista": "Bloque 2 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 1 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante identifica el artículo constitucional que ordena al Estado adelantar una política de previsión, rehabilitación e integración social para personas con limitaciones físicas, sensoriales o psíquicas.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, inclusión educativa, coordinación o gestión institucional.",
+        "blueprint": {
+            "problematica_principal": "Desconocimiento del fundamento constitucional de la integración social de personas con limitaciones o discapacidad.",
+            "fuente_autorizada": [
+                "Constitución Política de Colombia, artículo 47",
+                "Decreto 1421 de 2017",
+                "Ley 1618 de 2013",
+                "Enfoque de derechos"
+            ],
+            "componente_modulo": "Inclusión y Marco Legal",
+            "competencia": "Reconocimiento constitucional de la inclusión",
+            "afirmacion": "La Constitución establece obligaciones estatales de previsión, rehabilitación e integración social para personas con limitaciones físicas, sensoriales o psíquicas.",
+            "evidencia_observable": "Identifica el artículo 47 como fundamento constitucional de integración social y atención especializada.",
+            "tipo_de_evidencia": "Reconocimiento normativo",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado reconoce que la inclusión educativa tiene soporte constitucional y no depende únicamente de decisiones institucionales discrecionales.",
+        "evidencia_observable": "Selecciona el artículo constitucional que corresponde a la política de integración social para personas con limitaciones.",
+        "tarea_cognitiva": "Identificar un referente constitucional básico de inclusión.",
+        "tipo_de_pregunta": "Pregunta normativa de reconocimiento",
+        "dificultad_esperada": "Baja",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Memorización normativa aislada",
+                "revision": "Aunque pregunta por artículo, el enunciado contextualiza su contenido y finalidad."
+            },
+            {
+                "riesgo": "Lenguaje constitucional antiguo",
+                "revision": "El ítem conserva la referencia normativa pero usa también enfoque de derechos e inclusión."
+            },
+            {
+                "riesgo": "Confusión con artículos sobre educación o infancia",
+                "revision": "Los distractores se formulan para diferenciar la norma específica."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En una capacitación sobre educación inclusiva se pregunta por el fundamento constitucional que ordena al Estado adelantar una política de previsión, rehabilitación e integración social para personas con limitaciones físicas, sensoriales o psíquicas.\n\n¿Qué artículo de la Constitución Política de Colombia contiene este mandato?",
+        "opciones": {
+            "A": "Artículo 47.",
+            "B": "Artículo 1.",
+            "C": "Artículo 95.",
+            "D": "Artículo 150."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Inclusión y Marco Legal",
+        "competencia": "Reconocimiento constitucional de la inclusión",
+        "claim_evaluado": "El evaluado reconoce que la inclusión educativa tiene soporte constitucional y no depende únicamente de decisiones institucionales discrecionales.",
+        "evidencia": "Selecciona el artículo constitucional que corresponde a la política de integración social para personas con limitaciones.",
+        "proceso_cognitivo": "Reconocimiento normativo",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Baja",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Se refiere a principios fundamentales del Estado, pero no al mandato específico de integración social.",
+            "C": "Se relaciona con deberes de la persona y del ciudadano, no con integración social de personas con limitaciones.",
+            "D": "Corresponde a funciones del Congreso, no al marco constitucional de inclusión."
+        },
+        "fuente_autorizada": [
+            "Constitución Política de Colombia, artículo 47",
+            "Decreto 1421 de 2017",
+            "Ley 1618 de 2013",
+            "Enfoque de derechos"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque el artículo 47 contiene el mandato de política de previsión, rehabilitación e integración social.",
+        "opcion_B": "Es incorrecta porque no corresponde al contenido específico solicitado.",
+        "opcion_C": "Es incorrecta porque no regula ese mandato.",
+        "opcion_D": "Es incorrecta porque trata funciones legislativas."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "Evalúa un referente normativo básico y presenta el contenido del artículo para evitar una exigencia puramente memorística."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 5 preguntas sobre marco constitucional, legal y jurisprudencial de inclusión."
+    }
+}

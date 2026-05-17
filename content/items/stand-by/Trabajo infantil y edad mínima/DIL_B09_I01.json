@@ -1,0 +1,99 @@
+{
+    "id_item": "DIL_B09_I01",
+    "archivo_sugerido": "DIL_B09_I01_edad_minima_trabajo_adolescente_colombia.json",
+    "bloque": {
+        "codigo_bloque": "DIL_B09",
+        "nombre": "Trabajo infantil y edad mínima",
+        "estado_en_lista": "Bloque 9 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 1 de 2"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce la edad mínima de admisión al trabajo adolescente en Colombia y la necesidad de autorización y protección laboral.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, protección integral, convivencia escolar, trabajo infantil o gestión institucional.",
+        "blueprint": {
+            "problematica_principal": "Desconocimiento de la edad mínima legal para que un adolescente pueda ser admitido al trabajo en Colombia.",
+            "fuente_autorizada": [
+                "Ley 1098 de 2006",
+                "Código de Infancia y Adolescencia",
+                "Ministerio del Trabajo",
+                "Sistema Nacional de Bienestar Familiar",
+                "Convenios internacionales sobre trabajo infantil"
+            ],
+            "componente_modulo": "Regulación del trabajo infantil",
+            "competencia": "Reconocimiento de límites legales de trabajo adolescente",
+            "afirmacion": "La edad mínima de admisión al trabajo en Colombia es de 15 años, bajo autorización y condiciones de protección laboral.",
+            "evidencia_observable": "Identifica correctamente la edad mínima y reconoce que el trabajo adolescente no puede realizarse sin autorización ni garantías.",
+            "tipo_de_evidencia": "Reconocimiento normativo aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que el trabajo adolescente está permitido solo bajo edad mínima, autorización y protección especial, y que no equivale a libre contratación de cualquier menor de edad.",
+        "evidencia_observable": "Selecciona la edad mínima legal correcta para admisión al trabajo adolescente.",
+        "tarea_cognitiva": "Reconocer un límite legal básico y su finalidad protectora.",
+        "tipo_de_pregunta": "Pregunta normativa de reconocimiento",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Normalizar trabajo infantil por necesidad económica",
+                "revision": "La clave reconoce edad mínima y protección, sin negar condiciones sociales."
+            },
+            {
+                "riesgo": "Confundir trabajo adolescente autorizado con explotación laboral",
+                "revision": "El ítem diferencia autorización y garantías de explotación."
+            },
+            {
+                "riesgo": "Desactualización normativa",
+                "revision": "Se recomienda revisión normativa antes de uso definitivo."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Una familia solicita orientación a la institución educativa porque un estudiante adolescente desea trabajar formalmente. El equipo escolar recuerda que la ley colombiana establece una edad mínima de admisión al trabajo y condiciones de protección.\n\nDe acuerdo con la normatividad actual, ¿cuál es la edad mínima innegociable en Colombia para permitir la admisión de un adolescente al trabajo?",
+        "opciones": {
+            "A": "12 años.",
+            "B": "14 años.",
+            "C": "15 años.",
+            "D": "18 años sin excepción."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Regulación del trabajo infantil",
+        "competencia": "Reconocimiento de límites legales de trabajo adolescente",
+        "claim_evaluado": "El evaluado comprende que el trabajo adolescente está permitido solo bajo edad mínima, autorización y protección especial, y que no equivale a libre contratación de cualquier menor de edad.",
+        "evidencia": "Selecciona la edad mínima legal correcta para admisión al trabajo adolescente.",
+        "proceso_cognitivo": "Reconocimiento normativo aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Reduce indebidamente la edad mínima y puede normalizar trabajo infantil.",
+            "B": "Confunde la edad mínima de trabajo con otros umbrales de protección o responsabilidad.",
+            "D": "Desconoce que puede existir trabajo adolescente autorizado desde los 15 años."
+        },
+        "fuente_autorizada": [
+            "Ley 1098 de 2006",
+            "Código de Infancia y Adolescencia",
+            "Ministerio del Trabajo",
+            "Sistema Nacional de Bienestar Familiar",
+            "Convenios internacionales sobre trabajo infantil"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque la Ley 1098 establece como edad mínima de admisión al trabajo los 15 años, bajo autorización y protección laboral.",
+        "opcion_A": "Es incorrecta porque 12 años está por debajo del límite legal.",
+        "opcion_B": "Es incorrecta porque 14 años no corresponde a la edad mínima de admisión al trabajo en Colombia.",
+        "opcion_D": "Es incorrecta porque la mayoría de edad no es el único punto de admisión al trabajo, pues existe trabajo adolescente autorizado desde los 15 años."
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado con revisión normativa recomendada.",
+        "argumento": "El ítem evita normalizar trabajo infantil y reconoce el trabajo adolescente únicamente bajo condiciones legales de protección."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Validar con Ministerio del Trabajo y norma vigente antes de banco definitivo.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 2 preguntas sobre trabajo infantil y edad mínima."
+    }
+}

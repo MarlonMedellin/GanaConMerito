@@ -1,0 +1,99 @@
+{
+    "id_item": "IDD_B01_I02",
+    "archivo_sugerido": "IDD_B01_I02_intervencion_docente_color_piel.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B01",
+        "nombre": "Sesgos culturales, lenguaje inclusivo y discriminación cotidiana",
+        "estado_en_lista": "Bloque 1 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 2 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante elige una intervención pedagógica adecuada para transformar el sesgo de un color piel único en una experiencia de inclusión y reconocimiento de la diversidad.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación académica o gestión pedagógica.",
+        "blueprint": {
+            "problematica_principal": "Respuesta docente inadecuada frente a una expresión discriminatoria naturalizada.",
+            "fuente_autorizada": [
+                "Decreto 1421 de 2017",
+                "Ley 1098 de 2006",
+                "Enfoque de derechos",
+                "Educación inclusiva",
+                "Educación intercultural"
+            ],
+            "componente_modulo": "Pedagogía Práctica y Discriminación",
+            "competencia": "Mediación pedagógica antidiscriminatoria",
+            "afirmacion": "El docente debe intervenir el sesgo sin humillar al estudiante, promoviendo lenguaje, representación y participación incluyentes.",
+            "evidencia_observable": "Selecciona una intervención que pregunta, dialoga, compara tonos, visibiliza diversidad y evita la imposición de un modelo único.",
+            "tipo_de_evidencia": "Actuación pedagógica en situación de aula",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que deconstruir un sesgo en el aula exige una intervención pedagógica respetuosa, reflexiva y participativa, no una corrección humillante o una omisión.",
+        "evidencia_observable": "Elige la acción docente que convierte la expresión color piel en una oportunidad para reconocer la diversidad de tonos de piel.",
+        "tarea_cognitiva": "Seleccionar la actuación docente más coherente con inclusión y enfoque de derechos.",
+        "tipo_de_pregunta": "Caso situacional de actuación pedagógica",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Humillar al estudiante que usa una expresión socialmente aprendida",
+                "revision": "La opción correcta corrige la idea sin atacar al niño."
+            },
+            {
+                "riesgo": "Volver la diversidad un tema decorativo",
+                "revision": "La clave integra representación, diálogo y reconocimiento."
+            },
+            {
+                "riesgo": "Ignorar el sesgo por considerarlo menor",
+                "revision": "El ítem muestra que los sesgos cotidianos también tienen efecto formativo."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Después de que un estudiante pide el color piel, el docente decide intervenir pedagógicamente para evitar que el grupo asuma un único tono como representación válida de todas las personas.\n\n¿Cuál actuación docente es más adecuada?",
+        "opciones": {
+            "A": "Preguntar al grupo si todas las pieles son iguales, observar diferentes tonos, ofrecer varios colores y conversar sobre respeto y diversidad humana.",
+            "B": "Entregar el color claro de siempre y continuar la actividad sin hacer ninguna reflexión.",
+            "C": "Regañar al niño por usar una expresión discriminatoria y prohibirle participar en la actividad.",
+            "D": "Suspender la actividad artística porque hablar de diversidad puede incomodar al grupo."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Pedagogía Práctica y Discriminación",
+        "competencia": "Mediación pedagógica antidiscriminatoria",
+        "claim_evaluado": "El evaluado comprende que deconstruir un sesgo en el aula exige una intervención pedagógica respetuosa, reflexiva y participativa, no una corrección humillante o una omisión.",
+        "evidencia": "Elige la acción docente que convierte la expresión color piel en una oportunidad para reconocer la diversidad de tonos de piel.",
+        "proceso_cognitivo": "Juicio pedagógico aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Mantiene el sesgo sin mediación pedagógica.",
+            "C": "Corrige desde la humillación y puede inhibir la participación.",
+            "D": "Evita una oportunidad formativa de inclusión."
+        },
+        "fuente_autorizada": [
+            "Decreto 1421 de 2017",
+            "Ley 1098 de 2006",
+            "Enfoque de derechos",
+            "Educación inclusiva",
+            "Educación intercultural"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque transforma una expresión cotidiana en reflexión sobre diversidad, sin sancionar ni ridiculizar al estudiante.",
+        "opcion_B": "Es incorrecta porque reproduce el sesgo.",
+        "opcion_C": "Es incorrecta porque usa una respuesta punitiva.",
+        "opcion_D": "Es incorrecta porque evita el aprendizaje inclusivo."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem protege la dignidad de todos los estudiantes y promueve una intervención respetuosa, no culpabilizante."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre sesgos culturales, lenguaje inclusivo y discriminación cotidiana."
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "id_item": "DIL_B01_I03",
+    "archivo_sugerido": "DIL_B01_I03_corresponsabilidad_no_delegacion_total.json",
+    "bloque": {
+        "codigo_bloque": "DIL_B01",
+        "nombre": "Corresponsabilidad, protección integral y sujetos de derechos",
+        "estado_en_lista": "Bloque 1 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 3 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende que la corresponsabilidad no autoriza a la escuela a trasladar toda la obligación de protección a la familia o a otra entidad.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación, rectoría o convivencia.",
+        "blueprint": {
+            "problematica_principal": "Uso indebido del principio de corresponsabilidad para evadir actuaciones escolares de protección.",
+            "fuente_autorizada": [
+                "Ley 1098 de 2006",
+                "Constitución Política de Colombia",
+                "Sistema Nacional de Bienestar Familiar",
+                "Manual de convivencia institucional"
+            ],
+            "componente_modulo": "Corresponsabilidad aplicada en la escuela",
+            "competencia": "Actuación institucional protectora",
+            "afirmacion": "La corresponsabilidad implica concurrencia y articulación, no delegación total ni evasión de deberes institucionales.",
+            "evidencia_observable": "Reconoce que la escuela debe actuar, registrar, orientar, reportar o activar ruta según la situación.",
+            "tipo_de_evidencia": "Juicio normativo aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "D"
+        },
+        "claim": "El evaluado comprende que la escuela tiene deberes de protección y articulación cuando identifica riesgos o vulneraciones de derechos.",
+        "evidencia_observable": "Selecciona una actuación escolar corresponsable que no evade el caso ni sustituye a la autoridad competente.",
+        "tarea_cognitiva": "Analizar una situación escolar y elegir una respuesta compatible con corresponsabilidad.",
+        "tipo_de_pregunta": "Caso situacional normativo",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Sobrecargar al docente como único responsable",
+                "revision": "La clave exige articulación institucional, no acción individual aislada."
+            },
+            {
+                "riesgo": "Culpar automáticamente a la familia",
+                "revision": "La respuesta correcta no culpa; activa apoyo y ruta."
+            },
+            {
+                "riesgo": "Sustituir autoridades competentes",
+                "revision": "La clave indica actuación escolar dentro de sus competencias."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un docente identifica señales de posible vulneración de derechos en un estudiante. En la reunión, alguien afirma: “Como existe corresponsabilidad, que la familia resuelva sola; la escuela no debe intervenir”.\n\n¿Cuál interpretación es correcta?",
+        "opciones": {
+            "A": "La corresponsabilidad significa que la escuela puede desentenderse del caso.",
+            "B": "La corresponsabilidad elimina cualquier deber de actuación docente o institucional.",
+            "C": "La corresponsabilidad permite esperar indefinidamente hasta que otra entidad actúe.",
+            "D": "La corresponsabilidad exige que la escuela actúe dentro de sus competencias, articule apoyos y active las rutas pertinentes cuando sea necesario."
+        },
+        "respuesta_correcta": "D"
+    },
+    "ficha_tecnica": {
+        "componente": "Corresponsabilidad aplicada en la escuela",
+        "competencia": "Actuación institucional protectora",
+        "claim_evaluado": "El evaluado comprende que la escuela tiene deberes de protección y articulación cuando identifica riesgos o vulneraciones de derechos.",
+        "evidencia": "Selecciona una actuación escolar corresponsable que no evade el caso ni sustituye a la autoridad competente.",
+        "proceso_cognitivo": "Juicio normativo aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "D",
+        "distractores": {
+            "A": "Convierte la corresponsabilidad en excusa de omisión.",
+            "B": "Desconoce deberes escolares de protección.",
+            "C": "Normaliza la demora y la inacción institucional."
+        },
+        "fuente_autorizada": [
+            "Ley 1098 de 2006",
+            "Constitución Política de Colombia",
+            "Sistema Nacional de Bienestar Familiar",
+            "Manual de convivencia institucional"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción D es correcta porque la corresponsabilidad implica concurrencia de acciones y articulación, no evasión de la obligación escolar.",
+        "opcion_A": "Es incorrecta porque la escuela no puede desentenderse cuando advierte riesgos.",
+        "opcion_B": "Es incorrecta porque sí existen deberes docentes e institucionales.",
+        "opcion_C": "Es incorrecta porque la protección de derechos exige oportunidad."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "Evita responsabilizar a un solo actor y promueve actuación coordinada, oportuna y dentro de competencias."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre corresponsabilidad, protección integral y sujetos de derechos."
+    }
+}

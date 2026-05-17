@@ -1,0 +1,101 @@
+{
+    "id_item": "PPDC_B06_I02",
+    "archivo_sugerido": "PPDC_B06_I02_educacion_no_formal_etdh.json",
+    "bloque": {
+        "codigo_bloque": "PPDC_B06",
+        "nombre": "Normatividad, fines de la educación y educación no formal",
+        "estado_en_lista": "Bloque 6 de 7",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 2 de 2"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante diferencia jurídicamente la educación formal de los procesos de educación no formal o educación para el trabajo y el desarrollo humano, especialmente cuando se trata de cursos cortos, formación técnica laboral o programas que no conducen a títulos académicos de la educación regular.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica, gestión académica o gestión directiva en educación básica y media.",
+        "blueprint": {
+            "problematica_principal": "Confusión entre educación formal, educación no formal y certificaciones de programas laborales o de corta duración.",
+            "fuente_autorizada": [
+                "Ley 115 de 1994",
+                "Normativa sobre educación para el trabajo y el desarrollo humano",
+                "Normativa sobre educación formal",
+                "Orientaciones del Ministerio de Educación Nacional"
+            ],
+            "componente_modulo": "Normatividad y Fines de la Educación",
+            "competencia": "Comprensión normativa del servicio educativo",
+            "afirmacion": "Los procesos de enseñanza que no conducen a títulos académicos de la educación formal se clasifican como educación no formal o, en la denominación vigente, educación para el trabajo y el desarrollo humano.",
+            "evidencia_observable": "Distingue programas de formación laboral, cursos cortos o formación técnica no formal de la educación formal organizada por niveles, grados y títulos académicos.",
+            "tipo_de_evidencia": "Comparación normativa aplicada",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que los cursos cortos, programas laborales, técnicos laborales o formaciones ofrecidas por entidades como el SENA, cuando no conducen a títulos académicos del sistema formal regular, se ubican en el campo de la educación no formal o educación para el trabajo y el desarrollo humano, según la denominación normativa vigente.",
+        "evidencia_observable": "Selecciona la clasificación jurídica adecuada para procesos formativos no conducentes a títulos académicos de la educación regular.",
+        "tarea_cognitiva": "Analizar una situación de oferta formativa y clasificarla según los tipos de educación.",
+        "tipo_de_pregunta": "Pregunta conceptual normativa aplicada",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Cambio terminológico entre educación no formal y educación para el trabajo y el desarrollo humano",
+                "revision": "El ítem reconoce la expresión educación no formal y aclara la denominación vigente para evitar penalizar a quienes conocen una u otra formulación."
+            },
+            {
+                "riesgo": "Sesgo por experiencia con el SENA",
+                "revision": "No exige haber estudiado en el SENA; la institución se usa como ejemplo de procesos formativos laborales o técnicos."
+            },
+            {
+                "riesgo": "Ambigüedad entre título académico y certificación",
+                "revision": "La clave diferencia los títulos académicos de la educación formal de certificaciones o constancias propias de programas laborales o de corta duración."
+            },
+            {
+                "riesgo": "Desvalorización de la educación no formal",
+                "revision": "El ítem no presenta esta educación como inferior, sino como jurídicamente distinta por finalidad, organización y certificación."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Una persona realiza un curso corto de formación laboral y luego un programa técnico orientado al desarrollo de competencias específicas. Estos procesos certifican una formación ocupacional o laboral, pero no corresponden a grados de la educación regular ni conducen a títulos académicos propios de la educación formal.\n\nSegún la Ley 115 y la clasificación del servicio educativo, ¿cómo se clasifican jurídicamente estos procesos?",
+        "opciones": {
+            "A": "Educación formal, porque toda formación organizada conduce necesariamente a grados y títulos académicos de la educación regular.",
+            "B": "Educación informal, porque cualquier curso corto carece de intención formativa y no puede certificar aprendizajes.",
+            "C": "Educación no formal o educación para el trabajo y el desarrollo humano, porque complementa, actualiza o forma en aspectos académicos o laborales sin conducir a títulos académicos de la educación formal regular.",
+            "D": "Educación superior universitaria, porque toda formación técnica o laboral equivale automáticamente a un programa profesional."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Normatividad y Fines de la Educación",
+        "competencia": "Comprensión normativa del servicio educativo",
+        "claim_evaluado": "El evaluado comprende que los cursos cortos, programas laborales, técnicos laborales o formaciones ofrecidas por entidades como el SENA, cuando no conducen a títulos académicos del sistema formal regular, se ubican en el campo de la educación no formal o educación para el trabajo y el desarrollo humano, según la denominación normativa vigente.",
+        "evidencia": "Selecciona la clasificación jurídica adecuada para procesos formativos no conducentes a títulos académicos de la educación regular.",
+        "proceso_cognitivo": "Comparación normativa aplicada",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Confunde toda formación organizada con educación formal conducente a grados y títulos académicos.",
+            "B": "Confunde educación no formal con educación informal y niega indebidamente la posibilidad de certificación.",
+            "D": "Equivoca la formación técnica o laboral con educación superior universitaria."
+        },
+        "fuente_autorizada": [
+            "Ley 115 de 1994",
+            "Normativa sobre educación para el trabajo y el desarrollo humano",
+            "Normativa sobre educación formal",
+            "Orientaciones del Ministerio de Educación Nacional"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque clasifica estos procesos como educación no formal, actualmente asociada a educación para el trabajo y el desarrollo humano, cuando complementan, actualizan o forman en aspectos académicos o laborales sin conducir a títulos académicos de la educación formal regular.",
+        "opcion_A": "Es incorrecta porque la educación formal tiene una organización por niveles, grados y títulos académicos reconocidos dentro del sistema regular.",
+        "opcion_B": "Es incorrecta porque la educación informal no equivale a cursos organizados de formación laboral o técnica con certificación.",
+        "opcion_D": "Es incorrecta porque la formación técnica o laboral no se convierte automáticamente en educación superior universitaria."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem evita desvalorizar la educación no formal o para el trabajo y el desarrollo humano. También aclara la diferencia entre certificación laboral u ocupacional y título académico, reduciendo ambigüedad terminológica."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada. Puede conservarse la expresión 'educación no formal' si el banco usa la terminología de la Ley 115, añadiendo la denominación vigente 'educación para el trabajo y el desarrollo humano'.",
+        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 2 preguntas sobre normatividad, fines de la educación y educación no formal."
+    }
+}

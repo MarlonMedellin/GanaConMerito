@@ -1,0 +1,99 @@
+{
+    "id_item": "DIL_B10_I01",
+    "archivo_sugerido": "DIL_B10_I01_dignidad_humana_equidad_codigo_infancia.json",
+    "bloque": {
+        "codigo_bloque": "DIL_B10",
+        "nombre": "Dignidad humana, equidad y columna vertebral del Código de Infancia",
+        "estado_en_lista": "Bloque 10 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 1 de 3"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende por qué la dignidad humana y la equidad orientan la aplicación del Código de Infancia y Adolescencia.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, convivencia, infancia, protección integral o gestión institucional.",
+        "blueprint": {
+            "problematica_principal": "Aplicación mecánica o punitiva de normas de infancia sin considerar dignidad, equidad, interés superior y protección integral.",
+            "fuente_autorizada": [
+                "Constitución Política de Colombia",
+                "Ley 1098 de 2006",
+                "Convención sobre los Derechos del Niño",
+                "Jurisprudencia constitucional",
+                "Enfoque de derechos"
+            ],
+            "componente_modulo": "Dignidad humana y equidad",
+            "competencia": "Interpretación principialista de la protección integral",
+            "afirmacion": "La dignidad humana y la equidad orientan toda actuación hacia la protección real, no discriminatoria y proporcional de niños, niñas y adolescentes.",
+            "evidencia_observable": "Reconoce que ninguna medida escolar, familiar o institucional puede desconocer la dignidad ni tratar de forma desigual injustificada a NNA.",
+            "tipo_de_evidencia": "Juicio constitucional y ético aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "D"
+        },
+        "claim": "El evaluado comprende que la protección integral exige interpretar y aplicar las normas desde dignidad humana, igualdad material, interés superior y equidad.",
+        "evidencia_observable": "Selecciona una explicación que ubica dignidad y equidad como principios orientadores de toda decisión que afecta a NNA.",
+        "tarea_cognitiva": "Interpretar el sentido principialista del Código de Infancia y Adolescencia.",
+        "tipo_de_pregunta": "Pregunta conceptual normativa aplicada",
+        "dificultad_esperada": "Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Usar dignidad como concepto retórico sin aplicación",
+                "revision": "La clave lo vincula con decisiones concretas y trato no degradante."
+            },
+            {
+                "riesgo": "Confundir equidad con trato idéntico sin apoyos",
+                "revision": "La respuesta correcta habla de igualdad material y atención diferencial."
+            },
+            {
+                "riesgo": "Reducir el Código a sanciones",
+                "revision": "El ítem lo interpreta desde protección integral."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Una institución aplica una medida contra un estudiante menor de edad sin escuchar su situación, sin valorar su contexto y exponiéndolo a un trato humillante. El equipo de orientación recuerda que la dignidad humana y la equidad son principios centrales en la aplicación del Código de Infancia y Adolescencia.\n\n¿Por qué estos principios son considerados columna vertebral de su aplicación efectiva?",
+        "opciones": {
+            "A": "Porque permiten ignorar las normas cuando el caso es difícil.",
+            "B": "Porque autorizan tratar igual a todos sin considerar condiciones de vulnerabilidad.",
+            "C": "Porque justifican medidas humillantes si se hacen con intención pedagógica.",
+            "D": "Porque obligan a proteger a niños, niñas y adolescentes como sujetos de derechos, evitando tratos degradantes, discriminación y decisiones que desconozcan su interés superior y condiciones reales."
+        },
+        "respuesta_correcta": "D"
+    },
+    "ficha_tecnica": {
+        "componente": "Dignidad humana y equidad",
+        "competencia": "Interpretación principialista de la protección integral",
+        "claim_evaluado": "El evaluado comprende que la protección integral exige interpretar y aplicar las normas desde dignidad humana, igualdad material, interés superior y equidad.",
+        "evidencia": "Selecciona una explicación que ubica dignidad y equidad como principios orientadores de toda decisión que afecta a NNA.",
+        "proceso_cognitivo": "Juicio constitucional y ético aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Alta",
+        "respuesta_correcta": "D",
+        "distractores": {
+            "A": "Confunde principios con discrecionalidad arbitraria.",
+            "B": "Confunde equidad con igualdad formal sin ajustes.",
+            "C": "Normaliza tratos degradantes bajo apariencia pedagógica."
+        },
+        "fuente_autorizada": [
+            "Constitución Política de Colombia",
+            "Ley 1098 de 2006",
+            "Convención sobre los Derechos del Niño",
+            "Jurisprudencia constitucional",
+            "Enfoque de derechos"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción D es correcta porque dignidad y equidad obligan a proteger derechos, evitar discriminación y considerar el interés superior y las condiciones reales de NNA.",
+        "opcion_A": "Es incorrecta porque los principios no autorizan ignorar la ley.",
+        "opcion_B": "Es incorrecta porque la equidad exige considerar diferencias relevantes y barreras.",
+        "opcion_C": "Es incorrecta porque la intención pedagógica no legitima tratos humillantes."
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado con revisión jurídica recomendada.",
+        "argumento": "El ítem protege dignidad, igualdad material y trato no discriminatorio sin eliminar responsabilidad formativa."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Validar con jurisprudencia constitucional específica si se usará en prueba jurídica de alto impacto.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 3 preguntas sobre dignidad humana, equidad y columna vertebral del Código de Infancia."
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "id_item": "MTV_B08_I02",
+    "archivo_sugerido": "MTV_B08_I02_definicion_habilidades_duras.json",
+    "proposito_de_uso": "Evaluar si el aspirante identifica las habilidades duras como competencias asociadas al conocimiento disciplinar, la formación académica y la inteligencia lógica.",
+    "blueprint": {
+        "componente_modulo": "Habilidades duras",
+        "competencia": "Reconocimiento conceptual de competencias técnicas",
+        "afirmacion": "Las habilidades duras se relacionan con el Saber, el conocimiento disciplinar, la formación académica, los títulos, los procedimientos técnicos y la inteligencia lógica.",
+        "evidencia_observable": "Selecciona una definición que diferencia habilidades duras de habilidades socioemocionales.",
+        "tipo_de_evidencia": "Reconocimiento conceptual",
+        "dificultad_esperada": "Media",
+        "clave": "C"
+    },
+    "item": {
+        "enunciado": "Dentro de la medición de competencias de un servidor público docente, se analiza la formación académica, el dominio disciplinar, los títulos obtenidos, la inteligencia lógica y el conocimiento técnico necesario para desempeñar una función.\n\n¿A qué tipo de competencias corresponde principalmente esta medición?",
+        "opciones": {
+            "A": "Habilidades blandas.",
+            "B": "Competencias exclusivamente emocionales.",
+            "C": "Habilidades duras.",
+            "D": "Competencias de convivencia familiar."
+        },
+        "respuesta_correcta": "C"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque las habilidades duras se relacionan con conocimiento técnico, formación académica y dominio disciplinar.",
+        "distractores": {
+            "A": "Las habilidades blandas se centran en interacción, comunicación y regulación emocional.",
+            "B": "Lo emocional no agota la formación académica ni el conocimiento disciplinar.",
+            "D": "La convivencia familiar no corresponde al componente técnico del desempeño docente."
+        }
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado",
+        "argumento": "El ítem diferencia competencias técnicas y socioemocionales sin jerarquizarlas."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem claro para contrastar habilidades blandas y duras."
+    }
+}

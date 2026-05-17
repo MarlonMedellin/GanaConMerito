@@ -1,0 +1,40 @@
+{
+    "id_item": "MTV_B08_I09",
+    "archivo_sugerido": "MTV_B08_I09_autocontrol_emocional_docente.json",
+    "proposito_de_uso": "Evaluar si el aspirante reconoce el autocontrol emocional como habilidad blanda clave en situaciones de presión.",
+    "blueprint": {
+        "componente_modulo": "Autocontrol emocional",
+        "competencia": "Regulación emocional en el ejercicio docente",
+        "afirmacion": "El autocontrol permite gestionar emociones intensas sin responder de forma impulsiva, agresiva o desproporcionada.",
+        "evidencia_observable": "Selecciona una respuesta profesional ante una provocación o tensión.",
+        "tipo_de_evidencia": "Juicio situacional comportamental",
+        "dificultad_esperada": "Media-Alta",
+        "clave": "B"
+    },
+    "item": {
+        "enunciado": "Durante una clase, un estudiante hace un comentario desafiante. El docente siente molestia, pero respira, evita responder con gritos, retoma la norma de convivencia y conversa con el estudiante en un momento adecuado.\n\n¿Qué competencia blanda se evidencia principalmente?",
+        "opciones": {
+            "A": "Improvisación impulsiva.",
+            "B": "Autocontrol emocional.",
+            "C": "Conocimiento enciclopédico.",
+            "D": "Habilidad caligráfica."
+        },
+        "respuesta_correcta": "B"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque el docente regula su reacción emocional y actúa profesionalmente.",
+        "distractores": {
+            "A": "El caso muestra control, no impulsividad.",
+            "C": "El conocimiento enciclopédico no describe la conducta emocional.",
+            "D": "La caligrafía no tiene relación con el manejo del conflicto."
+        }
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado",
+        "argumento": "El ítem no exige que el docente no sienta emociones, sino que las gestione adecuadamente."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem útil para inteligencia emocional y manejo de aula."
+    }
+}

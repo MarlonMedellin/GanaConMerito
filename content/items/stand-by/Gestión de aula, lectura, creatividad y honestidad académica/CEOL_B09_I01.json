@@ -1,0 +1,97 @@
+{
+    "id_item": "CEOL_B09_I01",
+    "archivo_sugerido": "CEOL_B09_I01_apropiacion_manual_convivencia_normas.json",
+    "bloque": {
+        "codigo_bloque": "CEOL_B09",
+        "nombre": "Gestión de aula, lectura, creatividad y honestidad académica",
+        "estado_en_lista": "Bloque 9 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 1 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce que la apropiación del Manual de Convivencia requiere participación, comprensión, reflexión, acuerdos y seguimiento pedagógico, no solo sanción.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, convivencia escolar, orientación o coordinación.",
+        "blueprint": {
+            "problematica_principal": "Incumplimiento reiterado de normas por falta de apropiación pedagógica del Manual de Convivencia.",
+            "fuente_autorizada": [
+                "Ley 1620 de 2013",
+                "Manual de convivencia institucional",
+                "Justicia restaurativa escolar",
+                "Gestión de aula"
+            ],
+            "componente_modulo": "Convivencia de Aula y Evaluación Formativa",
+            "competencia": "Gestión de aula y apropiación normativa",
+            "afirmacion": "Las normas se apropian mejor cuando se comprenden, se construyen acuerdos y se relacionan con derechos, deberes y convivencia.",
+            "evidencia_observable": "Selecciona una estrategia pedagógica para promover apropiación de normas de convivencia.",
+            "tipo_de_evidencia": "Juicio pedagógico aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "D"
+        },
+        "claim": "El evaluado comprende que la gestión de aula no debe limitarse a sancionar incumplimientos, sino generar sentido, participación, corresponsabilidad y seguimiento sobre las normas.",
+        "evidencia_observable": "Selecciona una acción orientada a construir comprensión y compromiso con el Manual de Convivencia.",
+        "tarea_cognitiva": "Analizar una situación de incumplimiento normativo y elegir la medida más formativa.",
+        "tipo_de_pregunta": "Caso situacional de juicio pedagógico",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir apropiación con castigo",
+                "revision": "La clave mantiene normas y consecuencias, pero enfatiza comprensión y corresponsabilidad."
+            },
+            {
+                "riesgo": "Minimizar incumplimientos",
+                "revision": "La opción correcta incluye seguimiento y acuerdos."
+            },
+            {
+                "riesgo": "Sesgo contra estudiantes con dificultades de comportamiento",
+                "revision": "El ítem evalúa estrategias institucionales, no etiquetas personales."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En un grupo, muchos estudiantes incumplen diariamente normas del Manual de Convivencia. El docente observa que la mayoría conoce algunas sanciones, pero no comprende el sentido de las normas ni su relación con derechos, deberes y cuidado colectivo.\n\n¿Cuál medida es más efectiva para generar apropiación de estas normas?",
+        "opciones": {
+            "A": "Aumentar sanciones sin explicar el sentido de las normas.",
+            "B": "Leer el Manual una vez al inicio del año y no retomarlo.",
+            "C": "Ignorar los incumplimientos para evitar conflictos.",
+            "D": "Trabajar las normas mediante diálogo, análisis de casos, acuerdos de aula, relación con derechos y deberes, seguimiento y acciones restaurativas."
+        },
+        "respuesta_correcta": "D"
+    },
+    "ficha_tecnica": {
+        "componente": "Convivencia de Aula y Evaluación Formativa",
+        "competencia": "Gestión de aula y apropiación normativa",
+        "claim_evaluado": "El evaluado comprende que la gestión de aula no debe limitarse a sancionar incumplimientos, sino generar sentido, participación, corresponsabilidad y seguimiento sobre las normas.",
+        "evidencia": "Selecciona una acción orientada a construir comprensión y compromiso con el Manual de Convivencia.",
+        "proceso_cognitivo": "Análisis y juicio pedagógico",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "D",
+        "distractores": {
+            "A": "Reduce la convivencia a sanción.",
+            "B": "Trata el Manual como documento estático sin apropiación continua.",
+            "C": "Renuncia a la gestión pedagógica de la convivencia."
+        },
+        "fuente_autorizada": [
+            "Ley 1620 de 2013",
+            "Manual de convivencia institucional",
+            "Justicia restaurativa escolar",
+            "Gestión de aula"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción D es correcta porque favorece comprensión, participación, corresponsabilidad y seguimiento de las normas.",
+        "opcion_A": "Es incorrecta porque sancionar más no garantiza apropiación.",
+        "opcion_B": "Es incorrecta porque el Manual requiere trabajo pedagógico continuo.",
+        "opcion_C": "Es incorrecta porque ignorar incumplimientos deteriora la convivencia."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no estigmatiza a los estudiantes y propone una intervención formativa, participativa y restaurativa."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre gestión de aula, lectura, creatividad y honestidad académica."
+    }
+}

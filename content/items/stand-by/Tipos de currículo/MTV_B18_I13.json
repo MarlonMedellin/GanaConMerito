@@ -1,0 +1,36 @@
+{
+    "id_item": "MTV_B18_I13",
+    "archivo_sugerido": "MTV_B18_I13_curriculo_real_vs_curriculo_mentiroso.json",
+    "proposito_de_uso": "Evaluar si el aspirante reconoce incoherencias entre currículo declarado y práctica real.",
+    "blueprint": {
+        "componente_modulo": "Coherencia curricular",
+        "competencia": "Análisis institucional",
+        "afirmacion": "Un currículo se vuelve meramente declarativo cuando lo escrito no se materializa en prácticas pedagógicas reales.",
+        "evidencia_observable": "Identifica incoherencias entre discurso institucional y acción de aula.",
+        "tipo_de_evidencia": "Juicio institucional aplicado",
+        "dificultad_esperada": "Alta",
+        "clave": "C"
+    },
+    "item": {
+        "enunciado": "El PEI afirma que la institución trabaja inclusión, evaluación formativa y participación, pero en las aulas predominan castigos, exclusión, copia mecánica y ausencia de diálogo.\n\n¿Cuál análisis es más pertinente?",
+        "opciones": {
+            "A": "No hay problema porque basta con que el PEI lo diga.",
+            "B": "La práctica de aula nunca se relaciona con el currículo.",
+            "C": "Existe incoherencia entre el currículo declarado y el currículo realmente vivido.",
+            "D": "La inclusión solo debe aparecer en carteleras."
+        },
+        "respuesta_correcta": "C"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque lo escrito no coincide con lo vivido.",
+        "distractores": {
+            "A": "Declarar no basta si no hay práctica coherente.",
+            "B": "La práctica de aula materializa currículo.",
+            "D": "La inclusión requiere acciones reales."
+        }
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem sólido para auditoría curricular."
+    }
+}

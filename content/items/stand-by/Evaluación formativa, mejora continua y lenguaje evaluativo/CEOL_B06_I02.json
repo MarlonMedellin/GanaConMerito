@@ -1,0 +1,101 @@
+{
+    "id_item": "CEOL_B06_I02",
+    "archivo_sugerido": "CEOL_B06_I02_proposito_evaluar_competencias.json",
+    "bloque": {
+        "codigo_bloque": "CEOL_B06",
+        "nombre": "Evaluación formativa, mejora continua y lenguaje evaluativo",
+        "estado_en_lista": "Bloque 6 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 2 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende que examinar competencias implica valorar la capacidad del estudiante para movilizar saberes en contexto, no solo medir contenidos memorizados.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación académica o gestión pedagógica.",
+        "blueprint": {
+            "problematica_principal": "Reducción de la evaluación a medición de contenidos memorizados.",
+            "fuente_autorizada": [
+                "Evaluación por competencias",
+                "Estándares Básicos de Competencias",
+                "Lineamientos curriculares",
+                "Evaluación formativa"
+            ],
+            "componente_modulo": "Evaluación Formativa y Didáctica",
+            "competencia": "Evaluación por competencias",
+            "afirmacion": "Evaluar competencias implica valorar la movilización de conocimientos, habilidades y actitudes en situaciones significativas.",
+            "evidencia_observable": "Reconoce que el objetivo de examinar competencias es observar desempeños contextualizados y no solo memoria de contenidos.",
+            "tipo_de_evidencia": "Juicio evaluativo aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que la evaluación por competencias busca evidenciar cómo el estudiante usa lo que sabe para resolver situaciones, argumentar, tomar decisiones y actuar en contexto.",
+        "evidencia_observable": "Selecciona una explicación que relaciona competencia con desempeño, contexto, movilización de saberes y aplicación.",
+        "tarea_cognitiva": "Diferenciar evaluación de competencias de medición memorística de contenidos.",
+        "tipo_de_pregunta": "Pregunta conceptual aplicada",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir competencias con ausencia de contenidos",
+                "revision": "La clave aclara que las competencias movilizan contenidos, no los eliminan."
+            },
+            {
+                "riesgo": "Sesgo por área disciplinar",
+                "revision": "El ítem aplica a cualquier área del currículo."
+            },
+            {
+                "riesgo": "Ambigüedad entre desempeño y nota",
+                "revision": "La opción correcta se centra en evidencias de actuación y no en calificación numérica."
+            },
+            {
+                "riesgo": "Lenguaje técnico",
+                "revision": "Se usan ejemplos funcionales: resolver, argumentar y aplicar."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En una reunión de calidad académica, un docente afirma que evaluar competencias significa aplicar más preguntas de memoria. La coordinación aclara que el enfoque por competencias exige observar cómo el estudiante usa lo aprendido en situaciones concretas.\n\n¿Cuál es el objetivo fundamental de examinar la competencia del estudiante?",
+        "opciones": {
+            "A": "Verificar si repite exactamente las definiciones del libro.",
+            "B": "Reemplazar todos los contenidos por actividades sin criterios académicos.",
+            "C": "Valorar cómo moviliza conocimientos, habilidades y actitudes para resolver situaciones, argumentar y actuar en contexto.",
+            "D": "Asignar más notas para aumentar el número de registros en la planilla."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Evaluación Formativa y Didáctica",
+        "competencia": "Evaluación por competencias",
+        "claim_evaluado": "El evaluado comprende que la evaluación por competencias busca evidenciar cómo el estudiante usa lo que sabe para resolver situaciones, argumentar, tomar decisiones y actuar en contexto.",
+        "evidencia": "Selecciona una explicación que relaciona competencia con desempeño, contexto, movilización de saberes y aplicación.",
+        "proceso_cognitivo": "Comprensión conceptual aplicada",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Reduce la evaluación a repetición memorística.",
+            "B": "Confunde competencias con ausencia de contenidos y criterios.",
+            "D": "Confunde evaluación por competencias con acumulación de notas."
+        },
+        "fuente_autorizada": [
+            "Evaluación por competencias",
+            "Estándares Básicos de Competencias",
+            "Lineamientos curriculares",
+            "Evaluación formativa"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque evaluar competencias implica observar la movilización integrada de saberes, habilidades y actitudes en contextos de actuación.",
+        "opcion_A": "Es incorrecta porque repetir definiciones no basta para evidenciar competencia.",
+        "opcion_B": "Es incorrecta porque las competencias no eliminan contenidos ni criterios.",
+        "opcion_D": "Es incorrecta porque aumentar registros de notas no equivale a evaluar competencias."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no favorece un área disciplinar específica ni exige conocer un formato institucional. Evalúa el sentido general de la evaluación por competencias."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre evaluación formativa, mejora continua y lenguaje evaluativo."
+    }
+}

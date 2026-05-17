@@ -1,0 +1,103 @@
+{
+    "id_item": "CEOL_B02_I04",
+    "archivo_sugerido": "CEOL_B02_I04_sancion_no_tipificada_debido_proceso.json",
+    "bloque": {
+        "codigo_bloque": "CEOL_B02",
+        "nombre": "Enfoque de derechos, debido proceso y justicia restaurativa",
+        "estado_en_lista": "Bloque 2 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 4 de 6"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce que imponer una sanción no prevista previamente en el Manual de Convivencia vulnera el debido proceso disciplinario escolar.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con convivencia escolar, coordinación, orientación, docencia o dirección.",
+        "blueprint": {
+            "problematica_principal": "Imposición de sanciones no tipificadas previamente en el Manual de Convivencia.",
+            "fuente_autorizada": [
+                "Constitución Política de Colombia",
+                "Jurisprudencia constitucional sobre debido proceso escolar",
+                "Ley 1620 de 2013",
+                "Ley 1098 de 2006",
+                "Manual de convivencia institucional"
+            ],
+            "componente_modulo": "Debido Proceso Disciplinario",
+            "competencia": "Aplicación de legalidad y tipicidad escolar",
+            "afirmacion": "Toda sanción escolar debe estar previamente prevista, escrita y ser aplicada con debido proceso.",
+            "evidencia_observable": "Reconoce que una sanción no tipificada vulnera legalidad, previsibilidad y derecho de defensa.",
+            "tipo_de_evidencia": "Juicio jurídico-pedagógico aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "D"
+        },
+        "claim": "El evaluado comprende que el debido proceso escolar exige que las faltas, procedimientos y consecuencias estén previamente definidos en el Manual de Convivencia y se apliquen de manera proporcional, motivada y con posibilidad de defensa.",
+        "evidencia_observable": "Selecciona la razón por la cual una sanción no escrita previamente en el Manual de Convivencia vulnera el debido proceso.",
+        "tarea_cognitiva": "Analizar una actuación disciplinaria y determinar si cumple legalidad, tipicidad y debido proceso.",
+        "tipo_de_pregunta": "Caso situacional de juicio normativo",
+        "dificultad_esperada": "Media-Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Lenguaje jurídico complejo",
+                "revision": "El ítem traduce tipicidad y legalidad a la idea de sanción previamente escrita y conocida."
+            },
+            {
+                "riesgo": "Confundir autoridad con arbitrariedad",
+                "revision": "La clave reconoce la función disciplinaria, pero exige reglas previas y derecho de defensa."
+            },
+            {
+                "riesgo": "Ambigüedad sobre Manual de Convivencia",
+                "revision": "El enunciado aclara que la sanción no estaba prevista en el Manual."
+            },
+            {
+                "riesgo": "Sesgo por conocimiento jurisprudencial especializado",
+                "revision": "No exige citar sentencias, solo comprender el principio de debido proceso."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un estudiante comete una falta. La institución decide imponerle una sanción que no aparece escrita ni tipificada previamente en el Manual de Convivencia. La decisión se toma con el argumento de que la institución debe mostrar autoridad.\n\n¿Por qué esta actuación puede vulnerar el debido proceso disciplinario escolar?",
+        "opciones": {
+            "A": "Porque los estudiantes nunca pueden recibir consecuencias por sus conductas.",
+            "B": "Porque el Manual de Convivencia no tiene ninguna función en los procesos disciplinarios.",
+            "C": "Porque la autoridad escolar permite crear sanciones nuevas en cada caso, aunque no estén escritas.",
+            "D": "Porque las faltas, procedimientos y sanciones deben estar previamente definidos, ser conocidos y aplicarse con posibilidad de defensa y proporcionalidad."
+        },
+        "respuesta_correcta": "D"
+    },
+    "ficha_tecnica": {
+        "componente": "Debido Proceso Disciplinario",
+        "competencia": "Aplicación de legalidad y tipicidad escolar",
+        "claim_evaluado": "El evaluado comprende que el debido proceso escolar exige que las faltas, procedimientos y consecuencias estén previamente definidos en el Manual de Convivencia y se apliquen de manera proporcional, motivada y con posibilidad de defensa.",
+        "evidencia": "Selecciona la razón por la cual una sanción no escrita previamente en el Manual de Convivencia vulnera el debido proceso.",
+        "proceso_cognitivo": "Análisis y juicio normativo aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media-Alta",
+        "respuesta_correcta": "D",
+        "distractores": {
+            "A": "Confunde debido proceso con ausencia de consecuencias.",
+            "B": "Desconoce la función normativa y pedagógica del Manual de Convivencia.",
+            "C": "Justifica arbitrariedad bajo la idea de autoridad."
+        },
+        "fuente_autorizada": [
+            "Constitución Política de Colombia",
+            "Jurisprudencia constitucional sobre debido proceso escolar",
+            "Ley 1620 de 2013",
+            "Ley 1098 de 2006",
+            "Manual de convivencia institucional"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción D es correcta porque el debido proceso exige legalidad, tipicidad, conocimiento previo de la norma, posibilidad de defensa y proporcionalidad.",
+        "opcion_A": "Es incorrecta porque el debido proceso no elimina consecuencias disciplinarias.",
+        "opcion_B": "Es incorrecta porque el Manual de Convivencia orienta faltas, procedimientos y medidas.",
+        "opcion_C": "Es incorrecta porque la autoridad escolar no permite crear sanciones arbitrarias no previstas."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no impide la gestión disciplinaria; exige que se realice con reglas conocidas, proporcionalidad y garantías básicas."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 6 preguntas sobre enfoque de derechos, debido proceso y justicia restaurativa."
+    }
+}

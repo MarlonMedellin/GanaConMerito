@@ -1,0 +1,103 @@
+{
+    "id_item": "PPDC_B04_I01",
+    "archivo_sugerido": "PPDC_B04_I01_pedagogia_didactica_aula_heterogenea.json",
+    "bloque": {
+        "codigo_bloque": "PPDC_B04",
+        "nombre": "Praxis pedagógica, didáctica y selección metodológica",
+        "estado_en_lista": "Bloque 4 de 7",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 1 de 2"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante diferencia la pedagogía como campo de reflexión sobre la formación, la educación y el sujeto, y la didáctica como el conjunto de decisiones, métodos, estrategias y técnicas para orientar la enseñanza en un aula heterogénea.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
+        "blueprint": {
+            "problematica_principal": "Confusión entre pedagogía y didáctica al orientar una clase heterogénea.",
+            "fuente_autorizada": [
+                "Pedagogía general",
+                "Didáctica general",
+                "Enfoque constructivista",
+                "Orientaciones pedagógicas institucionales",
+                "Lineamientos curriculares del Ministerio de Educación Nacional"
+            ],
+            "componente_modulo": "Praxis Pedagógica",
+            "competencia": "Comprensión pedagógica y didáctica",
+            "afirmacion": "La pedagogía orienta el sentido formativo de la educación y la didáctica concreta métodos, estrategias y técnicas de enseñanza.",
+            "evidencia_observable": "Distingue la función reflexiva y formativa de la pedagogía de la función metodológica y operativa de la didáctica.",
+            "tipo_de_evidencia": "Comprensión conceptual aplicada",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que pedagogía y didáctica son complementarias: la pedagogía fundamenta el para qué y el sentido de la formación, mientras la didáctica organiza el cómo enseñar mediante métodos, estrategias, recursos y evaluación.",
+        "evidencia_observable": "Selecciona una explicación que relaciona pedagogía y didáctica en la orientación de una clase para un grupo heterogéneo.",
+        "tarea_cognitiva": "Diferenciar conceptualmente pedagogía y didáctica y aplicar la distinción a una situación de aula.",
+        "tipo_de_pregunta": "Pregunta conceptual aplicada",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Lenguaje teórico abstracto",
+                "revision": "El ítem presenta los conceptos en una situación concreta de aula heterogénea."
+            },
+            {
+                "riesgo": "Ambigüedad entre pedagogía y didáctica",
+                "revision": "La clave diferencia el sentido formativo de la pedagogía y la organización metodológica de la didáctica."
+            },
+            {
+                "riesgo": "Sesgo por formación académica previa",
+                "revision": "La pregunta no exige una definición universitaria especializada, sino una comprensión funcional para la práctica docente."
+            },
+            {
+                "riesgo": "Sesgo por área disciplinar",
+                "revision": "El caso aplica a cualquier área del currículo."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Una docente recibe un grupo heterogéneo con estudiantes que tienen distintos ritmos, intereses y formas de participar. Al planear la clase, se pregunta primero qué tipo de formación quiere promover y luego decide qué métodos, recursos y actividades usará para enseñar.\n\n¿Cuál opción diferencia mejor la pedagogía y la didáctica en esta situación?",
+        "opciones": {
+            "A": "La pedagogía se limita a llenar formatos institucionales y la didáctica corresponde únicamente a calificar tareas.",
+            "B": "La pedagogía y la didáctica son lo mismo, porque ambas consisten exclusivamente en dictar contenidos.",
+            "C": "La pedagogía orienta el sentido formativo de la clase y la didáctica concreta métodos, estrategias, recursos y formas de evaluación para enseñar.",
+            "D": "La pedagogía solo aplica a directivos y la didáctica solo a estudiantes, por lo que el docente no debe diferenciarlas."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Praxis Pedagógica",
+        "competencia": "Comprensión pedagógica y didáctica",
+        "claim_evaluado": "El evaluado comprende que pedagogía y didáctica son complementarias: la pedagogía fundamenta el para qué y el sentido de la formación, mientras la didáctica organiza el cómo enseñar mediante métodos, estrategias, recursos y evaluación.",
+        "evidencia": "Selecciona una explicación que relaciona pedagogía y didáctica en la orientación de una clase para un grupo heterogéneo.",
+        "proceso_cognitivo": "Comprensión conceptual aplicada",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Reduce la pedagogía a un trámite y la didáctica a calificación.",
+            "B": "Confunde ambos campos y los limita a transmisión de contenidos.",
+            "D": "Asigna erróneamente pedagogía y didáctica a actores separados."
+        },
+        "fuente_autorizada": [
+            "Pedagogía general",
+            "Didáctica general",
+            "Enfoque constructivista",
+            "Orientaciones pedagógicas institucionales",
+            "Lineamientos curriculares del Ministerio de Educación Nacional"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque reconoce la complementariedad entre pedagogía y didáctica. La pedagogía orienta el sentido formativo de la acción educativa, mientras la didáctica permite concretar ese sentido en métodos, estrategias, recursos y evaluación.",
+        "opcion_A": "Es incorrecta porque presenta una visión burocrática y reducida de ambos conceptos.",
+        "opcion_B": "Es incorrecta porque pedagogía y didáctica se relacionan, pero no son idénticas ni se reducen a dictar contenidos.",
+        "opcion_D": "Es incorrecta porque ambas dimensiones son relevantes para la acción docente."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no exige dominio teórico especializado ni favorece un área disciplinar específica. Presenta la distinción conceptual en una situación práctica y común de planeación de aula."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 2 preguntas sobre praxis pedagógica, didáctica y selección metodológica."
+    }
+}

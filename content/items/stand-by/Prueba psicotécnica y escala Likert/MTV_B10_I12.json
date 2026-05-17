@@ -1,0 +1,40 @@
+{
+    "id_item": "MTV_B10_I12",
+    "archivo_sugerido": "MTV_B10_I12_likert_actitud_servicio_publico.json",
+    "proposito_de_uso": "Evaluar si el aspirante reconoce la actitud de servicio como componente del servidor público docente.",
+    "blueprint": {
+        "componente_modulo": "Actitud del servidor público",
+        "competencia": "Orientación al servicio y responsabilidad pública",
+        "afirmacion": "El servidor público docente debe actuar con respeto, orientación, responsabilidad, imparcialidad y disposición de servicio hacia la comunidad educativa.",
+        "evidencia_observable": "Selecciona una conducta coherente con actitud de servicio público.",
+        "tipo_de_evidencia": "Juicio comportamental aplicado",
+        "dificultad_esperada": "Media",
+        "clave": "D"
+    },
+    "item": {
+        "enunciado": "En una proposición Likert se afirma: 'Cuando una familia solicita orientación, respondo con respeto, explico los canales institucionales y evito comentarios despectivos'.\n\n¿Qué actitud profesional evalúa principalmente esta proposición?",
+        "opciones": {
+            "A": "Desinterés por la comunidad.",
+            "B": "Indiferencia administrativa.",
+            "C": "Rechazo a la comunicación con familias.",
+            "D": "Actitud de servicio del servidor público docente."
+        },
+        "respuesta_correcta": "D"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción D es correcta porque la proposición evalúa respeto, orientación y servicio hacia la comunidad educativa.",
+        "distractores": {
+            "A": "El enunciado muestra interés, no desinterés.",
+            "B": "La atención descrita no es indiferente.",
+            "C": "La proposición plantea comunicación, no rechazo."
+        }
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado",
+        "argumento": "El ítem evalúa conducta observable del rol público."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Buen ítem para actitud del servidor público."
+    }
+}

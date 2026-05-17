@@ -1,0 +1,99 @@
+{
+    "id_item": "IDD_B12_I01",
+    "archivo_sugerido": "IDD_B12_I01_matematicas_tecnicista_tablero_ejercicios_mecanicos.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B12",
+        "nombre": "Didáctica de las áreas, resolución de problemas y material concreto",
+        "estado_en_lista": "Bloque 12 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 1 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce por qué una estrategia tecnicista basada en llenar tableros y asignar ejercicios mecánicos no cumple el propósito de resolver problemas del entorno.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, didáctica de las matemáticas, primaria, básica secundaria o formación docente.",
+        "blueprint": {
+            "problematica_principal": "Enseñanza matemática centrada en repetición mecánica sin conexión con problemas cotidianos.",
+            "fuente_autorizada": [
+                "Didáctica de las matemáticas",
+                "Evaluación por competencias",
+                "Aprendizaje significativo",
+                "Resolución de problemas",
+                "Lineamientos curriculares"
+            ],
+            "componente_modulo": "Selección Didáctica en Matemáticas",
+            "competencia": "Contextualización de la enseñanza matemática",
+            "afirmacion": "La enseñanza de matemáticas debe promover comprensión, razonamiento y solución de problemas significativos, no solo repetición procedimental.",
+            "evidencia_observable": "Reconoce que los ejercicios mecánicos aislados no aseguran transferencia a situaciones del entorno.",
+            "tipo_de_evidencia": "Juicio didáctico aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que la práctica matemática debe vincular procedimientos con comprensión, modelación, argumentación y resolución de situaciones reales o cercanas.",
+        "evidencia_observable": "Selecciona una explicación que critica el tecnicismo y propone problemas contextualizados.",
+        "tarea_cognitiva": "Analizar una estrategia de enseñanza matemática y determinar su limitación pedagógica.",
+        "tipo_de_pregunta": "Caso situacional de juicio didáctico",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Desvalorizar la práctica procedimental",
+                "revision": "La clave no elimina la práctica; la vincula con comprensión y contexto."
+            },
+            {
+                "riesgo": "Confundir contextualización con entretenimiento",
+                "revision": "La respuesta correcta mantiene rigor matemático."
+            },
+            {
+                "riesgo": "Sesgo por recursos disponibles",
+                "revision": "Los problemas contextualizados pueden diseñarse con recursos simples del entorno."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En una clase de matemáticas, el docente llena varios tableros con procedimientos y luego asigna docenas de ejercicios mecánicos. Los estudiantes logran repetir algunos pasos, pero no saben cuándo ni para qué usar esos procedimientos en situaciones de su vida cotidiana.\n\n¿Por qué esta estrategia no cumple el objetivo primario de solucionar problemas del entorno?",
+        "opciones": {
+            "A": "Porque privilegia repetición procedimental sin asegurar comprensión, modelación ni transferencia a situaciones significativas.",
+            "B": "Porque las matemáticas no deben incluir procedimientos.",
+            "C": "Porque todo ejercicio escrito debe eliminarse del aula.",
+            "D": "Porque resolver problemas cotidianos no tiene relación con el aprendizaje matemático."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Selección Didáctica en Matemáticas",
+        "competencia": "Contextualización de la enseñanza matemática",
+        "claim_evaluado": "El evaluado comprende que la práctica matemática debe vincular procedimientos con comprensión, modelación, argumentación y resolución de situaciones reales o cercanas.",
+        "evidencia": "Selecciona una explicación que critica el tecnicismo y propone problemas contextualizados.",
+        "proceso_cognitivo": "Análisis y juicio didáctico",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Rechaza indebidamente los procedimientos.",
+            "C": "Elimina una herramienta válida en lugar de contextualizarla.",
+            "D": "Desconoce la finalidad de la resolución de problemas."
+        },
+        "fuente_autorizada": [
+            "Didáctica de las matemáticas",
+            "Evaluación por competencias",
+            "Aprendizaje significativo",
+            "Resolución de problemas",
+            "Lineamientos curriculares"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque una práctica mecánica no garantiza comprensión ni transferencia a problemas del entorno.",
+        "opcion_B": "Es incorrecta porque los procedimientos sí son importantes, pero deben comprenderse y aplicarse.",
+        "opcion_C": "Es incorrecta porque escribir ejercicios puede ser útil si se integra con sentido.",
+        "opcion_D": "Es incorrecta porque resolver problemas cotidianos es central en la competencia matemática."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no descalifica la práctica procedimental, sino su uso aislado y sin comprensión."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 5 preguntas sobre didáctica de las áreas, resolución de problemas y material concreto."
+    }
+}

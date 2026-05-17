@@ -1,0 +1,97 @@
+{
+    "id_item": "EIP_B02_I05",
+    "archivo_sugerido": "EIP_B02_I05_no_reprobacion_preescolar_avance_desarrollo.json",
+    "bloque": {
+        "codigo_bloque": "EIP_B02",
+        "nombre": "Marco legal del preescolar y organización del nivel",
+        "estado_en_lista": "Bloque 2 de 7",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 5 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce que en preescolar no se reprueban grados ni actividades y que el avance se orienta por capacidades y aptitudes personales.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con preescolar, evaluación, docencia, coordinación académica o gestión educativa.",
+        "blueprint": {
+            "problematica_principal": "Aplicar criterios de reprobación y promoción propios de básica o media al nivel preescolar.",
+            "fuente_autorizada": [
+                "Decreto 2247 de 1997",
+                "Educación preescolar",
+                "Evaluación cualitativa",
+                "Desarrollo integral"
+            ],
+            "componente_modulo": "Promoción y avance en preescolar",
+            "competencia": "Comprensión del enfoque evaluativo del nivel",
+            "afirmacion": "En preescolar los educandos no reprueban grados ni actividades; avanzan según sus capacidades y aptitudes personales.",
+            "evidencia_observable": "Reconoce que el seguimiento debe ser cualitativo, descriptivo y orientado al desarrollo, no punitivo.",
+            "tipo_de_evidencia": "Juicio normativo-evaluativo aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que la evaluación y promoción en preescolar responden al desarrollo integral, no a la lógica de pérdida o repetición punitiva.",
+        "evidencia_observable": "Selecciona la actuación adecuada frente a dificultades de desarrollo en preescolar.",
+        "tarea_cognitiva": "Aplicar el enfoque evaluativo del preescolar a un caso institucional.",
+        "tipo_de_pregunta": "Caso situacional normativo-evaluativo",
+        "dificultad_esperada": "Media-Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Castigar ritmos de desarrollo",
+                "revision": "La clave promueve acompañamiento y seguimiento."
+            },
+            {
+                "riesgo": "Confundir no reprobación con ausencia de evaluación",
+                "revision": "La opción correcta incluye evaluación cualitativa."
+            },
+            {
+                "riesgo": "Etiquetar a niños pequeños como fracasados",
+                "revision": "El ítem evita lenguaje punitivo y deficitario."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Una docente de preescolar propone reprobar a un niño de transición porque aún no alcanza algunos desempeños de motricidad fina y lenguaje al mismo ritmo que sus compañeros. La coordinación recuerda el enfoque normativo del nivel.\n\n¿Cuál actuación es correcta?",
+        "opciones": {
+            "A": "Realizar seguimiento cualitativo, acompañar el desarrollo, informar descriptivamente a la familia y permitir el avance según capacidades y aptitudes, sin reprobar grados ni actividades.",
+            "B": "Reprobar automáticamente al niño para que aprenda a esforzarse.",
+            "C": "Aplicar una prueba final escrita como único criterio de promoción.",
+            "D": "Suspenderlo de las actividades lúdicas hasta que iguale a sus compañeros."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Promoción y avance en preescolar",
+        "competencia": "Comprensión del enfoque evaluativo del nivel",
+        "claim_evaluado": "El evaluado comprende que la evaluación y promoción en preescolar responden al desarrollo integral, no a la lógica de pérdida o repetición punitiva.",
+        "evidencia": "Selecciona la actuación adecuada frente a dificultades de desarrollo en preescolar.",
+        "proceso_cognitivo": "Juicio normativo-evaluativo aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media-Alta",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Aplica una lógica de reprobación impropia del nivel preescolar.",
+            "C": "Reduce la evaluación a una prueba final escrita.",
+            "D": "Castiga el desarrollo y excluye al niño de experiencias pedagógicas necesarias."
+        },
+        "fuente_autorizada": [
+            "Decreto 2247 de 1997",
+            "Educación preescolar",
+            "Evaluación cualitativa",
+            "Desarrollo integral"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque en preescolar no se reprueban grados ni actividades; se acompaña el desarrollo con seguimiento cualitativo.",
+        "opcion_B": "Es incorrecta porque la reprobación automática contradice el enfoque del nivel.",
+        "opcion_C": "Es incorrecta porque una prueba escrita final no corresponde al seguimiento integral del preescolar.",
+        "opcion_D": "Es incorrecta porque excluye de experiencias lúdicas y pedagógicas esenciales."
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado con revisión pedagógica recomendada.",
+        "argumento": "El ítem protege los ritmos de desarrollo infantil y evita prácticas punitivas o estigmatizantes."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Validar con el sistema institucional de evaluación y el marco normativo específico de preescolar.",
+        "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre marco legal del preescolar y organización del nivel."
+    }
+}

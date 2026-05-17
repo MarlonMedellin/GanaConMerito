@@ -1,0 +1,99 @@
+{
+    "id_item": "DIL_B02_I03",
+    "archivo_sugerido": "DIL_B02_I03_tiempo_definicion_situacion_juridica_pard.json",
+    "bloque": {
+        "codigo_bloque": "DIL_B02",
+        "nombre": "PARD y restablecimiento de derechos",
+        "estado_en_lista": "Bloque 2 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 3 de 6"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce el término máximo para definir la situación jurídica de un menor dentro del proceso de restablecimiento de derechos.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con infancia, orientación escolar, protección, coordinación o gestión institucional.",
+        "blueprint": {
+            "problematica_principal": "Desconocimiento de los límites temporales del PARD y riesgo de prolongar indefinidamente la situación jurídica del menor.",
+            "fuente_autorizada": [
+                "Ley 1098 de 2006",
+                "Ley 1878 de 2018",
+                "LegalApp Ministerio de Justicia",
+                "ICBF",
+                "PARD"
+            ],
+            "componente_modulo": "Tiempos del PARD",
+            "competencia": "Reconocimiento de términos legales básicos",
+            "afirmacion": "La definición de la situación jurídica debe resolverse dentro del término legal establecido, evitando demoras injustificadas.",
+            "evidencia_observable": "Identifica el término de 6 meses para la definición de la situación jurídica.",
+            "tipo_de_evidencia": "Reconocimiento normativo aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que los procesos de restablecimiento deben ser oportunos para proteger el interés superior del menor.",
+        "evidencia_observable": "Selecciona el término correcto para la definición de situación jurídica.",
+        "tarea_cognitiva": "Reconocer un plazo jurídico dentro del PARD.",
+        "tipo_de_pregunta": "Pregunta normativa de reconocimiento",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir definición de situación jurídica con seguimiento total del proceso",
+                "revision": "El ítem focaliza la definición jurídica de la situación."
+            },
+            {
+                "riesgo": "Usar referencia normativa equivocada",
+                "revision": "Se corrige editorialmente la mención del texto original: la referencia pertinente es Ley 1878 de 2018, no Ley 1888."
+            },
+            {
+                "riesgo": "Responder desde memoria desactualizada",
+                "revision": "Se marca revisión normativa obligatoria antes de uso definitivo."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En un Proceso Administrativo de Restablecimiento de Derechos se requiere definir oportunamente la situación jurídica de un niño, niña o adolescente, para evitar demoras que afecten su estabilidad y su interés superior.\n\n¿Cuál es el tiempo máximo legal, en meses, para definir esa situación jurídica?",
+        "opciones": {
+            "A": "6 meses.",
+            "B": "12 meses.",
+            "C": "18 meses.",
+            "D": "36 meses."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Tiempos del PARD",
+        "competencia": "Reconocimiento de términos legales básicos",
+        "claim_evaluado": "El evaluado comprende que los procesos de restablecimiento deben ser oportunos para proteger el interés superior del menor.",
+        "evidencia": "Selecciona el término correcto para la definición de situación jurídica.",
+        "proceso_cognitivo": "Reconocimiento normativo aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "No corresponde al término señalado para definición de situación jurídica.",
+            "C": "Puede confundirse con el término global del PARD con seguimiento, pero no con la definición inicial de la situación jurídica.",
+            "D": "Extiende indebidamente el tiempo de decisión."
+        },
+        "fuente_autorizada": [
+            "Ley 1098 de 2006",
+            "Ley 1878 de 2018",
+            "LegalApp Ministerio de Justicia",
+            "ICBF",
+            "PARD"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque la definición de la situación jurídica se reporta dentro del término de 6 meses.",
+        "opcion_B": "Es incorrecta porque amplía el término sin corresponder al dato solicitado.",
+        "opcion_C": "Es incorrecta para esta pregunta porque 18 meses se asocia al proceso con seguimiento, no a la definición inicial de situación jurídica.",
+        "opcion_D": "Es incorrecta porque implicaría una demora excesiva incompatible con la protección oportuna."
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado con revisión normativa obligatoria.",
+        "argumento": "El ítem evalúa un plazo legal sensible y debe verificarse contra la norma vigente antes de aplicación definitiva."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado con revisión normativa obligatoria",
+        "observacion": "El texto original menciona Ley 1888, pero la referencia pertinente para modificaciones del PARD es Ley 1878 de 2018. Validar antes de uso definitivo.",
+        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 6 preguntas sobre PARD y restablecimiento de derechos."
+    }
+}

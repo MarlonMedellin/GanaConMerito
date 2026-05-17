@@ -1,0 +1,97 @@
+{
+    "id_item": "DIL_B07_I01",
+    "archivo_sugerido": "DIL_B07_I01_plebiscito_vs_consulta_popular_diferencia_procedimental.json",
+    "bloque": {
+        "codigo_bloque": "DIL_B07",
+        "nombre": "Mecanismos de participación ciudadana: plebiscito, consulta y límites",
+        "estado_en_lista": "Bloque 7 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 1 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante diferencia procedimentalmente el plebiscito y la consulta popular dentro del diseño constitucional colombiano.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con ciudadanía, ciencias sociales, derecho constitucional, docencia o participación democrática.",
+        "blueprint": {
+            "problematica_principal": "Confusión entre mecanismos de participación democrática y sus finalidades jurídicas.",
+            "fuente_autorizada": [
+                "Constitución Política de Colombia",
+                "Ley 1757 de 2015",
+                "Ley 134 de 1994",
+                "Mecanismos de participación ciudadana"
+            ],
+            "componente_modulo": "Participación ciudadana y marco constitucional",
+            "competencia": "Diferenciación de mecanismos democráticos",
+            "afirmacion": "El plebiscito y la consulta popular son mecanismos distintos, con finalidades, origen y procedimientos propios.",
+            "evidencia_observable": "Distingue que el plebiscito consulta apoyo ciudadano a una decisión política del Ejecutivo, mientras la consulta popular somete una pregunta de trascendencia nacional o territorial al pueblo.",
+            "tipo_de_evidencia": "Comprensión normativa comparativa",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "B"
+        },
+        "claim": "El evaluado comprende que no todos los mecanismos de participación sirven para lo mismo ni se convocan mediante el mismo procedimiento.",
+        "evidencia_observable": "Selecciona una comparación válida entre plebiscito y consulta popular.",
+        "tarea_cognitiva": "Comparar dos mecanismos de participación ciudadana.",
+        "tipo_de_pregunta": "Pregunta conceptual normativa comparativa",
+        "dificultad_esperada": "Media-Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Simplificar ambos mecanismos como votaciones equivalentes",
+                "revision": "La clave distingue finalidad y procedimiento."
+            },
+            {
+                "riesgo": "Exigir tecnicismo jurídico excesivo",
+                "revision": "La redacción se centra en la diferencia funcional básica."
+            },
+            {
+                "riesgo": "Desactualización normativa",
+                "revision": "El dictamen recomienda revisión legal antes de aplicación definitiva."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "En una clase de participación ciudadana, un estudiante afirma que plebiscito y consulta popular son exactamente lo mismo porque ambos implican votar. El docente pide precisar la diferencia procedimental y jurídica entre ambos mecanismos.\n\n¿Cuál explicación es más adecuada?",
+        "opciones": {
+            "A": "Son idénticos, porque cualquier votación ciudadana recibe el mismo nombre jurídico.",
+            "B": "El plebiscito consulta al pueblo sobre una decisión política del Ejecutivo, mientras la consulta popular somete al pueblo una pregunta de trascendencia nacional, departamental, municipal, distrital o local según el caso.",
+            "C": "La consulta popular solo sirve para elegir alcaldes y el plebiscito solo para elegir personeros.",
+            "D": "El plebiscito y la consulta popular son mecanismos internos del colegio sin relación con la Constitución."
+        },
+        "respuesta_correcta": "B"
+    },
+    "ficha_tecnica": {
+        "componente": "Participación ciudadana y marco constitucional",
+        "competencia": "Diferenciación de mecanismos democráticos",
+        "claim_evaluado": "El evaluado comprende que no todos los mecanismos de participación sirven para lo mismo ni se convocan mediante el mismo procedimiento.",
+        "evidencia": "Selecciona una comparación válida entre plebiscito y consulta popular.",
+        "proceso_cognitivo": "Comprensión normativa comparativa",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media-Alta",
+        "respuesta_correcta": "B",
+        "distractores": {
+            "A": "Confunde votación con identidad jurídica de mecanismos.",
+            "C": "Atribuye funciones electorales equivocadas.",
+            "D": "Desconoce que son mecanismos constitucionales de participación."
+        },
+        "fuente_autorizada": [
+            "Constitución Política de Colombia",
+            "Ley 1757 de 2015",
+            "Ley 134 de 1994",
+            "Mecanismos de participación ciudadana"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque diferencia funcionalmente el plebiscito y la consulta popular.",
+        "opcion_A": "Es incorrecta porque no toda votación ciudadana pertenece al mismo mecanismo.",
+        "opcion_C": "Es incorrecta porque confunde estos mecanismos con elecciones u órganos escolares.",
+        "opcion_D": "Es incorrecta porque ambos mecanismos pertenecen al marco constitucional de participación democrática."
+    },
+    "revision_fairness": {
+        "dictamen": "Aprobado con revisión normativa recomendada.",
+        "argumento": "El ítem evalúa la diferencia básica entre mecanismos sin exigir detalles procedimentales especializados."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Validar redacción final contra Ley 1757 de 2015 y Ley 134 de 1994 antes de banco definitivo.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre mecanismos de participación ciudadana."
+    }
+}

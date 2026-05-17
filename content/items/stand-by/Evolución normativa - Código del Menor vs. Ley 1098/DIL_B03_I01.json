@@ -1,0 +1,97 @@
+{
+    "id_item": "DIL_B03_I01",
+    "archivo_sugerido": "DIL_B03_I01_codigo_menor_vs_ley_1098_titularidad_derechos.json",
+    "bloque": {
+        "codigo_bloque": "DIL_B03",
+        "nombre": "Evolución normativa: Código del Menor vs. Ley 1098",
+        "estado_en_lista": "Bloque 3 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 1 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante diferencia el enfoque del antiguo Código del Menor y el enfoque de protección integral de la Ley 1098.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, convivencia, protección integral o gestión institucional.",
+        "blueprint": {
+            "problematica_principal": "Confusión entre el antiguo enfoque de situación irregular y el enfoque actual de sujetos titulares de derechos.",
+            "fuente_autorizada": [
+                "Decreto 2737 de 1989",
+                "Ley 1098 de 2006",
+                "Convención sobre los Derechos del Niño",
+                "Constitución Política de Colombia"
+            ],
+            "componente_modulo": "Evolución normativa de infancia",
+            "competencia": "Comprensión histórico-jurídica del enfoque de derechos",
+            "afirmacion": "La Ley 1098 supera el enfoque de situación irregular y reconoce a niños, niñas y adolescentes como sujetos plenos de derechos.",
+            "evidencia_observable": "Distingue entre el menor tratado como objeto de protección tutelar y el niño, niña o adolescente reconocido como titular de derechos.",
+            "tipo_de_evidencia": "Comprensión normativa comparativa",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que la evolución normativa colombiana desplaza la mirada del menor como objeto de tutela hacia el niño, niña y adolescente como sujeto pleno de derechos.",
+        "evidencia_observable": "Selecciona la comparación correcta entre Código del Menor y Ley 1098.",
+        "tarea_cognitiva": "Comparar dos enfoques jurídicos de infancia.",
+        "tipo_de_pregunta": "Pregunta conceptual normativa comparativa",
+        "dificultad_esperada": "Media-Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Presentar el enfoque antiguo como si siguiera vigente en los mismos términos",
+                "revision": "El ítem aclara que se trata de una comparación histórica."
+            },
+            {
+                "riesgo": "Confundir titularidad de derechos con ausencia de deberes",
+                "revision": "La clave habla de titularidad, protección y participación, no de ausencia de responsabilidad formativa."
+            },
+            {
+                "riesgo": "Usar lenguaje adultocéntrico",
+                "revision": "La opción correcta emplea enfoque de derechos."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un equipo docente compara el antiguo Código del Menor con la actual Ley de Infancia y Adolescencia. Se pregunta cuál fue el cambio jurídico estructural más importante frente a la manera de entender a niños, niñas y adolescentes.\n\n¿Cuál diferencia es correcta?",
+        "opciones": {
+            "A": "El Código del Menor y la Ley 1098 tienen exactamente el mismo enfoque jurídico.",
+            "B": "La Ley 1098 eliminó todos los derechos de niños, niñas y adolescentes para dar prioridad a la autoridad adulta.",
+            "C": "El Código del Menor se centraba en la situación irregular del menor, mientras la Ley 1098 reconoce a niños, niñas y adolescentes como sujetos titulares de derechos bajo protección integral.",
+            "D": "El Código del Menor reconocía más participación infantil que la Ley 1098."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Evolución normativa de infancia",
+        "competencia": "Comprensión histórico-jurídica del enfoque de derechos",
+        "claim_evaluado": "El evaluado comprende que la evolución normativa colombiana desplaza la mirada del menor como objeto de tutela hacia el niño, niña y adolescente como sujeto pleno de derechos.",
+        "evidencia": "Selecciona la comparación correcta entre Código del Menor y Ley 1098.",
+        "proceso_cognitivo": "Comparación normativa",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media-Alta",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Niega el cambio de enfoque normativo.",
+            "B": "Invierte el sentido garantista de la Ley 1098.",
+            "D": "Atribuye al Código del Menor un enfoque de participación que corresponde al paradigma actual de derechos."
+        },
+        "fuente_autorizada": [
+            "Decreto 2737 de 1989",
+            "Ley 1098 de 2006",
+            "Convención sobre los Derechos del Niño",
+            "Constitución Política de Colombia"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque expresa el tránsito desde la situación irregular hacia la protección integral y la titularidad de derechos.",
+        "opcion_A": "Es incorrecta porque desconoce la evolución normativa.",
+        "opcion_B": "Es incorrecta porque la Ley 1098 fortalece derechos.",
+        "opcion_D": "Es incorrecta porque confunde el enfoque antiguo con el actual."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem evita tratar a la infancia como objeto pasivo y promueve el enfoque actual de derechos."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre evolución normativa: Código del Menor vs. Ley 1098."
+    }
+}

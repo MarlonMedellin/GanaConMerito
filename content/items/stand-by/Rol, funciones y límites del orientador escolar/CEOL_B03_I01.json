@@ -1,0 +1,103 @@
+{
+    "id_item": "CEOL_B03_I01",
+    "archivo_sugerido": "CEOL_B03_I01_proyecto_transversal_educacion_sexual.json",
+    "bloque": {
+        "codigo_bloque": "CEOL_B03",
+        "nombre": "Rol, funciones y límites del orientador escolar",
+        "estado_en_lista": "Bloque 3 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 1 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce que el proyecto transversal de educación para la sexualidad debe ser una responsabilidad institucional articulada al PEI, al currículo, a la etapa de desarrollo de los estudiantes y al enfoque de derechos, con participación del docente orientador como asesor o dinamizador, pero no como único responsable aislado.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con orientación escolar, docencia, coordinación, rectoría o gestión de convivencia en educación básica y media.",
+        "blueprint": {
+            "problematica_principal": "Asignación aislada o personalista del proyecto transversal de educación sexual al orientador escolar.",
+            "fuente_autorizada": [
+                "Ley 1620 de 2013",
+                "Proyecto Educativo Institucional",
+                "Programa de Educación para la Sexualidad y Construcción de Ciudadanía del MEN",
+                "Manual de funciones del docente orientador",
+                "Ruta de Atención Integral para la Convivencia Escolar"
+            ],
+            "componente_modulo": "Funciones del Docente Orientador",
+            "competencia": "Articulación de proyectos transversales con enfoque de derechos",
+            "afirmacion": "Los proyectos pedagógicos transversales deben ser institucionales, curriculares, pertinentes al desarrollo y corresponsables.",
+            "evidencia_observable": "Reconoce que el docente orientador asesora, acompaña y dinamiza, pero el proyecto requiere articulación institucional, curricular y comunitaria.",
+            "tipo_de_evidencia": "Juicio normativo-pedagógico aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que la educación para la sexualidad no debe reducirse a charlas aisladas del orientador, sino estructurarse como proyecto pedagógico transversal, articulado al PEI, al currículo, a los derechos humanos sexuales y reproductivos y a las etapas de desarrollo.",
+        "evidencia_observable": "Selecciona una actuación institucional que articula rectoría, coordinación, docentes, orientación escolar, familias y estudiantes en el diseño y ejecución del proyecto.",
+        "tarea_cognitiva": "Analizar la responsabilidad institucional frente a un proyecto transversal y seleccionar la opción compatible con corresponsabilidad y enfoque de derechos.",
+        "tipo_de_pregunta": "Caso situacional de juicio profesional",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Asignar al orientador una responsabilidad exclusiva que excede su rol",
+                "revision": "La clave reconoce su función de asesoría, orientación y dinamización, pero sitúa el proyecto como responsabilidad institucional."
+            },
+            {
+                "riesgo": "Tratamiento sensible de educación sexual",
+                "revision": "El ítem evita contenidos explícitos y se centra en diseño pedagógico, enfoque de derechos y pertinencia por etapa de desarrollo."
+            },
+            {
+                "riesgo": "Sesgo cultural o religioso",
+                "revision": "La clave se basa en derechos, desarrollo, currículo y corresponsabilidad, no en una visión moral particular."
+            },
+            {
+                "riesgo": "Ambigüedad entre proyecto transversal y charla ocasional",
+                "revision": "La opción correcta diferencia proyecto pedagógico institucional de intervención aislada."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Una institución educativa decide actualizar su proyecto transversal de educación para la sexualidad. Algunos miembros del equipo directivo afirman que esta responsabilidad debe recaer exclusivamente en el docente orientador, mediante charlas ocasionales para cada grado.\n\n¿Cuál actuación es más adecuada?",
+        "opciones": {
+            "A": "Delegar todo el proyecto al orientador, sin articularlo con el PEI, el currículo ni las etapas de desarrollo de los estudiantes.",
+            "B": "Eliminar el proyecto para evitar abordar temas sensibles dentro de la institución educativa.",
+            "C": "Estructurarlo como proyecto pedagógico transversal, articulado al PEI y al currículo, con participación de directivos, docentes, orientación escolar, familias y estudiantes, según las etapas de desarrollo.",
+            "D": "Realizar una charla anual igual para todos los grados, sin diagnóstico ni seguimiento."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Funciones del Docente Orientador",
+        "competencia": "Articulación de proyectos transversales con enfoque de derechos",
+        "claim_evaluado": "El evaluado comprende que la educación para la sexualidad no debe reducirse a charlas aisladas del orientador, sino estructurarse como proyecto pedagógico transversal, articulado al PEI, al currículo, a los derechos humanos sexuales y reproductivos y a las etapas de desarrollo.",
+        "evidencia": "Selecciona una actuación institucional que articula rectoría, coordinación, docentes, orientación escolar, familias y estudiantes en el diseño y ejecución del proyecto.",
+        "proceso_cognitivo": "Análisis y juicio normativo-pedagógico",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Aísla la responsabilidad en el orientador y desconoce el carácter institucional y transversal del proyecto.",
+            "B": "Desconoce la obligación pedagógica de abordar la educación para la sexualidad desde un enfoque de derechos.",
+            "D": "Reduce un proyecto transversal a una actividad ocasional sin pertinencia ni seguimiento."
+        },
+        "fuente_autorizada": [
+            "Ley 1620 de 2013",
+            "Proyecto Educativo Institucional",
+            "Programa de Educación para la Sexualidad y Construcción de Ciudadanía del MEN",
+            "Manual de funciones del docente orientador",
+            "Ruta de Atención Integral para la Convivencia Escolar"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque entiende el proyecto de educación para la sexualidad como una construcción pedagógica transversal, institucional, articulada al PEI y al currículo, y pertinente a las etapas de desarrollo.",
+        "opcion_A": "Es incorrecta porque asigna una responsabilidad institucional a una sola persona y desconoce la corresponsabilidad educativa.",
+        "opcion_B": "Es incorrecta porque evita una dimensión formativa y de derechos que debe abordarse pedagógicamente.",
+        "opcion_D": "Es incorrecta porque una charla anual homogénea no constituye un proyecto pedagógico transversal."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El caso aborda educación para la sexualidad desde una perspectiva institucional, pedagógica y de derechos, sin incluir contenido sensible innecesario ni imponer una visión cultural particular."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 5 preguntas sobre rol, funciones y límites del orientador escolar."
+    }
+}

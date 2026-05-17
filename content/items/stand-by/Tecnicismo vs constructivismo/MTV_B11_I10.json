@@ -1,0 +1,36 @@
+{
+    "id_item": "MTV_B11_I10",
+    "archivo_sugerido": "MTV_B11_I10_guia_pasos_anula_descubrimiento.json",
+    "proposito_de_uso": "Evaluar si el aspirante comprende cuándo una guía excesivamente cerrada limita el aprendizaje por descubrimiento.",
+    "blueprint": {
+        "componente_modulo": "Aprendizaje por descubrimiento",
+        "competencia": "Selección de estrategias didácticas",
+        "afirmacion": "El aprendizaje por descubrimiento exige exploración, formulación de hipótesis, prueba y reflexión; una guía totalmente cerrada puede convertirlo en ejecución mecánica.",
+        "evidencia_observable": "Reconoce cuándo una mediación didáctica anula la indagación.",
+        "tipo_de_evidencia": "Juicio didáctico aplicado",
+        "dificultad_esperada": "Alta",
+        "clave": "B"
+    },
+    "item": {
+        "enunciado": "En una actividad de laboratorio que busca aprendizaje por descubrimiento, el docente entrega una guía que indica exactamente cada paso, cada respuesta esperada y la conclusión que los estudiantes deben copiar.\n\n¿Por qué esta guía puede anular el modelo de descubrimiento?",
+        "opciones": {
+            "A": "Porque toda guía de laboratorio es incorrecta.",
+            "B": "Porque convierte la exploración en ejecución mecánica y elimina la formulación de hipótesis, prueba y reflexión propia del descubrimiento.",
+            "C": "Porque los estudiantes nunca deben recibir orientación.",
+            "D": "Porque la ciencia no requiere procedimientos."
+        },
+        "respuesta_correcta": "B"
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque una guía cerrada impide indagación real.",
+        "distractores": {
+            "A": "Las guías pueden ser útiles si orientan sin cerrar completamente el proceso.",
+            "C": "El descubrimiento también requiere mediación.",
+            "D": "La ciencia sí requiere procedimientos, pero no respuestas copiadas sin reflexión."
+        }
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem avanzado para aprendizaje por descubrimiento."
+    }
+}

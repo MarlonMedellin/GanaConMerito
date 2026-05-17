@@ -1,0 +1,97 @@
+{
+    "id_item": "CEOL_B08_I02",
+    "archivo_sugerido": "CEOL_B08_I02_concepto_ensenar_competencias.json",
+    "bloque": {
+        "codigo_bloque": "CEOL_B08",
+        "nombre": "Enseñar, formar, motivación didáctica y competencias socioemocionales",
+        "estado_en_lista": "Bloque 8 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 2 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende que enseñar, en un enfoque por competencias, implica mediar, diseñar situaciones, orientar procesos y generar condiciones para que el estudiante movilice saberes.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación académica o gestión pedagógica.",
+        "blueprint": {
+            "problematica_principal": "Reducción de enseñar a explicar contenidos o dictar temas.",
+            "fuente_autorizada": [
+                "Manual de funciones docente",
+                "Lineamientos curriculares",
+                "Estándares Básicos de Competencias",
+                "Evaluación por competencias"
+            ],
+            "componente_modulo": "Concepto de Enseñar",
+            "competencia": "Mediación pedagógica orientada a competencias",
+            "afirmacion": "Enseñar implica mediar el aprendizaje para que el estudiante comprenda, aplique y movilice saberes en contexto.",
+            "evidencia_observable": "Reconoce que enseñar no se limita a transmitir información, sino a orientar experiencias de aprendizaje con sentido.",
+            "tipo_de_evidencia": "Comprensión pedagógica aplicada",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que enseñar con enfoque de competencias exige diseñar ambientes, preguntas, actividades, mediaciones y evaluaciones que permitan al estudiante usar lo aprendido.",
+        "evidencia_observable": "Selecciona una definición de enseñar orientada a la comprensión, aplicación y transferencia.",
+        "tarea_cognitiva": "Diferenciar enseñanza transmisiva de enseñanza orientada al desarrollo de competencias.",
+        "tipo_de_pregunta": "Pregunta conceptual aplicada",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Confundir enseñar con dictar",
+                "revision": "La clave diferencia transmisión de mediación pedagógica."
+            },
+            {
+                "riesgo": "Confundir competencias con actividades sin contenido",
+                "revision": "La opción correcta conserva saberes, aplicación y contexto."
+            },
+            {
+                "riesgo": "Sesgo por metodología específica",
+                "revision": "No exige una metodología única; evalúa un principio pedagógico general."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un docente afirma que enseñar consiste principalmente en dictar el tema completo para que los estudiantes lo copien. La coordinación académica le recuerda que, en un enfoque por competencias, enseñar implica orientar procesos más complejos.\n\n¿Qué significa realmente enseñar cuando se orienta hacia el desarrollo de competencias?",
+        "opciones": {
+            "A": "Diseñar y mediar experiencias para que los estudiantes comprendan, apliquen, integren y movilicen saberes en contextos significativos.",
+            "B": "Transmitir información para que el estudiante la repita literalmente en una evaluación.",
+            "C": "Entregar guías sin acompañamiento para que cada estudiante resuelva solo sus dificultades.",
+            "D": "Evitar toda explicación docente para no intervenir en el aprendizaje."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Concepto de Enseñar",
+        "competencia": "Mediación pedagógica orientada a competencias",
+        "claim_evaluado": "El evaluado comprende que enseñar con enfoque de competencias exige diseñar ambientes, preguntas, actividades, mediaciones y evaluaciones que permitan al estudiante usar lo aprendido.",
+        "evidencia": "Selecciona una definición de enseñar orientada a la comprensión, aplicación y transferencia.",
+        "proceso_cognitivo": "Comprensión pedagógica aplicada",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Reduce enseñar a transmisión y repetición.",
+            "C": "Confunde autonomía con abandono pedagógico.",
+            "D": "Niega la mediación docente necesaria."
+        },
+        "fuente_autorizada": [
+            "Manual de funciones docente",
+            "Lineamientos curriculares",
+            "Estándares Básicos de Competencias",
+            "Evaluación por competencias"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque enseñar por competencias implica crear condiciones para comprender, aplicar y transferir saberes.",
+        "opcion_B": "Es incorrecta porque se limita a repetición literal.",
+        "opcion_C": "Es incorrecta porque deja al estudiante sin mediación.",
+        "opcion_D": "Es incorrecta porque el docente sigue teniendo función orientadora."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem no exige aplicar una metodología específica y se centra en la función pedagógica general de la enseñanza."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 5 preguntas sobre enseñar, formar y competencias socioemocionales."
+    }
+}

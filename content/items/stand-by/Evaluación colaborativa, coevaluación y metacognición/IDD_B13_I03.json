@@ -1,0 +1,99 @@
+{
+    "id_item": "IDD_B13_I03",
+    "archivo_sugerido": "IDD_B13_I03_coevaluacion_con_criterios_no_opinion.json",
+    "bloque": {
+        "codigo_bloque": "IDD_B13",
+        "nombre": "Evaluación colaborativa, coevaluación y metacognición",
+        "estado_en_lista": "Bloque 13 de 17",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 3 de 3"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante distingue la coevaluación formativa basada en criterios de una simple opinión subjetiva entre compañeros.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, evaluación formativa, aprendizaje colaborativo o gestión de aula.",
+        "blueprint": {
+            "problematica_principal": "Uso de coevaluación como comentario informal o juicio personal sin criterios ni evidencia.",
+            "fuente_autorizada": [
+                "Evaluación formativa",
+                "Coevaluación",
+                "Rúbricas",
+                "Retroalimentación",
+                "Aprendizaje colaborativo"
+            ],
+            "componente_modulo": "Coevaluación con Criterios",
+            "competencia": "Uso ético y formativo de la coevaluación",
+            "afirmacion": "La coevaluación debe basarse en criterios explícitos, evidencias observables, lenguaje respetuoso y finalidad de mejora.",
+            "evidencia_observable": "Reconoce una práctica de coevaluación que evita juicios personales y se centra en evidencias del producto o desempeño.",
+            "tipo_de_evidencia": "Juicio evaluativo aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "D"
+        },
+        "claim": "El evaluado comprende que coevaluar no es opinar sobre la persona, sino aportar retroalimentación fundamentada para mejorar el aprendizaje.",
+        "evidencia_observable": "Selecciona una actuación que usa criterios, evidencias y lenguaje respetuoso.",
+        "tarea_cognitiva": "Distinguir coevaluación formativa de juicio subjetivo entre pares.",
+        "tipo_de_pregunta": "Caso situacional de juicio evaluativo",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Permitir burlas o ataques personales",
+                "revision": "La clave exige lenguaje respetuoso y evidencias."
+            },
+            {
+                "riesgo": "Convertir coevaluación en popularidad",
+                "revision": "El ítem exige criterios explícitos."
+            },
+            {
+                "riesgo": "Generar ansiedad por evaluación entre pares",
+                "revision": "La coevaluación se plantea como retroalimentación para mejorar, no como castigo."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Durante una exposición grupal, el docente pide a los estudiantes coevaluar a sus compañeros. Algunos quieren escribir comentarios personales como “me cae mal” o “habló feo”, sin usar criterios de desempeño.\n\n¿Qué debe hacer el docente para que la coevaluación sea formativa?",
+        "opciones": {
+            "A": "Permitir cualquier comentario porque la coevaluación es una opinión libre.",
+            "B": "Suspender toda participación de los estudiantes en la evaluación.",
+            "C": "Pedir que califiquen según amistad o afinidad con el expositor.",
+            "D": "Orientar la coevaluación con criterios claros, evidencias observables, lenguaje respetuoso y recomendaciones de mejora."
+        },
+        "respuesta_correcta": "D"
+    },
+    "ficha_tecnica": {
+        "componente": "Coevaluación con Criterios",
+        "competencia": "Uso ético y formativo de la coevaluación",
+        "claim_evaluado": "El evaluado comprende que coevaluar no es opinar sobre la persona, sino aportar retroalimentación fundamentada para mejorar el aprendizaje.",
+        "evidencia": "Selecciona una actuación que usa criterios, evidencias y lenguaje respetuoso.",
+        "proceso_cognitivo": "Juicio evaluativo aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "D",
+        "distractores": {
+            "A": "Confunde coevaluación con opinión subjetiva sin límites.",
+            "B": "Elimina una estrategia formativa en lugar de orientarla.",
+            "C": "Convierte la evaluación en popularidad o afinidad personal."
+        },
+        "fuente_autorizada": [
+            "Evaluación formativa",
+            "Coevaluación",
+            "Rúbricas",
+            "Retroalimentación",
+            "Aprendizaje colaborativo"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción D es correcta porque la coevaluación debe centrarse en criterios, evidencias y retroalimentación respetuosa.",
+        "opcion_A": "Es incorrecta porque puede producir juicios personales y no aprendizaje.",
+        "opcion_B": "Es incorrecta porque evita una estrategia valiosa en vez de regularla.",
+        "opcion_C": "Es incorrecta porque evalúa relaciones personales, no desempeño."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem protege a los estudiantes de juicios personales y promueve retroalimentación con criterios observables."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 3 preguntas sobre evaluación colaborativa, coevaluación y metacognición."
+    }
+}

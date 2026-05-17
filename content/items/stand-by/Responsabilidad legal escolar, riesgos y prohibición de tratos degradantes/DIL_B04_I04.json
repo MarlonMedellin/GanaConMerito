@@ -1,0 +1,99 @@
+{
+    "id_item": "DIL_B04_I04",
+    "archivo_sugerido": "DIL_B04_I04_confidencialidad_no_exposicion_casos_vulneracion.json",
+    "bloque": {
+        "codigo_bloque": "DIL_B04",
+        "nombre": "Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes",
+        "estado_en_lista": "Bloque 4 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 4 de 5"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende la importancia de proteger la confidencialidad y la dignidad del estudiante cuando se identifican riesgos o vulneraciones de derechos.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación, convivencia escolar, coordinación o protección integral.",
+        "blueprint": {
+            "problematica_principal": "Exposición pública de casos sensibles de estudiantes como forma de presión o corrección.",
+            "fuente_autorizada": [
+                "Ley 1098 de 2006",
+                "Constitución Política de Colombia",
+                "Enfoque de dignidad humana",
+                "Manual de convivencia",
+                "Rutas de atención institucional"
+            ],
+            "componente_modulo": "Confidencialidad y dignidad",
+            "competencia": "Manejo ético de información sensible",
+            "afirmacion": "Los casos de vulneración o riesgo deben manejarse con confidencialidad, protección de la dignidad y remisión por canales competentes.",
+            "evidencia_observable": "Reconoce que no se deben divulgar detalles del caso ante el grupo ni usarlo como escarmiento.",
+            "tipo_de_evidencia": "Juicio ético-normativo aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "C"
+        },
+        "claim": "El evaluado comprende que proteger derechos implica también proteger la intimidad, dignidad y seguridad emocional del estudiante.",
+        "evidencia_observable": "Selecciona una actuación confidencial y respetuosa en el manejo de información sensible.",
+        "tarea_cognitiva": "Elegir una respuesta ética ante un caso sensible de derechos.",
+        "tipo_de_pregunta": "Caso situacional ético-normativo",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Exposición pública de estudiantes vulnerables",
+                "revision": "La clave exige confidencialidad."
+            },
+            {
+                "riesgo": "Confundir sensibilización con divulgación del caso",
+                "revision": "La opción correcta permite educar sin revelar datos personales."
+            },
+            {
+                "riesgo": "Revictimización",
+                "revision": "El ítem prioriza protección y ruta."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un docente conoce un posible caso de abandono y maltrato. Para que el grupo “aprenda una lección”, piensa mencionar públicamente el caso del estudiante en clase y pedir opiniones de sus compañeros.\n\n¿Cuál actuación es correcta?",
+        "opciones": {
+            "A": "Exponer el caso ante el grupo para generar presión social.",
+            "B": "Publicar detalles del caso en el chat de familias para buscar ayuda.",
+            "C": "Manejar la información con reserva, proteger la dignidad del estudiante, informar por canales institucionales y activar la ruta competente.",
+            "D": "Hacer una votación para decidir si el caso merece atención."
+        },
+        "respuesta_correcta": "C"
+    },
+    "ficha_tecnica": {
+        "componente": "Confidencialidad y dignidad",
+        "competencia": "Manejo ético de información sensible",
+        "claim_evaluado": "El evaluado comprende que proteger derechos implica también proteger la intimidad, dignidad y seguridad emocional del estudiante.",
+        "evidencia": "Selecciona una actuación confidencial y respetuosa en el manejo de información sensible.",
+        "proceso_cognitivo": "Juicio ético-normativo aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "C",
+        "distractores": {
+            "A": "Expone y humilla al estudiante.",
+            "B": "Divulga información sensible sin competencia ni reserva.",
+            "D": "Somete derechos fundamentales a decisión de pares."
+        },
+        "fuente_autorizada": [
+            "Ley 1098 de 2006",
+            "Constitución Política de Colombia",
+            "Enfoque de dignidad humana",
+            "Manual de convivencia",
+            "Rutas de atención institucional"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción C es correcta porque protege confidencialidad, dignidad y activa canales competentes.",
+        "opcion_A": "Es incorrecta porque vulnera intimidad y dignidad.",
+        "opcion_B": "Es incorrecta porque divulga datos sensibles.",
+        "opcion_D": "Es incorrecta porque los derechos no se deciden por votación del grupo."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem evita revictimización y protege la privacidad del estudiante."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión de protocolo institucional de manejo de información sensible.",
+        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 5 preguntas sobre responsabilidad legal escolar, riesgos y prohibición de tratos degradantes."
+    }
+}

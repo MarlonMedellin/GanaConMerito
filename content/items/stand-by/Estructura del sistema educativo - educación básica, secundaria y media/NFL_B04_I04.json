@@ -1,0 +1,98 @@
+{
+    "id_item": "NFL_B04_I04",
+    "archivo_sugerido": "NFL_B04_I04_bases_secundaria_media_diferencia_curricular.json",
+    "bloque": {
+        "codigo_bloque": "NFL_B04",
+        "nombre": "Estructura del sistema educativo: educación básica, secundaria y media",
+        "estado_en_lista": "Bloque 4 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 4 de 4"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante diferencia la educación básica secundaria de la educación media en términos de ubicación y finalidad curricular.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, currículo, coordinación académica, rectoría o normatividad educativa.",
+        "blueprint": {
+            "problematica_principal": "Confusión entre el ciclo de básica secundaria y la educación media, especialmente en planeación curricular y asignación académica.",
+            "fuente_autorizada": [
+                "Ley 115 de 1994",
+                "Artículo 19 Ley 115",
+                "Artículo 22 Ley 115",
+                "Artículo 27 Ley 115",
+                "Educación formal"
+            ],
+            "componente_modulo": "Diferencia entre básica secundaria y media",
+            "competencia": "Clasificación normativa y curricular de niveles",
+            "afirmacion": "La básica secundaria hace parte de la educación básica, mientras la educación media corresponde a décimo y undécimo y tiene finalidad de consolidación y preparación para educación superior o trabajo.",
+            "evidencia_observable": "Reconoce diferencias de ubicación, duración y finalidad curricular.",
+            "tipo_de_evidencia": "Comprensión normativa comparativa",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "A"
+        },
+        "claim": "El evaluado comprende que la organización del sistema educativo tiene implicaciones curriculares, administrativas y pedagógicas.",
+        "evidencia_observable": "Selecciona una comparación adecuada entre básica secundaria y educación media.",
+        "tarea_cognitiva": "Comparar dos niveles o ciclos de la educación formal.",
+        "tipo_de_pregunta": "Pregunta conceptual comparativa",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Tratar secundaria y media como sinónimos",
+                "revision": "La clave diferencia ambos conceptos."
+            },
+            {
+                "riesgo": "Reducir la diferencia a nombres sin impacto curricular",
+                "revision": "El ítem incorpora finalidad y preparación posterior."
+            },
+            {
+                "riesgo": "Confundir duración de los niveles",
+                "revision": "La opción correcta indica ubicación general."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un docente nuevo usa indistintamente los términos básica secundaria y educación media. El coordinador académico le explica que, aunque ambas pertenecen a la educación formal escolar, no son lo mismo según la Ley 115.\n\n¿Cuál comparación es correcta?",
+        "opciones": {
+            "A": "La básica secundaria hace parte de la educación básica; la educación media comprende décimo y undécimo y busca culminar, consolidar y preparar al estudiante para educación superior o trabajo.",
+            "B": "La educación media corresponde a primero, segundo y tercero de primaria.",
+            "C": "La básica secundaria y la educación media son exactamente el mismo nivel.",
+            "D": "La educación básica solo corresponde al grado undécimo."
+        },
+        "respuesta_correcta": "A"
+    },
+    "ficha_tecnica": {
+        "componente": "Diferencia entre básica secundaria y media",
+        "competencia": "Clasificación normativa y curricular de niveles",
+        "claim_evaluado": "El evaluado comprende que la organización del sistema educativo tiene implicaciones curriculares, administrativas y pedagógicas.",
+        "evidencia": "Selecciona una comparación adecuada entre básica secundaria y educación media.",
+        "proceso_cognitivo": "Comprensión normativa comparativa",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "A",
+        "distractores": {
+            "B": "Ubica erróneamente la educación media en primaria.",
+            "C": "Desconoce la distinción normativa entre ambos niveles o ciclos.",
+            "D": "Clasifica incorrectamente la educación básica."
+        },
+        "fuente_autorizada": [
+            "Ley 115 de 1994",
+            "Artículo 19 Ley 115",
+            "Artículo 22 Ley 115",
+            "Artículo 27 Ley 115"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción A es correcta porque distingue la educación básica secundaria de la educación media y expresa su finalidad general.",
+        "opcion_B": "Es incorrecta porque la educación media no corresponde a primaria.",
+        "opcion_C": "Es incorrecta porque básica secundaria y media no son equivalentes.",
+        "opcion_D": "Es incorrecta porque la educación básica comprende nueve grados, no solo undécimo."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem evalúa una distinción normativa útil para planeación curricular sin favorecer una modalidad institucional específica."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre estructura del sistema educativo."
+    }
+}

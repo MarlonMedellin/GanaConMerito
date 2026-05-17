@@ -1,0 +1,98 @@
+{
+    "id_item": "NFL_B02_I03",
+    "archivo_sugerido": "NFL_B02_I03_cultura_escolar_pei_identidad_practicas.json",
+    "bloque": {
+        "codigo_bloque": "NFL_B02",
+        "nombre": "Cultura escolar, identidad institucional y PEI",
+        "estado_en_lista": "Bloque 2 de 10",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 3 de 3"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante comprende la relación entre cultura escolar, PEI e identidad institucional.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con gestión escolar, docencia, currículo, coordinación, rectoría u orientación.",
+        "blueprint": {
+            "problematica_principal": "Desarticulación entre el PEI declarado y la cultura escolar real que se vive en la institución.",
+            "fuente_autorizada": [
+                "Ley 115 de 1994",
+                "Artículo 73 Ley 115",
+                "Proyecto Educativo Institucional",
+                "Cultura escolar",
+                "Gestión institucional"
+            ],
+            "componente_modulo": "Cultura escolar e identidad del PEI",
+            "competencia": "Análisis de coherencia institucional",
+            "afirmacion": "La cultura escolar debe ser coherente con el horizonte institucional declarado en el PEI y con las prácticas reales de la comunidad educativa.",
+            "evidencia_observable": "Reconoce incoherencias entre valores escritos y prácticas cotidianas, y propone alinear PEI, cultura y gestión.",
+            "tipo_de_evidencia": "Juicio de gestión institucional aplicado",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "D"
+        },
+        "claim": "El evaluado comprende que la identidad institucional no se define solo por lo escrito en el PEI, sino por la coherencia entre discurso, prácticas y relaciones escolares.",
+        "evidencia_observable": "Selecciona una actuación que busca alinear cultura escolar y PEI.",
+        "tarea_cognitiva": "Analizar la coherencia entre identidad declarada e identidad vivida.",
+        "tipo_de_pregunta": "Caso situacional de gestión escolar",
+        "dificultad_esperada": "Media-Alta",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Idealizar el PEI como documento suficiente",
+                "revision": "La clave exige coherencia con prácticas reales."
+            },
+            {
+                "riesgo": "Desconocer diversidad institucional",
+                "revision": "El ítem permite distintos proyectos institucionales."
+            },
+            {
+                "riesgo": "Confundir identidad con exclusión",
+                "revision": "La opción correcta articula identidad con convivencia y derechos."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Un colegio declara en su PEI que promueve participación, respeto y diálogo; sin embargo, en la vida cotidiana se toman decisiones sin escuchar a los estudiantes, se normalizan tratos autoritarios y se sanciona toda opinión crítica. El equipo directivo quiere revisar la coherencia entre lo escrito y lo vivido.\n\n¿Qué análisis es más adecuado desde el concepto de cultura escolar?",
+        "opciones": {
+            "A": "No hay problema, porque basta con que el PEI tenga valores escritos aunque la práctica sea contraria.",
+            "B": "La cultura escolar no se relaciona con el PEI ni con las prácticas cotidianas.",
+            "C": "La identidad institucional se mide solo por los símbolos del escudo y el uniforme.",
+            "D": "Debe revisarse la coherencia entre el PEI declarado, las prácticas reales, las relaciones escolares y los valores que efectivamente vive la comunidad educativa."
+        },
+        "respuesta_correcta": "D"
+    },
+    "ficha_tecnica": {
+        "componente": "Cultura escolar e identidad del PEI",
+        "competencia": "Análisis de coherencia institucional",
+        "claim_evaluado": "El evaluado comprende que la identidad institucional no se define solo por lo escrito en el PEI, sino por la coherencia entre discurso, prácticas y relaciones escolares.",
+        "evidencia": "Selecciona una actuación que busca alinear cultura escolar y PEI.",
+        "proceso_cognitivo": "Juicio de gestión institucional aplicado",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media-Alta",
+        "respuesta_correcta": "D",
+        "distractores": {
+            "A": "Convierte el PEI en declaración sin coherencia práctica.",
+            "B": "Niega la relación entre cultura institucional y vida escolar.",
+            "C": "Reduce la identidad a símbolos formales."
+        },
+        "fuente_autorizada": [
+            "Ley 115 de 1994",
+            "Artículo 73 Ley 115",
+            "Proyecto Educativo Institucional",
+            "Cultura escolar"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción D es correcta porque la cultura escolar se expresa en prácticas, relaciones y valores vividos, y debe guardar coherencia con el PEI.",
+        "opcion_A": "Es incorrecta porque los valores escritos no bastan si la práctica los contradice.",
+        "opcion_B": "Es incorrecta porque el PEI orienta la identidad institucional.",
+        "opcion_C": "Es incorrecta porque los símbolos no agotan la cultura escolar."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem promueve coherencia institucional sin imponer una identidad escolar única."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión institucional posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 3 preguntas sobre cultura escolar, identidad institucional y PEI."
+    }
+}

@@ -1,0 +1,103 @@
+{
+    "id_item": "PPDC_B06_I01",
+    "archivo_sugerido": "PPDC_B06_I01_fines_educacion_historia_diversidad_cultura.json",
+    "bloque": {
+        "codigo_bloque": "PPDC_B06",
+        "nombre": "Normatividad, fines de la educación y educación no formal",
+        "estado_en_lista": "Bloque 6 de 7",
+        "decision_del_bloque": "Grupo de preguntas",
+        "item_en_grupo": "Ítem 1 de 2"
+    },
+    "diseno_previo": {
+        "proposito_de_uso": "Evaluar si el aspirante reconoce el propósito pedagógico y social de incorporar transversalmente el estudio de la historia nacional, la diversidad étnica y la cultura en el aula, en coherencia con los fines de la educación.",
+        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
+        "blueprint": {
+            "problematica_principal": "Reducción de la historia, la diversidad étnica y la cultura a contenidos aislados o conmemorativos, sin reconocer su valor formativo y social.",
+            "fuente_autorizada": [
+                "Ley 115 de 1994, artículo 5",
+                "Constitución Política de Colombia",
+                "Fines de la educación",
+                "Lineamientos curriculares de Ciencias Sociales",
+                "Proyecto Educativo Institucional"
+            ],
+            "componente_modulo": "Normatividad y Fines de la Educación",
+            "competencia": "Comprensión normativa y formación ciudadana",
+            "afirmacion": "La educación debe contribuir al reconocimiento de la historia nacional, la diversidad étnica, la cultura y la identidad democrática.",
+            "evidencia_observable": "Reconoce que estos contenidos fortalecen identidad, memoria, convivencia, respeto por la diversidad y participación ciudadana.",
+            "tipo_de_evidencia": "Interpretación normativa y pedagógica aplicada",
+            "formato": "Selección múltiple con única respuesta",
+            "numero_opciones": 4,
+            "clave": "B"
+        },
+        "claim": "El evaluado comprende que incorporar historia nacional, diversidad étnica y cultura en el aula no es un requisito decorativo, sino una acción pedagógica orientada a formar ciudadanía, identidad, respeto por la pluralidad y comprensión crítica del país.",
+        "evidencia_observable": "Selecciona una justificación que relaciona estos contenidos con formación ciudadana, memoria histórica, valoración cultural y convivencia democrática.",
+        "tarea_cognitiva": "Analizar el sentido pedagógico y social de un fin de la educación y seleccionar la interpretación más adecuada.",
+        "tipo_de_pregunta": "Pregunta conceptual normativa aplicada",
+        "dificultad_esperada": "Media",
+        "riesgos_de_fairness": [
+            {
+                "riesgo": "Folclorización de la diversidad cultural",
+                "revision": "La clave evita reducir la cultura y la diversidad étnica a celebraciones o fechas conmemorativas."
+            },
+            {
+                "riesgo": "Sesgo étnico o cultural",
+                "revision": "El ítem presenta la diversidad como valor formativo y social, no como diferencia marginal o problemática."
+            },
+            {
+                "riesgo": "Sesgo por área disciplinar",
+                "revision": "Aunque el tema puede trabajarse en Ciencias Sociales, la pregunta enfatiza su incorporación transversal."
+            },
+            {
+                "riesgo": "Memorización normativa literal",
+                "revision": "El ítem no exige citar textualmente el artículo 5, sino interpretar su propósito pedagógico y social."
+            }
+        ]
+    },
+    "item": {
+        "enunciado": "Una institución educativa decide incorporar de manera transversal el estudio de la historia nacional, la diversidad étnica y la cultura en diferentes áreas. Algunos docentes consideran que estos temas solo deberían tratarse en actos conmemorativos o fechas especiales.\n\n¿Cuál es el propósito pedagógico y social de incorporarlos transversalmente en el aula?",
+        "opciones": {
+            "A": "Cumplir una actividad cultural ocasional sin relación con la formación académica ni ciudadana de los estudiantes.",
+            "B": "Fortalecer la identidad, la memoria histórica, el respeto por la diversidad, la convivencia democrática y la comprensión crítica de la sociedad.",
+            "C": "Reemplazar los contenidos de todas las áreas por celebraciones culturales y actividades artísticas.",
+            "D": "Trabajar únicamente datos históricos para que los estudiantes memoricen fechas, personajes y acontecimientos."
+        },
+        "respuesta_correcta": "B"
+    },
+    "ficha_tecnica": {
+        "componente": "Normatividad y Fines de la Educación",
+        "competencia": "Comprensión normativa y formación ciudadana",
+        "claim_evaluado": "El evaluado comprende que incorporar historia nacional, diversidad étnica y cultura en el aula no es un requisito decorativo, sino una acción pedagógica orientada a formar ciudadanía, identidad, respeto por la pluralidad y comprensión crítica del país.",
+        "evidencia": "Selecciona una justificación que relaciona estos contenidos con formación ciudadana, memoria histórica, valoración cultural y convivencia democrática.",
+        "proceso_cognitivo": "Interpretación normativa y pedagógica aplicada",
+        "tipo_de_item": "Selección múltiple con única respuesta",
+        "nivel_de_dificultad": "Media",
+        "respuesta_correcta": "B",
+        "distractores": {
+            "A": "Reduce la historia, la cultura y la diversidad a una actividad ocasional sin valor formativo transversal.",
+            "C": "Plantea una falsa sustitución de los contenidos académicos por celebraciones culturales.",
+            "D": "Reduce el aprendizaje histórico y cultural a memorización de datos."
+        },
+        "fuente_autorizada": [
+            "Ley 115 de 1994, artículo 5",
+            "Constitución Política de Colombia",
+            "Fines de la educación",
+            "Lineamientos curriculares de Ciencias Sociales",
+            "Proyecto Educativo Institucional"
+        ]
+    },
+    "justificacion_editorial": {
+        "clave": "La opción B es correcta porque expresa el sentido pedagógico y social de estos contenidos: formar identidad, memoria histórica, respeto por la diversidad, convivencia democrática y comprensión crítica de la sociedad.",
+        "opcion_A": "Es incorrecta porque limita el tema a una actividad conmemorativa sin relación con la formación integral.",
+        "opcion_C": "Es incorrecta porque transversalizar no significa reemplazar todas las áreas por celebraciones culturales.",
+        "opcion_D": "Es incorrecta porque el propósito no es solo memorizar datos, sino comprender procesos históricos, culturales y sociales."
+    },
+    "revision_fairness": {
+        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+        "argumento": "El ítem evita presentar la diversidad étnica y cultural como asunto accesorio o folclórico. Evalúa una comprensión amplia de la formación ciudadana y cultural, sin favorecer una región, grupo étnico o experiencia institucional específica."
+    },
+    "dictamen_final": {
+        "estado": "Aprobado",
+        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 2 preguntas sobre normatividad, fines de la educación y educación no formal."
+    }
+}
