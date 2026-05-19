@@ -1,40 +1,40 @@
 {
-    "id_item": "EIP_B04_I01",
-    "archivo_sugerido": "EIP_B04_I01_conocimiento_propio_cuerpo_identidad_autonomia.json",
-    "proposito_de_uso": "Evaluar si el aspirante reconoce el objetivo específico de preescolar relacionado con el conocimiento del propio cuerpo, la identidad y la autonomía.",
-    "blueprint": {
-        "componente_modulo": "Objetivos específicos de preescolar",
-        "competencia": "Reconocimiento normativo del objetivo de identidad y autonomía",
-        "afirmacion": "El preescolar debe favorecer el conocimiento del propio cuerpo, sus posibilidades de acción, la identidad y la autonomía.",
-        "evidencia_observable": "Selecciona correctamente el objetivo pedagógico asociado al reconocimiento corporal.",
-        "tipo_de_evidencia": "Reconocimiento normativo aplicado",
-        "dificultad_esperada": "Media",
-        "clave": "C"
+  "id_item": "EIP_B04_I01",
+  "archivo_sugerido": "EIP_B04_I01_conocimiento_propio_cuerpo_identidad_autonomia.json",
+  "proposito_de_uso": "Evaluar si el aspirante reconoce el objetivo específico de preescolar relacionado con el conocimiento del propio cuerpo, la identidad y la autonomía.",
+  "blueprint": {
+    "componente_modulo": "Objetivos específicos de preescolar",
+    "competencia": "Reconocimiento normativo del objetivo de identidad y autonomía",
+    "afirmacion": "El preescolar debe favorecer el conocimiento del propio cuerpo, sus posibilidades de acción, la identidad y la autonomía.",
+    "evidencia_observable": "Selecciona correctamente el objetivo pedagógico asociado al reconocimiento corporal.",
+    "tipo_de_evidencia": "Reconocimiento normativo aplicado",
+    "dificultad_esperada": "Media",
+    "clave": "C"
+  },
+  "item": {
+    "enunciado": "Una docente de preescolar diseña actividades para que los niños nombren partes de su cuerpo, reconozcan sus posibilidades de movimiento, expresen quiénes son y realicen acciones básicas con mayor independencia.\n\n¿A qué objetivo específico de la educación preescolar responde esta práctica?",
+    "opciones": {
+      "A": "A la preparación exclusiva para exámenes escritos.",
+      "B": "A la memorización obligatoria de normas administrativas.",
+      "C": "Al conocimiento del propio cuerpo y sus posibilidades de acción, así como a la adquisición de identidad y autonomía.",
+      "D": "A la sustitución de la familia por la institución educativa."
     },
-    "item": {
-        "enunciado": "Una docente de preescolar diseña actividades para que los niños nombren partes de su cuerpo, reconozcan sus posibilidades de movimiento, expresen quiénes son y realicen acciones básicas con mayor independencia.\n\n¿A qué objetivo específico de la educación preescolar responde esta práctica?",
-        "opciones": {
-            "A": "A la preparación exclusiva para exámenes escritos.",
-            "B": "A la memorización obligatoria de normas administrativas.",
-            "C": "Al conocimiento del propio cuerpo y sus posibilidades de acción, así como a la adquisición de identidad y autonomía.",
-            "D": "A la sustitución de la familia por la institución educativa."
-        },
-        "respuesta_correcta": "C"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque retoma el objetivo específico del artículo 16 sobre cuerpo, identidad y autonomía.",
-        "distractores": {
-            "A": "Reduce el preescolar a evaluación escrita.",
-            "B": "No corresponde al objetivo pedagógico planteado.",
-            "D": "Confunde acompañamiento educativo con sustitución familiar."
-        }
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado",
-        "argumento": "El ítem valora la autonomía infantil sin desconocer el acompañamiento adulto."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem apto para banco con revisión normativa posterior."
+    "respuesta_correcta": "C"
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "distractores": {
+      "A": "Reduce el preescolar a evaluación escrita.",
+      "B": "No corresponde al objetivo pedagógico planteado.",
+      "D": "Confunde acompañamiento educativo con sustitución familiar."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado",
+    "argumento": "El ítem valora la autonomía infantil sin desconocer el acompañamiento adulto."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem apto para banco con revisión normativa posterior."
+  }
 }

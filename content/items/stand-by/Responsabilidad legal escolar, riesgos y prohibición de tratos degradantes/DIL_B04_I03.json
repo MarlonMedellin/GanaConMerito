@@ -1,99 +1,104 @@
 {
-    "id_item": "DIL_B04_I03",
-    "archivo_sugerido": "DIL_B04_I03_situacion_tipo_iii_no_investigar_delitos.json",
-    "bloque": {
-        "codigo_bloque": "DIL_B04",
-        "nombre": "Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes",
-        "estado_en_lista": "Bloque 4 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 3 de 5"
+  "id_item": "DIL_B04_I03",
+  "archivo_sugerido": "DIL_B04_I03_situacion_tipo_iii_no_investigar_delitos.json",
+  "bloque": {
+    "codigo_bloque": "DIL_B04",
+    "nombre": "Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes",
+    "estado_en_lista": "Bloque 4 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 3 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce que ante presuntos delitos sexuales, venta de narcóticos u otras situaciones tipo III, la escuela debe reportar a las autoridades competentes y no investigar por cuenta propia.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con convivencia escolar, orientación, coordinación, rectoría o protección de menores.",
+    "blueprint": {
+      "problematica_principal": "Extralimitación de funciones escolares ante presuntos delitos o situaciones tipo III.",
+      "fuente_autorizada": [
+        "Ley 1620 de 2013",
+        "Decreto 1965 de 2013",
+        "Ley 1098 de 2006",
+        "Policía de Infancia y Adolescencia",
+        "Fiscalía General de la Nación"
+      ],
+      "componente_modulo": "Tipificación faltas tipo III",
+      "competencia": "Activación de rutas externas ante presunto delito",
+      "afirmacion": "Ante situaciones tipo III, la escuela debe garantizar atención inmediata y poner el caso en conocimiento de autoridades competentes.",
+      "evidencia_observable": "Reconoce que la escuela no interroga ni investiga delitos, sino que protege, documenta y reporta.",
+      "tipo_de_evidencia": "Juicio normativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce que ante presuntos delitos sexuales, venta de narcóticos u otras situaciones tipo III, la escuela debe reportar a las autoridades competentes y no investigar por cuenta propia.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con convivencia escolar, orientación, coordinación, rectoría o protección de menores.",
-        "blueprint": {
-            "problematica_principal": "Extralimitación de funciones escolares ante presuntos delitos o situaciones tipo III.",
-            "fuente_autorizada": [
-                "Ley 1620 de 2013",
-                "Decreto 1965 de 2013",
-                "Ley 1098 de 2006",
-                "Policía de Infancia y Adolescencia",
-                "Fiscalía General de la Nación"
-            ],
-            "componente_modulo": "Tipificación faltas tipo III",
-            "competencia": "Activación de rutas externas ante presunto delito",
-            "afirmacion": "Ante situaciones tipo III, la escuela debe garantizar atención inmediata y poner el caso en conocimiento de autoridades competentes.",
-            "evidencia_observable": "Reconoce que la escuela no interroga ni investiga delitos, sino que protege, documenta y reporta.",
-            "tipo_de_evidencia": "Juicio normativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que la escuela no sustituye a Policía de Infancia, Fiscalía o autoridades competentes en la investigación de presuntos delitos.",
-        "evidencia_observable": "Selecciona una actuación que evita revictimización y activa ruta externa.",
-        "tarea_cognitiva": "Diferenciar atención escolar inicial de investigación penal o administrativa.",
-        "tipo_de_pregunta": "Caso situacional de ruta tipo III",
-        "dificultad_esperada": "Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Revictimizar al estudiante mediante interrogatorios",
-                "revision": "La clave prohíbe investigar por cuenta propia."
-            },
-            {
-                "riesgo": "Omitir el reporte por temor institucional",
-                "revision": "La opción correcta exige informar a autoridad competente."
-            },
-            {
-                "riesgo": "Confundir situación disciplinaria con presunto delito",
-                "revision": "El enunciado especifica delito sexual o venta de narcóticos."
-            }
-        ]
+    "claim": "El evaluado comprende que la escuela no sustituye a Policía de Infancia, Fiscalía o autoridades competentes en la investigación de presuntos delitos.",
+    "evidencia_observable": "Selecciona una actuación que evita revictimización y activa ruta externa.",
+    "tarea_cognitiva": "Diferenciar atención escolar inicial de investigación penal o administrativa.",
+    "tipo_de_pregunta": "Caso situacional de ruta tipo III",
+    "dificultad_esperada": "Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Revictimizar al estudiante mediante interrogatorios",
+        "revision": "La clave prohíbe investigar por cuenta propia."
+      },
+      {
+        "riesgo": "Omitir el reporte por temor institucional",
+        "revision": "La opción correcta exige informar a autoridad competente."
+      },
+      {
+        "riesgo": "Confundir situación disciplinaria con presunto delito",
+        "revision": "El enunciado especifica delito sexual o venta de narcóticos."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "En una institución educativa aparece la presunción de un delito sexual o de venta de narcóticos que involucra a estudiantes. Algunos miembros del equipo proponen interrogar a los menores y adelantar una investigación interna antes de reportar.\n\n¿Por qué esta actuación no es adecuada?",
+    "opciones": {
+      "A": "Porque ante una situación tipo III la escuela debe proteger, garantizar atención inmediata si procede y reportar a las autoridades competentes, sin investigar delitos por cuenta propia.",
+      "B": "Porque la escuela debe ocultar el caso para proteger su imagen institucional.",
+      "C": "Porque los presuntos delitos escolares siempre se resuelven con una anotación en el observador.",
+      "D": "Porque ningún caso grave debe salir del comité de convivencia."
     },
-    "item": {
-        "enunciado": "En una institución educativa aparece la presunción de un delito sexual o de venta de narcóticos que involucra a estudiantes. Algunos miembros del equipo proponen interrogar a los menores y adelantar una investigación interna antes de reportar.\n\n¿Por qué esta actuación no es adecuada?",
-        "opciones": {
-            "A": "Porque ante una situación tipo III la escuela debe proteger, garantizar atención inmediata si procede y reportar a las autoridades competentes, sin investigar delitos por cuenta propia.",
-            "B": "Porque la escuela debe ocultar el caso para proteger su imagen institucional.",
-            "C": "Porque los presuntos delitos escolares siempre se resuelven con una anotación en el observador.",
-            "D": "Porque ningún caso grave debe salir del comité de convivencia."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Tipificación faltas tipo III",
+    "competencia": "Activación de rutas externas ante presunto delito",
+    "claim_evaluado": "El evaluado comprende que la escuela no sustituye a Policía de Infancia, Fiscalía o autoridades competentes en la investigación de presuntos delitos.",
+    "evidencia": "Selecciona una actuación que evita revictimización y activa ruta externa.",
+    "proceso_cognitivo": "Juicio normativo aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Alta",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Promueve encubrimiento y omisión.",
+      "C": "Minimiza un presunto delito como si fuera falta ordinaria.",
+      "D": "Desconoce la obligación de activar autoridades competentes."
     },
-    "ficha_tecnica": {
-        "componente": "Tipificación faltas tipo III",
-        "competencia": "Activación de rutas externas ante presunto delito",
-        "claim_evaluado": "El evaluado comprende que la escuela no sustituye a Policía de Infancia, Fiscalía o autoridades competentes en la investigación de presuntos delitos.",
-        "evidencia": "Selecciona una actuación que evita revictimización y activa ruta externa.",
-        "proceso_cognitivo": "Juicio normativo aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Alta",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Promueve encubrimiento y omisión.",
-            "C": "Minimiza un presunto delito como si fuera falta ordinaria.",
-            "D": "Desconoce la obligación de activar autoridades competentes."
-        },
-        "fuente_autorizada": [
-            "Ley 1620 de 2013",
-            "Decreto 1965 de 2013",
-            "Ley 1098 de 2006",
-            "Policía de Infancia y Adolescencia",
-            "Fiscalía General de la Nación"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque ante presunto delito o situación tipo III la institución no investiga penalmente: protege, atiende y reporta.",
-        "opcion_B": "Es incorrecta porque ocultar vulnera derechos y deberes de protección.",
-        "opcion_C": "Es incorrecta porque una anotación escolar no sustituye ruta externa.",
-        "opcion_D": "Es incorrecta porque los casos tipo III exigen conocimiento de autoridades competentes."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem protege a víctimas potenciales, evita revictimización y diferencia la competencia escolar de la penal."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión normativa y de ruta institucional vigente.",
-        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre responsabilidad legal escolar, riesgos y prohibición de tratos degradantes."
+    "fuente_autorizada": [
+      "Ley 1620 de 2013",
+      "Decreto 1965 de 2013",
+      "Ley 1098 de 2006",
+      "Policía de Infancia y Adolescencia",
+      "Fiscalía General de la Nación"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque ocultar vulnera derechos y deberes de protección.",
+    "opcion_C": "Es incorrecta porque una anotación escolar no sustituye ruta externa.",
+    "opcion_D": "Es incorrecta porque los casos tipo III exigen conocimiento de autoridades competentes.",
+    "distractores": {
+      "B": "Es incorrecta porque ocultar vulnera derechos y deberes de protección.",
+      "C": "Es incorrecta porque una anotación escolar no sustituye ruta externa.",
+      "D": "Es incorrecta porque los casos tipo III exigen conocimiento de autoridades competentes."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem protege a víctimas potenciales, evita revictimización y diferencia la competencia escolar de la penal."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión normativa y de ruta institucional vigente.",
+    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre responsabilidad legal escolar, riesgos y prohibición de tratos degradantes."
+  }
 }

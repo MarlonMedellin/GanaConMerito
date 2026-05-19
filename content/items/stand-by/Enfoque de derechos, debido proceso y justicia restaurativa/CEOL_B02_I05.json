@@ -1,101 +1,106 @@
 {
-    "id_item": "CEOL_B02_I05",
-    "archivo_sugerido": "CEOL_B02_I05_bullying_justicia_restaurativa.json",
-    "bloque": {
-        "codigo_bloque": "CEOL_B02",
-        "nombre": "Enfoque de derechos, debido proceso y justicia restaurativa",
-        "estado_en_lista": "Bloque 2 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 5 de 6"
+  "id_item": "CEOL_B02_I05",
+  "archivo_sugerido": "CEOL_B02_I05_bullying_justicia_restaurativa.json",
+  "bloque": {
+    "codigo_bloque": "CEOL_B02",
+    "nombre": "Enfoque de derechos, debido proceso y justicia restaurativa",
+    "estado_en_lista": "Bloque 2 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 5 de 6"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce que frente al aumento de casos de bullying no basta con sancionar severamente, sino que se requiere prevención, atención, reparación, restauración del daño y seguimiento.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con convivencia escolar, orientación, coordinación, docencia o dirección.",
+    "blueprint": {
+      "problematica_principal": "Respuesta punitiva tradicional frente al bullying y desconocimiento del enfoque restaurativo.",
+      "fuente_autorizada": [
+        "Ley 1620 de 2013",
+        "Decreto 1965 de 2013",
+        "Manual de convivencia institucional",
+        "Orientaciones sobre justicia restaurativa escolar"
+      ],
+      "componente_modulo": "Clima Escolar y Convivencia",
+      "competencia": "Justicia restaurativa y reparación del daño",
+      "afirmacion": "La convivencia escolar exige acciones restaurativas, preventivas y formativas, no solo sanciones severas.",
+      "evidencia_observable": "Reconoce que ante bullying se debe proteger a la víctima, detener la agresión, reparar daños, trabajar con los involucrados y hacer seguimiento.",
+      "tipo_de_evidencia": "Juicio pedagógico y normativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce que frente al aumento de casos de bullying no basta con sancionar severamente, sino que se requiere prevención, atención, reparación, restauración del daño y seguimiento.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con convivencia escolar, orientación, coordinación, docencia o dirección.",
-        "blueprint": {
-            "problematica_principal": "Respuesta punitiva tradicional frente al bullying y desconocimiento del enfoque restaurativo.",
-            "fuente_autorizada": [
-                "Ley 1620 de 2013",
-                "Decreto 1965 de 2013",
-                "Manual de convivencia institucional",
-                "Orientaciones sobre justicia restaurativa escolar"
-            ],
-            "componente_modulo": "Clima Escolar y Convivencia",
-            "competencia": "Justicia restaurativa y reparación del daño",
-            "afirmacion": "La convivencia escolar exige acciones restaurativas, preventivas y formativas, no solo sanciones severas.",
-            "evidencia_observable": "Reconoce que ante bullying se debe proteger a la víctima, detener la agresión, reparar daños, trabajar con los involucrados y hacer seguimiento.",
-            "tipo_de_evidencia": "Juicio pedagógico y normativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que la justicia restaurativa busca responsabilización, reparación del daño, reconstrucción de vínculos y garantías de no repetición, sin reducir la convivencia a castigo.",
-        "evidencia_observable": "Selecciona una actuación institucional restaurativa frente al bullying.",
-        "tarea_cognitiva": "Analizar una situación de acoso escolar y seleccionar la respuesta más coherente con justicia restaurativa.",
-        "tipo_de_pregunta": "Caso situacional de juicio profesional",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Minimización del bullying",
-                "revision": "La clave exige detener la agresión, proteger a la víctima y hacer seguimiento."
-            },
-            {
-                "riesgo": "Confundir justicia restaurativa con impunidad",
-                "revision": "La opción correcta incluye responsabilidad y reparación, no ausencia de consecuencias."
-            },
-            {
-                "riesgo": "Revictimización",
-                "revision": "La clave no obliga a la víctima a reconciliarse ni expone su caso públicamente."
-            },
-            {
-                "riesgo": "Respuesta punitiva extrema",
-                "revision": "Los distractores permiten diferenciar castigo severo de intervención pedagógica restaurativa."
-            }
-        ]
+    "claim": "El evaluado comprende que la justicia restaurativa busca responsabilización, reparación del daño, reconstrucción de vínculos y garantías de no repetición, sin reducir la convivencia a castigo.",
+    "evidencia_observable": "Selecciona una actuación institucional restaurativa frente al bullying.",
+    "tarea_cognitiva": "Analizar una situación de acoso escolar y seleccionar la respuesta más coherente con justicia restaurativa.",
+    "tipo_de_pregunta": "Caso situacional de juicio profesional",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Minimización del bullying",
+        "revision": "La clave exige detener la agresión, proteger a la víctima y hacer seguimiento."
+      },
+      {
+        "riesgo": "Confundir justicia restaurativa con impunidad",
+        "revision": "La opción correcta incluye responsabilidad y reparación, no ausencia de consecuencias."
+      },
+      {
+        "riesgo": "Revictimización",
+        "revision": "La clave no obliga a la víctima a reconciliarse ni expone su caso públicamente."
+      },
+      {
+        "riesgo": "Respuesta punitiva extrema",
+        "revision": "Los distractores permiten diferenciar castigo severo de intervención pedagógica restaurativa."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "En una institución aumentan los casos de bullying. Algunos integrantes de la comunidad proponen como única medida sancionar severamente a los estudiantes agresores mediante suspensiones prolongadas, sin realizar trabajo pedagógico, reparación ni seguimiento.\n\n¿Por qué esta respuesta constituye una premisa de error bajo un enfoque de justicia restaurativa?",
+    "opciones": {
+      "A": "Porque el enfoque restaurativo exige detener la agresión, proteger a la víctima, responsabilizar a quienes agreden, reparar el daño y hacer seguimiento para evitar repetición.",
+      "B": "Porque la justicia restaurativa impide aplicar cualquier consecuencia a quienes participan en situaciones de acoso.",
+      "C": "Porque el bullying debe resolverse únicamente entre estudiantes, sin intervención institucional.",
+      "D": "Porque sancionar severamente siempre garantiza reparación del daño y mejora del clima escolar."
     },
-    "item": {
-        "enunciado": "En una institución aumentan los casos de bullying. Algunos integrantes de la comunidad proponen como única medida sancionar severamente a los estudiantes agresores mediante suspensiones prolongadas, sin realizar trabajo pedagógico, reparación ni seguimiento.\n\n¿Por qué esta respuesta constituye una premisa de error bajo un enfoque de justicia restaurativa?",
-        "opciones": {
-            "A": "Porque el enfoque restaurativo exige detener la agresión, proteger a la víctima, responsabilizar a quienes agreden, reparar el daño y hacer seguimiento para evitar repetición.",
-            "B": "Porque la justicia restaurativa impide aplicar cualquier consecuencia a quienes participan en situaciones de acoso.",
-            "C": "Porque el bullying debe resolverse únicamente entre estudiantes, sin intervención institucional.",
-            "D": "Porque sancionar severamente siempre garantiza reparación del daño y mejora del clima escolar."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Clima Escolar y Convivencia",
+    "competencia": "Justicia restaurativa y reparación del daño",
+    "claim_evaluado": "El evaluado comprende que la justicia restaurativa busca responsabilización, reparación del daño, reconstrucción de vínculos y garantías de no repetición, sin reducir la convivencia a castigo.",
+    "evidencia": "Selecciona una actuación institucional restaurativa frente al bullying.",
+    "proceso_cognitivo": "Análisis y juicio pedagógico-normativo",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Confunde justicia restaurativa con ausencia de consecuencias.",
+      "C": "Desconoce la responsabilidad institucional de intervenir y proteger.",
+      "D": "Asume que la severidad de la sanción equivale automáticamente a reparación."
     },
-    "ficha_tecnica": {
-        "componente": "Clima Escolar y Convivencia",
-        "competencia": "Justicia restaurativa y reparación del daño",
-        "claim_evaluado": "El evaluado comprende que la justicia restaurativa busca responsabilización, reparación del daño, reconstrucción de vínculos y garantías de no repetición, sin reducir la convivencia a castigo.",
-        "evidencia": "Selecciona una actuación institucional restaurativa frente al bullying.",
-        "proceso_cognitivo": "Análisis y juicio pedagógico-normativo",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Confunde justicia restaurativa con ausencia de consecuencias.",
-            "C": "Desconoce la responsabilidad institucional de intervenir y proteger.",
-            "D": "Asume que la severidad de la sanción equivale automáticamente a reparación."
-        },
-        "fuente_autorizada": [
-            "Ley 1620 de 2013",
-            "Decreto 1965 de 2013",
-            "Manual de convivencia institucional",
-            "Orientaciones sobre justicia restaurativa escolar"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque integra protección, responsabilización, reparación, seguimiento y garantía de no repetición, elementos centrales de una respuesta restaurativa.",
-        "opcion_B": "Es incorrecta porque la justicia restaurativa no elimina consecuencias; las orienta hacia reparación y formación.",
-        "opcion_C": "Es incorrecta porque la institución debe intervenir y activar los protocolos correspondientes.",
-        "opcion_D": "Es incorrecta porque una sanción severa aislada no garantiza reparación ni transformación del clima escolar."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem protege a la víctima, no minimiza el acoso y evita presentar la justicia restaurativa como impunidad. Evalúa una respuesta institucional proporcional, formativa y reparadora."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 6 preguntas sobre enfoque de derechos, debido proceso y justicia restaurativa."
+    "fuente_autorizada": [
+      "Ley 1620 de 2013",
+      "Decreto 1965 de 2013",
+      "Manual de convivencia institucional",
+      "Orientaciones sobre justicia restaurativa escolar"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque la justicia restaurativa no elimina consecuencias; las orienta hacia reparación y formación.",
+    "opcion_C": "Es incorrecta porque la institución debe intervenir y activar los protocolos correspondientes.",
+    "opcion_D": "Es incorrecta porque una sanción severa aislada no garantiza reparación ni transformación del clima escolar.",
+    "distractores": {
+      "B": "Es incorrecta porque la justicia restaurativa no elimina consecuencias; las orienta hacia reparación y formación.",
+      "C": "Es incorrecta porque la institución debe intervenir y activar los protocolos correspondientes.",
+      "D": "Es incorrecta porque una sanción severa aislada no garantiza reparación ni transformación del clima escolar."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem protege a la víctima, no minimiza el acoso y evita presentar la justicia restaurativa como impunidad. Evalúa una respuesta institucional proporcional, formativa y reparadora."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 6 preguntas sobre enfoque de derechos, debido proceso y justicia restaurativa."
+  }
 }

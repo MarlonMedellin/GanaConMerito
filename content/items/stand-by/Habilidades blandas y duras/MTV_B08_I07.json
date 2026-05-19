@@ -1,40 +1,40 @@
 {
-    "id_item": "MTV_B08_I07",
-    "archivo_sugerido": "MTV_B08_I07_empatia_no_permisividad.json",
-    "proposito_de_uso": "Evaluar si el aspirante diferencia empatía profesional de permisividad.",
-    "blueprint": {
-        "componente_modulo": "Empatía y responsabilidad profesional",
-        "competencia": "Diferenciación entre sensibilidad, ayuda y permisividad",
-        "afirmacion": "La empatía implica comprender la situación del otro y actuar con apoyo responsable, sin eliminar límites, deberes ni criterios pedagógicos.",
-        "evidencia_observable": "Selecciona una actuación sensible pero formativa ante una dificultad del estudiante.",
-        "tipo_de_evidencia": "Juicio situacional comportamental",
-        "dificultad_esperada": "Alta",
-        "clave": "C"
+  "id_item": "MTV_B08_I07",
+  "archivo_sugerido": "MTV_B08_I07_empatia_no_permisividad.json",
+  "proposito_de_uso": "Evaluar si el aspirante diferencia empatía profesional de permisividad.",
+  "blueprint": {
+    "componente_modulo": "Empatía y responsabilidad profesional",
+    "competencia": "Diferenciación entre sensibilidad, ayuda y permisividad",
+    "afirmacion": "La empatía implica comprender la situación del otro y actuar con apoyo responsable, sin eliminar límites, deberes ni criterios pedagógicos.",
+    "evidencia_observable": "Selecciona una actuación sensible pero formativa ante una dificultad del estudiante.",
+    "tipo_de_evidencia": "Juicio situacional comportamental",
+    "dificultad_esperada": "Alta",
+    "clave": "C"
+  },
+  "item": {
+    "enunciado": "Un estudiante entrega un trabajo manual manchado de barro y explica honestamente que se le cayó camino al colegio debido a la lluvia. El docente debe actuar con ayuda y servicio, pero sin caer en permisividad ni humillación.\n\n¿Cuál actuación es más adecuada?",
+    "opciones": {
+      "A": "Ridiculizarlo frente al grupo para que aprenda a ser más cuidadoso.",
+      "B": "Ponerle cero automáticamente sin escuchar la situación.",
+      "C": "Escuchar la explicación, valorar la honestidad y el esfuerzo, revisar si el trabajo cumple el propósito y, si es necesario, permitir una mejora razonable con criterios claros.",
+      "D": "Aprobarlo siempre con nota máxima aunque no haya evidencia del trabajo."
     },
-    "item": {
-        "enunciado": "Un estudiante entrega un trabajo manual manchado de barro y explica honestamente que se le cayó camino al colegio debido a la lluvia. El docente debe actuar con ayuda y servicio, pero sin caer en permisividad ni humillación.\n\n¿Cuál actuación es más adecuada?",
-        "opciones": {
-            "A": "Ridiculizarlo frente al grupo para que aprenda a ser más cuidadoso.",
-            "B": "Ponerle cero automáticamente sin escuchar la situación.",
-            "C": "Escuchar la explicación, valorar la honestidad y el esfuerzo, revisar si el trabajo cumple el propósito y, si es necesario, permitir una mejora razonable con criterios claros.",
-            "D": "Aprobarlo siempre con nota máxima aunque no haya evidencia del trabajo."
-        },
-        "respuesta_correcta": "C"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque combina empatía, criterio pedagógico, responsabilidad y posibilidad de mejora.",
-        "distractores": {
-            "A": "Vulnera la dignidad del estudiante.",
-            "B": "Desconoce el contexto y elimina la ayuda profesional.",
-            "D": "Confunde empatía con permisividad sin criterios."
-        }
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado",
-        "argumento": "El ítem evalúa sensibilidad profesional sin promover arbitrariedad ni castigo."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem valioso para competencias de ayuda, servicio y justicia pedagógica."
+    "respuesta_correcta": "C"
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "distractores": {
+      "A": "Vulnera la dignidad del estudiante.",
+      "B": "Desconoce el contexto y elimina la ayuda profesional.",
+      "D": "Confunde empatía con permisividad sin criterios."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado",
+    "argumento": "El ítem evalúa sensibilidad profesional sin promover arbitrariedad ni castigo."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem valioso para competencias de ayuda, servicio y justicia pedagógica."
+  }
 }

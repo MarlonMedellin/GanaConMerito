@@ -1,101 +1,106 @@
 {
-    "id_item": "EFCC_B02_I01",
-    "archivo_sugerido": "EFCC_B02_I01_diferencia_estandar_logro.json",
-    "bloque": {
-        "codigo_bloque": "EFCC_B02",
-        "nombre": "Criterios, instrumentos y tipos de evaluación",
-        "estado_en_lista": "Bloque 2 de 5",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 1 de 4"
+  "id_item": "EFCC_B02_I01",
+  "archivo_sugerido": "EFCC_B02_I01_diferencia_estandar_logro.json",
+  "bloque": {
+    "codigo_bloque": "EFCC_B02",
+    "nombre": "Criterios, instrumentos y tipos de evaluación",
+    "estado_en_lista": "Bloque 2 de 5",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 1 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante diferencia entre estándar y logro dentro de la estructura curricular y evaluativa.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
+    "blueprint": {
+      "problematica_principal": "Confusión entre estándar curricular y logro de aprendizaje.",
+      "fuente_autorizada": [
+        "Estándares Básicos de Competencias del Ministerio de Educación Nacional",
+        "Lineamientos curriculares",
+        "Sistema Institucional de Evaluación de los Estudiantes",
+        "Proyecto Educativo Institucional"
+      ],
+      "componente_modulo": "Evaluación, Currículo y Didáctica",
+      "competencia": "Comprensión de estructura curricular",
+      "afirmacion": "El estándar define referentes amplios de competencia esperada, mientras el logro expresa un avance o desempeño alcanzable y observable en un proceso específico.",
+      "evidencia_observable": "Distingue un referente curricular general de un resultado concreto de aprendizaje o desempeño.",
+      "tipo_de_evidencia": "Comprensión conceptual aplicada",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "B"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante diferencia entre estándar y logro dentro de la estructura curricular y evaluativa.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
-        "blueprint": {
-            "problematica_principal": "Confusión entre estándar curricular y logro de aprendizaje.",
-            "fuente_autorizada": [
-                "Estándares Básicos de Competencias del Ministerio de Educación Nacional",
-                "Lineamientos curriculares",
-                "Sistema Institucional de Evaluación de los Estudiantes",
-                "Proyecto Educativo Institucional"
-            ],
-            "componente_modulo": "Evaluación, Currículo y Didáctica",
-            "competencia": "Comprensión de estructura curricular",
-            "afirmacion": "El estándar define referentes amplios de competencia esperada, mientras el logro expresa un avance o desempeño alcanzable y observable en un proceso específico.",
-            "evidencia_observable": "Distingue un referente curricular general de un resultado concreto de aprendizaje o desempeño.",
-            "tipo_de_evidencia": "Comprensión conceptual aplicada",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "B"
-        },
-        "claim": "El evaluado comprende que el estándar orienta lo que se espera desarrollar en términos de competencia, mientras el logro concreta evidencias de avance o desempeño que pueden observarse y valorarse en el aula.",
-        "evidencia_observable": "Selecciona una explicación que diferencia el estándar como referente amplio y el logro como manifestación observable del aprendizaje.",
-        "tarea_cognitiva": "Comparar dos conceptos curriculares y seleccionar la distinción más precisa.",
-        "tipo_de_pregunta": "Pregunta conceptual comparativa",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Lenguaje curricular técnico",
-                "revision": "El ítem contextualiza estándar y logro con ejemplos funcionales de planeación y evaluación."
-            },
-            {
-                "riesgo": "Ambigüedad entre estándar, competencia, indicador y logro",
-                "revision": "La clave diferencia nivel amplio de referencia y evidencia concreta de avance."
-            },
-            {
-                "riesgo": "Memorización normativa",
-                "revision": "No exige citar documentos, sino comprender la función de cada concepto."
-            },
-            {
-                "riesgo": "Sesgo por área disciplinar",
-                "revision": "La distinción aplica a cualquier área del currículo."
-            }
-        ]
+    "claim": "El evaluado comprende que el estándar orienta lo que se espera desarrollar en términos de competencia, mientras el logro concreta evidencias de avance o desempeño que pueden observarse y valorarse en el aula.",
+    "evidencia_observable": "Selecciona una explicación que diferencia el estándar como referente amplio y el logro como manifestación observable del aprendizaje.",
+    "tarea_cognitiva": "Comparar dos conceptos curriculares y seleccionar la distinción más precisa.",
+    "tipo_de_pregunta": "Pregunta conceptual comparativa",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Lenguaje curricular técnico",
+        "revision": "El ítem contextualiza estándar y logro con ejemplos funcionales de planeación y evaluación."
+      },
+      {
+        "riesgo": "Ambigüedad entre estándar, competencia, indicador y logro",
+        "revision": "La clave diferencia nivel amplio de referencia y evidencia concreta de avance."
+      },
+      {
+        "riesgo": "Memorización normativa",
+        "revision": "No exige citar documentos, sino comprender la función de cada concepto."
+      },
+      {
+        "riesgo": "Sesgo por área disciplinar",
+        "revision": "La distinción aplica a cualquier área del currículo."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "En una reunión de área, un docente afirma que un estándar y un logro son exactamente lo mismo. La coordinación académica propone aclarar la diferencia para mejorar la planeación y la evaluación.\n\n¿Cuál explicación diferencia mejor estos dos conceptos?",
+    "opciones": {
+      "A": "El estándar es una nota final del estudiante y el logro es el nombre de una actividad de clase.",
+      "B": "El estándar es un referente amplio de competencia esperada; el logro expresa un avance o desempeño concreto, observable y valorable en el proceso de aprendizaje.",
+      "C": "El estándar corresponde al comportamiento del estudiante y el logro únicamente al cumplimiento de tareas.",
+      "D": "El estándar y el logro son equivalentes, por lo que pueden usarse indistintamente en cualquier documento curricular."
     },
-    "item": {
-        "enunciado": "En una reunión de área, un docente afirma que un estándar y un logro son exactamente lo mismo. La coordinación académica propone aclarar la diferencia para mejorar la planeación y la evaluación.\n\n¿Cuál explicación diferencia mejor estos dos conceptos?",
-        "opciones": {
-            "A": "El estándar es una nota final del estudiante y el logro es el nombre de una actividad de clase.",
-            "B": "El estándar es un referente amplio de competencia esperada; el logro expresa un avance o desempeño concreto, observable y valorable en el proceso de aprendizaje.",
-            "C": "El estándar corresponde al comportamiento del estudiante y el logro únicamente al cumplimiento de tareas.",
-            "D": "El estándar y el logro son equivalentes, por lo que pueden usarse indistintamente en cualquier documento curricular."
-        },
-        "respuesta_correcta": "B"
+    "respuesta_correcta": "B"
+  },
+  "ficha_tecnica": {
+    "componente": "Evaluación, Currículo y Didáctica",
+    "competencia": "Comprensión de estructura curricular",
+    "claim_evaluado": "El evaluado comprende que el estándar orienta lo que se espera desarrollar en términos de competencia, mientras el logro concreta evidencias de avance o desempeño que pueden observarse y valorarse en el aula.",
+    "evidencia": "Selecciona una explicación que diferencia el estándar como referente amplio y el logro como manifestación observable del aprendizaje.",
+    "proceso_cognitivo": "Comprensión conceptual comparativa",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "B",
+    "distractores": {
+      "A": "Confunde estándar con calificación y logro con actividad.",
+      "C": "Reduce el estándar a comportamiento y el logro a cumplimiento operativo.",
+      "D": "Niega una distinción necesaria para la planeación y evaluación."
     },
-    "ficha_tecnica": {
-        "componente": "Evaluación, Currículo y Didáctica",
-        "competencia": "Comprensión de estructura curricular",
-        "claim_evaluado": "El evaluado comprende que el estándar orienta lo que se espera desarrollar en términos de competencia, mientras el logro concreta evidencias de avance o desempeño que pueden observarse y valorarse en el aula.",
-        "evidencia": "Selecciona una explicación que diferencia el estándar como referente amplio y el logro como manifestación observable del aprendizaje.",
-        "proceso_cognitivo": "Comprensión conceptual comparativa",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "B",
-        "distractores": {
-            "A": "Confunde estándar con calificación y logro con actividad.",
-            "C": "Reduce el estándar a comportamiento y el logro a cumplimiento operativo.",
-            "D": "Niega una distinción necesaria para la planeación y evaluación."
-        },
-        "fuente_autorizada": [
-            "Estándares Básicos de Competencias del Ministerio de Educación Nacional",
-            "Lineamientos curriculares",
-            "Sistema Institucional de Evaluación de los Estudiantes",
-            "Proyecto Educativo Institucional"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque el estándar funciona como referente amplio de competencia, mientras el logro concreta avances o desempeños observables en el proceso de aprendizaje.",
-        "opcion_A": "Es incorrecta porque ni el estándar es una nota final ni el logro es simplemente una actividad.",
-        "opcion_C": "Es incorrecta porque restringe ambos conceptos a comportamiento y tareas, dejando por fuera su sentido curricular.",
-        "opcion_D": "Es incorrecta porque estándar y logro se relacionan, pero no cumplen la misma función."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem no exige memoria normativa literal ni experiencia en un área específica. Evalúa una distinción curricular funcional y aplicable a diferentes contextos escolares."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre criterios, instrumentos y tipos de evaluación."
+    "fuente_autorizada": [
+      "Estándares Básicos de Competencias del Ministerio de Educación Nacional",
+      "Lineamientos curriculares",
+      "Sistema Institucional de Evaluación de los Estudiantes",
+      "Proyecto Educativo Institucional"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "opcion_A": "Es incorrecta porque ni el estándar es una nota final ni el logro es simplemente una actividad.",
+    "opcion_C": "Es incorrecta porque restringe ambos conceptos a comportamiento y tareas, dejando por fuera su sentido curricular.",
+    "opcion_D": "Es incorrecta porque estándar y logro se relacionan, pero no cumplen la misma función.",
+    "distractores": {
+      "A": "Es incorrecta porque ni el estándar es una nota final ni el logro es simplemente una actividad.",
+      "C": "Es incorrecta porque restringe ambos conceptos a comportamiento y tareas, dejando por fuera su sentido curricular.",
+      "D": "Es incorrecta porque estándar y logro se relacionan, pero no cumplen la misma función."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem no exige memoria normativa literal ni experiencia en un área específica. Evalúa una distinción curricular funcional y aplicable a diferentes contextos escolares."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre criterios, instrumentos y tipos de evaluación."
+  }
 }

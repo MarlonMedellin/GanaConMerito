@@ -1,98 +1,103 @@
 {
-    "id_item": "CB12_I01",
-    "bloque": {
-        "numero": 12,
-        "nombre": "Misión institucional",
-        "estado_en_lista": "Bloque 12 de 15",
-        "decision_del_bloque": "Pregunta única",
-        "item_en_grupo": "Ítem 1 de 1"
+  "id_item": "CB12_I01",
+  "bloque": {
+    "numero": 12,
+    "nombre": "Misión institucional",
+    "estado_en_lista": "Bloque 12 de 15",
+    "decision_del_bloque": "Pregunta única",
+    "item_en_grupo": "Ítem 1 de 1"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce que la misión institucional debe orientar decisiones pedagógicas, curriculares y de gestión coherentes con el contexto y con el horizonte formativo declarado por la institución.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
+    "blueprint": {
+      "problematica_principal": "Desconexión entre misión y contexto",
+      "fuente_autorizada": [
+        "Proyecto Educativo Institucional",
+        "Orientaciones MEN sobre Proyecto Educativo Institucional",
+        "Ley 115 de 1994"
+      ],
+      "componente_modulo": "Gestión Directiva",
+      "competencia": "Planeación estratégica",
+      "afirmacion": "La misión responde al contexto.",
+      "evidencia_observable": "Reconoce que la misión institucional debe orientar decisiones coherentes con necesidades y características del contexto.",
+      "tipo_de_evidencia": "Interpretación de coherencia institucional",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "B"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce que la misión institucional debe orientar decisiones pedagógicas, curriculares y de gestión coherentes con el contexto y con el horizonte formativo declarado por la institución.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-        "blueprint": {
-            "problematica_principal": "Desconexión entre misión y contexto",
-            "fuente_autorizada": [
-                "Proyecto Educativo Institucional",
-                "Orientaciones MEN sobre Proyecto Educativo Institucional",
-                "Ley 115 de 1994"
-            ],
-            "componente_modulo": "Gestión Directiva",
-            "competencia": "Planeación estratégica",
-            "afirmacion": "La misión responde al contexto.",
-            "evidencia_observable": "Reconoce que la misión institucional debe orientar decisiones coherentes con necesidades y características del contexto.",
-            "tipo_de_evidencia": "Interpretación de coherencia institucional",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "B"
-        },
-        "claim": "El evaluado identifica la relación entre misión institucional, contexto educativo y decisiones estratégicas de la institución.",
-        "evidencia_observable": "Selecciona una valoración que reconoce la incoherencia entre el horizonte institucional declarado y las acciones que deberían concretarlo.",
-        "tarea_cognitiva": "Interpretar una incoherencia entre misión institucional y acciones de gestión.",
-        "tipo_de_pregunta": "Caso situacional de juicio profesional",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Sesgo por tipo de institución",
-                "revision": "El caso puede aplicarse a instituciones oficiales, privadas, urbanas, rurales, grandes o pequeñas."
-            },
-            {
-                "riesgo": "Ambigüedad entre misión y actividades institucionales",
-                "revision": "La clave identifica la relación entre horizonte declarado y decisiones concretas."
-            },
-            {
-                "riesgo": "Sesgo contra la participación estudiantil",
-                "revision": "El ítem presenta la participación como componente formativo legítimo y no como obstáculo."
-            },
-            {
-                "riesgo": "Lenguaje técnico excesivo",
-                "revision": "Se emplean términos habituales en gestión escolar: misión, decisiones institucionales, participación y proyectos comunitarios."
-            }
-        ]
+    "claim": "El evaluado identifica la relación entre misión institucional, contexto educativo y decisiones estratégicas de la institución.",
+    "evidencia_observable": "Selecciona una valoración que reconoce la incoherencia entre el horizonte institucional declarado y las acciones que deberían concretarlo.",
+    "tarea_cognitiva": "Interpretar una incoherencia entre misión institucional y acciones de gestión.",
+    "tipo_de_pregunta": "Caso situacional de juicio profesional",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Sesgo por tipo de institución",
+        "revision": "El caso puede aplicarse a instituciones oficiales, privadas, urbanas, rurales, grandes o pequeñas."
+      },
+      {
+        "riesgo": "Ambigüedad entre misión y actividades institucionales",
+        "revision": "La clave identifica la relación entre horizonte declarado y decisiones concretas."
+      },
+      {
+        "riesgo": "Sesgo contra la participación estudiantil",
+        "revision": "El ítem presenta la participación como componente formativo legítimo y no como obstáculo."
+      },
+      {
+        "riesgo": "Lenguaje técnico excesivo",
+        "revision": "Se emplean términos habituales en gestión escolar: misión, decisiones institucionales, participación y proyectos comunitarios."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "La misión de una institución declara que su propósito es formar ciudadanos participativos y comprometidos con su comunidad. Sin embargo, las decisiones institucionales recientes han eliminado espacios de participación estudiantil y proyectos comunitarios.\n\n¿Cuál es la principal dificultad de esta situación?",
+    "opciones": {
+      "A": "La misión no debería mencionar ciudadanía ni comunidad, porque esos temas son externos a la escuela.",
+      "B": "Existe incoherencia entre el horizonte institucional declarado y las decisiones que deberían concretarlo.",
+      "C": "Los proyectos comunitarios deben eliminarse siempre que ocupen tiempo académico.",
+      "D": "La participación estudiantil solo es pertinente en actividades recreativas."
     },
-    "item": {
-        "enunciado": "La misión de una institución declara que su propósito es formar ciudadanos participativos y comprometidos con su comunidad. Sin embargo, las decisiones institucionales recientes han eliminado espacios de participación estudiantil y proyectos comunitarios.\n\n¿Cuál es la principal dificultad de esta situación?",
-        "opciones": {
-            "A": "La misión no debería mencionar ciudadanía ni comunidad, porque esos temas son externos a la escuela.",
-            "B": "Existe incoherencia entre el horizonte institucional declarado y las decisiones que deberían concretarlo.",
-            "C": "Los proyectos comunitarios deben eliminarse siempre que ocupen tiempo académico.",
-            "D": "La participación estudiantil solo es pertinente en actividades recreativas."
-        },
-        "respuesta_correcta": "B"
+    "respuesta_correcta": "B"
+  },
+  "ficha_tecnica": {
+    "componente": "Gestión Directiva",
+    "competencia": "Planeación estratégica",
+    "claim_evaluado": "El evaluado identifica la relación entre misión institucional, contexto educativo y decisiones estratégicas de la institución.",
+    "evidencia": "Selecciona una valoración que reconoce la incoherencia entre el horizonte institucional declarado y las acciones que deberían concretarlo.",
+    "proceso_cognitivo": "Análisis y juicio profesional",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "B",
+    "distractores": {
+      "A": "Desconoce la dimensión ciudadana, comunitaria y formativa de la escuela.",
+      "C": "Presenta una regla absoluta que desconoce el valor pedagógico de los proyectos comunitarios.",
+      "D": "Reduce la participación estudiantil a espacios recreativos y desconoce su valor formativo e institucional."
     },
-    "ficha_tecnica": {
-        "componente": "Gestión Directiva",
-        "competencia": "Planeación estratégica",
-        "claim_evaluado": "El evaluado identifica la relación entre misión institucional, contexto educativo y decisiones estratégicas de la institución.",
-        "evidencia": "Selecciona una valoración que reconoce la incoherencia entre el horizonte institucional declarado y las acciones que deberían concretarlo.",
-        "proceso_cognitivo": "Análisis y juicio profesional",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "B",
-        "distractores": {
-            "A": "Desconoce la dimensión ciudadana, comunitaria y formativa de la escuela.",
-            "C": "Presenta una regla absoluta que desconoce el valor pedagógico de los proyectos comunitarios.",
-            "D": "Reduce la participación estudiantil a espacios recreativos y desconoce su valor formativo e institucional."
-        },
-        "fuente_autorizada": [
-            "Proyecto Educativo Institucional",
-            "Orientaciones MEN sobre PEI",
-            "Ley 115 de 1994"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque identifica la desconexión entre la misión institucional y las decisiones de gestión. Si la institución declara formar ciudadanos participativos y comprometidos con la comunidad, sus acciones deben ofrecer espacios reales que concreten ese horizonte.",
-        "opcion_A": "Es incorrecta porque la formación ciudadana y el compromiso con la comunidad sí pueden hacer parte de la misión educativa.",
-        "opcion_C": "Es incorrecta porque los proyectos comunitarios no deben eliminarse automáticamente por ocupar tiempo académico; pueden articularse con aprendizajes y propósitos formativos.",
-        "opcion_D": "Es incorrecta porque la participación estudiantil no se limita a actividades recreativas; también puede ser académica, democrática, comunitaria e institucional."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El caso no exige conocer una misión institucional específica ni haber participado en procesos de planeación estratégica. Evalúa una relación lógica entre lo declarado y lo actuado. Además, no presenta la participación estudiantil ni los proyectos comunitarios como obstáculos, sino como posibles expresiones del horizonte formativo."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como pregunta única del bloque Misión institucional."
+    "fuente_autorizada": [
+      "Proyecto Educativo Institucional",
+      "Orientaciones MEN sobre PEI",
+      "Ley 115 de 1994"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "opcion_A": "Es incorrecta porque la formación ciudadana y el compromiso con la comunidad sí pueden hacer parte de la misión educativa.",
+    "opcion_C": "Es incorrecta porque los proyectos comunitarios no deben eliminarse automáticamente por ocupar tiempo académico; pueden articularse con aprendizajes y propósitos formativos.",
+    "opcion_D": "Es incorrecta porque la participación estudiantil no se limita a actividades recreativas; también puede ser académica, democrática, comunitaria e institucional.",
+    "distractores": {
+      "A": "Es incorrecta porque la formación ciudadana y el compromiso con la comunidad sí pueden hacer parte de la misión educativa.",
+      "C": "Es incorrecta porque los proyectos comunitarios no deben eliminarse automáticamente por ocupar tiempo académico; pueden articularse con aprendizajes y propósitos formativos.",
+      "D": "Es incorrecta porque la participación estudiantil no se limita a actividades recreativas; también puede ser académica, democrática, comunitaria e institucional."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El caso no exige conocer una misión institucional específica ni haber participado en procesos de planeación estratégica. Evalúa una relación lógica entre lo declarado y lo actuado. Además, no presenta la participación estudiantil ni los proyectos comunitarios como obstáculos, sino como posibles expresiones del horizonte formativo."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como pregunta única del bloque Misión institucional."
+  }
 }

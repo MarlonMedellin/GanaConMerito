@@ -1,40 +1,40 @@
 {
-    "id_item": "MTV_B10_I03",
-    "archivo_sugerido": "MTV_B10_I03_proposicion_negativa_conducta_inadecuada.json",
-    "proposito_de_uso": "Evaluar si el aspirante diferencia una proposición negativa que expresa una conducta profesionalmente inadecuada.",
-    "blueprint": {
-        "componente_modulo": "Proposiciones negativas",
-        "competencia": "Interpretación de polaridad actitudinal",
-        "afirmacion": "Cuando una proposición expresa una conducta contraria al rol docente, el desacuerdo suele ser la postura profesionalmente coherente.",
-        "evidencia_observable": "Identifica que no se debe aceptar una proposición negativa solo porque parezca realista o frecuente.",
-        "tipo_de_evidencia": "Juicio actitudinal aplicado",
-        "dificultad_esperada": "Media-Alta",
-        "clave": "D"
+  "id_item": "MTV_B10_I03",
+  "archivo_sugerido": "MTV_B10_I03_proposicion_negativa_conducta_inadecuada.json",
+  "proposito_de_uso": "Evaluar si el aspirante diferencia una proposición negativa que expresa una conducta profesionalmente inadecuada.",
+  "blueprint": {
+    "componente_modulo": "Proposiciones negativas",
+    "competencia": "Interpretación de polaridad actitudinal",
+    "afirmacion": "Cuando una proposición expresa una conducta contraria al rol docente, el desacuerdo suele ser la postura profesionalmente coherente.",
+    "evidencia_observable": "Identifica que no se debe aceptar una proposición negativa solo porque parezca realista o frecuente.",
+    "tipo_de_evidencia": "Juicio actitudinal aplicado",
+    "dificultad_esperada": "Media-Alta",
+    "clave": "D"
+  },
+  "item": {
+    "enunciado": "En una escala Likert aparece la proposición: 'Ignoro las dificultades familiares de los estudiantes porque no hacen parte de mi labor'.\n\nDesde el rol docente y la responsabilidad institucional, ¿cómo debe interpretarse esta proposición?",
+    "opciones": {
+      "A": "Como una proposición adecuada, porque el docente no debe observar el contexto.",
+      "B": "Como una proposición neutra, porque no afecta la práctica educativa.",
+      "C": "Como una proposición correcta si el docente tiene muchos estudiantes.",
+      "D": "Como una proposición inadecuada, porque desconoce la responsabilidad de reconocer factores contextuales que inciden en el aprendizaje y la permanencia."
     },
-    "item": {
-        "enunciado": "En una escala Likert aparece la proposición: 'Ignoro las dificultades familiares de los estudiantes porque no hacen parte de mi labor'.\n\nDesde el rol docente y la responsabilidad institucional, ¿cómo debe interpretarse esta proposición?",
-        "opciones": {
-            "A": "Como una proposición adecuada, porque el docente no debe observar el contexto.",
-            "B": "Como una proposición neutra, porque no afecta la práctica educativa.",
-            "C": "Como una proposición correcta si el docente tiene muchos estudiantes.",
-            "D": "Como una proposición inadecuada, porque desconoce la responsabilidad de reconocer factores contextuales que inciden en el aprendizaje y la permanencia."
-        },
-        "respuesta_correcta": "D"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque ignorar dificultades contextuales contradice una actuación docente responsable.",
-        "distractores": {
-            "A": "Desconoce la importancia del contexto en el proceso educativo.",
-            "B": "La proposición no es neutra: plantea una omisión profesional.",
-            "C": "La carga laboral no justifica ignorar señales relevantes del contexto."
-        }
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado",
-        "argumento": "El ítem no exige que el docente resuelva todo problema familiar, sino que reconozca y active canales pertinentes."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Útil para diferenciar proposición negativa y deber profesional."
+    "respuesta_correcta": "D"
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "distractores": {
+      "A": "Desconoce la importancia del contexto en el proceso educativo.",
+      "B": "La proposición no es neutra: plantea una omisión profesional.",
+      "C": "La carga laboral no justifica ignorar señales relevantes del contexto."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado",
+    "argumento": "El ítem no exige que el docente resuelva todo problema familiar, sino que reconozca y active canales pertinentes."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Útil para diferenciar proposición negativa y deber profesional."
+  }
 }

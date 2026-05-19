@@ -1,99 +1,104 @@
 {
-    "id_item": "NFL_B03_I04",
-    "archivo_sugerido": "NFL_B03_I04_proporcionalidad_medida_correctiva_extrema.json",
-    "bloque": {
-        "codigo_bloque": "NFL_B03",
-        "nombre": "Debido proceso, congruencia y medidas correctivas extremas",
-        "estado_en_lista": "Bloque 3 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 4 de 5"
+  "id_item": "NFL_B03_I04",
+  "archivo_sugerido": "NFL_B03_I04_proporcionalidad_medida_correctiva_extrema.json",
+  "bloque": {
+    "codigo_bloque": "NFL_B03",
+    "nombre": "Debido proceso, congruencia y medidas correctivas extremas",
+    "estado_en_lista": "Bloque 3 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 4 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante comprende que una medida correctiva extrema debe ser proporcional, motivada y excepcional.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con convivencia escolar, docencia, coordinación, rectoría, orientación escolar o gestión institucional.",
+    "blueprint": {
+      "problematica_principal": "Uso de sanciones máximas como primera respuesta, sin gradualidad ni valoración de circunstancias.",
+      "fuente_autorizada": [
+        "Constitución Política de Colombia artículo 29",
+        "Ley 115 de 1994",
+        "Ley 1098 de 2006",
+        "Manual de Convivencia",
+        "Debido proceso escolar"
+      ],
+      "componente_modulo": "Proporcionalidad de la medida correctiva",
+      "competencia": "Valoración de sanciones pedagógicas proporcionales",
+      "afirmacion": "Las medidas escolares deben ser proporcionales a la conducta, motivadas, pedagógicas y respetuosas de derechos.",
+      "evidencia_observable": "Reconoce que una sanción extrema solo procede tras valorar gravedad, contexto, reincidencia, daño, defensa, reparación y alternativas.",
+      "tipo_de_evidencia": "Juicio disciplinario-pedagógico aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "B"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante comprende que una medida correctiva extrema debe ser proporcional, motivada y excepcional.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con convivencia escolar, docencia, coordinación, rectoría, orientación escolar o gestión institucional.",
-        "blueprint": {
-            "problematica_principal": "Uso de sanciones máximas como primera respuesta, sin gradualidad ni valoración de circunstancias.",
-            "fuente_autorizada": [
-                "Constitución Política de Colombia artículo 29",
-                "Ley 115 de 1994",
-                "Ley 1098 de 2006",
-                "Manual de Convivencia",
-                "Debido proceso escolar"
-            ],
-            "componente_modulo": "Proporcionalidad de la medida correctiva",
-            "competencia": "Valoración de sanciones pedagógicas proporcionales",
-            "afirmacion": "Las medidas escolares deben ser proporcionales a la conducta, motivadas, pedagógicas y respetuosas de derechos.",
-            "evidencia_observable": "Reconoce que una sanción extrema solo procede tras valorar gravedad, contexto, reincidencia, daño, defensa, reparación y alternativas.",
-            "tipo_de_evidencia": "Juicio disciplinario-pedagógico aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "B"
-        },
-        "claim": "El evaluado comprende que la potestad disciplinaria escolar no es ilimitada y debe guardar proporción con la conducta y los fines formativos.",
-        "evidencia_observable": "Selecciona una valoración proporcional antes de imponer una medida extrema.",
-        "tarea_cognitiva": "Analizar la proporcionalidad de una medida correctiva.",
-        "tipo_de_pregunta": "Caso situacional de convivencia y debido proceso",
-        "dificultad_esperada": "Media-Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Promover sanciones máximas sin análisis",
-                "revision": "La clave exige valoración y motivación."
-            },
-            {
-                "riesgo": "Confundir proporcionalidad con impunidad",
-                "revision": "La opción correcta permite medidas según gravedad."
-            },
-            {
-                "riesgo": "Desconocer reparación de afectados",
-                "revision": "El ítem incluye daño, reparación y protección."
-            }
-        ]
+    "claim": "El evaluado comprende que la potestad disciplinaria escolar no es ilimitada y debe guardar proporción con la conducta y los fines formativos.",
+    "evidencia_observable": "Selecciona una valoración proporcional antes de imponer una medida extrema.",
+    "tarea_cognitiva": "Analizar la proporcionalidad de una medida correctiva.",
+    "tipo_de_pregunta": "Caso situacional de convivencia y debido proceso",
+    "dificultad_esperada": "Media-Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Promover sanciones máximas sin análisis",
+        "revision": "La clave exige valoración y motivación."
+      },
+      {
+        "riesgo": "Confundir proporcionalidad con impunidad",
+        "revision": "La opción correcta permite medidas según gravedad."
+      },
+      {
+        "riesgo": "Desconocer reparación de afectados",
+        "revision": "El ítem incluye daño, reparación y protección."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Ante una falta de convivencia, una institución decide aplicar la medida más severa disponible sin valorar la gravedad real, el contexto, la afectación producida, la posibilidad de reparación, los antecedentes ni las alternativas pedagógicas previstas en el Manual de Convivencia.\n\n¿Qué exigencia del debido proceso está siendo ignorada?",
+    "opciones": {
+      "A": "La obligación de imponer siempre la sanción máxima.",
+      "B": "La proporcionalidad, porque la medida debe corresponder a la gravedad, circunstancias, daño, fines pedagógicos y garantías del caso.",
+      "C": "La posibilidad de castigar sin motivación.",
+      "D": "La eliminación de todo procedimiento cuando hay indisciplina."
     },
-    "item": {
-        "enunciado": "Ante una falta de convivencia, una institución decide aplicar la medida más severa disponible sin valorar la gravedad real, el contexto, la afectación producida, la posibilidad de reparación, los antecedentes ni las alternativas pedagógicas previstas en el Manual de Convivencia.\n\n¿Qué exigencia del debido proceso está siendo ignorada?",
-        "opciones": {
-            "A": "La obligación de imponer siempre la sanción máxima.",
-            "B": "La proporcionalidad, porque la medida debe corresponder a la gravedad, circunstancias, daño, fines pedagógicos y garantías del caso.",
-            "C": "La posibilidad de castigar sin motivación.",
-            "D": "La eliminación de todo procedimiento cuando hay indisciplina."
-        },
-        "respuesta_correcta": "B"
+    "respuesta_correcta": "B"
+  },
+  "ficha_tecnica": {
+    "componente": "Proporcionalidad de la medida correctiva",
+    "competencia": "Valoración de sanciones pedagógicas proporcionales",
+    "claim_evaluado": "El evaluado comprende que la potestad disciplinaria escolar no es ilimitada y debe guardar proporción con la conducta y los fines formativos.",
+    "evidencia": "Selecciona una valoración proporcional antes de imponer una medida extrema.",
+    "proceso_cognitivo": "Juicio disciplinario-pedagógico aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media-Alta",
+    "respuesta_correcta": "B",
+    "distractores": {
+      "A": "Niega la proporcionalidad y la gradualidad.",
+      "C": "Promueve arbitrariedad.",
+      "D": "Desconoce las garantías mínimas del estudiante."
     },
-    "ficha_tecnica": {
-        "componente": "Proporcionalidad de la medida correctiva",
-        "competencia": "Valoración de sanciones pedagógicas proporcionales",
-        "claim_evaluado": "El evaluado comprende que la potestad disciplinaria escolar no es ilimitada y debe guardar proporción con la conducta y los fines formativos.",
-        "evidencia": "Selecciona una valoración proporcional antes de imponer una medida extrema.",
-        "proceso_cognitivo": "Juicio disciplinario-pedagógico aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media-Alta",
-        "respuesta_correcta": "B",
-        "distractores": {
-            "A": "Niega la proporcionalidad y la gradualidad.",
-            "C": "Promueve arbitrariedad.",
-            "D": "Desconoce las garantías mínimas del estudiante."
-        },
-        "fuente_autorizada": [
-            "Constitución Política de Colombia artículo 29",
-            "Ley 115 de 1994",
-            "Ley 1098 de 2006",
-            "Manual de Convivencia",
-            "Debido proceso escolar"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque una medida correctiva debe estar motivada y ser proporcional a las circunstancias del caso.",
-        "opcion_A": "Es incorrecta porque no toda falta exige sanción máxima.",
-        "opcion_C": "Es incorrecta porque las decisiones deben motivarse.",
-        "opcion_D": "Es incorrecta porque la indisciplina no elimina el debido proceso."
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado con revisión jurídica recomendada.",
-        "argumento": "El ítem permite respuestas disciplinarias, pero evita medidas automáticas, desproporcionadas o excluyentes."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Validar con el Manual de Convivencia y rutas institucionales vigentes.",
-        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 5 preguntas sobre debido proceso, congruencia y medidas correctivas extremas."
+    "fuente_autorizada": [
+      "Constitución Política de Colombia artículo 29",
+      "Ley 115 de 1994",
+      "Ley 1098 de 2006",
+      "Manual de Convivencia",
+      "Debido proceso escolar"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "opcion_A": "Es incorrecta porque no toda falta exige sanción máxima.",
+    "opcion_C": "Es incorrecta porque las decisiones deben motivarse.",
+    "opcion_D": "Es incorrecta porque la indisciplina no elimina el debido proceso.",
+    "distractores": {
+      "A": "Es incorrecta porque no toda falta exige sanción máxima.",
+      "C": "Es incorrecta porque las decisiones deben motivarse.",
+      "D": "Es incorrecta porque la indisciplina no elimina el debido proceso."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado con revisión jurídica recomendada.",
+    "argumento": "El ítem permite respuestas disciplinarias, pero evita medidas automáticas, desproporcionadas o excluyentes."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Validar con el Manual de Convivencia y rutas institucionales vigentes.",
+    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 5 preguntas sobre debido proceso, congruencia y medidas correctivas extremas."
+  }
 }

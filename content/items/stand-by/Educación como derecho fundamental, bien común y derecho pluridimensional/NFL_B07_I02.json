@@ -1,98 +1,103 @@
 {
-    "id_item": "NFL_B07_I02",
-    "archivo_sugerido": "NFL_B07_I02_derecho_pluridimensional_educacion.json",
-    "bloque": {
-        "codigo_bloque": "NFL_B07",
-        "nombre": "Educación como derecho fundamental, bien común y derecho pluridimensional",
-        "estado_en_lista": "Bloque 7 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 2 de 4"
+  "id_item": "NFL_B07_I02",
+  "archivo_sugerido": "NFL_B07_I02_derecho_pluridimensional_educacion.json",
+  "bloque": {
+    "codigo_bloque": "NFL_B07",
+    "nombre": "Educación como derecho fundamental, bien común y derecho pluridimensional",
+    "estado_en_lista": "Bloque 7 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 2 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante comprende el carácter pluridimensional del derecho a la educación.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, gestión educativa, políticas públicas o derechos educativos.",
+    "blueprint": {
+      "problematica_principal": "Comprensión limitada del derecho a la educación como simple asistencia a clases o entrega de contenidos.",
+      "fuente_autorizada": [
+        "Constitución Política de Colombia artículo 67",
+        "Ley 115 de 1994",
+        "Jurisprudencia constitucional sobre educación",
+        "Derecho a la educación",
+        "Formación integral"
+      ],
+      "componente_modulo": "Derecho pluridimensional a la educación",
+      "competencia": "Comprensión amplia del derecho educativo",
+      "afirmacion": "El derecho a la educación comprende dimensiones de disponibilidad, acceso, permanencia, calidad, adaptabilidad, aceptabilidad, inclusión y formación integral.",
+      "evidencia_observable": "Reconoce que la garantía del derecho implica condiciones materiales, pedagógicas, culturales y de protección.",
+      "tipo_de_evidencia": "Comprensión conceptual aplicada",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante comprende el carácter pluridimensional del derecho a la educación.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, gestión educativa, políticas públicas o derechos educativos.",
-        "blueprint": {
-            "problematica_principal": "Comprensión limitada del derecho a la educación como simple asistencia a clases o entrega de contenidos.",
-            "fuente_autorizada": [
-                "Constitución Política de Colombia artículo 67",
-                "Ley 115 de 1994",
-                "Jurisprudencia constitucional sobre educación",
-                "Derecho a la educación",
-                "Formación integral"
-            ],
-            "componente_modulo": "Derecho pluridimensional a la educación",
-            "competencia": "Comprensión amplia del derecho educativo",
-            "afirmacion": "El derecho a la educación comprende dimensiones de disponibilidad, acceso, permanencia, calidad, adaptabilidad, aceptabilidad, inclusión y formación integral.",
-            "evidencia_observable": "Reconoce que la garantía del derecho implica condiciones materiales, pedagógicas, culturales y de protección.",
-            "tipo_de_evidencia": "Comprensión conceptual aplicada",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que el derecho a la educación involucra condiciones múltiples que hacen posible aprender, permanecer y desarrollarse integralmente.",
-        "evidencia_observable": "Selecciona una explicación que supera la visión reducida de asistencia o cupo.",
-        "tarea_cognitiva": "Diferenciar una garantía formal de una garantía integral del derecho.",
-        "tipo_de_pregunta": "Pregunta conceptual normativa",
-        "dificultad_esperada": "Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Usar tecnicismos sin claridad",
-                "revision": "La clave traduce las dimensiones en condiciones verificables."
-            },
-            {
-                "riesgo": "Confundir derecho con resultado académico perfecto",
-                "revision": "La opción correcta se centra en condiciones de garantía, no en aprobar automáticamente."
-            },
-            {
-                "riesgo": "Ignorar diversidad de contextos escolares",
-                "revision": "La clave incluye adaptabilidad e inclusión."
-            }
-        ]
+    "claim": "El evaluado comprende que el derecho a la educación involucra condiciones múltiples que hacen posible aprender, permanecer y desarrollarse integralmente.",
+    "evidencia_observable": "Selecciona una explicación que supera la visión reducida de asistencia o cupo.",
+    "tarea_cognitiva": "Diferenciar una garantía formal de una garantía integral del derecho.",
+    "tipo_de_pregunta": "Pregunta conceptual normativa",
+    "dificultad_esperada": "Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Usar tecnicismos sin claridad",
+        "revision": "La clave traduce las dimensiones en condiciones verificables."
+      },
+      {
+        "riesgo": "Confundir derecho con resultado académico perfecto",
+        "revision": "La opción correcta se centra en condiciones de garantía, no en aprobar automáticamente."
+      },
+      {
+        "riesgo": "Ignorar diversidad de contextos escolares",
+        "revision": "La clave incluye adaptabilidad e inclusión."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Una secretaría de educación afirma que el derecho a la educación se cumple solo porque el estudiante aparece matriculado. Sin embargo, el estudiante no cuenta con apoyos para permanecer, aprender, participar ni recibir una educación pertinente a su contexto.\n\n¿Por qué se dice que la educación es un derecho pluridimensional?",
+    "opciones": {
+      "A": "Porque no se agota en la matrícula: exige acceso real, permanencia, calidad, inclusión, adaptabilidad, condiciones pedagógicas y formación integral.",
+      "B": "Porque basta con estar inscrito, aunque no existan condiciones para aprender.",
+      "C": "Porque el derecho a la educación solo consiste en recibir calificaciones al final del periodo.",
+      "D": "Porque la educación no tiene relación con dignidad, cultura ni proyecto de vida."
     },
-    "item": {
-        "enunciado": "Una secretaría de educación afirma que el derecho a la educación se cumple solo porque el estudiante aparece matriculado. Sin embargo, el estudiante no cuenta con apoyos para permanecer, aprender, participar ni recibir una educación pertinente a su contexto.\n\n¿Por qué se dice que la educación es un derecho pluridimensional?",
-        "opciones": {
-            "A": "Porque no se agota en la matrícula: exige acceso real, permanencia, calidad, inclusión, adaptabilidad, condiciones pedagógicas y formación integral.",
-            "B": "Porque basta con estar inscrito, aunque no existan condiciones para aprender.",
-            "C": "Porque el derecho a la educación solo consiste en recibir calificaciones al final del periodo.",
-            "D": "Porque la educación no tiene relación con dignidad, cultura ni proyecto de vida."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Derecho pluridimensional a la educación",
+    "competencia": "Comprensión amplia del derecho educativo",
+    "claim_evaluado": "El evaluado comprende que el derecho a la educación involucra condiciones múltiples que hacen posible aprender, permanecer y desarrollarse integralmente.",
+    "evidencia": "Selecciona una explicación que supera la visión reducida de asistencia o cupo.",
+    "proceso_cognitivo": "Comprensión conceptual aplicada",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Alta",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Reduce el derecho a una garantía formal de matrícula.",
+      "C": "Confunde educación con evaluación final.",
+      "D": "Niega dimensiones humanas y culturales del derecho."
     },
-    "ficha_tecnica": {
-        "componente": "Derecho pluridimensional a la educación",
-        "competencia": "Comprensión amplia del derecho educativo",
-        "claim_evaluado": "El evaluado comprende que el derecho a la educación involucra condiciones múltiples que hacen posible aprender, permanecer y desarrollarse integralmente.",
-        "evidencia": "Selecciona una explicación que supera la visión reducida de asistencia o cupo.",
-        "proceso_cognitivo": "Comprensión conceptual aplicada",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Alta",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Reduce el derecho a una garantía formal de matrícula.",
-            "C": "Confunde educación con evaluación final.",
-            "D": "Niega dimensiones humanas y culturales del derecho."
-        },
-        "fuente_autorizada": [
-            "Constitución Política de Colombia artículo 67",
-            "Ley 115 de 1994",
-            "Derecho a la educación",
-            "Formación integral"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque el derecho a la educación incluye condiciones de acceso, permanencia, calidad, inclusión, adaptabilidad y formación integral.",
-        "opcion_B": "Es incorrecta porque la matrícula sola no garantiza el derecho.",
-        "opcion_C": "Es incorrecta porque calificar no equivale a garantizar educación.",
-        "opcion_D": "Es incorrecta porque la educación se relaciona con dignidad, cultura y proyecto de vida."
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado con revisión conceptual recomendada.",
-        "argumento": "El ítem reconoce que estudiantes en contextos diversos requieren condiciones reales para ejercer el derecho."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Validar el vocabulario 'pluridimensional' según el material de estudio de la prueba.",
-        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre educación como derecho fundamental, bien común y derecho pluridimensional."
+    "fuente_autorizada": [
+      "Constitución Política de Colombia artículo 67",
+      "Ley 115 de 1994",
+      "Derecho a la educación",
+      "Formación integral"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque la matrícula sola no garantiza el derecho.",
+    "opcion_C": "Es incorrecta porque calificar no equivale a garantizar educación.",
+    "opcion_D": "Es incorrecta porque la educación se relaciona con dignidad, cultura y proyecto de vida.",
+    "distractores": {
+      "B": "Es incorrecta porque la matrícula sola no garantiza el derecho.",
+      "C": "Es incorrecta porque calificar no equivale a garantizar educación.",
+      "D": "Es incorrecta porque la educación se relaciona con dignidad, cultura y proyecto de vida."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado con revisión conceptual recomendada.",
+    "argumento": "El ítem reconoce que estudiantes en contextos diversos requieren condiciones reales para ejercer el derecho."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Validar el vocabulario 'pluridimensional' según el material de estudio de la prueba.",
+    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre educación como derecho fundamental, bien común y derecho pluridimensional."
+  }
 }

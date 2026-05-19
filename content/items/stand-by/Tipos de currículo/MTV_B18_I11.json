@@ -1,36 +1,36 @@
 {
-    "id_item": "MTV_B18_I11",
-    "archivo_sugerido": "MTV_B18_I11_curriculo_nulo_por_exceso_temarios.json",
-    "proposito_de_uso": "Evaluar si el aspirante analiza el exceso de temarios como causa de currículo nulo.",
-    "blueprint": {
-        "componente_modulo": "Currículo nulo",
-        "competencia": "Análisis crítico de cobertura curricular",
-        "afirmacion": "Un exceso de temas puede producir currículo nulo si se privilegia cobertura superficial y se sacrifica comprensión profunda.",
-        "evidencia_observable": "Reconoce el riesgo de planear demasiado y enseñar poco significativamente.",
-        "tipo_de_evidencia": "Juicio curricular crítico",
-        "dificultad_esperada": "Alta",
-        "clave": "D"
+  "id_item": "MTV_B18_I11",
+  "archivo_sugerido": "MTV_B18_I11_curriculo_nulo_por_exceso_temarios.json",
+  "proposito_de_uso": "Evaluar si el aspirante analiza el exceso de temarios como causa de currículo nulo.",
+  "blueprint": {
+    "componente_modulo": "Currículo nulo",
+    "competencia": "Análisis crítico de cobertura curricular",
+    "afirmacion": "Un exceso de temas puede producir currículo nulo si se privilegia cobertura superficial y se sacrifica comprensión profunda.",
+    "evidencia_observable": "Reconoce el riesgo de planear demasiado y enseñar poco significativamente.",
+    "tipo_de_evidencia": "Juicio curricular crítico",
+    "dificultad_esperada": "Alta",
+    "clave": "D"
+  },
+  "item": {
+    "enunciado": "Un docente intenta cubrir todo el libro de texto, pero por avanzar rápido no logra que los estudiantes comprendan los conceptos centrales. Muchos temas quedan solo nombrados o copiados.\n\n¿Qué riesgo curricular aparece?",
+    "opciones": {
+      "A": "Mayor aprendizaje significativo garantizado.",
+      "B": "Currículo operacional profundo.",
+      "C": "Currículo oculto de participación.",
+      "D": "Currículo nulo o superficialidad curricular por exceso de temarios."
     },
-    "item": {
-        "enunciado": "Un docente intenta cubrir todo el libro de texto, pero por avanzar rápido no logra que los estudiantes comprendan los conceptos centrales. Muchos temas quedan solo nombrados o copiados.\n\n¿Qué riesgo curricular aparece?",
-        "opciones": {
-            "A": "Mayor aprendizaje significativo garantizado.",
-            "B": "Currículo operacional profundo.",
-            "C": "Currículo oculto de participación.",
-            "D": "Currículo nulo o superficialidad curricular por exceso de temarios."
-        },
-        "respuesta_correcta": "D"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque la cobertura superficial puede dejar aprendizajes sin enseñanza real.",
-        "distractores": {
-            "A": "Avanzar rápido no garantiza comprensión.",
-            "B": "El caso no muestra profundidad operacional.",
-            "C": "No se trata de participación implícita."
-        }
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem relevante para planeación y priorización curricular."
+    "respuesta_correcta": "D"
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "distractores": {
+      "A": "Avanzar rápido no garantiza comprensión.",
+      "B": "El caso no muestra profundidad operacional.",
+      "C": "No se trata de participación implícita."
     }
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem relevante para planeación y priorización curricular."
+  }
 }

@@ -1,98 +1,103 @@
 {
-    "id_item": "NFL_B08_I02",
-    "archivo_sugerido": "NFL_B08_I02_discriminacion_positiva_accion_afirmativa_educacion.json",
-    "bloque": {
-        "codigo_bloque": "NFL_B08",
-        "nombre": "Igualdad material, discriminación positiva y debilidad manifiesta",
-        "estado_en_lista": "Bloque 8 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 2 de 4"
+  "id_item": "NFL_B08_I02",
+  "archivo_sugerido": "NFL_B08_I02_discriminacion_positiva_accion_afirmativa_educacion.json",
+  "bloque": {
+    "codigo_bloque": "NFL_B08",
+    "nombre": "Igualdad material, discriminación positiva y debilidad manifiesta",
+    "estado_en_lista": "Bloque 8 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 2 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante entiende la discriminación positiva o acción afirmativa como medida legítima para remover barreras y garantizar igualdad efectiva.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión, orientación escolar, gestión educativa, convivencia o derechos humanos.",
+    "blueprint": {
+      "problematica_principal": "Interpretar toda medida diferenciada como favoritismo, sin comprender la función de las acciones afirmativas.",
+      "fuente_autorizada": [
+        "Constitución Política de Colombia artículo 13",
+        "Ley 115 de 1994",
+        "Educación inclusiva",
+        "Acciones afirmativas",
+        "Igualdad material"
+      ],
+      "componente_modulo": "Discriminación positiva",
+      "competencia": "Comprensión de acciones afirmativas educativas",
+      "afirmacion": "La discriminación positiva busca corregir desigualdades reales mediante medidas razonables, proporcionales y orientadas a garantizar derechos.",
+      "evidencia_observable": "Distingue acción afirmativa de privilegio arbitrario o segregación.",
+      "tipo_de_evidencia": "Comprensión conceptual aplicada",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "D"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante entiende la discriminación positiva o acción afirmativa como medida legítima para remover barreras y garantizar igualdad efectiva.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión, orientación escolar, gestión educativa, convivencia o derechos humanos.",
-        "blueprint": {
-            "problematica_principal": "Interpretar toda medida diferenciada como favoritismo, sin comprender la función de las acciones afirmativas.",
-            "fuente_autorizada": [
-                "Constitución Política de Colombia artículo 13",
-                "Ley 115 de 1994",
-                "Educación inclusiva",
-                "Acciones afirmativas",
-                "Igualdad material"
-            ],
-            "componente_modulo": "Discriminación positiva",
-            "competencia": "Comprensión de acciones afirmativas educativas",
-            "afirmacion": "La discriminación positiva busca corregir desigualdades reales mediante medidas razonables, proporcionales y orientadas a garantizar derechos.",
-            "evidencia_observable": "Distingue acción afirmativa de privilegio arbitrario o segregación.",
-            "tipo_de_evidencia": "Comprensión conceptual aplicada",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "D"
-        },
-        "claim": "El evaluado comprende que una medida diferenciada puede ser justa cuando responde a una desigualdad real y busca igualdad efectiva.",
-        "evidencia_observable": "Selecciona una definición correcta de discriminación positiva en educación.",
-        "tarea_cognitiva": "Diferenciar acción afirmativa, privilegio y discriminación negativa.",
-        "tipo_de_pregunta": "Pregunta conceptual normativa",
-        "dificultad_esperada": "Media-Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Usar la expresión discriminación positiva sin explicación",
-                "revision": "El ítem la traduce como acción afirmativa o medida de igualdad material."
-            },
-            {
-                "riesgo": "Confundir apoyo con favoritismo",
-                "revision": "La clave exige razonabilidad, proporcionalidad y finalidad de derechos."
-            },
-            {
-                "riesgo": "Generar segregación",
-                "revision": "La opción correcta busca acceso y participación, no separación."
-            }
-        ]
+    "claim": "El evaluado comprende que una medida diferenciada puede ser justa cuando responde a una desigualdad real y busca igualdad efectiva.",
+    "evidencia_observable": "Selecciona una definición correcta de discriminación positiva en educación.",
+    "tarea_cognitiva": "Diferenciar acción afirmativa, privilegio y discriminación negativa.",
+    "tipo_de_pregunta": "Pregunta conceptual normativa",
+    "dificultad_esperada": "Media-Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Usar la expresión discriminación positiva sin explicación",
+        "revision": "El ítem la traduce como acción afirmativa o medida de igualdad material."
+      },
+      {
+        "riesgo": "Confundir apoyo con favoritismo",
+        "revision": "La clave exige razonabilidad, proporcionalidad y finalidad de derechos."
+      },
+      {
+        "riesgo": "Generar segregación",
+        "revision": "La opción correcta busca acceso y participación, no separación."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un estudiante requiere apoyos adicionales por estar en condición de vulnerabilidad. Algunos compañeros dicen que brindarle esos apoyos es injusto porque todos deberían recibir exactamente lo mismo. El docente explica el concepto de discriminación positiva o acción afirmativa.\n\n¿Cuál definición es correcta?",
+    "opciones": {
+      "A": "Es dar privilegios arbitrarios sin relación con ninguna barrera real.",
+      "B": "Es excluir al estudiante para que no afecte el ritmo del grupo.",
+      "C": "Es eliminar toda responsabilidad académica del estudiante.",
+      "D": "Es adoptar medidas razonables y proporcionales para corregir desigualdades reales y garantizar el acceso efectivo a derechos."
     },
-    "item": {
-        "enunciado": "Un estudiante requiere apoyos adicionales por estar en condición de vulnerabilidad. Algunos compañeros dicen que brindarle esos apoyos es injusto porque todos deberían recibir exactamente lo mismo. El docente explica el concepto de discriminación positiva o acción afirmativa.\n\n¿Cuál definición es correcta?",
-        "opciones": {
-            "A": "Es dar privilegios arbitrarios sin relación con ninguna barrera real.",
-            "B": "Es excluir al estudiante para que no afecte el ritmo del grupo.",
-            "C": "Es eliminar toda responsabilidad académica del estudiante.",
-            "D": "Es adoptar medidas razonables y proporcionales para corregir desigualdades reales y garantizar el acceso efectivo a derechos."
-        },
-        "respuesta_correcta": "D"
+    "respuesta_correcta": "D"
+  },
+  "ficha_tecnica": {
+    "componente": "Discriminación positiva",
+    "competencia": "Comprensión de acciones afirmativas educativas",
+    "claim_evaluado": "El evaluado comprende que una medida diferenciada puede ser justa cuando responde a una desigualdad real y busca igualdad efectiva.",
+    "evidencia": "Selecciona una definición correcta de discriminación positiva en educación.",
+    "proceso_cognitivo": "Comprensión conceptual aplicada",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media-Alta",
+    "respuesta_correcta": "D",
+    "distractores": {
+      "A": "Confunde acción afirmativa con favoritismo arbitrario.",
+      "B": "Transforma la medida en segregación.",
+      "C": "Confunde apoyo con ausencia total de responsabilidad."
     },
-    "ficha_tecnica": {
-        "componente": "Discriminación positiva",
-        "competencia": "Comprensión de acciones afirmativas educativas",
-        "claim_evaluado": "El evaluado comprende que una medida diferenciada puede ser justa cuando responde a una desigualdad real y busca igualdad efectiva.",
-        "evidencia": "Selecciona una definición correcta de discriminación positiva en educación.",
-        "proceso_cognitivo": "Comprensión conceptual aplicada",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media-Alta",
-        "respuesta_correcta": "D",
-        "distractores": {
-            "A": "Confunde acción afirmativa con favoritismo arbitrario.",
-            "B": "Transforma la medida en segregación.",
-            "C": "Confunde apoyo con ausencia total de responsabilidad."
-        },
-        "fuente_autorizada": [
-            "Constitución Política de Colombia artículo 13",
-            "Ley 115 de 1994",
-            "Educación inclusiva",
-            "Acciones afirmativas"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque la acción afirmativa busca igualdad real mediante medidas razonables y proporcionales.",
-        "opcion_A": "Es incorrecta porque la medida debe responder a una barrera o desigualdad real.",
-        "opcion_B": "Es incorrecta porque la finalidad es inclusión, no exclusión.",
-        "opcion_C": "Es incorrecta porque los apoyos no anulan el proceso formativo."
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado con revisión conceptual recomendada.",
-        "argumento": "El ítem explica el término para evitar que se lea como discriminación negativa o privilegio injustificado."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Puede reemplazarse 'discriminación positiva' por 'acción afirmativa' si se quiere un lenguaje más técnico y menos ambiguo.",
-        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre igualdad material, discriminación positiva y debilidad manifiesta."
+    "fuente_autorizada": [
+      "Constitución Política de Colombia artículo 13",
+      "Ley 115 de 1994",
+      "Educación inclusiva",
+      "Acciones afirmativas"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "opcion_A": "Es incorrecta porque la medida debe responder a una barrera o desigualdad real.",
+    "opcion_B": "Es incorrecta porque la finalidad es inclusión, no exclusión.",
+    "opcion_C": "Es incorrecta porque los apoyos no anulan el proceso formativo.",
+    "distractores": {
+      "A": "Es incorrecta porque la medida debe responder a una barrera o desigualdad real.",
+      "B": "Es incorrecta porque la finalidad es inclusión, no exclusión.",
+      "C": "Es incorrecta porque los apoyos no anulan el proceso formativo."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado con revisión conceptual recomendada.",
+    "argumento": "El ítem explica el término para evitar que se lea como discriminación negativa o privilegio injustificado."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Puede reemplazarse 'discriminación positiva' por 'acción afirmativa' si se quiere un lenguaje más técnico y menos ambiguo.",
+    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre igualdad material, discriminación positiva y debilidad manifiesta."
+  }
 }

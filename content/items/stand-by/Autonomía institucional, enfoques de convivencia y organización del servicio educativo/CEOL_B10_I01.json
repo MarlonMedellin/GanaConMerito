@@ -1,97 +1,102 @@
 {
-    "id_item": "CEOL_B10_I01",
-    "archivo_sugerido": "CEOL_B10_I01_enfoques_transversales_convivencia.json",
-    "bloque": {
-        "codigo_bloque": "CEOL_B10",
-        "nombre": "Autonomía institucional, enfoques de convivencia y organización del servicio educativo",
-        "estado_en_lista": "Bloque 10 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 1 de 5"
+  "id_item": "CEOL_B10_I01",
+  "archivo_sugerido": "CEOL_B10_I01_enfoques_transversales_convivencia.json",
+  "bloque": {
+    "codigo_bloque": "CEOL_B10",
+    "nombre": "Autonomía institucional, enfoques de convivencia y organización del servicio educativo",
+    "estado_en_lista": "Bloque 10 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 1 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce los enfoques transversales desde los cuales la escuela debe tratar los conflictos de convivencia en el marco de la Ley 1620.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación, rectoría o gestión de convivencia.",
+    "blueprint": {
+      "problematica_principal": "Tratamiento de conflictos escolares sin enfoque de derechos, género ni diferencial.",
+      "fuente_autorizada": [
+        "Ley 1620 de 2013",
+        "Decreto 1965 de 2013",
+        "Manual de convivencia institucional",
+        "Ruta de Atención Integral para la Convivencia Escolar"
+      ],
+      "componente_modulo": "Enfoques Transversales de Convivencia",
+      "competencia": "Aplicación de enfoques de política pública en convivencia escolar",
+      "afirmacion": "Los conflictos escolares deben analizarse con enfoque de derechos, enfoque de género y enfoque diferencial.",
+      "evidencia_observable": "Identifica los tres enfoques que orientan el tratamiento institucional de situaciones de convivencia.",
+      "tipo_de_evidencia": "Reconocimiento normativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "B"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce los enfoques transversales desde los cuales la escuela debe tratar los conflictos de convivencia en el marco de la Ley 1620.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación, rectoría o gestión de convivencia.",
-        "blueprint": {
-            "problematica_principal": "Tratamiento de conflictos escolares sin enfoque de derechos, género ni diferencial.",
-            "fuente_autorizada": [
-                "Ley 1620 de 2013",
-                "Decreto 1965 de 2013",
-                "Manual de convivencia institucional",
-                "Ruta de Atención Integral para la Convivencia Escolar"
-            ],
-            "componente_modulo": "Enfoques Transversales de Convivencia",
-            "competencia": "Aplicación de enfoques de política pública en convivencia escolar",
-            "afirmacion": "Los conflictos escolares deben analizarse con enfoque de derechos, enfoque de género y enfoque diferencial.",
-            "evidencia_observable": "Identifica los tres enfoques que orientan el tratamiento institucional de situaciones de convivencia.",
-            "tipo_de_evidencia": "Reconocimiento normativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "B"
-        },
-        "claim": "El evaluado comprende que la convivencia escolar no puede gestionarse solo desde la sanción, sino desde enfoques que reconozcan derechos, diferencias, condiciones de vulnerabilidad y relaciones de género.",
-        "evidencia_observable": "Selecciona la opción que integra enfoque de derechos, enfoque de género y enfoque diferencial.",
-        "tarea_cognitiva": "Reconocer los enfoques transversales que orientan la gestión de conflictos escolares.",
-        "tipo_de_pregunta": "Pregunta conceptual normativa",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Reducir el conflicto a disciplina individual",
-                "revision": "La clave incorpora derechos, género y diferencias contextuales."
-            },
-            {
-                "riesgo": "Uso técnico de enfoques",
-                "revision": "El enunciado los presenta como criterios prácticos para tratar conflictos escolares."
-            },
-            {
-                "riesgo": "Confundir enfoque diferencial con trato desigual arbitrario",
-                "revision": "La clave lo entiende como reconocimiento de condiciones y necesidades particulares para garantizar derechos."
-            }
-        ]
+    "claim": "El evaluado comprende que la convivencia escolar no puede gestionarse solo desde la sanción, sino desde enfoques que reconozcan derechos, diferencias, condiciones de vulnerabilidad y relaciones de género.",
+    "evidencia_observable": "Selecciona la opción que integra enfoque de derechos, enfoque de género y enfoque diferencial.",
+    "tarea_cognitiva": "Reconocer los enfoques transversales que orientan la gestión de conflictos escolares.",
+    "tipo_de_pregunta": "Pregunta conceptual normativa",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Reducir el conflicto a disciplina individual",
+        "revision": "La clave incorpora derechos, género y diferencias contextuales."
+      },
+      {
+        "riesgo": "Uso técnico de enfoques",
+        "revision": "El enunciado los presenta como criterios prácticos para tratar conflictos escolares."
+      },
+      {
+        "riesgo": "Confundir enfoque diferencial con trato desigual arbitrario",
+        "revision": "La clave lo entiende como reconocimiento de condiciones y necesidades particulares para garantizar derechos."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Una institución revisa sus protocolos de convivencia y advierte que algunas situaciones se han tratado solo como indisciplina, sin analizar derechos vulnerados, relaciones de poder, condiciones de género, discapacidad, edad, contexto familiar o pertenencia cultural.\n\n¿Cuáles son los tres enfoques transversales que deben orientar el tratamiento de los conflictos en el marco de la convivencia escolar?",
+    "opciones": {
+      "A": "Enfoque punitivo, enfoque sancionatorio y enfoque administrativo.",
+      "B": "Enfoque de derechos, enfoque de género y enfoque diferencial.",
+      "C": "Enfoque memorístico, enfoque disciplinario y enfoque calificador.",
+      "D": "Enfoque financiero, enfoque logístico y enfoque documental."
     },
-    "item": {
-        "enunciado": "Una institución revisa sus protocolos de convivencia y advierte que algunas situaciones se han tratado solo como indisciplina, sin analizar derechos vulnerados, relaciones de poder, condiciones de género, discapacidad, edad, contexto familiar o pertenencia cultural.\n\n¿Cuáles son los tres enfoques transversales que deben orientar el tratamiento de los conflictos en el marco de la convivencia escolar?",
-        "opciones": {
-            "A": "Enfoque punitivo, enfoque sancionatorio y enfoque administrativo.",
-            "B": "Enfoque de derechos, enfoque de género y enfoque diferencial.",
-            "C": "Enfoque memorístico, enfoque disciplinario y enfoque calificador.",
-            "D": "Enfoque financiero, enfoque logístico y enfoque documental."
-        },
-        "respuesta_correcta": "B"
+    "respuesta_correcta": "B"
+  },
+  "ficha_tecnica": {
+    "componente": "Enfoques Transversales de Convivencia",
+    "competencia": "Aplicación de enfoques de política pública en convivencia escolar",
+    "claim_evaluado": "El evaluado comprende que la convivencia escolar no puede gestionarse solo desde la sanción, sino desde enfoques que reconozcan derechos, diferencias, condiciones de vulnerabilidad y relaciones de género.",
+    "evidencia": "Selecciona la opción que integra enfoque de derechos, enfoque de género y enfoque diferencial.",
+    "proceso_cognitivo": "Reconocimiento normativo aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "B",
+    "distractores": {
+      "A": "Reduce la convivencia a castigo y trámite disciplinario.",
+      "C": "Confunde convivencia con prácticas académicas o disciplinarias tradicionales.",
+      "D": "Introduce enfoques administrativos ajenos al tratamiento pedagógico de conflictos."
     },
-    "ficha_tecnica": {
-        "componente": "Enfoques Transversales de Convivencia",
-        "competencia": "Aplicación de enfoques de política pública en convivencia escolar",
-        "claim_evaluado": "El evaluado comprende que la convivencia escolar no puede gestionarse solo desde la sanción, sino desde enfoques que reconozcan derechos, diferencias, condiciones de vulnerabilidad y relaciones de género.",
-        "evidencia": "Selecciona la opción que integra enfoque de derechos, enfoque de género y enfoque diferencial.",
-        "proceso_cognitivo": "Reconocimiento normativo aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "B",
-        "distractores": {
-            "A": "Reduce la convivencia a castigo y trámite disciplinario.",
-            "C": "Confunde convivencia con prácticas académicas o disciplinarias tradicionales.",
-            "D": "Introduce enfoques administrativos ajenos al tratamiento pedagógico de conflictos."
-        },
-        "fuente_autorizada": [
-            "Ley 1620 de 2013",
-            "Decreto 1965 de 2013",
-            "Manual de convivencia institucional",
-            "Ruta de Atención Integral para la Convivencia Escolar"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque el tratamiento de conflictos debe considerar derechos, género y diferencias o condiciones particulares que inciden en la protección y participación de los estudiantes.",
-        "opcion_A": "Es incorrecta porque reproduce un enfoque exclusivamente punitivo.",
-        "opcion_C": "Es incorrecta porque no corresponde a enfoques transversales de convivencia.",
-        "opcion_D": "Es incorrecta porque alude a gestión administrativa, no a política de convivencia."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita tratar a todos los estudiantes como si estuvieran en condiciones idénticas y promueve una respuesta institucional sensible a derechos y diferencias."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 5 preguntas sobre autonomía institucional, enfoques de convivencia y organización del servicio educativo."
+    "fuente_autorizada": [
+      "Ley 1620 de 2013",
+      "Decreto 1965 de 2013",
+      "Manual de convivencia institucional",
+      "Ruta de Atención Integral para la Convivencia Escolar"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "opcion_A": "Es incorrecta porque reproduce un enfoque exclusivamente punitivo.",
+    "opcion_C": "Es incorrecta porque no corresponde a enfoques transversales de convivencia.",
+    "opcion_D": "Es incorrecta porque alude a gestión administrativa, no a política de convivencia.",
+    "distractores": {
+      "A": "Es incorrecta porque reproduce un enfoque exclusivamente punitivo.",
+      "C": "Es incorrecta porque no corresponde a enfoques transversales de convivencia.",
+      "D": "Es incorrecta porque alude a gestión administrativa, no a política de convivencia."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita tratar a todos los estudiantes como si estuvieran en condiciones idénticas y promueve una respuesta institucional sensible a derechos y diferencias."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 5 preguntas sobre autonomía institucional, enfoques de convivencia y organización del servicio educativo."
+  }
 }

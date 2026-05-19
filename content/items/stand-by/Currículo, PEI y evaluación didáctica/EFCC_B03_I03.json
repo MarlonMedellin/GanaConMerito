@@ -1,103 +1,108 @@
 {
-    "id_item": "EFCC_B03_I03",
-    "archivo_sugerido": "EFCC_B03_I03_evaluacion_docente_estandarizada_autonomia_curriculo.json",
-    "bloque": {
-        "codigo_bloque": "EFCC_B03",
-        "nombre": "Currículo, PEI y evaluación didáctica",
-        "estado_en_lista": "Bloque 3 de 5",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 3 de 3"
+  "id_item": "EFCC_B03_I03",
+  "archivo_sugerido": "EFCC_B03_I03_evaluacion_docente_estandarizada_autonomia_curriculo.json",
+  "bloque": {
+    "codigo_bloque": "EFCC_B03",
+    "nombre": "Currículo, PEI y evaluación didáctica",
+    "estado_en_lista": "Bloque 3 de 5",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 3 de 3"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce los límites de evaluar el desempeño docente exclusivamente con base en resultados de pruebas estandarizadas, sin considerar contexto, currículo, PEI, prácticas pedagógicas y procesos formativos.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
+    "blueprint": {
+      "problematica_principal": "Reducción de la evaluación docente a resultados de pruebas estandarizadas.",
+      "fuente_autorizada": [
+        "Proyecto Educativo Institucional",
+        "Sistema Institucional de Evaluación",
+        "Evaluación docente",
+        "Autonomía escolar",
+        "Lineamientos curriculares del Ministerio de Educación Nacional"
+      ],
+      "componente_modulo": "Currículo, PEI y Evaluación Didáctica",
+      "competencia": "Análisis crítico de la evaluación docente",
+      "afirmacion": "La evaluación docente debe considerar múltiples evidencias y no reducirse exclusivamente a resultados de pruebas estandarizadas.",
+      "evidencia_observable": "Reconoce que una evaluación basada solo en pruebas externas desconoce autonomía escolar, contexto, currículo y procesos pedagógicos.",
+      "tipo_de_evidencia": "Juicio institucional y evaluativo",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "C"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce los límites de evaluar el desempeño docente exclusivamente con base en resultados de pruebas estandarizadas, sin considerar contexto, currículo, PEI, prácticas pedagógicas y procesos formativos.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-        "blueprint": {
-            "problematica_principal": "Reducción de la evaluación docente a resultados de pruebas estandarizadas.",
-            "fuente_autorizada": [
-                "Proyecto Educativo Institucional",
-                "Sistema Institucional de Evaluación",
-                "Evaluación docente",
-                "Autonomía escolar",
-                "Lineamientos curriculares del Ministerio de Educación Nacional"
-            ],
-            "componente_modulo": "Currículo, PEI y Evaluación Didáctica",
-            "competencia": "Análisis crítico de la evaluación docente",
-            "afirmacion": "La evaluación docente debe considerar múltiples evidencias y no reducirse exclusivamente a resultados de pruebas estandarizadas.",
-            "evidencia_observable": "Reconoce que una evaluación basada solo en pruebas externas desconoce autonomía escolar, contexto, currículo y procesos pedagógicos.",
-            "tipo_de_evidencia": "Juicio institucional y evaluativo",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "C"
-        },
-        "claim": "El evaluado comprende que los resultados de pruebas estandarizadas pueden aportar información, pero no deben constituir la única evidencia para valorar el desempeño docente, porque la enseñanza incluye procesos contextuales, curriculares, formativos y pedagógicos más amplios.",
-        "evidencia_observable": "Selecciona una explicación que identifica por qué la evaluación docente exclusivamente estandarizada limita la autonomía escolar y empobrece la comprensión del currículo.",
-        "tarea_cognitiva": "Valorar críticamente una política o práctica de evaluación docente basada en una única fuente de evidencia.",
-        "tipo_de_pregunta": "Caso situacional de juicio evaluativo institucional",
-        "dificultad_esperada": "Media-Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Rechazo absoluto de las pruebas estandarizadas",
-                "revision": "La clave no niega el valor informativo de las pruebas; cuestiona su uso exclusivo."
-            },
-            {
-                "riesgo": "Sesgo por contexto socioeconómico",
-                "revision": "El ítem reconoce que los resultados están mediados por condiciones de contexto y no deben atribuirse linealmente al docente."
-            },
-            {
-                "riesgo": "Ambigüedad entre rendición de cuentas y autonomía",
-                "revision": "La clave plantea evaluación con múltiples evidencias, no ausencia de evaluación."
-            },
-            {
-                "riesgo": "Culpabilización docente",
-                "revision": "El ítem evita responsabilizar de forma individual y absoluta al docente por resultados externos."
-            }
-        ]
+    "claim": "El evaluado comprende que los resultados de pruebas estandarizadas pueden aportar información, pero no deben constituir la única evidencia para valorar el desempeño docente, porque la enseñanza incluye procesos contextuales, curriculares, formativos y pedagógicos más amplios.",
+    "evidencia_observable": "Selecciona una explicación que identifica por qué la evaluación docente exclusivamente estandarizada limita la autonomía escolar y empobrece la comprensión del currículo.",
+    "tarea_cognitiva": "Valorar críticamente una política o práctica de evaluación docente basada en una única fuente de evidencia.",
+    "tipo_de_pregunta": "Caso situacional de juicio evaluativo institucional",
+    "dificultad_esperada": "Media-Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Rechazo absoluto de las pruebas estandarizadas",
+        "revision": "La clave no niega el valor informativo de las pruebas; cuestiona su uso exclusivo."
+      },
+      {
+        "riesgo": "Sesgo por contexto socioeconómico",
+        "revision": "El ítem reconoce que los resultados están mediados por condiciones de contexto y no deben atribuirse linealmente al docente."
+      },
+      {
+        "riesgo": "Ambigüedad entre rendición de cuentas y autonomía",
+        "revision": "La clave plantea evaluación con múltiples evidencias, no ausencia de evaluación."
+      },
+      {
+        "riesgo": "Culpabilización docente",
+        "revision": "El ítem evita responsabilizar de forma individual y absoluta al docente por resultados externos."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Una entidad propone evaluar a los docentes exclusivamente con base en los resultados de sus estudiantes en pruebas estandarizadas de Estado. La institución advierte que esta decisión no considera el PEI, el contexto, la diversidad del grupo, las prácticas pedagógicas ni otros procesos formativos.\n\n¿Por qué esta forma exclusiva de evaluación puede atentar contra la autonomía escolar y el currículo?",
+    "opciones": {
+      "A": "Porque toda evaluación docente debe eliminar cualquier evidencia sobre aprendizajes de los estudiantes.",
+      "B": "Porque las pruebas estandarizadas siempre son inútiles y no aportan ninguna información institucional.",
+      "C": "Porque reduce el desempeño docente a un único resultado externo y desconoce contexto, PEI, currículo, prácticas pedagógicas y procesos formativos no medidos por la prueba.",
+      "D": "Porque la autonomía escolar significa que ningún docente puede ser evaluado bajo ningún criterio."
     },
-    "item": {
-        "enunciado": "Una entidad propone evaluar a los docentes exclusivamente con base en los resultados de sus estudiantes en pruebas estandarizadas de Estado. La institución advierte que esta decisión no considera el PEI, el contexto, la diversidad del grupo, las prácticas pedagógicas ni otros procesos formativos.\n\n¿Por qué esta forma exclusiva de evaluación puede atentar contra la autonomía escolar y el currículo?",
-        "opciones": {
-            "A": "Porque toda evaluación docente debe eliminar cualquier evidencia sobre aprendizajes de los estudiantes.",
-            "B": "Porque las pruebas estandarizadas siempre son inútiles y no aportan ninguna información institucional.",
-            "C": "Porque reduce el desempeño docente a un único resultado externo y desconoce contexto, PEI, currículo, prácticas pedagógicas y procesos formativos no medidos por la prueba.",
-            "D": "Porque la autonomía escolar significa que ningún docente puede ser evaluado bajo ningún criterio."
-        },
-        "respuesta_correcta": "C"
+    "respuesta_correcta": "C"
+  },
+  "ficha_tecnica": {
+    "componente": "Currículo, PEI y Evaluación Didáctica",
+    "competencia": "Análisis crítico de la evaluación docente",
+    "claim_evaluado": "El evaluado comprende que los resultados de pruebas estandarizadas pueden aportar información, pero no deben constituir la única evidencia para valorar el desempeño docente, porque la enseñanza incluye procesos contextuales, curriculares, formativos y pedagógicos más amplios.",
+    "evidencia": "Selecciona una explicación que identifica por qué la evaluación docente exclusivamente estandarizada limita la autonomía escolar y empobrece la comprensión del currículo.",
+    "proceso_cognitivo": "Análisis y juicio evaluativo institucional",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media-Alta",
+    "respuesta_correcta": "C",
+    "distractores": {
+      "A": "Rechaza indebidamente cualquier evidencia sobre aprendizajes.",
+      "B": "Descalifica de forma absoluta las pruebas estandarizadas.",
+      "D": "Confunde autonomía escolar con ausencia total de evaluación."
     },
-    "ficha_tecnica": {
-        "componente": "Currículo, PEI y Evaluación Didáctica",
-        "competencia": "Análisis crítico de la evaluación docente",
-        "claim_evaluado": "El evaluado comprende que los resultados de pruebas estandarizadas pueden aportar información, pero no deben constituir la única evidencia para valorar el desempeño docente, porque la enseñanza incluye procesos contextuales, curriculares, formativos y pedagógicos más amplios.",
-        "evidencia": "Selecciona una explicación que identifica por qué la evaluación docente exclusivamente estandarizada limita la autonomía escolar y empobrece la comprensión del currículo.",
-        "proceso_cognitivo": "Análisis y juicio evaluativo institucional",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media-Alta",
-        "respuesta_correcta": "C",
-        "distractores": {
-            "A": "Rechaza indebidamente cualquier evidencia sobre aprendizajes.",
-            "B": "Descalifica de forma absoluta las pruebas estandarizadas.",
-            "D": "Confunde autonomía escolar con ausencia total de evaluación."
-        },
-        "fuente_autorizada": [
-            "Proyecto Educativo Institucional",
-            "Sistema Institucional de Evaluación",
-            "Evaluación docente",
-            "Autonomía escolar",
-            "Lineamientos curriculares del Ministerio de Educación Nacional"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque una evaluación docente basada exclusivamente en pruebas estandarizadas reduce la complejidad de la práctica pedagógica a un único indicador y desconoce factores como contexto, PEI, currículo, diversidad, estrategias didácticas y procesos formativos.",
-        "opcion_A": "Es incorrecta porque los aprendizajes de los estudiantes sí pueden aportar evidencia, pero no deben ser la única fuente.",
-        "opcion_B": "Es incorrecta porque las pruebas estandarizadas pueden ofrecer información útil si se interpretan con contexto y junto con otras evidencias.",
-        "opcion_D": "Es incorrecta porque la autonomía escolar no significa ausencia de evaluación, sino capacidad de orientar el proyecto educativo con criterios pertinentes y contextualizados."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita posiciones extremas: no rechaza toda evaluación ni descalifica las pruebas estandarizadas. Evalúa el juicio crítico sobre el uso exclusivo de una fuente de evidencia para valorar prácticas docentes complejas."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 3 preguntas sobre currículo, PEI y evaluación didáctica."
+    "fuente_autorizada": [
+      "Proyecto Educativo Institucional",
+      "Sistema Institucional de Evaluación",
+      "Evaluación docente",
+      "Autonomía escolar",
+      "Lineamientos curriculares del Ministerio de Educación Nacional"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "opcion_A": "Es incorrecta porque los aprendizajes de los estudiantes sí pueden aportar evidencia, pero no deben ser la única fuente.",
+    "opcion_B": "Es incorrecta porque las pruebas estandarizadas pueden ofrecer información útil si se interpretan con contexto y junto con otras evidencias.",
+    "opcion_D": "Es incorrecta porque la autonomía escolar no significa ausencia de evaluación, sino capacidad de orientar el proyecto educativo con criterios pertinentes y contextualizados.",
+    "distractores": {
+      "A": "Es incorrecta porque los aprendizajes de los estudiantes sí pueden aportar evidencia, pero no deben ser la única fuente.",
+      "B": "Es incorrecta porque las pruebas estandarizadas pueden ofrecer información útil si se interpretan con contexto y junto con otras evidencias.",
+      "D": "Es incorrecta porque la autonomía escolar no significa ausencia de evaluación, sino capacidad de orientar el proyecto educativo con criterios pertinentes y contextualizados."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita posiciones extremas: no rechaza toda evaluación ni descalifica las pruebas estandarizadas. Evalúa el juicio crítico sobre el uso exclusivo de una fuente de evidencia para valorar prácticas docentes complejas."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 3 preguntas sobre currículo, PEI y evaluación didáctica."
+  }
 }

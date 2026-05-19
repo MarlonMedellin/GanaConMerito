@@ -1,99 +1,104 @@
 {
-    "id_item": "DIL_B10_I03",
-    "archivo_sugerido": "DIL_B10_I03_norma_mas_favorable_interes_superior_nna.json",
-    "bloque": {
-        "codigo_bloque": "DIL_B10",
-        "nombre": "Dignidad humana, equidad y columna vertebral del Código de Infancia",
-        "estado_en_lista": "Bloque 10 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 3 de 3"
+  "id_item": "DIL_B10_I03",
+  "archivo_sugerido": "DIL_B10_I03_norma_mas_favorable_interes_superior_nna.json",
+  "bloque": {
+    "codigo_bloque": "DIL_B10",
+    "nombre": "Dignidad humana, equidad y columna vertebral del Código de Infancia",
+    "estado_en_lista": "Bloque 10 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 3 de 3"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante comprende que, en la interpretación del Código de Infancia y Adolescencia, debe preferirse la norma o interpretación más favorable al interés superior de niños, niñas y adolescentes.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, convivencia, protección integral, gestión institucional o infancia.",
+    "blueprint": {
+      "problematica_principal": "Aplicación rígida de una norma o procedimiento sin valorar el interés superior del niño, niña o adolescente.",
+      "fuente_autorizada": [
+        "Ley 1098 de 2006",
+        "Convención sobre los Derechos del Niño",
+        "Constitución Política de Colombia",
+        "Interés superior del niño",
+        "Protección integral"
+      ],
+      "componente_modulo": "Interés superior y norma más favorable",
+      "competencia": "Interpretación garantista de normas de infancia",
+      "afirmacion": "Cuando exista duda interpretativa, debe preferirse la solución más favorable al interés superior y a la garantía efectiva de derechos de NNA.",
+      "evidencia_observable": "Reconoce que la aplicación normativa debe proteger derechos y no sacrificar al menor por formalismos injustificados.",
+      "tipo_de_evidencia": "Juicio jurídico-pedagógico aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "C"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante comprende que, en la interpretación del Código de Infancia y Adolescencia, debe preferirse la norma o interpretación más favorable al interés superior de niños, niñas y adolescentes.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, convivencia, protección integral, gestión institucional o infancia.",
-        "blueprint": {
-            "problematica_principal": "Aplicación rígida de una norma o procedimiento sin valorar el interés superior del niño, niña o adolescente.",
-            "fuente_autorizada": [
-                "Ley 1098 de 2006",
-                "Convención sobre los Derechos del Niño",
-                "Constitución Política de Colombia",
-                "Interés superior del niño",
-                "Protección integral"
-            ],
-            "componente_modulo": "Interés superior y norma más favorable",
-            "competencia": "Interpretación garantista de normas de infancia",
-            "afirmacion": "Cuando exista duda interpretativa, debe preferirse la solución más favorable al interés superior y a la garantía efectiva de derechos de NNA.",
-            "evidencia_observable": "Reconoce que la aplicación normativa debe proteger derechos y no sacrificar al menor por formalismos injustificados.",
-            "tipo_de_evidencia": "Juicio jurídico-pedagógico aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "C"
-        },
-        "claim": "El evaluado comprende que el interés superior del niño, niña o adolescente orienta la interpretación y aplicación de las normas de infancia.",
-        "evidencia_observable": "Selecciona una actuación que prioriza protección efectiva, dignidad y norma más favorable.",
-        "tarea_cognitiva": "Aplicar el principio de interés superior ante una duda institucional.",
-        "tipo_de_pregunta": "Caso situacional de interpretación normativa",
-        "dificultad_esperada": "Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Usar el interés superior como excusa para arbitrariedad adulta",
-                "revision": "La clave exige protección efectiva, motivada y respetuosa de derechos."
-            },
-            {
-                "riesgo": "Ignorar procedimientos",
-                "revision": "La opción correcta no elimina el debido proceso, sino que orienta la interpretación."
-            },
-            {
-                "riesgo": "Subordinar derechos a formalismos",
-                "revision": "El ítem privilegia garantía efectiva."
-            }
-        ]
+    "claim": "El evaluado comprende que el interés superior del niño, niña o adolescente orienta la interpretación y aplicación de las normas de infancia.",
+    "evidencia_observable": "Selecciona una actuación que prioriza protección efectiva, dignidad y norma más favorable.",
+    "tarea_cognitiva": "Aplicar el principio de interés superior ante una duda institucional.",
+    "tipo_de_pregunta": "Caso situacional de interpretación normativa",
+    "dificultad_esperada": "Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Usar el interés superior como excusa para arbitrariedad adulta",
+        "revision": "La clave exige protección efectiva, motivada y respetuosa de derechos."
+      },
+      {
+        "riesgo": "Ignorar procedimientos",
+        "revision": "La opción correcta no elimina el debido proceso, sino que orienta la interpretación."
+      },
+      {
+        "riesgo": "Subordinar derechos a formalismos",
+        "revision": "El ítem privilegia garantía efectiva."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Una institución enfrenta una duda sobre cómo aplicar una norma en un caso que afecta a un estudiante menor de edad. Una interpretación protege mejor su dignidad, permanencia escolar y seguridad; otra interpretación es más rígida y puede aumentar su vulneración.\n\n¿Cuál criterio debe orientar la decisión?",
+    "opciones": {
+      "A": "Escoger siempre la interpretación más severa, aunque perjudique al estudiante.",
+      "B": "Aplicar el procedimiento de forma mecánica sin considerar derechos fundamentales.",
+      "C": "Preferir la interpretación o medida más favorable al interés superior del niño, niña o adolescente, garantizando derechos, debido proceso y protección integral.",
+      "D": "Decidir según la conveniencia administrativa de la institución, aunque se afecten derechos."
     },
-    "item": {
-        "enunciado": "Una institución enfrenta una duda sobre cómo aplicar una norma en un caso que afecta a un estudiante menor de edad. Una interpretación protege mejor su dignidad, permanencia escolar y seguridad; otra interpretación es más rígida y puede aumentar su vulneración.\n\n¿Cuál criterio debe orientar la decisión?",
-        "opciones": {
-            "A": "Escoger siempre la interpretación más severa, aunque perjudique al estudiante.",
-            "B": "Aplicar el procedimiento de forma mecánica sin considerar derechos fundamentales.",
-            "C": "Preferir la interpretación o medida más favorable al interés superior del niño, niña o adolescente, garantizando derechos, debido proceso y protección integral.",
-            "D": "Decidir según la conveniencia administrativa de la institución, aunque se afecten derechos."
-        },
-        "respuesta_correcta": "C"
+    "respuesta_correcta": "C"
+  },
+  "ficha_tecnica": {
+    "componente": "Interés superior y norma más favorable",
+    "competencia": "Interpretación garantista de normas de infancia",
+    "claim_evaluado": "El evaluado comprende que el interés superior del niño, niña o adolescente orienta la interpretación y aplicación de las normas de infancia.",
+    "evidencia": "Selecciona una actuación que prioriza protección efectiva, dignidad y norma más favorable.",
+    "proceso_cognitivo": "Juicio jurídico-pedagógico aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Alta",
+    "respuesta_correcta": "C",
+    "distractores": {
+      "A": "Confunde protección con severidad automática.",
+      "B": "Reduce la norma a formalismo sin enfoque de derechos.",
+      "D": "Subordina derechos de infancia a conveniencia institucional."
     },
-    "ficha_tecnica": {
-        "componente": "Interés superior y norma más favorable",
-        "competencia": "Interpretación garantista de normas de infancia",
-        "claim_evaluado": "El evaluado comprende que el interés superior del niño, niña o adolescente orienta la interpretación y aplicación de las normas de infancia.",
-        "evidencia": "Selecciona una actuación que prioriza protección efectiva, dignidad y norma más favorable.",
-        "proceso_cognitivo": "Juicio jurídico-pedagógico aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Alta",
-        "respuesta_correcta": "C",
-        "distractores": {
-            "A": "Confunde protección con severidad automática.",
-            "B": "Reduce la norma a formalismo sin enfoque de derechos.",
-            "D": "Subordina derechos de infancia a conveniencia institucional."
-        },
-        "fuente_autorizada": [
-            "Ley 1098 de 2006",
-            "Convención sobre los Derechos del Niño",
-            "Constitución Política de Colombia",
-            "Interés superior del niño",
-            "Protección integral"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque el interés superior y la norma más favorable orientan la interpretación de disposiciones que afectan a NNA.",
-        "opcion_A": "Es incorrecta porque la mayor severidad no equivale a protección integral.",
-        "opcion_B": "Es incorrecta porque el procedimiento debe aplicarse con enfoque de derechos.",
-        "opcion_D": "Es incorrecta porque la conveniencia institucional no puede prevalecer sobre derechos de infancia."
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado con revisión jurídica recomendada.",
-        "argumento": "El ítem protege el interés superior y evita arbitrariedad al exigir debido proceso y garantía efectiva de derechos."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Validar con jurisprudencia constitucional y lineamientos institucionales antes de uso definitivo.",
-        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 3 preguntas sobre dignidad humana, equidad y columna vertebral del Código de Infancia."
+    "fuente_autorizada": [
+      "Ley 1098 de 2006",
+      "Convención sobre los Derechos del Niño",
+      "Constitución Política de Colombia",
+      "Interés superior del niño",
+      "Protección integral"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "opcion_A": "Es incorrecta porque la mayor severidad no equivale a protección integral.",
+    "opcion_B": "Es incorrecta porque el procedimiento debe aplicarse con enfoque de derechos.",
+    "opcion_D": "Es incorrecta porque la conveniencia institucional no puede prevalecer sobre derechos de infancia.",
+    "distractores": {
+      "A": "Es incorrecta porque la mayor severidad no equivale a protección integral.",
+      "B": "Es incorrecta porque el procedimiento debe aplicarse con enfoque de derechos.",
+      "D": "Es incorrecta porque la conveniencia institucional no puede prevalecer sobre derechos de infancia."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado con revisión jurídica recomendada.",
+    "argumento": "El ítem protege el interés superior y evita arbitrariedad al exigir debido proceso y garantía efectiva de derechos."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Validar con jurisprudencia constitucional y lineamientos institucionales antes de uso definitivo.",
+    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 3 preguntas sobre dignidad humana, equidad y columna vertebral del Código de Infancia."
+  }
 }

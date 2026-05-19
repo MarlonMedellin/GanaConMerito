@@ -1,99 +1,104 @@
 {
-    "id_item": "IDD_B11_I01",
-    "archivo_sugerido": "IDD_B11_I01_error_calculo_reestructuracion_esquema.json",
-    "bloque": {
-        "codigo_bloque": "IDD_B11",
-        "nombre": "Error, conflicto cognitivo y reestructuración de esquemas",
-        "estado_en_lista": "Bloque 11 de 17",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 1 de 4"
+  "id_item": "IDD_B11_I01",
+  "archivo_sugerido": "IDD_B11_I01_error_calculo_reestructuracion_esquema.json",
+  "bloque": {
+    "codigo_bloque": "IDD_B11",
+    "nombre": "Error, conflicto cognitivo y reestructuración de esquemas",
+    "estado_en_lista": "Bloque 11 de 17",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 1 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce el error de cálculo o comprensión como evidencia pedagógica para orientar la reestructuración del esquema mental del estudiante.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, didáctica, evaluación formativa o pedagogía constructivista.",
+    "blueprint": {
+      "problematica_principal": "Tratamiento punitivo del error como fracaso o falta de estudio.",
+      "fuente_autorizada": [
+        "Constructivismo",
+        "Evaluación formativa",
+        "Didáctica de las matemáticas",
+        "Aprendizaje significativo",
+        "Conflicto cognitivo"
+      ],
+      "componente_modulo": "El error como aprendizaje",
+      "competencia": "Manejo pedagógico del error",
+      "afirmacion": "El error permite identificar ideas previas, procedimientos incompletos o esquemas inadecuados, y orientar retroalimentación formativa.",
+      "evidencia_observable": "Reconoce que el docente debe analizar el origen del error, retroalimentar y proponer nuevas mediaciones.",
+      "tipo_de_evidencia": "Juicio didáctico aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "C"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce el error de cálculo o comprensión como evidencia pedagógica para orientar la reestructuración del esquema mental del estudiante.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, didáctica, evaluación formativa o pedagogía constructivista.",
-        "blueprint": {
-            "problematica_principal": "Tratamiento punitivo del error como fracaso o falta de estudio.",
-            "fuente_autorizada": [
-                "Constructivismo",
-                "Evaluación formativa",
-                "Didáctica de las matemáticas",
-                "Aprendizaje significativo",
-                "Conflicto cognitivo"
-            ],
-            "componente_modulo": "El error como aprendizaje",
-            "competencia": "Manejo pedagógico del error",
-            "afirmacion": "El error permite identificar ideas previas, procedimientos incompletos o esquemas inadecuados, y orientar retroalimentación formativa.",
-            "evidencia_observable": "Reconoce que el docente debe analizar el origen del error, retroalimentar y proponer nuevas mediaciones.",
-            "tipo_de_evidencia": "Juicio didáctico aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "C"
-        },
-        "claim": "El evaluado comprende que el error no debe castigarse automáticamente, sino usarse como información para comprender cómo piensa el estudiante y acompañar la reconstrucción de su conocimiento.",
-        "evidencia_observable": "Selecciona una actuación docente que analiza el error, identifica la dificultad conceptual y propone retroalimentación y nuevas actividades.",
-        "tarea_cognitiva": "Analizar una respuesta errónea y elegir la intervención constructivista adecuada.",
-        "tipo_de_pregunta": "Caso situacional de juicio didáctico",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Asociar error con incapacidad del estudiante",
-                "revision": "La clave interpreta el error como evidencia de proceso y no como rasgo personal."
-            },
-            {
-                "riesgo": "Normalizar el error sin corrección",
-                "revision": "La respuesta correcta incluye análisis, retroalimentación y reconstrucción."
-            },
-            {
-                "riesgo": "Confundir evaluación formativa con ausencia de exigencia",
-                "revision": "El ítem mantiene el propósito de aprendizaje y exige nueva mediación."
-            }
-        ]
+    "claim": "El evaluado comprende que el error no debe castigarse automáticamente, sino usarse como información para comprender cómo piensa el estudiante y acompañar la reconstrucción de su conocimiento.",
+    "evidencia_observable": "Selecciona una actuación docente que analiza el error, identifica la dificultad conceptual y propone retroalimentación y nuevas actividades.",
+    "tarea_cognitiva": "Analizar una respuesta errónea y elegir la intervención constructivista adecuada.",
+    "tipo_de_pregunta": "Caso situacional de juicio didáctico",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Asociar error con incapacidad del estudiante",
+        "revision": "La clave interpreta el error como evidencia de proceso y no como rasgo personal."
+      },
+      {
+        "riesgo": "Normalizar el error sin corrección",
+        "revision": "La respuesta correcta incluye análisis, retroalimentación y reconstrucción."
+      },
+      {
+        "riesgo": "Confundir evaluación formativa con ausencia de exigencia",
+        "revision": "El ítem mantiene el propósito de aprendizaje y exige nueva mediación."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un estudiante resuelve mal una operación porque aplica un procedimiento aprendido de forma incompleta. El docente puede sancionar el error o usarlo para comprender cómo está pensando el estudiante.\n\nDesde una postura constructivista, ¿cómo debe utilizar el docente ese error?",
+    "opciones": {
+      "A": "Castigarlo inmediatamente para que el estudiante no vuelva a equivocarse.",
+      "B": "Ignorarlo para no afectar la autoestima del estudiante.",
+      "C": "Analizar qué idea o procedimiento está usando el estudiante, retroalimentar y proponer una mediación que le permita reestructurar su esquema mental.",
+      "D": "Concluir que el estudiante no tiene capacidad para aprender el tema."
     },
-    "item": {
-        "enunciado": "Un estudiante resuelve mal una operación porque aplica un procedimiento aprendido de forma incompleta. El docente puede sancionar el error o usarlo para comprender cómo está pensando el estudiante.\n\nDesde una postura constructivista, ¿cómo debe utilizar el docente ese error?",
-        "opciones": {
-            "A": "Castigarlo inmediatamente para que el estudiante no vuelva a equivocarse.",
-            "B": "Ignorarlo para no afectar la autoestima del estudiante.",
-            "C": "Analizar qué idea o procedimiento está usando el estudiante, retroalimentar y proponer una mediación que le permita reestructurar su esquema mental.",
-            "D": "Concluir que el estudiante no tiene capacidad para aprender el tema."
-        },
-        "respuesta_correcta": "C"
+    "respuesta_correcta": "C"
+  },
+  "ficha_tecnica": {
+    "componente": "El error como aprendizaje",
+    "competencia": "Manejo pedagógico del error",
+    "claim_evaluado": "El evaluado comprende que el error no debe castigarse automáticamente, sino usarse como información para comprender cómo piensa el estudiante y acompañar la reconstrucción de su conocimiento.",
+    "evidencia": "Selecciona una actuación docente que analiza el error, identifica la dificultad conceptual y propone retroalimentación y nuevas actividades.",
+    "proceso_cognitivo": "Análisis y juicio didáctico",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "C",
+    "distractores": {
+      "A": "Convierte el error en castigo y bloquea la reflexión.",
+      "B": "Evita la retroalimentación necesaria.",
+      "D": "Etiqueta al estudiante desde el déficit."
     },
-    "ficha_tecnica": {
-        "componente": "El error como aprendizaje",
-        "competencia": "Manejo pedagógico del error",
-        "claim_evaluado": "El evaluado comprende que el error no debe castigarse automáticamente, sino usarse como información para comprender cómo piensa el estudiante y acompañar la reconstrucción de su conocimiento.",
-        "evidencia": "Selecciona una actuación docente que analiza el error, identifica la dificultad conceptual y propone retroalimentación y nuevas actividades.",
-        "proceso_cognitivo": "Análisis y juicio didáctico",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "C",
-        "distractores": {
-            "A": "Convierte el error en castigo y bloquea la reflexión.",
-            "B": "Evita la retroalimentación necesaria.",
-            "D": "Etiqueta al estudiante desde el déficit."
-        },
-        "fuente_autorizada": [
-            "Constructivismo",
-            "Evaluación formativa",
-            "Didáctica de las matemáticas",
-            "Aprendizaje significativo",
-            "Conflicto cognitivo"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque transforma el error en evidencia para orientar retroalimentación, mediación y reconstrucción conceptual.",
-        "opcion_A": "Es incorrecta porque sancionar no garantiza comprensión.",
-        "opcion_B": "Es incorrecta porque ignorar el error impide aprender de él.",
-        "opcion_D": "Es incorrecta porque atribuye el error a incapacidad personal."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita estigmatizar al estudiante por equivocarse y promueve una intervención formativa."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre error, conflicto cognitivo y reestructuración de esquemas."
+    "fuente_autorizada": [
+      "Constructivismo",
+      "Evaluación formativa",
+      "Didáctica de las matemáticas",
+      "Aprendizaje significativo",
+      "Conflicto cognitivo"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "opcion_A": "Es incorrecta porque sancionar no garantiza comprensión.",
+    "opcion_B": "Es incorrecta porque ignorar el error impide aprender de él.",
+    "opcion_D": "Es incorrecta porque atribuye el error a incapacidad personal.",
+    "distractores": {
+      "A": "Es incorrecta porque sancionar no garantiza comprensión.",
+      "B": "Es incorrecta porque ignorar el error impide aprender de él.",
+      "D": "Es incorrecta porque atribuye el error a incapacidad personal."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita estigmatizar al estudiante por equivocarse y promueve una intervención formativa."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre error, conflicto cognitivo y reestructuración de esquemas."
+  }
 }

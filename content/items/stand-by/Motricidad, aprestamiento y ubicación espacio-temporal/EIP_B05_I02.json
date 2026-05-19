@@ -1,40 +1,40 @@
 {
-    "id_item": "EIP_B05_I02",
-    "archivo_sugerido": "EIP_B05_I02_ubicacion_espacio_temporal_preescolar.json",
-    "proposito_de_uso": "Evaluar si el aspirante reconoce la ubicación espacio-temporal como objetivo pedagógico de preescolar.",
-    "blueprint": {
-        "componente_modulo": "Ubicación espacio-temporal",
-        "competencia": "Diseño de experiencias de orientación espacial y temporal",
-        "afirmacion": "La ubicación espacio-temporal permite al niño organizar su cuerpo, sus acciones y sus relaciones con el entorno.",
-        "evidencia_observable": "Identifica actividades de antes/después, arriba/abajo, cerca/lejos, dentro/fuera, secuencias y rutinas como experiencias formativas.",
-        "tipo_de_evidencia": "Juicio pedagógico aplicado",
-        "dificultad_esperada": "Media",
-        "clave": "D"
+  "id_item": "EIP_B05_I02",
+  "archivo_sugerido": "EIP_B05_I02_ubicacion_espacio_temporal_preescolar.json",
+  "proposito_de_uso": "Evaluar si el aspirante reconoce la ubicación espacio-temporal como objetivo pedagógico de preescolar.",
+  "blueprint": {
+    "componente_modulo": "Ubicación espacio-temporal",
+    "competencia": "Diseño de experiencias de orientación espacial y temporal",
+    "afirmacion": "La ubicación espacio-temporal permite al niño organizar su cuerpo, sus acciones y sus relaciones con el entorno.",
+    "evidencia_observable": "Identifica actividades de antes/después, arriba/abajo, cerca/lejos, dentro/fuera, secuencias y rutinas como experiencias formativas.",
+    "tipo_de_evidencia": "Juicio pedagógico aplicado",
+    "dificultad_esperada": "Media",
+    "clave": "D"
+  },
+  "item": {
+    "enunciado": "En transición, la docente propone juegos con instrucciones como 'arriba-abajo', 'dentro-fuera', 'antes-después', 'cerca-lejos' y secuencias de rutinas del día. Un observador afirma que esas actividades no tienen valor académico.\n\n¿Qué objetivo de preescolar se está trabajando principalmente?",
+    "opciones": {
+      "A": "La memorización de sanciones del manual de convivencia.",
+      "B": "La preparación para pruebas estandarizadas de educación media.",
+      "C": "La repetición mecánica de fórmulas.",
+      "D": "La ubicación espacio-temporal y la organización progresiva de la acción del niño en su entorno."
     },
-    "item": {
-        "enunciado": "En transición, la docente propone juegos con instrucciones como 'arriba-abajo', 'dentro-fuera', 'antes-después', 'cerca-lejos' y secuencias de rutinas del día. Un observador afirma que esas actividades no tienen valor académico.\n\n¿Qué objetivo de preescolar se está trabajando principalmente?",
-        "opciones": {
-            "A": "La memorización de sanciones del manual de convivencia.",
-            "B": "La preparación para pruebas estandarizadas de educación media.",
-            "C": "La repetición mecánica de fórmulas.",
-            "D": "La ubicación espacio-temporal y la organización progresiva de la acción del niño en su entorno."
-        },
-        "respuesta_correcta": "D"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque las nociones espaciales y temporales ayudan al niño a organizar su cuerpo, su pensamiento y sus acciones.",
-        "distractores": {
-            "A": "No corresponde al objetivo pedagógico descrito.",
-            "B": "Traslada indebidamente al preescolar una lógica de educación media.",
-            "C": "Confunde orientación espacio-temporal con repetición mecánica."
-        }
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado",
-        "argumento": "El ítem reconoce aprendizajes propios de la infancia sin desvalorizar el juego."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem apto para banco con revisión didáctica posterior."
+    "respuesta_correcta": "D"
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "distractores": {
+      "A": "No corresponde al objetivo pedagógico descrito.",
+      "B": "Traslada indebidamente al preescolar una lógica de educación media.",
+      "C": "Confunde orientación espacio-temporal con repetición mecánica."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado",
+    "argumento": "El ítem reconoce aprendizajes propios de la infancia sin desvalorizar el juego."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem apto para banco con revisión didáctica posterior."
+  }
 }

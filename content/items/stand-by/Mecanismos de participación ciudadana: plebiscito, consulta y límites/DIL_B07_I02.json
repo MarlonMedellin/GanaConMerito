@@ -1,99 +1,104 @@
 {
-    "id_item": "DIL_B07_I02",
-    "archivo_sugerido": "DIL_B07_I02_alcalde_plebiscito_transito_nocturno_menores_no_viable.json",
-    "bloque": {
-        "codigo_bloque": "DIL_B07",
-        "nombre": "Mecanismos de participación ciudadana: plebiscito, consulta y límites",
-        "estado_en_lista": "Bloque 7 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 2 de 4"
+  "id_item": "DIL_B07_I02",
+  "archivo_sugerido": "DIL_B07_I02_alcalde_plebiscito_transito_nocturno_menores_no_viable.json",
+  "bloque": {
+    "codigo_bloque": "DIL_B07",
+    "nombre": "Mecanismos de participación ciudadana: plebiscito, consulta y límites",
+    "estado_en_lista": "Bloque 7 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 2 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce por qué un alcalde no puede usar un plebiscito para restringir derechos de menores de edad mediante decisión mayoritaria.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con ciudadanía, derecho constitucional, docencia, convivencia escolar o protección de derechos de niños, niñas y adolescentes.",
+    "blueprint": {
+      "problematica_principal": "Uso inadecuado de mecanismos de participación para someter derechos fundamentales de niños, niñas y adolescentes a una votación mayoritaria.",
+      "fuente_autorizada": [
+        "Constitución Política de Colombia",
+        "Artículo 44 Constitución Política",
+        "Ley 1757 de 2015",
+        "Ley 1098 de 2006",
+        "Mecanismos de participación ciudadana"
+      ],
+      "componente_modulo": "Límites constitucionales de los mecanismos de participación",
+      "competencia": "Identificación de límites a la democracia directa",
+      "afirmacion": "Los mecanismos de participación no pueden usarse para desconocer derechos fundamentales ni la prevalencia de los derechos de los niños.",
+      "evidencia_observable": "Reconoce que la seguridad ciudadana no habilita someter restricciones de derechos de menores a un plebiscito local.",
+      "tipo_de_evidencia": "Juicio constitucional aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce por qué un alcalde no puede usar un plebiscito para restringir derechos de menores de edad mediante decisión mayoritaria.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con ciudadanía, derecho constitucional, docencia, convivencia escolar o protección de derechos de niños, niñas y adolescentes.",
-        "blueprint": {
-            "problematica_principal": "Uso inadecuado de mecanismos de participación para someter derechos fundamentales de niños, niñas y adolescentes a una votación mayoritaria.",
-            "fuente_autorizada": [
-                "Constitución Política de Colombia",
-                "Artículo 44 Constitución Política",
-                "Ley 1757 de 2015",
-                "Ley 1098 de 2006",
-                "Mecanismos de participación ciudadana"
-            ],
-            "componente_modulo": "Límites constitucionales de los mecanismos de participación",
-            "competencia": "Identificación de límites a la democracia directa",
-            "afirmacion": "Los mecanismos de participación no pueden usarse para desconocer derechos fundamentales ni la prevalencia de los derechos de los niños.",
-            "evidencia_observable": "Reconoce que la seguridad ciudadana no habilita someter restricciones de derechos de menores a un plebiscito local.",
-            "tipo_de_evidencia": "Juicio constitucional aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que la participación ciudadana debe ejercerse dentro del marco constitucional y no puede anular derechos fundamentales.",
-        "evidencia_observable": "Selecciona una explicación que integra competencia, mecanismo adecuado y prevalencia de derechos de los niños.",
-        "tarea_cognitiva": "Analizar una propuesta de autoridad local y determinar su inviabilidad constitucional.",
-        "tipo_de_pregunta": "Caso situacional constitucional",
-        "dificultad_esperada": "Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Justificar restricciones arbitrarias a menores por seguridad",
-                "revision": "La clave exige respeto de derechos fundamentales y competencia legal."
-            },
-            {
-                "riesgo": "Confundir democracia directa con poder ilimitado de las mayorías",
-                "revision": "El ítem aclara límites constitucionales."
-            },
-            {
-                "riesgo": "Desconocer la prevalencia de derechos de los niños",
-                "revision": "La clave incorpora protección reforzada."
-            }
-        ]
+    "claim": "El evaluado comprende que la participación ciudadana debe ejercerse dentro del marco constitucional y no puede anular derechos fundamentales.",
+    "evidencia_observable": "Selecciona una explicación que integra competencia, mecanismo adecuado y prevalencia de derechos de los niños.",
+    "tarea_cognitiva": "Analizar una propuesta de autoridad local y determinar su inviabilidad constitucional.",
+    "tipo_de_pregunta": "Caso situacional constitucional",
+    "dificultad_esperada": "Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Justificar restricciones arbitrarias a menores por seguridad",
+        "revision": "La clave exige respeto de derechos fundamentales y competencia legal."
+      },
+      {
+        "riesgo": "Confundir democracia directa con poder ilimitado de las mayorías",
+        "revision": "El ítem aclara límites constitucionales."
+      },
+      {
+        "riesgo": "Desconocer la prevalencia de derechos de los niños",
+        "revision": "La clave incorpora protección reforzada."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un alcalde desea restringir el tránsito nocturno de menores de edad por razones de seguridad y propone someter esa restricción a un plebiscito municipal. La medida afectaría directamente derechos de niños, niñas y adolescentes.\n\n¿Por qué la propuesta no es viable en el diseño constitucional colombiano?",
+    "opciones": {
+      "A": "Porque los mecanismos de participación no pueden usarse para desconocer derechos fundamentales ni la prevalencia de los derechos de los niños, y además el plebiscito no es el mecanismo municipal ordinario para regular esa materia.",
+      "B": "Porque los alcaldes nunca pueden adoptar ninguna medida de seguridad local.",
+      "C": "Porque los derechos de los niños solo existen si la mayoría ciudadana los aprueba.",
+      "D": "Porque el tránsito de menores no tiene ninguna relación con derechos fundamentales."
     },
-    "item": {
-        "enunciado": "Un alcalde desea restringir el tránsito nocturno de menores de edad por razones de seguridad y propone someter esa restricción a un plebiscito municipal. La medida afectaría directamente derechos de niños, niñas y adolescentes.\n\n¿Por qué la propuesta no es viable en el diseño constitucional colombiano?",
-        "opciones": {
-            "A": "Porque los mecanismos de participación no pueden usarse para desconocer derechos fundamentales ni la prevalencia de los derechos de los niños, y además el plebiscito no es el mecanismo municipal ordinario para regular esa materia.",
-            "B": "Porque los alcaldes nunca pueden adoptar ninguna medida de seguridad local.",
-            "C": "Porque los derechos de los niños solo existen si la mayoría ciudadana los aprueba.",
-            "D": "Porque el tránsito de menores no tiene ninguna relación con derechos fundamentales."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Límites constitucionales de los mecanismos de participación",
+    "competencia": "Identificación de límites a la democracia directa",
+    "claim_evaluado": "El evaluado comprende que la participación ciudadana debe ejercerse dentro del marco constitucional y no puede anular derechos fundamentales.",
+    "evidencia": "Selecciona una explicación que integra competencia, mecanismo adecuado y prevalencia de derechos de los niños.",
+    "proceso_cognitivo": "Juicio constitucional aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Alta",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Generaliza incorrectamente y niega toda competencia local en seguridad.",
+      "C": "Subordina derechos fundamentales a mayorías.",
+      "D": "Desconoce que libertad, protección y movilidad pueden involucrar derechos de NNA."
     },
-    "ficha_tecnica": {
-        "componente": "Límites constitucionales de los mecanismos de participación",
-        "competencia": "Identificación de límites a la democracia directa",
-        "claim_evaluado": "El evaluado comprende que la participación ciudadana debe ejercerse dentro del marco constitucional y no puede anular derechos fundamentales.",
-        "evidencia": "Selecciona una explicación que integra competencia, mecanismo adecuado y prevalencia de derechos de los niños.",
-        "proceso_cognitivo": "Juicio constitucional aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Alta",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Generaliza incorrectamente y niega toda competencia local en seguridad.",
-            "C": "Subordina derechos fundamentales a mayorías.",
-            "D": "Desconoce que libertad, protección y movilidad pueden involucrar derechos de NNA."
-        },
-        "fuente_autorizada": [
-            "Constitución Política de Colombia",
-            "Artículo 44 Constitución Política",
-            "Ley 1757 de 2015",
-            "Ley 1098 de 2006",
-            "Mecanismos de participación ciudadana"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque integra dos límites: los derechos fundamentales de niños, niñas y adolescentes no pueden quedar a merced de mayorías, y el plebiscito no es el mecanismo local ordinario para esa regulación.",
-        "opcion_B": "Es incorrecta porque las autoridades locales sí pueden adoptar medidas dentro de sus competencias y con respeto de derechos.",
-        "opcion_C": "Es incorrecta porque los derechos fundamentales no dependen de aprobación mayoritaria.",
-        "opcion_D": "Es incorrecta porque la restricción de movilidad y presencia en espacio público puede afectar derechos."
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado con revisión jurídica recomendada.",
-        "argumento": "El ítem protege la prevalencia de derechos de niños, niñas y adolescentes y evita una lectura plebiscitaria ilimitada."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado con revisión jurídica",
-        "observacion": "Validar con jurisprudencia constitucional y normativa local de policía antes de uso definitivo.",
-        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre mecanismos de participación ciudadana."
+    "fuente_autorizada": [
+      "Constitución Política de Colombia",
+      "Artículo 44 Constitución Política",
+      "Ley 1757 de 2015",
+      "Ley 1098 de 2006",
+      "Mecanismos de participación ciudadana"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque las autoridades locales sí pueden adoptar medidas dentro de sus competencias y con respeto de derechos.",
+    "opcion_C": "Es incorrecta porque los derechos fundamentales no dependen de aprobación mayoritaria.",
+    "opcion_D": "Es incorrecta porque la restricción de movilidad y presencia en espacio público puede afectar derechos.",
+    "distractores": {
+      "B": "Es incorrecta porque las autoridades locales sí pueden adoptar medidas dentro de sus competencias y con respeto de derechos.",
+      "C": "Es incorrecta porque los derechos fundamentales no dependen de aprobación mayoritaria.",
+      "D": "Es incorrecta porque la restricción de movilidad y presencia en espacio público puede afectar derechos."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado con revisión jurídica recomendada.",
+    "argumento": "El ítem protege la prevalencia de derechos de niños, niñas y adolescentes y evita una lectura plebiscitaria ilimitada."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado con revisión jurídica",
+    "observacion": "Validar con jurisprudencia constitucional y normativa local de policía antes de uso definitivo.",
+    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre mecanismos de participación ciudadana."
+  }
 }

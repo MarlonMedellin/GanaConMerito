@@ -1,101 +1,106 @@
 {
-    "id_item": "EFCC_B02_I04",
-    "archivo_sugerido": "EFCC_B02_I04_autoevaluacion_reflexiva_desempeno.json",
-    "bloque": {
-        "codigo_bloque": "EFCC_B02",
-        "nombre": "Criterios, instrumentos y tipos de evaluación",
-        "estado_en_lista": "Bloque 2 de 5",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 4 de 4"
+  "id_item": "EFCC_B02_I04",
+  "archivo_sugerido": "EFCC_B02_I04_autoevaluacion_reflexiva_desempeno.json",
+  "bloque": {
+    "codigo_bloque": "EFCC_B02",
+    "nombre": "Criterios, instrumentos y tipos de evaluación",
+    "estado_en_lista": "Bloque 2 de 5",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 4 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce la estructura de una autoevaluación reflexiva del desempeño y la necesidad de una escala de valoración clara, con criterios previamente definidos.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
+    "blueprint": {
+      "problematica_principal": "Uso superficial de la autoevaluación como simple asignación de nota sin reflexión ni criterios.",
+      "fuente_autorizada": [
+        "Evaluación formativa",
+        "Autoevaluación del desempeño",
+        "Sistema Institucional de Evaluación de los Estudiantes",
+        "Orientaciones pedagógicas institucionales"
+      ],
+      "componente_modulo": "Evaluación, Currículo y Didáctica",
+      "competencia": "Autoevaluación reflexiva",
+      "afirmacion": "La autoevaluación debe estructurarse con criterios claros, evidencias, reflexión y escala de valoración conocida.",
+      "evidencia_observable": "Reconoce que el estudiante o educador valora su propio desempeño a partir de criterios, evidencias, niveles y reflexión argumentada.",
+      "tipo_de_evidencia": "Comprensión instrumental aplicada",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "C"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce la estructura de una autoevaluación reflexiva del desempeño y la necesidad de una escala de valoración clara, con criterios previamente definidos.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
-        "blueprint": {
-            "problematica_principal": "Uso superficial de la autoevaluación como simple asignación de nota sin reflexión ni criterios.",
-            "fuente_autorizada": [
-                "Evaluación formativa",
-                "Autoevaluación del desempeño",
-                "Sistema Institucional de Evaluación de los Estudiantes",
-                "Orientaciones pedagógicas institucionales"
-            ],
-            "componente_modulo": "Evaluación, Currículo y Didáctica",
-            "competencia": "Autoevaluación reflexiva",
-            "afirmacion": "La autoevaluación debe estructurarse con criterios claros, evidencias, reflexión y escala de valoración conocida.",
-            "evidencia_observable": "Reconoce que el estudiante o educador valora su propio desempeño a partir de criterios, evidencias, niveles y reflexión argumentada.",
-            "tipo_de_evidencia": "Comprensión instrumental aplicada",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "C"
-        },
-        "claim": "El evaluado comprende que la autoevaluación reflexiva no consiste en ponerse una nota arbitraria, sino en analizar el propio desempeño con criterios, evidencias y una escala de valoración definida.",
-        "evidencia_observable": "Selecciona la estructura adecuada de un instrumento de autoevaluación reflexiva.",
-        "tarea_cognitiva": "Distinguir una autoevaluación formativa de una autocalificación subjetiva sin criterios.",
-        "tipo_de_pregunta": "Pregunta conceptual aplicada",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Ambigüedad por escala institucional variable",
-                "revision": "El ítem no impone una escala única nacional; acepta una escala definida institucionalmente, siempre que tenga criterios y niveles claros."
-            },
-            {
-                "riesgo": "Confusión entre autoevaluación y autocalificación",
-                "revision": "La clave diferencia reflexión con evidencias de asignación arbitraria de nota."
-            },
-            {
-                "riesgo": "Sesgo por expresión escrita",
-                "revision": "La autoevaluación se centra en evidencias y reflexión; la institución puede permitir distintos formatos de expresión."
-            },
-            {
-                "riesgo": "Subjetividad",
-                "revision": "La clave exige criterios previamente definidos para reducir arbitrariedad."
-            }
-        ]
+    "claim": "El evaluado comprende que la autoevaluación reflexiva no consiste en ponerse una nota arbitraria, sino en analizar el propio desempeño con criterios, evidencias y una escala de valoración definida.",
+    "evidencia_observable": "Selecciona la estructura adecuada de un instrumento de autoevaluación reflexiva.",
+    "tarea_cognitiva": "Distinguir una autoevaluación formativa de una autocalificación subjetiva sin criterios.",
+    "tipo_de_pregunta": "Pregunta conceptual aplicada",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Ambigüedad por escala institucional variable",
+        "revision": "El ítem no impone una escala única nacional; acepta una escala definida institucionalmente, siempre que tenga criterios y niveles claros."
+      },
+      {
+        "riesgo": "Confusión entre autoevaluación y autocalificación",
+        "revision": "La clave diferencia reflexión con evidencias de asignación arbitraria de nota."
+      },
+      {
+        "riesgo": "Sesgo por expresión escrita",
+        "revision": "La autoevaluación se centra en evidencias y reflexión; la institución puede permitir distintos formatos de expresión."
+      },
+      {
+        "riesgo": "Subjetividad",
+        "revision": "La clave exige criterios previamente definidos para reducir arbitrariedad."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Una institución quiere implementar un instrumento de autoevaluación reflexiva del desempeño. Para evitar que los estudiantes o educadores simplemente se asignen una nota sin sustento, se acuerda estructurar el instrumento con criterios claros y evidencias.\n\n¿Cuál estructura es más adecuada para este instrumento?",
+    "opciones": {
+      "A": "Un espacio en blanco para que cada persona escriba cualquier nota sin justificarla.",
+      "B": "Una pregunta única sobre si le gustó o no la clase, sin relación con desempeños ni evidencias.",
+      "C": "Criterios de desempeño, escala de valoración con niveles definidos, evidencias del proceso y reflexión argumentada sobre fortalezas y aspectos por mejorar.",
+      "D": "Una lista de sanciones para quienes no alcanzaron el desempeño esperado."
     },
-    "item": {
-        "enunciado": "Una institución quiere implementar un instrumento de autoevaluación reflexiva del desempeño. Para evitar que los estudiantes o educadores simplemente se asignen una nota sin sustento, se acuerda estructurar el instrumento con criterios claros y evidencias.\n\n¿Cuál estructura es más adecuada para este instrumento?",
-        "opciones": {
-            "A": "Un espacio en blanco para que cada persona escriba cualquier nota sin justificarla.",
-            "B": "Una pregunta única sobre si le gustó o no la clase, sin relación con desempeños ni evidencias.",
-            "C": "Criterios de desempeño, escala de valoración con niveles definidos, evidencias del proceso y reflexión argumentada sobre fortalezas y aspectos por mejorar.",
-            "D": "Una lista de sanciones para quienes no alcanzaron el desempeño esperado."
-        },
-        "respuesta_correcta": "C"
+    "respuesta_correcta": "C"
+  },
+  "ficha_tecnica": {
+    "componente": "Evaluación, Currículo y Didáctica",
+    "competencia": "Autoevaluación reflexiva",
+    "claim_evaluado": "El evaluado comprende que la autoevaluación reflexiva no consiste en ponerse una nota arbitraria, sino en analizar el propio desempeño con criterios, evidencias y una escala de valoración definida.",
+    "evidencia": "Selecciona la estructura adecuada de un instrumento de autoevaluación reflexiva.",
+    "proceso_cognitivo": "Comprensión instrumental aplicada",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "C",
+    "distractores": {
+      "A": "Confunde autoevaluación con autocalificación arbitraria.",
+      "B": "Reduce la autoevaluación a opinión de agrado sin criterios de desempeño.",
+      "D": "Transforma la autoevaluación en un instrumento punitivo."
     },
-    "ficha_tecnica": {
-        "componente": "Evaluación, Currículo y Didáctica",
-        "competencia": "Autoevaluación reflexiva",
-        "claim_evaluado": "El evaluado comprende que la autoevaluación reflexiva no consiste en ponerse una nota arbitraria, sino en analizar el propio desempeño con criterios, evidencias y una escala de valoración definida.",
-        "evidencia": "Selecciona la estructura adecuada de un instrumento de autoevaluación reflexiva.",
-        "proceso_cognitivo": "Comprensión instrumental aplicada",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "C",
-        "distractores": {
-            "A": "Confunde autoevaluación con autocalificación arbitraria.",
-            "B": "Reduce la autoevaluación a opinión de agrado sin criterios de desempeño.",
-            "D": "Transforma la autoevaluación en un instrumento punitivo."
-        },
-        "fuente_autorizada": [
-            "Evaluación formativa",
-            "Autoevaluación del desempeño",
-            "Sistema Institucional de Evaluación de los Estudiantes",
-            "Orientaciones pedagógicas institucionales"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque una autoevaluación reflexiva debe incluir criterios, escala con niveles definidos, evidencias y reflexión argumentada sobre fortalezas y aspectos por mejorar.",
-        "opcion_A": "Es incorrecta porque asignar una nota sin justificación no constituye autoevaluación formativa.",
-        "opcion_B": "Es incorrecta porque expresar agrado o desagrado no permite valorar el desempeño con criterios.",
-        "opcion_D": "Es incorrecta porque la autoevaluación busca reflexión y mejora, no sanción."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem no depende de una escala institucional específica. Evalúa la estructura básica de una autoevaluación reflexiva y reconoce la necesidad de criterios, niveles y evidencias."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada. Si la institución usa una escala concreta, puede añadirse sin cambiar la evidencia evaluada.",
-        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre criterios, instrumentos y tipos de evaluación."
+    "fuente_autorizada": [
+      "Evaluación formativa",
+      "Autoevaluación del desempeño",
+      "Sistema Institucional de Evaluación de los Estudiantes",
+      "Orientaciones pedagógicas institucionales"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "opcion_A": "Es incorrecta porque asignar una nota sin justificación no constituye autoevaluación formativa.",
+    "opcion_B": "Es incorrecta porque expresar agrado o desagrado no permite valorar el desempeño con criterios.",
+    "opcion_D": "Es incorrecta porque la autoevaluación busca reflexión y mejora, no sanción.",
+    "distractores": {
+      "A": "Es incorrecta porque asignar una nota sin justificación no constituye autoevaluación formativa.",
+      "B": "Es incorrecta porque expresar agrado o desagrado no permite valorar el desempeño con criterios.",
+      "D": "Es incorrecta porque la autoevaluación busca reflexión y mejora, no sanción."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem no depende de una escala institucional específica. Evalúa la estructura básica de una autoevaluación reflexiva y reconoce la necesidad de criterios, niveles y evidencias."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada. Si la institución usa una escala concreta, puede añadirse sin cambiar la evidencia evaluada.",
+    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre criterios, instrumentos y tipos de evaluación."
+  }
 }

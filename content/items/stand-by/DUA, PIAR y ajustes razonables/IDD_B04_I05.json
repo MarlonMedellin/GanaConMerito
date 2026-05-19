@@ -1,99 +1,104 @@
 {
-    "id_item": "IDD_B04_I05",
-    "archivo_sugerido": "IDD_B04_I05_insumos_diagnosticos_piar_valoracion_pedagogica.json",
-    "bloque": {
-        "codigo_bloque": "IDD_B04",
-        "nombre": "DUA, PIAR y ajustes razonables",
-        "estado_en_lista": "Bloque 4 de 17",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 5 de 7"
+  "id_item": "IDD_B04_I05",
+  "archivo_sugerido": "IDD_B04_I05_insumos_diagnosticos_piar_valoracion_pedagogica.json",
+  "bloque": {
+    "codigo_bloque": "IDD_B04",
+    "nombre": "DUA, PIAR y ajustes razonables",
+    "estado_en_lista": "Bloque 4 de 17",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 5 de 7"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce los insumos pedagógicos y de caracterización necesarios antes de flexibilizar la planeación mediante un PIAR.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, apoyo pedagógico, inclusión o coordinación académica.",
+    "blueprint": {
+      "problematica_principal": "Flexibilización curricular sin caracterización pedagógica ni identificación de barreras y apoyos.",
+      "fuente_autorizada": [
+        "Decreto 1421 de 2017",
+        "Orientaciones MEN sobre PIAR",
+        "Evaluación pedagógica",
+        "Docente de apoyo",
+        "Educación inclusiva"
+      ],
+      "componente_modulo": "Insumos Diagnósticos del PIAR",
+      "competencia": "Caracterización pedagógica para ajustes",
+      "afirmacion": "El PIAR requiere caracterización del estudiante, identificación de barreras, fortalezas, apoyos y necesidades pedagógicas.",
+      "evidencia_observable": "Reconoce que antes del ajuste se necesita valoración pedagógica y no solo diagnóstico clínico.",
+      "tipo_de_evidencia": "Reconocimiento procedimental aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "D"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce los insumos pedagógicos y de caracterización necesarios antes de flexibilizar la planeación mediante un PIAR.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, apoyo pedagógico, inclusión o coordinación académica.",
-        "blueprint": {
-            "problematica_principal": "Flexibilización curricular sin caracterización pedagógica ni identificación de barreras y apoyos.",
-            "fuente_autorizada": [
-                "Decreto 1421 de 2017",
-                "Orientaciones MEN sobre PIAR",
-                "Evaluación pedagógica",
-                "Docente de apoyo",
-                "Educación inclusiva"
-            ],
-            "componente_modulo": "Insumos Diagnósticos del PIAR",
-            "competencia": "Caracterización pedagógica para ajustes",
-            "afirmacion": "El PIAR requiere caracterización del estudiante, identificación de barreras, fortalezas, apoyos y necesidades pedagógicas.",
-            "evidencia_observable": "Reconoce que antes del ajuste se necesita valoración pedagógica y no solo diagnóstico clínico.",
-            "tipo_de_evidencia": "Reconocimiento procedimental aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "D"
-        },
-        "claim": "El evaluado comprende que los ajustes del PIAR deben basarse en información pedagógica sobre funcionamiento, barreras, fortalezas, apoyos y formas de aprendizaje del estudiante.",
-        "evidencia_observable": "Selecciona el insumo que debe orientar la flexibilización de la planeación.",
-        "tarea_cognitiva": "Identificar la valoración necesaria para diseñar ajustes razonables.",
-        "tipo_de_pregunta": "Pregunta procedimental aplicada",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Medicalizar la inclusión",
-                "revision": "La clave enfatiza caracterización pedagógica y barreras, no solo diagnóstico médico."
-            },
-            {
-                "riesgo": "Flexibilizar sin evidencia",
-                "revision": "El ítem exige insumos antes de ajustar."
-            },
-            {
-                "riesgo": "Reducir al estudiante a déficit",
-                "revision": "La opción correcta incluye fortalezas, intereses y apoyos."
-            }
-        ]
+    "claim": "El evaluado comprende que los ajustes del PIAR deben basarse en información pedagógica sobre funcionamiento, barreras, fortalezas, apoyos y formas de aprendizaje del estudiante.",
+    "evidencia_observable": "Selecciona el insumo que debe orientar la flexibilización de la planeación.",
+    "tarea_cognitiva": "Identificar la valoración necesaria para diseñar ajustes razonables.",
+    "tipo_de_pregunta": "Pregunta procedimental aplicada",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Medicalizar la inclusión",
+        "revision": "La clave enfatiza caracterización pedagógica y barreras, no solo diagnóstico médico."
+      },
+      {
+        "riesgo": "Flexibilizar sin evidencia",
+        "revision": "El ítem exige insumos antes de ajustar."
+      },
+      {
+        "riesgo": "Reducir al estudiante a déficit",
+        "revision": "La opción correcta incluye fortalezas, intereses y apoyos."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Antes de flexibilizar su planeación mediante un PIAR, un docente solicita información para comprender cómo aprende el estudiante, qué fortalezas tiene, qué barreras enfrenta y qué apoyos requiere.\n\n¿Qué valoración esencial debe orientar la elaboración del PIAR?",
+    "opciones": {
+      "A": "Una lista de sanciones disciplinarias previas del estudiante.",
+      "B": "Una calificación final del periodo anterior sin análisis pedagógico.",
+      "C": "Una opinión informal que diga que el estudiante no puede aprender.",
+      "D": "Una caracterización o valoración pedagógica que identifique fortalezas, barreras, necesidades de apoyo, intereses y formas de participación."
     },
-    "item": {
-        "enunciado": "Antes de flexibilizar su planeación mediante un PIAR, un docente solicita información para comprender cómo aprende el estudiante, qué fortalezas tiene, qué barreras enfrenta y qué apoyos requiere.\n\n¿Qué valoración esencial debe orientar la elaboración del PIAR?",
-        "opciones": {
-            "A": "Una lista de sanciones disciplinarias previas del estudiante.",
-            "B": "Una calificación final del periodo anterior sin análisis pedagógico.",
-            "C": "Una opinión informal que diga que el estudiante no puede aprender.",
-            "D": "Una caracterización o valoración pedagógica que identifique fortalezas, barreras, necesidades de apoyo, intereses y formas de participación."
-        },
-        "respuesta_correcta": "D"
+    "respuesta_correcta": "D"
+  },
+  "ficha_tecnica": {
+    "componente": "Insumos Diagnósticos del PIAR",
+    "competencia": "Caracterización pedagógica para ajustes",
+    "claim_evaluado": "El evaluado comprende que los ajustes del PIAR deben basarse en información pedagógica sobre funcionamiento, barreras, fortalezas, apoyos y formas de aprendizaje del estudiante.",
+    "evidencia": "Selecciona el insumo que debe orientar la flexibilización de la planeación.",
+    "proceso_cognitivo": "Reconocimiento procedimental aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "D",
+    "distractores": {
+      "A": "Confunde inclusión con antecedentes disciplinarios.",
+      "B": "Reduce la información a una nota sin análisis.",
+      "C": "Introduce una etiqueta deficitaria sin evidencia pedagógica."
     },
-    "ficha_tecnica": {
-        "componente": "Insumos Diagnósticos del PIAR",
-        "competencia": "Caracterización pedagógica para ajustes",
-        "claim_evaluado": "El evaluado comprende que los ajustes del PIAR deben basarse en información pedagógica sobre funcionamiento, barreras, fortalezas, apoyos y formas de aprendizaje del estudiante.",
-        "evidencia": "Selecciona el insumo que debe orientar la flexibilización de la planeación.",
-        "proceso_cognitivo": "Reconocimiento procedimental aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "D",
-        "distractores": {
-            "A": "Confunde inclusión con antecedentes disciplinarios.",
-            "B": "Reduce la información a una nota sin análisis.",
-            "C": "Introduce una etiqueta deficitaria sin evidencia pedagógica."
-        },
-        "fuente_autorizada": [
-            "Decreto 1421 de 2017",
-            "Orientaciones MEN sobre PIAR",
-            "Evaluación pedagógica",
-            "Docente de apoyo",
-            "Educación inclusiva"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque el PIAR debe apoyarse en caracterización pedagógica, barreras, fortalezas, intereses y apoyos requeridos.",
-        "opcion_A": "Es incorrecta porque los antecedentes disciplinarios no son el insumo central del PIAR.",
-        "opcion_B": "Es incorrecta porque una nota no explica barreras ni apoyos.",
-        "opcion_C": "Es incorrecta porque etiqueta al estudiante y niega sus posibilidades de aprendizaje."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita medicalizar o etiquetar al estudiante y centra el diseño del PIAR en información pedagógica útil."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado con observación",
-        "observacion": "Conviene ajustar la redacción según el formato institucional de caracterización y PIAR usado por la entidad territorial.",
-        "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 7 preguntas sobre DUA, PIAR y ajustes razonables."
+    "fuente_autorizada": [
+      "Decreto 1421 de 2017",
+      "Orientaciones MEN sobre PIAR",
+      "Evaluación pedagógica",
+      "Docente de apoyo",
+      "Educación inclusiva"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "opcion_A": "Es incorrecta porque los antecedentes disciplinarios no son el insumo central del PIAR.",
+    "opcion_B": "Es incorrecta porque una nota no explica barreras ni apoyos.",
+    "opcion_C": "Es incorrecta porque etiqueta al estudiante y niega sus posibilidades de aprendizaje.",
+    "distractores": {
+      "A": "Es incorrecta porque los antecedentes disciplinarios no son el insumo central del PIAR.",
+      "B": "Es incorrecta porque una nota no explica barreras ni apoyos.",
+      "C": "Es incorrecta porque etiqueta al estudiante y niega sus posibilidades de aprendizaje."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita medicalizar o etiquetar al estudiante y centra el diseño del PIAR en información pedagógica útil."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado con observación",
+    "observacion": "Conviene ajustar la redacción según el formato institucional de caracterización y PIAR usado por la entidad territorial.",
+    "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 7 preguntas sobre DUA, PIAR y ajustes razonables."
+  }
 }

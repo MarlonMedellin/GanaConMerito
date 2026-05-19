@@ -1,99 +1,104 @@
 {
-    "id_item": "DIL_B05_I01",
-    "archivo_sugerido": "DIL_B05_I01_menor_14_arma_no_judicializacion_penal.json",
-    "bloque": {
-        "codigo_bloque": "DIL_B05",
-        "nombre": "Menor infractor, edad penal y rutas de protección",
-        "estado_en_lista": "Bloque 5 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 1 de 3"
+  "id_item": "DIL_B05_I01",
+  "archivo_sugerido": "DIL_B05_I01_menor_14_arma_no_judicializacion_penal.json",
+  "bloque": {
+    "codigo_bloque": "DIL_B05",
+    "nombre": "Menor infractor, edad penal y rutas de protección",
+    "estado_en_lista": "Bloque 5 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 1 de 3"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce que un niño, niña o adolescente menor de 14 años sorprendido en una conducta punible no debe ser judicializado penalmente, sino remitido a ruta de protección y restablecimiento de derechos.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación, convivencia escolar, protección integral o responsabilidad penal adolescente.",
+    "blueprint": {
+      "problematica_principal": "Confusión entre respuesta penal y ruta de protección integral para menores de 14 años.",
+      "fuente_autorizada": [
+        "Ley 1098 de 2006",
+        "Sistema de Responsabilidad Penal para Adolescentes",
+        "Sistema Nacional de Bienestar Familiar",
+        "ICBF",
+        "Policía de Infancia y Adolescencia"
+      ],
+      "componente_modulo": "Tratamiento del menor infractor",
+      "competencia": "Diferenciación entre judicialización penal y restablecimiento de derechos",
+      "afirmacion": "Las personas menores de 14 años no son juzgadas ni declaradas responsables penalmente; procede verificación de garantía de derechos y ruta de protección.",
+      "evidencia_observable": "Reconoce que ante flagrancia con un menor de 14 años debe activarse autoridad de protección, no judicialización penal.",
+      "tipo_de_evidencia": "Juicio normativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "B"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce que un niño, niña o adolescente menor de 14 años sorprendido en una conducta punible no debe ser judicializado penalmente, sino remitido a ruta de protección y restablecimiento de derechos.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación, convivencia escolar, protección integral o responsabilidad penal adolescente.",
-        "blueprint": {
-            "problematica_principal": "Confusión entre respuesta penal y ruta de protección integral para menores de 14 años.",
-            "fuente_autorizada": [
-                "Ley 1098 de 2006",
-                "Sistema de Responsabilidad Penal para Adolescentes",
-                "Sistema Nacional de Bienestar Familiar",
-                "ICBF",
-                "Policía de Infancia y Adolescencia"
-            ],
-            "componente_modulo": "Tratamiento del menor infractor",
-            "competencia": "Diferenciación entre judicialización penal y restablecimiento de derechos",
-            "afirmacion": "Las personas menores de 14 años no son juzgadas ni declaradas responsables penalmente; procede verificación de garantía de derechos y ruta de protección.",
-            "evidencia_observable": "Reconoce que ante flagrancia con un menor de 14 años debe activarse autoridad de protección, no judicialización penal.",
-            "tipo_de_evidencia": "Juicio normativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "B"
-        },
-        "claim": "El evaluado comprende que la respuesta institucional frente a una conducta punible de una persona menor de 14 años debe ser protectora, educativa y de restablecimiento de derechos.",
-        "evidencia_observable": "Selecciona una actuación que remite a autoridad competente de protección y evita sanción penal indebida.",
-        "tarea_cognitiva": "Analizar un caso de flagrancia y seleccionar la ruta legal adecuada.",
-        "tipo_de_pregunta": "Caso situacional normativo",
-        "dificultad_esperada": "Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Criminalizar a niños menores de 14 años",
-                "revision": "La clave se centra en protección y restablecimiento, no en sanción penal."
-            },
-            {
-                "riesgo": "Confundir protección con impunidad",
-                "revision": "La opción correcta incluye verificación de derechos, educación y protección."
-            },
-            {
-                "riesgo": "Extralimitación escolar",
-                "revision": "El ítem exige remisión a autoridad competente."
-            }
-        ]
+    "claim": "El evaluado comprende que la respuesta institucional frente a una conducta punible de una persona menor de 14 años debe ser protectora, educativa y de restablecimiento de derechos.",
+    "evidencia_observable": "Selecciona una actuación que remite a autoridad competente de protección y evita sanción penal indebida.",
+    "tarea_cognitiva": "Analizar un caso de flagrancia y seleccionar la ruta legal adecuada.",
+    "tipo_de_pregunta": "Caso situacional normativo",
+    "dificultad_esperada": "Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Criminalizar a niños menores de 14 años",
+        "revision": "La clave se centra en protección y restablecimiento, no en sanción penal."
+      },
+      {
+        "riesgo": "Confundir protección con impunidad",
+        "revision": "La opción correcta incluye verificación de derechos, educación y protección."
+      },
+      {
+        "riesgo": "Extralimitación escolar",
+        "revision": "El ítem exige remisión a autoridad competente."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un estudiante menor de 14 años es sorprendido en flagrancia portando un arma dentro del entorno escolar. Algunos adultos exigen que sea judicializado penalmente de inmediato como si fuera un adulto.\n\n¿Por qué la escuela y la autoridad policial no deben judicializarlo penalmente y qué ruta deben seguir?",
+    "opciones": {
+      "A": "Porque la conducta debe ignorarse por completo al tratarse de un menor de edad.",
+      "B": "Porque las personas menores de 14 años no son declaradas responsables penalmente; deben ser puestas a disposición de la autoridad competente para verificación, protección, educación y restablecimiento de derechos.",
+      "C": "Porque la escuela debe aplicar por su cuenta una sanción penal interna.",
+      "D": "Porque el caso debe resolverse únicamente con una disculpa pública ante el grupo."
     },
-    "item": {
-        "enunciado": "Un estudiante menor de 14 años es sorprendido en flagrancia portando un arma dentro del entorno escolar. Algunos adultos exigen que sea judicializado penalmente de inmediato como si fuera un adulto.\n\n¿Por qué la escuela y la autoridad policial no deben judicializarlo penalmente y qué ruta deben seguir?",
-        "opciones": {
-            "A": "Porque la conducta debe ignorarse por completo al tratarse de un menor de edad.",
-            "B": "Porque las personas menores de 14 años no son declaradas responsables penalmente; deben ser puestas a disposición de la autoridad competente para verificación, protección, educación y restablecimiento de derechos.",
-            "C": "Porque la escuela debe aplicar por su cuenta una sanción penal interna.",
-            "D": "Porque el caso debe resolverse únicamente con una disculpa pública ante el grupo."
-        },
-        "respuesta_correcta": "B"
+    "respuesta_correcta": "B"
+  },
+  "ficha_tecnica": {
+    "componente": "Tratamiento del menor infractor",
+    "competencia": "Diferenciación entre judicialización penal y restablecimiento de derechos",
+    "claim_evaluado": "El evaluado comprende que la respuesta institucional frente a una conducta punible de una persona menor de 14 años debe ser protectora, educativa y de restablecimiento de derechos.",
+    "evidencia": "Selecciona una actuación que remite a autoridad competente de protección y evita sanción penal indebida.",
+    "proceso_cognitivo": "Juicio normativo aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Alta",
+    "respuesta_correcta": "B",
+    "distractores": {
+      "A": "Confunde ausencia de responsabilidad penal con ausencia de actuación protectora.",
+      "C": "Atribuye a la escuela una competencia penal que no tiene.",
+      "D": "Reduce una situación grave a una medida simbólica insuficiente."
     },
-    "ficha_tecnica": {
-        "componente": "Tratamiento del menor infractor",
-        "competencia": "Diferenciación entre judicialización penal y restablecimiento de derechos",
-        "claim_evaluado": "El evaluado comprende que la respuesta institucional frente a una conducta punible de una persona menor de 14 años debe ser protectora, educativa y de restablecimiento de derechos.",
-        "evidencia": "Selecciona una actuación que remite a autoridad competente de protección y evita sanción penal indebida.",
-        "proceso_cognitivo": "Juicio normativo aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Alta",
-        "respuesta_correcta": "B",
-        "distractores": {
-            "A": "Confunde ausencia de responsabilidad penal con ausencia de actuación protectora.",
-            "C": "Atribuye a la escuela una competencia penal que no tiene.",
-            "D": "Reduce una situación grave a una medida simbólica insuficiente."
-        },
-        "fuente_autorizada": [
-            "Ley 1098 de 2006",
-            "Sistema de Responsabilidad Penal para Adolescentes",
-            "Sistema Nacional de Bienestar Familiar",
-            "ICBF",
-            "Policía de Infancia y Adolescencia"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque un menor de 14 años no debe ser declarado responsable penalmente; procede remisión a autoridad competente para protección y restablecimiento de derechos.",
-        "opcion_A": "Es incorrecta porque la conducta no se ignora; se activa ruta protectora.",
-        "opcion_C": "Es incorrecta porque la escuela no impone sanciones penales.",
-        "opcion_D": "Es incorrecta porque no garantiza verificación de derechos ni protección integral."
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado con revisión normativa recomendada.",
-        "argumento": "El ítem evita criminalizar al menor de 14 años y también evita tratar la conducta grave como si no requiriera intervención."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Validar contra protocolos territoriales de Policía de Infancia, ICBF y Secretaría de Educación antes de aplicación definitiva.",
-        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 3 preguntas sobre menor infractor, edad penal y rutas de protección."
+    "fuente_autorizada": [
+      "Ley 1098 de 2006",
+      "Sistema de Responsabilidad Penal para Adolescentes",
+      "Sistema Nacional de Bienestar Familiar",
+      "ICBF",
+      "Policía de Infancia y Adolescencia"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "opcion_A": "Es incorrecta porque la conducta no se ignora; se activa ruta protectora.",
+    "opcion_C": "Es incorrecta porque la escuela no impone sanciones penales.",
+    "opcion_D": "Es incorrecta porque no garantiza verificación de derechos ni protección integral.",
+    "distractores": {
+      "A": "Es incorrecta porque la conducta no se ignora; se activa ruta protectora.",
+      "C": "Es incorrecta porque la escuela no impone sanciones penales.",
+      "D": "Es incorrecta porque no garantiza verificación de derechos ni protección integral."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado con revisión normativa recomendada.",
+    "argumento": "El ítem evita criminalizar al menor de 14 años y también evita tratar la conducta grave como si no requiriera intervención."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Validar contra protocolos territoriales de Policía de Infancia, ICBF y Secretaría de Educación antes de aplicación definitiva.",
+    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 3 preguntas sobre menor infractor, edad penal y rutas de protección."
+  }
 }

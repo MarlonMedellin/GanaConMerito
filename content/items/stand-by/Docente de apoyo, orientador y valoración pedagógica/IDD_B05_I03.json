@@ -1,99 +1,104 @@
 {
-    "id_item": "IDD_B05_I03",
-    "archivo_sugerido": "IDD_B05_I03_valoracion_pedagogica_no_diagnostico_clinico.json",
-    "bloque": {
-        "codigo_bloque": "IDD_B05",
-        "nombre": "Docente de apoyo, orientador y valoración pedagógica",
-        "estado_en_lista": "Bloque 5 de 17",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 3 de 4"
+  "id_item": "IDD_B05_I03",
+  "archivo_sugerido": "IDD_B05_I03_valoracion_pedagogica_no_diagnostico_clinico.json",
+  "bloque": {
+    "codigo_bloque": "IDD_B05",
+    "nombre": "Docente de apoyo, orientador y valoración pedagógica",
+    "estado_en_lista": "Bloque 5 de 17",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 3 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante diferencia la valoración pedagógica de un diagnóstico clínico y reconoce su utilidad para orientar apoyos y ajustes en el aula.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, inclusión educativa, apoyo pedagógico o coordinación académica.",
+    "blueprint": {
+      "problematica_principal": "Medicalización de las barreras de aprendizaje y dependencia exclusiva de diagnósticos clínicos para actuar pedagógicamente.",
+      "fuente_autorizada": [
+        "Decreto 1421 de 2017",
+        "Orientaciones MEN sobre educación inclusiva",
+        "PIAR",
+        "Evaluación pedagógica",
+        "DUA"
+      ],
+      "componente_modulo": "Valoración pedagógica y apoyos",
+      "competencia": "Caracterización pedagógica del estudiante",
+      "afirmacion": "La valoración pedagógica permite identificar fortalezas, barreras, formas de participación, apoyos requeridos y ajustes posibles.",
+      "evidencia_observable": "Reconoce que el docente puede iniciar acciones pedagógicas con caracterización educativa, sin esperar pasivamente un diagnóstico clínico para todo.",
+      "tipo_de_evidencia": "Comprensión procedimental aplicada",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante diferencia la valoración pedagógica de un diagnóstico clínico y reconoce su utilidad para orientar apoyos y ajustes en el aula.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, inclusión educativa, apoyo pedagógico o coordinación académica.",
-        "blueprint": {
-            "problematica_principal": "Medicalización de las barreras de aprendizaje y dependencia exclusiva de diagnósticos clínicos para actuar pedagógicamente.",
-            "fuente_autorizada": [
-                "Decreto 1421 de 2017",
-                "Orientaciones MEN sobre educación inclusiva",
-                "PIAR",
-                "Evaluación pedagógica",
-                "DUA"
-            ],
-            "componente_modulo": "Valoración pedagógica y apoyos",
-            "competencia": "Caracterización pedagógica del estudiante",
-            "afirmacion": "La valoración pedagógica permite identificar fortalezas, barreras, formas de participación, apoyos requeridos y ajustes posibles.",
-            "evidencia_observable": "Reconoce que el docente puede iniciar acciones pedagógicas con caracterización educativa, sin esperar pasivamente un diagnóstico clínico para todo.",
-            "tipo_de_evidencia": "Comprensión procedimental aplicada",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que la valoración pedagógica no reemplaza el diagnóstico clínico cuando este existe o se requiere, pero sí orienta la planeación, los apoyos y las decisiones didácticas.",
-        "evidencia_observable": "Selecciona una explicación que diferencia valoración pedagógica, diagnóstico clínico y diseño de apoyos.",
-        "tarea_cognitiva": "Distinguir tipos de información necesarios para la inclusión educativa.",
-        "tipo_de_pregunta": "Pregunta conceptual aplicada",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Negar la importancia de diagnósticos clínicos cuando son necesarios",
-                "revision": "La clave no los niega; delimita su relación con la valoración pedagógica."
-            },
-            {
-                "riesgo": "Medicalizar toda dificultad escolar",
-                "revision": "La opción correcta centra la acción docente en barreras y apoyos educativos."
-            },
-            {
-                "riesgo": "Etiquetar al estudiante",
-                "revision": "La clave habla de fortalezas, participación y apoyos."
-            }
-        ]
+    "claim": "El evaluado comprende que la valoración pedagógica no reemplaza el diagnóstico clínico cuando este existe o se requiere, pero sí orienta la planeación, los apoyos y las decisiones didácticas.",
+    "evidencia_observable": "Selecciona una explicación que diferencia valoración pedagógica, diagnóstico clínico y diseño de apoyos.",
+    "tarea_cognitiva": "Distinguir tipos de información necesarios para la inclusión educativa.",
+    "tipo_de_pregunta": "Pregunta conceptual aplicada",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Negar la importancia de diagnósticos clínicos cuando son necesarios",
+        "revision": "La clave no los niega; delimita su relación con la valoración pedagógica."
+      },
+      {
+        "riesgo": "Medicalizar toda dificultad escolar",
+        "revision": "La opción correcta centra la acción docente en barreras y apoyos educativos."
+      },
+      {
+        "riesgo": "Etiquetar al estudiante",
+        "revision": "La clave habla de fortalezas, participación y apoyos."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un estudiante presenta barreras para participar en ciertas actividades. El docente dice que no puede hacer nada hasta recibir un diagnóstico clínico completo. El docente de apoyo propone realizar una valoración pedagógica para orientar la planeación.\n\n¿Cuál es la función de esa valoración pedagógica?",
+    "opciones": {
+      "A": "Identificar fortalezas, barreras, formas de participación, apoyos requeridos y ajustes posibles para orientar la enseñanza.",
+      "B": "Emitir un diagnóstico médico definitivo desde la escuela.",
+      "C": "Clasificar al estudiante como incapaz de aprender.",
+      "D": "Justificar que el estudiante sea retirado de las actividades comunes."
     },
-    "item": {
-        "enunciado": "Un estudiante presenta barreras para participar en ciertas actividades. El docente dice que no puede hacer nada hasta recibir un diagnóstico clínico completo. El docente de apoyo propone realizar una valoración pedagógica para orientar la planeación.\n\n¿Cuál es la función de esa valoración pedagógica?",
-        "opciones": {
-            "A": "Identificar fortalezas, barreras, formas de participación, apoyos requeridos y ajustes posibles para orientar la enseñanza.",
-            "B": "Emitir un diagnóstico médico definitivo desde la escuela.",
-            "C": "Clasificar al estudiante como incapaz de aprender.",
-            "D": "Justificar que el estudiante sea retirado de las actividades comunes."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Valoración pedagógica y apoyos",
+    "competencia": "Caracterización pedagógica del estudiante",
+    "claim_evaluado": "El evaluado comprende que la valoración pedagógica no reemplaza el diagnóstico clínico cuando este existe o se requiere, pero sí orienta la planeación, los apoyos y las decisiones didácticas.",
+    "evidencia": "Selecciona una explicación que diferencia valoración pedagógica, diagnóstico clínico y diseño de apoyos.",
+    "proceso_cognitivo": "Comprensión procedimental aplicada",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Confunde valoración pedagógica con diagnóstico clínico.",
+      "C": "Etiqueta al estudiante desde el déficit.",
+      "D": "Usa la valoración para excluir en lugar de apoyar."
     },
-    "ficha_tecnica": {
-        "componente": "Valoración pedagógica y apoyos",
-        "competencia": "Caracterización pedagógica del estudiante",
-        "claim_evaluado": "El evaluado comprende que la valoración pedagógica no reemplaza el diagnóstico clínico cuando este existe o se requiere, pero sí orienta la planeación, los apoyos y las decisiones didácticas.",
-        "evidencia": "Selecciona una explicación que diferencia valoración pedagógica, diagnóstico clínico y diseño de apoyos.",
-        "proceso_cognitivo": "Comprensión procedimental aplicada",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Confunde valoración pedagógica con diagnóstico clínico.",
-            "C": "Etiqueta al estudiante desde el déficit.",
-            "D": "Usa la valoración para excluir en lugar de apoyar."
-        },
-        "fuente_autorizada": [
-            "Decreto 1421 de 2017",
-            "Orientaciones MEN sobre educación inclusiva",
-            "PIAR",
-            "Evaluación pedagógica",
-            "DUA"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque la valoración pedagógica orienta apoyos, ajustes y decisiones didácticas desde la comprensión educativa del estudiante.",
-        "opcion_B": "Es incorrecta porque la escuela no sustituye el diagnóstico clínico.",
-        "opcion_C": "Es incorrecta porque parte de una etiqueta deficitaria.",
-        "opcion_D": "Es incorrecta porque la finalidad es favorecer participación."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita medicalizar al estudiante y promueve una mirada pedagógica centrada en fortalezas, barreras y apoyos."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre docente de apoyo, orientación y valoración pedagógica."
+    "fuente_autorizada": [
+      "Decreto 1421 de 2017",
+      "Orientaciones MEN sobre educación inclusiva",
+      "PIAR",
+      "Evaluación pedagógica",
+      "DUA"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque la escuela no sustituye el diagnóstico clínico.",
+    "opcion_C": "Es incorrecta porque parte de una etiqueta deficitaria.",
+    "opcion_D": "Es incorrecta porque la finalidad es favorecer participación.",
+    "distractores": {
+      "B": "Es incorrecta porque la escuela no sustituye el diagnóstico clínico.",
+      "C": "Es incorrecta porque parte de una etiqueta deficitaria.",
+      "D": "Es incorrecta porque la finalidad es favorecer participación."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita medicalizar al estudiante y promueve una mirada pedagógica centrada en fortalezas, barreras y apoyos."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre docente de apoyo, orientación y valoración pedagógica."
+  }
 }

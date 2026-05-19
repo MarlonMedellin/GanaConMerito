@@ -1,99 +1,104 @@
 {
-    "id_item": "IDD_B05_I04",
-    "archivo_sugerido": "IDD_B05_I04_trabajo_colaborativo_docente_apoyo_orientador_familia.json",
-    "bloque": {
-        "codigo_bloque": "IDD_B05",
-        "nombre": "Docente de apoyo, orientador y valoración pedagógica",
-        "estado_en_lista": "Bloque 5 de 17",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 4 de 4"
+  "id_item": "IDD_B05_I04",
+  "archivo_sugerido": "IDD_B05_I04_trabajo_colaborativo_docente_apoyo_orientador_familia.json",
+  "bloque": {
+    "codigo_bloque": "IDD_B05",
+    "nombre": "Docente de apoyo, orientador y valoración pedagógica",
+    "estado_en_lista": "Bloque 5 de 17",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 4 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce que la atención inclusiva exige trabajo colaborativo entre maestro de aula, docente de apoyo, orientación escolar, directivos, familia y otros actores cuando corresponda.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión, orientación escolar, apoyo pedagógico o gestión institucional.",
+    "blueprint": {
+      "problematica_principal": "Fragmentación de la atención inclusiva y trabajo aislado de los actores educativos.",
+      "fuente_autorizada": [
+        "Decreto 1421 de 2017",
+        "Ley 1098 de 2006",
+        "PIAR",
+        "DUA",
+        "Gestión institucional inclusiva"
+      ],
+      "componente_modulo": "Trabajo colaborativo en inclusión",
+      "competencia": "Articulación institucional y familiar",
+      "afirmacion": "La inclusión requiere coordinación de roles, comunicación y seguimiento entre los actores corresponsables.",
+      "evidencia_observable": "Reconoce que los apoyos deben planearse, implementarse y evaluarse de forma colaborativa.",
+      "tipo_de_evidencia": "Juicio institucional aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "D"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce que la atención inclusiva exige trabajo colaborativo entre maestro de aula, docente de apoyo, orientación escolar, directivos, familia y otros actores cuando corresponda.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión, orientación escolar, apoyo pedagógico o gestión institucional.",
-        "blueprint": {
-            "problematica_principal": "Fragmentación de la atención inclusiva y trabajo aislado de los actores educativos.",
-            "fuente_autorizada": [
-                "Decreto 1421 de 2017",
-                "Ley 1098 de 2006",
-                "PIAR",
-                "DUA",
-                "Gestión institucional inclusiva"
-            ],
-            "componente_modulo": "Trabajo colaborativo en inclusión",
-            "competencia": "Articulación institucional y familiar",
-            "afirmacion": "La inclusión requiere coordinación de roles, comunicación y seguimiento entre los actores corresponsables.",
-            "evidencia_observable": "Reconoce que los apoyos deben planearse, implementarse y evaluarse de forma colaborativa.",
-            "tipo_de_evidencia": "Juicio institucional aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "D"
-        },
-        "claim": "El evaluado comprende que la inclusión no depende de un solo profesional, sino de una red institucional que define apoyos, responsabilidades, comunicación y seguimiento.",
-        "evidencia_observable": "Selecciona una estrategia de trabajo colaborativo para atender a un estudiante con barreras de aprendizaje y participación.",
-        "tarea_cognitiva": "Elegir una respuesta institucional coordinada frente a necesidades de apoyo educativo.",
-        "tipo_de_pregunta": "Caso situacional de gestión colaborativa",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Delegación total en un solo actor",
-                "revision": "La clave distribuye funciones y responsabilidades."
-            },
-            {
-                "riesgo": "Exposición innecesaria de información sensible",
-                "revision": "La opción correcta implica comunicación pertinente y confidencialidad."
-            },
-            {
-                "riesgo": "Falta de seguimiento",
-                "revision": "La clave incluye evaluación de avances y ajustes."
-            }
-        ]
+    "claim": "El evaluado comprende que la inclusión no depende de un solo profesional, sino de una red institucional que define apoyos, responsabilidades, comunicación y seguimiento.",
+    "evidencia_observable": "Selecciona una estrategia de trabajo colaborativo para atender a un estudiante con barreras de aprendizaje y participación.",
+    "tarea_cognitiva": "Elegir una respuesta institucional coordinada frente a necesidades de apoyo educativo.",
+    "tipo_de_pregunta": "Caso situacional de gestión colaborativa",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Delegación total en un solo actor",
+        "revision": "La clave distribuye funciones y responsabilidades."
+      },
+      {
+        "riesgo": "Exposición innecesaria de información sensible",
+        "revision": "La opción correcta implica comunicación pertinente y confidencialidad."
+      },
+      {
+        "riesgo": "Falta de seguimiento",
+        "revision": "La clave incluye evaluación de avances y ajustes."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un estudiante con barreras de aprendizaje recibe apoyos en algunos momentos, pero cada actor trabaja por separado: el maestro de aula no conoce las recomendaciones, la familia no recibe orientación y el docente de apoyo no tiene espacios de seguimiento con el equipo.\n\n¿Qué estrategia institucional es más adecuada?",
+    "opciones": {
+      "A": "Mantener la información separada para que cada actor actúe como pueda.",
+      "B": "Entregar toda la responsabilidad al docente de apoyo y excluir al maestro de aula de las decisiones.",
+      "C": "Pedir a la familia que resuelva sola los apoyos externos antes de volver a clase.",
+      "D": "Organizar trabajo colaborativo con roles claros, comunicación pertinente, acuerdos pedagógicos, participación familiar y seguimiento periódico de avances."
     },
-    "item": {
-        "enunciado": "Un estudiante con barreras de aprendizaje recibe apoyos en algunos momentos, pero cada actor trabaja por separado: el maestro de aula no conoce las recomendaciones, la familia no recibe orientación y el docente de apoyo no tiene espacios de seguimiento con el equipo.\n\n¿Qué estrategia institucional es más adecuada?",
-        "opciones": {
-            "A": "Mantener la información separada para que cada actor actúe como pueda.",
-            "B": "Entregar toda la responsabilidad al docente de apoyo y excluir al maestro de aula de las decisiones.",
-            "C": "Pedir a la familia que resuelva sola los apoyos externos antes de volver a clase.",
-            "D": "Organizar trabajo colaborativo con roles claros, comunicación pertinente, acuerdos pedagógicos, participación familiar y seguimiento periódico de avances."
-        },
-        "respuesta_correcta": "D"
+    "respuesta_correcta": "D"
+  },
+  "ficha_tecnica": {
+    "componente": "Trabajo colaborativo en inclusión",
+    "competencia": "Articulación institucional y familiar",
+    "claim_evaluado": "El evaluado comprende que la inclusión no depende de un solo profesional, sino de una red institucional que define apoyos, responsabilidades, comunicación y seguimiento.",
+    "evidencia": "Selecciona una estrategia de trabajo colaborativo para atender a un estudiante con barreras de aprendizaje y participación.",
+    "proceso_cognitivo": "Juicio institucional aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "D",
+    "distractores": {
+      "A": "Mantiene fragmentación y desarticulación.",
+      "B": "Sobrecarga al docente de apoyo y excluye al maestro de aula.",
+      "C": "Traslada la responsabilidad a la familia."
     },
-    "ficha_tecnica": {
-        "componente": "Trabajo colaborativo en inclusión",
-        "competencia": "Articulación institucional y familiar",
-        "claim_evaluado": "El evaluado comprende que la inclusión no depende de un solo profesional, sino de una red institucional que define apoyos, responsabilidades, comunicación y seguimiento.",
-        "evidencia": "Selecciona una estrategia de trabajo colaborativo para atender a un estudiante con barreras de aprendizaje y participación.",
-        "proceso_cognitivo": "Juicio institucional aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "D",
-        "distractores": {
-            "A": "Mantiene fragmentación y desarticulación.",
-            "B": "Sobrecarga al docente de apoyo y excluye al maestro de aula.",
-            "C": "Traslada la responsabilidad a la familia."
-        },
-        "fuente_autorizada": [
-            "Decreto 1421 de 2017",
-            "Ley 1098 de 2006",
-            "PIAR",
-            "DUA",
-            "Gestión institucional inclusiva"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque la inclusión requiere coordinación, roles claros, comunicación, familia y seguimiento.",
-        "opcion_A": "Es incorrecta porque perpetúa la desarticulación.",
-        "opcion_B": "Es incorrecta porque delega todo en un solo profesional.",
-        "opcion_C": "Es incorrecta porque la familia participa, pero no sustituye la responsabilidad escolar."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem promueve corresponsabilidad sin exponer innecesariamente información sensible ni culpar a un solo actor."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre docente de apoyo, orientación y valoración pedagógica."
+    "fuente_autorizada": [
+      "Decreto 1421 de 2017",
+      "Ley 1098 de 2006",
+      "PIAR",
+      "DUA",
+      "Gestión institucional inclusiva"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "opcion_A": "Es incorrecta porque perpetúa la desarticulación.",
+    "opcion_B": "Es incorrecta porque delega todo en un solo profesional.",
+    "opcion_C": "Es incorrecta porque la familia participa, pero no sustituye la responsabilidad escolar.",
+    "distractores": {
+      "A": "Es incorrecta porque perpetúa la desarticulación.",
+      "B": "Es incorrecta porque delega todo en un solo profesional.",
+      "C": "Es incorrecta porque la familia participa, pero no sustituye la responsabilidad escolar."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem promueve corresponsabilidad sin exponer innecesariamente información sensible ni culpar a un solo actor."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre docente de apoyo, orientación y valoración pedagógica."
+  }
 }

@@ -1,101 +1,106 @@
 {
-    "id_item": "CEOL_B07_I03",
-    "archivo_sugerido": "CEOL_B07_I03_subjetividad_conocimiento_constructivismo.json",
-    "bloque": {
-        "codigo_bloque": "CEOL_B07",
-        "nombre": "Ideas previas, conflicto cognitivo y desarrollo constructivista",
-        "estado_en_lista": "Bloque 7 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 3 de 6"
+  "id_item": "CEOL_B07_I03",
+  "archivo_sugerido": "CEOL_B07_I03_subjetividad_conocimiento_constructivismo.json",
+  "bloque": {
+    "codigo_bloque": "CEOL_B07",
+    "nombre": "Ideas previas, conflicto cognitivo y desarrollo constructivista",
+    "estado_en_lista": "Bloque 7 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 3 de 6"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante comprende la idea constructivista de que el conocimiento no se recibe como copia exacta de la realidad, sino que se construye mediante esquemas, experiencias e interpretaciones.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con pedagogía, didáctica, docencia o gestión académica.",
+    "blueprint": {
+      "problematica_principal": "Comprensión ingenua del conocimiento como copia objetiva y absoluta de la realidad.",
+      "fuente_autorizada": [
+        "Constructivismo",
+        "Epistemología genética",
+        "Didáctica general",
+        "Teoría del aprendizaje"
+      ],
+      "componente_modulo": "Epistemología y Desarrollo Cognitivo",
+      "competencia": "Comprensión epistemológica del aprendizaje",
+      "afirmacion": "El conocimiento se construye mediante esquemas, experiencias, creencias previas e interacción con el entorno.",
+      "evidencia_observable": "Reconoce que el estudiante interpreta la información desde estructuras cognitivas previas y no como reflejo pasivo de la realidad.",
+      "tipo_de_evidencia": "Comprensión conceptual aplicada",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "D"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante comprende la idea constructivista de que el conocimiento no se recibe como copia exacta de la realidad, sino que se construye mediante esquemas, experiencias e interpretaciones.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con pedagogía, didáctica, docencia o gestión académica.",
-        "blueprint": {
-            "problematica_principal": "Comprensión ingenua del conocimiento como copia objetiva y absoluta de la realidad.",
-            "fuente_autorizada": [
-                "Constructivismo",
-                "Epistemología genética",
-                "Didáctica general",
-                "Teoría del aprendizaje"
-            ],
-            "componente_modulo": "Epistemología y Desarrollo Cognitivo",
-            "competencia": "Comprensión epistemológica del aprendizaje",
-            "afirmacion": "El conocimiento se construye mediante esquemas, experiencias, creencias previas e interacción con el entorno.",
-            "evidencia_observable": "Reconoce que el estudiante interpreta la información desde estructuras cognitivas previas y no como reflejo pasivo de la realidad.",
-            "tipo_de_evidencia": "Comprensión conceptual aplicada",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "D"
-        },
-        "claim": "El evaluado comprende que, desde una perspectiva constructivista, aprender implica organizar e interpretar la experiencia, no copiar mecánicamente una realidad externa.",
-        "evidencia_observable": "Selecciona una explicación que relaciona conocimiento, esquemas previos, interpretación y construcción activa.",
-        "tarea_cognitiva": "Diferenciar una concepción transmisiva del conocimiento de una concepción constructivista.",
-        "tipo_de_pregunta": "Pregunta conceptual aplicada",
-        "dificultad_esperada": "Media-Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Lenguaje filosófico abstracto",
-                "revision": "El ítem traduce la noción epistemológica a una situación de aprendizaje."
-            },
-            {
-                "riesgo": "Confundir constructivismo con relativismo absoluto",
-                "revision": "La clave habla de construcción e interpretación, no de que cualquier idea sea igualmente válida."
-            },
-            {
-                "riesgo": "Ambigüedad con creencias personales",
-                "revision": "El ítem diferencia creencias previas como punto de partida de conocimiento validado mediante contraste."
-            },
-            {
-                "riesgo": "Sesgo por formación teórica previa",
-                "revision": "La pregunta no exige citar autores, sino comprender el principio general."
-            }
-        ]
+    "claim": "El evaluado comprende que, desde una perspectiva constructivista, aprender implica organizar e interpretar la experiencia, no copiar mecánicamente una realidad externa.",
+    "evidencia_observable": "Selecciona una explicación que relaciona conocimiento, esquemas previos, interpretación y construcción activa.",
+    "tarea_cognitiva": "Diferenciar una concepción transmisiva del conocimiento de una concepción constructivista.",
+    "tipo_de_pregunta": "Pregunta conceptual aplicada",
+    "dificultad_esperada": "Media-Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Lenguaje filosófico abstracto",
+        "revision": "El ítem traduce la noción epistemológica a una situación de aprendizaje."
+      },
+      {
+        "riesgo": "Confundir constructivismo con relativismo absoluto",
+        "revision": "La clave habla de construcción e interpretación, no de que cualquier idea sea igualmente válida."
+      },
+      {
+        "riesgo": "Ambigüedad con creencias personales",
+        "revision": "El ítem diferencia creencias previas como punto de partida de conocimiento validado mediante contraste."
+      },
+      {
+        "riesgo": "Sesgo por formación teórica previa",
+        "revision": "La pregunta no exige citar autores, sino comprender el principio general."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un docente afirma que aprender no consiste simplemente en copiar la realidad tal como es, sino en interpretar la información desde experiencias, esquemas previos, lenguaje y creencias que luego pueden ser contrastadas y reorganizadas.\n\nDesde una perspectiva constructivista, ¿qué significa esta afirmación?",
+    "opciones": {
+      "A": "Que todo conocimiento escolar es inútil porque cada estudiante puede creer cualquier cosa sin contrastarla.",
+      "B": "Que el docente debe transmitir definiciones para que los estudiantes las repitan sin modificarlas.",
+      "C": "Que la realidad no existe y por eso no tiene sentido enseñar ciencias ni argumentar.",
+      "D": "Que el conocimiento se construye activamente mediante interpretación, interacción con el entorno, contraste y reorganización de esquemas previos."
     },
-    "item": {
-        "enunciado": "Un docente afirma que aprender no consiste simplemente en copiar la realidad tal como es, sino en interpretar la información desde experiencias, esquemas previos, lenguaje y creencias que luego pueden ser contrastadas y reorganizadas.\n\nDesde una perspectiva constructivista, ¿qué significa esta afirmación?",
-        "opciones": {
-            "A": "Que todo conocimiento escolar es inútil porque cada estudiante puede creer cualquier cosa sin contrastarla.",
-            "B": "Que el docente debe transmitir definiciones para que los estudiantes las repitan sin modificarlas.",
-            "C": "Que la realidad no existe y por eso no tiene sentido enseñar ciencias ni argumentar.",
-            "D": "Que el conocimiento se construye activamente mediante interpretación, interacción con el entorno, contraste y reorganización de esquemas previos."
-        },
-        "respuesta_correcta": "D"
+    "respuesta_correcta": "D"
+  },
+  "ficha_tecnica": {
+    "componente": "Epistemología y Desarrollo Cognitivo",
+    "competencia": "Comprensión epistemológica del aprendizaje",
+    "claim_evaluado": "El evaluado comprende que, desde una perspectiva constructivista, aprender implica organizar e interpretar la experiencia, no copiar mecánicamente una realidad externa.",
+    "evidencia": "Selecciona una explicación que relaciona conocimiento, esquemas previos, interpretación y construcción activa.",
+    "proceso_cognitivo": "Comprensión conceptual aplicada",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media-Alta",
+    "respuesta_correcta": "D",
+    "distractores": {
+      "A": "Confunde constructivismo con relativismo absoluto.",
+      "B": "Representa un modelo transmisivo y memorístico.",
+      "C": "Caricaturiza la postura constructivista como negación de la realidad."
     },
-    "ficha_tecnica": {
-        "componente": "Epistemología y Desarrollo Cognitivo",
-        "competencia": "Comprensión epistemológica del aprendizaje",
-        "claim_evaluado": "El evaluado comprende que, desde una perspectiva constructivista, aprender implica organizar e interpretar la experiencia, no copiar mecánicamente una realidad externa.",
-        "evidencia": "Selecciona una explicación que relaciona conocimiento, esquemas previos, interpretación y construcción activa.",
-        "proceso_cognitivo": "Comprensión conceptual aplicada",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media-Alta",
-        "respuesta_correcta": "D",
-        "distractores": {
-            "A": "Confunde constructivismo con relativismo absoluto.",
-            "B": "Representa un modelo transmisivo y memorístico.",
-            "C": "Caricaturiza la postura constructivista como negación de la realidad."
-        },
-        "fuente_autorizada": [
-            "Constructivismo",
-            "Epistemología genética",
-            "Didáctica general",
-            "Teoría del aprendizaje"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque reconoce la construcción activa del conocimiento mediante esquemas previos, interpretación, interacción y contraste.",
-        "opcion_A": "Es incorrecta porque el constructivismo no sostiene que cualquier creencia sea válida sin contraste.",
-        "opcion_B": "Es incorrecta porque reduce el aprendizaje a repetición de definiciones.",
-        "opcion_C": "Es incorrecta porque distorsiona la perspectiva constructivista."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem presenta una noción epistemológica en lenguaje pedagógico accesible y evita caricaturizar el constructivismo como relativismo absoluto."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 6 preguntas sobre ideas previas, conflicto cognitivo y desarrollo constructivista."
+    "fuente_autorizada": [
+      "Constructivismo",
+      "Epistemología genética",
+      "Didáctica general",
+      "Teoría del aprendizaje"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "opcion_A": "Es incorrecta porque el constructivismo no sostiene que cualquier creencia sea válida sin contraste.",
+    "opcion_B": "Es incorrecta porque reduce el aprendizaje a repetición de definiciones.",
+    "opcion_C": "Es incorrecta porque distorsiona la perspectiva constructivista.",
+    "distractores": {
+      "A": "Es incorrecta porque el constructivismo no sostiene que cualquier creencia sea válida sin contraste.",
+      "B": "Es incorrecta porque reduce el aprendizaje a repetición de definiciones.",
+      "C": "Es incorrecta porque distorsiona la perspectiva constructivista."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem presenta una noción epistemológica en lenguaje pedagógico accesible y evita caricaturizar el constructivismo como relativismo absoluto."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 6 preguntas sobre ideas previas, conflicto cognitivo y desarrollo constructivista."
+  }
 }

@@ -1,101 +1,106 @@
 {
-    "id_item": "CEOL_B07_I01",
-    "archivo_sugerido": "CEOL_B07_I01_conflicto_cognitivo_haces_luz_atomo.json",
-    "bloque": {
-        "codigo_bloque": "CEOL_B07",
-        "nombre": "Ideas previas, conflicto cognitivo y desarrollo constructivista",
-        "estado_en_lista": "Bloque 7 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 1 de 6"
+  "id_item": "CEOL_B07_I01",
+  "archivo_sugerido": "CEOL_B07_I01_conflicto_cognitivo_haces_luz_atomo.json",
+  "bloque": {
+    "codigo_bloque": "CEOL_B07",
+    "nombre": "Ideas previas, conflicto cognitivo y desarrollo constructivista",
+    "estado_en_lista": "Bloque 7 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 1 de 6"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce cómo una pregunta que contradice una idea previa puede usarse didácticamente para generar conflicto cognitivo y reconstrucción conceptual.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, didáctica de las ciencias, pedagogía o gestión académica.",
+    "blueprint": {
+      "problematica_principal": "Uso de una aparente contradicción científica para activar conflicto cognitivo y revisar ideas previas.",
+      "fuente_autorizada": [
+        "Enfoque constructivista",
+        "Didáctica de las ciencias",
+        "Aprendizaje significativo",
+        "Teoría de ideas previas y cambio conceptual"
+      ],
+      "componente_modulo": "Aprendizaje Significativo, Ideas Previas y Conflicto Cognitivo",
+      "competencia": "Mediación del conflicto cognitivo",
+      "afirmacion": "El conflicto cognitivo permite confrontar ideas previas con nueva información para favorecer reestructuración conceptual.",
+      "evidencia_observable": "Reconoce que el docente debe usar la pregunta para indagar concepciones iniciales, contrastarlas con evidencias y orientar una explicación científicamente adecuada.",
+      "tipo_de_evidencia": "Juicio didáctico aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "C"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce cómo una pregunta que contradice una idea previa puede usarse didácticamente para generar conflicto cognitivo y reconstrucción conceptual.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, didáctica de las ciencias, pedagogía o gestión académica.",
-        "blueprint": {
-            "problematica_principal": "Uso de una aparente contradicción científica para activar conflicto cognitivo y revisar ideas previas.",
-            "fuente_autorizada": [
-                "Enfoque constructivista",
-                "Didáctica de las ciencias",
-                "Aprendizaje significativo",
-                "Teoría de ideas previas y cambio conceptual"
-            ],
-            "componente_modulo": "Aprendizaje Significativo, Ideas Previas y Conflicto Cognitivo",
-            "competencia": "Mediación del conflicto cognitivo",
-            "afirmacion": "El conflicto cognitivo permite confrontar ideas previas con nueva información para favorecer reestructuración conceptual.",
-            "evidencia_observable": "Reconoce que el docente debe usar la pregunta para indagar concepciones iniciales, contrastarlas con evidencias y orientar una explicación científicamente adecuada.",
-            "tipo_de_evidencia": "Juicio didáctico aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "C"
-        },
-        "claim": "El evaluado comprende que una pregunta desafiante no debe resolverse solo corrigiendo al estudiante, sino explorando sus ideas previas, generando contraste con evidencias y orientando la reconstrucción conceptual.",
-        "evidencia_observable": "Selecciona una intervención docente que transforma la pregunta sobre luz, masa y átomo en oportunidad de indagación y cambio conceptual.",
-        "tarea_cognitiva": "Analizar una pregunta científicamente problemática y elegir una mediación constructivista adecuada.",
-        "tipo_de_pregunta": "Caso situacional de juicio didáctico",
-        "dificultad_esperada": "Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Sesgo por conocimiento avanzado de física",
-                "revision": "El ítem no exige explicar física cuántica; evalúa la mediación pedagógica frente a una idea previa."
-            },
-            {
-                "riesgo": "Reforzar una afirmación científicamente imprecisa",
-                "revision": "La clave evita afirmar que la luz está compuesta por átomos y orienta a diferenciar masa atómica, fotones y evidencia."
-            },
-            {
-                "riesgo": "Ridiculización de la pregunta del estudiante",
-                "revision": "La opción correcta valora la pregunta como oportunidad de aprendizaje."
-            },
-            {
-                "riesgo": "Ambigüedad entre corregir y construir",
-                "revision": "La clave integra indagación, contraste y reconstrucción conceptual."
-            }
-        ]
+    "claim": "El evaluado comprende que una pregunta desafiante no debe resolverse solo corrigiendo al estudiante, sino explorando sus ideas previas, generando contraste con evidencias y orientando la reconstrucción conceptual.",
+    "evidencia_observable": "Selecciona una intervención docente que transforma la pregunta sobre luz, masa y átomo en oportunidad de indagación y cambio conceptual.",
+    "tarea_cognitiva": "Analizar una pregunta científicamente problemática y elegir una mediación constructivista adecuada.",
+    "tipo_de_pregunta": "Caso situacional de juicio didáctico",
+    "dificultad_esperada": "Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Sesgo por conocimiento avanzado de física",
+        "revision": "El ítem no exige explicar física cuántica; evalúa la mediación pedagógica frente a una idea previa."
+      },
+      {
+        "riesgo": "Reforzar una afirmación científicamente imprecisa",
+        "revision": "La clave evita afirmar que la luz está compuesta por átomos y orienta a diferenciar masa atómica, fotones y evidencia."
+      },
+      {
+        "riesgo": "Ridiculización de la pregunta del estudiante",
+        "revision": "La opción correcta valora la pregunta como oportunidad de aprendizaje."
+      },
+      {
+        "riesgo": "Ambigüedad entre corregir y construir",
+        "revision": "La clave integra indagación, contraste y reconstrucción conceptual."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "En una clase de ciencias, un estudiante pregunta: “Si nos enseñan que el átomo tiene masa, ¿por qué cuando chocan dos haces de luz no sentimos el choque de los átomos?”. La pregunta revela una confusión entre materia formada por átomos y luz formada por fotones. El docente quiere aprovecharla como conflicto cognitivo.\n\n¿Cuál intervención es más adecuada?",
+    "opciones": {
+      "A": "Decir que la pregunta no tiene sentido y continuar con el tema planeado.",
+      "B": "Responder que la luz está hecha de átomos invisibles y que por eso no se siente el choque.",
+      "C": "Explorar qué entiende el estudiante por átomo, masa y luz; contrastar esas ideas con evidencias y orientar la diferencia entre materia atómica y radiación luminosa.",
+      "D": "Calificar negativamente la pregunta porque demuestra desconocimiento del tema."
     },
-    "item": {
-        "enunciado": "En una clase de ciencias, un estudiante pregunta: “Si nos enseñan que el átomo tiene masa, ¿por qué cuando chocan dos haces de luz no sentimos el choque de los átomos?”. La pregunta revela una confusión entre materia formada por átomos y luz formada por fotones. El docente quiere aprovecharla como conflicto cognitivo.\n\n¿Cuál intervención es más adecuada?",
-        "opciones": {
-            "A": "Decir que la pregunta no tiene sentido y continuar con el tema planeado.",
-            "B": "Responder que la luz está hecha de átomos invisibles y que por eso no se siente el choque.",
-            "C": "Explorar qué entiende el estudiante por átomo, masa y luz; contrastar esas ideas con evidencias y orientar la diferencia entre materia atómica y radiación luminosa.",
-            "D": "Calificar negativamente la pregunta porque demuestra desconocimiento del tema."
-        },
-        "respuesta_correcta": "C"
+    "respuesta_correcta": "C"
+  },
+  "ficha_tecnica": {
+    "componente": "Aprendizaje Significativo, Ideas Previas y Conflicto Cognitivo",
+    "competencia": "Mediación del conflicto cognitivo",
+    "claim_evaluado": "El evaluado comprende que una pregunta desafiante no debe resolverse solo corrigiendo al estudiante, sino explorando sus ideas previas, generando contraste con evidencias y orientando la reconstrucción conceptual.",
+    "evidencia": "Selecciona una intervención docente que transforma la pregunta sobre luz, masa y átomo en oportunidad de indagación y cambio conceptual.",
+    "proceso_cognitivo": "Análisis y juicio didáctico",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Alta",
+    "respuesta_correcta": "C",
+    "distractores": {
+      "A": "Desaprovecha la pregunta como oportunidad de conflicto cognitivo.",
+      "B": "Refuerza una explicación científicamente incorrecta.",
+      "D": "Convierte la duda del estudiante en sanción y bloquea la indagación."
     },
-    "ficha_tecnica": {
-        "componente": "Aprendizaje Significativo, Ideas Previas y Conflicto Cognitivo",
-        "competencia": "Mediación del conflicto cognitivo",
-        "claim_evaluado": "El evaluado comprende que una pregunta desafiante no debe resolverse solo corrigiendo al estudiante, sino explorando sus ideas previas, generando contraste con evidencias y orientando la reconstrucción conceptual.",
-        "evidencia": "Selecciona una intervención docente que transforma la pregunta sobre luz, masa y átomo en oportunidad de indagación y cambio conceptual.",
-        "proceso_cognitivo": "Análisis y juicio didáctico",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Alta",
-        "respuesta_correcta": "C",
-        "distractores": {
-            "A": "Desaprovecha la pregunta como oportunidad de conflicto cognitivo.",
-            "B": "Refuerza una explicación científicamente incorrecta.",
-            "D": "Convierte la duda del estudiante en sanción y bloquea la indagación."
-        },
-        "fuente_autorizada": [
-            "Enfoque constructivista",
-            "Didáctica de las ciencias",
-            "Aprendizaje significativo",
-            "Teoría de ideas previas y cambio conceptual"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque permite identificar ideas previas, generar contraste con evidencias y orientar la reconstrucción conceptual sin ridiculizar la pregunta.",
-        "opcion_A": "Es incorrecta porque ignora una oportunidad didáctica valiosa.",
-        "opcion_B": "Es incorrecta porque confunde luz con materia atómica.",
-        "opcion_D": "Es incorrecta porque sanciona una pregunta que puede activar aprendizaje."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem no evalúa física avanzada, sino la capacidad docente de manejar una idea previa científicamente imprecisa mediante una mediación constructivista."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión disciplinar posterior recomendada por tratar una situación científica.",
-        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 6 preguntas sobre ideas previas, conflicto cognitivo y desarrollo constructivista."
+    "fuente_autorizada": [
+      "Enfoque constructivista",
+      "Didáctica de las ciencias",
+      "Aprendizaje significativo",
+      "Teoría de ideas previas y cambio conceptual"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "opcion_A": "Es incorrecta porque ignora una oportunidad didáctica valiosa.",
+    "opcion_B": "Es incorrecta porque confunde luz con materia atómica.",
+    "opcion_D": "Es incorrecta porque sanciona una pregunta que puede activar aprendizaje.",
+    "distractores": {
+      "A": "Es incorrecta porque ignora una oportunidad didáctica valiosa.",
+      "B": "Es incorrecta porque confunde luz con materia atómica.",
+      "D": "Es incorrecta porque sanciona una pregunta que puede activar aprendizaje."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem no evalúa física avanzada, sino la capacidad docente de manejar una idea previa científicamente imprecisa mediante una mediación constructivista."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión disciplinar posterior recomendada por tratar una situación científica.",
+    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 6 preguntas sobre ideas previas, conflicto cognitivo y desarrollo constructivista."
+  }
 }

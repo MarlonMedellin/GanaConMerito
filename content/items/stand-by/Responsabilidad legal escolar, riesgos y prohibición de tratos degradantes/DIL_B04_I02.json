@@ -1,99 +1,104 @@
 {
-    "id_item": "DIL_B04_I02",
-    "archivo_sugerido": "DIL_B04_I02_prohibicion_castigos_humillaciones_tratos_degradantes.json",
-    "bloque": {
-        "codigo_bloque": "DIL_B04",
-        "nombre": "Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes",
-        "estado_en_lista": "Bloque 4 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 2 de 5"
+  "id_item": "DIL_B04_I02",
+  "archivo_sugerido": "DIL_B04_I02_prohibicion_castigos_humillaciones_tratos_degradantes.json",
+  "bloque": {
+    "codigo_bloque": "DIL_B04",
+    "nombre": "Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes",
+    "estado_en_lista": "Bloque 4 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 2 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante identifica la prohibición de castigos físicos, humillaciones públicas y sanciones que afecten la dignidad de niños, niñas y adolescentes.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, convivencia escolar, orientación, coordinación o manuales de convivencia.",
+    "blueprint": {
+      "problematica_principal": "Uso de prácticas disciplinarias degradantes bajo la excusa de corrección pedagógica.",
+      "fuente_autorizada": [
+        "Ley 1098 de 2006",
+        "Constitución Política de Colombia",
+        "Manual de Convivencia",
+        "Enfoque de dignidad humana",
+        "Ley 1620 de 2013"
+      ],
+      "componente_modulo": "Prohibición de tratos degradantes",
+      "competencia": "Disciplina escolar respetuosa de la dignidad",
+      "afirmacion": "Las medidas disciplinarias no pueden incluir castigos físicos, humillaciones públicas ni tratos que afecten la dignidad del estudiante.",
+      "evidencia_observable": "Reconoce que la corrección escolar debe ser pedagógica, proporcional y respetuosa de derechos.",
+      "tipo_de_evidencia": "Juicio jurídico-pedagógico aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "D"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante identifica la prohibición de castigos físicos, humillaciones públicas y sanciones que afecten la dignidad de niños, niñas y adolescentes.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, convivencia escolar, orientación, coordinación o manuales de convivencia.",
-        "blueprint": {
-            "problematica_principal": "Uso de prácticas disciplinarias degradantes bajo la excusa de corrección pedagógica.",
-            "fuente_autorizada": [
-                "Ley 1098 de 2006",
-                "Constitución Política de Colombia",
-                "Manual de Convivencia",
-                "Enfoque de dignidad humana",
-                "Ley 1620 de 2013"
-            ],
-            "componente_modulo": "Prohibición de tratos degradantes",
-            "competencia": "Disciplina escolar respetuosa de la dignidad",
-            "afirmacion": "Las medidas disciplinarias no pueden incluir castigos físicos, humillaciones públicas ni tratos que afecten la dignidad del estudiante.",
-            "evidencia_observable": "Reconoce que la corrección escolar debe ser pedagógica, proporcional y respetuosa de derechos.",
-            "tipo_de_evidencia": "Juicio jurídico-pedagógico aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "D"
-        },
-        "claim": "El evaluado comprende que la disciplina escolar está limitada por la dignidad humana, la protección contra el maltrato y el enfoque de derechos.",
-        "evidencia_observable": "Selecciona la opción que rechaza castigos físicos y humillantes como medidas disciplinarias.",
-        "tarea_cognitiva": "Diferenciar corrección pedagógica de trato degradante.",
-        "tipo_de_pregunta": "Caso situacional normativo",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Normalizar humillaciones como disciplina",
-                "revision": "La clave rechaza prácticas degradantes."
-            },
-            {
-                "riesgo": "Confundir respeto de derechos con ausencia de normas",
-                "revision": "La opción correcta permite medidas pedagógicas proporcionales."
-            },
-            {
-                "riesgo": "Exponer al estudiante",
-                "revision": "El ítem protege confidencialidad y dignidad."
-            }
-        ]
+    "claim": "El evaluado comprende que la disciplina escolar está limitada por la dignidad humana, la protección contra el maltrato y el enfoque de derechos.",
+    "evidencia_observable": "Selecciona la opción que rechaza castigos físicos y humillantes como medidas disciplinarias.",
+    "tarea_cognitiva": "Diferenciar corrección pedagógica de trato degradante.",
+    "tipo_de_pregunta": "Caso situacional normativo",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Normalizar humillaciones como disciplina",
+        "revision": "La clave rechaza prácticas degradantes."
+      },
+      {
+        "riesgo": "Confundir respeto de derechos con ausencia de normas",
+        "revision": "La opción correcta permite medidas pedagógicas proporcionales."
+      },
+      {
+        "riesgo": "Exponer al estudiante",
+        "revision": "El ítem protege confidencialidad y dignidad."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un colegio propone como medida disciplinaria que los estudiantes que incumplen normas sean ridiculizados frente al grupo o reciban castigos físicos leves para que aprendan la lección.\n\n¿En qué se fundamenta la prohibición de este tipo de medidas?",
+    "opciones": {
+      "A": "En que los colegios no pueden tener normas de convivencia.",
+      "B": "En que todo acto de indisciplina debe quedar sin consecuencia.",
+      "C": "En que la humillación pública es una estrategia pedagógica válida si se aplica pocas veces.",
+      "D": "En la protección de la dignidad humana y en la prohibición de maltrato, castigo físico, humillación o trato degradante contra niños, niñas y adolescentes."
     },
-    "item": {
-        "enunciado": "Un colegio propone como medida disciplinaria que los estudiantes que incumplen normas sean ridiculizados frente al grupo o reciban castigos físicos leves para que aprendan la lección.\n\n¿En qué se fundamenta la prohibición de este tipo de medidas?",
-        "opciones": {
-            "A": "En que los colegios no pueden tener normas de convivencia.",
-            "B": "En que todo acto de indisciplina debe quedar sin consecuencia.",
-            "C": "En que la humillación pública es una estrategia pedagógica válida si se aplica pocas veces.",
-            "D": "En la protección de la dignidad humana y en la prohibición de maltrato, castigo físico, humillación o trato degradante contra niños, niñas y adolescentes."
-        },
-        "respuesta_correcta": "D"
+    "respuesta_correcta": "D"
+  },
+  "ficha_tecnica": {
+    "componente": "Prohibición de tratos degradantes",
+    "competencia": "Disciplina escolar respetuosa de la dignidad",
+    "claim_evaluado": "El evaluado comprende que la disciplina escolar está limitada por la dignidad humana, la protección contra el maltrato y el enfoque de derechos.",
+    "evidencia": "Selecciona la opción que rechaza castigos físicos y humillantes como medidas disciplinarias.",
+    "proceso_cognitivo": "Juicio jurídico-pedagógico aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "D",
+    "distractores": {
+      "A": "Confunde respeto por derechos con ausencia de normas.",
+      "B": "Confunde prohibición de maltrato con impunidad disciplinaria.",
+      "C": "Normaliza una práctica humillante y contraria a la dignidad."
     },
-    "ficha_tecnica": {
-        "componente": "Prohibición de tratos degradantes",
-        "competencia": "Disciplina escolar respetuosa de la dignidad",
-        "claim_evaluado": "El evaluado comprende que la disciplina escolar está limitada por la dignidad humana, la protección contra el maltrato y el enfoque de derechos.",
-        "evidencia": "Selecciona la opción que rechaza castigos físicos y humillantes como medidas disciplinarias.",
-        "proceso_cognitivo": "Juicio jurídico-pedagógico aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "D",
-        "distractores": {
-            "A": "Confunde respeto por derechos con ausencia de normas.",
-            "B": "Confunde prohibición de maltrato con impunidad disciplinaria.",
-            "C": "Normaliza una práctica humillante y contraria a la dignidad."
-        },
-        "fuente_autorizada": [
-            "Ley 1098 de 2006",
-            "Constitución Política de Colombia",
-            "Manual de Convivencia",
-            "Enfoque de dignidad humana",
-            "Ley 1620 de 2013"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque ninguna medida disciplinaria puede vulnerar la dignidad ni constituir maltrato o humillación.",
-        "opcion_A": "Es incorrecta porque la escuela sí puede tener normas.",
-        "opcion_B": "Es incorrecta porque puede haber consecuencias pedagógicas y proporcionales.",
-        "opcion_C": "Es incorrecta porque la humillación no se vuelve válida por ser ocasional."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem defiende la dignidad del estudiante sin negar la necesidad de convivencia y disciplina pedagógica."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 5 preguntas sobre responsabilidad legal escolar, riesgos y prohibición de tratos degradantes."
+    "fuente_autorizada": [
+      "Ley 1098 de 2006",
+      "Constitución Política de Colombia",
+      "Manual de Convivencia",
+      "Enfoque de dignidad humana",
+      "Ley 1620 de 2013"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "opcion_A": "Es incorrecta porque la escuela sí puede tener normas.",
+    "opcion_B": "Es incorrecta porque puede haber consecuencias pedagógicas y proporcionales.",
+    "opcion_C": "Es incorrecta porque la humillación no se vuelve válida por ser ocasional.",
+    "distractores": {
+      "A": "Es incorrecta porque la escuela sí puede tener normas.",
+      "B": "Es incorrecta porque puede haber consecuencias pedagógicas y proporcionales.",
+      "C": "Es incorrecta porque la humillación no se vuelve válida por ser ocasional."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem defiende la dignidad del estudiante sin negar la necesidad de convivencia y disciplina pedagógica."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 5 preguntas sobre responsabilidad legal escolar, riesgos y prohibición de tratos degradantes."
+  }
 }

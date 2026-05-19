@@ -1,99 +1,104 @@
 {
-    "id_item": "IDD_B17_I04",
-    "archivo_sugerido": "IDD_B17_I04_conector_sin_embargo_contraposicion.json",
-    "bloque": {
-        "codigo_bloque": "IDD_B17",
-        "nombre": "Aptitud verbal y organización textual",
-        "estado_en_lista": "Bloque 17 de 17",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 4 de 5"
+  "id_item": "IDD_B17_I04",
+  "archivo_sugerido": "IDD_B17_I04_conector_sin_embargo_contraposicion.json",
+  "bloque": {
+    "codigo_bloque": "IDD_B17",
+    "nombre": "Aptitud verbal y organización textual",
+    "estado_en_lista": "Bloque 17 de 17",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 4 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante identifica la función lógica y valorativa del conector “sin embargo” en un texto comparativo.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con comprensión lectora, aptitud verbal, lenguaje o docencia.",
+    "blueprint": {
+      "problematica_principal": "Dificultad para reconocer conectores de contraste y usarlos para ordenar oraciones.",
+      "fuente_autorizada": [
+        "Conectores lógicos",
+        "Coherencia textual",
+        "Comprensión lectora",
+        "Texto comparativo",
+        "Aptitud verbal"
+      ],
+      "componente_modulo": "Uso de conectores lógicos",
+      "competencia": "Interpretación de relaciones lógico-discursivas",
+      "afirmacion": "El conector “sin embargo” introduce una oposición, contraste o matiz respecto de la información previa.",
+      "evidencia_observable": "Reconoce que en una comparación entre esqueletos, el conector permite pasar de semejanza a diferencia o matiz.",
+      "tipo_de_evidencia": "Análisis de cohesión textual",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "B"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante identifica la función lógica y valorativa del conector “sin embargo” en un texto comparativo.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con comprensión lectora, aptitud verbal, lenguaje o docencia.",
-        "blueprint": {
-            "problematica_principal": "Dificultad para reconocer conectores de contraste y usarlos para ordenar oraciones.",
-            "fuente_autorizada": [
-                "Conectores lógicos",
-                "Coherencia textual",
-                "Comprensión lectora",
-                "Texto comparativo",
-                "Aptitud verbal"
-            ],
-            "componente_modulo": "Uso de conectores lógicos",
-            "competencia": "Interpretación de relaciones lógico-discursivas",
-            "afirmacion": "El conector “sin embargo” introduce una oposición, contraste o matiz respecto de la información previa.",
-            "evidencia_observable": "Reconoce que en una comparación entre esqueletos, el conector permite pasar de semejanza a diferencia o matiz.",
-            "tipo_de_evidencia": "Análisis de cohesión textual",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "B"
-        },
-        "claim": "El evaluado comprende que los conectores orientan la relación entre ideas y permiten ordenar las oraciones de un texto de manera coherente.",
-        "evidencia_observable": "Selecciona la función de contraposición que cumple “sin embargo” en un texto comparativo.",
-        "tarea_cognitiva": "Interpretar la función lógica de un conector para organizar oraciones.",
-        "tipo_de_pregunta": "Pregunta de cohesión textual",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Confundir contraste con adición",
-                "revision": "La clave diferencia oposición de suma de ideas."
-            },
-            {
-                "riesgo": "Resolver solo por memoria de conectores",
-                "revision": "El enunciado contextualiza el uso en un texto comparativo."
-            },
-            {
-                "riesgo": "Ambigüedad por falta de fragmento completo",
-                "revision": "La pregunta se centra en la función general de “sin embargo”."
-            }
-        ]
+    "claim": "El evaluado comprende que los conectores orientan la relación entre ideas y permiten ordenar las oraciones de un texto de manera coherente.",
+    "evidencia_observable": "Selecciona la función de contraposición que cumple “sin embargo” en un texto comparativo.",
+    "tarea_cognitiva": "Interpretar la función lógica de un conector para organizar oraciones.",
+    "tipo_de_pregunta": "Pregunta de cohesión textual",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Confundir contraste con adición",
+        "revision": "La clave diferencia oposición de suma de ideas."
+      },
+      {
+        "riesgo": "Resolver solo por memoria de conectores",
+        "revision": "El enunciado contextualiza el uso en un texto comparativo."
+      },
+      {
+        "riesgo": "Ambigüedad por falta de fragmento completo",
+        "revision": "La pregunta se centra en la función general de “sin embargo”."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "En un texto comparativo se relaciona el esqueleto de un edificio con el esqueleto humano. Una oración inicia con el conector “sin embargo”, después de haber señalado una semejanza entre ambos.\n\n¿Qué función cumple ese conector para ordenar correctamente las oraciones?",
+    "opciones": {
+      "A": "Agregar una idea idéntica sin cambiar la orientación del texto.",
+      "B": "Introducir una oposición, contraste o matiz frente a la idea anterior.",
+      "C": "Marcar el inicio absoluto del texto.",
+      "D": "Indicar que la oración anterior y la siguiente no tienen relación."
     },
-    "item": {
-        "enunciado": "En un texto comparativo se relaciona el esqueleto de un edificio con el esqueleto humano. Una oración inicia con el conector “sin embargo”, después de haber señalado una semejanza entre ambos.\n\n¿Qué función cumple ese conector para ordenar correctamente las oraciones?",
-        "opciones": {
-            "A": "Agregar una idea idéntica sin cambiar la orientación del texto.",
-            "B": "Introducir una oposición, contraste o matiz frente a la idea anterior.",
-            "C": "Marcar el inicio absoluto del texto.",
-            "D": "Indicar que la oración anterior y la siguiente no tienen relación."
-        },
-        "respuesta_correcta": "B"
+    "respuesta_correcta": "B"
+  },
+  "ficha_tecnica": {
+    "componente": "Uso de conectores lógicos",
+    "competencia": "Interpretación de relaciones lógico-discursivas",
+    "claim_evaluado": "El evaluado comprende que los conectores orientan la relación entre ideas y permiten ordenar las oraciones de un texto de manera coherente.",
+    "evidencia": "Selecciona la función de contraposición que cumple “sin embargo” en un texto comparativo.",
+    "proceso_cognitivo": "Análisis de cohesión textual",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "B",
+    "distractores": {
+      "A": "Confunde contraste con adición.",
+      "C": "Atribuye al conector una función de apertura textual que no corresponde.",
+      "D": "Niega la relación lógica entre las ideas."
     },
-    "ficha_tecnica": {
-        "componente": "Uso de conectores lógicos",
-        "competencia": "Interpretación de relaciones lógico-discursivas",
-        "claim_evaluado": "El evaluado comprende que los conectores orientan la relación entre ideas y permiten ordenar las oraciones de un texto de manera coherente.",
-        "evidencia": "Selecciona la función de contraposición que cumple “sin embargo” en un texto comparativo.",
-        "proceso_cognitivo": "Análisis de cohesión textual",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "B",
-        "distractores": {
-            "A": "Confunde contraste con adición.",
-            "C": "Atribuye al conector una función de apertura textual que no corresponde.",
-            "D": "Niega la relación lógica entre las ideas."
-        },
-        "fuente_autorizada": [
-            "Conectores lógicos",
-            "Coherencia textual",
-            "Comprensión lectora",
-            "Texto comparativo",
-            "Aptitud verbal"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque “sin embargo” introduce una oposición o matiz respecto de una idea previa.",
-        "opcion_A": "Es incorrecta porque no expresa suma simple.",
-        "opcion_C": "Es incorrecta porque no cumple función de inicio absoluto.",
-        "opcion_D": "Es incorrecta porque sí establece relación, precisamente de contraste."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evalúa una relación lógica básica de cohesión textual con lenguaje claro."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 5 preguntas sobre aptitud verbal y organización textual."
+    "fuente_autorizada": [
+      "Conectores lógicos",
+      "Coherencia textual",
+      "Comprensión lectora",
+      "Texto comparativo",
+      "Aptitud verbal"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "opcion_A": "Es incorrecta porque no expresa suma simple.",
+    "opcion_C": "Es incorrecta porque no cumple función de inicio absoluto.",
+    "opcion_D": "Es incorrecta porque sí establece relación, precisamente de contraste.",
+    "distractores": {
+      "A": "Es incorrecta porque no expresa suma simple.",
+      "C": "Es incorrecta porque no cumple función de inicio absoluto.",
+      "D": "Es incorrecta porque sí establece relación, precisamente de contraste."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evalúa una relación lógica básica de cohesión textual con lenguaje claro."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 5 preguntas sobre aptitud verbal y organización textual."
+  }
 }

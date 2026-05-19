@@ -1,99 +1,104 @@
 {
-    "id_item": "IDD_B14_I03",
-    "archivo_sugerido": "IDD_B14_I03_seguimiento_resultados_evaluacion_formativa.json",
-    "bloque": {
-        "codigo_bloque": "IDD_B14",
-        "nombre": "Diagnóstico pedagógico, saberes previos y evaluación formativa",
-        "estado_en_lista": "Bloque 14 de 17",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 3 de 5"
+  "id_item": "IDD_B14_I03",
+  "archivo_sugerido": "IDD_B14_I03_seguimiento_resultados_evaluacion_formativa.json",
+  "bloque": {
+    "codigo_bloque": "IDD_B14",
+    "nombre": "Diagnóstico pedagógico, saberes previos y evaluación formativa",
+    "estado_en_lista": "Bloque 14 de 17",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 3 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce qué acciones didácticas y de mejora debe implementar el docente tras analizar resultados de evaluación formativa.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, evaluación formativa, coordinación académica o gestión pedagógica.",
+    "blueprint": {
+      "problematica_principal": "Uso de resultados de evaluación únicamente para registrar notas, sin tomar decisiones didácticas de mejora.",
+      "fuente_autorizada": [
+        "Evaluación formativa",
+        "Mejora continua",
+        "Retroalimentación",
+        "Planeación didáctica",
+        "Evaluación por competencias"
+      ],
+      "componente_modulo": "Seguimiento a los Resultados",
+      "competencia": "Uso pedagógico de resultados evaluativos",
+      "afirmacion": "Los resultados de evaluación deben orientar retroalimentación, ajustes de enseñanza, apoyos, nuevas oportunidades y seguimiento.",
+      "evidencia_observable": "Reconoce acciones posteriores a la evaluación que transforman resultados en mejora.",
+      "tipo_de_evidencia": "Juicio evaluativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "D"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce qué acciones didácticas y de mejora debe implementar el docente tras analizar resultados de evaluación formativa.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, evaluación formativa, coordinación académica o gestión pedagógica.",
-        "blueprint": {
-            "problematica_principal": "Uso de resultados de evaluación únicamente para registrar notas, sin tomar decisiones didácticas de mejora.",
-            "fuente_autorizada": [
-                "Evaluación formativa",
-                "Mejora continua",
-                "Retroalimentación",
-                "Planeación didáctica",
-                "Evaluación por competencias"
-            ],
-            "componente_modulo": "Seguimiento a los Resultados",
-            "competencia": "Uso pedagógico de resultados evaluativos",
-            "afirmacion": "Los resultados de evaluación deben orientar retroalimentación, ajustes de enseñanza, apoyos, nuevas oportunidades y seguimiento.",
-            "evidencia_observable": "Reconoce acciones posteriores a la evaluación que transforman resultados en mejora.",
-            "tipo_de_evidencia": "Juicio evaluativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "D"
-        },
-        "claim": "El evaluado comprende que evaluar formativamente implica actuar sobre la información obtenida para mejorar el aprendizaje y la enseñanza.",
-        "evidencia_observable": "Selecciona una actuación que incluye análisis de errores, retroalimentación, ajuste didáctico, apoyos y nuevas evidencias.",
-        "tarea_cognitiva": "Elegir la decisión pedagógica adecuada tras analizar resultados de evaluación.",
-        "tipo_de_pregunta": "Caso situacional de juicio evaluativo",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Culpar al estudiante por todos los resultados",
-                "revision": "La clave incluye revisión de la mediación docente."
-            },
-            {
-                "riesgo": "Repetir la misma evaluación como única mejora",
-                "revision": "La opción correcta exige retroalimentación y ajuste."
-            },
-            {
-                "riesgo": "Confundir seguimiento con castigo",
-                "revision": "El ítem orienta seguimiento a progreso y apoyo."
-            }
-        ]
+    "claim": "El evaluado comprende que evaluar formativamente implica actuar sobre la información obtenida para mejorar el aprendizaje y la enseñanza.",
+    "evidencia_observable": "Selecciona una actuación que incluye análisis de errores, retroalimentación, ajuste didáctico, apoyos y nuevas evidencias.",
+    "tarea_cognitiva": "Elegir la decisión pedagógica adecuada tras analizar resultados de evaluación.",
+    "tipo_de_pregunta": "Caso situacional de juicio evaluativo",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Culpar al estudiante por todos los resultados",
+        "revision": "La clave incluye revisión de la mediación docente."
+      },
+      {
+        "riesgo": "Repetir la misma evaluación como única mejora",
+        "revision": "La opción correcta exige retroalimentación y ajuste."
+      },
+      {
+        "riesgo": "Confundir seguimiento con castigo",
+        "revision": "El ítem orienta seguimiento a progreso y apoyo."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Al finalizar un periodo académico, el docente observa que un porcentaje importante de estudiantes no logró evidenciar la competencia esperada. Tiene los resultados, los errores frecuentes y las evidencias del proceso.\n\n¿Qué acciones debe implementar desde la evaluación formativa?",
+    "opciones": {
+      "A": "Registrar las notas y continuar con el siguiente periodo sin revisar lo ocurrido.",
+      "B": "Repetir exactamente la misma prueba sin retroalimentación.",
+      "C": "Concluir que el grupo no tiene capacidad para aprender el tema.",
+      "D": "Analizar patrones de dificultad, retroalimentar, ajustar la mediación didáctica, ofrecer apoyos y recoger nuevas evidencias de aprendizaje."
     },
-    "item": {
-        "enunciado": "Al finalizar un periodo académico, el docente observa que un porcentaje importante de estudiantes no logró evidenciar la competencia esperada. Tiene los resultados, los errores frecuentes y las evidencias del proceso.\n\n¿Qué acciones debe implementar desde la evaluación formativa?",
-        "opciones": {
-            "A": "Registrar las notas y continuar con el siguiente periodo sin revisar lo ocurrido.",
-            "B": "Repetir exactamente la misma prueba sin retroalimentación.",
-            "C": "Concluir que el grupo no tiene capacidad para aprender el tema.",
-            "D": "Analizar patrones de dificultad, retroalimentar, ajustar la mediación didáctica, ofrecer apoyos y recoger nuevas evidencias de aprendizaje."
-        },
-        "respuesta_correcta": "D"
+    "respuesta_correcta": "D"
+  },
+  "ficha_tecnica": {
+    "componente": "Seguimiento a los Resultados",
+    "competencia": "Uso pedagógico de resultados evaluativos",
+    "claim_evaluado": "El evaluado comprende que evaluar formativamente implica actuar sobre la información obtenida para mejorar el aprendizaje y la enseñanza.",
+    "evidencia": "Selecciona una actuación que incluye análisis de errores, retroalimentación, ajuste didáctico, apoyos y nuevas evidencias.",
+    "proceso_cognitivo": "Análisis y juicio evaluativo",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "D",
+    "distractores": {
+      "A": "Reduce la evaluación a registro de notas.",
+      "B": "Repite sin mediación ni mejora.",
+      "C": "Etiqueta al grupo y evita decisiones pedagógicas."
     },
-    "ficha_tecnica": {
-        "componente": "Seguimiento a los Resultados",
-        "competencia": "Uso pedagógico de resultados evaluativos",
-        "claim_evaluado": "El evaluado comprende que evaluar formativamente implica actuar sobre la información obtenida para mejorar el aprendizaje y la enseñanza.",
-        "evidencia": "Selecciona una actuación que incluye análisis de errores, retroalimentación, ajuste didáctico, apoyos y nuevas evidencias.",
-        "proceso_cognitivo": "Análisis y juicio evaluativo",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "D",
-        "distractores": {
-            "A": "Reduce la evaluación a registro de notas.",
-            "B": "Repite sin mediación ni mejora.",
-            "C": "Etiqueta al grupo y evita decisiones pedagógicas."
-        },
-        "fuente_autorizada": [
-            "Evaluación formativa",
-            "Mejora continua",
-            "Retroalimentación",
-            "Planeación didáctica",
-            "Evaluación por competencias"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque convierte los resultados en decisiones de mejora pedagógica y nuevas oportunidades de evidencia.",
-        "opcion_A": "Es incorrecta porque no usa la información evaluativa para mejorar.",
-        "opcion_B": "Es incorrecta porque repetir sin retroalimentación mantiene la dificultad.",
-        "opcion_C": "Es incorrecta porque emite un juicio deficitario sobre el grupo."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita culpabilizar al grupo y promueve decisiones docentes basadas en evidencias."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre diagnóstico pedagógico, saberes previos y evaluación formativa."
+    "fuente_autorizada": [
+      "Evaluación formativa",
+      "Mejora continua",
+      "Retroalimentación",
+      "Planeación didáctica",
+      "Evaluación por competencias"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "opcion_A": "Es incorrecta porque no usa la información evaluativa para mejorar.",
+    "opcion_B": "Es incorrecta porque repetir sin retroalimentación mantiene la dificultad.",
+    "opcion_C": "Es incorrecta porque emite un juicio deficitario sobre el grupo.",
+    "distractores": {
+      "A": "Es incorrecta porque no usa la información evaluativa para mejorar.",
+      "B": "Es incorrecta porque repetir sin retroalimentación mantiene la dificultad.",
+      "C": "Es incorrecta porque emite un juicio deficitario sobre el grupo."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita culpabilizar al grupo y promueve decisiones docentes basadas en evidencias."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre diagnóstico pedagógico, saberes previos y evaluación formativa."
+  }
 }

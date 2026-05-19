@@ -1,98 +1,103 @@
 {
-    "id_item": "CB15_I04",
-    "bloque": {
-        "numero": 15,
-        "nombre": "Fases enseñanza",
-        "estado_en_lista": "Bloque 15 de 15",
-        "decision_del_bloque": "Grupo de 4 preguntas",
-        "item_en_grupo": "Ítem 4 de 4"
+  "id_item": "CB15_I04",
+  "bloque": {
+    "numero": 15,
+    "nombre": "Fases enseñanza",
+    "estado_en_lista": "Bloque 15 de 15",
+    "decision_del_bloque": "Grupo de 4 preguntas",
+    "item_en_grupo": "Ítem 4 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce la importancia del cierre pedagógico, la aplicación de lo aprendido, la metacognición y la retroalimentación dentro de una secuencia de enseñanza coherente con un enfoque constructivista.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
+    "blueprint": {
+      "problematica_principal": "Comprensión del constructivismo",
+      "fuente_autorizada": [
+        "Modelo constructivista",
+        "Didáctica general",
+        "Orientaciones pedagógicas institucionales"
+      ],
+      "componente_modulo": "Didáctica",
+      "competencia": "Planeación pedagógica",
+      "afirmacion": "La enseñanza tiene fases secuenciales.",
+      "evidencia_observable": "Reconoce la importancia de aplicación, metacognición y cierre en una secuencia didáctica.",
+      "tipo_de_evidencia": "Juicio didáctico sobre cierre y transferencia del aprendizaje",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce la importancia del cierre pedagógico, la aplicación de lo aprendido, la metacognición y la retroalimentación dentro de una secuencia de enseñanza coherente con un enfoque constructivista.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-        "blueprint": {
-            "problematica_principal": "Comprensión del constructivismo",
-            "fuente_autorizada": [
-                "Modelo constructivista",
-                "Didáctica general",
-                "Orientaciones pedagógicas institucionales"
-            ],
-            "componente_modulo": "Didáctica",
-            "competencia": "Planeación pedagógica",
-            "afirmacion": "La enseñanza tiene fases secuenciales.",
-            "evidencia_observable": "Reconoce la importancia de aplicación, metacognición y cierre en una secuencia didáctica.",
-            "tipo_de_evidencia": "Juicio didáctico sobre cierre y transferencia del aprendizaje",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado identifica que una secuencia de enseñanza debe incluir aplicación de lo aprendido, explicación del razonamiento, reflexión y retroalimentación para consolidar y transferir el aprendizaje.",
-        "evidencia_observable": "Selecciona una acción de cierre que permite aplicar el concepto en una situación nueva, verbalizar el razonamiento y recibir retroalimentación.",
-        "tarea_cognitiva": "Seleccionar una acción de cierre coherente con el aprendizaje significativo y la transferencia.",
-        "tipo_de_pregunta": "Caso situacional de juicio profesional",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Confusión entre cierre pedagógico y finalización administrativa de la clase",
-                "revision": "El ítem diferencia claramente entre terminar la clase y cerrar pedagógicamente mediante aplicación, explicación y retroalimentación."
-            },
-            {
-                "riesgo": "Sesgo por área disciplinar",
-                "revision": "El caso no pertenece a una asignatura específica; puede aplicarse a cualquier área del currículo."
-            },
-            {
-                "riesgo": "Ambigüedad en la clave",
-                "revision": "La opción correcta es la única que integra aplicación en situación nueva, explicación del razonamiento y retroalimentación."
-            },
-            {
-                "riesgo": "Reducción de la enseñanza a cobertura de contenidos",
-                "revision": "Los distractores permiten diferenciar entre avanzar rápidamente en contenidos y consolidar aprendizajes con sentido."
-            }
-        ]
+    "claim": "El evaluado identifica que una secuencia de enseñanza debe incluir aplicación de lo aprendido, explicación del razonamiento, reflexión y retroalimentación para consolidar y transferir el aprendizaje.",
+    "evidencia_observable": "Selecciona una acción de cierre que permite aplicar el concepto en una situación nueva, verbalizar el razonamiento y recibir retroalimentación.",
+    "tarea_cognitiva": "Seleccionar una acción de cierre coherente con el aprendizaje significativo y la transferencia.",
+    "tipo_de_pregunta": "Caso situacional de juicio profesional",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Confusión entre cierre pedagógico y finalización administrativa de la clase",
+        "revision": "El ítem diferencia claramente entre terminar la clase y cerrar pedagógicamente mediante aplicación, explicación y retroalimentación."
+      },
+      {
+        "riesgo": "Sesgo por área disciplinar",
+        "revision": "El caso no pertenece a una asignatura específica; puede aplicarse a cualquier área del currículo."
+      },
+      {
+        "riesgo": "Ambigüedad en la clave",
+        "revision": "La opción correcta es la única que integra aplicación en situación nueva, explicación del razonamiento y retroalimentación."
+      },
+      {
+        "riesgo": "Reducción de la enseñanza a cobertura de contenidos",
+        "revision": "Los distractores permiten diferenciar entre avanzar rápidamente en contenidos y consolidar aprendizajes con sentido."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Después de trabajar un concepto mediante una situación problema y discusión guiada, el docente quiere cerrar la clase de forma que los estudiantes consoliden y transfieran lo aprendido.\n\n¿Cuál cierre es más pertinente?",
+    "opciones": {
+      "A": "Pedir a los estudiantes aplicar el concepto en una situación nueva, explicar su razonamiento y recibir retroalimentación.",
+      "B": "Finalizar la clase sin retomar lo trabajado para ahorrar tiempo.",
+      "C": "Solicitar que copien nuevamente el título del tema sin discutir aprendizajes.",
+      "D": "Cambiar de tema de inmediato para cubrir más contenidos."
     },
-    "item": {
-        "enunciado": "Después de trabajar un concepto mediante una situación problema y discusión guiada, el docente quiere cerrar la clase de forma que los estudiantes consoliden y transfieran lo aprendido.\n\n¿Cuál cierre es más pertinente?",
-        "opciones": {
-            "A": "Pedir a los estudiantes aplicar el concepto en una situación nueva, explicar su razonamiento y recibir retroalimentación.",
-            "B": "Finalizar la clase sin retomar lo trabajado para ahorrar tiempo.",
-            "C": "Solicitar que copien nuevamente el título del tema sin discutir aprendizajes.",
-            "D": "Cambiar de tema de inmediato para cubrir más contenidos."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Didáctica",
+    "competencia": "Planeación pedagógica",
+    "claim_evaluado": "El evaluado identifica que una secuencia de enseñanza debe incluir aplicación de lo aprendido, explicación del razonamiento, reflexión y retroalimentación para consolidar y transferir el aprendizaje.",
+    "evidencia": "Selecciona una acción de cierre que permite aplicar el concepto en una situación nueva, verbalizar el razonamiento y recibir retroalimentación.",
+    "proceso_cognitivo": "Análisis y juicio didáctico",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Omite el cierre pedagógico, la consolidación y la retroalimentación.",
+      "C": "Propone una acción mecánica que no evidencia comprensión ni transferencia.",
+      "D": "Prioriza la cobertura de contenidos sobre la consolidación del aprendizaje."
     },
-    "ficha_tecnica": {
-        "componente": "Didáctica",
-        "competencia": "Planeación pedagógica",
-        "claim_evaluado": "El evaluado identifica que una secuencia de enseñanza debe incluir aplicación de lo aprendido, explicación del razonamiento, reflexión y retroalimentación para consolidar y transferir el aprendizaje.",
-        "evidencia": "Selecciona una acción de cierre que permite aplicar el concepto en una situación nueva, verbalizar el razonamiento y recibir retroalimentación.",
-        "proceso_cognitivo": "Análisis y juicio didáctico",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Omite el cierre pedagógico, la consolidación y la retroalimentación.",
-            "C": "Propone una acción mecánica que no evidencia comprensión ni transferencia.",
-            "D": "Prioriza la cobertura de contenidos sobre la consolidación del aprendizaje."
-        },
-        "fuente_autorizada": [
-            "Modelo constructivista",
-            "Didáctica general",
-            "Orientaciones pedagógicas institucionales"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque promueve aplicación del concepto en una situación nueva, explicación del razonamiento y retroalimentación. Estos elementos permiten consolidar y transferir lo aprendido.",
-        "opcion_B": "Es incorrecta porque finalizar la clase sin retomar lo trabajado deja incompleto el proceso didáctico y limita la consolidación del aprendizaje.",
-        "opcion_C": "Es incorrecta porque copiar nuevamente el título no permite verificar comprensión, reflexión ni transferencia.",
-        "opcion_D": "Es incorrecta porque cambiar de tema de inmediato privilegia la cobertura de contenidos sobre el cierre pedagógico y la comprensión."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem no exige conocimiento de un área específica ni dominio de una metodología especializada. Evalúa una decisión didáctica general: cerrar la clase de manera que los estudiantes apliquen, expliquen y reciban retroalimentación sobre lo aprendido."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre fases de enseñanza y enfoque constructivista."
+    "fuente_autorizada": [
+      "Modelo constructivista",
+      "Didáctica general",
+      "Orientaciones pedagógicas institucionales"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque finalizar la clase sin retomar lo trabajado deja incompleto el proceso didáctico y limita la consolidación del aprendizaje.",
+    "opcion_C": "Es incorrecta porque copiar nuevamente el título no permite verificar comprensión, reflexión ni transferencia.",
+    "opcion_D": "Es incorrecta porque cambiar de tema de inmediato privilegia la cobertura de contenidos sobre el cierre pedagógico y la comprensión.",
+    "distractores": {
+      "B": "Es incorrecta porque finalizar la clase sin retomar lo trabajado deja incompleto el proceso didáctico y limita la consolidación del aprendizaje.",
+      "C": "Es incorrecta porque copiar nuevamente el título no permite verificar comprensión, reflexión ni transferencia.",
+      "D": "Es incorrecta porque cambiar de tema de inmediato privilegia la cobertura de contenidos sobre el cierre pedagógico y la comprensión."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem no exige conocimiento de un área específica ni dominio de una metodología especializada. Evalúa una decisión didáctica general: cerrar la clase de manera que los estudiantes apliquen, expliquen y reciban retroalimentación sobre lo aprendido."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre fases de enseñanza y enfoque constructivista."
+  }
 }

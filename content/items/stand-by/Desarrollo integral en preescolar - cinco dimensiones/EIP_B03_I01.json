@@ -1,40 +1,40 @@
 {
-    "id_item": "EIP_B03_I01",
-    "archivo_sugerido": "EIP_B03_I01_cinco_dimensiones_desarrollo_integral.json",
-    "proposito_de_uso": "Evaluar si el aspirante identifica las cinco dimensiones del desarrollo integral en educación preescolar según la Ley 115.",
-    "blueprint": {
-        "componente_modulo": "Desarrollo integral en preescolar",
-        "competencia": "Reconocimiento de dimensiones del desarrollo",
-        "afirmacion": "El desarrollo integral en preescolar comprende dimensiones biológica, cognoscitiva, sicomotriz, socioafectiva y espiritual.",
-        "evidencia_observable": "Selecciona correctamente las cinco dimensiones del desarrollo integral.",
-        "tipo_de_evidencia": "Reconocimiento normativo",
-        "dificultad_esperada": "Media",
-        "clave": "A"
+  "id_item": "EIP_B03_I01",
+  "archivo_sugerido": "EIP_B03_I01_cinco_dimensiones_desarrollo_integral.json",
+  "proposito_de_uso": "Evaluar si el aspirante identifica las cinco dimensiones del desarrollo integral en educación preescolar según la Ley 115.",
+  "blueprint": {
+    "componente_modulo": "Desarrollo integral en preescolar",
+    "competencia": "Reconocimiento de dimensiones del desarrollo",
+    "afirmacion": "El desarrollo integral en preescolar comprende dimensiones biológica, cognoscitiva, sicomotriz, socioafectiva y espiritual.",
+    "evidencia_observable": "Selecciona correctamente las cinco dimensiones del desarrollo integral.",
+    "tipo_de_evidencia": "Reconocimiento normativo",
+    "dificultad_esperada": "Media",
+    "clave": "A"
+  },
+  "item": {
+    "enunciado": "Una institución educativa revisa su planeación de preescolar y quiere verificar si está atendiendo el desarrollo integral definido por la Ley 115.\n\n¿Cuáles son las cinco dimensiones que deben trabajarse en este nivel?",
+    "opciones": {
+      "A": "Biológica, cognoscitiva, sicomotriz, socioafectiva y espiritual.",
+      "B": "Financiera, administrativa, jurídica, comercial y disciplinaria.",
+      "C": "Memorística, punitiva, competitiva, sancionatoria y repetitiva.",
+      "D": "Exclusivamente lectoescritura, cálculo, caligrafía, dictado y examen escrito."
     },
-    "item": {
-        "enunciado": "Una institución educativa revisa su planeación de preescolar y quiere verificar si está atendiendo el desarrollo integral definido por la Ley 115.\n\n¿Cuáles son las cinco dimensiones que deben trabajarse en este nivel?",
-        "opciones": {
-            "A": "Biológica, cognoscitiva, sicomotriz, socioafectiva y espiritual.",
-            "B": "Financiera, administrativa, jurídica, comercial y disciplinaria.",
-            "C": "Memorística, punitiva, competitiva, sancionatoria y repetitiva.",
-            "D": "Exclusivamente lectoescritura, cálculo, caligrafía, dictado y examen escrito."
-        },
-        "respuesta_correcta": "A"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque recoge las cinco dimensiones del desarrollo integral en preescolar.",
-        "distractores": {
-            "B": "Menciona dimensiones administrativas, no del desarrollo infantil.",
-            "C": "Propone un enfoque punitivo contrario al sentido del preescolar.",
-            "D": "Reduce el preescolar a escolarización académica temprana."
-        }
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado",
-        "argumento": "El ítem evita reducir el desarrollo infantil a rendimiento académico y reconoce la integralidad del nivel."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem apto para banco con revisión normativa posterior."
+    "respuesta_correcta": "A"
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "distractores": {
+      "B": "Menciona dimensiones administrativas, no del desarrollo infantil.",
+      "C": "Propone un enfoque punitivo contrario al sentido del preescolar.",
+      "D": "Reduce el preescolar a escolarización académica temprana."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado",
+    "argumento": "El ítem evita reducir el desarrollo infantil a rendimiento académico y reconoce la integralidad del nivel."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem apto para banco con revisión normativa posterior."
+  }
 }

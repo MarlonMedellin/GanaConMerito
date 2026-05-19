@@ -1,98 +1,103 @@
 {
-    "id_item": "CB05_I03",
-    "bloque": {
-        "numero": 5,
-        "nombre": "Comunicación asertiva",
-        "estado_en_lista": "Bloque 5 de 15",
-        "decision_del_bloque": "Grupo de 3 preguntas",
-        "item_en_grupo": "Ítem 3 de 3"
+  "id_item": "CB05_I03",
+  "bloque": {
+    "numero": 5,
+    "nombre": "Comunicación asertiva",
+    "estado_en_lista": "Bloque 5 de 15",
+    "decision_del_bloque": "Grupo de 3 preguntas",
+    "item_en_grupo": "Ítem 3 de 3"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce que una conversación difícil en el contexto escolar requiere una secuencia comunicativa organizada: escucha, establecimiento de condiciones de respeto, identificación de afectaciones, construcción de compromisos y seguimiento.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
+    "blueprint": {
+      "problematica_principal": "Manejo de conflictos escolares",
+      "fuente_autorizada": [
+        "Orientaciones de convivencia escolar",
+        "Competencias socioemocionales",
+        "Manual de convivencia institucional"
+      ],
+      "componente_modulo": "Socioemocional",
+      "competencia": "Comunicación asertiva",
+      "afirmacion": "La comunicación efectiva tiene pasos secuenciales.",
+      "evidencia_observable": "Identifica que una conversación difícil requiere preparación, escucha, formulación de acuerdos y seguimiento.",
+      "tipo_de_evidencia": "Interpretación de situación institucional",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce que una conversación difícil en el contexto escolar requiere una secuencia comunicativa organizada: escucha, establecimiento de condiciones de respeto, identificación de afectaciones, construcción de compromisos y seguimiento.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-        "blueprint": {
-            "problematica_principal": "Manejo de conflictos escolares",
-            "fuente_autorizada": [
-                "Orientaciones de convivencia escolar",
-                "Competencias socioemocionales",
-                "Manual de convivencia institucional"
-            ],
-            "componente_modulo": "Socioemocional",
-            "competencia": "Comunicación asertiva",
-            "afirmacion": "La comunicación efectiva tiene pasos secuenciales.",
-            "evidencia_observable": "Identifica que una conversación difícil requiere preparación, escucha, formulación de acuerdos y seguimiento.",
-            "tipo_de_evidencia": "Interpretación de situación institucional",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que la comunicación asertiva no se limita a hablar con respeto, sino que organiza una ruta de diálogo, reconocimiento de afectaciones, construcción de compromisos y seguimiento.",
-        "evidencia_observable": "Selecciona una secuencia comunicativa completa y adecuada para abordar un conflicto escolar entre estudiantes.",
-        "tarea_cognitiva": "Ordenar mentalmente una intervención comunicativa y elegir la alternativa más completa.",
-        "tipo_de_pregunta": "Pregunta de procedimiento aplicado",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Sesgo por familiaridad con prácticas restaurativas",
-                "revision": "El ítem no exige conocer una metodología específica; evalúa una secuencia general de comunicación asertiva."
-            },
-            {
-                "riesgo": "Estigmatización del conflicto entre estudiantes",
-                "revision": "El caso no etiqueta a los estudiantes como agresores permanentes, sino que presenta una situación puntual que requiere intervención."
-            },
-            {
-                "riesgo": "Ambigüedad en la clave",
-                "revision": "La opción correcta es la única que incluye escucha, reglas de respeto, identificación de afectaciones, compromisos y seguimiento."
-            },
-            {
-                "riesgo": "Exposición de información sensible",
-                "revision": "El enunciado no incluye nombres, detalles privados ni información innecesaria sobre los estudiantes."
-            }
-        ]
+    "claim": "El evaluado comprende que la comunicación asertiva no se limita a hablar con respeto, sino que organiza una ruta de diálogo, reconocimiento de afectaciones, construcción de compromisos y seguimiento.",
+    "evidencia_observable": "Selecciona una secuencia comunicativa completa y adecuada para abordar un conflicto escolar entre estudiantes.",
+    "tarea_cognitiva": "Ordenar mentalmente una intervención comunicativa y elegir la alternativa más completa.",
+    "tipo_de_pregunta": "Pregunta de procedimiento aplicado",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Sesgo por familiaridad con prácticas restaurativas",
+        "revision": "El ítem no exige conocer una metodología específica; evalúa una secuencia general de comunicación asertiva."
+      },
+      {
+        "riesgo": "Estigmatización del conflicto entre estudiantes",
+        "revision": "El caso no etiqueta a los estudiantes como agresores permanentes, sino que presenta una situación puntual que requiere intervención."
+      },
+      {
+        "riesgo": "Ambigüedad en la clave",
+        "revision": "La opción correcta es la única que incluye escucha, reglas de respeto, identificación de afectaciones, compromisos y seguimiento."
+      },
+      {
+        "riesgo": "Exposición de información sensible",
+        "revision": "El enunciado no incluye nombres, detalles privados ni información innecesaria sobre los estudiantes."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "La coordinación debe mediar entre dos estudiantes que se han enviado mensajes ofensivos por redes sociales y luego discutieron en el aula. Se busca realizar una conversación restaurativa inicial.\n\n¿Cuál secuencia es más adecuada?",
+    "opciones": {
+      "A": "Escuchar versiones, establecer reglas de respeto, identificar afectaciones, construir compromisos y definir seguimiento.",
+      "B": "Definir primero la sanción, informar a los estudiantes y cerrar el caso para evitar nuevas discusiones.",
+      "C": "Pedir disculpas públicas inmediatas y asumir que con ello queda resuelto el conflicto.",
+      "D": "Revisar únicamente los mensajes escritos y decidir sin escuchar a los estudiantes."
     },
-    "item": {
-        "enunciado": "La coordinación debe mediar entre dos estudiantes que se han enviado mensajes ofensivos por redes sociales y luego discutieron en el aula. Se busca realizar una conversación restaurativa inicial.\n\n¿Cuál secuencia es más adecuada?",
-        "opciones": {
-            "A": "Escuchar versiones, establecer reglas de respeto, identificar afectaciones, construir compromisos y definir seguimiento.",
-            "B": "Definir primero la sanción, informar a los estudiantes y cerrar el caso para evitar nuevas discusiones.",
-            "C": "Pedir disculpas públicas inmediatas y asumir que con ello queda resuelto el conflicto.",
-            "D": "Revisar únicamente los mensajes escritos y decidir sin escuchar a los estudiantes."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Socioemocional",
+    "competencia": "Comunicación asertiva",
+    "claim_evaluado": "El evaluado comprende que la comunicación asertiva no se limita a hablar con respeto, sino que organiza una ruta de diálogo, reconocimiento de afectaciones, construcción de compromisos y seguimiento.",
+    "evidencia": "Selecciona una secuencia comunicativa completa y adecuada para abordar un conflicto escolar entre estudiantes.",
+    "proceso_cognitivo": "Procedimiento aplicado y juicio profesional",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Reduce la intervención a una sanción y omite escucha, comprensión de afectaciones y seguimiento.",
+      "C": "Convierte la disculpa en un trámite inmediato sin verificar comprensión, reparación ni compromiso.",
+      "D": "Desconoce la importancia de escuchar a las partes involucradas y limita el análisis a una evidencia parcial."
     },
-    "ficha_tecnica": {
-        "componente": "Socioemocional",
-        "competencia": "Comunicación asertiva",
-        "claim_evaluado": "El evaluado comprende que la comunicación asertiva no se limita a hablar con respeto, sino que organiza una ruta de diálogo, reconocimiento de afectaciones, construcción de compromisos y seguimiento.",
-        "evidencia": "Selecciona una secuencia comunicativa completa y adecuada para abordar un conflicto escolar entre estudiantes.",
-        "proceso_cognitivo": "Procedimiento aplicado y juicio profesional",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Reduce la intervención a una sanción y omite escucha, comprensión de afectaciones y seguimiento.",
-            "C": "Convierte la disculpa en un trámite inmediato sin verificar comprensión, reparación ni compromiso.",
-            "D": "Desconoce la importancia de escuchar a las partes involucradas y limita el análisis a una evidencia parcial."
-        },
-        "fuente_autorizada": [
-            "Orientaciones de convivencia escolar",
-            "Competencias socioemocionales",
-            "Manual de convivencia institucional"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque propone una secuencia completa de comunicación asertiva y restaurativa: escucha de versiones, reglas de respeto, identificación de afectaciones, construcción de compromisos y seguimiento.",
-        "opcion_B": "Es incorrecta porque una sanción inicial no asegura comprensión del conflicto ni construcción de compromisos. Además, cerrar el caso sin seguimiento puede dejar la situación sin resolución pedagógica.",
-        "opcion_C": "Es incorrecta porque una disculpa pública inmediata puede ser superficial o incluso revictimizante si no hay comprensión de las afectaciones ni acuerdos de reparación.",
-        "opcion_D": "Es incorrecta porque revisar solo los mensajes escritos ofrece una visión parcial del conflicto y excluye la escucha de los estudiantes involucrados."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El caso no presupone acceso desigual a redes sociales como condición de respuesta, ni exige conocimiento técnico sobre plataformas digitales. La evaluación se centra en la actuación profesional frente al conflicto: escuchar, ordenar el diálogo, identificar afectaciones, construir compromisos y hacer seguimiento."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 3 preguntas sobre comunicación asertiva y manejo de conflictos escolares."
+    "fuente_autorizada": [
+      "Orientaciones de convivencia escolar",
+      "Competencias socioemocionales",
+      "Manual de convivencia institucional"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque una sanción inicial no asegura comprensión del conflicto ni construcción de compromisos. Además, cerrar el caso sin seguimiento puede dejar la situación sin resolución pedagógica.",
+    "opcion_C": "Es incorrecta porque una disculpa pública inmediata puede ser superficial o incluso revictimizante si no hay comprensión de las afectaciones ni acuerdos de reparación.",
+    "opcion_D": "Es incorrecta porque revisar solo los mensajes escritos ofrece una visión parcial del conflicto y excluye la escucha de los estudiantes involucrados.",
+    "distractores": {
+      "B": "Es incorrecta porque una sanción inicial no asegura comprensión del conflicto ni construcción de compromisos. Además, cerrar el caso sin seguimiento puede dejar la situación sin resolución pedagógica.",
+      "C": "Es incorrecta porque una disculpa pública inmediata puede ser superficial o incluso revictimizante si no hay comprensión de las afectaciones ni acuerdos de reparación.",
+      "D": "Es incorrecta porque revisar solo los mensajes escritos ofrece una visión parcial del conflicto y excluye la escucha de los estudiantes involucrados."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El caso no presupone acceso desigual a redes sociales como condición de respuesta, ni exige conocimiento técnico sobre plataformas digitales. La evaluación se centra en la actuación profesional frente al conflicto: escuchar, ordenar el diálogo, identificar afectaciones, construir compromisos y hacer seguimiento."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 3 preguntas sobre comunicación asertiva y manejo de conflictos escolares."
+  }
 }

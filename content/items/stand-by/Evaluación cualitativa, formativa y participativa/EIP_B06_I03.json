@@ -1,40 +1,40 @@
 {
-    "id_item": "EIP_B06_I03",
-    "archivo_sugerido": "EIP_B06_I03_evaluacion_continua_no_punitiva.json",
-    "proposito_de_uso": "Evaluar si el aspirante diferencia evaluación continua y formativa de evaluación punitiva o finalista.",
-    "blueprint": {
-        "componente_modulo": "Evaluación continua",
-        "competencia": "Aplicación de evaluación formativa en el aula",
-        "afirmacion": "La evaluación continua permite observar, acompañar, retroalimentar y ajustar la práctica pedagógica durante el proceso.",
-        "evidencia_observable": "Selecciona una práctica evaluativa que mejora la enseñanza y acompaña el aprendizaje.",
-        "tipo_de_evidencia": "Juicio pedagógico aplicado",
-        "dificultad_esperada": "Media-Alta",
-        "clave": "D"
+  "id_item": "EIP_B06_I03",
+  "archivo_sugerido": "EIP_B06_I03_evaluacion_continua_no_punitiva.json",
+  "proposito_de_uso": "Evaluar si el aspirante diferencia evaluación continua y formativa de evaluación punitiva o finalista.",
+  "blueprint": {
+    "componente_modulo": "Evaluación continua",
+    "competencia": "Aplicación de evaluación formativa en el aula",
+    "afirmacion": "La evaluación continua permite observar, acompañar, retroalimentar y ajustar la práctica pedagógica durante el proceso.",
+    "evidencia_observable": "Selecciona una práctica evaluativa que mejora la enseñanza y acompaña el aprendizaje.",
+    "tipo_de_evidencia": "Juicio pedagógico aplicado",
+    "dificultad_esperada": "Media-Alta",
+    "clave": "D"
+  },
+  "item": {
+    "enunciado": "Una docente solo evalúa al final del periodo y usa los resultados para señalar quiénes 'no sirven' para aprender. Otra docente observa de manera permanente, registra avances, conversa con la familia y ajusta sus estrategias.\n\n¿Qué enfoque corresponde mejor a una evaluación formativa y continua?",
+    "opciones": {
+      "A": "Evaluar solo al final para clasificar a los niños.",
+      "B": "Usar la evaluación como amenaza para controlar la disciplina.",
+      "C": "No observar ningún proceso porque en preescolar todo es juego sin intención.",
+      "D": "Observar, registrar, retroalimentar y ajustar la enseñanza durante el proceso para acompañar el desarrollo."
     },
-    "item": {
-        "enunciado": "Una docente solo evalúa al final del periodo y usa los resultados para señalar quiénes 'no sirven' para aprender. Otra docente observa de manera permanente, registra avances, conversa con la familia y ajusta sus estrategias.\n\n¿Qué enfoque corresponde mejor a una evaluación formativa y continua?",
-        "opciones": {
-            "A": "Evaluar solo al final para clasificar a los niños.",
-            "B": "Usar la evaluación como amenaza para controlar la disciplina.",
-            "C": "No observar ningún proceso porque en preescolar todo es juego sin intención.",
-            "D": "Observar, registrar, retroalimentar y ajustar la enseñanza durante el proceso para acompañar el desarrollo."
-        },
-        "respuesta_correcta": "D"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque la evaluación formativa acompaña y mejora el proceso, no castiga al final.",
-        "distractores": {
-            "A": "Reduce la evaluación a clasificación final.",
-            "B": "Convierte la evaluación en castigo.",
-            "C": "Desconoce la intencionalidad pedagógica del juego y la observación."
-        }
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado",
-        "argumento": "El ítem evita clasificaciones estigmatizantes y promueve acompañamiento pedagógico."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem apto para banco con revisión didáctica posterior."
+    "respuesta_correcta": "D"
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "distractores": {
+      "A": "Reduce la evaluación a clasificación final.",
+      "B": "Convierte la evaluación en castigo.",
+      "C": "Desconoce la intencionalidad pedagógica del juego y la observación."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado",
+    "argumento": "El ítem evita clasificaciones estigmatizantes y promueve acompañamiento pedagógico."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem apto para banco con revisión didáctica posterior."
+  }
 }

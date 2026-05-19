@@ -1,101 +1,106 @@
 {
-    "id_item": "CEOL_B03_I04",
-    "archivo_sugerido": "CEOL_B03_I04_comunicacion_asertiva_orientador_conflicto.json",
-    "bloque": {
-        "codigo_bloque": "CEOL_B03",
-        "nombre": "Rol, funciones y límites del orientador escolar",
-        "estado_en_lista": "Bloque 3 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 4 de 5"
+  "id_item": "CEOL_B03_I04",
+  "archivo_sugerido": "CEOL_B03_I04_comunicacion_asertiva_orientador_conflicto.json",
+  "bloque": {
+    "codigo_bloque": "CEOL_B03",
+    "nombre": "Rol, funciones y límites del orientador escolar",
+    "estado_en_lista": "Bloque 3 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 4 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce una secuencia básica de comunicación asertiva que el orientador puede aplicar al recibir una situación de conflicto.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con orientación escolar, convivencia, coordinación o docencia.",
+    "blueprint": {
+      "problematica_principal": "Respuesta impulsiva, defensiva o desordenada ante situaciones de conflicto escolar.",
+      "fuente_autorizada": [
+        "Plan Nacional de Orientación Escolar",
+        "Orientaciones de convivencia escolar",
+        "Manual de convivencia institucional",
+        "Competencias socioemocionales"
+      ],
+      "componente_modulo": "Comunicación Asertiva en Orientación Escolar",
+      "competencia": "Mediación comunicativa de conflictos",
+      "afirmacion": "La comunicación asertiva exige escuchar, validar o reconocer la situación y orientar acuerdos o rutas con claridad y respeto.",
+      "evidencia_observable": "Identifica una secuencia comunicativa que incluye escucha activa, clarificación respetuosa y orientación hacia acuerdos o ruta de atención.",
+      "tipo_de_evidencia": "Juicio comunicativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "D"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce una secuencia básica de comunicación asertiva que el orientador puede aplicar al recibir una situación de conflicto.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con orientación escolar, convivencia, coordinación o docencia.",
-        "blueprint": {
-            "problematica_principal": "Respuesta impulsiva, defensiva o desordenada ante situaciones de conflicto escolar.",
-            "fuente_autorizada": [
-                "Plan Nacional de Orientación Escolar",
-                "Orientaciones de convivencia escolar",
-                "Manual de convivencia institucional",
-                "Competencias socioemocionales"
-            ],
-            "componente_modulo": "Comunicación Asertiva en Orientación Escolar",
-            "competencia": "Mediación comunicativa de conflictos",
-            "afirmacion": "La comunicación asertiva exige escuchar, validar o reconocer la situación y orientar acuerdos o rutas con claridad y respeto.",
-            "evidencia_observable": "Identifica una secuencia comunicativa que incluye escucha activa, clarificación respetuosa y orientación hacia acuerdos o ruta de atención.",
-            "tipo_de_evidencia": "Juicio comunicativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "D"
-        },
-        "claim": "El evaluado comprende que la comunicación asertiva del orientador no consiste en imponer, evitar o responder defensivamente, sino en escuchar, comprender, aclarar y orientar la acción institucional de manera respetuosa.",
-        "evidencia_observable": "Selecciona una secuencia de tres pasos que permite recibir una situación de conflicto sin escalarla.",
-        "tarea_cognitiva": "Elegir la secuencia comunicativa más adecuada para iniciar la atención de un conflicto.",
-        "tipo_de_pregunta": "Caso situacional de juicio comunicativo",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Fórmula rígida de comunicación",
-                "revision": "La clave plantea una secuencia básica adaptable, no un protocolo cerrado para todos los casos."
-            },
-            {
-                "riesgo": "Confusión entre escucha y aceptación automática",
-                "revision": "La opción correcta escucha y valida la importancia del caso, pero orienta verificación y ruta."
-            },
-            {
-                "riesgo": "Escalada del conflicto",
-                "revision": "Los distractores muestran respuestas defensivas o evasivas."
-            },
-            {
-                "riesgo": "Sesgo por estilo personal de comunicación",
-                "revision": "El ítem evalúa una competencia profesional, no rasgos de personalidad."
-            }
-        ]
+    "claim": "El evaluado comprende que la comunicación asertiva del orientador no consiste en imponer, evitar o responder defensivamente, sino en escuchar, comprender, aclarar y orientar la acción institucional de manera respetuosa.",
+    "evidencia_observable": "Selecciona una secuencia de tres pasos que permite recibir una situación de conflicto sin escalarla.",
+    "tarea_cognitiva": "Elegir la secuencia comunicativa más adecuada para iniciar la atención de un conflicto.",
+    "tipo_de_pregunta": "Caso situacional de juicio comunicativo",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Fórmula rígida de comunicación",
+        "revision": "La clave plantea una secuencia básica adaptable, no un protocolo cerrado para todos los casos."
+      },
+      {
+        "riesgo": "Confusión entre escucha y aceptación automática",
+        "revision": "La opción correcta escucha y valida la importancia del caso, pero orienta verificación y ruta."
+      },
+      {
+        "riesgo": "Escalada del conflicto",
+        "revision": "Los distractores muestran respuestas defensivas o evasivas."
+      },
+      {
+        "riesgo": "Sesgo por estilo personal de comunicación",
+        "revision": "El ítem evalúa una competencia profesional, no rasgos de personalidad."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un estudiante llega alterado a orientación escolar y afirma que tuvo un conflicto con varios compañeros. El orientador necesita aplicar comunicación asertiva para recibir la situación sin escalar el conflicto y sin emitir juicios apresurados.\n\n¿Cuál secuencia de tres pasos es más adecuada?",
+    "opciones": {
+      "A": "Interrumpir, señalar culpables y ordenar una sanción inmediata.",
+      "B": "Evitar escuchar el caso, pedir que vuelva después y cerrar la conversación.",
+      "C": "Pedir al estudiante que escriba una queja y no hacer ninguna intervención inicial.",
+      "D": "Escuchar activamente, clarificar los hechos y emociones con respeto, y orientar acuerdos o activación de ruta según corresponda."
     },
-    "item": {
-        "enunciado": "Un estudiante llega alterado a orientación escolar y afirma que tuvo un conflicto con varios compañeros. El orientador necesita aplicar comunicación asertiva para recibir la situación sin escalar el conflicto y sin emitir juicios apresurados.\n\n¿Cuál secuencia de tres pasos es más adecuada?",
-        "opciones": {
-            "A": "Interrumpir, señalar culpables y ordenar una sanción inmediata.",
-            "B": "Evitar escuchar el caso, pedir que vuelva después y cerrar la conversación.",
-            "C": "Pedir al estudiante que escriba una queja y no hacer ninguna intervención inicial.",
-            "D": "Escuchar activamente, clarificar los hechos y emociones con respeto, y orientar acuerdos o activación de ruta según corresponda."
-        },
-        "respuesta_correcta": "D"
+    "respuesta_correcta": "D"
+  },
+  "ficha_tecnica": {
+    "componente": "Comunicación Asertiva en Orientación Escolar",
+    "competencia": "Mediación comunicativa de conflictos",
+    "claim_evaluado": "El evaluado comprende que la comunicación asertiva del orientador no consiste en imponer, evitar o responder defensivamente, sino en escuchar, comprender, aclarar y orientar la acción institucional de manera respetuosa.",
+    "evidencia": "Selecciona una secuencia de tres pasos que permite recibir una situación de conflicto sin escalarla.",
+    "proceso_cognitivo": "Análisis y juicio comunicativo",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "D",
+    "distractores": {
+      "A": "Escala el conflicto y anticipa culpabilidades sin escucha ni verificación.",
+      "B": "Evade la atención inicial y puede aumentar la sensación de desprotección.",
+      "C": "Reduce la atención a un trámite escrito sin contención ni orientación inicial."
     },
-    "ficha_tecnica": {
-        "componente": "Comunicación Asertiva en Orientación Escolar",
-        "competencia": "Mediación comunicativa de conflictos",
-        "claim_evaluado": "El evaluado comprende que la comunicación asertiva del orientador no consiste en imponer, evitar o responder defensivamente, sino en escuchar, comprender, aclarar y orientar la acción institucional de manera respetuosa.",
-        "evidencia": "Selecciona una secuencia de tres pasos que permite recibir una situación de conflicto sin escalarla.",
-        "proceso_cognitivo": "Análisis y juicio comunicativo",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "D",
-        "distractores": {
-            "A": "Escala el conflicto y anticipa culpabilidades sin escucha ni verificación.",
-            "B": "Evade la atención inicial y puede aumentar la sensación de desprotección.",
-            "C": "Reduce la atención a un trámite escrito sin contención ni orientación inicial."
-        },
-        "fuente_autorizada": [
-            "Plan Nacional de Orientación Escolar",
-            "Orientaciones de convivencia escolar",
-            "Manual de convivencia institucional",
-            "Competencias socioemocionales"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque propone una secuencia comunicativa asertiva: escucha activa, clarificación respetuosa y orientación hacia acuerdos o rutas institucionales.",
-        "opcion_A": "Es incorrecta porque sanciona sin escuchar ni verificar.",
-        "opcion_B": "Es incorrecta porque evade el conflicto.",
-        "opcion_C": "Es incorrecta porque formalizar por escrito puede ser útil, pero no reemplaza la escucha y contención inicial."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem no presupone que el estudiante tenga o no razón; evalúa la actuación comunicativa inicial del orientador frente a una situación de conflicto."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 5 preguntas sobre rol, funciones y límites del orientador escolar."
+    "fuente_autorizada": [
+      "Plan Nacional de Orientación Escolar",
+      "Orientaciones de convivencia escolar",
+      "Manual de convivencia institucional",
+      "Competencias socioemocionales"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "opcion_A": "Es incorrecta porque sanciona sin escuchar ni verificar.",
+    "opcion_B": "Es incorrecta porque evade el conflicto.",
+    "opcion_C": "Es incorrecta porque formalizar por escrito puede ser útil, pero no reemplaza la escucha y contención inicial.",
+    "distractores": {
+      "A": "Es incorrecta porque sanciona sin escuchar ni verificar.",
+      "B": "Es incorrecta porque evade el conflicto.",
+      "C": "Es incorrecta porque formalizar por escrito puede ser útil, pero no reemplaza la escucha y contención inicial."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem no presupone que el estudiante tenga o no razón; evalúa la actuación comunicativa inicial del orientador frente a una situación de conflicto."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 5 preguntas sobre rol, funciones y límites del orientador escolar."
+  }
 }

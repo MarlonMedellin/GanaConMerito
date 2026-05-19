@@ -1,96 +1,101 @@
 {
-    "id_item": "EIP_B01_I01",
-    "archivo_sugerido": "EIP_B01_I01_ensenanzas_obligatorias_articulo_14_ley_115.json",
-    "bloque": {
-        "codigo_bloque": "EIP_B01",
-        "nombre": "Currículo obligatorio y proyectos pedagógicos transversales",
-        "estado_en_lista": "Bloque 1 de 7",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 1 de 5"
+  "id_item": "EIP_B01_I01",
+  "archivo_sugerido": "EIP_B01_I01_ensenanzas_obligatorias_articulo_14_ley_115.json",
+  "bloque": {
+    "codigo_bloque": "EIP_B01",
+    "nombre": "Currículo obligatorio y proyectos pedagógicos transversales",
+    "estado_en_lista": "Bloque 1 de 7",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 1 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce las enseñanzas obligatorias previstas en el artículo 14 de la Ley 115 y su carácter transversal en preescolar, básica y media.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación académica, rectoría, currículo, planeación o gestión educativa.",
+    "blueprint": {
+      "problematica_principal": "Reducir las enseñanzas obligatorias del artículo 14 a asignaturas aisladas o a actividades ocasionales sin transversalidad curricular.",
+      "fuente_autorizada": [
+        "Ley 115 de 1994",
+        "Artículo 14 Ley 115",
+        "Proyecto Educativo Institucional",
+        "Currículo obligatorio"
+      ],
+      "componente_modulo": "Currículo obligatorio",
+      "competencia": "Identificación de enseñanzas transversales obligatorias",
+      "afirmacion": "Las instituciones deben incorporar enseñanzas obligatorias relacionadas con Constitución, civismo, tiempo libre, ambiente, paz, democracia, valores humanos y educación sexual.",
+      "evidencia_observable": "Reconoce que estas enseñanzas deben trabajarse transversalmente desde preescolar hasta la educación media.",
+      "tipo_de_evidencia": "Reconocimiento normativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "B"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce las enseñanzas obligatorias previstas en el artículo 14 de la Ley 115 y su carácter transversal en preescolar, básica y media.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación académica, rectoría, currículo, planeación o gestión educativa.",
-        "blueprint": {
-            "problematica_principal": "Reducir las enseñanzas obligatorias del artículo 14 a asignaturas aisladas o a actividades ocasionales sin transversalidad curricular.",
-            "fuente_autorizada": [
-                "Ley 115 de 1994",
-                "Artículo 14 Ley 115",
-                "Proyecto Educativo Institucional",
-                "Currículo obligatorio"
-            ],
-            "componente_modulo": "Currículo obligatorio",
-            "competencia": "Identificación de enseñanzas transversales obligatorias",
-            "afirmacion": "Las instituciones deben incorporar enseñanzas obligatorias relacionadas con Constitución, civismo, tiempo libre, ambiente, paz, democracia, valores humanos y educación sexual.",
-            "evidencia_observable": "Reconoce que estas enseñanzas deben trabajarse transversalmente desde preescolar hasta la educación media.",
-            "tipo_de_evidencia": "Reconocimiento normativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "B"
-        },
-        "claim": "El evaluado comprende que el currículo obligatorio incluye enseñanzas transversales que no se agotan en una materia independiente.",
-        "evidencia_observable": "Selecciona el conjunto de enseñanzas obligatorias derivadas del artículo 14 de la Ley 115.",
-        "tarea_cognitiva": "Reconocer componentes curriculares obligatorios y su carácter transversal.",
-        "tipo_de_pregunta": "Pregunta normativa de reconocimiento",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Formular rígidamente como cuatro proyectos cuando el artículo incluye varias enseñanzas obligatorias",
-                "revision": "El ítem usa la expresión enseñanzas obligatorias y proyectos transversales derivados."
-            },
-            {
-                "riesgo": "Confundir transversalidad con asignatura aislada",
-                "revision": "La clave enfatiza integración curricular."
-            },
-            {
-                "riesgo": "Omitir educación sexual o educación ambiental",
-                "revision": "La opción correcta incluye los núcleos obligatorios."
-            }
-        ]
+    "claim": "El evaluado comprende que el currículo obligatorio incluye enseñanzas transversales que no se agotan en una materia independiente.",
+    "evidencia_observable": "Selecciona el conjunto de enseñanzas obligatorias derivadas del artículo 14 de la Ley 115.",
+    "tarea_cognitiva": "Reconocer componentes curriculares obligatorios y su carácter transversal.",
+    "tipo_de_pregunta": "Pregunta normativa de reconocimiento",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Formular rígidamente como cuatro proyectos cuando el artículo incluye varias enseñanzas obligatorias",
+        "revision": "El ítem usa la expresión enseñanzas obligatorias y proyectos transversales derivados."
+      },
+      {
+        "riesgo": "Confundir transversalidad con asignatura aislada",
+        "revision": "La clave enfatiza integración curricular."
+      },
+      {
+        "riesgo": "Omitir educación sexual o educación ambiental",
+        "revision": "La opción correcta incluye los núcleos obligatorios."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Una institución educativa revisa su currículo y pregunta qué enseñanzas obligatorias debe incorporar de manera transversal desde preescolar hasta la educación media, de acuerdo con el artículo 14 de la Ley 115.\n\n¿Cuál conjunto responde mejor a esa exigencia legal?",
+    "opciones": {
+      "A": "Únicamente matemáticas, lenguaje, ciencias naturales y ciencias sociales como áreas independientes.",
+      "B": "Constitución e instrucción cívica; aprovechamiento del tiempo libre, educación física, recreación y deporte; protección del ambiente; educación para la justicia, la paz, la democracia y los valores humanos; y educación sexual.",
+      "C": "Solo religión, disciplina, caligrafía y urbanidad como contenidos obligatorios.",
+      "D": "Actividades opcionales que cada docente decide si trabaja o no, sin relación con el PEI."
     },
-    "item": {
-        "enunciado": "Una institución educativa revisa su currículo y pregunta qué enseñanzas obligatorias debe incorporar de manera transversal desde preescolar hasta la educación media, de acuerdo con el artículo 14 de la Ley 115.\n\n¿Cuál conjunto responde mejor a esa exigencia legal?",
-        "opciones": {
-            "A": "Únicamente matemáticas, lenguaje, ciencias naturales y ciencias sociales como áreas independientes.",
-            "B": "Constitución e instrucción cívica; aprovechamiento del tiempo libre, educación física, recreación y deporte; protección del ambiente; educación para la justicia, la paz, la democracia y los valores humanos; y educación sexual.",
-            "C": "Solo religión, disciplina, caligrafía y urbanidad como contenidos obligatorios.",
-            "D": "Actividades opcionales que cada docente decide si trabaja o no, sin relación con el PEI."
-        },
-        "respuesta_correcta": "B"
+    "respuesta_correcta": "B"
+  },
+  "ficha_tecnica": {
+    "componente": "Currículo obligatorio",
+    "competencia": "Identificación de enseñanzas transversales obligatorias",
+    "claim_evaluado": "El evaluado comprende que el currículo obligatorio incluye enseñanzas transversales que no se agotan en una materia independiente.",
+    "evidencia": "Selecciona el conjunto de enseñanzas obligatorias derivadas del artículo 14 de la Ley 115.",
+    "proceso_cognitivo": "Reconocimiento normativo aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "B",
+    "distractores": {
+      "A": "Confunde áreas obligatorias con enseñanzas transversales del artículo 14.",
+      "C": "Incluye contenidos que no corresponden al conjunto normativo solicitado.",
+      "D": "Desconoce el carácter obligatorio e institucional de estas enseñanzas."
     },
-    "ficha_tecnica": {
-        "componente": "Currículo obligatorio",
-        "competencia": "Identificación de enseñanzas transversales obligatorias",
-        "claim_evaluado": "El evaluado comprende que el currículo obligatorio incluye enseñanzas transversales que no se agotan en una materia independiente.",
-        "evidencia": "Selecciona el conjunto de enseñanzas obligatorias derivadas del artículo 14 de la Ley 115.",
-        "proceso_cognitivo": "Reconocimiento normativo aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "B",
-        "distractores": {
-            "A": "Confunde áreas obligatorias con enseñanzas transversales del artículo 14.",
-            "C": "Incluye contenidos que no corresponden al conjunto normativo solicitado.",
-            "D": "Desconoce el carácter obligatorio e institucional de estas enseñanzas."
-        },
-        "fuente_autorizada": [
-            "Ley 115 de 1994",
-            "Artículo 14 Ley 115",
-            "Proyecto Educativo Institucional"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque recoge las enseñanzas obligatorias de carácter transversal previstas por la Ley 115.",
-        "opcion_A": "Es incorrecta porque limita la respuesta a áreas académicas tradicionales.",
-        "opcion_C": "Es incorrecta porque no corresponde al listado normativo del artículo 14.",
-        "opcion_D": "Es incorrecta porque las enseñanzas del artículo 14 no son opcionales ni dependen solo de la voluntad individual del docente."
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado con observación normativa.",
-        "argumento": "El ítem evita fijar indebidamente un número cerrado de proyectos y formula la pregunta como enseñanzas obligatorias transversales."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Verificar modificaciones normativas vigentes del artículo 14 antes de uso definitivo.",
-        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 5 preguntas sobre currículo obligatorio y proyectos pedagógicos transversales."
+    "fuente_autorizada": [
+      "Ley 115 de 1994",
+      "Artículo 14 Ley 115",
+      "Proyecto Educativo Institucional"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "opcion_A": "Es incorrecta porque limita la respuesta a áreas académicas tradicionales.",
+    "opcion_C": "Es incorrecta porque no corresponde al listado normativo del artículo 14.",
+    "opcion_D": "Es incorrecta porque las enseñanzas del artículo 14 no son opcionales ni dependen solo de la voluntad individual del docente.",
+    "distractores": {
+      "A": "Es incorrecta porque limita la respuesta a áreas académicas tradicionales.",
+      "C": "Es incorrecta porque no corresponde al listado normativo del artículo 14.",
+      "D": "Es incorrecta porque las enseñanzas del artículo 14 no son opcionales ni dependen solo de la voluntad individual del docente."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado con observación normativa.",
+    "argumento": "El ítem evita fijar indebidamente un número cerrado de proyectos y formula la pregunta como enseñanzas obligatorias transversales."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Verificar modificaciones normativas vigentes del artículo 14 antes de uso definitivo.",
+    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 5 preguntas sobre currículo obligatorio y proyectos pedagógicos transversales."
+  }
 }

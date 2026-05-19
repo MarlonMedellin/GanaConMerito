@@ -1,40 +1,40 @@
 {
-    "id_item": "MTV_B10_I07",
-    "archivo_sugerido": "MTV_B10_I07_gestion_academica_ejemplo_likert.json",
-    "proposito_de_uso": "Evaluar si el aspirante identifica una proposición de gestión académica.",
-    "blueprint": {
-        "componente_modulo": "Gestión académica",
-        "competencia": "Clasificación de dimensiones evaluadas",
-        "afirmacion": "Las proposiciones sobre planeación, evaluación, estrategias didácticas y seguimiento del aprendizaje pertenecen principalmente a la gestión académica.",
-        "evidencia_observable": "Reconoce una actuación centrada en enseñanza y aprendizaje.",
-        "tipo_de_evidencia": "Clasificación conceptual aplicada",
-        "dificultad_esperada": "Media",
-        "clave": "A"
+  "id_item": "MTV_B10_I07",
+  "archivo_sugerido": "MTV_B10_I07_gestion_academica_ejemplo_likert.json",
+  "proposito_de_uso": "Evaluar si el aspirante identifica una proposición de gestión académica.",
+  "blueprint": {
+    "componente_modulo": "Gestión académica",
+    "competencia": "Clasificación de dimensiones evaluadas",
+    "afirmacion": "Las proposiciones sobre planeación, evaluación, estrategias didácticas y seguimiento del aprendizaje pertenecen principalmente a la gestión académica.",
+    "evidencia_observable": "Reconoce una actuación centrada en enseñanza y aprendizaje.",
+    "tipo_de_evidencia": "Clasificación conceptual aplicada",
+    "dificultad_esperada": "Media",
+    "clave": "A"
+  },
+  "item": {
+    "enunciado": "En una escala Likert aparece la proposición: 'Ajusto mi planeación didáctica a partir de los resultados de evaluación y de las necesidades de aprendizaje de mis estudiantes'.\n\n¿A qué dimensión corresponde principalmente?",
+    "opciones": {
+      "A": "Gestión académica.",
+      "B": "Gestión financiera personal.",
+      "C": "Gestión de mantenimiento físico de la planta.",
+      "D": "Gestión comercial de servicios."
     },
-    "item": {
-        "enunciado": "En una escala Likert aparece la proposición: 'Ajusto mi planeación didáctica a partir de los resultados de evaluación y de las necesidades de aprendizaje de mis estudiantes'.\n\n¿A qué dimensión corresponde principalmente?",
-        "opciones": {
-            "A": "Gestión académica.",
-            "B": "Gestión financiera personal.",
-            "C": "Gestión de mantenimiento físico de la planta.",
-            "D": "Gestión comercial de servicios."
-        },
-        "respuesta_correcta": "A"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque la proposición trata de planeación, evaluación y necesidades de aprendizaje.",
-        "distractores": {
-            "B": "No se refiere a finanzas personales.",
-            "C": "No trata de infraestructura.",
-            "D": "No se refiere a una venta o servicio comercial."
-        }
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado",
-        "argumento": "El ítem evalúa clasificación de dimensión sin ambigüedad relevante."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem directo para gestión académica."
+    "respuesta_correcta": "A"
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "distractores": {
+      "B": "No se refiere a finanzas personales.",
+      "C": "No trata de infraestructura.",
+      "D": "No se refiere a una venta o servicio comercial."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado",
+    "argumento": "El ítem evalúa clasificación de dimensión sin ambigüedad relevante."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem directo para gestión académica."
+  }
 }

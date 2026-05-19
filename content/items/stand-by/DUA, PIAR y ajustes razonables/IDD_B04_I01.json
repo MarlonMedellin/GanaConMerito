@@ -1,97 +1,102 @@
 {
-    "id_item": "IDD_B04_I01",
-    "archivo_sugerido": "IDD_B04_I01_diferencia_dua_piar_base_poblacional.json",
-    "bloque": {
-        "codigo_bloque": "IDD_B04",
-        "nombre": "DUA, PIAR y ajustes razonables",
-        "estado_en_lista": "Bloque 4 de 17",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 1 de 7"
+  "id_item": "IDD_B04_I01",
+  "archivo_sugerido": "IDD_B04_I01_diferencia_dua_piar_base_poblacional.json",
+  "bloque": {
+    "codigo_bloque": "IDD_B04",
+    "nombre": "DUA, PIAR y ajustes razonables",
+    "estado_en_lista": "Bloque 4 de 17",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 1 de 7"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante diferencia el Diseño Universal para el Aprendizaje del Plan Individual de Ajustes Razonables según su base poblacional y enfoque.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión educativa, orientación escolar, coordinación académica o diseño curricular.",
+    "blueprint": {
+      "problematica_principal": "Confusión entre DUA como diseño preventivo para la diversidad del aula y PIAR como plan individualizado para estudiantes con discapacidad.",
+      "fuente_autorizada": [
+        "Decreto 1421 de 2017",
+        "Diseño Universal para el Aprendizaje",
+        "Orientaciones MEN sobre PIAR",
+        "Educación inclusiva"
+      ],
+      "componente_modulo": "Inclusión, DUA y PIAR",
+      "competencia": "Diferenciación de estrategias inclusivas",
+      "afirmacion": "El DUA se aplica al diseño general de experiencias para todos; el PIAR define ajustes individualizados para un estudiante con discapacidad.",
+      "evidencia_observable": "Reconoce que DUA no exige diagnóstico individual y que PIAR responde a necesidades específicas documentadas.",
+      "tipo_de_evidencia": "Comprensión conceptual comparativa",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "B"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante diferencia el Diseño Universal para el Aprendizaje del Plan Individual de Ajustes Razonables según su base poblacional y enfoque.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión educativa, orientación escolar, coordinación académica o diseño curricular.",
-        "blueprint": {
-            "problematica_principal": "Confusión entre DUA como diseño preventivo para la diversidad del aula y PIAR como plan individualizado para estudiantes con discapacidad.",
-            "fuente_autorizada": [
-                "Decreto 1421 de 2017",
-                "Diseño Universal para el Aprendizaje",
-                "Orientaciones MEN sobre PIAR",
-                "Educación inclusiva"
-            ],
-            "componente_modulo": "Inclusión, DUA y PIAR",
-            "competencia": "Diferenciación de estrategias inclusivas",
-            "afirmacion": "El DUA se aplica al diseño general de experiencias para todos; el PIAR define ajustes individualizados para un estudiante con discapacidad.",
-            "evidencia_observable": "Reconoce que DUA no exige diagnóstico individual y que PIAR responde a necesidades específicas documentadas.",
-            "tipo_de_evidencia": "Comprensión conceptual comparativa",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "B"
-        },
-        "claim": "El evaluado comprende que el DUA reduce barreras desde la planeación general y que el PIAR organiza ajustes razonables individuales cuando un estudiante con discapacidad los requiere.",
-        "evidencia_observable": "Selecciona una explicación que diferencia población, propósito y nivel de intervención de DUA y PIAR.",
-        "tarea_cognitiva": "Comparar DUA y PIAR en un contexto de planeación inclusiva.",
-        "tipo_de_pregunta": "Pregunta conceptual comparativa",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Creer que el DUA solo aplica a estudiantes con discapacidad",
-                "revision": "La clave indica que el DUA beneficia a toda la diversidad del aula."
-            },
-            {
-                "riesgo": "Creer que el PIAR reemplaza la planeación común",
-                "revision": "La opción correcta ubica el PIAR como complemento individualizado."
-            },
-            {
-                "riesgo": "Confundir diagnóstico médico con diseño pedagógico",
-                "revision": "El ítem diferencia diagnóstico, barreras y ajustes pedagógicos."
-            }
-        ]
+    "claim": "El evaluado comprende que el DUA reduce barreras desde la planeación general y que el PIAR organiza ajustes razonables individuales cuando un estudiante con discapacidad los requiere.",
+    "evidencia_observable": "Selecciona una explicación que diferencia población, propósito y nivel de intervención de DUA y PIAR.",
+    "tarea_cognitiva": "Comparar DUA y PIAR en un contexto de planeación inclusiva.",
+    "tipo_de_pregunta": "Pregunta conceptual comparativa",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Creer que el DUA solo aplica a estudiantes con discapacidad",
+        "revision": "La clave indica que el DUA beneficia a toda la diversidad del aula."
+      },
+      {
+        "riesgo": "Creer que el PIAR reemplaza la planeación común",
+        "revision": "La opción correcta ubica el PIAR como complemento individualizado."
+      },
+      {
+        "riesgo": "Confundir diagnóstico médico con diseño pedagógico",
+        "revision": "El ítem diferencia diagnóstico, barreras y ajustes pedagógicos."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un docente planea una unidad didáctica y duda entre aplicar Diseño Universal para el Aprendizaje o elaborar un PIAR. Cree que ambas herramientas son iguales y que solo se usan cuando hay diagnóstico médico.\n\n¿Cuál diferencia es correcta?",
+    "opciones": {
+      "A": "El DUA y el PIAR son lo mismo, porque ambos se elaboran únicamente después de un diagnóstico médico.",
+      "B": "El DUA orienta la planeación flexible para toda la diversidad del aula; el PIAR define ajustes individualizados para un estudiante con discapacidad que los requiere.",
+      "C": "El DUA sirve para separar a los estudiantes con discapacidad y el PIAR para eliminar todo contenido académico.",
+      "D": "El PIAR reemplaza completamente la clase común y el DUA se usa solo en educación especial segregada."
     },
-    "item": {
-        "enunciado": "Un docente planea una unidad didáctica y duda entre aplicar Diseño Universal para el Aprendizaje o elaborar un PIAR. Cree que ambas herramientas son iguales y que solo se usan cuando hay diagnóstico médico.\n\n¿Cuál diferencia es correcta?",
-        "opciones": {
-            "A": "El DUA y el PIAR son lo mismo, porque ambos se elaboran únicamente después de un diagnóstico médico.",
-            "B": "El DUA orienta la planeación flexible para toda la diversidad del aula; el PIAR define ajustes individualizados para un estudiante con discapacidad que los requiere.",
-            "C": "El DUA sirve para separar a los estudiantes con discapacidad y el PIAR para eliminar todo contenido académico.",
-            "D": "El PIAR reemplaza completamente la clase común y el DUA se usa solo en educación especial segregada."
-        },
-        "respuesta_correcta": "B"
+    "respuesta_correcta": "B"
+  },
+  "ficha_tecnica": {
+    "componente": "Inclusión, DUA y PIAR",
+    "competencia": "Diferenciación de estrategias inclusivas",
+    "claim_evaluado": "El evaluado comprende que el DUA reduce barreras desde la planeación general y que el PIAR organiza ajustes razonables individuales cuando un estudiante con discapacidad los requiere.",
+    "evidencia": "Selecciona una explicación que diferencia población, propósito y nivel de intervención de DUA y PIAR.",
+    "proceso_cognitivo": "Comprensión conceptual comparativa",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "B",
+    "distractores": {
+      "A": "Confunde DUA y PIAR y condiciona ambos a diagnóstico médico.",
+      "C": "Atribuye funciones segregadoras y de eliminación curricular.",
+      "D": "Desconoce el carácter común e inclusivo de la clase."
     },
-    "ficha_tecnica": {
-        "componente": "Inclusión, DUA y PIAR",
-        "competencia": "Diferenciación de estrategias inclusivas",
-        "claim_evaluado": "El evaluado comprende que el DUA reduce barreras desde la planeación general y que el PIAR organiza ajustes razonables individuales cuando un estudiante con discapacidad los requiere.",
-        "evidencia": "Selecciona una explicación que diferencia población, propósito y nivel de intervención de DUA y PIAR.",
-        "proceso_cognitivo": "Comprensión conceptual comparativa",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "B",
-        "distractores": {
-            "A": "Confunde DUA y PIAR y condiciona ambos a diagnóstico médico.",
-            "C": "Atribuye funciones segregadoras y de eliminación curricular.",
-            "D": "Desconoce el carácter común e inclusivo de la clase."
-        },
-        "fuente_autorizada": [
-            "Decreto 1421 de 2017",
-            "Diseño Universal para el Aprendizaje",
-            "Orientaciones MEN sobre PIAR",
-            "Educación inclusiva"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque diferencia el alcance general del DUA y el carácter individualizado del PIAR.",
-        "opcion_A": "Es incorrecta porque el DUA no depende de un diagnóstico médico individual.",
-        "opcion_C": "Es incorrecta porque ni el DUA ni el PIAR tienen finalidad segregadora.",
-        "opcion_D": "Es incorrecta porque el PIAR no reemplaza por completo la clase común."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita reducir la inclusión a diagnóstico y presenta el DUA como herramienta preventiva para toda la diversidad del aula."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión normativa y pedagógica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 7 preguntas sobre DUA, PIAR y ajustes razonables."
+    "fuente_autorizada": [
+      "Decreto 1421 de 2017",
+      "Diseño Universal para el Aprendizaje",
+      "Orientaciones MEN sobre PIAR",
+      "Educación inclusiva"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "opcion_A": "Es incorrecta porque el DUA no depende de un diagnóstico médico individual.",
+    "opcion_C": "Es incorrecta porque ni el DUA ni el PIAR tienen finalidad segregadora.",
+    "opcion_D": "Es incorrecta porque el PIAR no reemplaza por completo la clase común.",
+    "distractores": {
+      "A": "Es incorrecta porque el DUA no depende de un diagnóstico médico individual.",
+      "C": "Es incorrecta porque ni el DUA ni el PIAR tienen finalidad segregadora.",
+      "D": "Es incorrecta porque el PIAR no reemplaza por completo la clase común."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita reducir la inclusión a diagnóstico y presenta el DUA como herramienta preventiva para toda la diversidad del aula."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión normativa y pedagógica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 7 preguntas sobre DUA, PIAR y ajustes razonables."
+  }
 }

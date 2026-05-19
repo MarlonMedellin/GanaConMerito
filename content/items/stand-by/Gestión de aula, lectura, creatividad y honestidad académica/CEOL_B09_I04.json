@@ -1,97 +1,102 @@
 {
-    "id_item": "CEOL_B09_I04",
-    "archivo_sugerido": "CEOL_B09_I04_plagio_copia_evaluacion_formativa.json",
-    "bloque": {
-        "codigo_bloque": "CEOL_B09",
-        "nombre": "Gestión de aula, lectura, creatividad y honestidad académica",
-        "estado_en_lista": "Bloque 9 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 4 de 4"
+  "id_item": "CEOL_B09_I04",
+  "archivo_sugerido": "CEOL_B09_I04_plagio_copia_evaluacion_formativa.json",
+  "bloque": {
+    "codigo_bloque": "CEOL_B09",
+    "nombre": "Gestión de aula, lectura, creatividad y honestidad académica",
+    "estado_en_lista": "Bloque 9 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 4 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce el enfoque pedagógico correcto para afrontar plagio y copia desde la evaluación formativa.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, evaluación formativa, convivencia o gestión académica.",
+    "blueprint": {
+      "problematica_principal": "Manejo exclusivamente punitivo del plagio y la copia en trabajos escolares.",
+      "fuente_autorizada": [
+        "Evaluación formativa",
+        "Honestidad académica",
+        "Manual de convivencia institucional",
+        "Alfabetización informacional"
+      ],
+      "componente_modulo": "Evaluación Formativa y Honestidad Académica",
+      "competencia": "Corrección formativa del plagio",
+      "afirmacion": "El plagio debe abordarse como falta formativa y ética, con enseñanza de citación, autoría, revisión y nueva evidencia de aprendizaje.",
+      "evidencia_observable": "Selecciona una actuación que combina consecuencia proporcional, orientación, retroalimentación y oportunidad de rehacer con autoría.",
+      "tipo_de_evidencia": "Juicio evaluativo y ético aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "B"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce el enfoque pedagógico correcto para afrontar plagio y copia desde la evaluación formativa.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, evaluación formativa, convivencia o gestión académica.",
-        "blueprint": {
-            "problematica_principal": "Manejo exclusivamente punitivo del plagio y la copia en trabajos escolares.",
-            "fuente_autorizada": [
-                "Evaluación formativa",
-                "Honestidad académica",
-                "Manual de convivencia institucional",
-                "Alfabetización informacional"
-            ],
-            "componente_modulo": "Evaluación Formativa y Honestidad Académica",
-            "competencia": "Corrección formativa del plagio",
-            "afirmacion": "El plagio debe abordarse como falta formativa y ética, con enseñanza de citación, autoría, revisión y nueva evidencia de aprendizaje.",
-            "evidencia_observable": "Selecciona una actuación que combina consecuencia proporcional, orientación, retroalimentación y oportunidad de rehacer con autoría.",
-            "tipo_de_evidencia": "Juicio evaluativo y ético aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "B"
-        },
-        "claim": "El evaluado comprende que corregir plagio no consiste solo en castigar, sino en formar en autoría, uso de fuentes, ética académica y producción propia.",
-        "evidencia_observable": "Selecciona un enfoque que articula responsabilidad, aprendizaje y nueva evidencia.",
-        "tarea_cognitiva": "Analizar una situación de plagio y elegir una respuesta formativa y proporcional.",
-        "tipo_de_pregunta": "Caso situacional de juicio evaluativo",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Normalizar el plagio",
-                "revision": "La clave incluye responsabilidad y consecuencias proporcionales."
-            },
-            {
-                "riesgo": "Respuesta exclusivamente punitiva",
-                "revision": "La opción correcta integra enseñanza, retroalimentación y nueva evidencia."
-            },
-            {
-                "riesgo": "Sesgo por desconocimiento de citación",
-                "revision": "La clave exige enseñar criterios de uso de fuentes antes de esperar dominio pleno."
-            }
-        ]
+    "claim": "El evaluado comprende que corregir plagio no consiste solo en castigar, sino en formar en autoría, uso de fuentes, ética académica y producción propia.",
+    "evidencia_observable": "Selecciona un enfoque que articula responsabilidad, aprendizaje y nueva evidencia.",
+    "tarea_cognitiva": "Analizar una situación de plagio y elegir una respuesta formativa y proporcional.",
+    "tipo_de_pregunta": "Caso situacional de juicio evaluativo",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Normalizar el plagio",
+        "revision": "La clave incluye responsabilidad y consecuencias proporcionales."
+      },
+      {
+        "riesgo": "Respuesta exclusivamente punitiva",
+        "revision": "La opción correcta integra enseñanza, retroalimentación y nueva evidencia."
+      },
+      {
+        "riesgo": "Sesgo por desconocimiento de citación",
+        "revision": "La clave exige enseñar criterios de uso de fuentes antes de esperar dominio pleno."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un docente identifica que varios estudiantes copiaron fragmentos de internet en sus trabajos sin citarlos y sin elaborar ideas propias. Quiere corregir la situación desde un enfoque de evaluación formativa y honestidad académica.\n\n¿Cuál es el enfoque pedagógico más adecuado?",
+    "opciones": {
+      "A": "Anular definitivamente la asignatura sin explicar qué fue el plagio ni cómo evitarlo.",
+      "B": "Explicar el problema de autoría, enseñar uso de fuentes y citación, aplicar una consecuencia proporcional, retroalimentar y solicitar una nueva producción con voz propia.",
+      "C": "Ignorar la copia si el trabajo está bien presentado.",
+      "D": "Prohibir toda consulta externa para que los estudiantes solo escriban de memoria."
     },
-    "item": {
-        "enunciado": "Un docente identifica que varios estudiantes copiaron fragmentos de internet en sus trabajos sin citarlos y sin elaborar ideas propias. Quiere corregir la situación desde un enfoque de evaluación formativa y honestidad académica.\n\n¿Cuál es el enfoque pedagógico más adecuado?",
-        "opciones": {
-            "A": "Anular definitivamente la asignatura sin explicar qué fue el plagio ni cómo evitarlo.",
-            "B": "Explicar el problema de autoría, enseñar uso de fuentes y citación, aplicar una consecuencia proporcional, retroalimentar y solicitar una nueva producción con voz propia.",
-            "C": "Ignorar la copia si el trabajo está bien presentado.",
-            "D": "Prohibir toda consulta externa para que los estudiantes solo escriban de memoria."
-        },
-        "respuesta_correcta": "B"
+    "respuesta_correcta": "B"
+  },
+  "ficha_tecnica": {
+    "componente": "Evaluación Formativa y Honestidad Académica",
+    "competencia": "Corrección formativa del plagio",
+    "claim_evaluado": "El evaluado comprende que corregir plagio no consiste solo en castigar, sino en formar en autoría, uso de fuentes, ética académica y producción propia.",
+    "evidencia": "Selecciona un enfoque que articula responsabilidad, aprendizaje y nueva evidencia.",
+    "proceso_cognitivo": "Análisis y juicio evaluativo-ético",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "B",
+    "distractores": {
+      "A": "Aplica castigo extremo sin formación ni retroalimentación.",
+      "C": "Normaliza la copia y desconoce la autoría.",
+      "D": "Evita el uso de fuentes en lugar de formar en su uso responsable."
     },
-    "ficha_tecnica": {
-        "componente": "Evaluación Formativa y Honestidad Académica",
-        "competencia": "Corrección formativa del plagio",
-        "claim_evaluado": "El evaluado comprende que corregir plagio no consiste solo en castigar, sino en formar en autoría, uso de fuentes, ética académica y producción propia.",
-        "evidencia": "Selecciona un enfoque que articula responsabilidad, aprendizaje y nueva evidencia.",
-        "proceso_cognitivo": "Análisis y juicio evaluativo-ético",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "B",
-        "distractores": {
-            "A": "Aplica castigo extremo sin formación ni retroalimentación.",
-            "C": "Normaliza la copia y desconoce la autoría.",
-            "D": "Evita el uso de fuentes en lugar de formar en su uso responsable."
-        },
-        "fuente_autorizada": [
-            "Evaluación formativa",
-            "Honestidad académica",
-            "Manual de convivencia institucional",
-            "Alfabetización informacional"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque aborda el plagio como asunto ético y formativo: enseña autoría, fuentes, citación, responsabilidad y producción propia.",
-        "opcion_A": "Es incorrecta porque castiga sin enseñar.",
-        "opcion_C": "Es incorrecta porque valida una práctica deshonesta.",
-        "opcion_D": "Es incorrecta porque investigar y consultar fuentes también hace parte del aprendizaje."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem no normaliza el plagio ni responde con castigo ciego. Propone responsabilidad, formación y nueva evidencia de aprendizaje."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre gestión de aula, lectura, creatividad y honestidad académica."
+    "fuente_autorizada": [
+      "Evaluación formativa",
+      "Honestidad académica",
+      "Manual de convivencia institucional",
+      "Alfabetización informacional"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "opcion_A": "Es incorrecta porque castiga sin enseñar.",
+    "opcion_C": "Es incorrecta porque valida una práctica deshonesta.",
+    "opcion_D": "Es incorrecta porque investigar y consultar fuentes también hace parte del aprendizaje.",
+    "distractores": {
+      "A": "Es incorrecta porque castiga sin enseñar.",
+      "C": "Es incorrecta porque valida una práctica deshonesta.",
+      "D": "Es incorrecta porque investigar y consultar fuentes también hace parte del aprendizaje."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem no normaliza el plagio ni responde con castigo ciego. Propone responsabilidad, formación y nueva evidencia de aprendizaje."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre gestión de aula, lectura, creatividad y honestidad académica."
+  }
 }

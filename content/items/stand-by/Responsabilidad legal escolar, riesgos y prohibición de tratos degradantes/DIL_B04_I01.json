@@ -1,99 +1,104 @@
 {
-    "id_item": "DIL_B04_I01",
-    "archivo_sugerido": "DIL_B04_I01_malnutricion_explotacion_abandono_reporte_ruta.json",
-    "bloque": {
-        "codigo_bloque": "DIL_B04",
-        "nombre": "Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes",
-        "estado_en_lista": "Bloque 4 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 1 de 5"
+  "id_item": "DIL_B04_I01",
+  "archivo_sugerido": "DIL_B04_I01_malnutricion_explotacion_abandono_reporte_ruta.json",
+  "bloque": {
+    "codigo_bloque": "DIL_B04",
+    "nombre": "Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes",
+    "estado_en_lista": "Bloque 4 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 1 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce el deber legal de actuar, reportar y activar rutas cuando identifica señales de malnutrición, explotación económica o abandono psicoafectivo.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación, convivencia o protección integral.",
+    "blueprint": {
+      "problematica_principal": "Omisión institucional frente a signos de vulneración de derechos en estudiantes.",
+      "fuente_autorizada": [
+        "Ley 1098 de 2006",
+        "Sistema Nacional de Bienestar Familiar",
+        "ICBF",
+        "Manual de convivencia institucional",
+        "Rutas de atención escolar"
+      ],
+      "componente_modulo": "Obligaciones de identificación de riesgos",
+      "competencia": "Detección y reporte de vulneraciones",
+      "afirmacion": "El educador debe observar, registrar, informar y activar rutas ante signos de vulneración de derechos, sin investigar ni sancionar por cuenta propia.",
+      "evidencia_observable": "Selecciona una actuación que protege al estudiante y reporta por canales competentes.",
+      "tipo_de_evidencia": "Juicio normativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "B"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce el deber legal de actuar, reportar y activar rutas cuando identifica señales de malnutrición, explotación económica o abandono psicoafectivo.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación, convivencia o protección integral.",
-        "blueprint": {
-            "problematica_principal": "Omisión institucional frente a signos de vulneración de derechos en estudiantes.",
-            "fuente_autorizada": [
-                "Ley 1098 de 2006",
-                "Sistema Nacional de Bienestar Familiar",
-                "ICBF",
-                "Manual de convivencia institucional",
-                "Rutas de atención escolar"
-            ],
-            "componente_modulo": "Obligaciones de identificación de riesgos",
-            "competencia": "Detección y reporte de vulneraciones",
-            "afirmacion": "El educador debe observar, registrar, informar y activar rutas ante signos de vulneración de derechos, sin investigar ni sancionar por cuenta propia.",
-            "evidencia_observable": "Selecciona una actuación que protege al estudiante y reporta por canales competentes.",
-            "tipo_de_evidencia": "Juicio normativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "B"
-        },
-        "claim": "El evaluado comprende que el rol escolar ante señales de riesgo es protector, documentado y articulado con rutas competentes.",
-        "evidencia_observable": "Elige una respuesta que evita omisión, revictimización o extralimitación.",
-        "tarea_cognitiva": "Analizar una situación de riesgo y elegir la actuación institucional adecuada.",
-        "tipo_de_pregunta": "Caso situacional normativo",
-        "dificultad_esperada": "Media-Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Culpar al estudiante o la familia sin verificación",
-                "revision": "La clave exige reporte y ruta, no juicio anticipado."
-            },
-            {
-                "riesgo": "Investigar indebidamente desde la escuela",
-                "revision": "La opción correcta limita el rol escolar a protección, documentación y remisión."
-            },
-            {
-                "riesgo": "Omitir por miedo a equivocarse",
-                "revision": "El ítem prioriza la actuación oportuna ante indicios razonables."
-            }
-        ]
+    "claim": "El evaluado comprende que el rol escolar ante señales de riesgo es protector, documentado y articulado con rutas competentes.",
+    "evidencia_observable": "Elige una respuesta que evita omisión, revictimización o extralimitación.",
+    "tarea_cognitiva": "Analizar una situación de riesgo y elegir la actuación institucional adecuada.",
+    "tipo_de_pregunta": "Caso situacional normativo",
+    "dificultad_esperada": "Media-Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Culpar al estudiante o la familia sin verificación",
+        "revision": "La clave exige reporte y ruta, no juicio anticipado."
+      },
+      {
+        "riesgo": "Investigar indebidamente desde la escuela",
+        "revision": "La opción correcta limita el rol escolar a protección, documentación y remisión."
+      },
+      {
+        "riesgo": "Omitir por miedo a equivocarse",
+        "revision": "El ítem prioriza la actuación oportuna ante indicios razonables."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un educador observa en un estudiante signos reiterados de malnutrición, posible explotación económica y abandono psicoafectivo. Algunos compañeros le sugieren no intervenir para evitar problemas con la familia.\n\n¿Cuál es el mandato legal y pedagógico más adecuado?",
+    "opciones": {
+      "A": "Ignorar la situación hasta que el estudiante hable espontáneamente del caso.",
+      "B": "Registrar los indicios, informar por los canales institucionales, proteger al estudiante y activar o remitir a la ruta competente de restablecimiento de derechos.",
+      "C": "Interrogar al estudiante hasta determinar jurídicamente la responsabilidad de su familia.",
+      "D": "Publicar el caso ante el grupo para generar conciencia."
     },
-    "item": {
-        "enunciado": "Un educador observa en un estudiante signos reiterados de malnutrición, posible explotación económica y abandono psicoafectivo. Algunos compañeros le sugieren no intervenir para evitar problemas con la familia.\n\n¿Cuál es el mandato legal y pedagógico más adecuado?",
-        "opciones": {
-            "A": "Ignorar la situación hasta que el estudiante hable espontáneamente del caso.",
-            "B": "Registrar los indicios, informar por los canales institucionales, proteger al estudiante y activar o remitir a la ruta competente de restablecimiento de derechos.",
-            "C": "Interrogar al estudiante hasta determinar jurídicamente la responsabilidad de su familia.",
-            "D": "Publicar el caso ante el grupo para generar conciencia."
-        },
-        "respuesta_correcta": "B"
+    "respuesta_correcta": "B"
+  },
+  "ficha_tecnica": {
+    "componente": "Obligaciones de identificación de riesgos",
+    "competencia": "Detección y reporte de vulneraciones",
+    "claim_evaluado": "El evaluado comprende que el rol escolar ante señales de riesgo es protector, documentado y articulado con rutas competentes.",
+    "evidencia": "Elige una respuesta que evita omisión, revictimización o extralimitación.",
+    "proceso_cognitivo": "Juicio normativo aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media-Alta",
+    "respuesta_correcta": "B",
+    "distractores": {
+      "A": "Constituye omisión frente a indicios de vulneración.",
+      "C": "Puede extralimitar funciones y revictimizar.",
+      "D": "Vulnera confidencialidad y dignidad del estudiante."
     },
-    "ficha_tecnica": {
-        "componente": "Obligaciones de identificación de riesgos",
-        "competencia": "Detección y reporte de vulneraciones",
-        "claim_evaluado": "El evaluado comprende que el rol escolar ante señales de riesgo es protector, documentado y articulado con rutas competentes.",
-        "evidencia": "Elige una respuesta que evita omisión, revictimización o extralimitación.",
-        "proceso_cognitivo": "Juicio normativo aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media-Alta",
-        "respuesta_correcta": "B",
-        "distractores": {
-            "A": "Constituye omisión frente a indicios de vulneración.",
-            "C": "Puede extralimitar funciones y revictimizar.",
-            "D": "Vulnera confidencialidad y dignidad del estudiante."
-        },
-        "fuente_autorizada": [
-            "Ley 1098 de 2006",
-            "Sistema Nacional de Bienestar Familiar",
-            "ICBF",
-            "Manual de convivencia institucional",
-            "Rutas de atención escolar"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque el docente debe actuar de forma protectora, documentada y articulada con la ruta competente.",
-        "opcion_A": "Es incorrecta porque posterga la protección.",
-        "opcion_C": "Es incorrecta porque la escuela no debe investigar jurídicamente por cuenta propia.",
-        "opcion_D": "Es incorrecta porque expone y humilla al estudiante."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "Protege la dignidad del estudiante y evita tanto la omisión como la intervención indebida."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 5 preguntas sobre responsabilidad legal escolar, riesgos y prohibición de tratos degradantes."
+    "fuente_autorizada": [
+      "Ley 1098 de 2006",
+      "Sistema Nacional de Bienestar Familiar",
+      "ICBF",
+      "Manual de convivencia institucional",
+      "Rutas de atención escolar"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "opcion_A": "Es incorrecta porque posterga la protección.",
+    "opcion_C": "Es incorrecta porque la escuela no debe investigar jurídicamente por cuenta propia.",
+    "opcion_D": "Es incorrecta porque expone y humilla al estudiante.",
+    "distractores": {
+      "A": "Es incorrecta porque posterga la protección.",
+      "C": "Es incorrecta porque la escuela no debe investigar jurídicamente por cuenta propia.",
+      "D": "Es incorrecta porque expone y humilla al estudiante."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "Protege la dignidad del estudiante y evita tanto la omisión como la intervención indebida."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 5 preguntas sobre responsabilidad legal escolar, riesgos y prohibición de tratos degradantes."
+  }
 }

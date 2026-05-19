@@ -1,99 +1,104 @@
 {
-    "id_item": "NFL_B08_I01",
-    "archivo_sugerido": "NFL_B08_I01_igualdad_material_articulo_13_debilidad_manifiesta.json",
-    "bloque": {
-        "codigo_bloque": "NFL_B08",
-        "nombre": "Igualdad material, discriminación positiva y debilidad manifiesta",
-        "estado_en_lista": "Bloque 8 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 1 de 4"
+  "id_item": "NFL_B08_I01",
+  "archivo_sugerido": "NFL_B08_I01_igualdad_material_articulo_13_debilidad_manifiesta.json",
+  "bloque": {
+    "codigo_bloque": "NFL_B08",
+    "nombre": "Igualdad material, discriminación positiva y debilidad manifiesta",
+    "estado_en_lista": "Bloque 8 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 1 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante comprende la igualdad material del artículo 13 constitucional y su aplicación en contextos educativos.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión educativa, orientación escolar, convivencia, coordinación o gestión institucional.",
+    "blueprint": {
+      "problematica_principal": "Confundir igualdad con trato idéntico, ignorando barreras, vulnerabilidad y debilidad manifiesta.",
+      "fuente_autorizada": [
+        "Constitución Política de Colombia artículo 13",
+        "Ley 115 de 1994",
+        "Ley 1098 de 2006",
+        "Decreto 1421 de 2017",
+        "Educación inclusiva"
+      ],
+      "componente_modulo": "Igualdad material",
+      "competencia": "Aplicación diferencial y no discriminatoria de derechos",
+      "afirmacion": "La igualdad material exige adoptar medidas diferenciadas y razonables para que estudiantes en debilidad manifiesta accedan efectivamente a los mismos derechos educativos.",
+      "evidencia_observable": "Reconoce que tratar exactamente igual a estudiantes con barreras distintas puede perpetuar desigualdad.",
+      "tipo_de_evidencia": "Juicio constitucional aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante comprende la igualdad material del artículo 13 constitucional y su aplicación en contextos educativos.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión educativa, orientación escolar, convivencia, coordinación o gestión institucional.",
-        "blueprint": {
-            "problematica_principal": "Confundir igualdad con trato idéntico, ignorando barreras, vulnerabilidad y debilidad manifiesta.",
-            "fuente_autorizada": [
-                "Constitución Política de Colombia artículo 13",
-                "Ley 115 de 1994",
-                "Ley 1098 de 2006",
-                "Decreto 1421 de 2017",
-                "Educación inclusiva"
-            ],
-            "componente_modulo": "Igualdad material",
-            "competencia": "Aplicación diferencial y no discriminatoria de derechos",
-            "afirmacion": "La igualdad material exige adoptar medidas diferenciadas y razonables para que estudiantes en debilidad manifiesta accedan efectivamente a los mismos derechos educativos.",
-            "evidencia_observable": "Reconoce que tratar exactamente igual a estudiantes con barreras distintas puede perpetuar desigualdad.",
-            "tipo_de_evidencia": "Juicio constitucional aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que la igualdad real y efectiva exige apoyos, ajustes y medidas diferenciales cuando existen barreras o condiciones de vulnerabilidad.",
-        "evidencia_observable": "Selecciona una acción docente compatible con igualdad material.",
-        "tarea_cognitiva": "Aplicar el principio de igualdad material a un caso escolar.",
-        "tipo_de_pregunta": "Caso situacional constitucional-pedagógico",
-        "dificultad_esperada": "Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Confundir ajuste con privilegio injustificado",
-                "revision": "La clave lo fundamenta en barreras y derecho efectivo."
-            },
-            {
-                "riesgo": "Estigmatizar al estudiante en debilidad manifiesta",
-                "revision": "La respuesta correcta exige apoyos sin exposición ni segregación."
-            },
-            {
-                "riesgo": "Reducir igualdad a trato idéntico",
-                "revision": "El ítem distingue igualdad formal e igualdad material."
-            }
-        ]
+    "claim": "El evaluado comprende que la igualdad real y efectiva exige apoyos, ajustes y medidas diferenciales cuando existen barreras o condiciones de vulnerabilidad.",
+    "evidencia_observable": "Selecciona una acción docente compatible con igualdad material.",
+    "tarea_cognitiva": "Aplicar el principio de igualdad material a un caso escolar.",
+    "tipo_de_pregunta": "Caso situacional constitucional-pedagógico",
+    "dificultad_esperada": "Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Confundir ajuste con privilegio injustificado",
+        "revision": "La clave lo fundamenta en barreras y derecho efectivo."
+      },
+      {
+        "riesgo": "Estigmatizar al estudiante en debilidad manifiesta",
+        "revision": "La respuesta correcta exige apoyos sin exposición ni segregación."
+      },
+      {
+        "riesgo": "Reducir igualdad a trato idéntico",
+        "revision": "El ítem distingue igualdad formal e igualdad material."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un estudiante se encuentra en circunstancia de debilidad manifiesta por una condición física, económica o mental que afecta su acceso efectivo al aprendizaje. Algunos docentes proponen exigirle exactamente las mismas condiciones que a todos, sin apoyos ni ajustes.\n\nA la luz del artículo 13 de la Constitución, ¿cómo debe aplicarse la igualdad material en este caso?",
+    "opciones": {
+      "A": "Adoptando medidas, apoyos o ajustes razonables que respondan a sus barreras reales para que pueda ejercer efectivamente el derecho a la educación en condiciones de dignidad.",
+      "B": "Negándole apoyos para tratarlo exactamente igual, aunque eso lo excluya.",
+      "C": "Exponiendo públicamente su condición para justificar cualquier decisión.",
+      "D": "Eliminando todos sus deberes escolares sin proceso pedagógico ni acompañamiento."
     },
-    "item": {
-        "enunciado": "Un estudiante se encuentra en circunstancia de debilidad manifiesta por una condición física, económica o mental que afecta su acceso efectivo al aprendizaje. Algunos docentes proponen exigirle exactamente las mismas condiciones que a todos, sin apoyos ni ajustes.\n\nA la luz del artículo 13 de la Constitución, ¿cómo debe aplicarse la igualdad material en este caso?",
-        "opciones": {
-            "A": "Adoptando medidas, apoyos o ajustes razonables que respondan a sus barreras reales para que pueda ejercer efectivamente el derecho a la educación en condiciones de dignidad.",
-            "B": "Negándole apoyos para tratarlo exactamente igual, aunque eso lo excluya.",
-            "C": "Exponiendo públicamente su condición para justificar cualquier decisión.",
-            "D": "Eliminando todos sus deberes escolares sin proceso pedagógico ni acompañamiento."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Igualdad material",
+    "competencia": "Aplicación diferencial y no discriminatoria de derechos",
+    "claim_evaluado": "El evaluado comprende que la igualdad real y efectiva exige apoyos, ajustes y medidas diferenciales cuando existen barreras o condiciones de vulnerabilidad.",
+    "evidencia": "Selecciona una acción docente compatible con igualdad material.",
+    "proceso_cognitivo": "Juicio constitucional aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Alta",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Confunde igualdad con trato idéntico excluyente.",
+      "C": "Vulnera dignidad e intimidad del estudiante.",
+      "D": "Confunde apoyo razonable con ausencia total de exigencia formativa."
     },
-    "ficha_tecnica": {
-        "componente": "Igualdad material",
-        "competencia": "Aplicación diferencial y no discriminatoria de derechos",
-        "claim_evaluado": "El evaluado comprende que la igualdad real y efectiva exige apoyos, ajustes y medidas diferenciales cuando existen barreras o condiciones de vulnerabilidad.",
-        "evidencia": "Selecciona una acción docente compatible con igualdad material.",
-        "proceso_cognitivo": "Juicio constitucional aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Alta",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Confunde igualdad con trato idéntico excluyente.",
-            "C": "Vulnera dignidad e intimidad del estudiante.",
-            "D": "Confunde apoyo razonable con ausencia total de exigencia formativa."
-        },
-        "fuente_autorizada": [
-            "Constitución Política de Colombia artículo 13",
-            "Ley 115 de 1994",
-            "Ley 1098 de 2006",
-            "Decreto 1421 de 2017",
-            "Educación inclusiva"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque la igualdad material busca condiciones reales y efectivas de acceso al derecho mediante apoyos o ajustes razonables.",
-        "opcion_B": "Es incorrecta porque el trato idéntico puede producir exclusión.",
-        "opcion_C": "Es incorrecta porque exponer la condición vulnera dignidad.",
-        "opcion_D": "Es incorrecta porque los apoyos no eliminan el proceso pedagógico."
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado con revisión normativa recomendada.",
-        "argumento": "El ítem evita presentar los apoyos como privilegios y protege la dignidad del estudiante."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Validar con protocolo de inclusión y normativa vigente antes de uso definitivo.",
-        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre igualdad material, discriminación positiva y debilidad manifiesta."
+    "fuente_autorizada": [
+      "Constitución Política de Colombia artículo 13",
+      "Ley 115 de 1994",
+      "Ley 1098 de 2006",
+      "Decreto 1421 de 2017",
+      "Educación inclusiva"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque el trato idéntico puede producir exclusión.",
+    "opcion_C": "Es incorrecta porque exponer la condición vulnera dignidad.",
+    "opcion_D": "Es incorrecta porque los apoyos no eliminan el proceso pedagógico.",
+    "distractores": {
+      "B": "Es incorrecta porque el trato idéntico puede producir exclusión.",
+      "C": "Es incorrecta porque exponer la condición vulnera dignidad.",
+      "D": "Es incorrecta porque los apoyos no eliminan el proceso pedagógico."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado con revisión normativa recomendada.",
+    "argumento": "El ítem evita presentar los apoyos como privilegios y protege la dignidad del estudiante."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Validar con protocolo de inclusión y normativa vigente antes de uso definitivo.",
+    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre igualdad material, discriminación positiva y debilidad manifiesta."
+  }
 }

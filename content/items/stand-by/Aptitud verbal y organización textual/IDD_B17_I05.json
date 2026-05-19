@@ -1,99 +1,104 @@
 {
-    "id_item": "IDD_B17_I05",
-    "archivo_sugerido": "IDD_B17_I05_barco_papel_flashback_narrador_personaje.json",
-    "bloque": {
-        "codigo_bloque": "IDD_B17",
-        "nombre": "Aptitud verbal y organización textual",
-        "estado_en_lista": "Bloque 17 de 17",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 5 de 5"
+  "id_item": "IDD_B17_I05",
+  "archivo_sugerido": "IDD_B17_I05_barco_papel_flashback_narrador_personaje.json",
+  "bloque": {
+    "codigo_bloque": "IDD_B17",
+    "nombre": "Aptitud verbal y organización textual",
+    "estado_en_lista": "Bloque 17 de 17",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 5 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante identifica cómo el narrador personaje y el flashback organizan la trama de una historia.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con comprensión lectora, literatura, aptitud verbal o docencia.",
+    "blueprint": {
+      "problematica_principal": "Dificultad para ordenar tramas narrativas con saltos temporales o narrador en primera persona.",
+      "fuente_autorizada": [
+        "Narratología básica",
+        "Comprensión lectora",
+        "Organización narrativa",
+        "Flashback",
+        "Narrador personaje"
+      ],
+      "componente_modulo": "Tiempos flexibles y flashback",
+      "competencia": "Reconocimiento de estructura narrativa no lineal",
+      "afirmacion": "El narrador personaje puede relatar desde un presente narrativo y retroceder al pasado para explicar cómo llegó a la situación actual.",
+      "evidencia_observable": "Reconoce que un retroceso temporal organiza la secuencia desde el presente hacia recuerdos o antecedentes.",
+      "tipo_de_evidencia": "Análisis narrativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante identifica cómo el narrador personaje y el flashback organizan la trama de una historia.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con comprensión lectora, literatura, aptitud verbal o docencia.",
-        "blueprint": {
-            "problematica_principal": "Dificultad para ordenar tramas narrativas con saltos temporales o narrador en primera persona.",
-            "fuente_autorizada": [
-                "Narratología básica",
-                "Comprensión lectora",
-                "Organización narrativa",
-                "Flashback",
-                "Narrador personaje"
-            ],
-            "componente_modulo": "Tiempos flexibles y flashback",
-            "competencia": "Reconocimiento de estructura narrativa no lineal",
-            "afirmacion": "El narrador personaje puede relatar desde un presente narrativo y retroceder al pasado para explicar cómo llegó a la situación actual.",
-            "evidencia_observable": "Reconoce que un retroceso temporal organiza la secuencia desde el presente hacia recuerdos o antecedentes.",
-            "tipo_de_evidencia": "Análisis narrativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que una narración puede no seguir un orden cronológico lineal y que el flashback ayuda a reconstruir antecedentes desde la voz del narrador personaje.",
-        "evidencia_observable": "Selecciona la explicación que relaciona narrador personaje, presente narrativo y retroceso temporal.",
-        "tarea_cognitiva": "Analizar la organización temporal de una narración.",
-        "tipo_de_pregunta": "Pregunta de comprensión narrativa",
-        "dificultad_esperada": "Media-Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Exigir terminología literaria avanzada",
-                "revision": "El ítem explica flashback como retroceso en el tiempo."
-            },
-            {
-                "riesgo": "Confundir narrador personaje con narrador externo",
-                "revision": "La clave vincula la voz del barco de papel con primera persona."
-            },
-            {
-                "riesgo": "Asumir que toda narración debe ser lineal",
-                "revision": "El ítem trabaja estructura temporal flexible."
-            }
-        ]
+    "claim": "El evaluado comprende que una narración puede no seguir un orden cronológico lineal y que el flashback ayuda a reconstruir antecedentes desde la voz del narrador personaje.",
+    "evidencia_observable": "Selecciona la explicación que relaciona narrador personaje, presente narrativo y retroceso temporal.",
+    "tarea_cognitiva": "Analizar la organización temporal de una narración.",
+    "tipo_de_pregunta": "Pregunta de comprensión narrativa",
+    "dificultad_esperada": "Media-Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Exigir terminología literaria avanzada",
+        "revision": "El ítem explica flashback como retroceso en el tiempo."
+      },
+      {
+        "riesgo": "Confundir narrador personaje con narrador externo",
+        "revision": "La clave vincula la voz del barco de papel con primera persona."
+      },
+      {
+        "riesgo": "Asumir que toda narración debe ser lineal",
+        "revision": "El ítem trabaja estructura temporal flexible."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "En una historia narrada por un “barco de papel”, el propio barco cuenta lo que le ocurre desde su presente y luego recuerda hechos anteriores para explicar cómo llegó hasta allí.\n\n¿Cómo determinan el narrador personaje y el flashback el orden de la trama?",
+    "opciones": {
+      "A": "El narrador personaje cuenta desde su experiencia y el flashback introduce un retroceso temporal que explica antecedentes de la situación actual.",
+      "B": "El narrador personaje impide cualquier orden narrativo porque solo existen hechos aislados.",
+      "C": "El flashback obliga a que todos los acontecimientos estén en orden estrictamente cronológico.",
+      "D": "El narrador personaje elimina la necesidad de coherencia entre los eventos."
     },
-    "item": {
-        "enunciado": "En una historia narrada por un “barco de papel”, el propio barco cuenta lo que le ocurre desde su presente y luego recuerda hechos anteriores para explicar cómo llegó hasta allí.\n\n¿Cómo determinan el narrador personaje y el flashback el orden de la trama?",
-        "opciones": {
-            "A": "El narrador personaje cuenta desde su experiencia y el flashback introduce un retroceso temporal que explica antecedentes de la situación actual.",
-            "B": "El narrador personaje impide cualquier orden narrativo porque solo existen hechos aislados.",
-            "C": "El flashback obliga a que todos los acontecimientos estén en orden estrictamente cronológico.",
-            "D": "El narrador personaje elimina la necesidad de coherencia entre los eventos."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Tiempos flexibles y flashback",
+    "competencia": "Reconocimiento de estructura narrativa no lineal",
+    "claim_evaluado": "El evaluado comprende que una narración puede no seguir un orden cronológico lineal y que el flashback ayuda a reconstruir antecedentes desde la voz del narrador personaje.",
+    "evidencia": "Selecciona la explicación que relaciona narrador personaje, presente narrativo y retroceso temporal.",
+    "proceso_cognitivo": "Análisis narrativo aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media-Alta",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Niega la posibilidad de organización narrativa.",
+      "C": "Confunde flashback con linealidad cronológica estricta.",
+      "D": "Desconoce la necesidad de coherencia narrativa."
     },
-    "ficha_tecnica": {
-        "componente": "Tiempos flexibles y flashback",
-        "competencia": "Reconocimiento de estructura narrativa no lineal",
-        "claim_evaluado": "El evaluado comprende que una narración puede no seguir un orden cronológico lineal y que el flashback ayuda a reconstruir antecedentes desde la voz del narrador personaje.",
-        "evidencia": "Selecciona la explicación que relaciona narrador personaje, presente narrativo y retroceso temporal.",
-        "proceso_cognitivo": "Análisis narrativo aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media-Alta",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Niega la posibilidad de organización narrativa.",
-            "C": "Confunde flashback con linealidad cronológica estricta.",
-            "D": "Desconoce la necesidad de coherencia narrativa."
-        },
-        "fuente_autorizada": [
-            "Narratología básica",
-            "Comprensión lectora",
-            "Organización narrativa",
-            "Flashback",
-            "Narrador personaje"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque el narrador personaje relata desde su experiencia y el flashback permite reconstruir hechos anteriores.",
-        "opcion_B": "Es incorrecta porque la narración sí puede organizarse desde una voz interna.",
-        "opcion_C": "Es incorrecta porque el flashback rompe la linealidad estricta.",
-        "opcion_D": "Es incorrecta porque toda narración requiere coherencia entre eventos."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem explica la noción técnica de flashback y evalúa comprensión narrativa, no memorización literaria avanzada."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre aptitud verbal y organización textual."
+    "fuente_autorizada": [
+      "Narratología básica",
+      "Comprensión lectora",
+      "Organización narrativa",
+      "Flashback",
+      "Narrador personaje"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque la narración sí puede organizarse desde una voz interna.",
+    "opcion_C": "Es incorrecta porque el flashback rompe la linealidad estricta.",
+    "opcion_D": "Es incorrecta porque toda narración requiere coherencia entre eventos.",
+    "distractores": {
+      "B": "Es incorrecta porque la narración sí puede organizarse desde una voz interna.",
+      "C": "Es incorrecta porque el flashback rompe la linealidad estricta.",
+      "D": "Es incorrecta porque toda narración requiere coherencia entre eventos."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem explica la noción técnica de flashback y evalúa comprensión narrativa, no memorización literaria avanzada."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre aptitud verbal y organización textual."
+  }
 }

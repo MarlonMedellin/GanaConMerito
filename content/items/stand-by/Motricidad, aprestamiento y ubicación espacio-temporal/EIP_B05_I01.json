@@ -1,40 +1,40 @@
 {
-    "id_item": "EIP_B05_I01",
-    "archivo_sugerido": "EIP_B05_I01_motricidad_aprestamiento_transicion_armonica.json",
-    "proposito_de_uso": "Evaluar si el aspirante comprende el propósito pedagógico de la motricidad, el aprestamiento y la ubicación espacio-temporal en preescolar.",
-    "blueprint": {
-        "componente_modulo": "Objetivos de educación preescolar",
-        "competencia": "Comprensión de transición armónica y desarrollo integral",
-        "afirmacion": "La motricidad, el aprestamiento y la ubicación espacio-temporal preparan al niño para aprendizajes posteriores sin imponer escolarización prematura.",
-        "evidencia_observable": "Reconoce que estas experiencias fortalecen coordinación, orientación, lenguaje, pensamiento y disposición para aprender.",
-        "tipo_de_evidencia": "Comprensión pedagógica aplicada",
-        "dificultad_esperada": "Media",
-        "clave": "B"
+  "id_item": "EIP_B05_I01",
+  "archivo_sugerido": "EIP_B05_I01_motricidad_aprestamiento_transicion_armonica.json",
+  "proposito_de_uso": "Evaluar si el aspirante comprende el propósito pedagógico de la motricidad, el aprestamiento y la ubicación espacio-temporal en preescolar.",
+  "blueprint": {
+    "componente_modulo": "Objetivos de educación preescolar",
+    "competencia": "Comprensión de transición armónica y desarrollo integral",
+    "afirmacion": "La motricidad, el aprestamiento y la ubicación espacio-temporal preparan al niño para aprendizajes posteriores sin imponer escolarización prematura.",
+    "evidencia_observable": "Reconoce que estas experiencias fortalecen coordinación, orientación, lenguaje, pensamiento y disposición para aprender.",
+    "tipo_de_evidencia": "Comprensión pedagógica aplicada",
+    "dificultad_esperada": "Media",
+    "clave": "B"
+  },
+  "item": {
+    "enunciado": "Una docente de preescolar trabaja juegos de movimiento, coordinación, lateralidad, ubicación espacial, ritmo, trazos libres y exploración de objetos antes de exigir escritura formal. Una familia pregunta por qué no empieza directamente con dictados y operaciones.\n\n¿Cuál es el propósito fundamental de estas experiencias?",
+    "opciones": {
+      "A": "Retrasar innecesariamente el aprendizaje porque en preescolar no debe enseñarse nada.",
+      "B": "Favorecer el crecimiento armónico, la motricidad, el aprestamiento y la ubicación espacio-temporal como base gradual para aprendizajes posteriores.",
+      "C": "Reemplazar toda experiencia de juego por exámenes escritos.",
+      "D": "Convertir el preescolar en educación media anticipada."
     },
-    "item": {
-        "enunciado": "Una docente de preescolar trabaja juegos de movimiento, coordinación, lateralidad, ubicación espacial, ritmo, trazos libres y exploración de objetos antes de exigir escritura formal. Una familia pregunta por qué no empieza directamente con dictados y operaciones.\n\n¿Cuál es el propósito fundamental de estas experiencias?",
-        "opciones": {
-            "A": "Retrasar innecesariamente el aprendizaje porque en preescolar no debe enseñarse nada.",
-            "B": "Favorecer el crecimiento armónico, la motricidad, el aprestamiento y la ubicación espacio-temporal como base gradual para aprendizajes posteriores.",
-            "C": "Reemplazar toda experiencia de juego por exámenes escritos.",
-            "D": "Convertir el preescolar en educación media anticipada."
-        },
-        "respuesta_correcta": "B"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque reconoce la función preparatoria e integral de la motricidad, el aprestamiento y la ubicación espacio-temporal.",
-        "distractores": {
-            "A": "Desconoce que estas experiencias sí son aprendizaje pedagógico.",
-            "C": "Introduce una lógica evaluativa rígida impropia del nivel.",
-            "D": "Confunde preescolar con escolarización avanzada."
-        }
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado",
-        "argumento": "El ítem respeta los ritmos de desarrollo infantil y evita escolarización prematura."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem apto para banco con revisión pedagógica posterior."
+    "respuesta_correcta": "B"
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "distractores": {
+      "A": "Desconoce que estas experiencias sí son aprendizaje pedagógico.",
+      "C": "Introduce una lógica evaluativa rígida impropia del nivel.",
+      "D": "Confunde preescolar con escolarización avanzada."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado",
+    "argumento": "El ítem respeta los ritmos de desarrollo infantil y evita escolarización prematura."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem apto para banco con revisión pedagógica posterior."
+  }
 }

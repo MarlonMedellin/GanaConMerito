@@ -1,99 +1,104 @@
 {
-    "id_item": "IDD_B13_I02",
-    "archivo_sugerido": "IDD_B13_I02_autoevaluacion_coevaluacion_metacognicion.json",
-    "bloque": {
-        "codigo_bloque": "IDD_B13",
-        "nombre": "Evaluación colaborativa, coevaluación y metacognición",
-        "estado_en_lista": "Bloque 13 de 17",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 2 de 3"
+  "id_item": "IDD_B13_I02",
+  "archivo_sugerido": "IDD_B13_I02_autoevaluacion_coevaluacion_metacognicion.json",
+  "bloque": {
+    "codigo_bloque": "IDD_B13",
+    "nombre": "Evaluación colaborativa, coevaluación y metacognición",
+    "estado_en_lista": "Bloque 13 de 17",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 2 de 3"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante comprende por qué la autoevaluación y la coevaluación son necesarias para fomentar aprendizaje activo y metacognición.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, evaluación formativa, pedagogía o gestión académica.",
+    "blueprint": {
+      "problematica_principal": "Uso de evaluación exclusivamente heteroevaluativa, donde el estudiante no reflexiona sobre su propio proceso ni dialoga sobre criterios de calidad.",
+      "fuente_autorizada": [
+        "Evaluación formativa",
+        "Autoevaluación",
+        "Coevaluación",
+        "Metacognición",
+        "Aprendizaje activo"
+      ],
+      "componente_modulo": "Evaluación en el Aula",
+      "competencia": "Promoción de metacognición y autorregulación",
+      "afirmacion": "La autoevaluación y la coevaluación permiten que el estudiante reconozca criterios, valore su desempeño, identifique mejoras y regule su aprendizaje.",
+      "evidencia_observable": "Reconoce que estas estrategias convierten al estudiante en sujeto activo de su evaluación.",
+      "tipo_de_evidencia": "Comprensión evaluativa aplicada",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante comprende por qué la autoevaluación y la coevaluación son necesarias para fomentar aprendizaje activo y metacognición.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, evaluación formativa, pedagogía o gestión académica.",
-        "blueprint": {
-            "problematica_principal": "Uso de evaluación exclusivamente heteroevaluativa, donde el estudiante no reflexiona sobre su propio proceso ni dialoga sobre criterios de calidad.",
-            "fuente_autorizada": [
-                "Evaluación formativa",
-                "Autoevaluación",
-                "Coevaluación",
-                "Metacognición",
-                "Aprendizaje activo"
-            ],
-            "componente_modulo": "Evaluación en el Aula",
-            "competencia": "Promoción de metacognición y autorregulación",
-            "afirmacion": "La autoevaluación y la coevaluación permiten que el estudiante reconozca criterios, valore su desempeño, identifique mejoras y regule su aprendizaje.",
-            "evidencia_observable": "Reconoce que estas estrategias convierten al estudiante en sujeto activo de su evaluación.",
-            "tipo_de_evidencia": "Comprensión evaluativa aplicada",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que evaluar formativamente implica involucrar al estudiante en la comprensión de criterios, revisión de evidencias y toma de decisiones de mejora.",
-        "evidencia_observable": "Selecciona la opción que relaciona autoevaluación y coevaluación con metacognición, autorregulación y aprendizaje activo.",
-        "tarea_cognitiva": "Explicar el valor formativo de la autoevaluación y la coevaluación.",
-        "tipo_de_pregunta": "Pregunta conceptual aplicada",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Confundir autoevaluación con ponerse cualquier nota",
-                "revision": "La clave exige criterios, evidencias y reflexión."
-            },
-            {
-                "riesgo": "Confundir coevaluación con juicio subjetivo entre compañeros",
-                "revision": "La opción correcta requiere criterios compartidos y respeto."
-            },
-            {
-                "riesgo": "Desplazar toda la responsabilidad evaluativa al estudiante",
-                "revision": "El ítem mantiene mediación docente y criterios claros."
-            }
-        ]
+    "claim": "El evaluado comprende que evaluar formativamente implica involucrar al estudiante en la comprensión de criterios, revisión de evidencias y toma de decisiones de mejora.",
+    "evidencia_observable": "Selecciona la opción que relaciona autoevaluación y coevaluación con metacognición, autorregulación y aprendizaje activo.",
+    "tarea_cognitiva": "Explicar el valor formativo de la autoevaluación y la coevaluación.",
+    "tipo_de_pregunta": "Pregunta conceptual aplicada",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Confundir autoevaluación con ponerse cualquier nota",
+        "revision": "La clave exige criterios, evidencias y reflexión."
+      },
+      {
+        "riesgo": "Confundir coevaluación con juicio subjetivo entre compañeros",
+        "revision": "La opción correcta requiere criterios compartidos y respeto."
+      },
+      {
+        "riesgo": "Desplazar toda la responsabilidad evaluativa al estudiante",
+        "revision": "El ítem mantiene mediación docente y criterios claros."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un docente desea que sus estudiantes no solo reciban una nota, sino que comprendan qué hicieron bien, qué deben mejorar y cómo pueden regular su propio aprendizaje. Para ello propone autoevaluación y coevaluación con criterios claros.\n\n¿Por qué estas estrategias son indispensables en la evaluación formativa?",
+    "opciones": {
+      "A": "Porque favorecen la metacognición, la autorregulación, el reconocimiento de criterios y la participación activa del estudiante en su proceso de aprendizaje.",
+      "B": "Porque permiten que cada estudiante se asigne la nota que quiera sin justificarla.",
+      "C": "Porque reemplazan por completo la función orientadora del docente.",
+      "D": "Porque sirven para que los compañeros se sancionen entre sí."
     },
-    "item": {
-        "enunciado": "Un docente desea que sus estudiantes no solo reciban una nota, sino que comprendan qué hicieron bien, qué deben mejorar y cómo pueden regular su propio aprendizaje. Para ello propone autoevaluación y coevaluación con criterios claros.\n\n¿Por qué estas estrategias son indispensables en la evaluación formativa?",
-        "opciones": {
-            "A": "Porque favorecen la metacognición, la autorregulación, el reconocimiento de criterios y la participación activa del estudiante en su proceso de aprendizaje.",
-            "B": "Porque permiten que cada estudiante se asigne la nota que quiera sin justificarla.",
-            "C": "Porque reemplazan por completo la función orientadora del docente.",
-            "D": "Porque sirven para que los compañeros se sancionen entre sí."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Evaluación en el Aula",
+    "competencia": "Promoción de metacognición y autorregulación",
+    "claim_evaluado": "El evaluado comprende que evaluar formativamente implica involucrar al estudiante en la comprensión de criterios, revisión de evidencias y toma de decisiones de mejora.",
+    "evidencia": "Selecciona la opción que relaciona autoevaluación y coevaluación con metacognición, autorregulación y aprendizaje activo.",
+    "proceso_cognitivo": "Comprensión evaluativa aplicada",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Confunde autoevaluación con arbitrariedad.",
+      "C": "Elimina indebidamente la mediación docente.",
+      "D": "Transforma la coevaluación en sanción entre pares."
     },
-    "ficha_tecnica": {
-        "componente": "Evaluación en el Aula",
-        "competencia": "Promoción de metacognición y autorregulación",
-        "claim_evaluado": "El evaluado comprende que evaluar formativamente implica involucrar al estudiante en la comprensión de criterios, revisión de evidencias y toma de decisiones de mejora.",
-        "evidencia": "Selecciona la opción que relaciona autoevaluación y coevaluación con metacognición, autorregulación y aprendizaje activo.",
-        "proceso_cognitivo": "Comprensión evaluativa aplicada",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Confunde autoevaluación con arbitrariedad.",
-            "C": "Elimina indebidamente la mediación docente.",
-            "D": "Transforma la coevaluación en sanción entre pares."
-        },
-        "fuente_autorizada": [
-            "Evaluación formativa",
-            "Autoevaluación",
-            "Coevaluación",
-            "Metacognición",
-            "Aprendizaje activo"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque autoevaluar y coevaluar con criterios permite reflexionar sobre el propio desempeño y regular el aprendizaje.",
-        "opcion_B": "Es incorrecta porque la autoevaluación requiere criterios y evidencia.",
-        "opcion_C": "Es incorrecta porque el docente sigue orientando el proceso.",
-        "opcion_D": "Es incorrecta porque la coevaluación no es un mecanismo de sanción."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem promueve evaluación con criterios claros, evitando arbitrariedad, presión entre pares o juicios subjetivos."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 3 preguntas sobre evaluación colaborativa, coevaluación y metacognición."
+    "fuente_autorizada": [
+      "Evaluación formativa",
+      "Autoevaluación",
+      "Coevaluación",
+      "Metacognición",
+      "Aprendizaje activo"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque la autoevaluación requiere criterios y evidencia.",
+    "opcion_C": "Es incorrecta porque el docente sigue orientando el proceso.",
+    "opcion_D": "Es incorrecta porque la coevaluación no es un mecanismo de sanción.",
+    "distractores": {
+      "B": "Es incorrecta porque la autoevaluación requiere criterios y evidencia.",
+      "C": "Es incorrecta porque el docente sigue orientando el proceso.",
+      "D": "Es incorrecta porque la coevaluación no es un mecanismo de sanción."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem promueve evaluación con criterios claros, evitando arbitrariedad, presión entre pares o juicios subjetivos."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 3 preguntas sobre evaluación colaborativa, coevaluación y metacognición."
+  }
 }

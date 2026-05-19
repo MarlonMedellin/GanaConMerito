@@ -1,97 +1,102 @@
 {
-    "id_item": "DIL_B01_I02",
-    "archivo_sugerido": "DIL_B01_I02_tres_entes_corresponsables_derechos_nna.json",
-    "bloque": {
-        "codigo_bloque": "DIL_B01",
-        "nombre": "Corresponsabilidad, protección integral y sujetos de derechos",
-        "estado_en_lista": "Bloque 1 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 2 de 5"
+  "id_item": "DIL_B01_I02",
+  "archivo_sugerido": "DIL_B01_I02_tres_entes_corresponsables_derechos_nna.json",
+  "bloque": {
+    "codigo_bloque": "DIL_B01",
+    "nombre": "Corresponsabilidad, protección integral y sujetos de derechos",
+    "estado_en_lista": "Bloque 1 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 2 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante identifica los tres entes corresponsables de garantizar, cuidar y proteger los derechos de niños, niñas y adolescentes.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación, convivencia escolar, coordinación o gestión institucional.",
+    "blueprint": {
+      "problematica_principal": "Confusión sobre quiénes responden jurídicamente por la protección integral de niños, niñas y adolescentes.",
+      "fuente_autorizada": [
+        "Ley 1098 de 2006",
+        "Constitución Política de Colombia",
+        "Sistema Nacional de Bienestar Familiar",
+        "Convención sobre los Derechos del Niño"
+      ],
+      "componente_modulo": "Responsabilidad Legal Ley 1098",
+      "competencia": "Identificación de actores corresponsables",
+      "afirmacion": "La familia, la sociedad y el Estado son corresponsables en la atención, cuidado y protección de niños, niñas y adolescentes.",
+      "evidencia_observable": "Selecciona correctamente los tres entes corresponsables.",
+      "tipo_de_evidencia": "Reconocimiento normativo",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante identifica los tres entes corresponsables de garantizar, cuidar y proteger los derechos de niños, niñas y adolescentes.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación, convivencia escolar, coordinación o gestión institucional.",
-        "blueprint": {
-            "problematica_principal": "Confusión sobre quiénes responden jurídicamente por la protección integral de niños, niñas y adolescentes.",
-            "fuente_autorizada": [
-                "Ley 1098 de 2006",
-                "Constitución Política de Colombia",
-                "Sistema Nacional de Bienestar Familiar",
-                "Convención sobre los Derechos del Niño"
-            ],
-            "componente_modulo": "Responsabilidad Legal Ley 1098",
-            "competencia": "Identificación de actores corresponsables",
-            "afirmacion": "La familia, la sociedad y el Estado son corresponsables en la atención, cuidado y protección de niños, niñas y adolescentes.",
-            "evidencia_observable": "Selecciona correctamente los tres entes corresponsables.",
-            "tipo_de_evidencia": "Reconocimiento normativo",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado reconoce que la protección integral exige corresponsabilidad de familia, sociedad y Estado.",
-        "evidencia_observable": "Identifica los tres entes establecidos por la Ley 1098.",
-        "tarea_cognitiva": "Recordar y aplicar una estructura normativa básica.",
-        "tipo_de_pregunta": "Pregunta normativa de reconocimiento",
-        "dificultad_esperada": "Baja",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Reducir la obligación únicamente a la familia",
-                "revision": "La clave integra familia, sociedad y Estado."
-            },
-            {
-                "riesgo": "Confundir escuela con Estado en sentido amplio",
-                "revision": "El ítem permite entender que la escuela pública o privada actúa dentro de la garantía social e institucional de derechos."
-            },
-            {
-                "riesgo": "Presentar la corresponsabilidad como delegación",
-                "revision": "La clave exige concurrencia, no sustitución."
-            }
-        ]
+    "claim": "El evaluado reconoce que la protección integral exige corresponsabilidad de familia, sociedad y Estado.",
+    "evidencia_observable": "Identifica los tres entes establecidos por la Ley 1098.",
+    "tarea_cognitiva": "Recordar y aplicar una estructura normativa básica.",
+    "tipo_de_pregunta": "Pregunta normativa de reconocimiento",
+    "dificultad_esperada": "Baja",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Reducir la obligación únicamente a la familia",
+        "revision": "La clave integra familia, sociedad y Estado."
+      },
+      {
+        "riesgo": "Confundir escuela con Estado en sentido amplio",
+        "revision": "El ítem permite entender que la escuela pública o privada actúa dentro de la garantía social e institucional de derechos."
+      },
+      {
+        "riesgo": "Presentar la corresponsabilidad como delegación",
+        "revision": "La clave exige concurrencia, no sustitución."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Bajo el principio de corresponsabilidad de la Ley 1098, la garantía y protección de los derechos de niños, niñas y adolescentes no depende de un único actor.\n\n¿Cuáles son los tres entes que tienen esta obligación?",
+    "opciones": {
+      "A": "La familia, la sociedad y el Estado.",
+      "B": "La rectoría, la secretaría académica y el consejo estudiantil.",
+      "C": "La Policía, el Ejército y los medios de comunicación.",
+      "D": "El estudiante, sus amigos y sus docentes únicamente."
     },
-    "item": {
-        "enunciado": "Bajo el principio de corresponsabilidad de la Ley 1098, la garantía y protección de los derechos de niños, niñas y adolescentes no depende de un único actor.\n\n¿Cuáles son los tres entes que tienen esta obligación?",
-        "opciones": {
-            "A": "La familia, la sociedad y el Estado.",
-            "B": "La rectoría, la secretaría académica y el consejo estudiantil.",
-            "C": "La Policía, el Ejército y los medios de comunicación.",
-            "D": "El estudiante, sus amigos y sus docentes únicamente."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Responsabilidad Legal Ley 1098",
+    "competencia": "Identificación de actores corresponsables",
+    "claim_evaluado": "El evaluado reconoce que la protección integral exige corresponsabilidad de familia, sociedad y Estado.",
+    "evidencia": "Identifica los tres entes establecidos por la Ley 1098.",
+    "proceso_cognitivo": "Reconocimiento normativo",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Baja",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Menciona órganos escolares, pero no los tres entes jurídicos de corresponsabilidad.",
+      "C": "Incluye instituciones o actores que no corresponden a la fórmula normativa general.",
+      "D": "Reduce la corresponsabilidad a actores inmediatos del entorno escolar."
     },
-    "ficha_tecnica": {
-        "componente": "Responsabilidad Legal Ley 1098",
-        "competencia": "Identificación de actores corresponsables",
-        "claim_evaluado": "El evaluado reconoce que la protección integral exige corresponsabilidad de familia, sociedad y Estado.",
-        "evidencia": "Identifica los tres entes establecidos por la Ley 1098.",
-        "proceso_cognitivo": "Reconocimiento normativo",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Baja",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Menciona órganos escolares, pero no los tres entes jurídicos de corresponsabilidad.",
-            "C": "Incluye instituciones o actores que no corresponden a la fórmula normativa general.",
-            "D": "Reduce la corresponsabilidad a actores inmediatos del entorno escolar."
-        },
-        "fuente_autorizada": [
-            "Ley 1098 de 2006",
-            "Constitución Política de Colombia",
-            "Sistema Nacional de Bienestar Familiar",
-            "Convención sobre los Derechos del Niño"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque la Ley 1098 establece la corresponsabilidad de familia, sociedad y Estado.",
-        "opcion_B": "Es incorrecta porque no corresponde a la formulación jurídica general.",
-        "opcion_C": "Es incorrecta porque no expresa la triada normativa.",
-        "opcion_D": "Es incorrecta porque limita la obligación a actores escolares inmediatos."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "Evalúa un reconocimiento normativo básico sin introducir sesgos contra familias, instituciones o estudiantes."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 5 preguntas sobre corresponsabilidad, protección integral y sujetos de derechos."
+    "fuente_autorizada": [
+      "Ley 1098 de 2006",
+      "Constitución Política de Colombia",
+      "Sistema Nacional de Bienestar Familiar",
+      "Convención sobre los Derechos del Niño"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque no corresponde a la formulación jurídica general.",
+    "opcion_C": "Es incorrecta porque no expresa la triada normativa.",
+    "opcion_D": "Es incorrecta porque limita la obligación a actores escolares inmediatos.",
+    "distractores": {
+      "B": "Es incorrecta porque no corresponde a la formulación jurídica general.",
+      "C": "Es incorrecta porque no expresa la triada normativa.",
+      "D": "Es incorrecta porque limita la obligación a actores escolares inmediatos."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "Evalúa un reconocimiento normativo básico sin introducir sesgos contra familias, instituciones o estudiantes."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 5 preguntas sobre corresponsabilidad, protección integral y sujetos de derechos."
+  }
 }

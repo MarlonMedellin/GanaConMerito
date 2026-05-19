@@ -1,101 +1,106 @@
 {
-    "id_item": "CEOL_B03_I03",
-    "archivo_sugerido": "CEOL_B03_I03_nombre_empleo_publico_docente_orientador_permanencia.json",
-    "bloque": {
-        "codigo_bloque": "CEOL_B03",
-        "nombre": "Rol, funciones y límites del orientador escolar",
-        "estado_en_lista": "Bloque 3 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 3 de 5"
+  "id_item": "CEOL_B03_I03",
+  "archivo_sugerido": "CEOL_B03_I03_nombre_empleo_publico_docente_orientador_permanencia.json",
+  "bloque": {
+    "codigo_bloque": "CEOL_B03",
+    "nombre": "Rol, funciones y límites del orientador escolar",
+    "estado_en_lista": "Bloque 3 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 3 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce el nombre del empleo público del orientador escolar y la regla actual de permanencia institucional aplicable al docente orientador.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con orientación escolar, coordinación, rectoría o gestión institucional en establecimientos educativos oficiales.",
+    "blueprint": {
+      "problematica_principal": "Confusión sobre el nombre del cargo, la naturaleza funcional y la permanencia institucional del orientador escolar.",
+      "fuente_autorizada": [
+        "Decreto 1075 de 2015",
+        "Resolución 3842 de 2022 del Ministerio de Educación Nacional",
+        "Decreto 277 de 2025",
+        "Manual de funciones del docente orientador"
+      ],
+      "componente_modulo": "Rol y funciones del orientador escolar",
+      "competencia": "Comprensión funcional del cargo",
+      "afirmacion": "El empleo corresponde al cargo de docente orientador y su permanencia institucional debe cumplirse conforme a la jornada definida por la normativa vigente.",
+      "evidencia_observable": "Identifica el cargo de docente orientador y la permanencia institucional de seis horas diarias continuas establecida para docentes orientadores y de apoyo pedagógico.",
+      "tipo_de_evidencia": "Reconocimiento normativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce el nombre del empleo público del orientador escolar y la regla actual de permanencia institucional aplicable al docente orientador.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con orientación escolar, coordinación, rectoría o gestión institucional en establecimientos educativos oficiales.",
-        "blueprint": {
-            "problematica_principal": "Confusión sobre el nombre del cargo, la naturaleza funcional y la permanencia institucional del orientador escolar.",
-            "fuente_autorizada": [
-                "Decreto 1075 de 2015",
-                "Resolución 3842 de 2022 del Ministerio de Educación Nacional",
-                "Decreto 277 de 2025",
-                "Manual de funciones del docente orientador"
-            ],
-            "componente_modulo": "Rol y funciones del orientador escolar",
-            "competencia": "Comprensión funcional del cargo",
-            "afirmacion": "El empleo corresponde al cargo de docente orientador y su permanencia institucional debe cumplirse conforme a la jornada definida por la normativa vigente.",
-            "evidencia_observable": "Identifica el cargo de docente orientador y la permanencia institucional de seis horas diarias continuas establecida para docentes orientadores y de apoyo pedagógico.",
-            "tipo_de_evidencia": "Reconocimiento normativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado reconoce que el orientador escolar pertenece al sistema especial de carrera docente como docente orientador y debe cumplir la permanencia institucional definida por la regulación vigente, sin confundir el cargo con un empleo administrativo o clínico externo a la institución.",
-        "evidencia_observable": "Selecciona la denominación y la regla de permanencia institucional correctas.",
-        "tarea_cognitiva": "Reconocer la denominación funcional del cargo y su obligación de permanencia institucional.",
-        "tipo_de_pregunta": "Pregunta conceptual normativa",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Actualización normativa reciente",
-                "revision": "La clave adopta la regla vigente de seis horas diarias continuas de permanencia institucional para docentes orientadores y de apoyo pedagógico."
-            },
-            {
-                "riesgo": "Confusión entre orientador escolar y psicólogo clínico",
-                "revision": "La opción correcta ubica el cargo en el sistema educativo y no como servicio clínico externo."
-            },
-            {
-                "riesgo": "Confusión entre jornada laboral y permanencia",
-                "revision": "El ítem pregunta específicamente por permanencia institucional, no por todas las actividades autónomas del cargo."
-            },
-            {
-                "riesgo": "Lenguaje administrativo",
-                "revision": "La formulación diferencia cargo, permanencia y función de manera directa."
-            }
-        ]
+    "claim": "El evaluado reconoce que el orientador escolar pertenece al sistema especial de carrera docente como docente orientador y debe cumplir la permanencia institucional definida por la regulación vigente, sin confundir el cargo con un empleo administrativo o clínico externo a la institución.",
+    "evidencia_observable": "Selecciona la denominación y la regla de permanencia institucional correctas.",
+    "tarea_cognitiva": "Reconocer la denominación funcional del cargo y su obligación de permanencia institucional.",
+    "tipo_de_pregunta": "Pregunta conceptual normativa",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Actualización normativa reciente",
+        "revision": "La clave adopta la regla vigente de seis horas diarias continuas de permanencia institucional para docentes orientadores y de apoyo pedagógico."
+      },
+      {
+        "riesgo": "Confusión entre orientador escolar y psicólogo clínico",
+        "revision": "La opción correcta ubica el cargo en el sistema educativo y no como servicio clínico externo."
+      },
+      {
+        "riesgo": "Confusión entre jornada laboral y permanencia",
+        "revision": "El ítem pregunta específicamente por permanencia institucional, no por todas las actividades autónomas del cargo."
+      },
+      {
+        "riesgo": "Lenguaje administrativo",
+        "revision": "La formulación diferencia cargo, permanencia y función de manera directa."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "En una institución educativa oficial se revisa la organización del servicio de orientación escolar. Algunos miembros de la comunidad confunden al orientador con un profesional externo o administrativo, y otros preguntan por su permanencia institucional.\n\n¿Cuál opción identifica correctamente el empleo público y la regla de permanencia institucional del orientador escolar?",
+    "opciones": {
+      "A": "El empleo es docente orientador; debe cumplir seis horas diarias continuas de permanencia institucional, según la regulación vigente para docentes orientadores y de apoyo pedagógico.",
+      "B": "El empleo es psicólogo clínico externo; solo asiste cuando hay citas individuales programadas.",
+      "C": "El empleo es auxiliar administrativo de convivencia; no tiene obligación de permanencia en la institución.",
+      "D": "El empleo es monitor disciplinario; su función principal es reemplazar docentes ausentes y vigilar pasillos."
     },
-    "item": {
-        "enunciado": "En una institución educativa oficial se revisa la organización del servicio de orientación escolar. Algunos miembros de la comunidad confunden al orientador con un profesional externo o administrativo, y otros preguntan por su permanencia institucional.\n\n¿Cuál opción identifica correctamente el empleo público y la regla de permanencia institucional del orientador escolar?",
-        "opciones": {
-            "A": "El empleo es docente orientador; debe cumplir seis horas diarias continuas de permanencia institucional, según la regulación vigente para docentes orientadores y de apoyo pedagógico.",
-            "B": "El empleo es psicólogo clínico externo; solo asiste cuando hay citas individuales programadas.",
-            "C": "El empleo es auxiliar administrativo de convivencia; no tiene obligación de permanencia en la institución.",
-            "D": "El empleo es monitor disciplinario; su función principal es reemplazar docentes ausentes y vigilar pasillos."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Rol y funciones del orientador escolar",
+    "competencia": "Comprensión funcional del cargo",
+    "claim_evaluado": "El evaluado reconoce que el orientador escolar pertenece al sistema especial de carrera docente como docente orientador y debe cumplir la permanencia institucional definida por la regulación vigente, sin confundir el cargo con un empleo administrativo o clínico externo a la institución.",
+    "evidencia": "Selecciona la denominación y la regla de permanencia institucional correctas.",
+    "proceso_cognitivo": "Reconocimiento normativo aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Confunde el cargo docente orientador con un servicio clínico externo.",
+      "C": "Confunde el rol con un empleo administrativo y niega la permanencia institucional.",
+      "D": "Reduce el cargo a funciones de vigilancia o reemplazo que no definen el empleo."
     },
-    "ficha_tecnica": {
-        "componente": "Rol y funciones del orientador escolar",
-        "competencia": "Comprensión funcional del cargo",
-        "claim_evaluado": "El evaluado reconoce que el orientador escolar pertenece al sistema especial de carrera docente como docente orientador y debe cumplir la permanencia institucional definida por la regulación vigente, sin confundir el cargo con un empleo administrativo o clínico externo a la institución.",
-        "evidencia": "Selecciona la denominación y la regla de permanencia institucional correctas.",
-        "proceso_cognitivo": "Reconocimiento normativo aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Confunde el cargo docente orientador con un servicio clínico externo.",
-            "C": "Confunde el rol con un empleo administrativo y niega la permanencia institucional.",
-            "D": "Reduce el cargo a funciones de vigilancia o reemplazo que no definen el empleo."
-        },
-        "fuente_autorizada": [
-            "Decreto 1075 de 2015",
-            "Resolución 3842 de 2022 del Ministerio de Educación Nacional",
-            "Decreto 277 de 2025",
-            "Manual de funciones del docente orientador"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque identifica el empleo como docente orientador y señala la permanencia institucional de seis horas diarias continuas prevista en la regulación vigente para docentes orientadores y de apoyo pedagógico.",
-        "opcion_B": "Es incorrecta porque el orientador escolar no se define como psicólogo clínico externo ni actúa solo por citas.",
-        "opcion_C": "Es incorrecta porque el cargo no corresponde a auxiliar administrativo de convivencia.",
-        "opcion_D": "Es incorrecta porque reemplazar docentes o vigilar pasillos no constituye la función principal del docente orientador."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evalúa conocimiento funcional del cargo y evita cargar al orientador con responsabilidades que no definen su empleo. La referencia a permanencia se limita a la regla institucional vigente."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada si la regulación de jornada o permanencia vuelve a modificarse.",
-        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre rol, funciones y límites del orientador escolar."
+    "fuente_autorizada": [
+      "Decreto 1075 de 2015",
+      "Resolución 3842 de 2022 del Ministerio de Educación Nacional",
+      "Decreto 277 de 2025",
+      "Manual de funciones del docente orientador"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque el orientador escolar no se define como psicólogo clínico externo ni actúa solo por citas.",
+    "opcion_C": "Es incorrecta porque el cargo no corresponde a auxiliar administrativo de convivencia.",
+    "opcion_D": "Es incorrecta porque reemplazar docentes o vigilar pasillos no constituye la función principal del docente orientador.",
+    "distractores": {
+      "B": "Es incorrecta porque el orientador escolar no se define como psicólogo clínico externo ni actúa solo por citas.",
+      "C": "Es incorrecta porque el cargo no corresponde a auxiliar administrativo de convivencia.",
+      "D": "Es incorrecta porque reemplazar docentes o vigilar pasillos no constituye la función principal del docente orientador."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evalúa conocimiento funcional del cargo y evita cargar al orientador con responsabilidades que no definen su empleo. La referencia a permanencia se limita a la regla institucional vigente."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada si la regulación de jornada o permanencia vuelve a modificarse.",
+    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre rol, funciones y límites del orientador escolar."
+  }
 }

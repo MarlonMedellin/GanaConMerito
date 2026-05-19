@@ -1,99 +1,104 @@
 {
-    "id_item": "IDD_B14_I04",
-    "archivo_sugerido": "IDD_B14_I04_diagnostico_psicosocial_heterogeneidad_aula.json",
-    "bloque": {
-        "codigo_bloque": "IDD_B14",
-        "nombre": "Diagnóstico pedagógico, saberes previos y evaluación formativa",
-        "estado_en_lista": "Bloque 14 de 17",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 4 de 5"
+  "id_item": "IDD_B14_I04",
+  "archivo_sugerido": "IDD_B14_I04_diagnostico_psicosocial_heterogeneidad_aula.json",
+  "bloque": {
+    "codigo_bloque": "IDD_B14",
+    "nombre": "Diagnóstico pedagógico, saberes previos y evaluación formativa",
+    "estado_en_lista": "Bloque 14 de 17",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 4 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante identifica aspectos clave que debe indagar el docente en un diagnóstico educativo integral al iniciar el año escolar.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, inclusión, evaluación diagnóstica o gestión de aula.",
+    "blueprint": {
+      "problematica_principal": "Diagnóstico inicial centrado solo en contenidos del año anterior, sin considerar dimensiones psicosociales, emocionales y contextuales.",
+      "fuente_autorizada": [
+        "Evaluación diagnóstica",
+        "Educación inclusiva",
+        "Evaluación formativa",
+        "Convivencia escolar",
+        "Orientación pedagógica"
+      ],
+      "componente_modulo": "Diagnóstico Educativo Integral",
+      "competencia": "Lectura integral del grupo",
+      "afirmacion": "El diagnóstico integral debe considerar saberes previos, habilidades, intereses, estilos de participación, barreras, contexto familiar, bienestar y condiciones psicosociales.",
+      "evidencia_observable": "Reconoce dimensiones no exclusivamente cognitivas que influyen en el aprendizaje.",
+      "tipo_de_evidencia": "Juicio pedagógico aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "B"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante identifica aspectos clave que debe indagar el docente en un diagnóstico educativo integral al iniciar el año escolar.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, inclusión, evaluación diagnóstica o gestión de aula.",
-        "blueprint": {
-            "problematica_principal": "Diagnóstico inicial centrado solo en contenidos del año anterior, sin considerar dimensiones psicosociales, emocionales y contextuales.",
-            "fuente_autorizada": [
-                "Evaluación diagnóstica",
-                "Educación inclusiva",
-                "Evaluación formativa",
-                "Convivencia escolar",
-                "Orientación pedagógica"
-            ],
-            "componente_modulo": "Diagnóstico Educativo Integral",
-            "competencia": "Lectura integral del grupo",
-            "afirmacion": "El diagnóstico integral debe considerar saberes previos, habilidades, intereses, estilos de participación, barreras, contexto familiar, bienestar y condiciones psicosociales.",
-            "evidencia_observable": "Reconoce dimensiones no exclusivamente cognitivas que influyen en el aprendizaje.",
-            "tipo_de_evidencia": "Juicio pedagógico aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "B"
-        },
-        "claim": "El evaluado comprende que conocer al grupo implica atender tanto dimensiones académicas como socioemocionales y contextuales que inciden en el aprendizaje.",
-        "evidencia_observable": "Selecciona un conjunto de aspectos relevantes para un diagnóstico integral.",
-        "tarea_cognitiva": "Distinguir diagnóstico integral de cuestionario conductista de contenidos.",
-        "tipo_de_pregunta": "Pregunta conceptual aplicada",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Invadir la privacidad del estudiante",
-                "revision": "La clave plantea indagación pertinente, respetuosa y con finalidad pedagógica."
-            },
-            {
-                "riesgo": "Reducir al estudiante a su contexto familiar",
-                "revision": "El ítem incluye fortalezas, intereses y habilidades."
-            },
-            {
-                "riesgo": "Confundir diagnóstico con etiquetamiento",
-                "revision": "La opción correcta orienta apoyos y planeación."
-            }
-        ]
+    "claim": "El evaluado comprende que conocer al grupo implica atender tanto dimensiones académicas como socioemocionales y contextuales que inciden en el aprendizaje.",
+    "evidencia_observable": "Selecciona un conjunto de aspectos relevantes para un diagnóstico integral.",
+    "tarea_cognitiva": "Distinguir diagnóstico integral de cuestionario conductista de contenidos.",
+    "tipo_de_pregunta": "Pregunta conceptual aplicada",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Invadir la privacidad del estudiante",
+        "revision": "La clave plantea indagación pertinente, respetuosa y con finalidad pedagógica."
+      },
+      {
+        "riesgo": "Reducir al estudiante a su contexto familiar",
+        "revision": "El ítem incluye fortalezas, intereses y habilidades."
+      },
+      {
+        "riesgo": "Confundir diagnóstico con etiquetamiento",
+        "revision": "La opción correcta orienta apoyos y planeación."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Al iniciar el año escolar, un docente quiere conocer a su grupo más allá de un cuestionario sobre temas del año anterior. Busca información que le permita planear apoyos, mediaciones y estrategias pertinentes.\n\n¿Qué aspectos clave debe indagar en un diagnóstico educativo integral?",
+    "opciones": {
+      "A": "Solo la memoria de definiciones del año anterior.",
+      "B": "Saberes previos, habilidades, intereses, formas de participación, barreras, condiciones psicosociales, contexto y necesidades de apoyo.",
+      "C": "Únicamente la disciplina del estudiante durante la primera semana.",
+      "D": "Solo el promedio final del año anterior."
     },
-    "item": {
-        "enunciado": "Al iniciar el año escolar, un docente quiere conocer a su grupo más allá de un cuestionario sobre temas del año anterior. Busca información que le permita planear apoyos, mediaciones y estrategias pertinentes.\n\n¿Qué aspectos clave debe indagar en un diagnóstico educativo integral?",
-        "opciones": {
-            "A": "Solo la memoria de definiciones del año anterior.",
-            "B": "Saberes previos, habilidades, intereses, formas de participación, barreras, condiciones psicosociales, contexto y necesidades de apoyo.",
-            "C": "Únicamente la disciplina del estudiante durante la primera semana.",
-            "D": "Solo el promedio final del año anterior."
-        },
-        "respuesta_correcta": "B"
+    "respuesta_correcta": "B"
+  },
+  "ficha_tecnica": {
+    "componente": "Diagnóstico Educativo Integral",
+    "competencia": "Lectura integral del grupo",
+    "claim_evaluado": "El evaluado comprende que conocer al grupo implica atender tanto dimensiones académicas como socioemocionales y contextuales que inciden en el aprendizaje.",
+    "evidencia": "Selecciona un conjunto de aspectos relevantes para un diagnóstico integral.",
+    "proceso_cognitivo": "Comprensión pedagógica aplicada",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "B",
+    "distractores": {
+      "A": "Reduce el diagnóstico a memoria de contenidos.",
+      "C": "Limita el diagnóstico a disciplina.",
+      "D": "Confunde diagnóstico con un dato de rendimiento anterior."
     },
-    "ficha_tecnica": {
-        "componente": "Diagnóstico Educativo Integral",
-        "competencia": "Lectura integral del grupo",
-        "claim_evaluado": "El evaluado comprende que conocer al grupo implica atender tanto dimensiones académicas como socioemocionales y contextuales que inciden en el aprendizaje.",
-        "evidencia": "Selecciona un conjunto de aspectos relevantes para un diagnóstico integral.",
-        "proceso_cognitivo": "Comprensión pedagógica aplicada",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "B",
-        "distractores": {
-            "A": "Reduce el diagnóstico a memoria de contenidos.",
-            "C": "Limita el diagnóstico a disciplina.",
-            "D": "Confunde diagnóstico con un dato de rendimiento anterior."
-        },
-        "fuente_autorizada": [
-            "Evaluación diagnóstica",
-            "Educación inclusiva",
-            "Evaluación formativa",
-            "Convivencia escolar",
-            "Orientación pedagógica"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque integra dimensiones académicas, sociales, emocionales, contextuales y pedagógicas.",
-        "opcion_A": "Es incorrecta porque memorizar definiciones no caracteriza integralmente al grupo.",
-        "opcion_C": "Es incorrecta porque la disciplina es solo un aspecto y no debe ser el eje único.",
-        "opcion_D": "Es incorrecta porque un promedio no explica barreras, intereses ni apoyos."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem promueve una lectura integral sin estigmatizar, siempre orientada a apoyo pedagógico y no a etiquetamiento."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 5 preguntas sobre diagnóstico pedagógico, saberes previos y evaluación formativa."
+    "fuente_autorizada": [
+      "Evaluación diagnóstica",
+      "Educación inclusiva",
+      "Evaluación formativa",
+      "Convivencia escolar",
+      "Orientación pedagógica"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "opcion_A": "Es incorrecta porque memorizar definiciones no caracteriza integralmente al grupo.",
+    "opcion_C": "Es incorrecta porque la disciplina es solo un aspecto y no debe ser el eje único.",
+    "opcion_D": "Es incorrecta porque un promedio no explica barreras, intereses ni apoyos.",
+    "distractores": {
+      "A": "Es incorrecta porque memorizar definiciones no caracteriza integralmente al grupo.",
+      "C": "Es incorrecta porque la disciplina es solo un aspecto y no debe ser el eje único.",
+      "D": "Es incorrecta porque un promedio no explica barreras, intereses ni apoyos."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem promueve una lectura integral sin estigmatizar, siempre orientada a apoyo pedagógico y no a etiquetamiento."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 5 preguntas sobre diagnóstico pedagógico, saberes previos y evaluación formativa."
+  }
 }

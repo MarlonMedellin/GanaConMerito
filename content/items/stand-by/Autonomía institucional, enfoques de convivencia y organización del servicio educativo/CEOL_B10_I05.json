@@ -1,97 +1,102 @@
 {
-    "id_item": "CEOL_B10_I05",
-    "archivo_sugerido": "CEOL_B10_I05_permanencia_institucional_orientador_coordinador.json",
-    "bloque": {
-        "codigo_bloque": "CEOL_B10",
-        "nombre": "Autonomía institucional, enfoques de convivencia y organización del servicio educativo",
-        "estado_en_lista": "Bloque 10 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 5 de 5"
+  "id_item": "CEOL_B10_I05",
+  "archivo_sugerido": "CEOL_B10_I05_permanencia_institucional_orientador_coordinador.json",
+  "bloque": {
+    "codigo_bloque": "CEOL_B10",
+    "nombre": "Autonomía institucional, enfoques de convivencia y organización del servicio educativo",
+    "estado_en_lista": "Bloque 10 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 5 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce la diferencia entre la permanencia institucional de docentes orientadores o de apoyo pedagógico y la jornada laboral de directivos docentes como coordinadores, de acuerdo con la normativa vigente.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con orientación escolar, coordinación, rectoría o gestión institucional.",
+    "blueprint": {
+      "problematica_principal": "Confusión entre jornada laboral total, permanencia institucional y funciones de orientadores o coordinadores.",
+      "fuente_autorizada": [
+        "Decreto 1850 de 2002",
+        "Decreto 277 de 2025",
+        "Manual de funciones docente, directivo docente y docente orientador",
+        "Normativa laboral docente vigente"
+      ],
+      "componente_modulo": "Tiempo de Permanencia Institucional",
+      "competencia": "Comprensión de jornada y permanencia institucional",
+      "afirmacion": "La permanencia institucional debe interpretarse según el cargo: docentes orientadores o de apoyo pedagógico tienen regla específica de permanencia; coordinadores son directivos docentes con jornada laboral institucional organizada conforme a la normativa.",
+      "evidencia_observable": "Distingue cargo, jornada laboral, permanencia institucional y funciones, evitando equiparar indebidamente todos los cargos.",
+      "tipo_de_evidencia": "Reconocimiento normativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce la diferencia entre la permanencia institucional de docentes orientadores o de apoyo pedagógico y la jornada laboral de directivos docentes como coordinadores, de acuerdo con la normativa vigente.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con orientación escolar, coordinación, rectoría o gestión institucional.",
-        "blueprint": {
-            "problematica_principal": "Confusión entre jornada laboral total, permanencia institucional y funciones de orientadores o coordinadores.",
-            "fuente_autorizada": [
-                "Decreto 1850 de 2002",
-                "Decreto 277 de 2025",
-                "Manual de funciones docente, directivo docente y docente orientador",
-                "Normativa laboral docente vigente"
-            ],
-            "componente_modulo": "Tiempo de Permanencia Institucional",
-            "competencia": "Comprensión de jornada y permanencia institucional",
-            "afirmacion": "La permanencia institucional debe interpretarse según el cargo: docentes orientadores o de apoyo pedagógico tienen regla específica de permanencia; coordinadores son directivos docentes con jornada laboral institucional organizada conforme a la normativa.",
-            "evidencia_observable": "Distingue cargo, jornada laboral, permanencia institucional y funciones, evitando equiparar indebidamente todos los cargos.",
-            "tipo_de_evidencia": "Reconocimiento normativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que la permanencia institucional no debe responderse de manera genérica para todos los cargos, sino según la naturaleza del empleo, la jornada laboral y las normas aplicables a docentes orientadores, docentes de apoyo pedagógico y directivos docentes.",
-        "evidencia_observable": "Selecciona una opción que diferencia la regla de permanencia del orientador o docente de apoyo y la jornada institucional de coordinación.",
-        "tarea_cognitiva": "Reconocer una distinción administrativa básica entre cargos y tiempos de permanencia.",
-        "tipo_de_pregunta": "Pregunta normativa con advertencia de actualización",
-        "dificultad_esperada": "Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Actualización normativa",
-                "revision": "El ítem incluye dictamen con revisión normativa obligatoria antes de banco definitivo."
-            },
-            {
-                "riesgo": "Confundir orientador con coordinador",
-                "revision": "La clave distingue docente orientador/de apoyo pedagógico de directivo docente coordinador."
-            },
-            {
-                "riesgo": "Confundir permanencia con totalidad de jornada laboral",
-                "revision": "La pregunta diferencia permanencia institucional, jornada laboral y funciones propias del cargo."
-            }
-        ]
+    "claim": "El evaluado comprende que la permanencia institucional no debe responderse de manera genérica para todos los cargos, sino según la naturaleza del empleo, la jornada laboral y las normas aplicables a docentes orientadores, docentes de apoyo pedagógico y directivos docentes.",
+    "evidencia_observable": "Selecciona una opción que diferencia la regla de permanencia del orientador o docente de apoyo y la jornada institucional de coordinación.",
+    "tarea_cognitiva": "Reconocer una distinción administrativa básica entre cargos y tiempos de permanencia.",
+    "tipo_de_pregunta": "Pregunta normativa con advertencia de actualización",
+    "dificultad_esperada": "Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Actualización normativa",
+        "revision": "El ítem incluye dictamen con revisión normativa obligatoria antes de banco definitivo."
+      },
+      {
+        "riesgo": "Confundir orientador con coordinador",
+        "revision": "La clave distingue docente orientador/de apoyo pedagógico de directivo docente coordinador."
+      },
+      {
+        "riesgo": "Confundir permanencia con totalidad de jornada laboral",
+        "revision": "La pregunta diferencia permanencia institucional, jornada laboral y funciones propias del cargo."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "En una institución educativa se pregunta cuántas horas de permanencia continua debe cumplir un docente orientador o docente líder de apoyo, y si esa misma regla puede aplicarse automáticamente al coordinador. La discusión exige diferenciar cargo, permanencia y jornada laboral.\n\n¿Cuál respuesta es más cuidadosa normativamente?",
+    "opciones": {
+      "A": "El docente orientador o de apoyo pedagógico cumple la permanencia institucional específica definida por la norma vigente; el coordinador, como directivo docente, debe cumplir su jornada laboral institucional conforme a las reglas aplicables a directivos docentes, sin equiparar automáticamente ambos cargos.",
+      "B": "Todos los cargos cumplen exactamente la misma permanencia, sin importar si son docentes, orientadores o directivos docentes.",
+      "C": "El coordinador y el orientador no tienen obligación de permanencia institucional porque no dictan clase todo el tiempo.",
+      "D": "La permanencia se decide informalmente cada día según la cantidad de estudiantes con conflicto."
     },
-    "item": {
-        "enunciado": "En una institución educativa se pregunta cuántas horas de permanencia continua debe cumplir un docente orientador o docente líder de apoyo, y si esa misma regla puede aplicarse automáticamente al coordinador. La discusión exige diferenciar cargo, permanencia y jornada laboral.\n\n¿Cuál respuesta es más cuidadosa normativamente?",
-        "opciones": {
-            "A": "El docente orientador o de apoyo pedagógico cumple la permanencia institucional específica definida por la norma vigente; el coordinador, como directivo docente, debe cumplir su jornada laboral institucional conforme a las reglas aplicables a directivos docentes, sin equiparar automáticamente ambos cargos.",
-            "B": "Todos los cargos cumplen exactamente la misma permanencia, sin importar si son docentes, orientadores o directivos docentes.",
-            "C": "El coordinador y el orientador no tienen obligación de permanencia institucional porque no dictan clase todo el tiempo.",
-            "D": "La permanencia se decide informalmente cada día según la cantidad de estudiantes con conflicto."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Tiempo de Permanencia Institucional",
+    "competencia": "Comprensión de jornada y permanencia institucional",
+    "claim_evaluado": "El evaluado comprende que la permanencia institucional no debe responderse de manera genérica para todos los cargos, sino según la naturaleza del empleo, la jornada laboral y las normas aplicables a docentes orientadores, docentes de apoyo pedagógico y directivos docentes.",
+    "evidencia": "Selecciona una opción que diferencia la regla de permanencia del orientador o docente de apoyo y la jornada institucional de coordinación.",
+    "proceso_cognitivo": "Reconocimiento normativo aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Alta",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Equipara indebidamente cargos con naturaleza funcional distinta.",
+      "C": "Desconoce la obligación de permanencia y jornada institucional.",
+      "D": "Convierte una obligación normativa en decisión informal."
     },
-    "ficha_tecnica": {
-        "componente": "Tiempo de Permanencia Institucional",
-        "competencia": "Comprensión de jornada y permanencia institucional",
-        "claim_evaluado": "El evaluado comprende que la permanencia institucional no debe responderse de manera genérica para todos los cargos, sino según la naturaleza del empleo, la jornada laboral y las normas aplicables a docentes orientadores, docentes de apoyo pedagógico y directivos docentes.",
-        "evidencia": "Selecciona una opción que diferencia la regla de permanencia del orientador o docente de apoyo y la jornada institucional de coordinación.",
-        "proceso_cognitivo": "Reconocimiento normativo aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Alta",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Equipara indebidamente cargos con naturaleza funcional distinta.",
-            "C": "Desconoce la obligación de permanencia y jornada institucional.",
-            "D": "Convierte una obligación normativa en decisión informal."
-        },
-        "fuente_autorizada": [
-            "Decreto 1850 de 2002",
-            "Decreto 277 de 2025",
-            "Manual de funciones docente, directivo docente y docente orientador",
-            "Normativa laboral docente vigente"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque evita equiparar automáticamente cargos distintos y exige interpretar permanencia y jornada según la normativa aplicable a cada empleo.",
-        "opcion_B": "Es incorrecta porque desconoce diferencias funcionales entre docente, orientador y directivo docente.",
-        "opcion_C": "Es incorrecta porque orientación y coordinación también tienen obligaciones de permanencia y jornada.",
-        "opcion_D": "Es incorrecta porque la permanencia institucional no se define informalmente por la conflictividad diaria."
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado con cautela normativa.",
-        "argumento": "El ítem evita una respuesta rígida que pueda quedar desactualizada y diferencia cargos sin desvalorizar funciones. Debe revisarse contra la norma vigente y las directrices territoriales antes de aplicarse en banco definitivo."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado con revisión normativa obligatoria",
-        "observacion": "Por tratarse de jornada y permanencia, se recomienda validación jurídica actualizada antes de uso definitivo.",
-        "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre autonomía institucional, enfoques de convivencia y organización del servicio educativo."
+    "fuente_autorizada": [
+      "Decreto 1850 de 2002",
+      "Decreto 277 de 2025",
+      "Manual de funciones docente, directivo docente y docente orientador",
+      "Normativa laboral docente vigente"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque desconoce diferencias funcionales entre docente, orientador y directivo docente.",
+    "opcion_C": "Es incorrecta porque orientación y coordinación también tienen obligaciones de permanencia y jornada.",
+    "opcion_D": "Es incorrecta porque la permanencia institucional no se define informalmente por la conflictividad diaria.",
+    "distractores": {
+      "B": "Es incorrecta porque desconoce diferencias funcionales entre docente, orientador y directivo docente.",
+      "C": "Es incorrecta porque orientación y coordinación también tienen obligaciones de permanencia y jornada.",
+      "D": "Es incorrecta porque la permanencia institucional no se define informalmente por la conflictividad diaria."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado con cautela normativa.",
+    "argumento": "El ítem evita una respuesta rígida que pueda quedar desactualizada y diferencia cargos sin desvalorizar funciones. Debe revisarse contra la norma vigente y las directrices territoriales antes de aplicarse en banco definitivo."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado con revisión normativa obligatoria",
+    "observacion": "Por tratarse de jornada y permanencia, se recomienda validación jurídica actualizada antes de uso definitivo.",
+    "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre autonomía institucional, enfoques de convivencia y organización del servicio educativo."
+  }
 }

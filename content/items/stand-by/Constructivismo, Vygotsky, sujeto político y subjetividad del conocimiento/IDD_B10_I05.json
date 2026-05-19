@@ -1,99 +1,104 @@
 {
-    "id_item": "IDD_B10_I05",
-    "archivo_sugerido": "IDD_B10_I05_sujeto_politico_asimilacion_conocimiento.json",
-    "bloque": {
-        "codigo_bloque": "IDD_B10",
-        "nombre": "Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento",
-        "estado_en_lista": "Bloque 10 de 17",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 5 de 5"
+  "id_item": "IDD_B10_I05",
+  "archivo_sugerido": "IDD_B10_I05_sujeto_politico_asimilacion_conocimiento.json",
+  "bloque": {
+    "codigo_bloque": "IDD_B10",
+    "nombre": "Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento",
+    "estado_en_lista": "Bloque 10 de 17",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 5 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante comprende cómo la individualidad cultural, familiar e histórica del estudiante influye en la asimilación del conocimiento.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, pedagogía, didáctica, inclusión educativa o ciencias sociales.",
+    "blueprint": {
+      "problematica_principal": "Desconocimiento del estudiante como sujeto situado con experiencias que median su aprendizaje.",
+      "fuente_autorizada": [
+        "Constructivismo",
+        "Piaget",
+        "Vygotsky",
+        "Aprendizaje significativo",
+        "Educación contextualizada"
+      ],
+      "componente_modulo": "El sujeto político y el aprendizaje",
+      "competencia": "Comprensión contextual de la asimilación del conocimiento",
+      "afirmacion": "El estudiante asimila la información desde sus ideas previas, historia, cultura, lenguaje, familia y experiencias sociales.",
+      "evidencia_observable": "Reconoce que la individualidad del estudiante orienta la forma en que selecciona, interpreta y reorganiza información.",
+      "tipo_de_evidencia": "Comprensión pedagógica aplicada",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante comprende cómo la individualidad cultural, familiar e histórica del estudiante influye en la asimilación del conocimiento.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, pedagogía, didáctica, inclusión educativa o ciencias sociales.",
-        "blueprint": {
-            "problematica_principal": "Desconocimiento del estudiante como sujeto situado con experiencias que median su aprendizaje.",
-            "fuente_autorizada": [
-                "Constructivismo",
-                "Piaget",
-                "Vygotsky",
-                "Aprendizaje significativo",
-                "Educación contextualizada"
-            ],
-            "componente_modulo": "El sujeto político y el aprendizaje",
-            "competencia": "Comprensión contextual de la asimilación del conocimiento",
-            "afirmacion": "El estudiante asimila la información desde sus ideas previas, historia, cultura, lenguaje, familia y experiencias sociales.",
-            "evidencia_observable": "Reconoce que la individualidad del estudiante orienta la forma en que selecciona, interpreta y reorganiza información.",
-            "tipo_de_evidencia": "Comprensión pedagógica aplicada",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que todo aprendizaje está mediado por experiencias previas y contextos socioculturales, por lo que la enseñanza debe partir de esa diversidad.",
-        "evidencia_observable": "Selecciona una explicación que relaciona sujeto político, ideas previas y asimilación del conocimiento.",
-        "tarea_cognitiva": "Interpretar el papel del contexto personal y cultural en el aprendizaje.",
-        "tipo_de_pregunta": "Pregunta conceptual aplicada",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Esencializar al estudiante por su cultura o historia",
-                "revision": "La clave habla de contexto como mediación, no como destino fijo."
-            },
-            {
-                "riesgo": "Confundir sujeto político con militancia partidista",
-                "revision": "El ítem lo entiende como sujeto situado con historia, voz y experiencias."
-            },
-            {
-                "riesgo": "Negar el papel de la enseñanza",
-                "revision": "La opción correcta mantiene la mediación docente."
-            }
-        ]
+    "claim": "El evaluado comprende que todo aprendizaje está mediado por experiencias previas y contextos socioculturales, por lo que la enseñanza debe partir de esa diversidad.",
+    "evidencia_observable": "Selecciona una explicación que relaciona sujeto político, ideas previas y asimilación del conocimiento.",
+    "tarea_cognitiva": "Interpretar el papel del contexto personal y cultural en el aprendizaje.",
+    "tipo_de_pregunta": "Pregunta conceptual aplicada",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Esencializar al estudiante por su cultura o historia",
+        "revision": "La clave habla de contexto como mediación, no como destino fijo."
+      },
+      {
+        "riesgo": "Confundir sujeto político con militancia partidista",
+        "revision": "El ítem lo entiende como sujeto situado con historia, voz y experiencias."
+      },
+      {
+        "riesgo": "Negar el papel de la enseñanza",
+        "revision": "La opción correcta mantiene la mediación docente."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un docente reconoce que cada estudiante llega al aula con experiencias familiares, culturales, históricas y sociales propias. Por eso, no todos interpretan de la misma manera la información que se presenta en clase.\n\nSi todo estudiante es considerado un sujeto político y situado, ¿cómo afecta esta individualidad la asimilación del conocimiento?",
+    "opciones": {
+      "A": "Hace que cada estudiante seleccione, interprete y relacione la información desde sus ideas previas, experiencias y contexto, por lo que la mediación docente debe partir de esa diversidad.",
+      "B": "Impide cualquier aprendizaje común, porque cada estudiante vive en una realidad totalmente incomunicable.",
+      "C": "No afecta el aprendizaje, porque todos los estudiantes asimilan la información de forma idéntica.",
+      "D": "Significa que el docente debe abandonar todo propósito curricular."
     },
-    "item": {
-        "enunciado": "Un docente reconoce que cada estudiante llega al aula con experiencias familiares, culturales, históricas y sociales propias. Por eso, no todos interpretan de la misma manera la información que se presenta en clase.\n\nSi todo estudiante es considerado un sujeto político y situado, ¿cómo afecta esta individualidad la asimilación del conocimiento?",
-        "opciones": {
-            "A": "Hace que cada estudiante seleccione, interprete y relacione la información desde sus ideas previas, experiencias y contexto, por lo que la mediación docente debe partir de esa diversidad.",
-            "B": "Impide cualquier aprendizaje común, porque cada estudiante vive en una realidad totalmente incomunicable.",
-            "C": "No afecta el aprendizaje, porque todos los estudiantes asimilan la información de forma idéntica.",
-            "D": "Significa que el docente debe abandonar todo propósito curricular."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "El sujeto político y el aprendizaje",
+    "competencia": "Comprensión contextual de la asimilación del conocimiento",
+    "claim_evaluado": "El evaluado comprende que todo aprendizaje está mediado por experiencias previas y contextos socioculturales, por lo que la enseñanza debe partir de esa diversidad.",
+    "evidencia": "Selecciona una explicación que relaciona sujeto político, ideas previas y asimilación del conocimiento.",
+    "proceso_cognitivo": "Comprensión pedagógica aplicada",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Exagera la diferencia hasta negar el aprendizaje común.",
+      "C": "Desconoce diversidad de experiencias e ideas previas.",
+      "D": "Confunde contextualización con abandono curricular."
     },
-    "ficha_tecnica": {
-        "componente": "El sujeto político y el aprendizaje",
-        "competencia": "Comprensión contextual de la asimilación del conocimiento",
-        "claim_evaluado": "El evaluado comprende que todo aprendizaje está mediado por experiencias previas y contextos socioculturales, por lo que la enseñanza debe partir de esa diversidad.",
-        "evidencia": "Selecciona una explicación que relaciona sujeto político, ideas previas y asimilación del conocimiento.",
-        "proceso_cognitivo": "Comprensión pedagógica aplicada",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Exagera la diferencia hasta negar el aprendizaje común.",
-            "C": "Desconoce diversidad de experiencias e ideas previas.",
-            "D": "Confunde contextualización con abandono curricular."
-        },
-        "fuente_autorizada": [
-            "Constructivismo",
-            "Piaget",
-            "Vygotsky",
-            "Aprendizaje significativo",
-            "Educación contextualizada"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque reconoce que la asimilación depende de ideas previas, experiencias y contexto, sin negar la mediación docente.",
-        "opcion_B": "Es incorrecta porque la diversidad no impide construir aprendizajes comunes.",
-        "opcion_C": "Es incorrecta porque niega diferencias de interpretación.",
-        "opcion_D": "Es incorrecta porque contextualizar no significa abandonar el currículo."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem reconoce la diversidad sociocultural sin convertirla en etiqueta fija ni en obstáculo absoluto para aprender."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento."
+    "fuente_autorizada": [
+      "Constructivismo",
+      "Piaget",
+      "Vygotsky",
+      "Aprendizaje significativo",
+      "Educación contextualizada"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque la diversidad no impide construir aprendizajes comunes.",
+    "opcion_C": "Es incorrecta porque niega diferencias de interpretación.",
+    "opcion_D": "Es incorrecta porque contextualizar no significa abandonar el currículo.",
+    "distractores": {
+      "B": "Es incorrecta porque la diversidad no impide construir aprendizajes comunes.",
+      "C": "Es incorrecta porque niega diferencias de interpretación.",
+      "D": "Es incorrecta porque contextualizar no significa abandonar el currículo."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem reconoce la diversidad sociocultural sin convertirla en etiqueta fija ni en obstáculo absoluto para aprender."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento."
+  }
 }

@@ -1,97 +1,102 @@
 {
-    "id_item": "DIL_B03_I03",
-    "archivo_sugerido": "DIL_B03_I03_apendice_familiar_sujeto_derechos.json",
-    "bloque": {
-        "codigo_bloque": "DIL_B03",
-        "nombre": "Evolución normativa: Código del Menor vs. Ley 1098",
-        "estado_en_lista": "Bloque 3 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 3 de 4"
+  "id_item": "DIL_B03_I03",
+  "archivo_sugerido": "DIL_B03_I03_apendice_familiar_sujeto_derechos.json",
+  "bloque": {
+    "codigo_bloque": "DIL_B03",
+    "nombre": "Evolución normativa: Código del Menor vs. Ley 1098",
+    "estado_en_lista": "Bloque 3 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 3 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante comprende la diferencia entre tratar al niño como apéndice familiar y reconocerlo como sujeto autónomo de derechos.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con infancia, educación, orientación escolar, convivencia o protección integral.",
+    "blueprint": {
+      "problematica_principal": "Persistencia de una visión donde el niño se entiende solo como dependiente de la voluntad adulta o familiar.",
+      "fuente_autorizada": [
+        "Ley 1098 de 2006",
+        "Convención sobre los Derechos del Niño",
+        "Constitución Política de Colombia",
+        "Enfoque de protección integral"
+      ],
+      "componente_modulo": "Titularidad de derechos",
+      "competencia": "Reconocimiento del niño como sujeto de derechos",
+      "afirmacion": "La Ley 1098 reconoce derechos propios de niños, niñas y adolescentes, independientemente de la voluntad exclusiva de adultos o familia.",
+      "evidencia_observable": "Distingue entre dependencia familiar y titularidad propia de derechos.",
+      "tipo_de_evidencia": "Juicio normativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "D"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante comprende la diferencia entre tratar al niño como apéndice familiar y reconocerlo como sujeto autónomo de derechos.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con infancia, educación, orientación escolar, convivencia o protección integral.",
-        "blueprint": {
-            "problematica_principal": "Persistencia de una visión donde el niño se entiende solo como dependiente de la voluntad adulta o familiar.",
-            "fuente_autorizada": [
-                "Ley 1098 de 2006",
-                "Convención sobre los Derechos del Niño",
-                "Constitución Política de Colombia",
-                "Enfoque de protección integral"
-            ],
-            "componente_modulo": "Titularidad de derechos",
-            "competencia": "Reconocimiento del niño como sujeto de derechos",
-            "afirmacion": "La Ley 1098 reconoce derechos propios de niños, niñas y adolescentes, independientemente de la voluntad exclusiva de adultos o familia.",
-            "evidencia_observable": "Distingue entre dependencia familiar y titularidad propia de derechos.",
-            "tipo_de_evidencia": "Juicio normativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "D"
-        },
-        "claim": "El evaluado comprende que la titularidad de derechos impide tratar a niños, niñas y adolescentes como objetos de propiedad o apéndices de la familia.",
-        "evidencia_observable": "Selecciona una interpretación coherente con dignidad, voz y protección reforzada.",
-        "tarea_cognitiva": "Interpretar el alcance del enfoque de derechos frente a la autoridad familiar.",
-        "tipo_de_pregunta": "Caso conceptual normativo",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Presentar la familia como enemiga de los derechos",
-                "revision": "La clave reconoce la familia, pero dentro de límites de protección integral."
-            },
-            {
-                "riesgo": "Confundir titularidad con independencia absoluta",
-                "revision": "La respuesta correcta mantiene acompañamiento y protección."
-            },
-            {
-                "riesgo": "Adultocentrismo",
-                "revision": "El ítem promueve dignidad y voz de NNA."
-            }
-        ]
+    "claim": "El evaluado comprende que la titularidad de derechos impide tratar a niños, niñas y adolescentes como objetos de propiedad o apéndices de la familia.",
+    "evidencia_observable": "Selecciona una interpretación coherente con dignidad, voz y protección reforzada.",
+    "tarea_cognitiva": "Interpretar el alcance del enfoque de derechos frente a la autoridad familiar.",
+    "tipo_de_pregunta": "Caso conceptual normativo",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Presentar la familia como enemiga de los derechos",
+        "revision": "La clave reconoce la familia, pero dentro de límites de protección integral."
+      },
+      {
+        "riesgo": "Confundir titularidad con independencia absoluta",
+        "revision": "La respuesta correcta mantiene acompañamiento y protección."
+      },
+      {
+        "riesgo": "Adultocentrismo",
+        "revision": "El ítem promueve dignidad y voz de NNA."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Una persona sostiene que las decisiones sobre un niño pertenecen exclusivamente a los adultos de su familia, porque el niño no tiene derechos propios sino que es un apéndice familiar. Desde la Ley 1098, esta idea debe corregirse.\n\n¿Cuál es la razón jurídica principal?",
+    "opciones": {
+      "A": "Porque los niños no tienen ninguna relación con su familia.",
+      "B": "Porque la familia pierde toda función de cuidado y crianza.",
+      "C": "Porque los niños pueden actuar jurídicamente siempre sin acompañamiento adulto.",
+      "D": "Porque niños, niñas y adolescentes son sujetos titulares de derechos propios, con dignidad, protección reforzada y derecho a ser escuchados según su edad y madurez."
     },
-    "item": {
-        "enunciado": "Una persona sostiene que las decisiones sobre un niño pertenecen exclusivamente a los adultos de su familia, porque el niño no tiene derechos propios sino que es un apéndice familiar. Desde la Ley 1098, esta idea debe corregirse.\n\n¿Cuál es la razón jurídica principal?",
-        "opciones": {
-            "A": "Porque los niños no tienen ninguna relación con su familia.",
-            "B": "Porque la familia pierde toda función de cuidado y crianza.",
-            "C": "Porque los niños pueden actuar jurídicamente siempre sin acompañamiento adulto.",
-            "D": "Porque niños, niñas y adolescentes son sujetos titulares de derechos propios, con dignidad, protección reforzada y derecho a ser escuchados según su edad y madurez."
-        },
-        "respuesta_correcta": "D"
+    "respuesta_correcta": "D"
+  },
+  "ficha_tecnica": {
+    "componente": "Titularidad de derechos",
+    "competencia": "Reconocimiento del niño como sujeto de derechos",
+    "claim_evaluado": "El evaluado comprende que la titularidad de derechos impide tratar a niños, niñas y adolescentes como objetos de propiedad o apéndices de la familia.",
+    "evidencia": "Selecciona una interpretación coherente con dignidad, voz y protección reforzada.",
+    "proceso_cognitivo": "Juicio normativo aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "D",
+    "distractores": {
+      "A": "Niega indebidamente el papel de la familia.",
+      "B": "Elimina la responsabilidad familiar, lo cual no corresponde al enfoque de derechos.",
+      "C": "Confunde titularidad de derechos con plena independencia jurídica."
     },
-    "ficha_tecnica": {
-        "componente": "Titularidad de derechos",
-        "competencia": "Reconocimiento del niño como sujeto de derechos",
-        "claim_evaluado": "El evaluado comprende que la titularidad de derechos impide tratar a niños, niñas y adolescentes como objetos de propiedad o apéndices de la familia.",
-        "evidencia": "Selecciona una interpretación coherente con dignidad, voz y protección reforzada.",
-        "proceso_cognitivo": "Juicio normativo aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "D",
-        "distractores": {
-            "A": "Niega indebidamente el papel de la familia.",
-            "B": "Elimina la responsabilidad familiar, lo cual no corresponde al enfoque de derechos.",
-            "C": "Confunde titularidad de derechos con plena independencia jurídica."
-        },
-        "fuente_autorizada": [
-            "Ley 1098 de 2006",
-            "Convención sobre los Derechos del Niño",
-            "Constitución Política de Colombia",
-            "Enfoque de protección integral"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque reconoce titularidad de derechos, dignidad, protección y participación progresiva.",
-        "opcion_A": "Es incorrecta porque los vínculos familiares siguen siendo relevantes.",
-        "opcion_B": "Es incorrecta porque la familia conserva deberes de cuidado y crianza.",
-        "opcion_C": "Es incorrecta porque la participación infantil se ejerce de forma progresiva y acompañada."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem respeta la función de la familia sin permitir que se desconozca la titularidad de derechos de niños, niñas y adolescentes."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre evolución normativa: Código del Menor vs. Ley 1098."
+    "fuente_autorizada": [
+      "Ley 1098 de 2006",
+      "Convención sobre los Derechos del Niño",
+      "Constitución Política de Colombia",
+      "Enfoque de protección integral"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "opcion_A": "Es incorrecta porque los vínculos familiares siguen siendo relevantes.",
+    "opcion_B": "Es incorrecta porque la familia conserva deberes de cuidado y crianza.",
+    "opcion_C": "Es incorrecta porque la participación infantil se ejerce de forma progresiva y acompañada.",
+    "distractores": {
+      "A": "Es incorrecta porque los vínculos familiares siguen siendo relevantes.",
+      "B": "Es incorrecta porque la familia conserva deberes de cuidado y crianza.",
+      "C": "Es incorrecta porque la participación infantil se ejerce de forma progresiva y acompañada."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem respeta la función de la familia sin permitir que se desconozca la titularidad de derechos de niños, niñas y adolescentes."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre evolución normativa: Código del Menor vs. Ley 1098."
+  }
 }

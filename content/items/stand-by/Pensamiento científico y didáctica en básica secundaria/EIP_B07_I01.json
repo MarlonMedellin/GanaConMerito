@@ -1,40 +1,40 @@
 {
-    "id_item": "EIP_B07_I01",
-    "archivo_sugerido": "EIP_B07_I01_repeticion_formula_sin_contexto_contradice_pensamiento_cientifico.json",
-    "proposito_de_uso": "Evaluar si el aspirante comprende por qué la repetición de fórmulas sin contexto contradice el desarrollo del pensamiento científico en básica secundaria.",
-    "blueprint": {
-        "componente_modulo": "Pensamiento científico en básica secundaria",
-        "competencia": "Comprensión de fenómenos y resolución de problemas",
-        "afirmacion": "El pensamiento científico exige comprender fenómenos, plantear preguntas, observar, experimentar y aplicar conceptos en contexto.",
-        "evidencia_observable": "Reconoce que repetir fórmulas sin comprensión no desarrolla pensamiento científico.",
-        "tipo_de_evidencia": "Juicio didáctico aplicado",
-        "dificultad_esperada": "Media-Alta",
-        "clave": "C"
+  "id_item": "EIP_B07_I01",
+  "archivo_sugerido": "EIP_B07_I01_repeticion_formula_sin_contexto_contradice_pensamiento_cientifico.json",
+  "proposito_de_uso": "Evaluar si el aspirante comprende por qué la repetición de fórmulas sin contexto contradice el desarrollo del pensamiento científico en básica secundaria.",
+  "blueprint": {
+    "componente_modulo": "Pensamiento científico en básica secundaria",
+    "competencia": "Comprensión de fenómenos y resolución de problemas",
+    "afirmacion": "El pensamiento científico exige comprender fenómenos, plantear preguntas, observar, experimentar y aplicar conceptos en contexto.",
+    "evidencia_observable": "Reconoce que repetir fórmulas sin comprensión no desarrolla pensamiento científico.",
+    "tipo_de_evidencia": "Juicio didáctico aplicado",
+    "dificultad_esperada": "Media-Alta",
+    "clave": "C"
+  },
+  "item": {
+    "enunciado": "En básica secundaria, un docente enseña fuerza únicamente haciendo repetir la fórmula F = m × a, sin experimentos, problemas contextualizados, observación de fenómenos ni discusión de su significado físico.\n\n¿Por qué esta práctica contradice el desarrollo del pensamiento científico exigido por la Ley 115?",
+    "opciones": {
+      "A": "Porque la ciencia escolar no debe usar fórmulas en ningún caso.",
+      "B": "Porque el pensamiento científico consiste solo en memorizar símbolos.",
+      "C": "Porque el aprendizaje científico requiere comprender fenómenos, plantear problemas, observar, experimentar y aplicar conceptos en contexto, no solo repetir fórmulas.",
+      "D": "Porque la física no pertenece a la educación básica secundaria."
     },
-    "item": {
-        "enunciado": "En básica secundaria, un docente enseña fuerza únicamente haciendo repetir la fórmula F = m × a, sin experimentos, problemas contextualizados, observación de fenómenos ni discusión de su significado físico.\n\n¿Por qué esta práctica contradice el desarrollo del pensamiento científico exigido por la Ley 115?",
-        "opciones": {
-            "A": "Porque la ciencia escolar no debe usar fórmulas en ningún caso.",
-            "B": "Porque el pensamiento científico consiste solo en memorizar símbolos.",
-            "C": "Porque el aprendizaje científico requiere comprender fenómenos, plantear problemas, observar, experimentar y aplicar conceptos en contexto, no solo repetir fórmulas.",
-            "D": "Porque la física no pertenece a la educación básica secundaria."
-        },
-        "respuesta_correcta": "C"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque integra comprensión, observación, experimentación y aplicación contextualizada.",
-        "distractores": {
-            "A": "Niega indebidamente el valor de las fórmulas dentro de la ciencia.",
-            "B": "Reduce la ciencia a memorización.",
-            "D": "Desconoce que los fenómenos físicos hacen parte de los objetivos de básica secundaria."
-        }
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado",
-        "argumento": "El ítem no rechaza el uso de fórmulas; rechaza su enseñanza mecánica sin comprensión."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem apto para banco como bloque separado de básica secundaria."
+    "respuesta_correcta": "C"
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "distractores": {
+      "A": "Niega indebidamente el valor de las fórmulas dentro de la ciencia.",
+      "B": "Reduce la ciencia a memorización.",
+      "D": "Desconoce que los fenómenos físicos hacen parte de los objetivos de básica secundaria."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado",
+    "argumento": "El ítem no rechaza el uso de fórmulas; rechaza su enseñanza mecánica sin comprensión."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem apto para banco como bloque separado de básica secundaria."
+  }
 }

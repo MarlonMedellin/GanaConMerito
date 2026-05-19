@@ -1,96 +1,101 @@
 {
-    "id_item": "NFL_B01_I01",
-    "archivo_sugerido": "NFL_B01_I01_formacion_integral_articulo_92_ley_115.json",
-    "bloque": {
-        "codigo_bloque": "NFL_B01",
-        "nombre": "Formación integral, fines de la educación y desarrollo de la personalidad",
-        "estado_en_lista": "Bloque 1 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 1 de 5"
+  "id_item": "NFL_B01_I01",
+  "archivo_sugerido": "NFL_B01_I01_formacion_integral_articulo_92_ley_115.json",
+  "bloque": {
+    "codigo_bloque": "NFL_B01",
+    "nombre": "Formación integral, fines de la educación y desarrollo de la personalidad",
+    "estado_en_lista": "Bloque 1 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 1 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante comprende la obligación del establecimiento educativo frente a la formación integral y el desarrollo equilibrado de habilidades personales, sociales y ciudadanas.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación académica, orientación escolar, rectoría o gestión pedagógica.",
+    "blueprint": {
+      "problematica_principal": "Reducción de la escuela a transmisión de contenidos disciplinares, desconociendo la formación integral exigida por la Ley 115.",
+      "fuente_autorizada": [
+        "Ley 115 de 1994",
+        "Artículo 92 Ley 115",
+        "Proyecto Educativo Institucional",
+        "Constitución Política de Colombia artículo 67"
+      ],
+      "componente_modulo": "Fines de la educación",
+      "competencia": "Comprensión de formación integral",
+      "afirmacion": "El establecimiento educativo debe incorporar en el PEI acciones pedagógicas orientadas al desarrollo equilibrado de habilidades personales, sociales, éticas y ciudadanas.",
+      "evidencia_observable": "Reconoce que el PEI debe incluir acciones para toma de decisiones, trabajo en equipo, responsabilidad, solución de conflictos, comunicación, negociación y participación.",
+      "tipo_de_evidencia": "Comprensión normativa aplicada",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "B"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante comprende la obligación del establecimiento educativo frente a la formación integral y el desarrollo equilibrado de habilidades personales, sociales y ciudadanas.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación académica, orientación escolar, rectoría o gestión pedagógica.",
-        "blueprint": {
-            "problematica_principal": "Reducción de la escuela a transmisión de contenidos disciplinares, desconociendo la formación integral exigida por la Ley 115.",
-            "fuente_autorizada": [
-                "Ley 115 de 1994",
-                "Artículo 92 Ley 115",
-                "Proyecto Educativo Institucional",
-                "Constitución Política de Colombia artículo 67"
-            ],
-            "componente_modulo": "Fines de la educación",
-            "competencia": "Comprensión de formación integral",
-            "afirmacion": "El establecimiento educativo debe incorporar en el PEI acciones pedagógicas orientadas al desarrollo equilibrado de habilidades personales, sociales, éticas y ciudadanas.",
-            "evidencia_observable": "Reconoce que el PEI debe incluir acciones para toma de decisiones, trabajo en equipo, responsabilidad, solución de conflictos, comunicación, negociación y participación.",
-            "tipo_de_evidencia": "Comprensión normativa aplicada",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "B"
-        },
-        "claim": "El evaluado comprende que la formación integral es una obligación institucional que debe traducirse en acciones pedagógicas concretas dentro del PEI.",
-        "evidencia_observable": "Selecciona la opción que relaciona formación integral con habilidades personales, sociales y ciudadanas, no solo con contenidos académicos.",
-        "tarea_cognitiva": "Interpretar una obligación legal y aplicarla a la gestión pedagógica institucional.",
-        "tipo_de_pregunta": "Pregunta normativa aplicada",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Confundir formación integral con actividades extracurriculares aisladas",
-                "revision": "La clave la ubica como acción pedagógica incorporada al PEI."
-            },
-            {
-                "riesgo": "Reducir la educación a rendimiento académico",
-                "revision": "La opción correcta integra dimensiones personales y sociales."
-            },
-            {
-                "riesgo": "Interpretar formación integral como ausencia de exigencia académica",
-                "revision": "La clave mantiene el carácter pedagógico y formativo."
-            }
-        ]
+    "claim": "El evaluado comprende que la formación integral es una obligación institucional que debe traducirse en acciones pedagógicas concretas dentro del PEI.",
+    "evidencia_observable": "Selecciona la opción que relaciona formación integral con habilidades personales, sociales y ciudadanas, no solo con contenidos académicos.",
+    "tarea_cognitiva": "Interpretar una obligación legal y aplicarla a la gestión pedagógica institucional.",
+    "tipo_de_pregunta": "Pregunta normativa aplicada",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Confundir formación integral con actividades extracurriculares aisladas",
+        "revision": "La clave la ubica como acción pedagógica incorporada al PEI."
+      },
+      {
+        "riesgo": "Reducir la educación a rendimiento académico",
+        "revision": "La opción correcta integra dimensiones personales y sociales."
+      },
+      {
+        "riesgo": "Interpretar formación integral como ausencia de exigencia académica",
+        "revision": "La clave mantiene el carácter pedagógico y formativo."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "A la luz de la Ley General de Educación, una institución revisa su PEI y advierte que solo contiene planes de área y criterios de calificación, pero no acciones pedagógicas para fortalecer la toma de decisiones, el trabajo en equipo, la responsabilidad, la solución de conflictos, la comunicación, la negociación y la participación.\n\n¿Cuál es la obligación del establecimiento educativo frente a la formación integral del estudiante?",
+    "opciones": {
+      "A": "Limitarse a enseñar contenidos disciplinares, porque la formación personal corresponde exclusivamente a la familia.",
+      "B": "Incorporar en el PEI acciones pedagógicas que favorezcan el desarrollo equilibrado y armónico de habilidades personales, sociales, éticas y ciudadanas.",
+      "C": "Eliminar los contenidos académicos para trabajar únicamente convivencia.",
+      "D": "Delegar toda la formación integral en actividades ocasionales sin relación con el currículo."
     },
-    "item": {
-        "enunciado": "A la luz de la Ley General de Educación, una institución revisa su PEI y advierte que solo contiene planes de área y criterios de calificación, pero no acciones pedagógicas para fortalecer la toma de decisiones, el trabajo en equipo, la responsabilidad, la solución de conflictos, la comunicación, la negociación y la participación.\n\n¿Cuál es la obligación del establecimiento educativo frente a la formación integral del estudiante?",
-        "opciones": {
-            "A": "Limitarse a enseñar contenidos disciplinares, porque la formación personal corresponde exclusivamente a la familia.",
-            "B": "Incorporar en el PEI acciones pedagógicas que favorezcan el desarrollo equilibrado y armónico de habilidades personales, sociales, éticas y ciudadanas.",
-            "C": "Eliminar los contenidos académicos para trabajar únicamente convivencia.",
-            "D": "Delegar toda la formación integral en actividades ocasionales sin relación con el currículo."
-        },
-        "respuesta_correcta": "B"
+    "respuesta_correcta": "B"
+  },
+  "ficha_tecnica": {
+    "componente": "Fines de la educación",
+    "competencia": "Comprensión de formación integral",
+    "claim_evaluado": "El evaluado comprende que la formación integral es una obligación institucional que debe traducirse en acciones pedagógicas concretas dentro del PEI.",
+    "evidencia": "Selecciona la opción que relaciona formación integral con habilidades personales, sociales y ciudadanas, no solo con contenidos académicos.",
+    "proceso_cognitivo": "Comprensión normativa aplicada",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "B",
+    "distractores": {
+      "A": "Reduce la responsabilidad educativa a contenidos y excluye la formación integral.",
+      "C": "Presenta una falsa oposición entre formación académica y formación integral.",
+      "D": "Fragmenta la formación integral y la separa del PEI."
     },
-    "ficha_tecnica": {
-        "componente": "Fines de la educación",
-        "competencia": "Comprensión de formación integral",
-        "claim_evaluado": "El evaluado comprende que la formación integral es una obligación institucional que debe traducirse en acciones pedagógicas concretas dentro del PEI.",
-        "evidencia": "Selecciona la opción que relaciona formación integral con habilidades personales, sociales y ciudadanas, no solo con contenidos académicos.",
-        "proceso_cognitivo": "Comprensión normativa aplicada",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "B",
-        "distractores": {
-            "A": "Reduce la responsabilidad educativa a contenidos y excluye la formación integral.",
-            "C": "Presenta una falsa oposición entre formación académica y formación integral.",
-            "D": "Fragmenta la formación integral y la separa del PEI."
-        },
-        "fuente_autorizada": [
-            "Ley 115 de 1994",
-            "Artículo 92 Ley 115",
-            "Proyecto Educativo Institucional"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque el artículo 92 exige acciones pedagógicas institucionales para favorecer habilidades vinculadas con la formación integral.",
-        "opcion_A": "Es incorrecta porque la escuela también tiene responsabilidad formativa.",
-        "opcion_C": "Es incorrecta porque la formación integral no elimina el aprendizaje disciplinar.",
-        "opcion_D": "Es incorrecta porque las acciones deben incorporarse institucionalmente, no quedar como actividades sueltas."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita separar artificialmente lo académico de lo humano y promueve una visión integral de la educación."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 5 preguntas sobre formación integral, fines de la educación y desarrollo de la personalidad."
+    "fuente_autorizada": [
+      "Ley 115 de 1994",
+      "Artículo 92 Ley 115",
+      "Proyecto Educativo Institucional"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "opcion_A": "Es incorrecta porque la escuela también tiene responsabilidad formativa.",
+    "opcion_C": "Es incorrecta porque la formación integral no elimina el aprendizaje disciplinar.",
+    "opcion_D": "Es incorrecta porque las acciones deben incorporarse institucionalmente, no quedar como actividades sueltas.",
+    "distractores": {
+      "A": "Es incorrecta porque la escuela también tiene responsabilidad formativa.",
+      "C": "Es incorrecta porque la formación integral no elimina el aprendizaje disciplinar.",
+      "D": "Es incorrecta porque las acciones deben incorporarse institucionalmente, no quedar como actividades sueltas."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita separar artificialmente lo académico de lo humano y promueve una visión integral de la educación."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 5 preguntas sobre formación integral, fines de la educación y desarrollo de la personalidad."
+  }
 }

@@ -1,36 +1,36 @@
 {
-    "id_item": "MTV_B11_I05",
-    "archivo_sugerido": "MTV_B11_I05_manejo_error_constructivista.json",
-    "proposito_de_uso": "Evaluar si el aspirante comprende el error como oportunidad de aprendizaje en el enfoque constructivista.",
-    "blueprint": {
-        "componente_modulo": "Manejo pedagógico del error",
-        "competencia": "Retroalimentación constructivista",
-        "afirmacion": "El error puede usarse para explorar ideas previas, generar conflicto cognitivo y reestructurar esquemas de comprensión.",
-        "evidencia_observable": "Selecciona una respuesta docente que analiza el error y lo convierte en aprendizaje.",
-        "tipo_de_evidencia": "Juicio pedagógico situacional",
-        "dificultad_esperada": "Media-Alta",
-        "clave": "C"
+  "id_item": "MTV_B11_I05",
+  "archivo_sugerido": "MTV_B11_I05_manejo_error_constructivista.json",
+  "proposito_de_uso": "Evaluar si el aspirante comprende el error como oportunidad de aprendizaje en el enfoque constructivista.",
+  "blueprint": {
+    "componente_modulo": "Manejo pedagógico del error",
+    "competencia": "Retroalimentación constructivista",
+    "afirmacion": "El error puede usarse para explorar ideas previas, generar conflicto cognitivo y reestructurar esquemas de comprensión.",
+    "evidencia_observable": "Selecciona una respuesta docente que analiza el error y lo convierte en aprendizaje.",
+    "tipo_de_evidencia": "Juicio pedagógico situacional",
+    "dificultad_esperada": "Media-Alta",
+    "clave": "C"
+  },
+  "item": {
+    "enunciado": "Un estudiante resuelve un problema de manera incorrecta, pero su procedimiento revela una idea previa interesante. En lugar de ridiculizarlo, el docente le pide explicar su razonamiento y lo usa para discutir diferentes caminos de solución.\n\n¿Qué enfoque se evidencia?",
+    "opciones": {
+      "A": "Castigo tecnicista del error.",
+      "B": "Indiferencia frente al aprendizaje.",
+      "C": "Manejo constructivista del error como oportunidad de reestructuración cognitiva.",
+      "D": "Eliminación de toda exigencia académica."
     },
-    "item": {
-        "enunciado": "Un estudiante resuelve un problema de manera incorrecta, pero su procedimiento revela una idea previa interesante. En lugar de ridiculizarlo, el docente le pide explicar su razonamiento y lo usa para discutir diferentes caminos de solución.\n\n¿Qué enfoque se evidencia?",
-        "opciones": {
-            "A": "Castigo tecnicista del error.",
-            "B": "Indiferencia frente al aprendizaje.",
-            "C": "Manejo constructivista del error como oportunidad de reestructuración cognitiva.",
-            "D": "Eliminación de toda exigencia académica."
-        },
-        "respuesta_correcta": "C"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque el docente aprovecha el error para comprender y reconstruir el pensamiento del estudiante.",
-        "distractores": {
-            "A": "No hay castigo ni ridiculización.",
-            "B": "El docente interviene pedagógicamente.",
-            "D": "Usar el error no significa eliminar la exigencia."
-        }
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem central para constructivismo y evaluación formativa."
+    "respuesta_correcta": "C"
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "distractores": {
+      "A": "No hay castigo ni ridiculización.",
+      "B": "El docente interviene pedagógicamente.",
+      "D": "Usar el error no significa eliminar la exigencia."
     }
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem central para constructivismo y evaluación formativa."
+  }
 }

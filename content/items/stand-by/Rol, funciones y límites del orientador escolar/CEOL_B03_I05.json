@@ -1,103 +1,108 @@
 {
-    "id_item": "CEOL_B03_I05",
-    "archivo_sugerido": "CEOL_B03_I05_riesgo_psicosocial_responsabilidad_orientador.json",
-    "bloque": {
-        "codigo_bloque": "CEOL_B03",
-        "nombre": "Rol, funciones y límites del orientador escolar",
-        "estado_en_lista": "Bloque 3 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 5 de 5"
+  "id_item": "CEOL_B03_I05",
+  "archivo_sugerido": "CEOL_B03_I05_riesgo_psicosocial_responsabilidad_orientador.json",
+  "bloque": {
+    "codigo_bloque": "CEOL_B03",
+    "nombre": "Rol, funciones y límites del orientador escolar",
+    "estado_en_lista": "Bloque 3 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 5 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce la responsabilidad del orientador escolar tras identificar factores de riesgo psicosocial que afectan el entorno de los estudiantes.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con orientación escolar, convivencia, coordinación o gestión institucional.",
+    "blueprint": {
+      "problematica_principal": "Identificación de riesgos psicosociales sin activación de acciones preventivas, seguimiento o articulación institucional.",
+      "fuente_autorizada": [
+        "Plan Nacional de Orientación Escolar",
+        "Manual de funciones del docente orientador",
+        "Ley 1620 de 2013",
+        "Ley 1098 de 2006",
+        "Ruta de Atención Integral para la Convivencia Escolar"
+      ],
+      "componente_modulo": "Diagnóstico Académico y Psicosocial",
+      "competencia": "Gestión de riesgos psicosociales",
+      "afirmacion": "Identificar factores de riesgo psicosocial exige diseñar acciones preventivas, orientar apoyos, activar rutas cuando corresponda y hacer seguimiento.",
+      "evidencia_observable": "Selecciona una respuesta institucional que convierte el diagnóstico psicosocial en acciones de prevención, atención, remisión y seguimiento.",
+      "tipo_de_evidencia": "Juicio profesional aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "B"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce la responsabilidad del orientador escolar tras identificar factores de riesgo psicosocial que afectan el entorno de los estudiantes.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con orientación escolar, convivencia, coordinación o gestión institucional.",
-        "blueprint": {
-            "problematica_principal": "Identificación de riesgos psicosociales sin activación de acciones preventivas, seguimiento o articulación institucional.",
-            "fuente_autorizada": [
-                "Plan Nacional de Orientación Escolar",
-                "Manual de funciones del docente orientador",
-                "Ley 1620 de 2013",
-                "Ley 1098 de 2006",
-                "Ruta de Atención Integral para la Convivencia Escolar"
-            ],
-            "componente_modulo": "Diagnóstico Académico y Psicosocial",
-            "competencia": "Gestión de riesgos psicosociales",
-            "afirmacion": "Identificar factores de riesgo psicosocial exige diseñar acciones preventivas, orientar apoyos, activar rutas cuando corresponda y hacer seguimiento.",
-            "evidencia_observable": "Selecciona una respuesta institucional que convierte el diagnóstico psicosocial en acciones de prevención, atención, remisión y seguimiento.",
-            "tipo_de_evidencia": "Juicio profesional aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "B"
-        },
-        "claim": "El evaluado comprende que el orientador escolar no se limita a detectar riesgos, sino que debe formular o asesorar estrategias pedagógicas de prevención, activar rutas si procede, articular apoyos institucionales e intersectoriales y realizar seguimiento dentro de su alcance funcional.",
-        "evidencia_observable": "Selecciona la actuación adecuada después de identificar riesgos psicosociales en estudiantes.",
-        "tarea_cognitiva": "Analizar una situación de riesgo psicosocial y elegir la respuesta institucional más completa y protectora.",
-        "tipo_de_pregunta": "Caso situacional de juicio profesional",
-        "dificultad_esperada": "Media-Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Etiquetamiento de estudiantes",
-                "revision": "El ítem habla de factores de riesgo y apoyos, no de diagnósticos clínicos ni etiquetas."
-            },
-            {
-                "riesgo": "Extralimitación clínica",
-                "revision": "La clave limita la acción a prevención, orientación, rutas, articulación y seguimiento, sin sustituir servicios especializados."
-            },
-            {
-                "riesgo": "Culpabilización de familias",
-                "revision": "El caso no atribuye los riesgos exclusivamente al hogar, sino al entorno amplio de los estudiantes."
-            },
-            {
-                "riesgo": "Ambigüedad entre informar y actuar",
-                "revision": "La opción correcta incluye registro, prevención, articulación, ruta y seguimiento."
-            }
-        ]
+    "claim": "El evaluado comprende que el orientador escolar no se limita a detectar riesgos, sino que debe formular o asesorar estrategias pedagógicas de prevención, activar rutas si procede, articular apoyos institucionales e intersectoriales y realizar seguimiento dentro de su alcance funcional.",
+    "evidencia_observable": "Selecciona la actuación adecuada después de identificar riesgos psicosociales en estudiantes.",
+    "tarea_cognitiva": "Analizar una situación de riesgo psicosocial y elegir la respuesta institucional más completa y protectora.",
+    "tipo_de_pregunta": "Caso situacional de juicio profesional",
+    "dificultad_esperada": "Media-Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Etiquetamiento de estudiantes",
+        "revision": "El ítem habla de factores de riesgo y apoyos, no de diagnósticos clínicos ni etiquetas."
+      },
+      {
+        "riesgo": "Extralimitación clínica",
+        "revision": "La clave limita la acción a prevención, orientación, rutas, articulación y seguimiento, sin sustituir servicios especializados."
+      },
+      {
+        "riesgo": "Culpabilización de familias",
+        "revision": "El caso no atribuye los riesgos exclusivamente al hogar, sino al entorno amplio de los estudiantes."
+      },
+      {
+        "riesgo": "Ambigüedad entre informar y actuar",
+        "revision": "La opción correcta incluye registro, prevención, articulación, ruta y seguimiento."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "El docente orientador identifica factores de riesgo psicosocial que afectan a varios estudiantes, como aislamiento, conflictos familiares reportados, ausentismo frecuente y señales de malestar emocional. La institución pregunta qué debe hacer después de identificar estos factores.\n\n¿Cuál es la responsabilidad más adecuada del orientador escolar?",
+    "opciones": {
+      "A": "Guardar la información sin intervenir, porque identificar riesgos no implica ninguna acción institucional.",
+      "B": "Registrar la situación, diseñar o asesorar estrategias preventivas, orientar apoyos, activar rutas cuando corresponda y realizar seguimiento dentro de su alcance funcional.",
+      "C": "Emitir diagnósticos clínicos definitivos y asumir tratamientos terapéuticos especializados dentro de la institución.",
+      "D": "Hacer pública la lista de estudiantes con riesgos para que toda la comunidad pueda vigilarlos."
     },
-    "item": {
-        "enunciado": "El docente orientador identifica factores de riesgo psicosocial que afectan a varios estudiantes, como aislamiento, conflictos familiares reportados, ausentismo frecuente y señales de malestar emocional. La institución pregunta qué debe hacer después de identificar estos factores.\n\n¿Cuál es la responsabilidad más adecuada del orientador escolar?",
-        "opciones": {
-            "A": "Guardar la información sin intervenir, porque identificar riesgos no implica ninguna acción institucional.",
-            "B": "Registrar la situación, diseñar o asesorar estrategias preventivas, orientar apoyos, activar rutas cuando corresponda y realizar seguimiento dentro de su alcance funcional.",
-            "C": "Emitir diagnósticos clínicos definitivos y asumir tratamientos terapéuticos especializados dentro de la institución.",
-            "D": "Hacer pública la lista de estudiantes con riesgos para que toda la comunidad pueda vigilarlos."
-        },
-        "respuesta_correcta": "B"
+    "respuesta_correcta": "B"
+  },
+  "ficha_tecnica": {
+    "componente": "Diagnóstico Académico y Psicosocial",
+    "competencia": "Gestión de riesgos psicosociales",
+    "claim_evaluado": "El evaluado comprende que el orientador escolar no se limita a detectar riesgos, sino que debe formular o asesorar estrategias pedagógicas de prevención, activar rutas si procede, articular apoyos institucionales e intersectoriales y realizar seguimiento dentro de su alcance funcional.",
+    "evidencia": "Selecciona la actuación adecuada después de identificar riesgos psicosociales en estudiantes.",
+    "proceso_cognitivo": "Análisis y juicio profesional",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media-Alta",
+    "respuesta_correcta": "B",
+    "distractores": {
+      "A": "Omite la responsabilidad de prevención, orientación y activación de apoyos.",
+      "C": "Excede el alcance escolar al asumir diagnósticos o tratamientos clínicos especializados.",
+      "D": "Vulnera confidencialidad y puede estigmatizar a los estudiantes."
     },
-    "ficha_tecnica": {
-        "componente": "Diagnóstico Académico y Psicosocial",
-        "competencia": "Gestión de riesgos psicosociales",
-        "claim_evaluado": "El evaluado comprende que el orientador escolar no se limita a detectar riesgos, sino que debe formular o asesorar estrategias pedagógicas de prevención, activar rutas si procede, articular apoyos institucionales e intersectoriales y realizar seguimiento dentro de su alcance funcional.",
-        "evidencia": "Selecciona la actuación adecuada después de identificar riesgos psicosociales en estudiantes.",
-        "proceso_cognitivo": "Análisis y juicio profesional",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media-Alta",
-        "respuesta_correcta": "B",
-        "distractores": {
-            "A": "Omite la responsabilidad de prevención, orientación y activación de apoyos.",
-            "C": "Excede el alcance escolar al asumir diagnósticos o tratamientos clínicos especializados.",
-            "D": "Vulnera confidencialidad y puede estigmatizar a los estudiantes."
-        },
-        "fuente_autorizada": [
-            "Plan Nacional de Orientación Escolar",
-            "Manual de funciones del docente orientador",
-            "Ley 1620 de 2013",
-            "Ley 1098 de 2006",
-            "Ruta de Atención Integral para la Convivencia Escolar"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque transforma la identificación de riesgos en una respuesta institucional: registro, prevención, orientación, activación de rutas y seguimiento, respetando el alcance funcional del orientador.",
-        "opcion_A": "Es incorrecta porque la detección de riesgos exige acciones de protección y prevención.",
-        "opcion_C": "Es incorrecta porque el orientador escolar no debe reemplazar servicios clínicos especializados.",
-        "opcion_D": "Es incorrecta porque expone información sensible y puede generar estigmatización."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem protege la confidencialidad, evita diagnósticos clínicos no pertinentes y reconoce la responsabilidad institucional de prevención, articulación y seguimiento."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre rol, funciones y límites del orientador escolar."
+    "fuente_autorizada": [
+      "Plan Nacional de Orientación Escolar",
+      "Manual de funciones del docente orientador",
+      "Ley 1620 de 2013",
+      "Ley 1098 de 2006",
+      "Ruta de Atención Integral para la Convivencia Escolar"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "opcion_A": "Es incorrecta porque la detección de riesgos exige acciones de protección y prevención.",
+    "opcion_C": "Es incorrecta porque el orientador escolar no debe reemplazar servicios clínicos especializados.",
+    "opcion_D": "Es incorrecta porque expone información sensible y puede generar estigmatización.",
+    "distractores": {
+      "A": "Es incorrecta porque la detección de riesgos exige acciones de protección y prevención.",
+      "C": "Es incorrecta porque el orientador escolar no debe reemplazar servicios clínicos especializados.",
+      "D": "Es incorrecta porque expone información sensible y puede generar estigmatización."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem protege la confidencialidad, evita diagnósticos clínicos no pertinentes y reconoce la responsabilidad institucional de prevención, articulación y seguimiento."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre rol, funciones y límites del orientador escolar."
+  }
 }

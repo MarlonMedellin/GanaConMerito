@@ -1,101 +1,106 @@
 {
-    "id_item": "CEOL_B06_I03",
-    "archivo_sugerido": "CEOL_B06_I03_accion_mejora_continua_no_repetir_examen.json",
-    "bloque": {
-        "codigo_bloque": "CEOL_B06",
-        "nombre": "Evaluación formativa, mejora continua y lenguaje evaluativo",
-        "estado_en_lista": "Bloque 6 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 3 de 4"
+  "id_item": "CEOL_B06_I03",
+  "archivo_sugerido": "CEOL_B06_I03_accion_mejora_continua_no_repetir_examen.json",
+  "bloque": {
+    "codigo_bloque": "CEOL_B06",
+    "nombre": "Evaluación formativa, mejora continua y lenguaje evaluativo",
+    "estado_en_lista": "Bloque 6 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 3 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce que una acción de mejora debe modificar la mediación, ofrecer apoyos y generar nuevas evidencias de aprendizaje, no repetir el mismo examen fallido.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación académica o gestión pedagógica.",
+    "blueprint": {
+      "problematica_principal": "Uso de acciones de mejora como repetición mecánica de la misma evaluación fallida.",
+      "fuente_autorizada": [
+        "Evaluación formativa",
+        "Plan de mejoramiento académico",
+        "Sistema Institucional de Evaluación de los Estudiantes",
+        "Didáctica general"
+      ],
+      "componente_modulo": "Evaluación Formativa y Mejora Continua",
+      "competencia": "Diseño de acciones de mejora",
+      "afirmacion": "La acción de mejora debe responder a las dificultades identificadas mediante nuevas mediaciones, apoyos, retroalimentación y evidencias.",
+      "evidencia_observable": "Reconoce que repetir el mismo examen no constituye mejora si no se ajustan estrategias ni se retroalimenta.",
+      "tipo_de_evidencia": "Juicio evaluativo y didáctico aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce que una acción de mejora debe modificar la mediación, ofrecer apoyos y generar nuevas evidencias de aprendizaje, no repetir el mismo examen fallido.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación académica o gestión pedagógica.",
-        "blueprint": {
-            "problematica_principal": "Uso de acciones de mejora como repetición mecánica de la misma evaluación fallida.",
-            "fuente_autorizada": [
-                "Evaluación formativa",
-                "Plan de mejoramiento académico",
-                "Sistema Institucional de Evaluación de los Estudiantes",
-                "Didáctica general"
-            ],
-            "componente_modulo": "Evaluación Formativa y Mejora Continua",
-            "competencia": "Diseño de acciones de mejora",
-            "afirmacion": "La acción de mejora debe responder a las dificultades identificadas mediante nuevas mediaciones, apoyos, retroalimentación y evidencias.",
-            "evidencia_observable": "Reconoce que repetir el mismo examen no constituye mejora si no se ajustan estrategias ni se retroalimenta.",
-            "tipo_de_evidencia": "Juicio evaluativo y didáctico aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que una acción de mejora debe partir del análisis de dificultades, ajustar la enseñanza, ofrecer retroalimentación y permitir nuevas formas de demostrar el aprendizaje.",
-        "evidencia_observable": "Selecciona una acción de mejora con características didácticas y formativas.",
-        "tarea_cognitiva": "Analizar una situación de bajo logro grupal y elegir una respuesta coherente con mejora continua.",
-        "tipo_de_pregunta": "Caso situacional de juicio evaluativo",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Culpabilizar a los estudiantes por el bajo logro",
-                "revision": "La clave exige revisar mediación, evidencias y apoyos."
-            },
-            {
-                "riesgo": "Confundir recuperación con repetir examen",
-                "revision": "La opción correcta diferencia nueva oportunidad de repetición mecánica."
-            },
-            {
-                "riesgo": "Reducir mejora a subir notas",
-                "revision": "El ítem centra la mejora en comprensión y evidencia de aprendizaje."
-            },
-            {
-                "riesgo": "Sesgo por área disciplinar",
-                "revision": "La situación aplica a cualquier área."
-            }
-        ]
+    "claim": "El evaluado comprende que una acción de mejora debe partir del análisis de dificultades, ajustar la enseñanza, ofrecer retroalimentación y permitir nuevas formas de demostrar el aprendizaje.",
+    "evidencia_observable": "Selecciona una acción de mejora con características didácticas y formativas.",
+    "tarea_cognitiva": "Analizar una situación de bajo logro grupal y elegir una respuesta coherente con mejora continua.",
+    "tipo_de_pregunta": "Caso situacional de juicio evaluativo",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Culpabilizar a los estudiantes por el bajo logro",
+        "revision": "La clave exige revisar mediación, evidencias y apoyos."
+      },
+      {
+        "riesgo": "Confundir recuperación con repetir examen",
+        "revision": "La opción correcta diferencia nueva oportunidad de repetición mecánica."
+      },
+      {
+        "riesgo": "Reducir mejora a subir notas",
+        "revision": "El ítem centra la mejora en comprensión y evidencia de aprendizaje."
+      },
+      {
+        "riesgo": "Sesgo por área disciplinar",
+        "revision": "La situación aplica a cualquier área."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Después de una evaluación, un alto porcentaje de estudiantes no alcanza el logro esperado. El docente propone como única acción de mejora aplicar nuevamente el mismo examen, sin revisar errores, sin retroalimentar y sin modificar la mediación didáctica.\n\n¿Qué características debe tener una acción de mejora para no repetir el mismo error?",
+    "opciones": {
+      "A": "Partir del análisis de dificultades, ofrecer retroalimentación, ajustar estrategias didácticas, proponer apoyos y recoger nuevas evidencias de aprendizaje.",
+      "B": "Repetir el mismo examen hasta que algunos estudiantes memoricen las respuestas correctas.",
+      "C": "Bajar el nivel de exigencia sin revisar qué no fue comprendido.",
+      "D": "Cambiar la nota final sin solicitar nuevas evidencias de aprendizaje."
     },
-    "item": {
-        "enunciado": "Después de una evaluación, un alto porcentaje de estudiantes no alcanza el logro esperado. El docente propone como única acción de mejora aplicar nuevamente el mismo examen, sin revisar errores, sin retroalimentar y sin modificar la mediación didáctica.\n\n¿Qué características debe tener una acción de mejora para no repetir el mismo error?",
-        "opciones": {
-            "A": "Partir del análisis de dificultades, ofrecer retroalimentación, ajustar estrategias didácticas, proponer apoyos y recoger nuevas evidencias de aprendizaje.",
-            "B": "Repetir el mismo examen hasta que algunos estudiantes memoricen las respuestas correctas.",
-            "C": "Bajar el nivel de exigencia sin revisar qué no fue comprendido.",
-            "D": "Cambiar la nota final sin solicitar nuevas evidencias de aprendizaje."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Evaluación Formativa y Mejora Continua",
+    "competencia": "Diseño de acciones de mejora",
+    "claim_evaluado": "El evaluado comprende que una acción de mejora debe partir del análisis de dificultades, ajustar la enseñanza, ofrecer retroalimentación y permitir nuevas formas de demostrar el aprendizaje.",
+    "evidencia": "Selecciona una acción de mejora con características didácticas y formativas.",
+    "proceso_cognitivo": "Análisis y juicio evaluativo",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Reduce la mejora a memorización de respuestas.",
+      "C": "Confunde apoyo pedagógico con disminución indiscriminada de la exigencia.",
+      "D": "Modifica la nota sin evidencia de progreso."
     },
-    "ficha_tecnica": {
-        "componente": "Evaluación Formativa y Mejora Continua",
-        "competencia": "Diseño de acciones de mejora",
-        "claim_evaluado": "El evaluado comprende que una acción de mejora debe partir del análisis de dificultades, ajustar la enseñanza, ofrecer retroalimentación y permitir nuevas formas de demostrar el aprendizaje.",
-        "evidencia": "Selecciona una acción de mejora con características didácticas y formativas.",
-        "proceso_cognitivo": "Análisis y juicio evaluativo",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Reduce la mejora a memorización de respuestas.",
-            "C": "Confunde apoyo pedagógico con disminución indiscriminada de la exigencia.",
-            "D": "Modifica la nota sin evidencia de progreso."
-        },
-        "fuente_autorizada": [
-            "Evaluación formativa",
-            "Plan de mejoramiento académico",
-            "Sistema Institucional de Evaluación de los Estudiantes",
-            "Didáctica general"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque una acción de mejora debe analizar las dificultades, retroalimentar, ajustar la enseñanza y generar nuevas evidencias de aprendizaje.",
-        "opcion_B": "Es incorrecta porque repetir el mismo examen puede reforzar memorización sin comprensión.",
-        "opcion_C": "Es incorrecta porque bajar la exigencia no soluciona la dificultad de aprendizaje.",
-        "opcion_D": "Es incorrecta porque cambiar la nota sin nueva evidencia no constituye mejora formativa."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita culpar exclusivamente a los estudiantes y orienta la mejora hacia decisiones didácticas, apoyos y nuevas evidencias."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre evaluación formativa, mejora continua y lenguaje evaluativo."
+    "fuente_autorizada": [
+      "Evaluación formativa",
+      "Plan de mejoramiento académico",
+      "Sistema Institucional de Evaluación de los Estudiantes",
+      "Didáctica general"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque repetir el mismo examen puede reforzar memorización sin comprensión.",
+    "opcion_C": "Es incorrecta porque bajar la exigencia no soluciona la dificultad de aprendizaje.",
+    "opcion_D": "Es incorrecta porque cambiar la nota sin nueva evidencia no constituye mejora formativa.",
+    "distractores": {
+      "B": "Es incorrecta porque repetir el mismo examen puede reforzar memorización sin comprensión.",
+      "C": "Es incorrecta porque bajar la exigencia no soluciona la dificultad de aprendizaje.",
+      "D": "Es incorrecta porque cambiar la nota sin nueva evidencia no constituye mejora formativa."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita culpar exclusivamente a los estudiantes y orienta la mejora hacia decisiones didácticas, apoyos y nuevas evidencias."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre evaluación formativa, mejora continua y lenguaje evaluativo."
+  }
 }

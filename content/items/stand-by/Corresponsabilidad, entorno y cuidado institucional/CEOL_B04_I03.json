@@ -1,103 +1,108 @@
 {
-    "id_item": "CEOL_B04_I03",
-    "archivo_sugerido": "CEOL_B04_I03_descanso_pedagogico_vigilancia_cuidado.json",
-    "bloque": {
-        "codigo_bloque": "CEOL_B04",
-        "nombre": "Corresponsabilidad, entorno y cuidado institucional",
-        "estado_en_lista": "Bloque 4 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 3 de 5"
+  "id_item": "CEOL_B04_I03",
+  "archivo_sugerido": "CEOL_B04_I03_descanso_pedagogico_vigilancia_cuidado.json",
+  "bloque": {
+    "codigo_bloque": "CEOL_B04",
+    "nombre": "Corresponsabilidad, entorno y cuidado institucional",
+    "estado_en_lista": "Bloque 4 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 3 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce la responsabilidad institucional de docentes, coordinadores y orientadores durante el descanso pedagógico en términos de cuidado, acompañamiento, prevención y garantía de derechos.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación, orientación escolar o gestión de convivencia.",
+    "blueprint": {
+      "problematica_principal": "Desatención de estudiantes durante el descanso pedagógico y confusión sobre la responsabilidad de cuidado institucional.",
+      "fuente_autorizada": [
+        "Decreto 1850 de 2002",
+        "Decreto 277 de 2025",
+        "Manual de funciones docente",
+        "Manual de convivencia institucional",
+        "Ley 1098 de 2006"
+      ],
+      "componente_modulo": "Ambiente de Aula y Vigilancia",
+      "competencia": "Cuidado institucional y prevención de riesgos",
+      "afirmacion": "Durante el descanso pedagógico, la institución mantiene responsabilidad de cuidado, acompañamiento y prevención de riesgos sobre los estudiantes.",
+      "evidencia_observable": "Reconoce que el descanso no elimina la responsabilidad institucional de acompañamiento y protección.",
+      "tipo_de_evidencia": "Juicio normativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce la responsabilidad institucional de docentes, coordinadores y orientadores durante el descanso pedagógico en términos de cuidado, acompañamiento, prevención y garantía de derechos.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación, orientación escolar o gestión de convivencia.",
-        "blueprint": {
-            "problematica_principal": "Desatención de estudiantes durante el descanso pedagógico y confusión sobre la responsabilidad de cuidado institucional.",
-            "fuente_autorizada": [
-                "Decreto 1850 de 2002",
-                "Decreto 277 de 2025",
-                "Manual de funciones docente",
-                "Manual de convivencia institucional",
-                "Ley 1098 de 2006"
-            ],
-            "componente_modulo": "Ambiente de Aula y Vigilancia",
-            "competencia": "Cuidado institucional y prevención de riesgos",
-            "afirmacion": "Durante el descanso pedagógico, la institución mantiene responsabilidad de cuidado, acompañamiento y prevención de riesgos sobre los estudiantes.",
-            "evidencia_observable": "Reconoce que el descanso no elimina la responsabilidad institucional de acompañamiento y protección.",
-            "tipo_de_evidencia": "Juicio normativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que el descanso pedagógico hace parte de la jornada escolar y exige presencia, acompañamiento y acciones preventivas por parte de los adultos responsables de la institución.",
-        "evidencia_observable": "Selecciona una actuación que garantiza cuidado y vigilancia pedagógica durante el descanso, sin reducirlo a control punitivo.",
-        "tarea_cognitiva": "Analizar una situación de descanso pedagógico y reconocer la responsabilidad institucional ineludible.",
-        "tipo_de_pregunta": "Caso situacional de juicio normativo",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Confundir acompañamiento con vigilancia represiva",
-                "revision": "La clave habla de cuidado, prevención y acompañamiento, no de persecución disciplinaria."
-            },
-            {
-                "riesgo": "Ambigüedad sobre descanso como tiempo libre",
-                "revision": "El ítem aclara que el descanso sigue siendo parte de la jornada escolar."
-            },
-            {
-                "riesgo": "Sobrecarga individual de un solo docente",
-                "revision": "La respuesta se formula como responsabilidad institucional organizada."
-            },
-            {
-                "riesgo": "Minimización de riesgos",
-                "revision": "La clave reconoce la prevención de conflictos, accidentes y vulneraciones."
-            }
-        ]
+    "claim": "El evaluado comprende que el descanso pedagógico hace parte de la jornada escolar y exige presencia, acompañamiento y acciones preventivas por parte de los adultos responsables de la institución.",
+    "evidencia_observable": "Selecciona una actuación que garantiza cuidado y vigilancia pedagógica durante el descanso, sin reducirlo a control punitivo.",
+    "tarea_cognitiva": "Analizar una situación de descanso pedagógico y reconocer la responsabilidad institucional ineludible.",
+    "tipo_de_pregunta": "Caso situacional de juicio normativo",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Confundir acompañamiento con vigilancia represiva",
+        "revision": "La clave habla de cuidado, prevención y acompañamiento, no de persecución disciplinaria."
+      },
+      {
+        "riesgo": "Ambigüedad sobre descanso como tiempo libre",
+        "revision": "El ítem aclara que el descanso sigue siendo parte de la jornada escolar."
+      },
+      {
+        "riesgo": "Sobrecarga individual de un solo docente",
+        "revision": "La respuesta se formula como responsabilidad institucional organizada."
+      },
+      {
+        "riesgo": "Minimización de riesgos",
+        "revision": "La clave reconoce la prevención de conflictos, accidentes y vulneraciones."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Durante el descanso pedagógico, varios docentes consideran que no tienen ninguna responsabilidad sobre los estudiantes porque no se está desarrollando una clase formal. En ese tiempo se presentan conflictos, accidentes menores y situaciones que requieren intervención adulta.\n\n¿Cuál es la responsabilidad institucional durante el descanso pedagógico?",
+    "opciones": {
+      "A": "Garantizar acompañamiento, cuidado, prevención de riesgos e intervención oportuna, porque el descanso hace parte de la jornada escolar.",
+      "B": "Retirarse completamente de los espacios comunes, porque el descanso elimina toda responsabilidad docente.",
+      "C": "Permitir que los estudiantes resuelvan solos cualquier conflicto para fomentar independencia.",
+      "D": "Aplicar sanciones automáticas a todos los estudiantes que permanezcan en zonas comunes."
     },
-    "item": {
-        "enunciado": "Durante el descanso pedagógico, varios docentes consideran que no tienen ninguna responsabilidad sobre los estudiantes porque no se está desarrollando una clase formal. En ese tiempo se presentan conflictos, accidentes menores y situaciones que requieren intervención adulta.\n\n¿Cuál es la responsabilidad institucional durante el descanso pedagógico?",
-        "opciones": {
-            "A": "Garantizar acompañamiento, cuidado, prevención de riesgos e intervención oportuna, porque el descanso hace parte de la jornada escolar.",
-            "B": "Retirarse completamente de los espacios comunes, porque el descanso elimina toda responsabilidad docente.",
-            "C": "Permitir que los estudiantes resuelvan solos cualquier conflicto para fomentar independencia.",
-            "D": "Aplicar sanciones automáticas a todos los estudiantes que permanezcan en zonas comunes."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Ambiente de Aula y Vigilancia",
+    "competencia": "Cuidado institucional y prevención de riesgos",
+    "claim_evaluado": "El evaluado comprende que el descanso pedagógico hace parte de la jornada escolar y exige presencia, acompañamiento y acciones preventivas por parte de los adultos responsables de la institución.",
+    "evidencia": "Selecciona una actuación que garantiza cuidado y vigilancia pedagógica durante el descanso, sin reducirlo a control punitivo.",
+    "proceso_cognitivo": "Análisis y juicio normativo aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Desconoce la continuidad de la responsabilidad institucional durante la jornada.",
+      "C": "Abandona la mediación adulta frente a conflictos o riesgos.",
+      "D": "Convierte el acompañamiento en sanción automática."
     },
-    "ficha_tecnica": {
-        "componente": "Ambiente de Aula y Vigilancia",
-        "competencia": "Cuidado institucional y prevención de riesgos",
-        "claim_evaluado": "El evaluado comprende que el descanso pedagógico hace parte de la jornada escolar y exige presencia, acompañamiento y acciones preventivas por parte de los adultos responsables de la institución.",
-        "evidencia": "Selecciona una actuación que garantiza cuidado y vigilancia pedagógica durante el descanso, sin reducirlo a control punitivo.",
-        "proceso_cognitivo": "Análisis y juicio normativo aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Desconoce la continuidad de la responsabilidad institucional durante la jornada.",
-            "C": "Abandona la mediación adulta frente a conflictos o riesgos.",
-            "D": "Convierte el acompañamiento en sanción automática."
-        },
-        "fuente_autorizada": [
-            "Decreto 1850 de 2002",
-            "Decreto 277 de 2025",
-            "Manual de funciones docente",
-            "Manual de convivencia institucional",
-            "Ley 1098 de 2006"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque el descanso pedagógico forma parte de la jornada escolar y exige cuidado, acompañamiento, prevención de riesgos e intervención oportuna.",
-        "opcion_B": "Es incorrecta porque el descanso no suspende la responsabilidad institucional de protección.",
-        "opcion_C": "Es incorrecta porque la autonomía estudiantil no implica ausencia de mediación adulta ante riesgos.",
-        "opcion_D": "Es incorrecta porque el cuidado institucional no equivale a sanción automática."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evalúa el deber institucional de cuidado sin promover vigilancia punitiva ni responsabilizar a un único actor de manera aislada."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada si se actualizan reglas de permanencia o jornada.",
-        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre corresponsabilidad, entorno y cuidado institucional."
+    "fuente_autorizada": [
+      "Decreto 1850 de 2002",
+      "Decreto 277 de 2025",
+      "Manual de funciones docente",
+      "Manual de convivencia institucional",
+      "Ley 1098 de 2006"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque el descanso no suspende la responsabilidad institucional de protección.",
+    "opcion_C": "Es incorrecta porque la autonomía estudiantil no implica ausencia de mediación adulta ante riesgos.",
+    "opcion_D": "Es incorrecta porque el cuidado institucional no equivale a sanción automática.",
+    "distractores": {
+      "B": "Es incorrecta porque el descanso no suspende la responsabilidad institucional de protección.",
+      "C": "Es incorrecta porque la autonomía estudiantil no implica ausencia de mediación adulta ante riesgos.",
+      "D": "Es incorrecta porque el cuidado institucional no equivale a sanción automática."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evalúa el deber institucional de cuidado sin promover vigilancia punitiva ni responsabilizar a un único actor de manera aislada."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada si se actualizan reglas de permanencia o jornada.",
+    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre corresponsabilidad, entorno y cuidado institucional."
+  }
 }
