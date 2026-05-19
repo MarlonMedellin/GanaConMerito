@@ -1,101 +1,106 @@
 {
-    "id_item": "EFCC_B01_I02",
-    "archivo_sugerido": "EFCC_B01_I02_quiz_sorpresa_evaluacion_punitiva.json",
-    "bloque": {
-        "codigo_bloque": "EFCC_B01",
-        "nombre": "Evaluación tecnicista, punitiva y formativa",
-        "estado_en_lista": "Bloque 1 de 5",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 2 de 4"
+  "id_item": "EFCC_B01_I02",
+  "archivo_sugerido": "EFCC_B01_I02_quiz_sorpresa_evaluacion_punitiva.json",
+  "bloque": {
+    "codigo_bloque": "EFCC_B01",
+    "nombre": "Evaluación tecnicista, punitiva y formativa",
+    "estado_en_lista": "Bloque 1 de 5",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 2 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante identifica la diferencia entre una evaluación orientada al aprendizaje y una práctica punitiva basada en sorpresa, presión, sanción y datos aislados.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
+    "blueprint": {
+      "problematica_principal": "Uso del quiz sorpresa como práctica punitiva y descontextualizada.",
+      "fuente_autorizada": [
+        "Evaluación formativa",
+        "Sistema Institucional de Evaluación de los Estudiantes",
+        "Didáctica general",
+        "Orientaciones pedagógicas institucionales"
+      ],
+      "componente_modulo": "Evaluación Formativa y Criterios",
+      "competencia": "Diseño de evaluación con sentido pedagógico",
+      "afirmacion": "La evaluación debe recoger evidencias de aprendizaje y orientar la mejora, no operar como castigo o mecanismo de control.",
+      "evidencia_observable": "Reconoce que una pregunta sorpresa, aislada y sin retroalimentación puede convertirse en evaluación punitiva.",
+      "tipo_de_evidencia": "Juicio evaluativo sobre práctica de aula",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "B"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante identifica la diferencia entre una evaluación orientada al aprendizaje y una práctica punitiva basada en sorpresa, presión, sanción y datos aislados.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
-        "blueprint": {
-            "problematica_principal": "Uso del quiz sorpresa como práctica punitiva y descontextualizada.",
-            "fuente_autorizada": [
-                "Evaluación formativa",
-                "Sistema Institucional de Evaluación de los Estudiantes",
-                "Didáctica general",
-                "Orientaciones pedagógicas institucionales"
-            ],
-            "componente_modulo": "Evaluación Formativa y Criterios",
-            "competencia": "Diseño de evaluación con sentido pedagógico",
-            "afirmacion": "La evaluación debe recoger evidencias de aprendizaje y orientar la mejora, no operar como castigo o mecanismo de control.",
-            "evidencia_observable": "Reconoce que una pregunta sorpresa, aislada y sin retroalimentación puede convertirse en evaluación punitiva.",
-            "tipo_de_evidencia": "Juicio evaluativo sobre práctica de aula",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "B"
-        },
-        "claim": "El evaluado comprende que una evaluación punitiva se caracteriza por usar la calificación como castigo o presión, sin criterios claros, sin propósito formativo y sin retroalimentación para mejorar el aprendizaje.",
-        "evidencia_observable": "Selecciona una crítica adecuada a un quiz sorpresa usado para sancionar o controlar, más que para comprender el proceso de aprendizaje.",
-        "tarea_cognitiva": "Analizar una práctica evaluativa y reconocer cuándo contradice la evaluación formativa.",
-        "tipo_de_pregunta": "Caso situacional de juicio evaluativo",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Evaluar conocimiento físico externo al propósito",
-                "revision": "El ítem no pregunta por la respuesta científica del color; usa el ejemplo para analizar la práctica evaluativa."
-            },
-            {
-                "riesgo": "Sesgo por ansiedad evaluativa",
-                "revision": "La clave cuestiona el uso de sorpresa y sanción como mecanismo de control."
-            },
-            {
-                "riesgo": "Ambigüedad entre quiz y evaluación punitiva",
-                "revision": "El ítem no condena todo quiz, sino su uso descontextualizado, sorpresivo, sancionador y sin retroalimentación."
-            },
-            {
-                "riesgo": "Lenguaje valorativo",
-                "revision": "La pregunta se formula como análisis pedagógico, no como descalificación absoluta de un instrumento."
-            }
-        ]
+    "claim": "El evaluado comprende que una evaluación punitiva se caracteriza por usar la calificación como castigo o presión, sin criterios claros, sin propósito formativo y sin retroalimentación para mejorar el aprendizaje.",
+    "evidencia_observable": "Selecciona una crítica adecuada a un quiz sorpresa usado para sancionar o controlar, más que para comprender el proceso de aprendizaje.",
+    "tarea_cognitiva": "Analizar una práctica evaluativa y reconocer cuándo contradice la evaluación formativa.",
+    "tipo_de_pregunta": "Caso situacional de juicio evaluativo",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Evaluar conocimiento físico externo al propósito",
+        "revision": "El ítem no pregunta por la respuesta científica del color; usa el ejemplo para analizar la práctica evaluativa."
+      },
+      {
+        "riesgo": "Sesgo por ansiedad evaluativa",
+        "revision": "La clave cuestiona el uso de sorpresa y sanción como mecanismo de control."
+      },
+      {
+        "riesgo": "Ambigüedad entre quiz y evaluación punitiva",
+        "revision": "El ítem no condena todo quiz, sino su uso descontextualizado, sorpresivo, sancionador y sin retroalimentación."
+      },
+      {
+        "riesgo": "Lenguaje valorativo",
+        "revision": "La pregunta se formula como análisis pedagógico, no como descalificación absoluta de un instrumento."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un docente aplica un quiz sorpresa con una única pregunta: “Físicamente hablando, ¿cuál es el color más frío del arcoíris?”. La pregunta no había sido trabajada en clase, no se relaciona con los criterios de evaluación acordados y se usa para bajar la nota a quienes no respondan exactamente. No hay retroalimentación posterior.\n\n¿Cuál crítica pedagógica es más adecuada frente a esta práctica?",
+    "opciones": {
+      "A": "Es una evaluación formativa, porque toda pregunta sorpresa mejora automáticamente el aprendizaje.",
+      "B": "Es una práctica punitiva si se usa para sancionar, sin criterios conocidos, sin relación con el proceso y sin retroalimentación.",
+      "C": "Es adecuada porque la sorpresa siempre garantiza objetividad y elimina la necesidad de planeación.",
+      "D": "Es una coevaluación, porque el estudiante responde individualmente una pregunta del docente."
     },
-    "item": {
-        "enunciado": "Un docente aplica un quiz sorpresa con una única pregunta: “Físicamente hablando, ¿cuál es el color más frío del arcoíris?”. La pregunta no había sido trabajada en clase, no se relaciona con los criterios de evaluación acordados y se usa para bajar la nota a quienes no respondan exactamente. No hay retroalimentación posterior.\n\n¿Cuál crítica pedagógica es más adecuada frente a esta práctica?",
-        "opciones": {
-            "A": "Es una evaluación formativa, porque toda pregunta sorpresa mejora automáticamente el aprendizaje.",
-            "B": "Es una práctica punitiva si se usa para sancionar, sin criterios conocidos, sin relación con el proceso y sin retroalimentación.",
-            "C": "Es adecuada porque la sorpresa siempre garantiza objetividad y elimina la necesidad de planeación.",
-            "D": "Es una coevaluación, porque el estudiante responde individualmente una pregunta del docente."
-        },
-        "respuesta_correcta": "B"
+    "respuesta_correcta": "B"
+  },
+  "ficha_tecnica": {
+    "componente": "Evaluación Formativa y Criterios",
+    "competencia": "Diseño de evaluación con sentido pedagógico",
+    "claim_evaluado": "El evaluado comprende que una evaluación punitiva se caracteriza por usar la calificación como castigo o presión, sin criterios claros, sin propósito formativo y sin retroalimentación para mejorar el aprendizaje.",
+    "evidencia": "Selecciona una crítica adecuada a un quiz sorpresa usado para sancionar o controlar, más que para comprender el proceso de aprendizaje.",
+    "proceso_cognitivo": "Análisis y juicio evaluativo",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "B",
+    "distractores": {
+      "A": "Asume erróneamente que cualquier pregunta sorpresa es formativa.",
+      "C": "Confunde sorpresa con objetividad y desconoce la necesidad de criterios.",
+      "D": "Confunde evaluación individual aplicada por el docente con coevaluación."
     },
-    "ficha_tecnica": {
-        "componente": "Evaluación Formativa y Criterios",
-        "competencia": "Diseño de evaluación con sentido pedagógico",
-        "claim_evaluado": "El evaluado comprende que una evaluación punitiva se caracteriza por usar la calificación como castigo o presión, sin criterios claros, sin propósito formativo y sin retroalimentación para mejorar el aprendizaje.",
-        "evidencia": "Selecciona una crítica adecuada a un quiz sorpresa usado para sancionar o controlar, más que para comprender el proceso de aprendizaje.",
-        "proceso_cognitivo": "Análisis y juicio evaluativo",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "B",
-        "distractores": {
-            "A": "Asume erróneamente que cualquier pregunta sorpresa es formativa.",
-            "C": "Confunde sorpresa con objetividad y desconoce la necesidad de criterios.",
-            "D": "Confunde evaluación individual aplicada por el docente con coevaluación."
-        },
-        "fuente_autorizada": [
-            "Evaluación formativa",
-            "Sistema Institucional de Evaluación de los Estudiantes",
-            "Didáctica general",
-            "Orientaciones pedagógicas institucionales"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque la práctica se vuelve punitiva cuando se aplica sin criterios conocidos, sin conexión con el proceso de aprendizaje, con intención sancionatoria y sin retroalimentación.",
-        "opcion_A": "Es incorrecta porque una evaluación no es formativa por ser sorpresa, sino por producir información útil para mejorar el aprendizaje.",
-        "opcion_C": "Es incorrecta porque la objetividad requiere criterios, evidencias y coherencia con lo enseñado, no solo sorpresa.",
-        "opcion_D": "Es incorrecta porque la coevaluación implica participación evaluativa entre pares, no una pregunta individual impuesta por el docente."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem no exige responder la pregunta de física. Evalúa el juicio pedagógico sobre el uso punitivo de una evaluación sorpresa, reduciendo el riesgo de favorecer a quienes conocen el dato científico."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada. Conviene mantener claro que se evalúa la práctica evaluativa, no el contenido físico de la pregunta.",
-        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre evaluación tecnicista, punitiva y formativa."
+    "fuente_autorizada": [
+      "Evaluación formativa",
+      "Sistema Institucional de Evaluación de los Estudiantes",
+      "Didáctica general",
+      "Orientaciones pedagógicas institucionales"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "opcion_A": "Es incorrecta porque una evaluación no es formativa por ser sorpresa, sino por producir información útil para mejorar el aprendizaje.",
+    "opcion_C": "Es incorrecta porque la objetividad requiere criterios, evidencias y coherencia con lo enseñado, no solo sorpresa.",
+    "opcion_D": "Es incorrecta porque la coevaluación implica participación evaluativa entre pares, no una pregunta individual impuesta por el docente.",
+    "distractores": {
+      "A": "Es incorrecta porque una evaluación no es formativa por ser sorpresa, sino por producir información útil para mejorar el aprendizaje.",
+      "C": "Es incorrecta porque la objetividad requiere criterios, evidencias y coherencia con lo enseñado, no solo sorpresa.",
+      "D": "Es incorrecta porque la coevaluación implica participación evaluativa entre pares, no una pregunta individual impuesta por el docente."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem no exige responder la pregunta de física. Evalúa el juicio pedagógico sobre el uso punitivo de una evaluación sorpresa, reduciendo el riesgo de favorecer a quienes conocen el dato científico."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada. Conviene mantener claro que se evalúa la práctica evaluativa, no el contenido físico de la pregunta.",
+    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre evaluación tecnicista, punitiva y formativa."
+  }
 }

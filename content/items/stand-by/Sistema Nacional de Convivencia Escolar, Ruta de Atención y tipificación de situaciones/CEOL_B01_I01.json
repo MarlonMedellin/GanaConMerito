@@ -1,101 +1,106 @@
 {
-    "id_item": "CEOL_B01_I01",
-    "archivo_sugerido": "CEOL_B01_I01_estructura_ley_1620_sistema_convivencia.json",
-    "bloque": {
-        "codigo_bloque": "CEOL_B01",
-        "nombre": "Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones",
-        "estado_en_lista": "Bloque 1 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 1 de 6"
+  "id_item": "CEOL_B01_I01",
+  "archivo_sugerido": "CEOL_B01_I01_estructura_ley_1620_sistema_convivencia.json",
+  "bloque": {
+    "codigo_bloque": "CEOL_B01",
+    "nombre": "Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones",
+    "estado_en_lista": "Bloque 1 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 1 de 6"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce los aspectos fundamentales que estructura la Ley 1620 de 2013 al crear el Sistema Nacional de Convivencia Escolar.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, orientación escolar, coordinación o gestión institucional en educación básica y media.",
+    "blueprint": {
+      "problematica_principal": "Desconocimiento de la estructura y finalidad del Sistema Nacional de Convivencia Escolar.",
+      "fuente_autorizada": [
+        "Ley 1620 de 2013",
+        "Decreto 1965 de 2013",
+        "Ley 1098 de 2006",
+        "Manual de convivencia institucional"
+      ],
+      "componente_modulo": "Convivencia Escolar y Debido Proceso",
+      "competencia": "Comprensión normativa del sistema de convivencia",
+      "afirmacion": "La Ley 1620 estructura el Sistema Nacional de Convivencia Escolar alrededor de convivencia, derechos humanos, educación para la sexualidad y prevención de la violencia escolar.",
+      "evidencia_observable": "Identifica los cuatro aspectos fundamentales del Sistema Nacional de Convivencia Escolar.",
+      "tipo_de_evidencia": "Reconocimiento normativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "B"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce los aspectos fundamentales que estructura la Ley 1620 de 2013 al crear el Sistema Nacional de Convivencia Escolar.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, orientación escolar, coordinación o gestión institucional en educación básica y media.",
-        "blueprint": {
-            "problematica_principal": "Desconocimiento de la estructura y finalidad del Sistema Nacional de Convivencia Escolar.",
-            "fuente_autorizada": [
-                "Ley 1620 de 2013",
-                "Decreto 1965 de 2013",
-                "Ley 1098 de 2006",
-                "Manual de convivencia institucional"
-            ],
-            "componente_modulo": "Convivencia Escolar y Debido Proceso",
-            "competencia": "Comprensión normativa del sistema de convivencia",
-            "afirmacion": "La Ley 1620 estructura el Sistema Nacional de Convivencia Escolar alrededor de convivencia, derechos humanos, educación para la sexualidad y prevención de la violencia escolar.",
-            "evidencia_observable": "Identifica los cuatro aspectos fundamentales del Sistema Nacional de Convivencia Escolar.",
-            "tipo_de_evidencia": "Reconocimiento normativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "B"
-        },
-        "claim": "El evaluado reconoce que la Ley 1620 no se limita a regular sanciones escolares, sino que crea un sistema orientado a la convivencia, la formación en derechos humanos, la educación para la sexualidad y la prevención y mitigación de la violencia escolar.",
-        "evidencia_observable": "Selecciona el conjunto que corresponde a los aspectos centrales regulados por la Ley 1620.",
-        "tarea_cognitiva": "Reconocer la estructura general del Sistema Nacional de Convivencia Escolar.",
-        "tipo_de_pregunta": "Pregunta conceptual normativa",
-        "dificultad_esperada": "Baja",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Memorización normativa literal",
-                "revision": "El ítem no exige citar artículos, sino reconocer los aspectos centrales de la Ley 1620."
-            },
-            {
-                "riesgo": "Confusión entre convivencia y disciplina",
-                "revision": "La clave diferencia el sistema de convivencia de una visión puramente sancionatoria."
-            },
-            {
-                "riesgo": "Lenguaje jurídico excesivo",
-                "revision": "Las opciones usan formulaciones claras y cercanas al contexto escolar."
-            },
-            {
-                "riesgo": "Ambigüedad en la clave",
-                "revision": "La opción correcta es la única que integra convivencia, derechos humanos, educación para la sexualidad y prevención de violencia escolar."
-            }
-        ]
+    "claim": "El evaluado reconoce que la Ley 1620 no se limita a regular sanciones escolares, sino que crea un sistema orientado a la convivencia, la formación en derechos humanos, la educación para la sexualidad y la prevención y mitigación de la violencia escolar.",
+    "evidencia_observable": "Selecciona el conjunto que corresponde a los aspectos centrales regulados por la Ley 1620.",
+    "tarea_cognitiva": "Reconocer la estructura general del Sistema Nacional de Convivencia Escolar.",
+    "tipo_de_pregunta": "Pregunta conceptual normativa",
+    "dificultad_esperada": "Baja",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Memorización normativa literal",
+        "revision": "El ítem no exige citar artículos, sino reconocer los aspectos centrales de la Ley 1620."
+      },
+      {
+        "riesgo": "Confusión entre convivencia y disciplina",
+        "revision": "La clave diferencia el sistema de convivencia de una visión puramente sancionatoria."
+      },
+      {
+        "riesgo": "Lenguaje jurídico excesivo",
+        "revision": "Las opciones usan formulaciones claras y cercanas al contexto escolar."
+      },
+      {
+        "riesgo": "Ambigüedad en la clave",
+        "revision": "La opción correcta es la única que integra convivencia, derechos humanos, educación para la sexualidad y prevención de violencia escolar."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Durante la actualización del Manual de Convivencia, un equipo docente revisa la Ley 1620 de 2013 para identificar los aspectos que fundamentan el Sistema Nacional de Convivencia Escolar.\n\n¿Cuáles son los cuatro aspectos centrales que establece y regula este sistema?",
+    "opciones": {
+      "A": "Calificación académica, promoción escolar, matrícula y asignación de horarios.",
+      "B": "Convivencia escolar, formación para el ejercicio de los derechos humanos, educación para la sexualidad y prevención y mitigación de la violencia escolar.",
+      "C": "Evaluación docente, ascenso salarial, jornada laboral y asignación académica.",
+      "D": "Infraestructura, inventarios, presupuesto institucional y contratación administrativa."
     },
-    "item": {
-        "enunciado": "Durante la actualización del Manual de Convivencia, un equipo docente revisa la Ley 1620 de 2013 para identificar los aspectos que fundamentan el Sistema Nacional de Convivencia Escolar.\n\n¿Cuáles son los cuatro aspectos centrales que establece y regula este sistema?",
-        "opciones": {
-            "A": "Calificación académica, promoción escolar, matrícula y asignación de horarios.",
-            "B": "Convivencia escolar, formación para el ejercicio de los derechos humanos, educación para la sexualidad y prevención y mitigación de la violencia escolar.",
-            "C": "Evaluación docente, ascenso salarial, jornada laboral y asignación académica.",
-            "D": "Infraestructura, inventarios, presupuesto institucional y contratación administrativa."
-        },
-        "respuesta_correcta": "B"
+    "respuesta_correcta": "B"
+  },
+  "ficha_tecnica": {
+    "componente": "Convivencia Escolar y Debido Proceso",
+    "competencia": "Comprensión normativa del sistema de convivencia",
+    "claim_evaluado": "El evaluado reconoce que la Ley 1620 no se limita a regular sanciones escolares, sino que crea un sistema orientado a la convivencia, la formación en derechos humanos, la educación para la sexualidad y la prevención y mitigación de la violencia escolar.",
+    "evidencia": "Selecciona el conjunto que corresponde a los aspectos centrales regulados por la Ley 1620.",
+    "proceso_cognitivo": "Reconocimiento normativo aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Baja",
+    "respuesta_correcta": "B",
+    "distractores": {
+      "A": "Confunde convivencia escolar con gestión académica y administrativa.",
+      "C": "Incluye asuntos laborales o de carrera docente que no corresponden al objeto central de la Ley 1620.",
+      "D": "Reduce el sistema a asuntos administrativos e infraestructurales."
     },
-    "ficha_tecnica": {
-        "componente": "Convivencia Escolar y Debido Proceso",
-        "competencia": "Comprensión normativa del sistema de convivencia",
-        "claim_evaluado": "El evaluado reconoce que la Ley 1620 no se limita a regular sanciones escolares, sino que crea un sistema orientado a la convivencia, la formación en derechos humanos, la educación para la sexualidad y la prevención y mitigación de la violencia escolar.",
-        "evidencia": "Selecciona el conjunto que corresponde a los aspectos centrales regulados por la Ley 1620.",
-        "proceso_cognitivo": "Reconocimiento normativo aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Baja",
-        "respuesta_correcta": "B",
-        "distractores": {
-            "A": "Confunde convivencia escolar con gestión académica y administrativa.",
-            "C": "Incluye asuntos laborales o de carrera docente que no corresponden al objeto central de la Ley 1620.",
-            "D": "Reduce el sistema a asuntos administrativos e infraestructurales."
-        },
-        "fuente_autorizada": [
-            "Ley 1620 de 2013",
-            "Decreto 1965 de 2013",
-            "Ley 1098 de 2006",
-            "Manual de convivencia institucional"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque recoge los aspectos centrales de la Ley 1620: convivencia escolar, derechos humanos, educación para la sexualidad y prevención y mitigación de la violencia escolar.",
-        "opcion_A": "Es incorrecta porque corresponde a procesos académicos o administrativos distintos del Sistema Nacional de Convivencia Escolar.",
-        "opcion_C": "Es incorrecta porque alude a carrera docente y condiciones laborales, no al objeto de la Ley 1620.",
-        "opcion_D": "Es incorrecta porque se refiere a gestión administrativa, no a convivencia escolar ni protección de derechos."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evalúa reconocimiento normativo general sin exigir experiencia jurídica especializada ni conocimiento de artículos específicos."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 6 preguntas sobre Sistema Nacional de Convivencia Escolar y Ruta de Atención Integral."
+    "fuente_autorizada": [
+      "Ley 1620 de 2013",
+      "Decreto 1965 de 2013",
+      "Ley 1098 de 2006",
+      "Manual de convivencia institucional"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "opcion_A": "Es incorrecta porque corresponde a procesos académicos o administrativos distintos del Sistema Nacional de Convivencia Escolar.",
+    "opcion_C": "Es incorrecta porque alude a carrera docente y condiciones laborales, no al objeto de la Ley 1620.",
+    "opcion_D": "Es incorrecta porque se refiere a gestión administrativa, no a convivencia escolar ni protección de derechos.",
+    "distractores": {
+      "A": "Es incorrecta porque corresponde a procesos académicos o administrativos distintos del Sistema Nacional de Convivencia Escolar.",
+      "C": "Es incorrecta porque alude a carrera docente y condiciones laborales, no al objeto de la Ley 1620.",
+      "D": "Es incorrecta porque se refiere a gestión administrativa, no a convivencia escolar ni protección de derechos."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evalúa reconocimiento normativo general sin exigir experiencia jurídica especializada ni conocimiento de artículos específicos."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 6 preguntas sobre Sistema Nacional de Convivencia Escolar y Ruta de Atención Integral."
+  }
 }

@@ -1,103 +1,108 @@
 {
-    "id_item": "PPDC_B02_I02",
-    "archivo_sugerido": "PPDC_B02_I02_clima_afectivo_error_constructivista.json",
-    "bloque": {
-        "codigo_bloque": "PPDC_B02",
-        "nombre": "Manejo del error y clima afectivo",
-        "estado_en_lista": "Bloque 2 de 7",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 2 de 2"
+  "id_item": "PPDC_B02_I02",
+  "archivo_sugerido": "PPDC_B02_I02_clima_afectivo_error_constructivista.json",
+  "bloque": {
+    "codigo_bloque": "PPDC_B02",
+    "nombre": "Manejo del error y clima afectivo",
+    "estado_en_lista": "Bloque 2 de 7",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 2 de 2"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce que, desde un enfoque constructivista y un clima escolar afectivo, la equivocación del estudiante debe tratarse como oportunidad de aprendizaje y no como motivo de sanción, burla o humillación.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
+    "blueprint": {
+      "problematica_principal": "Uso punitivo o humillante del error en el aula.",
+      "fuente_autorizada": [
+        "Enfoque constructivista",
+        "Pedagogías activas",
+        "Clima escolar afectivo",
+        "Evaluación formativa",
+        "Referentes pedagógicos asociados a Summerhill y educación centrada en el estudiante"
+      ],
+      "componente_modulo": "Práctica Pedagógica, Didáctica y Constructivismo",
+      "competencia": "Clima escolar afectivo y manejo del error",
+      "afirmacion": "El error debe ser usado como oportunidad de reestructuración del conocimiento.",
+      "evidencia_observable": "Selecciona una actuación docente que transforma la equivocación en pregunta, reflexión, retroalimentación y reconstrucción conceptual.",
+      "tipo_de_evidencia": "Juicio pedagógico frente a una situación de error",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "B"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce que, desde un enfoque constructivista y un clima escolar afectivo, la equivocación del estudiante debe tratarse como oportunidad de aprendizaje y no como motivo de sanción, burla o humillación.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
-        "blueprint": {
-            "problematica_principal": "Uso punitivo o humillante del error en el aula.",
-            "fuente_autorizada": [
-                "Enfoque constructivista",
-                "Pedagogías activas",
-                "Clima escolar afectivo",
-                "Evaluación formativa",
-                "Referentes pedagógicos asociados a Summerhill y educación centrada en el estudiante"
-            ],
-            "componente_modulo": "Práctica Pedagógica, Didáctica y Constructivismo",
-            "competencia": "Clima escolar afectivo y manejo del error",
-            "afirmacion": "El error debe ser usado como oportunidad de reestructuración del conocimiento.",
-            "evidencia_observable": "Selecciona una actuación docente que transforma la equivocación en pregunta, reflexión, retroalimentación y reconstrucción conceptual.",
-            "tipo_de_evidencia": "Juicio pedagógico frente a una situación de error",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "B"
-        },
-        "claim": "El evaluado comprende que el error, en una perspectiva constructivista, no debe entenderse como falla moral o motivo de castigo, sino como evidencia del proceso de pensamiento del estudiante y punto de partida para reconstruir conocimiento.",
-        "evidencia_observable": "Elige una intervención docente que protege el clima afectivo, evita la humillación y usa la equivocación para promover reflexión y aprendizaje.",
-        "tarea_cognitiva": "Valorar alternativas de intervención docente frente a una equivocación del estudiante y seleccionar la más coherente con el constructivismo.",
-        "tipo_de_pregunta": "Caso situacional de juicio pedagógico",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Normalización de prácticas humillantes",
-                "revision": "Los distractores representan prácticas inadecuadas, pero la clave refuerza una intervención respetuosa y formativa."
-            },
-            {
-                "riesgo": "Ambigüedad entre corregir y permitir cualquier respuesta",
-                "revision": "La opción correcta no ignora el error; lo trabaja mediante retroalimentación y reconstrucción conceptual."
-            },
-            {
-                "riesgo": "Sesgo por conocimiento de Summerhill",
-                "revision": "No exige conocer detalles históricos de Summerhill; evalúa el principio pedagógico de clima afectivo y respeto al estudiante."
-            },
-            {
-                "riesgo": "Sesgo por estilo docente",
-                "revision": "La pregunta no evalúa personalidad del docente, sino una actuación profesional esperada frente al error."
-            }
-        ]
+    "claim": "El evaluado comprende que el error, en una perspectiva constructivista, no debe entenderse como falla moral o motivo de castigo, sino como evidencia del proceso de pensamiento del estudiante y punto de partida para reconstruir conocimiento.",
+    "evidencia_observable": "Elige una intervención docente que protege el clima afectivo, evita la humillación y usa la equivocación para promover reflexión y aprendizaje.",
+    "tarea_cognitiva": "Valorar alternativas de intervención docente frente a una equivocación del estudiante y seleccionar la más coherente con el constructivismo.",
+    "tipo_de_pregunta": "Caso situacional de juicio pedagógico",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Normalización de prácticas humillantes",
+        "revision": "Los distractores representan prácticas inadecuadas, pero la clave refuerza una intervención respetuosa y formativa."
+      },
+      {
+        "riesgo": "Ambigüedad entre corregir y permitir cualquier respuesta",
+        "revision": "La opción correcta no ignora el error; lo trabaja mediante retroalimentación y reconstrucción conceptual."
+      },
+      {
+        "riesgo": "Sesgo por conocimiento de Summerhill",
+        "revision": "No exige conocer detalles históricos de Summerhill; evalúa el principio pedagógico de clima afectivo y respeto al estudiante."
+      },
+      {
+        "riesgo": "Sesgo por estilo docente",
+        "revision": "La pregunta no evalúa personalidad del docente, sino una actuación profesional esperada frente al error."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Durante una actividad de aula, un estudiante da una respuesta equivocada frente al grupo. Algunos compañeros se ríen y el docente debe decidir cómo intervenir. Desde una perspectiva constructivista y de clima escolar afectivo, la equivocación puede convertirse en una oportunidad directa para reestructurar el conocimiento.\n\n¿Cuál actuación docente es más adecuada?",
+    "opciones": {
+      "A": "Señalar públicamente que la respuesta es absurda para que el estudiante no vuelva a equivocarse.",
+      "B": "Detener la burla, pedir al estudiante que explique su razonamiento, identificar el punto de confusión y orientar preguntas o ejemplos que ayuden a reconstruir la idea.",
+      "C": "Ignorar la respuesta equivocada y pasar de inmediato a otro estudiante para evitar perder tiempo.",
+      "D": "Aplicar una sanción académica al estudiante por no haber respondido correctamente."
     },
-    "item": {
-        "enunciado": "Durante una actividad de aula, un estudiante da una respuesta equivocada frente al grupo. Algunos compañeros se ríen y el docente debe decidir cómo intervenir. Desde una perspectiva constructivista y de clima escolar afectivo, la equivocación puede convertirse en una oportunidad directa para reestructurar el conocimiento.\n\n¿Cuál actuación docente es más adecuada?",
-        "opciones": {
-            "A": "Señalar públicamente que la respuesta es absurda para que el estudiante no vuelva a equivocarse.",
-            "B": "Detener la burla, pedir al estudiante que explique su razonamiento, identificar el punto de confusión y orientar preguntas o ejemplos que ayuden a reconstruir la idea.",
-            "C": "Ignorar la respuesta equivocada y pasar de inmediato a otro estudiante para evitar perder tiempo.",
-            "D": "Aplicar una sanción académica al estudiante por no haber respondido correctamente."
-        },
-        "respuesta_correcta": "B"
+    "respuesta_correcta": "B"
+  },
+  "ficha_tecnica": {
+    "componente": "Práctica Pedagógica, Didáctica y Constructivismo",
+    "competencia": "Clima escolar afectivo y manejo del error",
+    "claim_evaluado": "El evaluado comprende que el error, en una perspectiva constructivista, no debe entenderse como falla moral o motivo de castigo, sino como evidencia del proceso de pensamiento del estudiante y punto de partida para reconstruir conocimiento.",
+    "evidencia": "Elige una intervención docente que protege el clima afectivo, evita la humillación y usa la equivocación para promover reflexión y aprendizaje.",
+    "proceso_cognitivo": "Análisis y juicio pedagógico",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "B",
+    "distractores": {
+      "A": "Humilla al estudiante y convierte el error en motivo de vergüenza.",
+      "C": "Evita trabajar el error y pierde una oportunidad de aprendizaje.",
+      "D": "Sanciona la equivocación y no favorece la reconstrucción del conocimiento."
     },
-    "ficha_tecnica": {
-        "componente": "Práctica Pedagógica, Didáctica y Constructivismo",
-        "competencia": "Clima escolar afectivo y manejo del error",
-        "claim_evaluado": "El evaluado comprende que el error, en una perspectiva constructivista, no debe entenderse como falla moral o motivo de castigo, sino como evidencia del proceso de pensamiento del estudiante y punto de partida para reconstruir conocimiento.",
-        "evidencia": "Elige una intervención docente que protege el clima afectivo, evita la humillación y usa la equivocación para promover reflexión y aprendizaje.",
-        "proceso_cognitivo": "Análisis y juicio pedagógico",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "B",
-        "distractores": {
-            "A": "Humilla al estudiante y convierte el error en motivo de vergüenza.",
-            "C": "Evita trabajar el error y pierde una oportunidad de aprendizaje.",
-            "D": "Sanciona la equivocación y no favorece la reconstrucción del conocimiento."
-        },
-        "fuente_autorizada": [
-            "Enfoque constructivista",
-            "Pedagogías activas",
-            "Clima escolar afectivo",
-            "Evaluación formativa",
-            "Referentes pedagógicos asociados a Summerhill y educación centrada en el estudiante"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque protege el clima afectivo, detiene la burla, explora el razonamiento del estudiante y usa el error como punto de partida para orientar la reconstrucción conceptual.",
-        "opcion_A": "Es incorrecta porque la humillación puede inhibir la participación y deteriorar el clima de aula.",
-        "opcion_C": "Es incorrecta porque evita el error y no permite comprender ni ajustar la idea equivocada.",
-        "opcion_D": "Es incorrecta porque transforma la equivocación en sanción, lo cual contradice el enfoque formativo del error."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem protege la dignidad del estudiante, no normaliza la burla y no exige conocimiento especializado sobre Summerhill. Evalúa una actuación profesional general: convertir el error en oportunidad de aprendizaje dentro de un clima respetuoso."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 2 preguntas sobre manejo del error y clima afectivo."
+    "fuente_autorizada": [
+      "Enfoque constructivista",
+      "Pedagogías activas",
+      "Clima escolar afectivo",
+      "Evaluación formativa",
+      "Referentes pedagógicos asociados a Summerhill y educación centrada en el estudiante"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "opcion_A": "Es incorrecta porque la humillación puede inhibir la participación y deteriorar el clima de aula.",
+    "opcion_C": "Es incorrecta porque evita el error y no permite comprender ni ajustar la idea equivocada.",
+    "opcion_D": "Es incorrecta porque transforma la equivocación en sanción, lo cual contradice el enfoque formativo del error.",
+    "distractores": {
+      "A": "Es incorrecta porque la humillación puede inhibir la participación y deteriorar el clima de aula.",
+      "C": "Es incorrecta porque evita el error y no permite comprender ni ajustar la idea equivocada.",
+      "D": "Es incorrecta porque transforma la equivocación en sanción, lo cual contradice el enfoque formativo del error."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem protege la dignidad del estudiante, no normaliza la burla y no exige conocimiento especializado sobre Summerhill. Evalúa una actuación profesional general: convertir el error en oportunidad de aprendizaje dentro de un clima respetuoso."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 2 preguntas sobre manejo del error y clima afectivo."
+  }
 }

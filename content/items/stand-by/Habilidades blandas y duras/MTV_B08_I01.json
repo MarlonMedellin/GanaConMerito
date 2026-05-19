@@ -1,40 +1,40 @@
 {
-    "id_item": "MTV_B08_I01",
-    "archivo_sugerido": "MTV_B08_I01_definicion_habilidades_blandas.json",
-    "proposito_de_uso": "Evaluar si el aspirante identifica las habilidades blandas como competencias asociadas al trato interpersonal, la inteligencia emocional y el contacto social.",
-    "blueprint": {
-        "componente_modulo": "Habilidades blandas",
-        "competencia": "Reconocimiento conceptual de competencias blandas",
-        "afirmacion": "Las habilidades blandas se potencian mediante la inteligencia emocional, la interacción social, el trato hacia los demás, la empatía, la comunicación y la convivencia.",
-        "evidencia_observable": "Selecciona una definición que diferencia habilidades blandas de títulos académicos o conocimientos técnicos.",
-        "tipo_de_evidencia": "Reconocimiento conceptual",
-        "dificultad_esperada": "Media",
-        "clave": "B"
+  "id_item": "MTV_B08_I01",
+  "archivo_sugerido": "MTV_B08_I01_definicion_habilidades_blandas.json",
+  "proposito_de_uso": "Evaluar si el aspirante identifica las habilidades blandas como competencias asociadas al trato interpersonal, la inteligencia emocional y el contacto social.",
+  "blueprint": {
+    "componente_modulo": "Habilidades blandas",
+    "competencia": "Reconocimiento conceptual de competencias blandas",
+    "afirmacion": "Las habilidades blandas se potencian mediante la inteligencia emocional, la interacción social, el trato hacia los demás, la empatía, la comunicación y la convivencia.",
+    "evidencia_observable": "Selecciona una definición que diferencia habilidades blandas de títulos académicos o conocimientos técnicos.",
+    "tipo_de_evidencia": "Reconocimiento conceptual",
+    "dificultad_esperada": "Media",
+    "clave": "B"
+  },
+  "item": {
+    "enunciado": "En una prueba de competencias comportamentales se pregunta qué tipo de competencias se fortalecen principalmente mediante la inteligencia emocional, el trato hacia los demás, la empatía, la comunicación y el contacto social, sin depender necesariamente de títulos académicos.\n\n¿Cuál es la respuesta correcta?",
+    "opciones": {
+      "A": "Habilidades duras o técnicas.",
+      "B": "Habilidades blandas o socioemocionales.",
+      "C": "Conocimientos disciplinares certificados.",
+      "D": "Títulos profesionales y posgraduales."
     },
-    "item": {
-        "enunciado": "En una prueba de competencias comportamentales se pregunta qué tipo de competencias se fortalecen principalmente mediante la inteligencia emocional, el trato hacia los demás, la empatía, la comunicación y el contacto social, sin depender necesariamente de títulos académicos.\n\n¿Cuál es la respuesta correcta?",
-        "opciones": {
-            "A": "Habilidades duras o técnicas.",
-            "B": "Habilidades blandas o socioemocionales.",
-            "C": "Conocimientos disciplinares certificados.",
-            "D": "Títulos profesionales y posgraduales."
-        },
-        "respuesta_correcta": "B"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque las habilidades blandas se relacionan con inteligencia emocional, interacción social, comunicación y trato interpersonal.",
-        "distractores": {
-            "A": "Las habilidades duras se vinculan más con conocimientos técnicos y disciplinares.",
-            "C": "El conocimiento disciplinar pertenece principalmente al componente cognitivo o técnico.",
-            "D": "Los títulos pueden evidenciar formación, pero no garantizan por sí solos habilidades blandas."
-        }
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado",
-        "argumento": "El ítem evita asociar las habilidades blandas con rasgos innatos y las presenta como competencias desarrollables."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem base para iniciar el bloque."
+    "respuesta_correcta": "B"
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "distractores": {
+      "A": "Las habilidades duras se vinculan más con conocimientos técnicos y disciplinares.",
+      "C": "El conocimiento disciplinar pertenece principalmente al componente cognitivo o técnico.",
+      "D": "Los títulos pueden evidenciar formación, pero no garantizan por sí solos habilidades blandas."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado",
+    "argumento": "El ítem evita asociar las habilidades blandas con rasgos innatos y las presenta como competencias desarrollables."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem base para iniciar el bloque."
+  }
 }

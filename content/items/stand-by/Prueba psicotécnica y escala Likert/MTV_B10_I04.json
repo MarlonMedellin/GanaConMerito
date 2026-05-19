@@ -1,40 +1,40 @@
 {
-    "id_item": "MTV_B10_I04",
-    "archivo_sugerido": "MTV_B10_I04_proposicion_positiva_pero_absoluta.json",
-    "proposito_de_uso": "Evaluar si el aspirante identifica riesgos en proposiciones aparentemente positivas pero formuladas con absolutismos.",
-    "blueprint": {
-        "componente_modulo": "Proposiciones absolutas",
-        "competencia": "Análisis de cuantificadores extremos",
-        "afirmacion": "Palabras como 'siempre', 'nunca', 'todos' o 'ningún' pueden hacer que una proposición sea rígida, irreal o contraria a la reflexión profesional.",
-        "evidencia_observable": "Reconoce que una proposición positiva puede volverse problemática si usa un absoluto injustificado.",
-        "tipo_de_evidencia": "Análisis gramatical y actitudinal",
-        "dificultad_esperada": "Alta",
-        "clave": "A"
+  "id_item": "MTV_B10_I04",
+  "archivo_sugerido": "MTV_B10_I04_proposicion_positiva_pero_absoluta.json",
+  "proposito_de_uso": "Evaluar si el aspirante identifica riesgos en proposiciones aparentemente positivas pero formuladas con absolutismos.",
+  "blueprint": {
+    "componente_modulo": "Proposiciones absolutas",
+    "competencia": "Análisis de cuantificadores extremos",
+    "afirmacion": "Palabras como 'siempre', 'nunca', 'todos' o 'ningún' pueden hacer que una proposición sea rígida, irreal o contraria a la reflexión profesional.",
+    "evidencia_observable": "Reconoce que una proposición positiva puede volverse problemática si usa un absoluto injustificado.",
+    "tipo_de_evidencia": "Análisis gramatical y actitudinal",
+    "dificultad_esperada": "Alta",
+    "clave": "A"
+  },
+  "item": {
+    "enunciado": "En una prueba Likert aparece la proposición: 'Siempre logro que todos mis estudiantes aprendan exactamente al mismo ritmo y sin ninguna dificultad'.\n\n¿Cuál es el principal problema de esta proposición?",
+    "opciones": {
+      "A": "Usa absolutos como 'siempre', 'todos', 'exactamente' y 'ninguna', que hacen la afirmación poco realista frente a la diversidad del aula.",
+      "B": "Es incorrecta porque el docente nunca debe aspirar a que los estudiantes aprendan.",
+      "C": "Es neutra porque no contiene ningún juicio.",
+      "D": "Es adecuada porque desconoce la heterogeneidad del aula."
     },
-    "item": {
-        "enunciado": "En una prueba Likert aparece la proposición: 'Siempre logro que todos mis estudiantes aprendan exactamente al mismo ritmo y sin ninguna dificultad'.\n\n¿Cuál es el principal problema de esta proposición?",
-        "opciones": {
-            "A": "Usa absolutos como 'siempre', 'todos', 'exactamente' y 'ninguna', que hacen la afirmación poco realista frente a la diversidad del aula.",
-            "B": "Es incorrecta porque el docente nunca debe aspirar a que los estudiantes aprendan.",
-            "C": "Es neutra porque no contiene ningún juicio.",
-            "D": "Es adecuada porque desconoce la heterogeneidad del aula."
-        },
-        "respuesta_correcta": "A"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque los absolutos pueden volver la proposición irreal y poco coherente con la diversidad del aprendizaje.",
-        "distractores": {
-            "B": "Confunde aspiración pedagógica con afirmación absoluta.",
-            "C": "La proposición sí contiene una afirmación extrema.",
-            "D": "Desconocer la heterogeneidad no es una práctica adecuada."
-        }
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado",
-        "argumento": "El ítem enseña a detectar absolutos sin negar metas pedagógicas altas."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem útil para detectar trampas de formulación."
+    "respuesta_correcta": "A"
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "distractores": {
+      "B": "Confunde aspiración pedagógica con afirmación absoluta.",
+      "C": "La proposición sí contiene una afirmación extrema.",
+      "D": "Desconocer la heterogeneidad no es una práctica adecuada."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado",
+    "argumento": "El ítem enseña a detectar absolutos sin negar metas pedagógicas altas."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem útil para detectar trampas de formulación."
+  }
 }

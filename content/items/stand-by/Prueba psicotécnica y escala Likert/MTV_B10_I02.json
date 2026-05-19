@@ -1,40 +1,40 @@
 {
-    "id_item": "MTV_B10_I02",
-    "archivo_sugerido": "MTV_B10_I02_proposicion_limitante_a_veces_ajustes_razonables.json",
-    "proposito_de_uso": "Evaluar si el aspirante reconoce el efecto de una expresión limitante en una proposición Likert.",
-    "blueprint": {
-        "componente_modulo": "Estructura de proposiciones Likert",
-        "competencia": "Análisis de palabras limitantes",
-        "afirmacion": "Palabras como 'a veces', 'solo cuando puedo' o 'si me queda tiempo' pueden limitar indebidamente un deber profesional permanente.",
-        "evidencia_observable": "Identifica que una proposición aparentemente positiva puede ser inadecuada si restringe una obligación funcional.",
-        "tipo_de_evidencia": "Análisis semántico-actitudinal",
-        "dificultad_esperada": "Alta",
-        "clave": "C"
+  "id_item": "MTV_B10_I02",
+  "archivo_sugerido": "MTV_B10_I02_proposicion_limitante_a_veces_ajustes_razonables.json",
+  "proposito_de_uso": "Evaluar si el aspirante reconoce el efecto de una expresión limitante en una proposición Likert.",
+  "blueprint": {
+    "componente_modulo": "Estructura de proposiciones Likert",
+    "competencia": "Análisis de palabras limitantes",
+    "afirmacion": "Palabras como 'a veces', 'solo cuando puedo' o 'si me queda tiempo' pueden limitar indebidamente un deber profesional permanente.",
+    "evidencia_observable": "Identifica que una proposición aparentemente positiva puede ser inadecuada si restringe una obligación funcional.",
+    "tipo_de_evidencia": "Análisis semántico-actitudinal",
+    "dificultad_esperada": "Alta",
+    "clave": "C"
+  },
+  "item": {
+    "enunciado": "En una escala Likert aparece la proposición: 'A veces implemento ajustes razonables cuando un estudiante los necesita'.\n\n¿Por qué esta proposición debe analizarse con cuidado?",
+    "opciones": {
+      "A": "Porque toda proposición que mencione ajustes razonables debe aceptarse sin leerla completa.",
+      "B": "Porque los ajustes razonables son opcionales y dependen del estado de ánimo del docente.",
+      "C": "Porque la expresión 'a veces' limita una obligación profesional que debe atenderse cuando el estudiante lo requiere, según el caso y los apoyos necesarios.",
+      "D": "Porque las proposiciones con palabras positivas siempre se responden en acuerdo total."
     },
-    "item": {
-        "enunciado": "En una escala Likert aparece la proposición: 'A veces implemento ajustes razonables cuando un estudiante los necesita'.\n\n¿Por qué esta proposición debe analizarse con cuidado?",
-        "opciones": {
-            "A": "Porque toda proposición que mencione ajustes razonables debe aceptarse sin leerla completa.",
-            "B": "Porque los ajustes razonables son opcionales y dependen del estado de ánimo del docente.",
-            "C": "Porque la expresión 'a veces' limita una obligación profesional que debe atenderse cuando el estudiante lo requiere, según el caso y los apoyos necesarios.",
-            "D": "Porque las proposiciones con palabras positivas siempre se responden en acuerdo total."
-        },
-        "respuesta_correcta": "C"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque la palabra 'a veces' puede restringir una actuación que debe asumirse profesionalmente cuando corresponde.",
-        "distractores": {
-            "A": "Ignora la necesidad de leer toda la proposición.",
-            "B": "Convierte un deber profesional en una decisión emocional.",
-            "D": "Supone una regla automática que puede llevar a error."
-        }
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado",
-        "argumento": "El ítem enseña a leer cuidadosamente sin sugerir una respuesta mecánica para toda prueba."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem clave para proposiciones limitantes."
+    "respuesta_correcta": "C"
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "distractores": {
+      "A": "Ignora la necesidad de leer toda la proposición.",
+      "B": "Convierte un deber profesional en una decisión emocional.",
+      "D": "Supone una regla automática que puede llevar a error."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado",
+    "argumento": "El ítem enseña a leer cuidadosamente sin sugerir una respuesta mecánica para toda prueba."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem clave para proposiciones limitantes."
+  }
 }

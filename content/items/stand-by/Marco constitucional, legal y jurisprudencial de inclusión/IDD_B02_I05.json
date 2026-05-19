@@ -1,99 +1,104 @@
 {
-    "id_item": "IDD_B02_I05",
-    "archivo_sugerido": "IDD_B02_I05_no_discriminacion_matricula_ajustes.json",
-    "bloque": {
-        "codigo_bloque": "IDD_B02",
-        "nombre": "Marco constitucional, legal y jurisprudencial de inclusión",
-        "estado_en_lista": "Bloque 2 de 17",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 5 de 5"
+  "id_item": "IDD_B02_I05",
+  "archivo_sugerido": "IDD_B02_I05_no_discriminacion_matricula_ajustes.json",
+  "bloque": {
+    "codigo_bloque": "IDD_B02",
+    "nombre": "Marco constitucional, legal y jurisprudencial de inclusión",
+    "estado_en_lista": "Bloque 2 de 17",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 5 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce que la discapacidad no puede ser causal de rechazo de matrícula, expulsión o negación de ajustes razonables.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, rectoría, coordinación, orientación escolar, inclusión o admisiones escolares.",
+    "blueprint": {
+      "problematica_principal": "Uso de la discapacidad como razón para negar matrícula, continuidad o ajustes en la institución.",
+      "fuente_autorizada": [
+        "Decreto 1421 de 2017",
+        "Ley 1618 de 2013",
+        "Constitución Política de Colombia",
+        "Ley 1098 de 2006",
+        "Enfoque de no discriminación"
+      ],
+      "componente_modulo": "Inclusión y Atención a la Discapacidad",
+      "competencia": "Garantía de acceso y permanencia sin discriminación",
+      "afirmacion": "Ningún establecimiento educativo debe negar matrícula, continuidad o ajustes razonables por razón de discapacidad.",
+      "evidencia_observable": "Reconoce que la institución debe valorar pedagógicamente, identificar barreras y organizar apoyos en lugar de excluir.",
+      "tipo_de_evidencia": "Juicio normativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce que la discapacidad no puede ser causal de rechazo de matrícula, expulsión o negación de ajustes razonables.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, rectoría, coordinación, orientación escolar, inclusión o admisiones escolares.",
-        "blueprint": {
-            "problematica_principal": "Uso de la discapacidad como razón para negar matrícula, continuidad o ajustes en la institución.",
-            "fuente_autorizada": [
-                "Decreto 1421 de 2017",
-                "Ley 1618 de 2013",
-                "Constitución Política de Colombia",
-                "Ley 1098 de 2006",
-                "Enfoque de no discriminación"
-            ],
-            "componente_modulo": "Inclusión y Atención a la Discapacidad",
-            "competencia": "Garantía de acceso y permanencia sin discriminación",
-            "afirmacion": "Ningún establecimiento educativo debe negar matrícula, continuidad o ajustes razonables por razón de discapacidad.",
-            "evidencia_observable": "Reconoce que la institución debe valorar pedagógicamente, identificar barreras y organizar apoyos en lugar de excluir.",
-            "tipo_de_evidencia": "Juicio normativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que la inclusión educativa exige acceso, permanencia, participación y ajustes razonables, y que negar el servicio por discapacidad constituye una práctica discriminatoria.",
-        "evidencia_observable": "Selecciona la actuación institucional adecuada frente a la solicitud de ingreso o continuidad de un estudiante con discapacidad.",
-        "tarea_cognitiva": "Analizar una situación de admisión o permanencia y elegir la respuesta compatible con no discriminación.",
-        "tipo_de_pregunta": "Caso situacional normativo",
-        "dificultad_esperada": "Media-Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Presentar la discapacidad como carga institucional",
-                "revision": "La clave se centra en barreras, apoyos y derechos."
-            },
-            {
-                "riesgo": "Confundir ajuste razonable con privilegio",
-                "revision": "El ítem lo presenta como medida para garantizar igualdad real."
-            },
-            {
-                "riesgo": "Ignorar límites de planeación institucional",
-                "revision": "La respuesta correcta exige valoración y organización de apoyos, no improvisación."
-            }
-        ]
+    "claim": "El evaluado comprende que la inclusión educativa exige acceso, permanencia, participación y ajustes razonables, y que negar el servicio por discapacidad constituye una práctica discriminatoria.",
+    "evidencia_observable": "Selecciona la actuación institucional adecuada frente a la solicitud de ingreso o continuidad de un estudiante con discapacidad.",
+    "tarea_cognitiva": "Analizar una situación de admisión o permanencia y elegir la respuesta compatible con no discriminación.",
+    "tipo_de_pregunta": "Caso situacional normativo",
+    "dificultad_esperada": "Media-Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Presentar la discapacidad como carga institucional",
+        "revision": "La clave se centra en barreras, apoyos y derechos."
+      },
+      {
+        "riesgo": "Confundir ajuste razonable con privilegio",
+        "revision": "El ítem lo presenta como medida para garantizar igualdad real."
+      },
+      {
+        "riesgo": "Ignorar límites de planeación institucional",
+        "revision": "La respuesta correcta exige valoración y organización de apoyos, no improvisación."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Una familia solicita cupo para un estudiante con discapacidad. La institución considera negar la matrícula argumentando que no está preparada para atenderlo y que sería mejor que busque otro lugar.\n\n¿Cuál actuación es coherente con el marco de educación inclusiva y no discriminación?",
+    "opciones": {
+      "A": "No negar el cupo por razón de discapacidad; realizar valoración pedagógica, identificar barreras, organizar apoyos y ajustes razonables, y articularlos al proceso institucional.",
+      "B": "Negar la matrícula porque la discapacidad siempre impide aprender en un aula regular.",
+      "C": "Aceptar al estudiante solo si la familia renuncia por escrito a cualquier ajuste razonable.",
+      "D": "Matricularlo, pero mantenerlo separado del grupo sin participación en las actividades comunes."
     },
-    "item": {
-        "enunciado": "Una familia solicita cupo para un estudiante con discapacidad. La institución considera negar la matrícula argumentando que no está preparada para atenderlo y que sería mejor que busque otro lugar.\n\n¿Cuál actuación es coherente con el marco de educación inclusiva y no discriminación?",
-        "opciones": {
-            "A": "No negar el cupo por razón de discapacidad; realizar valoración pedagógica, identificar barreras, organizar apoyos y ajustes razonables, y articularlos al proceso institucional.",
-            "B": "Negar la matrícula porque la discapacidad siempre impide aprender en un aula regular.",
-            "C": "Aceptar al estudiante solo si la familia renuncia por escrito a cualquier ajuste razonable.",
-            "D": "Matricularlo, pero mantenerlo separado del grupo sin participación en las actividades comunes."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Inclusión y Atención a la Discapacidad",
+    "competencia": "Garantía de acceso y permanencia sin discriminación",
+    "claim_evaluado": "El evaluado comprende que la inclusión educativa exige acceso, permanencia, participación y ajustes razonables, y que negar el servicio por discapacidad constituye una práctica discriminatoria.",
+    "evidencia": "Selecciona la actuación institucional adecuada frente a la solicitud de ingreso o continuidad de un estudiante con discapacidad.",
+    "proceso_cognitivo": "Análisis normativo aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media-Alta",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Presenta una exclusión directa por discapacidad.",
+      "C": "Condiciona indebidamente el derecho a renunciar a apoyos.",
+      "D": "Permite matrícula, pero mantiene segregación pedagógica."
     },
-    "ficha_tecnica": {
-        "componente": "Inclusión y Atención a la Discapacidad",
-        "competencia": "Garantía de acceso y permanencia sin discriminación",
-        "claim_evaluado": "El evaluado comprende que la inclusión educativa exige acceso, permanencia, participación y ajustes razonables, y que negar el servicio por discapacidad constituye una práctica discriminatoria.",
-        "evidencia": "Selecciona la actuación institucional adecuada frente a la solicitud de ingreso o continuidad de un estudiante con discapacidad.",
-        "proceso_cognitivo": "Análisis normativo aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media-Alta",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Presenta una exclusión directa por discapacidad.",
-            "C": "Condiciona indebidamente el derecho a renunciar a apoyos.",
-            "D": "Permite matrícula, pero mantiene segregación pedagógica."
-        },
-        "fuente_autorizada": [
-            "Decreto 1421 de 2017",
-            "Ley 1618 de 2013",
-            "Constitución Política de Colombia",
-            "Ley 1098 de 2006",
-            "Enfoque de no discriminación"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque garantiza acceso sin discriminación y exige valoración, identificación de barreras, apoyos y ajustes razonables.",
-        "opcion_B": "Es incorrecta porque niega el derecho a la educación por discapacidad.",
-        "opcion_C": "Es incorrecta porque condiciona el derecho a renunciar a medidas necesarias.",
-        "opcion_D": "Es incorrecta porque confunde matrícula con inclusión efectiva."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita prácticas segregadoras y sostiene que la discapacidad no debe usarse como causa de exclusión escolar."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre marco constitucional, legal y jurisprudencial de inclusión."
+    "fuente_autorizada": [
+      "Decreto 1421 de 2017",
+      "Ley 1618 de 2013",
+      "Constitución Política de Colombia",
+      "Ley 1098 de 2006",
+      "Enfoque de no discriminación"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque niega el derecho a la educación por discapacidad.",
+    "opcion_C": "Es incorrecta porque condiciona el derecho a renunciar a medidas necesarias.",
+    "opcion_D": "Es incorrecta porque confunde matrícula con inclusión efectiva.",
+    "distractores": {
+      "B": "Es incorrecta porque niega el derecho a la educación por discapacidad.",
+      "C": "Es incorrecta porque condiciona el derecho a renunciar a medidas necesarias.",
+      "D": "Es incorrecta porque confunde matrícula con inclusión efectiva."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita prácticas segregadoras y sostiene que la discapacidad no debe usarse como causa de exclusión escolar."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre marco constitucional, legal y jurisprudencial de inclusión."
+  }
 }

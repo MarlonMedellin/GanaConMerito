@@ -1,99 +1,104 @@
 {
-    "id_item": "IDD_B09_I02",
-    "archivo_sugerido": "IDD_B09_I02_gardner_matematicas_no_solo_tablero.json",
-    "bloque": {
-        "codigo_bloque": "IDD_B09",
-        "nombre": "Inteligencia, inteligencias múltiples y didáctica heterogénea",
-        "estado_en_lista": "Bloque 9 de 17",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 2 de 4"
+  "id_item": "IDD_B09_I02",
+  "archivo_sugerido": "IDD_B09_I02_gardner_matematicas_no_solo_tablero.json",
+  "bloque": {
+    "codigo_bloque": "IDD_B09",
+    "nombre": "Inteligencia, inteligencias múltiples y didáctica heterogénea",
+    "estado_en_lista": "Bloque 9 de 17",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 2 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce que una enseñanza centrada en una sola vía, como ejercicios abstractos en tablero, desconoce la diversidad de formas de aprender en un aula heterogénea.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, primaria, matemáticas, didáctica o inclusión educativa.",
+    "blueprint": {
+      "problematica_principal": "Uso de una única estrategia abstracta para enseñar matemáticas a un grupo heterogéneo.",
+      "fuente_autorizada": [
+        "Howard Gardner",
+        "Teoría de las inteligencias múltiples",
+        "DUA",
+        "Didáctica de las matemáticas",
+        "Educación inclusiva"
+      ],
+      "componente_modulo": "Inteligencias Múltiples",
+      "competencia": "Diversificación didáctica en aula heterogénea",
+      "afirmacion": "Una didáctica inclusiva debe ofrecer diversas formas de representar, explorar y expresar el aprendizaje matemático.",
+      "evidencia_observable": "Reconoce que resolver únicamente ejercicios abstractos en tablero limita la participación de estudiantes con otras fortalezas cognitivas.",
+      "tipo_de_evidencia": "Juicio didáctico aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce que una enseñanza centrada en una sola vía, como ejercicios abstractos en tablero, desconoce la diversidad de formas de aprender en un aula heterogénea.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, primaria, matemáticas, didáctica o inclusión educativa.",
-        "blueprint": {
-            "problematica_principal": "Uso de una única estrategia abstracta para enseñar matemáticas a un grupo heterogéneo.",
-            "fuente_autorizada": [
-                "Howard Gardner",
-                "Teoría de las inteligencias múltiples",
-                "DUA",
-                "Didáctica de las matemáticas",
-                "Educación inclusiva"
-            ],
-            "componente_modulo": "Inteligencias Múltiples",
-            "competencia": "Diversificación didáctica en aula heterogénea",
-            "afirmacion": "Una didáctica inclusiva debe ofrecer diversas formas de representar, explorar y expresar el aprendizaje matemático.",
-            "evidencia_observable": "Reconoce que resolver únicamente ejercicios abstractos en tablero limita la participación de estudiantes con otras fortalezas cognitivas.",
-            "tipo_de_evidencia": "Juicio didáctico aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que las inteligencias múltiples invitan a diversificar las experiencias de aprendizaje, especialmente en aulas heterogéneas.",
-        "evidencia_observable": "Selecciona una explicación que relaciona diversidad cognitiva con variedad de estrategias didácticas.",
-        "tarea_cognitiva": "Analizar una práctica didáctica homogénea y determinar por qué limita el aprendizaje.",
-        "tipo_de_pregunta": "Caso situacional de juicio didáctico",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Interpretar inteligencias múltiples como estilos fijos o etiquetas",
-                "revision": "La clave habla de diversificar oportunidades, no de clasificar rígidamente estudiantes."
-            },
-            {
-                "riesgo": "Desvalorizar el pensamiento abstracto",
-                "revision": "El ítem no rechaza la abstracción; cuestiona que sea la única vía."
-            },
-            {
-                "riesgo": "Confundir inclusión con ausencia de rigor",
-                "revision": "La opción correcta mantiene aprendizaje matemático con rutas variadas."
-            }
-        ]
+    "claim": "El evaluado comprende que las inteligencias múltiples invitan a diversificar las experiencias de aprendizaje, especialmente en aulas heterogéneas.",
+    "evidencia_observable": "Selecciona una explicación que relaciona diversidad cognitiva con variedad de estrategias didácticas.",
+    "tarea_cognitiva": "Analizar una práctica didáctica homogénea y determinar por qué limita el aprendizaje.",
+    "tipo_de_pregunta": "Caso situacional de juicio didáctico",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Interpretar inteligencias múltiples como estilos fijos o etiquetas",
+        "revision": "La clave habla de diversificar oportunidades, no de clasificar rígidamente estudiantes."
+      },
+      {
+        "riesgo": "Desvalorizar el pensamiento abstracto",
+        "revision": "El ítem no rechaza la abstracción; cuestiona que sea la única vía."
+      },
+      {
+        "riesgo": "Confundir inclusión con ausencia de rigor",
+        "revision": "La opción correcta mantiene aprendizaje matemático con rutas variadas."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "En una clase de primaria heterogénea, el docente enseña matemáticas únicamente resolviendo ejercicios abstractos en el tablero. No usa material concreto, juegos, problemas del contexto, trabajo colaborativo ni representaciones visuales.\n\n¿Por qué esta práctica desconoce la teoría de las inteligencias múltiples?",
+    "opciones": {
+      "A": "Porque limita las formas de acceso al aprendizaje y desconoce que los estudiantes pueden comprender mediante recursos visuales, corporales, lógico-matemáticos, lingüísticos, colaborativos o concretos.",
+      "B": "Porque las matemáticas no deben enseñarse en la escuela primaria.",
+      "C": "Porque todos los estudiantes aprenden mejor únicamente memorizando procedimientos.",
+      "D": "Porque las inteligencias múltiples obligan a eliminar cualquier ejercicio abstracto."
     },
-    "item": {
-        "enunciado": "En una clase de primaria heterogénea, el docente enseña matemáticas únicamente resolviendo ejercicios abstractos en el tablero. No usa material concreto, juegos, problemas del contexto, trabajo colaborativo ni representaciones visuales.\n\n¿Por qué esta práctica desconoce la teoría de las inteligencias múltiples?",
-        "opciones": {
-            "A": "Porque limita las formas de acceso al aprendizaje y desconoce que los estudiantes pueden comprender mediante recursos visuales, corporales, lógico-matemáticos, lingüísticos, colaborativos o concretos.",
-            "B": "Porque las matemáticas no deben enseñarse en la escuela primaria.",
-            "C": "Porque todos los estudiantes aprenden mejor únicamente memorizando procedimientos.",
-            "D": "Porque las inteligencias múltiples obligan a eliminar cualquier ejercicio abstracto."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Inteligencias Múltiples",
+    "competencia": "Diversificación didáctica en aula heterogénea",
+    "claim_evaluado": "El evaluado comprende que las inteligencias múltiples invitan a diversificar las experiencias de aprendizaje, especialmente en aulas heterogéneas.",
+    "evidencia": "Selecciona una explicación que relaciona diversidad cognitiva con variedad de estrategias didácticas.",
+    "proceso_cognitivo": "Análisis y juicio didáctico",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Niega injustificadamente la enseñanza matemática.",
+      "C": "Reproduce una visión homogénea del aprendizaje.",
+      "D": "Caricaturiza la teoría al eliminar la abstracción."
     },
-    "ficha_tecnica": {
-        "componente": "Inteligencias Múltiples",
-        "competencia": "Diversificación didáctica en aula heterogénea",
-        "claim_evaluado": "El evaluado comprende que las inteligencias múltiples invitan a diversificar las experiencias de aprendizaje, especialmente en aulas heterogéneas.",
-        "evidencia": "Selecciona una explicación que relaciona diversidad cognitiva con variedad de estrategias didácticas.",
-        "proceso_cognitivo": "Análisis y juicio didáctico",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Niega injustificadamente la enseñanza matemática.",
-            "C": "Reproduce una visión homogénea del aprendizaje.",
-            "D": "Caricaturiza la teoría al eliminar la abstracción."
-        },
-        "fuente_autorizada": [
-            "Howard Gardner",
-            "Teoría de las inteligencias múltiples",
-            "DUA",
-            "Didáctica de las matemáticas",
-            "Educación inclusiva"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque reconoce que una sola vía de enseñanza puede excluir formas diversas de comprensión.",
-        "opcion_B": "Es incorrecta porque el problema no es enseñar matemáticas, sino cómo se enseñan.",
-        "opcion_C": "Es incorrecta porque asume una única forma de aprender.",
-        "opcion_D": "Es incorrecta porque diversificar no significa eliminar la abstracción."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita etiquetar estudiantes por inteligencia y promueve variedad didáctica sin bajar rigor."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre inteligencia, inteligencias múltiples y didáctica heterogénea."
+    "fuente_autorizada": [
+      "Howard Gardner",
+      "Teoría de las inteligencias múltiples",
+      "DUA",
+      "Didáctica de las matemáticas",
+      "Educación inclusiva"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque el problema no es enseñar matemáticas, sino cómo se enseñan.",
+    "opcion_C": "Es incorrecta porque asume una única forma de aprender.",
+    "opcion_D": "Es incorrecta porque diversificar no significa eliminar la abstracción.",
+    "distractores": {
+      "B": "Es incorrecta porque el problema no es enseñar matemáticas, sino cómo se enseñan.",
+      "C": "Es incorrecta porque asume una única forma de aprender.",
+      "D": "Es incorrecta porque diversificar no significa eliminar la abstracción."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita etiquetar estudiantes por inteligencia y promueve variedad didáctica sin bajar rigor."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre inteligencia, inteligencias múltiples y didáctica heterogénea."
+  }
 }

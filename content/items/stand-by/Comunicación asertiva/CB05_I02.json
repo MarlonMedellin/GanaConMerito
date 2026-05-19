@@ -1,98 +1,103 @@
 {
-    "id_item": "CB05_I02",
-    "bloque": {
-        "numero": 5,
-        "nombre": "Comunicación asertiva",
-        "estado_en_lista": "Bloque 5 de 15",
-        "decision_del_bloque": "Grupo de 3 preguntas",
-        "item_en_grupo": "Ítem 2 de 3"
+  "id_item": "CB05_I02",
+  "bloque": {
+    "numero": 5,
+    "nombre": "Comunicación asertiva",
+    "estado_en_lista": "Bloque 5 de 15",
+    "decision_del_bloque": "Grupo de 3 preguntas",
+    "item_en_grupo": "Ítem 2 de 3"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante selecciona una respuesta comunicativa asertiva ante una inconformidad de una familia, manteniendo escucha, respeto, verificación de hechos y orientación institucional.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
+    "blueprint": {
+      "problematica_principal": "Manejo de conflictos escolares",
+      "fuente_autorizada": [
+        "Orientaciones de convivencia escolar",
+        "Competencias socioemocionales",
+        "Manual de convivencia institucional"
+      ],
+      "componente_modulo": "Socioemocional",
+      "competencia": "Comunicación asertiva",
+      "afirmacion": "La comunicación efectiva tiene pasos secuenciales.",
+      "evidencia_observable": "Reconoce el uso de mensajes claros, respetuosos y orientados a acuerdos ante una situación de tensión.",
+      "tipo_de_evidencia": "Interpretación de situación institucional",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "C"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante selecciona una respuesta comunicativa asertiva ante una inconformidad de una familia, manteniendo escucha, respeto, verificación de hechos y orientación institucional.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-        "blueprint": {
-            "problematica_principal": "Manejo de conflictos escolares",
-            "fuente_autorizada": [
-                "Orientaciones de convivencia escolar",
-                "Competencias socioemocionales",
-                "Manual de convivencia institucional"
-            ],
-            "componente_modulo": "Socioemocional",
-            "competencia": "Comunicación asertiva",
-            "afirmacion": "La comunicación efectiva tiene pasos secuenciales.",
-            "evidencia_observable": "Reconoce el uso de mensajes claros, respetuosos y orientados a acuerdos ante una situación de tensión.",
-            "tipo_de_evidencia": "Interpretación de situación institucional",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "C"
-        },
-        "claim": "El evaluado distingue una respuesta asertiva de respuestas defensivas, evasivas o autoritarias ante una inconformidad expresada por una familia.",
-        "evidencia_observable": "Selecciona una actuación que escucha la inconformidad, reconoce la importancia del asunto y propone revisar los hechos antes de tomar decisiones.",
-        "tarea_cognitiva": "Analizar alternativas de comunicación institucional ante una inconformidad.",
-        "tipo_de_pregunta": "Caso situacional de juicio profesional",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Sesgo hacia familias que expresan inconformidad",
-                "revision": "El ítem evita presentar a la familia como problema y centra la evaluación en la respuesta profesional de la institución."
-            },
-            {
-                "riesgo": "Normalización de respuestas autoritarias",
-                "revision": "Los distractores permiten diferenciar entre autoridad institucional, agresividad, evasión y escucha responsable."
-            },
-            {
-                "riesgo": "Ambigüedad en la clave",
-                "revision": "La opción correcta es la única que combina escucha, reconocimiento del asunto y verificación de hechos."
-            },
-            {
-                "riesgo": "Carga emocional del caso",
-                "revision": "La situación es realista, pero no incluye detalles sensibles ni innecesarios."
-            }
-        ]
+    "claim": "El evaluado distingue una respuesta asertiva de respuestas defensivas, evasivas o autoritarias ante una inconformidad expresada por una familia.",
+    "evidencia_observable": "Selecciona una actuación que escucha la inconformidad, reconoce la importancia del asunto y propone revisar los hechos antes de tomar decisiones.",
+    "tarea_cognitiva": "Analizar alternativas de comunicación institucional ante una inconformidad.",
+    "tipo_de_pregunta": "Caso situacional de juicio profesional",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Sesgo hacia familias que expresan inconformidad",
+        "revision": "El ítem evita presentar a la familia como problema y centra la evaluación en la respuesta profesional de la institución."
+      },
+      {
+        "riesgo": "Normalización de respuestas autoritarias",
+        "revision": "Los distractores permiten diferenciar entre autoridad institucional, agresividad, evasión y escucha responsable."
+      },
+      {
+        "riesgo": "Ambigüedad en la clave",
+        "revision": "La opción correcta es la única que combina escucha, reconocimiento del asunto y verificación de hechos."
+      },
+      {
+        "riesgo": "Carga emocional del caso",
+        "revision": "La situación es realista, pero no incluye detalles sensibles ni innecesarios."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Una madre de familia llega molesta a la institución porque considera que su hijo fue tratado injustamente en clase. Eleva el tono de voz y exige una solución inmediata.\n\n¿Cuál respuesta inicial del docente o directivo es más asertiva?",
+    "opciones": {
+      "A": "Indicarle que no será atendida mientras esté molesta y cerrar la conversación.",
+      "B": "Responder en el mismo tono para dejar claro que la institución también merece respeto.",
+      "C": "Escuchar su inconformidad, reconocer la importancia del asunto y proponer revisar los hechos con las personas involucradas.",
+      "D": "Aceptar de inmediato todo lo que solicita para evitar que la situación se agrave."
     },
-    "item": {
-        "enunciado": "Una madre de familia llega molesta a la institución porque considera que su hijo fue tratado injustamente en clase. Eleva el tono de voz y exige una solución inmediata.\n\n¿Cuál respuesta inicial del docente o directivo es más asertiva?",
-        "opciones": {
-            "A": "Indicarle que no será atendida mientras esté molesta y cerrar la conversación.",
-            "B": "Responder en el mismo tono para dejar claro que la institución también merece respeto.",
-            "C": "Escuchar su inconformidad, reconocer la importancia del asunto y proponer revisar los hechos con las personas involucradas.",
-            "D": "Aceptar de inmediato todo lo que solicita para evitar que la situación se agrave."
-        },
-        "respuesta_correcta": "C"
+    "respuesta_correcta": "C"
+  },
+  "ficha_tecnica": {
+    "componente": "Socioemocional",
+    "competencia": "Comunicación asertiva",
+    "claim_evaluado": "El evaluado distingue una respuesta asertiva de respuestas defensivas, evasivas o autoritarias ante una inconformidad expresada por una familia.",
+    "evidencia": "Selecciona una actuación que escucha la inconformidad, reconoce la importancia del asunto y propone revisar los hechos antes de tomar decisiones.",
+    "proceso_cognitivo": "Análisis y juicio profesional",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "C",
+    "distractores": {
+      "A": "Corta la comunicación y puede aumentar la tensión.",
+      "B": "Escala el conflicto y pierde el enfoque institucional.",
+      "D": "Confunde empatía con aceptación automática sin verificación."
     },
-    "ficha_tecnica": {
-        "componente": "Socioemocional",
-        "competencia": "Comunicación asertiva",
-        "claim_evaluado": "El evaluado distingue una respuesta asertiva de respuestas defensivas, evasivas o autoritarias ante una inconformidad expresada por una familia.",
-        "evidencia": "Selecciona una actuación que escucha la inconformidad, reconoce la importancia del asunto y propone revisar los hechos antes de tomar decisiones.",
-        "proceso_cognitivo": "Análisis y juicio profesional",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "C",
-        "distractores": {
-            "A": "Corta la comunicación y puede aumentar la tensión.",
-            "B": "Escala el conflicto y pierde el enfoque institucional.",
-            "D": "Confunde empatía con aceptación automática sin verificación."
-        },
-        "fuente_autorizada": [
-            "Orientaciones de convivencia escolar",
-            "Competencias socioemocionales",
-            "Manual de convivencia institucional"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque combina escucha activa, reconocimiento de la importancia de la inconformidad y verificación responsable de los hechos con las personas involucradas.",
-        "opcion_A": "Es incorrecta porque cierra el canal de comunicación y puede intensificar la tensión con la familia.",
-        "opcion_B": "Es incorrecta porque responder en el mismo tono reproduce la confrontación y debilita el rol profesional.",
-        "opcion_D": "Es incorrecta porque aceptar de inmediato todo lo solicitado evita el conflicto momentáneamente, pero omite la revisión justa de los hechos."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El caso no sanciona la inconformidad de la familia ni presupone que la madre tenga o no razón. La evaluación se centra en la actuación profesional inicial: escuchar, contener, reconocer el asunto y verificar los hechos antes de decidir."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 3 preguntas sobre comunicación asertiva y manejo de conflictos escolares."
+    "fuente_autorizada": [
+      "Orientaciones de convivencia escolar",
+      "Competencias socioemocionales",
+      "Manual de convivencia institucional"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "opcion_A": "Es incorrecta porque cierra el canal de comunicación y puede intensificar la tensión con la familia.",
+    "opcion_B": "Es incorrecta porque responder en el mismo tono reproduce la confrontación y debilita el rol profesional.",
+    "opcion_D": "Es incorrecta porque aceptar de inmediato todo lo solicitado evita el conflicto momentáneamente, pero omite la revisión justa de los hechos.",
+    "distractores": {
+      "A": "Es incorrecta porque cierra el canal de comunicación y puede intensificar la tensión con la familia.",
+      "B": "Es incorrecta porque responder en el mismo tono reproduce la confrontación y debilita el rol profesional.",
+      "D": "Es incorrecta porque aceptar de inmediato todo lo solicitado evita el conflicto momentáneamente, pero omite la revisión justa de los hechos."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El caso no sanciona la inconformidad de la familia ni presupone que la madre tenga o no razón. La evaluación se centra en la actuación profesional inicial: escuchar, contener, reconocer el asunto y verificar los hechos antes de decidir."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 3 preguntas sobre comunicación asertiva y manejo de conflictos escolares."
+  }
 }

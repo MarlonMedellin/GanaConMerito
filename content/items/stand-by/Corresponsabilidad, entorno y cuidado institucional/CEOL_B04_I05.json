@@ -1,103 +1,108 @@
 {
-    "id_item": "CEOL_B04_I05",
-    "archivo_sugerido": "CEOL_B04_I05_evasion_sistematica_clases_corresponsabilidad.json",
-    "bloque": {
-        "codigo_bloque": "CEOL_B04",
-        "nombre": "Corresponsabilidad, entorno y cuidado institucional",
-        "estado_en_lista": "Bloque 4 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 5 de 5"
+  "id_item": "CEOL_B04_I05",
+  "archivo_sugerido": "CEOL_B04_I05_evasion_sistematica_clases_corresponsabilidad.json",
+  "bloque": {
+    "codigo_bloque": "CEOL_B04",
+    "nombre": "Corresponsabilidad, entorno y cuidado institucional",
+    "estado_en_lista": "Bloque 4 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 5 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce que los casos de evasión sistemática de clases deben abordarse desde una estrategia de corresponsabilidad, diagnóstico, acompañamiento, familia, seguimiento y activación de rutas si hay riesgo.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación, convivencia o gestión comunitaria.",
+    "blueprint": {
+      "problematica_principal": "Manejo punitivo o superficial de la evasión sistemática de clases.",
+      "fuente_autorizada": [
+        "Ley 115 de 1994",
+        "Ley 1098 de 2006",
+        "Ley 1620 de 2013",
+        "Manual de convivencia institucional",
+        "Sistema de alertas y seguimiento institucional"
+      ],
+      "componente_modulo": "Corresponsabilidad Familiar y Permanencia Escolar",
+      "competencia": "Gestión de permanencia y seguimiento",
+      "afirmacion": "La evasión sistemática de clases requiere análisis de causas, corresponsabilidad familiar, acompañamiento, seguimiento y rutas cuando corresponda.",
+      "evidencia_observable": "Selecciona una actuación que integra registro, diálogo con estudiante y familia, identificación de causas, compromisos y seguimiento.",
+      "tipo_de_evidencia": "Juicio institucional aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "B"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce que los casos de evasión sistemática de clases deben abordarse desde una estrategia de corresponsabilidad, diagnóstico, acompañamiento, familia, seguimiento y activación de rutas si hay riesgo.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación, convivencia o gestión comunitaria.",
-        "blueprint": {
-            "problematica_principal": "Manejo punitivo o superficial de la evasión sistemática de clases.",
-            "fuente_autorizada": [
-                "Ley 115 de 1994",
-                "Ley 1098 de 2006",
-                "Ley 1620 de 2013",
-                "Manual de convivencia institucional",
-                "Sistema de alertas y seguimiento institucional"
-            ],
-            "componente_modulo": "Corresponsabilidad Familiar y Permanencia Escolar",
-            "competencia": "Gestión de permanencia y seguimiento",
-            "afirmacion": "La evasión sistemática de clases requiere análisis de causas, corresponsabilidad familiar, acompañamiento, seguimiento y rutas cuando corresponda.",
-            "evidencia_observable": "Selecciona una actuación que integra registro, diálogo con estudiante y familia, identificación de causas, compromisos y seguimiento.",
-            "tipo_de_evidencia": "Juicio institucional aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "B"
-        },
-        "claim": "El evaluado comprende que la evasión de clases no debe abordarse solo como indisciplina, sino como una señal que exige indagar causas, activar corresponsabilidad y generar estrategias de acompañamiento y permanencia.",
-        "evidencia_observable": "Selecciona una respuesta integral frente a evasión sistemática de clases.",
-        "tarea_cognitiva": "Analizar un caso de evasión escolar y elegir la acción institucional más adecuada.",
-        "tipo_de_pregunta": "Caso situacional de juicio profesional",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Culpabilizar automáticamente al estudiante",
-                "revision": "La clave propone identificar causas antes de definir medidas."
-            },
-            {
-                "riesgo": "Culpabilizar exclusivamente a la familia",
-                "revision": "La respuesta correcta plantea corresponsabilidad, no traslado total del problema."
-            },
-            {
-                "riesgo": "Confundir evasión con falta menor aislada",
-                "revision": "El enunciado habla de evasión sistemática y exige seguimiento."
-            },
-            {
-                "riesgo": "Desconocer posibles riesgos de protección",
-                "revision": "La clave incluye activación de rutas si se identifican factores de riesgo."
-            }
-        ]
+    "claim": "El evaluado comprende que la evasión de clases no debe abordarse solo como indisciplina, sino como una señal que exige indagar causas, activar corresponsabilidad y generar estrategias de acompañamiento y permanencia.",
+    "evidencia_observable": "Selecciona una respuesta integral frente a evasión sistemática de clases.",
+    "tarea_cognitiva": "Analizar un caso de evasión escolar y elegir la acción institucional más adecuada.",
+    "tipo_de_pregunta": "Caso situacional de juicio profesional",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Culpabilizar automáticamente al estudiante",
+        "revision": "La clave propone identificar causas antes de definir medidas."
+      },
+      {
+        "riesgo": "Culpabilizar exclusivamente a la familia",
+        "revision": "La respuesta correcta plantea corresponsabilidad, no traslado total del problema."
+      },
+      {
+        "riesgo": "Confundir evasión con falta menor aislada",
+        "revision": "El enunciado habla de evasión sistemática y exige seguimiento."
+      },
+      {
+        "riesgo": "Desconocer posibles riesgos de protección",
+        "revision": "La clave incluye activación de rutas si se identifican factores de riesgo."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Varios estudiantes evaden sistemáticamente algunas clases. La institución ha registrado ausencias internas, bajo rendimiento y conflictos asociados. Algunos docentes proponen limitarse a sancionar cada evasión sin indagar causas ni vincular a las familias.\n\n¿Cómo deben abordarse estratégicamente estos casos?",
+    "opciones": {
+      "A": "Aplicar sanciones automáticas sin diálogo, porque la evasión siempre se explica por falta de voluntad del estudiante.",
+      "B": "Registrar la situación, dialogar con los estudiantes, indagar causas, vincular a las familias, definir compromisos, hacer seguimiento y activar rutas si se identifican riesgos.",
+      "C": "Ignorar la evasión mientras los estudiantes aprueben algunas evaluaciones.",
+      "D": "Retirar definitivamente a los estudiantes de las clases que evaden para evitar nuevos reportes."
     },
-    "item": {
-        "enunciado": "Varios estudiantes evaden sistemáticamente algunas clases. La institución ha registrado ausencias internas, bajo rendimiento y conflictos asociados. Algunos docentes proponen limitarse a sancionar cada evasión sin indagar causas ni vincular a las familias.\n\n¿Cómo deben abordarse estratégicamente estos casos?",
-        "opciones": {
-            "A": "Aplicar sanciones automáticas sin diálogo, porque la evasión siempre se explica por falta de voluntad del estudiante.",
-            "B": "Registrar la situación, dialogar con los estudiantes, indagar causas, vincular a las familias, definir compromisos, hacer seguimiento y activar rutas si se identifican riesgos.",
-            "C": "Ignorar la evasión mientras los estudiantes aprueben algunas evaluaciones.",
-            "D": "Retirar definitivamente a los estudiantes de las clases que evaden para evitar nuevos reportes."
-        },
-        "respuesta_correcta": "B"
+    "respuesta_correcta": "B"
+  },
+  "ficha_tecnica": {
+    "componente": "Corresponsabilidad Familiar y Permanencia Escolar",
+    "competencia": "Gestión de permanencia y seguimiento",
+    "claim_evaluado": "El evaluado comprende que la evasión de clases no debe abordarse solo como indisciplina, sino como una señal que exige indagar causas, activar corresponsabilidad y generar estrategias de acompañamiento y permanencia.",
+    "evidencia": "Selecciona una respuesta integral frente a evasión sistemática de clases.",
+    "proceso_cognitivo": "Análisis y juicio institucional",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "B",
+    "distractores": {
+      "A": "Culpabiliza al estudiante sin diagnóstico ni seguimiento.",
+      "C": "Minimiza la evasión y desconoce su impacto formativo y de protección.",
+      "D": "Excluye al estudiante del proceso educativo en lugar de favorecer permanencia."
     },
-    "ficha_tecnica": {
-        "componente": "Corresponsabilidad Familiar y Permanencia Escolar",
-        "competencia": "Gestión de permanencia y seguimiento",
-        "claim_evaluado": "El evaluado comprende que la evasión de clases no debe abordarse solo como indisciplina, sino como una señal que exige indagar causas, activar corresponsabilidad y generar estrategias de acompañamiento y permanencia.",
-        "evidencia": "Selecciona una respuesta integral frente a evasión sistemática de clases.",
-        "proceso_cognitivo": "Análisis y juicio institucional",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "B",
-        "distractores": {
-            "A": "Culpabiliza al estudiante sin diagnóstico ni seguimiento.",
-            "C": "Minimiza la evasión y desconoce su impacto formativo y de protección.",
-            "D": "Excluye al estudiante del proceso educativo en lugar de favorecer permanencia."
-        },
-        "fuente_autorizada": [
-            "Ley 115 de 1994",
-            "Ley 1098 de 2006",
-            "Ley 1620 de 2013",
-            "Manual de convivencia institucional",
-            "Sistema de alertas y seguimiento institucional"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque aborda la evasión sistemática desde el registro, el diálogo, el análisis de causas, la corresponsabilidad familiar, los compromisos, el seguimiento y la activación de rutas si hay riesgo.",
-        "opcion_A": "Es incorrecta porque reduce la evasión a indisciplina y omite diagnóstico y acompañamiento.",
-        "opcion_C": "Es incorrecta porque aprobar algunas evaluaciones no elimina la obligación de atender la permanencia y la participación escolar.",
-        "opcion_D": "Es incorrecta porque retirar al estudiante de la clase profundiza la exclusión."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem no culpa de forma automática al estudiante ni a su familia. Evalúa una respuesta institucional basada en seguimiento, corresponsabilidad y protección."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre corresponsabilidad, entorno y cuidado institucional."
+    "fuente_autorizada": [
+      "Ley 115 de 1994",
+      "Ley 1098 de 2006",
+      "Ley 1620 de 2013",
+      "Manual de convivencia institucional",
+      "Sistema de alertas y seguimiento institucional"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "opcion_A": "Es incorrecta porque reduce la evasión a indisciplina y omite diagnóstico y acompañamiento.",
+    "opcion_C": "Es incorrecta porque aprobar algunas evaluaciones no elimina la obligación de atender la permanencia y la participación escolar.",
+    "opcion_D": "Es incorrecta porque retirar al estudiante de la clase profundiza la exclusión.",
+    "distractores": {
+      "A": "Es incorrecta porque reduce la evasión a indisciplina y omite diagnóstico y acompañamiento.",
+      "C": "Es incorrecta porque aprobar algunas evaluaciones no elimina la obligación de atender la permanencia y la participación escolar.",
+      "D": "Es incorrecta porque retirar al estudiante de la clase profundiza la exclusión."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem no culpa de forma automática al estudiante ni a su familia. Evalúa una respuesta institucional basada en seguimiento, corresponsabilidad y protección."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre corresponsabilidad, entorno y cuidado institucional."
+  }
 }

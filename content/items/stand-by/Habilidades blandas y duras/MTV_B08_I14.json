@@ -1,40 +1,40 @@
 {
-    "id_item": "MTV_B08_I14",
-    "archivo_sugerido": "MTV_B08_I14_complementariedad_habilidades_blandas_duras.json",
-    "proposito_de_uso": "Evaluar si el aspirante comprende que las habilidades blandas y duras se complementan en el desempeño docente.",
-    "blueprint": {
-        "componente_modulo": "Integración de competencias",
-        "competencia": "Análisis integral del perfil docente",
-        "afirmacion": "El desempeño docente exige integrar conocimiento disciplinar, aplicación pedagógica, ética, comunicación, empatía y trabajo colaborativo.",
-        "evidencia_observable": "Selecciona una interpretación que articula habilidades blandas y duras sin oponerlas.",
-        "tipo_de_evidencia": "Juicio integrador",
-        "dificultad_esperada": "Alta",
-        "clave": "D"
+  "id_item": "MTV_B08_I14",
+  "archivo_sugerido": "MTV_B08_I14_complementariedad_habilidades_blandas_duras.json",
+  "proposito_de_uso": "Evaluar si el aspirante comprende que las habilidades blandas y duras se complementan en el desempeño docente.",
+  "blueprint": {
+    "componente_modulo": "Integración de competencias",
+    "competencia": "Análisis integral del perfil docente",
+    "afirmacion": "El desempeño docente exige integrar conocimiento disciplinar, aplicación pedagógica, ética, comunicación, empatía y trabajo colaborativo.",
+    "evidencia_observable": "Selecciona una interpretación que articula habilidades blandas y duras sin oponerlas.",
+    "tipo_de_evidencia": "Juicio integrador",
+    "dificultad_esperada": "Alta",
+    "clave": "D"
+  },
+  "item": {
+    "enunciado": "En una evaluación de desempeño, un docente demuestra excelente formación académica y dominio de su área, pero también evidencia escucha activa, comunicación asertiva, empatía, colaboración y manejo adecuado de emociones.\n\n¿Cuál valoración es más completa?",
+    "opciones": {
+      "A": "Solo importan sus títulos, porque las relaciones humanas no inciden en la docencia.",
+      "B": "Solo importan sus habilidades blandas, porque el conocimiento disciplinar es innecesario.",
+      "C": "Debe evaluarse únicamente su simpatía personal.",
+      "D": "El desempeño es más sólido porque integra habilidades duras, habilidades blandas, Saber, Saber Hacer y Saber Ser."
     },
-    "item": {
-        "enunciado": "En una evaluación de desempeño, un docente demuestra excelente formación académica y dominio de su área, pero también evidencia escucha activa, comunicación asertiva, empatía, colaboración y manejo adecuado de emociones.\n\n¿Cuál valoración es más completa?",
-        "opciones": {
-            "A": "Solo importan sus títulos, porque las relaciones humanas no inciden en la docencia.",
-            "B": "Solo importan sus habilidades blandas, porque el conocimiento disciplinar es innecesario.",
-            "C": "Debe evaluarse únicamente su simpatía personal.",
-            "D": "El desempeño es más sólido porque integra habilidades duras, habilidades blandas, Saber, Saber Hacer y Saber Ser."
-        },
-        "respuesta_correcta": "D"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque reconoce la complementariedad entre competencias técnicas, prácticas y socioemocionales.",
-        "distractores": {
-            "A": "Reduce el desempeño al título o conocimiento académico.",
-            "B": "Desconoce la importancia del dominio disciplinar.",
-            "C": "Confunde habilidades blandas con simpatía personal."
-        }
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado",
-        "argumento": "El ítem evita una falsa oposición entre conocimiento y habilidades socioemocionales."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem de cierre recomendado para el bloque."
+    "respuesta_correcta": "D"
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "distractores": {
+      "A": "Reduce el desempeño al título o conocimiento académico.",
+      "B": "Desconoce la importancia del dominio disciplinar.",
+      "C": "Confunde habilidades blandas con simpatía personal."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado",
+    "argumento": "El ítem evita una falsa oposición entre conocimiento y habilidades socioemocionales."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem de cierre recomendado para el bloque."
+  }
 }

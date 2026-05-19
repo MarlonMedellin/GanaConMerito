@@ -1,98 +1,103 @@
 {
-    "id_item": "NFL_B03_I05",
-    "archivo_sugerido": "NFL_B03_I05_derecho_defensa_contradiccion_estudiante.json",
-    "bloque": {
-        "codigo_bloque": "NFL_B03",
-        "nombre": "Debido proceso, congruencia y medidas correctivas extremas",
-        "estado_en_lista": "Bloque 3 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 5 de 5"
+  "id_item": "NFL_B03_I05",
+  "archivo_sugerido": "NFL_B03_I05_derecho_defensa_contradiccion_estudiante.json",
+  "bloque": {
+    "codigo_bloque": "NFL_B03",
+    "nombre": "Debido proceso, congruencia y medidas correctivas extremas",
+    "estado_en_lista": "Bloque 3 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 5 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce el derecho del estudiante a ser escuchado, presentar descargos y controvertir pruebas en un proceso disciplinario escolar.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con convivencia escolar, docencia, coordinación, rectoría u orientación escolar.",
+    "blueprint": {
+      "problematica_principal": "Decidir una medida disciplinaria sin escuchar al estudiante ni permitir contradicción.",
+      "fuente_autorizada": [
+        "Constitución Política de Colombia artículo 29",
+        "Ley 115 de 1994",
+        "Manual de Convivencia",
+        "Debido proceso escolar",
+        "Derecho de defensa"
+      ],
+      "componente_modulo": "Derecho de defensa y contradicción",
+      "competencia": "Garantía de participación del estudiante en el proceso",
+      "afirmacion": "El estudiante debe conocer los hechos atribuidos, ser escuchado, presentar descargos y controvertir elementos antes de una decisión.",
+      "evidencia_observable": "Reconoce que decidir sin escuchar ni permitir defensa vulnera el debido proceso.",
+      "tipo_de_evidencia": "Juicio jurídico-pedagógico aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce el derecho del estudiante a ser escuchado, presentar descargos y controvertir pruebas en un proceso disciplinario escolar.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con convivencia escolar, docencia, coordinación, rectoría u orientación escolar.",
-        "blueprint": {
-            "problematica_principal": "Decidir una medida disciplinaria sin escuchar al estudiante ni permitir contradicción.",
-            "fuente_autorizada": [
-                "Constitución Política de Colombia artículo 29",
-                "Ley 115 de 1994",
-                "Manual de Convivencia",
-                "Debido proceso escolar",
-                "Derecho de defensa"
-            ],
-            "componente_modulo": "Derecho de defensa y contradicción",
-            "competencia": "Garantía de participación del estudiante en el proceso",
-            "afirmacion": "El estudiante debe conocer los hechos atribuidos, ser escuchado, presentar descargos y controvertir elementos antes de una decisión.",
-            "evidencia_observable": "Reconoce que decidir sin escuchar ni permitir defensa vulnera el debido proceso.",
-            "tipo_de_evidencia": "Juicio jurídico-pedagógico aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que el debido proceso escolar exige participación real del estudiante antes de adoptar una medida que lo afecte.",
-        "evidencia_observable": "Selecciona la actuación que garantiza derecho de defensa y contradicción.",
-        "tarea_cognitiva": "Identificar garantías mínimas en un proceso disciplinario escolar.",
-        "tipo_de_pregunta": "Pregunta situacional de garantías procedimentales",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Confundir escuchar al estudiante con aceptar automáticamente su versión",
-                "revision": "La clave exige escuchar y valorar, no renunciar a decidir."
-            },
-            {
-                "riesgo": "Decidir con base en rumores",
-                "revision": "La opción correcta pide elementos claros y contradicción."
-            },
-            {
-                "riesgo": "Excluir a familias o acudientes cuando proceda",
-                "revision": "El ítem permite intervención conforme al Manual y edad del estudiante."
-            }
-        ]
+    "claim": "El evaluado comprende que el debido proceso escolar exige participación real del estudiante antes de adoptar una medida que lo afecte.",
+    "evidencia_observable": "Selecciona la actuación que garantiza derecho de defensa y contradicción.",
+    "tarea_cognitiva": "Identificar garantías mínimas en un proceso disciplinario escolar.",
+    "tipo_de_pregunta": "Pregunta situacional de garantías procedimentales",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Confundir escuchar al estudiante con aceptar automáticamente su versión",
+        "revision": "La clave exige escuchar y valorar, no renunciar a decidir."
+      },
+      {
+        "riesgo": "Decidir con base en rumores",
+        "revision": "La opción correcta pide elementos claros y contradicción."
+      },
+      {
+        "riesgo": "Excluir a familias o acudientes cuando proceda",
+        "revision": "El ítem permite intervención conforme al Manual y edad del estudiante."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un estudiante es señalado por una falta grave. La institución decide sancionarlo sin informarle con claridad los hechos atribuidos, sin permitirle presentar descargos y sin revisar su versión ni la de su acudiente.\n\n¿Qué garantía básica se vulnera?",
+    "opciones": {
+      "A": "El derecho de defensa y contradicción dentro del debido proceso.",
+      "B": "La obligación de sancionar sin escuchar para ahorrar tiempo.",
+      "C": "La posibilidad de imponer medidas con base en rumores.",
+      "D": "La facultad del estudiante para anular cualquier norma escolar."
     },
-    "item": {
-        "enunciado": "Un estudiante es señalado por una falta grave. La institución decide sancionarlo sin informarle con claridad los hechos atribuidos, sin permitirle presentar descargos y sin revisar su versión ni la de su acudiente.\n\n¿Qué garantía básica se vulnera?",
-        "opciones": {
-            "A": "El derecho de defensa y contradicción dentro del debido proceso.",
-            "B": "La obligación de sancionar sin escuchar para ahorrar tiempo.",
-            "C": "La posibilidad de imponer medidas con base en rumores.",
-            "D": "La facultad del estudiante para anular cualquier norma escolar."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Derecho de defensa y contradicción",
+    "competencia": "Garantía de participación del estudiante en el proceso",
+    "claim_evaluado": "El evaluado comprende que el debido proceso escolar exige participación real del estudiante antes de adoptar una medida que lo afecte.",
+    "evidencia": "Selecciona la actuación que garantiza derecho de defensa y contradicción.",
+    "proceso_cognitivo": "Reconocimiento de garantía procedimental",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Normaliza una vulneración del debido proceso.",
+      "C": "Desconoce la necesidad de verificar y permitir contradicción.",
+      "D": "Confunde defensa con eliminación de normas."
     },
-    "ficha_tecnica": {
-        "componente": "Derecho de defensa y contradicción",
-        "competencia": "Garantía de participación del estudiante en el proceso",
-        "claim_evaluado": "El evaluado comprende que el debido proceso escolar exige participación real del estudiante antes de adoptar una medida que lo afecte.",
-        "evidencia": "Selecciona la actuación que garantiza derecho de defensa y contradicción.",
-        "proceso_cognitivo": "Reconocimiento de garantía procedimental",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Normaliza una vulneración del debido proceso.",
-            "C": "Desconoce la necesidad de verificar y permitir contradicción.",
-            "D": "Confunde defensa con eliminación de normas."
-        },
-        "fuente_autorizada": [
-            "Constitución Política de Colombia artículo 29",
-            "Ley 115 de 1994",
-            "Manual de Convivencia",
-            "Debido proceso escolar"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque el estudiante debe conocer los hechos, ser escuchado y poder controvertir antes de una decisión.",
-        "opcion_B": "Es incorrecta porque la eficiencia no justifica vulnerar garantías.",
-        "opcion_C": "Es incorrecta porque los rumores no sustituyen el procedimiento.",
-        "opcion_D": "Es incorrecta porque defenderse no implica desconocer normas escolares."
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado con revisión institucional recomendada.",
-        "argumento": "El ítem protege garantías del estudiante sin impedir que la institución adopte decisiones motivadas y proporcionales."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Validar con el Manual de Convivencia y procedimiento institucional aplicable.",
-        "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre debido proceso, congruencia y medidas correctivas extremas."
+    "fuente_autorizada": [
+      "Constitución Política de Colombia artículo 29",
+      "Ley 115 de 1994",
+      "Manual de Convivencia",
+      "Debido proceso escolar"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque la eficiencia no justifica vulnerar garantías.",
+    "opcion_C": "Es incorrecta porque los rumores no sustituyen el procedimiento.",
+    "opcion_D": "Es incorrecta porque defenderse no implica desconocer normas escolares.",
+    "distractores": {
+      "B": "Es incorrecta porque la eficiencia no justifica vulnerar garantías.",
+      "C": "Es incorrecta porque los rumores no sustituyen el procedimiento.",
+      "D": "Es incorrecta porque defenderse no implica desconocer normas escolares."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado con revisión institucional recomendada.",
+    "argumento": "El ítem protege garantías del estudiante sin impedir que la institución adopte decisiones motivadas y proporcionales."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Validar con el Manual de Convivencia y procedimiento institucional aplicable.",
+    "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre debido proceso, congruencia y medidas correctivas extremas."
+  }
 }

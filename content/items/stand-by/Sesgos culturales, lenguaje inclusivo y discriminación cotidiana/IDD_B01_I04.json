@@ -1,99 +1,104 @@
 {
-    "id_item": "IDD_B01_I04",
-    "archivo_sugerido": "IDD_B01_I04_conflicto_cognitivo_color_piel_inclusion.json",
-    "bloque": {
-        "codigo_bloque": "IDD_B01",
-        "nombre": "Sesgos culturales, lenguaje inclusivo y discriminación cotidiana",
-        "estado_en_lista": "Bloque 1 de 17",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 4 de 4"
+  "id_item": "IDD_B01_I04",
+  "archivo_sugerido": "IDD_B01_I04_conflicto_cognitivo_color_piel_inclusion.json",
+  "bloque": {
+    "codigo_bloque": "IDD_B01",
+    "nombre": "Sesgos culturales, lenguaje inclusivo y discriminación cotidiana",
+    "estado_en_lista": "Bloque 1 de 17",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 4 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante comprende cómo una intervención docente puede generar conflicto cognitivo válido para deconstruir una idea discriminatoria naturalizada.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, educación inicial, básica primaria, inclusión o didáctica.",
+    "blueprint": {
+      "problematica_principal": "Naturalización temprana de una representación única y excluyente de la piel humana.",
+      "fuente_autorizada": [
+        "Constructivismo",
+        "Aprendizaje significativo",
+        "Educación inclusiva",
+        "Enfoque de derechos",
+        "Decreto 1421 de 2017"
+      ],
+      "componente_modulo": "Conflicto Cognitivo e Inclusión",
+      "competencia": "Mediación de ideas previas discriminatorias",
+      "afirmacion": "El conflicto cognitivo puede usarse para confrontar ideas previas discriminatorias y reconstruir significados más inclusivos.",
+      "evidencia_observable": "Reconoce que cuestionar la existencia de un único color piel permite revisar una creencia previa y ampliar la comprensión del grupo.",
+      "tipo_de_evidencia": "Juicio didáctico aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "B"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante comprende cómo una intervención docente puede generar conflicto cognitivo válido para deconstruir una idea discriminatoria naturalizada.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, educación inicial, básica primaria, inclusión o didáctica.",
-        "blueprint": {
-            "problematica_principal": "Naturalización temprana de una representación única y excluyente de la piel humana.",
-            "fuente_autorizada": [
-                "Constructivismo",
-                "Aprendizaje significativo",
-                "Educación inclusiva",
-                "Enfoque de derechos",
-                "Decreto 1421 de 2017"
-            ],
-            "componente_modulo": "Conflicto Cognitivo e Inclusión",
-            "competencia": "Mediación de ideas previas discriminatorias",
-            "afirmacion": "El conflicto cognitivo puede usarse para confrontar ideas previas discriminatorias y reconstruir significados más inclusivos.",
-            "evidencia_observable": "Reconoce que cuestionar la existencia de un único color piel permite revisar una creencia previa y ampliar la comprensión del grupo.",
-            "tipo_de_evidencia": "Juicio didáctico aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "B"
-        },
-        "claim": "El evaluado comprende que el docente puede usar preguntas y contrastes para provocar un conflicto cognitivo respetuoso que cuestione estereotipos y favorezca aprendizajes inclusivos.",
-        "evidencia_observable": "Selecciona la razón pedagógica por la cual cuestionar la existencia de un solo color piel contribuye a deconstruir discriminación.",
-        "tarea_cognitiva": "Interpretar una intervención de conflicto cognitivo desde la inclusión.",
-        "tipo_de_pregunta": "Pregunta conceptual aplicada",
-        "dificultad_esperada": "Media-Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Usar el conflicto cognitivo para confrontar de forma agresiva",
-                "revision": "La clave lo presenta como cuestionamiento respetuoso y mediado."
-            },
-            {
-                "riesgo": "Confundir diversidad con simple variedad de colores",
-                "revision": "La opción correcta vincula colores con representación, dignidad y reconocimiento."
-            },
-            {
-                "riesgo": "Convertir la intervención en debate racializante",
-                "revision": "El ítem se centra en la mediación pedagógica inclusiva."
-            }
-        ]
+    "claim": "El evaluado comprende que el docente puede usar preguntas y contrastes para provocar un conflicto cognitivo respetuoso que cuestione estereotipos y favorezca aprendizajes inclusivos.",
+    "evidencia_observable": "Selecciona la razón pedagógica por la cual cuestionar la existencia de un solo color piel contribuye a deconstruir discriminación.",
+    "tarea_cognitiva": "Interpretar una intervención de conflicto cognitivo desde la inclusión.",
+    "tipo_de_pregunta": "Pregunta conceptual aplicada",
+    "dificultad_esperada": "Media-Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Usar el conflicto cognitivo para confrontar de forma agresiva",
+        "revision": "La clave lo presenta como cuestionamiento respetuoso y mediado."
+      },
+      {
+        "riesgo": "Confundir diversidad con simple variedad de colores",
+        "revision": "La opción correcta vincula colores con representación, dignidad y reconocimiento."
+      },
+      {
+        "riesgo": "Convertir la intervención en debate racializante",
+        "revision": "El ítem se centra en la mediación pedagógica inclusiva."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "En preescolar, un docente pregunta al grupo: “¿Todas las personas tienen el mismo color de piel?”. Luego invita a observar imágenes, manos y rostros diversos para revisar la idea de que existe un único color piel.\n\n¿Por qué esta acción genera un conflicto cognitivo válido para deconstruir la discriminación?",
+    "opciones": {
+      "A": "Porque obliga a los niños a memorizar una definición jurídica sobre discriminación.",
+      "B": "Porque confronta una idea previa naturalizada con evidencias de diversidad y permite reconstruir una representación más incluyente.",
+      "C": "Porque demuestra que las actividades artísticas deben eliminarse del currículo.",
+      "D": "Porque sanciona a los niños que usen colores claros en sus dibujos."
     },
-    "item": {
-        "enunciado": "En preescolar, un docente pregunta al grupo: “¿Todas las personas tienen el mismo color de piel?”. Luego invita a observar imágenes, manos y rostros diversos para revisar la idea de que existe un único color piel.\n\n¿Por qué esta acción genera un conflicto cognitivo válido para deconstruir la discriminación?",
-        "opciones": {
-            "A": "Porque obliga a los niños a memorizar una definición jurídica sobre discriminación.",
-            "B": "Porque confronta una idea previa naturalizada con evidencias de diversidad y permite reconstruir una representación más incluyente.",
-            "C": "Porque demuestra que las actividades artísticas deben eliminarse del currículo.",
-            "D": "Porque sanciona a los niños que usen colores claros en sus dibujos."
-        },
-        "respuesta_correcta": "B"
+    "respuesta_correcta": "B"
+  },
+  "ficha_tecnica": {
+    "componente": "Conflicto Cognitivo e Inclusión",
+    "competencia": "Mediación de ideas previas discriminatorias",
+    "claim_evaluado": "El evaluado comprende que el docente puede usar preguntas y contrastes para provocar un conflicto cognitivo respetuoso que cuestione estereotipos y favorezca aprendizajes inclusivos.",
+    "evidencia": "Selecciona la razón pedagógica por la cual cuestionar la existencia de un solo color piel contribuye a deconstruir discriminación.",
+    "proceso_cognitivo": "Comprensión didáctica aplicada",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media-Alta",
+    "respuesta_correcta": "B",
+    "distractores": {
+      "A": "Reduce la intervención a memorización normativa.",
+      "C": "Desvía el propósito hacia eliminación de actividades artísticas.",
+      "D": "Convierte la mediación en sanción."
     },
-    "ficha_tecnica": {
-        "componente": "Conflicto Cognitivo e Inclusión",
-        "competencia": "Mediación de ideas previas discriminatorias",
-        "claim_evaluado": "El evaluado comprende que el docente puede usar preguntas y contrastes para provocar un conflicto cognitivo respetuoso que cuestione estereotipos y favorezca aprendizajes inclusivos.",
-        "evidencia": "Selecciona la razón pedagógica por la cual cuestionar la existencia de un solo color piel contribuye a deconstruir discriminación.",
-        "proceso_cognitivo": "Comprensión didáctica aplicada",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media-Alta",
-        "respuesta_correcta": "B",
-        "distractores": {
-            "A": "Reduce la intervención a memorización normativa.",
-            "C": "Desvía el propósito hacia eliminación de actividades artísticas.",
-            "D": "Convierte la mediación en sanción."
-        },
-        "fuente_autorizada": [
-            "Constructivismo",
-            "Aprendizaje significativo",
-            "Educación inclusiva",
-            "Enfoque de derechos",
-            "Decreto 1421 de 2017"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque el docente hace visible una idea previa, la contrasta con evidencias y facilita una reconstrucción conceptual más inclusiva.",
-        "opcion_A": "Es incorrecta porque el aprendizaje no se centra en memorizar normas.",
-        "opcion_C": "Es incorrecta porque la actividad artística sigue siendo válida.",
-        "opcion_D": "Es incorrecta porque la intervención no busca sancionar, sino ampliar comprensión."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem promueve una mediación respetuosa que evita humillar a los niños y reconoce la diversidad como parte de la experiencia educativa."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre sesgos culturales, lenguaje inclusivo y discriminación cotidiana."
+    "fuente_autorizada": [
+      "Constructivismo",
+      "Aprendizaje significativo",
+      "Educación inclusiva",
+      "Enfoque de derechos",
+      "Decreto 1421 de 2017"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "opcion_A": "Es incorrecta porque el aprendizaje no se centra en memorizar normas.",
+    "opcion_C": "Es incorrecta porque la actividad artística sigue siendo válida.",
+    "opcion_D": "Es incorrecta porque la intervención no busca sancionar, sino ampliar comprensión.",
+    "distractores": {
+      "A": "Es incorrecta porque el aprendizaje no se centra en memorizar normas.",
+      "C": "Es incorrecta porque la actividad artística sigue siendo válida.",
+      "D": "Es incorrecta porque la intervención no busca sancionar, sino ampliar comprensión."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem promueve una mediación respetuosa que evita humillar a los niños y reconoce la diversidad como parte de la experiencia educativa."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre sesgos culturales, lenguaje inclusivo y discriminación cotidiana."
+  }
 }

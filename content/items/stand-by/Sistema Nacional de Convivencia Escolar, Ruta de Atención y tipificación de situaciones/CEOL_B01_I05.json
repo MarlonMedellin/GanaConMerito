@@ -1,101 +1,106 @@
 {
-    "id_item": "CEOL_B01_I05",
-    "archivo_sugerido": "CEOL_B01_I05_tipificacion_situaciones_tipo_i.json",
-    "bloque": {
-        "codigo_bloque": "CEOL_B01",
-        "nombre": "Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones",
-        "estado_en_lista": "Bloque 1 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 5 de 6"
+  "id_item": "CEOL_B01_I05",
+  "archivo_sugerido": "CEOL_B01_I05_tipificacion_situaciones_tipo_i.json",
+  "bloque": {
+    "codigo_bloque": "CEOL_B01",
+    "nombre": "Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones",
+    "estado_en_lista": "Bloque 1 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 5 de 6"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce una situación Tipo I y la respuesta pedagógica que corresponde en el aula o en el establecimiento educativo.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación o gestión de convivencia.",
+    "blueprint": {
+      "problematica_principal": "Activación desproporcionada de rutas externas frente a conflictos escolares Tipo I.",
+      "fuente_autorizada": [
+        "Decreto 1965 de 2013",
+        "Ley 1620 de 2013",
+        "Manual de convivencia institucional",
+        "Ruta de Atención Integral para la Convivencia Escolar"
+      ],
+      "componente_modulo": "Tipificación de situaciones de convivencia",
+      "competencia": "Aplicación proporcional de protocolos",
+      "afirmacion": "Las situaciones Tipo I corresponden a conflictos manejados inadecuadamente o situaciones esporádicas que no generan daño al cuerpo o a la salud.",
+      "evidencia_observable": "Identifica que una situación Tipo I debe abordarse mediante mediación pedagógica, reparación, reconciliación y seguimiento.",
+      "tipo_de_evidencia": "Juicio normativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "C"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce una situación Tipo I y la respuesta pedagógica que corresponde en el aula o en el establecimiento educativo.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación o gestión de convivencia.",
-        "blueprint": {
-            "problematica_principal": "Activación desproporcionada de rutas externas frente a conflictos escolares Tipo I.",
-            "fuente_autorizada": [
-                "Decreto 1965 de 2013",
-                "Ley 1620 de 2013",
-                "Manual de convivencia institucional",
-                "Ruta de Atención Integral para la Convivencia Escolar"
-            ],
-            "componente_modulo": "Tipificación de situaciones de convivencia",
-            "competencia": "Aplicación proporcional de protocolos",
-            "afirmacion": "Las situaciones Tipo I corresponden a conflictos manejados inadecuadamente o situaciones esporádicas que no generan daño al cuerpo o a la salud.",
-            "evidencia_observable": "Identifica que una situación Tipo I debe abordarse mediante mediación pedagógica, reparación, reconciliación y seguimiento.",
-            "tipo_de_evidencia": "Juicio normativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "C"
-        },
-        "claim": "El evaluado comprende que un conflicto manejado inadecuadamente entre estudiantes, sin daño físico ni mental, debe tratarse de forma pedagógica y proporcional, evitando respuestas externas o punitivas innecesarias.",
-        "evidencia_observable": "Selecciona una actuación coherente con el protocolo de situaciones Tipo I.",
-        "tarea_cognitiva": "Clasificar una situación de convivencia y seleccionar la respuesta institucional proporcional.",
-        "tipo_de_pregunta": "Caso situacional de juicio normativo",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Minimización del conflicto",
-                "revision": "La clave no propone ignorar la situación, sino mediar, reparar y hacer seguimiento."
-            },
-            {
-                "riesgo": "Respuesta punitiva desproporcionada",
-                "revision": "Los distractores muestran respuestas sancionatorias o externas innecesarias."
-            },
-            {
-                "riesgo": "Ambigüedad sobre daño",
-                "revision": "El enunciado aclara que no hay daños al cuerpo o a la salud."
-            },
-            {
-                "riesgo": "Sesgo por manual institucional particular",
-                "revision": "La evidencia se basa en criterios generales de la tipificación normativa."
-            }
-        ]
+    "claim": "El evaluado comprende que un conflicto manejado inadecuadamente entre estudiantes, sin daño físico ni mental, debe tratarse de forma pedagógica y proporcional, evitando respuestas externas o punitivas innecesarias.",
+    "evidencia_observable": "Selecciona una actuación coherente con el protocolo de situaciones Tipo I.",
+    "tarea_cognitiva": "Clasificar una situación de convivencia y seleccionar la respuesta institucional proporcional.",
+    "tipo_de_pregunta": "Caso situacional de juicio normativo",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Minimización del conflicto",
+        "revision": "La clave no propone ignorar la situación, sino mediar, reparar y hacer seguimiento."
+      },
+      {
+        "riesgo": "Respuesta punitiva desproporcionada",
+        "revision": "Los distractores muestran respuestas sancionatorias o externas innecesarias."
+      },
+      {
+        "riesgo": "Ambigüedad sobre daño",
+        "revision": "El enunciado aclara que no hay daños al cuerpo o a la salud."
+      },
+      {
+        "riesgo": "Sesgo por manual institucional particular",
+        "revision": "La evidencia se basa en criterios generales de la tipificación normativa."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Dos estudiantes tienen una discusión en el aula, se dicen palabras ofensivas y alteran la clase. La situación es esporádica, no genera daños al cuerpo ni a la salud, y puede abordarse pedagógicamente con las partes involucradas.\n\n¿Por qué esta situación debe tratarse como una situación Tipo I y no mediante activación inmediata de rutas externas?",
+    "opciones": {
+      "A": "Porque toda discusión entre estudiantes debe ignorarse si no hay una denuncia formal escrita.",
+      "B": "Porque cualquier conflicto escolar exige de inmediato intervención penal externa.",
+      "C": "Porque corresponde a un conflicto manejado inadecuadamente, sin daño al cuerpo o a la salud, que debe abordarse con mediación pedagógica, reparación, reconciliación y seguimiento.",
+      "D": "Porque una situación Tipo I se resuelve expulsando a los estudiantes involucrados sin escuchar sus versiones."
     },
-    "item": {
-        "enunciado": "Dos estudiantes tienen una discusión en el aula, se dicen palabras ofensivas y alteran la clase. La situación es esporádica, no genera daños al cuerpo ni a la salud, y puede abordarse pedagógicamente con las partes involucradas.\n\n¿Por qué esta situación debe tratarse como una situación Tipo I y no mediante activación inmediata de rutas externas?",
-        "opciones": {
-            "A": "Porque toda discusión entre estudiantes debe ignorarse si no hay una denuncia formal escrita.",
-            "B": "Porque cualquier conflicto escolar exige de inmediato intervención penal externa.",
-            "C": "Porque corresponde a un conflicto manejado inadecuadamente, sin daño al cuerpo o a la salud, que debe abordarse con mediación pedagógica, reparación, reconciliación y seguimiento.",
-            "D": "Porque una situación Tipo I se resuelve expulsando a los estudiantes involucrados sin escuchar sus versiones."
-        },
-        "respuesta_correcta": "C"
+    "respuesta_correcta": "C"
+  },
+  "ficha_tecnica": {
+    "componente": "Tipificación de situaciones de convivencia",
+    "competencia": "Aplicación proporcional de protocolos",
+    "claim_evaluado": "El evaluado comprende que un conflicto manejado inadecuadamente entre estudiantes, sin daño físico ni mental, debe tratarse de forma pedagógica y proporcional, evitando respuestas externas o punitivas innecesarias.",
+    "evidencia": "Selecciona una actuación coherente con el protocolo de situaciones Tipo I.",
+    "proceso_cognitivo": "Análisis y juicio normativo aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "C",
+    "distractores": {
+      "A": "Omite la intervención pedagógica requerida.",
+      "B": "Activa de manera desproporcionada una ruta externa ante una situación Tipo I.",
+      "D": "Propone una sanción extrema y sin debido proceso."
     },
-    "ficha_tecnica": {
-        "componente": "Tipificación de situaciones de convivencia",
-        "competencia": "Aplicación proporcional de protocolos",
-        "claim_evaluado": "El evaluado comprende que un conflicto manejado inadecuadamente entre estudiantes, sin daño físico ni mental, debe tratarse de forma pedagógica y proporcional, evitando respuestas externas o punitivas innecesarias.",
-        "evidencia": "Selecciona una actuación coherente con el protocolo de situaciones Tipo I.",
-        "proceso_cognitivo": "Análisis y juicio normativo aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "C",
-        "distractores": {
-            "A": "Omite la intervención pedagógica requerida.",
-            "B": "Activa de manera desproporcionada una ruta externa ante una situación Tipo I.",
-            "D": "Propone una sanción extrema y sin debido proceso."
-        },
-        "fuente_autorizada": [
-            "Decreto 1965 de 2013",
-            "Ley 1620 de 2013",
-            "Manual de convivencia institucional",
-            "Ruta de Atención Integral para la Convivencia Escolar"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque describe una situación Tipo I: conflicto manejado inadecuadamente, esporádico y sin daño al cuerpo o a la salud. La respuesta debe ser pedagógica, restaurativa y con seguimiento.",
-        "opcion_A": "Es incorrecta porque la ausencia de denuncia formal no justifica ignorar el conflicto.",
-        "opcion_B": "Es incorrecta porque no toda situación escolar exige intervención externa inmediata.",
-        "opcion_D": "Es incorrecta porque desconoce proporcionalidad, mediación pedagógica y debido proceso."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem no minimiza la afectación del conflicto ni promueve castigos desproporcionados. Evalúa la aplicación proporcional y pedagógica del protocolo."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 6 preguntas sobre Sistema Nacional de Convivencia Escolar y Ruta de Atención Integral."
+    "fuente_autorizada": [
+      "Decreto 1965 de 2013",
+      "Ley 1620 de 2013",
+      "Manual de convivencia institucional",
+      "Ruta de Atención Integral para la Convivencia Escolar"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "opcion_A": "Es incorrecta porque la ausencia de denuncia formal no justifica ignorar el conflicto.",
+    "opcion_B": "Es incorrecta porque no toda situación escolar exige intervención externa inmediata.",
+    "opcion_D": "Es incorrecta porque desconoce proporcionalidad, mediación pedagógica y debido proceso.",
+    "distractores": {
+      "A": "Es incorrecta porque la ausencia de denuncia formal no justifica ignorar el conflicto.",
+      "B": "Es incorrecta porque no toda situación escolar exige intervención externa inmediata.",
+      "D": "Es incorrecta porque desconoce proporcionalidad, mediación pedagógica y debido proceso."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem no minimiza la afectación del conflicto ni promueve castigos desproporcionados. Evalúa la aplicación proporcional y pedagógica del protocolo."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 6 preguntas sobre Sistema Nacional de Convivencia Escolar y Ruta de Atención Integral."
+  }
 }

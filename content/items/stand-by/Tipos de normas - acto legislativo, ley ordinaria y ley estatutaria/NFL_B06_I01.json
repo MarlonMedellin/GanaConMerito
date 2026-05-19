@@ -1,98 +1,103 @@
 {
-    "id_item": "NFL_B06_I01",
-    "archivo_sugerido": "NFL_B06_I01_diferencia_acto_legislativo_ley_ordinaria_estatutaria.json",
-    "bloque": {
-        "codigo_bloque": "NFL_B06",
-        "nombre": "Tipos de normas: acto legislativo, ley ordinaria y ley estatutaria",
-        "estado_en_lista": "Bloque 6 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 1 de 4"
+  "id_item": "NFL_B06_I01",
+  "archivo_sugerido": "NFL_B06_I01_diferencia_acto_legislativo_ley_ordinaria_estatutaria.json",
+  "bloque": {
+    "codigo_bloque": "NFL_B06",
+    "nombre": "Tipos de normas: acto legislativo, ley ordinaria y ley estatutaria",
+    "estado_en_lista": "Bloque 6 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 1 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante diferencia acto legislativo, ley ordinaria y ley estatutaria en el marco constitucional colombiano.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con ciudadanía, ciencias sociales, derecho constitucional, normatividad educativa o gestión pública.",
+    "blueprint": {
+      "problematica_principal": "Confusión entre categorías normativas con diferente jerarquía, materia y trámite.",
+      "fuente_autorizada": [
+        "Constitución Política de Colombia",
+        "Artículo 152 Constitución Política",
+        "Artículo 374 Constitución Política",
+        "Régimen legislativo colombiano",
+        "Tipología normativa"
+      ],
+      "componente_modulo": "Tipos de leyes y normas",
+      "competencia": "Clasificación normativa básica",
+      "afirmacion": "El acto legislativo reforma la Constitución; la ley estatutaria regula materias especiales con trámite reforzado; la ley ordinaria regula materias generales mediante trámite legislativo común.",
+      "evidencia_observable": "Distingue función, jerarquía y materia de los tres tipos normativos.",
+      "tipo_de_evidencia": "Comprensión constitucional comparativa",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "D"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante diferencia acto legislativo, ley ordinaria y ley estatutaria en el marco constitucional colombiano.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con ciudadanía, ciencias sociales, derecho constitucional, normatividad educativa o gestión pública.",
-        "blueprint": {
-            "problematica_principal": "Confusión entre categorías normativas con diferente jerarquía, materia y trámite.",
-            "fuente_autorizada": [
-                "Constitución Política de Colombia",
-                "Artículo 152 Constitución Política",
-                "Artículo 374 Constitución Política",
-                "Régimen legislativo colombiano",
-                "Tipología normativa"
-            ],
-            "componente_modulo": "Tipos de leyes y normas",
-            "competencia": "Clasificación normativa básica",
-            "afirmacion": "El acto legislativo reforma la Constitución; la ley estatutaria regula materias especiales con trámite reforzado; la ley ordinaria regula materias generales mediante trámite legislativo común.",
-            "evidencia_observable": "Distingue función, jerarquía y materia de los tres tipos normativos.",
-            "tipo_de_evidencia": "Comprensión constitucional comparativa",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "D"
-        },
-        "claim": "El evaluado comprende que las normas no tienen el mismo alcance ni el mismo procedimiento de expedición.",
-        "evidencia_observable": "Selecciona una comparación correcta entre acto legislativo, ley ordinaria y ley estatutaria.",
-        "tarea_cognitiva": "Comparar categorías normativas constitucionales.",
-        "tipo_de_pregunta": "Pregunta conceptual normativa comparativa",
-        "dificultad_esperada": "Media-Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Exigir tecnicismo jurídico excesivo",
-                "revision": "La clave se concentra en diferencias esenciales."
-            },
-            {
-                "riesgo": "Confundir ley estatutaria con cualquier ley importante",
-                "revision": "La opción correcta vincula materia especial y trámite reforzado."
-            },
-            {
-                "riesgo": "Confundir acto legislativo con ley ordinaria",
-                "revision": "La clave identifica reforma constitucional."
-            }
-        ]
+    "claim": "El evaluado comprende que las normas no tienen el mismo alcance ni el mismo procedimiento de expedición.",
+    "evidencia_observable": "Selecciona una comparación correcta entre acto legislativo, ley ordinaria y ley estatutaria.",
+    "tarea_cognitiva": "Comparar categorías normativas constitucionales.",
+    "tipo_de_pregunta": "Pregunta conceptual normativa comparativa",
+    "dificultad_esperada": "Media-Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Exigir tecnicismo jurídico excesivo",
+        "revision": "La clave se concentra en diferencias esenciales."
+      },
+      {
+        "riesgo": "Confundir ley estatutaria con cualquier ley importante",
+        "revision": "La opción correcta vincula materia especial y trámite reforzado."
+      },
+      {
+        "riesgo": "Confundir acto legislativo con ley ordinaria",
+        "revision": "La clave identifica reforma constitucional."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un docente de ciencias sociales quiere explicar la diferencia entre un Acto Legislativo, una Ley Ordinaria y una Ley Estatutaria. Sus estudiantes creen que todas las normas expedidas por el Congreso tienen el mismo rango, materia y procedimiento.\n\n¿Cuál explicación es correcta?",
+    "opciones": {
+      "A": "El acto legislativo regula asuntos cotidianos de trámite común; la ley ordinaria reforma la Constitución; la ley estatutaria solo aprueba horarios escolares.",
+      "B": "Las tres figuras son idénticas y solo cambian de nombre.",
+      "C": "La ley ordinaria siempre tiene mayor jerarquía que la Constitución.",
+      "D": "El acto legislativo reforma la Constitución; la ley ordinaria regula materias generales; la ley estatutaria regula materias especiales como derechos fundamentales, administración de justicia o mecanismos de participación, con trámite reforzado."
     },
-    "item": {
-        "enunciado": "Un docente de ciencias sociales quiere explicar la diferencia entre un Acto Legislativo, una Ley Ordinaria y una Ley Estatutaria. Sus estudiantes creen que todas las normas expedidas por el Congreso tienen el mismo rango, materia y procedimiento.\n\n¿Cuál explicación es correcta?",
-        "opciones": {
-            "A": "El acto legislativo regula asuntos cotidianos de trámite común; la ley ordinaria reforma la Constitución; la ley estatutaria solo aprueba horarios escolares.",
-            "B": "Las tres figuras son idénticas y solo cambian de nombre.",
-            "C": "La ley ordinaria siempre tiene mayor jerarquía que la Constitución.",
-            "D": "El acto legislativo reforma la Constitución; la ley ordinaria regula materias generales; la ley estatutaria regula materias especiales como derechos fundamentales, administración de justicia o mecanismos de participación, con trámite reforzado."
-        },
-        "respuesta_correcta": "D"
+    "respuesta_correcta": "D"
+  },
+  "ficha_tecnica": {
+    "componente": "Tipos de leyes y normas",
+    "competencia": "Clasificación normativa básica",
+    "claim_evaluado": "El evaluado comprende que las normas no tienen el mismo alcance ni el mismo procedimiento de expedición.",
+    "evidencia": "Selecciona una comparación correcta entre acto legislativo, ley ordinaria y ley estatutaria.",
+    "proceso_cognitivo": "Comprensión constitucional comparativa",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media-Alta",
+    "respuesta_correcta": "D",
+    "distractores": {
+      "A": "Invierte funciones y atribuye materias inexistentes.",
+      "B": "Niega diferencias de jerarquía, materia y trámite.",
+      "C": "Desconoce la supremacía constitucional."
     },
-    "ficha_tecnica": {
-        "componente": "Tipos de leyes y normas",
-        "competencia": "Clasificación normativa básica",
-        "claim_evaluado": "El evaluado comprende que las normas no tienen el mismo alcance ni el mismo procedimiento de expedición.",
-        "evidencia": "Selecciona una comparación correcta entre acto legislativo, ley ordinaria y ley estatutaria.",
-        "proceso_cognitivo": "Comprensión constitucional comparativa",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media-Alta",
-        "respuesta_correcta": "D",
-        "distractores": {
-            "A": "Invierte funciones y atribuye materias inexistentes.",
-            "B": "Niega diferencias de jerarquía, materia y trámite.",
-            "C": "Desconoce la supremacía constitucional."
-        },
-        "fuente_autorizada": [
-            "Constitución Política de Colombia",
-            "Artículo 152 Constitución Política",
-            "Artículo 374 Constitución Política",
-            "Tipología normativa"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque resume las diferencias esenciales entre reforma constitucional, ley general y ley de materia estatutaria.",
-        "opcion_A": "Es incorrecta porque confunde las funciones de cada categoría.",
-        "opcion_B": "Es incorrecta porque existen diferencias materiales y procedimentales.",
-        "opcion_C": "Es incorrecta porque ninguna ley ordinaria está por encima de la Constitución."
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado con revisión jurídica recomendada.",
-        "argumento": "El ítem evalúa diferencias esenciales sin requerir memorización detallada de todo el procedimiento legislativo."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Validar con Constitución y material jurídico institucional antes de banco definitivo.",
-        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre tipos de normas: acto legislativo, ley ordinaria y ley estatutaria."
+    "fuente_autorizada": [
+      "Constitución Política de Colombia",
+      "Artículo 152 Constitución Política",
+      "Artículo 374 Constitución Política",
+      "Tipología normativa"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "opcion_A": "Es incorrecta porque confunde las funciones de cada categoría.",
+    "opcion_B": "Es incorrecta porque existen diferencias materiales y procedimentales.",
+    "opcion_C": "Es incorrecta porque ninguna ley ordinaria está por encima de la Constitución.",
+    "distractores": {
+      "A": "Es incorrecta porque confunde las funciones de cada categoría.",
+      "B": "Es incorrecta porque existen diferencias materiales y procedimentales.",
+      "C": "Es incorrecta porque ninguna ley ordinaria está por encima de la Constitución."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado con revisión jurídica recomendada.",
+    "argumento": "El ítem evalúa diferencias esenciales sin requerir memorización detallada de todo el procedimiento legislativo."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Validar con Constitución y material jurídico institucional antes de banco definitivo.",
+    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre tipos de normas: acto legislativo, ley ordinaria y ley estatutaria."
+  }
 }

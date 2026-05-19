@@ -1,99 +1,104 @@
 {
-    "id_item": "DIL_B07_I04",
-    "archivo_sugerido": "DIL_B07_I04_mayorias_no_desconocen_derechos_fundamentales_nna.json",
-    "bloque": {
-        "codigo_bloque": "DIL_B07",
-        "nombre": "Mecanismos de participación ciudadana: plebiscito, consulta y límites",
-        "estado_en_lista": "Bloque 7 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 4 de 4"
+  "id_item": "DIL_B07_I04",
+  "archivo_sugerido": "DIL_B07_I04_mayorias_no_desconocen_derechos_fundamentales_nna.json",
+  "bloque": {
+    "codigo_bloque": "DIL_B07",
+    "nombre": "Mecanismos de participación ciudadana: plebiscito, consulta y límites",
+    "estado_en_lista": "Bloque 7 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 4 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante comprende que la democracia participativa está limitada por la Constitución, los derechos fundamentales y la prevalencia de los derechos de niños, niñas y adolescentes.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con ciudadanía, derecho constitucional, protección integral, docencia o ciencias sociales.",
+    "blueprint": {
+      "problematica_principal": "Interpretación de la mayoría electoral como poder ilimitado para decidir sobre derechos fundamentales.",
+      "fuente_autorizada": [
+        "Constitución Política de Colombia",
+        "Artículo 44 Constitución Política",
+        "Ley 1098 de 2006",
+        "Ley 1757 de 2015",
+        "Estado constitucional de derecho"
+      ],
+      "componente_modulo": "Límites constitucionales de las mayorías",
+      "competencia": "Comprensión del equilibrio entre participación y derechos fundamentales",
+      "afirmacion": "La voluntad mayoritaria debe respetar la Constitución y no puede anular derechos fundamentales, especialmente los de NNA.",
+      "evidencia_observable": "Reconoce que la participación democrática opera dentro de límites constitucionales.",
+      "tipo_de_evidencia": "Juicio constitucional aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "C"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante comprende que la democracia participativa está limitada por la Constitución, los derechos fundamentales y la prevalencia de los derechos de niños, niñas y adolescentes.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con ciudadanía, derecho constitucional, protección integral, docencia o ciencias sociales.",
-        "blueprint": {
-            "problematica_principal": "Interpretación de la mayoría electoral como poder ilimitado para decidir sobre derechos fundamentales.",
-            "fuente_autorizada": [
-                "Constitución Política de Colombia",
-                "Artículo 44 Constitución Política",
-                "Ley 1098 de 2006",
-                "Ley 1757 de 2015",
-                "Estado constitucional de derecho"
-            ],
-            "componente_modulo": "Límites constitucionales de las mayorías",
-            "competencia": "Comprensión del equilibrio entre participación y derechos fundamentales",
-            "afirmacion": "La voluntad mayoritaria debe respetar la Constitución y no puede anular derechos fundamentales, especialmente los de NNA.",
-            "evidencia_observable": "Reconoce que la participación democrática opera dentro de límites constitucionales.",
-            "tipo_de_evidencia": "Juicio constitucional aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "C"
-        },
-        "claim": "El evaluado comprende que participación ciudadana y protección de derechos no son opuestas, sino que deben armonizarse dentro del Estado constitucional.",
-        "evidencia_observable": "Selecciona una explicación que limita decisiones mayoritarias cuando afectan derechos fundamentales.",
-        "tarea_cognitiva": "Aplicar límites constitucionales a una decisión de democracia directa.",
-        "tipo_de_pregunta": "Pregunta conceptual constitucional aplicada",
-        "dificultad_esperada": "Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Presentar democracia directa como amenaza en todos los casos",
-                "revision": "La clave no niega participación; exige respeto constitucional."
-            },
-            {
-                "riesgo": "Subordinar derechos de NNA a mayorías",
-                "revision": "El ítem enfatiza prevalencia de derechos."
-            },
-            {
-                "riesgo": "Despolitizar ciudadanía",
-                "revision": "La opción correcta conserva participación dentro de límites de derechos."
-            }
-        ]
+    "claim": "El evaluado comprende que participación ciudadana y protección de derechos no son opuestas, sino que deben armonizarse dentro del Estado constitucional.",
+    "evidencia_observable": "Selecciona una explicación que limita decisiones mayoritarias cuando afectan derechos fundamentales.",
+    "tarea_cognitiva": "Aplicar límites constitucionales a una decisión de democracia directa.",
+    "tipo_de_pregunta": "Pregunta conceptual constitucional aplicada",
+    "dificultad_esperada": "Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Presentar democracia directa como amenaza en todos los casos",
+        "revision": "La clave no niega participación; exige respeto constitucional."
+      },
+      {
+        "riesgo": "Subordinar derechos de NNA a mayorías",
+        "revision": "El ítem enfatiza prevalencia de derechos."
+      },
+      {
+        "riesgo": "Despolitizar ciudadanía",
+        "revision": "La opción correcta conserva participación dentro de límites de derechos."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Una comunidad propone votar una medida que afectaría el acceso de niños, niñas y adolescentes a espacios educativos y comunitarios. La mayoría afirma que, si gana la votación, la medida será válida sin importar sus efectos sobre los derechos de los menores.\n\n¿Cuál principio constitucional limita esa interpretación?",
+    "opciones": {
+      "A": "Que la mayoría puede eliminar derechos fundamentales cuando lo considere conveniente.",
+      "B": "Que los derechos de niños, niñas y adolescentes dependen de autorización comunitaria.",
+      "C": "Que la participación democrática debe respetar la Constitución, los derechos fundamentales y la prevalencia de los derechos de los niños.",
+      "D": "Que los mecanismos de participación no tienen ninguna relación con la ciudadanía."
     },
-    "item": {
-        "enunciado": "Una comunidad propone votar una medida que afectaría el acceso de niños, niñas y adolescentes a espacios educativos y comunitarios. La mayoría afirma que, si gana la votación, la medida será válida sin importar sus efectos sobre los derechos de los menores.\n\n¿Cuál principio constitucional limita esa interpretación?",
-        "opciones": {
-            "A": "Que la mayoría puede eliminar derechos fundamentales cuando lo considere conveniente.",
-            "B": "Que los derechos de niños, niñas y adolescentes dependen de autorización comunitaria.",
-            "C": "Que la participación democrática debe respetar la Constitución, los derechos fundamentales y la prevalencia de los derechos de los niños.",
-            "D": "Que los mecanismos de participación no tienen ninguna relación con la ciudadanía."
-        },
-        "respuesta_correcta": "C"
+    "respuesta_correcta": "C"
+  },
+  "ficha_tecnica": {
+    "componente": "Límites constitucionales de las mayorías",
+    "competencia": "Comprensión del equilibrio entre participación y derechos fundamentales",
+    "claim_evaluado": "El evaluado comprende que participación ciudadana y protección de derechos no son opuestas, sino que deben armonizarse dentro del Estado constitucional.",
+    "evidencia": "Selecciona una explicación que limita decisiones mayoritarias cuando afectan derechos fundamentales.",
+    "proceso_cognitivo": "Juicio constitucional aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Alta",
+    "respuesta_correcta": "C",
+    "distractores": {
+      "A": "Convierte la mayoría en poder absoluto.",
+      "B": "Subordina derechos fundamentales a aprobación comunitaria.",
+      "D": "Niega el valor de los mecanismos de participación."
     },
-    "ficha_tecnica": {
-        "componente": "Límites constitucionales de las mayorías",
-        "competencia": "Comprensión del equilibrio entre participación y derechos fundamentales",
-        "claim_evaluado": "El evaluado comprende que participación ciudadana y protección de derechos no son opuestas, sino que deben armonizarse dentro del Estado constitucional.",
-        "evidencia": "Selecciona una explicación que limita decisiones mayoritarias cuando afectan derechos fundamentales.",
-        "proceso_cognitivo": "Juicio constitucional aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Alta",
-        "respuesta_correcta": "C",
-        "distractores": {
-            "A": "Convierte la mayoría en poder absoluto.",
-            "B": "Subordina derechos fundamentales a aprobación comunitaria.",
-            "D": "Niega el valor de los mecanismos de participación."
-        },
-        "fuente_autorizada": [
-            "Constitución Política de Colombia",
-            "Artículo 44 Constitución Política",
-            "Ley 1098 de 2006",
-            "Ley 1757 de 2015",
-            "Estado constitucional de derecho"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque en un Estado constitucional la participación ciudadana se ejerce dentro de límites de derechos fundamentales y protección reforzada de la niñez.",
-        "opcion_A": "Es incorrecta porque ninguna mayoría puede eliminar derechos fundamentales.",
-        "opcion_B": "Es incorrecta porque los derechos de NNA no dependen de autorización comunitaria.",
-        "opcion_D": "Es incorrecta porque los mecanismos de participación sí son formas de ciudadanía democrática."
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado con revisión jurídica recomendada.",
-        "argumento": "El ítem protege derechos fundamentales sin deslegitimar la participación democrática."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado con revisión jurídica",
-        "observacion": "Validar contra jurisprudencia constitucional específica si se desea aplicar en una prueba de alto impacto.",
-        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre mecanismos de participación ciudadana."
+    "fuente_autorizada": [
+      "Constitución Política de Colombia",
+      "Artículo 44 Constitución Política",
+      "Ley 1098 de 2006",
+      "Ley 1757 de 2015",
+      "Estado constitucional de derecho"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "opcion_A": "Es incorrecta porque ninguna mayoría puede eliminar derechos fundamentales.",
+    "opcion_B": "Es incorrecta porque los derechos de NNA no dependen de autorización comunitaria.",
+    "opcion_D": "Es incorrecta porque los mecanismos de participación sí son formas de ciudadanía democrática.",
+    "distractores": {
+      "A": "Es incorrecta porque ninguna mayoría puede eliminar derechos fundamentales.",
+      "B": "Es incorrecta porque los derechos de NNA no dependen de autorización comunitaria.",
+      "D": "Es incorrecta porque los mecanismos de participación sí son formas de ciudadanía democrática."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado con revisión jurídica recomendada.",
+    "argumento": "El ítem protege derechos fundamentales sin deslegitimar la participación democrática."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado con revisión jurídica",
+    "observacion": "Validar contra jurisprudencia constitucional específica si se desea aplicar en una prueba de alto impacto.",
+    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre mecanismos de participación ciudadana."
+  }
 }

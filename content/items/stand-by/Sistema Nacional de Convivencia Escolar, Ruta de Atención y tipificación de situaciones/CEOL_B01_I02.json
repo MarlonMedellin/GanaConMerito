@@ -1,101 +1,106 @@
 {
-    "id_item": "CEOL_B01_I02",
-    "archivo_sugerido": "CEOL_B01_I02_contexto_historico_normativo_ley_1620.json",
-    "bloque": {
-        "codigo_bloque": "CEOL_B01",
-        "nombre": "Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones",
-        "estado_en_lista": "Bloque 1 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 2 de 6"
+  "id_item": "CEOL_B01_I02",
+  "archivo_sugerido": "CEOL_B01_I02_contexto_historico_normativo_ley_1620.json",
+  "bloque": {
+    "codigo_bloque": "CEOL_B01",
+    "nombre": "Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones",
+    "estado_en_lista": "Bloque 1 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 2 de 6"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce las problemáticas sociales y escolares que motivaron la expedición de la Ley 1620 de 2013.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, orientación escolar, coordinación, rectoría o gestión de convivencia.",
+    "blueprint": {
+      "problematica_principal": "Desconocimiento del contexto que dio origen a la Ley 1620.",
+      "fuente_autorizada": [
+        "Ley 1620 de 2013",
+        "Decreto 1965 de 2013",
+        "Ley 1098 de 2006",
+        "Orientaciones MEN sobre convivencia escolar"
+      ],
+      "componente_modulo": "Convivencia Escolar y Marco Normativo",
+      "competencia": "Interpretación normativa contextual",
+      "afirmacion": "La Ley 1620 surge para responder a problemáticas de convivencia, violencia escolar, acoso, ciberacoso y vulneración de derechos.",
+      "evidencia_observable": "Identifica las problemáticas sociales y escolares que justifican el Sistema Nacional de Convivencia Escolar.",
+      "tipo_de_evidencia": "Interpretación normativa aplicada",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce las problemáticas sociales y escolares que motivaron la expedición de la Ley 1620 de 2013.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, orientación escolar, coordinación, rectoría o gestión de convivencia.",
-        "blueprint": {
-            "problematica_principal": "Desconocimiento del contexto que dio origen a la Ley 1620.",
-            "fuente_autorizada": [
-                "Ley 1620 de 2013",
-                "Decreto 1965 de 2013",
-                "Ley 1098 de 2006",
-                "Orientaciones MEN sobre convivencia escolar"
-            ],
-            "componente_modulo": "Convivencia Escolar y Marco Normativo",
-            "competencia": "Interpretación normativa contextual",
-            "afirmacion": "La Ley 1620 surge para responder a problemáticas de convivencia, violencia escolar, acoso, ciberacoso y vulneración de derechos.",
-            "evidencia_observable": "Identifica las problemáticas sociales y escolares que justifican el Sistema Nacional de Convivencia Escolar.",
-            "tipo_de_evidencia": "Interpretación normativa aplicada",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que la Ley 1620 fue expedida para fortalecer la convivencia escolar y responder a problemáticas como acoso, violencia escolar, ciberacoso, vulneración de derechos humanos, sexuales y reproductivos y deterioro del clima escolar.",
-        "evidencia_observable": "Selecciona una explicación que relaciona la norma con la prevención y atención de problemáticas reales de convivencia escolar.",
-        "tarea_cognitiva": "Analizar el propósito histórico y social de la Ley 1620.",
-        "tipo_de_pregunta": "Pregunta conceptual normativa aplicada",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Reducir la Ley 1620 a una norma contra el bullying",
-                "revision": "La clave incluye acoso, violencia escolar, ciberacoso, derechos humanos, sexuales y reproductivos y clima escolar."
-            },
-            {
-                "riesgo": "Lenguaje alarmista",
-                "revision": "La redacción presenta las problemáticas de forma institucional y sobria."
-            },
-            {
-                "riesgo": "Sesgo por experiencia institucional",
-                "revision": "No exige haber vivido casos concretos; evalúa comprensión normativa general."
-            },
-            {
-                "riesgo": "Ambigüedad entre convivencia y rendimiento académico",
-                "revision": "Los distractores separan claramente problemáticas de convivencia de asuntos académicos o administrativos."
-            }
-        ]
+    "claim": "El evaluado comprende que la Ley 1620 fue expedida para fortalecer la convivencia escolar y responder a problemáticas como acoso, violencia escolar, ciberacoso, vulneración de derechos humanos, sexuales y reproductivos y deterioro del clima escolar.",
+    "evidencia_observable": "Selecciona una explicación que relaciona la norma con la prevención y atención de problemáticas reales de convivencia escolar.",
+    "tarea_cognitiva": "Analizar el propósito histórico y social de la Ley 1620.",
+    "tipo_de_pregunta": "Pregunta conceptual normativa aplicada",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Reducir la Ley 1620 a una norma contra el bullying",
+        "revision": "La clave incluye acoso, violencia escolar, ciberacoso, derechos humanos, sexuales y reproductivos y clima escolar."
+      },
+      {
+        "riesgo": "Lenguaje alarmista",
+        "revision": "La redacción presenta las problemáticas de forma institucional y sobria."
+      },
+      {
+        "riesgo": "Sesgo por experiencia institucional",
+        "revision": "No exige haber vivido casos concretos; evalúa comprensión normativa general."
+      },
+      {
+        "riesgo": "Ambigüedad entre convivencia y rendimiento académico",
+        "revision": "Los distractores separan claramente problemáticas de convivencia de asuntos académicos o administrativos."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "En una capacitación institucional se explica que la Ley 1620 de 2013 no surgió únicamente para aumentar sanciones escolares, sino para responder a problemáticas sociales y escolares que afectaban la convivencia y los derechos de niños, niñas y adolescentes.\n\n¿Cuáles problemáticas motivaron principalmente la expedición de esta ley?",
+    "opciones": {
+      "A": "El acoso escolar, la violencia escolar, el ciberacoso, la vulneración de derechos humanos, sexuales y reproductivos y el deterioro del clima escolar.",
+      "B": "La necesidad de aumentar tareas, exámenes y jornadas académicas para mejorar resultados en pruebas externas.",
+      "C": "La falta de inventarios institucionales y la necesidad de regular compras, bienes y presupuesto escolar.",
+      "D": "La necesidad de eliminar la participación de familias y estudiantes en los procesos de convivencia."
     },
-    "item": {
-        "enunciado": "En una capacitación institucional se explica que la Ley 1620 de 2013 no surgió únicamente para aumentar sanciones escolares, sino para responder a problemáticas sociales y escolares que afectaban la convivencia y los derechos de niños, niñas y adolescentes.\n\n¿Cuáles problemáticas motivaron principalmente la expedición de esta ley?",
-        "opciones": {
-            "A": "El acoso escolar, la violencia escolar, el ciberacoso, la vulneración de derechos humanos, sexuales y reproductivos y el deterioro del clima escolar.",
-            "B": "La necesidad de aumentar tareas, exámenes y jornadas académicas para mejorar resultados en pruebas externas.",
-            "C": "La falta de inventarios institucionales y la necesidad de regular compras, bienes y presupuesto escolar.",
-            "D": "La necesidad de eliminar la participación de familias y estudiantes en los procesos de convivencia."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Convivencia Escolar y Marco Normativo",
+    "competencia": "Interpretación normativa contextual",
+    "claim_evaluado": "El evaluado comprende que la Ley 1620 fue expedida para fortalecer la convivencia escolar y responder a problemáticas como acoso, violencia escolar, ciberacoso, vulneración de derechos humanos, sexuales y reproductivos y deterioro del clima escolar.",
+    "evidencia": "Selecciona una explicación que relaciona la norma con la prevención y atención de problemáticas reales de convivencia escolar.",
+    "proceso_cognitivo": "Interpretación normativa aplicada",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Confunde convivencia escolar con intensificación académica.",
+      "C": "Introduce asuntos administrativos ajenos al propósito de la Ley 1620.",
+      "D": "Niega la corresponsabilidad y participación que orientan el sistema de convivencia."
     },
-    "ficha_tecnica": {
-        "componente": "Convivencia Escolar y Marco Normativo",
-        "competencia": "Interpretación normativa contextual",
-        "claim_evaluado": "El evaluado comprende que la Ley 1620 fue expedida para fortalecer la convivencia escolar y responder a problemáticas como acoso, violencia escolar, ciberacoso, vulneración de derechos humanos, sexuales y reproductivos y deterioro del clima escolar.",
-        "evidencia": "Selecciona una explicación que relaciona la norma con la prevención y atención de problemáticas reales de convivencia escolar.",
-        "proceso_cognitivo": "Interpretación normativa aplicada",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Confunde convivencia escolar con intensificación académica.",
-            "C": "Introduce asuntos administrativos ajenos al propósito de la Ley 1620.",
-            "D": "Niega la corresponsabilidad y participación que orientan el sistema de convivencia."
-        },
-        "fuente_autorizada": [
-            "Ley 1620 de 2013",
-            "Decreto 1965 de 2013",
-            "Ley 1098 de 2006",
-            "Orientaciones MEN sobre convivencia escolar"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque identifica problemáticas asociadas al acoso, la violencia escolar, el ciberacoso, la vulneración de derechos y el clima escolar, que justifican la creación del Sistema Nacional de Convivencia Escolar.",
-        "opcion_B": "Es incorrecta porque se refiere a rendimiento académico y carga escolar, no al origen de la Ley 1620.",
-        "opcion_C": "Es incorrecta porque los inventarios y el presupuesto no constituyen la problemática central regulada por esta ley.",
-        "opcion_D": "Es incorrecta porque la Ley 1620 promueve corresponsabilidad y participación, no su eliminación."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem no exige conocimiento histórico detallado ni experiencia jurídica; evalúa la comprensión de las problemáticas que la norma busca prevenir, atender y mitigar."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 6 preguntas sobre Sistema Nacional de Convivencia Escolar y Ruta de Atención Integral."
+    "fuente_autorizada": [
+      "Ley 1620 de 2013",
+      "Decreto 1965 de 2013",
+      "Ley 1098 de 2006",
+      "Orientaciones MEN sobre convivencia escolar"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque se refiere a rendimiento académico y carga escolar, no al origen de la Ley 1620.",
+    "opcion_C": "Es incorrecta porque los inventarios y el presupuesto no constituyen la problemática central regulada por esta ley.",
+    "opcion_D": "Es incorrecta porque la Ley 1620 promueve corresponsabilidad y participación, no su eliminación.",
+    "distractores": {
+      "B": "Es incorrecta porque se refiere a rendimiento académico y carga escolar, no al origen de la Ley 1620.",
+      "C": "Es incorrecta porque los inventarios y el presupuesto no constituyen la problemática central regulada por esta ley.",
+      "D": "Es incorrecta porque la Ley 1620 promueve corresponsabilidad y participación, no su eliminación."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem no exige conocimiento histórico detallado ni experiencia jurídica; evalúa la comprensión de las problemáticas que la norma busca prevenir, atender y mitigar."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 6 preguntas sobre Sistema Nacional de Convivencia Escolar y Ruta de Atención Integral."
+  }
 }

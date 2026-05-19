@@ -1,40 +1,40 @@
 {
-    "id_item": "MTV_B08_I13",
-    "archivo_sugerido": "MTV_B08_I13_habilidad_blanda_resolucion_conflictos.json",
-    "proposito_de_uso": "Evaluar si el aspirante reconoce la resolución de conflictos como habilidad blanda y competencia comportamental.",
-    "blueprint": {
-        "componente_modulo": "Resolución de conflictos",
-        "competencia": "Gestión interpersonal y convivencia",
-        "afirmacion": "La resolución de conflictos implica escucha, regulación emocional, análisis de la situación, diálogo, búsqueda de acuerdos y respeto por las partes.",
-        "evidencia_observable": "Selecciona una actuación mediadora y no punitiva ante una tensión escolar.",
-        "tipo_de_evidencia": "Juicio situacional comportamental",
-        "dificultad_esperada": "Alta",
-        "clave": "B"
+  "id_item": "MTV_B08_I13",
+  "archivo_sugerido": "MTV_B08_I13_habilidad_blanda_resolucion_conflictos.json",
+  "proposito_de_uso": "Evaluar si el aspirante reconoce la resolución de conflictos como habilidad blanda y competencia comportamental.",
+  "blueprint": {
+    "componente_modulo": "Resolución de conflictos",
+    "competencia": "Gestión interpersonal y convivencia",
+    "afirmacion": "La resolución de conflictos implica escucha, regulación emocional, análisis de la situación, diálogo, búsqueda de acuerdos y respeto por las partes.",
+    "evidencia_observable": "Selecciona una actuación mediadora y no punitiva ante una tensión escolar.",
+    "tipo_de_evidencia": "Juicio situacional comportamental",
+    "dificultad_esperada": "Alta",
+    "clave": "B"
+  },
+  "item": {
+    "enunciado": "Dos estudiantes discuten fuertemente durante una actividad grupal. El docente evita gritar o imponer una sanción inmediata, escucha a cada parte, reconstruye los hechos, promueve acuerdos y orienta la reparación del vínculo.\n\n¿Qué habilidad blanda está poniendo en práctica?",
+    "opciones": {
+      "A": "Indiferencia frente al conflicto.",
+      "B": "Resolución de conflictos.",
+      "C": "Dominio exclusivo de contenidos teóricos.",
+      "D": "Competencia caligráfica."
     },
-    "item": {
-        "enunciado": "Dos estudiantes discuten fuertemente durante una actividad grupal. El docente evita gritar o imponer una sanción inmediata, escucha a cada parte, reconstruye los hechos, promueve acuerdos y orienta la reparación del vínculo.\n\n¿Qué habilidad blanda está poniendo en práctica?",
-        "opciones": {
-            "A": "Indiferencia frente al conflicto.",
-            "B": "Resolución de conflictos.",
-            "C": "Dominio exclusivo de contenidos teóricos.",
-            "D": "Competencia caligráfica."
-        },
-        "respuesta_correcta": "B"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque el docente media, escucha, orienta acuerdos y promueve reparación.",
-        "distractores": {
-            "A": "El docente interviene activamente, no es indiferente.",
-            "C": "El conocimiento teórico no describe la acción mediadora.",
-            "D": "La caligrafía no guarda relación con el conflicto."
-        }
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado",
-        "argumento": "El ítem promueve una lectura restaurativa y profesional del conflicto escolar."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem fuerte para competencias comportamentales y convivencia."
+    "respuesta_correcta": "B"
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "distractores": {
+      "A": "El docente interviene activamente, no es indiferente.",
+      "C": "El conocimiento teórico no describe la acción mediadora.",
+      "D": "La caligrafía no guarda relación con el conflicto."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado",
+    "argumento": "El ítem promueve una lectura restaurativa y profesional del conflicto escolar."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem fuerte para competencias comportamentales y convivencia."
+  }
 }

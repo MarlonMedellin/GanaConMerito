@@ -1,97 +1,102 @@
 {
-    "id_item": "NFL_B02_I01",
-    "archivo_sugerido": "NFL_B02_I01_concepto_cultura_escolar_identidad_institucional.json",
-    "bloque": {
-        "codigo_bloque": "NFL_B02",
-        "nombre": "Cultura escolar, identidad institucional y PEI",
-        "estado_en_lista": "Bloque 2 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 1 de 3"
+  "id_item": "NFL_B02_I01",
+  "archivo_sugerido": "NFL_B02_I01_concepto_cultura_escolar_identidad_institucional.json",
+  "bloque": {
+    "codigo_bloque": "NFL_B02",
+    "nombre": "Cultura escolar, identidad institucional y PEI",
+    "estado_en_lista": "Bloque 2 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 1 de 3"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante identifica el concepto de cultura escolar como conjunto de características identitarias, valores, costumbres y prácticas que diferencian a una institución educativa.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, gestión escolar, coordinación, rectoría, orientación o convivencia.",
+    "blueprint": {
+      "problematica_principal": "Confusión entre cultura escolar, currículo, manual de convivencia y clima escolar.",
+      "fuente_autorizada": [
+        "Ley 115 de 1994",
+        "Proyecto Educativo Institucional",
+        "Gestión escolar",
+        "Teoría de cultura institucional"
+      ],
+      "componente_modulo": "Cultura escolar",
+      "competencia": "Identificación de identidad institucional",
+      "afirmacion": "La cultura escolar expresa valores, costumbres, símbolos, prácticas, necesidades y formas de relación que dan identidad a una institución.",
+      "evidencia_observable": "Reconoce el concepto adecuado ante ejemplos como colegio religioso, colegio público o instituciones con prácticas diferenciadas.",
+      "tipo_de_evidencia": "Comprensión conceptual aplicada",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante identifica el concepto de cultura escolar como conjunto de características identitarias, valores, costumbres y prácticas que diferencian a una institución educativa.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, gestión escolar, coordinación, rectoría, orientación o convivencia.",
-        "blueprint": {
-            "problematica_principal": "Confusión entre cultura escolar, currículo, manual de convivencia y clima escolar.",
-            "fuente_autorizada": [
-                "Ley 115 de 1994",
-                "Proyecto Educativo Institucional",
-                "Gestión escolar",
-                "Teoría de cultura institucional"
-            ],
-            "componente_modulo": "Cultura escolar",
-            "competencia": "Identificación de identidad institucional",
-            "afirmacion": "La cultura escolar expresa valores, costumbres, símbolos, prácticas, necesidades y formas de relación que dan identidad a una institución.",
-            "evidencia_observable": "Reconoce el concepto adecuado ante ejemplos como colegio religioso, colegio público o instituciones con prácticas diferenciadas.",
-            "tipo_de_evidencia": "Comprensión conceptual aplicada",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que la cultura escolar es una dimensión identitaria que orienta prácticas, relaciones y sentido institucional.",
-        "evidencia_observable": "Selecciona la definición correcta de cultura escolar.",
-        "tarea_cognitiva": "Reconocer un concepto de gestión y vida institucional.",
-        "tipo_de_pregunta": "Pregunta conceptual aplicada",
-        "dificultad_esperada": "Baja-Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Confundir cultura escolar con religión institucional",
-                "revision": "La clave incluye diversos tipos de instituciones, no solo religiosas."
-            },
-            {
-                "riesgo": "Reducir cultura escolar a reglamento",
-                "revision": "El ítem distingue valores, prácticas y costumbres."
-            },
-            {
-                "riesgo": "Presentar cultura como fija e inmodificable",
-                "revision": "La definición permite comprenderla como construcción institucional."
-            }
-        ]
+    "claim": "El evaluado comprende que la cultura escolar es una dimensión identitaria que orienta prácticas, relaciones y sentido institucional.",
+    "evidencia_observable": "Selecciona la definición correcta de cultura escolar.",
+    "tarea_cognitiva": "Reconocer un concepto de gestión y vida institucional.",
+    "tipo_de_pregunta": "Pregunta conceptual aplicada",
+    "dificultad_esperada": "Baja-Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Confundir cultura escolar con religión institucional",
+        "revision": "La clave incluye diversos tipos de instituciones, no solo religiosas."
+      },
+      {
+        "riesgo": "Reducir cultura escolar a reglamento",
+        "revision": "El ítem distingue valores, prácticas y costumbres."
+      },
+      {
+        "riesgo": "Presentar cultura como fija e inmodificable",
+        "revision": "La definición permite comprenderla como construcción institucional."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Dos instituciones educativas cumplen la misma normatividad general, pero actúan de manera diferente: una tiene una identidad religiosa fuerte, otra se reconoce como colegio público con énfasis comunitario, y otra se caracteriza por prácticas artísticas y participativas. Estas diferencias se expresan en valores, costumbres, símbolos, relaciones y formas de actuar.\n\n¿A qué concepto hace referencia este conjunto de características identitarias?",
+    "opciones": {
+      "A": "Cultura escolar.",
+      "B": "Regla de tres simple.",
+      "C": "Sanción disciplinaria.",
+      "D": "Promedio académico institucional."
     },
-    "item": {
-        "enunciado": "Dos instituciones educativas cumplen la misma normatividad general, pero actúan de manera diferente: una tiene una identidad religiosa fuerte, otra se reconoce como colegio público con énfasis comunitario, y otra se caracteriza por prácticas artísticas y participativas. Estas diferencias se expresan en valores, costumbres, símbolos, relaciones y formas de actuar.\n\n¿A qué concepto hace referencia este conjunto de características identitarias?",
-        "opciones": {
-            "A": "Cultura escolar.",
-            "B": "Regla de tres simple.",
-            "C": "Sanción disciplinaria.",
-            "D": "Promedio académico institucional."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Cultura escolar",
+    "competencia": "Identificación de identidad institucional",
+    "claim_evaluado": "El evaluado comprende que la cultura escolar es una dimensión identitaria que orienta prácticas, relaciones y sentido institucional.",
+    "evidencia": "Selecciona la definición correcta de cultura escolar.",
+    "proceso_cognitivo": "Reconocimiento conceptual aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Baja-Media",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Corresponde a un procedimiento matemático, no a identidad institucional.",
+      "C": "Reduce la vida institucional a castigo.",
+      "D": "Confunde identidad institucional con un indicador académico."
     },
-    "ficha_tecnica": {
-        "componente": "Cultura escolar",
-        "competencia": "Identificación de identidad institucional",
-        "claim_evaluado": "El evaluado comprende que la cultura escolar es una dimensión identitaria que orienta prácticas, relaciones y sentido institucional.",
-        "evidencia": "Selecciona la definición correcta de cultura escolar.",
-        "proceso_cognitivo": "Reconocimiento conceptual aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Baja-Media",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Corresponde a un procedimiento matemático, no a identidad institucional.",
-            "C": "Reduce la vida institucional a castigo.",
-            "D": "Confunde identidad institucional con un indicador académico."
-        },
-        "fuente_autorizada": [
-            "Ley 115 de 1994",
-            "Proyecto Educativo Institucional",
-            "Gestión escolar",
-            "Teoría de cultura institucional"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque la cultura escolar reúne valores, costumbres, símbolos, prácticas y formas de relación que distinguen a una institución.",
-        "opcion_B": "Es incorrecta porque no corresponde al campo de gestión escolar.",
-        "opcion_C": "Es incorrecta porque una sanción no define toda la identidad institucional.",
-        "opcion_D": "Es incorrecta porque el promedio académico no equivale a cultura escolar."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem permite reconocer identidades institucionales diversas sin jerarquizarlas ni estigmatizarlas."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión conceptual posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 3 preguntas sobre cultura escolar, identidad institucional y PEI."
+    "fuente_autorizada": [
+      "Ley 115 de 1994",
+      "Proyecto Educativo Institucional",
+      "Gestión escolar",
+      "Teoría de cultura institucional"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque no corresponde al campo de gestión escolar.",
+    "opcion_C": "Es incorrecta porque una sanción no define toda la identidad institucional.",
+    "opcion_D": "Es incorrecta porque el promedio académico no equivale a cultura escolar.",
+    "distractores": {
+      "B": "Es incorrecta porque no corresponde al campo de gestión escolar.",
+      "C": "Es incorrecta porque una sanción no define toda la identidad institucional.",
+      "D": "Es incorrecta porque el promedio académico no equivale a cultura escolar."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem permite reconocer identidades institucionales diversas sin jerarquizarlas ni estigmatizarlas."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión conceptual posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 3 preguntas sobre cultura escolar, identidad institucional y PEI."
+  }
 }

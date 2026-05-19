@@ -1,40 +1,40 @@
 {
-    "id_item": "MTV_B10_I08",
-    "archivo_sugerido": "MTV_B10_I08_gestion_comunitaria_ejemplo_likert.json",
-    "proposito_de_uso": "Evaluar si el aspirante identifica una proposición de gestión comunitaria.",
-    "blueprint": {
-        "componente_modulo": "Gestión comunitaria",
-        "competencia": "Clasificación de dimensiones evaluadas",
-        "afirmacion": "Las proposiciones sobre relación con familias, entorno, comunidad, participación y corresponsabilidad pertenecen principalmente a la gestión comunitaria.",
-        "evidencia_observable": "Reconoce una actuación centrada en la relación escuela-familia-comunidad.",
-        "tipo_de_evidencia": "Clasificación conceptual aplicada",
-        "dificultad_esperada": "Media",
-        "clave": "D"
+  "id_item": "MTV_B10_I08",
+  "archivo_sugerido": "MTV_B10_I08_gestion_comunitaria_ejemplo_likert.json",
+  "proposito_de_uso": "Evaluar si el aspirante identifica una proposición de gestión comunitaria.",
+  "blueprint": {
+    "componente_modulo": "Gestión comunitaria",
+    "competencia": "Clasificación de dimensiones evaluadas",
+    "afirmacion": "Las proposiciones sobre relación con familias, entorno, comunidad, participación y corresponsabilidad pertenecen principalmente a la gestión comunitaria.",
+    "evidencia_observable": "Reconoce una actuación centrada en la relación escuela-familia-comunidad.",
+    "tipo_de_evidencia": "Clasificación conceptual aplicada",
+    "dificultad_esperada": "Media",
+    "clave": "D"
+  },
+  "item": {
+    "enunciado": "En una escala Likert aparece la proposición: 'Promuevo canales de comunicación respetuosos con las familias y participo en acciones institucionales para fortalecer la relación con el entorno'.\n\n¿A qué dimensión corresponde principalmente?",
+    "opciones": {
+      "A": "Gestión de fórmulas matemáticas.",
+      "B": "Gestión exclusivamente disciplinar.",
+      "C": "Gestión de inventario personal.",
+      "D": "Gestión comunitaria."
     },
-    "item": {
-        "enunciado": "En una escala Likert aparece la proposición: 'Promuevo canales de comunicación respetuosos con las familias y participo en acciones institucionales para fortalecer la relación con el entorno'.\n\n¿A qué dimensión corresponde principalmente?",
-        "opciones": {
-            "A": "Gestión de fórmulas matemáticas.",
-            "B": "Gestión exclusivamente disciplinar.",
-            "C": "Gestión de inventario personal.",
-            "D": "Gestión comunitaria."
-        },
-        "respuesta_correcta": "D"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque la proposición se refiere a familias, entorno y relación escuela-comunidad.",
-        "distractores": {
-            "A": "No tiene relación con fórmulas.",
-            "B": "No se limita al dominio de una disciplina.",
-            "C": "No trata de inventario personal."
-        }
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado",
-        "argumento": "El ítem reconoce la función comunitaria sin reducirla a tareas administrativas."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem directo para gestión comunitaria."
+    "respuesta_correcta": "D"
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "distractores": {
+      "A": "No tiene relación con fórmulas.",
+      "B": "No se limita al dominio de una disciplina.",
+      "C": "No trata de inventario personal."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado",
+    "argumento": "El ítem reconoce la función comunitaria sin reducirla a tareas administrativas."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem directo para gestión comunitaria."
+  }
 }

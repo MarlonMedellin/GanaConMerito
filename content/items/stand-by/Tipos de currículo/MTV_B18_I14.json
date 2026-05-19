@@ -1,36 +1,36 @@
 {
-    "id_item": "MTV_B18_I14",
-    "archivo_sugerido": "MTV_B18_I14_clasificacion_tipos_curriculo_integrada.json",
-    "proposito_de_uso": "Evaluar si el aspirante integra varios tipos de currículo en una sola situación.",
-    "blueprint": {
-        "componente_modulo": "Clasificación integrada de currículos",
-        "competencia": "Síntesis conceptual",
-        "afirmacion": "En una institución pueden coexistir currículo oficial, formal, operacional, oculto y nulo, según la relación entre norma, documento, práctica, valores implícitos y omisiones.",
-        "evidencia_observable": "Clasifica correctamente varias situaciones curriculares.",
-        "tipo_de_evidencia": "Síntesis comparativa",
-        "dificultad_esperada": "Alta",
-        "clave": "D"
+  "id_item": "MTV_B18_I14",
+  "archivo_sugerido": "MTV_B18_I14_clasificacion_tipos_curriculo_integrada.json",
+  "proposito_de_uso": "Evaluar si el aspirante integra varios tipos de currículo en una sola situación.",
+  "blueprint": {
+    "componente_modulo": "Clasificación integrada de currículos",
+    "competencia": "Síntesis conceptual",
+    "afirmacion": "En una institución pueden coexistir currículo oficial, formal, operacional, oculto y nulo, según la relación entre norma, documento, práctica, valores implícitos y omisiones.",
+    "evidencia_observable": "Clasifica correctamente varias situaciones curriculares.",
+    "tipo_de_evidencia": "Síntesis comparativa",
+    "dificultad_esperada": "Alta",
+    "clave": "D"
+  },
+  "item": {
+    "enunciado": "Una institución tiene lineamientos oficiales del Ministerio, un plan de estudios escrito, prácticas reales de aula, valores implícitos que se transmiten en la convivencia y temas que nunca se enseñan aunque estén planeados.\n\n¿Cuál opción clasifica mejor estos elementos?",
+    "opciones": {
+      "A": "Todo corresponde únicamente al currículo nulo.",
+      "B": "Todo corresponde únicamente al currículo oculto.",
+      "C": "No hay currículo porque existen contradicciones.",
+      "D": "Lineamientos oficiales: currículo oficial; plan escrito: currículo formal; práctica real: currículo operacional; valores implícitos: currículo oculto; temas omitidos: currículo nulo."
     },
-    "item": {
-        "enunciado": "Una institución tiene lineamientos oficiales del Ministerio, un plan de estudios escrito, prácticas reales de aula, valores implícitos que se transmiten en la convivencia y temas que nunca se enseñan aunque estén planeados.\n\n¿Cuál opción clasifica mejor estos elementos?",
-        "opciones": {
-            "A": "Todo corresponde únicamente al currículo nulo.",
-            "B": "Todo corresponde únicamente al currículo oculto.",
-            "C": "No hay currículo porque existen contradicciones.",
-            "D": "Lineamientos oficiales: currículo oficial; plan escrito: currículo formal; práctica real: currículo operacional; valores implícitos: currículo oculto; temas omitidos: currículo nulo."
-        },
-        "respuesta_correcta": "D"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque clasifica de forma integrada los principales tipos de currículo.",
-        "distractores": {
-            "A": "El currículo nulo solo explica lo omitido.",
-            "B": "El currículo oculto solo explica aprendizajes implícitos.",
-            "C": "Las contradicciones no eliminan la existencia de currículo; muestran tensiones curriculares."
-        }
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem de cierre recomendado para el bloque."
+    "respuesta_correcta": "D"
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "distractores": {
+      "A": "El currículo nulo solo explica lo omitido.",
+      "B": "El currículo oculto solo explica aprendizajes implícitos.",
+      "C": "Las contradicciones no eliminan la existencia de currículo; muestran tensiones curriculares."
     }
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem de cierre recomendado para el bloque."
+  }
 }

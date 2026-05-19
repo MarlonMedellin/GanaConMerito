@@ -1,94 +1,99 @@
 {
-    "id_item": "GA02_B05_I04",
-    "archivo_sugerido": "GA02_B05_I04_curriculo_nulo.json",
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce el currículo nulo como aquello que aparece planeado o esperado en el currículo formal, pero que no se enseña realmente en el aula por falta de tiempo, exceso de contenidos, baja pertinencia o dificultades pedagógicas.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
-        "blueprint": {
-            "problematica_principal": "Exceso de contenidos planificados que no se enseñan efectivamente en el aula.",
-            "fuente_autorizada": [
-                "Teoría curricular",
-                "Lineamientos curriculares del Ministerio de Educación Nacional",
-                "Proyecto Educativo Institucional",
-                "Planeación curricular institucional"
-            ],
-            "componente_modulo": "Currículo Educativo",
-            "competencia": "Comprensión curricular",
-            "afirmacion": "El currículo nulo se evidencia cuando contenidos, aprendizajes o experiencias planificadas no se desarrollan efectivamente.",
-            "evidencia_observable": "Reconoce una situación en la que un exceso de temarios planificados no llega a enseñarse en el aula.",
-            "tipo_de_evidencia": "Clasificación curricular en situación escolar",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "D"
-        },
-        "claim": "El evaluado comprende que el currículo nulo permite identificar brechas entre lo planificado en el papel y lo efectivamente enseñado, aprendido o vivido en el aula.",
-        "evidencia_observable": "Clasifica como currículo nulo una situación en la que contenidos planificados quedan sin desarrollarse por falta de tiempo o mediación pedagógica.",
-        "tarea_cognitiva": "Analizar una situación de planeación curricular y reconocer el tipo de currículo que se manifiesta.",
-        "tipo_de_pregunta": "Caso situacional de clasificación conceptual",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Culpabilización del docente",
-                "revision": "El ítem no atribuye la omisión exclusivamente al docente; presenta causas curriculares y organizativas como exceso de temarios o falta de tiempo."
-            },
-            {
-                "riesgo": "Ambigüedad entre currículo oficial y currículo nulo",
-                "revision": "La clave enfatiza la brecha entre lo planificado y lo efectivamente enseñado."
-            },
-            {
-                "riesgo": "Sesgo por área disciplinar",
-                "revision": "La situación puede aplicarse a cualquier área con exceso de contenidos."
-            },
-            {
-                "riesgo": "Lenguaje metafórico de currículo de papel",
-                "revision": "El enunciado explica el sentido de la expresión mediante una situación concreta."
-            }
-        ]
+  "id_item": "GA02_B05_I04",
+  "archivo_sugerido": "GA02_B05_I04_curriculo_nulo.json",
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce el currículo nulo como aquello que aparece planeado o esperado en el currículo formal, pero que no se enseña realmente en el aula por falta de tiempo, exceso de contenidos, baja pertinencia o dificultades pedagógicas.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
+    "blueprint": {
+      "problematica_principal": "Exceso de contenidos planificados que no se enseñan efectivamente en el aula.",
+      "fuente_autorizada": [
+        "Teoría curricular",
+        "Lineamientos curriculares del Ministerio de Educación Nacional",
+        "Proyecto Educativo Institucional",
+        "Planeación curricular institucional"
+      ],
+      "componente_modulo": "Currículo Educativo",
+      "competencia": "Comprensión curricular",
+      "afirmacion": "El currículo nulo se evidencia cuando contenidos, aprendizajes o experiencias planificadas no se desarrollan efectivamente.",
+      "evidencia_observable": "Reconoce una situación en la que un exceso de temarios planificados no llega a enseñarse en el aula.",
+      "tipo_de_evidencia": "Clasificación curricular en situación escolar",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "D"
     },
-    "item": {
-        "enunciado": "En una institución, la malla curricular de un área incluye una gran cantidad de temarios para el año escolar. Al finalizar el periodo, varios contenidos aparecen en la planeación, pero nunca fueron enseñados ni trabajados con los estudiantes debido al exceso de temas, falta de tiempo y escasa mediación pedagógica.\n\n¿Cómo se denomina este tipo de currículo de papel que está planificado, pero no se enseña realmente en el aula?",
-        "opciones": {
-            "A": "Currículo oficial, porque todo lo escrito en la planeación se convierte automáticamente en aprendizaje logrado.",
-            "B": "Currículo oculto, porque corresponde a valores y normas no escritas que se transmiten en la vida escolar.",
-            "C": "Currículo flexible, porque permite eliminar cualquier contenido sin revisar su pertinencia.",
-            "D": "Currículo nulo, porque corresponde a contenidos o experiencias planificadas que no se desarrollan efectivamente."
-        },
-        "respuesta_correcta": "D"
+    "claim": "El evaluado comprende que el currículo nulo permite identificar brechas entre lo planificado en el papel y lo efectivamente enseñado, aprendido o vivido en el aula.",
+    "evidencia_observable": "Clasifica como currículo nulo una situación en la que contenidos planificados quedan sin desarrollarse por falta de tiempo o mediación pedagógica.",
+    "tarea_cognitiva": "Analizar una situación de planeación curricular y reconocer el tipo de currículo que se manifiesta.",
+    "tipo_de_pregunta": "Caso situacional de clasificación conceptual",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Culpabilización del docente",
+        "revision": "El ítem no atribuye la omisión exclusivamente al docente; presenta causas curriculares y organizativas como exceso de temarios o falta de tiempo."
+      },
+      {
+        "riesgo": "Ambigüedad entre currículo oficial y currículo nulo",
+        "revision": "La clave enfatiza la brecha entre lo planificado y lo efectivamente enseñado."
+      },
+      {
+        "riesgo": "Sesgo por área disciplinar",
+        "revision": "La situación puede aplicarse a cualquier área con exceso de contenidos."
+      },
+      {
+        "riesgo": "Lenguaje metafórico de currículo de papel",
+        "revision": "El enunciado explica el sentido de la expresión mediante una situación concreta."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "En una institución, la malla curricular de un área incluye una gran cantidad de temarios para el año escolar. Al finalizar el periodo, varios contenidos aparecen en la planeación, pero nunca fueron enseñados ni trabajados con los estudiantes debido al exceso de temas, falta de tiempo y escasa mediación pedagógica.\n\n¿Cómo se denomina este tipo de currículo de papel que está planificado, pero no se enseña realmente en el aula?",
+    "opciones": {
+      "A": "Currículo oficial, porque todo lo escrito en la planeación se convierte automáticamente en aprendizaje logrado.",
+      "B": "Currículo oculto, porque corresponde a valores y normas no escritas que se transmiten en la vida escolar.",
+      "C": "Currículo flexible, porque permite eliminar cualquier contenido sin revisar su pertinencia.",
+      "D": "Currículo nulo, porque corresponde a contenidos o experiencias planificadas que no se desarrollan efectivamente."
     },
-    "ficha_tecnica": {
-        "componente": "Currículo Educativo",
-        "competencia": "Comprensión curricular",
-        "claim_evaluado": "El evaluado comprende que el currículo nulo permite identificar brechas entre lo planificado en el papel y lo efectivamente enseñado, aprendido o vivido en el aula.",
-        "evidencia": "Clasifica como currículo nulo una situación en la que contenidos planificados quedan sin desarrollarse por falta de tiempo o mediación pedagógica.",
-        "proceso_cognitivo": "Clasificación conceptual en contexto",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "D",
-        "distractores": {
-            "A": "Confunde lo escrito en la planeación con lo efectivamente enseñado y aprendido.",
-            "B": "Describe el currículo oculto, no el currículo nulo.",
-            "C": "Confunde flexibilidad curricular con omisión no analizada de contenidos."
-        },
-        "fuente_autorizada": [
-            "Teoría curricular",
-            "Lineamientos curriculares del Ministerio de Educación Nacional",
-            "Proyecto Educativo Institucional",
-            "Planeación curricular institucional"
-        ]
+    "respuesta_correcta": "D"
+  },
+  "ficha_tecnica": {
+    "componente": "Currículo Educativo",
+    "competencia": "Comprensión curricular",
+    "claim_evaluado": "El evaluado comprende que el currículo nulo permite identificar brechas entre lo planificado en el papel y lo efectivamente enseñado, aprendido o vivido en el aula.",
+    "evidencia": "Clasifica como currículo nulo una situación en la que contenidos planificados quedan sin desarrollarse por falta de tiempo o mediación pedagógica.",
+    "proceso_cognitivo": "Clasificación conceptual en contexto",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "D",
+    "distractores": {
+      "A": "Confunde lo escrito en la planeación con lo efectivamente enseñado y aprendido.",
+      "B": "Describe el currículo oculto, no el currículo nulo.",
+      "C": "Confunde flexibilidad curricular con omisión no analizada de contenidos."
     },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque el currículo nulo se refiere a contenidos, experiencias o aprendizajes que aparecen planificados, pero no se desarrollan efectivamente en el aula.",
-        "opcion_A": "Es incorrecta porque estar escrito en la planeación no garantiza que el contenido se enseñe ni que produzca aprendizaje.",
-        "opcion_B": "Es incorrecta porque el currículo oculto se relaciona con aprendizajes implícitos de la vida escolar, no con contenidos planificados y omitidos.",
-        "opcion_C": "Es incorrecta porque la flexibilidad curricular implica decisiones pedagógicas justificadas, no la simple omisión de contenidos por falta de tiempo o exceso de temarios."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El caso no culpa individualmente al docente ni a los estudiantes. Presenta el currículo nulo como una brecha entre planeación y enseñanza efectiva, útil para revisar pertinencia, tiempos y decisiones curriculares."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre concepto y tipos de currículo."
+    "fuente_autorizada": [
+      "Teoría curricular",
+      "Lineamientos curriculares del Ministerio de Educación Nacional",
+      "Proyecto Educativo Institucional",
+      "Planeación curricular institucional"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "opcion_A": "Es incorrecta porque estar escrito en la planeación no garantiza que el contenido se enseñe ni que produzca aprendizaje.",
+    "opcion_B": "Es incorrecta porque el currículo oculto se relaciona con aprendizajes implícitos de la vida escolar, no con contenidos planificados y omitidos.",
+    "opcion_C": "Es incorrecta porque la flexibilidad curricular implica decisiones pedagógicas justificadas, no la simple omisión de contenidos por falta de tiempo o exceso de temarios.",
+    "distractores": {
+      "A": "Es incorrecta porque estar escrito en la planeación no garantiza que el contenido se enseñe ni que produzca aprendizaje.",
+      "B": "Es incorrecta porque el currículo oculto se relaciona con aprendizajes implícitos de la vida escolar, no con contenidos planificados y omitidos.",
+      "C": "Es incorrecta porque la flexibilidad curricular implica decisiones pedagógicas justificadas, no la simple omisión de contenidos por falta de tiempo o exceso de temarios."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El caso no culpa individualmente al docente ni a los estudiantes. Presenta el currículo nulo como una brecha entre planeación y enseñanza efectiva, útil para revisar pertinencia, tiempos y decisiones curriculares."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre concepto y tipos de currículo."
+  }
 }

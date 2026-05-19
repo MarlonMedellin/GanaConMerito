@@ -1,103 +1,108 @@
 {
-    "id_item": "EFCC_B01_I01",
-    "archivo_sugerido": "EFCC_B01_I01_evaluacion_tecnicista_repeticion_exacta.json",
-    "bloque": {
-        "codigo_bloque": "EFCC_B01",
-        "nombre": "Evaluación tecnicista, punitiva y formativa",
-        "estado_en_lista": "Bloque 1 de 5",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 1 de 4"
+  "id_item": "EFCC_B01_I01",
+  "archivo_sugerido": "EFCC_B01_I01_evaluacion_tecnicista_repeticion_exacta.json",
+  "bloque": {
+    "codigo_bloque": "EFCC_B01",
+    "nombre": "Evaluación tecnicista, punitiva y formativa",
+    "estado_en_lista": "Bloque 1 de 5",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 1 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce las implicaciones conductistas de una evaluación centrada exclusivamente en la repetición exacta de una definición, sin valorar comprensiones alternativas válidas.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
+    "blueprint": {
+      "problematica_principal": "Evaluación tecnicista centrada en repetición literal.",
+      "fuente_autorizada": [
+        "Evaluación formativa",
+        "Didáctica general",
+        "Enfoque constructivista",
+        "Sistema Institucional de Evaluación de los Estudiantes",
+        "Orientaciones pedagógicas institucionales"
+      ],
+      "componente_modulo": "Evaluación Formativa y Criterios",
+      "competencia": "Juicio evaluativo pedagógico",
+      "afirmacion": "La evaluación no debe reducirse a la repetición literal, sino valorar comprensión, argumentación y uso pertinente del conocimiento.",
+      "evidencia_observable": "Reconoce que calificar solo la reproducción exacta refuerza una lógica conductista y limita la valoración de comprensiones válidas.",
+      "tipo_de_evidencia": "Juicio pedagógico sobre situación evaluativa",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "C"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce las implicaciones conductistas de una evaluación centrada exclusivamente en la repetición exacta de una definición, sin valorar comprensiones alternativas válidas.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
-        "blueprint": {
-            "problematica_principal": "Evaluación tecnicista centrada en repetición literal.",
-            "fuente_autorizada": [
-                "Evaluación formativa",
-                "Didáctica general",
-                "Enfoque constructivista",
-                "Sistema Institucional de Evaluación de los Estudiantes",
-                "Orientaciones pedagógicas institucionales"
-            ],
-            "componente_modulo": "Evaluación Formativa y Criterios",
-            "competencia": "Juicio evaluativo pedagógico",
-            "afirmacion": "La evaluación no debe reducirse a la repetición literal, sino valorar comprensión, argumentación y uso pertinente del conocimiento.",
-            "evidencia_observable": "Reconoce que calificar solo la reproducción exacta refuerza una lógica conductista y limita la valoración de comprensiones válidas.",
-            "tipo_de_evidencia": "Juicio pedagógico sobre situación evaluativa",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "C"
-        },
-        "claim": "El evaluado comprende que una evaluación centrada únicamente en la repetición exacta de la respuesta esperada favorece el condicionamiento, la memorización mecánica y la obediencia al modelo, en lugar de valorar comprensión conceptual.",
-        "evidencia_observable": "Selecciona una interpretación que diferencia la repetición literal de la comprensión conceptual válida.",
-        "tarea_cognitiva": "Analizar una situación de calificación y reconocer sus implicaciones pedagógicas y conductistas.",
-        "tipo_de_pregunta": "Caso situacional de juicio evaluativo",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Sesgo por estilo de expresión del estudiante",
-                "revision": "El ítem reconoce que una respuesta alternativa puede ser válida si conserva precisión conceptual."
-            },
-            {
-                "riesgo": "Confusión entre rigor y literalidad",
-                "revision": "La clave diferencia exigir precisión conceptual de exigir repetición textual."
-            },
-            {
-                "riesgo": "Sesgo por dominio memorístico",
-                "revision": "La pregunta evita premiar únicamente la memoria verbal y valora comprensión."
-            },
-            {
-                "riesgo": "Ambigüedad en la clave",
-                "revision": "La opción correcta es la única que identifica la lógica conductista de estímulo-respuesta y repetición exacta."
-            }
-        ]
+    "claim": "El evaluado comprende que una evaluación centrada únicamente en la repetición exacta de la respuesta esperada favorece el condicionamiento, la memorización mecánica y la obediencia al modelo, en lugar de valorar comprensión conceptual.",
+    "evidencia_observable": "Selecciona una interpretación que diferencia la repetición literal de la comprensión conceptual válida.",
+    "tarea_cognitiva": "Analizar una situación de calificación y reconocer sus implicaciones pedagógicas y conductistas.",
+    "tipo_de_pregunta": "Caso situacional de juicio evaluativo",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Sesgo por estilo de expresión del estudiante",
+        "revision": "El ítem reconoce que una respuesta alternativa puede ser válida si conserva precisión conceptual."
+      },
+      {
+        "riesgo": "Confusión entre rigor y literalidad",
+        "revision": "La clave diferencia exigir precisión conceptual de exigir repetición textual."
+      },
+      {
+        "riesgo": "Sesgo por dominio memorístico",
+        "revision": "La pregunta evita premiar únicamente la memoria verbal y valora comprensión."
+      },
+      {
+        "riesgo": "Ambigüedad en la clave",
+        "revision": "La opción correcta es la única que identifica la lógica conductista de estímulo-respuesta y repetición exacta."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "En una evaluación de ciencias, un estudiante define el átomo exactamente igual que el libro. Otro estudiante usa sus propias palabras y ofrece una definición alternativa, pero conceptualmente válida. El docente califica con la máxima nota solo al primer estudiante, porque repitió la definición literal.\n\n¿Qué implicación conductista tiene esta forma de calificar?",
+    "opciones": {
+      "A": "Favorece la comprensión profunda, porque toda respuesta distinta al libro demuestra falta de aprendizaje.",
+      "B": "Garantiza una evaluación formativa, porque premia únicamente la creatividad del estudiante.",
+      "C": "Refuerza la repetición exacta como respuesta esperada y reduce la evaluación a memorización, estímulo y recompensa.",
+      "D": "Promueve la autonomía intelectual, porque obliga a todos los estudiantes a expresar ideas propias."
     },
-    "item": {
-        "enunciado": "En una evaluación de ciencias, un estudiante define el átomo exactamente igual que el libro. Otro estudiante usa sus propias palabras y ofrece una definición alternativa, pero conceptualmente válida. El docente califica con la máxima nota solo al primer estudiante, porque repitió la definición literal.\n\n¿Qué implicación conductista tiene esta forma de calificar?",
-        "opciones": {
-            "A": "Favorece la comprensión profunda, porque toda respuesta distinta al libro demuestra falta de aprendizaje.",
-            "B": "Garantiza una evaluación formativa, porque premia únicamente la creatividad del estudiante.",
-            "C": "Refuerza la repetición exacta como respuesta esperada y reduce la evaluación a memorización, estímulo y recompensa.",
-            "D": "Promueve la autonomía intelectual, porque obliga a todos los estudiantes a expresar ideas propias."
-        },
-        "respuesta_correcta": "C"
+    "respuesta_correcta": "C"
+  },
+  "ficha_tecnica": {
+    "componente": "Evaluación Formativa y Criterios",
+    "competencia": "Juicio evaluativo pedagógico",
+    "claim_evaluado": "El evaluado comprende que una evaluación centrada únicamente en la repetición exacta de la respuesta esperada favorece el condicionamiento, la memorización mecánica y la obediencia al modelo, en lugar de valorar comprensión conceptual.",
+    "evidencia": "Selecciona una interpretación que diferencia la repetición literal de la comprensión conceptual válida.",
+    "proceso_cognitivo": "Análisis y juicio evaluativo",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "C",
+    "distractores": {
+      "A": "Confunde precisión conceptual con repetición literal.",
+      "B": "Atribuye carácter formativo a una práctica centrada en reproducción mecánica.",
+      "D": "Afirma autonomía, aunque la situación premia la copia exacta del libro."
     },
-    "ficha_tecnica": {
-        "componente": "Evaluación Formativa y Criterios",
-        "competencia": "Juicio evaluativo pedagógico",
-        "claim_evaluado": "El evaluado comprende que una evaluación centrada únicamente en la repetición exacta de la respuesta esperada favorece el condicionamiento, la memorización mecánica y la obediencia al modelo, en lugar de valorar comprensión conceptual.",
-        "evidencia": "Selecciona una interpretación que diferencia la repetición literal de la comprensión conceptual válida.",
-        "proceso_cognitivo": "Análisis y juicio evaluativo",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "C",
-        "distractores": {
-            "A": "Confunde precisión conceptual con repetición literal.",
-            "B": "Atribuye carácter formativo a una práctica centrada en reproducción mecánica.",
-            "D": "Afirma autonomía, aunque la situación premia la copia exacta del libro."
-        },
-        "fuente_autorizada": [
-            "Evaluación formativa",
-            "Didáctica general",
-            "Enfoque constructivista",
-            "Sistema Institucional de Evaluación de los Estudiantes",
-            "Orientaciones pedagógicas institucionales"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque calificar únicamente la repetición exacta refuerza una lógica de estímulo-respuesta: el estudiante reproduce el modelo esperado y recibe recompensa, aunque otra formulación conceptualmente válida también evidencie comprensión.",
-        "opcion_A": "Es incorrecta porque una respuesta distinta al libro puede demostrar comprensión si conserva precisión conceptual.",
-        "opcion_B": "Es incorrecta porque la práctica descrita no es formativa; restringe la evaluación a reproducción literal.",
-        "opcion_D": "Es incorrecta porque la situación no promueve autonomía intelectual, sino dependencia del texto modelo."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita privilegiar a estudiantes con mayor habilidad memorística o con mayor cercanía al lenguaje del libro. Evalúa la capacidad docente para reconocer comprensiones válidas expresadas de formas diversas."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre evaluación tecnicista, punitiva y formativa."
+    "fuente_autorizada": [
+      "Evaluación formativa",
+      "Didáctica general",
+      "Enfoque constructivista",
+      "Sistema Institucional de Evaluación de los Estudiantes",
+      "Orientaciones pedagógicas institucionales"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "opcion_A": "Es incorrecta porque una respuesta distinta al libro puede demostrar comprensión si conserva precisión conceptual.",
+    "opcion_B": "Es incorrecta porque la práctica descrita no es formativa; restringe la evaluación a reproducción literal.",
+    "opcion_D": "Es incorrecta porque la situación no promueve autonomía intelectual, sino dependencia del texto modelo.",
+    "distractores": {
+      "A": "Es incorrecta porque una respuesta distinta al libro puede demostrar comprensión si conserva precisión conceptual.",
+      "B": "Es incorrecta porque la práctica descrita no es formativa; restringe la evaluación a reproducción literal.",
+      "D": "Es incorrecta porque la situación no promueve autonomía intelectual, sino dependencia del texto modelo."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita privilegiar a estudiantes con mayor habilidad memorística o con mayor cercanía al lenguaje del libro. Evalúa la capacidad docente para reconocer comprensiones válidas expresadas de formas diversas."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre evaluación tecnicista, punitiva y formativa."
+  }
 }

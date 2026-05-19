@@ -1,101 +1,106 @@
 {
-    "id_item": "DIL_B02_I06",
-    "archivo_sugerido": "DIL_B02_I06_autoridad_competente_pard_no_escuela.json",
-    "bloque": {
-        "codigo_bloque": "DIL_B02",
-        "nombre": "PARD y restablecimiento de derechos",
-        "estado_en_lista": "Bloque 2 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 6 de 6"
+  "id_item": "DIL_B02_I06",
+  "archivo_sugerido": "DIL_B02_I06_autoridad_competente_pard_no_escuela.json",
+  "bloque": {
+    "codigo_bloque": "DIL_B02",
+    "nombre": "PARD y restablecimiento de derechos",
+    "estado_en_lista": "Bloque 2 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 6 de 6"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante comprende que la escuela puede detectar, reportar y activar rutas, pero no sustituye a la autoridad competente en el PARD.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación, rectoría o convivencia.",
+    "blueprint": {
+      "problematica_principal": "Extralimitación de funciones escolares frente a casos que requieren autoridad administrativa competente.",
+      "fuente_autorizada": [
+        "Ley 1098 de 2006",
+        "ICBF",
+        "Defensoría de Familia",
+        "Comisaría de Familia",
+        "Inspección de Policía en competencia subsidiaria",
+        "PARD"
+      ],
+      "componente_modulo": "Autoridad competente en restablecimiento de derechos",
+      "competencia": "Reconocimiento de límites institucionales escolares",
+      "afirmacion": "La escuela no decide el PARD, sino que reporta, documenta y remite a la autoridad competente.",
+      "evidencia_observable": "Selecciona una actuación escolar que evita investigación o decisión jurídica indebida.",
+      "tipo_de_evidencia": "Juicio normativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante comprende que la escuela puede detectar, reportar y activar rutas, pero no sustituye a la autoridad competente en el PARD.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación, rectoría o convivencia.",
-        "blueprint": {
-            "problematica_principal": "Extralimitación de funciones escolares frente a casos que requieren autoridad administrativa competente.",
-            "fuente_autorizada": [
-                "Ley 1098 de 2006",
-                "ICBF",
-                "Defensoría de Familia",
-                "Comisaría de Familia",
-                "Inspección de Policía en competencia subsidiaria",
-                "PARD"
-            ],
-            "componente_modulo": "Autoridad competente en restablecimiento de derechos",
-            "competencia": "Reconocimiento de límites institucionales escolares",
-            "afirmacion": "La escuela no decide el PARD, sino que reporta, documenta y remite a la autoridad competente.",
-            "evidencia_observable": "Selecciona una actuación escolar que evita investigación o decisión jurídica indebida.",
-            "tipo_de_evidencia": "Juicio normativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que actuar oportunamente no significa asumir competencias legales que corresponden a autoridades de protección.",
-        "evidencia_observable": "Elige una respuesta institucional que reporta y articula sin extralimitarse.",
-        "tarea_cognitiva": "Diferenciar deber de reporte de competencia para restablecer derechos.",
-        "tipo_de_pregunta": "Caso situacional normativo",
-        "dificultad_esperada": "Media-Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Convertir a docentes en investigadores jurídicos",
-                "revision": "La clave limita su rol a detección, documentación y remisión."
-            },
-            {
-                "riesgo": "Omitir el caso por miedo a extralimitarse",
-                "revision": "La opción correcta exige activar ruta."
-            },
-            {
-                "riesgo": "Confundir autoridad escolar con autoridad administrativa de protección",
-                "revision": "El ítem distingue competencias."
-            }
-        ]
+    "claim": "El evaluado comprende que actuar oportunamente no significa asumir competencias legales que corresponden a autoridades de protección.",
+    "evidencia_observable": "Elige una respuesta institucional que reporta y articula sin extralimitarse.",
+    "tarea_cognitiva": "Diferenciar deber de reporte de competencia para restablecer derechos.",
+    "tipo_de_pregunta": "Caso situacional normativo",
+    "dificultad_esperada": "Media-Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Convertir a docentes en investigadores jurídicos",
+        "revision": "La clave limita su rol a detección, documentación y remisión."
+      },
+      {
+        "riesgo": "Omitir el caso por miedo a extralimitarse",
+        "revision": "La opción correcta exige activar ruta."
+      },
+      {
+        "riesgo": "Confundir autoridad escolar con autoridad administrativa de protección",
+        "revision": "El ítem distingue competencias."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Una institución educativa detecta indicios de vulneración grave de derechos de un estudiante. Algunos docentes proponen investigar por su cuenta, tomar declaraciones extensas y decidir la medida de protección que debe aplicarse.\n\n¿Cuál actuación respeta los límites de competencia de la escuela frente al PARD?",
+    "opciones": {
+      "A": "Registrar lo observado, proteger al estudiante, informar por los canales institucionales y remitir a la autoridad competente de protección sin sustituir su función.",
+      "B": "Interrogar al menor hasta esclarecer jurídicamente todos los hechos.",
+      "C": "Decidir directamente una medida de restablecimiento como si la escuela fuera autoridad administrativa.",
+      "D": "No reportar nada para evitar comprometer a la institución."
     },
-    "item": {
-        "enunciado": "Una institución educativa detecta indicios de vulneración grave de derechos de un estudiante. Algunos docentes proponen investigar por su cuenta, tomar declaraciones extensas y decidir la medida de protección que debe aplicarse.\n\n¿Cuál actuación respeta los límites de competencia de la escuela frente al PARD?",
-        "opciones": {
-            "A": "Registrar lo observado, proteger al estudiante, informar por los canales institucionales y remitir a la autoridad competente de protección sin sustituir su función.",
-            "B": "Interrogar al menor hasta esclarecer jurídicamente todos los hechos.",
-            "C": "Decidir directamente una medida de restablecimiento como si la escuela fuera autoridad administrativa.",
-            "D": "No reportar nada para evitar comprometer a la institución."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Autoridad competente en restablecimiento de derechos",
+    "competencia": "Reconocimiento de límites institucionales escolares",
+    "claim_evaluado": "El evaluado comprende que actuar oportunamente no significa asumir competencias legales que corresponden a autoridades de protección.",
+    "evidencia": "Elige una respuesta institucional que reporta y articula sin extralimitarse.",
+    "proceso_cognitivo": "Juicio normativo aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media-Alta",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Puede revictimizar y exceder funciones escolares.",
+      "C": "Asume competencias de autoridad administrativa de protección.",
+      "D": "Constituye omisión frente al deber de protección."
     },
-    "ficha_tecnica": {
-        "componente": "Autoridad competente en restablecimiento de derechos",
-        "competencia": "Reconocimiento de límites institucionales escolares",
-        "claim_evaluado": "El evaluado comprende que actuar oportunamente no significa asumir competencias legales que corresponden a autoridades de protección.",
-        "evidencia": "Elige una respuesta institucional que reporta y articula sin extralimitarse.",
-        "proceso_cognitivo": "Juicio normativo aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media-Alta",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Puede revictimizar y exceder funciones escolares.",
-            "C": "Asume competencias de autoridad administrativa de protección.",
-            "D": "Constituye omisión frente al deber de protección."
-        },
-        "fuente_autorizada": [
-            "Ley 1098 de 2006",
-            "ICBF",
-            "Defensoría de Familia",
-            "Comisaría de Familia",
-            "Inspección de Policía en competencia subsidiaria",
-            "PARD"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque la escuela debe actuar, documentar y remitir, sin sustituir a la autoridad competente.",
-        "opcion_B": "Es incorrecta porque puede constituir extralimitación y afectar al menor.",
-        "opcion_C": "Es incorrecta porque la escuela no decide medidas propias del PARD.",
-        "opcion_D": "Es incorrecta porque omite la activación de rutas de protección."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem protege al menor frente a omisión y frente a intervenciones escolares indebidas o revictimizantes."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 6 de un grupo de 6 preguntas sobre PARD y restablecimiento de derechos."
+    "fuente_autorizada": [
+      "Ley 1098 de 2006",
+      "ICBF",
+      "Defensoría de Familia",
+      "Comisaría de Familia",
+      "Inspección de Policía en competencia subsidiaria",
+      "PARD"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque puede constituir extralimitación y afectar al menor.",
+    "opcion_C": "Es incorrecta porque la escuela no decide medidas propias del PARD.",
+    "opcion_D": "Es incorrecta porque omite la activación de rutas de protección.",
+    "distractores": {
+      "B": "Es incorrecta porque puede constituir extralimitación y afectar al menor.",
+      "C": "Es incorrecta porque la escuela no decide medidas propias del PARD.",
+      "D": "Es incorrecta porque omite la activación de rutas de protección."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem protege al menor frente a omisión y frente a intervenciones escolares indebidas o revictimizantes."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 6 de un grupo de 6 preguntas sobre PARD y restablecimiento de derechos."
+  }
 }

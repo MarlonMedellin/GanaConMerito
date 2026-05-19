@@ -1,36 +1,36 @@
 {
-    "id_item": "MTV_B11_I09",
-    "archivo_sugerido": "MTV_B11_I09_evaluacion_formativa_vs_sumativa_tecnicista.json",
-    "proposito_de_uso": "Evaluar si el aspirante diferencia evaluación formativa y evaluación centrada solo en suma de notas.",
-    "blueprint": {
-        "componente_modulo": "Evaluación formativa",
-        "competencia": "Diferenciación de finalidades evaluativas",
-        "afirmacion": "La evaluación formativa usa evidencias para retroalimentar y mejorar el proceso; la evaluación finalista solo suma resultados.",
-        "evidencia_observable": "Reconoce que sumar notas sin retroalimentación contradice una evaluación continua y formativa.",
-        "tipo_de_evidencia": "Juicio evaluativo aplicado",
-        "dificultad_esperada": "Alta",
-        "clave": "A"
+  "id_item": "MTV_B11_I09",
+  "archivo_sugerido": "MTV_B11_I09_evaluacion_formativa_vs_sumativa_tecnicista.json",
+  "proposito_de_uso": "Evaluar si el aspirante diferencia evaluación formativa y evaluación centrada solo en suma de notas.",
+  "blueprint": {
+    "componente_modulo": "Evaluación formativa",
+    "competencia": "Diferenciación de finalidades evaluativas",
+    "afirmacion": "La evaluación formativa usa evidencias para retroalimentar y mejorar el proceso; la evaluación finalista solo suma resultados.",
+    "evidencia_observable": "Reconoce que sumar notas sin retroalimentación contradice una evaluación continua y formativa.",
+    "tipo_de_evidencia": "Juicio evaluativo aplicado",
+    "dificultad_esperada": "Alta",
+    "clave": "A"
+  },
+  "item": {
+    "enunciado": "Un docente afirma que evaluar consiste únicamente en sumar notas al final del periodo y publicar quién aprobó o reprobó, sin retroalimentar ni ajustar la enseñanza.\n\n¿Por qué esta práctica contradice la evaluación formativa?",
+    "opciones": {
+      "A": "Porque la evaluación formativa debe ser sistemática, continua y orientada a retroalimentar, ajustar y mejorar el aprendizaje.",
+      "B": "Porque evaluar formativamente significa no observar evidencias.",
+      "C": "Porque toda calificación numérica está prohibida en cualquier nivel.",
+      "D": "Porque el docente debe aprobar a todos sin analizar procesos."
     },
-    "item": {
-        "enunciado": "Un docente afirma que evaluar consiste únicamente en sumar notas al final del periodo y publicar quién aprobó o reprobó, sin retroalimentar ni ajustar la enseñanza.\n\n¿Por qué esta práctica contradice la evaluación formativa?",
-        "opciones": {
-            "A": "Porque la evaluación formativa debe ser sistemática, continua y orientada a retroalimentar, ajustar y mejorar el aprendizaje.",
-            "B": "Porque evaluar formativamente significa no observar evidencias.",
-            "C": "Porque toda calificación numérica está prohibida en cualquier nivel.",
-            "D": "Porque el docente debe aprobar a todos sin analizar procesos."
-        },
-        "respuesta_correcta": "A"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque la evaluación formativa acompaña y mejora el proceso.",
-        "distractores": {
-            "B": "La evaluación formativa sí se basa en evidencias.",
-            "C": "El problema no es solo la nota, sino su uso finalista sin retroalimentación.",
-            "D": "Evaluar formativamente no significa aprobar sin criterios."
-        }
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem puente entre modelos pedagógicos y evaluación."
+    "respuesta_correcta": "A"
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "distractores": {
+      "B": "La evaluación formativa sí se basa en evidencias.",
+      "C": "El problema no es solo la nota, sino su uso finalista sin retroalimentación.",
+      "D": "Evaluar formativamente no significa aprobar sin criterios."
     }
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem puente entre modelos pedagógicos y evaluación."
+  }
 }

@@ -1,98 +1,103 @@
 {
-    "id_item": "EIP_B01_I05",
-    "archivo_sugerido": "EIP_B01_I05_constitucion_paz_democracia_valores_transversales.json",
-    "bloque": {
-        "codigo_bloque": "EIP_B01",
-        "nombre": "Currículo obligatorio y proyectos pedagógicos transversales",
-        "estado_en_lista": "Bloque 1 de 7",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 5 de 5"
+  "id_item": "EIP_B01_I05",
+  "archivo_sugerido": "EIP_B01_I05_constitucion_paz_democracia_valores_transversales.json",
+  "bloque": {
+    "codigo_bloque": "EIP_B01",
+    "nombre": "Currículo obligatorio y proyectos pedagógicos transversales",
+    "estado_en_lista": "Bloque 1 de 7",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 5 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante comprende que la formación constitucional, democrática, para la paz y en valores humanos debe integrarse a la vida escolar y no limitarse a memorización normativa.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, ciencias sociales, currículo, convivencia, orientación escolar o gestión institucional.",
+    "blueprint": {
+      "problematica_principal": "Reducir la formación democrática y constitucional a repetir artículos o celebrar fechas cívicas sin prácticas de participación y convivencia.",
+      "fuente_autorizada": [
+        "Ley 115 de 1994",
+        "Artículo 14 Ley 115",
+        "Formación constitucional y cívica",
+        "Educación para la paz y la democracia",
+        "Valores humanos"
+      ],
+      "componente_modulo": "Formación cívica, paz y democracia",
+      "competencia": "Aplicación de formación ciudadana transversal",
+      "afirmacion": "La formación ciudadana y democrática exige prácticas de participación, convivencia, deliberación, respeto y resolución pacífica de conflictos.",
+      "evidencia_observable": "Reconoce que la enseñanza constitucional y de valores debe vivirse en la cultura escolar, no solo memorizarse.",
+      "tipo_de_evidencia": "Juicio pedagógico-ciudadano aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "C"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante comprende que la formación constitucional, democrática, para la paz y en valores humanos debe integrarse a la vida escolar y no limitarse a memorización normativa.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, ciencias sociales, currículo, convivencia, orientación escolar o gestión institucional.",
-        "blueprint": {
-            "problematica_principal": "Reducir la formación democrática y constitucional a repetir artículos o celebrar fechas cívicas sin prácticas de participación y convivencia.",
-            "fuente_autorizada": [
-                "Ley 115 de 1994",
-                "Artículo 14 Ley 115",
-                "Formación constitucional y cívica",
-                "Educación para la paz y la democracia",
-                "Valores humanos"
-            ],
-            "componente_modulo": "Formación cívica, paz y democracia",
-            "competencia": "Aplicación de formación ciudadana transversal",
-            "afirmacion": "La formación ciudadana y democrática exige prácticas de participación, convivencia, deliberación, respeto y resolución pacífica de conflictos.",
-            "evidencia_observable": "Reconoce que la enseñanza constitucional y de valores debe vivirse en la cultura escolar, no solo memorizarse.",
-            "tipo_de_evidencia": "Juicio pedagógico-ciudadano aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "C"
-        },
-        "claim": "El evaluado comprende que la formación para la democracia y la paz se desarrolla mediante experiencias pedagógicas y prácticas institucionales coherentes.",
-        "evidencia_observable": "Selecciona una actuación que vincula Constitución, paz, democracia y valores con la vida escolar.",
-        "tarea_cognitiva": "Analizar una práctica de formación ciudadana y elegir la opción transversal.",
-        "tipo_de_pregunta": "Caso situacional de formación ciudadana",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Reducir ciudadanía a memorización normativa",
-                "revision": "La clave incluye prácticas democráticas."
-            },
-            {
-                "riesgo": "Politizar partidistamente la pregunta",
-                "revision": "El ítem se centra en valores constitucionales y convivencia."
-            },
-            {
-                "riesgo": "Desconectar paz y democracia del aula",
-                "revision": "La respuesta correcta los articula con la vida escolar."
-            }
-        ]
+    "claim": "El evaluado comprende que la formación para la democracia y la paz se desarrolla mediante experiencias pedagógicas y prácticas institucionales coherentes.",
+    "evidencia_observable": "Selecciona una actuación que vincula Constitución, paz, democracia y valores con la vida escolar.",
+    "tarea_cognitiva": "Analizar una práctica de formación ciudadana y elegir la opción transversal.",
+    "tipo_de_pregunta": "Caso situacional de formación ciudadana",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Reducir ciudadanía a memorización normativa",
+        "revision": "La clave incluye prácticas democráticas."
+      },
+      {
+        "riesgo": "Politizar partidistamente la pregunta",
+        "revision": "El ítem se centra en valores constitucionales y convivencia."
+      },
+      {
+        "riesgo": "Desconectar paz y democracia del aula",
+        "revision": "La respuesta correcta los articula con la vida escolar."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un colegio enseña Constitución y democracia pidiendo a los estudiantes copiar artículos en el cuaderno, pero no promueve participación, diálogo, solución pacífica de conflictos ni respeto por la diferencia.\n\n¿Qué ajuste expresa mejor el sentido transversal de esta enseñanza obligatoria?",
+    "opciones": {
+      "A": "Mantener solo la copia de normas, porque la ciudadanía se forma memorizando artículos.",
+      "B": "Eliminar toda formación democrática para evitar debates en clase.",
+      "C": "Articular el conocimiento constitucional con prácticas reales de participación, convivencia, deliberación, respeto, paz y solución pacífica de conflictos.",
+      "D": "Trabajar democracia únicamente en una izada de bandera anual."
     },
-    "item": {
-        "enunciado": "Un colegio enseña Constitución y democracia pidiendo a los estudiantes copiar artículos en el cuaderno, pero no promueve participación, diálogo, solución pacífica de conflictos ni respeto por la diferencia.\n\n¿Qué ajuste expresa mejor el sentido transversal de esta enseñanza obligatoria?",
-        "opciones": {
-            "A": "Mantener solo la copia de normas, porque la ciudadanía se forma memorizando artículos.",
-            "B": "Eliminar toda formación democrática para evitar debates en clase.",
-            "C": "Articular el conocimiento constitucional con prácticas reales de participación, convivencia, deliberación, respeto, paz y solución pacífica de conflictos.",
-            "D": "Trabajar democracia únicamente en una izada de bandera anual."
-        },
-        "respuesta_correcta": "C"
+    "respuesta_correcta": "C"
+  },
+  "ficha_tecnica": {
+    "componente": "Formación cívica, paz y democracia",
+    "competencia": "Aplicación de formación ciudadana transversal",
+    "claim_evaluado": "El evaluado comprende que la formación para la democracia y la paz se desarrolla mediante experiencias pedagógicas y prácticas institucionales coherentes.",
+    "evidencia": "Selecciona una actuación que vincula Constitución, paz, democracia y valores con la vida escolar.",
+    "proceso_cognitivo": "Juicio pedagógico-ciudadano aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "C",
+    "distractores": {
+      "A": "Reduce ciudadanía a repetición normativa.",
+      "B": "Elimina una enseñanza obligatoria.",
+      "D": "Reduce la formación democrática a una actividad simbólica anual."
     },
-    "ficha_tecnica": {
-        "componente": "Formación cívica, paz y democracia",
-        "competencia": "Aplicación de formación ciudadana transversal",
-        "claim_evaluado": "El evaluado comprende que la formación para la democracia y la paz se desarrolla mediante experiencias pedagógicas y prácticas institucionales coherentes.",
-        "evidencia": "Selecciona una actuación que vincula Constitución, paz, democracia y valores con la vida escolar.",
-        "proceso_cognitivo": "Juicio pedagógico-ciudadano aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "C",
-        "distractores": {
-            "A": "Reduce ciudadanía a repetición normativa.",
-            "B": "Elimina una enseñanza obligatoria.",
-            "D": "Reduce la formación democrática a una actividad simbólica anual."
-        },
-        "fuente_autorizada": [
-            "Ley 115 de 1994",
-            "Artículo 14 Ley 115",
-            "Formación constitucional y cívica",
-            "Educación para la paz y la democracia"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque la formación ciudadana debe integrarse a prácticas democráticas, convivencia y solución pacífica de conflictos.",
-        "opcion_A": "Es incorrecta porque memorizar artículos no garantiza formación democrática.",
-        "opcion_B": "Es incorrecta porque la formación democrática es obligatoria.",
-        "opcion_D": "Es incorrecta porque una actividad anual no desarrolla transversalidad."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem promueve ciudadanía democrática sin tomar partido por ideologías o movimientos específicos."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión de enfoque de ciudadanía institucional.",
-        "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre currículo obligatorio y proyectos pedagógicos transversales."
+    "fuente_autorizada": [
+      "Ley 115 de 1994",
+      "Artículo 14 Ley 115",
+      "Formación constitucional y cívica",
+      "Educación para la paz y la democracia"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "opcion_A": "Es incorrecta porque memorizar artículos no garantiza formación democrática.",
+    "opcion_B": "Es incorrecta porque la formación democrática es obligatoria.",
+    "opcion_D": "Es incorrecta porque una actividad anual no desarrolla transversalidad.",
+    "distractores": {
+      "A": "Es incorrecta porque memorizar artículos no garantiza formación democrática.",
+      "B": "Es incorrecta porque la formación democrática es obligatoria.",
+      "D": "Es incorrecta porque una actividad anual no desarrolla transversalidad."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem promueve ciudadanía democrática sin tomar partido por ideologías o movimientos específicos."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión de enfoque de ciudadanía institucional.",
+    "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre currículo obligatorio y proyectos pedagógicos transversales."
+  }
 }

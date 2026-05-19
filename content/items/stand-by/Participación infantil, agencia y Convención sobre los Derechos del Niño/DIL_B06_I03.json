@@ -1,99 +1,104 @@
 {
-    "id_item": "DIL_B06_I03",
-    "archivo_sugerido": "DIL_B06_I03_agenciamiento_politico_nna_territorio.json",
-    "bloque": {
-        "codigo_bloque": "DIL_B06",
-        "nombre": "Participación infantil, agencia y Convención sobre los Derechos del Niño",
-        "estado_en_lista": "Bloque 6 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 3 de 4"
+  "id_item": "DIL_B06_I03",
+  "archivo_sugerido": "DIL_B06_I03_agenciamiento_politico_nna_territorio.json",
+  "bloque": {
+    "codigo_bloque": "DIL_B06",
+    "nombre": "Participación infantil, agencia y Convención sobre los Derechos del Niño",
+    "estado_en_lista": "Bloque 6 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 3 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante comprende el significado pedagógico y ciudadano de potenciar el agenciamiento político de niños, niñas y adolescentes frente a sus condiciones de vida en el territorio.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con ciudadanía, docencia, participación infantil, orientación escolar, convivencia o gestión comunitaria.",
+    "blueprint": {
+      "problematica_principal": "Concepción pasiva de niños, niñas y adolescentes como beneficiarios sin voz frente a su territorio.",
+      "fuente_autorizada": [
+        "Convención sobre los Derechos del Niño",
+        "Ley 1098 de 2006",
+        "Participación infantil",
+        "Ciudadanía escolar",
+        "Enfoque territorial"
+      ],
+      "componente_modulo": "Capacidad de agencia",
+      "competencia": "Promoción de agencia y ciudadanía infantil",
+      "afirmacion": "Potenciar el agenciamiento político implica reconocer a NNA como actores capaces de comprender, opinar, proponer y participar en decisiones que afectan su vida.",
+      "evidencia_observable": "Reconoce estrategias que permiten diagnóstico participativo, expresión, deliberación y propuestas de mejora territorial.",
+      "tipo_de_evidencia": "Juicio pedagógico-ciudadano aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "D"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante comprende el significado pedagógico y ciudadano de potenciar el agenciamiento político de niños, niñas y adolescentes frente a sus condiciones de vida en el territorio.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con ciudadanía, docencia, participación infantil, orientación escolar, convivencia o gestión comunitaria.",
-        "blueprint": {
-            "problematica_principal": "Concepción pasiva de niños, niñas y adolescentes como beneficiarios sin voz frente a su territorio.",
-            "fuente_autorizada": [
-                "Convención sobre los Derechos del Niño",
-                "Ley 1098 de 2006",
-                "Participación infantil",
-                "Ciudadanía escolar",
-                "Enfoque territorial"
-            ],
-            "componente_modulo": "Capacidad de agencia",
-            "competencia": "Promoción de agencia y ciudadanía infantil",
-            "afirmacion": "Potenciar el agenciamiento político implica reconocer a NNA como actores capaces de comprender, opinar, proponer y participar en decisiones que afectan su vida.",
-            "evidencia_observable": "Reconoce estrategias que permiten diagnóstico participativo, expresión, deliberación y propuestas de mejora territorial.",
-            "tipo_de_evidencia": "Juicio pedagógico-ciudadano aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "D"
-        },
-        "claim": "El evaluado comprende que la agencia infantil no es partidismo, sino capacidad de voz, acción, incidencia y lectura crítica del entorno.",
-        "evidencia_observable": "Selecciona una interpretación de agenciamiento político vinculada con participación significativa y territorio.",
-        "tarea_cognitiva": "Interpretar el concepto de agenciamiento político en un contexto escolar y comunitario.",
-        "tipo_de_pregunta": "Pregunta conceptual aplicada",
-        "dificultad_esperada": "Media-Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Confundir agenciamiento político con militancia partidista",
-                "revision": "La clave lo define como participación ciudadana y territorial."
-            },
-            {
-                "riesgo": "Adultocentrismo",
-                "revision": "El ítem reconoce capacidad de propuesta de NNA."
-            },
-            {
-                "riesgo": "Promover participación sin protección",
-                "revision": "La opción correcta habla de acompañamiento y gradualidad."
-            }
-        ]
+    "claim": "El evaluado comprende que la agencia infantil no es partidismo, sino capacidad de voz, acción, incidencia y lectura crítica del entorno.",
+    "evidencia_observable": "Selecciona una interpretación de agenciamiento político vinculada con participación significativa y territorio.",
+    "tarea_cognitiva": "Interpretar el concepto de agenciamiento político en un contexto escolar y comunitario.",
+    "tipo_de_pregunta": "Pregunta conceptual aplicada",
+    "dificultad_esperada": "Media-Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Confundir agenciamiento político con militancia partidista",
+        "revision": "La clave lo define como participación ciudadana y territorial."
+      },
+      {
+        "riesgo": "Adultocentrismo",
+        "revision": "El ítem reconoce capacidad de propuesta de NNA."
+      },
+      {
+        "riesgo": "Promover participación sin protección",
+        "revision": "La opción correcta habla de acompañamiento y gradualidad."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Una institución quiere que sus estudiantes analicen problemas de su barrio, expresen cómo les afectan, propongan soluciones y participen en escenarios escolares o comunitarios adecuados a su edad.\n\n¿Qué significa potenciar el agenciamiento político de niños, niñas y adolescentes frente a sus condiciones de vida en el territorio?",
+    "opciones": {
+      "A": "Usarlos como imagen de campañas adultas sin escuchar sus ideas.",
+      "B": "Impedir que opinen porque la política solo corresponde a los adultos.",
+      "C": "Obligarlos a tomar decisiones públicas sin acompañamiento ni protección.",
+      "D": "Reconocerlos como actores con voz, capacidad de análisis, propuesta e incidencia gradual en asuntos que afectan su vida y su entorno."
     },
-    "item": {
-        "enunciado": "Una institución quiere que sus estudiantes analicen problemas de su barrio, expresen cómo les afectan, propongan soluciones y participen en escenarios escolares o comunitarios adecuados a su edad.\n\n¿Qué significa potenciar el agenciamiento político de niños, niñas y adolescentes frente a sus condiciones de vida en el territorio?",
-        "opciones": {
-            "A": "Usarlos como imagen de campañas adultas sin escuchar sus ideas.",
-            "B": "Impedir que opinen porque la política solo corresponde a los adultos.",
-            "C": "Obligarlos a tomar decisiones públicas sin acompañamiento ni protección.",
-            "D": "Reconocerlos como actores con voz, capacidad de análisis, propuesta e incidencia gradual en asuntos que afectan su vida y su entorno."
-        },
-        "respuesta_correcta": "D"
+    "respuesta_correcta": "D"
+  },
+  "ficha_tecnica": {
+    "componente": "Capacidad de agencia",
+    "competencia": "Promoción de agencia y ciudadanía infantil",
+    "claim_evaluado": "El evaluado comprende que la agencia infantil no es partidismo, sino capacidad de voz, acción, incidencia y lectura crítica del entorno.",
+    "evidencia": "Selecciona una interpretación de agenciamiento político vinculada con participación significativa y territorio.",
+    "proceso_cognitivo": "Comprensión conceptual aplicada",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media-Alta",
+    "respuesta_correcta": "D",
+    "distractores": {
+      "A": "Instrumentaliza a NNA y reproduce participación decorativa.",
+      "B": "Niega el derecho a participar.",
+      "C": "Confunde agencia con ausencia de acompañamiento y protección."
     },
-    "ficha_tecnica": {
-        "componente": "Capacidad de agencia",
-        "competencia": "Promoción de agencia y ciudadanía infantil",
-        "claim_evaluado": "El evaluado comprende que la agencia infantil no es partidismo, sino capacidad de voz, acción, incidencia y lectura crítica del entorno.",
-        "evidencia": "Selecciona una interpretación de agenciamiento político vinculada con participación significativa y territorio.",
-        "proceso_cognitivo": "Comprensión conceptual aplicada",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media-Alta",
-        "respuesta_correcta": "D",
-        "distractores": {
-            "A": "Instrumentaliza a NNA y reproduce participación decorativa.",
-            "B": "Niega el derecho a participar.",
-            "C": "Confunde agencia con ausencia de acompañamiento y protección."
-        },
-        "fuente_autorizada": [
-            "Convención sobre los Derechos del Niño",
-            "Ley 1098 de 2006",
-            "Participación infantil",
-            "Ciudadanía escolar",
-            "Enfoque territorial"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque entiende el agenciamiento como voz, análisis, propuesta e incidencia gradual sobre el entorno.",
-        "opcion_A": "Es incorrecta porque convierte la participación en decoración o instrumentalización.",
-        "opcion_B": "Es incorrecta porque niega el derecho a expresar opiniones en asuntos que les afectan.",
-        "opcion_C": "Es incorrecta porque la agencia infantil requiere acompañamiento y protección."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita confundir participación infantil con militancia partidista y reconoce una ciudadanía progresiva, protegida y significativa."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión conceptual según el marco de ciudadanía usado por la institución.",
-        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre participación infantil, agencia y Convención sobre los Derechos del Niño."
+    "fuente_autorizada": [
+      "Convención sobre los Derechos del Niño",
+      "Ley 1098 de 2006",
+      "Participación infantil",
+      "Ciudadanía escolar",
+      "Enfoque territorial"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "opcion_A": "Es incorrecta porque convierte la participación en decoración o instrumentalización.",
+    "opcion_B": "Es incorrecta porque niega el derecho a expresar opiniones en asuntos que les afectan.",
+    "opcion_C": "Es incorrecta porque la agencia infantil requiere acompañamiento y protección.",
+    "distractores": {
+      "A": "Es incorrecta porque convierte la participación en decoración o instrumentalización.",
+      "B": "Es incorrecta porque niega el derecho a expresar opiniones en asuntos que les afectan.",
+      "C": "Es incorrecta porque la agencia infantil requiere acompañamiento y protección."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita confundir participación infantil con militancia partidista y reconoce una ciudadanía progresiva, protegida y significativa."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión conceptual según el marco de ciudadanía usado por la institución.",
+    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre participación infantil, agencia y Convención sobre los Derechos del Niño."
+  }
 }

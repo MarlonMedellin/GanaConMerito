@@ -1,36 +1,36 @@
 {
-    "id_item": "MTV_B18_I08",
-    "archivo_sugerido": "MTV_B18_I08_curriculo_pei_carta_navegacion.json",
-    "proposito_de_uso": "Evaluar si el aspirante relaciona el currículo con el PEI como carta de navegación institucional.",
-    "blueprint": {
-        "componente_modulo": "Currículo y PEI",
-        "competencia": "Articulación institucional",
-        "afirmacion": "El currículo debe articularse con el PEI, el horizonte institucional, los fines educativos y el contexto de la comunidad.",
-        "evidencia_observable": "Reconoce que el currículo no es una lista aislada de temas, sino parte del proyecto institucional.",
-        "tipo_de_evidencia": "Comprensión institucional aplicada",
-        "dificultad_esperada": "Media-Alta",
-        "clave": "A"
+  "id_item": "MTV_B18_I08",
+  "archivo_sugerido": "MTV_B18_I08_curriculo_pei_carta_navegacion.json",
+  "proposito_de_uso": "Evaluar si el aspirante relaciona el currículo con el PEI como carta de navegación institucional.",
+  "blueprint": {
+    "componente_modulo": "Currículo y PEI",
+    "competencia": "Articulación institucional",
+    "afirmacion": "El currículo debe articularse con el PEI, el horizonte institucional, los fines educativos y el contexto de la comunidad.",
+    "evidencia_observable": "Reconoce que el currículo no es una lista aislada de temas, sino parte del proyecto institucional.",
+    "tipo_de_evidencia": "Comprensión institucional aplicada",
+    "dificultad_esperada": "Media-Alta",
+    "clave": "A"
+  },
+  "item": {
+    "enunciado": "Una institución entiende el PEI como carta de navegación y quiere que el currículo exprese su horizonte formativo, sus valores, su contexto y sus metas de calidad.\n\n¿Qué interpretación es más adecuada?",
+    "opciones": {
+      "A": "El currículo debe articularse con el PEI y reflejar el proyecto formativo institucional.",
+      "B": "El currículo no tiene relación con el PEI.",
+      "C": "El PEI solo sirve para archivar documentos.",
+      "D": "El currículo es únicamente una lista de temas sin intención formativa."
     },
-    "item": {
-        "enunciado": "Una institución entiende el PEI como carta de navegación y quiere que el currículo exprese su horizonte formativo, sus valores, su contexto y sus metas de calidad.\n\n¿Qué interpretación es más adecuada?",
-        "opciones": {
-            "A": "El currículo debe articularse con el PEI y reflejar el proyecto formativo institucional.",
-            "B": "El currículo no tiene relación con el PEI.",
-            "C": "El PEI solo sirve para archivar documentos.",
-            "D": "El currículo es únicamente una lista de temas sin intención formativa."
-        },
-        "respuesta_correcta": "A"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque el currículo debe expresar y operar el horizonte del PEI.",
-        "distractores": {
-            "B": "El currículo sí debe articularse con el proyecto institucional.",
-            "C": "El PEI no es solo archivo documental.",
-            "D": "El currículo tiene sentido pedagógico y formativo."
-        }
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem útil para gestión académica."
+    "respuesta_correcta": "A"
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "distractores": {
+      "B": "El currículo sí debe articularse con el proyecto institucional.",
+      "C": "El PEI no es solo archivo documental.",
+      "D": "El currículo tiene sentido pedagógico y formativo."
     }
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem útil para gestión académica."
+  }
 }

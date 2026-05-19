@@ -1,99 +1,104 @@
 {
-    "id_item": "IDD_B11_I02",
-    "archivo_sugerido": "IDD_B11_I02_plasma_no_gelatina_abstraccion_cientifica.json",
-    "bloque": {
-        "codigo_bloque": "IDD_B11",
-        "nombre": "Error, conflicto cognitivo y reestructuración de esquemas",
-        "estado_en_lista": "Bloque 11 de 17",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 2 de 4"
+  "id_item": "IDD_B11_I02",
+  "archivo_sugerido": "IDD_B11_I02_plasma_no_gelatina_abstraccion_cientifica.json",
+  "bloque": {
+    "codigo_bloque": "IDD_B11",
+    "nombre": "Error, conflicto cognitivo y reestructuración de esquemas",
+    "estado_en_lista": "Bloque 11 de 17",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 2 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce la función de la didáctica del maestro al enseñar conceptos científicos abstractos que pueden confundirse con experiencias cotidianas.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, ciencias naturales, didáctica, pedagogía o educación básica.",
+    "blueprint": {
+      "problematica_principal": "Asimilación errónea de conceptos científicos abstractos a partir de analogías cotidianas inadecuadas.",
+      "fuente_autorizada": [
+        "Didáctica de las ciencias",
+        "Constructivismo",
+        "Aprendizaje significativo",
+        "Ideas previas",
+        "Conflicto cognitivo"
+      ],
+      "componente_modulo": "Abstracción científica vs. experiencia diaria",
+      "competencia": "Mediación didáctica de conceptos abstractos",
+      "afirmacion": "El docente debe identificar ideas previas, usar representaciones adecuadas y contrastar analogías para evitar concepciones erróneas.",
+      "evidencia_observable": "Reconoce que el concepto de plasma requiere mediación con modelos, ejemplos, contraejemplos y lenguaje científico pertinente.",
+      "tipo_de_evidencia": "Juicio didáctico aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce la función de la didáctica del maestro al enseñar conceptos científicos abstractos que pueden confundirse con experiencias cotidianas.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, ciencias naturales, didáctica, pedagogía o educación básica.",
-        "blueprint": {
-            "problematica_principal": "Asimilación errónea de conceptos científicos abstractos a partir de analogías cotidianas inadecuadas.",
-            "fuente_autorizada": [
-                "Didáctica de las ciencias",
-                "Constructivismo",
-                "Aprendizaje significativo",
-                "Ideas previas",
-                "Conflicto cognitivo"
-            ],
-            "componente_modulo": "Abstracción científica vs. experiencia diaria",
-            "competencia": "Mediación didáctica de conceptos abstractos",
-            "afirmacion": "El docente debe identificar ideas previas, usar representaciones adecuadas y contrastar analogías para evitar concepciones erróneas.",
-            "evidencia_observable": "Reconoce que el concepto de plasma requiere mediación con modelos, ejemplos, contraejemplos y lenguaje científico pertinente.",
-            "tipo_de_evidencia": "Juicio didáctico aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que enseñar conceptos científicos abstractos exige mediación didáctica que conecte con la experiencia sin reducir el concepto a analogías incorrectas.",
-        "evidencia_observable": "Selecciona una estrategia que aclara el concepto, trabaja ideas previas y evita comparaciones engañosas.",
-        "tarea_cognitiva": "Elegir una mediación didáctica adecuada para evitar una idea científica errónea.",
-        "tipo_de_pregunta": "Caso situacional de enseñanza de ciencias",
-        "dificultad_esperada": "Media-Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Exigir conocimiento científico avanzado",
-                "revision": "El ítem evalúa la función didáctica, no detalles técnicos profundos sobre física del plasma."
-            },
-            {
-                "riesgo": "Ridiculizar ideas previas infantiles",
-                "revision": "La clave las trata como punto de partida para aprender."
-            },
-            {
-                "riesgo": "Usar analogías de manera acrítica",
-                "revision": "La opción correcta exige contrastar ejemplos y límites de las analogías."
-            }
-        ]
+    "claim": "El evaluado comprende que enseñar conceptos científicos abstractos exige mediación didáctica que conecte con la experiencia sin reducir el concepto a analogías incorrectas.",
+    "evidencia_observable": "Selecciona una estrategia que aclara el concepto, trabaja ideas previas y evita comparaciones engañosas.",
+    "tarea_cognitiva": "Elegir una mediación didáctica adecuada para evitar una idea científica errónea.",
+    "tipo_de_pregunta": "Caso situacional de enseñanza de ciencias",
+    "dificultad_esperada": "Media-Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Exigir conocimiento científico avanzado",
+        "revision": "El ítem evalúa la función didáctica, no detalles técnicos profundos sobre física del plasma."
+      },
+      {
+        "riesgo": "Ridiculizar ideas previas infantiles",
+        "revision": "La clave las trata como punto de partida para aprender."
+      },
+      {
+        "riesgo": "Usar analogías de manera acrítica",
+        "revision": "La opción correcta exige contrastar ejemplos y límites de las analogías."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "En ciencias naturales, el currículo introduce el estado de la materia llamado plasma. Algunos niños lo comparan con gelatina porque asocian la palabra con algo blando o viscoso que han visto en la vida cotidiana.\n\n¿Cuál es la función didáctica del maestro para evitar esta idea errónea?",
+    "opciones": {
+      "A": "Explorar la idea previa, explicar el concepto con representaciones adecuadas, usar ejemplos y contraejemplos, y aclarar los límites de las comparaciones cotidianas.",
+      "B": "Aceptar la comparación con gelatina como explicación científica suficiente.",
+      "C": "Evitar enseñar conceptos abstractos porque los niños pueden confundirse.",
+      "D": "Calificar negativamente a los niños que relacionen el concepto con experiencias diarias."
     },
-    "item": {
-        "enunciado": "En ciencias naturales, el currículo introduce el estado de la materia llamado plasma. Algunos niños lo comparan con gelatina porque asocian la palabra con algo blando o viscoso que han visto en la vida cotidiana.\n\n¿Cuál es la función didáctica del maestro para evitar esta idea errónea?",
-        "opciones": {
-            "A": "Explorar la idea previa, explicar el concepto con representaciones adecuadas, usar ejemplos y contraejemplos, y aclarar los límites de las comparaciones cotidianas.",
-            "B": "Aceptar la comparación con gelatina como explicación científica suficiente.",
-            "C": "Evitar enseñar conceptos abstractos porque los niños pueden confundirse.",
-            "D": "Calificar negativamente a los niños que relacionen el concepto con experiencias diarias."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Abstracción científica vs. experiencia diaria",
+    "competencia": "Mediación didáctica de conceptos abstractos",
+    "claim_evaluado": "El evaluado comprende que enseñar conceptos científicos abstractos exige mediación didáctica que conecte con la experiencia sin reducir el concepto a analogías incorrectas.",
+    "evidencia": "Selecciona una estrategia que aclara el concepto, trabaja ideas previas y evita comparaciones engañosas.",
+    "proceso_cognitivo": "Análisis y juicio didáctico",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media-Alta",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Convierte una analogía cotidiana en definición científica incorrecta.",
+      "C": "Evita el aprendizaje abstracto en lugar de mediarlo.",
+      "D": "Sanciona la idea previa sin transformarla."
     },
-    "ficha_tecnica": {
-        "componente": "Abstracción científica vs. experiencia diaria",
-        "competencia": "Mediación didáctica de conceptos abstractos",
-        "claim_evaluado": "El evaluado comprende que enseñar conceptos científicos abstractos exige mediación didáctica que conecte con la experiencia sin reducir el concepto a analogías incorrectas.",
-        "evidencia": "Selecciona una estrategia que aclara el concepto, trabaja ideas previas y evita comparaciones engañosas.",
-        "proceso_cognitivo": "Análisis y juicio didáctico",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media-Alta",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Convierte una analogía cotidiana en definición científica incorrecta.",
-            "C": "Evita el aprendizaje abstracto en lugar de mediarlo.",
-            "D": "Sanciona la idea previa sin transformarla."
-        },
-        "fuente_autorizada": [
-            "Didáctica de las ciencias",
-            "Constructivismo",
-            "Aprendizaje significativo",
-            "Ideas previas",
-            "Conflicto cognitivo"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque parte de la idea previa, introduce representaciones científicas y ayuda a diferenciar analogía de concepto.",
-        "opcion_B": "Es incorrecta porque refuerza una concepción errónea.",
-        "opcion_C": "Es incorrecta porque renuncia a la mediación didáctica.",
-        "opcion_D": "Es incorrecta porque castiga la asociación inicial en lugar de reconstruirla."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem valora la experiencia previa del estudiante, pero exige mediación para construir una explicación científica más adecuada."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión disciplinar posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre error, conflicto cognitivo y reestructuración de esquemas."
+    "fuente_autorizada": [
+      "Didáctica de las ciencias",
+      "Constructivismo",
+      "Aprendizaje significativo",
+      "Ideas previas",
+      "Conflicto cognitivo"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque refuerza una concepción errónea.",
+    "opcion_C": "Es incorrecta porque renuncia a la mediación didáctica.",
+    "opcion_D": "Es incorrecta porque castiga la asociación inicial en lugar de reconstruirla.",
+    "distractores": {
+      "B": "Es incorrecta porque refuerza una concepción errónea.",
+      "C": "Es incorrecta porque renuncia a la mediación didáctica.",
+      "D": "Es incorrecta porque castiga la asociación inicial en lugar de reconstruirla."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem valora la experiencia previa del estudiante, pero exige mediación para construir una explicación científica más adecuada."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión disciplinar posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre error, conflicto cognitivo y reestructuración de esquemas."
+  }
 }

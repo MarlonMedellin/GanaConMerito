@@ -1,97 +1,102 @@
 {
-    "id_item": "NFL_B05_I02",
-    "archivo_sugerido": "NFL_B05_I02_comunidad_educativa_corresponsabilidad_ley_115.json",
-    "bloque": {
-        "codigo_bloque": "NFL_B05",
-        "nombre": "Corresponsabilidad educativa, ausentismo y posición de garante",
-        "estado_en_lista": "Bloque 5 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 2 de 3"
+  "id_item": "NFL_B05_I02",
+  "archivo_sugerido": "NFL_B05_I02_comunidad_educativa_corresponsabilidad_ley_115.json",
+  "bloque": {
+    "codigo_bloque": "NFL_B05",
+    "nombre": "Corresponsabilidad educativa, ausentismo y posición de garante",
+    "estado_en_lista": "Bloque 5 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 2 de 3"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce que la comunidad educativa participa en la dirección y corresponsabilidad institucional, según la Ley 115.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, gestión escolar, coordinación, rectoría, participación educativa o convivencia.",
+    "blueprint": {
+      "problematica_principal": "Desconocimiento de los actores que conforman la comunidad educativa y su papel en la vida institucional.",
+      "fuente_autorizada": [
+        "Ley 115 de 1994",
+        "Artículo 6 Ley 115",
+        "Constitución Política de Colombia artículo 68",
+        "Comunidad educativa",
+        "Corresponsabilidad educativa"
+      ],
+      "componente_modulo": "Comunidad educativa y corresponsabilidad",
+      "competencia": "Identificación de actores de la comunidad educativa",
+      "afirmacion": "La comunidad educativa está conformada por estudiantes, educadores, padres o acudientes, egresados, directivos docentes y administradores escolares.",
+      "evidencia_observable": "Reconoce que la permanencia y formación del estudiante no dependen de un solo actor.",
+      "tipo_de_evidencia": "Reconocimiento normativo",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "C"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce que la comunidad educativa participa en la dirección y corresponsabilidad institucional, según la Ley 115.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, gestión escolar, coordinación, rectoría, participación educativa o convivencia.",
-        "blueprint": {
-            "problematica_principal": "Desconocimiento de los actores que conforman la comunidad educativa y su papel en la vida institucional.",
-            "fuente_autorizada": [
-                "Ley 115 de 1994",
-                "Artículo 6 Ley 115",
-                "Constitución Política de Colombia artículo 68",
-                "Comunidad educativa",
-                "Corresponsabilidad educativa"
-            ],
-            "componente_modulo": "Comunidad educativa y corresponsabilidad",
-            "competencia": "Identificación de actores de la comunidad educativa",
-            "afirmacion": "La comunidad educativa está conformada por estudiantes, educadores, padres o acudientes, egresados, directivos docentes y administradores escolares.",
-            "evidencia_observable": "Reconoce que la permanencia y formación del estudiante no dependen de un solo actor.",
-            "tipo_de_evidencia": "Reconocimiento normativo",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "C"
-        },
-        "claim": "El evaluado comprende que la educación es una responsabilidad compartida entre diversos actores institucionales y comunitarios.",
-        "evidencia_observable": "Selecciona el conjunto de actores que conforman la comunidad educativa.",
-        "tarea_cognitiva": "Reconocer una definición normativa de comunidad educativa.",
-        "tipo_de_pregunta": "Pregunta normativa de reconocimiento",
-        "dificultad_esperada": "Baja-Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Reducir comunidad educativa solo a docentes",
-                "revision": "La clave incluye todos los actores establecidos."
-            },
-            {
-                "riesgo": "Excluir estudiantes de la comunidad educativa",
-                "revision": "La opción correcta los incluye expresamente."
-            },
-            {
-                "riesgo": "Confundir comunidad educativa con autoridades externas",
-                "revision": "Los distractores separan actores institucionales de otros agentes."
-            }
-        ]
+    "claim": "El evaluado comprende que la educación es una responsabilidad compartida entre diversos actores institucionales y comunitarios.",
+    "evidencia_observable": "Selecciona el conjunto de actores que conforman la comunidad educativa.",
+    "tarea_cognitiva": "Reconocer una definición normativa de comunidad educativa.",
+    "tipo_de_pregunta": "Pregunta normativa de reconocimiento",
+    "dificultad_esperada": "Baja-Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Reducir comunidad educativa solo a docentes",
+        "revision": "La clave incluye todos los actores establecidos."
+      },
+      {
+        "riesgo": "Excluir estudiantes de la comunidad educativa",
+        "revision": "La opción correcta los incluye expresamente."
+      },
+      {
+        "riesgo": "Confundir comunidad educativa con autoridades externas",
+        "revision": "Los distractores separan actores institucionales de otros agentes."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Una institución analiza un caso de permanencia escolar y algunos docentes afirman que la responsabilidad solo corresponde al profesor de grupo. La coordinación recuerda que la Ley 115 habla de comunidad educativa.\n\n¿Cuál grupo representa mejor esa comunidad educativa?",
+    "opciones": {
+      "A": "Únicamente los docentes de aula.",
+      "B": "Solo la rectoría y la secretaría de educación.",
+      "C": "Estudiantes, educadores, padres de familia o acudientes, egresados, directivos docentes y administradores escolares.",
+      "D": "Solo los estudiantes que tienen buen rendimiento académico."
     },
-    "item": {
-        "enunciado": "Una institución analiza un caso de permanencia escolar y algunos docentes afirman que la responsabilidad solo corresponde al profesor de grupo. La coordinación recuerda que la Ley 115 habla de comunidad educativa.\n\n¿Cuál grupo representa mejor esa comunidad educativa?",
-        "opciones": {
-            "A": "Únicamente los docentes de aula.",
-            "B": "Solo la rectoría y la secretaría de educación.",
-            "C": "Estudiantes, educadores, padres de familia o acudientes, egresados, directivos docentes y administradores escolares.",
-            "D": "Solo los estudiantes que tienen buen rendimiento académico."
-        },
-        "respuesta_correcta": "C"
+    "respuesta_correcta": "C"
+  },
+  "ficha_tecnica": {
+    "componente": "Comunidad educativa y corresponsabilidad",
+    "competencia": "Identificación de actores de la comunidad educativa",
+    "claim_evaluado": "El evaluado comprende que la educación es una responsabilidad compartida entre diversos actores institucionales y comunitarios.",
+    "evidencia": "Selecciona el conjunto de actores que conforman la comunidad educativa.",
+    "proceso_cognitivo": "Reconocimiento normativo",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Baja-Media",
+    "respuesta_correcta": "C",
+    "distractores": {
+      "A": "Reduce la comunidad educativa a docentes.",
+      "B": "Excluye estudiantes, familias, egresados y administradores escolares.",
+      "D": "Discrimina y excluye a estudiantes por rendimiento."
     },
-    "ficha_tecnica": {
-        "componente": "Comunidad educativa y corresponsabilidad",
-        "competencia": "Identificación de actores de la comunidad educativa",
-        "claim_evaluado": "El evaluado comprende que la educación es una responsabilidad compartida entre diversos actores institucionales y comunitarios.",
-        "evidencia": "Selecciona el conjunto de actores que conforman la comunidad educativa.",
-        "proceso_cognitivo": "Reconocimiento normativo",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Baja-Media",
-        "respuesta_correcta": "C",
-        "distractores": {
-            "A": "Reduce la comunidad educativa a docentes.",
-            "B": "Excluye estudiantes, familias, egresados y administradores escolares.",
-            "D": "Discrimina y excluye a estudiantes por rendimiento."
-        },
-        "fuente_autorizada": [
-            "Ley 115 de 1994",
-            "Artículo 6 Ley 115",
-            "Constitución Política de Colombia artículo 68"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque recoge los actores que integran la comunidad educativa según la Ley 115.",
-        "opcion_A": "Es incorrecta porque los docentes no son el único actor.",
-        "opcion_B": "Es incorrecta porque no incluye la comunidad educativa completa.",
-        "opcion_D": "Es incorrecta porque todos los estudiantes hacen parte de la comunidad educativa, no solo quienes tienen buen rendimiento."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem reconoce participación amplia sin excluir estudiantes por rendimiento o condición."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 3 preguntas sobre corresponsabilidad educativa, ausentismo y posición de garante."
+    "fuente_autorizada": [
+      "Ley 115 de 1994",
+      "Artículo 6 Ley 115",
+      "Constitución Política de Colombia artículo 68"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "opcion_A": "Es incorrecta porque los docentes no son el único actor.",
+    "opcion_B": "Es incorrecta porque no incluye la comunidad educativa completa.",
+    "opcion_D": "Es incorrecta porque todos los estudiantes hacen parte de la comunidad educativa, no solo quienes tienen buen rendimiento.",
+    "distractores": {
+      "A": "Es incorrecta porque los docentes no son el único actor.",
+      "B": "Es incorrecta porque no incluye la comunidad educativa completa.",
+      "D": "Es incorrecta porque todos los estudiantes hacen parte de la comunidad educativa, no solo quienes tienen buen rendimiento."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem reconoce participación amplia sin excluir estudiantes por rendimiento o condición."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 3 preguntas sobre corresponsabilidad educativa, ausentismo y posición de garante."
+  }
 }

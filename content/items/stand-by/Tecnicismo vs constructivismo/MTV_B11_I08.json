@@ -1,36 +1,36 @@
 {
-    "id_item": "MTV_B11_I08",
-    "archivo_sugerido": "MTV_B11_I08_aprendizaje_activo_vs_repeticion.json",
-    "proposito_de_uso": "Evaluar si el aspirante identifica el aprendizaje activo como rasgo constructivista.",
-    "blueprint": {
-        "componente_modulo": "Aprendizaje activo",
-        "competencia": "Reconocimiento de estrategias constructivistas",
-        "afirmacion": "El aprendizaje activo implica que el estudiante participe, explore, argumente, pregunte, resuelva y construya significados.",
-        "evidencia_observable": "Selecciona una práctica que favorece construcción activa de conocimiento.",
-        "tipo_de_evidencia": "Reconocimiento didáctico aplicado",
-        "dificultad_esperada": "Media",
-        "clave": "D"
+  "id_item": "MTV_B11_I08",
+  "archivo_sugerido": "MTV_B11_I08_aprendizaje_activo_vs_repeticion.json",
+  "proposito_de_uso": "Evaluar si el aspirante identifica el aprendizaje activo como rasgo constructivista.",
+  "blueprint": {
+    "componente_modulo": "Aprendizaje activo",
+    "competencia": "Reconocimiento de estrategias constructivistas",
+    "afirmacion": "El aprendizaje activo implica que el estudiante participe, explore, argumente, pregunte, resuelva y construya significados.",
+    "evidencia_observable": "Selecciona una práctica que favorece construcción activa de conocimiento.",
+    "tipo_de_evidencia": "Reconocimiento didáctico aplicado",
+    "dificultad_esperada": "Media",
+    "clave": "D"
+  },
+  "item": {
+    "enunciado": "Una docente quiere abandonar la repetición mecánica y diseñar una clase más constructivista. ¿Cuál práctica sería más coherente?",
+    "opciones": {
+      "A": "Dictar definiciones durante toda la clase y prohibir preguntas.",
+      "B": "Exigir que todos copien el texto del libro sin discusión.",
+      "C": "Calificar solo la repetición literal.",
+      "D": "Plantear una situación problema, activar saberes previos, promover discusión y pedir a los estudiantes justificar sus respuestas."
     },
-    "item": {
-        "enunciado": "Una docente quiere abandonar la repetición mecánica y diseñar una clase más constructivista. ¿Cuál práctica sería más coherente?",
-        "opciones": {
-            "A": "Dictar definiciones durante toda la clase y prohibir preguntas.",
-            "B": "Exigir que todos copien el texto del libro sin discusión.",
-            "C": "Calificar solo la repetición literal.",
-            "D": "Plantear una situación problema, activar saberes previos, promover discusión y pedir a los estudiantes justificar sus respuestas."
-        },
-        "respuesta_correcta": "D"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque activa participación, saberes previos y argumentación.",
-        "distractores": {
-            "A": "Bloquea interacción y pensamiento.",
-            "B": "Reduce el aprendizaje a copia.",
-            "C": "Refuerza repetición literal."
-        }
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aplicable a planeación didáctica."
+    "respuesta_correcta": "D"
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "distractores": {
+      "A": "Bloquea interacción y pensamiento.",
+      "B": "Reduce el aprendizaje a copia.",
+      "C": "Refuerza repetición literal."
     }
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aplicable a planeación didáctica."
+  }
 }

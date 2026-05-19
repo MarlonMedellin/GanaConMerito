@@ -1,36 +1,36 @@
 {
-    "id_item": "MTV_B11_I04",
-    "archivo_sugerido": "MTV_B11_I04_uso_excesivo_recursos_sin_interaccion.json",
-    "proposito_de_uso": "Evaluar si el aspirante diferencia uso didáctico de recursos y uso tecnicista de medios.",
-    "blueprint": {
-        "componente_modulo": "Uso de recursos didácticos",
-        "competencia": "Selección crítica de mediaciones pedagógicas",
-        "afirmacion": "El uso de videos, computadores o guías no garantiza innovación si no hay interacción, análisis, pregunta, diálogo o propósito didáctico claro.",
-        "evidencia_observable": "Reconoce que el recurso debe mediar la comprensión y no reemplazar la interacción pedagógica.",
-        "tipo_de_evidencia": "Juicio didáctico aplicado",
-        "dificultad_esperada": "Media",
-        "clave": "D"
+  "id_item": "MTV_B11_I04",
+  "archivo_sugerido": "MTV_B11_I04_uso_excesivo_recursos_sin_interaccion.json",
+  "proposito_de_uso": "Evaluar si el aspirante diferencia uso didáctico de recursos y uso tecnicista de medios.",
+  "blueprint": {
+    "componente_modulo": "Uso de recursos didácticos",
+    "competencia": "Selección crítica de mediaciones pedagógicas",
+    "afirmacion": "El uso de videos, computadores o guías no garantiza innovación si no hay interacción, análisis, pregunta, diálogo o propósito didáctico claro.",
+    "evidencia_observable": "Reconoce que el recurso debe mediar la comprensión y no reemplazar la interacción pedagógica.",
+    "tipo_de_evidencia": "Juicio didáctico aplicado",
+    "dificultad_esperada": "Media",
+    "clave": "D"
+  },
+  "item": {
+    "enunciado": "Un docente proyecta videos durante toda la clase, entrega guías impresas y usa computadores, pero no formula preguntas, no promueve discusión, no analiza ideas previas ni verifica comprensión.\n\n¿Por qué esta práctica puede clasificarse como tecnicista?",
+    "opciones": {
+      "A": "Porque todo recurso digital es negativo.",
+      "B": "Porque los estudiantes nunca deben usar guías.",
+      "C": "Porque la tecnología siempre impide aprender.",
+      "D": "Porque los recursos se usan mecánicamente, sin interacción analítica ni mediación pedagógica significativa."
     },
-    "item": {
-        "enunciado": "Un docente proyecta videos durante toda la clase, entrega guías impresas y usa computadores, pero no formula preguntas, no promueve discusión, no analiza ideas previas ni verifica comprensión.\n\n¿Por qué esta práctica puede clasificarse como tecnicista?",
-        "opciones": {
-            "A": "Porque todo recurso digital es negativo.",
-            "B": "Porque los estudiantes nunca deben usar guías.",
-            "C": "Porque la tecnología siempre impide aprender.",
-            "D": "Porque los recursos se usan mecánicamente, sin interacción analítica ni mediación pedagógica significativa."
-        },
-        "respuesta_correcta": "D"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque el problema no es el recurso, sino su uso sin intención didáctica ni análisis.",
-        "distractores": {
-            "A": "Los recursos digitales pueden ser valiosos si tienen propósito pedagógico.",
-            "B": "Las guías pueden apoyar procesos si están bien diseñadas.",
-            "C": "La tecnología no es negativa por sí misma."
-        }
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem fuerte para evaluar criterio didáctico en recursos."
+    "respuesta_correcta": "D"
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "distractores": {
+      "A": "Los recursos digitales pueden ser valiosos si tienen propósito pedagógico.",
+      "B": "Las guías pueden apoyar procesos si están bien diseñadas.",
+      "C": "La tecnología no es negativa por sí misma."
     }
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem fuerte para evaluar criterio didáctico en recursos."
+  }
 }

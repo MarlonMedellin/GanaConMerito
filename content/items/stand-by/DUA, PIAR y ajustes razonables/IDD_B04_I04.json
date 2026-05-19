@@ -1,97 +1,102 @@
 {
-    "id_item": "IDD_B04_I04",
-    "archivo_sugerido": "IDD_B04_I04_ajuste_razonable_pertinente_eficaz.json",
-    "bloque": {
-        "codigo_bloque": "IDD_B04",
-        "nombre": "DUA, PIAR y ajustes razonables",
-        "estado_en_lista": "Bloque 4 de 17",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 4 de 7"
+  "id_item": "IDD_B04_I04",
+  "archivo_sugerido": "IDD_B04_I04_ajuste_razonable_pertinente_eficaz.json",
+  "bloque": {
+    "codigo_bloque": "IDD_B04",
+    "nombre": "DUA, PIAR y ajustes razonables",
+    "estado_en_lista": "Bloque 4 de 17",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 4 de 7"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante comprende cuándo un ajuste razonable es pertinente y eficaz para un estudiante con discapacidad.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión, coordinación académica, orientación escolar o apoyo pedagógico.",
+    "blueprint": {
+      "problematica_principal": "Aplicación de ajustes genéricos, simbólicos o no evaluados que no reducen barreras reales.",
+      "fuente_autorizada": [
+        "Decreto 1421 de 2017",
+        "Convención sobre los Derechos de las Personas con Discapacidad",
+        "Educación inclusiva",
+        "PIAR"
+      ],
+      "componente_modulo": "Concepto de ajuste razonable",
+      "competencia": "Diseño y evaluación de ajustes razonables",
+      "afirmacion": "Un ajuste razonable es pertinente cuando responde a una barrera específica, es necesario, proporcional y favorece participación y aprendizaje.",
+      "evidencia_observable": "Reconoce que el ajuste debe ser individualizado, funcional, evaluable y articulado al propósito de aprendizaje.",
+      "tipo_de_evidencia": "Juicio pedagógico aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante comprende cuándo un ajuste razonable es pertinente y eficaz para un estudiante con discapacidad.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión, coordinación académica, orientación escolar o apoyo pedagógico.",
-        "blueprint": {
-            "problematica_principal": "Aplicación de ajustes genéricos, simbólicos o no evaluados que no reducen barreras reales.",
-            "fuente_autorizada": [
-                "Decreto 1421 de 2017",
-                "Convención sobre los Derechos de las Personas con Discapacidad",
-                "Educación inclusiva",
-                "PIAR"
-            ],
-            "componente_modulo": "Concepto de ajuste razonable",
-            "competencia": "Diseño y evaluación de ajustes razonables",
-            "afirmacion": "Un ajuste razonable es pertinente cuando responde a una barrera específica, es necesario, proporcional y favorece participación y aprendizaje.",
-            "evidencia_observable": "Reconoce que el ajuste debe ser individualizado, funcional, evaluable y articulado al propósito de aprendizaje.",
-            "tipo_de_evidencia": "Juicio pedagógico aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que un ajuste razonable no se define por la buena intención, sino por su capacidad real de reducir barreras y facilitar acceso, participación y aprendizaje.",
-        "evidencia_observable": "Selecciona criterios de pertinencia y eficacia del ajuste razonable.",
-        "tarea_cognitiva": "Determinar si una adaptación curricular funciona como ajuste razonable adecuado.",
-        "tipo_de_pregunta": "Pregunta conceptual aplicada",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Confundir ajuste con privilegio",
-                "revision": "La clave lo presenta como condición de igualdad real."
-            },
-            {
-                "riesgo": "Usar ajustes genéricos sin relación con barreras",
-                "revision": "La opción correcta exige relación con necesidad y barrera concreta."
-            },
-            {
-                "riesgo": "Bajar expectativas sin criterio",
-                "revision": "El ítem habla de acceso al propósito de aprendizaje, no de eliminación automática de metas."
-            }
-        ]
+    "claim": "El evaluado comprende que un ajuste razonable no se define por la buena intención, sino por su capacidad real de reducir barreras y facilitar acceso, participación y aprendizaje.",
+    "evidencia_observable": "Selecciona criterios de pertinencia y eficacia del ajuste razonable.",
+    "tarea_cognitiva": "Determinar si una adaptación curricular funciona como ajuste razonable adecuado.",
+    "tipo_de_pregunta": "Pregunta conceptual aplicada",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Confundir ajuste con privilegio",
+        "revision": "La clave lo presenta como condición de igualdad real."
+      },
+      {
+        "riesgo": "Usar ajustes genéricos sin relación con barreras",
+        "revision": "La opción correcta exige relación con necesidad y barrera concreta."
+      },
+      {
+        "riesgo": "Bajar expectativas sin criterio",
+        "revision": "El ítem habla de acceso al propósito de aprendizaje, no de eliminación automática de metas."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un docente decide aplicar un ajuste razonable en una actividad de lectura para un estudiante con discapacidad. Quiere saber si el ajuste realmente es pertinente y eficaz, y no solo una modificación superficial.\n\n¿Cuándo puede considerarse verdaderamente pertinente y eficaz?",
+    "opciones": {
+      "A": "Cuando responde a una barrera específica, mantiene el propósito de aprendizaje, facilita participación y permite evidenciar progreso.",
+      "B": "Cuando elimina toda exigencia académica para evitar frustración.",
+      "C": "Cuando se aplica igual a todos los estudiantes sin considerar necesidades particulares.",
+      "D": "Cuando separa al estudiante del grupo para que trabaje un tema sin relación con la clase."
     },
-    "item": {
-        "enunciado": "Un docente decide aplicar un ajuste razonable en una actividad de lectura para un estudiante con discapacidad. Quiere saber si el ajuste realmente es pertinente y eficaz, y no solo una modificación superficial.\n\n¿Cuándo puede considerarse verdaderamente pertinente y eficaz?",
-        "opciones": {
-            "A": "Cuando responde a una barrera específica, mantiene el propósito de aprendizaje, facilita participación y permite evidenciar progreso.",
-            "B": "Cuando elimina toda exigencia académica para evitar frustración.",
-            "C": "Cuando se aplica igual a todos los estudiantes sin considerar necesidades particulares.",
-            "D": "Cuando separa al estudiante del grupo para que trabaje un tema sin relación con la clase."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Concepto de ajuste razonable",
+    "competencia": "Diseño y evaluación de ajustes razonables",
+    "claim_evaluado": "El evaluado comprende que un ajuste razonable no se define por la buena intención, sino por su capacidad real de reducir barreras y facilitar acceso, participación y aprendizaje.",
+    "evidencia": "Selecciona criterios de pertinencia y eficacia del ajuste razonable.",
+    "proceso_cognitivo": "Juicio pedagógico aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Confunde ajuste con eliminación de exigencia.",
+      "C": "Niega la individualización necesaria del ajuste.",
+      "D": "Propone segregación y desconexión del aprendizaje común."
     },
-    "ficha_tecnica": {
-        "componente": "Concepto de ajuste razonable",
-        "competencia": "Diseño y evaluación de ajustes razonables",
-        "claim_evaluado": "El evaluado comprende que un ajuste razonable no se define por la buena intención, sino por su capacidad real de reducir barreras y facilitar acceso, participación y aprendizaje.",
-        "evidencia": "Selecciona criterios de pertinencia y eficacia del ajuste razonable.",
-        "proceso_cognitivo": "Juicio pedagógico aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Confunde ajuste con eliminación de exigencia.",
-            "C": "Niega la individualización necesaria del ajuste.",
-            "D": "Propone segregación y desconexión del aprendizaje común."
-        },
-        "fuente_autorizada": [
-            "Decreto 1421 de 2017",
-            "Convención sobre los Derechos de las Personas con Discapacidad",
-            "Educación inclusiva",
-            "PIAR"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque un ajuste razonable debe responder a una barrera concreta, mantener el sentido pedagógico y permitir participación y progreso.",
-        "opcion_B": "Es incorrecta porque ajustar no significa eliminar todo desafío.",
-        "opcion_C": "Es incorrecta porque el ajuste razonable responde a necesidades específicas.",
-        "opcion_D": "Es incorrecta porque separa y desvincula al estudiante del propósito común."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita interpretar los apoyos como privilegios o reducciones arbitrarias, y los ubica como medios para garantizar igualdad real."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 7 preguntas sobre DUA, PIAR y ajustes razonables."
+    "fuente_autorizada": [
+      "Decreto 1421 de 2017",
+      "Convención sobre los Derechos de las Personas con Discapacidad",
+      "Educación inclusiva",
+      "PIAR"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque ajustar no significa eliminar todo desafío.",
+    "opcion_C": "Es incorrecta porque el ajuste razonable responde a necesidades específicas.",
+    "opcion_D": "Es incorrecta porque separa y desvincula al estudiante del propósito común.",
+    "distractores": {
+      "B": "Es incorrecta porque ajustar no significa eliminar todo desafío.",
+      "C": "Es incorrecta porque el ajuste razonable responde a necesidades específicas.",
+      "D": "Es incorrecta porque separa y desvincula al estudiante del propósito común."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita interpretar los apoyos como privilegios o reducciones arbitrarias, y los ubica como medios para garantizar igualdad real."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 7 preguntas sobre DUA, PIAR y ajustes razonables."
+  }
 }

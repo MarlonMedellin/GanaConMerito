@@ -1,98 +1,103 @@
 {
-    "id_item": "NFL_B07_I03",
-    "archivo_sugerido": "NFL_B07_I03_bien_comun_funcion_social_educacion.json",
-    "bloque": {
-        "codigo_bloque": "NFL_B07",
-        "nombre": "Educación como derecho fundamental, bien común y derecho pluridimensional",
-        "estado_en_lista": "Bloque 7 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 3 de 4"
+  "id_item": "NFL_B07_I03",
+  "archivo_sugerido": "NFL_B07_I03_bien_comun_funcion_social_educacion.json",
+  "bloque": {
+    "codigo_bloque": "NFL_B07",
+    "nombre": "Educación como derecho fundamental, bien común y derecho pluridimensional",
+    "estado_en_lista": "Bloque 7 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 3 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante interpreta la educación como bien común y función social, no solo como beneficio individual.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, política educativa, gestión escolar, ciudadanía o derechos humanos.",
+    "blueprint": {
+      "problematica_principal": "Concebir la educación como ventaja individual desligada de ciudadanía, cultura, convivencia y desarrollo social.",
+      "fuente_autorizada": [
+        "Constitución Política de Colombia artículo 67",
+        "Ley 115 de 1994",
+        "Fines de la educación",
+        "Función social de la educación",
+        "Bien común"
+      ],
+      "componente_modulo": "Educación como bien común",
+      "competencia": "Comprensión social y ciudadana de la educación",
+      "afirmacion": "La educación cumple una función social porque contribuye al acceso a la cultura, la ciencia, la técnica, la convivencia democrática y el desarrollo de la comunidad.",
+      "evidencia_observable": "Reconoce que educar no solo beneficia al estudiante individual, sino también a la sociedad y a la construcción democrática.",
+      "tipo_de_evidencia": "Comprensión sociojurídica aplicada",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "D"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante interpreta la educación como bien común y función social, no solo como beneficio individual.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, política educativa, gestión escolar, ciudadanía o derechos humanos.",
-        "blueprint": {
-            "problematica_principal": "Concebir la educación como ventaja individual desligada de ciudadanía, cultura, convivencia y desarrollo social.",
-            "fuente_autorizada": [
-                "Constitución Política de Colombia artículo 67",
-                "Ley 115 de 1994",
-                "Fines de la educación",
-                "Función social de la educación",
-                "Bien común"
-            ],
-            "componente_modulo": "Educación como bien común",
-            "competencia": "Comprensión social y ciudadana de la educación",
-            "afirmacion": "La educación cumple una función social porque contribuye al acceso a la cultura, la ciencia, la técnica, la convivencia democrática y el desarrollo de la comunidad.",
-            "evidencia_observable": "Reconoce que educar no solo beneficia al estudiante individual, sino también a la sociedad y a la construcción democrática.",
-            "tipo_de_evidencia": "Comprensión sociojurídica aplicada",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "D"
-        },
-        "claim": "El evaluado comprende que la educación tiene valor público y comunitario, además de valor individual.",
-        "evidencia_observable": "Selecciona una explicación de la educación como bien común y función social.",
-        "tarea_cognitiva": "Interpretar una finalidad social de la educación.",
-        "tipo_de_pregunta": "Pregunta conceptual aplicada",
-        "dificultad_esperada": "Media-Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Negar la dimensión individual del derecho",
-                "revision": "La clave articula beneficio individual y social."
-            },
-            {
-                "riesgo": "Reducir función social a productividad económica",
-                "revision": "La opción correcta incluye cultura, ciudadanía y convivencia."
-            },
-            {
-                "riesgo": "Usar bien común de forma abstracta",
-                "revision": "La respuesta lo vincula con efectos sociales concretos."
-            }
-        ]
+    "claim": "El evaluado comprende que la educación tiene valor público y comunitario, además de valor individual.",
+    "evidencia_observable": "Selecciona una explicación de la educación como bien común y función social.",
+    "tarea_cognitiva": "Interpretar una finalidad social de la educación.",
+    "tipo_de_pregunta": "Pregunta conceptual aplicada",
+    "dificultad_esperada": "Media-Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Negar la dimensión individual del derecho",
+        "revision": "La clave articula beneficio individual y social."
+      },
+      {
+        "riesgo": "Reducir función social a productividad económica",
+        "revision": "La opción correcta incluye cultura, ciudadanía y convivencia."
+      },
+      {
+        "riesgo": "Usar bien común de forma abstracta",
+        "revision": "La respuesta lo vincula con efectos sociales concretos."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un estudiante pregunta por qué la Constitución y la Ley General de Educación insisten en que la educación tiene función social y puede entenderse como un bien común, si aparentemente cada persona estudia para su propio proyecto de vida.\n\n¿Cuál respuesta es más adecuada?",
+    "opciones": {
+      "A": "Porque la educación solo produce beneficios privados y no tiene efectos sociales.",
+      "B": "Porque la educación sirve únicamente para competir por mejores notas.",
+      "C": "Porque la educación como bien común elimina los derechos individuales del estudiante.",
+      "D": "Porque al formar personas con conocimientos, valores, cultura, ciudadanía y capacidad de convivencia, la educación beneficia tanto al individuo como a la comunidad democrática."
     },
-    "item": {
-        "enunciado": "Un estudiante pregunta por qué la Constitución y la Ley General de Educación insisten en que la educación tiene función social y puede entenderse como un bien común, si aparentemente cada persona estudia para su propio proyecto de vida.\n\n¿Cuál respuesta es más adecuada?",
-        "opciones": {
-            "A": "Porque la educación solo produce beneficios privados y no tiene efectos sociales.",
-            "B": "Porque la educación sirve únicamente para competir por mejores notas.",
-            "C": "Porque la educación como bien común elimina los derechos individuales del estudiante.",
-            "D": "Porque al formar personas con conocimientos, valores, cultura, ciudadanía y capacidad de convivencia, la educación beneficia tanto al individuo como a la comunidad democrática."
-        },
-        "respuesta_correcta": "D"
+    "respuesta_correcta": "D"
+  },
+  "ficha_tecnica": {
+    "componente": "Educación como bien común",
+    "competencia": "Comprensión social y ciudadana de la educación",
+    "claim_evaluado": "El evaluado comprende que la educación tiene valor público y comunitario, además de valor individual.",
+    "evidencia": "Selecciona una explicación de la educación como bien común y función social.",
+    "proceso_cognitivo": "Comprensión sociojurídica aplicada",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media-Alta",
+    "respuesta_correcta": "D",
+    "distractores": {
+      "A": "Niega la función social de la educación.",
+      "B": "Reduce la educación a competencia académica.",
+      "C": "Confunde bien común con negación de derechos individuales."
     },
-    "ficha_tecnica": {
-        "componente": "Educación como bien común",
-        "competencia": "Comprensión social y ciudadana de la educación",
-        "claim_evaluado": "El evaluado comprende que la educación tiene valor público y comunitario, además de valor individual.",
-        "evidencia": "Selecciona una explicación de la educación como bien común y función social.",
-        "proceso_cognitivo": "Comprensión sociojurídica aplicada",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media-Alta",
-        "respuesta_correcta": "D",
-        "distractores": {
-            "A": "Niega la función social de la educación.",
-            "B": "Reduce la educación a competencia académica.",
-            "C": "Confunde bien común con negación de derechos individuales."
-        },
-        "fuente_autorizada": [
-            "Constitución Política de Colombia artículo 67",
-            "Ley 115 de 1994",
-            "Fines de la educación",
-            "Función social de la educación"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque la educación forma al sujeto y, al mismo tiempo, fortalece cultura, ciudadanía, convivencia y vida democrática.",
-        "opcion_A": "Es incorrecta porque desconoce la función social.",
-        "opcion_B": "Es incorrecta porque limita la educación a rendimiento competitivo.",
-        "opcion_C": "Es incorrecta porque el bien común no elimina la titularidad individual del derecho."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem reconoce el proyecto individual del estudiante y lo articula con la vida social."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión conceptual posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre educación como derecho fundamental, bien común y derecho pluridimensional."
+    "fuente_autorizada": [
+      "Constitución Política de Colombia artículo 67",
+      "Ley 115 de 1994",
+      "Fines de la educación",
+      "Función social de la educación"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "opcion_A": "Es incorrecta porque desconoce la función social.",
+    "opcion_B": "Es incorrecta porque limita la educación a rendimiento competitivo.",
+    "opcion_C": "Es incorrecta porque el bien común no elimina la titularidad individual del derecho.",
+    "distractores": {
+      "A": "Es incorrecta porque desconoce la función social.",
+      "B": "Es incorrecta porque limita la educación a rendimiento competitivo.",
+      "C": "Es incorrecta porque el bien común no elimina la titularidad individual del derecho."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem reconoce el proyecto individual del estudiante y lo articula con la vida social."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión conceptual posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre educación como derecho fundamental, bien común y derecho pluridimensional."
+  }
 }

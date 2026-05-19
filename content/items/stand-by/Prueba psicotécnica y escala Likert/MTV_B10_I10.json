@@ -1,40 +1,40 @@
 {
-    "id_item": "MTV_B10_I10",
-    "archivo_sugerido": "MTV_B10_I10_proposicion_doble_o_ambigua.json",
-    "proposito_de_uso": "Evaluar si el aspirante identifica proposiciones con doble contenido o ambigüedad, que dificultan una respuesta Likert clara.",
-    "blueprint": {
-        "componente_modulo": "Calidad de proposiciones Likert",
-        "competencia": "Identificación de ambigüedad y doble formulación",
-        "afirmacion": "Una buena proposición Likert debe evaluar una sola idea central; si mezcla dos conductas distintas, puede generar ambigüedad.",
-        "evidencia_observable": "Detecta que una proposición con dos acciones no necesariamente equivalentes puede ser problemática.",
-        "tipo_de_evidencia": "Análisis de construcción de ítems",
-        "dificultad_esperada": "Alta",
-        "clave": "A"
+  "id_item": "MTV_B10_I10",
+  "archivo_sugerido": "MTV_B10_I10_proposicion_doble_o_ambigua.json",
+  "proposito_de_uso": "Evaluar si el aspirante identifica proposiciones con doble contenido o ambigüedad, que dificultan una respuesta Likert clara.",
+  "blueprint": {
+    "componente_modulo": "Calidad de proposiciones Likert",
+    "competencia": "Identificación de ambigüedad y doble formulación",
+    "afirmacion": "Una buena proposición Likert debe evaluar una sola idea central; si mezcla dos conductas distintas, puede generar ambigüedad.",
+    "evidencia_observable": "Detecta que una proposición con dos acciones no necesariamente equivalentes puede ser problemática.",
+    "tipo_de_evidencia": "Análisis de construcción de ítems",
+    "dificultad_esperada": "Alta",
+    "clave": "A"
+  },
+  "item": {
+    "enunciado": "Una proposición Likert dice: 'Mantengo buena comunicación con las familias y siempre estoy de acuerdo con todas sus solicitudes'.\n\n¿Cuál es el principal problema técnico de esta proposición?",
+    "opciones": {
+      "A": "Mezcla dos ideas distintas: comunicarse bien con las familias y estar de acuerdo con todas sus solicitudes, que no necesariamente son lo mismo.",
+      "B": "Es perfecta porque toda proposición debe incluir dos ideas diferentes.",
+      "C": "Es neutra porque usa la palabra familias.",
+      "D": "Solo evalúa conocimiento matemático."
     },
-    "item": {
-        "enunciado": "Una proposición Likert dice: 'Mantengo buena comunicación con las familias y siempre estoy de acuerdo con todas sus solicitudes'.\n\n¿Cuál es el principal problema técnico de esta proposición?",
-        "opciones": {
-            "A": "Mezcla dos ideas distintas: comunicarse bien con las familias y estar de acuerdo con todas sus solicitudes, que no necesariamente son lo mismo.",
-            "B": "Es perfecta porque toda proposición debe incluir dos ideas diferentes.",
-            "C": "Es neutra porque usa la palabra familias.",
-            "D": "Solo evalúa conocimiento matemático."
-        },
-        "respuesta_correcta": "A"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque la proposición contiene doble contenido y un absoluto.",
-        "distractores": {
-            "B": "Una proposición Likert clara debe evitar mezclar ideas no equivalentes.",
-            "C": "Mencionar familias no la vuelve neutra.",
-            "D": "No evalúa conocimiento matemático."
-        }
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado",
-        "argumento": "El ítem ayuda a reconocer calidad técnica de las proposiciones."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Puede usarse para formar al evaluado en lectura crítica de ítems Likert."
+    "respuesta_correcta": "A"
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "distractores": {
+      "B": "Una proposición Likert clara debe evitar mezclar ideas no equivalentes.",
+      "C": "Mencionar familias no la vuelve neutra.",
+      "D": "No evalúa conocimiento matemático."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado",
+    "argumento": "El ítem ayuda a reconocer calidad técnica de las proposiciones."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Puede usarse para formar al evaluado en lectura crítica de ítems Likert."
+  }
 }

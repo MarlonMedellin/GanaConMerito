@@ -1,99 +1,104 @@
 {
-    "id_item": "NFL_B04_I03",
-    "archivo_sugerido": "NFL_B04_I03_licenciado_basica_no_media_necesidad_servicio.json",
-    "bloque": {
-        "codigo_bloque": "NFL_B04",
-        "nombre": "Estructura del sistema educativo: educación básica, secundaria y media",
-        "estado_en_lista": "Bloque 4 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 3 de 4"
+  "id_item": "NFL_B04_I03",
+  "archivo_sugerido": "NFL_B04_I03_licenciado_basica_no_media_necesidad_servicio.json",
+  "bloque": {
+    "codigo_bloque": "NFL_B04",
+    "nombre": "Estructura del sistema educativo: educación básica, secundaria y media",
+    "estado_en_lista": "Bloque 4 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 3 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante comprende que los perfiles docentes deben corresponder al nivel y área de desempeño, y que la asignación en educación media exige competencia o necesidad del servicio debidamente justificada.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación académica, rectoría, gestión de talento humano o normatividad educativa.",
+    "blueprint": {
+      "problematica_principal": "Asignar docentes a grados décimo y undécimo sin verificar perfil, competencia, área o necesidad del servicio.",
+      "fuente_autorizada": [
+        "Ley 115 de 1994",
+        "Artículo 27 Ley 115",
+        "Normativa de perfiles docentes",
+        "Decreto 1278 de 2002",
+        "Necesidad del servicio"
+      ],
+      "componente_modulo": "Niveles educativos y funciones docentes",
+      "competencia": "Comprensión de correspondencia entre perfil docente y nivel educativo",
+      "afirmacion": "La educación media tiene una finalidad y profundidad distinta de la educación básica; la asignación docente debe responder a perfil, área, competencia y necesidad del servicio.",
+      "evidencia_observable": "Reconoce que una licenciatura en educación básica no habilita automáticamente para orientar áreas de décimo y undécimo sin verificar condiciones normativas y de servicio.",
+      "tipo_de_evidencia": "Juicio normativo-administrativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "C"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante comprende que los perfiles docentes deben corresponder al nivel y área de desempeño, y que la asignación en educación media exige competencia o necesidad del servicio debidamente justificada.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación académica, rectoría, gestión de talento humano o normatividad educativa.",
-        "blueprint": {
-            "problematica_principal": "Asignar docentes a grados décimo y undécimo sin verificar perfil, competencia, área o necesidad del servicio.",
-            "fuente_autorizada": [
-                "Ley 115 de 1994",
-                "Artículo 27 Ley 115",
-                "Normativa de perfiles docentes",
-                "Decreto 1278 de 2002",
-                "Necesidad del servicio"
-            ],
-            "componente_modulo": "Niveles educativos y funciones docentes",
-            "competencia": "Comprensión de correspondencia entre perfil docente y nivel educativo",
-            "afirmacion": "La educación media tiene una finalidad y profundidad distinta de la educación básica; la asignación docente debe responder a perfil, área, competencia y necesidad del servicio.",
-            "evidencia_observable": "Reconoce que una licenciatura en educación básica no habilita automáticamente para orientar áreas de décimo y undécimo sin verificar condiciones normativas y de servicio.",
-            "tipo_de_evidencia": "Juicio normativo-administrativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "C"
-        },
-        "claim": "El evaluado comprende que la asignación docente no depende solo de disponibilidad, sino de correspondencia entre formación, nivel, área y necesidad institucional debidamente justificada.",
-        "evidencia_observable": "Selecciona una explicación que diferencia educación básica de media y exige justificación normativa.",
-        "tarea_cognitiva": "Analizar una asignación docente y determinar su pertinencia legal y pedagógica.",
-        "tipo_de_pregunta": "Caso situacional normativo-administrativo",
-        "dificultad_esperada": "Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Desvalorizar licenciaturas en educación básica",
-                "revision": "La clave no desvaloriza; delimita nivel y perfil."
-            },
-            {
-                "riesgo": "Ignorar necesidades reales del servicio",
-                "revision": "La respuesta correcta admite necesidad comprobada del servicio."
-            },
-            {
-                "riesgo": "Afirmar una regla absoluta sin revisar normograma docente vigente",
-                "revision": "El dictamen recomienda revisión normativa específica."
-            }
-        ]
+    "claim": "El evaluado comprende que la asignación docente no depende solo de disponibilidad, sino de correspondencia entre formación, nivel, área y necesidad institucional debidamente justificada.",
+    "evidencia_observable": "Selecciona una explicación que diferencia educación básica de media y exige justificación normativa.",
+    "tarea_cognitiva": "Analizar una asignación docente y determinar su pertinencia legal y pedagógica.",
+    "tipo_de_pregunta": "Caso situacional normativo-administrativo",
+    "dificultad_esperada": "Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Desvalorizar licenciaturas en educación básica",
+        "revision": "La clave no desvaloriza; delimita nivel y perfil."
+      },
+      {
+        "riesgo": "Ignorar necesidades reales del servicio",
+        "revision": "La respuesta correcta admite necesidad comprobada del servicio."
+      },
+      {
+        "riesgo": "Afirmar una regla absoluta sin revisar normograma docente vigente",
+        "revision": "El dictamen recomienda revisión normativa específica."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Una institución propone asignar a un docente con título de licenciatura en educación básica para orientar asignaturas de décimo y undécimo. No se ha verificado su perfil específico, el área de formación ni una necesidad comprobada del servicio.\n\n¿Por qué esta asignación no puede asumirse como automática?",
+    "opciones": {
+      "A": "Porque ningún licenciado puede enseñar en ninguna institución educativa.",
+      "B": "Porque décimo y undécimo hacen parte de la educación básica primaria.",
+      "C": "Porque décimo y undécimo corresponden a educación media, por lo que la asignación debe verificar perfil, área, competencia y, si aplica, necesidad comprobada del servicio.",
+      "D": "Porque la educación media no requiere docentes titulados."
     },
-    "item": {
-        "enunciado": "Una institución propone asignar a un docente con título de licenciatura en educación básica para orientar asignaturas de décimo y undécimo. No se ha verificado su perfil específico, el área de formación ni una necesidad comprobada del servicio.\n\n¿Por qué esta asignación no puede asumirse como automática?",
-        "opciones": {
-            "A": "Porque ningún licenciado puede enseñar en ninguna institución educativa.",
-            "B": "Porque décimo y undécimo hacen parte de la educación básica primaria.",
-            "C": "Porque décimo y undécimo corresponden a educación media, por lo que la asignación debe verificar perfil, área, competencia y, si aplica, necesidad comprobada del servicio.",
-            "D": "Porque la educación media no requiere docentes titulados."
-        },
-        "respuesta_correcta": "C"
+    "respuesta_correcta": "C"
+  },
+  "ficha_tecnica": {
+    "componente": "Niveles educativos y funciones docentes",
+    "competencia": "Comprensión de correspondencia entre perfil docente y nivel educativo",
+    "claim_evaluado": "El evaluado comprende que la asignación docente no depende solo de disponibilidad, sino de correspondencia entre formación, nivel, área y necesidad institucional debidamente justificada.",
+    "evidencia": "Selecciona una explicación que diferencia educación básica de media y exige justificación normativa.",
+    "proceso_cognitivo": "Juicio normativo-administrativo aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Alta",
+    "respuesta_correcta": "C",
+    "distractores": {
+      "A": "Generaliza falsamente y desvaloriza la profesión docente.",
+      "B": "Clasifica erróneamente décimo y undécimo.",
+      "D": "Niega la exigencia de idoneidad docente."
     },
-    "ficha_tecnica": {
-        "componente": "Niveles educativos y funciones docentes",
-        "competencia": "Comprensión de correspondencia entre perfil docente y nivel educativo",
-        "claim_evaluado": "El evaluado comprende que la asignación docente no depende solo de disponibilidad, sino de correspondencia entre formación, nivel, área y necesidad institucional debidamente justificada.",
-        "evidencia": "Selecciona una explicación que diferencia educación básica de media y exige justificación normativa.",
-        "proceso_cognitivo": "Juicio normativo-administrativo aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Alta",
-        "respuesta_correcta": "C",
-        "distractores": {
-            "A": "Generaliza falsamente y desvaloriza la profesión docente.",
-            "B": "Clasifica erróneamente décimo y undécimo.",
-            "D": "Niega la exigencia de idoneidad docente."
-        },
-        "fuente_autorizada": [
-            "Ley 115 de 1994",
-            "Artículo 27 Ley 115",
-            "Normativa de perfiles docentes",
-            "Decreto 1278 de 2002",
-            "Necesidad del servicio"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque décimo y undécimo pertenecen a educación media, y la asignación docente debe corresponder al perfil y a la necesidad del servicio.",
-        "opcion_A": "Es incorrecta porque los licenciados sí pueden ejercer docencia según su perfil y habilitación.",
-        "opcion_B": "Es incorrecta porque décimo y undécimo no pertenecen a básica primaria.",
-        "opcion_D": "Es incorrecta porque la educación media sí exige idoneidad docente."
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado con revisión normativa obligatoria.",
-        "argumento": "El ítem evita desvalorizar la formación en educación básica y se centra en correspondencia de nivel, área y perfil."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado con revisión normativa obligatoria",
-        "observacion": "Validar con normograma docente vigente, manual de funciones y criterios de planta antes de uso definitivo.",
-        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre estructura del sistema educativo."
+    "fuente_autorizada": [
+      "Ley 115 de 1994",
+      "Artículo 27 Ley 115",
+      "Normativa de perfiles docentes",
+      "Decreto 1278 de 2002",
+      "Necesidad del servicio"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "opcion_A": "Es incorrecta porque los licenciados sí pueden ejercer docencia según su perfil y habilitación.",
+    "opcion_B": "Es incorrecta porque décimo y undécimo no pertenecen a básica primaria.",
+    "opcion_D": "Es incorrecta porque la educación media sí exige idoneidad docente.",
+    "distractores": {
+      "A": "Es incorrecta porque los licenciados sí pueden ejercer docencia según su perfil y habilitación.",
+      "B": "Es incorrecta porque décimo y undécimo no pertenecen a básica primaria.",
+      "D": "Es incorrecta porque la educación media sí exige idoneidad docente."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado con revisión normativa obligatoria.",
+    "argumento": "El ítem evita desvalorizar la formación en educación básica y se centra en correspondencia de nivel, área y perfil."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado con revisión normativa obligatoria",
+    "observacion": "Validar con normograma docente vigente, manual de funciones y criterios de planta antes de uso definitivo.",
+    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre estructura del sistema educativo."
+  }
 }

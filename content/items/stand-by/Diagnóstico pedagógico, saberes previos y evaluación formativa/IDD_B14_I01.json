@@ -1,99 +1,104 @@
 {
-    "id_item": "IDD_B14_I01",
-    "archivo_sugerido": "IDD_B14_I01_diagnostico_pedagogico_no_prueba_escrita.json",
-    "bloque": {
-        "codigo_bloque": "IDD_B14",
-        "nombre": "Diagnóstico pedagógico, saberes previos y evaluación formativa",
-        "estado_en_lista": "Bloque 14 de 17",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 1 de 5"
+  "id_item": "IDD_B14_I01",
+  "archivo_sugerido": "IDD_B14_I01_diagnostico_pedagogico_no_prueba_escrita.json",
+  "bloque": {
+    "codigo_bloque": "IDD_B14",
+    "nombre": "Diagnóstico pedagógico, saberes previos y evaluación formativa",
+    "estado_en_lista": "Bloque 14 de 17",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 1 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante comprende que el diagnóstico pedagógico inicial no debe reducirse a una prueba escrita de contenidos, sino explorar condiciones heterogéneas, psicosociales y pedagógicas del grupo.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, inclusión, evaluación diagnóstica o gestión académica.",
+    "blueprint": {
+      "problematica_principal": "Reducción del diagnóstico inicial a una prueba escrita de conocimientos previos.",
+      "fuente_autorizada": [
+        "Evaluación diagnóstica",
+        "Constructivismo",
+        "Educación inclusiva",
+        "Evaluación formativa",
+        "DUA"
+      ],
+      "componente_modulo": "Diagnóstico Pedagógico",
+      "competencia": "Caracterización integral del grupo",
+      "afirmacion": "El diagnóstico pedagógico debe explorar saberes previos, intereses, barreras, formas de aprender, condiciones psicosociales y necesidades de apoyo.",
+      "evidencia_observable": "Reconoce que el diagnóstico orienta la planeación, la mediación y los ajustes didácticos.",
+      "tipo_de_evidencia": "Juicio pedagógico aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "C"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante comprende que el diagnóstico pedagógico inicial no debe reducirse a una prueba escrita de contenidos, sino explorar condiciones heterogéneas, psicosociales y pedagógicas del grupo.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, inclusión, evaluación diagnóstica o gestión académica.",
-        "blueprint": {
-            "problematica_principal": "Reducción del diagnóstico inicial a una prueba escrita de conocimientos previos.",
-            "fuente_autorizada": [
-                "Evaluación diagnóstica",
-                "Constructivismo",
-                "Educación inclusiva",
-                "Evaluación formativa",
-                "DUA"
-            ],
-            "componente_modulo": "Diagnóstico Pedagógico",
-            "competencia": "Caracterización integral del grupo",
-            "afirmacion": "El diagnóstico pedagógico debe explorar saberes previos, intereses, barreras, formas de aprender, condiciones psicosociales y necesidades de apoyo.",
-            "evidencia_observable": "Reconoce que el diagnóstico orienta la planeación, la mediación y los ajustes didácticos.",
-            "tipo_de_evidencia": "Juicio pedagógico aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "C"
-        },
-        "claim": "El evaluado comprende que diagnosticar pedagógicamente implica conocer al grupo para tomar decisiones didácticas, no solo medir contenidos memorizados.",
-        "evidencia_observable": "Selecciona una concepción de diagnóstico que integra saberes previos, contexto, barreras, intereses y condiciones de aprendizaje.",
-        "tarea_cognitiva": "Diferenciar diagnóstico integral de prueba escrita inicial.",
-        "tipo_de_pregunta": "Pregunta conceptual aplicada",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Medicalizar o psicologizar el diagnóstico",
-                "revision": "La clave se centra en información pedagógica y psicosocial pertinente."
-            },
-            {
-                "riesgo": "Reducir el diagnóstico a déficit",
-                "revision": "La opción correcta incluye fortalezas, intereses y formas de aprender."
-            },
-            {
-                "riesgo": "Desconocer contenidos previos",
-                "revision": "La clave los incluye, pero no los limita al único foco."
-            }
-        ]
+    "claim": "El evaluado comprende que diagnosticar pedagógicamente implica conocer al grupo para tomar decisiones didácticas, no solo medir contenidos memorizados.",
+    "evidencia_observable": "Selecciona una concepción de diagnóstico que integra saberes previos, contexto, barreras, intereses y condiciones de aprendizaje.",
+    "tarea_cognitiva": "Diferenciar diagnóstico integral de prueba escrita inicial.",
+    "tipo_de_pregunta": "Pregunta conceptual aplicada",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Medicalizar o psicologizar el diagnóstico",
+        "revision": "La clave se centra en información pedagógica y psicosocial pertinente."
+      },
+      {
+        "riesgo": "Reducir el diagnóstico a déficit",
+        "revision": "La opción correcta incluye fortalezas, intereses y formas de aprender."
+      },
+      {
+        "riesgo": "Desconocer contenidos previos",
+        "revision": "La clave los incluye, pero no los limita al único foco."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Al iniciar el año escolar, un docente planea aplicar únicamente una prueba escrita sobre los temas del año anterior. Otro docente propone realizar un diagnóstico más amplio del grupo para planear mejor la enseñanza.\n\n¿Por qué, desde un modelo constructivista e inclusivo, el diagnóstico inicial no debe limitarse a una evaluación escrita de contenidos?",
+    "opciones": {
+      "A": "Porque no es necesario conocer nada del grupo antes de enseñar.",
+      "B": "Porque los contenidos previos no tienen ninguna relación con el aprendizaje.",
+      "C": "Porque debe explorar saberes previos, intereses, barreras, condiciones psicosociales, formas de aprender y necesidades de apoyo para orientar la planeación.",
+      "D": "Porque todo diagnóstico debe ser exclusivamente clínico."
     },
-    "item": {
-        "enunciado": "Al iniciar el año escolar, un docente planea aplicar únicamente una prueba escrita sobre los temas del año anterior. Otro docente propone realizar un diagnóstico más amplio del grupo para planear mejor la enseñanza.\n\n¿Por qué, desde un modelo constructivista e inclusivo, el diagnóstico inicial no debe limitarse a una evaluación escrita de contenidos?",
-        "opciones": {
-            "A": "Porque no es necesario conocer nada del grupo antes de enseñar.",
-            "B": "Porque los contenidos previos no tienen ninguna relación con el aprendizaje.",
-            "C": "Porque debe explorar saberes previos, intereses, barreras, condiciones psicosociales, formas de aprender y necesidades de apoyo para orientar la planeación.",
-            "D": "Porque todo diagnóstico debe ser exclusivamente clínico."
-        },
-        "respuesta_correcta": "C"
+    "respuesta_correcta": "C"
+  },
+  "ficha_tecnica": {
+    "componente": "Diagnóstico Pedagógico",
+    "competencia": "Caracterización integral del grupo",
+    "claim_evaluado": "El evaluado comprende que diagnosticar pedagógicamente implica conocer al grupo para tomar decisiones didácticas, no solo medir contenidos memorizados.",
+    "evidencia": "Selecciona una concepción de diagnóstico que integra saberes previos, contexto, barreras, intereses y condiciones de aprendizaje.",
+    "proceso_cognitivo": "Comprensión pedagógica aplicada",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "C",
+    "distractores": {
+      "A": "Niega la función del diagnóstico.",
+      "B": "Excluye indebidamente los saberes previos.",
+      "D": "Confunde diagnóstico pedagógico con diagnóstico clínico."
     },
-    "ficha_tecnica": {
-        "componente": "Diagnóstico Pedagógico",
-        "competencia": "Caracterización integral del grupo",
-        "claim_evaluado": "El evaluado comprende que diagnosticar pedagógicamente implica conocer al grupo para tomar decisiones didácticas, no solo medir contenidos memorizados.",
-        "evidencia": "Selecciona una concepción de diagnóstico que integra saberes previos, contexto, barreras, intereses y condiciones de aprendizaje.",
-        "proceso_cognitivo": "Comprensión pedagógica aplicada",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "C",
-        "distractores": {
-            "A": "Niega la función del diagnóstico.",
-            "B": "Excluye indebidamente los saberes previos.",
-            "D": "Confunde diagnóstico pedagógico con diagnóstico clínico."
-        },
-        "fuente_autorizada": [
-            "Evaluación diagnóstica",
-            "Constructivismo",
-            "Educación inclusiva",
-            "Evaluación formativa",
-            "DUA"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque el diagnóstico pedagógico debe orientar decisiones didácticas a partir de una caracterización amplia del grupo.",
-        "opcion_A": "Es incorrecta porque el docente necesita conocer el punto de partida del grupo.",
-        "opcion_B": "Es incorrecta porque los saberes previos sí son relevantes, aunque no suficientes.",
-        "opcion_D": "Es incorrecta porque el diagnóstico escolar no se reduce a lo clínico."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita etiquetar a estudiantes por déficit y promueve una caracterización amplia, pedagógica y respetuosa."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 5 preguntas sobre diagnóstico pedagógico, saberes previos y evaluación formativa."
+    "fuente_autorizada": [
+      "Evaluación diagnóstica",
+      "Constructivismo",
+      "Educación inclusiva",
+      "Evaluación formativa",
+      "DUA"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "opcion_A": "Es incorrecta porque el docente necesita conocer el punto de partida del grupo.",
+    "opcion_B": "Es incorrecta porque los saberes previos sí son relevantes, aunque no suficientes.",
+    "opcion_D": "Es incorrecta porque el diagnóstico escolar no se reduce a lo clínico.",
+    "distractores": {
+      "A": "Es incorrecta porque el docente necesita conocer el punto de partida del grupo.",
+      "B": "Es incorrecta porque los saberes previos sí son relevantes, aunque no suficientes.",
+      "D": "Es incorrecta porque el diagnóstico escolar no se reduce a lo clínico."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita etiquetar a estudiantes por déficit y promueve una caracterización amplia, pedagógica y respetuosa."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 5 preguntas sobre diagnóstico pedagógico, saberes previos y evaluación formativa."
+  }
 }

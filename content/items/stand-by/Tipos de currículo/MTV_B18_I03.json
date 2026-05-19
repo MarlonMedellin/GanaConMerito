@@ -1,36 +1,36 @@
 {
-    "id_item": "MTV_B18_I03",
-    "archivo_sugerido": "MTV_B18_I03_curriculo_operacional_aula.json",
-    "proposito_de_uso": "Evaluar si el aspirante identifica el currículo operacional como el que se ejecuta realmente en el aula.",
-    "blueprint": {
-        "componente_modulo": "Currículo operacional",
-        "competencia": "Diferenciación entre currículo escrito y currículo vivido",
-        "afirmacion": "El currículo operacional es el que el docente adapta, ejecuta y materializa diariamente en el aula.",
-        "evidencia_observable": "Reconoce la diferencia entre lo planeado formalmente y lo que realmente se enseña y vive.",
-        "tipo_de_evidencia": "Comprensión conceptual aplicada",
-        "dificultad_esperada": "Media",
-        "clave": "D"
+  "id_item": "MTV_B18_I03",
+  "archivo_sugerido": "MTV_B18_I03_curriculo_operacional_aula.json",
+  "proposito_de_uso": "Evaluar si el aspirante identifica el currículo operacional como el que se ejecuta realmente en el aula.",
+  "blueprint": {
+    "componente_modulo": "Currículo operacional",
+    "competencia": "Diferenciación entre currículo escrito y currículo vivido",
+    "afirmacion": "El currículo operacional es el que el docente adapta, ejecuta y materializa diariamente en el aula.",
+    "evidencia_observable": "Reconoce la diferencia entre lo planeado formalmente y lo que realmente se enseña y vive.",
+    "tipo_de_evidencia": "Comprensión conceptual aplicada",
+    "dificultad_esperada": "Media",
+    "clave": "D"
+  },
+  "item": {
+    "enunciado": "Aunque el plan de área está escrito de una manera, el maestro adapta actividades, tiempos, ejemplos y estrategias según lo que ocurre diariamente en el salón de clases.\n\n¿Cómo se denomina el currículo que el maestro materializa realmente en su práctica cotidiana?",
+    "opciones": {
+      "A": "Currículo nulo.",
+      "B": "Currículo archivado.",
+      "C": "Currículo inexistente.",
+      "D": "Currículo operacional."
     },
-    "item": {
-        "enunciado": "Aunque el plan de área está escrito de una manera, el maestro adapta actividades, tiempos, ejemplos y estrategias según lo que ocurre diariamente en el salón de clases.\n\n¿Cómo se denomina el currículo que el maestro materializa realmente en su práctica cotidiana?",
-        "opciones": {
-            "A": "Currículo nulo.",
-            "B": "Currículo archivado.",
-            "C": "Currículo inexistente.",
-            "D": "Currículo operacional."
-        },
-        "respuesta_correcta": "D"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque el currículo operacional es el currículo efectivamente enseñado y desarrollado en el aula.",
-        "distractores": {
-            "A": "El currículo nulo se refiere a lo omitido.",
-            "B": "No es una categoría conceptual central.",
-            "C": "Sí existe una práctica curricular real."
-        }
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem base para currículo vivido."
+    "respuesta_correcta": "D"
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "distractores": {
+      "A": "El currículo nulo se refiere a lo omitido.",
+      "B": "No es una categoría conceptual central.",
+      "C": "Sí existe una práctica curricular real."
     }
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem base para currículo vivido."
+  }
 }

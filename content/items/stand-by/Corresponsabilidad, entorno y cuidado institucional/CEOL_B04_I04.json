@@ -1,103 +1,108 @@
 {
-    "id_item": "CEOL_B04_I04",
-    "archivo_sugerido": "CEOL_B04_I04_vecinos_inseguridad_gestion_comunitaria.json",
-    "bloque": {
-        "codigo_bloque": "CEOL_B04",
-        "nombre": "Corresponsabilidad, entorno y cuidado institucional",
-        "estado_en_lista": "Bloque 4 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 4 de 5"
+  "id_item": "CEOL_B04_I04",
+  "archivo_sugerido": "CEOL_B04_I04_vecinos_inseguridad_gestion_comunitaria.json",
+  "bloque": {
+    "codigo_bloque": "CEOL_B04",
+    "nombre": "Corresponsabilidad, entorno y cuidado institucional",
+    "estado_en_lista": "Bloque 4 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 4 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce cómo debe actuar un docente o institución ante conflictos con vecinos del plantel asociados a inseguridad o comportamientos de estudiantes en el entorno.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación, orientación escolar, rectoría o gestión comunitaria.",
+    "blueprint": {
+      "problematica_principal": "Conflicto entre institución educativa y comunidad vecina por situaciones de convivencia e inseguridad.",
+      "fuente_autorizada": [
+        "Ley 1620 de 2013",
+        "Ley 115 de 1994",
+        "Manual de convivencia institucional",
+        "Proyecto Educativo Institucional",
+        "Gestión comunitaria escolar"
+      ],
+      "componente_modulo": "Gestión Comunitaria y Entorno",
+      "competencia": "Resolución de conflictos con la comunidad",
+      "afirmacion": "Los conflictos con la comunidad deben abordarse mediante diálogo, diagnóstico, corresponsabilidad, acuerdos y articulación institucional.",
+      "evidencia_observable": "Selecciona una actuación docente o institucional basada en escucha, mediación, participación comunitaria y rutas pertinentes.",
+      "tipo_de_evidencia": "Juicio comunitario aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "D"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce cómo debe actuar un docente o institución ante conflictos con vecinos del plantel asociados a inseguridad o comportamientos de estudiantes en el entorno.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación, orientación escolar, rectoría o gestión comunitaria.",
-        "blueprint": {
-            "problematica_principal": "Conflicto entre institución educativa y comunidad vecina por situaciones de convivencia e inseguridad.",
-            "fuente_autorizada": [
-                "Ley 1620 de 2013",
-                "Ley 115 de 1994",
-                "Manual de convivencia institucional",
-                "Proyecto Educativo Institucional",
-                "Gestión comunitaria escolar"
-            ],
-            "componente_modulo": "Gestión Comunitaria y Entorno",
-            "competencia": "Resolución de conflictos con la comunidad",
-            "afirmacion": "Los conflictos con la comunidad deben abordarse mediante diálogo, diagnóstico, corresponsabilidad, acuerdos y articulación institucional.",
-            "evidencia_observable": "Selecciona una actuación docente o institucional basada en escucha, mediación, participación comunitaria y rutas pertinentes.",
-            "tipo_de_evidencia": "Juicio comunitario aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "D"
-        },
-        "claim": "El evaluado comprende que la gestión comunitaria exige dialogar con el entorno, prevenir conflictos, construir acuerdos y articular respuestas con directivos, familias, estudiantes y entidades competentes.",
-        "evidencia_observable": "Selecciona una acción institucional que atiende el reclamo comunitario sin negar el problema ni estigmatizar a los estudiantes.",
-        "tarea_cognitiva": "Analizar un conflicto con vecinos del plantel y elegir la actuación institucional más pertinente.",
-        "tipo_de_pregunta": "Caso situacional de resolución de conflictos",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Estigmatizar a estudiantes como generadores de inseguridad",
-                "revision": "La clave propone diagnóstico, diálogo y acciones preventivas sin generalizar culpabilidades."
-            },
-            {
-                "riesgo": "Escalada del conflicto comunidad-escuela",
-                "revision": "La opción correcta promueve mediación y acuerdos, no confrontación."
-            },
-            {
-                "riesgo": "Trasladar al docente toda la responsabilidad",
-                "revision": "La respuesta se formula como acción articulada institucionalmente."
-            },
-            {
-                "riesgo": "Minimizar el reclamo de vecinos",
-                "revision": "La clave reconoce la necesidad de escuchar y gestionar el conflicto."
-            }
-        ]
+    "claim": "El evaluado comprende que la gestión comunitaria exige dialogar con el entorno, prevenir conflictos, construir acuerdos y articular respuestas con directivos, familias, estudiantes y entidades competentes.",
+    "evidencia_observable": "Selecciona una acción institucional que atiende el reclamo comunitario sin negar el problema ni estigmatizar a los estudiantes.",
+    "tarea_cognitiva": "Analizar un conflicto con vecinos del plantel y elegir la actuación institucional más pertinente.",
+    "tipo_de_pregunta": "Caso situacional de resolución de conflictos",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Estigmatizar a estudiantes como generadores de inseguridad",
+        "revision": "La clave propone diagnóstico, diálogo y acciones preventivas sin generalizar culpabilidades."
+      },
+      {
+        "riesgo": "Escalada del conflicto comunidad-escuela",
+        "revision": "La opción correcta promueve mediación y acuerdos, no confrontación."
+      },
+      {
+        "riesgo": "Trasladar al docente toda la responsabilidad",
+        "revision": "La respuesta se formula como acción articulada institucionalmente."
+      },
+      {
+        "riesgo": "Minimizar el reclamo de vecinos",
+        "revision": "La clave reconoce la necesidad de escuchar y gestionar el conflicto."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Vecinos del plantel educativo manifiestan su intención de demandar al colegio porque, según ellos, algunos estudiantes generan situaciones de inseguridad en los alrededores. El docente conoce la preocupación y debe contribuir a una respuesta institucional adecuada.\n\n¿Cómo debe actuar la institución frente a esta situación?",
+    "opciones": {
+      "A": "Negar cualquier diálogo con los vecinos porque lo que ocurre fuera del colegio no tiene relación con la institución.",
+      "B": "Señalar públicamente a todos los estudiantes como responsables de la inseguridad del sector.",
+      "C": "Trasladar el problema exclusivamente a la policía, sin revisar prácticas escolares ni acciones preventivas.",
+      "D": "Abrir espacios de diálogo con la comunidad, analizar los hechos, involucrar a directivos, familias y estudiantes, definir acuerdos preventivos y articular entidades competentes si es necesario."
     },
-    "item": {
-        "enunciado": "Vecinos del plantel educativo manifiestan su intención de demandar al colegio porque, según ellos, algunos estudiantes generan situaciones de inseguridad en los alrededores. El docente conoce la preocupación y debe contribuir a una respuesta institucional adecuada.\n\n¿Cómo debe actuar la institución frente a esta situación?",
-        "opciones": {
-            "A": "Negar cualquier diálogo con los vecinos porque lo que ocurre fuera del colegio no tiene relación con la institución.",
-            "B": "Señalar públicamente a todos los estudiantes como responsables de la inseguridad del sector.",
-            "C": "Trasladar el problema exclusivamente a la policía, sin revisar prácticas escolares ni acciones preventivas.",
-            "D": "Abrir espacios de diálogo con la comunidad, analizar los hechos, involucrar a directivos, familias y estudiantes, definir acuerdos preventivos y articular entidades competentes si es necesario."
-        },
-        "respuesta_correcta": "D"
+    "respuesta_correcta": "D"
+  },
+  "ficha_tecnica": {
+    "componente": "Gestión Comunitaria y Entorno",
+    "competencia": "Resolución de conflictos con la comunidad",
+    "claim_evaluado": "El evaluado comprende que la gestión comunitaria exige dialogar con el entorno, prevenir conflictos, construir acuerdos y articular respuestas con directivos, familias, estudiantes y entidades competentes.",
+    "evidencia": "Selecciona una acción institucional que atiende el reclamo comunitario sin negar el problema ni estigmatizar a los estudiantes.",
+    "proceso_cognitivo": "Análisis y resolución de conflictos",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "D",
+    "distractores": {
+      "A": "Niega la relación escuela-comunidad y evita la gestión del conflicto.",
+      "B": "Estigmatiza colectivamente a los estudiantes.",
+      "C": "Externaliza totalmente el problema y omite acciones educativas y preventivas."
     },
-    "ficha_tecnica": {
-        "componente": "Gestión Comunitaria y Entorno",
-        "competencia": "Resolución de conflictos con la comunidad",
-        "claim_evaluado": "El evaluado comprende que la gestión comunitaria exige dialogar con el entorno, prevenir conflictos, construir acuerdos y articular respuestas con directivos, familias, estudiantes y entidades competentes.",
-        "evidencia": "Selecciona una acción institucional que atiende el reclamo comunitario sin negar el problema ni estigmatizar a los estudiantes.",
-        "proceso_cognitivo": "Análisis y resolución de conflictos",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "D",
-        "distractores": {
-            "A": "Niega la relación escuela-comunidad y evita la gestión del conflicto.",
-            "B": "Estigmatiza colectivamente a los estudiantes.",
-            "C": "Externaliza totalmente el problema y omite acciones educativas y preventivas."
-        },
-        "fuente_autorizada": [
-            "Ley 1620 de 2013",
-            "Ley 115 de 1994",
-            "Manual de convivencia institucional",
-            "Proyecto Educativo Institucional",
-            "Gestión comunitaria escolar"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque propone una respuesta institucional de gestión comunitaria: diálogo, análisis de hechos, participación de actores, acuerdos preventivos y articulación con entidades competentes cuando se requiera.",
-        "opcion_A": "Es incorrecta porque la escuela debe reconocer su relación con el entorno y gestionar tensiones comunitarias.",
-        "opcion_B": "Es incorrecta porque estigmatiza a todos los estudiantes y puede vulnerar derechos.",
-        "opcion_C": "Es incorrecta porque la intervención de entidades externas puede ser necesaria, pero no sustituye la acción pedagógica e institucional."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem no asume culpabilidad general de los estudiantes ni minimiza la preocupación vecinal. Evalúa una respuesta comunitaria, preventiva y articulada."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 5 preguntas sobre corresponsabilidad, entorno y cuidado institucional."
+    "fuente_autorizada": [
+      "Ley 1620 de 2013",
+      "Ley 115 de 1994",
+      "Manual de convivencia institucional",
+      "Proyecto Educativo Institucional",
+      "Gestión comunitaria escolar"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "opcion_A": "Es incorrecta porque la escuela debe reconocer su relación con el entorno y gestionar tensiones comunitarias.",
+    "opcion_B": "Es incorrecta porque estigmatiza a todos los estudiantes y puede vulnerar derechos.",
+    "opcion_C": "Es incorrecta porque la intervención de entidades externas puede ser necesaria, pero no sustituye la acción pedagógica e institucional.",
+    "distractores": {
+      "A": "Es incorrecta porque la escuela debe reconocer su relación con el entorno y gestionar tensiones comunitarias.",
+      "B": "Es incorrecta porque estigmatiza a todos los estudiantes y puede vulnerar derechos.",
+      "C": "Es incorrecta porque la intervención de entidades externas puede ser necesaria, pero no sustituye la acción pedagógica e institucional."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem no asume culpabilidad general de los estudiantes ni minimiza la preocupación vecinal. Evalúa una respuesta comunitaria, preventiva y articulada."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 5 preguntas sobre corresponsabilidad, entorno y cuidado institucional."
+  }
 }

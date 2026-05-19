@@ -1,94 +1,99 @@
 {
-    "id_item": "PPDC_B01_I02",
-    "archivo_sugerido": "PPDC_B01_I02_seleccion_didactica_heterogeneidad.json",
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante identifica que, frente a la heterogeneidad del aula, la selección didáctica debe combinar métodos, estrategias y técnicas flexibles que favorezcan la participación y el aprendizaje de todos.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
-        "blueprint": {
-            "problematica_principal": "Selección didáctica insuficiente frente a la heterogeneidad del aula.",
-            "fuente_autorizada": [
-                "Lineamientos curriculares del Ministerio de Educación Nacional",
-                "Orientaciones pedagógicas institucionales",
-                "Enfoque de educación inclusiva",
-                "Diseño Universal para el Aprendizaje"
-            ],
-            "componente_modulo": "Didáctica y Práctica Pedagógica",
-            "competencia": "Selección didáctica",
-            "afirmacion": "La enseñanza eficaz en aulas heterogéneas requiere métodos y técnicas flexibles, variadas y coherentes con las necesidades del grupo.",
-            "evidencia_observable": "Selecciona métodos y técnicas que combinan trabajo colaborativo, mediación, recursos diversos, andamiaje y evaluación formativa.",
-            "tipo_de_evidencia": "Juicio didáctico aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "B"
-        },
-        "claim": "El evaluado reconoce que la eficacia didáctica en grupos heterogéneos depende de seleccionar estrategias variadas, flexibles y contextualizadas, no de aplicar una única técnica uniforme.",
-        "evidencia_observable": "Elige una combinación didáctica que atiende ritmos, intereses, niveles de comprensión, formas de participación y necesidades de apoyo.",
-        "tarea_cognitiva": "Analizar una necesidad de aula heterogénea y seleccionar la estrategia didáctica más eficaz.",
-        "tipo_de_pregunta": "Caso situacional de juicio didáctico",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Sesgo por recursos tecnológicos",
-                "revision": "La clave no depende exclusivamente de tecnología; se centra en variedad metodológica y mediación."
-            },
-            {
-                "riesgo": "Confusión entre variedad y improvisación",
-                "revision": "La opción correcta plantea variedad con propósito pedagógico y evaluación formativa."
-            },
-            {
-                "riesgo": "Sesgo por tamaño del grupo",
-                "revision": "El caso aplica a grupos pequeños o numerosos con diversidad de ritmos y necesidades."
-            },
-            {
-                "riesgo": "Ambigüedad en la clave",
-                "revision": "La opción correcta es la única que integra métodos, técnicas, apoyos y evaluación coherente."
-            }
-        ]
+  "id_item": "PPDC_B01_I02",
+  "archivo_sugerido": "PPDC_B01_I02_seleccion_didactica_heterogeneidad.json",
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante identifica que, frente a la heterogeneidad del aula, la selección didáctica debe combinar métodos, estrategias y técnicas flexibles que favorezcan la participación y el aprendizaje de todos.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
+    "blueprint": {
+      "problematica_principal": "Selección didáctica insuficiente frente a la heterogeneidad del aula.",
+      "fuente_autorizada": [
+        "Lineamientos curriculares del Ministerio de Educación Nacional",
+        "Orientaciones pedagógicas institucionales",
+        "Enfoque de educación inclusiva",
+        "Diseño Universal para el Aprendizaje"
+      ],
+      "componente_modulo": "Didáctica y Práctica Pedagógica",
+      "competencia": "Selección didáctica",
+      "afirmacion": "La enseñanza eficaz en aulas heterogéneas requiere métodos y técnicas flexibles, variadas y coherentes con las necesidades del grupo.",
+      "evidencia_observable": "Selecciona métodos y técnicas que combinan trabajo colaborativo, mediación, recursos diversos, andamiaje y evaluación formativa.",
+      "tipo_de_evidencia": "Juicio didáctico aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "B"
     },
-    "item": {
-        "enunciado": "Una docente recibe un grupo con diferencias notorias en ritmos de aprendizaje, intereses, niveles de comprensión y formas de participación. Quiere seleccionar métodos y técnicas que le permitan alcanzar mayor eficacia en la enseñanza.\n\n¿Cuál decisión didáctica es más pertinente?",
-        "opciones": {
-            "A": "Aplicar una sola explicación magistral y una misma guía extensa para todos, porque así se garantiza igualdad.",
-            "B": "Combinar trabajo colaborativo, preguntas orientadoras, recursos variados, apoyos diferenciados y evaluación formativa según las necesidades del grupo.",
-            "C": "Dividir el grupo entre estudiantes rápidos y lentos, asignando tareas de menor valor a quienes presentan más dificultad.",
-            "D": "Eliminar actividades de participación para evitar diferencias visibles entre los estudiantes."
-        },
-        "respuesta_correcta": "B"
+    "claim": "El evaluado reconoce que la eficacia didáctica en grupos heterogéneos depende de seleccionar estrategias variadas, flexibles y contextualizadas, no de aplicar una única técnica uniforme.",
+    "evidencia_observable": "Elige una combinación didáctica que atiende ritmos, intereses, niveles de comprensión, formas de participación y necesidades de apoyo.",
+    "tarea_cognitiva": "Analizar una necesidad de aula heterogénea y seleccionar la estrategia didáctica más eficaz.",
+    "tipo_de_pregunta": "Caso situacional de juicio didáctico",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Sesgo por recursos tecnológicos",
+        "revision": "La clave no depende exclusivamente de tecnología; se centra en variedad metodológica y mediación."
+      },
+      {
+        "riesgo": "Confusión entre variedad y improvisación",
+        "revision": "La opción correcta plantea variedad con propósito pedagógico y evaluación formativa."
+      },
+      {
+        "riesgo": "Sesgo por tamaño del grupo",
+        "revision": "El caso aplica a grupos pequeños o numerosos con diversidad de ritmos y necesidades."
+      },
+      {
+        "riesgo": "Ambigüedad en la clave",
+        "revision": "La opción correcta es la única que integra métodos, técnicas, apoyos y evaluación coherente."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Una docente recibe un grupo con diferencias notorias en ritmos de aprendizaje, intereses, niveles de comprensión y formas de participación. Quiere seleccionar métodos y técnicas que le permitan alcanzar mayor eficacia en la enseñanza.\n\n¿Cuál decisión didáctica es más pertinente?",
+    "opciones": {
+      "A": "Aplicar una sola explicación magistral y una misma guía extensa para todos, porque así se garantiza igualdad.",
+      "B": "Combinar trabajo colaborativo, preguntas orientadoras, recursos variados, apoyos diferenciados y evaluación formativa según las necesidades del grupo.",
+      "C": "Dividir el grupo entre estudiantes rápidos y lentos, asignando tareas de menor valor a quienes presentan más dificultad.",
+      "D": "Eliminar actividades de participación para evitar diferencias visibles entre los estudiantes."
     },
-    "ficha_tecnica": {
-        "componente": "Didáctica y Práctica Pedagógica",
-        "competencia": "Selección didáctica",
-        "claim_evaluado": "El evaluado reconoce que la eficacia didáctica en grupos heterogéneos depende de seleccionar estrategias variadas, flexibles y contextualizadas, no de aplicar una única técnica uniforme.",
-        "evidencia": "Elige una combinación didáctica que atiende ritmos, intereses, niveles de comprensión, formas de participación y necesidades de apoyo.",
-        "proceso_cognitivo": "Análisis y juicio didáctico",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "B",
-        "distractores": {
-            "A": "Confunde igualdad con homogeneización.",
-            "C": "Clasifica de manera deficitante a los estudiantes y reduce expectativas.",
-            "D": "Evita la participación en lugar de crear condiciones para ella."
-        },
-        "fuente_autorizada": [
-            "Lineamientos curriculares del Ministerio de Educación Nacional",
-            "Orientaciones pedagógicas institucionales",
-            "Enfoque de educación inclusiva",
-            "Diseño Universal para el Aprendizaje"
-        ]
+    "respuesta_correcta": "B"
+  },
+  "ficha_tecnica": {
+    "componente": "Didáctica y Práctica Pedagógica",
+    "competencia": "Selección didáctica",
+    "claim_evaluado": "El evaluado reconoce que la eficacia didáctica en grupos heterogéneos depende de seleccionar estrategias variadas, flexibles y contextualizadas, no de aplicar una única técnica uniforme.",
+    "evidencia": "Elige una combinación didáctica que atiende ritmos, intereses, niveles de comprensión, formas de participación y necesidades de apoyo.",
+    "proceso_cognitivo": "Análisis y juicio didáctico",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "B",
+    "distractores": {
+      "A": "Confunde igualdad con homogeneización.",
+      "C": "Clasifica de manera deficitante a los estudiantes y reduce expectativas.",
+      "D": "Evita la participación en lugar de crear condiciones para ella."
     },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque combina estrategias activas, recursos variados, apoyos diferenciados y evaluación formativa, lo cual permite responder a la heterogeneidad sin reducir expectativas.",
-        "opcion_A": "Es incorrecta porque aplicar lo mismo para todos no garantiza equidad ni eficacia.",
-        "opcion_C": "Es incorrecta porque clasifica a los estudiantes desde una lógica de déficit y limita oportunidades de aprendizaje.",
-        "opcion_D": "Es incorrecta porque eliminar participación empobrece la experiencia y no atiende la diversidad."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem no penaliza contextos con recursos limitados ni asume que la diversidad sea un problema. Evalúa la selección profesional de estrategias didácticas pertinentes."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre práctica pedagógica no homogeneizadora y diversidad."
+    "fuente_autorizada": [
+      "Lineamientos curriculares del Ministerio de Educación Nacional",
+      "Orientaciones pedagógicas institucionales",
+      "Enfoque de educación inclusiva",
+      "Diseño Universal para el Aprendizaje"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "opcion_A": "Es incorrecta porque aplicar lo mismo para todos no garantiza equidad ni eficacia.",
+    "opcion_C": "Es incorrecta porque clasifica a los estudiantes desde una lógica de déficit y limita oportunidades de aprendizaje.",
+    "opcion_D": "Es incorrecta porque eliminar participación empobrece la experiencia y no atiende la diversidad.",
+    "distractores": {
+      "A": "Es incorrecta porque aplicar lo mismo para todos no garantiza equidad ni eficacia.",
+      "C": "Es incorrecta porque clasifica a los estudiantes desde una lógica de déficit y limita oportunidades de aprendizaje.",
+      "D": "Es incorrecta porque eliminar participación empobrece la experiencia y no atiende la diversidad."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem no penaliza contextos con recursos limitados ni asume que la diversidad sea un problema. Evalúa la selección profesional de estrategias didácticas pertinentes."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre práctica pedagógica no homogeneizadora y diversidad."
+  }
 }

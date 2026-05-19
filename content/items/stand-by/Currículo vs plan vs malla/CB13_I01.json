@@ -1,98 +1,103 @@
 {
-    "id_item": "CB13_I01",
-    "bloque": {
-        "numero": 13,
-        "nombre": "Currículo vs plan vs malla",
-        "estado_en_lista": "Bloque 13 de 15",
-        "decision_del_bloque": "Grupo de 3 preguntas",
-        "item_en_grupo": "Ítem 1 de 3"
+  "id_item": "CB13_I01",
+  "bloque": {
+    "numero": 13,
+    "nombre": "Currículo vs plan vs malla",
+    "estado_en_lista": "Bloque 13 de 15",
+    "decision_del_bloque": "Grupo de 3 preguntas",
+    "item_en_grupo": "Ítem 1 de 3"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante diferencia conceptualmente currículo, plan de estudios y malla curricular, reconociendo que cada uno cumple una función específica dentro de la gestión académica.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
+    "blueprint": {
+      "problematica_principal": "Confusión conceptual curricular",
+      "fuente_autorizada": [
+        "Lineamientos curriculares del MEN",
+        "Orientaciones curriculares institucionales",
+        "Proyecto Educativo Institucional"
+      ],
+      "componente_modulo": "Gestión Académica",
+      "competencia": "Diseño curricular",
+      "afirmacion": "Los conceptos tienen funciones distintas.",
+      "evidencia_observable": "Distingue currículo, plan de estudios y malla curricular según su función en la gestión académica.",
+      "tipo_de_evidencia": "Comprensión conceptual aplicada",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante diferencia conceptualmente currículo, plan de estudios y malla curricular, reconociendo que cada uno cumple una función específica dentro de la gestión académica.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-        "blueprint": {
-            "problematica_principal": "Confusión conceptual curricular",
-            "fuente_autorizada": [
-                "Lineamientos curriculares del MEN",
-                "Orientaciones curriculares institucionales",
-                "Proyecto Educativo Institucional"
-            ],
-            "componente_modulo": "Gestión Académica",
-            "competencia": "Diseño curricular",
-            "afirmacion": "Los conceptos tienen funciones distintas.",
-            "evidencia_observable": "Distingue currículo, plan de estudios y malla curricular según su función en la gestión académica.",
-            "tipo_de_evidencia": "Comprensión conceptual aplicada",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado diferencia niveles de organización curricular y evita usar currículo, plan de estudios y malla curricular como sinónimos.",
-        "evidencia_observable": "Selecciona una explicación que distingue el currículo como marco amplio, el plan de estudios como organización de áreas y grados, y la malla curricular como secuencia de contenidos, desempeños o aprendizajes.",
-        "tarea_cognitiva": "Seleccionar la definición funcional de currículo frente a plan de estudios y malla curricular.",
-        "tipo_de_pregunta": "Pregunta conceptual comparativa",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Sesgo por familiaridad con lenguaje técnico curricular",
-                "revision": "El ítem usa términos propios de la gestión académica, pero los presenta en una situación escolar clara."
-            },
-            {
-                "riesgo": "Ambigüedad conceptual",
-                "revision": "La opción correcta diferencia los conceptos por nivel y función; los distractores contienen confusiones evidentes."
-            },
-            {
-                "riesgo": "Sesgo por experiencia institucional",
-                "revision": "No exige haber construido una malla curricular; evalúa comprensión profesional básica de diseño curricular."
-            },
-            {
-                "riesgo": "Carga normativa",
-                "revision": "No exige citar normas ni artículos específicos."
-            }
-        ]
+    "claim": "El evaluado diferencia niveles de organización curricular y evita usar currículo, plan de estudios y malla curricular como sinónimos.",
+    "evidencia_observable": "Selecciona una explicación que distingue el currículo como marco amplio, el plan de estudios como organización de áreas y grados, y la malla curricular como secuencia de contenidos, desempeños o aprendizajes.",
+    "tarea_cognitiva": "Seleccionar la definición funcional de currículo frente a plan de estudios y malla curricular.",
+    "tipo_de_pregunta": "Pregunta conceptual comparativa",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Sesgo por familiaridad con lenguaje técnico curricular",
+        "revision": "El ítem usa términos propios de la gestión académica, pero los presenta en una situación escolar clara."
+      },
+      {
+        "riesgo": "Ambigüedad conceptual",
+        "revision": "La opción correcta diferencia los conceptos por nivel y función; los distractores contienen confusiones evidentes."
+      },
+      {
+        "riesgo": "Sesgo por experiencia institucional",
+        "revision": "No exige haber construido una malla curricular; evalúa comprensión profesional básica de diseño curricular."
+      },
+      {
+        "riesgo": "Carga normativa",
+        "revision": "No exige citar normas ni artículos específicos."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Durante una reunión académica, un docente afirma que currículo, plan de estudios y malla curricular son exactamente lo mismo. La coordinación propone aclarar los conceptos.\n\n¿Cuál explicación es más adecuada?",
+    "opciones": {
+      "A": "El currículo es el conjunto amplio de intenciones, enfoques y experiencias formativas; el plan de estudios organiza áreas y grados; la malla distribuye contenidos, desempeños o secuencias.",
+      "B": "El currículo es únicamente la lista de temas de una asignatura y la malla es el horario semanal.",
+      "C": "El plan de estudios reemplaza al PEI y la malla curricular solo corresponde al manual de convivencia.",
+      "D": "Los tres conceptos son idénticos, por lo que diferenciarlos no aporta a la gestión académica."
     },
-    "item": {
-        "enunciado": "Durante una reunión académica, un docente afirma que currículo, plan de estudios y malla curricular son exactamente lo mismo. La coordinación propone aclarar los conceptos.\n\n¿Cuál explicación es más adecuada?",
-        "opciones": {
-            "A": "El currículo es el conjunto amplio de intenciones, enfoques y experiencias formativas; el plan de estudios organiza áreas y grados; la malla distribuye contenidos, desempeños o secuencias.",
-            "B": "El currículo es únicamente la lista de temas de una asignatura y la malla es el horario semanal.",
-            "C": "El plan de estudios reemplaza al PEI y la malla curricular solo corresponde al manual de convivencia.",
-            "D": "Los tres conceptos son idénticos, por lo que diferenciarlos no aporta a la gestión académica."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Gestión Académica",
+    "competencia": "Diseño curricular",
+    "claim_evaluado": "El evaluado diferencia niveles de organización curricular y evita usar currículo, plan de estudios y malla curricular como sinónimos.",
+    "evidencia": "Selecciona una explicación que distingue el currículo como marco amplio, el plan de estudios como organización de áreas y grados, y la malla curricular como secuencia de contenidos, desempeños o aprendizajes.",
+    "proceso_cognitivo": "Comprensión conceptual comparativa",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Reduce el currículo a una lista de temas y confunde la malla curricular con el horario semanal.",
+      "C": "Confunde instrumentos de gestión académica e institucional, atribuyéndoles funciones que no les corresponden.",
+      "D": "Niega distinciones conceptuales necesarias para la planeación y gestión académica."
     },
-    "ficha_tecnica": {
-        "componente": "Gestión Académica",
-        "competencia": "Diseño curricular",
-        "claim_evaluado": "El evaluado diferencia niveles de organización curricular y evita usar currículo, plan de estudios y malla curricular como sinónimos.",
-        "evidencia": "Selecciona una explicación que distingue el currículo como marco amplio, el plan de estudios como organización de áreas y grados, y la malla curricular como secuencia de contenidos, desempeños o aprendizajes.",
-        "proceso_cognitivo": "Comprensión conceptual comparativa",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Reduce el currículo a una lista de temas y confunde la malla curricular con el horario semanal.",
-            "C": "Confunde instrumentos de gestión académica e institucional, atribuyéndoles funciones que no les corresponden.",
-            "D": "Niega distinciones conceptuales necesarias para la planeación y gestión académica."
-        },
-        "fuente_autorizada": [
-            "Lineamientos curriculares del MEN",
-            "Orientaciones curriculares institucionales",
-            "Proyecto Educativo Institucional"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque diferencia los tres conceptos por nivel y función: el currículo como marco amplio de formación, el plan de estudios como organización de áreas y grados, y la malla curricular como distribución secuencial de contenidos, desempeños o aprendizajes.",
-        "opcion_B": "Es incorrecta porque reduce el currículo a una lista de temas y confunde la malla curricular con el horario semanal.",
-        "opcion_C": "Es incorrecta porque el plan de estudios no reemplaza al PEI y la malla curricular no corresponde al manual de convivencia.",
-        "opcion_D": "Es incorrecta porque tratar los tres conceptos como idénticos dificulta la planeación, seguimiento y evaluación del proceso académico."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem no exige experiencia especializada en diseño curricular ni conocimiento normativo literal. Evalúa una diferenciación conceptual necesaria para la gestión académica y usa una situación común en reuniones institucionales."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 3 preguntas sobre currículo, plan de estudios y malla curricular."
+    "fuente_autorizada": [
+      "Lineamientos curriculares del MEN",
+      "Orientaciones curriculares institucionales",
+      "Proyecto Educativo Institucional"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque reduce el currículo a una lista de temas y confunde la malla curricular con el horario semanal.",
+    "opcion_C": "Es incorrecta porque el plan de estudios no reemplaza al PEI y la malla curricular no corresponde al manual de convivencia.",
+    "opcion_D": "Es incorrecta porque tratar los tres conceptos como idénticos dificulta la planeación, seguimiento y evaluación del proceso académico.",
+    "distractores": {
+      "B": "Es incorrecta porque reduce el currículo a una lista de temas y confunde la malla curricular con el horario semanal.",
+      "C": "Es incorrecta porque el plan de estudios no reemplaza al PEI y la malla curricular no corresponde al manual de convivencia.",
+      "D": "Es incorrecta porque tratar los tres conceptos como idénticos dificulta la planeación, seguimiento y evaluación del proceso académico."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem no exige experiencia especializada en diseño curricular ni conocimiento normativo literal. Evalúa una diferenciación conceptual necesaria para la gestión académica y usa una situación común en reuniones institucionales."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 3 preguntas sobre currículo, plan de estudios y malla curricular."
+  }
 }

@@ -1,36 +1,36 @@
 {
-    "id_item": "MTV_B11_I03",
-    "archivo_sugerido": "MTV_B11_I03_plan_lector_mismo_libro_todos.json",
-    "proposito_de_uso": "Evaluar si el aspirante comprende por qué imponer el mismo libro a todos puede limitar autonomía y sentido lector.",
-    "blueprint": {
-        "componente_modulo": "Práctica pedagógica homogeneizadora",
-        "competencia": "Análisis de autonomía y diversidad",
-        "afirmacion": "Imponer un único texto sin considerar intereses, niveles, contextos y posibilidades de elección puede limitar autonomía lectora y motivación.",
-        "evidencia_observable": "Identifica una práctica de plan lector rígida y propone diversificación o mediación pedagógica.",
-        "tipo_de_evidencia": "Juicio didáctico aplicado",
-        "dificultad_esperada": "Media-Alta",
-        "clave": "A"
+  "id_item": "MTV_B11_I03",
+  "archivo_sugerido": "MTV_B11_I03_plan_lector_mismo_libro_todos.json",
+  "proposito_de_uso": "Evaluar si el aspirante comprende por qué imponer el mismo libro a todos puede limitar autonomía y sentido lector.",
+  "blueprint": {
+    "componente_modulo": "Práctica pedagógica homogeneizadora",
+    "competencia": "Análisis de autonomía y diversidad",
+    "afirmacion": "Imponer un único texto sin considerar intereses, niveles, contextos y posibilidades de elección puede limitar autonomía lectora y motivación.",
+    "evidencia_observable": "Identifica una práctica de plan lector rígida y propone diversificación o mediación pedagógica.",
+    "tipo_de_evidencia": "Juicio didáctico aplicado",
+    "dificultad_esperada": "Media-Alta",
+    "clave": "A"
+  },
+  "item": {
+    "enunciado": "En el diseño del plan lector, un docente decide que todos los estudiantes deben leer exactamente el mismo libro, al mismo ritmo y con la misma guía, sin considerar intereses, niveles lectores ni posibilidades de elección.\n\n¿Por qué esta práctica puede considerarse tecnicista y limitante?",
+    "opciones": {
+      "A": "Porque homogeniza la experiencia lectora y reduce la autonomía, la motivación y la relación significativa con el texto.",
+      "B": "Porque toda lectura en la escuela es antipedagógica.",
+      "C": "Porque el docente nunca debe orientar ningún proceso lector.",
+      "D": "Porque leer libros impresos siempre contradice el constructivismo."
     },
-    "item": {
-        "enunciado": "En el diseño del plan lector, un docente decide que todos los estudiantes deben leer exactamente el mismo libro, al mismo ritmo y con la misma guía, sin considerar intereses, niveles lectores ni posibilidades de elección.\n\n¿Por qué esta práctica puede considerarse tecnicista y limitante?",
-        "opciones": {
-            "A": "Porque homogeniza la experiencia lectora y reduce la autonomía, la motivación y la relación significativa con el texto.",
-            "B": "Porque toda lectura en la escuela es antipedagógica.",
-            "C": "Porque el docente nunca debe orientar ningún proceso lector.",
-            "D": "Porque leer libros impresos siempre contradice el constructivismo."
-        },
-        "respuesta_correcta": "A"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque la práctica ignora diversidad, autonomía y construcción de sentido.",
-        "distractores": {
-            "B": "La lectura escolar sí puede ser pedagógica si está mediada adecuadamente.",
-            "C": "El docente debe orientar, pero no imponer de forma rígida y descontextualizada.",
-            "D": "El problema no es el soporte impreso, sino la imposición homogénea."
-        }
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem útil para evaluar autonomía y diversidad en lectura."
+    "respuesta_correcta": "A"
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "distractores": {
+      "B": "La lectura escolar sí puede ser pedagógica si está mediada adecuadamente.",
+      "C": "El docente debe orientar, pero no imponer de forma rígida y descontextualizada.",
+      "D": "El problema no es el soporte impreso, sino la imposición homogénea."
     }
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem útil para evaluar autonomía y diversidad en lectura."
+  }
 }

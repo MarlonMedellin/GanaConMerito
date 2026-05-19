@@ -1,101 +1,106 @@
 {
-    "id_item": "EFCC_B01_I04",
-    "archivo_sugerido": "EFCC_B01_I04_recuperacion_transcripcion_mecanica.json",
-    "bloque": {
-        "codigo_bloque": "EFCC_B01",
-        "nombre": "Evaluación tecnicista, punitiva y formativa",
-        "estado_en_lista": "Bloque 1 de 5",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 4 de 4"
+  "id_item": "EFCC_B01_I04",
+  "archivo_sugerido": "EFCC_B01_I04_recuperacion_transcripcion_mecanica.json",
+  "bloque": {
+    "codigo_bloque": "EFCC_B01",
+    "nombre": "Evaluación tecnicista, punitiva y formativa",
+    "estado_en_lista": "Bloque 1 de 5",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 4 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce que una recuperación académica basada en transcripción mecánica contradice los principios de la evaluación formativa, porque no identifica dificultades, no retroalimenta y no promueve comprensión.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
+    "blueprint": {
+      "problematica_principal": "Uso de la recuperación académica como castigo o tarea mecánica sin sentido formativo.",
+      "fuente_autorizada": [
+        "Evaluación formativa",
+        "Sistema Institucional de Evaluación de los Estudiantes",
+        "Didáctica general",
+        "Orientaciones pedagógicas institucionales"
+      ],
+      "componente_modulo": "Evaluación por Competencias y Praxis Pedagógica",
+      "competencia": "Diseño de recuperación formativa",
+      "afirmacion": "La recuperación debe promover comprensión, retroalimentación y nuevas oportunidades de aprendizaje, no solo transcripción mecánica.",
+      "evidencia_observable": "Reconoce que copiar un cuaderno no permite evidenciar comprensión ni superar dificultades de aprendizaje.",
+      "tipo_de_evidencia": "Juicio evaluativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "D"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce que una recuperación académica basada en transcripción mecánica contradice los principios de la evaluación formativa, porque no identifica dificultades, no retroalimenta y no promueve comprensión.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
-        "blueprint": {
-            "problematica_principal": "Uso de la recuperación académica como castigo o tarea mecánica sin sentido formativo.",
-            "fuente_autorizada": [
-                "Evaluación formativa",
-                "Sistema Institucional de Evaluación de los Estudiantes",
-                "Didáctica general",
-                "Orientaciones pedagógicas institucionales"
-            ],
-            "componente_modulo": "Evaluación por Competencias y Praxis Pedagógica",
-            "competencia": "Diseño de recuperación formativa",
-            "afirmacion": "La recuperación debe promover comprensión, retroalimentación y nuevas oportunidades de aprendizaje, no solo transcripción mecánica.",
-            "evidencia_observable": "Reconoce que copiar un cuaderno no permite evidenciar comprensión ni superar dificultades de aprendizaje.",
-            "tipo_de_evidencia": "Juicio evaluativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "D"
-        },
-        "claim": "El evaluado comprende que una recuperación formativa debe diagnosticar dificultades, ofrecer mediaciones, proponer nuevas evidencias de aprendizaje y retroalimentar el proceso, no limitarse a una tarea mecánica.",
-        "evidencia_observable": "Selecciona una crítica adecuada a la transcripción de cuaderno como recuperación académica.",
-        "tarea_cognitiva": "Analizar una estrategia de recuperación y valorar su coherencia con la evaluación formativa.",
-        "tipo_de_pregunta": "Caso situacional de juicio evaluativo",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Sesgo contra estudiantes con dificultades de escritura",
-                "revision": "La clave evita usar la copia como medida principal de recuperación y privilegia evidencias de comprensión."
-            },
-            {
-                "riesgo": "Confusión entre esfuerzo y aprendizaje",
-                "revision": "El ítem diferencia una tarea extensa de una evidencia real de comprensión."
-            },
-            {
-                "riesgo": "Ambigüedad entre recuperación y castigo",
-                "revision": "La opción correcta identifica que la recuperación debe ser una oportunidad de mejora, no una sanción mecánica."
-            },
-            {
-                "riesgo": "Sesgo por área disciplinar",
-                "revision": "La situación aplica a cualquier área del currículo."
-            }
-        ]
+    "claim": "El evaluado comprende que una recuperación formativa debe diagnosticar dificultades, ofrecer mediaciones, proponer nuevas evidencias de aprendizaje y retroalimentar el proceso, no limitarse a una tarea mecánica.",
+    "evidencia_observable": "Selecciona una crítica adecuada a la transcripción de cuaderno como recuperación académica.",
+    "tarea_cognitiva": "Analizar una estrategia de recuperación y valorar su coherencia con la evaluación formativa.",
+    "tipo_de_pregunta": "Caso situacional de juicio evaluativo",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Sesgo contra estudiantes con dificultades de escritura",
+        "revision": "La clave evita usar la copia como medida principal de recuperación y privilegia evidencias de comprensión."
+      },
+      {
+        "riesgo": "Confusión entre esfuerzo y aprendizaje",
+        "revision": "El ítem diferencia una tarea extensa de una evidencia real de comprensión."
+      },
+      {
+        "riesgo": "Ambigüedad entre recuperación y castigo",
+        "revision": "La opción correcta identifica que la recuperación debe ser una oportunidad de mejora, no una sanción mecánica."
+      },
+      {
+        "riesgo": "Sesgo por área disciplinar",
+        "revision": "La situación aplica a cualquier área del currículo."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un estudiante no alcanza los desempeños esperados en un periodo académico. Como recuperación, el docente le pide transcribir mecánicamente todo el cuaderno, sin revisar cuáles fueron sus dificultades, sin retroalimentación y sin una nueva oportunidad para demostrar comprensión.\n\n¿Por qué esta práctica contradice los principios de la evaluación formativa?",
+    "opciones": {
+      "A": "Porque toda recuperación debe eliminar cualquier exigencia académica.",
+      "B": "Porque copiar mucho siempre demuestra comprensión profunda del tema.",
+      "C": "Porque la recuperación formativa consiste únicamente en subir la nota sin nuevas evidencias.",
+      "D": "Porque la transcripción mecánica no identifica dificultades, no ofrece retroalimentación ni permite evidenciar comprensión o progreso."
     },
-    "item": {
-        "enunciado": "Un estudiante no alcanza los desempeños esperados en un periodo académico. Como recuperación, el docente le pide transcribir mecánicamente todo el cuaderno, sin revisar cuáles fueron sus dificultades, sin retroalimentación y sin una nueva oportunidad para demostrar comprensión.\n\n¿Por qué esta práctica contradice los principios de la evaluación formativa?",
-        "opciones": {
-            "A": "Porque toda recuperación debe eliminar cualquier exigencia académica.",
-            "B": "Porque copiar mucho siempre demuestra comprensión profunda del tema.",
-            "C": "Porque la recuperación formativa consiste únicamente en subir la nota sin nuevas evidencias.",
-            "D": "Porque la transcripción mecánica no identifica dificultades, no ofrece retroalimentación ni permite evidenciar comprensión o progreso."
-        },
-        "respuesta_correcta": "D"
+    "respuesta_correcta": "D"
+  },
+  "ficha_tecnica": {
+    "componente": "Evaluación por Competencias y Praxis Pedagógica",
+    "competencia": "Diseño de recuperación formativa",
+    "claim_evaluado": "El evaluado comprende que una recuperación formativa debe diagnosticar dificultades, ofrecer mediaciones, proponer nuevas evidencias de aprendizaje y retroalimentar el proceso, no limitarse a una tarea mecánica.",
+    "evidencia": "Selecciona una crítica adecuada a la transcripción de cuaderno como recuperación académica.",
+    "proceso_cognitivo": "Análisis y juicio evaluativo",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "D",
+    "distractores": {
+      "A": "Confunde evaluación formativa con ausencia de exigencia académica.",
+      "B": "Asume erróneamente que la cantidad de copia equivale a comprensión.",
+      "C": "Reduce la recuperación a modificación de nota sin evidencias de aprendizaje."
     },
-    "ficha_tecnica": {
-        "componente": "Evaluación por Competencias y Praxis Pedagógica",
-        "competencia": "Diseño de recuperación formativa",
-        "claim_evaluado": "El evaluado comprende que una recuperación formativa debe diagnosticar dificultades, ofrecer mediaciones, proponer nuevas evidencias de aprendizaje y retroalimentar el proceso, no limitarse a una tarea mecánica.",
-        "evidencia": "Selecciona una crítica adecuada a la transcripción de cuaderno como recuperación académica.",
-        "proceso_cognitivo": "Análisis y juicio evaluativo",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "D",
-        "distractores": {
-            "A": "Confunde evaluación formativa con ausencia de exigencia académica.",
-            "B": "Asume erróneamente que la cantidad de copia equivale a comprensión.",
-            "C": "Reduce la recuperación a modificación de nota sin evidencias de aprendizaje."
-        },
-        "fuente_autorizada": [
-            "Evaluación formativa",
-            "Sistema Institucional de Evaluación de los Estudiantes",
-            "Didáctica general",
-            "Orientaciones pedagógicas institucionales"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque una recuperación formativa debe identificar dificultades, retroalimentar, ofrecer apoyos y permitir nuevas evidencias de comprensión. Copiar el cuaderno de manera mecánica no garantiza ninguno de estos procesos.",
-        "opcion_A": "Es incorrecta porque la recuperación puede mantener exigencia académica, pero con sentido formativo.",
-        "opcion_B": "Es incorrecta porque copiar mucho no demuestra necesariamente comprensión.",
-        "opcion_C": "Es incorrecta porque la recuperación no debe limitarse a subir una nota sin evidencia de aprendizaje."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita castigar dificultades de escritura o lentitud en la copia. Evalúa una comprensión justa de la recuperación como oportunidad de aprendizaje, retroalimentación y nueva evidencia."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre evaluación tecnicista, punitiva y formativa."
+    "fuente_autorizada": [
+      "Evaluación formativa",
+      "Sistema Institucional de Evaluación de los Estudiantes",
+      "Didáctica general",
+      "Orientaciones pedagógicas institucionales"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "opcion_A": "Es incorrecta porque la recuperación puede mantener exigencia académica, pero con sentido formativo.",
+    "opcion_B": "Es incorrecta porque copiar mucho no demuestra necesariamente comprensión.",
+    "opcion_C": "Es incorrecta porque la recuperación no debe limitarse a subir una nota sin evidencia de aprendizaje.",
+    "distractores": {
+      "A": "Es incorrecta porque la recuperación puede mantener exigencia académica, pero con sentido formativo.",
+      "B": "Es incorrecta porque copiar mucho no demuestra necesariamente comprensión.",
+      "C": "Es incorrecta porque la recuperación no debe limitarse a subir una nota sin evidencia de aprendizaje."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita castigar dificultades de escritura o lentitud en la copia. Evalúa una comprensión justa de la recuperación como oportunidad de aprendizaje, retroalimentación y nueva evidencia."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre evaluación tecnicista, punitiva y formativa."
+  }
 }

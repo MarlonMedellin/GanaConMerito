@@ -1,103 +1,108 @@
 {
-    "id_item": "CEOL_B02_I06",
-    "archivo_sugerido": "CEOL_B02_I06_manual_convivencia_justicia_restaurativa.json",
-    "bloque": {
-        "codigo_bloque": "CEOL_B02",
-        "nombre": "Enfoque de derechos, debido proceso y justicia restaurativa",
-        "estado_en_lista": "Bloque 2 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 6 de 6"
+  "id_item": "CEOL_B02_I06",
+  "archivo_sugerido": "CEOL_B02_I06_manual_convivencia_justicia_restaurativa.json",
+  "bloque": {
+    "codigo_bloque": "CEOL_B02",
+    "nombre": "Enfoque de derechos, debido proceso y justicia restaurativa",
+    "estado_en_lista": "Bloque 2 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 6 de 6"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante comprende por qué los Manuales de Convivencia deben migrar de un enfoque punitivo tradicional hacia un enfoque restaurativo y reparador.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con convivencia escolar, orientación, coordinación, docencia o dirección.",
+    "blueprint": {
+      "problematica_principal": "Persistencia de manuales de convivencia centrados en expulsiones, suspensiones y castigos sin reparación ni formación.",
+      "fuente_autorizada": [
+        "Ley 1620 de 2013",
+        "Decreto 1965 de 2013",
+        "Manual de convivencia institucional",
+        "Orientaciones sobre actualización de manuales de convivencia",
+        "Justicia restaurativa escolar"
+      ],
+      "componente_modulo": "Sanciones vs. Justicia Restaurativa",
+      "competencia": "Actualización del Manual de Convivencia",
+      "afirmacion": "Los manuales deben orientar medidas pedagógicas, restaurativas y reparadoras, no solo sanciones punitivas.",
+      "evidencia_observable": "Reconoce que la actualización del Manual debe incluir reparación del daño, participación, responsabilidad y garantías de no repetición.",
+      "tipo_de_evidencia": "Juicio institucional aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "C"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante comprende por qué los Manuales de Convivencia deben migrar de un enfoque punitivo tradicional hacia un enfoque restaurativo y reparador.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con convivencia escolar, orientación, coordinación, docencia o dirección.",
-        "blueprint": {
-            "problematica_principal": "Persistencia de manuales de convivencia centrados en expulsiones, suspensiones y castigos sin reparación ni formación.",
-            "fuente_autorizada": [
-                "Ley 1620 de 2013",
-                "Decreto 1965 de 2013",
-                "Manual de convivencia institucional",
-                "Orientaciones sobre actualización de manuales de convivencia",
-                "Justicia restaurativa escolar"
-            ],
-            "componente_modulo": "Sanciones vs. Justicia Restaurativa",
-            "competencia": "Actualización del Manual de Convivencia",
-            "afirmacion": "Los manuales deben orientar medidas pedagógicas, restaurativas y reparadoras, no solo sanciones punitivas.",
-            "evidencia_observable": "Reconoce que la actualización del Manual debe incluir reparación del daño, participación, responsabilidad y garantías de no repetición.",
-            "tipo_de_evidencia": "Juicio institucional aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "C"
-        },
-        "claim": "El evaluado comprende que el Manual de Convivencia debe ser un instrumento pedagógico que regule derechos, deberes, protocolos y medidas restaurativas orientadas a la convivencia y la reparación del daño.",
-        "evidencia_observable": "Selecciona una justificación adecuada para pasar de un modelo punitivo a un modelo restaurativo.",
-        "tarea_cognitiva": "Analizar la finalidad del Manual de Convivencia y elegir el enfoque normativo-pedagógico más adecuado.",
-        "tipo_de_pregunta": "Pregunta conceptual aplicada",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Confundir restauración con ausencia de norma",
-                "revision": "La clave conserva normas, deberes y consecuencias, pero orientadas a reparación."
-            },
-            {
-                "riesgo": "Desconocer situaciones graves",
-                "revision": "El ítem no impide activar protocolos cuando corresponda; se centra en el enfoque general del Manual."
-            },
-            {
-                "riesgo": "Ambigüedad entre sanción y medida pedagógica",
-                "revision": "La opción correcta diferencia castigo aislado de medida formativa y reparadora."
-            },
-            {
-                "riesgo": "Lenguaje institucional abstracto",
-                "revision": "La pregunta usa ejemplos concretos como expulsiones, suspensiones, reparación y no repetición."
-            }
-        ]
+    "claim": "El evaluado comprende que el Manual de Convivencia debe ser un instrumento pedagógico que regule derechos, deberes, protocolos y medidas restaurativas orientadas a la convivencia y la reparación del daño.",
+    "evidencia_observable": "Selecciona una justificación adecuada para pasar de un modelo punitivo a un modelo restaurativo.",
+    "tarea_cognitiva": "Analizar la finalidad del Manual de Convivencia y elegir el enfoque normativo-pedagógico más adecuado.",
+    "tipo_de_pregunta": "Pregunta conceptual aplicada",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Confundir restauración con ausencia de norma",
+        "revision": "La clave conserva normas, deberes y consecuencias, pero orientadas a reparación."
+      },
+      {
+        "riesgo": "Desconocer situaciones graves",
+        "revision": "El ítem no impide activar protocolos cuando corresponda; se centra en el enfoque general del Manual."
+      },
+      {
+        "riesgo": "Ambigüedad entre sanción y medida pedagógica",
+        "revision": "La opción correcta diferencia castigo aislado de medida formativa y reparadora."
+      },
+      {
+        "riesgo": "Lenguaje institucional abstracto",
+        "revision": "La pregunta usa ejemplos concretos como expulsiones, suspensiones, reparación y no repetición."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Una institución revisa su Manual de Convivencia y encuentra que está centrado casi exclusivamente en expulsiones, suspensiones y castigos. El comité propone actualizarlo hacia un enfoque de justicia restaurativa y reparación del daño.\n\n¿Por qué este cambio es necesario desde las nuevas orientaciones de convivencia escolar?",
+    "opciones": {
+      "A": "Porque el Manual de Convivencia debe eliminar todos los deberes y consecuencias para evitar conflictos.",
+      "B": "Porque la justicia restaurativa reemplaza cualquier protocolo institucional por acuerdos informales sin seguimiento.",
+      "C": "Porque el Manual debe orientar medidas pedagógicas, restaurativas y proporcionales que promuevan responsabilidad, reparación, reconciliación y garantías de no repetición.",
+      "D": "Porque las suspensiones y expulsiones siempre resuelven la causa del conflicto y reparan automáticamente a la víctima."
     },
-    "item": {
-        "enunciado": "Una institución revisa su Manual de Convivencia y encuentra que está centrado casi exclusivamente en expulsiones, suspensiones y castigos. El comité propone actualizarlo hacia un enfoque de justicia restaurativa y reparación del daño.\n\n¿Por qué este cambio es necesario desde las nuevas orientaciones de convivencia escolar?",
-        "opciones": {
-            "A": "Porque el Manual de Convivencia debe eliminar todos los deberes y consecuencias para evitar conflictos.",
-            "B": "Porque la justicia restaurativa reemplaza cualquier protocolo institucional por acuerdos informales sin seguimiento.",
-            "C": "Porque el Manual debe orientar medidas pedagógicas, restaurativas y proporcionales que promuevan responsabilidad, reparación, reconciliación y garantías de no repetición.",
-            "D": "Porque las suspensiones y expulsiones siempre resuelven la causa del conflicto y reparan automáticamente a la víctima."
-        },
-        "respuesta_correcta": "C"
+    "respuesta_correcta": "C"
+  },
+  "ficha_tecnica": {
+    "componente": "Sanciones vs. Justicia Restaurativa",
+    "competencia": "Actualización del Manual de Convivencia",
+    "claim_evaluado": "El evaluado comprende que el Manual de Convivencia debe ser un instrumento pedagógico que regule derechos, deberes, protocolos y medidas restaurativas orientadas a la convivencia y la reparación del daño.",
+    "evidencia": "Selecciona una justificación adecuada para pasar de un modelo punitivo a un modelo restaurativo.",
+    "proceso_cognitivo": "Comprensión institucional aplicada",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "C",
+    "distractores": {
+      "A": "Confunde enfoque restaurativo con ausencia de deberes o consecuencias.",
+      "B": "Desconoce la necesidad de protocolos y seguimiento institucional.",
+      "D": "Asume que castigos tradicionales reparan automáticamente el daño."
     },
-    "ficha_tecnica": {
-        "componente": "Sanciones vs. Justicia Restaurativa",
-        "competencia": "Actualización del Manual de Convivencia",
-        "claim_evaluado": "El evaluado comprende que el Manual de Convivencia debe ser un instrumento pedagógico que regule derechos, deberes, protocolos y medidas restaurativas orientadas a la convivencia y la reparación del daño.",
-        "evidencia": "Selecciona una justificación adecuada para pasar de un modelo punitivo a un modelo restaurativo.",
-        "proceso_cognitivo": "Comprensión institucional aplicada",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "C",
-        "distractores": {
-            "A": "Confunde enfoque restaurativo con ausencia de deberes o consecuencias.",
-            "B": "Desconoce la necesidad de protocolos y seguimiento institucional.",
-            "D": "Asume que castigos tradicionales reparan automáticamente el daño."
-        },
-        "fuente_autorizada": [
-            "Ley 1620 de 2013",
-            "Decreto 1965 de 2013",
-            "Manual de convivencia institucional",
-            "Orientaciones sobre actualización de manuales de convivencia",
-            "Justicia restaurativa escolar"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque el enfoque restaurativo busca que el Manual de Convivencia promueva responsabilidad, reparación del daño, reconciliación, proporcionalidad y no repetición.",
-        "opcion_A": "Es incorrecta porque el enfoque restaurativo no elimina deberes ni normas.",
-        "opcion_B": "Es incorrecta porque los acuerdos restaurativos deben integrarse a protocolos y seguimiento institucional.",
-        "opcion_D": "Es incorrecta porque suspender o expulsar no repara por sí mismo el daño ni transforma necesariamente la convivencia."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita plantear una falsa oposición entre normas y restauración. Evalúa la actualización del Manual como instrumento pedagógico, normativo y reparador."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 6 de un grupo de 6 preguntas sobre enfoque de derechos, debido proceso y justicia restaurativa."
+    "fuente_autorizada": [
+      "Ley 1620 de 2013",
+      "Decreto 1965 de 2013",
+      "Manual de convivencia institucional",
+      "Orientaciones sobre actualización de manuales de convivencia",
+      "Justicia restaurativa escolar"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "opcion_A": "Es incorrecta porque el enfoque restaurativo no elimina deberes ni normas.",
+    "opcion_B": "Es incorrecta porque los acuerdos restaurativos deben integrarse a protocolos y seguimiento institucional.",
+    "opcion_D": "Es incorrecta porque suspender o expulsar no repara por sí mismo el daño ni transforma necesariamente la convivencia.",
+    "distractores": {
+      "A": "Es incorrecta porque el enfoque restaurativo no elimina deberes ni normas.",
+      "B": "Es incorrecta porque los acuerdos restaurativos deben integrarse a protocolos y seguimiento institucional.",
+      "D": "Es incorrecta porque suspender o expulsar no repara por sí mismo el daño ni transforma necesariamente la convivencia."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita plantear una falsa oposición entre normas y restauración. Evalúa la actualización del Manual como instrumento pedagógico, normativo y reparador."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 6 de un grupo de 6 preguntas sobre enfoque de derechos, debido proceso y justicia restaurativa."
+  }
 }

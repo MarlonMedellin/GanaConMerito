@@ -1,99 +1,104 @@
 {
-    "id_item": "IDD_B06_I04",
-    "archivo_sugerido": "IDD_B06_I04_presencia_fisica_no_es_inclusion.json",
-    "bloque": {
-        "codigo_bloque": "IDD_B06",
-        "nombre": "Inclusión práctica vs. segregación en aula",
-        "estado_en_lista": "Bloque 6 de 17",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 4 de 5"
+  "id_item": "IDD_B06_I04",
+  "archivo_sugerido": "IDD_B06_I04_presencia_fisica_no_es_inclusion.json",
+  "bloque": {
+    "codigo_bloque": "IDD_B06",
+    "nombre": "Inclusión práctica vs. segregación en aula",
+    "estado_en_lista": "Bloque 6 de 17",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 4 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce que la presencia física de un estudiante en el aula no basta para afirmar que hay inclusión educativa.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión educativa, apoyo pedagógico, orientación escolar o coordinación.",
+    "blueprint": {
+      "problematica_principal": "Confusión entre matrícula o presencia física e inclusión educativa efectiva.",
+      "fuente_autorizada": [
+        "Decreto 1421 de 2017",
+        "Educación inclusiva",
+        "Ajustes razonables",
+        "DUA",
+        "PIAR"
+      ],
+      "componente_modulo": "Inclusión efectiva en aula común",
+      "competencia": "Garantía de participación y aprendizaje",
+      "afirmacion": "La inclusión se evidencia en acceso, participación, aprendizaje, apoyos y pertenencia, no solo en ubicación física.",
+      "evidencia_observable": "Reconoce condiciones mínimas para que la presencia en aula sea participación educativa real.",
+      "tipo_de_evidencia": "Comprensión conceptual aplicada",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "D"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce que la presencia física de un estudiante en el aula no basta para afirmar que hay inclusión educativa.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión educativa, apoyo pedagógico, orientación escolar o coordinación.",
-        "blueprint": {
-            "problematica_principal": "Confusión entre matrícula o presencia física e inclusión educativa efectiva.",
-            "fuente_autorizada": [
-                "Decreto 1421 de 2017",
-                "Educación inclusiva",
-                "Ajustes razonables",
-                "DUA",
-                "PIAR"
-            ],
-            "componente_modulo": "Inclusión efectiva en aula común",
-            "competencia": "Garantía de participación y aprendizaje",
-            "afirmacion": "La inclusión se evidencia en acceso, participación, aprendizaje, apoyos y pertenencia, no solo en ubicación física.",
-            "evidencia_observable": "Reconoce condiciones mínimas para que la presencia en aula sea participación educativa real.",
-            "tipo_de_evidencia": "Comprensión conceptual aplicada",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "D"
-        },
-        "claim": "El evaluado comprende que estar en el aula no garantiza inclusión si el estudiante no participa, no accede al aprendizaje ni recibe apoyos pertinentes.",
-        "evidencia_observable": "Selecciona una definición práctica de inclusión efectiva en el aula común.",
-        "tarea_cognitiva": "Distinguir presencia física de participación pedagógica real.",
-        "tipo_de_pregunta": "Pregunta conceptual aplicada",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Aceptar inclusión simbólica",
-                "revision": "La clave exige participación y aprendizaje."
-            },
-            {
-                "riesgo": "Culpar al estudiante por no participar",
-                "revision": "La opción correcta considera apoyos y barreras del entorno."
-            },
-            {
-                "riesgo": "Reducir inclusión a socialización",
-                "revision": "El ítem integra aprendizaje y pertenencia."
-            }
-        ]
+    "claim": "El evaluado comprende que estar en el aula no garantiza inclusión si el estudiante no participa, no accede al aprendizaje ni recibe apoyos pertinentes.",
+    "evidencia_observable": "Selecciona una definición práctica de inclusión efectiva en el aula común.",
+    "tarea_cognitiva": "Distinguir presencia física de participación pedagógica real.",
+    "tipo_de_pregunta": "Pregunta conceptual aplicada",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Aceptar inclusión simbólica",
+        "revision": "La clave exige participación y aprendizaje."
+      },
+      {
+        "riesgo": "Culpar al estudiante por no participar",
+        "revision": "La opción correcta considera apoyos y barreras del entorno."
+      },
+      {
+        "riesgo": "Reducir inclusión a socialización",
+        "revision": "El ítem integra aprendizaje y pertenencia."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Una institución afirma que un estudiante está incluido porque se sienta todos los días en el salón. Sin embargo, no participa en las actividades, no comprende las instrucciones, no recibe apoyos y sus producciones no se relacionan con el propósito de clase.\n\n¿Por qué la presencia física no basta para afirmar que hay inclusión?",
+    "opciones": {
+      "A": "Porque la inclusión solo ocurre cuando el estudiante trabaja completamente solo.",
+      "B": "Porque un estudiante con barreras debe estar fuera del aula común.",
+      "C": "Porque basta con que el estudiante observe al grupo, aunque no participe.",
+      "D": "Porque la inclusión exige acceso, participación, aprendizaje, apoyos pertinentes y sentido de pertenencia en el grupo."
     },
-    "item": {
-        "enunciado": "Una institución afirma que un estudiante está incluido porque se sienta todos los días en el salón. Sin embargo, no participa en las actividades, no comprende las instrucciones, no recibe apoyos y sus producciones no se relacionan con el propósito de clase.\n\n¿Por qué la presencia física no basta para afirmar que hay inclusión?",
-        "opciones": {
-            "A": "Porque la inclusión solo ocurre cuando el estudiante trabaja completamente solo.",
-            "B": "Porque un estudiante con barreras debe estar fuera del aula común.",
-            "C": "Porque basta con que el estudiante observe al grupo, aunque no participe.",
-            "D": "Porque la inclusión exige acceso, participación, aprendizaje, apoyos pertinentes y sentido de pertenencia en el grupo."
-        },
-        "respuesta_correcta": "D"
+    "respuesta_correcta": "D"
+  },
+  "ficha_tecnica": {
+    "componente": "Inclusión efectiva en aula común",
+    "competencia": "Garantía de participación y aprendizaje",
+    "claim_evaluado": "El evaluado comprende que estar en el aula no garantiza inclusión si el estudiante no participa, no accede al aprendizaje ni recibe apoyos pertinentes.",
+    "evidencia": "Selecciona una definición práctica de inclusión efectiva en el aula común.",
+    "proceso_cognitivo": "Comprensión conceptual aplicada",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "D",
+    "distractores": {
+      "A": "Confunde inclusión con trabajo aislado.",
+      "B": "Propone exclusión del aula común.",
+      "C": "Reduce inclusión a observación pasiva."
     },
-    "ficha_tecnica": {
-        "componente": "Inclusión efectiva en aula común",
-        "competencia": "Garantía de participación y aprendizaje",
-        "claim_evaluado": "El evaluado comprende que estar en el aula no garantiza inclusión si el estudiante no participa, no accede al aprendizaje ni recibe apoyos pertinentes.",
-        "evidencia": "Selecciona una definición práctica de inclusión efectiva en el aula común.",
-        "proceso_cognitivo": "Comprensión conceptual aplicada",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "D",
-        "distractores": {
-            "A": "Confunde inclusión con trabajo aislado.",
-            "B": "Propone exclusión del aula común.",
-            "C": "Reduce inclusión a observación pasiva."
-        },
-        "fuente_autorizada": [
-            "Decreto 1421 de 2017",
-            "Educación inclusiva",
-            "Ajustes razonables",
-            "DUA",
-            "PIAR"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque la inclusión implica participación, aprendizaje, apoyos, acceso y pertenencia.",
-        "opcion_A": "Es incorrecta porque el trabajo aislado no garantiza inclusión.",
-        "opcion_B": "Es incorrecta porque excluye al estudiante del aula común.",
-        "opcion_C": "Es incorrecta porque observar pasivamente no equivale a participar."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita la inclusión simbólica y defiende el derecho a participar y aprender con apoyos."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 5 preguntas sobre inclusión práctica vs. segregación en aula."
+    "fuente_autorizada": [
+      "Decreto 1421 de 2017",
+      "Educación inclusiva",
+      "Ajustes razonables",
+      "DUA",
+      "PIAR"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "opcion_A": "Es incorrecta porque el trabajo aislado no garantiza inclusión.",
+    "opcion_B": "Es incorrecta porque excluye al estudiante del aula común.",
+    "opcion_C": "Es incorrecta porque observar pasivamente no equivale a participar.",
+    "distractores": {
+      "A": "Es incorrecta porque el trabajo aislado no garantiza inclusión.",
+      "B": "Es incorrecta porque excluye al estudiante del aula común.",
+      "C": "Es incorrecta porque observar pasivamente no equivale a participar."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita la inclusión simbólica y defiende el derecho a participar y aprender con apoyos."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 5 preguntas sobre inclusión práctica vs. segregación en aula."
+  }
 }

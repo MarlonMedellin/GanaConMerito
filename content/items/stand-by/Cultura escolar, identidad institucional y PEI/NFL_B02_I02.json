@@ -1,98 +1,103 @@
 {
-    "id_item": "NFL_B02_I02",
-    "archivo_sugerido": "NFL_B02_I02_cultura_escolar_no_manual_convivencia.json",
-    "bloque": {
-        "codigo_bloque": "NFL_B02",
-        "nombre": "Cultura escolar, identidad institucional y PEI",
-        "estado_en_lista": "Bloque 2 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 2 de 3"
+  "id_item": "NFL_B02_I02",
+  "archivo_sugerido": "NFL_B02_I02_cultura_escolar_no_manual_convivencia.json",
+  "bloque": {
+    "codigo_bloque": "NFL_B02",
+    "nombre": "Cultura escolar, identidad institucional y PEI",
+    "estado_en_lista": "Bloque 2 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 2 de 3"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante distingue cultura escolar de manual de convivencia, currículo formal y clima escolar.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, gestión educativa, convivencia, coordinación o rectoría.",
+    "blueprint": {
+      "problematica_principal": "Reducir la cultura escolar a documentos formales o a normas disciplinarias.",
+      "fuente_autorizada": [
+        "Proyecto Educativo Institucional",
+        "Ley 115 de 1994",
+        "Manual de Convivencia",
+        "Cultura institucional",
+        "Gestión escolar"
+      ],
+      "componente_modulo": "Cultura escolar y documentos institucionales",
+      "competencia": "Diferenciación de conceptos institucionales",
+      "afirmacion": "La cultura escolar atraviesa documentos, relaciones y prácticas, pero no se reduce a un manual o a una lista de normas.",
+      "evidencia_observable": "Distingue cultura escolar de manual de convivencia, currículo y clima escolar.",
+      "tipo_de_evidencia": "Comprensión conceptual comparativa",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "C"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante distingue cultura escolar de manual de convivencia, currículo formal y clima escolar.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, gestión educativa, convivencia, coordinación o rectoría.",
-        "blueprint": {
-            "problematica_principal": "Reducir la cultura escolar a documentos formales o a normas disciplinarias.",
-            "fuente_autorizada": [
-                "Proyecto Educativo Institucional",
-                "Ley 115 de 1994",
-                "Manual de Convivencia",
-                "Cultura institucional",
-                "Gestión escolar"
-            ],
-            "componente_modulo": "Cultura escolar y documentos institucionales",
-            "competencia": "Diferenciación de conceptos institucionales",
-            "afirmacion": "La cultura escolar atraviesa documentos, relaciones y prácticas, pero no se reduce a un manual o a una lista de normas.",
-            "evidencia_observable": "Distingue cultura escolar de manual de convivencia, currículo y clima escolar.",
-            "tipo_de_evidencia": "Comprensión conceptual comparativa",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "C"
-        },
-        "claim": "El evaluado comprende que la cultura escolar es más amplia que los documentos formales y se expresa en prácticas cotidianas.",
-        "evidencia_observable": "Selecciona una comparación adecuada entre cultura escolar y manual de convivencia.",
-        "tarea_cognitiva": "Comparar conceptos de gestión escolar.",
-        "tipo_de_pregunta": "Pregunta conceptual comparativa",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Desconocer importancia del manual de convivencia",
-                "revision": "La clave no lo niega, solo lo diferencia de cultura."
-            },
-            {
-                "riesgo": "Tratar la cultura escolar como intangible sin efectos",
-                "revision": "La opción correcta la relaciona con prácticas cotidianas."
-            },
-            {
-                "riesgo": "Confundir clima escolar con cultura escolar",
-                "revision": "El ítem delimita cultura como identidad más amplia y estable."
-            }
-        ]
+    "claim": "El evaluado comprende que la cultura escolar es más amplia que los documentos formales y se expresa en prácticas cotidianas.",
+    "evidencia_observable": "Selecciona una comparación adecuada entre cultura escolar y manual de convivencia.",
+    "tarea_cognitiva": "Comparar conceptos de gestión escolar.",
+    "tipo_de_pregunta": "Pregunta conceptual comparativa",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Desconocer importancia del manual de convivencia",
+        "revision": "La clave no lo niega, solo lo diferencia de cultura."
+      },
+      {
+        "riesgo": "Tratar la cultura escolar como intangible sin efectos",
+        "revision": "La opción correcta la relaciona con prácticas cotidianas."
+      },
+      {
+        "riesgo": "Confundir clima escolar con cultura escolar",
+        "revision": "El ítem delimita cultura como identidad más amplia y estable."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un coordinador afirma que la cultura escolar de su institución es exactamente lo mismo que el Manual de Convivencia, porque allí están escritas las normas. Otro docente señala que la cultura escolar es más amplia.\n\n¿Cuál explicación es más adecuada?",
+    "opciones": {
+      "A": "La cultura escolar es únicamente el listado de sanciones del Manual de Convivencia.",
+      "B": "La cultura escolar no tiene ninguna relación con valores, prácticas o identidad institucional.",
+      "C": "La cultura escolar incluye valores, creencias, costumbres, símbolos, relaciones y prácticas cotidianas; puede reflejarse en documentos, pero no se reduce a ellos.",
+      "D": "La cultura escolar es solo el promedio de notas de los estudiantes."
     },
-    "item": {
-        "enunciado": "Un coordinador afirma que la cultura escolar de su institución es exactamente lo mismo que el Manual de Convivencia, porque allí están escritas las normas. Otro docente señala que la cultura escolar es más amplia.\n\n¿Cuál explicación es más adecuada?",
-        "opciones": {
-            "A": "La cultura escolar es únicamente el listado de sanciones del Manual de Convivencia.",
-            "B": "La cultura escolar no tiene ninguna relación con valores, prácticas o identidad institucional.",
-            "C": "La cultura escolar incluye valores, creencias, costumbres, símbolos, relaciones y prácticas cotidianas; puede reflejarse en documentos, pero no se reduce a ellos.",
-            "D": "La cultura escolar es solo el promedio de notas de los estudiantes."
-        },
-        "respuesta_correcta": "C"
+    "respuesta_correcta": "C"
+  },
+  "ficha_tecnica": {
+    "componente": "Cultura escolar y documentos institucionales",
+    "competencia": "Diferenciación de conceptos institucionales",
+    "claim_evaluado": "El evaluado comprende que la cultura escolar es más amplia que los documentos formales y se expresa en prácticas cotidianas.",
+    "evidencia": "Selecciona una comparación adecuada entre cultura escolar y manual de convivencia.",
+    "proceso_cognitivo": "Comprensión conceptual comparativa",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "C",
+    "distractores": {
+      "A": "Reduce la cultura escolar a sanciones.",
+      "B": "Niega los elementos centrales de la cultura institucional.",
+      "D": "Confunde cultura escolar con desempeño académico."
     },
-    "ficha_tecnica": {
-        "componente": "Cultura escolar y documentos institucionales",
-        "competencia": "Diferenciación de conceptos institucionales",
-        "claim_evaluado": "El evaluado comprende que la cultura escolar es más amplia que los documentos formales y se expresa en prácticas cotidianas.",
-        "evidencia": "Selecciona una comparación adecuada entre cultura escolar y manual de convivencia.",
-        "proceso_cognitivo": "Comprensión conceptual comparativa",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "C",
-        "distractores": {
-            "A": "Reduce la cultura escolar a sanciones.",
-            "B": "Niega los elementos centrales de la cultura institucional.",
-            "D": "Confunde cultura escolar con desempeño académico."
-        },
-        "fuente_autorizada": [
-            "Proyecto Educativo Institucional",
-            "Ley 115 de 1994",
-            "Manual de Convivencia",
-            "Cultura institucional"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque la cultura escolar se expresa en prácticas, valores y relaciones, aunque pueda reflejarse en documentos institucionales.",
-        "opcion_A": "Es incorrecta porque el manual no agota la cultura escolar.",
-        "opcion_B": "Es incorrecta porque justamente esos elementos conforman la cultura escolar.",
-        "opcion_D": "Es incorrecta porque el rendimiento académico no define por sí solo la cultura institucional."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem reconoce la importancia del Manual de Convivencia sin reducir la identidad institucional a normas disciplinarias."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión conceptual posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 3 preguntas sobre cultura escolar, identidad institucional y PEI."
+    "fuente_autorizada": [
+      "Proyecto Educativo Institucional",
+      "Ley 115 de 1994",
+      "Manual de Convivencia",
+      "Cultura institucional"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "opcion_A": "Es incorrecta porque el manual no agota la cultura escolar.",
+    "opcion_B": "Es incorrecta porque justamente esos elementos conforman la cultura escolar.",
+    "opcion_D": "Es incorrecta porque el rendimiento académico no define por sí solo la cultura institucional.",
+    "distractores": {
+      "A": "Es incorrecta porque el manual no agota la cultura escolar.",
+      "B": "Es incorrecta porque justamente esos elementos conforman la cultura escolar.",
+      "D": "Es incorrecta porque el rendimiento académico no define por sí solo la cultura institucional."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem reconoce la importancia del Manual de Convivencia sin reducir la identidad institucional a normas disciplinarias."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión conceptual posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 3 preguntas sobre cultura escolar, identidad institucional y PEI."
+  }
 }

@@ -1,96 +1,101 @@
 {
-    "id_item": "NFL_B04_I01",
-    "archivo_sugerido": "NFL_B04_I01_educacion_basica_primero_a_noveno_articulo_19.json",
-    "bloque": {
-        "codigo_bloque": "NFL_B04",
-        "nombre": "Estructura del sistema educativo: educación básica, secundaria y media",
-        "estado_en_lista": "Bloque 4 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 1 de 4"
+  "id_item": "NFL_B04_I01",
+  "archivo_sugerido": "NFL_B04_I01_educacion_basica_primero_a_noveno_articulo_19.json",
+  "bloque": {
+    "codigo_bloque": "NFL_B04",
+    "nombre": "Estructura del sistema educativo: educación básica, secundaria y media",
+    "estado_en_lista": "Bloque 4 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 1 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante identifica el término normativo correcto para agrupar los grados primero a noveno según la Ley 115.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, gestión académica, coordinación, rectoría o normatividad educativa.",
+    "blueprint": {
+      "problematica_principal": "Confusión entre educación básica, básica primaria, básica secundaria y educación media.",
+      "fuente_autorizada": [
+        "Ley 115 de 1994",
+        "Artículo 19 Ley 115",
+        "Estructura del sistema educativo colombiano",
+        "Educación formal"
+      ],
+      "componente_modulo": "Estructura del Sistema Educativo",
+      "competencia": "Diferenciación de niveles y ciclos educativos",
+      "afirmacion": "La educación básica obligatoria comprende nueve grados, correspondientes a primaria y secundaria.",
+      "evidencia_observable": "Reconoce que el término normativo para primero a noveno es educación básica.",
+      "tipo_de_evidencia": "Reconocimiento normativo",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "B"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante identifica el término normativo correcto para agrupar los grados primero a noveno según la Ley 115.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, gestión académica, coordinación, rectoría o normatividad educativa.",
-        "blueprint": {
-            "problematica_principal": "Confusión entre educación básica, básica primaria, básica secundaria y educación media.",
-            "fuente_autorizada": [
-                "Ley 115 de 1994",
-                "Artículo 19 Ley 115",
-                "Estructura del sistema educativo colombiano",
-                "Educación formal"
-            ],
-            "componente_modulo": "Estructura del Sistema Educativo",
-            "competencia": "Diferenciación de niveles y ciclos educativos",
-            "afirmacion": "La educación básica obligatoria comprende nueve grados, correspondientes a primaria y secundaria.",
-            "evidencia_observable": "Reconoce que el término normativo para primero a noveno es educación básica.",
-            "tipo_de_evidencia": "Reconocimiento normativo",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "B"
-        },
-        "claim": "El evaluado comprende la estructura legal básica del sistema educativo colombiano.",
-        "evidencia_observable": "Selecciona educación básica como denominación normativa de los grados primero a noveno.",
-        "tarea_cognitiva": "Reconocer una categoría normativa de nivel educativo.",
-        "tipo_de_pregunta": "Pregunta normativa de reconocimiento",
-        "dificultad_esperada": "Baja-Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Confundir bachillerato con educación básica completa",
-                "revision": "Los distractores separan educación básica y media."
-            },
-            {
-                "riesgo": "Usar lenguaje coloquial en lugar de normativo",
-                "revision": "La clave usa el término de la Ley 115."
-            },
-            {
-                "riesgo": "Ambigüedad entre secundaria y básica secundaria",
-                "revision": "El enunciado especifica grados primero a noveno."
-            }
-        ]
+    "claim": "El evaluado comprende la estructura legal básica del sistema educativo colombiano.",
+    "evidencia_observable": "Selecciona educación básica como denominación normativa de los grados primero a noveno.",
+    "tarea_cognitiva": "Reconocer una categoría normativa de nivel educativo.",
+    "tipo_de_pregunta": "Pregunta normativa de reconocimiento",
+    "dificultad_esperada": "Baja-Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Confundir bachillerato con educación básica completa",
+        "revision": "Los distractores separan educación básica y media."
+      },
+      {
+        "riesgo": "Usar lenguaje coloquial en lugar de normativo",
+        "revision": "La clave usa el término de la Ley 115."
+      },
+      {
+        "riesgo": "Ambigüedad entre secundaria y básica secundaria",
+        "revision": "El enunciado especifica grados primero a noveno."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Una institución necesita diligenciar un informe normativo y debe nombrar correctamente el conjunto de grados que va desde primero de primaria hasta noveno. Según la Ley General de Educación, ese conjunto incluye primaria y secundaria y comprende nueve grados.\n\n¿Cuál es el término normativo correcto?",
+    "opciones": {
+      "A": "Educación media.",
+      "B": "Educación básica.",
+      "C": "Educación superior.",
+      "D": "Educación preescolar."
     },
-    "item": {
-        "enunciado": "Una institución necesita diligenciar un informe normativo y debe nombrar correctamente el conjunto de grados que va desde primero de primaria hasta noveno. Según la Ley General de Educación, ese conjunto incluye primaria y secundaria y comprende nueve grados.\n\n¿Cuál es el término normativo correcto?",
-        "opciones": {
-            "A": "Educación media.",
-            "B": "Educación básica.",
-            "C": "Educación superior.",
-            "D": "Educación preescolar."
-        },
-        "respuesta_correcta": "B"
+    "respuesta_correcta": "B"
+  },
+  "ficha_tecnica": {
+    "componente": "Estructura del Sistema Educativo",
+    "competencia": "Diferenciación de niveles y ciclos educativos",
+    "claim_evaluado": "El evaluado comprende la estructura legal básica del sistema educativo colombiano.",
+    "evidencia": "Selecciona educación básica como denominación normativa de los grados primero a noveno.",
+    "proceso_cognitivo": "Reconocimiento normativo",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Baja-Media",
+    "respuesta_correcta": "B",
+    "distractores": {
+      "A": "La educación media corresponde a décimo y undécimo.",
+      "C": "La educación superior no corresponde a la educación escolar básica.",
+      "D": "El preescolar es un nivel diferente previo a la básica."
     },
-    "ficha_tecnica": {
-        "componente": "Estructura del Sistema Educativo",
-        "competencia": "Diferenciación de niveles y ciclos educativos",
-        "claim_evaluado": "El evaluado comprende la estructura legal básica del sistema educativo colombiano.",
-        "evidencia": "Selecciona educación básica como denominación normativa de los grados primero a noveno.",
-        "proceso_cognitivo": "Reconocimiento normativo",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Baja-Media",
-        "respuesta_correcta": "B",
-        "distractores": {
-            "A": "La educación media corresponde a décimo y undécimo.",
-            "C": "La educación superior no corresponde a la educación escolar básica.",
-            "D": "El preescolar es un nivel diferente previo a la básica."
-        },
-        "fuente_autorizada": [
-            "Ley 115 de 1994",
-            "Artículo 19 Ley 115",
-            "Educación formal"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque la educación básica obligatoria comprende nueve grados: primaria y secundaria.",
-        "opcion_A": "Es incorrecta porque la educación media comprende los grados décimo y undécimo.",
-        "opcion_C": "Es incorrecta porque corresponde a estudios posteriores a la educación media.",
-        "opcion_D": "Es incorrecta porque el preescolar antecede a la educación básica."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evalúa una denominación normativa básica sin sesgos contextuales."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre estructura del sistema educativo."
+    "fuente_autorizada": [
+      "Ley 115 de 1994",
+      "Artículo 19 Ley 115",
+      "Educación formal"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "opcion_A": "Es incorrecta porque la educación media comprende los grados décimo y undécimo.",
+    "opcion_C": "Es incorrecta porque corresponde a estudios posteriores a la educación media.",
+    "opcion_D": "Es incorrecta porque el preescolar antecede a la educación básica.",
+    "distractores": {
+      "A": "Es incorrecta porque la educación media comprende los grados décimo y undécimo.",
+      "C": "Es incorrecta porque corresponde a estudios posteriores a la educación media.",
+      "D": "Es incorrecta porque el preescolar antecede a la educación básica."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evalúa una denominación normativa básica sin sesgos contextuales."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre estructura del sistema educativo."
+  }
 }

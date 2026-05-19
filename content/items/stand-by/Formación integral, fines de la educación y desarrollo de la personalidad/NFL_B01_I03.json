@@ -1,96 +1,101 @@
 {
-    "id_item": "NFL_B01_I03",
-    "archivo_sugerido": "NFL_B01_I03_autonomia_responsabilidad_etica_solidaridad.json",
-    "bloque": {
-        "codigo_bloque": "NFL_B01",
-        "nombre": "Formación integral, fines de la educación y desarrollo de la personalidad",
-        "estado_en_lista": "Bloque 1 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 3 de 5"
+  "id_item": "NFL_B01_I03",
+  "archivo_sugerido": "NFL_B01_I03_autonomia_responsabilidad_etica_solidaridad.json",
+  "bloque": {
+    "codigo_bloque": "NFL_B01",
+    "nombre": "Formación integral, fines de la educación y desarrollo de la personalidad",
+    "estado_en_lista": "Bloque 1 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 3 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante identifica desarrollos transversales exigidos por la ley como autonomía, responsabilidad, ética, solidaridad, participación y convivencia.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, pedagogía, currículo, orientación escolar o gestión académica.",
+    "blueprint": {
+      "problematica_principal": "Considerar que los desarrollos transversales son accesorios y no propósitos fundamentales de la escuela.",
+      "fuente_autorizada": [
+        "Ley 115 de 1994",
+        "Artículo 5 Ley 115",
+        "Artículo 92 Ley 115",
+        "Proyecto Educativo Institucional"
+      ],
+      "componente_modulo": "Objetivos de la educación",
+      "competencia": "Identificación de desarrollos transversales",
+      "afirmacion": "La escuela debe promover autonomía, responsabilidad, ética, solidaridad, comunicación, participación y solución de conflictos como parte de la formación integral.",
+      "evidencia_observable": "Reconoce que estos desarrollos son transversales al currículo y no actividades marginales.",
+      "tipo_de_evidencia": "Comprensión pedagógica normativa",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "D"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante identifica desarrollos transversales exigidos por la ley como autonomía, responsabilidad, ética, solidaridad, participación y convivencia.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, pedagogía, currículo, orientación escolar o gestión académica.",
-        "blueprint": {
-            "problematica_principal": "Considerar que los desarrollos transversales son accesorios y no propósitos fundamentales de la escuela.",
-            "fuente_autorizada": [
-                "Ley 115 de 1994",
-                "Artículo 5 Ley 115",
-                "Artículo 92 Ley 115",
-                "Proyecto Educativo Institucional"
-            ],
-            "componente_modulo": "Objetivos de la educación",
-            "competencia": "Identificación de desarrollos transversales",
-            "afirmacion": "La escuela debe promover autonomía, responsabilidad, ética, solidaridad, comunicación, participación y solución de conflictos como parte de la formación integral.",
-            "evidencia_observable": "Reconoce que estos desarrollos son transversales al currículo y no actividades marginales.",
-            "tipo_de_evidencia": "Comprensión pedagógica normativa",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "D"
-        },
-        "claim": "El evaluado comprende que la educación busca desarrollar capacidades humanas y ciudadanas más allá del conocimiento disciplinar.",
-        "evidencia_observable": "Selecciona el conjunto de desarrollos transversales coherente con la Ley 115.",
-        "tarea_cognitiva": "Reconocer finalidades transversales de la educación escolar.",
-        "tipo_de_pregunta": "Pregunta de reconocimiento conceptual",
-        "dificultad_esperada": "Baja-Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Tratar la ética y ciudadanía como contenidos aislados",
-                "revision": "La clave los ubica como desarrollos transversales."
-            },
-            {
-                "riesgo": "Oponer formación humana y formación académica",
-                "revision": "La respuesta correcta integra ambas dimensiones."
-            },
-            {
-                "riesgo": "Reducir la solidaridad a una campaña ocasional",
-                "revision": "El ítem la vincula con propósito formativo permanente."
-            }
-        ]
+    "claim": "El evaluado comprende que la educación busca desarrollar capacidades humanas y ciudadanas más allá del conocimiento disciplinar.",
+    "evidencia_observable": "Selecciona el conjunto de desarrollos transversales coherente con la Ley 115.",
+    "tarea_cognitiva": "Reconocer finalidades transversales de la educación escolar.",
+    "tipo_de_pregunta": "Pregunta de reconocimiento conceptual",
+    "dificultad_esperada": "Baja-Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Tratar la ética y ciudadanía como contenidos aislados",
+        "revision": "La clave los ubica como desarrollos transversales."
+      },
+      {
+        "riesgo": "Oponer formación humana y formación académica",
+        "revision": "La respuesta correcta integra ambas dimensiones."
+      },
+      {
+        "riesgo": "Reducir la solidaridad a una campaña ocasional",
+        "revision": "El ítem la vincula con propósito formativo permanente."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un colegio diseña su plan de mejoramiento y quiere incluir propósitos que vayan más allá del conocimiento disciplinar. El equipo pregunta cuáles desarrollos transversales exige la ley como parte de la formación escolar.\n\n¿Cuál conjunto responde mejor a ese propósito fundamental de la escuela?",
+    "opciones": {
+      "A": "Solo memoria de definiciones, repetición de fórmulas y copia de contenidos.",
+      "B": "Únicamente disciplina externa, silencio absoluto y obediencia sin criterio.",
+      "C": "Solo preparación para pruebas estandarizadas.",
+      "D": "Autonomía, responsabilidad, ética, solidaridad, comunicación, participación, trabajo en equipo y solución de conflictos."
     },
-    "item": {
-        "enunciado": "Un colegio diseña su plan de mejoramiento y quiere incluir propósitos que vayan más allá del conocimiento disciplinar. El equipo pregunta cuáles desarrollos transversales exige la ley como parte de la formación escolar.\n\n¿Cuál conjunto responde mejor a ese propósito fundamental de la escuela?",
-        "opciones": {
-            "A": "Solo memoria de definiciones, repetición de fórmulas y copia de contenidos.",
-            "B": "Únicamente disciplina externa, silencio absoluto y obediencia sin criterio.",
-            "C": "Solo preparación para pruebas estandarizadas.",
-            "D": "Autonomía, responsabilidad, ética, solidaridad, comunicación, participación, trabajo en equipo y solución de conflictos."
-        },
-        "respuesta_correcta": "D"
+    "respuesta_correcta": "D"
+  },
+  "ficha_tecnica": {
+    "componente": "Objetivos de la educación",
+    "competencia": "Identificación de desarrollos transversales",
+    "claim_evaluado": "El evaluado comprende que la educación busca desarrollar capacidades humanas y ciudadanas más allá del conocimiento disciplinar.",
+    "evidencia": "Selecciona el conjunto de desarrollos transversales coherente con la Ley 115.",
+    "proceso_cognitivo": "Reconocimiento conceptual normativo",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Baja-Media",
+    "respuesta_correcta": "D",
+    "distractores": {
+      "A": "Reduce la educación a memoria y repetición.",
+      "B": "Confunde formación ética con obediencia sin criterio.",
+      "C": "Limita la escuela a medición externa."
     },
-    "ficha_tecnica": {
-        "componente": "Objetivos de la educación",
-        "competencia": "Identificación de desarrollos transversales",
-        "claim_evaluado": "El evaluado comprende que la educación busca desarrollar capacidades humanas y ciudadanas más allá del conocimiento disciplinar.",
-        "evidencia": "Selecciona el conjunto de desarrollos transversales coherente con la Ley 115.",
-        "proceso_cognitivo": "Reconocimiento conceptual normativo",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Baja-Media",
-        "respuesta_correcta": "D",
-        "distractores": {
-            "A": "Reduce la educación a memoria y repetición.",
-            "B": "Confunde formación ética con obediencia sin criterio.",
-            "C": "Limita la escuela a medición externa."
-        },
-        "fuente_autorizada": [
-            "Ley 115 de 1994",
-            "Artículo 5 Ley 115",
-            "Artículo 92 Ley 115"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque integra desarrollos humanos y ciudadanos exigidos por la formación integral.",
-        "opcion_A": "Es incorrecta porque no desarrolla autonomía ni ciudadanía.",
-        "opcion_B": "Es incorrecta porque la formación ética exige criterio, no solo obediencia.",
-        "opcion_C": "Es incorrecta porque las pruebas no agotan los fines escolares."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem promueve una visión equilibrada entre aprendizaje académico y desarrollo humano."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre formación integral, fines de la educación y desarrollo de la personalidad."
+    "fuente_autorizada": [
+      "Ley 115 de 1994",
+      "Artículo 5 Ley 115",
+      "Artículo 92 Ley 115"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "opcion_A": "Es incorrecta porque no desarrolla autonomía ni ciudadanía.",
+    "opcion_B": "Es incorrecta porque la formación ética exige criterio, no solo obediencia.",
+    "opcion_C": "Es incorrecta porque las pruebas no agotan los fines escolares.",
+    "distractores": {
+      "A": "Es incorrecta porque no desarrolla autonomía ni ciudadanía.",
+      "B": "Es incorrecta porque la formación ética exige criterio, no solo obediencia.",
+      "C": "Es incorrecta porque las pruebas no agotan los fines escolares."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem promueve una visión equilibrada entre aprendizaje académico y desarrollo humano."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre formación integral, fines de la educación y desarrollo de la personalidad."
+  }
 }

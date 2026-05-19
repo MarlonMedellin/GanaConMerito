@@ -1,99 +1,104 @@
 {
-    "id_item": "DIL_B04_I05",
-    "archivo_sugerido": "DIL_B04_I05_medida_disciplinaria_pedagogica_no_degradante.json",
-    "bloque": {
-        "codigo_bloque": "DIL_B04",
-        "nombre": "Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes",
-        "estado_en_lista": "Bloque 4 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 5 de 5"
+  "id_item": "DIL_B04_I05",
+  "archivo_sugerido": "DIL_B04_I05_medida_disciplinaria_pedagogica_no_degradante.json",
+  "bloque": {
+    "codigo_bloque": "DIL_B04",
+    "nombre": "Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes",
+    "estado_en_lista": "Bloque 4 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 5 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante distingue una medida disciplinaria pedagógica, proporcional y restaurativa de una medida degradante o humillante.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, convivencia, coordinación, orientación escolar o manuales de convivencia.",
+    "blueprint": {
+      "problematica_principal": "Confusión entre disciplina escolar y prácticas de castigo humillante.",
+      "fuente_autorizada": [
+        "Ley 1098 de 2006",
+        "Ley 1620 de 2013",
+        "Decreto 1965 de 2013",
+        "Manual de convivencia",
+        "Justicia restaurativa escolar"
+      ],
+      "componente_modulo": "Disciplina pedagógica y dignidad",
+      "competencia": "Aplicación de medidas formativas no degradantes",
+      "afirmacion": "Las medidas disciplinarias deben ser pedagógicas, proporcionales, restaurativas y respetuosas de derechos.",
+      "evidencia_observable": "Selecciona una medida que repara, reflexiona y forma sin humillar.",
+      "tipo_de_evidencia": "Juicio convivencial aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante distingue una medida disciplinaria pedagógica, proporcional y restaurativa de una medida degradante o humillante.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, convivencia, coordinación, orientación escolar o manuales de convivencia.",
-        "blueprint": {
-            "problematica_principal": "Confusión entre disciplina escolar y prácticas de castigo humillante.",
-            "fuente_autorizada": [
-                "Ley 1098 de 2006",
-                "Ley 1620 de 2013",
-                "Decreto 1965 de 2013",
-                "Manual de convivencia",
-                "Justicia restaurativa escolar"
-            ],
-            "componente_modulo": "Disciplina pedagógica y dignidad",
-            "competencia": "Aplicación de medidas formativas no degradantes",
-            "afirmacion": "Las medidas disciplinarias deben ser pedagógicas, proporcionales, restaurativas y respetuosas de derechos.",
-            "evidencia_observable": "Selecciona una medida que repara, reflexiona y forma sin humillar.",
-            "tipo_de_evidencia": "Juicio convivencial aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que corregir una conducta escolar no autoriza vulnerar dignidad, integridad o derechos del estudiante.",
-        "evidencia_observable": "Elige una medida de convivencia compatible con enfoque formativo y restaurativo.",
-        "tarea_cognitiva": "Comparar respuestas disciplinarias y seleccionar la no degradante.",
-        "tipo_de_pregunta": "Caso situacional de convivencia",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Confundir enfoque restaurativo con impunidad",
-                "revision": "La clave mantiene consecuencia pedagógica y reparación."
-            },
-            {
-                "riesgo": "Normalizar humillación",
-                "revision": "La respuesta correcta la rechaza."
-            },
-            {
-                "riesgo": "Aplicar medidas arbitrarias",
-                "revision": "El ítem exige proporcionalidad y Manual de Convivencia."
-            }
-        ]
+    "claim": "El evaluado comprende que corregir una conducta escolar no autoriza vulnerar dignidad, integridad o derechos del estudiante.",
+    "evidencia_observable": "Elige una medida de convivencia compatible con enfoque formativo y restaurativo.",
+    "tarea_cognitiva": "Comparar respuestas disciplinarias y seleccionar la no degradante.",
+    "tipo_de_pregunta": "Caso situacional de convivencia",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Confundir enfoque restaurativo con impunidad",
+        "revision": "La clave mantiene consecuencia pedagógica y reparación."
+      },
+      {
+        "riesgo": "Normalizar humillación",
+        "revision": "La respuesta correcta la rechaza."
+      },
+      {
+        "riesgo": "Aplicar medidas arbitrarias",
+        "revision": "El ítem exige proporcionalidad y Manual de Convivencia."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un estudiante comete una falta de convivencia. El docente quiere aplicar una medida que corrija la conducta sin humillar, agredir ni vulnerar derechos.\n\n¿Cuál medida es más coherente con un enfoque pedagógico y restaurativo?",
+    "opciones": {
+      "A": "Orientar una reflexión guiada, reparar el daño causado cuando proceda, acordar compromisos y aplicar una consecuencia proporcional prevista en el Manual de Convivencia.",
+      "B": "Hacer que el estudiante pase al frente para ser ridiculizado por sus compañeros.",
+      "C": "Aplicar un castigo físico leve para que aprenda rápidamente.",
+      "D": "Publicar su falta en redes sociales institucionales."
     },
-    "item": {
-        "enunciado": "Un estudiante comete una falta de convivencia. El docente quiere aplicar una medida que corrija la conducta sin humillar, agredir ni vulnerar derechos.\n\n¿Cuál medida es más coherente con un enfoque pedagógico y restaurativo?",
-        "opciones": {
-            "A": "Orientar una reflexión guiada, reparar el daño causado cuando proceda, acordar compromisos y aplicar una consecuencia proporcional prevista en el Manual de Convivencia.",
-            "B": "Hacer que el estudiante pase al frente para ser ridiculizado por sus compañeros.",
-            "C": "Aplicar un castigo físico leve para que aprenda rápidamente.",
-            "D": "Publicar su falta en redes sociales institucionales."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Disciplina pedagógica y dignidad",
+    "competencia": "Aplicación de medidas formativas no degradantes",
+    "claim_evaluado": "El evaluado comprende que corregir una conducta escolar no autoriza vulnerar dignidad, integridad o derechos del estudiante.",
+    "evidencia": "Elige una medida de convivencia compatible con enfoque formativo y restaurativo.",
+    "proceso_cognitivo": "Juicio convivencial aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Constituye humillación pública.",
+      "C": "Implica castigo físico y vulneración de derechos.",
+      "D": "Expone indebidamente al estudiante y vulnera su dignidad."
     },
-    "ficha_tecnica": {
-        "componente": "Disciplina pedagógica y dignidad",
-        "competencia": "Aplicación de medidas formativas no degradantes",
-        "claim_evaluado": "El evaluado comprende que corregir una conducta escolar no autoriza vulnerar dignidad, integridad o derechos del estudiante.",
-        "evidencia": "Elige una medida de convivencia compatible con enfoque formativo y restaurativo.",
-        "proceso_cognitivo": "Juicio convivencial aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Constituye humillación pública.",
-            "C": "Implica castigo físico y vulneración de derechos.",
-            "D": "Expone indebidamente al estudiante y vulnera su dignidad."
-        },
-        "fuente_autorizada": [
-            "Ley 1098 de 2006",
-            "Ley 1620 de 2013",
-            "Decreto 1965 de 2013",
-            "Manual de convivencia",
-            "Justicia restaurativa escolar"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque combina consecuencia pedagógica, reparación, compromiso, proporcionalidad y respeto por derechos.",
-        "opcion_B": "Es incorrecta porque humilla al estudiante.",
-        "opcion_C": "Es incorrecta porque el castigo físico está prohibido.",
-        "opcion_D": "Es incorrecta porque expone públicamente y vulnera dignidad."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem equilibra convivencia, responsabilidad y protección de la dignidad del estudiante."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión del Manual de Convivencia institucional aplicable.",
-        "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre responsabilidad legal escolar, riesgos y prohibición de tratos degradantes."
+    "fuente_autorizada": [
+      "Ley 1098 de 2006",
+      "Ley 1620 de 2013",
+      "Decreto 1965 de 2013",
+      "Manual de convivencia",
+      "Justicia restaurativa escolar"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque humilla al estudiante.",
+    "opcion_C": "Es incorrecta porque el castigo físico está prohibido.",
+    "opcion_D": "Es incorrecta porque expone públicamente y vulnera dignidad.",
+    "distractores": {
+      "B": "Es incorrecta porque humilla al estudiante.",
+      "C": "Es incorrecta porque el castigo físico está prohibido.",
+      "D": "Es incorrecta porque expone públicamente y vulnera dignidad."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem equilibra convivencia, responsabilidad y protección de la dignidad del estudiante."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión del Manual de Convivencia institucional aplicable.",
+    "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre responsabilidad legal escolar, riesgos y prohibición de tratos degradantes."
+  }
 }

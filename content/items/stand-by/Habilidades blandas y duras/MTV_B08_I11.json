@@ -1,40 +1,40 @@
 {
-    "id_item": "MTV_B08_I11",
-    "archivo_sugerido": "MTV_B08_I11_saber_ser_servidor_publico_docente.json",
-    "proposito_de_uso": "Evaluar si el aspirante asocia el Saber Ser con ética, actitud de servicio, responsabilidad y trato profesional.",
-    "blueprint": {
-        "componente_modulo": "Saber Ser del servidor público docente",
-        "competencia": "Comprensión actitudinal y ética del desempeño",
-        "afirmacion": "El Saber Ser se expresa en ética, responsabilidad, respeto, actitud de servicio, autocontrol, comunicación y disposición hacia la comunidad.",
-        "evidencia_observable": "Selecciona una conducta que evidencia Saber Ser en contexto escolar.",
-        "tipo_de_evidencia": "Juicio comportamental aplicado",
-        "dificultad_esperada": "Media-Alta",
-        "clave": "A"
+  "id_item": "MTV_B08_I11",
+  "archivo_sugerido": "MTV_B08_I11_saber_ser_servidor_publico_docente.json",
+  "proposito_de_uso": "Evaluar si el aspirante asocia el Saber Ser con ética, actitud de servicio, responsabilidad y trato profesional.",
+  "blueprint": {
+    "componente_modulo": "Saber Ser del servidor público docente",
+    "competencia": "Comprensión actitudinal y ética del desempeño",
+    "afirmacion": "El Saber Ser se expresa en ética, responsabilidad, respeto, actitud de servicio, autocontrol, comunicación y disposición hacia la comunidad.",
+    "evidencia_observable": "Selecciona una conducta que evidencia Saber Ser en contexto escolar.",
+    "tipo_de_evidencia": "Juicio comportamental aplicado",
+    "dificultad_esperada": "Media-Alta",
+    "clave": "A"
+  },
+  "item": {
+    "enunciado": "Un docente servidor público atiende con respeto a una familia inconforme, escucha sin burlarse, evita comentarios despectivos, orienta la ruta institucional y mantiene una actitud de servicio.\n\n¿A qué componente de la competencia corresponde principalmente esta actuación?",
+    "opciones": {
+      "A": "Saber Ser.",
+      "B": "Saber exclusivamente memorístico.",
+      "C": "Saber Hacer únicamente técnico-operativo.",
+      "D": "Conocimiento disciplinar abstracto."
     },
-    "item": {
-        "enunciado": "Un docente servidor público atiende con respeto a una familia inconforme, escucha sin burlarse, evita comentarios despectivos, orienta la ruta institucional y mantiene una actitud de servicio.\n\n¿A qué componente de la competencia corresponde principalmente esta actuación?",
-        "opciones": {
-            "A": "Saber Ser.",
-            "B": "Saber exclusivamente memorístico.",
-            "C": "Saber Hacer únicamente técnico-operativo.",
-            "D": "Conocimiento disciplinar abstracto."
-        },
-        "respuesta_correcta": "A"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque la situación evidencia ética, actitud de servicio, respeto y manejo interpersonal.",
-        "distractores": {
-            "B": "La memoria no explica la actitud profesional descrita.",
-            "C": "Aunque hay acción, el énfasis está en la disposición ética y relacional.",
-            "D": "El dominio disciplinar no es el foco del caso."
-        }
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado",
-        "argumento": "El ítem evalúa conducta profesional sin depender de juicios subjetivos sobre la personalidad."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Muy pertinente para competencias comportamentales del servidor público."
+    "respuesta_correcta": "A"
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "distractores": {
+      "B": "La memoria no explica la actitud profesional descrita.",
+      "C": "Aunque hay acción, el énfasis está en la disposición ética y relacional.",
+      "D": "El dominio disciplinar no es el foco del caso."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado",
+    "argumento": "El ítem evalúa conducta profesional sin depender de juicios subjetivos sobre la personalidad."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Muy pertinente para competencias comportamentales del servidor público."
+  }
 }

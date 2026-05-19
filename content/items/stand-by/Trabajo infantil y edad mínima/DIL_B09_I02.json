@@ -1,99 +1,104 @@
 {
-    "id_item": "DIL_B09_I02",
-    "archivo_sugerido": "DIL_B09_I02_trabajo_adolescente_autorizacion_proteccion_no_explotacion.json",
-    "bloque": {
-        "codigo_bloque": "DIL_B09",
-        "nombre": "Trabajo infantil y edad mínima",
-        "estado_en_lista": "Bloque 9 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 2 de 2"
+  "id_item": "DIL_B09_I02",
+  "archivo_sugerido": "DIL_B09_I02_trabajo_adolescente_autorizacion_proteccion_no_explotacion.json",
+  "bloque": {
+    "codigo_bloque": "DIL_B09",
+    "nombre": "Trabajo infantil y edad mínima",
+    "estado_en_lista": "Bloque 9 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 2 de 2"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante distingue el trabajo adolescente autorizado y protegido de la explotación económica o trabajo infantil prohibido.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación, protección integral, convivencia escolar, trabajo infantil o corresponsabilidad institucional.",
+    "blueprint": {
+      "problematica_principal": "Confusión entre trabajo adolescente legalmente autorizado y explotación económica de niños, niñas o adolescentes.",
+      "fuente_autorizada": [
+        "Ley 1098 de 2006",
+        "Ministerio del Trabajo",
+        "Protección contra explotación económica",
+        "Sistema Nacional de Bienestar Familiar",
+        "Convenios internacionales sobre trabajo infantil"
+      ],
+      "componente_modulo": "Trabajo adolescente autorizado vs. explotación",
+      "competencia": "Diferenciación entre actividad laboral protegida y vulneración de derechos",
+      "afirmacion": "El trabajo adolescente requiere edad mínima, autorización, condiciones seguras, compatibilidad con educación y protección contra explotación.",
+      "evidencia_observable": "Reconoce que no basta con que exista necesidad económica o acuerdo familiar para permitir trabajo riesgoso o sin autorización.",
+      "tipo_de_evidencia": "Juicio normativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante distingue el trabajo adolescente autorizado y protegido de la explotación económica o trabajo infantil prohibido.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación, protección integral, convivencia escolar, trabajo infantil o corresponsabilidad institucional.",
-        "blueprint": {
-            "problematica_principal": "Confusión entre trabajo adolescente legalmente autorizado y explotación económica de niños, niñas o adolescentes.",
-            "fuente_autorizada": [
-                "Ley 1098 de 2006",
-                "Ministerio del Trabajo",
-                "Protección contra explotación económica",
-                "Sistema Nacional de Bienestar Familiar",
-                "Convenios internacionales sobre trabajo infantil"
-            ],
-            "componente_modulo": "Trabajo adolescente autorizado vs. explotación",
-            "competencia": "Diferenciación entre actividad laboral protegida y vulneración de derechos",
-            "afirmacion": "El trabajo adolescente requiere edad mínima, autorización, condiciones seguras, compatibilidad con educación y protección contra explotación.",
-            "evidencia_observable": "Reconoce que no basta con que exista necesidad económica o acuerdo familiar para permitir trabajo riesgoso o sin autorización.",
-            "tipo_de_evidencia": "Juicio normativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que la regulación del trabajo adolescente busca proteger derechos, permanencia escolar, salud, desarrollo integral y dignidad.",
-        "evidencia_observable": "Selecciona una actuación institucional que orienta a la familia y activa protección si hay explotación o vulneración.",
-        "tarea_cognitiva": "Analizar una situación de posible trabajo infantil y elegir una respuesta protectora.",
-        "tipo_de_pregunta": "Caso situacional normativo",
-        "dificultad_esperada": "Media-Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Culpabilizar a familias en pobreza",
-                "revision": "La clave orienta y protege sin juicio moral."
-            },
-            {
-                "riesgo": "Normalizar explotación por necesidad económica",
-                "revision": "La opción correcta exige autorización y condiciones seguras."
-            },
-            {
-                "riesgo": "Prohibir toda actividad formativa o vocacional",
-                "revision": "El ítem distingue trabajo autorizado de explotación."
-            }
-        ]
+    "claim": "El evaluado comprende que la regulación del trabajo adolescente busca proteger derechos, permanencia escolar, salud, desarrollo integral y dignidad.",
+    "evidencia_observable": "Selecciona una actuación institucional que orienta a la familia y activa protección si hay explotación o vulneración.",
+    "tarea_cognitiva": "Analizar una situación de posible trabajo infantil y elegir una respuesta protectora.",
+    "tipo_de_pregunta": "Caso situacional normativo",
+    "dificultad_esperada": "Media-Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Culpabilizar a familias en pobreza",
+        "revision": "La clave orienta y protege sin juicio moral."
+      },
+      {
+        "riesgo": "Normalizar explotación por necesidad económica",
+        "revision": "La opción correcta exige autorización y condiciones seguras."
+      },
+      {
+        "riesgo": "Prohibir toda actividad formativa o vocacional",
+        "revision": "El ítem distingue trabajo autorizado de explotación."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un estudiante de 15 años informa que quiere trabajar para apoyar a su familia. La institución sabe que la situación económica es difícil, pero también debe verificar que no haya explotación, riesgo para su salud ni abandono escolar.\n\n¿Cuál actuación es más adecuada desde la protección integral?",
+    "opciones": {
+      "A": "Orientar a la familia sobre la autorización legal correspondiente, verificar que la actividad no sea peligrosa ni afecte la escolaridad, y activar rutas de protección si hay explotación o vulneración de derechos.",
+      "B": "Permitir cualquier trabajo porque la necesidad económica elimina todos los requisitos legales.",
+      "C": "Prohibir toda actividad laboral adolescente aunque exista autorización legal y condiciones protegidas.",
+      "D": "Expulsar al estudiante porque trabajar siempre demuestra falta de compromiso escolar."
     },
-    "item": {
-        "enunciado": "Un estudiante de 15 años informa que quiere trabajar para apoyar a su familia. La institución sabe que la situación económica es difícil, pero también debe verificar que no haya explotación, riesgo para su salud ni abandono escolar.\n\n¿Cuál actuación es más adecuada desde la protección integral?",
-        "opciones": {
-            "A": "Orientar a la familia sobre la autorización legal correspondiente, verificar que la actividad no sea peligrosa ni afecte la escolaridad, y activar rutas de protección si hay explotación o vulneración de derechos.",
-            "B": "Permitir cualquier trabajo porque la necesidad económica elimina todos los requisitos legales.",
-            "C": "Prohibir toda actividad laboral adolescente aunque exista autorización legal y condiciones protegidas.",
-            "D": "Expulsar al estudiante porque trabajar siempre demuestra falta de compromiso escolar."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Trabajo adolescente autorizado vs. explotación",
+    "competencia": "Diferenciación entre actividad laboral protegida y vulneración de derechos",
+    "claim_evaluado": "El evaluado comprende que la regulación del trabajo adolescente busca proteger derechos, permanencia escolar, salud, desarrollo integral y dignidad.",
+    "evidencia": "Selecciona una actuación institucional que orienta a la familia y activa protección si hay explotación o vulneración.",
+    "proceso_cognitivo": "Juicio normativo aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media-Alta",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Normaliza trabajo sin autorización ni garantías.",
+      "C": "Desconoce que puede existir trabajo adolescente autorizado desde la edad legal.",
+      "D": "Estigmatiza al estudiante y desconoce el enfoque de protección integral."
     },
-    "ficha_tecnica": {
-        "componente": "Trabajo adolescente autorizado vs. explotación",
-        "competencia": "Diferenciación entre actividad laboral protegida y vulneración de derechos",
-        "claim_evaluado": "El evaluado comprende que la regulación del trabajo adolescente busca proteger derechos, permanencia escolar, salud, desarrollo integral y dignidad.",
-        "evidencia": "Selecciona una actuación institucional que orienta a la familia y activa protección si hay explotación o vulneración.",
-        "proceso_cognitivo": "Juicio normativo aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media-Alta",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Normaliza trabajo sin autorización ni garantías.",
-            "C": "Desconoce que puede existir trabajo adolescente autorizado desde la edad legal.",
-            "D": "Estigmatiza al estudiante y desconoce el enfoque de protección integral."
-        },
-        "fuente_autorizada": [
-            "Ley 1098 de 2006",
-            "Ministerio del Trabajo",
-            "Protección contra explotación económica",
-            "Sistema Nacional de Bienestar Familiar",
-            "Convenios internacionales sobre trabajo infantil"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque combina orientación legal, protección de la escolaridad, revisión de riesgos y activación de rutas si hay explotación.",
-        "opcion_B": "Es incorrecta porque la necesidad económica no elimina los requisitos de protección.",
-        "opcion_C": "Es incorrecta porque desconoce la posibilidad de trabajo adolescente autorizado.",
-        "opcion_D": "Es incorrecta porque sanciona y estigmatiza al estudiante en vez de protegerlo."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita culpabilizar a la familia por pobreza y diferencia apoyo laboral protegido de explotación o vulneración."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Validar con normativa laboral vigente y protocolos de protección antes de aplicación definitiva.",
-        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 2 preguntas sobre trabajo infantil y edad mínima."
+    "fuente_autorizada": [
+      "Ley 1098 de 2006",
+      "Ministerio del Trabajo",
+      "Protección contra explotación económica",
+      "Sistema Nacional de Bienestar Familiar",
+      "Convenios internacionales sobre trabajo infantil"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque la necesidad económica no elimina los requisitos de protección.",
+    "opcion_C": "Es incorrecta porque desconoce la posibilidad de trabajo adolescente autorizado.",
+    "opcion_D": "Es incorrecta porque sanciona y estigmatiza al estudiante en vez de protegerlo.",
+    "distractores": {
+      "B": "Es incorrecta porque la necesidad económica no elimina los requisitos de protección.",
+      "C": "Es incorrecta porque desconoce la posibilidad de trabajo adolescente autorizado.",
+      "D": "Es incorrecta porque sanciona y estigmatiza al estudiante en vez de protegerlo."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita culpabilizar a la familia por pobreza y diferencia apoyo laboral protegido de explotación o vulneración."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Validar con normativa laboral vigente y protocolos de protección antes de aplicación definitiva.",
+    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 2 preguntas sobre trabajo infantil y edad mínima."
+  }
 }

@@ -1,97 +1,102 @@
 {
-    "id_item": "DIL_B01_I05",
-    "archivo_sugerido": "DIL_B01_I05_corresponsabilidad_solidaria_restablecimiento_derechos.json",
-    "bloque": {
-        "codigo_bloque": "DIL_B01",
-        "nombre": "Corresponsabilidad, protección integral y sujetos de derechos",
-        "estado_en_lista": "Bloque 1 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 5 de 5"
+  "id_item": "DIL_B01_I05",
+  "archivo_sugerido": "DIL_B01_I05_corresponsabilidad_solidaria_restablecimiento_derechos.json",
+  "bloque": {
+    "codigo_bloque": "DIL_B01",
+    "nombre": "Corresponsabilidad, protección integral y sujetos de derechos",
+    "estado_en_lista": "Bloque 1 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 5 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante comprende que, ante una vulneración de derechos, los estamentos corresponsables deben actuar de forma solidaria y concurrente para el restablecimiento.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con infancia, docencia, orientación escolar, coordinación, convivencia o protección integral.",
+    "blueprint": {
+      "problematica_principal": "Falta de claridad sobre la acción concurrente frente al restablecimiento de derechos de un menor.",
+      "fuente_autorizada": [
+        "Ley 1098 de 2006",
+        "Sistema Nacional de Bienestar Familiar",
+        "ICBF",
+        "Protección integral"
+      ],
+      "componente_modulo": "Principio de corresponsabilidad",
+      "competencia": "Comprensión de acción solidaria y concurrente",
+      "afirmacion": "El restablecimiento de derechos requiere acción articulada de familia, sociedad y Estado, según competencias y necesidades del caso.",
+      "evidencia_observable": "Reconoce que los tres estamentos responden de forma concurrente por protección y restablecimiento.",
+      "tipo_de_evidencia": "Juicio normativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "C"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante comprende que, ante una vulneración de derechos, los estamentos corresponsables deben actuar de forma solidaria y concurrente para el restablecimiento.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con infancia, docencia, orientación escolar, coordinación, convivencia o protección integral.",
-        "blueprint": {
-            "problematica_principal": "Falta de claridad sobre la acción concurrente frente al restablecimiento de derechos de un menor.",
-            "fuente_autorizada": [
-                "Ley 1098 de 2006",
-                "Sistema Nacional de Bienestar Familiar",
-                "ICBF",
-                "Protección integral"
-            ],
-            "componente_modulo": "Principio de corresponsabilidad",
-            "competencia": "Comprensión de acción solidaria y concurrente",
-            "afirmacion": "El restablecimiento de derechos requiere acción articulada de familia, sociedad y Estado, según competencias y necesidades del caso.",
-            "evidencia_observable": "Reconoce que los tres estamentos responden de forma concurrente por protección y restablecimiento.",
-            "tipo_de_evidencia": "Juicio normativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "C"
-        },
-        "claim": "El evaluado comprende que la corresponsabilidad no solo aplica a la prevención, sino también al restablecimiento de derechos cuando estos han sido vulnerados.",
-        "evidencia_observable": "Selecciona la opción que integra acción solidaria y concurrente de los actores responsables.",
-        "tarea_cognitiva": "Aplicar el principio de corresponsabilidad a una situación de restablecimiento de derechos.",
-        "tipo_de_pregunta": "Caso normativo aplicado",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Hacer responsable absoluto al docente",
-                "revision": "La clave habla de estamentos corresponsables y competencias."
-            },
-            {
-                "riesgo": "Excluir a la familia del proceso",
-                "revision": "La opción correcta incluye familia cuando no sea fuente de riesgo o según proceda."
-            },
-            {
-                "riesgo": "Desconocer autoridad competente",
-                "revision": "El ítem diferencia concurrencia de sustitución de competencias."
-            }
-        ]
+    "claim": "El evaluado comprende que la corresponsabilidad no solo aplica a la prevención, sino también al restablecimiento de derechos cuando estos han sido vulnerados.",
+    "evidencia_observable": "Selecciona la opción que integra acción solidaria y concurrente de los actores responsables.",
+    "tarea_cognitiva": "Aplicar el principio de corresponsabilidad a una situación de restablecimiento de derechos.",
+    "tipo_de_pregunta": "Caso normativo aplicado",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Hacer responsable absoluto al docente",
+        "revision": "La clave habla de estamentos corresponsables y competencias."
+      },
+      {
+        "riesgo": "Excluir a la familia del proceso",
+        "revision": "La opción correcta incluye familia cuando no sea fuente de riesgo o según proceda."
+      },
+      {
+        "riesgo": "Desconocer autoridad competente",
+        "revision": "El ítem diferencia concurrencia de sustitución de competencias."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Una autoridad administrativa inicia acciones para restablecer los derechos de un menor. En la institución educativa se discute quiénes deben responder jurídicamente de forma solidaria y concurrente por la protección integral.\n\n¿Cuáles son los estamentos sociales corresponsables en este proceso?",
+    "opciones": {
+      "A": "Únicamente el estudiante y sus compañeros.",
+      "B": "Solo el rector y el coordinador.",
+      "C": "La familia, la sociedad y el Estado, cada uno según sus competencias y deberes.",
+      "D": "Solamente el docente que detectó la situación."
     },
-    "item": {
-        "enunciado": "Una autoridad administrativa inicia acciones para restablecer los derechos de un menor. En la institución educativa se discute quiénes deben responder jurídicamente de forma solidaria y concurrente por la protección integral.\n\n¿Cuáles son los estamentos sociales corresponsables en este proceso?",
-        "opciones": {
-            "A": "Únicamente el estudiante y sus compañeros.",
-            "B": "Solo el rector y el coordinador.",
-            "C": "La familia, la sociedad y el Estado, cada uno según sus competencias y deberes.",
-            "D": "Solamente el docente que detectó la situación."
-        },
-        "respuesta_correcta": "C"
+    "respuesta_correcta": "C"
+  },
+  "ficha_tecnica": {
+    "componente": "Principio de corresponsabilidad",
+    "competencia": "Comprensión de acción solidaria y concurrente",
+    "claim_evaluado": "El evaluado comprende que la corresponsabilidad no solo aplica a la prevención, sino también al restablecimiento de derechos cuando estos han sido vulnerados.",
+    "evidencia": "Selecciona la opción que integra acción solidaria y concurrente de los actores responsables.",
+    "proceso_cognitivo": "Aplicación normativa",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "C",
+    "distractores": {
+      "A": "Traslada indebidamente la responsabilidad al menor y sus pares.",
+      "B": "Reduce la corresponsabilidad a cargos escolares.",
+      "D": "Sobrecarga a un único docente."
     },
-    "ficha_tecnica": {
-        "componente": "Principio de corresponsabilidad",
-        "competencia": "Comprensión de acción solidaria y concurrente",
-        "claim_evaluado": "El evaluado comprende que la corresponsabilidad no solo aplica a la prevención, sino también al restablecimiento de derechos cuando estos han sido vulnerados.",
-        "evidencia": "Selecciona la opción que integra acción solidaria y concurrente de los actores responsables.",
-        "proceso_cognitivo": "Aplicación normativa",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "C",
-        "distractores": {
-            "A": "Traslada indebidamente la responsabilidad al menor y sus pares.",
-            "B": "Reduce la corresponsabilidad a cargos escolares.",
-            "D": "Sobrecarga a un único docente."
-        },
-        "fuente_autorizada": [
-            "Ley 1098 de 2006",
-            "Sistema Nacional de Bienestar Familiar",
-            "ICBF",
-            "Protección integral"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque la protección y restablecimiento de derechos implican familia, sociedad y Estado, con actuaciones según competencia.",
-        "opcion_A": "Es incorrecta porque responsabiliza a quienes no tienen deber principal de garantía.",
-        "opcion_B": "Es incorrecta porque la institución escolar es solo parte del entramado de corresponsabilidad.",
-        "opcion_D": "Es incorrecta porque detectar una situación no convierte al docente en único responsable jurídico."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem distribuye responsabilidades sin cargar indebidamente a un solo actor."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre corresponsabilidad, protección integral y sujetos de derechos."
+    "fuente_autorizada": [
+      "Ley 1098 de 2006",
+      "Sistema Nacional de Bienestar Familiar",
+      "ICBF",
+      "Protección integral"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "opcion_A": "Es incorrecta porque responsabiliza a quienes no tienen deber principal de garantía.",
+    "opcion_B": "Es incorrecta porque la institución escolar es solo parte del entramado de corresponsabilidad.",
+    "opcion_D": "Es incorrecta porque detectar una situación no convierte al docente en único responsable jurídico.",
+    "distractores": {
+      "A": "Es incorrecta porque responsabiliza a quienes no tienen deber principal de garantía.",
+      "B": "Es incorrecta porque la institución escolar es solo parte del entramado de corresponsabilidad.",
+      "D": "Es incorrecta porque detectar una situación no convierte al docente en único responsable jurídico."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem distribuye responsabilidades sin cargar indebidamente a un solo actor."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre corresponsabilidad, protección integral y sujetos de derechos."
+  }
 }

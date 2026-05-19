@@ -1,103 +1,108 @@
 {
-    "id_item": "PPDC_B05_I01",
-    "archivo_sugerido": "PPDC_B05_I01_diagnostico_pedagogico_primaria.json",
-    "bloque": {
-        "codigo_bloque": "PPDC_B05",
-        "nombre": "Diagnóstico pedagógico en educación primaria",
-        "estado_en_lista": "Bloque 5 de 7",
-        "decision_del_bloque": "Pregunta única",
-        "item_en_grupo": "Ítem 1 de 1"
+  "id_item": "PPDC_B05_I01",
+  "archivo_sugerido": "PPDC_B05_I01_diagnostico_pedagogico_primaria.json",
+  "bloque": {
+    "codigo_bloque": "PPDC_B05",
+    "nombre": "Diagnóstico pedagógico en educación primaria",
+    "estado_en_lista": "Bloque 5 de 7",
+    "decision_del_bloque": "Pregunta única",
+    "item_en_grupo": "Ítem 1 de 1"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce que el diagnóstico pedagógico al recibir un grupo nuevo no se limita a medir conocimientos previos, sino que permite comprender condiciones cognitivas, socioemocionales, familiares, culturales, comunicativas y de aprendizaje para orientar la planeación.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula en educación primaria, coordinación académica o gestión pedagógica.",
+    "blueprint": {
+      "problematica_principal": "Reducción del diagnóstico inicial a una medición cognitiva de conocimientos previos.",
+      "fuente_autorizada": [
+        "Ley 115 de 1994",
+        "Fines de la educación",
+        "Orientaciones pedagógicas institucionales",
+        "Evaluación diagnóstica y formativa",
+        "Lineamientos curriculares del Ministerio de Educación Nacional"
+      ],
+      "componente_modulo": "Práctica Pedagógica y Diagnóstico",
+      "competencia": "Diagnóstico pedagógico integral",
+      "afirmacion": "El diagnóstico pedagógico permite conocer integralmente al grupo para orientar la planeación, la mediación y los apoyos necesarios.",
+      "evidencia_observable": "Reconoce que el diagnóstico inicial debe considerar conocimientos previos, ritmos, intereses, contextos, condiciones socioemocionales y necesidades de apoyo.",
+      "tipo_de_evidencia": "Juicio pedagógico aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "C"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce que el diagnóstico pedagógico al recibir un grupo nuevo no se limita a medir conocimientos previos, sino que permite comprender condiciones cognitivas, socioemocionales, familiares, culturales, comunicativas y de aprendizaje para orientar la planeación.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula en educación primaria, coordinación académica o gestión pedagógica.",
-        "blueprint": {
-            "problematica_principal": "Reducción del diagnóstico inicial a una medición cognitiva de conocimientos previos.",
-            "fuente_autorizada": [
-                "Ley 115 de 1994",
-                "Fines de la educación",
-                "Orientaciones pedagógicas institucionales",
-                "Evaluación diagnóstica y formativa",
-                "Lineamientos curriculares del Ministerio de Educación Nacional"
-            ],
-            "componente_modulo": "Práctica Pedagógica y Diagnóstico",
-            "competencia": "Diagnóstico pedagógico integral",
-            "afirmacion": "El diagnóstico pedagógico permite conocer integralmente al grupo para orientar la planeación, la mediación y los apoyos necesarios.",
-            "evidencia_observable": "Reconoce que el diagnóstico inicial debe considerar conocimientos previos, ritmos, intereses, contextos, condiciones socioemocionales y necesidades de apoyo.",
-            "tipo_de_evidencia": "Juicio pedagógico aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "C"
-        },
-        "claim": "El evaluado comprende que el diagnóstico pedagógico inicial en educación primaria tiene una finalidad formativa e integral: conocer al grupo para planear mejor, ajustar estrategias, identificar apoyos y favorecer el desarrollo de todos los estudiantes.",
-        "evidencia_observable": "Selecciona una interpretación del diagnóstico como proceso integral de reconocimiento del grupo, y no solo como prueba de contenidos previos.",
-        "tarea_cognitiva": "Analizar el propósito pedagógico y normativo del diagnóstico inicial al recibir un grupo nuevo.",
-        "tipo_de_pregunta": "Caso situacional de juicio pedagógico",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Sesgo por condiciones sociofamiliares",
-                "revision": "El ítem no usa la información del contexto para etiquetar o clasificar negativamente a los estudiantes, sino para orientar apoyos pedagógicos."
-            },
-            {
-                "riesgo": "Confusión entre diagnóstico y calificación",
-                "revision": "La clave diferencia el diagnóstico formativo de una prueba sancionatoria o clasificatoria."
-            },
-            {
-                "riesgo": "Sesgo por nivel de desempeño inicial",
-                "revision": "El ítem evita asumir que el diagnóstico sirve para separar estudiantes capaces e incapaces."
-            },
-            {
-                "riesgo": "Ambigüedad en la clave",
-                "revision": "La opción correcta es la única que integra conocimientos previos, ritmos, intereses, contexto, dimensión socioemocional y apoyos."
-            }
-        ]
+    "claim": "El evaluado comprende que el diagnóstico pedagógico inicial en educación primaria tiene una finalidad formativa e integral: conocer al grupo para planear mejor, ajustar estrategias, identificar apoyos y favorecer el desarrollo de todos los estudiantes.",
+    "evidencia_observable": "Selecciona una interpretación del diagnóstico como proceso integral de reconocimiento del grupo, y no solo como prueba de contenidos previos.",
+    "tarea_cognitiva": "Analizar el propósito pedagógico y normativo del diagnóstico inicial al recibir un grupo nuevo.",
+    "tipo_de_pregunta": "Caso situacional de juicio pedagógico",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Sesgo por condiciones sociofamiliares",
+        "revision": "El ítem no usa la información del contexto para etiquetar o clasificar negativamente a los estudiantes, sino para orientar apoyos pedagógicos."
+      },
+      {
+        "riesgo": "Confusión entre diagnóstico y calificación",
+        "revision": "La clave diferencia el diagnóstico formativo de una prueba sancionatoria o clasificatoria."
+      },
+      {
+        "riesgo": "Sesgo por nivel de desempeño inicial",
+        "revision": "El ítem evita asumir que el diagnóstico sirve para separar estudiantes capaces e incapaces."
+      },
+      {
+        "riesgo": "Ambigüedad en la clave",
+        "revision": "La opción correcta es la única que integra conocimientos previos, ritmos, intereses, contexto, dimensión socioemocional y apoyos."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Una docente de primaria recibe un grupo nuevo al iniciar el año escolar. Antes de comenzar el desarrollo de los contenidos, decide realizar un diagnóstico. Algunos colegas le sugieren aplicar únicamente una prueba escrita para medir conocimientos previos.\n\n¿Cuál es el propósito normativo y pedagógico más amplio de realizar un diagnóstico inicial?",
+    "opciones": {
+      "A": "Clasificar a los estudiantes entre buenos y malos para definir desde el inicio quiénes tendrán mejores resultados.",
+      "B": "Asignar una nota inicial que determine el rendimiento del estudiante durante todo el año.",
+      "C": "Reconocer conocimientos previos, ritmos, intereses, contexto, condiciones socioemocionales y necesidades de apoyo para orientar la planeación pedagógica.",
+      "D": "Comprobar si los estudiantes recuerdan todos los contenidos del año anterior antes de permitirles avanzar."
     },
-    "item": {
-        "enunciado": "Una docente de primaria recibe un grupo nuevo al iniciar el año escolar. Antes de comenzar el desarrollo de los contenidos, decide realizar un diagnóstico. Algunos colegas le sugieren aplicar únicamente una prueba escrita para medir conocimientos previos.\n\n¿Cuál es el propósito normativo y pedagógico más amplio de realizar un diagnóstico inicial?",
-        "opciones": {
-            "A": "Clasificar a los estudiantes entre buenos y malos para definir desde el inicio quiénes tendrán mejores resultados.",
-            "B": "Asignar una nota inicial que determine el rendimiento del estudiante durante todo el año.",
-            "C": "Reconocer conocimientos previos, ritmos, intereses, contexto, condiciones socioemocionales y necesidades de apoyo para orientar la planeación pedagógica.",
-            "D": "Comprobar si los estudiantes recuerdan todos los contenidos del año anterior antes de permitirles avanzar."
-        },
-        "respuesta_correcta": "C"
+    "respuesta_correcta": "C"
+  },
+  "ficha_tecnica": {
+    "componente": "Práctica Pedagógica y Diagnóstico",
+    "competencia": "Diagnóstico pedagógico integral",
+    "claim_evaluado": "El evaluado comprende que el diagnóstico pedagógico inicial en educación primaria tiene una finalidad formativa e integral: conocer al grupo para planear mejor, ajustar estrategias, identificar apoyos y favorecer el desarrollo de todos los estudiantes.",
+    "evidencia": "Selecciona una interpretación del diagnóstico como proceso integral de reconocimiento del grupo, y no solo como prueba de contenidos previos.",
+    "proceso_cognitivo": "Análisis y juicio pedagógico",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "C",
+    "distractores": {
+      "A": "Convierte el diagnóstico en clasificación excluyente de estudiantes.",
+      "B": "Confunde diagnóstico con calificación determinante.",
+      "D": "Reduce el diagnóstico a comprobación memorística de contenidos anteriores."
     },
-    "ficha_tecnica": {
-        "componente": "Práctica Pedagógica y Diagnóstico",
-        "competencia": "Diagnóstico pedagógico integral",
-        "claim_evaluado": "El evaluado comprende que el diagnóstico pedagógico inicial en educación primaria tiene una finalidad formativa e integral: conocer al grupo para planear mejor, ajustar estrategias, identificar apoyos y favorecer el desarrollo de todos los estudiantes.",
-        "evidencia": "Selecciona una interpretación del diagnóstico como proceso integral de reconocimiento del grupo, y no solo como prueba de contenidos previos.",
-        "proceso_cognitivo": "Análisis y juicio pedagógico",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "C",
-        "distractores": {
-            "A": "Convierte el diagnóstico en clasificación excluyente de estudiantes.",
-            "B": "Confunde diagnóstico con calificación determinante.",
-            "D": "Reduce el diagnóstico a comprobación memorística de contenidos anteriores."
-        },
-        "fuente_autorizada": [
-            "Ley 115 de 1994",
-            "Fines de la educación",
-            "Orientaciones pedagógicas institucionales",
-            "Evaluación diagnóstica y formativa",
-            "Lineamientos curriculares del Ministerio de Educación Nacional"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque el diagnóstico inicial permite conocer integralmente al grupo y usar esa información para planear, ajustar estrategias, identificar apoyos y favorecer el aprendizaje de todos los estudiantes.",
-        "opcion_A": "Es incorrecta porque el diagnóstico no debe usarse para etiquetar estudiantes ni anticipar de manera rígida sus posibilidades de aprendizaje.",
-        "opcion_B": "Es incorrecta porque el diagnóstico tiene finalidad formativa y orientadora, no una función de calificación definitiva.",
-        "opcion_D": "Es incorrecta porque limita el diagnóstico a memoria de contenidos previos y desconoce dimensiones pedagógicas, contextuales y socioemocionales."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita clasificar a los estudiantes por desempeño inicial, contexto familiar o condiciones socioemocionales. Evalúa una comprensión profesional del diagnóstico como herramienta de planeación y apoyo, no como mecanismo de exclusión."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-        "uso_recomendado": "Puede usarse como pregunta única del bloque Diagnóstico pedagógico en educación primaria."
+    "fuente_autorizada": [
+      "Ley 115 de 1994",
+      "Fines de la educación",
+      "Orientaciones pedagógicas institucionales",
+      "Evaluación diagnóstica y formativa",
+      "Lineamientos curriculares del Ministerio de Educación Nacional"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "opcion_A": "Es incorrecta porque el diagnóstico no debe usarse para etiquetar estudiantes ni anticipar de manera rígida sus posibilidades de aprendizaje.",
+    "opcion_B": "Es incorrecta porque el diagnóstico tiene finalidad formativa y orientadora, no una función de calificación definitiva.",
+    "opcion_D": "Es incorrecta porque limita el diagnóstico a memoria de contenidos previos y desconoce dimensiones pedagógicas, contextuales y socioemocionales.",
+    "distractores": {
+      "A": "Es incorrecta porque el diagnóstico no debe usarse para etiquetar estudiantes ni anticipar de manera rígida sus posibilidades de aprendizaje.",
+      "B": "Es incorrecta porque el diagnóstico tiene finalidad formativa y orientadora, no una función de calificación definitiva.",
+      "D": "Es incorrecta porque limita el diagnóstico a memoria de contenidos previos y desconoce dimensiones pedagógicas, contextuales y socioemocionales."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita clasificar a los estudiantes por desempeño inicial, contexto familiar o condiciones socioemocionales. Evalúa una comprensión profesional del diagnóstico como herramienta de planeación y apoyo, no como mecanismo de exclusión."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
+    "uso_recomendado": "Puede usarse como pregunta única del bloque Diagnóstico pedagógico en educación primaria."
+  }
 }

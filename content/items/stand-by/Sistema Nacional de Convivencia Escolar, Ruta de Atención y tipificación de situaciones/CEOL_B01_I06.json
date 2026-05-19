@@ -1,103 +1,108 @@
 {
-    "id_item": "CEOL_B01_I06",
-    "archivo_sugerido": "CEOL_B01_I06_tipificacion_tipo_ii_tipo_iii.json",
-    "bloque": {
-        "codigo_bloque": "CEOL_B01",
-        "nombre": "Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones",
-        "estado_en_lista": "Bloque 1 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 6 de 6"
+  "id_item": "CEOL_B01_I06",
+  "archivo_sugerido": "CEOL_B01_I06_tipificacion_tipo_ii_tipo_iii.json",
+  "bloque": {
+    "codigo_bloque": "CEOL_B01",
+    "nombre": "Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones",
+    "estado_en_lista": "Bloque 1 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 6 de 6"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante diferencia situaciones Tipo II y Tipo III en convivencia escolar, especialmente frente a acoso, ciberacoso, daños a la salud o presunta comisión de delitos.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación, rectoría o gestión de convivencia.",
+    "blueprint": {
+      "problematica_principal": "Confusión en la clasificación de agresiones escolares, acoso, ciberacoso y situaciones que pueden constituir delito.",
+      "fuente_autorizada": [
+        "Decreto 1965 de 2013",
+        "Ley 1620 de 2013",
+        "Ley 1098 de 2006",
+        "Manual de convivencia institucional",
+        "Ruta de Atención Integral para la Convivencia Escolar"
+      ],
+      "componente_modulo": "Tipificación de situaciones de convivencia",
+      "competencia": "Clasificación y activación de protocolos",
+      "afirmacion": "Las situaciones Tipo II incluyen agresión escolar, acoso o ciberacoso sistemático sin comisión de delito; las Tipo III corresponden a situaciones que pueden constituir presuntos delitos.",
+      "evidencia_observable": "Diferencia la clasificación de situaciones Tipo II y Tipo III según repetición, daño, acoso y posible delito.",
+      "tipo_de_evidencia": "Juicio normativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "B"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante diferencia situaciones Tipo II y Tipo III en convivencia escolar, especialmente frente a acoso, ciberacoso, daños a la salud o presunta comisión de delitos.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación, rectoría o gestión de convivencia.",
-        "blueprint": {
-            "problematica_principal": "Confusión en la clasificación de agresiones escolares, acoso, ciberacoso y situaciones que pueden constituir delito.",
-            "fuente_autorizada": [
-                "Decreto 1965 de 2013",
-                "Ley 1620 de 2013",
-                "Ley 1098 de 2006",
-                "Manual de convivencia institucional",
-                "Ruta de Atención Integral para la Convivencia Escolar"
-            ],
-            "componente_modulo": "Tipificación de situaciones de convivencia",
-            "competencia": "Clasificación y activación de protocolos",
-            "afirmacion": "Las situaciones Tipo II incluyen agresión escolar, acoso o ciberacoso sistemático sin comisión de delito; las Tipo III corresponden a situaciones que pueden constituir presuntos delitos.",
-            "evidencia_observable": "Diferencia la clasificación de situaciones Tipo II y Tipo III según repetición, daño, acoso y posible delito.",
-            "tipo_de_evidencia": "Juicio normativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "B"
-        },
-        "claim": "El evaluado comprende que la clasificación correcta de una situación de convivencia determina la activación del protocolo adecuado, la protección de derechos y la intervención de las instancias competentes.",
-        "evidencia_observable": "Selecciona la clasificación y respuesta inicial más adecuada frente a una situación de acoso sistemático o presunta conducta delictiva.",
-        "tarea_cognitiva": "Clasificar situaciones de convivencia y distinguir el protocolo aplicable.",
-        "tipo_de_pregunta": "Caso situacional de juicio normativo",
-        "dificultad_esperada": "Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Confusión entre Tipo II y Tipo III",
-                "revision": "La clave distingue acoso sistemático sin delito de situaciones que pueden constituir presuntos delitos."
-            },
-            {
-                "riesgo": "Tratamiento sensible de violencia escolar",
-                "revision": "El ítem evita detalles gráficos y se centra en clasificación y protocolo."
-            },
-            {
-                "riesgo": "Revictimización",
-                "revision": "La respuesta correcta protege derechos, evita exposición y activa instancias competentes."
-            },
-            {
-                "riesgo": "Ambigüedad sobre daño a la salud",
-                "revision": "La opción correcta considera repetición, daño y posible comisión de delito como criterios de clasificación."
-            }
-        ]
+    "claim": "El evaluado comprende que la clasificación correcta de una situación de convivencia determina la activación del protocolo adecuado, la protección de derechos y la intervención de las instancias competentes.",
+    "evidencia_observable": "Selecciona la clasificación y respuesta inicial más adecuada frente a una situación de acoso sistemático o presunta conducta delictiva.",
+    "tarea_cognitiva": "Clasificar situaciones de convivencia y distinguir el protocolo aplicable.",
+    "tipo_de_pregunta": "Caso situacional de juicio normativo",
+    "dificultad_esperada": "Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Confusión entre Tipo II y Tipo III",
+        "revision": "La clave distingue acoso sistemático sin delito de situaciones que pueden constituir presuntos delitos."
+      },
+      {
+        "riesgo": "Tratamiento sensible de violencia escolar",
+        "revision": "El ítem evita detalles gráficos y se centra en clasificación y protocolo."
+      },
+      {
+        "riesgo": "Revictimización",
+        "revision": "La respuesta correcta protege derechos, evita exposición y activa instancias competentes."
+      },
+      {
+        "riesgo": "Ambigüedad sobre daño a la salud",
+        "revision": "La opción correcta considera repetición, daño y posible comisión de delito como criterios de clasificación."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "En una institución se identifica que un estudiante ha recibido agresiones reiteradas y mensajes ofensivos por redes sociales. La situación ha afectado su salud emocional y requiere intervención institucional. El comité debe clasificar correctamente el caso y activar el protocolo correspondiente.\n\n¿Cuál criterio permite diferenciar una situación Tipo II de una Tipo III?",
+    "opciones": {
+      "A": "Toda agresión verbal es siempre Tipo I y nunca requiere seguimiento institucional.",
+      "B": "La Tipo II incluye agresión, acoso o ciberacoso repetido o con daño sin configurar delito; la Tipo III corresponde a situaciones que pueden constituir presuntos delitos y exigen activación inmediata de autoridades competentes.",
+      "C": "La Tipo III se aplica solo cuando el estudiante o la familia solicitan por escrito una sanción escolar.",
+      "D": "La Tipo II y la Tipo III son equivalentes, por lo que pueden abordarse con el mismo procedimiento informal de aula."
     },
-    "item": {
-        "enunciado": "En una institución se identifica que un estudiante ha recibido agresiones reiteradas y mensajes ofensivos por redes sociales. La situación ha afectado su salud emocional y requiere intervención institucional. El comité debe clasificar correctamente el caso y activar el protocolo correspondiente.\n\n¿Cuál criterio permite diferenciar una situación Tipo II de una Tipo III?",
-        "opciones": {
-            "A": "Toda agresión verbal es siempre Tipo I y nunca requiere seguimiento institucional.",
-            "B": "La Tipo II incluye agresión, acoso o ciberacoso repetido o con daño sin configurar delito; la Tipo III corresponde a situaciones que pueden constituir presuntos delitos y exigen activación inmediata de autoridades competentes.",
-            "C": "La Tipo III se aplica solo cuando el estudiante o la familia solicitan por escrito una sanción escolar.",
-            "D": "La Tipo II y la Tipo III son equivalentes, por lo que pueden abordarse con el mismo procedimiento informal de aula."
-        },
-        "respuesta_correcta": "B"
+    "respuesta_correcta": "B"
+  },
+  "ficha_tecnica": {
+    "componente": "Tipificación de situaciones de convivencia",
+    "competencia": "Clasificación y activación de protocolos",
+    "claim_evaluado": "El evaluado comprende que la clasificación correcta de una situación de convivencia determina la activación del protocolo adecuado, la protección de derechos y la intervención de las instancias competentes.",
+    "evidencia": "Selecciona la clasificación y respuesta inicial más adecuada frente a una situación de acoso sistemático o presunta conducta delictiva.",
+    "proceso_cognitivo": "Análisis y juicio normativo aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Alta",
+    "respuesta_correcta": "B",
+    "distractores": {
+      "A": "Minimiza situaciones de agresión que pueden escalar o requerir protocolo.",
+      "C": "Condiciona indebidamente la clasificación a una solicitud escrita.",
+      "D": "Desconoce diferencias normativas y procedimentales entre Tipo II y Tipo III."
     },
-    "ficha_tecnica": {
-        "componente": "Tipificación de situaciones de convivencia",
-        "competencia": "Clasificación y activación de protocolos",
-        "claim_evaluado": "El evaluado comprende que la clasificación correcta de una situación de convivencia determina la activación del protocolo adecuado, la protección de derechos y la intervención de las instancias competentes.",
-        "evidencia": "Selecciona la clasificación y respuesta inicial más adecuada frente a una situación de acoso sistemático o presunta conducta delictiva.",
-        "proceso_cognitivo": "Análisis y juicio normativo aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Alta",
-        "respuesta_correcta": "B",
-        "distractores": {
-            "A": "Minimiza situaciones de agresión que pueden escalar o requerir protocolo.",
-            "C": "Condiciona indebidamente la clasificación a una solicitud escrita.",
-            "D": "Desconoce diferencias normativas y procedimentales entre Tipo II y Tipo III."
-        },
-        "fuente_autorizada": [
-            "Decreto 1965 de 2013",
-            "Ley 1620 de 2013",
-            "Ley 1098 de 2006",
-            "Manual de convivencia institucional",
-            "Ruta de Atención Integral para la Convivencia Escolar"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción B es correcta porque las situaciones Tipo II incluyen agresión escolar, acoso o ciberacoso sistemático o con daño que no constituye delito, mientras las Tipo III corresponden a situaciones que pueden configurar presuntos delitos y requieren activación de autoridades competentes.",
-        "opcion_A": "Es incorrecta porque no toda agresión verbal o digital puede tratarse como situación menor sin seguimiento.",
-        "opcion_C": "Es incorrecta porque la clasificación no depende de una solicitud escrita, sino de los hechos y criterios normativos.",
-        "opcion_D": "Es incorrecta porque Tipo II y Tipo III tienen protocolos y alcances distintos."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita describir hechos violentos con detalles innecesarios y evalúa la clasificación normativa para proteger derechos y activar protocolos adecuados."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada. Por su dificultad y sensibilidad, se recomienda conservar lenguaje sobrio y evitar detalles victimizantes.",
-        "uso_recomendado": "Puede usarse como ítem 6 de un grupo de 6 preguntas sobre Sistema Nacional de Convivencia Escolar y Ruta de Atención Integral."
+    "fuente_autorizada": [
+      "Decreto 1965 de 2013",
+      "Ley 1620 de 2013",
+      "Ley 1098 de 2006",
+      "Manual de convivencia institucional",
+      "Ruta de Atención Integral para la Convivencia Escolar"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "B",
+    "opcion_A": "Es incorrecta porque no toda agresión verbal o digital puede tratarse como situación menor sin seguimiento.",
+    "opcion_C": "Es incorrecta porque la clasificación no depende de una solicitud escrita, sino de los hechos y criterios normativos.",
+    "opcion_D": "Es incorrecta porque Tipo II y Tipo III tienen protocolos y alcances distintos.",
+    "distractores": {
+      "A": "Es incorrecta porque no toda agresión verbal o digital puede tratarse como situación menor sin seguimiento.",
+      "C": "Es incorrecta porque la clasificación no depende de una solicitud escrita, sino de los hechos y criterios normativos.",
+      "D": "Es incorrecta porque Tipo II y Tipo III tienen protocolos y alcances distintos."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita describir hechos violentos con detalles innecesarios y evalúa la clasificación normativa para proteger derechos y activar protocolos adecuados."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada. Por su dificultad y sensibilidad, se recomienda conservar lenguaje sobrio y evitar detalles victimizantes.",
+    "uso_recomendado": "Puede usarse como ítem 6 de un grupo de 6 preguntas sobre Sistema Nacional de Convivencia Escolar y Ruta de Atención Integral."
+  }
 }

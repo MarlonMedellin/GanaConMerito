@@ -1,98 +1,103 @@
 {
-    "id_item": "NFL_B03_I03",
-    "archivo_sugerido": "NFL_B03_I03_tipicidad_manual_convivencia_falta_previa.json",
-    "bloque": {
-        "codigo_bloque": "NFL_B03",
-        "nombre": "Debido proceso, congruencia y medidas correctivas extremas",
-        "estado_en_lista": "Bloque 3 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 3 de 5"
+  "id_item": "NFL_B03_I03",
+  "archivo_sugerido": "NFL_B03_I03_tipicidad_manual_convivencia_falta_previa.json",
+  "bloque": {
+    "codigo_bloque": "NFL_B03",
+    "nombre": "Debido proceso, congruencia y medidas correctivas extremas",
+    "estado_en_lista": "Bloque 3 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 3 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce que una sanción escolar debe estar prevista previamente en el Manual de Convivencia.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con convivencia escolar, docencia, coordinación, rectoría o gestión institucional.",
+    "blueprint": {
+      "problematica_principal": "Imposición de sanciones no previstas ni conocidas previamente por la comunidad educativa.",
+      "fuente_autorizada": [
+        "Constitución Política de Colombia artículo 29",
+        "Manual de Convivencia",
+        "Ley 115 de 1994",
+        "Debido proceso escolar",
+        "Principio de tipicidad"
+      ],
+      "componente_modulo": "Tipicidad y previsibilidad disciplinaria",
+      "competencia": "Aplicación de normas institucionales previas",
+      "afirmacion": "La conducta, el procedimiento y la consecuencia deben estar previamente definidos o ser previsibles en el Manual de Convivencia.",
+      "evidencia_observable": "Reconoce que no se puede sancionar con medidas inventadas después de los hechos.",
+      "tipo_de_evidencia": "Juicio jurídico-institucional aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "D"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce que una sanción escolar debe estar prevista previamente en el Manual de Convivencia.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con convivencia escolar, docencia, coordinación, rectoría o gestión institucional.",
-        "blueprint": {
-            "problematica_principal": "Imposición de sanciones no previstas ni conocidas previamente por la comunidad educativa.",
-            "fuente_autorizada": [
-                "Constitución Política de Colombia artículo 29",
-                "Manual de Convivencia",
-                "Ley 115 de 1994",
-                "Debido proceso escolar",
-                "Principio de tipicidad"
-            ],
-            "componente_modulo": "Tipicidad y previsibilidad disciplinaria",
-            "competencia": "Aplicación de normas institucionales previas",
-            "afirmacion": "La conducta, el procedimiento y la consecuencia deben estar previamente definidos o ser previsibles en el Manual de Convivencia.",
-            "evidencia_observable": "Reconoce que no se puede sancionar con medidas inventadas después de los hechos.",
-            "tipo_de_evidencia": "Juicio jurídico-institucional aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "D"
-        },
-        "claim": "El evaluado comprende que la disciplina escolar exige reglas previas, claras, conocidas y aplicadas proporcionalmente.",
-        "evidencia_observable": "Selecciona la opción que prohíbe sanciones improvisadas o no previstas.",
-        "tarea_cognitiva": "Aplicar el principio de tipicidad a una situación escolar.",
-        "tipo_de_pregunta": "Caso situacional de convivencia escolar",
-        "dificultad_esperada": "Media-Alta",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Normalizar arbitrariedad institucional",
-                "revision": "La clave exige reglas previas y conocidas."
-            },
-            {
-                "riesgo": "Confundir flexibilidad pedagógica con invención de sanciones",
-                "revision": "La opción correcta permite medidas, pero previstas y proporcionales."
-            },
-            {
-                "riesgo": "Desproteger a estudiantes frente a decisiones discrecionales",
-                "revision": "El ítem refuerza tipicidad y previsibilidad."
-            }
-        ]
+    "claim": "El evaluado comprende que la disciplina escolar exige reglas previas, claras, conocidas y aplicadas proporcionalmente.",
+    "evidencia_observable": "Selecciona la opción que prohíbe sanciones improvisadas o no previstas.",
+    "tarea_cognitiva": "Aplicar el principio de tipicidad a una situación escolar.",
+    "tipo_de_pregunta": "Caso situacional de convivencia escolar",
+    "dificultad_esperada": "Media-Alta",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Normalizar arbitrariedad institucional",
+        "revision": "La clave exige reglas previas y conocidas."
+      },
+      {
+        "riesgo": "Confundir flexibilidad pedagógica con invención de sanciones",
+        "revision": "La opción correcta permite medidas, pero previstas y proporcionales."
+      },
+      {
+        "riesgo": "Desproteger a estudiantes frente a decisiones discrecionales",
+        "revision": "El ítem refuerza tipicidad y previsibilidad."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Después de una falta de convivencia, el colegio decide aplicar una medida que no aparece en el Manual de Convivencia ni fue conocida previamente por estudiantes y familias. La medida se inventa después de ocurrido el hecho.\n\n¿Cuál principio del debido proceso se ve afectado principalmente?",
+    "opciones": {
+      "A": "El principio de improvisación institucional.",
+      "B": "La libertad del colegio para crear sanciones después de los hechos.",
+      "C": "La inexistencia de reglas escolares.",
+      "D": "El principio de tipicidad y previsibilidad, porque las faltas y consecuencias deben estar previamente establecidas y ser conocidas."
     },
-    "item": {
-        "enunciado": "Después de una falta de convivencia, el colegio decide aplicar una medida que no aparece en el Manual de Convivencia ni fue conocida previamente por estudiantes y familias. La medida se inventa después de ocurrido el hecho.\n\n¿Cuál principio del debido proceso se ve afectado principalmente?",
-        "opciones": {
-            "A": "El principio de improvisación institucional.",
-            "B": "La libertad del colegio para crear sanciones después de los hechos.",
-            "C": "La inexistencia de reglas escolares.",
-            "D": "El principio de tipicidad y previsibilidad, porque las faltas y consecuencias deben estar previamente establecidas y ser conocidas."
-        },
-        "respuesta_correcta": "D"
+    "respuesta_correcta": "D"
+  },
+  "ficha_tecnica": {
+    "componente": "Tipicidad y previsibilidad disciplinaria",
+    "competencia": "Aplicación de normas institucionales previas",
+    "claim_evaluado": "El evaluado comprende que la disciplina escolar exige reglas previas, claras, conocidas y aplicadas proporcionalmente.",
+    "evidencia": "Selecciona la opción que prohíbe sanciones improvisadas o no previstas.",
+    "proceso_cognitivo": "Juicio jurídico-institucional aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media-Alta",
+    "respuesta_correcta": "D",
+    "distractores": {
+      "A": "No existe como principio de garantía.",
+      "B": "Contradice el debido proceso.",
+      "C": "Desconoce que las instituciones sí deben tener reglas claras."
     },
-    "ficha_tecnica": {
-        "componente": "Tipicidad y previsibilidad disciplinaria",
-        "competencia": "Aplicación de normas institucionales previas",
-        "claim_evaluado": "El evaluado comprende que la disciplina escolar exige reglas previas, claras, conocidas y aplicadas proporcionalmente.",
-        "evidencia": "Selecciona la opción que prohíbe sanciones improvisadas o no previstas.",
-        "proceso_cognitivo": "Juicio jurídico-institucional aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media-Alta",
-        "respuesta_correcta": "D",
-        "distractores": {
-            "A": "No existe como principio de garantía.",
-            "B": "Contradice el debido proceso.",
-            "C": "Desconoce que las instituciones sí deben tener reglas claras."
-        },
-        "fuente_autorizada": [
-            "Constitución Política de Colombia artículo 29",
-            "Manual de Convivencia",
-            "Ley 115 de 1994",
-            "Debido proceso escolar"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque las faltas y consecuencias deben estar previstas previamente para permitir conocimiento y defensa.",
-        "opcion_A": "Es incorrecta porque la improvisación no es una garantía.",
-        "opcion_B": "Es incorrecta porque crear sanciones después de los hechos vulnera previsibilidad.",
-        "opcion_C": "Es incorrecta porque la existencia de reglas es necesaria para la convivencia."
-    },
-    "revision_fairness": {
-        "dictamen": "Aprobado con revisión institucional recomendada.",
-        "argumento": "El ítem protege a los estudiantes frente a arbitrariedades sin impedir el ejercicio legítimo de la convivencia escolar."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Validar contra el Manual de Convivencia usado como referencia.",
-        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre debido proceso, congruencia y medidas correctivas extremas."
+    "fuente_autorizada": [
+      "Constitución Política de Colombia artículo 29",
+      "Manual de Convivencia",
+      "Ley 115 de 1994",
+      "Debido proceso escolar"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "opcion_A": "Es incorrecta porque la improvisación no es una garantía.",
+    "opcion_B": "Es incorrecta porque crear sanciones después de los hechos vulnera previsibilidad.",
+    "opcion_C": "Es incorrecta porque la existencia de reglas es necesaria para la convivencia.",
+    "distractores": {
+      "A": "Es incorrecta porque la improvisación no es una garantía.",
+      "B": "Es incorrecta porque crear sanciones después de los hechos vulnera previsibilidad.",
+      "C": "Es incorrecta porque la existencia de reglas es necesaria para la convivencia."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "Aprobado con revisión institucional recomendada.",
+    "argumento": "El ítem protege a los estudiantes frente a arbitrariedades sin impedir el ejercicio legítimo de la convivencia escolar."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Validar contra el Manual de Convivencia usado como referencia.",
+    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre debido proceso, congruencia y medidas correctivas extremas."
+  }
 }

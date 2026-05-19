@@ -1,96 +1,101 @@
 {
-    "id_item": "NFL_B01_I02",
-    "archivo_sugerido": "NFL_B01_I02_desarrollo_personalidad_fines_educacion.json",
-    "bloque": {
-        "codigo_bloque": "NFL_B01",
-        "nombre": "Formación integral, fines de la educación y desarrollo de la personalidad",
-        "estado_en_lista": "Bloque 1 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 2 de 5"
+  "id_item": "NFL_B01_I02",
+  "archivo_sugerido": "NFL_B01_I02_desarrollo_personalidad_fines_educacion.json",
+  "bloque": {
+    "codigo_bloque": "NFL_B01",
+    "nombre": "Formación integral, fines de la educación y desarrollo de la personalidad",
+    "estado_en_lista": "Bloque 1 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 2 de 5"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante comprende el pleno desarrollo de la personalidad como fin educativo integral y no como simple rendimiento académico.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, pedagogía, orientación escolar o gestión institucional.",
+    "blueprint": {
+      "problematica_principal": "Interpretar el desarrollo de la personalidad como un asunto privado sin responsabilidad pedagógica de la escuela.",
+      "fuente_autorizada": [
+        "Ley 115 de 1994",
+        "Artículo 5 Ley 115",
+        "Constitución Política de Colombia artículo 67",
+        "Formación integral"
+      ],
+      "componente_modulo": "Fines de la educación",
+      "competencia": "Interpretación de desarrollo integral de la personalidad",
+      "afirmacion": "La educación debe promover el pleno desarrollo de la personalidad dentro de un proceso integral físico, psíquico, intelectual, moral, social, afectivo, ético y cívico.",
+      "evidencia_observable": "Reconoce que la escuela debe formar dimensiones humanas múltiples, respetando derechos de los demás y el orden jurídico.",
+      "tipo_de_evidencia": "Comprensión conceptual normativa",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "A"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante comprende el pleno desarrollo de la personalidad como fin educativo integral y no como simple rendimiento académico.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, pedagogía, orientación escolar o gestión institucional.",
-        "blueprint": {
-            "problematica_principal": "Interpretar el desarrollo de la personalidad como un asunto privado sin responsabilidad pedagógica de la escuela.",
-            "fuente_autorizada": [
-                "Ley 115 de 1994",
-                "Artículo 5 Ley 115",
-                "Constitución Política de Colombia artículo 67",
-                "Formación integral"
-            ],
-            "componente_modulo": "Fines de la educación",
-            "competencia": "Interpretación de desarrollo integral de la personalidad",
-            "afirmacion": "La educación debe promover el pleno desarrollo de la personalidad dentro de un proceso integral físico, psíquico, intelectual, moral, social, afectivo, ético y cívico.",
-            "evidencia_observable": "Reconoce que la escuela debe formar dimensiones humanas múltiples, respetando derechos de los demás y el orden jurídico.",
-            "tipo_de_evidencia": "Comprensión conceptual normativa",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "A"
-        },
-        "claim": "El evaluado comprende que el desarrollo de la personalidad implica una formación multidimensional y regulada por derechos, convivencia y orden jurídico.",
-        "evidencia_observable": "Selecciona una explicación que integra dimensiones físicas, psíquicas, intelectuales, morales, sociales, afectivas, éticas y cívicas.",
-        "tarea_cognitiva": "Interpretar el alcance de un fin educativo legal.",
-        "tipo_de_pregunta": "Pregunta conceptual normativa",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Confundir personalidad con permisividad absoluta",
-                "revision": "La clave incluye límites de derechos de los demás y orden jurídico."
-            },
-            {
-                "riesgo": "Reducir desarrollo a rendimiento escolar",
-                "revision": "El ítem incorpora dimensiones humanas múltiples."
-            },
-            {
-                "riesgo": "Desconocer diversidad de proyectos de vida",
-                "revision": "La clave habla de desarrollo integral sin imponer un modelo único."
-            }
-        ]
+    "claim": "El evaluado comprende que el desarrollo de la personalidad implica una formación multidimensional y regulada por derechos, convivencia y orden jurídico.",
+    "evidencia_observable": "Selecciona una explicación que integra dimensiones físicas, psíquicas, intelectuales, morales, sociales, afectivas, éticas y cívicas.",
+    "tarea_cognitiva": "Interpretar el alcance de un fin educativo legal.",
+    "tipo_de_pregunta": "Pregunta conceptual normativa",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Confundir personalidad con permisividad absoluta",
+        "revision": "La clave incluye límites de derechos de los demás y orden jurídico."
+      },
+      {
+        "riesgo": "Reducir desarrollo a rendimiento escolar",
+        "revision": "El ítem incorpora dimensiones humanas múltiples."
+      },
+      {
+        "riesgo": "Desconocer diversidad de proyectos de vida",
+        "revision": "La clave habla de desarrollo integral sin imponer un modelo único."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un docente sostiene que la escuela solo debe preparar al estudiante para aprobar exámenes, sin ocuparse de su dimensión ética, social, afectiva o ciudadana. Otro docente afirma que la Ley 115 entiende la educación de forma más amplia.\n\n¿Qué significa el pleno desarrollo de la personalidad como fin de la educación?",
+    "opciones": {
+      "A": "Promover una formación integral física, psíquica, intelectual, moral, social, afectiva, ética y cívica, respetando los derechos de los demás y el orden jurídico.",
+      "B": "Permitir que cada estudiante haga cualquier cosa sin límites ni responsabilidades.",
+      "C": "Reducir la formación a resultados de pruebas estandarizadas.",
+      "D": "Delegar toda dimensión ética y ciudadana exclusivamente en la familia."
     },
-    "item": {
-        "enunciado": "Un docente sostiene que la escuela solo debe preparar al estudiante para aprobar exámenes, sin ocuparse de su dimensión ética, social, afectiva o ciudadana. Otro docente afirma que la Ley 115 entiende la educación de forma más amplia.\n\n¿Qué significa el pleno desarrollo de la personalidad como fin de la educación?",
-        "opciones": {
-            "A": "Promover una formación integral física, psíquica, intelectual, moral, social, afectiva, ética y cívica, respetando los derechos de los demás y el orden jurídico.",
-            "B": "Permitir que cada estudiante haga cualquier cosa sin límites ni responsabilidades.",
-            "C": "Reducir la formación a resultados de pruebas estandarizadas.",
-            "D": "Delegar toda dimensión ética y ciudadana exclusivamente en la familia."
-        },
-        "respuesta_correcta": "A"
+    "respuesta_correcta": "A"
+  },
+  "ficha_tecnica": {
+    "componente": "Fines de la educación",
+    "competencia": "Interpretación de desarrollo integral de la personalidad",
+    "claim_evaluado": "El evaluado comprende que el desarrollo de la personalidad implica una formación multidimensional y regulada por derechos, convivencia y orden jurídico.",
+    "evidencia": "Selecciona una explicación que integra dimensiones físicas, psíquicas, intelectuales, morales, sociales, afectivas, éticas y cívicas.",
+    "proceso_cognitivo": "Comprensión conceptual normativa",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "A",
+    "distractores": {
+      "B": "Confunde desarrollo de la personalidad con ausencia de límites.",
+      "C": "Reduce la educación a medición académica.",
+      "D": "Excluye indebidamente la responsabilidad formativa de la escuela."
     },
-    "ficha_tecnica": {
-        "componente": "Fines de la educación",
-        "competencia": "Interpretación de desarrollo integral de la personalidad",
-        "claim_evaluado": "El evaluado comprende que el desarrollo de la personalidad implica una formación multidimensional y regulada por derechos, convivencia y orden jurídico.",
-        "evidencia": "Selecciona una explicación que integra dimensiones físicas, psíquicas, intelectuales, morales, sociales, afectivas, éticas y cívicas.",
-        "proceso_cognitivo": "Comprensión conceptual normativa",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "A",
-        "distractores": {
-            "B": "Confunde desarrollo de la personalidad con ausencia de límites.",
-            "C": "Reduce la educación a medición académica.",
-            "D": "Excluye indebidamente la responsabilidad formativa de la escuela."
-        },
-        "fuente_autorizada": [
-            "Ley 115 de 1994",
-            "Artículo 5 Ley 115",
-            "Constitución Política de Colombia artículo 67"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción A es correcta porque expresa el sentido integral, humano y jurídico del desarrollo de la personalidad.",
-        "opcion_B": "Es incorrecta porque la personalidad se desarrolla dentro de límites de derechos y convivencia.",
-        "opcion_C": "Es incorrecta porque las pruebas no agotan los fines de la educación.",
-        "opcion_D": "Es incorrecta porque la formación ética y ciudadana también es tarea escolar."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "Reconoce pluralidad de desarrollo personal sin convertirlo en permisividad ni en rendimiento estandarizado."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 5 preguntas sobre formación integral, fines de la educación y desarrollo de la personalidad."
+    "fuente_autorizada": [
+      "Ley 115 de 1994",
+      "Artículo 5 Ley 115",
+      "Constitución Política de Colombia artículo 67"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "A",
+    "opcion_B": "Es incorrecta porque la personalidad se desarrolla dentro de límites de derechos y convivencia.",
+    "opcion_C": "Es incorrecta porque las pruebas no agotan los fines de la educación.",
+    "opcion_D": "Es incorrecta porque la formación ética y ciudadana también es tarea escolar.",
+    "distractores": {
+      "B": "Es incorrecta porque la personalidad se desarrolla dentro de límites de derechos y convivencia.",
+      "C": "Es incorrecta porque las pruebas no agotan los fines de la educación.",
+      "D": "Es incorrecta porque la formación ética y ciudadana también es tarea escolar."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "Reconoce pluralidad de desarrollo personal sin convertirlo en permisividad ni en rendimiento estandarizado."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 5 preguntas sobre formación integral, fines de la educación y desarrollo de la personalidad."
+  }
 }

@@ -1,99 +1,104 @@
 {
-    "id_item": "DIL_B02_I02",
-    "archivo_sugerido": "DIL_B02_I02_cuando_activar_pard_derechos_vulnerados.json",
-    "bloque": {
-        "codigo_bloque": "DIL_B02",
-        "nombre": "PARD y restablecimiento de derechos",
-        "estado_en_lista": "Bloque 2 de 10",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 2 de 6"
+  "id_item": "DIL_B02_I02",
+  "archivo_sugerido": "DIL_B02_I02_cuando_activar_pard_derechos_vulnerados.json",
+  "bloque": {
+    "codigo_bloque": "DIL_B02",
+    "nombre": "PARD y restablecimiento de derechos",
+    "estado_en_lista": "Bloque 2 de 10",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 2 de 6"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce cuándo procede una ruta de restablecimiento de derechos para niños, niñas y adolescentes.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con infancia, docencia, orientación escolar, convivencia o protección integral.",
+    "blueprint": {
+      "problematica_principal": "Confusión entre una dificultad escolar ordinaria y una amenaza, inobservancia o vulneración de derechos que exige activación de ruta.",
+      "fuente_autorizada": [
+        "Ley 1098 de 2006",
+        "ICBF",
+        "PARD",
+        "Sistema Nacional de Bienestar Familiar",
+        "Manual de convivencia institucional"
+      ],
+      "componente_modulo": "Activación del PARD",
+      "competencia": "Identificación de situaciones de restablecimiento",
+      "afirmacion": "El PARD procede cuando existen derechos inobservados, amenazados o vulnerados.",
+      "evidencia_observable": "Reconoce situaciones que ameritan remisión o activación de autoridad competente.",
+      "tipo_de_evidencia": "Juicio normativo aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "C"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce cuándo procede una ruta de restablecimiento de derechos para niños, niñas y adolescentes.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con infancia, docencia, orientación escolar, convivencia o protección integral.",
-        "blueprint": {
-            "problematica_principal": "Confusión entre una dificultad escolar ordinaria y una amenaza, inobservancia o vulneración de derechos que exige activación de ruta.",
-            "fuente_autorizada": [
-                "Ley 1098 de 2006",
-                "ICBF",
-                "PARD",
-                "Sistema Nacional de Bienestar Familiar",
-                "Manual de convivencia institucional"
-            ],
-            "componente_modulo": "Activación del PARD",
-            "competencia": "Identificación de situaciones de restablecimiento",
-            "afirmacion": "El PARD procede cuando existen derechos inobservados, amenazados o vulnerados.",
-            "evidencia_observable": "Reconoce situaciones que ameritan remisión o activación de autoridad competente.",
-            "tipo_de_evidencia": "Juicio normativo aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "C"
-        },
-        "claim": "El evaluado comprende que el PARD no es una sanción escolar, sino un proceso para restaurar derechos cuando están amenazados o vulnerados.",
-        "evidencia_observable": "Selecciona la condición de activación correcta para el PARD.",
-        "tarea_cognitiva": "Diferenciar ruta de protección de medidas escolares ordinarias.",
-        "tipo_de_pregunta": "Caso normativo aplicado",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Activar PARD por cualquier falta menor",
-                "revision": "La clave exige amenaza, inobservancia o vulneración de derechos."
-            },
-            {
-                "riesgo": "No activar ruta ante vulneración real",
-                "revision": "El ítem enfatiza el deber de remitir o articular ante riesgo."
-            },
-            {
-                "riesgo": "Confundir protección con sanción",
-                "revision": "La respuesta correcta lo orienta a restauración de derechos."
-            }
-        ]
+    "claim": "El evaluado comprende que el PARD no es una sanción escolar, sino un proceso para restaurar derechos cuando están amenazados o vulnerados.",
+    "evidencia_observable": "Selecciona la condición de activación correcta para el PARD.",
+    "tarea_cognitiva": "Diferenciar ruta de protección de medidas escolares ordinarias.",
+    "tipo_de_pregunta": "Caso normativo aplicado",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Activar PARD por cualquier falta menor",
+        "revision": "La clave exige amenaza, inobservancia o vulneración de derechos."
+      },
+      {
+        "riesgo": "No activar ruta ante vulneración real",
+        "revision": "El ítem enfatiza el deber de remitir o articular ante riesgo."
+      },
+      {
+        "riesgo": "Confundir protección con sanción",
+        "revision": "La respuesta correcta lo orienta a restauración de derechos."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "Un docente observa que un estudiante presenta señales de posible abandono, malnutrición y ausencia de protección familiar. El caso supera una simple dificultad académica o disciplinaria.\n\n¿En qué tipo de situaciones procede activar o remitir hacia el PARD?",
+    "opciones": {
+      "A": "Cuando el estudiante olvida una tarea ocasional.",
+      "B": "Cuando el docente quiere imponer una sanción disciplinaria más fuerte.",
+      "C": "Cuando existen derechos inobservados, amenazados o vulnerados y se requiere restaurar su ejercicio efectivo.",
+      "D": "Cuando la institución quiere evitar cualquier intervención de autoridad competente."
     },
-    "item": {
-        "enunciado": "Un docente observa que un estudiante presenta señales de posible abandono, malnutrición y ausencia de protección familiar. El caso supera una simple dificultad académica o disciplinaria.\n\n¿En qué tipo de situaciones procede activar o remitir hacia el PARD?",
-        "opciones": {
-            "A": "Cuando el estudiante olvida una tarea ocasional.",
-            "B": "Cuando el docente quiere imponer una sanción disciplinaria más fuerte.",
-            "C": "Cuando existen derechos inobservados, amenazados o vulnerados y se requiere restaurar su ejercicio efectivo.",
-            "D": "Cuando la institución quiere evitar cualquier intervención de autoridad competente."
-        },
-        "respuesta_correcta": "C"
+    "respuesta_correcta": "C"
+  },
+  "ficha_tecnica": {
+    "componente": "Activación del PARD",
+    "competencia": "Identificación de situaciones de restablecimiento",
+    "claim_evaluado": "El evaluado comprende que el PARD no es una sanción escolar, sino un proceso para restaurar derechos cuando están amenazados o vulnerados.",
+    "evidencia": "Selecciona la condición de activación correcta para el PARD.",
+    "proceso_cognitivo": "Juicio normativo aplicado",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "C",
+    "distractores": {
+      "A": "Confunde dificultad escolar cotidiana con vulneración de derechos.",
+      "B": "Convierte el PARD en sanción disciplinaria.",
+      "D": "Contradice el deber de protección."
     },
-    "ficha_tecnica": {
-        "componente": "Activación del PARD",
-        "competencia": "Identificación de situaciones de restablecimiento",
-        "claim_evaluado": "El evaluado comprende que el PARD no es una sanción escolar, sino un proceso para restaurar derechos cuando están amenazados o vulnerados.",
-        "evidencia": "Selecciona la condición de activación correcta para el PARD.",
-        "proceso_cognitivo": "Juicio normativo aplicado",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "C",
-        "distractores": {
-            "A": "Confunde dificultad escolar cotidiana con vulneración de derechos.",
-            "B": "Convierte el PARD en sanción disciplinaria.",
-            "D": "Contradice el deber de protección."
-        },
-        "fuente_autorizada": [
-            "Ley 1098 de 2006",
-            "ICBF",
-            "PARD",
-            "Sistema Nacional de Bienestar Familiar",
-            "Manual de convivencia institucional"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque el PARD opera ante derechos inobservados, amenazados o vulnerados.",
-        "opcion_A": "Es incorrecta porque no toda dificultad escolar activa un proceso de restablecimiento.",
-        "opcion_B": "Es incorrecta porque el PARD no es una sanción.",
-        "opcion_D": "Es incorrecta porque la institución debe articularse con la autoridad competente."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem evita sobreactivar rutas por situaciones menores y también evita omisiones frente a riesgos reales."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 6 preguntas sobre PARD y restablecimiento de derechos."
+    "fuente_autorizada": [
+      "Ley 1098 de 2006",
+      "ICBF",
+      "PARD",
+      "Sistema Nacional de Bienestar Familiar",
+      "Manual de convivencia institucional"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "opcion_A": "Es incorrecta porque no toda dificultad escolar activa un proceso de restablecimiento.",
+    "opcion_B": "Es incorrecta porque el PARD no es una sanción.",
+    "opcion_D": "Es incorrecta porque la institución debe articularse con la autoridad competente.",
+    "distractores": {
+      "A": "Es incorrecta porque no toda dificultad escolar activa un proceso de restablecimiento.",
+      "B": "Es incorrecta porque el PARD no es una sanción.",
+      "D": "Es incorrecta porque la institución debe articularse con la autoridad competente."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem evita sobreactivar rutas por situaciones menores y también evita omisiones frente a riesgos reales."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 6 preguntas sobre PARD y restablecimiento de derechos."
+  }
 }

@@ -1,99 +1,104 @@
 {
-    "id_item": "IDD_B01_I03",
-    "archivo_sugerido": "IDD_B01_I03_lenguaje_inclusivo_minusvalido_discapacitado.json",
-    "bloque": {
-        "codigo_bloque": "IDD_B01",
-        "nombre": "Sesgos culturales, lenguaje inclusivo y discriminación cotidiana",
-        "estado_en_lista": "Bloque 1 de 17",
-        "decision_del_bloque": "Grupo de preguntas",
-        "item_en_grupo": "Ítem 3 de 4"
+  "id_item": "IDD_B01_I03",
+  "archivo_sugerido": "IDD_B01_I03_lenguaje_inclusivo_minusvalido_discapacitado.json",
+  "bloque": {
+    "codigo_bloque": "IDD_B01",
+    "nombre": "Sesgos culturales, lenguaje inclusivo y discriminación cotidiana",
+    "estado_en_lista": "Bloque 1 de 17",
+    "decision_del_bloque": "Grupo de preguntas",
+    "item_en_grupo": "Ítem 3 de 4"
+  },
+  "diseno_previo": {
+    "proposito_de_uso": "Evaluar si el aspirante reconoce por qué el lenguaje escolar debe evitar términos que reducen a la persona a una condición o déficit.",
+    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación académica o inclusión educativa.",
+    "blueprint": {
+      "problematica_principal": "Uso de lenguaje deficitario o estigmatizante para referirse a personas con discapacidad.",
+      "fuente_autorizada": [
+        "Convención sobre los Derechos de las Personas con Discapacidad",
+        "Decreto 1421 de 2017",
+        "Sentencia C-548 de 2015",
+        "Enfoque de derechos",
+        "Educación inclusiva"
+      ],
+      "componente_modulo": "Lenguaje Inclusivo y Derechos Fundamentales",
+      "competencia": "Uso de lenguaje respetuoso y no discriminatorio",
+      "afirmacion": "El lenguaje escolar debe reconocer primero a la persona y evitar términos que menoscaban su dignidad o refuerzan estigmas.",
+      "evidencia_observable": "Identifica que expresiones como minusválido reducen a la persona a un déficit y deben reemplazarse por lenguaje respetuoso.",
+      "tipo_de_evidencia": "Juicio ético y pedagógico aplicado",
+      "formato": "Selección múltiple con única respuesta",
+      "numero_opciones": 4,
+      "clave": "D"
     },
-    "diseno_previo": {
-        "proposito_de_uso": "Evaluar si el aspirante reconoce por qué el lenguaje escolar debe evitar términos que reducen a la persona a una condición o déficit.",
-        "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación académica o inclusión educativa.",
-        "blueprint": {
-            "problematica_principal": "Uso de lenguaje deficitario o estigmatizante para referirse a personas con discapacidad.",
-            "fuente_autorizada": [
-                "Convención sobre los Derechos de las Personas con Discapacidad",
-                "Decreto 1421 de 2017",
-                "Sentencia C-548 de 2015",
-                "Enfoque de derechos",
-                "Educación inclusiva"
-            ],
-            "componente_modulo": "Lenguaje Inclusivo y Derechos Fundamentales",
-            "competencia": "Uso de lenguaje respetuoso y no discriminatorio",
-            "afirmacion": "El lenguaje escolar debe reconocer primero a la persona y evitar términos que menoscaban su dignidad o refuerzan estigmas.",
-            "evidencia_observable": "Identifica que expresiones como minusválido reducen a la persona a un déficit y deben reemplazarse por lenguaje respetuoso.",
-            "tipo_de_evidencia": "Juicio ético y pedagógico aplicado",
-            "formato": "Selección múltiple con única respuesta",
-            "numero_opciones": 4,
-            "clave": "D"
-        },
-        "claim": "El evaluado comprende que el lenguaje usado en el aula tiene efectos jurídicos, pedagógicos y simbólicos sobre la dignidad, participación y reconocimiento de las personas con discapacidad.",
-        "evidencia_observable": "Selecciona una explicación que justifica el cambio hacia lenguaje centrado en la persona y en los derechos.",
-        "tarea_cognitiva": "Analizar el efecto de términos estigmatizantes y elegir la alternativa respetuosa.",
-        "tipo_de_pregunta": "Pregunta conceptual aplicada",
-        "dificultad_esperada": "Media",
-        "riesgos_de_fairness": [
-            {
-                "riesgo": "Reproducir lenguaje ofensivo",
-                "revision": "Los términos aparecen solo como objeto de análisis y no como recomendación de uso."
-            },
-            {
-                "riesgo": "Centrarse en corrección superficial del lenguaje",
-                "revision": "La clave vincula lenguaje con dignidad, derechos y participación."
-            },
-            {
-                "riesgo": "Ambigüedad terminológica",
-                "revision": "La respuesta correcta prioriza lenguaje respetuoso centrado en la persona."
-            }
-        ]
+    "claim": "El evaluado comprende que el lenguaje usado en el aula tiene efectos jurídicos, pedagógicos y simbólicos sobre la dignidad, participación y reconocimiento de las personas con discapacidad.",
+    "evidencia_observable": "Selecciona una explicación que justifica el cambio hacia lenguaje centrado en la persona y en los derechos.",
+    "tarea_cognitiva": "Analizar el efecto de términos estigmatizantes y elegir la alternativa respetuosa.",
+    "tipo_de_pregunta": "Pregunta conceptual aplicada",
+    "dificultad_esperada": "Media",
+    "riesgos_de_fairness": [
+      {
+        "riesgo": "Reproducir lenguaje ofensivo",
+        "revision": "Los términos aparecen solo como objeto de análisis y no como recomendación de uso."
+      },
+      {
+        "riesgo": "Centrarse en corrección superficial del lenguaje",
+        "revision": "La clave vincula lenguaje con dignidad, derechos y participación."
+      },
+      {
+        "riesgo": "Ambigüedad terminológica",
+        "revision": "La respuesta correcta prioriza lenguaje respetuoso centrado en la persona."
+      }
+    ]
+  },
+  "item": {
+    "enunciado": "En una reunión de docentes, alguien se refiere a varios estudiantes como minusválidos. Otro docente propone revisar el lenguaje usado, porque puede afectar la dignidad y la participación de los estudiantes.\n\n¿Por qué debe cambiarse ese tipo de expresión en el aula?",
+    "opciones": {
+      "A": "Porque el lenguaje no tiene ninguna relación con la inclusión, pero conviene usar palabras de moda.",
+      "B": "Porque usar términos despectivos permite identificar con mayor rapidez a quienes necesitan apoyo.",
+      "C": "Porque lo importante es ocultar la discapacidad y no hablar de ella en la escuela.",
+      "D": "Porque reduce a la persona a un déficit, puede reforzar estigmas y desconoce un enfoque de derechos centrado en la dignidad y la participación."
     },
-    "item": {
-        "enunciado": "En una reunión de docentes, alguien se refiere a varios estudiantes como minusválidos. Otro docente propone revisar el lenguaje usado, porque puede afectar la dignidad y la participación de los estudiantes.\n\n¿Por qué debe cambiarse ese tipo de expresión en el aula?",
-        "opciones": {
-            "A": "Porque el lenguaje no tiene ninguna relación con la inclusión, pero conviene usar palabras de moda.",
-            "B": "Porque usar términos despectivos permite identificar con mayor rapidez a quienes necesitan apoyo.",
-            "C": "Porque lo importante es ocultar la discapacidad y no hablar de ella en la escuela.",
-            "D": "Porque reduce a la persona a un déficit, puede reforzar estigmas y desconoce un enfoque de derechos centrado en la dignidad y la participación."
-        },
-        "respuesta_correcta": "D"
+    "respuesta_correcta": "D"
+  },
+  "ficha_tecnica": {
+    "componente": "Lenguaje Inclusivo y Derechos Fundamentales",
+    "competencia": "Uso de lenguaje respetuoso y no discriminatorio",
+    "claim_evaluado": "El evaluado comprende que el lenguaje usado en el aula tiene efectos jurídicos, pedagógicos y simbólicos sobre la dignidad, participación y reconocimiento de las personas con discapacidad.",
+    "evidencia": "Selecciona una explicación que justifica el cambio hacia lenguaje centrado en la persona y en los derechos.",
+    "proceso_cognitivo": "Análisis ético-pedagógico",
+    "tipo_de_item": "Selección múltiple con única respuesta",
+    "nivel_de_dificultad": "Media",
+    "respuesta_correcta": "D",
+    "distractores": {
+      "A": "Minimiza el vínculo entre lenguaje, dignidad e inclusión.",
+      "B": "Justifica lenguaje estigmatizante.",
+      "C": "Confunde lenguaje respetuoso con invisibilización."
     },
-    "ficha_tecnica": {
-        "componente": "Lenguaje Inclusivo y Derechos Fundamentales",
-        "competencia": "Uso de lenguaje respetuoso y no discriminatorio",
-        "claim_evaluado": "El evaluado comprende que el lenguaje usado en el aula tiene efectos jurídicos, pedagógicos y simbólicos sobre la dignidad, participación y reconocimiento de las personas con discapacidad.",
-        "evidencia": "Selecciona una explicación que justifica el cambio hacia lenguaje centrado en la persona y en los derechos.",
-        "proceso_cognitivo": "Análisis ético-pedagógico",
-        "tipo_de_item": "Selección múltiple con única respuesta",
-        "nivel_de_dificultad": "Media",
-        "respuesta_correcta": "D",
-        "distractores": {
-            "A": "Minimiza el vínculo entre lenguaje, dignidad e inclusión.",
-            "B": "Justifica lenguaje estigmatizante.",
-            "C": "Confunde lenguaje respetuoso con invisibilización."
-        },
-        "fuente_autorizada": [
-            "Convención sobre los Derechos de las Personas con Discapacidad",
-            "Decreto 1421 de 2017",
-            "Sentencia C-548 de 2015",
-            "Enfoque de derechos",
-            "Educación inclusiva"
-        ]
-    },
-    "justificacion_editorial": {
-        "clave": "La opción D es correcta porque el lenguaje deficitario puede afectar la dignidad, reforzar barreras actitudinales y contradecir el enfoque de derechos.",
-        "opcion_A": "Es incorrecta porque el lenguaje sí tiene efectos en inclusión y reconocimiento.",
-        "opcion_B": "Es incorrecta porque la identificación de apoyos no debe basarse en estigmatización.",
-        "opcion_C": "Es incorrecta porque no se trata de ocultar la discapacidad, sino de nombrar respetuosamente."
-    },
-    "revision_fairness": {
-        "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-        "argumento": "El ítem usa términos problemáticos solo para analizarlos y promueve lenguaje respetuoso centrado en derechos."
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem aprobado para banco con revisión normativa y editorial posterior recomendada.",
-        "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre sesgos culturales, lenguaje inclusivo y discriminación cotidiana."
+    "fuente_autorizada": [
+      "Convención sobre los Derechos de las Personas con Discapacidad",
+      "Decreto 1421 de 2017",
+      "Sentencia C-548 de 2015",
+      "Enfoque de derechos",
+      "Educación inclusiva"
+    ]
+  },
+  "justificacion_editorial": {
+    "clave": "D",
+    "opcion_A": "Es incorrecta porque el lenguaje sí tiene efectos en inclusión y reconocimiento.",
+    "opcion_B": "Es incorrecta porque la identificación de apoyos no debe basarse en estigmatización.",
+    "opcion_C": "Es incorrecta porque no se trata de ocultar la discapacidad, sino de nombrar respetuosamente.",
+    "distractores": {
+      "A": "Es incorrecta porque el lenguaje sí tiene efectos en inclusión y reconocimiento.",
+      "B": "Es incorrecta porque la identificación de apoyos no debe basarse en estigmatización.",
+      "C": "Es incorrecta porque no se trata de ocultar la discapacidad, sino de nombrar respetuosamente."
     }
+  },
+  "revision_fairness": {
+    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
+    "argumento": "El ítem usa términos problemáticos solo para analizarlos y promueve lenguaje respetuoso centrado en derechos."
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem aprobado para banco con revisión normativa y editorial posterior recomendada.",
+    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre sesgos culturales, lenguaje inclusivo y discriminación cotidiana."
+  }
 }

@@ -1,36 +1,36 @@
 {
-    "id_item": "MTV_B11_I01",
-    "archivo_sugerido": "MTV_B11_I01_modelo_tecnicista_evaluacion.json",
-    "proposito_de_uso": "Evaluar si el aspirante reconoce el énfasis evaluativo del modelo tecnicista o conductista.",
-    "blueprint": {
-        "componente_modulo": "Modelo tecnicista",
-        "competencia": "Reconocimiento de enfoques evaluativos",
-        "afirmacion": "El modelo tecnicista enfatiza el resultado observable, la repetición exacta, la medición final y el control de respuestas.",
-        "evidencia_observable": "Identifica una práctica evaluativa centrada en repetición, exactitud literal y calificación finalista.",
-        "tipo_de_evidencia": "Reconocimiento conceptual aplicado",
-        "dificultad_esperada": "Media",
-        "clave": "C"
+  "id_item": "MTV_B11_I01",
+  "archivo_sugerido": "MTV_B11_I01_modelo_tecnicista_evaluacion.json",
+  "proposito_de_uso": "Evaluar si el aspirante reconoce el énfasis evaluativo del modelo tecnicista o conductista.",
+  "blueprint": {
+    "componente_modulo": "Modelo tecnicista",
+    "competencia": "Reconocimiento de enfoques evaluativos",
+    "afirmacion": "El modelo tecnicista enfatiza el resultado observable, la repetición exacta, la medición final y el control de respuestas.",
+    "evidencia_observable": "Identifica una práctica evaluativa centrada en repetición, exactitud literal y calificación finalista.",
+    "tipo_de_evidencia": "Reconocimiento conceptual aplicado",
+    "dificultad_esperada": "Media",
+    "clave": "C"
+  },
+  "item": {
+    "enunciado": "En una institución, el docente califica únicamente si el estudiante reproduce una definición con las mismas palabras del libro, sin valorar explicaciones alternativas válidas ni procesos de comprensión.\n\n¿Qué enfoque pedagógico se evidencia principalmente?",
+    "opciones": {
+      "A": "Constructivismo social.",
+      "B": "Aprendizaje significativo.",
+      "C": "Modelo tecnicista o conductista de evaluación.",
+      "D": "Pedagogía emancipadora."
     },
-    "item": {
-        "enunciado": "En una institución, el docente califica únicamente si el estudiante reproduce una definición con las mismas palabras del libro, sin valorar explicaciones alternativas válidas ni procesos de comprensión.\n\n¿Qué enfoque pedagógico se evidencia principalmente?",
-        "opciones": {
-            "A": "Constructivismo social.",
-            "B": "Aprendizaje significativo.",
-            "C": "Modelo tecnicista o conductista de evaluación.",
-            "D": "Pedagogía emancipadora."
-        },
-        "respuesta_correcta": "C"
-    },
-    "justificacion_editorial": {
-        "clave": "La opción C es correcta porque la evaluación se centra en repetición literal y resultado controlado.",
-        "distractores": {
-            "A": "El constructivismo social valora interacción y construcción de significados.",
-            "B": "El aprendizaje significativo exige comprensión y relación con saberes previos.",
-            "D": "La pedagogía emancipadora privilegia diálogo y pensamiento crítico."
-        }
-    },
-    "dictamen_final": {
-        "estado": "Aprobado",
-        "observacion": "Ítem base para diferenciar evaluación tecnicista de evaluación comprensiva."
+    "respuesta_correcta": "C"
+  },
+  "justificacion_editorial": {
+    "clave": "C",
+    "distractores": {
+      "A": "El constructivismo social valora interacción y construcción de significados.",
+      "B": "El aprendizaje significativo exige comprensión y relación con saberes previos.",
+      "D": "La pedagogía emancipadora privilegia diálogo y pensamiento crítico."
     }
+  },
+  "dictamen_final": {
+    "estado": "Aprobado",
+    "observacion": "Ítem base para diferenciar evaluación tecnicista de evaluación comprensiva."
+  }
 }
