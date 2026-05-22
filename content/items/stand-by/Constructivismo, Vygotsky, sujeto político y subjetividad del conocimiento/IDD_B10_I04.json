@@ -1,104 +1,45 @@
 {
   "id_item": "IDD_B10_I04",
-  "archivo_sugerido": "IDD_B10_I04_constructivismo_radical_subjetividad_conocimiento.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B10",
-    "nombre": "Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento",
-    "estado_en_lista": "Bloque 10 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 4 de 5"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía crítica y constructivismo",
+  "tema": "Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento",
+  "subtema": "Constructivismo Radical y Subjetividad",
+  "competencia": "Aplica principios constructivistas y socioculturales para valorar decisiones de enseñanza y formación de sujetos críticos.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA-ALTA",
+  "claim": "Identifica la decisión pedagógica o institucional más coherente con el enfoque evaluado en el caso.",
+  "evidencia": "Selecciona una única alternativa técnicamente superior frente a distractores plausibles.",
+  "tarea": "Analizar la situación planteada y elegir la respuesta más adecuada según el criterio del ítem.",
+  "contexto": "Un docente explica que los estudiantes no reciben el conocimiento como una fotografía exacta de la realidad, sino que lo interpretan desde sus experiencias, lenguaje, esquemas previos y contexto. Por eso, las ideas pueden reorganizarse mediante diálogo, evidencia y reflexión.",
+  "enunciado": "Un docente explica que los estudiantes no reciben el conocimiento como una fotografía exacta de la realidad, sino que lo interpretan desde sus experiencias, lenguaje, esquemas previos y contexto. Por eso, las ideas pueden reorganizarse mediante diálogo, evidencia y reflexión.\n\nSegún el constructivismo radical, ¿por qué el conocimiento no es una copia directa de una realidad externa objetiva?",
+  "opciones": {
+    "A": "Porque no existe ninguna realidad y todas las respuestas son igualmente válidas.",
+    "B": "Porque aprender significa repetir literalmente lo que dice el docente.",
+    "C": "Porque el estudiante no participa en la construcción del conocimiento.",
+    "D": "Porque el sujeto organiza e interpreta la experiencia desde sus esquemas previos, y el conocimiento se construye y se reorganiza mediante interacción y contraste."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende la afirmación constructivista según la cual el conocimiento no es copia directa de una realidad externa, sino construcción mediada por esquemas, experiencias e interpretaciones.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, pedagogía, didáctica o teoría del aprendizaje.",
-    "blueprint": {
-      "problematica_principal": "Concepción ingenua del conocimiento como copia objetiva, directa y neutral de la realidad.",
-      "fuente_autorizada": [
-        "Constructivismo radical",
-        "Epistemología constructivista",
-        "Piaget",
-        "Didáctica general",
-        "Teoría del aprendizaje"
-      ],
-      "componente_modulo": "Constructivismo Radical y Subjetividad",
-      "competencia": "Comprensión epistemológica del aprendizaje",
-      "afirmacion": "El conocimiento se construye desde esquemas, experiencias, lenguaje y contextos; no se recibe como copia pasiva de una realidad externa.",
-      "evidencia_observable": "Reconoce que el estudiante interpreta y organiza la experiencia desde estructuras cognitivas previas.",
-      "tipo_de_evidencia": "Comprensión conceptual aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "D"
-    },
-    "claim": "El evaluado comprende que aprender implica construir interpretaciones viables, contrastables y reorganizables, no copiar mecánicamente la realidad.",
-    "evidencia_observable": "Selecciona una explicación adecuada de la subjetividad del conocimiento en el constructivismo radical.",
-    "tarea_cognitiva": "Diferenciar constructivismo de realismo ingenuo o relativismo absoluto.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Media-Alta",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confundir constructivismo con que cualquier idea es válida",
-        "revision": "La clave habla de construcción, contraste y reorganización, no de relativismo absoluto."
-      },
-      {
-        "riesgo": "Lenguaje filosófico abstracto",
-        "revision": "El ítem aterriza la noción en una situación de aprendizaje."
-      },
-      {
-        "riesgo": "Negar la realidad externa",
-        "revision": "La opción correcta no niega la realidad, sino la idea de copia pasiva."
-      }
-    ]
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque el constructivismo no afirma que cualquier idea sea igualmente válida.",
+    "B": "Es incorrecta porque reduce el aprendizaje a repetición.",
+    "C": "Es incorrecta porque desconoce la actividad del sujeto.",
+    "D": "Clave correcta."
   },
-  "item": {
-    "enunciado": "Un docente explica que los estudiantes no reciben el conocimiento como una fotografía exacta de la realidad, sino que lo interpretan desde sus experiencias, lenguaje, esquemas previos y contexto. Por eso, las ideas pueden reorganizarse mediante diálogo, evidencia y reflexión.\n\nSegún el constructivismo radical, ¿por qué el conocimiento no es una copia directa de una realidad externa objetiva?",
-    "opciones": {
-      "A": "Porque no existe ninguna realidad y todas las respuestas son igualmente válidas.",
-      "B": "Porque aprender significa repetir literalmente lo que dice el docente.",
-      "C": "Porque el estudiante no participa en la construcción del conocimiento.",
-      "D": "Porque el sujeto organiza e interpreta la experiencia desde sus esquemas previos, y el conocimiento se construye y se reorganiza mediante interacción y contraste."
-    },
-    "respuesta_correcta": "D"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Contexto educativo general y lenguaje técnico accesible sin sesgos culturales innecesarios."
   },
-  "ficha_tecnica": {
-    "componente": "Constructivismo Radical y Subjetividad",
-    "competencia": "Comprensión epistemológica del aprendizaje",
-    "claim_evaluado": "El evaluado comprende que aprender implica construir interpretaciones viables, contrastables y reorganizables, no copiar mecánicamente la realidad.",
-    "evidencia": "Selecciona una explicación adecuada de la subjetividad del conocimiento en el constructivismo radical.",
-    "proceso_cognitivo": "Comprensión conceptual aplicada",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media-Alta",
-    "respuesta_correcta": "D",
-    "distractores": {
-      "A": "Confunde constructivismo con relativismo absoluto.",
-      "B": "Representa un modelo transmisivo.",
-      "C": "Niega el papel activo del estudiante."
-    },
-    "fuente_autorizada": [
-      "Constructivismo radical",
-      "Epistemología constructivista",
-      "Piaget",
-      "Didáctica general",
-      "Teoría del aprendizaje"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado claro con una sola tarea cognitiva."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "opcion_A": "Es incorrecta porque el constructivismo no afirma que cualquier idea sea igualmente válida.",
-    "opcion_B": "Es incorrecta porque reduce el aprendizaje a repetición.",
-    "opcion_C": "Es incorrecta porque desconoce la actividad del sujeto.",
-    "distractores": {
-      "A": "Es incorrecta porque el constructivismo no afirma que cualquier idea sea igualmente válida.",
-      "B": "Es incorrecta porque reduce el aprendizaje a repetición.",
-      "C": "Es incorrecta porque desconoce la actividad del sujeto."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem presenta una idea epistemológica compleja en lenguaje pedagógico y evita caricaturizar el constructivismo."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 5 preguntas sobre constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento/IDD_B10_I04.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

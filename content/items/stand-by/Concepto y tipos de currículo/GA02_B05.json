@@ -1,387 +1,45 @@
 {
-    "bloque": {
-        "codigo_bloque": "GA02_B05",
-        "nombre": "Concepto y tipos de currículo",
-        "estado_en_lista": "Bloque 5 de 8",
-        "decision_del_bloque": "Grupo de preguntas",
-        "preguntas_recomendadas": 4
-    },
-    "preguntas": [
-        {
-            "id_item": "GA02_B05_I01",
-            "archivo_sugerido": "GA02_B05_I01_concepto_curriculo.json",
-            "diseno_previo": {
-                "proposito_de_uso": "Evaluar si el aspirante comprende el currículo educativo como un conjunto integral de criterios, planes de estudio, programas, metodologías y procesos orientados a la formación integral, y no como una simple lista de temas.",
-                "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
-                "blueprint": {
-                    "problematica_principal": "Confusión entre currículo integral y listado de contenidos.",
-                    "fuente_autorizada": [
-                        "Ley 115 de 1994",
-                        "Lineamientos curriculares del Ministerio de Educación Nacional",
-                        "Proyecto Educativo Institucional",
-                        "Orientaciones curriculares institucionales"
-                    ],
-                    "componente_modulo": "Currículo Educativo",
-                    "competencia": "Comprensión curricular",
-                    "afirmacion": "El currículo comprende criterios, planes de estudio, programas, metodologías y procesos que contribuyen a la formación integral.",
-                    "evidencia_observable": "Selecciona una definición integral de currículo educativo y reconoce sus componentes principales.",
-                    "tipo_de_evidencia": "Comprensión conceptual aplicada",
-                    "formato": "Selección múltiple con única respuesta",
-                    "numero_opciones": 4,
-                    "clave": "B"
-                },
-                "claim": "El evaluado reconoce que el currículo educativo es una construcción integral que organiza intenciones formativas, criterios, planes, programas, metodologías, recursos, procesos y evaluación para orientar la formación de los estudiantes.",
-                "evidencia_observable": "Identifica la definición que integra criterios, planes de estudio, programas, metodologías y procesos formativos.",
-                "tarea_cognitiva": "Distinguir una concepción integral de currículo frente a definiciones reducidas o fragmentadas.",
-                "tipo_de_pregunta": "Pregunta conceptual aplicada",
-                "dificultad_esperada": "Baja",
-                "riesgos_de_fairness": [
-                    {
-                        "riesgo": "Sesgo por memorización normativa literal",
-                        "revision": "El ítem no exige recordar textualmente una norma, sino reconocer el sentido integral del concepto de currículo."
-                    },
-                    {
-                        "riesgo": "Ambigüedad entre currículo y plan de estudios",
-                        "revision": "La clave diferencia el currículo como marco amplio frente al plan de estudios como uno de sus componentes."
-                    },
-                    {
-                        "riesgo": "Sesgo por área disciplinar",
-                        "revision": "El ítem aplica a cualquier área y no exige conocimiento especializado de una asignatura."
-                    },
-                    {
-                        "riesgo": "Lenguaje técnico excesivo",
-                        "revision": "Los términos centrales se presentan en una definición funcional y contextualizada."
-                    }
-                ]
-            },
-            "item": {
-                "enunciado": "En una reunión académica, algunos docentes afirman que el currículo educativo es únicamente la lista de temas que se deben enseñar en cada asignatura. La coordinación propone revisar una definición más integral, coherente con los lineamientos educativos.\n\n¿Cuál opción define mejor el currículo educativo?",
-                "opciones": {
-                    "A": "La lista de temas que cada docente decide desarrollar de acuerdo con sus preferencias personales.",
-                    "B": "El conjunto de criterios, planes de estudio, programas, metodologías y procesos que contribuyen a la formación integral y a la construcción de la identidad institucional.",
-                    "C": "El horario semanal de clases, organizado por asignaturas, docentes y salones.",
-                    "D": "El conjunto de actividades extracurriculares que se realizan fuera de la jornada académica."
-                },
-                "respuesta_correcta": "B"
-            },
-            "ficha_tecnica": {
-                "componente": "Currículo Educativo",
-                "competencia": "Comprensión curricular",
-                "claim_evaluado": "El evaluado reconoce que el currículo educativo es una construcción integral que organiza intenciones formativas, criterios, planes, programas, metodologías, recursos, procesos y evaluación para orientar la formación de los estudiantes.",
-                "evidencia": "Identifica la definición que integra criterios, planes de estudio, programas, metodologías y procesos formativos.",
-                "proceso_cognitivo": "Comprensión conceptual aplicada",
-                "tipo_de_item": "Selección múltiple con única respuesta",
-                "nivel_de_dificultad": "Baja",
-                "respuesta_correcta": "B",
-                "distractores": {
-                    "A": "Reduce el currículo a decisiones individuales del docente y a listados de temas.",
-                    "C": "Confunde currículo con horario escolar.",
-                    "D": "Confunde currículo con actividades extracurriculares aisladas."
-                },
-                "fuente_autorizada": [
-                    "Ley 115 de 1994",
-                    "Lineamientos curriculares del Ministerio de Educación Nacional",
-                    "Proyecto Educativo Institucional",
-                    "Orientaciones curriculares institucionales"
-                ]
-            },
-            "justificacion_editorial": {
-                "clave": "La opción B es correcta porque presenta el currículo como una construcción integral que incluye criterios, planes de estudio, programas, metodologías y procesos orientados a la formación integral.",
-                "opcion_A": "Es incorrecta porque reduce el currículo a una lista de temas y a preferencias personales del docente.",
-                "opcion_C": "Es incorrecta porque el horario organiza tiempos y espacios, pero no define por sí mismo el currículo.",
-                "opcion_D": "Es incorrecta porque las actividades extracurriculares pueden hacer parte de la vida institucional, pero no equivalen al currículo en sentido integral."
-            },
-            "revision_fairness": {
-                "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-                "argumento": "El ítem no exige conocimiento normativo literal ni experiencia directa en diseño curricular. La situación ofrece suficiente contexto para reconocer una definición integral de currículo."
-            },
-            "dictamen_final": {
-                "estado": "Aprobado",
-                "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-                "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre concepto y tipos de currículo."
-            }
-        },
-        {
-            "id_item": "GA02_B05_I02",
-            "archivo_sugerido": "GA02_B05_I02_curriculo_oficial.json",
-            "diseno_previo": {
-                "proposito_de_uso": "Evaluar si el aspirante reconoce el currículo oficial como aquel formalmente establecido y fundamentado en normas, lineamientos, estándares, orientaciones del Ministerio de Educación Nacional y decisiones institucionales expresadas en el PEI.",
-                "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
-                "blueprint": {
-                    "problematica_principal": "Confusión sobre la naturaleza y fundamento del currículo oficial.",
-                    "fuente_autorizada": [
-                        "Ley 115 de 1994",
-                        "Decretos reglamentarios del sector educativo",
-                        "Lineamientos curriculares del Ministerio de Educación Nacional",
-                        "Proyecto Educativo Institucional"
-                    ],
-                    "componente_modulo": "Currículo Educativo",
-                    "competencia": "Comprensión curricular",
-                    "afirmacion": "El currículo oficial se fundamenta en normas, lineamientos, estándares y orientaciones institucionales formalmente adoptadas.",
-                    "evidencia_observable": "Diferencia el currículo oficial de prácticas informales, improvisadas o no documentadas.",
-                    "tipo_de_evidencia": "Comprensión conceptual aplicada",
-                    "formato": "Selección múltiple con única respuesta",
-                    "numero_opciones": 4,
-                    "clave": "A"
-                },
-                "claim": "El evaluado comprende que el currículo oficial corresponde a la propuesta curricular formalmente definida, documentada y sustentada en referentes normativos, pedagógicos e institucionales.",
-                "evidencia_observable": "Selecciona la definición que vincula currículo oficial con leyes, decretos, lineamientos, estándares, PEI y planes institucionales.",
-                "tarea_cognitiva": "Distinguir el currículo oficial de prácticas espontáneas, ocultas o no formalizadas.",
-                "tipo_de_pregunta": "Pregunta conceptual aplicada",
-                "dificultad_esperada": "Media",
-                "riesgos_de_fairness": [
-                    {
-                        "riesgo": "Sesgo por conocimiento jurídico especializado",
-                        "revision": "El ítem no exige citar normas específicas; evalúa la comprensión general de currículo oficial."
-                    },
-                    {
-                        "riesgo": "Ambigüedad entre currículo oficial y currículo oculto",
-                        "revision": "La clave enfatiza formalidad, documentación y fundamento normativo."
-                    },
-                    {
-                        "riesgo": "Sesgo por experiencia institucional",
-                        "revision": "No exige haber participado en la formulación del currículo oficial."
-                    },
-                    {
-                        "riesgo": "Lenguaje técnico",
-                        "revision": "El término currículo oficial se explica mediante sus fuentes y función."
-                    }
-                ]
-            },
-            "item": {
-                "enunciado": "Una institución educativa revisa sus documentos curriculares y diferencia entre lo que está formalmente establecido en sus planes, lineamientos y acuerdos institucionales, y aquello que ocurre de manera informal en la vida cotidiana de la escuela.\n\n¿Cómo se define mejor el currículo oficial?",
-                "opciones": {
-                    "A": "Como la propuesta curricular formal, documentada y fundamentada en leyes, decretos, lineamientos, estándares, orientaciones del MEN y decisiones institucionales expresadas en el PEI.",
-                    "B": "Como el conjunto de aprendizajes no escritos que los estudiantes adquieren por la convivencia diaria y las prácticas culturales de la escuela.",
-                    "C": "Como los contenidos planeados que nunca se enseñan por falta de tiempo, pertinencia o mediación pedagógica.",
-                    "D": "Como las actividades improvisadas que cada docente decide realizar sin relación con el PEI ni con referentes normativos."
-                },
-                "respuesta_correcta": "A"
-            },
-            "ficha_tecnica": {
-                "componente": "Currículo Educativo",
-                "competencia": "Comprensión curricular",
-                "claim_evaluado": "El evaluado comprende que el currículo oficial corresponde a la propuesta curricular formalmente definida, documentada y sustentada en referentes normativos, pedagógicos e institucionales.",
-                "evidencia": "Selecciona la definición que vincula currículo oficial con leyes, decretos, lineamientos, estándares, PEI y planes institucionales.",
-                "proceso_cognitivo": "Comprensión conceptual aplicada",
-                "tipo_de_item": "Selección múltiple con única respuesta",
-                "nivel_de_dificultad": "Media",
-                "respuesta_correcta": "A",
-                "distractores": {
-                    "B": "Describe el currículo oculto, no el currículo oficial.",
-                    "C": "Describe el currículo nulo, no el currículo oficial.",
-                    "D": "Describe una práctica improvisada sin sustento curricular formal."
-                },
-                "fuente_autorizada": [
-                    "Ley 115 de 1994",
-                    "Decretos reglamentarios del sector educativo",
-                    "Lineamientos curriculares del Ministerio de Educación Nacional",
-                    "Proyecto Educativo Institucional"
-                ]
-            },
-            "justificacion_editorial": {
-                "clave": "La opción A es correcta porque el currículo oficial se caracteriza por estar formalmente documentado y sustentado en referentes normativos, pedagógicos e institucionales.",
-                "opcion_B": "Es incorrecta porque se refiere al currículo oculto, relacionado con aprendizajes implícitos de la vida escolar.",
-                "opcion_C": "Es incorrecta porque alude al currículo nulo, es decir, aquello que se planea o debería enseñarse pero no llega a desarrollarse efectivamente.",
-                "opcion_D": "Es incorrecta porque una práctica improvisada y desconectada del PEI no constituye currículo oficial."
-            },
-            "revision_fairness": {
-                "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-                "argumento": "El ítem no exige conocer documentos institucionales específicos. Evalúa la distinción general entre currículo oficial, oculto, nulo e improvisado."
-            },
-            "dictamen_final": {
-                "estado": "Aprobado",
-                "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-                "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre concepto y tipos de currículo."
-            }
-        },
-        {
-            "id_item": "GA02_B05_I03",
-            "archivo_sugerido": "GA02_B05_I03_curriculo_oculto.json",
-            "diseno_previo": {
-                "proposito_de_uso": "Evaluar si el aspirante reconoce el currículo oculto como el conjunto de aprendizajes, valores, normas, actitudes, relaciones y respuestas a necesidades emocionales que se transmiten en la vida cotidiana de la escuela sin estar necesariamente escritos en el plan de estudios.",
-                "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
-                "blueprint": {
-                    "problematica_principal": "Dificultad para reconocer aprendizajes no explícitos que inciden en la formación del estudiante.",
-                    "fuente_autorizada": [
-                        "Teoría curricular",
-                        "Lineamientos curriculares del Ministerio de Educación Nacional",
-                        "Proyecto Educativo Institucional",
-                        "Orientaciones sobre convivencia y formación integral"
-                    ],
-                    "componente_modulo": "Currículo Educativo",
-                    "competencia": "Comprensión curricular",
-                    "afirmacion": "El currículo oculto expresa aprendizajes no escritos que se transmiten mediante la cultura escolar, las relaciones, los valores y las prácticas cotidianas.",
-                    "evidencia_observable": "Identifica una situación en la que el docente atiende valores, necesidades afectivas o problemáticas invisibles no previstas explícitamente en el plan de estudios.",
-                    "tipo_de_evidencia": "Clasificación curricular en situación escolar",
-                    "formato": "Selección múltiple con única respuesta",
-                    "numero_opciones": 4,
-                    "clave": "C"
-                },
-                "claim": "El evaluado comprende que el currículo oculto opera en las interacciones, normas, valores, expectativas y respuestas cotidianas de la escuela, aunque no esté formalmente escrito como contenido curricular.",
-                "evidencia_observable": "Clasifica como currículo oculto una actuación docente que atiende necesidades emocionales, valores y problemáticas invisibles de los estudiantes en la vida diaria.",
-                "tarea_cognitiva": "Analizar una situación de aula y reconocer el tipo de currículo que se manifiesta.",
-                "tipo_de_pregunta": "Caso situacional de clasificación conceptual",
-                "dificultad_esperada": "Media",
-                "riesgos_de_fairness": [
-                    {
-                        "riesgo": "Confusión entre currículo oculto y orientación escolar",
-                        "revision": "La clave se centra en aprendizajes y valores no escritos que emergen en la práctica cotidiana, no en una dependencia institucional específica."
-                    },
-                    {
-                        "riesgo": "Sesgo por experiencias personales del aspirante",
-                        "revision": "El caso presenta una situación concreta y común en el aula, sin requerir vivencias particulares."
-                    },
-                    {
-                        "riesgo": "Ambigüedad entre currículo oculto y currículo oficial",
-                        "revision": "La opción correcta se diferencia porque no está escrita en el plan de estudios, pero sí influye en la formación."
-                    },
-                    {
-                        "riesgo": "Tratamiento de necesidades emocionales",
-                        "revision": "El ítem aborda la dimensión emocional sin diagnósticos ni etiquetas sobre estudiantes."
-                    }
-                ]
-            },
-            "item": {
-                "enunciado": "Durante el desarrollo de sus clases, una docente identifica que varios estudiantes presentan dificultades de convivencia, baja autoestima y conflictos que afectan su participación. Aunque estos temas no aparecen como contenidos explícitos del plan de estudios, la docente abre espacios de diálogo, promueve el respeto, trabaja la empatía y atiende situaciones emocionales que inciden en el aprendizaje.\n\n¿Qué tipo de currículo se evidencia principalmente en esta actuación?",
-                "opciones": {
-                    "A": "Currículo oficial, porque corresponde exclusivamente a los contenidos definidos en normas, planes y programas institucionales.",
-                    "B": "Currículo nulo, porque son contenidos planeados que nunca llegan a enseñarse.",
-                    "C": "Currículo oculto, porque se relaciona con valores, normas, actitudes y necesidades no escritas que se transmiten en la vida cotidiana escolar.",
-                    "D": "Currículo inexistente, porque todo lo que no está escrito en el plan de estudios carece de valor formativo."
-                },
-                "respuesta_correcta": "C"
-            },
-            "ficha_tecnica": {
-                "componente": "Currículo Educativo",
-                "competencia": "Comprensión curricular",
-                "claim_evaluado": "El evaluado comprende que el currículo oculto opera en las interacciones, normas, valores, expectativas y respuestas cotidianas de la escuela, aunque no esté formalmente escrito como contenido curricular.",
-                "evidencia": "Clasifica como currículo oculto una actuación docente que atiende necesidades emocionales, valores y problemáticas invisibles de los estudiantes en la vida diaria.",
-                "proceso_cognitivo": "Clasificación conceptual en contexto",
-                "tipo_de_item": "Selección múltiple con única respuesta",
-                "nivel_de_dificultad": "Media",
-                "respuesta_correcta": "C",
-                "distractores": {
-                    "A": "Confunde currículo oculto con currículo oficial formalmente documentado.",
-                    "B": "Confunde currículo oculto con currículo nulo.",
-                    "D": "Niega el valor formativo de aprendizajes no escritos."
-                },
-                "fuente_autorizada": [
-                    "Teoría curricular",
-                    "Lineamientos curriculares del Ministerio de Educación Nacional",
-                    "Proyecto Educativo Institucional",
-                    "Orientaciones sobre convivencia y formación integral"
-                ]
-            },
-            "justificacion_editorial": {
-                "clave": "La opción C es correcta porque la situación describe aprendizajes y prácticas formativas no escritos formalmente en el plan de estudios, pero presentes en la vida cotidiana de la escuela: valores, convivencia, empatía, necesidades emocionales y relaciones.",
-                "opcion_A": "Es incorrecta porque el currículo oficial se refiere a lo formalmente establecido en documentos y referentes institucionales.",
-                "opcion_B": "Es incorrecta porque el currículo nulo alude a lo que no se enseña, mientras el caso muestra aprendizajes que sí se transmiten cotidianamente.",
-                "opcion_D": "Es incorrecta porque desconoce que lo no escrito también puede tener efectos formativos importantes."
-            },
-            "revision_fairness": {
-                "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-                "argumento": "El ítem no patologiza ni etiqueta a los estudiantes. Evalúa la comprensión del currículo oculto como dimensión formativa de la vida escolar cotidiana."
-            },
-            "dictamen_final": {
-                "estado": "Aprobado",
-                "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-                "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre concepto y tipos de currículo."
-            }
-        },
-        {
-            "id_item": "GA02_B05_I04",
-            "archivo_sugerido": "GA02_B05_I04_curriculo_nulo.json",
-            "diseno_previo": {
-                "proposito_de_uso": "Evaluar si el aspirante reconoce el currículo nulo como aquello que aparece planeado o esperado en el currículo formal, pero que no se enseña realmente en el aula por falta de tiempo, exceso de contenidos, baja pertinencia o dificultades pedagógicas.",
-                "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
-                "blueprint": {
-                    "problematica_principal": "Exceso de contenidos planificados que no se enseñan efectivamente en el aula.",
-                    "fuente_autorizada": [
-                        "Teoría curricular",
-                        "Lineamientos curriculares del Ministerio de Educación Nacional",
-                        "Proyecto Educativo Institucional",
-                        "Planeación curricular institucional"
-                    ],
-                    "componente_modulo": "Currículo Educativo",
-                    "competencia": "Comprensión curricular",
-                    "afirmacion": "El currículo nulo se evidencia cuando contenidos, aprendizajes o experiencias planificadas no se desarrollan efectivamente.",
-                    "evidencia_observable": "Reconoce una situación en la que un exceso de temarios planificados no llega a enseñarse en el aula.",
-                    "tipo_de_evidencia": "Clasificación curricular en situación escolar",
-                    "formato": "Selección múltiple con única respuesta",
-                    "numero_opciones": 4,
-                    "clave": "D"
-                },
-                "claim": "El evaluado comprende que el currículo nulo permite identificar brechas entre lo planificado en el papel y lo efectivamente enseñado, aprendido o vivido en el aula.",
-                "evidencia_observable": "Clasifica como currículo nulo una situación en la que contenidos planificados quedan sin desarrollarse por falta de tiempo o mediación pedagógica.",
-                "tarea_cognitiva": "Analizar una situación de planeación curricular y reconocer el tipo de currículo que se manifiesta.",
-                "tipo_de_pregunta": "Caso situacional de clasificación conceptual",
-                "dificultad_esperada": "Media",
-                "riesgos_de_fairness": [
-                    {
-                        "riesgo": "Culpabilización del docente",
-                        "revision": "El ítem no atribuye la omisión exclusivamente al docente; presenta causas curriculares y organizativas como exceso de temarios o falta de tiempo."
-                    },
-                    {
-                        "riesgo": "Ambigüedad entre currículo oficial y currículo nulo",
-                        "revision": "La clave enfatiza la brecha entre lo planificado y lo efectivamente enseñado."
-                    },
-                    {
-                        "riesgo": "Sesgo por área disciplinar",
-                        "revision": "La situación puede aplicarse a cualquier área con exceso de contenidos."
-                    },
-                    {
-                        "riesgo": "Lenguaje metafórico de currículo de papel",
-                        "revision": "El enunciado explica el sentido de la expresión mediante una situación concreta."
-                    }
-                ]
-            },
-            "item": {
-                "enunciado": "En una institución, la malla curricular de un área incluye una gran cantidad de temarios para el año escolar. Al finalizar el periodo, varios contenidos aparecen en la planeación, pero nunca fueron enseñados ni trabajados con los estudiantes debido al exceso de temas, falta de tiempo y escasa mediación pedagógica.\n\n¿Cómo se denomina este tipo de currículo de papel que está planificado, pero no se enseña realmente en el aula?",
-                "opciones": {
-                    "A": "Currículo oficial, porque todo lo escrito en la planeación se convierte automáticamente en aprendizaje logrado.",
-                    "B": "Currículo oculto, porque corresponde a valores y normas no escritas que se transmiten en la vida escolar.",
-                    "C": "Currículo flexible, porque permite eliminar cualquier contenido sin revisar su pertinencia.",
-                    "D": "Currículo nulo, porque corresponde a contenidos o experiencias planificadas que no se desarrollan efectivamente."
-                },
-                "respuesta_correcta": "D"
-            },
-            "ficha_tecnica": {
-                "componente": "Currículo Educativo",
-                "competencia": "Comprensión curricular",
-                "claim_evaluado": "El evaluado comprende que el currículo nulo permite identificar brechas entre lo planificado en el papel y lo efectivamente enseñado, aprendido o vivido en el aula.",
-                "evidencia": "Clasifica como currículo nulo una situación en la que contenidos planificados quedan sin desarrollarse por falta de tiempo o mediación pedagógica.",
-                "proceso_cognitivo": "Clasificación conceptual en contexto",
-                "tipo_de_item": "Selección múltiple con única respuesta",
-                "nivel_de_dificultad": "Media",
-                "respuesta_correcta": "D",
-                "distractores": {
-                    "A": "Confunde lo escrito en la planeación con lo efectivamente enseñado y aprendido.",
-                    "B": "Describe el currículo oculto, no el currículo nulo.",
-                    "C": "Confunde flexibilidad curricular con omisión no analizada de contenidos."
-                },
-                "fuente_autorizada": [
-                    "Teoría curricular",
-                    "Lineamientos curriculares del Ministerio de Educación Nacional",
-                    "Proyecto Educativo Institucional",
-                    "Planeación curricular institucional"
-                ]
-            },
-            "justificacion_editorial": {
-                "clave": "La opción D es correcta porque el currículo nulo se refiere a contenidos, experiencias o aprendizajes que aparecen planificados, pero no se desarrollan efectivamente en el aula.",
-                "opcion_A": "Es incorrecta porque estar escrito en la planeación no garantiza que el contenido se enseñe ni que produzca aprendizaje.",
-                "opcion_B": "Es incorrecta porque el currículo oculto se relaciona con aprendizajes implícitos de la vida escolar, no con contenidos planificados y omitidos.",
-                "opcion_C": "Es incorrecta porque la flexibilidad curricular implica decisiones pedagógicas justificadas, no la simple omisión de contenidos por falta de tiempo o exceso de temarios."
-            },
-            "revision_fairness": {
-                "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-                "argumento": "El caso no culpa individualmente al docente ni a los estudiantes. Presenta el currículo nulo como una brecha entre planeación y enseñanza efectiva, útil para revisar pertinencia, tiempos y decisiones curriculares."
-            },
-            "dictamen_final": {
-                "estado": "Aprobado",
-                "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-                "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre concepto y tipos de currículo."
-            }
-        }
-    ]
+  "id_item": "GA02_B05_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión curricular",
+  "tema": "Concepto y tipos de currículo",
+  "subtema": "Currículo Educativo",
+  "competencia": "Distingue tipos de currículo y su manifestación en prácticas institucionales y de aula.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "BAJA",
+  "claim": "Identifica la decisión pedagógica o institucional más coherente con el enfoque evaluado en el caso.",
+  "evidencia": "Selecciona una única alternativa técnicamente superior frente a distractores plausibles.",
+  "tarea": "Analizar la situación planteada y elegir la respuesta más adecuada según el criterio del ítem.",
+  "contexto": "En una reunión académica, algunos docentes afirman que el currículo educativo es únicamente la lista de temas que se deben enseñar en cada asignatura. La coordinación propone revisar una definición más integral, coherente con los lineamientos educativos.",
+  "enunciado": "En una reunión académica, algunos docentes afirman que el currículo educativo es únicamente la lista de temas que se deben enseñar en cada asignatura. La coordinación propone revisar una definición más integral, coherente con los lineamientos educativos.\n\n¿Cuál opción define mejor el currículo educativo?",
+  "opciones": {
+    "A": "La lista de temas que cada docente decide desarrollar de acuerdo con sus preferencias personales.",
+    "B": "El conjunto de criterios, planes de estudio, programas, metodologías y procesos que contribuyen a la formación integral y a la construcción de la identidad institucional.",
+    "C": "El horario semanal de clases, organizado por asignaturas, docentes y salones.",
+    "D": "El conjunto de actividades extracurriculares que se realizan fuera de la jornada académica."
+  },
+  "clave": "B",
+  "justificacion_clave": "La opción B es correcta porque presenta el currículo como una construcción integral que incluye criterios, planes de estudio, programas, metodologías y procesos orientados a la formación integral.",
+  "distractores_funcion": {
+    "A": "Reduce el currículo a decisiones individuales del docente y a listados de temas.",
+    "B": "Clave correcta.",
+    "C": "Confunde currículo con horario escolar.",
+    "D": "Confunde currículo con actividades extracurriculares aisladas."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Contexto educativo general y lenguaje técnico accesible sin sesgos culturales innecesarios."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado claro con una sola tarea cognitiva."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Concepto y tipos de currículo/GA02_B05.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
 }

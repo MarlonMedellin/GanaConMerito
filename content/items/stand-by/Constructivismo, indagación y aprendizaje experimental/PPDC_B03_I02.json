@@ -1,108 +1,45 @@
 {
   "id_item": "PPDC_B03_I02",
-  "archivo_sugerido": "PPDC_B03_I02_freinet_tanteo_experimental.json",
-  "bloque": {
-    "codigo_bloque": "PPDC_B03",
-    "nombre": "Constructivismo, indagación y aprendizaje experimental",
-    "estado_en_lista": "Bloque 3 de 7",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 2 de 2"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Didáctica constructivista",
+  "tema": "Constructivismo, indagación y aprendizaje experimental",
+  "subtema": "Pedagogía, Didáctica y Constructivismo",
+  "competencia": "Selecciona estrategias de indagación y aprendizaje experimental coherentes con un enfoque constructivista.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la decisión pedagógica o institucional más coherente con el enfoque evaluado en el caso.",
+  "evidencia": "Selecciona una única alternativa técnicamente superior frente a distractores plausibles.",
+  "tarea": "Analizar la situación planteada y elegir la respuesta más adecuada según el criterio del ítem.",
+  "contexto": "Un docente compara dos formas de enseñar un tema: en la primera, los estudiantes memorizan definiciones para repetirlas; en la segunda, exploran una situación, prueban soluciones, se equivocan, ajustan sus procedimientos y explican lo aprendido. Desde la perspectiva de Celestin Freinet y la escuela activa, esta segunda opción se relaciona con el tanteo experimental.",
+  "enunciado": "Un docente compara dos formas de enseñar un tema: en la primera, los estudiantes memorizan definiciones para repetirlas; en la segunda, exploran una situación, prueban soluciones, se equivocan, ajustan sus procedimientos y explican lo aprendido. Desde la perspectiva de Celestin Freinet y la escuela activa, esta segunda opción se relaciona con el tanteo experimental.\n\n¿Por qué el tanteo experimental y el aprender haciendo generan aprendizajes más consolidados que la simple memorización de temarios?",
+  "opciones": {
+    "A": "Porque permiten que el estudiante actúe, pruebe, se equivoque, reflexione y reconstruya sus ideas, apropiándose del conocimiento con sentido.",
+    "B": "Porque eliminan la necesidad de orientar al estudiante y dejan que todo aprendizaje ocurra sin intervención docente.",
+    "C": "Porque reemplazan todos los contenidos escolares por actividades libres sin propósito académico.",
+    "D": "Porque hacen innecesaria la evaluación, ya que toda experiencia práctica produce automáticamente aprendizaje profundo."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce el valor pedagógico del tanteo experimental y del aprender haciendo en la construcción de aprendizajes más consolidados que la simple memorización de temarios.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "Reducción del aprendizaje a memorización de temarios y desconocimiento del valor de la experiencia.",
-      "fuente_autorizada": [
-        "Pedagogía activa",
-        "Celestin Freinet",
-        "Enfoque constructivista",
-        "Didáctica general",
-        "Orientaciones pedagógicas institucionales"
-      ],
-      "componente_modulo": "Pedagogía, Didáctica y Constructivismo",
-      "competencia": "Aprendizaje experimental",
-      "afirmacion": "El tanteo experimental y el aprender haciendo consolidan aprendizajes porque implican acción, error, reflexión, ajuste y apropiación.",
-      "evidencia_observable": "Reconoce que la experiencia activa permite construir conocimiento con mayor sentido que la memorización aislada.",
-      "tipo_de_evidencia": "Comprensión pedagógica aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que, desde la escuela activa, el aprendizaje se consolida cuando el estudiante experimenta, prueba, se equivoca, ajusta sus procedimientos y construye sentido a partir de la acción.",
-    "evidencia_observable": "Selecciona una explicación que diferencia el aprendizaje experimental de la memorización mecánica.",
-    "tarea_cognitiva": "Interpretar el principio pedagógico del tanteo experimental y aplicarlo a una situación de aula.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Sesgo por conocimiento histórico de Freinet",
-        "revision": "El ítem no exige memorizar datos biográficos; evalúa el principio pedagógico de aprender haciendo."
-      },
-      {
-        "riesgo": "Confusión entre experimentación e improvisación",
-        "revision": "La clave presenta el tanteo experimental como proceso orientado, con error, ajuste y reflexión."
-      },
-      {
-        "riesgo": "Sesgo por área disciplinar",
-        "revision": "El principio aplica a distintas áreas, no solo a ciencias experimentales."
-      },
-      {
-        "riesgo": "Ambigüedad entre memorizar y comprender",
-        "revision": "Los distractores diferencian reproducción de información de apropiación significativa."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque aprender haciendo no implica ausencia de orientación docente.",
+    "C": "Es incorrecta porque la pedagogía activa no elimina los contenidos, sino que busca que se construyan con sentido.",
+    "D": "Es incorrecta porque la experiencia necesita reflexión, mediación y evaluación formativa para convertirse en aprendizaje profundo."
   },
-  "item": {
-    "enunciado": "Un docente compara dos formas de enseñar un tema: en la primera, los estudiantes memorizan definiciones para repetirlas; en la segunda, exploran una situación, prueban soluciones, se equivocan, ajustan sus procedimientos y explican lo aprendido. Desde la perspectiva de Celestin Freinet y la escuela activa, esta segunda opción se relaciona con el tanteo experimental.\n\n¿Por qué el tanteo experimental y el aprender haciendo generan aprendizajes más consolidados que la simple memorización de temarios?",
-    "opciones": {
-      "A": "Porque permiten que el estudiante actúe, pruebe, se equivoque, reflexione y reconstruya sus ideas, apropiándose del conocimiento con sentido.",
-      "B": "Porque eliminan la necesidad de orientar al estudiante y dejan que todo aprendizaje ocurra sin intervención docente.",
-      "C": "Porque reemplazan todos los contenidos escolares por actividades libres sin propósito académico.",
-      "D": "Porque hacen innecesaria la evaluación, ya que toda experiencia práctica produce automáticamente aprendizaje profundo."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Contexto educativo general y lenguaje técnico accesible sin sesgos culturales innecesarios."
   },
-  "ficha_tecnica": {
-    "componente": "Pedagogía, Didáctica y Constructivismo",
-    "competencia": "Aprendizaje experimental",
-    "claim_evaluado": "El evaluado comprende que, desde la escuela activa, el aprendizaje se consolida cuando el estudiante experimenta, prueba, se equivoca, ajusta sus procedimientos y construye sentido a partir de la acción.",
-    "evidencia": "Selecciona una explicación que diferencia el aprendizaje experimental de la memorización mecánica.",
-    "proceso_cognitivo": "Comprensión pedagógica aplicada",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Confunde aprendizaje activo con ausencia de mediación docente.",
-      "C": "Confunde experimentación con actividad libre sin propósito formativo.",
-      "D": "Asume erróneamente que toda experiencia práctica produce aprendizaje sin evaluación ni reflexión."
-    },
-    "fuente_autorizada": [
-      "Pedagogía activa",
-      "Celestin Freinet",
-      "Enfoque constructivista",
-      "Didáctica general",
-      "Orientaciones pedagógicas institucionales"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado claro con una sola tarea cognitiva."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque aprender haciendo no implica ausencia de orientación docente.",
-    "opcion_C": "Es incorrecta porque la pedagogía activa no elimina los contenidos, sino que busca que se construyan con sentido.",
-    "opcion_D": "Es incorrecta porque la experiencia necesita reflexión, mediación y evaluación formativa para convertirse en aprendizaje profundo.",
-    "distractores": {
-      "B": "Es incorrecta porque aprender haciendo no implica ausencia de orientación docente.",
-      "C": "Es incorrecta porque la pedagogía activa no elimina los contenidos, sino que busca que se construyan con sentido.",
-      "D": "Es incorrecta porque la experiencia necesita reflexión, mediación y evaluación formativa para convertirse en aprendizaje profundo."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no requiere conocimiento especializado sobre la vida de Freinet. Presenta el concepto dentro del enunciado y evalúa la comprensión del aprendizaje activo como proceso de acción, error, reflexión y reconstrucción."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 2 preguntas sobre constructivismo, indagación y aprendizaje experimental."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Constructivismo, indagación y aprendizaje experimental/PPDC_B03_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

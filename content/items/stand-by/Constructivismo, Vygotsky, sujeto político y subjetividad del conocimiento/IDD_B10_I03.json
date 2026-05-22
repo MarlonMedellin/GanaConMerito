@@ -1,104 +1,45 @@
 {
   "id_item": "IDD_B10_I03",
-  "archivo_sugerido": "IDD_B10_I03_vygotsky_lenguaje_significados_colectivos.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B10",
-    "nombre": "Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento",
-    "estado_en_lista": "Bloque 10 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 3 de 5"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía crítica y constructivismo",
+  "tema": "Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento",
+  "subtema": "Constructivismo Social",
+  "competencia": "Aplica principios constructivistas y socioculturales para valorar decisiones de enseñanza y formación de sujetos críticos.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la decisión pedagógica o institucional más coherente con el enfoque evaluado en el caso.",
+  "evidencia": "Selecciona una única alternativa técnicamente superior frente a distractores plausibles.",
+  "tarea": "Analizar la situación planteada y elegir la respuesta más adecuada según el criterio del ítem.",
+  "contexto": "Durante una actividad colaborativa, los estudiantes explican sus ideas, negocian significados, corrigen interpretaciones y construyen una comprensión compartida del tema. El docente observa que el lenguaje cumple un papel central en el aprendizaje.",
+  "enunciado": "Durante una actividad colaborativa, los estudiantes explican sus ideas, negocian significados, corrigen interpretaciones y construyen una comprensión compartida del tema. El docente observa que el lenguaje cumple un papel central en el aprendizaje.\n\nDesde el constructivismo social de Vygotsky, ¿qué función cumple el lenguaje en esta interacción?",
+  "opciones": {
+    "A": "Mediar el pensamiento y la construcción de significados colectivos mediante la interacción social.",
+    "B": "Servir únicamente para copiar definiciones del tablero.",
+    "C": "Reemplazar por completo la actividad mental individual.",
+    "D": "Evitar que los estudiantes dialoguen para no cambiar sus ideas iniciales."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende el papel del lenguaje y la interacción social en la construcción de significados colectivos desde el constructivismo social.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, pedagogía, didáctica, lenguaje o aprendizaje colaborativo.",
-    "blueprint": {
-      "problematica_principal": "Desconocimiento del lenguaje como mediador social del pensamiento y del aprendizaje.",
-      "fuente_autorizada": [
-        "Vygotsky",
-        "Constructivismo social",
-        "Lenguaje y pensamiento",
-        "Aprendizaje colaborativo",
-        "Didáctica general"
-      ],
-      "componente_modulo": "Constructivismo Social",
-      "competencia": "Mediación social del aprendizaje",
-      "afirmacion": "El lenguaje permite negociar significados, organizar pensamiento, compartir interpretaciones y construir comprensión colectiva.",
-      "evidencia_observable": "Reconoce que la interacción verbal entre estudiantes contribuye a formar significados comunes y aprendizaje compartido.",
-      "tipo_de_evidencia": "Comprensión conceptual aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que el lenguaje no es solo vehículo de comunicación, sino herramienta de mediación cognitiva y social.",
-    "evidencia_observable": "Selecciona una explicación que relaciona lenguaje, interacción, significados colectivos y aprendizaje.",
-    "tarea_cognitiva": "Interpretar el papel del lenguaje en una situación de aula colaborativa.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Reducir lenguaje a corrección gramatical",
-        "revision": "La clave lo entiende como mediador del pensamiento y significados."
-      },
-      {
-        "riesgo": "Desconocer diversidad lingüística",
-        "revision": "El ítem no impone una variedad lingüística única; valora construcción de sentido."
-      },
-      {
-        "riesgo": "Confundir interacción con conversación sin propósito",
-        "revision": "La opción correcta implica diálogo orientado a significados."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque limita el lenguaje a transcripción.",
+    "C": "Es incorrecta porque la interacción no elimina la actividad mental individual.",
+    "D": "Es incorrecta porque bloquea la construcción colectiva de conocimiento."
   },
-  "item": {
-    "enunciado": "Durante una actividad colaborativa, los estudiantes explican sus ideas, negocian significados, corrigen interpretaciones y construyen una comprensión compartida del tema. El docente observa que el lenguaje cumple un papel central en el aprendizaje.\n\nDesde el constructivismo social de Vygotsky, ¿qué función cumple el lenguaje en esta interacción?",
-    "opciones": {
-      "A": "Mediar el pensamiento y la construcción de significados colectivos mediante la interacción social.",
-      "B": "Servir únicamente para copiar definiciones del tablero.",
-      "C": "Reemplazar por completo la actividad mental individual.",
-      "D": "Evitar que los estudiantes dialoguen para no cambiar sus ideas iniciales."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Contexto educativo general y lenguaje técnico accesible sin sesgos culturales innecesarios."
   },
-  "ficha_tecnica": {
-    "componente": "Constructivismo Social",
-    "competencia": "Mediación social del aprendizaje",
-    "claim_evaluado": "El evaluado comprende que el lenguaje no es solo vehículo de comunicación, sino herramienta de mediación cognitiva y social.",
-    "evidencia": "Selecciona una explicación que relaciona lenguaje, interacción, significados colectivos y aprendizaje.",
-    "proceso_cognitivo": "Comprensión conceptual aplicada",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Reduce lenguaje a copia.",
-      "C": "Desconoce la relación entre lo social y lo individual.",
-      "D": "Niega el valor del diálogo en el aprendizaje."
-    },
-    "fuente_autorizada": [
-      "Vygotsky",
-      "Constructivismo social",
-      "Lenguaje y pensamiento",
-      "Aprendizaje colaborativo",
-      "Didáctica general"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado claro con una sola tarea cognitiva."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque limita el lenguaje a transcripción.",
-    "opcion_C": "Es incorrecta porque la interacción no elimina la actividad mental individual.",
-    "opcion_D": "Es incorrecta porque bloquea la construcción colectiva de conocimiento.",
-    "distractores": {
-      "B": "Es incorrecta porque limita el lenguaje a transcripción.",
-      "C": "Es incorrecta porque la interacción no elimina la actividad mental individual.",
-      "D": "Es incorrecta porque bloquea la construcción colectiva de conocimiento."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem valora la interacción y el lenguaje como herramientas de aprendizaje sin imponer una forma lingüística única."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento/IDD_B10_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }
