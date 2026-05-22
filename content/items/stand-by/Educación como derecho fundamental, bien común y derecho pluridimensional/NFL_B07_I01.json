@@ -1,101 +1,45 @@
 {
   "id_item": "NFL_B07_I01",
-  "archivo_sugerido": "NFL_B07_I01_educacion_derecho_servicio_funcion_social.json",
-  "bloque": {
-    "codigo_bloque": "NFL_B07",
-    "nombre": "Educación como derecho fundamental, bien común y derecho pluridimensional",
-    "estado_en_lista": "Bloque 7 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 1 de 4"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Fundamentos legales y filosóficos de la educación",
+  "tema": "Educación como derecho",
+  "subtema": "Derecho fundamental, bien común y función social",
+  "competencia": "Interpretar el alcance jurídico-pedagógico del derecho a la educación en decisiones institucionales.",
+  "nivel_cognitivo": "ANALISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado integra la educación como derecho fundamental y servicio público con función social exigible.",
+  "evidencia": "Selecciona la implicación institucional que articula acceso, permanencia, calidad, inclusión y corresponsabilidad.",
+  "tarea": "Elegir la interpretación más completa y jurídicamente consistente del alcance de la educación.",
+  "contexto": "Discusión institucional sobre si la educación debe limitarse a la disponibilidad de cupos.",
+  "enunciado": "En una institución educativa, algunos directivos sostienen que la educación solo puede ofrecerse según la disponibilidad de cupos. ¿Cuál opción refleja mejor el alcance constitucional de la educación como derecho fundamental, bien común y servicio público con función social?",
+  "opciones": {
+    "A": "La educación depende de la decisión discrecional del prestador y no genera deberes exigibles.",
+    "B": "La educación se cumple al asignar matrícula, sin obligación sobre permanencia, calidad o inclusión.",
+    "C": "La educación exige garantizar acceso, permanencia, calidad, inclusión, dignidad y corresponsabilidad de Estado, familia, sociedad e institución.",
+    "D": "La educación es solo un ideal ético, sin efectos jurídicos ni responsabilidades institucionales."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende la doble condición constitucional de la educación como derecho de la persona y servicio público con función social.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, gestión educativa, orientación escolar, coordinación, rectoría o políticas educativas.",
-    "blueprint": {
-      "problematica_principal": "Reducir la educación a una prestación administrativa o a un servicio de mercado, desconociendo su dimensión de derecho y función social.",
-      "fuente_autorizada": [
-        "Constitución Política de Colombia artículo 67",
-        "Ley 115 de 1994",
-        "Jurisprudencia constitucional sobre derecho a la educación",
-        "Enfoque de derechos"
-      ],
-      "componente_modulo": "Educación como derecho",
-      "competencia": "Interpretación filosófico-jurídica de la educación",
-      "afirmacion": "La educación es derecho de la persona y servicio público con función social, por lo que implica acceso, permanencia, calidad, dignidad, inclusión y responsabilidad estatal y social.",
-      "evidencia_observable": "Reconoce que la educación no puede entenderse solo como prestación administrativa, sino como derecho pluridimensional y bien común.",
-      "tipo_de_evidencia": "Comprensión jurídico-pedagógica aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende que la educación articula derecho individual, bien común, función social y deber institucional de garantía.",
-    "evidencia_observable": "Selecciona la explicación que integra derecho, servicio público, función social y formación integral.",
-    "tarea_cognitiva": "Interpretar el alcance constitucional de la educación.",
-    "tipo_de_pregunta": "Pregunta conceptual normativa aplicada",
-    "dificultad_esperada": "Alta",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Oponer derecho y servicio público como conceptos incompatibles",
-        "revision": "La clave los articula conforme al artículo 67 constitucional."
-      },
-      {
-        "riesgo": "Reducir educación a matrícula o cupo",
-        "revision": "La respuesta correcta incluye permanencia, calidad e inclusión."
-      },
-      {
-        "riesgo": "Convertir bien común en retórica sin obligaciones",
-        "revision": "La clave vincula bien común con responsabilidades institucionales concretas."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "Es la única opción que integra de forma completa el derecho subjetivo, la función social y las obligaciones de garantía.",
+  "distractores_funcion": {
+    "A": "Error de discrecionalidad: niega exigibilidad del derecho.",
+    "B": "Reducción administrativa: confunde acceso con garantía integral.",
+    "C": "Clave correcta.",
+    "D": "Generalización incorrecta: separa ética y obligación jurídica."
   },
-  "item": {
-    "enunciado": "En una discusión institucional, algunos docentes afirman que la educación debe tratarse solo como un servicio que se presta si hay cupos y recursos. Otros sostienen que, constitucionalmente, la educación tiene un alcance más amplio.\n\n¿Qué implicación tiene definir la educación como derecho de la persona, bien común y servicio público con función social?",
-    "opciones": {
-      "A": "Que la educación depende únicamente de la voluntad del prestador del servicio.",
-      "B": "Que la escuela solo debe garantizar matrícula, sin preocuparse por permanencia, calidad, inclusión o formación integral.",
-      "C": "Que la educación exige acceso, permanencia, calidad, inclusión, dignidad, formación integral y responsabilidad compartida del Estado, la sociedad, la familia y la institución.",
-      "D": "Que la educación deja de tener obligaciones institucionales porque se vuelve un ideal abstracto."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "No requiere experiencia de un territorio o sector específico; evalúa juicio normativo aplicable a cualquier contexto escolar."
   },
-  "ficha_tecnica": {
-    "componente": "Educación como derecho",
-    "competencia": "Interpretación filosófico-jurídica de la educación",
-    "claim_evaluado": "El evaluado comprende que la educación articula derecho individual, bien común, función social y deber institucional de garantía.",
-    "evidencia": "Selecciona la explicación que integra derecho, servicio público, función social y formación integral.",
-    "proceso_cognitivo": "Comprensión jurídico-pedagógica aplicada",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Alta",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Reduce la educación a una prestación discrecional.",
-      "B": "Limita el derecho a matrícula y desconoce calidad, permanencia e inclusión.",
-      "D": "Convierte el derecho en una idea sin exigibilidad."
-    },
-    "fuente_autorizada": [
-      "Constitución Política de Colombia artículo 67",
-      "Ley 115 de 1994",
-      "Enfoque de derechos"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado breve, una sola tarea cognitiva y opciones paralelas."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque el derecho a la educación no queda sometido a discrecionalidad absoluta.",
-    "opcion_B": "Es incorrecta porque garantizar educación implica más que asignar un cupo.",
-    "opcion_D": "Es incorrecta porque el derecho genera obligaciones verificables.",
-    "distractores": {
-      "A": "Es incorrecta porque el derecho a la educación no queda sometido a discrecionalidad absoluta.",
-      "B": "Es incorrecta porque garantizar educación implica más que asignar un cupo.",
-      "D": "Es incorrecta porque el derecho genera obligaciones verificables."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "Aprobado con revisión jurídica recomendada.",
-    "argumento": "El ítem evita una visión mercantil o meramente administrativa de la educación y promueve comprensión integral del derecho."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Validar con jurisprudencia constitucional vigente si se usará en prueba de alto impacto.",
-    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre educación como derecho fundamental, bien común y derecho pluridimensional."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Educación como derecho fundamental, bien común y derecho pluridimensional/NFL_B07_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

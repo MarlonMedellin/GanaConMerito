@@ -1,40 +1,45 @@
 {
   "id_item": "EIP_B04_I01",
-  "archivo_sugerido": "EIP_B04_I01_conocimiento_propio_cuerpo_identidad_autonomia.json",
-  "proposito_de_uso": "Evaluar si el aspirante reconoce el objetivo específico de preescolar relacionado con el conocimiento del propio cuerpo, la identidad y la autonomía.",
-  "blueprint": {
-    "componente_modulo": "Objetivos específicos de preescolar",
-    "competencia": "Reconocimiento normativo del objetivo de identidad y autonomía",
-    "afirmacion": "El preescolar debe favorecer el conocimiento del propio cuerpo, sus posibilidades de acción, la identidad y la autonomía.",
-    "evidencia_observable": "Selecciona correctamente el objetivo pedagógico asociado al reconocimiento corporal.",
-    "tipo_de_evidencia": "Reconocimiento normativo aplicado",
-    "dificultad_esperada": "Media",
-    "clave": "C"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Educación inicial y preescolar",
+  "tema": "Desarrollo integral",
+  "subtema": "Identidad, autonomía y reconocimiento corporal",
+  "competencia": "Vincular prácticas pedagógicas de preescolar con objetivos formativos de identidad y autonomía.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "BAJA",
+  "claim": "El evaluado identifica el objetivo de preescolar que integra conocimiento del cuerpo, identidad y autonomía.",
+  "evidencia": "Selecciona el objetivo específico que corresponde a una práctica de reconocimiento corporal e independencia progresiva.",
+  "tarea": "Asociar una situación de aula de preescolar con su objetivo formativo correcto.",
+  "contexto": "Planeación de actividades para nombrar partes del cuerpo, expresar identidad y realizar acciones cotidianas con mayor autonomía.",
+  "enunciado": "Una docente de preescolar propone actividades para que los niños reconozcan su cuerpo, expresen quiénes son y fortalezcan su independencia en acciones básicas. ¿Qué objetivo específico de preescolar se desarrolla principalmente?",
+  "opciones": {
+    "A": "Preparación prioritaria para pruebas escritas estandarizadas.",
+    "B": "Memorización de procedimientos administrativos escolares.",
+    "C": "Conocimiento del propio cuerpo y sus posibilidades de acción, junto con identidad y autonomía.",
+    "D": "Sustitución de la familia por la institución educativa en la crianza."
   },
-  "item": {
-    "enunciado": "Una docente de preescolar diseña actividades para que los niños nombren partes de su cuerpo, reconozcan sus posibilidades de movimiento, expresen quiénes son y realicen acciones básicas con mayor independencia.\n\n¿A qué objetivo específico de la educación preescolar responde esta práctica?",
-    "opciones": {
-      "A": "A la preparación exclusiva para exámenes escritos.",
-      "B": "A la memorización obligatoria de normas administrativas.",
-      "C": "Al conocimiento del propio cuerpo y sus posibilidades de acción, así como a la adquisición de identidad y autonomía.",
-      "D": "A la sustitución de la familia por la institución educativa."
-    },
-    "respuesta_correcta": "C"
+  "clave": "C",
+  "justificacion_clave": "Es la única opción alineada con el propósito formativo integral del nivel preescolar en desarrollo corporal, identidad y autonomía.",
+  "distractores_funcion": {
+    "A": "Generalización incorrecta: desplaza objetivos de desarrollo por lógica de examen.",
+    "B": "Error de foco: confunde formación infantil con trámite institucional.",
+    "C": "Clave correcta.",
+    "D": "Interpretación extrema: desconoce corresponsabilidad familia-escuela."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "distractores": {
-      "A": "Reduce el preescolar a evaluación escrita.",
-      "B": "No corresponde al objetivo pedagógico planteado.",
-      "D": "Confunde acompañamiento educativo con sustitución familiar."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Contexto escolar común y lenguaje no estigmatizante."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem valora la autonomía infantil sin desconocer el acompañamiento adulto."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado concreto con carga léxica baja."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem apto para banco con revisión normativa posterior."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Identidad, autonomía y reconocimiento del cuerpo/EIP_B04_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

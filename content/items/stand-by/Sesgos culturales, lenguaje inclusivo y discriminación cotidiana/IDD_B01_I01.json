@@ -1,104 +1,45 @@
 {
   "id_item": "IDD_B01_I01",
-  "archivo_sugerido": "IDD_B01_I01_color_piel_sesgo_cultural.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B01",
-    "nombre": "Sesgos culturales, lenguaje inclusivo y discriminación cotidiana",
-    "estado_en_lista": "Bloque 1 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 1 de 4"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Inclusión y convivencia",
+  "tema": "Sesgos culturales",
+  "subtema": "Lenguaje cotidiano y diversidad de tonos de piel",
+  "competencia": "Identificar y mediar sesgos naturalizados en interacciones escolares cotidianas.",
+  "nivel_cognitivo": "ANALISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado reconoce que expresiones comunes pueden reproducir discriminación y requieren mediación pedagógica inclusiva.",
+  "evidencia": "Selecciona la interpretación que identifica un sesgo cultural-racial en el uso de la expresión color piel como tono único.",
+  "tarea": "Analizar un episodio de aula y determinar el sesgo que debe intervenirse pedagógicamente.",
+  "contexto": "Actividad de coloreado donde estudiantes asocian color piel a un único lápiz claro.",
+  "enunciado": "En una actividad de dibujo, varios estudiantes llaman “color piel” a un único tono claro y lo asumen como válido para todas las personas. ¿Qué sesgo debe intervenir el docente?",
+  "opciones": {
+    "A": "Dificultad motriz, porque el problema principal es la técnica de coloreado.",
+    "B": "Error matemático, porque no diferencian cantidad de lápices.",
+    "C": "Sesgo cultural y racial, porque se asume un tono único de piel y se invisibiliza la diversidad humana.",
+    "D": "Falta disciplinaria grave, porque preguntar por colores interrumpe la clase."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce y sabe intervenir un sesgo cultural y racial naturalizado en el aula mediante la expresión color piel.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación académica o gestión pedagógica en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "Normalización de una idea única de color piel que invisibiliza la diversidad étnica y corporal.",
-      "fuente_autorizada": [
-        "Constitución Política de Colombia",
-        "Ley 1098 de 2006",
-        "Decreto 1421 de 2017",
-        "Enfoque de derechos",
-        "Educación inclusiva e intercultural"
-      ],
-      "componente_modulo": "Pedagogía Práctica y Discriminación",
-      "competencia": "Praxis pedagógica inclusiva",
-      "afirmacion": "El docente debe identificar y deconstruir expresiones escolares que naturalizan estereotipos raciales, culturales o corporales.",
-      "evidencia_observable": "Reconoce que color piel no corresponde a un único tono y propone una intervención pedagógica que visibiliza la diversidad.",
-      "tipo_de_evidencia": "Juicio pedagógico aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende que una expresión aparentemente cotidiana puede reproducir sesgos culturales o raciales, y que el docente debe convertirla en oportunidad pedagógica para reconocer la diversidad humana.",
-    "evidencia_observable": "Selecciona una intervención docente que amplía la comprensión del color de piel, evita la burla y promueve respeto por la diversidad.",
-    "tarea_cognitiva": "Analizar una situación de aula y elegir una mediación inclusiva frente a un sesgo cultural naturalizado.",
-    "tipo_de_pregunta": "Caso situacional de juicio pedagógico",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Reforzar una clasificación racial rígida",
-        "revision": "El ítem no clasifica a los estudiantes por raza; trabaja la diversidad de tonos de piel como realidad humana y cultural."
-      },
-      {
-        "riesgo": "Ridiculizar la pregunta del niño",
-        "revision": "La clave trata la pregunta como oportunidad de aprendizaje, no como falta."
-      },
-      {
-        "riesgo": "Moralizar sin mediación didáctica",
-        "revision": "La opción correcta propone conversación, observación y lenguaje respetuoso."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "Es la única opción que identifica el núcleo del problema como sesgo cultural-racial y no como falla técnica o disciplinaria.",
+  "distractores_funcion": {
+    "A": "Desplaza el foco del sesgo hacia una habilidad motora irrelevante.",
+    "B": "Interpretación errónea: convierte el caso en problema numérico.",
+    "C": "Clave correcta.",
+    "D": "Respuesta punitiva que bloquea mediación pedagógica inclusiva."
   },
-  "item": {
-    "enunciado": "En una actividad de coloreado de figuras humanas, un niño pide al docente que le preste el color piel. Otros estudiantes señalan un solo lápiz de color claro como si ese fuera el tono de piel válido para todas las personas.\n\n¿Qué tipo de sesgo debe intervenir y deconstruir el maestro?",
-    "opciones": {
-      "A": "Un error de motricidad fina, porque el problema principal es que el niño no sabe colorear.",
-      "B": "Una dificultad matemática, porque el estudiante no diferencia cantidades de colores.",
-      "C": "Un sesgo cultural y racial que asocia la piel humana con un único tono y desconoce la diversidad corporal y étnica.",
-      "D": "Una falta disciplinaria grave, porque preguntar por un color interrumpe la clase."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Promueve reconocimiento de diversidad sin estigmatizar a estudiantes ni grupos específicos."
   },
-  "ficha_tecnica": {
-    "componente": "Pedagogía Práctica y Discriminación",
-    "competencia": "Praxis pedagógica inclusiva",
-    "claim_evaluado": "El evaluado comprende que una expresión aparentemente cotidiana puede reproducir sesgos culturales o raciales, y que el docente debe convertirla en oportunidad pedagógica para reconocer la diversidad humana.",
-    "evidencia": "Selecciona una interpretación que identifica el sesgo cultural y racial implicado en la expresión color piel.",
-    "proceso_cognitivo": "Análisis y juicio pedagógico",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Desplaza el problema hacia una habilidad motriz y omite el sesgo cultural.",
-      "B": "Confunde la situación con una clasificación cuantitativa de colores.",
-      "D": "Convierte una oportunidad pedagógica en sanción disciplinaria."
-    },
-    "fuente_autorizada": [
-      "Constitución Política de Colombia",
-      "Ley 1098 de 2006",
-      "Decreto 1421 de 2017",
-      "Enfoque de derechos",
-      "Educación inclusiva e intercultural"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Lenguaje simple, contexto cotidiano y opciones claras."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque la situación no se centra en habilidad motriz.",
-    "opcion_B": "Es incorrecta porque no se evalúa clasificación matemática.",
-    "opcion_D": "Es incorrecta porque la pregunta del estudiante no debe tratarse como falta.",
-    "distractores": {
-      "A": "Es incorrecta porque la situación no se centra en habilidad motriz.",
-      "B": "Es incorrecta porque no se evalúa clasificación matemática.",
-      "D": "Es incorrecta porque la pregunta del estudiante no debe tratarse como falta."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "Promueve reconocimiento de diversidad sin estigmatizar a ningún grupo ni culpabilizar al estudiante que usa la expresión aprendida socialmente."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre sesgos culturales, lenguaje inclusivo y discriminación cotidiana."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Sesgos culturales, lenguaje inclusivo y discriminación cotidiana/IDD_B01_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }
