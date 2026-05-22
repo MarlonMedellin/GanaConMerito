@@ -1,103 +1,45 @@
 {
   "id_item": "CB09_I01",
-  "bloque": {
-    "numero": 9,
-    "nombre": "Horario escolar",
-    "estado_en_lista": "Bloque 9 de 15",
-    "decision_del_bloque": "Pregunta única",
-    "item_en_grupo": "Ítem 1 de 1"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión escolar",
+  "tema": "Planeación institucional",
+  "subtema": "Organización del horario escolar",
+  "competencia": "Aplicar criterios de gestión para organizar horario con continuidad del servicio y coherencia pedagógica.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "BAJA",
+  "claim": "El evaluado reconoce la responsabilidad institucional de planear y ajustar el horario escolar.",
+  "evidencia": "Selecciona la actuación de gestión que corrige cruces, asignaciones y uso de espacios.",
+  "tarea": "Elegir la respuesta institucional técnicamente adecuada ante fallas de horario.",
+  "contexto": "La institución presenta cruces de grupos, docentes sin asignación y conflictos de uso de aulas.",
+  "enunciado": "¿Qué acción corresponde principalmente a la gestión directiva o administrativa?",
+  "opciones": {
+    "A": "Ajustar el horario institucional considerando plan de estudios, disponibilidad docente y uso de espacios.",
+    "B": "Permitir que cada estudiante decida a qué clase asistir cuando haya cruces.",
+    "C": "Suspender temporalmente áreas con conflictos de asignación.",
+    "D": "Dejar que cada docente establezca su horario sin articulación institucional."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce que la organización del horario escolar es una responsabilidad institucional asociada a la gestión administrativa y pedagógica, y que debe garantizar continuidad del servicio educativo, uso adecuado de recursos y coherencia con el plan de estudios.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "Responsable institucional del horario",
-      "fuente_autorizada": [
-        "Normatividad escolar vigente",
-        "Manual de funciones institucional",
-        "Proyecto Educativo Institucional"
-      ],
-      "componente_modulo": "Gestión administrativa",
-      "competencia": "Planeación",
-      "afirmacion": "El directivo tiene responsabilidad funcional.",
-      "evidencia_observable": "Identifica la responsabilidad directiva o administrativa en la organización del horario escolar.",
-      "tipo_de_evidencia": "Reconocimiento funcional aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado reconoce que la organización del horario escolar es una responsabilidad de gestión institucional que debe atender criterios pedagógicos, administrativos y normativos.",
-    "evidencia_observable": "Selecciona la actuación institucional que permite corregir cruces de horario, asignación docente y uso de espacios desde una perspectiva de planeación escolar.",
-    "tarea_cognitiva": "Seleccionar la instancia o actuación responsable frente a la planeación del horario escolar.",
-    "tipo_de_pregunta": "Pregunta factual aplicada",
-    "dificultad_esperada": "Baja",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Sesgo por experiencia administrativa previa",
-        "revision": "El ítem no exige haber elaborado horarios escolares; evalúa una responsabilidad institucional básica y reconocible."
-      },
-      {
-        "riesgo": "Ambigüedad sobre responsables",
-        "revision": "La clave se centra en la gestión directiva o administrativa, mientras los distractores trasladan indebidamente la responsabilidad a estudiantes o docentes de forma individual."
-      },
-      {
-        "riesgo": "Sesgo por tamaño de institución",
-        "revision": "La situación puede presentarse en instituciones pequeñas, medianas o grandes."
-      },
-      {
-        "riesgo": "Lenguaje técnico excesivo",
-        "revision": "La redacción utiliza términos escolares comunes: horario, docentes, grupos, espacios y planeación."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "Resuelve el problema desde la responsabilidad de planeación institucional y garantiza continuidad del servicio.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Traslada responsabilidad institucional al estudiante.",
+    "C": "Respuesta punitiva que afecta derecho educativo.",
+    "D": "Desarticula la gestión y agrava inconsistencias."
   },
-  "item": {
-    "enunciado": "En una institución educativa se presentan cruces de horarios, grupos sin asignación de docente y uso inadecuado de algunos espacios. La comunidad solicita definir responsables para corregir la situación.\n\n¿Cuál actuación corresponde principalmente a la gestión directiva o administrativa de la institución?",
-    "opciones": {
-      "A": "Organizar y ajustar el horario escolar con criterios pedagógicos, disponibilidad docente y uso adecuado de espacios.",
-      "B": "Pedir a cada estudiante que elija libremente a qué clase asistir cuando haya cruce de horarios.",
-      "C": "Suspender las áreas con mayor dificultad de asignación hasta que haya una solución externa.",
-      "D": "Dejar que cada docente defina su propio horario sin articulación institucional."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Ítem contextualizado en escenarios educativos/laborales generales, sin dependencias culturales específicas."
   },
-  "ficha_tecnica": {
-    "componente": "Gestión administrativa",
-    "competencia": "Planeación",
-    "claim_evaluado": "El evaluado reconoce que la organización del horario escolar es una responsabilidad de gestión institucional que debe atender criterios pedagógicos, administrativos y normativos.",
-    "evidencia": "Selecciona la actuación institucional que permite corregir cruces de horario, asignación docente y uso de espacios desde una perspectiva de planeación escolar.",
-    "proceso_cognitivo": "Reconocimiento funcional aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Baja",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Traslada una responsabilidad institucional a los estudiantes y genera desorganización del servicio educativo.",
-      "C": "Afecta el derecho al servicio educativo y no resuelve la planeación institucional.",
-      "D": "Fragmenta la organización escolar y desconoce la necesidad de articulación institucional."
-    },
-    "fuente_autorizada": [
-      "Normatividad escolar vigente",
-      "Manual de funciones institucional",
-      "Proyecto Educativo Institucional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción directa, una sola tarea cognitiva y vocabulario funcional."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque los estudiantes no deben resolver los cruces de horario ni seleccionar libremente a qué clase asistir cuando existe una falla de planeación institucional.",
-    "opcion_C": "Es incorrecta porque suspender áreas afecta la continuidad del servicio educativo y no constituye una solución de gestión.",
-    "opcion_D": "Es incorrecta porque permitir que cada docente defina su propio horario sin articulación institucional genera fragmentación y puede afectar la prestación del servicio.",
-    "distractores": {
-      "B": "Es incorrecta porque los estudiantes no deben resolver los cruces de horario ni seleccionar libremente a qué clase asistir cuando existe una falla de planeación institucional.",
-      "C": "Es incorrecta porque suspender áreas afecta la continuidad del servicio educativo y no constituye una solución de gestión.",
-      "D": "Es incorrecta porque permitir que cada docente defina su propio horario sin articulación institucional genera fragmentación y puede afectar la prestación del servicio."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El caso no depende de condiciones particulares de una institución ni exige experiencia especializada en administración escolar. Evalúa una responsabilidad general de gestión: planear y ajustar el horario escolar de manera organizada, pedagógica y funcional."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como pregunta única del bloque Horario escolar."
+  "metadata_editorial": {
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

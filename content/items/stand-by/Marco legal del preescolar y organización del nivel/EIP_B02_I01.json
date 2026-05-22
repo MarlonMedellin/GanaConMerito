@@ -1,101 +1,45 @@
 {
   "id_item": "EIP_B02_I01",
-  "archivo_sugerido": "EIP_B02_I01_decreto_2247_1997_marco_legal_preescolar.json",
-  "bloque": {
-    "codigo_bloque": "EIP_B02",
-    "nombre": "Marco legal del preescolar y organización del nivel",
-    "estado_en_lista": "Bloque 2 de 7",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 1 de 5"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Educación inicial y preescolar",
+  "tema": "Marco legal del preescolar",
+  "subtema": "Organización y prestación del nivel",
+  "competencia": "Identificar normas clave que orientan la organización del servicio de preescolar.",
+  "nivel_cognitivo": "COMPRENSIÓN",
+  "dificultad_estimada": "BAJA-MEDIA",
+  "claim": "El evaluado reconoce la norma reglamentaria específica del nivel preescolar en Colombia.",
+  "evidencia": "Distingue el decreto que regula preescolar frente a normas de otros ámbitos.",
+  "tarea": "Seleccionar la norma nacional que reglamenta la educación preescolar.",
+  "contexto": "Un comité académico debe actualizar su marco normativo para organizar currículo y transición del nivel preescolar.",
+  "enunciado": "¿Qué decreto reglamenta específicamente la educación preescolar en Colombia?",
+  "opciones": {
+    "A": "Decreto 1290 de 2009.",
+    "B": "Decreto 2247 de 1997.",
+    "C": "Decreto 1421 de 2017.",
+    "D": "Decreto 1075 de 2015 como norma exclusiva de preescolar."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante identifica el decreto nacional que reglamenta la prestación del servicio educativo de preescolar en Colombia.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con educación inicial, preescolar, docencia, coordinación académica, rectoría o gestión educativa.",
-    "blueprint": {
-      "problematica_principal": "Desconocimiento del marco normativo específico que organiza y reglamenta la educación preescolar.",
-      "fuente_autorizada": [
-        "Decreto 2247 de 1997",
-        "Ley 115 de 1994",
-        "Educación preescolar",
-        "Sistema educativo colombiano"
-      ],
-      "componente_modulo": "Marco legal del preescolar",
-      "competencia": "Reconocimiento normativo del nivel preescolar",
-      "afirmacion": "El Decreto 2247 de 1997 reglamenta la prestación del servicio educativo de preescolar en Colombia.",
-      "evidencia_observable": "Identifica correctamente el decreto que regula el nivel preescolar.",
-      "tipo_de_evidencia": "Reconocimiento normativo",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado reconoce el Decreto 2247 de 1997 como norma específica para la educación preescolar.",
-    "evidencia_observable": "Selecciona el decreto nacional correspondiente al marco legal del preescolar.",
-    "tarea_cognitiva": "Recordar e identificar una norma educativa específica.",
-    "tipo_de_pregunta": "Pregunta normativa de reconocimiento",
-    "dificultad_esperada": "Baja-Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confundir Decreto 2247 con normas generales de evaluación o convivencia",
-        "revision": "Los distractores diferencian normas de otros campos."
-      },
-      {
-        "riesgo": "Exigir conocimiento jurídico excesivo",
-        "revision": "El ítem pregunta por una norma central del nivel."
-      },
-      {
-        "riesgo": "Desactualización normativa",
-        "revision": "Se recomienda revisión final de vigencia antes de banco definitivo."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "Es la norma reglamentaria específica del nivel preescolar citada para su organización.",
+  "distractores_funcion": {
+    "A": "Regula evaluación en otros niveles.",
+    "B": "Clave correcta.",
+    "C": "Marco de inclusión, no organización específica de preescolar.",
+    "D": "Compilatorio general, no norma exclusiva solicitada."
   },
-  "item": {
-    "enunciado": "Una institución educativa está revisando el marco legal del nivel preescolar y necesita identificar la norma nacional que reglamenta específicamente su prestación, organización e integración al sistema educativo.\n\n¿Qué decreto reglamenta la educación preescolar en Colombia?",
-    "opciones": {
-      "A": "Decreto 1290 de 2009.",
-      "B": "Decreto 2247 de 1997.",
-      "C": "Decreto 1860 de 1994 exclusivamente para evaluación preescolar.",
-      "D": "Decreto 1421 de 2017 como única norma del preescolar."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Escenarios generales y lenguaje controlado; sin exigencias extracontextuales no declaradas."
   },
-  "ficha_tecnica": {
-    "componente": "Marco legal del preescolar",
-    "competencia": "Reconocimiento normativo del nivel preescolar",
-    "claim_evaluado": "El evaluado reconoce el Decreto 2247 de 1997 como norma específica para la educación preescolar.",
-    "evidencia": "Selecciona el decreto nacional correspondiente al marco legal del preescolar.",
-    "proceso_cognitivo": "Reconocimiento normativo",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Baja-Media",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Corresponde al sistema de evaluación en educación básica y media, no al marco específico del preescolar.",
-      "C": "No es la norma específica solicitada para reglamentar el nivel preescolar.",
-      "D": "Regula educación inclusiva para población con discapacidad, no exclusivamente la organización del preescolar."
-    },
-    "fuente_autorizada": [
-      "Decreto 2247 de 1997",
-      "Ley 115 de 1994",
-      "Educación preescolar"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción directa, única tarea cognitiva y opciones paralelas."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque el Decreto 1290 regula evaluación de aprendizajes y promoción en otros niveles.",
-    "opcion_C": "Es incorrecta porque no corresponde al decreto específico del preescolar.",
-    "opcion_D": "Es incorrecta porque el Decreto 1421 se refiere a educación inclusiva y discapacidad.",
-    "distractores": {
-      "A": "Es incorrecta porque el Decreto 1290 regula evaluación de aprendizajes y promoción en otros niveles.",
-      "C": "Es incorrecta porque no corresponde al decreto específico del preescolar.",
-      "D": "Es incorrecta porque el Decreto 1421 se refiere a educación inclusiva y discapacidad."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "Aprobado con revisión normativa recomendada.",
-    "argumento": "El ítem evalúa una norma central sin introducir sesgos o exigencias contextuales innecesarias."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Validar vigencia normativa antes de uso definitivo.",
-    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 5 preguntas sobre marco legal del preescolar y organización del nivel."
+  "metadata_editorial": {
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

@@ -1,36 +1,45 @@
 {
   "id_item": "MTV_B11_I01",
-  "archivo_sugerido": "MTV_B11_I01_modelo_tecnicista_evaluacion.json",
-  "proposito_de_uso": "Evaluar si el aspirante reconoce el énfasis evaluativo del modelo tecnicista o conductista.",
-  "blueprint": {
-    "componente_modulo": "Modelo tecnicista",
-    "competencia": "Reconocimiento de enfoques evaluativos",
-    "afirmacion": "El modelo tecnicista enfatiza el resultado observable, la repetición exacta, la medición final y el control de respuestas.",
-    "evidencia_observable": "Identifica una práctica evaluativa centrada en repetición, exactitud literal y calificación finalista.",
-    "tipo_de_evidencia": "Reconocimiento conceptual aplicado",
-    "dificultad_esperada": "Media",
-    "clave": "C"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Didáctica y evaluación",
+  "tema": "Enfoques pedagógicos",
+  "subtema": "Tecnicismo vs constructivismo",
+  "competencia": "Diferenciar prácticas evaluativas tecnicistas de prácticas centradas en comprensión.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado identifica rasgos tecnicistas cuando la evaluación premia repetición literal sobre comprensión conceptual.",
+  "evidencia": "Reconoce el enfoque pedagógico dominante en una práctica de calificación literalista.",
+  "tarea": "Seleccionar el enfoque que mejor describe la práctica evaluativa presentada.",
+  "contexto": "En una clase, el docente califica solo respuestas idénticas al texto guía y descarta explicaciones conceptualmente correctas con redacción propia.",
+  "enunciado": "¿Qué enfoque pedagógico se evidencia principalmente?",
+  "opciones": {
+    "A": "Constructivismo social.",
+    "B": "Aprendizaje significativo.",
+    "C": "Modelo tecnicista o conductista de evaluación.",
+    "D": "Pedagogía crítica emancipadora."
   },
-  "item": {
-    "enunciado": "En una institución, el docente califica únicamente si el estudiante reproduce una definición con las mismas palabras del libro, sin valorar explicaciones alternativas válidas ni procesos de comprensión.\n\n¿Qué enfoque pedagógico se evidencia principalmente?",
-    "opciones": {
-      "A": "Constructivismo social.",
-      "B": "Aprendizaje significativo.",
-      "C": "Modelo tecnicista o conductista de evaluación.",
-      "D": "Pedagogía emancipadora."
-    },
-    "respuesta_correcta": "C"
+  "clave": "C",
+  "justificacion_clave": "La práctica se centra en control de respuesta exacta y medición finalista, rasgos típicos del tecnicismo.",
+  "distractores_funcion": {
+    "A": "Enfoque incompatible con evaluación literalista.",
+    "B": "Requiere integración significativa, no repetición mecánica.",
+    "C": "Clave correcta.",
+    "D": "Prioriza diálogo crítico, opuesto al caso."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "distractores": {
-      "A": "El constructivismo social valora interacción y construcción de significados.",
-      "B": "El aprendizaje significativo exige comprensión y relación con saberes previos.",
-      "D": "La pedagogía emancipadora privilegia diálogo y pensamiento crítico."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje funcional y contexto general; evita sesgos culturales o exigencias externas no declaradas."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem base para diferenciar evaluación tecnicista de evaluación comprensiva."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado directo, paralelismo en opciones y una tarea cognitiva principal por ítem."
+  },
+  "metadata_editorial": {
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

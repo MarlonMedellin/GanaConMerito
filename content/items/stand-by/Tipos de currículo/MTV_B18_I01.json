@@ -1,36 +1,45 @@
 {
   "id_item": "MTV_B18_I01",
-  "archivo_sugerido": "MTV_B18_I01_curriculo_oculto_ayuda_servicio.json",
-  "proposito_de_uso": "Evaluar si el aspirante reconoce el currículo oculto en acciones formativas no escritas formalmente.",
-  "blueprint": {
-    "componente_modulo": "Currículo oculto",
-    "competencia": "Identificación de aprendizajes implícitos",
-    "afirmacion": "El currículo oculto comprende aprendizajes, valores, normas, actitudes y respuestas formativas que ocurren en la vida escolar aunque no estén formalmente escritos.",
-    "evidencia_observable": "Identifica como currículo oculto la atención a problemáticas emocionales y sociales no previstas en el plan de estudios.",
-    "tipo_de_evidencia": "Reconocimiento conceptual aplicado",
-    "dificultad_esperada": "Media",
-    "clave": "B"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Currículo y didáctica",
+  "tema": "Tipos de currículo",
+  "subtema": "Currículo oculto",
+  "competencia": "Identificar aprendizajes implícitos que emergen en la vida escolar no formalizada.",
+  "nivel_cognitivo": "COMPRENSIÓN-APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado distingue el currículo oculto frente a currículo oficial y currículo nulo.",
+  "evidencia": "Selecciona la categoría curricular adecuada para prácticas formativas no explícitas en el plan formal.",
+  "tarea": "Elegir el tipo de currículo que corresponde al caso descrito.",
+  "contexto": "Un docente acompaña conflictos socioemocionales, promueve cooperación y modela normas de convivencia que no están explícitas en el plan escrito.",
+  "enunciado": "¿A qué tipo de currículo corresponde principalmente esta actuación?",
+  "opciones": {
+    "A": "Currículo nulo.",
+    "B": "Currículo oculto.",
+    "C": "Currículo exclusivamente oficial.",
+    "D": "Currículo inexistente."
   },
-  "item": {
-    "enunciado": "Un docente atiende problemáticas emocionales y sociales de sus estudiantes, promueve ayuda y servicio, y acompaña situaciones que no aparecen formalmente escritas en el plan de estudios.\n\n¿A qué tipo de currículo corresponde principalmente esta actuación?",
-    "opciones": {
-      "A": "Currículo nulo.",
-      "B": "Currículo oculto.",
-      "C": "Currículo exclusivamente oficial.",
-      "D": "Currículo inexistente."
-    },
-    "respuesta_correcta": "B"
+  "clave": "B",
+  "justificacion_clave": "Describe aprendizajes implícitos de convivencia y valores que circulan fuera del currículo formal.",
+  "distractores_funcion": {
+    "A": "Corresponde a contenidos omitidos.",
+    "B": "Clave correcta.",
+    "C": "Remite a documentos y prescripciones formales.",
+    "D": "Niega una dimensión real del proceso escolar."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "distractores": {
-      "A": "El currículo nulo se refiere a lo que se omite o no se enseña.",
-      "C": "El currículo oficial se basa en normas, lineamientos y documentos formales.",
-      "D": "Sí existe una dimensión curricular implícita."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje funcional y contexto general; evita sesgos culturales o exigencias externas no declaradas."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem base para currículo oculto."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado directo, paralelismo en opciones y una tarea cognitiva principal por ítem."
+  },
+  "metadata_editorial": {
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

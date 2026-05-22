@@ -1,0 +1,45 @@
+{
+  "id_item": "MTV_B23_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Aprendizaje y evaluación",
+  "tema": "Conflicto cognitivo",
+  "subtema": "Error productivo y reestructuración de esquemas",
+  "competencia": "Usar el error como evidencia para promover cambio conceptual.",
+  "nivel_cognitivo": "ANÁLISIS-APLICACIÓN",
+  "dificultad_estimada": "ALTA",
+  "claim": "El evaluado identifica intervenciones que transforman errores persistentes en oportunidades de reestructuración conceptual.",
+  "evidencia": "Distingue una secuencia didáctica que explicita concepciones previas, genera contraste y consolida nueva explicación.",
+  "tarea": "Elegir la intervención docente con mayor potencial de cambio conceptual frente a un error recurrente.",
+  "contexto": "En ciencias, varios estudiantes afirman que los objetos pesados caen más rápido que los livianos en cualquier situación.",
+  "enunciado": "¿Qué intervención favorece mejor la reestructuración del esquema previo?",
+  "opciones": {
+    "A": "Corregir de inmediato y pedir memorizar la regla correcta para la próxima prueba.",
+    "B": "Evitar el tema para no reforzar ideas erróneas y avanzar en el programa.",
+    "C": "Plantear una predicción, realizar una prueba controlada, contrastar resultados con la explicación inicial y guiar una reformulación argumentada.",
+    "D": "Asignar una lectura adicional y evaluar con preguntas de definición al final de clase."
+  },
+  "clave": "C",
+  "justificacion_clave": "Activa conflicto cognitivo con evidencia observable y guía reconstrucción explicativa, no solo corrección superficial.",
+  "distractores_funcion": {
+    "A": "Error frecuente: reemplaza comprensión por memorización.",
+    "B": "Evitación pedagógica: elimina oportunidad de cambio conceptual.",
+    "C": "Clave correcta.",
+    "D": "Aplicación parcial: agrega información sin confrontar esquema previo."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Contexto escolar general, sin referencias culturales excluyentes ni requisitos externos no declarados."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado directo, vocabulario pedagógico de uso común y una sola tarea cognitiva por ítem."
+  },
+  "metadata_editorial": {
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
+}

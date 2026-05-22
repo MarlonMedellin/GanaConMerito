@@ -1,108 +1,45 @@
 {
   "id_item": "CEOL_B05_I01",
-  "archivo_sugerido": "CEOL_B05_I01_curriculo_oficial_leyes_lineamientos_decretos.json",
-  "bloque": {
-    "codigo_bloque": "CEOL_B05",
-    "nombre": "PEI, currículo oficial y Manual de Convivencia",
-    "estado_en_lista": "Bloque 5 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 1 de 3"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Currículo y convivencia",
+  "tema": "Currículo oficial",
+  "subtema": "Relación PEI-currículo-manual",
+  "competencia": "Diferenciar el currículo oficial de otras expresiones curriculares no formalizadas.",
+  "nivel_cognitivo": "COMPRENSIÓN-APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado reconoce que el currículo oficial se sustenta en referentes normativos y decisiones institucionales formalmente adoptadas.",
+  "evidencia": "Identifica la opción que integra leyes, lineamientos y PEI como base del currículo oficial.",
+  "tarea": "Seleccionar la definición más precisa de currículo oficial.",
+  "contexto": "En una revisión institucional se discute qué parte del trabajo escolar corresponde al currículo oficial y qué parte pertenece a aprendizajes implícitos.",
+  "enunciado": "¿Qué opción define correctamente el currículo oficial?",
+  "opciones": {
+    "A": "Conjunto de normas no escritas que se transmiten en la vida cotidiana escolar.",
+    "B": "Marco formal basado en normas, lineamientos, estándares y decisiones pedagógicas adoptadas en el PEI.",
+    "C": "Listado de contenidos omitidos o no enseñados durante el año escolar.",
+    "D": "Decisiones improvisadas de cada docente sin acuerdo institucional."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce el currículo oficial como el conjunto de referentes curriculares formalmente definidos por la normatividad, los lineamientos, estándares, orientaciones del Ministerio de Educación Nacional y las decisiones institucionales adoptadas en el PEI.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación académica, orientación escolar o gestión institucional.",
-    "blueprint": {
-      "problematica_principal": "Confusión entre currículo oficial, currículo oculto, currículo nulo y prácticas pedagógicas informales.",
-      "fuente_autorizada": [
-        "Ley 115 de 1994",
-        "Lineamientos curriculares del Ministerio de Educación Nacional",
-        "Estándares Básicos de Competencias",
-        "Proyecto Educativo Institucional",
-        "Normativa curricular vigente"
-      ],
-      "componente_modulo": "Currículo, Didáctica y Metodología",
-      "competencia": "Comprensión del currículo oficial",
-      "afirmacion": "El currículo oficial se fundamenta en normas, lineamientos, estándares, decretos y orientaciones formalmente adoptadas.",
-      "evidencia_observable": "Identifica el currículo oficial como el currículo formalmente definido y sustentado en referentes normativos e institucionales.",
-      "tipo_de_evidencia": "Reconocimiento conceptual aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado comprende que el currículo oficial está constituido por los referentes normativos y pedagógicos formalmente establecidos, y no por prácticas espontáneas, aprendizajes implícitos o contenidos omitidos.",
-    "evidencia_observable": "Selecciona una definición que vincula currículo oficial con leyes, decretos, lineamientos, estándares, orientaciones del MEN y documentos institucionales.",
-    "tarea_cognitiva": "Distinguir el currículo oficial de otras formas o expresiones curriculares.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Lenguaje normativo técnico",
-        "revision": "La opción correcta explica la función del currículo oficial sin exigir citar normas específicas."
-      },
-      {
-        "riesgo": "Confusión con currículo oculto",
-        "revision": "Los distractores diferencian aprendizajes implícitos de referentes formales."
-      },
-      {
-        "riesgo": "Confusión con currículo nulo",
-        "revision": "La clave se centra en lo formalmente adoptado, no en lo planificado y no enseñado."
-      },
-      {
-        "riesgo": "Sesgo por experiencia en diseño curricular",
-        "revision": "No exige haber elaborado un currículo institucional; evalúa comprensión básica de su naturaleza oficial."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "Recoge el carácter formal, normativo e institucional del currículo oficial.",
+  "distractores_funcion": {
+    "A": "Describe currículo oculto.",
+    "B": "Clave correcta.",
+    "C": "Describe currículo nulo.",
+    "D": "Describe práctica no oficial."
   },
-  "item": {
-    "enunciado": "Durante una revisión curricular, un equipo docente diferencia entre lo que está formalmente definido por leyes, decretos, lineamientos, estándares y orientaciones del Ministerio de Educación Nacional, y aquello que surge informalmente en la vida cotidiana de la escuela.\n\n¿Qué tipo de currículo está constituido estrictamente por esos referentes oficiales?",
-    "opciones": {
-      "A": "Currículo oculto, porque corresponde a normas y valores no escritos que se transmiten en la vida escolar.",
-      "B": "Currículo oficial, porque se fundamenta en leyes, decretos, lineamientos, estándares, orientaciones del MEN y decisiones institucionales formalmente adoptadas.",
-      "C": "Currículo nulo, porque corresponde a contenidos que aparecen en documentos pero nunca se enseñan.",
-      "D": "Currículo improvisado, porque depende únicamente de las decisiones espontáneas de cada docente."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Escenarios educativos generales; sin sesgos culturales innecesarios ni prerrequisitos externos no declarados."
   },
-  "ficha_tecnica": {
-    "componente": "Currículo, Didáctica y Metodología",
-    "competencia": "Comprensión del currículo oficial",
-    "claim_evaluado": "El evaluado comprende que el currículo oficial está constituido por los referentes normativos y pedagógicos formalmente establecidos, y no por prácticas espontáneas, aprendizajes implícitos o contenidos omitidos.",
-    "evidencia": "Selecciona una definición que vincula currículo oficial con leyes, decretos, lineamientos, estándares, orientaciones del MEN y documentos institucionales.",
-    "proceso_cognitivo": "Reconocimiento conceptual aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Describe el currículo oculto, no el currículo oficial.",
-      "C": "Describe el currículo nulo, no el currículo oficial.",
-      "D": "Describe una práctica no formalizada ni institucionalmente adoptada."
-    },
-    "fuente_autorizada": [
-      "Ley 115 de 1994",
-      "Lineamientos curriculares del Ministerio de Educación Nacional",
-      "Estándares Básicos de Competencias",
-      "Proyecto Educativo Institucional",
-      "Normativa curricular vigente"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Lenguaje directo, vocabulario funcional y una sola tarea cognitiva por ítem."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque el currículo oculto corresponde a aprendizajes, valores y normas no escritas que circulan en la vida escolar.",
-    "opcion_C": "Es incorrecta porque el currículo nulo alude a aquello que se planea o se declara, pero no se enseña efectivamente.",
-    "opcion_D": "Es incorrecta porque una práctica improvisada no constituye currículo oficial.",
-    "distractores": {
-      "A": "Es incorrecta porque el currículo oculto corresponde a aprendizajes, valores y normas no escritas que circulan en la vida escolar.",
-      "C": "Es incorrecta porque el currículo nulo alude a aquello que se planea o se declara, pero no se enseña efectivamente.",
-      "D": "Es incorrecta porque una práctica improvisada no constituye currículo oficial."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no exige memoria literal de normas ni conocimiento jurídico especializado. Evalúa una distinción conceptual básica entre currículo oficial, oculto, nulo e improvisado."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 3 preguntas sobre PEI, currículo oficial y Manual de Convivencia."
+  "metadata_editorial": {
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

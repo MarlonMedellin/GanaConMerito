@@ -1,102 +1,45 @@
 {
   "id_item": "CEOL_B08_I01",
-  "archivo_sugerido": "CEOL_B08_I01_pleno_desarrollo_personalidad.json",
-  "bloque": {
-    "codigo_bloque": "CEOL_B08",
-    "nombre": "Enseñar, formar, motivación didáctica y competencias socioemocionales",
-    "estado_en_lista": "Bloque 8 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 1 de 5"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Práctica pedagógica",
+  "tema": "Motivación y formación integral",
+  "subtema": "Estrategias didácticas y socioemocionales",
+  "competencia": "Diseñar decisiones de aula que articulen logro académico y desarrollo socioemocional.",
+  "nivel_cognitivo": "JUICIO PEDAGÓGICO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado distingue prácticas de enseñanza que sostienen motivación autónoma y autorregulación.",
+  "evidencia": "Selecciona la intervención didáctica que combina metas claras, retroalimentación y clima socioemocional seguro.",
+  "tarea": "Seleccionar la estrategia de aula más efectiva para mejorar participación y persistencia.",
+  "contexto": "En un curso de secundaria, baja la participación y varios estudiantes abandonan tareas al primer error.",
+  "enunciado": "¿Qué decisión docente responde mejor al problema planteado?",
+  "opciones": {
+    "A": "Aumentar el número de tareas calificadas para elevar la presión de cumplimiento.",
+    "B": "Reducir la exigencia del curso para evitar frustración y mantener tranquilidad.",
+    "C": "Mantener metas desafiantes, modelar estrategias, ofrecer retroalimentación formativa y espacios breves de autorregulación emocional.",
+    "D": "Centrar la clase en exposición magistral para evitar interrupciones y controlar el grupo."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende el sentido pedagógico del pleno desarrollo de la personalidad como fin de la educación.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación o gestión pedagógica.",
-    "blueprint": {
-      "problematica_principal": "Reducción del pleno desarrollo de la personalidad a rendimiento académico o control disciplinario.",
-      "fuente_autorizada": [
-        "Ley 115 de 1994, artículo 5",
-        "Constitución Política de Colombia",
-        "Proyecto Educativo Institucional",
-        "Enfoque de formación integral"
-      ],
-      "componente_modulo": "Marco Legal y Convivencia",
-      "competencia": "Formación integral y fines de la educación",
-      "afirmacion": "El pleno desarrollo de la personalidad implica formación integral, autonomía, responsabilidad, convivencia, pensamiento crítico y proyecto de vida.",
-      "evidencia_observable": "Reconoce prácticas pedagógicas que desarrollan dimensiones cognitivas, afectivas, éticas, sociales y ciudadanas del estudiante.",
-      "tipo_de_evidencia": "Interpretación normativa y pedagógica aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende que buscar el pleno desarrollo de la personalidad significa formar integralmente al estudiante, no solo transmitir contenidos o controlar conductas.",
-    "evidencia_observable": "Selecciona una práctica que articula saberes académicos con autonomía, convivencia, ética, afectividad, participación y proyecto de vida.",
-    "tarea_cognitiva": "Interpretar un fin de la educación y aplicarlo a una situación de aula.",
-    "tipo_de_pregunta": "Pregunta conceptual normativa aplicada",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confundir formación integral con control moral del estudiante",
-        "revision": "La clave enfatiza autonomía, dignidad, convivencia y proyecto de vida, no imposición moral."
-      },
-      {
-        "riesgo": "Reducir el fin educativo a resultados académicos",
-        "revision": "La opción correcta incluye dimensiones cognitivas, éticas, sociales y afectivas."
-      },
-      {
-        "riesgo": "Sesgo por área disciplinar",
-        "revision": "La pregunta aplica a cualquier área del currículo."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "Combina apoyo cognitivo y socioemocional sin bajar expectativas, favoreciendo motivación de calidad y persistencia.",
+  "distractores_funcion": {
+    "A": "Error de generalización: confunde control externo con motivación sostenida.",
+    "B": "Aplicación incompleta: reduce demanda y afecta aprendizaje profundo.",
+    "C": "Clave correcta.",
+    "D": "Confusión frecuente: prioriza control del aula sobre participación activa."
   },
-  "item": {
-    "enunciado": "En una reunión pedagógica se analiza el fin educativo relacionado con el pleno desarrollo de la personalidad del estudiante. Algunos docentes lo entienden únicamente como obtener buenas calificaciones y cumplir normas de comportamiento.\n\n¿Qué significa en la práctica pedagógica buscar el pleno desarrollo de la personalidad?",
-    "opciones": {
-      "A": "Centrarse solo en la memorización de contenidos y en la obediencia disciplinaria.",
-      "B": "Permitir que cada estudiante actúe sin límites, normas ni responsabilidades.",
-      "C": "Promover formación integral mediante autonomía, pensamiento crítico, convivencia, responsabilidad, dimensión afectiva, ética y proyecto de vida.",
-      "D": "Reducir la formación a la preparación para pruebas externas."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Contexto escolar general, sin referencias culturales excluyentes ni requisitos externos no declarados."
   },
-  "ficha_tecnica": {
-    "componente": "Marco Legal y Convivencia",
-    "competencia": "Formación integral y fines de la educación",
-    "claim_evaluado": "El evaluado comprende que buscar el pleno desarrollo de la personalidad significa formar integralmente al estudiante, no solo transmitir contenidos o controlar conductas.",
-    "evidencia": "Selecciona una práctica que articula saberes académicos con autonomía, convivencia, ética, afectividad, participación y proyecto de vida.",
-    "proceso_cognitivo": "Interpretación normativa aplicada",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Reduce la formación a memoria y obediencia.",
-      "B": "Confunde autonomía con ausencia de límites.",
-      "D": "Limita la educación a rendimiento en pruebas."
-    },
-    "fuente_autorizada": [
-      "Ley 115 de 1994, artículo 5",
-      "Constitución Política de Colombia",
-      "Proyecto Educativo Institucional",
-      "Enfoque de formación integral"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado directo, vocabulario pedagógico de uso común y una sola tarea cognitiva por ítem."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque empobrece la finalidad educativa.",
-    "opcion_B": "Es incorrecta porque la autonomía también implica responsabilidad.",
-    "opcion_D": "Es incorrecta porque las pruebas externas no agotan los fines de la educación.",
-    "distractores": {
-      "A": "Es incorrecta porque empobrece la finalidad educativa.",
-      "B": "Es incorrecta porque la autonomía también implica responsabilidad.",
-      "D": "Es incorrecta porque las pruebas externas no agotan los fines de la educación."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no favorece un área específica ni una visión moral particular. Evalúa una comprensión amplia de formación integral."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 5 preguntas sobre enseñar, formar y competencias socioemocionales."
+  "metadata_editorial": {
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }
