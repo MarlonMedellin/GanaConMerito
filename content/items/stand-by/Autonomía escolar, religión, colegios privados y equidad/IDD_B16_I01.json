@@ -1,104 +1,45 @@
 {
   "id_item": "IDD_B16_I01",
-  "archivo_sugerido": "IDD_B16_I01_uniforme_simbolo_religioso_autonomia_equidad.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B16",
-    "nombre": "Autonomía escolar, religión, colegios privados y equidad",
-    "estado_en_lista": "Bloque 16 de 17",
-    "decision_del_bloque": "Pregunta única",
-    "item_en_grupo": "Ítem 1 de 1"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Política educativa y gestión institucional",
+  "tema": "Autonomía escolar, religión, colegios privados y equidad",
+  "subtema": "Autonomía vs. inclusión en colegios privados",
+  "competencia": "Valora decisiones institucionales considerando autonomía escolar, enfoque de derechos, pluralismo y equidad.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "ALTA",
+  "claim": "Identifica la actuación institucional o pedagógica más consistente con el marco conceptual y normativo del caso planteado.",
+  "evidencia": "Selecciona una única alternativa técnicamente superior frente a opciones plausibles pero incorrectas o incompletas.",
+  "tarea": "Analizar el caso y elegir la mejor decisión pedagógica o institucional según el criterio evaluado.",
+  "contexto": "Un colegio privado exige que el uniforme incluya un símbolo religioso específico. Algunas familias de otras creencias expresan molestia porque consideran que la exigencia afecta su libertad de conciencia y la identidad religiosa de sus hijos.",
+  "enunciado": "Un colegio privado exige que el uniforme incluya un símbolo religioso específico. Algunas familias de otras creencias expresan molestia porque consideran que la exigencia afecta su libertad de conciencia y la identidad religiosa de sus hijos.\n\nA la luz de la normatividad y del enfoque de derechos, ¿qué acción equitativa debe tomar la escuela?",
+  "opciones": {
+    "A": "Expulsar o negar matrícula a quienes no compartan el símbolo religioso institucional.",
+    "B": "Imponer el símbolo sin escuchar a las familias, porque la autonomía privada no tiene límites.",
+    "C": "Revisar la exigencia y ofrecer una alternativa razonable que respete la identidad institucional sin obligar a estudiantes de otras creencias a portar un símbolo contrario a su conciencia.",
+    "D": "Eliminar toda referencia al PEI y permitir que cada estudiante incumpla cualquier norma institucional."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende que la autonomía de un colegio privado debe ejercerse respetando derechos fundamentales, pluralidad religiosa, libertad de conciencia y no discriminación.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, rectoría, coordinación, convivencia escolar, gestión institucional o educación privada.",
-    "blueprint": {
-      "problematica_principal": "Uso de la autonomía institucional para imponer símbolos o prácticas religiosas que pueden vulnerar libertad de conciencia o igualdad de estudiantes y familias.",
-      "fuente_autorizada": [
-        "Constitución Política de Colombia",
-        "Ley 115 de 1994",
-        "Libertad religiosa y de conciencia",
-        "Manual de Convivencia",
-        "Enfoque de derechos"
-      ],
-      "componente_modulo": "Autonomía vs. inclusión en colegios privados",
-      "competencia": "Equidad, pluralidad y no discriminación",
-      "afirmacion": "La autonomía escolar debe armonizarse con derechos fundamentales, pluralidad, libertad de conciencia y trato equitativo.",
-      "evidencia_observable": "Reconoce una acción institucional que permite alternativas razonables y evita imponer creencias particulares.",
-      "tipo_de_evidencia": "Juicio normativo y ético aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende que una institución privada puede tener identidad institucional, pero no puede ejercer su autonomía de manera que desconozca derechos fundamentales o discrimine por creencias.",
-    "evidencia_observable": "Selecciona una acción equitativa ante la exigencia de un símbolo religioso en el uniforme.",
-    "tarea_cognitiva": "Analizar un conflicto entre autonomía institucional y derechos fundamentales.",
-    "tipo_de_pregunta": "Caso situacional normativo",
-    "dificultad_esperada": "Alta",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Presentar la identidad religiosa institucional como ilegítima en todos los casos",
-        "revision": "La clave permite identidad, pero exige alternativas respetuosas de derechos."
-      },
-      {
-        "riesgo": "Desconocer la autonomía de colegios privados",
-        "revision": "La respuesta correcta armoniza autonomía y derechos fundamentales."
-      },
-      {
-        "riesgo": "Estigmatizar una religión particular",
-        "revision": "El ítem no menciona una religión específica y se centra en libertad de conciencia."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque excluye por creencias religiosas.",
+    "B": "Es incorrecta porque la autonomía escolar tiene límites en los derechos fundamentales.",
+    "C": "Clave correcta.",
+    "D": "Es incorrecta porque respetar derechos no significa eliminar toda norma institucional."
   },
-  "item": {
-    "enunciado": "Un colegio privado exige que el uniforme incluya un símbolo religioso específico. Algunas familias de otras creencias expresan molestia porque consideran que la exigencia afecta su libertad de conciencia y la identidad religiosa de sus hijos.\n\nA la luz de la normatividad y del enfoque de derechos, ¿qué acción equitativa debe tomar la escuela?",
-    "opciones": {
-      "A": "Expulsar o negar matrícula a quienes no compartan el símbolo religioso institucional.",
-      "B": "Imponer el símbolo sin escuchar a las familias, porque la autonomía privada no tiene límites.",
-      "C": "Revisar la exigencia y ofrecer una alternativa razonable que respete la identidad institucional sin obligar a estudiantes de otras creencias a portar un símbolo contrario a su conciencia.",
-      "D": "Eliminar toda referencia al PEI y permitir que cada estudiante incumpla cualquier norma institucional."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Contextos escolares generales y lenguaje técnico neutral; no exige experiencia localizada."
   },
-  "ficha_tecnica": {
-    "componente": "Autonomía vs. inclusión en colegios privados",
-    "competencia": "Equidad, pluralidad y no discriminación",
-    "claim_evaluado": "El evaluado comprende que una institución privada puede tener identidad institucional, pero no puede ejercer su autonomía de manera que desconozca derechos fundamentales o discrimine por creencias.",
-    "evidencia": "Selecciona una acción equitativa ante la exigencia de un símbolo religioso en el uniforme.",
-    "proceso_cognitivo": "Análisis normativo y ético",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Alta",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Propone exclusión por creencias.",
-      "B": "Convierte la autonomía institucional en imposición ilimitada.",
-      "D": "Confunde respeto de derechos con ausencia total de normas."
-    },
-    "fuente_autorizada": [
-      "Constitución Política de Colombia",
-      "Ley 115 de 1994",
-      "Libertad religiosa y de conciencia",
-      "Manual de Convivencia",
-      "Enfoque de derechos"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Estructura de caso breve y una sola tarea cognitiva por ítem."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque excluye por creencias religiosas.",
-    "opcion_B": "Es incorrecta porque la autonomía escolar tiene límites en los derechos fundamentales.",
-    "opcion_D": "Es incorrecta porque respetar derechos no significa eliminar toda norma institucional.",
-    "distractores": {
-      "A": "Es incorrecta porque excluye por creencias religiosas.",
-      "B": "Es incorrecta porque la autonomía escolar tiene límites en los derechos fundamentales.",
-      "D": "Es incorrecta porque respetar derechos no significa eliminar toda norma institucional."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "Aprobado con revisión normativa recomendada.",
-    "argumento": "El ítem evita estigmatizar religiones y plantea una solución de equilibrio entre identidad institucional y libertad de conciencia."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado con revisión normativa",
-    "observacion": "Por tratarse de libertad religiosa, autonomía privada y derechos fundamentales, conviene validarlo jurídicamente antes de uso definitivo.",
-    "uso_recomendado": "Puede usarse como pregunta única del bloque Autonomía escolar, religión, colegios privados y equidad."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Autonomía escolar, religión, colegios privados y equidad/IDD_B16_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

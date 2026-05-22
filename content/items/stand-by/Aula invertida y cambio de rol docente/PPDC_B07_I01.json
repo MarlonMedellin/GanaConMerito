@@ -1,108 +1,45 @@
 {
   "id_item": "PPDC_B07_I01",
-  "archivo_sugerido": "PPDC_B07_I01_aula_invertida_cambio_rol_docente.json",
-  "bloque": {
-    "codigo_bloque": "PPDC_B07",
-    "nombre": "Aula invertida y cambio de rol docente",
-    "estado_en_lista": "Bloque 7 de 7",
-    "decision_del_bloque": "Pregunta única",
-    "item_en_grupo": "Ítem 1 de 1"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y didáctica",
+  "tema": "Aula invertida y cambio de rol docente",
+  "subtema": "Metodologías Activas y Selección Didáctica",
+  "competencia": "Analiza decisiones didácticas y selecciona estrategias coherentes con el enfoque de aula invertida y el rol mediador del docente.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la actuación institucional o pedagógica más consistente con el marco conceptual y normativo del caso planteado.",
+  "evidencia": "Selecciona una única alternativa técnicamente superior frente a opciones plausibles pero incorrectas o incompletas.",
+  "tarea": "Analizar el caso y elegir la mejor decisión pedagógica o institucional según el criterio evaluado.",
+  "contexto": "Una institución quiere implementar aula invertida para superar clases centradas exclusivamente en exposición magistral. El equipo docente acuerda que los estudiantes revisarán algunos materiales antes del encuentro presencial, pero surge la duda sobre qué debe cambiar realmente durante la clase.",
+  "enunciado": "Una institución quiere implementar aula invertida para superar clases centradas exclusivamente en exposición magistral. El equipo docente acuerda que los estudiantes revisarán algunos materiales antes del encuentro presencial, pero surge la duda sobre qué debe cambiar realmente durante la clase.\n\n¿Cuál es el principal beneficio cognitivo y el cambio de rol del docente al implementar aula invertida?",
+  "opciones": {
+    "A": "El beneficio es que el docente habla durante más tiempo en clase, mientras los estudiantes escuchan y copian con mayor disciplina.",
+    "B": "El beneficio es dedicar el tiempo de clase a aplicar, analizar, resolver problemas y recibir retroalimentación; el docente pasa de expositor central a mediador del aprendizaje.",
+    "C": "El beneficio es eliminar la planeación docente, porque los estudiantes aprenden solos con los materiales previos.",
+    "D": "El beneficio es reemplazar toda interacción en clase por tareas individuales calificadas, para reducir preguntas y discusiones."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce el beneficio cognitivo principal del aula invertida y el cambio de rol del docente frente a la clase magistral tradicional.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "Confusión entre aula invertida y simple asignación de tareas previas sin transformación del tiempo de clase.",
-      "fuente_autorizada": [
-        "Metodologías activas",
-        "Aula invertida o Flipped Learning",
-        "Enfoque constructivista",
-        "Orientaciones pedagógicas institucionales",
-        "Lineamientos curriculares del Ministerio de Educación Nacional"
-      ],
-      "componente_modulo": "Metodologías Activas y Selección Didáctica",
-      "competencia": "Diseño de ambientes de aprendizaje activo",
-      "afirmacion": "El aula invertida permite desplazar la exposición inicial fuera del aula para dedicar el tiempo presencial a interacción, aplicación, resolución de problemas y retroalimentación.",
-      "evidencia_observable": "Reconoce que el docente pasa de transmisor central de información a mediador, orientador y retroalimentador del aprendizaje activo.",
-      "tipo_de_evidencia": "Comprensión metodológica aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado comprende que el aula invertida no consiste solo en dejar videos o lecturas como tarea, sino en reorganizar el tiempo pedagógico para que el aula se use en actividades de aplicación, análisis, colaboración, resolución de problemas y retroalimentación docente.",
-    "evidencia_observable": "Selecciona una explicación que identifica el beneficio cognitivo del aula invertida y el cambio de rol docente frente a la clase magistral.",
-    "tarea_cognitiva": "Analizar la diferencia entre clase magistral y aula invertida, y seleccionar la opción que expresa mejor el beneficio y el cambio de rol docente.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Sesgo por acceso tecnológico",
-        "revision": "El ítem no limita el aula invertida al uso de plataformas digitales; permite comprenderla como reorganización del tiempo de aprendizaje con materiales previos de distinto tipo."
-      },
-      {
-        "riesgo": "Confusión entre tarea previa y aula invertida",
-        "revision": "La clave aclara que el valor de la metodología está en usar el tiempo de clase para aplicación, interacción y retroalimentación, no solo en enviar contenidos antes."
-      },
-      {
-        "riesgo": "Sesgo por área disciplinar",
-        "revision": "La metodología puede aplicarse en distintas áreas del currículo."
-      },
-      {
-        "riesgo": "Ambigüedad en la clave",
-        "revision": "La opción correcta es la única que integra beneficio cognitivo y cambio de rol docente."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque conserva la lógica de clase magistral centrada en el docente.",
+    "B": "Clave correcta.",
+    "C": "Es incorrecta porque el aula invertida no elimina la planeación ni la mediación docente; por el contrario, las exige con mayor intencionalidad.",
+    "D": "Es incorrecta porque la metodología no busca reducir la interacción, sino cualificarla mediante actividades de aplicación y retroalimentación."
   },
-  "item": {
-    "enunciado": "Una institución quiere implementar aula invertida para superar clases centradas exclusivamente en exposición magistral. El equipo docente acuerda que los estudiantes revisarán algunos materiales antes del encuentro presencial, pero surge la duda sobre qué debe cambiar realmente durante la clase.\n\n¿Cuál es el principal beneficio cognitivo y el cambio de rol del docente al implementar aula invertida?",
-    "opciones": {
-      "A": "El beneficio es que el docente habla durante más tiempo en clase, mientras los estudiantes escuchan y copian con mayor disciplina.",
-      "B": "El beneficio es dedicar el tiempo de clase a aplicar, analizar, resolver problemas y recibir retroalimentación; el docente pasa de expositor central a mediador del aprendizaje.",
-      "C": "El beneficio es eliminar la planeación docente, porque los estudiantes aprenden solos con los materiales previos.",
-      "D": "El beneficio es reemplazar toda interacción en clase por tareas individuales calificadas, para reducir preguntas y discusiones."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Contextos escolares generales y lenguaje técnico neutral; no exige experiencia localizada."
   },
-  "ficha_tecnica": {
-    "componente": "Metodologías Activas y Selección Didáctica",
-    "competencia": "Diseño de ambientes de aprendizaje activo",
-    "claim_evaluado": "El evaluado comprende que el aula invertida no consiste solo en dejar videos o lecturas como tarea, sino en reorganizar el tiempo pedagógico para que el aula se use en actividades de aplicación, análisis, colaboración, resolución de problemas y retroalimentación docente.",
-    "evidencia": "Selecciona una explicación que identifica el beneficio cognitivo del aula invertida y el cambio de rol docente frente a la clase magistral.",
-    "proceso_cognitivo": "Comprensión metodológica aplicada",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Mantiene el modelo magistral centrado en la exposición docente y la copia.",
-      "C": "Confunde aula invertida con autoaprendizaje sin mediación ni planeación docente.",
-      "D": "Reduce la metodología a tareas individuales calificadas y elimina la interacción pedagógica."
-    },
-    "fuente_autorizada": [
-      "Metodologías activas",
-      "Aula invertida o Flipped Learning",
-      "Enfoque constructivista",
-      "Orientaciones pedagógicas institucionales",
-      "Lineamientos curriculares del Ministerio de Educación Nacional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Estructura de caso breve y una sola tarea cognitiva por ítem."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque conserva la lógica de clase magistral centrada en el docente.",
-    "opcion_C": "Es incorrecta porque el aula invertida no elimina la planeación ni la mediación docente; por el contrario, las exige con mayor intencionalidad.",
-    "opcion_D": "Es incorrecta porque la metodología no busca reducir la interacción, sino cualificarla mediante actividades de aplicación y retroalimentación.",
-    "distractores": {
-      "A": "Es incorrecta porque conserva la lógica de clase magistral centrada en el docente.",
-      "C": "Es incorrecta porque el aula invertida no elimina la planeación ni la mediación docente; por el contrario, las exige con mayor intencionalidad.",
-      "D": "Es incorrecta porque la metodología no busca reducir la interacción, sino cualificarla mediante actividades de aplicación y retroalimentación."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no presupone acceso obligatorio a tecnología avanzada ni experiencia previa en plataformas digitales. Evalúa la comprensión metodológica central del aula invertida: reorganizar el tiempo de clase para favorecer aprendizaje activo y mediación docente."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como pregunta única del bloque Aula invertida y cambio de rol docente."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Aula invertida y cambio de rol docente/PPDC_B07_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }
