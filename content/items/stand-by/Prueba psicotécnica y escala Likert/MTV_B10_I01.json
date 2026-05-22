@@ -1,40 +1,46 @@
 {
   "id_item": "MTV_B10_I01",
-  "archivo_sugerido": "MTV_B10_I01_responder_desde_rol_normativo_docente.json",
-  "proposito_de_uso": "Evaluar si el aspirante comprende que en una prueba psicotécnica debe responder desde el rol profesional y normativo, no desde preferencias personales.",
-  "blueprint": {
-    "componente_modulo": "Actitud del servidor público docente",
-    "competencia": "Fundamentación normativa de la respuesta actitudinal",
-    "afirmacion": "Las respuestas en una escala Likert docente deben fundamentarse en el rol profesional, el manual de funciones, la ética del servidor público y las competencias esperadas.",
-    "evidencia_observable": "Selecciona la fuente de criterio profesional para responder, por encima de creencias personales o emociones momentáneas.",
-    "tipo_de_evidencia": "Comprensión psicotécnica aplicada",
-    "dificultad_esperada": "Media",
-    "clave": "B"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Evaluación psicotécnica",
+  "tema": "Escala Likert",
+  "subtema": "Criterio profesional de respuesta",
+  "competencia": "Aplicar criterio ético-profesional al responder ítems actitudinales en contexto laboral docente.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado distingue entre preferencia personal y criterio de rol en pruebas psicotécnicas laborales.",
+  "evidencia": "Selecciona el criterio de respuesta alineado con deber funcional, ética pública y competencias del cargo.",
+  "tarea": "Determinar el fundamento más adecuado para responder un enunciado actitudinal tipo Likert.",
+  "contexto": "Prueba psicotécnica docente con enunciado sobre atención a estudiantes con dificultades.",
+  "enunciado": "En una prueba psicotécnica tipo Likert para docencia, una persona duda si responder según gustos personales o según su rol institucional. ¿Qué criterio debe priorizar?",
+  "opciones": {
+    "A": "Preferencias personales, aunque contradigan deberes del cargo.",
+    "B": "Manual de funciones, ética del servidor público y competencias profesionales esperadas.",
+    "C": "Respuesta hipotética sin considerar normas ni responsabilidades institucionales.",
+    "D": "Opción que probablemente marque la mayoría de participantes."
   },
-  "item": {
-    "enunciado": "En una prueba psicotécnica tipo Escala Likert, a un docente se le presenta una proposición sobre atención a estudiantes con dificultades de aprendizaje. El docente duda si debe responder desde lo que personalmente prefiere o desde lo que exige su rol profesional.\n\n¿Desde qué criterio debe fundamentar principalmente su respuesta?",
-    "opciones": {
-      "A": "Desde sus gustos personales, aunque contradigan el deber docente.",
-      "B": "Desde el manual de funciones, el rol docente, la ética del servidor público y las competencias profesionales esperadas.",
-      "C": "Desde lo que haría si no existieran normas institucionales.",
-      "D": "Desde la respuesta que crea que la mayoría de personas marcaría."
-    },
-    "respuesta_correcta": "B"
+  "clave": "B",
+  "justificacion_clave": "Es la única opción que fundamenta la respuesta en criterios profesionales y normativos del rol docente.",
+  "distractores_funcion": {
+    "A": "Confusión entre autenticidad y desempeño profesional en cargo público.",
+    "B": "Clave correcta.",
+    "C": "Aplicación incompleta: ignora marco ético y funcional del puesto.",
+    "D": "Sesgo de conformidad social: sustituye criterio técnico por imitación."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "distractores": {
-      "A": "Reduce la respuesta a preferencias individuales.",
-      "C": "Desconoce el marco institucional y normativo.",
-      "D": "Confunde criterio profesional con imitación de una mayoría."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "No induce una respuesta ideológica específica; evalúa consistencia con rol profesional.",
+    "nota": "Ítem de orientación de criterio, no de diagnóstico clínico."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem evalúa juicio profesional sin inducir manipulación de la prueba."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado concreto y opciones de longitud similar."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem base para explicar la lógica de respuesta en Escala Likert docente."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Prueba psicotécnica y escala Likert/MTV_B10_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }
