@@ -1,105 +1,45 @@
 {
   "id_item": "CB10_I01",
-  "bloque": {
-    "numero": 10,
-    "nombre": "Debido proceso",
-    "estado_en_lista": "Bloque 10 de 15",
-    "decision_del_bloque": "Pregunta única",
-    "item_en_grupo": "Ítem 1 de 1"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Convivencia y protección escolar",
+  "tema": "Debido proceso y rutas de atención",
+  "subtema": "Confidencialidad y no revictimización",
+  "competencia": "Determina la actuación institucional pertinente ante una presunta vulneración grave de derechos de un estudiante.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "ALTA",
+  "claim": "Reconoce que la primera respuesta institucional debe proteger, preservar confidencialidad y activar ruta competente sin revictimizar.",
+  "evidencia": "Selecciona la actuación que evita interrogatorios improcedentes y demoras en la activación de protección.",
+  "tarea": "Elegir la respuesta institucional técnicamente adecuada ante una revelación de posible abuso.",
+  "contexto": "Una estudiante informa a una docente una posible situación de abuso.",
+  "enunciado": "Una estudiante informa a una docente que podría haber sido víctima de abuso. La docente propone reunir a varios funcionarios para preguntarle repetidamente qué ocurrió. ¿Cuál actuación es más adecuada?",
+  "opciones": {
+    "A": "Realizar varias entrevistas internas para verificar la veracidad del relato.",
+    "B": "Exponer el caso ante el grupo de estudiantes para identificar testigos.",
+    "C": "Brindar contención inicial, mantener confidencialidad y activar la ruta con instancias competentes.",
+    "D": "Esperar a que la estudiante entregue pruebas antes de activar cualquier ruta."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce que, ante una presunta situación de abuso o vulneración grave de derechos, la institución educativa debe proteger a la víctima, preservar la confidencialidad, evitar la revictimización y activar las rutas competentes.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "Revictimización en abuso",
-      "fuente_autorizada": [
-        "Ley 1620 de 2013",
-        "Ruta de atención integral para la convivencia escolar",
-        "Normativa de protección de niños, niñas y adolescentes",
-        "Manual de convivencia institucional"
-      ],
-      "componente_modulo": "Convivencia",
-      "competencia": "Debido proceso",
-      "afirmacion": "Interrogar menor puede ser extralimitación.",
-      "evidencia_observable": "Reconoce que la institución debe activar rutas y evitar actuaciones que revictimicen o excedan su competencia.",
-      "tipo_de_evidencia": "Juicio profesional ante situación sensible",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende que ante presuntas vulneraciones graves se deben activar rutas competentes y proteger a la víctima, evitando interrogatorios improcedentes, exposición pública o demoras injustificadas.",
-    "evidencia_observable": "Selecciona una actuación institucional que brinda contención inicial, protege la confidencialidad y activa la ruta de atención correspondiente.",
-    "tarea_cognitiva": "Elegir la actuación institucional adecuada ante una situación sensible de protección y debido proceso.",
-    "tipo_de_pregunta": "Caso situacional de juicio profesional",
-    "dificultad_esperada": "Alta",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Tratamiento sensible de violencia o abuso",
-        "revision": "El ítem evita detalles explícitos y se centra en la actuación institucional protectora."
-      },
-      {
-        "riesgo": "Revictimización en el lenguaje",
-        "revision": "No se cuestiona la credibilidad de la estudiante ni se solicita reconstruir detalles de lo ocurrido."
-      },
-      {
-        "riesgo": "Sesgo de género",
-        "revision": "Aunque el caso usa una estudiante como ejemplo, la clave se basa en protección, confidencialidad y activación de ruta, no en estereotipos."
-      },
-      {
-        "riesgo": "Exigencia de conocimiento jurídico especializado",
-        "revision": "El ítem no exige citar artículos específicos; evalúa una actuación profesional general frente a una situación grave."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "La opción C asegura protección inmediata, evita revictimización y respeta el debido proceso institucional.",
+  "distractores_funcion": {
+    "A": "Normaliza interrogación repetida que puede revictimizar.",
+    "B": "Vulnera confidencialidad y expone indebidamente a la estudiante.",
+    "C": "Clave correcta.",
+    "D": "Demora injustificadamente la activación de protección."
   },
-  "item": {
-    "enunciado": "Una estudiante informa a una docente que pudo haber sido víctima de una situación de abuso. La docente, preocupada por conocer todos los detalles, propone reunir a varios miembros de la institución para preguntarle repetidamente qué ocurrió.\n\n¿Cuál actuación es más adecuada?",
-    "opciones": {
-      "A": "Realizar varias entrevistas internas para confirmar si la estudiante dice la verdad.",
-      "B": "Exponer el caso ante el grupo para identificar posibles testigos.",
-      "C": "Brindar contención inicial, preservar la confidencialidad y activar la ruta de atención con las autoridades o instancias competentes.",
-      "D": "Esperar a que la estudiante entregue pruebas antes de informar a cualquier instancia."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje sobrio y no gráfico; evita culpabilizar a la víctima."
   },
-  "ficha_tecnica": {
-    "componente": "Convivencia",
-    "competencia": "Debido proceso",
-    "claim_evaluado": "El evaluado comprende que ante presuntas vulneraciones graves se deben activar rutas competentes y proteger a la víctima, evitando interrogatorios improcedentes, exposición pública o demoras injustificadas.",
-    "evidencia": "Selecciona una actuación institucional que brinda contención inicial, protege la confidencialidad y activa la ruta de atención correspondiente.",
-    "proceso_cognitivo": "Análisis y juicio profesional ante situación sensible",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Alta",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Puede generar revictimización y exceder las competencias institucionales al realizar interrogatorios repetidos.",
-      "B": "Vulnera la confidencialidad, expone a la estudiante y puede aumentar el daño.",
-      "D": "Demora la activación de protección ante una situación grave y condiciona indebidamente la atención a la entrega de pruebas."
-    },
-    "fuente_autorizada": [
-      "Ley 1620 de 2013",
-      "Ruta de atención integral para la convivencia escolar",
-      "Normativa de protección de niños, niñas y adolescentes",
-      "Manual de convivencia institucional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Texto breve con una sola tarea cognitiva y opciones paralelas."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque realizar varias entrevistas internas para confirmar la veracidad puede revictimizar y sustituir funciones de autoridades o instancias competentes.",
-    "opcion_B": "Es incorrecta porque exponer el caso ante el grupo vulnera la confidencialidad y puede generar afectaciones adicionales.",
-    "opcion_D": "Es incorrecta porque esperar pruebas puede retrasar la protección y la activación de la ruta ante una presunta vulneración grave.",
-    "distractores": {
-      "A": "Es incorrecta porque realizar varias entrevistas internas para confirmar la veracidad puede revictimizar y sustituir funciones de autoridades o instancias competentes.",
-      "B": "Es incorrecta porque exponer el caso ante el grupo vulnera la confidencialidad y puede generar afectaciones adicionales.",
-      "D": "Es incorrecta porque esperar pruebas puede retrasar la protección y la activación de la ruta ante una presunta vulneración grave."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem aborda una situación sensible sin incluir detalles gráficos ni innecesarios. No responsabiliza a la estudiante, no cuestiona su credibilidad y evalúa una actuación institucional protectora, basada en confidencialidad, contención y activación de rutas."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada. Por la sensibilidad del caso, conviene mantener lenguaje sobrio y evitar detalles adicionales.",
-    "uso_recomendado": "Puede usarse como pregunta única del bloque Debido proceso."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Debido proceso/CB10_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-19",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

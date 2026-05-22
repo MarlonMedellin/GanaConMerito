@@ -1,103 +1,45 @@
 {
   "id_item": "CB03_I02",
-  "bloque": {
-    "numero": 3,
-    "nombre": "PEI y actores",
-    "estado_en_lista": "Bloque 3 de 15",
-    "decision_del_bloque": "Grupo de 2 preguntas",
-    "item_en_grupo": "Ítem 2 de 2"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión escolar",
+  "tema": "Proyecto Educativo Institucional (PEI)",
+  "subtema": "Participación de actores educativos",
+  "competencia": "Analiza prácticas institucionales y determina su alineación con principios de participación en la construcción del PEI.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Distingue entre socialización informativa y participación efectiva en la construcción o actualización del PEI.",
+  "evidencia": "Identifica que la participación exige deliberación y aportes con posibilidad real de incidencia en acuerdos institucionales.",
+  "tarea": "Valorar si la actuación institucional descrita cumple el estándar de participación en el PEI.",
+  "contexto": "La institución convoca una reunión para comunicar un PEI ya definido por directivos.",
+  "enunciado": "Después de elaborar una nueva versión del PEI, la institución convoca a docentes, estudiantes y familias a una reunión de una hora para informar cambios ya definidos. ¿Cuál valoración es más adecuada?",
+  "opciones": {
+    "A": "Sí cumple, porque participar es recibir información sobre decisiones institucionales.",
+    "B": "No cumple, porque participar implica deliberar, proponer y construir acuerdos antes de cerrar decisiones.",
+    "C": "Sí cumple, porque el PEI es un documento técnico que solo define el equipo directivo.",
+    "D": "No afecta, porque la participación de familias y estudiantes no es necesaria en el PEI."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante distingue entre una socialización formal del PEI y una participación real de la comunidad educativa en su construcción, revisión y apropiación.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "PEI aislado sin participación",
-      "fuente_autorizada": [
-        "Ley 115 de 1994",
-        "Decreto 1860 de 1994",
-        "Orientaciones MEN sobre Proyecto Educativo Institucional"
-      ],
-      "componente_modulo": "Gestión Directiva",
-      "competencia": "Participación",
-      "afirmacion": "El PEI debe construirse colectivamente.",
-      "evidencia_observable": "Reconoce que la participación debe traducirse en deliberación, aportes y construcción de acuerdos institucionales.",
-      "tipo_de_evidencia": "Interpretación de situación institucional",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado identifica que la construcción del PEI exige deliberación y apropiación de la comunidad educativa, no solo comunicación posterior de decisiones ya tomadas.",
-    "evidencia_observable": "Diferencia una reunión informativa de un proceso participativo real en la construcción o actualización del PEI.",
-    "tarea_cognitiva": "Diferenciar entre socialización formal y construcción participativa.",
-    "tipo_de_pregunta": "Caso situacional de juicio profesional",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Sesgo por experiencia institucional",
-        "revision": "El ítem no exige haber participado directamente en una reforma del PEI; evalúa comprensión general de participación institucional."
-      },
-      {
-        "riesgo": "Ambigüedad entre informar y participar",
-        "revision": "La clave diferencia explícitamente entre recibir información y deliberar con posibilidad de aportar."
-      },
-      {
-        "riesgo": "Sesgo contra familias o estudiantes",
-        "revision": "El ítem no presenta la participación de la comunidad como obstáculo, sino como condición de legitimidad institucional."
-      },
-      {
-        "riesgo": "Carga normativa",
-        "revision": "No se exige recordar artículos específicos ni denominaciones legales exactas."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "La opción B reconoce el criterio técnico de participación efectiva: incidencia previa en la formulación y revisión del PEI.",
+  "distractores_funcion": {
+    "A": "Confunde información posterior con participación en la toma de decisiones.",
+    "B": "Clave correcta.",
+    "C": "Reduce indebidamente el PEI a una función exclusiva de directivos.",
+    "D": "Niega la corresponsabilidad de actores de la comunidad educativa."
   },
-  "item": {
-    "enunciado": "Después de elaborar una nueva versión del PEI, la institución convoca a docentes, estudiantes y familias a una reunión de una hora para informarles los cambios ya definidos. La dirección considera que con esta reunión se cumplió la participación de la comunidad.\n\n¿Cuál valoración es más adecuada?",
-    "opciones": {
-      "A": "Es suficiente, porque participar significa recibir información sobre las decisiones que ya tomó la dirección.",
-      "B": "Es insuficiente, porque la participación supone espacios de deliberación, aportes y construcción de acuerdos institucionales.",
-      "C": "Es innecesaria, porque el PEI solo debe ser conocido por quienes integran el equipo directivo.",
-      "D": "Es inconveniente, porque la participación de las familias impide tomar decisiones pedagógicas."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Caso general, sin requerir conocimiento local específico ni experiencia previa en cargos directivos."
   },
-  "ficha_tecnica": {
-    "componente": "Gestión Directiva",
-    "competencia": "Participación",
-    "claim_evaluado": "El evaluado identifica que la construcción del PEI exige deliberación y apropiación de la comunidad educativa, no solo comunicación posterior de decisiones ya tomadas.",
-    "evidencia": "Diferencia una reunión informativa de un proceso participativo real en la construcción o actualización del PEI.",
-    "proceso_cognitivo": "Análisis y juicio profesional",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Confunde información con participación efectiva.",
-      "C": "Reduce el PEI a un documento exclusivo del equipo directivo.",
-      "D": "Presenta la participación familiar como obstáculo y no como corresponsabilidad."
-    },
-    "fuente_autorizada": [
-      "Ley 115 de 1994",
-      "Decreto 1860 de 1994",
-      "Orientaciones MEN sobre PEI"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado breve y vocabulario institucional de uso común docente."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque recibir información de una decisión ya definida no equivale a participar en su construcción.",
-    "opcion_C": "Es incorrecta porque el PEI orienta la vida de toda la comunidad educativa, no solo del equipo directivo.",
-    "opcion_D": "Es incorrecta porque introduce una visión restrictiva de la participación de las familias y desconoce su corresponsabilidad educativa.",
-    "distractores": {
-      "A": "Es incorrecta porque recibir información de una decisión ya definida no equivale a participar en su construcción.",
-      "C": "Es incorrecta porque el PEI orienta la vida de toda la comunidad educativa, no solo del equipo directivo.",
-      "D": "Es incorrecta porque introduce una visión restrictiva de la participación de las familias y desconoce su corresponsabilidad educativa."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El caso no favorece a quienes provienen de instituciones con procesos sofisticados de planeación. Evalúa una distinción básica y general entre informar y participar. Además, evita sesgos negativos hacia familias, estudiantes o docentes."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 2 preguntas sobre PEI y actores de la comunidad educativa."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/PEI y actores/CB03_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-19",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }
