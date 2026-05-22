@@ -1,104 +1,45 @@
 {
   "id_item": "IDD_B06_I01",
-  "archivo_sugerido": "IDD_B06_I01_integracion_social_vs_segregacion_taller_diferente.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B06",
-    "nombre": "Inclusión práctica vs. segregación en aula",
-    "estado_en_lista": "Bloque 6 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 1 de 5"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Didáctica inclusiva",
+  "tema": "Inclusión práctica",
+  "subtema": "Participación en propósito común",
+  "competencia": "Diferenciar inclusión efectiva de segregación encubierta en decisiones de aula.",
+  "nivel_cognitivo": "ANALISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado reconoce que inclusión implica participar del mismo objetivo de aprendizaje con apoyos diferenciados.",
+  "evidencia": "Selecciona la explicación que identifica segregación cuando se asigna tarea paralela desconectada.",
+  "tarea": "Analizar una práctica de aula y determinar si promueve inclusión o exclusión pedagógica.",
+  "contexto": "Estudiante con discapacidad recibe actividad de colorear sin relación con el tema central del grupo.",
+  "enunciado": "¿Qué diferencia describe mejor inclusión efectiva frente a segregación en este caso?",
+  "opciones": {
+    "A": "La inclusión implica participar del mismo propósito con apoyos; la segregación asigna tareas paralelas sin relación curricular.",
+    "B": "La inclusión consiste en asignar siempre actividades más fáciles y separadas.",
+    "C": "Solo hay segregación cuando el estudiante está fuera del aula.",
+    "D": "La inclusión exige que todos hagan exactamente lo mismo sin ajustes."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante diferencia una integración social y pedagógica efectiva de una práctica segregadora dentro del aula.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión educativa, apoyo pedagógico, orientación o coordinación académica.",
-    "blueprint": {
-      "problematica_principal": "Uso de actividades paralelas desconectadas que mantienen al estudiante físicamente presente pero pedagógicamente excluido.",
-      "fuente_autorizada": [
-        "Decreto 1421 de 2017",
-        "Educación inclusiva",
-        "Ajustes razonables",
-        "DUA",
-        "PIAR"
-      ],
-      "componente_modulo": "Práctica inclusiva vs. segregación",
-      "competencia": "Diseño de participación en propósito común",
-      "afirmacion": "La inclusión efectiva exige participación en el mismo propósito de aprendizaje, con apoyos diferenciados cuando sean necesarios.",
-      "evidencia_observable": "Distingue una actividad ajustada y vinculada al grupo de una tarea aislada sin relación curricular.",
-      "tipo_de_evidencia": "Juicio pedagógico aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que no basta con ubicar al estudiante en el salón; debe participar en el aprendizaje común mediante apoyos, ajustes y formas accesibles de expresión.",
-    "evidencia_observable": "Selecciona una explicación que diferencia inclusión real de segregación encubierta.",
-    "tarea_cognitiva": "Analizar una práctica de aula y determinar si promueve inclusión o segregación.",
-    "tipo_de_pregunta": "Caso situacional de juicio pedagógico",
-    "dificultad_esperada": "Media-Alta",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Normalizar actividades paralelas como inclusión",
-        "revision": "La clave exige vínculo con el propósito común."
-      },
-      {
-        "riesgo": "Negar apoyos individualizados",
-        "revision": "La opción correcta permite ajustes sin separar curricularmente."
-      },
-      {
-        "riesgo": "Confundir igualdad con hacer exactamente lo mismo",
-        "revision": "El ítem diferencia propósito común y rutas de acceso variadas."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "Es la única opción que articula propósito común y apoyos diferenciados sin desconexión curricular.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Normaliza segregación como inclusión.",
+    "C": "Niega exclusión dentro del aula.",
+    "D": "Confunde inclusión con homogeneización rígida."
   },
-  "item": {
-    "enunciado": "Durante una clase de sociales, el grupo analiza causas y consecuencias de la migración. A un estudiante con discapacidad se le entrega un taller distinto de colorear figuras sin relación con el tema, mientras los demás trabajan el contenido central.\n\n¿Cuál es la diferencia pedagógica entre integración efectiva y segregación en este caso?",
-    "opciones": {
-      "A": "La integración efectiva permite que el estudiante participe en el mismo propósito de aprendizaje con apoyos; la segregación lo mantiene ocupado con una tarea paralela sin relación con el tema.",
-      "B": "La integración efectiva consiste en darle siempre una actividad más fácil y desconectada del grupo.",
-      "C": "La segregación solo ocurre cuando el estudiante está fuera del salón, nunca dentro del aula.",
-      "D": "La inclusión exige que todos hagan exactamente la misma actividad, aunque algunos no puedan acceder a ella."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Evalúa práctica docente, no déficit del estudiante."
   },
-  "ficha_tecnica": {
-    "componente": "Práctica inclusiva vs. segregación",
-    "competencia": "Diseño de participación en propósito común",
-    "claim_evaluado": "El evaluado comprende que no basta con ubicar al estudiante en el salón; debe participar en el aprendizaje común mediante apoyos, ajustes y formas accesibles de expresión.",
-    "evidencia": "Selecciona una explicación que diferencia inclusión real de segregación encubierta.",
-    "proceso_cognitivo": "Análisis y juicio pedagógico",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media-Alta",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Confunde inclusión con actividad desconectada y simplificada.",
-      "C": "Desconoce que también puede haber segregación dentro del aula.",
-      "D": "Confunde igualdad con homogeneidad sin ajustes."
-    },
-    "fuente_autorizada": [
-      "Decreto 1421 de 2017",
-      "Educación inclusiva",
-      "Ajustes razonables",
-      "DUA",
-      "PIAR"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción directa y distinciones conceptuales explícitas."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque reproduce segregación pedagógica.",
-    "opcion_C": "Es incorrecta porque la exclusión puede ocurrir dentro del aula.",
-    "opcion_D": "Es incorrecta porque hacer lo mismo sin ajustes puede generar barreras.",
-    "distractores": {
-      "B": "Es incorrecta porque reproduce segregación pedagógica.",
-      "C": "Es incorrecta porque la exclusión puede ocurrir dentro del aula.",
-      "D": "Es incorrecta porque hacer lo mismo sin ajustes puede generar barreras."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem evita tanto la segregación como la homogeneización rígida, y promueve participación significativa."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 5 preguntas sobre inclusión práctica vs. segregación en aula."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Inclusión práctica vs. segregación en aula/IDD_B06_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

@@ -1,103 +1,45 @@
 {
   "id_item": "CB14_I01",
-  "bloque": {
-    "numero": 14,
-    "nombre": "Propósitos de la educación",
-    "estado_en_lista": "Bloque 14 de 15",
-    "decision_del_bloque": "Grupo de 4 preguntas",
-    "item_en_grupo": "Ítem 1 de 4"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Fundamentos de educación",
+  "tema": "Propósitos educativos",
+  "subtema": "Formación integral",
+  "competencia": "Interpretar los propósitos de la educación desde una perspectiva integral y no reduccionista.",
+  "nivel_cognitivo": "COMPRENSION",
+  "dificultad_estimada": "BAJA",
+  "claim": "El evaluado identifica que la educación integra dimensiones cognitivas, éticas, sociales y ciudadanas.",
+  "evidencia": "Selecciona la afirmación coherente con una comprensión integral de la función de la escuela.",
+  "tarea": "Elegir la interpretación más completa de los propósitos de la educación.",
+  "contexto": "Debate pedagógico sobre reducir la escuela a contenidos evaluables externamente.",
+  "enunciado": "En una reunión pedagógica se afirma que la escuela debe centrarse solo en contenidos evaluados externamente. ¿Cuál postura es más coherente con los propósitos integrales de la educación?",
+  "opciones": {
+    "A": "Priorizar exclusivamente contenidos evaluables y excluir formación ética y ciudadana.",
+    "B": "Promover desarrollo integral con dimensiones cognitivas, éticas, sociales y ciudadanas.",
+    "C": "Delegar totalmente la formación ciudadana a la familia sin abordarla en la escuela.",
+    "D": "Definir los propósitos educativos solo según preferencias individuales de cada docente."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce que la educación tiene propósitos integrales y no se limita a la transmisión de contenidos o al desempeño en pruebas externas.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "Desconocimiento de fines educativos",
-      "fuente_autorizada": [
-        "Ley 115 de 1994",
-        "Fines de la educación",
-        "Proyecto Educativo Institucional"
-      ],
-      "componente_modulo": "Gestión académica",
-      "competencia": "Fundamentos educativos",
-      "afirmacion": "La educación tiene propósitos integrales.",
-      "evidencia_observable": "Reconoce que la educación busca el desarrollo integral de la persona y no solo la transmisión de contenidos.",
-      "tipo_de_evidencia": "Comprensión conceptual aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado identifica la formación integral como principio orientador de la acción educativa.",
-    "evidencia_observable": "Selecciona una afirmación que integra dimensiones cognitivas, éticas, sociales y ciudadanas de la educación.",
-    "tarea_cognitiva": "Seleccionar una interpretación amplia de los fines educativos.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Baja",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Sesgo por énfasis institucional en pruebas externas",
-        "revision": "El ítem no descalifica las pruebas externas, pero evita reducir la educación únicamente a ellas."
-      },
-      {
-        "riesgo": "Ambigüedad entre formación académica y formación integral",
-        "revision": "La clave integra lo cognitivo con dimensiones éticas, sociales y ciudadanas."
-      },
-      {
-        "riesgo": "Sesgo por área de conocimiento",
-        "revision": "El ítem no favorece a docentes de un área específica; aborda fundamentos educativos generales."
-      },
-      {
-        "riesgo": "Lenguaje normativo excesivo",
-        "revision": "No exige recordar artículos o numerales de la Ley 115; evalúa comprensión general de los fines educativos."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "Es la única opción que recoge de manera completa el sentido formativo integral de la educación.",
+  "distractores_funcion": {
+    "A": "Reducción tecnocrática del propósito educativo.",
+    "B": "Clave correcta.",
+    "C": "Aplicación incompleta: desconoce corresponsabilidad educativa.",
+    "D": "Error de marco: ignora referentes institucionales y normativos comunes."
   },
-  "item": {
-    "enunciado": "En una reunión pedagógica se afirma que la función de la escuela se limita a transmitir contenidos de las áreas evaluadas externamente. Otro docente propone una visión más amplia de los propósitos educativos.\n\n¿Cuál afirmación es más coherente con una comprensión integral de la educación?",
-    "opciones": {
-      "A": "La escuela debe centrarse exclusivamente en contenidos evaluables y dejar la formación ética y ciudadana fuera de su responsabilidad.",
-      "B": "La educación debe contribuir al desarrollo integral de la persona, incluyendo dimensiones cognitivas, éticas, sociales y ciudadanas.",
-      "C": "La formación ciudadana solo corresponde a la familia y no debe abordarse en la institución educativa.",
-      "D": "Los propósitos educativos dependen únicamente de los intereses individuales de cada docente."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "No exige adscripción doctrinal ni experiencia de cargo particular."
   },
-  "ficha_tecnica": {
-    "componente": "Gestión académica",
-    "competencia": "Fundamentos educativos",
-    "claim_evaluado": "El evaluado identifica la formación integral como principio orientador de la acción educativa.",
-    "evidencia": "Selecciona una afirmación que integra dimensiones cognitivas, éticas, sociales y ciudadanas de la educación.",
-    "proceso_cognitivo": "Comprensión conceptual aplicada",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Baja",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Reduce la educación a contenidos evaluables externamente y excluye dimensiones formativas esenciales.",
-      "C": "Traslada la formación ciudadana exclusivamente a la familia y desconoce la responsabilidad formativa de la escuela.",
-      "D": "Individualiza los propósitos educativos y desconoce su marco institucional, social y normativo."
-    },
-    "fuente_autorizada": [
-      "Ley 115 de 1994",
-      "Fines de la educación",
-      "Proyecto Educativo Institucional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Vocabulario general y estructura sencilla."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque limita indebidamente la función educativa a contenidos evaluables y excluye responsabilidades formativas de la escuela.",
-    "opcion_C": "Es incorrecta porque la formación ciudadana también hace parte de la tarea educativa institucional.",
-    "opcion_D": "Es incorrecta porque los propósitos educativos no dependen únicamente de intereses individuales docentes, sino de referentes institucionales, sociales y normativos.",
-    "distractores": {
-      "A": "Es incorrecta porque limita indebidamente la función educativa a contenidos evaluables y excluye responsabilidades formativas de la escuela.",
-      "C": "Es incorrecta porque la formación ciudadana también hace parte de la tarea educativa institucional.",
-      "D": "Es incorrecta porque los propósitos educativos no dependen únicamente de intereses individuales docentes, sino de referentes institucionales, sociales y normativos."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no favorece a docentes de un área específica ni exige experiencia en diseño normativo. Evalúa una comprensión general de la educación como proceso integral y evita contraponer de manera excluyente el aprendizaje académico con la formación ética, social y ciudadana."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada. Por su baja dificultad, puede funcionar como pregunta introductoria del bloque.",
-    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre propósitos de la educación."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Propósitos de la educación/CB14_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

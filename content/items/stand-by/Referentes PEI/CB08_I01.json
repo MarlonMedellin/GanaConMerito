@@ -1,103 +1,45 @@
 {
   "id_item": "CB08_I01",
-  "bloque": {
-    "numero": 8,
-    "nombre": "Referentes PEI",
-    "estado_en_lista": "Bloque 8 de 15",
-    "decision_del_bloque": "Grupo de 3 preguntas",
-    "item_en_grupo": "Ítem 1 de 3"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión institucional",
+  "tema": "Proyecto Educativo Institucional",
+  "subtema": "Referentes para actualización del PEI",
+  "competencia": "Seleccionar referentes normativos, pedagógicos y contextuales para revisión del PEI.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "BAJA",
+  "claim": "El evaluado reconoce que el PEI se sustenta en fines educativos, diagnóstico de contexto, propuesta pedagógica y acuerdos comunitarios.",
+  "evidencia": "Selecciona el conjunto de referentes más pertinente para orientar la actualización institucional.",
+  "tarea": "Elegir la opción que integra fundamentos centrales del PEI y evita reducciones parciales.",
+  "contexto": "Equipo directivo revisa qué bases debe considerar para actualizar el PEI.",
+  "enunciado": "Una institución inicia la actualización de su PEI y debe definir los referentes para sustentar el proceso. ¿Cuál conjunto es más pertinente?",
+  "opciones": {
+    "A": "Preferencias personales de directivos y formatos tomados de otras instituciones.",
+    "B": "Fines de la educación, diagnóstico del contexto, propuesta pedagógica y acuerdos de la comunidad educativa.",
+    "C": "Solo resultados de pruebas externas como criterio único de calidad.",
+    "D": "Únicamente el manual de convivencia como reemplazo de los demás componentes."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce los referentes básicos que deben orientar la construcción, revisión o actualización del Proyecto Educativo Institucional.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "Fundamentos obligatorios del PEI",
-      "fuente_autorizada": [
-        "Ley 115 de 1994",
-        "Decreto 1860 de 1994",
-        "Orientaciones MEN sobre Proyecto Educativo Institucional"
-      ],
-      "componente_modulo": "Gestión Directiva",
-      "competencia": "Planeación institucional",
-      "afirmacion": "Todo PEI debe anclarse a referentes.",
-      "evidencia_observable": "Identifica referentes normativos, pedagógicos y contextuales que fundamentan el PEI.",
-      "tipo_de_evidencia": "Reconocimiento conceptual aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado comprende que el PEI no es un documento aislado, sino una propuesta institucional sustentada en fines educativos, diagnóstico del contexto, propuesta pedagógica y acuerdos de la comunidad educativa.",
-    "evidencia_observable": "Selecciona el conjunto de referentes más pertinente para orientar la revisión o actualización del PEI.",
-    "tarea_cognitiva": "Seleccionar los referentes pertinentes para orientar una revisión del PEI.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Baja",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Sesgo por conocimiento normativo memorístico",
-        "revision": "El ítem no exige recordar artículos específicos, sino reconocer referentes generales del PEI."
-      },
-      {
-        "riesgo": "Ambigüedad entre referentes principales e insumos secundarios",
-        "revision": "La clave integra referentes normativos, pedagógicos, contextuales y participativos; los distractores reducen el PEI a elementos parciales."
-      },
-      {
-        "riesgo": "Sesgo por tipo de institución",
-        "revision": "La situación aplica a instituciones oficiales, privadas, urbanas o rurales."
-      },
-      {
-        "riesgo": "Lenguaje técnico excesivo",
-        "revision": "Se emplean términos propios de la gestión escolar, pero con redacción clara y contextualizada."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "Es la única opción que articula referentes estructurales del PEI en clave normativa, pedagógica y participativa.",
+  "distractores_funcion": {
+    "A": "Error de personalización institucional: reemplaza referentes por preferencias.",
+    "B": "Clave correcta.",
+    "C": "Reducción tecnocrática: limita la planeación a medición externa.",
+    "D": "Confusión de parte por todo: sobredimensiona un componente del PEI."
   },
-  "item": {
-    "enunciado": "Una institución inicia la revisión de su PEI y el equipo directivo pregunta cuáles referentes deben considerarse para sustentar la actualización.\n\n¿Cuál conjunto de referentes es más pertinente?",
-    "opciones": {
-      "A": "Las preferencias personales del rector, los formatos usados por otras instituciones y las actividades tradicionales.",
-      "B": "Los fines de la educación, el diagnóstico del contexto, la propuesta pedagógica y los acuerdos de la comunidad educativa.",
-      "C": "Únicamente los resultados de pruebas externas, porque son el criterio definitivo de calidad institucional.",
-      "D": "Solo el manual de convivencia, porque este reemplaza los demás componentes del PEI."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Aplicable a instituciones con distintos contextos; no exige citar artículos específicos."
   },
-  "ficha_tecnica": {
-    "componente": "Gestión Directiva",
-    "competencia": "Planeación institucional",
-    "claim_evaluado": "El evaluado comprende que el PEI no es un documento aislado, sino una propuesta institucional sustentada en fines educativos, diagnóstico del contexto, propuesta pedagógica y acuerdos de la comunidad educativa.",
-    "evidencia": "Selecciona el conjunto de referentes más pertinente para orientar la revisión o actualización del PEI.",
-    "proceso_cognitivo": "Reconocimiento conceptual aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Baja",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Personaliza indebidamente la construcción institucional y privilegia criterios subjetivos o imitativos.",
-      "C": "Reduce el PEI a resultados de medición externa y desconoce otros referentes institucionales.",
-      "D": "Confunde un componente institucional con la totalidad del PEI."
-    },
-    "fuente_autorizada": [
-      "Ley 115 de 1994",
-      "Decreto 1860 de 1994",
-      "Orientaciones MEN sobre PEI"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado breve y opciones homogéneas en estructura."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque el PEI no debe sustentarse en preferencias personales ni en la copia acrítica de formatos externos.",
-    "opcion_C": "Es incorrecta porque las pruebas externas pueden aportar información, pero no constituyen el único ni el criterio definitivo para estructurar el PEI.",
-    "opcion_D": "Es incorrecta porque el manual de convivencia es un componente importante, pero no reemplaza los demás elementos del Proyecto Educativo Institucional.",
-    "distractores": {
-      "A": "Es incorrecta porque el PEI no debe sustentarse en preferencias personales ni en la copia acrítica de formatos externos.",
-      "C": "Es incorrecta porque las pruebas externas pueden aportar información, pero no constituyen el único ni el criterio definitivo para estructurar el PEI.",
-      "D": "Es incorrecta porque el manual de convivencia es un componente importante, pero no reemplaza los demás elementos del Proyecto Educativo Institucional."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no exige experiencia directa en la elaboración de un PEI ni conocimiento normativo literal. Evalúa una comprensión general de planeación institucional y puede responderse desde criterios profesionales aplicables a distintos contextos escolares."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 3 preguntas sobre referentes del PEI."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Referentes PEI/CB08_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

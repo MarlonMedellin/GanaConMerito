@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B31_I01",
-    "tema": "Jornada escolar",
-    "competencia": "Diferenciación normativa de tiempos",
-    "dificultad": "Media",
-    "enunciado": "Una institución confunde jornada escolar con jornada laboral docente. El rector aclara que la jornada escolar se refiere al tiempo en que los estudiantes reciben el servicio educativo según el calendario y horario institucional.\n\n¿Qué concepto se está definiendo?",
-    "opciones": {
-        "A": "Jornada escolar.",
-        "B": "Asignación académica exclusiva.",
-        "C": "Vacaciones docentes.",
-        "D": "Descanso remunerado."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "La jornada escolar se refiere al tiempo de prestación del servicio educativo a los estudiantes.",
-    "distractores": {
-        "B": "La asignación académica es la carga de clases del docente.",
-        "C": "No se refiere a vacaciones.",
-        "D": "No describe descanso laboral."
-    }
+  "id_item": "MTV_B31_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión administrativa educativa",
+  "tema": "Jornada escolar",
+  "subtema": "Diferenciación de tiempos institucionales",
+  "competencia": "Diferenciar conceptos normativos de jornada escolar, jornada laboral y asignación académica.",
+  "nivel_cognitivo": "COMPRENSION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado identifica la jornada escolar como tiempo de prestación del servicio educativo a estudiantes.",
+  "evidencia": "Selecciona el concepto correcto cuando se describe tiempo institucional del estudiantado.",
+  "tarea": "Reconocer la categoría normativa definida en un caso de gestión escolar.",
+  "contexto": "Rector aclara diferencia entre jornada escolar y jornada laboral docente.",
+  "enunciado": "Si una institución define el tiempo en que los estudiantes reciben el servicio educativo según su horario y calendario, ¿qué concepto está describiendo?",
+  "opciones": {
+    "A": "Jornada escolar.",
+    "B": "Asignación académica exclusiva.",
+    "C": "Vacaciones docentes.",
+    "D": "Descanso remunerado."
+  },
+  "clave": "A",
+  "justificacion_clave": "Corresponde al tiempo de atención educativa del estudiantado en la institución.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Confunde tiempo de estudiantes con carga de clases del docente.",
+    "C": "Categoria laboral distinta al concepto consultado.",
+    "D": "Concepto laboral ajeno a la organización de jornada escolar."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Ítem conceptual neutro sin sesgos culturales o socioeconómicos."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Pregunta breve y opciones simples de alta discriminación conceptual."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
 }

@@ -1,103 +1,45 @@
 {
   "id_item": "CB04_I01",
-  "bloque": {
-    "numero": 4,
-    "nombre": "Inclusión Decreto 1421",
-    "estado_en_lista": "Bloque 4 de 15",
-    "decision_del_bloque": "Pregunta única",
-    "item_en_grupo": "Ítem 1 de 1"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Inclusión educativa",
+  "tema": "Decreto 1421",
+  "subtema": "Ajustes razonables y barreras",
+  "competencia": "Aplicar decisiones institucionales inclusivas basadas en eliminación de barreras y ajustes razonables.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado reconoce que inclusión implica corresponsabilidad institucional y no segregación ni homogeneización.",
+  "evidencia": "Selecciona la respuesta que integra revisión de barreras, ajustes razonables y acompañamiento docente.",
+  "tarea": "Resolver una tensión institucional sobre inclusión y ritmo de clase.",
+  "contexto": "Docentes perciben que adaptaciones para un estudiante afectan el ritmo del grupo.",
+  "enunciado": "¿Cuál respuesta institucional es más adecuada desde el enfoque de inclusión del Decreto 1421?",
+  "opciones": {
+    "A": "Retirar al estudiante de actividades comunes para evitar interrupciones.",
+    "B": "Mantener clase sin ajustes porque todos deben recibir exactamente lo mismo.",
+    "C": "Revisar barreras, definir ajustes razonables y acompañar al equipo docente para garantizar participación de todo el grupo.",
+    "D": "Trasladar a la familia toda la responsabilidad de apoyos educativos."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce que la inclusión educativa exige ajustes razonables, eliminación de barreras y corresponsabilidad institucional, sin excluir al estudiante ni afectar el derecho a la educación de los demás.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "Garantizar inclusión sin afectar otros estudiantes",
-      "fuente_autorizada": [
-        "Decreto 1421 de 2017",
-        "Orientaciones MEN sobre educación inclusiva",
-        "Proyecto Educativo Institucional"
-      ],
-      "componente_modulo": "Inclusión",
-      "competencia": "Gestión inclusiva",
-      "afirmacion": "La inclusión exige ajustes razonables.",
-      "evidencia_observable": "Selecciona una respuesta institucional que garantiza ajustes razonables sin excluir ni afectar el derecho de otros estudiantes.",
-      "tipo_de_evidencia": "Interpretación de situación institucional",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado reconoce que la inclusión requiere ajustes razonables, corresponsabilidad y eliminación de barreras para el aprendizaje y la participación.",
-    "evidencia_observable": "Elige una actuación institucional que revisa barreras, define apoyos y acompaña a los docentes para favorecer la participación de todo el grupo.",
-    "tarea_cognitiva": "Resolver una tensión institucional sobre inclusión y convivencia en el aula.",
-    "tipo_de_pregunta": "Caso situacional de juicio profesional",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Lenguaje deficitario sobre discapacidad",
-        "revision": "El ítem evita definir al estudiante por una carencia y se centra en barreras, apoyos y participación."
-      },
-      {
-        "riesgo": "Estigmatización",
-        "revision": "La situación no culpa al estudiante por la dinámica de aula ni lo presenta como obstáculo."
-      },
-      {
-        "riesgo": "Sesgo por recursos institucionales",
-        "revision": "La clave no presupone recursos especializados extraordinarios; se enfoca en revisión de barreras, ajustes y acompañamiento."
-      },
-      {
-        "riesgo": "Ambigüedad en la clave",
-        "revision": "La opción correcta es la única que integra ajustes razonables, revisión de barreras y apoyo docente."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "Es la única opción que combina equidad, ajustes razonables y corresponsabilidad institucional.",
+  "distractores_funcion": {
+    "A": "Plantea segregación.",
+    "B": "Confunde igualdad con uniformidad.",
+    "C": "Clave correcta.",
+    "D": "Traslada indebidamente la obligación institucional."
   },
-  "item": {
-    "enunciado": "Un grupo de docentes afirma que las adaptaciones requeridas para un estudiante con discapacidad están afectando el ritmo de la clase. La coordinación debe orientar una decisión institucional.\n\n¿Cuál respuesta es más adecuada desde un enfoque de educación inclusiva?",
-    "opciones": {
-      "A": "Retirar al estudiante de algunas actividades comunes para que el grupo avance sin interrupciones.",
-      "B": "Mantener la clase sin ajustes, porque todos los estudiantes deben recibir exactamente la misma enseñanza.",
-      "C": "Revisar barreras, definir ajustes razonables y acompañar a los docentes para favorecer la participación de todo el grupo.",
-      "D": "Solicitar a la familia que resuelva de manera externa los apoyos que el estudiante necesita."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Usa enfoque de barreras y participación, evitando lenguaje estigmatizante."
   },
-  "ficha_tecnica": {
-    "componente": "Inclusión",
-    "competencia": "Gestión inclusiva",
-    "claim_evaluado": "El evaluado reconoce que la inclusión requiere ajustes razonables, corresponsabilidad y eliminación de barreras para el aprendizaje y la participación.",
-    "evidencia": "Elige una actuación institucional que revisa barreras, define apoyos y acompaña a los docentes para favorecer la participación de todo el grupo.",
-    "proceso_cognitivo": "Análisis y juicio profesional",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Propone segregación y limita la participación del estudiante.",
-      "B": "Confunde igualdad formal con equidad e inclusión.",
-      "D": "Traslada la responsabilidad institucional a la familia."
-    },
-    "fuente_autorizada": [
-      "Decreto 1421 de 2017",
-      "Orientaciones MEN sobre educación inclusiva",
-      "Proyecto Educativo Institucional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Caso claro, una decisión principal y vocabulario controlado."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque excluye al estudiante de experiencias comunes y convierte la diferencia en motivo de separación.",
-    "opcion_B": "Es incorrecta porque niega la necesidad de ajustes razonables y confunde igualdad de trato con garantía efectiva del derecho a la educación.",
-    "opcion_D": "Es incorrecta porque traslada a la familia una responsabilidad que también corresponde a la institución educativa.",
-    "distractores": {
-      "A": "Es incorrecta porque excluye al estudiante de experiencias comunes y convierte la diferencia en motivo de separación.",
-      "B": "Es incorrecta porque niega la necesidad de ajustes razonables y confunde igualdad de trato con garantía efectiva del derecho a la educación.",
-      "D": "Es incorrecta porque traslada a la familia una responsabilidad que también corresponde a la institución educativa."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem aborda la discapacidad desde un enfoque de barreras, ajustes y participación, no desde el déficit individual. La situación evita culpabilizar al estudiante o a la familia y evalúa una responsabilidad profesional general de gestión inclusiva."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como pregunta única del bloque Inclusión Decreto 1421."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Inclusión Decreto 1421/CB04_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }
