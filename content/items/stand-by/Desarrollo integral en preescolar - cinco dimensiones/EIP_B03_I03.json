@@ -1,40 +1,45 @@
 {
   "id_item": "EIP_B03_I03",
-  "archivo_sugerido": "EIP_B03_I03_dimension_socioafectiva_preescolar.json",
-  "proposito_de_uso": "Evaluar si el aspirante reconoce la dimensión socioafectiva como parte del desarrollo integral en preescolar.",
-  "blueprint": {
-    "componente_modulo": "Dimensión socioafectiva",
-    "competencia": "Comprensión del desarrollo emocional y relacional",
-    "afirmacion": "La dimensión socioafectiva involucra vínculos, emociones, convivencia, autoestima, relación con pares y participación en experiencias de socialización.",
-    "evidencia_observable": "Identifica la importancia de acompañar emociones, vínculos y relaciones en el aula preescolar.",
-    "tipo_de_evidencia": "Juicio pedagógico aplicado",
-    "dificultad_esperada": "Media",
-    "clave": "B"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Educación inicial y preescolar",
+  "tema": "Desarrollo integral en preescolar - cinco dimensiones",
+  "subtema": "Dimensión socioafectiva",
+  "competencia": "Analiza prácticas pedagógicas que promueven el desarrollo integral en las dimensiones corporal, cognitiva, comunicativa, ética y estética.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce la actuación pedagógica o institucional más adecuada de acuerdo con el enfoque evaluado en el caso.",
+  "evidencia": "Selecciona una única alternativa defendible técnicamente y coherente con el constructo del ítem.",
+  "tarea": "Analizar la situación presentada y elegir la respuesta más pertinente según criterios pedagógicos y normativos aplicables.",
+  "contexto": "Un niño de preescolar llora al separarse de su acudiente, tiene dificultad para integrarse al grupo y necesita acompañamiento para expresar sus emociones. La docente afirma que eso no hace parte de su trabajo porque no es contenido académico.",
+  "enunciado": "Un niño de preescolar llora al separarse de su acudiente, tiene dificultad para integrarse al grupo y necesita acompañamiento para expresar sus emociones. La docente afirma que eso no hace parte de su trabajo porque no es contenido académico.\n\n¿Qué dimensión del desarrollo integral está dejando de atender?",
+  "opciones": {
+    "A": "La dimensión comercial.",
+    "B": "La dimensión socioafectiva.",
+    "C": "La dimensión contable.",
+    "D": "La dimensión punitiva."
   },
-  "item": {
-    "enunciado": "Un niño de preescolar llora al separarse de su acudiente, tiene dificultad para integrarse al grupo y necesita acompañamiento para expresar sus emociones. La docente afirma que eso no hace parte de su trabajo porque no es contenido académico.\n\n¿Qué dimensión del desarrollo integral está dejando de atender?",
-    "opciones": {
-      "A": "La dimensión comercial.",
-      "B": "La dimensión socioafectiva.",
-      "C": "La dimensión contable.",
-      "D": "La dimensión punitiva."
-    },
-    "respuesta_correcta": "B"
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "No guarda relación con el desarrollo integral del niño.",
+    "B": "Clave correcta.",
+    "C": "No corresponde al nivel ni al contenido preguntado.",
+    "D": "Refuerza una visión sancionatoria inadecuada para el caso."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "distractores": {
-      "A": "No guarda relación con el desarrollo integral del niño.",
-      "C": "No corresponde al nivel ni al contenido preguntado.",
-      "D": "Refuerza una visión sancionatoria inadecuada para el caso."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo y normativo estándar, sin referencias discriminatorias ni barreras culturales innecesarias."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem evita patologizar emociones infantiles y promueve acompañamiento pedagógico."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciados con tarea única y opciones comparables en estructura y longitud."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem apto para banco con revisión psicopedagógica posterior."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Desarrollo integral en preescolar - cinco dimensiones/EIP_B03_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

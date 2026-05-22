@@ -1,102 +1,45 @@
 {
   "id_item": "IDD_B04_I02",
-  "archivo_sugerido": "IDD_B04_I02_propositos_dua_reducir_barreras.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B04",
-    "nombre": "DUA, PIAR y ajustes razonables",
-    "estado_en_lista": "Bloque 4 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 2 de 7"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Inclusión educativa",
+  "tema": "DUA, PIAR y ajustes razonables",
+  "subtema": "Inclusión y Diseño Universal",
+  "competencia": "Selecciona decisiones pedagógicas inclusivas basadas en DUA, PIAR y ajustes razonables para garantizar participación y aprendizaje.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce la actuación pedagógica o institucional más adecuada de acuerdo con el enfoque evaluado en el caso.",
+  "evidencia": "Selecciona una única alternativa defendible técnicamente y coherente con el constructo del ítem.",
+  "tarea": "Analizar la situación presentada y elegir la respuesta más pertinente según criterios pedagógicos y normativos aplicables.",
+  "contexto": "Una docente observa que sus estudiantes aprenden de maneras distintas: algunos comprenden mejor con imágenes, otros con explicación oral, otros manipulando material concreto y otros expresando sus ideas mediante esquemas o producción escrita. Quiere aplicar Diseño Universal para el Aprendizaje.",
+  "enunciado": "Una docente observa que sus estudiantes aprenden de maneras distintas: algunos comprenden mejor con imágenes, otros con explicación oral, otros manipulando material concreto y otros expresando sus ideas mediante esquemas o producción escrita. Quiere aplicar Diseño Universal para el Aprendizaje.\n\n¿Cuál es el propósito principal del DUA?",
+  "opciones": {
+    "A": "Ofrecer múltiples formas de representación, participación, acción y expresión para reducir barreras desde la planeación.",
+    "B": "Usar una sola guía escrita para todos, porque la igualdad consiste en hacer exactamente lo mismo.",
+    "C": "Diseñar una clase aparte para cada estudiante sin propósito común.",
+    "D": "Eliminar la evaluación para evitar diferencias en los desempeños."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce los propósitos principales del Diseño Universal para el Aprendizaje en la reducción de barreras de enseñanza.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión, diseño curricular, orientación escolar o coordinación académica.",
-    "blueprint": {
-      "problematica_principal": "Planeación homogénea que no contempla distintas formas de acceso, participación y expresión del aprendizaje.",
-      "fuente_autorizada": [
-        "Diseño Universal para el Aprendizaje",
-        "Decreto 1421 de 2017",
-        "Educación inclusiva",
-        "Planeación curricular flexible"
-      ],
-      "componente_modulo": "Inclusión y Diseño Universal",
-      "competencia": "Planeación flexible y accesible",
-      "afirmacion": "El DUA busca ofrecer múltiples formas de representación, acción, expresión y motivación para reducir barreras desde el diseño de la clase.",
-      "evidencia_observable": "Identifica que el DUA flexibiliza medios, recursos, actividades y formas de evidenciar aprendizaje.",
-      "tipo_de_evidencia": "Comprensión didáctica aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que el DUA no es una adaptación tardía para un solo estudiante, sino una forma de diseñar la enseñanza desde el inicio para ampliar acceso, participación y expresión.",
-    "evidencia_observable": "Selecciona una opción que integra flexibilidad, reducción de barreras y múltiples formas de aprender y demostrar aprendizaje.",
-    "tarea_cognitiva": "Reconocer la finalidad del DUA en una situación de planeación curricular.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confundir DUA con bajar exigencia",
-        "revision": "La clave habla de diversificar medios, no de eliminar metas."
-      },
-      {
-        "riesgo": "Confundir DUA con tecnología obligatoria",
-        "revision": "El ítem permite recursos físicos, visuales, orales, colaborativos o digitales."
-      },
-      {
-        "riesgo": "Limitar DUA a discapacidad",
-        "revision": "La clave lo presenta para la diversidad del aula."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque la homogeneidad puede producir barreras.",
+    "C": "Es incorrecta porque el DUA no rompe el propósito común de aprendizaje.",
+    "D": "Es incorrecta porque la evaluación puede flexibilizarse sin desaparecer."
   },
-  "item": {
-    "enunciado": "Una docente observa que sus estudiantes aprenden de maneras distintas: algunos comprenden mejor con imágenes, otros con explicación oral, otros manipulando material concreto y otros expresando sus ideas mediante esquemas o producción escrita. Quiere aplicar Diseño Universal para el Aprendizaje.\n\n¿Cuál es el propósito principal del DUA?",
-    "opciones": {
-      "A": "Ofrecer múltiples formas de representación, participación, acción y expresión para reducir barreras desde la planeación.",
-      "B": "Usar una sola guía escrita para todos, porque la igualdad consiste en hacer exactamente lo mismo.",
-      "C": "Diseñar una clase aparte para cada estudiante sin propósito común.",
-      "D": "Eliminar la evaluación para evitar diferencias en los desempeños."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo y normativo estándar, sin referencias discriminatorias ni barreras culturales innecesarias."
   },
-  "ficha_tecnica": {
-    "componente": "Inclusión y Diseño Universal",
-    "competencia": "Planeación flexible y accesible",
-    "claim_evaluado": "El evaluado comprende que el DUA no es una adaptación tardía para un solo estudiante, sino una forma de diseñar la enseñanza desde el inicio para ampliar acceso, participación y expresión.",
-    "evidencia": "Selecciona una opción que integra flexibilidad, reducción de barreras y múltiples formas de aprender y demostrar aprendizaje.",
-    "proceso_cognitivo": "Comprensión didáctica aplicada",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Confunde igualdad con homogeneidad.",
-      "C": "Fragmenta la clase y pierde el propósito común.",
-      "D": "Confunde accesibilidad con ausencia de evaluación."
-    },
-    "fuente_autorizada": [
-      "Diseño Universal para el Aprendizaje",
-      "Decreto 1421 de 2017",
-      "Educación inclusiva",
-      "Planeación curricular flexible"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciados con tarea única y opciones comparables en estructura y longitud."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque la homogeneidad puede producir barreras.",
-    "opcion_C": "Es incorrecta porque el DUA no rompe el propósito común de aprendizaje.",
-    "opcion_D": "Es incorrecta porque la evaluación puede flexibilizarse sin desaparecer.",
-    "distractores": {
-      "B": "Es incorrecta porque la homogeneidad puede producir barreras.",
-      "C": "Es incorrecta porque el DUA no rompe el propósito común de aprendizaje.",
-      "D": "Es incorrecta porque la evaluación puede flexibilizarse sin desaparecer."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem reconoce diversidad de formas de aprender sin etiquetar estudiantes ni reducir expectativas."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 7 preguntas sobre DUA, PIAR y ajustes razonables."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/DUA, PIAR y ajustes razonables/IDD_B04_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

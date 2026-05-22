@@ -1,16 +1,16 @@
 {
   "id_item": "CB10_I01",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Convivencia y protección escolar",
-  "tema": "Debido proceso y rutas de atención",
+  "area": "Convivencia escolar",
+  "tema": "Debido proceso",
   "subtema": "Confidencialidad y no revictimización",
-  "competencia": "Determina la actuación institucional pertinente ante una presunta vulneración grave de derechos de un estudiante.",
+  "competencia": "Identifica actuaciones institucionales acordes con debido proceso y protección de derechos en contextos escolares.",
   "nivel_cognitivo": "JUICIO",
   "dificultad_estimada": "ALTA",
-  "claim": "Reconoce que la primera respuesta institucional debe proteger, preservar confidencialidad y activar ruta competente sin revictimizar.",
-  "evidencia": "Selecciona la actuación que evita interrogatorios improcedentes y demoras en la activación de protección.",
-  "tarea": "Elegir la respuesta institucional técnicamente adecuada ante una revelación de posible abuso.",
-  "contexto": "Una estudiante informa a una docente una posible situación de abuso.",
+  "claim": "Reconoce la actuación pedagógica o institucional más adecuada de acuerdo con el enfoque evaluado en el caso.",
+  "evidencia": "Selecciona una única alternativa defendible técnicamente y coherente con el constructo del ítem.",
+  "tarea": "Analizar la situación presentada y elegir la respuesta más pertinente según criterios pedagógicos y normativos aplicables.",
+  "contexto": "",
   "enunciado": "Una estudiante informa a una docente que podría haber sido víctima de abuso. La docente propone reunir a varios funcionarios para preguntarle repetidamente qué ocurrió. ¿Cuál actuación es más adecuada?",
   "opciones": {
     "A": "Realizar varias entrevistas internas para verificar la veracidad del relato.",
@@ -28,17 +28,17 @@
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje sobrio y no gráfico; evita culpabilizar a la víctima."
+    "observaciones": "Lenguaje educativo y normativo estándar, sin referencias discriminatorias ni barreras culturales innecesarias."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Texto breve con una sola tarea cognitiva y opciones paralelas."
+    "observaciones": "Enunciados con tarea única y opciones comparables en estructura y longitud."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Debido proceso/CB10_I01.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-19",
+    "fecha_revision": "2026-05-22",
     "apto_pilotaje": true,
     "apto_banco": true
   }

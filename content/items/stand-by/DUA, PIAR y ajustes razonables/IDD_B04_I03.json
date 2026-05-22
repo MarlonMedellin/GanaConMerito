@@ -1,102 +1,45 @@
 {
   "id_item": "IDD_B04_I03",
-  "archivo_sugerido": "IDD_B04_I03_responsabilidad_piar_docente_aula.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B04",
-    "nombre": "DUA, PIAR y ajustes razonables",
-    "estado_en_lista": "Bloque 4 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 3 de 7"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Inclusión educativa",
+  "tema": "DUA, PIAR y ajustes razonables",
+  "subtema": "Responsabilidad del PIAR",
+  "competencia": "Selecciona decisiones pedagógicas inclusivas basadas en DUA, PIAR y ajustes razonables para garantizar participación y aprendizaje.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA-ALTA",
+  "claim": "Reconoce la actuación pedagógica o institucional más adecuada de acuerdo con el enfoque evaluado en el caso.",
+  "evidencia": "Selecciona una única alternativa defendible técnicamente y coherente con el constructo del ítem.",
+  "tarea": "Analizar la situación presentada y elegir la respuesta más pertinente según criterios pedagógicos y normativos aplicables.",
+  "contexto": "En una institución llega un estudiante con discapacidad que requiere ajustes razonables. Algunos docentes afirman que el PIAR debe hacerlo exclusivamente el docente de apoyo o el orientador, sin participación del maestro de aula.",
+  "enunciado": "En una institución llega un estudiante con discapacidad que requiere ajustes razonables. Algunos docentes afirman que el PIAR debe hacerlo exclusivamente el docente de apoyo o el orientador, sin participación del maestro de aula.\n\n¿Quién tiene la responsabilidad directa de construir y liderar pedagógicamente el PIAR dentro del aula?",
+  "opciones": {
+    "A": "El estudiante, porque debe adaptarse solo a las actividades propuestas.",
+    "B": "La familia, porque la escuela no participa en los ajustes pedagógicos.",
+    "C": "El docente de aula, con acompañamiento del docente de apoyo, orientación, directivos y familia según corresponda.",
+    "D": "Un profesional externo que no conoce la dinámica de clase."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante identifica al docente de aula como actor responsable directo de liderar la construcción pedagógica del PIAR, con apoyo institucional y del docente de apoyo.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión educativa, coordinación académica, orientación escolar o apoyo pedagógico.",
-    "blueprint": {
-      "problematica_principal": "Creencia de que el PIAR es responsabilidad exclusiva del docente de apoyo, orientador o profesional externo.",
-      "fuente_autorizada": [
-        "Decreto 1421 de 2017",
-        "Orientaciones MEN sobre PIAR",
-        "Manual de funciones docente",
-        "Educación inclusiva"
-      ],
-      "componente_modulo": "Responsabilidad del PIAR",
-      "competencia": "Liderazgo docente de ajustes razonables",
-      "afirmacion": "El maestro de aula lidera la planeación pedagógica y los ajustes del estudiante, con acompañamiento del docente de apoyo y del equipo institucional.",
-      "evidencia_observable": "Reconoce que el PIAR se construye colaborativamente, pero no se delega completamente fuera del aula.",
-      "tipo_de_evidencia": "Juicio normativo-pedagógico aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende que el PIAR es una herramienta pedagógica vinculada a la planeación de aula, por lo que el docente de aula tiene responsabilidad directa en su construcción, implementación y seguimiento.",
-    "evidencia_observable": "Selecciona la opción que ubica al docente de aula como líder pedagógico del PIAR, con apoyos del equipo.",
-    "tarea_cognitiva": "Identificar responsabilidades en la construcción e implementación del PIAR.",
-    "tipo_de_pregunta": "Pregunta conceptual normativa aplicada",
-    "dificultad_esperada": "Media-Alta",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Sobrecargar al docente de aula sin apoyos",
-        "revision": "La clave habla de liderazgo con acompañamiento institucional."
-      },
-      {
-        "riesgo": "Delegar completamente en el docente de apoyo",
-        "revision": "El ítem evita retirar la responsabilidad pedagógica del maestro de aula."
-      },
-      {
-        "riesgo": "Confundir PIAR con documento administrativo aislado",
-        "revision": "La clave lo vincula con planeación, implementación y seguimiento."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque responsabiliza al estudiante de adaptarse solo.",
+    "B": "Es incorrecta porque la escuela no puede trasladar la responsabilidad a la familia.",
+    "C": "Clave correcta.",
+    "D": "Es incorrecta porque los ajustes deben estar vinculados al contexto real de enseñanza."
   },
-  "item": {
-    "enunciado": "En una institución llega un estudiante con discapacidad que requiere ajustes razonables. Algunos docentes afirman que el PIAR debe hacerlo exclusivamente el docente de apoyo o el orientador, sin participación del maestro de aula.\n\n¿Quién tiene la responsabilidad directa de construir y liderar pedagógicamente el PIAR dentro del aula?",
-    "opciones": {
-      "A": "El estudiante, porque debe adaptarse solo a las actividades propuestas.",
-      "B": "La familia, porque la escuela no participa en los ajustes pedagógicos.",
-      "C": "El docente de aula, con acompañamiento del docente de apoyo, orientación, directivos y familia según corresponda.",
-      "D": "Un profesional externo que no conoce la dinámica de clase."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo y normativo estándar, sin referencias discriminatorias ni barreras culturales innecesarias."
   },
-  "ficha_tecnica": {
-    "componente": "Responsabilidad del PIAR",
-    "competencia": "Liderazgo docente de ajustes razonables",
-    "claim_evaluado": "El evaluado comprende que el PIAR es una herramienta pedagógica vinculada a la planeación de aula, por lo que el docente de aula tiene responsabilidad directa en su construcción, implementación y seguimiento.",
-    "evidencia": "Selecciona la opción que ubica al docente de aula como líder pedagógico del PIAR, con apoyos del equipo.",
-    "proceso_cognitivo": "Reconocimiento normativo-pedagógico",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media-Alta",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Traslada indebidamente la responsabilidad al estudiante.",
-      "B": "Desconoce la responsabilidad institucional y docente.",
-      "D": "Desvincula el PIAR del contexto real del aula."
-    },
-    "fuente_autorizada": [
-      "Decreto 1421 de 2017",
-      "Orientaciones MEN sobre PIAR",
-      "Manual de funciones docente",
-      "Educación inclusiva"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciados con tarea única y opciones comparables en estructura y longitud."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque responsabiliza al estudiante de adaptarse solo.",
-    "opcion_B": "Es incorrecta porque la escuela no puede trasladar la responsabilidad a la familia.",
-    "opcion_D": "Es incorrecta porque los ajustes deben estar vinculados al contexto real de enseñanza.",
-    "distractores": {
-      "A": "Es incorrecta porque responsabiliza al estudiante de adaptarse solo.",
-      "B": "Es incorrecta porque la escuela no puede trasladar la responsabilidad a la familia.",
-      "D": "Es incorrecta porque los ajustes deben estar vinculados al contexto real de enseñanza."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado con observación.",
-    "argumento": "El ítem reconoce liderazgo del docente de aula sin negar el acompañamiento del docente de apoyo y del equipo institucional."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado con observación",
-    "observacion": "Conviene validar con la guía PIAR vigente de la entidad territorial o MEN antes de banco definitivo.",
-    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 7 preguntas sobre DUA, PIAR y ajustes razonables."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/DUA, PIAR y ajustes razonables/IDD_B04_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

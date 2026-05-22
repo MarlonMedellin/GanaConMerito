@@ -1,103 +1,45 @@
 {
   "id_item": "NFL_B03_I02",
-  "archivo_sugerido": "NFL_B03_I02_principio_congruencia_nuevas_faltas_fallo.json",
-  "bloque": {
-    "codigo_bloque": "NFL_B03",
-    "nombre": "Debido proceso, congruencia y medidas correctivas extremas",
-    "estado_en_lista": "Bloque 3 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 2 de 5"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Convivencia escolar y normatividad",
+  "tema": "Debido proceso, congruencia y medidas correctivas extremas",
+  "subtema": "Principio de congruencia",
+  "competencia": "Valora medidas correctivas según debido proceso, proporcionalidad y congruencia frente a situaciones de convivencia.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "ALTA",
+  "claim": "Reconoce la actuación pedagógica o institucional más adecuada de acuerdo con el enfoque evaluado en el caso.",
+  "evidencia": "Selecciona una única alternativa defendible técnicamente y coherente con el constructo del ítem.",
+  "tarea": "Analizar la situación presentada y elegir la respuesta más pertinente según criterios pedagógicos y normativos aplicables.",
+  "contexto": "Durante un proceso disciplinario escolar, al estudiante se le notificó inicialmente una falta específica. Sin embargo, al momento de comunicar el fallo, la institución agrega nuevas faltas que nunca fueron informadas ni debatidas, con el fin de aumentar el castigo.",
+  "enunciado": "Durante un proceso disciplinario escolar, al estudiante se le notificó inicialmente una falta específica. Sin embargo, al momento de comunicar el fallo, la institución agrega nuevas faltas que nunca fueron informadas ni debatidas, con el fin de aumentar el castigo.\n\n¿Por qué esta actuación vulnera el principio de congruencia y el derecho de defensa?",
+  "opciones": {
+    "A": "Porque el fallo debe corresponder a los cargos previamente comunicados y debatidos; agregar nuevas faltas al final impide defenderse de ellas.",
+    "B": "Porque el colegio nunca puede aplicar medidas disciplinarias.",
+    "C": "Porque el estudiante puede escoger libremente qué normas cumplir.",
+    "D": "Porque las faltas no necesitan estar en el Manual de Convivencia."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende el principio de congruencia en un proceso disciplinario escolar.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con convivencia escolar, coordinación, rectoría, orientación o gestión institucional.",
-    "blueprint": {
-      "problematica_principal": "Agregar nuevas faltas al momento del fallo disciplinario, impidiendo que el estudiante se defienda de cargos no comunicados.",
-      "fuente_autorizada": [
-        "Constitución Política de Colombia artículo 29",
-        "Manual de Convivencia",
-        "Debido proceso escolar",
-        "Principio de congruencia",
-        "Derecho de defensa"
-      ],
-      "componente_modulo": "Principio de congruencia",
-      "competencia": "Aplicación del derecho de defensa",
-      "afirmacion": "La decisión disciplinaria debe guardar correspondencia con los cargos comunicados y debatidos; no pueden agregarse faltas nuevas al final para aumentar la sanción.",
-      "evidencia_observable": "Reconoce que la incorporación tardía de nuevos cargos vulnera defensa, contradicción y congruencia.",
-      "tipo_de_evidencia": "Juicio jurídico aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que el estudiante solo puede defenderse de cargos claros, previos y conocidos oportunamente.",
-    "evidencia_observable": "Selecciona la explicación que vincula nuevas faltas tardías con vulneración del debido proceso.",
-    "tarea_cognitiva": "Analizar una actuación disciplinaria y determinar su afectación al derecho de defensa.",
-    "tipo_de_pregunta": "Caso situacional de congruencia procesal",
-    "dificultad_esperada": "Alta",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Normalizar aumento arbitrario de sanciones",
-        "revision": "La clave exige correspondencia entre cargos y fallo."
-      },
-      {
-        "riesgo": "Confundir corrección pedagógica con indefensión",
-        "revision": "La opción correcta no niega sanciones, exige garantías."
-      },
-      {
-        "riesgo": "Desconocer el Manual de Convivencia",
-        "revision": "El ítem exige que las faltas estén previamente definidas y comunicadas."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque el colegio sí puede aplicar medidas si respeta garantías.",
+    "C": "Es incorrecta porque los estudiantes tienen deberes dentro de la comunidad educativa.",
+    "D": "Es incorrecta porque las faltas y medidas deben estar previstas y ser conocidas."
   },
-  "item": {
-    "enunciado": "Durante un proceso disciplinario escolar, al estudiante se le notificó inicialmente una falta específica. Sin embargo, al momento de comunicar el fallo, la institución agrega nuevas faltas que nunca fueron informadas ni debatidas, con el fin de aumentar el castigo.\n\n¿Por qué esta actuación vulnera el principio de congruencia y el derecho de defensa?",
-    "opciones": {
-      "A": "Porque el fallo debe corresponder a los cargos previamente comunicados y debatidos; agregar nuevas faltas al final impide defenderse de ellas.",
-      "B": "Porque el colegio nunca puede aplicar medidas disciplinarias.",
-      "C": "Porque el estudiante puede escoger libremente qué normas cumplir.",
-      "D": "Porque las faltas no necesitan estar en el Manual de Convivencia."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo y normativo estándar, sin referencias discriminatorias ni barreras culturales innecesarias."
   },
-  "ficha_tecnica": {
-    "componente": "Principio de congruencia",
-    "competencia": "Aplicación del derecho de defensa",
-    "claim_evaluado": "El evaluado comprende que el estudiante solo puede defenderse de cargos claros, previos y conocidos oportunamente.",
-    "evidencia": "Selecciona la explicación que vincula nuevas faltas tardías con vulneración del debido proceso.",
-    "proceso_cognitivo": "Juicio jurídico aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Alta",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Confunde debido proceso con imposibilidad de sancionar.",
-      "C": "Desconoce la obligatoriedad de normas de convivencia.",
-      "D": "Niega el principio de tipicidad y previsibilidad."
-    },
-    "fuente_autorizada": [
-      "Constitución Política de Colombia artículo 29",
-      "Manual de Convivencia",
-      "Debido proceso escolar",
-      "Principio de congruencia"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciados con tarea única y opciones comparables en estructura y longitud."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque el colegio sí puede aplicar medidas si respeta garantías.",
-    "opcion_C": "Es incorrecta porque los estudiantes tienen deberes dentro de la comunidad educativa.",
-    "opcion_D": "Es incorrecta porque las faltas y medidas deben estar previstas y ser conocidas.",
-    "distractores": {
-      "B": "Es incorrecta porque el colegio sí puede aplicar medidas si respeta garantías.",
-      "C": "Es incorrecta porque los estudiantes tienen deberes dentro de la comunidad educativa.",
-      "D": "Es incorrecta porque las faltas y medidas deben estar previstas y ser conocidas."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "Aprobado con revisión jurídica recomendada.",
-    "argumento": "El ítem protege garantías sin eliminar la posibilidad de medidas disciplinarias proporcionadas."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Validar con jurisprudencia de debido proceso escolar antes de uso definitivo.",
-    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 5 preguntas sobre debido proceso, congruencia y medidas correctivas extremas."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

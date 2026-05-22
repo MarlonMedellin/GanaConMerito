@@ -1,104 +1,45 @@
 {
   "id_item": "NFL_B03_I01",
-  "archivo_sugerido": "NFL_B03_I01_expulsion_estudiante_tdah_debido_proceso_ajustes.json",
-  "bloque": {
-    "codigo_bloque": "NFL_B03",
-    "nombre": "Debido proceso, congruencia y medidas correctivas extremas",
-    "estado_en_lista": "Bloque 3 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 1 de 5"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Convivencia escolar y normatividad",
+  "tema": "Debido proceso, congruencia y medidas correctivas extremas",
+  "subtema": "Debido proceso institucional",
+  "competencia": "Valora medidas correctivas según debido proceso, proporcionalidad y congruencia frente a situaciones de convivencia.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "ALTA",
+  "claim": "Reconoce la actuación pedagógica o institucional más adecuada de acuerdo con el enfoque evaluado en el caso.",
+  "evidencia": "Selecciona una única alternativa defendible técnicamente y coherente con el constructo del ítem.",
+  "tarea": "Analizar la situación presentada y elegir la respuesta más pertinente según criterios pedagógicos y normativos aplicables.",
+  "contexto": "Un colegio privado expulsa de inmediato a un estudiante con diagnóstico de TDAH después de una agresión física. La institución no lo escucha, no informa cargos de manera clara, no permite contradicción, no analiza apoyos o ajustes razonables y no valora medidas pedagógicas proporcionales.",
+  "enunciado": "Un colegio privado expulsa de inmediato a un estudiante con diagnóstico de TDAH después de una agresión física. La institución no lo escucha, no informa cargos de manera clara, no permite contradicción, no analiza apoyos o ajustes razonables y no valora medidas pedagógicas proporcionales.\n\nSegún el enfoque de derechos y el debido proceso institucional, ¿qué paso fue omitido antes de aplicar esa medida extrema?",
+  "opciones": {
+    "A": "Aplicar la expulsión de forma automática para demostrar autoridad institucional.",
+    "B": "Publicar el caso ante la comunidad para que sirva de ejemplo.",
+    "C": "Garantizar un procedimiento previo con cargos claros, derecho de defensa, valoración integral, proporcionalidad, protección de los afectados y análisis de apoyos o ajustes razonables.",
+    "D": "Ignorar la agresión porque el estudiante tiene TDAH."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce que una medida extrema como la expulsión debe estar precedida por debido proceso, valoración integral del caso, proporcionalidad y ajustes razonables cuando hay una condición como TDAH.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación, rectoría, orientación escolar, convivencia o gestión institucional.",
-    "blueprint": {
-      "problematica_principal": "Aplicación inmediata de una medida extrema sin valorar condiciones del estudiante, activar apoyos ni respetar garantías del debido proceso.",
-      "fuente_autorizada": [
-        "Constitución Política de Colombia artículo 29",
-        "Ley 115 de 1994",
-        "Ley 1098 de 2006",
-        "Manual de Convivencia",
-        "Educación inclusiva y ajustes razonables"
-      ],
-      "componente_modulo": "Debido proceso institucional",
-      "competencia": "Aplicación de garantías disciplinarias escolares",
-      "afirmacion": "Antes de imponer una medida extrema, la institución debe garantizar debido proceso, derecho de defensa, valoración pedagógica, proporcionalidad y apoyos o ajustes razonables si proceden.",
-      "evidencia_observable": "Reconoce que expulsar sin proceso, sin escuchar al estudiante y sin valorar ajustes vulnera derechos.",
-      "tipo_de_evidencia": "Juicio jurídico-pedagógico aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende que la convivencia escolar debe gestionarse con garantías, no mediante sanciones automáticas o excluyentes.",
-    "evidencia_observable": "Selecciona la actuación que exige debido proceso y valoración integral antes de una expulsión.",
-    "tarea_cognitiva": "Analizar un caso disciplinario con condición neurodiversa y seleccionar la actuación institucional adecuada.",
-    "tipo_de_pregunta": "Caso situacional de debido proceso escolar",
-    "dificultad_esperada": "Alta",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Asociar TDAH con impunidad disciplinaria",
-        "revision": "La clave mantiene responsabilidad, pero exige apoyos, proporcionalidad y proceso."
-      },
-      {
-        "riesgo": "Normalizar expulsión automática",
-        "revision": "La respuesta correcta exige garantía previa de derechos."
-      },
-      {
-        "riesgo": "Desconocer afectación a víctimas de la agresión",
-        "revision": "La clave permite medidas de protección y reparación, no omisión."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque ninguna expulsión puede ser automática sin garantías.",
+    "B": "Es incorrecta porque expone y estigmatiza.",
+    "C": "Clave correcta.",
+    "D": "Es incorrecta porque tener TDAH no significa ausencia de intervención formativa ni de protección a terceros."
   },
-  "item": {
-    "enunciado": "Un colegio privado expulsa de inmediato a un estudiante con diagnóstico de TDAH después de una agresión física. La institución no lo escucha, no informa cargos de manera clara, no permite contradicción, no analiza apoyos o ajustes razonables y no valora medidas pedagógicas proporcionales.\n\nSegún el enfoque de derechos y el debido proceso institucional, ¿qué paso fue omitido antes de aplicar esa medida extrema?",
-    "opciones": {
-      "A": "Aplicar la expulsión de forma automática para demostrar autoridad institucional.",
-      "B": "Publicar el caso ante la comunidad para que sirva de ejemplo.",
-      "C": "Garantizar un procedimiento previo con cargos claros, derecho de defensa, valoración integral, proporcionalidad, protección de los afectados y análisis de apoyos o ajustes razonables.",
-      "D": "Ignorar la agresión porque el estudiante tiene TDAH."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo y normativo estándar, sin referencias discriminatorias ni barreras culturales innecesarias."
   },
-  "ficha_tecnica": {
-    "componente": "Debido proceso institucional",
-    "competencia": "Aplicación de garantías disciplinarias escolares",
-    "claim_evaluado": "El evaluado comprende que la convivencia escolar debe gestionarse con garantías, no mediante sanciones automáticas o excluyentes.",
-    "evidencia": "Selecciona la actuación que exige debido proceso y valoración integral antes de una expulsión.",
-    "proceso_cognitivo": "Juicio jurídico-pedagógico aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Alta",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Desconoce el debido proceso y la proporcionalidad.",
-      "B": "Vulnera intimidad y dignidad del estudiante.",
-      "D": "Confunde ajustes razonables con ausencia de intervención."
-    },
-    "fuente_autorizada": [
-      "Constitución Política de Colombia artículo 29",
-      "Ley 115 de 1994",
-      "Ley 1098 de 2006",
-      "Manual de Convivencia",
-      "Educación inclusiva"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciados con tarea única y opciones comparables en estructura y longitud."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque ninguna expulsión puede ser automática sin garantías.",
-    "opcion_B": "Es incorrecta porque expone y estigmatiza.",
-    "opcion_D": "Es incorrecta porque tener TDAH no significa ausencia de intervención formativa ni de protección a terceros.",
-    "distractores": {
-      "A": "Es incorrecta porque ninguna expulsión puede ser automática sin garantías.",
-      "B": "Es incorrecta porque expone y estigmatiza.",
-      "D": "Es incorrecta porque tener TDAH no significa ausencia de intervención formativa ni de protección a terceros."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "Aprobado con revisión jurídica recomendada.",
-    "argumento": "El ítem evita estigmatizar el TDAH y equilibra protección, responsabilidad y garantías del debido proceso."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Validar con jurisprudencia constitucional y manual institucional antes de uso definitivo.",
-    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 5 preguntas sobre debido proceso, congruencia y medidas correctivas extremas."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }
