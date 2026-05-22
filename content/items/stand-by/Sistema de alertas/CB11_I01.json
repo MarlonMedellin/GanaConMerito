@@ -1,105 +1,45 @@
 {
   "id_item": "CB11_I01",
-  "bloque": {
-    "numero": 11,
-    "nombre": "Sistema de alertas",
-    "estado_en_lista": "Bloque 11 de 15",
-    "decision_del_bloque": "Pregunta única",
-    "item_en_grupo": "Ítem 1 de 1"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Convivencia y protección",
+  "tema": "Sistema de alertas",
+  "subtema": "Detección y seguimiento institucional",
+  "competencia": "Aplicar criterios de activación oportuna de alertas ante señales de riesgo escolar.",
+  "nivel_cognitivo": "ANÁLISIS-APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado reconoce que la gestión de alertas exige activación, registro, remisión y seguimiento preventivo.",
+  "evidencia": "Identifica la actuación institucional más completa frente a señales de riesgo persistentes.",
+  "tarea": "Seleccionar la acción institucional adecuada ante una alerta escolar.",
+  "contexto": "Un estudiante presenta ausencias reiteradas, aislamiento y cambios emocionales observables, sin registro formal previo.",
+  "enunciado": "¿Qué respuesta institucional es más adecuada?",
+  "opciones": {
+    "A": "Esperar a que ocurra una falta disciplinaria para iniciar registro.",
+    "B": "Activar la ruta o sistema de alertas, documentar la situación y coordinar seguimiento con instancias pertinentes.",
+    "C": "Pedir a compañeros que vigilen conversaciones privadas del estudiante.",
+    "D": "Retirar al estudiante de actividades grupales hasta nuevo aviso."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce que, ante señales de riesgo o contingencia escolar, la institución debe activar oportunamente el sistema de alertas o la ruta institucional correspondiente, documentar la situación y realizar seguimiento.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "Responsabilidad ante contingencias",
-      "fuente_autorizada": [
-        "Ruta de atención integral",
-        "Orientaciones de gestión del riesgo escolar",
-        "Manual de convivencia institucional",
-        "Protocolos institucionales de atención y seguimiento"
-      ],
-      "componente_modulo": "Convivencia",
-      "competencia": "Gestión de riesgo",
-      "afirmacion": "Debe existir activación oportuna.",
-      "evidencia_observable": "Identifica la necesidad de activar alertas, documentar y hacer seguimiento ante una contingencia escolar.",
-      "tipo_de_evidencia": "Juicio profesional ante señales de riesgo",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado reconoce que la gestión de alertas exige detección, activación, registro, remisión y seguimiento oportunos frente a señales de riesgo en estudiantes.",
-    "evidencia_observable": "Selecciona una actuación institucional preventiva, documentada y articulada con las instancias pertinentes.",
-    "tarea_cognitiva": "Seleccionar la respuesta más completa ante una alerta escolar.",
-    "tipo_de_pregunta": "Caso situacional de juicio profesional",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Estigmatización de malestar emocional o dificultades personales",
-        "revision": "El ítem no diagnostica ni etiqueta al estudiante; se centra en señales observables y en la necesidad de apoyo institucional."
-      },
-      {
-        "riesgo": "Vulneración de privacidad",
-        "revision": "La clave promueve el manejo por canales institucionales pertinentes, no la exposición pública ni la vigilancia informal."
-      },
-      {
-        "riesgo": "Ambigüedad entre alerta preventiva y proceso disciplinario",
-        "revision": "La situación no se presenta como falta disciplinaria, sino como conjunto de señales que requieren activación preventiva."
-      },
-      {
-        "riesgo": "Sesgo por recursos institucionales",
-        "revision": "La respuesta correcta no exige recursos extraordinarios; se centra en activar, documentar y hacer seguimiento según la ruta disponible."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "Responde al enfoque preventivo: actuación oportuna, trazable y articulada institucionalmente.",
+  "distractores_funcion": {
+    "A": "Confunde prevención con sanción disciplinaria.",
+    "B": "Clave correcta.",
+    "C": "Vulnera privacidad y delega funciones institucionales.",
+    "D": "Aumenta aislamiento sin activar apoyos."
   },
-  "item": {
-    "enunciado": "Durante varias semanas, un estudiante presenta ausencias reiteradas, bajo estado de ánimo y comentarios de aislamiento. Ningún docente ha registrado formalmente la situación porque consideran que aún no hay una falta disciplinaria.\n\n¿Qué acción institucional es más adecuada?",
-    "opciones": {
-      "A": "Esperar a que ocurra una falta disciplinaria para abrir un registro formal.",
-      "B": "Activar el sistema de alertas o ruta institucional, documentar la situación y coordinar seguimiento con las instancias pertinentes.",
-      "C": "Pedir a los compañeros que vigilen al estudiante y reporten cualquier conversación privada.",
-      "D": "Retirar temporalmente al estudiante de actividades grupales para evitar posibles conflictos."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje funcional y contexto general; evita sesgos culturales o exigencias externas no declaradas."
   },
-  "ficha_tecnica": {
-    "componente": "Convivencia",
-    "competencia": "Gestión de riesgo",
-    "claim_evaluado": "El evaluado reconoce que la gestión de alertas exige detección, activación, registro, remisión y seguimiento oportunos frente a señales de riesgo en estudiantes.",
-    "evidencia": "Selecciona una actuación institucional preventiva, documentada y articulada con las instancias pertinentes.",
-    "proceso_cognitivo": "Análisis y juicio profesional ante señales de riesgo",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Confunde alerta preventiva con proceso disciplinario y puede retrasar la atención.",
-      "C": "Traslada una función institucional a los compañeros y puede afectar la privacidad del estudiante.",
-      "D": "Aísla al estudiante y no activa apoyos ni seguimiento institucional."
-    },
-    "fuente_autorizada": [
-      "Ruta de atención integral",
-      "Orientaciones de gestión del riesgo escolar",
-      "Manual de convivencia institucional",
-      "Protocolos institucionales de atención y seguimiento"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado directo, paralelismo en opciones y una tarea cognitiva principal por ítem."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque esperar una falta disciplinaria puede agravar la situación y desconoce el carácter preventivo del sistema de alertas.",
-    "opcion_C": "Es incorrecta porque delega indebidamente en los compañeros una función de vigilancia que puede vulnerar la privacidad y aumentar la exposición del estudiante.",
-    "opcion_D": "Es incorrecta porque retirar al estudiante de actividades grupales puede profundizar el aislamiento y no constituye una estrategia de atención o acompañamiento.",
-    "distractores": {
-      "A": "Es incorrecta porque esperar una falta disciplinaria puede agravar la situación y desconoce el carácter preventivo del sistema de alertas.",
-      "C": "Es incorrecta porque delega indebidamente en los compañeros una función de vigilancia que puede vulnerar la privacidad y aumentar la exposición del estudiante.",
-      "D": "Es incorrecta porque retirar al estudiante de actividades grupales puede profundizar el aislamiento y no constituye una estrategia de atención o acompañamiento."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem evita diagnosticar al estudiante o asociar sus señales con una condición específica. Evalúa una actuación institucional general: observar señales, activar rutas, documentar y hacer seguimiento. No culpabiliza al estudiante, a la familia ni a los docentes, y evita exponer información privada."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada. Se recomienda conservar el lenguaje preventivo y no clínico.",
-    "uso_recomendado": "Puede usarse como pregunta única del bloque Sistema de alertas."
+  "metadata_editorial": {
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }
