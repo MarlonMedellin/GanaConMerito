@@ -1,102 +1,45 @@
 {
   "id_item": "IDD_B09_I01",
-  "archivo_sugerido": "IDD_B09_I01_concepto_inteligencia_competencias.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B09",
-    "nombre": "Inteligencia, inteligencias múltiples y didáctica heterogénea",
-    "estado_en_lista": "Bloque 9 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 1 de 4"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Didáctica y evaluación",
+  "tema": "Inteligencia en educación",
+  "subtema": "Enfoque competencial",
+  "competencia": "Distinguir concepciones memorísticas y competenciales de inteligencia para orientar prácticas de aula.",
+  "nivel_cognitivo": "COMPRENSION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado reconoce que la inteligencia escolar implica comprender, transferir y resolver problemas en contexto.",
+  "evidencia": "Selecciona la definición coherente con formación por competencias.",
+  "tarea": "Elegir la conceptualización de inteligencia más adecuada para didáctica heterogénea.",
+  "contexto": "Debate docente sobre inteligencia como repetición literal versus desempeño contextualizado.",
+  "enunciado": "¿Qué definición de inteligencia es más coherente con un enfoque de competencias?",
+  "opciones": {
+    "A": "Memorizar y repetir contenidos sin transformación.",
+    "B": "Copiar con rapidez respuestas del docente.",
+    "C": "Comprender, resolver problemas, crear respuestas pertinentes y movilizar saberes en contextos diversos.",
+    "D": "Transcribir más temas en menos tiempo."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende la inteligencia en el aula como capacidad de resolver problemas, actuar en contexto, crear respuestas pertinentes y movilizar saberes, no como simple repetición de información.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, pedagogía, didáctica o gestión académica.",
-    "blueprint": {
-      "problematica_principal": "Reducción de la inteligencia a memorización y repetición literal.",
-      "fuente_autorizada": [
-        "Ministerio de Educación Nacional",
-        "Evaluación por competencias",
-        "Didáctica general",
-        "Aprendizaje significativo"
-      ],
-      "componente_modulo": "Pedagogía, Didáctica e Inteligencias Múltiples",
-      "competencia": "Comprensión de inteligencia orientada a competencias",
-      "afirmacion": "La inteligencia escolar se evidencia cuando el estudiante comprende, resuelve problemas, toma decisiones y usa saberes en contexto.",
-      "evidencia_observable": "Distingue una concepción competencial de inteligencia frente a una visión memorística.",
-      "tipo_de_evidencia": "Comprensión conceptual aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende que la inteligencia no se limita a repetir contenidos, sino que se expresa en la capacidad de comprender, transferir, resolver problemas y actuar competentemente.",
-    "evidencia_observable": "Selecciona una definición de inteligencia vinculada con desempeño, contexto, solución de problemas y formación por competencias.",
-    "tarea_cognitiva": "Diferenciar una concepción memorística de una concepción competencial de inteligencia.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confundir inteligencia con alto rendimiento en pruebas memorísticas",
-        "revision": "La clave privilegia desempeño contextualizado y no solo repetición."
-      },
-      {
-        "riesgo": "Desvalorizar estudiantes con formas distintas de aprender",
-        "revision": "El ítem reconoce múltiples manifestaciones de comprensión."
-      },
-      {
-        "riesgo": "Reducir competencias a actividades sin contenido",
-        "revision": "La opción correcta conserva saberes y aplicación."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "Es la única opción que integra comprensión, transferencia y actuación contextualizada.",
+  "distractores_funcion": {
+    "A": "Reduce inteligencia a repetición.",
+    "B": "Confunde velocidad de copia con comprensión.",
+    "C": "Clave correcta.",
+    "D": "Asocia inteligencia con volumen de transcripción."
   },
-  "item": {
-    "enunciado": "En una reunión pedagógica, un docente afirma que un estudiante inteligente es aquel que repite exactamente las definiciones del libro. Otro docente plantea que, desde una formación por competencias, la inteligencia se evidencia de manera más amplia.\n\n¿Cuál definición es más coherente con este enfoque?",
-    "opciones": {
-      "A": "La inteligencia consiste únicamente en memorizar y repetir contenidos sin modificarlos.",
-      "B": "La inteligencia se demuestra cuando el estudiante copia con rapidez las respuestas del docente.",
-      "C": "La inteligencia implica comprender, resolver problemas, crear respuestas pertinentes y movilizar saberes en contextos diversos.",
-      "D": "La inteligencia solo se mide por la cantidad de temas que el estudiante logra transcribir."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Evita una definición única basada en memoria y reconoce diversidad de desempeños."
   },
-  "ficha_tecnica": {
-    "componente": "Pedagogía, Didáctica e Inteligencias Múltiples",
-    "competencia": "Comprensión de inteligencia orientada a competencias",
-    "claim_evaluado": "El evaluado comprende que la inteligencia no se limita a repetir contenidos, sino que se expresa en la capacidad de comprender, transferir, resolver problemas y actuar competentemente.",
-    "evidencia": "Selecciona una definición de inteligencia vinculada con desempeño, contexto, solución de problemas y formación por competencias.",
-    "proceso_cognitivo": "Comprensión conceptual aplicada",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Reduce inteligencia a memoria literal.",
-      "B": "Confunde inteligencia con copia rápida.",
-      "D": "Confunde inteligencia con transcripción de temas."
-    },
-    "fuente_autorizada": [
-      "Ministerio de Educación Nacional",
-      "Evaluación por competencias",
-      "Didáctica general",
-      "Aprendizaje significativo"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Vocabulario pedagógico estándar y opciones equilibradas."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque limita la inteligencia a repetición.",
-    "opcion_B": "Es incorrecta porque copiar no evidencia comprensión.",
-    "opcion_D": "Es incorrecta porque transcribir temas no garantiza competencia.",
-    "distractores": {
-      "A": "Es incorrecta porque limita la inteligencia a repetición.",
-      "B": "Es incorrecta porque copiar no evidencia comprensión.",
-      "D": "Es incorrecta porque transcribir temas no garantiza competencia."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem evita una visión única y memorística de la inteligencia, y reconoce diversas formas de desempeño académico."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre inteligencia, inteligencias múltiples y didáctica heterogénea."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Inteligencia, inteligencias múltiples y didáctica heterogénea/IDD_B09_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

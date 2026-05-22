@@ -1,104 +1,45 @@
 {
   "id_item": "IDD_B07_I01",
-  "archivo_sugerido": "IDD_B07_I01_equidad_utiles_escolares_ajuste_docente.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B07",
-    "nombre": "Inclusión, equidad socioeconómica y adaptabilidad curricular",
-    "estado_en_lista": "Bloque 7 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 1 de 4"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Inclusión y equidad",
+  "tema": "Barreras socioeconómicas",
+  "subtema": "Adaptabilidad curricular",
+  "competencia": "Ajustar estrategias pedagógicas ante barreras económicas sin estigmatizar ni reducir expectativas.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado identifica ajustes equitativos que sostienen el propósito formativo ante limitaciones de recursos.",
+  "evidencia": "Selecciona la alternativa que combina recursos compartidos, materiales alternativos y gestión de apoyos.",
+  "tarea": "Elegir una respuesta docente inclusiva ante falta de útiles por condición económica.",
+  "contexto": "Varios estudiantes no llevan materiales por limitaciones familiares de ingreso.",
+  "enunciado": "¿Qué ajuste pedagógico corresponde mejor a un enfoque de equidad socioeconómica en esta situación?",
+  "opciones": {
+    "A": "Calificar con cero por falta de materiales, como medida de responsabilidad.",
+    "B": "Adaptar actividad con recursos compartidos y de bajo costo, trabajo colaborativo y apoyo institucional, manteniendo la meta de aprendizaje.",
+    "C": "Excluir temporalmente de la actividad a quienes no llevan materiales.",
+    "D": "Eliminar toda exigencia académica a estudiantes sin útiles."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce que las barreras económicas pueden afectar la participación y el aprendizaje, y que el docente debe realizar ajustes pedagógicos equitativos sin estigmatizar a las familias.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión educativa, orientación escolar, coordinación académica o gestión pedagógica.",
-    "blueprint": {
-      "problematica_principal": "Tratamiento de la falta de útiles escolares como irresponsabilidad individual, sin reconocer barreras socioeconómicas.",
-      "fuente_autorizada": [
-        "Ley 1098 de 2006",
-        "Decreto 1421 de 2017",
-        "Enfoque de equidad",
-        "Educación inclusiva",
-        "Proyecto Educativo Institucional"
-      ],
-      "componente_modulo": "Sensibilidad social y equidad",
-      "competencia": "Ajuste pedagógico ante barreras socioeconómicas",
-      "afirmacion": "La escuela debe reconocer barreras económicas que afectan el aprendizaje y proponer alternativas pedagógicas que garanticen participación.",
-      "evidencia_observable": "Selecciona una actuación docente que evita sancionar la pobreza, adapta recursos y mantiene el propósito formativo.",
-      "tipo_de_evidencia": "Juicio pedagógico y ético aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado comprende que la equidad educativa exige identificar condiciones materiales que pueden convertirse en barreras y ajustar la enseñanza para garantizar participación sin bajar expectativas ni estigmatizar.",
-    "evidencia_observable": "Selecciona una respuesta que propone recursos compartidos, alternativas de bajo costo, trabajo colaborativo y gestión institucional de apoyos.",
-    "tarea_cognitiva": "Analizar una barrera socioeconómica y elegir un ajuste pedagógico inclusivo.",
-    "tipo_de_pregunta": "Caso situacional de juicio pedagógico",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Culpabilizar a familias por falta de recursos",
-        "revision": "La clave evita juicios morales y propone alternativas pedagógicas."
-      },
-      {
-        "riesgo": "Bajar expectativas por pobreza",
-        "revision": "La opción correcta conserva el propósito de aprendizaje con recursos alternativos."
-      },
-      {
-        "riesgo": "Exponer públicamente la situación económica",
-        "revision": "La respuesta adecuada evita humillar o señalar a estudiantes."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "Es la única opción que garantiza participación y aprendizaje sin sancionar pobreza ni bajar expectativas.",
+  "distractores_funcion": {
+    "A": "Convierte barrera económica en castigo.",
+    "B": "Clave correcta.",
+    "C": "Genera exclusión por condición material.",
+    "D": "Confunde equidad con renuncia formativa."
   },
-  "item": {
-    "enunciado": "En una clase, varios estudiantes no llevan los útiles solicitados porque sus familias no tienen capacidad económica para comprarlos. El docente observa que esto retrasa la participación y el aprendizaje, pero no quiere estigmatizar a los niños ni bajar el propósito de la actividad.\n\n¿Qué ajuste debe hacer el docente?",
-    "opciones": {
-      "A": "Calificar con cero a quienes no tengan útiles, porque la falta de materiales siempre demuestra desinterés.",
-      "B": "Adaptar la actividad usando recursos compartidos, materiales alternativos o de bajo costo, trabajo colaborativo y gestión institucional de apoyos, manteniendo el propósito de aprendizaje.",
-      "C": "Excluir de la actividad a quienes no compraron los materiales para no retrasar al grupo.",
-      "D": "Suspender toda exigencia académica para los estudiantes que no tengan útiles."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Evita culpabilización de familias y promueve trato digno con apoyos realistas."
   },
-  "ficha_tecnica": {
-    "componente": "Sensibilidad social y equidad",
-    "competencia": "Ajuste pedagógico ante barreras socioeconómicas",
-    "claim_evaluado": "El evaluado comprende que la equidad educativa exige identificar condiciones materiales que pueden convertirse en barreras y ajustar la enseñanza para garantizar participación sin bajar expectativas ni estigmatizar.",
-    "evidencia": "Selecciona una respuesta que propone recursos compartidos, alternativas de bajo costo, trabajo colaborativo y gestión institucional de apoyos.",
-    "proceso_cognitivo": "Análisis y juicio pedagógico",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Culpabiliza al estudiante y convierte una barrera económica en sanción.",
-      "C": "Excluye a los estudiantes de la actividad por falta de recursos.",
-      "D": "Confunde equidad con eliminación de expectativas formativas."
-    },
-    "fuente_autorizada": [
-      "Ley 1098 de 2006",
-      "Decreto 1421 de 2017",
-      "Enfoque de equidad",
-      "Educación inclusiva",
-      "Proyecto Educativo Institucional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Caso frecuente de aula y opciones comparables."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque sanciona una condición material que puede estar fuera del control del estudiante.",
-    "opcion_C": "Es incorrecta porque excluye del aprendizaje a quienes más requieren apoyo.",
-    "opcion_D": "Es incorrecta porque equidad no significa eliminar el propósito académico.",
-    "distractores": {
-      "A": "Es incorrecta porque sanciona una condición material que puede estar fuera del control del estudiante.",
-      "C": "Es incorrecta porque excluye del aprendizaje a quienes más requieren apoyo.",
-      "D": "Es incorrecta porque equidad no significa eliminar el propósito académico."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem evita culpabilizar a estudiantes o familias por condiciones económicas y promueve ajustes pedagógicos realistas."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre inclusión, equidad socioeconómica y adaptabilidad curricular."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Inclusión, equidad socioeconómica y adaptabilidad curricular/IDD_B07_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }
