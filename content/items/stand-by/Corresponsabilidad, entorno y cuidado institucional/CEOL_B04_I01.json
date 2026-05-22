@@ -1,108 +1,45 @@
 {
   "id_item": "CEOL_B04_I01",
-  "archivo_sugerido": "CEOL_B04_I01_corresponsabilidad_educativa_estado_sociedad_familia.json",
-  "bloque": {
-    "codigo_bloque": "CEOL_B04",
-    "nombre": "Corresponsabilidad, entorno y cuidado institucional",
-    "estado_en_lista": "Bloque 4 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 1 de 5"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Convivencia y cuidado institucional",
+  "tema": "Corresponsabilidad, entorno y cuidado institucional",
+  "subtema": "Corresponsabilidad Educativa",
+  "competencia": "Selecciona acciones de cuidado y prevención con enfoque de corresponsabilidad entre institución, familia y entorno.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "BAJA",
+  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada en el caso planteado.",
+  "evidencia": "Selecciona una alternativa única, consistente con el criterio evaluado y superior frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión según el enfoque del ítem.",
+  "contexto": "En una reunión escolar se discute quién debe impulsar el proceso educativo de los estudiantes. Algunos participantes afirman que esta responsabilidad corresponde únicamente a los docentes, mientras otros recuerdan que la normatividad colombiana plantea una corresponsabilidad más amplia.",
+  "enunciado": "En una reunión escolar se discute quién debe impulsar el proceso educativo de los estudiantes. Algunos participantes afirman que esta responsabilidad corresponde únicamente a los docentes, mientras otros recuerdan que la normatividad colombiana plantea una corresponsabilidad más amplia.\n\n¿Cuáles son los tres entes que deben impulsar obligatoriamente el proceso educativo en Colombia?",
+  "opciones": {
+    "A": "Rector, coordinador y docentes.",
+    "B": "Estado, sociedad y familia.",
+    "C": "Consejo académico, personero y monitor de grupo.",
+    "D": "Estudiantes, vecinos y medios de comunicación."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce la corresponsabilidad educativa entre Estado, sociedad y familia en el marco de la Ley 115, la Ley 1620 y la Ley 1098.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación, rectoría o gestión institucional.",
-    "blueprint": {
-      "problematica_principal": "Reducción de la responsabilidad educativa exclusivamente a la escuela o al docente.",
-      "fuente_autorizada": [
-        "Ley 115 de 1994",
-        "Ley 1620 de 2013",
-        "Ley 1098 de 2006",
-        "Constitución Política de Colombia",
-        "Proyecto Educativo Institucional"
-      ],
-      "componente_modulo": "Corresponsabilidad Educativa",
-      "competencia": "Comprensión normativa de la corresponsabilidad",
-      "afirmacion": "La educación en Colombia es una responsabilidad compartida entre Estado, sociedad y familia.",
-      "evidencia_observable": "Identifica los tres entes responsables de impulsar el proceso educativo.",
-      "tipo_de_evidencia": "Reconocimiento normativo aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado comprende que el proceso educativo no recae únicamente en la institución escolar, sino que exige corresponsabilidad entre el Estado, la sociedad y la familia.",
-    "evidencia_observable": "Selecciona correctamente los tres entes estructurales que deben impulsar el proceso educativo.",
-    "tarea_cognitiva": "Reconocer el principio normativo de corresponsabilidad educativa.",
-    "tipo_de_pregunta": "Pregunta conceptual normativa",
-    "dificultad_esperada": "Baja",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Culpabilización de las familias",
-        "revision": "El ítem plantea corresponsabilidad, no traslado exclusivo de responsabilidades a la familia."
-      },
-      {
-        "riesgo": "Reducción de la escuela a única responsable",
-        "revision": "La clave integra Estado, sociedad y familia."
-      },
-      {
-        "riesgo": "Memorización normativa literal",
-        "revision": "No exige citar artículos; evalúa comprensión básica de la corresponsabilidad."
-      },
-      {
-        "riesgo": "Ambigüedad entre comunidad educativa y entes responsables",
-        "revision": "La opción correcta identifica la tríada estructural de responsabilidad educativa."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque rector, coordinador y docentes hacen parte de la institución, pero no agotan la corresponsabilidad educativa.",
+    "B": "Clave correcta.",
+    "C": "Es incorrecta porque menciona instancias escolares o de participación, no los entes estructurales responsables.",
+    "D": "Es incorrecta porque mezcla actores sociales sin corresponder a la formulación normativa."
   },
-  "item": {
-    "enunciado": "En una reunión escolar se discute quién debe impulsar el proceso educativo de los estudiantes. Algunos participantes afirman que esta responsabilidad corresponde únicamente a los docentes, mientras otros recuerdan que la normatividad colombiana plantea una corresponsabilidad más amplia.\n\n¿Cuáles son los tres entes que deben impulsar obligatoriamente el proceso educativo en Colombia?",
-    "opciones": {
-      "A": "Rector, coordinador y docentes.",
-      "B": "Estado, sociedad y familia.",
-      "C": "Consejo académico, personero y monitor de grupo.",
-      "D": "Estudiantes, vecinos y medios de comunicación."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Caso con lenguaje técnico de uso educativo y sin referencias discriminatorias."
   },
-  "ficha_tecnica": {
-    "componente": "Corresponsabilidad Educativa",
-    "competencia": "Comprensión normativa de la corresponsabilidad",
-    "claim_evaluado": "El evaluado comprende que el proceso educativo no recae únicamente en la institución escolar, sino que exige corresponsabilidad entre el Estado, la sociedad y la familia.",
-    "evidencia": "Selecciona correctamente los tres entes estructurales que deben impulsar el proceso educativo.",
-    "proceso_cognitivo": "Reconocimiento normativo aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Baja",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Reduce la responsabilidad educativa a cargos internos de la institución.",
-      "C": "Confunde instancias escolares con entes estructurales de responsabilidad educativa.",
-      "D": "Incluye actores sociales, pero no corresponde a la tríada normativa."
-    },
-    "fuente_autorizada": [
-      "Ley 115 de 1994",
-      "Ley 1620 de 2013",
-      "Ley 1098 de 2006",
-      "Constitución Política de Colombia",
-      "Proyecto Educativo Institucional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Estructura clara, una sola tarea cognitiva y opciones comparables."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque rector, coordinador y docentes hacen parte de la institución, pero no agotan la corresponsabilidad educativa.",
-    "opcion_C": "Es incorrecta porque menciona instancias escolares o de participación, no los entes estructurales responsables.",
-    "opcion_D": "Es incorrecta porque mezcla actores sociales sin corresponder a la formulación normativa.",
-    "distractores": {
-      "A": "Es incorrecta porque rector, coordinador y docentes hacen parte de la institución, pero no agotan la corresponsabilidad educativa.",
-      "C": "Es incorrecta porque menciona instancias escolares o de participación, no los entes estructurales responsables.",
-      "D": "Es incorrecta porque mezcla actores sociales sin corresponder a la formulación normativa."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem evita responsabilizar de forma exclusiva a docentes o familias y evalúa el principio general de corresponsabilidad educativa."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 5 preguntas sobre corresponsabilidad, entorno y cuidado institucional."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Corresponsabilidad, entorno y cuidado institucional/CEOL_B04_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

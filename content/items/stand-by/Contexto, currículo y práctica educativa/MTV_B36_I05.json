@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B36_I05",
-    "tema": "Contexto local y globalización",
-    "competencia": "Articulación local-global",
-    "dificultad": "Media-Alta",
-    "enunciado": "Una docente enseña problemas ambientales del barrio y luego los conecta con fenómenos globales como cambio climático, consumo y responsabilidad ciudadana.\n\n¿Qué relación curricular está promoviendo?",
-    "opciones": {
-        "A": "Articulación entre contexto local y comprensión global.",
-        "B": "Desprecio por el territorio.",
-        "C": "Eliminación de contenidos universales.",
-        "D": "Aprendizaje aislado del mundo."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "La docente conecta la experiencia local con procesos globales para ampliar comprensión.",
-    "distractores": {
-        "B": "El territorio es punto de partida.",
-        "C": "Los contenidos globales se integran.",
-        "D": "La clase conecta con el mundo."
-    }
+  "id_item": "MTV_B36_I05",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión curricular y práctica pedagógica",
+  "tema": "Contexto, currículo y práctica educativa",
+  "subtema": "Contexto local y globalización",
+  "competencia": "Analiza decisiones curriculares y didácticas a partir del contexto institucional y del propósito formativo.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "MEDIA-ALTA",
+  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada en el caso planteado.",
+  "evidencia": "Selecciona una alternativa única, consistente con el criterio evaluado y superior frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión según el enfoque del ítem.",
+  "contexto": "Una docente enseña problemas ambientales del barrio y luego los conecta con fenómenos globales como cambio climático, consumo y responsabilidad ciudadana.",
+  "enunciado": "Una docente enseña problemas ambientales del barrio y luego los conecta con fenómenos globales como cambio climático, consumo y responsabilidad ciudadana.\n\n¿Qué relación curricular está promoviendo?",
+  "opciones": {
+    "A": "Articulación entre contexto local y comprensión global.",
+    "B": "Desprecio por el territorio.",
+    "C": "Eliminación de contenidos universales.",
+    "D": "Aprendizaje aislado del mundo."
+  },
+  "clave": "A",
+  "justificacion_clave": "La docente conecta la experiencia local con procesos globales para ampliar comprensión.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "El territorio es punto de partida.",
+    "C": "Los contenidos globales se integran.",
+    "D": "La clase conecta con el mundo."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Caso con lenguaje técnico de uso educativo y sin referencias discriminatorias."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Estructura clara, una sola tarea cognitiva y opciones comparables."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Contexto, currículo y práctica educativa/MTV_B36_I05.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
 }

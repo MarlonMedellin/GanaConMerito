@@ -1,104 +1,45 @@
 {
   "id_item": "IDD_B03_I03",
-  "archivo_sugerido": "IDD_B03_I03_articulacion_familia_escuela_estado_inclusion.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B03",
-    "nombre": "Corresponsabilidad, garante y protección del estudiante",
-    "estado_en_lista": "Bloque 3 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 3 de 3"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Protección integral del estudiante",
+  "tema": "Corresponsabilidad, garante y protección del estudiante",
+  "subtema": "Corresponsabilidad e inclusión",
+  "competencia": "Determina actuaciones de protección escolar coherentes con la posición de garante y la ruta institucional.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA-ALTA",
+  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada en el caso planteado.",
+  "evidencia": "Selecciona una alternativa única, consistente con el criterio evaluado y superior frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión según el enfoque del ítem.",
+  "contexto": "Una institución identifica que un estudiante requiere apoyos para participar en clase. Algunos docentes sostienen que no se debe hacer ningún ajuste hasta que la familia gestione todos los apoyos externos. Otros proponen articular familia, escuela y entidades competentes sin suspender la atención educativa.",
+  "enunciado": "Una institución identifica que un estudiante requiere apoyos para participar en clase. Algunos docentes sostienen que no se debe hacer ningún ajuste hasta que la familia gestione todos los apoyos externos. Otros proponen articular familia, escuela y entidades competentes sin suspender la atención educativa.\n\n¿Cuál respuesta interpreta mejor la corresponsabilidad?",
+  "opciones": {
+    "A": "La escuela puede negar la atención hasta que la familia resuelva por completo la situación.",
+    "B": "La familia es la única responsable de garantizar el derecho a la educación inclusiva.",
+    "C": "El estudiante debe adaptarse sin apoyos, porque la corresponsabilidad significa esfuerzo individual.",
+    "D": "La escuela debe actuar y coordinar con familia y entidades competentes para definir apoyos, hacer seguimiento y garantizar participación y aprendizaje."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende que la garantía de derechos de estudiantes con discapacidad o barreras exige articulación entre escuela, familia, sociedad y Estado, sin que ningún actor pueda negar la atención requerida.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, inclusión, coordinación o gestión institucional.",
-    "blueprint": {
-      "problematica_principal": "Uso indebido de la corresponsabilidad para evadir la atención educativa o trasladar obligaciones.",
-      "fuente_autorizada": [
-        "Ley 1098 de 2006",
-        "Decreto 1421 de 2017",
-        "Constitución Política de Colombia",
-        "Sistema de apoyos educativos",
-        "Proyecto Educativo Institucional"
-      ],
-      "componente_modulo": "Corresponsabilidad e inclusión",
-      "competencia": "Articulación interinstitucional y familiar",
-      "afirmacion": "La corresponsabilidad implica concurrencia de actores para garantizar derechos, no excusa para negar atención.",
-      "evidencia_observable": "Reconoce que escuela, familia y Estado deben coordinar acciones para asegurar apoyos, permanencia y participación.",
-      "tipo_de_evidencia": "Juicio institucional aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "D"
-    },
-    "claim": "El evaluado comprende que la corresponsabilidad exige coordinación de acciones y no puede usarse para negar o aplazar la atención de derechos fundamentales.",
-    "evidencia_observable": "Selecciona una actuación institucional que convoca actores, define apoyos, hace seguimiento y evita la negación del servicio.",
-    "tarea_cognitiva": "Elegir una respuesta institucional corresponsable ante una necesidad de apoyo educativo.",
-    "tipo_de_pregunta": "Caso situacional de gestión institucional",
-    "dificultad_esperada": "Media-Alta",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Culpar exclusivamente a la familia",
-        "revision": "La clave exige corresponsabilidad y articulación, no traslado total de obligaciones."
-      },
-      {
-        "riesgo": "Usar la falta de apoyo externo para negar atención",
-        "revision": "La opción correcta mantiene la obligación institucional de actuar."
-      },
-      {
-        "riesgo": "Prometer soluciones sin recursos",
-        "revision": "La clave se centra en gestión, seguimiento y coordinación razonable."
-      }
-    ]
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque una institución no puede usar la corresponsabilidad para negar la atención requerida.",
+    "B": "Es incorrecta porque reduce la corresponsabilidad a responsabilidad familiar.",
+    "C": "Es incorrecta porque desconoce el deber de eliminar barreras.",
+    "D": "Clave correcta."
   },
-  "item": {
-    "enunciado": "Una institución identifica que un estudiante requiere apoyos para participar en clase. Algunos docentes sostienen que no se debe hacer ningún ajuste hasta que la familia gestione todos los apoyos externos. Otros proponen articular familia, escuela y entidades competentes sin suspender la atención educativa.\n\n¿Cuál respuesta interpreta mejor la corresponsabilidad?",
-    "opciones": {
-      "A": "La escuela puede negar la atención hasta que la familia resuelva por completo la situación.",
-      "B": "La familia es la única responsable de garantizar el derecho a la educación inclusiva.",
-      "C": "El estudiante debe adaptarse sin apoyos, porque la corresponsabilidad significa esfuerzo individual.",
-      "D": "La escuela debe actuar y coordinar con familia y entidades competentes para definir apoyos, hacer seguimiento y garantizar participación y aprendizaje."
-    },
-    "respuesta_correcta": "D"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Caso con lenguaje técnico de uso educativo y sin referencias discriminatorias."
   },
-  "ficha_tecnica": {
-    "componente": "Corresponsabilidad e inclusión",
-    "competencia": "Articulación interinstitucional y familiar",
-    "claim_evaluado": "El evaluado comprende que la corresponsabilidad exige coordinación de acciones y no puede usarse para negar o aplazar la atención de derechos fundamentales.",
-    "evidencia": "Selecciona una actuación institucional que convoca actores, define apoyos, hace seguimiento y evita la negación del servicio.",
-    "proceso_cognitivo": "Juicio institucional aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media-Alta",
-    "respuesta_correcta": "D",
-    "distractores": {
-      "A": "Usa la corresponsabilidad como excusa para negar atención.",
-      "B": "Traslada toda la obligación a la familia.",
-      "C": "Desconoce apoyos y ajustes razonables."
-    },
-    "fuente_autorizada": [
-      "Ley 1098 de 2006",
-      "Decreto 1421 de 2017",
-      "Constitución Política de Colombia",
-      "Sistema de apoyos educativos",
-      "Proyecto Educativo Institucional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Estructura clara, una sola tarea cognitiva y opciones comparables."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "opcion_A": "Es incorrecta porque una institución no puede usar la corresponsabilidad para negar la atención requerida.",
-    "opcion_B": "Es incorrecta porque reduce la corresponsabilidad a responsabilidad familiar.",
-    "opcion_C": "Es incorrecta porque desconoce el deber de eliminar barreras.",
-    "distractores": {
-      "A": "Es incorrecta porque una institución no puede usar la corresponsabilidad para negar la atención requerida.",
-      "B": "Es incorrecta porque reduce la corresponsabilidad a responsabilidad familiar.",
-      "C": "Es incorrecta porque desconoce el deber de eliminar barreras."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem evita culpar a la familia o al estudiante y evalúa una respuesta institucional articulada y protectora."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 3 preguntas sobre corresponsabilidad, garante y protección del estudiante."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Corresponsabilidad, garante y protección del estudiante/IDD_B03_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

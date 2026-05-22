@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B36_I10",
-    "tema": "Conocimiento disciplinar y contexto cultural",
-    "competencia": "Planificación y preparación",
-    "dificultad": "Alta",
-    "enunciado": "Un docente domina profundamente su disciplina, pero no conoce las particularidades culturales, lingüísticas y económicas de sus estudiantes. Sus ejemplos no conectan con el grupo y varios estudiantes se sienten excluidos.\n\n¿Qué aspecto debe fortalecer?",
-    "opciones": {
-        "A": "Articulación entre conocimiento disciplinar y conocimiento del contexto de los estudiantes.",
-        "B": "Memorización de más contenidos sin adaptación.",
-        "C": "Eliminación del conocimiento disciplinar.",
-        "D": "Planeación sin diagnóstico."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "La buena planificación requiere dominar la disciplina y comprender a los estudiantes y su contexto.",
-    "distractores": {
-        "B": "Más contenido sin adaptación no resuelve la exclusión.",
-        "C": "El conocimiento disciplinar sigue siendo necesario.",
-        "D": "Se requiere diagnóstico contextual."
-    }
+  "id_item": "MTV_B36_I10",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión curricular y práctica pedagógica",
+  "tema": "Contexto, currículo y práctica educativa",
+  "subtema": "Conocimiento disciplinar y contexto cultural",
+  "competencia": "Analiza decisiones curriculares y didácticas a partir del contexto institucional y del propósito formativo.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "ALTA",
+  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada en el caso planteado.",
+  "evidencia": "Selecciona una alternativa única, consistente con el criterio evaluado y superior frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión según el enfoque del ítem.",
+  "contexto": "Un docente domina profundamente su disciplina, pero no conoce las particularidades culturales, lingüísticas y económicas de sus estudiantes. Sus ejemplos no conectan con el grupo y varios estudiantes se sienten excluidos.",
+  "enunciado": "Un docente domina profundamente su disciplina, pero no conoce las particularidades culturales, lingüísticas y económicas de sus estudiantes. Sus ejemplos no conectan con el grupo y varios estudiantes se sienten excluidos.\n\n¿Qué aspecto debe fortalecer?",
+  "opciones": {
+    "A": "Articulación entre conocimiento disciplinar y conocimiento del contexto de los estudiantes.",
+    "B": "Memorización de más contenidos sin adaptación.",
+    "C": "Eliminación del conocimiento disciplinar.",
+    "D": "Planeación sin diagnóstico."
+  },
+  "clave": "A",
+  "justificacion_clave": "La buena planificación requiere dominar la disciplina y comprender a los estudiantes y su contexto.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Más contenido sin adaptación no resuelve la exclusión.",
+    "C": "El conocimiento disciplinar sigue siendo necesario.",
+    "D": "Se requiere diagnóstico contextual."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Caso con lenguaje técnico de uso educativo y sin referencias discriminatorias."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Estructura clara, una sola tarea cognitiva y opciones comparables."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Contexto, currículo y práctica educativa/MTV_B36_I10.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
 }
