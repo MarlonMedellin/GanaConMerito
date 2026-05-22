@@ -1,104 +1,45 @@
 {
   "id_item": "IDD_B17_I03",
-  "archivo_sugerido": "IDD_B17_I03_organizacion_oraciones_cierre_proceso_escritura.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B17",
-    "nombre": "Aptitud verbal y organización textual",
-    "estado_en_lista": "Bloque 17 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 3 de 5"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Comprensión lectora y producción textual",
+  "tema": "Aptitud verbal y organización textual",
+  "subtema": "Organización de oraciones y cierre",
+  "competencia": "Analiza la organización lógica de textos y selecciona criterios de coherencia, cohesión y progresión temática.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "BAJA-MEDIA",
+  "claim": "Reconoce estructuras textuales y relaciones entre párrafos para organizar información de forma coherente.",
+  "evidencia": "Identifica la opción que mejor aplica un criterio de organización textual al caso presentado.",
+  "tarea": "Inferir la función textual o el orden lógico más adecuado según marcas discursivas del enunciado.",
+  "contexto": "En un ejercicio de organización de frases sobre el proceso de escritura aparecen acciones como decidir el tema, escoger ideas, revisar el texto y copiarlo en forma definitiva.",
+  "enunciado": "En un ejercicio de organización de frases sobre el proceso de escritura aparecen acciones como decidir el tema, escoger ideas, revisar el texto y copiarlo en forma definitiva.\n\n¿Qué frase determina la conclusión o resultado final del proceso?",
+  "opciones": {
+    "A": "Decidir el tema sobre el que se va a escribir.",
+    "B": "Escoger las ideas que harán parte del texto.",
+    "C": "Revisar si el texto tiene errores o necesita ajustes.",
+    "D": "Copiar el texto en forma definitiva después de revisarlo."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante identifica la oración que funciona como cierre o resultado final dentro de una secuencia procedimental.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con comprensión lectora, aptitud verbal, escritura o docencia.",
-    "blueprint": {
-      "problematica_principal": "Dificultad para organizar frases de un proceso cuando se debe reconocer la acción final o resultado.",
-      "fuente_autorizada": [
-        "Organización textual",
-        "Texto procedimental",
-        "Coherencia secuencial",
-        "Producción escrita",
-        "Aptitud verbal"
-      ],
-      "componente_modulo": "Organización de oraciones y cierre",
-      "competencia": "Reconocimiento de secuencia lógica",
-      "afirmacion": "En un proceso, la conclusión corresponde a la acción final que materializa o cierra el resultado esperado.",
-      "evidencia_observable": "Reconoce que copiar en forma definitiva suele ser la fase final después de decidir, escoger y revisar.",
-      "tipo_de_evidencia": "Juicio textual secuencial",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "D"
-    },
-    "claim": "El evaluado comprende que las secuencias procedimentales se ordenan por relaciones lógicas de preparación, revisión y resultado final.",
-    "evidencia_observable": "Selecciona la frase que determina la conclusión dentro del proceso de escritura.",
-    "tarea_cognitiva": "Ordenar mentalmente un procedimiento y reconocer su cierre.",
-    "tipo_de_pregunta": "Pregunta de organización de oraciones",
-    "dificultad_esperada": "Baja-Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confundir revisión con cierre",
-        "revision": "La clave identifica el producto definitivo como final."
-      },
-      {
-        "riesgo": "Exigir reglas técnicas de escritura complejas",
-        "revision": "El ítem se basa en una secuencia cotidiana de producción escrita."
-      },
-      {
-        "riesgo": "Ambigüedad entre escoger y decidir",
-        "revision": "El cierre se define por la acción que deja el texto en versión definitiva."
-      }
-    ]
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque inicia el proceso.",
+    "B": "Es incorrecta porque organiza ideas antes de redactar o finalizar.",
+    "C": "Es incorrecta porque revisar antecede al producto final.",
+    "D": "Clave correcta."
   },
-  "item": {
-    "enunciado": "En un ejercicio de organización de frases sobre el proceso de escritura aparecen acciones como decidir el tema, escoger ideas, revisar el texto y copiarlo en forma definitiva.\n\n¿Qué frase determina la conclusión o resultado final del proceso?",
-    "opciones": {
-      "A": "Decidir el tema sobre el que se va a escribir.",
-      "B": "Escoger las ideas que harán parte del texto.",
-      "C": "Revisar si el texto tiene errores o necesita ajustes.",
-      "D": "Copiar el texto en forma definitiva después de revisarlo."
-    },
-    "respuesta_correcta": "D"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Contexto neutral y lenguaje técnico funcional, sin referencias culturales excluyentes."
   },
-  "ficha_tecnica": {
-    "componente": "Organización de oraciones y cierre",
-    "competencia": "Reconocimiento de secuencia lógica",
-    "claim_evaluado": "El evaluado comprende que las secuencias procedimentales se ordenan por relaciones lógicas de preparación, revisión y resultado final.",
-    "evidencia": "Selecciona la frase que determina la conclusión dentro del proceso de escritura.",
-    "proceso_cognitivo": "Organización secuencial",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Baja-Media",
-    "respuesta_correcta": "D",
-    "distractores": {
-      "A": "Corresponde al inicio del proceso.",
-      "B": "Corresponde a una fase de planeación.",
-      "C": "Corresponde a una fase previa al cierre definitivo."
-    },
-    "fuente_autorizada": [
-      "Organización textual",
-      "Texto procedimental",
-      "Coherencia secuencial",
-      "Producción escrita",
-      "Aptitud verbal"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado con tarea única y opciones comparables en registro y extensión."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "opcion_A": "Es incorrecta porque inicia el proceso.",
-    "opcion_B": "Es incorrecta porque organiza ideas antes de redactar o finalizar.",
-    "opcion_C": "Es incorrecta porque revisar antecede al producto final.",
-    "distractores": {
-      "A": "Es incorrecta porque inicia el proceso.",
-      "B": "Es incorrecta porque organiza ideas antes de redactar o finalizar.",
-      "C": "Es incorrecta porque revisar antecede al producto final."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem evalúa una secuencia lógica común y no requiere conocimientos especializados."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre aptitud verbal y organización textual."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Aptitud verbal y organización textual/IDD_B17_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

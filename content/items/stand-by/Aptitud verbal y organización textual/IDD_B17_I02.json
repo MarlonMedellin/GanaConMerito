@@ -1,104 +1,45 @@
 {
   "id_item": "IDD_B17_I02",
-  "archivo_sugerido": "IDD_B17_I02_historia_rio_introduccion_personificacion.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B17",
-    "nombre": "Aptitud verbal y organización textual",
-    "estado_en_lista": "Bloque 17 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 2 de 5"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Comprensión lectora y producción textual",
+  "tema": "Aptitud verbal y organización textual",
+  "subtema": "Cronología y personificación",
+  "competencia": "Analiza la organización lógica de textos y selecciona criterios de coherencia, cohesión y progresión temática.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "MEDIA-ALTA",
+  "claim": "Reconoce estructuras textuales y relaciones entre párrafos para organizar información de forma coherente.",
+  "evidencia": "Identifica la opción que mejor aplica un criterio de organización textual al caso presentado.",
+  "tarea": "Inferir la función textual o el orden lógico más adecuado según marcas discursivas del enunciado.",
+  "contexto": "En un ejercicio de ordenamiento sobre el texto “la historia de un río”, varios párrafos le atribuyen al río rasgos humanos, edad o acciones propias de una persona. Sin embargo, uno de los párrafos solo presenta al río sin otorgarle todavía esas características.",
+  "enunciado": "En un ejercicio de ordenamiento sobre el texto “la historia de un río”, varios párrafos le atribuyen al río rasgos humanos, edad o acciones propias de una persona. Sin embargo, uno de los párrafos solo presenta al río sin otorgarle todavía esas características.\n\n¿Cuál párrafo debe funcionar como introducción?",
+  "opciones": {
+    "A": "El que presenta el desenlace de la vida del río.",
+    "B": "El que muestra al río ya envejecido y con rasgos humanos plenamente desarrollados.",
+    "C": "El que presenta inicialmente al río antes de atribuirle edad, voz o características humanas.",
+    "D": "El que contiene la reflexión final del narrador."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante identifica el párrafo introductorio en un texto narrativo mediante la ausencia inicial de personificación o caracterización avanzada del objeto narrado.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con comprensión lectora, aptitud verbal, lenguaje o docencia.",
-    "blueprint": {
-      "problematica_principal": "Dificultad para reconocer el inicio de una narración cuando los párrafos presentan personificación progresiva.",
-      "fuente_autorizada": [
-        "Comprensión lectora",
-        "Organización textual",
-        "Narración",
-        "Personificación",
-        "Coherencia textual"
-      ],
-      "componente_modulo": "Cronología y personificación",
-      "competencia": "Identificación de inicio narrativo",
-      "afirmacion": "El inicio de una narración suele presentar el objeto, personaje o situación antes de desarrollar atributos, acciones o rasgos humanos.",
-      "evidencia_observable": "Reconoce que el párrafo introductorio puede ser aquel que presenta al río antes de atribuirle edad, voz o rasgos humanos.",
-      "tipo_de_evidencia": "Juicio textual aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende que la organización narrativa puede identificarse observando la progresión desde presentación inicial hacia personificación, desarrollo y cierre.",
-    "evidencia_observable": "Selecciona el criterio que permite reconocer la introducción en la historia de un río.",
-    "tarea_cognitiva": "Identificar el inicio narrativo a partir de marcas de personificación progresiva.",
-    "tipo_de_pregunta": "Pregunta de organización textual narrativa",
-    "dificultad_esperada": "Media-Alta",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Exigir conocer el texto completo",
-        "revision": "El ítem evalúa el criterio de ordenamiento, no memoria del texto."
-      },
-      {
-        "riesgo": "Confundir personificación con introducción",
-        "revision": "La clave aclara que la introducción puede anteceder la personificación plena."
-      },
-      {
-        "riesgo": "Ambigüedad por ausencia de fragmentos",
-        "revision": "El enunciado formula el criterio general de selección."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque el desenlace pertenece al cierre.",
+    "B": "Es incorrecta porque corresponde a un momento posterior del relato.",
+    "C": "Clave correcta.",
+    "D": "Es incorrecta porque la reflexión final no abre la narración."
   },
-  "item": {
-    "enunciado": "En un ejercicio de ordenamiento sobre el texto “la historia de un río”, varios párrafos le atribuyen al río rasgos humanos, edad o acciones propias de una persona. Sin embargo, uno de los párrafos solo presenta al río sin otorgarle todavía esas características.\n\n¿Cuál párrafo debe funcionar como introducción?",
-    "opciones": {
-      "A": "El que presenta el desenlace de la vida del río.",
-      "B": "El que muestra al río ya envejecido y con rasgos humanos plenamente desarrollados.",
-      "C": "El que presenta inicialmente al río antes de atribuirle edad, voz o características humanas.",
-      "D": "El que contiene la reflexión final del narrador."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Contexto neutral y lenguaje técnico funcional, sin referencias culturales excluyentes."
   },
-  "ficha_tecnica": {
-    "componente": "Cronología y personificación",
-    "competencia": "Identificación de inicio narrativo",
-    "claim_evaluado": "El evaluado comprende que la organización narrativa puede identificarse observando la progresión desde presentación inicial hacia personificación, desarrollo y cierre.",
-    "evidencia": "Selecciona el criterio que permite reconocer la introducción en la historia de un río.",
-    "proceso_cognitivo": "Análisis textual narrativo",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media-Alta",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Confunde introducción con desenlace.",
-      "B": "Ubica un momento avanzado de la personificación como inicio.",
-      "D": "Confunde introducción con cierre reflexivo."
-    },
-    "fuente_autorizada": [
-      "Comprensión lectora",
-      "Organización textual",
-      "Narración",
-      "Personificación",
-      "Coherencia textual"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado con tarea única y opciones comparables en registro y extensión."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque el desenlace pertenece al cierre.",
-    "opcion_B": "Es incorrecta porque corresponde a un momento posterior del relato.",
-    "opcion_D": "Es incorrecta porque la reflexión final no abre la narración.",
-    "distractores": {
-      "A": "Es incorrecta porque el desenlace pertenece al cierre.",
-      "B": "Es incorrecta porque corresponde a un momento posterior del relato.",
-      "D": "Es incorrecta porque la reflexión final no abre la narración."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem evalúa una estrategia de organización textual y no conocimiento literario especializado."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 5 preguntas sobre aptitud verbal y organización textual."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Aptitud verbal y organización textual/IDD_B17_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

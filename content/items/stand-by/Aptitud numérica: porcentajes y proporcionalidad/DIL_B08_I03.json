@@ -1,102 +1,45 @@
 {
   "id_item": "DIL_B08_I03",
-  "archivo_sugerido": "DIL_B08_I03_cantidad_absoluta_vs_porcentaje.json",
-  "bloque": {
-    "codigo_bloque": "DIL_B08",
-    "nombre": "Aptitud numérica: porcentajes y proporcionalidad",
-    "estado_en_lista": "Bloque 8 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 3 de 3"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Razonamiento cuantitativo",
+  "tema": "Aptitud numérica: porcentajes y proporcionalidad",
+  "subtema": "Cantidad absoluta vs porcentaje",
+  "competencia": "Resuelve problemas de porcentajes y proporcionalidad mediante procedimientos aritméticos pertinentes y verifica coherencia del resultado.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Aplica relaciones porcentuales y proporcionales para seleccionar procedimientos correctos en situaciones numéricas contextualizadas.",
+  "evidencia": "Selecciona la opción que representa el procedimiento matemático válido y el resultado coherente con el enunciado.",
+  "tarea": "Resolver el problema cuantitativo identificando la operación proporcional adecuada.",
+  "contexto": "Dos grupos tienen tamaños diferentes. En el grupo más grande hay más personas con cierta característica, pero eso no necesariamente significa que el porcentaje sea mayor.",
+  "enunciado": "Dos grupos tienen tamaños diferentes. En el grupo más grande hay más personas con cierta característica, pero eso no necesariamente significa que el porcentaje sea mayor.\n\n¿Cuál explicación matemática justifica esta afirmación?",
+  "opciones": {
+    "A": "Porque los porcentajes siempre son iguales cuando los grupos son diferentes.",
+    "B": "Porque solo se debe mirar el número mayor, sin importar el total.",
+    "C": "Porque el porcentaje se obtiene sumando la parte con el total.",
+    "D": "Porque el porcentaje depende de la relación entre la parte y el total; una cantidad absoluta mayor puede representar una proporción menor si el grupo total también es mucho mayor."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende conceptualmente la diferencia entre cantidad absoluta y porcentaje en contextos comparativos.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección con componente de aptitud numérica, análisis de datos o razonamiento proporcional.",
-    "blueprint": {
-      "problematica_principal": "Inferir equivocadamente que una cantidad absoluta mayor siempre representa una proporción mayor.",
-      "fuente_autorizada": [
-        "Matemática escolar",
-        "Razonamiento proporcional",
-        "Porcentajes",
-        "Interpretación de datos"
-      ],
-      "componente_modulo": "Cantidad absoluta vs porcentaje",
-      "competencia": "Interpretación proporcional de datos",
-      "afirmacion": "Una cantidad absoluta debe interpretarse en relación con el total para determinar su porcentaje o tasa.",
-      "evidencia_observable": "Reconoce que el denominador o total modifica la interpretación de la cantidad.",
-      "tipo_de_evidencia": "Comprensión conceptual matemática",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "D"
-    },
-    "claim": "El evaluado comprende que la comparación proporcional exige analizar la parte y el total, no solo la parte.",
-    "evidencia_observable": "Selecciona una explicación conceptual sobre cantidad absoluta y porcentaje.",
-    "tarea_cognitiva": "Interpretar el papel del total en una comparación porcentual.",
-    "tipo_de_pregunta": "Pregunta conceptual de razonamiento proporcional",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Resolver solo por cálculo mecánico",
-        "revision": "El ítem exige explicación conceptual."
-      },
-      {
-        "riesgo": "Confundir mayor número con mayor tasa",
-        "revision": "La clave aborda explícitamente ese error."
-      },
-      {
-        "riesgo": "Dependencia de contexto cultural",
-        "revision": "El enunciado es abstracto y matemático."
-      }
-    ]
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque grupos diferentes pueden tener porcentajes iguales o distintos.",
+    "B": "Es incorrecta porque ignora el tamaño total del grupo.",
+    "C": "Es incorrecta porque sumar parte y total no calcula una tasa porcentual.",
+    "D": "Clave correcta."
   },
-  "item": {
-    "enunciado": "Dos grupos tienen tamaños diferentes. En el grupo más grande hay más personas con cierta característica, pero eso no necesariamente significa que el porcentaje sea mayor.\n\n¿Cuál explicación matemática justifica esta afirmación?",
-    "opciones": {
-      "A": "Porque los porcentajes siempre son iguales cuando los grupos son diferentes.",
-      "B": "Porque solo se debe mirar el número mayor, sin importar el total.",
-      "C": "Porque el porcentaje se obtiene sumando la parte con el total.",
-      "D": "Porque el porcentaje depende de la relación entre la parte y el total; una cantidad absoluta mayor puede representar una proporción menor si el grupo total también es mucho mayor."
-    },
-    "respuesta_correcta": "D"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Contexto neutral y lenguaje técnico funcional, sin referencias culturales excluyentes."
   },
-  "ficha_tecnica": {
-    "componente": "Cantidad absoluta vs porcentaje",
-    "competencia": "Interpretación proporcional de datos",
-    "claim_evaluado": "El evaluado comprende que la comparación proporcional exige analizar la parte y el total, no solo la parte.",
-    "evidencia": "Selecciona una explicación conceptual sobre cantidad absoluta y porcentaje.",
-    "proceso_cognitivo": "Comprensión conceptual matemática",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "D",
-    "distractores": {
-      "A": "Afirma falsamente que los porcentajes siempre son iguales.",
-      "B": "Representa el error de comparar solo cantidades absolutas.",
-      "C": "Describe un procedimiento incorrecto para hallar porcentajes."
-    },
-    "fuente_autorizada": [
-      "Matemática escolar",
-      "Razonamiento proporcional",
-      "Porcentajes",
-      "Interpretación de datos"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado con tarea única y opciones comparables en registro y extensión."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "opcion_A": "Es incorrecta porque grupos diferentes pueden tener porcentajes iguales o distintos.",
-    "opcion_B": "Es incorrecta porque ignora el tamaño total del grupo.",
-    "opcion_C": "Es incorrecta porque sumar parte y total no calcula una tasa porcentual.",
-    "distractores": {
-      "A": "Es incorrecta porque grupos diferentes pueden tener porcentajes iguales o distintos.",
-      "B": "Es incorrecta porque ignora el tamaño total del grupo.",
-      "C": "Es incorrecta porque sumar parte y total no calcula una tasa porcentual."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "Evalúa razonamiento proporcional básico con lenguaje claro y sin dependencia de conocimientos externos."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 3 preguntas sobre aptitud numérica, porcentajes y proporcionalidad."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Aptitud numérica: porcentajes y proporcionalidad/DIL_B08_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

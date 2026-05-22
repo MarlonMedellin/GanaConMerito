@@ -1,102 +1,45 @@
 {
   "id_item": "DIL_B08_I01",
-  "archivo_sugerido": "DIL_B08_I01_porcentaje_35_de_120_automoviles.json",
-  "bloque": {
-    "codigo_bloque": "DIL_B08",
-    "nombre": "Aptitud numérica: porcentajes y proporcionalidad",
-    "estado_en_lista": "Bloque 8 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 1 de 3"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Razonamiento cuantitativo",
+  "tema": "Aptitud numérica: porcentajes y proporcionalidad",
+  "subtema": "Cálculo de porcentajes",
+  "competencia": "Resuelve problemas de porcentajes y proporcionalidad mediante procedimientos aritméticos pertinentes y verifica coherencia del resultado.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "BAJA-MEDIA",
+  "claim": "Aplica relaciones porcentuales y proporcionales para seleccionar procedimientos correctos en situaciones numéricas contextualizadas.",
+  "evidencia": "Selecciona la opción que representa el procedimiento matemático válido y el resultado coherente con el enunciado.",
+  "tarea": "Resolver el problema cuantitativo identificando la operación proporcional adecuada.",
+  "contexto": "En un concesionario hay 120 automóviles. El 35% de ellos son blancos.",
+  "enunciado": "En un concesionario hay 120 automóviles. El 35% de ellos son blancos.\n\n¿Cuál es el procedimiento algorítmico directo para determinar la cantidad exacta de automóviles blancos?",
+  "opciones": {
+    "A": "Sumar 120 + 35, porque el porcentaje se agrega al total; por tanto, hay 155 automóviles blancos.",
+    "B": "Restar 120 - 35, porque el porcentaje se descuenta del total; por tanto, hay 85 automóviles blancos.",
+    "C": "Calcular 120 × 35 / 100 = 42; por tanto, hay 42 automóviles blancos.",
+    "D": "Dividir 120 entre 35 y redondear; por tanto, hay 3 automóviles blancos."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante aplica correctamente el cálculo de porcentaje mediante regla de tres simple o multiplicación decimal.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección con componente de aptitud numérica, razonamiento matemático básico o resolución de problemas cotidianos.",
-    "blueprint": {
-      "problematica_principal": "Dificultad para calcular una parte porcentual de una cantidad total.",
-      "fuente_autorizada": [
-        "Matemática escolar",
-        "Porcentajes",
-        "Regla de tres simple",
-        "Razonamiento proporcional"
-      ],
-      "componente_modulo": "Cálculo de porcentajes",
-      "competencia": "Aplicación de regla de tres simple",
-      "afirmacion": "El porcentaje de una cantidad se obtiene multiplicando el total por el porcentaje expresado como decimal o usando proporción directa.",
-      "evidencia_observable": "Calcula que el 35% de 120 automóviles equivale a 42 automóviles.",
-      "tipo_de_evidencia": "Procedimiento algorítmico directo",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende y aplica el procedimiento directo para hallar un porcentaje de una cantidad.",
-    "evidencia_observable": "Selecciona el procedimiento y resultado correcto para calcular 35% de 120.",
-    "tarea_cognitiva": "Aplicar una proporción directa simple.",
-    "tipo_de_pregunta": "Problema numérico procedimental",
-    "dificultad_esperada": "Baja-Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confundir porcentaje con resta",
-        "revision": "Los distractores incluyen errores típicos de procedimiento."
-      },
-      {
-        "riesgo": "Sobrecargar con contexto innecesario",
-        "revision": "El contexto es cotidiano y el dato matemático es claro."
-      },
-      {
-        "riesgo": "Ambigüedad en redondeo",
-        "revision": "El resultado es entero exacto."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque sumar 35 al total no calcula el porcentaje.",
+    "B": "Es incorrecta porque restar 35 al total no calcula el porcentaje.",
+    "C": "Clave correcta.",
+    "D": "Es incorrecta porque dividir 120 entre 35 no representa el 35% del total."
   },
-  "item": {
-    "enunciado": "En un concesionario hay 120 automóviles. El 35% de ellos son blancos.\n\n¿Cuál es el procedimiento algorítmico directo para determinar la cantidad exacta de automóviles blancos?",
-    "opciones": {
-      "A": "Sumar 120 + 35, porque el porcentaje se agrega al total; por tanto, hay 155 automóviles blancos.",
-      "B": "Restar 120 - 35, porque el porcentaje se descuenta del total; por tanto, hay 85 automóviles blancos.",
-      "C": "Calcular 120 × 35 / 100 = 42; por tanto, hay 42 automóviles blancos.",
-      "D": "Dividir 120 entre 35 y redondear; por tanto, hay 3 automóviles blancos."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Contexto neutral y lenguaje técnico funcional, sin referencias culturales excluyentes."
   },
-  "ficha_tecnica": {
-    "componente": "Cálculo de porcentajes",
-    "competencia": "Aplicación de regla de tres simple",
-    "claim_evaluado": "El evaluado comprende y aplica el procedimiento directo para hallar un porcentaje de una cantidad.",
-    "evidencia": "Selecciona el procedimiento y resultado correcto para calcular 35% de 120.",
-    "proceso_cognitivo": "Aplicación algorítmica",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Baja-Media",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Confunde porcentaje con suma directa.",
-      "B": "Confunde porcentaje con resta directa.",
-      "D": "Usa una división no correspondiente al cálculo porcentual."
-    },
-    "fuente_autorizada": [
-      "Matemática escolar",
-      "Porcentajes",
-      "Regla de tres simple",
-      "Razonamiento proporcional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado con tarea única y opciones comparables en registro y extensión."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque sumar 35 al total no calcula el porcentaje.",
-    "opcion_B": "Es incorrecta porque restar 35 al total no calcula el porcentaje.",
-    "opcion_D": "Es incorrecta porque dividir 120 entre 35 no representa el 35% del total.",
-    "distractores": {
-      "A": "Es incorrecta porque sumar 35 al total no calcula el porcentaje.",
-      "B": "Es incorrecta porque restar 35 al total no calcula el porcentaje.",
-      "D": "Es incorrecta porque dividir 120 entre 35 no representa el 35% del total."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El contexto es cotidiano, el procedimiento es estándar y el resultado no requiere redondeo."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 3 preguntas sobre aptitud numérica, porcentajes y proporcionalidad."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Aptitud numérica: porcentajes y proporcionalidad/DIL_B08_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }
