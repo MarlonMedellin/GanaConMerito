@@ -1,105 +1,45 @@
 {
   "id_item": "IDD_B12_I05",
-  "archivo_sugerido": "IDD_B12_I05_seleccion_didactica_según_evidencias.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B12",
-    "nombre": "Didáctica de las áreas, resolución de problemas y material concreto",
-    "estado_en_lista": "Bloque 12 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 5 de 5"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Didáctica disciplinar",
+  "tema": "Didáctica de áreas, resolución de problemas y material concreto",
+  "subtema": "Selección didáctica y evidencias de aprendizaje",
+  "competencia": "Selecciona estrategias didácticas de resolución de problemas apoyadas en material concreto y mediación pedagógica.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce la alternativa pedagógica o institucional más adecuada según el criterio técnico evaluado en el caso.",
+  "evidencia": "Selecciona una única opción defendible frente a distractores plausibles en función del constructo.",
+  "tarea": "Analizar el caso y elegir la decisión más pertinente conforme al enfoque del ítem.",
+  "contexto": "Un docente observa que su estrategia habitual no está funcionando: varios estudiantes no comprenden, otros no participan y las evidencias muestran errores repetidos. El docente necesita seleccionar una nueva estrategia didáctica.",
+  "enunciado": "Un docente observa que su estrategia habitual no está funcionando: varios estudiantes no comprenden, otros no participan y las evidencias muestran errores repetidos. El docente necesita seleccionar una nueva estrategia didáctica.\n\n¿Qué criterio debe orientar principalmente esa selección?",
+  "opciones": {
+    "A": "La costumbre de usar siempre la misma actividad, aunque no produzca comprensión.",
+    "B": "La técnica que requiera menos preparación, sin importar el propósito de aprendizaje.",
+    "C": "El propósito de aprendizaje, las evidencias de comprensión, las barreras identificadas, los recursos disponibles y las características del grupo.",
+    "D": "La decisión de avanzar de tema aunque los estudiantes no hayan comprendido."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce que la selección didáctica debe basarse en evidencias de comprensión, características del grupo y propósito de aprendizaje.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, planeación curricular, didáctica o evaluación formativa.",
-    "blueprint": {
-      "problematica_principal": "Selección de métodos por costumbre, comodidad o repetición, sin considerar evidencias ni características del grupo.",
-      "fuente_autorizada": [
-        "Didáctica general",
-        "Evaluación formativa",
-        "DUA",
-        "Aprendizaje significativo",
-        "Planeación curricular"
-      ],
-      "componente_modulo": "Selección didáctica y evidencias de aprendizaje",
-      "competencia": "Toma de decisiones pedagógicas fundamentadas",
-      "afirmacion": "El docente debe seleccionar estrategias según propósito, evidencias, barreras, recursos, características del grupo y formas de participación.",
-      "evidencia_observable": "Reconoce que la metodología debe ajustarse cuando las evidencias muestran dificultad de comprensión o barreras de acceso.",
-      "tipo_de_evidencia": "Juicio profesional aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende que la didáctica no se reduce a aplicar siempre la misma técnica, sino a tomar decisiones intencionales según el aprendizaje buscado y las evidencias del proceso.",
-    "evidencia_observable": "Selecciona una actuación docente que ajusta método, recursos y evaluación con base en evidencias.",
-    "tarea_cognitiva": "Elegir criterios para seleccionar una estrategia didáctica pertinente.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Media",
-    "risks_de_fairness": [],
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Asumir que existe una técnica única universal",
-        "revision": "La clave exige atender propósito, grupo y evidencias."
-      },
-      {
-        "riesgo": "Confundir flexibilidad con improvisación",
-        "revision": "La opción correcta se basa en criterios pedagógicos."
-      },
-      {
-        "riesgo": "Ignorar barreras de participación",
-        "revision": "La clave incluye diversidad y accesibilidad."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque repetir una estrategia ineficaz no es decisión pedagógica fundamentada.",
+    "B": "Es incorrecta porque reduce la didáctica a comodidad operativa.",
+    "C": "Clave correcta.",
+    "D": "Es incorrecta porque avanzar sin comprensión contradice la evaluación formativa."
   },
-  "item": {
-    "enunciado": "Un docente observa que su estrategia habitual no está funcionando: varios estudiantes no comprenden, otros no participan y las evidencias muestran errores repetidos. El docente necesita seleccionar una nueva estrategia didáctica.\n\n¿Qué criterio debe orientar principalmente esa selección?",
-    "opciones": {
-      "A": "La costumbre de usar siempre la misma actividad, aunque no produzca comprensión.",
-      "B": "La técnica que requiera menos preparación, sin importar el propósito de aprendizaje.",
-      "C": "El propósito de aprendizaje, las evidencias de comprensión, las barreras identificadas, los recursos disponibles y las características del grupo.",
-      "D": "La decisión de avanzar de tema aunque los estudiantes no hayan comprendido."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo estándar y contexto institucional general sin sesgos culturales innecesarios."
   },
-  "ficha_tecnica": {
-    "componente": "Selección didáctica y evidencias de aprendizaje",
-    "competencia": "Toma de decisiones pedagógicas fundamentadas",
-    "claim_evaluado": "El evaluado comprende que la didáctica no se reduce a aplicar siempre la misma técnica, sino a tomar decisiones intencionales según el aprendizaje buscado y las evidencias del proceso.",
-    "evidencia": "Selecciona una actuación docente que ajusta método, recursos y evaluación con base en evidencias.",
-    "proceso_cognitivo": "Juicio profesional aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Mantiene una práctica ineficaz por costumbre.",
-      "B": "Prioriza comodidad sobre aprendizaje.",
-      "D": "Desconoce las evidencias de dificultad."
-    },
-    "fuente_autorizada": [
-      "Didáctica general",
-      "Evaluación formativa",
-      "DUA",
-      "Aprendizaje significativo",
-      "Planeación curricular"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura y exigencia."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque repetir una estrategia ineficaz no es decisión pedagógica fundamentada.",
-    "opcion_B": "Es incorrecta porque reduce la didáctica a comodidad operativa.",
-    "opcion_D": "Es incorrecta porque avanzar sin comprensión contradice la evaluación formativa.",
-    "distractores": {
-      "A": "Es incorrecta porque repetir una estrategia ineficaz no es decisión pedagógica fundamentada.",
-      "B": "Es incorrecta porque reduce la didáctica a comodidad operativa.",
-      "D": "Es incorrecta porque avanzar sin comprensión contradice la evaluación formativa."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem promueve decisiones basadas en evidencias y diversidad del grupo, sin imponer una metodología única."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre didáctica de las áreas, resolución de problemas y material concreto."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I05.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }
