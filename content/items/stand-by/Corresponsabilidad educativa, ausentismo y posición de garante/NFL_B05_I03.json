@@ -1,103 +1,45 @@
 {
   "id_item": "NFL_B05_I03",
-  "archivo_sugerido": "NFL_B05_I03_alerta_temprana_ausentismo_no_sancion_automatica.json",
-  "bloque": {
-    "codigo_bloque": "NFL_B05",
-    "nombre": "Corresponsabilidad educativa, ausentismo y posición de garante",
-    "estado_en_lista": "Bloque 5 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 3 de 3"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Convivencia y protección escolar",
+  "tema": "Corresponsabilidad educativa, ausentismo y posición de garante",
+  "subtema": "Ausentismo como alerta temprana",
+  "competencia": "Valora actuaciones institucionales frente al ausentismo y determina respuestas acordes con la corresponsabilidad y el deber de garante.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada en el caso planteado.",
+  "evidencia": "Selecciona una alternativa única, consistente con el criterio evaluado y superior frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión según el enfoque del ítem.",
+  "contexto": "Una estudiante empieza a faltar de manera reiterada. La institución sospecha que puede haber dificultades económicas, cuidado de hermanos menores o una situación familiar compleja. Algunos proponen esperar hasta final de periodo para sancionarla por fallas.",
+  "enunciado": "Una estudiante empieza a faltar de manera reiterada. La institución sospecha que puede haber dificultades económicas, cuidado de hermanos menores o una situación familiar compleja. Algunos proponen esperar hasta final de periodo para sancionarla por fallas.\n\n¿Cuál actuación es más adecuada?",
+  "opciones": {
+    "A": "Activar una alerta temprana, contactar a la familia o acudiente, indagar barreras, articular apoyo institucional y hacer seguimiento a la permanencia.",
+    "B": "Esperar al final del año y registrar únicamente la pérdida por inasistencia.",
+    "C": "Expulsarla por ausentismo sin indagar las causas.",
+    "D": "Ignorar el caso porque las ausencias no tienen relación con derechos educativos."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende el ausentismo prolongado como alerta temprana para apoyo, protección y permanencia, no como motivo automático de sanción extrema.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, permanencia, convivencia, coordinación o gestión educativa.",
-    "blueprint": {
-      "problematica_principal": "Respuesta punitiva o indiferente ante ausentismo prolongado.",
-      "fuente_autorizada": [
-        "Ley 115 de 1994",
-        "Ley 1098 de 2006",
-        "Permanencia escolar",
-        "Corresponsabilidad educativa",
-        "Rutas de atención institucional"
-      ],
-      "componente_modulo": "Ausentismo como alerta temprana",
-      "competencia": "Gestión preventiva de permanencia escolar",
-      "afirmacion": "La inasistencia prolongada debe activar seguimiento, contacto con familia, análisis de barreras y medidas de apoyo.",
-      "evidencia_observable": "Selecciona una respuesta preventiva y protectora frente al ausentismo.",
-      "tipo_de_evidencia": "Juicio pedagógico-institucional aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que la permanencia escolar se protege mediante acciones tempranas, articuladas y no estigmatizantes.",
-    "evidencia_observable": "Elige una actuación de alerta temprana ante ausencias prolongadas.",
-    "tarea_cognitiva": "Determinar una respuesta institucional adecuada ante riesgo de deserción o vulneración.",
-    "tipo_de_pregunta": "Caso situacional de permanencia escolar",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Estigmatizar al estudiante ausente",
-        "revision": "La clave exige indagación y apoyo."
-      },
-      {
-        "riesgo": "Culpar a la familia sin conocer el contexto",
-        "revision": "El ítem pide contacto y análisis de barreras."
-      },
-      {
-        "riesgo": "Normalizar el abandono escolar",
-        "revision": "La opción correcta activa seguimiento institucional."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque posterga la acción hasta cuando el daño puede haberse consolidado.",
+    "C": "Es incorrecta porque excluye sin valorar causas ni activar apoyos.",
+    "D": "Es incorrecta porque la inasistencia prolongada puede afectar el derecho a la educación."
   },
-  "item": {
-    "enunciado": "Una estudiante empieza a faltar de manera reiterada. La institución sospecha que puede haber dificultades económicas, cuidado de hermanos menores o una situación familiar compleja. Algunos proponen esperar hasta final de periodo para sancionarla por fallas.\n\n¿Cuál actuación es más adecuada?",
-    "opciones": {
-      "A": "Activar una alerta temprana, contactar a la familia o acudiente, indagar barreras, articular apoyo institucional y hacer seguimiento a la permanencia.",
-      "B": "Esperar al final del año y registrar únicamente la pérdida por inasistencia.",
-      "C": "Expulsarla por ausentismo sin indagar las causas.",
-      "D": "Ignorar el caso porque las ausencias no tienen relación con derechos educativos."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Caso con lenguaje técnico de uso educativo y sin referencias discriminatorias."
   },
-  "ficha_tecnica": {
-    "componente": "Ausentismo como alerta temprana",
-    "competencia": "Gestión preventiva de permanencia escolar",
-    "claim_evaluado": "El evaluado comprende que la permanencia escolar se protege mediante acciones tempranas, articuladas y no estigmatizantes.",
-    "evidencia": "Elige una actuación de alerta temprana ante ausencias prolongadas.",
-    "proceso_cognitivo": "Juicio pedagógico-institucional aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Actúa tarde y reduce el caso a un registro académico.",
-      "C": "Aplica una respuesta excluyente sin indagación ni apoyo.",
-      "D": "Desconoce que la permanencia escolar hace parte del derecho a la educación."
-    },
-    "fuente_autorizada": [
-      "Ley 115 de 1994",
-      "Ley 1098 de 2006",
-      "Permanencia escolar",
-      "Corresponsabilidad educativa"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Estructura clara, una sola tarea cognitiva y opciones comparables."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque posterga la acción hasta cuando el daño puede haberse consolidado.",
-    "opcion_C": "Es incorrecta porque excluye sin valorar causas ni activar apoyos.",
-    "opcion_D": "Es incorrecta porque la inasistencia prolongada puede afectar el derecho a la educación.",
-    "distractores": {
-      "B": "Es incorrecta porque posterga la acción hasta cuando el daño puede haberse consolidado.",
-      "C": "Es incorrecta porque excluye sin valorar causas ni activar apoyos.",
-      "D": "Es incorrecta porque la inasistencia prolongada puede afectar el derecho a la educación."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem evita respuestas estigmatizantes y promueve acompañamiento institucional oportuno."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión de protocolo local de permanencia escolar.",
-    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 3 preguntas sobre corresponsabilidad educativa, ausentismo y posición de garante."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Corresponsabilidad educativa, ausentismo y posición de garante/NFL_B05_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

@@ -1,108 +1,45 @@
 {
   "id_item": "EFCC_B05_I01",
-  "archivo_sugerido": "EFCC_B05_I01_diagnostico_pedagogico_integral.json",
-  "bloque": {
-    "codigo_bloque": "EFCC_B05",
-    "nombre": "Diagnóstico pedagógico integral",
-    "estado_en_lista": "Bloque 5 de 5",
-    "decision_del_bloque": "Pregunta única",
-    "item_en_grupo": "Ítem 1 de 1"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Evaluación para el aprendizaje",
+  "tema": "Diagnóstico pedagógico integral",
+  "subtema": "Evaluación por Competencias y Praxis Pedagógica",
+  "competencia": "Integra información diagnóstica académica y contextual para planificar apoyos y ajustes pedagógicos.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce la alternativa pedagógica o institucional más adecuada según el criterio técnico evaluado en el caso.",
+  "evidencia": "Selecciona una única opción defendible frente a distractores plausibles en función del constructo.",
+  "tarea": "Analizar el caso y elegir la decisión más pertinente conforme al enfoque del ítem.",
+  "contexto": "Al iniciar el año escolar, un docente aplica una prueba escrita de contenidos del grado anterior y considera que con ese resultado ya conoce suficientemente a su grupo. Sin embargo, durante las primeras semanas observa diferencias en habilidades comunicativas, ritmos de aprendizaje, motivación, participación, estado emocional y condiciones familiares que afectan el proceso.",
+  "enunciado": "Al iniciar el año escolar, un docente aplica una prueba escrita de contenidos del grado anterior y considera que con ese resultado ya conoce suficientemente a su grupo. Sin embargo, durante las primeras semanas observa diferencias en habilidades comunicativas, ritmos de aprendizaje, motivación, participación, estado emocional y condiciones familiares que afectan el proceso.\n\n¿Por qué un verdadero diagnóstico pedagógico no debe limitarse a una prueba escrita de contenidos?",
+  "opciones": {
+    "A": "Porque el diagnóstico debe eliminar toda información académica para concentrarse únicamente en aspectos emocionales.",
+    "B": "Porque una prueba escrita siempre es inválida y nunca aporta información útil para el docente.",
+    "C": "Porque el diagnóstico debe explorar conocimientos, habilidades, ritmos, intereses, contexto y estado socioemocional para orientar la planeación y los apoyos pedagógicos.",
+    "D": "Porque el diagnóstico sirve para clasificar definitivamente a los estudiantes entre capaces y no capaces desde el inicio del año."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce que un diagnóstico pedagógico al inicio del año escolar no debe limitarse a una prueba escrita de contenidos, sino que debe explorar habilidades, condiciones socioemocionales, ritmos, intereses, contexto y necesidades de apoyo de los estudiantes.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "Reducción del diagnóstico de aula a una prueba escrita de contenidos previos.",
-      "fuente_autorizada": [
-        "Evaluación diagnóstica",
-        "Evaluación formativa",
-        "Orientaciones pedagógicas institucionales",
-        "Sistema Institucional de Evaluación de los Estudiantes",
-        "Lineamientos curriculares del Ministerio de Educación Nacional"
-      ],
-      "componente_modulo": "Evaluación por Competencias y Praxis Pedagógica",
-      "competencia": "Diagnóstico de aula",
-      "afirmacion": "El diagnóstico pedagógico debe explorar integralmente conocimientos, habilidades, condiciones socioemocionales, ritmos y necesidades de apoyo.",
-      "evidencia_observable": "Reconoce que el diagnóstico inicial debe generar información para orientar la planeación, la mediación pedagógica, los apoyos y la evaluación formativa.",
-      "tipo_de_evidencia": "Juicio pedagógico aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende que el diagnóstico pedagógico integral permite conocer al grupo más allá de los contenidos previos, para tomar decisiones didácticas, curriculares y de acompañamiento acordes con las características reales de los estudiantes.",
-    "evidencia_observable": "Selecciona una interpretación del diagnóstico como proceso integral que explora conocimientos, habilidades, estado socioemocional, intereses, ritmos y contexto.",
-    "tarea_cognitiva": "Analizar el propósito de un diagnóstico inicial y diferenciarlo de una medición cognitiva limitada.",
-    "tipo_de_pregunta": "Caso situacional de juicio pedagógico",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Sesgo por condiciones socioemocionales o familiares",
-        "revision": "El ítem evita usar el diagnóstico para etiquetar estudiantes; lo orienta a identificar apoyos y mejorar la planeación."
-      },
-      {
-        "riesgo": "Confusión entre diagnóstico y clasificación",
-        "revision": "La clave diferencia el diagnóstico formativo de una clasificación rígida de estudiantes por rendimiento."
-      },
-      {
-        "riesgo": "Sesgo por desempeño inicial",
-        "revision": "La pregunta no premia ni castiga niveles previos; evalúa cómo usar la información inicial para orientar la enseñanza."
-      },
-      {
-        "riesgo": "Ambigüedad entre prueba escrita y diagnóstico integral",
-        "revision": "La opción correcta es la única que incluye dimensiones cognitivas, habilidades, contexto, estado socioemocional y necesidades de apoyo."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque el diagnóstico no debe excluir lo académico; debe integrarlo con otras dimensiones del estudiante.",
+    "B": "Es incorrecta porque una prueba escrita puede aportar información útil, pero no agota el diagnóstico pedagógico.",
+    "C": "Clave correcta.",
+    "D": "Es incorrecta porque el diagnóstico no debe usarse para etiquetar o clasificar definitivamente a los estudiantes, sino para orientar apoyos y decisiones pedagógicas."
   },
-  "item": {
-    "enunciado": "Al iniciar el año escolar, un docente aplica una prueba escrita de contenidos del grado anterior y considera que con ese resultado ya conoce suficientemente a su grupo. Sin embargo, durante las primeras semanas observa diferencias en habilidades comunicativas, ritmos de aprendizaje, motivación, participación, estado emocional y condiciones familiares que afectan el proceso.\n\n¿Por qué un verdadero diagnóstico pedagógico no debe limitarse a una prueba escrita de contenidos?",
-    "opciones": {
-      "A": "Porque el diagnóstico debe eliminar toda información académica para concentrarse únicamente en aspectos emocionales.",
-      "B": "Porque una prueba escrita siempre es inválida y nunca aporta información útil para el docente.",
-      "C": "Porque el diagnóstico debe explorar conocimientos, habilidades, ritmos, intereses, contexto y estado socioemocional para orientar la planeación y los apoyos pedagógicos.",
-      "D": "Porque el diagnóstico sirve para clasificar definitivamente a los estudiantes entre capaces y no capaces desde el inicio del año."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo estándar y contexto institucional general sin sesgos culturales innecesarios."
   },
-  "ficha_tecnica": {
-    "componente": "Evaluación por Competencias y Praxis Pedagógica",
-    "competencia": "Diagnóstico de aula",
-    "claim_evaluado": "El evaluado comprende que el diagnóstico pedagógico integral permite conocer al grupo más allá de los contenidos previos, para tomar decisiones didácticas, curriculares y de acompañamiento acordes con las características reales de los estudiantes.",
-    "evidencia": "Selecciona una interpretación del diagnóstico como proceso integral que explora conocimientos, habilidades, estado socioemocional, intereses, ritmos y contexto.",
-    "proceso_cognitivo": "Análisis y juicio pedagógico",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Plantea una falsa oposición entre información académica y dimensión socioemocional.",
-      "B": "Descalifica de manera absoluta la prueba escrita, aunque puede aportar información parcial.",
-      "D": "Convierte el diagnóstico en clasificación rígida y excluyente."
-    },
-    "fuente_autorizada": [
-      "Evaluación diagnóstica",
-      "Evaluación formativa",
-      "Orientaciones pedagógicas institucionales",
-      "Sistema Institucional de Evaluación de los Estudiantes",
-      "Lineamientos curriculares del Ministerio de Educación Nacional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura y exigencia."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque el diagnóstico no debe excluir lo académico; debe integrarlo con otras dimensiones del estudiante.",
-    "opcion_B": "Es incorrecta porque una prueba escrita puede aportar información útil, pero no agota el diagnóstico pedagógico.",
-    "opcion_D": "Es incorrecta porque el diagnóstico no debe usarse para etiquetar o clasificar definitivamente a los estudiantes, sino para orientar apoyos y decisiones pedagógicas.",
-    "distractores": {
-      "A": "Es incorrecta porque el diagnóstico no debe excluir lo académico; debe integrarlo con otras dimensiones del estudiante.",
-      "B": "Es incorrecta porque una prueba escrita puede aportar información útil, pero no agota el diagnóstico pedagógico.",
-      "D": "Es incorrecta porque el diagnóstico no debe usarse para etiquetar o clasificar definitivamente a los estudiantes, sino para orientar apoyos y decisiones pedagógicas."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem evita clasificar a los estudiantes por su desempeño inicial o por condiciones personales y familiares. Presenta el diagnóstico como herramienta de comprensión y apoyo, no como mecanismo de exclusión."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como pregunta única del bloque Diagnóstico pedagógico integral."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Diagnóstico pedagógico integral/EFCC_B05_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

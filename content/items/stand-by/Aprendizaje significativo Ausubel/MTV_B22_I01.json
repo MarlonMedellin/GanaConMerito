@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B22_I01",
-    "tema": "Concepto de aprendizaje significativo",
-    "competencia": "Reconocimiento conceptual",
-    "dificultad": "Media",
-    "enunciado": "Una docente afirma que sus estudiantes aprendieron significativamente porque repitieron de memoria una definición. Sin embargo, al pedirles aplicar la idea a una situación cotidiana, no logran relacionarla con nada que ya saben.\n\nSegún Ausubel, ¿qué condición faltó para que el aprendizaje fuera significativo?",
-    "opciones": {
-        "A": "La repetición literal de la definición varias veces.",
-        "B": "La relación sustantiva entre la nueva información y los saberes previos del estudiante.",
-        "C": "La copia exacta del libro en el cuaderno.",
-        "D": "La aplicación de una sanción por no memorizar."
-    },
-    "respuesta_correcta": "B",
-    "justificacion_clave": "El aprendizaje significativo exige que la nueva información se conecte de manera sustantiva y no arbitraria con la estructura cognitiva previa.",
-    "distractores": {
-        "A": "La repetición puede producir memoria mecánica, no necesariamente comprensión.",
-        "C": "Copiar no garantiza integración cognitiva.",
-        "D": "El castigo no produce significado."
-    }
+  "id_item": "MTV_B22_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y didáctica",
+  "tema": "Aprendizaje significativo (Ausubel)",
+  "subtema": "Concepto de aprendizaje significativo",
+  "competencia": "Analiza situaciones de aula y aplica principios de aprendizaje significativo para valorar decisiones pedagógicas.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Distingue prácticas de enseñanza memorística de prácticas que promueven integración sustantiva con saberes previos y comprensión con sentido.",
+  "evidencia": "Selecciona la opción que mejor explica la decisión pedagógica coherente con el aprendizaje significativo en el caso planteado.",
+  "tarea": "Inferir, a partir del caso, la condición didáctica que permite aprendizaje significativo según Ausubel.",
+  "contexto": "Una docente afirma que sus estudiantes aprendieron significativamente porque repitieron de memoria una definición. Sin embargo, al pedirles aplicar la idea a una situación cotidiana, no logran relacionarla con nada que ya saben.",
+  "enunciado": "Una docente afirma que sus estudiantes aprendieron significativamente porque repitieron de memoria una definición. Sin embargo, al pedirles aplicar la idea a una situación cotidiana, no logran relacionarla con nada que ya saben.\n\nSegún Ausubel, ¿qué condición faltó para que el aprendizaje fuera significativo?",
+  "opciones": {
+    "A": "La repetición literal de la definición varias veces.",
+    "B": "La relación sustantiva entre la nueva información y los saberes previos del estudiante.",
+    "C": "La copia exacta del libro en el cuaderno.",
+    "D": "La aplicación de una sanción por no memorizar."
+  },
+  "clave": "B",
+  "justificacion_clave": "El aprendizaje significativo exige que la nueva información se conecte de manera sustantiva y no arbitraria con la estructura cognitiva previa.",
+  "distractores_funcion": {
+    "A": "La repetición puede producir memoria mecánica, no necesariamente comprensión.",
+    "B": "Clave correcta.",
+    "C": "Copiar no garantiza integración cognitiva.",
+    "D": "El castigo no produce significado."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje pedagógico estándar y contexto escolar general sin referencias culturales excluyentes."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciados directos con una sola tarea cognitiva y vocabulario de uso docente."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
 }

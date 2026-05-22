@@ -1,104 +1,45 @@
 {
   "id_item": "IDD_B04_I07",
-  "archivo_sugerido": "IDD_B04_I07_piar_no_reemplaza_dua_ni_planeacion_comun.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B04",
-    "nombre": "DUA, PIAR y ajustes razonables",
-    "estado_en_lista": "Bloque 4 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 7 de 7"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Inclusión educativa",
+  "tema": "DUA, PIAR y ajustes razonables",
+  "subtema": "DUA, PIAR y participación en aula común",
+  "competencia": "Selecciona decisiones pedagógicas inclusivas basadas en DUA, PIAR y ajustes razonables para garantizar participación y aprendizaje.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA-ALTA",
+  "claim": "Reconoce la actuación pedagógica o institucional más adecuada de acuerdo con el enfoque evaluado en el caso.",
+  "evidencia": "Selecciona una única alternativa defendible técnicamente y coherente con el constructo del ítem.",
+  "tarea": "Analizar la situación presentada y elegir la respuesta más pertinente según criterios pedagógicos y normativos aplicables.",
+  "contexto": "En una clase de ciencias, el grupo trabaja sobre ecosistemas. A un estudiante con discapacidad se le entrega una ficha completamente distinta sobre colorear figuras sin relación con el tema, con el argumento de que eso hace parte de su PIAR.",
+  "enunciado": "En una clase de ciencias, el grupo trabaja sobre ecosistemas. A un estudiante con discapacidad se le entrega una ficha completamente distinta sobre colorear figuras sin relación con el tema, con el argumento de que eso hace parte de su PIAR.\n\n¿Cuál sería una implementación más inclusiva del PIAR?",
+  "opciones": {
+    "A": "Mantener al estudiante con tareas aisladas para que no interfiera con el avance del grupo.",
+    "B": "Diseñar ajustes que le permitan participar en el mismo propósito de aprendizaje sobre ecosistemas, usando apoyos visuales, material concreto, tiempos flexibles o formas alternativas de expresión.",
+    "C": "Eliminar al estudiante de la clase de ciencias porque requiere apoyos.",
+    "D": "Aplicar la misma guía escrita sin cambios, aunque no pueda acceder a ella."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende que el PIAR no debe convertirse en un currículo paralelo segregado ni reemplazar la participación del estudiante en la clase común.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión educativa, coordinación académica, orientación escolar o apoyo pedagógico.",
-    "blueprint": {
-      "problematica_principal": "Uso del PIAR como documento para aislar al estudiante del currículo común.",
-      "fuente_autorizada": [
-        "Decreto 1421 de 2017",
-        "Educación inclusiva",
-        "PIAR",
-        "Ajustes razonables",
-        "DUA"
-      ],
-      "componente_modulo": "DUA, PIAR y participación en aula común",
-      "competencia": "Implementación inclusiva de ajustes individuales",
-      "afirmacion": "El PIAR debe facilitar participación en la clase común mediante ajustes razonables, no crear una ruta segregada sin relación con el grupo.",
-      "evidencia_observable": "Reconoce que los ajustes individualizados deben conservar vínculo con el propósito de aprendizaje y la vida del aula.",
-      "tipo_de_evidencia": "Juicio pedagógico aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado comprende que el PIAR debe orientar apoyos y ajustes para participar en el currículo y ambiente común, evitando que el estudiante sea separado pedagógicamente del grupo.",
-    "evidencia_observable": "Selecciona una implementación del PIAR que mantiene propósito común, apoyos individualizados y participación.",
-    "tarea_cognitiva": "Distinguir entre PIAR inclusivo y PIAR usado como currículo paralelo segregador.",
-    "tipo_de_pregunta": "Caso situacional de juicio pedagógico",
-    "dificultad_esperada": "Media-Alta",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Normalizar currículo paralelo segregado",
-        "revision": "La clave exige conexión con el propósito común."
-      },
-      {
-        "riesgo": "Negar ajustes individualizados",
-        "revision": "La opción correcta sostiene ajustes, pero no aislamiento."
-      },
-      {
-        "riesgo": "Confundir igualdad con hacer exactamente lo mismo",
-        "revision": "El ítem diferencia participación común con apoyos."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque usa el PIAR como justificación para aislar.",
+    "B": "Clave correcta.",
+    "C": "Es incorrecta porque excluye al estudiante de la experiencia curricular.",
+    "D": "Es incorrecta porque ignora barreras de acceso."
   },
-  "item": {
-    "enunciado": "En una clase de ciencias, el grupo trabaja sobre ecosistemas. A un estudiante con discapacidad se le entrega una ficha completamente distinta sobre colorear figuras sin relación con el tema, con el argumento de que eso hace parte de su PIAR.\n\n¿Cuál sería una implementación más inclusiva del PIAR?",
-    "opciones": {
-      "A": "Mantener al estudiante con tareas aisladas para que no interfiera con el avance del grupo.",
-      "B": "Diseñar ajustes que le permitan participar en el mismo propósito de aprendizaje sobre ecosistemas, usando apoyos visuales, material concreto, tiempos flexibles o formas alternativas de expresión.",
-      "C": "Eliminar al estudiante de la clase de ciencias porque requiere apoyos.",
-      "D": "Aplicar la misma guía escrita sin cambios, aunque no pueda acceder a ella."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo y normativo estándar, sin referencias discriminatorias ni barreras culturales innecesarias."
   },
-  "ficha_tecnica": {
-    "componente": "DUA, PIAR y participación en aula común",
-    "competencia": "Implementación inclusiva de ajustes individuales",
-    "claim_evaluado": "El evaluado comprende que el PIAR debe orientar apoyos y ajustes para participar en el currículo y ambiente común, evitando que el estudiante sea separado pedagógicamente del grupo.",
-    "evidencia": "Selecciona una implementación del PIAR que mantiene propósito común, apoyos individualizados y participación.",
-    "proceso_cognitivo": "Análisis y juicio pedagógico aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media-Alta",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Normaliza la segregación pedagógica.",
-      "C": "Propone exclusión del área.",
-      "D": "Confunde igualdad con ausencia de ajustes."
-    },
-    "fuente_autorizada": [
-      "Decreto 1421 de 2017",
-      "Educación inclusiva",
-      "PIAR",
-      "Ajustes razonables",
-      "DUA"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciados con tarea única y opciones comparables en estructura y longitud."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque usa el PIAR como justificación para aislar.",
-    "opcion_C": "Es incorrecta porque excluye al estudiante de la experiencia curricular.",
-    "opcion_D": "Es incorrecta porque ignora barreras de acceso.",
-    "distractores": {
-      "A": "Es incorrecta porque usa el PIAR como justificación para aislar.",
-      "C": "Es incorrecta porque excluye al estudiante de la experiencia curricular.",
-      "D": "Es incorrecta porque ignora barreras de acceso."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem protege la participación del estudiante y evita tanto la segregación como la homogeneidad que desconoce barreras."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 7 de un grupo de 7 preguntas sobre DUA, PIAR y ajustes razonables."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/DUA, PIAR y ajustes razonables/IDD_B04_I07.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

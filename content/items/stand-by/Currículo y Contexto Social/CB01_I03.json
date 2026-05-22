@@ -1,99 +1,45 @@
 {
   "id_item": "CB01_I03",
-  "bloque": {
-    "numero": 1,
-    "nombre": "Currículo y Contexto Social",
-    "estado_en_lista": "Bloque 1 de 15",
-    "decision_del_bloque": "Grupo de 3 preguntas",
-    "item_en_grupo": "Ítem 3 de 3"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Currículo y contexto",
+  "tema": "Currículo y Contexto Social",
+  "subtema": "Gestión Directiva",
+  "competencia": "Analiza la pertinencia curricular frente a características y necesidades del contexto social.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la alternativa más adecuada según el criterio curricular y pedagógico evaluado en el caso.",
+  "evidencia": "Selecciona una única respuesta técnicamente defendible frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión curricular, didáctica o institucional.",
+  "contexto": "Durante la actualización del PEI, algunos docentes proponen copiar la estructura curricular de una institución reconocida por sus buenos resultados. Otros plantean revisar primero las características, necesidades y expectativas de la comunidad educativa propia.",
+  "enunciado": "Durante la actualización del PEI, algunos docentes proponen copiar la estructura curricular de una institución reconocida por sus buenos resultados. Otros plantean revisar primero las características, necesidades y expectativas de la comunidad educativa propia.\n\n¿Cuál postura expresa mejor una comprensión contextual del diseño pedagógico?",
+  "opciones": {
+    "A": "Adoptar el modelo externo sin cambios, porque sus buenos resultados garantizan que funcionará en cualquier institución.",
+    "B": "Revisar el modelo externo como referente, pero contrastarlo con el diagnóstico institucional y las necesidades de la comunidad.",
+    "C": "Descartar cualquier referente externo, porque cada institución debe construir su currículo sin consultar otras experiencias.",
+    "D": "Solicitar que la secretaría de educación defina todos los ajustes para evitar desacuerdos internos."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce que los referentes externos pueden orientar el diseño pedagógico, pero deben analizarse a la luz del contexto institucional.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "Rol político del docente/directivo en diseño pedagógico",
-      "fuente_autorizada": [
-        "Constitución Política de Colombia",
-        "Ley 115 de 1994",
-        "Orientaciones MEN sobre Proyecto Educativo Institucional"
-      ],
-      "componente_modulo": "Gestión Directiva",
-      "competencia": "Liderazgo contextual",
-      "afirmacion": "La propuesta pedagógica responde al contexto social.",
-      "evidencia_observable": "Distingue entre una decisión curricular estandarizada y una decisión pedagógica construida con participación y lectura del entorno.",
-      "tipo_de_evidencia": "Interpretación de situación institucional",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado identifica que el diseño pedagógico institucional exige participación, lectura del contexto y responsabilidad frente al derecho a la educación.",
-    "evidencia_observable": "Selecciona una postura que usa referentes externos como insumo, sin copiarlos de manera acrítica.",
-    "tarea_cognitiva": "Valorar alternativas de intervención frente a una tensión entre estandarización y pertinencia.",
-    "tipo_de_pregunta": "Caso situacional de juicio profesional",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Sesgo por prestigio institucional",
-        "revision": "El ítem evita asumir que una institución reconocida es automáticamente superior o replicable."
-      },
-      {
-        "riesgo": "Sesgo territorial",
-        "revision": "La situación puede aplicarse a distintos contextos institucionales."
-      },
-      {
-        "riesgo": "Ambigüedad en la clave",
-        "revision": "La opción correcta es la única que equilibra aprendizaje de referentes externos y diagnóstico propio."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque confunde éxito externo con pertinencia automática.",
+    "B": "Clave correcta.",
+    "C": "Es incorrecta porque aísla a la institución de experiencias que pueden aportar a la mejora.",
+    "D": "Es incorrecta porque sustituye la responsabilidad pedagógica de la comunidad educativa."
   },
-  "item": {
-    "enunciado": "Durante la actualización del PEI, algunos docentes proponen copiar la estructura curricular de una institución reconocida por sus buenos resultados. Otros plantean revisar primero las características, necesidades y expectativas de la comunidad educativa propia.\n\n¿Cuál postura expresa mejor una comprensión contextual del diseño pedagógico?",
-    "opciones": {
-      "A": "Adoptar el modelo externo sin cambios, porque sus buenos resultados garantizan que funcionará en cualquier institución.",
-      "B": "Revisar el modelo externo como referente, pero contrastarlo con el diagnóstico institucional y las necesidades de la comunidad.",
-      "C": "Descartar cualquier referente externo, porque cada institución debe construir su currículo sin consultar otras experiencias.",
-      "D": "Solicitar que la secretaría de educación defina todos los ajustes para evitar desacuerdos internos."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo estandarizado y contexto institucional general, sin sesgos culturales innecesarios."
   },
-  "ficha_tecnica": {
-    "componente": "Gestión Directiva",
-    "competencia": "Liderazgo contextual",
-    "claim_evaluado": "El evaluado identifica que el diseño pedagógico institucional exige participación, lectura del contexto y responsabilidad frente al derecho a la educación.",
-    "evidencia": "Selecciona una postura que usa referentes externos como insumo, sin copiarlos de manera acrítica.",
-    "proceso_cognitivo": "Análisis y juicio profesional",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Asume que una experiencia exitosa es transferible sin considerar contexto.",
-      "C": "Niega el valor de los referentes externos como insumo de mejoramiento.",
-      "D": "Traslada la responsabilidad pedagógica y debilita la deliberación institucional."
-    },
-    "fuente_autorizada": [
-      "Constitución Política de Colombia",
-      "Ley 115 de 1994",
-      "Orientaciones MEN sobre PEI"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado claro, tarea única y opciones homogéneas en estructura."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque confunde éxito externo con pertinencia automática.",
-    "opcion_C": "Es incorrecta porque aísla a la institución de experiencias que pueden aportar a la mejora.",
-    "opcion_D": "Es incorrecta porque sustituye la responsabilidad pedagógica de la comunidad educativa.",
-    "distractores": {
-      "A": "Es incorrecta porque confunde éxito externo con pertinencia automática.",
-      "C": "Es incorrecta porque aísla a la institución de experiencias que pueden aportar a la mejora.",
-      "D": "Es incorrecta porque sustituye la responsabilidad pedagógica de la comunidad educativa."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "No favorece a quienes conocen una institución específica ni exige experiencia previa con procesos formales de acreditación. Evalúa juicio contextual."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 3 preguntas sobre currículo, PEI y contexto social."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Currículo y Contexto Social/CB01_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

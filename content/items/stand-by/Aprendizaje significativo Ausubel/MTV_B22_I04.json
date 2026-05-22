@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B22_I04",
-    "tema": "Organizadores previos",
-    "competencia": "Diseño de mediaciones cognitivas",
-    "dificultad": "Alta",
-    "enunciado": "Antes de iniciar una unidad compleja sobre ecosistemas, una docente presenta un mapa general con conceptos clave como energía, productores, consumidores, descomponedores y equilibrio. Luego desarrolla cada tema en profundidad.\n\n¿Qué recurso está usando para favorecer aprendizaje significativo?",
-    "opciones": {
-        "A": "Un organizador previo.",
-        "B": "Una sanción correctiva.",
-        "C": "Una evaluación finalista.",
-        "D": "Una tarea sin propósito."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "El organizador previo ofrece una estructura inicial para que el estudiante relacione los nuevos contenidos con un marco comprensible.",
-    "distractores": {
-        "B": "No se trata de disciplina.",
-        "C": "No se está calificando al final.",
-        "D": "La actividad tiene finalidad cognitiva clara."
-    }
+  "id_item": "MTV_B22_I04",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y didáctica",
+  "tema": "Aprendizaje significativo (Ausubel)",
+  "subtema": "Organizadores previos",
+  "competencia": "Analiza situaciones de aula y aplica principios de aprendizaje significativo para valorar decisiones pedagógicas.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "ALTA",
+  "claim": "Distingue prácticas de enseñanza memorística de prácticas que promueven integración sustantiva con saberes previos y comprensión con sentido.",
+  "evidencia": "Selecciona la opción que mejor explica la decisión pedagógica coherente con el aprendizaje significativo en el caso planteado.",
+  "tarea": "Inferir, a partir del caso, la condición didáctica que permite aprendizaje significativo según Ausubel.",
+  "contexto": "Antes de iniciar una unidad compleja sobre ecosistemas, una docente presenta un mapa general con conceptos clave como energía, productores, consumidores, descomponedores y equilibrio. Luego desarrolla cada tema en profundidad.",
+  "enunciado": "Antes de iniciar una unidad compleja sobre ecosistemas, una docente presenta un mapa general con conceptos clave como energía, productores, consumidores, descomponedores y equilibrio. Luego desarrolla cada tema en profundidad.\n\n¿Qué recurso está usando para favorecer aprendizaje significativo?",
+  "opciones": {
+    "A": "Un organizador previo.",
+    "B": "Una sanción correctiva.",
+    "C": "Una evaluación finalista.",
+    "D": "Una tarea sin propósito."
+  },
+  "clave": "A",
+  "justificacion_clave": "El organizador previo ofrece una estructura inicial para que el estudiante relacione los nuevos contenidos con un marco comprensible.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "No se trata de disciplina.",
+    "C": "No se está calificando al final.",
+    "D": "La actividad tiene finalidad cognitiva clara."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje pedagógico estándar y contexto escolar general sin referencias culturales excluyentes."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciados directos con una sola tarea cognitiva y vocabulario de uso docente."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I04.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
 }

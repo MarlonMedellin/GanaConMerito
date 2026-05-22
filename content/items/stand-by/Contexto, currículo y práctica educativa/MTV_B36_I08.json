@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B36_I08",
-    "tema": "Relación escuela-comunidad",
-    "competencia": "Gestión comunitaria",
-    "dificultad": "Media",
-    "enunciado": "Una institución busca fortalecer su acción social con la comunidad circundante. Para ello convoca familias, organizaciones barriales, líderes comunitarios y estudiantes para identificar necesidades y proyectos comunes.\n\n¿Qué competencia institucional fortalece?",
-    "opciones": {
-        "A": "Relaciones con el entorno y gestión comunitaria.",
-        "B": "Aislamiento institucional.",
-        "C": "Desconexión del PEI.",
-        "D": "Evaluación punitiva."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "La escuela fortalece vínculos con actores del entorno para desarrollar acciones pertinentes.",
-    "distractores": {
-        "B": "La convocatoria evita aislamiento.",
-        "C": "Puede articularse al PEI.",
-        "D": "No se trata de sanción."
-    }
+  "id_item": "MTV_B36_I08",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión curricular y práctica pedagógica",
+  "tema": "Contexto, currículo y práctica educativa",
+  "subtema": "Relación escuela-comunidad",
+  "competencia": "Analiza decisiones curriculares y didácticas a partir del contexto institucional y del propósito formativo.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada en el caso planteado.",
+  "evidencia": "Selecciona una alternativa única, consistente con el criterio evaluado y superior frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión según el enfoque del ítem.",
+  "contexto": "Una institución busca fortalecer su acción social con la comunidad circundante. Para ello convoca familias, organizaciones barriales, líderes comunitarios y estudiantes para identificar necesidades y proyectos comunes.",
+  "enunciado": "Una institución busca fortalecer su acción social con la comunidad circundante. Para ello convoca familias, organizaciones barriales, líderes comunitarios y estudiantes para identificar necesidades y proyectos comunes.\n\n¿Qué competencia institucional fortalece?",
+  "opciones": {
+    "A": "Relaciones con el entorno y gestión comunitaria.",
+    "B": "Aislamiento institucional.",
+    "C": "Desconexión del PEI.",
+    "D": "Evaluación punitiva."
+  },
+  "clave": "A",
+  "justificacion_clave": "La escuela fortalece vínculos con actores del entorno para desarrollar acciones pertinentes.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "La convocatoria evita aislamiento.",
+    "C": "Puede articularse al PEI.",
+    "D": "No se trata de sanción."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Caso con lenguaje técnico de uso educativo y sin referencias discriminatorias."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Estructura clara, una sola tarea cognitiva y opciones comparables."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Contexto, currículo y práctica educativa/MTV_B36_I08.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
 }

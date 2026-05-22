@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B36_I04",
-    "tema": "Diversidad lingüística",
-    "competencia": "Pertinencia cultural y lingüística",
-    "dificultad": "Alta",
-    "enunciado": "En un aula hay estudiantes pertenecientes a un grupo indígena con lengua propia. El docente de lenguaje decide reconocer su tradición lingüística y diseñar actividades que valoren esa identidad, sin impedir el aprendizaje del español académico.\n\n¿Qué principio aplica?",
-    "opciones": {
-        "A": "Pertinencia cultural y respeto por la diversidad lingüística.",
-        "B": "Castigo por hablar otra lengua.",
-        "C": "Negación de la identidad étnica.",
-        "D": "Uniformidad lingüística obligatoria."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "El docente protege la identidad lingüística y articula el aprendizaje escolar sin excluir la lengua propia.",
-    "distractores": {
-        "B": "Sería vulnerador de derechos.",
-        "C": "El caso reconoce la identidad.",
-        "D": "La uniformidad desconoce diversidad."
-    }
+  "id_item": "MTV_B36_I04",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión curricular y práctica pedagógica",
+  "tema": "Contexto, currículo y práctica educativa",
+  "subtema": "Diversidad lingüística",
+  "competencia": "Analiza decisiones curriculares y didácticas a partir del contexto institucional y del propósito formativo.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "ALTA",
+  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada en el caso planteado.",
+  "evidencia": "Selecciona una alternativa única, consistente con el criterio evaluado y superior frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión según el enfoque del ítem.",
+  "contexto": "En un aula hay estudiantes pertenecientes a un grupo indígena con lengua propia. El docente de lenguaje decide reconocer su tradición lingüística y diseñar actividades que valoren esa identidad, sin impedir el aprendizaje del español académico.",
+  "enunciado": "En un aula hay estudiantes pertenecientes a un grupo indígena con lengua propia. El docente de lenguaje decide reconocer su tradición lingüística y diseñar actividades que valoren esa identidad, sin impedir el aprendizaje del español académico.\n\n¿Qué principio aplica?",
+  "opciones": {
+    "A": "Pertinencia cultural y respeto por la diversidad lingüística.",
+    "B": "Castigo por hablar otra lengua.",
+    "C": "Negación de la identidad étnica.",
+    "D": "Uniformidad lingüística obligatoria."
+  },
+  "clave": "A",
+  "justificacion_clave": "El docente protege la identidad lingüística y articula el aprendizaje escolar sin excluir la lengua propia.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Sería vulnerador de derechos.",
+    "C": "El caso reconoce la identidad.",
+    "D": "La uniformidad desconoce diversidad."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Caso con lenguaje técnico de uso educativo y sin referencias discriminatorias."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Estructura clara, una sola tarea cognitiva y opciones comparables."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Contexto, currículo y práctica educativa/MTV_B36_I04.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
 }

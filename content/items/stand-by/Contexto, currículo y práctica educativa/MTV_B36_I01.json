@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B36_I01",
-    "tema": "Apropiación del contexto",
-    "competencia": "Diagnóstico contextual",
-    "dificultad": "Media",
-    "enunciado": "Un docente llega a una institución y antes de planear observa la economía del sector, las dinámicas familiares, las prácticas culturales, las necesidades del barrio y los intereses de sus estudiantes.\n\n¿Qué criterio de práctica educativa evidencia?",
-    "opciones": {
-        "A": "Apropiación de las especificidades sociales, económicas y culturales del contexto.",
-        "B": "Desconexión curricular.",
-        "C": "Planeación homogénea sin diagnóstico.",
-        "D": "Rechazo al entorno."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "El docente reconoce condiciones reales del contexto antes de diseñar su propuesta.",
-    "distractores": {
-        "B": "La práctica conecta con el contexto.",
-        "C": "Hay diagnóstico previo.",
-        "D": "No rechaza el entorno; lo estudia."
-    }
+  "id_item": "MTV_B36_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión curricular y práctica pedagógica",
+  "tema": "Contexto, currículo y práctica educativa",
+  "subtema": "Apropiación del contexto",
+  "competencia": "Analiza decisiones curriculares y didácticas a partir del contexto institucional y del propósito formativo.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada en el caso planteado.",
+  "evidencia": "Selecciona una alternativa única, consistente con el criterio evaluado y superior frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión según el enfoque del ítem.",
+  "contexto": "Un docente llega a una institución y antes de planear observa la economía del sector, las dinámicas familiares, las prácticas culturales, las necesidades del barrio y los intereses de sus estudiantes.",
+  "enunciado": "Un docente llega a una institución y antes de planear observa la economía del sector, las dinámicas familiares, las prácticas culturales, las necesidades del barrio y los intereses de sus estudiantes.\n\n¿Qué criterio de práctica educativa evidencia?",
+  "opciones": {
+    "A": "Apropiación de las especificidades sociales, económicas y culturales del contexto.",
+    "B": "Desconexión curricular.",
+    "C": "Planeación homogénea sin diagnóstico.",
+    "D": "Rechazo al entorno."
+  },
+  "clave": "A",
+  "justificacion_clave": "El docente reconoce condiciones reales del contexto antes de diseñar su propuesta.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "La práctica conecta con el contexto.",
+    "C": "Hay diagnóstico previo.",
+    "D": "No rechaza el entorno; lo estudia."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Caso con lenguaje técnico de uso educativo y sin referencias discriminatorias."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Estructura clara, una sola tarea cognitiva y opciones comparables."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Contexto, currículo y práctica educativa/MTV_B36_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
 }

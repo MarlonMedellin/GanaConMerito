@@ -1,104 +1,45 @@
 {
   "id_item": "IDD_B15_I02",
-  "archivo_sugerido": "IDD_B15_I02_curriculo_oficial_vs_curriculo_oculto.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B15",
-    "nombre": "Currículo oficial, oculto, nulo, PEI y DUR 1075",
-    "estado_en_lista": "Bloque 15 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 2 de 6"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión curricular y normativa educativa",
+  "tema": "Currículo oficial, oculto, nulo, PEI y DUR 1075",
+  "subtema": "Currículo oficial vs. currículo oculto",
+  "competencia": "Distingue tipos de currículo y su articulación con PEI y marco normativo para valorar decisiones institucionales.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la alternativa más adecuada según el criterio curricular y pedagógico evaluado en el caso.",
+  "evidencia": "Selecciona una única respuesta técnicamente defendible frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión curricular, didáctica o institucional.",
+  "contexto": "Una institución organiza su currículo con base en normas, DBA, planes de área y orientaciones oficiales. Sin embargo, en el aula también se enseñan valores, formas de convivencia y respuestas a problemas emocionales o familiares que no siempre aparecen escritos en el plan de estudios.",
+  "enunciado": "Una institución organiza su currículo con base en normas, DBA, planes de área y orientaciones oficiales. Sin embargo, en el aula también se enseñan valores, formas de convivencia y respuestas a problemas emocionales o familiares que no siempre aparecen escritos en el plan de estudios.\n\n¿Cuál diferencia describe mejor el currículo oficial y el currículo oculto?",
+  "opciones": {
+    "A": "El currículo oficial corresponde a referentes, normas, planes y programas formalmente establecidos; el currículo oculto corresponde a aprendizajes, valores y prácticas no escritas que se transmiten en la vida cotidiana escolar.",
+    "B": "El currículo oficial es todo lo que se improvisa en clase y el oculto es únicamente el listado de DBA.",
+    "C": "El currículo oculto no existe porque la escuela solo enseña lo que aparece en los documentos.",
+    "D": "El currículo oficial se refiere solo a sanciones disciplinarias y el oculto solo a horarios."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante diferencia currículo oficial y currículo oculto en la práctica escolar.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, currículo, coordinación académica o gestión pedagógica.",
-    "blueprint": {
-      "problematica_principal": "Confusión entre currículo formalmente prescrito y aprendizajes o respuestas pedagógicas no escritas que ocurren en la vida cotidiana del aula.",
-      "fuente_autorizada": [
-        "Ley 115 de 1994",
-        "Decreto 1075 de 2015",
-        "Derechos Básicos de Aprendizaje",
-        "Teoría curricular",
-        "Proyecto Educativo Institucional"
-      ],
-      "componente_modulo": "Currículo oficial vs. currículo oculto",
-      "competencia": "Comprensión de tipos de currículo",
-      "afirmacion": "El currículo oficial está constituido por normas, referentes y planes formales; el currículo oculto se expresa en prácticas, valores, respuestas y aprendizajes no escritos.",
-      "evidencia_observable": "Distingue entre referentes formales y aprendizajes implícitos o respuestas pedagógicas emergentes.",
-      "tipo_de_evidencia": "Comprensión curricular aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que la escuela enseña tanto mediante documentos oficiales como mediante prácticas, relaciones, normas implícitas y respuestas cotidianas.",
-    "evidencia_observable": "Selecciona una comparación adecuada entre currículo oficial y currículo oculto.",
-    "tarea_cognitiva": "Diferenciar tipos de currículo en un caso institucional.",
-    "tipo_de_pregunta": "Pregunta conceptual comparativa",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Presentar el currículo oculto como necesariamente negativo",
-        "revision": "La clave lo describe como dimensión no escrita que puede tener efectos formativos positivos o negativos."
-      },
-      {
-        "riesgo": "Reducir currículo oficial a libro de texto",
-        "revision": "La opción correcta incluye normas, referentes, planes y programas."
-      },
-      {
-        "riesgo": "Confundir respuesta pedagógica contextual con improvisación",
-        "revision": "El ítem reconoce respuestas emergentes con intencionalidad formativa."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque confunde los conceptos.",
+    "C": "Es incorrecta porque la escuela también educa mediante prácticas no escritas.",
+    "D": "Es incorrecta porque reduce el currículo a elementos administrativos."
   },
-  "item": {
-    "enunciado": "Una institución organiza su currículo con base en normas, DBA, planes de área y orientaciones oficiales. Sin embargo, en el aula también se enseñan valores, formas de convivencia y respuestas a problemas emocionales o familiares que no siempre aparecen escritos en el plan de estudios.\n\n¿Cuál diferencia describe mejor el currículo oficial y el currículo oculto?",
-    "opciones": {
-      "A": "El currículo oficial corresponde a referentes, normas, planes y programas formalmente establecidos; el currículo oculto corresponde a aprendizajes, valores y prácticas no escritas que se transmiten en la vida cotidiana escolar.",
-      "B": "El currículo oficial es todo lo que se improvisa en clase y el oculto es únicamente el listado de DBA.",
-      "C": "El currículo oculto no existe porque la escuela solo enseña lo que aparece en los documentos.",
-      "D": "El currículo oficial se refiere solo a sanciones disciplinarias y el oculto solo a horarios."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo estandarizado y contexto institucional general, sin sesgos culturales innecesarios."
   },
-  "ficha_tecnica": {
-    "componente": "Currículo oficial vs. currículo oculto",
-    "competencia": "Comprensión de tipos de currículo",
-    "claim_evaluado": "El evaluado comprende que la escuela enseña tanto mediante documentos oficiales como mediante prácticas, relaciones, normas implícitas y respuestas cotidianas.",
-    "evidencia": "Selecciona una comparación adecuada entre currículo oficial y currículo oculto.",
-    "proceso_cognitivo": "Comprensión conceptual comparativa",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Invierte y distorsiona los conceptos.",
-      "C": "Niega la existencia de aprendizajes implícitos.",
-      "D": "Reduce indebidamente ambos conceptos a aspectos administrativos."
-    },
-    "fuente_autorizada": [
-      "Ley 115 de 1994",
-      "Decreto 1075 de 2015",
-      "Derechos Básicos de Aprendizaje",
-      "Teoría curricular",
-      "Proyecto Educativo Institucional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado claro, tarea única y opciones homogéneas en estructura."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque confunde los conceptos.",
-    "opcion_C": "Es incorrecta porque la escuela también educa mediante prácticas no escritas.",
-    "opcion_D": "Es incorrecta porque reduce el currículo a elementos administrativos.",
-    "distractores": {
-      "B": "Es incorrecta porque confunde los conceptos.",
-      "C": "Es incorrecta porque la escuela también educa mediante prácticas no escritas.",
-      "D": "Es incorrecta porque reduce el currículo a elementos administrativos."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no juzga de manera simplista el currículo oculto; permite comprenderlo como una dimensión real de la cultura escolar."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 6 preguntas sobre currículo oficial, oculto, nulo, PEI y DUR 1075."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Currículo oficial, oculto, nulo, PEI y DUR 1075/IDD_B15_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

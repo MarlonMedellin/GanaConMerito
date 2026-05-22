@@ -1,40 +1,45 @@
 {
   "id_item": "EIP_B03_I02",
-  "archivo_sugerido": "EIP_B03_I02_dimension_sicomotriz_preescolar.json",
-  "proposito_de_uso": "Evaluar si el aspirante comprende la dimensión sicomotriz como parte esencial del desarrollo integral en preescolar.",
-  "blueprint": {
-    "componente_modulo": "Dimensión sicomotriz",
-    "competencia": "Comprensión pedagógica del desarrollo corporal y motor",
-    "afirmacion": "La dimensión sicomotriz favorece movimiento, coordinación, control corporal, motricidad y relación del niño con el espacio.",
-    "evidencia_observable": "Reconoce actividades motrices, lúdicas y corporales como experiencias pedagógicas necesarias.",
-    "tipo_de_evidencia": "Juicio pedagógico aplicado",
-    "dificultad_esperada": "Media",
-    "clave": "C"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Educación inicial y preescolar",
+  "tema": "Desarrollo integral en preescolar - cinco dimensiones",
+  "subtema": "Dimensión sicomotriz",
+  "competencia": "Analiza prácticas pedagógicas que promueven el desarrollo integral en las dimensiones corporal, cognitiva, comunicativa, ética y estética.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce la actuación pedagógica o institucional más adecuada de acuerdo con el enfoque evaluado en el caso.",
+  "evidencia": "Selecciona una única alternativa defendible técnicamente y coherente con el constructo del ítem.",
+  "tarea": "Analizar la situación presentada y elegir la respuesta más pertinente según criterios pedagógicos y normativos aplicables.",
+  "contexto": "En transición, una docente considera que las actividades de movimiento, equilibrio, coordinación, juego corporal y desplazamiento son pérdida de tiempo porque todavía no son lectura ni escritura.",
+  "enunciado": "En transición, una docente considera que las actividades de movimiento, equilibrio, coordinación, juego corporal y desplazamiento son pérdida de tiempo porque todavía no son lectura ni escritura.\n\n¿Qué dimensión del desarrollo integral estaría desconociendo principalmente?",
+  "opciones": {
+    "A": "La dimensión financiera.",
+    "B": "La dimensión administrativa.",
+    "C": "La dimensión sicomotriz.",
+    "D": "La dimensión sancionatoria."
   },
-  "item": {
-    "enunciado": "En transición, una docente considera que las actividades de movimiento, equilibrio, coordinación, juego corporal y desplazamiento son pérdida de tiempo porque todavía no son lectura ni escritura.\n\n¿Qué dimensión del desarrollo integral estaría desconociendo principalmente?",
-    "opciones": {
-      "A": "La dimensión financiera.",
-      "B": "La dimensión administrativa.",
-      "C": "La dimensión sicomotriz.",
-      "D": "La dimensión sancionatoria."
-    },
-    "respuesta_correcta": "C"
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "No corresponde al desarrollo infantil definido para preescolar.",
+    "B": "No es una dimensión del desarrollo integral del niño.",
+    "C": "Clave correcta.",
+    "D": "No existe como dimensión pedagógica del preescolar."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "distractores": {
-      "A": "No corresponde al desarrollo infantil definido para preescolar.",
-      "B": "No es una dimensión del desarrollo integral del niño.",
-      "D": "No existe como dimensión pedagógica del preescolar."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo y normativo estándar, sin referencias discriminatorias ni barreras culturales innecesarias."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem valora los ritmos y necesidades corporales de la infancia sin escolarizar prematuramente el nivel."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciados con tarea única y opciones comparables en estructura y longitud."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem apto para banco con revisión pedagógica posterior."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Desarrollo integral en preescolar - cinco dimensiones/EIP_B03_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

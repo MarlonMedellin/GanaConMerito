@@ -1,104 +1,45 @@
 {
   "id_item": "IDD_B12_I04",
-  "archivo_sugerido": "IDD_B12_I04_material_concreto_no_decorativo.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B12",
-    "nombre": "Didáctica de las áreas, resolución de problemas y material concreto",
-    "estado_en_lista": "Bloque 12 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 4 de 5"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Didáctica disciplinar",
+  "tema": "Didáctica de áreas, resolución de problemas y material concreto",
+  "subtema": "Material concreto y construcción conceptual",
+  "competencia": "Selecciona estrategias didácticas de resolución de problemas apoyadas en material concreto y mediación pedagógica.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce la alternativa pedagógica o institucional más adecuada según el criterio técnico evaluado en el caso.",
+  "evidencia": "Selecciona una única opción defendible frente a distractores plausibles en función del constructo.",
+  "tarea": "Analizar el caso y elegir la decisión más pertinente conforme al enfoque del ítem.",
+  "contexto": "Un docente lleva material concreto al aula, pero lo usa solo para decorar la mesa y entretener a los estudiantes, sin preguntas, sin propósito conceptual y sin relación con la actividad de aprendizaje.",
+  "enunciado": "Un docente lleva material concreto al aula, pero lo usa solo para decorar la mesa y entretener a los estudiantes, sin preguntas, sin propósito conceptual y sin relación con la actividad de aprendizaje.\n\n¿Cuándo el material concreto cumple una función didáctica real?",
+  "opciones": {
+    "A": "Cuando permite representar, manipular, comparar y construir relaciones vinculadas con el concepto que se quiere aprender.",
+    "B": "Cuando se usa únicamente para mantener ocupados a los estudiantes.",
+    "C": "Cuando reemplaza por completo la mediación del docente.",
+    "D": "Cuando no tiene relación con el propósito de clase."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende que el material concreto debe usarse con propósito conceptual y no como recurso decorativo o entretenimiento aislado.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, primaria, didáctica, inclusión educativa o evaluación formativa.",
-    "blueprint": {
-      "problematica_principal": "Uso superficial del material concreto sin relación con el concepto que se quiere construir.",
-      "fuente_autorizada": [
-        "Didáctica de las áreas",
-        "Material concreto",
-        "Aprendizaje significativo",
-        "DUA",
-        "Evaluación formativa"
-      ],
-      "componente_modulo": "Material concreto y construcción conceptual",
-      "competencia": "Uso intencional de recursos didácticos",
-      "afirmacion": "El material concreto debe ayudar a representar, manipular, comparar y construir relaciones conceptuales.",
-      "evidencia_observable": "Reconoce que el recurso debe estar articulado al objetivo, a la mediación docente y a la evidencia de aprendizaje.",
-      "tipo_de_evidencia": "Juicio didáctico aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que el valor didáctico del material concreto depende de su relación con el concepto, la pregunta y la actividad cognitiva del estudiante.",
-    "evidencia_observable": "Selecciona un uso del material concreto que favorece comprensión y no solo manipulación.",
-    "tarea_cognitiva": "Distinguir uso intencional de material concreto de uso decorativo.",
-    "tipo_de_pregunta": "Pregunta situacional de juicio didáctico",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Asumir que todo recurso concreto mejora automáticamente el aprendizaje",
-        "revision": "La clave exige intención didáctica."
-      },
-      {
-        "riesgo": "Desvalorizar recursos sencillos",
-        "revision": "El ítem permite materiales simples si están bien mediados."
-      },
-      {
-        "riesgo": "Confundir juego con ausencia de aprendizaje",
-        "revision": "La clave permite manipulación y exploración con propósito."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque mantener ocupados no equivale a aprender.",
+    "C": "Es incorrecta porque el recurso necesita mediación.",
+    "D": "Es incorrecta porque un recurso desvinculado pierde valor didáctico."
   },
-  "item": {
-    "enunciado": "Un docente lleva material concreto al aula, pero lo usa solo para decorar la mesa y entretener a los estudiantes, sin preguntas, sin propósito conceptual y sin relación con la actividad de aprendizaje.\n\n¿Cuándo el material concreto cumple una función didáctica real?",
-    "opciones": {
-      "A": "Cuando permite representar, manipular, comparar y construir relaciones vinculadas con el concepto que se quiere aprender.",
-      "B": "Cuando se usa únicamente para mantener ocupados a los estudiantes.",
-      "C": "Cuando reemplaza por completo la mediación del docente.",
-      "D": "Cuando no tiene relación con el propósito de clase."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo estándar y contexto institucional general sin sesgos culturales innecesarios."
   },
-  "ficha_tecnica": {
-    "componente": "Material concreto y construcción conceptual",
-    "competencia": "Uso intencional de recursos didácticos",
-    "claim_evaluado": "El evaluado comprende que el valor didáctico del material concreto depende de su relación con el concepto, la pregunta y la actividad cognitiva del estudiante.",
-    "evidencia": "Selecciona un uso del material concreto que favorece comprensión y no solo manipulación.",
-    "proceso_cognitivo": "Juicio didáctico aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Reduce el recurso a entretenimiento.",
-      "C": "Desconoce la mediación docente.",
-      "D": "Niega la relación entre recurso y aprendizaje."
-    },
-    "fuente_autorizada": [
-      "Didáctica de las áreas",
-      "Material concreto",
-      "Aprendizaje significativo",
-      "DUA",
-      "Evaluación formativa"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura y exigencia."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque mantener ocupados no equivale a aprender.",
-    "opcion_C": "Es incorrecta porque el recurso necesita mediación.",
-    "opcion_D": "Es incorrecta porque un recurso desvinculado pierde valor didáctico.",
-    "distractores": {
-      "B": "Es incorrecta porque mantener ocupados no equivale a aprender.",
-      "C": "Es incorrecta porque el recurso necesita mediación.",
-      "D": "Es incorrecta porque un recurso desvinculado pierde valor didáctico."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no exige materiales costosos; evalúa el uso intencional de cualquier recurso concreto pertinente."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 5 preguntas sobre didáctica de las áreas, resolución de problemas y material concreto."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I04.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

@@ -1,101 +1,45 @@
 {
   "id_item": "EIP_B01_I03",
-  "archivo_sugerido": "EIP_B01_I03_educacion_ambiental_transversal.json",
-  "bloque": {
-    "codigo_bloque": "EIP_B01",
-    "nombre": "Currículo obligatorio y proyectos pedagógicos transversales",
-    "estado_en_lista": "Bloque 1 de 7",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 3 de 5"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión curricular",
+  "tema": "Currículo obligatorio y proyectos pedagógicos transversales",
+  "subtema": "Educación ambiental transversal",
+  "competencia": "Selecciona decisiones curriculares coherentes con obligatoriedad de áreas y articulación de proyectos transversales.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la alternativa más adecuada según el marco pedagógico, evaluativo o de protección del caso.",
+  "evidencia": "Selecciona una única respuesta técnicamente defendible frente a distractores plausibles.",
+  "tarea": "Analizar la situación planteada y elegir la decisión institucional o didáctica más pertinente.",
+  "contexto": "En un colegio, la educación ambiental se limita a pedir a los estudiantes que recojan papeles una vez al mes. No se trabaja la comprensión de problemas ambientales, el cuidado de recursos, la relación con el territorio ni la responsabilidad colectiva.",
+  "enunciado": "En un colegio, la educación ambiental se limita a pedir a los estudiantes que recojan papeles una vez al mes. No se trabaja la comprensión de problemas ambientales, el cuidado de recursos, la relación con el territorio ni la responsabilidad colectiva.\n\n¿Qué interpretación curricular es más adecuada?",
+  "opciones": {
+    "A": "La educación ambiental se cumple con cualquier jornada de aseo, aunque no tenga propósito pedagógico.",
+    "B": "La educación ambiental no es obligatoria porque pertenece solo a campañas externas.",
+    "C": "La educación ambiental debe eliminarse del currículo para no quitar tiempo a las áreas básicas.",
+    "D": "La educación ambiental debe trabajarse como enseñanza transversal obligatoria, articulada al currículo, al contexto y a prácticas de cuidado y preservación."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce la educación ambiental como enseñanza obligatoria transversal y no como actividad decorativa.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, currículo, ciencias naturales, gestión ambiental escolar o coordinación académica.",
-    "blueprint": {
-      "problematica_principal": "Reducir la educación ambiental a jornadas de aseo o carteleras, sin trabajo curricular crítico y permanente.",
-      "fuente_autorizada": [
-        "Ley 115 de 1994",
-        "Artículo 14 Ley 115",
-        "Educación ambiental",
-        "Proyectos Ambientales Escolares"
-      ],
-      "componente_modulo": "Educación ambiental transversal",
-      "competencia": "Integración ambiental al currículo",
-      "afirmacion": "La enseñanza de la protección del ambiente, la ecología y la preservación de los recursos naturales debe integrarse al currículo y a la vida escolar.",
-      "evidencia_observable": "Reconoce que la educación ambiental requiere acciones pedagógicas permanentes, contextualizadas y articuladas.",
-      "tipo_de_evidencia": "Juicio curricular aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "D"
-    },
-    "claim": "El evaluado comprende que la educación ambiental es una enseñanza transversal obligatoria que debe formar conciencia, hábitos y comprensión de problemas ambientales.",
-    "evidencia_observable": "Selecciona una estrategia ambiental integrada y pedagógica.",
-    "tarea_cognitiva": "Distinguir una práctica ambiental formativa de una acción simbólica aislada.",
-    "tipo_de_pregunta": "Caso pedagógico-curricular",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Limitar el ambiente a aseo escolar",
-        "revision": "La clave incluye análisis, contexto y preservación."
-      },
-      {
-        "riesgo": "Convertir educación ambiental en una tarea exclusiva de ciencias naturales",
-        "revision": "La respuesta correcta la plantea transversal."
-      },
-      {
-        "riesgo": "Desconectar el proyecto ambiental del territorio",
-        "revision": "El ítem menciona acciones contextualizadas."
-      }
-    ]
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque una jornada de aseo no agota la enseñanza ambiental.",
+    "B": "Es incorrecta porque la protección ambiental aparece como enseñanza obligatoria.",
+    "C": "Es incorrecta porque la educación ambiental complementa y enriquece el currículo.",
+    "D": "Clave correcta."
   },
-  "item": {
-    "enunciado": "En un colegio, la educación ambiental se limita a pedir a los estudiantes que recojan papeles una vez al mes. No se trabaja la comprensión de problemas ambientales, el cuidado de recursos, la relación con el territorio ni la responsabilidad colectiva.\n\n¿Qué interpretación curricular es más adecuada?",
-    "opciones": {
-      "A": "La educación ambiental se cumple con cualquier jornada de aseo, aunque no tenga propósito pedagógico.",
-      "B": "La educación ambiental no es obligatoria porque pertenece solo a campañas externas.",
-      "C": "La educación ambiental debe eliminarse del currículo para no quitar tiempo a las áreas básicas.",
-      "D": "La educación ambiental debe trabajarse como enseñanza transversal obligatoria, articulada al currículo, al contexto y a prácticas de cuidado y preservación."
-    },
-    "respuesta_correcta": "D"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje pedagógico y normativo estándar, sin sesgos culturales o barreras innecesarias."
   },
-  "ficha_tecnica": {
-    "componente": "Educación ambiental transversal",
-    "competencia": "Integración ambiental al currículo",
-    "claim_evaluado": "El evaluado comprende que la educación ambiental es una enseñanza transversal obligatoria que debe formar conciencia, hábitos y comprensión de problemas ambientales.",
-    "evidencia": "Selecciona una estrategia ambiental integrada y pedagógica.",
-    "proceso_cognitivo": "Juicio curricular aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "D",
-    "distractores": {
-      "A": "Reduce la educación ambiental a una acción operativa.",
-      "B": "Desconoce su obligatoriedad legal.",
-      "C": "Opone falsamente formación ambiental y currículo académico."
-    },
-    "fuente_autorizada": [
-      "Ley 115 de 1994",
-      "Artículo 14 Ley 115",
-      "Educación ambiental"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado con tarea única y opciones comparables en estructura y nivel de abstracción."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "opcion_A": "Es incorrecta porque una jornada de aseo no agota la enseñanza ambiental.",
-    "opcion_B": "Es incorrecta porque la protección ambiental aparece como enseñanza obligatoria.",
-    "opcion_C": "Es incorrecta porque la educación ambiental complementa y enriquece el currículo.",
-    "distractores": {
-      "A": "Es incorrecta porque una jornada de aseo no agota la enseñanza ambiental.",
-      "B": "Es incorrecta porque la protección ambiental aparece como enseñanza obligatoria.",
-      "C": "Es incorrecta porque la educación ambiental complementa y enriquece el currículo."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem promueve responsabilidad ambiental sin culpabilizar a estudiantes o comunidades específicas."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión institucional del PRAE si aplica.",
-    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre currículo obligatorio y proyectos pedagógicos transversales."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Currículo obligatorio y proyectos pedagógicos transversales/EIP_B01_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

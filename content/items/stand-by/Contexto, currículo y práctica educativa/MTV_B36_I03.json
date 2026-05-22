@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B36_I03",
-    "tema": "Saberes comunitarios",
-    "competencia": "Diálogo de saberes",
-    "dificultad": "Alta",
-    "enunciado": "En una comunidad campesina, el docente articula conocimientos científicos sobre suelo con saberes locales de siembra, clima y cuidado del agua.\n\n¿Qué enfoque pedagógico evidencia?",
-    "opciones": {
-        "A": "Diálogo entre saber académico y saber comunitario.",
-        "B": "Negación del contexto.",
-        "C": "Rechazo del conocimiento científico.",
-        "D": "Homogeneización urbana."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "El docente reconoce saberes locales y los pone en diálogo con conocimientos escolares.",
-    "distractores": {
-        "B": "El contexto es central.",
-        "C": "El conocimiento científico no se elimina.",
-        "D": "No se impone una mirada urbana homogénea."
-    }
+  "id_item": "MTV_B36_I03",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión curricular y práctica pedagógica",
+  "tema": "Contexto, currículo y práctica educativa",
+  "subtema": "Saberes comunitarios",
+  "competencia": "Analiza decisiones curriculares y didácticas a partir del contexto institucional y del propósito formativo.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "ALTA",
+  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada en el caso planteado.",
+  "evidencia": "Selecciona una alternativa única, consistente con el criterio evaluado y superior frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión según el enfoque del ítem.",
+  "contexto": "En una comunidad campesina, el docente articula conocimientos científicos sobre suelo con saberes locales de siembra, clima y cuidado del agua.",
+  "enunciado": "En una comunidad campesina, el docente articula conocimientos científicos sobre suelo con saberes locales de siembra, clima y cuidado del agua.\n\n¿Qué enfoque pedagógico evidencia?",
+  "opciones": {
+    "A": "Diálogo entre saber académico y saber comunitario.",
+    "B": "Negación del contexto.",
+    "C": "Rechazo del conocimiento científico.",
+    "D": "Homogeneización urbana."
+  },
+  "clave": "A",
+  "justificacion_clave": "El docente reconoce saberes locales y los pone en diálogo con conocimientos escolares.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "El contexto es central.",
+    "C": "El conocimiento científico no se elimina.",
+    "D": "No se impone una mirada urbana homogénea."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Caso con lenguaje técnico de uso educativo y sin referencias discriminatorias."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Estructura clara, una sola tarea cognitiva y opciones comparables."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Contexto, currículo y práctica educativa/MTV_B36_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
 }

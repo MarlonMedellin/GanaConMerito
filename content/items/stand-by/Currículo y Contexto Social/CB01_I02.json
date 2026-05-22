@@ -1,99 +1,45 @@
 {
   "id_item": "CB01_I02",
-  "bloque": {
-    "numero": 1,
-    "nombre": "Currículo y Contexto Social",
-    "estado_en_lista": "Bloque 1 de 15",
-    "decision_del_bloque": "Grupo de 3 preguntas",
-    "item_en_grupo": "Ítem 2 de 3"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Currículo y contexto",
+  "tema": "Currículo y Contexto Social",
+  "subtema": "Gestión Directiva",
+  "competencia": "Analiza la pertinencia curricular frente a características y necesidades del contexto social.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la alternativa más adecuada según el criterio curricular y pedagógico evaluado en el caso.",
+  "evidencia": "Selecciona una única respuesta técnicamente defendible frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión curricular, didáctica o institucional.",
+  "contexto": "Una institución educativa ubicada en un sector con alta movilidad familiar observa que muchos estudiantes cambian de residencia durante el año escolar. El equipo académico advierte interrupciones en los procesos de aprendizaje y baja continuidad en algunos proyectos de aula.",
+  "enunciado": "Una institución educativa ubicada en un sector con alta movilidad familiar observa que muchos estudiantes cambian de residencia durante el año escolar. El equipo académico advierte interrupciones en los procesos de aprendizaje y baja continuidad en algunos proyectos de aula.\n\n¿Cuál decisión curricular resulta más pertinente para responder a esta realidad contextual?",
+  "opciones": {
+    "A": "Mantener la planeación anual sin modificaciones, porque cambiarla puede afectar la organización institucional.",
+    "B": "Diseñar estrategias flexibles de seguimiento, nivelación y articulación curricular que atiendan la movilidad de los estudiantes.",
+    "C": "Reducir la exigencia académica general para evitar que los estudiantes con trayectorias interrumpidas reprueben.",
+    "D": "Trasladar la responsabilidad del rezago exclusivamente a las familias, porque los cambios de residencia no dependen de la institución."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende que las decisiones curriculares deben responder a condiciones sociales, culturales y territoriales del contexto institucional.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "Rol político del docente/directivo en diseño pedagógico",
-      "fuente_autorizada": [
-        "Constitución Política de Colombia",
-        "Ley 115 de 1994",
-        "Orientaciones MEN sobre Proyecto Educativo Institucional"
-      ],
-      "componente_modulo": "Gestión Directiva",
-      "competencia": "Liderazgo contextual",
-      "afirmacion": "La propuesta pedagógica responde al contexto social.",
-      "evidencia_observable": "Reconoce que el currículo debe dialogar con condiciones sociales, culturales y territoriales de la comunidad educativa.",
-      "tipo_de_evidencia": "Interpretación de situación institucional",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado comprende que el liderazgo pedagógico implica interpretar el contexto y orientar decisiones curriculares pertinentes.",
-    "evidencia_observable": "Selecciona una decisión curricular flexible y contextualizada frente a una condición social que afecta la trayectoria escolar.",
-    "tarea_cognitiva": "Analizar una situación institucional y seleccionar la acción que traduce el contexto en una decisión curricular.",
-    "tipo_de_pregunta": "Caso situacional de juicio profesional",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Sesgo urbano/rural",
-        "revision": "El caso puede presentarse en instituciones urbanas, rurales, oficiales o privadas."
-      },
-      {
-        "riesgo": "Sesgo socioeconómico",
-        "revision": "No responsabiliza a las familias ni a los estudiantes por condiciones de movilidad."
-      },
-      {
-        "riesgo": "Ambigüedad en la clave",
-        "revision": "La opción correcta es la única que combina flexibilidad curricular, seguimiento y continuidad pedagógica."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque evita adaptar la propuesta pedagógica a una condición conocida del contexto.",
+    "B": "Clave correcta.",
+    "C": "Es incorrecta porque no plantea apoyos pedagógicos diferenciados, sino una reducción general de expectativas.",
+    "D": "Es incorrecta porque desplaza la responsabilidad institucional y limita el derecho a una educación pertinente."
   },
-  "item": {
-    "enunciado": "Una institución educativa ubicada en un sector con alta movilidad familiar observa que muchos estudiantes cambian de residencia durante el año escolar. El equipo académico advierte interrupciones en los procesos de aprendizaje y baja continuidad en algunos proyectos de aula.\n\n¿Cuál decisión curricular resulta más pertinente para responder a esta realidad contextual?",
-    "opciones": {
-      "A": "Mantener la planeación anual sin modificaciones, porque cambiarla puede afectar la organización institucional.",
-      "B": "Diseñar estrategias flexibles de seguimiento, nivelación y articulación curricular que atiendan la movilidad de los estudiantes.",
-      "C": "Reducir la exigencia académica general para evitar que los estudiantes con trayectorias interrumpidas reprueben.",
-      "D": "Trasladar la responsabilidad del rezago exclusivamente a las familias, porque los cambios de residencia no dependen de la institución."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo estandarizado y contexto institucional general, sin sesgos culturales innecesarios."
   },
-  "ficha_tecnica": {
-    "componente": "Gestión Directiva",
-    "competencia": "Liderazgo contextual",
-    "claim_evaluado": "El evaluado comprende que el liderazgo pedagógico implica interpretar el contexto y orientar decisiones curriculares pertinentes.",
-    "evidencia": "Selecciona una decisión curricular flexible y contextualizada frente a una condición social que afecta la trayectoria escolar.",
-    "proceso_cognitivo": "Análisis y juicio profesional",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Prioriza la estabilidad administrativa sobre la pertinencia curricular.",
-      "C": "Confunde flexibilidad curricular con disminución general de exigencia.",
-      "D": "Desconoce la responsabilidad institucional frente a condiciones del contexto."
-    },
-    "fuente_autorizada": [
-      "Constitución Política de Colombia",
-      "Ley 115 de 1994",
-      "Orientaciones MEN sobre PEI"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado claro, tarea única y opciones homogéneas en estructura."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque evita adaptar la propuesta pedagógica a una condición conocida del contexto.",
-    "opcion_C": "Es incorrecta porque no plantea apoyos pedagógicos diferenciados, sino una reducción general de expectativas.",
-    "opcion_D": "Es incorrecta porque desplaza la responsabilidad institucional y limita el derecho a una educación pertinente.",
-    "distractores": {
-      "A": "Es incorrecta porque evita adaptar la propuesta pedagógica a una condición conocida del contexto.",
-      "C": "Es incorrecta porque no plantea apoyos pedagógicos diferenciados, sino una reducción general de expectativas.",
-      "D": "Es incorrecta porque desplaza la responsabilidad institucional y limita el derecho a una educación pertinente."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no penaliza contextos de movilidad ni atribuye el problema a estudiantes o familias. La clave se basa en una respuesta institucional razonable."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 3 preguntas sobre currículo, PEI y contexto social."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Currículo y Contexto Social/CB01_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

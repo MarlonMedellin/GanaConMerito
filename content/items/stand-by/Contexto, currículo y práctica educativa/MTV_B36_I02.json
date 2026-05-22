@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B36_I02",
-    "tema": "Currículo contextualizado",
-    "competencia": "Diseño situado",
-    "dificultad": "Media-Alta",
-    "enunciado": "Una profesora enseña estadística usando datos reales del barrio sobre transporte, servicios públicos y hábitos de lectura. Luego conecta esos datos con tablas, gráficas y porcentajes.\n\n¿Qué está haciendo?",
-    "opciones": {
-        "A": "Contextualizar el currículo sin abandonar el contenido disciplinar.",
-        "B": "Eliminar la estadística.",
-        "C": "Reemplazar el aprendizaje por opinión.",
-        "D": "Desconocer el entorno."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "La docente usa el contexto como mediación para desarrollar conceptos estadísticos.",
-    "distractores": {
-        "B": "La estadística se trabaja con datos reales.",
-        "C": "No se sustituye por opinión; se formaliza.",
-        "D": "El entorno es punto de partida."
-    }
+  "id_item": "MTV_B36_I02",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión curricular y práctica pedagógica",
+  "tema": "Contexto, currículo y práctica educativa",
+  "subtema": "Currículo contextualizado",
+  "competencia": "Analiza decisiones curriculares y didácticas a partir del contexto institucional y del propósito formativo.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "MEDIA-ALTA",
+  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada en el caso planteado.",
+  "evidencia": "Selecciona una alternativa única, consistente con el criterio evaluado y superior frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión según el enfoque del ítem.",
+  "contexto": "Una profesora enseña estadística usando datos reales del barrio sobre transporte, servicios públicos y hábitos de lectura. Luego conecta esos datos con tablas, gráficas y porcentajes.",
+  "enunciado": "Una profesora enseña estadística usando datos reales del barrio sobre transporte, servicios públicos y hábitos de lectura. Luego conecta esos datos con tablas, gráficas y porcentajes.\n\n¿Qué está haciendo?",
+  "opciones": {
+    "A": "Contextualizar el currículo sin abandonar el contenido disciplinar.",
+    "B": "Eliminar la estadística.",
+    "C": "Reemplazar el aprendizaje por opinión.",
+    "D": "Desconocer el entorno."
+  },
+  "clave": "A",
+  "justificacion_clave": "La docente usa el contexto como mediación para desarrollar conceptos estadísticos.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "La estadística se trabaja con datos reales.",
+    "C": "No se sustituye por opinión; se formaliza.",
+    "D": "El entorno es punto de partida."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Caso con lenguaje técnico de uso educativo y sin referencias discriminatorias."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Estructura clara, una sola tarea cognitiva y opciones comparables."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Contexto, currículo y práctica educativa/MTV_B36_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
 }

@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B22_I06",
-    "tema": "Ideas previas erróneas",
-    "competencia": "Diagnóstico cognitivo",
-    "dificultad": "Alta",
-    "enunciado": "Al iniciar una clase de ciencias, varios estudiantes afirman que el Sol es amarillo porque así lo dibujan desde pequeños. La docente no ridiculiza la idea, sino que la usa como punto de partida para observar imágenes, analizar luz y discutir percepción del color.\n\n¿Qué está haciendo la docente?",
-    "opciones": {
-        "A": "Ignorar las ideas previas.",
-        "B": "Usar una idea previa como punto de partida para reconstruir comprensión.",
-        "C": "Aceptar cualquier idea como científicamente correcta.",
-        "D": "Evitar el aprendizaje científico."
-    },
-    "respuesta_correcta": "B",
-    "justificacion_clave": "La docente identifica una idea previa y la utiliza para generar revisión, contraste y reconstrucción conceptual.",
-    "distractores": {
-        "A": "La docente no ignora la idea; la trabaja.",
-        "C": "Escuchar una idea previa no significa validarla científicamente.",
-        "D": "La estrategia fortalece el pensamiento científico."
-    }
+  "id_item": "MTV_B22_I06",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y didáctica",
+  "tema": "Aprendizaje significativo (Ausubel)",
+  "subtema": "Ideas previas erróneas",
+  "competencia": "Analiza situaciones de aula y aplica principios de aprendizaje significativo para valorar decisiones pedagógicas.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "ALTA",
+  "claim": "Distingue prácticas de enseñanza memorística de prácticas que promueven integración sustantiva con saberes previos y comprensión con sentido.",
+  "evidencia": "Selecciona la opción que mejor explica la decisión pedagógica coherente con el aprendizaje significativo en el caso planteado.",
+  "tarea": "Inferir, a partir del caso, la condición didáctica que permite aprendizaje significativo según Ausubel.",
+  "contexto": "Al iniciar una clase de ciencias, varios estudiantes afirman que el Sol es amarillo porque así lo dibujan desde pequeños. La docente no ridiculiza la idea, sino que la usa como punto de partida para observar imágenes, analizar luz y discutir percepción del color.",
+  "enunciado": "Al iniciar una clase de ciencias, varios estudiantes afirman que el Sol es amarillo porque así lo dibujan desde pequeños. La docente no ridiculiza la idea, sino que la usa como punto de partida para observar imágenes, analizar luz y discutir percepción del color.\n\n¿Qué está haciendo la docente?",
+  "opciones": {
+    "A": "Ignorar las ideas previas.",
+    "B": "Usar una idea previa como punto de partida para reconstruir comprensión.",
+    "C": "Aceptar cualquier idea como científicamente correcta.",
+    "D": "Evitar el aprendizaje científico."
+  },
+  "clave": "B",
+  "justificacion_clave": "La docente identifica una idea previa y la utiliza para generar revisión, contraste y reconstrucción conceptual.",
+  "distractores_funcion": {
+    "A": "La docente no ignora la idea; la trabaja.",
+    "B": "Clave correcta.",
+    "C": "Escuchar una idea previa no significa validarla científicamente.",
+    "D": "La estrategia fortalece el pensamiento científico."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje pedagógico estándar y contexto escolar general sin referencias culturales excluyentes."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciados directos con una sola tarea cognitiva y vocabulario de uso docente."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I06.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
 }

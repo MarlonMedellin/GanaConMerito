@@ -1,40 +1,45 @@
 {
   "id_item": "EIP_B03_I01",
-  "archivo_sugerido": "EIP_B03_I01_cinco_dimensiones_desarrollo_integral.json",
-  "proposito_de_uso": "Evaluar si el aspirante identifica las cinco dimensiones del desarrollo integral en educación preescolar según la Ley 115.",
-  "blueprint": {
-    "componente_modulo": "Desarrollo integral en preescolar",
-    "competencia": "Reconocimiento de dimensiones del desarrollo",
-    "afirmacion": "El desarrollo integral en preescolar comprende dimensiones biológica, cognoscitiva, sicomotriz, socioafectiva y espiritual.",
-    "evidencia_observable": "Selecciona correctamente las cinco dimensiones del desarrollo integral.",
-    "tipo_de_evidencia": "Reconocimiento normativo",
-    "dificultad_esperada": "Media",
-    "clave": "A"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Educación inicial y preescolar",
+  "tema": "Desarrollo integral en preescolar - cinco dimensiones",
+  "subtema": "Desarrollo integral en preescolar",
+  "competencia": "Analiza prácticas pedagógicas que promueven el desarrollo integral en las dimensiones corporal, cognitiva, comunicativa, ética y estética.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce la actuación pedagógica o institucional más adecuada de acuerdo con el enfoque evaluado en el caso.",
+  "evidencia": "Selecciona una única alternativa defendible técnicamente y coherente con el constructo del ítem.",
+  "tarea": "Analizar la situación presentada y elegir la respuesta más pertinente según criterios pedagógicos y normativos aplicables.",
+  "contexto": "Una institución educativa revisa su planeación de preescolar y quiere verificar si está atendiendo el desarrollo integral definido por la Ley 115.",
+  "enunciado": "Una institución educativa revisa su planeación de preescolar y quiere verificar si está atendiendo el desarrollo integral definido por la Ley 115.\n\n¿Cuáles son las cinco dimensiones que deben trabajarse en este nivel?",
+  "opciones": {
+    "A": "Biológica, cognoscitiva, sicomotriz, socioafectiva y espiritual.",
+    "B": "Financiera, administrativa, jurídica, comercial y disciplinaria.",
+    "C": "Memorística, punitiva, competitiva, sancionatoria y repetitiva.",
+    "D": "Exclusivamente lectoescritura, cálculo, caligrafía, dictado y examen escrito."
   },
-  "item": {
-    "enunciado": "Una institución educativa revisa su planeación de preescolar y quiere verificar si está atendiendo el desarrollo integral definido por la Ley 115.\n\n¿Cuáles son las cinco dimensiones que deben trabajarse en este nivel?",
-    "opciones": {
-      "A": "Biológica, cognoscitiva, sicomotriz, socioafectiva y espiritual.",
-      "B": "Financiera, administrativa, jurídica, comercial y disciplinaria.",
-      "C": "Memorística, punitiva, competitiva, sancionatoria y repetitiva.",
-      "D": "Exclusivamente lectoescritura, cálculo, caligrafía, dictado y examen escrito."
-    },
-    "respuesta_correcta": "A"
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Menciona dimensiones administrativas, no del desarrollo infantil.",
+    "C": "Propone un enfoque punitivo contrario al sentido del preescolar.",
+    "D": "Reduce el preescolar a escolarización académica temprana."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "distractores": {
-      "B": "Menciona dimensiones administrativas, no del desarrollo infantil.",
-      "C": "Propone un enfoque punitivo contrario al sentido del preescolar.",
-      "D": "Reduce el preescolar a escolarización académica temprana."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo y normativo estándar, sin referencias discriminatorias ni barreras culturales innecesarias."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem evita reducir el desarrollo infantil a rendimiento académico y reconoce la integralidad del nivel."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciados con tarea única y opciones comparables en estructura y longitud."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem apto para banco con revisión normativa posterior."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Desarrollo integral en preescolar - cinco dimensiones/EIP_B03_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

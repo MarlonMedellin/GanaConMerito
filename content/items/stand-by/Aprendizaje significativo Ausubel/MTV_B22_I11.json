@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B22_I11",
-    "tema": "Conflicto cognitivo y reconstrucción",
-    "competencia": "Uso pedagógico de contradicciones conceptuales",
-    "dificultad": "Alta",
-    "enunciado": "Un estudiante cree que los objetos más pesados siempre caen mucho más rápido que los livianos. La docente diseña una experiencia sencilla para contrastar esa idea y discutir los resultados.\n\n¿Qué finalidad pedagógica tiene esta acción?",
-    "opciones": {
-        "A": "Humillar al estudiante por equivocarse.",
-        "B": "Generar conflicto cognitivo y favorecer la reconstrucción de la idea previa.",
-        "C": "Confirmar cualquier creencia sin análisis.",
-        "D": "Evitar el razonamiento científico."
-    },
-    "respuesta_correcta": "B",
-    "justificacion_clave": "La experiencia confronta una idea previa con evidencia para promover reestructuración conceptual.",
-    "distractores": {
-        "A": "El propósito no es humillar.",
-        "C": "Se contrasta la idea con evidencia.",
-        "D": "La acción fortalece el razonamiento científico."
-    }
+  "id_item": "MTV_B22_I11",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y didáctica",
+  "tema": "Aprendizaje significativo (Ausubel)",
+  "subtema": "Conflicto cognitivo y reconstrucción",
+  "competencia": "Analiza situaciones de aula y aplica principios de aprendizaje significativo para valorar decisiones pedagógicas.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "ALTA",
+  "claim": "Distingue prácticas de enseñanza memorística de prácticas que promueven integración sustantiva con saberes previos y comprensión con sentido.",
+  "evidencia": "Selecciona la opción que mejor explica la decisión pedagógica coherente con el aprendizaje significativo en el caso planteado.",
+  "tarea": "Inferir, a partir del caso, la condición didáctica que permite aprendizaje significativo según Ausubel.",
+  "contexto": "Un estudiante cree que los objetos más pesados siempre caen mucho más rápido que los livianos. La docente diseña una experiencia sencilla para contrastar esa idea y discutir los resultados.",
+  "enunciado": "Un estudiante cree que los objetos más pesados siempre caen mucho más rápido que los livianos. La docente diseña una experiencia sencilla para contrastar esa idea y discutir los resultados.\n\n¿Qué finalidad pedagógica tiene esta acción?",
+  "opciones": {
+    "A": "Humillar al estudiante por equivocarse.",
+    "B": "Generar conflicto cognitivo y favorecer la reconstrucción de la idea previa.",
+    "C": "Confirmar cualquier creencia sin análisis.",
+    "D": "Evitar el razonamiento científico."
+  },
+  "clave": "B",
+  "justificacion_clave": "La experiencia confronta una idea previa con evidencia para promover reestructuración conceptual.",
+  "distractores_funcion": {
+    "A": "El propósito no es humillar.",
+    "B": "Clave correcta.",
+    "C": "Se contrasta la idea con evidencia.",
+    "D": "La acción fortalece el razonamiento científico."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje pedagógico estándar y contexto escolar general sin referencias culturales excluyentes."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciados directos con una sola tarea cognitiva y vocabulario de uso docente."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I11.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
 }

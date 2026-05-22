@@ -1,103 +1,45 @@
 {
   "id_item": "NFL_B03_I05",
-  "archivo_sugerido": "NFL_B03_I05_derecho_defensa_contradiccion_estudiante.json",
-  "bloque": {
-    "codigo_bloque": "NFL_B03",
-    "nombre": "Debido proceso, congruencia y medidas correctivas extremas",
-    "estado_en_lista": "Bloque 3 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 5 de 5"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Convivencia escolar y normatividad",
+  "tema": "Debido proceso, congruencia y medidas correctivas extremas",
+  "subtema": "Derecho de defensa y contradicción",
+  "competencia": "Valora medidas correctivas según debido proceso, proporcionalidad y congruencia frente a situaciones de convivencia.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce la actuación pedagógica o institucional más adecuada de acuerdo con el enfoque evaluado en el caso.",
+  "evidencia": "Selecciona una única alternativa defendible técnicamente y coherente con el constructo del ítem.",
+  "tarea": "Analizar la situación presentada y elegir la respuesta más pertinente según criterios pedagógicos y normativos aplicables.",
+  "contexto": "Un estudiante es señalado por una falta grave. La institución decide sancionarlo sin informarle con claridad los hechos atribuidos, sin permitirle presentar descargos y sin revisar su versión ni la de su acudiente.",
+  "enunciado": "Un estudiante es señalado por una falta grave. La institución decide sancionarlo sin informarle con claridad los hechos atribuidos, sin permitirle presentar descargos y sin revisar su versión ni la de su acudiente.\n\n¿Qué garantía básica se vulnera?",
+  "opciones": {
+    "A": "El derecho de defensa y contradicción dentro del debido proceso.",
+    "B": "La obligación de sancionar sin escuchar para ahorrar tiempo.",
+    "C": "La posibilidad de imponer medidas con base en rumores.",
+    "D": "La facultad del estudiante para anular cualquier norma escolar."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce el derecho del estudiante a ser escuchado, presentar descargos y controvertir pruebas en un proceso disciplinario escolar.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con convivencia escolar, docencia, coordinación, rectoría u orientación escolar.",
-    "blueprint": {
-      "problematica_principal": "Decidir una medida disciplinaria sin escuchar al estudiante ni permitir contradicción.",
-      "fuente_autorizada": [
-        "Constitución Política de Colombia artículo 29",
-        "Ley 115 de 1994",
-        "Manual de Convivencia",
-        "Debido proceso escolar",
-        "Derecho de defensa"
-      ],
-      "componente_modulo": "Derecho de defensa y contradicción",
-      "competencia": "Garantía de participación del estudiante en el proceso",
-      "afirmacion": "El estudiante debe conocer los hechos atribuidos, ser escuchado, presentar descargos y controvertir elementos antes de una decisión.",
-      "evidencia_observable": "Reconoce que decidir sin escuchar ni permitir defensa vulnera el debido proceso.",
-      "tipo_de_evidencia": "Juicio jurídico-pedagógico aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que el debido proceso escolar exige participación real del estudiante antes de adoptar una medida que lo afecte.",
-    "evidencia_observable": "Selecciona la actuación que garantiza derecho de defensa y contradicción.",
-    "tarea_cognitiva": "Identificar garantías mínimas en un proceso disciplinario escolar.",
-    "tipo_de_pregunta": "Pregunta situacional de garantías procedimentales",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confundir escuchar al estudiante con aceptar automáticamente su versión",
-        "revision": "La clave exige escuchar y valorar, no renunciar a decidir."
-      },
-      {
-        "riesgo": "Decidir con base en rumores",
-        "revision": "La opción correcta pide elementos claros y contradicción."
-      },
-      {
-        "riesgo": "Excluir a familias o acudientes cuando proceda",
-        "revision": "El ítem permite intervención conforme al Manual y edad del estudiante."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque la eficiencia no justifica vulnerar garantías.",
+    "C": "Es incorrecta porque los rumores no sustituyen el procedimiento.",
+    "D": "Es incorrecta porque defenderse no implica desconocer normas escolares."
   },
-  "item": {
-    "enunciado": "Un estudiante es señalado por una falta grave. La institución decide sancionarlo sin informarle con claridad los hechos atribuidos, sin permitirle presentar descargos y sin revisar su versión ni la de su acudiente.\n\n¿Qué garantía básica se vulnera?",
-    "opciones": {
-      "A": "El derecho de defensa y contradicción dentro del debido proceso.",
-      "B": "La obligación de sancionar sin escuchar para ahorrar tiempo.",
-      "C": "La posibilidad de imponer medidas con base en rumores.",
-      "D": "La facultad del estudiante para anular cualquier norma escolar."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo y normativo estándar, sin referencias discriminatorias ni barreras culturales innecesarias."
   },
-  "ficha_tecnica": {
-    "componente": "Derecho de defensa y contradicción",
-    "competencia": "Garantía de participación del estudiante en el proceso",
-    "claim_evaluado": "El evaluado comprende que el debido proceso escolar exige participación real del estudiante antes de adoptar una medida que lo afecte.",
-    "evidencia": "Selecciona la actuación que garantiza derecho de defensa y contradicción.",
-    "proceso_cognitivo": "Reconocimiento de garantía procedimental",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Normaliza una vulneración del debido proceso.",
-      "C": "Desconoce la necesidad de verificar y permitir contradicción.",
-      "D": "Confunde defensa con eliminación de normas."
-    },
-    "fuente_autorizada": [
-      "Constitución Política de Colombia artículo 29",
-      "Ley 115 de 1994",
-      "Manual de Convivencia",
-      "Debido proceso escolar"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciados con tarea única y opciones comparables en estructura y longitud."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque la eficiencia no justifica vulnerar garantías.",
-    "opcion_C": "Es incorrecta porque los rumores no sustituyen el procedimiento.",
-    "opcion_D": "Es incorrecta porque defenderse no implica desconocer normas escolares.",
-    "distractores": {
-      "B": "Es incorrecta porque la eficiencia no justifica vulnerar garantías.",
-      "C": "Es incorrecta porque los rumores no sustituyen el procedimiento.",
-      "D": "Es incorrecta porque defenderse no implica desconocer normas escolares."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "Aprobado con revisión institucional recomendada.",
-    "argumento": "El ítem protege garantías del estudiante sin impedir que la institución adopte decisiones motivadas y proporcionales."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Validar con el Manual de Convivencia y procedimiento institucional aplicable.",
-    "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre debido proceso, congruencia y medidas correctivas extremas."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I05.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

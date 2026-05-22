@@ -1,104 +1,45 @@
 {
   "id_item": "IDD_B03_I01",
-  "archivo_sugerido": "IDD_B03_I01_corresponsabilidad_docente_garante.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B03",
-    "nombre": "Corresponsabilidad, garante y protección del estudiante",
-    "estado_en_lista": "Bloque 3 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 1 de 3"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Protección integral del estudiante",
+  "tema": "Corresponsabilidad, garante y protección del estudiante",
+  "subtema": "Responsabilidad legal e inclusión",
+  "competencia": "Determina actuaciones de protección escolar coherentes con la posición de garante y la ruta institucional.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA-ALTA",
+  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada en el caso planteado.",
+  "evidencia": "Selecciona una alternativa única, consistente con el criterio evaluado y superior frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión según el enfoque del ítem.",
+  "contexto": "Un docente identifica que un estudiante con discapacidad está quedando sistemáticamente por fuera de las actividades de clase porque no comprende las instrucciones y no cuenta con apoyos suficientes. Algunos compañeros sugieren esperar a que la familia o el docente de apoyo resuelvan la situación.",
+  "enunciado": "Un docente identifica que un estudiante con discapacidad está quedando sistemáticamente por fuera de las actividades de clase porque no comprende las instrucciones y no cuenta con apoyos suficientes. Algunos compañeros sugieren esperar a que la familia o el docente de apoyo resuelvan la situación.\n\n¿Qué responsabilidad adquiere el docente bajo el principio de corresponsabilidad y la figura de garante?",
+  "opciones": {
+    "A": "Ignorar la situación porque la inclusión es responsabilidad exclusiva de la familia.",
+    "B": "Excluir al estudiante de las actividades evaluativas hasta que llegue un diagnóstico nuevo.",
+    "C": "Actuar oportunamente para proteger sus derechos, comunicar la situación, articular apoyos y ajustar la mediación pedagógica para favorecer su participación.",
+    "D": "Asignarle tareas sin relación con el tema para mantenerlo ocupado mientras el grupo avanza."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende la responsabilidad legal y pedagógica del docente frente al bienestar, protección y participación de un estudiante bajo el principio de corresponsabilidad.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación académica, inclusión educativa o gestión institucional.",
-    "blueprint": {
-      "problematica_principal": "Desconocimiento de la responsabilidad docente frente a la protección y garantía de derechos de estudiantes con discapacidad o barreras para el aprendizaje.",
-      "fuente_autorizada": [
-        "Ley 1098 de 2006",
-        "Decreto 1421 de 2017",
-        "Ley 1620 de 2013",
-        "Manual de funciones docente",
-        "Proyecto Educativo Institucional"
-      ],
-      "componente_modulo": "Responsabilidad legal e inclusión",
-      "competencia": "Corresponsabilidad y posición de garante",
-      "afirmacion": "El docente, como actor corresponsable, debe actuar para proteger derechos, prevenir barreras, activar apoyos y evitar omisiones que afecten al estudiante.",
-      "evidencia_observable": "Reconoce que el docente no puede desentenderse de las necesidades de apoyo, bienestar y protección de un estudiante.",
-      "tipo_de_evidencia": "Juicio normativo-pedagógico aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende que la corresponsabilidad implica actuar de manera oportuna, pedagógica y protectora para garantizar derechos, participación y aprendizaje, sin trasladar toda la responsabilidad a la familia o a otros profesionales.",
-    "evidencia_observable": "Selecciona una actuación docente que protege al estudiante, comunica la situación, activa apoyos y adapta la práctica pedagógica.",
-    "tarea_cognitiva": "Analizar una situación de inclusión y seleccionar la respuesta docente coherente con corresponsabilidad y posición de garante.",
-    "tipo_de_pregunta": "Caso situacional de juicio profesional",
-    "dificultad_esperada": "Media-Alta",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Culpabilizar al docente de manera absoluta",
-        "revision": "El ítem habla de corresponsabilidad, no de responsabilidad individual aislada."
-      },
-      {
-        "riesgo": "Trasladar todo a la familia",
-        "revision": "La clave exige articulación con familia y apoyos, sin que la escuela renuncie a su papel."
-      },
-      {
-        "riesgo": "Confundir protección con sobreprotección",
-        "revision": "La opción correcta protege derechos sin retirar exigencias formativas ni participación."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque desconoce la corresponsabilidad institucional.",
+    "B": "Es incorrecta porque excluye al estudiante del proceso formativo.",
+    "C": "Clave correcta.",
+    "D": "Es incorrecta porque mantiene al estudiante presente físicamente pero excluido del aprendizaje común."
   },
-  "item": {
-    "enunciado": "Un docente identifica que un estudiante con discapacidad está quedando sistemáticamente por fuera de las actividades de clase porque no comprende las instrucciones y no cuenta con apoyos suficientes. Algunos compañeros sugieren esperar a que la familia o el docente de apoyo resuelvan la situación.\n\n¿Qué responsabilidad adquiere el docente bajo el principio de corresponsabilidad y la figura de garante?",
-    "opciones": {
-      "A": "Ignorar la situación porque la inclusión es responsabilidad exclusiva de la familia.",
-      "B": "Excluir al estudiante de las actividades evaluativas hasta que llegue un diagnóstico nuevo.",
-      "C": "Actuar oportunamente para proteger sus derechos, comunicar la situación, articular apoyos y ajustar la mediación pedagógica para favorecer su participación.",
-      "D": "Asignarle tareas sin relación con el tema para mantenerlo ocupado mientras el grupo avanza."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Caso con lenguaje técnico de uso educativo y sin referencias discriminatorias."
   },
-  "ficha_tecnica": {
-    "componente": "Responsabilidad legal e inclusión",
-    "competencia": "Corresponsabilidad y posición de garante",
-    "claim_evaluado": "El evaluado comprende que la corresponsabilidad implica actuar de manera oportuna, pedagógica y protectora para garantizar derechos, participación y aprendizaje, sin trasladar toda la responsabilidad a la familia o a otros profesionales.",
-    "evidencia": "Selecciona una actuación docente que protege al estudiante, comunica la situación, activa apoyos y adapta la práctica pedagógica.",
-    "proceso_cognitivo": "Análisis y juicio profesional",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media-Alta",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Traslada indebidamente la responsabilidad a la familia.",
-      "B": "Condiciona la participación a un diagnóstico y suspende el derecho educativo.",
-      "D": "Constituye una forma de exclusión pedagógica encubierta."
-    },
-    "fuente_autorizada": [
-      "Ley 1098 de 2006",
-      "Decreto 1421 de 2017",
-      "Ley 1620 de 2013",
-      "Manual de funciones docente",
-      "Proyecto Educativo Institucional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Estructura clara, una sola tarea cognitiva y opciones comparables."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque desconoce la corresponsabilidad institucional.",
-    "opcion_B": "Es incorrecta porque excluye al estudiante del proceso formativo.",
-    "opcion_D": "Es incorrecta porque mantiene al estudiante presente físicamente pero excluido del aprendizaje común.",
-    "distractores": {
-      "A": "Es incorrecta porque desconoce la corresponsabilidad institucional.",
-      "B": "Es incorrecta porque excluye al estudiante del proceso formativo.",
-      "D": "Es incorrecta porque mantiene al estudiante presente físicamente pero excluido del aprendizaje común."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem evita culpabilizar a un solo actor y promueve una respuesta corresponsable, protectora y pedagógica."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 3 preguntas sobre corresponsabilidad, garante y protección del estudiante."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Corresponsabilidad, garante y protección del estudiante/IDD_B03_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

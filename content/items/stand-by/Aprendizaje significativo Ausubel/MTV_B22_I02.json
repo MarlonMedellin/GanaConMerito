@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B22_I02",
-    "tema": "Presaberes",
-    "competencia": "Activación de conocimientos previos",
-    "dificultad": "Media",
-    "enunciado": "Antes de explicar fracciones, un docente pregunta a sus estudiantes cómo reparten una pizza, una chocolatina o una botella de jugo entre varias personas. Luego conecta esas experiencias con el concepto matemático.\n\n¿Qué principio de Ausubel está aplicando?",
-    "opciones": {
-        "A": "Activación de saberes previos.",
-        "B": "Evaluación punitiva.",
-        "C": "Repetición conductista sin contexto.",
-        "D": "Currículo nulo."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "El docente parte de experiencias previas para anclar el nuevo concepto en estructuras cognitivas existentes.",
-    "distractores": {
-        "B": "No hay castigo ni control punitivo.",
-        "C": "La situación está contextualizada.",
-        "D": "No se omite el aprendizaje; se prepara."
-    }
+  "id_item": "MTV_B22_I02",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y didáctica",
+  "tema": "Aprendizaje significativo (Ausubel)",
+  "subtema": "Presaberes",
+  "competencia": "Analiza situaciones de aula y aplica principios de aprendizaje significativo para valorar decisiones pedagógicas.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Distingue prácticas de enseñanza memorística de prácticas que promueven integración sustantiva con saberes previos y comprensión con sentido.",
+  "evidencia": "Selecciona la opción que mejor explica la decisión pedagógica coherente con el aprendizaje significativo en el caso planteado.",
+  "tarea": "Inferir, a partir del caso, la condición didáctica que permite aprendizaje significativo según Ausubel.",
+  "contexto": "Antes de explicar fracciones, un docente pregunta a sus estudiantes cómo reparten una pizza, una chocolatina o una botella de jugo entre varias personas. Luego conecta esas experiencias con el concepto matemático.",
+  "enunciado": "Antes de explicar fracciones, un docente pregunta a sus estudiantes cómo reparten una pizza, una chocolatina o una botella de jugo entre varias personas. Luego conecta esas experiencias con el concepto matemático.\n\n¿Qué principio de Ausubel está aplicando?",
+  "opciones": {
+    "A": "Activación de saberes previos.",
+    "B": "Evaluación punitiva.",
+    "C": "Repetición conductista sin contexto.",
+    "D": "Currículo nulo."
+  },
+  "clave": "A",
+  "justificacion_clave": "El docente parte de experiencias previas para anclar el nuevo concepto en estructuras cognitivas existentes.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "No hay castigo ni control punitivo.",
+    "C": "La situación está contextualizada.",
+    "D": "No se omite el aprendizaje; se prepara."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje pedagógico estándar y contexto escolar general sin referencias culturales excluyentes."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciados directos con una sola tarea cognitiva y vocabulario de uso docente."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
 }

@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B22_I05",
-    "tema": "Atención y disposición para aprender",
-    "competencia": "Condiciones pedagógicas del aprendizaje",
-    "dificultad": "Media",
-    "enunciado": "Una docente inicia la clase con una pregunta retadora conectada con la vida cotidiana de sus estudiantes. Con esto logra captar su atención y preparar el terreno para el nuevo contenido.\n\n¿Por qué esta acción favorece el aprendizaje significativo?",
-    "opciones": {
-        "A": "Porque distrae del contenido central.",
-        "B": "Porque genera disposición, atención y conexión inicial con el tema.",
-        "C": "Porque elimina la necesidad de enseñar.",
-        "D": "Porque convierte la clase en entretenimiento sin propósito."
-    },
-    "respuesta_correcta": "B",
-    "justificacion_clave": "La atención y la disposición positiva facilitan que el nuevo contenido pueda relacionarse con ideas previas y experiencias significativas.",
-    "distractores": {
-        "A": "La pregunta orienta hacia el contenido.",
-        "C": "Captar atención no reemplaza la enseñanza.",
-        "D": "La motivación tiene propósito pedagógico."
-    }
+  "id_item": "MTV_B22_I05",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y didáctica",
+  "tema": "Aprendizaje significativo (Ausubel)",
+  "subtema": "Atención y disposición para aprender",
+  "competencia": "Analiza situaciones de aula y aplica principios de aprendizaje significativo para valorar decisiones pedagógicas.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Distingue prácticas de enseñanza memorística de prácticas que promueven integración sustantiva con saberes previos y comprensión con sentido.",
+  "evidencia": "Selecciona la opción que mejor explica la decisión pedagógica coherente con el aprendizaje significativo en el caso planteado.",
+  "tarea": "Inferir, a partir del caso, la condición didáctica que permite aprendizaje significativo según Ausubel.",
+  "contexto": "Una docente inicia la clase con una pregunta retadora conectada con la vida cotidiana de sus estudiantes. Con esto logra captar su atención y preparar el terreno para el nuevo contenido.",
+  "enunciado": "Una docente inicia la clase con una pregunta retadora conectada con la vida cotidiana de sus estudiantes. Con esto logra captar su atención y preparar el terreno para el nuevo contenido.\n\n¿Por qué esta acción favorece el aprendizaje significativo?",
+  "opciones": {
+    "A": "Porque distrae del contenido central.",
+    "B": "Porque genera disposición, atención y conexión inicial con el tema.",
+    "C": "Porque elimina la necesidad de enseñar.",
+    "D": "Porque convierte la clase en entretenimiento sin propósito."
+  },
+  "clave": "B",
+  "justificacion_clave": "La atención y la disposición positiva facilitan que el nuevo contenido pueda relacionarse con ideas previas y experiencias significativas.",
+  "distractores_funcion": {
+    "A": "La pregunta orienta hacia el contenido.",
+    "B": "Clave correcta.",
+    "C": "Captar atención no reemplaza la enseñanza.",
+    "D": "La motivación tiene propósito pedagógico."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje pedagógico estándar y contexto escolar general sin referencias culturales excluyentes."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciados directos con una sola tarea cognitiva y vocabulario de uso docente."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I05.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
 }

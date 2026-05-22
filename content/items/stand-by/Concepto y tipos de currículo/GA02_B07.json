@@ -1,108 +1,45 @@
 {
-    "bloque": {
-        "codigo_bloque": "GA02_B07",
-        "nombre": "Calidad educativa y ciclo PHVA",
-        "estado_en_lista": "Bloque 7 de 8",
-        "decision_del_bloque": "Pregunta única",
-        "preguntas_recomendadas": 1,
-        "ajuste_aplicado": "Se corrige la formulación original de cinco pasos y se adopta el ciclo PHVA en cuatro fases: Planear, Hacer, Verificar y Actuar."
-    },
-    "preguntas": [
-        {
-            "id_item": "GA02_B07_I01",
-            "archivo_sugerido": "GA02_B07_I01_calidad_educativa_phva.json",
-            "diseno_previo": {
-                "proposito_de_uso": "Evaluar si el aspirante reconoce que el ciclo PHVA permite orientar el mejoramiento continuo del currículo mediante acciones de planeación, implementación, verificación y ajuste.",
-                "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica, gestión académica o gestión directiva en educación básica y media.",
-                "blueprint": {
-                    "problematica_principal": "Aplicación débil del ciclo de mejoramiento continuo al currículo.",
-                    "fuente_autorizada": [
-                        "Sistema de gestión de calidad institucional",
-                        "Ciclo PHVA",
-                        "Orientaciones de mejoramiento institucional",
-                        "Proyecto Educativo Institucional",
-                        "Plan de mejoramiento institucional"
-                    ],
-                    "componente_modulo": "Gestión Académica / Mejoramiento continuo",
-                    "competencia": "Evaluación y mejora curricular",
-                    "afirmacion": "El currículo debe someterse a procesos de mejoramiento continuo mediante el ciclo PHVA.",
-                    "evidencia_observable": "Reconoce la lógica de Planear, Hacer, Verificar y Actuar aplicada al currículo institucional.",
-                    "tipo_de_evidencia": "Reconocimiento procedimental aplicado a la gestión curricular",
-                    "formato": "Selección múltiple con única respuesta",
-                    "numero_opciones": 4,
-                    "clave": "C"
-                },
-                "claim": "El evaluado comprende que el mejoramiento curricular exige planear acciones con base en necesidades identificadas, implementarlas, verificar sus resultados y realizar ajustes para fortalecer la calidad educativa.",
-                "evidencia_observable": "Selecciona la secuencia que aplica correctamente las fases del ciclo PHVA al proceso curricular institucional.",
-                "tarea_cognitiva": "Analizar una situación de mejoramiento curricular y reconocer la aplicación correcta del ciclo PHVA.",
-                "tipo_de_pregunta": "Pregunta procedimental aplicada",
-                "dificultad_esperada": "Media",
-                "riesgos_de_fairness": [
-                    {
-                        "riesgo": "Confusión por la formulación original de cinco pasos",
-                        "revision": "El ítem corrige explícitamente la estructura del PHVA como ciclo de cuatro fases: Planear, Hacer, Verificar y Actuar."
-                    },
-                    {
-                        "riesgo": "Sesgo por experiencia en sistemas de calidad",
-                        "revision": "No exige experiencia directa en auditorías o certificaciones; el caso contextualiza el ciclo en una situación curricular comprensible."
-                    },
-                    {
-                        "riesgo": "Ambigüedad entre evaluar y verificar",
-                        "revision": "La clave diferencia verificar resultados de actuar con ajustes de mejoramiento."
-                    },
-                    {
-                        "riesgo": "Lenguaje técnico excesivo",
-                        "revision": "Se usa la sigla PHVA, pero las fases se escriben completas y se aplican a una situación institucional concreta."
-                    }
-                ]
-            },
-            "item": {
-                "enunciado": "Una institución educativa identifica que varios componentes de su currículo no están respondiendo a las necesidades actuales de los estudiantes. Para mejorar la calidad educativa, el equipo académico decide aplicar el ciclo PHVA al proceso curricular.\n\n¿Cuál secuencia expresa mejor la aplicación de este ciclo al mejoramiento del currículo?",
-                "opciones": {
-                    "A": "Planear cambios curriculares, archivarlos en documentos institucionales y esperar que los resultados mejoren sin seguimiento.",
-                    "B": "Hacer actividades nuevas en el aula, cambiar de estrategia cada semana y evitar revisar evidencias para no retrasar el proceso.",
-                    "C": "Planear acciones de mejora, implementarlas, verificar sus resultados con evidencias y actuar realizando ajustes curriculares.",
-                    "D": "Verificar únicamente los resultados finales de las pruebas externas y sancionar a los docentes cuyos grupos no mejoren."
-                },
-                "respuesta_correcta": "C"
-            },
-            "ficha_tecnica": {
-                "componente": "Gestión Académica / Mejoramiento continuo",
-                "competencia": "Evaluación y mejora curricular",
-                "claim_evaluado": "El evaluado comprende que el mejoramiento curricular exige planear acciones con base en necesidades identificadas, implementarlas, verificar sus resultados y realizar ajustes para fortalecer la calidad educativa.",
-                "evidencia": "Selecciona la secuencia que aplica correctamente las fases del ciclo PHVA al proceso curricular institucional.",
-                "proceso_cognitivo": "Reconocimiento procedimental aplicado y juicio de gestión curricular",
-                "tipo_de_item": "Selección múltiple con única respuesta",
-                "nivel_de_dificultad": "Media",
-                "respuesta_correcta": "C",
-                "distractores": {
-                    "A": "Reduce la mejora curricular a planeación documental sin implementación ni seguimiento.",
-                    "B": "Confunde innovación con improvisación y omite la verificación con evidencias.",
-                    "D": "Reduce la calidad educativa a resultados externos y plantea una respuesta sancionatoria en lugar de mejoramiento continuo."
-                },
-                "fuente_autorizada": [
-                    "Sistema de gestión de calidad institucional",
-                    "Ciclo PHVA",
-                    "Orientaciones de mejoramiento institucional",
-                    "Proyecto Educativo Institucional",
-                    "Plan de mejoramiento institucional"
-                ]
-            },
-            "justificacion_editorial": {
-                "clave": "La opción C es correcta porque aplica de manera completa el ciclo PHVA: planear acciones de mejora, hacer o implementar lo planeado, verificar los resultados mediante evidencias y actuar realizando ajustes curriculares.",
-                "opcion_A": "Es incorrecta porque deja el proceso en el plano documental y no incluye implementación, verificación ni ajuste.",
-                "opcion_B": "Es incorrecta porque propone cambios sin seguimiento ni análisis de evidencias, lo cual contradice el mejoramiento continuo.",
-                "opcion_D": "Es incorrecta porque limita la verificación a pruebas externas y convierte el proceso de calidad en sanción, no en mejora curricular."
-            },
-            "revision_fairness": {
-                "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-                "argumento": "El ítem no exige experiencia en certificaciones de calidad ni conocimiento especializado en auditoría. La situación ofrece suficiente contexto para reconocer las cuatro fases del ciclo PHVA aplicadas al currículo. Además, evita responsabilizar individualmente a docentes o estudiantes por los resultados institucionales."
-            },
-            "dictamen_final": {
-                "estado": "Aprobado",
-                "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada. Se mantiene el ajuste editorial: PHVA se formula en cuatro fases y no en cinco pasos.",
-                "uso_recomendado": "Puede usarse como pregunta única del bloque Calidad educativa y ciclo PHVA."
-            }
-        }
-    ]
+  "id_item": "GA02_B07_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión curricular",
+  "tema": "Concepto y tipos de currículo",
+  "subtema": "Gestión Académica / Mejoramiento continuo",
+  "competencia": "Distingue tipos de currículo y su manifestación en prácticas institucionales y de aula.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la decisión pedagógica o institucional más coherente con el enfoque evaluado en el caso.",
+  "evidencia": "Selecciona una única alternativa técnicamente superior frente a distractores plausibles.",
+  "tarea": "Analizar la situación planteada y elegir la respuesta más adecuada según el criterio del ítem.",
+  "contexto": "Una institución educativa identifica que varios componentes de su currículo no están respondiendo a las necesidades actuales de los estudiantes. Para mejorar la calidad educativa, el equipo académico decide aplicar el ciclo PHVA al proceso curricular.",
+  "enunciado": "Una institución educativa identifica que varios componentes de su currículo no están respondiendo a las necesidades actuales de los estudiantes. Para mejorar la calidad educativa, el equipo académico decide aplicar el ciclo PHVA al proceso curricular.\n\n¿Cuál secuencia expresa mejor la aplicación de este ciclo al mejoramiento del currículo?",
+  "opciones": {
+    "A": "Planear cambios curriculares, archivarlos en documentos institucionales y esperar que los resultados mejoren sin seguimiento.",
+    "B": "Hacer actividades nuevas en el aula, cambiar de estrategia cada semana y evitar revisar evidencias para no retrasar el proceso.",
+    "C": "Planear acciones de mejora, implementarlas, verificar sus resultados con evidencias y actuar realizando ajustes curriculares.",
+    "D": "Verificar únicamente los resultados finales de las pruebas externas y sancionar a los docentes cuyos grupos no mejoren."
+  },
+  "clave": "C",
+  "justificacion_clave": "La opción C es correcta porque aplica de manera completa el ciclo PHVA: planear acciones de mejora, hacer o implementar lo planeado, verificar los resultados mediante evidencias y actuar realizando ajustes curriculares.",
+  "distractores_funcion": {
+    "A": "Reduce la mejora curricular a planeación documental sin implementación ni seguimiento.",
+    "B": "Confunde innovación con improvisación y omite la verificación con evidencias.",
+    "C": "Clave correcta.",
+    "D": "Reduce la calidad educativa a resultados externos y plantea una respuesta sancionatoria en lugar de mejoramiento continuo."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Contexto educativo general y lenguaje técnico accesible sin sesgos culturales innecesarios."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado claro con una sola tarea cognitiva."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Concepto y tipos de currículo/GA02_B07.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
 }

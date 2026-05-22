@@ -1,107 +1,45 @@
 {
   "id_item": "CB01_I01",
-  "bloque": {
-    "numero": 1,
-    "nombre": "Currículo y Contexto Social",
-    "estado_en_lista": "Bloque 1 de 15",
-    "decision_del_bloque": "Grupo de 3 preguntas",
-    "item_en_grupo": "Ítem 1 de 3"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Currículo y contexto",
+  "tema": "Currículo y Contexto Social",
+  "subtema": "Gestión Directiva",
+  "competencia": "Analiza la pertinencia curricular frente a características y necesidades del contexto social.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la alternativa más adecuada según el criterio curricular y pedagógico evaluado en el caso.",
+  "evidencia": "Selecciona una única respuesta técnicamente defendible frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión curricular, didáctica o institucional.",
+  "contexto": "En una institución educativa, el equipo directivo identifica bajos niveles de participación estudiantil, desmotivación frente a algunas áreas y poca relación entre los proyectos de aula y las problemáticas del entorno. Ante esta situación, se propone revisar la estrategia pedagógica del Proyecto Educativo Institucional.",
+  "enunciado": "En una institución educativa, el equipo directivo identifica bajos niveles de participación estudiantil, desmotivación frente a algunas áreas y poca relación entre los proyectos de aula y las problemáticas del entorno. Ante esta situación, se propone revisar la estrategia pedagógica del Proyecto Educativo Institucional.\n\n¿Cuál de las siguientes acciones expresa mejor el rol del docente y del directivo como sujetos responsables del diseño pedagógico institucional?",
+  "opciones": {
+    "A": "Aplicar el mismo plan de estudios del año anterior, porque mantener la continuidad garantiza estabilidad académica.",
+    "B": "Revisar únicamente los resultados de pruebas externas, ya que estos son el principal criterio para definir la propuesta pedagógica.",
+    "C": "Analizar las necesidades del contexto con participación de la comunidad educativa y ajustar la estrategia pedagógica del PEI a dichas realidades.",
+    "D": "Delegar la revisión curricular exclusivamente en una comisión administrativa para evitar discusiones extensas con docentes y estudiantes."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce que el diseño pedagógico institucional no es una actividad meramente técnica, sino una responsabilidad directiva y docente situada en el contexto social, cultural y territorial de la comunidad educativa.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "Rol político del docente/directivo en el diseño pedagógico",
-      "fuente_autorizada": [
-        "Constitución Política de Colombia",
-        "Ley 115 de 1994",
-        "Orientaciones del MEN sobre Proyecto Educativo Institucional"
-      ],
-      "componente_modulo": "Gestión Directiva",
-      "competencia": "Liderazgo contextual",
-      "afirmacion": "La propuesta pedagógica debe responder al contexto social de la comunidad educativa.",
-      "evidencia_observable": "El evaluado identifica que una propuesta pedagógica pertinente exige lectura del contexto y participación institucional.",
-      "tipo_de_evidencia": "Interpretación de situación institucional",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende que el diseño pedagógico institucional implica una toma de posición responsable frente al contexto social, cultural y educativo de la comunidad, y no únicamente la aplicación de contenidos o formatos curriculares.",
-    "evidencia_observable": "Selecciona la acción institucional que articula diagnóstico del contexto, participación de la comunidad educativa y ajuste de la propuesta pedagógica a las necesidades reales del entorno.",
-    "tarea_cognitiva": "Analizar una situación de gestión académica y reconocer la decisión más pertinente desde una perspectiva de liderazgo contextual.",
-    "tipo_de_pregunta": "Caso situacional de juicio profesional",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Sesgo urbano/rural",
-        "revision": "El caso no privilegia un contexto urbano o rural específico."
-      },
-      {
-        "riesgo": "Sesgo socioeconómico",
-        "revision": "No responsabiliza a familias o estudiantes por condiciones estructurales."
-      },
-      {
-        "riesgo": "Lenguaje técnico excesivo",
-        "revision": "Se evita terminología especializada innecesaria."
-      },
-      {
-        "riesgo": "Ambigüedad institucional",
-        "revision": "Las opciones distinguen claramente entre trámite, diagnóstico, participación y estandarización."
-      },
-      {
-        "riesgo": "Carga normativa",
-        "revision": "La pregunta no exige recordar números de leyes o decretos."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque representa una decisión conservadora y administrativa, pero no contextualizada.",
+    "B": "Es incorrecta porque las pruebas externas pueden aportar información, pero no son suficientes para definir integralmente la propuesta pedagógica.",
+    "C": "Clave correcta.",
+    "D": "Es incorrecta porque reduce el PEI a un trámite interno y desconoce la participación institucional."
   },
-  "item": {
-    "enunciado": "En una institución educativa, el equipo directivo identifica bajos niveles de participación estudiantil, desmotivación frente a algunas áreas y poca relación entre los proyectos de aula y las problemáticas del entorno. Ante esta situación, se propone revisar la estrategia pedagógica del Proyecto Educativo Institucional.\n\n¿Cuál de las siguientes acciones expresa mejor el rol del docente y del directivo como sujetos responsables del diseño pedagógico institucional?",
-    "opciones": {
-      "A": "Aplicar el mismo plan de estudios del año anterior, porque mantener la continuidad garantiza estabilidad académica.",
-      "B": "Revisar únicamente los resultados de pruebas externas, ya que estos son el principal criterio para definir la propuesta pedagógica.",
-      "C": "Analizar las necesidades del contexto con participación de la comunidad educativa y ajustar la estrategia pedagógica del PEI a dichas realidades.",
-      "D": "Delegar la revisión curricular exclusivamente en una comisión administrativa para evitar discusiones extensas con docentes y estudiantes."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo estandarizado y contexto institucional general, sin sesgos culturales innecesarios."
   },
-  "ficha_tecnica": {
-    "componente": "Gestión Directiva",
-    "competencia": "Liderazgo contextual",
-    "claim_evaluado": "El diseño pedagógico institucional debe responder al contexto social y a las necesidades de la comunidad educativa.",
-    "evidencia": "Identifica una acción directiva y docente basada en diagnóstico contextual y participación institucional.",
-    "proceso_cognitivo": "Análisis y juicio profesional",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Medio",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Reduce la gestión pedagógica a continuidad administrativa.",
-      "B": "Sobredimensiona las pruebas externas y desconoce otras fuentes de lectura institucional.",
-      "D": "Excluye la participación de la comunidad educativa."
-    },
-    "fuente_autorizada": [
-      "Constitución Política de Colombia",
-      "Ley 115 de 1994",
-      "Orientaciones MEN sobre PEI"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado claro, tarea única y opciones homogéneas en estructura."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque representa una decisión conservadora y administrativa, pero no contextualizada.",
-    "opcion_B": "Es incorrecta porque las pruebas externas pueden aportar información, pero no son suficientes para definir integralmente la propuesta pedagógica.",
-    "opcion_D": "Es incorrecta porque reduce el PEI a un trámite interno y desconoce la participación institucional.",
-    "distractores": {
-      "A": "Es incorrecta porque representa una decisión conservadora y administrativa, pero no contextualizada.",
-      "B": "Es incorrecta porque las pruebas externas pueden aportar información, pero no son suficientes para definir integralmente la propuesta pedagógica.",
-      "D": "Es incorrecta porque reduce el PEI a un trámite interno y desconoce la participación institucional."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "No exige conocimiento de una región específica, no presupone recursos institucionales extraordinarios y no penaliza experiencias en instituciones con condiciones diversas. La situación puede presentarse en contextos urbanos, rurales, oficiales o privados. El lenguaje es claro y profesional."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado con ajuste editorial menor opcional.",
-    "uso_recomendado": "Puede incorporarse como ítem 1 de un grupo de 3 preguntas sobre currículo, PEI y contexto social."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Currículo y Contexto Social/CB01_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

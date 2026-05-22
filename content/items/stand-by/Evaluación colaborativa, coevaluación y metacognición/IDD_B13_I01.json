@@ -1,104 +1,45 @@
 {
   "id_item": "IDD_B13_I01",
-  "archivo_sugerido": "IDD_B13_I01_evaluacion_por_roles_trabajo_colaborativo.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B13",
-    "nombre": "Evaluación colaborativa, coevaluación y metacognición",
-    "estado_en_lista": "Bloque 13 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 1 de 3"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Evaluación del aprendizaje",
+  "tema": "Evaluación colaborativa, coevaluación y metacognición",
+  "subtema": "Evaluación colaborativa y coevaluación",
+  "competencia": "Selecciona estrategias evaluativas colaborativas que promueven coevaluación, argumentación y autorregulación del aprendizaje.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada para el caso planteado.",
+  "evidencia": "Selecciona una única alternativa defendible frente a distractores plausibles desde el constructo evaluado.",
+  "tarea": "Analizar el caso y elegir la opción más pertinente según criterios pedagógicos y normativos aplicables.",
+  "contexto": "",
+  "enunciado": "Un docente evalúa siempre de forma individual y en silencio. Decide implementar evaluación por parejas o grupos con roles definidos, criterios claros y momentos de coevaluación. ¿Qué beneficio aporta esta estrategia?",
+  "opciones": {
+    "A": "Permite que algunos estudiantes resuelvan por otros sin evidencia individual.",
+    "B": "Favorece argumentación, explicación entre pares, monitoreo del propio aprendizaje y mejora de decisiones grupales.",
+    "C": "Hace innecesarios los criterios de evaluación porque basta observar participación.",
+    "D": "Reduce la posibilidad de detectar dificultades porque todos responden de manera conjunta."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce los beneficios cognitivos y formativos de evaluar mediante dinámicas de parejas, grupos o roles, frente a una evaluación individual silenciosa y aislada.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, evaluación formativa, didáctica, inclusión educativa o gestión académica.",
-    "blueprint": {
-      "problematica_principal": "Reducción de la evaluación a una práctica individual, silenciosa y memorística que no favorece interacción, argumentación ni coevaluación.",
-      "fuente_autorizada": [
-        "Evaluación formativa",
-        "Aprendizaje colaborativo",
-        "Coevaluación",
-        "Metacognición",
-        "Evaluación por competencias"
-      ],
-      "componente_modulo": "Evaluación por Roles y Trabajo Colaborativo",
-      "competencia": "Diseño de evaluación colaborativa",
-      "afirmacion": "La evaluación colaborativa permite observar argumentación, interacción, explicación entre pares, toma de decisiones y regulación del aprendizaje.",
-      "evidencia_observable": "Reconoce beneficios cognitivos y coevaluativos de evaluar en parejas o grupos con criterios claros.",
-      "tipo_de_evidencia": "Juicio evaluativo aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado comprende que la evaluación colaborativa no elimina el rigor, sino que permite evidenciar procesos de comprensión, argumentación y regulación social del aprendizaje.",
-    "evidencia_observable": "Selecciona una opción que identifica beneficios de la evaluación por parejas o grupos: explicación, discusión, coevaluación, roles y aprendizaje activo.",
-    "tarea_cognitiva": "Comparar una evaluación individual tradicional con una evaluación colaborativa basada en roles y criterios.",
-    "tipo_de_pregunta": "Caso situacional de juicio evaluativo",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confundir trabajo en grupo con copia o reparto desigual",
-        "revision": "La clave exige roles, criterios claros y evidencias individuales y grupales."
-      },
-      {
-        "riesgo": "Eliminar responsabilidad individual",
-        "revision": "El ítem mantiene criterios y observación del aporte de cada estudiante."
-      },
-      {
-        "riesgo": "Favorecer estudiantes más extrovertidos",
-        "revision": "La evaluación por roles permite distintas formas de participación."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "La opción B describe procesos cognitivos y metacognitivos esperados en evaluación colaborativa con diseño riguroso.",
+  "distractores_funcion": {
+    "A": "Confunde colaboración con delegación del trabajo.",
+    "B": "Clave correcta.",
+    "C": "Niega el papel indispensable de criterios explícitos.",
+    "D": "Asume erróneamente que la interacción impide observar desempeño."
   },
-  "item": {
-    "enunciado": "Un docente acostumbra evaluar siempre en silencio, de forma individual y en fila. Quiere introducir una dinámica de evaluación por parejas o grupos con roles definidos, criterios claros y momentos de coevaluación.\n\n¿Qué beneficio cognitivo y formativo aporta esta estrategia?",
-    "opciones": {
-      "A": "Permite que unos estudiantes respondan por otros sin necesidad de evidenciar comprensión individual.",
-      "B": "Favorece la argumentación, la explicación entre pares, la regulación del aprendizaje, la coevaluación y la construcción colaborativa de soluciones.",
-      "C": "Elimina la necesidad de criterios de evaluación porque el trabajo grupal se califica solo por participación.",
-      "D": "Impide que el docente identifique dificultades de aprendizaje."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo estándar, sin sesgos culturales innecesarios ni barreras de comprensión relevantes."
   },
-  "ficha_tecnica": {
-    "componente": "Evaluación por Roles y Trabajo Colaborativo",
-    "competencia": "Diseño de evaluación colaborativa",
-    "claim_evaluado": "El evaluado comprende que la evaluación colaborativa no elimina el rigor, sino que permite evidenciar procesos de comprensión, argumentación y regulación social del aprendizaje.",
-    "evidencia": "Selecciona una opción que identifica beneficios de la evaluación por parejas o grupos: explicación, discusión, coevaluación, roles y aprendizaje activo.",
-    "proceso_cognitivo": "Análisis y juicio evaluativo",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Confunde colaboración con delegación o copia.",
-      "C": "Elimina indebidamente los criterios de evaluación.",
-      "D": "Desconoce que la interacción también produce evidencias observables."
-    },
-    "fuente_autorizada": [
-      "Evaluación formativa",
-      "Aprendizaje colaborativo",
-      "Coevaluación",
-      "Metacognición",
-      "Evaluación por competencias"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque el trabajo colaborativo no debe permitir que unos sustituyan el aprendizaje de otros.",
-    "opcion_C": "Es incorrecta porque la colaboración requiere criterios explícitos.",
-    "opcion_D": "Es incorrecta porque el docente puede observar procesos, errores, explicaciones y aportes.",
-    "distractores": {
-      "A": "Es incorrecta porque el trabajo colaborativo no debe permitir que unos sustituyan el aprendizaje de otros.",
-      "C": "Es incorrecta porque la colaboración requiere criterios explícitos.",
-      "D": "Es incorrecta porque el docente puede observar procesos, errores, explicaciones y aportes."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem promueve participación diversa y mantiene criterios claros para evitar que la evaluación grupal oculte desigualdades en los aportes."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 3 preguntas sobre evaluación colaborativa, coevaluación y metacognición."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Evaluación colaborativa, coevaluación y metacognición/IDD_B13_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

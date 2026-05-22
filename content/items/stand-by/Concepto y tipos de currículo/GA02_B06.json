@@ -1,105 +1,45 @@
 {
-    "bloque": {
-        "codigo_bloque": "GA02_B06",
-        "nombre": "Contexto, currículo e identidad cultural",
-        "estado_en_lista": "Bloque 6 de 8",
-        "decision_del_bloque": "Pregunta única",
-        "preguntas_recomendadas": 1
-    },
-    "preguntas": [
-        {
-            "id_item": "GA02_B06_I01",
-            "archivo_sugerido": "GA02_B06_I01_contexto_identidad_cultural_curriculo.json",
-            "diseno_previo": {
-                "proposito_de_uso": "Evaluar si el aspirante reconoce que el currículo educativo debe responder a las necesidades del contexto, la identidad cultural, la diversidad social y las características de la comunidad educativa.",
-                "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
-                "blueprint": {
-                    "problematica_principal": "Falta de reconocimiento del contexto y de la identidad cultural en el diseño curricular.",
-                    "fuente_autorizada": [
-                        "Ley 115 de 1994",
-                        "Constitución Política de Colombia",
-                        "Lineamientos curriculares del Ministerio de Educación Nacional",
-                        "Proyecto Educativo Institucional"
-                    ],
-                    "componente_modulo": "Currículo Educativo",
-                    "competencia": "Pertinencia curricular",
-                    "afirmacion": "El currículo debe atender necesidades del contexto, identidad cultural y diversidad social.",
-                    "evidencia_observable": "Identifica que el currículo responde a necesidades locales, regionales, culturales y sociales de la comunidad educativa.",
-                    "tipo_de_evidencia": "Comprensión conceptual aplicada al contexto institucional",
-                    "formato": "Selección múltiple con única respuesta",
-                    "numero_opciones": 4,
-                    "clave": "B"
-                },
-                "claim": "El evaluado comprende que el currículo no puede diseñarse de manera descontextualizada, sino que debe responder a las necesidades, intereses, problemas, características culturales y condiciones sociales de los estudiantes, la comunidad local, la región y el país.",
-                "evidencia_observable": "Selecciona una decisión curricular que reconoce la identidad cultural, el contexto local y las necesidades sociales como referentes para la planeación educativa.",
-                "tarea_cognitiva": "Analizar una situación de diseño curricular y seleccionar la alternativa que expresa mayor pertinencia contextual y cultural.",
-                "tipo_de_pregunta": "Caso situacional de juicio curricular",
-                "dificultad_esperada": "Media",
-                "riesgos_de_fairness": [
-                    {
-                        "riesgo": "Sesgo urbano/rural",
-                        "revision": "El ítem no privilegia un contexto urbano o rural; plantea la pertinencia curricular como criterio aplicable a cualquier comunidad educativa."
-                    },
-                    {
-                        "riesgo": "Folclorización de la identidad cultural",
-                        "revision": "La clave no reduce la identidad cultural a celebraciones aisladas, sino que la integra con necesidades, saberes, problemas y participación de la comunidad."
-                    },
-                    {
-                        "riesgo": "Sesgo socioeconómico",
-                        "revision": "El ítem no atribuye las necesidades del contexto a carencias individuales de estudiantes o familias, sino a condiciones que deben orientar decisiones curriculares."
-                    },
-                    {
-                        "riesgo": "Ambigüedad entre currículo contextualizado y currículo improvisado",
-                        "revision": "La opción correcta muestra que atender el contexto exige diagnóstico, articulación curricular y coherencia pedagógica, no improvisación."
-                    }
-                ]
-            },
-            "item": {
-                "enunciado": "Una institución educativa revisa su currículo y encuentra que los contenidos, proyectos y metodologías se han diseñado sin considerar las características culturales de la comunidad, las problemáticas del entorno ni los intereses de los estudiantes. El equipo académico propone ajustar el currículo para hacerlo más pertinente.\n\n¿A qué niveles de necesidades debe atender y contribuir el currículo educativo según una perspectiva contextual e integral?",
-                "opciones": {
-                    "A": "Únicamente a los contenidos definidos por cada docente, sin relación con la comunidad ni con el contexto social.",
-                    "B": "A las necesidades de los estudiantes, la comunidad local, la región y el país, considerando identidad cultural, diversidad social y condiciones del entorno.",
-                    "C": "Solo a las exigencias de pruebas externas, porque estas reemplazan el diagnóstico institucional y comunitario.",
-                    "D": "Exclusivamente a las actividades tradicionales de la institución, aunque ya no respondan a las necesidades actuales del grupo."
-                },
-                "respuesta_correcta": "B"
-            },
-            "ficha_tecnica": {
-                "componente": "Currículo Educativo",
-                "competencia": "Pertinencia curricular",
-                "claim_evaluado": "El evaluado comprende que el currículo no puede diseñarse de manera descontextualizada, sino que debe responder a las necesidades, intereses, problemas, características culturales y condiciones sociales de los estudiantes, la comunidad local, la región y el país.",
-                "evidencia": "Selecciona una decisión curricular que reconoce la identidad cultural, el contexto local y las necesidades sociales como referentes para la planeación educativa.",
-                "proceso_cognitivo": "Análisis y juicio curricular",
-                "tipo_de_item": "Selección múltiple con única respuesta",
-                "nivel_de_dificultad": "Media",
-                "respuesta_correcta": "B",
-                "distractores": {
-                    "A": "Reduce el currículo a decisiones individuales del docente y desconoce el contexto.",
-                    "C": "Sobredimensiona las pruebas externas y desplaza otros referentes de pertinencia curricular.",
-                    "D": "Confunde tradición institucional con pertinencia actual del currículo."
-                },
-                "fuente_autorizada": [
-                    "Ley 115 de 1994",
-                    "Constitución Política de Colombia",
-                    "Lineamientos curriculares del Ministerio de Educación Nacional",
-                    "Proyecto Educativo Institucional"
-                ]
-            },
-            "justificacion_editorial": {
-                "clave": "La opción B es correcta porque reconoce que el currículo debe responder a necesidades de los estudiantes, la comunidad local, la región y el país, integrando identidad cultural, diversidad social y condiciones del entorno.",
-                "opcion_A": "Es incorrecta porque limita el currículo a decisiones individuales del docente y desconoce su dimensión social, cultural e institucional.",
-                "opcion_C": "Es incorrecta porque las pruebas externas pueden aportar información, pero no reemplazan el diagnóstico del contexto ni la identidad cultural de la comunidad educativa.",
-                "opcion_D": "Es incorrecta porque las tradiciones institucionales pueden ser valiosas, pero deben revisarse a la luz de las necesidades actuales de los estudiantes y del entorno."
-            },
-            "revision_fairness": {
-                "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-                "argumento": "El ítem no favorece a aspirantes de una región específica ni exige conocimiento de una cultura particular. Evalúa la comprensión general de la pertinencia curricular y evita presentar el contexto como déficit o problema exclusivo de una comunidad."
-            },
-            "dictamen_final": {
-                "estado": "Aprobado",
-                "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-                "uso_recomendado": "Puede usarse como pregunta única del bloque Contexto, currículo e identidad cultural."
-            }
-        }
-    ]
+  "id_item": "GA02_B06_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión curricular",
+  "tema": "Concepto y tipos de currículo",
+  "subtema": "Currículo Educativo",
+  "competencia": "Distingue tipos de currículo y su manifestación en prácticas institucionales y de aula.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la decisión pedagógica o institucional más coherente con el enfoque evaluado en el caso.",
+  "evidencia": "Selecciona una única alternativa técnicamente superior frente a distractores plausibles.",
+  "tarea": "Analizar la situación planteada y elegir la respuesta más adecuada según el criterio del ítem.",
+  "contexto": "Una institución educativa revisa su currículo y encuentra que los contenidos, proyectos y metodologías se han diseñado sin considerar las características culturales de la comunidad, las problemáticas del entorno ni los intereses de los estudiantes. El equipo académico propone ajustar el currículo para hacerlo más pertinente.",
+  "enunciado": "Una institución educativa revisa su currículo y encuentra que los contenidos, proyectos y metodologías se han diseñado sin considerar las características culturales de la comunidad, las problemáticas del entorno ni los intereses de los estudiantes. El equipo académico propone ajustar el currículo para hacerlo más pertinente.\n\n¿A qué niveles de necesidades debe atender y contribuir el currículo educativo según una perspectiva contextual e integral?",
+  "opciones": {
+    "A": "Únicamente a los contenidos definidos por cada docente, sin relación con la comunidad ni con el contexto social.",
+    "B": "A las necesidades de los estudiantes, la comunidad local, la región y el país, considerando identidad cultural, diversidad social y condiciones del entorno.",
+    "C": "Solo a las exigencias de pruebas externas, porque estas reemplazan el diagnóstico institucional y comunitario.",
+    "D": "Exclusivamente a las actividades tradicionales de la institución, aunque ya no respondan a las necesidades actuales del grupo."
+  },
+  "clave": "B",
+  "justificacion_clave": "La opción B es correcta porque reconoce que el currículo debe responder a necesidades de los estudiantes, la comunidad local, la región y el país, integrando identidad cultural, diversidad social y condiciones del entorno.",
+  "distractores_funcion": {
+    "A": "Reduce el currículo a decisiones individuales del docente y desconoce el contexto.",
+    "B": "Clave correcta.",
+    "C": "Sobredimensiona las pruebas externas y desplaza otros referentes de pertinencia curricular.",
+    "D": "Confunde tradición institucional con pertinencia actual del currículo."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Contexto educativo general y lenguaje técnico accesible sin sesgos culturales innecesarios."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado claro con una sola tarea cognitiva."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Concepto y tipos de currículo/GA02_B06.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
 }

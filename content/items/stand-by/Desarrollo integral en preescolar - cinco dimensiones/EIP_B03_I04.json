@@ -1,40 +1,45 @@
 {
   "id_item": "EIP_B03_I04",
-  "archivo_sugerido": "EIP_B03_I04_dimension_cognoscitiva_no_memorizacion.json",
-  "proposito_de_uso": "Evaluar si el aspirante comprende la dimensión cognoscitiva como desarrollo de pensamiento, exploración, curiosidad y comprensión, no como simple memorización.",
-  "blueprint": {
-    "componente_modulo": "Dimensión cognoscitiva",
-    "competencia": "Comprensión del desarrollo del pensamiento infantil",
-    "afirmacion": "La dimensión cognoscitiva se favorece mediante exploración, curiosidad, preguntas, clasificación, observación, juego y resolución de situaciones adecuadas a la edad.",
-    "evidencia_observable": "Distingue desarrollo cognoscitivo de repetición mecánica de contenidos.",
-    "tipo_de_evidencia": "Juicio pedagógico aplicado",
-    "dificultad_esperada": "Media-Alta",
-    "clave": "D"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Educación inicial y preescolar",
+  "tema": "Desarrollo integral en preescolar - cinco dimensiones",
+  "subtema": "Dimensión cognoscitiva",
+  "competencia": "Analiza prácticas pedagógicas que promueven el desarrollo integral en las dimensiones corporal, cognitiva, comunicativa, ética y estética.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce la actuación pedagógica o institucional más adecuada de acuerdo con el enfoque evaluado en el caso.",
+  "evidencia": "Selecciona una única alternativa defendible técnicamente y coherente con el constructo del ítem.",
+  "tarea": "Analizar la situación presentada y elegir la respuesta más pertinente según criterios pedagógicos y normativos aplicables.",
+  "contexto": "Una docente de preescolar centra toda la jornada en repetir letras y números sin juego, exploración, preguntas, clasificación de objetos ni resolución de situaciones sencillas. Otra docente propone experiencias de observación, curiosidad, comparación y juego.",
+  "enunciado": "Una docente de preescolar centra toda la jornada en repetir letras y números sin juego, exploración, preguntas, clasificación de objetos ni resolución de situaciones sencillas. Otra docente propone experiencias de observación, curiosidad, comparación y juego.\n\n¿Cuál interpretación es más coherente con la dimensión cognoscitiva del desarrollo integral?",
+  "opciones": {
+    "A": "La dimensión cognoscitiva se logra únicamente copiando planas extensas.",
+    "B": "La dimensión cognoscitiva no debe trabajarse en preescolar.",
+    "C": "El pensamiento infantil solo se desarrolla mediante exámenes escritos.",
+    "D": "La dimensión cognoscitiva se fortalece con experiencias que promueven curiosidad, exploración, observación, clasificación, lenguaje y resolución de situaciones adecuadas a la edad."
   },
-  "item": {
-    "enunciado": "Una docente de preescolar centra toda la jornada en repetir letras y números sin juego, exploración, preguntas, clasificación de objetos ni resolución de situaciones sencillas. Otra docente propone experiencias de observación, curiosidad, comparación y juego.\n\n¿Cuál interpretación es más coherente con la dimensión cognoscitiva del desarrollo integral?",
-    "opciones": {
-      "A": "La dimensión cognoscitiva se logra únicamente copiando planas extensas.",
-      "B": "La dimensión cognoscitiva no debe trabajarse en preescolar.",
-      "C": "El pensamiento infantil solo se desarrolla mediante exámenes escritos.",
-      "D": "La dimensión cognoscitiva se fortalece con experiencias que promueven curiosidad, exploración, observación, clasificación, lenguaje y resolución de situaciones adecuadas a la edad."
-    },
-    "respuesta_correcta": "D"
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "Reduce el desarrollo cognoscitivo a copia mecánica.",
+    "B": "Desconoce una dimensión central del preescolar.",
+    "C": "Introduce una lógica evaluativa inadecuada para el nivel.",
+    "D": "Clave correcta."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "distractores": {
-      "A": "Reduce el desarrollo cognoscitivo a copia mecánica.",
-      "B": "Desconoce una dimensión central del preescolar.",
-      "C": "Introduce una lógica evaluativa inadecuada para el nivel."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo y normativo estándar, sin referencias discriminatorias ni barreras culturales innecesarias."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem respeta las formas de aprendizaje propias de la infancia y evita prácticas academicistas rígidas."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciados con tarea única y opciones comparables en estructura y longitud."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem apto para banco con revisión didáctica posterior."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Desarrollo integral en preescolar - cinco dimensiones/EIP_B03_I04.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

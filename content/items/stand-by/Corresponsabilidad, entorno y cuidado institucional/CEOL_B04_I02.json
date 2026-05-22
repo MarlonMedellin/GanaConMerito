@@ -1,108 +1,45 @@
 {
   "id_item": "CEOL_B04_I02",
-  "archivo_sugerido": "CEOL_B04_I02_gestion_entorno_situaciones_externas.json",
-  "bloque": {
-    "codigo_bloque": "CEOL_B04",
-    "nombre": "Corresponsabilidad, entorno y cuidado institucional",
-    "estado_en_lista": "Bloque 4 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 2 de 5"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Convivencia y cuidado institucional",
+  "tema": "Corresponsabilidad, entorno y cuidado institucional",
+  "subtema": "Gestión del Entorno",
+  "competencia": "Selecciona acciones de cuidado y prevención con enfoque de corresponsabilidad entre institución, familia y entorno.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada en el caso planteado.",
+  "evidencia": "Selecciona una alternativa única, consistente con el criterio evaluado y superior frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión según el enfoque del ítem.",
+  "contexto": "Una institución identifica que situaciones del barrio, como conflictos entre grupos juveniles, inseguridad y tensiones familiares, están afectando la asistencia, la convivencia y el bienestar emocional de varios estudiantes.",
+  "enunciado": "Una institución identifica que situaciones del barrio, como conflictos entre grupos juveniles, inseguridad y tensiones familiares, están afectando la asistencia, la convivencia y el bienestar emocional de varios estudiantes.\n\n¿De qué manera debe asumir la escuela estas situaciones externas que permean la vida escolar?",
+  "opciones": {
+    "A": "Ignorarlas porque todo lo que ocurre fuera de la institución es ajeno al proceso educativo.",
+    "B": "Sancionar preventivamente a los estudiantes que viven en los sectores más afectados.",
+    "C": "Reconocer el contexto, analizar sus efectos en la escuela, acompañar a los estudiantes, articularse con familias y entidades competentes y activar rutas cuando corresponda.",
+    "D": "Suspender las clases hasta que la comunidad externa resuelva por completo sus problemas."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce que la escuela debe asumir pedagógica e institucionalmente las situaciones externas que afectan a los estudiantes, mediante diagnóstico, articulación interinstitucional, acompañamiento y rutas de atención cuando corresponda.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación, rectoría o gestión comunitaria.",
-    "blueprint": {
-      "problematica_principal": "Desconexión entre escuela y entorno social que afecta a los estudiantes.",
-      "fuente_autorizada": [
-        "Ley 1620 de 2013",
-        "Ley 1098 de 2006",
-        "Proyecto Educativo Institucional",
-        "Manual de convivencia institucional",
-        "Ruta de Atención Integral para la Convivencia Escolar"
-      ],
-      "componente_modulo": "Gestión del Entorno",
-      "competencia": "Articulación escuela-comunidad",
-      "afirmacion": "La escuela debe reconocer y gestionar pedagógicamente las situaciones del entorno que inciden en la convivencia, permanencia y bienestar de los estudiantes.",
-      "evidencia_observable": "Selecciona una respuesta institucional que diagnostica, acompaña, articula apoyos y activa rutas sin culpabilizar a los estudiantes.",
-      "tipo_de_evidencia": "Juicio institucional aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende que las problemáticas del entorno no pueden ignorarse cuando afectan la vida escolar; la institución debe leer el contexto, prevenir riesgos, acompañar a los estudiantes y articularse con familia, comunidad y entidades competentes.",
-    "evidencia_observable": "Selecciona una actuación que integra diagnóstico de contexto, prevención, acompañamiento y articulación institucional.",
-    "tarea_cognitiva": "Analizar una situación externa que afecta la escuela y elegir una respuesta institucional adecuada.",
-    "tipo_de_pregunta": "Caso situacional de juicio profesional",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Estigmatizar a estudiantes por el barrio o entorno",
-        "revision": "La clave evita asociar el contexto con culpabilidad individual."
-      },
-      {
-        "riesgo": "Trasladar toda responsabilidad a la escuela",
-        "revision": "La respuesta correcta plantea articulación corresponsable, no actuación aislada de la institución."
-      },
-      {
-        "riesgo": "Minimizar situaciones externas",
-        "revision": "El ítem reconoce que el entorno puede afectar convivencia, bienestar y permanencia."
-      },
-      {
-        "riesgo": "Ambigüedad entre acompañamiento y control disciplinario",
-        "revision": "La opción correcta prioriza prevención, apoyo y rutas pertinentes."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque las situaciones externas pueden afectar directamente la convivencia, la asistencia y el aprendizaje.",
+    "B": "Es incorrecta porque sanciona por pertenencia territorial o contexto, lo que resulta discriminatorio.",
+    "C": "Clave correcta.",
+    "D": "Es incorrecta porque suspender el servicio educativo no es una respuesta pedagógica ni preventiva suficiente."
   },
-  "item": {
-    "enunciado": "Una institución identifica que situaciones del barrio, como conflictos entre grupos juveniles, inseguridad y tensiones familiares, están afectando la asistencia, la convivencia y el bienestar emocional de varios estudiantes.\n\n¿De qué manera debe asumir la escuela estas situaciones externas que permean la vida escolar?",
-    "opciones": {
-      "A": "Ignorarlas porque todo lo que ocurre fuera de la institución es ajeno al proceso educativo.",
-      "B": "Sancionar preventivamente a los estudiantes que viven en los sectores más afectados.",
-      "C": "Reconocer el contexto, analizar sus efectos en la escuela, acompañar a los estudiantes, articularse con familias y entidades competentes y activar rutas cuando corresponda.",
-      "D": "Suspender las clases hasta que la comunidad externa resuelva por completo sus problemas."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Caso con lenguaje técnico de uso educativo y sin referencias discriminatorias."
   },
-  "ficha_tecnica": {
-    "componente": "Gestión del Entorno",
-    "competencia": "Articulación escuela-comunidad",
-    "claim_evaluado": "El evaluado comprende que las problemáticas del entorno no pueden ignorarse cuando afectan la vida escolar; la institución debe leer el contexto, prevenir riesgos, acompañar a los estudiantes y articularse con familia, comunidad y entidades competentes.",
-    "evidencia": "Selecciona una actuación que integra diagnóstico de contexto, prevención, acompañamiento y articulación institucional.",
-    "proceso_cognitivo": "Análisis y juicio institucional",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Desconoce la relación entre entorno, bienestar y convivencia escolar.",
-      "B": "Estigmatiza a estudiantes por su contexto y anticipa sanciones sin debido proceso.",
-      "D": "Renuncia a la función educativa y preventiva de la institución."
-    },
-    "fuente_autorizada": [
-      "Ley 1620 de 2013",
-      "Ley 1098 de 2006",
-      "Proyecto Educativo Institucional",
-      "Manual de convivencia institucional",
-      "Ruta de Atención Integral para la Convivencia Escolar"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Estructura clara, una sola tarea cognitiva y opciones comparables."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque las situaciones externas pueden afectar directamente la convivencia, la asistencia y el aprendizaje.",
-    "opcion_B": "Es incorrecta porque sanciona por pertenencia territorial o contexto, lo que resulta discriminatorio.",
-    "opcion_D": "Es incorrecta porque suspender el servicio educativo no es una respuesta pedagógica ni preventiva suficiente.",
-    "distractores": {
-      "A": "Es incorrecta porque las situaciones externas pueden afectar directamente la convivencia, la asistencia y el aprendizaje.",
-      "B": "Es incorrecta porque sanciona por pertenencia territorial o contexto, lo que resulta discriminatorio.",
-      "D": "Es incorrecta porque suspender el servicio educativo no es una respuesta pedagógica ni preventiva suficiente."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem evita estigmatizar a estudiantes por su barrio o contexto familiar. Evalúa una respuesta institucional corresponsable, preventiva y protectora."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 5 preguntas sobre corresponsabilidad, entorno y cuidado institucional."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Corresponsabilidad, entorno y cuidado institucional/CEOL_B04_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

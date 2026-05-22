@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B22_I03",
-    "tema": "Memorización mecánica vs comprensión",
-    "competencia": "Diferenciación pedagógica",
-    "dificultad": "Media-Alta",
-    "enunciado": "Un estudiante memoriza que 3 x 3 = 9, pero no puede explicar que representa tres grupos de tres elementos o una suma reiterada. Otro estudiante sí puede representar la operación con objetos, dibujos y situaciones.\n\n¿Cuál interpretación es más adecuada?",
-    "opciones": {
-        "A": "El primer estudiante demuestra aprendizaje significativo completo.",
-        "B": "El segundo estudiante evidencia comprensión conceptual más cercana al aprendizaje significativo.",
-        "C": "La representación concreta impide aprender matemáticas.",
-        "D": "La multiplicación solo puede aprenderse repitiendo tablas."
-    },
-    "respuesta_correcta": "B",
-    "justificacion_clave": "Comprender la lógica de la operación permite relacionar símbolos, cantidades y situaciones, no solo memorizar un resultado.",
-    "distractores": {
-        "A": "Memorizar sin explicar no evidencia comprensión profunda.",
-        "C": "La representación concreta puede apoyar la comprensión.",
-        "D": "Las tablas pueden ayudar, pero no reemplazan el significado."
-    }
+  "id_item": "MTV_B22_I03",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y didáctica",
+  "tema": "Aprendizaje significativo (Ausubel)",
+  "subtema": "Memorización mecánica vs comprensión",
+  "competencia": "Analiza situaciones de aula y aplica principios de aprendizaje significativo para valorar decisiones pedagógicas.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA-ALTA",
+  "claim": "Distingue prácticas de enseñanza memorística de prácticas que promueven integración sustantiva con saberes previos y comprensión con sentido.",
+  "evidencia": "Selecciona la opción que mejor explica la decisión pedagógica coherente con el aprendizaje significativo en el caso planteado.",
+  "tarea": "Inferir, a partir del caso, la condición didáctica que permite aprendizaje significativo según Ausubel.",
+  "contexto": "Un estudiante memoriza que 3 x 3 = 9, pero no puede explicar que representa tres grupos de tres elementos o una suma reiterada. Otro estudiante sí puede representar la operación con objetos, dibujos y situaciones.",
+  "enunciado": "Un estudiante memoriza que 3 x 3 = 9, pero no puede explicar que representa tres grupos de tres elementos o una suma reiterada. Otro estudiante sí puede representar la operación con objetos, dibujos y situaciones.\n\n¿Cuál interpretación es más adecuada?",
+  "opciones": {
+    "A": "El primer estudiante demuestra aprendizaje significativo completo.",
+    "B": "El segundo estudiante evidencia comprensión conceptual más cercana al aprendizaje significativo.",
+    "C": "La representación concreta impide aprender matemáticas.",
+    "D": "La multiplicación solo puede aprenderse repitiendo tablas."
+  },
+  "clave": "B",
+  "justificacion_clave": "Comprender la lógica de la operación permite relacionar símbolos, cantidades y situaciones, no solo memorizar un resultado.",
+  "distractores_funcion": {
+    "A": "Memorizar sin explicar no evidencia comprensión profunda.",
+    "B": "Clave correcta.",
+    "C": "La representación concreta puede apoyar la comprensión.",
+    "D": "Las tablas pueden ayudar, pero no reemplazan el significado."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje pedagógico estándar y contexto escolar general sin referencias culturales excluyentes."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciados directos con una sola tarea cognitiva y vocabulario de uso docente."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
 }

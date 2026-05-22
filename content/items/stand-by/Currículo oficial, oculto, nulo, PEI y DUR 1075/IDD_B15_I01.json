@@ -1,104 +1,45 @@
 {
   "id_item": "IDD_B15_I01",
-  "archivo_sugerido": "IDD_B15_I01_dur_1075_estructuracion_educacion_nacional.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B15",
-    "nombre": "Currículo oficial, oculto, nulo, PEI y DUR 1075",
-    "estado_en_lista": "Bloque 15 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 1 de 6"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión curricular y normativa educativa",
+  "tema": "Currículo oficial, oculto, nulo, PEI y DUR 1075",
+  "subtema": "Currículo y PEI",
+  "competencia": "Distingue tipos de currículo y su articulación con PEI y marco normativo para valorar decisiones institucionales.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "MEDIA-ALTA",
+  "claim": "Identifica la alternativa más adecuada según el criterio curricular y pedagógico evaluado en el caso.",
+  "evidencia": "Selecciona una única respuesta técnicamente defendible frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión curricular, didáctica o institucional.",
+  "contexto": "Un equipo académico revisa el Decreto Único Reglamentario 1075 y el Decreto 1421 sobre educación inclusiva. Algunos docentes consideran que la inclusión es un anexo aislado y no un componente estructural de la vida escolar.",
+  "enunciado": "Un equipo académico revisa el Decreto Único Reglamentario 1075 y el Decreto 1421 sobre educación inclusiva. Algunos docentes consideran que la inclusión es un anexo aislado y no un componente estructural de la vida escolar.\n\n¿Cuál interpretación es más adecuada?",
+  "opciones": {
+    "A": "El DUR 1075 no tiene relación con la organización del sector educativo ni con la gestión escolar.",
+    "B": "El DUR 1075 compila y organiza la reglamentación educativa, y la inclusión debe integrarse de manera transversal al currículo, la planeación, la evaluación y la gestión institucional.",
+    "C": "La inclusión debe tratarse solo como un trámite externo al aula y sin relación con el PEI.",
+    "D": "El Decreto 1421 elimina la necesidad de currículo común para todos los estudiantes."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce la función del Decreto Único Reglamentario 1075 en la organización normativa del sector educación y reflexiona sobre el lugar estructural de la inclusión escolar.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación académica, gestión curricular o inclusión educativa.",
-    "blueprint": {
-      "problematica_principal": "Comprensión fragmentada del marco normativo educativo y de la inclusión como anexo o agregado, no como eje estructural de la gestión escolar.",
-      "fuente_autorizada": [
-        "Decreto 1075 de 2015",
-        "Decreto 1421 de 2017",
-        "Ley 115 de 1994",
-        "Educación inclusiva",
-        "Proyecto Educativo Institucional"
-      ],
-      "componente_modulo": "Currículo y PEI",
-      "competencia": "Comprensión normativa y curricular",
-      "afirmacion": "El DUR 1075 compila y organiza la reglamentación del sector educación; la inclusión debe integrarse transversalmente a la estructura institucional y curricular.",
-      "evidencia_observable": "Reconoce la función compiladora y reglamentaria del DUR y analiza la necesidad de que la inclusión no opere como asunto marginal.",
-      "tipo_de_evidencia": "Comprensión normativa aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado comprende que el marco normativo educativo organiza responsabilidades institucionales y que la inclusión debe atravesar la planeación, el currículo, la evaluación y la gestión escolar.",
-    "evidencia_observable": "Selecciona una explicación que relaciona DUR 1075, Decreto 1421 e inclusión como componente estructural de la escuela.",
-    "tarea_cognitiva": "Interpretar la función del DUR y valorar el lugar de la inclusión en la organización escolar.",
-    "tipo_de_pregunta": "Pregunta normativa conceptual aplicada",
-    "dificultad_esperada": "Media-Alta",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Exigir memorización normativa excesiva",
-        "revision": "El ítem contextualiza la función del DUR y no exige citar artículos específicos."
-      },
-      {
-        "riesgo": "Presentar la inclusión como crítica política sin fundamento pedagógico",
-        "revision": "La clave la ubica como eje transversal de calidad, currículo y participación."
-      },
-      {
-        "riesgo": "Confundir compilación normativa con creación de todos los derechos",
-        "revision": "La opción correcta diferencia organización normativa y aplicación institucional."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque el DUR sí estructura la reglamentación del sector educativo.",
+    "B": "Clave correcta.",
+    "C": "Es incorrecta porque la inclusión no es un asunto externo al aula.",
+    "D": "Es incorrecta porque la inclusión no elimina el currículo común, sino que exige apoyos y ajustes."
   },
-  "item": {
-    "enunciado": "Un equipo académico revisa el Decreto Único Reglamentario 1075 y el Decreto 1421 sobre educación inclusiva. Algunos docentes consideran que la inclusión es un anexo aislado y no un componente estructural de la vida escolar.\n\n¿Cuál interpretación es más adecuada?",
-    "opciones": {
-      "A": "El DUR 1075 no tiene relación con la organización del sector educativo ni con la gestión escolar.",
-      "B": "El DUR 1075 compila y organiza la reglamentación educativa, y la inclusión debe integrarse de manera transversal al currículo, la planeación, la evaluación y la gestión institucional.",
-      "C": "La inclusión debe tratarse solo como un trámite externo al aula y sin relación con el PEI.",
-      "D": "El Decreto 1421 elimina la necesidad de currículo común para todos los estudiantes."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo estandarizado y contexto institucional general, sin sesgos culturales innecesarios."
   },
-  "ficha_tecnica": {
-    "componente": "Currículo y PEI",
-    "competencia": "Comprensión normativa y curricular",
-    "claim_evaluado": "El evaluado comprende que el marco normativo educativo organiza responsabilidades institucionales y que la inclusión debe atravesar la planeación, el currículo, la evaluación y la gestión escolar.",
-    "evidencia": "Selecciona una explicación que relaciona DUR 1075, Decreto 1421 e inclusión como componente estructural de la escuela.",
-    "proceso_cognitivo": "Comprensión normativa aplicada",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media-Alta",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Desconoce la función reglamentaria y organizadora del DUR.",
-      "C": "Marginaliza la inclusión y la separa del aula y del PEI.",
-      "D": "Confunde inclusión con eliminación del currículo común."
-    },
-    "fuente_autorizada": [
-      "Decreto 1075 de 2015",
-      "Decreto 1421 de 2017",
-      "Ley 115 de 1994",
-      "Educación inclusiva",
-      "Proyecto Educativo Institucional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado claro, tarea única y opciones homogéneas en estructura."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque el DUR sí estructura la reglamentación del sector educativo.",
-    "opcion_C": "Es incorrecta porque la inclusión no es un asunto externo al aula.",
-    "opcion_D": "Es incorrecta porque la inclusión no elimina el currículo común, sino que exige apoyos y ajustes.",
-    "distractores": {
-      "A": "Es incorrecta porque el DUR sí estructura la reglamentación del sector educativo.",
-      "C": "Es incorrecta porque la inclusión no es un asunto externo al aula.",
-      "D": "Es incorrecta porque la inclusión no elimina el currículo común, sino que exige apoyos y ajustes."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no exige conocimiento jurídico especializado y evalúa la comprensión pedagógica de la inclusión como eje transversal."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 6 preguntas sobre currículo oficial, oculto, nulo, PEI y DUR 1075."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Currículo oficial, oculto, nulo, PEI y DUR 1075/IDD_B15_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

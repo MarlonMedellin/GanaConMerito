@@ -1,40 +1,45 @@
 {
   "id_item": "EIP_B06_I03",
-  "archivo_sugerido": "EIP_B06_I03_evaluacion_continua_no_punitiva.json",
-  "proposito_de_uso": "Evaluar si el aspirante diferencia evaluación continua y formativa de evaluación punitiva o finalista.",
-  "blueprint": {
-    "componente_modulo": "Evaluación continua",
-    "competencia": "Aplicación de evaluación formativa en el aula",
-    "afirmacion": "La evaluación continua permite observar, acompañar, retroalimentar y ajustar la práctica pedagógica durante el proceso.",
-    "evidencia_observable": "Selecciona una práctica evaluativa que mejora la enseñanza y acompaña el aprendizaje.",
-    "tipo_de_evidencia": "Juicio pedagógico aplicado",
-    "dificultad_esperada": "Media-Alta",
-    "clave": "D"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Evaluación formativa",
+  "tema": "Evaluación cualitativa, formativa y participativa",
+  "subtema": "Evaluación cualitativa, formativa y participativa",
+  "competencia": "Valora prácticas de evaluación cualitativa y participativa para retroalimentar y mejorar aprendizajes.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada para el caso planteado.",
+  "evidencia": "Selecciona una única alternativa defendible frente a distractores plausibles desde el constructo evaluado.",
+  "tarea": "Analizar el caso y elegir la opción más pertinente según criterios pedagógicos y normativos aplicables.",
+  "contexto": "Una docente solo evalúa al final del periodo y usa los resultados para señalar quiénes 'no sirven' para aprender. Otra docente observa de manera permanente, registra avances, conversa con la familia y ajusta sus estrategias.",
+  "enunciado": "Una docente solo evalúa al final del periodo y usa los resultados para señalar quiénes 'no sirven' para aprender. Otra docente observa de manera permanente, registra avances, conversa con la familia y ajusta sus estrategias.\n\n¿Qué enfoque corresponde mejor a una evaluación formativa y continua?",
+  "opciones": {
+    "A": "Evaluar solo al final para clasificar a los niños.",
+    "B": "Usar la evaluación como amenaza para controlar la disciplina.",
+    "C": "No observar ningún proceso porque en preescolar todo es juego sin intención.",
+    "D": "Observar, registrar, retroalimentar y ajustar la enseñanza durante el proceso para acompañar el desarrollo."
   },
-  "item": {
-    "enunciado": "Una docente solo evalúa al final del periodo y usa los resultados para señalar quiénes 'no sirven' para aprender. Otra docente observa de manera permanente, registra avances, conversa con la familia y ajusta sus estrategias.\n\n¿Qué enfoque corresponde mejor a una evaluación formativa y continua?",
-    "opciones": {
-      "A": "Evaluar solo al final para clasificar a los niños.",
-      "B": "Usar la evaluación como amenaza para controlar la disciplina.",
-      "C": "No observar ningún proceso porque en preescolar todo es juego sin intención.",
-      "D": "Observar, registrar, retroalimentar y ajustar la enseñanza durante el proceso para acompañar el desarrollo."
-    },
-    "respuesta_correcta": "D"
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "Reduce la evaluación a clasificación final.",
+    "B": "Convierte la evaluación en castigo.",
+    "C": "Desconoce la intencionalidad pedagógica del juego y la observación.",
+    "D": "Clave correcta."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "distractores": {
-      "A": "Reduce la evaluación a clasificación final.",
-      "B": "Convierte la evaluación en castigo.",
-      "C": "Desconoce la intencionalidad pedagógica del juego y la observación."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo estándar, sin sesgos culturales innecesarios ni barreras de comprensión relevantes."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem evita clasificaciones estigmatizantes y promueve acompañamiento pedagógico."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem apto para banco con revisión didáctica posterior."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EIP_B06_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }
