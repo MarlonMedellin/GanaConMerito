@@ -1,101 +1,45 @@
 {
   "id_item": "NFL_B04_I02",
-  "archivo_sugerido": "NFL_B04_I02_educacion_media_decimo_undecimo.json",
-  "bloque": {
-    "codigo_bloque": "NFL_B04",
-    "nombre": "Estructura del sistema educativo: educación básica, secundaria y media",
-    "estado_en_lista": "Bloque 4 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 2 de 4"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Política y sistema educativo",
+  "tema": "Estructura del sistema educativo - educación básica, secundaria y media",
+  "subtema": "Educación media",
+  "competencia": "Distingue niveles y organización del sistema educativo para interpretar su aplicación en contextos institucionales.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "BAJA-MEDIA",
+  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada para el caso planteado.",
+  "evidencia": "Selecciona una única alternativa defendible frente a distractores plausibles desde el constructo evaluado.",
+  "tarea": "Analizar el caso y elegir la opción más pertinente según criterios pedagógicos y normativos aplicables.",
+  "contexto": "En una revisión curricular, un equipo debe ubicar normativamente los grados décimo y undécimo. La Ley 115 los define como la culminación, consolidación y avance de los niveles anteriores.",
+  "enunciado": "En una revisión curricular, un equipo debe ubicar normativamente los grados décimo y undécimo. La Ley 115 los define como la culminación, consolidación y avance de los niveles anteriores.\n\n¿A qué nivel corresponden estos dos grados?",
+  "opciones": {
+    "A": "Educación media.",
+    "B": "Educación básica primaria.",
+    "C": "Educación básica secundaria.",
+    "D": "Educación preescolar."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante diferencia educación básica de educación media y reconoce que décimo y undécimo pertenecen a la educación media.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación académica, rectoría, gestión curricular o normatividad educativa.",
-    "blueprint": {
-      "problematica_principal": "Confusión entre básica secundaria y educación media.",
-      "fuente_autorizada": [
-        "Ley 115 de 1994",
-        "Artículo 27 Ley 115",
-        "Estructura del sistema educativo colombiano",
-        "Educación formal"
-      ],
-      "componente_modulo": "Educación media",
-      "competencia": "Diferenciación entre básica secundaria y media",
-      "afirmacion": "La educación media comprende dos grados, décimo y undécimo, y culmina el proceso escolar previo a la educación superior o al trabajo.",
-      "evidencia_observable": "Reconoce que los grados décimo y undécimo no pertenecen a la educación básica sino a la educación media.",
-      "tipo_de_evidencia": "Reconocimiento normativo aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende la ubicación normativa de los grados décimo y undécimo dentro del sistema educativo.",
-    "evidencia_observable": "Selecciona educación media como nivel correspondiente a grados décimo y undécimo.",
-    "tarea_cognitiva": "Clasificar grados escolares según nivel educativo.",
-    "tipo_de_pregunta": "Pregunta normativa de reconocimiento",
-    "dificultad_esperada": "Baja-Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Usar lenguaje coloquial de bachillerato sin precisión normativa",
-        "revision": "La clave usa educación media."
-      },
-      {
-        "riesgo": "Confundir noveno con media",
-        "revision": "El enunciado delimita décimo y undécimo."
-      },
-      {
-        "riesgo": "Desconocer finalidad de la media",
-        "revision": "El ítem menciona culminación y preparación posterior."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque la primaria no incluye décimo ni undécimo.",
+    "C": "Es incorrecta porque la básica secundaria no corresponde a los grados de educación media.",
+    "D": "Es incorrecta porque el preescolar es un nivel inicial."
   },
-  "item": {
-    "enunciado": "En una revisión curricular, un equipo debe ubicar normativamente los grados décimo y undécimo. La Ley 115 los define como la culminación, consolidación y avance de los niveles anteriores.\n\n¿A qué nivel corresponden estos dos grados?",
-    "opciones": {
-      "A": "Educación media.",
-      "B": "Educación básica primaria.",
-      "C": "Educación básica secundaria.",
-      "D": "Educación preescolar."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo estándar, sin sesgos culturales innecesarios ni barreras de comprensión relevantes."
   },
-  "ficha_tecnica": {
-    "componente": "Educación media",
-    "competencia": "Diferenciación entre básica secundaria y media",
-    "claim_evaluado": "El evaluado comprende la ubicación normativa de los grados décimo y undécimo dentro del sistema educativo.",
-    "evidencia": "Selecciona educación media como nivel correspondiente a grados décimo y undécimo.",
-    "proceso_cognitivo": "Reconocimiento normativo aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Baja-Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "La básica primaria corresponde a los primeros grados de la educación básica.",
-      "C": "La básica secundaria corresponde a los cuatro grados posteriores a primaria dentro de la básica, no a décimo y undécimo.",
-      "D": "El preescolar es anterior a la básica."
-    },
-    "fuente_autorizada": [
-      "Ley 115 de 1994",
-      "Artículo 27 Ley 115",
-      "Educación formal"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque la primaria no incluye décimo ni undécimo.",
-    "opcion_C": "Es incorrecta porque la básica secundaria no corresponde a los grados de educación media.",
-    "opcion_D": "Es incorrecta porque el preescolar es un nivel inicial.",
-    "distractores": {
-      "B": "Es incorrecta porque la primaria no incluye décimo ni undécimo.",
-      "C": "Es incorrecta porque la básica secundaria no corresponde a los grados de educación media.",
-      "D": "Es incorrecta porque el preescolar es un nivel inicial."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "Evalúa una clasificación normativa simple y verificable."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre estructura del sistema educativo."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Estructura del sistema educativo - educación básica, secundaria y media/NFL_B04_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

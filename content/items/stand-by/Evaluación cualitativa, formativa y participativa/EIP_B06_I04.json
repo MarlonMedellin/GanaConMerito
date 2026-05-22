@@ -1,40 +1,45 @@
 {
   "id_item": "EIP_B06_I04",
-  "archivo_sugerido": "EIP_B06_I04_autoevaluacion_coevaluacion_heteroevaluacion.json",
-  "proposito_de_uso": "Evaluar si el aspirante reconoce autoevaluación, coevaluación y heteroevaluación como mecanismos participativos de evaluación formativa en el aula.",
-  "blueprint": {
-    "componente_modulo": "Evaluación formativa dialógica",
-    "competencia": "Identificación de mecanismos participativos de evaluación",
-    "afirmacion": "La autoevaluación, la coevaluación y la heteroevaluación favorecen participación, reflexión y mejora continua.",
-    "evidencia_observable": "Identifica los tres mecanismos y su función formativa.",
-    "tipo_de_evidencia": "Reconocimiento conceptual aplicado",
-    "dificultad_esperada": "Media",
-    "clave": "A"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Evaluación formativa",
+  "tema": "Evaluación cualitativa, formativa y participativa",
+  "subtema": "Evaluación cualitativa, formativa y participativa",
+  "competencia": "Valora prácticas de evaluación cualitativa y participativa para retroalimentar y mejorar aprendizajes.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada para el caso planteado.",
+  "evidencia": "Selecciona una única alternativa defendible frente a distractores plausibles desde el constructo evaluado.",
+  "tarea": "Analizar el caso y elegir la opción más pertinente según criterios pedagógicos y normativos aplicables.",
+  "contexto": "Para superar una evaluación punitiva y solitaria, una docente quiere implementar mecanismos que permitan al estudiante reflexionar sobre su propio proceso, recibir retroalimentación de sus pares y contar con la valoración pedagógica del docente.",
+  "enunciado": "Para superar una evaluación punitiva y solitaria, una docente quiere implementar mecanismos que permitan al estudiante reflexionar sobre su propio proceso, recibir retroalimentación de sus pares y contar con la valoración pedagógica del docente.\n\n¿Cuáles son esos tres mecanismos?",
+  "opciones": {
+    "A": "Autoevaluación, coevaluación y heteroevaluación.",
+    "B": "Castigo, sanción y expulsión.",
+    "C": "Copia, dictado y silencio.",
+    "D": "Ranking, amenaza y reprobación."
   },
-  "item": {
-    "enunciado": "Para superar una evaluación punitiva y solitaria, una docente quiere implementar mecanismos que permitan al estudiante reflexionar sobre su propio proceso, recibir retroalimentación de sus pares y contar con la valoración pedagógica del docente.\n\n¿Cuáles son esos tres mecanismos?",
-    "opciones": {
-      "A": "Autoevaluación, coevaluación y heteroevaluación.",
-      "B": "Castigo, sanción y expulsión.",
-      "C": "Copia, dictado y silencio.",
-      "D": "Ranking, amenaza y reprobación."
-    },
-    "respuesta_correcta": "A"
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Confunde evaluación con disciplina punitiva.",
+    "C": "Propone actividades mecánicas, no mecanismos evaluativos.",
+    "D": "Introduce prácticas clasificatorias y amenazantes."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "distractores": {
-      "B": "Confunde evaluación con disciplina punitiva.",
-      "C": "Propone actividades mecánicas, no mecanismos evaluativos.",
-      "D": "Introduce prácticas clasificatorias y amenazantes."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo estándar, sin sesgos culturales innecesarios ni barreras de comprensión relevantes."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado con observación",
-    "argumento": "El ítem es general de evaluación formativa; puede adaptarse a preescolar usando lenguaje, conversación, dibujos o rutinas de reflexión acordes con la edad."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ajustar ejemplos si se aplica específicamente a preescolar."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EIP_B06_I04.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

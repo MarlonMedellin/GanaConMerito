@@ -1,40 +1,45 @@
 {
   "id_item": "EIP_B06_I01",
-  "archivo_sugerido": "EIP_B06_I01_no_reprobacion_preescolar_evaluacion_cualitativa.json",
-  "proposito_de_uso": "Evaluar si el aspirante reconoce que en preescolar no se reprueban grados ni actividades y que la evaluación debe ser cualitativa.",
-  "blueprint": {
-    "componente_modulo": "Evaluación en preescolar",
-    "competencia": "Reconocimiento del enfoque evaluativo del nivel",
-    "afirmacion": "En preescolar los niños no reprueban grados ni actividades; la evaluación debe ser cualitativa, descriptiva y orientada al desarrollo.",
-    "evidencia_observable": "Selecciona una respuesta que evita la reprobación punitiva y propone seguimiento cualitativo.",
-    "tipo_de_evidencia": "Juicio normativo-evaluativo aplicado",
-    "dificultad_esperada": "Media-Alta",
-    "clave": "A"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Evaluación formativa",
+  "tema": "Evaluación cualitativa, formativa y participativa",
+  "subtema": "Evaluación cualitativa, formativa y participativa",
+  "competencia": "Valora prácticas de evaluación cualitativa y participativa para retroalimentar y mejorar aprendizajes.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada para el caso planteado.",
+  "evidencia": "Selecciona una única alternativa defendible frente a distractores plausibles desde el constructo evaluado.",
+  "tarea": "Analizar el caso y elegir la opción más pertinente según criterios pedagógicos y normativos aplicables.",
+  "contexto": "Una docente propone reprobar a un niño de preescolar porque aún no alcanza algunos desempeños al mismo ritmo que sus compañeros. La coordinación le recuerda el enfoque evaluativo del nivel.",
+  "enunciado": "Una docente propone reprobar a un niño de preescolar porque aún no alcanza algunos desempeños al mismo ritmo que sus compañeros. La coordinación le recuerda el enfoque evaluativo del nivel.\n\n¿Cuál actuación es correcta?",
+  "opciones": {
+    "A": "Realizar seguimiento cualitativo, acompañar el desarrollo y elaborar informes descriptivos, sin reprobar grados ni actividades.",
+    "B": "Aplicar reprobación automática para que el niño aprenda disciplina.",
+    "C": "Usar una prueba escrita final como único criterio.",
+    "D": "Suspenderlo de juegos y experiencias lúdicas hasta que iguale al grupo."
   },
-  "item": {
-    "enunciado": "Una docente propone reprobar a un niño de preescolar porque aún no alcanza algunos desempeños al mismo ritmo que sus compañeros. La coordinación le recuerda el enfoque evaluativo del nivel.\n\n¿Cuál actuación es correcta?",
-    "opciones": {
-      "A": "Realizar seguimiento cualitativo, acompañar el desarrollo y elaborar informes descriptivos, sin reprobar grados ni actividades.",
-      "B": "Aplicar reprobación automática para que el niño aprenda disciplina.",
-      "C": "Usar una prueba escrita final como único criterio.",
-      "D": "Suspenderlo de juegos y experiencias lúdicas hasta que iguale al grupo."
-    },
-    "respuesta_correcta": "A"
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Introduce una lógica punitiva impropia del nivel.",
+    "C": "Reduce el desarrollo integral a una prueba escrita.",
+    "D": "Castiga al niño excluyéndolo de experiencias necesarias."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "distractores": {
-      "B": "Introduce una lógica punitiva impropia del nivel.",
-      "C": "Reduce el desarrollo integral a una prueba escrita.",
-      "D": "Castiga al niño excluyéndolo de experiencias necesarias."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo estándar, sin sesgos culturales innecesarios ni barreras de comprensión relevantes."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem protege los ritmos de desarrollo y evita etiquetar a niños pequeños como fracasados."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem apto para banco con revisión normativa posterior."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EIP_B06_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

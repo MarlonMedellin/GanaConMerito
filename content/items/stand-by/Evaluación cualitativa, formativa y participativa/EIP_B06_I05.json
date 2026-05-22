@@ -1,40 +1,45 @@
 {
   "id_item": "EIP_B06_I05",
-  "archivo_sugerido": "EIP_B06_I05_evaluacion_dialogica_en_preescolar.json",
-  "proposito_de_uso": "Evaluar si el aspirante adapta la evaluación participativa a la edad preescolar sin convertirla en examen formal.",
-  "blueprint": {
-    "componente_modulo": "Evaluación participativa en preescolar",
-    "competencia": "Adaptación de la evaluación formativa a la primera infancia",
-    "afirmacion": "En preescolar la participación evaluativa puede darse mediante diálogo, observación, expresión gráfica, conversación, portafolios y rutinas de reflexión sencillas.",
-    "evidencia_observable": "Selecciona mecanismos acordes con la edad para hacer visible el proceso del niño.",
-    "tipo_de_evidencia": "Juicio didáctico aplicado",
-    "dificultad_esperada": "Alta",
-    "clave": "B"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Evaluación formativa",
+  "tema": "Evaluación cualitativa, formativa y participativa",
+  "subtema": "Evaluación cualitativa, formativa y participativa",
+  "competencia": "Valora prácticas de evaluación cualitativa y participativa para retroalimentar y mejorar aprendizajes.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada para el caso planteado.",
+  "evidencia": "Selecciona una única alternativa defendible frente a distractores plausibles desde el constructo evaluado.",
+  "tarea": "Analizar el caso y elegir la opción más pertinente según criterios pedagógicos y normativos aplicables.",
+  "contexto": "Una docente quiere que los niños de preescolar participen en la evaluación de su proceso, pero sin aplicar formatos extensos ni pruebas escritas. Busca estrategias acordes con su edad.",
+  "enunciado": "Una docente quiere que los niños de preescolar participen en la evaluación de su proceso, pero sin aplicar formatos extensos ni pruebas escritas. Busca estrategias acordes con su edad.\n\n¿Cuál opción es más adecuada?",
+  "opciones": {
+    "A": "Aplicar una rúbrica escrita de diez páginas a cada niño.",
+    "B": "Usar conversaciones breves, dibujos, portafolios, observación, preguntas sencillas y diálogo con la familia para reconocer avances y necesidades.",
+    "C": "Pedir a los niños que se califiquen numéricamente de 1 a 100.",
+    "D": "Evitar cualquier participación porque los niños pequeños no pueden expresar nada sobre su proceso."
   },
-  "item": {
-    "enunciado": "Una docente quiere que los niños de preescolar participen en la evaluación de su proceso, pero sin aplicar formatos extensos ni pruebas escritas. Busca estrategias acordes con su edad.\n\n¿Cuál opción es más adecuada?",
-    "opciones": {
-      "A": "Aplicar una rúbrica escrita de diez páginas a cada niño.",
-      "B": "Usar conversaciones breves, dibujos, portafolios, observación, preguntas sencillas y diálogo con la familia para reconocer avances y necesidades.",
-      "C": "Pedir a los niños que se califiquen numéricamente de 1 a 100.",
-      "D": "Evitar cualquier participación porque los niños pequeños no pueden expresar nada sobre su proceso."
-    },
-    "respuesta_correcta": "B"
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "Usa un instrumento excesivo e inadecuado para la edad.",
+    "B": "Clave correcta.",
+    "C": "Introduce una escala numérica poco pertinente para preescolar.",
+    "D": "Niega la capacidad infantil de expresar vivencias, preferencias y avances."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "distractores": {
-      "A": "Usa un instrumento excesivo e inadecuado para la edad.",
-      "C": "Introduce una escala numérica poco pertinente para preescolar.",
-      "D": "Niega la capacidad infantil de expresar vivencias, preferencias y avances."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo estándar, sin sesgos culturales innecesarios ni barreras de comprensión relevantes."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem reconoce la voz del niño de forma adecuada a su edad y desarrollo."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem apto para banco con revisión psicopedagógica posterior."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EIP_B06_I05.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }
