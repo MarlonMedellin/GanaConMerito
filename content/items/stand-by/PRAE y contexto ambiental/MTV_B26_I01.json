@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B26_I01",
-    "tema": "Concepto de PRAE",
-    "competencia": "Reconocimiento del Proyecto Ambiental Escolar",
-    "dificultad": "Media",
-    "enunciado": "Una institución quiere responder pedagógicamente a problemas ambientales de su territorio, como contaminación de una quebrada, manejo inadecuado de residuos y pérdida de zonas verdes.\n\n¿Qué instrumento institucional permite articular esas problemáticas con el currículo y el PEI?",
-    "opciones": {
-        "A": "Proyecto Ambiental Escolar PRAE.",
-        "B": "Únicamente una cartelera mensual.",
-        "C": "Solo una sanción disciplinaria.",
-        "D": "Un examen final de ciencias."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "El PRAE permite articular problemáticas ambientales del contexto con currículo, PEI, participación y acción educativa.",
-    "distractores": {
-        "B": "Una cartelera aislada no constituye proyecto institucional.",
-        "C": "La sanción no reemplaza la educación ambiental.",
-        "D": "Un examen no articula intervención ambiental."
-    }
+  "id_item": "MTV_B26_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Educación ambiental",
+  "tema": "PRAE",
+  "subtema": "Contexto territorial y currículo",
+  "competencia": "Relacionar problemas ambientales del contexto con proyectos pedagógicos institucionales.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado identifica el PRAE como instrumento para integrar problemática ambiental, currículo y participación.",
+  "evidencia": "Selecciona la herramienta institucional idónea para abordar ambientalmente el contexto escolar.",
+  "tarea": "Elegir el instrumento institucional más pertinente para articular educación ambiental y PEI.",
+  "contexto": "La comunidad escolar enfrenta contaminación de fuentes hídricas, manejo deficiente de residuos y pérdida de zonas verdes en su entorno.",
+  "enunciado": "¿Qué instrumento institucional permite abordar pedagógicamente estas problemáticas en articulación con el PEI?",
+  "opciones": {
+    "A": "Proyecto Ambiental Escolar (PRAE).",
+    "B": "Cartelera informativa aislada sin continuidad pedagógica.",
+    "C": "Sanción disciplinaria general para quienes contaminan.",
+    "D": "Únicamente un examen final de ciencias."
+  },
+  "clave": "A",
+  "justificacion_clave": "El PRAE integra diagnóstico territorial, currículo, participación y acciones sostenidas de educación ambiental.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Acción aislada sin estructura de proyecto.",
+    "C": "Respuesta punitiva insuficiente para aprendizaje ambiental.",
+    "D": "Evaluación aislada sin intervención del contexto."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Escenarios educativos generales; sin sesgos culturales innecesarios ni prerrequisitos externos no declarados."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Lenguaje directo, vocabulario funcional y una sola tarea cognitiva por ítem."
+  },
+  "metadata_editorial": {
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
 }

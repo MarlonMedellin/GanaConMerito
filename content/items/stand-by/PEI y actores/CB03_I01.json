@@ -1,103 +1,45 @@
 {
   "id_item": "CB03_I01",
-  "bloque": {
-    "numero": 3,
-    "nombre": "PEI y actores",
-    "estado_en_lista": "Bloque 3 de 15",
-    "decision_del_bloque": "Grupo de 2 preguntas",
-    "item_en_grupo": "Ítem 1 de 2"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión directiva y comunitaria",
+  "tema": "PEI",
+  "subtema": "Participación de actores educativos",
+  "competencia": "Analizar procesos de construcción del PEI con enfoque participativo y corresponsable.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "BAJA",
+  "claim": "El evaluado identifica que el PEI requiere participación real de la comunidad educativa para su legitimidad y pertinencia.",
+  "evidencia": "Reconoce como debilidad institucional un proceso de actualización del PEI sin consulta ni deliberación con actores clave.",
+  "tarea": "Seleccionar la principal falla de un procedimiento de actualización del PEI.",
+  "contexto": "Una institución encarga la actualización del PEI a una sola persona y comunica el documento final sin espacios de participación.",
+  "enunciado": "¿Cuál es la debilidad principal de este procedimiento?",
+  "opciones": {
+    "A": "Actualizar el PEI periódicamente, porque debe permanecer fijo durante años.",
+    "B": "Excluir la participación de la comunidad educativa en construcción y revisión del PEI.",
+    "C": "Permitir que el rector participe en el proceso institucional.",
+    "D": "Presentar el documento al consejo directivo para su análisis."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce que el Proyecto Educativo Institucional no debe construirse como un documento aislado, sino mediante la participación de los actores de la comunidad educativa.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "PEI aislado sin participación",
-      "fuente_autorizada": [
-        "Ley 115 de 1994",
-        "Decreto 1860 de 1994",
-        "Orientaciones MEN sobre Proyecto Educativo Institucional"
-      ],
-      "componente_modulo": "Gestión Directiva",
-      "competencia": "Participación",
-      "afirmacion": "El PEI debe construirse colectivamente.",
-      "evidencia_observable": "Identifica la participación de actores de la comunidad educativa como condición de legitimidad del PEI.",
-      "tipo_de_evidencia": "Interpretación de situación institucional",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado comprende que el PEI requiere participación de distintos actores institucionales para orientar la vida escolar.",
-    "evidencia_observable": "Reconoce que la construcción o actualización del PEI exige participación de la comunidad educativa y no solo redacción administrativa.",
-    "tarea_cognitiva": "Identificar actores y procedimientos de participación en una situación de actualización institucional.",
-    "tipo_de_pregunta": "Pregunta de aplicación normativa en contexto",
-    "dificultad_esperada": "Baja",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Sesgo por experiencia institucional",
-        "revision": "El ítem no exige haber participado directamente en la construcción de un PEI; evalúa comprensión general del principio de participación."
-      },
-      {
-        "riesgo": "Lenguaje normativo excesivo",
-        "revision": "No se exige memorizar artículos específicos ni nombres exactos de normas."
-      },
-      {
-        "riesgo": "Ambigüedad en la clave",
-        "revision": "La opción correcta es la única que identifica la ausencia de participación como debilidad central del procedimiento."
-      },
-      {
-        "riesgo": "Sesgo por rol institucional",
-        "revision": "El caso aplica tanto a docentes como a directivos y no privilegia una función administrativa específica."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "La omisión de participación comunitaria contradice el carácter colectivo y orientador del PEI.",
+  "distractores_funcion": {
+    "A": "Error conceptual sobre actualización institucional.",
+    "B": "Clave correcta.",
+    "C": "Distractor por confusión de rol: el problema no es que participe el rector.",
+    "D": "Distractor plausible: presentar al consejo no es la falla central."
   },
-  "item": {
-    "enunciado": "El rector de una institución decide actualizar el PEI y solicita a una sola persona que redacte el documento para presentarlo rápidamente ante el consejo directivo. Varios docentes y familias manifiestan que no conocen los cambios propuestos.\n\n¿Cuál es la principal debilidad de este procedimiento?",
-    "opciones": {
-      "A": "Que el PEI se actualice periódicamente, porque este documento debe permanecer sin cambios durante varios años.",
-      "B": "Que se desconoce la participación de la comunidad educativa en la construcción y revisión del proyecto institucional.",
-      "C": "Que el rector participe en el proceso, porque la actualización del PEI corresponde únicamente a los estudiantes.",
-      "D": "Que se presente al consejo directivo, porque este órgano no debe conocer asuntos institucionales."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Escenarios educativos generales; sin sesgos culturales innecesarios ni prerrequisitos externos no declarados."
   },
-  "ficha_tecnica": {
-    "componente": "Gestión Directiva",
-    "competencia": "Participación",
-    "claim_evaluado": "El evaluado comprende que el PEI requiere participación de distintos actores institucionales para orientar la vida escolar.",
-    "evidencia": "Reconoce que la construcción o actualización del PEI exige participación de la comunidad educativa y no solo redacción administrativa.",
-    "proceso_cognitivo": "Aplicación normativa en contexto",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Baja",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Parte de la idea errónea de que el PEI no puede actualizarse.",
-      "C": "Desconoce el rol del rector y limita indebidamente la participación.",
-      "D": "Desconoce la función de los órganos de gobierno escolar."
-    },
-    "fuente_autorizada": [
-      "Ley 115 de 1994",
-      "Decreto 1860 de 1994",
-      "Orientaciones MEN sobre PEI"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Lenguaje directo, vocabulario funcional y una sola tarea cognitiva por ítem."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque el PEI puede actualizarse cuando las condiciones institucionales, pedagógicas o contextuales lo requieren.",
-    "opcion_C": "Es incorrecta porque el rector sí puede participar en el proceso, pero no de manera excluyente ni sustituyendo a la comunidad educativa.",
-    "opcion_D": "Es incorrecta porque el consejo directivo sí cumple funciones relacionadas con decisiones institucionales.",
-    "distractores": {
-      "A": "Es incorrecta porque el PEI puede actualizarse cuando las condiciones institucionales, pedagógicas o contextuales lo requieren.",
-      "C": "Es incorrecta porque el rector sí puede participar en el proceso, pero no de manera excluyente ni sustituyendo a la comunidad educativa.",
-      "D": "Es incorrecta porque el consejo directivo sí cumple funciones relacionadas con decisiones institucionales."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El caso no exige conocimiento de una institución específica ni experiencia directa en procesos formales de actualización del PEI. Evalúa una comprensión general del principio de participación y evita responsabilizar a un grupo particular de la comunidad educativa."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 2 preguntas sobre PEI y actores de la comunidad educativa."
+  "metadata_editorial": {
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }
