@@ -1,103 +1,45 @@
 {
   "id_item": "CB15_I01",
-  "bloque": {
-    "numero": 15,
-    "nombre": "Fases enseñanza",
-    "estado_en_lista": "Bloque 15 de 15",
-    "decision_del_bloque": "Grupo de 4 preguntas",
-    "item_en_grupo": "Ítem 1 de 4"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Práctica pedagógica",
+  "tema": "Secuenciación de la enseñanza",
+  "subtema": "Fases didácticas constructivistas",
+  "competencia": "Planear secuencias de enseñanza coherentes con construcción activa del aprendizaje.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado reconoce una secuencia didáctica que integra activación, problematización, construcción y transferencia.",
+  "evidencia": "Selecciona la secuencia que articula saberes previos, mediación docente y reflexión final.",
+  "tarea": "Elegir la secuencia de clase más consistente con enfoque constructivista.",
+  "contexto": "Un docente reorganiza su planeación para evitar clases centradas solo en exposición y memorización.",
+  "enunciado": "¿Qué secuencia de enseñanza es la más adecuada para ese propósito?",
+  "opciones": {
+    "A": "Iniciar con saberes previos, plantear una situación problema, guiar construcción, aplicar y cerrar con reflexión.",
+    "B": "Dictar conceptos, asignar copia textual y aplicar prueba de memoria al final.",
+    "C": "Entregar respuestas correctas desde el inicio y pedir repetición individual.",
+    "D": "Proponer actividad libre sin objetivos, criterios ni mediación docente."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce una secuencia de enseñanza coherente con un enfoque constructivista, en la que se activan saberes previos, se plantea una situación problema, se guía la construcción del aprendizaje, se aplica lo aprendido y se promueve la reflexión.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "Comprensión del constructivismo",
-      "fuente_autorizada": [
-        "Modelo constructivista",
-        "Didáctica general",
-        "Orientaciones pedagógicas institucionales"
-      ],
-      "componente_modulo": "Didáctica",
-      "competencia": "Planeación pedagógica",
-      "afirmacion": "La enseñanza tiene fases secuenciales.",
-      "evidencia_observable": "Identifica una secuencia didáctica que parte de saberes previos, construcción activa y aplicación.",
-      "tipo_de_evidencia": "Reconocimiento de secuencia didáctica aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado reconoce que una enseñanza constructivista organiza experiencias que activan saberes previos, promueven construcción de significado, aplicación y reflexión sobre lo aprendido.",
-    "evidencia_observable": "Selecciona la secuencia didáctica que integra exploración de saberes previos, situación problema, construcción guiada, aplicación y reflexión.",
-    "tarea_cognitiva": "Seleccionar la secuencia didáctica más coherente con el enfoque constructivista.",
-    "tipo_de_pregunta": "Pregunta de procedimiento aplicado",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Sesgo por familiaridad con terminología pedagógica",
-        "revision": "El ítem usa el término constructivista, pero las opciones describen acciones concretas que permiten responder desde la comprensión didáctica."
-      },
-      {
-        "riesgo": "Confusión entre constructivismo y ausencia de orientación docente",
-        "revision": "Uno de los distractores permite diferenciar construcción activa de abandono de la mediación pedagógica."
-      },
-      {
-        "riesgo": "Sesgo por área disciplinar",
-        "revision": "El caso no se asocia a una asignatura específica; la secuencia puede aplicarse a distintas áreas."
-      },
-      {
-        "riesgo": "Ambigüedad en la clave",
-        "revision": "La opción correcta es la única que presenta una secuencia completa: saberes previos, problema, construcción guiada, aplicación y reflexión."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "Integra fases clave del proceso didáctico constructivista con mediación y metacognición.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Modelo transmisivo sin construcción activa.",
+    "C": "Error de enfoque: prioriza reproducción sobre comprensión.",
+    "D": "Confusión frecuente: autonomía no equivale a ausencia de propósito pedagógico."
   },
-  "item": {
-    "enunciado": "Un docente desea planear una clase desde un enfoque constructivista. Quiere evitar iniciar con una explicación extensa y memorística, y busca que los estudiantes construyan sentido sobre el tema.\n\n¿Cuál secuencia es más adecuada?",
-    "opciones": {
-      "A": "Exploración de saberes previos, situación problema, construcción guiada, aplicación y reflexión sobre lo aprendido.",
-      "B": "Dictado de definiciones, copia del libro, examen inmediato y cierre sin retroalimentación.",
-      "C": "Entrega de respuestas correctas, memorización individual y repetición oral de conceptos.",
-      "D": "Actividad libre sin propósito, sin intervención docente y sin criterios de aprendizaje."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Ítem contextualizado en escenarios educativos/laborales generales, sin dependencias culturales específicas."
   },
-  "ficha_tecnica": {
-    "componente": "Didáctica",
-    "competencia": "Planeación pedagógica",
-    "claim_evaluado": "El evaluado reconoce que una enseñanza constructivista organiza experiencias que activan saberes previos, promueven construcción de significado, aplicación y reflexión sobre lo aprendido.",
-    "evidencia": "Selecciona la secuencia didáctica que integra exploración de saberes previos, situación problema, construcción guiada, aplicación y reflexión.",
-    "proceso_cognitivo": "Procedimiento aplicado y juicio didáctico",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Privilegia transmisión, copia y evaluación inmediata sin construcción ni retroalimentación.",
-      "C": "Reduce el aprendizaje a memorización, repetición y recepción de respuestas correctas.",
-      "D": "Confunde constructivismo con actividad libre sin propósito, mediación ni criterios de aprendizaje."
-    },
-    "fuente_autorizada": [
-      "Modelo constructivista",
-      "Didáctica general",
-      "Orientaciones pedagógicas institucionales"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción directa, una sola tarea cognitiva y vocabulario funcional."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque reproduce un modelo transmisivo centrado en dictado, copia y evaluación inmediata, sin construcción activa del aprendizaje.",
-    "opcion_C": "Es incorrecta porque limita la enseñanza a la entrega de respuestas, memorización y repetición oral de conceptos.",
-    "opcion_D": "Es incorrecta porque el constructivismo no implica ausencia de propósito ni falta de mediación docente; requiere orientación, criterios y acompañamiento.",
-    "distractores": {
-      "B": "Es incorrecta porque reproduce un modelo transmisivo centrado en dictado, copia y evaluación inmediata, sin construcción activa del aprendizaje.",
-      "C": "Es incorrecta porque limita la enseñanza a la entrega de respuestas, memorización y repetición oral de conceptos.",
-      "D": "Es incorrecta porque el constructivismo no implica ausencia de propósito ni falta de mediación docente; requiere orientación, criterios y acompañamiento."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no favorece a docentes de un área específica ni exige experiencia en una metodología particular. Evalúa una comprensión didáctica general sobre la organización de una clase orientada a la construcción activa del aprendizaje."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre fases de enseñanza y enfoque constructivista."
+  "metadata_editorial": {
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

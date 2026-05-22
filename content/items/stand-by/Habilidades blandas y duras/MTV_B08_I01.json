@@ -1,40 +1,45 @@
 {
   "id_item": "MTV_B08_I01",
-  "archivo_sugerido": "MTV_B08_I01_definicion_habilidades_blandas.json",
-  "proposito_de_uso": "Evaluar si el aspirante identifica las habilidades blandas como competencias asociadas al trato interpersonal, la inteligencia emocional y el contacto social.",
-  "blueprint": {
-    "componente_modulo": "Habilidades blandas",
-    "competencia": "Reconocimiento conceptual de competencias blandas",
-    "afirmacion": "Las habilidades blandas se potencian mediante la inteligencia emocional, la interacción social, el trato hacia los demás, la empatía, la comunicación y la convivencia.",
-    "evidencia_observable": "Selecciona una definición que diferencia habilidades blandas de títulos académicos o conocimientos técnicos.",
-    "tipo_de_evidencia": "Reconocimiento conceptual",
-    "dificultad_esperada": "Media",
-    "clave": "B"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Talento humano y desempeño",
+  "tema": "Competencias laborales",
+  "subtema": "Habilidades blandas y duras",
+  "competencia": "Diferenciar competencias técnicas verificables de competencias socioemocionales en contextos profesionales.",
+  "nivel_cognitivo": "COMPRENSIÓN-APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado distingue correctamente hard skills y soft skills según su naturaleza y evidencia.",
+  "evidencia": "Identifica como hard skill un dominio técnico demostrable y evaluable por desempeño.",
+  "tarea": "Seleccionar la opción que describe una hard skill.",
+  "contexto": "En un proceso de selección se pide separar competencias técnicas de competencias socioemocionales.",
+  "enunciado": "¿Cuál opción corresponde a una hard skill?",
+  "opciones": {
+    "A": "Escucha activa para resolver tensiones en equipo.",
+    "B": "Dominio verificable de una herramienta o procedimiento técnico requerido para la función.",
+    "C": "Empatía para comprender perspectivas de otros.",
+    "D": "Persistencia personal ante tareas difíciles."
   },
-  "item": {
-    "enunciado": "En una prueba de competencias comportamentales se pregunta qué tipo de competencias se fortalecen principalmente mediante la inteligencia emocional, el trato hacia los demás, la empatía, la comunicación y el contacto social, sin depender necesariamente de títulos académicos.\n\n¿Cuál es la respuesta correcta?",
-    "opciones": {
-      "A": "Habilidades duras o técnicas.",
-      "B": "Habilidades blandas o socioemocionales.",
-      "C": "Conocimientos disciplinares certificados.",
-      "D": "Títulos profesionales y posgraduales."
-    },
-    "respuesta_correcta": "B"
+  "clave": "B",
+  "justificacion_clave": "Define hard skill como capacidad técnica observable y verificable en el desempeño.",
+  "distractores_funcion": {
+    "A": "Soft skill interpersonal.",
+    "B": "Clave correcta.",
+    "C": "Soft skill socioemocional.",
+    "D": "Rasgo actitudinal, no técnico."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "distractores": {
-      "A": "Las habilidades duras se vinculan más con conocimientos técnicos y disciplinares.",
-      "C": "El conocimiento disciplinar pertenece principalmente al componente cognitivo o técnico.",
-      "D": "Los títulos pueden evidenciar formación, pero no garantizan por sí solos habilidades blandas."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Ítem contextualizado en escenarios educativos/laborales generales, sin dependencias culturales específicas."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem evita asociar las habilidades blandas con rasgos innatos y las presenta como competencias desarrollables."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción directa, una sola tarea cognitiva y vocabulario funcional."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem base para iniciar el bloque."
+  "metadata_editorial": {
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

@@ -1,0 +1,45 @@
+{
+  "id_item": "CB06_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Talento humano y desempeño",
+  "tema": "Competencias profesionales",
+  "subtema": "Hard skills en selección",
+  "competencia": "Reconocer criterios válidos para evaluar habilidades técnicas en procesos de selección.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "BAJA",
+  "claim": "El evaluado identifica evidencias pertinentes para valorar hard skills en un perfil laboral.",
+  "evidencia": "Diferencia indicadores verificables de habilidad técnica frente a rasgos actitudinales generales.",
+  "tarea": "Elegir la definición operativa de hard skill más precisa.",
+  "contexto": "Comité de selección discute qué evidencia usar para evaluar competencias de candidatos.",
+  "enunciado": "¿Qué opción define mejor una hard skill?",
+  "opciones": {
+    "A": "Capacidad de mantener relaciones interpersonales positivas en distintos equipos.",
+    "B": "Conocimiento técnico y procedimental demostrable mediante ejecución de tareas o pruebas específicas.",
+    "C": "Disposición para escuchar opiniones contrarias con respeto.",
+    "D": "Motivación intrínseca para superar frustraciones."
+  },
+  "clave": "B",
+  "justificacion_clave": "La hard skill implica dominio técnico demostrable; las demás opciones describen habilidades blandas o rasgos actitudinales.",
+  "distractores_funcion": {
+    "A": "Habilidad blanda relacional.",
+    "B": "Clave correcta.",
+    "C": "Habilidad blanda comunicativa.",
+    "D": "Disposición personal no técnica."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Ítem contextualizado en escenarios educativos/laborales generales, sin dependencias culturales específicas."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción directa, una sola tarea cognitiva y vocabulario funcional."
+  },
+  "metadata_editorial": {
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
+}

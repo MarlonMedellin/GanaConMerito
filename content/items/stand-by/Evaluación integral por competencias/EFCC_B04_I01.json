@@ -1,108 +1,45 @@
 {
   "id_item": "EFCC_B04_I01",
-  "archivo_sugerido": "EFCC_B04_I01_enfoques_evaluacion_integral_competencias.json",
-  "bloque": {
-    "codigo_bloque": "EFCC_B04",
-    "nombre": "Evaluación integral por competencias",
-    "estado_en_lista": "Bloque 4 de 5",
-    "decision_del_bloque": "Pregunta única",
-    "item_en_grupo": "Ítem 1 de 1"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Evaluación del aprendizaje",
+  "tema": "Evaluación por competencias",
+  "subtema": "Integralidad del desempeño",
+  "competencia": "Interpretar la evaluación por competencias como valoración integrada de saber, hacer y argumentar en contexto.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado identifica diseños evaluativos coherentes con una visión integral de competencias.",
+  "evidencia": "Selecciona la alternativa que articula desempeño contextualizado, criterios y niveles de logro.",
+  "tarea": "Elegir el diseño de evaluación más consistente con enfoque integral por competencias.",
+  "contexto": "Un área curricular revisa sus instrumentos porque actualmente evalúa solo respuestas de selección múltiple.",
+  "enunciado": "¿Cuál propuesta está mejor alineada con una evaluación integral por competencias?",
+  "opciones": {
+    "A": "Usar exclusivamente pruebas de memoria para garantizar objetividad numérica.",
+    "B": "Valorar tareas auténticas con criterios explícitos, niveles de desempeño y retroalimentación sobre aplicación del conocimiento.",
+    "C": "Calificar únicamente actitudes para evitar sesgos de contenido disciplinar.",
+    "D": "Asignar la nota final con base en asistencia y cumplimiento administrativo."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce los cuatro enfoques estructurales que pueden integrarse en una evaluación por competencias: funcionalista, conductual, constructivista y complejo.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "Comprensión fragmentada de la evaluación por competencias.",
-      "fuente_autorizada": [
-        "Evaluación por competencias",
-        "Diseño curricular por competencias",
-        "Didáctica general",
-        "Orientaciones pedagógicas institucionales",
-        "Sistema Institucional de Evaluación de los Estudiantes"
-      ],
-      "componente_modulo": "Evaluación por Competencias y Praxis Pedagógica",
-      "competencia": "Comprensión de enfoques de la competencia",
-      "afirmacion": "La evaluación integral por competencias puede comprender enfoques funcionalistas, conductuales, constructivistas y complejos.",
-      "evidencia_observable": "Reconoce los cuatro enfoques estructurales de la competencia y su aporte a una evaluación integral.",
-      "tipo_de_evidencia": "Reconocimiento conceptual aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado comprende que la evaluación integral por competencias no se reduce a medir conductas aisladas, sino que puede articular desempeño funcional, comportamientos observables, construcción de saberes y resolución situada de problemas complejos.",
-    "evidencia_observable": "Selecciona la opción que identifica correctamente los enfoques funcionalista, conductual, constructivista y complejo como componentes de una comprensión integral de la competencia.",
-    "tarea_cognitiva": "Reconocer y diferenciar enfoques estructurales de la evaluación por competencias.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Lenguaje técnico especializado",
-        "revision": "El ítem usa los nombres de los enfoques, pero los contextualiza como perspectivas complementarias de evaluación por competencias."
-      },
-      {
-        "riesgo": "Memorización de etiquetas",
-        "revision": "La clave no solo enumera nombres; vincula los enfoques con desempeño, conducta, construcción de saberes y complejidad."
-      },
-      {
-        "riesgo": "Ambigüedad entre enfoques",
-        "revision": "Los distractores mezclan conceptos no equivalentes o reducen la competencia a un único enfoque."
-      },
-      {
-        "riesgo": "Sesgo por formación académica previa",
-        "revision": "La pregunta no exige desarrollar teoría avanzada de competencias, sino reconocer una clasificación estructural básica."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "Integra desempeño situado, criterios transparentes y retroalimentación, ejes de evaluación integral por competencias.",
+  "distractores_funcion": {
+    "A": "Generalización incorrecta: equipara objetividad con memorización.",
+    "B": "Clave correcta.",
+    "C": "Interpretación parcial: excluye saber conceptual y procedimental.",
+    "D": "Error de pertinencia: usa indicadores administrativos como sustituto del logro."
   },
-  "item": {
-    "enunciado": "En una jornada de actualización curricular, un equipo docente analiza cómo evaluar competencias de manera integral. Se afirma que una competencia no debe entenderse solo como una conducta observable, sino también como desempeño situado, construcción de saberes y capacidad para resolver problemas en contextos complejos.\n\n¿Cuáles son los cuatro enfoques estructurales que permiten comprender de manera más amplia la evaluación integral por competencias?",
-    "opciones": {
-      "A": "Memorístico, punitivo, sancionatorio y repetitivo.",
-      "B": "Funcionalista, conductual, constructivista y complejo.",
-      "C": "Administrativo, disciplinario, recreativo y documental.",
-      "D": "Magistral, enciclopédico, caligráfico y acumulativo."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Situaciones escolares generales; no requieren conocimiento externo al enunciado ni referencias culturales específicas."
   },
-  "ficha_tecnica": {
-    "componente": "Evaluación por Competencias y Praxis Pedagógica",
-    "competencia": "Comprensión de enfoques de la competencia",
-    "claim_evaluado": "El evaluado comprende que la evaluación integral por competencias no se reduce a medir conductas aisladas, sino que puede articular desempeño funcional, comportamientos observables, construcción de saberes y resolución situada de problemas complejos.",
-    "evidencia": "Selecciona la opción que identifica correctamente los enfoques funcionalista, conductual, constructivista y complejo como componentes de una comprensión integral de la competencia.",
-    "proceso_cognitivo": "Reconocimiento conceptual aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Presenta rasgos de una evaluación mecánica o punitiva, no enfoques estructurales de competencia.",
-      "C": "Mezcla dimensiones administrativas o disciplinarias que no corresponden a la clasificación de enfoques de competencia.",
-      "D": "Agrupa prácticas tradicionales o acumulativas, no enfoques de evaluación por competencias."
-    },
-    "fuente_autorizada": [
-      "Evaluación por competencias",
-      "Diseño curricular por competencias",
-      "Didáctica general",
-      "Orientaciones pedagógicas institucionales",
-      "Sistema Institucional de Evaluación de los Estudiantes"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Sintaxis directa, una tarea cognitiva por ítem y vocabulario pedagógico controlado."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque enumera rasgos asociados a prácticas evaluativas mecánicas o punitivas.",
-    "opcion_C": "Es incorrecta porque menciona dimensiones de gestión o convivencia, pero no enfoques de competencia.",
-    "opcion_D": "Es incorrecta porque agrupa prácticas tradicionales de enseñanza y evaluación, no enfoques estructurales de la competencia.",
-    "distractores": {
-      "A": "Es incorrecta porque enumera rasgos asociados a prácticas evaluativas mecánicas o punitivas.",
-      "C": "Es incorrecta porque menciona dimensiones de gestión o convivencia, pero no enfoques de competencia.",
-      "D": "Es incorrecta porque agrupa prácticas tradicionales de enseñanza y evaluación, no enfoques estructurales de la competencia."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no exige desarrollar teóricamente cada enfoque ni conocer autores específicos. Evalúa el reconocimiento de una clasificación conceptual básica y ofrece un contexto que ayuda a interpretar el sentido de la evaluación integral por competencias."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada. Si se desea aumentar la dificultad, puede convertirse en un caso donde el evaluado deba asociar cada enfoque con una práctica evaluativa.",
-    "uso_recomendado": "Puede usarse como pregunta única del bloque Evaluación integral por competencias."
+  "metadata_editorial": {
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

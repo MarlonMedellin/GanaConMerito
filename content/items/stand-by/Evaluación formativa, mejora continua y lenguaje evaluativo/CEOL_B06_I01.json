@@ -1,106 +1,45 @@
 {
   "id_item": "CEOL_B06_I01",
-  "archivo_sugerido": "CEOL_B06_I01_concepto_evaluacion_formativa_constructivista.json",
-  "bloque": {
-    "codigo_bloque": "CEOL_B06",
-    "nombre": "Evaluación formativa, mejora continua y lenguaje evaluativo",
-    "estado_en_lista": "Bloque 6 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 1 de 4"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Evaluación del aprendizaje",
+  "tema": "Evaluación formativa",
+  "subtema": "Mejora continua y retroalimentación",
+  "competencia": "Distinguir prácticas evaluativas formativas de prácticas centradas solo en calificación final.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado reconoce que la evaluación formativa produce evidencia continua para ajustar enseñanza y aprendizaje.",
+  "evidencia": "Identifica la opción que integra seguimiento sistemático, criterios explícitos y retroalimentación útil.",
+  "tarea": "Seleccionar la característica definitoria de una evaluación formativa en contexto escolar.",
+  "contexto": "Un equipo académico busca reemplazar prácticas de evaluación centradas únicamente en notas de cierre.",
+  "enunciado": "¿Qué rasgo define mejor una evaluación formativa orientada a mejora continua?",
+  "opciones": {
+    "A": "Aplicar pruebas sorpresa frecuentes para aumentar control y disciplina.",
+    "B": "Recolectar evidencias durante el proceso y ofrecer retroalimentación para ajustar estrategias de aprendizaje.",
+    "C": "Concentrar la valoración en una prueba final para asegurar comparabilidad entre estudiantes.",
+    "D": "Promediar múltiples calificaciones sin analizar errores ni decisiones de mejora."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce las características centrales de la evaluación formativa en un modelo constructivista, diferenciándola de la simple medición o calificación final.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación académica, orientación escolar o gestión pedagógica.",
-    "blueprint": {
-      "problematica_principal": "Confusión entre evaluación formativa y calificación final o medición acumulativa.",
-      "fuente_autorizada": [
-        "Evaluación formativa",
-        "Enfoque constructivista",
-        "Sistema Institucional de Evaluación de los Estudiantes",
-        "Orientaciones pedagógicas institucionales"
-      ],
-      "componente_modulo": "Evaluación Formativa y Didáctica",
-      "competencia": "Comprensión de evaluación formativa",
-      "afirmacion": "La evaluación formativa es continua, sistemática y orientada a la retroalimentación y mejora del aprendizaje.",
-      "evidencia_observable": "Identifica las características que diferencian la evaluación formativa de la simple calificación final.",
-      "tipo_de_evidencia": "Comprensión conceptual aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado comprende que la evaluación formativa acompaña el proceso de aprendizaje, produce información para mejorar la enseñanza y ofrece retroalimentación oportuna al estudiante.",
-    "evidencia_observable": "Selecciona una opción que integra continuidad, sistematicidad y retroalimentación orientada a la mejora.",
-    "tarea_cognitiva": "Diferenciar la evaluación formativa de la medición final o de la acumulación de notas.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confundir evaluación continua con acumulación de notas",
-        "revision": "La clave enfatiza seguimiento y retroalimentación, no cantidad de calificaciones."
-      },
-      {
-        "riesgo": "Ambigüedad entre evaluar y calificar",
-        "revision": "El ítem distingue la valoración formativa de la simple medición final."
-      },
-      {
-        "riesgo": "Sesgo por modelo institucional específico",
-        "revision": "No exige conocer un SIEE particular; evalúa principios generales de evaluación formativa."
-      },
-      {
-        "riesgo": "Lenguaje técnico excesivo",
-        "revision": "Los conceptos se presentan en acciones concretas: seguimiento, retroalimentación y mejora."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "Describe el núcleo formativo: evidencia procesual más retroalimentación accionable para mejora.",
+  "distractores_funcion": {
+    "A": "Confusión frecuente: equipara control con formación.",
+    "B": "Clave correcta.",
+    "C": "Error conceptual: reduce evaluación a corte sumativo.",
+    "D": "Aplicación incompleta: acumula notas sin uso pedagógico."
   },
-  "item": {
-    "enunciado": "Una institución revisa sus prácticas de evaluación y encuentra que muchos docentes solo califican al final del periodo. El equipo académico propone fortalecer una evaluación de enfoque constructivista, centrada en el proceso de aprendizaje.\n\n¿Cuáles son tres características innegociables de la evaluación formativa?",
-    "opciones": {
-      "A": "Sorpresiva, sancionatoria y centrada exclusivamente en la nota final.",
-      "B": "Continua, sistemática y orientada a la retroalimentación para mejorar el aprendizaje.",
-      "C": "Memorística, acumulativa y desligada de la planeación didáctica.",
-      "D": "Final, clasificatoria y centrada únicamente en comparar estudiantes."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Situaciones escolares generales; no requieren conocimiento externo al enunciado ni referencias culturales específicas."
   },
-  "ficha_tecnica": {
-    "componente": "Evaluación Formativa y Didáctica",
-    "competencia": "Comprensión de evaluación formativa",
-    "claim_evaluado": "El evaluado comprende que la evaluación formativa acompaña el proceso de aprendizaje, produce información para mejorar la enseñanza y ofrece retroalimentación oportuna al estudiante.",
-    "evidencia": "Selecciona una opción que integra continuidad, sistematicidad y retroalimentación orientada a la mejora.",
-    "proceso_cognitivo": "Comprensión conceptual aplicada",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Describe una práctica punitiva y no formativa.",
-      "C": "Reduce la evaluación a memoria y acumulación, sin vínculo con la mejora.",
-      "D": "Confunde evaluación con clasificación final de estudiantes."
-    },
-    "fuente_autorizada": [
-      "Evaluación formativa",
-      "Enfoque constructivista",
-      "Sistema Institucional de Evaluación de los Estudiantes",
-      "Orientaciones pedagógicas institucionales"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Sintaxis directa, una tarea cognitiva por ítem y vocabulario pedagógico controlado."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque la sorpresa y la sanción contradicen el sentido formativo.",
-    "opcion_C": "Es incorrecta porque la memorización acumulativa no garantiza comprensión ni mejora.",
-    "opcion_D": "Es incorrecta porque clasificar estudiantes no constituye evaluación formativa.",
-    "distractores": {
-      "A": "Es incorrecta porque la sorpresa y la sanción contradicen el sentido formativo.",
-      "C": "Es incorrecta porque la memorización acumulativa no garantiza comprensión ni mejora.",
-      "D": "Es incorrecta porque clasificar estudiantes no constituye evaluación formativa."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no depende de una escala institucional particular ni exige experiencia administrativa. Evalúa una comprensión pedagógica general de la evaluación formativa."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 4 preguntas sobre evaluación formativa, mejora continua y lenguaje evaluativo."
+  "metadata_editorial": {
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }
