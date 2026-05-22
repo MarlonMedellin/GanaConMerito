@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B22_I09",
-    "tema": "Aprendizaje significativo y contexto",
-    "competencia": "Contextualización didáctica",
-    "dificultad": "Media",
-    "enunciado": "Un docente enseña porcentajes usando ejemplos de descuentos, encuestas del curso, consumo de agua y estadísticas deportivas. Luego formaliza el procedimiento matemático.\n\n¿Por qué esta secuencia favorece aprendizaje significativo?",
-    "opciones": {
-        "A": "Porque elimina el conocimiento formal.",
-        "B": "Porque conecta el concepto con experiencias cercanas antes de formalizarlo.",
-        "C": "Porque evita toda abstracción.",
-        "D": "Porque solo usa entretenimiento."
-    },
-    "respuesta_correcta": "B",
-    "justificacion_clave": "El docente parte de experiencias significativas y luego construye la formalización conceptual.",
-    "distractores": {
-        "A": "El conocimiento formal se mantiene.",
-        "C": "La abstracción aparece después de la contextualización.",
-        "D": "Los ejemplos tienen propósito matemático."
-    }
+  "id_item": "MTV_B22_I09",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y didáctica",
+  "tema": "Aprendizaje significativo (Ausubel)",
+  "subtema": "Aprendizaje significativo y contexto",
+  "competencia": "Analiza situaciones de aula y aplica principios de aprendizaje significativo para valorar decisiones pedagógicas.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Distingue prácticas de enseñanza memorística de prácticas que promueven integración sustantiva con saberes previos y comprensión con sentido.",
+  "evidencia": "Selecciona la opción que mejor explica la decisión pedagógica coherente con el aprendizaje significativo en el caso planteado.",
+  "tarea": "Inferir, a partir del caso, la condición didáctica que permite aprendizaje significativo según Ausubel.",
+  "contexto": "Un docente enseña porcentajes usando ejemplos de descuentos, encuestas del curso, consumo de agua y estadísticas deportivas. Luego formaliza el procedimiento matemático.",
+  "enunciado": "Un docente enseña porcentajes usando ejemplos de descuentos, encuestas del curso, consumo de agua y estadísticas deportivas. Luego formaliza el procedimiento matemático.\n\n¿Por qué esta secuencia favorece aprendizaje significativo?",
+  "opciones": {
+    "A": "Porque elimina el conocimiento formal.",
+    "B": "Porque conecta el concepto con experiencias cercanas antes de formalizarlo.",
+    "C": "Porque evita toda abstracción.",
+    "D": "Porque solo usa entretenimiento."
+  },
+  "clave": "B",
+  "justificacion_clave": "El docente parte de experiencias significativas y luego construye la formalización conceptual.",
+  "distractores_funcion": {
+    "A": "El conocimiento formal se mantiene.",
+    "B": "Clave correcta.",
+    "C": "La abstracción aparece después de la contextualización.",
+    "D": "Los ejemplos tienen propósito matemático."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje pedagógico estándar y contexto escolar general sin referencias culturales excluyentes."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciados directos con una sola tarea cognitiva y vocabulario de uso docente."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I09.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
 }

@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B22_I10",
-    "tema": "Papel del docente",
-    "competencia": "Mediación pedagógica",
-    "dificultad": "Media-Alta",
-    "enunciado": "Desde el aprendizaje significativo, ¿cuál debe ser el papel del docente al introducir un nuevo contenido?",
-    "opciones": {
-        "A": "Transmitirlo sin preguntar nada sobre lo que los estudiantes ya saben.",
-        "B": "Conectar el nuevo contenido con saberes previos, organizarlo, darle sentido y proponer experiencias de aplicación.",
-        "C": "Exigir copia literal sin explicación.",
-        "D": "Evitar toda mediación para que el estudiante aprenda solo."
-    },
-    "respuesta_correcta": "B",
-    "justificacion_clave": "El docente media entre estructura previa, nuevo contenido, sentido y aplicación.",
-    "distractores": {
-        "A": "Ignora presaberes.",
-        "C": "Reduce el aprendizaje a copia.",
-        "D": "El aprendizaje significativo requiere mediación intencionada."
-    }
+  "id_item": "MTV_B22_I10",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y didáctica",
+  "tema": "Aprendizaje significativo (Ausubel)",
+  "subtema": "Papel del docente",
+  "competencia": "Analiza situaciones de aula y aplica principios de aprendizaje significativo para valorar decisiones pedagógicas.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA-ALTA",
+  "claim": "Distingue prácticas de enseñanza memorística de prácticas que promueven integración sustantiva con saberes previos y comprensión con sentido.",
+  "evidencia": "Selecciona la opción que mejor explica la decisión pedagógica coherente con el aprendizaje significativo en el caso planteado.",
+  "tarea": "Inferir, a partir del caso, la condición didáctica que permite aprendizaje significativo según Ausubel.",
+  "contexto": "",
+  "enunciado": "Desde el aprendizaje significativo, ¿cuál debe ser el papel del docente al introducir un nuevo contenido?",
+  "opciones": {
+    "A": "Transmitirlo sin preguntar nada sobre lo que los estudiantes ya saben.",
+    "B": "Conectar el nuevo contenido con saberes previos, organizarlo, darle sentido y proponer experiencias de aplicación.",
+    "C": "Exigir copia literal sin explicación.",
+    "D": "Evitar toda mediación para que el estudiante aprenda solo."
+  },
+  "clave": "B",
+  "justificacion_clave": "El docente media entre estructura previa, nuevo contenido, sentido y aplicación.",
+  "distractores_funcion": {
+    "A": "Ignora presaberes.",
+    "B": "Clave correcta.",
+    "C": "Reduce el aprendizaje a copia.",
+    "D": "El aprendizaje significativo requiere mediación intencionada."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje pedagógico estándar y contexto escolar general sin referencias culturales excluyentes."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciados directos con una sola tarea cognitiva y vocabulario de uso docente."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I10.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
 }
