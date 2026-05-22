@@ -1,104 +1,45 @@
 {
   "id_item": "IDD_B15_I04",
-  "archivo_sugerido": "IDD_B15_I04_jornada_unica_extracurriculo_saber_ser_convivir.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B15",
-    "nombre": "Currículo oficial, oculto, nulo, PEI y DUR 1075",
-    "estado_en_lista": "Bloque 15 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 4 de 6"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión curricular y normativa educativa",
+  "tema": "Currículo oficial, oculto, nulo, PEI y DUR 1075",
+  "subtema": "Jornada única y extracurrículo",
+  "competencia": "Distingue tipos de currículo y su articulación con PEI y marco normativo para valorar decisiones institucionales.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la alternativa más adecuada según el criterio curricular y pedagógico evaluado en el caso.",
+  "evidencia": "Selecciona una única respuesta técnicamente defendible frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión curricular, didáctica o institucional.",
+  "contexto": "Una institución interpreta la jornada única como la posibilidad de aumentar únicamente horas de matemáticas y lenguaje con actividades repetitivas. Otro equipo plantea que el extracurrículo debe aportar a la formación integral.",
+  "enunciado": "Una institución interpreta la jornada única como la posibilidad de aumentar únicamente horas de matemáticas y lenguaje con actividades repetitivas. Otro equipo plantea que el extracurrículo debe aportar a la formación integral.\n\n¿Por qué la creación original del extracurrículo y la jornada única se relaciona con competencias del saber ser y convivir?",
+  "opciones": {
+    "A": "Porque debe ampliar oportunidades para desarrollar convivencia, ciudadanía, arte, deporte, cultura, habilidades socioemocionales y proyecto de vida, no solo aumentar carga académica repetitiva.",
+    "B": "Porque las áreas fundamentales deben eliminarse por completo.",
+    "C": "Porque la jornada única solo sirve para custodiar estudiantes sin propósito pedagógico.",
+    "D": "Porque el extracurrículo no debe relacionarse con el PEI ni con la formación integral."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende el sentido formativo del extracurrículo y la jornada única como espacios para desarrollar competencias del ser y convivir, no solo para aumentar carga académica.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación, gestión curricular, jornada única o formación integral.",
-    "blueprint": {
-      "problematica_principal": "Reducción de la jornada única o extracurrículo a incremento de horas en áreas fundamentales, sin formación integral.",
-      "fuente_autorizada": [
-        "Ley 115 de 1994",
-        "Formación integral",
-        "Jornada única",
-        "Competencias ciudadanas",
-        "Proyecto Educativo Institucional"
-      ],
-      "componente_modulo": "Jornada única y extracurrículo",
-      "competencia": "Comprensión de formación integral",
-      "afirmacion": "El extracurrículo y la jornada extendida deben fortalecer dimensiones del saber ser, convivir, crear, participar y construir proyecto de vida.",
-      "evidencia_observable": "Reconoce que estos espacios no deben convertirse solo en más clases repetitivas de áreas básicas.",
-      "tipo_de_evidencia": "Juicio curricular aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que ampliar el tiempo escolar debe tener sentido pedagógico integral, incluyendo convivencia, ciudadanía, arte, deporte, cultura, habilidades socioemocionales y proyecto de vida.",
-    "evidencia_observable": "Selecciona una interpretación de jornada única o extracurrículo centrada en formación integral.",
-    "tarea_cognitiva": "Diferenciar ampliación pedagógica integral de simple aumento de carga académica.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Desvalorizar áreas fundamentales",
-        "revision": "La clave no niega su importancia; cuestiona que sean el único propósito."
-      },
-      {
-        "riesgo": "Confundir extracurrículo con recreación sin intención pedagógica",
-        "revision": "La opción correcta mantiene propósito formativo."
-      },
-      {
-        "riesgo": "Ignorar contextos institucionales diversos",
-        "revision": "El ítem permite múltiples expresiones de formación integral."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque no se trata de eliminar áreas básicas.",
+    "C": "Es incorrecta porque la jornada única no debe reducirse a custodia.",
+    "D": "Es incorrecta porque el extracurrículo debe articularse al PEI."
   },
-  "item": {
-    "enunciado": "Una institución interpreta la jornada única como la posibilidad de aumentar únicamente horas de matemáticas y lenguaje con actividades repetitivas. Otro equipo plantea que el extracurrículo debe aportar a la formación integral.\n\n¿Por qué la creación original del extracurrículo y la jornada única se relaciona con competencias del saber ser y convivir?",
-    "opciones": {
-      "A": "Porque debe ampliar oportunidades para desarrollar convivencia, ciudadanía, arte, deporte, cultura, habilidades socioemocionales y proyecto de vida, no solo aumentar carga académica repetitiva.",
-      "B": "Porque las áreas fundamentales deben eliminarse por completo.",
-      "C": "Porque la jornada única solo sirve para custodiar estudiantes sin propósito pedagógico.",
-      "D": "Porque el extracurrículo no debe relacionarse con el PEI ni con la formación integral."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo estandarizado y contexto institucional general, sin sesgos culturales innecesarios."
   },
-  "ficha_tecnica": {
-    "componente": "Jornada única y extracurrículo",
-    "competencia": "Comprensión de formación integral",
-    "claim_evaluado": "El evaluado comprende que ampliar el tiempo escolar debe tener sentido pedagógico integral, incluyendo convivencia, ciudadanía, arte, deporte, cultura, habilidades socioemocionales y proyecto de vida.",
-    "evidencia": "Selecciona una interpretación de jornada única o extracurrículo centrada en formación integral.",
-    "proceso_cognitivo": "Comprensión curricular aplicada",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Plantea una falsa oposición con las áreas fundamentales.",
-      "C": "Reduce la jornada única a custodia.",
-      "D": "Desvincula el extracurrículo del horizonte institucional."
-    },
-    "fuente_autorizada": [
-      "Ley 115 de 1994",
-      "Formación integral",
-      "Jornada única",
-      "Competencias ciudadanas",
-      "Proyecto Educativo Institucional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado claro, tarea única y opciones homogéneas en estructura."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque no se trata de eliminar áreas básicas.",
-    "opcion_C": "Es incorrecta porque la jornada única no debe reducirse a custodia.",
-    "opcion_D": "Es incorrecta porque el extracurrículo debe articularse al PEI.",
-    "distractores": {
-      "B": "Es incorrecta porque no se trata de eliminar áreas básicas.",
-      "C": "Es incorrecta porque la jornada única no debe reducirse a custodia.",
-      "D": "Es incorrecta porque el extracurrículo debe articularse al PEI."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem reconoce diversas dimensiones formativas sin desvalorizar las áreas académicas ni imponer un único modelo extracurricular."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 6 preguntas sobre currículo oficial, oculto, nulo, PEI y DUR 1075."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Currículo oficial, oculto, nulo, PEI y DUR 1075/IDD_B15_I04.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

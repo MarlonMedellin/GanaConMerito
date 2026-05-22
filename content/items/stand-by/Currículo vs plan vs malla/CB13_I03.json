@@ -1,103 +1,45 @@
 {
   "id_item": "CB13_I03",
-  "bloque": {
-    "numero": 13,
-    "nombre": "Currículo vs plan vs malla",
-    "estado_en_lista": "Bloque 13 de 15",
-    "decision_del_bloque": "Grupo de 3 preguntas",
-    "item_en_grupo": "Ítem 3 de 3"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión curricular",
+  "tema": "Currículo vs plan vs malla",
+  "subtema": "Gestión Académica",
+  "competencia": "Diferencia currículo, plan de estudios y malla curricular en su función y nivel de concreción.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "BAJA",
+  "claim": "Identifica la alternativa más adecuada según el criterio curricular y pedagógico evaluado en el caso.",
+  "evidencia": "Selecciona una única respuesta técnicamente defendible frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión curricular, didáctica o institucional.",
+  "contexto": "Una institución revisa la distribución de áreas obligatorias, asignaturas, grados e intensidad horaria. También analiza cómo se articulan estos elementos con su propuesta pedagógica.",
+  "enunciado": "Una institución revisa la distribución de áreas obligatorias, asignaturas, grados e intensidad horaria. También analiza cómo se articulan estos elementos con su propuesta pedagógica.\n\n¿A qué instrumento corresponde principalmente esta revisión?",
+  "opciones": {
+    "A": "Al plan de estudios.",
+    "B": "Al observador del estudiante.",
+    "C": "Al acta de reunión de padres.",
+    "D": "Al inventario de recursos físicos."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce la función del plan de estudios dentro de la gestión académica, diferenciándolo de otros instrumentos institucionales como la malla curricular, el observador del estudiante o los inventarios administrativos.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "Confusión conceptual curricular",
-      "fuente_autorizada": [
-        "Lineamientos curriculares del MEN",
-        "Orientaciones curriculares institucionales",
-        "Proyecto Educativo Institucional"
-      ],
-      "componente_modulo": "Gestión Académica",
-      "competencia": "Diseño curricular",
-      "afirmacion": "Los conceptos tienen funciones distintas.",
-      "evidencia_observable": "Identifica el nivel de decisión que corresponde al plan de estudios dentro de la gestión académica.",
-      "tipo_de_evidencia": "Reconocimiento conceptual aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado distingue el plan de estudios como instrumento que organiza áreas, asignaturas, grados, intensidades horarias y articulación con la propuesta pedagógica institucional.",
-    "evidencia_observable": "Selecciona el instrumento curricular correspondiente cuando la situación exige revisar la distribución de áreas, asignaturas, grados e intensidad horaria.",
-    "tarea_cognitiva": "Seleccionar la decisión que pertenece al plan de estudios dentro de la gestión académica.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Baja",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Sesgo por familiaridad con lenguaje técnico curricular",
-        "revision": "El ítem utiliza términos propios de la gestión académica, pero el enunciado ofrece suficientes pistas funcionales: áreas, asignaturas, grados e intensidad horaria."
-      },
-      {
-        "riesgo": "Ambigüedad entre plan de estudios y malla curricular",
-        "revision": "La clave se enfoca en la organización general de áreas, asignaturas, grados e intensidad horaria; no en la secuencia detallada de contenidos o desempeños."
-      },
-      {
-        "riesgo": "Sesgo por experiencia administrativa",
-        "revision": "No exige haber construido un plan de estudios; evalúa la identificación básica de su función."
-      },
-      {
-        "riesgo": "Distractores demasiado obvios",
-        "revision": "Los distractores representan instrumentos institucionales reales, pero con funciones claramente distintas."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque el observador del estudiante es un instrumento de seguimiento individual, no de organización curricular general.",
+    "C": "Es incorrecta porque el acta de reunión de padres registra información o acuerdos de una reunión, pero no define la estructura académica institucional.",
+    "D": "Es incorrecta porque el inventario de recursos físicos se relaciona con la administración de bienes, no con la distribución de áreas, grados o intensidad horaria."
   },
-  "item": {
-    "enunciado": "Una institución revisa la distribución de áreas obligatorias, asignaturas, grados e intensidad horaria. También analiza cómo se articulan estos elementos con su propuesta pedagógica.\n\n¿A qué instrumento corresponde principalmente esta revisión?",
-    "opciones": {
-      "A": "Al plan de estudios.",
-      "B": "Al observador del estudiante.",
-      "C": "Al acta de reunión de padres.",
-      "D": "Al inventario de recursos físicos."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo estandarizado y contexto institucional general, sin sesgos culturales innecesarios."
   },
-  "ficha_tecnica": {
-    "componente": "Gestión Académica",
-    "competencia": "Diseño curricular",
-    "claim_evaluado": "El evaluado distingue el plan de estudios como instrumento que organiza áreas, asignaturas, grados, intensidades horarias y articulación con la propuesta pedagógica institucional.",
-    "evidencia": "Selecciona el instrumento curricular correspondiente cuando la situación exige revisar la distribución de áreas, asignaturas, grados e intensidad horaria.",
-    "proceso_cognitivo": "Reconocimiento conceptual aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Baja",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "El observador del estudiante registra situaciones de seguimiento individual, no organiza áreas, grados ni intensidades horarias.",
-      "C": "El acta de reunión de padres documenta una sesión o acuerdo, pero no estructura el plan académico institucional.",
-      "D": "El inventario de recursos físicos pertenece a la gestión de bienes o infraestructura, no al diseño curricular."
-    },
-    "fuente_autorizada": [
-      "Lineamientos curriculares del MEN",
-      "Orientaciones curriculares institucionales",
-      "Proyecto Educativo Institucional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado claro, tarea única y opciones homogéneas en estructura."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque el observador del estudiante es un instrumento de seguimiento individual, no de organización curricular general.",
-    "opcion_C": "Es incorrecta porque el acta de reunión de padres registra información o acuerdos de una reunión, pero no define la estructura académica institucional.",
-    "opcion_D": "Es incorrecta porque el inventario de recursos físicos se relaciona con la administración de bienes, no con la distribución de áreas, grados o intensidad horaria.",
-    "distractores": {
-      "B": "Es incorrecta porque el observador del estudiante es un instrumento de seguimiento individual, no de organización curricular general.",
-      "C": "Es incorrecta porque el acta de reunión de padres registra información o acuerdos de una reunión, pero no define la estructura académica institucional.",
-      "D": "Es incorrecta porque el inventario de recursos físicos se relaciona con la administración de bienes, no con la distribución de áreas, grados o intensidad horaria."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no exige conocimiento normativo literal ni experiencia directa en elaboración curricular. La información del enunciado permite identificar la función del plan de estudios mediante elementos reconocibles de la gestión académica: áreas, asignaturas, grados e intensidad horaria."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada. Por su baja dificultad, puede funcionar como ítem de entrada o verificación conceptual básica.",
-    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 3 preguntas sobre currículo, plan de estudios y malla curricular."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Currículo vs plan vs malla/CB13_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

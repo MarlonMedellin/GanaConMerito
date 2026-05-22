@@ -1,103 +1,45 @@
 {
   "id_item": "CB13_I02",
-  "bloque": {
-    "numero": 13,
-    "nombre": "Currículo vs plan vs malla",
-    "estado_en_lista": "Bloque 13 de 15",
-    "decision_del_bloque": "Grupo de 3 preguntas",
-    "item_en_grupo": "Ítem 2 de 3"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión curricular",
+  "tema": "Currículo vs plan vs malla",
+  "subtema": "Gestión Académica",
+  "competencia": "Diferencia currículo, plan de estudios y malla curricular en su función y nivel de concreción.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la alternativa más adecuada según el criterio curricular y pedagógico evaluado en el caso.",
+  "evidencia": "Selecciona una única respuesta técnicamente defendible frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión curricular, didáctica o institucional.",
+  "contexto": "El área de Ciencias Naturales detecta que algunos contenidos se repiten en varios grados, mientras otros prerrequisitos aparecen demasiado tarde. No se busca cambiar la misión institucional ni eliminar áreas del plan de estudios, sino organizar mejor la progresión de aprendizajes.",
+  "enunciado": "El área de Ciencias Naturales detecta que algunos contenidos se repiten en varios grados, mientras otros prerrequisitos aparecen demasiado tarde. No se busca cambiar la misión institucional ni eliminar áreas del plan de estudios, sino organizar mejor la progresión de aprendizajes.\n\n¿Qué instrumento conviene revisar principalmente?",
+  "opciones": {
+    "A": "La malla curricular del área, porque permite organizar secuencias, contenidos y desempeños por grado.",
+    "B": "El manual de convivencia, porque regula la progresión conceptual de las asignaturas.",
+    "C": "El horario de clases, porque define los aprendizajes esperados por grado.",
+    "D": "El registro de asistencia, porque allí se establecen los prerrequisitos académicos."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante aplica la diferencia entre currículo, plan de estudios y malla curricular para tomar una decisión académica concreta relacionada con la organización de secuencias de aprendizaje.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "Confusión conceptual curricular",
-      "fuente_autorizada": [
-        "Lineamientos curriculares del MEN",
-        "Orientaciones curriculares institucionales",
-        "Proyecto Educativo Institucional"
-      ],
-      "componente_modulo": "Gestión Académica",
-      "competencia": "Diseño curricular",
-      "afirmacion": "Los conceptos tienen funciones distintas.",
-      "evidencia_observable": "Reconoce qué instrumento debe ajustarse cuando se requiere reorganizar secuencias de aprendizaje.",
-      "tipo_de_evidencia": "Aplicación conceptual en situación académica",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado aplica diferencias entre instrumentos curriculares para seleccionar una acción de mejora académica pertinente.",
-    "evidencia_observable": "Identifica que la malla curricular es el instrumento más adecuado para organizar progresiones, contenidos, desempeños y prerrequisitos por grado o periodo.",
-    "tarea_cognitiva": "Determinar qué componente curricular se debe revisar ante una necesidad específica de organización de aprendizajes.",
-    "tipo_de_pregunta": "Caso situacional de juicio profesional",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Sesgo por experiencia en diseño curricular",
-        "revision": "El ítem no exige haber diseñado una malla completa; evalúa una decisión básica sobre el uso del instrumento adecuado."
-      },
-      {
-        "riesgo": "Ambigüedad entre plan de estudios y malla curricular",
-        "revision": "El enunciado aclara que no se busca cambiar áreas ni grados, sino reorganizar progresiones y prerrequisitos."
-      },
-      {
-        "riesgo": "Lenguaje técnico excesivo",
-        "revision": "Los términos técnicos se contextualizan mediante una situación académica concreta."
-      },
-      {
-        "riesgo": "Sesgo por área disciplinar",
-        "revision": "Aunque el caso usa Ciencias Naturales, la competencia evaluada es transferible a cualquier área."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque el manual de convivencia regula acuerdos, derechos, deberes y procedimientos de convivencia, no la progresión conceptual de las asignaturas.",
+    "C": "Es incorrecta porque el horario de clases organiza tiempos, docentes y espacios, pero no establece por sí mismo la secuencia de aprendizajes esperados.",
+    "D": "Es incorrecta porque el registro de asistencia no cumple una función de diseño curricular ni define prerrequisitos académicos."
   },
-  "item": {
-    "enunciado": "El área de Ciencias Naturales detecta que algunos contenidos se repiten en varios grados, mientras otros prerrequisitos aparecen demasiado tarde. No se busca cambiar la misión institucional ni eliminar áreas del plan de estudios, sino organizar mejor la progresión de aprendizajes.\n\n¿Qué instrumento conviene revisar principalmente?",
-    "opciones": {
-      "A": "La malla curricular del área, porque permite organizar secuencias, contenidos y desempeños por grado.",
-      "B": "El manual de convivencia, porque regula la progresión conceptual de las asignaturas.",
-      "C": "El horario de clases, porque define los aprendizajes esperados por grado.",
-      "D": "El registro de asistencia, porque allí se establecen los prerrequisitos académicos."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo estandarizado y contexto institucional general, sin sesgos culturales innecesarios."
   },
-  "ficha_tecnica": {
-    "componente": "Gestión Académica",
-    "competencia": "Diseño curricular",
-    "claim_evaluado": "El evaluado aplica diferencias entre instrumentos curriculares para seleccionar una acción de mejora académica pertinente.",
-    "evidencia": "Identifica que la malla curricular es el instrumento más adecuado para organizar progresiones, contenidos, desempeños y prerrequisitos por grado o periodo.",
-    "proceso_cognitivo": "Aplicación conceptual y juicio académico",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Confunde convivencia escolar con diseño académico y progresión curricular.",
-      "C": "El horario distribuye tiempos y espacios, pero no define la progresión de contenidos o desempeños.",
-      "D": "El registro de asistencia documenta presencia o ausencia, pero no organiza prerrequisitos ni secuencias de aprendizaje."
-    },
-    "fuente_autorizada": [
-      "Lineamientos curriculares del MEN",
-      "Orientaciones curriculares institucionales",
-      "Proyecto Educativo Institucional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado claro, tarea única y opciones homogéneas en estructura."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque el manual de convivencia regula acuerdos, derechos, deberes y procedimientos de convivencia, no la progresión conceptual de las asignaturas.",
-    "opcion_C": "Es incorrecta porque el horario de clases organiza tiempos, docentes y espacios, pero no establece por sí mismo la secuencia de aprendizajes esperados.",
-    "opcion_D": "Es incorrecta porque el registro de asistencia no cumple una función de diseño curricular ni define prerrequisitos académicos.",
-    "distractores": {
-      "B": "Es incorrecta porque el manual de convivencia regula acuerdos, derechos, deberes y procedimientos de convivencia, no la progresión conceptual de las asignaturas.",
-      "C": "Es incorrecta porque el horario de clases organiza tiempos, docentes y espacios, pero no establece por sí mismo la secuencia de aprendizajes esperados.",
-      "D": "Es incorrecta porque el registro de asistencia no cumple una función de diseño curricular ni define prerrequisitos académicos."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El caso no exige conocimiento especializado de Ciencias Naturales ni experiencia directa en construcción curricular avanzada. La situación proporciona suficiente información para identificar que el problema se relaciona con secuencia y progresión, por lo que la malla curricular es el instrumento pertinente."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 3 preguntas sobre currículo, plan de estudios y malla curricular."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Currículo vs plan vs malla/CB13_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

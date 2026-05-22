@@ -1,108 +1,45 @@
 {
   "id_item": "EFCC_B03_I02",
-  "archivo_sugerido": "EFCC_B03_I02_criterios_estructurales_pei.json",
-  "bloque": {
-    "codigo_bloque": "EFCC_B03",
-    "nombre": "Currículo, PEI y evaluación didáctica",
-    "estado_en_lista": "Bloque 3 de 5",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 2 de 3"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Didáctica y evaluación curricular",
+  "tema": "Currículo, PEI y evaluación didáctica",
+  "subtema": "Currículo, PEI y Evaluación Didáctica",
+  "competencia": "Selecciona estrategias de evaluación didáctica coherentes con el currículo y el PEI institucional.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la alternativa más adecuada según el criterio curricular y pedagógico evaluado en el caso.",
+  "evidencia": "Selecciona una única respuesta técnicamente defendible frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión curricular, didáctica o institucional.",
+  "contexto": "Una institución tiene un PEI con principios muy bien redactados, pero estos no se reflejan en el currículo, las prácticas pedagógicas, la evaluación ni las decisiones de gestión. El equipo académico concluye que el PEI funciona más como un documento formal que como una guía real de la vida institucional.",
+  "enunciado": "Una institución tiene un PEI con principios muy bien redactados, pero estos no se reflejan en el currículo, las prácticas pedagógicas, la evaluación ni las decisiones de gestión. El equipo académico concluye que el PEI funciona más como un documento formal que como una guía real de la vida institucional.\n\nPara evitar esta desconexión, ¿qué tres criterios estructurales debe poseer el diseño del PEI?",
+  "opciones": {
+    "A": "Coherencia interna, pertinencia contextual y operatividad evaluable en las prácticas institucionales.",
+    "B": "Extensión documental, lenguaje técnico complejo y copia de modelos externos reconocidos.",
+    "C": "Uniformidad absoluta, ausencia de participación y dependencia exclusiva de pruebas estandarizadas.",
+    "D": "Decoración visual, actualización ocasional y archivo formal para visitas externas."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce los criterios estructurales que debe poseer el diseño del PEI para funcionar como proyecto institucional real y no como un documento formal desconectado de la práctica.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "PEI formal o declarativo que no se concreta en currículo, prácticas, evaluación ni gestión institucional.",
-      "fuente_autorizada": [
-        "Proyecto Educativo Institucional",
-        "Ley 115 de 1994",
-        "Decreto 1860 de 1994",
-        "Orientaciones del Ministerio de Educación Nacional sobre PEI",
-        "Planeación institucional"
-      ],
-      "componente_modulo": "Currículo, PEI y Evaluación Didáctica",
-      "competencia": "Planeación institucional coherente",
-      "afirmacion": "El PEI debe ser coherente, pertinente y operable para orientar realmente la vida institucional.",
-      "evidencia_observable": "Identifica criterios estructurales que evitan que el PEI sea un currículo declarado pero no vivido.",
-      "tipo_de_evidencia": "Comprensión institucional aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que un PEI funcional debe tener coherencia interna, pertinencia contextual y operatividad evaluable, de modo que sus principios se traduzcan en currículo, prácticas pedagógicas, evaluación y gestión institucional.",
-    "evidencia_observable": "Selecciona los tres criterios que permiten diferenciar un PEI real de un documento declarativo o incoherente.",
-    "tarea_cognitiva": "Analizar los criterios de diseño del PEI y seleccionar la combinación estructural más adecuada.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Expresión coloquial 'currículo mentiroso'",
-        "revision": "El ítem conserva el sentido crítico, pero lo reformula como PEI declarativo o desconectado de la práctica."
-      },
-      {
-        "riesgo": "Ambigüedad en los criterios",
-        "revision": "La clave define los criterios de forma funcional: coherencia, pertinencia y operatividad evaluable."
-      },
-      {
-        "riesgo": "Sesgo por experiencia en gestión directiva",
-        "revision": "No exige haber diseñado un PEI; evalúa comprensión general de su función institucional."
-      },
-      {
-        "riesgo": "Lenguaje técnico excesivo",
-        "revision": "Los criterios se explican en relación con prácticas, currículo, evaluación y contexto."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque la extensión, el lenguaje técnico o la copia de modelos externos no garantizan apropiación ni coherencia institucional.",
+    "C": "Es incorrecta porque elimina participación y reduce el PEI a uniformidad y pruebas estandarizadas.",
+    "D": "Es incorrecta porque convierte el PEI en documento de archivo y no en proyecto orientador de la acción educativa."
   },
-  "item": {
-    "enunciado": "Una institución tiene un PEI con principios muy bien redactados, pero estos no se reflejan en el currículo, las prácticas pedagógicas, la evaluación ni las decisiones de gestión. El equipo académico concluye que el PEI funciona más como un documento formal que como una guía real de la vida institucional.\n\nPara evitar esta desconexión, ¿qué tres criterios estructurales debe poseer el diseño del PEI?",
-    "opciones": {
-      "A": "Coherencia interna, pertinencia contextual y operatividad evaluable en las prácticas institucionales.",
-      "B": "Extensión documental, lenguaje técnico complejo y copia de modelos externos reconocidos.",
-      "C": "Uniformidad absoluta, ausencia de participación y dependencia exclusiva de pruebas estandarizadas.",
-      "D": "Decoración visual, actualización ocasional y archivo formal para visitas externas."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo estandarizado y contexto institucional general, sin sesgos culturales innecesarios."
   },
-  "ficha_tecnica": {
-    "componente": "Currículo, PEI y Evaluación Didáctica",
-    "competencia": "Planeación institucional coherente",
-    "claim_evaluado": "El evaluado comprende que un PEI funcional debe tener coherencia interna, pertinencia contextual y operatividad evaluable, de modo que sus principios se traduzcan en currículo, prácticas pedagógicas, evaluación y gestión institucional.",
-    "evidencia": "Selecciona los tres criterios que permiten diferenciar un PEI real de un documento declarativo o incoherente.",
-    "proceso_cognitivo": "Comprensión institucional aplicada",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Privilegia forma documental y copia externa, no funcionalidad institucional.",
-      "C": "Propone rigidez, ausencia de participación y reducción evaluativa.",
-      "D": "Reduce el PEI a presentación formal y archivo, sin impacto pedagógico."
-    },
-    "fuente_autorizada": [
-      "Proyecto Educativo Institucional",
-      "Ley 115 de 1994",
-      "Decreto 1860 de 1994",
-      "Orientaciones del Ministerio de Educación Nacional sobre PEI",
-      "Planeación institucional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado claro, tarea única y opciones homogéneas en estructura."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque la extensión, el lenguaje técnico o la copia de modelos externos no garantizan apropiación ni coherencia institucional.",
-    "opcion_C": "Es incorrecta porque elimina participación y reduce el PEI a uniformidad y pruebas estandarizadas.",
-    "opcion_D": "Es incorrecta porque convierte el PEI en documento de archivo y no en proyecto orientador de la acción educativa.",
-    "distractores": {
-      "B": "Es incorrecta porque la extensión, el lenguaje técnico o la copia de modelos externos no garantizan apropiación ni coherencia institucional.",
-      "C": "Es incorrecta porque elimina participación y reduce el PEI a uniformidad y pruebas estandarizadas.",
-      "D": "Es incorrecta porque convierte el PEI en documento de archivo y no en proyecto orientador de la acción educativa."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no exige conocimiento de un PEI institucional específico. Evalúa criterios generales de calidad del diseño institucional y evita el lenguaje descalificador directo."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 3 preguntas sobre currículo, PEI y evaluación didáctica."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Currículo, PEI y evaluación didáctica/EFCC_B03_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }

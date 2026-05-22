@@ -1,104 +1,45 @@
 {
   "id_item": "IDD_B15_I03",
-  "archivo_sugerido": "IDD_B15_I03_curriculo_nulo_temarios_sin_comprension.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B15",
-    "nombre": "Currículo oficial, oculto, nulo, PEI y DUR 1075",
-    "estado_en_lista": "Bloque 15 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 3 de 6"
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión curricular y normativa educativa",
+  "tema": "Currículo oficial, oculto, nulo, PEI y DUR 1075",
+  "subtema": "Currículo nulo",
+  "competencia": "Distingue tipos de currículo y su articulación con PEI y marco normativo para valorar decisiones institucionales.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica la alternativa más adecuada según el criterio curricular y pedagógico evaluado en el caso.",
+  "evidencia": "Selecciona una única respuesta técnicamente defendible frente a distractores plausibles.",
+  "tarea": "Analizar la situación y elegir la mejor decisión curricular, didáctica o institucional.",
+  "contexto": "Un docente se esfuerza por dictar todos los temas del libro antes de finalizar el periodo. Sin embargo, los estudiantes no alcanzan a comprenderlos, aplicarlos ni recibir retroalimentación, porque el tiempo se dedica casi por completo a cubrir temarios.",
+  "enunciado": "Un docente se esfuerza por dictar todos los temas del libro antes de finalizar el periodo. Sin embargo, los estudiantes no alcanzan a comprenderlos, aplicarlos ni recibir retroalimentación, porque el tiempo se dedica casi por completo a cubrir temarios.\n\n¿En qué consiste el currículo nulo en esta situación?",
+  "opciones": {
+    "A": "En los valores no escritos que se aprenden en la convivencia diaria.",
+    "B": "En el conjunto de normas oficiales que regulan la educación.",
+    "C": "En las actividades extracurriculares de jornada única.",
+    "D": "En los contenidos o aprendizajes que estaban planificados, pero no fueron enseñados ni aprendidos de manera significativa."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende el currículo nulo y su relación con contenidos planificados pero no enseñados significativamente.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, diseño curricular, coordinación académica o evaluación formativa.",
-    "blueprint": {
-      "problematica_principal": "Priorización de cobertura superficial de temas sobre comprensión real de los estudiantes.",
-      "fuente_autorizada": [
-        "Teoría curricular",
-        "Evaluación formativa",
-        "Planeación curricular",
-        "Aprendizaje significativo",
-        "Gestión académica"
-      ],
-      "componente_modulo": "Currículo nulo",
-      "competencia": "Comprensión crítica de la planeación curricular",
-      "afirmacion": "El currículo nulo se expresa en aquello que se planifica pero no se enseña, no se aprende o se sacrifica por falta de tiempo, mediación o pertinencia.",
-      "evidencia_observable": "Reconoce que dictar todos los temas del libro sin comprensión puede producir currículo nulo.",
-      "tipo_de_evidencia": "Juicio curricular aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "D"
-    },
-    "claim": "El evaluado comprende que cumplir una lista de temas no equivale a garantizar currículo aprendido ni desarrollo de competencias.",
-    "evidencia_observable": "Selecciona una explicación que vincula currículo nulo con planeación no realizada significativamente o aprendizaje sacrificado.",
-    "tarea_cognitiva": "Analizar una práctica de cobertura curricular superficial y clasificarla.",
-    "tipo_de_pregunta": "Caso conceptual de juicio curricular",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Culpar solo al docente por restricciones de tiempo",
-        "revision": "El ítem analiza la práctica curricular sin desconocer condiciones institucionales."
-      },
-      {
-        "riesgo": "Confundir currículo nulo con currículo oculto",
-        "revision": "La clave distingue lo no enseñado o no aprendido significativamente de lo implícito."
-      },
-      {
-        "riesgo": "Desvalorizar la planeación",
-        "revision": "El ítem no rechaza planear; cuestiona planear sin garantizar comprensión."
-      }
-    ]
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque alude al currículo oculto.",
+    "B": "Es incorrecta porque alude al currículo oficial.",
+    "C": "Es incorrecta porque se refiere a actividades complementarias, no a aprendizajes anulados.",
+    "D": "Clave correcta."
   },
-  "item": {
-    "enunciado": "Un docente se esfuerza por dictar todos los temas del libro antes de finalizar el periodo. Sin embargo, los estudiantes no alcanzan a comprenderlos, aplicarlos ni recibir retroalimentación, porque el tiempo se dedica casi por completo a cubrir temarios.\n\n¿En qué consiste el currículo nulo en esta situación?",
-    "opciones": {
-      "A": "En los valores no escritos que se aprenden en la convivencia diaria.",
-      "B": "En el conjunto de normas oficiales que regulan la educación.",
-      "C": "En las actividades extracurriculares de jornada única.",
-      "D": "En los contenidos o aprendizajes que estaban planificados, pero no fueron enseñados ni aprendidos de manera significativa."
-    },
-    "respuesta_correcta": "D"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Lenguaje educativo estandarizado y contexto institucional general, sin sesgos culturales innecesarios."
   },
-  "ficha_tecnica": {
-    "componente": "Currículo nulo",
-    "competencia": "Comprensión crítica de la planeación curricular",
-    "claim_evaluado": "El evaluado comprende que cumplir una lista de temas no equivale a garantizar currículo aprendido ni desarrollo de competencias.",
-    "evidencia": "Selecciona una explicación que vincula currículo nulo con planeación no realizada significativamente o aprendizaje sacrificado.",
-    "proceso_cognitivo": "Juicio curricular aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "D",
-    "distractores": {
-      "A": "Describe currículo oculto, no currículo nulo.",
-      "B": "Describe currículo oficial o marco normativo.",
-      "C": "Confunde currículo nulo con extracurrículo."
-    },
-    "fuente_autorizada": [
-      "Teoría curricular",
-      "Evaluación formativa",
-      "Planeación curricular",
-      "Aprendizaje significativo",
-      "Gestión académica"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado claro, tarea única y opciones homogéneas en estructura."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "opcion_A": "Es incorrecta porque alude al currículo oculto.",
-    "opcion_B": "Es incorrecta porque alude al currículo oficial.",
-    "opcion_C": "Es incorrecta porque se refiere a actividades complementarias, no a aprendizajes anulados.",
-    "distractores": {
-      "A": "Es incorrecta porque alude al currículo oculto.",
-      "B": "Es incorrecta porque alude al currículo oficial.",
-      "C": "Es incorrecta porque se refiere a actividades complementarias, no a aprendizajes anulados."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem evalúa comprensión curricular sin culpar individualmente al docente; centra la atención en la relación entre planeación, mediación y aprendizaje."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 6 preguntas sobre currículo oficial, oculto, nulo, PEI y DUR 1075."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Currículo oficial, oculto, nulo, PEI y DUR 1075/IDD_B15_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
   }
 }
