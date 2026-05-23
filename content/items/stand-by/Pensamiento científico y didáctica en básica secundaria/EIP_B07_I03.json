@@ -1,40 +1,45 @@
 {
   "id_item": "EIP_B07_I03",
-  "archivo_sugerido": "EIP_B07_I03_ciencia_escolar_no_memorizacion_mecanica.json",
-  "proposito_de_uso": "Evaluar si el aspirante diferencia ciencia escolar comprensiva de memorización mecánica.",
-  "blueprint": {
-    "componente_modulo": "Comprensión científica",
-    "competencia": "Diferenciación entre aprendizaje científico y repetición mecánica",
-    "afirmacion": "La ciencia escolar debe desarrollar comprensión, explicación, resolución de problemas, pensamiento crítico y uso de evidencias.",
-    "evidencia_observable": "Distingue una práctica científica formativa de una práctica tecnicista memorística.",
-    "tipo_de_evidencia": "Comprensión didáctica comparativa",
-    "dificultad_esperada": "Media-Alta",
-    "clave": "D"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Pensamiento científico y didáctica en básica secundaria",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "En una clase de ciencias, los estudiantes pueden repetir definiciones y fórmulas, pero no logran explicar fenómenos cotidianos, interpretar evidencias ni resolver problemas sencillos. El docente quiere ajustar su metodología.",
+  "enunciado": "En una clase de ciencias, los estudiantes pueden repetir definiciones y fórmulas, pero no logran explicar fenómenos cotidianos, interpretar evidencias ni resolver problemas sencillos. El docente quiere ajustar su metodología.\n\n¿Qué cambio sería más coherente con el desarrollo del pensamiento científico?",
+  "opciones": {
+    "A": "Aumentar la cantidad de fórmulas para memorizar sin explicación.",
+    "B": "Prohibir toda pregunta de los estudiantes para avanzar más rápido.",
+    "C": "Eliminar los fenómenos cotidianos porque no son científicos.",
+    "D": "Plantear problemas, observar fenómenos, analizar evidencias, discutir explicaciones y aplicar conceptos científicos en contexto."
   },
-  "item": {
-    "enunciado": "En una clase de ciencias, los estudiantes pueden repetir definiciones y fórmulas, pero no logran explicar fenómenos cotidianos, interpretar evidencias ni resolver problemas sencillos. El docente quiere ajustar su metodología.\n\n¿Qué cambio sería más coherente con el desarrollo del pensamiento científico?",
-    "opciones": {
-      "A": "Aumentar la cantidad de fórmulas para memorizar sin explicación.",
-      "B": "Prohibir toda pregunta de los estudiantes para avanzar más rápido.",
-      "C": "Eliminar los fenómenos cotidianos porque no son científicos.",
-      "D": "Plantear problemas, observar fenómenos, analizar evidencias, discutir explicaciones y aplicar conceptos científicos en contexto."
-    },
-    "respuesta_correcta": "D"
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "Refuerza la memorización mecánica.",
+    "B": "Bloquea la indagación científica.",
+    "C": "Desconoce que los fenómenos cotidianos pueden ser punto de partida para la comprensión científica.",
+    "D": "Clave correcta."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "distractores": {
-      "A": "Refuerza la memorización mecánica.",
-      "B": "Bloquea la indagación científica.",
-      "C": "Desconoce que los fenómenos cotidianos pueden ser punto de partida para la comprensión científica."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem valora preguntas, evidencia y contexto sin negar la importancia del conocimiento científico formal."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem valora preguntas, evidencia y contexto sin negar la importancia del conocimiento científico formal."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem apto para banco como cierre del bloque de pensamiento científico."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Pensamiento científico y didáctica en básica secundaria/EIP_B07_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

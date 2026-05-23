@@ -1,36 +1,45 @@
 {
   "id_item": "MTV_B18_I04",
-  "archivo_sugerido": "MTV_B18_I04_curriculo_nulo_temas_no_ensenados.json",
-  "proposito_de_uso": "Evaluar si el aspirante reconoce el currículo nulo como lo planificado o necesario que no se enseña.",
-  "blueprint": {
-    "componente_modulo": "Currículo nulo",
-    "competencia": "Identificación de omisiones curriculares",
-    "afirmacion": "El currículo nulo incluye contenidos, experiencias o aprendizajes que se omiten, se silencian o no se enseñan efectivamente.",
-    "evidencia_observable": "Reconoce situaciones donde el exceso de temarios o falta de tiempo impide enseñar aprendizajes importantes.",
-    "tipo_de_evidencia": "Reconocimiento conceptual aplicado",
-    "dificultad_esperada": "Media-Alta",
-    "clave": "C"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Tipos de currículo",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Una planeación contiene muchos temas escritos en el papel, pero por falta de tiempo, pedagogía o priorización nunca se enseñan realmente en el aula.",
+  "enunciado": "Una planeación contiene muchos temas escritos en el papel, pero por falta de tiempo, pedagogía o priorización nunca se enseñan realmente en el aula.\n\n¿A qué tipo de currículo corresponde esta omisión?",
+  "opciones": {
+    "A": "Currículo operacional.",
+    "B": "Currículo oculto.",
+    "C": "Currículo nulo.",
+    "D": "Currículo oficial plenamente ejecutado."
   },
-  "item": {
-    "enunciado": "Una planeación contiene muchos temas escritos en el papel, pero por falta de tiempo, pedagogía o priorización nunca se enseñan realmente en el aula.\n\n¿A qué tipo de currículo corresponde esta omisión?",
-    "opciones": {
-      "A": "Currículo operacional.",
-      "B": "Currículo oculto.",
-      "C": "Currículo nulo.",
-      "D": "Currículo oficial plenamente ejecutado."
-    },
-    "respuesta_correcta": "C"
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "El operacional es lo que sí se materializa en el aula.",
+    "B": "El oculto se refiere a aprendizajes implícitos.",
+    "C": "Clave correcta.",
+    "D": "La situación muestra que lo escrito no se ejecuta plenamente."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "distractores": {
-      "A": "El operacional es lo que sí se materializa en el aula.",
-      "B": "El oculto se refiere a aprendizajes implícitos.",
-      "D": "La situación muestra que lo escrito no se ejecuta plenamente."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem útil para crítica al currículo de papel."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Tipos de currículo/MTV_B18_I04.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

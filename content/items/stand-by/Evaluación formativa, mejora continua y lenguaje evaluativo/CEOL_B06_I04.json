@@ -1,106 +1,45 @@
 {
   "id_item": "CEOL_B06_I04",
-  "archivo_sugerido": "CEOL_B06_I04_eliminar_juicios_valor_comision_evaluacion.json",
-  "bloque": {
-    "codigo_bloque": "CEOL_B06",
-    "nombre": "Evaluación formativa, mejora continua y lenguaje evaluativo",
-    "estado_en_lista": "Bloque 6 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 4 de 4"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Evaluación Formativa y Lenguaje Profesional",
+  "tema": "Evaluación formativa, mejora continua y lenguaje evaluativo",
+  "subtema": "Uso de etiquetas subjetivas y descalificadoras al analizar el rendimiento de estudiantes.",
+  "competencia": "Análisis objetivo de evidencias",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado comprende que en una comisión de evaluación se debe hablar de desempeños, evidencias, apoyos y dificultades observables, evitando etiquetas personales que estigmaticen al estudiante.",
+  "evidencia": "Selecciona la alternativa que evita términos como perezoso, problema, incapaz o irresponsable como descripciones personales absolutas.",
+  "tarea": "Distinguir lenguaje profesional basado en evidencias de juicios de valor subjetivos.",
+  "contexto": "En una comisión de evaluación, varios docentes analizan el rendimiento de un estudiante. Algunos empiezan a usar expresiones personales y descalificadoras en lugar de describir evidencias de desempeño, asistencia, participación o necesidades de apoyo.",
+  "enunciado": "En una comisión de evaluación, varios docentes analizan el rendimiento de un estudiante. Algunos empiezan a usar expresiones personales y descalificadoras en lugar de describir evidencias de desempeño, asistencia, participación o necesidades de apoyo.\n\n¿Qué términos o clasificaciones debe evitar estrictamente el docente para no emitir juicios de valor subjetivos sobre el estudiante?",
+  "opciones": {
+    "A": "Desempeño pendiente, dificultad en lectura inferencial y requiere apoyo en resolución de problemas.",
+    "B": "Presenta inasistencias reiteradas, entrega incompleta de actividades y necesita seguimiento familiar.",
+    "C": "Muestra avances parciales, requiere retroalimentación y necesita nuevas evidencias de aprendizaje.",
+    "D": "Perezoso, incapaz, problemático, irresponsable o estudiante malo."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce la necesidad de evitar juicios de valor subjetivos sobre los estudiantes en comisiones de evaluación y reemplazarlos por descripciones basadas en evidencias.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, coordinación académica, orientación escolar o comisiones de evaluación.",
-    "blueprint": {
-      "problematica_principal": "Uso de etiquetas subjetivas y descalificadoras al analizar el rendimiento de estudiantes.",
-      "fuente_autorizada": [
-        "Evaluación formativa",
-        "Sistema Institucional de Evaluación de los Estudiantes",
-        "Enfoque de derechos",
-        "Orientaciones pedagógicas institucionales"
-      ],
-      "componente_modulo": "Evaluación Formativa y Lenguaje Profesional",
-      "competencia": "Análisis objetivo de evidencias",
-      "afirmacion": "El análisis del rendimiento debe basarse en evidencias observables y evitar etiquetas o juicios subjetivos sobre la persona.",
-      "evidencia_observable": "Identifica términos y clasificaciones que deben evitarse por ser descalificadores o no basados en evidencias.",
-      "tipo_de_evidencia": "Juicio ético-evaluativo aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "D"
-    },
-    "claim": "El evaluado comprende que en una comisión de evaluación se debe hablar de desempeños, evidencias, apoyos y dificultades observables, evitando etiquetas personales que estigmaticen al estudiante.",
-    "evidencia_observable": "Selecciona la alternativa que evita términos como perezoso, problema, incapaz o irresponsable como descripciones personales absolutas.",
-    "tarea_cognitiva": "Distinguir lenguaje profesional basado en evidencias de juicios de valor subjetivos.",
-    "tipo_de_pregunta": "Caso situacional de juicio ético y evaluativo",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Estigmatización del estudiante",
-        "revision": "La clave evita etiquetas personales y promueve lenguaje basado en evidencias."
-      },
-      {
-        "riesgo": "Confundir descripción de dificultad con juicio de valor",
-        "revision": "El ítem permite hablar de dificultades observables, no de rasgos personales absolutos."
-      },
-      {
-        "riesgo": "Sesgo por conducta o rendimiento",
-        "revision": "El análisis se centra en apoyos y evidencias, no en descalificaciones."
-      },
-      {
-        "riesgo": "Ambigüedad sobre términos prohibidos",
-        "revision": "La opción correcta reúne términos claramente subjetivos o estigmatizantes."
-      }
-    ]
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "Es incorrecta como respuesta porque usa lenguaje pedagógico descriptivo.",
+    "B": "Es incorrecta como respuesta porque describe hechos observables y necesidad de seguimiento.",
+    "C": "Es incorrecta como respuesta porque se centra en avances, retroalimentación y evidencias.",
+    "D": "Clave correcta."
   },
-  "item": {
-    "enunciado": "En una comisión de evaluación, varios docentes analizan el rendimiento de un estudiante. Algunos empiezan a usar expresiones personales y descalificadoras en lugar de describir evidencias de desempeño, asistencia, participación o necesidades de apoyo.\n\n¿Qué términos o clasificaciones debe evitar estrictamente el docente para no emitir juicios de valor subjetivos sobre el estudiante?",
-    "opciones": {
-      "A": "Desempeño pendiente, dificultad en lectura inferencial y requiere apoyo en resolución de problemas.",
-      "B": "Presenta inasistencias reiteradas, entrega incompleta de actividades y necesita seguimiento familiar.",
-      "C": "Muestra avances parciales, requiere retroalimentación y necesita nuevas evidencias de aprendizaje.",
-      "D": "Perezoso, incapaz, problemático, irresponsable o estudiante malo."
-    },
-    "respuesta_correcta": "D"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem promueve lenguaje profesional, evita estigmatizar al estudiante y diferencia entre describir dificultades observables y emitir juicios subjetivos sobre la persona."
   },
-  "ficha_tecnica": {
-    "componente": "Evaluación Formativa y Lenguaje Profesional",
-    "competencia": "Análisis objetivo de evidencias",
-    "claim_evaluado": "El evaluado comprende que en una comisión de evaluación se debe hablar de desempeños, evidencias, apoyos y dificultades observables, evitando etiquetas personales que estigmaticen al estudiante.",
-    "evidencia": "Selecciona la alternativa que evita términos como perezoso, problema, incapaz o irresponsable como descripciones personales absolutas.",
-    "proceso_cognitivo": "Análisis ético y evaluativo",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "D",
-    "distractores": {
-      "A": "Usa lenguaje descriptivo y basado en necesidades de aprendizaje.",
-      "B": "Describe hechos observables y necesidad de seguimiento.",
-      "C": "Describe avances, retroalimentación y nuevas evidencias, sin estigmatizar."
-    },
-    "fuente_autorizada": [
-      "Evaluación formativa",
-      "Sistema Institucional de Evaluación de los Estudiantes",
-      "Enfoque de derechos",
-      "Orientaciones pedagógicas institucionales"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "opcion_A": "Es incorrecta como respuesta porque usa lenguaje pedagógico descriptivo.",
-    "opcion_B": "Es incorrecta como respuesta porque describe hechos observables y necesidad de seguimiento.",
-    "opcion_C": "Es incorrecta como respuesta porque se centra en avances, retroalimentación y evidencias.",
-    "distractores": {
-      "A": "Es incorrecta como respuesta porque usa lenguaje pedagógico descriptivo.",
-      "B": "Es incorrecta como respuesta porque describe hechos observables y necesidad de seguimiento.",
-      "C": "Es incorrecta como respuesta porque se centra en avances, retroalimentación y evidencias."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem promueve lenguaje profesional, evita estigmatizar al estudiante y diferencia entre describir dificultades observables y emitir juicios subjetivos sobre la persona."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre evaluación formativa, mejora continua y lenguaje evaluativo."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/CEOL_B06_I04.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

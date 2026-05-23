@@ -1,106 +1,45 @@
 {
   "id_item": "CEOL_B02_I03",
-  "archivo_sugerido": "CEOL_B02_I03_prevalencia_derechos_ninos_articulo_44.json",
-  "bloque": {
-    "codigo_bloque": "CEOL_B02",
-    "nombre": "Enfoque de derechos, debido proceso y justicia restaurativa",
-    "estado_en_lista": "Bloque 2 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 3 de 6"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Responsabilidad sobre menores y convivencia escolar",
+  "tema": "Enfoque de derechos, debido proceso y justicia restaurativa",
+  "subtema": "Desconocimiento de la prevalencia constitucional de los derechos de niños, niñas y adolescentes.",
+  "competencia": "Protección prevalente de derechos",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado comprende que la prevalencia de los derechos de niños, niñas y adolescentes exige que la institución adopte decisiones protectoras, proporcionales y oportunas, especialmente cuando hay riesgo, vulneración o conflicto.",
+  "evidencia": "Selecciona una explicación que relaciona la prevalencia de derechos con el interés superior y la obligación institucional de protección.",
+  "tarea": "Interpretar la prevalencia constitucional de derechos en una situación escolar.",
+  "contexto": "Durante una situación de conflicto escolar que involucra a estudiantes menores de edad, algunos adultos de la comunidad piden resolver el caso priorizando la tranquilidad institucional por encima de la protección de los estudiantes afectados.",
+  "enunciado": "Durante una situación de conflicto escolar que involucra a estudiantes menores de edad, algunos adultos de la comunidad piden resolver el caso priorizando la tranquilidad institucional por encima de la protección de los estudiantes afectados.\n\n¿Por qué razón legal los derechos de los niños, niñas y adolescentes se consideran prevalentes en este tipo de decisiones?",
+  "opciones": {
+    "A": "Porque la Constitución reconoce que sus derechos prevalecen sobre los derechos de los demás y obliga a proteger su interés superior.",
+    "B": "Porque los estudiantes menores de edad no tienen deberes ni responsabilidades dentro de la escuela.",
+    "C": "Porque la institución puede desconocer el debido proceso de otros actores cuando hay menores involucrados.",
+    "D": "Porque la convivencia escolar solo protege a estudiantes y excluye a familias, docentes y directivos."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce la prevalencia de los derechos de niños, niñas y adolescentes frente a situaciones de conflicto escolar.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con convivencia escolar, docencia, orientación escolar, coordinación o dirección.",
-    "blueprint": {
-      "problematica_principal": "Desconocimiento de la prevalencia constitucional de los derechos de niños, niñas y adolescentes.",
-      "fuente_autorizada": [
-        "Constitución Política de Colombia, artículo 44",
-        "Ley 1098 de 2006",
-        "Ley 1620 de 2013",
-        "Manual de convivencia institucional"
-      ],
-      "componente_modulo": "Responsabilidad sobre menores y convivencia escolar",
-      "competencia": "Protección prevalente de derechos",
-      "afirmacion": "Los derechos de niños, niñas y adolescentes prevalecen sobre los derechos de los demás.",
-      "evidencia_observable": "Reconoce que ante conflictos escolares las decisiones deben priorizar protección, interés superior y garantía de derechos de menores.",
-      "tipo_de_evidencia": "Interpretación constitucional aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que la prevalencia de los derechos de niños, niñas y adolescentes exige que la institución adopte decisiones protectoras, proporcionales y oportunas, especialmente cuando hay riesgo, vulneración o conflicto.",
-    "evidencia_observable": "Selecciona una explicación que relaciona la prevalencia de derechos con el interés superior y la obligación institucional de protección.",
-    "tarea_cognitiva": "Interpretar la prevalencia constitucional de derechos en una situación escolar.",
-    "tipo_de_pregunta": "Pregunta conceptual normativa aplicada",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Interpretar prevalencia como impunidad",
-        "revision": "La clave protege derechos sin eliminar responsabilidad o debido proceso."
-      },
-      {
-        "riesgo": "Conflicto entre derechos de diferentes actores",
-        "revision": "La opción correcta orienta la priorización protectora sin negar el trato digno a toda la comunidad."
-      },
-      {
-        "riesgo": "Lenguaje jurídico abstracto",
-        "revision": "El enunciado sitúa la norma en un conflicto escolar concreto."
-      },
-      {
-        "riesgo": "Ambigüedad sobre derechos supra",
-        "revision": "La clave traduce la expresión a prevalencia, interés superior y deber de protección."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque la prevalencia de derechos no elimina deberes ni responsabilidades escolares.",
+    "C": "Es incorrecta porque proteger a menores no autoriza desconocer el debido proceso.",
+    "D": "Es incorrecta porque la convivencia escolar involucra a toda la comunidad educativa, aunque los derechos de menores tengan protección prevalente."
   },
-  "item": {
-    "enunciado": "Durante una situación de conflicto escolar que involucra a estudiantes menores de edad, algunos adultos de la comunidad piden resolver el caso priorizando la tranquilidad institucional por encima de la protección de los estudiantes afectados.\n\n¿Por qué razón legal los derechos de los niños, niñas y adolescentes se consideran prevalentes en este tipo de decisiones?",
-    "opciones": {
-      "A": "Porque la Constitución reconoce que sus derechos prevalecen sobre los derechos de los demás y obliga a proteger su interés superior.",
-      "B": "Porque los estudiantes menores de edad no tienen deberes ni responsabilidades dentro de la escuela.",
-      "C": "Porque la institución puede desconocer el debido proceso de otros actores cuando hay menores involucrados.",
-      "D": "Porque la convivencia escolar solo protege a estudiantes y excluye a familias, docentes y directivos."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem no presenta la prevalencia de derechos como privilegio arbitrario, sino como criterio de protección reforzada dentro de una actuación institucional respetuosa del debido proceso."
   },
-  "ficha_tecnica": {
-    "componente": "Responsabilidad sobre menores y convivencia escolar",
-    "competencia": "Protección prevalente de derechos",
-    "claim_evaluado": "El evaluado comprende que la prevalencia de los derechos de niños, niñas y adolescentes exige que la institución adopte decisiones protectoras, proporcionales y oportunas, especialmente cuando hay riesgo, vulneración o conflicto.",
-    "evidencia": "Selecciona una explicación que relaciona la prevalencia de derechos con el interés superior y la obligación institucional de protección.",
-    "proceso_cognitivo": "Interpretación constitucional aplicada",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Confunde prevalencia de derechos con ausencia de deberes.",
-      "C": "Desconoce que el debido proceso también debe garantizarse.",
-      "D": "Excluye indebidamente a otros miembros de la comunidad educativa del enfoque de derechos."
-    },
-    "fuente_autorizada": [
-      "Constitución Política de Colombia, artículo 44",
-      "Ley 1098 de 2006",
-      "Ley 1620 de 2013",
-      "Manual de convivencia institucional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque la prevalencia de derechos no elimina deberes ni responsabilidades escolares.",
-    "opcion_C": "Es incorrecta porque proteger a menores no autoriza desconocer el debido proceso.",
-    "opcion_D": "Es incorrecta porque la convivencia escolar involucra a toda la comunidad educativa, aunque los derechos de menores tengan protección prevalente.",
-    "distractores": {
-      "B": "Es incorrecta porque la prevalencia de derechos no elimina deberes ni responsabilidades escolares.",
-      "C": "Es incorrecta porque proteger a menores no autoriza desconocer el debido proceso.",
-      "D": "Es incorrecta porque la convivencia escolar involucra a toda la comunidad educativa, aunque los derechos de menores tengan protección prevalente."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no presenta la prevalencia de derechos como privilegio arbitrario, sino como criterio de protección reforzada dentro de una actuación institucional respetuosa del debido proceso."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 6 preguntas sobre enfoque de derechos, debido proceso y justicia restaurativa."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/CEOL_B02_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

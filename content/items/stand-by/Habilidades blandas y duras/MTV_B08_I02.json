@@ -1,40 +1,45 @@
 {
   "id_item": "MTV_B08_I02",
-  "archivo_sugerido": "MTV_B08_I02_definicion_habilidades_duras.json",
-  "proposito_de_uso": "Evaluar si el aspirante identifica las habilidades duras como competencias asociadas al conocimiento disciplinar, la formación académica y la inteligencia lógica.",
-  "blueprint": {
-    "componente_modulo": "Habilidades duras",
-    "competencia": "Reconocimiento conceptual de competencias técnicas",
-    "afirmacion": "Las habilidades duras se relacionan con el Saber, el conocimiento disciplinar, la formación académica, los títulos, los procedimientos técnicos y la inteligencia lógica.",
-    "evidencia_observable": "Selecciona una definición que diferencia habilidades duras de habilidades socioemocionales.",
-    "tipo_de_evidencia": "Reconocimiento conceptual",
-    "dificultad_esperada": "Media",
-    "clave": "C"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Habilidades blandas y duras",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Dentro de la medición de competencias de un servidor público docente, se analiza la formación académica, el dominio disciplinar, los títulos obtenidos, la inteligencia lógica y el conocimiento técnico necesario para desempeñar una función.",
+  "enunciado": "Dentro de la medición de competencias de un servidor público docente, se analiza la formación académica, el dominio disciplinar, los títulos obtenidos, la inteligencia lógica y el conocimiento técnico necesario para desempeñar una función.\n\n¿A qué tipo de competencias corresponde principalmente esta medición?",
+  "opciones": {
+    "A": "Habilidades blandas.",
+    "B": "Competencias exclusivamente emocionales.",
+    "C": "Habilidades duras.",
+    "D": "Competencias de convivencia familiar."
   },
-  "item": {
-    "enunciado": "Dentro de la medición de competencias de un servidor público docente, se analiza la formación académica, el dominio disciplinar, los títulos obtenidos, la inteligencia lógica y el conocimiento técnico necesario para desempeñar una función.\n\n¿A qué tipo de competencias corresponde principalmente esta medición?",
-    "opciones": {
-      "A": "Habilidades blandas.",
-      "B": "Competencias exclusivamente emocionales.",
-      "C": "Habilidades duras.",
-      "D": "Competencias de convivencia familiar."
-    },
-    "respuesta_correcta": "C"
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Las habilidades blandas se centran en interacción, comunicación y regulación emocional.",
+    "B": "Lo emocional no agota la formación académica ni el conocimiento disciplinar.",
+    "C": "Clave correcta.",
+    "D": "La convivencia familiar no corresponde al componente técnico del desempeño docente."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "distractores": {
-      "A": "Las habilidades blandas se centran en interacción, comunicación y regulación emocional.",
-      "B": "Lo emocional no agota la formación académica ni el conocimiento disciplinar.",
-      "D": "La convivencia familiar no corresponde al componente técnico del desempeño docente."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem diferencia competencias técnicas y socioemocionales sin jerarquizarlas."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem diferencia competencias técnicas y socioemocionales sin jerarquizarlas."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem claro para contrastar habilidades blandas y duras."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

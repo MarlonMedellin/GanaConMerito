@@ -1,108 +1,45 @@
 {
   "id_item": "CEOL_B05_I02",
-  "archivo_sugerido": "CEOL_B05_I02_diferencia_pei_manual_convivencia.json",
-  "bloque": {
-    "codigo_bloque": "CEOL_B05",
-    "nombre": "PEI, currículo oficial y Manual de Convivencia",
-    "estado_en_lista": "Bloque 5 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 2 de 3"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Diferenciación Normativa PEI vs. Convivencia",
+  "tema": "PEI, currículo oficial y Manual de Convivencia",
+  "subtema": "Confusión entre PEI y Manual de Convivencia como documentos equivalentes.",
+  "competencia": "Comprensión de jerarquía institucional",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado comprende que el PEI es el documento marco que expresa horizonte institucional, propuesta pedagógica, currículo y gestión; mientras el Manual de Convivencia desarrolla normas, derechos, deberes, rutas y procedimientos para la vida escolar.",
+  "evidencia": "Selecciona una explicación que diferencia jerárquica y funcionalmente el PEI y el Manual de Convivencia.",
+  "tarea": "Comparar documentos institucionales y reconocer su función dentro de la organización escolar.",
+  "contexto": "Una institución revisa sus documentos y algunos docentes afirman que el PEI y el Manual de Convivencia cumplen exactamente la misma función. La coordinación propone aclarar su diferencia jerárquica y estructural.",
+  "enunciado": "Una institución revisa sus documentos y algunos docentes afirman que el PEI y el Manual de Convivencia cumplen exactamente la misma función. La coordinación propone aclarar su diferencia jerárquica y estructural.\n\n¿Cuál explicación es más adecuada?",
+  "opciones": {
+    "A": "El Manual de Convivencia reemplaza al PEI porque contiene sanciones y procedimientos disciplinarios.",
+    "B": "El PEI solo sirve para registrar faltas de los estudiantes y el Manual define el currículo de todas las áreas.",
+    "C": "El PEI es el marco institucional que orienta el horizonte, la propuesta pedagógica, el currículo y la gestión; el Manual regula derechos, deberes, acuerdos, protocolos y medidas de convivencia dentro de ese marco.",
+    "D": "El PEI y el Manual de Convivencia son documentos idénticos y pueden usarse sin distinción."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante diferencia estructuralmente el Proyecto Educativo Institucional y el Manual de Convivencia dentro de la organización escolar.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación, rectoría o gestión institucional.",
-    "blueprint": {
-      "problematica_principal": "Confusión entre PEI y Manual de Convivencia como documentos equivalentes.",
-      "fuente_autorizada": [
-        "Ley 115 de 1994",
-        "Decreto 1860 de 1994",
-        "Ley 1620 de 2013",
-        "Decreto 1965 de 2013",
-        "Manual de convivencia institucional"
-      ],
-      "componente_modulo": "Diferenciación Normativa PEI vs. Convivencia",
-      "competencia": "Comprensión de jerarquía institucional",
-      "afirmacion": "El PEI orienta integralmente el proyecto educativo de la institución; el Manual de Convivencia regula derechos, deberes, acuerdos, protocolos y medidas de convivencia dentro de ese marco.",
-      "evidencia_observable": "Distingue la función estructural del PEI frente a la función reguladora del Manual de Convivencia.",
-      "tipo_de_evidencia": "Comprensión institucional aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende que el PEI es el documento marco que expresa horizonte institucional, propuesta pedagógica, currículo y gestión; mientras el Manual de Convivencia desarrolla normas, derechos, deberes, rutas y procedimientos para la vida escolar.",
-    "evidencia_observable": "Selecciona una explicación que diferencia jerárquica y funcionalmente el PEI y el Manual de Convivencia.",
-    "tarea_cognitiva": "Comparar documentos institucionales y reconocer su función dentro de la organización escolar.",
-    "tipo_de_pregunta": "Pregunta conceptual comparativa",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Lenguaje institucional técnico",
-        "revision": "El ítem explica la función de cada documento en términos de uso escolar."
-      },
-      {
-        "riesgo": "Ambigüedad entre horizonte institucional y normas de convivencia",
-        "revision": "La clave diferencia marco educativo general de regulación de convivencia."
-      },
-      {
-        "riesgo": "Sesgo por experiencia directiva",
-        "revision": "No exige haber elaborado documentos institucionales; evalúa comprensión funcional."
-      },
-      {
-        "riesgo": "Reducir el Manual a castigo",
-        "revision": "La clave incluye derechos, deberes, acuerdos, protocolos y medidas pedagógicas."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque el Manual de Convivencia no reemplaza el PEI.",
+    "B": "Es incorrecta porque el PEI no es un registro disciplinario ni el Manual define por sí mismo el currículo de las áreas.",
+    "C": "Clave correcta.",
+    "D": "Es incorrecta porque ambos documentos se relacionan, pero no cumplen la misma función."
   },
-  "item": {
-    "enunciado": "Una institución revisa sus documentos y algunos docentes afirman que el PEI y el Manual de Convivencia cumplen exactamente la misma función. La coordinación propone aclarar su diferencia jerárquica y estructural.\n\n¿Cuál explicación es más adecuada?",
-    "opciones": {
-      "A": "El Manual de Convivencia reemplaza al PEI porque contiene sanciones y procedimientos disciplinarios.",
-      "B": "El PEI solo sirve para registrar faltas de los estudiantes y el Manual define el currículo de todas las áreas.",
-      "C": "El PEI es el marco institucional que orienta el horizonte, la propuesta pedagógica, el currículo y la gestión; el Manual regula derechos, deberes, acuerdos, protocolos y medidas de convivencia dentro de ese marco.",
-      "D": "El PEI y el Manual de Convivencia son documentos idénticos y pueden usarse sin distinción."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem no exige conocimiento jurídico especializado; evalúa la comprensión práctica de documentos escolares básicos y su relación institucional."
   },
-  "ficha_tecnica": {
-    "componente": "Diferenciación Normativa PEI vs. Convivencia",
-    "competencia": "Comprensión de jerarquía institucional",
-    "claim_evaluado": "El evaluado comprende que el PEI es el documento marco que expresa horizonte institucional, propuesta pedagógica, currículo y gestión; mientras el Manual de Convivencia desarrolla normas, derechos, deberes, rutas y procedimientos para la vida escolar.",
-    "evidencia": "Selecciona una explicación que diferencia jerárquica y funcionalmente el PEI y el Manual de Convivencia.",
-    "proceso_cognitivo": "Comparación conceptual institucional",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Invierte la relación y reduce el Manual a sanciones.",
-      "B": "Atribuye funciones equivocadas al PEI y al Manual.",
-      "D": "Niega diferencias funcionales y jerárquicas necesarias."
-    },
-    "fuente_autorizada": [
-      "Ley 115 de 1994",
-      "Decreto 1860 de 1994",
-      "Ley 1620 de 2013",
-      "Decreto 1965 de 2013",
-      "Manual de convivencia institucional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque el Manual de Convivencia no reemplaza el PEI.",
-    "opcion_B": "Es incorrecta porque el PEI no es un registro disciplinario ni el Manual define por sí mismo el currículo de las áreas.",
-    "opcion_D": "Es incorrecta porque ambos documentos se relacionan, pero no cumplen la misma función.",
-    "distractores": {
-      "A": "Es incorrecta porque el Manual de Convivencia no reemplaza el PEI.",
-      "B": "Es incorrecta porque el PEI no es un registro disciplinario ni el Manual define por sí mismo el currículo de las áreas.",
-      "D": "Es incorrecta porque ambos documentos se relacionan, pero no cumplen la misma función."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no exige conocimiento jurídico especializado; evalúa la comprensión práctica de documentos escolares básicos y su relación institucional."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 3 preguntas sobre PEI, currículo oficial y Manual de Convivencia."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/PEI, currículo oficial y Manual de Convivencia/CEOL_B05_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

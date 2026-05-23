@@ -1,102 +1,45 @@
 {
   "id_item": "CEOL_B08_I03",
-  "archivo_sugerido": "CEOL_B08_I03_concepto_formar_estudiante.json",
-  "bloque": {
-    "codigo_bloque": "CEOL_B08",
-    "nombre": "Enseñar, formar, motivación didáctica y competencias socioemocionales",
-    "estado_en_lista": "Bloque 8 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 3 de 5"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Concepto de Formar",
+  "tema": "Enseñar, formar, motivación didáctica y competencias socioemocionales",
+  "subtema": "Reducción del proceso de formar a la enseñanza de contenidos de una asignatura.",
+  "competencia": "Formación integral del estudiante",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado comprende que formar implica orientar el desarrollo de capacidades, valores, autonomía, convivencia, responsabilidad y sentido de vida.",
+  "evidencia": "Selecciona una concepción de formación que supera la transmisión disciplinar.",
+  "tarea": "Distinguir formación integral de instrucción académica limitada.",
+  "contexto": "Un docente sostiene que su responsabilidad termina cuando explica los contenidos de su asignatura. En una reflexión institucional, se plantea que la escuela también tiene la tarea de formar a los estudiantes.",
+  "enunciado": "Un docente sostiene que su responsabilidad termina cuando explica los contenidos de su asignatura. En una reflexión institucional, se plantea que la escuela también tiene la tarea de formar a los estudiantes.\n\n¿Qué implica formar a un estudiante más allá de transmitir conocimientos de una asignatura?",
+  "opciones": {
+    "A": "Controlar su comportamiento sin atender su aprendizaje ni su desarrollo personal.",
+    "B": "Enseñar únicamente datos y definiciones para una prueba.",
+    "C": "Delegar todo el desarrollo personal del estudiante exclusivamente a la familia.",
+    "D": "Acompañar su desarrollo integral, ético, social, cognitivo, afectivo y ciudadano, favoreciendo autonomía y proyecto de vida."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende que formar a un estudiante implica acompañar su desarrollo integral, ético, social, cognitivo y ciudadano, más allá de transmitir contenidos.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación o gestión pedagógica.",
-    "blueprint": {
-      "problematica_principal": "Reducción del proceso de formar a la enseñanza de contenidos de una asignatura.",
-      "fuente_autorizada": [
-        "Ley 115 de 1994",
-        "Fines de la educación",
-        "Proyecto Educativo Institucional",
-        "Formación integral"
-      ],
-      "componente_modulo": "Concepto de Formar",
-      "competencia": "Formación integral del estudiante",
-      "afirmacion": "Formar implica acompañar el desarrollo integral del estudiante en dimensiones cognitivas, éticas, sociales, afectivas y ciudadanas.",
-      "evidencia_observable": "Reconoce que formar no es solo enseñar contenidos, sino contribuir a la construcción del sujeto y su proyecto de vida.",
-      "tipo_de_evidencia": "Comprensión pedagógica aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "D"
-    },
-    "claim": "El evaluado comprende que formar implica orientar el desarrollo de capacidades, valores, autonomía, convivencia, responsabilidad y sentido de vida.",
-    "evidencia_observable": "Selecciona una concepción de formación que supera la transmisión disciplinar.",
-    "tarea_cognitiva": "Distinguir formación integral de instrucción académica limitada.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confundir formación con moralización",
-        "revision": "La clave habla de autonomía, ciudadanía y proyecto de vida, no de imposición moral."
-      },
-      {
-        "riesgo": "Reducir formación a convivencia",
-        "revision": "La opción correcta integra dimensiones académicas, éticas, sociales y afectivas."
-      },
-      {
-        "riesgo": "Sesgo por área disciplinar",
-        "revision": "El concepto aplica a toda práctica docente."
-      }
-    ]
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque formar no equivale solo a controlar.",
+    "B": "Es incorrecta porque formar supera la transmisión de información.",
+    "C": "Es incorrecta porque la familia participa, pero la escuela también forma.",
+    "D": "Clave correcta."
   },
-  "item": {
-    "enunciado": "Un docente sostiene que su responsabilidad termina cuando explica los contenidos de su asignatura. En una reflexión institucional, se plantea que la escuela también tiene la tarea de formar a los estudiantes.\n\n¿Qué implica formar a un estudiante más allá de transmitir conocimientos de una asignatura?",
-    "opciones": {
-      "A": "Controlar su comportamiento sin atender su aprendizaje ni su desarrollo personal.",
-      "B": "Enseñar únicamente datos y definiciones para una prueba.",
-      "C": "Delegar todo el desarrollo personal del estudiante exclusivamente a la familia.",
-      "D": "Acompañar su desarrollo integral, ético, social, cognitivo, afectivo y ciudadano, favoreciendo autonomía y proyecto de vida."
-    },
-    "respuesta_correcta": "D"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem reconoce la corresponsabilidad formativa sin atribuir toda la carga a un solo actor."
   },
-  "ficha_tecnica": {
-    "componente": "Concepto de Formar",
-    "competencia": "Formación integral del estudiante",
-    "claim_evaluado": "El evaluado comprende que formar implica orientar el desarrollo de capacidades, valores, autonomía, convivencia, responsabilidad y sentido de vida.",
-    "evidencia": "Selecciona una concepción de formación que supera la transmisión disciplinar.",
-    "proceso_cognitivo": "Comprensión pedagógica aplicada",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "D",
-    "distractores": {
-      "A": "Reduce la formación al control conductual.",
-      "B": "Limita la formación a instrucción académica.",
-      "C": "Desconoce la corresponsabilidad de la escuela en la formación integral."
-    },
-    "fuente_autorizada": [
-      "Ley 115 de 1994",
-      "Fines de la educación",
-      "Proyecto Educativo Institucional",
-      "Formación integral"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "opcion_A": "Es incorrecta porque formar no equivale solo a controlar.",
-    "opcion_B": "Es incorrecta porque formar supera la transmisión de información.",
-    "opcion_C": "Es incorrecta porque la familia participa, pero la escuela también forma.",
-    "distractores": {
-      "A": "Es incorrecta porque formar no equivale solo a controlar.",
-      "B": "Es incorrecta porque formar supera la transmisión de información.",
-      "C": "Es incorrecta porque la familia participa, pero la escuela también forma."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem reconoce la corresponsabilidad formativa sin atribuir toda la carga a un solo actor."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre enseñar, formar y competencias socioemocionales."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Enseñar, formar, motivación didáctica y competencias socioemocionales/CEOL_B08_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

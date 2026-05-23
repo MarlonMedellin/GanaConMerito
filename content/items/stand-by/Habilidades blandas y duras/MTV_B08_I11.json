@@ -1,40 +1,45 @@
 {
   "id_item": "MTV_B08_I11",
-  "archivo_sugerido": "MTV_B08_I11_saber_ser_servidor_publico_docente.json",
-  "proposito_de_uso": "Evaluar si el aspirante asocia el Saber Ser con ética, actitud de servicio, responsabilidad y trato profesional.",
-  "blueprint": {
-    "componente_modulo": "Saber Ser del servidor público docente",
-    "competencia": "Comprensión actitudinal y ética del desempeño",
-    "afirmacion": "El Saber Ser se expresa en ética, responsabilidad, respeto, actitud de servicio, autocontrol, comunicación y disposición hacia la comunidad.",
-    "evidencia_observable": "Selecciona una conducta que evidencia Saber Ser en contexto escolar.",
-    "tipo_de_evidencia": "Juicio comportamental aplicado",
-    "dificultad_esperada": "Media-Alta",
-    "clave": "A"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Habilidades blandas y duras",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Un docente servidor público atiende con respeto a una familia inconforme, escucha sin burlarse, evita comentarios despectivos, orienta la ruta institucional y mantiene una actitud de servicio.",
+  "enunciado": "Un docente servidor público atiende con respeto a una familia inconforme, escucha sin burlarse, evita comentarios despectivos, orienta la ruta institucional y mantiene una actitud de servicio.\n\n¿A qué componente de la competencia corresponde principalmente esta actuación?",
+  "opciones": {
+    "A": "Saber Ser.",
+    "B": "Saber exclusivamente memorístico.",
+    "C": "Saber Hacer únicamente técnico-operativo.",
+    "D": "Conocimiento disciplinar abstracto."
   },
-  "item": {
-    "enunciado": "Un docente servidor público atiende con respeto a una familia inconforme, escucha sin burlarse, evita comentarios despectivos, orienta la ruta institucional y mantiene una actitud de servicio.\n\n¿A qué componente de la competencia corresponde principalmente esta actuación?",
-    "opciones": {
-      "A": "Saber Ser.",
-      "B": "Saber exclusivamente memorístico.",
-      "C": "Saber Hacer únicamente técnico-operativo.",
-      "D": "Conocimiento disciplinar abstracto."
-    },
-    "respuesta_correcta": "A"
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "La memoria no explica la actitud profesional descrita.",
+    "C": "Aunque hay acción, el énfasis está en la disposición ética y relacional.",
+    "D": "El dominio disciplinar no es el foco del caso."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "distractores": {
-      "B": "La memoria no explica la actitud profesional descrita.",
-      "C": "Aunque hay acción, el énfasis está en la disposición ética y relacional.",
-      "D": "El dominio disciplinar no es el foco del caso."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem evalúa conducta profesional sin depender de juicios subjetivos sobre la personalidad."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem evalúa conducta profesional sin depender de juicios subjetivos sobre la personalidad."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Muy pertinente para competencias comportamentales del servidor público."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I11.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

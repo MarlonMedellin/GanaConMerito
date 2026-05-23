@@ -1,106 +1,45 @@
 {
   "id_item": "CEOL_B07_I05",
-  "archivo_sugerido": "CEOL_B07_I05_conflicto_cognitivo_acomodacion.json",
-  "bloque": {
-    "codigo_bloque": "CEOL_B07",
-    "nombre": "Ideas previas, conflicto cognitivo y desarrollo constructivista",
-    "estado_en_lista": "Bloque 7 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 5 de 6"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Conflicto Cognitivo y Acomodación",
+  "tema": "Ideas previas, conflicto cognitivo y desarrollo constructivista",
+  "subtema": "Desconocimiento del vínculo entre conflicto cognitivo, desequilibrio y acomodación.",
+  "competencia": "Comprensión de procesos de cambio conceptual",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA_ALTA",
+  "claim": "El evaluado comprende que el conflicto cognitivo puede producir desequilibrio y que la acomodación implica modificar esquemas previos para explicar mejor la nueva información.",
+  "evidencia": "Selecciona la explicación correcta del paso de conflicto cognitivo a acomodación.",
+  "tarea": "Interpretar un proceso de cambio conceptual desde la teoría constructivista.",
+  "contexto": "Un estudiante cree que todos los objetos pesados caen más rápido que los livianos. Luego observa una experiencia controlada que contradice su idea inicial. Esa nueva información no encaja con su explicación previa y el docente guía la reflexión para que el estudiante reorganice su comprensión.",
+  "enunciado": "Un estudiante cree que todos los objetos pesados caen más rápido que los livianos. Luego observa una experiencia controlada que contradice su idea inicial. Esa nueva información no encaja con su explicación previa y el docente guía la reflexión para que el estudiante reorganice su comprensión.\n\n¿Qué sucede mentalmente en este proceso según el constructivismo?",
+  "opciones": {
+    "A": "Se genera un conflicto cognitivo que produce desequilibrio y puede llevar a modificar los esquemas previos mediante acomodación.",
+    "B": "El estudiante memoriza una frase nueva sin alterar ninguna idea previa.",
+    "C": "La idea previa desaparece automáticamente sin mediación ni reflexión.",
+    "D": "El aprendizaje se bloquea porque toda contradicción impide comprender."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende qué ocurre cuando una idea previa entra en tensión con nueva información y cómo esto puede conducir a la acomodación.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con pedagogía, didáctica, docencia o gestión académica.",
-    "blueprint": {
-      "problematica_principal": "Desconocimiento del vínculo entre conflicto cognitivo, desequilibrio y acomodación.",
-      "fuente_autorizada": [
-        "Epistemología genética de Piaget",
-        "Constructivismo",
-        "Cambio conceptual",
-        "Didáctica general"
-      ],
-      "componente_modulo": "Conflicto Cognitivo y Acomodación",
-      "competencia": "Comprensión de procesos de cambio conceptual",
-      "afirmacion": "La acomodación ocurre cuando el estudiante modifica sus esquemas para integrar información que no encaja con sus ideas previas.",
-      "evidencia_observable": "Reconoce que el choque entre una idea previa y nueva información genera desequilibrio cognitivo que puede llevar a reorganizar esquemas.",
-      "tipo_de_evidencia": "Comprensión conceptual aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que el conflicto cognitivo puede producir desequilibrio y que la acomodación implica modificar esquemas previos para explicar mejor la nueva información.",
-    "evidencia_observable": "Selecciona la explicación correcta del paso de conflicto cognitivo a acomodación.",
-    "tarea_cognitiva": "Interpretar un proceso de cambio conceptual desde la teoría constructivista.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Media-Alta",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confusión entre asimilación y acomodación",
-        "revision": "La clave define acomodación como modificación de esquemas, no solo incorporación de información."
-      },
-      {
-        "riesgo": "Lenguaje técnico",
-        "revision": "El ítem explica el proceso mediante una situación de choque entre idea previa y nueva información."
-      },
-      {
-        "riesgo": "Ambigüedad sobre interferencia constructiva",
-        "revision": "La pregunta se centra en conflicto cognitivo y reorganización mental, evitando tecnicismos físicos."
-      },
-      {
-        "riesgo": "Memorización teórica",
-        "revision": "El ítem exige aplicar la idea a una situación de aprendizaje."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque memorizar no implica modificar esquemas.",
+    "C": "Es incorrecta porque las ideas previas no desaparecen automáticamente.",
+    "D": "Es incorrecta porque la contradicción puede activar aprendizaje si se media adecuadamente."
   },
-  "item": {
-    "enunciado": "Un estudiante cree que todos los objetos pesados caen más rápido que los livianos. Luego observa una experiencia controlada que contradice su idea inicial. Esa nueva información no encaja con su explicación previa y el docente guía la reflexión para que el estudiante reorganice su comprensión.\n\n¿Qué sucede mentalmente en este proceso según el constructivismo?",
-    "opciones": {
-      "A": "Se genera un conflicto cognitivo que produce desequilibrio y puede llevar a modificar los esquemas previos mediante acomodación.",
-      "B": "El estudiante memoriza una frase nueva sin alterar ninguna idea previa.",
-      "C": "La idea previa desaparece automáticamente sin mediación ni reflexión.",
-      "D": "El aprendizaje se bloquea porque toda contradicción impide comprender."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem usa una situación escolar comprensible y evalúa el concepto de acomodación sin exigir conocimiento especializado de psicología evolutiva."
   },
-  "ficha_tecnica": {
-    "componente": "Conflicto Cognitivo y Acomodación",
-    "competencia": "Comprensión de procesos de cambio conceptual",
-    "claim_evaluado": "El evaluado comprende que el conflicto cognitivo puede producir desequilibrio y que la acomodación implica modificar esquemas previos para explicar mejor la nueva información.",
-    "evidencia": "Selecciona la explicación correcta del paso de conflicto cognitivo a acomodación.",
-    "proceso_cognitivo": "Comprensión conceptual aplicada",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media-Alta",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Reduce el cambio conceptual a memorización.",
-      "C": "Asume un cambio automático sin mediación ni reflexión.",
-      "D": "Presenta la contradicción como bloqueo absoluto, no como oportunidad de aprendizaje."
-    },
-    "fuente_autorizada": [
-      "Epistemología genética de Piaget",
-      "Constructivismo",
-      "Cambio conceptual",
-      "Didáctica general"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque memorizar no implica modificar esquemas.",
-    "opcion_C": "Es incorrecta porque las ideas previas no desaparecen automáticamente.",
-    "opcion_D": "Es incorrecta porque la contradicción puede activar aprendizaje si se media adecuadamente.",
-    "distractores": {
-      "B": "Es incorrecta porque memorizar no implica modificar esquemas.",
-      "C": "Es incorrecta porque las ideas previas no desaparecen automáticamente.",
-      "D": "Es incorrecta porque la contradicción puede activar aprendizaje si se media adecuadamente."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem usa una situación escolar comprensible y evalúa el concepto de acomodación sin exigir conocimiento especializado de psicología evolutiva."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 6 preguntas sobre ideas previas, conflicto cognitivo y desarrollo constructivista."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Ideas previas, conflicto cognitivo y desarrollo constructivista/CEOL_B07_I05.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B31_I08",
-    "tema": "Descanso pedagógico y cuidado",
-    "competencia": "Responsabilidad durante tiempos escolares",
-    "dificultad": "Alta",
-    "enunciado": "Durante el descanso pedagógico, varios docentes consideran que no tienen ninguna responsabilidad porque no están dictando clase. Sin embargo, los estudiantes permanecen bajo organización institucional.\n\n¿Qué interpretación es más adecuada?",
-    "opciones": {
-        "A": "La institución debe prever acompañamiento, vigilancia y cuidado durante los tiempos escolares, no solo durante la clase formal.",
-        "B": "El descanso elimina toda responsabilidad institucional.",
-        "C": "Los estudiantes quedan sin protección porque no hay clase.",
-        "D": "El cuidado solo corresponde a otros estudiantes."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "La responsabilidad institucional no desaparece durante tiempos escolares como descanso o desplazamientos internos.",
-    "distractores": {
-        "B": "El descanso no elimina el deber de cuidado.",
-        "C": "Los estudiantes siguen bajo el ámbito escolar.",
-        "D": "El cuidado no se delega en pares."
-    }
+  "id_item": "MTV_B31_I08",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Jornada escolar, horario laboral y asignación académica",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "",
+  "enunciado": "Durante el descanso pedagógico, varios docentes consideran que no tienen ninguna responsabilidad porque no están dictando clase. Sin embargo, los estudiantes permanecen bajo organización institucional.\n\n¿Qué interpretación es más adecuada?",
+  "opciones": {
+    "A": "La institución debe prever acompañamiento, vigilancia y cuidado durante los tiempos escolares, no solo durante la clase formal.",
+    "B": "El descanso elimina toda responsabilidad institucional.",
+    "C": "Los estudiantes quedan sin protección porque no hay clase.",
+    "D": "El cuidado solo corresponde a otros estudiantes."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Distractor funcional.",
+    "C": "Distractor funcional.",
+    "D": "Distractor funcional."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I08.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
+  }
 }

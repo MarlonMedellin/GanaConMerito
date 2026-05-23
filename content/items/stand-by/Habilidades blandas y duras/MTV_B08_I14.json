@@ -1,40 +1,45 @@
 {
   "id_item": "MTV_B08_I14",
-  "archivo_sugerido": "MTV_B08_I14_complementariedad_habilidades_blandas_duras.json",
-  "proposito_de_uso": "Evaluar si el aspirante comprende que las habilidades blandas y duras se complementan en el desempeño docente.",
-  "blueprint": {
-    "componente_modulo": "Integración de competencias",
-    "competencia": "Análisis integral del perfil docente",
-    "afirmacion": "El desempeño docente exige integrar conocimiento disciplinar, aplicación pedagógica, ética, comunicación, empatía y trabajo colaborativo.",
-    "evidencia_observable": "Selecciona una interpretación que articula habilidades blandas y duras sin oponerlas.",
-    "tipo_de_evidencia": "Juicio integrador",
-    "dificultad_esperada": "Alta",
-    "clave": "D"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Habilidades blandas y duras",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "En una evaluación de desempeño, un docente demuestra excelente formación académica y dominio de su área, pero también evidencia escucha activa, comunicación asertiva, empatía, colaboración y manejo adecuado de emociones.",
+  "enunciado": "En una evaluación de desempeño, un docente demuestra excelente formación académica y dominio de su área, pero también evidencia escucha activa, comunicación asertiva, empatía, colaboración y manejo adecuado de emociones.\n\n¿Cuál valoración es más completa?",
+  "opciones": {
+    "A": "Solo importan sus títulos, porque las relaciones humanas no inciden en la docencia.",
+    "B": "Solo importan sus habilidades blandas, porque el conocimiento disciplinar es innecesario.",
+    "C": "Debe evaluarse únicamente su simpatía personal.",
+    "D": "El desempeño es más sólido porque integra habilidades duras, habilidades blandas, Saber, Saber Hacer y Saber Ser."
   },
-  "item": {
-    "enunciado": "En una evaluación de desempeño, un docente demuestra excelente formación académica y dominio de su área, pero también evidencia escucha activa, comunicación asertiva, empatía, colaboración y manejo adecuado de emociones.\n\n¿Cuál valoración es más completa?",
-    "opciones": {
-      "A": "Solo importan sus títulos, porque las relaciones humanas no inciden en la docencia.",
-      "B": "Solo importan sus habilidades blandas, porque el conocimiento disciplinar es innecesario.",
-      "C": "Debe evaluarse únicamente su simpatía personal.",
-      "D": "El desempeño es más sólido porque integra habilidades duras, habilidades blandas, Saber, Saber Hacer y Saber Ser."
-    },
-    "respuesta_correcta": "D"
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "Reduce el desempeño al título o conocimiento académico.",
+    "B": "Desconoce la importancia del dominio disciplinar.",
+    "C": "Confunde habilidades blandas con simpatía personal.",
+    "D": "Clave correcta."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "distractores": {
-      "A": "Reduce el desempeño al título o conocimiento académico.",
-      "B": "Desconoce la importancia del dominio disciplinar.",
-      "C": "Confunde habilidades blandas con simpatía personal."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem evita una falsa oposición entre conocimiento y habilidades socioemocionales."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem evita una falsa oposición entre conocimiento y habilidades socioemocionales."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem de cierre recomendado para el bloque."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I14.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

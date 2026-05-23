@@ -1,36 +1,45 @@
 {
   "id_item": "MTV_B11_I14",
-  "archivo_sugerido": "MTV_B11_I14_autonomia_estudiante_constructivismo.json",
-  "proposito_de_uso": "Evaluar si el aspirante reconoce la autonomía del estudiante como rasgo de prácticas constructivistas.",
-  "blueprint": {
-    "componente_modulo": "Autonomía en el aprendizaje",
-    "competencia": "Promoción de decisiones y autorregulación",
-    "afirmacion": "La autonomía se desarrolla cuando el estudiante toma decisiones, justifica, evalúa su proceso y participa activamente en la construcción del aprendizaje.",
-    "evidencia_observable": "Selecciona una práctica que promueve autonomía y no dependencia pasiva.",
-    "tipo_de_evidencia": "Juicio pedagógico aplicado",
-    "dificultad_esperada": "Media",
-    "clave": "B"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Tecnicismo vs constructivismo",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Una profesora ofrece a sus estudiantes varias formas de demostrar comprensión: maqueta, explicación oral, texto escrito o mapa conceptual, siempre con criterios claros de evaluación.",
+  "enunciado": "Una profesora ofrece a sus estudiantes varias formas de demostrar comprensión: maqueta, explicación oral, texto escrito o mapa conceptual, siempre con criterios claros de evaluación.\n\n¿Qué propósito constructivista favorece esta decisión?",
+  "opciones": {
+    "A": "Eliminar todos los criterios de calidad.",
+    "B": "Promover autonomía, elección responsable y diversas formas de expresión del aprendizaje.",
+    "C": "Impedir que el estudiante piense.",
+    "D": "Homogeneizar todas las respuestas."
   },
-  "item": {
-    "enunciado": "Una profesora ofrece a sus estudiantes varias formas de demostrar comprensión: maqueta, explicación oral, texto escrito o mapa conceptual, siempre con criterios claros de evaluación.\n\n¿Qué propósito constructivista favorece esta decisión?",
-    "opciones": {
-      "A": "Eliminar todos los criterios de calidad.",
-      "B": "Promover autonomía, elección responsable y diversas formas de expresión del aprendizaje.",
-      "C": "Impedir que el estudiante piense.",
-      "D": "Homogeneizar todas las respuestas."
-    },
-    "respuesta_correcta": "B"
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "La autonomía no elimina criterios.",
+    "B": "Clave correcta.",
+    "C": "La elección promueve pensamiento.",
+    "D": "La práctica diversifica, no homogeniza."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "distractores": {
-      "A": "La autonomía no elimina criterios.",
-      "C": "La elección promueve pensamiento.",
-      "D": "La práctica diversifica, no homogeniza."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem adecuado para DUA y constructivismo."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Tecnicismo vs constructivismo/MTV_B11_I14.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

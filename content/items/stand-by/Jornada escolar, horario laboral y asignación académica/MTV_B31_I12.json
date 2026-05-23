@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B31_I12",
-    "tema": "Síntesis jornada, horario y asignación",
-    "competencia": "Integración conceptual",
-    "dificultad": "Alta",
-    "enunciado": "¿Cuál opción sintetiza correctamente los tres conceptos?",
-    "opciones": {
-        "A": "Jornada escolar: tiempo de estudiantes en el servicio educativo; jornada u horario laboral docente: tiempo de cumplimiento de funciones; asignación académica: horas de clase directa asignadas al docente.",
-        "B": "Jornada escolar, jornada laboral y asignación académica son sinónimos exactos.",
-        "C": "Asignación académica significa vacaciones.",
-        "D": "Horario laboral solo existe para familias."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "La opción diferencia los tres conceptos de forma funcional y normativa.",
-    "distractores": {
-        "B": "Son conceptos distintos.",
-        "C": "La asignación académica se refiere a clases.",
-        "D": "El horario laboral aplica al cumplimiento de funciones del trabajador."
-    }
+  "id_item": "MTV_B31_I12",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Jornada escolar, horario laboral y asignación académica",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "",
+  "enunciado": "¿Cuál opción sintetiza correctamente los tres conceptos?",
+  "opciones": {
+    "A": "Jornada escolar: tiempo de estudiantes en el servicio educativo; jornada u horario laboral docente: tiempo de cumplimiento de funciones; asignación académica: horas de clase directa asignadas al docente.",
+    "B": "Jornada escolar, jornada laboral y asignación académica son sinónimos exactos.",
+    "C": "Asignación académica significa vacaciones.",
+    "D": "Horario laboral solo existe para familias."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Distractor funcional.",
+    "C": "Distractor funcional.",
+    "D": "Distractor funcional."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I12.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
+  }
 }

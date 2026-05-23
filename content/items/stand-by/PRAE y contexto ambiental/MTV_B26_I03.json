@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B26_I03",
-    "tema": "Participación comunitaria",
-    "competencia": "Diseño participativo del PRAE",
-    "dificultad": "Alta",
-    "enunciado": "Una institución formula un PRAE sobre contaminación de un río cercano, pero lo diseña solo desde la rectoría, sin estudiantes, docentes, familias, líderes barriales ni actores ambientales del territorio.\n\n¿Qué debilidad presenta el proyecto?",
-    "opciones": {
-        "A": "Exceso de participación.",
-        "B": "Ausencia de participación comunitaria y lectura territorial.",
-        "C": "Demasiada interdisciplinariedad.",
-        "D": "Correcta aplicación del enfoque participativo."
-    },
-    "respuesta_correcta": "B",
-    "justificacion_clave": "Un PRAE territorial requiere participación de la comunidad educativa y actores del entorno para comprender y actuar sobre la problemática.",
-    "distractores": {
-        "A": "El problema es la falta de participación.",
-        "C": "No hay evidencia de interdisciplinariedad.",
-        "D": "No es participativo si se decide de forma cerrada."
-    }
+  "id_item": "MTV_B26_I03",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "PRAE y contexto ambiental",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "",
+  "enunciado": "Una institución formula un PRAE sobre contaminación de un río cercano, pero lo diseña solo desde la rectoría, sin estudiantes, docentes, familias, líderes barriales ni actores ambientales del territorio.\n\n¿Qué debilidad presenta el proyecto?",
+  "opciones": {
+    "A": "Exceso de participación.",
+    "B": "Ausencia de participación comunitaria y lectura territorial.",
+    "C": "Demasiada interdisciplinariedad.",
+    "D": "Correcta aplicación del enfoque participativo."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Distractor funcional.",
+    "C": "Distractor funcional.",
+    "D": "Distractor funcional."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/PRAE y contexto ambiental/MTV_B26_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
+  }
 }

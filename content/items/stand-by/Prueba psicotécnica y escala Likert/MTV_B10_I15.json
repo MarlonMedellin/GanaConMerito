@@ -1,40 +1,45 @@
 {
   "id_item": "MTV_B10_I15",
-  "archivo_sugerido": "MTV_B10_I15_likert_etica_confidencialidad.json",
-  "proposito_de_uso": "Evaluar si el aspirante reconoce la confidencialidad y la prudencia como actitudes evaluables del rol docente.",
-  "blueprint": {
-    "componente_modulo": "Ética y confidencialidad",
-    "competencia": "Manejo responsable de información sensible",
-    "afirmacion": "El docente debe manejar información de estudiantes y familias con prudencia, respeto y reserva, usando canales institucionales adecuados.",
-    "evidencia_observable": "Selecciona una actuación ética frente a información sensible.",
-    "tipo_de_evidencia": "Juicio ético-situacional",
-    "dificultad_esperada": "Alta",
-    "clave": "C"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Prueba psicotécnica y escala Likert",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "En una escala Likert se evalúa la proposición: 'Cuando conozco una situación familiar delicada de un estudiante, la comento libremente con otros padres para que todos estén informados'.",
+  "enunciado": "En una escala Likert se evalúa la proposición: 'Cuando conozco una situación familiar delicada de un estudiante, la comento libremente con otros padres para que todos estén informados'.\n\n¿Cuál análisis es más adecuado?",
+  "opciones": {
+    "A": "Es una conducta adecuada porque toda información debe circular sin límites.",
+    "B": "Es una proposición neutra porque no menciona calificaciones.",
+    "C": "Es una conducta inadecuada porque vulnera reserva, prudencia y manejo responsable de información sensible.",
+    "D": "Es correcta si el docente quiere parecer transparente."
   },
-  "item": {
-    "enunciado": "En una escala Likert se evalúa la proposición: 'Cuando conozco una situación familiar delicada de un estudiante, la comento libremente con otros padres para que todos estén informados'.\n\n¿Cuál análisis es más adecuado?",
-    "opciones": {
-      "A": "Es una conducta adecuada porque toda información debe circular sin límites.",
-      "B": "Es una proposición neutra porque no menciona calificaciones.",
-      "C": "Es una conducta inadecuada porque vulnera reserva, prudencia y manejo responsable de información sensible.",
-      "D": "Es correcta si el docente quiere parecer transparente."
-    },
-    "respuesta_correcta": "C"
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Desconoce confidencialidad y dignidad.",
+    "B": "La neutralidad no depende de mencionar calificaciones.",
+    "C": "Clave correcta.",
+    "D": "La transparencia no justifica divulgar datos sensibles."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "distractores": {
-      "A": "Desconoce confidencialidad y dignidad.",
-      "B": "La neutralidad no depende de mencionar calificaciones.",
-      "D": "La transparencia no justifica divulgar datos sensibles."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem protege la dignidad de estudiantes y familias sin impedir reportes institucionales pertinentes."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem protege la dignidad de estudiantes y familias sin impedir reportes institucionales pertinentes."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem fuerte para ética profesional y gestión comunitaria."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Prueba psicotécnica y escala Likert/MTV_B10_I15.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

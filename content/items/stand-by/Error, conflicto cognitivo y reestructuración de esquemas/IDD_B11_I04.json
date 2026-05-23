@@ -1,104 +1,45 @@
 {
   "id_item": "IDD_B11_I04",
-  "archivo_sugerido": "IDD_B11_I04_error_evaluacion_formativa_retroalimentacion.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B11",
-    "nombre": "Error, conflicto cognitivo y reestructuración de esquemas",
-    "estado_en_lista": "Bloque 11 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 4 de 4"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Error y evaluación formativa",
+  "tema": "Error, conflicto cognitivo y reestructuración de esquemas",
+  "subtema": "Uso de la evaluación únicamente para clasificar o sancionar errores.",
+  "competencia": "Uso pedagógico de evidencias de error",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado comprende que los errores acumulados en una evaluación no solo informan una nota, sino decisiones pedagógicas de mejora.",
+  "evidencia": "Selecciona una actuación que combina análisis de errores, retroalimentación y ajuste didáctico.",
+  "tarea": "Analizar resultados de evaluación y elegir una respuesta formativa.",
+  "contexto": "Después de revisar una evaluación, el docente nota que varios estudiantes cometieron errores similares. En lugar de limitarse a poner una nota, decide usar esa información para mejorar la enseñanza.",
+  "enunciado": "Después de revisar una evaluación, el docente nota que varios estudiantes cometieron errores similares. En lugar de limitarse a poner una nota, decide usar esa información para mejorar la enseñanza.\n\n¿Qué actuación corresponde a una evaluación formativa?",
+  "opciones": {
+    "A": "Registrar las notas y cerrar el tema definitivamente.",
+    "B": "Identificar patrones de error, retroalimentar a los estudiantes, ajustar la estrategia didáctica y proponer nuevas evidencias de aprendizaje.",
+    "C": "Clasificar al grupo como incapaz y avanzar al siguiente tema.",
+    "D": "Aplicar el mismo examen sin explicar los errores."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce que la evaluación formativa utiliza el error como punto de partida para retroalimentar y ajustar la enseñanza.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, evaluación, didáctica o gestión académica.",
-    "blueprint": {
-      "problematica_principal": "Uso de la evaluación únicamente para clasificar o sancionar errores.",
-      "fuente_autorizada": [
-        "Evaluación formativa",
-        "Didáctica constructivista",
-        "Retroalimentación",
-        "Aprendizaje significativo",
-        "Mejora continua"
-      ],
-      "componente_modulo": "Error y evaluación formativa",
-      "competencia": "Uso pedagógico de evidencias de error",
-      "afirmacion": "La evaluación formativa convierte los errores en evidencia para retroalimentar al estudiante y ajustar la mediación docente.",
-      "evidencia_observable": "Reconoce que el docente debe identificar patrones de error y modificar estrategias de enseñanza.",
-      "tipo_de_evidencia": "Juicio evaluativo aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado comprende que los errores acumulados en una evaluación no solo informan una nota, sino decisiones pedagógicas de mejora.",
-    "evidencia_observable": "Selecciona una actuación que combina análisis de errores, retroalimentación y ajuste didáctico.",
-    "tarea_cognitiva": "Analizar resultados de evaluación y elegir una respuesta formativa.",
-    "tipo_de_pregunta": "Caso situacional de juicio evaluativo",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Usar error para etiquetar estudiantes",
-        "revision": "La clave analiza patrones y apoyos, no clasificaciones personales."
-      },
-      {
-        "riesgo": "Ignorar responsabilidad didáctica",
-        "revision": "La opción correcta exige ajustar la mediación docente."
-      },
-      {
-        "riesgo": "Reducir evaluación formativa a repetir examen",
-        "revision": "El ítem incluye retroalimentación y nuevas estrategias."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque cierra el proceso sin mejora.",
+    "B": "Clave correcta.",
+    "C": "Es incorrecta porque emite un juicio de valor sobre el grupo.",
+    "D": "Es incorrecta porque repetir sin mediación no es evaluación formativa."
   },
-  "item": {
-    "enunciado": "Después de revisar una evaluación, el docente nota que varios estudiantes cometieron errores similares. En lugar de limitarse a poner una nota, decide usar esa información para mejorar la enseñanza.\n\n¿Qué actuación corresponde a una evaluación formativa?",
-    "opciones": {
-      "A": "Registrar las notas y cerrar el tema definitivamente.",
-      "B": "Identificar patrones de error, retroalimentar a los estudiantes, ajustar la estrategia didáctica y proponer nuevas evidencias de aprendizaje.",
-      "C": "Clasificar al grupo como incapaz y avanzar al siguiente tema.",
-      "D": "Aplicar el mismo examen sin explicar los errores."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem evita etiquetar estudiantes y promueve decisiones pedagógicas basadas en evidencia."
   },
-  "ficha_tecnica": {
-    "componente": "Error y evaluación formativa",
-    "competencia": "Uso pedagógico de evidencias de error",
-    "claim_evaluado": "El evaluado comprende que los errores acumulados en una evaluación no solo informan una nota, sino decisiones pedagógicas de mejora.",
-    "evidencia": "Selecciona una actuación que combina análisis de errores, retroalimentación y ajuste didáctico.",
-    "proceso_cognitivo": "Análisis y juicio evaluativo",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Reduce la evaluación a calificación final.",
-      "C": "Etiqueta al grupo y omite mediación.",
-      "D": "Repite sin retroalimentar ni ajustar."
-    },
-    "fuente_autorizada": [
-      "Evaluación formativa",
-      "Didáctica constructivista",
-      "Retroalimentación",
-      "Aprendizaje significativo",
-      "Mejora continua"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque cierra el proceso sin mejora.",
-    "opcion_C": "Es incorrecta porque emite un juicio de valor sobre el grupo.",
-    "opcion_D": "Es incorrecta porque repetir sin mediación no es evaluación formativa.",
-    "distractores": {
-      "A": "Es incorrecta porque cierra el proceso sin mejora.",
-      "C": "Es incorrecta porque emite un juicio de valor sobre el grupo.",
-      "D": "Es incorrecta porque repetir sin mediación no es evaluación formativa."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem evita etiquetar estudiantes y promueve decisiones pedagógicas basadas en evidencia."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre error, conflicto cognitivo y reestructuración de esquemas."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Error, conflicto cognitivo y reestructuración de esquemas/IDD_B11_I04.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

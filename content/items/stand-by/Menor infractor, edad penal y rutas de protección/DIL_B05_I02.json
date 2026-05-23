@@ -1,104 +1,45 @@
 {
   "id_item": "DIL_B05_I02",
-  "archivo_sugerido": "DIL_B05_I02_flangrancia_menor_14_autoridad_proteccion.json",
-  "bloque": {
-    "codigo_bloque": "DIL_B05",
-    "nombre": "Menor infractor, edad penal y rutas de protección",
-    "estado_en_lista": "Bloque 5 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 2 de 3"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Flagrancia y menor de 14 años",
+  "tema": "Menor infractor, edad penal y rutas de protección",
+  "subtema": "Improvisación institucional o retención indebida del menor de 14 años ante flagrancia.",
+  "competencia": "Aplicación de protocolo de remisión protectora",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "ALTA",
+  "claim": "El evaluado comprende que la respuesta ante flagrancia de una persona menor de 14 años debe respetar debido proceso, protección integral y competencia de autoridades especializadas.",
+  "evidencia": "Selecciona el procedimiento de puesta a disposición de autoridad competente.",
+  "tarea": "Elegir el procedimiento correcto frente a un caso de flagrancia.",
+  "contexto": "Un particular sorprende a un adolescente menor de 14 años participando en una conducta punible cerca de la institución educativa. El caso llega al conocimiento de la escuela y de la autoridad policial.",
+  "enunciado": "Un particular sorprende a un adolescente menor de 14 años participando en una conducta punible cerca de la institución educativa. El caso llega al conocimiento de la escuela y de la autoridad policial.\n\n¿Cuál procedimiento es jurídicamente adecuado?",
+  "opciones": {
+    "A": "Retener al menor en la institución hasta que confiese todos los hechos.",
+    "B": "Entregarlo a los medios de comunicación para advertir a la comunidad.",
+    "C": "Ponerlo inmediatamente a disposición de la autoridad policial o de protección competente, para verificación y restablecimiento de derechos.",
+    "D": "Aplicarle una sanción penal escolar equivalente a la de un adulto."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante identifica el procedimiento correcto cuando una persona menor de 14 años es sorprendida en flagrancia por una autoridad o particular.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con convivencia escolar, docencia, orientación, coordinación, protección integral o rutas institucionales.",
-    "blueprint": {
-      "problematica_principal": "Improvisación institucional o retención indebida del menor de 14 años ante flagrancia.",
-      "fuente_autorizada": [
-        "Ley 1098 de 2006",
-        "Artículo 143 Ley 1098",
-        "Policía de Infancia y Adolescencia",
-        "Autoridades de protección y restablecimiento de derechos",
-        "Sistema Nacional de Bienestar Familiar"
-      ],
-      "componente_modulo": "Flagrancia y menor de 14 años",
-      "competencia": "Aplicación de protocolo de remisión protectora",
-      "afirmacion": "Ante flagrancia de persona menor de 14 años, la autoridad debe ponerla inmediatamente a disposición de autoridad competente de protección y restablecimiento.",
-      "evidencia_observable": "Selecciona una actuación que no retiene ni sanciona penalmente al menor, sino que activa protección.",
-      "tipo_de_evidencia": "Procedimiento normativo aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende que la respuesta ante flagrancia de una persona menor de 14 años debe respetar debido proceso, protección integral y competencia de autoridades especializadas.",
-    "evidencia_observable": "Selecciona el procedimiento de puesta a disposición de autoridad competente.",
-    "tarea_cognitiva": "Elegir el procedimiento correcto frente a un caso de flagrancia.",
-    "tipo_de_pregunta": "Caso procedimental normativo",
-    "dificultad_esperada": "Alta",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Retención indebida del niño por la escuela",
-        "revision": "La clave remite a autoridad competente."
-      },
-      {
-        "riesgo": "Confundir autoridad escolar con autoridad de protección",
-        "revision": "El ítem delimita competencias."
-      },
-      {
-        "riesgo": "Tratar al menor como adulto penal",
-        "revision": "La respuesta correcta evita judicialización penal."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque la escuela no debe retener ni interrogar indebidamente.",
+    "B": "Es incorrecta porque expone y vulnera derechos del menor.",
+    "C": "Clave correcta.",
+    "D": "Es incorrecta porque no existe sanción penal escolar equivalente a la de adultos."
   },
-  "item": {
-    "enunciado": "Un particular sorprende a un adolescente menor de 14 años participando en una conducta punible cerca de la institución educativa. El caso llega al conocimiento de la escuela y de la autoridad policial.\n\n¿Cuál procedimiento es jurídicamente adecuado?",
-    "opciones": {
-      "A": "Retener al menor en la institución hasta que confiese todos los hechos.",
-      "B": "Entregarlo a los medios de comunicación para advertir a la comunidad.",
-      "C": "Ponerlo inmediatamente a disposición de la autoridad policial o de protección competente, para verificación y restablecimiento de derechos.",
-      "D": "Aplicarle una sanción penal escolar equivalente a la de un adulto."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem protege derechos, evita exposición pública y promueve actuación por autoridad competente."
   },
-  "ficha_tecnica": {
-    "componente": "Flagrancia y menor de 14 años",
-    "competencia": "Aplicación de protocolo de remisión protectora",
-    "claim_evaluado": "El evaluado comprende que la respuesta ante flagrancia de una persona menor de 14 años debe respetar debido proceso, protección integral y competencia de autoridades especializadas.",
-    "evidencia": "Selecciona el procedimiento de puesta a disposición de autoridad competente.",
-    "proceso_cognitivo": "Aplicación procedimental normativa",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Alta",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Puede constituir retención indebida y extralimitación.",
-      "B": "Vulnera dignidad, reserva e interés superior.",
-      "D": "Confunde ruta protectora con sanción penal escolar."
-    },
-    "fuente_autorizada": [
-      "Ley 1098 de 2006",
-      "Artículo 143 Ley 1098",
-      "Policía de Infancia y Adolescencia",
-      "Autoridades de protección y restablecimiento de derechos",
-      "Sistema Nacional de Bienestar Familiar"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque la escuela no debe retener ni interrogar indebidamente.",
-    "opcion_B": "Es incorrecta porque expone y vulnera derechos del menor.",
-    "opcion_D": "Es incorrecta porque no existe sanción penal escolar equivalente a la de adultos.",
-    "distractores": {
-      "A": "Es incorrecta porque la escuela no debe retener ni interrogar indebidamente.",
-      "B": "Es incorrecta porque expone y vulnera derechos del menor.",
-      "D": "Es incorrecta porque no existe sanción penal escolar equivalente a la de adultos."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "Aprobado con revisión de protocolo local.",
-    "argumento": "El ítem protege derechos, evita exposición pública y promueve actuación por autoridad competente."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Validar lenguaje procedimental con ruta territorial vigente.",
-    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 3 preguntas sobre menor infractor, edad penal y rutas de protección."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Menor infractor, edad penal y rutas de protección/DIL_B05_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

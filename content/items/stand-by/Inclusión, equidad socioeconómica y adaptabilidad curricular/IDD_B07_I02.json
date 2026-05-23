@@ -1,104 +1,45 @@
 {
   "id_item": "IDD_B07_I02",
-  "archivo_sugerido": "IDD_B07_I02_escuela_adapta_ensenanza_necesidades_ninos.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B07",
-    "nombre": "Inclusión, equidad socioeconómica y adaptabilidad curricular",
-    "estado_en_lista": "Bloque 7 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 2 de 4"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Adaptabilidad curricular",
+  "tema": "Inclusión, equidad socioeconómica y adaptabilidad curricular",
+  "subtema": "Persistencia de un modelo homogéneo donde los estudiantes deben adaptarse a una única forma de enseñanza.",
+  "competencia": "Flexibilización pedagógica inclusiva",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado comprende que la adaptabilidad curricular implica transformar la enseñanza, los recursos y la evaluación para garantizar participación y aprendizaje en la diversidad.",
+  "evidencia": "Selecciona la opción que afirma que la escuela debe flexibilizar su propuesta pedagógica sin renunciar al aprendizaje.",
+  "tarea": "Diferenciar adaptabilidad pedagógica de exigencia homogénea.",
+  "contexto": "En una reunión docente se afirma que todos los niños deben adaptarse al mismo estilo de enseñanza, a las mismas guías y a la misma forma de evaluación. Otro docente plantea que, desde la inclusión, la escuela debe revisar su manera de enseñar.",
+  "enunciado": "En una reunión docente se afirma que todos los niños deben adaptarse al mismo estilo de enseñanza, a las mismas guías y a la misma forma de evaluación. Otro docente plantea que, desde la inclusión, la escuela debe revisar su manera de enseñar.\n\nFilosófica y pedagógicamente, ¿cuál postura es más coherente con la educación inclusiva?",
+  "opciones": {
+    "A": "La escuela debe adaptar sus estrategias, recursos, tiempos y formas de evaluación a las necesidades de los estudiantes, manteniendo propósitos formativos.",
+    "B": "Los niños deben adaptarse siempre al estilo único de enseñanza, aunque este genere barreras.",
+    "C": "La inclusión exige eliminar todos los contenidos para que nadie tenga dificultad.",
+    "D": "El docente debe enseñar solo a quienes se ajusten al ritmo promedio del grupo."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende el principio pedagógico de adaptabilidad curricular: la escuela debe ajustar su enseñanza a la diversidad de los estudiantes, no exigir que todos se adapten a un modelo único.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión educativa, coordinación académica, diseño curricular o gestión pedagógica.",
-    "blueprint": {
-      "problematica_principal": "Persistencia de un modelo homogéneo donde los estudiantes deben adaptarse a una única forma de enseñanza.",
-      "fuente_autorizada": [
-        "Decreto 1421 de 2017",
-        "Diseño Universal para el Aprendizaje",
-        "Educación inclusiva",
-        "Ajustes razonables",
-        "Enfoque de derechos"
-      ],
-      "componente_modulo": "Adaptabilidad curricular",
-      "competencia": "Flexibilización pedagógica inclusiva",
-      "afirmacion": "La educación inclusiva exige que la escuela adapte sus mediaciones, recursos y evaluaciones a la diversidad de necesidades, ritmos y formas de aprender.",
-      "evidencia_observable": "Reconoce que la responsabilidad institucional no es forzar adaptación unilateral del estudiante, sino reducir barreras de enseñanza.",
-      "tipo_de_evidencia": "Comprensión pedagógica aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que la adaptabilidad curricular implica transformar la enseñanza, los recursos y la evaluación para garantizar participación y aprendizaje en la diversidad.",
-    "evidencia_observable": "Selecciona la opción que afirma que la escuela debe flexibilizar su propuesta pedagógica sin renunciar al aprendizaje.",
-    "tarea_cognitiva": "Diferenciar adaptabilidad pedagógica de exigencia homogénea.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confundir adaptabilidad con ausencia de exigencia",
-        "revision": "La clave mantiene propósitos de aprendizaje con apoyos y flexibilidad."
-      },
-      {
-        "riesgo": "Culpar al estudiante por no adaptarse",
-        "revision": "El ítem centra la responsabilidad en reducir barreras institucionales."
-      },
-      {
-        "riesgo": "Interpretar inclusión como trato idéntico",
-        "revision": "La opción correcta diferencia igualdad formal de equidad."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque mantiene un modelo único que puede excluir.",
+    "C": "Es incorrecta porque adaptar no significa dejar de enseñar.",
+    "D": "Es incorrecta porque limita el derecho al aprendizaje."
   },
-  "item": {
-    "enunciado": "En una reunión docente se afirma que todos los niños deben adaptarse al mismo estilo de enseñanza, a las mismas guías y a la misma forma de evaluación. Otro docente plantea que, desde la inclusión, la escuela debe revisar su manera de enseñar.\n\nFilosófica y pedagógicamente, ¿cuál postura es más coherente con la educación inclusiva?",
-    "opciones": {
-      "A": "La escuela debe adaptar sus estrategias, recursos, tiempos y formas de evaluación a las necesidades de los estudiantes, manteniendo propósitos formativos.",
-      "B": "Los niños deben adaptarse siempre al estilo único de enseñanza, aunque este genere barreras.",
-      "C": "La inclusión exige eliminar todos los contenidos para que nadie tenga dificultad.",
-      "D": "El docente debe enseñar solo a quienes se ajusten al ritmo promedio del grupo."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem promueve equidad y adaptabilidad sin reducir expectativas ni responsabilizar al estudiante por las barreras."
   },
-  "ficha_tecnica": {
-    "componente": "Adaptabilidad curricular",
-    "competencia": "Flexibilización pedagógica inclusiva",
-    "claim_evaluado": "El evaluado comprende que la adaptabilidad curricular implica transformar la enseñanza, los recursos y la evaluación para garantizar participación y aprendizaje en la diversidad.",
-    "evidencia": "Selecciona la opción que afirma que la escuela debe flexibilizar su propuesta pedagógica sin renunciar al aprendizaje.",
-    "proceso_cognitivo": "Comprensión pedagógica aplicada",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Reproduce un modelo homogéneo y excluyente.",
-      "C": "Confunde adaptación con eliminación de contenidos.",
-      "D": "Excluye a quienes no se ajustan al ritmo promedio."
-    },
-    "fuente_autorizada": [
-      "Decreto 1421 de 2017",
-      "Diseño Universal para el Aprendizaje",
-      "Educación inclusiva",
-      "Ajustes razonables",
-      "Enfoque de derechos"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque mantiene un modelo único que puede excluir.",
-    "opcion_C": "Es incorrecta porque adaptar no significa dejar de enseñar.",
-    "opcion_D": "Es incorrecta porque limita el derecho al aprendizaje.",
-    "distractores": {
-      "B": "Es incorrecta porque mantiene un modelo único que puede excluir.",
-      "C": "Es incorrecta porque adaptar no significa dejar de enseñar.",
-      "D": "Es incorrecta porque limita el derecho al aprendizaje."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem promueve equidad y adaptabilidad sin reducir expectativas ni responsabilizar al estudiante por las barreras."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre inclusión, equidad socioeconómica y adaptabilidad curricular."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Inclusión, equidad socioeconómica y adaptabilidad curricular/IDD_B07_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

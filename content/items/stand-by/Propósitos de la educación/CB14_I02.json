@@ -1,103 +1,45 @@
 {
   "id_item": "CB14_I02",
-  "bloque": {
-    "numero": 14,
-    "nombre": "Propósitos de la educación",
-    "estado_en_lista": "Bloque 14 de 15",
-    "decision_del_bloque": "Grupo de 4 preguntas",
-    "item_en_grupo": "Ítem 2 de 4"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión académica",
+  "tema": "Propósitos de la educación",
+  "subtema": "Desconocimiento de fines educativos",
+  "competencia": "Fundamentos educativos",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado reconoce que los fines educativos orientan decisiones curriculares hacia ciudadanía, convivencia, pensamiento crítico y desarrollo humano.",
+  "evidencia": "Selecciona una valoración que reconoce la pertinencia de acciones pedagógicas orientadas a lectura crítica, participación estudiantil y solución pacífica de conflictos.",
+  "tarea": "Analizar una propuesta académica y determinar si responde a fines integrales de la educación.",
+  "contexto": "Una institución decide fortalecer proyectos de lectura crítica, participación estudiantil y solución pacífica de conflictos. Algunos integrantes del equipo consideran que estas acciones no hacen parte de los propósitos académicos.",
+  "enunciado": "Una institución decide fortalecer proyectos de lectura crítica, participación estudiantil y solución pacífica de conflictos. Algunos integrantes del equipo consideran que estas acciones no hacen parte de los propósitos académicos.\n\n¿Cuál valoración es más adecuada?",
+  "opciones": {
+    "A": "Son acciones pertinentes porque los propósitos educativos incluyen formación integral, ciudadanía y convivencia.",
+    "B": "Son acciones improcedentes porque solo las áreas con examen externo tienen valor educativo.",
+    "C": "Son acciones recreativas que deben desarrollarse fuera de la jornada escolar.",
+    "D": "Son acciones que solo corresponden a orientación escolar y no al currículo."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce que los fines educativos orientan decisiones curriculares hacia la formación integral, la ciudadanía, la convivencia, el pensamiento crítico y el desarrollo humano.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "Desconocimiento de fines educativos",
-      "fuente_autorizada": [
-        "Ley 115 de 1994",
-        "Fines de la educación",
-        "Proyecto Educativo Institucional"
-      ],
-      "componente_modulo": "Gestión académica",
-      "competencia": "Fundamentos educativos",
-      "afirmacion": "La educación tiene propósitos integrales.",
-      "evidencia_observable": "Distingue entre una meta instruccional restringida y un propósito educativo integral.",
-      "tipo_de_evidencia": "Interpretación de situación pedagógica",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado reconoce que los fines educativos orientan decisiones curriculares hacia ciudadanía, convivencia, pensamiento crítico y desarrollo humano.",
-    "evidencia_observable": "Selecciona una valoración que reconoce la pertinencia de acciones pedagógicas orientadas a lectura crítica, participación estudiantil y solución pacífica de conflictos.",
-    "tarea_cognitiva": "Analizar una propuesta académica y determinar si responde a fines integrales de la educación.",
-    "tipo_de_pregunta": "Caso situacional de juicio profesional",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Sesgo por área disciplinar",
-        "revision": "El ítem no favorece un área específica; lectura crítica, participación y convivencia son dimensiones transversales de la formación."
-      },
-      {
-        "riesgo": "Ambigüedad entre formación académica y formación integral",
-        "revision": "La clave muestra que estas dimensiones no son opuestas, sino complementarias dentro del proceso educativo."
-      },
-      {
-        "riesgo": "Sesgo contra orientación escolar",
-        "revision": "El ítem evita presentar la formación integral como responsabilidad exclusiva de orientación escolar."
-      },
-      {
-        "riesgo": "Reducción a pruebas externas",
-        "revision": "Los distractores permiten identificar la visión limitada que restringe el valor educativo a lo evaluado externamente."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque restringe el valor educativo a las áreas evaluadas externamente y desconoce dimensiones formativas esenciales.",
+    "C": "Es incorrecta porque presenta estas acciones como recreativas, cuando pueden integrarse al currículo y a la vida institucional.",
+    "D": "Es incorrecta porque la formación integral no corresponde exclusivamente a orientación escolar; también debe articularse con el currículo, la convivencia y la gestión académica."
   },
-  "item": {
-    "enunciado": "Una institución decide fortalecer proyectos de lectura crítica, participación estudiantil y solución pacífica de conflictos. Algunos integrantes del equipo consideran que estas acciones no hacen parte de los propósitos académicos.\n\n¿Cuál valoración es más adecuada?",
-    "opciones": {
-      "A": "Son acciones pertinentes porque los propósitos educativos incluyen formación integral, ciudadanía y convivencia.",
-      "B": "Son acciones improcedentes porque solo las áreas con examen externo tienen valor educativo.",
-      "C": "Son acciones recreativas que deben desarrollarse fuera de la jornada escolar.",
-      "D": "Son acciones que solo corresponden a orientación escolar y no al currículo."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem no exige experiencia en un programa institucional específico ni conocimiento normativo literal. Evalúa una comprensión amplia de los fines educativos y evita favorecer a docentes de un área particular. Además, no contrapone el aprendizaje académico con la formación ciudadana y convivencial."
   },
-  "ficha_tecnica": {
-    "componente": "Gestión académica",
-    "competencia": "Fundamentos educativos",
-    "claim_evaluado": "El evaluado reconoce que los fines educativos orientan decisiones curriculares hacia ciudadanía, convivencia, pensamiento crítico y desarrollo humano.",
-    "evidencia": "Selecciona una valoración que reconoce la pertinencia de acciones pedagógicas orientadas a lectura crítica, participación estudiantil y solución pacífica de conflictos.",
-    "proceso_cognitivo": "Análisis y juicio profesional",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Reduce la educación a medición externa y desconoce dimensiones formativas no limitadas a pruebas.",
-      "C": "Minimiza el valor pedagógico de la lectura crítica, la participación y la convivencia.",
-      "D": "Separa indebidamente currículo y formación integral, asignando esta última solo a orientación escolar."
-    },
-    "fuente_autorizada": [
-      "Ley 115 de 1994",
-      "Fines de la educación",
-      "Proyecto Educativo Institucional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque restringe el valor educativo a las áreas evaluadas externamente y desconoce dimensiones formativas esenciales.",
-    "opcion_C": "Es incorrecta porque presenta estas acciones como recreativas, cuando pueden integrarse al currículo y a la vida institucional.",
-    "opcion_D": "Es incorrecta porque la formación integral no corresponde exclusivamente a orientación escolar; también debe articularse con el currículo, la convivencia y la gestión académica.",
-    "distractores": {
-      "B": "Es incorrecta porque restringe el valor educativo a las áreas evaluadas externamente y desconoce dimensiones formativas esenciales.",
-      "C": "Es incorrecta porque presenta estas acciones como recreativas, cuando pueden integrarse al currículo y a la vida institucional.",
-      "D": "Es incorrecta porque la formación integral no corresponde exclusivamente a orientación escolar; también debe articularse con el currículo, la convivencia y la gestión académica."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no exige experiencia en un programa institucional específico ni conocimiento normativo literal. Evalúa una comprensión amplia de los fines educativos y evita favorecer a docentes de un área particular. Además, no contrapone el aprendizaje académico con la formación ciudadana y convivencial."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre propósitos de la educación."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Propósitos de la educación/CB14_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

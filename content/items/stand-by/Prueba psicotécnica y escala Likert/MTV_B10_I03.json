@@ -1,40 +1,45 @@
 {
   "id_item": "MTV_B10_I03",
-  "archivo_sugerido": "MTV_B10_I03_proposicion_negativa_conducta_inadecuada.json",
-  "proposito_de_uso": "Evaluar si el aspirante diferencia una proposición negativa que expresa una conducta profesionalmente inadecuada.",
-  "blueprint": {
-    "componente_modulo": "Proposiciones negativas",
-    "competencia": "Interpretación de polaridad actitudinal",
-    "afirmacion": "Cuando una proposición expresa una conducta contraria al rol docente, el desacuerdo suele ser la postura profesionalmente coherente.",
-    "evidencia_observable": "Identifica que no se debe aceptar una proposición negativa solo porque parezca realista o frecuente.",
-    "tipo_de_evidencia": "Juicio actitudinal aplicado",
-    "dificultad_esperada": "Media-Alta",
-    "clave": "D"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Prueba psicotécnica y escala Likert",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "En una escala Likert aparece la proposición: 'Ignoro las dificultades familiares de los estudiantes porque no hacen parte de mi labor'.",
+  "enunciado": "En una escala Likert aparece la proposición: 'Ignoro las dificultades familiares de los estudiantes porque no hacen parte de mi labor'.\n\nDesde el rol docente y la responsabilidad institucional, ¿cómo debe interpretarse esta proposición?",
+  "opciones": {
+    "A": "Como una proposición adecuada, porque el docente no debe observar el contexto.",
+    "B": "Como una proposición neutra, porque no afecta la práctica educativa.",
+    "C": "Como una proposición correcta si el docente tiene muchos estudiantes.",
+    "D": "Como una proposición inadecuada, porque desconoce la responsabilidad de reconocer factores contextuales que inciden en el aprendizaje y la permanencia."
   },
-  "item": {
-    "enunciado": "En una escala Likert aparece la proposición: 'Ignoro las dificultades familiares de los estudiantes porque no hacen parte de mi labor'.\n\nDesde el rol docente y la responsabilidad institucional, ¿cómo debe interpretarse esta proposición?",
-    "opciones": {
-      "A": "Como una proposición adecuada, porque el docente no debe observar el contexto.",
-      "B": "Como una proposición neutra, porque no afecta la práctica educativa.",
-      "C": "Como una proposición correcta si el docente tiene muchos estudiantes.",
-      "D": "Como una proposición inadecuada, porque desconoce la responsabilidad de reconocer factores contextuales que inciden en el aprendizaje y la permanencia."
-    },
-    "respuesta_correcta": "D"
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "Desconoce la importancia del contexto en el proceso educativo.",
+    "B": "La proposición no es neutra: plantea una omisión profesional.",
+    "C": "La carga laboral no justifica ignorar señales relevantes del contexto.",
+    "D": "Clave correcta."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "distractores": {
-      "A": "Desconoce la importancia del contexto en el proceso educativo.",
-      "B": "La proposición no es neutra: plantea una omisión profesional.",
-      "C": "La carga laboral no justifica ignorar señales relevantes del contexto."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem no exige que el docente resuelva todo problema familiar, sino que reconozca y active canales pertinentes."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem no exige que el docente resuelva todo problema familiar, sino que reconozca y active canales pertinentes."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Útil para diferenciar proposición negativa y deber profesional."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Prueba psicotécnica y escala Likert/MTV_B10_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

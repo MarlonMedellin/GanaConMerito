@@ -1,106 +1,45 @@
 {
   "id_item": "CEOL_B01_I03",
-  "archivo_sugerido": "CEOL_B01_I03_componentes_ruta_atencion_integral.json",
-  "bloque": {
-    "codigo_bloque": "CEOL_B01",
-    "nombre": "Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones",
-    "estado_en_lista": "Bloque 1 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 3 de 6"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Convivencia Escolar y Rutas de Atención",
+  "tema": "Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones",
+  "subtema": "Confusión sobre los componentes de la Ruta de Atención Integral.",
+  "competencia": "Gestión de la Ruta de Atención Integral",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "BAJA",
+  "claim": "El evaluado reconoce que la Ruta de Atención Integral no inicia únicamente cuando ocurre una falta, sino que integra acciones de promoción, prevención, atención y seguimiento.",
+  "evidencia": "Selecciona la secuencia correcta de componentes de la Ruta de Atención Integral.",
+  "tarea": "Identificar la estructura básica de la Ruta de Atención Integral para la Convivencia Escolar.",
+  "contexto": "Al actualizar el Manual de Convivencia, el comité escolar debe asegurarse de que los protocolos institucionales se organicen de acuerdo con la Ruta de Atención Integral para la Convivencia Escolar.",
+  "enunciado": "Al actualizar el Manual de Convivencia, el comité escolar debe asegurarse de que los protocolos institucionales se organicen de acuerdo con la Ruta de Atención Integral para la Convivencia Escolar.\n\n¿Cuáles son los cuatro componentes que estructuran esta ruta?",
+  "opciones": {
+    "A": "Sanción, expulsión, suspensión y matrícula condicional.",
+    "B": "Diagnóstico, calificación, promoción académica y graduación.",
+    "C": "Registro, archivo, inventario y reporte financiero.",
+    "D": "Promoción, prevención, atención y seguimiento."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante identifica los cuatro componentes de la Ruta de Atención Integral para la Convivencia Escolar.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con convivencia escolar, orientación, coordinación, docencia o dirección escolar.",
-    "blueprint": {
-      "problematica_principal": "Confusión sobre los componentes de la Ruta de Atención Integral.",
-      "fuente_autorizada": [
-        "Ley 1620 de 2013",
-        "Decreto 1965 de 2013",
-        "Manual de convivencia institucional",
-        "Ruta de Atención Integral para la Convivencia Escolar"
-      ],
-      "componente_modulo": "Convivencia Escolar y Rutas de Atención",
-      "competencia": "Gestión de la Ruta de Atención Integral",
-      "afirmacion": "Los protocolos de convivencia deben organizarse alrededor de promoción, prevención, atención y seguimiento.",
-      "evidencia_observable": "Reconoce los cuatro componentes estructurales de la Ruta de Atención Integral.",
-      "tipo_de_evidencia": "Reconocimiento procedimental normativo",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "D"
-    },
-    "claim": "El evaluado reconoce que la Ruta de Atención Integral no inicia únicamente cuando ocurre una falta, sino que integra acciones de promoción, prevención, atención y seguimiento.",
-    "evidencia_observable": "Selecciona la secuencia correcta de componentes de la Ruta de Atención Integral.",
-    "tarea_cognitiva": "Identificar la estructura básica de la Ruta de Atención Integral para la Convivencia Escolar.",
-    "tipo_de_pregunta": "Pregunta normativa procedimental",
-    "dificultad_esperada": "Baja",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Memorización de términos",
-        "revision": "Aunque pregunta por componentes, la formulación permite comprender su función dentro de la ruta."
-      },
-      {
-        "riesgo": "Confusión entre atención y sanción",
-        "revision": "La clave incluye promoción y prevención, no solo reacción ante la falta."
-      },
-      {
-        "riesgo": "Ambigüedad en la secuencia",
-        "revision": "La opción correcta contiene los cuatro componentes normativos de la ruta."
-      },
-      {
-        "riesgo": "Sesgo por experiencia en comités de convivencia",
-        "revision": "No exige haber participado en un comité, solo reconocer la estructura de la ruta."
-      }
-    ]
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque representa un enfoque punitivo y no la estructura de la ruta.",
+    "B": "Es incorrecta porque pertenece al ámbito académico, no a la ruta de convivencia.",
+    "C": "Es incorrecta porque alude a gestión administrativa, no a convivencia escolar.",
+    "D": "Clave correcta."
   },
-  "item": {
-    "enunciado": "Al actualizar el Manual de Convivencia, el comité escolar debe asegurarse de que los protocolos institucionales se organicen de acuerdo con la Ruta de Atención Integral para la Convivencia Escolar.\n\n¿Cuáles son los cuatro componentes que estructuran esta ruta?",
-    "opciones": {
-      "A": "Sanción, expulsión, suspensión y matrícula condicional.",
-      "B": "Diagnóstico, calificación, promoción académica y graduación.",
-      "C": "Registro, archivo, inventario y reporte financiero.",
-      "D": "Promoción, prevención, atención y seguimiento."
-    },
-    "respuesta_correcta": "D"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem evalúa un conocimiento procedimental básico y no exige experiencia disciplinaria o jurídica especializada."
   },
-  "ficha_tecnica": {
-    "componente": "Convivencia Escolar y Rutas de Atención",
-    "competencia": "Gestión de la Ruta de Atención Integral",
-    "claim_evaluado": "El evaluado reconoce que la Ruta de Atención Integral no inicia únicamente cuando ocurre una falta, sino que integra acciones de promoción, prevención, atención y seguimiento.",
-    "evidencia": "Selecciona la secuencia correcta de componentes de la Ruta de Atención Integral.",
-    "proceso_cognitivo": "Reconocimiento procedimental normativo",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Baja",
-    "respuesta_correcta": "D",
-    "distractores": {
-      "A": "Reduce la convivencia a medidas sancionatorias.",
-      "B": "Confunde convivencia escolar con evaluación y promoción académica.",
-      "C": "Confunde la ruta con procedimientos administrativos o financieros."
-    },
-    "fuente_autorizada": [
-      "Ley 1620 de 2013",
-      "Decreto 1965 de 2013",
-      "Manual de convivencia institucional",
-      "Ruta de Atención Integral para la Convivencia Escolar"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "opcion_A": "Es incorrecta porque representa un enfoque punitivo y no la estructura de la ruta.",
-    "opcion_B": "Es incorrecta porque pertenece al ámbito académico, no a la ruta de convivencia.",
-    "opcion_C": "Es incorrecta porque alude a gestión administrativa, no a convivencia escolar.",
-    "distractores": {
-      "A": "Es incorrecta porque representa un enfoque punitivo y no la estructura de la ruta.",
-      "B": "Es incorrecta porque pertenece al ámbito académico, no a la ruta de convivencia.",
-      "C": "Es incorrecta porque alude a gestión administrativa, no a convivencia escolar."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem evalúa un conocimiento procedimental básico y no exige experiencia disciplinaria o jurídica especializada."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 6 preguntas sobre Sistema Nacional de Convivencia Escolar y Ruta de Atención Integral."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/CEOL_B01_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

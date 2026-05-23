@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B26_I05",
-    "tema": "Regionalización y contexto",
-    "competencia": "Pertinencia territorial",
-    "dificultad": "Alta",
-    "enunciado": "Una institución rural copia un PRAE urbano sobre contaminación por tráfico vehicular, aunque su principal problema local es la contaminación de fuentes hídricas por prácticas agrícolas.\n\n¿Qué criterio debería corregir?",
-    "opciones": {
-        "A": "Regionalización y pertinencia contextual.",
-        "B": "Memorización literal del proyecto de otra institución.",
-        "C": "Desconocimiento del territorio.",
-        "D": "Eliminación de la educación ambiental."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "El PRAE debe responder a las problemáticas ambientales reales del territorio y no copiar modelos descontextualizados.",
-    "distractores": {
-        "B": "Copiar no corrige el problema; lo causa.",
-        "C": "Es la falla, no el criterio de corrección.",
-        "D": "La solución no es eliminar el PRAE."
-    }
+  "id_item": "MTV_B26_I05",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "PRAE y contexto ambiental",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "",
+  "enunciado": "Una institución rural copia un PRAE urbano sobre contaminación por tráfico vehicular, aunque su principal problema local es la contaminación de fuentes hídricas por prácticas agrícolas.\n\n¿Qué criterio debería corregir?",
+  "opciones": {
+    "A": "Regionalización y pertinencia contextual.",
+    "B": "Memorización literal del proyecto de otra institución.",
+    "C": "Desconocimiento del territorio.",
+    "D": "Eliminación de la educación ambiental."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Distractor funcional.",
+    "C": "Distractor funcional.",
+    "D": "Distractor funcional."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/PRAE y contexto ambiental/MTV_B26_I05.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
+  }
 }

@@ -1,102 +1,45 @@
 {
   "id_item": "CEOL_B08_I04",
-  "archivo_sugerido": "CEOL_B08_I04_motivacion_didactica_ecuaciones_vida_real.json",
-  "bloque": {
-    "codigo_bloque": "CEOL_B08",
-    "nombre": "Enseñar, formar, motivación didáctica y competencias socioemocionales",
-    "estado_en_lista": "Bloque 8 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 4 de 5"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Motivación Didáctica",
+  "tema": "Enseñar, formar, motivación didáctica y competencias socioemocionales",
+  "subtema": "Desconexión entre contenido matemático y sentido de uso para el estudiante.",
+  "competencia": "Contextualización del aprendizaje",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado comprende que la pregunta por el sentido del aprendizaje es una oportunidad para contextualizar, problematizar y mostrar usos reales o posibles del conocimiento.",
+  "evidencia": "Selecciona una actuación docente que ajusta la metodología y no sanciona la pregunta.",
+  "tarea": "Analizar una situación de aula y seleccionar una respuesta metodológica motivadora.",
+  "contexto": "Durante una clase de matemáticas, un estudiante interrumpe y pregunta: “¿Para qué me sirve despejar una ecuación de primer grado en la vida real?”. El docente nota que varios compañeros comparten la misma inquietud.",
+  "enunciado": "Durante una clase de matemáticas, un estudiante interrumpe y pregunta: “¿Para qué me sirve despejar una ecuación de primer grado en la vida real?”. El docente nota que varios compañeros comparten la misma inquietud.\n\n¿Qué debe ajustar el docente en su metodología?",
+  "opciones": {
+    "A": "Incorporar situaciones problema, ejemplos contextualizados, modelación y aplicaciones donde despejar ecuaciones permita tomar decisiones o resolver necesidades concretas.",
+    "B": "Sancionar la pregunta porque interrumpe la clase y demuestra falta de interés.",
+    "C": "Responder que no todo debe servir para algo y continuar con ejercicios mecánicos sin explicación.",
+    "D": "Eliminar las ecuaciones del currículo para evitar preguntas difíciles."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce que una pregunta del estudiante sobre utilidad del aprendizaje exige ajustar la metodología para conectar el contenido con situaciones significativas.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, didáctica de las matemáticas, coordinación académica o gestión pedagógica.",
-    "blueprint": {
-      "problematica_principal": "Desconexión entre contenido matemático y sentido de uso para el estudiante.",
-      "fuente_autorizada": [
-        "Didáctica de las matemáticas",
-        "Aprendizaje significativo",
-        "Evaluación por competencias",
-        "Lineamientos curriculares de matemáticas"
-      ],
-      "componente_modulo": "Motivación Didáctica",
-      "competencia": "Contextualización del aprendizaje",
-      "afirmacion": "La motivación didáctica se fortalece cuando el docente conecta los contenidos con problemas, contextos y usos significativos.",
-      "evidencia_observable": "Reconoce que ante la pregunta por utilidad debe ajustar ejemplos, problemas, mediaciones y aplicaciones.",
-      "tipo_de_evidencia": "Juicio didáctico aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que la pregunta por el sentido del aprendizaje es una oportunidad para contextualizar, problematizar y mostrar usos reales o posibles del conocimiento.",
-    "evidencia_observable": "Selecciona una actuación docente que ajusta la metodología y no sanciona la pregunta.",
-    "tarea_cognitiva": "Analizar una situación de aula y seleccionar una respuesta metodológica motivadora.",
-    "tipo_de_pregunta": "Caso situacional de juicio didáctico",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Ridiculizar la pregunta del estudiante",
-        "revision": "La clave la trata como oportunidad de motivación y aprendizaje significativo."
-      },
-      {
-        "riesgo": "Reducir utilidad a aplicación laboral inmediata",
-        "revision": "La opción correcta incluye contextos, problemas y modelación, no solo empleo."
-      },
-      {
-        "riesgo": "Sesgo por conocimiento matemático",
-        "revision": "El ítem evalúa la respuesta didáctica, no resolver una ecuación."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque sanciona la curiosidad.",
+    "C": "Es incorrecta porque ignora la necesidad de sentido en el aprendizaje.",
+    "D": "Es incorrecta porque elimina el contenido en lugar de contextualizarlo."
   },
-  "item": {
-    "enunciado": "Durante una clase de matemáticas, un estudiante interrumpe y pregunta: “¿Para qué me sirve despejar una ecuación de primer grado en la vida real?”. El docente nota que varios compañeros comparten la misma inquietud.\n\n¿Qué debe ajustar el docente en su metodología?",
-    "opciones": {
-      "A": "Incorporar situaciones problema, ejemplos contextualizados, modelación y aplicaciones donde despejar ecuaciones permita tomar decisiones o resolver necesidades concretas.",
-      "B": "Sancionar la pregunta porque interrumpe la clase y demuestra falta de interés.",
-      "C": "Responder que no todo debe servir para algo y continuar con ejercicios mecánicos sin explicación.",
-      "D": "Eliminar las ecuaciones del currículo para evitar preguntas difíciles."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem valora la pregunta del estudiante y no exige dominio matemático avanzado; evalúa una decisión metodológica."
   },
-  "ficha_tecnica": {
-    "componente": "Motivación Didáctica",
-    "competencia": "Contextualización del aprendizaje",
-    "claim_evaluado": "El evaluado comprende que la pregunta por el sentido del aprendizaje es una oportunidad para contextualizar, problematizar y mostrar usos reales o posibles del conocimiento.",
-    "evidencia": "Selecciona una actuación docente que ajusta la metodología y no sanciona la pregunta.",
-    "proceso_cognitivo": "Análisis y juicio didáctico",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Convierte una pregunta legítima en falta disciplinaria.",
-      "C": "Mantiene la desconexión entre contenido y sentido.",
-      "D": "Evita el contenido en lugar de mejorar la mediación didáctica."
-    },
-    "fuente_autorizada": [
-      "Didáctica de las matemáticas",
-      "Aprendizaje significativo",
-      "Evaluación por competencias",
-      "Lineamientos curriculares de matemáticas"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque sanciona la curiosidad.",
-    "opcion_C": "Es incorrecta porque ignora la necesidad de sentido en el aprendizaje.",
-    "opcion_D": "Es incorrecta porque elimina el contenido en lugar de contextualizarlo.",
-    "distractores": {
-      "B": "Es incorrecta porque sanciona la curiosidad.",
-      "C": "Es incorrecta porque ignora la necesidad de sentido en el aprendizaje.",
-      "D": "Es incorrecta porque elimina el contenido en lugar de contextualizarlo."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem valora la pregunta del estudiante y no exige dominio matemático avanzado; evalúa una decisión metodológica."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 5 preguntas sobre enseñar, formar y competencias socioemocionales."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Enseñar, formar, motivación didáctica y competencias socioemocionales/CEOL_B08_I04.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

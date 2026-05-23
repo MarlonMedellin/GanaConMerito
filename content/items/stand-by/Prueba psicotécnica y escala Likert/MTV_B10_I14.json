@@ -1,40 +1,45 @@
 {
   "id_item": "MTV_B10_I14",
-  "archivo_sugerido": "MTV_B10_I14_frecuencia_en_proposiciones_likert.json",
-  "proposito_de_uso": "Evaluar si el aspirante comprende el papel de los adverbios de frecuencia en proposiciones Likert.",
-  "blueprint": {
-    "componente_modulo": "Adverbios de frecuencia",
-    "competencia": "Interpretación de alcance y frecuencia",
-    "afirmacion": "Adverbios como siempre, casi siempre, a veces, rara vez y nunca modifican el compromiso actitudinal de la proposición.",
-    "evidencia_observable": "Reconoce cómo la frecuencia afecta la intensidad y coherencia de la respuesta.",
-    "tipo_de_evidencia": "Análisis semántico aplicado",
-    "dificultad_esperada": "Media",
-    "clave": "A"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Prueba psicotécnica y escala Likert",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "En una escala Likert, dos proposiciones dicen: 'Escucho a mis estudiantes cuando expresan dificultades' y 'Rara vez escucho a mis estudiantes cuando expresan dificultades'.",
+  "enunciado": "En una escala Likert, dos proposiciones dicen: 'Escucho a mis estudiantes cuando expresan dificultades' y 'Rara vez escucho a mis estudiantes cuando expresan dificultades'.\n\n¿Qué elemento cambia de forma decisiva el sentido profesional de la segunda proposición?",
+  "opciones": {
+    "A": "El adverbio de frecuencia 'rara vez'.",
+    "B": "La palabra estudiantes.",
+    "C": "El uso del punto final.",
+    "D": "La ausencia de una fórmula matemática."
   },
-  "item": {
-    "enunciado": "En una escala Likert, dos proposiciones dicen: 'Escucho a mis estudiantes cuando expresan dificultades' y 'Rara vez escucho a mis estudiantes cuando expresan dificultades'.\n\n¿Qué elemento cambia de forma decisiva el sentido profesional de la segunda proposición?",
-    "opciones": {
-      "A": "El adverbio de frecuencia 'rara vez'.",
-      "B": "La palabra estudiantes.",
-      "C": "El uso del punto final.",
-      "D": "La ausencia de una fórmula matemática."
-    },
-    "respuesta_correcta": "A"
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "La palabra estudiantes no cambia negativamente el sentido por sí sola.",
+    "C": "El punto final no modifica el compromiso actitudinal.",
+    "D": "No se trata de una proposición matemática."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "distractores": {
-      "B": "La palabra estudiantes no cambia negativamente el sentido por sí sola.",
-      "C": "El punto final no modifica el compromiso actitudinal.",
-      "D": "No se trata de una proposición matemática."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem evalúa un rasgo lingüístico útil y objetivo."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem evalúa un rasgo lingüístico útil y objetivo."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Muy útil para análisis de formulación."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Prueba psicotécnica y escala Likert/MTV_B10_I14.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

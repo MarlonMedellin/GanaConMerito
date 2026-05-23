@@ -1,40 +1,45 @@
 {
   "id_item": "MTV_B08_I07",
-  "archivo_sugerido": "MTV_B08_I07_empatia_no_permisividad.json",
-  "proposito_de_uso": "Evaluar si el aspirante diferencia empatía profesional de permisividad.",
-  "blueprint": {
-    "componente_modulo": "Empatía y responsabilidad profesional",
-    "competencia": "Diferenciación entre sensibilidad, ayuda y permisividad",
-    "afirmacion": "La empatía implica comprender la situación del otro y actuar con apoyo responsable, sin eliminar límites, deberes ni criterios pedagógicos.",
-    "evidencia_observable": "Selecciona una actuación sensible pero formativa ante una dificultad del estudiante.",
-    "tipo_de_evidencia": "Juicio situacional comportamental",
-    "dificultad_esperada": "Alta",
-    "clave": "C"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Habilidades blandas y duras",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Un estudiante entrega un trabajo manual manchado de barro y explica honestamente que se le cayó camino al colegio debido a la lluvia. El docente debe actuar con ayuda y servicio, pero sin caer en permisividad ni humillación.",
+  "enunciado": "Un estudiante entrega un trabajo manual manchado de barro y explica honestamente que se le cayó camino al colegio debido a la lluvia. El docente debe actuar con ayuda y servicio, pero sin caer en permisividad ni humillación.\n\n¿Cuál actuación es más adecuada?",
+  "opciones": {
+    "A": "Ridiculizarlo frente al grupo para que aprenda a ser más cuidadoso.",
+    "B": "Ponerle cero automáticamente sin escuchar la situación.",
+    "C": "Escuchar la explicación, valorar la honestidad y el esfuerzo, revisar si el trabajo cumple el propósito y, si es necesario, permitir una mejora razonable con criterios claros.",
+    "D": "Aprobarlo siempre con nota máxima aunque no haya evidencia del trabajo."
   },
-  "item": {
-    "enunciado": "Un estudiante entrega un trabajo manual manchado de barro y explica honestamente que se le cayó camino al colegio debido a la lluvia. El docente debe actuar con ayuda y servicio, pero sin caer en permisividad ni humillación.\n\n¿Cuál actuación es más adecuada?",
-    "opciones": {
-      "A": "Ridiculizarlo frente al grupo para que aprenda a ser más cuidadoso.",
-      "B": "Ponerle cero automáticamente sin escuchar la situación.",
-      "C": "Escuchar la explicación, valorar la honestidad y el esfuerzo, revisar si el trabajo cumple el propósito y, si es necesario, permitir una mejora razonable con criterios claros.",
-      "D": "Aprobarlo siempre con nota máxima aunque no haya evidencia del trabajo."
-    },
-    "respuesta_correcta": "C"
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Vulnera la dignidad del estudiante.",
+    "B": "Desconoce el contexto y elimina la ayuda profesional.",
+    "C": "Clave correcta.",
+    "D": "Confunde empatía con permisividad sin criterios."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "distractores": {
-      "A": "Vulnera la dignidad del estudiante.",
-      "B": "Desconoce el contexto y elimina la ayuda profesional.",
-      "D": "Confunde empatía con permisividad sin criterios."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem evalúa sensibilidad profesional sin promover arbitrariedad ni castigo."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem evalúa sensibilidad profesional sin promover arbitrariedad ni castigo."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem valioso para competencias de ayuda, servicio y justicia pedagógica."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I07.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B31_I03",
-    "tema": "Asignación académica",
-    "competencia": "Diferenciación funcional",
-    "dificultad": "Media",
-    "enunciado": "A un docente le asignan horas semanales de clase directa con estudiantes en un área determinada. Esas horas no incluyen todas sus actividades laborales, sino el tiempo específico de orientación de clases.\n\n¿Cómo se denomina este componente?",
-    "opciones": {
-        "A": "Asignación académica.",
-        "B": "Jornada comunitaria familiar.",
-        "C": "Currículo oculto.",
-        "D": "Evaluación psicotécnica."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "La asignación académica corresponde al tiempo de clase directa asignado al docente.",
-    "distractores": {
-        "B": "No es una categoría laboral docente central.",
-        "C": "El currículo oculto se refiere a aprendizajes implícitos.",
-        "D": "No se trata de una prueba."
-    }
+  "id_item": "MTV_B31_I03",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Jornada escolar, horario laboral y asignación académica",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "",
+  "enunciado": "A un docente le asignan horas semanales de clase directa con estudiantes en un área determinada. Esas horas no incluyen todas sus actividades laborales, sino el tiempo específico de orientación de clases.\n\n¿Cómo se denomina este componente?",
+  "opciones": {
+    "A": "Asignación académica.",
+    "B": "Jornada comunitaria familiar.",
+    "C": "Currículo oculto.",
+    "D": "Evaluación psicotécnica."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Distractor funcional.",
+    "C": "Distractor funcional.",
+    "D": "Distractor funcional."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
+  }
 }

@@ -1,40 +1,45 @@
 {
   "id_item": "MTV_B08_I05",
-  "archivo_sugerido": "MTV_B08_I05_docente_conocimiento_sin_habilidades_blandas.json",
-  "proposito_de_uso": "Evaluar si el aspirante comprende que el conocimiento disciplinar no sustituye las habilidades blandas en el desempeño docente.",
-  "blueprint": {
-    "componente_modulo": "Complementariedad entre habilidades blandas y duras",
-    "competencia": "Análisis del desempeño docente integral",
-    "afirmacion": "Un docente puede tener alto conocimiento disciplinar, pero si carece de comunicación, empatía, regulación emocional y trato respetuoso, su desempeño profesional puede verse afectado.",
-    "evidencia_observable": "Reconoce la necesidad de articular competencias técnicas y socioemocionales.",
-    "tipo_de_evidencia": "Juicio comportamental aplicado",
-    "dificultad_esperada": "Media-Alta",
-    "clave": "B"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Habilidades blandas y duras",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Un docente demuestra amplio dominio de su área, tiene títulos académicos y conoce muy bien los contenidos. Sin embargo, suele responder con agresividad, no escucha a sus estudiantes, descalifica a sus compañeros y genera tensión en el aula.",
+  "enunciado": "Un docente demuestra amplio dominio de su área, tiene títulos académicos y conoce muy bien los contenidos. Sin embargo, suele responder con agresividad, no escucha a sus estudiantes, descalifica a sus compañeros y genera tensión en el aula.\n\n¿Qué interpretación es más adecuada?",
+  "opciones": {
+    "A": "Su desempeño es completo porque las habilidades duras reemplazan cualquier competencia interpersonal.",
+    "B": "Tiene fortalezas en habilidades duras, pero requiere fortalecer habilidades blandas como comunicación, empatía, autocontrol y trato respetuoso.",
+    "C": "No necesita mejorar porque el conocimiento disciplinar es lo único evaluable en un docente.",
+    "D": "Las habilidades blandas solo son necesarias para estudiantes, no para docentes."
   },
-  "item": {
-    "enunciado": "Un docente demuestra amplio dominio de su área, tiene títulos académicos y conoce muy bien los contenidos. Sin embargo, suele responder con agresividad, no escucha a sus estudiantes, descalifica a sus compañeros y genera tensión en el aula.\n\n¿Qué interpretación es más adecuada?",
-    "opciones": {
-      "A": "Su desempeño es completo porque las habilidades duras reemplazan cualquier competencia interpersonal.",
-      "B": "Tiene fortalezas en habilidades duras, pero requiere fortalecer habilidades blandas como comunicación, empatía, autocontrol y trato respetuoso.",
-      "C": "No necesita mejorar porque el conocimiento disciplinar es lo único evaluable en un docente.",
-      "D": "Las habilidades blandas solo son necesarias para estudiantes, no para docentes."
-    },
-    "respuesta_correcta": "B"
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "Supone falsamente que las habilidades duras sustituyen las blandas.",
+    "B": "Clave correcta.",
+    "C": "Reduce el desempeño docente al dominio disciplinar.",
+    "D": "Desconoce que el docente también debe evidenciar competencias comportamentales."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "distractores": {
-      "A": "Supone falsamente que las habilidades duras sustituyen las blandas.",
-      "C": "Reduce el desempeño docente al dominio disciplinar.",
-      "D": "Desconoce que el docente también debe evidenciar competencias comportamentales."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem no descalifica al docente por completo, sino que diferencia fortalezas y aspectos por mejorar."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem no descalifica al docente por completo, sino que diferencia fortalezas y aspectos por mejorar."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Muy útil para evaluar desempeño integral."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I05.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

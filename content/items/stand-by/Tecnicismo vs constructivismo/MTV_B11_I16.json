@@ -1,36 +1,45 @@
 {
   "id_item": "MTV_B11_I16",
-  "archivo_sugerido": "MTV_B11_I16_constructivismo_no_permisividad.json",
-  "proposito_de_uso": "Evitar la confusión entre constructivismo y ausencia de exigencia pedagógica.",
-  "blueprint": {
-    "componente_modulo": "Mitos sobre constructivismo",
-    "competencia": "Comprensión equilibrada del enfoque constructivista",
-    "afirmacion": "El constructivismo no elimina exigencia; la organiza mediante retos, mediación, retroalimentación, criterios y construcción activa del conocimiento.",
-    "evidencia_observable": "Identifica una interpretación adecuada del constructivismo frente a la idea de permisividad.",
-    "tipo_de_evidencia": "Juicio pedagógico conceptual",
-    "dificultad_esperada": "Alta",
-    "clave": "A"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Tecnicismo vs constructivismo",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Un coordinador afirma que el constructivismo significa dejar que cada estudiante haga lo que quiera sin criterios, sin seguimiento y sin exigencia académica.",
+  "enunciado": "Un coordinador afirma que el constructivismo significa dejar que cada estudiante haga lo que quiera sin criterios, sin seguimiento y sin exigencia académica.\n\n¿Qué respuesta corrige mejor esa idea?",
+  "opciones": {
+    "A": "El constructivismo exige mediación, retos, criterios, retroalimentación y participación activa; no equivale a permisividad.",
+    "B": "El constructivismo elimina toda responsabilidad del estudiante.",
+    "C": "El constructivismo consiste en no planear.",
+    "D": "El constructivismo prohíbe evaluar cualquier aprendizaje."
   },
-  "item": {
-    "enunciado": "Un coordinador afirma que el constructivismo significa dejar que cada estudiante haga lo que quiera sin criterios, sin seguimiento y sin exigencia académica.\n\n¿Qué respuesta corrige mejor esa idea?",
-    "opciones": {
-      "A": "El constructivismo exige mediación, retos, criterios, retroalimentación y participación activa; no equivale a permisividad.",
-      "B": "El constructivismo elimina toda responsabilidad del estudiante.",
-      "C": "El constructivismo consiste en no planear.",
-      "D": "El constructivismo prohíbe evaluar cualquier aprendizaje."
-    },
-    "respuesta_correcta": "A"
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Confunde autonomía con irresponsabilidad.",
+    "C": "El constructivismo requiere planeación intencional.",
+    "D": "Puede haber evaluación formativa y criterios claros."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "distractores": {
-      "B": "Confunde autonomía con irresponsabilidad.",
-      "C": "El constructivismo requiere planeación intencional.",
-      "D": "Puede haber evaluación formativa y criterios claros."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem recomendado para cerrar el bloque."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Tecnicismo vs constructivismo/MTV_B11_I16.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

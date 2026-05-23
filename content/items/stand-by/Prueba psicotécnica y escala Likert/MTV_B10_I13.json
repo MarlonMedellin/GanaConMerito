@@ -1,40 +1,45 @@
 {
   "id_item": "MTV_B10_I13",
-  "archivo_sugerido": "MTV_B10_I13_premisa_con_negacion_doble.json",
-  "proposito_de_uso": "Evaluar si el aspirante detecta que las negaciones dobles pueden dificultar la comprensión de una proposición Likert.",
-  "blueprint": {
-    "componente_modulo": "Claridad de proposiciones",
-    "competencia": "Lectura crítica de negaciones",
-    "afirmacion": "Las negaciones dobles pueden oscurecer el sentido de la proposición y aumentar el riesgo de respuesta equivocada.",
-    "evidencia_observable": "Identifica la necesidad de reescribir o analizar cuidadosamente proposiciones con doble negación.",
-    "tipo_de_evidencia": "Análisis gramatical aplicado",
-    "dificultad_esperada": "Alta",
-    "clave": "B"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Prueba psicotécnica y escala Likert",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Una proposición dice: 'No considero innecesario escuchar a los estudiantes cuando manifiestan dificultades'.",
+  "enunciado": "Una proposición dice: 'No considero innecesario escuchar a los estudiantes cuando manifiestan dificultades'.\n\n¿Qué dificultad presenta esta redacción?",
+  "opciones": {
+    "A": "Es completamente clara porque no tiene ninguna negación.",
+    "B": "Contiene una doble negación que puede confundir el sentido de la respuesta.",
+    "C": "Es una proposición matemática.",
+    "D": "No evalúa ninguna actitud porque menciona estudiantes."
   },
-  "item": {
-    "enunciado": "Una proposición dice: 'No considero innecesario escuchar a los estudiantes cuando manifiestan dificultades'.\n\n¿Qué dificultad presenta esta redacción?",
-    "opciones": {
-      "A": "Es completamente clara porque no tiene ninguna negación.",
-      "B": "Contiene una doble negación que puede confundir el sentido de la respuesta.",
-      "C": "Es una proposición matemática.",
-      "D": "No evalúa ninguna actitud porque menciona estudiantes."
-    },
-    "respuesta_correcta": "B"
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "La proposición sí tiene negaciones.",
+    "B": "Clave correcta.",
+    "C": "No trata de matemáticas.",
+    "D": "Mencionar estudiantes no impide evaluar actitud."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "distractores": {
-      "A": "La proposición sí tiene negaciones.",
-      "C": "No trata de matemáticas.",
-      "D": "Mencionar estudiantes no impide evaluar actitud."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem ayuda a detectar dificultad lingüística real en pruebas tipo Likert."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem ayuda a detectar dificultad lingüística real en pruebas tipo Likert."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Útil para entrenamiento en lectura cuidadosa."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Prueba psicotécnica y escala Likert/MTV_B10_I13.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

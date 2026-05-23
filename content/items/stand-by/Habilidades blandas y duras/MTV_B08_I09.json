@@ -1,40 +1,45 @@
 {
   "id_item": "MTV_B08_I09",
-  "archivo_sugerido": "MTV_B08_I09_autocontrol_emocional_docente.json",
-  "proposito_de_uso": "Evaluar si el aspirante reconoce el autocontrol emocional como habilidad blanda clave en situaciones de presión.",
-  "blueprint": {
-    "componente_modulo": "Autocontrol emocional",
-    "competencia": "Regulación emocional en el ejercicio docente",
-    "afirmacion": "El autocontrol permite gestionar emociones intensas sin responder de forma impulsiva, agresiva o desproporcionada.",
-    "evidencia_observable": "Selecciona una respuesta profesional ante una provocación o tensión.",
-    "tipo_de_evidencia": "Juicio situacional comportamental",
-    "dificultad_esperada": "Media-Alta",
-    "clave": "B"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Habilidades blandas y duras",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Durante una clase, un estudiante hace un comentario desafiante. El docente siente molestia, pero respira, evita responder con gritos, retoma la norma de convivencia y conversa con el estudiante en un momento adecuado.",
+  "enunciado": "Durante una clase, un estudiante hace un comentario desafiante. El docente siente molestia, pero respira, evita responder con gritos, retoma la norma de convivencia y conversa con el estudiante en un momento adecuado.\n\n¿Qué competencia blanda se evidencia principalmente?",
+  "opciones": {
+    "A": "Improvisación impulsiva.",
+    "B": "Autocontrol emocional.",
+    "C": "Conocimiento enciclopédico.",
+    "D": "Habilidad caligráfica."
   },
-  "item": {
-    "enunciado": "Durante una clase, un estudiante hace un comentario desafiante. El docente siente molestia, pero respira, evita responder con gritos, retoma la norma de convivencia y conversa con el estudiante en un momento adecuado.\n\n¿Qué competencia blanda se evidencia principalmente?",
-    "opciones": {
-      "A": "Improvisación impulsiva.",
-      "B": "Autocontrol emocional.",
-      "C": "Conocimiento enciclopédico.",
-      "D": "Habilidad caligráfica."
-    },
-    "respuesta_correcta": "B"
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "El caso muestra control, no impulsividad.",
+    "B": "Clave correcta.",
+    "C": "El conocimiento enciclopédico no describe la conducta emocional.",
+    "D": "La caligrafía no tiene relación con el manejo del conflicto."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "distractores": {
-      "A": "El caso muestra control, no impulsividad.",
-      "C": "El conocimiento enciclopédico no describe la conducta emocional.",
-      "D": "La caligrafía no tiene relación con el manejo del conflicto."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem no exige que el docente no sienta emociones, sino que las gestione adecuadamente."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem no exige que el docente no sienta emociones, sino que las gestione adecuadamente."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem útil para inteligencia emocional y manejo de aula."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I09.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

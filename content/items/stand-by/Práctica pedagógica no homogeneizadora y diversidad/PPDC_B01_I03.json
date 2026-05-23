@@ -1,99 +1,45 @@
 {
   "id_item": "PPDC_B01_I03",
-  "archivo_sugerido": "PPDC_B01_I03_guias_impresas_dinamica_aula.json",
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce que basar toda la orientación de un aula diversa en guías impresas homogéneas desconoce la dinámica educativa, la interacción, la mediación y los ritmos de aprendizaje.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula y coordinación académica.",
-    "blueprint": {
-      "problematica_principal": "Reducción de la dinámica educativa al diligenciamiento de guías impresas.",
-      "fuente_autorizada": [
-        "Didáctica general",
-        "Enfoques de pedagogía activa",
-        "Orientaciones pedagógicas institucionales",
-        "Lineamientos curriculares del Ministerio de Educación Nacional"
-      ],
-      "componente_modulo": "Práctica Pedagógica y Dinámicas de Aula",
-      "competencia": "Mediación pedagógica contextualizada",
-      "afirmacion": "La dinámica educativa requiere interacción, mediación, diversidad de recursos y participación activa.",
-      "evidencia_observable": "Reconoce que llenar guías de manera exclusiva y uniforme puede limitar el aprendizaje en aulas con múltiples realidades y ritmos.",
-      "tipo_de_evidencia": "Juicio didáctico en contexto de aula",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que la guía impresa puede ser un recurso, pero no debe sustituir la mediación docente, la interacción, el diálogo, la experimentación ni la adaptación a las realidades del grupo.",
-    "evidencia_observable": "Selecciona una explicación que identifica por qué usar guías impresas como única estrategia desconoce la diversidad y empobrece la dinámica del aula.",
-    "tarea_cognitiva": "Analizar una práctica de aula y valorar su coherencia con la dinámica educativa.",
-    "tipo_de_pregunta": "Caso situacional de juicio pedagógico",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Sesgo contra el uso de guías impresas",
-        "revision": "El ítem no descalifica las guías como recurso; cuestiona su uso exclusivo, rígido y homogeneizador."
-      },
-      {
-        "riesgo": "Sesgo por disponibilidad tecnológica",
-        "revision": "La clave no exige tecnología; propone mediación, interacción y adaptación pedagógica."
-      },
-      {
-        "riesgo": "Lenguaje valorativo fuerte",
-        "revision": "Se reformula la idea de 'violenta' como 'desconoce o contradice' el principio de dinámica educativa."
-      },
-      {
-        "riesgo": "Ambigüedad en la clave",
-        "revision": "La opción correcta distingue recurso didáctico de estrategia totalizante."
-      }
-    ]
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Práctica Pedagógica y Dinámicas de Aula",
+  "tema": "Práctica pedagógica no homogeneizadora y diversidad",
+  "subtema": "Reducción de la dinámica educativa al diligenciamiento de guías impresas.",
+  "competencia": "Mediación pedagógica contextualizada",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado comprende que la guía impresa puede ser un recurso, pero no debe sustituir la mediación docente, la interacción, el diálogo, la experimentación ni la adaptación a las realidades del grupo.",
+  "evidencia": "Selecciona una explicación que identifica por qué usar guías impresas como única estrategia desconoce la diversidad y empobrece la dinámica del aula.",
+  "tarea": "Analizar una práctica de aula y valorar su coherencia con la dinámica educativa.",
+  "contexto": "En un aula con 40 estudiantes, la docente identifica realidades familiares, ritmos de aprendizaje, intereses y niveles de autonomía muy distintos. Sin embargo, decide orientar el 100% de las clases mediante guías impresas iguales para todos, que los estudiantes deben llenar en silencio durante toda la sesión.",
+  "enunciado": "En un aula con 40 estudiantes, la docente identifica realidades familiares, ritmos de aprendizaje, intereses y niveles de autonomía muy distintos. Sin embargo, decide orientar el 100% de las clases mediante guías impresas iguales para todos, que los estudiantes deben llenar en silencio durante toda la sesión.\n\n¿Por qué esta práctica contradice el principio de dinámica educativa?",
+  "opciones": {
+    "A": "Porque convierte un recurso útil en la única estrategia, reduciendo la mediación, la interacción, la participación y la atención a ritmos diversos.",
+    "B": "Porque toda guía impresa es pedagógicamente inválida, incluso cuando se usa con propósito y mediación.",
+    "C": "Porque en aulas numerosas no es posible desarrollar ninguna forma de aprendizaje significativo.",
+    "D": "Porque la única alternativa válida es reemplazar todas las guías por actividades recreativas sin evaluación."
   },
-  "item": {
-    "enunciado": "En un aula con 40 estudiantes, la docente identifica realidades familiares, ritmos de aprendizaje, intereses y niveles de autonomía muy distintos. Sin embargo, decide orientar el 100% de las clases mediante guías impresas iguales para todos, que los estudiantes deben llenar en silencio durante toda la sesión.\n\n¿Por qué esta práctica contradice el principio de dinámica educativa?",
-    "opciones": {
-      "A": "Porque convierte un recurso útil en la única estrategia, reduciendo la mediación, la interacción, la participación y la atención a ritmos diversos.",
-      "B": "Porque toda guía impresa es pedagógicamente inválida, incluso cuando se usa con propósito y mediación.",
-      "C": "Porque en aulas numerosas no es posible desarrollar ninguna forma de aprendizaje significativo.",
-      "D": "Porque la única alternativa válida es reemplazar todas las guías por actividades recreativas sin evaluación."
-    },
-    "respuesta_correcta": "A"
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque una guía impresa puede ser válida si se integra a una estrategia didáctica con propósito y mediación.",
+    "C": "Es incorrecta porque un aula numerosa no impide el aprendizaje significativo, aunque exige mejores decisiones didácticas.",
+    "D": "Es incorrecta porque la alternativa no es eliminar la evaluación ni reemplazar la enseñanza por recreación."
   },
-  "ficha_tecnica": {
-    "componente": "Práctica Pedagógica y Dinámicas de Aula",
-    "competencia": "Mediación pedagógica contextualizada",
-    "claim_evaluado": "El evaluado comprende que la guía impresa puede ser un recurso, pero no debe sustituir la mediación docente, la interacción, el diálogo, la experimentación ni la adaptación a las realidades del grupo.",
-    "evidencia": "Selecciona una explicación que identifica por qué usar guías impresas como única estrategia desconoce la diversidad y empobrece la dinámica del aula.",
-    "proceso_cognitivo": "Análisis y juicio pedagógico",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Descalifica indebidamente las guías impresas como recurso didáctico.",
-      "C": "Presenta el tamaño del grupo como obstáculo absoluto para el aprendizaje.",
-      "D": "Confunde dinamismo pedagógico con ausencia de propósito o evaluación."
-    },
-    "fuente_autorizada": [
-      "Didáctica general",
-      "Enfoques de pedagogía activa",
-      "Orientaciones pedagógicas institucionales",
-      "Lineamientos curriculares del Ministerio de Educación Nacional"
-    ]
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem evita penalizar instituciones con pocos recursos tecnológicos y no descalifica las guías impresas. Evalúa el uso pedagógico equilibrado de recursos y la necesidad de mediación docente."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque una guía impresa puede ser válida si se integra a una estrategia didáctica con propósito y mediación.",
-    "opcion_C": "Es incorrecta porque un aula numerosa no impide el aprendizaje significativo, aunque exige mejores decisiones didácticas.",
-    "opcion_D": "Es incorrecta porque la alternativa no es eliminar la evaluación ni reemplazar la enseñanza por recreación.",
-    "distractores": {
-      "B": "Es incorrecta porque una guía impresa puede ser válida si se integra a una estrategia didáctica con propósito y mediación.",
-      "C": "Es incorrecta porque un aula numerosa no impide el aprendizaje significativo, aunque exige mejores decisiones didácticas.",
-      "D": "Es incorrecta porque la alternativa no es eliminar la evaluación ni reemplazar la enseñanza por recreación."
-    }
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem evita penalizar instituciones con pocos recursos tecnológicos y no descalifica las guías impresas. Evalúa el uso pedagógico equilibrado de recursos y la necesidad de mediación docente."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre práctica pedagógica no homogeneizadora y diversidad."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Práctica pedagógica no homogeneizadora y diversidad/PPDC_B01_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

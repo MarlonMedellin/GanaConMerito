@@ -1,102 +1,45 @@
 {
   "id_item": "DIL_B07_I03",
-  "archivo_sugerido": "DIL_B07_I03_mecanismos_participacion_articulo_103.json",
-  "bloque": {
-    "codigo_bloque": "DIL_B07",
-    "nombre": "Mecanismos de participación ciudadana: plebiscito, consulta y límites",
-    "estado_en_lista": "Bloque 7 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 3 de 4"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Mecanismos constitucionales de participación",
+  "tema": "Mecanismos de participación ciudadana: plebiscito, consulta y límites",
+  "subtema": "Desconocimiento de los mecanismos constitucionales de participación democrática.",
+  "competencia": "Reconocimiento de mecanismos democráticos",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "BAJA_MEDIA",
+  "claim": "El evaluado reconoce que la participación democrática incluye mecanismos constitucionalmente definidos y reglamentados por la ley.",
+  "evidencia": "Identifica mecanismos de participación ciudadana frente a opciones distractoras escolares o administrativas.",
+  "tarea": "Reconocer una lista normativa de mecanismos de participación.",
+  "contexto": "En una actividad de formación ciudadana, el docente pide identificar mecanismos de participación democrática reconocidos por la Constitución Política de Colombia.",
+  "enunciado": "En una actividad de formación ciudadana, el docente pide identificar mecanismos de participación democrática reconocidos por la Constitución Política de Colombia.\n\n¿Cuál grupo corresponde a mecanismos constitucionales de participación ciudadana?",
+  "opciones": {
+    "A": "Observador del estudiante, boletín académico y plan de aula.",
+    "B": "Rectoría, coordinación y consejo académico únicamente.",
+    "C": "Manual de convivencia, horario escolar y lista de asistencia.",
+    "D": "Voto, plebiscito, referendo, consulta popular, cabildo abierto, iniciativa legislativa y revocatoria del mandato."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce algunos mecanismos de participación ciudadana previstos en la Constitución Política de Colombia.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con ciudadanía, ciencias sociales, educación democrática, derecho constitucional o participación escolar.",
-    "blueprint": {
-      "problematica_principal": "Desconocimiento de los mecanismos constitucionales de participación democrática.",
-      "fuente_autorizada": [
-        "Artículo 103 Constitución Política de Colombia",
-        "Ley 1757 de 2015",
-        "Ley 134 de 1994",
-        "Participación democrática"
-      ],
-      "componente_modulo": "Mecanismos constitucionales de participación",
-      "competencia": "Reconocimiento de mecanismos democráticos",
-      "afirmacion": "La Constitución reconoce mecanismos como voto, plebiscito, referendo, consulta popular, cabildo abierto, iniciativa legislativa y revocatoria del mandato.",
-      "evidencia_observable": "Selecciona un conjunto válido de mecanismos de participación ciudadana.",
-      "tipo_de_evidencia": "Reconocimiento normativo",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "D"
-    },
-    "claim": "El evaluado reconoce que la participación democrática incluye mecanismos constitucionalmente definidos y reglamentados por la ley.",
-    "evidencia_observable": "Identifica mecanismos de participación ciudadana frente a opciones distractoras escolares o administrativas.",
-    "tarea_cognitiva": "Reconocer una lista normativa de mecanismos de participación.",
-    "tipo_de_pregunta": "Pregunta normativa de reconocimiento",
-    "dificultad_esperada": "Baja-Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confundir órganos escolares con mecanismos constitucionales",
-        "revision": "Los distractores diferencian ámbitos."
-      },
-      {
-        "riesgo": "Exigir memorizar toda la lista completa",
-        "revision": "La opción correcta presenta un conjunto reconocido y claro."
-      },
-      {
-        "riesgo": "Mezclar participación escolar y ciudadana",
-        "revision": "El enunciado delimita participación ciudadana constitucional."
-      }
-    ]
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque corresponde a instrumentos escolares.",
+    "B": "Es incorrecta porque corresponde a órganos o cargos institucionales.",
+    "C": "Es incorrecta porque corresponde a organización escolar, no participación democrática constitucional.",
+    "D": "Clave correcta."
   },
-  "item": {
-    "enunciado": "En una actividad de formación ciudadana, el docente pide identificar mecanismos de participación democrática reconocidos por la Constitución Política de Colombia.\n\n¿Cuál grupo corresponde a mecanismos constitucionales de participación ciudadana?",
-    "opciones": {
-      "A": "Observador del estudiante, boletín académico y plan de aula.",
-      "B": "Rectoría, coordinación y consejo académico únicamente.",
-      "C": "Manual de convivencia, horario escolar y lista de asistencia.",
-      "D": "Voto, plebiscito, referendo, consulta popular, cabildo abierto, iniciativa legislativa y revocatoria del mandato."
-    },
-    "respuesta_correcta": "D"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Evalúa reconocimiento básico de mecanismos constitucionales sin sesgos ideológicos ni partidistas."
   },
-  "ficha_tecnica": {
-    "componente": "Mecanismos constitucionales de participación",
-    "competencia": "Reconocimiento de mecanismos democráticos",
-    "claim_evaluado": "El evaluado reconoce que la participación democrática incluye mecanismos constitucionalmente definidos y reglamentados por la ley.",
-    "evidencia": "Identifica mecanismos de participación ciudadana frente a opciones distractoras escolares o administrativas.",
-    "proceso_cognitivo": "Reconocimiento normativo",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Baja-Media",
-    "respuesta_correcta": "D",
-    "distractores": {
-      "A": "Enumera instrumentos escolares, no mecanismos constitucionales.",
-      "B": "Enumera instancias administrativas o académicas escolares.",
-      "C": "Enumera instrumentos de organización escolar."
-    },
-    "fuente_autorizada": [
-      "Artículo 103 Constitución Política de Colombia",
-      "Ley 1757 de 2015",
-      "Ley 134 de 1994",
-      "Participación democrática"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "opcion_A": "Es incorrecta porque corresponde a instrumentos escolares.",
-    "opcion_B": "Es incorrecta porque corresponde a órganos o cargos institucionales.",
-    "opcion_C": "Es incorrecta porque corresponde a organización escolar, no participación democrática constitucional.",
-    "distractores": {
-      "A": "Es incorrecta porque corresponde a instrumentos escolares.",
-      "B": "Es incorrecta porque corresponde a órganos o cargos institucionales.",
-      "C": "Es incorrecta porque corresponde a organización escolar, no participación democrática constitucional."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "Evalúa reconocimiento básico de mecanismos constitucionales sin sesgos ideológicos ni partidistas."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión normativa posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre mecanismos de participación ciudadana."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Mecanismos de participación ciudadana: plebiscito, consulta y límites/DIL_B07_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

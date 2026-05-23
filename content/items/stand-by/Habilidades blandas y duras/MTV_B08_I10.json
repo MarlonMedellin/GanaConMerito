@@ -1,40 +1,45 @@
 {
   "id_item": "MTV_B08_I10",
-  "archivo_sugerido": "MTV_B08_I10_hard_skill_dominio_disciplinar.json",
-  "proposito_de_uso": "Evaluar si el aspirante identifica el dominio disciplinar como habilidad dura dentro del desempeño profesional docente.",
-  "blueprint": {
-    "componente_modulo": "Dominio disciplinar",
-    "competencia": "Reconocimiento de habilidades duras en docencia",
-    "afirmacion": "El dominio disciplinar, el conocimiento técnico y la formación académica son manifestaciones de habilidades duras.",
-    "evidencia_observable": "Clasifica correctamente el conocimiento especializado como habilidad dura.",
-    "tipo_de_evidencia": "Reconocimiento conceptual aplicado",
-    "dificultad_esperada": "Baja-Media",
-    "clave": "D"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Habilidades blandas y duras",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Un docente de matemáticas demuestra dominio de álgebra, geometría, estadística, didáctica específica del área y capacidad para resolver problemas disciplinares complejos.",
+  "enunciado": "Un docente de matemáticas demuestra dominio de álgebra, geometría, estadística, didáctica específica del área y capacidad para resolver problemas disciplinares complejos.\n\n¿Qué tipo de habilidad se evidencia principalmente?",
+  "opciones": {
+    "A": "Habilidad blanda exclusivamente emocional.",
+    "B": "Competencia de trato interpersonal.",
+    "C": "Capacidad de escucha empática.",
+    "D": "Habilidad dura asociada al dominio disciplinar y técnico."
   },
-  "item": {
-    "enunciado": "Un docente de matemáticas demuestra dominio de álgebra, geometría, estadística, didáctica específica del área y capacidad para resolver problemas disciplinares complejos.\n\n¿Qué tipo de habilidad se evidencia principalmente?",
-    "opciones": {
-      "A": "Habilidad blanda exclusivamente emocional.",
-      "B": "Competencia de trato interpersonal.",
-      "C": "Capacidad de escucha empática.",
-      "D": "Habilidad dura asociada al dominio disciplinar y técnico."
-    },
-    "respuesta_correcta": "D"
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "Lo emocional no es el centro de la situación.",
+    "B": "El trato interpersonal no describe el dominio del área.",
+    "C": "La escucha empática pertenece a habilidades blandas, no al conocimiento disciplinar.",
+    "D": "Clave correcta."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "distractores": {
-      "A": "Lo emocional no es el centro de la situación.",
-      "B": "El trato interpersonal no describe el dominio del área.",
-      "C": "La escucha empática pertenece a habilidades blandas, no al conocimiento disciplinar."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem reconoce el valor profesional del conocimiento disciplinar."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem reconoce el valor profesional del conocimiento disciplinar."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem básico para contraste con habilidades blandas."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I10.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

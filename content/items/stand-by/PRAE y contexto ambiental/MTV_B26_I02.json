@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B26_I02",
-    "tema": "Transversalidad ambiental",
-    "competencia": "Integración curricular",
-    "dificultad": "Media-Alta",
-    "enunciado": "En una escuela, el PRAE se reduce a una unidad de Ciencias Naturales durante una semana del año. No participan otras áreas, familias ni comunidad.\n\n¿Por qué esta implementación es insuficiente?",
-    "opciones": {
-        "A": "Porque el PRAE debe ser transversal, interdisciplinario, participativo y articulado al currículo institucional.",
-        "B": "Porque la educación ambiental no debe tocar Ciencias Naturales.",
-        "C": "Porque los problemas ambientales no pertenecen a la escuela.",
-        "D": "Porque el PRAE debe limitarse a decorar salones."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "El PRAE no es una unidad aislada, sino una estrategia transversal que compromete currículo, institución y comunidad.",
-    "distractores": {
-        "B": "Ciencias Naturales puede aportar, pero no debe monopolizarlo.",
-        "C": "Los problemas ambientales del entorno son pertinentes para la escuela.",
-        "D": "La decoración no agota el proyecto ambiental."
-    }
+  "id_item": "MTV_B26_I02",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "PRAE y contexto ambiental",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "",
+  "enunciado": "En una escuela, el PRAE se reduce a una unidad de Ciencias Naturales durante una semana del año. No participan otras áreas, familias ni comunidad.\n\n¿Por qué esta implementación es insuficiente?",
+  "opciones": {
+    "A": "Porque el PRAE debe ser transversal, interdisciplinario, participativo y articulado al currículo institucional.",
+    "B": "Porque la educación ambiental no debe tocar Ciencias Naturales.",
+    "C": "Porque los problemas ambientales no pertenecen a la escuela.",
+    "D": "Porque el PRAE debe limitarse a decorar salones."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Distractor funcional.",
+    "C": "Distractor funcional.",
+    "D": "Distractor funcional."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/PRAE y contexto ambiental/MTV_B26_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
+  }
 }

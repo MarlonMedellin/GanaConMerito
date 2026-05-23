@@ -1,36 +1,45 @@
 {
   "id_item": "MTV_B18_I09",
-  "archivo_sugerido": "MTV_B18_I09_curriculo_extracurricular_jornada_unica.json",
-  "proposito_de_uso": "Evaluar si el aspirante comprende el currículo extracurricular como espacio formativo complementario.",
-  "blueprint": {
-    "componente_modulo": "Currículo extracurricular",
-    "competencia": "Comprensión de experiencias formativas complementarias",
-    "afirmacion": "El currículo extracurricular debe ampliar oportunidades formativas, intereses, talentos, convivencia y saber ser, sin saturar con repetición de áreas fundamentales.",
-    "evidencia_observable": "Identifica el sentido formativo y voluntario de experiencias complementarias.",
-    "tipo_de_evidencia": "Juicio curricular aplicado",
-    "dificultad_esperada": "Media-Alta",
-    "clave": "C"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Tipos de currículo",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Una institución quiere diseñar actividades de jornada única. En lugar de repetir más horas de las mismas asignaturas, busca clubes artísticos, deportivos, científicos, ambientales y ciudadanos según intereses estudiantiles.",
+  "enunciado": "Una institución quiere diseñar actividades de jornada única. En lugar de repetir más horas de las mismas asignaturas, busca clubes artísticos, deportivos, científicos, ambientales y ciudadanos según intereses estudiantiles.\n\n¿Qué sentido curricular se fortalece?",
+  "opciones": {
+    "A": "Saturación académica sin propósito.",
+    "B": "Castigo por bajo rendimiento.",
+    "C": "Currículo extracurricular o complementario orientado al desarrollo integral.",
+    "D": "Currículo nulo."
   },
-  "item": {
-    "enunciado": "Una institución quiere diseñar actividades de jornada única. En lugar de repetir más horas de las mismas asignaturas, busca clubes artísticos, deportivos, científicos, ambientales y ciudadanos según intereses estudiantiles.\n\n¿Qué sentido curricular se fortalece?",
-    "opciones": {
-      "A": "Saturación académica sin propósito.",
-      "B": "Castigo por bajo rendimiento.",
-      "C": "Currículo extracurricular o complementario orientado al desarrollo integral.",
-      "D": "Currículo nulo."
-    },
-    "respuesta_correcta": "C"
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "La propuesta evita saturación repetitiva.",
+    "B": "No se plantea como castigo.",
+    "C": "Clave correcta.",
+    "D": "No se omite el aprendizaje, se amplía."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "distractores": {
-      "A": "La propuesta evita saturación repetitiva.",
-      "B": "No se plantea como castigo.",
-      "D": "No se omite el aprendizaje, se amplía."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Revisar según política específica de jornada única."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Tipos de currículo/MTV_B18_I09.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

@@ -1,36 +1,45 @@
 {
   "id_item": "MTV_B11_I13",
-  "archivo_sugerido": "MTV_B11_I13_contexto_y_sentido_en_constructivismo.json",
-  "proposito_de_uso": "Evaluar si el aspirante comprende el papel del contexto en una enseñanza constructivista.",
-  "blueprint": {
-    "componente_modulo": "Contextualización pedagógica",
-    "competencia": "Relación entre conocimiento y contexto",
-    "afirmacion": "El constructivismo favorece la relación entre contenido, experiencia, contexto social y problemas significativos.",
-    "evidencia_observable": "Selecciona una práctica que conecta el contenido con la vida del estudiante.",
-    "tipo_de_evidencia": "Juicio didáctico aplicado",
-    "dificultad_esperada": "Media-Alta",
-    "clave": "C"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Tecnicismo vs constructivismo",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Una docente enseña porcentajes usando ejemplos del contexto del barrio: descuentos en tiendas, distribución del agua, estadísticas del grupo y consumo familiar. Luego pide a los estudiantes explicar los procedimientos usados.",
+  "enunciado": "Una docente enseña porcentajes usando ejemplos del contexto del barrio: descuentos en tiendas, distribución del agua, estadísticas del grupo y consumo familiar. Luego pide a los estudiantes explicar los procedimientos usados.\n\n¿Qué rasgo constructivista se evidencia?",
+  "opciones": {
+    "A": "Descontextualización absoluta.",
+    "B": "Memorización sin sentido.",
+    "C": "Construcción de sentido a partir de problemas y experiencias cercanas.",
+    "D": "Rechazo a toda explicación matemática."
   },
-  "item": {
-    "enunciado": "Una docente enseña porcentajes usando ejemplos del contexto del barrio: descuentos en tiendas, distribución del agua, estadísticas del grupo y consumo familiar. Luego pide a los estudiantes explicar los procedimientos usados.\n\n¿Qué rasgo constructivista se evidencia?",
-    "opciones": {
-      "A": "Descontextualización absoluta.",
-      "B": "Memorización sin sentido.",
-      "C": "Construcción de sentido a partir de problemas y experiencias cercanas.",
-      "D": "Rechazo a toda explicación matemática."
-    },
-    "respuesta_correcta": "C"
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "La práctica está contextualizada.",
+    "B": "No se limita a memorizar.",
+    "C": "Clave correcta.",
+    "D": "La explicación matemática se mantiene, pero con sentido."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "distractores": {
-      "A": "La práctica está contextualizada.",
-      "B": "No se limita a memorizar.",
-      "D": "La explicación matemática se mantiene, pero con sentido."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem útil para currículo contextualizado."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Tecnicismo vs constructivismo/MTV_B11_I13.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

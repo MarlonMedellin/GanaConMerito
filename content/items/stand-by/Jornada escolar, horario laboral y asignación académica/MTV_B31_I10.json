@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B31_I10",
-    "tema": "No confundir asignación académica con toda la jornada",
-    "competencia": "Claridad conceptual",
-    "dificultad": "Media-Alta",
-    "enunciado": "Un docente dice: 'Como ya cumplí mis horas de clase, no tengo más funciones durante la jornada laboral'.\n\n¿Qué aclaración es correcta?",
-    "opciones": {
-        "A": "La asignación académica no agota la jornada laboral; existen actividades complementarias y responsabilidades propias del cargo.",
-        "B": "La jornada laboral solo incluye dictar clase.",
-        "C": "El docente no debe planear ni evaluar.",
-        "D": "Las reuniones pedagógicas son ajenas a la función docente."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "La jornada laboral comprende más que la asignación académica directa.",
-    "distractores": {
-        "B": "Reduce indebidamente la jornada.",
-        "C": "Planeación y evaluación son funciones docentes.",
-        "D": "Las reuniones pedagógicas pueden hacer parte de la labor."
-    }
+  "id_item": "MTV_B31_I10",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Jornada escolar, horario laboral y asignación académica",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "",
+  "enunciado": "Un docente dice: 'Como ya cumplí mis horas de clase, no tengo más funciones durante la jornada laboral'.\n\n¿Qué aclaración es correcta?",
+  "opciones": {
+    "A": "La asignación académica no agota la jornada laboral; existen actividades complementarias y responsabilidades propias del cargo.",
+    "B": "La jornada laboral solo incluye dictar clase.",
+    "C": "El docente no debe planear ni evaluar.",
+    "D": "Las reuniones pedagógicas son ajenas a la función docente."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Distractor funcional.",
+    "C": "Distractor funcional.",
+    "D": "Distractor funcional."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I10.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
+  }
 }

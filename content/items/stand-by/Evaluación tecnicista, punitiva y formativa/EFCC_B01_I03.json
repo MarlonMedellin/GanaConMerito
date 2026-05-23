@@ -1,106 +1,45 @@
 {
   "id_item": "EFCC_B01_I03",
-  "archivo_sugerido": "EFCC_B01_I03_evaluacion_procesual_formativa.json",
-  "bloque": {
-    "codigo_bloque": "EFCC_B01",
-    "nombre": "Evaluación tecnicista, punitiva y formativa",
-    "estado_en_lista": "Bloque 1 de 5",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 3 de 4"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Evaluación Formativa y Criterios",
+  "tema": "Evaluación tecnicista, punitiva y formativa",
+  "subtema": "Confusión entre evaluación procesual formativa y evaluación centrada en calificaciones aisladas.",
+  "competencia": "Evaluación procesual y retroalimentación",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado comprende que la evaluación procesual formativa no busca sorprender o sancionar, sino obtener información permanente sobre el aprendizaje para retroalimentar, ajustar la enseñanza y promover avances.",
+  "evidencia": "Selecciona una explicación que relaciona evaluación continua con seguimiento, retroalimentación, toma de decisiones y mejora del aprendizaje.",
+  "tarea": "Diferenciar la evaluación procesual formativa de modelos punitivos o exclusivamente sumativos.",
+  "contexto": "A diferencia de un modelo centrado en quices sorpresa y calificaciones aisladas, una docente decide aplicar evaluación procesual, sistemática y continua durante el periodo. Recoge evidencias, observa avances, retroalimenta y ajusta sus estrategias de enseñanza.",
+  "enunciado": "A diferencia de un modelo centrado en quices sorpresa y calificaciones aisladas, una docente decide aplicar evaluación procesual, sistemática y continua durante el periodo. Recoge evidencias, observa avances, retroalimenta y ajusta sus estrategias de enseñanza.\n\n¿Cuál es el propósito real de esta evaluación procesual formativa?",
+  "opciones": {
+    "A": "Acompañar el aprendizaje, identificar avances y dificultades, retroalimentar oportunamente y ajustar la enseñanza.",
+    "B": "Aumentar la cantidad de notas para que el promedio final parezca más objetivo.",
+    "C": "Sancionar con mayor frecuencia a quienes no responden correctamente desde el primer intento.",
+    "D": "Evitar toda valoración del aprendizaje para no afectar emocionalmente a los estudiantes."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce el propósito real de la evaluación procesual, sistemática y continua en el aula escolar.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "Confusión entre evaluación procesual formativa y evaluación centrada en calificaciones aisladas.",
-      "fuente_autorizada": [
-        "Evaluación formativa",
-        "Sistema Institucional de Evaluación de los Estudiantes",
-        "Orientaciones pedagógicas institucionales",
-        "Didáctica general"
-      ],
-      "componente_modulo": "Evaluación Formativa y Criterios",
-      "competencia": "Evaluación procesual y retroalimentación",
-      "afirmacion": "La evaluación procesual permite recoger evidencias continuas para orientar la enseñanza, retroalimentar y apoyar el aprendizaje.",
-      "evidencia_observable": "Reconoce que evaluar sistemática y continuamente permite ajustar la enseñanza y acompañar el progreso del estudiante.",
-      "tipo_de_evidencia": "Comprensión conceptual aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que la evaluación procesual formativa no busca sorprender o sancionar, sino obtener información permanente sobre el aprendizaje para retroalimentar, ajustar la enseñanza y promover avances.",
-    "evidencia_observable": "Selecciona una explicación que relaciona evaluación continua con seguimiento, retroalimentación, toma de decisiones y mejora del aprendizaje.",
-    "tarea_cognitiva": "Diferenciar la evaluación procesual formativa de modelos punitivos o exclusivamente sumativos.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confusión entre evaluación continua y acumulación de notas",
-        "revision": "La clave diferencia seguimiento formativo de simple acumulación de calificaciones."
-      },
-      {
-        "riesgo": "Sesgo por modelo institucional de evaluación",
-        "revision": "El ítem no depende de un formato específico de SIEE, sino de principios generales de evaluación formativa."
-      },
-      {
-        "riesgo": "Ambigüedad entre proceso y resultado",
-        "revision": "La opción correcta integra seguimiento del proceso sin negar la importancia de evidencias de aprendizaje."
-      },
-      {
-        "riesgo": "Lenguaje técnico",
-        "revision": "Los términos sistemática, continua y retroalimentación se contextualizan en el aula."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque aumentar notas no garantiza evaluación formativa.",
+    "C": "Es incorrecta porque sancionar errores frecuentes reproduce una lógica punitiva.",
+    "D": "Es incorrecta porque la evaluación formativa sí valora el aprendizaje, pero con intención de mejora."
   },
-  "item": {
-    "enunciado": "A diferencia de un modelo centrado en quices sorpresa y calificaciones aisladas, una docente decide aplicar evaluación procesual, sistemática y continua durante el periodo. Recoge evidencias, observa avances, retroalimenta y ajusta sus estrategias de enseñanza.\n\n¿Cuál es el propósito real de esta evaluación procesual formativa?",
-    "opciones": {
-      "A": "Acompañar el aprendizaje, identificar avances y dificultades, retroalimentar oportunamente y ajustar la enseñanza.",
-      "B": "Aumentar la cantidad de notas para que el promedio final parezca más objetivo.",
-      "C": "Sancionar con mayor frecuencia a quienes no responden correctamente desde el primer intento.",
-      "D": "Evitar toda valoración del aprendizaje para no afectar emocionalmente a los estudiantes."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem no favorece a participantes familiarizados con un sistema institucional específico. Evalúa principios generales de evaluación formativa aplicables a diversos contextos escolares."
   },
-  "ficha_tecnica": {
-    "componente": "Evaluación Formativa y Criterios",
-    "competencia": "Evaluación procesual y retroalimentación",
-    "claim_evaluado": "El evaluado comprende que la evaluación procesual formativa no busca sorprender o sancionar, sino obtener información permanente sobre el aprendizaje para retroalimentar, ajustar la enseñanza y promover avances.",
-    "evidencia": "Selecciona una explicación que relaciona evaluación continua con seguimiento, retroalimentación, toma de decisiones y mejora del aprendizaje.",
-    "proceso_cognitivo": "Comprensión conceptual aplicada",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Confunde evaluación procesual con acumulación de calificaciones.",
-      "C": "Transforma la evaluación continua en sanción reiterada.",
-      "D": "Confunde evaluación formativa con ausencia de valoración."
-    },
-    "fuente_autorizada": [
-      "Evaluación formativa",
-      "Sistema Institucional de Evaluación de los Estudiantes",
-      "Orientaciones pedagógicas institucionales",
-      "Didáctica general"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque aumentar notas no garantiza evaluación formativa.",
-    "opcion_C": "Es incorrecta porque sancionar errores frecuentes reproduce una lógica punitiva.",
-    "opcion_D": "Es incorrecta porque la evaluación formativa sí valora el aprendizaje, pero con intención de mejora.",
-    "distractores": {
-      "B": "Es incorrecta porque aumentar notas no garantiza evaluación formativa.",
-      "C": "Es incorrecta porque sancionar errores frecuentes reproduce una lógica punitiva.",
-      "D": "Es incorrecta porque la evaluación formativa sí valora el aprendizaje, pero con intención de mejora."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no favorece a participantes familiarizados con un sistema institucional específico. Evalúa principios generales de evaluación formativa aplicables a diversos contextos escolares."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre evaluación tecnicista, punitiva y formativa."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Evaluación tecnicista, punitiva y formativa/EFCC_B01_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }
