@@ -10,7 +10,7 @@ last_reviewed: 2026-05-10
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-05-10 — Sprint 47 (Mantenimiento menor y saneamiento final).
+Ultima actualizacion: 2026-05-23 — Sprint 47 (Mantenimiento menor y saneamiento final).
 
 ---
 
@@ -23,7 +23,7 @@ Sprint 47 — Mantenimiento menor y saneamiento final.
 Runtime publico verificado en `https://cnsc.profemarlon.com` sobre `716ec62`.
 
 ## Last Verified Commit
-`716ec62`
+`61e7d06`
 
 ## Current Sprint Status
 Sprint 47 queda **CERRADO EN REPO (CIERRE DOCUMENTAL Y DE TRAZABILIDAD)**; runtime no revalidado en esta corrida.
@@ -85,6 +85,12 @@ Sprint 47 queda **CERRADO EN REPO (CIERRE DOCUMENTAL Y DE TRAZABILIDAD)**; runti
 - Se alinea el estado ejecutivo post-Sprint 46 entre `status.md`, `sprint-log.md`, `change-log.md` y `backlog.md`.
 - Se corrigen referencias residuales del sprint anterior para que el siguiente frente no compita con la secuencia real ya decidida.
 - Se deja Sprint 47 como bloque corto de cierre, sin abrir cambios funcionales, sin claims de runtime nuevos y sin reabrir hardening grande.
+
+### Cierre de Gobernanza (Claim 6)
+- **Estado:** CERRADO (2026-05-23)
+- **Política de Datos:** Se establece como política final inmutable que el Markdown (`content/items/*.md`) es la única fuente canónica de verdad. El JSON derivado en `content/exports/json/` se define como un artefacto secundario de consumo, excluido explícitamente del control de versiones (`.gitignore`).
+- **Implementación y Trazabilidad:** Automatización del flujo MD→JSON con verificación de consistencia mediante SHA-256 (`npm run content:export:json:check`).
+- **Evidencia Técnica:** Verificado y consolidado en commit `61e7d06`.
 
 ### Evidencia y limites
 - Evidencia positiva: saneamiento de trazabilidad y consistencia canonica en repo.
