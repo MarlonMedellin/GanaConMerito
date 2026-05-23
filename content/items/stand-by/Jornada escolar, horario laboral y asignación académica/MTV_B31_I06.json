@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B31_I06",
-    "tema": "Actividades curriculares complementarias",
-    "competencia": "Reconocimiento de funciones docentes",
-    "dificultad": "Media-Alta",
-    "enunciado": "Un docente prepara clases, evalúa trabajos, atiende a familias, participa en reuniones pedagógicas y desarrolla proyectos institucionales. Aunque no está todo el tiempo frente a grupo, sigue cumpliendo funciones docentes.\n\n¿Cómo se clasifican estas acciones?",
-    "opciones": {
-        "A": "Actividades curriculares complementarias o funciones propias del cargo.",
-        "B": "Tiempo ajeno al trabajo docente.",
-        "C": "Actividad comercial privada.",
-        "D": "Descanso obligatorio estudiantil."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "Estas acciones hacen parte de las funciones docentes más allá de la clase directa.",
-    "distractores": {
-        "B": "Sí pertenecen al trabajo docente.",
-        "C": "No son actividad comercial privada.",
-        "D": "No se refiere al descanso estudiantil."
-    }
+  "id_item": "MTV_B31_I06",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Jornada escolar, horario laboral y asignación académica",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "",
+  "enunciado": "Un docente prepara clases, evalúa trabajos, atiende a familias, participa en reuniones pedagógicas y desarrolla proyectos institucionales. Aunque no está todo el tiempo frente a grupo, sigue cumpliendo funciones docentes.\n\n¿Cómo se clasifican estas acciones?",
+  "opciones": {
+    "A": "Actividades curriculares complementarias o funciones propias del cargo.",
+    "B": "Tiempo ajeno al trabajo docente.",
+    "C": "Actividad comercial privada.",
+    "D": "Descanso obligatorio estudiantil."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Distractor funcional.",
+    "C": "Distractor funcional.",
+    "D": "Distractor funcional."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I06.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
+  }
 }

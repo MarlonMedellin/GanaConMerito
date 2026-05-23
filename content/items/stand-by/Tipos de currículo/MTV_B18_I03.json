@@ -1,36 +1,45 @@
 {
   "id_item": "MTV_B18_I03",
-  "archivo_sugerido": "MTV_B18_I03_curriculo_operacional_aula.json",
-  "proposito_de_uso": "Evaluar si el aspirante identifica el currículo operacional como el que se ejecuta realmente en el aula.",
-  "blueprint": {
-    "componente_modulo": "Currículo operacional",
-    "competencia": "Diferenciación entre currículo escrito y currículo vivido",
-    "afirmacion": "El currículo operacional es el que el docente adapta, ejecuta y materializa diariamente en el aula.",
-    "evidencia_observable": "Reconoce la diferencia entre lo planeado formalmente y lo que realmente se enseña y vive.",
-    "tipo_de_evidencia": "Comprensión conceptual aplicada",
-    "dificultad_esperada": "Media",
-    "clave": "D"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Tipos de currículo",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Aunque el plan de área está escrito de una manera, el maestro adapta actividades, tiempos, ejemplos y estrategias según lo que ocurre diariamente en el salón de clases.",
+  "enunciado": "Aunque el plan de área está escrito de una manera, el maestro adapta actividades, tiempos, ejemplos y estrategias según lo que ocurre diariamente en el salón de clases.\n\n¿Cómo se denomina el currículo que el maestro materializa realmente en su práctica cotidiana?",
+  "opciones": {
+    "A": "Currículo nulo.",
+    "B": "Currículo archivado.",
+    "C": "Currículo inexistente.",
+    "D": "Currículo operacional."
   },
-  "item": {
-    "enunciado": "Aunque el plan de área está escrito de una manera, el maestro adapta actividades, tiempos, ejemplos y estrategias según lo que ocurre diariamente en el salón de clases.\n\n¿Cómo se denomina el currículo que el maestro materializa realmente en su práctica cotidiana?",
-    "opciones": {
-      "A": "Currículo nulo.",
-      "B": "Currículo archivado.",
-      "C": "Currículo inexistente.",
-      "D": "Currículo operacional."
-    },
-    "respuesta_correcta": "D"
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "El currículo nulo se refiere a lo omitido.",
+    "B": "No es una categoría conceptual central.",
+    "C": "Sí existe una práctica curricular real.",
+    "D": "Clave correcta."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "distractores": {
-      "A": "El currículo nulo se refiere a lo omitido.",
-      "B": "No es una categoría conceptual central.",
-      "C": "Sí existe una práctica curricular real."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem base para currículo vivido."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Tipos de currículo/MTV_B18_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

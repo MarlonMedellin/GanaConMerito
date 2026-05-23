@@ -1,101 +1,45 @@
 {
   "id_item": "NFL_B01_I04",
-  "archivo_sugerido": "NFL_B01_I04_pei_acciones_pedagogicas_formacion_integral.json",
-  "bloque": {
-    "codigo_bloque": "NFL_B01",
-    "nombre": "Formación integral, fines de la educación y desarrollo de la personalidad",
-    "estado_en_lista": "Bloque 1 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 4 de 5"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "PEI y formación integral",
+  "tema": "Formación integral, fines de la educación y desarrollo de la personalidad",
+  "subtema": "PEI formalista que declara valores, pero no contiene acciones pedagógicas concretas para desarrollarlos.",
+  "competencia": "Planeación institucional de acciones formativas",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA_ALTA",
+  "claim": "El evaluado comprende que el PEI es un instrumento de acción pedagógica y no solo un documento declarativo.",
+  "evidencia": "Selecciona una respuesta que exige acciones, responsables, estrategias y seguimiento para la formación integral.",
+  "tarea": "Evaluar la coherencia entre PEI declarativo y PEI operativo.",
+  "contexto": "Una institución afirma en su PEI que forma estudiantes autónomos, responsables y solidarios, pero no tiene proyectos, estrategias de aula, criterios de seguimiento ni acciones pedagógicas concretas para desarrollar esas capacidades.",
+  "enunciado": "Una institución afirma en su PEI que forma estudiantes autónomos, responsables y solidarios, pero no tiene proyectos, estrategias de aula, criterios de seguimiento ni acciones pedagógicas concretas para desarrollar esas capacidades.\n\n¿Qué ajuste institucional es más coherente con la Ley 115?",
+  "opciones": {
+    "A": "Mantener el PEI como declaración general, porque los valores no requieren acciones pedagógicas.",
+    "B": "Eliminar del PEI toda referencia a formación integral.",
+    "C": "Diseñar e incorporar acciones pedagógicas concretas, responsables, estrategias de aula y seguimiento para desarrollar esas capacidades en la vida escolar.",
+    "D": "Reducir la formación integral a una charla anual sin relación con el currículo."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende que la formación integral debe planearse institucionalmente mediante acciones pedagógicas incorporadas al PEI.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con gestión escolar, currículo, docencia, orientación o coordinación académica.",
-    "blueprint": {
-      "problematica_principal": "PEI formalista que declara valores, pero no contiene acciones pedagógicas concretas para desarrollarlos.",
-      "fuente_autorizada": [
-        "Ley 115 de 1994",
-        "Artículo 92 Ley 115",
-        "Artículo 73 Ley 115",
-        "Proyecto Educativo Institucional"
-      ],
-      "componente_modulo": "PEI y formación integral",
-      "competencia": "Planeación institucional de acciones formativas",
-      "afirmacion": "El PEI debe traducir los fines formativos en acciones pedagógicas concretas, evaluables y articuladas al currículo.",
-      "evidencia_observable": "Reconoce que no basta declarar valores; se requieren estrategias pedagógicas, seguimiento y participación de la comunidad educativa.",
-      "tipo_de_evidencia": "Juicio de gestión pedagógica",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende que el PEI es un instrumento de acción pedagógica y no solo un documento declarativo.",
-    "evidencia_observable": "Selecciona una respuesta que exige acciones, responsables, estrategias y seguimiento para la formación integral.",
-    "tarea_cognitiva": "Evaluar la coherencia entre PEI declarativo y PEI operativo.",
-    "tipo_de_pregunta": "Caso situacional de gestión institucional",
-    "dificultad_esperada": "Media-Alta",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Reducir el PEI a un documento archivado",
-        "revision": "La clave exige acciones pedagógicas reales."
-      },
-      {
-        "riesgo": "Convertir formación integral en discurso vacío",
-        "revision": "El ítem pide seguimiento y articulación."
-      },
-      {
-        "riesgo": "Desconocer participación de la comunidad educativa",
-        "revision": "La respuesta correcta menciona articulación institucional."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque declarar valores sin acciones no garantiza formación.",
+    "B": "Es incorrecta porque la formación integral es central en la Ley 115.",
+    "C": "Clave correcta.",
+    "D": "Es incorrecta porque una charla aislada no constituye política pedagógica institucional."
   },
-  "item": {
-    "enunciado": "Una institución afirma en su PEI que forma estudiantes autónomos, responsables y solidarios, pero no tiene proyectos, estrategias de aula, criterios de seguimiento ni acciones pedagógicas concretas para desarrollar esas capacidades.\n\n¿Qué ajuste institucional es más coherente con la Ley 115?",
-    "opciones": {
-      "A": "Mantener el PEI como declaración general, porque los valores no requieren acciones pedagógicas.",
-      "B": "Eliminar del PEI toda referencia a formación integral.",
-      "C": "Diseñar e incorporar acciones pedagógicas concretas, responsables, estrategias de aula y seguimiento para desarrollar esas capacidades en la vida escolar.",
-      "D": "Reducir la formación integral a una charla anual sin relación con el currículo."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem exige coherencia institucional sin imponer un único modelo de proyecto pedagógico."
   },
-  "ficha_tecnica": {
-    "componente": "PEI y formación integral",
-    "competencia": "Planeación institucional de acciones formativas",
-    "claim_evaluado": "El evaluado comprende que el PEI es un instrumento de acción pedagógica y no solo un documento declarativo.",
-    "evidencia": "Selecciona una respuesta que exige acciones, responsables, estrategias y seguimiento para la formación integral.",
-    "proceso_cognitivo": "Juicio de gestión pedagógica",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media-Alta",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Convierte el PEI en un documento declarativo sin acción.",
-      "B": "Elimina un componente central de la educación.",
-      "D": "Reduce la formación integral a una actividad aislada."
-    },
-    "fuente_autorizada": [
-      "Ley 115 de 1994",
-      "Artículo 92 Ley 115",
-      "Artículo 73 Ley 115"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque declarar valores sin acciones no garantiza formación.",
-    "opcion_B": "Es incorrecta porque la formación integral es central en la Ley 115.",
-    "opcion_D": "Es incorrecta porque una charla aislada no constituye política pedagógica institucional.",
-    "distractores": {
-      "A": "Es incorrecta porque declarar valores sin acciones no garantiza formación.",
-      "B": "Es incorrecta porque la formación integral es central en la Ley 115.",
-      "D": "Es incorrecta porque una charla aislada no constituye política pedagógica institucional."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem exige coherencia institucional sin imponer un único modelo de proyecto pedagógico."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión institucional posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 5 preguntas sobre formación integral, fines de la educación y desarrollo de la personalidad."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Formación integral, fines de la educación y desarrollo de la personalidad/NFL_B01_I04.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

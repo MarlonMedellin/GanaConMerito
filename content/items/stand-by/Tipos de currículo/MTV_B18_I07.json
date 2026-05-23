@@ -1,36 +1,45 @@
 {
   "id_item": "MTV_B18_I07",
-  "archivo_sugerido": "MTV_B18_I07_curriculo_adaptado_barreras_aprendizaje.json",
-  "proposito_de_uso": "Evaluar si el aspirante identifica el currículo adaptado como respuesta a barreras, necesidades y contextos.",
-  "blueprint": {
-    "componente_modulo": "Currículo adaptado",
-    "competencia": "Flexibilización curricular",
-    "afirmacion": "El currículo adaptado ajusta estrategias, recursos, tiempos, apoyos o formas de evaluación para responder a necesidades de aprendizaje sin excluir al estudiante.",
-    "evidencia_observable": "Selecciona una acción de adaptación pertinente y no segregadora.",
-    "tipo_de_evidencia": "Juicio pedagógico inclusivo",
-    "dificultad_esperada": "Alta",
-    "clave": "D"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Tipos de currículo",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Un estudiante presenta barreras para acceder al contenido escrito. El docente mantiene el mismo propósito de aprendizaje, pero ajusta recursos visuales, tiempos, apoyos y forma de evidenciar comprensión.",
+  "enunciado": "Un estudiante presenta barreras para acceder al contenido escrito. El docente mantiene el mismo propósito de aprendizaje, pero ajusta recursos visuales, tiempos, apoyos y forma de evidenciar comprensión.\n\n¿Qué tipo de acción curricular realiza?",
+  "opciones": {
+    "A": "Eliminación total del currículo.",
+    "B": "Castigo académico.",
+    "C": "Currículo nulo.",
+    "D": "Adaptación o flexibilización curricular."
   },
-  "item": {
-    "enunciado": "Un estudiante presenta barreras para acceder al contenido escrito. El docente mantiene el mismo propósito de aprendizaje, pero ajusta recursos visuales, tiempos, apoyos y forma de evidenciar comprensión.\n\n¿Qué tipo de acción curricular realiza?",
-    "opciones": {
-      "A": "Eliminación total del currículo.",
-      "B": "Castigo académico.",
-      "C": "Currículo nulo.",
-      "D": "Adaptación o flexibilización curricular."
-    },
-    "respuesta_correcta": "D"
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "No elimina el aprendizaje, lo hace accesible.",
+    "B": "No hay sanción, sino apoyo.",
+    "C": "No se está omitiendo el aprendizaje, se adapta.",
+    "D": "Clave correcta."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "distractores": {
-      "A": "No elimina el aprendizaje, lo hace accesible.",
-      "B": "No hay sanción, sino apoyo.",
-      "C": "No se está omitiendo el aprendizaje, se adapta."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem enlazable con inclusión, DUA y PIAR."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Tipos de currículo/MTV_B18_I07.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

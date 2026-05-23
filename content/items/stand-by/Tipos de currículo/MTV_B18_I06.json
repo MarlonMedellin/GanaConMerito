@@ -1,36 +1,45 @@
 {
   "id_item": "MTV_B18_I06",
-  "archivo_sugerido": "MTV_B18_I06_curriculo_oculto_valores_normas.json",
-  "proposito_de_uso": "Evaluar si el aspirante comprende que el currículo oculto también transmite valores, normas y formas de relación.",
-  "blueprint": {
-    "componente_modulo": "Currículo oculto",
-    "competencia": "Análisis de aprendizajes implícitos",
-    "afirmacion": "La escuela transmite valores, jerarquías, normas, expectativas y formas de relación incluso cuando no las declara explícitamente.",
-    "evidencia_observable": "Identifica aprendizajes implícitos en rutinas, trato, organización y cultura escolar.",
-    "tipo_de_evidencia": "Juicio curricular aplicado",
-    "dificultad_esperada": "Media-Alta",
-    "clave": "B"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Tipos de currículo",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "En una escuela se habla de participación, pero en la práctica nunca se escucha a los estudiantes y todas las decisiones se imponen sin diálogo. Aunque no esté escrito, los estudiantes aprenden que su voz no importa.",
+  "enunciado": "En una escuela se habla de participación, pero en la práctica nunca se escucha a los estudiantes y todas las decisiones se imponen sin diálogo. Aunque no esté escrito, los estudiantes aprenden que su voz no importa.\n\n¿Qué tipo de currículo se evidencia?",
+  "opciones": {
+    "A": "Currículo oficial de participación democrática.",
+    "B": "Currículo oculto.",
+    "C": "Currículo nulo exclusivamente académico.",
+    "D": "Currículo de educación superior."
   },
-  "item": {
-    "enunciado": "En una escuela se habla de participación, pero en la práctica nunca se escucha a los estudiantes y todas las decisiones se imponen sin diálogo. Aunque no esté escrito, los estudiantes aprenden que su voz no importa.\n\n¿Qué tipo de currículo se evidencia?",
-    "opciones": {
-      "A": "Currículo oficial de participación democrática.",
-      "B": "Currículo oculto.",
-      "C": "Currículo nulo exclusivamente académico.",
-      "D": "Currículo de educación superior."
-    },
-    "respuesta_correcta": "B"
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "Lo descrito contradice una participación democrática real.",
+    "B": "Clave correcta.",
+    "C": "No se trata solo de un contenido omitido.",
+    "D": "No corresponde a educación superior."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "distractores": {
-      "A": "Lo descrito contradice una participación democrática real.",
-      "C": "No se trata solo de un contenido omitido.",
-      "D": "No corresponde a educación superior."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem potente para cultura escolar y currículo oculto."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Tipos de currículo/MTV_B18_I06.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

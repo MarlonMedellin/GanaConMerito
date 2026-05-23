@@ -1,40 +1,45 @@
 {
   "id_item": "MTV_B08_I03",
-  "archivo_sugerido": "MTV_B08_I03_saber_saber_hacer_saber_ser.json",
-  "proposito_de_uso": "Evaluar si el aspirante relaciona las habilidades duras y blandas con los componentes Saber, Saber Hacer y Saber Ser.",
-  "blueprint": {
-    "componente_modulo": "Componentes de la competencia",
-    "competencia": "Diferenciación entre Saber, Saber Hacer y Saber Ser",
-    "afirmacion": "El Saber se vincula con conocimientos; el Saber Hacer, con la aplicación práctica; y el Saber Ser, con actitudes, valores, comunicación, ética, convivencia y regulación emocional.",
-    "evidencia_observable": "Clasifica correctamente ejemplos de competencias en sus componentes.",
-    "tipo_de_evidencia": "Comprensión conceptual comparativa",
-    "dificultad_esperada": "Media-Alta",
-    "clave": "D"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Habilidades blandas y duras",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Un docente domina su disciplina, sabe diseñar actividades de aula y, además, se comunica con respeto, regula sus emociones y trabaja colaborativamente con sus compañeros.",
+  "enunciado": "Un docente domina su disciplina, sabe diseñar actividades de aula y, además, se comunica con respeto, regula sus emociones y trabaja colaborativamente con sus compañeros.\n\n¿Cuál relación entre componentes de competencia es más adecuada?",
+  "opciones": {
+    "A": "El dominio disciplinar, la aplicación pedagógica y la regulación emocional pertenecen todos exclusivamente al Saber.",
+    "B": "El Saber Ser corresponde únicamente a títulos académicos y publicaciones.",
+    "C": "El Saber Hacer se refiere solo a la personalidad del docente.",
+    "D": "El Saber se relaciona con el conocimiento; el Saber Hacer, con la aplicación práctica; y el Saber Ser, con actitudes, ética, convivencia y manejo emocional."
   },
-  "item": {
-    "enunciado": "Un docente domina su disciplina, sabe diseñar actividades de aula y, además, se comunica con respeto, regula sus emociones y trabaja colaborativamente con sus compañeros.\n\n¿Cuál relación entre componentes de competencia es más adecuada?",
-    "opciones": {
-      "A": "El dominio disciplinar, la aplicación pedagógica y la regulación emocional pertenecen todos exclusivamente al Saber.",
-      "B": "El Saber Ser corresponde únicamente a títulos académicos y publicaciones.",
-      "C": "El Saber Hacer se refiere solo a la personalidad del docente.",
-      "D": "El Saber se relaciona con el conocimiento; el Saber Hacer, con la aplicación práctica; y el Saber Ser, con actitudes, ética, convivencia y manejo emocional."
-    },
-    "respuesta_correcta": "D"
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "Mezcla componentes distintos dentro del Saber.",
+    "B": "Confunde Saber Ser con formación académica.",
+    "C": "Confunde Saber Hacer con rasgos actitudinales.",
+    "D": "Clave correcta."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "distractores": {
-      "A": "Mezcla componentes distintos dentro del Saber.",
-      "B": "Confunde Saber Ser con formación académica.",
-      "C": "Confunde Saber Hacer con rasgos actitudinales."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem permite evaluar comprensión integral de la competencia docente."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem permite evaluar comprensión integral de la competencia docente."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Muy útil para pruebas psicotécnicas y de competencias comportamentales."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

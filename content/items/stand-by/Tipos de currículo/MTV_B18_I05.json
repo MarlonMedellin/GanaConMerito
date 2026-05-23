@@ -1,36 +1,45 @@
 {
   "id_item": "MTV_B18_I05",
-  "archivo_sugerido": "MTV_B18_I05_curriculo_formal_vs_operacional.json",
-  "proposito_de_uso": "Evaluar si el aspirante diferencia currículo formal y currículo operacional.",
-  "blueprint": {
-    "componente_modulo": "Currículo formal y operacional",
-    "competencia": "Comparación de categorías curriculares",
-    "afirmacion": "El currículo formal está escrito en documentos; el operacional es el que se desarrolla realmente en la práctica de aula.",
-    "evidencia_observable": "Distingue documento curricular y ejecución cotidiana.",
-    "tipo_de_evidencia": "Comprensión comparativa",
-    "dificultad_esperada": "Media-Alta",
-    "clave": "A"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Tipos de currículo",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "El plan de estudios institucional afirma que se trabajará pensamiento crítico, pero en el aula solo se realizan dictados y memorización. Esta diferencia muestra una tensión entre currículo formal y currículo operacional.",
+  "enunciado": "El plan de estudios institucional afirma que se trabajará pensamiento crítico, pero en el aula solo se realizan dictados y memorización. Esta diferencia muestra una tensión entre currículo formal y currículo operacional.\n\n¿Cuál comparación es correcta?",
+  "opciones": {
+    "A": "El currículo formal es lo escrito; el operacional es lo que realmente se enseña y se vive en la práctica.",
+    "B": "El currículo operacional es siempre idéntico al documento escrito.",
+    "C": "El currículo formal solo existe en la mente del estudiante.",
+    "D": "El currículo operacional se refiere únicamente a normas nacionales."
   },
-  "item": {
-    "enunciado": "El plan de estudios institucional afirma que se trabajará pensamiento crítico, pero en el aula solo se realizan dictados y memorización. Esta diferencia muestra una tensión entre currículo formal y currículo operacional.\n\n¿Cuál comparación es correcta?",
-    "opciones": {
-      "A": "El currículo formal es lo escrito; el operacional es lo que realmente se enseña y se vive en la práctica.",
-      "B": "El currículo operacional es siempre idéntico al documento escrito.",
-      "C": "El currículo formal solo existe en la mente del estudiante.",
-      "D": "El currículo operacional se refiere únicamente a normas nacionales."
-    },
-    "respuesta_correcta": "A"
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "La práctica puede diferir del documento.",
+    "C": "El currículo formal está documentado.",
+    "D": "Las normas nacionales se asocian más al currículo oficial."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "distractores": {
-      "B": "La práctica puede diferir del documento.",
-      "C": "El currículo formal está documentado.",
-      "D": "Las normas nacionales se asocian más al currículo oficial."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem comparativo de alta utilidad."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Tipos de currículo/MTV_B18_I05.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

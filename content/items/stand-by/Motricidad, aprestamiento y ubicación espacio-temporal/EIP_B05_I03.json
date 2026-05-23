@@ -1,40 +1,45 @@
 {
   "id_item": "EIP_B05_I03",
-  "archivo_sugerido": "EIP_B05_I03_aprestamiento_no_escolarizacion_prematura.json",
-  "proposito_de_uso": "Evaluar si el aspirante diferencia aprestamiento de escolarización prematura en preescolar.",
-  "blueprint": {
-    "componente_modulo": "Aprestamiento",
-    "competencia": "Diferenciación entre preparación gradual y exigencia académica rígida",
-    "afirmacion": "El aprestamiento prepara progresivamente al niño para la lectoescritura, el pensamiento matemático y la vida escolar sin imponer prácticas rígidas de primaria.",
-    "evidencia_observable": "Distingue experiencias de coordinación, lenguaje, trazos, clasificación y juego de tareas mecánicas extensas.",
-    "tipo_de_evidencia": "Juicio pedagógico comparativo",
-    "dificultad_esperada": "Media-Alta",
-    "clave": "A"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Motricidad, aprestamiento y ubicación espacio-temporal",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Una institución cree que el aprestamiento consiste en poner a los niños de transición a llenar planas durante toda la jornada para que lleguen 'adelantados' a primero. Otra docente propone experiencias de juego, lenguaje, trazos libres, coordinación, clasificación, escucha y exploración.",
+  "enunciado": "Una institución cree que el aprestamiento consiste en poner a los niños de transición a llenar planas durante toda la jornada para que lleguen 'adelantados' a primero. Otra docente propone experiencias de juego, lenguaje, trazos libres, coordinación, clasificación, escucha y exploración.\n\n¿Cuál interpretación es más adecuada?",
+  "opciones": {
+    "A": "El aprestamiento es una preparación gradual e integral para aprendizajes posteriores, no una imposición prematura de tareas mecánicas extensas.",
+    "B": "El aprestamiento exige eliminar el juego y la exploración.",
+    "C": "El aprestamiento solo se logra con exámenes escritos semanales.",
+    "D": "El aprestamiento no tiene ninguna relación con la transición a la básica primaria."
   },
-  "item": {
-    "enunciado": "Una institución cree que el aprestamiento consiste en poner a los niños de transición a llenar planas durante toda la jornada para que lleguen 'adelantados' a primero. Otra docente propone experiencias de juego, lenguaje, trazos libres, coordinación, clasificación, escucha y exploración.\n\n¿Cuál interpretación es más adecuada?",
-    "opciones": {
-      "A": "El aprestamiento es una preparación gradual e integral para aprendizajes posteriores, no una imposición prematura de tareas mecánicas extensas.",
-      "B": "El aprestamiento exige eliminar el juego y la exploración.",
-      "C": "El aprestamiento solo se logra con exámenes escritos semanales.",
-      "D": "El aprestamiento no tiene ninguna relación con la transición a la básica primaria."
-    },
-    "respuesta_correcta": "A"
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Desconoce el valor pedagógico del juego.",
+    "C": "Reduce el proceso a evaluación escrita.",
+    "D": "Niega su función de preparación armónica para aprendizajes posteriores."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "distractores": {
-      "B": "Desconoce el valor pedagógico del juego.",
-      "C": "Reduce el proceso a evaluación escrita.",
-      "D": "Niega su función de preparación armónica para aprendizajes posteriores."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem protege los ritmos de desarrollo y evita prácticas mecanicistas excesivas."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem protege los ritmos de desarrollo y evita prácticas mecanicistas excesivas."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem apto para banco con revisión de enfoque de transición armónica."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Motricidad, aprestamiento y ubicación espacio-temporal/EIP_B05_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

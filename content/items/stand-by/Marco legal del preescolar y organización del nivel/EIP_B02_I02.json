@@ -1,101 +1,45 @@
 {
   "id_item": "EIP_B02_I02",
-  "archivo_sugerido": "EIP_B02_I02_grados_preescolar_prejardin_jardin_transicion.json",
-  "bloque": {
-    "codigo_bloque": "EIP_B02",
-    "nombre": "Marco legal del preescolar y organización del nivel",
-    "estado_en_lista": "Bloque 2 de 7",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 2 de 5"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Organización del nivel preescolar",
+  "tema": "Marco legal del preescolar y organización del nivel",
+  "subtema": "Confusión sobre los grados del nivel preescolar y el grado obligatorio dentro del sistema educativo formal.",
+  "competencia": "Identificación de grados del preescolar",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "BAJA_MEDIA",
+  "claim": "El evaluado comprende cómo se organiza el nivel preescolar dentro del sistema educativo.",
+  "evidencia": "Selecciona la estructura correcta del nivel preescolar.",
+  "tarea": "Clasificar los grados de preescolar según la organización normativa.",
+  "contexto": "Una institución educativa organiza su oferta de preescolar y necesita diferenciar los grados del nivel antes de la educación básica primaria.",
+  "enunciado": "Una institución educativa organiza su oferta de preescolar y necesita diferenciar los grados del nivel antes de la educación básica primaria.\n\nSegún el marco normativo del preescolar, ¿cuáles son los grados que integran este nivel y cuál es obligatorio?",
+  "opciones": {
+    "A": "Primero, segundo y tercero; todos pertenecen al preescolar.",
+    "B": "Sexto, séptimo y octavo; transición es educación media.",
+    "C": "Prejardín, jardín y transición; transición es el grado obligatorio.",
+    "D": "Décimo y undécimo; transición es un proyecto transversal."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce la organización del nivel preescolar en grados y la obligatoriedad del grado de transición.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con educación preescolar, educación inicial, coordinación, rectoría o gestión curricular.",
-    "blueprint": {
-      "problematica_principal": "Confusión sobre los grados del nivel preescolar y el grado obligatorio dentro del sistema educativo formal.",
-      "fuente_autorizada": [
-        "Decreto 2247 de 1997",
-        "Ley 115 de 1994",
-        "Educación preescolar",
-        "Transición"
-      ],
-      "componente_modulo": "Organización del nivel preescolar",
-      "competencia": "Identificación de grados del preescolar",
-      "afirmacion": "El nivel preescolar comprende los grados de prejardín, jardín y transición; transición corresponde al grado obligatorio.",
-      "evidencia_observable": "Reconoce la estructura del nivel y diferencia preescolar de básica primaria.",
-      "tipo_de_evidencia": "Reconocimiento normativo aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende cómo se organiza el nivel preescolar dentro del sistema educativo.",
-    "evidencia_observable": "Selecciona la estructura correcta del nivel preescolar.",
-    "tarea_cognitiva": "Clasificar los grados de preescolar según la organización normativa.",
-    "tipo_de_pregunta": "Pregunta normativa de reconocimiento",
-    "dificultad_esperada": "Baja-Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confundir transición con primero de primaria",
-        "revision": "La clave ubica transición dentro de preescolar."
-      },
-      {
-        "riesgo": "Desconocer la obligatoriedad del grado transición",
-        "revision": "El ítem lo señala explícitamente."
-      },
-      {
-        "riesgo": "Usar denominaciones locales no normativas",
-        "revision": "La pregunta usa los grados reconocidos en el decreto."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque primero, segundo y tercero pertenecen a básica primaria.",
+    "B": "Es incorrecta porque sexto a octavo pertenecen a básica secundaria.",
+    "C": "Clave correcta.",
+    "D": "Es incorrecta porque décimo y undécimo pertenecen a educación media."
   },
-  "item": {
-    "enunciado": "Una institución educativa organiza su oferta de preescolar y necesita diferenciar los grados del nivel antes de la educación básica primaria.\n\nSegún el marco normativo del preescolar, ¿cuáles son los grados que integran este nivel y cuál es obligatorio?",
-    "opciones": {
-      "A": "Primero, segundo y tercero; todos pertenecen al preescolar.",
-      "B": "Sexto, séptimo y octavo; transición es educación media.",
-      "C": "Prejardín, jardín y transición; transición es el grado obligatorio.",
-      "D": "Décimo y undécimo; transición es un proyecto transversal."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Evalúa una estructura normativa básica sin depender de nombres comerciales de jardines o instituciones."
   },
-  "ficha_tecnica": {
-    "componente": "Organización del nivel preescolar",
-    "competencia": "Identificación de grados del preescolar",
-    "claim_evaluado": "El evaluado comprende cómo se organiza el nivel preescolar dentro del sistema educativo.",
-    "evidencia": "Selecciona la estructura correcta del nivel preescolar.",
-    "proceso_cognitivo": "Reconocimiento normativo aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Baja-Media",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Confunde educación básica primaria con preescolar.",
-      "B": "Ubica grados de básica secundaria en preescolar.",
-      "D": "Confunde educación media con preescolar."
-    },
-    "fuente_autorizada": [
-      "Decreto 2247 de 1997",
-      "Ley 115 de 1994",
-      "Educación preescolar"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque primero, segundo y tercero pertenecen a básica primaria.",
-    "opcion_B": "Es incorrecta porque sexto a octavo pertenecen a básica secundaria.",
-    "opcion_D": "Es incorrecta porque décimo y undécimo pertenecen a educación media.",
-    "distractores": {
-      "A": "Es incorrecta porque primero, segundo y tercero pertenecen a básica primaria.",
-      "B": "Es incorrecta porque sexto a octavo pertenecen a básica secundaria.",
-      "D": "Es incorrecta porque décimo y undécimo pertenecen a educación media."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "Evalúa una estructura normativa básica sin depender de nombres comerciales de jardines o instituciones."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión normativa posterior.",
-    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 5 preguntas sobre marco legal del preescolar y organización del nivel."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Marco legal del preescolar y organización del nivel/EIP_B02_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

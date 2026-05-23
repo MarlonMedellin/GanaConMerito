@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B31_I11",
-    "tema": "Organización institucional de horarios",
-    "competencia": "Gestión escolar",
-    "dificultad": "Media",
-    "enunciado": "La institución organiza horarios de clase, descansos, reuniones, atención a familias y actividades complementarias para garantizar el funcionamiento del servicio educativo.\n\n¿Qué finalidad tiene esta organización?",
-    "opciones": {
-        "A": "Asegurar la prestación ordenada del servicio educativo y el cumplimiento de funciones.",
-        "B": "Impedir toda planeación docente.",
-        "C": "Eliminar el currículo.",
-        "D": "Sustituir el PEI por horarios."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "La organización horaria permite coordinar tiempos de estudiantes, docentes y actividades institucionales.",
-    "distractores": {
-        "B": "La organización facilita la planeación.",
-        "C": "No elimina el currículo.",
-        "D": "El horario no sustituye el PEI."
-    }
+  "id_item": "MTV_B31_I11",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Jornada escolar, horario laboral y asignación académica",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "",
+  "enunciado": "La institución organiza horarios de clase, descansos, reuniones, atención a familias y actividades complementarias para garantizar el funcionamiento del servicio educativo.\n\n¿Qué finalidad tiene esta organización?",
+  "opciones": {
+    "A": "Asegurar la prestación ordenada del servicio educativo y el cumplimiento de funciones.",
+    "B": "Impedir toda planeación docente.",
+    "C": "Eliminar el currículo.",
+    "D": "Sustituir el PEI por horarios."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Distractor funcional.",
+    "C": "Distractor funcional.",
+    "D": "Distractor funcional."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I11.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
+  }
 }

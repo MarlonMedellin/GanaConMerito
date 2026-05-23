@@ -1,103 +1,45 @@
 {
   "id_item": "CB08_I03",
-  "bloque": {
-    "numero": 8,
-    "nombre": "Referentes PEI",
-    "estado_en_lista": "Bloque 8 de 15",
-    "decision_del_bloque": "Grupo de 3 preguntas",
-    "item_en_grupo": "Ítem 3 de 3"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión Directiva",
+  "tema": "Referentes PEI",
+  "subtema": "Fundamentos obligatorios del PEI",
+  "competencia": "Planeación institucional",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado comprende que el diagnóstico de contexto debe orientar prioridades, estrategias y metas del PEI.",
+  "evidencia": "Selecciona una decisión de planeación que alinea metas institucionales con hallazgos diagnósticos relevantes.",
+  "tarea": "Inferir la mejor decisión de planeación a partir de información diagnóstica.",
+  "contexto": "El diagnóstico institucional muestra ausentismo frecuente, baja participación familiar y dificultades en lectura en varios grados. Sin embargo, el plan de mejoramiento prioriza únicamente la remodelación de espacios administrativos.",
+  "enunciado": "El diagnóstico institucional muestra ausentismo frecuente, baja participación familiar y dificultades en lectura en varios grados. Sin embargo, el plan de mejoramiento prioriza únicamente la remodelación de espacios administrativos.\n\n¿Cuál ajuste sería más pertinente?",
+  "opciones": {
+    "A": "Eliminar el diagnóstico del PEI para evitar contradicciones con las prioridades ya definidas.",
+    "B": "Alinear las metas institucionales con los hallazgos del diagnóstico, incluyendo estrategias pedagógicas y de participación familiar.",
+    "C": "Mantener el plan tal como está, porque la infraestructura administrativa siempre tiene prioridad sobre lo pedagógico.",
+    "D": "Solicitar a los docentes que mejoren los resultados sin modificar estrategias institucionales."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce que el diagnóstico institucional debe orientar las prioridades, metas y estrategias del Proyecto Educativo Institucional, y no funcionar como un anexo decorativo o desconectado de la planeación.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "Fundamentos obligatorios del PEI",
-      "fuente_autorizada": [
-        "Ley 115 de 1994",
-        "Decreto 1860 de 1994",
-        "Orientaciones MEN sobre Proyecto Educativo Institucional"
-      ],
-      "componente_modulo": "Gestión Directiva",
-      "competencia": "Planeación institucional",
-      "afirmacion": "Todo PEI debe anclarse a referentes.",
-      "evidencia_observable": "Reconoce que el diagnóstico institucional orienta decisiones del PEI y no es un anexo decorativo.",
-      "tipo_de_evidencia": "Interpretación de situación institucional",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado comprende que el diagnóstico de contexto debe orientar prioridades, estrategias y metas del PEI.",
-    "evidencia_observable": "Selecciona una decisión de planeación que alinea metas institucionales con hallazgos diagnósticos relevantes.",
-    "tarea_cognitiva": "Inferir la mejor decisión de planeación a partir de información diagnóstica.",
-    "tipo_de_pregunta": "Caso situacional de juicio profesional",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Sesgo por experiencia en formulación de planes de mejoramiento",
-        "revision": "El ítem no exige conocer formatos específicos de planeación; evalúa la relación lógica entre diagnóstico y decisiones institucionales."
-      },
-      {
-        "riesgo": "Sesgo socioeconómico",
-        "revision": "El caso menciona ausentismo y baja participación familiar sin atribuir responsabilidad exclusiva a estudiantes o familias."
-      },
-      {
-        "riesgo": "Ambigüedad en la clave",
-        "revision": "La opción correcta es la única que alinea metas institucionales con los hallazgos del diagnóstico."
-      },
-      {
-        "riesgo": "Reducción de la gestión a infraestructura",
-        "revision": "Los distractores permiten diferenciar entre prioridades administrativas aisladas y planeación educativa fundamentada."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque eliminar el diagnóstico evita reconocer información relevante para la toma de decisiones institucionales.",
+    "B": "Clave correcta.",
+    "C": "Es incorrecta porque establece una prioridad rígida sobre infraestructura administrativa sin atender los hallazgos pedagógicos y comunitarios del diagnóstico.",
+    "D": "Es incorrecta porque traslada la responsabilidad exclusivamente a los docentes y desconoce que el problema requiere estrategias institucionales articuladas."
   },
-  "item": {
-    "enunciado": "El diagnóstico institucional muestra ausentismo frecuente, baja participación familiar y dificultades en lectura en varios grados. Sin embargo, el plan de mejoramiento prioriza únicamente la remodelación de espacios administrativos.\n\n¿Cuál ajuste sería más pertinente?",
-    "opciones": {
-      "A": "Eliminar el diagnóstico del PEI para evitar contradicciones con las prioridades ya definidas.",
-      "B": "Alinear las metas institucionales con los hallazgos del diagnóstico, incluyendo estrategias pedagógicas y de participación familiar.",
-      "C": "Mantener el plan tal como está, porque la infraestructura administrativa siempre tiene prioridad sobre lo pedagógico.",
-      "D": "Solicitar a los docentes que mejoren los resultados sin modificar estrategias institucionales."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El caso evita culpar a estudiantes, familias o docentes por los problemas identificados. La evaluación se centra en la capacidad profesional de usar información diagnóstica para orientar decisiones institucionales pertinentes y equilibradas."
   },
-  "ficha_tecnica": {
-    "componente": "Gestión Directiva",
-    "competencia": "Planeación institucional",
-    "claim_evaluado": "El evaluado comprende que el diagnóstico de contexto debe orientar prioridades, estrategias y metas del PEI.",
-    "evidencia": "Selecciona una decisión de planeación que alinea metas institucionales con hallazgos diagnósticos relevantes.",
-    "proceso_cognitivo": "Análisis e inferencia institucional",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Oculta información relevante en lugar de usarla para orientar la planeación.",
-      "C": "Desconoce la relación entre diagnóstico institucional y prioridades educativas.",
-      "D": "Individualiza un problema que requiere respuesta institucional y ajustes de planeación."
-    },
-    "fuente_autorizada": [
-      "Ley 115 de 1994",
-      "Decreto 1860 de 1994",
-      "Orientaciones MEN sobre PEI"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque eliminar el diagnóstico evita reconocer información relevante para la toma de decisiones institucionales.",
-    "opcion_C": "Es incorrecta porque establece una prioridad rígida sobre infraestructura administrativa sin atender los hallazgos pedagógicos y comunitarios del diagnóstico.",
-    "opcion_D": "Es incorrecta porque traslada la responsabilidad exclusivamente a los docentes y desconoce que el problema requiere estrategias institucionales articuladas.",
-    "distractores": {
-      "A": "Es incorrecta porque eliminar el diagnóstico evita reconocer información relevante para la toma de decisiones institucionales.",
-      "C": "Es incorrecta porque establece una prioridad rígida sobre infraestructura administrativa sin atender los hallazgos pedagógicos y comunitarios del diagnóstico.",
-      "D": "Es incorrecta porque traslada la responsabilidad exclusivamente a los docentes y desconoce que el problema requiere estrategias institucionales articuladas."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El caso evita culpar a estudiantes, familias o docentes por los problemas identificados. La evaluación se centra en la capacidad profesional de usar información diagnóstica para orientar decisiones institucionales pertinentes y equilibradas."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 3 preguntas sobre referentes del PEI."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Referentes PEI/CB08_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

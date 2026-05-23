@@ -1,102 +1,45 @@
 {
   "id_item": "CEOL_B09_I02",
-  "archivo_sugerido": "CEOL_B09_I02_dinamizacion_didactica_creatividad_critica.json",
-  "bloque": {
-    "codigo_bloque": "CEOL_B09",
-    "nombre": "Gestión de aula, lectura, creatividad y honestidad académica",
-    "estado_en_lista": "Bloque 9 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 2 de 4"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Dinamización Didáctica",
+  "tema": "Gestión de aula, lectura, creatividad y honestidad académica",
+  "subtema": "Uso de prácticas repetitivas que limitan creatividad y pensamiento crítico.",
+  "competencia": "Promoción de creatividad y pensamiento crítico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado comprende que creatividad y crítica no se desarrollan con repetición mecánica, sino mediante experiencias que exigen formular preguntas, crear alternativas, argumentar y revisar ideas.",
+  "evidencia": "Selecciona una estrategia didáctica que dinamiza el aula y promueve pensamiento creativo y crítico.",
+  "tarea": "Diferenciar prácticas repetitivas de acciones didácticas que desarrollan creatividad y crítica.",
+  "contexto": "Un docente quiere aumentar la capacidad creativa y crítica de sus estudiantes. Hasta ahora, la mayoría de actividades consiste en copiar definiciones y responder preguntas de única respuesta sin discusión.",
+  "enunciado": "Un docente quiere aumentar la capacidad creativa y crítica de sus estudiantes. Hasta ahora, la mayoría de actividades consiste en copiar definiciones y responder preguntas de única respuesta sin discusión.\n\n¿Qué acciones docentes permitirían dinamizar realmente el aula?",
+  "opciones": {
+    "A": "Proponer problemas abiertos, preguntas retadoras, análisis de casos, creación de productos, argumentación, revisión entre pares y retroalimentación.",
+    "B": "Aumentar la cantidad de copias para que los estudiantes memoricen más rápido.",
+    "C": "Evitar toda discusión para que nadie cuestione las respuestas del docente.",
+    "D": "Permitir cualquier actividad sin propósito, criterios ni evaluación."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce acciones docentes que aumentan la capacidad creativa y crítica en el aula.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, didáctica, coordinación académica o gestión pedagógica.",
-    "blueprint": {
-      "problematica_principal": "Uso de prácticas repetitivas que limitan creatividad y pensamiento crítico.",
-      "fuente_autorizada": [
-        "Metodologías activas",
-        "Pensamiento crítico",
-        "Creatividad en el aula",
-        "Evaluación formativa"
-      ],
-      "componente_modulo": "Dinamización Didáctica",
-      "competencia": "Promoción de creatividad y pensamiento crítico",
-      "afirmacion": "La creatividad y el pensamiento crítico se fortalecen mediante problemas abiertos, preguntas, producción, argumentación y retroalimentación.",
-      "evidencia_observable": "Selecciona acciones docentes que promueven exploración, debate, creación, revisión y transferencia.",
-      "tipo_de_evidencia": "Juicio didáctico aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que creatividad y crítica no se desarrollan con repetición mecánica, sino mediante experiencias que exigen formular preguntas, crear alternativas, argumentar y revisar ideas.",
-    "evidencia_observable": "Selecciona una estrategia didáctica que dinamiza el aula y promueve pensamiento creativo y crítico.",
-    "tarea_cognitiva": "Diferenciar prácticas repetitivas de acciones didácticas que desarrollan creatividad y crítica.",
-    "tipo_de_pregunta": "Pregunta situacional de juicio didáctico",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confundir creatividad con desorden",
-        "revision": "La clave conserva criterios, propósito y retroalimentación."
-      },
-      {
-        "riesgo": "Confundir crítica con oposición sin argumento",
-        "revision": "La opción correcta incluye argumentación y revisión."
-      },
-      {
-        "riesgo": "Sesgo por área disciplinar",
-        "revision": "Aplica a diferentes áreas del currículo."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque copiar más no desarrolla creatividad.",
+    "C": "Es incorrecta porque impide crítica argumentada.",
+    "D": "Es incorrecta porque la creatividad requiere propósito y criterios."
   },
-  "item": {
-    "enunciado": "Un docente quiere aumentar la capacidad creativa y crítica de sus estudiantes. Hasta ahora, la mayoría de actividades consiste en copiar definiciones y responder preguntas de única respuesta sin discusión.\n\n¿Qué acciones docentes permitirían dinamizar realmente el aula?",
-    "opciones": {
-      "A": "Proponer problemas abiertos, preguntas retadoras, análisis de casos, creación de productos, argumentación, revisión entre pares y retroalimentación.",
-      "B": "Aumentar la cantidad de copias para que los estudiantes memoricen más rápido.",
-      "C": "Evitar toda discusión para que nadie cuestione las respuestas del docente.",
-      "D": "Permitir cualquier actividad sin propósito, criterios ni evaluación."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem no exige recursos tecnológicos ni favorece un área específica; se centra en decisiones didácticas transferibles."
   },
-  "ficha_tecnica": {
-    "componente": "Dinamización Didáctica",
-    "competencia": "Promoción de creatividad y pensamiento crítico",
-    "claim_evaluado": "El evaluado comprende que creatividad y crítica no se desarrollan con repetición mecánica, sino mediante experiencias que exigen formular preguntas, crear alternativas, argumentar y revisar ideas.",
-    "evidencia": "Selecciona una estrategia didáctica que dinamiza el aula y promueve pensamiento creativo y crítico.",
-    "proceso_cognitivo": "Análisis y juicio didáctico",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Refuerza repetición mecánica.",
-      "C": "Bloquea argumentación y pensamiento crítico.",
-      "D": "Confunde creatividad con ausencia de criterios."
-    },
-    "fuente_autorizada": [
-      "Metodologías activas",
-      "Pensamiento crítico",
-      "Creatividad en el aula",
-      "Evaluación formativa"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque copiar más no desarrolla creatividad.",
-    "opcion_C": "Es incorrecta porque impide crítica argumentada.",
-    "opcion_D": "Es incorrecta porque la creatividad requiere propósito y criterios.",
-    "distractores": {
-      "B": "Es incorrecta porque copiar más no desarrolla creatividad.",
-      "C": "Es incorrecta porque impide crítica argumentada.",
-      "D": "Es incorrecta porque la creatividad requiere propósito y criterios."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no exige recursos tecnológicos ni favorece un área específica; se centra en decisiones didácticas transferibles."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre gestión de aula, lectura, creatividad y honestidad académica."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Gestión de aula, lectura, creatividad y honestidad académica/CEOL_B09_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

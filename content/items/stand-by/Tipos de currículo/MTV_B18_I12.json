@@ -1,36 +1,45 @@
 {
   "id_item": "MTV_B18_I12",
-  "archivo_sugerido": "MTV_B18_I12_curriculo_en_contexto.json",
-  "proposito_de_uso": "Evaluar si el aspirante comprende la relación entre currículo y contexto social, cultural y económico.",
-  "blueprint": {
-    "componente_modulo": "Currículo contextualizado",
-    "competencia": "Apropiación del contexto educativo",
-    "afirmacion": "El currículo debe dialogar con las condiciones sociales, económicas, culturales y territoriales de la comunidad educativa.",
-    "evidencia_observable": "Selecciona una práctica que adapta el currículo al contexto sin perder los objetivos formativos.",
-    "tipo_de_evidencia": "Juicio curricular situado",
-    "dificultad_esperada": "Alta",
-    "clave": "A"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Tipos de currículo",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Una escuela rural decide enseñar ciencias y matemáticas a partir de problemas del cultivo local, uso del agua, clima y economía familiar, sin abandonar los objetivos académicos oficiales.",
+  "enunciado": "Una escuela rural decide enseñar ciencias y matemáticas a partir de problemas del cultivo local, uso del agua, clima y economía familiar, sin abandonar los objetivos académicos oficiales.\n\n¿Qué principio curricular se evidencia?",
+  "opciones": {
+    "A": "Contextualización curricular.",
+    "B": "Desconexión total del currículo.",
+    "C": "Currículo nulo.",
+    "D": "Rechazo del conocimiento académico."
   },
-  "item": {
-    "enunciado": "Una escuela rural decide enseñar ciencias y matemáticas a partir de problemas del cultivo local, uso del agua, clima y economía familiar, sin abandonar los objetivos académicos oficiales.\n\n¿Qué principio curricular se evidencia?",
-    "opciones": {
-      "A": "Contextualización curricular.",
-      "B": "Desconexión total del currículo.",
-      "C": "Currículo nulo.",
-      "D": "Rechazo del conocimiento académico."
-    },
-    "respuesta_correcta": "A"
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "La práctica conecta currículo y contexto.",
+    "C": "No se omite el aprendizaje.",
+    "D": "No se rechaza el conocimiento académico; se contextualiza."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "distractores": {
-      "B": "La práctica conecta currículo y contexto.",
-      "C": "No se omite el aprendizaje.",
-      "D": "No se rechaza el conocimiento académico; se contextualiza."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem útil para contexto, currículo y práctica educativa."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Tipos de currículo/MTV_B18_I12.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

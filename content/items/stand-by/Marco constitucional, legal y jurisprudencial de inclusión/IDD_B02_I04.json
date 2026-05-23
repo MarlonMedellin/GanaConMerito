@@ -1,102 +1,45 @@
 {
   "id_item": "IDD_B02_I04",
-  "archivo_sugerido": "IDD_B02_I04_decreto_1421_educacion_inclusiva.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B02",
-    "nombre": "Marco constitucional, legal y jurisprudencial de inclusión",
-    "estado_en_lista": "Bloque 2 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 4 de 5"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Inclusión y Marco Legal",
+  "tema": "Marco constitucional, legal y jurisprudencial de inclusión",
+  "subtema": "Comprensión reducida de inclusión como ubicación física del estudiante en el aula regular.",
+  "competencia": "Comprensión de educación inclusiva",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado comprende que la inclusión educativa implica presencia, participación, aprendizaje, apoyos y ajustes en un ambiente común, no solo matrícula o permanencia física.",
+  "evidencia": "Identifica una acción institucional coherente con el concepto de educación inclusiva.",
+  "tarea": "Diferenciar inclusión efectiva de integración física superficial.",
+  "contexto": "Una escuela afirma que cumple la inclusión porque permite que un estudiante con discapacidad permanezca en el salón. Sin embargo, no ajusta materiales, no revisa barreras de participación y no ofrece apoyos para el aprendizaje.",
+  "enunciado": "Una escuela afirma que cumple la inclusión porque permite que un estudiante con discapacidad permanezca en el salón. Sin embargo, no ajusta materiales, no revisa barreras de participación y no ofrece apoyos para el aprendizaje.\n\n¿Cuál opción expresa mejor el sentido de educación inclusiva?",
+  "opciones": {
+    "A": "Tener al estudiante en el aula, aunque no participe en las actividades ni acceda al aprendizaje.",
+    "B": "Reconocer la diversidad, eliminar barreras, brindar apoyos y ajustes razonables, y garantizar participación y aprendizaje en un ambiente común.",
+    "C": "Crear actividades totalmente separadas para que el estudiante no interfiera con el grupo.",
+    "D": "Reducir los aprendizajes esperados sin valorar las posibilidades reales del estudiante."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce el sentido de la educación inclusiva en el marco del Decreto 1421.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión, orientación escolar o gestión institucional.",
-    "blueprint": {
-      "problematica_principal": "Comprensión reducida de inclusión como ubicación física del estudiante en el aula regular.",
-      "fuente_autorizada": [
-        "Decreto 1421 de 2017",
-        "Decreto 1075 de 2015",
-        "Ley 1618 de 2013",
-        "Convención sobre los Derechos de las Personas con Discapacidad"
-      ],
-      "componente_modulo": "Inclusión y Marco Legal",
-      "competencia": "Comprensión de educación inclusiva",
-      "afirmacion": "La educación inclusiva reconoce, valora y responde a la diversidad para promover desarrollo, aprendizaje y participación sin discriminación ni exclusión.",
-      "evidencia_observable": "Selecciona una definición de educación inclusiva centrada en participación, aprendizaje, apoyos y eliminación de barreras.",
-      "tipo_de_evidencia": "Comprensión normativa aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado comprende que la inclusión educativa implica presencia, participación, aprendizaje, apoyos y ajustes en un ambiente común, no solo matrícula o permanencia física.",
-    "evidencia_observable": "Identifica una acción institucional coherente con el concepto de educación inclusiva.",
-    "tarea_cognitiva": "Diferenciar inclusión efectiva de integración física superficial.",
-    "tipo_de_pregunta": "Pregunta conceptual normativa aplicada",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confundir inclusión con integración pasiva",
-        "revision": "La clave exige aprendizaje y participación."
-      },
-      {
-        "riesgo": "Confundir apoyos con privilegios",
-        "revision": "La opción correcta presenta apoyos como condición para garantizar derechos."
-      },
-      {
-        "riesgo": "Reducir discapacidad a déficit individual",
-        "revision": "El ítem se centra en barreras del entorno y ajustes institucionales."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque la presencia física no basta.",
+    "B": "Clave correcta.",
+    "C": "Es incorrecta porque separa al estudiante del grupo.",
+    "D": "Es incorrecta porque no todo ajuste implica reducir aprendizajes sin criterio."
   },
-  "item": {
-    "enunciado": "Una escuela afirma que cumple la inclusión porque permite que un estudiante con discapacidad permanezca en el salón. Sin embargo, no ajusta materiales, no revisa barreras de participación y no ofrece apoyos para el aprendizaje.\n\n¿Cuál opción expresa mejor el sentido de educación inclusiva?",
-    "opciones": {
-      "A": "Tener al estudiante en el aula, aunque no participe en las actividades ni acceda al aprendizaje.",
-      "B": "Reconocer la diversidad, eliminar barreras, brindar apoyos y ajustes razonables, y garantizar participación y aprendizaje en un ambiente común.",
-      "C": "Crear actividades totalmente separadas para que el estudiante no interfiera con el grupo.",
-      "D": "Reducir los aprendizajes esperados sin valorar las posibilidades reales del estudiante."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem evita una visión asistencialista o segregadora y sostiene expectativas educativas con apoyos pertinentes."
   },
-  "ficha_tecnica": {
-    "componente": "Inclusión y Marco Legal",
-    "competencia": "Comprensión de educación inclusiva",
-    "claim_evaluado": "El evaluado comprende que la inclusión educativa implica presencia, participación, aprendizaje, apoyos y ajustes en un ambiente común, no solo matrícula o permanencia física.",
-    "evidencia": "Identifica una acción institucional coherente con el concepto de educación inclusiva.",
-    "proceso_cognitivo": "Comprensión normativa aplicada",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Reduce inclusión a presencia física.",
-      "C": "Propone segregación.",
-      "D": "Confunde ajuste con reducción no fundamentada de expectativas."
-    },
-    "fuente_autorizada": [
-      "Decreto 1421 de 2017",
-      "Decreto 1075 de 2015",
-      "Ley 1618 de 2013",
-      "Convención sobre los Derechos de las Personas con Discapacidad"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque la presencia física no basta.",
-    "opcion_C": "Es incorrecta porque separa al estudiante del grupo.",
-    "opcion_D": "Es incorrecta porque no todo ajuste implica reducir aprendizajes sin criterio.",
-    "distractores": {
-      "A": "Es incorrecta porque la presencia física no basta.",
-      "C": "Es incorrecta porque separa al estudiante del grupo.",
-      "D": "Es incorrecta porque no todo ajuste implica reducir aprendizajes sin criterio."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem evita una visión asistencialista o segregadora y sostiene expectativas educativas con apoyos pertinentes."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 5 preguntas sobre marco constitucional, legal y jurisprudencial de inclusión."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Marco constitucional, legal y jurisprudencial de inclusión/IDD_B02_I04.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

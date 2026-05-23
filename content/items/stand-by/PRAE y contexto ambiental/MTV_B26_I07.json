@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B26_I07",
-    "tema": "Educación ambiental crítica",
-    "competencia": "Formación de pensamiento crítico ambiental",
-    "dificultad": "Alta",
-    "enunciado": "Una docente no se limita a pedir que los estudiantes recojan basura. Les pide investigar por qué se produce, quiénes participan, qué hábitos de consumo influyen y qué soluciones comunitarias pueden proponerse.\n\n¿Qué enfoque de educación ambiental está promoviendo?",
-    "opciones": {
-        "A": "Educación ambiental crítica y participativa.",
-        "B": "Activismo sin reflexión.",
-        "C": "Castigo ecológico.",
-        "D": "Decoración ambiental."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "El enfoque crítico busca comprender causas, actores, hábitos y alternativas de transformación.",
-    "distractores": {
-        "B": "La actividad incluye reflexión.",
-        "C": "No se usa como castigo.",
-        "D": "Va más allá de decorar."
-    }
+  "id_item": "MTV_B26_I07",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "PRAE y contexto ambiental",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "",
+  "enunciado": "Una docente no se limita a pedir que los estudiantes recojan basura. Les pide investigar por qué se produce, quiénes participan, qué hábitos de consumo influyen y qué soluciones comunitarias pueden proponerse.\n\n¿Qué enfoque de educación ambiental está promoviendo?",
+  "opciones": {
+    "A": "Educación ambiental crítica y participativa.",
+    "B": "Activismo sin reflexión.",
+    "C": "Castigo ecológico.",
+    "D": "Decoración ambiental."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Distractor funcional.",
+    "C": "Distractor funcional.",
+    "D": "Distractor funcional."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/PRAE y contexto ambiental/MTV_B26_I07.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
+  }
 }

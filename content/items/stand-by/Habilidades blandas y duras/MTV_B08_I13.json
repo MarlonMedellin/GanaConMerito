@@ -1,40 +1,45 @@
 {
   "id_item": "MTV_B08_I13",
-  "archivo_sugerido": "MTV_B08_I13_habilidad_blanda_resolucion_conflictos.json",
-  "proposito_de_uso": "Evaluar si el aspirante reconoce la resolución de conflictos como habilidad blanda y competencia comportamental.",
-  "blueprint": {
-    "componente_modulo": "Resolución de conflictos",
-    "competencia": "Gestión interpersonal y convivencia",
-    "afirmacion": "La resolución de conflictos implica escucha, regulación emocional, análisis de la situación, diálogo, búsqueda de acuerdos y respeto por las partes.",
-    "evidencia_observable": "Selecciona una actuación mediadora y no punitiva ante una tensión escolar.",
-    "tipo_de_evidencia": "Juicio situacional comportamental",
-    "dificultad_esperada": "Alta",
-    "clave": "B"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Habilidades blandas y duras",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Dos estudiantes discuten fuertemente durante una actividad grupal. El docente evita gritar o imponer una sanción inmediata, escucha a cada parte, reconstruye los hechos, promueve acuerdos y orienta la reparación del vínculo.",
+  "enunciado": "Dos estudiantes discuten fuertemente durante una actividad grupal. El docente evita gritar o imponer una sanción inmediata, escucha a cada parte, reconstruye los hechos, promueve acuerdos y orienta la reparación del vínculo.\n\n¿Qué habilidad blanda está poniendo en práctica?",
+  "opciones": {
+    "A": "Indiferencia frente al conflicto.",
+    "B": "Resolución de conflictos.",
+    "C": "Dominio exclusivo de contenidos teóricos.",
+    "D": "Competencia caligráfica."
   },
-  "item": {
-    "enunciado": "Dos estudiantes discuten fuertemente durante una actividad grupal. El docente evita gritar o imponer una sanción inmediata, escucha a cada parte, reconstruye los hechos, promueve acuerdos y orienta la reparación del vínculo.\n\n¿Qué habilidad blanda está poniendo en práctica?",
-    "opciones": {
-      "A": "Indiferencia frente al conflicto.",
-      "B": "Resolución de conflictos.",
-      "C": "Dominio exclusivo de contenidos teóricos.",
-      "D": "Competencia caligráfica."
-    },
-    "respuesta_correcta": "B"
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "El docente interviene activamente, no es indiferente.",
+    "B": "Clave correcta.",
+    "C": "El conocimiento teórico no describe la acción mediadora.",
+    "D": "La caligrafía no guarda relación con el conflicto."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "distractores": {
-      "A": "El docente interviene activamente, no es indiferente.",
-      "C": "El conocimiento teórico no describe la acción mediadora.",
-      "D": "La caligrafía no guarda relación con el conflicto."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem promueve una lectura restaurativa y profesional del conflicto escolar."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem promueve una lectura restaurativa y profesional del conflicto escolar."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem fuerte para competencias comportamentales y convivencia."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I13.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

@@ -1,104 +1,45 @@
 {
   "id_item": "DIL_B02_I05",
-  "archivo_sugerido": "DIL_B02_I05_hogar_sustituto_medida_provisional_temporal.json",
-  "bloque": {
-    "codigo_bloque": "DIL_B02",
-    "nombre": "PARD y restablecimiento de derechos",
-    "estado_en_lista": "Bloque 2 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 5 de 6"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Medida de hogar sustituto",
+  "tema": "PARD y restablecimiento de derechos",
+  "subtema": "Creer que la ubicación en hogar sustituto es una solución definitiva o una sanción.",
+  "competencia": "Comprensión de medidas provisionales de protección",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA_ALTA",
+  "claim": "El evaluado comprende que las medidas de protección deben ser proporcionales, temporales y orientadas a garantizar derechos y estabilidad del menor.",
+  "evidencia": "Selecciona la opción que define el hogar sustituto como medida temporal y protectora.",
+  "tarea": "Interpretar la finalidad de una medida dentro del PARD.",
+  "contexto": "Dentro de un PARD, una autoridad competente puede ubicar temporalmente a un niño, niña o adolescente en un hogar sustituto cuando su familia de origen no garantiza condiciones mínimas de protección. Algunos interpretan esta medida como un castigo o como una separación definitiva automática.",
+  "enunciado": "Dentro de un PARD, una autoridad competente puede ubicar temporalmente a un niño, niña o adolescente en un hogar sustituto cuando su familia de origen no garantiza condiciones mínimas de protección. Algunos interpretan esta medida como un castigo o como una separación definitiva automática.\n\n¿Cuál explicación es más adecuada?",
+  "opciones": {
+    "A": "El hogar sustituto es una sanción contra el menor por problemas familiares.",
+    "B": "El hogar sustituto es una medida provisional, excepcional y protectora, orientada al interés superior y sujeta a seguimiento de la autoridad competente.",
+    "C": "El hogar sustituto elimina automáticamente todo vínculo jurídico con la familia de origen.",
+    "D": "La escuela puede ordenar por sí sola el traslado de un estudiante a un hogar sustituto."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende que la ubicación en hogar sustituto dentro del PARD es una medida provisional, excepcional y temporal orientada al interés superior del menor.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con infancia, orientación escolar, protección integral, docencia o trabajo institucional con menores.",
-    "blueprint": {
-      "problematica_principal": "Creer que la ubicación en hogar sustituto es una solución definitiva o una sanción.",
-      "fuente_autorizada": [
-        "Ley 1098 de 2006",
-        "ICBF",
-        "PARD",
-        "Hogar sustituto",
-        "Jurisprudencia constitucional"
-      ],
-      "componente_modulo": "Medida de hogar sustituto",
-      "competencia": "Comprensión de medidas provisionales de protección",
-      "afirmacion": "El hogar sustituto es una medida provisional de protección, no un castigo ni una sustitución definitiva de la familia sin decisión competente.",
-      "evidencia_observable": "Reconoce la temporalidad y excepcionalidad de la medida.",
-      "tipo_de_evidencia": "Juicio normativo aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado comprende que las medidas de protección deben ser proporcionales, temporales y orientadas a garantizar derechos y estabilidad del menor.",
-    "evidencia_observable": "Selecciona la opción que define el hogar sustituto como medida temporal y protectora.",
-    "tarea_cognitiva": "Interpretar la finalidad de una medida dentro del PARD.",
-    "tipo_de_pregunta": "Pregunta conceptual normativa aplicada",
-    "dificultad_esperada": "Media-Alta",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Presentar hogar sustituto como castigo",
-        "revision": "La clave lo define como medida de protección."
-      },
-      {
-        "riesgo": "Afirmar plazo exacto sin validación suficiente",
-        "revision": "Este ítem evita fijar un número no verificado y evalúa el principio de provisionalidad."
-      },
-      {
-        "riesgo": "Romper injustificadamente vínculos familiares",
-        "revision": "La clave resalta excepcionalidad e interés superior."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque no es castigo al menor.",
+    "B": "Clave correcta.",
+    "C": "Es incorrecta porque no produce automáticamente ruptura definitiva de vínculos.",
+    "D": "Es incorrecta porque la escuela no tiene competencia para ordenar esa medida."
   },
-  "item": {
-    "enunciado": "Dentro de un PARD, una autoridad competente puede ubicar temporalmente a un niño, niña o adolescente en un hogar sustituto cuando su familia de origen no garantiza condiciones mínimas de protección. Algunos interpretan esta medida como un castigo o como una separación definitiva automática.\n\n¿Cuál explicación es más adecuada?",
-    "opciones": {
-      "A": "El hogar sustituto es una sanción contra el menor por problemas familiares.",
-      "B": "El hogar sustituto es una medida provisional, excepcional y protectora, orientada al interés superior y sujeta a seguimiento de la autoridad competente.",
-      "C": "El hogar sustituto elimina automáticamente todo vínculo jurídico con la familia de origen.",
-      "D": "La escuela puede ordenar por sí sola el traslado de un estudiante a un hogar sustituto."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem evita afirmar un plazo exacto no suficientemente consolidado en las fuentes revisadas y se centra en el carácter protector y temporal de la medida."
   },
-  "ficha_tecnica": {
-    "componente": "Medida de hogar sustituto",
-    "competencia": "Comprensión de medidas provisionales de protección",
-    "claim_evaluado": "El evaluado comprende que las medidas de protección deben ser proporcionales, temporales y orientadas a garantizar derechos y estabilidad del menor.",
-    "evidencia": "Selecciona la opción que define el hogar sustituto como medida temporal y protectora.",
-    "proceso_cognitivo": "Comprensión normativa aplicada",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media-Alta",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Confunde protección con sanción.",
-      "C": "Atribuye efectos definitivos automáticos que no corresponden.",
-      "D": "Otorga a la escuela una competencia que no tiene."
-    },
-    "fuente_autorizada": [
-      "Ley 1098 de 2006",
-      "ICBF",
-      "PARD",
-      "Hogar sustituto",
-      "Jurisprudencia constitucional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque no es castigo al menor.",
-    "opcion_C": "Es incorrecta porque no produce automáticamente ruptura definitiva de vínculos.",
-    "opcion_D": "Es incorrecta porque la escuela no tiene competencia para ordenar esa medida.",
-    "distractores": {
-      "A": "Es incorrecta porque no es castigo al menor.",
-      "C": "Es incorrecta porque no produce automáticamente ruptura definitiva de vínculos.",
-      "D": "Es incorrecta porque la escuela no tiene competencia para ordenar esa medida."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "Aprobado con observación.",
-    "argumento": "El ítem evita afirmar un plazo exacto no suficientemente consolidado en las fuentes revisadas y se centra en el carácter protector y temporal de la medida."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado con observación",
-    "observacion": "Si se desea preguntar por un número exacto de meses en hogar sustituto, conviene verificarlo previamente con lineamientos ICBF vigentes y fuente normativa aplicable.",
-    "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 6 preguntas sobre PARD y restablecimiento de derechos."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I05.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

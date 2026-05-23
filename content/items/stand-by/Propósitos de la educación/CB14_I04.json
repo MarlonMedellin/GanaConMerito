@@ -1,105 +1,45 @@
 {
   "id_item": "CB14_I04",
-  "bloque": {
-    "numero": 14,
-    "nombre": "Propósitos de la educación",
-    "estado_en_lista": "Bloque 14 de 15",
-    "decision_del_bloque": "Grupo de 4 preguntas",
-    "item_en_grupo": "Ítem 4 de 4"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión académica",
+  "tema": "Propósitos de la educación",
+  "subtema": "Desconocimiento de fines educativos",
+  "competencia": "Fundamentos educativos",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado interpreta los fines educativos como criterios transversales de la gestión académica e institucional, incluyendo la evaluación de los aprendizajes.",
+  "evidencia": "Selecciona una justificación que relaciona la evaluación integral con la valoración de procesos, pensamiento crítico, colaboración y avances individuales.",
+  "tarea": "Elegir la decisión institucional más coherente con una educación integral.",
+  "contexto": "El consejo académico revisa el sistema institucional de evaluación. Se propone valorar no solo resultados finales, sino también procesos, pensamiento crítico, trabajo colaborativo y avances individuales.",
+  "enunciado": "El consejo académico revisa el sistema institucional de evaluación. Se propone valorar no solo resultados finales, sino también procesos, pensamiento crítico, trabajo colaborativo y avances individuales.\n\n¿Cuál argumento sustenta mejor esta propuesta?",
+  "opciones": {
+    "A": "La evaluación integral permite valorar dimensiones diversas del aprendizaje y se relaciona con los fines formativos de la educación.",
+    "B": "La evaluación debe eliminar los criterios académicos para centrarse solo en actitudes.",
+    "C": "La evaluación integral impide exigir aprendizajes porque todos los estudiantes deben aprobar automáticamente.",
+    "D": "La evaluación debe depender de la opinión personal de cada docente sin acuerdos institucionales."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce que los fines educativos deben orientar también la evaluación institucional, integrando dimensiones cognitivas, formativas, actitudinales y de desarrollo personal sin renunciar a criterios académicos.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, coordinación académica o gestión institucional en educación básica y media.",
-    "blueprint": {
-      "problematica_principal": "Desconocimiento de fines educativos",
-      "fuente_autorizada": [
-        "Ley 115 de 1994",
-        "Fines de la educación",
-        "Proyecto Educativo Institucional",
-        "Sistema Institucional de Evaluación de los Estudiantes"
-      ],
-      "componente_modulo": "Gestión académica",
-      "competencia": "Fundamentos educativos",
-      "afirmacion": "La educación tiene propósitos integrales.",
-      "evidencia_observable": "Reconoce que los fines educativos orientan evaluación, convivencia, currículo y gestión institucional.",
-      "tipo_de_evidencia": "Interpretación de situación pedagógica e institucional",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado interpreta los fines educativos como criterios transversales de la gestión académica e institucional, incluyendo la evaluación de los aprendizajes.",
-    "evidencia_observable": "Selecciona una justificación que relaciona la evaluación integral con la valoración de procesos, pensamiento crítico, colaboración y avances individuales.",
-    "tarea_cognitiva": "Elegir la decisión institucional más coherente con una educación integral.",
-    "tipo_de_pregunta": "Caso situacional de juicio profesional",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confusión entre evaluación integral y baja exigencia académica",
-        "revision": "La clave conserva criterios de aprendizaje y no plantea aprobación automática."
-      },
-      {
-        "riesgo": "Sesgo por modelo institucional de evaluación",
-        "revision": "El ítem no exige conocer un formato específico de SIEE; evalúa una comprensión general de evaluación formativa e integral."
-      },
-      {
-        "riesgo": "Ambigüedad entre valorar procesos y eliminar resultados",
-        "revision": "La opción correcta integra procesos y aprendizajes sin excluir resultados académicos."
-      },
-      {
-        "riesgo": "Sesgo por área disciplinar",
-        "revision": "El caso aplica a cualquier área o nivel de gestión académica."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque la evaluación integral no implica eliminar los criterios académicos, sino complementarlos con otras evidencias del proceso formativo.",
+    "C": "Es incorrecta porque evaluar integralmente no significa aprobar automáticamente ni renunciar a la exigencia de aprendizajes.",
+    "D": "Es incorrecta porque la evaluación requiere acuerdos institucionales, criterios claros y coherencia con el sistema institucional de evaluación."
   },
-  "item": {
-    "enunciado": "El consejo académico revisa el sistema institucional de evaluación. Se propone valorar no solo resultados finales, sino también procesos, pensamiento crítico, trabajo colaborativo y avances individuales.\n\n¿Cuál argumento sustenta mejor esta propuesta?",
-    "opciones": {
-      "A": "La evaluación integral permite valorar dimensiones diversas del aprendizaje y se relaciona con los fines formativos de la educación.",
-      "B": "La evaluación debe eliminar los criterios académicos para centrarse solo en actitudes.",
-      "C": "La evaluación integral impide exigir aprendizajes porque todos los estudiantes deben aprobar automáticamente.",
-      "D": "La evaluación debe depender de la opinión personal de cada docente sin acuerdos institucionales."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem no privilegia un área, metodología o modelo institucional específico. Evalúa una comprensión amplia de la evaluación como parte de la formación integral, evitando asociarla con baja exigencia, subjetividad docente o promoción automática."
   },
-  "ficha_tecnica": {
-    "componente": "Gestión académica",
-    "competencia": "Fundamentos educativos",
-    "claim_evaluado": "El evaluado interpreta los fines educativos como criterios transversales de la gestión académica e institucional, incluyendo la evaluación de los aprendizajes.",
-    "evidencia": "Selecciona una justificación que relaciona la evaluación integral con la valoración de procesos, pensamiento crítico, colaboración y avances individuales.",
-    "proceso_cognitivo": "Análisis y juicio profesional",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Plantea una falsa oposición entre lo académico y lo formativo.",
-      "C": "Confunde evaluación integral con promoción automática o ausencia de exigencia.",
-      "D": "Niega la necesidad de criterios institucionales comunes para orientar la evaluación."
-    },
-    "fuente_autorizada": [
-      "Ley 115 de 1994",
-      "Fines de la educación",
-      "Proyecto Educativo Institucional",
-      "Sistema Institucional de Evaluación de los Estudiantes"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque la evaluación integral no implica eliminar los criterios académicos, sino complementarlos con otras evidencias del proceso formativo.",
-    "opcion_C": "Es incorrecta porque evaluar integralmente no significa aprobar automáticamente ni renunciar a la exigencia de aprendizajes.",
-    "opcion_D": "Es incorrecta porque la evaluación requiere acuerdos institucionales, criterios claros y coherencia con el sistema institucional de evaluación.",
-    "distractores": {
-      "B": "Es incorrecta porque la evaluación integral no implica eliminar los criterios académicos, sino complementarlos con otras evidencias del proceso formativo.",
-      "C": "Es incorrecta porque evaluar integralmente no significa aprobar automáticamente ni renunciar a la exigencia de aprendizajes.",
-      "D": "Es incorrecta porque la evaluación requiere acuerdos institucionales, criterios claros y coherencia con el sistema institucional de evaluación."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no privilegia un área, metodología o modelo institucional específico. Evalúa una comprensión amplia de la evaluación como parte de la formación integral, evitando asociarla con baja exigencia, subjetividad docente o promoción automática."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre propósitos de la educación."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Propósitos de la educación/CB14_I04.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

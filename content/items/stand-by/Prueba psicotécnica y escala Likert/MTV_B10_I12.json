@@ -1,40 +1,45 @@
 {
   "id_item": "MTV_B10_I12",
-  "archivo_sugerido": "MTV_B10_I12_likert_actitud_servicio_publico.json",
-  "proposito_de_uso": "Evaluar si el aspirante reconoce la actitud de servicio como componente del servidor público docente.",
-  "blueprint": {
-    "componente_modulo": "Actitud del servidor público",
-    "competencia": "Orientación al servicio y responsabilidad pública",
-    "afirmacion": "El servidor público docente debe actuar con respeto, orientación, responsabilidad, imparcialidad y disposición de servicio hacia la comunidad educativa.",
-    "evidencia_observable": "Selecciona una conducta coherente con actitud de servicio público.",
-    "tipo_de_evidencia": "Juicio comportamental aplicado",
-    "dificultad_esperada": "Media",
-    "clave": "D"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Prueba psicotécnica y escala Likert",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "En una proposición Likert se afirma: 'Cuando una familia solicita orientación, respondo con respeto, explico los canales institucionales y evito comentarios despectivos'.",
+  "enunciado": "En una proposición Likert se afirma: 'Cuando una familia solicita orientación, respondo con respeto, explico los canales institucionales y evito comentarios despectivos'.\n\n¿Qué actitud profesional evalúa principalmente esta proposición?",
+  "opciones": {
+    "A": "Desinterés por la comunidad.",
+    "B": "Indiferencia administrativa.",
+    "C": "Rechazo a la comunicación con familias.",
+    "D": "Actitud de servicio del servidor público docente."
   },
-  "item": {
-    "enunciado": "En una proposición Likert se afirma: 'Cuando una familia solicita orientación, respondo con respeto, explico los canales institucionales y evito comentarios despectivos'.\n\n¿Qué actitud profesional evalúa principalmente esta proposición?",
-    "opciones": {
-      "A": "Desinterés por la comunidad.",
-      "B": "Indiferencia administrativa.",
-      "C": "Rechazo a la comunicación con familias.",
-      "D": "Actitud de servicio del servidor público docente."
-    },
-    "respuesta_correcta": "D"
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "El enunciado muestra interés, no desinterés.",
+    "B": "La atención descrita no es indiferente.",
+    "C": "La proposición plantea comunicación, no rechazo.",
+    "D": "Clave correcta."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "distractores": {
-      "A": "El enunciado muestra interés, no desinterés.",
-      "B": "La atención descrita no es indiferente.",
-      "C": "La proposición plantea comunicación, no rechazo."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem evalúa conducta observable del rol público."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem evalúa conducta observable del rol público."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Buen ítem para actitud del servidor público."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Prueba psicotécnica y escala Likert/MTV_B10_I12.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

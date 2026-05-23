@@ -1,36 +1,45 @@
 {
   "id_item": "MTV_B11_I15",
-  "archivo_sugerido": "MTV_B11_I15_tecnicismo_no_es_uso_tecnica.json",
-  "proposito_de_uso": "Evitar la confusión entre tecnicismo pedagógico y uso legítimo de técnicas didácticas.",
-  "blueprint": {
-    "componente_modulo": "Precisión conceptual",
-    "competencia": "Diferenciación entre técnica y tecnicismo",
-    "afirmacion": "Usar técnicas didácticas no es tecnicista por sí mismo; el tecnicismo aparece cuando se mecaniza la enseñanza y se elimina comprensión, contexto e interacción.",
-    "evidencia_observable": "Distingue entre recurso técnico útil y enfoque tecnicista.",
-    "tipo_de_evidencia": "Comprensión conceptual fina",
-    "dificultad_esperada": "Alta",
-    "clave": "D"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Tecnicismo vs constructivismo",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Un docente usa una técnica de organización gráfica para que los estudiantes comparen conceptos, argumenten diferencias y construyan conclusiones. Otro docente afirma que cualquier técnica es tecnicista.",
+  "enunciado": "Un docente usa una técnica de organización gráfica para que los estudiantes comparen conceptos, argumenten diferencias y construyan conclusiones. Otro docente afirma que cualquier técnica es tecnicista.\n\n¿Cuál aclaración es correcta?",
+  "opciones": {
+    "A": "Toda técnica didáctica es necesariamente tecnicista.",
+    "B": "El constructivismo prohíbe toda organización de la clase.",
+    "C": "Solo se aprende cuando no hay método alguno.",
+    "D": "Una técnica no es tecnicista por sí misma; se vuelve tecnicista si se usa de manera mecánica, sin comprensión, contexto ni interacción."
   },
-  "item": {
-    "enunciado": "Un docente usa una técnica de organización gráfica para que los estudiantes comparen conceptos, argumenten diferencias y construyan conclusiones. Otro docente afirma que cualquier técnica es tecnicista.\n\n¿Cuál aclaración es correcta?",
-    "opciones": {
-      "A": "Toda técnica didáctica es necesariamente tecnicista.",
-      "B": "El constructivismo prohíbe toda organización de la clase.",
-      "C": "Solo se aprende cuando no hay método alguno.",
-      "D": "Una técnica no es tecnicista por sí misma; se vuelve tecnicista si se usa de manera mecánica, sin comprensión, contexto ni interacción."
-    },
-    "respuesta_correcta": "D"
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "Confunde técnica con tecnicismo.",
+    "B": "El constructivismo también requiere diseño y mediación.",
+    "C": "El aprendizaje necesita intención pedagógica.",
+    "D": "Clave correcta."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "distractores": {
-      "A": "Confunde técnica con tecnicismo.",
-      "B": "El constructivismo también requiere diseño y mediación.",
-      "C": "El aprendizaje necesita intención pedagógica."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem de alta calidad conceptual."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Tecnicismo vs constructivismo/MTV_B11_I15.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

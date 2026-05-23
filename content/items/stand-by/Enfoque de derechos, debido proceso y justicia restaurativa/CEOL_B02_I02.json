@@ -1,106 +1,45 @@
 {
   "id_item": "CEOL_B02_I02",
-  "archivo_sugerido": "CEOL_B02_I02_sujetos_de_derechos_comunidad_educativa.json",
-  "bloque": {
-    "codigo_bloque": "CEOL_B02",
-    "nombre": "Enfoque de derechos, debido proceso y justicia restaurativa",
-    "estado_en_lista": "Bloque 2 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 2 de 6"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Convivencia Escolar y Enfoque de Derechos",
+  "tema": "Enfoque de derechos, debido proceso y justicia restaurativa",
+  "subtema": "Aplicación formal o superficial del enfoque de derechos en la vida escolar.",
+  "competencia": "Reconocimiento de sujetos de derechos",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado comprende que ser sujeto de derechos implica que estudiantes, familias, docentes y demás miembros de la comunidad educativa deben ser tratados con dignidad, escuchados y protegidos, sin excluir la corresponsabilidad y los deberes.",
+  "evidencia": "Selecciona una interpretación práctica del enfoque de derechos en situaciones escolares.",
+  "tarea": "Diferenciar una visión autoritaria o asistencialista de una práctica escolar basada en derechos.",
+  "contexto": "En una institución educativa se afirma que, según la Ley 1620 y la Ley 1098, los integrantes de la comunidad educativa deben ser reconocidos como sujetos de derechos. Algunos docentes preguntan qué significa esto en la práctica cotidiana.",
+  "enunciado": "En una institución educativa se afirma que, según la Ley 1620 y la Ley 1098, los integrantes de la comunidad educativa deben ser reconocidos como sujetos de derechos. Algunos docentes preguntan qué significa esto en la práctica cotidiana.\n\n¿Cuál interpretación es más adecuada?",
+  "opciones": {
+    "A": "Que los estudiantes pueden actuar sin límites, porque tener derechos elimina cualquier deber escolar.",
+    "B": "Que las personas deben ser tratadas con dignidad, escuchadas, protegidas, informadas y vinculadas a procesos con debido respeto y corresponsabilidad.",
+    "C": "Que solo los adultos tienen derechos, porque son quienes toman decisiones en la institución.",
+    "D": "Que los derechos solo se aplican cuando hay una sanción disciplinaria formal."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante comprende qué significa en la práctica reconocer a los miembros de la comunidad educativa como sujetos de derechos en el marco de la Ley 1620 y la Ley 1098.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con convivencia escolar, orientación, docencia, coordinación o gestión institucional.",
-    "blueprint": {
-      "problematica_principal": "Aplicación formal o superficial del enfoque de derechos en la vida escolar.",
-      "fuente_autorizada": [
-        "Ley 1620 de 2013",
-        "Ley 1098 de 2006",
-        "Constitución Política de Colombia",
-        "Manual de convivencia institucional"
-      ],
-      "componente_modulo": "Convivencia Escolar y Enfoque de Derechos",
-      "competencia": "Reconocimiento de sujetos de derechos",
-      "afirmacion": "Reconocer a la comunidad educativa como sujetos de derechos exige trato digno, participación, protección, escucha y debido proceso.",
-      "evidencia_observable": "Identifica prácticas escolares que garantizan dignidad, participación, protección y responsabilidad.",
-      "tipo_de_evidencia": "Interpretación normativa aplicada",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado comprende que ser sujeto de derechos implica que estudiantes, familias, docentes y demás miembros de la comunidad educativa deben ser tratados con dignidad, escuchados y protegidos, sin excluir la corresponsabilidad y los deberes.",
-    "evidencia_observable": "Selecciona una interpretación práctica del enfoque de derechos en situaciones escolares.",
-    "tarea_cognitiva": "Diferenciar una visión autoritaria o asistencialista de una práctica escolar basada en derechos.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confundir derechos con ausencia de deberes",
-        "revision": "La clave integra derechos, participación y corresponsabilidad."
-      },
-      {
-        "riesgo": "Sesgo adultocéntrico",
-        "revision": "El ítem reconoce la voz de niños, niñas y adolescentes sin negar la función orientadora de adultos."
-      },
-      {
-        "riesgo": "Ambigüedad entre protección y permisividad",
-        "revision": "La opción correcta protege derechos, pero conserva responsabilidad y formación."
-      },
-      {
-        "riesgo": "Lenguaje jurídico excesivo",
-        "revision": "La formulación traduce el concepto a prácticas escolares concretas."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque tener derechos no elimina deberes ni responsabilidades.",
+    "B": "Clave correcta.",
+    "C": "Es incorrecta porque desconoce el reconocimiento de niños, niñas y adolescentes como sujetos de derechos.",
+    "D": "Es incorrecta porque los derechos no se activan únicamente ante sanciones, sino que orientan toda la vida escolar."
   },
-  "item": {
-    "enunciado": "En una institución educativa se afirma que, según la Ley 1620 y la Ley 1098, los integrantes de la comunidad educativa deben ser reconocidos como sujetos de derechos. Algunos docentes preguntan qué significa esto en la práctica cotidiana.\n\n¿Cuál interpretación es más adecuada?",
-    "opciones": {
-      "A": "Que los estudiantes pueden actuar sin límites, porque tener derechos elimina cualquier deber escolar.",
-      "B": "Que las personas deben ser tratadas con dignidad, escuchadas, protegidas, informadas y vinculadas a procesos con debido respeto y corresponsabilidad.",
-      "C": "Que solo los adultos tienen derechos, porque son quienes toman decisiones en la institución.",
-      "D": "Que los derechos solo se aplican cuando hay una sanción disciplinaria formal."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem evita una visión permisiva o adultocéntrica y evalúa una comprensión equilibrada de derechos, deberes y corresponsabilidad."
   },
-  "ficha_tecnica": {
-    "componente": "Convivencia Escolar y Enfoque de Derechos",
-    "competencia": "Reconocimiento de sujetos de derechos",
-    "claim_evaluado": "El evaluado comprende que ser sujeto de derechos implica que estudiantes, familias, docentes y demás miembros de la comunidad educativa deben ser tratados con dignidad, escuchados y protegidos, sin excluir la corresponsabilidad y los deberes.",
-    "evidencia": "Selecciona una interpretación práctica del enfoque de derechos en situaciones escolares.",
-    "proceso_cognitivo": "Interpretación normativa aplicada",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Confunde derechos con ausencia de deberes o límites.",
-      "C": "Desconoce que niños, niñas y adolescentes también son sujetos de derechos.",
-      "D": "Reduce los derechos al momento sancionatorio y no a la vida escolar cotidiana."
-    },
-    "fuente_autorizada": [
-      "Ley 1620 de 2013",
-      "Ley 1098 de 2006",
-      "Constitución Política de Colombia",
-      "Manual de convivencia institucional"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque tener derechos no elimina deberes ni responsabilidades.",
-    "opcion_C": "Es incorrecta porque desconoce el reconocimiento de niños, niñas y adolescentes como sujetos de derechos.",
-    "opcion_D": "Es incorrecta porque los derechos no se activan únicamente ante sanciones, sino que orientan toda la vida escolar.",
-    "distractores": {
-      "A": "Es incorrecta porque tener derechos no elimina deberes ni responsabilidades.",
-      "C": "Es incorrecta porque desconoce el reconocimiento de niños, niñas y adolescentes como sujetos de derechos.",
-      "D": "Es incorrecta porque los derechos no se activan únicamente ante sanciones, sino que orientan toda la vida escolar."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem evita una visión permisiva o adultocéntrica y evalúa una comprensión equilibrada de derechos, deberes y corresponsabilidad."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 6 preguntas sobre enfoque de derechos, debido proceso y justicia restaurativa."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/CEOL_B02_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

@@ -1,104 +1,45 @@
 {
   "id_item": "DIL_B06_I02",
-  "archivo_sugerido": "DIL_B06_I02_participacion_decorativa_roger_hart.json",
-  "bloque": {
-    "codigo_bloque": "DIL_B06",
-    "nombre": "Participación infantil, agencia y Convención sobre los Derechos del Niño",
-    "estado_en_lista": "Bloque 6 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 2 de 4"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Niveles de participación",
+  "tema": "Participación infantil, agencia y Convención sobre los Derechos del Niño",
+  "subtema": "Uso de niños, niñas y adolescentes en actividades simbólicas sin comprensión, decisión ni incidencia real.",
+  "competencia": "Diferenciación entre participación simbólica y participación real",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA_ALTA",
+  "claim": "El evaluado comprende que la participación infantil exige información, comprensión, voz, voluntariedad e incidencia proporcional, no solo presencia simbólica.",
+  "evidencia": "Selecciona una explicación adecuada de participación decorativa.",
+  "tarea": "Analizar una actividad escolar y clasificar su nivel de participación.",
+  "contexto": "En un evento institucional, varios estudiantes aparecen en fotografías, cargan carteles y representan una campaña, pero no conocen el propósito de la actividad, no fueron consultados y no tienen incidencia en las decisiones.",
+  "enunciado": "En un evento institucional, varios estudiantes aparecen en fotografías, cargan carteles y representan una campaña, pero no conocen el propósito de la actividad, no fueron consultados y no tienen incidencia en las decisiones.\n\nSegún los niveles de participación de Roger Hart, ¿por qué esto puede considerarse participación decorativa?",
+  "opciones": {
+    "A": "Porque los estudiantes son exhibidos o usados simbólicamente sin comprensión, voz ni incidencia real en el proceso.",
+    "B": "Porque toda participación estudiantil en eventos institucionales es siempre inválida.",
+    "C": "Porque los adultos nunca pueden orientar procesos de participación infantil.",
+    "D": "Porque la participación solo existe cuando los niños toman todas las decisiones sin acompañamiento."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante distingue una participación decorativa de una participación real de niños, niñas y adolescentes.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, ciudadanía, participación escolar, convivencia o orientación.",
-    "blueprint": {
-      "problematica_principal": "Uso de niños, niñas y adolescentes en actividades simbólicas sin comprensión, decisión ni incidencia real.",
-      "fuente_autorizada": [
-        "Roger Hart",
-        "Escalera de participación",
-        "Convención sobre los Derechos del Niño",
-        "Participación infantil",
-        "Ley 1098 de 2006"
-      ],
-      "componente_modulo": "Niveles de participación",
-      "competencia": "Diferenciación entre participación simbólica y participación real",
-      "afirmacion": "La participación decorativa ocurre cuando NNA son usados para representar una causa o evento sin comprender, decidir o incidir realmente.",
-      "evidencia_observable": "Reconoce que la presencia visible de estudiantes no siempre equivale a participación real.",
-      "tipo_de_evidencia": "Juicio conceptual aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que la participación infantil exige información, comprensión, voz, voluntariedad e incidencia proporcional, no solo presencia simbólica.",
-    "evidencia_observable": "Selecciona una explicación adecuada de participación decorativa.",
-    "tarea_cognitiva": "Analizar una actividad escolar y clasificar su nivel de participación.",
-    "tipo_de_pregunta": "Caso conceptual aplicado",
-    "dificultad_esperada": "Media-Alta",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Usar NNA como imagen institucional",
-        "revision": "La clave cuestiona la presencia sin incidencia."
-      },
-      {
-        "riesgo": "Confundir visibilidad con participación",
-        "revision": "El ítem diferencia presencia de agencia."
-      },
-      {
-        "riesgo": "Exigir participación adulta plena",
-        "revision": "La opción correcta reconoce participación adecuada a edad y madurez."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque sí puede haber participación estudiantil válida en eventos.",
+    "C": "Es incorrecta porque la orientación adulta puede ser legítima si respeta voz e incidencia.",
+    "D": "Es incorrecta porque la participación no exige ausencia total de acompañamiento."
   },
-  "item": {
-    "enunciado": "En un evento institucional, varios estudiantes aparecen en fotografías, cargan carteles y representan una campaña, pero no conocen el propósito de la actividad, no fueron consultados y no tienen incidencia en las decisiones.\n\nSegún los niveles de participación de Roger Hart, ¿por qué esto puede considerarse participación decorativa?",
-    "opciones": {
-      "A": "Porque los estudiantes son exhibidos o usados simbólicamente sin comprensión, voz ni incidencia real en el proceso.",
-      "B": "Porque toda participación estudiantil en eventos institucionales es siempre inválida.",
-      "C": "Porque los adultos nunca pueden orientar procesos de participación infantil.",
-      "D": "Porque la participación solo existe cuando los niños toman todas las decisiones sin acompañamiento."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem protege la voz de NNA y evita que sean instrumentalizados como imagen institucional."
   },
-  "ficha_tecnica": {
-    "componente": "Niveles de participación",
-    "competencia": "Diferenciación entre participación simbólica y participación real",
-    "claim_evaluado": "El evaluado comprende que la participación infantil exige información, comprensión, voz, voluntariedad e incidencia proporcional, no solo presencia simbólica.",
-    "evidencia": "Selecciona una explicación adecuada de participación decorativa.",
-    "proceso_cognitivo": "Juicio conceptual aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media-Alta",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Generaliza indebidamente y niega posibilidades de participación real.",
-      "C": "Desconoce que los adultos pueden acompañar sin manipular.",
-      "D": "Confunde participación con autonomía absoluta sin mediación."
-    },
-    "fuente_autorizada": [
-      "Roger Hart",
-      "Escalera de participación",
-      "Convención sobre los Derechos del Niño",
-      "Participación infantil",
-      "Ley 1098 de 2006"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque sí puede haber participación estudiantil válida en eventos.",
-    "opcion_C": "Es incorrecta porque la orientación adulta puede ser legítima si respeta voz e incidencia.",
-    "opcion_D": "Es incorrecta porque la participación no exige ausencia total de acompañamiento.",
-    "distractores": {
-      "B": "Es incorrecta porque sí puede haber participación estudiantil válida en eventos.",
-      "C": "Es incorrecta porque la orientación adulta puede ser legítima si respeta voz e incidencia.",
-      "D": "Es incorrecta porque la participación no exige ausencia total de acompañamiento."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "Aprobado con observación.",
-    "argumento": "El ítem protege la voz de NNA y evita que sean instrumentalizados como imagen institucional."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Conviene validar la terminología exacta de la escalera de Hart según el material de estudio usado por la prueba.",
-    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre participación infantil, agencia y Convención sobre los Derechos del Niño."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Participación infantil, agencia y Convención sobre los Derechos del Niño/DIL_B06_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

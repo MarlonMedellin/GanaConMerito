@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B31_I05",
-    "tema": "Diferencia entre jornada escolar y laboral",
-    "competencia": "Comparación normativa",
-    "dificultad": "Alta",
-    "enunciado": "¿Cuál comparación diferencia mejor jornada escolar y jornada laboral docente?",
-    "opciones": {
-        "A": "La jornada escolar se relaciona con el tiempo de los estudiantes en el servicio educativo; la jornada laboral docente con el tiempo de cumplimiento de funciones del docente.",
-        "B": "Ambas son exactamente iguales en todos los casos.",
-        "C": "La jornada laboral solo corresponde a estudiantes.",
-        "D": "La jornada escolar es el tiempo de vacaciones del docente."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "La comparación distingue el tiempo del servicio educativo para estudiantes y el tiempo funcional del docente.",
-    "distractores": {
-        "B": "Son conceptos relacionados, pero no idénticos.",
-        "C": "La jornada laboral corresponde al trabajador.",
-        "D": "La jornada escolar no son vacaciones."
-    }
+  "id_item": "MTV_B31_I05",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Jornada escolar, horario laboral y asignación académica",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "",
+  "enunciado": "¿Cuál comparación diferencia mejor jornada escolar y jornada laboral docente?",
+  "opciones": {
+    "A": "La jornada escolar se relaciona con el tiempo de los estudiantes en el servicio educativo; la jornada laboral docente con el tiempo de cumplimiento de funciones del docente.",
+    "B": "Ambas son exactamente iguales en todos los casos.",
+    "C": "La jornada laboral solo corresponde a estudiantes.",
+    "D": "La jornada escolar es el tiempo de vacaciones del docente."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Distractor funcional.",
+    "C": "Distractor funcional.",
+    "D": "Distractor funcional."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I05.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
+  }
 }

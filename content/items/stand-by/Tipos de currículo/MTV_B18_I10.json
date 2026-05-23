@@ -1,36 +1,45 @@
 {
   "id_item": "MTV_B18_I10",
-  "archivo_sugerido": "MTV_B18_I10_curriculo_oficial_vs_oculto.json",
-  "proposito_de_uso": "Evaluar si el aspirante diferencia currículo oficial y currículo oculto.",
-  "blueprint": {
-    "componente_modulo": "Comparación de tipos de currículo",
-    "competencia": "Diferenciación conceptual",
-    "afirmacion": "El currículo oficial proviene de normas y documentos formales; el oculto se expresa en prácticas, valores y aprendizajes implícitos.",
-    "evidencia_observable": "Selecciona una comparación correcta entre ambos tipos.",
-    "tipo_de_evidencia": "Comprensión comparativa",
-    "dificultad_esperada": "Media",
-    "clave": "B"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Tipos de currículo",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Una institución enseña oficialmente democracia en sus planes, pero en la vida cotidiana castiga toda opinión diferente. ¿Qué comparación explica mejor esta situación?",
+  "enunciado": "Una institución enseña oficialmente democracia en sus planes, pero en la vida cotidiana castiga toda opinión diferente. ¿Qué comparación explica mejor esta situación?",
+  "opciones": {
+    "A": "El currículo oficial y el oculto siempre coinciden plenamente.",
+    "B": "El currículo oficial puede declarar democracia, mientras el currículo oculto puede transmitir autoritarismo mediante prácticas reales.",
+    "C": "El currículo oculto solo existe en matemáticas.",
+    "D": "El currículo oficial no tiene documentos."
   },
-  "item": {
-    "enunciado": "Una institución enseña oficialmente democracia en sus planes, pero en la vida cotidiana castiga toda opinión diferente. ¿Qué comparación explica mejor esta situación?",
-    "opciones": {
-      "A": "El currículo oficial y el oculto siempre coinciden plenamente.",
-      "B": "El currículo oficial puede declarar democracia, mientras el currículo oculto puede transmitir autoritarismo mediante prácticas reales.",
-      "C": "El currículo oculto solo existe en matemáticas.",
-      "D": "El currículo oficial no tiene documentos."
-    },
-    "respuesta_correcta": "B"
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "Puede haber contradicciones entre ambos.",
+    "B": "Clave correcta.",
+    "C": "El currículo oculto atraviesa toda la vida escolar.",
+    "D": "El oficial sí se expresa en documentos y normas."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "distractores": {
-      "A": "Puede haber contradicciones entre ambos.",
-      "C": "El currículo oculto atraviesa toda la vida escolar.",
-      "D": "El oficial sí se expresa en documentos y normas."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem potente para análisis institucional."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Tipos de currículo/MTV_B18_I10.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

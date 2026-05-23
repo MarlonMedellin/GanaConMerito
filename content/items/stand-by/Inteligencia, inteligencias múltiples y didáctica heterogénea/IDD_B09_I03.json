@@ -1,104 +1,45 @@
 {
   "id_item": "IDD_B09_I03",
-  "archivo_sugerido": "IDD_B09_I03_ajedrez_rompecabezas_inteligencia_logico_matematica.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B09",
-    "nombre": "Inteligencia, inteligencias múltiples y didáctica heterogénea",
-    "estado_en_lista": "Bloque 9 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 3 de 4"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Inteligencia Lógico-Matemática y Didáctica",
+  "tema": "Inteligencia, inteligencias múltiples y didáctica heterogénea",
+  "subtema": "Desconocimiento de la relación entre actividades estratégicas y desarrollo del razonamiento lógico-matemático.",
+  "competencia": "Identificación de habilidades cognitivas potenciadas por actividades didácticas",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "BAJA_MEDIA",
+  "claim": "El evaluado reconoce que ciertas dinámicas lúdicas pueden potenciar razonamiento lógico-matemático sin limitar la enseñanza a ejercicios repetitivos.",
+  "evidencia": "Selecciona el tipo de inteligencia principalmente asociado con ajedrez, rompecabezas, estrategia y patrones.",
+  "tarea": "Relacionar una dinámica didáctica con la inteligencia que potencia.",
+  "contexto": "Al finalizar un periodo escolar, un docente implementa dinámicas guiadas con ajedrez, rompecabezas, patrones, secuencias y retos de estrategia para fortalecer el razonamiento de sus estudiantes.",
+  "enunciado": "Al finalizar un periodo escolar, un docente implementa dinámicas guiadas con ajedrez, rompecabezas, patrones, secuencias y retos de estrategia para fortalecer el razonamiento de sus estudiantes.\n\n¿Qué tipo de inteligencia se potencia principalmente con estas actividades?",
+  "opciones": {
+    "A": "Inteligencia musical, porque el estudiante reconoce ritmos y melodías.",
+    "B": "Inteligencia lógico-matemática, porque se ejercitan razonamiento, patrones, estrategia y solución de problemas.",
+    "C": "Inteligencia naturalista, porque se clasifican plantas y animales.",
+    "D": "Inteligencia exclusivamente lingüística, porque se memorizan definiciones."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante identifica la inteligencia lógico-matemática como la que se potencia mediante actividades de razonamiento, patrones, estrategia, ajedrez y rompecabezas.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, primaria, didáctica de las matemáticas o pedagogía.",
-    "blueprint": {
-      "problematica_principal": "Desconocimiento de la relación entre actividades estratégicas y desarrollo del razonamiento lógico-matemático.",
-      "fuente_autorizada": [
-        "Howard Gardner",
-        "Inteligencias múltiples",
-        "Didáctica de las matemáticas",
-        "Pensamiento lógico",
-        "Aprendizaje mediante juego"
-      ],
-      "componente_modulo": "Inteligencia Lógico-Matemática y Didáctica",
-      "competencia": "Identificación de habilidades cognitivas potenciadas por actividades didácticas",
-      "afirmacion": "Actividades como ajedrez y rompecabezas favorecen razonamiento lógico, anticipación, patrones, clasificación y solución de problemas.",
-      "evidencia_observable": "Identifica la inteligencia lógico-matemática como principal foco de estas dinámicas.",
-      "tipo_de_evidencia": "Reconocimiento conceptual aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado reconoce que ciertas dinámicas lúdicas pueden potenciar razonamiento lógico-matemático sin limitar la enseñanza a ejercicios repetitivos.",
-    "evidencia_observable": "Selecciona el tipo de inteligencia principalmente asociado con ajedrez, rompecabezas, estrategia y patrones.",
-    "tarea_cognitiva": "Relacionar una dinámica didáctica con la inteligencia que potencia.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Baja-Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Reducir el ajedrez a actividad elitista",
-        "revision": "El ítem lo presenta como ejemplo de estrategia, junto a rompecabezas y dinámicas guiadas."
-      },
-      {
-        "riesgo": "Confundir inteligencia con talento fijo",
-        "revision": "La pregunta habla de potenciar, no de clasificar definitivamente al estudiante."
-      },
-      {
-        "riesgo": "Asumir que solo existe inteligencia lógico-matemática",
-        "revision": "El bloque reconoce diversidad, aunque este ítem focaliza una inteligencia."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque el caso no se centra en ritmo o melodía.",
+    "B": "Clave correcta.",
+    "C": "Es incorrecta porque no trata clasificación naturalista.",
+    "D": "Es incorrecta porque no se trata de memorizar definiciones."
   },
-  "item": {
-    "enunciado": "Al finalizar un periodo escolar, un docente implementa dinámicas guiadas con ajedrez, rompecabezas, patrones, secuencias y retos de estrategia para fortalecer el razonamiento de sus estudiantes.\n\n¿Qué tipo de inteligencia se potencia principalmente con estas actividades?",
-    "opciones": {
-      "A": "Inteligencia musical, porque el estudiante reconoce ritmos y melodías.",
-      "B": "Inteligencia lógico-matemática, porque se ejercitan razonamiento, patrones, estrategia y solución de problemas.",
-      "C": "Inteligencia naturalista, porque se clasifican plantas y animales.",
-      "D": "Inteligencia exclusivamente lingüística, porque se memorizan definiciones."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem no clasifica a los estudiantes como poseedores fijos de una inteligencia, sino que reconoce una capacidad que puede potenciarse."
   },
-  "ficha_tecnica": {
-    "componente": "Inteligencia Lógico-Matemática y Didáctica",
-    "competencia": "Identificación de habilidades cognitivas potenciadas por actividades didácticas",
-    "claim_evaluado": "El evaluado reconoce que ciertas dinámicas lúdicas pueden potenciar razonamiento lógico-matemático sin limitar la enseñanza a ejercicios repetitivos.",
-    "evidencia": "Selecciona el tipo de inteligencia principalmente asociado con ajedrez, rompecabezas, estrategia y patrones.",
-    "proceso_cognitivo": "Reconocimiento conceptual aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Baja-Media",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Asocia erróneamente la actividad con procesamiento musical.",
-      "C": "Corresponde a clasificación de elementos naturales, no al foco del caso.",
-      "D": "Reduce la actividad a lenguaje y memoria."
-    },
-    "fuente_autorizada": [
-      "Howard Gardner",
-      "Inteligencias múltiples",
-      "Didáctica de las matemáticas",
-      "Pensamiento lógico",
-      "Aprendizaje mediante juego"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque el caso no se centra en ritmo o melodía.",
-    "opcion_C": "Es incorrecta porque no trata clasificación naturalista.",
-    "opcion_D": "Es incorrecta porque no se trata de memorizar definiciones.",
-    "distractores": {
-      "A": "Es incorrecta porque el caso no se centra en ritmo o melodía.",
-      "C": "Es incorrecta porque no trata clasificación naturalista.",
-      "D": "Es incorrecta porque no se trata de memorizar definiciones."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no clasifica a los estudiantes como poseedores fijos de una inteligencia, sino que reconoce una capacidad que puede potenciarse."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 4 preguntas sobre inteligencia, inteligencias múltiples y didáctica heterogénea."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Inteligencia, inteligencias múltiples y didáctica heterogénea/IDD_B09_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

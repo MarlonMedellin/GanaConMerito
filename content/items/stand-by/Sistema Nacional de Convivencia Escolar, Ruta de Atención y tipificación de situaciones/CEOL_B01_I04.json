@@ -1,106 +1,45 @@
 {
   "id_item": "CEOL_B01_I04",
-  "archivo_sugerido": "CEOL_B01_I04_niveles_sistema_nacional_convivencia.json",
-  "bloque": {
-    "codigo_bloque": "CEOL_B01",
-    "nombre": "Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones",
-    "estado_en_lista": "Bloque 1 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 4 de 6"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Sistema Nacional de Convivencia Escolar",
+  "tema": "Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones",
+  "subtema": "Desconocimiento de la estructura por niveles del Sistema Nacional de Convivencia Escolar.",
+  "competencia": "Comprensión de estructura institucional",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "BAJA",
+  "claim": "El evaluado comprende que la convivencia escolar no se gestiona solo desde el aula, sino mediante una estructura articulada en niveles nacional, territorial y escolar.",
+  "evidencia": "Selecciona los niveles que organizan el Sistema Nacional de Convivencia Escolar.",
+  "tarea": "Reconocer la organización institucional del Sistema Nacional de Convivencia Escolar.",
+  "contexto": "Una coordinación académica explica que los casos de convivencia no son responsabilidad aislada de un docente, sino que hacen parte de un sistema articulado por instancias de distinto nivel.",
+  "enunciado": "Una coordinación académica explica que los casos de convivencia no son responsabilidad aislada de un docente, sino que hacen parte de un sistema articulado por instancias de distinto nivel.\n\n¿Cuáles son los tres niveles jerárquicos bajo los cuales se articula el Sistema Nacional de Convivencia Escolar en Colombia?",
+  "opciones": {
+    "A": "Nacional, territorial y escolar.",
+    "B": "Rectoral, docente y estudiantil.",
+    "C": "Académico, financiero y administrativo.",
+    "D": "Familiar, recreativo y extracurricular."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce los niveles de articulación del Sistema Nacional de Convivencia Escolar.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con convivencia escolar, orientación, coordinación, docencia o gestión institucional.",
-    "blueprint": {
-      "problematica_principal": "Desconocimiento de la estructura por niveles del Sistema Nacional de Convivencia Escolar.",
-      "fuente_autorizada": [
-        "Ley 1620 de 2013",
-        "Decreto 1965 de 2013",
-        "Comité Nacional de Convivencia Escolar",
-        "Comités territoriales y escolares de convivencia"
-      ],
-      "componente_modulo": "Sistema Nacional de Convivencia Escolar",
-      "competencia": "Comprensión de estructura institucional",
-      "afirmacion": "El Sistema Nacional de Convivencia Escolar se articula en niveles nacional, territorial y escolar.",
-      "evidencia_observable": "Identifica los tres niveles de articulación del sistema de convivencia.",
-      "tipo_de_evidencia": "Reconocimiento normativo aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que la convivencia escolar no se gestiona solo desde el aula, sino mediante una estructura articulada en niveles nacional, territorial y escolar.",
-    "evidencia_observable": "Selecciona los niveles que organizan el Sistema Nacional de Convivencia Escolar.",
-    "tarea_cognitiva": "Reconocer la organización institucional del Sistema Nacional de Convivencia Escolar.",
-    "tipo_de_pregunta": "Pregunta conceptual normativa",
-    "dificultad_esperada": "Baja",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confusión entre niveles del sistema y cargos escolares",
-        "revision": "Los distractores diferencian órganos o cargos internos de la estructura normativa del sistema."
-      },
-      {
-        "riesgo": "Memorización normativa",
-        "revision": "La pregunta evalúa reconocimiento básico de estructura institucional."
-      },
-      {
-        "riesgo": "Ambigüedad en la clave",
-        "revision": "La opción correcta contiene la tríada normativa nacional, territorial y escolar."
-      },
-      {
-        "riesgo": "Sesgo por experiencia administrativa",
-        "revision": "No exige haber participado en comités territoriales o nacionales."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque rector, docente y estudiante son actores de la comunidad educativa, no niveles del sistema.",
+    "C": "Es incorrecta porque son áreas de gestión institucional, no niveles del Sistema Nacional de Convivencia Escolar.",
+    "D": "Es incorrecta porque no corresponde a la organización normativa del sistema."
   },
-  "item": {
-    "enunciado": "Una coordinación académica explica que los casos de convivencia no son responsabilidad aislada de un docente, sino que hacen parte de un sistema articulado por instancias de distinto nivel.\n\n¿Cuáles son los tres niveles jerárquicos bajo los cuales se articula el Sistema Nacional de Convivencia Escolar en Colombia?",
-    "opciones": {
-      "A": "Nacional, territorial y escolar.",
-      "B": "Rectoral, docente y estudiantil.",
-      "C": "Académico, financiero y administrativo.",
-      "D": "Familiar, recreativo y extracurricular."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem evalúa una estructura normativa básica y no requiere experiencia en cargos administrativos."
   },
-  "ficha_tecnica": {
-    "componente": "Sistema Nacional de Convivencia Escolar",
-    "competencia": "Comprensión de estructura institucional",
-    "claim_evaluado": "El evaluado comprende que la convivencia escolar no se gestiona solo desde el aula, sino mediante una estructura articulada en niveles nacional, territorial y escolar.",
-    "evidencia": "Selecciona los niveles que organizan el Sistema Nacional de Convivencia Escolar.",
-    "proceso_cognitivo": "Reconocimiento normativo aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Baja",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Confunde niveles del sistema con actores internos de la institución.",
-      "C": "Presenta áreas de gestión, no niveles de convivencia escolar.",
-      "D": "Menciona ámbitos sociales o escolares que no corresponden a la estructura normativa."
-    },
-    "fuente_autorizada": [
-      "Ley 1620 de 2013",
-      "Decreto 1965 de 2013",
-      "Comité Nacional de Convivencia Escolar",
-      "Comités territoriales y escolares de convivencia"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque rector, docente y estudiante son actores de la comunidad educativa, no niveles del sistema.",
-    "opcion_C": "Es incorrecta porque son áreas de gestión institucional, no niveles del Sistema Nacional de Convivencia Escolar.",
-    "opcion_D": "Es incorrecta porque no corresponde a la organización normativa del sistema.",
-    "distractores": {
-      "B": "Es incorrecta porque rector, docente y estudiante son actores de la comunidad educativa, no niveles del sistema.",
-      "C": "Es incorrecta porque son áreas de gestión institucional, no niveles del Sistema Nacional de Convivencia Escolar.",
-      "D": "Es incorrecta porque no corresponde a la organización normativa del sistema."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem evalúa una estructura normativa básica y no requiere experiencia en cargos administrativos."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 6 preguntas sobre Sistema Nacional de Convivencia Escolar y Ruta de Atención Integral."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/CEOL_B01_I04.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

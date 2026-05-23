@@ -1,40 +1,45 @@
 {
   "id_item": "MTV_B10_I06",
-  "archivo_sugerido": "MTV_B10_I06_gestion_academica_vs_gestion_comunitaria.json",
-  "proposito_de_uso": "Evaluar si el aspirante diferencia la gestión académica de la gestión comunitaria en una prueba de autoevaluación o Likert.",
-  "blueprint": {
-    "componente_modulo": "Dimensiones de evaluación docente",
-    "competencia": "Diferenciación entre gestión académica y gestión comunitaria",
-    "afirmacion": "La gestión académica se relaciona con currículo, planeación, enseñanza, evaluación y seguimiento del aprendizaje; la gestión comunitaria se relaciona con familias, entorno, participación, convivencia y relaciones con la comunidad.",
-    "evidencia_observable": "Clasifica correctamente ejemplos de actuaciones docentes en la dimensión correspondiente.",
-    "tipo_de_evidencia": "Comprensión comparativa aplicada",
-    "dificultad_esperada": "Media",
-    "clave": "C"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Prueba psicotécnica y escala Likert",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "En una autoevaluación docente, se debe diferenciar la gestión académica de la gestión comunitaria. ¿Cuál opción presenta una diferencia correcta?",
+  "enunciado": "En una autoevaluación docente, se debe diferenciar la gestión académica de la gestión comunitaria. ¿Cuál opción presenta una diferencia correcta?",
+  "opciones": {
+    "A": "La gestión académica solo trata de reuniones con padres y la comunitaria solo de calificaciones.",
+    "B": "Ambas significan exactamente lo mismo y no se pueden diferenciar.",
+    "C": "La gestión académica se centra en currículo, planeación, enseñanza y evaluación; la gestión comunitaria en familias, entorno, participación y relación escuela-comunidad.",
+    "D": "La gestión comunitaria no hace parte del desempeño docente."
   },
-  "item": {
-    "enunciado": "En una autoevaluación docente, se debe diferenciar la gestión académica de la gestión comunitaria. ¿Cuál opción presenta una diferencia correcta?",
-    "opciones": {
-      "A": "La gestión académica solo trata de reuniones con padres y la comunitaria solo de calificaciones.",
-      "B": "Ambas significan exactamente lo mismo y no se pueden diferenciar.",
-      "C": "La gestión académica se centra en currículo, planeación, enseñanza y evaluación; la gestión comunitaria en familias, entorno, participación y relación escuela-comunidad.",
-      "D": "La gestión comunitaria no hace parte del desempeño docente."
-    },
-    "respuesta_correcta": "C"
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Invierte y reduce las dimensiones.",
+    "B": "Niega diferencias funcionales claras.",
+    "C": "Clave correcta.",
+    "D": "Desconoce el papel de la escuela en relación con su comunidad."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "distractores": {
-      "A": "Invierte y reduce las dimensiones.",
-      "B": "Niega diferencias funcionales claras.",
-      "D": "Desconoce el papel de la escuela en relación con su comunidad."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem permite ubicar acciones profesionales sin desvalorizar ninguna dimensión."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem permite ubicar acciones profesionales sin desvalorizar ninguna dimensión."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem útil para pruebas de autoevaluación docente."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Prueba psicotécnica y escala Likert/MTV_B10_I06.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

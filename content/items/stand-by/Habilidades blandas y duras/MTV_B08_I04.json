@@ -1,40 +1,45 @@
 {
   "id_item": "MTV_B08_I04",
-  "archivo_sugerido": "MTV_B08_I04_inteligencia_emocional_goleman_habilidades_blandas.json",
-  "proposito_de_uso": "Evaluar si el aspirante reconoce la relación entre inteligencia emocional y habilidades blandas.",
-  "blueprint": {
-    "componente_modulo": "Inteligencia emocional",
-    "competencia": "Relación entre inteligencia emocional y desempeño interpersonal",
-    "afirmacion": "Las habilidades blandas están estrechamente ligadas a la inteligencia emocional, especialmente al autoconocimiento, autocontrol, empatía, motivación y habilidades sociales.",
-    "evidencia_observable": "Selecciona la inteligencia emocional como base de competencias blandas.",
-    "tipo_de_evidencia": "Reconocimiento conceptual aplicado",
-    "dificultad_esperada": "Media",
-    "clave": "A"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Habilidades blandas y duras",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Según la teoría de Daniel Goleman, las habilidades blandas como la empatía, el autocontrol, la comunicación asertiva, la colaboración y el manejo de conflictos están estrechamente relacionadas con un tipo específico de inteligencia humana.",
+  "enunciado": "Según la teoría de Daniel Goleman, las habilidades blandas como la empatía, el autocontrol, la comunicación asertiva, la colaboración y el manejo de conflictos están estrechamente relacionadas con un tipo específico de inteligencia humana.\n\n¿Con cuál inteligencia se relacionan principalmente?",
+  "opciones": {
+    "A": "Inteligencia emocional.",
+    "B": "Inteligencia exclusivamente memorística.",
+    "C": "Inteligencia mecánica de repetición.",
+    "D": "Inteligencia administrativa documental."
   },
-  "item": {
-    "enunciado": "Según la teoría de Daniel Goleman, las habilidades blandas como la empatía, el autocontrol, la comunicación asertiva, la colaboración y el manejo de conflictos están estrechamente relacionadas con un tipo específico de inteligencia humana.\n\n¿Con cuál inteligencia se relacionan principalmente?",
-    "opciones": {
-      "A": "Inteligencia emocional.",
-      "B": "Inteligencia exclusivamente memorística.",
-      "C": "Inteligencia mecánica de repetición.",
-      "D": "Inteligencia administrativa documental."
-    },
-    "respuesta_correcta": "A"
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "La memoria no explica por sí sola la empatía ni la regulación emocional.",
+    "C": "La repetición mecánica no corresponde a habilidades socioemocionales.",
+    "D": "La gestión documental no define la inteligencia emocional."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "distractores": {
-      "B": "La memoria no explica por sí sola la empatía ni la regulación emocional.",
-      "C": "La repetición mecánica no corresponde a habilidades socioemocionales.",
-      "D": "La gestión documental no define la inteligencia emocional."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem evalúa una asociación teórica ampliamente usada en pruebas comportamentales."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem evalúa una asociación teórica ampliamente usada en pruebas comportamentales."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Puede usarse como pregunta conceptual directa."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I04.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

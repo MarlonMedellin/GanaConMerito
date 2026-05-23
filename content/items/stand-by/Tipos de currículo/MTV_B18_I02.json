@@ -1,36 +1,45 @@
 {
   "id_item": "MTV_B18_I02",
-  "archivo_sugerido": "MTV_B18_I02_curriculo_oficial_leyes_decretos_lineamientos.json",
-  "proposito_de_uso": "Evaluar si el aspirante reconoce el currículo oficial.",
-  "blueprint": {
-    "componente_modulo": "Currículo oficial",
-    "competencia": "Reconocimiento de fuentes normativas del currículo",
-    "afirmacion": "El currículo oficial está constituido por leyes, decretos, lineamientos, estándares, orientaciones y disposiciones formales del sistema educativo.",
-    "evidencia_observable": "Identifica el currículo oficial cuando se habla de mandatos del Ministerio de Educación y normas vigentes.",
-    "tipo_de_evidencia": "Reconocimiento normativo",
-    "dificultad_esperada": "Media",
-    "clave": "A"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Tipos de currículo",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Una institución organiza sus planes atendiendo leyes, decretos, lineamientos, estándares y orientaciones emitidas por el Ministerio de Educación y demás autoridades competentes.",
+  "enunciado": "Una institución organiza sus planes atendiendo leyes, decretos, lineamientos, estándares y orientaciones emitidas por el Ministerio de Educación y demás autoridades competentes.\n\n¿De qué tipo de currículo se está hablando principalmente?",
+  "opciones": {
+    "A": "Currículo oficial.",
+    "B": "Currículo oculto exclusivamente emocional.",
+    "C": "Currículo nulo.",
+    "D": "Currículo improvisado sin norma."
   },
-  "item": {
-    "enunciado": "Una institución organiza sus planes atendiendo leyes, decretos, lineamientos, estándares y orientaciones emitidas por el Ministerio de Educación y demás autoridades competentes.\n\n¿De qué tipo de currículo se está hablando principalmente?",
-    "opciones": {
-      "A": "Currículo oficial.",
-      "B": "Currículo oculto exclusivamente emocional.",
-      "C": "Currículo nulo.",
-      "D": "Currículo improvisado sin norma."
-    },
-    "respuesta_correcta": "A"
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "El currículo oculto no se define por normas oficiales.",
+    "C": "El currículo nulo se refiere a contenidos omitidos.",
+    "D": "La situación describe regulación formal, no improvisación."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "distractores": {
-      "B": "El currículo oculto no se define por normas oficiales.",
-      "C": "El currículo nulo se refiere a contenidos omitidos.",
-      "D": "La situación describe regulación formal, no improvisación."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem claro para currículo oficial."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Tipos de currículo/MTV_B18_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

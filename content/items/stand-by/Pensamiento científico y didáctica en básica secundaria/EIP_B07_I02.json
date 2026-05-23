@@ -1,40 +1,45 @@
 {
   "id_item": "EIP_B07_I02",
-  "archivo_sugerido": "EIP_B07_I02_experimentacion_observacion_fenomenos_fisicos.json",
-  "proposito_de_uso": "Evaluar si el aspirante reconoce la función de la observación y la experimentación en la enseñanza de ciencias.",
-  "blueprint": {
-    "componente_modulo": "Didáctica de las ciencias",
-    "competencia": "Diseño de experiencias de indagación científica",
-    "afirmacion": "La observación y la experimentación permiten que el estudiante relacione conceptos científicos con fenómenos reales.",
-    "evidencia_observable": "Selecciona una estrategia didáctica que promueve indagación y comprensión.",
-    "tipo_de_evidencia": "Juicio didáctico aplicado",
-    "dificultad_esperada": "Media",
-    "clave": "A"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Pensamiento científico y didáctica en básica secundaria",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "Un grupo de estudiantes no comprende la relación entre masa, fuerza y aceleración. En lugar de pedirles repetir la fórmula, el docente organiza una experiencia con objetos de distinta masa, empujes controlados, observación y comparación de resultados.",
+  "enunciado": "Un grupo de estudiantes no comprende la relación entre masa, fuerza y aceleración. En lugar de pedirles repetir la fórmula, el docente organiza una experiencia con objetos de distinta masa, empujes controlados, observación y comparación de resultados.\n\n¿Qué aporta esta estrategia al pensamiento científico?",
+  "opciones": {
+    "A": "Permite relacionar conceptos con fenómenos observables, formular explicaciones y comprender la ley física en contexto.",
+    "B": "Impide aprender ciencia porque no se limita a copiar la fórmula.",
+    "C": "Reemplaza toda explicación científica por juego sin sentido.",
+    "D": "Elimina la necesidad de analizar resultados."
   },
-  "item": {
-    "enunciado": "Un grupo de estudiantes no comprende la relación entre masa, fuerza y aceleración. En lugar de pedirles repetir la fórmula, el docente organiza una experiencia con objetos de distinta masa, empujes controlados, observación y comparación de resultados.\n\n¿Qué aporta esta estrategia al pensamiento científico?",
-    "opciones": {
-      "A": "Permite relacionar conceptos con fenómenos observables, formular explicaciones y comprender la ley física en contexto.",
-      "B": "Impide aprender ciencia porque no se limita a copiar la fórmula.",
-      "C": "Reemplaza toda explicación científica por juego sin sentido.",
-      "D": "Elimina la necesidad de analizar resultados."
-    },
-    "respuesta_correcta": "A"
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Confunde ciencia con copia mecánica.",
+    "C": "Desvaloriza una experiencia experimental con propósito didáctico.",
+    "D": "Niega el análisis, que es central en la indagación científica."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "distractores": {
-      "B": "Confunde ciencia con copia mecánica.",
-      "C": "Desvaloriza una experiencia experimental con propósito didáctico.",
-      "D": "Niega el análisis, que es central en la indagación científica."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem favorece enseñanza activa sin excluir el rigor conceptual."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem favorece enseñanza activa sin excluir el rigor conceptual."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem apto para banco con revisión didáctica de ciencias."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Pensamiento científico y didáctica en básica secundaria/EIP_B07_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

@@ -1,104 +1,45 @@
 {
   "id_item": "IDD_B06_I02",
-  "archivo_sugerido": "IDD_B06_I02_estudiante_barreras_intereses_visuales_ajustes_aula.json",
-  "bloque": {
-    "codigo_bloque": "IDD_B06",
-    "nombre": "Inclusión práctica vs. segregación en aula",
-    "estado_en_lista": "Bloque 6 de 17",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 2 de 5"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Praxis pedagógica en inclusión",
+  "tema": "Inclusión práctica vs. segregación en aula",
+  "subtema": "Uso inadecuado de intereses del estudiante para aislarlo con actividades visuales sin relación con el aprendizaje común.",
+  "competencia": "Diseño didáctico con ajustes no segregadores",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado comprende que los ajustes deben conectar las fortalezas e intereses del estudiante con el propósito de aprendizaje compartido por el grupo.",
+  "evidencia": "Selecciona una estrategia que usa recursos visuales para favorecer participación y aprendizaje común.",
+  "tarea": "Elegir una intervención inclusiva frente a barreras de aprendizaje e intereses visuales.",
+  "contexto": "Un estudiante diagnosticado con barreras de aprendizaje muestra alto interés por imágenes, mapas, colores y organizadores gráficos. El docente va a trabajar el mismo tema con todo el grupo y quiere aplicar ajustes sin excluirlo.",
+  "enunciado": "Un estudiante diagnosticado con barreras de aprendizaje muestra alto interés por imágenes, mapas, colores y organizadores gráficos. El docente va a trabajar el mismo tema con todo el grupo y quiere aplicar ajustes sin excluirlo.\n\n¿Cómo debe diseñar la clase?",
+  "opciones": {
+    "A": "Darle dibujos sin relación con el tema para que permanezca tranquilo mientras el grupo avanza.",
+    "B": "Retirarlo del aula cada vez que el tema sea complejo.",
+    "C": "Usar apoyos visuales, organizadores gráficos, ejemplos concretos y formas alternativas de expresión vinculadas al mismo propósito de aprendizaje del grupo.",
+    "D": "Aplicarle la misma guía escrita sin cambios, aunque no pueda acceder a ella."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante diseña una clase con ajustes para un estudiante con barreras de aprendizaje e intereses visuales sin excluirlo ni segregarlo.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión educativa, diseño curricular, apoyo pedagógico u orientación escolar.",
-    "blueprint": {
-      "problematica_principal": "Uso inadecuado de intereses del estudiante para aislarlo con actividades visuales sin relación con el aprendizaje común.",
-      "fuente_autorizada": [
-        "Decreto 1421 de 2017",
-        "DUA",
-        "PIAR",
-        "Ajustes razonables",
-        "Educación inclusiva"
-      ],
-      "componente_modulo": "Praxis pedagógica en inclusión",
-      "competencia": "Diseño didáctico con ajustes no segregadores",
-      "afirmacion": "Los intereses del estudiante pueden usarse como vía de acceso al aprendizaje común, no como excusa para tareas aisladas.",
-      "evidencia_observable": "Reconoce una planeación que incorpora apoyos visuales al mismo propósito de clase.",
-      "tipo_de_evidencia": "Diseño didáctico aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende que los ajustes deben conectar las fortalezas e intereses del estudiante con el propósito de aprendizaje compartido por el grupo.",
-    "evidencia_observable": "Selecciona una estrategia que usa recursos visuales para favorecer participación y aprendizaje común.",
-    "tarea_cognitiva": "Elegir una intervención inclusiva frente a barreras de aprendizaje e intereses visuales.",
-    "tipo_de_pregunta": "Caso situacional de diseño didáctico inclusivo",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Usar intereses visuales como entretenimiento aislado",
-        "revision": "La clave los conecta con el objetivo de aprendizaje."
-      },
-      {
-        "riesgo": "Reducir expectativas para el estudiante",
-        "revision": "La opción correcta mantiene el propósito común con apoyos."
-      },
-      {
-        "riesgo": "Segregar dentro del aula",
-        "revision": "El ítem exige participación en la actividad del grupo."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque mantiene al estudiante ocupado pero excluido del aprendizaje.",
+    "B": "Es incorrecta porque retira al estudiante del aula como solución.",
+    "C": "Clave correcta.",
+    "D": "Es incorrecta porque aplicar lo mismo sin ajustes puede impedir su participación."
   },
-  "item": {
-    "enunciado": "Un estudiante diagnosticado con barreras de aprendizaje muestra alto interés por imágenes, mapas, colores y organizadores gráficos. El docente va a trabajar el mismo tema con todo el grupo y quiere aplicar ajustes sin excluirlo.\n\n¿Cómo debe diseñar la clase?",
-    "opciones": {
-      "A": "Darle dibujos sin relación con el tema para que permanezca tranquilo mientras el grupo avanza.",
-      "B": "Retirarlo del aula cada vez que el tema sea complejo.",
-      "C": "Usar apoyos visuales, organizadores gráficos, ejemplos concretos y formas alternativas de expresión vinculadas al mismo propósito de aprendizaje del grupo.",
-      "D": "Aplicarle la misma guía escrita sin cambios, aunque no pueda acceder a ella."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem usa los intereses del estudiante como fortaleza y evita convertirlos en mecanismo de segregación."
   },
-  "ficha_tecnica": {
-    "componente": "Praxis pedagógica en inclusión",
-    "competencia": "Diseño didáctico con ajustes no segregadores",
-    "claim_evaluado": "El evaluado comprende que los ajustes deben conectar las fortalezas e intereses del estudiante con el propósito de aprendizaje compartido por el grupo.",
-    "evidencia": "Selecciona una estrategia que usa recursos visuales para favorecer participación y aprendizaje común.",
-    "proceso_cognitivo": "Diseño didáctico aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Usa el interés visual para aislarlo del aprendizaje.",
-      "B": "Propone exclusión física o pedagógica.",
-      "D": "Desconoce barreras de acceso al aprendizaje."
-    },
-    "fuente_autorizada": [
-      "Decreto 1421 de 2017",
-      "DUA",
-      "PIAR",
-      "Ajustes razonables",
-      "Educación inclusiva"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque mantiene al estudiante ocupado pero excluido del aprendizaje.",
-    "opcion_B": "Es incorrecta porque retira al estudiante del aula como solución.",
-    "opcion_D": "Es incorrecta porque aplicar lo mismo sin ajustes puede impedir su participación.",
-    "distractores": {
-      "A": "Es incorrecta porque mantiene al estudiante ocupado pero excluido del aprendizaje.",
-      "B": "Es incorrecta porque retira al estudiante del aula como solución.",
-      "D": "Es incorrecta porque aplicar lo mismo sin ajustes puede impedir su participación."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem usa los intereses del estudiante como fortaleza y evita convertirlos en mecanismo de segregación."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 5 preguntas sobre inclusión práctica vs. segregación en aula."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Inclusión práctica vs. segregación en aula/IDD_B06_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

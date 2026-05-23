@@ -1,40 +1,45 @@
 {
   "id_item": "MTV_B10_I02",
-  "archivo_sugerido": "MTV_B10_I02_proposicion_limitante_a_veces_ajustes_razonables.json",
-  "proposito_de_uso": "Evaluar si el aspirante reconoce el efecto de una expresión limitante en una proposición Likert.",
-  "blueprint": {
-    "componente_modulo": "Estructura de proposiciones Likert",
-    "competencia": "Análisis de palabras limitantes",
-    "afirmacion": "Palabras como 'a veces', 'solo cuando puedo' o 'si me queda tiempo' pueden limitar indebidamente un deber profesional permanente.",
-    "evidencia_observable": "Identifica que una proposición aparentemente positiva puede ser inadecuada si restringe una obligación funcional.",
-    "tipo_de_evidencia": "Análisis semántico-actitudinal",
-    "dificultad_esperada": "Alta",
-    "clave": "C"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Prueba psicotécnica y escala Likert",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "En una escala Likert aparece la proposición: 'A veces implemento ajustes razonables cuando un estudiante los necesita'.",
+  "enunciado": "En una escala Likert aparece la proposición: 'A veces implemento ajustes razonables cuando un estudiante los necesita'.\n\n¿Por qué esta proposición debe analizarse con cuidado?",
+  "opciones": {
+    "A": "Porque toda proposición que mencione ajustes razonables debe aceptarse sin leerla completa.",
+    "B": "Porque los ajustes razonables son opcionales y dependen del estado de ánimo del docente.",
+    "C": "Porque la expresión 'a veces' limita una obligación profesional que debe atenderse cuando el estudiante lo requiere, según el caso y los apoyos necesarios.",
+    "D": "Porque las proposiciones con palabras positivas siempre se responden en acuerdo total."
   },
-  "item": {
-    "enunciado": "En una escala Likert aparece la proposición: 'A veces implemento ajustes razonables cuando un estudiante los necesita'.\n\n¿Por qué esta proposición debe analizarse con cuidado?",
-    "opciones": {
-      "A": "Porque toda proposición que mencione ajustes razonables debe aceptarse sin leerla completa.",
-      "B": "Porque los ajustes razonables son opcionales y dependen del estado de ánimo del docente.",
-      "C": "Porque la expresión 'a veces' limita una obligación profesional que debe atenderse cuando el estudiante lo requiere, según el caso y los apoyos necesarios.",
-      "D": "Porque las proposiciones con palabras positivas siempre se responden en acuerdo total."
-    },
-    "respuesta_correcta": "C"
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Ignora la necesidad de leer toda la proposición.",
+    "B": "Convierte un deber profesional en una decisión emocional.",
+    "C": "Clave correcta.",
+    "D": "Supone una regla automática que puede llevar a error."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "distractores": {
-      "A": "Ignora la necesidad de leer toda la proposición.",
-      "B": "Convierte un deber profesional en una decisión emocional.",
-      "D": "Supone una regla automática que puede llevar a error."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem enseña a leer cuidadosamente sin sugerir una respuesta mecánica para toda prueba."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem enseña a leer cuidadosamente sin sugerir una respuesta mecánica para toda prueba."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem clave para proposiciones limitantes."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Prueba psicotécnica y escala Likert/MTV_B10_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

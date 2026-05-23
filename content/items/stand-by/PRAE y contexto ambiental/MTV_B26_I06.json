@@ -1,20 +1,45 @@
 {
-    "id_item": "MTV_B26_I06",
-    "tema": "PRAE y PEI",
-    "competencia": "Articulación institucional",
-    "dificultad": "Media",
-    "enunciado": "El comité ambiental propone que el PRAE no sea una actividad suelta, sino que se integre al horizonte institucional, al currículo, a la convivencia, al servicio social y a los proyectos de aula.\n\n¿Qué articulación está buscando?",
-    "opciones": {
-        "A": "Articulación del PRAE con el PEI.",
-        "B": "Separación total entre ambiente y escuela.",
-        "C": "Reducción del PRAE a reciclaje ocasional.",
-        "D": "Eliminación de responsabilidades institucionales."
-    },
-    "respuesta_correcta": "A",
-    "justificacion_clave": "El PRAE debe hacer parte del proyecto educativo institucional y de la gestión curricular y comunitaria.",
-    "distractores": {
-        "B": "La propuesta integra, no separa.",
-        "C": "No se limita a reciclaje ocasional.",
-        "D": "Fortalece la responsabilidad institucional."
-    }
+  "id_item": "MTV_B26_I06",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "PRAE y contexto ambiental",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "",
+  "enunciado": "El comité ambiental propone que el PRAE no sea una actividad suelta, sino que se integre al horizonte institucional, al currículo, a la convivencia, al servicio social y a los proyectos de aula.\n\n¿Qué articulación está buscando?",
+  "opciones": {
+    "A": "Articulación del PRAE con el PEI.",
+    "B": "Separación total entre ambiente y escuela.",
+    "C": "Reducción del PRAE a reciclaje ocasional.",
+    "D": "Eliminación de responsabilidades institucionales."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Distractor funcional.",
+    "C": "Distractor funcional.",
+    "D": "Distractor funcional."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/PRAE y contexto ambiental/MTV_B26_I06.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
+  }
 }

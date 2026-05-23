@@ -1,101 +1,45 @@
 {
   "id_item": "NFL_B06_I02",
-  "archivo_sugerido": "NFL_B06_I02_acto_legislativo_reforma_constitucion.json",
-  "bloque": {
-    "codigo_bloque": "NFL_B06",
-    "nombre": "Tipos de normas: acto legislativo, ley ordinaria y ley estatutaria",
-    "estado_en_lista": "Bloque 6 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 2 de 4"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Acto Legislativo",
+  "tema": "Tipos de normas - acto legislativo, ley ordinaria y ley estatutaria",
+  "subtema": "Confundir acto legislativo con ley ordinaria o acto administrativo.",
+  "competencia": "Reconocimiento de mecanismos de reforma constitucional",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado comprende que modificar la Constitución exige un procedimiento especial distinto al de una ley ordinaria.",
+  "evidencia": "Selecciona el objeto correcto del acto legislativo.",
+  "tarea": "Reconocer una categoría normativa de reforma constitucional.",
+  "contexto": "El Congreso quiere modificar un artículo de la Constitución Política. Algunos estudiantes preguntan si basta con aprobar una ley ordinaria.",
+  "enunciado": "El Congreso quiere modificar un artículo de la Constitución Política. Algunos estudiantes preguntan si basta con aprobar una ley ordinaria.\n\n¿Qué figura normativa corresponde a una reforma constitucional tramitada por el Congreso?",
+  "opciones": {
+    "A": "Acto Legislativo.",
+    "B": "Circular interna de rectoría.",
+    "C": "Manual de convivencia escolar.",
+    "D": "Boletín académico."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante identifica el acto legislativo como mecanismo de reforma constitucional por parte del Congreso.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con ciudadanía, derecho constitucional, ciencias sociales o normatividad educativa.",
-    "blueprint": {
-      "problematica_principal": "Confundir acto legislativo con ley ordinaria o acto administrativo.",
-      "fuente_autorizada": [
-        "Constitución Política de Colombia",
-        "Artículo 374 Constitución Política",
-        "Reforma de la Constitución",
-        "Congreso de la República"
-      ],
-      "componente_modulo": "Acto Legislativo",
-      "competencia": "Reconocimiento de mecanismos de reforma constitucional",
-      "afirmacion": "El acto legislativo es una vía mediante la cual el Congreso reforma la Constitución.",
-      "evidencia_observable": "Identifica que su objeto es modificar el texto constitucional, no reglamentar asuntos administrativos ordinarios.",
-      "tipo_de_evidencia": "Reconocimiento normativo",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que modificar la Constitución exige un procedimiento especial distinto al de una ley ordinaria.",
-    "evidencia_observable": "Selecciona el objeto correcto del acto legislativo.",
-    "tarea_cognitiva": "Reconocer una categoría normativa de reforma constitucional.",
-    "tipo_de_pregunta": "Pregunta normativa de reconocimiento",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confundir acto legislativo con acto administrativo",
-        "revision": "Los distractores separan trámites administrativos de reforma constitucional."
-      },
-      {
-        "riesgo": "Exigir conocer todos los debates del trámite",
-        "revision": "El ítem evalúa la función esencial."
-      },
-      {
-        "riesgo": "Desactualización normativa",
-        "revision": "Se recomienda revisión jurídica antes del banco definitivo."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque una circular no reforma la Constitución.",
+    "C": "Es incorrecta porque el Manual de Convivencia no tiene jerarquía constitucional.",
+    "D": "Es incorrecta porque un boletín académico no es norma jurídica."
   },
-  "item": {
-    "enunciado": "El Congreso quiere modificar un artículo de la Constitución Política. Algunos estudiantes preguntan si basta con aprobar una ley ordinaria.\n\n¿Qué figura normativa corresponde a una reforma constitucional tramitada por el Congreso?",
-    "opciones": {
-      "A": "Acto Legislativo.",
-      "B": "Circular interna de rectoría.",
-      "C": "Manual de convivencia escolar.",
-      "D": "Boletín académico."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem usa un ejemplo claro y evita tecnicismos innecesarios."
   },
-  "ficha_tecnica": {
-    "componente": "Acto Legislativo",
-    "competencia": "Reconocimiento de mecanismos de reforma constitucional",
-    "claim_evaluado": "El evaluado comprende que modificar la Constitución exige un procedimiento especial distinto al de una ley ordinaria.",
-    "evidencia": "Selecciona el objeto correcto del acto legislativo.",
-    "proceso_cognitivo": "Reconocimiento normativo",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Es una comunicación administrativa, no una reforma constitucional.",
-      "C": "Es un instrumento escolar, no una norma de reforma constitucional.",
-      "D": "Es un reporte académico, no una norma jurídica constitucional."
-    },
-    "fuente_autorizada": [
-      "Constitución Política de Colombia",
-      "Artículo 374 Constitución Política",
-      "Reforma de la Constitución"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque una circular no reforma la Constitución.",
-    "opcion_C": "Es incorrecta porque el Manual de Convivencia no tiene jerarquía constitucional.",
-    "opcion_D": "Es incorrecta porque un boletín académico no es norma jurídica.",
-    "distractores": {
-      "B": "Es incorrecta porque una circular no reforma la Constitución.",
-      "C": "Es incorrecta porque el Manual de Convivencia no tiene jerarquía constitucional.",
-      "D": "Es incorrecta porque un boletín académico no es norma jurídica."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "Aprobado con revisión jurídica recomendada.",
-    "argumento": "El ítem usa un ejemplo claro y evita tecnicismos innecesarios."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Validar redacción final según material jurídico de referencia.",
-    "uso_recomendado": "Puede usarse como ítem 2 de un grupo de 4 preguntas sobre tipos de normas."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Tipos de normas - acto legislativo, ley ordinaria y ley estatutaria/NFL_B06_I02.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

@@ -1,36 +1,45 @@
 {
   "id_item": "MTV_B18_I13",
-  "archivo_sugerido": "MTV_B18_I13_curriculo_real_vs_curriculo_mentiroso.json",
-  "proposito_de_uso": "Evaluar si el aspirante reconoce incoherencias entre currículo declarado y práctica real.",
-  "blueprint": {
-    "componente_modulo": "Coherencia curricular",
-    "competencia": "Análisis institucional",
-    "afirmacion": "Un currículo se vuelve meramente declarativo cuando lo escrito no se materializa en prácticas pedagógicas reales.",
-    "evidencia_observable": "Identifica incoherencias entre discurso institucional y acción de aula.",
-    "tipo_de_evidencia": "Juicio institucional aplicado",
-    "dificultad_esperada": "Alta",
-    "clave": "C"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Tipos de currículo",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "El PEI afirma que la institución trabaja inclusión, evaluación formativa y participación, pero en las aulas predominan castigos, exclusión, copia mecánica y ausencia de diálogo.",
+  "enunciado": "El PEI afirma que la institución trabaja inclusión, evaluación formativa y participación, pero en las aulas predominan castigos, exclusión, copia mecánica y ausencia de diálogo.\n\n¿Cuál análisis es más pertinente?",
+  "opciones": {
+    "A": "No hay problema porque basta con que el PEI lo diga.",
+    "B": "La práctica de aula nunca se relaciona con el currículo.",
+    "C": "Existe incoherencia entre el currículo declarado y el currículo realmente vivido.",
+    "D": "La inclusión solo debe aparecer en carteleras."
   },
-  "item": {
-    "enunciado": "El PEI afirma que la institución trabaja inclusión, evaluación formativa y participación, pero en las aulas predominan castigos, exclusión, copia mecánica y ausencia de diálogo.\n\n¿Cuál análisis es más pertinente?",
-    "opciones": {
-      "A": "No hay problema porque basta con que el PEI lo diga.",
-      "B": "La práctica de aula nunca se relaciona con el currículo.",
-      "C": "Existe incoherencia entre el currículo declarado y el currículo realmente vivido.",
-      "D": "La inclusión solo debe aparecer en carteleras."
-    },
-    "respuesta_correcta": "C"
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Declarar no basta si no hay práctica coherente.",
+    "B": "La práctica de aula materializa currículo.",
+    "C": "Clave correcta.",
+    "D": "La inclusión requiere acciones reales."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "distractores": {
-      "A": "Declarar no basta si no hay práctica coherente.",
-      "B": "La práctica de aula materializa currículo.",
-      "D": "La inclusión requiere acciones reales."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem sólido para auditoría curricular."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Tipos de currículo/MTV_B18_I13.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

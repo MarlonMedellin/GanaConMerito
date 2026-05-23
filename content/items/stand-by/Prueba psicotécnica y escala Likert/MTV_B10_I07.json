@@ -1,40 +1,45 @@
 {
   "id_item": "MTV_B10_I07",
-  "archivo_sugerido": "MTV_B10_I07_gestion_academica_ejemplo_likert.json",
-  "proposito_de_uso": "Evaluar si el aspirante identifica una proposición de gestión académica.",
-  "blueprint": {
-    "componente_modulo": "Gestión académica",
-    "competencia": "Clasificación de dimensiones evaluadas",
-    "afirmacion": "Las proposiciones sobre planeación, evaluación, estrategias didácticas y seguimiento del aprendizaje pertenecen principalmente a la gestión académica.",
-    "evidencia_observable": "Reconoce una actuación centrada en enseñanza y aprendizaje.",
-    "tipo_de_evidencia": "Clasificación conceptual aplicada",
-    "dificultad_esperada": "Media",
-    "clave": "A"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Gestión educativa",
+  "tema": "Prueba psicotécnica y escala Likert",
+  "subtema": "Aplicación pedagógica",
+  "competencia": "Juicio pedagógico",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Evalúa competencia aplicada en contexto educativo.",
+  "evidencia": "Selecciona la mejor respuesta.",
+  "tarea": "Resolver situación planteada.",
+  "contexto": "En una escala Likert aparece la proposición: 'Ajusto mi planeación didáctica a partir de los resultados de evaluación y de las necesidades de aprendizaje de mis estudiantes'.",
+  "enunciado": "En una escala Likert aparece la proposición: 'Ajusto mi planeación didáctica a partir de los resultados de evaluación y de las necesidades de aprendizaje de mis estudiantes'.\n\n¿A qué dimensión corresponde principalmente?",
+  "opciones": {
+    "A": "Gestión académica.",
+    "B": "Gestión financiera personal.",
+    "C": "Gestión de mantenimiento físico de la planta.",
+    "D": "Gestión comercial de servicios."
   },
-  "item": {
-    "enunciado": "En una escala Likert aparece la proposición: 'Ajusto mi planeación didáctica a partir de los resultados de evaluación y de las necesidades de aprendizaje de mis estudiantes'.\n\n¿A qué dimensión corresponde principalmente?",
-    "opciones": {
-      "A": "Gestión académica.",
-      "B": "Gestión financiera personal.",
-      "C": "Gestión de mantenimiento físico de la planta.",
-      "D": "Gestión comercial de servicios."
-    },
-    "respuesta_correcta": "A"
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "No se refiere a finanzas personales.",
+    "C": "No trata de infraestructura.",
+    "D": "No se refiere a una venta o servicio comercial."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "distractores": {
-      "B": "No se refiere a finanzas personales.",
-      "C": "No trata de infraestructura.",
-      "D": "No se refiere a una venta o servicio comercial."
-    }
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem evalúa clasificación de dimensión sin ambigüedad relevante."
   },
-  "revision_fairness": {
-    "dictamen": "Aprobado",
-    "argumento": "El ítem evalúa clasificación de dimensión sin ambigüedad relevante."
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem directo para gestión académica."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Prueba psicotécnica y escala Likert/MTV_B10_I07.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

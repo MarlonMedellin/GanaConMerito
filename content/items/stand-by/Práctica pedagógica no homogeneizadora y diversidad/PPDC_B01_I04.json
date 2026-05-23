@@ -1,99 +1,45 @@
 {
   "id_item": "PPDC_B01_I04",
-  "archivo_sugerido": "PPDC_B01_I04_dua_multiples_formas_aprendizaje.json",
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce que el docente debe proponer estrategias didácticas que ofrezcan múltiples formas de motivación, representación, acción y expresión para favorecer la participación de estudiantes diversos.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes de aula, coordinación académica o gestión académica.",
-    "blueprint": {
-      "problematica_principal": "Diseño limitado de estrategias didácticas frente a la diversidad de formas de aprender y participar.",
-      "fuente_autorizada": [
-        "Diseño Universal para el Aprendizaje",
-        "Enfoque de educación inclusiva",
-        "Orientaciones pedagógicas institucionales",
-        "Lineamientos curriculares del Ministerio de Educación Nacional"
-      ],
-      "componente_modulo": "Praxis Pedagógica",
-      "competencia": "Diseño de estrategias didácticas inclusivas",
-      "afirmacion": "El docente debe ofrecer múltiples formas de motivación, representación, acción y expresión.",
-      "evidencia_observable": "Selecciona estrategias didácticas que permiten diferentes formas de acceder a la información, participar, demostrar aprendizajes y comprometerse con la tarea.",
-      "tipo_de_evidencia": "Juicio didáctico aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "D"
-    },
-    "claim": "El evaluado comprende que una praxis pedagógica inclusiva amplía las oportunidades de aprendizaje mediante variedad de recursos, formas de participación, productos y apoyos.",
-    "evidencia_observable": "Identifica una estrategia coherente con múltiples formas de motivación, representación, acción y expresión.",
-    "tarea_cognitiva": "Seleccionar una alternativa didáctica alineada con diversidad, participación y accesibilidad del aprendizaje.",
-    "tipo_de_pregunta": "Caso situacional de juicio didáctico",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Uso técnico de DUA",
-        "revision": "El ítem no exige nombrar el DUA; evalúa sus principios mediante acciones concretas."
-      },
-      {
-        "riesgo": "Sesgo por acceso tecnológico",
-        "revision": "La opción correcta combina recursos y productos diversos, no necesariamente digitales."
-      },
-      {
-        "riesgo": "Confusión entre flexibilidad y falta de rigor",
-        "revision": "La clave conserva propósitos y criterios comunes, aunque ofrece rutas diversas."
-      },
-      {
-        "riesgo": "Ambigüedad en la clave",
-        "revision": "La opción correcta es la única que incluye motivación, representación, acción y expresión."
-      }
-    ]
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Praxis Pedagógica",
+  "tema": "Práctica pedagógica no homogeneizadora y diversidad",
+  "subtema": "Diseño limitado de estrategias didácticas frente a la diversidad de formas de aprender y participar.",
+  "competencia": "Diseño de estrategias didácticas inclusivas",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado comprende que una praxis pedagógica inclusiva amplía las oportunidades de aprendizaje mediante variedad de recursos, formas de participación, productos y apoyos.",
+  "evidencia": "Identifica una estrategia coherente con múltiples formas de motivación, representación, acción y expresión.",
+  "tarea": "Seleccionar una alternativa didáctica alineada con diversidad, participación y accesibilidad del aprendizaje.",
+  "contexto": "Un docente quiere mejorar su praxis pedagógica en un grupo con estudiantes que aprenden, participan y expresan sus comprensiones de formas distintas. Busca evitar que todos dependan de una sola explicación, un solo material y una única forma de entregar el producto.",
+  "enunciado": "Un docente quiere mejorar su praxis pedagógica en un grupo con estudiantes que aprenden, participan y expresan sus comprensiones de formas distintas. Busca evitar que todos dependan de una sola explicación, un solo material y una única forma de entregar el producto.\n\n¿Qué tipo de estrategias didácticas debería plantear?",
+  "opciones": {
+    "A": "Estrategias centradas en una única lectura, una única explicación y una única prueba escrita para todos.",
+    "B": "Estrategias sin criterios comunes, en las que cada estudiante haga cualquier actividad sin relación con el propósito de aprendizaje.",
+    "C": "Estrategias basadas solo en repetición y memorización, porque así todos reciben exactamente la misma información.",
+    "D": "Estrategias con diversas formas de motivar, representar la información, participar, actuar y expresar lo aprendido con criterios claros."
   },
-  "item": {
-    "enunciado": "Un docente quiere mejorar su praxis pedagógica en un grupo con estudiantes que aprenden, participan y expresan sus comprensiones de formas distintas. Busca evitar que todos dependan de una sola explicación, un solo material y una única forma de entregar el producto.\n\n¿Qué tipo de estrategias didácticas debería plantear?",
-    "opciones": {
-      "A": "Estrategias centradas en una única lectura, una única explicación y una única prueba escrita para todos.",
-      "B": "Estrategias sin criterios comunes, en las que cada estudiante haga cualquier actividad sin relación con el propósito de aprendizaje.",
-      "C": "Estrategias basadas solo en repetición y memorización, porque así todos reciben exactamente la misma información.",
-      "D": "Estrategias con diversas formas de motivar, representar la información, participar, actuar y expresar lo aprendido con criterios claros."
-    },
-    "respuesta_correcta": "D"
+  "clave": "D",
+  "justificacion_clave": "D",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque conserva una única ruta de acceso y expresión del aprendizaje.",
+    "B": "Es incorrecta porque flexibilizar no significa abandonar propósitos ni criterios.",
+    "C": "Es incorrecta porque la repetición uniforme no responde a la diversidad del aprendizaje.",
+    "D": "Clave correcta."
   },
-  "ficha_tecnica": {
-    "componente": "Praxis Pedagógica",
-    "competencia": "Diseño de estrategias didácticas inclusivas",
-    "claim_evaluado": "El evaluado comprende que una praxis pedagógica inclusiva amplía las oportunidades de aprendizaje mediante variedad de recursos, formas de participación, productos y apoyos.",
-    "evidencia": "Identifica una estrategia coherente con múltiples formas de motivación, representación, acción y expresión.",
-    "proceso_cognitivo": "Análisis y juicio didáctico",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "D",
-    "distractores": {
-      "A": "Mantiene una ruta única de acceso, participación y evaluación.",
-      "B": "Confunde flexibilidad con ausencia de propósito y criterios.",
-      "C": "Reduce la enseñanza a repetición uniforme."
-    },
-    "fuente_autorizada": [
-      "Diseño Universal para el Aprendizaje",
-      "Enfoque de educación inclusiva",
-      "Orientaciones pedagógicas institucionales",
-      "Lineamientos curriculares del Ministerio de Educación Nacional"
-    ]
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem no exige tecnologías específicas ni conocimiento técnico del DUA. Evalúa la comprensión de un principio inclusivo: ampliar formas de acceso, participación y expresión sin perder rigor pedagógico."
   },
-  "justificacion_editorial": {
-    "clave": "D",
-    "opcion_A": "Es incorrecta porque conserva una única ruta de acceso y expresión del aprendizaje.",
-    "opcion_B": "Es incorrecta porque flexibilizar no significa abandonar propósitos ni criterios.",
-    "opcion_C": "Es incorrecta porque la repetición uniforme no responde a la diversidad del aprendizaje.",
-    "distractores": {
-      "A": "Es incorrecta porque conserva una única ruta de acceso y expresión del aprendizaje.",
-      "B": "Es incorrecta porque flexibilizar no significa abandonar propósitos ni criterios.",
-      "C": "Es incorrecta porque la repetición uniforme no responde a la diversidad del aprendizaje."
-    }
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem no exige tecnologías específicas ni conocimiento técnico del DUA. Evalúa la comprensión de un principio inclusivo: ampliar formas de acceso, participación y expresión sin perder rigor pedagógico."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre práctica pedagógica no homogeneizadora y diversidad."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Práctica pedagógica no homogeneizadora y diversidad/PPDC_B01_I04.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

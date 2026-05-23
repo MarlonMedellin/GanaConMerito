@@ -1,106 +1,45 @@
 {
   "id_item": "CEOL_B02_I01",
-  "archivo_sugerido": "CEOL_B02_I01_gestion_disciplinaria_sin_vulnerar_derechos.json",
-  "bloque": {
-    "codigo_bloque": "CEOL_B02",
-    "nombre": "Enfoque de derechos, debido proceso y justicia restaurativa",
-    "estado_en_lista": "Bloque 2 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 1 de 6"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Convivencia Escolar y Debido Proceso",
+  "tema": "Enfoque de derechos, debido proceso y justicia restaurativa",
+  "subtema": "Confusión entre gestión disciplinaria y sanción punitiva que vulnera derechos.",
+  "competencia": "Gestión disciplinaria con enfoque de derechos",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado comprende que la finalidad de la ley no es castigar de manera arbitraria, sino orientar la convivencia, garantizar derechos, promover responsabilidad y aplicar medidas proporcionales, pedagógicas y restaurativas.",
+  "evidencia": "Selecciona una respuesta institucional que atiende la falta sin desconocer el debido proceso ni los derechos del estudiante.",
+  "tarea": "Analizar una situación disciplinaria y elegir la actuación institucional compatible con enfoque de derechos.",
+  "contexto": "Un estudiante incumple reiteradamente sus deberes y comete una falta grave prevista en el Manual de Convivencia. Algunos docentes proponen imponer una sanción inmediata sin escucharlo, argumentando que así se protege la autoridad institucional.",
+  "enunciado": "Un estudiante incumple reiteradamente sus deberes y comete una falta grave prevista en el Manual de Convivencia. Algunos docentes proponen imponer una sanción inmediata sin escucharlo, argumentando que así se protege la autoridad institucional.\n\n¿Cuál es el objetivo de la gestión disciplinaria según un enfoque de derechos?",
+  "opciones": {
+    "A": "Castigar de forma inmediata para que el estudiante sirva de ejemplo, aunque no se escuche su versión.",
+    "B": "Evitar cualquier consecuencia porque aplicar medidas disciplinarias siempre vulnera derechos.",
+    "C": "Aplicar el debido proceso, escuchar a las partes, valorar la falta y definir medidas proporcionales, pedagógicas y restaurativas.",
+    "D": "Trasladar la responsabilidad únicamente a la familia y retirar al estudiante de las actividades escolares."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante reconoce que la gestión disciplinaria escolar debe tener finalidad formativa, restaurativa y protectora de derechos, incluso cuando un estudiante incumple deberes o comete una falta grave.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con cargos docentes, directivos docentes, orientación escolar, coordinación o gestión de convivencia.",
-    "blueprint": {
-      "problematica_principal": "Confusión entre gestión disciplinaria y sanción punitiva que vulnera derechos.",
-      "fuente_autorizada": [
-        "Ley 1620 de 2013",
-        "Ley 1098 de 2006",
-        "Manual de convivencia institucional",
-        "Jurisprudencia constitucional sobre debido proceso escolar"
-      ],
-      "componente_modulo": "Convivencia Escolar y Debido Proceso",
-      "competencia": "Gestión disciplinaria con enfoque de derechos",
-      "afirmacion": "La intervención disciplinaria escolar debe corregir, formar, reparar y proteger derechos sin incurrir en arbitrariedad.",
-      "evidencia_observable": "Reconoce que ante una falta grave la institución debe aplicar debido proceso, proporcionalidad, escucha, reparación y medidas pedagógicas.",
-      "tipo_de_evidencia": "Juicio normativo y pedagógico aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende que la finalidad de la ley no es castigar de manera arbitraria, sino orientar la convivencia, garantizar derechos, promover responsabilidad y aplicar medidas proporcionales, pedagógicas y restaurativas.",
-    "evidencia_observable": "Selecciona una respuesta institucional que atiende la falta sin desconocer el debido proceso ni los derechos del estudiante.",
-    "tarea_cognitiva": "Analizar una situación disciplinaria y elegir la actuación institucional compatible con enfoque de derechos.",
-    "tipo_de_pregunta": "Caso situacional de juicio profesional",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confundir garantía de derechos con permisividad",
-        "revision": "La clave conserva responsabilidad y consecuencias, pero exige debido proceso y finalidad formativa."
-      },
-      {
-        "riesgo": "Normalización de sanciones humillantes",
-        "revision": "Los distractores permiten identificar respuestas arbitrarias o vulneradoras."
-      },
-      {
-        "riesgo": "Ambigüedad entre falta grave y castigo inmediato",
-        "revision": "La opción correcta diferencia gravedad de arbitrariedad: una falta grave exige protocolo, no reacción impulsiva."
-      },
-      {
-        "riesgo": "Sesgo contra estudiantes con antecedentes disciplinarios",
-        "revision": "El ítem no etiqueta al estudiante; evalúa la actuación institucional frente a la conducta."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque una sanción inmediata sin escuchar al estudiante puede vulnerar el debido proceso.",
+    "B": "Es incorrecta porque garantizar derechos no significa eliminar responsabilidades o consecuencias.",
+    "C": "Clave correcta.",
+    "D": "Es incorrecta porque la institución mantiene responsabilidades de formación, protección y convivencia."
   },
-  "item": {
-    "enunciado": "Un estudiante incumple reiteradamente sus deberes y comete una falta grave prevista en el Manual de Convivencia. Algunos docentes proponen imponer una sanción inmediata sin escucharlo, argumentando que así se protege la autoridad institucional.\n\n¿Cuál es el objetivo de la gestión disciplinaria según un enfoque de derechos?",
-    "opciones": {
-      "A": "Castigar de forma inmediata para que el estudiante sirva de ejemplo, aunque no se escuche su versión.",
-      "B": "Evitar cualquier consecuencia porque aplicar medidas disciplinarias siempre vulnera derechos.",
-      "C": "Aplicar el debido proceso, escuchar a las partes, valorar la falta y definir medidas proporcionales, pedagógicas y restaurativas.",
-      "D": "Trasladar la responsabilidad únicamente a la familia y retirar al estudiante de las actividades escolares."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem evalúa la actuación institucional y no etiqueta al estudiante como problemático. Diferencia responsabilidad, reparación y debido proceso de castigo arbitrario."
   },
-  "ficha_tecnica": {
-    "componente": "Convivencia Escolar y Debido Proceso",
-    "competencia": "Gestión disciplinaria con enfoque de derechos",
-    "claim_evaluado": "El evaluado comprende que la finalidad de la ley no es castigar de manera arbitraria, sino orientar la convivencia, garantizar derechos, promover responsabilidad y aplicar medidas proporcionales, pedagógicas y restaurativas.",
-    "evidencia": "Selecciona una respuesta institucional que atiende la falta sin desconocer el debido proceso ni los derechos del estudiante.",
-    "proceso_cognitivo": "Análisis y juicio normativo-pedagógico",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Desconoce el derecho a ser escuchado y convierte la disciplina en castigo ejemplarizante.",
-      "B": "Confunde enfoque de derechos con ausencia de consecuencias.",
-      "D": "Traslada la responsabilidad institucional y limita la participación educativa del estudiante."
-    },
-    "fuente_autorizada": [
-      "Ley 1620 de 2013",
-      "Ley 1098 de 2006",
-      "Manual de convivencia institucional",
-      "Jurisprudencia constitucional sobre debido proceso escolar"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque una sanción inmediata sin escuchar al estudiante puede vulnerar el debido proceso.",
-    "opcion_B": "Es incorrecta porque garantizar derechos no significa eliminar responsabilidades o consecuencias.",
-    "opcion_D": "Es incorrecta porque la institución mantiene responsabilidades de formación, protección y convivencia.",
-    "distractores": {
-      "A": "Es incorrecta porque una sanción inmediata sin escuchar al estudiante puede vulnerar el debido proceso.",
-      "B": "Es incorrecta porque garantizar derechos no significa eliminar responsabilidades o consecuencias.",
-      "D": "Es incorrecta porque la institución mantiene responsabilidades de formación, protección y convivencia."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem evalúa la actuación institucional y no etiqueta al estudiante como problemático. Diferencia responsabilidad, reparación y debido proceso de castigo arbitrario."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 1 de un grupo de 6 preguntas sobre enfoque de derechos, debido proceso y justicia restaurativa."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/CEOL_B02_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

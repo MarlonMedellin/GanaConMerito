@@ -1,101 +1,45 @@
 {
   "id_item": "EIP_B02_I03",
-  "archivo_sugerido": "EIP_B02_I03_principios_integralidad_participacion_ludica.json",
-  "bloque": {
-    "codigo_bloque": "EIP_B02",
-    "nombre": "Marco legal del preescolar y organización del nivel",
-    "estado_en_lista": "Bloque 2 de 7",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 3 de 5"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Principios del preescolar",
+  "tema": "Marco legal del preescolar y organización del nivel",
+  "subtema": "Diseñar prácticas de preescolar centradas en escolarización temprana rígida, desconociendo integralidad, participación y lúdica.",
+  "competencia": "Comprensión pedagógica del nivel",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado comprende que el preescolar tiene principios pedagógicos propios y no debe tratarse como primaria adelantada.",
+  "evidencia": "Selecciona los principios correctos del nivel preescolar.",
+  "tarea": "Reconocer principios pedagógicos normativos del preescolar.",
+  "contexto": "Una docente nueva planea el grado transición como si fuera primero de primaria: dictados extensos, filas silenciosas, repetición mecánica y poca exploración. La coordinación le recuerda que el preescolar tiene principios pedagógicos propios.",
+  "enunciado": "Una docente nueva planea el grado transición como si fuera primero de primaria: dictados extensos, filas silenciosas, repetición mecánica y poca exploración. La coordinación le recuerda que el preescolar tiene principios pedagógicos propios.\n\n¿Cuáles son los principios que deben orientar la educación preescolar?",
+  "opciones": {
+    "A": "Integralidad, participación y lúdica.",
+    "B": "Castigo, memorización y silencio absoluto.",
+    "C": "Competencia individual, reprobación y calificación numérica.",
+    "D": "Aislamiento, repetición y disciplina punitiva."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante identifica los principios pedagógicos del preescolar establecidos por su marco reglamentario.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con educación preescolar, pedagogía infantil, docencia, coordinación o planeación curricular.",
-    "blueprint": {
-      "problematica_principal": "Diseñar prácticas de preescolar centradas en escolarización temprana rígida, desconociendo integralidad, participación y lúdica.",
-      "fuente_autorizada": [
-        "Decreto 2247 de 1997",
-        "Educación preescolar",
-        "Pedagogía infantil",
-        "Desarrollo integral"
-      ],
-      "componente_modulo": "Principios del preescolar",
-      "competencia": "Comprensión pedagógica del nivel",
-      "afirmacion": "La educación preescolar debe orientarse por principios de integralidad, participación y lúdica.",
-      "evidencia_observable": "Reconoce que el aprendizaje en preescolar debe ser activo, participativo, lúdico e integral.",
-      "tipo_de_evidencia": "Reconocimiento pedagógico normativo",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "A"
-    },
-    "claim": "El evaluado comprende que el preescolar tiene principios pedagógicos propios y no debe tratarse como primaria adelantada.",
-    "evidencia_observable": "Selecciona los principios correctos del nivel preescolar.",
-    "tarea_cognitiva": "Reconocer principios pedagógicos normativos del preescolar.",
-    "tipo_de_pregunta": "Pregunta normativa-pedagógica de reconocimiento",
-    "dificultad_esperada": "Media",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confundir preescolar con entrenamiento académico rígido",
-        "revision": "La clave incluye lúdica e integralidad."
-      },
-      {
-        "riesgo": "Desconocer la voz y participación infantil",
-        "revision": "La opción correcta incluye participación."
-      },
-      {
-        "riesgo": "Reducir lúdica a entretenimiento sin propósito",
-        "revision": "El ítem la plantea como principio pedagógico."
-      }
-    ]
+  "clave": "A",
+  "justificacion_clave": "A",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Es incorrecta porque castigo y repetición mecánica no corresponden al enfoque del nivel.",
+    "C": "Es incorrecta porque reprobación y competencia individual no son principios del preescolar.",
+    "D": "Es incorrecta porque aislamiento y disciplina punitiva contradicen la participación y la lúdica."
   },
-  "item": {
-    "enunciado": "Una docente nueva planea el grado transición como si fuera primero de primaria: dictados extensos, filas silenciosas, repetición mecánica y poca exploración. La coordinación le recuerda que el preescolar tiene principios pedagógicos propios.\n\n¿Cuáles son los principios que deben orientar la educación preescolar?",
-    "opciones": {
-      "A": "Integralidad, participación y lúdica.",
-      "B": "Castigo, memorización y silencio absoluto.",
-      "C": "Competencia individual, reprobación y calificación numérica.",
-      "D": "Aislamiento, repetición y disciplina punitiva."
-    },
-    "respuesta_correcta": "A"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem protege el carácter propio del preescolar y evita prácticas escolarizantes prematuras."
   },
-  "ficha_tecnica": {
-    "componente": "Principios del preescolar",
-    "competencia": "Comprensión pedagógica del nivel",
-    "claim_evaluado": "El evaluado comprende que el preescolar tiene principios pedagógicos propios y no debe tratarse como primaria adelantada.",
-    "evidencia": "Selecciona los principios correctos del nivel preescolar.",
-    "proceso_cognitivo": "Reconocimiento pedagógico normativo",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media",
-    "respuesta_correcta": "A",
-    "distractores": {
-      "B": "Contradice el enfoque pedagógico del preescolar.",
-      "C": "Introduce lógicas evaluativas impropias del nivel.",
-      "D": "Representa una práctica punitiva y no participativa."
-    },
-    "fuente_autorizada": [
-      "Decreto 2247 de 1997",
-      "Educación preescolar",
-      "Pedagogía infantil"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "A",
-    "opcion_B": "Es incorrecta porque castigo y repetición mecánica no corresponden al enfoque del nivel.",
-    "opcion_C": "Es incorrecta porque reprobación y competencia individual no son principios del preescolar.",
-    "opcion_D": "Es incorrecta porque aislamiento y disciplina punitiva contradicen la participación y la lúdica.",
-    "distractores": {
-      "B": "Es incorrecta porque castigo y repetición mecánica no corresponden al enfoque del nivel.",
-      "C": "Es incorrecta porque reprobación y competencia individual no son principios del preescolar.",
-      "D": "Es incorrecta porque aislamiento y disciplina punitiva contradicen la participación y la lúdica."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem protege el carácter propio del preescolar y evita prácticas escolarizantes prematuras."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión pedagógica posterior.",
-    "uso_recomendado": "Puede usarse como ítem 3 de un grupo de 5 preguntas sobre marco legal del preescolar y organización del nivel."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Marco legal del preescolar y organización del nivel/EIP_B02_I03.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

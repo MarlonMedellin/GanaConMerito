@@ -1,102 +1,45 @@
 {
   "id_item": "CEOL_B08_I05",
-  "archivo_sugerido": "CEOL_B08_I05_habilidades_blandas_inteligencia_emocional_saber_ser_convivir.json",
-  "bloque": {
-    "codigo_bloque": "CEOL_B08",
-    "nombre": "Enseñar, formar, motivación didáctica y competencias socioemocionales",
-    "estado_en_lista": "Bloque 8 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 5 de 5"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Habilidades Blandas y Saber Ser/Convivir",
+  "tema": "Enseñar, formar, motivación didáctica y competencias socioemocionales",
+  "subtema": "Desconocimiento del componente socioemocional de las competencias profesionales docentes.",
+  "competencia": "Inteligencia emocional y convivencia profesional",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "BAJA",
+  "claim": "El evaluado comprende que las habilidades blandas no son accesorias, sino parte del desempeño profesional docente y de la convivencia escolar.",
+  "evidencia": "Selecciona la relación correcta entre habilidades blandas, inteligencia emocional y Saber Ser/Convivir.",
+  "tarea": "Clasificar habilidades comportamentales dentro del enfoque de competencias.",
+  "contexto": "Un docente debe gestionar conflictos, trabajar en equipo, comunicarse con respeto y manejar el estrés en situaciones complejas de aula. En una evaluación de competencias se pregunta qué dimensión profesional se está valorando.",
+  "enunciado": "Un docente debe gestionar conflictos, trabajar en equipo, comunicarse con respeto y manejar el estrés en situaciones complejas de aula. En una evaluación de competencias se pregunta qué dimensión profesional se está valorando.\n\n¿Qué tipo de inteligencia y qué componente de la competencia se evalúan principalmente?",
+  "opciones": {
+    "A": "Inteligencia lógico-matemática y componente exclusivo de Saber Conocer.",
+    "B": "Inteligencia emocional y componente de Saber Ser/Saber Convivir.",
+    "C": "Inteligencia espacial y componente técnico de manejo de recursos.",
+    "D": "Memoria enciclopédica y componente de repetición conceptual."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante identifica que gestionar conflictos, trabajar en equipo y manejar el estrés corresponden a inteligencia emocional y al componente actitudinal o socioemocional de la competencia.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, orientación escolar, coordinación o gestión de convivencia.",
-    "blueprint": {
-      "problematica_principal": "Desconocimiento del componente socioemocional de las competencias profesionales docentes.",
-      "fuente_autorizada": [
-        "Competencias comportamentales docentes",
-        "Manual de funciones docente",
-        "Competencias socioemocionales",
-        "Convivencia escolar"
-      ],
-      "componente_modulo": "Habilidades Blandas y Saber Ser/Convivir",
-      "competencia": "Inteligencia emocional y convivencia profesional",
-      "afirmacion": "La gestión de conflictos, el trabajo en equipo y el manejo del estrés se relacionan con inteligencia emocional y Saber Ser/Convivir.",
-      "evidencia_observable": "Reconoce el tipo de inteligencia y el componente de competencia evaluado.",
-      "tipo_de_evidencia": "Reconocimiento conceptual aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "B"
-    },
-    "claim": "El evaluado comprende que las habilidades blandas no son accesorias, sino parte del desempeño profesional docente y de la convivencia escolar.",
-    "evidencia_observable": "Selecciona la relación correcta entre habilidades blandas, inteligencia emocional y Saber Ser/Convivir.",
-    "tarea_cognitiva": "Clasificar habilidades comportamentales dentro del enfoque de competencias.",
-    "tipo_de_pregunta": "Pregunta conceptual aplicada",
-    "dificultad_esperada": "Baja",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Confundir habilidades blandas con debilidad profesional",
-        "revision": "El ítem las presenta como competencias necesarias para el desempeño docente."
-      },
-      {
-        "riesgo": "Ambigüedad entre saber, saber hacer y saber ser",
-        "revision": "La clave identifica el componente actitudinal y convivencial."
-      },
-      {
-        "riesgo": "Sesgo por personalidad",
-        "revision": "La pregunta evalúa competencias desarrollables, no rasgos fijos de personalidad."
-      }
-    ]
+  "clave": "B",
+  "justificacion_clave": "B",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque no se evalúa principalmente razonamiento lógico-matemático.",
+    "B": "Clave correcta.",
+    "C": "Es incorrecta porque no se trata de habilidades espaciales.",
+    "D": "Es incorrecta porque no se centra en memoria enciclopédica."
   },
-  "item": {
-    "enunciado": "Un docente debe gestionar conflictos, trabajar en equipo, comunicarse con respeto y manejar el estrés en situaciones complejas de aula. En una evaluación de competencias se pregunta qué dimensión profesional se está valorando.\n\n¿Qué tipo de inteligencia y qué componente de la competencia se evalúan principalmente?",
-    "opciones": {
-      "A": "Inteligencia lógico-matemática y componente exclusivo de Saber Conocer.",
-      "B": "Inteligencia emocional y componente de Saber Ser/Saber Convivir.",
-      "C": "Inteligencia espacial y componente técnico de manejo de recursos.",
-      "D": "Memoria enciclopédica y componente de repetición conceptual."
-    },
-    "respuesta_correcta": "B"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem evalúa una competencia profesional desarrollable y no juzga rasgos personales fijos."
   },
-  "ficha_tecnica": {
-    "componente": "Habilidades Blandas y Saber Ser/Convivir",
-    "competencia": "Inteligencia emocional y convivencia profesional",
-    "claim_evaluado": "El evaluado comprende que las habilidades blandas no son accesorias, sino parte del desempeño profesional docente y de la convivencia escolar.",
-    "evidencia": "Selecciona la relación correcta entre habilidades blandas, inteligencia emocional y Saber Ser/Convivir.",
-    "proceso_cognitivo": "Reconocimiento conceptual aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Baja",
-    "respuesta_correcta": "B",
-    "distractores": {
-      "A": "Reduce la competencia a conocimiento lógico o conceptual.",
-      "C": "Asocia erróneamente la situación con habilidades espaciales o técnicas.",
-      "D": "Confunde desempeño socioemocional con memoria."
-    },
-    "fuente_autorizada": [
-      "Competencias comportamentales docentes",
-      "Manual de funciones docente",
-      "Competencias socioemocionales",
-      "Convivencia escolar"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "B",
-    "opcion_A": "Es incorrecta porque no se evalúa principalmente razonamiento lógico-matemático.",
-    "opcion_C": "Es incorrecta porque no se trata de habilidades espaciales.",
-    "opcion_D": "Es incorrecta porque no se centra en memoria enciclopédica.",
-    "distractores": {
-      "A": "Es incorrecta porque no se evalúa principalmente razonamiento lógico-matemático.",
-      "C": "Es incorrecta porque no se trata de habilidades espaciales.",
-      "D": "Es incorrecta porque no se centra en memoria enciclopédica."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "El ítem es adecuado desde el punto de vista de fairness.",
-    "argumento": "El ítem evalúa una competencia profesional desarrollable y no juzga rasgos personales fijos."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Ítem aprobado para banco con revisión psicométrica posterior recomendada.",
-    "uso_recomendado": "Puede usarse como ítem 5 de un grupo de 5 preguntas sobre enseñar, formar y competencias socioemocionales."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Enseñar, formar, motivación didáctica y competencias socioemocionales/CEOL_B08_I05.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }

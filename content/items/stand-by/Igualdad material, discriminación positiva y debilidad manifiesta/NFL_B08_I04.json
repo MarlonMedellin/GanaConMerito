@@ -1,104 +1,45 @@
 {
   "id_item": "NFL_B08_I04",
-  "archivo_sugerido": "NFL_B08_I04_apoyo_sin_estigmatizar_debilidad_manifiesta.json",
-  "bloque": {
-    "codigo_bloque": "NFL_B08",
-    "nombre": "Igualdad material, discriminación positiva y debilidad manifiesta",
-    "estado_en_lista": "Bloque 8 de 10",
-    "decision_del_bloque": "Grupo de preguntas",
-    "item_en_grupo": "Ítem 4 de 4"
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "Apoyos sin estigmatización",
+  "tema": "Igualdad material, discriminación positiva y debilidad manifiesta",
+  "subtema": "Aplicar apoyos de forma pública, humillante o segregadora, vulnerando dignidad e intimidad del estudiante.",
+  "competencia": "Diseño de apoyos pedagógicos respetuosos de la dignidad",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA_ALTA",
+  "claim": "El evaluado comprende que los apoyos diferenciados deben garantizar derechos sin producir estigma, segregación o trato degradante.",
+  "evidencia": "Selecciona una estrategia de apoyo respetuosa de la dignidad e intimidad del estudiante.",
+  "tarea": "Elegir una actuación docente inclusiva ante una condición de debilidad manifiesta.",
+  "contexto": "Una estudiante requiere un apoyo diferenciado por una condición de debilidad manifiesta. El docente quiere garantizar igualdad material, pero sin exponerla públicamente ni separarla innecesariamente del grupo.",
+  "enunciado": "Una estudiante requiere un apoyo diferenciado por una condición de debilidad manifiesta. El docente quiere garantizar igualdad material, pero sin exponerla públicamente ni separarla innecesariamente del grupo.\n\n¿Cuál actuación es más adecuada?",
+  "opciones": {
+    "A": "Anunciar ante todo el grupo la condición de la estudiante para que sepan por qué recibe apoyo.",
+    "B": "Negar cualquier ajuste para evitar comentarios de sus compañeros.",
+    "C": "Diseñar apoyos razonables, pertinentes y discretos que le permitan participar con el grupo, protegiendo su dignidad, intimidad y derecho a aprender.",
+    "D": "Asignarle una actividad completamente desconectada del tema para mantenerla ocupada."
   },
-  "diseno_previo": {
-    "proposito_de_uso": "Evaluar si el aspirante identifica una estrategia docente que garantiza igualdad material sin estigmatizar al estudiante.",
-    "poblacion_objetivo": "Aspirantes o participantes en procesos de evaluación, formación o selección relacionados con docencia, inclusión educativa, orientación, convivencia, coordinación o gestión pedagógica.",
-    "blueprint": {
-      "problematica_principal": "Aplicar apoyos de forma pública, humillante o segregadora, vulnerando dignidad e intimidad del estudiante.",
-      "fuente_autorizada": [
-        "Constitución Política de Colombia artículo 13",
-        "Ley 1098 de 2006",
-        "Decreto 1421 de 2017",
-        "Educación inclusiva",
-        "Dignidad humana"
-      ],
-      "componente_modulo": "Apoyos sin estigmatización",
-      "competencia": "Diseño de apoyos pedagógicos respetuosos de la dignidad",
-      "afirmacion": "La igualdad material debe implementarse mediante apoyos pertinentes, confidenciales, no segregadores y respetuosos de la dignidad.",
-      "evidencia_observable": "Reconoce una intervención que brinda apoyo sin exponer ni humillar al estudiante.",
-      "tipo_de_evidencia": "Juicio pedagógico inclusivo aplicado",
-      "formato": "Selección múltiple con única respuesta",
-      "numero_opciones": 4,
-      "clave": "C"
-    },
-    "claim": "El evaluado comprende que los apoyos diferenciados deben garantizar derechos sin producir estigma, segregación o trato degradante.",
-    "evidencia_observable": "Selecciona una estrategia de apoyo respetuosa de la dignidad e intimidad del estudiante.",
-    "tarea_cognitiva": "Elegir una actuación docente inclusiva ante una condición de debilidad manifiesta.",
-    "tipo_de_pregunta": "Caso situacional de inclusión y dignidad",
-    "dificultad_esperada": "Media-Alta",
-    "riesgos_de_fairness": [
-      {
-        "riesgo": "Exponer públicamente al estudiante",
-        "revision": "La clave exige confidencialidad y respeto."
-      },
-      {
-        "riesgo": "Convertir el apoyo en segregación",
-        "revision": "La opción correcta mantiene participación en el aula común."
-      },
-      {
-        "riesgo": "Negar ajustes por temor a trato diferencial",
-        "revision": "La clave legitima apoyos razonables."
-      }
-    ]
+  "clave": "C",
+  "justificacion_clave": "C",
+  "distractores_funcion": {
+    "A": "Es incorrecta porque divulgar una condición puede vulnerar intimidad.",
+    "B": "Es incorrecta porque negar apoyos puede excluir.",
+    "C": "Clave correcta.",
+    "D": "Es incorrecta porque asignar una tarea desconectada no garantiza participación ni aprendizaje."
   },
-  "item": {
-    "enunciado": "Una estudiante requiere un apoyo diferenciado por una condición de debilidad manifiesta. El docente quiere garantizar igualdad material, pero sin exponerla públicamente ni separarla innecesariamente del grupo.\n\n¿Cuál actuación es más adecuada?",
-    "opciones": {
-      "A": "Anunciar ante todo el grupo la condición de la estudiante para que sepan por qué recibe apoyo.",
-      "B": "Negar cualquier ajuste para evitar comentarios de sus compañeros.",
-      "C": "Diseñar apoyos razonables, pertinentes y discretos que le permitan participar con el grupo, protegiendo su dignidad, intimidad y derecho a aprender.",
-      "D": "Asignarle una actividad completamente desconectada del tema para mantenerla ocupada."
-    },
-    "respuesta_correcta": "C"
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem protege dignidad, intimidad y participación efectiva, evitando tanto negación de apoyos como estigmatización."
   },
-  "ficha_tecnica": {
-    "componente": "Apoyos sin estigmatización",
-    "competencia": "Diseño de apoyos pedagógicos respetuosos de la dignidad",
-    "claim_evaluado": "El evaluado comprende que los apoyos diferenciados deben garantizar derechos sin producir estigma, segregación o trato degradante.",
-    "evidencia": "Selecciona una estrategia de apoyo respetuosa de la dignidad e intimidad del estudiante.",
-    "proceso_cognitivo": "Juicio pedagógico inclusivo aplicado",
-    "tipo_de_item": "Selección múltiple con única respuesta",
-    "nivel_de_dificultad": "Media-Alta",
-    "respuesta_correcta": "C",
-    "distractores": {
-      "A": "Expone información sensible y puede estigmatizar.",
-      "B": "Niega la igualdad material y los apoyos necesarios.",
-      "D": "Segrega pedagógicamente y desconecta a la estudiante del aprendizaje común."
-    },
-    "fuente_autorizada": [
-      "Constitución Política de Colombia artículo 13",
-      "Ley 1098 de 2006",
-      "Decreto 1421 de 2017",
-      "Educación inclusiva",
-      "Dignidad humana"
-    ]
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción revisada para comprensión general."
   },
-  "justificacion_editorial": {
-    "clave": "C",
-    "opcion_A": "Es incorrecta porque divulgar una condición puede vulnerar intimidad.",
-    "opcion_B": "Es incorrecta porque negar apoyos puede excluir.",
-    "opcion_D": "Es incorrecta porque asignar una tarea desconectada no garantiza participación ni aprendizaje.",
-    "distractores": {
-      "A": "Es incorrecta porque divulgar una condición puede vulnerar intimidad.",
-      "B": "Es incorrecta porque negar apoyos puede excluir.",
-      "D": "Es incorrecta porque asignar una tarea desconectada no garantiza participación ni aprendizaje."
-    }
-  },
-  "revision_fairness": {
-    "dictamen": "Aprobado con revisión de inclusión recomendada.",
-    "argumento": "El ítem protege dignidad, intimidad y participación efectiva, evitando tanto negación de apoyos como estigmatización."
-  },
-  "dictamen_final": {
-    "estado": "Aprobado",
-    "observacion": "Validar con protocolo institucional de inclusión, DUA y PIAR si aplica.",
-    "uso_recomendado": "Puede usarse como ítem 4 de un grupo de 4 preguntas sobre igualdad material, discriminación positiva y debilidad manifiesta."
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Igualdad material, discriminación positiva y debilidad manifiesta/NFL_B08_I04.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": false
   }
 }
