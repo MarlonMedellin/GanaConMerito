@@ -28,6 +28,14 @@ last_reviewed: 2026-05-10
 - estado: in-progress (fase 3 documental en ejecucion; sin cierre de roadmap)
 - limitaciones: inventario inicial; no se archivaron ni removieron documentos legacy en esta entrega.
 
+## 2026-05-23
+- tipo: governance+ops+content-pipeline
+- modulo: content/items, scripts, docs/database, docs/05-ops
+- resumen: Cierre de gobernanza Claim 6 — dualidad de esquemas. Se implementa política canónica explícita (Markdown = canon; JSON = derivado), conversor `scripts/export-items-to-json.ts` (MD→JSON con trazabilidad SHA-256), schema contrato `docs/database/derived-json-schema-v1.md`, tres comandos npm (`content:export:json`, `content:export:json:all`, `content:export:json:check`) y actualización de `docs/database/content-model.md` y `docs/05-ops/question-bank-load-runbook.md`. Pipeline existente sin cambios. Validaciones: `content:validate` 0 errores, `content:validate:all` 0 errores, `lint` PASS, `content:export:json` 27 ítems exportados sin errores.
+- sprint: Gobernanza banco — cierre Claim 6
+- agente: Antigravity
+- relacionados: scripts/export-items-to-json.ts, docs/database/derived-json-schema-v1.md, docs/database/content-model.md, docs/05-ops/question-bank-load-runbook.md, package.json
+
 ## 2026-05-13
 - tipo: visual+qa+ops+closure
 - modulo: core/ui/authenticated/layout

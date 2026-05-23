@@ -11,7 +11,10 @@ related:
   - OPS-RUNBOOK
   - DEL-QB-LOAD-CLOSE-2026-04-26
   - docs/database/content-model.md
-last_reviewed: 2026-05-08
+last_reviewed: 2026-05-23
+related_new:
+  - docs/database/derived-json-schema-v1.md
+  - scripts/export-items-to-json.ts
 ---
 
 # Runbook mínimo — validación e importación controlada del banco
@@ -26,12 +29,19 @@ Este runbook apunta al corpus operativo cerrado en abril de 2026:
 Fuente del lote controlado:
 - `scripts/question-bank-current-corpus.ts`
 
-## Regla estructural del banco
+## Regla estructural del banco y política JSON
+
 Antes de ejecutar la carga, recordar esta distinción:
-- `content/items/` = carpeta canónica de ítems finales
+- `content/items/` = **fuente canónica** de ítems finales (Markdown con frontmatter)
 - `content/profiles/docente/` = capa operativa de trabajo editorial por perfil
 - la importación actual toma los ítems finales desde `content/items/`
 - la segmentación por perfil en el Markdown es secundaria y opcional; no reemplaza `area`, `subarea` ni `competency`
+
+**Política JSON derivado (2026-05-23):**
+- El JSON en `content/exports/json/` es un **artefacto derivado** del Markdown canónico.
+- Se genera con `npm run content:export:json` para auditoría, analítica e integraciones.
+- **Nunca editar el JSON directamente.** Editar el `.md` y regenerar.
+- Schema del derivado: `docs/database/derived-json-schema-v1.md`
 
 ## Preflight local
 Desde `/home/ubuntu/.openclaw/product`:
@@ -84,7 +94,28 @@ Comportamiento:
 6. Si cambia el corpus aprobado, actualizar primero `question-bank-current-corpus.ts`
 7. Si se agregó segmentación por perfil a ítems existentes, verificar que siga siendo solo una segunda capa y no altere la taxonomía base del archivo
 
+## Exportación JSON derivada (auditoría / analítica)
+
+Para generar un snapshot JSON de los ítems **sin afectar el canon ni el pipeline de importación**:
+
+```bash
+# Corpus activo (27 ítems) → content/exports/json/
+npm run content:export:json
+
+# Todos los ítems de content/items/
+npm run content:export:json:all
+
+# Verificar si el JSON existente está desincronizado con el MD
+npm run content:export:json:check
+```
+
+Resultado esperado:
+- `summary.errors = 0`
+- Archivos JSON en `content/exports/json/<slug>.json`
+- Cada JSON incluye `_source_hash` para trazabilidad
+
 ## Qué no hace este runbook
 - no redefine arquitectura del importador
 - no reemplaza futuras decisiones sobre staging, versionado o pipeline avanzado
 - no convierte `content/profiles/docente/` en fuente de importación primaria
+- no convierte el JSON derivado en fuente canónica

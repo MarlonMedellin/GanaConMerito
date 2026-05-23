@@ -26,6 +26,9 @@
     "content:verify:backfill-active": "tsx scripts/verify-active-bank-backfill.ts",
     "content:import:current": "tsx scripts/import-current-question-bank.ts",
     "content:backfill:active": "tsx scripts/backfill-current-corpus-active.ts",
+    "content:export:json": "tsx scripts/export-items-to-json.ts --current-corpus",
+    "content:export:json:all": "tsx scripts/export-items-to-json.ts --all",
+    "content:export:json:check": "tsx scripts/export-items-to-json.ts --check",
     "audit-home": "tsx scripts/audit-home.ts",
     "audit-login": "tsx scripts/audit-login.ts"
   },

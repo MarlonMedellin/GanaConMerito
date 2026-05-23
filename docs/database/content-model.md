@@ -1,8 +1,14 @@
 # Modelo de contenido
 
+> **Política de gobernanza (2026-05-23):**
+> - **Canon**: Markdown en `content/items/` — fuente única de verdad.
+> - **JSON**: artefacto DERIVADO generado por `scripts/export-items-to-json.ts`.
+>   NO es fuente primaria. Ver schema: [`docs/database/derived-json-schema-v1.md`](./derived-json-schema-v1.md).
+> - Toda edición de contenido ocurre en el `.md`. El JSON se regenera; nunca al revés.
+
 ## Fuente canónica
 
-Los ítems se modelan en Markdown con frontmatter.
+Los ítems se modelan en Markdown con frontmatter ubicado en `content/items/`.
 
 ## Identidad canónica
 
