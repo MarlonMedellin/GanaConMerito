@@ -1,0 +1,45 @@
+{
+  "id_item": "IDD_B01_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Inclusión y convivencia",
+  "tema": "Sesgos culturales",
+  "subtema": "Lenguaje cotidiano y diversidad de tonos de piel",
+  "competencia": "Identificar y mediar sesgos naturalizados en interacciones escolares cotidianas.",
+  "nivel_cognitivo": "ANALISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica y nombra sesgos culturales y raciales naturalizados en las prácticas discursivas cotidianas del aula de clase.",
+  "evidencia": "Selecciona la opción que conceptualiza de forma correcta la discriminación simbólica implícita en la expresión 'color piel' concebida de forma única.",
+  "tarea": "Analizar un episodio de aula relacionado con lápices de colores y determinar el tipo de sesgo cultural que encierra.",
+  "contexto": "Actividad de coloreado donde estudiantes asocian color piel a un único lápiz claro.",
+  "enunciado": "En una actividad de dibujo, varios estudiantes llaman “color piel” a un único tono claro y lo asumen como válido para todas las personas. ¿Qué sesgo debe intervenir el docente?",
+  "opciones": {
+    "A": "Un problema de percepción cromática y de asimilación visual que requiere derivación al área de terapia ocupacional.",
+    "B": "Un obstáculo epistemológico en el aprendizaje de las ciencias sociales que impide clasificar correctamente los grupos étnicos del país.",
+    "C": "Sesgo cultural y racial, porque se asume un tono único de piel y se invisibiliza la diversidad humana.",
+    "D": "Una conducta disruptiva leve que afecta la atención del grupo y debe sancionarse para restaurar la disciplina del aula."
+  },
+  "clave": "C",
+  "justificacion_clave": "Asociar 'color piel' a un único tono claro reproduce una visión eurocéntrica o blanqueada de la humanidad. Se naturaliza una norma de blanquitud que invisibiliza y margina la diversidad de tonos de piel existentes.",
+  "distractores_funcion": {
+    "A": "Error de patologización. Convierte un sesgo sociocultural en una disfunción psicomotora o visual del estudiante.",
+    "B": "Confusión conceptual. Desplaza el problema al ámbito puramente conceptual de clasificación en ciencias sociales, ignorando el sesgo valorativo discriminatorio cotidiano.",
+    "C": "Clave correcta. Señala el sesgo cultural y racial de la naturalización de un tono humano único.",
+    "D": "Error disciplinar. Propone resolver la situación mediante un castigo al comportamiento, invisibilizando la problemática de discriminación simbólica presente en el aula."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Promueve reconocimiento de diversidad sin estigmatizar a estudiantes ni grupos específicos."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Lenguaje simple, contexto cotidiano y opciones claras."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Sesgos culturales, lenguaje inclusivo y discriminación cotidiana/IDD_B01_I01.json",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
+}
