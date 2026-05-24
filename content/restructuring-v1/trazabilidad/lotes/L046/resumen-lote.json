@@ -1,0 +1,67 @@
+{
+  "loteProcesado": "L046",
+  "fechaCierre": "2026-05-24",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/",
+    "content/items/stand-by/Comunicación asertiva/",
+    "content/items/stand-by/Sesgos culturales, lenguaje inclusivo y discriminación cotidiana/"
+  ],
+  "itemsLeidos": 12,
+  "itemsLeidosPorCarpeta": {
+    "Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones": 6,
+    "Comunicación asertiva": 3,
+    "Sesgos culturales, lenguaje inclusivo y discriminación cotidiana": 3
+  },
+  "itemsNoAuditadosProcesados": [
+    "IDD_B01_I03"
+  ],
+  "itemsOmitidosPorAuditoriaPrevia": [
+    {"id_item": "CEOL_B01_I01", "lotePrevio": "L028"},
+    {"id_item": "CEOL_B01_I02", "lotePrevio": "L028"},
+    {"id_item": "CEOL_B01_I03", "lotePrevio": "L028"},
+    {"id_item": "CEOL_B01_I04", "lotePrevio": "L028"},
+    {"id_item": "CEOL_B01_I05", "lotePrevio": "L028"},
+    {"id_item": "CEOL_B01_I06", "lotePrevio": "L028"},
+    {"id_item": "CB05_I01", "lotePrevio": "L030"},
+    {"id_item": "CB05_I02", "lotePrevio": "L001"},
+    {"id_item": "CB05_I03", "lotePrevio": "L030"},
+    {"id_item": "IDD_B01_I01", "lotePrevio": "L027"},
+    {"id_item": "IDD_B01_I02", "lotePrevio": "L027"}
+  ],
+  "conteosDecision": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 1,
+    "DESCARTAR": 0,
+    "OMITIDO_POR_AUDITORIA_PREVIA": 11
+  },
+  "requiereRevisionHumana": 1,
+  "incidenciasGitHubFuente": [
+    "El clonado directo y las llamadas HTTP externas a GitHub no fueron viables en este entorno; la lectura se resolvio con el conector GitHub.",
+    "La busqueda indexada del conector fue poco confiable para rutas con espacios y tildes; el inventario se reconstruyo con decisiones previas y lectura puntual de archivos.",
+    "No se hallaron archivos adicionales CEOL_B01_I07 o CEOL_B01_I08 en la carpeta asignada mediante lectura puntual; el inventario operativo quedo en 12 items totales."
+  ],
+  "fuentesInternasConsultadas": [
+    "content/restructuring-v1/trazabilidad/mapa-carpetas-stand-by.csv",
+    "content/restructuring-v1/trazabilidad/reglas-clasificacion.json",
+    "content/restructuring-v1/trazabilidad/protocolo-ejecucion.md",
+    "content/restructuring-v1/trazabilidad/lotes/README-lanzamiento-paralelo.md",
+    "content/restructuring-v1/trazabilidad/lotes/L027/decisiones.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L028/decisiones.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L030/decisiones.csv"
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L046/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L046/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L046/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L046/reporte-acumulado-instancia.md"
+  ],
+  "confirmacionRutasProtegidasNoModificadas": true,
+  "rutasProtegidasNoModificadas": [
+    "content/items/stand-by/",
+    "content/restructuring-v1/trazabilidad/trash.json",
+    "content/restructuring-v1/trazabilidad/bitácora-lotes.csv",
+    "content/restructuring-v1/trazabilidad/manifiesto-control.json",
+    "content/restructuring-v1/trazabilidad/mapa-carpetas-stand-by.csv"
+  ]
+}
