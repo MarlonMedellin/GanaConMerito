@@ -1,0 +1,65 @@
+{
+  "lote": "L035",
+  "repository": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaAuditoria": "2026-05-24",
+  "decisionGlobalLote": "SIN_ITEMS_NUEVOS_PARA_AUDITAR",
+  "calidadGlobal": "NO_APLICA",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Autonomía escolar, religión, colegios privados y equidad/",
+    "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/",
+    "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/"
+  ],
+  "totalItemsDetectados": 11,
+  "totalItemsLeidos": 0,
+  "itemsOmitidosPorAuditoriaPrevia": 11,
+  "conteoDecisiones": {
+    "OMITIDO_POR_AUDITORIA_PREVIA": 11,
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 0,
+    "DESCARTAR": 0
+  },
+  "conteoRequiereRevisionHumana": 0,
+  "fuentesConsultadas": [
+    "content/restructuring-v1/trazabilidad/lotes/L003/decisiones.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L010/decisiones.csv",
+    "content/items/stand-by/Autonomía escolar, religión, colegios privados y equidad/IDD_B16_I01.json",
+    "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I01.json",
+    "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I02.json",
+    "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I03.json",
+    "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I04.json",
+    "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I05.json",
+    "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I01.json",
+    "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I02.json",
+    "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I03.json",
+    "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I04.json",
+    "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I05.json"
+  ],
+  "fuentesAusentes": [],
+  "hallazgosPrincipales": [
+    "El item visible de autonomía escolar, religión, colegios privados y equidad ya estaba auditado en L003, por lo que se omitió sin reproceso.",
+    "Los cinco items de autonomía institucional, convivencia y organización del servicio ya tenían trazabilidad previa en L003 y se registraron como omitidos por auditoría previa.",
+    "Los cinco items de debido proceso, congruencia y medidas correctivas extremas ya habían sido auditados en L010, por lo que este lote no abrió revisión nueva."
+  ],
+  "riesgosSistemicos": [
+    "No se detectaron items nuevos auditables en la muestra visible del lote; cualquier ampliación futura debe volver a cruzarse contra decisiones previas antes de reprocesar.",
+    "La carpeta de autonomía escolar solo devolvió un item visible en las consultas del conector y ya estaba cubierto por trazabilidad previa."
+  ],
+  "incidenciasGithubOFuente": [
+    "No existían previamente las salidas de L035 y se crearon en este ciclo.",
+    "No hubo necesidad de reprocesar contenido porque toda la muestra visible ya tenía decisiones previas registradas en L003 o L010."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L035/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L035/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L035/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L035/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "noModificoContentItemsStandBy": true,
+    "noModificoTrashJson": true,
+    "noModificoBitacorasGlobales": true,
+    "noModificoOtrosLotes": true
+  }
+}
