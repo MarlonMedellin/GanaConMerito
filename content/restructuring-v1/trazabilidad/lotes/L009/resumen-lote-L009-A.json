@@ -1,0 +1,26 @@
+{
+  "lote": "L009-A",
+  "loteMadre": "L009",
+  "fechaAuditoria": "2026-05-24",
+  "autorRevision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+  "totalItems": 10,
+  "conteo": {
+    "listoParaBanco": 4,
+    "listoParaPilotaje": 2,
+    "descartar": 4,
+    "requiereRevisionHumana": 1
+  },
+  "decisionGlobal": "APROBAR_PARCIALMENTE",
+  "areaDominante": "pedagogia",
+  "perfilDominante": "por_confirmar",
+  "tipoDominante": "funcional",
+  "hallazgos": [
+    "Los tres ítems de Currículo y Contexto Social tienen contexto plausible, clave única y buena pertinencia para pedagogía funcional.",
+    "En Currículo, PEI y evaluación didáctica, EFCC_B03_I02 cae en un reconocimiento de criterios estructurales más cercano a listado conceptual que a decisión situada.",
+    "En DUA, PIAR y ajustes razonables aparecen inconsistencias de clave en varios archivos y cuatro ítems dependen demasiado de recordar definiciones o asignaciones normativas literales."
+  ],
+  "riesgosAbiertos": [
+    "IDD_B04_I01 requirió corrección ejecutiva porque la clave del archivo original contradecía su propia justificación.",
+    "Los ítems descartados del sublote erosionan validez por trivialidad conceptual o por ausencia de una mejor respuesta suficientemente defendible."
+  ]
+}
