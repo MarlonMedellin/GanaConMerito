@@ -69,7 +69,7 @@
   - `content/items/stand-by/Estructura del sistema educativo - educacion basica, secundaria y media/`
 - Decisiones tomadas:
   - `LISTO_PARA_PILOTAJE`: 8
-  - `DESCARTAR`: 7
+  - `DESCARTAR`: 6
   - `LISTO_PARA_BANCO`: 0
 - Descartes realizados:
   - `CEOL_B08_I02`
