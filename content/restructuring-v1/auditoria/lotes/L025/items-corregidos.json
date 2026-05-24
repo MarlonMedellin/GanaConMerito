@@ -1,0 +1,200 @@
+[
+  {
+    "id_item": "PPDC_B04_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Praxis pedagógica, didáctica y selección metodológica/PPDC_B04_I01.json",
+    "motivo": "El ítem se limita a diferenciar pedagogía y didáctica como conceptos generales. No muestra una selección metodológica situada ni produce evidencia suficiente de decisión pedagógica observable.",
+    "lote": "L025"
+  },
+  {
+    "id_item": "PPDC_B04_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Praxis pedagógica, didáctica y selección metodológica",
+    "subtema": "Jerarquía entre metodología, estrategia didáctica y técnica",
+    "competencia": "Distingue niveles de decisión didáctica para mejorar la planeación de aula.",
+    "nivel_cognitivo": "APLICACIÓN",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que metodología, estrategia didáctica y técnica no son equivalentes y cumplen funciones distintas en el diseño pedagógico.",
+    "evidencia": "Selecciona la explicación que organiza correctamente los tres niveles de decisión y descarta su confusión con registros administrativos o equivalencias simplistas.",
+    "tarea": "Comparar niveles de decisión didáctica y elegir la mejor explicación para una discusión de planeación docente.",
+    "contexto": "Un equipo docente diseña una secuencia de aula y usa indistintamente las expresiones metodología, estrategia didáctica y técnica. La coordinación académica busca aclarar su diferencia para fortalecer la planeación.",
+    "enunciado": "¿Cuál explicación establece mejor la diferencia funcional entre metodología, estrategia didáctica y técnica?",
+    "opciones": {
+      "A": "La metodología constituye la concepción global del proceso de enseñanza; la estrategia didáctica organiza acciones articuladas para lograr un propósito; y la técnica es el procedimiento concreto usado en clase.",
+      "B": "La metodología equivale a la planeación anual por competencias; la estrategia didáctica es el nombre formal del área; y la técnica es la nota sumativa obtenida.",
+      "C": "Los tres términos representan el mismo nivel de planeación y distinguirlos no tiene utilidad práctica.",
+      "D": "La técnica define los fines formativos, la estrategia didáctica sustituye al currículo y la metodología comprende los registros de asistencia."
+    },
+    "clave": "A",
+    "justificacion_clave": "La respuesta correcta reconoce una jerarquía funcional real entre marco metodológico, organización estratégica y procedimiento concreto de aula.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Confunde decisiones didácticas con registros y nomenclaturas administrativas.",
+      "C": "Niega una distinción útil para la planeación y la selección metodológica.",
+      "D": "Invierte por completo la función de los tres conceptos."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No depende de un área disciplinar específica, pero todavía exige una comprensión conceptual más que una actuación situada."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La lectura es clara; el paso pendiente es aumentar el anclaje a una decisión de aula más concreta."
+    },
+    "metadata_editorial": {
+      "lote": "L025",
+      "ruta_origen": "content/items/stand-by/Praxis pedagógica, didáctica y selección metodológica/PPDC_B04_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/PPDC_B04_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CB14_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Propósitos de la educación",
+    "subtema": "Formación integral frente a reduccionismo academicista",
+    "competencia": "Sostiene decisiones institucionales coherentes con una comprensión integral de los fines de la educación.",
+    "nivel_cognitivo": "APLICACIÓN",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que la educación no puede reducirse a áreas evaluadas externamente y debe sostener dimensiones cognitivas, éticas, estéticas y ciudadanas.",
+    "evidencia": "Selecciona la postura institucional que defiende integralidad y descarta instrumentalismo, delegación absoluta a la familia o autonomía curricular arbitraria.",
+    "tarea": "Elegir la postura institucional más coherente ante una discusión del consejo directivo sobre reducción curricular.",
+    "contexto": "En una reunión institucional se propone concentrar esfuerzos solo en las áreas medidas por pruebas externas, reduciendo tiempos de ética, artes, ciudadanía y deportes.",
+    "enunciado": "¿Qué postura institucional responde mejor a los propósitos de la educación en Colombia?",
+    "opciones": {
+      "A": "El desarrollo integral del educando mediante la articulación de dimensiones cognitivas, socioafectivas, éticas, estéticas y ciudadanas.",
+      "B": "La priorización absoluta de áreas medidas en pruebas estandarizadas, dejando las demás como espacios optativos.",
+      "C": "La transferencia exclusiva de la formación ética y ciudadana a la familia, reservando a la escuela los contenidos técnicos.",
+      "D": "La redefinición libre de los propósitos educativos al arbitrio de cada docente sin referencia al PEI ni a lineamientos comunes."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opción correcta sostiene el principio de formación integral, pero necesita distractores más competitivos porque hoy la respuesta correcta resalta demasiado.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Reduce la educación a rendimiento externo medible.",
+      "C": "Fragmenta indebidamente la función formativa de la escuela.",
+      "D": "Confunde autonomía pedagógica con ausencia de referentes institucionales."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No presenta sesgos relevantes; el principal problema es la obviedad comparativa de la clave."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La situación es clara y única, aunque la discriminación esperada es moderada por lo extremos de las opciones incorrectas."
+    },
+    "metadata_editorial": {
+      "lote": "L025",
+      "ruta_origen": "content/items/stand-by/Propósitos de la educación/CB14_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/CB14_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CB14_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Propósitos de la educación/CB14_I02.json",
+    "motivo": "El ítem formula una adhesión casi declarativa a proyectos transversales valiosos, pero con una clave demasiado obvia y sin suficiente tensión cognitiva para discriminar bien.",
+    "lote": "L025"
+  },
+  {
+    "id_item": "CB14_I03",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Propósitos de la educación",
+    "subtema": "Vinculación entre saber disciplinar, contexto y participación comunitaria",
+    "competencia": "Selecciona propuestas pedagógicas que articulan saber disciplinar con necesidades del entorno y participación estudiantil.",
+    "nivel_cognitivo": "APLICACIÓN",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la propuesta de aula que mejor traduce los propósitos educativos en aprendizaje situado, análisis crítico del contexto y acción comunitaria.",
+    "evidencia": "Elige un proyecto pedagógico contextualizado y descarta transcripción mecánica, cuestionarios descontextualizados o charlas desligadas del currículo.",
+    "tarea": "Seleccionar la actividad que mejor conecta contenidos de ciencias naturales con una problemática ambiental del entorno.",
+    "contexto": "El departamento de ciencias naturales busca una estrategia para articular el estudio de ecosistemas con el análisis de problemas de contaminación del barrio y la participación estudiantil en soluciones locales.",
+    "enunciado": "¿Cuál propuesta responde mejor a este propósito formativo?",
+    "opciones": {
+      "A": "Diseñar un proyecto de aula donde los estudiantes investiguen una problemática ambiental de su comunidad, apliquen conceptos científicos y formulen alternativas de solución comunitarias.",
+      "B": "Asignar la transcripción de artículos virtuales sobre problemas globales y evaluar la actividad por caligrafía y extensión del texto.",
+      "C": "Realizar talleres de cuestionarios teóricos de opción múltiple sin vínculo con contextos locales ni análisis crítico.",
+      "D": "Organizar charlas motivacionales informales con invitados externos sin articulación curricular ni participación activa del alumnado."
+    },
+    "clave": "A",
+    "justificacion_clave": "La respuesta correcta conecta saber disciplinar, comprensión crítica del contexto y formulación de soluciones, que es precisamente donde el propósito educativo deja de ser declarativo y se vuelve observable.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Reduce la actividad a copia mecánica sin apropiación conceptual ni contextual.",
+      "C": "Mantiene el aprendizaje en un plano descontextualizado y de baja transferencia.",
+      "D": "Sustituye el trabajo pedagógico por exposición pasiva sin mediación curricular suficiente."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El contexto es accesible y relevante; la dificultad proviene del propósito pedagógico y no del ruido verbal."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea es única, comprensible y directamente conectada con el constructo."
+    },
+    "metadata_editorial": {
+      "lote": "L025",
+      "ruta_origen": "content/items/stand-by/Propósitos de la educación/CB14_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CB14_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "CB14_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Propósitos de la educación",
+    "subtema": "Evaluación integral y procesual como expresión de fines formativos",
+    "competencia": "Sustenta decisiones institucionales de evaluación integral coherentes con una educación formativa y procesual.",
+    "nivel_cognitivo": "APLICACIÓN",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce el argumento que mejor justifica valorar procesos, autoevaluación y avances individuales dentro de una comprensión integral de la educación.",
+    "evidencia": "Selecciona el sustento que articula integralidad, proceso y mejora continua, y descarta obediencia actitudinal, promoción automática o discrecionalidad absoluta docente.",
+    "tarea": "Elegir el mejor argumento para una discusión del consejo académico sobre actualización del SIEE.",
+    "contexto": "Durante la actualización del Sistema Institucional de Evaluación, el consejo académico debate la conveniencia de valorar no solo resultados finales sino también proceso, autoevaluación y avances individuales.",
+    "enunciado": "¿Cuál argumento sustenta mejor esta propuesta formativa?",
+    "opciones": {
+      "A": "Una evaluación integral, formativa y procesual es coherente con el reconocimiento de distintas dimensiones del aprendizaje y del desarrollo del estudiante.",
+      "B": "La evaluación integral exige suprimir el rigor cognitivo y calificar solo puntualidad, asistencia y actitud.",
+      "C": "Los criterios procesuales existen para garantizar promoción automática al margen del desempeño real.",
+      "D": "La coherencia institucional limita la autonomía docente y por eso cada educador debe aplicar su propia escala sin alineación común."
+    },
+    "clave": "A",
+    "justificacion_clave": "La respuesta correcta es defendible, pero la clave se distingue con demasiada facilidad y el ítem se desplaza parcialmente hacia política de evaluación más que a propósitos educativos en sentido más amplio.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Caricaturiza la integralidad como abandono del rigor académico.",
+      "C": "Confunde proceso con promoción automática.",
+      "D": "Usa una falsa oposición entre autonomía y coherencia institucional."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No presenta barreras relevantes; el principal riesgo es psicométrico por baja competencia entre alternativas."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El caso es claro y profesionalmente relevante, aunque requiere distractores más fuertes para banco."
+    },
+    "metadata_editorial": {
+      "lote": "L025",
+      "ruta_origen": "content/items/stand-by/Propósitos de la educación/CB14_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/CB14_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  }
+]
