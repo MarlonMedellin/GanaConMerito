@@ -1,0 +1,76 @@
+[
+  {
+    "id_item": "DIL_B01_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Corresponsabilidad, protección integral y sujetos de derechos",
+    "subtema": "Corresponsabilidad aplicada en la escuela",
+    "competencia": "Analiza situaciones escolares y selecciona actuaciones institucionales de corresponsabilidad orientadas a la garantía de derechos de estudiantes.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la actuación institucional más pertinente cuando la escuela identifica posibles vulneraciones de derechos en un estudiante.",
+    "evidencia": "Selecciona la respuesta que mantiene la corresponsabilidad como deber de actuación escolar articulada, no como excusa para la inacción.",
+    "tarea": "Analizar una situación escolar de riesgo y elegir la interpretación operativa más adecuada del principio de corresponsabilidad.",
+    "contexto": "Un docente identifica señales de posible vulneración de derechos en un estudiante. En una reunión, alguien afirma que, como existe corresponsabilidad, la familia debe resolver sola y la escuela no debe intervenir.",
+    "enunciado": "Un docente identifica señales de posible vulneración de derechos en un estudiante. En una reunión, alguien afirma que, como existe corresponsabilidad, la familia debe resolver sola y la escuela no debe intervenir.\n\n¿Cuál interpretación es correcta?",
+    "opciones": {
+      "A": "La corresponsabilidad significa que la escuela puede desentenderse del caso.",
+      "B": "La corresponsabilidad elimina cualquier deber de actuación docente o institucional.",
+      "C": "La corresponsabilidad permite esperar indefinidamente hasta que otra entidad actúe.",
+      "D": "La corresponsabilidad exige que la escuela actúe dentro de sus competencias, articule apoyos y active las rutas pertinentes cuando sea necesario."
+    },
+    "clave": "D",
+    "justificacion_clave": "La opción D es la mejor respuesta porque traduce la corresponsabilidad en actuación escolar oportuna y articulada dentro de las competencias institucionales, sin desplazar toda la carga a la familia ni justificar la inacción.",
+    "distractores_funcion": {
+      "A": "Modela la interpretación errónea según la cual la escuela queda exenta de actuar cuando el caso involucra a la familia.",
+      "B": "Representa la falsa idea de que la corresponsabilidad anula obligaciones docentes e institucionales frente a la protección de derechos.",
+      "C": "Recoge el error de postergar la actuación escolar bajo espera pasiva de otra entidad.",
+      "D": "Clave correcta: expresa una actuación institucional compatible con protección integral y activación oportuna de apoyos y rutas."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No se identifican sesgos de representación; el riesgo principal es psicométrico por visibilidad de la clave, no de fairness."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La situación es breve y la tarea es única, aunque convendría fortalecer la competencia semántica de los distractores antes de banco activo."
+    },
+    "metadata_editorial": {
+      "lote": "L029",
+      "ruta_origen": "content/items/stand-by/Corresponsabilidad, protección integral y sujetos de derechos/DIL_B01_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/DIL_B01_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "DIL_B01_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Corresponsabilidad, protección integral y sujetos de derechos/DIL_B01_I01.json",
+    "motivo": "La clave depende del recuerdo directo del nombre del principio y el contexto no añade una decisión profesional observable.",
+    "lote": "L029"
+  },
+  {
+    "id_item": "DIL_B01_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Corresponsabilidad, protección integral y sujetos de derechos/DIL_B01_I02.json",
+    "motivo": "Pregunta memorística sobre los tres corresponsables; no exige juicio institucional ni genera evidencia útil para el banco.",
+    "lote": "L029"
+  },
+  {
+    "id_item": "DIL_B01_I04",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Corresponsabilidad, protección integral y sujetos de derechos/DIL_B01_I04.json",
+    "motivo": "Se queda en definición general de sujetos de derechos y no convierte el contexto en una actuación pedagógica o institucional observable.",
+    "lote": "L029"
+  },
+  {
+    "id_item": "DIL_B01_I05",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Corresponsabilidad, protección integral y sujetos de derechos/DIL_B01_I05.json",
+    "motivo": "Duplica el foco memorístico de DIL_B01_I02 y no aporta mejor discriminación ni mayor valor de banco.",
+    "lote": "L029"
+  }
+]
