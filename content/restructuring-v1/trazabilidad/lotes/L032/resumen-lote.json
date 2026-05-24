@@ -1,0 +1,49 @@
+{
+  "loteProcesado": "L032",
+  "decisionLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "BAJA",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Concepto y tipos de currículo/",
+    "content/items/stand-by/Tipos de currículo/",
+    "content/items/stand-by/Currículo oficial, oculto, nulo, PEI y DUR 1075/"
+  ],
+  "numeroItemsLeidos": 23,
+  "numeroItemsOmitidosPorAuditoriaPrevia": 19,
+  "conteoEstados": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 0,
+    "DESCARTAR": 4,
+    "OMITIDO_POR_AUDITORIA_PREVIA": 19
+  },
+  "numeroConRequiereRevisionHumana": 0,
+  "hallazgosPrincipales": [
+    "El lote estaba dominado por solapamientos curriculares ya auditados en L008, L028 y L029; por eso se omitieron 19 items sin reprocesarlos.",
+    "Los cuatro items nuevos del bloque GA02_B05 se descartaron porque miden definiciones o etiquetas conceptuales con claves visibles por tecnicismo.",
+    "Los casos mas fuertes sobre curriculo oculto, nulo y articulacion institucional ya habian quedado mejor resueltos en auditorias previas, por lo que estas versiones nuevas no agregan valor real al banco.",
+    "No fue necesario dividir en sublotes porque solo habia 4 items no auditados previamente."
+  ],
+  "problemasSistemicos": [
+    "Duplicacion conceptual entre curriculo oficial, oculto, nulo, plan y malla.",
+    "Predominio de taxonomia memoristica sobre interpretacion institucional o pedagogica.",
+    "Distractores decorativos que no modelan errores docentes reales.",
+    "Claves demasiado visibles por el nombre tecnico del concepto."
+  ],
+  "incidenciasGithubOFuente": [
+    "La depuracion de duplicados se apoyo en la trazabilidad recuperable de L008, L028 y L029.",
+    "No se encontro un decisiones.csv recuperable para L004; no aparecio evidencia de estos ids en ese lote dentro de la trazabilidad disponible.",
+    "No hubo incidencias bloqueantes de lectura o escritura en GitHub."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L032/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L032/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L032/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L032/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "modificoContentItemsStandBy": false,
+    "modificoTrashJson": false,
+    "modificoBitacorasGlobales": false,
+    "modificoOtrosLotes": false
+  }
+}
