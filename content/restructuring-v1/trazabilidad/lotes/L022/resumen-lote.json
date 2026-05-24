@@ -1,0 +1,68 @@
+{
+  "loteProcesado": "L022",
+  "repo": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaCierre": "2026-05-24",
+  "sublotesInternos": ["L022-A", "L022-B"],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Marco legal del preescolar y organización del nivel/",
+    "content/items/stand-by/Mecanismos de participación ciudadana: plebiscito, consulta y límites/",
+    "content/items/stand-by/Menor infractor, edad penal y rutas de protección/"
+  ],
+  "itemsLeidos": 11,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 3,
+    "LISTO_PARA_PILOTAJE": 3,
+    "DESCARTAR": 5
+  },
+  "requiereRevisionHumana": 5,
+  "hallazgosClave": [
+    "La carpeta de preescolar mezcla dos ítems puramente memorísticos con dos piezas más defendibles cuando se observa una decisión institucional o pedagógica.",
+    "La carpeta de participación ciudadana es la más débil del lote: tres de sus cuatro ítems son trivia constitucional con bajo valor para el banco docente.",
+    "La carpeta sobre menor infractor y rutas de protección aporta el mejor valor del lote cuando obliga a activar actuaciones institucionales diferenciadas por edad y ruta de protección."
+  ],
+  "problemasDetectados": {
+    "memoria_literal_o_trivia": [
+      "EIP_B02_I02",
+      "EIP_B02_I03",
+      "DIL_B07_I01",
+      "DIL_B07_I03"
+    ],
+    "baja_pertinencia_docente": [
+      "DIL_B07_I01",
+      "DIL_B07_I03",
+      "DIL_B07_I04"
+    ],
+    "actuacion_institucional_situada_valiosa": [
+      "EIP_B02_I05",
+      "DIL_B05_I01",
+      "DIL_B05_I03"
+    ],
+    "dependencia_excesiva_de_umbral_edad_o_recuerdo_normativo": [
+      "DIL_B05_I02",
+      "DIL_B05_I03"
+    ],
+    "perfiles_que_requieren_confirmacion_fina": [
+      "DIL_B05_I01",
+      "DIL_B05_I02",
+      "DIL_B05_I03"
+    ]
+  },
+  "incidenciasGithubOFuente": [
+    "Los archivos de salida de L022 no existían y devolvieron 404 antes de su creación.",
+    "La búsqueda del conector no devolvió los archivos del lote; fue necesario expandir las carpetas desde las vistas GitHub del repo para identificar los JSON reales.",
+    "reporte-acumulado-instancia.md no existía en L022 y se creó en este cierre."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L022/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L022/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L022/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L022/reporte-acumulado-instancia.md"
+  ],
+  "confirmaciones": {
+    "content_items_stand_by_no_modificado": true,
+    "trash_json_no_modificado": true,
+    "bitacoras_globales_no_modificadas": true,
+    "otros_lotes_no_modificados": true
+  }
+}
