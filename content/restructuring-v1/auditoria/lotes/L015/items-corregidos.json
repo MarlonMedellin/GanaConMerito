@@ -1,0 +1,391 @@
+[
+  {
+    "id_item": "IDD_B13_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Evaluación colaborativa, coevaluación y metacognición",
+    "subtema": "Metacognición y autorregulación en básica primaria",
+    "competencia": "Diseñar estrategias de autoevaluación guiada que hagan visible el proceso de aprendizaje y la autorregulación del estudiante.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce el instrumento que mejor promueve reflexión sobre dificultades, estrategias y transferencia del aprendizaje.",
+    "evidencia": "Escoge una mediación que guía al estudiante a revisar qué hizo, qué dificultad enfrentó y cómo puede mejorar o transferir lo aprendido.",
+    "tarea": "Seleccionar el instrumento pedagógico más adecuado para desarrollar metacognición al cierre de un proyecto.",
+    "contexto": "Al terminar un proyecto de ciencias sociales, el docente quiere que estudiantes de básica primaria reflexionen sobre cómo aprendieron y qué estrategias usaron, superando la simple asignación de una nota.",
+    "enunciado": "¿Qué instrumento es más adecuado para desarrollar metacognición y autorregulación en el grupo?",
+    "opciones": {
+      "A": "Un diario o bitácora guiada con preguntas sobre dificultades, estrategias usadas y posibles aplicaciones futuras del aprendizaje.",
+      "B": "Un cuestionario cerrado de selección múltiple sobre conceptos teóricos del proyecto.",
+      "C": "Una lista de chequeo sobre el orden físico de cuadernos y materiales.",
+      "D": "Un examen escrito memorístico sin previo aviso para detectar fallas de estudio en casa."
+    },
+    "clave": "A",
+    "justificacion_clave": "La metacognición se promueve cuando el estudiante hace explícito cómo aprendió, qué obstáculos encontró y cómo puede mejorar o transferir estrategias.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Evalúa dominio conceptual, pero no reflexión sobre el propio proceso.",
+      "C": "Desplaza la mirada a aspectos formales sin relación con autorregulación cognitiva.",
+      "D": "Usa la evaluación como control y no como reflexión sobre aprendizaje."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Promueve prácticas reflexivas generales y no depende de contexto sociocultural específico."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea es clara, aunque la clave queda bastante visible frente a distractores débiles."
+    },
+    "metadata_editorial": {
+      "lote": "L015",
+      "ruta_origen": "content/items/stand-by/Evaluación colaborativa, coevaluación y metacognición/IDD_B13_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/basica_primaria/funcional/IDD_B13_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B13_I03",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Evaluación colaborativa, coevaluación y metacognición",
+    "subtema": "Coevaluación con criterios explícitos",
+    "competencia": "Diseñar sesiones de coevaluación formativa guiadas por criterios de desempeño y retroalimentación descriptiva respetuosa.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que la coevaluación formativa requiere criterios compartidos, lenguaje propositivo y andamiaje del docente.",
+    "evidencia": "Escoge la estructura de sesión que usa criterios explícitos y retroalimentación entre pares frente a alternativas humillantes, secretistas o elitistas.",
+    "tarea": "Decidir cómo estructurar una sesión de coevaluación de borradores de ensayo para que cumpla función formativa.",
+    "contexto": "En una clase de lenguaje, las coevaluaciones previas entre estudiantes se habían reducido a ponerse notas por afinidad o a descalificarse con comentarios informales sin valor pedagógico.",
+    "enunciado": "¿Cómo debe estructurar el docente la sesión para que la coevaluación sea formativa y colaborativa?",
+    "opciones": {
+      "A": "Diseñando una guía con criterios explícitos y preparando al grupo en técnicas de retroalimentación constructiva y lenguaje propositivo.",
+      "B": "Pidiendo una coevaluación anónima y secreta sin diálogo para evitar discusiones.",
+      "C": "Delegando la evaluación a los estudiantes con mejor rendimiento del periodo.",
+      "D": "Exponiendo públicamente los errores de cada borrador frente a todo el curso."
+    },
+    "clave": "A",
+    "justificacion_clave": "La coevaluación gana valor formativo cuando el docente da criterios, lenguaje y estructura para que los pares ofrezcan retroalimentación útil y respetuosa.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Elimina el diálogo pedagógico sin resolver la falta de criterios.",
+      "C": "Convierte la coevaluación en práctica elitista y excluyente.",
+      "D": "Usa el error como exposición pública humillante y daña el clima de aprendizaje."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Promueve interacción respetuosa y previene marginación escolar."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Caso concreto, decisión clara y distractores plausibles."
+    },
+    "metadata_editorial": {
+      "lote": "L015",
+      "ruta_origen": "content/items/stand-by/Evaluación colaborativa, coevaluación y metacognición/IDD_B13_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B13_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "EFCC_B06_I01",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Evaluación cualitativa, formativa y participativa",
+    "subtema": "Promoción en educación inicial",
+    "competencia": "Tomar decisiones de evaluación y promoción en preescolar coherentes con el enfoque cualitativo del nivel.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la decisión institucional correcta frente a ritmos de desarrollo distintos en transición, sin recurrir a reprobación o nivelación impropia del nivel.",
+    "evidencia": "Escoge la promoción acompañada de informe descriptivo y continuidad pedagógica frente a alternativas de repitencia o suficiencia escrita.",
+    "tarea": "Decidir qué debe hacer una comisión de evaluación de preescolar ante un estudiante con ritmo más lento en grafomotricidad.",
+    "contexto": "En una comisión de evaluación, una docente propone no promover a grado primero a un estudiante de transición por su ritmo más lento en motricidad fina y grafomotricidad.",
+    "enunciado": "¿Qué decisión corresponde mejor al enfoque pedagógico y normativo de preescolar?",
+    "opciones": {
+      "A": "Promover al estudiante y entregar un informe descriptivo que permita al docente de primaria continuar con apoyos pedagógicos pertinentes.",
+      "B": "Aplazar la promoción hasta que alcance el promedio grafomotor del grupo mediante actividades vacacionales.",
+      "C": "Condicionar la promoción a una prueba escrita de suficiencia aplicada por el comité pedagógico.",
+      "D": "Mantenerlo un año más en transición para entrenar de forma intensiva la motricidad fina."
+    },
+    "clave": "A",
+    "justificacion_clave": "La evaluación cualitativa en preescolar se orienta al seguimiento del desarrollo y no a la repitencia; la decisión pedagógica correcta es asegurar continuidad con información descriptiva útil.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Traslada lógicas remediales de otros niveles a educación inicial.",
+      "C": "Introduce una lógica sumativa impropia del nivel.",
+      "D": "Convierte una diferencia en ritmo de desarrollo en justificación de repitencia."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Respeta ritmos de desarrollo y evita decisiones excluyentes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Caso bien situado y decisión institucional claramente observable."
+    },
+    "metadata_editorial": {
+      "lote": "L015",
+      "ruta_origen": "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EFCC_B06_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EFCC_B06_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "EFCC_B06_I02",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Evaluación cualitativa, formativa y participativa",
+    "subtema": "Informes cualitativos en preescolar",
+    "competencia": "Diseñar informes de evaluación coherentes con el desarrollo integral y el enfoque cualitativo de la educación inicial.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que un informe de preescolar debe describir procesos, ritmos y apoyos, no ordenar a los niños por promedios o puestos.",
+    "evidencia": "Escoge el formato de informe descriptivo integral frente a alternativas numéricas, conductistas u omisivas.",
+    "tarea": "Decidir cómo debe estructurarse el boletín informativo de preescolar ante una propuesta de ranking y promedio numérico.",
+    "contexto": "Un colegio privado quiere reformar el boletín de preescolar e incluir promedio general y posiciones del salón para preparar a los niños para las exigencias de primaria.",
+    "enunciado": "¿Qué debe defender la docente de apoyo desde el marco pedagógico y normativo del nivel?",
+    "opciones": {
+      "A": "Informes descriptivos y cualitativos que comuniquen de forma integral el desarrollo, los ritmos de aprendizaje y los apoyos requeridos.",
+      "B": "Boletines en letras equivalentes a notas, evitando comentarios cualitativos para no sobrecargar a las familias.",
+      "C": "Informes centrados casi exclusivamente en conducta y adaptación social, dejando los logros de aprendizaje a reportes informales.",
+      "D": "Eliminar el informe escrito y limitar la comunicación a reuniones verbales en casos de alerta."
+    },
+    "clave": "A",
+    "justificacion_clave": "La evaluación cualitativa no elimina criterios ni informes: exige descripciones integrales útiles para familia y escuela, evitando jerarquías numéricas impropias del nivel.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Encubre una lógica cuantitativa y jerárquica bajo otro código.",
+      "C": "Reduce el desarrollo integral a conducta y fragmenta la comunicación pedagógica.",
+      "D": "Confunde no comparar con dejar de documentar el proceso."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Dilema frecuente y generalizable a distintos tipos de institución."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La situación está bien acotada y la clave depende de una decisión institucional clara."
+    },
+    "metadata_editorial": {
+      "lote": "L015",
+      "ruta_origen": "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EFCC_B06_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EFCC_B06_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "EFCC_B06_I03",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Evaluación cualitativa, formativa y participativa",
+    "subtema": "Seguimiento continuo en educación inicial",
+    "competencia": "Implementar evaluación continua que recoja evidencias y permita ajustar oportunamente la mediación pedagógica.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue la revisión final de productos de una práctica formativa sostenida basada en observación, registro y reorientación didáctica.",
+    "evidencia": "Escoge el seguimiento permanente con registro descriptivo y ajuste de planeación frente a pruebas de cierre o rankings conductuales.",
+    "tarea": "Valorar por qué una revisión final de cuadernos y carpetas es insuficiente como evaluación formativa en transición.",
+    "contexto": "En una institución rural, una docente decide evaluar las dimensiones del desarrollo solo mediante revisión de cuadernos y carpetas al final de cada periodo para asignar las valoraciones del boletín.",
+    "enunciado": "¿Qué se requiere para que la evaluación sea realmente formativa y continua?",
+    "opciones": {
+      "A": "Seguimiento permanente de interacciones y producciones, registro descriptivo de avances y dificultades y reorientación oportuna de la planeación didáctica.",
+      "B": "Pruebas estandarizadas o juegos de control al cierre de cada unidad para objetivar aprendizajes.",
+      "C": "Autocalificación semanal del comportamiento del niño como base de la valoración.",
+      "D": "Clasificar a los estudiantes por desempeño conductual y compartir el ranking para fomentar autorregulación."
+    },
+    "clave": "A",
+    "justificacion_clave": "La evaluación formativa se reconoce cuando la información se recolecta a lo largo del proceso y se usa para intervenir la enseñanza mientras el aprendizaje aún puede mejorar.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Vuelve a una lógica de corte periódico y control de resultados.",
+      "C": "Reduce evaluación a autocalificación conductual sin mediación pedagógica suficiente.",
+      "D": "Usa ranking y presión social, no acompañamiento formativo."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El contexto rural es incidental y no condiciona la respuesta."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Buena relación entre caso, tarea y evidencia observable."
+    },
+    "metadata_editorial": {
+      "lote": "L015",
+      "ruta_origen": "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EFCC_B06_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EFCC_B06_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "EFCC_B06_I04",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EFCC_B06_I04.json",
+    "motivo": "Se reduce a nombrar autoevaluación, coevaluación y heteroevaluación; el contexto es decorativo, la clave es obvia y no exige una decisión pedagógica real.",
+    "lote": "L015"
+  },
+  {
+    "id_item": "EFCC_B06_I05",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Evaluación cualitativa, formativa y participativa",
+    "subtema": "Autoevaluación y coevaluación en transición",
+    "competencia": "Diseñar estrategias de autoevaluación y coevaluación acordes con el desarrollo cognitivo y socioemocional de la primera infancia.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que la participación evaluativa en transición debe apoyarse en lenguaje oral, dibujos y mediación docente, no en instrumentos abstractos o burocráticos.",
+    "evidencia": "Escoge una estrategia de asamblea, representación gráfica y construcción colectiva frente a rúbricas cuantificadas o tareas abstractas impropias del nivel.",
+    "tarea": "Seleccionar la estrategia de autoevaluación y coevaluación más pertinente para un proyecto de aula en transición.",
+    "contexto": "Una docente quiere involucrar a niños de transición en la autoevaluación y coevaluación de un proyecto sobre plantas, evitando instrumentos abstractos que no se ajusten a su desarrollo.",
+    "enunciado": "¿Qué estrategia metodológica resulta más pertinente para ese propósito?",
+    "opciones": {
+      "A": "Asambleas cortas de diálogo donde los niños compartan dibujos, expliquen qué aprendieron y co-construyan un mural de aprendizajes con apoyo docente.",
+      "B": "Una rúbrica con caras felices o tristes para que cada niño se asigne una nota del 1 al 5.",
+      "C": "Cartas individuales escritas sobre sus falencias y compromisos para el siguiente proyecto.",
+      "D": "Una encuesta aplicada por el personero estudiantil para medir satisfacción con la mediación docente."
+    },
+    "clave": "A",
+    "justificacion_clave": "En transición, la participación evaluativa gana sentido cuando se apoya en oralidad, representación gráfica y mediación cercana del docente.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Introduce cuantificación prematura disfrazada de juego visual.",
+      "C": "Exige abstracción y escritura autorreflexiva desfasadas para el nivel.",
+      "D": "Desvía la evaluación hacia un mecanismo administrativo externo al proyecto de aula."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Respeta el desarrollo infantil y evita barreras instrumentales irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El caso es pertinente y la clave depende de decisión didáctica real."
+    },
+    "metadata_editorial": {
+      "lote": "L015",
+      "ruta_origen": "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EFCC_B06_I05.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EFCC_B06_I05.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CEOL_B06_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/CEOL_B06_I01.json",
+    "motivo": "Es una pregunta definicional sobre el rasgo general de la evaluación formativa; no exige resolución pedagógica situada ni uso real de evidencia para mejorar el aprendizaje.",
+    "lote": "L015"
+  },
+  {
+    "id_item": "CEOL_B06_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/CEOL_B06_I02.json",
+    "motivo": "Se centra en el objetivo general de evaluar por competencias y no en evaluación formativa como uso de evidencia; queda demasiado conceptual para el foco del lote.",
+    "lote": "L015"
+  },
+  {
+    "id_item": "CEOL_B06_I03",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Evaluación formativa, mejora continua y lenguaje evaluativo",
+    "subtema": "Acciones de mejoramiento basadas en evidencia",
+    "competencia": "Diseñar acciones de mejora a partir del análisis del error, la retroalimentación y el ajuste de la enseñanza.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que un plan de mejoramiento formativo exige analizar dificultades, intervenir didácticamente y recoger nueva evidencia de aprendizaje.",
+    "evidencia": "Escoge la acción de mejoramiento que usa el error como insumo pedagógico frente a repetición mecánica, baja arbitraria de estándares o manipulación de notas.",
+    "tarea": "Decidir cómo debe estructurarse un plan de mejoramiento después de una evaluación con alto porcentaje de no logro.",
+    "contexto": "Tras una evaluación intermedia de matemáticas, el docente observa que el 70% del curso no comprendió las fracciones mixtas y propone aplicar el mismo examen en la clase siguiente sin retroalimentar ni cambiar su método.",
+    "enunciado": "¿Qué características debe tener una acción de mejoramiento coherente con evaluación formativa?",
+    "opciones": {
+      "A": "Analizar dificultades recurrentes, retroalimentar, ajustar el diseño didáctico y permitir nuevas evidencias de aprendizaje.",
+      "B": "Reaplicar de forma idéntica la misma evaluación hasta que el grupo memorice los ítems.",
+      "C": "Bajar arbitrariamente la exigencia del estándar para asegurar aprobación general.",
+      "D": "Modificar directamente la calificación en la plataforma sin nuevas actividades ni evidencias."
+    },
+    "clave": "A",
+    "justificacion_clave": "La mejora continua se activa cuando el docente convierte los errores en información para replantear enseñanza, retroalimentar y pedir nuevas demostraciones de aprendizaje.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Confunde mejoramiento con repetición memorística del mismo instrumento.",
+      "C": "Sustituye intervención pedagógica por rebaja artificial de exigencia.",
+      "D": "Reduce la mejora a maquillaje administrativo de la nota."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Evalúa práctica docente basada en evidencia, no características personales de estudiantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Caso concreto y criterio de decisión claramente observable."
+    },
+    "metadata_editorial": {
+      "lote": "L015",
+      "ruta_origen": "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/CEOL_B06_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CEOL_B06_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "CEOL_B06_I04",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Evaluación formativa, mejora continua y lenguaje evaluativo",
+    "subtema": "Lenguaje evaluativo profesional",
+    "competencia": "Usar lenguaje evaluativo descriptivo y basado en evidencias al analizar desempeños y decidir apoyos.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que el lenguaje evaluativo profesional se centra en desempeños, evidencias y apoyos, no en etiquetas personales descalificadoras.",
+    "evidencia": "Escoge la intervención que reorienta una comisión de evaluación hacia hechos observables, dificultades específicas y estrategias de apoyo.",
+    "tarea": "Decidir cómo reencauzar una comisión de evaluación que está usando etiquetas subjetivas sobre un estudiante.",
+    "contexto": "En una comisión de evaluación de grado quinto, algunos docentes califican a un estudiante como perezoso, incapaz, problemático e irresponsable mientras revisan su caso.",
+    "enunciado": "¿Qué intervención del director de grupo es la más adecuada para reorientar el lenguaje y el enfoque de la comisión?",
+    "opciones": {
+      "A": "Solicitar que se revisen los desempeños no alcanzados y las inasistencias registradas, y proponer apoyos pedagógicos concretos con participación de estudiante y familia.",
+      "B": "Respaldar las etiquetas y dejarlas consignadas en el acta como sustento de la reprobación.",
+      "C": "Aprobar automáticamente al estudiante para evitar discusiones y desgaste administrativo.",
+      "D": "Hacer depender la valoración de un test de personalidad aplicado por orientación."
+    },
+    "clave": "A",
+    "justificacion_clave": "El lenguaje evaluativo profesional parte de hechos y desempeños observables para orientar apoyos y decisiones pedagógicas justas.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Convierte prejuicios en criterio oficial y vulnera dignidad y debido proceso.",
+      "C": "Evita el análisis pedagógico y sustituye acompañamiento por salida administrativa.",
+      "D": "Desplaza la evaluación escolar a una prueba aislada ajena al proceso de aula."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Promueve trato respetuoso y evita estigmatización del estudiante."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El conflicto está claramente planteado y exige una decisión profesional concreta."
+    },
+    "metadata_editorial": {
+      "lote": "L015",
+      "ruta_origen": "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/CEOL_B06_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CEOL_B06_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  }
+]
