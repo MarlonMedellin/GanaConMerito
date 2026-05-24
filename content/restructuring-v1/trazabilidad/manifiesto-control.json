@@ -1,0 +1,30 @@
+{
+  "version": "v1",
+  "currentPhase": "migracion_inicial",
+  "guardrailsEnabled": true,
+  "sourcePreservation": true,
+  "contentRewriteAllowedDuringMigration": false,
+  "activeBatches": [
+    {
+      "batchId": "L001",
+      "status": "closed",
+      "operationType": "copy_only",
+      "processedCount": 12,
+      "highConfidenceCount": 4,
+      "pendingReviewCount": 8,
+      "discardedCount": 0,
+      "notes": [
+        "Los originales se preservaron en stand-by.",
+        "La clasificacion es inicial y no reemplaza la revision psicometrica.",
+        "Al menos una carpeta de origen presento inconsistencia de ruta y debe resolverse en lote posterior."
+      ]
+    }
+  ],
+  "globalRules": {
+    "doNotDeleteOriginals": true,
+    "doNotMixMigrationWithFullContentRevision": true,
+    "doNotMarkAsFinalBankReadyOnlyByMigration": true,
+    "requireBatchLogging": true,
+    "requireReopenReasonIfRetouched": true
+  }
+}
