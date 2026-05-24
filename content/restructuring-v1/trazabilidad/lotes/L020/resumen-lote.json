@@ -1,0 +1,186 @@
+{
+  "loteProcesado": "L020",
+  "sublotesInternos": [
+    {
+      "id": "L020-A",
+      "itemsLeidos": 10,
+      "LISTO_PARA_BANCO": 4,
+      "LISTO_PARA_PILOTAJE": 3,
+      "DESCARTAR": 3
+    },
+    {
+      "id": "L020-B",
+      "itemsLeidos": 3,
+      "LISTO_PARA_BANCO": 1,
+      "LISTO_PARA_PILOTAJE": 0,
+      "DESCARTAR": 2
+    }
+  ],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Inclusión práctica vs. segregación en aula/",
+    "content/items/stand-by/Inclusión, equidad socioeconómica y adaptabilidad curricular/",
+    "content/items/stand-by/Inteligencia, inteligencias múltiples y didáctica heterogénea/"
+  ],
+  "numeroItemsLeidos": 13,
+  "conteos": {
+    "LISTO_PARA_BANCO": 5,
+    "LISTO_PARA_PILOTAJE": 3,
+    "DESCARTAR": 5,
+    "requiere_revision_humana": 0
+  },
+  "decisionGlobalLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "alertasCriticas": [
+    "El bloque de inteligencia e inteligencias multiples concentro items de memoria conceptual o tipologia cognitiva con poco valor de decision docente observable.",
+    "En varios items de inclusion practica aparecieron distractores demasiado visibles o moralmente extremos, lo que obligo a bajar decision a pilotaje o descartar."
+  ],
+  "incidenciasGitHubOFuente": [
+    "No existian salidas previas para L020 y se crearon desde cero dentro de las rutas permitidas.",
+    "El lote excedio el maximo operativo de 10 items y se dividio internamente en L020-A y L020-B sin crear escrituras fuera de L020.",
+    "No hubo bloqueos de lectura en las fuentes del lote."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L020/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L020/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L020/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L020/reporte-acumulado-instancia.md"
+  ],
+  "confirmacionesProteccion": {
+    "noSeModificoContentItemsStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true,
+    "noSeModificaronOtrosLotes": true
+  },
+  "evaluacionPorItem": [
+    {
+      "sublote": "L020-A",
+      "id_item": "IDD_B06_I01",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "Distingue inclusion real de ocupacion segregada, pero la clave conserva alta visibilidad por distractores extremos.",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B06_I01.json"
+    },
+    {
+      "sublote": "L020-A",
+      "id_item": "IDD_B06_I02",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "Exige decision didactica observable con DUA, aunque la opcion correcta resalta demasiado frente a distractores poco competidores.",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B06_I02.json"
+    },
+    {
+      "sublote": "L020-A",
+      "id_item": "IDD_B06_I03",
+      "area": "competencias_ciudadanas",
+      "perfil": "por_confirmar",
+      "tipo": "comportamental",
+      "decision": "DESCARTAR",
+      "motivo": "El juicio esperado es valioso, pero los distractores son demasiado moralizantes y el caso queda mas cerca de reaccion obvia que de discriminacion fina.",
+      "ruta_destino_propuesta": ""
+    },
+    {
+      "sublote": "L020-A",
+      "id_item": "IDD_B06_I04",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "basica",
+      "decision": "DESCARTAR",
+      "motivo": "Se resuelve por definicion practicamente literal de inclusion efectiva y no por una decision docente observable.",
+      "ruta_destino_propuesta": ""
+    },
+    {
+      "sublote": "L020-A",
+      "id_item": "IDD_B06_I05",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "decision": "LISTO_PARA_BANCO",
+      "motivo": "Formula una decision evaluativa clara sobre ajustes razonables sin bajar expectativas ni desplazar el aprendizaje esperado.",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B06_I05.json"
+    },
+    {
+      "sublote": "L020-A",
+      "id_item": "IDD_B07_I01",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "decision": "LISTO_PARA_BANCO",
+      "motivo": "Aborda equidad socioeconomica sin culpabilizar al estudiante y exige una respuesta pedagogica operativa y defendible.",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B07_I01.json"
+    },
+    {
+      "sublote": "L020-A",
+      "id_item": "IDD_B07_I02",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "Recupera la idea correcta de adaptabilidad curricular, pero el contraste sigue siendo mas doctrinal que situacional.",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B07_I02.json"
+    },
+    {
+      "sublote": "L020-A",
+      "id_item": "IDD_B07_I03",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "decision": "LISTO_PARA_BANCO",
+      "motivo": "Convierte la accesibilidad en una decision institucional observable y no en un recordatorio declarativo de inclusion.",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B07_I03.json"
+    },
+    {
+      "sublote": "L020-A",
+      "id_item": "IDD_B07_I04",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "decision": "LISTO_PARA_BANCO",
+      "motivo": "Sostiene equidad socioeconomica con confidencialidad y acompanamiento, evitando tanto sancion como paternalismo improductivo.",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B07_I04.json"
+    },
+    {
+      "sublote": "L020-A",
+      "id_item": "IDD_B09_I01",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "basica",
+      "decision": "DESCARTAR",
+      "motivo": "Mide definicion conceptual de inteligencia en enfoque por competencias y no una decision docente o evidencia de desempeno situada.",
+      "ruta_destino_propuesta": ""
+    },
+    {
+      "sublote": "L020-B",
+      "id_item": "IDD_B09_I02",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "decision": "DESCARTAR",
+      "motivo": "Descansa en la teoria de inteligencias multiples de forma superficial y tipologica, con riesgo de pseudoteoria mas que de juicio didactico robusto.",
+      "ruta_destino_propuesta": ""
+    },
+    {
+      "sublote": "L020-B",
+      "id_item": "IDD_B09_I03",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "basica",
+      "decision": "DESCARTAR",
+      "motivo": "Es una asociacion casi memoristica entre actividad y tipo de inteligencia; no exige decision docente observable.",
+      "ruta_destino_propuesta": ""
+    },
+    {
+      "sublote": "L020-B",
+      "id_item": "IDD_B09_I04",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "decision": "LISTO_PARA_BANCO",
+      "motivo": "El nucleo valido no es etiquetar inteligencias sino diversificar evidencias de aprendizaje manteniendo el mismo criterio de logro.",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B09_I04.json"
+    }
+  ]
+}
