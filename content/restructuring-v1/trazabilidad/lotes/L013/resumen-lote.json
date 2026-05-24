@@ -1,0 +1,90 @@
+{
+  "lote": "L013",
+  "repository": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "processedAt": "2026-05-24",
+  "subLotesInternos": [
+    {
+      "batchId": "L013-A",
+      "itemCount": 10,
+      "itemIds": [
+        "IDD_B05_I01",
+        "IDD_B05_I02",
+        "IDD_B05_I03",
+        "IDD_B05_I04",
+        "NFL_B07_I02",
+        "NFL_B07_I03",
+        "NFL_B07_I04",
+        "CEOL_B02_I01",
+        "CEOL_B02_I02",
+        "CEOL_B02_I03"
+      ]
+    },
+    {
+      "batchId": "L013-B",
+      "itemCount": 3,
+      "itemIds": [
+        "CEOL_B02_I04",
+        "CEOL_B02_I05",
+        "CEOL_B02_I06"
+      ]
+    }
+  ],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Docente de apoyo, orientador y valoración pedagógica/",
+    "content/items/stand-by/Educación como derecho fundamental, bien común y derecho pluridimensional/",
+    "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/"
+  ],
+  "itemsLeidos": 13,
+  "totals": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 9,
+    "DESCARTAR": 4,
+    "requiere_revision_humana": 3
+  },
+  "criticalFindings": [
+    "El bloque sobre docente de apoyo y valoración pedagógica fue el más sólido del lote porque sí permite distinguir funciones pedagógicas de funciones clínicas y sostener decisiones institucionales de inclusión.",
+    "El bloque sobre derecho a la educación traía una deriva definicional fuerte: dos ítems fueron descartados por convertir el constructo en memoria declarativa y no en juicio profesional aplicado.",
+    "En convivencia y justicia restaurativa hubo depuración selectiva: se descartaron los ítems más conceptuales y se conservaron los que podían reescribirse como decisiones situadas con valor para pilotaje."
+  ],
+  "systemicProblems": [
+    "Los originales sobreenunciaban `LISTO_PARA_BANCO` sin evidencia de pilotaje ni discriminación observada.",
+    "Varios distractores venían moralmente obvios o demasiado caricaturescos y requirieron ajuste fuerte para quedar defendibles como material de pilotaje.",
+    "La taxonomía del bloque de apoyos mezcla funciones de aula, apoyo, orientación y coordinación; cuando la adscripción no fue segura se usó `por_confirmar` en vez de forzar perfil."
+  ],
+  "bankDecision": "APROBAR_PARCIALMENTE",
+  "overallLotQuality": "MEDIA",
+  "incidenciasGitHubOFuente": [
+    "No existían previamente los archivos de salida de L013; se crearon dentro de las rutas permitidas.",
+    "Se creó `reporte-procesos-anteriores.md` porque no existía en el lote.",
+    "Se creó `reporte-acumulado-instancia.md` porque esta instancia ya había ejecutado lotes previos en este chat y el reporte acumulado no existía.",
+    "No se detectaron faltantes de fuente en los trece ítems revisados."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L013/reporte-procesos-anteriores.md",
+    "content/restructuring-v1/trazabilidad/lotes/L013/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L013/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L013/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L013/items-corregidos.json"
+  ],
+  "confirmacionesSeguridad": {
+    "noSeModificoStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true
+  },
+  "itemDecisions": [
+    {"id_item": "IDD_B05_I01", "decision": "LISTO_PARA_PILOTAJE", "rutaDestinoPropuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B05_I01.json"},
+    {"id_item": "IDD_B05_I02", "decision": "LISTO_PARA_PILOTAJE", "rutaDestinoPropuesta": "content/restructuring-v1/docente/gestion/coordinador/funcional/IDD_B05_I02.json"},
+    {"id_item": "IDD_B05_I03", "decision": "LISTO_PARA_PILOTAJE", "rutaDestinoPropuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B05_I03.json"},
+    {"id_item": "IDD_B05_I04", "decision": "LISTO_PARA_PILOTAJE", "rutaDestinoPropuesta": "content/restructuring-v1/docente/gestion/coordinador/funcional/IDD_B05_I04.json"},
+    {"id_item": "NFL_B07_I02", "decision": "DESCARTAR", "rutaDestinoPropuesta": ""},
+    {"id_item": "NFL_B07_I03", "decision": "DESCARTAR", "rutaDestinoPropuesta": ""},
+    {"id_item": "NFL_B07_I04", "decision": "LISTO_PARA_PILOTAJE", "rutaDestinoPropuesta": "content/restructuring-v1/docente/normatividad/coordinador/funcional/NFL_B07_I04.json"},
+    {"id_item": "CEOL_B02_I01", "decision": "LISTO_PARA_PILOTAJE", "rutaDestinoPropuesta": "content/restructuring-v1/docente/competencias_ciudadanas/coordinador/comportamental/CEOL_B02_I01.json"},
+    {"id_item": "CEOL_B02_I02", "decision": "DESCARTAR", "rutaDestinoPropuesta": ""},
+    {"id_item": "CEOL_B02_I03", "decision": "DESCARTAR", "rutaDestinoPropuesta": ""},
+    {"id_item": "CEOL_B02_I04", "decision": "LISTO_PARA_PILOTAJE", "rutaDestinoPropuesta": "content/restructuring-v1/docente/normatividad/coordinador/funcional/CEOL_B02_I04.json"},
+    {"id_item": "CEOL_B02_I05", "decision": "LISTO_PARA_PILOTAJE", "rutaDestinoPropuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CEOL_B02_I05.json"},
+    {"id_item": "CEOL_B02_I06", "decision": "LISTO_PARA_PILOTAJE", "rutaDestinoPropuesta": "content/restructuring-v1/docente/gestion/coordinador/funcional/CEOL_B02_I06.json"}
+  ]
+}
