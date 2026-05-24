@@ -1,0 +1,554 @@
+[
+  {
+    "id_item": "CB05_I02",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "competencias_ciudadanas",
+    "tema": "Comunicación asertiva",
+    "subtema": "Gestión inicial del reclamo familiar",
+    "competencia": "Gestionar interacciones tensas con escucha activa, respeto y encuadre institucional.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Identifica la respuesta inicial que protege la relación con la familia sin renunciar al debido proceso institucional.",
+    "evidencia": "Selecciona una intervención de escucha, validación y canalización formal frente a alternativas reactivas o complacientes.",
+    "tarea": "Analizar un reclamo airado y escoger la actuación comunicativa más adecuada.",
+    "contexto": "Una madre llega muy molesta a la institución porque considera injusto el trato dado a su hijo en clase y exige una solución inmediata.",
+    "enunciado": "¿Qué actuación inicial evidencia mejor una comunicación institucional efectiva?",
+    "opciones": {
+      "A": "Exigir que baje el tono y suspender la conversación hasta que se calme.",
+      "B": "Responder con firmeza para defender de inmediato la actuación del docente.",
+      "C": "Escuchar sin interrumpir, reconocer la preocupación y acordar un espacio formal para revisar el caso con las partes involucradas.",
+      "D": "Aceptar de inmediato todas las exigencias para evitar que el conflicto escale."
+    },
+    "clave": "C",
+    "justificacion_clave": "Escuchar, validar y encauzar el caso a un espacio formal permite atender la inconformidad sin escalar el conflicto ni sacrificar el análisis objetivo de los hechos.",
+    "distractores_funcion": {
+      "A": "Marca un límite, pero bloquea la comunicación y puede agravar la confrontación.",
+      "B": "Confunde autoridad con escalamiento simétrico del conflicto.",
+      "C": "Clave correcta.",
+      "D": "Evita el conflicto a costa del debido proceso y de la revisión objetiva del caso."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El caso es transversal y no depende de pertenencia cultural, regional o socioeconómica específica."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Tiene una sola tarea y vocabulario de uso institucional frecuente."
+    },
+    "metadata_editorial": {
+      "lote": "L001",
+      "ruta_origen": "content/items/stand-by/Comunicación asertiva/CB05_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CB05_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "PPDC_B05_I01",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Diagnóstico pedagógico en educación primaria",
+    "subtema": "Uso formativo del diagnóstico inicial",
+    "competencia": "Diseñar diagnósticos pedagógicos iniciales para orientar la planeación de aula en básica primaria.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que el diagnóstico inicial debe recoger información integral para ajustar la enseñanza, no para clasificar y excluir.",
+    "evidencia": "Escoge una estrategia diagnóstica que integra saberes previos, ritmos, intereses y condiciones del grupo.",
+    "tarea": "Determinar el propósito y el diseño más adecuado del diagnóstico de inicio de año.",
+    "contexto": "Una docente de tercero recibe un grupo heterogéneo y algunos colegas le sugieren aplicar una prueba escrita estandarizada para dividir a los estudiantes por rendimiento desde el primer día.",
+    "enunciado": "¿Cuál debe ser el propósito y diseño del diagnóstico inicial del curso?",
+    "opciones": {
+      "A": "Recoger información integral mediante observación, diálogo y actividades breves para conocer saberes previos, ritmos y necesidades del grupo y ajustar la planeación.",
+      "B": "Aplicar una prueba escrita única y ubicar a los estudiantes con bajo puntaje en un grupo separado para concentrarse en quienes avanzan más rápido.",
+      "C": "Limitar el diagnóstico a entrevistas con las familias y definir desde allí la promoción del curso.",
+      "D": "Usar el diagnóstico como la primera nota definitiva del periodo para elevar la exigencia desde el inicio."
+    },
+    "clave": "A",
+    "justificacion_clave": "El diagnóstico pedagógico inicial cumple una función formativa: produce información relevante para ajustar la enseñanza a las características reales del grupo.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Usa el diagnóstico para segregar en lugar de orientar la enseñanza.",
+      "C": "Reduce indebidamente la valoración pedagógica al relato familiar.",
+      "D": "Convierte una herramienta diagnóstica en un mecanismo punitivo de calificación."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Favorece una lectura inclusiva del grupo y evita respuestas excluyentes o clasificatorias."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Plantea una sola decisión pedagógica y opciones distinguibles."
+    },
+    "metadata_editorial": {
+      "lote": "L001",
+      "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico en educación primaria/PPDC_B05_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/basica_primaria/funcional/PPDC_B05_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "CB08_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "gestion",
+    "tema": "Proyecto Educativo Institucional",
+    "subtema": "Referentes para actualización del PEI",
+    "competencia": "Seleccionar referentes normativos, pedagógicos y contextuales para revisar el PEI.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "BAJA",
+    "claim": "Distingue el conjunto de referentes que hace pertinente una actualización institucional del PEI.",
+    "evidencia": "Elige una combinación que integra fines de la educación, contexto, propuesta pedagógica y acuerdos comunitarios.",
+    "tarea": "Seleccionar los referentes más pertinentes para una revisión institucional del PEI.",
+    "contexto": "El equipo directivo inicia la actualización del PEI y debe definir qué referentes usar para sustentar el proceso.",
+    "enunciado": "¿Qué conjunto de referentes resulta más pertinente para orientar esa actualización?",
+    "opciones": {
+      "A": "Los formatos usados por otras instituciones y las preferencias del equipo directivo.",
+      "B": "Los fines de la educación, el diagnóstico del contexto, la propuesta pedagógica y los acuerdos de la comunidad educativa.",
+      "C": "Los resultados de pruebas externas como criterio único para redefinir el proyecto institucional.",
+      "D": "El manual de convivencia como sustituto de los demás componentes del proyecto."
+    },
+    "clave": "B",
+    "justificacion_clave": "El PEI requiere una base integral: fines formativos, lectura del contexto, orientación pedagógica y acuerdos construidos por la comunidad educativa.",
+    "distractores_funcion": {
+      "A": "Reduce el PEI a copia de formatos y decisiones personalistas.",
+      "B": "Clave correcta.",
+      "C": "Sobredimensiona una fuente de información y omite la integralidad del proyecto institucional.",
+      "D": "Confunde un componente del PEI con el proyecto completo."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El caso es generalizable a distintos tipos de institución."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La lectura es clara, aunque la discriminación esperada es baja por la evidencia de la clave."
+    },
+    "metadata_editorial": {
+      "lote": "L001",
+      "ruta_origen": "content/items/stand-by/Referentes PEI/CB08_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/rector_director_rural/funcional/CB08_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "IDD_B01_I01",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "competencias_ciudadanas",
+    "tema": "Sesgos culturales",
+    "subtema": "Diversidad de tonos de piel en el aula",
+    "competencia": "Identificar y mediar sesgos naturalizados en interacciones escolares cotidianas.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce cuándo una expresión cotidiana invisibiliza la diversidad humana y exige intervención pedagógica.",
+    "evidencia": "Selecciona la interpretación que identifica el sesgo cultural y racial presente en el caso.",
+    "tarea": "Analizar una práctica cotidiana del aula y determinar el sesgo implicado.",
+    "contexto": "En una actividad de dibujo, varios estudiantes llaman color piel a un único tono claro y lo asumen como válido para todas las personas.",
+    "enunciado": "¿Qué sesgo debe intervenir el docente en esta situación?",
+    "opciones": {
+      "A": "Un problema perceptivo individual que exige remisión clínica.",
+      "B": "Una dificultad de clasificación en ciencias sociales sin implicación valorativa.",
+      "C": "Un sesgo cultural y racial que asume un tono único de piel e invisibiliza la diversidad humana.",
+      "D": "Una conducta disruptiva que debe sancionarse para recuperar la disciplina."
+    },
+    "clave": "C",
+    "justificacion_clave": "La expresión instala como norma un único tono de piel y borra la pluralidad corporal y cultural presente en el aula.",
+    "distractores_funcion": {
+      "A": "Patologiza un problema cultural.",
+      "B": "Reduce el caso a un error clasificatorio y omite la discriminación simbólica.",
+      "C": "Clave correcta.",
+      "D": "Convierte un problema de reconocimiento y diversidad en un asunto meramente disciplinario."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Promueve inclusión y reconocimiento sin estigmatizar grupos específicos."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Caso cotidiano, lenguaje claro y una sola demanda cognitiva."
+    },
+    "metadata_editorial": {
+      "lote": "L001",
+      "ruta_origen": "content/items/stand-by/Sesgos culturales, lenguaje inclusivo y discriminación cotidiana/IDD_B01_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/IDD_B01_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "NFL_B07_I01",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "normatividad",
+    "tema": "Derecho a la educación",
+    "subtema": "Acceso, permanencia e inclusión",
+    "competencia": "Interpretar el alcance del derecho a la educación para decisiones institucionales.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue entre cobertura administrativa y garantía integral del derecho a la educación.",
+    "evidencia": "Selecciona la postura que integra acceso, permanencia, calidad, inclusión y corresponsabilidad.",
+    "tarea": "Elegir la postura institucional mejor alineada con el derecho fundamental a la educación.",
+    "contexto": "En un comité escolar se discute si basta con asegurar la matrícula para afirmar que el derecho a la educación está garantizado.",
+    "enunciado": "¿Qué postura está mejor alineada con ese derecho?",
+    "opciones": {
+      "A": "Garantizar matrícula es suficiente; la permanencia depende solo del estudiante.",
+      "B": "Se trata de una prestación condicionada por presupuesto y capacidad de autogestión de cada colegio.",
+      "C": "Garantizar educación exige acceso, permanencia, inclusión, calidad y corresponsabilidad entre Estado, familia, sociedad e institución.",
+      "D": "Es un principio ético orientador, pero no genera obligaciones exigibles para la institución."
+    },
+    "clave": "C",
+    "justificacion_clave": "El derecho a la educación no se agota en el cupo escolar: compromete condiciones efectivas de permanencia, inclusión y calidad.",
+    "distractores_funcion": {
+      "A": "Reduce el derecho al acceso inicial y traslada la responsabilidad de permanencia al estudiante.",
+      "B": "Condiciona indebidamente un derecho fundamental a variables administrativas.",
+      "C": "Clave correcta.",
+      "D": "Desconoce la fuerza jurídica del derecho en las actuaciones institucionales."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El contexto es general y no incorpora barreras culturales irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea es única y el vocabulario es institucionalmente frecuente."
+    },
+    "metadata_editorial": {
+      "lote": "L001",
+      "ruta_origen": "content/items/stand-by/Educación como derecho fundamental, bien común y derecho pluridimensional/NFL_B07_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/NFL_B07_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CEOL_B07_I01",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Constructivismo",
+    "subtema": "Ideas previas y conflicto cognitivo",
+    "competencia": "Tomar decisiones didácticas que usen las ideas previas para promover reestructuración conceptual.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que la duda del estudiante es un punto de partida para indagar y reconstruir conocimiento.",
+    "evidencia": "Elige la intervención docente que explora conceptos previos y los contrasta con evidencia.",
+    "tarea": "Escoger la respuesta didáctica más adecuada ante una confusión conceptual.",
+    "contexto": "En una clase de ciencias, un estudiante pregunta por qué al cruzarse dos haces de luz no se siente un choque de átomos.",
+    "enunciado": "¿Qué intervención docente es más adecuada desde un enfoque constructivista?",
+    "opciones": {
+      "A": "Descartar la pregunta y continuar con la planeación prevista.",
+      "B": "Afirmar que la luz está formada por átomos invisibles para simplificar la explicación.",
+      "C": "Indagar qué entiende el estudiante por átomo, masa y luz, contrastar con evidencias y orientar una explicación científica.",
+      "D": "Llamar la atención al estudiante porque su pregunta muestra desconocimiento del tema."
+    },
+    "clave": "C",
+    "justificacion_clave": "La opción correcta usa la pregunta del estudiante como entrada para explorar conceptos previos y producir reconstrucción conceptual fundamentada.",
+    "distractores_funcion": {
+      "A": "Ignora la oportunidad didáctica que ofrece la duda.",
+      "B": "Refuerza una explicación científicamente incorrecta.",
+      "C": "Clave correcta.",
+      "D": "Confunde mediación pedagógica con sanción del error."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Evalúa decisión didáctica general y no experticia disciplinar avanzada."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El caso está focalizado y las opciones son distinguibles."
+    },
+    "metadata_editorial": {
+      "lote": "L001",
+      "ruta_origen": "content/items/stand-by/Ideas previas, conflicto cognitivo y desarrollo constructivista/CEOL_B07_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CEOL_B07_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "EIP_B04_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Identidad y autonomía en preescolar",
+    "subtema": "Reconocimiento del cuerpo",
+    "competencia": "Relacionar actividades de educación inicial con objetivos formativos del nivel preescolar.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Identifica el objetivo de preescolar prioritariamente movilizado por una secuencia de autoconocimiento corporal.",
+    "evidencia": "Escoge la formulación que vincula la actividad con identidad, autonomía y reconocimiento del propio cuerpo.",
+    "tarea": "Determinar a qué objetivo formativo de preescolar responde principalmente una actividad de autorrepresentación corporal.",
+    "contexto": "En transición, los niños se dibujan a tamaño real, nombran partes del cuerpo, comparten rasgos propios y explican qué los hace sentirse especiales.",
+    "enunciado": "¿A qué objetivo de la educación preescolar contribuye principalmente esta actividad?",
+    "opciones": {
+      "A": "Al crecimiento armónico y al conocimiento y aceptación del propio cuerpo, ligado a identidad y autonomía.",
+      "B": "Al aprestamiento temprano para lectoescritura y aritmética como prioridad del nivel.",
+      "C": "Al desarrollo lógico-matemático mediante clasificación jerárquica y medición comparativa de cuerpos.",
+      "D": "A la regulación rígida de la motricidad para reducir la expresión corporal libre en clase."
+    },
+    "clave": "A",
+    "justificacion_clave": "La secuencia promueve autoconocimiento, aceptación corporal, identidad y autonomía, todos ejes centrales del nivel preescolar.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Primariza el preescolar y desplaza el foco del desarrollo integral.",
+      "C": "Intelectualiza indebidamente una actividad orientada al autoconocimiento.",
+      "D": "Transforma una experiencia de reconocimiento corporal en control restrictivo del cuerpo."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El contenido es pertinente para preescolar y no introduce barreras culturales irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Es claro, aunque el vínculo normativo puede facilitar demasiado la clave a población experta."
+    },
+    "metadata_editorial": {
+      "lote": "L001",
+      "ruta_origen": "content/items/stand-by/Identidad, autonomía y reconocimiento del cuerpo/EIP_B04_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/preescolar/basica/EIP_B04_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "NFL_B08_I01",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "normatividad",
+    "tema": "Igualdad material",
+    "subtema": "Ajustes razonables y barreras",
+    "competencia": "Aplicar el principio de igualdad material en decisiones pedagógicas e institucionales.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue entre trato idéntico e igualdad efectiva cuando existen barreras para el aprendizaje y la participación.",
+    "evidencia": "Escoge la respuesta que propone apoyos proporcionales sin renunciar a metas formativas.",
+    "tarea": "Determinar la actuación más ajustada al principio de igualdad material en un caso escolar.",
+    "contexto": "Un estudiante en condición de debilidad manifiesta enfrenta barreras para aprender y algunos docentes proponen exigirle exactamente lo mismo, sin apoyos.",
+    "enunciado": "¿Qué decisión aplica correctamente la igualdad material?",
+    "opciones": {
+      "A": "Implementar apoyos y ajustes razonables según las barreras identificadas para garantizar acceso, participación y dignidad.",
+      "B": "Mantener un trato idéntico sin ajustes para evitar privilegios frente al resto del grupo.",
+      "C": "Difundir públicamente su condición para justificar las excepciones ante el grupo.",
+      "D": "Eliminar toda exigencia académica sin metas ni seguimiento pedagógico."
+    },
+    "clave": "A",
+    "justificacion_clave": "La igualdad material exige remover barreras con apoyos pertinentes, no uniformar el trato ni vaciar la experiencia educativa de propósito pedagógico.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Confunde igualdad con uniformidad excluyente.",
+      "C": "Vulnera la intimidad y la dignidad del estudiante.",
+      "D": "Confunde ajuste razonable con renuncia total a las metas de aprendizaje."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Se centra en barreras observables y no en etiquetas diagnósticas."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Caso claro y opciones mutuamente distinguibles."
+    },
+    "metadata_editorial": {
+      "lote": "L001",
+      "ruta_origen": "content/items/stand-by/Igualdad material, discriminación positiva y debilidad manifiesta/NFL_B08_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/NFL_B08_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "PPDC_B06_I01",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "normatividad",
+    "tema": "Fines de la educación",
+    "subtema": "Diversidad étnica, cultura e historia",
+    "competencia": "Interpretar fines educativos y traducirlos en decisiones curriculares transversales.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Justifica decisiones curriculares que materializan fines legales de la educación vinculados con identidad, memoria y diversidad.",
+    "evidencia": "Elige la justificación más sólida para integrar de manera transversal historia, diversidad étnica y cultura en el currículo.",
+    "tarea": "Identificar el propósito formativo de una decisión curricular institucional.",
+    "contexto": "Una institución debate si trabajar historia nacional, diversidad étnica y cultura solo en fechas conmemorativas o integrarlas de manera transversal en varias áreas.",
+    "enunciado": "¿Cuál es la justificación pedagógica y social más sólida para integrarlas transversalmente?",
+    "opciones": {
+      "A": "Cumplir formalmente con efemérides patrias sin alterar los planes de estudio.",
+      "B": "Fortalecer identidad, memoria histórica, respeto por la diversidad, convivencia y comprensión crítica de la sociedad.",
+      "C": "Sustituir el trabajo disciplinar por proyectos libres sin estructura curricular.",
+      "D": "Homogeneizar referentes culturales para evitar conflictos identitarios en la comunidad."
+    },
+    "clave": "B",
+    "justificacion_clave": "La integración transversal permite materializar fines formativos asociados a ciudadanía crítica, memoria, identidad y reconocimiento de la diversidad.",
+    "distractores_funcion": {
+      "A": "Reduce el sentido formativo a cumplimiento ceremonial.",
+      "B": "Clave correcta.",
+      "C": "Plantea una falsa oposición entre enfoque transversal y rigor curricular.",
+      "D": "Asume la diferencia cultural como problema a neutralizar en lugar de reconocerla pedagógicamente."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Promueve reconocimiento plural sin esencializar grupos o territorios específicos."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La demanda cognitiva está focalizada en justificar una decisión institucional."
+    },
+    "metadata_editorial": {
+      "lote": "L001",
+      "ruta_origen": "content/items/stand-by/Normatividad, fines de la educación y educación no formal/PPDC_B06_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/PPDC_B06_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "PPDC_B06_I02",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "normatividad",
+    "tema": "Tipos de educación",
+    "subtema": "Educación para el trabajo y el desarrollo humano",
+    "competencia": "Clasificar ofertas formativas según su naturaleza jurídica dentro del servicio educativo.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue la clasificación legal de una oferta formativa no conducente a título académico formal.",
+    "evidencia": "Selecciona la categoría jurídica correcta para un programa corto orientado a competencias ocupacionales.",
+    "tarea": "Clasificar jurídicamente una modalidad de formación.",
+    "contexto": "Una persona cursa formación laboral de corta duración y recibe una certificación de competencias ocupacionales, sin ingresar a grados del sistema regular ni obtener un título académico formal.",
+    "enunciado": "¿Cómo se clasifica esta formación?",
+    "opciones": {
+      "A": "Educación informal, por tratarse de un proceso espontáneo sin estructuración curricular.",
+      "B": "Educación formal técnica, porque expide una certificación útil para el empleo.",
+      "C": "Educación para el trabajo y el desarrollo humano, por no conducir a título académico formal del sistema regular.",
+      "D": "Educación superior técnica o tecnológica, por estar ligada al mercado laboral."
+    },
+    "clave": "C",
+    "justificacion_clave": "La ETDH agrupa ofertas estructuradas que desarrollan competencias ocupacionales sin hacer parte del sistema formal por niveles y grados.",
+    "distractores_funcion": {
+      "A": "Confunde una oferta estructurada con aprendizaje informal espontáneo.",
+      "B": "Asimila erróneamente certificación ocupacional a título formal.",
+      "C": "Clave correcta.",
+      "D": "Confunde formación para el trabajo con educación superior regulada por otro marco."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No depende de conocer una institución concreta ni un territorio específico."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Los términos técnicos necesarios están contextualizados por el caso."
+    },
+    "metadata_editorial": {
+      "lote": "L001",
+      "ruta_origen": "content/items/stand-by/Normatividad, fines de la educación y educación no formal/PPDC_B06_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/basica/PPDC_B06_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "DIL_B02_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "PARD y restablecimiento de derechos",
+    "subtema": "Concepto básico del procedimiento",
+    "competencia": "Reconocer figuras de protección de niños, niñas y adolescentes en contexto escolar.",
+    "nivel_cognitivo": "CONOCIMIENTO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Identifica el significado y propósito básico del PARD en una situación de vulneración de derechos.",
+    "evidencia": "Asocia correctamente la sigla con el procedimiento de protección aplicable.",
+    "tarea": "Relacionar una sigla normativa con su significado y finalidad principal.",
+    "contexto": "En un comité escolar se analiza el caso de un estudiante que podría estar sufriendo negligencia familiar grave y se plantea activar un PARD ante la autoridad competente.",
+    "enunciado": "¿Qué significa la sigla PARD y cuál es su propósito principal?",
+    "opciones": {
+      "A": "Proceso Administrativo de Restablecimiento de Derechos, orientado a dictar medidas de protección cuando existen derechos amenazados o vulnerados.",
+      "B": "Plan de Acción y Refuerzo Docente, dirigido a mejorar el rendimiento académico de estudiantes con rezago.",
+      "C": "Programa de Acompañamiento y Regulación Disciplinaria, creado para corregir faltas graves de convivencia.",
+      "D": "Protocolo de Apoyo para la Retención y el Desempeño, enfocado en prevenir la deserción escolar."
+    },
+    "clave": "A",
+    "justificacion_clave": "PARD nombra el procedimiento administrativo de protección orientado a restablecer derechos vulnerados o amenazados de niños, niñas y adolescentes.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Inventa un plan académico y desplaza el foco de protección jurídica.",
+      "C": "Confunde un procedimiento de protección con disciplina escolar.",
+      "D": "Propone un protocolo inexistente centrado en permanencia escolar."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El lenguaje es neutral y el caso es pertinente para el rol orientador."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Es claro, pero la tarea depende en gran parte de memoria normativa directa."
+    },
+    "metadata_editorial": {
+      "lote": "L001",
+      "ruta_origen": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/orientador/basica/DIL_B02_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "PPDC_B04_I01",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Pedagogía y didáctica",
+    "subtema": "Distinción conceptual aplicada",
+    "competencia": "Diferenciar el sentido formativo de la pedagogía y la función operativa de la didáctica en decisiones de aula.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que pedagogía y didáctica son complementarias, pero no equivalentes.",
+    "evidencia": "Selecciona la opción que articula el para qué formativo con el cómo metodológico de la enseñanza.",
+    "tarea": "Aplicar la distinción entre pedagogía y didáctica a una situación de planeación.",
+    "contexto": "Una docente recibe un grupo heterogéneo, define primero la formación que busca promover y luego selecciona métodos y actividades para alcanzarla.",
+    "enunciado": "¿Qué opción diferencia correctamente pedagogía y didáctica en este caso?",
+    "opciones": {
+      "A": "La pedagogía se ocupa del control administrativo escolar y la didáctica solo del diseño de rúbricas.",
+      "B": "Pedagogía y didáctica son sinónimos absolutos y se refieren a lo mismo.",
+      "C": "La pedagogía reflexiona sobre el sentido y los fines de la educación; la didáctica organiza metodológicamente los procesos de enseñanza y aprendizaje.",
+      "D": "La pedagogía regula la ética profesional y la didáctica se limita al diseño de materiales interactivos."
+    },
+    "clave": "C",
+    "justificacion_clave": "La pedagogía orienta el sentido formativo de la acción educativa y la didáctica organiza su realización en el plano metodológico.",
+    "distractores_funcion": {
+      "A": "Reduce ambos conceptos a funciones parciales y burocráticas.",
+      "B": "Elimina una distinción básica para la toma de decisiones pedagógicas.",
+      "C": "Clave correcta.",
+      "D": "Atribuye a cada campo alcances demasiado restringidos y poco pertinentes."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No favorece un área disciplinar específica ni exige tecnicismo excesivo."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Demanda una sola decisión conceptual aplicada."
+    },
+    "metadata_editorial": {
+      "lote": "L001",
+      "ruta_origen": "content/items/stand-by/Praxis pedagógica, didáctica y selección metodológica/PPDC_B04_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/basica/PPDC_B04_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  }
+]
