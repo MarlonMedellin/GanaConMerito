@@ -1,0 +1,50 @@
+{
+  "lote": "L001",
+  "repository": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaAuditoria": "2026-05-24",
+  "decisionGlobalLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "totalItems": 12,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 9,
+    "LISTO_PARA_PILOTAJE": 3,
+    "DESCARTAR": 0
+  },
+  "conteoClasificacion": {
+    "pedagogia": 4,
+    "gestion": 1,
+    "normatividad": 5,
+    "competencias_ciudadanas": 2
+  },
+  "fuentesConsultadas": [
+    "content/restructuring-v1/README.md",
+    "content/restructuring-v1/trazabilidad/reglas-clasificacion.json",
+    "content/restructuring-v1/trazabilidad/blueprint-sugerido.md",
+    "content/restructuring-v1/trazabilidad/protocolo-ejecucion.md",
+    "content/restructuring-v1/trazabilidad/lotes/README-lanzamiento-paralelo.md",
+    "content/restructuring-v1/trazabilidad/mapa-carpetas-stand-by.csv",
+    "content/restructuring-v1/trazabilidad/bitacora-lotes.csv"
+  ],
+  "fuentesAusentes": [],
+  "hallazgosPrincipales": [
+    "El lote L001 presenta contenido mayoritariamente ya remediado y técnicamente usable, con foco en pedagogía, normatividad y competencias ciudadanas.",
+    "Los principales riesgos no están en fairness ni en unicidad de clave, sino en discriminación esperada baja para algunos ítems de memoria normativa o selección demasiado evidente.",
+    "Se identificaron ajustes de clasificación frente a la migración inicial: algunos ítems previamente marcados como básicos funcionan mejor como funcionales por la tarea cognitiva real."
+  ],
+  "riesgosSistemicos": [
+    "Uso frecuente de perfil por_confirmar en ítems transversales que requieren segunda pasada de perfilamiento si el banco se segmenta por rol.",
+    "Tres ítems conservan valor, pero conviene pilotearlos antes de banco por su dificultad baja o carga de recuerdo normativo directo."
+  ],
+  "itemsRevisionHumana": [
+    "CB05_I02",
+    "IDD_B01_I01",
+    "NFL_B07_I01",
+    "CEOL_B07_I01",
+    "NFL_B08_I01",
+    "PPDC_B06_I01",
+    "PPDC_B06_I02",
+    "PPDC_B04_I01"
+  ],
+  "notaOperativa": "El archivo de entrada del encargo llegó con {LOTE} y {RUTAS_ASIGNADAS} sin resolver. Se auditó el único lote explícitamente trazado en la bitácora global: L001."
+}
