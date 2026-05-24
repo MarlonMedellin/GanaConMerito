@@ -1,0 +1,69 @@
+{
+  "loteProcesado": "L045",
+  "repo": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaCierre": "2026-05-24",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/",
+    "content/items/stand-by/Responsabilidad legal/",
+    "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/"
+  ],
+  "itemsLeidos": 13,
+  "itemsAuditadosEnL045": 1,
+  "itemsOmitidosPorAuditoriaPrevia": 12,
+  "conteoDecisiones": {
+    "OMITIDO_POR_AUDITORIA_PREVIA": 12,
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 1,
+    "DESCARTAR": 0
+  },
+  "requiereRevisionHumana": 1,
+  "hallazgosClave": [
+    "Las carpetas de responsabilidad legal escolar y responsabilidad legal ya tenían auditoría previa suficiente y no fue necesario reprocesar sus ítems.",
+    "En justicia restaurativa apareció un único ítem nuevo, útil por su actuación institucional situada, pero todavía con clave demasiado visible por distractores moralmente débiles.",
+    "L045 combina consolidación por omisión trazada con una sola decisión nueva en pilotaje."
+  ],
+  "problemasDetectados": {
+    "omitidos_por_auditoria_previa": {
+      "L027": [
+        "DIL_B04_I01",
+        "DIL_B04_I02",
+        "DIL_B04_I03",
+        "DIL_B04_I04",
+        "DIL_B04_I05"
+      ],
+      "L026": [
+        "CB07_I01"
+      ],
+      "L013": [
+        "CEOL_B02_I01",
+        "CEOL_B02_I02",
+        "CEOL_B02_I03",
+        "CEOL_B02_I04",
+        "CEOL_B02_I05",
+        "CEOL_B02_I06"
+      ]
+    },
+    "mejor_valor_relativo_del_tramo_nuevo": [
+      "CEOL_B02_I07"
+    ]
+  },
+  "incidenciasGithubOFuente": [
+    "Los archivos de salida de L045 no existían y devolvieron 404 antes de crearse.",
+    "No se identificó más de un ítem nuevo no auditado en las carpetas asignadas; la mayor parte del lote quedó resuelta por cruce con decisiones previas.",
+    "reporte-acumulado-instancia.md no existía en L045 y se creó en este cierre."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L045/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L045/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L045/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L045/reporte-acumulado-instancia.md"
+  ],
+  "confirmaciones": {
+    "content_items_stand_by_no_modificado": true,
+    "trash_json_no_modificado": true,
+    "bitacoras_globales_no_modificadas": true,
+    "otros_lotes_no_modificados": true
+  }
+}
