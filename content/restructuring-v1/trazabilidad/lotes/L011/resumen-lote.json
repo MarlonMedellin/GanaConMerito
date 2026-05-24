@@ -1,0 +1,81 @@
+{
+  "lote": "L011",
+  "repository": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaAuditoria": "2026-05-24",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Diagnóstico pedagógico en educación primaria/",
+    "content/items/stand-by/Diagnóstico pedagógico integral/",
+    "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/"
+  ],
+  "decisionGlobalLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "numeroItemsLeidos": 7,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 4,
+    "LISTO_PARA_PILOTAJE": 1,
+    "DESCARTAR": 2
+  },
+  "numeroRequiereRevisionHumana": 5,
+  "conteoClasificacion": {
+    "pedagogia": 7
+  },
+  "fuentesConsultadas": [
+    "content/items/stand-by/Diagnóstico pedagógico en educación primaria/PPDC_B05_I01.json",
+    "content/items/stand-by/Diagnóstico pedagógico integral/EFCC_B05_I01.json",
+    "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/IDD_B14_I01.json",
+    "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/IDD_B14_I02.json",
+    "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/IDD_B14_I03.json",
+    "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/IDD_B14_I04.json",
+    "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/IDD_B14_I05.json"
+  ],
+  "fuentesAusentes": [],
+  "hallazgosPrincipales": [
+    "El lote tiene un núcleo válido cuando el diagnóstico se formula como decisión docente observable para ajustar planeación, apoyos y retroalimentación.",
+    "Los mejores ítems del lote son los que convierten el diagnóstico y la evaluación formativa en acción pedagógica concreta, especialmente en primaria o en diseño de apoyos.",
+    "Los reactivos débiles caen en listado conceptual o justificación genérica de qué es un diagnóstico integral, sin exigir una decisión pedagógica suficientemente discriminante."
+  ],
+  "riesgosSistemicos": [
+    "Aparece nomenclatura de área no canónica como 'Pedagogía y práctica', 'Evaluación para el aprendizaje' y 'Evaluación formativa'; el ajuste defendible del lote es 'pedagogia'.",
+    "Hay redundancia temática entre varios ítems del bloque IDD_B14, con formulaciones muy cercanas sobre saberes previos y diagnóstico integral.",
+    "Dos ítems se descartan porque quedan demasiado genéricos o se reducen a listar componentes del diagnóstico sin evidencia observable de decisión pedagógica."
+  ],
+  "problemasDetectados": {
+    "demasiadoGenericos": [
+      "IDD_B14_I01",
+      "IDD_B14_I04"
+    ],
+    "sinDecisionPedagogicaSuficiente": [
+      "IDD_B14_I01",
+      "IDD_B14_I04"
+    ],
+    "coherenciaConPrimaria": [
+      "PPDC_B05_I01"
+    ],
+    "usoRealSaberesPrevios": [
+      "EFCC_B05_I01",
+      "IDD_B14_I02",
+      "IDD_B14_I05"
+    ],
+    "evaluacionFormativaObservable": [
+      "IDD_B14_I03",
+      "IDD_B14_I05"
+    ]
+  },
+  "incidenciasGitHubOFuente": [
+    "Las rutas previas de salida de L011 y el reporte de procesos anteriores no existían; GitHub respondió 404 al consultarlas y luego se crearon dentro del lote.",
+    "La búsqueda inicial de la carpeta 'Diagnóstico pedagógico en educación primaria' devolvió ruido de resultados y se resolvió con una consulta más específica por nombre de carpeta e id_item."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L011/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L011/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L011/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L011/reporte-procesos-anteriores.md"
+  ],
+  "confirmaciones": {
+    "noSeModificoContentItemsStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true
+  }
+}
