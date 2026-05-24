@@ -1,0 +1,160 @@
+[
+  {
+    "id_item": "DIL_B08_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Aptitud numérica: porcentajes y proporcionalidad/DIL_B08_I01.json",
+    "motivo": "El archivo aparece en el arbol web de GitHub, pero no fue recuperable por la API de contenidos ni por URL directa. Sin acceso al contenido no se puede validar clave, dificultad ni valor para el banco.",
+    "lote": "L030",
+    "requiere_revision_humana": true
+  },
+  {
+    "id_item": "DIL_B08_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Aptitud numérica: porcentajes y proporcionalidad/DIL_B08_I02.json",
+    "motivo": "El archivo aparece en el arbol web de GitHub, pero no fue recuperable por la API de contenidos ni por URL directa. Sin acceso al contenido no se puede validar clave, dificultad ni valor para el banco.",
+    "lote": "L030",
+    "requiere_revision_humana": true
+  },
+  {
+    "id_item": "DIL_B08_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Aptitud numérica: porcentajes y proporcionalidad/DIL_B08_I03.json",
+    "motivo": "El archivo aparece en el arbol web de GitHub, pero no fue recuperable por la API de contenidos ni por URL directa. Sin acceso al contenido no se puede validar clave, dificultad ni valor para el banco.",
+    "lote": "L030",
+    "requiere_revision_humana": true
+  },
+  {
+    "id_item": "IDD_B17_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Aptitud verbal y organización textual/IDD_B17_I01.json",
+    "motivo": "La tarea es un ordenamiento secuencial mecanico y transparente; no alcanza el umbral de lectura critica ni aporta suficiente valor al perfil docente.",
+    "lote": "L030"
+  },
+  {
+    "id_item": "IDD_B17_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Aptitud verbal y organización textual/IDD_B17_I02.json",
+    "motivo": "Se resuelve por progresion narrativa demasiado evidente y mide una habilidad textual trivial para una prueba docente.",
+    "lote": "L030"
+  },
+  {
+    "id_item": "IDD_B17_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Aptitud verbal y organización textual/IDD_B17_I03.json",
+    "motivo": "El ejercicio de secuenciar fases de escritura queda en ordenamiento procedimental obvio y no discrimina una competencia docente sustantiva.",
+    "lote": "L030"
+  },
+  {
+    "id_item": "IDD_B17_I04",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Aptitud verbal y organización textual/IDD_B17_I04.json",
+    "motivo": "La clave descansa casi por completo en marcadores discursivos demasiado visibles y no en una lectura critica de mayor nivel.",
+    "lote": "L030"
+  },
+  {
+    "id_item": "IDD_B17_I05",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Aptitud verbal y organización textual/IDD_B17_I05.json",
+    "motivo": "Aunque agrega una variacion temporal, la tarea sigue siendo mecanica y de baja relevancia para seleccion docente.",
+    "lote": "L030"
+  },
+  {
+    "id_item": "CB05_I01",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "competencias_ciudadanas",
+    "tema": "comunicacion asertiva",
+    "subtema": "mediacion profesional de desacuerdos entre docentes",
+    "competencia": "Gestionar desacuerdos profesionales mediante escucha, claridad y construccion de acuerdos compartidos.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado identifica la respuesta de liderazgo que mejor encauza un conflicto profesional sin evasion, arbitrariedad ni exposicion publica innecesaria.",
+    "evidencia": "Selecciona la actuacion que escucha activamente, delimita objetivamente el desacuerdo y construye compromisos viables entre las partes.",
+    "tarea": "Analizar un conflicto laboral entre docentes y elegir la intervencion mas asertiva del directivo o lider de area.",
+    "contexto": "Dos docentes mantienen un desacuerdo sobre la distribucion de actividades de un proyecto institucional y la tension ya empieza a afectar el trabajo del equipo.",
+    "enunciado": "Que actuacion del directivo o lider de area expresa mejor una resolucion asertiva del conflicto?",
+    "opciones": {
+      "A": "Pedir que suspendan la discusion y se concentren solo en sus tareas, esperando que el tiempo enfrie el conflicto.",
+      "B": "Convocar una reunion privada para escuchar ambas posturas, precisar los puntos de desacuerdo y construir un plan de trabajo con responsabilidades compartidas.",
+      "C": "Solicitar que el docente con menor antiguedad ceda temporalmente para garantizar la entrega del proyecto.",
+      "D": "Exponer el desacuerdo en una plenaria general para que el equipo vote la distribucion de tareas."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opcion B combina escucha, precision del problema y construccion conjunta de compromisos, que es justamente la forma mas defendible de comunicacion asertiva en un conflicto profesional.",
+    "distractores_funcion": {
+      "A": "Evade el conflicto sin resolver su causa.",
+      "B": "Clave correcta.",
+      "C": "Impone una salida arbitraria basada en jerarquia informal.",
+      "D": "Escala el conflicto y sacrifica la confidencialidad profesional."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Se centra en la actuacion profesional y no en rasgos personales de los involucrados."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Escenario claro con una sola tarea cognitiva y opciones semanticamente comparables."
+    },
+    "metadata_editorial": {
+      "lote": "L030",
+      "ruta_origen": "content/items/stand-by/Comunicación asertiva/CB05_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CB05_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "CB05_I02",
+    "decision": "OMITIDO_POR_AUDITORIA_PREVIA",
+    "ruta_origen": "content/items/stand-by/Comunicación asertiva/CB05_I02.json",
+    "motivo": "Ya fue auditado en L001; no se reprocesa en L030.",
+    "lote": "L030"
+  },
+  {
+    "id_item": "CB05_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "competencias_ciudadanas",
+    "tema": "comunicacion asertiva",
+    "subtema": "conversacion restaurativa inicial entre estudiantes",
+    "competencia": "Guiar una conversacion restaurativa con foco en escucha, reconocimiento de afectaciones y acuerdos iniciales de convivencia.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado reconoce la secuencia de actuacion mas coherente para abrir una mediacion restaurativa y no convertirla en sancion inmediata o humillacion publica.",
+    "evidencia": "Selecciona la opcion que establece pautas de respeto, escucha los hechos y conduce a compromisos construidos con los estudiantes.",
+    "tarea": "Analizar un caso de ofensas en redes y discusion en el aula para elegir la secuencia inicial de mediacion mas asertiva.",
+    "contexto": "La coordinacion debe mediar entre dos estudiantes que intercambiaron mensajes ofensivos por redes sociales y luego discutieron en el aula.",
+    "enunciado": "Que secuencia de acciones es mas adecuada para una conversacion restaurativa inicial con enfoque de comunicacion efectiva?",
+    "opciones": {
+      "A": "Establecer pautas de respeto para la escucha mutua, pedir a cada estudiante que describa hechos y sentimientos e impulsar acuerdos iniciales de no agresion y reparacion.",
+      "B": "Leer en voz alta los mensajes ofensivos, amonestar verbalmente a ambos y registrar de inmediato la sancion correspondiente.",
+      "C": "Exigir una disculpa publica inmediata frente al curso para enviar un mensaje de cero tolerancia.",
+      "D": "Recibir descargos por separado y emitir un fallo disciplinario sin encuentro de dialogo directo."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A mantiene el foco restaurativo: escucha, reconocimiento de afectaciones y construccion inicial de acuerdos. Las demas alternativas se desplazan hacia punicion o humillacion.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Reduce la intervencion a punicion y exhibicion de la falta.",
+      "C": "Fuerza una disculpa publica que puede ser humillante o poco genuina.",
+      "D": "Anula la mediacion directa y la construccion dialogada del acuerdo."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El caso es comun y no descansa en atributos irrelevantes de los estudiantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea es clara, aunque conviene pilotear por visibilidad relativa de la clave frente a distractores mas punitivos."
+    },
+    "metadata_editorial": {
+      "lote": "L030",
+      "ruta_origen": "content/items/stand-by/Comunicación asertiva/CB05_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CB05_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  }
+]
