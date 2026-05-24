@@ -1,0 +1,71 @@
+# Reporte acumulado de la instancia
+
+## Lote L007
+- Carpetas revisadas:
+  - `content/items/stand-by/Criterios, instrumentos y tipos de evaluacion/`
+  - `content/items/stand-by/Cultura escolar, identidad institucional y PEI/`
+  - `content/items/stand-by/Curriculo en espiral, Bruner y material concreto/`
+- Cantidad de items leidos: 8
+- `LISTO_PARA_BANCO`: 0
+- `LISTO_PARA_PILOTAJE`: 2
+- `DESCARTAR`: 6
+- `requiere_revision_humana`: 3
+- Incidencias GitHub o de fuente:
+  - `EFCC_B02_I04` no resolvio en `master` y no pudo auditarse desde fuente viva.
+- Archivos escritos:
+  - `content/restructuring-v1/trazabilidad/lotes/L007/resumen-lote.json`
+  - `content/restructuring-v1/trazabilidad/lotes/L007/decisiones.csv`
+  - `content/restructuring-v1/auditoria/lotes/L007/items-corregidos.json`
+- Confirmacion de rutas protegidas no modificadas:
+  - `content/items/stand-by/`: no modificado
+  - `content/restructuring-v1/trazabilidad/trash.json`: no modificado
+  - Bitacoras globales: no modificadas
+
+## Lote L005
+- Carpetas revisadas:
+  - `content/items/stand-by/Constructivismo, indagacion y aprendizaje experimental/`
+  - `content/items/stand-by/Contexto, curriculo y practica educativa/`
+  - `content/items/stand-by/Corresponsabilidad educativa, ausentismo y posicion de garante/`
+- Cantidad de items leidos: 17
+- `LISTO_PARA_BANCO`: 0
+- `LISTO_PARA_PILOTAJE`: 5
+- `DESCARTAR`: 12
+- `requiere_revision_humana`: 5
+- Incidencias GitHub o de fuente:
+  - No existian salidas previas del lote `L005`; se creo el cierre desde cero dentro de las rutas permitidas.
+- Archivos escritos:
+  - `content/restructuring-v1/trazabilidad/lotes/L005/reporte-procesos-anteriores.md`
+  - `content/restructuring-v1/trazabilidad/lotes/L005/resumen-lote.json`
+  - `content/restructuring-v1/trazabilidad/lotes/L005/decisiones.csv`
+  - `content/restructuring-v1/auditoria/lotes/L005/items-corregidos.json`
+- Confirmacion de rutas protegidas no modificadas:
+  - `content/items/stand-by/`: no modificado
+  - `content/restructuring-v1/trazabilidad/trash.json`: no modificado
+  - Bitacoras globales: no modificadas
+
+## Lote L014
+- Sublotes internos:
+  - `L014-A`
+  - `L014-B`
+- Carpetas revisadas:
+  - `content/items/stand-by/Enseñar, formar, motivacion didactica y competencias socioemocionales/`
+  - `content/items/stand-by/Error, conflicto cognitivo y reestructuracion de esquemas/`
+  - `content/items/stand-by/Estructura del sistema educativo - educacion basica, secundaria y media/`
+- Cantidad de items leidos: 15
+- `LISTO_PARA_BANCO`: 0
+- `LISTO_PARA_PILOTAJE`: 8
+- `DESCARTAR`: 7
+- `requiere_revision_humana`: 8
+- Incidencias GitHub o de fuente:
+  - La carpeta de conflicto cognitivo requirio rastreo adicional por busqueda tematica del conector antes de resolver las rutas reales.
+  - No existian salidas previas del lote `L014`; se creo el cierre desde cero dentro de las rutas permitidas.
+- Archivos escritos:
+  - `content/restructuring-v1/trazabilidad/lotes/L014/reporte-procesos-anteriores.md`
+  - `content/restructuring-v1/trazabilidad/lotes/L014/reporte-acumulado-instancia.md`
+  - `content/restructuring-v1/trazabilidad/lotes/L014/resumen-lote.json`
+  - `content/restructuring-v1/trazabilidad/lotes/L014/decisiones.csv`
+  - `content/restructuring-v1/auditoria/lotes/L014/items-corregidos.json`
+- Confirmacion de rutas protegidas no modificadas:
+  - `content/items/stand-by/`: no modificado
+  - `content/restructuring-v1/trazabilidad/trash.json`: no modificado
+  - Bitacoras globales: no modificadas
