@@ -1,0 +1,136 @@
+[
+  {
+    "id_item": "EFCC_B02_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Criterios, instrumentos y tipos de evaluacion/EFCC_B02_I01.json",
+    "motivo": "Pseudoanalisis con contexto decorativo; la clave se reconoce por memoria conceptual y los distractores son caricaturescos.",
+    "lote": "L007"
+  },
+  {
+    "id_item": "EFCC_B02_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Criterios, instrumentos y tipos de evaluacion/EFCC_B02_I02.json",
+    "motivo": "Depende de memoria literal sobre criterios e instrumentos de evaluacion; la discriminacion esperable es baja por opciones obvias.",
+    "lote": "L007"
+  },
+  {
+    "id_item": "EFCC_B02_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Criterios, instrumentos y tipos de evaluacion/EFCC_B02_I03.json",
+    "motivo": "Se resuelve por reconocimiento terminologico y no por juicio pedagogico; presenta distractores debiles y dificultad artificial.",
+    "lote": "L007"
+  },
+  {
+    "id_item": "EFCC_B02_I04",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Criterios, instrumentos y tipos de evaluacion/EFCC_B02_I04.json",
+    "motivo": "La ruta fuente no resolvio en la rama master y no fue posible auditar ni corregir el item con trazabilidad suficiente.",
+    "lote": "L007"
+  },
+  {
+    "id_item": "NFL_B02_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Cultura escolar, identidad institucional y PEI/NFL_B02_I01.json",
+    "motivo": "El contexto es decorativo y la respuesta depende de definicion escolar general; los distractores no sostienen discriminacion fina.",
+    "lote": "L007"
+  },
+  {
+    "id_item": "NFL_B02_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Cultura escolar, identidad institucional y PEI/NFL_B02_I02.json",
+    "motivo": "Pseudoanalisis con opciones extremas sobre PEI y manual de convivencia; no exige decision institucional autentica.",
+    "lote": "L007"
+  },
+  {
+    "id_item": "NFL_B02_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "gestion",
+    "tema": "Proyecto Educativo Institucional (PEI)",
+    "subtema": "Cultura escolar, identidad institucional y coherencia de practicas",
+    "competencia": "Analizar la coherencia entre los principios declarados en el PEI y las practicas institucionales para decidir acciones de mejoramiento verificables.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado identifica la accion institucional que mejor alinea las practicas reales con la identidad formativa declarada en el PEI.",
+    "evidencia": "Distingue entre acciones cosmeticas o punitivas y una intervencion de gestion participativa con seguimiento institucional.",
+    "tarea": "Seleccionar la estrategia de gestion mas pertinente ante una brecha entre el PEI declarado y la cultura escolar observada.",
+    "contexto": "El PEI de una institucion afirma que la participacion, el respeto y la equidad orientan la vida escolar. Sin embargo, las decisiones relevantes se comunican de manera vertical, las quejas estudiantiles no se tramitan y varios acuerdos de convivencia se aplican de forma desigual.",
+    "enunciado": "Ante esta brecha entre la identidad institucional declarada y las practicas reales, ¿cual decision ofrece mejor evidencia de alineacion con el PEI?",
+    "opciones": {
+      "A": "Actualizar la redaccion del PEI y socializar sus valores en una jornada institucional, sin revisar practicas ni responsabilidades.",
+      "B": "Realizar una autoevaluacion participativa, identificar las practicas incoherentes y convertir los hallazgos en acciones verificables dentro del plan de mejoramiento institucional.",
+      "C": "Solicitar a docentes y estudiantes que memoricen la mision y la vision para reforzar el sentido de pertenencia.",
+      "D": "Endurecer las sanciones frente a las quejas para evitar que la imagen institucional se deteriore."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opcion B conecta la brecha observada con una accion de gestion verificable: diagnostico participativo, ajuste de practicas y seguimiento institucional. No se limita a decorar el discurso del PEI ni a responder de forma punitiva.",
+    "distractores_funcion": {
+      "A": "Representa una salida cosmetica centrada en el documento, no en la cultura escolar ni en el cambio de practicas.",
+      "B": "Clave correcta.",
+      "C": "Modela la falsa idea de que la identidad institucional se resuelve por memorizacion declarativa y no por coherencia organizacional.",
+      "D": "Recoge una respuesta autoritaria que agrava la incoherencia entre PEI y vida escolar."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El escenario evalua juicio institucional sin exigir experiencia localizada ni conocimientos culturales ajenos al constructo."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Se redujo el contexto decorativo y la tarea quedo focalizada en una sola decision."
+    },
+    "metadata_editorial": {
+      "lote": "L007",
+      "ruta_origen": "content/items/stand-by/Cultura escolar, identidad institucional y PEI/NFL_B02_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/por_confirmar/funcional/",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B08_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Curriculo y progresion del aprendizaje",
+    "subtema": "Curriculo en espiral, Bruner y material concreto",
+    "competencia": "Planear progresiones curriculares que retomen un concepto con creciente complejidad y uso pertinente de material concreto.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado reconoce la decision de planeacion que refleja un curriculo en espiral y evita confundir progresion con repeticion o remedialismo.",
+    "evidencia": "Selecciona una secuencia que retoma un mismo concepto en distintos momentos, con mayor abstraccion y articulacion entre representaciones.",
+    "tarea": "Elegir el diseno curricular que mejor expresa progresion cognitiva y uso funcional de material concreto.",
+    "contexto": "Un equipo docente esta organizando como trabajar la proporcionalidad a lo largo de varios grados. Quiere evitar tanto la repeticion mecanica del mismo ejercicio como el salto prematuro a simbolos sin apoyo en experiencias previas.",
+    "enunciado": "¿Cual decision de planeacion refleja mejor un curriculo en espiral con uso pertinente de material concreto?",
+    "opciones": {
+      "A": "Presentar la proporcionalidad una sola vez con material concreto en primaria y no retomarla despues para evitar redundancias.",
+      "B": "Retomar la proporcionalidad en distintos grados: primero con repartos y comparaciones concretas, luego con representaciones graficas y mas adelante con procedimientos simbolicos cada vez mas exigentes.",
+      "C": "Reservar el material concreto solo para estudiantes con bajo desempeno y trabajar desde el inicio de forma simbolica con el resto del grupo.",
+      "D": "Repetir en cada grado la misma actividad y el mismo nivel de exigencia para asegurar continuidad curricular."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opcion B muestra el rasgo central del curriculo en espiral: un mismo nucleo conceptual se revisita con mayor complejidad, articulando experiencias concretas, representaciones intermedias y abstraccion progresiva.",
+    "distractores_funcion": {
+      "A": "Modela una comprension lineal del curriculo en la que el concepto aparece una sola vez y se pierde la progresion.",
+      "B": "Clave correcta.",
+      "C": "Representa el error de usar el material concreto como remedio para rezago y no como mediacion didactica valida para todo el grupo.",
+      "D": "Confunde recurrencia con repeticion identica, sin aumento de complejidad ni nueva elaboracion conceptual."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Evalua una decision didactica general sin depender de tecnicismos disciplinarios ajenos al constructo."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Se redujo el analisis inflado y se concentro la tarea en una sola comparacion curricular."
+    },
+    "metadata_editorial": {
+      "lote": "L007",
+      "ruta_origen": "content/items/stand-by/Curriculo en espiral, Bruner y material concreto/IDD_B08_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  }
+]
