@@ -1,45 +1,45 @@
 {
   "id_item": "NFL_B06_I03",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Ley estatutaria",
   "tema": "Tipos de normas - acto legislativo, ley ordinaria y ley estatutaria",
-  "subtema": "Creer que una ley estatutaria es simplemente una ley ordinaria con nombre especial.",
+  "subtema": "Creer que la ley estatutaria es una ley ordinaria común",
   "competencia": "Reconocimiento de materias de regulación estatutaria",
-  "nivel_cognitivo": "APLICACION",
-  "dificultad_estimada": "MEDIA_ALTA",
-  "claim": "El evaluado comprende que ciertas materias constitucionalmente sensibles requieren una ley estatutaria y no una ley ordinaria común.",
-  "evidencia": "Selecciona una explicación correcta sobre ley estatutaria.",
-  "tarea": "Distinguir materia estatutaria de regulación ordinaria.",
-  "contexto": "Un grupo de estudiantes analiza una norma que regula derechos fundamentales y mecanismos de participación ciudadana. Preguntan si ese tipo de materia se tramita como una ley común sin requisitos especiales.",
-  "enunciado": "Un grupo de estudiantes analiza una norma que regula derechos fundamentales y mecanismos de participación ciudadana. Preguntan si ese tipo de materia se tramita como una ley común sin requisitos especiales.\n\n¿Qué tipo de ley regula estas materias constitucionalmente sensibles?",
+  "nivel_cognitivo": "CONOCIMIENTO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado reconoce la reserva de Ley Estatutaria para regular materias sensibles de rango constitucional como los derechos fundamentales.",
+  "evidencia": "Identifica que la regulación de los derechos fundamentales y mecanismos de participación requiere trámite estatutario.",
+  "tarea": "Identificar la norma jurídica requerida para regular los derechos fundamentales de los ciudadanos colombianos.",
+  "contexto": "En un debate legislativo se propone estructurar la nueva normatividad nacional sobre protección de datos personales y garantías al ejercicio de derechos ciudadanos fundamentales en entornos digitales.",
+  "enunciado": "De acuerdo con la Constitución colombiana, ¿qué tipo de ley especial debe tramitarse obligatoriamente en el Congreso para regular esta materia?",
   "opciones": {
-    "A": "Una circular académica.",
-    "B": "Una Ley Estatutaria.",
-    "C": "Un horario escolar.",
-    "D": "Un acta de reunión de padres."
+    "A": "Una Ley Estatutaria, dado que estas regulan materias como derechos fundamentales y mecanismos de participación, requiriendo mayoría absoluta y revisión previa de constitucionalidad.",
+    "B": "Una Ley Ordinaria, ya que las materias sobre derechos humanos se tramitan bajo el procedimiento legislativo general sin exigencias de quórum calificado.",
+    "C": "Un Acto Administrativo de carácter general, expedido de forma autónoma por los ministerios sectoriales para ajustar las políticas públicas a nivel nacional.",
+    "D": "Una Ley Marco, la cual establece las pautas y objetivos generales a los que debe sujetarse el Gobierno Nacional para regular el comercio exterior y los aranceles."
   },
-  "clave": "B",
-  "justificacion_clave": "B",
+  "clave": "A",
+  "justificacion_clave": "El Artículo 152 de la Constitución de Colombia establece reserva de ley estatutaria para la regulación y desarrollo de los derechos y deberes fundamentales de las personas, los mecanismos de participación ciudadana y los estados de excepción. Estas leyes tienen un trámite agravado y un control constitucional automático previo.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque una circular no tiene alcance legislativo.",
-    "B": "Clave correcta.",
-    "C": "Es incorrecta porque un horario escolar no regula derechos fundamentales.",
-    "D": "Es incorrecta porque un acta de reunión no es una norma legal."
+    "A": "Clave correcta.",
+    "B": "Sugiere erróneamente que una ley ordinaria común puede regular el núcleo esencial de los derechos fundamentales, desconociendo la reserva constitucional.",
+    "C": "Intenta resolver una regulación de derechos fundamentales mediante decretos ministeriales del ejecutivo, lo cual vulnera la reserva de ley y el principio democrático.",
+    "D": "Propone una ley marco, la cual está reservada para fijar lineamientos económicos globales y no para regular garantías de derechos fundamentales."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem presenta la materia estatutaria de forma accesible y sin sobrecargar con procedimiento completo."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Vocabulario normativo."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Tipos de normas - acto legislativo, ley ordinaria y ley estatutaria/NFL_B06_I03.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

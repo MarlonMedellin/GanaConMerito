@@ -1,44 +1,44 @@
 {
   "id_item": "IDD_B13_I02",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Evaluación del aprendizaje",
+  "area": "Evaluación, currículo y didáctica",
   "tema": "Evaluación colaborativa, coevaluación y metacognición",
   "subtema": "Evaluación en el Aula",
-  "competencia": "Selecciona estrategias evaluativas colaborativas que promueven coevaluación, argumentación y autorregulación del aprendizaje.",
-  "nivel_cognitivo": "APLICACIÓN",
+  "competencia": "Fomentar el desarrollo de habilidades metacognitivas y de autorregulación del aprendizaje mediante la autoevaluación estructurada.",
+  "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada para el caso planteado.",
-  "evidencia": "Selecciona una única alternativa defendible frente a distractores plausibles desde el constructo evaluado.",
-  "tarea": "Analizar el caso y elegir la opción más pertinente según criterios pedagógicos y normativos aplicables.",
-  "contexto": "Un docente desea que sus estudiantes no solo reciban una nota, sino que comprendan qué hicieron bien, qué deben mejorar y cómo pueden regular su propio aprendizaje. Para ello propone autoevaluación y coevaluación con criterios claros.",
-  "enunciado": "Un docente desea que sus estudiantes no solo reciban una nota, sino que comprendan qué hicieron bien, qué deben mejorar y cómo pueden regular su propio aprendizaje. Para ello propone autoevaluación y coevaluación con criterios claros.\n\n¿Por qué estas estrategias son indispensables en la evaluación formativa?",
+  "claim": "El evaluado propone estrategias pedagógicas que fomentan el desarrollo de procesos metacognitivos y de autorregulación del aprendizaje mediante la autoevaluación estructurada.",
+  "evidencia": "Selecciona el diseño de mediación que guía al estudiante a identificar sus estrategias cognitivas, dificultades y metas de mejora personal.",
+  "tarea": "Proponer un instrumento o secuencia didáctica que promewa la metacognición en estudiantes de básica primaria.",
+  "contexto": "Al terminar un proyecto escolar de ciencias sociales, un docente busca que los estudiantes reflexionen sobre su propio aprendizaje y las estrategias que utilizaron para resolver las tareas del proyecto, superando la simple asignación de una nota cuantitativa en la planilla.",
+  "enunciado": "¿Qué instrumento pedagógico es el más adecuado para desarrollar la dimensión metacognitiva y de autorregulación del grupo de estudiantes?",
   "opciones": {
-    "A": "Porque favorecen la metacognición, la autorregulación, el reconocimiento de criterios y la participación activa del estudiante en su proceso de aprendizaje.",
-    "B": "Porque permiten que cada estudiante se asigne la nota que quiera sin justificarla.",
-    "C": "Porque reemplazan por completo la función orientadora del docente.",
-    "D": "Porque sirven para que los compañeros se sancionen entre sí."
+    "A": "Un diario de aprendizaje o bitácora reflexiva guiada por preguntas como \"¿qué dificultades encontré?\", \"¿cómo las superé?\" y \"¿en qué otras situaciones puedo aplicar este aprendizaje?\".",
+    "B": "Un cuestionario cerrado de opción múltiple con única respuesta correcta sobre los conceptos teóricos abordados a lo largo de las lecturas del proyecto escolar.",
+    "C": "Una lista general donde el docente califique el nivel de orden físico en que los estudiantes conservaron sus cuadernos y notas de apuntes personales de clase.",
+    "D": "Un examen escrito individual memorístico programado sin previo aviso institucional para detectar fallas puntuales en el estudio independiente en casa."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "La metacognición implica la reflexión sobre el propio proceso cognitivo (monitoreo, control, autoevaluación del aprendizaje). Las bitácoras o diarios orientados con preguntas reflexivas son herramientas ideales para propiciar esta toma de conciencia en el estudiante.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque la autoevaluación requiere criterios y evidencia.",
-    "C": "Es incorrecta porque el docente sigue orientando el proceso.",
-    "D": "Es incorrecta porque la coevaluación no es un mecanismo de sanción."
+    "B": "Evalúa conocimientos conceptuales factuales de forma tradicional, pero no la reflexión del propio aprendizaje.",
+    "C": "Centrado en aspectos formales de orden conductual, no cognitivo.",
+    "D": "Modelo punitivo que no genera autoevaluación reflexiva del proceso."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estándar, sin sesgos culturales innecesarios ni barreras de comprensión relevantes."
+    "observaciones": "El ítem promueve prácticas reflexivas universales sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura."
+    "observaciones": "Opciones con sintaxis paralela."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Evaluación colaborativa, coevaluación y metacognición/IDD_B13_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

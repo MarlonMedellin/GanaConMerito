@@ -11,20 +11,20 @@
   "evidencia": "Selecciona la opción que mejor explica la decisión pedagógica coherente con el aprendizaje significativo en el caso planteado.",
   "tarea": "Inferir, a partir del caso, la condición didáctica que permite aprendizaje significativo según Ausubel.",
   "contexto": "Una docente afirma que sus estudiantes aprendieron significativamente porque repitieron de memoria una definición. Sin embargo, al pedirles aplicar la idea a una situación cotidiana, no logran relacionarla con nada que ya saben.",
-  "enunciado": "Una docente afirma que sus estudiantes aprendieron significativamente porque repitieron de memoria una definición. Sin embargo, al pedirles aplicar la idea a una situación cotidiana, no logran relacionarla con nada que ya saben.\n\nSegún Ausubel, ¿qué condición faltó para que el aprendizaje fuera significativo?",
+  "enunciado": "Según Ausubel, ¿qué condición de la estructura cognitiva faltó para que el aprendizaje fuera significativo?",
   "opciones": {
-    "A": "La repetición literal de la definición varias veces.",
-    "B": "La relación sustantiva entre la nueva información y los saberes previos del estudiante.",
-    "C": "La copia exacta del libro en el cuaderno.",
-    "D": "La aplicación de una sanción por no memorizar."
+    "A": "La ejercitación mecánica repetida para fijar la definición antes de intentar su aplicación práctica.",
+    "B": "La relación sustantiva y no arbitraria entre la nueva información y la estructura cognitiva del estudiante.",
+    "C": "La copia exacta de la información en el cuaderno para asegurar un soporte visual de estudio.",
+    "D": "El uso de refuerzos extrínsecos positivos para motivar a los estudiantes a memorizar y reproducir el concepto."
   },
   "clave": "B",
-  "justificacion_clave": "El aprendizaje significativo exige que la nueva información se conecte de manera sustantiva y no arbitraria con la estructura cognitiva previa.",
+  "justificacion_clave": "Para que un aprendizaje sea significativo, se requiere que el nuevo conocimiento se conecte de forma sustantiva y no arbitraria con los conceptos e ideas previos (inclusores) de la estructura cognitiva del estudiante.",
   "distractores_funcion": {
-    "A": "La repetición puede producir memoria mecánica, no necesariamente comprensión.",
+    "A": "Representa la confusión común entre aprendizaje memorístico repetitivo y aprendizaje significativo.",
     "B": "Clave correcta.",
-    "C": "Copiar no garantiza integración cognitiva.",
-    "D": "El castigo no produce significado."
+    "C": "Representa un error común de centrarse en soportes físicos y transcripción, ignorando la integración cognitiva.",
+    "D": "Representa la concepción conductista que confunde la motivación externa y repetición con la asimilación conceptual."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I01.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

@@ -1,30 +1,30 @@
 {
   "id_item": "IDD_B09_I04",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Evaluación diversificada e inteligencias múltiples",
   "tema": "Inteligencia, inteligencias múltiples y didáctica heterogénea",
   "subtema": "Evaluación homogénea que solo reconoce una forma de evidenciar aprendizaje.",
   "competencia": "Diseño de evidencias de aprendizaje diversas",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende que diversificar la evaluación no significa perder rigor, sino ampliar las vías para que los estudiantes evidencien comprensión.",
-  "evidencia": "Selecciona una estrategia evaluativa que ofrece diferentes formas de evidenciar el mismo aprendizaje con criterios claros.",
-  "tarea": "Elegir una práctica evaluativa coherente con diversidad cognitiva e inclusión.",
+  "claim": "Aplica los principios de la evaluación diversificada y del Diseño Universal para el Aprendizaje (DUA) a casos prácticos de aula.",
+  "evidencia": "Selecciona la decisión de evaluación que mantiene la equidad y rigor del objetivo de aprendizaje permitiendo diferentes medios de expresión.",
+  "tarea": "Resolver un caso de evaluación en un grupo heterogéneo utilizando criterios inclusivos.",
   "contexto": "Un docente quiere evaluar la comprensión de un concepto en un grupo heterogéneo. Sabe que algunos estudiantes se expresan mejor oralmente, otros mediante dibujos o esquemas, otros resolviendo problemas y otros escribiendo explicaciones.",
   "enunciado": "Un docente quiere evaluar la comprensión de un concepto en un grupo heterogéneo. Sabe que algunos estudiantes se expresan mejor oralmente, otros mediante dibujos o esquemas, otros resolviendo problemas y otros escribiendo explicaciones.\n\n¿Qué decisión evaluativa es más coherente con inteligencias múltiples, DUA e inclusión?",
   "opciones": {
-    "A": "Exigir una única prueba escrita para todos, aunque no sea la mejor vía para evidenciar comprensión.",
-    "B": "Eliminar la evaluación para evitar diferencias entre estudiantes.",
-    "C": "Calificar solo la presentación estética del trabajo, sin criterios de comprensión.",
+    "A": "Implementar una prueba estandarizada obligatoria, argumentando que la uniformidad en el instrumento es la única garantía de imparcialidad evaluativa.",
+    "B": "Suprimir la asignación de calificaciones numéricas para evitar la discriminación o la exclusión entre estudiantes con ritmos diversos.",
+    "C": "Evaluar a cada estudiante con criterios adaptados e individualizados según su inteligencia dominante, prescindiendo del estándar curricular común.",
     "D": "Permitir distintas formas de producto o expresión, manteniendo el mismo propósito de aprendizaje y criterios claros de evaluación."
   },
   "clave": "D",
-  "justificacion_clave": "D",
+  "justificacion_clave": "La evaluación formativa e inclusiva bajo el DUA propone diversificar los canales de expresión de los estudiantes (cómo demuestran lo que saben), asegurando que todos sean evaluados sobre la misma competencia y con los mismos criterios rigurosos de calidad.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque una única prueba puede no permitir evidenciar comprensión a todos.",
-    "B": "Es incorrecta porque la evaluación puede ser flexible sin desaparecer.",
-    "C": "Es incorrecta porque no evalúa la comprensión del concepto.",
-    "D": "Clave correcta."
+    "A": "Error de igualdad formal. Confunde tratar a todos por igual (mismo instrumento rígido) con equidad, ignorando que la rigidez instrumental puede invisibilizar el aprendizaje de quienes tienen barreras de comunicación.",
+    "B": "Error de inacción evaluativa. Sugiere la eliminación del juicio evaluativo o la nota como forma de evitar la exclusión, lo que priva al estudiante de la retroalimentación diagnóstica.",
+    "C": "Error de desalineación curricular. Propone cambiar los criterios evaluativos para cada estudiante según su talento, lo que rompe la equidad y la comparabilidad frente al estándar nacional obligatorio.",
+    "D": "Clave correcta. Concilia la flexibilidad expresiva con la equidad y rigor del estándar curricular."
   },
   "fairness": {
     "sesgo_detectado": false,

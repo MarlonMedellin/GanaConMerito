@@ -1,45 +1,45 @@
 {
   "id_item": "DIL_B02_I06",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Autoridad competente en restablecimiento de derechos",
   "tema": "PARD y restablecimiento de derechos",
-  "subtema": "Extralimitación de funciones escolares frente a casos que requieren autoridad administrativa competente.",
+  "subtema": "Extralimitación de funciones escolares frente a casos que requieren autoridad competente",
   "competencia": "Reconocimiento de límites institucionales escolares",
   "nivel_cognitivo": "APLICACION",
-  "dificultad_estimada": "MEDIA_ALTA",
-  "claim": "El evaluado comprende que actuar oportunamente no significa asumir competencias legales que corresponden a autoridades de protección.",
-  "evidencia": "Elige una respuesta institucional que reporta y articula sin extralimitarse.",
-  "tarea": "Diferenciar deber de reporte de competencia para restablecer derechos.",
-  "contexto": "Una institución educativa detecta indicios de vulneración grave de derechos de un estudiante. Algunos docentes proponen investigar por su cuenta, tomar declaraciones extensas y decidir la medida de protección que debe aplicarse.",
-  "enunciado": "Una institución educativa detecta indicios de vulneración grave de derechos de un estudiante. Algunos docentes proponen investigar por su cuenta, tomar declaraciones extensas y decidir la medida de protección que debe aplicarse.\n\n¿Cuál actuación respeta los límites de competencia de la escuela frente al PARD?",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado delimita el alcance de las competencias escolares frente a la investigación judicial o administrativa en casos de vulneración de derechos.",
+  "evidencia": "Distingue las responsabilidades de reporte, acompañamiento y protección de la escuela de las facultades investigativas de las autoridades de restablecimiento.",
+  "tarea": "Resolver un caso de vulneración de derechos determinando la actuación escolar que respeta los límites de sus competencias.",
+  "contexto": "Una institución educativa detecta indicios de un presunto abuso físico intrafamiliar contra un estudiante. Ante la gravedad de la situación, un grupo de docentes propone iniciar una investigación formal interna, tomar declaraciones juradas extensas al menor y citar a los presuntos agresores para confrontarlos.",
+  "enunciado": "¿Cuál actuación respeta los límites de competencia de la escuela frente a este caso?",
   "opciones": {
-    "A": "Registrar lo observado, proteger al estudiante, informar por los canales institucionales y remitir a la autoridad competente de protección sin sustituir su función.",
-    "B": "Interrogar al menor hasta esclarecer jurídicamente todos los hechos.",
-    "C": "Decidir directamente una medida de restablecimiento como si la escuela fuera autoridad administrativa.",
-    "D": "No reportar nada para evitar comprometer a la institución."
+    "A": "Registrar objetivamente la situación, brindar contención emocional al estudiante, activar la ruta de atención integral e informar de inmediato a la autoridad administrativa competente (ICBF o Comisaría de Familia) sin realizar labores de investigación judicial o sancionatoria.",
+    "B": "Realizar un interrogatorio formal e independiente al estudiante para obtener una declaración escrita y firmada antes de dar traslado a entes externos.",
+    "C": "Citar a los cuidadores para confrontarlos con las sospechas y exigirles que firmen un compromiso escrito de comportamiento bajo amenaza de expulsión inmediata.",
+    "D": "Omitir el reporte externo hasta contar con pruebas periciales concluyentes que demuestren plenamente el abuso, a fin de evitar reclamaciones por falsas denuncias."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "La institución escolar no es una autoridad investigativa o judicial. Su papel ante la sospecha o evidencia de vulneración de derechos es la protección inmediata, la contención emocional y la notificación a las autoridades competentes (ICBF, Comisaría de Familia, Fiscalía) de manera oportuna, evitando la revictimización o la confrontación de riesgo.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque puede constituir extralimitación y afectar al menor.",
-    "C": "Es incorrecta porque la escuela no decide medidas propias del PARD.",
-    "D": "Es incorrecta porque omite la activación de rutas de protección."
+    "B": "Promueve prácticas que revictimizan al menor e invaden esferas de investigación exclusivas de la Fiscalía o autoridades judiciales.",
+    "C": "Expone al menor a mayores riesgos de agresión al alertar y confrontar informalmente a los presuntos agresores sin protección legal previa.",
+    "D": "Configura una omisión del deber de denunciar y del deber de protección escolar, lo cual vulnera la normatividad de infancia y convivencia."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem protege al menor frente a omisión y frente a intervenciones escolares indebidas o revictimizantes."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Opciones con longitud similar."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I06.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

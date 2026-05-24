@@ -11,20 +11,20 @@
   "evidencia": "Selecciona la opción que mejor explica la decisión pedagógica coherente con el aprendizaje significativo en el caso planteado.",
   "tarea": "Inferir, a partir del caso, la condición didáctica que permite aprendizaje significativo según Ausubel.",
   "contexto": "Un estudiante cree que los objetos más pesados siempre caen mucho más rápido que los livianos. La docente diseña una experiencia sencilla para contrastar esa idea y discutir los resultados.",
-  "enunciado": "Un estudiante cree que los objetos más pesados siempre caen mucho más rápido que los livianos. La docente diseña una experiencia sencilla para contrastar esa idea y discutir los resultados.\n\n¿Qué finalidad pedagógica tiene esta acción?",
+  "enunciado": "Desde los procesos cognitivos del aprendizaje significativo, ¿qué finalidad pedagógica tiene esta estrategia didáctica?",
   "opciones": {
-    "A": "Humillar al estudiante por equivocarse.",
-    "B": "Generar conflicto cognitivo y favorecer la reconstrucción de la idea previa.",
-    "C": "Confirmar cualquier creencia sin análisis.",
-    "D": "Evitar el razonamiento científico."
+    "A": "Evitar la confrontación cognitiva directa para proteger la autoestima y motivación intrínseca del estudiante.",
+    "B": "Provocar un conflicto cognitivo que movilice al estudiante a reestructurar, enriquecer y reconciliar sus concepciones previas con el saber científico.",
+    "C": "Demostrar que los conocimientos empíricos previos carecen de valor y utilidad en la construcción del saber formal.",
+    "D": "Promover el aprendizaje mecánico de las leyes de la física mediante la imitación del experimento realizado por el docente."
   },
   "clave": "B",
-  "justificacion_clave": "La experiencia confronta una idea previa con evidencia para promover reestructuración conceptual.",
+  "justificacion_clave": "La confrontación de un saber previo erróneo con evidencia empírica genera conflicto cognitivo (o disonancia), lo cual desestabiliza la estructura cognitiva inicial del estudiante y lo motiva a emprender procesos de asimilación y reconciliación integradora de los nuevos conceptos científicos con sentido.",
   "distractores_funcion": {
-    "A": "El propósito no es humillar.",
+    "A": "Error de priorizar el confort afectivo por encima de la movilización cognitiva necesaria para el cambio conceptual.",
     "B": "Clave correcta.",
-    "C": "Se contrasta la idea con evidencia.",
-    "D": "La acción fortalece el razonamiento científico."
+    "C": "Error de desvalorizar los presaberes, los cuales, aunque erróneos, son indispensables como punto de partida cognitivo.",
+    "D": "Señala una imitación conductual mecánica contraria a la reestructuración conceptual."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I11.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

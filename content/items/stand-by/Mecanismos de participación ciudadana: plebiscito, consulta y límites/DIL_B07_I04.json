@@ -1,45 +1,45 @@
 {
   "id_item": "DIL_B07_I04",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Límites constitucionales de las mayorías",
-  "tema": "Mecanismos de participación ciudadana: plebiscito, consulta y límites",
-  "subtema": "Interpretación de la mayoría electoral como poder ilimitado para decidir sobre derechos fundamentales.",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Competencias ciudadanas",
+  "tema": "Mecanismos de participación ciudadana",
+  "subtema": "Participación vs derechos fundamentales",
   "competencia": "Comprensión del equilibrio entre participación y derechos fundamentales",
-  "nivel_cognitivo": "APLICACION",
-  "dificultad_estimada": "ALTA",
-  "claim": "El evaluado comprende que participación ciudadana y protección de derechos no son opuestas, sino que deben armonizarse dentro del Estado constitucional.",
-  "evidencia": "Selecciona una explicación que limita decisiones mayoritarias cuando afectan derechos fundamentales.",
-  "tarea": "Aplicar límites constitucionales a una decisión de democracia directa.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado identifica el principio limitador que impide a la participación democrática vulnerar derechos fundamentales prevalentes de los menores.",
+  "evidencia": "Reconoce que la supremacía constitucional y la prevalencia del interés superior del niño limitan la validez de decisiones mayoritarias.",
+  "tarea": "Seleccionar el principio constitucional que limita las decisiones mayoritarias sobre los derechos de la infancia.",
   "contexto": "Una comunidad propone votar una medida que afectaría el acceso de niños, niñas y adolescentes a espacios educativos y comunitarios. La mayoría afirma que, si gana la votación, la medida será válida sin importar sus efectos sobre los derechos de los menores.",
-  "enunciado": "Una comunidad propone votar una medida que afectaría el acceso de niños, niñas y adolescentes a espacios educativos y comunitarios. La mayoría afirma que, si gana la votación, la medida será válida sin importar sus efectos sobre los derechos de los menores.\n\n¿Cuál principio constitucional limita esa interpretación?",
+  "enunciado": "¿Cuál principio constitucional limita esa interpretación?",
   "opciones": {
-    "A": "Que la mayoría puede eliminar derechos fundamentales cuando lo considere conveniente.",
-    "B": "Que los derechos de niños, niñas y adolescentes dependen de autorización comunitaria.",
-    "C": "Que la participación democrática debe respetar la Constitución, los derechos fundamentales y la prevalencia de los derechos de los niños.",
-    "D": "Que los mecanismos de participación no tienen ninguna relación con la ciudadanía."
+    "A": "El principio de soberanía popular absoluta, que establece que las decisiones de las mayorías ciudadanas son de obligatorio cumplimiento por encima de cualquier tratado internacional.",
+    "B": "El principio de descentralización administrativa, que otorga a las entidades territoriales la facultad de definir localmente qué derechos de la infancia proteger.",
+    "C": "El principio de supremacía constitucional y la prevalencia de los derechos de los niños, que impiden que los mecanismos de participación ciudadana vulneren derechos fundamentales.",
+    "D": "El principio de reserva legal, que determina que solo el Congreso de la República puede restringir el acceso a espacios comunitarios mediante ley estatutaria."
   },
   "clave": "C",
-  "justificacion_clave": "C",
+  "justificacion_clave": "En el constitucionalismo colombiano (Estado Social de Derecho), la democracia no es absoluta; está limitada por los derechos fundamentales intangibles y por la prevalencia de los derechos de los niños (Art. 44 CP) y la supremacía de la Carta (Art. 4 CP).",
   "distractores_funcion": {
-    "A": "Es incorrecta porque ninguna mayoría puede eliminar derechos fundamentales.",
-    "B": "Es incorrecta porque los derechos de NNA no dependen de autorización comunitaria.",
+    "A": "Defiende una postura mayoritaria absoluta incompatible con el Estado de Derecho e inexistente en la Constitución.",
+    "B": "Confunde descentralización administrativa con una supuesta autonomía territorial para desconocer derechos constitucionales.",
     "C": "Clave correcta.",
-    "D": "Es incorrecta porque los mecanismos de participación sí son formas de ciudadanía democrática."
+    "D": "Aduce un principio legal de reserva formal de ley, que no es el eje que resuelve la colisión entre participación popular directa e interés superior del niño."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem protege derechos fundamentales sin deslegitimar la participación democrática."
+    "observaciones": "Ítem neutral que reafirma la primacía de los derechos humanos y de la infancia."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Lenguaje directo y claro, opciones con desarrollo de ideas bien estructurado."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Mecanismos de participación ciudadana: plebiscito, consulta y límites/DIL_B07_I04.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

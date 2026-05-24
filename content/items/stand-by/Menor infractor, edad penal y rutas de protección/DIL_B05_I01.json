@@ -1,44 +1,44 @@
 {
   "id_item": "DIL_B05_I01",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Protección integral y convivencia",
-  "tema": "Edad penal y rutas de protección",
-  "subtema": "Actuación frente a menores de 14 años",
-  "competencia": "Aplicar la ruta institucional correcta ante conductas punibles cometidas por menores de 14 años.",
+  "area": "Normatividad y convivencia escolar",
+  "tema": "Menor infractor, edad penal y rutas de protección",
+  "subtema": "Procedimiento Institucional ante Menores de 14 Años",
+  "competencia": "Aplica las rutas de restablecimiento de derechos y los límites de la responsabilidad penal de menores de edad en concordancia con la Ley 1098 de 2006.",
   "nivel_cognitivo": "APLICACIÓN",
-  "dificultad_estimada": "ALTA",
-  "claim": "El evaluado reconoce que la respuesta debe ser protectora y de restablecimiento de derechos, no de judicialización penal.",
-  "evidencia": "Identifica la actuación que remite a autoridades competentes de protección y evita sanción penal improcedente.",
-  "tarea": "Seleccionar la ruta de actuación legalmente adecuada ante un caso de flagrancia con menor de 14 años.",
-  "contexto": "En entorno escolar, un menor de 14 años es sorprendido en conducta grave y surge presión para judicialización penal inmediata.",
-  "enunciado": "¿Cuál respuesta institucional corresponde al marco de protección integral?",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Determina las acciones institucionales correctas e inmediatas que debe adelantar la institución educativa ante conductas punibles de menores de 14 años.",
+  "evidencia": "Selecciona la activación de la ruta de restablecimiento de derechos ante autoridades administrativas competentes y el manejo interno formativo frente a detenciones policiales ilegales, expulsiones directas u ocultamiento institucional.",
+  "tarea": "Determinar la actuación inmediata que debe realizar la institución educativa ante un estudiante de 12 años sorprendido cometiendo hurto de equipos escolares.",
+  "contexto": "Un estudiante de 12 años es sorprendido por un docente dentro de las instalaciones de una institución educativa oficial sustrayendo computadores portátiles de la sala de sistemas y guardándolos en su maleta. Al ser confrontado, el estudiante reacciona con agresividad verbal.",
+  "enunciado": "Un estudiante de 12 años es sorprendido por un docente dentro de las instalaciones de una institución educativa oficial sustrayendo computadores portátiles de la sala de sistemas y guardándolos en su maleta. Al ser confrontado, el estudiante reacciona con agresividad verbal. De acuerdo con la Ley de Infancia y Adolescencia (Ley 1098 de 2006) and la Ruta de Atención Integral para la Convivencia Escolar, la actuación inmediata que debe realizar la institución educativa es:",
   "opciones": {
-    "A": "No intervenir porque al ser menor no existe ninguna consecuencia institucional.",
-    "B": "Activar ruta de protección y restablecimiento de derechos con autoridades competentes, sin judicialización penal.",
-    "C": "Aplicar sanción penal interna decidida por el comité escolar.",
-    "D": "Resolver solo con disculpa pública sin activar rutas."
+    "A": "Reportar la situación a la Policía de Infancia y Adolescencia y al Instituto Colombiano de Bienestar Familiar (ICBF) para iniciar el proceso de restablecimiento de derechos, aplicando los protocolos internos de resolución de conflictos sin judicialización penal.",
+    "B": "Retener al estudiante en la oficina de rectoría hasta que sus acudientes firmen un compromiso económico de indemnización y la entrega formal del menor a la Fiscalía General de la Nación.",
+    "C": "Convocar de urgencia al Comité Escolar de Convivencia para imponer una sanción disciplinaria de expulsión definitiva inmediata del plantel, omitiendo el reporte a entidades externas para proteger el nombre de la institución.",
+    "D": "Entregar al estudiante directamente a una patrulla de la policía ordinaria para que sea trasladado a una Unidad de Reacción Inmediata (URI) y sea procesado penalmente por el delito de hurto agravado."
   },
-  "clave": "B",
-  "justificacion_clave": "Para menores de 14 años procede protección integral y restablecimiento, no responsabilidad penal adolescente.",
+  "clave": "A",
+  "justificacion_clave": "De acuerdo con el Código de la Infancia y la Adolescencia (Ley 1098 de 2006), los menores de 14 años son penalmente inimputables. Ante una conducta punible, corresponde a la escuela activar los protocolos de la Ruta de Atención Integral (Ley 1620) y remitir el caso al ICBF o Policía de Infancia para la verificación y restauración de sus derechos, sin que proceda sanción penal alguna.",
   "distractores_funcion": {
-    "A": "Confunde no penalización con inacción.",
-    "B": "Clave correcta.",
-    "C": "Extralimitación institucional.",
-    "D": "Medida insuficiente ante situación de riesgo."
+    "A": "Clave correcta.",
+    "B": "Retención ilegal/Judicialización ordinaria: comete la falta grave de retener contra su voluntad al estudiante bajo chantaje patrimonial y pretende remitirlo a una instancia penal de adultos (Fiscalía).",
+    "C": "Sesgo de exclusión disciplinaria/Ocultamiento: propone la expulsión directa (violando el derecho a la educación y el debido proceso) y evade el deber de reporte y posición de garante ante el ICBF.",
+    "D": "Violación de inimputabilidad absoluta: entrega al niño a la policía de adultos para procesamiento ordinario en la URI, ignorando el marco de protección constitucional y la edad penal en Colombia."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Escenarios generales y lenguaje controlado; sin exigencias extracontextuales no declaradas."
+    "observaciones": "Ítem fundado en las responsabilidades legales del rol docente y directivo en Colombia."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción directa, única tarea cognitiva y opciones paralelas."
+    "observaciones": "Caso dramático y realista que exige del docente distinguir entre responsabilidad disciplinaria, penal y restablecimiento de derechos."
   },
   "metadata_editorial": {
-    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fuente": "content/items/stand-by/Menor infractor, edad penal y rutas de protección/DIL_B05_I01.json",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

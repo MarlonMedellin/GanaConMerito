@@ -1,6 +1,6 @@
 {
   "id_item": "MTV_B18_I11",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "Tipos de currículo",
   "subtema": "Aplicación pedagógica",
@@ -13,17 +13,17 @@
   "contexto": "Un docente intenta cubrir todo el libro de texto, pero por avanzar rápido no logra que los estudiantes comprendan los conceptos centrales. Muchos temas quedan solo nombrados o copiados.",
   "enunciado": "Un docente intenta cubrir todo el libro de texto, pero por avanzar rápido no logra que los estudiantes comprendan los conceptos centrales. Muchos temas quedan solo nombrados o copiados.\n\n¿Qué riesgo curricular aparece?",
   "opciones": {
-    "A": "Mayor aprendizaje significativo garantizado.",
-    "B": "Currículo operacional profundo.",
-    "C": "Currículo oculto de participación.",
-    "D": "Currículo nulo o superficialidad curricular por exceso de temarios."
+    "A": "Estructuración de un currículo operacional enfocado en competencias de síntesis y transferencia.",
+    "B": "Transición hacia un currículo oculto de carácter dialógico y cooperativo en el aula.",
+    "C": "Incoherencia curricular por priorizar la cobertura del currículo formal en detrimento del currículo operacional.",
+    "D": "Consolidación de un currículo nulo práctico por la superficialidad del aprendizaje ante la sobrecarga de temas."
   },
   "clave": "D",
-  "justificacion_clave": "D",
+  "justificacion_clave": "La presión por avanzar velozmente cubriendo la totalidad de un temario o texto genera superficialidad. Aunque los temas se enuncian o copian formalmente, el hecho de que no se alcancen a comprender o asimilar los convierte, en términos reales, en currículo nulo de carácter práctico.",
   "distractores_funcion": {
-    "A": "Avanzar rápido no garantiza comprensión.",
-    "B": "El caso no muestra profundidad operacional.",
-    "C": "No se trata de participación implícita.",
+    "A": "Incorrecto. La memorización y el avance rápido no promueven la síntesis ni la transferencia significativa del conocimiento.",
+    "B": "Incorrecto. El currículo oculto no se vuelve cooperativo ni dialógico a través de la prisa y la imposición de contenidos no procesados.",
+    "C": "Incorrecto. Aunque existe incoherencia, el concepto técnico preciso para designar el contenido que aparece planeado pero que no se aprende en la práctica real es el de currículo nulo.",
     "D": "Clave correcta."
   },
   "fairness": {
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Tipos de currículo/MTV_B18_I11.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

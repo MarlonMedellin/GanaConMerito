@@ -13,18 +13,18 @@
   "contexto": "Una institución analiza un caso de permanencia escolar y algunos docentes afirman que la responsabilidad solo corresponde al profesor de grupo. La coordinación recuerda que la Ley 115 habla de comunidad educativa.",
   "enunciado": "Una institución analiza un caso de permanencia escolar y algunos docentes afirman que la responsabilidad solo corresponde al profesor de grupo. La coordinación recuerda que la Ley 115 habla de comunidad educativa.\n\n¿Cuál grupo representa mejor esa comunidad educativa?",
   "opciones": {
-    "A": "Únicamente los docentes de aula.",
-    "B": "Solo la rectoría y la secretaría de educación.",
-    "C": "Estudiantes, educadores, padres de familia o acudientes, egresados, directivos docentes y administradores escolares.",
-    "D": "Solo los estudiantes que tienen buen rendimiento académico."
+    "A": "Únicamente el cuerpo de docentes de aula y coordinadores, al ser quienes ejercen el control directo de las actividades escolares cotidianas.",
+    "B": "El rector del establecimiento y los funcionarios de la respectiva Secretaría de Educación territorial que supervisan los indicadores.",
+    "C": "Los estudiantes, los educadores, los padres de familia o acudientes, los egresados, los directivos docentes y los administradores escolares.",
+    "D": "Exclusivamente los padres de familia, los directores de grupo y los estudiantes que conforman el Consejo Estudiantil."
   },
   "clave": "C",
-  "justificacion_clave": "C",
+  "justificacion_clave": "El artículo 6 de la Ley 115 de 1994 define formalmente que la comunidad educativa está conformada por personas que tienen interés directo en el desarrollo, organización y evaluación del Proyecto Educativo Institucional. Este artículo estipula de forma textual que la integran: los estudiantes, los educadores, los padres de familia o acudientes, los egresados, los directivos docentes y los administradores escolares.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque los docentes no son el único actor.",
-    "B": "Es incorrecta porque no incluye la comunidad educativa completa.",
+    "A": "Incorrecto. Reduce la comunidad escolar a los docentes y coordinadores, omitting a los estudiantes y sus familias, quienes son actores centrales del proceso.",
+    "B": "Incorrecto. Limita la conformación a la rectoría y a agentes administrativos externos de la secretaría de educación, desconociendo el carácter participativo e interno de la comunidad educativa local.",
     "C": "Clave correcta.",
-    "D": "Es incorrecta porque todos los estudiantes hacen parte de la comunidad educativa, no solo quienes tienen buen rendimiento."
+    "D": "Incorrecto. Excluye a los egresados, personal administrativo y a la mayoría del estudiantado, limitándolo de forma restrictiva al consejo estudiantil y docentes del grupo."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Corresponsabilidad educativa, ausentismo y posición de garante/NFL_B05_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

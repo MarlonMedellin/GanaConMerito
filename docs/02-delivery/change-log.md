@@ -28,6 +28,14 @@ last_reviewed: 2026-05-10
 - estado: in-progress (fase 3 documental en ejecucion; sin cierre de roadmap)
 - limitaciones: inventario inicial; no se archivaron ni removieron documentos legacy en esta entrega.
 
+## 2026-05-24
+- tipo: content-audit+refactor
+- modulo: content/items/stand-by, docs/project
+- resumen: Auditoría y depuración masiva de 416 ítems en `content/items/stand-by` con 10 subagentes paralelos bajo estrictas pautas psicométricas (Ley 115, Ley 1098, Decreto 815 de 2018, Decreto 1421). Se aprueban y corrigen in-place 341 ítems (329 LISTO_PARA_BANCO, 12 LISTO_PARA_PILOTAJE) y se descartan/eliminan físicamente 75 ítems (como escala Likert y abstractos/memorísticos débiles). Se resuelven colisiones de ID renombrando DIL_B05_I01 a CEOL_B02_I07 y EIP_B06_I01..I05 a EFCC_B06_I01..I05. Se consolida el reporte de decisiones en `Downloads/report_consolidado.json`.
+- sprint: Auditoría Psicométrica y Editorial - stand-by
+- agente: Antigravity
+- relacionados: content/items/stand-by/, docs/project/status.md, docs/02-delivery/change-log.md
+
 ## 2026-05-23
 - tipo: governance+ops+content-pipeline
 - modulo: content/items, scripts, docs/database, docs/05-ops, docs/project, root

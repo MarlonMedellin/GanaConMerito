@@ -1,45 +1,45 @@
 {
   "id_item": "MTV_B31_I05",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "Jornada escolar, horario laboral y asignación académica",
   "subtema": "Aplicación pedagógica",
   "competencia": "Juicio pedagógico",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "",
-  "enunciado": "¿Cuál comparación diferencia mejor jornada escolar y jornada laboral docente?",
+  "claim": "El evaluado establece la distinción conceptual entre la jornada escolar de los estudiantes y la jornada laboral de los docentes.",
+  "evidencia": "Contrasta los ámbitos de aplicación y duración de la jornada escolar y la jornada laboral docente.",
+  "tarea": "Comparar jornada escolar y jornada laboral para identificar sus diferencias regulatorias.",
+  "contexto": "Un debate en la institución escolar se centra en diferenciar el tiempo asignado a los estudiantes de los compromisos laborales del profesorado.",
+  "enunciado": "¿Cuál de las siguientes comparaciones define y diferencia de manera más adecuada la jornada escolar y la jornada laboral docente?",
   "opciones": {
-    "A": "La jornada escolar se relaciona con el tiempo de los estudiantes en el servicio educativo; la jornada laboral docente con el tiempo de cumplimiento de funciones del docente.",
-    "B": "Ambas son exactamente iguales en todos los casos.",
-    "C": "La jornada laboral solo corresponde a estudiantes.",
-    "D": "La jornada escolar es el tiempo de vacaciones del docente."
+    "A": "La jornada escolar corresponde al tiempo de atención directa a los estudiantes en el servicio educativo; la jornada laboral docente es el tiempo total dedicado por el educador al cumplimiento de sus funciones (8 horas diarias).",
+    "B": "La jornada escolar es definida libremente por cada docente; la jornada laboral la establece de forma exclusiva la asamblea de padres de familia.",
+    "C": "La jornada escolar es el tiempo mínimo de permanencia obligatoria del docente en el plantel; la jornada laboral es el horario en que los estudiantes toman clases.",
+    "D": "La jornada escolar equivale a la asignación académica del docente; la jornada laboral comprende únicamente las semanas de desarrollo institucional y vacaciones."
   },
   "clave": "A",
-  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "justificacion_clave": "La jornada escolar está orientada al tiempo en que el estudiante recibe el servicio educativo, mientras que la jornada laboral docente regula la obligación contractual y funcional del maestro de dedicar 8 horas diarias al servicio público educativo.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Distractor funcional.",
-    "C": "Distractor funcional.",
-    "D": "Distractor funcional."
+    "B": "Incurre en un error grosero sobre la competencia para definir estas jornadas, que corresponde a las autoridades territoriales y rectores, no a padres o docentes individuales.",
+    "C": "Invierte de forma cruzada los conceptos, asignando el tiempo del docente a la jornada escolar y el tiempo del estudiante a la laboral.",
+    "D": "Equipara incorrectamente la jornada escolar con la asignación académica e introduce un concepto erróneo de la jornada laboral asociándola solo a períodos sin estudiantes."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Opciones balanceadas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I05.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

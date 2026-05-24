@@ -1,45 +1,45 @@
 {
   "id_item": "MTV_B31_I11",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "Jornada escolar, horario laboral y asignación académica",
   "subtema": "Aplicación pedagógica",
   "competencia": "Juicio pedagógico",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "",
-  "enunciado": "La institución organiza horarios de clase, descansos, reuniones, atención a familias y actividades complementarias para garantizar el funcionamiento del servicio educativo.\n\n¿Qué finalidad tiene esta organización?",
+  "claim": "El evaluado reconoce la finalidad pedagógica y administrative de la organización de horarios y actividades institucionales por parte de la dirección.",
+  "evidencia": "Identifica que la estructuración horaria es necesaria para garantizar el servicio público educativo y el cumplimiento de metas curriculares.",
+  "tarea": "Identificar la finalidad de organizar horarios de clase, descansos, reuniones y atención familiar.",
+  "contexto": "La dirección de una institución educativa organiza detalladamente los horarios de clase, los turnos de descanso pedagógico, las reuniones de comisiones y los horarios semanales de atención a familias.",
+  "enunciado": "¿Qué finalidad legal y pedagógica tiene esta organización de los tiempos escolares?",
   "opciones": {
-    "A": "Asegurar la prestación ordenada del servicio educativo y el cumplimiento de funciones.",
-    "B": "Impedir toda planeación docente.",
-    "C": "Eliminar el currículo.",
-    "D": "Sustituir el PEI por horarios."
+    "A": "Estructurar la jornada escolar y laboral para garantizar el cumplimiento de los fines educativos, optimizando los tiempos de aprendizaje y la organización institucional.",
+    "B": "Restringir la libertad de cátedra del docente obligándolo a seguir una secuencia didáctica rígida definida por la rectoría.",
+    "C": "Reemplazar el plan de estudios del PEI por una distribución meramente administrativa de tiempos de permanencia.",
+    "D": "Minimizar la autonomía de los docentes concentrando la toma de decisiones pedagógicas en el personal directivo."
   },
   "clave": "A",
-  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "justificacion_clave": "La organización del horario escolar y laboral es competencia directiva que busca ordenar el servicio público educativo, permitiendo la asignación académica eficiente, la planeación colectiva y el cumplimiento de las metas del PEI dentro del calendario escolar oficial.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Distractor funcional.",
-    "C": "Distractor funcional.",
-    "D": "Distractor funcional."
+    "B": "Confunde la ordenación de tiempos con un ataque a la libertad de cátedra del maestro de aula.",
+    "C": "Supone erróneamente que la distribución de tiempos anula u obstaculiza la estructura curricular del PEI.",
+    "D": "Interpreta la coordinación organizativa como un mecanismo de control autoritario para anular la autonomía pedagógica de los docentes."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Vocabulario claro."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I11.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

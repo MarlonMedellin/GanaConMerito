@@ -2,43 +2,43 @@
   "id_item": "MTV_B31_I01",
   "estado": "LISTO_PARA_BANCO",
   "area": "Gestión administrativa educativa",
-  "tema": "Jornada escolar",
+  "tema": "Jornada escolar, horario laboral y asignación académica",
   "subtema": "Diferenciación de tiempos institucionales",
   "competencia": "Diferenciar conceptos normativos de jornada escolar, jornada laboral y asignación académica.",
-  "nivel_cognitivo": "COMPRENSION",
+  "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado identifica la jornada escolar como tiempo de prestación del servicio educativo a estudiantes.",
-  "evidencia": "Selecciona el concepto correcto cuando se describe tiempo institucional del estudiantado.",
-  "tarea": "Reconocer la categoría normativa definida en un caso de gestión escolar.",
-  "contexto": "Rector aclara diferencia entre jornada escolar y jornada laboral docente.",
-  "enunciado": "Si una institución define el tiempo en que los estudiantes reciben el servicio educativo según su horario y calendario, ¿qué concepto está describiendo?",
+  "claim": "El evaluado identifica el concepto de jornada escolar como el tiempo diario que el establecimiento educativo dedica a sus estudiantes para la prestación del servicio educativo.",
+  "evidencia": "Diferencia la jornada escolar de otros tiempos y conceptos de la organización escolar y docente.",
+  "tarea": "Identificar la definición legal de jornada escolar frente a otros términos normativos.",
+  "contexto": "Un rector aclara a la comunidad educativa la diferencia entre los tiempos dedicados a la atención estudiantil y las responsabilidades del personal docente.",
+  "enunciado": "Si una institución educativa define el tiempo diario en el que los estudiantes reciben atención directa en el servicio público educativo, de acuerdo con su calendario escolar y plan de estudios, ¿qué concepto normativo está describiendo?",
   "opciones": {
-    "A": "Jornada escolar.",
-    "B": "Asignación académica exclusiva.",
-    "C": "Vacaciones docentes.",
-    "D": "Descanso remunerado."
+    "A": "La jornada escolar.",
+    "B": "La jornada laboral docente.",
+    "C": "La asignación académica.",
+    "D": "El calendario académico."
   },
   "clave": "A",
-  "justificacion_clave": "Corresponde al tiempo de atención educativa del estudiantado en la institución.",
+  "justificacion_clave": "Según el Decreto 1075 de 2015, la jornada escolar es el tiempo diario que el establecimiento educativo dedica a sus estudiantes en la prestación del servicio público educativo, de conformidad con las normas vigentes y el plan de estudios.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Confunde tiempo de estudiantes con carga de clases del docente.",
-    "C": "Categoria laboral distinta al concepto consultado.",
-    "D": "Concepto laboral ajeno a la organización de jornada escolar."
+    "B": "Confunde el tiempo de atención al estudiante con el tiempo que el docente debe dedicar al cumplimiento de sus funciones laborales.",
+    "C": "Confunde el concepto general de jornada estudiantil con las horas específicas de clase directa que imparte un docente.",
+    "D": "Confunde la distribución de tiempos diarios con el instrumento organizativo anual de actividades de la institución."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Ítem conceptual neutro sin sesgos culturales o socioeconómicos."
+    "observaciones": "Ítem neutral, redactado de forma objetiva."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Pregunta breve y opciones simples de alta discriminación conceptual."
+    "observaciones": "Redacción directa con vocabulario técnico normativo estándar."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I01.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

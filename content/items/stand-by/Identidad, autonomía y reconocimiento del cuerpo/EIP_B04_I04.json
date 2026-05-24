@@ -1,45 +1,45 @@
 {
   "id_item": "EIP_B04_I04",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Gestión educativa",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y desarrollo",
   "tema": "Identidad, autonomía y reconocimiento del cuerpo",
-  "subtema": "Aplicación pedagógica",
-  "competencia": "Juicio pedagógico",
-  "nivel_cognitivo": "APLICACION",
+  "subtema": "Cuidado Corporal y Límites Personales",
+  "competencia": "Comunica los propósitos de la formación corporal, el autocuidado y la prevención del riesgo en educación inicial de forma técnica ante la comunidad educativa.",
+  "nivel_cognitivo": "APLICACIÓN",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "Una familia pregunta por qué en preescolar se realizan juegos de reconocimiento corporal, movimiento, cuidado del cuerpo, expresión de emociones y respeto por límites personales. Considera que esos temas son innecesarios porque todavía son niños pequeños.",
-  "enunciado": "Una familia pregunta por qué en preescolar se realizan juegos de reconocimiento corporal, movimiento, cuidado del cuerpo, expresión de emociones y respeto por límites personales. Considera que esos temas son innecesarios porque todavía son niños pequeños.\n\n¿Cuál respuesta pedagógica es más adecuada?",
+  "claim": "Fundamenta la importancia de la educación corporal y socioemocional en preescolar como base de la identidad, el autocuidado y el respeto por los límites personales.",
+  "evidencia": "Selecciona la explicación centrada en la estructuración del esquema corporal, la seguridad, la identidad y la prevención de riesgos frente a posturas academicistas instrumentales, deportivas de alto rendimiento o recreativas marginales.",
+  "tarea": "Determinar el argumento técnico que justifica la realización de talleres de reconocimiento corporal y delimitación de espacios personales ante el reclamo de una familia en preescolar.",
+  "contexto": "Una docente de transición explica en una asamblea de padres el propósito de realizar talleres de reconocimiento corporal, juego dramático y delimitación de espacios propios y ajenos. Un padre manifiesta su desacuerdo, afirmando que su hijo asiste al colegio a aprender a leer y escribir, y que esas dinámicas corporales y socioemocionales no corresponden a la formación académica seria y científica.",
+  "enunciado": "Una docente de transición explica en una asamblea de padres el propósito de realizar talleres de reconocimiento corporal, juego dramático y delimitación de espacios propios y ajenos. Un padre manifiesta su desacuerdo, afirmando que su hijo asiste al colegio a aprender a leer y escribir, y que esas dinámicas corporales y socioemocionales no corresponden a la formación académica seria y científica. De acuerdo con los Lineamientos Pedagógicos para la Educación Preescolar y el desarrollo integral, la docente debe responder de manera fundamentada que estas actividades corporales y de expresión:",
   "opciones": {
-    "A": "No deben trabajarse porque el cuerpo solo se estudia en secundaria.",
-    "B": "Deben trabajarse porque ayudan al niño a reconocer su cuerpo, sus posibilidades de acción, su identidad, su autocuidado, su expresión y el respeto por límites corporales propios y ajenos.",
-    "C": "Solo deben trabajarse si el niño ya sabe leer y escribir perfectamente.",
-    "D": "Deben reemplazarse por dictados extensos para adelantar contenidos de primaria."
+    "A": "Permiten que el niño reconozca sus potencialidades motrices, estructure su esquema corporal, construya su identidad socioafectiva y aprenda a establecer límites respetuosos para su seguridad y autocuidado.",
+    "B": "Actúan como un prerrequisito lúdico para distraer la fatiga cognitiva del estudiante antes del inicio de las lecciones formales de lectoescritura.",
+    "C": "Deben ser postergadas hasta que los estudiantes logren un dominio completo del código alfabético y las habilidades operatorias básicas de la matemática.",
+    "D": "Garantizan el desarrollo de destrezas atléticas específicas necesarias para la incorporación de los niños a los clubes deportivos escolares."
   },
-  "clave": "B",
-  "justificacion_clave": "B",
+  "clave": "A",
+  "justificacion_clave": "La educación corporal y la motricidad en la primera infancia no son secundarias. El esquema corporal, el autoconcepto, el juego dramático y la noción de límites personales son la base de la seguridad, la socialización y la prevención del abuso infantil.",
   "distractores_funcion": {
-    "A": "Desconoce el objetivo específico del preescolar.",
-    "B": "Clave correcta.",
-    "C": "Condiciona indebidamente el desarrollo corporal a la lectoescritura.",
-    "D": "Promueve escolarización prematura y elimina experiencias esenciales del nivel."
+    "A": "Clave correcta.",
+    "B": "Subordinación lúdica instrumental: asume erróneamente que las actividades de desarrollo corporal son meras pausas recreativas activas para reducir el cansancio intelectual de las áreas duras.",
+    "C": "Sesgo academicista: subordina el desarrollo integral al aprendizaje instrumental de la lectoescritura y el cálculo, postergando injustificadamente la expresión corporal.",
+    "D": "Reducción competitiva/atlética: desvirtúa el propósito pedagógico del esquema corporal confundiéndolo con entrenamiento físico o preparación deportiva de alto rendimiento."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem aborda cuerpo y cuidado de manera protectora, sin sexualizar ni exponer a los niños."
+    "observaciones": "Lenguaje inclusivo y principios orientados al bienestar físico y socioemocional del niño."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "El vocabulario técnico es preciso y las opciones están estructuradas sintácticamente del mismo modo."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Identidad, autonomía y reconocimiento del cuerpo/EIP_B04_I04.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

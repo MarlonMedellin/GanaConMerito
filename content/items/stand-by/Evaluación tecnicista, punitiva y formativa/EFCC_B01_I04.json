@@ -1,6 +1,6 @@
 {
   "id_item": "EFCC_B01_I04",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Evaluación por Competencias y Praxis Pedagógica",
   "tema": "Evaluación tecnicista, punitiva y formativa",
   "subtema": "Uso de la recuperación académica como castigo o tarea mecánica sin sentido formativo.",
@@ -19,12 +19,12 @@
     "D": "Porque la transcripción mecánica no identifica dificultades, no ofrece retroalimentación ni permite evidenciar comprensión o progreso."
   },
   "clave": "D",
-  "justificacion_clave": "D",
+  "justificacion_clave": "La opción D es la clave correcta porque, en la situación descrita, la transcripción mecánica no identifica dificultades, no ofrece retroalimentación ni permite evidenciar comprensión o progreso. Esto responde directamente a la competencia de 'Diseño de recuperación formativa', la cual exige que el evaluado demuestre que una recuperación formativa debe diagnosticar dificultades, ofrecer mediaciones, proponer nuevas evidencias de aprendizaje y retroalimentar el proceso, no limitarse a una tarea mecánica, asegurando una actuación institucional o didáctica debidamente fundamentada.",
   "distractores_funcion": {
     "A": "Es incorrecta porque la recuperación puede mantener exigencia académica, pero con sentido formativo.",
     "B": "Es incorrecta porque copiar mucho no demuestra necesariamente comprensión.",
     "C": "Es incorrecta porque la recuperación no debe limitarse a subir una nota sin evidencia de aprendizaje.",
-    "D": "Clave correcta."
+    "D": "Clave correcta: se alinea con la competencia al proponer que la transcripción mecánica no identifica dificultades, no ofrece retroalimentación ni permite evidenciar comprensión o progreso."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -38,8 +38,8 @@
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Evaluación tecnicista, punitiva y formativa/EFCC_B01_I04.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

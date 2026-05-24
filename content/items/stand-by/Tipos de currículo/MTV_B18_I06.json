@@ -1,6 +1,6 @@
 {
   "id_item": "MTV_B18_I06",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "Tipos de currículo",
   "subtema": "Aplicación pedagógica",
@@ -13,18 +13,18 @@
   "contexto": "En una escuela se habla de participación, pero en la práctica nunca se escucha a los estudiantes y todas las decisiones se imponen sin diálogo. Aunque no esté escrito, los estudiantes aprenden que su voz no importa.",
   "enunciado": "En una escuela se habla de participación, pero en la práctica nunca se escucha a los estudiantes y todas las decisiones se imponen sin diálogo. Aunque no esté escrito, los estudiantes aprenden que su voz no importa.\n\n¿Qué tipo de currículo se evidencia?",
   "opciones": {
-    "A": "Currículo oficial de participación democrática.",
+    "A": "Currículo oficial.",
     "B": "Currículo oculto.",
-    "C": "Currículo nulo exclusivamente académico.",
-    "D": "Currículo de educación superior."
+    "C": "Currículo nulo.",
+    "D": "Currículo operacional."
   },
   "clave": "B",
-  "justificacion_clave": "B",
+  "justificacion_clave": "El currículo oculto se manifiesta en los aprendizajes no planeados que los estudiantes asimilan a través del clima social y las relaciones de poder de la escuela. En este caso, el autoritarismo institucional enseña que la participación no tiene valor real, contradiciendo el currículo formal.",
   "distractores_funcion": {
-    "A": "Lo descrito contradice una participación democrática real.",
+    "A": "Incorrecto. El currículo oficial declara la participación democrática en los documentos, pero aquí se está evaluando el aprendizaje implícito e informal de signo opuesto.",
     "B": "Clave correcta.",
-    "C": "No se trata solo de un contenido omitido.",
-    "D": "No corresponde a educación superior."
+    "C": "Incorrecto. El currículo nulo es la omisión temática, mientras que aquí hay una vivencia y aprendizaje activo de que su voz carece de peso.",
+    "D": "Incorrecto. El currículo operacional es la transmisión académica formal adaptada al aula, no los mensajes actitudinales de subordinación del clima escolar."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Tipos de currículo/MTV_B18_I06.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

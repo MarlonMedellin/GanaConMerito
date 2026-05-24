@@ -1,6 +1,6 @@
 {
   "id_item": "MTV_B18_I08",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "Tipos de currículo",
   "subtema": "Aplicación pedagógica",
@@ -13,18 +13,18 @@
   "contexto": "Una institución entiende el PEI como carta de navegación y quiere que el currículo exprese su horizonte formativo, sus valores, su contexto y sus metas de calidad.",
   "enunciado": "Una institución entiende el PEI como carta de navegación y quiere que el currículo exprese su horizonte formativo, sus valores, su contexto y sus metas de calidad.\n\n¿Qué interpretación es más adecuada?",
   "opciones": {
-    "A": "El currículo debe articularse con el PEI y reflejar el proyecto formativo institucional.",
-    "B": "El currículo no tiene relación con el PEI.",
-    "C": "El PEI solo sirve para archivar documentos.",
-    "D": "El currículo es únicamente una lista de temas sin intención formativa."
+    "A": "El currículo debe articularse de manera coherente con el PEI, traduciendo su horizonte y valores en la planeación y la práctica pedagógica.",
+    "B": "El currículo debe diseñarse de forma independiente al PEI, priorizando solo los estándares básicos de competencias ministeriales.",
+    "C": "El PEI debe actuar de manera teórica en la misión, mientras que el currículo responde estrictamente a la malla de asignaturas académicas.",
+    "D": "El currículo se restringe a las metas del manual de convivencia, dejando la propuesta académica libre a criterio de cada docente."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "El currículo es el puente que operativiza los principios del Proyecto Educativo Institucional (PEI) en el aula. Por tanto, exige una articulación coherente en la que la misión, el perfil del estudiante y el modelo pedagógico del PEI orienten las asignaturas, metodologías y evaluación de la institución.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "El currículo sí debe articularse con el proyecto institucional.",
-    "C": "El PEI no es solo archivo documental.",
-    "D": "El currículo tiene sentido pedagógico y formativo."
+    "B": "Incorrecto. Aislar el currículo de los referentes del PEI contradice el artículo 73 de la Ley 115 de 1994, que define al PEI como la carta de navegación de la institución.",
+    "C": "Incorrecto. La separación teórica entre PEI y currículo anula la identidad del centro educativo y produce contradicciones entre lo declarado y lo ejecutado.",
+    "D": "Incorrecto. El manual de convivencia es solo uno de los componentes de apoyo al PEI; limitar el diseño curricular a este instrumento desatiende la estructura académica e institucional necesaria."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Tipos de currículo/MTV_B18_I08.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

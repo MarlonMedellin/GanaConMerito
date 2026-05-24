@@ -1,45 +1,45 @@
 {
   "id_item": "MTV_B31_I10",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "Jornada escolar, horario laboral y asignación académica",
   "subtema": "Aplicación pedagógica",
   "competencia": "Juicio pedagógico",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "",
-  "enunciado": "Un docente dice: 'Como ya cumplí mis horas de clase, no tengo más funciones durante la jornada laboral'.\n\n¿Qué aclaración es correcta?",
+  "claim": "El evaluado aclara que el cumplimiento de la asignación académica no agota las funciones de la jornada laboral docente.",
+  "evidencia": "Distingue la asignación académica del resto de obligaciones y responsabilidades de la jornada de trabajo.",
+  "tarea": "Responder a la afirmación errónea de un docente que reduce su jornada a dictar clases.",
+  "contexto": "Un docente de aula afirma: 'Como ya dicté mis horas de clase asignadas para el día de hoy, he finalizado todas mis responsabilidades de la jornada laboral y puedo retirarme de la institución educativa'.",
+  "enunciado": "De acuerdo con las normas de organización del servicio educativo en Colombia, ¿qué aclaración es correcta?",
   "opciones": {
-    "A": "La asignación académica no agota la jornada laboral; existen actividades complementarias y responsabilidades propias del cargo.",
-    "B": "La jornada laboral solo incluye dictar clase.",
-    "C": "El docente no debe planear ni evaluar.",
-    "D": "Las reuniones pedagógicas son ajenas a la función docente."
+    "A": "La asignación académica constituye solo una parte de la jornada laboral; el docente debe cumplir además con actividades complementarias y de desarrollo institucional dentro del tiempo laboral restante.",
+    "B": "Las horas sobrantes de la asignación académica se computan automáticamente como tiempo libre compensado de obligatorio reconocimiento.",
+    "C": "La jornada laboral docente finaliza de forma inmediata al terminar el último período de clase asignado en el día.",
+    "D": "La planeación y la evaluación de los aprendizajes no forman parte de las obligaciones de la jornada laboral y se realizan de manera voluntaria."
   },
   "clave": "A",
-  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "justificacion_clave": "La asignación académica no es idéntica a la jornada laboral. La jornada laboral de los docentes de carrera es de 8 horas diarias, de las cuales se exige permanencia mínima de 6 horas en la institución, y la asignación académica (clases directas) es de máximo 22 horas semanales para secundaria y media, requiriendo completar el tiempo con actividades curriculares complementarias.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Distractor funcional.",
-    "C": "Distractor funcional.",
-    "D": "Distractor funcional."
+    "B": "Crea una figura ficticia de 'tiempo libre compensado' para justificar el retiro antes del horario establecido por el rector.",
+    "C": "Equipara falsamente el fin del horario lectivo con la conclusión de la jornada de trabajo, desconociendo el deber de permanencia y cumplimiento de otras funciones.",
+    "D": "Incurre en un error conceptual al separar la planeación y evaluación de las obligaciones legales del docente, sugiriendo que son facultativas."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Texto directo."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I10.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

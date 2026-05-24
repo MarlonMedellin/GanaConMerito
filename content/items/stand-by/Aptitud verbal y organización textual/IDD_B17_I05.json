@@ -1,44 +1,44 @@
 {
   "id_item": "IDD_B17_I05",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Comprensión lectora y producción textual",
-  "tema": "Aptitud verbal y organización textual",
-  "subtema": "Tiempos flexibles y flashback",
+  "area": "Aptitud verbal",
+  "tema": "Comprensión de lectura y coherencia textual",
+  "subtema": "Ordenación de información",
   "competencia": "Analiza la organización lógica de textos y selecciona criterios de coherencia, cohesión y progresión temática.",
-  "nivel_cognitivo": "ANÁLISIS",
-  "dificultad_estimada": "MEDIA-ALTA",
-  "claim": "Reconoce estructuras textuales y relaciones entre párrafos para organizar información de forma coherente.",
-  "evidencia": "Identifica la opción que mejor aplica un criterio de organización textual al caso presentado.",
-  "tarea": "Inferir la función textual o el orden lógico más adecuado según marcas discursivas del enunciado.",
-  "contexto": "En una historia narrada por un “barco de papel”, el propio barco cuenta lo que le ocurre desde su presente y luego recuerda hechos anteriores para explicar cómo llegó hasta allí.",
-  "enunciado": "En una historia narrada por un “barco de papel”, el propio barco cuenta lo que le ocurre desde su presente y luego recuerda hechos anteriores para explicar cómo llegó hasta allí.\n\n¿Cómo determinan el narrador personaje y el flashback el orden de la trama?",
+  "nivel_cognitivo": "COMPRENSIÓN-APLICACIÓN",
+  "dificultad_estimada": "DIFÍCIL",
+  "claim": "El evaluado identifica la progresión temporal no lineal (flashback) a partir de marcas temporales y deícticas.",
+  "evidencia": "Selecciona el orden que presenta la situación actual (1), retrocede a los antecedentes (2 y 3) y retorna a la reflexión final del presente (4).",
+  "tarea": "Ordenar cronológica y textualmente un relato con estructura temporal no lineal.",
+  "contexto": "Considere el siguiente conjunto de oraciones desordenadas que corresponden a la historia narrada por un 'barco de papel':",
+  "enunciado": "1. Floto a la deriva en un charco lodoso tras la tormenta de ayer, sintiendo cómo el agua ablanda lentamente mi quilla de periódico.\n2. Hace apenas unas horas, era una hoja de diario reluciente que descansaba sobre la mesa de la cocina de una casa familiar.\n3. Un niño inquieto me dobló con cuidado siguiendo precisos pliegues de papiroflexia, hasta darme esta forma marinera y ponerme a navegar en la corriente de la calle.\n4. Ahora, mientras espero que el sol de la tarde me seque, comprendo que mi viaje ha sido breve pero lleno de aventuras.\n\n¿Cuál es el orden lógico para organizar la secuencia narrativa?",
   "opciones": {
-    "A": "El narrador personaje cuenta desde su experiencia y el flashback introduce un retroceso temporal que explica antecedentes de la situación actual.",
-    "B": "El narrador personaje impide cualquier orden narrativo porque solo existen hechos aislados.",
-    "C": "El flashback obliga a que todos los acontecimientos estén en orden estrictamente cronológico.",
-    "D": "El narrador personaje elimina la necesidad de coherencia entre los eventos."
+    "A": "1 - 2 - 3 - 4",
+    "B": "2 - 3 - 1 - 4",
+    "C": "1 - 3 - 2 - 4",
+    "D": "2 - 1 - 3 - 4"
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "La opción A es correcta porque respeta la analepsis o flashback literario: la oración 1 sitúa el presente del narrador flotando. Las oraciones 2 y 3 marcan el retroceso temporal retrospectivo ('Hace apenas unas horas', 'me dobló') que explica el origen del barco. La oración 4 cierra retornando al presente deíctico ('Ahora') con una reflexión final.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque la narración sí puede organizarse desde una voz interna.",
-    "C": "Es incorrecta porque el flashback rompe la linealidad estricta.",
-    "D": "Es incorrecta porque toda narración requiere coherencia entre eventos."
+    "B": "Ordena los hechos de forma lineal-cronológica parcial pero rompe el impacto literario de la introducción in media res que caracteriza la propuesta narrativa, o deja el retorno en 4 sin el contraste directo del lodo inicial.",
+    "C": "Ubica la acción del niño doblándolo (3) antes de explicar que el personaje era originalmente una hoja de periódico inactiva sobre la mesa (2).",
+    "D": "Mezcla el origen (2) con el presente intermedio (1) y luego vuelve a la manufactura del niño (3), generando un desorden temporal incoherente."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Contexto neutral y lenguaje técnico funcional, sin referencias culturales excluyentes."
+    "observaciones": "El fragmento literario es metafórico y accesible para cualquier lector hispanohablante."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones comparables en registro y extensión."
+    "observaciones": "Uso de marcadores temporales explícitos ('Hace apenas unas horas', 'Ahora') para facilitar el desciframiento temporal."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Aptitud verbal y organización textual/IDD_B17_I05.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

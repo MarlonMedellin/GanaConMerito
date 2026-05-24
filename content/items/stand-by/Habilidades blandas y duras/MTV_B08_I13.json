@@ -1,45 +1,45 @@
 {
   "id_item": "MTV_B08_I13",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Gestión educativa",
-  "tema": "Habilidades blandas y duras",
-  "subtema": "Aplicación pedagógica",
-  "competencia": "Juicio pedagógico",
-  "nivel_cognitivo": "APLICACION",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Juicio pedagógico",
+  "tema": "Resolución de conflictos y convivencia escolar",
+  "subtema": "Protocolos de mediación",
+  "competencia": "Interviene de forma oportuna y restaurativa en situaciones de conflicto interpersonal escolar, aplicando metodologías basadas en el diálogo y el restablecimiento de vínculos.",
+  "nivel_cognitivo": "APLICACIÓN",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "Dos estudiantes discuten fuertemente durante una actividad grupal. El docente evita gritar o imponer una sanción inmediata, escucha a cada parte, reconstruye los hechos, promueve acuerdos y orienta la reparación del vínculo.",
-  "enunciado": "Dos estudiantes discuten fuertemente durante una actividad grupal. El docente evita gritar o imponer una sanción inmediata, escucha a cada parte, reconstruye los hechos, promueve acuerdos y orienta la reparación del vínculo.\n\n¿Qué habilidad blanda está poniendo en práctica?",
+  "claim": "El docente aplica principios de justicia restaurativa y mediación en el aula ante agresiones físicas o verbales leves entre estudiantes.",
+  "evidencia": "Identifica la ruta de mediación que garantiza la seguridad inmediata, promueve la expresión de perspectivas y deriva compromisos de reparación.",
+  "tarea": "Elegir la intervención docente que resuelva de manera restaurativa una alteración de la convivencia por riña física leve.",
+  "contexto": "Durante el desarrollo de un trabajo de grupo, dos estudiantes de secundaria inician una acalorada discusión verbal que escala rápidamente a empujones físicos, debido a que uno de ellos reclama al otro su falta de compromiso en la tarea común.",
+  "enunciado": "De acuerdo con el enfoque restaurativo de la Ley 1620 y las buenas prácticas de convivencia escolar, la actuación inmediata del docente debe ser:",
   "opciones": {
-    "A": "Indiferencia frente al conflicto.",
-    "B": "Resolución de conflictos.",
-    "C": "Dominio exclusivo de contenidos teóricos.",
-    "D": "Competencia caligráfica."
+    "A": "Imponer una suspensión de clases a ambos estudiantes y registrar la falta grave en el observador escolar sin más indagaciones.",
+    "B": "Intervenir para cesar el contacto físico, propiciar que ambos se calmen en espacios separados y luego facilitar un diálogo formativo donde expliquen sus puntos de vista, asuman acuerdos y definan compromisos de reparación.",
+    "C": "Exigirles resolver su problema autónomamente fuera del aula, advirtiendo que de no terminar el trabajo reprobarán la asignatura.",
+    "D": "Separar de forma definitiva a los estudiantes reubicando a uno de ellos en otro equipo de trabajo para evitar futuras discusiones, dando por superado el conflicto."
   },
   "clave": "B",
-  "justificacion_clave": "B",
+  "justificacion_clave": "La opción B es correcta porque la resolución formativa del conflicto exige, en primer lugar, salvaguardar la seguridad física (contención), y en segundo lugar, abrir un canal de mediación y reparación restaurativa que enseñe a los estudiantes a resolver sus diferencias de forma pacífica y cooperativa.",
   "distractores_funcion": {
-    "A": "El docente interviene activamente, no es indiferente.",
+    "A": "Corresponde a un enfoque exclusivamente punitivo y reactivo que no atiende la causa del conflicto ni promueve el aprendizaje convivencial.",
     "B": "Clave correcta.",
-    "C": "El conocimiento teórico no describe la acción mediadora.",
-    "D": "La caligrafía no guarda relación con el conflicto."
+    "C": "Evidencia omisión de la función de garante y acompañamiento docente, trasladando el riesgo a los estudiantes.",
+    "D": "Aplica una medida correctiva superficial (separación) que evade el tratamiento formativo del conflicto y no repara el vínculo dañado."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem promueve una lectura restaurativa y profesional del conflicto escolar."
+    "observaciones": "El caso no incluye sesgos culturales o sociodemográficos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Estructura narrativa clara y distractores con la misma orientación semántica y gramatical."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I13.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

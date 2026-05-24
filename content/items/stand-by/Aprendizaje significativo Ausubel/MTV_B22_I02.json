@@ -11,20 +11,20 @@
   "evidencia": "Selecciona la opción que mejor explica la decisión pedagógica coherente con el aprendizaje significativo en el caso planteado.",
   "tarea": "Inferir, a partir del caso, la condición didáctica que permite aprendizaje significativo según Ausubel.",
   "contexto": "Antes de explicar fracciones, un docente pregunta a sus estudiantes cómo reparten una pizza, una chocolatina o una botella de jugo entre varias personas. Luego conecta esas experiencias con el concepto matemático.",
-  "enunciado": "Antes de explicar fracciones, un docente pregunta a sus estudiantes cómo reparten una pizza, una chocolatina o una botella de jugo entre varias personas. Luego conecta esas experiencias con el concepto matemático.\n\n¿Qué principio de Ausubel está aplicando?",
+  "enunciado": "De acuerdo con la teoría de Ausubel, ¿qué principio está aplicando el docente al utilizar estas experiencias de reparto?",
   "opciones": {
-    "A": "Activación de saberes previos.",
-    "B": "Evaluación punitiva.",
-    "C": "Repetición conductista sin contexto.",
-    "D": "Currículo nulo."
+    "A": "La activación de inclusores o ideas ancla existentes en la estructura cognitiva del alumno para anclar el nuevo conocimiento.",
+    "B": "El aprendizaje por descubrimiento autónomo guiado mediante la experimentación de situaciones cotidianas.",
+    "C": "El condicionamiento operante mediante el modelamiento de conductas cotidianas de reparto social.",
+    "D": "La diferenciación progresiva basada en la jerarquización conceptual de las operaciones de división."
   },
   "clave": "A",
-  "justificacion_clave": "El docente parte de experiencias previas para anclar el nuevo concepto en estructuras cognitivas existentes.",
+  "justificacion_clave": "El docente parte de experiencias y saberes previos que actúan como ideas ancla (inclusores) en la estructura cognitiva del estudiante, sirviendo de base para asimilar de manera sustantiva el nuevo concepto abstracto de fracción.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "No hay castigo ni control punitivo.",
-    "C": "La situación está contextualizada.",
-    "D": "No se omite el aprendizaje; se prepara."
+    "B": "Confunde la activación de saberes previos (aprendizaje por recepción significativa) con la propuesta de Bruner de aprendizaje por descubrimiento autónomo.",
+    "C": "Confunde los conceptos cognoscitivos de Ausubel con los principios conductistas del condicionamiento de conductas.",
+    "D": "Señala un concepto de la teoría de Ausubel (diferenciación progresiva), pero este se refiere a ir de lo general a lo específico, lo cual no es el enfoque inicial de partir de lo concreto cotidiano."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

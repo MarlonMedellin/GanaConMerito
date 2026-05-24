@@ -11,20 +11,20 @@
   "evidencia": "Selecciona una actuación docente que evita imponer una visión única o descalificadora sobre el país de origen del estudiante.",
   "tarea": "Analizar una situación intercultural y elegir una mediación respetuosa.",
   "contexto": "En una clase de sociales se aborda la situación política y económica de distintos países. Hay un estudiante extranjero en el grupo y algunos compañeros hacen comentarios generalizantes sobre su país de origen. El docente quiere promover inclusión real sin imponer opiniones que vulneren su identidad.",
-  "enunciado": "En una clase de sociales se aborda la situación política y económica de distintos países. Hay un estudiante extranjero en el grupo y algunos compañeros hacen comentarios generalizantes sobre su país de origen. El docente quiere promover inclusión real sin imponer opiniones que vulneren su identidad.\n\n¿Qué actuación es más adecuada?",
+  "enunciado": "Teniendo en cuenta la diversidad cultural y el fomento de un clima escolar inclusivo y respetuoso, ¿cuál actuación de mediación del docente es la más pertinente?",
   "opciones": {
-    "A": "Abrir un diálogo respetuoso, evitar estereotipos, usar fuentes diversas y permitir que el estudiante participe voluntariamente sin exigirle representar a todo su país.",
-    "B": "Pedirle al estudiante que defienda obligatoriamente a su país frente al grupo.",
-    "C": "Permitir burlas o comentarios ofensivos porque hacen parte del debate.",
-    "D": "Prohibir cualquier conversación sobre otros países para evitar incomodidades."
+    "A": "Problematizar pedagógicamente los estereotipos mediante el análisis crítico de fuentes diversas, abriendo un espacio de participación voluntaria sin forzar al estudiante a ser el vocero o representante de su país.",
+    "B": "Pedir al estudiante extranjero que exponga ante el grupo la situación de su país para contradecir los comentarios e instruir a sus compañeros.",
+    "C": "Minimizar los comentarios asumiéndolos como bromas propias de la edad y continuar con la explicación planificada para no dilatar la clase.",
+    "D": "Suspender de inmediato la temática del plan de estudios y prohibir que se mencionen realidades sociopolíticas de otros países en las clases."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "La inclusión intercultural exige abordar los estereotipos de forma pedagógica y reflexiva para todo el grupo. A su vez, se debe proteger la individualidad del estudiante evitando la revictimización o la presión de actuar como representante de una cultura, fomentando su participación libre y voluntaria.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque obliga al estudiante a asumir una representación injusta.",
-    "C": "Es incorrecta porque vulnera la dignidad y convivencia.",
-    "D": "Es incorrecta porque evita el diálogo intercultural necesario."
+    "B": "Expone indebidamente al estudiante al obligarlo a asumir un rol de vocería que puede generarle presión o incomodidad.",
+    "C": "Representa una omisión del deber de mediación docente frente a situaciones que afectan la convivencia y reproducen la exclusión.",
+    "D": "Opta por una solución evasiva y censora que cancela el aprendizaje contextualizado de las ciencias sociales."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Inclusión práctica vs. segregación en aula/IDD_B06_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": false
   }

@@ -1,45 +1,45 @@
 {
   "id_item": "CEOL_B05_I03",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Jerarquía Institucional PEI y Currículo",
   "tema": "PEI, currículo oficial y Manual de Convivencia",
   "subtema": "Desorden conceptual sobre la jerarquía entre PEI, currículo y Manual de Convivencia.",
   "competencia": "Comprensión de organización institucional",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende que el PEI orienta la identidad y el proyecto educativo general; el currículo desarrolla la propuesta formativa y académica; y el Manual de Convivencia regula derechos, deberes, acuerdos y protocolos coherentes con el PEI.",
-  "evidencia": "Selecciona la relación estructural correcta entre PEI, currículo y Manual de Convivencia.",
-  "tarea": "Ordenar conceptualmente documentos y componentes institucionales según su función.",
-  "contexto": "En una jornada institucional se revisa la relación entre el PEI, el currículo y el Manual de Convivencia. El equipo necesita aclarar cuál es la función estructural de cada uno para evitar contradicciones entre documentos.",
-  "enunciado": "En una jornada institucional se revisa la relación entre el PEI, el currículo y el Manual de Convivencia. El equipo necesita aclarar cuál es la función estructural de cada uno para evitar contradicciones entre documentos.\n\n¿Cuál opción expresa mejor esta relación?",
+  "claim": "Valora la adecuación de actuaciones pedagógicas e institucionales bajo criterios normativos y constitucionales.",
+  "evidencia": "Selecciona la respuesta que demuestra la correcta aplicación del marco normativo y pedagógico colombiano.",
+  "tarea": "Analizar el caso y determinar la opción correcta conforme a derecho y principios pedagógicos.",
+  "contexto": "En una jornada institucional se revisa la relación entre el PEI, el currículo y el Manual de Convivencia. El equipo necesita aclarar cuál es la función estructural de cada uno para evitar contradicciones normativas y pedagógicas internas.",
+  "enunciado": "En una jornada institucional se revisa la relación entre el PEI, el currículo y el Manual de Convivencia. El equipo necesita aclarar cuál es la función estructural de cada uno para evitar contradicciones normativas y pedagógicas internas.\n\n¿Cuál opción expresa de forma correcta la relación de articulación entre estos tres instrumentos?",
   "opciones": {
-    "A": "El PEI es el marco integrador del proyecto educativo; el currículo concreta la propuesta formativa y académica; y el Manual de Convivencia regula derechos, deberes, acuerdos y protocolos de vida escolar.",
-    "B": "El currículo está por encima del PEI y define por sí solo la misión, la visión y las normas de convivencia.",
-    "C": "El Manual de Convivencia reemplaza el currículo porque contiene las sanciones que orientan la enseñanza.",
-    "D": "PEI, currículo y Manual de Convivencia son documentos aislados y no necesitan coherencia entre sí."
+    "A": "El PEI establece el marco estratégico y axiológico general; el currículo instrumentaliza el plan de estudios y la propuesta pedagógica; y el Manual de Convivencia norma las relaciones e interacciones de la comunidad.",
+    "B": "El currículo determina de manera autónoma las normas disciplinarias, y tanto el PEI como el Manual de Convivencia deben adecuarse a las metodologías del área de orientación.",
+    "C": "El Manual de Convivencia define el horizonte institucional y los fines educativos del plantel, subordinando al currículo y al PEI a las sanciones que allí se establezcan.",
+    "D": "El PEI, el currículo y el Manual de Convivencia son instrumentos aislados con autonomías propias, por lo cual no requieren consistencia jurídica ni pedagógica interna."
   },
   "clave": "A",
   "justificacion_clave": "A",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque el currículo no reemplaza el horizonte institucional ni define por sí solo las normas de convivencia.",
-    "C": "Es incorrecta porque el Manual no reemplaza el currículo ni se reduce a sanciones.",
-    "D": "Es incorrecta porque estos documentos deben guardar coherencia institucional."
+    "B": "Inversión conceptual: atribuye al currículo (cuyo fin es el plan de estudios) la regulación de la convivencia escolar.",
+    "C": "Rigorismo disciplinar: eleva el Manual de Convivencia como marco regulador supremo de la escuela, subordinando la propuesta pedagógica general al esquema punitivo.",
+    "D": "Error administrativo y de derecho: desconoce que la Ley 115 y el DUR 1075 exigen que todos los instrumentos escolares guarden estricta coherencia y alineación con el PEI."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem evalúa comprensión funcional de documentos institucionales y no exige experiencia directiva o conocimiento jurídico especializado."
+    "observaciones": "Lenguaje formal, neutral y apegado a la jurisprudencia colombiana en materia de derechos y deberes educativos, libre de sesgos territoriales o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Redacción estructurada con enunciados independientes y opciones de longitud y complejidad gramatical homogéneas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/PEI, currículo oficial y Manual de Convivencia/CEOL_B05_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

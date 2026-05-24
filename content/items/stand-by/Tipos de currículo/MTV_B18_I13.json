@@ -1,6 +1,6 @@
 {
   "id_item": "MTV_B18_I13",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "Tipos de currículo",
   "subtema": "Aplicación pedagógica",
@@ -13,18 +13,18 @@
   "contexto": "El PEI afirma que la institución trabaja inclusión, evaluación formativa y participación, pero en las aulas predominan castigos, exclusión, copia mecánica y ausencia de diálogo.",
   "enunciado": "El PEI afirma que la institución trabaja inclusión, evaluación formativa y participación, pero en las aulas predominan castigos, exclusión, copia mecánica y ausencia de diálogo.\n\n¿Cuál análisis es más pertinente?",
   "opciones": {
-    "A": "No hay problema porque basta con que el PEI lo diga.",
-    "B": "La práctica de aula nunca se relaciona con el currículo.",
-    "C": "Existe incoherencia entre el currículo declarado y el currículo realmente vivido.",
-    "D": "La inclusión solo debe aparecer en carteleras."
+    "A": "Existe una brecha o disonancia crítica entre el currículo formal (declarado en el PEI) y el currículo operacional y oculto (vivido en el aula).",
+    "B": "La autonomía pedagógica del docente faculta que el currículo real sea completamente ajeno a los fines misionales del PEI.",
+    "C": "Se evidencia una adaptación curricular adecuada de acuerdo con el nivel cognitivo real de los estudiantes de la institución.",
+    "D": "Se constata la prevalencia del currículo nulo sobre el currículo oficial como método formativo aprobado."
   },
   "clave": "C",
-  "justificacion_clave": "C",
+  "justificacion_clave": "Cuando los principios teóricos del PEI (inclusión, evaluación formativa) no se reflejan en el salón de clases y se ven contradichos por conductas excluyentes y castigos, se presenta una fractura entre el currículo formal y las dimensiones operacional y oculta del currículo real.",
   "distractores_funcion": {
-    "A": "Declarar no basta si no hay práctica coherente.",
-    "B": "La práctica de aula materializa currículo.",
-    "C": "Clave correcta.",
-    "D": "La inclusión requiere acciones reales."
+    "A": "Clave correcta.",
+    "B": "Incorrecto. La autonomía del docente no justifica la contradicción abierta con los fines misionales y normativos que rigen a la escuela.",
+    "C": "Incorrecto. Los castigos y la exclusión no son adaptaciones curriculares pedagógicas; son malas prácticas de convivencia y didáctica.",
+    "D": "Incorrecto. El currículo nulo no es un método de formación aprobado, es una omisión o exclusión que limita el derecho educativo."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Tipos de currículo/MTV_B18_I13.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

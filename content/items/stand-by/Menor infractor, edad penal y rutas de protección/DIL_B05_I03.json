@@ -1,45 +1,45 @@
 {
   "id_item": "DIL_B05_I03",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Edad penal y protección integral",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Normatividad y Convivencia Escolar",
   "tema": "Menor infractor, edad penal y rutas de protección",
-  "subtema": "Confusión entre edad mínima de responsabilidad penal adolescente y ruta de protección para menores de 14 años.",
-  "competencia": "Diferenciación de rutas según edad",
-  "nivel_cognitivo": "APLICACION",
-  "dificultad_estimada": "MEDIA_ALTA",
-  "claim": "El evaluado comprende que la edad es un criterio jurídico central para decidir entre ruta de protección y sistema especializado de responsabilidad penal adolescente.",
-  "evidencia": "Selecciona una comparación adecuada entre menor de 14 años y adolescente de 14 a 18 años.",
-  "tarea": "Comparar rutas legales según edad.",
-  "contexto": "En una capacitación institucional se analiza la diferencia entre un niño menor de 14 años que participa en una conducta punible y un adolescente mayor de 14 y menor de 18 años que incurre en una conducta semejante.",
-  "enunciado": "En una capacitación institucional se analiza la diferencia entre un niño menor de 14 años que participa en una conducta punible y un adolescente mayor de 14 y menor de 18 años que incurre en una conducta semejante.\n\n¿Cuál comparación es correcta?",
+  "subtema": "Sistema de Responsabilidad Penal para Adolescentes",
+  "competencia": "Diferencia la aplicación del Sistema de Responsabilidad Penal para Adolescentes (SRPA) del régimen de restablecimiento de derechos según los rangos de edad legal definidos en la Ley 1098 de 2006.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Distingue la situación jurídica de un menor de 14 años frente a un adolescente entre 14 y 18 años ante una conducta punible en el contexto escolar.",
+  "evidencia": "Selecciona la delimitación de inimputabilidad absoluta y medidas de protección para el menor de 14 años frente al ingreso del adolescente (14 a 18 años) al SRPA de enfoque pedagógico y restaurativo.",
+  "tarea": "Determinar la distinción fundamental que se debe aplicar ante dos estudiantes involucrados en tráfico de estupefacientes en el colegio: uno de 13 años y otro de 15 años.",
+  "contexto": "Durante un taller de actualización pedagógica sobre el Manual de Convivencia y el Sistema Nacional de Convivencia Escolar (Ley 1620 de 2013), surge una discusión sobre cómo abordar el caso de dos estudiantes involucrados en tráfico de estupefacientes dentro del colegio: uno de 13 años y otro de 15 años.",
+  "enunciado": "Durante un taller de actualización pedagógica sobre el Manual de Convivencia y el Sistema Nacional de Convivencia Escolar (Ley 1620 de 2013), surge una discusión sobre cómo abordar el caso de dos estudiantes involucrados en tráfico de estupefacientes dentro del colegio: uno de 13 años y otro de 15 años. Desde el punto de vista del régimen de responsabilidad legal y penal diferenciada en Colombia, la distinción fundamental que el rector debe aclarar es que:",
   "opciones": {
-    "A": "La persona menor de 14 años no entra a responsabilidad penal adolescente y debe remitirse a protección y restablecimiento; el adolescente entre 14 y 18 años puede ingresar al sistema especializado, con enfoque pedagógico, restaurativo y diferenciado.",
-    "B": "Ambos deben ser tratados exactamente como adultos en el sistema penal ordinario.",
-    "C": "El menor de 14 años debe recibir una pena más fuerte por no tener edad suficiente para comprender.",
-    "D": "Ninguno requiere actuación institucional porque toda conducta punible cometida por menores debe ignorarse."
+    "A": "El estudiante de 13 años es penalmente inimputable y solo es sujeto de medidas de restablecimiento de derechos; el de 15 años está sujeto al Sistema de Responsabilidad Penal para Adolescentes (SRPA), el cual posee carácter pedagógico, restaurativo y diferenciado.",
+    "B": "Ambos estudiantes son judicializables penalmente en el SRPA, pero el de 13 años recibirá una medida pedagógica no privativa de la libertad y el de 15 años una privación de libertad en centro especializado de forma obligatoria.",
+    "C": "El estudiante de 13 años debe ser excluido del sistema educativo formal inmediatamente; mientras que el de 15 años debe ser remitido a la justicia ordinaria de adultos al tratarse del delito de tráfico de estupefacientes.",
+    "D": "Ninguno de los dos puede ser sujeto de sanción penal o administrativa alguna, debiendo resolverse el conflicto de manera de manera exclusiva a través de los mecanismos internos de conciliación del Gobierno Escolar."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "La Ley 1098 de 2006 fija en 14 años el inicio de la responsabilidad penal de adolescentes. Por lo tanto, el estudiante de 13 años queda excluido del SRPA y pasa a protección del ICBF; mientras que el de 15 años ingresa al SRPA, un sistema judicial penal especializado con fines y procedimientos diferenciados y pedagógicos.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque los adolescentes no son tratados como adultos ordinarios.",
-    "C": "Es incorrecta porque propone una sanción más severa incompatible con el enfoque de derechos.",
-    "D": "Es incorrecta porque debe haber actuación institucional protectora o especializada según el caso."
+    "B": "Judicialización general en el SRPA: comete el error técnico de asumir que los menores de 14 años son penalmente procesables en el SRPA bajo condiciones atenuadas.",
+    "C": "Exclusión escolar y justicia ordinaria: plantea la sanción inconstitucional de exclusión del derecho a la educación formal y el procesamiento ilegal del adolescente de 15 años en la justicia penal de adultos.",
+    "D": "Evasión legal total/Sobre-estimación de conciliación: pretende que delitos graves de tráfico de drogas se manejen solo como conflictos internos en el colegio, eludiendo la obligación de denunciar y activar rutas legales externas."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem evita tanto la criminalización indebida como la omisión institucional."
+    "observaciones": "Ítem fundado en normatividad general, claro y aplicable a directivos y docentes en el territorio colombiano."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "El enunciado establece claramente las edades de los estudiantes para guiar el análisis normativo."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Menor infractor, edad penal y rutas de protección/DIL_B05_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

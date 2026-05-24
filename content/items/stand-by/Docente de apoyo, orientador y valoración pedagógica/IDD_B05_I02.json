@@ -7,39 +7,39 @@
   "competencia": "Distingue funciones del docente de apoyo y orientador para coordinar valoración pedagógica y apoyos educativos.",
   "nivel_cognitivo": "ANÁLISIS",
   "dificultad_estimada": "MEDIA-ALTA",
-  "claim": "Reconoce la alternativa pedagógica o institucional más adecuada según el criterio técnico evaluado en el caso.",
-  "evidencia": "Selecciona una única opción defendible frente a distractores plausibles en función del constructo.",
-  "tarea": "Analizar el caso y elegir la decisión más pertinente conforme al enfoque del ítem.",
+  "claim": "Valora la adecuación de actuaciones pedagógicas e institucionales bajo criterios normativos y constitucionales.",
+  "evidencia": "Selecciona la respuesta que demuestra la correcta aplicación del marco normativo y pedagógico colombiano.",
+  "tarea": "Analizar el caso y determinar la opción correcta conforme a derecho y principios pedagógicos.",
   "contexto": "A una institución llegan estudiantes con discapacidad física, visual o de movilidad. Algunos miembros del equipo consideran que lo mejor es esperar a que cada docente resuelva por su cuenta, sin plan institucional.",
-  "enunciado": "A una institución llegan estudiantes con discapacidad física, visual o de movilidad. Algunos miembros del equipo consideran que lo mejor es esperar a que cada docente resuelva por su cuenta, sin plan institucional.\n\n¿Cuál debe ser la estrategia prioritaria para garantizar su educación?",
+  "enunciado": "A una institución llegan estudiantes con discapacidad física, visual o de movilidad. Algunos miembros del equipo consideran que lo mejor es esperar a que cada docente resuelva por su cuenta, sin plan institucional.\n\n¿Cuál debe ser la estrategia prioritaria para garantizar su educación inclusiva según la normatividad nacional?",
   "opciones": {
-    "A": "Ubicar a los estudiantes en espacios separados hasta que la institución se sienta preparada.",
-    "B": "Aceptar la matrícula, pero no modificar accesos, materiales ni estrategias de enseñanza.",
-    "C": "Organizar un plan institucional de accesibilidad, apoyos, ajustes razonables, trabajo colaborativo con docentes y familia, y seguimiento pedagógico.",
-    "D": "Exigir que las familias contraten todos los apoyos externos antes de permitir la participación en clase."
+    "A": "Implementar un plan de accesibilidad física y curricular coordinado, que capacite a los docentes, articule apoyos razonables y formalice el seguimiento en los PIAR.",
+    "B": "Delegar la flexibilización de contenidos en el docente de apoyo, de modo que el estudiante reciba guías alternativas para trabajar de forma autónoma desde el hogar.",
+    "C": "Tramitar ante la Secretaría de Educación la contratación de un intérprete de lengua de señas o tutor sombra de forma previa a autorizar el ingreso de los estudiantes al aula de clase.",
+    "D": "Exigir a las familias un certificado de aptitud escolar emitido por el sector salud que garantice la viabilidad de la integración en aulas regulares."
   },
-  "clave": "C",
-  "justificacion_clave": "C",
+  "clave": "A",
+  "justificacion_clave": "A",
   "distractores_funcion": {
-    "A": "Es incorrecta porque separa a los estudiantes.",
-    "B": "Es incorrecta porque la matrícula sin ajustes no garantiza inclusión.",
-    "C": "Clave correcta.",
-    "D": "Es incorrecta porque condiciona indebidamente la participación."
+    "A": "Clave correcta.",
+    "B": "Exclusión didáctica: promueve el confinamiento del estudiante en casa con guías aisladas, privándolo del derecho a participar en el aula de clases común.",
+    "C": "Barrera administrativa: condiciona indebidamente el ingreso del estudiante a la llegada de personal de apoyo, vulnerando el derecho fundamental al acceso inmediato.",
+    "D": "Requisito ilegal: impone una barrera de diagnóstico médico como prerrequisito de matrícula escolar, violando el derecho fundamental a la educación."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estándar y contexto institucional general sin sesgos culturales innecesarios."
+    "observaciones": "Lenguaje formal, neutral y apegado a la jurisprudencia colombiana en materia de derechos y deberes educativos, libre de sesgos territoriales o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura y exigencia."
+    "observaciones": "Redacción estructurada con enunciados independientes y opciones de longitud y complejidad gramatical homogéneas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Docente de apoyo, orientador y valoración pedagógica/IDD_B05_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

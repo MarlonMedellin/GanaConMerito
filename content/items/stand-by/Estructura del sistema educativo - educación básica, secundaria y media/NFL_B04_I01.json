@@ -1,44 +1,44 @@
 {
   "id_item": "NFL_B04_I01",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Política y sistema educativo",
+  "area": "Normatividad y estructura educativa",
   "tema": "Estructura del sistema educativo - educación básica, secundaria y media",
-  "subtema": "Estructura del Sistema Educativo",
-  "competencia": "Distingue niveles y organización del sistema educativo para interpretar su aplicación en contextos institucionales.",
-  "nivel_cognitivo": "ANÁLISIS",
-  "dificultad_estimada": "BAJA-MEDIA",
-  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada para el caso planteado.",
-  "evidencia": "Selecciona una única alternativa defendible frente a distractores plausibles desde el constructo evaluado.",
-  "tarea": "Analizar el caso y elegir la opción más pertinente según criterios pedagógicos y normativos aplicables.",
-  "contexto": "Una institución necesita diligenciar un informe normativo y debe nombrar correctamente el conjunto de grados que va desde primero de primaria hasta noveno. Según la Ley General de Educación, ese conjunto incluye primaria y secundaria y comprende nueve grados.",
-  "enunciado": "Una institución necesita diligenciar un informe normativo y debe nombrar correctamente el conjunto de grados que va desde primero de primaria hasta noveno. Según la Ley General de Educación, ese conjunto incluye primaria y secundaria y comprende nueve grados.\n\n¿Cuál es el término normativo correcto?",
+  "subtema": "Áreas Obligatorias y Educación Básica",
+  "competencia": "Analiza la estructura organizativa y curricular de los niveles de la educación formal en Colombia de conformidad con la Ley 115 de 1994.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Determina la obligatoriedad y continuidad de las áreas fundamentales a lo largo de los grados de la educación básica según la Ley 115.",
+  "evidencia": "Selecciona la obligatoriedad continuada y articulada en los niveles de básica primaria y básica secundaria de forma integral frente a propuestas de exclusión por autonomía o falta de infraestructura.",
+  "tarea": "Determinar la viabilidad normativa de una propuesta docente de suprimir el área de tecnología en básica primaria para reasignar sus horas a matemáticas.",
+  "contexto": "Al organizar el Plan de Estudios de una institución educativa oficial, el equipo directivo debe definir la distribución horaria y las áreas obligatorias para los grados de 1.° a 9.° de acuerdo con los lineamientos de la Ley General de Educación (Ley 115 de 1994). Un docente sugiere omitir el área de tecnología e informática en los grados de educación básica primaria para asignarle esas horas a matemáticas, argumentando que tecnología solo es obligatoria en bachillerato.",
+  "enunciado": "Al organizar el Plan de Estudios de una institución educativa oficial, el equipo directivo debe definir la distribución horaria y las áreas obligatorias para los grados de 1.° a 9.° de acuerdo con los lineamientos de la Ley General de Educación (Ley 115 de 1994). Un docente sugiere omitir el área de tecnología e informática en los grados de educación básica primaria para asignarle esas horas a matemáticas, argumentando que tecnología solo es obligatoria en bachillerato. Teniendo en cuenta la normativa educativa nacional, la propuesta del docente es inviable porque las áreas obligatorias y fundamentales:",
   "opciones": {
-    "A": "Educación media.",
-    "B": "Educación básica.",
-    "C": "Educación superior.",
-    "D": "Educación preescolar."
+    "A": "Deben cursarse y ofrecerse de manera continua y articulada a lo largo de toda la educación básica, la cual comprende conjuntamente los niveles de básica primaria (1.° a 5.°) y básica secundaria (6.° a 9.°) para un total de nueve grados.",
+    "B": "Son definidas de manera autónoma por el Consejo Académico de cada institución, el cual tiene la facultad legal de suprimir cualquiera de las nueve áreas obligatorias según las necesidades del contexto.",
+    "C": "Deben implementarse de forma obligatoria únicamente a partir de la educación básica secundaria, quedando la básica primaria limitada a las áreas de lectoescritura y matemáticas básicas.",
+    "D": "Se encuentran exentas del plan de estudios si la institución no cuenta con infraestructura tecnológica certificada por la respectiva Secretaría de Educación."
   },
-  "clave": "B",
-  "justificacion_clave": "B",
+  "clave": "A",
+  "justificacion_clave": "De acuerdo con el artículo 23 de la Ley 115 de 1994, las áreas obligatorias y fundamentales deben ofrecerse en toda la educación básica (que comprende 1.° a 9.°). No se pueden excluir ni suprimir del plan de estudios de forma discrecional.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque la educación media comprende los grados décimo y undécimo.",
-    "B": "Clave correcta.",
-    "C": "Es incorrecta porque corresponde a estudios posteriores a la educación media.",
-    "D": "Es incorrecta porque el preescolar antecede a la educación básica."
+    "A": "Clave correcta.",
+    "B": "Exceso de autonomía escolar: confunde la autonomía curricular institucional (Art. 77 de Ley 115) con la facultad de eliminar áreas obligatorias fijadas por la Ley General.",
+    "C": "Subestimación de básica primaria: restringe la obligatoriedad a la básica secundaria, desconociendo el carácter integrado de los nueve grados de la educación básica establecidos por la norma.",
+    "D": "Condicionamiento operativo: supedita la vigencia legal de un área curricular fundamental a la presencia previa de recursos físicos específicos, lo cual es contrario a la posición de garante de la escuela."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estándar, sin sesgos culturales innecesarios ni barreras de comprensión relevantes."
+    "observaciones": "El ítem se fundamenta en la legislación general colombiana de educación."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura."
+    "observaciones": "Vocabulario legal escolar común y opciones simétricas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Estructura del sistema educativo - educación básica, secundaria y media/NFL_B04_I01.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

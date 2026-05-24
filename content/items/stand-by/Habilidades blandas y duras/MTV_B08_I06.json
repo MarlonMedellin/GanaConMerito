@@ -1,45 +1,45 @@
 {
   "id_item": "MTV_B08_I06",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Gestión educativa",
-  "tema": "Habilidades blandas y duras",
-  "subtema": "Aplicación pedagógica",
-  "competencia": "Juicio pedagógico",
-  "nivel_cognitivo": "APLICACION",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Competencias comportamentales",
+  "tema": "Relaciones interpersonales y comunicación",
+  "subtema": "Comunicación efectiva",
+  "competencia": "Escucha con atención, transmite ideas de forma clara, mantiene canales abiertos de diálogo y responde con respeto (Decreto 815 de 2018).",
+  "nivel_cognitivo": "APLICACIÓN",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "Durante una reunión, un padre de familia cuestiona duramente la metodología de un docente. El docente se siente incómodo, pero decide escuchar, controlar su tono de voz, responder con argumentos y proponer una ruta de diálogo.",
-  "enunciado": "Durante una reunión, un padre de familia cuestiona duramente la metodología de un docente. El docente se siente incómodo, pero decide escuchar, controlar su tono de voz, responder con argumentos y proponer una ruta de diálogo.\n\n¿Qué habilidad blanda está evidenciando principalmente?",
+  "claim": "El docente aplica técnicas de comunicación asertiva y escucha activa para resolver tensiones con la comunidad educativa.",
+  "evidencia": "Selecciona una estrategia de comunicación que valide las preocupaciones del usuario y proponga canales formales de resolución respetuosa.",
+  "tarea": "Determinar la respuesta institucional y relacional más pertinente ante el reclamo agresivo de un padre de familia.",
+  "contexto": "Durante una reunión de entrega de informes, un padre de familia cuestiona de forma agresiva y en voz alta los criterios de evaluación del docente, acusándolo de calificar con parcialidad. El docente nota que los demás padres observan la interacción.",
+  "enunciado": "Ante este reclamo, la actuación del docente que mejor evidencia la competencia de comunicación efectiva y orientación al ciudadano es:",
   "opciones": {
-    "A": "Memorización normativa.",
-    "B": "Cálculo lógico-matemático.",
-    "C": "Dominio exclusivo de contenidos disciplinares.",
-    "D": "Comunicación asertiva."
+    "A": "Solicitar al padre que abandone el aula de inmediato y programar una cita con el coordinador disciplinario para evitar confrontaciones públicas.",
+    "B": "Escuchar con atención la queja del padre, mantener una postura serena, explicar los criterios pedagógicos aplicados en la calificación y concertar un espacio individual para revisar el proceso del estudiante.",
+    "C": "Abstenerse de dar explicaciones durante la reunión alegando la autonomía docente, e indicarle al padre que radique un reclamo formal ante la secretaría académica.",
+    "D": "Rebatir los argumentos del padre con el mismo tono de voz para salvaguardar su autoridad profesional frente a los demás miembros del grupo."
   },
-  "clave": "D",
-  "justificacion_clave": "D",
+  "clave": "B",
+  "justificacion_clave": "La opción B es correcta porque responde a los principios de comunicación efectiva y orientación al usuario al priorizar la escucha, mantener la calma frente al conflicto, explicar la fundamentación pedagógica y ofrecer una ruta de atención individualizada sin interrumpir el desarrollo general de la reunión.",
   "distractores_funcion": {
-    "A": "Memorizar normas no describe la interacción comunicativa.",
-    "B": "El cálculo lógico no es el eje de la situación.",
-    "C": "El dominio disciplinar no basta para explicar el manejo del conflicto.",
-    "D": "Clave correcta."
+    "A": "Representa una actitud de evitación y traslado del conflicto, que posterga la atención debida al usuario.",
+    "B": "Clave correcta.",
+    "C": "Muestra un comportamiento burocrático y defensivo que obstaculiza la comunicación y el diálogo abierto.",
+    "D": "Muestra falta de autorregulación emocional y escala el conflicto innecesariamente."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El caso evalúa conducta profesional sin culpar ni caricaturizar al padre o al docente."
+    "observaciones": "Ítem contextualizado en escenarios educativos estándar sin sesgos de género, étnicos o regionales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Redacción directa, vocabulario profesional accesible y opciones con longitud homogénea."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I06.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

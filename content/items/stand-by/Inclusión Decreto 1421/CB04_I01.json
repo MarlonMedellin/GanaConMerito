@@ -7,39 +7,39 @@
   "competencia": "Aplicar decisiones institucionales inclusivas basadas en eliminación de barreras y ajustes razonables.",
   "nivel_cognitivo": "JUICIO",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado reconoce que inclusión implica corresponsabilidad institucional y no segregación ni homogeneización.",
-  "evidencia": "Selecciona la respuesta que integra revisión de barreras, ajustes razonables y acompañamiento docente.",
-  "tarea": "Resolver una tensión institucional sobre inclusión y ritmo de clase.",
-  "contexto": "Docentes perciben que adaptaciones para un estudiante afectan el ritmo del grupo.",
-  "enunciado": "¿Cuál respuesta institucional es más adecuada desde el enfoque de inclusión del Decreto 1421?",
+  "claim": "Valora la adecuación de actuaciones pedagógicas e institucionales bajo criterios normativos y constitucionales.",
+  "evidencia": "Selecciona la respuesta que demuestra la correcta aplicación del marco normativo y pedagógico colombiano.",
+  "tarea": "Analizar el caso y determinar la opción correcta conforme a derecho y principios pedagógicos.",
+  "contexto": "Durante una reunión de ciclo, varios docentes manifiestan su preocupación porque consideran que el diseño y aplicación de los Planes Individuales de Ajustes Razonables (PIAR) para estudiantes con discapacidad retrasan el avance temático del resto del grupo y reducen la exigencia académica general.",
+  "enunciado": "Durante una reunión de ciclo, varios docentes manifiestan su preocupación porque consideran que el diseño y aplicación de los Planes Individuales de Ajustes Razonables (PIAR) para estudiantes con discapacidad retrasan el avance temático del resto del grupo y reducen la exigencia académica general.\n\n¿Cuál es la respuesta institucional y pedagógica más coherente con el enfoque de inclusión establecido en el Decreto 1421 de 2017?",
   "opciones": {
-    "A": "Retirar al estudiante de actividades comunes para evitar interrupciones.",
-    "B": "Mantener clase sin ajustes porque todos deben recibir exactamente lo mismo.",
-    "C": "Revisar barreras, definir ajustes razonables y acompañar al equipo docente para garantizar participación de todo el grupo.",
-    "D": "Trasladar a la familia toda la responsabilidad de apoyos educativos."
+    "A": "Acompañar a los docentes en el diseño universal para el aprendizaje (DUA) y en la formulación de ajustes razonables focalizados, asumiendo la inclusión como una transformación del aula que beneficia a todo el estudiantado.",
+    "B": "Recomendar la reubicación de los estudiantes con PIAR en aulas de apoyo exclusivas durante el desarrollo de las asignaturas académicas de alta complejidad cognitiva.",
+    "C": "Suspender de manera transitoria la obligatoriedad de los PIAR hasta que la Secretaría de Educación provea docentes de apoyo permanentes para cada aula diversificada.",
+    "D": "Reducir de forma homogénea las metas de aprendizaje de toda la clase para equipararlas a los ajustes razonables del estudiante con discapacidad."
   },
-  "clave": "C",
-  "justificacion_clave": "Es la única opción que combina equidad, ajustes razonables y corresponsabilidad institucional.",
+  "clave": "A",
+  "justificacion_clave": "A",
   "distractores_funcion": {
-    "A": "Plantea segregación.",
-    "B": "Confunde igualdad con uniformidad.",
-    "C": "Clave correcta.",
-    "D": "Traslada indebidamente la obligación institucional."
+    "A": "Clave correcta.",
+    "B": "Segregación pedagógica: propone un esquema de aulas especiales separadas que está explícitamente proscrito por el enfoque de educación inclusiva del Decreto 1421.",
+    "C": "Omisión normada: condiciona el cumplimiento de la ley nacional a la asignación de recursos adicionales, desconociendo el carácter vinculante e inmediato del PIAR.",
+    "D": "Empobrecimiento curricular general: confunde los ajustes razonables con una rebaja del nivel académico colectivo, afectando el derecho a la educación de todo el grupo."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Usa enfoque de barreras y participación, evitando lenguaje estigmatizante."
+    "observaciones": "Lenguaje formal, neutral y apegado a la jurisprudencia colombiana en materia de derechos y deberes educativos, libre de sesgos territoriales o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Caso claro, una decisión principal y vocabulario controlado."
+    "observaciones": "Redacción estructurada con enunciados independientes y opciones de longitud y complejidad gramatical homogéneas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Inclusión Decreto 1421/CB04_I01.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

@@ -1,45 +1,45 @@
 {
   "id_item": "IDD_B11_I02",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Abstracción científica vs. experiencia diaria",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y currículo",
   "tema": "Error, conflicto cognitivo y reestructuración de esquemas",
-  "subtema": "Asimilación errónea de conceptos científicos abstractos a partir de analogías cotidianas inadecuadas.",
-  "competencia": "Mediación didáctica de conceptos abstractos",
+  "subtema": "Asimilación errónea de conceptos científicos a partir de analogías cotidianas",
+  "competencia": "Diseñar estrategias didácticas para superar sesgos conceptuales originados por analogías intuitivas cotidianas en el estudiante.",
   "nivel_cognitivo": "APLICACION",
-  "dificultad_estimada": "MEDIA_ALTA",
-  "claim": "El evaluado comprende que enseñar conceptos científicos abstractos exige mediación didáctica que conecte con la experiencia sin reducir el concepto a analogías incorrectas.",
-  "evidencia": "Selecciona una estrategia que aclara el concepto, trabaja ideas previas y evita comparaciones engañosas.",
-  "tarea": "Elegir una mediación didáctica adecuada para evitar una idea científica errónea.",
-  "contexto": "En ciencias naturales, el currículo introduce el estado de la materia llamado plasma. Algunos niños lo comparan con gelatina porque asocian la palabra con algo blando o viscoso que han visto en la vida cotidiana.",
-  "enunciado": "En ciencias naturales, el currículo introduce el estado de la materia llamado plasma. Algunos niños lo comparan con gelatina porque asocian la palabra con algo blando o viscoso que han visto en la vida cotidiana.\n\n¿Cuál es la función didáctica del maestro para evitar esta idea errónea?",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado aplica estrategias didácticas para superar obstáculos en la comprensión de conceptos abstractos causados por analogías de la experiencia cotidiana.",
+  "evidencia": "Elige la secuencia pedagógica que desarma el sesgo asociativo intuitivo sin descalificar la experiencia previa.",
+  "tarea": "Diseñar una mediación didáctica para aclarar el concepto científico de plasma frente a analogías erróneas del estudiante.",
+  "contexto": "Un docente de ciencias naturales introduce el estado físico de la materia llamado plasma. En la discusión previa, varios estudiantes afirman que el plasma debe ser algo blando y viscoso como la gelatina, ya que asocian la palabra con el plasma sanguíneo u otros elementos de la vida cotidiana.",
+  "enunciado": "¿Cómo debe mediar el docente para reestructurar esta idea previa y construir el concepto científico adecuado?",
   "opciones": {
-    "A": "Explorar la idea previa, explicar el concepto con representaciones adecuadas, usar ejemplos y contraejemplos, y aclarar los límites de las comparaciones cotidianas.",
-    "B": "Aceptar la comparación con gelatina como explicación científica suficiente.",
-    "C": "Evitar enseñar conceptos abstractos porque los niños pueden confundirse.",
-    "D": "Calificar negativamente a los niños que relacionen el concepto con experiencias diarias."
+    "A": "Presentar ejemplos de plasma en el universo (como el sol o las estrellas) y en dispositivos tecnológicos cotidianos (lámparas fluorescentes), analizando sus propiedades de ionización y temperatura en contraste con la estructura de un gel o coloide.",
+    "B": "Aceptar la analogía de la gelatina para facilitar la memorización del término y avanzar rápidamente con los demás contenidos del programa escolar de ciencias.",
+    "C": "Mostrar en el tablero la definición literal del diccionario de la palabra plasma y ordenar a los estudiantes que la copien y la repitan individualmente hasta corregir la confusión.",
+    "D": "Omitir el estudio de este estado de la materia debido a su nivel de abstracción y limitarse a los estados clásicos (sólido, líquido y gaseoso) que no generan confusiones lingüísticas."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "La asimilación incorrecta de conceptos abstractos por analogía semántica o empírica se supera exponiendo contraejemplos contrastados y analizando propiedades físicas que distingan la intuición cotidiana de la definición científica.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque refuerza una concepción errónea.",
-    "C": "Es incorrecta porque renuncia a la mediación didáctica.",
-    "D": "Es incorrecta porque castiga la asociación inicial en lugar de reconstruirla."
+    "B": "Refuerza un error conceptual sistemático por priorizar el ritmo temático y la memorización de etiquetas verbales.",
+    "C": "Enfoque formalista que confunde la comprensión de un fenómeno físico complejo con la memorización de su definición léxica.",
+    "D": "Evasión curricular que priva a los estudiantes del aprendizaje de conceptos científicos básicos requeridos por los referentes nacionales."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem valora la experiencia previa del estudiante, pero exige mediación para construir una explicación científica más adecuada."
+    "observaciones": "Usa una analogía científica clásica del magisterio."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Opciones de extensión homogénea."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Error, conflicto cognitivo y reestructuración de esquemas/IDD_B11_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

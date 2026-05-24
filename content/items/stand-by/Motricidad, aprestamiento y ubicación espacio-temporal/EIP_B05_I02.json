@@ -1,45 +1,45 @@
 {
   "id_item": "EIP_B05_I02",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Gestión educativa",
-  "tema": "Motricidad, aprestamiento y ubicación espacio-temporal",
-  "subtema": "Aplicación pedagógica",
-  "competencia": "Juicio pedagógico",
-  "nivel_cognitivo": "APLICACION",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y didáctica infantil",
+  "tema": "Desarrollo psicomotor en preescolar",
+  "subtema": "Ubicación espacio-temporal",
+  "competencia": "Interpretar el propósito pedagógico de experiencias motrices y espacio-temporales en preescolar.",
+  "nivel_cognitivo": "COMPRENSIÓN",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
+  "claim": "El evaluado reconoce el objetivo de estructuración espacial y temporal mediante juegos directivos en transición.",
+  "evidencia": "Identifica que las secuencias de rutinas y conceptos de posición estructuran la noción de espacio-tiempo y la acción del niño.",
+  "tarea": "Identificar qué objetivo de preescolar se trabaja principalmente con juegos corporales basados en posiciones y rutinas temporales.",
   "contexto": "En transición, la docente propone juegos con instrucciones como 'arriba-abajo', 'dentro-fuera', 'antes-después', 'cerca-lejos' y secuencias de rutinas del día. Un observador afirma que esas actividades no tienen valor académico.",
-  "enunciado": "En transición, la docente propone juegos con instrucciones como 'arriba-abajo', 'dentro-fuera', 'antes-después', 'cerca-lejos' y secuencias de rutinas del día. Un observador afirma que esas actividades no tienen valor académico.\n\n¿Qué objetivo de preescolar se está trabajando principalmente?",
+  "enunciado": "¿Qué objetivo de preescolar se está trabajando principalmente con estas dinámicas?",
   "opciones": {
-    "A": "La memorización de sanciones del manual de convivencia.",
-    "B": "La preparación para pruebas estandarizadas de educación media.",
-    "C": "La repetición mecánica de fórmulas.",
-    "D": "La ubicación espacio-temporal y la organización progresiva de la acción del niño en su entorno."
+    "A": "El desarrollo de la lectoescritura convencional mediante el reconocimiento fonético y visual de grafemas direccionales.",
+    "B": "La memorización y reproducción del orden cronológico de las actividades diarias para habituar al niño a rutinas escolares rígidas.",
+    "C": "La estimulación del pensamiento geométrico formal y abstracto mediante la medición exacta de distancias corporales.",
+    "D": "La estructuración de las nociones de espacio, tiempo y esquema corporal, permitiendo al niño organizar su acción, ubicarse y orientar su cuerpo en el entorno."
   },
   "clave": "D",
-  "justificacion_clave": "D",
+  "justificacion_clave": "El nivel de transición, según los Lineamientos Curriculares, prioriza las experiencias lúdicas destinadas a la estructuración de la noción espacial y temporal (conceptos topológicos básicos y secuencia cronológica), esenciales para la autonomía y la ubicación del niño en el mundo.",
   "distractores_funcion": {
-    "A": "No corresponde al objetivo pedagógico descrito.",
-    "B": "Traslada indebidamente al preescolar una lógica de educación media.",
-    "C": "Confunde orientación espacio-temporal con repetición mecánica.",
+    "A": "Confunde el aprestamiento psicomotor con la enseñanza directa y formalizada de la lectoescritura, la cual no es el eje temático de esta actividad.",
+    "B": "Focaliza la actividad en un adiestramiento o habituación de conductas pasivas e instrumentales.",
+    "C": "Introduce una exigencia de formalización matemática y geométrica que desborda el desarrollo cognitivo evolutivo del nivel preescolar.",
     "D": "Clave correcta."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem reconoce aprendizajes propios de la infancia sin desvalorizar el juego."
+    "observaciones": "Usa vocabulario estándar de los lineamientos del Ministerio de Educación Nacional."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Vocabulario claro, distractores construidos en torno a la misma competencia pero con enfoques diferentes."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Motricidad, aprestamiento y ubicación espacio-temporal/EIP_B05_I02.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

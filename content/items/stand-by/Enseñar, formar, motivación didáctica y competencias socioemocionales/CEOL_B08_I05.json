@@ -1,45 +1,45 @@
 {
   "id_item": "CEOL_B08_I05",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Habilidades Blandas y Saber Ser/Convivir",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Habilidades blandas y Saber Ser/Convivir",
   "tema": "Enseñar, formar, motivación didáctica y competencias socioemocionales",
-  "subtema": "Desconocimiento del componente socioemocional de las competencias profesionales docentes.",
+  "subtema": "Competencias comportamentales docentes",
   "competencia": "Inteligencia emocional y convivencia profesional",
   "nivel_cognitivo": "APLICACION",
-  "dificultad_estimada": "BAJA",
-  "claim": "El evaluado comprende que las habilidades blandas no son accesorias, sino parte del desempeño profesional docente y de la convivencia escolar.",
-  "evidencia": "Selecciona la relación correcta entre habilidades blandas, inteligencia emocional y Saber Ser/Convivir.",
-  "tarea": "Clasificar habilidades comportamentales dentro del enfoque de competencias.",
-  "contexto": "Un docente debe gestionar conflictos, trabajar en equipo, comunicarse con respeto y manejar el estrés en situaciones complejas de aula. En una evaluación de competencias se pregunta qué dimensión profesional se está valorando.",
-  "enunciado": "Un docente debe gestionar conflictos, trabajar en equipo, comunicarse con respeto y manejar el estrés en situaciones complejas de aula. En una evaluación de competencias se pregunta qué dimensión profesional se está valorando.\n\n¿Qué tipo de inteligencia y qué componente de la competencia se evalúan principalmente?",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado clasifica las capacidades profesionales del docente en el marco de la evaluación de desempeño (Guía 31 del MEN).",
+  "evidencia": "Distingue las competencias comportamentales (comunicación, negociación, trabajo en equipo) de las competencias funcionales académicas y directivas.",
+  "tarea": "Clasificar un grupo de habilidades interpersonales y emocionales del docente de acuerdo con las categorías evaluativas de la Guía 31.",
+  "contexto": "En la evaluación anual de desempeño de un docente de aula, se valoran aspectos como su mediación en conflictos entre estudiantes, su participación asertiva en el trabajo de área con sus colegas y su manejo del estrés frente a situaciones críticas del aula.",
+  "enunciado": "De acuerdo con la normatividad vigente sobre evaluación de desempeño docente (Guía 31 del MEN), ¿en qué categoría se agrupan estas capacidades?",
   "opciones": {
-    "A": "Inteligencia lógico-matemática y componente exclusivo de Saber Conocer.",
-    "B": "Inteligencia emocional y componente de Saber Ser/Saber Convivir.",
-    "C": "Inteligencia espacial y componente técnico de manejo de recursos.",
-    "D": "Memoria enciclopédica y componente de repetición conceptual."
+    "A": "Competencias comportamentales.",
+    "B": "Competencias funcionales del área académica.",
+    "C": "Competencias funcionales del área administrativa.",
+    "D": "Requisitos mínimos de formación profesional."
   },
-  "clave": "B",
-  "justificacion_clave": "B",
+  "clave": "A",
+  "justificacion_clave": "La Guía 31 del MEN define que la evaluación de desempeño docente valora competencias funcionales (relativas al saber pedagógico y funciones de cargo) y competencias comportamentales (actitudes, valores, compromisos, comunicación, liderazgo, negociación y trabajo en equipo).",
   "distractores_funcion": {
-    "A": "Es incorrecta porque no se evalúa principalmente razonamiento lógico-matemático.",
-    "B": "Clave correcta.",
-    "C": "Es incorrecta porque no se trata de habilidades espaciales.",
-    "D": "Es incorrecta porque no se centra en memoria enciclopédica."
+    "A": "Clave correcta.",
+    "B": "Confunde las competencias actitudinales y relacionales con el desempeño propiamente académico de diseño curricular y planeación de aula.",
+    "C": "Asocia erróneamente el manejo de relaciones interpersonales con las tareas de gestión de recursos y cumplimiento de procesos administrativos de la escuela.",
+    "D": "Confunde los criterios de evaluación del desempeño en servicio con los requisitos de ingreso o títulos de la convocatoria pública."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem evalúa una competencia profesional desarrollable y no juzga rasgos personales fijos."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Vocabulario técnico del MEN."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Enseñar, formar, motivación didáctica y competencias socioemocionales/CEOL_B08_I05.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

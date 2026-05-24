@@ -7,39 +7,39 @@
   "competencia": "Aplicar el marco de formación integral en decisiones institucionales de currículo y convivencia.",
   "nivel_cognitivo": "ANÁLISIS",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado identifica que la formación integral exige acciones pedagógicas institucionalizadas en el PEI.",
-  "evidencia": "Distingue entre una visión centrada solo en contenidos y una que incorpora desarrollo personal, social y ciudadano.",
-  "tarea": "Seleccionar la obligación institucional más ajustada al enfoque de formación integral.",
-  "contexto": "En revisión del PEI se observa énfasis en calificación y áreas, pero ausencia de estrategias para competencias personales y sociales.",
-  "enunciado": "¿Qué ajuste responde mejor a la obligación de formación integral?",
+  "claim": "Valora la adecuación de actuaciones pedagógicas e institucionales bajo criterios normativos y constitucionales.",
+  "evidencia": "Selecciona la respuesta que demuestra la correcta aplicación del marco normativo y pedagógico colombiano.",
+  "tarea": "Analizar el caso y determinar la opción correcta conforme a derecho y principios pedagógicos.",
+  "contexto": "Durante la revisión del Proyecto Educativo Institucional (PEI), el equipo docente observa que el plan de estudios se enfoca exclusivamente en la obtención de calificaciones cuantitativas en áreas básicas, careciendo de estrategias articuladas para el desarrollo de competencias socioemocionales, éticas o de convivencia.",
+  "enunciado": "Durante la revisión del Proyecto Educativo Institucional (PEI), el equipo docente observa que el plan de estudios se enfoca exclusivamente en la obtención de calificaciones cuantitativas en áreas básicas, careciendo de estrategias articuladas para el desarrollo de competencias socioemocionales, éticas o de convivencia.\n\n¿Qué ajuste responde de manera más coherente a la obligación legal de brindar una formación integral?",
   "opciones": {
-    "A": "Mantener foco exclusivo en contenidos académicos y delegar la formación personal a la familia.",
-    "B": "Incorporar en el PEI acciones pedagógicas para toma de decisiones, trabajo colaborativo, responsabilidad y resolución de conflictos.",
-    "C": "Eliminar contenidos disciplinares para trabajar solo convivencia.",
-    "D": "Dejar la formación integral en actividades ocasionales no articuladas al currículo."
+    "A": "Integrar en la planeación curricular de todas las áreas objetivos de aprendizaje que promuevan la empatía, el trabajo en equipo, la toma de decisiones responsables y la resolución de conflictos.",
+    "B": "Crear una asignatura teórica e independiente sobre ética y convivencia, evaluada mediante pruebas de memoria conceptual para no afectar la intensidad horaria de las áreas básicas.",
+    "C": "Delegar el desarrollo de la formación ética y del carácter en actividades extracurriculares voluntarias y en la escuela de padres dictada en las jornadas no escolares.",
+    "D": "Mantener el enfoque cuantitativo y disciplinar vigente, justificando que la excelencia académica en áreas básicas fomenta indirectamente los valores ciudadanos."
   },
-  "clave": "B",
-  "justificacion_clave": "Es la única opción que integra formación integral como responsabilidad institucional, curricular y pedagógica.",
+  "clave": "A",
+  "justificacion_clave": "A",
   "distractores_funcion": {
-    "A": "Reducción indebida del rol escolar.",
-    "B": "Clave correcta.",
-    "C": "Falsa dicotomía entre formación académica e integral.",
-    "D": "Aplicación incompleta: acciones aisladas sin institucionalización."
+    "A": "Clave correcta.",
+    "B": "Error metodológico: aislar las competencias socioemocionales en una materia teórica memorística desnaturaliza el fin práctico y transversal del desarrollo integral.",
+    "C": "Desvinculación curricular: delegar la formación en actividades no obligatorias despoja a la institución de su rol formador sistemático en la jornada escolar.",
+    "D": "Reduccionismo pedagógico: asume erróneamente que el desempeño cognitivo en áreas básicas sustituye o genera de forma automática el desarrollo ético y social."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Ítem contextualizado en escenarios educativos/laborales generales, sin dependencias culturales específicas."
+    "observaciones": "Lenguaje formal, neutral y apegado a la jurisprudencia colombiana en materia de derechos y deberes educativos, libre de sesgos territoriales o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción directa, una sola tarea cognitiva y vocabulario funcional."
+    "observaciones": "Redacción estructurada con enunciados independientes y opciones de longitud y complejidad gramatical homogéneas."
   },
   "metadata_editorial": {
-    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "fuente": "content/items/stand-by/Formación integral, fines de la educación y desarrollo de la personalidad/NFL_B01_I01.json",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

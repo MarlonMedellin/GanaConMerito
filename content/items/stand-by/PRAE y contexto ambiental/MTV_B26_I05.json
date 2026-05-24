@@ -1,45 +1,45 @@
 {
   "id_item": "MTV_B26_I05",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "PRAE y contexto ambiental",
   "subtema": "Aplicación pedagógica",
-  "competencia": "Juicio pedagógico",
+  "competencia": "Contextualizar el PRAE a partir del diagnóstico de problemas ambientales del entorno local de la institución.",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "",
-  "enunciado": "Una institución rural copia un PRAE urbano sobre contaminación por tráfico vehicular, aunque su principal problema local es la contaminación de fuentes hídricas por prácticas agrícolas.\n\n¿Qué criterio debería corregir?",
+  "claim": "El evaluado analiza la pertinencia territorial y la contextualización del PRAE frente a la adaptación de modelos ajenos.",
+  "evidencia": "Selecciona el criterio pedagógico que orienta la reformulación del proyecto a partir del diagnóstico de problemas locales.",
+  "tarea": "Identificar la acción correctiva para adecuar un PRAE descontextualizado a la realidad rural de la institución.",
+  "contexto": "Una institución educativa ubicada en una zona rural de vocación agrícola adoptó textualmente el diseño del PRAE de un colegio urbano centrado en la contaminación por tráfico vehicular y ruido. Sin embargo, la comunidad rural enfrenta problemas urgentes como la contaminación por agroquímicos y la deforestación de microcuencas.",
+  "enunciado": "Frente a esta situación, ¿cuál es la acción más pertinente para contextualizar el proyecto de acuerdo con la normatividad nacional de educación ambiental?",
   "opciones": {
-    "A": "Regionalización y pertinencia contextual.",
-    "B": "Memorización literal del proyecto de otra institución.",
-    "C": "Desconocimiento del territorio.",
-    "D": "Eliminación de la educación ambiental."
+    "A": "Rediseñar el PRAE a partir de una lectura del territorio local que identifique los problemas de la actividad agrícola e integre prácticas sostenibles en el currículo.",
+    "B": "Continuar con el proyecto urbano centrándose únicamente en la teoría general de la contaminación del aire para cumplir con el programa nacional de educación.",
+    "C": "Solicitar a las autoridades ambientales municipales que reubiquen las fuentes hídricas afectadas para no alterar el currículo planificado por la institución.",
+    "D": "Eliminar el proyecto transversal y trasladar la temática ambiental a una unidad teórica exclusiva del área de ciencias naturales."
   },
   "clave": "A",
-  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "justificacion_clave": "La Política Nacional de Educación Ambiental establece que el PRAE debe responder al diagnóstico contextualizado del territorio donde se ubica la escuela para generar aprendizajes significativos y pertinentes.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Distractor funcional.",
-    "C": "Distractor funcional.",
-    "D": "Distractor funcional."
+    "B": "Prioriza la homogeneización y el enciclopedismo teórico sobre la relevancia ambiental local.",
+    "C": "Representa una salida absurda que desplaza la responsabilidad pedagógica de adaptación al entorno físico real.",
+    "D": "Contradice la transversalidad obligatoria del PRAE establecida en el Decreto 1743 de 1994."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+    "observaciones": "Evita sesgos de género o de procedencia; plantea una problemática rural típica sin estigmatizar."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Vocabulario claro y estructuración lógica de opciones."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/PRAE y contexto ambiental/MTV_B26_I05.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

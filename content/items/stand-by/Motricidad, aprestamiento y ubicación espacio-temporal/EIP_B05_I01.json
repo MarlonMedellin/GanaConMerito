@@ -1,44 +1,44 @@
 {
   "id_item": "EIP_B05_I01",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Educación inicial y preescolar",
-  "tema": "Desarrollo infantil",
-  "subtema": "Motricidad y aprestamiento",
+  "area": "Pedagogía y didáctica infantil",
+  "tema": "Desarrollo psicomotor en preescolar",
+  "subtema": "Propósito del desarrollo psicomotor",
   "competencia": "Interpretar el propósito pedagógico de experiencias motrices y espacio-temporales en preescolar.",
-  "nivel_cognitivo": "ANÁLISIS",
+  "nivel_cognitivo": "COMPRENSIÓN",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado reconoce que estas experiencias preparan bases cognitivas y socioemocionales sin escolarización prematura.",
-  "evidencia": "Selecciona la opción que vincula motricidad/aprestamiento con transición armónica a aprendizajes posteriores.",
-  "tarea": "Elegir la justificación pedagógica más adecuada de actividades motrices en preescolar.",
+  "claim": "El evaluado fundamenta el valor neurocognitivo del desarrollo psicomotor y nociones espacio-temporales como base para la lectoescritura.",
+  "evidencia": "Identifica que las experiencias psicomotrices, el esquema corporal y espacial son pilares preparatorios indispensables para los aprendizajes formales.",
+  "tarea": "Seleccionar el argumento pedagógico que justifica dar prioridad a las experiencias motrices y corporales sobre la escritura formal prematura en preescolar.",
   "contexto": "Una familia cuestiona que en preescolar se prioricen juegos de movimiento, lateralidad y orientación espacial antes de escritura formal.",
-  "enunciado": "¿Cuál es el propósito principal de esas experiencias?",
+  "enunciado": "¿Cuál es el propósito pedagógico principal de estas experiencias?",
   "opciones": {
-    "A": "Retrasar el aprendizaje formal porque en preescolar no se enseña contenido.",
-    "B": "Favorecer desarrollo integral, coordinación y nociones espacio-temporales como base para aprendizajes posteriores.",
-    "C": "Reemplazar juego por pruebas escritas desde edades tempranas.",
-    "D": "Anticipar contenidos de educación media para mejorar competitividad."
+    "A": "Compensar la falta de actividades académicas formales mediante dinámicas puramente recreativas destinadas al esparcimiento.",
+    "B": "Estimular el desarrollo psicomotor, el esquema corporal y las nociones espacio-temporales como fundamentos neurocognitivos indispensables para el posterior aprendizaje de la lectura y escritura.",
+    "C": "Acelerar la maduración psicofisiológica del niño para lograr una escolarización temprana en matemáticas y ciencias exactas.",
+    "D": "Adaptar el comportamiento infantil a rutinas sedentarias que faciliten el control disciplinario en los grados de educación básica."
   },
   "clave": "B",
-  "justificacion_clave": "Expresa el enfoque de desarrollo integral y preparación gradual propio del nivel preescolar.",
+  "justificacion_clave": "La pedagogía infantil y la neuroeducación demuestran que el desarrollo psicomotor (esquema corporal, lateralidad, orientación espacial y temporal) es el soporte sobre el cual se construyen los procesos cognitivos abstractos, entre ellos la decodificación lectoescritora y el pensamiento lógico-matemático.",
   "distractores_funcion": {
-    "A": "Desconoce valor pedagógico del juego y aprestamiento.",
+    "A": "Asume erróneamente que las actividades de juego y psicomotricidad en preescolar carecen de intención pedagógica y son solo recreativas.",
     "B": "Clave correcta.",
-    "C": "Escolarización prematura impropia del nivel.",
-    "D": "Desfase del desarrollo evolutivo."
+    "C": "Plantea una prisa evolutiva en el preescolar que contradice el respeto a los ritmos de desarrollo infantil definidos normativamente.",
+    "D": "Plantea un modelo tradicional disciplinante y sedentario, opuesto a los principios pedagógicos del nivel de preescolar."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Escenarios generales y lenguaje controlado; sin exigencias extracontextuales no declaradas."
+    "observaciones": "Basado en los Lineamientos Curriculares para la Educación Preescolar en Colombia."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción directa, única tarea cognitiva y opciones paralelas."
+    "observaciones": "Redacción de fácil lectura, sin dobles negaciones y vocabulario didáctico común."
   },
   "metadata_editorial": {
     "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

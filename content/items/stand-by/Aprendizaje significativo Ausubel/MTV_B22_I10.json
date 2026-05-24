@@ -10,21 +10,21 @@
   "claim": "Distingue prácticas de enseñanza memorística de prácticas que promueven integración sustantiva con saberes previos y comprensión con sentido.",
   "evidencia": "Selecciona la opción que mejor explica la decisión pedagógica coherente con el aprendizaje significativo en el caso planteado.",
   "tarea": "Inferir, a partir del caso, la condición didáctica que permite aprendizaje significativo según Ausubel.",
-  "contexto": "",
-  "enunciado": "Desde el aprendizaje significativo, ¿cuál debe ser el papel del docente al introducir un nuevo contenido?",
+  "contexto": "En una sesión de planeación, el coordinador académico indica que la enseñanza debe centrarse en la transmisión clara y jerárquica de contenidos acabados, mientras que un docente sugiere que se requiere considerar la estructura cognitiva del estudiante y sus saberes previos.",
+  "enunciado": "De acuerdo con los planteamientos del aprendizaje significativo de Ausubel, ¿cuál debe ser el rol principal del docente al introducir un nuevo contenido?",
   "opciones": {
-    "A": "Transmitirlo sin preguntar nada sobre lo que los estudiantes ya saben.",
-    "B": "Conectar el nuevo contenido con saberes previos, organizarlo, darle sentido y proponer experiencias de aplicación.",
-    "C": "Exigir copia literal sin explicación.",
-    "D": "Evitar toda mediación para que el estudiante aprenda solo."
+    "A": "Presentar los contenidos de forma abstracta e independiente de los conocimientos previos para evitar interferencias cognitivas.",
+    "B": "Actuar como mediador que organiza el material con estructura lógica, activa saberes previos y facilita la asimilación sustantiva de la información.",
+    "C": "Abstenerse de intervenir y estructurar el contenido para permitir que el estudiante descubra los significados de forma autónoma.",
+    "D": "Diseñar estímulos y contingencias de refuerzo que aseguren la reproducción exacta y el condicionamiento del nuevo comportamiento conceptual."
   },
   "clave": "B",
-  "justificacion_clave": "El docente media entre estructura previa, nuevo contenido, sentido y aplicación.",
+  "justificacion_clave": "El docente debe mediar de manera intencionada presentando el contenido estructurado de forma lógicamente significativa y, simultáneamente, activando e identificando los saberes previos del estudiante (psicológicamente significativos) para permitir la conexión y asimilación sustantiva del nuevo conocimiento.",
   "distractores_funcion": {
-    "A": "Ignora presaberes.",
+    "A": "Representa un error pedagógico al proponer un aislamiento del conocimiento nuevo de los presaberes.",
     "B": "Clave correcta.",
-    "C": "Reduce el aprendizaje a copia.",
-    "D": "El aprendizaje significativo requiere mediación intencionada."
+    "C": "Señala un enfoque de descubrimiento puro que contradice la importancia de la enseñanza expositiva y organizada defendida por Ausubel.",
+    "D": "Corresponde al enfoque conductista clásico de control de conductas."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I10.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

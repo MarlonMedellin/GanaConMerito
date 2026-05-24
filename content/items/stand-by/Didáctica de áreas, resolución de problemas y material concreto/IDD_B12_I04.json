@@ -3,42 +3,42 @@
   "estado": "LISTO_PARA_BANCO",
   "area": "Didáctica disciplinar",
   "tema": "Didáctica de áreas, resolución de problemas y material concreto",
-  "subtema": "Material concreto y construcción conceptual",
-  "competencia": "Selecciona estrategias didácticas de resolución de problemas apoyadas en material concreto y mediación pedagógica.",
+  "subtema": "Uso Pedagógico de Recursos Didácticos",
+  "competencia": "Evalúa y selecciona recursos y materiales didácticos concretos integrándolos eficazmente en la mediación pedagógica.",
   "nivel_cognitivo": "APLICACIÓN",
   "dificultad_estimada": "MEDIA",
-  "claim": "Reconoce la alternativa pedagógica o institucional más adecuada según el criterio técnico evaluado en el caso.",
-  "evidencia": "Selecciona una única opción defendible frente a distractores plausibles en función del constructo.",
-  "tarea": "Analizar el caso y elegir la decisión más pertinente conforme al enfoque del ítem.",
-  "contexto": "Un docente lleva material concreto al aula, pero lo usa solo para decorar la mesa y entretener a los estudiantes, sin preguntas, sin propósito conceptual y sin relación con la actividad de aprendizaje.",
-  "enunciado": "Un docente lleva material concreto al aula, pero lo usa solo para decorar la mesa y entretener a los estudiantes, sin preguntas, sin propósito conceptual y sin relación con la actividad de aprendizaje.\n\n¿Cuándo el material concreto cumple una función didáctica real?",
+  "claim": "Identifica las condiciones de mediación y estructuración didáctica que validan el uso pedagógico de materiales concretos.",
+  "evidencia": "Distingue el uso reflexivo y estructurado de materiales dentro de secuencias de abstracción matemática frente a posturas de juego libre o memorización visual.",
+  "tarea": "Determinar los criterios que validan la función didáctica real del material concreto a partir de una crítica sobre su uso ineficaz en el aula.",
+  "contexto": "En una reunión de área, un docente sostiene que el uso de material concreto en el aula de primaria es ineficaz porque, al implementarlo con bloques lógicos para el tema de fracciones, los estudiantes jugaron a construir torres y no se evidenció aprendizaje conceptual del tema.",
+  "enunciado": "En una reunión de área, un docente sostiene que el uso de material concreto en el aula de primaria es ineficaz porque, al implementarlo con bloques lógicos para el tema de fracciones, los estudiantes jugaron a construir torres y no se evidenció aprendizaje conceptual del tema. Desde los referentes pedagógicos sobre mediación y didáctica matemática, el argumento del docente es erróneo porque el material concreto cumple una función de aprendizaje real cuando:",
   "opciones": {
-    "A": "Cuando permite representar, manipular, comparar y construir relaciones vinculadas con el concepto que se quiere aprender.",
-    "B": "Cuando se usa únicamente para mantener ocupados a los estudiantes.",
-    "C": "Cuando reemplaza por completo la mediación del docente.",
-    "D": "Cuando no tiene relación con el propósito de clase."
+    "A": "Se enmarca en una secuencia didáctica estructurada con preguntas mediadoras que orientan al estudiante a pasar de la manipulación física (nivel concreto) a la abstracción de propiedades y relaciones (nivel pictórico y simbólico).",
+    "B": "Reemplaza las explicaciones teóricas y la ejercitación en el cuaderno, permitiendo que el estudiante descubra de manera autónoma e intuitiva las propiedades de la fracción sin intervención externa del docente.",
+    "C": "Se introduce en el aula al final del periodo académico como una actividad recreativa y motivacional para los estudiantes que terminaron con éxito las evaluaciones escritas formales.",
+    "D": "Presenta una estructura física exacta que coincide con los modelos matemáticos abstractos, garantizando que el estudiante memorice visualmente la representación del concepto antes de realizar cálculos."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "El material concreto no es didáctico por sí mismo. Su valor pedagógico depende de la mediación docente y de su integración en una secuencia que acompañe la transición cognitiva de lo concreto a lo abstracto (Bruner).",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque mantener ocupados no equivale a aprender.",
-    "C": "Es incorrecta porque el recurso necesita mediación.",
-    "D": "Es incorrecta porque un recurso desvinculado pierde valor didáctico."
+    "B": "Postura de constructivismo ingenuo: atribuye falsamente al material el poder de autoinstrucción, minimizando el rol indispensable del docente como mediador y sistematizador del saber.",
+    "C": "Uso recreativo o periférico: relega el material manipulativo a un refuerzo lúdico o un premio académico, vaciándolo de su función como andamiaje del aprendizaje conceptual.",
+    "D": "Sesgo empirista: presupone que el conocimiento radica en las características físicas externas del material y que basta con la percepción o la copia visual para asimilar el concepto abstracto."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estándar y contexto institucional general sin sesgos culturales innecesarios."
+    "observaciones": "Evalúa conceptos pedagógicos universales aplicados al contexto educativo colombiano."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura y exigencia."
+    "observaciones": "Redacción estructurada con base en distractores del mismo tipo sintáctico."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I04.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

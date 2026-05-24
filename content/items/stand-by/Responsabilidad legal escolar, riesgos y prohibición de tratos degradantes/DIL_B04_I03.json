@@ -11,20 +11,20 @@
   "evidencia": "Selecciona una actuación que evita revictimización y activa ruta externa.",
   "tarea": "Diferenciar atención escolar inicial de investigación penal o administrativa.",
   "contexto": "En una institución educativa aparece la presunción de un delito sexual o de venta de narcóticos que involucra a estudiantes. Algunos miembros del equipo proponen interrogar a los menores y adelantar una investigación interna antes de reportar.",
-  "enunciado": "En una institución educativa aparece la presunción de un delito sexual o de venta de narcóticos que involucra a estudiantes. Algunos miembros del equipo proponen interrogar a los menores y adelantar una investigación interna antes de reportar.\n\n¿Por qué esta actuación no es adecuada?",
+  "enunciado": "Ante la presunción de una situación tipo III (comisión de presuntos delitos que afecten la integridad de los menores), ¿por qué la institución educativa debe abstenerse de realizar investigaciones internas e interrogatorios exhaustivos antes de reportar?",
   "opciones": {
-    "A": "Porque ante una situación tipo III la escuela debe proteger, garantizar atención inmediata si procede y reportar a las autoridades competentes, sin investigar delitos por cuenta propia.",
-    "B": "Porque la escuela debe ocultar el caso para proteger su imagen institucional.",
-    "C": "Porque los presuntos delitos escolares siempre se resuelven con una anotación en el observador.",
-    "D": "Porque ningún caso grave debe salir del comité de convivencia."
+    "A": "Porque la institución carece de facultades judiciales de investigación y debe priorizar la protección inmediata, la atención médica y el reporte inmediato a las autoridades competentes para evitar la revictimización y la alteración de pruebas.",
+    "B": "Porque el manual de convivencia escolar tiene prevalencia sobre la legislación penal, por lo que toda falta debe agotarse internamente antes de acudir a la justicia ordinaria.",
+    "C": "Porque las directivas deben verificar plenamente la veracidad de la presunta comisión del delito mediante un careo entre los estudiantes involucrados antes de trasladar el caso.",
+    "D": "Porque la activación de la ruta externa de protección solo procede si las familias de los menores involucrados autorizan formalmente el reporte ante el ICBF o la Fiscalía."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "De acuerdo con la Ley 1620 de 2013, ante situaciones tipo III, la institución debe activar la ruta de atención integral de inmediato. Realizar careos, interrogatorios judiciales o investigaciones de delitos desborda la competencia escolar, puede alterar elementos probatorios y vulnerar el debido proceso, revictimizando a los menores.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque ocultar vulnera derechos y deberes de protección.",
-    "C": "Es incorrecta porque una anotación escolar no sustituye ruta externa.",
-    "D": "Es incorrecta porque los casos tipo III exigen conocimiento de autoridades competentes."
+    "B": "Incurre en un grave error de jerarquía normativa, pretendiendo situar el manual de convivencia por encima de la ley penal y constitucional.",
+    "C": "Propone un procedimiento pedagógico peligroso (careo) que puede revictimizar a las víctimas y vulnerar derechos constitucionales.",
+    "D": "Error de suponer que el deber legal de reporte de delitos a menores está condicionado a la autorización familiar."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": false
   }

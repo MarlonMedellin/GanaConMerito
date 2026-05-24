@@ -1,6 +1,6 @@
 {
   "id_item": "MTV_B18_I02",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "Tipos de currículo",
   "subtema": "Aplicación pedagógica",
@@ -14,17 +14,17 @@
   "enunciado": "Una institución organiza sus planes atendiendo leyes, decretos, lineamientos, estándares y orientaciones emitidas por el Ministerio de Educación y demás autoridades competentes.\n\n¿De qué tipo de currículo se está hablando principalmente?",
   "opciones": {
     "A": "Currículo oficial.",
-    "B": "Currículo oculto exclusivamente emocional.",
-    "C": "Currículo nulo.",
-    "D": "Currículo improvisado sin norma."
+    "B": "Currículo oculto.",
+    "C": "Currículo operacional.",
+    "D": "Currículo extracurricular."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "El currículo oficial (o formal escrito) está constituido por los documentos de planeación, lineamientos nacionales, mallas curriculares y planes de estudio institucionalmente aprobados que definen las metas y contenidos de enseñanza formalmente establecidos por las autoridades del plantel y el Estado.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "El currículo oculto no se define por normas oficiales.",
-    "C": "El currículo nulo se refiere a contenidos omitidos.",
-    "D": "La situación describe regulación formal, no improvisación."
+    "B": "Incorrecto. El currículo oculto comprende aprendizajes implícitos no estructurados en planes ni lineamientos formales.",
+    "C": "Incorrecto. El currículo operacional se refiere a lo que el docente efectivamente enseña en el aula cotidianamente, diferenciándose de la estructuración documental oficial.",
+    "D": "Incorrecto. El currículo extracurricular comprende actividades y clubes voluntarios complementarios al plan de estudios obligatorio."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Tipos de currículo/MTV_B18_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

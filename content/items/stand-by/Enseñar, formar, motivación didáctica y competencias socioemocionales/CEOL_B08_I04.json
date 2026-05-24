@@ -1,45 +1,45 @@
 {
   "id_item": "CEOL_B08_I04",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Motivación Didáctica",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Motivación didáctica",
   "tema": "Enseñar, formar, motivación didáctica y competencias socioemocionales",
-  "subtema": "Desconexión entre contenido matemático y sentido de uso para el estudiante.",
+  "subtema": "Contextualización del aprendizaje",
   "competencia": "Contextualización del aprendizaje",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende que la pregunta por el sentido del aprendizaje es una oportunidad para contextualizar, problematizar y mostrar usos reales o posibles del conocimiento.",
-  "evidencia": "Selecciona una actuación docente que ajusta la metodología y no sanciona la pregunta.",
-  "tarea": "Analizar una situación de aula y seleccionar una respuesta metodológica motivadora.",
-  "contexto": "Durante una clase de matemáticas, un estudiante interrumpe y pregunta: “¿Para qué me sirve despejar una ecuación de primer grado en la vida real?”. El docente nota que varios compañeros comparten la misma inquietud.",
-  "enunciado": "Durante una clase de matemáticas, un estudiante interrumpe y pregunta: “¿Para qué me sirve despejar una ecuación de primer grado en la vida real?”. El docente nota que varios compañeros comparten la misma inquietud.\n\n¿Qué debe ajustar el docente en su metodología?",
+  "claim": "El evaluado diseña ajustes didácticos para dotar de sentido práctico y contextual el aprendizaje de conceptos abstractos.",
+  "evidencia": "Selecciona estrategias didácticas que vinculan los conceptos curriculares con situaciones problema reales o modeladas.",
+  "tarea": "Determinar la intervención didáctica para atender a la inquietud sobre el sentido práctico de las matemáticas.",
+  "contexto": "Durante una clase de matemáticas en la que se enseña a despejar ecuaciones de primer grado, un estudiante interrumpe y pregunta de forma respetuosa: '¿Para qué sirve aprender esto en la vida real?'. Varios compañeros apoyan la pregunta y muestran desinterés por los ejercicios mecánicos del tablero.",
+  "enunciado": "¿Qué ajuste metodológico del docente responde de manera adecuada a esta situación?",
   "opciones": {
-    "A": "Incorporar situaciones problema, ejemplos contextualizados, modelación y aplicaciones donde despejar ecuaciones permita tomar decisiones o resolver necesidades concretas.",
-    "B": "Sancionar la pregunta porque interrumpe la clase y demuestra falta de interés.",
-    "C": "Responder que no todo debe servir para algo y continuar con ejercicios mecánicos sin explicación.",
-    "D": "Eliminar las ecuaciones del currículo para evitar preguntas difíciles."
+    "A": "Vincular el aprendizaje de las ecuaciones a situaciones problema de la vida cotidiana o de otras ciencias, mediante la modelación matemática de fenómenos reales que evidencien la utilidad práctica del concepto.",
+    "B": "Mantener la ejercitación abstracta y repetitiva, argumentando que la matemática formal no tiene aplicaciones prácticas en la cotidianidad y su valor radica únicamente en la aprobación del examen.",
+    "C": "Suspender de inmediato el desarrollo curricular del tema y sustituirlo por dinámicas lúdicas no matemáticas para mantener el interés y la motivación del grupo.",
+    "D": "Sancionar pedagógicamente la intervención del estudiante por considerarla un acto de indisciplina que cuestiona la autoridad del maestro e interrumpe el ritmo del aula."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "La motivación didáctica depende de que el aprendizaje tenga sentido (Ausubel). Al modelar problemas cotidianos (finanzas personales, proyecciones simples, mezclas) mediante ecuaciones, los estudiantes comprenden el valor instrumental de la matemática para la toma de decisiones.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque sanciona la curiosidad.",
-    "C": "Es incorrecta porque ignora la necesidad de sentido en el aprendizaje.",
-    "D": "Es incorrecta porque elimina el contenido en lugar de contextualizarlo."
+    "B": "Representa el error de defender un formalismo rígido desvinculado del contexto, perpetuando la desmotivación en matemáticas.",
+    "C": "Cae en un activismo vacío que sacrifica el contenido curricular en vez de dotarlo de sentido conceptual y aplicado.",
+    "D": "Muestra una reacción autoritaria e inasertiva que anula la curiosidad intelectual del estudiante y deteriora el clima del aula."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem valora la pregunta del estudiante y no exige dominio matemático avanzado; evalúa una decisión metodológica."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Redacción pedagógica estándar."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Enseñar, formar, motivación didáctica y competencias socioemocionales/CEOL_B08_I04.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

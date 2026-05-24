@@ -1,6 +1,6 @@
 {
   "id_item": "DIL_B06_I04",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Participación significativa",
   "tema": "Participación infantil, agencia y Convención sobre los Derechos del Niño",
   "subtema": "Diseño de espacios de participación donde los estudiantes son consultados solo de manera aparente y sin retroalimentación o incidencia.",
@@ -13,18 +13,18 @@
   "contexto": "Una escuela aplica una encuesta a estudiantes sobre convivencia, pero nunca les explica el propósito, no les devuelve resultados y no usa sus opiniones para ninguna decisión. Luego afirma que ya garantizó participación estudiantil.",
   "enunciado": "Una escuela aplica una encuesta a estudiantes sobre convivencia, pero nunca les explica el propósito, no les devuelve resultados y no usa sus opiniones para ninguna decisión. Luego afirma que ya garantizó participación estudiantil.\n\n¿Qué condición falta para que la participación sea significativa?",
   "opciones": {
-    "A": "Que los estudiantes solo firmen asistencia sin conocer el tema.",
-    "B": "Que reciban información comprensible, puedan expresar su opinión de forma segura, sean escuchados y reciban retroalimentación sobre cómo se consideraron sus aportes.",
-    "C": "Que los adultos decidan todo antes de consultar a los estudiantes.",
-    "D": "Que la participación se limite a posar en fotografías institucionales."
+    "A": "Limitar la recolección de información a cuestionarios estandarizados cerrados, registrando de forma numérica la asistencia como indicador de cobertura.",
+    "B": "Garantizar que la consulta sea voluntaria e informada, proveer canales seguros y respetuosos de expresión, sistematizar sus aportes y retroalimentar a los estudiantes sobre la incidencia real de sus propuestas en las decisiones del centro.",
+    "C": "Proceder a la toma de decisiones por consenso exclusivo de los adultos directivos para agilizar la gestión escolar antes de socializar los resultados.",
+    "D": "Divulgar los registros de participación del alumnado a través de medios de comunicación y redes sociales del colegio con fines publicitarios."
   },
   "clave": "B",
-  "justificacion_clave": "B",
+  "justificacion_clave": "Para que la participación infantil sea auténtica y significativa (de acuerdo con el Comité de los Derechos del Niño de la ONU y Roger Hart), no basta con la mera recolección pasiva de información (como aplicar una encuesta). Se requiere que los niños estén plenamente informados del propósito del proceso escolar, que puedan expresar libremente sus puntos de vista en un entorno de confianza y que se les brinde una posterior devolución y retroalimentación que les permita constatar de qué manera sus aportes influyeron en la planeación o decisiones del plantel.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque firmar asistencia no equivale a participar.",
+    "A": "Incorrecto. Considerar la asistencia o la firma de planillas como equivalente a una participación genuina reduce un proceso democrático y formativo a un simple trámite administrativo de control de cobertura.",
     "B": "Clave correcta.",
-    "C": "Es incorrecta porque consulta sin incidencia real reproduce adultocentrismo.",
-    "D": "Es incorrecta porque la fotografía institucional puede ser participación decorativa."
+    "C": "Incorrecto. Excluir a los estudiantes de la toma de decisiones argumentando agilidad administrativa refuerza modelos adultocéntricos y desconoce los mecanismos de participación escolar vigentes (como el gobierno escolar estipulado por la Ley 115).",
+    "D": "Incorrecto. Utilizar el registro de la actividad con fines publicitarios institucionales puede incurrir en participación simbólica o manipulada, la cual prioriza el beneficio reputacional del colegio sobre los procesos reales de agenciamiento del alumnado."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Participación infantil, agencia y Convención sobre los Derechos del Niño/DIL_B06_I04.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

@@ -11,20 +11,20 @@
   "evidencia": "Selecciona una actuación confidencial y respetuosa en el manejo de información sensible.",
   "tarea": "Elegir una respuesta ética ante un caso sensible de derechos.",
   "contexto": "Un docente conoce un posible caso de abandono y maltrato. Para que el grupo “aprenda una lección”, piensa mencionar públicamente el caso del estudiante en clase y pedir opiniones de sus compañeros.",
-  "enunciado": "Un docente conoce un posible caso de abandono y maltrato. Para que el grupo “aprenda una lección”, piensa mencionar públicamente el caso del estudiante en clase y pedir opiniones de sus compañeros.\n\n¿Cuál actuación es correcta?",
+  "enunciado": "Teniendo en cuenta el deber de confidencialidad y protección de datos sensibles en el marco escolar, ¿cuál es la actuación correcta que debe seguir el docente?",
   "opciones": {
-    "A": "Exponer el caso ante el grupo para generar presión social.",
-    "B": "Publicar detalles del caso en el chat de familias para buscar ayuda.",
-    "C": "Manejar la información con reserva, proteger la dignidad del estudiante, informar por canales institucionales y activar la ruta competente.",
-    "D": "Hacer una votación para decidir si el caso merece atención."
+    "A": "Presentar el caso en el aula omitiendo el nombre real del estudiante, con el fin de debatir con el grupo las consecuencias del maltrato familiar.",
+    "B": "Citar a un comité extraordinario con la junta de padres del curso para buscar conjuntamente una solución habitacional temporal para el estudiante.",
+    "C": "Manejar la situación bajo estricta reserva institucional, registrar los hechos objetivos, y canalizar el reporte a través de los directivos u orientador para activar la ruta de protección.",
+    "D": "Abstenerse de registrar o reportar la situación a terceros hasta que el estudiante o su representante legal autoricen la divulgación del caso."
   },
   "clave": "C",
-  "justificacion_clave": "C",
+  "justificacion_clave": "La información sobre vulneraciones de derechos es de carácter reservado y sensible. El docente debe registrar de forma objetiva y reportar internamente por los canales de la ruta, garantizando que solo los profesionales competentes y las autoridades de protección accedan a los datos para salvaguardar la intimidad del menor.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque vulnera intimidad y dignidad.",
-    "B": "Es incorrecta porque divulga datos sensibles.",
+    "A": "Error pedagógico de ventilar casos reales en el aula, puesto que, aun omitiendo el nombre, el estudiante puede ser fácilmente identificado y estigmatizado.",
+    "B": "Propone involucrar a agentes externos (padres de familia del curso) que no tienen competencia legal, vulnerando el debido proceso y la confidencialidad.",
     "C": "Clave correcta.",
-    "D": "Es incorrecta porque los derechos no se deciden por votación del grupo."
+    "D": "Confunde el deber de reserva con la omisión de denuncia o reporte, el cual es obligatorio de oficio cuando se sospecha de maltrato infantil."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I04.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": false
   }

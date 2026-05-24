@@ -1,44 +1,44 @@
 {
   "id_item": "MTV_B23_I01",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Aprendizaje y evaluación",
-  "tema": "Conflicto cognitivo",
+  "area": "Pedagogía y currículo",
+  "tema": "Error, conflicto cognitivo y reestructuración de esquemas",
   "subtema": "Error productivo y reestructuración de esquemas",
-  "competencia": "Usar el error como evidencia para promover cambio conceptual.",
-  "nivel_cognitivo": "ANÁLISIS-APLICACIÓN",
-  "dificultad_estimada": "ALTA",
-  "claim": "El evaluado identifica intervenciones que transforman errores persistentes en oportunidades de reestructuración conceptual.",
-  "evidencia": "Distingue una secuencia didáctica que explicita concepciones previas, genera contraste y consolida nueva explicación.",
-  "tarea": "Elegir la intervención docente con mayor potencial de cambio conceptual frente a un error recurrente.",
-  "contexto": "En ciencias, varios estudiantes afirman que los objetos pesados caen más rápido que los livianos en cualquier situación.",
-  "enunciado": "¿Qué intervención favorece mejor la reestructuración del esquema previo?",
+  "competencia": "Diseñar secuencias didácticas de contrastación empírica para la resolución de errores conceptuales en ciencias.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado selecciona intervenciones que promueven el cambio conceptual mediante el planteamiento y la contrastación empírica de hipótesis escolares.",
+  "evidencia": "Elige la secuencia didáctica que activa el contraste experimental, la discusión y la reformulación de explicaciones.",
+  "tarea": "Proponer la secuencia didáctica idónea para guiar la reestructuración conceptual sobre caída libre de cuerpos.",
+  "contexto": "En clase de física, varios estudiantes afirman de forma persistente que los objetos pesados caen más rápido que los livianos debido a la gravedad de la Tierra. El docente busca diseñar una actividad que confronte de manera directa esta concepción errónea.",
+  "enunciado": "¿Cuál de las siguientes secuencias didácticas es la más adecuada para generar un conflicto cognitivo efectivo y promover la reestructuración conceptual?",
   "opciones": {
-    "A": "Corregir de inmediato y pedir memorizar la regla correcta para la próxima prueba.",
-    "B": "Evitar el tema para no reforzar ideas erróneas y avanzar en el programa.",
-    "C": "Plantear una predicción, realizar una prueba controlada, contrastar resultados con la explicación inicial y guiar una reformulación argumentada.",
-    "D": "Asignar una lectura adicional y evaluar con preguntas de definición al final de clase."
+    "A": "Solicitar a los estudiantes predecir la caída de una hoja de papel y una moneda; luego, arrojarlas simultáneamente primero por separado y luego repitiendo el experimento arrojando la hoja de papel arrugada en forma de bola apretada, analizando el papel del aire en la resistencia y reformulando colectivamente su hipótesis.",
+    "B": "Presentar en el tablero la ecuación matemática de la caída libre de Galileo Galilei donde la masa del cuerpo no afecta el tiempo de caída, obligándolos a realizar ejercicios de despeje de variables físicas.",
+    "C": "Enviar un enlace de un video donde se muestra un experimento de caída de objetos en una cámara de vacío en la Luna, solicitándoles que redacten un resumen individual para evaluar la comprensión del tema.",
+    "D": "Organizar un debate en el salón de clase donde los estudiantes con mejor rendimiento expongan los postulados de Newton para corregir conceptualmente a los compañeros rezagados."
   },
-  "clave": "C",
-  "justificacion_clave": "Activa conflicto cognitivo con evidencia observable y guía reconstrucción explicativa, no solo corrección superficial.",
+  "clave": "A",
+  "justificacion_clave": "La secuencia didáctica A permite evidenciar empíricamente la falla de la regla intuitiva original (el papel arrugado y la moneda caen al mismo tiempo) aislando la variable del roce del aire, forzando la acomodación y reformulación del esquema conceptual explicativo a partir de un fenómeno concreto y cercano.",
   "distractores_funcion": {
-    "A": "Error frecuente: reemplaza comprensión por memorización.",
-    "B": "Evitación pedagógica: elimina oportunidad de cambio conceptual.",
-    "C": "Clave correcta.",
-    "D": "Aplicación parcial: agrega información sin confrontar esquema previo."
+    "A": "Clave correcta.",
+    "B": "Se refugia en la abstracción matemática desconectada del fenómeno cotidiano, sin abordar el obstáculo de la intuición del aire.",
+    "C": "Utiliza recursos indirectos pasivos (videos) que no involucran la experimentación directa ni la mediación interactiva en el aula escolar.",
+    "D": "Genera exclusión y delegación pedagógica entre pares que no garantiza la autoevaluación reflexiva de las concepciones previas individuales."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Contexto escolar general, sin referencias culturales excluyentes ni requisitos externos no declarados."
+    "observaciones": "Contexto experimental común."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado directo, vocabulario pedagógico de uso común y una sola tarea cognitiva por ítem."
+    "observaciones": "Redacción estructurada con opciones de longitud semejante."
   },
   "metadata_editorial": {
     "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

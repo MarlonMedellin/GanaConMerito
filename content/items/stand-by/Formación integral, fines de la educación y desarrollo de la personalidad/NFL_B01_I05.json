@@ -1,45 +1,45 @@
 {
   "id_item": "NFL_B01_I05",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Formación integral",
   "tema": "Formación integral, fines de la educación y desarrollo de la personalidad",
   "subtema": "Modelo escolar centrado exclusivamente en memorización de contenidos, sin desarrollo humano, ético, social y ciudadano.",
   "competencia": "Comprensión amplia del acto educativo",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende que la escuela debe articular saber académico con formación humana, social y ciudadana.",
-  "evidencia": "Selecciona una definición de educación integral que supera la memorización de contenidos.",
-  "tarea": "Diferenciar un enfoque integral de un enfoque academicista reducido.",
-  "contexto": "Un establecimiento educativo obtiene buenos resultados en memorización de contenidos, pero presenta dificultades en convivencia, responsabilidad, participación, toma de decisiones y solución pacífica de conflictos. El equipo directivo reconoce que la formación integral no se agota en lo académico.",
-  "enunciado": "Un establecimiento educativo obtiene buenos resultados en memorización de contenidos, pero presenta dificultades en convivencia, responsabilidad, participación, toma de decisiones y solución pacífica de conflictos. El equipo directivo reconoce que la formación integral no se agota en lo académico.\n\n¿Cuál afirmación expresa mejor esa idea?",
+  "claim": "Valora la adecuación de actuaciones pedagógicas e institucionales bajo criterios normativos y constitucionales.",
+  "evidencia": "Selecciona la respuesta que demuestra la correcta aplicación del marco normativo y pedagógico colombiano.",
+  "tarea": "Analizar el caso y determinar la opción correcta conforme a derecho y principios pedagógicos.",
+  "contexto": "Un establecimiento educativo destaca en pruebas externas académicas, pero reporta altos índices de deserción escolar, acoso escolar y desmotivación en los niveles superiores de educación básica. El Consejo Académico analiza cómo reorientar las estrategias curriculares basándose en los fines formativos nacionales.",
+  "enunciado": "Un establecimiento educativo destaca en pruebas externas académicas, pero reporta altos índices de deserción escolar, acoso escolar y desmotivación en los niveles superiores de educación básica. El Consejo Académico analiza cómo reorientar las estrategias curriculares basándose en los fines formativos nacionales.\n\n¿Cuál es la formulación más coherente con la normatividad educativa colombiana para abordar este reto?",
   "opciones": {
-    "A": "La escuela cumple su función si los estudiantes memorizan contenidos, aunque no desarrollen habilidades sociales ni éticas.",
-    "B": "La escuela debe articular conocimientos con formación humana, ética, social, afectiva, ciudadana y comunicativa para favorecer el desarrollo integral.",
-    "C": "La formación integral exige abandonar todos los contenidos disciplinares.",
-    "D": "La convivencia y la participación son asuntos externos al proceso educativo."
+    "A": "Equilibrar el rigor académico con el desarrollo de competencias afectivas, ciudadanas y artísticas, garantizando que el éxito cognitivo se acompañe de bienestar humano y social.",
+    "B": "Aumentar la intensidad horaria de las áreas académicas básicas para mejorar los desempeños en pruebas e incorporar un reglamento disciplinario más estricto contra el ausentismo.",
+    "C": "Flexibilizar los criterios de promoción al final de cada periodo académico para reducir los indicadores de reprobación y deserción escolar, sin alterar las metodologías de enseñanza.",
+    "D": "Remitir todos los casos de acoso o desmotivación al área de psicología clínica de salud pública para no interferir en el desarrollo de la agenda del docente."
   },
-  "clave": "B",
-  "justificacion_clave": "B",
+  "clave": "A",
+  "justificacion_clave": "A",
   "distractores_funcion": {
-    "A": "Es incorrecta porque la educación no se reduce a memoria.",
-    "B": "Clave correcta.",
-    "C": "Es incorrecta porque la integralidad no elimina el conocimiento disciplinar.",
-    "D": "Es incorrecta porque convivencia y participación son dimensiones formativas."
+    "A": "Clave correcta.",
+    "B": "Rigorismo ineficaz: profundiza la presión académica y el control punitivo, lo cual suele agravar los problemas de convivencia y desmotivación escolar.",
+    "C": "Facilismo académico: altera las estadísticas de reprobación artificialmente sin resolver las causas de fondo del desinterés de los estudiantes por la enseñanza.",
+    "D": "Evasión institucional: desliga a la escuela de su deber de implementar estrategias de mediación de conflictos y apoyo socioemocional interno."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem evita una oposición simplista entre formación académica y formación humana."
+    "observaciones": "Lenguaje formal, neutral y apegado a la jurisprudencia colombiana en materia de derechos y deberes educativos, libre de sesgos territoriales o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Redacción estructurada con enunciados independientes y opciones de longitud y complejidad gramatical homogéneas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Formación integral, fines de la educación y desarrollo de la personalidad/NFL_B01_I05.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

@@ -4,41 +4,41 @@
   "area": "Gestión educativa",
   "tema": "PRAE y contexto ambiental",
   "subtema": "Aplicación pedagógica",
-  "competencia": "Juicio pedagógico",
+  "competencia": "Integrar principios de interculturalidad y diálogo de saberes en el diseño curricular del PRAE.",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "",
-  "enunciado": "En una comunidad con tradición indígena, el PRAE incorpora saberes locales sobre cuidado del agua, ciclos de siembra y relación espiritual con el territorio, sin abandonar el análisis científico.\n\n¿Qué principio se evidencia?",
+  "claim": "El evaluado identifica la incorporación de saberes tradicionales e interculturalidad en el diseño curricular del PRAE.",
+  "evidencia": "Selecciona la acción pedagógica que articula de manera equitativa la ciencia escolar con el conocimiento comunitario ancestral.",
+  "tarea": "Determinar el diseño curricular idóneo para un PRAE en un contexto de diversidad étnica y cultural.",
+  "contexto": "Una escuela oficial ubicada en un territorio con presencia mayoritaria de comunidades étnicas busca estructurar su PRAE sobre conservación biológica. Los docentes debaten si incorporar los saberes y prácticas ancestrales locales de cuidado de la naturaleza o limitarse al currículo científico oficial.",
+  "enunciado": "De acuerdo con el principio de interculturalidad y el respeto a la diversidad étnica de la Constitución Política y de la Ley General de Educación, la propuesta más coherente es:",
   "opciones": {
-    "A": "Interculturalidad ambiental.",
-    "B": "Negación del saber comunitario.",
-    "C": "Eliminación de la ciencia.",
-    "D": "Homogeneización cultural."
+    "A": "Diseñar un currículo transversal que propicie el diálogo horizontal entre el conocimiento científico y los saberes ancestrales locales sobre el ecosistema.",
+    "B": "Enseñar exclusivamente el saber tradicional de la comunidad local, omitiendo los conceptos de la biología científica para preservar la identidad cultural.",
+    "C": "Priorizar los conceptos de la ciencia oficial y tratar las creencias locales únicamente como mitos populares sin valor explicativo real.",
+    "D": "Dividir el currículo de modo que los estudiantes indígenas asistan a talleres tradicionales de campo y los no indígenas permanezcan en clases de laboratorio de ciencias."
   },
   "clave": "A",
-  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "justificacion_clave": "La interculturalidad en educación implica un diálogo constructivo y respetuoso entre distintos sistemas de conocimiento (científico y tradicional), enriqueciendo la formación integral sin segregar.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Distractor funcional.",
-    "C": "Distractor funcional.",
-    "D": "Distractor funcional."
+    "B": "Enfoque de exclusión epistémica inversa que aísla a los estudiantes del conocimiento científico global.",
+    "C": "Enfoque de asimilación cultural y hegemonía científica que descalifica el saber ancestral de las comunidades.",
+    "D": "Enfoque segregacionista que atenta contra la cohesión escolar y el principio de igualdad en la educación."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+    "observaciones": "El ítem fomenta la inclusión intercultural de acuerdo con mandatos constitucionales y no presenta sesgo cultural discriminatorio."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "La redacción utiliza términos técnicos precisos explicados en el enunciado."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/PRAE y contexto ambiental/MTV_B26_I10.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": false
   }

@@ -7,39 +7,39 @@
   "competencia": "Diferenciar el currículo oficial de otras expresiones curriculares no formalizadas.",
   "nivel_cognitivo": "COMPRENSIÓN-APLICACIÓN",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado reconoce que el currículo oficial se sustenta en referentes normativos y decisiones institucionales formalmente adoptadas.",
-  "evidencia": "Identifica la opción que integra leyes, lineamientos y PEI como base del currículo oficial.",
-  "tarea": "Seleccionar la definición más precisa de currículo oficial.",
-  "contexto": "En una revisión institucional se discute qué parte del trabajo escolar corresponde al currículo oficial y qué parte pertenece a aprendizajes implícitos.",
-  "enunciado": "¿Qué opción define correctamente el currículo oficial?",
+  "claim": "Valora la adecuación de actuaciones pedagógicas e institucionales bajo criterios normativos y constitucionales.",
+  "evidencia": "Selecciona la respuesta que demuestra la correcta aplicación del marco normativo y pedagógico colombiano.",
+  "tarea": "Analizar el caso y determinar la opción correcta conforme a derecho y principios pedagógicos.",
+  "contexto": "En una revisión institucional se discute qué parte del trabajo escolar corresponde al currículo formalmente adoptado por la institución y qué parte pertenece a las dinámicas del aprendizaje implícito y omisiones intencionales.",
+  "enunciado": "En una revisión institucional se discute qué parte del trabajo escolar corresponde al currículo formalmente adoptado por la institución y qué parte pertenece a las dinámicas del aprendizaje implícito y omisiones intencionales.\n\n¿Qué opción define correctamente el currículo oficial en este marco conceptual?",
   "opciones": {
-    "A": "Conjunto de normas no escritas que se transmiten en la vida cotidiana escolar.",
-    "B": "Marco formal basado en normas, lineamientos, estándares y decisiones pedagógicas adoptadas en el PEI.",
-    "C": "Listado de contenidos omitidos o no enseñados durante el año escolar.",
-    "D": "Decisiones improvisadas de cada docente sin acuerdo institucional."
+    "A": "El conjunto de planes de estudio, programas, metodologías y procesos que integran el PEI, alineado con las normas técnicas y los lineamientos del Ministerio de Educación Nacional.",
+    "B": "El conjunto de aprendizajes informales, normas implícitas, valores y relaciones de poder que se transmiten cotidianamente en la cultura escolar sin estar declarados formalmente.",
+    "C": "El conjunto de saberes, competencias y temas que, a pesar de estar aprobados por el Consejo Académico, son omitidos sistemáticamente por los docentes en su práctica de aula.",
+    "D": "El conjunto de proyectos transversales obligatorios que las familias deben desarrollar autónomamente en el hogar bajo la modalidad no presencial."
   },
-  "clave": "B",
-  "justificacion_clave": "Recoge el carácter formal, normativo e institucional del currículo oficial.",
+  "clave": "A",
+  "justificacion_clave": "A",
   "distractores_funcion": {
-    "A": "Describe currículo oculto.",
-    "B": "Clave correcta.",
-    "C": "Describe currículo nulo.",
-    "D": "Describe práctica no oficial."
+    "A": "Clave correcta.",
+    "B": "Error conceptual de currículo: define el 'currículo oculto', el cual se caracteriza por ser implícito y no oficial.",
+    "C": "Error conceptual de currículo: define el 'currículo nulo', que representa lo no enseñado u omitido intencionalmente.",
+    "D": "Desviación procedimental: desliga el currículo oficial de la institución escolar, trasladando su diseño y ejecución a las familias de forma aislada."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Escenarios educativos generales; sin sesgos culturales innecesarios ni prerrequisitos externos no declarados."
+    "observaciones": "Lenguaje formal, neutral y apegado a la jurisprudencia colombiana en materia de derechos y deberes educativos, libre de sesgos territoriales o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Lenguaje directo, vocabulario funcional y una sola tarea cognitiva por ítem."
+    "observaciones": "Redacción estructurada con enunciados independientes y opciones de longitud y complejidad gramatical homogéneas."
   },
   "metadata_editorial": {
-    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "fuente": "content/items/stand-by/PEI, currículo oficial y Manual de Convivencia/CEOL_B05_I01.json",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

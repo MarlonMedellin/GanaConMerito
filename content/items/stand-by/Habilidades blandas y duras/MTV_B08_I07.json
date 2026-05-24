@@ -1,45 +1,45 @@
 {
   "id_item": "MTV_B08_I07",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Gestión educativa",
-  "tema": "Habilidades blandas y duras",
-  "subtema": "Aplicación pedagógica",
-  "competencia": "Juicio pedagógico",
-  "nivel_cognitivo": "APLICACION",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Juicio pedagógico",
+  "tema": "Evaluación formativa y atención a la diversidad",
+  "subtema": "Equidad en el aula",
+  "competencia": "Implementa criterios de evaluación formativa y equidad que reconocen las particularidades del contexto de los estudiantes.",
+  "nivel_cognitivo": "JUICIO",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "Un estudiante entrega un trabajo manual manchado de barro y explica honestamente que se le cayó camino al colegio debido a la lluvia. El docente debe actuar con ayuda y servicio, pero sin caer en permisividad ni humillación.",
-  "enunciado": "Un estudiante entrega un trabajo manual manchado de barro y explica honestamente que se le cayó camino al colegio debido a la lluvia. El docente debe actuar con ayuda y servicio, pero sin caer en permisividad ni humillación.\n\n¿Cuál actuación es más adecuada?",
+  "claim": "El docente decide estrategias de valoración flexibles frente a incidentes fortuitos, resguardando la evidencia de aprendizaje sin descuidar el rigor pedagógico.",
+  "evidencia": "Propone alternativas de entrega o limpieza de un trabajo dañado por factores contextuales, valorando el aprendizaje y la honestidad del estudiante.",
+  "tarea": "Elegir la decisión pedagógica que combine empatía, equidad y valoración del aprendizaje ante un trabajo accidentalmente dañado.",
+  "contexto": "Un estudiante entrega un trabajo manual de fin de periodo manchado de barro y explica honestamente que se le cayó en un charco debido a la fuerte lluvia camino al colegio. El docente requiere valorar el desempeño del estudiante considerando esta circunstancia.",
+  "enunciado": "Para actuar de acuerdo con el principio de equidad y los propósitos de la evaluación formativa, el docente debe:",
   "opciones": {
-    "A": "Ridiculizarlo frente al grupo para que aprenda a ser más cuidadoso.",
-    "B": "Ponerle cero automáticamente sin escuchar la situación.",
-    "C": "Escuchar la explicación, valorar la honestidad y el esfuerzo, revisar si el trabajo cumple el propósito y, si es necesario, permitir una mejora razonable con criterios claros.",
-    "D": "Aprobarlo siempre con nota máxima aunque no haya evidencia del trabajo."
+    "A": "Recibir el trabajo pero aplicar una reducción sustancial en la nota final por concepto de presentación, argumentando que las normas de entrega son idénticas para todos.",
+    "B": "Rechazar el trabajo manchado y exigirle al estudiante repetir la actividad completa en su hogar para el día siguiente, argumentando que esto fortalece la responsabilidad.",
+    "C": "Escuchar la explicación del estudiante, valorar la evidencia de aprendizaje observable en el trabajo presentado y acordar una alternativa para su limpieza o mejora sin penalización.",
+    "D": "Asignar la calificación máxima al estudiante para premiar su honestidad y evitar afectarlo socioemocionalmente, sin necesidad de evaluar el contenido pedagógico."
   },
   "clave": "C",
-  "justificacion_clave": "C",
+  "justificacion_clave": "La opción C es correcta porque la evaluación formativa y el enfoque de equidad buscan verificar la asimilación del aprendizaje superando barreras fortuitas y contextuales, permitiendo alternativas de valoración que no penalicen el accidente físico y mantengan el rigor evaluativo.",
   "distractores_funcion": {
-    "A": "Vulnera la dignidad del estudiante.",
-    "B": "Desconoce el contexto y elimina la ayuda profesional.",
+    "A": "Aplica un trato igualitario formal que ignora la equidad y penaliza una circunstancia ajena al control del estudiante.",
+    "B": "Impone una carga excesiva e inflexible al estudiante sin considerar sus condiciones reales ni el esfuerzo inicial.",
     "C": "Clave correcta.",
-    "D": "Confunde empatía con permisividad sin criterios."
+    "D": "Confunde la empatía con el facilismo y la pérdida de rigor evaluativo, anulando el propósito formativo de la actividad."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem evalúa sensibilidad profesional sin promover arbitrariedad ni castigo."
+    "observaciones": "La situación plantea una circunstancia climática generalizable y no discriminatoria."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Vocabulario claro, oraciones bien estructuradas y opciones con estructura sintáctica paralela."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I07.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

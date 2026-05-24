@@ -1,45 +1,45 @@
 {
   "id_item": "MTV_B31_I04",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "Jornada escolar, horario laboral y asignación académica",
   "subtema": "Aplicación pedagógica",
   "competencia": "Juicio pedagógico",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "",
-  "enunciado": "Una docente cumple clases en la mañana, pero además tiene reuniones, atención a familias, planeación institucional y actividades complementarias distribuidas en su horario.\n\n¿Cuál afirmación es correcta?",
+  "claim": "El evaluado determina la obligatoriedad y distribución de las actividades complementarias dentro del horario establecido por la rectoría.",
+  "evidencia": "Aplica las reglas sobre la jornada de trabajo de los docentes al cumplimiento de actividades curriculares complementarias.",
+  "tarea": "Identificar la correcta distribución y obligatoriedad de las actividades complementarias en el horario docente.",
+  "contexto": "Una docente cumple con sus horas de clase directa durante la mañana. Sin embargo, en su horario de trabajo se han distribuido espacios para la planeación de aula, reuniones de área y atención a las familias.",
+  "enunciado": "De acuerdo con la normatividad vigente, ¿cuál de las siguientes afirmaciones describe de manera correcta esta situación?",
   "opciones": {
-    "A": "El horario laboral organiza el tiempo de cumplimiento de funciones docentes, no solo las clases frente a grupo.",
-    "B": "El horario laboral solo existe para estudiantes.",
-    "C": "La jornada laboral se reduce al recreo.",
-    "D": "Las actividades complementarias no hacen parte del trabajo docente."
+    "A": "Estas actividades hacen parte de la jornada laboral docente y deben ser cumplidas según el horario establecido por el rector.",
+    "B": "Estas actividades son de carácter voluntario y solo se realizan si la docente dispone de tiempo libre.",
+    "C": "La atención a familias y la planeación pedagógica deben realizarse obligatoriamente por fuera de las 8 horas de la jornada laboral.",
+    "D": "El rector únicamente tiene competencia para regular la presencialidad en las horas de clase directa."
   },
   "clave": "A",
-  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "justificacion_clave": "De acuerdo con el Decreto 1075 de 2015, los rectores definen el horario de trabajo de los docentes para el cumplimiento de la asignación académica y las actividades curriculares complementarias, las cuales son de obligatorio cumplimiento.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Distractor funcional.",
-    "C": "Distractor funcional.",
-    "D": "Distractor funcional."
+    "B": "Representa el error de creer que las actividades complementarias son opcionales y no forman parte de las obligaciones del cargo.",
+    "C": "Representa la creencia errónea de que estas actividades esenciales deben realizarse obligatoriamente como sobretiempo no remunerado.",
+    "D": "Representa la confusión sobre la autoridad del rector, limitándola falsamente a las horas de clase directa presencial."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Texto claro."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I04.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

@@ -1,0 +1,45 @@
+{
+  "id_item": "CEOL_B11_I02",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión escolar y pedagógica",
+  "tema": "Proyecto Educativo Institucional (PEI)",
+  "subtema": "Componentes obligatorios del PEI",
+  "competencia": "Aplicar la normatividad de diseño, evaluación y modificación del Proyecto Educativo Institucional (PEI) según el Decreto 1075 de 2015.",
+  "nivel_cognitivo": "COMPRENSIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado clasifica los componentes obligatorios del PEI definidos en el Artículo 73 de la Ley 115 de 1994.",
+  "evidencia": "Identifica los cuatro componentes del PEI (Directivo-Administrativo, Pedagógico-Curricular, Comunitario e Institucional-Filosófico) frente a listados incompletos o erróneos.",
+  "tarea": "Identificar los componentes obligatorios que estructuran el Proyecto Educativo Institucional.",
+  "contexto": "Una institución educativa nueva se encuentra en proceso de redacción de su PEI y requiere estructurar el documento integrando todas las dimensiones exigidas por la normatividad nacional.",
+  "enunciado": "Para cumplir con la normatividad legal colombiana (Decreto 1075 de 2015), ¿cuál conjunto corresponde a las áreas de gestión obligatorias del PEI?",
+  "opciones": {
+    "A": "Área financiera, área técnica de infraestructura, área de mercadeo institucional y área de relaciones externas.",
+    "B": "Gestión Directiva, Gestión Pedagógica (académica), Gestión Administrativa y Financiera, y Gestión de la Comunidad.",
+    "C": "Componente disciplinario, componente de seguridad escolar, componente de egresados y componente de pastoral educativa.",
+    "D": "Área de docencia, área de investigación aplicada, área de proyección social y área de bienestar estudiantil."
+  },
+  "clave": "B",
+  "justificacion_clave": "La Guía 34 del Ministerio de Educación Nacional (que reglamenta e instrumenta la autoevaluación y mejora institucional bajo el Decreto 1075 de 2015) organiza el Proyecto Educativo Institucional en cuatro áreas de gestión: Directiva, Académica (Pedagógica), Administrativa y Financiera, y de la Comunidad.",
+  "distractores_funcion": {
+    "A": "Refleja una estructura organizativa de carácter mercantil o corporativo privado, ajena a los fines y áreas de gestión del servicio educativo formal en Colombia.",
+    "B": "Clave correcta.",
+    "C": "Representa una agrupación fragmentaria y no oficial de temas que no abarcan la totalidad del quehacer de las áreas de gestión del PEI.",
+    "D": "Refleja la estructura de gestión de la educación superior (universitaria) en lugar de las áreas de gestión de la educación preescolar, básica y media."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Se evalúan conocimientos conceptuales fundamentales de la gestión escolar pública."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Formato de lista homogéneo y sin distractores tramposos."
+  },
+  "metadata_editorial": {
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
+}

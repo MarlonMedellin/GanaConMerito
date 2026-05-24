@@ -11,20 +11,20 @@
   "evidencia": "Selecciona una única alternativa técnicamente superior frente a distractores plausibles.",
   "tarea": "Analizar la situación planteada y elegir la respuesta más adecuada según el criterio del ítem.",
   "contexto": "Dos docentes tienen un desacuerdo frente a la distribución de actividades de un proyecto institucional. La discusión se ha trasladado a otros espacios y empieza a afectar el trabajo del equipo.",
-  "enunciado": "Dos docentes tienen un desacuerdo frente a la distribución de actividades de un proyecto institucional. La discusión se ha trasladado a otros espacios y empieza a afectar el trabajo del equipo.\n\n¿Cuál actuación expresa mejor una comunicación asertiva?",
+  "enunciado": "Teniendo en cuenta la competencia comportamental de comunicación efectiva (Decreto 815 de 2018), ¿cuál actuación del directivo o líder de área expresa mejor la resolución asertiva del conflicto?",
   "opciones": {
-    "A": "Pedir a ambos docentes que eviten hablar del tema para que el conflicto desaparezca con el tiempo.",
-    "B": "Escuchar las posiciones, describir el problema sin ataques personales, expresar necesidades y acordar compromisos concretos.",
-    "C": "Solicitar a uno de los docentes que ceda, porque la prioridad es terminar rápido el proyecto.",
-    "D": "Exponer públicamente el desacuerdo para que el grupo decida quién tiene la razón."
+    "A": "Recomendar a los docentes suspender las discusiones informales y centrarse exclusivamente en sus tareas asignadas, asumiendo que la distancia enfriará las tensiones del equipo.",
+    "B": "Convocar a una reunión privada para escuchar activamente ambas posturas, precisar objetivamente los puntos de desacuerdo en un tono constructivo y definir conjuntamente un plan de trabajo con responsabilidades compartidas.",
+    "C": "Intervenir solicitando que el docente con menor antigüedad ceda en sus pretensiones de forma temporal, priorizando la entrega oportuna del proyecto institucional.",
+    "D": "Exponer el desacuerdo en la próxima plenaria de profesores para someter la distribución de tareas a una votación democrática que zanje el conflicto."
   },
   "clave": "B",
-  "justificacion_clave": "B",
+  "justificacion_clave": "La comunicación efectiva se demuestra al mantener la escucha atenta de las partes, emitir mensajes claros, precisos y en un tono constructivo y agradable, orientando el diálogo al entendimiento mutuo y compromisos viables.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque evitar el tema no resuelve la tensión y puede permitir que el conflicto continúe afectando al equipo.",
+    "A": "La evasión del conflicto mediante el silencio profesional no resuelve las causas y suele minar el clima de trabajo.",
     "B": "Clave correcta.",
-    "C": "Es incorrecta porque sacrifica el diálogo y la corresponsabilidad por una solución rápida e impuesta.",
-    "D": "Es incorrecta porque expone el conflicto públicamente, puede aumentar la tensión y desplaza el foco hacia quién tiene la razón."
+    "C": "Usa una solución arbitraria basada en jerarquía que vulnera el respeto mutuo e ignora la competencia de negociación y escucha.",
+    "D": "Exponer el conflicto públicamente puede generar mayor polarización, chismes institucionales y vulnera la confidencialidad profesional."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Comunicación asertiva/CB05_I01.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

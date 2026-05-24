@@ -1,45 +1,45 @@
 {
   "id_item": "MTV_B31_I03",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "Jornada escolar, horario laboral y asignación académica",
   "subtema": "Aplicación pedagógica",
   "competencia": "Juicio pedagógico",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "",
-  "enunciado": "A un docente le asignan horas semanales de clase directa con estudiantes en un área determinada. Esas horas no incluyen todas sus actividades laborales, sino el tiempo específico de orientación de clases.\n\n¿Cómo se denomina este componente?",
+  "claim": "El evaluado reconoce el concepto de asignación académica como las horas de clase directa que imparte el docente.",
+  "evidencia": "Identifica la asignación académica como un componente específico de la jornada laboral docente.",
+  "tarea": "Definir la asignación académica a partir de las horas de orientación de clase directa.",
+  "contexto": "A un docente de educación básica secundaria se le asignan semanalmente horas de clase directa para orientar el área de matemáticas. Este tiempo específico no cubre la totalidad de su jornada de trabajo, sino la enseñanza directa frente al grupo de estudiantes.",
+  "enunciado": "¿Cómo se denomina técnicamente este componente en la organización escolar?",
   "opciones": {
     "A": "Asignación académica.",
-    "B": "Jornada comunitaria familiar.",
-    "C": "Currículo oculto.",
-    "D": "Evaluación psicotécnica."
+    "B": "Jornada laboral ordinaria.",
+    "C": "Tiempo de permanencia obligatoria.",
+    "D": "Plan de estudios complementario."
   },
   "clave": "A",
-  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "justificacion_clave": "Según la normatividad (Decreto 1075 de 2015), la asignación académica es el número de horas de clase directa que el docente imparte a los estudiantes durante la semana, diferenciándose de las demás actividades curriculares complementarias.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Distractor funcional.",
-    "C": "Distractor funcional.",
-    "D": "Distractor funcional."
+    "B": "Confunde la asignación académica con el total de horas de trabajo diario del docente (8 horas diarias).",
+    "C": "Confunde las horas de clase directa con las 6 horas mínimas de presencialidad exigidas en la institución.",
+    "D": "Confunde la carga académica del docente con el diseño curricular general del PEI (plan de estudios)."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Texto directo."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I03.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

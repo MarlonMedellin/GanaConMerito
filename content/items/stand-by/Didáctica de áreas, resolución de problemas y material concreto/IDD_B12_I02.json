@@ -3,42 +3,42 @@
   "estado": "LISTO_PARA_BANCO",
   "area": "Didáctica disciplinar",
   "tema": "Didáctica de áreas, resolución de problemas y material concreto",
-  "subtema": "Estrategias de Evaluación Formativa",
-  "competencia": "Selecciona estrategias didácticas de resolución de problemas apoyadas en material concreto y mediación pedagógica.",
+  "subtema": "Evaluación Formativa y Mediación Pedagógica",
+  "competencia": "Implementa estrategias de evaluación formativa y selección de recursos didácticos adecuados para superar barreras de aprendizaje.",
   "nivel_cognitivo": "APLICACIÓN",
   "dificultad_estimada": "MEDIA",
-  "claim": "Reconoce la alternativa pedagógica o institucional más adecuada según el criterio técnico evaluado en el caso.",
-  "evidencia": "Selecciona una única opción defendible frente a distractores plausibles en función del constructo.",
-  "tarea": "Analizar el caso y elegir la decisión más pertinente conforme al enfoque del ítem.",
-  "contexto": "Un grupo de primaria no logra comprender un concepto mediante guías tradicionales. El docente observa errores frecuentes y poca participación, pero todavía tiene oportunidad de ajustar la enseñanza.",
-  "enunciado": "Un grupo de primaria no logra comprender un concepto mediante guías tradicionales. El docente observa errores frecuentes y poca participación, pero todavía tiene oportunidad de ajustar la enseñanza.\n\n¿Qué debe hacer desde la evaluación formativa y el uso de material concreto?",
+  "claim": "Determina la intervención mediada por material concreto y evaluación formativa idónea ante errores conceptuales sistemáticos en el grupo.",
+  "evidencia": "Propone secuencias manipulativas guiadas por preguntas que favorecen la conceptualización y contrastación de relaciones matemáticas.",
+  "tarea": "Seleccionar la intervención pedagógica adecuada a través del uso de material concreto y evaluación formativa para superar dificultades conceptuales en operaciones aritméticas básicas.",
+  "contexto": "En un grupo de básica primaria, el docente identifica a través de la observación de aula y las tareas escritas que más de la mitad de los estudiantes confunden las operaciones de adición y multiplicación, cometiendo errores sistemáticos en la resolución de problemas sencillos.",
+  "enunciado": "En un grupo de básica primaria, el docente identifica a través de la observación de aula y las tareas escritas que más de la mitad de los estudiantes confunden las operaciones de adición y multiplicación, cometiendo errores sistemáticos en la resolución de problemas sencillos. Con el fin de implementar un proceso de evaluación formativa mediado por material concreto para superar esta dificultad, el docente debe:",
   "opciones": {
-    "A": "Repetir la misma guía hasta que los estudiantes memoricen las respuestas.",
-    "B": "Avanzar al siguiente tema porque ya se entregó la actividad.",
-    "C": "Analizar las dificultades, retroalimentar, usar material concreto y representaciones variadas, y recoger nuevas evidencias de comprensión.",
-    "D": "Calificar con bajo desempeño a todo el grupo sin modificar la mediación."
+    "A": "Diseñar una sesión de trabajo manipulativo donde los estudiantes representen sumas repetidas de grupos iguales y las contrasten con sumas sencillas, guiándolos a formular la relación conceptual entre adición y multiplicación.",
+    "B": "Entregar bloques lógicos a los estudiantes para que jueguen libremente durante la clase, permitiendo que la familiarización espontánea con el material resuelva progresivamente las dudas procedimentales observadas en las guías escritas.",
+    "C": "Asignar una nueva guía de ejercicios de multiplicación gráfica con dibujos de objetos agrupados, exigiendo que los alumnos memoricen primero las tablas de multiplicar antes de volver a utilizar el material concreto.",
+    "D": "Utilizar el material concreto frente al tablero para demostrar él mismo la diferencia entre ambas operaciones, solicitando a los estudiantes copiar las conclusiones en sus cuadernos para evaluar su comprensión en un examen posterior."
   },
-  "clave": "C",
-  "justificacion_clave": "C",
+  "clave": "A",
+  "justificacion_clave": "La opción A representa una auténtica evaluación formativa articulada con material concreto, ya que la manipulación física se acompaña de una intencionalidad pedagógica clara que guía al estudiante a construir y formular las relaciones conceptuales subyacentes.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque repetir no garantiza comprensión.",
-    "B": "Es incorrecta porque ignora las evidencias de dificultad.",
-    "C": "Clave correcta.",
-    "D": "Es incorrecta porque califica sin retroalimentar ni ajustar."
+    "A": "Clave correcta.",
+    "B": "Sesgo espontaneísta: asume erróneamente que la manipulación de material libre, sin mediación ni estructuración docente, conduce espontáneamente a la conceptualización matemática.",
+    "C": "Enfoque tradicional/memorístico: prioriza el aprendizaje reproductivo y procedimental de las tablas de multiplicar como requisito formal para interactuar con representaciones y recursos.",
+    "D": "Rol docente transmisivo: confunde el uso activo del material concreto por parte del alumno con una demostración expositiva del docente, limitando al estudiante a un rol receptivo de copia y memorización."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estándar y contexto institucional general sin sesgos culturales innecesarios."
+    "observaciones": "Contexto general aplicable a cualquier institución de básica primaria."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura y exigencia."
+    "observaciones": "El vocabulario es estándar y las opciones mantienen simetría sintáctica."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

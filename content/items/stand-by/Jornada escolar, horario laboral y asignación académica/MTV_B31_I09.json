@@ -1,45 +1,45 @@
 {
   "id_item": "MTV_B31_I09",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "Jornada escolar, horario laboral y asignación académica",
   "subtema": "Aplicación pedagógica",
   "competencia": "Juicio pedagógico",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "",
-  "enunciado": "Un docente debe salir urgentemente del aula para atender una situación institucional. Antes de irse, solicita apoyo de coordinación para que el grupo no quede solo.\n\n¿Qué responsabilidad está cumpliendo?",
+  "claim": "El evaluado aplica la responsabilidad institucional frente al cuidado de los estudiantes cuando el docente debe ausentarse del aula.",
+  "evidencia": "Propone acciones institucionales que garantizan que los menores no queden sin supervisión ante ausencias justificadas del maestro de aula.",
+  "tarea": "Determinar la actuación correcta de un docente que debe dejar temporalmente el aula ante una emergencia.",
+  "contexto": "Durante una sesión de clase, un docente recibe una notificación urgente para atender una situación administrativa prioritaria. Sabiendo que debe retirarse de inmediato, solicita apoyo a la coordinación académica para que el grupo no quede solo.",
+  "enunciado": "¿Qué principio de responsabilidad legal fundamenta la acción de no dejar el grupo sin supervisión adulta?",
   "opciones": {
-    "A": "Evitar abandono del grupo y proteger la posición de garante institucional.",
-    "B": "Delegar irresponsablemente su función en estudiantes.",
-    "C": "Eliminar la necesidad de supervisión adulta.",
-    "D": "Suspender el deber de cuidado."
+    "A": "El deber de custodia y cuidado derivado de la posición de garante, evitando dejar sin supervisión a los menores de edad.",
+    "B": "La asignación académica extraordinaria para justificar la inasistencia a clase.",
+    "C": "El debido proceso disciplinario en caso de presentarse una falta grave de convivencia.",
+    "D": "La autonomía docente para delegar la tutoría escolar de manera informal en los alumnos del curso."
   },
   "clave": "A",
-  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "justificacion_clave": "La institución educativa y sus docentes actúan bajo la posición de garante frente a los menores a su cargo. Dejar a un grupo sin supervisión vulnera el deber de custodia y cuidado, pudiendo acarrear responsabilidad civil o disciplinaria ante cualquier percance.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Distractor funcional.",
-    "C": "Distractor funcional.",
-    "D": "Distractor funcional."
+    "B": "Confunde un principio de responsabilidad civil y de protección de derechos con un trámite puramente administrativo de la carga horaria.",
+    "C": "Asocia erróneamente la prevención del riesgo físico con el trámite del debido proceso para faltas disciplinarias cometidas por estudiantes.",
+    "D": "Supone falsamente que la autonomía del docente lo faculta para delegar la responsabilidad legal de custodia en menores de edad."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Lógica clara."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I09.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

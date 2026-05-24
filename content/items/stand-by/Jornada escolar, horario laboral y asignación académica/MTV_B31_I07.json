@@ -1,45 +1,45 @@
 {
   "id_item": "MTV_B31_I07",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "Jornada escolar, horario laboral y asignación académica",
   "subtema": "Aplicación pedagógica",
   "competencia": "Juicio pedagógico",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "",
-  "enunciado": "Una institución asigna a un docente varias clases fuera de su área de formación sin justificar necesidad del servicio ni verificar idoneidad. El docente solicita revisar la carga académica.\n\n¿Qué criterio debe analizar la institución?",
+  "claim": "El evaluado aplica los criterios normativos de asignación académica respecto a la idoneidad y el perfil docente.",
+  "evidencia": "Identifica que la asignación académica debe considerar el perfil del docente y las necesidades del servicio público.",
+  "tarea": "Analizar los criterios legales que rigen la asignación de asignaturas a un docente.",
+  "contexto": "Un docente de ciencias sociales recibe por escrito una asignación académica que incluye cursos de física y química, áreas en las que no posee formación profesional ni experiencia previa. El docente solicita una revisión de esta asignación académica.",
+  "enunciado": "Al responder la solicitud, ¿qué criterio legal debe priorizar la institución educativa para la asignación de las asignaturas?",
   "opciones": {
-    "A": "Pertinencia entre perfil, área de especialidad, necesidad del servicio e idoneidad docente.",
-    "B": "Asignación arbitraria sin criterio.",
-    "C": "Preferencia personal del estudiante.",
-    "D": "Eliminación total de horarios."
+    "A": "La relación entre el perfil del docente, su área de especialidad, las necesidades del servicio y los criterios de idoneidad definidos en la norma.",
+    "B": "La antigüedad del docente en el establecimiento educativo, asignando las áreas sobrantes a los docentes con menor tiempo en el plantel.",
+    "C": "La afinidad personal de los estudiantes con el docente, independientemente de su titulación profesional o especialidad.",
+    "D": "La disponibilidad de tiempo en el horario general, asumiendo que un docente está habilitado para impartir cualquier área del conocimiento."
   },
   "clave": "A",
-  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "justificacion_clave": "Conforme a la normatividad colombiana, la asignación académica debe fundamentarse en la correspondencia entre la formación académica del docente, su especialidad y las áreas del plan de estudios, garantizando la idoneidad y la calidad educativa.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Distractor funcional.",
-    "C": "Distractor funcional.",
-    "D": "Distractor funcional."
+    "B": "Apoya un criterio informal e inequitativo de antigüedad que desconoce las competencias del perfil profesional docente.",
+    "C": "Focaliza la decisión en un criterio afectivo de simpatía estudiantil que carece de sustento legal y técnico.",
+    "D": "Representa el error de priorizar la agenda horaria sobre la idoneidad y especialización del educador, violando el derecho a una educación de calidad."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Vocabulario claro y adaptado."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I07.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

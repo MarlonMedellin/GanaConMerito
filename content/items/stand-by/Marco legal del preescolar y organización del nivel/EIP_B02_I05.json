@@ -1,30 +1,30 @@
 {
   "id_item": "EIP_B02_I05",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Promoción y avance en preescolar",
   "tema": "Marco legal del preescolar y organización del nivel",
   "subtema": "Aplicar criterios de reprobación y promoción propios de básica o media al nivel preescolar.",
   "competencia": "Comprensión del enfoque evaluativo del nivel",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA_ALTA",
-  "claim": "El evaluado comprende que la evaluación y promoción en preescolar responden al desarrollo integral, no a la lógica de pérdida o repetición punitiva.",
-  "evidencia": "Selecciona la actuación adecuada frente a dificultades de desarrollo en preescolar.",
-  "tarea": "Aplicar el enfoque evaluativo del preescolar a un caso institucional.",
+  "claim": "Aplica el marco normativo sobre evaluación y promoción en el nivel preescolar que prohíbe la reprobación de grados y actividades.",
+  "evidencia": "Selecciona la decisión institucional y pedagógica correcta frente a dificultades de desarrollo en preescolar, fundamentada en la promoción obligatoria.",
+  "tarea": "Resolver un caso de propuesta de reprobación en transición de acuerdo con la normatividad escolar.",
   "contexto": "Una docente de preescolar propone reprobar a un niño de transición porque aún no alcanza algunos desempeños de motricidad fina y lenguaje al mismo ritmo que sus compañeros. La coordinación recuerda el enfoque normativo del nivel.",
   "enunciado": "Una docente de preescolar propone reprobar a un niño de transición porque aún no alcanza algunos desempeños de motricidad fina y lenguaje al mismo ritmo que sus compañeros. La coordinación recuerda el enfoque normativo del nivel.\n\n¿Cuál actuación es correcta?",
   "opciones": {
-    "A": "Realizar seguimiento cualitativo, acompañar el desarrollo, informar descriptivamente a la familia y permitir el avance según capacidades y aptitudes, sin reprobar grados ni actividades.",
-    "B": "Reprobar automáticamente al niño para que aprenda a esforzarse.",
-    "C": "Aplicar una prueba final escrita como único criterio de promoción.",
-    "D": "Suspenderlo de las actividades lúdicas hasta que iguale a sus compañeros."
+    "A": "Promover al niño al grado siguiente diseñando estrategias pedagógicas de apoyo para fortalecer su desarrollo, de acuerdo con la prohibición legal de reprobación en preescolar.",
+    "B": "Repetir el grado transición para asegurar la maduración de sus procesos psicomotores y de lenguaje antes del ingreso a básica primaria.",
+    "C": "Remitir el caso de forma inmediata a educación especial extraescolar para su diagnóstico clínico y condicionar su matrícula en la institución.",
+    "D": "Suspender la participación del estudiante en las actividades lúdicas para concentrar su jornada en talleres remediales de motricidad y lenguaje."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "De acuerdo con el Decreto 2247 de 1997, en el nivel de educación preescolar no se reprueban grados ni actividades. Los procesos se evalúan cualitativamente y de forma descriptiva, permitiendo el tránsito del estudiante y brindando apoyos pedagógicos.",
   "distractores_funcion": {
-    "A": "Clave correcta.",
-    "B": "Es incorrecta porque la reprobación automática contradice el enfoque del nivel.",
-    "C": "Es incorrecta porque una prueba escrita final no corresponde al seguimiento integral del preescolar.",
-    "D": "Es incorrecta porque excluye de experiencias lúdicas y pedagógicas esenciales."
+    "A": "Clave correcta. Cumple con la no reprobación y promueve estrategias de apoyo pedagógico.",
+    "B": "Ilegalidad normativa. Propone la repetición de grado, práctica expresamente prohibida en el preescolar colombiano.",
+    "C": "Error de inclusión. Segrega al estudiante y condiciona la matrícula, vulnerando el derecho a la educación inclusiva.",
+    "D": "Error didáctico. Castiga al niño privándolo de la lúdica (su principal vía de desarrollo) para imponer tareas monótonas de adiestramiento."
   },
   "fairness": {
     "sesgo_detectado": false,

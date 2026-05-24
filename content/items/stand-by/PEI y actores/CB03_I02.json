@@ -1,44 +1,44 @@
 {
   "id_item": "CB03_I02",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Gestión escolar",
-  "tema": "Proyecto Educativo Institucional (PEI)",
-  "subtema": "Participación de actores educativos",
-  "competencia": "Analiza prácticas institucionales y determina su alineación con principios de participación en la construcción del PEI.",
+  "area": "Gestión directiva y comunitaria",
+  "tema": "PEI y actores",
+  "subtema": "Participación Democrática vs Socialización Informativa",
+  "competencia": "Evalúa las prácticas de participación comunitaria en la gestión escolar y propone alternativas para fortalecer la corresponsabilidad.",
   "nivel_cognitivo": "ANÁLISIS",
   "dificultad_estimada": "MEDIA",
-  "claim": "Distingue entre socialización informativa y participación efectiva en la construcción o actualización del PEI.",
-  "evidencia": "Identifica que la participación exige deliberación y aportes con posibilidad real de incidencia en acuerdos institucionales.",
-  "tarea": "Valorar si la actuación institucional descrita cumple el estándar de participación en el PEI.",
-  "contexto": "La institución convoca una reunión para comunicar un PEI ya definido por directivos.",
-  "enunciado": "Después de elaborar una nueva versión del PEI, la institución convoca a docentes, estudiantes y familias a una reunión de una hora para informar cambios ya definidos. ¿Cuál valoración es más adecuada?",
+  "claim": "Distingue las prácticas de socialización informativa y formal de los procesos reales de participación democrática y consensuada en el PEI.",
+  "evidencia": "Identifica que la participación efectiva exige la deliberación previa de los estamentos de la comunidad frente a la mera socialización del documento terminado para firma de soportes.",
+  "tarea": "Valorar desde el marco normativo nacional si un procedimiento de socialización informativa del PEI terminado satisface plenamente la exigencia de participación democrática.",
+  "contexto": "Para actualizar el componente comunitario del PEI, el equipo directivo de una institución educativa diseña el documento final y convoca a docentes, estudiantes y padres de familia a una reunión informativa de una hora al finalizar el año escolar, con el fin de socializar los cambios ya adoptados y solicitar firmas de asistencia para los soportes de gestión.",
+  "enunciado": "Para actualizar el componente comunitario del PEI, el equipo directivo de una institución educativa diseña el documento final y convoca a docentes, estudiantes y padres de familia a una reunión informativa de una hora al finalizar el año escolar, con el fin de socializar los cambios ya adoptados y solicitar firmas de asistencia para los soportes de gestión. Desde los principios de corresponsabilidad y participación democrática consagrados en la Ley 115 de 1994, la valoración más pertinente sobre esta actuación institucional es que:",
   "opciones": {
-    "A": "Sí cumple, porque participar es recibir información sobre decisiones institucionales.",
-    "B": "No cumple, porque participar implica deliberar, proponer y construir acuerdos antes de cerrar decisiones.",
-    "C": "Sí cumple, porque el PEI es un documento técnico que solo define el equipo directivo.",
-    "D": "No afecta, porque la participación de familias y estudiantes no es necesaria en el PEI."
+    "A": "Incumple el principio de participación efectiva, ya que reduce la intervención de la comunidad educativa a un acto informativo posterior sobre decisiones previamente cerradas por los directivos.",
+    "B": "Cumple de forma idónea el estándar legal, dado que la socialización y entrega formal de los documentos del PEI satisface plenamente la obligación de consultar a los estamentos escolares.",
+    "C": "Excede las competencias legales del rector, puesto que las modificaciones curriculares del PEI deben ser redactadas por los estudiantes a través de sus representantes en el consejo de estudiantes.",
+    "D": "Es metodológicamente adecuada debido a que la participación en la formulación de componentes específicos del PEI debe restringirse en exclusiva a los docentes de planta para garantizar el rigor técnico."
   },
-  "clave": "B",
-  "justificacion_clave": "La opción B reconoce el criterio técnico de participación efectiva: incidencia previa en la formulación y revisión del PEI.",
+  "clave": "A",
+  "justificacion_clave": "La participación democrática en el gobierno escolar y el PEI no se reduce a enterarse de lo decidido ni a firmar actas de asistencia. Participar significa incidir en la formulación de las propuestas a través del debate, la deliberación y la concertación.",
   "distractores_funcion": {
-    "A": "Confunde información posterior con participación en la toma de decisiones.",
-    "B": "Clave correcta.",
-    "C": "Reduce indebidamente el PEI a una función exclusiva de directivos.",
-    "D": "Niega la corresponsabilidad de actores de la comunidad educativa."
+    "A": "Clave correcta.",
+    "B": "Confusión formalista: confunde el formalismo de socializar y recolectar firmas con el proceso participativo sustancial de incidencia y co-creación que exige la ley.",
+    "C": "Sobredimensionamiento de roles estudiantiles: le atribuye de manera absurda al consejo de estudiantes la tarea exclusiva de redactar las reformas curriculares, ignorando la corresponsabilidad de todos los actores.",
+    "D": "Sesgo tecnocrático o exclusión comunitaria: justifica la exclusión de las familias y estudiantes de la planeación curricular argumentando erróneamente que solo los docentes tienen la capacidad técnica para intervenir en el PEI."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Caso general, sin requerir conocimiento local específico ni experiencia previa en cargos directivos."
+    "observaciones": "Ítem fundado en normatividad general, claro y aplicable a directivos y docentes en el territorio colombiano."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado breve y vocabulario institucional de uso común docente."
+    "observaciones": "El enunciado describe un escenario real de socialización institucional para confrontar conceptualmente la teoría de la participación democrática."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/PEI y actores/CB03_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-19",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

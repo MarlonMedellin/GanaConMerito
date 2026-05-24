@@ -5,12 +5,12 @@ project: ganaconmerito
 owner: marlon-arcila
 status: active
 artifact_type: project
-last_reviewed: 2026-05-10
+last_reviewed: 2026-05-24
 ---
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-05-23 — Sprint 47 (Mantenimiento menor y saneamiento final).
+Ultima actualizacion: 2026-05-24 — Saneamiento y Depuración del Banco (stand-by).
 
 ---
 

@@ -1,45 +1,45 @@
 {
   "id_item": "CB14_I03",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión académica",
   "tema": "Propósitos de la educación",
   "subtema": "Desconocimiento de fines educativos",
   "competencia": "Fundamentos educativos",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende que las experiencias de aprendizaje deben articular saberes, valores, habilidades y participación social.",
-  "evidencia": "Selecciona una actividad de aprendizaje que relaciona conceptos del área con problemas del entorno y participación activa de los estudiantes.",
-  "tarea": "Seleccionar una actividad coherente con propósitos integrales de educación.",
-  "contexto": "Un área desea diseñar una actividad que articule conocimientos disciplinares con análisis de problemas del entorno y participación de los estudiantes en propuestas de solución.",
-  "enunciado": "Un área desea diseñar una actividad que articule conocimientos disciplinares con análisis de problemas del entorno y participación de los estudiantes en propuestas de solución.\n\n¿Cuál actividad responde mejor a ese propósito?",
+  "claim": "El evaluado selecciona actividades didácticas que articulan saberes disciplinares con análisis crítico del contexto y participación comunitaria.",
+  "evidencia": "Identifica diseños pedagógicos orientados a proyectos comunitarios que superan la ejercitación aislada y memorística.",
+  "tarea": "Seleccionar la propuesta de actividad que mejor vincula los conceptos disciplinares con una necesidad del entorno.",
+  "contexto": "El departamento de ciencias naturales de una institución educativa busca diseñar una estrategia pedagógica que permita articular la teoría escolar sobre ecosistemas con el análisis de los problemas de contaminación del barrio circundante, fomentando la participación de los estudiantes en soluciones locales.",
+  "enunciado": "¿Cuál de las siguientes propuestas responde mejor a este propósito formativo?",
   "opciones": {
-    "A": "Copiar definiciones del libro y calificarlas únicamente por extensión.",
-    "B": "Realizar un proyecto en el que los estudiantes investiguen un problema local, usen conceptos del área y propongan acciones viables.",
-    "C": "Aplicar una prueba memorística semanal sin retroalimentación.",
-    "D": "Reemplazar todas las clases por charlas motivacionales sin relación con contenidos."
+    "A": "Diseñar un proyecto pedagógico de aula donde los estudiantes investiguen una problemática ambiental de su comunidad, apliquen conceptos científicos del área y formulen alternativas de solución comunitarias.",
+    "B": "Asignar la transcripción de artículos de enciclopedias virtuales sobre problemas globales, evaluando la actividad a partir del rigor en la caligrafía y la extensión física del texto escrito.",
+    "C": "Realizar talleres de resolución mecánica de cuestionarios teóricos de opción múltiple, sin vinculación con contextos locales ni análisis crítico de la realidad social.",
+    "D": "Organizar charlas motivacionales de carácter informal a cargo de invitados externos, prescindiendo del abordaje de contenidos curriculares y de la participación activa del alumnado."
   },
-  "clave": "B",
-  "justificacion_clave": "B",
+  "clave": "A",
+  "justificacion_clave": "Los proyectos pedagógicos de aula basados en problemas locales articulan activamente el saber teórico (ecosistemas) con el Saber Hacer (solución del problema ambiental) y el Saber Ser (compromiso comunitario), cumpliendo con los fines del aprendizaje significativo y la formación ciudadana activa.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque reduce la actividad a copia de definiciones y no promueve análisis, participación ni relación con el contexto.",
-    "B": "Clave correcta.",
-    "C": "Es incorrecta porque una prueba memorística semanal sin retroalimentación limita el aprendizaje a reproducción de información.",
-    "D": "Es incorrecta porque las charlas motivacionales, si no se articulan con contenidos y experiencias de aprendizaje, no garantizan el desarrollo de competencias ni saberes."
+    "A": "Clave correcta.",
+    "B": "Representa una labor instrumental y mecánica de transcripción que no fomenta la comprensión, el análisis del entorno ni la autonomía.",
+    "C": "Limita el aprendizaje a la acumulación de datos descontextualizados mediante pruebas mecánicas de bajo nivel cognitivo.",
+    "D": "Sustituye la rigurosidad pedagógica y la mediación del docente por actividades amenas de entretenimiento pasivo desarticuladas del currículo."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem no exige que los estudiantes pertenezcan a un contexto específico ni presupone recursos extraordinarios. La actividad propuesta puede adaptarse a diferentes realidades institucionales y evalúa la capacidad de diseñar experiencias de aprendizaje significativas y contextualizadas."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Estructura didáctica clara."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Propósitos de la educación/CB14_I03.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

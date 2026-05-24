@@ -2,43 +2,43 @@
   "id_item": "CB03_I01",
   "estado": "LISTO_PARA_BANCO",
   "area": "Gestión directiva y comunitaria",
-  "tema": "PEI",
-  "subtema": "Participación de actores educativos",
-  "competencia": "Analizar procesos de construcción del PEI con enfoque participativo y corresponsable.",
+  "tema": "PEI y actores",
+  "subtema": "Construcción y Actualización Colectiva del PEI",
+  "competencia": "Lidera procesos de actualización y reforma del Proyecto Educativo Institucional (PEI) garantizando la participación de los estamentos de la comunidad educativa.",
   "nivel_cognitivo": "ANÁLISIS",
-  "dificultad_estimada": "BAJA",
-  "claim": "El evaluado identifica que el PEI requiere participación real de la comunidad educativa para su legitimidad y pertinencia.",
-  "evidencia": "Reconoce como debilidad institucional un proceso de actualización del PEI sin consulta ni deliberación con actores clave.",
-  "tarea": "Seleccionar la principal falla de un procedimiento de actualización del PEI.",
-  "contexto": "Una institución encarga la actualización del PEI a una sola persona y comunica el documento final sin espacios de participación.",
-  "enunciado": "¿Cuál es la debilidad principal de este procedimiento?",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica fallas procedimentales y normativas en los procesos de formulación o reforma del PEI vinculadas a la participación comunitaria.",
+  "evidencia": "Reconoce como falla la exclusión de la consulta, deliberación y consenso colectivos en la reforma curricular y comunitaria del PEI frente a supuestas restricciones administrativas o de asesores externos.",
+  "tarea": "Determinar la principal falla normativa e institucional en un procedimiento de actualización del PEI donde el rector contrata a un consultor y radica directamente el documento sin consulta comunitaria.",
+  "contexto": "Con el propósito de adaptar el currículo a las necesidades de la postpandemia, el rector de una institución educativa oficial decide contratar a un asesor externo para que reescriba el Proyecto Educativo Institucional (PEI). Una vez entregado el documento por el consultor, el rector lo radica directamente ante la Secretaría de Educación para su registro, omitiendo presentarlo a los docentes, estudiantes y padres de familia.",
+  "enunciado": "Con el propósito de adaptar el currículo a las necesidades de la postpandemia, el rector de una institución educativa oficial decide contratar a un asesor externo para que reescriba el Proyecto Educativo Institucional (PEI). Una vez entregado el documento por el consultor, el rector lo radica directamente ante la Secretaría de Educación para su registro, omitiendo presentarlo a los docentes, estudiantes y padres de familia. Teniendo en cuenta la normativa sobre la construcción del PEI (Ley 115 de 1994 y Decreto 1860 de 1994 / DUR 1075 de 2015), la principal falla en el procedimiento adoptado por el rector radica en que:",
   "opciones": {
-    "A": "Actualizar el PEI periódicamente, porque debe permanecer fijo durante años.",
-    "B": "Excluir la participación de la comunidad educativa en construcción y revisión del PEI.",
-    "C": "Permitir que el rector participe en el proceso institucional.",
-    "D": "Presentar el documento al consejo directivo para su análisis."
+    "A": "Se omitió el proceso de deliberación, consulta y consenso con los diferentes estamentos de la comunidad educativa, privando al PEI de legitimidad y pertinencia contextual.",
+    "B": "La radicación de la reforma del PEI ante la Secretaría de Educación requiere previamente la aprobación por votación directa de la asamblea municipal de padres de familia.",
+    "C": "Los asesores externos tienen prohibición legal expresa para redactar o participar en la modificación de documentos institucionales de colegios oficiales.",
+    "D": "El Consejo Académico es la única instancia facultada por la ley para contratar consultores y definir de forma de forma exclusiva la estructura metodológica del PEI."
   },
-  "clave": "B",
-  "justificacion_clave": "La omisión de participación comunitaria contradice el carácter colectivo y orientador del PEI.",
+  "clave": "A",
+  "justificacion_clave": "De acuerdo con el artículo 73 de la Ley 115 de 1994 y el Decreto 1860 de 1994, el PEI debe responder a especificaciones locales y ser elaborado y modificado con la participación de la comunidad educativa (docentes, estudiantes, familias, egresados). La reforma no puede ser un acto autocrático del rector ni delegarse enteramente a un externo sin validación interna.",
   "distractores_funcion": {
-    "A": "Error conceptual sobre actualización institucional.",
-    "B": "Clave correcta.",
-    "C": "Distractor por confusión de rol: el problema no es que participe el rector.",
-    "D": "Distractor plausible: presentar al consejo no es la falla central."
+    "A": "Clave correcta.",
+    "B": "Requisito externo falso: inventa una aprobación previa obligatoria por parte de una asamblea municipal de padres que no está contemplada en la normatividad educativa nacional.",
+    "C": "Prohibición de asesoría técnica: asume incorrectamente que la ley prohíbe la asesoría o acompañamiento de expertos externos en la gestión pedagógica institucional.",
+    "D": "Confusión de competencias directivas: confunde las facultades del Consejo Académico (orientación pedagógica) con las del rector (representación legal y ordenación del gasto) y las del Consejo Directivo (aprobación de reformas al PEI)."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Escenarios educativos generales; sin sesgos culturales innecesarios ni prerrequisitos externos no declarados."
+    "observaciones": "El ítem se basa en el principio pedagógico y legal de la democracia escolar en Colombia."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Lenguaje directo, vocabulario funcional y una sola tarea cognitiva por ítem."
+    "observaciones": "Enunciado completo y de lectura fluida. Las opciones están bien diferenciadas conceptualmente."
   },
   "metadata_editorial": {
-    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fuente": "content/items/stand-by/PEI y actores/CB03_I01.json",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

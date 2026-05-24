@@ -13,18 +13,18 @@
   "contexto": "Una estudiante empieza a faltar de manera reiterada. La institución sospecha que puede haber dificultades económicas, cuidado de hermanos menores o una situación familiar compleja. Algunos proponen esperar hasta final de periodo para sancionarla por fallas.",
   "enunciado": "Una estudiante empieza a faltar de manera reiterada. La institución sospecha que puede haber dificultades económicas, cuidado de hermanos menores o una situación familiar compleja. Algunos proponen esperar hasta final de periodo para sancionarla por fallas.\n\n¿Cuál actuación es más adecuada?",
   "opciones": {
-    "A": "Activar una alerta temprana, contactar a la familia o acudiente, indagar barreras, articular apoyo institucional y hacer seguimiento a la permanencia.",
-    "B": "Esperar al final del año y registrar únicamente la pérdida por inasistencia.",
-    "C": "Expulsarla por ausentismo sin indagar las causas.",
-    "D": "Ignorar el caso porque las ausencias no tienen relación con derechos educativos."
+    "A": "Registrar el ausentismo como alerta temprana, comunicarse inmediatamente con los acudientes para indagar las causales, concertar apoyos académicos flexibles y activar la remisión a orientación escolar si se identifican riesgos familiares o socioeconómicos.",
+    "B": "Aguardar a la finalización del periodo escolar para registrar la reprobación por inasistencia en la plataforma de calificaciones, sin mediar comunicación con el acudiente.",
+    "C": "Suspender provisionalmente la matrícula del estudiante por abandono injustificado del aula, liberando el cupo para otros aspirantes del sistema escolar.",
+    "D": "Abstenerse de intervenir argumentando que el ausentismo es una problemática de índole doméstica en la que la institución educativa carece de facultades legales de intromisión."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "Ante indicios de ausentismo reiterado, la escuela debe aplicar el principio de prevención y corresponsabilidad educativa (Código de la Infancia y la Adolescencia, Ley 1098 de 2006, artículo 42). Esto obliga a documentar la alerta temprana, contactar de inmediato a la familia para identificar las barreras que impiden la asistencia y, si es necesario, adaptar el currículo de manera flexible y activar el acompañamiento de bienestar para asegurar la permanencia.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque posterga la acción hasta cuando el daño puede haberse consolidado.",
-    "C": "Es incorrecta porque excluye sin valorar causas ni activar apoyos.",
-    "D": "Es incorrecta porque la inasistencia prolongada puede afectar el derecho a la educación."
+    "B": "Incorrecto. Postergar la intervención hasta el final del periodo académico consolida el riesgo de deserción y reprobación escolar, vulnerando el deber de la institución de velar por el acceso y permanencia del alumno.",
+    "C": "Incorrecto. Desafiliar o cancelar la matrícula del estudiante sin haber agotado los protocolos de búsqueda y acompañamiento vulnera el derecho a la educación y el debido proceso.",
+    "D": "Incorrecto. La inasistencia afecta de manera directa el derecho fundamental a la educación, por lo que la institución, al ser garante legal, tiene la obligación plena de intervenir y hacer seguimiento al caso."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Corresponsabilidad educativa, ausentismo y posición de garante/NFL_B05_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

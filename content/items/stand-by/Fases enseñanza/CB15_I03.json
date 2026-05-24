@@ -1,6 +1,6 @@
 {
   "id_item": "CB15_I03",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Didáctica",
   "tema": "Fases enseñanza",
   "subtema": "Comprensión del constructivismo",
@@ -13,18 +13,18 @@
   "contexto": "Durante una actividad de resolución de problemas, varios estudiantes proponen estrategias diferentes y algunos cometen errores conceptuales. El docente quiere mantener un enfoque constructivista sin dejar de orientar el aprendizaje.",
   "enunciado": "Durante una actividad de resolución de problemas, varios estudiantes proponen estrategias diferentes y algunos cometen errores conceptuales. El docente quiere mantener un enfoque constructivista sin dejar de orientar el aprendizaje.\n\n¿Cuál intervención es más adecuada?",
   "opciones": {
-    "A": "Retirar toda orientación para que los estudiantes descubran solos, aunque consoliden errores.",
-    "B": "Suspender la actividad y dictar la respuesta correcta para evitar discusiones.",
-    "C": "Formular preguntas, contrastar estrategias, ofrecer pistas y retroalimentar para que los estudiantes ajusten sus comprensiones.",
-    "D": "Calificar negativamente cualquier error inicial para que los estudiantes eviten equivocarse."
+    "A": "Abstenerse de intervenir y retirar la mediación para promover el autoaprendizaje autónomo, asumiendo que el descubrimiento debe ser puramente independiente.",
+    "B": "Interrumpir la actividad grupal para dictar y escribir en el tablero el procedimiento correcto, eliminando el debate didáctico y agilizando la sesión.",
+    "C": "Mediar el proceso formulando preguntas orientadoras, propiciando el contraste de estrategias entre compañeros, brindando andamios didácticos y retroalimentando.",
+    "D": "Registrar de inmediato una nota negativa ante cada error para incentivar la precisión y evitar que se habitúen a equivocarse en el aula."
   },
   "clave": "C",
-  "justificacion_clave": "C",
+  "justificacion_clave": "Desde el enfoque constructivista y la teoría de la Zona de Desarrollo Próximo (Vygotsky), el docente actúa como mediador del aprendizaje. Su intervención durante el desarrollo de una actividad no debe ser directiva (dar la respuesta) ni ausente (dejar al estudiante solo), sino de andamiaje: plantear preguntas que guíen, ofrecer pistas y modelar, permitiendo que el error sea valorado didácticamente como insumo de reflexión para reestructurar esquemas.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque el constructivismo no significa abandonar a los estudiantes ni retirar toda orientación pedagógica.",
-    "B": "Es incorrecta porque suspender la actividad y dictar la respuesta correcta sustituye la construcción activa del aprendizaje por transmisión directa.",
+    "A": "Incorrecto. Confunde la autonomía y la construcción del aprendizaje con el abandono pedagógico, lo que en muchos casos consolida ideas erróneas o desmotiva al estudiante por falta de andamiaje.",
+    "B": "Incorrecto. Representa un enfoque pedagógico tradicional de tipo directivo-conductista, que anula el proceso de razonamiento y la resolución activa de problemas por parte del alumnado.",
     "C": "Clave correcta.",
-    "D": "Es incorrecta porque calificar negativamente cualquier error inicial puede inhibir la participación y desconoce el error como insumo para aprender."
+    "D": "Incorrecto. Calificar el error inicial de manera punitiva inhibe la participación, genera clima afectivo adverso y contradice los principios de la evaluación formativa."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Fases enseñanza/CB15_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

@@ -1,45 +1,45 @@
 {
   "id_item": "CEOL_B08_I02",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Concepto de Enseñar",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Mediación pedagógica orientada a competencias",
   "tema": "Enseñar, formar, motivación didáctica y competencias socioemocionales",
-  "subtema": "Reducción de enseñar a explicar contenidos o dictar temas.",
+  "subtema": "Concepto de Enseñar",
   "competencia": "Mediación pedagógica orientada a competencias",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende que enseñar con enfoque de competencias exige diseñar ambientes, preguntas, actividades, mediaciones y evaluaciones que permitan al estudiante usar lo aprendido.",
-  "evidencia": "Selecciona una definición de enseñar orientada a la comprensión, aplicación y transferencia.",
-  "tarea": "Diferenciar enseñanza transmisiva de enseñanza orientada al desarrollo de competencias.",
-  "contexto": "Un docente afirma que enseñar consiste principalmente en dictar el tema completo para que los estudiantes lo copien. La coordinación académica le recuerda que, en un enfoque por competencias, enseñar implica orientar procesos más complejos.",
-  "enunciado": "Un docente afirma que enseñar consiste principalmente en dictar el tema completo para que los estudiantes lo copien. La coordinación académica le recuerda que, en un enfoque por competencias, enseñar implica orientar procesos más complejos.\n\n¿Qué significa realmente enseñar cuando se orienta hacia el desarrollo de competencias?",
+  "claim": "El evaluado comprende que la enseñanza orientada al desarrollo de competencias exige diseñar experiencias y mediaciones pedagógicas.",
+  "evidencia": "Distingue el enfoque constructivista de competencias frente a la simple transmisión o memorización pasiva de datos.",
+  "tarea": "Identificar la definición conceptual de enseñar en un enfoque basado en competencias.",
+  "contexto": "Un docente de secundaria sostiene que su función de enseñar consiste exclusivamente en dictar la totalidad del contenido del plan de área para que los estudiantes tomen apuntes en sus cuadernos. La coordinación académica propone reflexionar sobre esta práctica a la luz de los enfoques pedagógicos por competencias.",
+  "enunciado": "¿Qué implica enseñar de manera prioritaria bajo un enfoque orientado al desarrollo de competencias?",
   "opciones": {
-    "A": "Diseñar y mediar experiencias para que los estudiantes comprendan, apliquen, integren y movilicen saberes en contextos significativos.",
-    "B": "Transmitir información para que el estudiante la repita literalmente en una evaluación.",
-    "C": "Entregar guías sin acompañamiento para que cada estudiante resuelva solo sus dificultades.",
-    "D": "Evitar toda explicación docente para no intervenir en el aprendizaje."
+    "A": "Mediar y diseñar situaciones didácticas que desafíen al estudiante a movilizar sus saberes, habilidades y actitudes para resolver problemas complejos y contextualizados.",
+    "B": "Explicar exhaustivamente los contenidos teóricos del plan de estudios y verificar que los estudiantes los memoricen textualmente para la prueba final.",
+    "C": "Desarrollar guías de trabajo autónomo de carácter mecánico para que los estudiantes las resuelvan de forma individual sin mediación pedagógica directa.",
+    "D": "Suprimir la instrucción directa y los contenidos curriculares, permitiendo que el estudiante descubra los conceptos de forma espontánea y sin estructuración previa."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "Enseñar por competencias implica ir más allá del contenido memorístico. Exige que el docente sea un mediador que plantee problemas, promueva la integración de saberes teóricos y prácticos, y sitúe el aprendizaje para resolver retos reales.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque se limita a repetición literal.",
-    "C": "Es incorrecta porque deja al estudiante sin mediación.",
-    "D": "Es incorrecta porque el docente sigue teniendo función orientadora."
+    "B": "Representa el enfoque pedagógico tradicional transmisionista centrado en la repetición y memoria a corto plazo.",
+    "C": "Confunde la autonomía escolar con el abandono del docente, delegando el aprendizaje en guías mecánicas sin andamiaje.",
+    "D": "Incurre en un constructivismo radical o espontaneísmo pedagógico que elimina el rol de guía del educador y el valor de los conceptos científicos."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem no exige aplicar una metodología específica y se centra en la función pedagógica general de la enseñanza."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Vocabulario claro."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Enseñar, formar, motivación didáctica y competencias socioemocionales/CEOL_B08_I02.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

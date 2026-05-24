@@ -1,44 +1,44 @@
 {
   "id_item": "IDD_B15_I01",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Gestión curricular y normativa educativa",
+  "area": "Pedagogía y currículo",
   "tema": "Currículo oficial, oculto, nulo, PEI y DUR 1075",
   "subtema": "Currículo y PEI",
-  "competencia": "Distingue tipos de currículo y su articulación con PEI y marco normativo para valorar decisiones institucionales.",
-  "nivel_cognitivo": "ANÁLISIS",
-  "dificultad_estimada": "MEDIA-ALTA",
-  "claim": "Identifica la alternativa más adecuada según el criterio curricular y pedagógico evaluado en el caso.",
-  "evidencia": "Selecciona una única respuesta técnicamente defendible frente a distractores plausibles.",
-  "tarea": "Analizar la situación y elegir la mejor decisión curricular, didáctica o institucional.",
-  "contexto": "Un equipo académico revisa el Decreto Único Reglamentario 1075 y el Decreto 1421 sobre educación inclusiva. Algunos docentes consideran que la inclusión es un anexo aislado y no un componente estructural de la vida escolar.",
-  "enunciado": "Un equipo académico revisa el Decreto Único Reglamentario 1075 y el Decreto 1421 sobre educación inclusiva. Algunos docentes consideran que la inclusión es un anexo aislado y no un componente estructural de la vida escolar.\n\n¿Cuál interpretación es más adecuada?",
+  "competencia": "Articular la normatividad de educación inclusiva (Decreto 1421 de 2017) en los instrumentos de gestión curricular.",
+  "nivel_cognitivo": "ANALISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado analiza la incorporación de la política de inclusión del Decreto 1421 y del DUR 1075 en la planeación y la gestión del currículo escolar.",
+  "evidencia": "Selecciona la alternativa que integra la inclusión de forma estructural y transversal frente a prácticas segregadas o aisladas.",
+  "tarea": "Proponer el diseño organizativo más adecuado para incorporar las directrices de inclusión en el PEI y planes de área de la institución.",
+  "contexto": "Durante la revisión del Proyecto Educativo Institucional (PEI) a la luz del DUR 1075 y el Decreto 1421 de 2017 sobre educación inclusiva, un sector de la planta docente propone crear un aula independiente de apoyo para los estudiantes con discapacidad, argumentando que de esta forma recibirán una atención especializada sin alterar el ritmo de aprendizaje de los demás estudiantes en las aulas ordinarias.",
+  "enunciado": "La propuesta pedagógica que mejor se alinea con el marco normativo de inclusión educativa es:",
   "opciones": {
-    "A": "El DUR 1075 no tiene relación con la organización del sector educativo ni con la gestión escolar.",
-    "B": "El DUR 1075 compila y organiza la reglamentación educativa, y la inclusión debe integrarse de manera transversal al currículo, la planeación, la evaluación y la gestión institucional.",
-    "C": "La inclusión debe tratarse solo como un trámite externo al aula y sin relación con el PEI.",
-    "D": "El Decreto 1421 elimina la necesidad de currículo común para todos los estudiantes."
+    "A": "Integrar los apoyos de manera transversal en el aula regular a través del Diseño Universal para el Aprendizaje (DUA) y adaptaciones curriculares específicas (PIAR) que garanticen la participación conjunta de todos los estudiantes.",
+    "B": "Implementar el aula de apoyo independiente para que los estudiantes con discapacidad avancen a su propio ritmo con un currículo simplificado y sin interacción en áreas académicas básicas.",
+    "C": "Mantener a todos los estudiantes en el aula regular pero evaluándolos exclusivamente bajo los estándares oficiales comunes sin realizar ajustes curriculares, para asegurar la igualdad formal.",
+    "D": "Eximir de la evaluación sumativa y la asistencia regular a las asignaturas de alta complejidad a los estudiantes diagnosticados, garantizando su promoción automática al final del año."
   },
-  "clave": "B",
-  "justificacion_clave": "B",
+  "clave": "A",
+  "justificacion_clave": "El Decreto 1421 de 2017 establece que la inclusión no es segregación ni promoción automática sin procesos, sino la garantía de acceso, permanencia, calidad y participación en el aula regular a través de DUA y PIAR.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque el DUR sí estructura la reglamentación del sector educativo.",
-    "B": "Clave correcta.",
-    "C": "Es incorrecta porque la inclusión no es un asunto externo al aula.",
-    "D": "Es incorrecta porque la inclusión no elimina el currículo común, sino que exige apoyos y ajustes."
+    "A": "Clave correcta.",
+    "B": "Representa un modelo segregador (integración física pero no inclusión pedagógica) que contradice la norma.",
+    "C": "Supone una visión homogénea del currículo que desconoce la obligación legal de realizar ajustes razonables.",
+    "D": "Cae en el asistencialismo educativo o condescendencia pedagógica, vulnerando el derecho a recibir educación de calidad."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estandarizado y contexto institucional general, sin sesgos culturales innecesarios."
+    "observaciones": "Caso técnico y normativo general, sin sesgos religiosos o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado claro, tarea única y opciones homogéneas en estructura."
+    "observaciones": "Las siglas del sector educativo (DUA, PIAR, PEI) son de uso estándar en el magisterio colombiano."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Currículo oficial, oculto, nulo, PEI y DUR 1075/IDD_B15_I01.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

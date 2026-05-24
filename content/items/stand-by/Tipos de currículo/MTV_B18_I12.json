@@ -1,6 +1,6 @@
 {
   "id_item": "MTV_B18_I12",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "Tipos de currículo",
   "subtema": "Aplicación pedagógica",
@@ -13,18 +13,18 @@
   "contexto": "Una escuela rural decide enseñar ciencias y matemáticas a partir de problemas del cultivo local, uso del agua, clima y economía familiar, sin abandonar los objetivos académicos oficiales.",
   "enunciado": "Una escuela rural decide enseñar ciencias y matemáticas a partir de problemas del cultivo local, uso del agua, clima y economía familiar, sin abandonar los objetivos académicos oficiales.\n\n¿Qué principio curricular se evidencia?",
   "opciones": {
-    "A": "Contextualización curricular.",
-    "B": "Desconexión total del currículo.",
-    "C": "Currículo nulo.",
-    "D": "Rechazo del conocimiento académico."
+    "A": "Contextualización o pertinencia curricular.",
+    "B": "Flexibilización por omisión de estándares nacionales.",
+    "C": "Diseño de un currículo nulo con enfoque ambiental.",
+    "D": "Sustitución de saberes científicos por saberes populares sin articulación."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "La contextualización curricular consiste en relacionar los lineamientos y contenidos científicos universales del currículo oficial con las dinámicas socioculturales, geográficas y productivas del territorio, logrando un aprendizaje más significativo y pertinente para los estudiantes.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "La práctica conecta currículo y contexto.",
-    "C": "No se omite el aprendizaje.",
-    "D": "No se rechaza el conocimiento académico; se contextualiza."
+    "B": "Incorrecto. No se omiten los estándares nacionales; el caso aclara que no se abandonan los objetivos académicos oficiales.",
+    "C": "Incorrecto. El currículo nulo es la ausencia de temas, y aquí se está enseñando ciencias y matemáticas de forma activa.",
+    "D": "Incorrecto. No se sustituyen los saberes científicos, sino que se articulan con los problemas reales del cultivo local, la economía familiar y el agua."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Tipos de currículo/MTV_B18_I12.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

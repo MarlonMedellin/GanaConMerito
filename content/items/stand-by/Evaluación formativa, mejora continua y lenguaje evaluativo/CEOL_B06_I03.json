@@ -1,45 +1,45 @@
 {
   "id_item": "CEOL_B06_I03",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Evaluación Formativa y Mejora Continua",
   "tema": "Evaluación formativa, mejora continua y lenguaje evaluativo",
-  "subtema": "Uso de acciones de mejora como repetición mecánica de la misma evaluación fallida.",
+  "subtema": "Uso de acciones de mejora como repetición mecánica de la misma evaluación",
   "competencia": "Diseño de acciones de mejora",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende que una acción de mejora debe partir del análisis de dificultades, ajustar la enseñanza, ofrecer retroalimentación y permitir nuevas formas de demostrar el aprendizaje.",
-  "evidencia": "Selecciona una acción de mejora con características didácticas y formativas.",
-  "tarea": "Analizar una situación de bajo logro grupal y elegir una respuesta coherente con mejora continua.",
-  "contexto": "Después de una evaluación, un alto porcentaje de estudiantes no alcanza el logro esperado. El docente propone como única acción de mejora aplicar nuevamente el mismo examen, sin revisar errores, sin retroalimentar y sin modificar la mediación didáctica.",
-  "enunciado": "Después de una evaluación, un alto porcentaje de estudiantes no alcanza el logro esperado. El docente propone como única acción de mejora aplicar nuevamente el mismo examen, sin revisar errores, sin retroalimentar y sin modificar la mediación didáctica.\n\n¿Qué características debe tener una acción de mejora para no repetir el mismo error?",
+  "claim": "El evaluado diseña acciones de mejora eficaces a partir del análisis cualitativo del error y el ajuste de la práctica docente.",
+  "evidencia": "Selecciona estrategias de nivelación formativa que van más allá del reexamen memorístico o la modificación de la nota sin nueva evidencia.",
+  "tarea": "Resolver un caso sobre la correcta estructuración de un plan de mejoramiento académico escolar.",
+  "contexto": "Al revisar los resultados de una evaluación intermedia de matemáticas, el docente constata que el 70% del curso no logró comprender la resolución de fracciones mixtas. Para solucionar esto, el docente propone como plan de mejoramiento aplicar el mismo examen de manera inmediata en la siguiente clase, sin realizar retroalimentación ni modificar sus métodos didácticos.",
+  "enunciado": "¿Qué características debe tener un plan o acción de mejoramiento para que cumpla con los principios de la evaluación formativa?",
   "opciones": {
-    "A": "Partir del análisis de dificultades, ofrecer retroalimentación, ajustar estrategias didácticas, proponer apoyos y recoger nuevas evidencias de aprendizaje.",
-    "B": "Repetir el mismo examen hasta que algunos estudiantes memoricen las respuestas correctas.",
-    "C": "Bajar el nivel de exigencia sin revisar qué no fue comprendido.",
-    "D": "Cambiar la nota final sin solicitar nuevas evidencias de aprendizaje."
+    "A": "Analizar las dificultades recurrentes, proporcionar retroalimentación descriptiva, ajustar el diseño didáctico para abordar los vacíos conceptuales y permitir que los estudiantes demuestren su aprendizaje mediante nuevas evidencias.",
+    "B": "Reaplicar de forma sucesiva e idéntica la misma evaluación hasta que la memorización de los ítems permita elevar estadísticamente los promedios del grupo.",
+    "C": "Disminuir arbitrariamente los estándares de desempeño y el nivel de complejidad del instrumento, logrando la aprobación del grupo sin mediar procesos de nivelación conceptual.",
+    "D": "Modificar directamente la calificación numérica en la plataforma académica sin requerir el desarrollo de actividades académicas complementarias o nuevas evidencias de logro."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "En la evaluación formativa, el error es un insumo pedagógico clave. Si una alta proporción de estudiantes reprueba, es necesario que el docente replantee su enseñanza, aclare los vacíos detectados mediante retroalimentación y permita una nueva demostración de aprendizaje con un instrumento equivalente o alternativo.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque repetir el mismo examen puede reforzar memorización sin comprensión.",
-    "C": "Es incorrecta porque bajar la exigencia no soluciona la dificultad de aprendizaje.",
-    "D": "Es incorrecta porque cambiar la nota sin nueva evidencia no constituye mejora formativa."
+    "B": "Incurre en el error de la repetición inútil que solo evalúa la capacidad de memorización a corto plazo y la familiarización del test sin comprensión real.",
+    "C": "Propone bajar la exigencia y el rigor de los estándares nacionales en vez de intervenir didácticamente en las dificultades de los educandos.",
+    "D": "Representa una solución meramente formal e irregular de alterar las planillas para aparentar un éxito de promoción escolar inexistente."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem evita culpar exclusivamente a los estudiantes y orienta la mejora hacia decisiones didácticas, apoyos y nuevas evidencias."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Lógica pedagógica sólida."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/CEOL_B06_I03.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

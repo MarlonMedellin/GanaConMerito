@@ -1,44 +1,44 @@
 {
   "id_item": "IDD_B17_I01",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Comprensión lectora y producción textual",
-  "tema": "Aptitud verbal y organización textual",
-  "subtema": "Concatenación y cronología",
+  "area": "Aptitud verbal",
+  "tema": "Comprensión de lectura y coherencia textual",
+  "subtema": "Ordenación de información",
   "competencia": "Analiza la organización lógica de textos y selecciona criterios de coherencia, cohesión y progresión temática.",
-  "nivel_cognitivo": "ANÁLISIS",
+  "nivel_cognitivo": "COMPRENSIÓN-APLICACIÓN",
   "dificultad_estimada": "MEDIA",
-  "claim": "Reconoce estructuras textuales y relaciones entre párrafos para organizar información de forma coherente.",
-  "evidencia": "Identifica la opción que mejor aplica un criterio de organización textual al caso presentado.",
-  "tarea": "Inferir la función textual o el orden lógico más adecuado según marcas discursivas del enunciado.",
-  "contexto": "En un ejercicio de organización textual sobre el accidente del dirigible Hindenburg, aparecen varios párrafos desordenados. Uno de ellos presenta una fecha histórica, el hecho central y el contexto general del accidente.",
-  "enunciado": "En un ejercicio de organización textual sobre el accidente del dirigible Hindenburg, aparecen varios párrafos desordenados. Uno de ellos presenta una fecha histórica, el hecho central y el contexto general del accidente.\n\n¿Cómo se determina cuál párrafo funciona como introducción o enganche del texto?",
+  "claim": "El evaluado determina la secuencia lógica y cronológica correcta de un grupo de párrafos sobre un hecho histórico.",
+  "evidencia": "Selecciona el orden de los enunciados que respeta la progresión causal e introductoria del texto.",
+  "tarea": "Ordenar lógicamente las oraciones para construir un texto coherente.",
+  "contexto": "Considere el siguiente conjunto de oraciones desordenadas sobre el accidente del dirigible Hindenburg:",
+  "enunciado": "1. El dirigible Hindenburg, orgullo de la aviación comercial alemana de los años treinta, se inflaba con hidrógeno, un gas altamente inflamable.\n2. El 6 de mayo de 1937, durante su maniobra de amarre en la estación de Lakehurst, una chispa inesperada desencadenó una combustión inmediata.\n3. En menos de un minuto, la colosal estructura de la aeronave quedó reducida a cenizas frente a la mirada atónita de periodistas y espectadores.\n4. Este trágico accidente, que cobró la vida de 36 personas, puso un punto final definitivo al transporte comercial de pasajeros en dirigibles.\n\n¿Cuál es el orden lógico y coherente para organizar las oraciones y reconstruir el párrafo?",
   "opciones": {
-    "A": "Identificando el párrafo que presenta la fecha o contexto inicial del hecho histórico y abre la secuencia de acontecimientos.",
-    "B": "Escogiendo el párrafo que contiene la mayor cantidad de detalles técnicos, aunque no presente el tema.",
-    "C": "Seleccionando el párrafo que contiene la conclusión o valoración final del accidente.",
-    "D": "Eligiendo cualquier párrafo, porque en los textos históricos el orden no depende de la cronología."
+    "A": "1 - 2 - 3 - 4",
+    "B": "2 - 1 - 4 - 3",
+    "C": "1 - 3 - 2 - 4",
+    "D": "2 - 3 - 1 - 4"
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "La opción A es correcta porque la secuencia 1-2-3-4 mantiene la coherencia lógica, cronológica y causal: la oración 1 define al dirigible y menciona el hidrógeno (antecedente crítico); la 2 sitúa el momento histórico y el desencadenante (la chispa); la 3 describe el efecto inmediato de la combustión; y la 4 concluye con el impacto histórico de largo plazo.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque el detalle técnico puede aparecer en el desarrollo.",
-    "C": "Es incorrecta porque la conclusión no introduce la secuencia.",
-    "D": "Es incorrecta porque la cronología sí orienta la organización del texto."
+    "B": "Comienza con la fecha (2) pero introduce una regresión conceptual al definir el hidrógeno después de hablar de la combustión, rompiendo la progresión causal y terminando con el efecto antes de la conclusión física.",
+    "C": "Pone la destrucción (3) antes del desencadenante (2), lo cual anula la relación causa-efecto.",
+    "D": "Altera el orden cronológico al introducir la destrucción física de la nave (3) antes de explicar la naturaleza del gas (1), dejando la causa sin explicación lógica."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Contexto neutral y lenguaje técnico funcional, sin referencias culturales excluyentes."
+    "observaciones": "La temática histórica sobre aviación es de dominio universal y no genera sesgos de acceso."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones comparables en registro y extensión."
+    "observaciones": "Numeración clara de enunciados, longitud homogénea en opciones y tipografía estándar."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Aptitud verbal y organización textual/IDD_B17_I01.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

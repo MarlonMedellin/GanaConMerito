@@ -7,39 +7,39 @@
   "competencia": "Valora medidas correctivas según debido proceso, proporcionalidad y congruencia frente a situaciones de convivencia.",
   "nivel_cognitivo": "JUICIO",
   "dificultad_estimada": "MEDIA",
-  "claim": "Reconoce la actuación pedagógica o institucional más adecuada de acuerdo con el enfoque evaluado en el caso.",
-  "evidencia": "Selecciona una única alternativa defendible técnicamente y coherente con el constructo del ítem.",
-  "tarea": "Analizar la situación presentada y elegir la respuesta más pertinente según criterios pedagógicos y normativos aplicables.",
-  "contexto": "Un estudiante es señalado por una falta grave. La institución decide sancionarlo sin informarle con claridad los hechos atribuidos, sin permitirle presentar descargos y sin revisar su versión ni la de su acudiente.",
-  "enunciado": "Un estudiante es señalado por una falta grave. La institución decide sancionarlo sin informarle con claridad los hechos atribuidos, sin permitirle presentar descargos y sin revisar su versión ni la de su acudiente.\n\n¿Qué garantía básica se vulnera?",
+  "claim": "Valora la adecuación de actuaciones pedagógicas e institucionales bajo criterios normativos y constitucionales.",
+  "evidencia": "Selecciona la respuesta que demuestra la correcta aplicación del marco normativo y pedagógico colombiano.",
+  "tarea": "Analizar el caso y determinar la opción correcta conforme a derecho y principios pedagógicos.",
+  "contexto": "Un docente reporta a un estudiante por presunto fraude académico en una prueba. El coordinador procede a sancionar al estudiante suspendiendo su participación en clases presenciales, sin notificar los cargos a la familia ni permitir que el estudiante presente descargos sobre lo sucedido.",
+  "enunciado": "Un docente reporta a un estudiante por presunto fraude académico en una prueba. El coordinador procede a sancionar al estudiante suspendiendo su participación en clases presenciales, sin notificar los cargos a la familia ni permitir que el estudiante presente descargos sobre lo sucedido.\n\n¿Qué garantía constitucional del debido proceso se vulnera con esta decisión institucional?",
   "opciones": {
-    "A": "El derecho de defensa y contradicción dentro del debido proceso.",
-    "B": "La obligación de sancionar sin escuchar para ahorrar tiempo.",
-    "C": "La posibilidad de imponer medidas con base en rumores.",
-    "D": "La facultad del estudiante para anular cualquier norma escolar."
+    "A": "El derecho a la defensa y contradicción, puesto que se priva al estudiante y a su familia de conocer los cargos de forma previa y presentar descargos o pruebas.",
+    "B": "La presunción de veracidad del informe del docente, dado que el reporte escrito constituye prueba plena e indiscutible que exime del descargos del estudiante.",
+    "C": "La confidencialidad del proceso administrativo, ya que al involucrar al acudiente en las etapas del trámite se expone la intimidad del estudiante ante terceros.",
+    "D": "La autonomía directiva del rector, la cual le permite sancionar de manera discrecional en situaciones críticas de indisciplina sin mediación de las instancias ordinarias."
   },
   "clave": "A",
   "justificacion_clave": "A",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque la eficiencia no justifica vulnerar garantías.",
-    "C": "Es incorrecta porque los rumores no sustituyen el procedimiento.",
-    "D": "Es incorrecta porque defenderse no implica desconocer normas escolares."
+    "B": "Error de valoración probatoria: en derecho disciplinario escolar, ningún reporte o testimonio docente tiene carácter de prueba absoluta que anule el derecho a ser escuchado.",
+    "C": "Desconocimiento normativo: la participación de los padres o acudientes en los procesos disciplinarios de menores es un requisito de ley y no una violación de intimidad.",
+    "D": "Concepto autoritario desviado: la autonomía del rector no le otorga facultades discrecionales absolutas sobre los derechos fundamentales de los estudiantes."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo y normativo estándar, sin referencias discriminatorias ni barreras culturales innecesarias."
+    "observaciones": "Lenguaje formal, neutral y apegado a la jurisprudencia colombiana en materia de derechos y deberes educativos, libre de sesgos territoriales o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciados con tarea única y opciones comparables en estructura y longitud."
+    "observaciones": "Redacción estructurada con enunciados independientes y opciones de longitud y complejidad gramatical homogéneas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I05.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

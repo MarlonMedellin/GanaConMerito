@@ -1,45 +1,45 @@
 {
   "id_item": "IDD_B11_I04",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Error y evaluación formativa",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y currículo",
   "tema": "Error, conflicto cognitivo y reestructuración de esquemas",
-  "subtema": "Uso de la evaluación únicamente para clasificar o sancionar errores.",
-  "competencia": "Uso pedagógico de evidencias de error",
+  "subtema": "Uso de la evaluación únicamente para clasificar o sancionar errores",
+  "competencia": "Utilizar el análisis de errores frecuentes colectivos en la evaluación para el ajuste y rediseño de las estrategias de enseñanza.",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende que los errores acumulados en una evaluación no solo informan una nota, sino decisiones pedagógicas de mejora.",
-  "evidencia": "Selecciona una actuación que combina análisis de errores, retroalimentación y ajuste didáctico.",
-  "tarea": "Analizar resultados de evaluación y elegir una respuesta formativa.",
-  "contexto": "Después de revisar una evaluación, el docente nota que varios estudiantes cometieron errores similares. En lugar de limitarse a poner una nota, decide usar esa información para mejorar la enseñanza.",
-  "enunciado": "Después de revisar una evaluación, el docente nota que varios estudiantes cometieron errores similares. En lugar de limitarse a poner una nota, decide usar esa información para mejorar la enseñanza.\n\n¿Qué actuación corresponde a una evaluación formativa?",
+  "claim": "El evaluado utiliza los resultados de la evaluación sumativa o formativa para reorientar el diseño didáctico y abordar los errores frecuentes.",
+  "evidencia": "Elige la estrategia que reevalúa el proceso metodológico del docente a partir del análisis del desempeño colectivo del curso.",
+  "tarea": "Determinar la acción pedagógica adecuada ante un patrón de rendimiento deficiente en una prueba de fin de periodo.",
+  "contexto": "Tras tabular los resultados de la evaluación sumativa de Matemáticas, un docente encuentra que el 70% del grupo de estudiantes cometió el mismo tipo de error al resolver problemas que implican la estimación de magnitudes de área y volumen.",
+  "enunciado": "Desde la perspectiva de la evaluación formativa y la mejora continua del servicio educativo, la actuación docente más pertinente es:",
   "opciones": {
-    "A": "Registrar las notas y cerrar el tema definitivamente.",
-    "B": "Identificar patrones de error, retroalimentar a los estudiantes, ajustar la estrategia didáctica y proponer nuevas evidencias de aprendizaje.",
-    "C": "Clasificar al grupo como incapaz y avanzar al siguiente tema.",
-    "D": "Aplicar el mismo examen sin explicar los errores."
+    "A": "Diseñar un plan de nivelación que parta de la modelación de situaciones cotidianas con materiales concretos, identificando qué obstaculizó la comprensión de la magnitud antes de avanzar con la programación temática.",
+    "B": "Continuar con el siguiente tema planeado en el currículo oficial y citar a reuniones individuales a las familias de los estudiantes que reprobaron para trasladarles la responsabilidad del refuerzo.",
+    "C": "Modificar el peso porcentual de la evaluación de fin de periodo en la planilla de calificaciones para reducir el impacto numérico de la pérdida masiva en el rendimiento del grupo.",
+    "D": "Aplicar la misma prueba de manera idéntica el día siguiente sin realizar variaciones didácticas, con el fin de que los estudiantes aprendan la respuesta por repetición."
   },
-  "clave": "B",
-  "justificacion_clave": "B",
+  "clave": "A",
+  "justificacion_clave": "En el marco formativo, la alta frecuencia de un error indica una dificultad didáctica o conceptual colectiva que exige al docente reevaluar su práctica pedagógica y rediseñar su estrategia de aula para asegurar la comprensión de los estudiantes antes de avanzar.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque cierra el proceso sin mejora.",
-    "B": "Clave correcta.",
-    "C": "Es incorrecta porque emite un juicio de valor sobre el grupo.",
-    "D": "Es incorrecta porque repetir sin mediación no es evaluación formativa."
+    "A": "Clave correcta.",
+    "B": "Evade la responsabilidad del diseño didáctico escolar responsabilizando exclusivamente al contexto familiar de los estudiantes.",
+    "C": "Acción puramente administrativa de maquillaje numérico de notas que oculta el problema del aprendizaje sin resolverlo.",
+    "D": "Supone un conductismo elemental por repetición mecánica de reactivos, el cual no garantiza cambio conceptual ni comprensión real de la estimación."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem evita etiquetar estudiantes y promueve decisiones pedagógicas basadas en evidencia."
+    "observaciones": "Promueve la responsabilidad del docente en el proceso formativo sin sesgos externos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Redacción clara, terminología del magisterio."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Error, conflicto cognitivo y reestructuración de esquemas/IDD_B11_I04.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

@@ -1,0 +1,45 @@
+{
+  "id_item": "CEOL_B11_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión escolar y pedagógica",
+  "tema": "Proyecto Educativo Institucional (PEI)",
+  "subtema": "Modificación y ruta del PEI",
+  "competencia": "Aplicar la normatividad de diseño, evaluación y modificación del Proyecto Educativo Institucional (PEI) según el Decreto 1075 de 2015.",
+  "nivel_cognitivo": "COMPRENSIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado identifica la ruta e instancia correspondiente para modificar un componente sustancial del PEI.",
+  "evidencia": "Selecciona el Consejo Directivo como la instancia legal competente para aprobar reformas al PEI, tras consulta a los estamentos.",
+  "tarea": "Determinar el procedimiento legal e institucional correcto para reformar el sistema de evaluación contenido en el PEI.",
+  "contexto": "Con el propósito de actualizar el Proyecto Educativo Institucional (PEI) y modificar el enfoque del Sistema Institucional de Evaluación de Estudiantes (SIEE), el rector de una institución decide decretar los cambios de forma directa y autónoma mediante resolución rectoral de inicio de año.",
+  "enunciado": "De acuerdo con el Decreto 1075 de 2015, ¿cuál es la ruta legal obligatoria para aprobar una modificación al PEI?",
+  "opciones": {
+    "A": "La modificación debe ser propuesta por el rector, aprobada directamente por la secretaría de educación departamental o municipal y notificada posteriormente a los docentes.",
+    "B": "La propuesta de reforma debe ser presentada ante el Consejo Académico para su estudio y recomendación, y aprobada finalmente por el Consejo Directivo como máximo órgano del gobierno escolar.",
+    "C": "Cualquier modificación al PEI debe ser sometida a plebiscito público en la junta de padres de familia para que su decisión sea vinculante, prescindiendo de los consejos internos.",
+    "D": "El rector posee la facultad legal absoluta para modificar de forma directa y unilateral cualquier aspecto del PEI, de acuerdo con su autonomía administrativa."
+  },
+  "clave": "B",
+  "justificacion_clave": "El Proyecto Educativo Institucional (PEI) y sus componentes esenciales (como el SIEE) son de resorte de la autonomía de la institución pero su modificación formal exige la participación de los estamentos educativos: requiere la deliberación de propuestas por el Consejo Académico (Art. 2.4.1.1.6 Decreto 1075) y la aprobación del Consejo Directivo (Art. 2.4.1.1.5 Decreto 1075) como órgano colegiado supremo de gobierno escolar.",
+  "distractores_funcion": {
+    "A": "Vulnera la autonomía escolar de la institución al trasladar una decisión del gobierno escolar local de forma directa a la secretaría de educación.",
+    "B": "Clave correcta.",
+    "C": "Incurre en un error procedimental al atribuir facultades decisorias estatutarias a la asamblea de padres, la cual es un órgano de consulta y apoyo pero no de decisión formal sobre reformas del PEI.",
+    "D": "Incurre en autoritarismo administrativo y desconoce la existencia legal del gobierno escolar tripartito y vinculante."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem evalúa las reglas del Gobierno Escolar aplicables en todo el territorio colombiano."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción clara, opciones balanceadas sintácticamente."
+  },
+  "metadata_editorial": {
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
+}

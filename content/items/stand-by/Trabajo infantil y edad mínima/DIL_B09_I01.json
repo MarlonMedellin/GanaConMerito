@@ -2,43 +2,43 @@
   "id_item": "DIL_B09_I01",
   "estado": "LISTO_PARA_BANCO",
   "area": "Protección integral de la niñez",
-  "tema": "Trabajo infantil",
+  "tema": "Trabajo infantil y edad mínima",
   "subtema": "Edad mínima y garantías",
   "competencia": "Reconocer límites legales del trabajo adolescente y su finalidad protectora.",
-  "nivel_cognitivo": "COMPRENSIÓN",
+  "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado identifica la edad mínima legal de admisión al trabajo adolescente en Colombia dentro de un enfoque de protección.",
-  "evidencia": "Selecciona la edad mínima correcta para admisión al trabajo adolescente conforme al marco legal citado.",
-  "tarea": "Elegir la edad mínima legal para trabajo adolescente en Colombia.",
-  "contexto": "Una institución orienta a una familia sobre posibilidades de trabajo formal para un estudiante adolescente y recuerda que existen umbrales de edad y protección.",
-  "enunciado": "¿Cuál es la edad mínima legal de admisión al trabajo adolescente en Colombia?",
+  "claim": "El evaluado identifica la edad mínima legal de admisión al trabajo adolescente en Colombia dentro de un enfoque de protección integral.",
+  "evidencia": "Reconoce que a los 15 años se fija el umbral legal para solicitar autorización de trabajo protegido, prohibiendo el trabajo infantil por debajo de esta edad.",
+  "tarea": "Determinar la actuación idónea de un orientador frente a un caso de desvinculación escolar por inicio de trabajo infantil.",
+  "contexto": "Un padre de familia acude a la oficina de orientación escolar para retirar del plantel a su hijo de 13 años. El padre argumenta que debido a la difícil situación económica del hogar, el menor ha sido contratado a tiempo completo en un taller de mecánica y que su educación continuará en casa de manera informal.",
+  "enunciado": "Ante esta situación, ¿cuál de las siguientes respuestas del orientador es coherente con el marco de protección integral y la normatividad laboral de infancia en Colombia?",
   "opciones": {
-    "A": "12 años.",
-    "B": "14 años.",
-    "C": "15 años.",
-    "D": "18 años sin excepción."
+    "A": "Explicar que la edad mínima de admisión al trabajo en Colombia es de 15 años y que, al tratarse de un menor de 13 años, el trabajo está prohibido, por lo cual se debe garantizar su permanencia en el sistema educativo y activar la ruta de protección si es necesario.",
+    "B": "Autorizar el retiro escolar del estudiante bajo el principio de autonomía familiar y libre desarrollo de la personalidad, aconsejando al tallerista que asigne tareas livianas.",
+    "C": "Tramitar de forma inmediata una licencia o permiso de trabajo especial ante la rectoría de la institución para avalar la vinculación laboral del estudiante sin perder el cupo.",
+    "D": "Aceptar la desvinculación escolar, sugiriendo que el menor continúe su formación de manera autodidacta durante las jornadas nocturnas."
   },
-  "clave": "C",
-  "justificacion_clave": "Corresponde al umbral legal de admisión al trabajo adolescente bajo autorización y condiciones de protección.",
+  "clave": "A",
+  "justificacion_clave": "Conforme a la Ley 1098 de 2006 (Artículo 35), la edad mínima general de admisión al trabajo en Colombia es de 15 años, requiriendo autorización previa del Inspector de Trabajo. El trabajo infantil por debajo de este límite está terminantemente prohibido. La escuela tiene el deber de garantizar el derecho a la educación del menor y reportar de inmediato a las autoridades competentes ante riesgos de explotación.",
   "distractores_funcion": {
-    "A": "Edad inferior al mínimo legal.",
-    "B": "Error frecuente por confusión con otros umbrales.",
-    "C": "Clave correcta.",
-    "D": "Desconoce régimen de trabajo adolescente autorizado."
+    "A": "Clave correcta.",
+    "B": "Incurre en una omisión de la posición de garante institucional al avalar el trabajo de un menor de 13 años bajo una supuesta autonomía familiar que vulnera los derechos del niño.",
+    "C": "Muestra ignorancia normativa grave, puesto que los colegios o rectores carecen por completo de competencias para emitir licencias de trabajo.",
+    "D": "Avalar el retiro y sugerir el estudio nocturno informal en un niño de 13 años profundiza la vulneración y desconoce la prohibición legal del trabajo nocturno para menores."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje funcional y contexto general; evita sesgos culturales o exigencias externas no declaradas."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado directo, paralelismo en opciones y una tarea cognitiva principal por ítem."
+    "observaciones": "Caso ético-legal muy claro."
   },
   "metadata_editorial": {
-    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "fuente": "content/items/stand-by/Trabajo infantil y edad mínima/DIL_B09_I01.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

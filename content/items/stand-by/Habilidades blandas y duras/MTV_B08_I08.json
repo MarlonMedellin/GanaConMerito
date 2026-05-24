@@ -1,45 +1,45 @@
 {
   "id_item": "MTV_B08_I08",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Gestión educativa",
-  "tema": "Habilidades blandas y duras",
-  "subtema": "Aplicación pedagógica",
-  "competencia": "Juicio pedagógico",
-  "nivel_cognitivo": "APLICACION",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Competencias comportamentales",
+  "tema": "Trabajo en equipo",
+  "subtema": "Colaboración docente",
+  "competencia": "Participa de manera activa y cooperativa en el diseño de planes institucionales, respetando la diversidad de opiniones y orientando el esfuerzo a metas comunes (Decreto 815 de 2018).",
+  "nivel_cognitivo": "APLICACIÓN",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "Un equipo docente debe diseñar una estrategia para mejorar la convivencia escolar. Una profesora escucha a sus colegas, propone ideas, acepta ajustes, distribuye tareas y cumple los compromisos acordados.",
-  "enunciado": "Un equipo docente debe diseñar una estrategia para mejorar la convivencia escolar. Una profesora escucha a sus colegas, propone ideas, acepta ajustes, distribuye tareas y cumple los compromisos acordados.\n\n¿Qué habilidad blanda evidencia principalmente?",
+  "claim": "El docente propone estrategias de integración y concertación que resuelven disensos en equipos de planificación pedagógica.",
+  "evidencia": "Selecciona una conducta orientada a unificar criterios dispares sobre convivencia escolar mediante el diálogo constructivo.",
+  "tarea": "Identificar la actuación cooperativa que mejor promueve el consenso en el diseño de un plan de convivencia institucional.",
+  "contexto": "Durante una reunión para diseñar una estrategia de convivencia escolar, los docentes muestran posturas encontradas: un sector exige medidas severas y punitivas frente a las faltas, mientras que otro defiende un enfoque exclusivamente de diálogo restaurativo.",
+  "enunciado": "Para demostrar la competencia de trabajo en equipo y alcanzar una propuesta unificada, un docente participante debe:",
   "opciones": {
-    "A": "Trabajo en equipo.",
-    "B": "Aislamiento profesional.",
-    "C": "Memorización de contenidos.",
-    "D": "Dominio exclusivo de una fórmula matemática."
+    "A": "Adoptar una postura neutral y adherirse a la decisión de la mayoría para evitar fricciones y agilizar la aprobación del documento.",
+    "B": "Proponer un análisis comparativo de las propuestas para identificar puntos de encuentro y estructurar una estrategia mixta que combine la restitución de vínculos con límites normativos claros.",
+    "C": "Defender de forma individual su propia postura argumentando que su experiencia previa en otras instituciones garantiza el éxito de esa metodología.",
+    "D": "Sugerir que sea la coordinación de convivencia la que determine la estrategia definitiva para evitar confrontaciones entre colegas."
   },
-  "clave": "A",
-  "justificacion_clave": "A",
+  "clave": "B",
+  "justificacion_clave": "La opción B es correcta porque el trabajo en equipo en el sector público requiere una actitud colaborativa que valore las diversas perspectivas y busque sinergias para formular soluciones compartidas, alineadas con los objetivos institucionales de la convivencia.",
   "distractores_funcion": {
-    "A": "Clave correcta.",
-    "B": "La situación muestra colaboración, no aislamiento.",
-    "C": "La memoria de contenidos no explica la conducta descrita.",
-    "D": "El dominio de una fórmula no corresponde al trabajo colaborativo."
+    "A": "Refleja conformismo y pasividad, lo que no contribuye al enriquecimiento técnico del trabajo grupal.",
+    "B": "Clave correcta.",
+    "C": "Evidencia individualismo y resistencia al consenso, priorizando el criterio personal sobre la construcción colectiva.",
+    "D": "Representa una actitud de delegación del trabajo grupal y evasión del proceso de concertación profesional."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem presenta una conducta observable sin depender de rasgos personales subjetivos."
+    "observaciones": "Plantea un debate pedagógico común a cualquier contexto escolar público."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Redacción fluida, sin ambigüedades ni tecnicismos innecesarios."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I08.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

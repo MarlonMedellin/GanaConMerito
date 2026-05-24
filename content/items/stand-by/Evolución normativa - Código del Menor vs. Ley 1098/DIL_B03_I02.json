@@ -11,20 +11,20 @@
   "evidencia": "Selecciona la interpretación correcta de la situación irregular.",
   "tarea": "Interpretar un concepto histórico-jurídico.",
   "contexto": "En una clase de legislación educativa se explica que el antiguo Código del Menor trabajaba con la noción de situación irregular.",
-  "enunciado": "En una clase de legislación educativa se explica que el antiguo Código del Menor trabajaba con la noción de situación irregular.\n\n¿Qué significaba principalmente ese enfoque?",
+  "enunciado": "En el marco del análisis de la evolución normativa colombiana sobre la infancia, ¿qué implicaba conceptualmente el enfoque de situación irregular que caracterizaba al antiguo Código del Menor?",
   "opciones": {
-    "A": "Que la intervención se centraba en menores ubicados en condiciones como abandono, peligro, carencia de protección o infracción, desde una lógica tutelar.",
-    "B": "Que todos los niños eran reconocidos de forma expresa como sujetos plenos de derechos en igualdad de condiciones.",
-    "C": "Que la escuela no tenía ninguna obligación frente a la protección de menores.",
-    "D": "Que los niños podían decidir sin acompañamiento cualquier asunto jurídico."
+    "A": "Que el Estado intervenía de manera asistencialista o sancionatoria únicamente cuando el menor se encontraba en una condición de vulnerabilidad extrema, peligro o infracción a la ley, asumiéndolo como objeto de protección o tutela.",
+    "B": "Que el marco jurídico garantizaba la exigibilidad de todos los derechos humanos de la infancia de forma universal, preventiva y permanente, sin distinción de su condición social.",
+    "C": "Que se eximía a los jueces de menores de cualquier responsabilidad legal en la toma de medidas de internamiento de niños en instituciones estatales.",
+    "D": "Que la escuela asumía la tutoría legal definitiva y la patria potestad de los estudiantes cuando estos presentaban bajo rendimiento académico o problemas de conducta."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "El enfoque de situación irregular intervenía ex post (después del hecho), etiquetando a los niños bajo categorías marginales ('menores') y limitando la acción estatal a medidas asistenciales o correccionales impositivas, sin un enfoque preventivo o universal de derechos humanos.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque corresponde al enfoque garantista posterior.",
-    "C": "Es incorrecta porque el Código sí contemplaba protección, aunque desde otro modelo.",
-    "D": "Es incorrecta porque no describe el enfoque de situación irregular."
+    "B": "Este concepto describe la doctrina de protección integral de la Ley 1098, no el paradigma anterior.",
+    "C": "Falso: bajo la situación irregular los jueces de menores contaban con una discrecionalidad absoluta y potestad tutelar directa sobre el destino de los niños.",
+    "D": "Incurre en un error grosero al otorgar funciones de patria potestad de forma automática a los colegios por causas académicas."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Evolución normativa - Código del Menor vs. Ley 1098/DIL_B03_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": false
   }

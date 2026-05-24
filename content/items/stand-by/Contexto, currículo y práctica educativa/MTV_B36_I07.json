@@ -7,24 +7,24 @@
   "competencia": "Analiza decisiones curriculares y didácticas a partir del contexto institucional y del propósito formativo.",
   "nivel_cognitivo": "ANÁLISIS",
   "dificultad_estimada": "MEDIA-ALTA",
-  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada en el caso planteado.",
-  "evidencia": "Selecciona una alternativa única, consistente con el criterio evaluado y superior frente a distractores plausibles.",
-  "tarea": "Analizar la situación y elegir la mejor decisión según el enfoque del ítem.",
+  "claim": "Identifica sesgos de atribución y fallas metodológicas derivados de la descontextualización de los instrumentos de evaluación.",
+  "evidencia": "Selecciona la opción que explica por qué aplicar pruebas culturalmente descontextualizadas invalida el juicio de valor pedagógico.",
+  "tarea": "Analizar el caso del docente rural y determinar la falla metodológica y ética de su práctica evaluativa.",
   "contexto": "Un docente evalúa comprensión lectora usando únicamente textos urbanos desconocidos para un grupo rural, sin ninguna mediación ni conexión con sus experiencias. Luego interpreta los bajos resultados como falta de capacidad.",
   "enunciado": "Un docente evalúa comprensión lectora usando únicamente textos urbanos desconocidos para un grupo rural, sin ninguna mediación ni conexión con sus experiencias. Luego interpreta los bajos resultados como falta de capacidad.\n\n¿Qué falla presenta su práctica?",
   "opciones": {
-    "A": "Desconoce el contexto y puede confundir barreras culturales con falta de capacidad.",
-    "B": "Evalúa de manera perfectamente contextualizada.",
-    "C": "Respeta todos los saberes previos.",
-    "D": "Demuestra evaluación formativa integral."
+    "A": "Ignora las barreras de pertinencia cultural y comete un sesgo de atribución al calificar la diferencia como déficit de aprendizaje.",
+    "B": "Emplea una evaluación de base estandarizada orientada a garantizar la equidad de condiciones para la promoción escolar.",
+    "C": "Carece de rigurosidad metodológica al omitir la aplicación de pruebas estandarizadas nacionales para contrastar resultados.",
+    "D": "Utiliza criterios pedagógicos de evaluación diagnóstica para identificar las limitaciones cognitivas del grupo rural."
   },
   "clave": "A",
-  "justificacion_clave": "La evaluación debe considerar pertinencia cultural y mediación para no convertir diferencias contextuales en déficit.",
+  "justificacion_clave": "Al evaluar con códigos urbanos ajenos al grupo rural, el docente introduce un sesgo cultural que distorsiona los resultados, atribuyendo de manera errónea una supuesta falta de capacidad intelectual al estudiante.",
   "distractores_funcion": {
-    "A": "Clave correcta.",
-    "B": "La práctica no está contextualizada.",
-    "C": "No activa saberes previos.",
-    "D": "No hay retroalimentación ni análisis de barreras."
+    "A": "Clave correcta. Identifica la barrera de pertinencia y el sesgo de atribución del docente.",
+    "B": "Falsa equivalencia. Confunde la estandarización del instrumento con equidad de evaluación, ignorando la desigualdad de partida.",
+    "C": "Error instrumental. Sugiere que el error fue no aplicar una prueba estandarizada nacional, cuando el problema es la falta de pertinencia cultural.",
+    "D": "Error conceptual. Califica erróneamente la práctica como evaluación diagnóstica válida para medir limitaciones."
   },
   "fairness": {
     "sesgo_detectado": false,

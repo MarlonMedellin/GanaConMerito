@@ -1,45 +1,45 @@
 {
   "id_item": "NFL_B02_I01",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Cultura escolar",
-  "tema": "Cultura escolar, identidad institucional y PEI",
-  "subtema": "Confusión entre cultura escolar, currículo, manual de convivencia y clima escolar.",
-  "competencia": "Identificación de identidad institucional",
-  "nivel_cognitivo": "APLICACION",
-  "dificultad_estimada": "BAJA_MEDIA",
-  "claim": "El evaluado comprende que la cultura escolar es una dimensión identitaria que orienta prácticas, relaciones y sentido institucional.",
-  "evidencia": "Selecciona la definición correcta de cultura escolar.",
-  "tarea": "Reconocer un concepto de gestión y vida institucional.",
-  "contexto": "Dos instituciones educativas cumplen la misma normatividad general, pero actúan de manera diferente: una tiene una identidad religiosa fuerte, otra se reconoce como colegio público con énfasis comunitario, y otra se caracteriza por prácticas artísticas y participativas. Estas diferencias se expresan en valores, costumbres, símbolos, relaciones y formas de actuar.",
-  "enunciado": "Dos instituciones educativas cumplen la misma normatividad general, pero actúan de manera diferente: una tiene una identidad religiosa fuerte, otra se reconoce como colegio público con énfasis comunitario, y otra se caracteriza por prácticas artísticas y participativas. Estas diferencias se expresan en valores, costumbres, símbolos, relaciones y formas de actuar.\n\n¿A qué concepto hace referencia este conjunto de características identitarias?",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión escolar y pedagógica",
+  "tema": "Proyecto Educativo Institucional (PEI)",
+  "subtema": "Cultura y clima escolar",
+  "competencia": "Aplicar la normatividad de diseño, evaluación y modificación del Proyecto Educativo Institucional (PEI) según el Decreto 1075 de 2015.",
+  "nivel_cognitivo": "COMPRENSIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado conceptualiza la cultura escolar como elemento diferenciador de las prácticas institucionales.",
+  "evidencia": "Identifica que el conjunto de supuestos, valores y prácticas compartidas (cultura escolar) otorga su identidad propia a cada establecimiento educativo.",
+  "tarea": "Seleccionar el concepto sociopedagógico que explica la singularidad en las formas de interacción de un colegio.",
+  "contexto": "Dos colegios oficiales de la misma zona comparten idéntica asignación presupuestal y planta de docentes. Sin embargo, en el primero se evidencia un ambiente de colaboración pacífica, resolución dialogada y alta implicación familiar; mientras que en el segundo predomina el distanciamiento, medidas autoritarias y alta conflictividad.",
+  "enunciado": "La dimensión que mejor conceptualiza y explica estas diferencias relacionales y de identidad en la vida cotidiana de las instituciones es:",
   "opciones": {
-    "A": "Cultura escolar.",
-    "B": "Regla de tres simple.",
-    "C": "Sanción disciplinaria.",
-    "D": "Promedio académico institucional."
+    "A": "El promedio del rendimiento académico estandarizado del grupo de estudiantes.",
+    "B": "La cultura escolar, integrada por los valores, creencias, ritos y pautas de interacción compartidas por la comunidad educativa.",
+    "C": "La estructura de la planta física y la cantidad de recursos de infraestructura del plantel.",
+    "D": "El número total de horas de permanencia obligatoria registradas por la dirección docente."
   },
-  "clave": "A",
-  "justificacion_clave": "A",
+  "clave": "B",
+  "justificacion_clave": "La cultura escolar comprende el entramado de significados, valores, pautas de conducta, ritos e interacciones cotidianas compartidas por los miembros de una institución. Es el núcleo que dota de identidad al PEI y determina el clima relacional de aula, yendo más allá de las variables formales o de infraestructura.",
   "distractores_funcion": {
-    "A": "Clave correcta.",
-    "B": "Es incorrecta porque no corresponde al campo de gestión escolar.",
-    "C": "Es incorrecta porque una sanción no define toda la identidad institucional.",
-    "D": "Es incorrecta porque el promedio académico no equivale a cultura escolar."
+    "A": "Mide una variable de resultado (notas), que puede ser consecuencia de la cultura escolar pero no define su naturaleza relacional.",
+    "B": "Clave correcta.",
+    "C": "Focaliza en las condiciones físicas del colegio, omitiendo la dimensión humana, simbólica e interactiva del entorno escolar.",
+    "D": "Describe un dato administrativo de jornada laboral que carece de impacto explicativo directo sobre el clima de convivencia."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem permite reconocer identidades institucionales diversas sin jerarquizarlas ni estigmatizarlas."
+    "observaciones": "Caso pedagógico generalizable y fundamentado conceptualmente."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Redacción directa, vocabulario profesional e instructivo."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Cultura escolar, identidad institucional y PEI/NFL_B02_I01.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

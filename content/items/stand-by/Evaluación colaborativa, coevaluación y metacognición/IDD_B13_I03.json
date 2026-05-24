@@ -1,44 +1,44 @@
 {
   "id_item": "IDD_B13_I03",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Evaluación del aprendizaje",
+  "area": "Evaluación, currículo y didáctica",
   "tema": "Evaluación colaborativa, coevaluación y metacognición",
   "subtema": "Coevaluación con Criterios",
-  "competencia": "Selecciona estrategias evaluativas colaborativas que promueven coevaluación, argumentación y autorregulación del aprendizaje.",
-  "nivel_cognitivo": "APLICACIÓN",
+  "competencia": "Diseñar e implementar sesiones de coevaluación formativa guiadas por criterios explícitos de desempeño y retroalimentación descriptiva respetuosa.",
+  "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada para el caso planteado.",
-  "evidencia": "Selecciona una única alternativa defendible frente a distractores plausibles desde el constructo evaluado.",
-  "tarea": "Analizar el caso y elegir la opción más pertinente según criterios pedagógicos y normativos aplicables.",
-  "contexto": "Durante una exposición grupal, el docente pide a los estudiantes coevaluar a sus compañeros. Algunos quieren escribir comentarios personales como “me cae mal” o “habló feo”, sin usar criterios de desempeño.",
-  "enunciado": "Durante una exposición grupal, el docente pide a los estudiantes coevaluar a sus compañeros. Algunos quieren escribir comentarios personales como “me cae mal” o “habló feo”, sin usar criterios de desempeño.\n\n¿Qué debe hacer el docente para que la coevaluación sea formativa?",
+  "claim": "El evaluado formula estrategias didácticas para encauzar la coevaluación hacia procesos de aprendizaje constructivo, evitando valoraciones subjetivas, punitivas o de carácter socio-afectivo.",
+  "evidencia": "Elige la alternativa que utiliza rúbricas, retroalimentación descriptiva y pautas de respeto para regular la valoración entre pares en el aula.",
+  "tarea": "Diseñar una secuencia pedagógica de coevaluación para una exposición artística o proyecto colaborativo escolar.",
+  "contexto": "En clase de lenguaje, los estudiantes van a coevaluar los borradores de ensayos escritos por sus compañeros de grupo. El docente observa que, en ensayos anteriores, la coevaluación se reducía a asignarse notas por afinidad personal o a descalificarse mutuamente con comentarios informales despectivos sin justificación pedagógica.",
+  "enunciado": "Para transformar esta situación y lograr que la coevaluación cumpla una función formativa y de colaboración de alta calidad, el docente debe estructurar la sesión:",
   "opciones": {
-    "A": "Permitir cualquier comentario porque la coevaluación es una opinión libre.",
-    "B": "Suspender toda participación de los estudiantes en la evaluación.",
-    "C": "Pedir que califiquen según amistad o afinidad con el expositor.",
-    "D": "Orientar la coevaluación con criterios claros, evidencias observables, lenguaje respetuoso y recomendaciones de mejora."
+    "A": "Diseñando una guía de coevaluación con criterios explícitos (ej. estructura de la tesis, uso de nexos, coherencia de argumentos) y capacitando al grupo en técnicas de retroalimentación constructiva y lenguaje propositivo.",
+    "B": "Ordenando a los estudiantes realizar la coevaluación de forma anónima y secreta sin comunicación verbal entre ellos para evitar discusiones de aula.",
+    "C": "Delegando la asignación de calificaciones cualitativas a un jurado conformado únicamente por los estudiantes con mayor rendimiento en las pruebas escritas del periodo anterior.",
+    "D": "Reemplazando la sesión por una revisión colectiva en el tablero donde los errores de cada borrador se expongan ante todo el salón escolar para corregirlos públicamente."
   },
-  "clave": "D",
-  "justificacion_clave": "D",
+  "clave": "A",
+  "justificacion_clave": "La coevaluación formativa requiere criterios explícitos de valoración y andamiaje interpersonal. De este modo, los estudiantes aprenden a analizar críticamente la tarea ajena con base en estándares objetivos y a comunicar sugerencias de mejora con respeto y rigor.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque puede producir juicios personales y no aprendizaje.",
-    "B": "Es incorrecta porque evita una estrategia valiosa en vez de regularla.",
-    "C": "Es incorrecta porque evalúa relaciones personales, no desempeño.",
-    "D": "Clave correcta."
+    "A": "Clave correcta.",
+    "B": "El anonimato sin pautas conceptuales no garantiza la pertinencia de la retroalimentación y anula la oportunidad de diálogo pedagógico horizontal.",
+    "C": "Enfoque elitista que segrega al grupo y priva a la mayoría de los estudiantes de la práctica de coevaluar y desarrollar autonomía evaluativa.",
+    "D": "Expone públicamente el error individual de manera humillante, atentando contra el clima de confianza necesario en un aula de aprendizaje formativo."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estándar, sin sesgos culturales innecesarios ni barreras de comprensión relevantes."
+    "observaciones": "El ítem previene malas prácticas escolares de marginación."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura."
+    "observaciones": "Opciones con sintaxis balanceada."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Evaluación colaborativa, coevaluación y metacognición/IDD_B13_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

@@ -13,18 +13,18 @@
   "contexto": "Varios estudiantes evaden sistemáticamente algunas clases. La institución ha registrado ausencias internas, bajo rendimiento y conflictos asociados. Algunos docentes proponen limitarse a sancionar cada evasión sin indagar causas ni vincular a las familias.",
   "enunciado": "Varios estudiantes evaden sistemáticamente algunas clases. La institución ha registrado ausencias internas, bajo rendimiento y conflictos asociados. Algunos docentes proponen limitarse a sancionar cada evasión sin indagar causas ni vincular a las familias.\n\n¿Cómo deben abordarse estratégicamente estos casos?",
   "opciones": {
-    "A": "Aplicar sanciones automáticas sin diálogo, porque la evasión siempre se explica por falta de voluntad del estudiante.",
-    "B": "Registrar la situación, dialogar con los estudiantes, indagar causas, vincular a las familias, definir compromisos, hacer seguimiento y activar rutas si se identifican riesgos.",
-    "C": "Ignorar la evasión mientras los estudiantes aprueben algunas evaluaciones.",
-    "D": "Retirar definitivamente a los estudiantes de las clases que evaden para evitar nuevos reportes."
+    "A": "Aplicar la sanción disciplinaria consagrada en el manual sin realizar indagaciones, aduciendo que el reglamento escolar exige cumplimiento absoluto e igualitario.",
+    "B": "Activar el protocolo de seguimiento interno, dialogar de manera formativa con el estudiante, convocar a los acudientes para concertar compromisos, realizar seguimiento académico y reportar a bienestar familiar si se detecta negligencia parental.",
+    "C": "Tolerar la inasistencia a clases específicas con la condición de que los estudiantes aprueben de forma independiente las evaluaciones sumativas del periodo.",
+    "D": "Reubicar definitivamente al estudiante en jornadas flexibles o apartarlo de las asignaturas evadidas para evitar la afectación en los registros de ausentismo del grupo."
   },
   "clave": "B",
-  "justificacion_clave": "B",
+  "justificacion_clave": "La evasión sistemática de clases constituye una alerta de ausentismo y deserción que vulnera la permanencia escolar. De acuerdo con la Ley 1098 de 2006 y el DUR 1075 de 2015, los docentes y directivos deben activar mecanismos de acompañamiento y compromisos con las familias antes de tomar decisiones punitivas, con el fin de proteger las trayectorias de aprendizaje de los alumnos.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque reduce la evasión a indisciplina y omite diagnóstico y acompañamiento.",
+    "A": "Incorrecto. La aplicación automática de sanciones sin diálogo previo ni valoración pedagógica del contexto infringe el principio constitucional del debido proceso y la función formativa del manual de convivencia.",
     "B": "Clave correcta.",
-    "C": "Es incorrecta porque aprobar algunas evaluaciones no elimina la obligación de atender la permanencia y la participación escolar.",
-    "D": "Es incorrecta porque retirar al estudiante de la clase profundiza la exclusión."
+    "C": "Incorrecto. Ignorar la inasistencia interna atenta contra el deber de cuidado y vigilancia del docente, exponiendo al menor a riesgos físicos o sociales dentro del propio plantel.",
+    "D": "Incorrecto. Segregar o excluir al alumno de las clases básicas vulnera directamente su derecho fundamental a la educación integral y no atiende las causas subyacentes de la evasión."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Corresponsabilidad, entorno y cuidado institucional/CEOL_B04_I05.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

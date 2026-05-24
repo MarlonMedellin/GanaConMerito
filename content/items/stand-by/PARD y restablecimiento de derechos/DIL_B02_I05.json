@@ -1,45 +1,45 @@
 {
   "id_item": "DIL_B02_I05",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Medida de hogar sustituto",
   "tema": "PARD y restablecimiento de derechos",
-  "subtema": "Creer que la ubicación en hogar sustituto es una solución definitiva o una sanción.",
+  "subtema": "Creer que la ubicación en hogar sustituto es una solución definitiva o una sanción",
   "competencia": "Comprensión de medidas provisionales de protección",
   "nivel_cognitivo": "APLICACION",
-  "dificultad_estimada": "MEDIA_ALTA",
-  "claim": "El evaluado comprende que las medidas de protección deben ser proporcionales, temporales y orientadas a garantizar derechos y estabilidad del menor.",
-  "evidencia": "Selecciona la opción que define el hogar sustituto como medida temporal y protectora.",
-  "tarea": "Interpretar la finalidad de una medida dentro del PARD.",
-  "contexto": "Dentro de un PARD, una autoridad competente puede ubicar temporalmente a un niño, niña o adolescente en un hogar sustituto cuando su familia de origen no garantiza condiciones mínimas de protección. Algunos interpretan esta medida como un castigo o como una separación definitiva automática.",
-  "enunciado": "Dentro de un PARD, una autoridad competente puede ubicar temporalmente a un niño, niña o adolescente en un hogar sustituto cuando su familia de origen no garantiza condiciones mínimas de protección. Algunos interpretan esta medida como un castigo o como una separación definitiva automática.\n\n¿Cuál explicación es más adecuada?",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado reconoce la naturaleza de la medida de hogar sustituto como protectora, temporal y ajena a sanciones o adopción inmediata.",
+  "evidencia": "Identifica el hogar sustituto como una medida provisional de restablecimiento de derechos sujeta a la revisión de la autoridad administrativa.",
+  "tarea": "Identificar la descripción correcta de la medida de hogar sustituto en el marco del PARD.",
+  "contexto": "En el marco de un PARD coordinado por el ICBF, un estudiante es ubicado de forma provisional en un hogar sustituto debido a que su entorno familiar inmediato ponía en riesgo su integridad física y emocional. Algunos integrantes del cuerpo docente interpretan esta decisión como una sanción o como una pérdida irreversible de la patria potestad.",
+  "enunciado": "¿Cuál es la explicación adecuada sobre esta medida de protección?",
   "opciones": {
-    "A": "El hogar sustituto es una sanción contra el menor por problemas familiares.",
-    "B": "El hogar sustituto es una medida provisional, excepcional y protectora, orientada al interés superior y sujeta a seguimiento de la autoridad competente.",
-    "C": "El hogar sustituto elimina automáticamente todo vínculo jurídico con la familia de origen.",
-    "D": "La escuela puede ordenar por sí sola el traslado de un estudiante a un hogar sustituto."
+    "A": "Es una medida de restablecimiento de derechos de carácter provisional y excepcional, orientada a brindar protección integral en un medio familiar alterno mientras se supera la situación de vulnerabilidad.",
+    "B": "Es un tipo de sanción disciplinaria externa que busca corregir comportamientos disruptivos del menor en su entorno familiar y comunitario.",
+    "C": "Es un proceso de adopción abreviado que extingue de forma definitiva e inmediata la patria potestad de los padres biológicos.",
+    "D": "Es una orden administrativa de reubicación escolar que la institución educativa puede adoptar de manera autónoma ante la inasistencia del estudiante."
   },
-  "clave": "B",
-  "justificacion_clave": "B",
+  "clave": "A",
+  "justificacion_clave": "El hogar sustituto es una medida de protección de carácter transitorio que busca brindar un ambiente familiar protector al menor mientras la autoridad competente evalúa y trabaja para que cese la vulneración en su familia de origen.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque no es castigo al menor.",
-    "B": "Clave correcta.",
-    "C": "Es incorrecta porque no produce automáticamente ruptura definitiva de vínculos.",
-    "D": "Es incorrecta porque la escuela no tiene competencia para ordenar esa medida."
+    "A": "Clave correcta.",
+    "B": "Considera erróneamente la medida de protección integral como un castigo conductual para el menor.",
+    "C": "Confunde la transitoriedad y protección provisional del hogar sustituto con un proceso judicial de adopción definitivo.",
+    "D": "Incurre en un error competencial grave al atribuir a la escuela la facultad de retirar o reubicar legalmente a un estudiante de su familia."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem evita afirmar un plazo exacto no suficientemente consolidado en las fuentes revisadas y se centra en el carácter protector y temporal de la medida."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Vocabulario claro."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I05.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

@@ -15,16 +15,16 @@
   "opciones": {
     "A": "Currículo nulo.",
     "B": "Currículo oculto.",
-    "C": "Currículo exclusivamente oficial.",
-    "D": "Currículo inexistente."
+    "C": "Currículo oficial.",
+    "D": "Currículo extracurricular."
   },
   "clave": "B",
-  "justificacion_clave": "Describe aprendizajes implícitos de convivencia y valores que circulan fuera del currículo formal.",
+  "justificacion_clave": "El currículo oculto comprende aquellos aprendizajes, valores, actitudes y normas de convivencia que se transmiten de manera implícita en las interacciones cotidianas dentro de la escuela, sin estar formalizados en los planes de estudio. En este caso, el modelamiento de convivencia y acompañamiento socioemocional que realiza el docente, al no estar explicitado en el plan escrito, opera bajo esta dimensión.",
   "distractores_funcion": {
-    "A": "Corresponde a contenidos omitidos.",
+    "A": "Incorrecto. El currículo nulo hace referencia a aquellos temas o valores que la escuela decide omitir de su enseñanza formal, lo cual no aplica a una acción que sí se está ejecutando.",
     "B": "Clave correcta.",
-    "C": "Remite a documentos y prescripciones formales.",
-    "D": "Niega una dimensión real del proceso escolar."
+    "C": "Incorrecto. El currículo oficial o formal es el plan escrito institucional, y el caso especifica que estas normas y acompañamientos 'no están explícitas en el plan escrito'.",
+    "D": "Incorrecto. El currículo extracurricular comprende actividades voluntarias complementarias al plan de estudios regular, no el modelamiento implícito en el aula ordinaria."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

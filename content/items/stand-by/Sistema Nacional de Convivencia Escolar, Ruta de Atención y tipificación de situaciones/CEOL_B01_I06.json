@@ -1,30 +1,30 @@
 {
   "id_item": "CEOL_B01_I06",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Tipificación de situaciones de convivencia",
   "tema": "Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones",
   "subtema": "Confusión en la clasificación de agresiones escolares, acoso, ciberacoso y situaciones que pueden constituir delito.",
   "competencia": "Clasificación y activación de protocolos",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "ALTA",
-  "claim": "El evaluado comprende que la clasificación correcta de una situación de convivencia determina la activación del protocolo adecuado, la protección de derechos y la intervención de las instancias competentes.",
-  "evidencia": "Selecciona la clasificación y respuesta inicial más adecuada frente a una situación de acoso sistemático o presunta conducta delictiva.",
-  "tarea": "Clasificar situaciones de convivencia y distinguir el protocolo aplicable.",
+  "claim": "Aplica los criterios de clasificación differential entre situaciones Tipo II y Tipo III para activar los protocolos institucionales correspondientes.",
+  "evidencia": "Selecciona el criterio que distingue las agresiones reiteradas o acoso del presunto hecho punible que exige reporte externo.",
+  "tarea": "Analizar una situación de acoso sistemático y determinar los límites y procedimientos legales entre situaciones de convivencia.",
   "contexto": "En una institución se identifica que un estudiante ha recibido agresiones reiteradas y mensajes ofensivos por redes sociales. La situación ha afectado su salud emocional y requiere intervención institucional. El comité debe clasificar correctamente el caso y activar el protocolo correspondiente.",
   "enunciado": "En una institución se identifica que un estudiante ha recibido agresiones reiteradas y mensajes ofensivos por redes sociales. La situación ha afectado su salud emocional y requiere intervención institucional. El comité debe clasificar correctamente el caso y activar el protocolo correspondiente.\n\n¿Cuál criterio permite diferenciar una situación Tipo II de una Tipo III?",
   "opciones": {
-    "A": "Toda agresión verbal es siempre Tipo I y nunca requiere seguimiento institucional.",
-    "B": "La Tipo II incluye agresión, acoso o ciberacoso repetido o con daño sin configurar delito; la Tipo III corresponde a situaciones que pueden constituir presuntos delitos y exigen activación inmediata de autoridades competentes.",
-    "C": "La Tipo III se aplica solo cuando el estudiante o la familia solicitan por escrito una sanción escolar.",
-    "D": "La Tipo II y la Tipo III son equivalentes, por lo que pueden abordarse con el mismo procedimiento informal de aula."
+    "A": "Las Tipo II se resuelven mediante el acuerdo de conciliación interno del aula, mientras que las Tipo III requieren de forma automática la pérdida del cupo escolar del estudiante agresor.",
+    "B": "Las Tipo II corresponden a agresiones repetidas o acoso escolar que no configuran delito, mientras que las Tipo III involucran hechos constitutivos de presuntos delitos contra la libertad, integridad y formación sexual.",
+    "C": "Las Tipo II son de competencia exclusiva del Comité Escolar de Convivencia, mientras que las Tipo III se gestionan directamente por el Rector sin informar al comité institucional.",
+    "D": "Las Tipo II implican daño a la infraestructura del establecimiento educativo, mientras que las Tipo III se refieren únicamente a agresiones físicas graves que requieran hospitalización inmediata."
   },
   "clave": "B",
-  "justificacion_clave": "B",
+  "justificacion_clave": "Las situaciones Tipo II corresponden a agresiones reiteradas (acoso escolar/bullying o ciberacoso) que no configuran delitos. Las Tipo III corresponden a situaciones de agresión escolar que pueden ser constitutivas de presuntos delitos, obligando a reportar de inmediato a la Policía de Infancia y Adolescencia o Fiscalía.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque no toda agresión verbal o digital puede tratarse como situación menor sin seguimiento.",
-    "B": "Clave correcta.",
-    "C": "Es incorrecta porque la clasificación no depende de una solicitud escrita, sino de los hechos y criterios normativos.",
-    "D": "Es incorrecta porque Tipo II y Tipo III tienen protocolos y alcances distintos."
+    "A": "Error procedimental y punitivo. Propone conciliaciones informales para situaciones Tipo II y sanciones automáticas sin debido proceso en Tipo III.",
+    "B": "Clave correcta. Diferencia con rigor legal y tipificación exacta los tipos II y III.",
+    "C": "Error orgánico. Desconoce las funciones del Comité Escolar de Convivencia, el cual debe conocer obligatoriamente todas las situaciones Tipo II y III.",
+    "D": "Confusión material. Limita erróneamente la tipificación a daños físicos de infraestructura o lesiones que causen hospitalización, distorsionando el espíritu legal."
   },
   "fairness": {
     "sesgo_detectado": false,

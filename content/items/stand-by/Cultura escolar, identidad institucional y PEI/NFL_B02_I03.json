@@ -1,45 +1,45 @@
 {
   "id_item": "NFL_B02_I03",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Cultura escolar e identidad del PEI",
-  "tema": "Cultura escolar, identidad institucional y PEI",
-  "subtema": "Desarticulación entre el PEI declarado y la cultura escolar real que se vive en la institución.",
-  "competencia": "Análisis de coherencia institucional",
-  "nivel_cognitivo": "APLICACION",
-  "dificultad_estimada": "MEDIA_ALTA",
-  "claim": "El evaluado comprende que la identidad institucional no se define solo por lo escrito en el PEI, sino por la coherencia entre discurso, prácticas y relaciones escolares.",
-  "evidencia": "Selecciona una actuación que busca alinear cultura escolar y PEI.",
-  "tarea": "Analizar la coherencia entre identidad declarada e identidad vivida.",
-  "contexto": "Un colegio declara en su PEI que promueve participación, respeto y diálogo; sin embargo, en la vida cotidiana se toman decisiones sin escuchar a los estudiantes, se normalizan tratos autoritarios y se sanciona toda opinión crítica. El equipo directivo quiere revisar la coherencia entre lo escrito y lo vivido.",
-  "enunciado": "Un colegio declara en su PEI que promueve participación, respeto y diálogo; sin embargo, en la vida cotidiana se toman decisiones sin escuchar a los estudiantes, se normalizan tratos autoritarios y se sanciona toda opinión crítica. El equipo directivo quiere revisar la coherencia entre lo escrito y lo vivido.\n\n¿Qué análisis es más adecuado desde el concepto de cultura escolar?",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión escolar y pedagógica",
+  "tema": "Proyecto Educativo Institucional (PEI)",
+  "subtema": "Identidad institucional y coherencia del PEI",
+  "competencia": "Aplicar la normatividad de diseño, evaluación y modificación del Proyecto Educativo Institucional (PEI) según el Decreto 1075 de 2015.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado valora la coherencia entre el PEI declarado y las prácticas escolares reales.",
+  "evidencia": "Identifica que las inconsistencias entre los valores del PEI y el clima de aula real requieren revisiones participativas y de alincación directiva.",
+  "tarea": "Determinar la acción de gestión idónea ante la brecha entre el PEI (democrático) y las prácticas relacionales (autoritarias).",
+  "contexto": "El PEI de un establecimiento declara promover un enfoque democrático, de respeto mutuo y de equidad de género. Sin embargo, en el aula persisten prácticas de exclusión, burlas machistas normalizadas por algunos docentes y decisiones de los coordinadores sin escuchar a los estudiantes.",
+  "enunciado": "Ante esta brecha entre el currículo declarado y el clima real del colegio, el Consejo Directivo debe proponer como estrategia de mejoramiento:",
   "opciones": {
-    "A": "No hay problema, porque basta con que el PEI tenga valores escritos aunque la práctica sea contraria.",
-    "B": "La cultura escolar no se relaciona con el PEI ni con las prácticas cotidianas.",
-    "C": "La identidad institucional se mide solo por los símbolos del escudo y el uniforme.",
-    "D": "Debe revisarse la coherencia entre el PEI declarado, las prácticas reales, las relaciones escolares y los valores que efectivamente vive la comunidad educativa."
+    "A": "Modificar el texto del PEI para adaptarlo a las prácticas autoritarias, reduciendo las expectativas de participación democrática.",
+    "B": "Iniciar un proceso de revisión y autoevaluación institucional participativa para diseñar un Plan de Mejoramiento que alinee las prácticas reales de aula y directivas con los valores del PEI.",
+    "C": "Ignorar la brecha argumentando que los documentos del PEI son requisitos teóricos de acreditación que no tienen relación con la convivencia diaria.",
+    "D": "Suspender disciplinariamente a los estudiantes que denuncien la falta de coherencia para proteger el buen nombre de la institución."
   },
-  "clave": "D",
-  "justificacion_clave": "D",
+  "clave": "B",
+  "justificacion_clave": "La identidad institucional del PEI exige correspondencia y coherencia entre la dimensión declarada (misión, visión, valores) y la dimensión real u operativa de las prácticas institucionales. El camino técnico bajo la Guía 34 del MEN consiste en encauzar estos hallazgos de brecha a través del Plan de Mejoramiento Institucional (PMI).",
   "distractores_funcion": {
-    "A": "Es incorrecta porque los valores escritos no bastan si la práctica los contradice.",
-    "B": "Es incorrecta porque el PEI orienta la identidad institucional.",
-    "C": "Es incorrecta porque los símbolos no agotan la cultura escolar.",
-    "D": "Clave correcta."
+    "A": "Propone claudicar en la misión formativa de la escuela democrática reduciendo los estándares del PEI en lugar de mejorar la práctica.",
+    "B": "Clave correcta.",
+    "C": "Subestima el PEI considerándolo un mero trámite administrativo burocrático (currículo nulo), lo cual anula el valor de la planeación estratégica.",
+    "D": "Describe una respuesta inconstitucional y de censura que agudiza la brecha democrática y atenta contra los derechos de participación de los estudiantes."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem promueve coherencia institucional sin imponer una identidad escolar única."
+    "observaciones": "El ítem promueve el respeto a la diversidad y los derechos constitucionales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Vocabulario claro, distractores con posturas institucionales muy contrastantes."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Cultura escolar, identidad institucional y PEI/NFL_B02_I03.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

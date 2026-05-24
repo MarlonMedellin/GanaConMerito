@@ -1,45 +1,45 @@
 {
   "id_item": "MTV_B31_I06",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "Jornada escolar, horario laboral y asignación académica",
   "subtema": "Aplicación pedagógica",
   "competencia": "Juicio pedagógico",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "",
-  "enunciado": "Un docente prepara clases, evalúa trabajos, atiende a familias, participa en reuniones pedagógicas y desarrolla proyectos institucionales. Aunque no está todo el tiempo frente a grupo, sigue cumpliendo funciones docentes.\n\n¿Cómo se clasifican estas acciones?",
+  "claim": "El evaluado clasifica las actividades docentes complementarias dentro del marco regulatorio de la jornada de trabajo.",
+  "evidencia": "Identifica actividades como planeación, evaluación e interacción comunitaria como parte de las actividades curriculares complementarias.",
+  "tarea": "Clasificar actividades de planeación, evaluación e interacción comunitaria según los conceptos normativos vigentes.",
+  "contexto": "Un docente prepara sus materiales didácticos, califica las evaluaciones del período, atiende las consultas de las familias y coordina el proyecto de gestión de riesgos de la institución. Aunque estas labores no corresponden a clases presenciales directas, las realiza como parte de su cargo.",
+  "enunciado": "¿Cómo se clasifican normativamente estas acciones?",
   "opciones": {
-    "A": "Actividades curriculares complementarias o funciones propias del cargo.",
-    "B": "Tiempo ajeno al trabajo docente.",
-    "C": "Actividad comercial privada.",
-    "D": "Descanso obligatorio estudiantil."
+    "A": "Actividades curriculares complementarias asociadas a la jornada laboral.",
+    "B": "Actividades de libre elección que exceden la jornada laboral obligatoria.",
+    "C": "Tiempos de asignación académica directa.",
+    "D": "Funciones exclusivas de la jornada de desarrollo institucional."
   },
   "clave": "A",
-  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "justificacion_clave": "Bajo el Decreto 1075 de 2015, actividades como planeación, calificación, atención a padres, orientación estudiantil y administración escolar son 'actividades curriculares complementarias' esenciales para el cumplimiento del servicio educativo.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Distractor funcional.",
-    "C": "Distractor funcional.",
-    "D": "Distractor funcional."
+    "B": "Supone erróneamente que estas actividades son facultativas del docente y que no se rigen por la jornada laboral obligatoria.",
+    "C": "Confunde las actividades complementarias con el tiempo de clase presencial directa (asignación académica).",
+    "D": "Asocia erróneamente estas actividades cotidianas del período lectivo únicamente con las semanas de planeación colectiva del desarrollo institucional."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Texto directo."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I06.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

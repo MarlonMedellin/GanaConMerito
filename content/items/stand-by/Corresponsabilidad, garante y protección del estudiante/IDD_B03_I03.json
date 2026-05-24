@@ -7,39 +7,39 @@
   "competencia": "Determina actuaciones de protección escolar coherentes con la posición de garante y la ruta institucional.",
   "nivel_cognitivo": "JUICIO",
   "dificultad_estimada": "MEDIA-ALTA",
-  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada en el caso planteado.",
-  "evidencia": "Selecciona una alternativa única, consistente con el criterio evaluado y superior frente a distractores plausibles.",
-  "tarea": "Analizar la situación y elegir la mejor decisión según el enfoque del ítem.",
-  "contexto": "Una institución identifica que un estudiante requiere apoyos para participar en clase. Algunos docentes sostienen que no se debe hacer ningún ajuste hasta que la familia gestione todos los apoyos externos. Otros proponen articular familia, escuela y entidades competentes sin suspender la atención educativa.",
-  "enunciado": "Una institución identifica que un estudiante requiere apoyos para participar en clase. Algunos docentes sostienen que no se debe hacer ningún ajuste hasta que la familia gestione todos los apoyos externos. Otros proponen articular familia, escuela y entidades competentes sin suspender la atención educativa.\n\n¿Cuál respuesta interpreta mejor la corresponsabilidad?",
+  "claim": "Valora la adecuación de actuaciones pedagógicas e institucionales bajo criterios normativos y constitucionales.",
+  "evidencia": "Selecciona la respuesta que demuestra la correcta aplicación del marco normativo y pedagógico colombiano.",
+  "tarea": "Analizar el caso y determinar la opción correcta conforme a derecho y principios pedagógicos.",
+  "contexto": "Una institución identifica que un estudiante requiere apoyos significativos para participar en clase. Algunos docentes sostienen que no se debe hacer ningún ajuste curricular hasta que la familia gestione todos los diagnósticos y apoyos externos. Otros proponen articular esfuerzos institucionales inmediatamente.",
+  "enunciado": "Una institución identifica que un estudiante requiere apoyos significativos para participar en clase. Algunos docentes sostienen que no se debe hacer ningún ajuste curricular hasta que la familia gestione todos los diagnósticos y apoyos externos. Otros proponen articular esfuerzos institucionales inmediatamente.\n\n¿Cuál respuesta interpreta correctamente el principio de corresponsabilidad en la atención educativa de este estudiante?",
   "opciones": {
-    "A": "La escuela puede negar la atención hasta que la familia resuelva por completo la situación.",
-    "B": "La familia es la única responsable de garantizar el derecho a la educación inclusiva.",
-    "C": "El estudiante debe adaptarse sin apoyos, porque la corresponsabilidad significa esfuerzo individual.",
-    "D": "La escuela debe actuar y coordinar con familia y entidades competentes para definir apoyos, hacer seguimiento y garantizar participación y aprendizaje."
+    "A": "La articulación de acciones y compromisos mutuos entre la escuela, la familia y las entidades competentes para definir, implementar y hacer seguimiento a los apoyos requeridos.",
+    "B": "El deber legal de la familia de asumir la totalidad del costo y contratación de los profesionales de apoyo requeridos por el estudiante dentro de la jornada escolar.",
+    "C": "La facultad de la institución educativa de condicionar la continuidad del servicio educativo a la entrega oportuna de los insumos y diagnósticos externos por la familia.",
+    "D": "La exención de responsabilidades pedagógicas de la escuela cuando la familia incurre en negligencia en los tratamientos médicos o terapéuticos indicados."
   },
-  "clave": "D",
-  "justificacion_clave": "D",
+  "clave": "A",
+  "justificacion_clave": "A",
   "distractores_funcion": {
-    "A": "Es incorrecta porque una institución no puede usar la corresponsabilidad para negar la atención requerida.",
-    "B": "Es incorrecta porque reduce la corresponsabilidad a responsabilidad familiar.",
-    "C": "Es incorrecta porque desconoce el deber de eliminar barreras.",
-    "D": "Clave correcta."
+    "A": "Clave correcta.",
+    "B": "Vulneración de gratuidad y acceso: traslada indebidamente la carga económica y la gestión de recursos de inclusión al presupuesto familiar, lo cual está proscrito.",
+    "C": "Condicionamiento ilícito: vulnera el derecho fundamental a la educación al utilizar barreras documentales o clínicas para suspender o negar el servicio escolar.",
+    "D": "Inacción justificada: asume erróneamente que los incumplimientos de la familia en otras esferas facultan a la escuela para omitir sus deberes pedagógicos de inclusión."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Caso con lenguaje técnico de uso educativo y sin referencias discriminatorias."
+    "observaciones": "Lenguaje formal, neutral y apegado a la jurisprudencia colombiana en materia de derechos y deberes educativos, libre de sesgos territoriales o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Estructura clara, una sola tarea cognitiva y opciones comparables."
+    "observaciones": "Redacción estructurada con enunciados independientes y opciones de longitud y complejidad gramatical homogéneas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Corresponsabilidad, garante y protección del estudiante/IDD_B03_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

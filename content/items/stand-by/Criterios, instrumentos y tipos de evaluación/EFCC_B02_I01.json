@@ -1,44 +1,44 @@
 {
   "id_item": "EFCC_B02_I01",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Evaluación del aprendizaje",
+  "area": "Evaluación, currículo y didáctica",
   "tema": "Criterios, instrumentos y tipos de evaluación",
   "subtema": "Evaluación, Currículo y Didáctica",
-  "competencia": "Distingue criterios, instrumentos y tipos de evaluación para seleccionar estrategias pertinentes al propósito formativo.",
-  "nivel_cognitivo": "ANÁLISIS",
+  "competencia": "Diferenciar los estándares básicos de competencias de los logros institucionales como referentes en el diseño curricular escolar.",
+  "nivel_cognitivo": "ANALISIS",
   "dificultad_estimada": "MEDIA",
-  "claim": "Identifica la alternativa más adecuada según el marco pedagógico, evaluativo o de protección del caso.",
-  "evidencia": "Selecciona una única respuesta técnicamente defendible frente a distractores plausibles.",
-  "tarea": "Analizar la situación planteada y elegir la decisión institucional o didáctica más pertinente.",
-  "contexto": "En una reunión de área, un docente afirma que un estándar y un logro son exactamente lo mismo. La coordinación académica propone aclarar la diferencia para mejorar la planeación y la evaluación.",
-  "enunciado": "En una reunión de área, un docente afirma que un estándar y un logro son exactamente lo mismo. La coordinación académica propone aclarar la diferencia para mejorar la planeación y la evaluación.\n\n¿Cuál explicación diferencia mejor estos dos conceptos?",
+  "claim": "El evaluado diferencia conceptual y metodológicamente los estándares básicos de competencias y los logros escolares en el diseño del currículo y la evaluación formativa.",
+  "evidencia": "Selecciona el criterio técnico que clasifica y explica el uso particular de cada concepto en la planificación curricular.",
+  "tarea": "Aclarar la definición y la función didáctica de estándares y logros en una mesa de trabajo de docentes de área.",
+  "contexto": "Un equipo pedagógico analiza cómo integrar los referentes nacionales de calidad en su plan de estudios del área de Ciencias Sociales. Al debatir la redacción de los componentes del currículo, se suscita una discusión sobre la diferencia entre los estándares básicos de competencias (EBC) y los logros o metas de aprendizaje del plan de aula.",
+  "enunciado": "Para resolver esta discusión bajo las directrices curriculares del Ministerio de Educación Nacional, la explicación más adecuada es:",
   "opciones": {
-    "A": "El estándar es una nota final del estudiante y el logro es el nombre de una actividad de clase.",
-    "B": "El estándar es un referente amplio de competencia esperada; el logro expresa un avance o desempeño concreto, observable y valorable en el proceso de aprendizaje.",
-    "C": "El estándar corresponde al comportamiento del estudiante y el logro únicamente al cumplimiento de tareas.",
-    "D": "El estándar y el logro son equivalentes, por lo que pueden usarse indistintamente en cualquier documento curricular."
+    "A": "El estándar es un referente nacional amplio y común que describe niveles esperados de competencia al finalizar un grupo de grados; el logro es una formulación institucional que describe el avance o desempeño concreto que el estudiante demuestra alcanzar en un periodo lectivo específico.",
+    "B": "El estándar es una métrica cuantitativa rígida que determina la promoción automática de grado; el logro es un indicador de convivencia social e institucional que describe el comportamiento del estudiante en las zonas comunes.",
+    "C": "El estándar y el logro se refieren a conceptos sinónimos dentro de la normatividad educativa de la Ley 115, pudiendo utilizarse de forma intercambiable sin alterar los procesos de planificación o evaluación.",
+    "D": "El estándar se define como el listado de temarios propuesto por las editoriales de textos de apoyo; el logro representa el porcentaje de cumplimiento administrativo del plan operativo institucional de la rectoría."
   },
-  "clave": "B",
-  "justificacion_clave": "B",
+  "clave": "A",
+  "justificacion_clave": "Los estándares básicos de competencias (referentes de calidad nacionales del MEN, por grupos de grados) orientan el currículo de los establecimientos educativos oficiales; mientras que los logros (diseño autónomo de la institución escolar en su PEI/planes de estudio) especifican los propósitos formativos concretos y valorables de forma secuencial.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque ni el estándar es una nota final ni el logro es simplemente una actividad.",
-    "B": "Clave correcta.",
-    "C": "Es incorrecta porque restringe ambos conceptos a comportamiento y tareas, dejando por fuera su sentido curricular.",
-    "D": "Es incorrecta porque estándar y logro se relacionan, pero no cumplen la misma función."
+    "A": "Clave correcta.",
+    "B": "Asocia erróneamente estándar con promoción y logro con convivencia informal, desnaturalizando el diseño curricular formativo.",
+    "C": "Ignora la diferencia conceptual entre los referentes macro-curriculares y las especificaciones micro-curriculares locales del establecimiento.",
+    "D": "Reduce el estándar a temarios comerciales externos y el logro a métricas burocráticas administrativas de rectoría."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje pedagógico y normativo estándar, sin sesgos culturales o barreras innecesarias."
+    "observaciones": "El reactivo mide conocimiento pedagógico curricular estándar."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones comparables en estructura y nivel de abstracción."
+    "observaciones": "La sigla EBC está definida en el enunciado."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Criterios, instrumentos y tipos de evaluación/EFCC_B02_I01.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

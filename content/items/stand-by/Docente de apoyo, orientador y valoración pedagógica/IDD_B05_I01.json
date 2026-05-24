@@ -7,39 +7,39 @@
   "competencia": "Distingue funciones del docente de apoyo y orientador para coordinar valoración pedagógica y apoyos educativos.",
   "nivel_cognitivo": "ANÁLISIS",
   "dificultad_estimada": "MEDIA",
-  "claim": "Reconoce la alternativa pedagógica o institucional más adecuada según el criterio técnico evaluado en el caso.",
-  "evidencia": "Selecciona una única opción defendible frente a distractores plausibles en función del constructo.",
-  "tarea": "Analizar el caso y elegir la decisión más pertinente conforme al enfoque del ítem.",
+  "claim": "Valora la adecuación de actuaciones pedagógicas e institucionales bajo criterios normativos y constitucionales.",
+  "evidencia": "Selecciona la respuesta que demuestra la correcta aplicación del marco normativo y pedagógico colombiano.",
+  "tarea": "Analizar el caso y determinar la opción correcta conforme a derecho y principios pedagógicos.",
   "contexto": "Una institución recibe a varios estudiantes con discapacidad. Algunos docentes consideran que, desde ese momento, el docente de apoyo debe asumir completamente la enseñanza de esos estudiantes y retirarlos del aula cuando haya dificultades.",
-  "enunciado": "Una institución recibe a varios estudiantes con discapacidad. Algunos docentes consideran que, desde ese momento, el docente de apoyo debe asumir completamente la enseñanza de esos estudiantes y retirarlos del aula cuando haya dificultades.\n\n¿Cuál es la función principal del docente de apoyo frente al maestro de aula?",
+  "enunciado": "Una institución recibe a varios estudiantes con discapacidad. Algunos docentes consideran que, desde ese momento, el docente de apoyo debe asumir completamente la enseñanza de esos estudiantes y retirarlos del aula cuando haya dificultades.\n\n¿Cuál es la función principal del docente de apoyo frente al maestro de aula según el Decreto 1421 de 2017?",
   "opciones": {
-    "A": "Reemplazar al maestro de aula y enseñar por separado todos los contenidos al estudiante con discapacidad.",
-    "B": "Asesorar, acompañar y orientar al maestro de aula en la identificación de barreras, ajustes razonables, apoyos y estrategias inclusivas.",
-    "C": "Encargarse únicamente de trámites administrativos sin intervenir en procesos pedagógicos.",
-    "D": "Decidir que los estudiantes con discapacidad no participen en las actividades del grupo."
+    "A": "Asumir la planeación y dictado de las asignaturas fundamentales de manera aislada para los estudiantes matriculados bajo el registro SIMAT de discapacidad.",
+    "B": "Asesorar, acompañar y coliderar junto al maestro de aula el diseño y la implementación de los PIAR y ajustes razonables, sin reemplazar su rol de docente de la asignatura.",
+    "C": "Recomendar la reubicación de los estudiantes con diagnósticos severos en instituciones de educación especial para garantizar que reciban la atención terapéutica idónea.",
+    "D": "Realizar las valoraciones clínicas necesarias para diagnosticar trastornos del aprendizaje y certificar las adaptaciones requeridas ante la secretaría de educación."
   },
   "clave": "B",
   "justificacion_clave": "B",
   "distractores_funcion": {
-    "A": "Es incorrecta porque separa al estudiante y desplaza la responsabilidad pedagógica.",
+    "A": "Segregación encubierta: asume una práctica segregadora que despoja al docente de aula de su responsabilidad directa con todos sus estudiantes matriculados.",
     "B": "Clave correcta.",
-    "C": "Es incorrecta porque desconoce el acompañamiento pedagógico.",
-    "D": "Es incorrecta porque niega participación y aprendizaje en el aula común."
+    "C": "Contradicción de inclusión: promueve la exclusión del sistema educativo regular, yendo en contravía del mandato constitucional de integración escolar universal.",
+    "D": "Intrusismo profesional: asigna al docente de apoyo funciones de diagnóstico clínico médico que escapan a su competencia pedagógica formativa."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estándar y contexto institucional general sin sesgos culturales innecesarios."
+    "observaciones": "Lenguaje formal, neutral y apegado a la jurisprudencia colombiana en materia de derechos y deberes educativos, libre de sesgos territoriales o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura y exigencia."
+    "observaciones": "Redacción estructurada con enunciados independientes y opciones de longitud y complejidad gramatical homogéneas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Docente de apoyo, orientador y valoración pedagógica/IDD_B05_I01.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

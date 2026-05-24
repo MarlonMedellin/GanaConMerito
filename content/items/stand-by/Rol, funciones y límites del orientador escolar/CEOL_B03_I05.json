@@ -1,45 +1,45 @@
 {
   "id_item": "CEOL_B03_I05",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Diagnóstico Académico y Psicosocial",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Orientación escolar",
   "tema": "Rol, funciones y límites del orientador escolar",
-  "subtema": "Identificación de riesgos psicosociales sin activación de acciones preventivas, seguimiento o articulación institucional.",
-  "competencia": "Gestión de riesgos psicosociales",
+  "subtema": "Identificación de riesgos psicosociales sin activación de acciones",
+  "competencia": "Diferenciar las funciones de acompañamiento y derivación del orientador escolar de la intervención clínica de salud mental.",
   "nivel_cognitivo": "APLICACION",
-  "dificultad_estimada": "MEDIA_ALTA",
-  "claim": "El evaluado comprende que el orientador escolar no se limita a detectar riesgos, sino que debe formular o asesorar estrategias pedagógicas de prevención, activar rutas si procede, articular apoyos institucionales e intersectoriales y realizar seguimiento dentro de su alcance funcional.",
-  "evidencia": "Selecciona la actuación adecuada después de identificar riesgos psicosociales en estudiantes.",
-  "tarea": "Analizar una situación de riesgo psicosocial y elegir la respuesta institucional más completa y protectora.",
-  "contexto": "El docente orientador identifica factores de riesgo psicosocial que afectan a varios estudiantes, como aislamiento, conflictos familiares reportados, ausentismo frecuente y señales de malestar emocional. La institución pregunta qué debe hacer después de identificar estos factores.",
-  "enunciado": "El docente orientador identifica factores de riesgo psicosocial que afectan a varios estudiantes, como aislamiento, conflictos familiares reportados, ausentismo frecuente y señales de malestar emocional. La institución pregunta qué debe hacer después de identificar estos factores.\n\n¿Cuál es la responsabilidad más adecuada del orientador escolar?",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado determina los límites y alcances de la intervención del docente orientador frente a la detección de riesgos psicosociales y de salud mental en estudiantes.",
+  "evidencia": "Elige la alternativa que distingue la orientación y el acompañamiento formativo de la intervención clínica, psicoterapéutica o diagnóstica especializada.",
+  "tarea": "Resolver un caso donde se requiere la delimitación funcional entre la asesoría pedagógica y el tratamiento clínico en el servicio de orientación escolar.",
+  "contexto": "Un docente de aula deriva a orientación a un estudiante que presenta cambios bruscos de comportamiento, aislamiento crónico y autolesiones leves. El docente orientador programa sesiones semanales individuales de psicoterapia individual en su oficina para tratar de manera directa el trastorno psicológico subyacente.",
+  "enunciado": "Al analizar esta decisión a la luz de los manuales de funciones del Decreto 815 de 2018 y las directrices del Ministerio de Educación, la actuación del orientador representa:",
   "opciones": {
-    "A": "Guardar la información sin intervenir, porque identificar riesgos no implica ninguna acción institucional.",
-    "B": "Registrar la situación, diseñar o asesorar estrategias preventivas, orientar apoyos, activar rutas cuando corresponda y realizar seguimiento dentro de su alcance funcional.",
-    "C": "Emitir diagnósticos clínicos definitivos y asumir tratamientos terapéuticos especializados dentro de la institución.",
-    "D": "Hacer pública la lista de estudiantes con riesgos para que toda la comunidad pueda vigilarlos."
+    "A": "Una extralimitación funcional, puesto que el rol de orientación escolar es pedagógico y de apoyo en el aula, estando inhabilitado para realizar diagnósticos o tratamientos psicoterapéuticos clínicos, debiendo referir el caso a la red de salud.",
+    "B": "Una correcta aplicación de sus competencias laborales, ya que el servicio de orientación es la instancia oficial encargada de asumir el tratamiento de salud mental de los estudiantes de la institución.",
+    "C": "Una omisión de su deber de garante institucional al no convocar a la junta disciplinaria para sancionar la conducta de autolesión del estudiante como falta grave al Manual de Convivencia.",
+    "D": "Una intervención ineficaz por no haber citado al docente de aula para que presencie las sesiones terapéuticas y determine las calificaciones del estudiante durante el proceso."
   },
-  "clave": "B",
-  "justificacion_clave": "B",
+  "clave": "A",
+  "justificacion_clave": "De acuerdo con el manual de funciones docentes (Decreto 815 de 2018 y reglamentación complementaria), el docente orientador cumple un rol estrictamente pedagógico, de apoyo institucional, convivencia y articulación de prevención familiar; el diagnóstico clínico y tratamiento terapéutico corresponden al sistema de salud (EPS/IPS).",
   "distractores_funcion": {
-    "A": "Es incorrecta porque la detección de riesgos exige acciones de protección y prevención.",
-    "B": "Clave correcta.",
-    "C": "Es incorrecta porque el orientador escolar no debe reemplazar servicios clínicos especializados.",
-    "D": "Es incorrecta porque expone información sensible y puede generar estigmatización."
+    "A": "Clave correcta.",
+    "B": "Confunde el servicio de orientación escolar con una unidad o consultorio de salud mental clínica externa.",
+    "C": "Considera la autolesión (síntoma de riesgo en salud mental) como una infracción disciplinaria y propone una respuesta punitiva contraria a la protección del menor.",
+    "D": "Involucra indebidamente al docente en actividades clínicas y de evaluación que violan la reserva profesional de la información del estudiante."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem protege la confidencialidad, evita diagnósticos clínicos no pertinentes y reconoce la responsabilidad institucional de prevención, articulación y seguimiento."
+    "observaciones": "Caso técnico y funcional planteado de manera objetiva."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Redacción estructurada con opciones de longitud semejante."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Rol, funciones y límites del orientador escolar/CEOL_B03_I05.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

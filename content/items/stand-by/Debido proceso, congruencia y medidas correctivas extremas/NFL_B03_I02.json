@@ -7,39 +7,39 @@
   "competencia": "Valora medidas correctivas según debido proceso, proporcionalidad y congruencia frente a situaciones de convivencia.",
   "nivel_cognitivo": "JUICIO",
   "dificultad_estimada": "ALTA",
-  "claim": "Reconoce la actuación pedagógica o institucional más adecuada de acuerdo con el enfoque evaluado en el caso.",
-  "evidencia": "Selecciona una única alternativa defendible técnicamente y coherente con el constructo del ítem.",
-  "tarea": "Analizar la situación presentada y elegir la respuesta más pertinente según criterios pedagógicos y normativos aplicables.",
+  "claim": "Valora la adecuación de actuaciones pedagógicas e institucionales bajo criterios normativos y constitucionales.",
+  "evidencia": "Selecciona la respuesta que demuestra la correcta aplicación del marco normativo y pedagógico colombiano.",
+  "tarea": "Analizar el caso y determinar la opción correcta conforme a derecho y principios pedagógicos.",
   "contexto": "Durante un proceso disciplinario escolar, al estudiante se le notificó inicialmente una falta específica. Sin embargo, al momento de comunicar el fallo, la institución agrega nuevas faltas que nunca fueron informadas ni debatidas, con el fin de aumentar el castigo.",
   "enunciado": "Durante un proceso disciplinario escolar, al estudiante se le notificó inicialmente una falta específica. Sin embargo, al momento de comunicar el fallo, la institución agrega nuevas faltas que nunca fueron informadas ni debatidas, con el fin de aumentar el castigo.\n\n¿Por qué esta actuación vulnera el principio de congruencia y el derecho de defensa?",
   "opciones": {
-    "A": "Porque el fallo debe corresponder a los cargos previamente comunicados y debatidos; agregar nuevas faltas al final impide defenderse de ellas.",
-    "B": "Porque el colegio nunca puede aplicar medidas disciplinarias.",
-    "C": "Porque el estudiante puede escoger libremente qué normas cumplir.",
-    "D": "Porque las faltas no necesitan estar en el Manual de Convivencia."
+    "A": "Porque la resolución sancionatoria debe ceñirse estrictamente a los cargos comunicados y debatidos; incorporar nuevos hechos al fallo impide al estudiante ejercer su defensa sobre ellos.",
+    "B": "Porque la tipificación de conductas graves faculta al rector para modificar los cargos y agravar la medida de manera unilateral durante la etapa final del proceso.",
+    "C": "Porque al variar la tipificación inicial, el Manual de Convivencia establece que se debe trasladar la competencia al Comité de Convivencia de manera automática.",
+    "D": "Porque la favorabilidad disciplinaria obliga a acumular todas las conductas bajo el cargo inicial, impidiendo que se valoren de manera independiente."
   },
   "clave": "A",
   "justificacion_clave": "A",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque el colegio sí puede aplicar medidas si respeta garantías.",
-    "C": "Es incorrecta porque los estudiantes tienen deberes dentro de la comunidad educativa.",
-    "D": "Es incorrecta porque las faltas y medidas deben estar previstas y ser conocidas."
+    "B": "Error conceptual: confunde la facultad directiva del rector con un poder discrecional absoluto que pasaría por encima de la notificación de cargos.",
+    "C": "Error de procedimiento: la modificación de cargos no requiere cambio de órgano competente, sino reinicio de los términos de defensa del estudiante.",
+    "D": "Uso indebido de principio jurídico: aplica erróneamente el principio de favorabilidad disciplinaria como una prohibición de juzgar conductas independientes."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo y normativo estándar, sin referencias discriminatorias ni barreras culturales innecesarias."
+    "observaciones": "Lenguaje formal, neutral y apegado a la jurisprudencia colombiana en materia de derechos y deberes educativos, libre de sesgos territoriales o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciados con tarea única y opciones comparables en estructura y longitud."
+    "observaciones": "Redacción estructurada con enunciados independientes y opciones de longitud y complejidad gramatical homogéneas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

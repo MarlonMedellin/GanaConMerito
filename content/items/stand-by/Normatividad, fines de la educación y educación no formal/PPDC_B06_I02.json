@@ -7,24 +7,24 @@
   "competencia": "Clasificar ofertas formativas según su naturaleza jurídica dentro del servicio educativo.",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado diferencia educación formal de programas formativos que no conducen a títulos académicos del sistema regular.",
-  "evidencia": "Selecciona la clasificación correcta para cursos y programas laborales con certificación no conducente a título formal.",
-  "tarea": "Clasificar jurídicamente una oferta de formación con base en su finalidad y tipo de certificación.",
+  "claim": "Dinguir la naturaleza legal y clasificación de la oferta educativa para el trabajo y el desarrollo humano en Colombia.",
+  "evidencia": "Selecciona la clasificación jurídica correcta para un programa de competencias ocupacionales de corta duración no conducente a título formal.",
+  "tarea": "Clasificar jurídicamente una modalidad de formación de acuerdo con la Ley 115 y Ley 1064 de 2006.",
   "contexto": "Caso de curso corto y programa técnico laboral orientado al desarrollo de competencias ocupacionales.",
   "enunciado": "Una persona cursa formación laboral de corta duración y obtiene certificación de competencias ocupacionales, sin ingresar a grados del sistema regular ni obtener título académico formal. ¿Cómo se clasifica esta formación?",
   "opciones": {
-    "A": "Educación formal, por tratarse de un proceso organizado de enseñanza.",
-    "B": "Educación informal, porque los cursos cortos no pueden certificar aprendizajes.",
+    "A": "Educación informal, al tratarse de un proceso de autoaprendizaje espontáneo que carece de estructuración curricular y horaria.",
+    "B": "Educación formal en modalidad técnica, dado que culmina con la obtención de una certificación habilitante para el empleo.",
     "C": "Educación no formal o educación para el trabajo y el desarrollo humano, por no conducir a título académico formal.",
-    "D": "Educación superior universitaria, por desarrollar competencias técnicas laborales."
+    "D": "Educación superior técnica y tecnológica, por estar regulada por el Sistema Nacional de Acreditación de la educación universitaria."
   },
   "clave": "C",
-  "justificacion_clave": "Es la única opción que clasifica correctamente la oferta por su no conducción a títulos académicos de educación formal.",
+  "justificacion_clave": "La educación que se ofrece con el objeto de complementar, actualizar, suplir conocimientos y formar en competencias ocupacionales, sin sujeción al sistema de niveles y grados formales, se denomina Educación para el Trabajo y el Desarrollo Humano (antes no formal), según las Leyes 115 y 1064.",
   "distractores_funcion": {
-    "A": "Confusión frecuente: equipara organización del curso con formalidad jurídica.",
-    "B": "Error conceptual: niega certificación válida en oferta no formal/ETDH.",
-    "C": "Clave correcta.",
-    "D": "Generalización incorrecta: asimila formación laboral a educación universitaria."
+    "A": "Error de definición técnica. Confunde la ETDH (estructurada y planeada curricularmente) con la educación informal (espontánea, libre, de adquisición cotidiana).",
+    "B": "Error de categorización formal. Incluye erróneamente programas ocupacionales en el ciclo formal regular de la educación básica o media.",
+    "C": "Clave correcta. Clasifica con exactitud jurídica la oferta no conducente a títulos académicos formales del sistema regular.",
+    "D": "Confusión de niveles de educación superior. Asimila la formación laboral operada por institutos técnicos con la formación tecnológica y profesional universitaria regulada por la Ley 30 de 1992."
   },
   "fairness": {
     "sesgo_detectado": false,

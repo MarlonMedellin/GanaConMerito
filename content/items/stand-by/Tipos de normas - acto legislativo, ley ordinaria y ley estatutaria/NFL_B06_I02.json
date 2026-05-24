@@ -1,45 +1,45 @@
 {
   "id_item": "NFL_B06_I02",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Acto Legislativo",
   "tema": "Tipos de normas - acto legislativo, ley ordinaria y ley estatutaria",
-  "subtema": "Confundir acto legislativo con ley ordinaria o acto administrativo.",
+  "subtema": "Confundir acto legislativo con ley ordinaria",
   "competencia": "Reconocimiento de mecanismos de reforma constitucional",
-  "nivel_cognitivo": "APLICACION",
+  "nivel_cognitivo": "CONOCIMIENTO",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende que modificar la Constitución exige un procedimiento especial distinto al de una ley ordinaria.",
-  "evidencia": "Selecciona el objeto correcto del acto legislativo.",
-  "tarea": "Reconocer una categoría normativa de reforma constitucional.",
-  "contexto": "El Congreso quiere modificar un artículo de la Constitución Política. Algunos estudiantes preguntan si basta con aprobar una ley ordinaria.",
-  "enunciado": "El Congreso quiere modificar un artículo de la Constitución Política. Algunos estudiantes preguntan si basta con aprobar una ley ordinaria.\n\n¿Qué figura normativa corresponde a una reforma constitucional tramitada por el Congreso?",
+  "claim": "El evaluado identifica el Acto Legislativo como la figura normativa del Congreso para reformar la Constitución Política.",
+  "evidencia": "Reconoce los mecanismos de reforma constitucional y los diferencia de otras normas legislativas y administrativas.",
+  "tarea": "Determinar qué norma debe emplear el Congreso para reformar un artículo constitucional.",
+  "contexto": "El Congreso de la República de Colombia se propone modificar el texto de un artículo de la Constitución Política de 1991. Ante la inquietud de la comunidad educativa sobre el debido proceso para este cambio, se requiere precisar qué figura jurídica corresponde a esta modificación legislativa.",
+  "enunciado": "¿Qué tipo de norma debe tramitar el Congreso para reformar la Constitución?",
   "opciones": {
-    "A": "Acto Legislativo.",
-    "B": "Circular interna de rectoría.",
-    "C": "Manual de convivencia escolar.",
-    "D": "Boletín académico."
+    "A": "Un Acto Legislativo, expedido por el Congreso de la República a través de un trámite especial de ocho debates en dos períodos legislativos ordinarios y consecutivos.",
+    "B": "Un Decreto Reglamentario, expedido de manera conjunta por el Presidente de la República y los ministros del despacho.",
+    "C": "Una Ley Estatutaria, aprobada por mayoría absoluta del Congreso en una sola legislatura con control previo de la Corte Constitucional.",
+    "D": "Una Ordenanza Departamental, proferida por la Asamblea de Diputados a solicitud del Gobernador."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "Según el Artículo 374 de la Constitución, la Carta Política puede ser reformada por el Congreso mediante Actos Legislativos. Su trámite requiere un procedimiento riguroso de doble vuelta (ocho debates) para garantizar un amplio consenso de la sociedad.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque una circular no reforma la Constitución.",
-    "C": "Es incorrecta porque el Manual de Convivencia no tiene jerarquía constitucional.",
-    "D": "Es incorrecta porque un boletín académico no es norma jurídica."
+    "B": "Representa un instrumento administrativo del ejecutivo que solo reglamenta las leyes existentes, careciendo de alcance para modificar la Constitución.",
+    "C": "Confunde la ley estatutaria (que regula materias constitucionales sensibles de rango legal) con el acto de reforma de la propia Carta.",
+    "D": "Asocia la modificación constitucional nacional con un acto administrativo emitido por corporaciones públicas a nivel departamental."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem usa un ejemplo claro y evita tecnicismos innecesarios."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Opciones muy competitivas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Tipos de normas - acto legislativo, ley ordinaria y ley estatutaria/NFL_B06_I02.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

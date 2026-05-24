@@ -1,44 +1,44 @@
 {
   "id_item": "DIL_B10_I03",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Derechos y protección integral",
-  "tema": "Dignidad humana, equidad y columna vertebral del Código de Infancia",
-  "subtema": "Interés superior y norma más favorable",
-  "competencia": "Identifica actuaciones institucionales coherentes con dignidad humana, equidad y enfoque de derechos de infancia.",
+  "area": "Legislación y política educativa",
+  "tema": "Dignidad humana y derechos de la infancia",
+  "subtema": "Interés superior del niño",
+  "competencia": "Aplicar los principios constitucionales de dignidad humana, equidad y la estructura del Código de la Infancia y la Adolescencia en situaciones educativas.",
   "nivel_cognitivo": "JUICIO",
-  "dificultad_estimada": "ALTA",
-  "claim": "Reconoce la alternativa pedagógica o institucional más adecuada según el criterio técnico evaluado en el caso.",
-  "evidencia": "Selecciona una única opción defendible frente a distractores plausibles en función del constructo.",
-  "tarea": "Analizar el caso y elegir la decisión más pertinente conforme al enfoque del ítem.",
-  "contexto": "Una institución enfrenta una duda sobre cómo aplicar una norma en un caso que afecta a un estudiante menor de edad. Una interpretación protege mejor su dignidad, permanencia escolar y seguridad; otra interpretación es más rígida y puede aumentar su vulneración.",
-  "enunciado": "Una institución enfrenta una duda sobre cómo aplicar una norma en un caso que afecta a un estudiante menor de edad. Una interpretación protege mejor su dignidad, permanencia escolar y seguridad; otra interpretación es más rígida y puede aumentar su vulneración.\n\n¿Cuál criterio debe orientar la decisión?",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado aplica el principio de Interés Superior del Niño ante colisiones normativas del reglamento escolar.",
+  "evidencia": "Selecciona la decisión administrativa que escoge la interpretación que mejor protege los derechos fundamentales del menor por encima de formalismos institucionales.",
+  "tarea": "Resolver una contradicción entre la norma del manual de convivencia y la permanencia escolar del estudiante bajo el Interés Superior del Niño.",
+  "contexto": "Un estudiante de secundaria solicita permiso para asistir a clases con el cabello largo de acuerdo con su identidad étnica y de género. El manual de convivencia institucional prohíbe de forma absoluta el cabello largo en varones bajo sanción de retiro. El Consejo Directivo se reúne para resolver la colisión normativa.",
+  "enunciado": "Conforme al principio del Interés Superior del Niño y los límites de la autonomía escolar, el Consejo Directivo debe determinar que:",
   "opciones": {
-    "A": "Escoger siempre la interpretación más severa, aunque perjudique al estudiante.",
-    "B": "Aplicar el procedimiento de forma mecánica sin considerar derechos fundamentales.",
-    "C": "Preferir la interpretación o medida más favorable al interés superior del niño, niña o adolescente, garantizando derechos, debido proceso y protección integral.",
-    "D": "Decidir según la conveniencia administrativa de la institución, aunque se afecten derechos."
+    "A": "El manual de convivencia es norma de obligatorio cumplimiento y, al estar firmado por la familia, prevalece sobre cualquier identidad personal.",
+    "B": "Se autorice el ingreso del estudiante permitiéndole conservar su cabello largo, debiendo la institución modificar el manual de convivencia para adecuarlo a la protección constitucional del libre desarrollo de la personalidad.",
+    "C": "El estudiante deba cortarse el cabello para ingresar a clases y, en caso de inconformidad, la familia proceda a reubicarlo en otra institución afín a su estilo.",
+    "D": "Se permita el ingreso del estudiante a clases, pero se le restrinja la participación en actos públicos y graduación institucional para no afectar la imagen del plantel."
   },
-  "clave": "C",
-  "justificacion_clave": "C",
+  "clave": "B",
+  "justificacion_clave": "El Interés Superior del Niño (Art. 44 CP y Art. 8 de la Ley 1098 de 2006) y el derecho al libre desarrollo de la personalidad limitan la autonomía de los manuales de convivencia. Las instituciones no pueden imponer normas estéticas que vulneren la dignidad o identidad del menor, debiendo ajustar su reglamento interno a la Constitución.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque la mayor severidad no equivale a protección integral.",
-    "B": "Es incorrecta porque el procedimiento debe aplicarse con enfoque de derechos.",
-    "C": "Clave correcta.",
-    "D": "Es incorrecta porque la conveniencia institucional no puede prevalecer sobre derechos de infancia."
+    "A": "Supone una supremacía del reglamento interno sobre los derechos fundamentales constitucionales que es legalmente inviable.",
+    "B": "Clave correcta.",
+    "C": "Incurre en exclusión escolar encubierta al sugerir el retiro voluntario del estudiante frente a una imposición reglamentaria arbitraria.",
+    "D": "Constituye una medida discriminatoria e inconstitucional que vulnera la dignidad del estudiante en el espacio público escolar."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estándar y contexto institucional general sin sesgos culturales innecesarios."
+    "observaciones": "Alineado con los pronunciamientos de la Corte Constitucional colombiana sobre manuales de convivencia."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura y exigencia."
+    "observaciones": "Redacción asertiva y distractores de alta verosimilitud en contextos de gestión directiva."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Dignidad humana, equidad y columna vertebral del Código de Infancia/DIL_B10_I03.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

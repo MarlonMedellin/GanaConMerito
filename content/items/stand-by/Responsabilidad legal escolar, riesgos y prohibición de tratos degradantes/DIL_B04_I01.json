@@ -11,20 +11,20 @@
   "evidencia": "Selecciona la respuesta que prioriza registro, reporte institucional y activación de ruta competente.",
   "tarea": "Tomar una decisión profesional ante señales reiteradas de riesgo en un estudiante.",
   "contexto": "Docente observa malnutrición, posible explotación y abandono psicoafectivo en un estudiante.",
-  "enunciado": "Un educador identifica indicios reiterados de malnutrición, posible explotación económica y abandono psicoafectivo en un estudiante. ¿Cuál actuación es más adecuada?",
+  "enunciado": "Un educador identifica indicios de malnutrición, posible explotación económica y abandono físico y psicoafectivo en un estudiante. ¿Cuál actuación del educador es la más adecuada y conforme a su deber de protección?",
   "opciones": {
-    "A": "No intervenir hasta que el estudiante presente una denuncia formal por escrito.",
-    "B": "Registrar indicios, informar por canales institucionales, proteger al estudiante y activar la ruta competente.",
-    "C": "Interrogar al estudiante para establecer por cuenta propia responsabilidades jurídicas familiares.",
-    "D": "Exponer el caso ante el grupo para prevenir situaciones similares."
+    "A": "Postergar la acción hasta recopilar pruebas contundentes y recibir una declaración escrita y firmada por el estudiante para evitar falsas acusaciones.",
+    "B": "Registrar detalladamente los hechos observables, activar la ruta de atención integral institucional reportando al orientador o directivos, e informar a las autoridades de protección competentes.",
+    "C": "Interrogar de manera exhaustiva al menor de edad para identificar a los responsables del maltrato antes de dar aviso a la institución.",
+    "D": "Citar a una asamblea de padres de familia del grado para exponer la situación del estudiante y solicitar apoyo socioeconómico colectivo para su familia."
   },
   "clave": "B",
-  "justificacion_clave": "Es la única opción que cumple deber de cuidado sin revictimizar ni invadir funciones de otras autoridades.",
+  "justificacion_clave": "El docente tiene el deber legal de reportar de forma inmediata cualquier indicio de vulneración de derechos de los NNA ante el comité de convivencia o directivos para activar la ruta intersectorial (ICBF, Comisaría o Policía), asegurando la reserva del caso y evitando la revictimización.",
   "distractores_funcion": {
-    "A": "Omisión por formalismo: retrasa protección inmediata.",
+    "A": "La exigencia de pruebas formales o firmas retrasa de forma injustificada la protección de un menor expuesto a riesgo.",
     "B": "Clave correcta.",
-    "C": "Extralimitación funcional: sustituye a autoridades competentes.",
-    "D": "Vulneración de dignidad y confidencialidad del estudiante."
+    "C": "El docente incurre en extralimitación de funciones al interrogar judicialmente al estudiante, arriesgándose a revictimizarlo.",
+    "D": "Vulnera flagrantemente el derecho constitucional a la intimidad y confidencialidad del estudiante al exponer públicamente su caso."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I01.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

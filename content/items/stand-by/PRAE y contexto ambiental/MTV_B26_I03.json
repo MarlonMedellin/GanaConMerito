@@ -1,45 +1,45 @@
 {
   "id_item": "MTV_B26_I03",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "PRAE y contexto ambiental",
   "subtema": "Aplicación pedagógica",
-  "competencia": "Juicio pedagógico",
+  "competencia": "Diferenciar metodologías participativas en el diseño e implementación del Proyecto Ambiental Escolar (PRAE).",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "",
-  "enunciado": "Una institución formula un PRAE sobre contaminación de un río cercano, pero lo diseña solo desde la rectoría, sin estudiantes, docentes, familias, líderes barriales ni actores ambientales del territorio.\n\n¿Qué debilidad presenta el proyecto?",
+  "claim": "El evaluado identifica estrategias de diseño participativo que articulan la problemática ambiental local con los actores comunitarios e institucionales según la normativa del PRAE.",
+  "evidencia": "Selecciona la acción que promueve la representatividad y el diseño democrático del proyecto frente a formulaciones unilaterales.",
+  "tarea": "Determinar la estrategia metodológica idónea para subsanar el diseño centralizado de un Proyecto Ambiental Escolar (PRAE).",
+  "contexto": "En una institución educativa oficial se ha elaborado el Proyecto Ambiental Escolar (PRAE) enfocado en la descontaminación de una quebrada aledaña. Sin embargo, el documento fue redactado exclusivamente desde el equipo directivo, sin consultar a los docentes de áreas distintas a ciencias naturales, ni a los estudiantes, familias o líderes comunitarios del sector.",
+  "enunciado": "Para reorientar la formulación de este proyecto bajo el enfoque participativo e interdisciplinario exigido por el Decreto 1743 de 1994, el establecimiento debe:",
   "opciones": {
-    "A": "Exceso de participación.",
-    "B": "Ausencia de participación comunitaria y lectura territorial.",
-    "C": "Demasiada interdisciplinariedad.",
-    "D": "Correcta aplicación del enfoque participativo."
+    "A": "Conformar una mesa ambiental escolar con representación de todos los estamentos de la comunidad educativa y actores locales para diagnosticar conjuntamente el problema e integrar saberes diversos.",
+    "B": "Suspender la ejecución del proyecto y delegar su reescritura exclusiva a un asesor externo especializado en gestión ambiental corporativa.",
+    "C": "Ejecutar el diseño actual limitando la participación comunitaria a la divulgación de las decisiones tomadas por el equipo directivo.",
+    "D": "Reducir el alcance del proyecto al cumplimiento administrativo de actividades puntuales dentro de la jornada escolar para evitar conflictos de interés."
   },
   "clave": "A",
-  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "justificacion_clave": "De acuerdo con el Decreto 1743 de 1994, los PRAE deben ser de carácter participativo e interdisciplinario, partiendo de un diagnóstico concertado con la comunidad y no de imposiciones unilaterales.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Distractor funcional.",
-    "C": "Distractor funcional.",
-    "D": "Distractor funcional."
+    "B": "Confunde el carácter participativo con la delegación tecnocrática externa.",
+    "C": "Mantiene el sesgo centralizado bajo la apariencia de divulgación, sin participación real.",
+    "D": "Prioriza el cumplimiento formal de requisitos sobre la intervención pedagógica comunitaria real."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+    "observaciones": "El caso utiliza un escenario educativo general sobre gestión de proyectos ambientales, sin sesgos geográficos o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Redacción directa, vocabulario técnico pertinente y opciones homogéneas en extensión."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/PRAE y contexto ambiental/MTV_B26_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

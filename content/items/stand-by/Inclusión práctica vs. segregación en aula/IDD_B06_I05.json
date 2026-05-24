@@ -11,20 +11,20 @@
   "evidencia": "Selecciona una opción que mantiene expectativas razonables con apoyos adecuados.",
   "tarea": "Diferenciar ajuste razonable de eliminación injustificada de exigencias.",
   "contexto": "Un docente debe evaluar la comprensión de un concepto en un estudiante que requiere apoyos. Duda entre eliminar por completo el aprendizaje esperado o aplicar ajustes que le permitan acceder y demostrar su comprensión de otra manera.",
-  "enunciado": "Un docente debe evaluar la comprensión de un concepto en un estudiante que requiere apoyos. Duda entre eliminar por completo el aprendizaje esperado o aplicar ajustes que le permitan acceder y demostrar su comprensión de otra manera.\n\n¿Cuál decisión es más coherente con una práctica inclusiva?",
+  "enunciado": "Teniendo en cuenta los criterios de flexibilización curricular en el marco de la educación inclusiva, ¿cuál decisión evaluativa es la más coherente?",
   "opciones": {
-    "A": "Eliminar siempre el propósito de aprendizaje cuando exista una barrera.",
-    "B": "Mantener el propósito formativo y ajustar medios, tiempos, recursos, apoyos o formas de expresión para que el estudiante pueda participar y evidenciar progreso.",
-    "C": "No realizar ningún ajuste para tratar a todos exactamente igual.",
-    "D": "Asignar una actividad sin relación con el contenido y aprobarla automáticamente."
+    "A": "Eliminar el aprendizaje esperado de la planeación y del boletín del estudiante para evitar causarle frustración durante el proceso de evaluación.",
+    "B": "Mantener el propósito formativo del aprendizaje y flexibilizar los medios de evaluación, otorgando tiempos adicionales, apoyos visuales o formatos alternativos de expresión de conocimientos.",
+    "C": "Aplicar la misma prueba escrita obligatoria bajo las mismas condiciones del grupo, para garantizar el principio de igualdad y equidad institucional.",
+    "D": "Sustituir la evaluación conceptual por una valoración subjetiva de la conducta y el comportamiento del estudiante en clase."
   },
   "clave": "B",
-  "justificacion_clave": "B",
+  "justificacion_clave": "Flexibilizar la evaluación implica no rebajar las expectativas de aprendizaje de forma automática, sino ajustar los medios, metodologías y formatos para que el estudiante demuestre lo aprendido de acuerdo con sus capacidades y ritmos cognitivos.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque elimina expectativas sin análisis.",
-    "B": "Clave correcta.",
-    "C": "Es incorrecta porque negar ajustes puede mantener barreras.",
-    "D": "Es incorrecta porque desconecta evaluación y aprendizaje."
+    "A": "Representa una exclusión curricular anticipada que niega el derecho al aprendizaje y limita el desarrollo del estudiante.",
+    "C": "Confunde igualdad formal (trato idéntico que ignora barreras) con equidad real (apoyos diferenciados para equiparar oportunidades).",
+    "D": "Confunde la valoración del proceso de aprendizaje conceptual con la evaluación disciplinaria o de conducta en el salón.",
+    "B": "Clave correcta."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Inclusión práctica vs. segregación en aula/IDD_B06_I05.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": false
   }

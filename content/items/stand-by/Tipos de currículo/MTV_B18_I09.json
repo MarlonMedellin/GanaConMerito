@@ -1,6 +1,6 @@
 {
   "id_item": "MTV_B18_I09",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "Tipos de currículo",
   "subtema": "Aplicación pedagógica",
@@ -13,18 +13,18 @@
   "contexto": "Una institución quiere diseñar actividades de jornada única. En lugar de repetir más horas de las mismas asignaturas, busca clubes artísticos, deportivos, científicos, ambientales y ciudadanos según intereses estudiantiles.",
   "enunciado": "Una institución quiere diseñar actividades de jornada única. En lugar de repetir más horas de las mismas asignaturas, busca clubes artísticos, deportivos, científicos, ambientales y ciudadanos según intereses estudiantiles.\n\n¿Qué sentido curricular se fortalece?",
   "opciones": {
-    "A": "Saturación académica sin propósito.",
-    "B": "Castigo por bajo rendimiento.",
-    "C": "Currículo extracurricular o complementario orientado al desarrollo integral.",
-    "D": "Currículo nulo."
+    "A": "Ampliación de currículo operacional tradicional con fines de remediación obligatoria.",
+    "B": "Currículo nulo al desplazar contenidos esenciales de las áreas fundamentales.",
+    "C": "Implementación de un currículo extracurricular o complementario orientado al desarrollo integral.",
+    "D": "Currículo oficial uniforme para homologar el desempeño de todos los estudiantes."
   },
   "clave": "C",
-  "justificacion_clave": "C",
+  "justificacion_clave": "Los clubes organizados de acuerdo con las inclinaciones y talentos de los alumnos corresponden al currículo complementario o extracurricular. Este enriquece el proceso formativo ofreciendo espacios de desarrollo estético, deportivo y científico que fortalecen el aprendizaje significativo fuera del plan de estudios regular.",
   "distractores_funcion": {
-    "A": "La propuesta evita saturación repetitiva.",
-    "B": "No se plantea como castigo.",
+    "A": "Incorrecto. No se trata de remediación académica obligatoria ni de saturación de contenidos, sino de diversificación para el desarrollo humano.",
+    "B": "Incorrecto. No es currículo nulo, pues no se están suprimiendo contenidos indispensables del plan formal; se están integrando nuevas experiencias formativas.",
     "C": "Clave correcta.",
-    "D": "No se omite el aprendizaje, se amplía."
+    "D": "Incorrecto. El currículo oficial estándar define los mínimos normativos generales, no la oferta flexible y diversificada basada en los intereses singulares de los estudiantes en la jornada única."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Tipos de currículo/MTV_B18_I09.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

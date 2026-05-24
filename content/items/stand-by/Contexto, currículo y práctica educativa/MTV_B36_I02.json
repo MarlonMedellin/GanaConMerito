@@ -7,24 +7,24 @@
   "competencia": "Analiza decisiones curriculares y didácticas a partir del contexto institucional y del propósito formativo.",
   "nivel_cognitivo": "ANÁLISIS",
   "dificultad_estimada": "MEDIA-ALTA",
-  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada en el caso planteado.",
-  "evidencia": "Selecciona una alternativa única, consistente con el criterio evaluado y superior frente a distractores plausibles.",
-  "tarea": "Analizar la situación y elegir la mejor decisión según el enfoque del ítem.",
+  "claim": "Analiza decisiones didácticas orientadas a integrar contenidos disciplinares con el contexto real de los estudiantes.",
+  "evidencia": "Selecciona la opción que describe de forma técnicamente precisa la contextualización curricular en un caso práctico.",
+  "tarea": "Analizar el uso pedagógico de datos reales del entorno para el desarrollo de contenidos disciplinares de estadística.",
   "contexto": "Una profesora enseña estadística usando datos reales del barrio sobre transporte, servicios públicos y hábitos de lectura. Luego conecta esos datos con tablas, gráficas y porcentajes.",
   "enunciado": "Una profesora enseña estadística usando datos reales del barrio sobre transporte, servicios públicos y hábitos de lectura. Luego conecta esos datos con tablas, gráficas y porcentajes.\n\n¿Qué está haciendo?",
   "opciones": {
-    "A": "Contextualizar el currículo sin abandonar el contenido disciplinar.",
-    "B": "Eliminar la estadística.",
-    "C": "Reemplazar el aprendizaje por opinión.",
-    "D": "Desconocer el entorno."
+    "A": "Contextualizar el currículo articulando las dinámicas del entorno con el desarrollo de competencias disciplinares.",
+    "B": "Priorizar saberes locales sobre el rigor de la estructura lógica de los contenidos disciplinares del área.",
+    "C": "Sustituir el diseño microcurricular por un enfoque activista centrado en problemáticas sociales inmediatas.",
+    "D": "Limitar la enseñanza de contenidos abstractos para evitar la frustración de estudiantes en contextos vulnerables."
   },
   "clave": "A",
-  "justificacion_clave": "La docente usa el contexto como mediación para desarrollar conceptos estadísticos.",
+  "justificacion_clave": "La docente utiliza problemáticas reales del barrio como mediación didáctica para enseñar conceptos de estadística, lo que permite conectar el aprendizaje abstracto con la realidad sin perder el rigor disciplinar.",
   "distractores_funcion": {
-    "A": "Clave correcta.",
-    "B": "La estadística se trabaja con datos reales.",
-    "C": "No se sustituye por opinión; se formaliza.",
-    "D": "El entorno es punto de partida."
+    "A": "Clave correcta. Integra la mediación contextual con el contenido disciplinar.",
+    "B": "Error conceptual. Plantea una falsa dicotomía al subordinar el rigor académico a los saberes comunitarios.",
+    "C": "Desviación pedagógica. Confunde la mediación didáctica contextualizada con un activismo social que diluye los objetivos de aprendizaje.",
+    "D": "Sesgo de debilidad. Propone reducir la exigencia conceptual bajo el supuesto prejuicio de que la vulnerabilidad impide el pensamiento abstracto."
   },
   "fairness": {
     "sesgo_detectado": false,

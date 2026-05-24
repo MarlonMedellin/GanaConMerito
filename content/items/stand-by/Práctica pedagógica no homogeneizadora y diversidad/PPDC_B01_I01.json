@@ -7,39 +7,39 @@
   "competencia": "Tomar decisiones didácticas que atiendan diversidad de ritmos, intereses y niveles de comprensión.",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado reconoce que la autonomía docente en selección textual se ejerce con criterios de pertinencia y diversidad.",
-  "evidencia": "Selecciona la valoración pedagógica que evita imposición homogénea y considera propósito formativo del grupo.",
-  "tarea": "Analizar una decisión de plan lector y elegir la respuesta pedagógicamente más pertinente.",
-  "contexto": "Docente impone un único libro, ritmo y guía sin considerar diferencias del grupo.",
-  "enunciado": "En un plan lector, un docente decide que todo el grupo lea el mismo libro al mismo ritmo, sin ajustar por niveles ni contextos. ¿Cuál valoración pedagógica es más adecuada?",
+  "claim": "Valora la adecuación de actuaciones pedagógicas e institucionales bajo criterios normativos y constitucionales.",
+  "evidencia": "Selecciona la respuesta que demuestra la correcta aplicación del marco normativo y pedagógico colombiano.",
+  "tarea": "Analizar el caso y determinar la opción correcta conforme a derecho y principios pedagógicos.",
+  "contexto": "En el diseño de un plan lector institucional, un docente decide que todo el grupo debe leer exactamente el mismo libro impreso al mismo ritmo y responder el mismo formato de taller evaluativo, sin flexibilizar los textos ni la metodología de entrega para los estudiantes con ritmos diversos.",
+  "enunciado": "En el diseño de un plan lector institucional, un docente decide que todo el grupo debe leer exactamente el mismo libro impreso al mismo ritmo y responder el mismo formato de taller evaluativo, sin flexibilizar los textos ni la metodología de entrega para los estudiantes con ritmos diversos.\n\nDe acuerdo con el enfoque pedagógico no homogeneizador y la atención a la diversidad, ¿cuál es la valoración pedagógica más coherente sobre esta decisión didáctica?",
   "opciones": {
-    "A": "Es adecuada, porque la autoridad docente permite decidir sin considerar diversidad del grupo.",
-    "B": "Es adecuada, siempre que el libro sea reconocido, aunque no sea pertinente para el grupo.",
-    "C": "Es limitada, porque la selección debe considerar propósitos formativos, niveles de comprensión, intereses y diversidad.",
-    "D": "Solo sería inadecuada si existe una queja formal de estudiantes o familias."
+    "A": "Es inadecuada, porque la planeación pedagógica de la lectura en aulas diversas exige proponer diversas formas de representación de la información, niveles de complejidad y mediaciones para favorecer la comprensión.",
+    "B": "Es adecuada, ya que la aplicación de criterios de evaluación homogeneizadores garantiza la equidad en la calificación y previene sesgos subjetivos en el aula.",
+    "C": "Es adecuada, toda vez que el desarrollo de la autonomía escolar le permite al maestro imponer sus propios textos y ritmos de manera discrecional en su área de enseñanza.",
+    "D": "Es inadecuada, puesto que el Manual de Convivencia prohíbe de forma expresa el uso de guías de trabajo y libros impresos sin previa autorización del Consejo Directivo."
   },
-  "clave": "C",
-  "justificacion_clave": "Es la única opción que integra autonomía docente con criterio pedagógico no homogeneizador y enfoque de diversidad.",
+  "clave": "A",
+  "justificacion_clave": "A",
   "distractores_funcion": {
-    "A": "Confusión frecuente: equipara autonomía profesional con imposición unilateral.",
-    "B": "Error de generalización: reemplaza pertinencia didáctica por prestigio del texto.",
-    "C": "Clave correcta.",
-    "D": "Aplicación incompleta: condiciona calidad pedagógica a existencia de reclamo formal."
+    "A": "Clave correcta.",
+    "B": "Error conceptual de equidad: confunde igualdad mecánica de trato con equidad formativa, ignorando que evaluar igual a estudiantes desiguales genera injusticia.",
+    "C": "Abuso de autonomía: malinterpreta la libertad de cátedra como una licencia absoluta para obviar las diferencias individuales y necesidades de apoyo del grupo.",
+    "D": "Absurdidad normativa: inventa una regla administrativa irreal que no representa un verdadero argumento pedagógico ni legal."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "No presupone capital cultural específico; evalúa criterio docente de inclusión pedagógica."
+    "observaciones": "Lenguaje formal, neutral y apegado a la jurisprudencia colombiana en materia de derechos y deberes educativos, libre de sesgos territoriales o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Lenguaje directo y foco en una sola decisión de aula."
+    "observaciones": "Redacción estructurada con enunciados independientes y opciones de longitud y complejidad gramatical homogéneas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Práctica pedagógica no homogeneizadora y diversidad/PPDC_B01_I01.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

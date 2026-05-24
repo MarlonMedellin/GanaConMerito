@@ -1,30 +1,30 @@
 {
   "id_item": "IDD_B01_I02",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Pedagogía Práctica y Discriminación",
   "tema": "Sesgos culturales, lenguaje inclusivo y discriminación cotidiana",
   "subtema": "Respuesta docente inadecuada frente a una expresión discriminatoria naturalizada.",
   "competencia": "Mediación pedagógica antidiscriminatoria",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende que deconstruir un sesgo en el aula exige una intervención pedagógica respetuosa, reflexiva y participativa, no una corrección humillante o una omisión.",
-  "evidencia": "Elige la acción docente que convierte la expresión color piel en una oportunidad para reconocer la diversidad de tonos de piel.",
-  "tarea": "Seleccionar la actuación docente más coherente con inclusión y enfoque de derechos.",
+  "claim": "Aplica estrategias de mediación pedagógica frente a expresiones discriminatorias naturalizadas en el aula.",
+  "evidencia": "Elige la actuación docente que promueve la reflexión, el diálogo y el reconocimiento de la diversidad humana a partir de un conflicto cotidiano.",
+  "tarea": "Resolver un caso práctico de aula donde un estudiante emplea la expresión 'color piel' de manera excluyente.",
   "contexto": "Después de que un estudiante pide el color piel, el docente decide intervenir pedagógicamente para evitar que el grupo asuma un único tono como representación válida de todas las personas.",
   "enunciado": "Después de que un estudiante pide el color piel, el docente decide intervenir pedagógicamente para evitar que el grupo asuma un único tono como representación válida de todas las personas.\n\n¿Cuál actuación docente es más adecuada?",
   "opciones": {
     "A": "Preguntar al grupo si todas las pieles son iguales, observar diferentes tonos, ofrecer varios colores y conversar sobre respeto y diversidad humana.",
-    "B": "Entregar el color claro de siempre y continuar la actividad sin hacer ninguna reflexión.",
-    "C": "Regañar al niño por usar una expresión discriminatoria y prohibirle participar en la actividad.",
-    "D": "Suspender la actividad artística porque hablar de diversidad puede incomodar al grupo."
+    "B": "Ignorar la expresión para evitar debates que desvíen la atención del objetivo técnico y artístico planteado en la sesión de dibujo.",
+    "C": "Amonestar verbalmente al estudiante en público por reproducir discursos discriminatorios, recordándole las sanciones del manual de convivencia.",
+    "D": "Limitar las opciones de coloreado en el aula prohibiendo el uso de lápices de tonos claros para forzar la representación de pieles oscuras."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "La intervención pedagógica ideal ante un sesgo naturalizado es reflexiva y dialógica. Invita al estudiante y al grupo a indagar y contrastar su idea con la realidad, deconstruyendo el sesgo sin recurrir a la humillación o censura vacía.",
   "distractores_funcion": {
-    "A": "Clave correcta.",
-    "B": "Es incorrecta porque reproduce el sesgo.",
-    "C": "Es incorrecta porque usa una respuesta punitiva.",
-    "D": "Es incorrecta porque evita el aprendizaje inclusivo."
+    "A": "Clave correcta. Describe la intervención formativa, dialógica e inclusiva.",
+    "B": "Error de omisión pasiva. Perpetúa y valida de forma implícita el sesgo al no generar ninguna reflexión o intervención en el aula.",
+    "C": "Error punitivo autoritario. Sanciona al estudiante de forma desproporcionada por un sesgo cultural aprendido del entorno, cerrando la vía del aprendizaje.",
+    "D": "Error reactivo y segregador. Restringe de manera autoritaria opciones cromáticas, lo que no soluciona el sesgo cognitivo de fondo y genera rechazo."
   },
   "fairness": {
     "sesgo_detectado": false,

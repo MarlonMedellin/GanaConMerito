@@ -2,43 +2,43 @@
   "id_item": "CEOL_B06_I01",
   "estado": "LISTO_PARA_BANCO",
   "area": "Evaluación del aprendizaje",
-  "tema": "Evaluación formativa",
+  "tema": "Evaluación formativa, mejora continua y lenguaje evaluativo",
   "subtema": "Mejora continua y retroalimentación",
   "competencia": "Distinguir prácticas evaluativas formativas de prácticas centradas solo en calificación final.",
-  "nivel_cognitivo": "ANÁLISIS",
+  "nivel_cognitivo": "CONOCIMIENTO",
   "dificultad_estimada": "MEDIA",
   "claim": "El evaluado reconoce que la evaluación formativa produce evidencia continua para ajustar enseñanza y aprendizaje.",
-  "evidencia": "Identifica la opción que integra seguimiento sistemático, criterios explícitos y retroalimentación útil.",
-  "tarea": "Seleccionar la característica definitoria de una evaluación formativa en contexto escolar.",
-  "contexto": "Un equipo académico busca reemplazar prácticas de evaluación centradas únicamente en notas de cierre.",
-  "enunciado": "¿Qué rasgo define mejor una evaluación formativa orientada a mejora continua?",
+  "evidencia": "Identifica que el núcleo de la evaluación formativa consiste en la retroalimentación cualitativa y la toma de decisiones pedagógicas durante el proceso.",
+  "tarea": "Identificar la característica principal de la evaluación formativa en el aula.",
+  "contexto": "Un centro educativo desea reestructurar sus prácticas evaluativas para transitar de un modelo punitivo y centrado solo en la nota final a un modelo de evaluación formativa orientada al éxito escolar.",
+  "enunciado": "¿Qué rasgo pedagógico define mejor una evaluación formativa y de mejora continua en el aula?",
   "opciones": {
-    "A": "Aplicar pruebas sorpresa frecuentes para aumentar control y disciplina.",
-    "B": "Recolectar evidencias durante el proceso y ofrecer retroalimentación para ajustar estrategias de aprendizaje.",
-    "C": "Concentrar la valoración en una prueba final para asegurar comparabilidad entre estudiantes.",
-    "D": "Promediar múltiples calificaciones sin analizar errores ni decisiones de mejora."
+    "A": "La recolección sistemática de evidencias de aprendizaje durante el proceso para ofrecer retroalimentación oportuna y reorientar tanto las estrategias del estudiante como la mediación didáctica del docente.",
+    "B": "La aplicación de exámenes imprevistos de carácter memorístico con el propósito principal de mantener el control conductual y la disciplina en el salón de clases.",
+    "C": "El diseño de una prueba sumativa acumulativa al final del período escolar para determinar de manera exclusiva la aprobación o reprobación de la asignatura.",
+    "D": "El promedio matemático simple de calificaciones parciales acumuladas, omitiendo el análisis cualitativo de las dificultades recurrentes presentadas por los educandos."
   },
-  "clave": "B",
-  "justificacion_clave": "Describe el núcleo formativo: evidencia procesual más retroalimentación accionable para mejora.",
+  "clave": "A",
+  "justificacion_clave": "La evaluación formativa no busca sancionar o clasificar, sino diagnosticar y retroalimentar de forma continua. Al visibilizar las brechas del aprendizaje a tiempo, permite al estudiante reajustar sus estrategias y al docente mejorar su didáctica antes del cierre del proceso.",
   "distractores_funcion": {
-    "A": "Confusión frecuente: equipara control con formación.",
-    "B": "Clave correcta.",
-    "C": "Error conceptual: reduce evaluación a corte sumativo.",
-    "D": "Aplicación incompleta: acumula notas sin uso pedagógico."
+    "A": "Clave correcta.",
+    "B": "Incurre en el error común de usar la evaluación como herramienta de control disciplinario bajo el temor del castigo numérico.",
+    "C": "Define la evaluación puramente sumativa de cierre, la cual es útil administrativamente pero no interviene pedagógicamente en el proceso de aprendizaje.",
+    "D": "Representa una práctica de acumulación mecánica de notas que anula la retroalimentación y la toma de decisiones didácticas."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Situaciones escolares generales; no requieren conocimiento externo al enunciado ni referencias culturales específicas."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Sintaxis directa, una tarea cognitiva por ítem y vocabulario pedagógico controlado."
+    "observaciones": "Texto directo."
   },
   "metadata_editorial": {
-    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "fuente": "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/CEOL_B06_I01.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

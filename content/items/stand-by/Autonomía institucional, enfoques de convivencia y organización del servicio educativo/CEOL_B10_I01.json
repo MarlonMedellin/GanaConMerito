@@ -1,44 +1,44 @@
 {
   "id_item": "CEOL_B10_I01",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Convivencia y organización institucional",
-  "tema": "Autonomía institucional, enfoques de convivencia y organización del servicio educativo",
-  "subtema": "Enfoques Transversales de Convivencia",
-  "competencia": "Selecciona decisiones de gestión escolar acordes con autonomía institucional, convivencia y organización del servicio educativo.",
-  "nivel_cognitivo": "ANÁLISIS",
+  "area": "Legislación y política educativa",
+  "tema": "Convivencia escolar y autonomía",
+  "subtema": "Enfoques de la Ley 1620",
+  "competencia": "Selecciona decisiones de gestión escolar acordes con autonomía institucional, convivencia y organización del servicio educativo (Decreto 1075 de 2015).",
+  "nivel_cognitivo": "COMPRENSIÓN",
   "dificultad_estimada": "MEDIA",
-  "claim": "Identifica la actuación institucional o pedagógica más consistente con el marco conceptual y normativo del caso planteado.",
-  "evidencia": "Selecciona una única alternativa técnicamente superior frente a opciones plausibles pero incorrectas o incompletas.",
-  "tarea": "Analizar el caso y elegir la mejor decisión pedagógica o institucional según el criterio evaluado.",
-  "contexto": "Una institución revisa sus protocolos de convivencia y advierte que algunas situaciones se han tratado solo como indisciplina, sin analizar derechos vulnerados, relaciones de poder, condiciones de género, discapacidad, edad, contexto familiar o pertenencia cultural.",
-  "enunciado": "Una institución revisa sus protocolos de convivencia y advierte que algunas situaciones se han tratado solo como indisciplina, sin analizar derechos vulnerados, relaciones de poder, condiciones de género, discapacidad, edad, contexto familiar o pertenencia cultural.\n\n¿Cuáles son los tres enfoques transversales que deben orientar el tratamiento de los conflictos en el marco de la convivencia escolar?",
+  "claim": "El evaluado identifica los enfoques transversales normativos para el tratamiento de conflictos de convivencia.",
+  "evidencia": "Distingue los tres enfoques de la ruta de atención integral (Derechos, Género y Diferencial) frente a opciones no normativas o descriptivas.",
+  "tarea": "Identificar los enfoques transversales de convivencia escolar definidos por la legislación colombiana.",
+  "contexto": "Una institución educativa revisa sus protocolos de convivencia y advierte que la mayoría de los conflictos interpersonales se han tratado exclusivamente bajo medidas de indisciplina. El equipo directivo propone reorientar las intervenciones incorporando análisis sobre la vulneración de derechos, dinámicas de poder, desigualdades basadas en género y barreras específicas asociadas a la diversidad de los estudiantes.",
+  "enunciado": "De acuerdo con el marco regulatorio del Sistema Nacional de Convivencia Escolar, ¿cuáles son los enfoques transversales obligatorios que deben orientar este proceso de reestructuración?",
   "opciones": {
-    "A": "Enfoque punitivo, enfoque sancionatorio y enfoque administrativo.",
+    "A": "Enfoque correctivo, enfoque sancionatorio y enfoque de disciplina positiva.",
     "B": "Enfoque de derechos, enfoque de género y enfoque diferencial.",
-    "C": "Enfoque memorístico, enfoque disciplinario y enfoque calificador.",
-    "D": "Enfoque financiero, enfoque logístico y enfoque documental."
+    "C": "Enfoque de competencias socioemocionales, enfoque clínico y enfoque de mediación externa.",
+    "D": "Enfoque de convivencia pacífica, enfoque de manuales de convivencia y enfoque de arbitraje directivo."
   },
   "clave": "B",
-  "justificacion_clave": "B",
+  "justificacion_clave": "La opción B es la correcta porque de conformidad con la Ley 1620 de 2013 y su decreto reglamentario, el diseño y aplicación de los componentes de la Ruta de Atención Integral deben incorporar los enfoques de Derechos (centralidad del menor como sujeto de derechos), Género (reconocimiento de desigualdades relacionales) y Diferencial (reconocimiento de particularidades y barreras).",
   "distractores_funcion": {
-    "A": "Es incorrecta porque reproduce un enfoque exclusivamente punitivo.",
+    "A": "Enfoca la convivencia en la respuesta disciplinaria o correctiva tradicional, omitiendo los enfoques transversales de derechos e inclusión social definidos por la ley.",
     "B": "Clave correcta.",
-    "C": "Es incorrecta porque no corresponde a enfoques transversales de convivencia.",
-    "D": "Es incorrecta porque alude a gestión administrativa, no a política de convivencia."
+    "C": "Alude a aspectos psicológicos y metodologías terapéuticas que no constituyen la base transversal de la política pública de convivencia escolar.",
+    "D": "Menciona conceptos generales de gestión de convivencia que no corresponden a los enfoques específicos y vinculantes de la normativa nacional."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Contextos escolares generales y lenguaje técnico neutral; no exige experiencia localizada."
+    "observaciones": "La terminología normativa empleada es de carácter nacional y obligatorio para el sector docente público."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Estructura de caso breve y una sola tarea cognitiva por ítem."
+    "observaciones": "Redacción estructurada en formato de caso, con opciones compactas y balanceadas en su redacción."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I01.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

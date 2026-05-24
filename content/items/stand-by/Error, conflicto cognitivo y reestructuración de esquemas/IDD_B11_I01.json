@@ -1,45 +1,45 @@
 {
   "id_item": "IDD_B11_I01",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "El error como aprendizaje",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y currículo",
   "tema": "Error, conflicto cognitivo y reestructuración de esquemas",
-  "subtema": "Tratamiento punitivo del error como fracaso o falta de estudio.",
-  "competencia": "Manejo pedagógico del error",
+  "subtema": "Tratamiento punitivo del error como fracaso o falta de estudio",
+  "competencia": "Aplicar estrategias de mediación pedagógica que utilicen el error del estudiante como insumo formativo constructivista.",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende que el error no debe castigarse automáticamente, sino usarse como información para comprender cómo piensa el estudiante y acompañar la reconstrucción de su conocimiento.",
-  "evidencia": "Selecciona una actuación docente que analiza el error, identifica la dificultad conceptual y propone retroalimentación y nuevas actividades.",
-  "tarea": "Analizar una respuesta errónea y elegir la intervención constructivista adecuada.",
-  "contexto": "Un estudiante resuelve mal una operación porque aplica un procedimiento aprendido de forma incompleta. El docente puede sancionar el error o usarlo para comprender cómo está pensando el estudiante.",
-  "enunciado": "Un estudiante resuelve mal una operación porque aplica un procedimiento aprendido de forma incompleta. El docente puede sancionar el error o usarlo para comprender cómo está pensando el estudiante.\n\nDesde una postura constructivista, ¿cómo debe utilizar el docente ese error?",
+  "claim": "El evaluado identifica estrategias de mediación basadas en el constructivismo que aprovechan el error en el aprendizaje.",
+  "evidencia": "Selecciona la acción que analiza el razonamiento subyacente al error para propiciar la autocorrección y mejora.",
+  "tarea": "Determinar la intervención docente pertinente frente a un error procedimental sistemático de un estudiante en clase.",
+  "contexto": "Al resolver problemas de suma de fracciones, un estudiante suma directamente los numeradores y los denominadores entre sí (ej. 1/2 + 1/3 = 2/5). El docente nota que este error se repite en todo el taller del estudiante.",
+  "enunciado": "De acuerdo con un enfoque constructivista y de aprendizaje formativo, ¿cuál debe ser la intervención del docente?",
   "opciones": {
-    "A": "Castigarlo inmediatamente para que el estudiante no vuelva a equivocarse.",
-    "B": "Ignorarlo para no afectar la autoestima del estudiante.",
-    "C": "Analizar qué idea o procedimiento está usando el estudiante, retroalimentar y proponer una mediación que le permita reestructurar su esquema mental.",
-    "D": "Concluir que el estudiante no tiene capacidad para aprender el tema."
+    "A": "Pedir al estudiante que explique gráficamente qué representan las fracciones de la operación, evidenciando la contradicción visual del resultado y guiándolo a descubrir el concepto de equivalencia.",
+    "B": "Calificar con nota desaprobatoria el ejercicio e indicarle al estudiante que debe memorizar el algoritmo del mínimo común múltiplo mediante la repetición del procedimiento en casa.",
+    "C": "Corregir de inmediato el error escribiendo el resultado correcto en el tablero del salón para evitar que sus compañeros adopten el mismo procedimiento erróneo.",
+    "D": "Permitir que el estudiante conserve el resultado obtenido sin intervenir, para proteger su autoestima y respetar sus ritmos individuales de aprendizaje."
   },
-  "clave": "C",
-  "justificacion_clave": "C",
+  "clave": "A",
+  "justificacion_clave": "Desde una postura constructivista, el error no se penaliza mecánicamente ni se ignora; se asume como síntoma de un esquema mental incompleto y se media mediante preguntas o recursos (como representaciones gráficas) para que el estudiante reorganice su comprensión y alcance la autocorrección.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque sancionar no garantiza comprensión.",
-    "B": "Es incorrecta porque ignorar el error impide aprender de él.",
-    "C": "Clave correcta.",
-    "D": "Es incorrecta porque atribuye el error a incapacidad personal."
+    "A": "Clave correcta.",
+    "B": "Enfoque tradicional conductista que prioriza la sanción y la repetición memorística sobre la comprensión conceptual.",
+    "C": "Enfoque directivo que anula la actividad cognitiva del estudiante al darle la respuesta ya elaborada.",
+    "D": "Interpretación errónea de la pedagogía activa que confunde el respeto a los ritmos con la ausencia de mediación docente ante dificultades del saber."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem evita estigmatizar al estudiante por equivocarse y promueve una intervención formativa."
+    "observaciones": "Situación didáctica habitual libre de sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "El ejemplo matemático es simple y común en el nivel primario."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Error, conflicto cognitivo y reestructuración de esquemas/IDD_B11_I01.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

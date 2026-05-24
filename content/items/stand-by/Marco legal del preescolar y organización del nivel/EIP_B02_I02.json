@@ -1,30 +1,30 @@
 {
   "id_item": "EIP_B02_I02",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Organización del nivel preescolar",
   "tema": "Marco legal del preescolar y organización del nivel",
   "subtema": "Confusión sobre los grados del nivel preescolar y el grado obligatorio dentro del sistema educativo formal.",
   "competencia": "Identificación de grados del preescolar",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "BAJA_MEDIA",
-  "claim": "El evaluado comprende cómo se organiza el nivel preescolar dentro del sistema educativo.",
-  "evidencia": "Selecciona la estructura correcta del nivel preescolar.",
-  "tarea": "Clasificar los grados de preescolar según la organización normativa.",
+  "claim": "Identifica la estructura orgánica del nivel de educación preescolar en Colombia y define sus grados y carácter de obligatoriedad.",
+  "evidencia": "Selecciona la opción que clasifica correctamente prejardín, jardín y transición, reconociendo el grado transición como el obligatorio.",
+  "tarea": "Identificar la organización y obligatoriedad legal de los grados en el nivel de educación preescolar.",
   "contexto": "Una institución educativa organiza su oferta de preescolar y necesita diferenciar los grados del nivel antes de la educación básica primaria.",
   "enunciado": "Una institución educativa organiza su oferta de preescolar y necesita diferenciar los grados del nivel antes de la educación básica primaria.\n\nSegún el marco normativo del preescolar, ¿cuáles son los grados que integran este nivel y cuál es obligatorio?",
   "opciones": {
-    "A": "Primero, segundo y tercero; todos pertenecen al preescolar.",
-    "B": "Sexto, séptimo y octavo; transición es educación media.",
+    "A": "Jardín, transición y primero, siendo obligatorios los grados de transición y primero.",
+    "B": "Prejardín y jardín, siendo obligatorios ambos grados para ingresar al ciclo de educación básica.",
     "C": "Prejardín, jardín y transición; transición es el grado obligatorio.",
-    "D": "Décimo y undécimo; transición es un proyecto transversal."
+    "D": "Transición, primero y segundo, siendo obligatorios los tres grados para consolidar la lectoescritura básica."
   },
   "clave": "C",
-  "justificacion_clave": "C",
+  "justificacion_clave": "De conformidad con la Ley 115 de 1994, el nivel de preescolar comprende los grados de prejardín, jardín y transición, siendo el grado transición el único grado obligatorio del nivel en las instituciones del Estado.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque primero, segundo y tercero pertenecen a básica primaria.",
-    "B": "Es incorrecta porque sexto a octavo pertenecen a básica secundaria.",
-    "C": "Clave correcta.",
-    "D": "Es incorrecta porque décimo y undécimo pertenecen a educación media."
+    "A": "Error de clasificación. Incluye primer grado (que pertenece a básica primaria) dentro del nivel de preescolar y le asigna erróneamente obligatoriedad preescolar.",
+    "B": "Error normativo. Omite el grado obligatorio de transición y atribuye carácter obligatorio a grados que el Estado no exige de forma universal.",
+    "C": "Clave correcta. Refleja la organización legal y obligatoriedad de la Ley 115.",
+    "D": "Confusión de ciclos. Agrupa transición con grados de primaria (primero y segundo) bajo un pretendido criterio de lectoescritura obligatoria."
   },
   "fairness": {
     "sesgo_detectado": false,

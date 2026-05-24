@@ -1,45 +1,45 @@
 {
   "id_item": "MTV_B31_I02",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "Jornada escolar, horario laboral y asignación académica",
   "subtema": "Aplicación pedagógica",
   "competencia": "Juicio pedagógico",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "",
-  "enunciado": "Un docente afirma que su jornada laboral solo incluye las horas frente a grupo. La coordinación le recuerda que también incluye actividades curriculares complementarias, preparación, evaluación, formación, atención institucional y otras funciones propias del cargo.\n\n¿Qué concepto se está aclarando?",
+  "claim": "El evaluado identifica el alcance de la jornada laboral docente y los componentes que la integran según la normatividad colombiana.",
+  "evidencia": "Reconoce que la jornada laboral docente abarca tanto la asignación académica como las actividades curriculares complementarias.",
+  "tarea": "Distinguir la jornada laboral docente de la asignación académica directa frente a grupo.",
+  "contexto": "Un docente afirma que su jornada laboral se limita exclusivamente a las horas de clase directa frente a grupo. La coordinación le aclara que, conforme a la normatividad, esta también incluye actividades de preparación de clases, evaluación, atención a familias y reuniones institucionales.",
+  "enunciado": "¿Qué concepto normativo se está aclarando en esta situación?",
   "opciones": {
-    "A": "Jornada laboral docente.",
-    "B": "Solo descanso pedagógico.",
-    "C": "Únicamente recreo estudiantil.",
-    "D": "Servicio social estudiantil."
+    "A": "La jornada laboral docente.",
+    "B": "La asignación académica obligatoria.",
+    "C": "El tiempo de permanencia mínima obligatoria.",
+    "D": "La jornada de desarrollo institucional."
   },
   "clave": "A",
-  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "justificacion_clave": "De acuerdo con el Decreto 1075 de 2015, la jornada laboral de los docentes de carrera es de 8 horas diarias y comprende tanto la asignación académica (horas de clase) como las actividades curriculares complementarias y de desarrollo institucional.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Distractor funcional.",
-    "C": "Distractor funcional.",
-    "D": "Distractor funcional."
+    "B": "Representa el error de confundir la totalidad de la jornada laboral con la subcategoría de clases directas (asignación académica).",
+    "C": "Representa la confusión con las 6 horas mínimas de permanencia obligatoria en el establecimiento educativo, que no agotan la jornada de 8 horas.",
+    "D": "Representa la confusión con el tiempo dedicado a la planeación y evaluación institucional que se realiza durante semanas específicas sin estudiantes."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Redacción directa."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I02.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

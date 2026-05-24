@@ -1,6 +1,6 @@
 {
   "id_item": "EFCC_B01_I03",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Evaluación Formativa y Criterios",
   "tema": "Evaluación tecnicista, punitiva y formativa",
   "subtema": "Confusión entre evaluación procesual formativa y evaluación centrada en calificaciones aisladas.",
@@ -19,9 +19,9 @@
     "D": "Evitar toda valoración del aprendizaje para no afectar emocionalmente a los estudiantes."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "La opción A es la clave correcta porque, en la situación descrita, acompañar el aprendizaje, identificar avances y dificultades, retroalimentar oportunamente y ajustar la enseñanza. Esto responde directamente a la competencia de 'Evaluación procesual y retroalimentación', la cual exige que el evaluado demuestre que la evaluación procesual formativa no busca sorprender o sancionar, sino obtener información permanente sobre el aprendizaje para retroalimentar, ajustar la enseñanza y promover avances, asegurando una actuación institucional o didáctica debidamente fundamentada.",
   "distractores_funcion": {
-    "A": "Clave correcta.",
+    "A": "Clave correcta: se alinea con la competencia al proponer que acompañar el aprendizaje, identificar avances y dificultades, retroalimentar oportunamente y ajustar la enseñanza.",
     "B": "Es incorrecta porque aumentar notas no garantiza evaluación formativa.",
     "C": "Es incorrecta porque sancionar errores frecuentes reproduce una lógica punitiva.",
     "D": "Es incorrecta porque la evaluación formativa sí valora el aprendizaje, pero con intención de mejora."
@@ -38,8 +38,8 @@
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Evaluación tecnicista, punitiva y formativa/EFCC_B01_I03.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

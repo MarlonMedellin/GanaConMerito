@@ -11,20 +11,20 @@
   "evidencia": "Selecciona la opción que mejor explica la decisión pedagógica coherente con el aprendizaje significativo en el caso planteado.",
   "tarea": "Inferir, a partir del caso, la condición didáctica que permite aprendizaje significativo según Ausubel.",
   "contexto": "Después de enseñar un tema, la docente no pregunta solo definiciones. Pide que los estudiantes expliquen con sus palabras, representen el concepto, lo comparen con otro y resuelvan un caso nuevo.",
-  "enunciado": "Después de enseñar un tema, la docente no pregunta solo definiciones. Pide que los estudiantes expliquen con sus palabras, representen el concepto, lo comparen con otro y resuelvan un caso nuevo.\n\n¿Qué busca evaluar?",
+  "enunciado": "De acuerdo con el enfoque evaluativo de la teoría de Ausubel, ¿qué pretende verificar la docente con estas actividades?",
   "opciones": {
-    "A": "Solo memoria literal.",
-    "B": "Comprensión, transferencia y relación significativa del conocimiento.",
-    "C": "Obediencia silenciosa.",
-    "D": "Capacidad de copiar más rápido."
+    "A": "La retención literal de las definiciones conceptuales y la fidelidad del estudiante al reproducir las explicaciones del texto.",
+    "B": "La asimilación de significados sustantivos evidenciada en la capacidad de traducción, relación y transferencia conceptual a nuevos problemas.",
+    "C": "El desarrollo procedimental y motriz del estudiante al graficar y copiar los diagramas explicativos del pizarrón.",
+    "D": "El grado de aprendizaje por descubrimiento autónomo y puro del estudiante en ausencia de la instrucción formal docente."
   },
   "clave": "B",
-  "justificacion_clave": "Explicar, representar, comparar y transferir son evidencias de comprensión más profundas que la repetición literal.",
+  "justificacion_clave": "Evaluar la asimilación significativa implica no conformarse con la repetición de palabras exactas, sino buscar evidencias de comprensión mediante la traducción (explicar con sus palabras), representación y aplicación a nuevas situaciones cotidianas.",
   "distractores_funcion": {
-    "A": "La actividad supera la memoria literal.",
+    "A": "Corresponde al enfoque de evaluación memorística tradicional.",
     "B": "Clave correcta.",
-    "C": "No se evalúa obediencia.",
-    "D": "No se trata de velocidad de copia."
+    "C": "Señala habilidades psicomotrices no alineadas con la evaluación de la estructura cognitiva conceptual.",
+    "D": "Confunde la teoría de recepción significativa de Ausubel con el aprendizaje por descubrimiento de Bruner."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I08.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

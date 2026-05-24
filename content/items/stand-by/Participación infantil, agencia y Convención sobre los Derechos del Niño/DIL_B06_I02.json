@@ -1,6 +1,6 @@
 {
   "id_item": "DIL_B06_I02",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Niveles de participación",
   "tema": "Participación infantil, agencia y Convención sobre los Derechos del Niño",
   "subtema": "Uso de niños, niñas y adolescentes en actividades simbólicas sin comprensión, decisión ni incidencia real.",
@@ -13,18 +13,18 @@
   "contexto": "En un evento institucional, varios estudiantes aparecen en fotografías, cargan carteles y representan una campaña, pero no conocen el propósito de la actividad, no fueron consultados y no tienen incidencia en las decisiones.",
   "enunciado": "En un evento institucional, varios estudiantes aparecen en fotografías, cargan carteles y representan una campaña, pero no conocen el propósito de la actividad, no fueron consultados y no tienen incidencia en las decisiones.\n\nSegún los niveles de participación de Roger Hart, ¿por qué esto puede considerarse participación decorativa?",
   "opciones": {
-    "A": "Porque los estudiantes son exhibidos o usados simbólicamente sin comprensión, voz ni incidencia real en el proceso.",
-    "B": "Porque toda participación estudiantil en eventos institucionales es siempre inválida.",
-    "C": "Porque los adultos nunca pueden orientar procesos de participación infantil.",
-    "D": "Porque la participación solo existe cuando los niños toman todas las decisiones sin acompañamiento."
+    "A": "Porque los estudiantes son utilizados como imagen visual o apoyo estético del evento, careciendo de información previa sobre la actividad, de voz propia y de capacidad de incidencia en el diseño de la campaña.",
+    "B": "Porque toda vinculación de los estudiantes en actividades protocolarias organizadas por adultos constituye un acto que vulnera de manera automática su debido proceso escolar.",
+    "C": "Porque los educadores tienen prohibido orientar o planificar acciones públicas de participación infantil para preservar la neutralidad institucional del plantel.",
+    "D": "Porque la participación democrática escolar genuina solo se alcanza cuando los menores toman decisiones de manera autónoma, prescindiendo de la mediación o acompañamiento docente."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "En la escalera de la participación de Roger Hart, la 'participación decorativa' es una de las formas de no-participación. Se presenta cuando los adultos involucran a niños en un evento con el único fin de promover una causa, tomar fotografías o exhibirlos públicamente, sin que los menores entiendan realmente el sentido del acto, posean canales de expresión autónoma o puedan influir en el desarrollo de la actividad.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque sí puede haber participación estudiantil válida en eventos.",
-    "C": "Es incorrecta porque la orientación adulta puede ser legítima si respeta voz e incidencia.",
-    "D": "Es incorrecta porque la participación no exige ausencia total de acompañamiento."
+    "B": "Incorrecto. La presencia de estudiantes en eventos protocolarios no es inherentemente una vulneración de derechos, siempre que exista consentimiento informado y se superen las prácticas instrumentales o decorativas.",
+    "C": "Incorrecto. La labor docente y la mediación pedagógica son necesarias y legítimas para promover la ciudadanía infantil; lo incorrecto es instrumentalizar a los alumnos sin darles voz.",
+    "D": "Incorrecto. El acompañamiento de adultos no invalida la participación; por el contrario, la mediación dialógica y protectora es indispensable para asegurar que los niños puedan opinar e incidir en condiciones seguras y formativas."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Participación infantil, agencia y Convención sobre los Derechos del Niño/DIL_B06_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

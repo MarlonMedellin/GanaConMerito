@@ -11,20 +11,20 @@
   "evidencia": "Selecciona una única alternativa técnicamente superior frente a distractores plausibles.",
   "tarea": "Analizar la situación planteada y elegir la respuesta más adecuada según el criterio del ítem.",
   "contexto": "La coordinación debe mediar entre dos estudiantes que se han enviado mensajes ofensivos por redes sociales y luego discutieron en el aula. Se busca realizar una conversación restaurativa inicial.",
-  "enunciado": "La coordinación debe mediar entre dos estudiantes que se han enviado mensajes ofensivos por redes sociales y luego discutieron en el aula. Se busca realizar una conversación restaurativa inicial.\n\n¿Cuál secuencia es más adecuada?",
+  "enunciado": "Para guiar esta conversación restaurativa inicial con un enfoque de comunicación efectiva y resolución de conflictos, ¿cuál secuencia de acciones es la más adecuada?",
   "opciones": {
-    "A": "Escuchar versiones, establecer reglas de respeto, identificar afectaciones, construir compromisos y definir seguimiento.",
-    "B": "Definir primero la sanción, informar a los estudiantes y cerrar el caso para evitar nuevas discusiones.",
-    "C": "Pedir disculpas públicas inmediatas y asumir que con ello queda resuelto el conflicto.",
-    "D": "Revisar únicamente los mensajes escritos y decidir sin escuchar a los estudiantes."
+    "A": "Establecer pautas de respeto para la escucha mutua, solicitar a cada estudiante describir los hechos y sus sentimientos de forma precisa, identificar conjuntamente las afectaciones y acordar compromisos de no agresión y disculpa.",
+    "B": "Leer en voz alta los mensajes ofensivos recolectados de las redes sociales, amonestar verbalmente a ambos estudiantes y registrar la sanción en el observador escolar.",
+    "C": "Solicitar una disculpa pública inmediata en el aula frente a sus compañeros para dar un mensaje contundente de cero tolerancia a la agresión.",
+    "D": "Reunirse por separado con cada estudiante, recolectar sus descargos por escrito y emitir un fallo disciplinario sin realizar un encuentro de diálogo directo."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "La secuencia asertiva prioriza la escucha mutua, la expresión de sentimientos y necesidades, el reconocimiento de la afectación causada (empatía) y la co-construcción de acuerdos restaurativos de convivencia voluntaria.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque una sanción inicial no asegura comprensión del conflicto ni construcción de compromisos. Además, cerrar el caso sin seguimiento puede dejar la situación sin resolución pedagógica.",
-    "C": "Es incorrecta porque una disculpa pública inmediata puede ser superficial o incluso revictimizante si no hay comprensión de las afectaciones ni acuerdos de reparación.",
-    "D": "Es incorrecta porque revisar solo los mensajes escritos ofrece una visión parcial del conflicto y excluye la escucha de los estudiantes involucrados."
+    "B": "Se enfoca exclusivamente en la punición y en la evidencia de la falta, anulando la oportunidad pedagógica del diálogo y la restauración.",
+    "C": "Forzar una disculpa pública sin reflexión previa puede ser humillante o falso, sin resolver de raíz las tensiones interpersonales.",
+    "D": "El aislamiento de los estudiantes impide el desarrollo de habilidades comunicativas socioemocionales de mediación directa."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Comunicación asertiva/CB05_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

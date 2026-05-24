@@ -13,17 +13,17 @@
   "contexto": "Vecinos del plantel educativo manifiestan su intención de demandar al colegio porque, según ellos, algunos estudiantes generan situaciones de inseguridad en los alrededores. El docente conoce la preocupación y debe contribuir a una respuesta institucional adecuada.",
   "enunciado": "Vecinos del plantel educativo manifiestan su intención de demandar al colegio porque, según ellos, algunos estudiantes generan situaciones de inseguridad en los alrededores. El docente conoce la preocupación y debe contribuir a una respuesta institucional adecuada.\n\n¿Cómo debe actuar la institución frente a esta situación?",
   "opciones": {
-    "A": "Negar cualquier diálogo con los vecinos porque lo que ocurre fuera del colegio no tiene relación con la institución.",
-    "B": "Señalar públicamente a todos los estudiantes como responsables de la inseguridad del sector.",
-    "C": "Trasladar el problema exclusivamente a la policía, sin revisar prácticas escolares ni acciones preventivas.",
-    "D": "Abrir espacios de diálogo con la comunidad, analizar los hechos, involucrar a directivos, familias y estudiantes, definir acuerdos preventivos y articular entidades competentes si es necesario."
+    "A": "Rechazar formalmente la interlocución con los vecinos aduciendo que la jurisdicción escolar y la responsabilidad del plantel terminan en los linderos del edificio.",
+    "B": "Estigmatizar al cuerpo estudiantil en comunicados oficiales para justificar la aplicación inmediata de medidas de control de comportamiento en el sector exterior.",
+    "C": "Delegar el caso de manera unilateral a la fuerza pública local para que efectúe controles externos, desvinculando la gestión de convivencia del plantel.",
+    "D": "Liderar mesas de diálogo con la comunidad y el gobierno escolar, analizar los factores relacionales del entorno, concertar acuerdos pedagógicos de convivencia y coordinar acciones preventivas con la red de seguridad local."
   },
   "clave": "D",
-  "justificacion_clave": "D",
+  "justificacion_clave": "La gestión comunitaria y el enfoque de convivencia escolar (Ley 1620 de 2013) señalan que los conflictos del entorno escolar requieren procesos de mediación ciudadana y articulación intersectorial. Ignorar el malestar de los vecinos o criminalizar a los alumnos quebranta el tejido de la comunidad; lo correcto es propiciar el diálogo participativo y definir estrategias preventivas conjuntas.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque la escuela debe reconocer su relación con el entorno y gestionar tensiones comunitarias.",
-    "B": "Es incorrecta porque estigmatiza a todos los estudiantes y puede vulnerar derechos.",
-    "C": "Es incorrecta porque la intervención de entidades externas puede ser necesaria, pero no sustituye la acción pedagógica e institucional.",
+    "A": "Incorrecto. La escuela tiene una función social comunitaria y el comportamiento de los estudiantes en los accesos del plantel afecta la convivencia general, lo que exige corresponsabilidad.",
+    "B": "Incorrecto. Estigmatizar o generalizar culpas atenta contra el principio de presunción de inocencia y el derecho al buen nombre del cuerpo estudiantil.",
+    "C": "Incorrecto. Reducir una problemática de convivencia social a un asunto policial de orden público desaprovecha la oportunidad formativa y desconoce la función preventiva del manual de convivencia.",
     "D": "Clave correcta."
   },
   "fairness": {
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Corresponsabilidad, entorno y cuidado institucional/CEOL_B04_I04.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

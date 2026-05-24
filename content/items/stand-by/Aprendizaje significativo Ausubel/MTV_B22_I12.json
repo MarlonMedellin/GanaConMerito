@@ -10,21 +10,21 @@
   "claim": "Distingue prácticas de enseñanza memorística de prácticas que promueven integración sustantiva con saberes previos y comprensión con sentido.",
   "evidencia": "Selecciona la opción que mejor explica la decisión pedagógica coherente con el aprendizaje significativo en el caso planteado.",
   "tarea": "Inferir, a partir del caso, la condición didáctica que permite aprendizaje significativo según Ausubel.",
-  "contexto": "",
-  "enunciado": "¿Cuál conjunto de acciones favorece mejor un aprendizaje significativo y no meramente memorístico?",
+  "contexto": "En una autoevaluación institucional, los docentes reflexionan sobre cómo transformar sus prácticas de aula cotidianas para transitar de una enseñanza memorística hacia una pedagogía orientada al aprendizaje con sentido.",
+  "enunciado": "De acuerdo con los principios de la teoría de la asimilación de Ausubel, ¿cuál conjunto de acciones favorece de manera integral este propósito?",
   "opciones": {
-    "A": "Activar presaberes, captar atención, organizar el contenido, relacionarlo con experiencias, promover comprensión y aplicar en contextos nuevos.",
-    "B": "Dictar, copiar, repetir y castigar errores.",
-    "C": "Leer una definición sin explicarla y evaluarla literalmente.",
-    "D": "Avanzar temas sin verificar comprensión."
+    "A": "Diagnosticar la estructura cognitiva previa, estructurar lógicamente los materiales de estudio, activar ideas ancla y proponer problemas de transferencia y aplicación contextualizada.",
+    "B": "Diseñar una secuencia estricta de dictado, copia textual y repetición verbal para fijar la información en la memoria a largo plazo.",
+    "C": "Promover el aprendizaje por descubrimiento libre y no estructurado, absteniéndose de ofrecer explicaciones, guías o estructuras conceptuales previas.",
+    "D": "Fragmentar los contenidos de aprendizaje en unidades de conducta mínimas que el estudiante memorice de forma aislada mediante refuerzos."
   },
   "clave": "A",
-  "justificacion_clave": "El conjunto integra condiciones centrales: presaberes, organización, sentido, comprensión y transferencia.",
+  "justificacion_clave": "Para lograr aprendizaje significativo, es indispensable coordinar tres dimensiones: la estructura cognitiva del alumno (saberes previos), la naturaleza y organización del material (lógicamente significativo) y la actitud activa del estudiante potenciada por actividades de transferencia pedagógica.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Refuerza aprendizaje mecánico.",
-    "C": "Evalúa memoria literal.",
-    "D": "No acompaña la construcción de sentido."
+    "B": "Representa las prácticas clásicas del aprendizaje repetitivo y memorístico tradicional.",
+    "C": "Describe el enfoque de descubrimiento libre extremo que ignora la importancia de la estructuración y guía del docente según Ausubel.",
+    "D": "Responde a un enfoque asociacionista-conductista de condicionamiento operativo."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I12.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

@@ -1,45 +1,45 @@
 {
   "id_item": "DIL_B07_I02",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Límites constitucionales de los mecanismos de participación",
-  "tema": "Mecanismos de participación ciudadana: plebiscito, consulta y límites",
-  "subtema": "Uso inadecuado de mecanismos de participación para someter derechos fundamentales de niños, niñas y adolescentes a una votación mayoritaria.",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Competencias ciudadanas",
+  "tema": "Mecanismos de participación ciudadana",
+  "subtema": "Límites a la democracia directa",
   "competencia": "Identificación de límites a la democracia directa",
-  "nivel_cognitivo": "APLICACION",
-  "dificultad_estimada": "ALTA",
-  "claim": "El evaluado comprende que la participación ciudadana debe ejercerse dentro del marco constitucional y no puede anular derechos fundamentales.",
-  "evidencia": "Selecciona una explicación que integra competencia, mecanismo adecuado y prevalencia de derechos de los niños.",
-  "tarea": "Analizar una propuesta de autoridad local y determinar su inviabilidad constitucional.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "DIFÍCIL",
+  "claim": "El evaluado reconoce los límites constitucionales y territoriales de la democracia directa, especialmente sobre los derechos fundamentales de los niños.",
+  "evidencia": "Identifica que el plebiscito es nacional y que la democracia directa no puede usarse para vulnerar derechos fundamentales prevalentes de los menores.",
+  "tarea": "Determinar por qué es inviable someter la restricción de movilidad nocturna de menores a un plebiscito municipal.",
   "contexto": "Un alcalde desea restringir el tránsito nocturno de menores de edad por razones de seguridad y propone someter esa restricción a un plebiscito municipal. La medida afectaría directamente derechos de niños, niñas y adolescentes.",
-  "enunciado": "Un alcalde desea restringir el tránsito nocturno de menores de edad por razones de seguridad y propone someter esa restricción a un plebiscito municipal. La medida afectaría directamente derechos de niños, niñas y adolescentes.\n\n¿Por qué la propuesta no es viable en el diseño constitucional colombiano?",
+  "enunciado": "¿Por qué la propuesta no es viable en el diseño constitucional colombiano?",
   "opciones": {
-    "A": "Porque los mecanismos de participación no pueden usarse para desconocer derechos fundamentales ni la prevalencia de los derechos de los niños, y además el plebiscito no es el mecanismo municipal ordinario para regular esa materia.",
-    "B": "Porque los alcaldes nunca pueden adoptar ninguna medida de seguridad local.",
-    "C": "Porque los derechos de los niños solo existen si la mayoría ciudadana los aprueba.",
-    "D": "Porque el tránsito de menores no tiene ninguna relación con derechos fundamentales."
+    "A": "El plebiscito es un mecanismo de resorte exclusivamente nacional convocado por el Presidente, y además la democracia directa no puede ser utilizada para someter a votación la restricción de derechos fundamentales de menores de edad, dada su prevalencia constitucional.",
+    "B": "Los alcaldes carecen de competencia para decretar medidas de orden público o restricción de movilidad en su jurisdicción territorial, siendo una facultad exclusiva del Presidente.",
+    "C": "Las consultas populares y plebiscitos locales solo pueden decidir sobre asuntos de ordenamiento tributario o ambiental, estando prohibido cualquier debate relacionado con la seguridad ciudadana.",
+    "D": "Toda restricción a los derechos de los niños y adolescentes debe ser previamente autorizada mediante referendo aprobatorio convocado por el Congreso de la República."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "El plebiscito es nacional y de convocatoria presidencial exclusiva (Ley 134/94 y Ley 1757/15), y los derechos fundamentales, en especial el interés superior del niño (Art. 44 CP), actúan como límites sustanciales infranqueables para los mecanismos de democracia directa local.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque las autoridades locales sí pueden adoptar medidas dentro de sus competencias y con respeto de derechos.",
-    "C": "Es incorrecta porque los derechos fundamentales no dependen de aprobación mayoritaria.",
-    "D": "Es incorrecta porque la restricción de movilidad y presencia en espacio público puede afectar derechos."
+    "B": "Incorrecto, los alcaldes sí son la máxima autoridad de policía de su municipio y pueden emitir decretos sobre movilidad, aunque respetando derechos fundamentales.",
+    "C": "Restringe incorrectamente el espectro de los mecanismos locales y afirma erróneamente que no pueden tratar seguridad.",
+    "D": "Inventa un requisito normativo de referendo aprobatorio del Congreso inexistente en la legislación."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem protege la prevalencia de derechos de niños, niñas y adolescentes y evita una lectura plebiscitaria ilimitada."
+    "observaciones": "El ítem resguarda la neutralidad política y se apoya en jurisprudencia de la Corte Constitucional colombiana."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Sintaxis precisa, opciones exhaustivas y claras."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Mecanismos de participación ciudadana: plebiscito, consulta y límites/DIL_B07_I02.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

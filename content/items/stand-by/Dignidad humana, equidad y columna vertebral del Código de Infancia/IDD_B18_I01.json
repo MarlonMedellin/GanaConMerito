@@ -1,0 +1,45 @@
+{
+  "id_item": "IDD_B18_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Legislación y política educativa",
+  "tema": "Dignidad humana y derechos de la infancia",
+  "subtema": "Corresponsabilidad y protección integral",
+  "competencia": "Aplicar los principios constitucionales de dignidad humana, equidad y la estructura del Código de la Infancia y la Adolescencia (Ley 1098 de 2006) en situaciones educativas.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El docente aplica el principio de corresponsabilidad y protección integral ante vulneraciones de derechos fuera del entorno escolar.",
+  "evidencia": "Selecciona la conducta docente obligatoria de reporte y remisión inmediata a las autoridades de restablecimiento de derechos, protegiendo al menor.",
+  "tarea": "Determinar la actuación legal y ética frente a sospechas fundadas de maltrato intrafamiliar o negligencia física en un estudiante.",
+  "contexto": "Un estudiante de básica primaria asiste con frecuencia a clases con signos de descuido personal extremo, ropa inadecuada para el clima y lesiones físicas menores que justifica con caídas accidentales. Al ser indagado por el orientador, el menor muestra temor y contradicciones respecto a las explicaciones que dan sus padres.",
+  "enunciado": "De acuerdo con el Código de la Infancia y la Adolescencia (Ley 1098 de 2006) y la ruta de protección escolar, la actuación inmediata que debe realizar el establecimiento educativo es:",
+  "opciones": {
+    "A": "Citar a los padres de familia para reprenderlos por el estado del estudiante y comprometerlos a mejorar sus cuidados bajo amenaza de reportar a la policía.",
+    "B": "Iniciar un proceso de investigación interna dentro del comité de convivencia escolar para verificar las lesiones físicas antes de notificar a las autoridades nacionales.",
+    "C": "Activar de inmediato el protocolo de presunta vulneración de derechos, remitir el caso al docente orientador para la atención socioemocional inicial y reportar formalmente ante el ICBF o la Comisaría de Familia para el restablecimiento de derechos.",
+    "D": "Abstenerse de intervenir formalmente por tratarse de un asunto del ámbito privado e intrafamiliar, limitándose a brindar apoyo pedagógico diferenciado al alumno."
+  },
+  "clave": "C",
+  "justificacion_clave": "El principio de corresponsabilidad (familia, sociedad y Estado, representados por la escuela) y el principio de protección integral de la Ley 1098 de 2006 obligan a los educadores y directivos a reportar de manera inmediata cualquier sospecha fundada de maltrato, descuido o vulneración ante las autoridades de protección (ICBF, Comisaría de Familia) y activar los canales de la ruta institucional de convivencia.",
+  "distractores_funcion": {
+    "A": "Muestra una actitud punitiva e informal que puede aumentar el riesgo para el menor al alertar de manera no técnica a los presuntos agresores.",
+    "B": "Retarda injustificadamente el deber legal de reporte, pretendiendo asumir funciones de investigación que corresponden a las autoridades judiciales y de protección.",
+    "C": "Clave correcta.",
+    "D": "Incurre en omisión del deber de garante y desconoce el principio de primacía de los derechos del menor por encima de la privacidad familiar."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem plantea una situación típica de protección y garantía de derechos de la infancia en Colombia."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Sintaxis fluida, opciones bien diferenciadas."
+  },
+  "metadata_editorial": {
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
+}

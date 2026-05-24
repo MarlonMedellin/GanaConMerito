@@ -11,20 +11,20 @@
   "evidencia": "Selecciona la opción que mejor explica la decisión pedagógica coherente con el aprendizaje significativo en el caso planteado.",
   "tarea": "Inferir, a partir del caso, la condición didáctica que permite aprendizaje significativo según Ausubel.",
   "contexto": "Un docente enseña porcentajes usando ejemplos de descuentos, encuestas del curso, consumo de agua y estadísticas deportivas. Luego formaliza el procedimiento matemático.",
-  "enunciado": "Un docente enseña porcentajes usando ejemplos de descuentos, encuestas del curso, consumo de agua y estadísticas deportivas. Luego formaliza el procedimiento matemático.\n\n¿Por qué esta secuencia favorece aprendizaje significativo?",
+  "enunciado": "De acuerdo con los principios del aprendizaje verbal significativo, ¿por qué esta secuencia didáctica resulta cognitivamente efectiva?",
   "opciones": {
-    "A": "Porque elimina el conocimiento formal.",
-    "B": "Porque conecta el concepto con experiencias cercanas antes de formalizarlo.",
-    "C": "Porque evita toda abstracción.",
-    "D": "Porque solo usa entretenimiento."
+    "A": "Porque suprime la abstracción matemática mediante el uso exclusivo de operaciones prácticas cotidianas.",
+    "B": "Porque ofrece puentes cognitivos a partir de contextos cotidianos familiares para facilitar la subsunción del concepto formal.",
+    "C": "Porque permite que los estudiantes deduzcan inductivamente las reglas de cálculo sin recibir instrucción formal.",
+    "D": "Porque prioriza la motivación extrínseca de la competencia y el deporte para fijar la memoria procedimental."
   },
   "clave": "B",
-  "justificacion_clave": "El docente parte de experiencias significativas y luego construye la formalización conceptual.",
+  "justificacion_clave": "Los ejemplos del contexto real actúan como organizadores o puentes cognitivos familiares con sentido para el estudiante, lo que facilita el proceso de subsunción (anclaje de nuevos conceptos específicos en la estructura cognitiva existente) antes de formalizar la regla matemática general.",
   "distractores_funcion": {
-    "A": "El conocimiento formal se mantiene.",
+    "A": "Opción que descarta incorrectamente la abstracción, que es el objetivo final de la educación conceptual.",
     "B": "Clave correcta.",
-    "C": "La abstracción aparece después de la contextualización.",
-    "D": "Los ejemplos tienen propósito matemático."
+    "C": "Confunde el aprendizaje significativo de recepción organizada con el modelo inductivo de descubrimiento puro.",
+    "D": "Confunde factores cognitivos del aprendizaje con motivadores conductistas mecánicos."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I09.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

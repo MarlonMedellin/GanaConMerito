@@ -1,45 +1,45 @@
 {
   "id_item": "CEOL_B08_I03",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Concepto de Formar",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Formación integral",
   "tema": "Enseñar, formar, motivación didáctica y competencias socioemocionales",
-  "subtema": "Reducción del proceso de formar a la enseñanza de contenidos de una asignatura.",
+  "subtema": "Concepto de Formar",
   "competencia": "Formación integral del estudiante",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende que formar implica orientar el desarrollo de capacidades, valores, autonomía, convivencia, responsabilidad y sentido de vida.",
-  "evidencia": "Selecciona una concepción de formación que supera la transmisión disciplinar.",
-  "tarea": "Distinguir formación integral de instrucción académica limitada.",
-  "contexto": "Un docente sostiene que su responsabilidad termina cuando explica los contenidos de su asignatura. En una reflexión institucional, se plantea que la escuela también tiene la tarea de formar a los estudiantes.",
-  "enunciado": "Un docente sostiene que su responsabilidad termina cuando explica los contenidos de su asignatura. En una reflexión institucional, se plantea que la escuela también tiene la tarea de formar a los estudiantes.\n\n¿Qué implica formar a un estudiante más allá de transmitir conocimientos de una asignatura?",
+  "claim": "El evaluado comprende el alcance del proceso de formar como una educación integral que trasciende el conocimiento disciplinar.",
+  "evidencia": "Identifica que formar abarca aspectos éticos, afectivos, sociales e individuales del educando.",
+  "tarea": "Diferenciar el concepto de formar frente a la mera instrucción de contenidos disciplinares.",
+  "contexto": "Un docente de ciencias naturales sostiene que su única responsabilidad laboral radica en explicar los contenidos biológicos de su materia, asumiendo que los aspectos éticos, emocionales o de convivencia son ajenos a su labor académica.",
+  "enunciado": "Frente al propósito institucional de formación integral, ¿qué implica formar a un estudiante en el ámbito escolar?",
   "opciones": {
-    "A": "Controlar su comportamiento sin atender su aprendizaje ni su desarrollo personal.",
-    "B": "Enseñar únicamente datos y definiciones para una prueba.",
-    "C": "Delegar todo el desarrollo personal del estudiante exclusivamente a la familia.",
-    "D": "Acompañar su desarrollo integral, ético, social, cognitivo, afectivo y ciudadano, favoreciendo autonomía y proyecto de vida."
+    "A": "Acompañar el desarrollo multidimensional de la persona (ético, social, afectivo, físico y cognitivo), promoviendo su autonomía moral, su pensamiento crítico y su proyecto de vida.",
+    "B": "Aplicar reglamentos de control disciplinario y estricto cumplimiento normativo para garantizar la sumisión del educando frente a la autoridad.",
+    "C": "Limitar la labor pedagógica a la instrucción académica de contenidos disciplinares, asumiendo que la formación en valores es de exclusiva competencia familiar.",
+    "D": "Fomentar el desarrollo libre y sin límites éticos o sociales del estudiante, evitando cualquier tipo de intervención orientadora o correctiva."
   },
-  "clave": "D",
-  "justificacion_clave": "D",
+  "clave": "A",
+  "justificacion_clave": "Formar, a diferencia de instruir, es una labor de educación integral. El docente debe educar integralmente reconociendo al estudiante como sujeto ético, social y político, de conformidad con los fines de la Ley 115 de 1994.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque formar no equivale solo a controlar.",
-    "B": "Es incorrecta porque formar supera la transmisión de información.",
-    "C": "Es incorrecta porque la familia participa, pero la escuela también forma.",
-    "D": "Clave correcta."
+    "A": "Clave correcta.",
+    "B": "Equipara formar con un condicionamiento puramente conductual y punitivo del estudiante.",
+    "C": "Defiende una visión fragmentada del aprendizaje que evade la corresponsabilidad de la escuela en la educación integral.",
+    "D": "Propone un enfoque permisivo y sin rumbo pedagógico que desvirtúa la función orientadora del docente."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem reconoce la corresponsabilidad formativa sin atribuir toda la carga a un solo actor."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Conceptos claros."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Enseñar, formar, motivación didáctica y competencias socioemocionales/CEOL_B08_I03.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

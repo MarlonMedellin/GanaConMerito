@@ -1,44 +1,44 @@
 {
   "id_item": "NFL_B04_I02",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Política y sistema educativo",
+  "area": "Normatividad y estructura educativa",
   "tema": "Estructura del sistema educativo - educación básica, secundaria y media",
-  "subtema": "Educación media",
-  "competencia": "Distingue niveles y organización del sistema educativo para interpretar su aplicación en contextos institucionales.",
-  "nivel_cognitivo": "ANÁLISIS",
-  "dificultad_estimada": "BAJA-MEDIA",
-  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada para el caso planteado.",
-  "evidencia": "Selecciona una única alternativa defendible frente a distractores plausibles desde el constructo evaluado.",
-  "tarea": "Analizar el caso y elegir la opción más pertinente según criterios pedagógicos y normativos aplicables.",
-  "contexto": "En una revisión curricular, un equipo debe ubicar normativamente los grados décimo y undécimo. La Ley 115 los define como la culminación, consolidación y avance de los niveles anteriores.",
-  "enunciado": "En una revisión curricular, un equipo debe ubicar normativamente los grados décimo y undécimo. La Ley 115 los define como la culminación, consolidación y avance de los niveles anteriores.\n\n¿A qué nivel corresponden estos dos grados?",
+  "subtema": "Propósito de la Educación Media",
+  "competencia": "Evalúa propuestas de reestructuración curricular de la educación media conforme a sus fines y objetivos normativos establecidos en la Ley 115.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Determina la coherencia de decisiones de gestión académica frente a los fines normativos de la educación media establecidos en la Ley 115.",
+  "evidencia": "Selecciona la consolidación del ciclo formativo general y preparación para la educación superior y el trabajo frente a propuestas de entrenamiento exclusivo en exámenes estandarizados o desarticulaciones curriculares.",
+  "tarea": "Determinar la validez de una propuesta pedagógica para suspender proyectos transversales e investigación en media para entrenar de forma intensiva a estudiantes para Saber 11.",
+  "contexto": "En el proceso de autoevaluación institucional, un colegio académico evalúa la pertinencia de su plan de estudios para los grados 10.° y 11.°. El coordinador propone que, para aumentar las tasas de ingreso a la educación superior, estos grados se enfoquen de forma exclusiva en la ejercitación para las pruebas de Estado Saber 11, suspendiendo las actividades de proyectos transversales e investigación escolar.",
+  "enunciado": "En el proceso de autoevaluación institucional, un colegio académico evalúa la pertinencia de su plan de estudios para los grados 10.° y 11.°. El coordinador propone que, para aumentar las tasas de ingreso a la educación superior, estos grados se enfoquen de forma exclusiva en la ejercitación para las pruebas de Estado Saber 11, suspendiendo las actividades de proyectos transversales e investigación escolar. Desde la perspectiva del fin y los objetivos del nivel de educación media académica establecidos en la Ley 115 de 1994 (Art. 29 y 30), la propuesta del coordinador es inapropiada porque la educación media tiene como propósito:",
   "opciones": {
-    "A": "Educación media.",
-    "B": "Educación básica primaria.",
-    "C": "Educación básica secundaria.",
-    "D": "Educación preescolar."
+    "A": "Culminar, consolidar y avanzar en el logro de los objetivos de la educación básica, fomentando la comprensión de ideas y valores universales y preparando para la educación superior y el trabajo.",
+    "B": "Funcionar como un ciclo de entrenamiento intensivo y técnico de carácter propedéutico centrado únicamente en la adquisición de destrezas para exámenes estandarizados.",
+    "C": "Actuar de manera autónoma y desvinculada de los niveles educativos anteriores, centrando sus contenidos en la especialización técnica obligatoria del estudiante.",
+    "D": "Reemplazar el currículo general por un ciclo común de formación profesional tecnológica articulada con el Servicio Nacional de Aprendizaje (SENA)."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "El artículo 29 de la Ley 115 define a la educación media como la culminación y consolidación de la básica, con objetivos de profundización académica o técnica, fomentando la ciudadanía y la preparación para la educación superior y el trabajo. No se puede reducir a un entrenamiento formal para pruebas Saber.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque la primaria no incluye décimo ni undécimo.",
-    "C": "Es incorrecta porque la básica secundaria no corresponde a los grados de educación media.",
-    "D": "Es incorrecta porque el preescolar es un nivel inicial."
+    "B": "Preparación instrumental del nivel: reduce el fin de la educación media a la adquisición de destrezas de examen, vaciándolo de la formación humanística, científica y de valores obligatoria por Ley.",
+    "C": "Desvinculación sistémica: presenta falsamente a la educación media como un nivel desarticulado que rompe el proceso formativo continuo de la educación escolar.",
+    "D": "Sustitución técnica obligatoria: asume incorrectamente que el currículo de media académica debe disolverse en una formación tecnológica de articulación, desconociendo que la especialización técnica es una de las modalidades y no la única obligatoria."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estándar, sin sesgos culturales innecesarios ni barreras de comprensión relevantes."
+    "observaciones": "El ítem plantea un debate muy común en los procesos de autoevaluación de instituciones educativas de media."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura."
+    "observaciones": "El enunciado contextualiza el dilema institucional y las opciones tienen una longitud y estructura comparables."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Estructura del sistema educativo - educación básica, secundaria y media/NFL_B04_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

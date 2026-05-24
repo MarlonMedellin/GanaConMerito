@@ -3,42 +3,42 @@
   "estado": "LISTO_PARA_BANCO",
   "area": "Didáctica disciplinar",
   "tema": "Didáctica de áreas, resolución de problemas y material concreto",
-  "subtema": "Selección didáctica y evidencias de aprendizaje",
-  "competencia": "Selecciona estrategias didácticas de resolución de problemas apoyadas en material concreto y mediación pedagógica.",
+  "subtema": "Planeación y Ajuste Curricular",
+  "competencia": "Diseña y ajusta la planeación didáctica y las estrategias de aula con base en diagnósticos formativos y necesidades específicas.",
   "nivel_cognitivo": "APLICACIÓN",
   "dificultad_estimada": "MEDIA",
-  "claim": "Reconoce la alternativa pedagógica o institucional más adecuada según el criterio técnico evaluado en el caso.",
-  "evidencia": "Selecciona una única opción defendible frente a distractores plausibles en función del constructo.",
-  "tarea": "Analizar el caso y elegir la decisión más pertinente conforme al enfoque del ítem.",
-  "contexto": "Un docente observa que su estrategia habitual no está funcionando: varios estudiantes no comprenden, otros no participan y las evidencias muestran errores repetidos. El docente necesita seleccionar una nueva estrategia didáctica.",
-  "enunciado": "Un docente observa que su estrategia habitual no está funcionando: varios estudiantes no comprenden, otros no participan y las evidencias muestran errores repetidos. El docente necesita seleccionar una nueva estrategia didáctica.\n\n¿Qué criterio debe orientar principalmente esa selección?",
+  "claim": "Determina los criterios técnicos que deben guiar la toma de decisiones curriculares y la selección de estrategias didácticas.",
+  "evidencia": "Selecciona criterios de correspondencia articulada entre propósitos, barreras de aprendizaje identificadas y contexto, descartando adopciones mecánicas o simplificaciones instrumentales.",
+  "tarea": "Identificar el criterio técnico prioritario para seleccionar una nueva estrategia didáctica ante barreras de aprendizaje identificadas en los estudiantes.",
+  "contexto": "Un docente de educación media observa que sus estudiantes presentan serias dificultades para interpretar gráficas estadísticas complejas, lo cual afecta su desempeño en el área de ciencias sociales y matemáticas. Para superar esta barrera, el docente planea modificar su estrategia didáctica habitual para el próximo periodo académico.",
+  "enunciado": "Un docente de educación media observa que sus estudiantes presentan serias dificultades para interpretar gráficas estadísticas complejas, lo cual afecta su desempeño en el área de ciencias sociales y matemáticas. Para superar esta barrera, el docente planea modificar su estrategia didáctica habitual para el próximo periodo académico. Al seleccionar una nueva estrategia didáctica para abordar esta problemática, el criterio prioritario que debe guiar su decisión técnica es:",
   "opciones": {
-    "A": "La costumbre de usar siempre la misma actividad, aunque no produzca comprensión.",
-    "B": "La técnica que requiera menos preparación, sin importar el propósito de aprendizaje.",
-    "C": "El propósito de aprendizaje, las evidencias de comprensión, las barreras identificadas, los recursos disponibles y las características del grupo.",
-    "D": "La decisión de avanzar de tema aunque los estudiantes no hayan comprendido."
+    "A": "Analizar de forma articulada el propósito de aprendizaje, las barreras específicas evidenciadas en el diagnóstico de los estudiantes, el contexto del aula y los recursos institucionales disponibles.",
+    "B": "Adoptar una metodología activa novedosa sugerida en la literatura pedagógica reciente, asegurando la actualización metodológica de la asignatura con independencia de los recursos locales.",
+    "C": "Seleccionar la estrategia que cuente con guías prediseñadas y evaluaciones estandarizadas ya validadas en otras instituciones para optimizar los tiempos de planeación del docente.",
+    "D": "Elegir la actividad que cuente con el respaldo de herramientas digitales avanzadas, asumiendo que el uso de tecnologías de la información es el factor determinante para la motivación y el aprendizaje de la estadística."
   },
-  "clave": "C",
-  "justificacion_clave": "C",
+  "clave": "A",
+  "justificacion_clave": "La selección didáctica eficaz es un proceso adaptativo e integral. Exige coordinar el objetivo (qué enseñar) con las características del grupo (quién aprende, qué barreras tiene) y las condiciones de viabilidad (recursos y contexto).",
   "distractores_funcion": {
-    "A": "Es incorrecta porque repetir una estrategia ineficaz no es decisión pedagógica fundamentada.",
-    "B": "Es incorrecta porque reduce la didáctica a comodidad operativa.",
-    "C": "Clave correcta.",
-    "D": "Es incorrecta porque avanzar sin comprensión contradice la evaluación formativa."
+    "A": "Clave correcta.",
+    "B": "Sesgo de la novedad metodológica: prioriza la adopción ciega de metodologías novedosas o de moda académica por encima de su pertinencia y adaptación a la realidad diagnosticada del aula.",
+    "C": "Criterio de comodidad/operativo: prioriza la reducción de la carga laboral docente y la estandarización descontextualizada sobre la pertinencia pedagógica necesaria para superar la barrera específica.",
+    "D": "Tecnocentrismo pedagógico: sobrevalora las herramientas tecnológicas de manera aislada, asumiendo erróneamente que la mera presencia de software o hardware garantiza el aprendizaje conceptual."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estándar y contexto institucional general sin sesgos culturales innecesarios."
+    "observaciones": "El ítem evalúa competencias transversales de planeación didáctica del docente."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura y exigencia."
+    "observaciones": "Enunciado preciso y opciones técnicamente diferenciadas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I05.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

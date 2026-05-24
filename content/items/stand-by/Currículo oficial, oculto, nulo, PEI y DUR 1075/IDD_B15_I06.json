@@ -1,44 +1,44 @@
 {
   "id_item": "IDD_B15_I06",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Gestión curricular y normativa educativa",
+  "area": "Pedagogía y currículo",
   "tema": "Currículo oficial, oculto, nulo, PEI y DUR 1075",
   "subtema": "Jerarquía institucional PEI, currículo y convivencia",
-  "competencia": "Distingue tipos de currículo y su articulación con PEI y marco normativo para valorar decisiones institucionales.",
-  "nivel_cognitivo": "ANÁLISIS",
+  "competencia": "Armonizar la planeación curricular y el Manual de Convivencia con el horizonte institucional establecido en el PEI.",
+  "nivel_cognitivo": "ANALISIS",
   "dificultad_estimada": "MEDIA",
-  "claim": "Identifica la alternativa más adecuada según el criterio curricular y pedagógico evaluado en el caso.",
-  "evidencia": "Selecciona una única respuesta técnicamente defendible frente a distractores plausibles.",
-  "tarea": "Analizar la situación y elegir la mejor decisión curricular, didáctica o institucional.",
-  "contexto": "En una institución se discute si el PEI, el currículo y el Manual de Convivencia son lo mismo. Un equipo docente necesita aclarar su relación para organizar mejor la gestión escolar.",
-  "enunciado": "En una institución se discute si el PEI, el currículo y el Manual de Convivencia son lo mismo. Un equipo docente necesita aclarar su relación para organizar mejor la gestión escolar.\n\n¿Cuál explicación es más adecuada?",
+  "claim": "El evaluado analiza la relación de jerarquía, complementariedad y coherencia entre el PEI, el Currículo y el Manual de Convivencia.",
+  "evidencia": "Identifica el rol particular de cada documento y cómo deben articularse para dar coherencia a las decisiones institucionales.",
+  "tarea": "Resolver una discordancia normativa y didáctica entre los documentos institucionales.",
+  "contexto": "Un comité docente de revisión institucional encuentra que mientras el PEI promueve un horizonte humanista y reflexivo, el Manual de Convivencia tipifica como falta disciplinaria grave la confrontación argumental respetuosa con un docente en clase, y los planes de área del currículo se centran en la obediencia y la repetición teórica.",
+  "enunciado": "Para armonizar la gestión escolar con los principios pedagógicos e institucionales, la decisión más adecuada del comité es:",
   "opciones": {
-    "A": "El PEI orienta el horizonte institucional; el currículo organiza la propuesta formativa y pedagógica; el Manual de Convivencia regula acuerdos, derechos, deberes y procedimientos para la vida escolar.",
-    "B": "El Manual de Convivencia reemplaza el PEI y define por sí solo toda la propuesta educativa.",
-    "C": "El currículo es independiente del PEI y no necesita responder al horizonte institucional.",
-    "D": "El PEI solo contiene sanciones y el currículo solo contiene horarios."
+    "A": "Modificar el Manual de Convivencia y los planes de área para que reconozcan y evalúen positivamente la argumentación crítica de los estudiantes, alineándolos con el PEI.",
+    "B": "Mantener el Manual de Convivencia sin cambios para asegurar el orden disciplinario, y flexibilizar únicamente las evaluaciones académicas del área de ciencias sociales.",
+    "C": "Reformular los principios del PEI hacia un enfoque conductista y de obediencia pasiva para que coincida con las normas disciplinarias y las prácticas del aula.",
+    "D": "Declarar la autonomía de cada docente para decidir en su aula si permite la libre expresión de ideas, sin modificar los documentos oficiales de la institución."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "Debe existir coherencia interna en los componentes del PEI; las prácticas curriculares y de convivencia deben reflejar el horizonte pedagógico e institucional formalizado en el documento rector.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque el Manual de Convivencia no reemplaza el PEI.",
-    "C": "Es incorrecta porque el currículo debe articularse al PEI.",
-    "D": "Es incorrecta porque reduce documentos institucionales complejos a funciones mínimas o equivocadas."
+    "B": "Parche pedagógico parcial que perpetúa la incoherencia estructural y debilita el Manual de Convivencia.",
+    "C": "Renuncia al horizonte humanista elegido por la institución en su PEI para legitimar prácticas punitivas.",
+    "D": "Fomenta la arbitrariedad individual y la desarticulación institucional, debilitando la legalidad escolar."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estandarizado y contexto institucional general, sin sesgos culturales innecesarios."
+    "observaciones": "El caso expone tensiones comunes en la gestión escolar de forma neutral."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado claro, tarea única y opciones homogéneas en estructura."
+    "observaciones": "Estructura lingüística fluida y clara."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Currículo oficial, oculto, nulo, PEI y DUR 1075/IDD_B15_I06.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

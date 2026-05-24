@@ -11,20 +11,20 @@
   "evidencia": "Selecciona una única respuesta técnicamente defendible frente a distractores plausibles.",
   "tarea": "Analizar la situación y elegir la mejor decisión curricular, didáctica o institucional.",
   "contexto": "Durante la actualización del PEI, algunos docentes proponen copiar la estructura curricular de una institución reconocida por sus buenos resultados. Otros plantean revisar primero las características, necesidades y expectativas de la comunidad educativa propia.",
-  "enunciado": "Durante la actualización del PEI, algunos docentes proponen copiar la estructura curricular de una institución reconocida por sus buenos resultados. Otros plantean revisar primero las características, necesidades y expectativas de la comunidad educativa propia.\n\n¿Cuál postura expresa mejor una comprensión contextual del diseño pedagógico?",
+  "enunciado": "Teniendo en cuenta los principios de pertinencia curricular, identidad institucional y autonomía escolar, ¿cuál postura expresa mejor una adecuada toma de decisiones en el diseño pedagógico?",
   "opciones": {
-    "A": "Adoptar el modelo externo sin cambios, porque sus buenos resultados garantizan que funcionará en cualquier institución.",
-    "B": "Revisar el modelo externo como referente, pero contrastarlo con el diagnóstico institucional y las necesidades de la comunidad.",
-    "C": "Descartar cualquier referente externo, porque cada institución debe construir su currículo sin consultar otras experiencias.",
-    "D": "Solicitar que la secretaría de educación defina todos los ajustes para evitar desacuerdos internos."
+    "A": "Adoptar de forma literal la propuesta curricular externa, asumiendo que los resultados sobresalientes son transferibles de manera automática a cualquier realidad social.",
+    "B": "Utilizar modelos pedagógicos externos exitosos como referentes de buenas prácticas, pero adaptando sus contenidos y metodologías al diagnóstico, características e identidad del contexto local propio.",
+    "C": "Rechazar cualquier referente pedagógico externo, argumentando que el diseño curricular de la institución debe ser completamente inédito y libre de influencias teóricas previas.",
+    "D": "Solicitar que la Secretaría de Educación determine de manera centralizada el diseño pedagógico y curricular aplicable para evitar desacuerdos metodológicos en el equipo."
   },
   "clave": "B",
-  "justificacion_clave": "B",
+  "justificacion_clave": "La autonomía curricular (Ley 115) faculta a los colegios para estructurar sus planes de estudio y adaptarlos a las necesidades de su entorno. Copiar modelos literalizados ignora que el currículo es un proyecto social e histórico contextualizado, aunque es válido retomar buenas prácticas como referentes analíticos.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque confunde éxito externo con pertinencia automática.",
+    "A": "Error de concebir el currículo como un paquete tecnológico neutro transferible mecánicamente entre diferentes culturas y contextos.",
     "B": "Clave correcta.",
-    "C": "Es incorrecta porque aísla a la institución de experiencias que pueden aportar a la mejora.",
-    "D": "Es incorrecta porque sustituye la responsabilidad pedagógica de la comunidad educativa."
+    "C": "Promueve un aislamiento pedagógico extremo y dogmático que descarta el aprendizaje a partir de la experiencia de otras comunidades escolares.",
+    "D": "Renuncia a la autonomía escolar delegando decisiones sustantivas del PEI en la administración pública central."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Currículo y Contexto Social/CB01_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

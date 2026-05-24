@@ -1,44 +1,44 @@
 {
   "id_item": "IDD_B17_I03",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Comprensión lectora y producción textual",
-  "tema": "Aptitud verbal y organización textual",
-  "subtema": "Organización de oraciones y cierre",
+  "area": "Aptitud verbal",
+  "tema": "Comprensión de lectura y coherencia textual",
+  "subtema": "Ordenación de información",
   "competencia": "Analiza la organización lógica de textos y selecciona criterios de coherencia, cohesión y progresión temática.",
-  "nivel_cognitivo": "ANÁLISIS",
-  "dificultad_estimada": "BAJA-MEDIA",
-  "claim": "Reconoce estructuras textuales y relaciones entre párrafos para organizar información de forma coherente.",
-  "evidencia": "Identifica la opción que mejor aplica un criterio de organización textual al caso presentado.",
-  "tarea": "Inferir la función textual o el orden lógico más adecuado según marcas discursivas del enunciado.",
-  "contexto": "En un ejercicio de organización de frases sobre el proceso de escritura aparecen acciones como decidir el tema, escoger ideas, revisar el texto y copiarlo en forma definitiva.",
-  "enunciado": "En un ejercicio de organización de frases sobre el proceso de escritura aparecen acciones como decidir el tema, escoger ideas, revisar el texto y copiarlo en forma definitiva.\n\n¿Qué frase determina la conclusión o resultado final del proceso?",
+  "nivel_cognitivo": "COMPRENSIÓN-APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado ordena de manera lógica las fases de un proceso cognitivo de producción textual.",
+  "evidencia": "Elige la secuencia que respeta el flujo de planificación, textualización, revisión y edición final.",
+  "tarea": "Ordenar las oraciones que describen las fases del proceso de escritura escolar.",
+  "contexto": "Considere el siguiente conjunto de oraciones desordenadas sobre las fases de la escritura:",
+  "enunciado": "1. Definir con claridad el tema central, el propósito comunicativo y el público al que irá dirigido el texto.\n2. Elaborar un esquema o mapa de ideas que organice jerárquicamente la información que se desea transmitir.\n3. Redactar un primer borrador fluido, priorizando la expresión de las ideas sobre la corrección gramatical inmediata.\n4. Revisar minuciosamente el borrador para corregir errores de estilo, ortografía y coherencia interna.\n5. Transcribir la versión definitiva del texto, incorporando todas las mejoras identificadas en la fase de revisión.\n\n¿Cuál opción representa la secuencia lógica y procedimental correcta?",
   "opciones": {
-    "A": "Decidir el tema sobre el que se va a escribir.",
-    "B": "Escoger las ideas que harán parte del texto.",
-    "C": "Revisar si el texto tiene errores o necesita ajustes.",
-    "D": "Copiar el texto en forma definitiva después de revisarlo."
+    "A": "1 - 2 - 3 - 4 - 5",
+    "B": "2 - 1 - 3 - 5 - 4",
+    "C": "1 - 3 - 2 - 4 - 5",
+    "D": "2 - 3 - 1 - 4 - 5"
   },
-  "clave": "D",
-  "justificacion_clave": "D",
+  "clave": "A",
+  "justificacion_clave": "La opción A es correcta porque refleja fielmente las etapas del proceso de escritura según la psicología cognitiva y la didáctica del lenguaje: primero se planifica (tema y público [1], esquema de ideas [2]), luego se textualiza (borrador [3]), se somete a revisión (evaluación [4]) y se edita para la entrega final (transcripción [5]).",
   "distractores_funcion": {
-    "A": "Es incorrecta porque inicia el proceso.",
-    "B": "Es incorrecta porque organiza ideas antes de redactar o finalizar.",
-    "C": "Es incorrecta porque revisar antecede al producto final.",
-    "D": "Clave correcta."
+    "A": "Clave correcta.",
+    "B": "Sitúa la organización del esquema (2) antes de definir el tema y destinatario (1), e intercambia el producto definitivo (5) colocándolo antes de la revisión (4).",
+    "C": "Propone redactar el borrador (3) sin haber organizado previamente las ideas en un esquema de planificación (2).",
+    "D": "Altera el proceso completo al iniciar con el mapa de ideas (2), saltar a la redacción (3) y dejar la delimitación de tema y público (1) para después de la textualización."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Contexto neutral y lenguaje técnico funcional, sin referencias culturales excluyentes."
+    "observaciones": "El tema del proceso de escritura es transversal y de conocimiento general para la labor docente."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones comparables en registro y extensión."
+    "observaciones": "Progresión lógica y secuencial muy clara, con vocabulario técnico básico."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Aptitud verbal y organización textual/IDD_B17_I03.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

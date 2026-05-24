@@ -7,39 +7,39 @@
   "competencia": "Valora medidas correctivas según debido proceso, proporcionalidad y congruencia frente a situaciones de convivencia.",
   "nivel_cognitivo": "JUICIO",
   "dificultad_estimada": "ALTA",
-  "claim": "Reconoce la actuación pedagógica o institucional más adecuada de acuerdo con el enfoque evaluado en el caso.",
-  "evidencia": "Selecciona una única alternativa defendible técnicamente y coherente con el constructo del ítem.",
-  "tarea": "Analizar la situación presentada y elegir la respuesta más pertinente según criterios pedagógicos y normativos aplicables.",
-  "contexto": "Un colegio privado expulsa de inmediato a un estudiante con diagnóstico de TDAH después de una agresión física. La institución no lo escucha, no informa cargos de manera clara, no permite contradicción, no analiza apoyos o ajustes razonables y no valora medidas pedagógicas proporcionales.",
-  "enunciado": "Un colegio privado expulsa de inmediato a un estudiante con diagnóstico de TDAH después de una agresión física. La institución no lo escucha, no informa cargos de manera clara, no permite contradicción, no analiza apoyos o ajustes razonables y no valora medidas pedagógicas proporcionales.\n\nSegún el enfoque de derechos y el debido proceso institucional, ¿qué paso fue omitido antes de aplicar esa medida extrema?",
+  "claim": "Valora la adecuación de actuaciones pedagógicas e institucionales bajo criterios normativos y constitucionales.",
+  "evidencia": "Selecciona la respuesta que demuestra la correcta aplicación del marco normativo y pedagógico colombiano.",
+  "tarea": "Analizar el caso y determinar la opción correcta conforme a derecho y principios pedagógicos.",
+  "contexto": "Un colegio privado expulsa de inmediato a un estudiante con diagnóstico de TDAH después de una agresión física sin realizar descargos ni valorar su versión.",
+  "enunciado": "Un colegio privado expulsa de inmediato a un estudiante con diagnóstico de TDAH después de una agresión física sin realizar descargos ni valorar su versión.\n\nSegún el enfoque de derechos y el debido proceso institucional, ¿qué actuación es exigible a la institución antes de aplicar una medida de esta gravedad?",
   "opciones": {
-    "A": "Aplicar la expulsión de forma automática para demostrar autoridad institucional.",
-    "B": "Publicar el caso ante la comunidad para que sirva de ejemplo.",
-    "C": "Garantizar un procedimiento previo con cargos claros, derecho de defensa, valoración integral, proporcionalidad, protección de los afectados y análisis de apoyos o ajustes razonables.",
-    "D": "Ignorar la agresión porque el estudiante tiene TDAH."
+    "A": "Notificar la remisión del caso al ICBF para transferir de forma inmediata la competencia disciplinaria y pedagógica sobre el estudiante a un ente externo.",
+    "B": "Decretar una suspensión provisional indefinida firmada por la rectoría como medida cautelar de protección, prescindiendo del trámite de descargos.",
+    "C": "Garantizar un debido proceso previo con cargos claros, defensa y contradicción, evaluando la incidencia del diagnóstico en la falta y los apoyos requeridos.",
+    "D": "Sugerir a la familia el retiro voluntario inmediato del estudiante del plantel para evitar que el registro sancionatorio afecte su historial académico."
   },
   "clave": "C",
   "justificacion_clave": "C",
   "distractores_funcion": {
-    "A": "Es incorrecta porque ninguna expulsión puede ser automática sin garantías.",
-    "B": "Es incorrecta porque expone y estigmatiza.",
+    "A": "Confusión de competencias: el diagnóstico y la gravedad no eximen a la escuela de su competencia formativa y procesal, ni la facultan para trasladar el caso al ICBF como instancia disciplinaria.",
+    "B": "Práctica procesal indebida: la suspensión indefinida por rectoría sin descargos vulnera el derecho a la defensa y constituye una sanción de hecho.",
     "C": "Clave correcta.",
-    "D": "Es incorrecta porque tener TDAH no significa ausencia de intervención formativa ni de protección a terceros."
+    "D": "Desviación de debido proceso: el retiro voluntario inducido constituye una expulsión indirecta o encubierta, proscrita por la jurisprudencia constitucional colombiana."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo y normativo estándar, sin referencias discriminatorias ni barreras culturales innecesarias."
+    "observaciones": "Lenguaje formal, neutral y apegado a la jurisprudencia colombiana en materia de derechos y deberes educativos, libre de sesgos territoriales o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciados con tarea única y opciones comparables en estructura y longitud."
+    "observaciones": "Redacción estructurada con enunciados independientes y opciones de longitud y complejidad gramatical homogéneas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I01.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

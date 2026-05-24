@@ -2,43 +2,43 @@
   "id_item": "CB07_I01",
   "estado": "LISTO_PARA_BANCO",
   "area": "Convivencia y protección escolar",
-  "tema": "Responsabilidad profesional docente",
+  "tema": "Responsabilidad legal",
   "subtema": "Deber de cuidado y omisión",
   "competencia": "Evalúa actuaciones institucionales frente a riesgos para estudiantes y determina su ajuste al deber de cuidado.",
-  "nivel_cognitivo": "JUICIO",
+  "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "Comprende que no actuar ante un riesgo conocido puede constituir omisión y comprometer responsabilidad profesional.",
-  "evidencia": "Selecciona la alternativa que exige activar canales institucionales ante señales reiteradas de riesgo.",
-  "tarea": "Valorar la respuesta profesional adecuada ante una situación conocida de amenaza entre estudiantes.",
-  "contexto": "Docente detecta amenazas reiteradas y cambios conductuales en un estudiante, pero decide no reportar.",
-  "enunciado": "Un docente observa amenazas reiteradas contra un estudiante y cambios notorios en su comportamiento. Decide no informar para evitar involucrarse en problemas disciplinarios. ¿Cuál valoración es más adecuada?",
+  "claim": "El evaluado comprende que omitir el reporte de riesgos conocidos contra los estudiantes configura una falla al deber de cuidado y a la posición de garante.",
+  "evidencia": "Identifica que el docente incurre en responsabilidad disciplinaria o administrativa si no activa la ruta de convivencia o protección escolar ante un riesgo evidente.",
+  "tarea": "Analizar la actuación de un docente que omite reportar amenazas y cambios de comportamiento en un alumno por evitar problemas.",
+  "contexto": "Un docente de secundaria observa de forma reiterada que un estudiante es hostigado e intimidado físicamente por otros compañeros en los pasillos de la institución. Adicionalmente, nota cambios drásticos de retraimiento y bajo rendimiento en el alumno afectado. El docente decide no informar a la coordinación ni registrar la situación en la bitácora escolar para evitar involucrarse en trámites o conflictos con las familias de los agresores.",
+  "enunciado": "¿Cuál es la valoración legal y profesional de la actuación de este docente?",
   "opciones": {
-    "A": "Es adecuada, porque la responsabilidad docente se limita a la clase que dicta.",
-    "B": "Puede constituir omisión, porque ante riesgo conocido debe activar rutas y canales institucionales.",
-    "C": "Es aceptable si no existe queja escrita formal del estudiante.",
-    "D": "Es correcta, porque la situación debe ser gestionada solo por la familia."
+    "A": "Esta conducta configura una omisión del deber de cuidado y de la posición de garante, lo cual puede acarrear responsabilidades administrativas, disciplinarias y civiles para el docente al no activar la ruta de atención pertinente.",
+    "B": "La decisión del docente es administrativamente correcta, puesto que el deber de cuidado cesa inmediatamente cuando el riesgo proviene de dinámicas externas al aula de clase.",
+    "C": "La actuación es válida y prudente, dado que la activación de cualquier protocolo de convivencia escolar requiere como requisito de procedibilidad una denuncia formal y escrita por parte de la víctima.",
+    "D": "La omisión de reporte es una práctica recomendada en el PEI para priorizar que la resolución de conflictos sea gestionada de forma exclusiva por el núcleo familiar."
   },
-  "clave": "B",
-  "justificacion_clave": "La opción B refleja el deber de cuidado y la obligación de activar atención institucional ante riesgo conocido.",
+  "clave": "A",
+  "justificacion_clave": "Los docentes y directivos escolares asumen una posición de garante en relación con la protección de los menores a su cargo durante la jornada escolar. Ante situaciones de acoso escolar (bullying) u otra vulneración de derechos evidentes, omitir el reporte y la activación de la Ruta de Atención Integral (Ley 1620 de 2013) constituye una falta grave que puede derivar en sanciones de tipo administrativo, disciplinario e incluso de responsabilidad civil.",
   "distractores_funcion": {
-    "A": "Reduce indebidamente el alcance de la responsabilidad profesional.",
-    "B": "Clave correcta.",
-    "C": "Introduce un requisito formal inexistente para actuar preventivamente.",
-    "D": "Traslada de forma improcedente la responsabilidad exclusiva a la familia."
+    "A": "Clave correcta.",
+    "B": "Representa el error de suponer que el deber de cuidado docente se restringe a las paredes de su salón durante las explicaciones académicas.",
+    "C": "Introduce un formalismo inexistente y ajeno al principio de prevención e intervención oportuna que rige la convivencia escolar.",
+    "D": "Pretende avalar la omisión de funciones bajo un criterio de privatización del conflicto que pone en riesgo la vida del menor de edad."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "No requiere citar normas específicas; evalúa principio profesional general de protección."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Caso concreto con información suficiente para resolver sin inferencias externas."
+    "observaciones": "Texto directo."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Responsabilidad legal/CB07_I01.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-19",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

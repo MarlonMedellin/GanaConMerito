@@ -1,0 +1,45 @@
+{
+  "id_item": "EIP_B06_I02",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y didáctica infantil",
+  "tema": "Modelos pedagógicos y teorías de aprendizaje",
+  "subtema": "Uso de material concreto en el aula",
+  "competencia": "Aplicar los principios de la teoría cognitiva de Jerome Bruner, el diseño de currículo en espiral y el uso de material concreto en el diseño de situaciones de aprendizaje en educación infantil.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado valora la secuencia didáctica bruneriana (activo-icónico-simbólico) en la enseñanza de las matemáticas.",
+  "evidencia": "Selecciona la secuencia que inicia con la manipulación física de objetos concretos, avanza al dibujo representativo y concluye con la notación simbólica matemática.",
+  "tarea": "Determinar la ruta pedagógica más pertinente para introducir el concepto de adición en grado primero según Bruner.",
+  "contexto": "Un docente desea enseñar el concepto de suma a estudiantes de primer grado utilizando la progresión de representación cognitiva propuesta por Bruner.",
+  "enunciado": "Para lograr un aprendizaje comprensivo y significativo de la adición, ¿cuál es la secuencia didáctica que el docente debe planificar?",
+  "opciones": {
+    "A": "Presentar directamente la ecuación en el tablero (e.g. 3+2=5), hacer que los niños la memoricen y realicen planas numéricas de la misma.",
+    "B": "Permitir que los estudiantes manipulen semillas u objetos reales para agrupar cantidades (activo), luego representar las agrupaciones mediante dibujos de fichas (icónico) y finalmente formular la suma con signos numéricos tradicionales (simbólico).",
+    "C": "Dictar una definición teórica y abstracta de la adición, evaluar de forma escrita mediante opción múltiple y enviar tareas conceptuales a casa.",
+    "D": "Iniciar con la representación simbólica de números grandes, luego pedir a los estudiantes que los representen de forma pictórica y por último usar bloques de construcción físicos."
+  },
+  "clave": "B",
+  "justificacion_clave": "De acuerdo con Jerome Bruner, el aprendizaje del niño transita por tres sistemas de representación: enactivo (acción y manipulación de material concreto), icónico (representación mediante imágenes y dibujos) y simbólico (uso de signos abstractos y fórmulas). Seguir este orden facilita el anclaje cognitivo del concepto matemático.",
+  "distractores_funcion": {
+    "A": "Corresponde a un enfoque abstracto tradicional que inicia por la etapa simbólica sin brindar apoyo sensorial concreto previo.",
+    "B": "Clave correcta.",
+    "C": "Utiliza un método enciclopédico y verbalista que no respeta el desarrollo evolutivo de los estudiantes de primer grado.",
+    "D": "Invierte de forma inadecuada la secuencia natural del desarrollo cognitivo propuesto por la teoría del aprendizaje de Bruner."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Situación de aula estándar aplicable universalmente."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Términos claros (activo, icónico, simbólico) explicados de manera práctica."
+  },
+  "metadata_editorial": {
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
+}

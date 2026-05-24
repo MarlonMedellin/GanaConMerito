@@ -1,44 +1,44 @@
 {
   "id_item": "EFCC_B02_I02",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Evaluación del aprendizaje",
+  "area": "Evaluación, currículo y didáctica",
   "tema": "Criterios, instrumentos y tipos de evaluación",
   "subtema": "Evaluación, Currículo y Didáctica",
-  "competencia": "Distingue criterios, instrumentos y tipos de evaluación para seleccionar estrategias pertinentes al propósito formativo.",
-  "nivel_cognitivo": "ANÁLISIS",
-  "dificultad_estimada": "BAJA",
-  "claim": "Identifica la alternativa más adecuada según el marco pedagógico, evaluativo o de protección del caso.",
-  "evidencia": "Selecciona una única respuesta técnicamente defendible frente a distractores plausibles.",
-  "tarea": "Analizar la situación planteada y elegir la decisión institucional o didáctica más pertinente.",
-  "contexto": "Un docente solicita a sus estudiantes elaborar una exposición oral. Para evaluarla, decide definir previamente criterios como claridad de ideas, uso de evidencias, organización del discurso y manejo del tiempo. Además, establece niveles de desempeño con descriptores para cada criterio.",
-  "enunciado": "Un docente solicita a sus estudiantes elaborar una exposición oral. Para evaluarla, decide definir previamente criterios como claridad de ideas, uso de evidencias, organización del discurso y manejo del tiempo. Además, establece niveles de desempeño con descriptores para cada criterio.\n\n¿Qué instrumento está aplicando el docente?",
+  "competencia": "Diseñar e implementar rúbricas de desempeño analíticas estructuradas para la valoración formativa de tareas auténticas complejas.",
+  "nivel_cognitivo": "ANALISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado analiza la estructura y el uso pedagógico de las rúbricas como instrumentos de evaluación formativa y sumativa.",
+  "evidencia": "Identifica los componentes clave de una rúbrica (criterios, escala, descriptores) y los distingue de valoraciones globales de carácter intuitivo.",
+  "tarea": "Proponer el diseño e implementación de un instrumento de evaluación cualitativo reflexivo para una exposición oral grupal.",
+  "contexto": "Un docente del área de lenguaje planifica la evaluación de un proyecto de exposición argumentativa oral. Para garantizar la objetividad y ofrecer retroalimentación útil a los estudiantes, el docente busca estructurar un instrumento que supere la asignación de una calificación numérica global basada en la impresión personal de la presentación.",
+  "enunciado": "Para cumplir este propósito formativo de manera rigurosa, el diseño didáctico idóneo para la rúbrica debe consistir en:",
   "opciones": {
-    "A": "Una rúbrica de desempeño, porque valora la tarea mediante criterios explícitos, niveles de calidad y descriptores.",
-    "B": "Una nota subjetiva, porque cualquier exposición debe calificarse solo según la impresión general del docente.",
-    "C": "Un estándar curricular, porque reemplaza la evaluación de la exposición por un referente general del área.",
-    "D": "Una sanción académica, porque clasifica a los estudiantes sin posibilidad de retroalimentación."
+    "A": "Definir criterios de desempeño claros (ej. estructura discursiva, uso de fuentes, claridad verbal), establecer una escala cualitativa o cuantitativa (ej. superior, alto, básico) y redactar descriptores que expliquen detalladamente lo que el estudiante demuestra en cada nivel para cada criterio.",
+    "B": "Diseñar un formulario de autoevaluación simple con preguntas de escala abierta donde el estudiante registre la nota que cree merecer sin necesidad de asociarla a evidencias o a un listado de criterios comunes de área.",
+    "C": "Redactar un listado de penalizaciones de comportamiento generales del aula escolar aplicables a cualquier estudiante que presente signos de nerviosismo o inseguridad física durante la exposición.",
+    "D": "Mantener una escala única de calificación dicotómica (aprobado / reprobado) basada en la verificación sumativa de la asistencia regular a la clase el día fijado para la presentación oral."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "Una rúbrica analítica rigurosa exige la articulación de criterios de evaluación, niveles de escala y descriptores claros de desempeño. Esto permite evaluar objetivamente tareas complejas, guiar al estudiante sobre sus fortalezas y áreas de mejora, y asegurar la transparencia del proceso.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque una rúbrica busca precisamente reducir la arbitrariedad de la impresión general.",
-    "C": "Es incorrecta porque el estándar orienta la competencia esperada, pero no reemplaza el instrumento de evaluación.",
-    "D": "Es incorrecta porque la rúbrica no es una sanción, sino un instrumento de valoración y mejora."
+    "B": "Promueve una autoevaluación subjetiva y sin andamiaje que desvirtúa la retroalimentación basada en evidencias del saber hacer.",
+    "C": "Confunde evaluación del desempeño de competencias del área con la fiscalización conductual punitiva del estudiante.",
+    "D": "Reduce la riqueza cualitativa de una competencia compleja a una métrica administrativa dicotómica de control de asistencia."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje pedagógico y normativo estándar, sin sesgos culturales o barreras innecesarias."
+    "observaciones": "El ítem promueve la objetividad evaluativa."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones comparables en estructura y nivel de abstracción."
+    "observaciones": "Formato de redacción habitual y opciones bien definidas."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Criterios, instrumentos y tipos de evaluación/EFCC_B02_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

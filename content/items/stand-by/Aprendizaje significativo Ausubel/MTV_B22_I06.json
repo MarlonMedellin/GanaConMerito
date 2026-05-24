@@ -11,20 +11,20 @@
   "evidencia": "Selecciona la opción que mejor explica la decisión pedagógica coherente con el aprendizaje significativo en el caso planteado.",
   "tarea": "Inferir, a partir del caso, la condición didáctica que permite aprendizaje significativo según Ausubel.",
   "contexto": "Al iniciar una clase de ciencias, varios estudiantes afirman que el Sol es amarillo porque así lo dibujan desde pequeños. La docente no ridiculiza la idea, sino que la usa como punto de partida para observar imágenes, analizar luz y discutir percepción del color.",
-  "enunciado": "Al iniciar una clase de ciencias, varios estudiantes afirman que el Sol es amarillo porque así lo dibujan desde pequeños. La docente no ridiculiza la idea, sino que la usa como punto de partida para observar imágenes, analizar luz y discutir percepción del color.\n\n¿Qué está haciendo la docente?",
+  "enunciado": "De acuerdo con el enfoque pedagógico de Ausubel, ¿qué proceso está promoviendo la docente en la estructura cognitiva de sus estudiantes?",
   "opciones": {
-    "A": "Ignorar las ideas previas.",
-    "B": "Usar una idea previa como punto de partida para reconstruir comprensión.",
-    "C": "Aceptar cualquier idea como científicamente correcta.",
-    "D": "Evitar el aprendizaje científico."
+    "A": "La asimilación subordinada mecánica al invalidar la creencia inicial para imponer la teoría científica.",
+    "B": "El uso del saber previo como anclaje cognitivo para facilitar la diferenciación progresiva y reconciliación integradora de los conceptos.",
+    "C": "El aprendizaje de representaciones nominales puras basado en la confirmación afectiva de la opinión de los alumnos.",
+    "D": "La sustitución cognitiva inmediata mediante la exclusión de toda hipótesis alternativa en el aula."
   },
   "clave": "B",
-  "justificacion_clave": "La docente identifica una idea previa y la utiliza para generar revisión, contraste y reconstrucción conceptual.",
+  "justificacion_clave": "La docente valora el saber previo de los estudiantes y, en lugar de descartarlo, lo toma como punto de anclaje para enriquecerlo, permitiendo que a través del análisis se diferencie la percepción cotidiana del color y se reconcilie con la explicación científica (reconciliación integradora).",
   "distractores_funcion": {
-    "A": "La docente no ignora la idea; la trabaja.",
+    "A": "Confunde el proceso con un aprendizaje memorístico e impositivo de la teoría.",
     "B": "Clave correcta.",
-    "C": "Escuchar una idea previa no significa validarla científicamente.",
-    "D": "La estrategia fortalece el pensamiento científico."
+    "C": "Utiliza términos de la teoría de Ausubel (representaciones nominales), pero el caso describe una construcción conceptual más compleja.",
+    "D": "Representa un enfoque directivo impositivo que anula la reestructuración cognitiva."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I06.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

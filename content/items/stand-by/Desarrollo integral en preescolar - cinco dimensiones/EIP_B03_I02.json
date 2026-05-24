@@ -11,20 +11,20 @@
   "evidencia": "Selecciona una única alternativa defendible técnicamente y coherente con el constructo del ítem.",
   "tarea": "Analizar la situación presentada y elegir la respuesta más pertinente según criterios pedagógicos y normativos aplicables.",
   "contexto": "En transición, una docente considera que las actividades de movimiento, equilibrio, coordinación, juego corporal y desplazamiento son pérdida de tiempo porque todavía no son lectura ni escritura.",
-  "enunciado": "En transición, una docente considera que las actividades de movimiento, equilibrio, coordinación, juego corporal y desplazamiento son pérdida de tiempo porque todavía no son lectura ni escritura.\n\n¿Qué dimensión del desarrollo integral estaría desconociendo principalmente?",
+  "enunciado": "De acuerdo con el desarrollo integral en preescolar (Ley 115), ¿qué aspecto o dimensión del desarrollo infantil se está desconociendo principalmente con esta postura de la docente?",
   "opciones": {
-    "A": "La dimensión financiera.",
-    "B": "La dimensión administrativa.",
-    "C": "La dimensión sicomotriz.",
-    "D": "La dimensión sancionatoria."
+    "A": "El aspecto cognoscitivo, orientado a la asimilación conceptual de la lectoescritura como prerrequisito académico único.",
+    "B": "El aspecto socioafectivo, enfocado en el desarrollo de la autonomía emocional y el autocontrol del estudiante.",
+    "C": "El aspecto sicomotriz, que fundamenta el conocimiento del propio cuerpo, la lateralidad y las posibilidades de acción y exploración espacial.",
+    "D": "El aspecto biológico, referido exclusivamente al crecimiento físico armónico, la talla y el peso del menor."
   },
   "clave": "C",
-  "justificacion_clave": "C",
+  "justificacion_clave": "Las actividades descritas (equilibrio, coordinación, juego corporal) pertenecen al aspecto sicomotriz, indispensable en el nivel preescolar para que el niño reconozca su cuerpo, desarrolle motricidad fina y gruesa y se ubique espacio-temporalmente.",
   "distractores_funcion": {
-    "A": "No corresponde al desarrollo infantil definido para preescolar.",
-    "B": "No es una dimensión del desarrollo integral del niño.",
+    "A": "Confunde la sicomotricidad con las habilidades de lectura y escritura (que pertenecen al área comunicativa/cognitiva).",
+    "B": "Confunde el desarrollo corporal/motriz con el desarrollo de la socioafectividad.",
     "C": "Clave correcta.",
-    "D": "No existe como dimensión pedagógica del preescolar."
+    "D": "Confunde el desarrollo sicomotriz (coordinación y movimiento voluntario) con lo biológico (condiciones puramente anatómicas y de crecimiento)."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Desarrollo integral en preescolar - cinco dimensiones/EIP_B03_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

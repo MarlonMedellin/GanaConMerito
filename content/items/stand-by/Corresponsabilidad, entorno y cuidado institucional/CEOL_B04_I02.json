@@ -13,18 +13,18 @@
   "contexto": "Una institución identifica que situaciones del barrio, como conflictos entre grupos juveniles, inseguridad y tensiones familiares, están afectando la asistencia, la convivencia y el bienestar emocional de varios estudiantes.",
   "enunciado": "Una institución identifica que situaciones del barrio, como conflictos entre grupos juveniles, inseguridad y tensiones familiares, están afectando la asistencia, la convivencia y el bienestar emocional de varios estudiantes.\n\n¿De qué manera debe asumir la escuela estas situaciones externas que permean la vida escolar?",
   "opciones": {
-    "A": "Ignorarlas porque todo lo que ocurre fuera de la institución es ajeno al proceso educativo.",
-    "B": "Sancionar preventivamente a los estudiantes que viven en los sectores más afectados.",
-    "C": "Reconocer el contexto, analizar sus efectos en la escuela, acompañar a los estudiantes, articularse con familias y entidades competentes y activar rutas cuando corresponda.",
-    "D": "Suspender las clases hasta que la comunidad externa resuelva por completo sus problemas."
+    "A": "Desentenderse de la situación alegando falta de competencia territorial y legal de la escuela para intervenir en el espacio público exterior del barrio.",
+    "B": "Imponer medidas disciplinarias de carácter preventivo a los estudiantes procedentes de los sectores conflictivos para resguardar la seguridad interna del plantel.",
+    "C": "Caracterizar y contextualizar los factores del entorno, brindar acompañamiento pedagógico y socioemocional a los estudiantes afectados, coordinar acciones formativas con las familias y articularse con la red intersectorial de protección.",
+    "D": "Suspender temporalmente el servicio educativo presencial hasta que las autoridades municipales y la policía garanticen el orden público en los alrededores."
   },
   "clave": "C",
-  "justificacion_clave": "C",
+  "justificacion_clave": "El enfoque de corresponsabilidad y cuidado integral (Ley 1098 de 2006 y Ley 1620 de 2013) exige que la institución educativa reconozca el contexto territorial en el que está inmersa. La escuela debe comprender que las problemáticas externas impactan la permanencia y convivencia escolar y, en consecuencia, debe actuar de manera preventiva y protectora brindando apoyo integral y articulándose con las familias y entidades de la red de apoyo para mitigar el riesgo.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque las situaciones externas pueden afectar directamente la convivencia, la asistencia y el aprendizaje.",
-    "B": "Es incorrecta porque sanciona por pertenencia territorial o contexto, lo que resulta discriminatorio.",
+    "A": "Incorrecto. Desconoce la función social de la educación y el deber de protección que posee el docente en su calidad de garante, el cual no se limita al espacio físico del aula sino que abarca la protección de las trayectorias vitales de los estudiantes.",
+    "B": "Incorrecto. Sancionar a los estudiantes por habitar en sectores de alto riesgo constituye una medida discriminatoria y arbitraria que vulnera el derecho a la igualdad, la presunción de inocencia y el debido proceso.",
     "C": "Clave correcta.",
-    "D": "Es incorrecta porque suspender el servicio educativo no es una respuesta pedagógica ni preventiva suficiente."
+    "D": "Incorrecto. La suspensión unilateral de clases vulnera de forma desproporcionada el derecho fundamental a la educación y contradice el principio del interés superior de los niños, niñas y adolescentes."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Corresponsabilidad, entorno y cuidado institucional/CEOL_B04_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

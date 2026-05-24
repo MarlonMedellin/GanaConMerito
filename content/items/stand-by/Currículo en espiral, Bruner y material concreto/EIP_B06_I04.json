@@ -1,0 +1,45 @@
+{
+  "id_item": "EIP_B06_I04",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y didáctica infantil",
+  "tema": "Modelos pedagógicos y teorías de aprendizaje",
+  "subtema": "Uso de material concreto y abstracción",
+  "competencia": "Aplicar los principios de la teoría cognitiva de Jerome Bruner, el diseño de currículo en espiral y el uso de material concreto en el diseño de situaciones de aprendizaje en educación infantil.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado selecciona el uso correcto de material concreto para el tránsito exitoso hacia la abstracción matemática.",
+  "evidencia": "Reconoce que el material concreto debe usarse con fines representativos específicos para construir el concepto y no como mero juguete lúdico.",
+  "tarea": "Seleccionar la decisión pedagógica que mejor aproveche el potencial de los bloques multibase en la enseñanza del sistema decimal.",
+  "contexto": "Un docente introduce los bloques multibase (unidades, decenas, centenas) para enseñar el sistema de numeración decimal. Observa que algunos estudiantes se dedican a apilar los bloques para construir castillos, ignorando el sentido numérico de la actividad.",
+  "enunciado": "Para encauzar la actividad hacia la construcción del concepto abstracto y respetar el modelo representacional de Bruner, el docente debe:",
+  "opciones": {
+    "A": "Retirar de inmediato los bloques multibase por considerarlos distractores y dictar en el tablero el concepto formal de unidades y decenas.",
+    "B": "Permitir que los estudiantes sigan construyendo castillos de forma libre durante toda la sesión, valorando su creatividad arquitectónica infantil.",
+    "C": "Intervenir para proponer un juego estructurado de equivalencias y canjes (e.g. diez cubos de unidades equivalen a una barra de decena) que conecte la acción física con la representación visual y simbólica del número.",
+    "D": "Exigir a los estudiantes memorizar la definición conceptual de los bloques antes de permitirles tocarlos físicamente."
+  },
+  "clave": "C",
+  "justificacion_clave": "El material concreto (bloques multibase) no genera aprendizaje abstracto por su sola presencia o por juego libre no guiado. Requiere que la manipulación física (etapa enactiva) sea guiada e intencionada por el docente hacia la identificación de relaciones de equivalencia, facilitando el posterior tránsito a la notación icónica y simbólica del sistema decimal.",
+  "distractores_funcion": {
+    "A": "Renuncia al uso del material didáctico concreto ante la primera desviación, retornando a una clase verbalista abstracta inapropiada.",
+    "B": "Confunde la libre exploración inicial con el desarrollo de conceptos lógicos específicos, omitiendo la mediación del profesor.",
+    "C": "Clave correcta.",
+    "D": "Pretende someter la experiencia de manipulación a una memorización conceptual estéril e inflexible."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Enfoque didáctico de las matemáticas estandarizado y neutro."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción fluida, con opciones diferenciadas por la naturaleza de la intervención docente."
+  },
+  "metadata_editorial": {
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
+}

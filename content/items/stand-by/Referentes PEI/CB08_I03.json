@@ -1,6 +1,6 @@
 {
   "id_item": "CB08_I03",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión Directiva",
   "tema": "Referentes PEI",
   "subtema": "Fundamentos obligatorios del PEI",
@@ -13,18 +13,18 @@
   "contexto": "El diagnóstico institucional muestra ausentismo frecuente, baja participación familiar y dificultades en lectura en varios grados. Sin embargo, el plan de mejoramiento prioriza únicamente la remodelación de espacios administrativos.",
   "enunciado": "El diagnóstico institucional muestra ausentismo frecuente, baja participación familiar y dificultades en lectura en varios grados. Sin embargo, el plan de mejoramiento prioriza únicamente la remodelación de espacios administrativos.\n\n¿Cuál ajuste sería más pertinente?",
   "opciones": {
-    "A": "Eliminar el diagnóstico del PEI para evitar contradicciones con las prioridades ya definidas.",
-    "B": "Alinear las metas institucionales con los hallazgos del diagnóstico, incluyendo estrategias pedagógicas y de participación familiar.",
-    "C": "Mantener el plan tal como está, porque la infraestructura administrativa siempre tiene prioridad sobre lo pedagógico.",
-    "D": "Solicitar a los docentes que mejoren los resultados sin modificar estrategias institucionales."
+    "A": "Suprimir la sección de diagnóstico de autoevaluación del PEI para evitar discordancias visibles ante los procesos de auditoría externa.",
+    "B": "Reestructurar el Plan de Mejoramiento Institucional (PMI) para alinear las metas y el presupuesto de inversión con los hallazgos del diagnóstico, incorporando proyectos pedagógicos de lectura y estrategias de corresponsabilidad familiar.",
+    "C": "Continuar con la ejecución de las obras de remodelación administrativa de forma prioritaria, asumiendo que la mejora del entorno físico del personal directivo repercute indirectamente en la calidad del aula.",
+    "D": "Exigir de manera directa al cuerpo docente la elevación del nivel de lectura de los estudiantes a través de actividades complementarias de aula, sin realizar modificaciones en la planeación y recursos directivos."
   },
   "clave": "B",
-  "justificacion_clave": "B",
+  "justificacion_clave": "El Plan de Mejoramiento Institucional (PMI) debe responder de manera directa a los resultados de la autoevaluación institucional y el diagnóstico de contexto del PEI (siguiendo las orientaciones de la Guía 34 del Ministerio de Educación Nacional). Si el diagnóstico identifica problemáticas pedagógicas de ausentismo, lectura y vinculación familiar, el PMI debe priorizar las metas, acciones, responsables y recursos del presupuesto escolar a la resolución de estas barreras, garantizando la centralidad de la gestión académica.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque eliminar el diagnóstico evita reconocer información relevante para la toma de decisiones institucionales.",
+    "A": "Incorrecto. Eliminar u ocultar la información diagnóstica de la autoevaluación viola las normas de autoevaluación y mejoramiento institucional continuo del DUR 1075 de 2015.",
     "B": "Clave correcta.",
-    "C": "Es incorrecta porque establece una prioridad rígida sobre infraestructura administrativa sin atender los hallazgos pedagógicos y comunitarios del diagnóstico.",
-    "D": "Es incorrecta porque traslada la responsabilidad exclusivamente a los docentes y desconoce que el problema requiere estrategias institucionales articuladas."
+    "C": "Incorrecto. El mejoramiento de la infraestructura administrativa, aunque sea válido, no debe anteponerse de manera exclusiva cuando existen graves alertas pedagógicas (como el ausentismo o dificultades básicas de lectura) que amenazan el derecho educativo.",
+    "D": "Incorrecto. Trasladar la total responsabilidad de la solución al docente de aula, sin el respaldo de metas institucionales, recursos pedagógicos y planes articulados desde el PMI, es ineficaz y desconoce el principio de gestión integrada de la calidad educativa."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Referentes PEI/CB08_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

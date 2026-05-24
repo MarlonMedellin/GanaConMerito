@@ -1,45 +1,45 @@
 {
   "id_item": "DIL_B02_I02",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Activación del PARD",
   "tema": "PARD y restablecimiento de derechos",
-  "subtema": "Confusión entre una dificultad escolar ordinaria y una amenaza, inobservancia o vulneración de derechos que exige activación de ruta.",
+  "subtema": "Confusión entre una dificultad escolar ordinaria y una amenaza, inobservancia o vulneración de derechos",
   "competencia": "Identificación de situaciones de restablecimiento",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende que el PARD no es una sanción escolar, sino un proceso para restaurar derechos cuando están amenazados o vulnerados.",
-  "evidencia": "Selecciona la condición de activación correcta para el PARD.",
-  "tarea": "Diferenciar ruta de protección de medidas escolares ordinarias.",
-  "contexto": "Un docente observa que un estudiante presenta señales de posible abandono, malnutrición y ausencia de protección familiar. El caso supera una simple dificultad académica o disciplinaria.",
-  "enunciado": "Un docente observa que un estudiante presenta señales de posible abandono, malnutrición y ausencia de protección familiar. El caso supera una simple dificultad académica o disciplinaria.\n\n¿En qué tipo de situaciones procede activar o remitir hacia el PARD?",
+  "claim": "El evaluado diferencia las dificultades escolares de las situaciones que exigen activación de rutas de restablecimiento de derechos.",
+  "evidencia": "Determina cuándo procede activar la ruta frente a derechos inobservados, amenazados o vulnerados.",
+  "tarea": "Identificar la situación escolar o familiar que justifica la remisión para inicio de PARD.",
+  "contexto": "Un docente observa que un estudiante de primaria presenta de manera recurrente hematomas inexplicables, desaliño extremo, somnolencia constante y desnutrición visible. Al intentar indagar con los cuidadores, estos evaden dar explicaciones. El docente nota que esta situación excede una dificultad académica u ordinaria.",
+  "enunciado": "¿En qué tipo de situaciones corresponde a la institución educativa activar la ruta y remitir el caso para dar inicio al PARD?",
   "opciones": {
-    "A": "Cuando el estudiante olvida una tarea ocasional.",
-    "B": "Cuando el docente quiere imponer una sanción disciplinaria más fuerte.",
-    "C": "Cuando existen derechos inobservados, amenazados o vulnerados y se requiere restaurar su ejercicio efectivo.",
-    "D": "Cuando la institución quiere evitar cualquier intervención de autoridad competente."
+    "A": "Cuando existen indicios de inobservancia, amenaza o vulneración de los derechos del menor de edad, con el fin de que la autoridad competente dicte medidas de protección.",
+    "B": "Cuando se presenta una infracción menor al manual de convivencia que amerita una amonestación verbal.",
+    "C": "Únicamente cuando el estudiante ha cometido una falta grave que justifique la pérdida del cupo escolar o la suspensión.",
+    "D": "Cuando los padres de familia solicitan el traslado voluntario del alumno a otra institución educativa pública."
   },
-  "clave": "C",
-  "justificacion_clave": "C",
+  "clave": "A",
+  "justificacion_clave": "El PARD procede exclusivamente ante situaciones en las que los derechos de los niños, niñas o adolescentes han sido inobservados, amenazados o vulnerados. Ante indicios de abandono físico, maltrato o desnutrición (negligencia), la institución educativa debe remitir a las autoridades de restablecimiento (Comisaría de Familia, Defensoría de Familia).",
   "distractores_funcion": {
-    "A": "Es incorrecta porque no toda dificultad escolar activa un proceso de restablecimiento.",
-    "B": "Es incorrecta porque el PARD no es una sanción.",
-    "C": "Clave correcta.",
-    "D": "Es incorrecta porque la institución debe articularse con la autoridad competente."
+    "A": "Clave correcta.",
+    "B": "Confunde faltas menores de convivencia con situaciones de vulneración grave de derechos fundamentales.",
+    "C": "Confunde un mecanismo de protección infantil con una sanción disciplinaria escolar extrema.",
+    "D": "Asocia un trámite de protección con un procedimiento administrativo regular de traslado de matrícula escolar."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem evita sobreactivar rutas por situaciones menores y también evita omisiones frente a riesgos reales."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Caso muy claro."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I02.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

@@ -2,43 +2,43 @@
   "id_item": "NFL_B06_I01",
   "estado": "LISTO_PARA_BANCO",
   "area": "Normativa y ciudadanía",
-  "tema": "Jerarquía normativa",
+  "tema": "Tipos de normas - acto legislativo, ley ordinaria y ley estatutaria",
   "subtema": "Acto legislativo, ley ordinaria y ley estatutaria",
   "competencia": "Comparar tipos de normas según alcance, materia y trámite en el ordenamiento colombiano.",
-  "nivel_cognitivo": "ANÁLISIS",
-  "dificultad_estimada": "MEDIA-ALTA",
-  "claim": "El evaluado diferencia adecuadamente reforma constitucional, legislación ordinaria y legislación estatutaria.",
-  "evidencia": "Selecciona una caracterización correcta de cada tipo normativo.",
-  "tarea": "Elegir la comparación jurídicamente correcta entre acto legislativo, ley ordinaria y ley estatutaria.",
-  "contexto": "En clase de ciencias sociales, estudiantes asumen que todas las normas expedidas por el Congreso tienen igual jerarquía y materia.",
-  "enunciado": "¿Cuál explicación corrige mejor esa idea?",
+  "nivel_cognitivo": "CONOCIMIENTO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado distingue adecuadamente la reforma constitucional, la legislación ordinaria y la legislación estatutaria en el ordenamiento colombiano.",
+  "evidencia": "Diferencia la jerarquía, materia de regulación y procedimiento legislativo de cada tipo de norma.",
+  "tarea": "Explicar las diferencias fundamentales entre Acto Legislativo, Ley Ordinaria y Ley Estatutaria.",
+  "contexto": "En una clase de ciencias sociales y ciudadanía, los estudiantes asumen que cualquier ley aprobada por el Congreso posee la misma jerarquía normativa y puede reformar directamente la Constitución Política.",
+  "enunciado": "¿Cuál de las siguientes explicaciones diferencia y aclara de manera correcta la naturaleza de estas normas?",
   "opciones": {
-    "A": "El acto legislativo regula materias cotidianas; la ley ordinaria reforma la Constitución; la estatutaria trata horarios escolares.",
-    "B": "Las tres figuras son equivalentes y solo cambia el nombre.",
-    "C": "La ley ordinaria tiene mayor jerarquía que la Constitución.",
-    "D": "El acto legislativo reforma la Constitución; la ley ordinaria regula materias generales; la ley estatutaria regula materias especiales con trámite reforzado."
+    "A": "El acto legislativo es el mecanismo empleado por el Congreso para reformar la Constitución; la ley ordinaria regula de forma común materias generales del derecho; la ley estatutaria tiene un trámite legislativo reforzado y control previo de constitucionalidad para regular materias específicas como los derechos fundamentales.",
+    "B": "La ley ordinaria posee mayor rango normativo que el acto legislativo, de modo que una ley expedida por el Congreso prevalece siempre sobre el texto de la Constitución Política.",
+    "C": "La ley estatutaria equivale a un reglamento o directiva de un ministerio sectorial, mientras que el acto legislativo y la ley ordinaria son herramientas de uso exclusivo del poder ejecutivo para dictar decretos de emergencia.",
+    "D": "El acto legislativo regula materias ordinarias de la administración municipal; la ley ordinaria reforma la Constitución y la ley estatutaria es redactada de forma directa por los consejos académicos de los colegios."
   },
-  "clave": "D",
-  "justificacion_clave": "Distingue función constitucional, materia y nivel de exigencia procedimental de cada categoría.",
+  "clave": "A",
+  "justificacion_clave": "En el ordenamiento colombiano, el Acto Legislativo reforma la Constitución. La Ley Estatutaria es una ley especial para regular materias sensibles de reserva constitucional (como derechos fundamentales), requiriendo mayoría absoluta y control de la Corte Constitucional antes de su sanción. La Ley Ordinaria regula materias comunes y generales de legislación.",
   "distractores_funcion": {
-    "A": "Invierte funciones normativas.",
-    "B": "Niega diferencias sustantivas y procedimentales.",
-    "C": "Desconoce supremacía constitucional.",
-    "D": "Clave correcta."
+    "A": "Clave correcta.",
+    "B": "Vulnera el principio de supremacía constitucional de la Carta Política (Artículo 4), subordinando erróneamente el texto constitucional a las leyes del Congreso.",
+    "C": "Confunde la ley estatutaria (ley del legislativo de alto rango) con un acto administrativo (reglamento de ministerio) y desvirtúa la separación de poderes.",
+    "D": "Incurre en múltiples errores de definición, rebajando el acto legislativo al plano municipal y atribuyendo erróneamente la ley estatutaria a entes escolares."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje funcional y contexto general; evita sesgos culturales o exigencias externas no declaradas."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado directo, paralelismo en opciones y una tarea cognitiva principal por ítem."
+    "observaciones": "Opciones detalladas y paralelas."
   },
   "metadata_editorial": {
-    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "fuente": "content/items/stand-by/Tipos de normas - acto legislativo, ley ordinaria y ley estatutaria/NFL_B06_I01.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

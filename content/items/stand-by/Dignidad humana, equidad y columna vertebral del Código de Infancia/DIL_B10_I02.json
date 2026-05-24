@@ -1,44 +1,44 @@
 {
   "id_item": "DIL_B10_I02",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Derechos y protección integral",
-  "tema": "Dignidad humana, equidad y columna vertebral del Código de Infancia",
-  "subtema": "Equidad e igualdad material",
-  "competencia": "Identifica actuaciones institucionales coherentes con dignidad humana, equidad y enfoque de derechos de infancia.",
+  "area": "Legislación y política educativa",
+  "tema": "Dignidad humana y derechos de la infancia",
+  "subtema": "Enfoque de equidad y barreras de aprendizaje",
+  "competencia": "Aplicar los principios constitucionales de dignidad humana, equidad y la estructura del Código de la Infancia y la Adolescencia en situaciones educativas.",
   "nivel_cognitivo": "JUICIO",
-  "dificultad_estimada": "MEDIA-ALTA",
-  "claim": "Reconoce la alternativa pedagógica o institucional más adecuada según el criterio técnico evaluado en el caso.",
-  "evidencia": "Selecciona una única opción defendible frente a distractores plausibles en función del constructo.",
-  "tarea": "Analizar el caso y elegir la decisión más pertinente conforme al enfoque del ítem.",
-  "contexto": "En una institución educativa, dos estudiantes tienen la misma obligación académica, pero uno enfrenta barreras de acceso, pobreza extrema y falta de acompañamiento familiar. Un docente afirma que la equidad exige hacer ajustes razonables y apoyos, mientras otro dice que todos deben recibir exactamente lo mismo sin importar su situación.",
-  "enunciado": "En una institución educativa, dos estudiantes tienen la misma obligación académica, pero uno enfrenta barreras de acceso, pobreza extrema y falta de acompañamiento familiar. Un docente afirma que la equidad exige hacer ajustes razonables y apoyos, mientras otro dice que todos deben recibir exactamente lo mismo sin importar su situación.\n\n¿Cuál interpretación es más coherente con la equidad en clave de derechos de infancia?",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El docente aplica el enfoque de equidad frente a desigualdades socioeconómicas que limitan el acceso y permanencia escolar.",
+  "evidencia": "Selecciona la decisión pedagógica que implementa apoyos diferenciales y flexibilidad frente a estudiantes con condiciones de vulnerabilidad extrema.",
+  "tarea": "Identificar el enfoque de equidad en la aplicación de exigencias académicas a estudiantes en situation de pobreza.",
+  "contexto": "Dos estudiantes deben entregar un informe de lectura digital. Uno cuenta con conectividad permanente y acompañamiento; el otro habita en zona rural sin internet y su núcleo familiar trabaja en el campo todo el día. Un docente propone reprobar al segundo estudiante por no entregar el formato digital, alegando que debe haber igualdad de condiciones.",
+  "enunciado": "Conforme al enfoque de equidad educativa (Decreto 1075 de 2015), la respuesta del docente para garantizar el derecho a la educación debe ser:",
   "opciones": {
-    "A": "La equidad exige reconocer condiciones reales y adoptar apoyos proporcionales para que el derecho a aprender y participar sea efectivo.",
-    "B": "La equidad consiste en negar cualquier apoyo porque todos deben recibir idéntico trato formal.",
-    "C": "La equidad permite eliminar todos los deberes del estudiante sin acompañamiento ni proceso pedagógico.",
-    "D": "La equidad autoriza exponer públicamente la situación familiar del estudiante."
+    "A": "Mantener la misma exigencia de formato digital para ambos, a fin de no vulnerar el principio de imparcialidad del docente de área.",
+    "B": "Ajustar las condiciones de entrega del estudiante rural, permitiendo formatos físicos alternativos u otorgando tiempo complementario en la biblioteca del colegio, asegurando que se evalúe la misma competencia cognitiva.",
+    "C": "Exonerar de forma permanente al estudiante rural de realizar cualquier tipo de trabajo escrito para evitar afectarlo socioemocionalmente.",
+    "D": "Facilitar el informe impreso al estudiante rural, pero aplicándole una penalización en la nota final por no ajustarse al canal digital estándar del curso."
   },
-  "clave": "A",
-  "justificacion_clave": "A",
+  "clave": "B",
+  "justificacion_clave": "La equidad en el servicio educativo (Decreto 1075 de 2015) exige ir más allá de la igualdad formal. Implica reconocer las barreras contextuales y brindar apoyos diferenciales o alternativos para que el estudiante acceda en igualdad de condiciones reales al aprendizaje y demuestre sus competencias sin penalización por factores de pobreza.",
   "distractores_funcion": {
-    "A": "Clave correcta.",
-    "B": "Es incorrecta porque el trato idéntico puede perpetuar barreras.",
-    "C": "Es incorrecta porque equidad no significa eliminar el proceso pedagógico.",
-    "D": "Es incorrecta porque exponer información sensible vulnera dignidad e intimidad."
+    "A": "Confunde imparcialidad con rigidez homogeneizante, penalizando a un estudiante por barreras contextuales ajenas a su control.",
+    "B": "Clave correcta.",
+    "C": "Incurre en facilismo pedagógico y reduce las expectativas de aprendizaje del estudiante en vulnerabilidad, limitando su desarrollo intelectual.",
+    "D": "Simula un apoyo material pero mantiene la penalización en la nota, lo cual es incoherente con el propósito formativo y equitativo."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estándar y contexto institucional general sin sesgos culturales innecesarios."
+    "observaciones": "El ítem visibiliza y valora las particularidades de la ruralidad de forma respetuosa."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura y exigencia."
+    "observaciones": "Redacción estructurada, con opciones bien definidas y homogéneas."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Dignidad humana, equidad y columna vertebral del Código de Infancia/DIL_B10_I02.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

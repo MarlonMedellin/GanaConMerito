@@ -11,20 +11,20 @@
   "evidencia": "Selecciona una estrategia que usa recursos visuales para favorecer participación y aprendizaje común.",
   "tarea": "Elegir una intervención inclusiva frente a barreras de aprendizaje e intereses visuales.",
   "contexto": "Un estudiante diagnosticado con barreras de aprendizaje muestra alto interés por imágenes, mapas, colores y organizadores gráficos. El docente va a trabajar el mismo tema con todo el grupo y quiere aplicar ajustes sin excluirlo.",
-  "enunciado": "Un estudiante diagnosticado con barreras de aprendizaje muestra alto interés por imágenes, mapas, colores y organizadores gráficos. El docente va a trabajar el mismo tema con todo el grupo y quiere aplicar ajustes sin excluirlo.\n\n¿Cómo debe diseñar la clase?",
+  "enunciado": "Teniendo en cuenta el Diseño Universal para el Aprendizaje (DUA), ¿cómo debe planificar y desarrollar el docente la sesión formativa de modo que favorezca la inclusión efectiva?",
   "opciones": {
-    "A": "Darle dibujos sin relación con el tema para que permanezca tranquilo mientras el grupo avanza.",
-    "B": "Retirarlo del aula cada vez que el tema sea complejo.",
-    "C": "Usar apoyos visuales, organizadores gráficos, ejemplos concretos y formas alternativas de expresión vinculadas al mismo propósito de aprendizaje del grupo.",
-    "D": "Aplicarle la misma guía escrita sin cambios, aunque no pueda acceder a ella."
+    "A": "Asignarle una actividad de dibujo libre relacionada tangencialmente con el tema, mientras el resto del curso desarrolla la lectura y análisis crítico del texto guía.",
+    "B": "Solicitar el acompañamiento permanente de un docente de apoyo exclusivo para que traduzca de forma aislada las explicaciones del docente titular durante la clase.",
+    "C": "Diseñar la experiencia incorporando múltiples formas de presentación de la información y de expresión del aprendizaje (DUA), utilizando organizadores gráficos y apoyos visuales para todo el grupo.",
+    "D": "Mantener el formato único de lectura comprensiva y examen escrito individual, aplicando una escala de calificación más flexible para este estudiante."
   },
   "clave": "C",
-  "justificacion_clave": "C",
+  "justificacion_clave": "El Diseño Universal para el Aprendizaje (DUA) propone que la planeación curricular reconozca la diversidad de todo el grupo desde el principio, ofreciendo múltiples formas de representación de la información, de acción/expresión y de implicación, beneficiando a todos y evitando adaptaciones segregadas de última hora.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque mantiene al estudiante ocupado pero excluido del aprendizaje.",
-    "B": "Es incorrecta porque retira al estudiante del aula como solución.",
+    "A": "Representa una práctica de segregación y baja expectativa escolar al dejar al alumno al margen del contenido central.",
+    "B": "Traslada la responsabilidad del docente de aula a un tercero, aislando al estudiante de la mediación general.",
     "C": "Clave correcta.",
-    "D": "Es incorrecta porque aplicar lo mismo sin ajustes puede impedir su participación."
+    "D": "Mantiene barreras pedagógicas intentando solucionarlas mediante una flexibilización de nota que no asegura aprendizaje real."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Inclusión práctica vs. segregación en aula/IDD_B06_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": false
   }

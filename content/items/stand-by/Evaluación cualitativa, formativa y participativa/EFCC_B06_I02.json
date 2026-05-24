@@ -1,0 +1,45 @@
+{
+  "id_item": "EFCC_B06_I02",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y evaluación",
+  "tema": "Evaluación cualitativa, formativa y participativa",
+  "subtema": "Boletines e Informes en Educación Inicial",
+  "competencia": "Diseña y comunica informes de evaluación coherentes con el enfoque de desarrollo integral y cualitativo de la educación inicial.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Determina las características pedagógicas correctas que deben guiar los informes de evaluación en educación preescolar.",
+  "evidencia": "Rechaza propuestas de boletines cuantitativos de ordenamiento jerárquico o etiquetado en favor de descripciones integrales de ritmos, avances y necesidades.",
+  "tarea": "Determinar los criterios que deben guiar la estructura y contenido del boletín informativo de preescolar a partir de un debate institucional sobre su reforma.",
+  "contexto": "Un colegio privado busca reformar el formato del boletín informativo de preescolar. Algunos directivos sugieren incluir un promedio numérico general y una escala de posiciones (puestos del salón) para incentivar el rendimiento de los niños frente a las exigencias académicas de la primaria.",
+  "enunciado": "Un colegio privado busca reformar el formato del boletín informativo de preescolar. Algunos directivos sugieren incluir un promedio numérico general y una escala de posiciones (puestos del salón) para incentivar el rendimiento de los niños frente a las exigencias académicas de la primaria. Desde el marco pedagógico y normativo de la educación inicial en Colombia, la docente de apoyo argumenta que esta propuesta es inapropiada porque el reporte de evaluación en preescolar debe:",
+  "opciones": {
+    "A": "Presentarse mediante informes descriptivos y cualitativos que comuniquen de forma integral el estado de desarrollo, los ritmos de aprendizaje y los apoyos pedagógicos requeridos por cada estudiante.",
+    "B": "Estructurarse exclusivamente con base en letras equivalentes a notas cuantitativas, evitando comentarios cualitativos para no sobrecargar de lectura a las familias.",
+    "C": "Focalizarse en la descripción de las conductas disciplinarias y de adaptación social del estudiante, delegando los logros académicos a reportes informales de entrega mensual.",
+    "D": "Suprimir cualquier forma de informe escrito hacia la familia para evitar comparaciones, limitando la comunicación a reuniones verbales individuales en casos de alerta de desarrollo."
+  },
+  "clave": "A",
+  "justificacion_clave": "En preescolar, los informes deben dar cuenta de manera integral y descriptiva de las dimensiones del desarrollo de los niños. Establecer ránkings o promedios numéricos desvirtúa los propósitos formativos de la educación inicial.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Evaluación por escala alfabética encubierta: asume erróneamente que la evaluación cualitativa se reduce al uso de códigos (letras) con una misma lógica jerárquica y sin explicaciones formativas.",
+    "C": "Sesgo conductista/Reducción de dimensiones: separa el componente social del de aprendizaje, priorizando de forma aislada la conducta y el orden sobre el desarrollo integral del estudiante.",
+    "D": "Omisión de la comunicación institucional: confunde la no comparación de los estudiantes con la eliminación del boletín escrito formal, privando a la familia de su derecho de corresponsabilidad."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Aborda un dilema clásico de la práctica docente en colegios tanto públicos como privados."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Estructura sintáctica consistente y clara."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EFCC_B06_I02.json",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
+}

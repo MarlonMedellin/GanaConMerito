@@ -1,0 +1,45 @@
+{
+  "id_item": "EFCC_B06_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y evaluación",
+  "tema": "Evaluación cualitativa, formativa y participativa",
+  "subtema": "Evaluación y Promoción en Educación Inicial",
+  "competencia": "Aplica los criterios normativos y pedagógicos de la evaluación cualitativa y la promoción en el nivel de educación preescolar.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Determina la decisión pedagógica y administrativa sobre promoción y seguimiento del desarrollo de acuerdo con el marco normativo de la educación inicial.",
+  "evidencia": "Selecciona la promoción al grado primero acompañada de informes cualitativos descriptivos frente a propuestas de reprobación escolar en preescolar.",
+  "tarea": "Determinar la decisión correcta de una comisión de evaluación respecto a un estudiante de transición con ritmos de desarrollo más lentos, conforme al Decreto 2247 de 1997.",
+  "contexto": "Durante una comisión de evaluación en el nivel de educación preescolar, una docente de transición propone que un estudiante no sea promovido al grado primero debido a que presenta un ritmo de aprendizaje más lento que sus compañeros en el desarrollo de la motricidad fina y la grafomotricidad.",
+  "enunciado": "Durante una comisión de evaluación en el nivel de educación preescolar, una docente de transición propone que un estudiante no sea promovido al grado primero debido a que presenta un ritmo de aprendizaje más lento que sus compañeros en el desarrollo de la motricidad fina y la grafomotricidad. De acuerdo con los lineamientos curriculares y normativos para la educación preescolar en Colombia (Decreto 2247 de 1997 / DUR 1075 de 2015), la decisión correcta que debe adoptar la comisión es:",
+  "opciones": {
+    "A": "Promover al estudiante al grado primero, garantizando que el informe descriptivo detalle su proceso singular de desarrollo para que el docente de primaria diseñe las estrategias pedagógicas pertinentes.",
+    "B": "Aplazar la promoción del estudiante al grado primero hasta que logre equiparar el desarrollo grafomotor promedio de su grupo de referencia mediante actividades de refuerzo en el periodo vacacional.",
+    "C": "Condicionar la promoción al grado primero a la presentación de una evaluación de suficiencia escrita diseñada por el comité pedagógico de la institución.",
+    "D": "Mantener al estudiante en el grado transición un año adicional, orientando la intervención únicamente al entrenamiento repetitivo de la motricidad fina para facilitar su posterior adaptación a la primaria."
+  },
+  "clave": "A",
+  "justificacion_clave": "De acuerdo con el Decreto 2247 de 1997 (compilado en el DUR 1075 de 2015), en el nivel de educación preescolar no se reprueban grados ni actividades. La evaluación es cualitativa y descriptiva de los procesos de desarrollo singular.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Nivelación vacacional obligatoria: extrapola una figura de recuperación instrumental de la básica a la educación inicial, ignorando la prohibición de reprobación en preescolar.",
+    "C": "Evaluación sumativa de suficiencia: contradice de forma directa los principios de la evaluación descriptiva en preescolar a través de pruebas escritas estandarizadas de rendimiento.",
+    "D": "Reprobación/repitencia remedial: vulnera la norma nacional de promoción obligatoria y asume erróneamente que la repetición mecánica de grado en preescolar soluciona de forma aislada las barreras del desarrollo."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Alineado estrictamente con la legislación educativa colombiana obligatoria para docentes."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "El enunciado define claramente el rol, el problema y el marco normativo de referencia."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EFCC_B06_I01.json",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
+}

@@ -1,6 +1,6 @@
 {
   "id_item": "CB15_I02",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Didáctica",
   "tema": "Fases enseñanza",
   "subtema": "Comprensión del constructivismo",
@@ -13,18 +13,18 @@
   "contexto": "Antes de iniciar un tema nuevo, una docente quiere conocer qué ideas, experiencias o explicaciones tienen sus estudiantes sobre el asunto.",
   "enunciado": "Antes de iniciar un tema nuevo, una docente quiere conocer qué ideas, experiencias o explicaciones tienen sus estudiantes sobre el asunto.\n\n¿Cuál acción corresponde mejor a la fase de exploración de saberes previos?",
   "opciones": {
-    "A": "Aplicar una pregunta problema, lluvia de ideas o breve actividad diagnóstica relacionada con el tema.",
-    "B": "Entregar de inmediato una lista de definiciones para memorizar.",
-    "C": "Calificar el tema antes de haberlo trabajado en clase.",
-    "D": "Evitar que los estudiantes participen para no confundirlos."
+    "A": "Plantear una pregunta problematizadora, realizar una lluvia de ideas estructurada o proponer una actividad práctica inicial conectada con la temática.",
+    "B": "Suministrar una lista de definiciones conceptuales técnicas y exigir su memorización inmediata para asegurar la unificación conceptual del grupo.",
+    "C": "Diseñar un cuestionario de evaluación sumativa formal para calificar el desempeño inicial sobre el contenido antes de explicarlo en el aula.",
+    "D": "Iniciar directamente la exposición magistral del tema sin propiciar preguntas, a fin de evitar que surjan ideas erróneas o confusas en los alumnos."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "En el marco de las teorías pedagógicas de corte constructivista (como la de David Ausubel sobre el aprendizaje significativo), la fase de exploración de saberes previos consiste en activar las estructuras cognitivas existentes del estudiante para que sirvan de anclaje a los nuevos conceptos. Métodos dialógicos como preguntas desafiantes, lluvias de ideas o breves actividades de diagnóstico permiten que el estudiante exprese sus nociones del sentido común y el docente pueda caracterizarlas.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque inicia la clase con una acción transmisiva y memorística, sin explorar lo que los estudiantes ya saben o piensan.",
-    "C": "Es incorrecta porque calificar el tema antes de trabajarlo confunde la exploración diagnóstica con una evaluación sancionatoria.",
-    "D": "Es incorrecta porque evitar la participación impide conocer las ideas iniciales de los estudiantes y limita la construcción activa del aprendizaje."
+    "B": "Incorrecto. La memorización forzada de definiciones constituye una práctica de pedagogía transmisiva tradicional que no garantiza la asimilación significativa ni el diálogo con los esquemas de conocimiento previos del estudiante.",
+    "C": "Incorrecto. Las pruebas diagnósticas iniciales de saberes previos deben tener un carácter estrictamente formativo y regulador del proceso de enseñanza, no un fin sumativo ni calificatorio punitivo.",
+    "D": "Incorrecto. Evitar la expresión libre de las preconcepciones del alumnado impide identificar errores conceptuales arraigados, dificultando el conflicto cognitivo necesario para el cambio conceptual."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Fases enseñanza/CB15_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

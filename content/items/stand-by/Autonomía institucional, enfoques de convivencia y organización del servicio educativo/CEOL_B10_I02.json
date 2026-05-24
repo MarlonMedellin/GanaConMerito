@@ -1,44 +1,44 @@
 {
   "id_item": "CEOL_B10_I02",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Convivencia y organización institucional",
-  "tema": "Autonomía institucional, enfoques de convivencia y organización del servicio educativo",
-  "subtema": "Autonomía Institucional y Convivencia Escolar",
+  "area": "Legislación y política educativa",
+  "tema": "Convivencia escolar y autonomía",
+  "subtema": "Manual de Convivencia y mediación",
   "competencia": "Selecciona decisiones de gestión escolar acordes con autonomía institucional, convivencia y organización del servicio educativo.",
-  "nivel_cognitivo": "ANÁLISIS",
+  "nivel_cognitivo": "JUICIO",
   "dificultad_estimada": "MEDIA",
-  "claim": "Identifica la actuación institucional o pedagógica más consistente con el marco conceptual y normativo del caso planteado.",
-  "evidencia": "Selecciona una única alternativa técnicamente superior frente a opciones plausibles pero incorrectas o incompletas.",
-  "tarea": "Analizar el caso y elegir la mejor decisión pedagógica o institucional según el criterio evaluado.",
-  "contexto": "Una institución quiere crear aulas de mediación y círculos restaurativos para responder a conflictos frecuentes entre estudiantes. Algunos docentes preguntan si la Ley 1620 permite diseñar estrategias propias ajustadas al contexto socioeconómico y cultural del colegio.",
-  "enunciado": "Una institución quiere crear aulas de mediación y círculos restaurativos para responder a conflictos frecuentes entre estudiantes. Algunos docentes preguntan si la Ley 1620 permite diseñar estrategias propias ajustadas al contexto socioeconómico y cultural del colegio.\n\n¿Cuál explicación es más adecuada?",
+  "claim": "El evaluado valora los límites del ejercicio de la autonomía escolar al diseñar estrategias de convivencia locales.",
+  "evidencia": "Elige la respuesta que armoniza el diseño autónomo de estrategias de mediación con el respeto a la Constitución, la normatividad nacional y el debido proceso.",
+  "tarea": "Determinar la viabilidad y límites de la creación de aulas de mediación autónomas en un colegio.",
+  "contexto": "Con el fin de mitigar la alta conflictividad escolar, el Consejo Directivo de una institución propone la creación de 'aulas de mediación' y 'círculos restaurativos'. Un grupo de docentes manifiesta dudas sobre si la autonomía escolar les permite implementar este tipo de estrategias locales de resolución de conflictos o si deben acogerse exclusivamente a los protocolos nacionales.",
+  "enunciado": "De acuerdo con el ordenamiento normativo colombiano, ¿cuál es la orientación correcta respecto a la viabilidad de la propuesta?",
   "opciones": {
-    "A": "La institución puede crear cualquier estrategia, incluso si contradice derechos, debido proceso o la Ruta de Atención.",
-    "B": "La institución no puede diseñar ninguna estrategia propia y debe copiar exactamente modelos externos.",
-    "C": "La institución puede diseñar estrategias contextualizadas, siempre que estén articuladas al PEI, al Manual de Convivencia, a la Ruta de Atención, al enfoque de derechos y al debido proceso.",
-    "D": "La autonomía institucional significa que los conflictos no deben registrarse ni recibir seguimiento."
+    "A": "La institución puede implementar autónomamente cualquier estrategia de convivencia, primando las normas internas del Manual de Convivencia sobre la reglamentación nacional.",
+    "B": "La institución debe limitar su acción a la aplicación rígida de las directrices y manuales estandarizados por el Ministerio de Educación, careciendo de facultad para crear figuras locales.",
+    "C": "La institución tiene la facultad de diseñar y aplicar estrategias autónomas y contextualizadas de convivencia, a condición de que estén alineadas con el PEI y respeten la Constitución, las leyes y el debido proceso.",
+    "D": "La autonomía escolar autoriza la creación de aulas de mediación interna con la condición de omitir el reporte de los casos atendidos ante el Sistema de Alertas de la secretaría de educación."
   },
   "clave": "C",
-  "justificacion_clave": "C",
+  "justificacion_clave": "La opción C es la correcta porque, conforme al Artículo 77 de la Ley 115 de 1994 (autonomía escolar) y el Decreto 1075 de 2015, los establecimientos educativos gozan de autonomía para organizar y adecuar sus proyectos pedagógicos, siempre que respeten la jerarquía normativa nacional, el bloque de constitucionalidad y, específicamente en convivencia escolar, el debido proceso de los estudiantes.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque ninguna estrategia institucional puede vulnerar derechos o debido proceso.",
-    "B": "Es incorrecta porque la institución sí puede adaptar estrategias a su contexto.",
+    "A": "Sustenta una autonomía absoluta e ilegal que pretende situar el reglamento institucional por encima de las leyes de la República y la Constitución.",
+    "B": "Niega la autonomía del currículo y de la gestión escolar garantizada por la ley general de educación para responder a contextos específicos.",
     "C": "Clave correcta.",
-    "D": "Es incorrecta porque la autonomía no elimina registro ni seguimiento."
+    "D": "Incurre en omisión de funciones legales, dado que la mediación interna no exonera del deber legal de reportar alertas escolares según lo dispuesto por las secretarías de educación."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Contextos escolares generales y lenguaje técnico neutral; no exige experiencia localizada."
+    "observaciones": "Ítem basado en la legislación general colombiana, común para todas las regiones y sin sesgos contextuales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Estructura de caso breve y una sola tarea cognitiva por ítem."
+    "observaciones": "Enunciado con planteamiento claro del dilema y opciones que discriminan adecuadamente posturas sobre la autonomía."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I02.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

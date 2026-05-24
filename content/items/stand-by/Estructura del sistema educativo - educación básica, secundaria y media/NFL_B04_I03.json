@@ -1,44 +1,44 @@
 {
   "id_item": "NFL_B04_I03",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Política y sistema educativo",
+  "area": "Normatividad y estructura educativa",
   "tema": "Estructura del sistema educativo - educación básica, secundaria y media",
-  "subtema": "Niveles educativos y funciones docentes",
-  "competencia": "Distingue niveles y organización del sistema educativo para interpretar su aplicación en contextos institucionales.",
-  "nivel_cognitivo": "ANÁLISIS",
-  "dificultad_estimada": "ALTA",
-  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada para el caso planteado.",
-  "evidencia": "Selecciona una única alternativa defendible frente a distractores plausibles desde el constructo evaluado.",
-  "tarea": "Analizar el caso y elegir la opción más pertinente según criterios pedagógicos y normativos aplicables.",
-  "contexto": "Una institución propone asignar a un docente con título de licenciatura en educación básica para orientar asignaturas de décimo y undécimo. No se ha verificado su perfil específico, el área de formación ni una necesidad comprobada del servicio.",
-  "enunciado": "Una institución propone asignar a un docente con título de licenciatura en educación básica para orientar asignaturas de décimo y undécimo. No se ha verificado su perfil específico, el área de formación ni una necesidad comprobada del servicio.\n\n¿Por qué esta asignación no puede asumirse como automática?",
+  "subtema": "Asignación de Personal y Perfiles Docentes",
+  "competencia": "Aplica las normas de administración de personal docente y perfiles requeridos para el servicio educativo según los niveles del sistema.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Determina la viabilidad legal y técnica de asignaciones internas de personal docente según los niveles académicos del sistema educativo.",
+  "evidencia": "Selecciona la necesidad de correspondencia entre perfiles específicos disciplinares y las exigencias de la educación media frente a decisiones unilaterales de traslado generalista o limitaciones gremiales ficticias.",
+  "tarea": "Determinar la viabilidad técnica de trasladar provisionalmente a una docente licenciada en educación básica de primaria a química de educación media.",
+  "contexto": "Debido a la renuncia imprevista de un docente de química en los grados 10.° y 11.° (educación media), el rector de una institución educativa oficial decide reubicar provisionalmente a una docente de básica primaria licenciada en educación básica con énfasis en ciencias naturales, quien venía desempeñándose con éxito en el grado 4.°. La docente manifiesta preocupación al considerar que no cuenta con el perfil idóneo para orientar la asignatura en la educación media.",
+  "enunciado": "Debido a la renuncia imprevista de un docente de química en los grados 10.° y 11.° (educación media), el rector de una institución educativa oficial decide reubicar provisionalmente a una docente de básica primaria licenciada en educación básica con énfasis en ciencias naturales, quien venía desempeñándose con éxito en el grado 4.°. La docente manifiesta preocupación al considerar que no cuenta con el perfil idóneo para orientar la asignatura en la educación media. Analizando la situación desde las normas de administración de personal docente y la estructura del sistema educativo, la preocupación de la docente es fundamentada porque:",
   "opciones": {
-    "A": "Porque ningún licenciado puede enseñar en ninguna institución educativa.",
-    "B": "Porque décimo y undécimo hacen parte de la educación básica primaria.",
-    "C": "Porque décimo y undécimo corresponden a educación media, por lo que la asignación debe verificar perfil, área, competencia y, si aplica, necesidad comprobada del servicio.",
-    "D": "Porque la educación media no requiere docentes titulados."
+    "A": "La educación media posee objetivos específicos de profundización y especificidad disciplinar que exigen perfiles profesionales y títulos idóneos acordes a las asignaturas de ese nivel, lo cual no es garantizado de forma automática por el perfil generalista de básica primaria.",
+    "B": "El estatuto de carrera docente prohíbe de forma absoluta que un docente licenciado en ciencias naturales dicte asignaturas del área de química en cualquier nivel educativo.",
+    "C": "Los estudiantes de educación media de colegios oficiales deben ser instruidos únicamente por profesionales no licenciados con posgrado específico en la disciplina científica correspondiente.",
+    "D": "La reubicación interna de docentes dentro de una misma institución solo es permitida si se realiza entre grados del mismo nivel educativo y previa autorización del sindicato de maestros."
   },
-  "clave": "C",
-  "justificacion_clave": "C",
+  "clave": "A",
+  "justificacion_clave": "El nivel de educación media exige un mayor nivel de profundización disciplinar y especialidad. Un título habilitante para básica primaria no faculta de manera automática para ejercer la docencia en la media, donde se requiere demostrar perfil disciplinar específico de acuerdo con los manuales de funciones vigentes en Colombia.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque los licenciados sí pueden ejercer docencia según su perfil y habilitación.",
-    "B": "Es incorrecta porque décimo y undécimo no pertenecen a básica primaria.",
-    "C": "Clave correcta.",
-    "D": "Es incorrecta porque la educación media sí exige idoneidad docente."
+    "A": "Clave correcta.",
+    "B": "Prohibición estatutaria inexistente: asume falsamente que el estatuto docente impide que un licenciado en ciencias naturales dicte química, cuando en realidad la restricción se asocia a la correspondencia del nivel del cargo y el título.",
+    "C": "Exclusión de licenciados: postula incorrectamente que en educación media solo pueden enseñar profesionales no licenciados con posgrados, contrariando la validez y primacía de las licenciaturas en la carrera docente.",
+    "D": "Restricción procedimental/laboral: introduce un requisito burocrático falso de control sindical para los traslados y movimientos internos de personal que son competencia legal del rector."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estándar, sin sesgos culturales innecesarios ni barreras de comprensión relevantes."
+    "observaciones": "El ítem plantea una situación típica de la administración del recurso humano en los colegios oficiales de Colombia."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura."
+    "observaciones": "Redacción técnica precisa con términos institucionales claros."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Estructura del sistema educativo - educación básica, secundaria y media/NFL_B04_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

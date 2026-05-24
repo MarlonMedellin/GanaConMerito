@@ -1,44 +1,44 @@
 {
   "id_item": "CEOL_B10_I04",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Convivencia y organización institucional",
-  "tema": "Autonomía institucional, enfoques de convivencia y organización del servicio educativo",
-  "subtema": "Cobertura de Ausencias Docentes",
+  "area": "Legislación y política educativa",
+  "tema": "Organización del servicio educativo",
+  "subtema": "Jornada laboral y asignación académica",
   "competencia": "Selecciona decisiones de gestión escolar acordes con autonomía institucional, convivencia y organización del servicio educativo.",
-  "nivel_cognitivo": "ANÁLISIS",
-  "dificultad_estimada": "MEDIA-ALTA",
-  "claim": "Identifica la actuación institucional o pedagógica más consistente con el marco conceptual y normativo del caso planteado.",
-  "evidencia": "Selecciona una única alternativa técnicamente superior frente a opciones plausibles pero incorrectas o incompletas.",
-  "tarea": "Analizar el caso y elegir la mejor decisión pedagógica o institucional según el criterio evaluado.",
-  "contexto": "Un docente no asiste a la institución y varios grupos quedan sin clase. Para resolverlo, se propone obligar de manera informal y reiterada a otros docentes pares a cubrir esas horas, sin revisar su jornada, funciones, asignación ni plan institucional.",
-  "enunciado": "Un docente no asiste a la institución y varios grupos quedan sin clase. Para resolverlo, se propone obligar de manera informal y reiterada a otros docentes pares a cubrir esas horas, sin revisar su jornada, funciones, asignación ni plan institucional.\n\n¿Cuál actuación evita afectar el servicio educativo y previene cargas indebidas o posibles situaciones de acoso laboral?",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "DIFÍCIL",
+  "claim": "El evaluado selecciona medidas organizativas del servicio educativo que previenen la sobrecarga laboral y el acoso.",
+  "evidencia": "Elige la solución que formaliza la cobertura de clases a través de planes pedagógicos institucionales dentro de la asignación horaria legal.",
+  "tarea": "Identificar la actuación administrativa más adecuada ante la ausencia temporal de un docente, evitando afectar el servicio y respetando los límites laborales de los pares.",
+  "contexto": "Debido a una incapacidad médica de última hora, un docente de educación básica secundaria no asiste a la institución y sus grupos quedan sin atención académica. Con el propósito de no suspender el servicio, se propone obligar a los docentes de la misma área que tienen horas de planeación o de trabajo institucional a cubrir permanentemente los grupos sin clase de forma informal.",
+  "enunciado": "Conforme a la reglamentación sobre jornada laboral docente (Decreto 1075 of 2015) y la prevención del acoso laboral (Ley 1010 de 2006), ¿cuál es la actuación más adecuada por parte de la dirección del establecimiento?",
   "opciones": {
-    "A": "Trasladar automáticamente todas las horas al docente que esté más cerca, sin importar su jornada o funciones.",
-    "B": "Dejar a los estudiantes sin ninguna atención porque la ausencia de un docente no exige gestión institucional.",
-    "C": "Que rectoría o coordinación organicen la contingencia mediante un plan institucional, respetando funciones, jornada, asignación y medidas pedagógicas disponibles.",
-    "D": "Asignar siempre la cobertura al docente orientador, aunque la actividad no corresponda a su función."
+    "A": "Asignar de forma inmediata y obligatoria la cobertura de clase a cualquier docente que se encuentre libre en ese bloque horario, registrándolo como cumplimiento de su jornada de permanencia.",
+    "B": "Suspender la jornada escolar de los grupos afectados y autorizar su salida de la institución, argumentando la imposibilidad física de brindar el servicio sin el docente titular.",
+    "C": "Activar un plan de contingencia pedagógica concertado institucionalmente que organice actividades de autoestudio o rotación, respetando la permanencia y la asignación académica legal de los docentes pares.",
+    "D": "Disponer que el docente orientador asuma permanentemente la atención de los grupos sin clase, dado que su jornada de oyente u ocho (8) horas de permanencia no incluye dictar asignaturas académicas."
   },
   "clave": "C",
-  "justificacion_clave": "C",
+  "justificacion_clave": "La opción C es correcta porque armoniza el deber de garantizar la continuidad del servicio educativo con el respeto de los límites laborales de los docentes: la asignación académica y la jornada laboral están reguladas legalmente en el Decreto 1075 de 2015, por lo que las contingencias deben resolverse mediante planes pedagógicos estructurados y no mediante imposiciones informales de sobrecarga laboral.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque impone una solución informal y puede generar sobrecarga indebida.",
-    "B": "Es incorrecta porque la institución debe garantizar organización del servicio.",
+    "A": "Vulnera la normativa de la asignación académica al imponer cargas de docencia directa sobre horas destinadas por ley al planeamiento curricular y evaluación.",
+    "B": "Afecta el derecho fundamental a la educación de los estudiantes y desconoce la responsabilidad del directivo de gestionar administrativamente la prestación continua del servicio.",
     "C": "Clave correcta.",
-    "D": "Es incorrecta porque el orientador no debe convertirse automáticamente en reemplazo de docentes ausentes."
+    "D": "Desnaturaliza el rol del docente orientador escolar, cuyas funciones legales están circunscritas al acompañamiento socioafectivo y familiar, no a la sustitución o reemplazo sistemático de clases académicas."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Contextos escolares generales y lenguaje técnico neutral; no exige experiencia localizada."
+    "observaciones": "El planteamiento discute un caso común de administración escolar sin sesgos demográficos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Estructura de caso breve y una sola tarea cognitiva por ítem."
+    "observaciones": "Caso administrativo con terminología laboral pública precisa y oraciones estructuradas."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I04.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

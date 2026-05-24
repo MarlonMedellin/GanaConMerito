@@ -11,20 +11,20 @@
   "evidencia": "Selecciona la actuación de gestión que corrige cruces, asignaciones y uso de espacios.",
   "tarea": "Elegir la respuesta institucional técnicamente adecuada ante fallas de horario.",
   "contexto": "La institución presenta cruces de grupos, docentes sin asignación y conflictos de uso de aulas.",
-  "enunciado": "¿Qué acción corresponde principalmente a la gestión directiva o administrativa?",
+  "enunciado": "Ante los cruces de horarios de clases, docentes subutilizados y conflictos recurrentes por el uso de aulas en la institución, ¿cuál acción del directivo docente evidencia una gestión administrativa y pedagógica efectiva?",
   "opciones": {
-    "A": "Ajustar el horario institucional considerando plan de estudios, disponibilidad docente y uso de espacios.",
-    "B": "Permitir que cada estudiante decida a qué clase asistir cuando haya cruces.",
-    "C": "Suspender temporalmente áreas con conflictos de asignación.",
-    "D": "Dejar que cada docente establezca su horario sin articulación institucional."
+    "A": "Consolidar el diagnóstico de carga académica, concertar la asignación de espacios físicos con base en el plan de estudios y rediseñar el horario general bajo criterios de equidad y optimización de recursos.",
+    "B": "Delegar la resolución de los cruces de horario en los docentes del mismo grado para que acuerden informalmente la ocupación de salones semana a semana.",
+    "C": "Suspender temporalmente del plan de estudios las asignaturas que presenten conflictos de espacio hasta que se disponga de nueva infraestructura física.",
+    "D": "Autorizar a los docentes a dictar sus clases en modalidad de trabajo autónomo fuera del aula, eliminando la necesidad de coordinar un horario físico general."
   },
   "clave": "A",
-  "justificacion_clave": "Resuelve el problema desde la responsabilidad de planeación institucional y garantiza continuidad del servicio.",
+  "justificacion_clave": "La organización de la jornada y horarios escolares es responsabilidad del rector o directivo. Debe liderar la asignación eficiente de la planta docente y recursos físicos según las áreas obligatorias, garantizando la continuidad del servicio educativo y el clima organizacional.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Traslada responsabilidad institucional al estudiante.",
-    "C": "Respuesta punitiva que afecta derecho educativo.",
-    "D": "Desarticula la gestión y agrava inconsistencias."
+    "B": "La delegación informal sin criterios institucionales claros suele agravar los conflictos por el espacio y diluye la responsabilidad directiva.",
+    "C": "Afecta de forma directa el derecho a recibir la educación en las áreas obligatorias del plan de estudios establecidas por la Ley 115.",
+    "D": "Constituye una decisión evasiva que no soluciona el problema de fondo del horario e incumple la presencialidad del servicio educativo."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

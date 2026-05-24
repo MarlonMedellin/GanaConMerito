@@ -1,45 +1,45 @@
 {
   "id_item": "EIP_B05_I04",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Gestión educativa",
-  "tema": "Motricidad, aprestamiento y ubicación espacio-temporal",
-  "subtema": "Aplicación pedagógica",
-  "competencia": "Juicio pedagógico",
-  "nivel_cognitivo": "APLICACION",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y didáctica infantil",
+  "tema": "Desarrollo psicomotor en preescolar",
+  "subtema": "Relación familia-escuela en preescolar",
+  "competencia": "Interpretar el propósito pedagógico de experiencias motrices y espacio-temporales en preescolar.",
+  "nivel_cognitivo": "JUICIO",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
+  "claim": "El evaluado selecciona la justificación neurobiológica del desarrollo motriz en preescolar frente al reclamo de padres por falta de cuadernos.",
+  "evidencia": "Elige la respuesta que argumenta que la motricidad fina, gruesa y control postural son requisitos previos esenciales del desarrollo neurobiológico para escribir.",
+  "tarea": "Seleccionar la respuesta pedagógica por parte de la docente más adecuada para fundamentar su práctica.",
   "contexto": "En preescolar, la docente combina juegos de correr, saltar, equilibrarse, rasgar papel, ensartar cuentas, moldear plastilina y realizar trazos amplios. Un padre considera que eso no sirve porque no ve cuadernos llenos.",
-  "enunciado": "En preescolar, la docente combina juegos de correr, saltar, equilibrarse, rasgar papel, ensartar cuentas, moldear plastilina y realizar trazos amplios. Un padre considera que eso no sirve porque no ve cuadernos llenos.\n\n¿Cuál respuesta pedagógica es más adecuada?",
+  "enunciado": "¿Cuál respuesta pedagógica por parte de la docente es más adecuada para fundamentar su práctica?",
   "opciones": {
-    "A": "Esas actividades deben eliminarse porque no son académicas.",
-    "B": "La motricidad solo importa en educación física de secundaria.",
-    "C": "Esas experiencias fortalecen motricidad fina y gruesa, coordinación, autonomía y bases necesarias para aprendizajes posteriores.",
-    "D": "El niño solo aprende si permanece sentado copiando letras."
+    "A": "Suspender los juegos de movimiento para dedicar el tiempo escolar al llenado de cartillas de caligrafía y cuadernos cuadriculados, respondiendo a la expectativa familiar.",
+    "B": "Explicar al padre que el desarrollo de la motricidad fina y gruesa, la coordinación viso-manual y el control postural son requisitos previos esenciales del desarrollo neurobiológico para la escritura y autonomía del niño.",
+    "C": "Sugerir al padre que el trabajo motriz es una actividad complementaria o recreativa de la jornada, que no interfiere con los verdaderos objetivos académicos de la transición.",
+    "D": "Remitir al estudiante a valoración de terapia ocupacional externa, asumiendo que los juegos motrices en el aula son para niños que presentan retraso del desarrollo."
   },
-  "clave": "C",
-  "justificacion_clave": "C",
+  "clave": "B",
+  "justificacion_clave": "El docente de preescolar debe fundamentar pedagógicamente su quehacer frente a la familia, explicando que la motricidad (fina, gruesa y control postural) no es un relleno o distracción lúdica, sino una base neurobiológica obligatoria sin la cual el proceso de pinza fina y escritura no se consolida.",
   "distractores_funcion": {
-    "A": "Desconoce el valor pedagógico de la motricidad.",
-    "B": "Reduce la motricidad a un área posterior.",
-    "C": "Clave correcta.",
-    "D": "Impone una práctica sedentaria y mecanicista."
+    "A": "Muestra complacencia y renuncia a los criterios profesionales y pedagógicos del preescolar para calmar una exigencia externa incorrecta.",
+    "B": "Clave correcta.",
+    "C": "Subvalora las actividades corporales al presentarlas como simples pasatiempos recreativos no formativos.",
+    "D": "Incurre en patologización del desarrollo infantil normal de los niños del aula y delega la responsabilidad docente a profesionales externos."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem evita desvalorizar las experiencias corporales propias de la infancia."
+    "observaciones": "Aborda una situación de interacción docente-familia habitual bajo criterios de asertividad pedagógica."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Redacción clara, sin tecnicismos excesivamente complejos o excluyentes."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Motricidad, aprestamiento y ubicación espacio-temporal/EIP_B05_I04.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

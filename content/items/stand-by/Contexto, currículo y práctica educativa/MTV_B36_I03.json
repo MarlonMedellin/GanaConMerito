@@ -7,24 +7,24 @@
   "competencia": "Analiza decisiones curriculares y didácticas a partir del contexto institucional y del propósito formativo.",
   "nivel_cognitivo": "ANÁLISIS",
   "dificultad_estimada": "ALTA",
-  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada en el caso planteado.",
-  "evidencia": "Selecciona una alternativa única, consistente con el criterio evaluado y superior frente a distractores plausibles.",
-  "tarea": "Analizar la situación y elegir la mejor decisión según el enfoque del ítem.",
+  "claim": "Identifica la relación de articulación entre saberes académicos y saberes comunitarios tradicionales en el diseño de la práctica educativa.",
+  "evidencia": "Selecciona el principio pedagógico que orienta la integración de saberes campesinos locales con el conocimiento escolar.",
+  "tarea": "Identificar la opción que define de forma adecuada el diálogo de saberes en un contexto rural.",
   "contexto": "En una comunidad campesina, el docente articula conocimientos científicos sobre suelo con saberes locales de siembra, clima y cuidado del agua.",
   "enunciado": "En una comunidad campesina, el docente articula conocimientos científicos sobre suelo con saberes locales de siembra, clima y cuidado del agua.\n\n¿Qué enfoque pedagógico evidencia?",
   "opciones": {
-    "A": "Diálogo entre saber académico y saber comunitario.",
-    "B": "Negación del contexto.",
-    "C": "Rechazo del conocimiento científico.",
-    "D": "Homogeneización urbana."
+    "A": "Diálogo e integración de saberes tradicionales de la comunidad campesina y conocimientos académicos escolares.",
+    "B": "Etnocentrismo pedagógico que jerarquiza el saber formal sobre el saber informal comunitario.",
+    "C": "Relativismo epistemológico en el que se validan acríticamente saberes locales por encima del método científico.",
+    "D": "Asimilación cultural que promueve la adaptación obligatoria de la comunidad rural a la cultura urbana."
   },
   "clave": "A",
-  "justificacion_clave": "El docente reconoce saberes locales y los pone en diálogo con conocimientos escolares.",
+  "justificacion_clave": "El diálogo de saberes permite un encuentro simétrico entre los conocimientos tradicionales empíricos de la comunidad campesina y los saberes escolares, enriqueciendo la comprensión de ambos.",
   "distractores_funcion": {
-    "A": "Clave correcta.",
-    "B": "El contexto es central.",
-    "C": "El conocimiento científico no se elimina.",
-    "D": "No se impone una mirada urbana homogénea."
+    "A": "Clave correcta. Establece una relación dialógica y respetuosa entre sistemas de conocimiento.",
+    "B": "Sesgo pedagógico. Supone la superioridad absoluta del conocimiento académico formal, descalificando el saber local.",
+    "C": "Error metodológico. Extrema la valoración local invalidando el método científico formal, lo que rompe el equilibrio epistemológico.",
+    "D": "Desviación cultural. Propone la homogenización cultural, ignorando la identidad rural y los derechos de la comunidad campesina."
   },
   "fairness": {
     "sesgo_detectado": false,

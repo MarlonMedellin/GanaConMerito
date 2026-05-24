@@ -1,45 +1,45 @@
 {
   "id_item": "IDD_B11_I03",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Conflicto cognitivo y aprendizaje",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y currículo",
   "tema": "Error, conflicto cognitivo y reestructuración de esquemas",
-  "subtema": "Corrección inmediata del error sin generar reflexión ni reconstrucción conceptual.",
-  "competencia": "Diseño de mediaciones para cambio conceptual",
+  "subtema": "Corrección inmediata del error sin generar reflexión ni reconstrucción conceptual",
+  "competencia": "Diseñar situaciones de conflicto cognitivo formativo para suscitar la reestructuración conceptual de teorías intuitivas.",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende que el conflicto cognitivo no consiste en decir simplemente la respuesta correcta, sino en provocar una tensión productiva entre la idea previa y una nueva evidencia.",
-  "evidencia": "Selecciona una actuación que guía al estudiante a revisar su explicación inicial.",
-  "tarea": "Diferenciar corrección transmisiva de mediación constructivista.",
-  "contexto": "Un estudiante sostiene una explicación incorrecta sobre un fenómeno. El docente puede decirle simplemente la respuesta correcta o puede generar una situación para que el estudiante compare su idea con nueva evidencia.",
-  "enunciado": "Un estudiante sostiene una explicación incorrecta sobre un fenómeno. El docente puede decirle simplemente la respuesta correcta o puede generar una situación para que el estudiante compare su idea con nueva evidencia.\n\n¿Cuál actuación corresponde mejor a un conflicto cognitivo formativo?",
+  "claim": "El evaluado diferencia el diseño de situaciones de conflicto cognitivo formativo de las prácticas tradicionales de corrección mecánica.",
+  "evidencia": "Selecciona la mediación que genera disonancia cognitiva y promueve la búsqueda activa de nuevas explicaciones basadas en evidencias.",
+  "tarea": "Proponer el diseño de una situación de conflicto cognitivo para modificar una concepción intuitiva sobre flotación de los cuerpos.",
+  "contexto": "Durante una actividad práctica sobre flotabilidad, un estudiante de primaria afirma con seguridad: \"Todos los objetos de madera flotan en el agua y todos los objetos de metal se hunden en el agua\". El docente tiene la opción de corregirlo inmediatamente o propiciar un conflicto cognitivo.",
+  "enunciado": "Para suscitar una reestructuración de este esquema conceptual mediante un conflicto cognitivo formativo, el docente debe presentar al estudiante:",
   "opciones": {
-    "A": "Decirle que está equivocado y pedirle copiar diez veces la respuesta correcta.",
-    "B": "Aceptar su explicación aunque contradiga la evidencia, para no incomodarlo.",
-    "C": "Cambiar de tema para evitar confusión.",
-    "D": "Plantear preguntas, mostrar evidencia o contraejemplos y guiar al estudiante para que revise y reorganice su explicación inicial."
+    "A": "Un trozo de madera muy pesado que se hunda o un trozo de papel metálico muy ligero que flote, solicitándole que explique cómo su regla inicial abarca estos casos observables.",
+    "B": "La lectura en voz alta del principio de Arquímedes y pedirle que responda una prueba escrita con las fórmulas físicas correspondientes.",
+    "C": "Un listado de objetos clasificados previamente para que el estudiante copie en su cuaderno el comportamiento de flotación de cada uno de ellos.",
+    "D": "Una nota disciplinaria indicándole que su afirmación es errónea y que debe repasar la clase anterior antes del examen final del periodo."
   },
-  "clave": "D",
-  "justificacion_clave": "D",
+  "clave": "A",
+  "justificacion_clave": "El conflicto cognitivo se activa cuando la estructura conceptual del sujeto choca con una realidad empírica contradictoria (evidencia en contra), lo cual lo desestabiliza y lo obliga a reformular su teoría explicativa.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque corrige de forma mecánica y punitiva.",
-    "B": "Es incorrecta porque no promueve cambio conceptual.",
-    "C": "Es incorrecta porque desperdicia la oportunidad de aprendizaje.",
-    "D": "Clave correcta."
+    "A": "Clave correcta.",
+    "B": "Presenta formalismo abstracto inapropiado para primaria, sustituyendo la experiencia cognitiva directa por conceptualización memorística precoz.",
+    "C": "Promueve el aprendizaje receptivo pasivo que no confronta la estructura conceptual intuitiva previa del estudiante.",
+    "D": "Respuesta punitiva que penaliza el error cognitivo confundiéndolo con falta de estudio o indisciplina."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem evita la humillación del estudiante y presenta el conflicto cognitivo como mediación respetuosa."
+    "observaciones": "Contexto general de laboratorio escolar elemental."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Redacción estructurada con opciones de longitud semejante."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Error, conflicto cognitivo y reestructuración de esquemas/IDD_B11_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

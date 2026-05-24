@@ -11,20 +11,20 @@
   "evidencia": "Selecciona la explicación que identifica segregación cuando se asigna tarea paralela desconectada.",
   "tarea": "Analizar una práctica de aula y determinar si promueve inclusión o exclusión pedagógica.",
   "contexto": "Estudiante con discapacidad recibe actividad de colorear sin relación con el tema central del grupo.",
-  "enunciado": "¿Qué diferencia describe mejor inclusión efectiva frente a segregación en este caso?",
+  "enunciado": "Teniendo en cuenta las orientaciones sobre educación inclusiva, ¿cuál de las siguientes afirmaciones describe mejor la diferencia entre inclusión efectiva y segregación en este caso?",
   "opciones": {
-    "A": "La inclusión implica participar del mismo propósito con apoyos; la segregación asigna tareas paralelas sin relación curricular.",
-    "B": "La inclusión consiste en asignar siempre actividades más fáciles y separadas.",
-    "C": "Solo hay segregación cuando el estudiante está fuera del aula.",
-    "D": "La inclusión exige que todos hagan exactamente lo mismo sin ajustes."
+    "A": "La inclusión requiere que el estudiante participe en las actividades del grupo con los ajustes razonables (PIAR) necesarios para acceder al mismo propósito de aprendizaje; la segregación le asigna actividades sin relación curricular que lo mantienen ocupado pero aislado cognitivamente.",
+    "B": "La inclusión se define por la presencia física del estudiante dentro del aula ordinaria, independientemente de que la tarea asignada coincida o no con la del resto del grupo.",
+    "C": "La segregación solo se configura cuando el estudiante es retirado de manera definitiva del establecimiento educativo para ser matriculado en una institución de educación especial.",
+    "D": "La inclusión efectiva exige eliminar cualquier tipo de diferenciación metodológica para evaluar a todos los estudiantes bajo los mismos criterios de desempeño estandarizados."
   },
   "clave": "A",
-  "justificacion_clave": "Es la única opción que articula propósito común y apoyos diferenciados sin desconexión curricular.",
+  "justificacion_clave": "De acuerdo con el Decreto 1421 de 2017, la educación inclusiva exige el diseño de ajustes razonables a través del PIAR para que el estudiante acceda al aprendizaje y participe en igualdad de condiciones en los propósitos del grupo. Asignar actividades inconexas (como pintar mientras otros analizan conceptos) dentro del mismo salón constituye segregación oculta (dentro del aula).",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Normaliza segregación como inclusión.",
-    "C": "Niega exclusión dentro del aula.",
-    "D": "Confunde inclusión con homogeneización rígida."
+    "B": "Error común de reducir la inclusión a la mera 'integración física' o presencia del alumno, sin pertinencia pedagógica.",
+    "C": "Confunde segregación con exclusión del sistema, desconociendo que dentro del aula común también se pueden generar dinámicas segregadoras.",
+    "D": "Propone un enfoque de homogeneidad rígida que ignora las adaptaciones curriculares y vulnera el derecho a la equidad."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Inclusión práctica vs. segregación en aula/IDD_B06_I01.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

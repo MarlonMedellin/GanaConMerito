@@ -11,20 +11,20 @@
   "evidencia": "Selecciona la opción que mejor explica la decisión pedagógica coherente con el aprendizaje significativo en el caso planteado.",
   "tarea": "Inferir, a partir del caso, la condición didáctica que permite aprendizaje significativo según Ausubel.",
   "contexto": "Antes de iniciar una unidad compleja sobre ecosistemas, una docente presenta un mapa general con conceptos clave como energía, productores, consumidores, descomponedores y equilibrio. Luego desarrolla cada tema en profundidad.",
-  "enunciado": "Antes de iniciar una unidad compleja sobre ecosistemas, una docente presenta un mapa general con conceptos clave como energía, productores, consumidores, descomponedores y equilibrio. Luego desarrolla cada tema en profundidad.\n\n¿Qué recurso está usando para favorecer aprendizaje significativo?",
+  "enunciado": "De acuerdo con los principios didácticos de Ausubel, ¿qué recurso de mediación está utilizando la docente al presentar esta estructura conceptual inicial?",
   "opciones": {
-    "A": "Un organizador previo.",
-    "B": "Una sanción correctiva.",
-    "C": "Una evaluación finalista.",
-    "D": "Una tarea sin propósito."
+    "A": "Un organizador previo de carácter expositivo para proporcionar un marco conceptual inclusor general.",
+    "B": "Un andamiaje procedimental para guiar el aprendizaje autónomo por descubrimiento de los ecosistemas.",
+    "C": "Una técnica de reconciliación integradora para resolver inconsistencias entre ideas previas de los estudiantes.",
+    "D": "Un organizador previo de tipo comparativo para contrastar la información nueva con saberes alternativos erróneos."
   },
   "clave": "A",
-  "justificacion_clave": "El organizador previo ofrece una estructura inicial para que el estudiante relacione los nuevos contenidos con un marco comprensible.",
+  "justificacion_clave": "La docente está utilizando un organizador previo expositivo, el cual sirve de puente entre lo que el estudiante ya sabe y lo que necesita aprender, ofreciendo un marco amplio y organizado de inclusores conceptuales antes de detallar la información.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "No se trata de disciplina.",
-    "C": "No se está calificando al final.",
-    "D": "La actividad tiene finalidad cognitiva clara."
+    "B": "Utiliza terminología vygotskiana/bruneriana de andamiaje, ajena al modelo específico de organizadores previos de Ausubel.",
+    "C": "Confunde la reconciliación integradora (que ocurre después del análisis conceptual) con la introducción de un organizador conceptual inicial.",
+    "D": "Erróneamente etiqueta el mapa como organizador comparativo, el cual se usa para contrastar conceptos ya conocidos, no para introducir un tema totalmente nuevo."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I04.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

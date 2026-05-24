@@ -1,6 +1,6 @@
 {
   "id_item": "MTV_B18_I04",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "Tipos de currículo",
   "subtema": "Aplicación pedagógica",
@@ -14,17 +14,17 @@
   "enunciado": "Una planeación contiene muchos temas escritos en el papel, pero por falta de tiempo, pedagogía o priorización nunca se enseñan realmente en el aula.\n\n¿A qué tipo de currículo corresponde esta omisión?",
   "opciones": {
     "A": "Currículo operacional.",
-    "B": "Currículo oculto.",
+    "B": "Currículo extracurricular.",
     "C": "Currículo nulo.",
-    "D": "Currículo oficial plenamente ejecutado."
+    "D": "Currículo oficial."
   },
   "clave": "C",
-  "justificacion_clave": "C",
+  "justificacion_clave": "El currículo nulo abarca los contenidos, temas o valores que figuran en las planeaciones oficiales pero que el docente decide no enseñar u omitir en la práctica real por razones de tiempo, falta de interés o desactualización, privando al estudiante del acceso a dicha formación.",
   "distractores_funcion": {
-    "A": "El operacional es lo que sí se materializa en el aula.",
-    "B": "El oculto se refiere a aprendizajes implícitos.",
+    "A": "Incorrecto. El currículo operacional es lo que efectivamente sí se enseña en la práctica cotidiana.",
+    "B": "Incorrecto. El currículo extracurricular son las experiencias formativas voluntarias externas a las clases habituales.",
     "C": "Clave correcta.",
-    "D": "La situación muestra que lo escrito no se ejecuta plenamente."
+    "D": "Incorrecto. El currículo oficial es la planeación de referencia escrita, y en este caso se está evaluando la omisión de sus temas en la práctica."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Tipos de currículo/MTV_B18_I04.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

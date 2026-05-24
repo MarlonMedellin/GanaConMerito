@@ -1,6 +1,6 @@
 {
   "id_item": "CB08_I02",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión Directiva",
   "tema": "Referentes PEI",
   "subtema": "Fundamentos obligatorios del PEI",
@@ -13,18 +13,18 @@
   "contexto": "Al revisar el PEI, se encuentra que la misión habla de inclusión y participación, pero las estrategias pedagógicas y de convivencia no mencionan acciones relacionadas con estos principios.",
   "enunciado": "Al revisar el PEI, se encuentra que la misión habla de inclusión y participación, pero las estrategias pedagógicas y de convivencia no mencionan acciones relacionadas con estos principios.\n\n¿Cuál es el problema principal?",
   "opciones": {
-    "A": "La misión institucional no debería incluir principios, porque estos solo pertenecen al manual de convivencia.",
-    "B": "Existe falta de coherencia entre los referentes declarados y las estrategias que deberían concretarlos.",
-    "C": "Las estrategias pedagógicas deben redactarse sin relación con la misión para conservar autonomía docente.",
-    "D": "La inclusión y la participación son temas externos al PEI y deben tratarse solo en proyectos transversales."
+    "A": "La misión de la institución no debe contemplar enunciados axiológicos o pedagógicos, ya que estos corresponden de forma exclusiva al manual de convivencia.",
+    "B": "Se evidencia una falta de coherencia interna y articulación curricular entre el horizonte institucional (declaración de principios) y los componentes pedagógico y de convivencia del PEI.",
+    "C": "Las prácticas de aula y directrices didácticas de las áreas deben formularse con independencia del PEI para salvaguardar la libertad de cátedra del educador.",
+    "D": "La inclusión y la participación ciudadana son temáticas complementarias ajenas a la misión institucional y deben abordarse únicamente en proyectos transversales o campañas de fin de año."
   },
   "clave": "B",
-  "justificacion_clave": "B",
+  "justificacion_clave": "El Proyecto Educativo Institucional (PEI) exige coherencia y articulación orgánica entre todos sus componentes (Directivo, Pedagógico/Académico, Administrativo y Comunitario), conforme al artículo 73 de la Ley 115 de 1994 y el artículo 2.4.1.1.5 del DUR 1075 de 2015. Si la misión o la visión (horizonte institucional) declaran la inclusión y la participación como pilares, las mallas curriculares, los planes de área, los criterios de evaluación y el manual de convivencia deben operativizar esos principios con acciones concretas; de lo contrario, el PEI pierde validez y se reduce a un documento formal sin impacto real en la cultura escolar.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque la misión institucional sí puede expresar principios orientadores como inclusión, participación, convivencia o formación integral.",
+    "A": "Incorrecto. La misión y visión institucional de un establecimiento son precisamente los referentes misionales y de horizonte axiológico donde deben declararse los principios y metas formativas principales de la institución.",
     "B": "Clave correcta.",
-    "C": "Es incorrecta porque la autonomía docente no implica desconexión frente al horizonte institucional definido en el PEI.",
-    "D": "Es incorrecta porque inclusión y participación pueden ser principios transversales del PEI y no asuntos externos o secundarios."
+    "C": "Incorrecto. La libertad de cátedra y la autonomía docente deben enmarcarse en el proyecto educativo consensuado y coherente de la institución; las mallas curriculares deben alinearse con la misión del PEI.",
+    "D": "Incorrecto. La inclusión (Decreto 1421 de 2017) y la participación democrática estudiantil son elementos estructurales de la educación y componentes obligatorios del PEI, no meros añadidos opcionales o transitorios."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Referentes PEI/CB08_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

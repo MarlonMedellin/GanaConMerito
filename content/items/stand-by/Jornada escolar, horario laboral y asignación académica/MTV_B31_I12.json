@@ -1,45 +1,45 @@
 {
   "id_item": "MTV_B31_I12",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "Jornada escolar, horario laboral y asignación académica",
   "subtema": "Aplicación pedagógica",
   "competencia": "Juicio pedagógico",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "",
-  "enunciado": "¿Cuál opción sintetiza correctamente los tres conceptos?",
+  "claim": "El evaluado sintetiza y diferencia los conceptos de jornada escolar, jornada laboral docente y asignación académica.",
+  "evidencia": "Define y relaciona los tres conceptos diferenciándolos de manera clara en base a la normatividad educativa.",
+  "tarea": "Asociar la definición correcta a cada uno de los tres conceptos clave de la organización de tiempos.",
+  "contexto": "Un equipo de docentes requiere clasificar adecuadamente las actividades escolares y docentes en el manual de funciones de la institución. Para ello, deben definir y diferenciar de manera precisa: jornada escolar, jornada laboral docente y asignación académica.",
+  "enunciado": "¿Cuál de las siguientes opciones define y sintetiza correctamente estos tres conceptos?",
   "opciones": {
-    "A": "Jornada escolar: tiempo de estudiantes en el servicio educativo; jornada u horario laboral docente: tiempo de cumplimiento de funciones; asignación académica: horas de clase directa asignadas al docente.",
-    "B": "Jornada escolar, jornada laboral y asignación académica son sinónimos exactos.",
-    "C": "Asignación académica significa vacaciones.",
-    "D": "Horario laboral solo existe para familias."
+    "A": "Jornada escolar: tiempo de los estudiantes en la institución; Jornada laboral: tiempo total de cumplimiento de funciones docentes (8 horas diarias); Asignación académica: horas de clase directa asignadas al docente.",
+    "B": "Jornada escolar: horario de permanencia del docente; Jornada laboral: tiempo de recreo estudiantil; Asignación académica: semanas de desarrollo institucional.",
+    "C": "Jornada escolar: horas lectivas del docente; Jornada laboral: calendario escolar anual; Asignación académica: horas de atención a padres.",
+    "D": "Jornada escolar: tiempo total de vacaciones estudiantiles; Jornada laboral: período de prueba del docente; Asignación académica: horas de reuniones administrativas."
   },
   "clave": "A",
-  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "justificacion_clave": "Esta opción resume fielmente el marco legal del Decreto 1075 de 2015, asociando la jornada escolar al tiempo del estudiante, la jornada laboral al tiempo del educador y la asignación académica al tiempo específico de enseñanza directa en el aula.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Distractor funcional.",
-    "C": "Distractor funcional.",
-    "D": "Distractor funcional."
+    "B": "Intercambia erróneamente las definiciones de permanencia docente y recreo escolar, además de asociar incorrectamente la asignación académica al desarrollo institucional.",
+    "C": "Confunde la jornada escolar con las horas lectivas del docente, la jornada laboral con el calendario anual y la asignación académica con la atención a familias.",
+    "D": "Asocia de forma absurda la jornada escolar al período de vacaciones, la jornada laboral al período de prueba y la asignación académica a las reuniones de la administración."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Opciones paralelas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I12.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

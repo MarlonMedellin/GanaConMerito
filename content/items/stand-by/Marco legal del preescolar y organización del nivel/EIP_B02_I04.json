@@ -1,30 +1,30 @@
 {
   "id_item": "EIP_B02_I04",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Preescolar dentro del sistema educativo",
   "tema": "Marco legal del preescolar y organización del nivel",
   "subtema": "Reducir el preescolar a cuidado asistencial sin finalidad pedagógica, curricular y formativa.",
   "competencia": "Comprensión del carácter educativo del preescolar",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende que la educación preescolar tiene sentido curricular y pedagógico propio dentro del sistema educativo.",
-  "evidencia": "Selecciona la opción que reconoce el carácter educativo y formal del preescolar.",
-  "tarea": "Interpretar la naturaleza del nivel preescolar dentro del sistema educativo.",
+  "claim": "Comprende la naturaleza y el sentido pedagógico de la educación preescolar dentro del sistema educativo formal.",
+  "evidencia": "Elige la alternativa que sustenta la finalidad educativa de preescolar frente al enfoque puramente asistencial o de cuidado.",
+  "tarea": "Analizar y refutar el reclamo familiar que reduce el preescolar a una guardería de cuidado básico.",
   "contexto": "Una familia afirma que el preescolar es solo un lugar para cuidar niños mientras los padres trabajan, y que no requiere planeación pedagógica ni currículo. La institución aclara su lugar dentro del sistema educativo.",
   "enunciado": "Una familia afirma que el preescolar es solo un lugar para cuidar niños mientras los padres trabajan, y que no requiere planeación pedagógica ni currículo. La institución aclara su lugar dentro del sistema educativo.\n\n¿Cuál explicación es más adecuada?",
   "opciones": {
-    "A": "El preescolar es únicamente guardería y no tiene finalidad educativa.",
-    "B": "El preescolar debe funcionar como bachillerato adelantado.",
-    "C": "El preescolar no pertenece al sistema educativo formal.",
+    "A": "Constituye un servicio educativo no formal enfocado en el cuidado y recreación de la primera infancia, sin vinculación curricular con los estándares nacionales.",
+    "B": "Funciona como un ciclo remedial de aprestamiento académico cuyo objetivo es anticipar el aprendizaje de la lectura, escritura y cálculo elemental de la educación básica.",
+    "C": "Representa un servicio asistencial obligatorio cogestionado con el sector salud para garantizar la nutrición y el cuidado básico infantil en edades tempranas.",
     "D": "El preescolar hace parte de la educación formal y busca el desarrollo integral mediante experiencias pedagógicas, lúdicas, participativas y acordes con la edad."
   },
   "clave": "D",
-  "justificacion_clave": "D",
+  "justificacion_clave": "La educación preescolar es el primer nivel de la educación formal en Colombia (Ley 115, Art. 15), y tiene propósitos curriculares propios de desarrollo psicomotriz, socioafectivo y cognitivo, superando la mirada meramente asistencial.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque el preescolar no es solo cuidado.",
-    "B": "Es incorrecta porque no debe funcionar como bachillerato ni primaria adelantada.",
-    "C": "Es incorrecta porque el preescolar sí hace parte del sistema educativo formal.",
-    "D": "Clave correcta."
+    "A": "Error de clasificación formal. Califica erróneamente el preescolar como educación no formal, desconociendo su integración en el sistema educativo formal.",
+    "B": "Error curricular de primarización. Concibe el preescolar como un espacio de entrenamiento instrumental mecánico para la primaria, desvirtuando su sentido propio de desarrollo integral.",
+    "C": "Reducción asistencial. Reduce el nivel a asistencia en salud y alimentación, desconociendo la autonomía pedagógica de la educación inicial.",
+    "D": "Clave correcta. Define el carácter formal y el sentido de desarrollo integral del preescolar."
   },
   "fairness": {
     "sesgo_detectado": false,

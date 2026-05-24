@@ -1,30 +1,30 @@
 {
   "id_item": "IDD_B09_I03",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Inteligencia Lógico-Matemática y Didáctica",
   "tema": "Inteligencia, inteligencias múltiples y didáctica heterogénea",
   "subtema": "Desconocimiento de la relación entre actividades estratégicas y desarrollo del razonamiento lógico-matemático.",
   "competencia": "Identificación de habilidades cognitivas potenciadas por actividades didácticas",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "BAJA_MEDIA",
-  "claim": "El evaluado reconoce que ciertas dinámicas lúdicas pueden potenciar razonamiento lógico-matemático sin limitar la enseñanza a ejercicios repetitivos.",
-  "evidencia": "Selecciona el tipo de inteligencia principalmente asociado con ajedrez, rompecabezas, estrategia y patrones.",
-  "tarea": "Relacionar una dinámica didáctica con la inteligencia que potencia.",
+  "claim": "Relaciona actividades lúdico-didácticas y de pensamiento estratégico con la inteligencia que potencian principalmente.",
+  "evidencia": "Diferencia la inteligencia lógico-matemática (procesos de patrones, inducción y estrategia) frente a inteligencias espacial, intrapersonal o lingüística.",
+  "tarea": "Asociar una serie de dinámicas didácticas (ajedrez, rompecabezas, secuencias) con el perfil cognitivo correspondiente.",
   "contexto": "Al finalizar un periodo escolar, un docente implementa dinámicas guiadas con ajedrez, rompecabezas, patrones, secuencias y retos de estrategia para fortalecer el razonamiento de sus estudiantes.",
   "enunciado": "Al finalizar un periodo escolar, un docente implementa dinámicas guiadas con ajedrez, rompecabezas, patrones, secuencias y retos de estrategia para fortalecer el razonamiento de sus estudiantes.\n\n¿Qué tipo de inteligencia se potencia principalmente con estas actividades?",
   "opciones": {
-    "A": "Inteligencia musical, porque el estudiante reconoce ritmos y melodías.",
+    "A": "Espacial-visual, dado que la totalidad de los retos propuestos requieren exclusivamente la orientación y rotación mental de objetos bidimensionales.",
     "B": "Inteligencia lógico-matemática, porque se ejercitan razonamiento, patrones, estrategia y solución de problemas.",
-    "C": "Inteligencia naturalista, porque se clasifican plantas y animales.",
-    "D": "Inteligencia exclusivamente lingüística, porque se memorizan definiciones."
+    "C": "Intrapersonal, al priorizar la autoevaluación del desempeño individual y el control de impulsos durante los retos de estrategia.",
+    "D": "Lingüística, debido a que el éxito en estas dinámicas depende de la codificación y memorización de reglas gramaticales específicas del juego."
   },
   "clave": "B",
-  "justificacion_clave": "B",
+  "justificacion_clave": "Las actividades como el ajedrez, el diseño de patrones y los rompecabezas numéricos o secuenciales movilizan operaciones mentales de inferencia, deducción, análisis relacional y resolución de problemas estratégicos, nucleares de la inteligencia lógico-matemática.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque el caso no se centra en ritmo o melodía.",
-    "B": "Clave correcta.",
-    "C": "Es incorrecta porque no trata clasificación naturalista.",
-    "D": "Es incorrecta porque no se trata de memorizar definiciones."
+    "A": "Error de reducción sensorial. Aunque hay un componente espacial en mover fichas o armar piezas, las actividades se centran en el razonamiento lógico-estratégico general, no solo en rotación mental.",
+    "B": "Clave correcta. Vincula el razonamiento lógico con el pensamiento de patrones y estrategia.",
+    "C": "Foco desenfocado. Prioriza la gestión emocional del juego, la cual es transversal, pero omite el núcleo cognitivo del razonamiento involucrado.",
+    "D": "Confusión lingüística. Reduce los retos estratégicos y lógico-matemáticos a la lectura o memorización de las reglas de juego verbales."
   },
   "fairness": {
     "sesgo_detectado": false,

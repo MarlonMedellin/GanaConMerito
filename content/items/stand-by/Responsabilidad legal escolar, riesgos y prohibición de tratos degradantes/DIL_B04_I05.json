@@ -11,20 +11,20 @@
   "evidencia": "Elige una medida de convivencia compatible con enfoque formativo y restaurativo.",
   "tarea": "Comparar respuestas disciplinarias y seleccionar la no degradante.",
   "contexto": "Un estudiante comete una falta de convivencia. El docente quiere aplicar una medida que corrija la conducta sin humillar, agredir ni vulnerar derechos.",
-  "enunciado": "Un estudiante comete una falta de convivencia. El docente quiere aplicar una medida que corrija la conducta sin humillar, agredir ni vulnerar derechos.\n\n¿Cuál medida es más coherente con un enfoque pedagógico y restaurativo?",
+  "enunciado": "¿Cuál de las siguientes acciones es más coherente con un enfoque formativo, restaurativo y respetuoso de los derechos humanos del estudiante?",
   "opciones": {
-    "A": "Orientar una reflexión guiada, reparar el daño causado cuando proceda, acordar compromisos y aplicar una consecuencia proporcional prevista en el Manual de Convivencia.",
-    "B": "Hacer que el estudiante pase al frente para ser ridiculizado por sus compañeros.",
-    "C": "Aplicar un castigo físico leve para que aprenda rápidamente.",
-    "D": "Publicar su falta en redes sociales institucionales."
+    "A": "Promover un diálogo formativo orientado a la comprensión del impacto de la acción, el acuerdo de compromisos de reparación y el seguimiento pedagógico según el Manual de Convivencia.",
+    "B": "Asignar tareas académicas adicionales o rebajar calificaciones en el área disciplinar relacionada para desincentivar la conducta contraria a la convivencia.",
+    "C": "Exigir una disculpa pública frente a la comunidad escolar en formación general como condición obligatoria para permanecer en la institución.",
+    "D": "Remitir directamente al estudiante a suspensión temporal de clases sin realizar indagación previa, con el fin de asegurar el orden en el aula."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "Las faltas de convivencia deben abordarse mediante estrategias que promuevan la responsabilidad, el aprendizaje reflexivo y la reparación del daño de forma proporcional. El manual de convivencia debe garantizar correctivos pedagógicos y seguir el debido proceso, evitando sanciones arbitrarias o humillantes.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque humilla al estudiante.",
-    "C": "Es incorrecta porque el castigo físico está prohibido.",
-    "D": "Es incorrecta porque expone públicamente y vulnera dignidad."
+    "B": "Desconoce el principio de que los resultados académicos no deben ser usados como sanción disciplinaria, lo cual vulnera la normatividad de evaluación.",
+    "C": "La disculpa pública obligatoria constituye un trato degradante y humillante, prohibido expresamente por la Corte Constitucional colombiana.",
+    "D": "Vulnera el debido proceso (derecho a ser escuchado y presunción de inocencia) al suspender sin indagación previa."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I05.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": false
   }

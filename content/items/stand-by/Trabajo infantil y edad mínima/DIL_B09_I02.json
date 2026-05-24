@@ -1,45 +1,45 @@
 {
   "id_item": "DIL_B09_I02",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Trabajo adolescente autorizado vs. explotación",
   "tema": "Trabajo infantil y edad mínima",
-  "subtema": "Confusión entre trabajo adolescente legalmente autorizado y explotación económica de niños, niñas o adolescentes.",
+  "subtema": "Confusión entre trabajo adolescente autorizado y explotación económica",
   "competencia": "Diferenciación entre actividad laboral protegida y vulneración de derechos",
   "nivel_cognitivo": "APLICACION",
-  "dificultad_estimada": "MEDIA_ALTA",
-  "claim": "El evaluado comprende que la regulación del trabajo adolescente busca proteger derechos, permanencia escolar, salud, desarrollo integral y dignidad.",
-  "evidencia": "Selecciona una actuación institucional que orienta a la familia y activa protección si hay explotación o vulneración.",
-  "tarea": "Analizar una situación de posible trabajo infantil y elegir una respuesta protectora.",
-  "contexto": "Un estudiante de 15 años informa que quiere trabajar para apoyar a su familia. La institución sabe que la situación económica es difícil, pero también debe verificar que no haya explotación, riesgo para su salud ni abandono escolar.",
-  "enunciado": "Un estudiante de 15 años informa que quiere trabajar para apoyar a su familia. La institución sabe que la situación económica es difícil, pero también debe verificar que no haya explotación, riesgo para su salud ni abandono escolar.\n\n¿Cuál actuación es más adecuada desde la protección integral?",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado diferencia el trabajo adolescente protegido del riesgo de explotación infantil y deserción escolar.",
+  "evidencia": "Identifica el rol institucional escolar de orientar, verificar las autorizaciones legales y monitorear la permanencia educativa en adolescentes de 15 años o más.",
+  "tarea": "Resolver una situación donde un estudiante de 15 años desea trabajar formalmente, aplicando los principios del debido proceso de protección.",
+  "contexto": "Un estudiante de 15 años de grado noveno manifiesta al coordinador académico su intención de trabajar formalmente a tiempo parcial para apoyar económicamente a su familia. La institución reconoce la necesidad socioeconómica del hogar, pero debe resguardar la salud, el rendimiento académico y los derechos del menor.",
+  "enunciado": "¿Cuál es la actuación adecuada del coordinador desde el enfoque de protección integral del adolescente?",
   "opciones": {
-    "A": "Orientar a la familia sobre la autorización legal correspondiente, verificar que la actividad no sea peligrosa ni afecte la escolaridad, y activar rutas de protección si hay explotación o vulneración de derechos.",
-    "B": "Permitir cualquier trabajo porque la necesidad económica elimina todos los requisitos legales.",
-    "C": "Prohibir toda actividad laboral adolescente aunque exista autorización legal y condiciones protegidas.",
-    "D": "Expulsar al estudiante porque trabajar siempre demuestra falta de compromiso escolar."
+    "A": "Brindar orientación sobre el trámite de autorización ante el Ministerio del Trabajo, hacer seguimiento a su rendimiento académico y activar la ruta de protección integral solo si se evidencian riesgos para su salud, educación o dignidad.",
+    "B": "Exigir de forma inmediata la renuncia del estudiante a cualquier actividad laboral bajo la advertencia de cancelar su matrícula de forma unilateral por incompatibilidad con el servicio educativo.",
+    "C": "Otorgar una exención total de asistencia a clases y evaluaciones académicas, validando de manera automática el año escolar debido a la situación de vulnerabilidad económica.",
+    "D": "Radicar una denuncia penal automática contra los padres por explotación laboral, asumiendo que cualquier forma de trabajo a los 15 años constituye un delito inexcusable."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "A los 15 años de edad es legal el trabajo en Colombia, siempre y cuando se cuente con la autorización del Inspector del Trabajo y se cumplan las garantías de jornada máxima (hasta 6 horas diarias y 30 semanales) que no interfieran con sus estudios. El papel del colegio no es prohibitivo ni punitivo, sino de orientación, acompañamiento académico y monitoreo del bienestar del menor.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque la necesidad económica no elimina los requisitos de protección.",
-    "C": "Es incorrecta porque desconoce la posibilidad de trabajo adolescente autorizado.",
-    "D": "Es incorrecta porque sanciona y estigmatiza al estudiante en vez de protegerlo."
+    "B": "Aplica una sanción ilegal y vulnera el derecho a la educación al intentar expulsar o presionar de forma unilateral al estudiante.",
+    "C": "Incurre en el abandono de la función formadora al eximir al estudiante de cumplir con los logros académicos mínimos del currículo.",
+    "D": "Asume de forma errónea que todo trabajo de un adolescente de 15 años es ilegal y constituye explotación, penalizando un derecho regulado del adolescente."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem evita culpabilizar a la familia por pobreza y diferencia apoyo laboral protegido de explotación o vulneración."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Texto directo."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Trabajo infantil y edad mínima/DIL_B09_I02.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

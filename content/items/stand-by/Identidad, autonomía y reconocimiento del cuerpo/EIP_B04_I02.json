@@ -1,45 +1,45 @@
 {
   "id_item": "EIP_B04_I02",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Gestión educativa",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y desarrollo",
   "tema": "Identidad, autonomía y reconocimiento del cuerpo",
-  "subtema": "Aplicación pedagógica",
-  "competencia": "Juicio pedagógico",
-  "nivel_cognitivo": "APLICACION",
+  "subtema": "Singularidad y Diversidad en la Infancia",
+  "competencia": "Diseña e implementa ambientes pedagógicos no homogeneizadores que respetan y valoran la singularidad y diversidad de los niños.",
+  "nivel_cognitivo": "APLICACIÓN",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "En un grupo de preescolar, la docente invita a los niños a hablar de su nombre, su familia, sus gustos, sus emociones, su cuerpo y las cosas que los hacen únicos. Otra persona afirma que todos deberían responder igual para evitar diferencias.",
-  "enunciado": "En un grupo de preescolar, la docente invita a los niños a hablar de su nombre, su familia, sus gustos, sus emociones, su cuerpo y las cosas que los hacen únicos. Otra persona afirma que todos deberían responder igual para evitar diferencias.\n\n¿Por qué la propuesta de la docente es pedagógicamente adecuada?",
+  "claim": "Argumenta la necesidad pedagógica de promover la singularidad y la expresión de la historia personal frente a prácticas escolares homogeneizadoras.",
+  "evidencia": "Sostiene que la identidad en preescolar se construye reconociendo la historia, las emociones y la subjetividad individual de cada estudiante.",
+  "tarea": "Fundamentar la pertinencia de una propuesta didáctica orientada a la descripción individual y expresión emocional en transición frente a una sugerencia de homogenizar producciones.",
+  "contexto": "En un aula de transición, una docente implementa actividades para que los niños describan su nombre, compartan sus historias familiares y expresen sus emociones ante diversas situaciones cotidianas. Un colega le sugiere homogeneizar las respuestas del grupo a través de fichas preimpresas y coloreables idénticos, argumentando que de este modo se facilita el control del grupo y la presentación estética de las evidencias de trabajo.",
+  "enunciado": "En un aula de transición, una docente implementa actividades para que los niños describan su nombre, compartan sus historias familiares y expresen sus emociones ante diversas situaciones cotidianas. Un colega le sugiere homogeneizar las respuestas del grupo a través de fichas preimpresas y coloreables idénticos, argumentando que de este modo se facilita el control del grupo y la presentación estética de las evidencias de trabajo. Frente a esta sugerencia, la docente defiende su propuesta original argumentando que, desde la perspectiva del desarrollo integral en educación inicial:",
   "opciones": {
-    "A": "Porque favorece la construcción de identidad al reconocer la singularidad, la historia, el cuerpo, las emociones y las pertenencias de cada niño.",
-    "B": "Porque busca que todos los niños tengan exactamente los mismos gustos y experiencias.",
-    "C": "Porque elimina la necesidad de convivencia con otros.",
-    "D": "Porque convierte la identidad en una calificación numérica."
+    "A": "La construcción de la identidad en la infancia requiere reconocer y valorar la singularidad, la historia de vida, la expresión emocional y el origen cultural de cada estudiante.",
+    "B": "El aprendizaje colaborativo en transición exige que los estudiantes supriman sus particularidades para consolidar una identidad grupal uniforme y cohesionada.",
+    "C": "El aprestamiento psicomotor de los estudiantes mejora cuando colorean de forma libre, independientemente de que se promueva o no la reflexión sobre sí mismos.",
+    "D": "Las producciones individuales homogéneas y estandarizadas son el reflejo de un ambiente pedagógico equitativo que garantiza la igualdad material de condiciones de aprendizaje."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "La identidad no se construye mediante copias homogéneas. En la educación inicial se debe privilegiar la expresión de la subjetividad y la historia propia del niño para favorecer el autoconcepto positivo y la valoración de la diversidad.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Niega la diversidad y singularidad infantil.",
-    "C": "Confunde identidad con aislamiento.",
-    "D": "Reduce un proceso formativo a medición numérica."
+    "B": "Sesgo colectivista descontextualizado: confunde la convivencia pacífica y el trabajo conjunto con la anulación de la individualidad, lo cual lesiona el autoconcepto infantil.",
+    "C": "Desviación instrumental: reduce el valor pedagógico del dibujo o coloreado a la ejercitación muscular fina, ignorando la dimensión afectiva y reflexiva de la actividad.",
+    "D": "Falsa equidad formal: justifica la uniformidad y el control directivo bajo el argumento falaz de que la igualdad material se logra estandarizando las expresiones del pensamiento de los niños."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem respeta diversidad familiar, cultural y personal sin imponer un modelo único de identidad."
+    "observaciones": "Promueve la no discriminación y el respeto por los distintos orígenes y singularidades familiares del estudiante."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Opciones completas y balanceadas en su longitud y estructura gramatical."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Identidad, autonomía y reconocimiento del cuerpo/EIP_B04_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

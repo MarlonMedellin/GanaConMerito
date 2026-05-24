@@ -1,45 +1,45 @@
 {
   "id_item": "EIP_B04_I03",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Gestión educativa",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y desarrollo",
   "tema": "Identidad, autonomía y reconocimiento del cuerpo",
-  "subtema": "Aplicación pedagógica",
-  "competencia": "Juicio pedagógico",
-  "nivel_cognitivo": "APLICACION",
+  "subtema": "Desarrollo de la Autonomía en Transición",
+  "competencia": "Promueve y justifica la autonomía progresiva de los estudiantes en educación inicial a través de la estructuración curricular del aula.",
+  "nivel_cognitivo": "APLICACIÓN",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "Una docente quiere favorecer la autonomía en transición. Para ello permite que los niños elijan algunos materiales, organicen sus pertenencias, intenten resolver pequeñas dificultades, participen en rutinas de autocuidado y pidan ayuda cuando la necesitan.",
-  "enunciado": "Una docente quiere favorecer la autonomía en transición. Para ello permite que los niños elijan algunos materiales, organicen sus pertenencias, intenten resolver pequeñas dificultades, participen en rutinas de autocuidado y pidan ayuda cuando la necesitan.\n\n¿Cuál interpretación es correcta?",
+  "claim": "Justifica técnicamente el desarrollo de la autonomía progresiva en el preescolar frente a enfoques instruccionales autoritarios o posturas espontaneístas sin mediación.",
+  "evidencia": "Selecciona la justificación del desarrollo de la autonomía mediado por decisiones cotidianas y asunción de responsabilidades colectivas con acompañamiento pedagógico.",
+  "tarea": "Determinar la justificación técnica que defiende una estrategia de rincones de aprendizaje interactivos en transición ante la queja de una familia sobre falta de instrucción formal.",
+  "contexto": "Con el propósito de favorecer la autonomía en el grado transición, una docente diseña rincones de aprendizaje donde los estudiantes eligen libremente con qué materiales trabajar, asumen la responsabilidad de organizar sus pertenencias y deciden colectivamente las normas del aula bajo el acompañamiento pedagógico del docente. Un padre de familia se queja argumentando que esta práctica demuestra falta de control del docente sobre el grupo y desaprovecha el tiempo de instrucción formal.",
+  "enunciado": "Con el propósito de favorecer la autonomía en el grado transición, una docente diseña rincones de aprendizaje donde los estudiantes eligen libremente con qué materiales trabajar, asumen la responsabilidad de organizar sus pertenencias y deciden colectivamente las normas del aula bajo el acompañamiento pedagógico del docente. Un padre de familia se queja argumentando que esta práctica demuestra falta de control del docente sobre el grupo y desaprovecha el tiempo de instrucción formal. La justificación técnica y pedagógica que el docente debe presentar para defender su estrategia es que la autonomía en educación inicial:",
   "opciones": {
-    "A": "La docente está abandonando a los niños porque autonomía significa dejarlos solos.",
-    "B": "La autonomía no debe trabajarse en preescolar.",
-    "C": "La autonomía consiste en que el adulto haga todo por el niño para evitar errores.",
-    "D": "La docente favorece una autonomía progresiva mediante decisiones, autocuidado, participación y resolución de situaciones cotidianas con acompañamiento."
+    "A": "Se desarrolla de manera progresiva a través de la toma de decisiones cotidianas, el autocuidado, el trabajo colaborativo y la asunción de responsabilidades mediadas por el docente.",
+    "B": "Constituye una capacidad espontánea que surge de manera natural si se permite al estudiante jugar de forma libre y sin interferencia ni mediación del adulto.",
+    "C": "Debe ser precedida por la asimilación conceptual de las normas morales e institucionales a través de clases expositivas dictadas en el aula de clases.",
+    "D": "Se alcanza cuando el estudiante es capaz de realizar tareas complejas sin requerir apoyo o acompañamiento afectivo por parte del docente o de sus cuidadores."
   },
-  "clave": "D",
-  "justificacion_clave": "D",
+  "clave": "A",
+  "justificacion_clave": "La autonomía en el niño pequeño no se impone por decreto ni se da de forma silvestre; se construye a través de una práctica cotidiana y progresiva donde el docente dispone el ambiente y media pedagógicamente en la asunción de responsabilidades.",
   "distractores_funcion": {
-    "A": "Confunde autonomía con abandono.",
-    "B": "Desconoce un objetivo específico del nivel.",
-    "C": "Promueve sobreprotección e impide independencia progresiva.",
-    "D": "Clave correcta."
+    "A": "Clave correcta.",
+    "B": "Sesgo del espontaneísmo extremo: asume falsamente que la autonomía no requiere estructuración didáctica ni la mediación formativa del docente, equiparándola con el abandono pedagógico.",
+    "C": "Intelectualismo moral: presupone erróneamente que los niños pequeños asimilan primero las normas morales de manera teórica y expositiva antes de poder ponerlas en práctica.",
+    "D": "Independencia desafectivizada: confunde la autonomía progresiva del desarrollo con una autosuficiencia emocional desvinculada de los lazos de apoyo del docente y la familia."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem equilibra autonomía y acompañamiento adulto, evitando abandono o sobreprotección."
+    "observaciones": "El ítem fomenta la alianza familia-escuela mediante la argumentación técnico-pedagógica de las decisiones escolares."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "El caso plantea un problema habitual en la mediación entre docentes y acudientes."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Identidad, autonomía y reconocimiento del cuerpo/EIP_B04_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

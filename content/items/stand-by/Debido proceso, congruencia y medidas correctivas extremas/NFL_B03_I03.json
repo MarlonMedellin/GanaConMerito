@@ -7,39 +7,39 @@
   "competencia": "Valora medidas correctivas según debido proceso, proporcionalidad y congruencia frente a situaciones de convivencia.",
   "nivel_cognitivo": "JUICIO",
   "dificultad_estimada": "MEDIA-ALTA",
-  "claim": "Reconoce la actuación pedagógica o institucional más adecuada de acuerdo con el enfoque evaluado en el caso.",
-  "evidencia": "Selecciona una única alternativa defendible técnicamente y coherente con el constructo del ítem.",
-  "tarea": "Analizar la situación presentada y elegir la respuesta más pertinente según criterios pedagógicos y normativos aplicables.",
-  "contexto": "Después de una falta de convivencia, el colegio decide aplicar una medida que no aparece en el Manual de Convivencia ni fue conocida previamente por estudiantes y familias. La medida se inventa después de ocurrido el hecho.",
-  "enunciado": "Después de una falta de convivencia, el colegio decide aplicar una medida que no aparece en el Manual de Convivencia ni fue conocida previamente por estudiantes y familias. La medida se inventa después de ocurrido el hecho.\n\n¿Cuál principio del debido proceso se ve afectado principalmente?",
+  "claim": "Valora la adecuación de actuaciones pedagógicas e institucionales bajo criterios normativos y constitucionales.",
+  "evidencia": "Selecciona la respuesta que demuestra la correcta aplicación del marco normativo y pedagógico colombiano.",
+  "tarea": "Analizar el caso y determinar la opción correcta conforme a derecho y principios pedagógicos.",
+  "contexto": "Después de una falta de convivencia, el colegio decide aplicar una medida correctiva que no aparece en el Manual de Convivencia. Las directivas argumentan que la autonomía escolar las faculta para crear soluciones a situaciones imprevistas.",
+  "enunciado": "Después de una falta de convivencia, el colegio decide aplicar una medida correctiva que no aparece en el Manual de Convivencia. Las directivas argumentan que la autonomía escolar las faculta para crear soluciones a situaciones imprevistas.\n\n¿Cuál principio del debido proceso se ve afectado en esta actuación institucional?",
   "opciones": {
-    "A": "El principio de improvisación institucional.",
-    "B": "La libertad del colegio para crear sanciones después de los hechos.",
-    "C": "La inexistencia de reglas escolares.",
-    "D": "El principio de tipicidad y previsibilidad, porque las faltas y consecuencias deben estar previamente establecidas y ser conocidas."
+    "A": "El principio de tipicidad, puesto que las faltas de convivencia y sus correspondientes medidas correctivas deben estar definidas de manera previa y expresa en el manual.",
+    "B": "El principio de doble instancia, dado que el estudiante y su familia pierden el derecho a apelar la decisión ante un órgano superior de la institución.",
+    "C": "El principio de inmediación, debido a que la institución tardó en aplicar la medida correctiva y no resolvió la situación en el momento de los hechos.",
+    "D": "La autonomía escolar, ya que el Manual de Convivencia limita el poder discrecional de las directivas para responder de forma personalizada ante casos atípicos."
   },
-  "clave": "D",
-  "justificacion_clave": "D",
+  "clave": "A",
+  "justificacion_clave": "A",
   "distractores_funcion": {
-    "A": "Es incorrecta porque la improvisación no es una garantía.",
-    "B": "Es incorrecta porque crear sanciones después de los hechos vulnera previsibilidad.",
-    "C": "Es incorrecta porque la existencia de reglas es necesaria para la convivencia.",
-    "D": "Clave correcta."
+    "A": "Clave correcta.",
+    "B": "Confusión conceptual: el problema no radica en la existencia de recursos de apelación, sino en la falta de norma previa que regule la sanción.",
+    "C": "Error de enfoque: confunde el principio procesal de inmediación con la obligatoriedad de que la norma sea previa al hecho.",
+    "D": "Inversión lógica: presenta la autonomía escolar como contraria al debido proceso, cuando en realidad la autonomía está limitada por el principio de legalidad y tipicidad."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo y normativo estándar, sin referencias discriminatorias ni barreras culturales innecesarias."
+    "observaciones": "Lenguaje formal, neutral y apegado a la jurisprudencia colombiana en materia de derechos y deberes educativos, libre de sesgos territoriales o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciados con tarea única y opciones comparables en estructura y longitud."
+    "observaciones": "Redacción estructurada con enunciados independientes y opciones de longitud y complejidad gramatical homogéneas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

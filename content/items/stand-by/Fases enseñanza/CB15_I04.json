@@ -1,6 +1,6 @@
 {
   "id_item": "CB15_I04",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Didáctica",
   "tema": "Fases enseñanza",
   "subtema": "Comprensión del constructivismo",
@@ -13,18 +13,18 @@
   "contexto": "Después de trabajar un concepto mediante una situación problema y discusión guiada, el docente quiere cerrar la clase de forma que los estudiantes consoliden y transfieran lo aprendido.",
   "enunciado": "Después de trabajar un concepto mediante una situación problema y discusión guiada, el docente quiere cerrar la clase de forma que los estudiantes consoliden y transfieran lo aprendido.\n\n¿Cuál cierre es más pertinente?",
   "opciones": {
-    "A": "Pedir a los estudiantes aplicar el concepto en una situación nueva, explicar su razonamiento y recibir retroalimentación.",
-    "B": "Finalizar la clase sin retomar lo trabajado para ahorrar tiempo.",
-    "C": "Solicitar que copien nuevamente el título del tema sin discutir aprendizajes.",
-    "D": "Cambiar de tema de inmediato para cubrir más contenidos."
+    "A": "Proponer un ejercicio de transferencia del concepto a una situación contextualizada diferente, incentivar la verbalización del razonamiento y guiar una síntesis metacognitiva colectiva.",
+    "B": "Dar por terminada la clase de manera abrupta en cuanto suene el timbre de salida, omitiendo cualquier tipo de balance o sistematización de lo aprendido.",
+    "C": "Indicar a los estudiantes que copien de forma literal el resumen del tablero en sus cuadernos como evidencia formal de la finalización del tema.",
+    "D": "Introducir inmediatamente la diapositiva inicial del siguiente tema del programa de estudios para optimizar el tiempo de la jornada."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "La fase de cierre en una secuencia didáctica constructivista busca consolidar los aprendizajes y promover su transferencia (aplicación en contextos novedosos). Esto facilita la retención a largo plazo y la resignificación del conocimiento, permitiendo además procesos metacognitivos en los que el estudiante comprende qué aprendió, cómo lo hizo y qué aspectos debe ajustar mediante la retroalimentación final.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque finalizar la clase sin retomar lo trabajado deja incompleto el proceso didáctico y limita la consolidación del aprendizaje.",
-    "C": "Es incorrecta porque copiar nuevamente el título no permite verificar comprensión, reflexión ni transferencia.",
-    "D": "Es incorrecta porque cambiar de tema de inmediato privilegia la cobertura de contenidos sobre el cierre pedagógico y la comprensión."
+    "B": "Incorrecto. Finalizar la sesión escolar sin una etapa de cierre desaprovecha la oportunidad de consolidación didáctica, dejando los conceptos sueltos y dificultando la evaluación de la sesión.",
+    "C": "Incorrecto. La copia de resúmenes textuales de tablero constituye una actividad formal de registro, pero no asegura la transferencia de saberes ni la comprensión reflexiva por parte del alumno.",
+    "D": "Incorrecto. Iniciar de inmediato otra temática sin consolidar la anterior fragmenta el aprendizaje y genera saturación cognitiva, limitando la integración conceptual."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Fases enseñanza/CB15_I04.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

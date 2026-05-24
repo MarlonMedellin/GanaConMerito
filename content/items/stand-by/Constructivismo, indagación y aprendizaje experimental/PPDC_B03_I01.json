@@ -5,40 +5,40 @@
   "tema": "Constructivismo, indagación y aprendizaje experimental",
   "subtema": "Pedagogía, Didáctica y Constructivismo",
   "competencia": "Selecciona estrategias de indagación y aprendizaje experimental coherentes con un enfoque constructivista.",
-  "nivel_cognitivo": "APLICACIÓN",
+  "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "Identifica la decisión pedagógica o institucional más coherente con el enfoque evaluado en el caso.",
-  "evidencia": "Selecciona una única alternativa técnicamente superior frente a distractores plausibles.",
-  "tarea": "Analizar la situación planteada y elegir la respuesta más adecuada según el criterio del ítem.",
-  "contexto": "En una clase de ciencias, un estudiante pregunta cómo permiten los fotones el proceso de fotosíntesis en las plantas. El docente quiere responder desde una perspectiva de indagación constructivista, evitando que la explicación sea solo una definición para memorizar.",
-  "enunciado": "En una clase de ciencias, un estudiante pregunta cómo permiten los fotones el proceso de fotosíntesis en las plantas. El docente quiere responder desde una perspectiva de indagación constructivista, evitando que la explicación sea solo una definición para memorizar.\n\n¿Cuál intervención docente es más adecuada?",
+  "claim": "El evaluado selecciona estrategias de indagación y aprendizaje experimental coherentes con un enfoque constructivista.",
+  "evidencia": "Identifica la decisión pedagógica que promueve la contrastación de hipótesis y la construcción conceptual a partir del cuestionamiento.",
+  "tarea": "Determinar la intervención pedagógica adecuada ante una duda científica desde una didáctica constructivista.",
+  "contexto": "En una clase de ciencias naturales de educación básica, un estudiante indaga con curiosidad sobre el mecanismo mediante el cual la energía de la luz solar (fotones) desencadena la fotosíntesis en las plantas. El docente desea estructurar su intervención desde un enfoque didáctico constructivista, evitando la simple memorización pasiva del concepto.",
+  "enunciado": "¿Cuál es la actuación pedagógica más adecuada para este propósito?",
   "opciones": {
-    "A": "Decir que los fotones son alimento de la planta y pedir que los estudiantes memoricen esa frase para la evaluación.",
-    "B": "Guiar una indagación sobre cómo la clorofila absorbe energía de la luz, la cual permite transformar agua y dióxido de carbono en glucosa y oxígeno, apoyándose en preguntas, esquemas y evidencias.",
-    "C": "Explicar que la fotosíntesis ocurre únicamente porque las raíces absorben tierra y la convierten directamente en hojas.",
-    "D": "Evitar la pregunta porque el papel de la luz en la fotosíntesis es demasiado complejo para ser trabajado en clase."
+    "A": "Promover un proceso de indagación en el que los estudiantes formulen hipótesis sobre la influencia de la luz, analicen cómo la energía lumínica es capturada y transformada en energía química, y contrasten sus ideas mediante observaciones o experimentos sencillos.",
+    "B": "Proporcionar una definición técnica del fotón y de la fotosíntesis en el tablero, solicitando al grupo que la copie y la memorice textualmente para el examen parcial.",
+    "C": "Explicar directamente en una clase magistral que la luz solar se transforma de manera inmediata en materia orgánica al entrar en contacto con las raíces de la planta.",
+    "D": "Desestimar la inquietud del estudiante por considerarla un concepto avanzado que no forma parte de los estándares mínimos obligatorios de ciencias naturales."
   },
-  "clave": "B",
-  "justificacion_clave": "B",
+  "clave": "A",
+  "justificacion_clave": "La didáctica constructivista (Piaget, Vygotsky) y el aprendizaje por indagación postulan que el conocimiento se construye activamente cuando el estudiante interactúa con el fenómeno, plantea preguntas, contrasta hipótesis y cuenta con la mediación andamiada del docente para estructurar científicamente sus saberes previos.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque los fotones no son alimento de la planta y la respuesta reduce el aprendizaje a memorización.",
-    "B": "Clave correcta.",
-    "C": "Es incorrecta porque atribuye erróneamente la fotosíntesis a la transformación directa de la tierra en hojas.",
-    "D": "Es incorrecta porque evita una pregunta científica que puede abordarse didácticamente con mediación adecuada."
+    "A": "Clave correcta.",
+    "B": "Representa el modelo transmisionista tradicional, donde el conocimiento es estático y el estudiante es un receptor pasivo que memoriza para evaluar.",
+    "C": "Incurre en un error conceptual científico grave (los fotones interactúan con la clorofila en los cloroplastos de las hojas, no en las raíces) y mantiene el formato magistral sin construcción.",
+    "D": "Evade la oportunidad pedagógica y anula la motivación intrínseca, restringiendo el aprendizaje a contenidos mínimos aislados."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Contexto educativo general y lenguaje técnico accesible sin sesgos culturales innecesarios."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado claro con una sola tarea cognitiva."
+    "observaciones": "Lenguaje científico accesible."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Constructivismo, indagación y aprendizaje experimental/PPDC_B03_I01.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

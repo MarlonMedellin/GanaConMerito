@@ -1,6 +1,6 @@
 {
   "id_item": "CEOL_B09_I04",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Evaluación Formativa y Honestidad Académica",
   "tema": "Gestión de aula, lectura, creatividad y honestidad académica",
   "subtema": "Manejo exclusivamente punitivo del plagio y la copia en trabajos escolares.",
@@ -13,18 +13,18 @@
   "contexto": "Un docente identifica que varios estudiantes copiaron fragmentos de internet en sus trabajos sin citarlos y sin elaborar ideas propias. Quiere corregir la situación desde un enfoque de evaluación formativa y honestidad académica.",
   "enunciado": "Un docente identifica que varios estudiantes copiaron fragmentos de internet en sus trabajos sin citarlos y sin elaborar ideas propias. Quiere corregir la situación desde un enfoque de evaluación formativa y honestidad académica.\n\n¿Cuál es el enfoque pedagógico más adecuado?",
   "opciones": {
-    "A": "Anular definitivamente la asignatura sin explicar qué fue el plagio ni cómo evitarlo.",
-    "B": "Explicar el problema de autoría, enseñar uso de fuentes y citación, aplicar una consecuencia proporcional, retroalimentar y solicitar una nueva producción con voz propia.",
-    "C": "Ignorar la copia si el trabajo está bien presentado.",
-    "D": "Prohibir toda consulta externa para que los estudiantes solo escriban de memoria."
+    "A": "Reprobar el trabajo con la nota mínima y reportar la falta al comité de convivencia escolar para la aplicación de sanciones disciplinarias definitivas.",
+    "B": "Retroalimentar sobre la importancia de la propiedad intelectual, modelar el uso ético de fuentes y permitir la reescritura del trabajo bajo criterios claros de autoría.",
+    "C": "Omitir la amonestación en los primeros trabajos escolares y calificar con base en el esfuerzo de selección de información que demuestre el estudiante.",
+    "D": "Restringir las actividades de escritura al espacio controlado del aula, prohibiendo la consulta de cualquier material complementario extraclase."
   },
   "clave": "B",
-  "justificacion_clave": "B",
+  "justificacion_clave": "La clave es la B. Desde la evaluación formativa, el error o la deshonestidad académica (como el plagio no intencionado o por mala técnica) es una oportunidad de aprendizaje. El docente debe formar en citación y autoría, exigir el cumplimiento ético y permitir que el estudiante demuestre el desempeño mediante una reescritura corregida.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque castiga sin enseñar.",
-    "B": "Clave correcta.",
-    "C": "Es incorrecta porque valida una práctica deshonesta.",
-    "D": "Es incorrecta porque investigar y consultar fuentes también hace parte del aprendizaje."
+    "A": "Enfoque puramente disciplinario o sancionatorio. Sanciona de forma definitiva pero no enseña al estudiante a superar la deficiencia técnica de redacción.",
+    "B": "Clave correcta. Articula la exigencia ética, la instrucción en autoría y la oportunidad de reestructurar el trabajo.",
+    "C": "Laxitud ética. Aceptar la copia por considerarla un esfuerzo de búsqueda de información distorsiona el valor de la honestidad académica.",
+    "D": "Estrategia evasiva. Confinar el trabajo al aula para evitar plagio no enseña al estudiante a investigar autónomamente con uso ético de internet."
   },
   "fairness": {
     "sesgo_detectado": false,

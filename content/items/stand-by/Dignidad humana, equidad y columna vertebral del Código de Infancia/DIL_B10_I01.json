@@ -1,44 +1,44 @@
 {
   "id_item": "DIL_B10_I01",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Derechos y protección integral",
-  "tema": "Dignidad humana, equidad y columna vertebral del Código de Infancia",
-  "subtema": "Dignidad humana y equidad",
-  "competencia": "Identifica actuaciones institucionales coherentes con dignidad humana, equidad y enfoque de derechos de infancia.",
+  "area": "Legislación y política educativa",
+  "tema": "Dignidad humana y derechos de la infancia",
+  "subtema": "Protección integral del menor",
+  "competencia": "Aplicar los principios constitucionales de dignidad humana, equidad y la estructura del Código de la Infancia y la Adolescencia (Ley 1098 de 2006) en situaciones educativas.",
   "nivel_cognitivo": "JUICIO",
-  "dificultad_estimada": "ALTA",
-  "claim": "Reconoce la alternativa pedagógica o institucional más adecuada según el criterio técnico evaluado en el caso.",
-  "evidencia": "Selecciona una única opción defendible frente a distractores plausibles en función del constructo.",
-  "tarea": "Analizar el caso y elegir la decisión más pertinente conforme al enfoque del ítem.",
-  "contexto": "Una institución aplica una medida contra un estudiante menor de edad sin escuchar su situación, sin valorar su contexto y exponiéndolo a un trato humillante. El equipo de orientación recuerda que la dignidad humana y la equidad son principios centrales en la aplicación del Código de Infancia y Adolescencia.",
-  "enunciado": "Una institución aplica una medida contra un estudiante menor de edad sin escuchar su situación, sin valorar su contexto y exponiéndolo a un trato humillante. El equipo de orientación recuerda que la dignidad humana y la equidad son principios centrales en la aplicación del Código de Infancia y Adolescencia.\n\n¿Por qué estos principios son considerados columna vertebral de su aplicación efectiva?",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El docente aplica el principio de dignidad humana y protección integral frente a medidas disciplinarias desproporcionadas.",
+  "evidencia": "Reconoce que las medidas disciplinarias no pueden atentar contra la dignidad, intimidad ni integridad física o moral del estudiante.",
+  "tarea": "Determinar la pertinencia legal de una sanción que expone públicamente la conducta de un estudiante.",
+  "contexto": "Con el fin de mitigar los hurtos de material pedagógico, una institución propone publicar semanalmente en la cartelera general los nombres y fotos de los estudiantes sorprendidos cometiendo estas faltas, argumentando que esto sirve como medida de escarmiento y prevención general.",
+  "enunciado": "Ante esta iniciativa, el docente orientador advierte que la medida resulta inviable porque vulnera la dignidad humana del menor de edad, dado que:",
   "opciones": {
-    "A": "Porque permiten ignorar las normas cuando el caso es difícil.",
-    "B": "Porque autorizan tratar igual a todos sin considerar condiciones de vulnerabilidad.",
-    "C": "Porque justifican medidas humillantes si se hacen con intención pedagógica.",
-    "D": "Porque obligan a proteger a niños, niñas y adolescentes como sujetos de derechos, evitando tratos degradantes, discriminación y decisiones que desconozcan su interés superior y condiciones reales."
+    "A": "Las normas disciplinarias solo pueden aplicarse si se cuenta con la aprobación previa y por escrito de la asociación de padres de familia.",
+    "B": "La exposición pública vulnera el derecho al buen nombre, la intimidad y la integridad moral del estudiante, contraviniendo el principio de protección integral de la Ley 1098 de 2006.",
+    "C": "Los hurtos menores no se consideran faltas de convivencia y por lo tanto no deben registrarse en el observador escolar.",
+    "D": "El derecho al debido proceso exige que el castigo sea aplicado de forma física y en privado por el rector del establecimiento."
   },
-  "clave": "D",
-  "justificacion_clave": "D",
+  "clave": "B",
+  "justificacion_clave": "El Artículo 18 de la Ley 1098 de 2006 establece el derecho a la integridad personal y prohíbe cualquier trato degradante, humillante o que lesione la dignidad y la intimidad de los menores. Exponer públicamente a los estudiantes atenta contra su integridad moral y buen nombre, vulnerando los límites constitucionales de la potestad sancionatoria escolar.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque los principios no autorizan ignorar la ley.",
-    "B": "Es incorrecta porque la equidad exige considerar diferencias relevantes y barreras.",
-    "C": "Es incorrecta porque la intención pedagógica no legitima tratos humillantes.",
-    "D": "Clave correcta."
+    "A": "Confunde la competencia de gobierno escolar, atribuyendo a la asociación de padres una facultad de control formal que no poseen.",
+    "B": "Clave correcta.",
+    "C": "Minimiza la gravedad del comportamiento, el cual sí constituye una infracción a las normas de convivencia escolar que amerita intervención formativa.",
+    "D": "Propone una práctica aberrante y prohibida (castigo físico) bajo la errónea noción de reserva de debido proceso."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estándar y contexto institucional general sin sesgos culturales innecesarios."
+    "observaciones": "La situación resguarda principios universales de derechos humanos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura y exigencia."
+    "observaciones": "Redacción clara, terminología legal estándar."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Dignidad humana, equidad y columna vertebral del Código de Infancia/DIL_B10_I01.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

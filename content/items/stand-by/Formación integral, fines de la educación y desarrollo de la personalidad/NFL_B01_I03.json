@@ -1,45 +1,45 @@
 {
   "id_item": "NFL_B01_I03",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Objetivos de la educación",
   "tema": "Formación integral, fines de la educación y desarrollo de la personalidad",
   "subtema": "Considerar que los desarrollos transversales son accesorios y no propósitos fundamentales de la escuela.",
   "competencia": "Identificación de desarrollos transversales",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "BAJA_MEDIA",
-  "claim": "El evaluado comprende que la educación busca desarrollar capacidades humanas y ciudadanas más allá del conocimiento disciplinar.",
-  "evidencia": "Selecciona el conjunto de desarrollos transversales coherente con la Ley 115.",
-  "tarea": "Reconocer finalidades transversales de la educación escolar.",
-  "contexto": "Un colegio diseña su plan de mejoramiento y quiere incluir propósitos que vayan más allá del conocimiento disciplinar. El equipo pregunta cuáles desarrollos transversales exige la ley como parte de la formación escolar.",
-  "enunciado": "Un colegio diseña su plan de mejoramiento y quiere incluir propósitos que vayan más allá del conocimiento disciplinar. El equipo pregunta cuáles desarrollos transversales exige la ley como parte de la formación escolar.\n\n¿Cuál conjunto responde mejor a ese propósito fundamental de la escuela?",
+  "claim": "Valora la adecuación de actuaciones pedagógicas e institucionales bajo criterios normativos y constitucionales.",
+  "evidencia": "Selecciona la respuesta que demuestra la correcta aplicación del marco normativo y pedagógico colombiano.",
+  "tarea": "Analizar el caso y determinar la opción correcta conforme a derecho y principios pedagógicos.",
+  "contexto": "Un colegio diseña su plan de mejoramiento institucional y el Consejo Directivo solicita al equipo pedagógico incorporar propósitos transversales que vayan más allá de las competencias disciplinares de cada área. Se debate qué desarrollos exige la Ley 115 de 1994 en todas las etapas del proceso educativo.",
+  "enunciado": "Un colegio diseña su plan de mejoramiento institucional y el Consejo Directivo solicita al equipo pedagógico incorporar propósitos transversales que vayan más allá de las competencias disciplinares de cada área. Se debate qué desarrollos exige la Ley 115 de 1994 en todas las etapas del proceso educativo.\n\n¿Cuál conjunto de elementos es fundamental para cumplir con este mandato de formación transversal?",
   "opciones": {
-    "A": "Solo memoria de definiciones, repetición de fórmulas y copia de contenidos.",
-    "B": "Únicamente disciplina externa, silencio absoluto y obediencia sin criterio.",
-    "C": "Solo preparación para pruebas estandarizadas.",
-    "D": "Autonomía, responsabilidad, ética, solidaridad, comunicación, participación, trabajo en equipo y solución de conflictos."
+    "A": "La educación para la democracia, la formación ética y moral, el fomento de la solidaridad, la educación sexual y el respeto a la diversidad.",
+    "B": "La disciplina militarizada, la especialización ocupacional temprana y el adiestramiento en habilidades técnicas y oficios industriales.",
+    "C": "El desarrollo de competencias en lenguas extranjeras y el entrenamiento exclusivo en tecnologías de la información y la comunicación.",
+    "D": "La memorización de las normas de convivencia locales y el adoctrinamiento religioso en concordancia con el credo mayoritario de la comunidad."
   },
-  "clave": "D",
-  "justificacion_clave": "D",
+  "clave": "A",
+  "justificacion_clave": "A",
   "distractores_funcion": {
-    "A": "Es incorrecta porque no desarrolla autonomía ni ciudadanía.",
-    "B": "Es incorrecta porque la formación ética exige criterio, no solo obediencia.",
-    "C": "Es incorrecta porque las pruebas no agotan los fines escolares.",
-    "D": "Clave correcta."
+    "A": "Clave correcta.",
+    "B": "Sesgo conductista y utilitario: privilegia el control externo y la inserción económica temprana por encima del desarrollo ético-democrático transversal.",
+    "C": "Reduccionismo técnico: confunde las herramientas instrumentales globales (idiomas, TIC) con el núcleo transversal de valores humanos exigido por la ley.",
+    "D": "Error normativo: el adoctrinamiento religioso contradice el carácter laico, pluralista y constitucional de la educación en Colombia."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem promueve una visión equilibrada entre aprendizaje académico y desarrollo humano."
+    "observaciones": "Lenguaje formal, neutral y apegado a la jurisprudencia colombiana en materia de derechos y deberes educativos, libre de sesgos territoriales o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Redacción estructurada con enunciados independientes y opciones de longitud y complejidad gramatical homogéneas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Formación integral, fines de la educación y desarrollo de la personalidad/NFL_B01_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

@@ -11,20 +11,20 @@
   "evidencia": "Selecciona la opción que mejor explica la decisión pedagógica coherente con el aprendizaje significativo en el caso planteado.",
   "tarea": "Inferir, a partir del caso, la condición didáctica que permite aprendizaje significativo según Ausubel.",
   "contexto": "Un estudiante memoriza que 3 x 3 = 9, pero no puede explicar que representa tres grupos de tres elementos o una suma reiterada. Otro estudiante sí puede representar la operación con objetos, dibujos y situaciones.",
-  "enunciado": "Un estudiante memoriza que 3 x 3 = 9, pero no puede explicar que representa tres grupos de tres elementos o una suma reiterada. Otro estudiante sí puede representar la operación con objetos, dibujos y situaciones.\n\n¿Cuál interpretación es más adecuada?",
+  "enunciado": "¿Cuál interpretación teórica, basada en el aprendizaje significativo de Ausubel, es la más adecuada para caracterizar el desempeño de ambos estudiantes?",
   "opciones": {
-    "A": "El primer estudiante demuestra aprendizaje significativo completo.",
-    "B": "El segundo estudiante evidencia comprensión conceptual más cercana al aprendizaje significativo.",
-    "C": "La representación concreta impide aprender matemáticas.",
-    "D": "La multiplicación solo puede aprenderse repitiendo tablas."
+    "A": "El primer estudiante demuestra un aprendizaje memorístico inicial que es el prerrequisito obligatorio para el aprendizaje significativo.",
+    "B": "El segundo estudiante evidencia un aprendizaje significativo por asimilación al establecer conexiones sustantivas y no arbitrarias con el concepto.",
+    "C": "El primer estudiante demuestra asimilación supraordenada al automatizar la regla general simbólica de la multiplicación.",
+    "D": "El segundo estudiante evidencia un aprendizaje puramente asociativo que le impide avanzar hacia la abstracción del lenguaje simbólico."
   },
   "clave": "B",
-  "justificacion_clave": "Comprender la lógica de la operación permite relacionar símbolos, cantidades y situaciones, no solo memorizar un resultado.",
+  "justificacion_clave": "El segundo estudiante logra relacionar el símbolo y la operación matemática con su significado y representación práctica de forma sustantiva y no arbitraria, demostrando un aprendizaje significativo, mientras el primero muestra un aprendizaje puramente memorístico.",
   "distractores_funcion": {
-    "A": "Memorizar sin explicar no evidencia comprensión profunda.",
+    "A": "Error conceptual de considerar que el aprendizaje de memoria es una fase de paso obligatoria para el aprendizaje de significados.",
     "B": "Clave correcta.",
-    "C": "La representación concreta puede apoyar la comprensión.",
-    "D": "Las tablas pueden ayudar, pero no reemplazan el significado."
+    "C": "Aplica erróneamente el concepto de asimilación supraordenada a la simple reproducción memorística.",
+    "D": "Invierte la valoración pedagógica al calificar de limitante el uso de representaciones que otorgan sentido al concepto."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

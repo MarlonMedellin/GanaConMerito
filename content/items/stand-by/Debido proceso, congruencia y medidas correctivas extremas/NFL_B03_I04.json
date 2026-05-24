@@ -7,39 +7,39 @@
   "competencia": "Valora medidas correctivas según debido proceso, proporcionalidad y congruencia frente a situaciones de convivencia.",
   "nivel_cognitivo": "JUICIO",
   "dificultad_estimada": "MEDIA-ALTA",
-  "claim": "Reconoce la actuación pedagógica o institucional más adecuada de acuerdo con el enfoque evaluado en el caso.",
-  "evidencia": "Selecciona una única alternativa defendible técnicamente y coherente con el constructo del ítem.",
-  "tarea": "Analizar la situación presentada y elegir la respuesta más pertinente según criterios pedagógicos y normativos aplicables.",
-  "contexto": "Ante una falta de convivencia, una institución decide aplicar la medida más severa disponible sin valorar la gravedad real, el contexto, la afectación producida, la posibilidad de reparación, los antecedentes ni las alternativas pedagógicas previstas en el Manual de Convivencia.",
-  "enunciado": "Ante una falta de convivencia, una institución decide aplicar la medida más severa disponible sin valorar la gravedad real, el contexto, la afectación producida, la posibilidad de reparación, los antecedentes ni las alternativas pedagógicas previstas en el Manual de Convivencia.\n\n¿Qué exigencia del debido proceso está siendo ignorada?",
+  "claim": "Valora la adecuación de actuaciones pedagógicas e institucionales bajo criterios normativos y constitucionales.",
+  "evidencia": "Selecciona la respuesta que demuestra la correcta aplicación del marco normativo y pedagógico colombiano.",
+  "tarea": "Analizar el caso y determinar la opción correcta conforme a derecho y principios pedagógicos.",
+  "contexto": "Ante una falta de convivencia leve de un estudiante sin antecedentes sancionatorios, la dirección de un colegio aplica de forma directa la cancelación de matrícula, omitiendo el análisis de las circunstancias atenuantes, la gravedad del hecho y los fines educativos del manual.",
+  "enunciado": "Ante una falta de convivencia leve de un estudiante sin antecedentes sancionatorios, la dirección de un colegio aplica de forma directa la cancelación de matrícula, omitiendo el análisis de las circunstancias atenuantes, la gravedad del hecho y los fines educativos del manual.\n\n¿Qué principio del debido proceso está siendo ignorado por la institución educativa?",
   "opciones": {
-    "A": "La obligación de imponer siempre la sanción máxima.",
-    "B": "La proporcionalidad, porque la medida debe corresponder a la gravedad, circunstancias, daño, fines pedagógicos y garantías del caso.",
-    "C": "La posibilidad de castigar sin motivación.",
-    "D": "La eliminación de todo procedimiento cuando hay indisciplina."
+    "A": "La presunción de inocencia, ya que al aplicar la sanción más severa de manera directa se infiere que el estudiante actuó con dolo e intencionalidad dañina.",
+    "B": "El principio de proporcionalidad, puesto que la medida adoptada debe guardar correspondencia con la gravedad del comportamiento, la afectación del entorno escolar y los fines pedagógicos.",
+    "C": "La favorabilidad formativa, la cual estipula que ante la concurrencia de normas aplicables a un mismo caso se debe optar siempre por aquella de carácter restaurativo.",
+    "D": "La legalidad procedimental, pues la severidad de una medida correctiva está condicionada exclusivamente al cumplimiento estricto del cronograma de audiencias."
   },
   "clave": "B",
   "justificacion_clave": "B",
   "distractores_funcion": {
-    "A": "Es incorrecta porque no toda falta exige sanción máxima.",
+    "A": "Error de correspondencia: el estudiante admite la falta, por lo que el debate no es sobre la culpabilidad (presunción de inocencia), sino sobre el exceso en el castigo.",
     "B": "Clave correcta.",
-    "C": "Es incorrecta porque las decisiones deben motivarse.",
-    "D": "Es incorrecta porque la indisciplina no elimina el debido proceso."
+    "C": "Distracción conceptual: confunde la proporcionalidad de la sanción con la restauración general usando un concepto inventado.",
+    "D": "Error procesal: reduce la proporcionalidad a un asunto de cumplimiento de fechas de audiencias, ignorando el contenido sustancial de la medida."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo y normativo estándar, sin referencias discriminatorias ni barreras culturales innecesarias."
+    "observaciones": "Lenguaje formal, neutral y apegado a la jurisprudencia colombiana en materia de derechos y deberes educativos, libre de sesgos territoriales o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciados con tarea única y opciones comparables en estructura y longitud."
+    "observaciones": "Redacción estructurada con enunciados independientes y opciones de longitud y complejidad gramatical homogéneas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I04.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

@@ -1,45 +1,45 @@
 {
   "id_item": "PPDC_B01_I04",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Praxis Pedagógica",
   "tema": "Práctica pedagógica no homogeneizadora y diversidad",
   "subtema": "Diseño limitado de estrategias didácticas frente a la diversidad de formas de aprender y participar.",
   "competencia": "Diseño de estrategias didácticas inclusivas",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende que una praxis pedagógica inclusiva amplía las oportunidades de aprendizaje mediante variedad de recursos, formas de participación, productos y apoyos.",
-  "evidencia": "Identifica una estrategia coherente con múltiples formas de motivación, representación, acción y expresión.",
-  "tarea": "Seleccionar una alternativa didáctica alineada con diversidad, participación y accesibilidad del aprendizaje.",
+  "claim": "Valora la adecuación de actuaciones pedagógicas e institucionales bajo criterios normativos y constitucionales.",
+  "evidencia": "Selecciona la respuesta que demuestra la correcta aplicación del marco normativo y pedagógico colombiano.",
+  "tarea": "Analizar el caso y determinar la opción correcta conforme a derecho y principios pedagógicos.",
   "contexto": "Un docente quiere mejorar su praxis pedagógica en un grupo con estudiantes que aprenden, participan y expresan sus comprensiones de formas distintas. Busca evitar que todos dependan de una sola explicación, un solo material y una única forma de entregar el producto.",
-  "enunciado": "Un docente quiere mejorar su praxis pedagógica en un grupo con estudiantes que aprenden, participan y expresan sus comprensiones de formas distintas. Busca evitar que todos dependan de una sola explicación, un solo material y una única forma de entregar el producto.\n\n¿Qué tipo de estrategias didácticas debería plantear?",
+  "enunciado": "Un docente quiere mejorar su praxis pedagógica en un grupo con estudiantes que aprenden, participan y expresan sus comprensiones de formas distintas. Busca evitar que todos dependan de una sola explicación, un solo material y una única forma de entregar el producto.\n\n¿Qué tipo de estrategia didáctica es la más coherente para implementar en su planeación de aula?",
   "opciones": {
-    "A": "Estrategias centradas en una única lectura, una única explicación y una única prueba escrita para todos.",
-    "B": "Estrategias sin criterios comunes, en las que cada estudiante haga cualquier actividad sin relación con el propósito de aprendizaje.",
-    "C": "Estrategias basadas solo en repetición y memorización, porque así todos reciben exactamente la misma información.",
-    "D": "Estrategias con diversas formas de motivar, representar la información, participar, actuar y expresar lo aprendido con criterios claros."
+    "A": "Estrategias diversificadas inspiradas en el Diseño Universal para el Aprendizaje (DUA), ofreciendo múltiples medios de compromiso, representación, y acción y expresión.",
+    "B": "Estrategias individuales personalizadas e independientes para cada estudiante, prescindiendo de actividades grupales para evitar comparaciones.",
+    "C": "Estrategias homogéneas fundamentadas en la repetición y el refuerzo de contenidos, de manera que se garantice que todos reciban idéntico estímulo.",
+    "D": "Estrategias autogestionadas donde los estudiantes deciden de forma libre el contenido a estudiar y el método de trabajo sin intervención del docente."
   },
-  "clave": "D",
-  "justificacion_clave": "D",
+  "clave": "A",
+  "justificacion_clave": "A",
   "distractores_funcion": {
-    "A": "Es incorrecta porque conserva una única ruta de acceso y expresión del aprendizaje.",
-    "B": "Es incorrecta porque flexibilizar no significa abandonar propósitos ni criterios.",
-    "C": "Es incorrecta porque la repetición uniforme no responde a la diversidad del aprendizaje.",
-    "D": "Clave correcta."
+    "A": "Clave correcta.",
+    "B": "Inviabilidad práctica: plantea un diseño de 40 planes distintos independientes, lo cual sobrecarga administrativamente al maestro y disuelve la cohesión social del grupo.",
+    "C": "Retorno al tecnicismo: defiende un modelo transmisionista conductista superado que concibe el aprendizaje como reacción uniforme ante estímulos idénticos.",
+    "D": "Laissez-faire pedagógico: anula la mediación del maestro, asumiendo que los estudiantes pueden regular solos su aprendizaje sin andamiajes y criterios del docente."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem no exige tecnologías específicas ni conocimiento técnico del DUA. Evalúa la comprensión de un principio inclusivo: ampliar formas de acceso, participación y expresión sin perder rigor pedagógico."
+    "observaciones": "Lenguaje formal, neutral y apegado a la jurisprudencia colombiana en materia de derechos y deberes educativos, libre de sesgos territoriales o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Redacción estructurada con enunciados independientes y opciones de longitud y complejidad gramatical homogéneas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Práctica pedagógica no homogeneizadora y diversidad/PPDC_B01_I04.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

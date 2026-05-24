@@ -3,42 +3,42 @@
   "estado": "LISTO_PARA_BANCO",
   "area": "Didáctica disciplinar",
   "tema": "Didáctica de áreas, resolución de problemas y material concreto",
-  "subtema": "Didáctica de las áreas y contexto de aula",
-  "competencia": "Selecciona estrategias didácticas de resolución de problemas apoyadas en material concreto y mediación pedagógica.",
+  "subtema": "Enseñanza para el Aprendizaje Significativo",
+  "competencia": "Diseña secuencias didácticas basadas en el aprendizaje por competencias y la contextualización de saberes científicos.",
   "nivel_cognitivo": "APLICACIÓN",
   "dificultad_estimada": "MEDIA",
-  "claim": "Reconoce la alternativa pedagógica o institucional más adecuada según el criterio técnico evaluado en el caso.",
-  "evidencia": "Selecciona una única opción defendible frente a distractores plausibles en función del constructo.",
-  "tarea": "Analizar el caso y elegir la decisión más pertinente conforme al enfoque del ítem.",
-  "contexto": "Un docente enseña un contenido únicamente mediante definiciones y ejercicios descontextualizados. Los estudiantes preguntan cómo se relaciona ese tema con problemas de su vida diaria o de su comunidad.",
-  "enunciado": "Un docente enseña un contenido únicamente mediante definiciones y ejercicios descontextualizados. Los estudiantes preguntan cómo se relaciona ese tema con problemas de su vida diaria o de su comunidad.\n\n¿Qué ajuste didáctico es más coherente con una enseñanza por competencias?",
+  "claim": "Determina el ajuste didáctico idóneo para contextualizar conceptos científicos y responder a las demandas de aprendizaje del estudiante.",
+  "evidencia": "Selecciona estrategias de indagación aplicada y resolución de problemas reales del contexto local frente a esquemas de ejercitación teórica.",
+  "tarea": "Elegir el ajuste didáctico más coherente con la enseñanza por competencias a partir de una situación de aula descontextualizada en ciencias.",
+  "contexto": "Un docente de ciencias naturales presenta a sus estudiantes de secundaria el concepto de pH y acidez únicamente a través de la fórmula matemática de logaritmos y definiciones del texto guía. Los estudiantes muestran apatía y le preguntan al docente cómo se aplica este conocimiento en situaciones reales de su comunidad agrícola.",
+  "enunciado": "Un docente de ciencias naturales presenta a sus estudiantes de secundaria el concepto de pH y acidez únicamente a través de la fórmula matemática de logaritmos y definiciones del texto guía. Los estudiantes muestran apatía y le preguntan al docente cómo se aplica este conocimiento en situaciones reales de su comunidad agrícola. Para realizar un ajuste didáctico coherente con el enfoque de enseñanza por competencias y aprendizaje significativo, el docente debe:",
   "opciones": {
-    "A": "Responder que los contenidos no necesitan relación con ningún contexto.",
-    "B": "Pedir que memoricen definiciones aunque no comprendan su uso.",
-    "C": "Eliminar el contenido porque los estudiantes hicieron preguntas sobre su utilidad.",
-    "D": "Diseñar situaciones problema cercanas al entorno, donde los estudiantes usen el contenido para explicar, decidir o resolver algo significativo."
+    "A": "Plantear una actividad de indagación donde los estudiantes recolecten muestras de suelo de sus fincas, utilicen indicadores de pH y relacionen el nivel de acidez observado con el tipo de cultivos viables en la región y la toma de decisiones agrícolas.",
+    "B": "Diseñar un cuestionario teórico obligatorio sobre las fórmulas de acidez y basicidad para que los estudiantes comprendan la rigurosidad científica del concepto antes de buscar aplicaciones prácticas en su contexto.",
+    "C": "Organizar una exposición escolar donde los estudiantes repitan textualmente la definición del pH y los riesgos de la acidez estomacal, apoyándose en carteleras ilustrativas para motivar a la comunidad educativa.",
+    "D": "Sustituir la teoría del pH por un taller práctico de química general en el laboratorio escolar que siga rigurosamente un protocolo preestablecido para evitar errores de medición en clase."
   },
-  "clave": "D",
-  "justificacion_clave": "D",
+  "clave": "A",
+  "justificacion_clave": "La opción A propone un verdadero aprendizaje significativo y contextualizado por competencias, vinculando un concepto químico abstracto (pH) con un problema relevante del entorno de los estudiantes (agricultura local) y promoviendo la indagación activa.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque desatiende la necesidad de sentido.",
-    "B": "Es incorrecta porque memorizar sin uso no evidencia competencia.",
-    "C": "Es incorrecta porque la pregunta por utilidad exige contextualizar, no eliminar el contenido.",
-    "D": "Clave correcta."
+    "A": "Clave correcta.",
+    "B": "Sesgo academicista: asume erróneamente que la asimilación teórica y formal de una fórmula debe preceder necesariamente a cualquier aplicación o indagación práctica contextualizada.",
+    "C": "Actividad periférica/expositiva: reduce el aprendizaje significativo a la repetición oral de contenidos apoyada por recursos lúdicos desvinculados de la resolución de problemas reales.",
+    "D": "Enfoque instructivista: prioriza el seguimiento mecánico de recetas de laboratorio sobre el análisis y la toma de decisiones críticas frente a fenómenos de su propio entorno."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estándar y contexto institucional general sin sesgos culturales innecesarios."
+    "observaciones": "El contexto agrícola rural no discrimina y responde a situaciones estándar de la geografía y sociedad colombiana."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura y exigencia."
+    "observaciones": "Redacción fluida y terminología alineada con los estándares curriculares."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

@@ -1,45 +1,45 @@
 {
   "id_item": "DIL_B05_I02",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Flagrancia y menor de 14 años",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Normatividad y Convivencia Escolar",
   "tema": "Menor infractor, edad penal y rutas de protección",
-  "subtema": "Improvisación institucional o retención indebida del menor de 14 años ante flagrancia.",
-  "competencia": "Aplicación de protocolo de remisión protectora",
-  "nivel_cognitivo": "APLICACION",
-  "dificultad_estimada": "ALTA",
-  "claim": "El evaluado comprende que la respuesta ante flagrancia de una persona menor de 14 años debe respetar debido proceso, protección integral y competencia de autoridades especializadas.",
-  "evidencia": "Selecciona el procedimiento de puesta a disposición de autoridad competente.",
-  "tarea": "Elegir el procedimiento correcto frente a un caso de flagrancia.",
-  "contexto": "Un particular sorprende a un adolescente menor de 14 años participando en una conducta punible cerca de la institución educativa. El caso llega al conocimiento de la escuela y de la autoridad policial.",
-  "enunciado": "Un particular sorprende a un adolescente menor de 14 años participando en una conducta punible cerca de la institución educativa. El caso llega al conocimiento de la escuela y de la autoridad policial.\n\n¿Cuál procedimiento es jurídicamente adecuado?",
+  "subtema": "Consecuencias Jurídicas e Inimputabilidad",
+  "competencia": "Reconoce las consecuencias jurídicas y el debido proceso aplicable a menores infractores conforme a los rangos de edad legal.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Distingue la consecuencia jurídica de restablecimiento de derechos de los procesos de sanción del Sistema de Responsabilidad Penal para Adolescentes (SRPA).",
+  "evidencia": "Selecciona la remisión a autoridad administrativa de protección para re-establecimiento de derechos en menores de 14 años frente a ingresos al SRPA, penas ordinarias de adultos o inacciones escolares.",
+  "tarea": "Determinar la consecuencia jurídica y el procedimiento para un estudiante de 13 años detenido en flagrancia por causar lesiones personales graves con arma blanca.",
+  "contexto": "Un adolescente de 13 años (estudiante de grado séptimo) agrede físicamente con un arma blanca a un compañero a las afueras de la institución educativa al finalizar la jornada escolar, causándole lesiones graves. La Policía de Infancia y Adolescencia es llamada y detiene al agresor en flagrancia.",
+  "enunciado": "Un adolescente de 13 años (estudiante de grado séptimo) agrede físicamente con un arma blanca a un compañero a las afueras de la institución educativa al finalizar la jornada escolar, causándole lesiones graves. La Policía de Infancia y Adolescencia es llamada y detiene al agresor en flagrancia. Desde el marco normativo de la Ley 1098 de 2006 en Colombia, la consecuencia jurídica y el procedimiento correspondiente para este estudiante es:",
   "opciones": {
-    "A": "Retener al menor en la institución hasta que confiese todos los hechos.",
-    "B": "Entregarlo a los medios de comunicación para advertir a la comunidad.",
-    "C": "Ponerlo inmediatamente a disposición de la autoridad policial o de protección competente, para verificación y restablecimiento de derechos.",
-    "D": "Aplicarle una sanción penal escolar equivalente a la de un adulto."
+    "A": "Ser puesto a disposición de la autoridad administrativa de protección (Defensor de Familia o Comisario) para la verificación de la garantía de sus derechos y la adopción de medidas de restablecimiento de derechos, por ser penalmente inimputable.",
+    "B": "Ser ingresado de manera preventiva en un centro de reclusión para menores del Sistema de Responsabilidad Penal para Adolescentes (SRPA) mientras la Fiscalía General de la Nación formula la acusación penal.",
+    "C": "Ser juzgado de acuerdo con el Código Penal ordinario aplicable a adultos, aplicando una rebaja automática de la pena a la mitad en atención a su condición de menor de edad.",
+    "D": "Quedar exento de cualquier actuación estatal o de control, debiendo la institución educativa limitar su intervención a citar a la familia para acordar un cambio de colegio consensuado."
   },
-  "clave": "C",
-  "justificacion_clave": "C",
+  "clave": "A",
+  "justificacion_clave": "Los menores de 14 años no ingresan bajo ninguna circunstancia al Sistema de Responsabilidad Penal para Adolescentes (SRPA) ni pueden ser recluidos. Su condición legal es de inimputabilidad absoluta y su abordaje es administrativo de restablecimiento de derechos por el ICBF.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque la escuela no debe retener ni interrogar indebidamente.",
-    "B": "Es incorrecta porque expone y vulnera derechos del menor.",
-    "C": "Clave correcta.",
-    "D": "Es incorrecta porque no existe sanción penal escolar equivalente a la de adultos."
+    "A": "Clave correcta.",
+    "B": "Remisión errónea al SRPA: confunde la edad mínima de responsabilidad penal (14 años), pretendiendo aplicar internamiento preventivo a un menor de 13 años.",
+    "C": "Aplicación de justicia de adultos: desconoce la protección constitucional de la infancia y propone la aplicación ilegal de penas de adultos con atenuantes a un menor de 14 años.",
+    "D": "Inacción escolar/Evasión de ruta: reduce un delito grave fuera del colegio a un simple trámite interno escolar de cambio de plantel, abdicando de las responsabilidades estatales de protección y reporte."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem protege derechos, evita exposición pública y promueve actuación por autoridad competente."
+    "observaciones": "El caso evalúa conocimientos precisos y universales del bloque de constitucionalidad e infancia en Colombia."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "El lenguaje técnico legal está bien delimitado y se evitan términos confusos."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Menor infractor, edad penal y rutas de protección/DIL_B05_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

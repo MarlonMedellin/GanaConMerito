@@ -10,21 +10,21 @@
   "claim": "Reconoce la actuación pedagógica o institucional más adecuada de acuerdo con el enfoque evaluado en el caso.",
   "evidencia": "Selecciona una única alternativa defendible técnicamente y coherente con el constructo del ítem.",
   "tarea": "Analizar la situación presentada y elegir la respuesta más pertinente según criterios pedagógicos y normativos aplicables.",
-  "contexto": "",
-  "enunciado": "Una estudiante informa a una docente que podría haber sido víctima de abuso. La docente propone reunir a varios funcionarios para preguntarle repetidamente qué ocurrió. ¿Cuál actuación es más adecuada?",
+  "contexto": "Una estudiante de bachillerato se acerca de manera confidencial a una docente para manifestarle que ha sido víctima de presunto abuso por parte de un miembro de su entorno familiar. La docente de inmediato considera los pasos a seguir.",
+  "enunciado": "Teniendo en cuenta el debido proceso escolar y la normativa colombiana de protección infantil (Ley 1098 y Ley 1620), ¿cuál es la actuación inmediata y adecuada que debe realizar la docente?",
   "opciones": {
-    "A": "Realizar varias entrevistas internas para verificar la veracidad del relato.",
-    "B": "Exponer el caso ante el grupo de estudiantes para identificar testigos.",
-    "C": "Brindar contención inicial, mantener confidencialidad y activar la ruta con instancias competentes.",
-    "D": "Esperar a que la estudiante entregue pruebas antes de activar cualquier ruta."
+    "A": "Convocar de urgencia al orientador, coordinador y rector para realizar una entrevista conjunta y detallada a la estudiante para esclarecer los hechos e interrogarla minuciosamente antes de notificar externamente.",
+    "B": "Citar de forma inmediata al familiar señalado por la estudiante para escuchar su versión de los hechos y contrastarla con el testimonio de la menor antes de reportar a las autoridades.",
+    "C": "Brindar contención emocional inicial a la estudiante, escucharla de forma confidencial sin interrogarla ni confrontarla para evitar la revictimización, y activar de inmediato la ruta de atención integral de convivencia escolar reportando al directivo.",
+    "D": "Solicitar a la estudiante que redacte y firme una carta de descargos detallando los hechos e indicando las pruebas físicas o testimonios del presunto abuso para poder formalizar la activación de la ruta."
   },
   "clave": "C",
-  "justificacion_clave": "La opción C asegura protección inmediata, evita revictimización y respeta el debido proceso institucional.",
+  "justificacion_clave": "Ante presuntos delitos contra la integridad sexual de NNA (Situación Tipo III en Ley 1620), la escuela debe priorizar la protección de la presunta víctima. La primera respuesta debe ser la contención y escucha respetuosa y confidencial, absteniéndose de realizar interrogatorios o careos que revictimizan, y trasladar de forma inmediata el caso a las autoridades competentes.",
   "distractores_funcion": {
-    "A": "Normaliza interrogación repetida que puede revictimizar.",
-    "B": "Vulnera confidencialidad y expone indebidamente a la estudiante.",
+    "A": "Realizar múltiples interrogatorios y careos informales vulnera el derecho a la intimidad, no tiene validez judicial y causa revictimización en el menor de edad.",
+    "B": "Pone en grave riesgo de seguridad al estudiante al alertar al presunto agresor y excede absolutamente el campo de competencia del docente.",
     "C": "Clave correcta.",
-    "D": "Demora injustificadamente la activación de protección."
+    "D": "Introduce barreras procedimentales (exigir pruebas escritas o descargos) que retrasan la protección legal obligatoria del menor."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Debido proceso/CB10_I01.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

@@ -2,43 +2,43 @@
   "id_item": "CEOL_B08_I01",
   "estado": "LISTO_PARA_BANCO",
   "area": "Práctica pedagógica",
-  "tema": "Motivación y formación integral",
+  "tema": "Enseñar, formar, motivación didáctica y competencias socioemocionales",
   "subtema": "Estrategias didácticas y socioemocionales",
   "competencia": "Diseñar decisiones de aula que articulen logro académico y desarrollo socioemocional.",
-  "nivel_cognitivo": "JUICIO PEDAGÓGICO",
+  "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
   "claim": "El evaluado distingue prácticas de enseñanza que sostienen motivación autónoma y autorregulación.",
-  "evidencia": "Selecciona la intervención didáctica que combina metas claras, retroalimentación y clima socioemocional seguro.",
-  "tarea": "Seleccionar la estrategia de aula más efectiva para mejorar participación y persistencia.",
-  "contexto": "En un curso de secundaria, baja la participación y varios estudiantes abandonan tareas al primer error.",
-  "enunciado": "¿Qué decisión docente responde mejor al problema planteado?",
+  "evidencia": "Selecciona decisiones pedagógicas que equilibran el rigor académico con el apoyo socioemocional y la tolerancia al error.",
+  "tarea": "Determinar la intervención docente más adecuada para superar problemas de participación y tolerancia a la frustración.",
+  "contexto": "En un curso de secundaria se presenta una baja participación y un aumento de la deserción en las tareas cuando estas presentan dificultades. Varios estudiantes abandonan la actividad ante el primer error por temor a obtener bajas notas.",
+  "enunciado": "¿Qué decisión pedagógica del docente responde de manera constructiva a esta problemática?",
   "opciones": {
-    "A": "Aumentar el número de tareas calificadas para elevar la presión de cumplimiento.",
-    "B": "Reducir la exigencia del curso para evitar frustración y mantener tranquilidad.",
-    "C": "Mantener metas desafiantes, modelar estrategias, ofrecer retroalimentación formativa y espacios breves de autorregulación emocional.",
-    "D": "Centrar la clase en exposición magistral para evitar interrupciones y controlar el grupo."
+    "A": "Establecer metas de aprendizaje exigentes pero alcanzables, brindar andamiaje y retroalimentación formativa orientada al proceso, y fomentar la autorregulación y la resiliencia ante el error.",
+    "B": "Disminuir el nivel de complejidad y los criterios de evaluación del curso para evitar la frustración de los estudiantes y asegurar que todos aprueben sin esfuerzo adicional.",
+    "C": "Incrementar la cantidad de evaluaciones sumativas de carácter punitivo para presionar el cumplimiento de las tareas bajo amenaza de pérdida de la asignatura.",
+    "D": "Adoptar una metodología puramente expositiva que limite la participación activa del alumnado, garantizando así un control estricto de la disciplina escolar."
   },
-  "clave": "C",
-  "justificacion_clave": "Combina apoyo cognitivo y socioemocional sin bajar expectativas, favoreciendo motivación de calidad y persistencia.",
+  "clave": "A",
+  "justificacion_clave": "Fomentar la resiliencia ante el error, dar retroalimentación formativa centrada en el proceso y proveer andamiaje ayuda a desarrollar motivación intrínseca y autorregulación, lo cual soluciona de raíz la evitación y el miedo a equivocarse sin rebajar las expectativas académicas.",
   "distractores_funcion": {
-    "A": "Error de generalización: confunde control externo con motivación sostenida.",
-    "B": "Aplicación incompleta: reduce demanda y afecta aprendizaje profundo.",
-    "C": "Clave correcta.",
-    "D": "Confusión frecuente: prioriza control del aula sobre participación activa."
+    "A": "Clave correcta.",
+    "B": "Incurre en el error de bajar las expectativas académicas y el nivel cognitivo de la clase en vez de apoyar las capacidades del estudiante.",
+    "C": "Pretende resolver la deserción mediante coerción y presión externa, lo cual incrementa el miedo al error y la desmotivación.",
+    "D": "Reduce el problema a un asunto de control de disciplina mediante clases pasivas, anulando el desarrollo de competencias socioemocionales e intelectuales."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Contexto escolar general, sin referencias culturales excluyentes ni requisitos externos no declarados."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado directo, vocabulario pedagógico de uso común y una sola tarea cognitiva por ítem."
+    "observaciones": "Redacción bien estructurada."
   },
   "metadata_editorial": {
-    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "fuente": "content/items/stand-by/Enseñar, formar, motivación didáctica y competencias socioemocionales/CEOL_B08_I01.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

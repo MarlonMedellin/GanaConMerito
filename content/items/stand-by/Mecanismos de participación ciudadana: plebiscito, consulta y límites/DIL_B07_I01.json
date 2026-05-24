@@ -1,44 +1,44 @@
 {
   "id_item": "DIL_B07_I01",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Ciudadanía y marco constitucional",
-  "tema": "Participación ciudadana",
-  "subtema": "Plebiscito, consulta y límites",
+  "area": "Competencias ciudadanas",
+  "tema": "Mecanismos de participación ciudadana",
+  "subtema": "Plebiscito y consulta popular",
   "competencia": "Diferenciar mecanismos de participación según finalidad y alcance jurídico.",
-  "nivel_cognitivo": "ANÁLISIS",
+  "nivel_cognitivo": "COMPRENSIÓN",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado distingue plebiscito y consulta popular sin reducir ambos a una votación equivalente.",
-  "evidencia": "Selecciona la comparación funcional correcta entre ambos mecanismos.",
-  "tarea": "Elegir la explicación jurídicamente más precisa sobre plebiscito y consulta popular.",
+  "claim": "El evaluado diferencia el plebiscito de la consulta popular según sus competencias de convocatoria y propósitos de consulta.",
+  "evidencia": "Identifica que el plebiscito es convocado por el Presidente sobre políticas de su competencia y la consulta popular somete asuntos generales a nivel nacional o territorial.",
+  "tarea": "Seleccionar la explicación técnica que diferencie adecuadamente el plebiscito y la consulta popular en Colombia.",
   "contexto": "En clase de democracia se debate si todos los mecanismos participativos son iguales por implicar voto.",
   "enunciado": "¿Cuál explicación diferencia mejor plebiscito y consulta popular?",
   "opciones": {
-    "A": "Son equivalentes porque cualquier votación ciudadana tiene el mismo alcance jurídico.",
-    "B": "El plebiscito busca respaldo ciudadano a una decisión política del Ejecutivo; la consulta popular somete una pregunta de trascendencia al cuerpo electoral según el nivel territorial.",
-    "C": "La consulta popular se usa solo para elegir autoridades y el plebiscito para reformar manuales escolares.",
-    "D": "Ambos son mecanismos internos de convivencia escolar sin fundamento constitucional."
+    "A": "El plebiscito y la consulta popular son equivalentes en su trámite, dado que ambos pueden ser convocados de forma directa por alcaldes o gobernadores para consultar temas locales de su interés.",
+    "B": "El plebiscito es convocado exclusivamente por el Presidente de la República para someter a aprobación del pueblo una decisión política de su competencia; la consulta popular puede ser de orden nacional o territorial y somete un asunto de trascendencia general a consideración ciudadana.",
+    "C": "La consulta popular se orienta a derogar leyes preexistentes expedidas por el legislativo; el plebiscito se emplea para consultar reformas específicas a la Constitución que no hayan sido aprobadas por el Congreso.",
+    "D": "El plebiscito recae sobre iniciativas de ley presentadas por los ciudadanos ante el Congreso; la consulta popular se convoca para dirimir conflictos de límites territoriales entre municipios."
   },
   "clave": "B",
-  "justificacion_clave": "Describe la diferencia funcional y de finalidad entre ambos mecanismos de participación.",
+  "justificacion_clave": "El plebiscito es convocado exclusivamente por el Presidente de la República para someter a aprobación del pueblo una decisión política de su competencia; la consulta popular puede ser de orden nacional o territorial y somete un asunto de trascendencia general a consideración ciudadana.",
   "distractores_funcion": {
-    "A": "Generalización incorrecta: confunde voto con identidad jurídica.",
+    "A": "Generalización incorrecta: confunde la competencia exclusiva presidencial del plebiscito con las locales de la consulta.",
     "B": "Clave correcta.",
-    "C": "Atribución errónea de finalidades.",
-    "D": "Desconoce base constitucional de los mecanismos."
+    "C": "Confunde con los conceptos y funciones del referendo derogatorio o constitucional.",
+    "D": "Confunde con la iniciativa popular legislativa y con procedimientos administrativos de límites."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Escenarios generales y lenguaje controlado; sin exigencias extracontextuales no declaradas."
+    "observaciones": "Ítem basado en la Constitución Política y Ley 1757 de 2015, sin sesgos contextuales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción directa, única tarea cognitiva y opciones paralelas."
+    "observaciones": "Redacción técnica precisa, opciones balanceadas sintácticamente."
   },
   "metadata_editorial": {
     "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

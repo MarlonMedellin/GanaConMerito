@@ -1,45 +1,45 @@
 {
   "id_item": "NFL_B01_I02",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Fines de la educación",
   "tema": "Formación integral, fines de la educación y desarrollo de la personalidad",
   "subtema": "Interpretar el desarrollo de la personalidad como un asunto privado sin responsabilidad pedagógica de la escuela.",
   "competencia": "Interpretación de desarrollo integral de la personalidad",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende que el desarrollo de la personalidad implica una formación multidimensional y regulada por derechos, convivencia y orden jurídico.",
-  "evidencia": "Selecciona una explicación que integra dimensiones físicas, psíquicas, intelectuales, morales, sociales, afectivas, éticas y cívicas.",
-  "tarea": "Interpretar el alcance de un fin educativo legal.",
-  "contexto": "Un docente sostiene que la escuela solo debe preparar al estudiante para aprobar exámenes, sin ocuparse de su dimensión ética, social, afectiva o ciudadana. Otro docente afirma que la Ley 115 entiende la educación de forma más amplia.",
-  "enunciado": "Un docente sostiene que la escuela solo debe preparar al estudiante para aprobar exámenes, sin ocuparse de su dimensión ética, social, afectiva o ciudadana. Otro docente afirma que la Ley 115 entiende la educación de forma más amplia.\n\n¿Qué significa el pleno desarrollo de la personalidad como fin de la educación?",
+  "claim": "Valora la adecuación de actuaciones pedagógicas e institucionales bajo criterios normativos y constitucionales.",
+  "evidencia": "Selecciona la respuesta que demuestra la correcta aplicación del marco normativo y pedagógico colombiano.",
+  "tarea": "Analizar el caso y determinar la opción correcta conforme a derecho y principios pedagógicos.",
+  "contexto": "En un debate institucional, un docente afirma que la función exclusiva de la escuela es la transmisión de conocimientos científicos y la preparación para pruebas estandarizadas, argumentando que las dimensiones éticas, afectivas y sociales pertenecen a la esfera privada familiar. Otro docente réplica invocando los fines de la educación de la Ley 115.",
+  "enunciado": "En un debate institucional, un docente afirma que la función exclusiva de la escuela es la transmisión de conocimientos científicos y la preparación para pruebas estandarizadas, argumentando que las dimensiones éticas, afectivas y sociales pertenecen a la esfera privada familiar. Otro docente réplica invocando los fines de la educación de la Ley 115.\n\n¿Qué alcance tiene el fin de la educación relativo al pleno desarrollo de la personalidad?",
   "opciones": {
-    "A": "Promover una formación integral física, psíquica, intelectual, moral, social, afectiva, ética y cívica, respetando los derechos de los demás y el orden jurídico.",
-    "B": "Permitir que cada estudiante haga cualquier cosa sin límites ni responsabilidades.",
-    "C": "Reducir la formación a resultados de pruebas estandarizadas.",
-    "D": "Delegar toda dimensión ética y ciudadana exclusivamente en la familia."
+    "A": "Garantizar una formación armónica que integre el desarrollo físico, intelectual, moral, ético y cívico del estudiante, favoreciendo su autonomía y responsabilidad dentro del marco social.",
+    "B": "Permitir el libre albedrío absoluto del estudiante dentro del aula de clases, eximiéndolo del cumplimiento de deberes y normas disciplinarias que restrinjan su expresión individual.",
+    "C": "Establecer talleres de orientación ocupacional que faciliten la inserción del estudiante en la formación técnica y laboral en concordancia con sus rasgos individuales.",
+    "D": "Fomentar la individualización curricular absoluta del aprendizaje, adaptando las asignaturas exclusivamente a los gustos, ritmos e inclinaciones temporales de cada estudiante."
   },
   "clave": "A",
   "justificacion_clave": "A",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque la personalidad se desarrolla dentro de límites de derechos y convivencia.",
-    "C": "Es incorrecta porque las pruebas no agotan los fines de la educación.",
-    "D": "Es incorrecta porque la formación ética y ciudadana también es tarea escolar."
+    "B": "Distorsión legal: confunde el libre desarrollo de la personalidad con un libertinaje exento de deberes constitucionales e institucionales.",
+    "C": "Sesgo de reducción utilitaria: limita el desarrollo de la personalidad al ámbito de la formación laboral y técnica temprana.",
+    "D": "Desviación didáctica: confunde el reconocimiento de ritmos individuales con una fragmentación extrema del currículo escolar que impediría el aprendizaje grupal."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Reconoce pluralidad de desarrollo personal sin convertirlo en permisividad ni en rendimiento estandarizado."
+    "observaciones": "Lenguaje formal, neutral y apegado a la jurisprudencia colombiana en materia de derechos y deberes educativos, libre de sesgos territoriales o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Redacción estructurada con enunciados independientes y opciones de longitud y complejidad gramatical homogéneas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Formación integral, fines de la educación y desarrollo de la personalidad/NFL_B01_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

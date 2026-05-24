@@ -11,20 +11,20 @@
   "evidencia": "Selecciona una única alternativa defendible técnicamente y coherente con el constructo del ítem.",
   "tarea": "Analizar la situación presentada y elegir la respuesta más pertinente según criterios pedagógicos y normativos aplicables.",
   "contexto": "Una institución educativa revisa su planeación de preescolar y quiere verificar si está atendiendo el desarrollo integral definido por la Ley 115.",
-  "enunciado": "Una institución educativa revisa su planeación de preescolar y quiere verificar si está atendiendo el desarrollo integral definido por la Ley 115.\n\n¿Cuáles son las cinco dimensiones que deben trabajarse en este nivel?",
+  "enunciado": "Teniendo en cuenta el artículo 15 de la Ley General de Educación (Ley 115 de 1994), ¿cuáles son los aspectos fundamentales en los que se debe promover el desarrollo integral de los niños en el nivel de preescolar?",
   "opciones": {
-    "A": "Biológica, cognoscitiva, sicomotriz, socioafectiva y espiritual.",
-    "B": "Financiera, administrativa, jurídica, comercial y disciplinaria.",
-    "C": "Memorística, punitiva, competitiva, sancionatoria y repetitiva.",
-    "D": "Exclusivamente lectoescritura, cálculo, caligrafía, dictado y examen escrito."
+    "A": "Biológico, cognoscitivo, sicomotriz, socio-affectivo y espiritual.",
+    "B": "Socioafectivo, corporal, cognitivo, comunicativo, estético, espiritual y ético.",
+    "C": "Físico, lingüístico, lógico-matemático, moral y socioemocional.",
+    "D": "Sensoriomotor, preoperacional, de operaciones concretas, formal y social."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "El Artículo 15 de la Ley 115 de 1994 establece expresamente que la educación preescolar busca el desarrollo integral del niño en sus aspectos biológico, cognoscitivo, sicomotriz, socio-afectivo y espiritual.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Menciona dimensiones administrativas, no del desarrollo infantil.",
-    "C": "Propone un enfoque punitivo contrario al sentido del preescolar.",
-    "D": "Reduce el preescolar a escolarización académica temprana."
+    "B": "Menciona las siete dimensiones del desarrollo definidas en el Decreto 2247 de 1997, no los cinco aspectos explícitos de la Ley 115 de 1994.",
+    "C": "Menciona una clasificación contemporánea de dominios del desarrollo infantil común en guías pedagógicas pero no normativa de la Ley 115.",
+    "D": "Refiere a las etapas del desarrollo cognitivo según la teoría psicogenética de Jean Piaget."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Desarrollo integral en preescolar - cinco dimensiones/EIP_B03_I01.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

@@ -11,20 +11,20 @@
   "evidencia": "Selecciona una única opción defendible frente a distractores plausibles en función del constructo.",
   "tarea": "Analizar el caso y elegir la decisión más pertinente conforme al enfoque del ítem.",
   "contexto": "Al iniciar el año escolar, un docente aplica una prueba escrita de contenidos del grado anterior y considera que con ese resultado ya conoce suficientemente a su grupo. Sin embargo, durante las primeras semanas observa diferencias en habilidades comunicativas, ritmos de aprendizaje, motivación, participación, estado emocional y condiciones familiares que afectan el proceso.",
-  "enunciado": "Al iniciar el año escolar, un docente aplica una prueba escrita de contenidos del grado anterior y considera que con ese resultado ya conoce suficientemente a su grupo. Sin embargo, durante las primeras semanas observa diferencias en habilidades comunicativas, ritmos de aprendizaje, motivación, participación, estado emocional y condiciones familiares que afectan el proceso.\n\n¿Por qué un verdadero diagnóstico pedagógico no debe limitarse a una prueba escrita de contenidos?",
+  "enunciado": "Teniendo en cuenta los principios de la evaluación formativa y el diagnóstico pedagógico integral, ¿por qué este proceso inicial no debe limitarse exclusivamente a una prueba escrita de contenidos académicos?",
   "opciones": {
-    "A": "Porque el diagnóstico debe eliminar toda información académica para concentrarse únicamente en aspectos emocionales.",
-    "B": "Porque una prueba escrita siempre es inválida y nunca aporta información útil para el docente.",
-    "C": "Porque el diagnóstico debe explorar conocimientos, habilidades, ritmos, intereses, contexto y estado socioemocional para orientar la planeación y los apoyos pedagógicos.",
-    "D": "Porque el diagnóstico sirve para clasificar definitivamente a los estudiantes entre capaces y no capaces desde el inicio del año."
+    "A": "Porque el diagnóstico inicial debe enfocarse de manera exclusiva en recopilar información de las condiciones socioeconómicas y del entorno social de las familias, prescindiendo del estado académico de los estudiantes.",
+    "B": "Because las pruebas escritas de contenido al inicio del año carecen de validez técnica y psicométrica, debiendo sustituirse en su totalidad por observación libre durante el primer período académico.",
+    "C": "Porque el diagnóstico integral requiere valorar saberes conceptuales previos en articulación con dimensiones cognitivas, socioemocionales, ritmos de aprendizaje e información del contexto familiar del estudiante para diseñar la planeación y los apoyos pedagógicos.",
+    "D": "Porque el diagnóstico tiene como único propósito técnico clasificar y agrupar a los estudiantes por niveles homogéneos de desempeño para estructurar planes de estudio diferenciados e independientes."
   },
   "clave": "C",
-  "justificacion_clave": "C",
+  "justificacion_clave": "El diagnóstico pedagógico integral es formativo y busca identificar el estado de entrada del estudiante en sus múltiples dimensiones (cognitiva, afectiva, social y familiar). Esto permite al docente estructurar una planeación didáctica pertinente, con los ajustes razonables necesarios para responder a la diversidad del aula.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque el diagnóstico no debe excluir lo académico; debe integrarlo con otras dimensiones del estudiante.",
-    "B": "Es incorrecta porque una prueba escrita puede aportar información útil, pero no agota el diagnóstico pedagógico.",
+    "A": "El diagnóstico integral no anula lo académico; por el contrario, lo articula de forma holística con otras dimensiones personales del estudiante.",
+    "B": "Error conceptual de invalidar las pruebas escritas: estas sí aportan información valiosa sobre saberes conceptuales, pero el error radica en creer que son suficientes por sí solas para conocer integralmente al grupo.",
     "C": "Clave correcta.",
-    "D": "Es incorrecta porque el diagnóstico no debe usarse para etiquetar o clasificar definitivamente a los estudiantes, sino para orientar apoyos y decisiones pedagógicas."
+    "D": "Propone un enfoque segregador y de etiquetado de estudiantes que contradice el principio de inclusión y evaluación formativa del marco educativo colombiano."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Diagnóstico pedagógico integral/EFCC_B05_I01.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

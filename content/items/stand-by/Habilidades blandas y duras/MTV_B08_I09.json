@@ -1,45 +1,45 @@
 {
   "id_item": "MTV_B08_I09",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Gestión educativa",
-  "tema": "Habilidades blandas y duras",
-  "subtema": "Aplicación pedagógica",
-  "competencia": "Juicio pedagógico",
-  "nivel_cognitivo": "APLICACION",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Juicio pedagógico",
+  "tema": "Gestión del clima de aula",
+  "subtema": "Liderazgo y manejo de grupo",
+  "competencia": "Estructura un ambiente seguro y estimulante en el aula mediante técnicas de liderazgo, autorregulación y resolución constructiva de conflictos.",
+  "nivel_cognitivo": "APLICACIÓN",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "Durante una clase, un estudiante hace un comentario desafiante. El docente siente molestia, pero respira, evita responder con gritos, retoma la norma de convivencia y conversa con el estudiante en un momento adecuado.",
-  "enunciado": "Durante una clase, un estudiante hace un comentario desafiante. El docente siente molestia, pero respira, evita responder con gritos, retoma la norma de convivencia y conversa con el estudiante en un momento adecuado.\n\n¿Qué competencia blanda se evidencia principalmente?",
+  "claim": "El docente ejerce su liderazgo en el aula manejando comentarios desafiantes de forma serena y pedagógica, sin recurrir al autoritarismo.",
+  "evidencia": "Elige la respuesta del docente que redirige un cuestionamiento estudiantil hacia el valor de aprendizaje, manteniendo el respeto mutuo.",
+  "tarea": "Seleccionar la intervención docente más adecuada frente al cuestionamiento público de un estudiante a la utilidad de la materia.",
+  "contexto": "En medio de una explicación sobre el programa de estudios, un estudiante interrumpe la clase diciendo en voz alta: 'Esta asignatura no sirve para nada, es una pérdida de tiempo'. El docente experimenta molestia, pero decide controlar su reacción emocional.",
+  "enunciado": "Con el propósito de mantener el clima de aula constructivo y demostrar liderazgo pedagógico, el docente debe:",
   "opciones": {
-    "A": "Improvisación impulsiva.",
-    "B": "Autocontrol emocional.",
-    "C": "Conocimiento enciclopédico.",
-    "D": "Habilidad caligráfica."
+    "A": "Ordenar al estudiante salir del salón y presentarse en coordinación académica por irrespeto y alteración del orden de la clase.",
+    "B": "Hacer caso omiso al comentario para no darle protagonismo al estudiante, continuar con la explicación y restar puntos de participación al final del período.",
+    "C": "Acoger de forma serena la inquietud, explicar brevemente la utilidad práctica de la asignatura en el contexto cotidiano e invitar al estudiante a profundizar sus dudas al finalizar la sesión.",
+    "D": "Pedir al resto del grupo que vote públicamente si están de acuerdo con el estudiante, a fin de desvirtuar su afirmación y restablecer la disciplina."
   },
-  "clave": "B",
-  "justificacion_clave": "B",
+  "clave": "C",
+  "justificacion_clave": "La opción C es correcta porque integra la autorregulación emocional con el liderazgo pedagógico: en lugar de reaccionar de forma punitiva o evasiva, el docente reencauza el desafío como una oportunidad pedagógica, valida de forma respetuosa la opinión del estudiante y protege el tiempo de aprendizaje colectivo.",
   "distractores_funcion": {
-    "A": "El caso muestra control, no impulsividad.",
-    "B": "Clave correcta.",
-    "C": "El conocimiento enciclopédico no describe la conducta emocional.",
-    "D": "La caligrafía no tiene relación con el manejo del conflicto."
+    "A": "Es una respuesta punitiva desproporcionada que rompe los canales de comunicación y no resuelve la inquietud de fondo.",
+    "B": "Evita el manejo del conflicto en el aula y adopta una represalia indirecta y no formativa.",
+    "C": "Clave correcta.",
+    "D": "Utiliza la presión del grupo de forma inadecuada para confrontar al estudiante, lo que puede deteriorar la confianza y el clima de convivencia."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem no exige que el docente no sienta emociones, sino que las gestione adecuadamente."
+    "observaciones": "Situación típica de aula aplicable a cualquier nivel y contexto sociocultural."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Sintaxis sencilla y opciones de respuesta bien diferenciadas."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I09.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

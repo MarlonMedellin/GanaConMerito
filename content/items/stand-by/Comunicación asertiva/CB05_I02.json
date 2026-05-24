@@ -11,20 +11,20 @@
   "evidencia": "Selecciona una única alternativa técnicamente superior frente a distractores plausibles.",
   "tarea": "Analizar la situación planteada y elegir la respuesta más adecuada según el criterio del ítem.",
   "contexto": "Una madre de familia llega molesta a la institución porque considera que su hijo fue tratado injustamente en clase. Eleva el tono de voz y exige una solución inmediata.",
-  "enunciado": "Una madre de familia llega molesta a la institución porque considera que su hijo fue tratado injustamente en clase. Eleva el tono de voz y exige una solución inmediata.\n\n¿Cuál respuesta inicial del docente o directivo es más asertiva?",
+  "enunciado": "Ante el reclamo airado de la madre de familia, ¿cuál es el comportamiento inicial del docente o directivo que evidencia de mejor manera la competencia de comunicación efectiva?",
   "opciones": {
-    "A": "Indicarle que no será atendida mientras esté molesta y cerrar la conversación.",
-    "B": "Responder en el mismo tono para dejar claro que la institución también merece respeto.",
-    "C": "Escuchar su inconformidad, reconocer la importancia del asunto y proponer revisar los hechos con las personas involucradas.",
-    "D": "Aceptar de inmediato todo lo que solicita para evitar que la situación se agrave."
+    "A": "Indicarle con firmeza que no será atendida hasta que modifique su tono de voz y actitud, cerrando la puerta del cubículo para evitar gritos.",
+    "B": "Elevar el tono de voz para defender la autoridad institucional frente a las acusaciones, aclarando de inmediato que el trato en clase siempre es justo.",
+    "C": "Escuchar de forma atenta y respetuosa la inconformidad sin interrumpir, validar su preocupación, y proponer un espacio formal y tranquilo para revisar el caso objetivamente con las partes involucradas.",
+    "D": "Acceder de inmediato a todas las solicitudes de la madre de familia y disculparse en nombre de la institución para evitar que escale el conflicto."
   },
   "clave": "C",
-  "justificacion_clave": "C",
+  "justificacion_clave": "La competencia exige mantener la escucha atenta para comprender la información recibida y responder con tono agradable y precisión al receptor, incluso en situaciones de tensión, canalizando el diálogo a espacios objetivos y constructivos.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque cierra el canal de comunicación y puede intensificar la tensión con la familia.",
-    "B": "Es incorrecta porque responder en el mismo tono reproduce la confrontación y debilita el rol profesional.",
+    "A": "Representa una respuesta reactiva de barrera y bloqueo de la comunicación que puede exacerbar el descontento de la familia.",
+    "B": "Constituye una escalada simétrica que viola el principio de mantener un tono agradable, profesional y centrado en la resolución de problemas.",
     "C": "Clave correcta.",
-    "D": "Es incorrecta porque aceptar de inmediato todo lo solicitado evita el conflicto momentáneamente, pero omite la revisión justa de los hechos."
+    "D": "Cede sin el debido proceso ni verificación de los hechos, lo cual demuestra debilidad en la gestión institucional y desprotección del docente implicado."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Comunicación asertiva/CB05_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

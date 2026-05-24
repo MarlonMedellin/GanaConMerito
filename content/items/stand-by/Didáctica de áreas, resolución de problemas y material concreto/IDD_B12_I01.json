@@ -7,38 +7,38 @@
   "competencia": "Selecciona estrategias didácticas de resolución de problemas apoyadas en material concreto y mediación pedagógica.",
   "nivel_cognitivo": "APLICACIÓN",
   "dificultad_estimada": "MEDIA",
-  "claim": "Reconoce la alternativa pedagógica o institucional más adecuada según el criterio técnico evaluado en el caso.",
-  "evidencia": "Selecciona una única opción defendible frente a distractores plausibles en función del constructo.",
-  "tarea": "Analizar el caso y elegir la decisión más pertinente conforme al enfoque del ítem.",
+  "claim": "Reconoce la alternativa pedagógica más adecuada para de estructurar la resolución de problemas según los lineamientos curriculares de matemáticas.",
+  "evidencia": "Selecciona estrategias que promueven la modelación y transferencia de procedimientos en situaciones significativas frente a distractores de ejercitación tradicional.",
+  "tarea": "Determinar la acción didáctica más pertinente para reorientar una práctica mecánica hacia el desarrollo de competencias de resolución de problemas.",
   "contexto": "En una clase de matemáticas, el docente llena varios tableros con procedimientos y luego asigna docenas de ejercicios mecánicos. Los estudiantes logran repetir algunos pasos, pero no saben cuándo ni para qué usar esos procedimientos en situaciones de su vida cotidiana.",
-  "enunciado": "En una clase de matemáticas, el docente llena varios tableros con procedimientos y luego asigna docenas de ejercicios mecánicos. Los estudiantes logran repetir algunos pasos, pero no saben cuándo ni para qué usar esos procedimientos en situaciones de su vida cotidiana.\n\n¿Por qué esta estrategia no cumple el objetivo primario de solucionar problemas del entorno?",
+  "enunciado": "En una clase de matemáticas, el docente llena varios tableros con procedimientos y luego asigna docenas de ejercicios mecánicos. Los estudiantes logran repetir algunos pasos, pero no saben cuándo ni para qué usar esos procedimientos en situaciones de su vida cotidiana. ¿Cuál de las siguientes acciones didácticas es la más pertinente para reorientar esta práctica hacia el desarrollo de la competencia de resolución de problemas de forma significativa?",
   "opciones": {
-    "A": "Porque privilegia repetición procedimental sin asegurar comprensión, modelación ni transferencia a situaciones significativas.",
-    "B": "Porque las matemáticas no deben incluir procedimientos.",
-    "C": "Porque todo ejercicio escrito debe eliminarse del aula.",
-    "D": "Porque resolver problemas cotidianos no tiene relación con el aprendizaje matemático."
+    "A": "Diseñar situaciones problema contextualizadas que requieran que el estudiante identifique y modele relaciones matemáticas, utilizando los procedimientos como herramientas para llegar a soluciones justificadas.",
+    "B": "Priorizar el uso de problemas de tipo verbal al finalizar la guía de ejercicios mecánicos, asegurando que los estudiantes traduzcan literalmente los enunciados a fórmulas preestablecidas.",
+    "C": "Incrementar la variedad de algoritmos explicados en el tablero antes de asignar el taller, de modo que los alumnos cuenten con un repertorio memorístico más amplio para aplicar por ensayo y error.",
+    "D": "Sustituir el tablero por material didáctico manipulativo individual para que repitan físicamente los mismos pasos algorítmicos explicados por el docente."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "La opción A promueve un aprendizaje por competencias, donde la resolución de problemas es el núcleo del aprendizaje matemático y los procedimientos se asumen como herramientas de modelación y no como fines en sí mismos.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque los procedimientos sí son importantes, pero deben comprenderse y aplicarse.",
-    "C": "Es incorrecta porque escribir ejercicios puede ser útil si se integra con sentido.",
-    "D": "Es incorrecta porque resolver problemas cotidianos es central en la competencia matemática."
+    "B": "Confusión didáctica: asume que la contextualización consiste en poner enunciados verbales al final de un taller mecánico sin modificar la lógica reproductiva de traducción de fórmulas.",
+    "C": "Sesgo tradicional: supone que la acumulación de explicaciones y la repetición algorítmica desarrollan por sí solas capacidades analíticas de resolución de problemas.",
+    "D": "Uso instrumental del material: reduce el valor del material manipulativo a la reproducción física de un algoritmo, manteniendo el enfoque mecánico de la clase."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estándar y contexto institucional general sin sesgos culturales innecesarios."
+    "observaciones": "Lenguaje técnico docente estándar y sin sesgos de género o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura y exigencia."
+    "observaciones": "Opciones homogéneas y longitud balanceada."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I01.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

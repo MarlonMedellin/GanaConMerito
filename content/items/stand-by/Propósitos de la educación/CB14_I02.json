@@ -1,45 +1,45 @@
 {
   "id_item": "CB14_I02",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión académica",
   "tema": "Propósitos de la educación",
   "subtema": "Desconocimiento de fines educativos",
   "competencia": "Fundamentos educativos",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado reconoce que los fines educativos orientan decisiones curriculares hacia ciudadanía, convivencia, pensamiento crítico y desarrollo humano.",
-  "evidencia": "Selecciona una valoración que reconoce la pertinencia de acciones pedagógicas orientadas a lectura crítica, participación estudiantil y solución pacífica de conflictos.",
-  "tarea": "Analizar una propuesta académica y determinar si responde a fines integrales de la educación.",
-  "contexto": "Una institución decide fortalecer proyectos de lectura crítica, participación estudiantil y solución pacífica de conflictos. Algunos integrantes del equipo consideran que estas acciones no hacen parte de los propósitos académicos.",
-  "enunciado": "Una institución decide fortalecer proyectos de lectura crítica, participación estudiantil y solución pacífica de conflictos. Algunos integrantes del equipo consideran que estas acciones no hacen parte de los propósitos académicos.\n\n¿Cuál valoración es más adecuada?",
+  "claim": "El evaluado reconoce que la lectura crítica, la participación y la resolución pacífica de conflictos forman parte de los fines académicos esenciales de la educación.",
+  "evidencia": "Valora los proyectos transversales de ciudadanía y pensamiento crítico como componentes curriculares clave del PEI.",
+  "tarea": "Analizar el valor curricular y normativo de proyectos de lectura crítica, democracia y convivencia.",
+  "contexto": "El rector de una institución educativa decide fortalecer los proyectos transversales de lectura crítica, participación estudiantil democrática y mediación de conflictos. Algunos miembros de la comunidad afirman que estas acciones restan tiempo de calidad para la enseñanza de las materias tradicionales y que no aportan valor a la formación académica del estudiante.",
+  "enunciado": "¿Qué valoración es la adecuada en este caso?",
   "opciones": {
-    "A": "Son acciones pertinentes porque los propósitos educativos incluyen formación integral, ciudadanía y convivencia.",
-    "B": "Son acciones improcedentes porque solo las áreas con examen externo tienen valor educativo.",
-    "C": "Son acciones recreativas que deben desarrollarse fuera de la jornada escolar.",
-    "D": "Son acciones que solo corresponden a orientación escolar y no al currículo."
+    "A": "Son pertinentes y necesarias, ya que el desarrollo del pensamiento crítico, la participación democrática y la resolución de conflictos son fines esenciales de la educación colombiana (Ley 115 de 1994).",
+    "B": "Son improcedentes, dado que la labor académica debe restringirse de forma exclusiva a las asignaturas tradicionales sujetas a evaluación sumativa externa.",
+    "C": "Son de carácter estrictamente lúdico y extracurricular, por lo cual deben realizarse fuera de la jornada escolar para no restar tiempo a las áreas obligatorias.",
+    "D": "Son de exclusiva competencia del orientador escolar, estando vedada su integración o articulación con las mallas curriculares y planes de área."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "Los fines de la educación en Colombia (Art. 5, Ley 115) contemplan explícitamente la formación en el respeto a la vida y los derechos humanos, la participación democrática, la adquisición de una conciencia para la justicia, y el desarrollo del pensamiento crítico. Estos objetivos no son extracurriculares, sino ejes transversales del PEI.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque restringe el valor educativo a las áreas evaluadas externamente y desconoce dimensiones formativas esenciales.",
-    "C": "Es incorrecta porque presenta estas acciones como recreativas, cuando pueden integrarse al currículo y a la vida institucional.",
-    "D": "Es incorrecta porque la formación integral no corresponde exclusivamente a orientación escolar; también debe articularse con el currículo, la convivencia y la gestión académica."
+    "B": "Incurre en el error de limitar la pertinencia académica a la preparación de exámenes estandarizados, desconociendo el mandato de integralidad.",
+    "C": "Considera erróneamente que las competencias transversales no poseen valor conceptual y por tanto deben desplazarse de la jornada regular de clases.",
+    "D": "Representa el error organizacional de fragmentar la convivencia y el desarrollo del pensamiento crítico, excluyendo al docente de aula y recargando al orientador."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem no exige experiencia en un programa institucional específico ni conocimiento normativo literal. Evalúa una comprensión amplia de los fines educativos y evita favorecer a docentes de un área particular. Además, no contrapone el aprendizaje académico con la formación ciudadana y convivencial."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Enunciado claro."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Propósitos de la educación/CB14_I02.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

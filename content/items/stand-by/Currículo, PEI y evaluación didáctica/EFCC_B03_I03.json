@@ -1,44 +1,44 @@
 {
   "id_item": "EFCC_B03_I03",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Didáctica y evaluación curricular",
+  "area": "Evaluación, currículo y didáctica",
   "tema": "Currículo, PEI y evaluación didáctica",
   "subtema": "Currículo, PEI y Evaluación Didáctica",
-  "competencia": "Selecciona estrategias de evaluación didáctica coherentes con el currículo y el PEI institucional.",
+  "competencia": "Defender el principio de autonomía escolar consagrado en la Ley 115 frente a modelos externos de evaluación docente reduccionistas.",
   "nivel_cognitivo": "JUICIO",
-  "dificultad_estimada": "MEDIA-ALTA",
-  "claim": "Identifica la alternativa más adecuada según el criterio curricular y pedagógico evaluado en el caso.",
-  "evidencia": "Selecciona una única respuesta técnicamente defendible frente a distractores plausibles.",
-  "tarea": "Analizar la situación y elegir la mejor decisión curricular, didáctica o institucional.",
-  "contexto": "Una entidad propone evaluar a los docentes exclusivamente con base en los resultados de sus estudiantes en pruebas estandarizadas de Estado. La institución advierte que esta decisión no considera el PEI, el contexto, la diversidad del grupo, las prácticas pedagógicas ni otros procesos formativos.",
-  "enunciado": "Una entidad propone evaluar a los docentes exclusivamente con base en los resultados de sus estudiantes en pruebas estandarizadas de Estado. La institución advierte que esta decisión no considera el PEI, el contexto, la diversidad del grupo, las prácticas pedagógicas ni otros procesos formativos.\n\n¿Por qué esta forma exclusiva de evaluación puede atentar contra la autonomía escolar y el currículo?",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado defiende el principio de autonomía escolar consagrado en la Ley 115 y el Decreto 1860 de 1994, frente a la simplificación y reducción del currículo a estándares y pruebas externas masivas.",
+  "evidencia": "Identifica el derecho de los establecimientos de adecuar las directrices oficiales a sus contextos, PEI y necesidades específicas de aprendizaje de la comunidad.",
+  "tarea": "Resolver un conflicto de gestión curricular donde se pretende imponer los resultados de pruebas estandarizadas externas como único criterio de valoración pedagógica.",
+  "contexto": "Una entidad territorial propone evaluar el desempeño de la planta docente de las instituciones oficiales vinculando su permanencia y estímulos de manera directa y exclusiva a los puntajes obtenidos por sus estudiantes en las pruebas estatales estandarizadas de fin de ciclo escolar.",
+  "enunciado": "Al analizar esta propuesta de gestión escolar desde el marco constitucional y de la Ley General de Educación, la posición más coherente del establecimiento educativo es:",
   "opciones": {
-    "A": "Porque toda evaluación docente debe eliminar cualquier evidencia sobre aprendizajes de los estudiantes.",
-    "B": "Porque las pruebas estandarizadas siempre son inútiles y no aportan ninguna información institucional.",
-    "C": "Porque reduce el desempeño docente a un único resultado externo y desconoce contexto, PEI, currículo, prácticas pedagógicas y procesos formativos no medidos por la prueba.",
-    "D": "Porque la autonomía escolar significa que ningún docente puede ser evaluado bajo ningún criterio."
+    "A": "Cuestionar la propuesta por reducir la complejidad pedagógica del desempeño docente a una sola métrica externa, ignorando las condiciones socioeconómicas locales de vulnerabilidad del contexto, la diversidad del aula escolar y el horizonte pedagógico autónomo de cada establecimiento educativo plasmado en el PEI.",
+    "B": "Aceptar la propuesta debido a que los resultados numéricos de las pruebas masivas son la única variable pedagógica válida que da cuenta del impacto real del proceso formativo de la escuela.",
+    "C": "Proponer que se elimine por completo la participación de la institución oficial en todo tipo de pruebas estandarizadas nacionales para salvaguardar la autonomía del SIEE.",
+    "D": "Solicitar que la evaluación docente oficial sea realizada de forma directa por los delegados de la comunidad y del entorno local para asegurar un juicio democrático y sin criterios académicos."
   },
-  "clave": "C",
-  "justificacion_clave": "C",
+  "clave": "A",
+  "justificacion_clave": "La evaluación docente integral debe ser multifactorial (teniendo en cuenta contextos, planeaciones, prácticas pedagógicas y metas formativas). Reducirla a una única variable externa (pruebas estandarizadas) vulnera la autonomía escolar de la Ley 115, promueve una deformación didáctica ('enseñar para la prueba') y castiga a los docentes por variables contextuales y de diversidad que escapan a su control.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque los aprendizajes de los estudiantes sí pueden aportar evidencia, pero no deben ser la única fuente.",
-    "B": "Es incorrecta porque las pruebas estandarizadas pueden ofrecer información útil si se interpretan con contexto y junto con otras evidencias.",
-    "C": "Clave correcta.",
-    "D": "Es incorrecta porque la autonomía escolar no significa ausencia de evaluación, sino capacidad de orientar el proyecto educativo con criterios pertinentes y contextualizados."
+    "A": "Clave correcta.",
+    "B": "Adopta una visión eficientista y reduccionista extrema que contradice los fines de la educación de la Ley 115 y la integralidad formativa.",
+    "C": "Extremo de aislamiento que rechaza la rendición de cuentas pública y el uso pedagógico diagnóstico complementario de las pruebas externas.",
+    "D": "Propone una salida de evaluación informal sin criterios que vulnera la carrera administrativa docente y el rigor técnico."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estandarizado y contexto institucional general, sin sesgos culturales innecesarios."
+    "observaciones": "Mide capacidad de análisis legal y curricular."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado claro, tarea única y opciones homogéneas en estructura."
+    "observaciones": "Redacción estructurada con opciones de longitud semejante."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Currículo, PEI y evaluación didáctica/EFCC_B03_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

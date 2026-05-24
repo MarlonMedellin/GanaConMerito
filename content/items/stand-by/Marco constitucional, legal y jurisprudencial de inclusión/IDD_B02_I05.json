@@ -1,6 +1,6 @@
 {
   "id_item": "IDD_B02_I05",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Inclusión y Atención a la Discapacidad",
   "tema": "Marco constitucional, legal y jurisprudencial de inclusión",
   "subtema": "Uso de la discapacidad como razón para negar matrícula, continuidad o ajustes en la institución.",
@@ -13,18 +13,18 @@
   "contexto": "Una familia solicita cupo para un estudiante con discapacidad. La institución considera negar la matrícula argumentando que no está preparada para atenderlo y que sería mejor que busque otro lugar.",
   "enunciado": "Una familia solicita cupo para un estudiante con discapacidad. La institución considera negar la matrícula argumentando que no está preparada para atenderlo y que sería mejor que busque otro lugar.\n\n¿Cuál actuación es coherente con el marco de educación inclusiva y no discriminación?",
   "opciones": {
-    "A": "No negar el cupo por razón de discapacidad; realizar valoración pedagógica, identificar barreras, organizar apoyos y ajustes razonables, y articularlos al proceso institucional.",
-    "B": "Negar la matrícula porque la discapacidad siempre impide aprender en un aula regular.",
-    "C": "Aceptar al estudiante solo si la familia renuncia por escrito a cualquier ajuste razonable.",
-    "D": "Matricularlo, pero mantenerlo separado del grupo sin participación en las actividades comunes."
+    "A": "Matricular al estudiante sin condicionamientos, realizar una valoración pedagógica transicional para identificar barreras, y construir colaborativamente el Plan Individual de Ajustes Razonables (PIAR).",
+    "B": "Postergar el ingreso del estudiante hasta que la institución cuente con personal especializado de apoyo pedagógico y recursos tecnológicos adaptados.",
+    "C": "Sugerir de manera concertada con la familia el traslado a una institución especializada de carácter terapéutico para garantizar una atención adecuada.",
+    "D": "Condicionar la matrícula a la firma de un acta de compromiso donde la familia asuma la responsabilidad de contratar un tutor de sombra o apoyo externo."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "La clave es la A. En la normatividad colombiana (Decreto 1421 de 2017), bajo ninguna circunstancia se puede negar el acceso al servicio educativo por motivos de discapacidad. La matrícula debe ser inmediata y el colegio debe desplegar sus recursos internos para iniciar el diseño del PIAR en los tiempos establecidos.",
   "distractores_funcion": {
-    "A": "Clave correcta.",
-    "B": "Es incorrecta porque niega el derecho a la educación por discapacidad.",
-    "C": "Es incorrecta porque condiciona el derecho a renunciar a medidas necesarias.",
-    "D": "Es incorrecta porque confunde matrícula con inclusión efectiva."
+    "A": "Clave correcta. Representa la garantía inmediata del derecho fundamental a la educación y el inicio de la ruta pedagógica.",
+    "B": "Dilación ilegal. Condicionar el ingreso a la disponibilidad de personal de apoyo es una barrera administrativa violatoria del derecho a la educación.",
+    "C": "Exclusión encubierta. Derivar a centros terapéuticos alegando 'mejor atención' es una forma de discriminación y segregación.",
+    "D": "Vulneración de gratuidad. Imponer a la familia el costo o contratación de tutores de sombra es ilegal, dado que los apoyos deben ser gestionados por el establecimiento escolar."
   },
   "fairness": {
     "sesgo_detectado": false,

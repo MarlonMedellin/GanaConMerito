@@ -1,45 +1,45 @@
 {
   "id_item": "PPDC_B01_I02",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Didáctica y Práctica Pedagógica",
   "tema": "Práctica pedagógica no homogeneizadora y diversidad",
   "subtema": "Selección didáctica insuficiente frente a la heterogeneidad del aula.",
   "competencia": "Selección didáctica",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado reconoce que la eficacia didáctica en grupos heterogéneos depende de seleccionar estrategias variadas, flexibles y contextualizadas, no de aplicar una única técnica uniforme.",
-  "evidencia": "Elige una combinación didáctica que atiende ritmos, intereses, niveles de comprensión, formas de participación y necesidades de apoyo.",
-  "tarea": "Analizar una necesidad de aula heterogénea y seleccionar la estrategia didáctica más eficaz.",
+  "claim": "Valora la adecuación de actuaciones pedagógicas e institucionales bajo criterios normativos y constitucionales.",
+  "evidencia": "Selecciona la respuesta que demuestra la correcta aplicación del marco normativo y pedagógico colombiano.",
+  "tarea": "Analizar el caso y determinar la opción correcta conforme a derecho y principios pedagógicos.",
   "contexto": "Una docente recibe un grupo con diferencias notorias en ritmos de aprendizaje, intereses, niveles de comprensión y formas de participación. Quiere seleccionar métodos y técnicas que le permitan alcanzar mayor eficacia en la enseñanza.",
-  "enunciado": "Una docente recibe un grupo con diferencias notorias en ritmos de aprendizaje, intereses, niveles de comprensión y formas de participación. Quiere seleccionar métodos y técnicas que le permitan alcanzar mayor eficacia en la enseñanza.\n\n¿Cuál decisión didáctica es más pertinente?",
+  "enunciado": "Una docente recibe un grupo con diferencias notorias en ritmos de aprendizaje, intereses, niveles de comprensión y formas de participación. Quiere seleccionar métodos y técnicas que le permitan alcanzar mayor eficacia en la enseñanza.\n\n¿Cuál decisión didáctica de planeación curricular es la más pertinente?",
   "opciones": {
-    "A": "Aplicar una sola explicación magistral y una misma guía extensa para todos, porque así se garantiza igualdad.",
-    "B": "Combinar trabajo colaborativo, preguntas orientadoras, recursos variados, apoyos diferenciados y evaluación formativa según las necesidades del grupo.",
-    "C": "Dividir el grupo entre estudiantes rápidos y lentos, asignando tareas de menor valor a quienes presentan más dificultad.",
-    "D": "Eliminar actividades de participación para evitar diferencias visibles entre los estudiantes."
+    "A": "Implementar metodologías activas y diversificadas, que combinen el trabajo colaborativo, múltiples formas de representación de la información y evaluación formativa ajustada a los perfiles de los estudiantes.",
+    "B": "Dividir el grupo en subgrupos permanentes diferenciados por nivel cognitivo, asignando metas simplificadas de aprendizaje y tareas manuales a quienes registren mayor rezago.",
+    "C": "Mantener una única secuencia de instrucción magistral homogénea, complementando con talleres de nivelación obligatorios los fines de semana a cargo de las familias.",
+    "D": "Reducir la exigencia de los contenidos curriculares comunes a un nivel mínimo que resulte de fácil comprensión para la totalidad de los estudiantes."
   },
-  "clave": "B",
-  "justificacion_clave": "B",
+  "clave": "A",
+  "justificacion_clave": "A",
   "distractores_funcion": {
-    "A": "Es incorrecta porque aplicar lo mismo para todos no garantiza equidad ni eficacia.",
-    "B": "Clave correcta.",
-    "C": "Es incorrecta porque clasifica a los estudiantes desde una lógica de déficit y limita oportunidades de aprendizaje.",
-    "D": "Es incorrecta porque eliminar participación empobrece la experiencia y no atiende la diversidad."
+    "A": "Clave correcta.",
+    "B": "Segregación intra-aula: la agrupación permanente por rendimiento consolida etiquetas de inferioridad cognitiva y limita las interacciones enriquecedoras del grupo heterogéneo.",
+    "C": "Deslocalización pedagógica: perpetúa la clase tradicional y traslada la responsabilidad formativa a los hogares los fines de semana.",
+    "D": "Facilismo curricular: reduce la expectativa de aprendizaje general para toda la clase en lugar de ofrecer andamiajes y apoyos diferenciados en un currículo de alta exigencia."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem no penaliza contextos con recursos limitados ni asume que la diversidad sea un problema. Evalúa la selección profesional de estrategias didácticas pertinentes."
+    "observaciones": "Lenguaje formal, neutral y apegado a la jurisprudencia colombiana en materia de derechos y deberes educativos, libre de sesgos territoriales o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Redacción estructurada con enunciados independientes y opciones de longitud y complejidad gramatical homogéneas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Práctica pedagógica no homogeneizadora y diversidad/PPDC_B01_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

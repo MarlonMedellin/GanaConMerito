@@ -1,6 +1,6 @@
 {
   "id_item": "MTV_B18_I10",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "Tipos de currículo",
   "subtema": "Aplicación pedagógica",
@@ -13,18 +13,18 @@
   "contexto": "Una institución enseña oficialmente democracia en sus planes, pero en la vida cotidiana castiga toda opinión diferente. ¿Qué comparación explica mejor esta situación?",
   "enunciado": "Una institución enseña oficialmente democracia en sus planes, pero en la vida cotidiana castiga toda opinión diferente. ¿Qué comparación explica mejor esta situación?",
   "opciones": {
-    "A": "El currículo oficial y el oculto siempre coinciden plenamente.",
-    "B": "El currículo oficial puede declarar democracia, mientras el currículo oculto puede transmitir autoritarismo mediante prácticas reales.",
-    "C": "El currículo oculto solo existe en matemáticas.",
-    "D": "El currículo oficial no tiene documentos."
+    "A": "El currículo oficial formaliza el ejercicio del diálogo, y el currículo nulo suprime las asignaturas cívicas para evitar la crítica.",
+    "B": "El currículo oficial puede declarar la formación democrática, pero las interacciones cotidianas de corte autoritario constituyen un currículo oculto contradictorio.",
+    "C": "El currículo operacional se alinea de manera óptima con las misiones filosóficas del PEI sin generar tensiones didácticas.",
+    "D": "El currículo oculto se restringe al aprendizaje cognitivo de la instrucción ciudadana, aislando las prácticas relacionales."
   },
   "clave": "B",
-  "justificacion_clave": "B",
+  "justificacion_clave": "La discrepancia descrita ilustra la contradicción entre el currículo oficial (documentos normativos) y el currículo oculto (aprendizajes implícitos a través del modelamiento conductual y las prácticas de autoridad). Aunque se planifique la democracia, las conductas autoritarias de la institución enseñan que el disenso es castigado.",
   "distractores_funcion": {
-    "A": "Puede haber contradicciones entre ambos.",
+    "A": "Incorrecto. Confunde currículo nulo con la contradicción entre lo declarado y lo vivido, además el enunciado muestra que la asignatura cívica sí existe.",
     "B": "Clave correcta.",
-    "C": "El currículo oculto atraviesa toda la vida escolar.",
-    "D": "El oficial sí se expresa en documentos y normas."
+    "C": "Incorrecto. Ignora la evidente disonancia y contradicción descrita entre los planes del PEI y la práctica diaria en la escuela.",
+    "D": "Incorrecto. El currículo oculto se enfoca de manera primordial en el desarrollo relacional y actitudinal, no en los objetivos de instrucción cognitiva de las asignaturas."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Tipos de currículo/MTV_B18_I10.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

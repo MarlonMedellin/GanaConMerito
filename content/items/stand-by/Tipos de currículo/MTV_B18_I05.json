@@ -1,6 +1,6 @@
 {
   "id_item": "MTV_B18_I05",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "Tipos de currículo",
   "subtema": "Aplicación pedagógica",
@@ -13,18 +13,18 @@
   "contexto": "El plan de estudios institucional afirma que se trabajará pensamiento crítico, pero en el aula solo se realizan dictados y memorización. Esta diferencia muestra una tensión entre currículo formal y currículo operacional.",
   "enunciado": "El plan de estudios institucional afirma que se trabajará pensamiento crítico, pero en el aula solo se realizan dictados y memorización. Esta diferencia muestra una tensión entre currículo formal y currículo operacional.\n\n¿Cuál comparación es correcta?",
   "opciones": {
-    "A": "El currículo formal es lo escrito; el operacional es lo que realmente se enseña y se vive en la práctica.",
-    "B": "El currículo operacional es siempre idéntico al documento escrito.",
-    "C": "El currículo formal solo existe en la mente del estudiante.",
-    "D": "El currículo operacional se refiere únicamente a normas nacionales."
+    "A": "El currículo formal es la propuesta declarada y escrita de la institución, mientras que el operacional abarca lo que efectivamente se enseña y vive en la práctica de aula.",
+    "B": "El currículo formal se refiere a los lineamientos obligatorios que emite el Ministerio de Educación, mientras el operacional es la malla curricular aprobada por el Consejo Directivo.",
+    "C": "El currículo formal corresponde a las actividades de libre elección de los estudiantes, mientras el operacional abarca las normas explícitas del manual de convivencia.",
+    "D": "El currículo formal es el conjunto de aprendizajes implícitos transmitidos en el recreo, mientras el operacional son los contenidos no enseñados en clase."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "El currículo formal está constituido por el plan de estudios, los programas de asignaturas y la planeación pedagógica documental formalmente aprobada por el establecimiento educativo. Por su parte, el currículo operacional o real es el que se concreta efectivamente en la práctica educativa diaria en el aula, donde se definen los temas reales de clase y las formas de evaluación. La tensión mencionada surge cuando la práctica de aula difiere de los objetivos del documento.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "La práctica puede diferir del documento.",
-    "C": "El currículo formal está documentado.",
-    "D": "Las normas nacionales se asocian más al currículo oficial."
+    "B": "Incorrecto. Confunde el currículo oficial (que emana del nivel central del Estado o Ministerio) con el formal (el plan interno de estudios institucional).",
+    "C": "Incorrecto. Asocia de forma errónea el currículo formal con actividades de libre elección (que forman parte de lo extracurricular) y el operacional con las normas del manual de convivencia.",
+    "D": "Incorrecto. Asigna el concepto de currículo formal a los aprendizajes implícitos (que corresponden al currículo oculto) y el operacional a los temas omitidos (que configuran el currículo nulo)."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Tipos de currículo/MTV_B18_I05.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

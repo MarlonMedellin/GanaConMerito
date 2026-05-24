@@ -2,43 +2,43 @@
   "id_item": "CB14_I01",
   "estado": "LISTO_PARA_BANCO",
   "area": "Fundamentos de educación",
-  "tema": "Propósitos educativos",
+  "tema": "Propósitos de la educación",
   "subtema": "Formación integral",
   "competencia": "Interpretar los propósitos de la educación desde una perspectiva integral y no reduccionista.",
-  "nivel_cognitivo": "COMPRENSION",
-  "dificultad_estimada": "BAJA",
-  "claim": "El evaluado identifica que la educación integra dimensiones cognitivas, éticas, sociales y ciudadanas.",
-  "evidencia": "Selecciona la afirmación coherente con una comprensión integral de la función de la escuela.",
-  "tarea": "Elegir la interpretación más completa de los propósitos de la educación.",
-  "contexto": "Debate pedagógico sobre reducir la escuela a contenidos evaluables externamente.",
-  "enunciado": "En una reunión pedagógica se afirma que la escuela debe centrarse solo en contenidos evaluados externamente. ¿Cuál postura es más coherente con los propósitos integrales de la educación?",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado identifica que los propósitos del sistema educativo colombiano (Ley 115) integran dimensiones cognitivas, éticas, sociales y ciudadanas de forma multidimensional.",
+  "evidencia": "Selecciona posturas pedagógicas coherentes con la formación integral frente a reduccionismos academicistas.",
+  "tarea": "Determinar la postura que mejor responde a los propósitos integrales de la educación en Colombia.",
+  "contexto": "Durante una reunión del consejo directivo se afirma que los esfuerzos de la institución educativa deben centrarse de forma exclusiva en las áreas que son objeto de evaluación externa (Saber 11), reduciendo las horas destinadas a ética, artes, ciudadanía y deportes.",
+  "enunciado": "¿Cuál es la postura institucional más coherente con los propósitos de la educación en Colombia?",
   "opciones": {
-    "A": "Priorizar exclusivamente contenidos evaluables y excluir formación ética y ciudadana.",
-    "B": "Promover desarrollo integral con dimensiones cognitivas, éticas, sociales y ciudadanas.",
-    "C": "Delegar totalmente la formación ciudadana a la familia sin abordarla en la escuela.",
-    "D": "Definir los propósitos educativos solo según preferencias individuales de cada docente."
+    "A": "El desarrollo integral del educando a través de la articulación de las dimensiones cognitiva, socioafectiva, ética, estética y ciudadana, conforme a los fines de la educación de la Ley 115 de 1994.",
+    "B": "La priorización absoluta de las competencias lógico-matemáticas y científicas medidas en pruebas estandarizadas, limitando las demás áreas a espacios extracurriculares optativos.",
+    "C": "La transferencia de contenidos técnicos y disciplinares puros, trasladando de manera exclusiva a la familia la formación en valores, ética y comportamiento ciudadano.",
+    "D": "La adaptación libre y autónoma de los propósitos curriculares al arbitrio del docente del aula, prescindiendo de los lineamientos nacionales y del PEI."
   },
-  "clave": "B",
-  "justificacion_clave": "Es la única opción que recoge de manera completa el sentido formativo integral de la educación.",
+  "clave": "A",
+  "justificacion_clave": "La Ley General de Educación (Ley 115 de 1994) define la educación como un proceso de formación permanente, personal, cultural y social que se fundamenta en una concepción integral de la persona humana, de su dignidad, de sus derechos y de sus deberes, estableciendo fines que abarcan todas las dimensiones del ser humano.",
   "distractores_funcion": {
-    "A": "Reducción tecnocrática del propósito educativo.",
-    "B": "Clave correcta.",
-    "C": "Aplicación incompleta: desconoce corresponsabilidad educativa.",
-    "D": "Error de marco: ignora referentes institucionales y normativos comunes."
+    "A": "Clave correcta.",
+    "B": "Representa una postura instrumentalista y tecnocrática que restringe el derecho a la educación integral en función de metas externas.",
+    "C": "Plantea una división ficticia del aprendizaje que evade la función socializadora y de formación ética encomendada a las escuelas.",
+    "D": "Confunde la autonomía pedagógica del educador con un anarquismo curricular desvinculado de los referentes de calidad del Ministerio."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "No exige adscripción doctrinal ni experiencia de cargo particular."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Vocabulario general y estructura sencilla."
+    "observaciones": "Opciones completas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Propósitos de la educación/CB14_I01.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

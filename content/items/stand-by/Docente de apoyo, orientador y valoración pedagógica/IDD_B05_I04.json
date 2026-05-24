@@ -7,39 +7,39 @@
   "competencia": "Distingue funciones del docente de apoyo y orientador para coordinar valoración pedagógica y apoyos educativos.",
   "nivel_cognitivo": "ANÁLISIS",
   "dificultad_estimada": "MEDIA",
-  "claim": "Reconoce la alternativa pedagógica o institucional más adecuada según el criterio técnico evaluado en el caso.",
-  "evidencia": "Selecciona una única opción defendible frente a distractores plausibles en función del constructo.",
-  "tarea": "Analizar el caso y elegir la decisión más pertinente conforme al enfoque del ítem.",
+  "claim": "Valora la adecuación de actuaciones pedagógicas e institucionales bajo criterios normativos y constitucionales.",
+  "evidencia": "Selecciona la respuesta que demuestra la correcta aplicación del marco normativo y pedagógico colombiano.",
+  "tarea": "Analizar el caso y determinar la opción correcta conforme a derecho y principios pedagógicos.",
   "contexto": "Un estudiante con barreras de aprendizaje recibe apoyos en algunos momentos, pero cada actor trabaja por separado: el maestro de aula no conoce las recomendaciones, la familia no recibe orientación y el docente de apoyo no tiene espacios de seguimiento con el equipo.",
-  "enunciado": "Un estudiante con barreras de aprendizaje recibe apoyos en algunos momentos, pero cada actor trabaja por separado: el maestro de aula no conoce las recomendaciones, la familia no recibe orientación y el docente de apoyo no tiene espacios de seguimiento con el equipo.\n\n¿Qué estrategia institucional es más adecuada?",
+  "enunciado": "Un estudiante con barreras de aprendizaje recibe apoyos en algunos momentos, pero cada actor trabaja por separado: el maestro de aula no conoce las recomendaciones, la familia no recibe orientación y el docente de apoyo no tiene espacios de seguimiento con el equipo.\n\n¿Qué estrategia institucional es más adecuada para garantizar la coherencia y efectividad del proceso?",
   "opciones": {
-    "A": "Mantener la información separada para que cada actor actúe como pueda.",
-    "B": "Entregar toda la responsabilidad al docente de apoyo y excluir al maestro de aula de las decisiones.",
-    "C": "Pedir a la familia que resuelva sola los apoyos externos antes de volver a clase.",
-    "D": "Organizar trabajo colaborativo con roles claros, comunicación pertinente, acuerdos pedagógicos, participación familiar y seguimiento periódico de avances."
+    "A": "Establecer una mesa de trabajo colaborativo periódico liderada por directivos, donde se unifiquen las recomendaciones del PIAR, se definan compromisos con la familia y se articulen las prácticas de aula.",
+    "B": "Asignar de forma exclusiva la responsabilidad del seguimiento curricular al docente de apoyo, liberando al maestro de aula del diseño de adaptaciones individuales.",
+    "C": "Disponer que el orientador escolar concentre todas las sesiones de apoyo en tutorías individuales fuera del aula para no interferir en el desarrollo temático común.",
+    "D": "Solicitar una auditoría pedagógica por parte de la Secretaría de Educación para que determine las fallas administrativas y reasigne los recursos de inclusión."
   },
-  "clave": "D",
-  "justificacion_clave": "D",
+  "clave": "A",
+  "justificacion_clave": "A",
   "distractores_funcion": {
-    "A": "Es incorrecta porque perpetúa la desarticulación.",
-    "B": "Es incorrecta porque delega todo en un solo profesional.",
-    "C": "Es incorrecta porque la familia participa, pero no sustituye la responsabilidad escolar.",
-    "D": "Clave correcta."
+    "A": "Clave correcta.",
+    "B": "Segregación curricular: sobrecarga al docente de apoyo y desvincula al docente de aula, fragmentando el proceso de enseñanza y la evaluación.",
+    "C": "Confusión de funciones: asigna tareas de tutoría académica al orientador escolar, distorsionando su rol psicosocial e implementando segregación física.",
+    "D": "Inacción reactiva: recurre a auditorías externas en lugar de asumir el liderazgo directivo e institucional interno para articular a los actores del plantel."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estándar y contexto institucional general sin sesgos culturales innecesarios."
+    "observaciones": "Lenguaje formal, neutral y apegado a la jurisprudencia colombiana en materia de derechos y deberes educativos, libre de sesgos territoriales o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura y exigencia."
+    "observaciones": "Redacción estructurada con enunciados independientes y opciones de longitud y complejidad gramatical homogéneas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Docente de apoyo, orientador y valoración pedagógica/IDD_B05_I04.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

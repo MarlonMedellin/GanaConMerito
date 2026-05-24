@@ -2,43 +2,43 @@
   "id_item": "DIL_B02_I01",
   "estado": "LISTO_PARA_BANCO",
   "area": "Protección integral y derechos",
-  "tema": "Restablecimiento de derechos",
+  "tema": "PARD y restablecimiento de derechos",
   "subtema": "Concepto de PARD",
   "competencia": "Identificar figuras jurídicas básicas de protección de niños, niñas y adolescentes en contexto escolar.",
-  "nivel_cognitivo": "COMPRENSION",
-  "dificultad_estimada": "BAJA",
-  "claim": "El evaluado reconoce el significado de PARD y su función dentro de rutas de protección.",
-  "evidencia": "Selecciona la expansión correcta de la sigla en un caso de posible vulneración de derechos.",
-  "tarea": "Reconocer el término jurídico correcto entre alternativas plausibles del ámbito escolar.",
-  "contexto": "Orientación escolar ante posibles derechos inobservados, amenazados o vulnerados.",
-  "enunciado": "En una institución educativa se activa una ruta de protección por posible vulneración de derechos de un estudiante. El orientador menciona el PARD. ¿Qué significa esta sigla?",
+  "nivel_cognitivo": "CONOCIMIENTO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado reconoce el significado de la sigla PARD y su función primordial de protección integral.",
+  "evidencia": "Identifica la figura jurídica del Proceso Administrativo de Restablecimiento de Derechos en el contexto escolar.",
+  "tarea": "Asociar la sigla PARD con su significado normativo y su objetivo de protección.",
+  "contexto": "En un comité de convivencia escolar se discute la remisión de un estudiante víctima de presunta negligencia familiar grave. El docente orientador sugiere que es necesario activar la ruta para iniciar un PARD con la autoridad competente.",
+  "enunciado": "Frente a la duda de un docente sobre la naturaleza de este procedimiento, ¿qué significa la sigla PARD y cuál es su objetivo primordial?",
   "opciones": {
-    "A": "Proceso Administrativo de Restablecimiento de Derechos.",
-    "B": "Programa Académico de Rendimiento Docente.",
-    "C": "Plan de Atención y Registro Disciplinario.",
-    "D": "Procedimiento de Ajuste para Revisión Didáctica."
+    "A": "Proceso Administrativo de Restablecimiento de Derechos, cuya finalidad es dictar medidas de protección para garantizar la integridad del menor.",
+    "B": "Plan de Acción y Refuerzo Docente, que busca nivelar académicamente a los estudiantes con bajo rendimiento escolar.",
+    "C": "Programa de Acompañamiento y Regulación Disciplinaria, orientado a corregir faltas graves de convivencia dentro del aula.",
+    "D": "Protocolo de Apoyo para la Retención y el Desempeño, enfocado en prevenir la deserción escolar mediante subsidios económicos."
   },
   "clave": "A",
-  "justificacion_clave": "Es la única opción que corresponde a la denominación jurídica oficial del mecanismo de restablecimiento.",
+  "justificacion_clave": "PARD corresponde al Proceso Administrativo de Restablecimiento de Derechos, regulado en el Código de la Infancia y la Adolescencia (Ley 1098 de 2006), el cual busca restablecer el ejercicio efectivo de los derechos amenazados o vulnerados de los menores de edad.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Confusión frecuente con gestión académica docente.",
-    "C": "Interpretación parcial: mezcla convivencia escolar con ruta administrativa de protección.",
-    "D": "Término plausible en lenguaje pedagógico, pero inexistente en la ruta jurídica."
+    "B": "Confunde la sigla con un plan académico ficticio para la mejora del rendimiento docente.",
+    "C": "Asocia erróneamente el procedimiento de protección de derechos con un proceso disciplinario escolar regido por el manual de convivencia.",
+    "D": "Propone un protocolo inexistente enfocado en la retención escolar y apoyo socioeconómico."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "No requiere experiencia territorial específica; evalúa reconocimiento básico de sigla institucional."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado breve y vocabulario controlado."
+    "observaciones": "Redacción directa."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I01.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

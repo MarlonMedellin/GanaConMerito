@@ -1,44 +1,44 @@
 {
   "id_item": "IDD_B08_I01",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Pedagogía y didáctica",
-  "tema": "Currículo en espiral, Bruner y material concreto",
-  "subtema": "Currículo y metodología",
-  "competencia": "Aplica principios de currículo en espiral y mediación con material concreto en decisiones de aula.",
-  "nivel_cognitivo": "APLICACIÓN",
+  "area": "Pedagogía y didáctica infantil",
+  "tema": "Modelos pedagógicos y teorías de aprendizaje",
+  "subtema": "Currículo en espiral y saberes previos",
+  "competencia": "Aplicar los principios de la teoría cognitiva de Jerome Bruner, el diseño de currículo en espiral y el uso de material concreto en el diseño de situaciones de aprendizaje en educación infantil.",
+  "nivel_cognitivo": "COMPRENSIÓN",
   "dificultad_estimada": "MEDIA",
-  "claim": "Identifica la alternativa más adecuada según el marco pedagógico, evaluativo o de protección del caso.",
-  "evidencia": "Selecciona una única respuesta técnicamente defendible frente a distractores plausibles.",
-  "tarea": "Analizar la situación planteada y elegir la decisión institucional o didáctica más pertinente.",
-  "contexto": "Un equipo académico decide organizar el currículo de manera que los conceptos centrales no se enseñen una sola vez y se abandonen, sino que reaparezcan en distintos grados con mayor profundidad, nuevos ejemplos, relaciones y niveles de complejidad.",
-  "enunciado": "Un equipo académico decide organizar el currículo de manera que los conceptos centrales no se enseñen una sola vez y se abandonen, sino que reaparezcan en distintos grados con mayor profundidad, nuevos ejemplos, relaciones y niveles de complejidad.\n\nSegún la teoría del currículo en espiral de Jerome Bruner, ¿qué propósito cognitivo tiene esta organización?",
+  "claim": "El evaluado conceptualiza la recurrencia pedagógica del currículo en espiral frente a la repetición lineal.",
+  "evidencia": "Identifica que el currículo en espiral retoma las nociones básicas a fin de complejizarlas y profundizar el aprendizaje, no para memorizarlas o repetirlas sin cambios.",
+  "tarea": "Diferenciar el diseño curricular recursivo (espiral) de la mera repetición mecánica o del aprendizaje fragmentado lineal.",
+  "contexto": "Un docente explica a sus colegas que ha organizado los conceptos de 'fuerza y movimiento' para que se enseñen en preescolar a través de juegos físicos, en tercero de primaria usando planos inclinados y resortes, y en sexto grado mediante fórmulas de Newton.",
+  "enunciado": "Este diseño metodológico representa el concepto bruneriano de currículo en espiral porque:",
   "opciones": {
-    "A": "Repetir exactamente las mismas actividades cada año sin aumentar la exigencia.",
-    "B": "Favorecer que los estudiantes reconstruyan y profundicen conceptos progresivamente, conectando saberes previos con nuevos niveles de comprensión.",
-    "C": "Evitar que los estudiantes relacionen temas de diferentes grados.",
-    "D": "Sustituir la comprensión por memorización acumulativa de definiciones."
+    "A": "Obliga a los estudiantes a memorizar las fórmulas matemáticas avanzadas desde el preescolar para asegurar su rendimiento posterior.",
+    "B": "Retoma las nociones fundamentales en distintos niveles educativos, adaptándolas a las posibilidades cognitivas del estudiante para profundizar el concepto de forma significativa.",
+    "C": "Mantiene el mismo nivel de exigencia y las mismas actividades pedagógicas a lo largo de todos los grados escolares.",
+    "D": "Separa los saberes científicos impidiendo que los estudiantes relacionen el juego físico con el pensamiento formal."
   },
   "clave": "B",
-  "justificacion_clave": "B",
+  "justificacion_clave": "El currículo en espiral estructurado por Jerome Bruner se caracteriza por su recursividad: no introduce los conceptos de forma aislada una única vez, sino que los vuelve a abordar progresivamente con mayor nivel de abstracción y rigor científico, vinculando los saberes previos y las etapas del desarrollo cognitivo del educando.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque no se trata de repetir lo mismo sin progresión.",
+    "A": "Promueve la verbalización y el formalismo matemático descontextualizado y prematuro en educación infantil.",
     "B": "Clave correcta.",
-    "C": "Es incorrecta porque la espiral busca conectar aprendizajes.",
-    "D": "Es incorrecta porque el propósito no es acumular definiciones sino construir comprensión."
+    "C": "Describe una repetición lineal uniforme y redundante que no genera progresión ni desarrollo cognitivo.",
+    "D": "Incurre en un error didáctico al postular la desconexión curricular de los saberes en lugar de su integración conceptual."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje pedagógico y normativo estándar, sin sesgos culturales o barreras innecesarias."
+    "observaciones": "Ítem pedagógico abstracto generalizable."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones comparables en estructura y nivel de abstracción."
+    "observaciones": "Redacción clara, opciones balanceadas sintácticamente."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Currículo en espiral, Bruner y material concreto/IDD_B08_I01.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

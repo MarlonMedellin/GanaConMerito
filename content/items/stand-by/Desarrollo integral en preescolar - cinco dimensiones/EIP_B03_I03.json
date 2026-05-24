@@ -11,20 +11,20 @@
   "evidencia": "Selecciona una única alternativa defendible técnicamente y coherente con el constructo del ítem.",
   "tarea": "Analizar la situación presentada y elegir la respuesta más pertinente según criterios pedagógicos y normativos aplicables.",
   "contexto": "Un niño de preescolar llora al separarse de su acudiente, tiene dificultad para integrarse al grupo y necesita acompañamiento para expresar sus emociones. La docente afirma que eso no hace parte de su trabajo porque no es contenido académico.",
-  "enunciado": "Un niño de preescolar llora al separarse de su acudiente, tiene dificultad para integrarse al grupo y necesita acompañamiento para expresar sus emociones. La docente afirma que eso no hace parte de su trabajo porque no es contenido académico.\n\n¿Qué dimensión del desarrollo integral está dejando de atender?",
+  "enunciado": "Al omitir el acompañamiento emocional en la separación de la familia, ¿qué dimensión o aspecto del desarrollo integral establecido en la Ley 115 está dejando de atender la docente?",
   "opciones": {
-    "A": "La dimensión comercial.",
-    "B": "La dimensión socioafectiva.",
-    "C": "La dimensión contable.",
-    "D": "La dimensión punitiva."
+    "A": "El aspecto espiritual, que busca fundamentar de forma autónoma valores, criterios de comportamiento y principios de vida.",
+    "B": "El aspecto socio-afectivo, que abarca el desarrollo de la identidad, la seguridad, la socialización y la expresión regulada de las emociones.",
+    "C": "El aspecto cognoscitivo, enfocado en el desarrollo de los procesos cognitivos básicos y la memoria.",
+    "D": "El aspecto sicomotriz, orientado a la estimulación de habilidades corporales y coordinación viso-manual."
   },
   "clave": "B",
-  "justificacion_clave": "B",
+  "justificacion_clave": "El aspecto socio-afectivo abarca la construcción de la identidad, la autovaloración, la capacidad de establecer vínculos con otros fuera del núcleo familiar y la expresión sana y acompañada de las emociones en la transición escolar.",
   "distractores_funcion": {
-    "A": "No guarda relación con el desarrollo integral del niño.",
+    "A": "Confunde los vínculos socioemocionales de apego y socialización con el desarrollo axiológico y existencial del aspecto espiritual.",
     "B": "Clave correcta.",
-    "C": "No corresponde al nivel ni al contenido preguntado.",
-    "D": "Refuerza una visión sancionatoria inadecuada para el caso."
+    "C": "Confunde los procesos relacionales y afectivos con el desarrollo cognitivo o intelectual formal.",
+    "D": "Confunde lo socioafectivo con habilidades psicomotrices y de movimiento corporal."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Desarrollo integral en preescolar - cinco dimensiones/EIP_B03_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

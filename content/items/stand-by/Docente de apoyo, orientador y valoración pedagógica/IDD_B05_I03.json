@@ -7,39 +7,39 @@
   "competencia": "Distingue funciones del docente de apoyo y orientador para coordinar valoración pedagógica y apoyos educativos.",
   "nivel_cognitivo": "ANÁLISIS",
   "dificultad_estimada": "MEDIA",
-  "claim": "Reconoce la alternativa pedagógica o institucional más adecuada según el criterio técnico evaluado en el caso.",
-  "evidencia": "Selecciona una única opción defendible frente a distractores plausibles en función del constructo.",
-  "tarea": "Analizar el caso y elegir la decisión más pertinente conforme al enfoque del ítem.",
+  "claim": "Valora la adecuación de actuaciones pedagógicas e institucionales bajo criterios normativos y constitucionales.",
+  "evidencia": "Selecciona la respuesta que demuestra la correcta aplicación del marco normativo y pedagógico colombiano.",
+  "tarea": "Analizar el caso y determinar la opción correcta conforme a derecho y principios pedagógicos.",
   "contexto": "Un estudiante presenta barreras para participar en ciertas actividades. El docente dice que no puede hacer nada hasta recibir un diagnóstico clínico completo. El docente de apoyo propone realizar una valoración pedagógica para orientar la planeación.",
-  "enunciado": "Un estudiante presenta barreras para participar en ciertas actividades. El docente dice que no puede hacer nada hasta recibir un diagnóstico clínico completo. El docente de apoyo propone realizar una valoración pedagógica para orientar la planeación.\n\n¿Cuál es la función de esa valoración pedagógica?",
+  "enunciado": "Un estudiante presenta barreras para participar en ciertas actividades. El docente dice que no puede hacer nada hasta recibir un diagnóstico clínico completo. El docente de apoyo propone realizar una valoración pedagógica para orientar la planeación.\n\n¿Cuál es la función de esa valoración pedagógica de acuerdo con las directrices de inclusión?",
   "opciones": {
-    "A": "Identificar fortalezas, barreras, formas de participación, apoyos requeridos y ajustes posibles para orientar la enseñanza.",
-    "B": "Emitir un diagnóstico médico definitivo desde la escuela.",
-    "C": "Clasificar al estudiante como incapaz de aprender.",
-    "D": "Justificar que el estudiante sea retirado de las actividades comunes."
+    "A": "Identificar el perfil de aprendizaje del estudiante, las barreras presentes en el entorno y los apoyos y ajustes requeridos para guiar la planeación del docente.",
+    "B": "Emitir un dictamen psicopedagógico provisional que sustituya el diagnóstico clínico y permita clasificar oficialmente el tipo de discapacidad en el SIMAT.",
+    "C": "Definir un plan de tratamiento terapéutico y de estimulación cognitiva que el docente de aula debe ejecutar dentro del horario lectivo ordinario.",
+    "D": "Determinar si el estudiante posee las competencias cognitivas básicas indispensables para justificar su permanencia dentro de la institución regular."
   },
   "clave": "A",
   "justificacion_clave": "A",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque la escuela no sustituye el diagnóstico clínico.",
-    "C": "Es incorrecta porque parte de una etiqueta deficitaria.",
-    "D": "Es incorrecta porque la finalidad es favorecer participación."
+    "B": "Error normativo: confunde la valoración pedagógica con la certificación médica indispensable para registrar legalmente la discapacidad.",
+    "C": "Desviación clínica: traslada el rol terapéutico-médico a la labor educativa del maestro, confundiendo rehabilitación con mediación escolar.",
+    "D": "Criterio excluyente: utiliza la valoración escolar con fines de tamizaje y selección para limitar la permanencia del estudiante, lo cual es inconstitucional."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estándar y contexto institucional general sin sesgos culturales innecesarios."
+    "observaciones": "Lenguaje formal, neutral y apegado a la jurisprudencia colombiana en materia de derechos y deberes educativos, libre de sesgos territoriales o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura y exigencia."
+    "observaciones": "Redacción estructurada con enunciados independientes y opciones de longitud y complejidad gramatical homogéneas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Docente de apoyo, orientador y valoración pedagógica/IDD_B05_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

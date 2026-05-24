@@ -1,6 +1,6 @@
 {
   "id_item": "DIL_B06_I03",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Capacidad de agencia",
   "tema": "Participación infantil, agencia y Convención sobre los Derechos del Niño",
   "subtema": "Concepción pasiva de niños, niñas y adolescentes como beneficiarios sin voz frente a su territorio.",
@@ -13,17 +13,17 @@
   "contexto": "Una institución quiere que sus estudiantes analicen problemas de su barrio, expresen cómo les afectan, propongan soluciones y participen en escenarios escolares o comunitarios adecuados a su edad.",
   "enunciado": "Una institución quiere que sus estudiantes analicen problemas de su barrio, expresen cómo les afectan, propongan soluciones y participen en escenarios escolares o comunitarios adecuados a su edad.\n\n¿Qué significa potenciar el agenciamiento político de niños, niñas y adolescentes frente a sus condiciones de vida en el territorio?",
   "opciones": {
-    "A": "Usarlos como imagen de campañas adultas sin escuchar sus ideas.",
-    "B": "Impedir que opinen porque la política solo corresponde a los adultos.",
-    "C": "Obligarlos a tomar decisiones públicas sin acompañamiento ni protección.",
-    "D": "Reconocerlos como actores con voz, capacidad de análisis, propuesta e incidencia gradual en asuntos que afectan su vida y su entorno."
+    "A": "Involucrar a los menores en actividades de agitación o movilización social de carácter adulto, delegando en ellos la defensa pública de intereses corporativos.",
+    "B": "Evitar que los estudiantes debatan sobre problemáticas sociales de su entorno bajo el argumento de que la formación política corresponde estrictamente al ámbito familiar y de la adultez.",
+    "C": "Fomentar que los niños asuman de forma autónoma decisiones y responsabilidades legales complejas frente a problemáticas comunitarias, eximiendo al docente del deber de garante.",
+    "D": "Reconocerlos como sujetos históricos activos capaces de leer críticamente su realidad, proponer alternativas de cambio y participar de forma gradual e incidente en las decisiones colectivas que inciden en su bienestar."
   },
   "clave": "D",
-  "justificacion_clave": "D",
+  "justificacion_clave": "El agenciamiento político y la ciudadanía en la infancia y adolescencia no consisten en militancia partidista o instrumentalización en causas de adultos, sino en el reconocimiento de NNA como sujetos activos de derechos que tienen la capacidad de comprender su entorno, expresar críticamente cómo les afecta e incidir propositivamente en la resolución de sus problemáticas territoriales de forma proporcional a su desarrollo socio-cognitivo y en ambientes debidamente acompañados y protegidos por la institución y las familias.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque convierte la participación en decoración o instrumentalización.",
-    "B": "Es incorrecta porque niega el derecho a expresar opiniones en asuntos que les afectan.",
-    "C": "Es incorrecta porque la agencia infantil requiere acompañamiento y protección.",
+    "A": "Incorrecto. Confunde el agenciamiento político formativo con la instrumentalización o manipulación de menores para defender causas o agendas externas, lo cual vulnera sus derechos a una opinión libre e informada.",
+    "B": "Incorrecto. Representa una concepción restrictiva e individualista de la educación cívica, la cual desconoce que la escuela, según la Ley 115 y el Decreto 1860, tiene la obligación legal y pedagógica de formar ciudadanos con sentido de responsabilidad democrática y comunitaria.",
+    "C": "Incorrecto. Supone una abdicación del rol de la escuela y los educadores como garantes de la protección integral de los menores, trasladando a la infancia responsabilidades adultas que pueden poner en riesgo su integridad física o emocional.",
     "D": "Clave correcta."
   },
   "fairness": {
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Participación infantil, agencia y Convención sobre los Derechos del Niño/DIL_B06_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

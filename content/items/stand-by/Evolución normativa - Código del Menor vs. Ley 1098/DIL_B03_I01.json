@@ -11,20 +11,20 @@
   "evidencia": "Selecciona la comparación correcta entre el Código del Menor y la Ley 1098.",
   "tarea": "Identificar la diferencia conceptual central entre dos marcos normativos de infancia.",
   "contexto": "Equipo docente analiza cambios normativos en protección de niños, niñas y adolescentes.",
-  "enunciado": "¿Cuál diferencia describe mejor el cambio entre el antiguo Código del Menor y la Ley 1098 de 2006?",
+  "enunciado": "¿Cuál diferencia describe mejor el cambio paradigmático y de concepción jurídica entre el antiguo Código del Menor (Decreto 2737 de 1989) y la Ley 1098 de 2006 (Código de la Infancia y la Adolescencia) en Colombia?",
   "opciones": {
-    "A": "Ambas normas mantienen el mismo enfoque jurídico sin cambios estructurales.",
-    "B": "La Ley 1098 reduce derechos para reforzar control adulto sobre la niñez.",
-    "C": "El Código del Menor se centraba en situación irregular; la Ley 1098 reconoce a NNA como sujetos titulares de derechos con protección integral.",
-    "D": "El Código del Menor promovía mayor participación infantil que la Ley 1098."
+    "A": "El Código del Menor otorgaba plena autonomía legal a los menores de edad para tomar decisiones judiciales, mientras que la Ley 1098 restringió estas facultades bajo la tutela exclusiva de las familias.",
+    "B": "El Código del Menor priorizaba la corresponsabilidad de la sociedad y el Estado, mientras que la Ley 1098 trasladó la totalidad de las obligaciones de cuidado y protección a la institución educativa.",
+    "C": "El Código del Menor se basaba en la doctrina de la situación irregular, interviniendo solo ante el menor infractor o abandonado; la Ley 1098 adopta la doctrina de la protección integral, reconociendo a todos los niños, niñas y adolescentes como sujetos titulares de derechos.",
+    "D": "El Código del Menor regulaba las relaciones familiares desde una perspectiva de género, mientras que la Ley 1098 se centró de forma exclusiva en la tipificación de sanciones penales para menores de edad."
   },
   "clave": "C",
-  "justificacion_clave": "Es la única opción que refleja con precisión el cambio de paradigma normativo hacia enfoque de derechos.",
+  "justificacion_clave": "La transición normativa significó el paso de la doctrina de la situación irregular (donde el menor era objeto pasivo de tutela del Estado únicamente si caía en abandono o delincuencia) a la doctrina de la protección integral basada en la Convención sobre los Derechos del Niño, reconociendo a todos los NNA como sujetos plenos de derechos.",
   "distractores_funcion": {
-    "A": "Niega la evolución normativa.",
-    "B": "Invierte el sentido garantista de la Ley 1098.",
+    "A": "Invierte la realidad jurídica: la protección integral amplió el reconocimiento de la capacidad de participación del menor frente al adultocentrismo anterior.",
+    "B": "Falso, la Ley 1098 consagra la corresponsabilidad tripartita (Familia, Sociedad y Estado) de forma explícita y no delega toda la carga en la escuela.",
     "C": "Clave correcta.",
-    "D": "Atribuye al marco antiguo rasgos del paradigma actual."
+    "D": "Desconoce los enfoques centrales de ambas normas, reduciendo de forma errónea la Ley 1098 al ámbito penal de adolescentes."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Evolución normativa - Código del Menor vs. Ley 1098/DIL_B03_I01.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

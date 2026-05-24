@@ -1,44 +1,44 @@
 {
   "id_item": "EFCC_B04_I01",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Evaluación del aprendizaje",
-  "tema": "Evaluación por competencias",
+  "area": "Evaluación, currículo y didáctica",
+  "tema": "Evaluación integral por competencias",
   "subtema": "Integralidad del desempeño",
-  "competencia": "Interpretar la evaluación por competencias como valoración integrada de saber, hacer y argumentar en contexto.",
-  "nivel_cognitivo": "APLICACIÓN",
+  "competencia": "Diseñar instrumentos de evaluación integral que integren el saber conceptual, procedimental y actitudinal a través de tareas auténticas.",
+  "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado identifica diseños evaluativos coherentes con una visión integral de competencias.",
-  "evidencia": "Selecciona la alternativa que articula desempeño contextualizado, criterios y niveles de logro.",
-  "tarea": "Elegir el diseño de evaluación más consistente con enfoque integral por competencias.",
-  "contexto": "Un área curricular revisa sus instrumentos porque actualmente evalúa solo respuestas de selección múltiple.",
-  "enunciado": "¿Cuál propuesta está mejor alineada con una evaluación integral por competencias?",
+  "claim": "El evaluado propone diseños de evaluación integral coherentes con el enfoque constructivista y la valoración de competencias situadas en el aula regular.",
+  "evidencia": "Elige la alternativa que combina tareas auténticas, criterios transparentes, autoevaluación e instrumentos variados frente a la primacía de pruebas escritas de memoria.",
+  "tarea": "Proponer un diseño de evaluación institucional que supere la exclusión de competencias procedimentales o socioemocionales.",
+  "contexto": "Un establecimiento educativo oficial decide reformar su Sistema Institucional de Evaluación (SIEE) porque los reportes internos muestran que la evaluación se centra casi totalmente en exámenes de opción múltiple, lo cual ha generado un desinterés de los estudiantes por los procesos experimentales y de argumentación en el aula de clases.",
+  "enunciado": "¿Cuál de las siguientes propuestas metodológicas está mejor alinea con una evaluación integral del desempeño por competencias?",
   "opciones": {
-    "A": "Usar exclusivamente pruebas de memoria para garantizar objetividad numérica.",
-    "B": "Valorar tareas auténticas con criterios explícitos, niveles de desempeño y retroalimentación sobre aplicación del conocimiento.",
-    "C": "Calificar únicamente actitudes para evitar sesgos de contenido disciplinar.",
-    "D": "Asignar la nota final con base en asistencia y cumplimiento administrativo."
+    "A": "Implementar un modelo de evaluación formativa basado en proyectos integrados de aula, portafolios de evidencias y rúbricas analíticas estructuradas por niveles, combinando la heteroevaluación con la autoevaluación y coevaluación periódica.",
+    "B": "Mantener el uso exclusivo de las pruebas escritas tradicionales de opción múltiple de fin de periodo escolar, incrementando el nivel de dificultad teórica y reduciendo el tiempo de resolución para medir la rapidez de respuesta mental.",
+    "C": "Eliminar las evaluaciones académicas del plan de estudios y definir la aprobación final del grado escolar basándose únicamente en el reporte cualitativo de la actitud diaria de convivencia y el comportamiento del estudiante.",
+    "D": "Contratar un servicio externo de consultoría para que aplique pruebas estandarizadas mensuales en todas las asignaturas de la institución oficial y asigne de forma directa las notas de periodo a cada estudiante."
   },
-  "clave": "B",
-  "justificacion_clave": "Integra desempeño situado, criterios transparentes y retroalimentación, ejes de evaluación integral por competencias.",
+  "clave": "A",
+  "justificacion_clave": "La evaluación de competencias exige la articulación de metodologías y herramientas diversas (proyectos, rúbricas, portafolios) para valorar de manera integral el saber conceptual, procedimental y actitudinal de los estudiantes en situaciones reales o simuladas.",
   "distractores_funcion": {
-    "A": "Generalización incorrecta: equipara objetividad con memorización.",
-    "B": "Clave correcta.",
-    "C": "Interpretación parcial: excluye saber conceptual y procedimental.",
-    "D": "Error de pertinencia: usa indicadores administrativos como sustituto del logro."
+    "A": "Clave correcta.",
+    "B": "Insiste en el modelo academicista tradicional que limita el desarrollo de habilidades científicas y la metacognición en el aula regular.",
+    "C": "Enfoque desequilibrado que anula el componente cognitivo y conceptual del currículo básico oficial escolar.",
+    "D": "Solución externa que atenta contra la autonomía escolar de la Ley 115 de 1994 y la competencia del docente regular para evaluar los procesos de aprendizaje."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Situaciones escolares generales; no requieren conocimiento externo al enunciado ni referencias culturales específicas."
+    "observaciones": "Propone alternativas formativas estándares de la didáctica."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Sintaxis directa, una tarea cognitiva por ítem y vocabulario pedagógico controlado."
+    "observaciones": "Estructura del enunciado y opciones uniforme."
   },
   "metadata_editorial": {
     "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

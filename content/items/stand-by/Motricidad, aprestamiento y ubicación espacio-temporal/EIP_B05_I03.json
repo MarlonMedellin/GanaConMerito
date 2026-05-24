@@ -1,45 +1,45 @@
 {
   "id_item": "EIP_B05_I03",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Gestión educativa",
-  "tema": "Motricidad, aprestamiento y ubicación espacio-temporal",
-  "subtema": "Aplicación pedagógica",
-  "competencia": "Juicio pedagógico",
-  "nivel_cognitivo": "APLICACION",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Pedagogía y didáctica infantil",
+  "tema": "Desarrollo psicomotor en preescolar",
+  "subtema": "Aprestamiento y transiciones",
+  "competencia": "Interpretar el propósito pedagógico de experiencias motrices y espacio-temporales en preescolar.",
+  "nivel_cognitivo": "JUICIO",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
+  "claim": "El evaluado contrasta el aprestamiento integral y lúdico frente al mecanicismo tradicional de las planas de caligrafía.",
+  "evidencia": "Reconoce que el aprestamiento es un desarrollo global (sensorial, motor, afectivo) y rechaza el uso exclusivo y prematuro de planas mecánicas.",
+  "tarea": "Elegir la interpretación pedagógica sobre el aprestamiento que mejor se ajuste a los lineamientos del preescolar en transición.",
   "contexto": "Una institución cree que el aprestamiento consiste en poner a los niños de transición a llenar planas durante toda la jornada para que lleguen 'adelantados' a primero. Otra docente propone experiencias de juego, lenguaje, trazos libres, coordinación, clasificación, escucha y exploración.",
-  "enunciado": "Una institución cree que el aprestamiento consiste en poner a los niños de transición a llenar planas durante toda la jornada para que lleguen 'adelantados' a primero. Otra docente propone experiencias de juego, lenguaje, trazos libres, coordinación, clasificación, escucha y exploración.\n\n¿Cuál interpretación es más adecuada?",
+  "enunciado": "¿Cuál interpretación es más coherente con los lineamientos pedagógicos del preescolar?",
   "opciones": {
-    "A": "El aprestamiento es una preparación gradual e integral para aprendizajes posteriores, no una imposición prematura de tareas mecánicas extensas.",
-    "B": "El aprestamiento exige eliminar el juego y la exploración.",
-    "C": "El aprestamiento solo se logra con exámenes escritos semanales.",
-    "D": "El aprestamiento no tiene ninguna relación con la transición a la básica primaria."
+    "A": "El aprestamiento es un proceso continuo, intencionado e integral de desarrollo psicomotor, sensorial, socioafectivo y del lenguaje, que sirve de base para los aprendizajes formales, evitando la repetición mecánica de planas.",
+    "B": "El entrenamiento a través de planas y copias repetitivas es la única técnica avalada científicamente para garantizar la maduración visomotriz requerida en primer grado.",
+    "C": "Las actividades lúdicas y la exploración del medio deben restringirse en transición, dado que el aprestamiento requiere habituar al niño a tareas individuales de lápiz y papel.",
+    "D": "El aprestamiento debe centrarse exclusivamente en el aprendizaje de la descodificación de palabras y el cálculo matemático básico, sin intervención del desarrollo psicomotor grueso."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "El aprestamiento en la educación inicial no se reduce a una mecanización caligráfica temprana. Los lineamientos pedagógicos nacionales establecen que debe concebirse como un desarrollo global e integrado que potencia el juego, el lenguaje, la expresión artística y la coordinación visomotriz fina de forma libre e intencionada.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Desconoce el valor pedagógico del juego.",
-    "C": "Reduce el proceso a evaluación escrita.",
-    "D": "Niega su función de preparación armónica para aprendizajes posteriores."
+    "B": "Defiende una práctica mecanicista superada científicamente que puede generar cansancio físico y frustración en el niño.",
+    "C": "Propone subordinar el juego y la exploración a la lógica de escolarización primaria prematura, contradiciendo el Decreto 2247 de 1997.",
+    "D": "Incurre en un reduccionismo conceptual cognitivo que anula el desarrollo motor del niño, pilar básico en esta etapa evolutiva."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem protege los ritmos de desarrollo y evita prácticas mecanicistas excesivas."
+    "observaciones": "El ítem debate una tensión pedagógica real sin sesgos de contexto cultural."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Estructura gramatical equilibrada en todas las opciones de respuesta."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Motricidad, aprestamiento y ubicación espacio-temporal/EIP_B05_I03.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

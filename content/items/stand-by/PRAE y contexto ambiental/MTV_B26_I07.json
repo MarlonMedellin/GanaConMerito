@@ -1,45 +1,45 @@
 {
   "id_item": "MTV_B26_I07",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "PRAE y contexto ambiental",
   "subtema": "Aplicación pedagógica",
-  "competencia": "Juicio pedagógico",
+  "competencia": "Aplicar el enfoque crítico y transversal de la educación ambiental en el diseño de proyectos escolares.",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "Evalúa competencia aplicada en contexto educativo.",
-  "evidencia": "Selecciona la mejor respuesta.",
-  "tarea": "Resolver situación planteada.",
-  "contexto": "",
-  "enunciado": "Una docente no se limita a pedir que los estudiantes recojan basura. Les pide investigar por qué se produce, quiénes participan, qué hábitos de consumo influyen y qué soluciones comunitarias pueden proponerse.\n\n¿Qué enfoque de educación ambiental está promoviendo?",
+  "claim": "El evaluado distingue entre el enfoque de educación ambiental crítico-complejo y el activismo ecológico instrumental.",
+  "evidencia": "Selecciona la mediación didáctica que promueve el análisis de causas estructurales y la agencia comunitaria de los estudiantes.",
+  "tarea": "Evaluar las alternativas pedagógicas de un docente para determinar cuál responde al enfoque crítico y transversal de la educación ambiental.",
+  "contexto": "En el marco de un proyecto ambiental sobre el manejo de residuos sólidos, un docente decide cambiar la metodología tradicional que consistía únicamente en organizar brigadas semanales de limpieza del patio escolar.",
+  "enunciado": "Para implementar un enfoque de educación ambiental crítica y reflexiva, ¿qué estrategia didáctica debe privilegiar el docente?",
   "opciones": {
-    "A": "Educación ambiental crítica y participativa.",
-    "B": "Activismo sin reflexión.",
-    "C": "Castigo ecológico.",
-    "D": "Decoración ambiental."
+    "A": "Promover investigaciones escolares sobre los hábitos de consumo de la comunidad, analizar el ciclo de vida de los materiales y concertar soluciones colectivas para reducir el desperdicio.",
+    "B": "Incrementar la frecuencia de las brigadas de limpieza y sancionar disciplinariamente a los estudiantes que no recolecten una cuota mínima de residuos.",
+    "C": "Sustituir las actividades prácticas por clases magistrales enfocadas en la memorización de las normas nacionales e internacionales sobre residuos sólidos.",
+    "D": "Delegar la responsabilidad del manejo de residuos a una empresa externa de reciclaje para enfocar la clase en temarios teóricos estrictamente científicos."
   },
   "clave": "A",
-  "justificacion_clave": "La opción A es la más adecuada según el criterio del ítem.",
+  "justificacion_clave": "El enfoque crítico de la educación ambiental supera la simple acción instrumental y punitiva (recoger basura, memorizar normas) y busca la comprensión sistémica del problema y la participación reflexiva.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Distractor funcional.",
-    "C": "Distractor funcional.",
-    "D": "Distractor funcional."
+    "B": "Enfoque conductista e instrumental que reduce la educación ambiental a una tarea disciplinaria/física.",
+    "C": "Enfoque enciclopedista que confunde conocimiento ecológico con memorización de normas.",
+    "D": "Solución de evasión que elimina el componente pedagógico transversal de la escuela."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Revisión editorial de fairness sin sesgo explícito detectado."
+    "observaciones": "El escenario pedagógico promueve valores formativos sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Redacción estructurada con opciones de longitud semejante."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/PRAE y contexto ambiental/MTV_B26_I07.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

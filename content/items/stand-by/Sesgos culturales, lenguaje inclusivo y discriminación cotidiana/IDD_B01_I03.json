@@ -1,30 +1,30 @@
 {
   "id_item": "IDD_B01_I03",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Lenguaje Inclusivo y Derechos Fundamentales",
   "tema": "Sesgos culturales, lenguaje inclusivo y discriminación cotidiana",
   "subtema": "Uso de lenguaje deficitario o estigmatizante para referirse a personas con discapacidad.",
   "competencia": "Uso de lenguaje respetuoso y no discriminatorio",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende que el lenguaje usado en el aula tiene efectos jurídicos, pedagógicos y simbólicos sobre la dignidad, participación y reconocimiento de las personas con discapacidad.",
-  "evidencia": "Selecciona una explicación que justifica el cambio hacia lenguaje centrado en la persona y en los derechos.",
-  "tarea": "Analizar el efecto de términos estigmatizantes y elegir la alternativa respetuosa.",
+  "claim": "Identifica el impacto jurídico y pedagógico del lenguaje en el marco de la inclusión de personas con discapacidad.",
+  "evidencia": "Selecciona la justificación del uso de lenguaje centrado en la persona y con enfoque de derechos frente a términos deficitarios tradicionales.",
+  "tarea": "Analizar el uso de terminología estigmatizante en una discusión de equipo docente y justificar el cambio de lenguaje.",
   "contexto": "En una reunión de docentes, alguien se refiere a varios estudiantes como minusválidos. Otro docente propone revisar el lenguaje usado, porque puede afectar la dignidad y la participación de los estudiantes.",
   "enunciado": "En una reunión de docentes, alguien se refiere a varios estudiantes como minusválidos. Otro docente propone revisar el lenguaje usado, porque puede afectar la dignidad y la participación de los estudiantes.\n\n¿Por qué debe cambiarse ese tipo de expresión en el aula?",
   "opciones": {
-    "A": "Porque el lenguaje no tiene ninguna relación con la inclusión, pero conviene usar palabras de moda.",
-    "B": "Porque usar términos despectivos permite identificar con mayor rapidez a quienes necesitan apoyo.",
-    "C": "Porque lo importante es ocultar la discapacidad y no hablar de ella en la escuela.",
+    "A": "Porque las directrices jurídicas nacionales exigen el uso de eufemismos para evitar reclamaciones administrativas por parte de los padres.",
+    "B": "Porque dificulta la identificación estadística en el sistema integrado de matrícula (SIMAT) para la asignación de recursos.",
+    "C": "Porque busca invisibilizar las dificultades biológicas del estudiante para favorecer su adaptación espontánea en el aula regular.",
     "D": "Porque reduce a la persona a un déficit, puede reforzar estigmas y desconoce un enfoque de derechos centrado en la dignidad y la participación."
   },
   "clave": "D",
-  "justificacion_clave": "D",
+  "justificacion_clave": "Los términos estigmatizantes (como 'minusválido') reducen al estudiante a su limitación biológica. El modelo social de la discapacidad, regulado en el Decreto 1421 de 2017, exige usar 'persona con discapacidad' para resaltar la primacía del sujeto sobre sus condiciones particulares.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque el lenguaje sí tiene efectos en inclusión y reconocimiento.",
-    "B": "Es incorrecta porque la identificación de apoyos no debe basarse en estigmatización.",
-    "C": "Es incorrecta porque no se trata de ocultar la discapacidad, sino de nombrar respetuosamente.",
-    "D": "Clave correcta."
+    "A": "Error de formalismo administrativo. Supone que el lenguaje inclusivo es una estrategia cosmética o defensiva legal ante reclamos.",
+    "B": "Error de categorización técnica. Desvía el argumento hacia el registro del SIMAT, el cual emplea denominaciones oficiales pero no explica el daño simbólico del término estigmatizante.",
+    "C": "Error de invisibilización. Asume falsamente que la inclusión consiste en ocultar la discapacidad, ignorando que requiere ajustes razonables específicos.",
+    "D": "Clave correcta. Expone la reducción al déficit y la vulneración de la dignidad que causa el lenguaje despectivo."
   },
   "fairness": {
     "sesgo_detectado": false,

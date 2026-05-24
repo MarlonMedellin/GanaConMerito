@@ -1,45 +1,45 @@
 {
   "id_item": "CEOL_B06_I02",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Evaluación Formativa y Didáctica",
   "tema": "Evaluación formativa, mejora continua y lenguaje evaluativo",
-  "subtema": "Reducción de la evaluación a medición de contenidos memorizados.",
+  "subtema": "Reducción de la evaluación a medición de contenidos memorizados",
   "competencia": "Evaluación por competencias",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende que la evaluación por competencias busca evidenciar cómo el estudiante usa lo que sabe para resolver situaciones, argumentar, tomar decisiones y actuar en contexto.",
-  "evidencia": "Selecciona una explicación que relaciona competencia con desempeño, contexto, movilización de saberes y aplicación.",
-  "tarea": "Diferenciar evaluación de competencias de medición memorística de contenidos.",
-  "contexto": "En una reunión de calidad académica, un docente afirma que evaluar competencias significa aplicar más preguntas de memoria. La coordinación aclara que el enfoque por competencias exige observar cómo el estudiante usa lo aprendido en situaciones concretas.",
-  "enunciado": "En una reunión de calidad académica, un docente afirma que evaluar competencias significa aplicar más preguntas de memoria. La coordinación aclara que el enfoque por competencias exige observar cómo el estudiante usa lo aprendido en situaciones concretas.\n\n¿Cuál es el objetivo fundamental de examinar la competencia del estudiante?",
+  "claim": "El evaluado comprende que la evaluación de competencias valora la movilización integrada de saberes en situaciones situadas.",
+  "evidencia": "Distingue la evaluación de desempeños aplicados frente al examen de repetición literal de conceptos teóricos.",
+  "tarea": "Determinar el objetivo fundamental de evaluar por competencias en el sistema escolar.",
+  "contexto": "En un taller de capacitación docente sobre el SIEE, un docente de aula plantea: 'Si evaluar competencias significa evaluar el Saber Hacer, entonces debemos dejar de lado la teoría y calificar solo la conducta de los estudiantes'. La coordinación académica interviene para aclarar el concepto pedagógico de evaluar competencias.",
+  "enunciado": "¿Cuál es el objetivo primordial de la evaluación escolar de competencias?",
   "opciones": {
-    "A": "Verificar si repite exactamente las definiciones del libro.",
-    "B": "Reemplazar todos los contenidos por actividades sin criterios académicos.",
-    "C": "Valorar cómo moviliza conocimientos, habilidades y actitudes para resolver situaciones, argumentar y actuar en contexto.",
-    "D": "Asignar más notas para aumentar el número de registros en la planilla."
+    "A": "Valorar la capacidad del estudiante para movilizar e integrar conocimientos, habilidades y actitudes al resolver problemas complejos y afrontar situaciones desafiantes en diversos contextos.",
+    "B": "Medir la exactitud con la que el estudiante reproduce textualmente conceptos y datos almacenados en su memoria a corto plazo durante la aplicación de la prueba.",
+    "C": "Flexibilizar los criterios de calidad académica hasta prescindir del dominio conceptual en la resolución de tareas prácticas grupales.",
+    "D": "Incrementar el volumen de calificaciones cuantitativas en la planilla para justificar administrativamente el cumplimiento de las metas del plan de área."
   },
-  "clave": "C",
-  "justificacion_clave": "C",
+  "clave": "A",
+  "justificacion_clave": "Una competencia no es solo saber ni solo hacer; es el saber en acción (movilización de recursos cognitivos, actitudinales y procedimentales). La evaluación debe por tanto plantear problemas en contexto que exijan al estudiante razonar, integrar y proponer.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque repetir definiciones no basta para evidenciar competencia.",
-    "B": "Es incorrecta porque las competencias no eliminan contenidos ni criterios.",
-    "C": "Clave correcta.",
-    "D": "Es incorrecta porque aumentar registros de notas no equivale a evaluar competencias."
+    "A": "Clave correcta.",
+    "B": "Representa el enfoque tradicional y desactualizado que reduce la evaluación a la comprobación de memoria pasiva de definiciones.",
+    "C": "Incurre en el error del activismo simplista, el cual supone falsamente que en el Saber Hacer no se requiere rigurosidad de conceptos científicos.",
+    "D": "Reduce la evaluación de competencias a un trámite puramente cuantitativo y de acumulación administrativa de notas en la planilla."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem no favorece un área disciplinar específica ni exige conocer un formato institucional. Evalúa el sentido general de la evaluación por competencias."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Concepto de mediación claro."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/CEOL_B06_I02.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

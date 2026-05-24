@@ -13,18 +13,18 @@
   "contexto": "Un estudiante presenta ausencias reiteradas, aislamiento y cambios emocionales observables, sin registro formal previo.",
   "enunciado": "¿Qué respuesta institucional es más adecuada?",
   "opciones": {
-    "A": "Esperar a que ocurra una falta disciplinaria para iniciar registro.",
-    "B": "Activar la ruta o sistema de alertas, documentar la situación y coordinar seguimiento con instancias pertinentes.",
-    "C": "Pedir a compañeros que vigilen conversaciones privadas del estudiante.",
-    "D": "Retirar al estudiante de actividades grupales hasta nuevo aviso."
+    "A": "Esperar a que el estudiante cometa una infracción disciplinaria formal que justifique la apertura de un proceso sancionatorio según el manual de convivencia.",
+    "B": "Activar el protocolo institucional de alertas tempranas, registrar formalmente las observaciones de comportamiento y coordinar el seguimiento interdisciplinario con el orientador escolar y el acudiente.",
+    "C": "Solicitar de manera reservada a sus compañeros de grupo que monitoreen sus redes sociales y comunicaciones privadas para obtener información del caso.",
+    "D": "Restringir provisionalmente la participación del estudiante en dinámicas grupales y salidas pedagógicas para evitar posibles situaciones de conflicto en el aula."
   },
   "clave": "B",
-  "justificacion_clave": "Responde al enfoque preventivo: actuación oportuna, trazable y articulada institucionalmente.",
+  "justificacion_clave": "De acuerdo con la Ley 1620 de 2013 y el Decreto 1965 de 2013, las instituciones educativas deben contar con un Sistema de Información Unificado de Convivencia Escolar y un protocolo de alertas tempranas. Ante señales observables de vulneración de derechos o afectación del desarrollo integral (como ausentismo, aislamiento y cambios drásticos del estado de ánimo), es imperativo actuar de manera preventiva y no sancionatoria. Se debe registrar el caso de forma confidencial, entablar contacto con la familia y remitir a orientación para activar el acompañamiento profesional oportuno.",
   "distractores_funcion": {
-    "A": "Confunde prevención con sanción disciplinaria.",
+    "A": "Incorrecto. Supone una respuesta de carácter puramente punitivo y tardío que contradice la función de prevención y protección integral de la escuela frente a posibles situaciones de acoso escolar, violencia o afectaciones socioemocionales.",
     "B": "Clave correcta.",
-    "C": "Vulnera privacidad y delega funciones institucionales.",
-    "D": "Aumenta aislamiento sin activar apoyos."
+    "C": "Incorrecto. Involucrar a los compañeros en labores de vigilancia vulnera flagrantemente el derecho constitucional a la intimidad y al libre desarrollo de la personalidad del estudiante, además de romper la confianza en el aula.",
+    "D": "Incorrecto. Apartar o segregar al alumno agudiza su aislamiento socioafectivo y vulnera su derecho al libre desarrollo e inclusión educativa, actuando de forma contraria a lo que exige una alerta formativa."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

@@ -7,39 +7,39 @@
   "competencia": "Determina actuaciones de protección escolar coherentes con la posición de garante y la ruta institucional.",
   "nivel_cognitivo": "JUICIO",
   "dificultad_estimada": "MEDIA-ALTA",
-  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada en el caso planteado.",
-  "evidencia": "Selecciona una alternativa única, consistente con el criterio evaluado y superior frente a distractores plausibles.",
-  "tarea": "Analizar la situación y elegir la mejor decisión según el enfoque del ítem.",
+  "claim": "Valora la adecuación de actuaciones pedagógicas e institucionales bajo criterios normativos y constitucionales.",
+  "evidencia": "Selecciona la respuesta que demuestra la correcta aplicación del marco normativo y pedagógico colombiano.",
+  "tarea": "Analizar el caso y determinar la opción correcta conforme a derecho y principios pedagógicos.",
   "contexto": "Un docente identifica que un estudiante con discapacidad está quedando sistemáticamente por fuera de las actividades de clase porque no comprende las instrucciones y no cuenta con apoyos suficientes. Algunos compañeros sugieren esperar a que la familia o el docente de apoyo resuelvan la situación.",
-  "enunciado": "Un docente identifica que un estudiante con discapacidad está quedando sistemáticamente por fuera de las actividades de clase porque no comprende las instrucciones y no cuenta con apoyos suficientes. Algunos compañeros sugieren esperar a que la familia o el docente de apoyo resuelvan la situación.\n\n¿Qué responsabilidad adquiere el docente bajo el principio de corresponsabilidad y la figura de garante?",
+  "enunciado": "Un docente identifica que un estudiante con discapacidad está quedando sistemáticamente por fuera de las actividades de clase porque no comprende las instrucciones y no cuenta con apoyos suficientes. Algunos compañeros sugieren esperar a que la familia o el docente de apoyo resuelvan la situación.\n\n¿Qué responsabilidad adquiere el docente de aula bajo el principio de corresponsabilidad y la posición de garante regulados en la normatividad colombiana?",
   "opciones": {
-    "A": "Ignorar la situación porque la inclusión es responsabilidad exclusiva de la familia.",
-    "B": "Excluir al estudiante de las actividades evaluativas hasta que llegue un diagnóstico nuevo.",
-    "C": "Actuar oportunamente para proteger sus derechos, comunicar la situación, articular apoyos y ajustar la mediación pedagógica para favorecer su participación.",
-    "D": "Asignarle tareas sin relación con el tema para mantenerlo ocupado mientras el grupo avanza."
+    "A": "Actuar oportunamente para eliminar barreras en el aula, reportar y articular con el docente de apoyo y directivos, y realizar los ajustes pedagógicos para asegurar su participación.",
+    "B": "Suspender la participación del estudiante en las actividades grupales y solicitar a la rectoría el traslado del caso al sector salud para que reciba atención terapéutica externa.",
+    "C": "Exigir de manera formal a la familia que asista diariamente al aula de clase para realizar el acompañamiento y cuidado individual del estudiante.",
+    "D": "Diseñar una malla curricular paralela y simplificada que no interfiera con los desempeños mínimos establecidos para el resto del grupo de estudiantes."
   },
-  "clave": "C",
-  "justificacion_clave": "C",
+  "clave": "A",
+  "justificacion_clave": "A",
   "distractores_funcion": {
-    "A": "Es incorrecta porque desconoce la corresponsabilidad institucional.",
-    "B": "Es incorrecta porque excluye al estudiante del proceso formativo.",
-    "C": "Clave correcta.",
-    "D": "Es incorrecta porque mantiene al estudiante presente físicamente pero excluido del aprendizaje común."
+    "A": "Clave correcta.",
+    "B": "Desviación médica de la inclusión: busca eludir la labor didáctica docente remitiendo al menor a un ámbito clínico, desnaturalizando el derecho a la educación inclusiva.",
+    "C": "Imposición de barrera: traslada el deber institucional del apoyo pedagógico a la familia, coartando además la autonomía y el libre desarrollo del estudiante.",
+    "D": "Error curricular (segregación cognitiva): la creación de un currículo paralelo de baja exigencia aísla cognitivamente al estudiante del proceso colectivo del grupo."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Caso con lenguaje técnico de uso educativo y sin referencias discriminatorias."
+    "observaciones": "Lenguaje formal, neutral y apegado a la jurisprudencia colombiana en materia de derechos y deberes educativos, libre de sesgos territoriales o culturales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Estructura clara, una sola tarea cognitiva y opciones comparables."
+    "observaciones": "Redacción estructurada con enunciados independientes y opciones de longitud y complejidad gramatical homogéneas."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Corresponsabilidad, garante y protección del estudiante/IDD_B03_I01.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
     "apto_banco": true
   }
 }

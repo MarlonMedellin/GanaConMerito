@@ -1,44 +1,44 @@
 {
   "id_item": "EFCC_B02_I03",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Evaluación del aprendizaje",
+  "area": "Evaluación, currículo y didáctica",
   "tema": "Criterios, instrumentos y tipos de evaluación",
   "subtema": "Evaluación, Currículo y Didáctica",
-  "competencia": "Distingue criterios, instrumentos y tipos de evaluación para seleccionar estrategias pertinentes al propósito formativo.",
-  "nivel_cognitivo": "ANÁLISIS",
+  "competencia": "Integrar coevaluación, autoevaluación y heteroevaluación de manera coherente en el Sistema Institucional de Evaluación (SIEE).",
+  "nivel_cognitivo": "ANALISIS",
   "dificultad_estimada": "MEDIA",
-  "claim": "Identifica la alternativa más adecuada según el marco pedagógico, evaluativo o de protección del caso.",
-  "evidencia": "Selecciona una única respuesta técnicamente defendible frente a distractores plausibles.",
-  "tarea": "Analizar la situación planteada y elegir la decisión institucional o didáctica más pertinente.",
-  "contexto": "En una clase, el docente valora el trabajo de los estudiantes con una rúbrica; luego, los estudiantes revisan los productos de sus compañeros usando los mismos criterios. Finalmente, el grupo conversa sobre cómo estas valoraciones ayudan a mejorar el aprendizaje.",
-  "enunciado": "En una clase, el docente valora el trabajo de los estudiantes con una rúbrica; luego, los estudiantes revisan los productos de sus compañeros usando los mismos criterios. Finalmente, el grupo conversa sobre cómo estas valoraciones ayudan a mejorar el aprendizaje.\n\n¿Cuál opción diferencia mejor evaluación, coevaluación y heteroevaluación?",
+  "claim": "El evaluado analiza el rol y los beneficios de la coevaluación, autoevaluación y heteroevaluación en los procesos formativos escolares de la Ley 115 y el Decreto 1290 de 2009.",
+  "evidencia": "Diferencia el sentido y la ejecución práctica de cada agente de evaluación de acuerdo con la teoría pedagógica formativa.",
+  "tarea": "Diseñar una estrategia evaluativa integrada que involucre de forma coordinada a docentes y estudiantes en un proyecto de aula.",
+  "contexto": "Un consejo académico oficial debate la inclusión de la autoevaluación y la coevaluación en el Sistema Institucional de Evaluación de los Estudiantes (SIEE). Algunos docentes consideran que estas formas participativas restan autoridad al profesor y carecen de rigurosidad evaluativa.",
+  "enunciado": "Para fundamentar conceptualmente la incorporación de estas estrategias formativas de acuerdo con la normatividad educativa colombiana (Decreto 1290 de 2009), se debe argumentar que:",
   "opciones": {
-    "A": "La coevaluación ocurre cuando el docente califica al estudiante; la heteroevaluación ocurre cuando nadie revisa el trabajo.",
-    "B": "La evaluación solo consiste en poner notas; la coevaluación y la heteroevaluación no hacen parte del proceso formativo.",
-    "C": "La heteroevaluación es la valoración que cada estudiante hace de sí mismo; la coevaluación es una sanción grupal.",
-    "D": "La evaluación recoge evidencias para valorar el aprendizaje; la coevaluación implica valoración entre pares; la heteroevaluación es la valoración realizada por otro, usualmente el docente."
+    "A": "La heteroevaluación valora los desempeños del estudiante desde la mirada externa del docente; la autoevaluación promueve que el propio estudiante reflexione sobre su aprendizaje; y la coevaluación fomenta la valoración y retroalimentación crítica regulada entre pares.",
+    "B": "La coevaluación faculta a los estudiantes a calificar numéricamente y de forma vinculante el comportamiento extraescolar de sus compañeros para eximir de la heteroevaluación docente.",
+    "C": "La autoevaluación reemplaza la planilla de calificaciones del docente oficial, permitiendo que la nota final de periodo sea definida autónomamente por el promedio acumulado de las notas declaradas por cada estudiante.",
+    "D": "La coevaluación debe implementarse únicamente como un recurso excepcional de control disciplinario y sanción del grupo escolar frente a estudiantes rezagados en el aula."
   },
-  "clave": "D",
-  "justificacion_clave": "D",
+  "clave": "A",
+  "justificacion_clave": "Las tres formas de evaluación se complementan en el enfoque formativo (Decreto 1290 de 2009) para desarrollar competencias metacognitivas y relacionales en los estudiantes. No anulan el rol orientador del docente, sino que integran distintas perspectivas para mejorar el aprendizaje.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque atribuye al docente la coevaluación y define de forma absurda la heteroevaluación.",
-    "B": "Es incorrecta porque reduce la evaluación a calificación y desconoce formas participativas de valoración.",
-    "C": "Es incorrecta porque la valoración de sí mismo corresponde a autoevaluación, no a heteroevaluación.",
-    "D": "Clave correcta."
+    "A": "Clave correcta.",
+    "B": "Promueve un uso punitivo y descontrolado del proceso evaluativo entre pares que daña el clima del aula escolar.",
+    "C": "Representa un sesgo de abandono del rol pedagógico y normativo del docente como responsable de certificar los procesos del saber institucional.",
+    "D": "Utiliza una estrategia de aprendizaje cooperativo con fines de coerción o humillación colectiva, contradiciendo el marco ético del SIEE."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje pedagógico y normativo estándar, sin sesgos culturales o barreras innecesarias."
+    "observaciones": "El ítem se alinea con la reglamentación nacional sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones comparables en estructura y nivel de abstracción."
+    "observaciones": "Usa terminología del Decreto 1290 de 2009 comprensible para educadores."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Criterios, instrumentos y tipos de evaluación/EFCC_B02_I03.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

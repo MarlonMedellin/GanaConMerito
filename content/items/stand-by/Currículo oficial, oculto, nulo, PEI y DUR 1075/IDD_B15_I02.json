@@ -1,44 +1,44 @@
 {
   "id_item": "IDD_B15_I02",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Gestión curricular y normativa educativa",
+  "area": "Pedagogía y currículo",
   "tema": "Currículo oficial, oculto, nulo, PEI y DUR 1075",
   "subtema": "Currículo oficial vs. currículo oculto",
-  "competencia": "Distingue tipos de currículo y su articulación con PEI y marco normativo para valorar decisiones institucionales.",
-  "nivel_cognitivo": "ANÁLISIS",
+  "competencia": "Diferenciar el currículo oculto del currículo oficial a partir de situaciones prácticas del aula de clase.",
+  "nivel_cognitivo": "ANALISIS",
   "dificultad_estimada": "MEDIA",
-  "claim": "Identifica la alternativa más adecuada según el criterio curricular y pedagógico evaluado en el caso.",
-  "evidencia": "Selecciona una única respuesta técnicamente defendible frente a distractores plausibles.",
-  "tarea": "Analizar la situación y elegir la mejor decisión curricular, didáctica o institucional.",
-  "contexto": "Una institución organiza su currículo con base en normas, DBA, planes de área y orientaciones oficiales. Sin embargo, en el aula también se enseñan valores, formas de convivencia y respuestas a problemas emocionales o familiares que no siempre aparecen escritos en el plan de estudios.",
-  "enunciado": "Una institución organiza su currículo con base en normas, DBA, planes de área y orientaciones oficiales. Sin embargo, en el aula también se enseñan valores, formas de convivencia y respuestas a problemas emocionales o familiares que no siempre aparecen escritos en el plan de estudios.\n\n¿Cuál diferencia describe mejor el currículo oficial y el currículo oculto?",
+  "claim": "El evaluado distingue la dinámica entre el currículo oficial y el currículo oculto en situaciones reales del aula de clase.",
+  "evidencia": "Identifica las manifestaciones del currículo oculto en el clima de aula y las relaciones cotidianas, diferenciándolas de la planeación escrita.",
+  "tarea": "Analizar un caso de incongruencia entre el discurso institucional oficial y las prácticas escolares informales, determinando el concepto curricular que lo explica.",
+  "contexto": "Un docente de Ciencias Sociales nota que durante las discusiones grupales sobre dilemas morales, los estudiantes imitan gestos de exclusión y descalificación hacia sus compañeros cuando no están de acuerdo, repitiendo dinámicas cotidianas del entorno familiar. Aunque el docente tiene una planificación curricular orientada a la tolerancia y los derechos humanos, reconoce que en la interacción informal se está transmitiendo un aprendizaje contradictorio.",
+  "enunciado": "De acuerdo con la teoría curricular, esta situación evidencia la presencia de:",
   "opciones": {
-    "A": "El currículo oficial corresponde a referentes, normas, planes y programas formalmente establecidos; el currículo oculto corresponde a aprendizajes, valores y prácticas no escritas que se transmiten en la vida cotidiana escolar.",
-    "B": "El currículo oficial es todo lo que se improvisa en clase y el oculto es únicamente el listado de DBA.",
-    "C": "El currículo oculto no existe porque la escuela solo enseña lo que aparece en los documentos.",
-    "D": "El currículo oficial se refiere solo a sanciones disciplinarias y el oculto solo a horarios."
+    "A": "Un currículo oculto, el cual se manifiesta en los valores, actitudes y conductas implícitas que los estudiantes aprenden a través de las interacciones cotidianas en el aula.",
+    "B": "Un currículo nulo, puesto que los temas de derechos humanos planificados fueron omitidos deliberadamente de la práctica evaluativa por falta de tiempo.",
+    "C": "Un currículo oficial, dado que la planificación del plan de área de Ciencias Sociales carece de estándares de competencia específicos para evaluar la empatía.",
+    "D": "Un currículo extracurricular, debido a que las actitudes observadas corresponden a hábitos adquiridos fuera del horario laboral formal de la institución."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "El currículo oculto comprende aquellas lecciones, valores y sesgos que no están escritos formalmente pero que se transmiten implícitamente a través del clima institucional y el comportamiento informal en el aula.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque confunde los conceptos.",
-    "C": "Es incorrecta porque la escuela también educa mediante prácticas no escritas.",
-    "D": "Es incorrecta porque reduce el currículo a elementos administrativos."
+    "B": "Confunde el concepto con el currículo nulo (temas planificados pero no enseñados).",
+    "C": "Atribuye erróneamente el fenómeno a la falta de especificación formal en el documento del plan de área.",
+    "D": "Desvincula el problema de la vida escolar al clasificarlo como extracurricular simplemente por el origen socio-familiar de las conductas."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estandarizado y contexto institucional general, sin sesgos culturales innecesarios."
+    "observaciones": "El reactivo se enfoca en aspectos técnicos del currículo sin sesgar a grupos minoritarios."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado claro, tarea única y opciones homogéneas en estructura."
+    "observaciones": "Opciones balanceadas gramaticalmente."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Currículo oficial, oculto, nulo, PEI y DUR 1075/IDD_B15_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

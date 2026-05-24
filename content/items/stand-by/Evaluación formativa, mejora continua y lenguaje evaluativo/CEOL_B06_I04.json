@@ -1,45 +1,45 @@
 {
   "id_item": "CEOL_B06_I04",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Evaluación Formativa y Lenguaje Profesional",
   "tema": "Evaluación formativa, mejora continua y lenguaje evaluativo",
-  "subtema": "Uso de etiquetas subjetivas y descalificadoras al analizar el rendimiento de estudiantes.",
+  "subtema": "Uso de etiquetas subjetivas y descalificadoras",
   "competencia": "Análisis objetivo de evidencias",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende que en una comisión de evaluación se debe hablar de desempeños, evidencias, apoyos y dificultades observables, evitando etiquetas personales que estigmaticen al estudiante.",
-  "evidencia": "Selecciona la alternativa que evita términos como perezoso, problema, incapaz o irresponsable como descripciones personales absolutas.",
-  "tarea": "Distinguir lenguaje profesional basado en evidencias de juicios de valor subjetivos.",
-  "contexto": "En una comisión de evaluación, varios docentes analizan el rendimiento de un estudiante. Algunos empiezan a usar expresiones personales y descalificadoras en lugar de describir evidencias de desempeño, asistencia, participación o necesidades de apoyo.",
-  "enunciado": "En una comisión de evaluación, varios docentes analizan el rendimiento de un estudiante. Algunos empiezan a usar expresiones personales y descalificadoras en lugar de describir evidencias de desempeño, asistencia, participación o necesidades de apoyo.\n\n¿Qué términos o clasificaciones debe evitar estrictamente el docente para no emitir juicios de valor subjetivos sobre el estudiante?",
+  "claim": "El evaluado utiliza lenguaje evaluativo descriptivo, técnico y respetuoso en las comisiones de evaluación y promoción escolar.",
+  "evidencia": "Identifica intervenciones que centran el debate en evidencias de desempeño y apoyos pedagógicos frente a descalificaciones o adjetivos subjetivos.",
+  "tarea": "Reorientar una discusión en la comisión de evaluación hacia el lenguaje técnico y formativo propio del cargo.",
+  "contexto": "En una sesión de la comisión de evaluación y promoción de grado quinto, se analiza el caso de un estudiante con múltiples asignaturas reprobadas. Durante el debate, algunos docentes adjetivan al estudiante como 'perezoso, incapaz, problemático e irresponsable'. El docente director de grupo desea reconducir el análisis bajo los lineamientos de la evaluación formativa.",
+  "enunciado": "¿Qué intervención del director de grupo es la más adecuada para reorientar el lenguaje y enfoque de la comisión?",
   "opciones": {
-    "A": "Desempeño pendiente, dificultad en lectura inferencial y requiere apoyo en resolución de problemas.",
-    "B": "Presenta inasistencias reiteradas, entrega incompleta de actividades y necesita seguimiento familiar.",
-    "C": "Muestra avances parciales, requiere retroalimentación y necesita nuevas evidencias de aprendizaje.",
-    "D": "Perezoso, incapaz, problemático, irresponsable o estudiante malo."
+    "A": "Solicitar a la comisión que se analicen los desempeños específicos no alcanzados y las inasistencias registradas, proponiendo estrategias de apoyo pedagógico concretas que involucren al estudiante y a su familia.",
+    "B": "Respaldar las etiquetas propuestas por los colegas e incluir textualmente los adjetivos de irresponsabilidad en el acta oficial como sustento legal de la reprobación.",
+    "C": "Sugerir que se apruebe al estudiante de manera automática sin ninguna condición ni compromiso, con el fin de evitar discusiones complejas o desgaste administrativo.",
+    "D": "Proponer que la valoración del desempeño dependa exclusivamente de la aplicación de un test de personalidad administrado de forma aislada por orientación escolar."
   },
-  "clave": "D",
-  "justificacion_clave": "D",
+  "clave": "A",
+  "justificacion_clave": "El lenguaje evaluativo profesional debe basarse en hechos, evidencias objetivas de aprendizaje y dificultades específicas observables (por ejemplo, 'dificultad en lectura inferencial' o 'inasistencia recurrente'). Las etiquetas descalificadoras atentan contra la dignidad del estudiante, estigmatizan su desarrollo y desvirtúan la labor pedagógica de acompañamiento y nivelación.",
   "distractores_funcion": {
-    "A": "Es incorrecta como respuesta porque usa lenguaje pedagógico descriptivo.",
-    "B": "Es incorrecta como respuesta porque describe hechos observables y necesidad de seguimiento.",
-    "C": "Es incorrecta como respuesta porque se centra en avances, retroalimentación y evidencias.",
-    "D": "Clave correcta."
+    "A": "Clave correcta.",
+    "B": "Institucionaliza la descalificación subjetiva e informal en actas oficiales, vulnerando el debido proceso y la dignidad del menor.",
+    "C": "Evade el problema formativo mediante una flexibilización extrema e irresponsable de promoción automática que perjudica el desarrollo cognitivo del alumno.",
+    "D": "Desplaza la responsabilidad de la evaluación pedagógica colectiva a una sola prueba psicométrica ajena al plan de estudios y al aula de clases."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem promueve lenguaje profesional, evita estigmatizar al estudiante y diferencia entre describir dificultades observables y emitir juicios subjetivos sobre la persona."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Lenguaje técnico y constructivo."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/CEOL_B06_I04.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

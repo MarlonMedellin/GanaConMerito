@@ -1,44 +1,44 @@
 {
   "id_item": "NFL_B04_I04",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Política y sistema educativo",
+  "area": "Normatividad y estructura educativa",
   "tema": "Estructura del sistema educativo - educación básica, secundaria y media",
-  "subtema": "Diferencia entre básica secundaria y media",
-  "competencia": "Distingue niveles y organización del sistema educativo para interpretar su aplicación en contextos institucionales.",
-  "nivel_cognitivo": "ANÁLISIS",
+  "subtema": "Objetivos Comunes y Transversales",
+  "competencia": "Asocia los objetivos comunes de los niveles del sistema educativo formal y los integra de manera transversal según la Ley 115.",
+  "nivel_cognitivo": "APLICACIÓN",
   "dificultad_estimada": "MEDIA",
-  "claim": "Identifica la respuesta pedagógica o institucional técnicamente más adecuada para el caso planteado.",
-  "evidencia": "Selecciona una única alternativa defendible frente a distractores plausibles desde el constructo evaluado.",
-  "tarea": "Analizar el caso y elegir la opción más pertinente según criterios pedagógicos y normativos aplicables.",
-  "contexto": "Un docente nuevo usa indistintamente los términos básica secundaria y educación media. El coordinador académico le explica que, aunque ambas pertenecen a la educación formal escolar, no son lo mismo según la Ley 115.",
-  "enunciado": "Un docente nuevo usa indistintamente los términos básica secundaria y educación media. El coordinador académico le explica que, aunque ambas pertenecen a la educación formal escolar, no son lo mismo según la Ley 115.\n\n¿Cuál comparación es correcta?",
+  "claim": "Determina el alcance transversal y progresivo de la formación ciudadana y constitucional a lo largo de los niveles del sistema formal.",
+  "evidencia": "Selecciona el carácter común y continuo de la formación para la ciudadanía y los valores democráticos en todos los niveles frente a propuestas de exclusión o aislamiento extracurricular.",
+  "tarea": "Determinar la validez de la postura de un docente que propone concentrar la formación ciudadana únicamente en educación media, excluyendo a la educación básica.",
+  "contexto": "Durante la planeación curricular del área de ciencias sociales, se discute cómo secuenciar el aprendizaje de la constitución y la participación democrática. Un docente nuevo argumenta que la formación para la ciudadanía debe concentrarse únicamente en el nivel de educación media (grados 10.° y 11.°), ya que los estudiantes de educación básica (1.° a 9.°) no cuentan con la madurez para asimilar el funcionamiento normativo del Estado.",
+  "enunciado": "Durante la planeación curricular del área de ciencias sociales, se discute cómo secuenciar el aprendizaje de la constitución y la participación democrática. Un docente nuevo argumenta que la formación para la ciudadanía debe concentrarse únicamente en el nivel de educación media (grados 10.° y 11.°), ya que los estudiantes de educación básica (1.° a 9.°) no cuentan con la madurez para asimilar el funcionamiento normativo del Estado. De acuerdo con los objetivos comunes de los niveles educativos fijados en la Ley 115 de 1994, la postura del docente nuevo es errónea porque el desarrollo de la valoración de la constitución y la formación ciudadana:",
   "opciones": {
-    "A": "La básica secundaria hace parte de la educación básica; la educación media comprende décimo y undécimo y busca culminar, consolidar y preparar al estudiante para educación superior o trabajo.",
-    "B": "La educación media corresponde a primero, segundo y tercero de primaria.",
-    "C": "La básica secundaria y la educación media son exactamente el mismo nivel.",
-    "D": "La educación básica solo corresponde al grado undécimo."
+    "A": "Constituye un objetivo común a todos los niveles del sistema educativo formal, que debe promoverse de manera transversal y progresiva desde el preescolar y a lo largo de toda la educación básica y media.",
+    "B": "Se restringe legalmente al nivel de educación básica secundaria, debiendo la educación media enfocarse exclusivamente en asignaturas científicas e instrumentales.",
+    "C": "Es un contenido optativo que las instituciones educativas pueden decidir libremente si incluyen en la educación media a través de su autonomía curricular.",
+    "D": "Debe abordarse únicamente mediante la cátedra extracurricular del Gobierno Escolar, sin afectar los planes de estudios tradicionales de las asignaturas obligatorias."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "De acuerdo con el artículo 13 y el artículo 41 de la Ley 115 de 1994, el estudio de la Constitución y la instrucción cívica son obligatorios y comunes en todos los niveles de la educación formal (preescolar, básica y media), debiendo promoverse de forma continua y adaptada al desarrollo cognitivo de los estudiantes.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque la educación media no corresponde a primaria.",
-    "C": "Es incorrecta porque básica secundaria y media no son equivalentes.",
-    "D": "Es incorrecta porque la educación básica comprende nueve grados, no solo undécimo."
+    "B": "Restricción a nivel intermedio: asigna de forma falsa y excluyente la formación para la ciudadanía a un subnivel escolar, liberando de forma errónea a la media de esta responsabilidad social.",
+    "C": "Criterio de opcionalidad curricular: contradice el mandato constitucional (Art. 41 C.P.) y el legal (Ley 115) que establecen la obligatoriedad e ineludibilidad de la formación constitucional en todos los establecimientos públicos y privados.",
+    "D": "Reducción extracurricular: desvincula la formación ciudadana de la planeación curricular general de las áreas académicas del aula, reduciéndola a un trámite externo o eventual de carácter administrativo."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Lenguaje educativo estándar, sin sesgos culturales innecesarios ni barreras de comprensión relevantes."
+    "observaciones": "El ítem promueve principios de inclusión y educación en valores ciudadanos transversales."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado con tarea única y opciones homogéneas en estructura."
+    "observaciones": "Enunciado claro con una sola tarea conceptual concreta."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Estructura del sistema educativo - educación básica, secundaria y media/NFL_B04_I04.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

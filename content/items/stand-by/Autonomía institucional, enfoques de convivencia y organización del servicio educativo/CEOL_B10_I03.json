@@ -1,44 +1,43 @@
 {
   "id_item": "CEOL_B10_I03",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Convivencia y organización institucional",
-  "tema": "Autonomía institucional, enfoques de convivencia y organización del servicio educativo",
-  "subtema": "Evaluación para el Ascenso y Reubicación",
+  "area": "Gestión escolar y clima de aula",
+  "tema": "Convivencia escolar y autonomía",
+  "subtema": "Práctica docente en convivencia",
   "competencia": "Selecciona decisiones de gestión escolar acordes con autonomía institucional, convivencia y organización del servicio educativo.",
-  "nivel_cognitivo": "ANÁLISIS",
+  "nivel_cognitivo": "JUICIO",
   "dificultad_estimada": "MEDIA",
-  "claim": "Identifica la actuación institucional o pedagógica más consistente con el marco conceptual y normativo del caso planteado.",
-  "evidencia": "Selecciona una única alternativa técnicamente superior frente a opciones plausibles pero incorrectas o incompletas.",
-  "tarea": "Analizar el caso y elegir la mejor decisión pedagógica o institucional según el criterio evaluado.",
-  "contexto": "En una evaluación de desempeño, se analiza el criterio de ambiente en el aula. Se busca identificar acciones que evidencien un nivel avanzado frente a la promoción de entornos seguros y sana convivencia escolar.",
-  "enunciado": "En una evaluación de desempeño, se analiza el criterio de ambiente en el aula. Se busca identificar acciones que evidencien un nivel avanzado frente a la promoción de entornos seguros y sana convivencia escolar.\n\n¿Cuál conjunto de acciones representa mejor ese nivel avanzado?",
+  "claim": "El evaluado valora las acciones pedagógicas que configuran un nivel de desempeño avanzado en la gestión del clima escolar.",
+  "evidencia": "Distingue conductas docentes integrales y preventivas (acuerdos, mediación, seguimiento) de aquellas reactivas, punitivas o permisivas.",
+  "tarea": "Elegir el conjunto de acciones docentes que demuestran un nivel avanzado en la promoción de un clima de aula seguro y respetuoso.",
+  "contexto": "En el marco de la evaluación de desempeño anual docente, se valora la contribución al clima institucional y de aula. La directiva evalúa el comportamiento del docente frente a la prevención y manejo de conflictos en el salón de clases, buscando identificar acciones que representen un desempeño sobresaliente.",
+  "enunciado": "De acuerdo con los referentes pedagógicos de la evaluación de desempeño (Guía 31 del MEN), ¿cuál conjunto de acciones del docente evidencia mejor un nivel sobresaliente en este componente?",
   "opciones": {
-    "A": "Construir acuerdos de aula, anticipar riesgos, promover participación, atender conflictos con mediación, proteger la dignidad de los estudiantes y hacer seguimiento a la convivencia.",
-    "B": "Esperar a que ocurran conflictos graves para aplicar sanciones fuertes.",
-    "C": "Evitar toda participación estudiantil para mantener silencio absoluto.",
-    "D": "Delegar por completo la convivencia al coordinador y limitarse a dictar contenidos."
+    "A": "Involucrar activamente a los estudiantes en la construcción de acuerdos de convivencia, anticipar factores de riesgo, mediar de forma constructiva en los conflictos cotidianos y realizar un seguimiento sistemático al clima del aula.",
+    "B": "Diseñar de forma autónoma el reglamento disciplinario del aula, sancionar rigurosamente cualquier incumplimiento de forma inmediata y delegar a la coordinación general la resolución de conflictos graves.",
+    "C": "Focalizar la planeación de clase en el cumplimiento temático de la asignatura, exigiendo silencio absoluto y absteniéndose de intervenir en asuntos relacionales de los alumnos para no perder tiempo.",
+    "D": "Permitir que los estudiantes manejen de manera autónoma sus diferencias de convivencia para fomentar la libre expresión, interviniendo únicamente en caso de agresiones físicas evidentes."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "La opción A es la correcta porque, de acuerdo con la Guía 31 del Ministerio de Educación Nacional, el desempeño sobresaliente en convivencia escolar implica un rol docente activo y preventivo que promueve la participación estudiantil en los acuerdos de convivencia, implementa estrategias de mediación formativa y realiza un seguimiento constructivo.",
   "distractores_funcion": {
-    "A": "Clave correcta.",
-    "B": "Es incorrecta porque el nivel avanzado no se limita a reaccionar con sanción.",
-    "C": "Es incorrecta porque un aula segura no equivale a silenciar la participación.",
-    "D": "Es incorrecta porque el docente también gestiona el ambiente de aula."
+    "B": "Describe una gestión tradicional de corte autoritario y reactivo, donde se carece de concertación con los estudiantes y se evade la resolución formativa delegando en terceros.",
+    "C": "Plantea una separación artificial entre desarrollo académico y convivencia escolar, lo cual contradice el principio de desarrollo integral de la educación.",
+    "D": "Describe un modelo de aula desestructurado (laissez-faire) que desatiende la función de garante y acompañamiento preventivo del docente."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Contextos escolares generales y lenguaje técnico neutral; no exige experiencia localizada."
+    "observaciones": "Sustentado en lineamientos nacionales del MEN sobre evaluación del desempeño del educador."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Estructura de caso breve y una sola tarea cognitiva por ítem."
+    "observaciones": "Redacción estructurada, con opciones de respuesta paralelas y directas."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I03.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

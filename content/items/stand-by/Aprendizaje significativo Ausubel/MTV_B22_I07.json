@@ -11,20 +11,20 @@
   "evidencia": "Selecciona la opción que mejor explica la decisión pedagógica coherente con el aprendizaje significativo en el caso planteado.",
   "tarea": "Inferir, a partir del caso, la condición didáctica que permite aprendizaje significativo según Ausubel.",
   "contexto": "Un estudiante aprende una fórmula, pero no sabe cuándo usarla, qué representa cada variable ni cómo se relaciona con un fenómeno real. La docente quiere evitar que el aprendizaje sea arbitrario.",
-  "enunciado": "Un estudiante aprende una fórmula, pero no sabe cuándo usarla, qué representa cada variable ni cómo se relaciona con un fenómeno real. La docente quiere evitar que el aprendizaje sea arbitrario.\n\n¿Qué debe hacer?",
+  "enunciado": "Para evitar que este aprendizaje continúe siendo arbitrario y carente de sentido, ¿qué estrategia pedagógica es más coherente con la teoría de Ausubel?",
   "opciones": {
-    "A": "Pedir que repita la fórmula veinte veces.",
-    "B": "Relacionar la fórmula con situaciones, significados, variables, ejemplos y problemas contextualizados.",
-    "C": "Eliminar toda explicación conceptual.",
-    "D": "Calificar únicamente la memoria literal."
+    "A": "Promover la ejercitación mecánica reiterada del algoritmo de la fórmula para asegurar la retención de los pasos lógicos.",
+    "B": "Diseñar situaciones didácticas que permitan al estudiante conectar las variables de la fórmula con conceptos previos y fenómenos observables.",
+    "C": "Reemplazar las fórmulas del plan de estudios por actividades prácticas no formales basadas exclusivamente en el descubrimiento libre.",
+    "D": "Aplicar pruebas escritas de respuesta corta centradas en la memoria de los nombres de las variables matemáticas."
   },
   "clave": "B",
-  "justificacion_clave": "La relación no arbitraria exige que el estudiante comprenda significado, uso y conexión del conocimiento con situaciones reales o conceptuales.",
+  "justificacion_clave": "La no arbitrariedad implica que el material de aprendizaje no se relacione de forma mecánica sino sustantiva con la estructura cognitiva del alumno. Conectar las variables de la fórmula con saberes cotidianos y fenómenos prácticos otorga significado y sentido al aprendizaje matemático.",
   "distractores_funcion": {
-    "A": "La repetición no garantiza significado.",
+    "A": "Representa el aprendizaje memorístico por repetición del procedimiento, que es justamente lo que se quiere superar.",
     "B": "Clave correcta.",
-    "C": "La explicación conceptual es necesaria.",
-    "D": "La memoria literal no basta para aprender significativamente."
+    "C": "Error de descartar el lenguaje formal y matemático, confundiendo el aprendizaje significativo con la total informalidad pedagógica.",
+    "D": "Sanciona el conductismo o evaluación sumativa memorística como remedio pedagógico."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I07.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

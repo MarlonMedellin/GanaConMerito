@@ -1,45 +1,45 @@
 {
   "id_item": "NFL_B06_I04",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Ley ordinaria y unidad de materia",
   "tema": "Tipos de normas - acto legislativo, ley ordinaria y ley estatutaria",
-  "subtema": "Confundir ley ordinaria con reforma constitucional o ley estatutaria.",
+  "subtema": "Confundir ley ordinaria con reforma constitucional",
   "competencia": "Comprensión de legislación general",
-  "nivel_cognitivo": "APLICACION",
+  "nivel_cognitivo": "CONOCIMIENTO",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende el alcance general de la ley ordinaria y su diferencia frente a normas de trámite especial.",
-  "evidencia": "Selecciona una descripción correcta de ley ordinaria y unidad de materia.",
-  "tarea": "Clasificar una norma legislativa según su materia y trámite.",
-  "contexto": "En una discusión sobre normatividad, un estudiante afirma que una ley ordinaria puede reformar la Constitución y regular cualquier materia sin límite temático. El docente corrige la afirmación.",
-  "enunciado": "En una discusión sobre normatividad, un estudiante afirma que una ley ordinaria puede reformar la Constitución y regular cualquier materia sin límite temático. El docente corrige la afirmación.\n\n¿Cuál explicación es más adecuada?",
+  "claim": "El evaluado comprende el alcance y límites de la Ley Ordinaria en el sistema normativo colombiano.",
+  "evidencia": "Reconoce que la ley ordinaria regula materias comunes y no puede reformar la Constitución ni invadir reservas estatutarias.",
+  "tarea": "Identificar la explicación idónea que delimita el alcance de una ley ordinaria frente a otras normas.",
+  "contexto": "Un estudiante de derecho constitucional sostiene que el Congreso puede emplear una ley ordinaria común para reformar la Carta Política o para regular de forma directa el núcleo esencial del derecho fundamental a la educación presencial de manera indefinida.",
+  "enunciado": "Al corregir pedagógicamente al estudiante, ¿cuál es la explicación del docente más ajustada al ordenamiento constitucional colombiano?",
   "opciones": {
-    "A": "La ley ordinaria reforma la Constitución por trámite especial.",
-    "B": "La ley ordinaria es un simple documento interno de cada colegio.",
-    "C": "La ley ordinaria regula materias generales mediante trámite legislativo común y debe respetar la unidad de materia; no sustituye el acto legislativo ni la ley estatutaria cuando hay reserva especial.",
-    "D": "La ley ordinaria solo sirve para aprobar calendarios académicos institucionales."
+    "A": "La ley ordinaria tiene como función regular materias generales de la legislación común mediante un procedimiento legislativo simple; no puede reformar la Constitución ni invadir materias sujetas a reserva de ley estatutaria.",
+    "B": "La ley ordinaria se limita a regular asuntos procedimentales internos de las entidades territoriales, estando facultada para modificar la Carta Política mediante sanción presidencial.",
+    "C": "La ley ordinaria prevalece sobre la ley estatutaria en materias de derechos fundamentales debido a que su trámite exige la aprobación de la mayoría calificada del Congreso.",
+    "D": "La ley ordinaria es una disposición normativa transitoria que expide el Congreso únicamente durante los estados de excepción para suspender leyes vigentes."
   },
-  "clave": "C",
-  "justificacion_clave": "C",
+  "clave": "A",
+  "justificacion_clave": "La ley ordinaria es el instrumento común de creación de normas. Sus límites están dados por la supremacía de la Constitución (no puede reformarla, labor del Acto Legislativo) y por las materias con reserva constitucional específica (como las de ley estatutaria u orgánica).",
   "distractores_funcion": {
-    "A": "Es incorrecta porque la reforma constitucional corresponde a mecanismos como el acto legislativo.",
-    "B": "Es incorrecta porque una ley ordinaria es una norma expedida por el legislador, no un documento escolar interno.",
-    "C": "Clave correcta.",
-    "D": "Es incorrecta porque su alcance no se limita a calendarios académicos."
+    "A": "Clave correcta.",
+    "B": "Reduce erróneamente el alcance de la ley ordinaria a asuntos de alcaldías/gobernaciones y asume falsamente que el Presidente puede modificar la Constitución sancionando leyes ordinarias.",
+    "C": "Invierte la jerarquía jurídica al sugerir que una ley común prevalece sobre el régimen reforzado de una ley estatutaria.",
+    "D": "Confunde la ley ordinaria general con los Decretos Legislativos de emergencia de carácter extraordinario y temporal emitidos por el ejecutivo en estados de excepción."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "El ítem evalúa comprensión normativa general sin requerir conocimiento técnico avanzado del trámite legislativo."
+    "observaciones": "Redacción neutral, sin sesgos."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Lógica legislativa clara."
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Tipos de normas - acto legislativo, ley ordinaria y ley estatutaria/NFL_B06_I04.json",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }

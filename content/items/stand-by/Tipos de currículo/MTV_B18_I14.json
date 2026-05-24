@@ -1,6 +1,6 @@
 {
   "id_item": "MTV_B18_I14",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Gestión educativa",
   "tema": "Tipos de currículo",
   "subtema": "Aplicación pedagógica",
@@ -13,17 +13,17 @@
   "contexto": "Una institución tiene lineamientos oficiales del Ministerio, un plan de estudios escrito, prácticas reales de aula, valores implícitos que se transmiten en la convivencia y temas que nunca se enseñan aunque estén planeados.",
   "enunciado": "Una institución tiene lineamientos oficiales del Ministerio, un plan de estudios escrito, prácticas reales de aula, valores implícitos que se transmiten en la convivencia y temas que nunca se enseñan aunque estén planeados.\n\n¿Cuál opción clasifica mejor estos elementos?",
   "opciones": {
-    "A": "Todo corresponde únicamente al currículo nulo.",
-    "B": "Todo corresponde únicamente al currículo oculto.",
-    "C": "No hay currículo porque existen contradicciones.",
-    "D": "Lineamientos oficiales: currículo oficial; plan escrito: currículo formal; práctica real: currículo operacional; valores implícitos: currículo oculto; temas omitidos: currículo nulo."
+    "A": "Lineamientos nacionales: currículo nulo; plan de estudios: currículo operacional; convivencia cotidiana: currículo nulo; omisiones: currículo formal.",
+    "B": "Lineamientos nacionales: currículo formal; plan escrito: currículo operacional; convivencia de aula: currículo extracurricular; omisiones: currículo oculto.",
+    "C": "Lineamientos nacionales: currículo oculto; plan de estudios: currículo oficial; vivencia relacional: currículo operacional; omisiones: currículo nulo.",
+    "D": "Lineamientos nacionales: currículo oficial; plan de estudios escrito: currículo formal; práctica de aula: currículo operacional; interacciones del clima escolar: currículo oculto; temas no enseñados: currículo nulo."
   },
   "clave": "D",
-  "justificacion_clave": "D",
+  "justificacion_clave": "Esta opción clasifica de forma exacta cada concepto según la teoría curricular: las normas gubernamentales representan el currículo oficial; la propuesta institucional escrita es el currículo formal; la labor diaria real del aula es el currículo operacional; las actitudes y valores implícitos conforman el currículo oculto; y los temas planeados pero no enseñados constituyen el currículo nulo.",
   "distractores_funcion": {
-    "A": "El currículo nulo solo explica lo omitido.",
-    "B": "El currículo oculto solo explica aprendizajes implícitos.",
-    "C": "Las contradicciones no eliminan la existencia de currículo; muestran tensiones curriculares.",
+    "A": "Incorrecto. Clasifica erróneamente los conceptos básicos de la teoría curricular (por ejemplo, define los lineamientos como currículo nulo).",
+    "B": "Incorrecto. Confunde el currículo escrito con el operacional y sitúa los valores del clima escolar en lo extracurricular.",
+    "C": "Incorrecto. Define incorrectamente los lineamientos del Ministerio como currículo oculto y sitúa las interacciones relacionales en lo operacional.",
     "D": "Clave correcta."
   },
   "fairness": {
@@ -37,9 +37,9 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Tipos de currículo/MTV_B18_I14.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
-    "apto_pilotaje": true,
-    "apto_banco": false
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
   }
 }

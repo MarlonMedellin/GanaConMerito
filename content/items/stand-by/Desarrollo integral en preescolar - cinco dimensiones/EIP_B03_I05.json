@@ -11,20 +11,20 @@
   "evidencia": "Selecciona una única alternativa defendible técnicamente y coherente con el constructo del ítem.",
   "tarea": "Analizar la situación presentada y elegir la respuesta más pertinente según criterios pedagógicos y normativos aplicables.",
   "contexto": "Una institución quiere trabajar la dimensión espiritual en preescolar, pero el equipo docente advierte que debe hacerlo de manera respetuosa, sin imponer una creencia religiosa específica y favoreciendo valores, cuidado, sentido y convivencia.",
-  "enunciado": "Una institución quiere trabajar la dimensión espiritual en preescolar, pero el equipo docente advierte que debe hacerlo de manera respetuosa, sin imponer una creencia religiosa específica y favoreciendo valores, cuidado, sentido y convivencia.\n\n¿Cuál enfoque es más adecuado?",
+  "enunciado": "De acuerdo con el marco de la Ley 115, ¿cuál es el enfoque más adecuado para orientar el desarrollo del aspecto espiritual en el nivel de preescolar?",
   "opciones": {
-    "A": "Promover experiencias de respeto, cuidado, gratitud, convivencia, sentido de vida y criterios de comportamiento acordes con la edad, sin imponer una confesión religiosa.",
-    "B": "Obligar a todos los niños a adoptar una misma creencia religiosa institucional.",
-    "C": "Eliminar toda reflexión sobre valores, sentido y cuidado porque no pertenece al desarrollo infantil.",
-    "D": "Usar la dimensión espiritual para sancionar a quienes piensan diferente."
+    "A": "Favorecer la construcción de valores, el respeto, la empatía y la convivencia pacífica, respetando la libertad de cultos de las familias.",
+    "B": "Implementar la enseñanza obligatoria de una doctrina religiosa específica y de prácticas confesionales para unificar la formación moral.",
+    "C": "Limitar esta dimensión al estudio teórico e histórico de las religiones dominantes a nivel global en el plan de estudios.",
+    "D": "Omitir el aspecto espiritual de la planeación escolar para evitar debates de carácter moral o religioso en el aula."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "El desarrollo espiritual en el nivel de preescolar, bajo los principios constitucionales y de la Ley 115, se enfoca en el fortalecimiento de la interioridad, la empatía, los valores humanos básicos y el respeto mutuo, sin imponer un credo particular.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Confunde espiritualidad con imposición confesional.",
-    "C": "Desconoce la dimensión espiritual del desarrollo integral.",
-    "D": "Convierte una dimensión formativa en práctica punitiva."
+    "B": "Vulnera la libertad de culto consagrada constitucionalmente y la laicidad del Estado colombiano.",
+    "C": "Plantea un enfoque conceptual inapropiado para la edad de los niños de preescolar.",
+    "D": "Ignora el mandato normativo de la Ley 115 que incluye explícitamente el aspecto espiritual como parte de la formación integral."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Desarrollo integral en preescolar - cinco dimensiones/EIP_B03_I05.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

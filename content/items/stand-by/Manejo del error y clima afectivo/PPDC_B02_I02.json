@@ -1,30 +1,30 @@
 {
   "id_item": "PPDC_B02_I02",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "Práctica Pedagógica, Didáctica y Constructivismo",
   "tema": "Manejo del error y clima afectivo",
   "subtema": "Uso punitivo o humillante del error en el aula.",
   "competencia": "Clima escolar afectivo y manejo del error",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "El evaluado comprende que el error, en una perspectiva constructivista, no debe entenderse como falla moral o motivo de castigo, sino como evidencia del proceso de pensamiento del estudiante y punto de partida para reconstruir conocimiento.",
-  "evidencia": "Elige una intervención docente que protege el clima afectivo, evita la humillación y usa la equivocación para promover reflexión y aprendizaje.",
-  "tarea": "Valorar alternativas de intervención docente frente a una equivocación del estudiante y seleccionar la más coherente con el constructivismo.",
+  "claim": "Valora el error escolar en una perspectiva constructivista como base para la reestructuración conceptual y la salvaguardia del clima afectivo de aula.",
+  "evidencia": "Elige la actuación docente que detiene el matoneo por equivocaciones y orienta al estudiante en la reconstrucción del conocimiento.",
+  "tarea": "Determinar la intervención docente adecuada en un caso de burla grupal por una respuesta incorrecta.",
   "contexto": "Durante una actividad de aula, un estudiante da una respuesta equivocada frente al grupo. Algunos compañeros se ríen y el docente debe decidir cómo intervenir. Desde una perspectiva constructivista y de clima escolar afectivo, la equivocación puede convertirse en una oportunidad directa para reestructurar el conocimiento.",
   "enunciado": "Durante una actividad de aula, un estudiante da una respuesta equivocada frente al grupo. Algunos compañeros se ríen y el docente debe decidir cómo intervenir. Desde una perspectiva constructivista y de clima escolar afectivo, la equivocación puede convertirse en una oportunidad directa para reestructurar el conocimiento.\n\n¿Cuál actuación docente es más adecuada?",
   "opciones": {
-    "A": "Señalar públicamente que la respuesta es absurda para que el estudiante no vuelva a equivocarse.",
+    "A": "Reprochar severamente a los estudiantes que se burlaron y continuar con el desarrollo magistral de la clase sin detenerse en la respuesta errónea.",
     "B": "Detener la burla, pedir al estudiante que explique su razonamiento, identificar el punto de confusión y orientar preguntas o ejemplos que ayuden a reconstruir la idea.",
-    "C": "Ignorar la respuesta equivocada y pasar de inmediato a otro estudiante para evitar perder tiempo.",
-    "D": "Aplicar una sanción académica al estudiante por no haber respondido correctamente."
+    "C": "Omitir el comentario equivocado para evitar la exposición del alumno ante el grupo y dar la palabra a un estudiante con mejor desempeño.",
+    "D": "Calificar negativamente la participación del estudiante con el propósito de fomentar la preparación rigurosa de las lecciones."
   },
   "clave": "B",
-  "justificacion_clave": "B",
+  "justificacion_clave": "La intervención oportuna debe frenar la burla para garantizar la seguridad psicológica en el aula, y simultáneamente emplear la respuesta errónea como insumo de retroalimentación pedagógica, invitando al estudiante a reestructurar su propio razonamiento.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque la humillación puede inhibir la participación y deteriorar el clima de aula.",
-    "B": "Clave correcta.",
-    "C": "Es incorrecta porque evita el error y no permite comprender ni ajustar la idea equivocada.",
-    "D": "Es incorrecta porque transforma la equivocación en sanción, lo cual contradice el enfoque formativo del error."
+    "A": "Error de alcance correctivo. Sanciona la conducta relacional (burla) pero desaprovecha por completo la oportunidad de aprendizaje conceptual que generó el error.",
+    "B": "Clave correcta. Restaura el clima afectivo de respeto y activa el potencial formativo del error.",
+    "C": "Error de omisión. Aísla al estudiante que se equivocó y silencia el error escolar, lo que reproduce la idea implícita de que equivocarse es algo vergonzoso que debe ocultarse.",
+    "D": "Uso punitivo tradicional. Penaliza de forma inmediata la participación fallida, deteriorando la autoconfianza y desalentando la participación en clase."
   },
   "fairness": {
     "sesgo_detectado": false,

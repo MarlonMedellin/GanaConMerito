@@ -1,44 +1,44 @@
 {
   "id_item": "CEOL_B10_I05",
   "estado": "LISTO_PARA_BANCO",
-  "area": "Convivencia y organización institucional",
-  "tema": "Autonomía institucional, enfoques de convivencia y organización del servicio educativo",
-  "subtema": "Tiempo de Permanencia Institucional",
+  "area": "Legislación y política educativa",
+  "tema": "Organización del servicio educativo",
+  "subtema": "Roles y permanencia del orientador",
   "competencia": "Selecciona decisiones de gestión escolar acordes con autonomía institucional, convivencia y organización del servicio educativo.",
-  "nivel_cognitivo": "ANÁLISIS",
-  "dificultad_estimada": "ALTA",
-  "claim": "Identifica la actuación institucional o pedagógica más consistente con el marco conceptual y normativo del caso planteado.",
-  "evidencia": "Selecciona una única alternativa técnicamente superior frente a opciones plausibles pero incorrectas o incompletas.",
-  "tarea": "Analizar el caso y elegir la mejor decisión pedagógica o institucional según el criterio evaluado.",
-  "contexto": "En una institución educativa se pregunta cuántas horas de permanencia continua debe cumplir un docente orientador o docente líder de apoyo, y si esa misma regla puede aplicarse automáticamente al coordinador. La discusión exige diferenciar cargo, permanencia y jornada laboral.",
-  "enunciado": "En una institución educativa se pregunta cuántas horas de permanencia continua debe cumplir un docente orientador o docente líder de apoyo, y si esa misma regla puede aplicarse automáticamente al coordinador. La discusión exige diferenciar cargo, permanencia y jornada laboral.\n\n¿Cuál respuesta es más cuidadosa normativamente?",
+  "nivel_cognitivo": "COMPRENSIÓN",
+  "dificultad_estimada": "DIFÍCIL",
+  "claim": "El evaluado distingue las condiciones de jornada y permanencia obligatoria en el establecimiento del docente orientador y directivos docentes.",
+  "evidencia": "Identifica la regla de 8 horas de permanencia del docente orientador frente a las 6 horas de permanencia del docente de aula según el Decreto 1075.",
+  "tarea": "Diferenciar la jornada y permanencia legal aplicable al cargo de docente orientador respecto a coordinadores y docentes de aula.",
+  "contexto": "En una mesa de trabajo institucional, se discute la flexibilización de los horarios de permanencia de los diferentes cargos. El representante del profesorado solicita homologar la permanencia obligatoria del docente orientador y del coordinador a las seis (6) horas diarias que cumplen los docentes de aula en el plantel.",
+  "enunciado": "De acuerdo con el marco regulatorio del régimen laboral de carrera docente (Decreto 1075 de 2015), ¿cuál es la determinación aplicable a esta solicitud?",
   "opciones": {
-    "A": "El docente orientador o de apoyo pedagógico cumple la permanencia institucional específica definida por la norma vigente; el coordinador, como directivo docente, debe cumplir su jornada laboral institucional conforme a las reglas aplicables a directivos docentes, sin equiparar automáticamente ambos cargos.",
-    "B": "Todos los cargos cumplen exactamente la misma permanencia, sin importar si son docentes, orientadores o directivos docentes.",
-    "C": "El coordinador y el orientador no tienen obligación de permanencia institucional porque no dictan clase todo el tiempo.",
-    "D": "La permanencia se decide informalmente cada día según la cantidad de estudiantes con conflicto."
+    "A": "El docente orientador debe cumplir una permanencia mínima obligatoria de ocho (8) horas diarias en la institución dedicada al servicio; la del coordinador, como directivo docente, es de ocho (8) horas y su distribución es determinada por el rector conforme a las necesidades de la institución, sin que sea procedente igualarlos a las seis (6) horas del docente de aula.",
+    "B": "Tanto el docente orientador como el coordinador deben cumplir una permanencia institucional idéntica a la del docente de aula (6 horas diarias), realizando las dos horas restantes de su jornada laboral de forma externa.",
+    "C": "El docente orientador está exento del control de permanencia horaria en el establecimiento educativo por la naturaleza flexible de sus tareas de apoyo psicológico y familiar.",
+    "D": "El coordinador debe cumplir una permanencia de diez (10) horas diarias debido a su función de dirección y control del plantel, mientras que el docente orientador cumple seis (6) horas diarias."
   },
   "clave": "A",
-  "justificacion_clave": "A",
+  "justificacion_clave": "La opción A es correcta porque bajo el Decreto 1075 de 2015, los docentes orientadores tienen una permanencia mínima obligatoria de ocho (8) horas diarias en la institución educativa (Artículo 2.4.3.1.3). Asimismo, los coordinadores, al ser directivos docentes, cumplen una jornada laboral de ocho (8) horas, y su permanencia debe ser concertada con el rector para asegurar la administración del servicio, no existiendo la figura de permanencia de 6 horas para estos cargos.",
   "distractores_funcion": {
     "A": "Clave correcta.",
-    "B": "Es incorrecta porque desconoce diferencias funcionales entre docente, orientador y directivo docente.",
-    "C": "Es incorrecta porque orientación y coordinación también tienen obligaciones de permanencia y jornada.",
-    "D": "Es incorrecta porque la permanencia institucional no se define informalmente por la conflictividad diaria."
+    "B": "Incurre en un error normativo al pretender extender el beneficio de permanencia de seis horas de los docentes de aula a cargos con regímenes de permanencia especial de ocho horas.",
+    "C": "Desconoce el régimen de control administrativo aplicable al docente orientador, quien es un servidor público de carrera sujeto a horarios institucionales definidos.",
+    "D": "Inventa una carga horaria de diez horas para coordinadores e incurre en el error normativo de reducir la permanencia del docente orientador a seis horas."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Contextos escolares generales y lenguaje técnico neutral; no exige experiencia localizada."
+    "observaciones": "El ítem se basa rigurosamente en la normatividad laboral docente nacional."
   },
   "accesibilidad": {
     "lectura_clara": true,
-    "carga_lectora": "ADECUADA",
-    "observaciones": "Estructura de caso breve y una sola tarea cognitiva por ítem."
+    "carga_lectora": "ALTA",
+    "observaciones": "Requiere lectura detallada de las opciones debido a la precisión técnica de los datos de horarios, pero se mantiene clara y sin giros retóricos."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I05.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

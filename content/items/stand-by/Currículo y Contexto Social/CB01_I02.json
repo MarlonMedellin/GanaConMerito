@@ -11,20 +11,20 @@
   "evidencia": "Selecciona una única respuesta técnicamente defendible frente a distractores plausibles.",
   "tarea": "Analizar la situación y elegir la mejor decisión curricular, didáctica o institucional.",
   "contexto": "Una institución educativa ubicada en un sector con alta movilidad familiar observa que muchos estudiantes cambian de residencia durante el año escolar. El equipo académico advierte interrupciones en los procesos de aprendizaje y baja continuidad en algunos proyectos de aula.",
-  "enunciado": "Una institución educativa ubicada en un sector con alta movilidad familiar observa que muchos estudiantes cambian de residencia durante el año escolar. El equipo académico advierte interrupciones en los procesos de aprendizaje y baja continuidad en algunos proyectos de aula.\n\n¿Cuál decisión curricular resulta más pertinente para responder a esta realidad contextual?",
+  "enunciado": "Teniendo en cuenta los criterios de pertinencia curricular y el entorno social, ¿cuál decisión resulta más coherente con la responsabilidad institucional frente al derecho a la educación?",
   "opciones": {
-    "A": "Mantener la planeación anual sin modificaciones, porque cambiarla puede afectar la organización institucional.",
-    "B": "Diseñar estrategias flexibles de seguimiento, nivelación y articulación curricular que atiendan la movilidad de los estudiantes.",
-    "C": "Reducir la exigencia académica general para evitar que los estudiantes con trayectorias interrumpidas reprueben.",
-    "D": "Trasladar la responsabilidad del rezago exclusivamente a las familias, porque los cambios de residencia no dependen de la institución."
+    "A": "Mantener inalterable el cronograma de contenidos temáticos anual para asegurar el cumplimiento estricto del plan de estudios de los estudiantes regulares.",
+    "B": "Establecer estrategias curriculares flexibles con guías de aprendizaje modular, procesos pedagógicos de nivelación permanente y tutorías de acogida para estudiantes móviles.",
+    "C": "Reducir de manera general los niveles de exigencia académica y criterios de evaluación para que ningún estudiante con movilidad repruebe las asignaturas.",
+    "D": "Exigir a las familias un compromiso firmado donde asuman la responsabilidad exclusiva de nivelar a los estudiantes en las clases perdidas debido al traslado."
   },
   "clave": "B",
-  "justificacion_clave": "B",
+  "justificacion_clave": "El currículo debe adaptarse al contexto social de la escuela. Cuando existe una población con alta movilidad o vulnerabilidad, se requieren modelos y estrategias flexibles de enseñanza-aprendizaje que prevengan la deserción y aseguren trayectorias educativas completas.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque evita adaptar la propuesta pedagógica a una condición conocida del contexto.",
+    "A": "Muestra rigidez pedagógica que desconoce el contexto social, castigando a los estudiantes con movilidad y favoreciendo la exclusión.",
     "B": "Clave correcta.",
-    "C": "Es incorrecta porque no plantea apoyos pedagógicos diferenciados, sino una reducción general de expectativas.",
-    "D": "Es incorrecta porque desplaza la responsabilidad institucional y limita el derecho a una educación pertinente."
+    "C": "Error de rebajar la calidad o expectativas formativas de forma homogénea, en lugar de flexibilizar los caminos metodológicos.",
+    "D": "Traslada la responsabilidad de la mediación pedagógica y nivelación de forma exclusiva a las familias, evadiendo el deber institucional."
   },
   "fairness": {
     "sesgo_detectado": false,
@@ -37,8 +37,8 @@
   },
   "metadata_editorial": {
     "fuente": "content/items/stand-by/Currículo y Contexto Social/CB01_I02.json",
-    "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
     "apto_banco": true
   }

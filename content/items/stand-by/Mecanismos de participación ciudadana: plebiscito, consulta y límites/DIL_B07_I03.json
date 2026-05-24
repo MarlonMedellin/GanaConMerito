@@ -1,45 +1,45 @@
 {
   "id_item": "DIL_B07_I03",
-  "estado": "LISTO_PARA_PILOTAJE",
-  "area": "Mecanismos constitucionales de participación",
-  "tema": "Mecanismos de participación ciudadana: plebiscito, consulta y límites",
-  "subtema": "Desconocimiento de los mecanismos constitucionales de participación democrática.",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Competencias ciudadanas",
+  "tema": "Mecanismos de participación ciudadana",
+  "subtema": "Identificación de mecanismos democráticos",
   "competencia": "Reconocimiento de mecanismos democráticos",
-  "nivel_cognitivo": "APLICACION",
-  "dificultad_estimada": "BAJA_MEDIA",
-  "claim": "El evaluado reconoce que la participación democrática incluye mecanismos constitucionalmente definidos y reglamentados por la ley.",
-  "evidencia": "Identifica mecanismos de participación ciudadana frente a opciones distractoras escolares o administrativas.",
-  "tarea": "Reconocer una lista normativa de mecanismos de participación.",
+  "nivel_cognitivo": "COMPRENSIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado clasifica correctamente los mecanismos de participación ciudadana del Artículo 103 de la Constitución.",
+  "evidencia": "Distingue los mecanismos electorales directos de decisión de los espacios de participación social o acciones de protección de derechos.",
+  "tarea": "Identificar el grupo que contiene de forma exclusiva los mecanismos constitucionales de participación ciudadana del Artículo 103.",
   "contexto": "En una actividad de formación ciudadana, el docente pide identificar mecanismos de participación democrática reconocidos por la Constitución Política de Colombia.",
-  "enunciado": "En una actividad de formación ciudadana, el docente pide identificar mecanismos de participación democrática reconocidos por la Constitución Política de Colombia.\n\n¿Cuál grupo corresponde a mecanismos constitucionales de participación ciudadana?",
+  "enunciado": "¿Cuál grupo corresponde a mecanismos constitucionales de participación ciudadana?",
   "opciones": {
-    "A": "Observador del estudiante, boletín académico y plan de aula.",
-    "B": "Rectoría, coordinación y consejo académico únicamente.",
-    "C": "Manual de convivencia, horario escolar y lista de asistencia.",
-    "D": "Voto, plebiscito, referendo, consulta popular, cabildo abierto, iniciativa legislativa y revocatoria del mandato."
+    "A": "Veedurías ciudadanas, juntas de acción comunal, consejos de juventud y audiencias públicas de rendición de cuentas.",
+    "B": "Acción de tutela, acción popular, acción de grupo y derecho de petición.",
+    "C": "Cabildeo político, encuestas de opinión pública, debates electorales y manifestaciones ciudadanas espontáneas.",
+    "D": "El voto, el plebiscito, el referendo, la consulta popular, el cabildo abierto, la iniciativa legislativa y la revocatoria del mandato."
   },
   "clave": "D",
-  "justificacion_clave": "D",
+  "justificacion_clave": "El Artículo 103 de la Constitución Política define taxativamente los mecanismos formales de participación del pueblo en ejercicio de su soberanía: voto, plebiscito, referendo, consulta popular, cabildo abierto, iniciativa legislativa y revocatoria de mandato.",
   "distractores_funcion": {
-    "A": "Es incorrecta porque corresponde a instrumentos escolares.",
-    "B": "Es incorrecta porque corresponde a órganos o cargos institucionales.",
-    "C": "Es incorrecta porque corresponde a organización escolar, no participación democrática constitucional.",
+    "A": "Corresponde a espacios e instancias de participación social y control social, pero no a los mecanismos de democracia directa del Art. 103.",
+    "B": "Corresponde a acciones judiciales y derechos fundamentales de protección, no a mecanismos de participación ciudadana decisoria.",
+    "C": "Describe actividades, fenómenos o prácticas políticas de la esfera pública que carecen del carácter de mecanismos constitucionales formales.",
     "D": "Clave correcta."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "Evalúa reconocimiento básico de mecanismos constitucionales sin sesgos ideológicos ni partidistas."
+    "observaciones": "Pregunta de clasificación puramente constitucional sin sesgos regionales o de género."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Redacción revisada para comprensión general."
+    "observaciones": "Formato de lista que facilita la lectura y descarte sistemático de las opciones."
   },
   "metadata_editorial": {
-    "fuente": "content/items/stand-by/Mecanismos de participación ciudadana: plebiscito, consulta y límites/DIL_B07_I03.json",
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
     "autor_revision": "IA_EDITOR_PSI",
-    "fecha_revision": "2026-05-22",
+    "fecha_revision": "2026-05-24",
     "apto_pilotaje": true,
-    "apto_banco": false
+    "apto_banco": true
   }
 }
