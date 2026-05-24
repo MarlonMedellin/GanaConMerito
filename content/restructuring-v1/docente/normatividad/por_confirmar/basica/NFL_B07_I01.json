@@ -1,0 +1,45 @@
+{
+  "id_item": "NFL_B07_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Normativa y fundamentos de la educación",
+  "tema": "Educación como derecho",
+  "subtema": "Derecho fundamental y función social",
+  "competencia": "Interpretar el alcance jurídico-pedagógico de la educación para decisiones institucionales.",
+  "nivel_cognitivo": "ANÁLISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Comprende el alcance del derecho fundamental a la educación como servicio público con función social.",
+  "evidencia": "Selecciona la postura institucional que integra el derecho a la educación más allá de la asignación de cupos escolares.",
+  "tarea": "Diferenciar entre cobertura administrativa y garantía efectiva del derecho en un debate de comité.",
+  "contexto": "En un comité escolar se debate si cumplir con matrícula es suficiente para garantizar el derecho a la educación.",
+  "enunciado": "¿Cuál postura está mejor alineada con el enfoque de educación como derecho fundamental, bien común y servicio público con función social?",
+  "opciones": {
+    "A": "Su alcance se satisface al asegurar la cobertura total de matrícula escolar, siendo responsabilidad exclusiva del estudiante la permanencia académica.",
+    "B": "Es una prestación asistencial condicionada a la disponibilidad presupuestal de la entidad territorial y a los criterios de autogestión de cada colegio.",
+    "C": "Garantizar educación exige acceso, permanencia, calidad, inclusión, dignidad y corresponsabilidad entre Estado, familia, sociedad e institución.",
+    "D": "Constituye un principio de carácter programático y moral que sirve de guía ética para la institución sin generar obligaciones jurídicamente exigibles."
+  },
+  "clave": "C",
+  "justificacion_clave": "El derecho a la educación no se reduce a un trámite administrativo de matrícula; involucra dimensiones de permanencia, inclusión y calidad, exigiendo la corresponsabilidad compartida entre Estado, sociedad, familia y escuela.",
+  "distractores_funcion": {
+    "A": "Error de cobertura parcial. Reduce la garantía al acceso inicial y traslada la culpa de la deserción únicamente al estudiante.",
+    "B": "Error de condicionalidad. Condiciona el derecho fundamental a aspectos financieros, desconociendo la jurisprudencia constitucional.",
+    "C": "Clave correcta. Expresa el carácter integral y pluridimensional del derecho.",
+    "D": "Error de eficacia jurídica. Relega el derecho a una mera declaración moral sin obligatoriedad real para la institución."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Contexto escolar general, sin referencias culturales excluyentes ni requisitos externos no declarados."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado directo, vocabulario pedagógico de uso común y una sola tarea cognitiva por ítem."
+  },
+  "metadata_editorial": {
+    "fuente": "Remediación interna GanaConMerito sobre banco stand-by.",
+    "autor_revision": "IA_EDITOR_PSI",
+    "fecha_revision": "2026-05-22",
+    "apto_pilotaje": true,
+    "apto_banco": true
+  }
+}
