@@ -1,0 +1,96 @@
+{
+  "loteProcesado": "L034",
+  "fechaCierre": "2026-05-24",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Comunicación asertiva/",
+    "content/items/stand-by/Habilidades blandas y duras/",
+    "content/items/stand-by/Gestión de aula, lectura, creatividad y honestidad académica/"
+  ],
+  "itemsLeidos": 12,
+  "itemsLeidosPorCarpeta": {
+    "Comunicación asertiva": 3,
+    "Habilidades blandas y duras": 5,
+    "Gestión de aula, lectura, creatividad y honestidad académica": 4
+  },
+  "itemsNoAuditadosProcesados": [
+    "CB05_I01",
+    "CB05_I03",
+    "CEOL_B09_I03",
+    "CEOL_B09_I04"
+  ],
+  "itemsOmitidosPorAuditoriaPrevia": [
+    {
+      "id_item": "CB05_I02",
+      "lotePrevio": "L001"
+    },
+    {
+      "id_item": "MTV_B08_I06",
+      "lotePrevio": "L018"
+    },
+    {
+      "id_item": "MTV_B08_I07",
+      "lotePrevio": "L018"
+    },
+    {
+      "id_item": "MTV_B08_I08",
+      "lotePrevio": "L018"
+    },
+    {
+      "id_item": "MTV_B08_I09",
+      "lotePrevio": "L018"
+    },
+    {
+      "id_item": "MTV_B08_I13",
+      "lotePrevio": "L018"
+    },
+    {
+      "id_item": "CEOL_B09_I01",
+      "lotePrevio": "L017"
+    },
+    {
+      "id_item": "CEOL_B09_I02",
+      "lotePrevio": "L017"
+    }
+  ],
+  "conteosDecision": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 4,
+    "DESCARTAR": 0,
+    "OMITIDO_POR_AUDITORIA_PREVIA": 8
+  },
+  "requiereRevisionHumana": 4,
+  "rezago_L017_resuelto": true,
+  "rezagosL017Resueltos": [
+    "CEOL_B09_I03",
+    "CEOL_B09_I04"
+  ],
+  "incidenciasGitHubFuente": [
+    "El clonado directo y las llamadas HTTP externas a GitHub devolvieron 403 en este entorno; la ejecucion se resolvio con el conector GitHub y lectura puntual de directorios via interfaz web.",
+    "La busqueda de codigo del conector no devolvio resultados confiables para carpetas con espacios y tildes; el inventario se reconstruyo con mapa-carpetas-stand-by.csv y las vistas de directorio de GitHub."
+  ],
+  "fuentesInternasConsultadas": [
+    "content/restructuring-v1/trazabilidad/mapa-carpetas-stand-by.csv",
+    "content/restructuring-v1/trazabilidad/manifiesto-control.json",
+    "content/restructuring-v1/trazabilidad/protocolo-ejecucion.md",
+    "content/restructuring-v1/trazabilidad/reglas-clasificacion.json",
+    "content/restructuring-v1/trazabilidad/lotes/README-lanzamiento-paralelo.md",
+    "content/restructuring-v1/trazabilidad/lotes/L001/decisiones.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L017/decisiones.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L018/decisiones.csv"
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L034/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L034/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L034/items-corregidos.json"
+  ],
+  "confirmacionRutasProtegidasNoModificadas": true,
+  "rutasProtegidasNoModificadas": [
+    "content/items/stand-by/",
+    "content/restructuring-v1/trazabilidad/trash.json",
+    "content/restructuring-v1/trazabilidad/bitácora-lotes.csv",
+    "content/restructuring-v1/trazabilidad/manifiesto-control.json",
+    "content/restructuring-v1/trazabilidad/mapa-carpetas-stand-by.csv"
+  ],
+  "reporteAcumuladoInstancia": "no_aplica_sin_lotes_previos_en_este_chat"
+}
