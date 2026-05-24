@@ -1,0 +1,246 @@
+[
+  {
+    "id_item": "PPDC_B07_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Aula invertida y cambio de rol docente",
+    "subtema": "metodologias_activas_y_seleccion_didactica",
+    "competencia": "Analiza decisiones didácticas y selecciona estrategias coherentes con el enfoque de aula invertida y el rol mediador del docente.",
+    "nivel_cognitivo": "ANÁLISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la configuración pedagógica que desplaza la instrucción directa fuera del encuentro presencial y usa la clase para mediación, aplicación y resolución de tareas cognitivas de orden superior.",
+    "evidencia": "Selecciona la alternativa que describe con mayor precisión el cambio de función del tiempo presencial y del rol del docente en aula invertida.",
+    "tarea": "Analizar un caso de implementación institucional y elegir la decisión pedagógica que mejor representa el beneficio cognitivo central del aula invertida.",
+    "contexto": "Una institución quiere implementar aula invertida para superar clases centradas exclusivamente en exposición magistral. El equipo docente acuerda que los estudiantes revisarán algunos materiales antes del encuentro presencial, pero surge la duda sobre qué debe cambiar realmente durante la clase.",
+    "enunciado": "Una institución quiere implementar aula invertida para superar clases centradas exclusivamente en exposición magistral. El equipo docente acuerda que los estudiantes revisarán algunos materiales antes del encuentro presencial, pero surge la duda sobre qué debe cambiar realmente durante la clase.\n\n¿Cuál es el principal beneficio cognitivo y el cambio de rol del docente al implementar aula invertida?",
+    "opciones": {
+      "A": "Optimizar el tiempo en el aula para que el maestro profundice la cátedra expositiva mientras los estudiantes registran apuntes organizados de manera silenciosa.",
+      "B": "Emplear la sesión presencial en procesos cognitivos superiores como aplicación, análisis y creación mediante la mediación docente activa, transitando de expositor a facilitador.",
+      "C": "Automatizar el aprendizaje autónomo del estudiante, eximiendo al docente del diseño instruccional y la planeación pedagógica de la sesión.",
+      "D": "Racionalizar la jornada escolar sustituyendo las actividades de interacción grupal por cuestionarios individuales autocalificables en plataformas institucionales."
+    },
+    "clave": "B",
+    "justificacion_clave": "La clave es B porque el aula invertida traslada la instrucción directa básica fuera del espacio presencial y reserva la clase para tareas de aplicación, análisis, discusión y retroalimentación con mediación activa del docente.",
+    "distractores_funcion": {
+      "A": "Mantiene la lógica magistral tradicional y no modifica el uso cognitivo del tiempo presencial.",
+      "B": "Clave correcta; describe la reorganización taxonómica del trabajo y el paso del docente de expositor a mediador.",
+      "C": "Confunde autonomía con retiro docente y desconoce que el aula invertida exige diseño instruccional y acompañamiento fuerte.",
+      "D": "Reduce el enfoque a automatización individual y elimina la interacción pedagógica que justifica el trabajo presencial."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Contexto escolar general y lenguaje técnico manejable para población docente amplia."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Caso breve, una sola tarea y opciones semánticamente paralelas."
+    },
+    "metadata_editorial": {
+      "lote": "L003",
+      "ruta_origen": "content/items/stand-by/Aula invertida y cambio de rol docente/PPDC_B07_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/PPDC_B07_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "IDD_B16_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Autonomía escolar, religión, colegios privados y equidad",
+    "subtema": "autonomia_escolar_y_libertad_de_conciencia",
+    "competencia": "Valora decisiones institucionales considerando autonomía escolar, libertad de conciencia, pluralismo y equidad.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "ALTA",
+    "claim": "Identifica la respuesta institucional que armoniza la autonomía escolar con los límites impuestos por los derechos fundamentales de los estudiantes.",
+    "evidencia": "Selecciona la alternativa que ofrece una acomodación razonable y proporcional sin desconocer la identidad institucional ni vulnerar la libertad de conciencia.",
+    "tarea": "Analizar un conflicto entre reglamento escolar y libertad religiosa y elegir la actuación institucional más defendible desde el enfoque de derechos.",
+    "contexto": "Un colegio privado exige que el uniforme incluya un símbolo religioso específico. Algunas familias de otras creencias expresan molestia porque consideran que la exigencia afecta la libertad de conciencia y la identidad religiosa de sus hijos.",
+    "enunciado": "Un colegio privado exige que el uniforme incluya un símbolo religioso específico. Algunas familias de otras creencias expresan molestia porque consideran que la exigencia afecta la libertad de conciencia y la identidad religiosa de sus hijos.\n\nA la luz de la normatividad y del enfoque de derechos, ¿qué acción equitativa debe tomar la escuela?",
+    "opciones": {
+      "A": "Hacer prevalecer las directrices del Manual de Convivencia y la autonomía del proyecto educativo privado, condicionando la permanencia del estudiante al uso del uniforme reglamentario completo.",
+      "B": "Flexibilizar de manera excepcional el manual permitiendo al estudiante portar una prenda alternativa, siempre y cuando presente un certificado eclesiástico que acredite su afectación religiosa.",
+      "C": "Ofrecer una concertación razonable que respete la identidad institucional del uniforme, permitiendo al estudiante omitir el símbolo religioso o adaptarlo según sus convicciones de conciencia.",
+      "D": "Disolver la exigencia del uniforme escolar obligatorio para todos los matriculados con el fin de evitar conflictos futuros por libertad de cultos."
+    },
+    "clave": "C",
+    "justificacion_clave": "La clave es C porque la autonomía escolar no es absoluta y debe ceder cuando una exigencia institucional restringe de manera desproporcionada la libertad de conciencia o de cultos. La respuesta correcta no elimina la identidad institucional, sino que la compatibiliza con una acomodación razonable.",
+    "distractores_funcion": {
+      "A": "Sobredimensiona la autonomía escolar y subordina los derechos fundamentales al reglamento interno.",
+      "B": "Introduce una barrera probatoria injustificada que convierte la libertad de conciencia en un trámite de validación externa.",
+      "C": "Clave correcta; resuelve la tensión mediante una acomodación razonable y proporcional.",
+      "D": "Propone una medida desproporcionada que elimina por completo una regla institucional para resolver un caso particular."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El caso activa un conflicto de derechos relevante sin penalizar una pertenencia religiosa específica."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El contexto es breve y la tarea está focalizada en una sola decisión institucional."
+    },
+    "metadata_editorial": {
+      "lote": "L003",
+      "ruta_origen": "content/items/stand-by/Autonomía escolar, religión, colegios privados y equidad/IDD_B16_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/IDD_B16_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "CEOL_B10_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I01.json",
+    "motivo": "Ítem normativo de memoria casi textual sobre los enfoques de la Ley 1620. El contexto no transforma la tarea real, los distractores compiten poco y el valor discriminativo para el banco es insuficiente.",
+    "lote": "L003"
+  },
+  {
+    "id_item": "CEOL_B10_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Autonomía institucional, enfoques de convivencia y organización del servicio educativo",
+    "subtema": "autonomia_escolar_y_estrategias_locales_de_mediacion",
+    "competencia": "Selecciona decisiones de gestión escolar acordes con la autonomía institucional, la convivencia y el debido proceso.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Valora los límites del ejercicio de la autonomía escolar al diseñar estrategias contextualizadas de convivencia.",
+    "evidencia": "Elige la respuesta que armoniza la creación de estrategias locales de mediación con el respeto a la Constitución, la ley y el debido proceso.",
+    "tarea": "Determinar la viabilidad y los límites de una estrategia autónoma de convivencia en una institución educativa.",
+    "contexto": "Con el fin de mitigar la alta conflictividad escolar, el Consejo Directivo de una institución propone la creación de aulas de mediación y círculos restaurativos. Un grupo de docentes manifiesta dudas sobre si la autonomía escolar permite implementar este tipo de estrategias locales o si deben acogerse exclusivamente a protocolos nacionales.",
+    "enunciado": "De acuerdo con el ordenamiento normativo colombiano, ¿cuál es la orientación correcta respecto a la viabilidad de la propuesta?",
+    "opciones": {
+      "A": "La institución puede implementar autónomamente cualquier estrategia de convivencia, primando las normas internas del Manual de Convivencia sobre la reglamentación nacional.",
+      "B": "La institución debe limitar su acción a la aplicación rígida de las directrices y manuales estandarizados por el Ministerio de Educación, careciendo de facultad para crear figuras locales.",
+      "C": "La institución tiene la facultad de diseñar y aplicar estrategias autónomas y contextualizadas de convivencia, a condición de que estén alineadas con el PEI y respeten la Constitución, las leyes y el debido proceso.",
+      "D": "La autonomía escolar autoriza la creación de aulas de mediación interna con la condición de omitir el reporte de los casos atendidos ante los sistemas institucionales y sectoriales de seguimiento."
+    },
+    "clave": "C",
+    "justificacion_clave": "La clave es C porque la autonomía escolar habilita respuestas pedagógicas e institucionales contextualizadas, pero nunca por fuera de la jerarquía normativa ni del debido proceso. La opción correcta reconoce autonomía con límites jurídicos y operativos.",
+    "distractores_funcion": {
+      "A": "Plantea una autonomía absoluta e ilegal que pone el reglamento interno por encima de la ley.",
+      "B": "Niega indebidamente la autonomía reconocida a los establecimientos educativos para responder a sus contextos.",
+      "C": "Clave correcta; equilibra autonomía, PEI, legalidad y debido proceso.",
+      "D": "Confunde autonomía pedagógica con omisión de deberes institucionales de registro y seguimiento."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Caso general de gestión escolar, sin barreras irrelevantes para la población objetivo."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El dilema está claramente delimitado y las opciones expresan posturas distinguibles."
+    },
+    "metadata_editorial": {
+      "lote": "L003",
+      "ruta_origen": "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/rector_director_rural/funcional/CEOL_B10_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "CEOL_B10_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Convivencia escolar y clima de aula",
+    "subtema": "practica_docente_en_convivencia",
+    "competencia": "Selecciona acciones pedagógicas preventivas y de mediación coherentes con un clima de aula seguro y respetuoso.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Valora las acciones docentes que configuran un desempeño pedagógico avanzado en la gestión preventiva de la convivencia escolar.",
+    "evidencia": "Distingue conductas docentes integrales y preventivas de aquellas reactivas, punitivas o permisivas en el manejo del clima del aula.",
+    "tarea": "Elegir el conjunto de acciones docentes que mejor demuestra un manejo preventivo y formativo de la convivencia en el aula.",
+    "contexto": "En el marco de la evaluación de desempeño anual docente, se valora la contribución al clima institucional y de aula. La directiva busca identificar acciones que representen un desempeño sobresaliente frente a la prevención y manejo de conflictos cotidianos.",
+    "enunciado": "De acuerdo con los referentes pedagógicos de la evaluación de desempeño docente, ¿cuál conjunto de acciones evidencia mejor un nivel sobresaliente en la promoción de un clima de aula seguro y respetuoso?",
+    "opciones": {
+      "A": "Involucrar activamente a los estudiantes en la construcción de acuerdos de convivencia, anticipar factores de riesgo, mediar de forma constructiva en los conflictos cotidianos y realizar seguimiento sistemático al clima del aula.",
+      "B": "Diseñar de forma autónoma el reglamento disciplinario del aula, sancionar rigurosamente cualquier incumplimiento y delegar a la coordinación la resolución de conflictos graves.",
+      "C": "Focalizar la planeación de clase en el cumplimiento temático de la asignatura, exigiendo silencio absoluto y absteniéndose de intervenir en asuntos relacionales para no perder tiempo.",
+      "D": "Permitir que los estudiantes manejen por sí mismos sus diferencias para fomentar la libre expresión, interviniendo únicamente ante agresiones físicas evidentes."
+    },
+    "clave": "A",
+    "justificacion_clave": "La clave es A porque refleja un enfoque preventivo, participativo y formativo de la convivencia: construcción compartida de acuerdos, anticipación de riesgos, mediación cotidiana y seguimiento sostenido del clima del aula.",
+    "distractores_funcion": {
+      "A": "Clave correcta; integra prevención, participación, mediación y seguimiento.",
+      "B": "Representa una respuesta autoritaria y reactiva que reduce la convivencia a sanción y delegación.",
+      "C": "Separa artificialmente lo académico de lo convivencial y desconoce la responsabilidad pedagógica sobre el clima del aula.",
+      "D": "Expresa permisividad y abandono del rol garante del docente en la prevención del conflicto."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "La situación es transversal y relevante para múltiples contextos escolares."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Opciones paralelas y tarea centrada en una sola decisión pedagógica."
+    },
+    "metadata_editorial": {
+      "lote": "L003",
+      "ruta_origen": "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CEOL_B10_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CEOL_B10_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Organización del servicio educativo",
+    "subtema": "contingencia_pedagogica_y_limites_laborales",
+    "competencia": "Selecciona decisiones de gestión escolar que preservan la continuidad del servicio educativo sin desbordar los límites legales de la asignación académica y la jornada laboral.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "DIFÍCIL",
+    "claim": "Selecciona medidas organizativas del servicio educativo que previenen la sobrecarga laboral y aseguran respuestas institucionales proporcionadas ante contingencias docentes.",
+    "evidencia": "Elige la solución que formaliza la cobertura de clases mediante un plan pedagógico institucional y descarta salidas improvisadas que vulneran jornadas, roles o continuidad del servicio.",
+    "tarea": "Identificar la actuación administrativa más adecuada ante la ausencia temporal de un docente, evitando afectar el servicio y respetando los límites laborales de los pares.",
+    "contexto": "Debido a una incapacidad médica de última hora, un docente de educación básica secundaria no asiste a la institución y sus grupos quedan sin atención académica. Para no suspender el servicio, se propone obligar informalmente a docentes con horas de planeación o trabajo institucional a cubrir permanentemente los grupos sin clase.",
+    "enunciado": "Conforme a la reglamentación sobre jornada laboral docente y a la responsabilidad directiva sobre la continuidad del servicio, ¿cuál es la actuación más adecuada por parte de la dirección del establecimiento?",
+    "opciones": {
+      "A": "Asignar de forma inmediata y obligatoria la cobertura de clase a cualquier docente que se encuentre libre en ese bloque horario, registrándolo como cumplimiento de su jornada de permanencia.",
+      "B": "Suspender la jornada escolar de los grupos afectados y autorizar su salida de la institución, argumentando la imposibilidad física de brindar el servicio sin el docente titular.",
+      "C": "Activar un plan de contingencia pedagógica concertado institucionalmente que organice actividades de autoestudio o rotación, respetando la permanencia y la asignación académica legal de los docentes pares.",
+      "D": "Disponer que el docente orientador asuma de manera permanente la atención de los grupos sin clase, aunque esa función no corresponda a su rol misional."
+    },
+    "clave": "C",
+    "justificacion_clave": "La clave es C porque armoniza el deber de garantizar continuidad del servicio con el respeto por la asignación académica, la jornada laboral y la diferenciación de roles. Resuelve la contingencia con planeación institucional y no con sobrecarga improvisada.",
+    "distractores_funcion": {
+      "A": "Normaliza una sobrecarga informal que desborda la organización legal del trabajo docente.",
+      "B": "Desconoce la obligación institucional de gestionar la continuidad del servicio educativo.",
+      "C": "Clave correcta; responde con una contingencia pedagógica proporcional y legalmente defendible.",
+      "D": "Desnaturaliza el rol del orientador y usa una salida administrativamente fácil pero técnicamente incorrecta."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Caso administrativo común y sin sesgos irrelevantes para la población objetivo."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El caso es extenso pero focalizado; la dificultad principal proviene del juicio institucional, no de ruido verbal."
+    },
+    "metadata_editorial": {
+      "lote": "L003",
+      "ruta_origen": "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/rector_director_rural/funcional/CEOL_B10_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "CEOL_B10_I05",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I05.json",
+    "motivo": "Ítem excesivamente dependiente de recordar cifras horarias exactas y de comparar varias reglas de cargos distintos dentro de opciones largas. La dificultad proviene del recuerdo literal y de la carga verbal, no del constructo de juicio institucional.",
+    "lote": "L003"
+  }
+]
