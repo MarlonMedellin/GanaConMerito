@@ -1,0 +1,444 @@
+[
+  {
+    "id_item": "IDD_B05_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Docente de apoyo, orientador y valoración pedagógica",
+    "subtema": "rol_del_docente_de_apoyo",
+    "competencia": "Distingue funciones pedagógicas del docente de apoyo y sus límites frente a funciones clínicas o segregadoras.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA_ALTA",
+    "claim": "Reconoce la actuación profesional que corresponde al docente de apoyo cuando la institución escolariza la inclusión como retiro del aula o sustitución del maestro titular.",
+    "evidencia": "Selecciona la opción que mantiene la corresponsabilidad del docente de aula y ubica al docente de apoyo como acompañante de ajustes razonables y PIAR.",
+    "tarea": "Analizar un caso institucional y elegir la función principal del docente de apoyo frente al maestro de aula.",
+    "contexto": "Una institución recibe estudiantes con discapacidad. Algunos docentes proponen que el docente de apoyo asuma completamente su enseñanza y los retire del aula cuando haya dificultades.",
+    "enunciado": "Frente a esta situación, ¿cuál es la función más adecuada del docente de apoyo dentro del enfoque de educación inclusiva?",
+    "opciones": {
+      "A": "Sustituir al maestro de aula en la planeación y enseñanza de los estudiantes con discapacidad para evitar retrasos en el grupo.",
+      "B": "Acompañar al maestro de aula en la identificación de barreras, el diseño de ajustes razonables y el seguimiento del PIAR, sin reemplazar su responsabilidad docente.",
+      "C": "Determinar qué estudiantes requieren salir del aula regular para recibir atención diferenciada permanente.",
+      "D": "Realizar valoraciones clínicas y definir por sí solo los diagnósticos que justifican apoyos escolares."
+    },
+    "clave": "B",
+    "justificacion_clave": "La clave es B porque el docente de apoyo cumple una función pedagógica de acompañamiento y co-planeación; no reemplaza al docente de aula ni asume funciones clínicas o segregadoras.",
+    "distractores_funcion": {
+      "A": "Modela la falsa idea de sustitución del maestro titular por el docente de apoyo.",
+      "B": "Clave correcta; mantiene corresponsabilidad pedagógica e inclusión en aula regular.",
+      "C": "Modela una salida segregadora basada en dificultades, no en apoyos dentro del aula.",
+      "D": "Traslada indebidamente al ámbito escolar funciones diagnósticas clínicas."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El ítem se centra en funciones institucionales y evita lenguaje patologizante."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea es única y los distractores son semánticamente homogéneos."
+    },
+    "metadata_editorial": {
+      "lote": "L013-A",
+      "ruta_origen": "content/items/stand-by/Docente de apoyo, orientador y valoración pedagógica/IDD_B05_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B05_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B05_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "gestion",
+    "tema": "Docente de apoyo, orientador y valoración pedagógica",
+    "subtema": "estrategia_institucional_de_accesibilidad",
+    "competencia": "Prioriza decisiones institucionales que articulan accesibilidad, apoyos y seguimiento para inclusión educativa.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA_ALTA",
+    "claim": "Reconoce la estrategia institucional más adecuada cuando ingresan estudiantes con barreras físicas, visuales o de movilidad y el equipo no puede delegar la respuesta a cada docente por separado.",
+    "evidencia": "Selecciona la opción que articula accesibilidad física y curricular, formación docente y seguimiento institucional de apoyos.",
+    "tarea": "Analizar un caso de ingreso de estudiantes con discapacidad y elegir la prioridad de gestión institucional.",
+    "contexto": "A una institución llegan estudiantes con discapacidad física, visual o de movilidad. Algunos miembros del equipo creen que cada docente debe resolver por su cuenta y sin plan común.",
+    "enunciado": "¿Qué estrategia debe priorizar la institución para garantizar una respuesta inclusiva coherente?",
+    "opciones": {
+      "A": "Implementar un plan institucional de accesibilidad física y curricular, con responsabilidades definidas, ajustes razonables y seguimiento periódico del PIAR.",
+      "B": "Esperar a que cada docente adapte espontáneamente su asignatura y reportar solo los casos de mayor dificultad al final del periodo.",
+      "C": "Condicionar la permanencia de los estudiantes a la llegada previa de apoyos externos especializados para evitar improvisaciones.",
+      "D": "Delegar la flexibilización curricular exclusivamente en el docente de apoyo para que el resto del equipo mantenga su planeación sin cambios."
+    },
+    "clave": "A",
+    "justificacion_clave": "La clave es A porque la inclusión sostenible exige una respuesta institucional coordinada y no soluciones aisladas, condicionadas o delegadas a un solo actor.",
+    "distractores_funcion": {
+      "A": "Clave correcta; traduce la inclusión en gestión institucional articulada.",
+      "B": "Modela la inacción institucional y la respuesta reactiva tardía.",
+      "C": "Introduce una barrera de acceso al condicionar la permanencia a recursos externos previos.",
+      "D": "Modela la delegación improcedente de la inclusión a un único profesional."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No presupone déficit del estudiante ni culpabiliza a la familia."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Las opciones compiten por criterio de gestión y no por pistas formales."
+    },
+    "metadata_editorial": {
+      "lote": "L013-A",
+      "ruta_origen": "content/items/stand-by/Docente de apoyo, orientador y valoración pedagógica/IDD_B05_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/coordinador/funcional/IDD_B05_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "IDD_B05_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Docente de apoyo, orientador y valoración pedagógica",
+    "subtema": "valoracion_pedagogica_para_ajustes",
+    "competencia": "Distingue la valoración pedagógica de los procesos diagnósticos clínicos y la usa para orientar apoyos educativos.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la función de la valoración pedagógica cuando un estudiante presenta barreras de participación y aún no existe diagnóstico clínico definitivo.",
+    "evidencia": "Selecciona la opción que usa la valoración pedagógica para identificar barreras, necesidades de apoyo y decisiones de planeación.",
+    "tarea": "Analizar el alcance de una valoración pedagógica y elegir su propósito principal.",
+    "contexto": "Un estudiante presenta barreras para participar en algunas actividades. Un docente afirma que no puede hacer nada hasta recibir un diagnóstico clínico completo, mientras el docente de apoyo propone una valoración pedagógica.",
+    "enunciado": "¿Para qué sirve principalmente esa valoración pedagógica en la respuesta escolar?",
+    "opciones": {
+      "A": "Para identificar barreras del entorno, formas de participación y apoyos requeridos que orienten la planeación del docente.",
+      "B": "Para sustituir el diagnóstico clínico y definir oficialmente la categoría de discapacidad del estudiante.",
+      "C": "Para prescribir un tratamiento terapéutico que el docente debe ejecutar dentro de la jornada.",
+      "D": "Para decidir si el estudiante cuenta o no con las condiciones mínimas para permanecer en la institución."
+    },
+    "clave": "A",
+    "justificacion_clave": "La clave es A porque la valoración pedagógica no clasifica clínicamente ni excluye; orienta la respuesta educativa a partir de barreras, fortalezas y apoyos.",
+    "distractores_funcion": {
+      "A": "Clave correcta; ubica la valoración pedagógica en el campo de la planeación y los apoyos.",
+      "B": "Confunde valoración pedagógica con certificación diagnóstica oficial.",
+      "C": "Desplaza la labor escolar hacia funciones terapéuticas clínicas.",
+      "D": "Modela el uso excluyente de la valoración como filtro de permanencia."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Evita exigir etiqueta clínica previa como condición de apoyo."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Stem y opciones se mantienen dentro de una sola decisión profesional."
+    },
+    "metadata_editorial": {
+      "lote": "L013-A",
+      "ruta_origen": "content/items/stand-by/Docente de apoyo, orientador y valoración pedagógica/IDD_B05_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B05_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B05_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "gestion",
+    "tema": "Docente de apoyo, orientador y valoración pedagógica",
+    "subtema": "articulacion_del_seguimiento_institucional",
+    "competencia": "Diseña estrategias de articulación institucional para sostener apoyos educativos coherentes y continuos.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la estrategia institucional más adecuada cuando maestro de aula, familia y apoyos trabajan de forma fragmentada.",
+    "evidencia": "Selecciona la opción que integra seguimiento, compromisos y circulación de recomendaciones entre actores escolares.",
+    "tarea": "Analizar un caso de fragmentación del apoyo educativo y elegir la respuesta institucional más efectiva.",
+    "contexto": "Un estudiante con barreras de aprendizaje recibe apoyos en algunos momentos, pero el maestro de aula no conoce las recomendaciones, la familia no recibe orientación y el docente de apoyo no tiene espacios de seguimiento con el equipo.",
+    "enunciado": "¿Qué estrategia institucional es más adecuada para dar coherencia al proceso?",
+    "opciones": {
+      "A": "Establecer una mesa periódica de seguimiento con acuerdos concretos entre directivos, maestro de aula, docente de apoyo y familia.",
+      "B": "Asignar al docente de apoyo el seguimiento exclusivo del estudiante para evitar duplicación de esfuerzos.",
+      "C": "Trasladar el acompañamiento al orientador mediante sesiones individuales fuera del aula para no alterar la planeación.",
+      "D": "Esperar a que la Secretaría de Educación identifique fallas y reasigne recursos antes de reorganizar el proceso."
+    },
+    "clave": "A",
+    "justificacion_clave": "La clave es A porque el problema central es la falta de articulación; la solución exige coordinación y seguimiento compartido, no delegación a un solo actor.",
+    "distractores_funcion": {
+      "A": "Clave correcta; convierte el seguimiento en una práctica institucional articulada.",
+      "B": "Modela la fragmentación del proceso al descargarlo en un solo profesional.",
+      "C": "Confunde funciones de orientación con apoyo académico y agrega segregación fuera del aula.",
+      "D": "Modela una espera pasiva frente a un problema de liderazgo institucional inmediato."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No responsabiliza a un único actor y mantiene foco en la organización escolar."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La comparación entre opciones es clara y centrada en proceso institucional."
+    },
+    "metadata_editorial": {
+      "lote": "L013-A",
+      "ruta_origen": "content/items/stand-by/Docente de apoyo, orientador y valoración pedagógica/IDD_B05_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/coordinador/funcional/IDD_B05_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "NFL_B07_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Educación como derecho fundamental, bien común y derecho pluridimensional/NFL_B07_I02.json",
+    "motivo": "Convierte la pluridimensionalidad del derecho a la educación en una definición conceptual de las 4A; el contexto no alcanza a producir una decisión profesional situada.",
+    "lote": "L013-A"
+  },
+  {
+    "id_item": "NFL_B07_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Educación como derecho fundamental, bien común y derecho pluridimensional/NFL_B07_I03.json",
+    "motivo": "Pregunta una explicación doctrinal sobre educación como bien común, con contexto decorativo y sin tarea de juicio profesional observable.",
+    "lote": "L013-A"
+  },
+  {
+    "id_item": "NFL_B07_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Educación como derecho fundamental, bien común y derecho pluridimensional",
+    "subtema": "garantia_real_de_permanencia",
+    "competencia": "Aplica el enfoque de derecho a la educación a situaciones institucionales de permanencia y participación.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA_ALTA",
+    "claim": "Reconoce por qué la mera asignación de cupo no satisface la garantía del derecho cuando persisten barreras de transporte, permanencia o participación.",
+    "evidencia": "Selecciona la opción que obliga a gestionar apoyos y eliminar barreras para sostener la trayectoria educativa.",
+    "tarea": "Analizar un reclamo de familia y determinar por qué la respuesta institucional centrada solo en matrícula es insuficiente.",
+    "contexto": "Una familia informa que su hijo está matriculado, pero enfrenta barreras de transporte, permanencia y participación que afectan su trayectoria escolar. La institución responde que ya cumplió porque el cupo fue asignado.",
+    "enunciado": "Desde el enfoque de derecho a la educación, ¿por qué esta respuesta institucional es insuficiente?",
+    "opciones": {
+      "A": "Porque el derecho se agota en registrar la matrícula, pero la familia puede gestionar por su cuenta las demás barreras.",
+      "B": "Porque garantizar el derecho implica gestionar condiciones de permanencia y participación, no solo formalizar el acceso mediante un cupo.",
+      "C": "Porque la institución está obligada a resolver por sí sola toda dificultad socioeconómica que afecte a sus estudiantes.",
+      "D": "Porque el derecho a la educación solo se verifica cuando el estudiante obtiene resultados académicos sobresalientes."
+    },
+    "clave": "B",
+    "justificacion_clave": "La clave es B porque el derecho a la educación se vulnera también cuando las barreras impiden permanecer y participar, aunque el estudiante figure como matriculado.",
+    "distractores_funcion": {
+      "A": "Modela una visión burocrática que reduce el derecho a acceso formal.",
+      "B": "Clave correcta; incorpora permanencia y participación como parte de la garantía real del derecho.",
+      "C": "Sobrecarga indebidamente a la institución con una obligación absoluta aislada.",
+      "D": "Reduce el derecho a desempeño y omite condiciones de acceso y permanencia."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El caso reconoce barreras reales sin desresponsabilizar al Estado ni culpabilizar a la familia."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La dificultad proviene del criterio de derecho y no de la redacción."
+    },
+    "metadata_editorial": {
+      "lote": "L013-A",
+      "ruta_origen": "content/items/stand-by/Educación como derecho fundamental, bien común y derecho pluridimensional/NFL_B07_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/coordinador/funcional/NFL_B07_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "CEOL_B02_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "competencias_ciudadanas",
+    "tema": "Enfoque de derechos, debido proceso y justicia restaurativa",
+    "subtema": "gestion_disciplinaria_con_enfoque_de_derechos",
+    "competencia": "Toma decisiones de convivencia que combinan debido proceso, responsabilidad y finalidad pedagógica.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA_ALTA",
+    "claim": "Reconoce la primera respuesta institucional más adecuada cuando existe una falta grave y surge presión por sancionar de inmediato sin escuchar al estudiante.",
+    "evidencia": "Selecciona la actuación que protege el debido proceso y orienta la respuesta disciplinaria hacia proporcionalidad, escucha y reparación.",
+    "tarea": "Analizar un conflicto disciplinario y elegir la actuación institucional más coherente con un enfoque de derechos.",
+    "contexto": "Un estudiante incurre en una falta grave prevista en el Manual de Convivencia. Parte del equipo propone sancionarlo de inmediato para enviar un mensaje de autoridad al resto del grupo.",
+    "enunciado": "¿Qué actuación inicial es más coherente con un enfoque de derechos en la gestión disciplinaria del caso?",
+    "opciones": {
+      "A": "Imponer una suspensión ejemplar inmediata y revisar después si el estudiante tenía alguna explicación relevante.",
+      "B": "Escuchar al estudiante y a las partes involucradas, verificar los hechos y definir una medida proporcional con sentido pedagógico y restaurativo.",
+      "C": "Remitir de inmediato el caso a la familia para que decida la consecuencia, evitando que la institución se desgaste en el proceso.",
+      "D": "Posponer cualquier decisión disciplinaria para no afectar emocionalmente al estudiante, aunque la falta haya impactado al grupo."
+    },
+    "clave": "B",
+    "justificacion_clave": "La clave es B porque el enfoque de derechos no elimina las consecuencias, pero exige debido proceso, valoración del caso y medidas proporcionales con finalidad pedagógica.",
+    "distractores_funcion": {
+      "A": "Modela una respuesta punitiva ejemplarizante sin garantías previas.",
+      "B": "Clave correcta; combina escucha, verificación y proporcionalidad pedagógica.",
+      "C": "Desplaza indebidamente la responsabilidad institucional al ámbito familiar.",
+      "D": "Confunde enfoque de derechos con ausencia de decisión disciplinaria."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Evalúa la actuación institucional y no estigmatiza al estudiante."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Escenario concreto y una decisión principal bien delimitada."
+    },
+    "metadata_editorial": {
+      "lote": "L013-A",
+      "ruta_origen": "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/CEOL_B02_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/coordinador/comportamental/CEOL_B02_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "CEOL_B02_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/CEOL_B02_I02.json",
+    "motivo": "Se queda en una interpretación general de sujetos de derechos con distractores demasiado obvios; no exige juicio profesional situado ni discrimina bien.",
+    "lote": "L013-A"
+  },
+  {
+    "id_item": "CEOL_B02_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/CEOL_B02_I03.json",
+    "motivo": "La clave depende de recordar la prevalencia constitucional de los derechos de NNA; el caso no añade una decisión escolar suficientemente exigente.",
+    "lote": "L013-A"
+  },
+  {
+    "id_item": "CEOL_B02_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Enfoque de derechos, debido proceso y justicia restaurativa",
+    "subtema": "tipicidad_y_sanciones_previas",
+    "competencia": "Aplica tipicidad, legalidad previa y posibilidad de defensa en procesos disciplinarios escolares.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA_ALTA",
+    "claim": "Reconoce por qué una medida no prevista en el Manual de Convivencia vulnera el debido proceso disciplinario.",
+    "evidencia": "Selecciona la justificación que conecta legalidad previa, conocimiento anticipado de las reglas y oportunidad de defensa.",
+    "tarea": "Analizar una sanción escolar no tipificada y determinar la razón principal de su improcedencia.",
+    "contexto": "Ante una falta de convivencia, la institución decide imponer una consecuencia que no aparece prevista en el Manual de Convivencia y justifica su decisión en la necesidad de mostrar autoridad.",
+    "enunciado": "¿Por qué esta actuación vulnera el debido proceso disciplinario escolar?",
+    "opciones": {
+      "A": "Porque toda consecuencia disciplinaria está prohibida cuando el estudiante cuestiona la decisión institucional.",
+      "B": "Porque las medidas solo pueden aplicarse si el estudiante y su familia están completamente de acuerdo con ellas.",
+      "C": "Porque faltas, procedimientos y consecuencias deben estar previamente definidos y aplicarse con posibilidad de defensa y proporcionalidad.",
+      "D": "Porque el Manual de Convivencia orienta solo aspectos pedagógicos y no tiene función en decisiones disciplinarias."
+    },
+    "clave": "C",
+    "justificacion_clave": "La clave es C porque una institución no puede crear sanciones ad hoc; el estudiante debe conocer de antemano el marco de faltas y consecuencias y tener posibilidad real de defensa.",
+    "distractores_funcion": {
+      "A": "Modela la idea errónea de que el debido proceso elimina cualquier consecuencia.",
+      "B": "Confunde garantía de defensa con poder de veto sobre las decisiones institucionales.",
+      "C": "Clave correcta; integra legalidad previa, defensa y proporcionalidad.",
+      "D": "Desconoce la función normativa del Manual en convivencia y disciplina escolar."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El problema se ubica en la actuación institucional, no en atributos del estudiante."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La dificultad proviene del razonamiento jurídico-pedagógico, no de ruido verbal."
+    },
+    "metadata_editorial": {
+      "lote": "L013-B",
+      "ruta_origen": "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/CEOL_B02_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/coordinador/funcional/CEOL_B02_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "CEOL_B02_I05",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "competencias_ciudadanas",
+    "tema": "Enfoque de derechos, debido proceso y justicia restaurativa",
+    "subtema": "respuesta_restaurativa_al_bullying",
+    "competencia": "Toma decisiones restaurativas frente a situaciones de acoso escolar sin reducir la respuesta a castigo aislado.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA_ALTA",
+    "claim": "Reconoce la respuesta institucional más coherente con justicia restaurativa cuando la comunidad propone resolver el bullying solo con suspensiones prolongadas.",
+    "evidencia": "Selecciona la actuación que integra protección de la víctima, responsabilización del agresor, reparación y seguimiento.",
+    "tarea": "Analizar una situación de acoso escolar y elegir la respuesta institucional más adecuada.",
+    "contexto": "En una institución aumentan los casos de bullying. Algunas voces proponen como única respuesta suspensiones largas para los agresores, sin trabajo pedagógico ni seguimiento.",
+    "enunciado": "¿Qué respuesta se ajusta mejor a un enfoque de justicia restaurativa frente a este problema?",
+    "opciones": {
+      "A": "Suspender de inmediato a los agresores por varios días y esperar que el temor a la sanción disuada nuevos casos.",
+      "B": "Facilitar un proceso institucional que proteja a la víctima, responsabilice a quienes agreden, acuerde reparación y haga seguimiento para evitar repetición.",
+      "C": "Pedir a los estudiantes involucrados que resuelvan el conflicto entre ellos para fortalecer su autonomía sin intervención adulta.",
+      "D": "Evitar consecuencias formales para no estigmatizar a nadie y concentrar la respuesta en actividades generales de convivencia."
+    },
+    "clave": "B",
+    "justificacion_clave": "La clave es B porque la justicia restaurativa no equivale a impunidad ni a sanción aislada: exige protección, responsabilización, reparación y seguimiento.",
+    "distractores_funcion": {
+      "A": "Modela una respuesta puramente punitiva que no asegura reparación ni no repetición.",
+      "B": "Clave correcta; expresa el núcleo restaurativo de la decisión escolar.",
+      "C": "Modela una abstención institucional improcedente ante un caso de acoso.",
+      "D": "Confunde no estigmatizar con renunciar a responsabilizar y reparar."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Protege a la víctima y evita presentar el enfoque restaurativo como impunidad."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Escenario claro; se marca revisión humana solo por perfil aún no cerrado."
+    },
+    "metadata_editorial": {
+      "lote": "L013-B",
+      "ruta_origen": "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/CEOL_B02_I05.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CEOL_B02_I05.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CEOL_B02_I06",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "gestion",
+    "tema": "Enfoque de derechos, debido proceso y justicia restaurativa",
+    "subtema": "actualizacion_restaurativa_del_manual",
+    "competencia": "Evalúa decisiones de actualización institucional del Manual de Convivencia con enfoque pedagógico y restaurativo.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce por qué una institución debe pasar de un Manual centrado en castigos a uno que incorpore responsabilidad, reparación y garantías de no repetición.",
+    "evidencia": "Selecciona la justificación que mejor articula función normativa, finalidad pedagógica y sentido restaurativo del manual.",
+    "tarea": "Analizar una propuesta de actualización del Manual de Convivencia y elegir su fundamento más adecuado.",
+    "contexto": "Una institución revisa su Manual de Convivencia y encuentra que está centrado casi exclusivamente en suspensiones, expulsiones y castigos. El comité propone actualizarlo desde una lógica restaurativa.",
+    "enunciado": "¿Por qué este cambio es necesario desde las orientaciones actuales de convivencia escolar?",
+    "opciones": {
+      "A": "Porque el Manual debe orientar medidas pedagógicas y restaurativas que promuevan responsabilidad, reparación y no repetición, además de regular consecuencias proporcionales.",
+      "B": "Porque un enfoque restaurativo elimina la necesidad de protocolos, deberes y consecuencias cuando hay conflicto escolar.",
+      "C": "Porque la reparación del daño depende solo de acuerdos espontáneos entre estudiantes y no de reglas institucionales.",
+      "D": "Porque las expulsiones y suspensiones dejan de ser posibles en cualquier caso cuando una institución adopta lenguaje restaurativo."
+    },
+    "clave": "A",
+    "justificacion_clave": "La clave es A porque el Manual de Convivencia no debe ser solo un catálogo de castigos; también debe orientar respuestas pedagógicas, reparadoras y proporcionales.",
+    "distractores_funcion": {
+      "A": "Clave correcta; integra función normativa y finalidad restaurativa del manual.",
+      "B": "Modela la falsa oposición entre restauración y existencia de reglas o consecuencias.",
+      "C": "Desinstitucionaliza indebidamente la reparación del daño.",
+      "D": "Confunde enfoque restaurativo con prohibición absoluta de sanciones."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No presenta restauración como indulgencia ni como castigo encubierto."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Opciones mejor equilibradas que en el original y centradas en criterio institucional."
+    },
+    "metadata_editorial": {
+      "lote": "L013-B",
+      "ruta_origen": "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/CEOL_B02_I06.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/coordinador/funcional/CEOL_B02_I06.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  }
+]
