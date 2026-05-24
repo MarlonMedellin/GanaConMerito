@@ -1,0 +1,77 @@
+{
+  "loteProcesado": "L033",
+  "repo": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaCierre": "2026-05-24",
+  "sublotesInternos": [
+    "L033-A",
+    "L033-B"
+  ],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Aprendizaje significativo Ausubel/",
+    "content/items/stand-by/Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento/",
+    "content/items/stand-by/Error, conflicto cognitivo y reestructuración de esquemas/"
+  ],
+  "itemsLeidos": 22,
+  "itemsAuditadosEnL033": 17,
+  "itemsOmitidosPorAuditoriaPrevia": 5,
+  "conteoDecisiones": {
+    "OMITIDO_POR_AUDITORIA_PREVIA": 5,
+    "LISTO_PARA_BANCO": 2,
+    "LISTO_PARA_PILOTAJE": 4,
+    "DESCARTAR": 11
+  },
+  "requiereRevisionHumana": 4,
+  "hallazgosClave": [
+    "La carpeta de conflicto cognitivo ya había sido auditada en L014 y se omitió por trazabilidad previa, sin reprocesamiento.",
+    "La carpeta de Ausubel contiene algunas decisiones didácticas rescatables sobre saberes previos, transferencia y contextualización, pero también varios ítems que siguen midiendo etiqueta teórica o jerga conceptual más que actuación docente.",
+    "La carpeta de Vygotsky y constructivismo crítico fue la más débil del lote: predominó la explicación doctrinal y filosófica sobre teoría pedagógica, con escasa observabilidad de decisión docente real."
+  ],
+  "problemasDetectados": {
+    "omitidos_por_auditoria_previa": {
+      "L014": [
+        "IDD_B11_I01",
+        "IDD_B11_I02",
+        "IDD_B11_I03",
+        "IDD_B11_I04",
+        "MTV_B23_I01"
+      ]
+    },
+    "preguntas_de_etiqueta_autor_o_definicion": [
+      "MTV_B22_I01",
+      "MTV_B22_I03",
+      "MTV_B22_I04",
+      "MTV_B22_I05",
+      "MTV_B22_I10",
+      "IDD_B10_I01",
+      "IDD_B10_I02",
+      "IDD_B10_I03",
+      "IDD_B10_I04",
+      "IDD_B10_I05"
+    ],
+    "duplicados_o_solapamientos_conceptuales": [
+      "MTV_B22_I11"
+    ],
+    "mejor_valor_para_banco": [
+      "MTV_B22_I07",
+      "MTV_B22_I08"
+    ]
+  },
+  "incidenciasGithubOFuente": [
+    "Los archivos de salida de L033 no existían y devolvieron 404 antes de crearse.",
+    "La verificación solicitada sobre L004 no produjo archivo de decisiones disponible; el contraste efectivo de auditoría previa se sostuvo con L001, L014 y los lotes relacionados visibles en el repositorio.",
+    "reporte-acumulado-instancia.md no existía en L033 y se creó en este cierre."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L033/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L033/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L033/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L033/reporte-acumulado-instancia.md"
+  ],
+  "confirmaciones": {
+    "content_items_stand_by_no_modificado": true,
+    "trash_json_no_modificado": true,
+    "bitacoras_globales_no_modificadas": true,
+    "otros_lotes_no_modificados": true
+  }
+}
