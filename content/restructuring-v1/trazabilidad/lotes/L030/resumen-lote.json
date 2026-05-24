@@ -1,0 +1,166 @@
+{
+  "loteProcesado": "L030",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Aptitud numérica: porcentajes y proporcionalidad/",
+    "content/items/stand-by/Aptitud verbal y organización textual/",
+    "content/items/stand-by/Comunicación asertiva/"
+  ],
+  "numeroItemsLeidos": 11,
+  "itemsOmitidosPorAuditoriaPrevia": 2,
+  "conteos": {
+    "OMITIDO_POR_AUDITORIA_PREVIA": 2,
+    "LISTO_PARA_BANCO": 1,
+    "LISTO_PARA_PILOTAJE": 1,
+    "DESCARTAR": 8,
+    "requiere_revision_humana": 3
+  },
+  "decisionGlobalLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "BAJA",
+  "alertasCriticas": [
+    "El bloque de aptitud verbal se concentra en ejercicios de ordenamiento textual demasiado mecanicos y de bajo valor para una prueba docente seria.",
+    "La carpeta de aptitud numerica presenta una inconsistencia de acceso: el arbol de GitHub muestra los archivos, pero la lectura directa por ruta y por blob falla, lo que impide validacion tecnica plena.",
+    "La carpeta de comunicacion asertiva contiene un duplicado ya auditado en L001 y otro item aprovechable, pero con distractores de resolucion muy visible."
+  ],
+  "incidenciasGitHubOFuente": [
+    "Se verifico auditoria previa en L001. Los items CB05_I02 y CB08_I01 ya habian sido auditados y se registraron como OMITIDO_POR_AUDITORIA_PREVIA.",
+    "La carpeta solicitada como content/items/stand-by/Comunicacion asertiva/ no existe con esa grafia sin tilde; la ruta equivalente valida en master es content/items/stand-by/Comunicación asertiva/.",
+    "La carpeta aptitud numerica existe con tilde correcta en master, pero los archivos DIL_B08_I01, DIL_B08_I02 y DIL_B08_I03 no fueron recuperables por la API de contenidos ni por URL directa, pese a figurar en el arbol web. Se marcan con requiere_revision_humana = true.",
+    "No existian salidas previas para L030 y se crearon desde cero dentro de las rutas permitidas."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L030/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L030/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L030/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L030/reporte-acumulado-instancia.md"
+  ],
+  "confirmacionesProteccion": {
+    "noSeModificoContentItemsStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true,
+    "noSeModificaronOtrosLotes": true
+  },
+  "evaluacionPorItem": [
+    {
+      "id_item": "DIL_B08_I01",
+      "ruta_origen": "content/items/stand-by/Aptitud numérica: porcentajes y proporcionalidad/DIL_B08_I01.json",
+      "area": "matematicas",
+      "perfil": "por_confirmar",
+      "tipo": "basica",
+      "decision": "DESCARTAR",
+      "motivo": "El archivo figura en el arbol del repo, pero no fue recuperable por GitHub para validar contenido, clave y utilidad psicometrica; no es defendible dejarlo operativo.",
+      "ruta_destino_propuesta": "",
+      "requiere_revision_humana": true
+    },
+    {
+      "id_item": "DIL_B08_I02",
+      "ruta_origen": "content/items/stand-by/Aptitud numérica: porcentajes y proporcionalidad/DIL_B08_I02.json",
+      "area": "matematicas",
+      "perfil": "por_confirmar",
+      "tipo": "basica",
+      "decision": "DESCARTAR",
+      "motivo": "El archivo figura en el arbol del repo, pero no fue recuperable por GitHub para validar contenido, clave y utilidad psicometrica; no es defendible dejarlo operativo.",
+      "ruta_destino_propuesta": "",
+      "requiere_revision_humana": true
+    },
+    {
+      "id_item": "DIL_B08_I03",
+      "ruta_origen": "content/items/stand-by/Aptitud numérica: porcentajes y proporcionalidad/DIL_B08_I03.json",
+      "area": "matematicas",
+      "perfil": "por_confirmar",
+      "tipo": "basica",
+      "decision": "DESCARTAR",
+      "motivo": "El archivo figura en el arbol del repo, pero no fue recuperable por GitHub para validar contenido, clave y utilidad psicometrica; no es defendible dejarlo operativo.",
+      "ruta_destino_propuesta": "",
+      "requiere_revision_humana": true
+    },
+    {
+      "id_item": "IDD_B17_I01",
+      "ruta_origen": "content/items/stand-by/Aptitud verbal y organización textual/IDD_B17_I01.json",
+      "area": "lectura_critica",
+      "perfil": "por_confirmar",
+      "tipo": "basica",
+      "decision": "DESCARTAR",
+      "motivo": "Evalua ordenamiento secuencial mecanico de un texto historico y no lectura critica relevante para perfil docente.",
+      "ruta_destino_propuesta": "",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "IDD_B17_I02",
+      "ruta_origen": "content/items/stand-by/Aptitud verbal y organización textual/IDD_B17_I02.json",
+      "area": "lectura_critica",
+      "perfil": "por_confirmar",
+      "tipo": "basica",
+      "decision": "DESCARTAR",
+      "motivo": "Se resuelve por progresion narrativa demasiado transparente y mide habilidad textual trivial sin valor suficiente para prueba docente.",
+      "ruta_destino_propuesta": "",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "IDD_B17_I03",
+      "ruta_origen": "content/items/stand-by/Aptitud verbal y organización textual/IDD_B17_I03.json",
+      "area": "lectura_critica",
+      "perfil": "por_confirmar",
+      "tipo": "basica",
+      "decision": "DESCARTAR",
+      "motivo": "Convierte la tarea en ordenamiento procedimental evidente sobre escritura; el valor discriminativo es bajo y no aporta al perfil docente.",
+      "ruta_destino_propuesta": "",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "IDD_B17_I04",
+      "ruta_origen": "content/items/stand-by/Aptitud verbal y organización textual/IDD_B17_I04.json",
+      "area": "lectura_critica",
+      "perfil": "por_confirmar",
+      "tipo": "basica",
+      "decision": "DESCARTAR",
+      "motivo": "La clave depende de marcadores discursivos muy visibles y la tarea queda por debajo de una lectura critica sustantiva.",
+      "ruta_destino_propuesta": "",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "IDD_B17_I05",
+      "ruta_origen": "content/items/stand-by/Aptitud verbal y organización textual/IDD_B17_I05.json",
+      "area": "lectura_critica",
+      "perfil": "por_confirmar",
+      "tipo": "basica",
+      "decision": "DESCARTAR",
+      "motivo": "Aunque tiene una variacion temporal, sigue siendo un ejercicio de ordenamiento demasiado mecanico y de baja relevancia para seleccion docente.",
+      "ruta_destino_propuesta": "",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "CB05_I01",
+      "ruta_origen": "content/items/stand-by/Comunicación asertiva/CB05_I01.json",
+      "area": "competencias_ciudadanas",
+      "perfil": "por_confirmar",
+      "tipo": "comportamental",
+      "decision": "LISTO_PARA_BANCO",
+      "motivo": "Plantea un conflicto laboral plausible y exige una decision de mediacion asertiva situada, con utilidad real para rol docente o directivo.",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CB05_I01.json",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "CB05_I02",
+      "ruta_origen": "content/items/stand-by/Comunicación asertiva/CB05_I02.json",
+      "area": "competencias_ciudadanas",
+      "perfil": "por_confirmar",
+      "tipo": "comportamental",
+      "decision": "OMITIDO_POR_AUDITORIA_PREVIA",
+      "motivo": "Ya fue auditado en L001; no se reprocesa.",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CB05_I02.json",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "CB05_I03",
+      "ruta_origen": "content/items/stand-by/Comunicación asertiva/CB05_I03.json",
+      "area": "competencias_ciudadanas",
+      "perfil": "por_confirmar",
+      "tipo": "comportamental",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "Tiene situacion restaurativa pertinente, pero la clave se vuelve bastante visible frente a distractores mas punitivos que competidores.",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CB05_I03.json",
+      "requiere_revision_humana": false
+    }
+  ]
+}
