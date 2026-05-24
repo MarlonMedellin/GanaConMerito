@@ -1,0 +1,239 @@
+[
+  {
+    "id_item": "IDD_B04_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/DUA, PIAR y ajustes razonables/IDD_B04_I01.json",
+    "motivo": "El nucleo de la tarea es distinguir definicionalmente DUA y PIAR. Aunque hay contexto, la evidencia real sigue siendo reconocimiento textual del concepto correcto y no una decision pedagogica observable.",
+    "lote": "L038"
+  },
+  {
+    "id_item": "IDD_B04_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "Pedagogía",
+    "tema": "DUA, PIAR y ajustes razonables",
+    "subtema": "Liderazgo pedagógico del PIAR",
+    "competencia": "Evalúa decisiones institucionales y de aula para distribuir correctamente la responsabilidad pedagógica sobre ajustes razonables y seguimiento del PIAR.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado reconoce que el PIAR no puede externalizarse por completo y que la responsabilidad pedagógica principal permanece en el docente de aula con apoyo institucional.",
+    "evidencia": "Selecciona la actuación institucional que corrige la delegación impropia del PIAR y restablece liderazgo pedagógico compartido pero no sustituido.",
+    "tarea": "Analizar un desacierto institucional sobre el PIAR y elegir la respuesta más adecuada para reorganizar responsabilidades.",
+    "contexto": "En una institución se afirma que el PIAR debe ser elaborado exclusivamente por el docente de apoyo o por orientación, mientras el docente de aula solo recibe indicaciones ya definidas. La coordinacion quiere corregir esa practica.",
+    "enunciado": "¿Qué decision institucional corrige mejor ese manejo del PIAR?",
+    "opciones": {
+      "A": "Mantener la elaboracion del PIAR en manos del equipo de apoyo, pero solicitar al docente de aula que lo firme para dejar constancia de conocimiento.",
+      "B": "Definir que el docente de aula lidera la planeacion pedagogica del PIAR y su implementacion en clase, con acompanamiento del apoyo pedagogico y articulacion con la familia y otros profesionales cuando corresponda.",
+      "C": "Trasladar el diseno del PIAR a profesionales externos que conozcan mejor la discapacidad del estudiante y puedan precisar adaptaciones obligatorias para todas las asignaturas.",
+      "D": "Suspender temporalmente el PIAR hasta que exista un concepto clinico unificado que permita determinar responsabilidades sin margen de interpretacion docente."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opcion B mantiene el caracter pedagogico del PIAR: el docente de aula lidera la planificacion y aplicacion de ajustes en su practica, mientras el apoyo especializado orienta y articula sin reemplazar esa responsabilidad.",
+    "distractores_funcion": {
+      "A": "Preserva la delegacion impropia: el docente de aula sigue siendo un receptor pasivo y no el lider pedagogico de los ajustes en su clase.",
+      "B": "Clave correcta. Reubica la responsabilidad donde debe estar y conserva el trabajo colaborativo propio del enfoque inclusivo.",
+      "C": "Desplaza la decision escolar hacia agentes externos y vuelve clinico un instrumento que debe construirse desde la realidad del aula.",
+      "D": "Bloquea la respuesta institucional y subordina el acceso a apoyos a una espera innecesaria basada en certeza clinica total."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No usa estereotipos sobre discapacidad y centra el foco en la organizacion pedagogica institucional."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea es unica y el contraste entre opciones depende de decisiones institucionales plausibles, no de tecnicismo irrelevante."
+    },
+    "metadata_editorial": {
+      "lote": "L038",
+      "ruta_origen": "content/items/stand-by/DUA, PIAR y ajustes razonables/IDD_B04_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B04_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B04_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "Pedagogía",
+    "tema": "DUA, PIAR y ajustes razonables",
+    "subtema": "Pertinencia de ajustes razonables",
+    "competencia": "Evalúa la pertinencia de ajustes razonables en funcion de barreras concretas, participacion y progreso, evitando reducciones estandarizadas o devaluacion curricular.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado distingue un ajuste razonable que elimina barreras sin vaciar el aprendizaje ni convertir el apoyo en tutela sustitutiva.",
+    "evidencia": "Selecciona la decision que relaciona barrera identificada, viabilidad del apoyo y participacion autentica del estudiante en la tarea.",
+    "tarea": "Analizar una intervencion de aula y determinar cuando un ajuste razonable puede considerarse pedagogicamente pertinente.",
+    "contexto": "En una actividad de lectura, una docente quiere ajustar la tarea para un estudiante con discapacidad, pero discute con el equipo si un buen ajuste significa bajar la exigencia, estandarizar apoyos o responder a una barrera concreta del aprendizaje.",
+    "enunciado": "¿Cuando puede afirmarse que el ajuste razonable es pertinente?",
+    "opciones": {
+      "A": "Cuando reduce de forma importante la demanda conceptual para asegurar que el estudiante complete la actividad con menor esfuerzo que el grupo.",
+      "B": "Cuando responde a una barrera identificada del estudiante, es viable en el contexto escolar y permite participar en la misma meta de aprendizaje con apoyos adecuados.",
+      "C": "Cuando puede aplicarse de forma identica a todo estudiante con dificultades similares, de modo que la institucion no tenga que redefinir apoyos caso por caso.",
+      "D": "Cuando un adulto acompana permanentemente al estudiante y resuelve con el sus actividades para evitar frustraciones durante la tarea."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opcion B recoge el criterio central: un ajuste razonable elimina barreras especificas, es factible y sostiene la participacion del estudiante en el aprendizaje comun, sin sustituir su agencia ni reducir la tarea a simple facilitacion.",
+    "distractores_funcion": {
+      "A": "Confunde inclusion con rebaja de expectativa y convierte el apoyo en devaluacion curricular.",
+      "B": "Clave correcta. Relaciona barrera, viabilidad y participacion en la meta comun de aprendizaje.",
+      "C": "Parece eficiente institucionalmente, pero desconoce que los ajustes razonables deben contextualizarse y no operar como receta uniforme.",
+      "D": "Ofrece acompanamiento intensivo, pero desplaza la accion cognitiva del estudiante y vuelve dependiente una medida que deberia ampliar autonomia."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Evita supuestos deficitarios sobre discapacidad y diferencia apoyo pertinente de tutela excesiva o baja expectativa."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La escena es breve y las opciones son semanticamente comparables."
+    },
+    "metadata_editorial": {
+      "lote": "L038",
+      "ruta_origen": "content/items/stand-by/DUA, PIAR y ajustes razonables/IDD_B04_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B04_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B04_I05",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "Pedagogía",
+    "tema": "DUA, PIAR y ajustes razonables",
+    "subtema": "Valoración pedagógica para PIAR",
+    "competencia": "Evalúa que decisiones de apoyo y flexibilizacion deben fundarse en valoracion pedagogica situada sobre fortalezas, barreras, intereses y apoyos del estudiante.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado reconoce que la elaboracion del PIAR debe orientarse principalmente por evidencia pedagogica del aula y no por sustitutos clinicos, convivenciales o cuantitativos.",
+    "evidencia": "Selecciona la fuente de informacion que mejor permite decidir ajustes razonables pertinentes para la participacion y el aprendizaje.",
+    "tarea": "Analizar que insumo debe orientar la planeacion de apoyos antes de elaborar un PIAR.",
+    "contexto": "Antes de definir apoyos para un estudiante, un docente recopila informacion sobre como aprende, que le interesa, que barreras encuentra y que recursos le ayudan a participar en clase.",
+    "enunciado": "¿Que valoracion debe orientar prioritariamente la elaboracion del PIAR?",
+    "opciones": {
+      "A": "El diagnostico clinico que clasifica la condicion del estudiante y resume sus recomendaciones terapeuticas generales.",
+      "B": "La valoracion pedagogica del aula que identifica fortalezas, intereses, barreras, formas de participacion y apoyos que favorecen el aprendizaje.",
+      "C": "El historial de convivencia y observaciones disciplinarias acumuladas durante el ano escolar.",
+      "D": "El promedio academico del periodo anterior y la comparacion con el rendimiento del resto del grupo."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opcion B es la mas defendible porque aporta evidencia util para decidir apoyos y flexibilizaciones en contexto. Los otros insumos pueden complementar, pero no sustituyen la lectura pedagogica situada que exige el PIAR.",
+    "distractores_funcion": {
+      "A": "Refleja el error frecuente de medicalizar la decision escolar y tratar el diagnostico como insumo suficiente para planear la ensenanza.",
+      "B": "Clave correcta. La valoracion pedagogica permite traducir inclusion en decisiones concretas de aula.",
+      "C": "Aporta contexto relacional, pero no identifica por si sola barreras de aprendizaje ni apoyos pedagogicos pertinentes.",
+      "D": "Reduce la decision a un resultado numerico y no explica como participa o aprende el estudiante."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Desplaza el foco del deficit clinico hacia la lectura pedagogica del entorno y del estudiante."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Carga lectora contenida y sin tecnicismo innecesario para distinguir la respuesta correcta."
+    },
+    "metadata_editorial": {
+      "lote": "L038",
+      "ruta_origen": "content/items/stand-by/DUA, PIAR y ajustes razonables/IDD_B04_I05.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B04_I05.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B04_I06",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "Pedagogía",
+    "tema": "DUA, PIAR y ajustes razonables",
+    "subtema": "Diseño universal en planeacion de aula",
+    "competencia": "Evalúa decisiones de planeacion didactica basadas en DUA para ofrecer multiples vias de acceso, participacion y expresion hacia una meta comun de aprendizaje.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado distingue una aplicacion genuina del DUA frente a opciones que segregan, externalizan el apoyo o conservan intacto un diseno poco flexible.",
+    "evidencia": "Selecciona la propuesta de planeacion que ofrece multiples formas de representacion, implicacion y expresion sin perder el proposito comun de la clase.",
+    "tarea": "Analizar una planeacion didactica y elegir la accion que mejor expresa un uso correcto del DUA.",
+    "contexto": "Una docente de ciencias planea una unidad sobre ecosistemas para un grupo con ritmos y formas de procesamiento diversos. Quiere evitar que la inclusion quede reducida a refuerzos posteriores para quienes no logren seguir la clase inicial.",
+    "enunciado": "¿Que decision de planeacion refleja mejor una aplicacion autentica del DUA?",
+    "opciones": {
+      "A": "Mantener una exposicion unica para todo el grupo y reservar talleres extra al final para quienes no logren comprender el contenido en la primera explicacion.",
+      "B": "Proponer una misma meta de aprendizaje con recursos variados, opciones de exploracion y diferentes maneras de demostrar comprension segun las posibilidades de los estudiantes.",
+      "C": "Disenar una guia distinta para cada estudiante de acuerdo con su ritmo, aun si eso fragmenta por completo la experiencia comun de aprendizaje.",
+      "D": "Excluir a los estudiantes con mayores dificultades de la evaluacion del tema y reemplazarla por actividades de asistencia para no aumentar su frustracion."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opcion B representa el nucleo del DUA: flexibilidad desde el diseno inicial, diversidad de accesos y expresiones, y una meta comun que no segrega ni posterga la inclusion para un momento remedial.",
+    "distractores_funcion": {
+      "A": "Modela el error de conservar el diseno tradicional y tratar la diversidad solo como refuerzo posterior.",
+      "B": "Clave correcta. Integra flexibilidad planificada sin perder horizonte comun de aprendizaje.",
+      "C": "Parece inclusiva, pero atomiza en exceso y reemplaza el diseno universal por una individualizacion segregada.",
+      "D": "Confunde apoyo con exencion y reduce las oportunidades de mostrar aprendizaje."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No estigmatiza a ningun grupo y evita que la dificultad del item dependa de tecnicismo teorico puro."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Las alternativas son comparables y la complejidad verbal no excede la demanda del constructo."
+    },
+    "metadata_editorial": {
+      "lote": "L038",
+      "ruta_origen": "content/items/stand-by/DUA, PIAR y ajustes razonables/IDD_B04_I06.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/secundaria_media/funcional/IDD_B04_I06.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B04_I07",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "Pedagogía",
+    "tema": "DUA, PIAR y ajustes razonables",
+    "subtema": "Participación en aula comun con PIAR",
+    "competencia": "Evalúa decisiones de aula que mantienen al estudiante vinculado a la misma experiencia curricular mediante ajustes razonables, evitando segregacion pedagogica y bajas expectativas.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA-ALTA",
+    "claim": "El evaluado reconoce una implementacion del PIAR que sostiene la participacion del estudiante en la misma tematica del grupo con apoyos pertinentes, en lugar de ofrecer tareas desconectadas o sustitucion de agencia.",
+    "evidencia": "Selecciona la alternativa que conserva un proposito de aprendizaje comun y adapta materiales, formas de participacion o expresion sin expulsar al estudiante del trabajo del curso.",
+    "tarea": "Analizar una practica de aula y elegir la implementacion mas inclusiva del PIAR.",
+    "contexto": "En una clase de ciencias sobre ecosistemas, a un estudiante con discapacidad le entregan una ficha de colorear sin relacion con el contenido, mientras el resto del grupo trabaja la tematica central. La docente revisa como corregir esa practica.",
+    "enunciado": "¿Cual seria la implementacion mas inclusiva del PIAR en esta situacion?",
+    "opciones": {
+      "A": "Flexibilizar materiales, apoyos y formas de respuesta para que el estudiante trabaje la misma tematica de ecosistemas desde sus posibilidades comunicativas y cognitivas.",
+      "B": "Retirar temporalmente al estudiante de ciencias y ubicarlo en una actividad paralela de refuerzo basico hasta que alcance el nivel del grupo.",
+      "C": "Asignar a un companero para que resuelva la actividad del estudiante y luego le explique el resultado al final de la clase.",
+      "D": "Mantener la ficha de colorear porque el PIAR permite reemplazar el contenido comun por tareas mas simples si asi se evita frustracion inmediata."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A conserva el derecho a participar en la misma experiencia curricular y traduce el PIAR en ajustes concretos, no en actividades decorativas o segregadas. Eso la hace la respuesta mas valida para el constructo evaluado.",
+    "distractores_funcion": {
+      "A": "Clave correcta. Mantiene tematica comun, participacion autentica y ajuste situado.",
+      "B": "Representa segregacion temporal bajo apariencia de apoyo y rompe la experiencia curricular compartida.",
+      "C": "Sustituye la agencia del estudiante y convierte el apoyo en resolucion por delegacion.",
+      "D": "Modela una baja expectativa pedagogica y una comprension distorsionada del PIAR como permiso para desconectar al estudiante del aprendizaje comun."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Expone una barrera institucional comun sin reproducir estereotipos sobre incapacidad o dependencia permanente."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El contexto es suficiente y la tarea se mantiene focalizada en una sola decision de aula."
+    },
+    "metadata_editorial": {
+      "lote": "L038",
+      "ruta_origen": "content/items/stand-by/DUA, PIAR y ajustes razonables/IDD_B04_I07.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B04_I07.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  }
+]
