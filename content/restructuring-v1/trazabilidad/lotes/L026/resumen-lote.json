@@ -1,0 +1,129 @@
+{
+  "loteProcesado": "L026",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Práctica pedagógica no homogeneizadora y diversidad/",
+    "content/items/stand-by/Referentes PEI/",
+    "content/items/stand-by/Responsabilidad legal/"
+  ],
+  "numeroItemsLeidos": 8,
+  "conteos": {
+    "LISTO_PARA_BANCO": 2,
+    "LISTO_PARA_PILOTAJE": 2,
+    "DESCARTAR": 4,
+    "requiere_revision_humana": 0
+  },
+  "decisionGlobalLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "alertasCriticas": [
+    "El bloque de práctica pedagógica sobre diversidad quedó dominado por claves demasiado visibles y distractores caricaturescos o poco competidores.",
+    "Parte del lote confunde lectura institucional o responsabilidad profesional con adhesión declarativa a principios correctos, reduciendo el valor discriminativo."
+  ],
+  "incidenciasGitHubOFuente": [
+    "No existían salidas previas para L026 y se crearon desde cero dentro de las rutas permitidas.",
+    "No fue necesario dividir en sublotes porque el lote quedó en 8 ítems operativos.",
+    "No hubo bloqueos de lectura en las fuentes del lote."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L026/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L026/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L026/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L026/reporte-acumulado-instancia.md"
+  ],
+  "confirmacionesProteccion": {
+    "noSeModificoContentItemsStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true,
+    "noSeModificaronOtrosLotes": true
+  },
+  "evaluacionPorItem": [
+    {
+      "id_item": "PPDC_B01_I01",
+      "ruta_origen": "content/items/stand-by/Práctica pedagógica no homogeneizadora y diversidad/PPDC_B01_I01.json",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "La situación es pertinente y observable, pero la clave se vuelve demasiado evidente por distractores débiles y uno claramente absurdo.",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/PPDC_B01_I01.json",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "PPDC_B01_I02",
+      "ruta_origen": "content/items/stand-by/Práctica pedagógica no homogeneizadora y diversidad/PPDC_B01_I02.json",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "decision": "DESCARTAR",
+      "motivo": "La mejor respuesta resulta demasiado obvia y varios distractores se extreman hacia segregación explícita o facilismo curricular, con bajo valor discriminativo.",
+      "ruta_destino_propuesta": "",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "PPDC_B01_I03",
+      "ruta_origen": "content/items/stand-by/Práctica pedagógica no homogeneizadora y diversidad/PPDC_B01_I03.json",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "decision": "DESCARTAR",
+      "motivo": "Aunque parte de un caso, termina en una crítica doctrinal muy evidente a la homogeneización por guías, con distractores poco competidores.",
+      "ruta_destino_propuesta": "",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "PPDC_B01_I04",
+      "ruta_origen": "content/items/stand-by/Práctica pedagógica no homogeneizadora y diversidad/PPDC_B01_I04.json",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "decision": "DESCARTAR",
+      "motivo": "Se resuelve casi por reconocimiento de la etiqueta DUA y por descarte de opciones extremas, más que por juicio didáctico fino.",
+      "ruta_destino_propuesta": "",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "CB08_I01",
+      "ruta_origen": "content/items/stand-by/Referentes PEI/CB08_I01.json",
+      "area": "gestion",
+      "perfil": "por_confirmar",
+      "tipo": "basica",
+      "decision": "DESCARTAR",
+      "motivo": "Reduce el PEI a una lista genérica de referentes y se responde por exclusión fácil, sin lectura institucional situada suficiente.",
+      "ruta_destino_propuesta": "",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "CB08_I02",
+      "ruta_origen": "content/items/stand-by/Referentes PEI/CB08_I02.json",
+      "area": "gestion",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "decision": "LISTO_PARA_BANCO",
+      "motivo": "Evalúa coherencia interna del PEI a partir de un desajuste concreto entre misión institucional y acciones pedagógicas y de convivencia.",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/por_confirmar/funcional/CB08_I02.json",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "CB08_I03",
+      "ruta_origen": "content/items/stand-by/Referentes PEI/CB08_I03.json",
+      "area": "gestion",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "decision": "LISTO_PARA_BANCO",
+      "motivo": "Usa diagnóstico institucional para forzar una decisión de planeación priorizada y bien situada dentro del PMI y del PEI.",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/por_confirmar/funcional/CB08_I03.json",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "CB07_I01",
+      "ruta_origen": "content/items/stand-by/Responsabilidad legal/CB07_I01.json",
+      "area": "normatividad",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "Tiene caso profesional observable y valor real, pero la clave todavía se acerca demasiado al sentido común correcto y algunos distractores compiten poco.",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/CB07_I01.json",
+      "requiere_revision_humana": false
+    }
+  ]
+}
