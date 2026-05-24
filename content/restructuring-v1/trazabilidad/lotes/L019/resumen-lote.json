@@ -1,0 +1,64 @@
+{
+  "loteProcesado": "L019",
+  "repo": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaCierre": "2026-05-24",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Identidad, autonomía y reconocimiento del cuerpo/",
+    "content/items/stand-by/Igualdad material, discriminación positiva y debilidad manifiesta/",
+    "content/items/stand-by/Inclusión Decreto 1421/"
+  ],
+  "itemsLeidos": 9,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 4,
+    "LISTO_PARA_PILOTAJE": 3,
+    "DESCARTAR": 2
+  },
+  "requiereRevisionHumana": 5,
+  "hallazgosClave": [
+    "Los mejores ítems del lote miden decisiones pedagógicas o institucionales situadas, especialmente en preescolar e inclusión sin estigmatización.",
+    "Los peores ítems convierten igualdad material o fines del preescolar en reconocimiento casi textual de definiciones o artículos.",
+    "La carpeta de Decreto 1421 aportó un ítem defendible cuando la norma se usó como marco de decisión y no como memoria literal."
+  ],
+  "problemasDetectados": {
+    "definicionales_ou_memoristicos": [
+      "EIP_B04_I01",
+      "NFL_B08_I02"
+    ],
+    "distractores_debiles_o_clave_muy_visible": [
+      "EIP_B04_I04",
+      "NFL_B08_I01",
+      "NFL_B08_I03"
+    ],
+    "pertinencia_preescolar_bien_resuelta": [
+      "EIP_B04_I02",
+      "EIP_B04_I03",
+      "EIP_B04_I04"
+    ],
+    "inclusion_sin_memoria_literal_del_decreto": [
+      "CB04_I01"
+    ],
+    "fairness_y_no_estigmatizacion": [
+      "NFL_B08_I04",
+      "CB04_I01"
+    ]
+  },
+  "incidenciasGithubOFuente": [
+    "Los archivos de salida de L019 no existían y devolvieron 404 antes de su creación.",
+    "El reporte-acumulado-instancia.md tampoco existía y se creó en este cierre.",
+    "La expansión de carpetas requirió consulta directa a las vistas GitHub del repo porque la búsqueda del conector devolvía ruido o vacío."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L019/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L019/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L019/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L019/reporte-acumulado-instancia.md"
+  ],
+  "confirmaciones": {
+    "content_items_stand_by_no_modificado": true,
+    "trash_json_no_modificado": true,
+    "bitacoras_globales_no_modificadas": true,
+    "otros_lotes_no_modificados": true
+  }
+}
