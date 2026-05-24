@@ -1,0 +1,72 @@
+{
+  "loteProcesado": "L038",
+  "fechaCierre": "2026-05-24",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/DUA, PIAR y ajustes razonables/",
+    "content/items/stand-by/Inclusión Decreto 1421/",
+    "content/items/stand-by/Marco constitucional, legal y jurisprudencial de inclusión/"
+  ],
+  "itemsLeidos": 9,
+  "itemsLeidosPorCarpeta": {
+    "DUA, PIAR y ajustes razonables": 6,
+    "Inclusión Decreto 1421": 1,
+    "Marco constitucional, legal y jurisprudencial de inclusión": 2
+  },
+  "itemsNoAuditadosProcesados": [
+    "IDD_B04_I01",
+    "IDD_B04_I03",
+    "IDD_B04_I04",
+    "IDD_B04_I05",
+    "IDD_B04_I06",
+    "IDD_B04_I07"
+  ],
+  "itemsOmitidosPorAuditoriaPrevia": [
+    {
+      "id_item": "CB04_I01",
+      "lotePrevio": "L019"
+    },
+    {
+      "id_item": "IDD_B02_I03",
+      "lotePrevio": "L021"
+    },
+    {
+      "id_item": "IDD_B02_I05",
+      "lotePrevio": "L021"
+    }
+  ],
+  "conteosDecision": {
+    "LISTO_PARA_BANCO": 2,
+    "LISTO_PARA_PILOTAJE": 3,
+    "DESCARTAR": 1,
+    "OMITIDO_POR_AUDITORIA_PREVIA": 3
+  },
+  "requiereRevisionHumana": 3,
+  "incidenciasGitHubFuente": [
+    "No se encontro content/restructuring-v1/trazabilidad/lotes/L009/decisiones.csv; se registro como ausencia de trazabilidad previa para este cruce, sin evidencia de auditoria previa utilizable desde ese lote.",
+    "El clonado directo y las llamadas HTTP externas a GitHub no fueron viables en este entorno; la lectura se resolvio con el conector GitHub y la inspeccion puntual de directorios via interfaz web.",
+    "La busqueda indexada del conector fue poco confiable para rutas con espacios y tildes; el inventario final se reconstruyo con vistas de carpeta y decisiones previas existentes."
+  ],
+  "fuentesInternasConsultadas": [
+    "content/restructuring-v1/trazabilidad/mapa-carpetas-stand-by.csv",
+    "content/restructuring-v1/trazabilidad/reglas-clasificacion.json",
+    "content/restructuring-v1/trazabilidad/protocolo-ejecucion.md",
+    "content/restructuring-v1/trazabilidad/lotes/README-lanzamiento-paralelo.md",
+    "content/restructuring-v1/trazabilidad/lotes/L019/decisiones.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L021/decisiones.csv"
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L038/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L038/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L038/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L038/reporte-acumulado-instancia.md"
+  ],
+  "confirmacionRutasProtegidasNoModificadas": true,
+  "rutasProtegidasNoModificadas": [
+    "content/items/stand-by/",
+    "content/restructuring-v1/trazabilidad/trash.json",
+    "content/restructuring-v1/trazabilidad/bitácora-lotes.csv",
+    "content/restructuring-v1/trazabilidad/manifiesto-control.json",
+    "content/restructuring-v1/trazabilidad/mapa-carpetas-stand-by.csv"
+  ]
+}
