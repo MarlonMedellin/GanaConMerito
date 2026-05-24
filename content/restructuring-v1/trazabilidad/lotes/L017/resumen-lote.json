@@ -1,0 +1,78 @@
+{
+  "lote": "L017",
+  "repository": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaAuditoria": "2026-05-24",
+  "decisionGlobalLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "sublotesInternos": [
+    "L017-A",
+    "L017-B"
+  ],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Fases enseñanza/",
+    "content/items/stand-by/Formación integral, fines de la educación y desarrollo de la personalidad/",
+    "content/items/stand-by/Gestión de aula, lectura, creatividad y honestidad académica/"
+  ],
+  "totalItemsDetectados": 12,
+  "totalItemsLeidos": 10,
+  "itemsPendientesPorTopeOperativo": [
+    "content/items/stand-by/Gestión de aula, lectura, creatividad y honestidad académica/CEOL_B09_I03.json",
+    "content/items/stand-by/Gestión de aula, lectura, creatividad y honestidad académica/CEOL_B09_I04.json"
+  ],
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 3,
+    "LISTO_PARA_PILOTAJE": 5,
+    "DESCARTAR": 2
+  },
+  "conteoClasificacion": {
+    "pedagogia": 6,
+    "gestion": 1,
+    "normatividad": 2,
+    "competencias_ciudadanas": 1
+  },
+  "conteoRequiereRevisionHumana": 8,
+  "fuentesConsultadas": [
+    "content/restructuring-v1/README.md",
+    "content/restructuring-v1/trazabilidad/reglas-clasificacion.json",
+    "content/restructuring-v1/trazabilidad/blueprint-sugerido.md",
+    "content/restructuring-v1/trazabilidad/protocolo-ejecucion.md",
+    "content/restructuring-v1/trazabilidad/lotes/README-lanzamiento-paralelo.md",
+    "content/items/stand-by/Fases enseñanza/CB15_I02.json",
+    "content/items/stand-by/Fases enseñanza/CB15_I03.json",
+    "content/items/stand-by/Fases enseñanza/CB15_I04.json",
+    "content/items/stand-by/Formación integral, fines de la educación y desarrollo de la personalidad/NFL_B01_I01.json",
+    "content/items/stand-by/Formación integral, fines de la educación y desarrollo de la personalidad/NFL_B01_I02.json",
+    "content/items/stand-by/Formación integral, fines de la educación y desarrollo de la personalidad/NFL_B01_I03.json",
+    "content/items/stand-by/Formación integral, fines de la educación y desarrollo de la personalidad/NFL_B01_I04.json",
+    "content/items/stand-by/Formación integral, fines de la educación y desarrollo de la personalidad/NFL_B01_I05.json",
+    "content/items/stand-by/Gestión de aula, lectura, creatividad y honestidad académica/CEOL_B09_I01.json",
+    "content/items/stand-by/Gestión de aula, lectura, creatividad y honestidad académica/CEOL_B09_I02.json"
+  ],
+  "fuentesAusentes": [],
+  "hallazgosPrincipales": [
+    "El bloque Fases enseñanza ya evita la memoria de secuencias, pero conserva claves demasiado previsibles y por eso conviene pilotear parte del sublote antes de banco.",
+    "En Formación integral coexistieron tres ítems aplicados y defendibles con dos ítems todavía anclados a recuerdo legal literal o listados normativos, que se descartaron.",
+    "El sublote de gestión de aula leído aporta mejor valor cuando mide decisión pedagógica observable; el ítem sobre convivencia quedó sólido y el de creatividad quedó útil pero aún con distractores mejorables."
+  ],
+  "riesgosSistemicos": [
+    "Persisten fórmulas de opción correcta demasiado evidente en varios ítems pedagógicos y normativos.",
+    "El perfil objetivo no siempre es inferible con seguridad desde la carpeta de origen, por lo que predomina por_confirmar y se recomienda segunda pasada de perfilamiento.",
+    "La carpeta de gestión de aula incluye más archivos del máximo operativo del subciclo, por lo que quedaron dos pendientes dentro de L017-B."
+  ],
+  "incidenciasGithubOFuente": [
+    "Las tres salidas de L017 no existían en GitHub al iniciar; se crearon en este ciclo sin sobrescribir archivos previos.",
+    "No hubo fallas de lectura en las fuentes del lote procesado."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L017/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L017/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L017/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "noModificoContentItemsStandBy": true,
+    "noModificoTrashJson": true,
+    "noModificoBitacorasGlobales": true
+  },
+  "balanceAcumuladoInstancia": "No se registran lotes previos ejecutados por esta misma instancia dentro de este chat; por eso no se creo reporte-acumulado-instancia.md."
+}
