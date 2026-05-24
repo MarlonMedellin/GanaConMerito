@@ -1,0 +1,90 @@
+# Reporte de los procesos anteriores que ha realizado
+
+## Auditoria 1
+- Lote trabajado: L007
+- Carpetas revisadas:
+  - `content/items/stand-by/Criterios, instrumentos y tipos de evaluacion/`
+  - `content/items/stand-by/Cultura escolar, identidad institucional y PEI/`
+  - `content/items/stand-by/Curriculo en espiral, Bruner y material concreto/`
+- Decisiones tomadas:
+  - `LISTO_PARA_PILOTAJE`: 2
+  - `DESCARTAR`: 6
+  - `LISTO_PARA_BANCO`: 0
+- Descartes realizados:
+  - `EFCC_B02_I01`
+  - `EFCC_B02_I02`
+  - `EFCC_B02_I03`
+  - `EFCC_B02_I04`
+  - `NFL_B02_I01`
+  - `NFL_B02_I02`
+- Incidencias encontradas:
+  - `EFCC_B02_I04` no resolvio en `master` y no pudo auditarse desde una fuente viva.
+- Archivos escritos:
+  - `content/restructuring-v1/trazabilidad/lotes/L007/resumen-lote.json`
+  - `content/restructuring-v1/trazabilidad/lotes/L007/decisiones.csv`
+  - `content/restructuring-v1/auditoria/lotes/L007/items-corregidos.json`
+
+## Auditoria 2
+- Lote trabajado: L005
+- Sublotes internos:
+  - `L005-A`
+  - `L005-B`
+- Carpetas revisadas:
+  - `content/items/stand-by/Constructivismo, indagacion y aprendizaje experimental/`
+  - `content/items/stand-by/Contexto, curriculo y practica educativa/`
+  - `content/items/stand-by/Corresponsabilidad educativa, ausentismo y posicion de garante/`
+- Decisiones tomadas:
+  - `LISTO_PARA_PILOTAJE`: 5
+  - `DESCARTAR`: 12
+  - `LISTO_PARA_BANCO`: 0
+- Descartes realizados:
+  - `PPDC_B03_I02`
+  - `MTV_B36_I01`
+  - `MTV_B36_I03`
+  - `MTV_B36_I04`
+  - `MTV_B36_I05`
+  - `MTV_B36_I06`
+  - `MTV_B36_I08`
+  - `MTV_B36_I09`
+  - `MTV_B36_I10`
+  - `MTV_B36_I11`
+  - `MTV_B36_I12`
+  - `NFL_B05_I02`
+- Incidencias encontradas:
+  - No existian salidas previas del lote `L005`; se creo el cierre desde cero dentro de las rutas permitidas.
+- Archivos escritos:
+  - `content/restructuring-v1/trazabilidad/lotes/L005/reporte-procesos-anteriores.md`
+  - `content/restructuring-v1/trazabilidad/lotes/L005/resumen-lote.json`
+  - `content/restructuring-v1/trazabilidad/lotes/L005/decisiones.csv`
+  - `content/restructuring-v1/auditoria/lotes/L005/items-corregidos.json`
+
+## Auditoria 3
+- Lote trabajado: L014
+- Sublotes internos:
+  - `L014-A`
+  - `L014-B`
+- Carpetas revisadas:
+  - `content/items/stand-by/Enseñar, formar, motivacion didactica y competencias socioemocionales/`
+  - `content/items/stand-by/Error, conflicto cognitivo y reestructuracion de esquemas/`
+  - `content/items/stand-by/Estructura del sistema educativo - educacion basica, secundaria y media/`
+- Decisiones tomadas:
+  - `LISTO_PARA_PILOTAJE`: 8
+  - `DESCARTAR`: 7
+  - `LISTO_PARA_BANCO`: 0
+- Descartes realizados:
+  - `CEOL_B08_I02`
+  - `CEOL_B08_I03`
+  - `CEOL_B08_I05`
+  - `NFL_B04_I01`
+  - `NFL_B04_I04`
+  - `IDD_B11_I02`
+  - `IDD_B11_I04`
+- Incidencias encontradas:
+  - La carpeta de conflicto cognitivo requirio rastreo adicional por busqueda tematica del conector antes de resolver las rutas reales del lote.
+  - No existian salidas previas del lote `L014`; se creo el cierre desde cero dentro de las rutas permitidas.
+- Archivos escritos:
+  - `content/restructuring-v1/trazabilidad/lotes/L014/reporte-procesos-anteriores.md`
+  - `content/restructuring-v1/trazabilidad/lotes/L014/reporte-acumulado-instancia.md`
+  - `content/restructuring-v1/trazabilidad/lotes/L014/resumen-lote.json`
+  - `content/restructuring-v1/trazabilidad/lotes/L014/decisiones.csv`
+  - `content/restructuring-v1/auditoria/lotes/L014/items-corregidos.json`
