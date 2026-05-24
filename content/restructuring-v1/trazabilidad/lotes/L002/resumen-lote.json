@@ -1,0 +1,45 @@
+{
+  "lote": "L002",
+  "repo": "ProfeMarlonMDE/GanaConMerito",
+  "rama": "master",
+  "carpetaAsignada": "content/items/stand-by/Articulación PEI y práctica pedagógica/",
+  "rutaDestinoBase": "content/restructuring-v1/docente/pedagogia/en_espera/funcional/",
+  "fechaAuditoria": "2026-05-24",
+  "autorRevision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+  "fuentesConsultadas": [
+    "content/restructuring-v1/README.md",
+    "content/restructuring-v1/trazabilidad/reglas-clasificacion.json",
+    "content/restructuring-v1/trazabilidad/blueprint-sugerido.md",
+    "content/restructuring-v1/trazabilidad/protocolo-ejecucion.md",
+    "content/restructuring-v1/trazabilidad/lotes/README-lanzamiento-paralelo.md"
+  ],
+  "observacionesDeTrazabilidad": [
+    "El archivo de origen del lote no fue recuperable en HEAD actual por ruta directa y se auditó desde el historial accesible del repositorio en la PR 84.",
+    "Por instrucción del usuario, el lote queda en espera y no se integra a una ruta definitiva de banco activo."
+  ],
+  "conteo": {
+    "totalItemsAsignados": 1,
+    "listoParaBanco": 0,
+    "listoParaPilotaje": 1,
+    "descartar": 0,
+    "requiereRevisionHumana": 1
+  },
+  "decisionGlobal": "APROBAR_PARCIAL_EN_ESPERA",
+  "riesgosAbiertos": [
+    "El ítem es defendible, pero la traza de origen en HEAD actual requiere confirmación humana porque la fuente fue reconstruida desde historial del repositorio.",
+    "Aunque el constructo es sólido, conviene pilotear para verificar que los distractores A, B y D compitan realmente y que la dificultad provenga del juicio pedagógico más que del reconocimiento doctrinal del aprendizaje significativo."
+  ],
+  "items": [
+    {
+      "id_item": "GA02_B01_I01",
+      "ruta_origen": "content/items/stand-by/Articulación PEI y práctica pedagógica/GA02_B01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/en_espera/funcional/GA02_B01_I01.json",
+      "area": "pedagogia",
+      "perfil": "en_espera",
+      "tipo": "funcional",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true,
+      "motivo": "Ítem con buen alineamiento entre PEI y práctica pedagógica, clave única y distractores funcionales, pero queda en espera por instrucción del lote y con revisión humana de trazabilidad en HEAD."
+    }
+  ]
+}
