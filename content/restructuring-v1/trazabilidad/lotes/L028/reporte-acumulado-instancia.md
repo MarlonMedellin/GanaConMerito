@@ -1,0 +1,144 @@
+# Reporte acumulado de la instancia
+
+Este reporte consolida los lotes auditados por esta misma instancia dentro de este chat.
+
+## L007
+- Carpetas revisadas:
+  - `content/items/stand-by/Criterios, instrumentos y tipos de evaluacion/`
+  - `content/items/stand-by/Cultura escolar, identidad institucional y PEI/`
+  - `content/items/stand-by/Curriculo en espiral, Bruner y material concreto/`
+- Items leidos: 8
+- LISTO_PARA_BANCO: 0
+- LISTO_PARA_PILOTAJE: 2
+- DESCARTAR: 6
+- requiere_revision_humana: 3
+- Incidencias GitHub o de fuente:
+  - `EFCC_B02_I04` no resolvio en `master` y fue descartado por falta de base auditable.
+- Archivos escritos:
+  - `content/restructuring-v1/trazabilidad/lotes/L007/resumen-lote.json`
+  - `content/restructuring-v1/trazabilidad/lotes/L007/decisiones.csv`
+  - `content/restructuring-v1/auditoria/lotes/L007/items-corregidos.json`
+- Confirmacion de rutas protegidas no modificadas: si
+
+## L005
+- Carpetas revisadas:
+  - `content/items/stand-by/Constructivismo, indagacion y aprendizaje experimental/`
+  - `content/items/stand-by/Contexto, curriculo y practica educativa/`
+  - `content/items/stand-by/Corresponsabilidad educativa, ausentismo y posicion de garante/`
+- Items leidos: 17
+- LISTO_PARA_BANCO: 0
+- LISTO_PARA_PILOTAJE: 5
+- DESCARTAR: 12
+- requiere_revision_humana: 5
+- Incidencias GitHub o de fuente:
+  - Sin incidencias bloqueantes de escritura reportadas en el cierre del lote.
+- Archivos escritos:
+  - `content/restructuring-v1/trazabilidad/lotes/L005/reporte-procesos-anteriores.md`
+  - `content/restructuring-v1/trazabilidad/lotes/L005/resumen-lote.json`
+  - `content/restructuring-v1/trazabilidad/lotes/L005/decisiones.csv`
+  - `content/restructuring-v1/auditoria/lotes/L005/items-corregidos.json`
+- Confirmacion de rutas protegidas no modificadas: si
+
+## L014
+- Sublotes internos: `L014-A`, `L014-B`
+- Carpetas revisadas:
+  - `content/items/stand-by/Ensenar, formar, motivacion didactica y competencias socioemocionales/`
+  - `content/items/stand-by/Error, conflicto cognitivo y reestructuracion de esquemas/`
+  - `content/items/stand-by/Estructura del sistema educativo - educacion basica, secundaria y media/`
+- Items leidos: 14
+- LISTO_PARA_BANCO: 0
+- LISTO_PARA_PILOTAJE: 8
+- DESCARTAR: 6
+- requiere_revision_humana: 8
+- Incidencias GitHub o de fuente:
+  - La carpeta de conflicto cognitivo requirio rastreo tematico adicional antes de resolver las rutas reales.
+- Archivos escritos:
+  - `content/restructuring-v1/trazabilidad/lotes/L014/reporte-procesos-anteriores.md`
+  - `content/restructuring-v1/trazabilidad/lotes/L014/reporte-acumulado-instancia.md`
+  - `content/restructuring-v1/trazabilidad/lotes/L014/resumen-lote.json`
+  - `content/restructuring-v1/trazabilidad/lotes/L014/decisiones.csv`
+  - `content/restructuring-v1/auditoria/lotes/L014/items-corregidos.json`
+- Confirmacion de rutas protegidas no modificadas: si
+
+## L018
+- Sublotes internos: `L018-A`, `L018-B`
+- Carpetas revisadas:
+  - `content/items/stand-by/Habilidades blandas y duras/`
+  - `content/items/stand-by/Horario escolar/`
+  - `content/items/stand-by/Ideas previas, conflicto cognitivo y desarrollo constructivista/`
+- Items leidos: 12
+- LISTO_PARA_BANCO: 0
+- LISTO_PARA_PILOTAJE: 8
+- DESCARTAR: 4
+- requiere_revision_humana: 8
+- Incidencias GitHub o de fuente:
+  - La resolucion de rutas exigio busqueda por `path` y contraste con `mapa-carpetas-stand-by.csv`; no hubo bloqueo de lectura ni de escritura.
+- Archivos escritos:
+  - `content/restructuring-v1/trazabilidad/lotes/L018/reporte-acumulado-instancia.md`
+  - `content/restructuring-v1/trazabilidad/lotes/L018/resumen-lote.json`
+  - `content/restructuring-v1/trazabilidad/lotes/L018/decisiones.csv`
+  - `content/restructuring-v1/auditoria/lotes/L018/items-corregidos.json`
+- Confirmacion de rutas protegidas no modificadas: si
+
+## L021
+- Sublotes internos: `L021-A`, `L021-B`
+- Carpetas revisadas:
+  - `content/items/stand-by/Jornada escolar, horario laboral y asignación académica/`
+  - `content/items/stand-by/Manejo del error y clima afectivo/`
+  - `content/items/stand-by/Marco constitucional, legal y jurisprudencial de inclusión/`
+- Items leidos: 16
+- LISTO_PARA_BANCO: 0
+- LISTO_PARA_PILOTAJE: 8
+- DESCARTAR: 8
+- requiere_revision_humana: 8
+- Incidencias GitHub o de fuente:
+  - La carpeta de jornada concentro pseudoaplicacion normativa: multiples items usaban contexto escolar solo para preguntar definiciones o equivalencias legales.
+  - No hubo incidencias bloqueantes de lectura o escritura en GitHub.
+- Archivos escritos:
+  - `content/restructuring-v1/trazabilidad/lotes/L021/reporte-acumulado-instancia.md`
+  - `content/restructuring-v1/trazabilidad/lotes/L021/resumen-lote.json`
+  - `content/restructuring-v1/trazabilidad/lotes/L021/decisiones.csv`
+  - `content/restructuring-v1/auditoria/lotes/L021/items-corregidos.json`
+- Confirmacion de rutas protegidas no modificadas: si
+
+## L024
+- Carpetas revisadas:
+  - `content/items/stand-by/Pensamiento científico y didáctica en básica secundaria/`
+  - `content/items/stand-by/PEI, currículo oficial y Manual de Convivencia/`
+  - `content/items/stand-by/Participación infantil, agencia y Convención sobre los Derechos del Niño/`
+- Items leidos: 10
+- LISTO_PARA_BANCO: 0
+- LISTO_PARA_PILOTAJE: 6
+- DESCARTAR: 4
+- requiere_revision_humana: 6
+- Incidencias GitHub o de fuente:
+  - El bloque PEI/curriculo/manual concentro taxonomia y jerarquia conceptual con muy poca decision institucional observable.
+  - No hubo incidencias bloqueantes de lectura o escritura en GitHub.
+- Archivos escritos:
+  - `content/restructuring-v1/trazabilidad/lotes/L024/reporte-acumulado-instancia.md`
+  - `content/restructuring-v1/trazabilidad/lotes/L024/resumen-lote.json`
+  - `content/restructuring-v1/trazabilidad/lotes/L024/decisiones.csv`
+  - `content/restructuring-v1/auditoria/lotes/L024/items-corregidos.json`
+- Confirmacion de rutas protegidas no modificadas: si
+
+## L028
+- Sublotes internos: `L028-A`, `L028-B`
+- Carpetas revisadas:
+  - `content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/`
+  - `content/items/stand-by/Trabajo infantil y edad mínima/`
+  - `content/items/stand-by/Tipos de currículo/`
+- Items leidos: 22
+- LISTO_PARA_BANCO: 0
+- LISTO_PARA_PILOTAJE: 7
+- DESCARTAR: 15
+- requiere_revision_humana: 7
+- Incidencias GitHub o de fuente:
+  - El bloque de tipos de curriculo estuvo dominado por clasificacion memoristica con contexto prestado y bajo poder discriminativo.
+  - `MTV_B18_I13` presento inconsistencia interna: la `clave` declarada no coincide con la justificacion ni con la funcion distractora, por lo que se descarto tambien por riesgo tecnico.
+  - No hubo incidencias bloqueantes de lectura o escritura en GitHub.
+- Archivos escritos:
+  - `content/restructuring-v1/trazabilidad/lotes/L028/reporte-acumulado-instancia.md`
+  - `content/restructuring-v1/trazabilidad/lotes/L028/resumen-lote.json`
+  - `content/restructuring-v1/trazabilidad/lotes/L028/decisiones.csv`
+  - `content/restructuring-v1/auditoria/lotes/L028/items-corregidos.json`
+- Confirmacion de rutas protegidas no modificadas: si
