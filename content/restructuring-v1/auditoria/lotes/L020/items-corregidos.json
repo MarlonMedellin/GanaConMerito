@@ -1,0 +1,405 @@
+[
+  {
+    "id_item": "IDD_B06_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "inclusion practica",
+    "subtema": "participacion en el mismo proposito de aprendizaje",
+    "competencia": "Analizar si un ajuste de aula favorece participacion real o segregacion encubierta.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado reconoce que la inclusion exige participar del mismo proposito de aprendizaje con apoyos pertinentes, no solo permanecer ocupado en el aula.",
+    "evidencia": "Selecciona la interpretacion que identifica segregacion cuando se asigna una actividad desconectada del objetivo comun.",
+    "tarea": "Analizar una practica de aula y decidir si promueve inclusion efectiva o segregacion dentro del aula comun.",
+    "contexto": "Durante una clase, un estudiante con discapacidad permanece en el salon mientras el grupo trabaja el tema central. A el se le entrega una actividad de coloreado sin relacion con el aprendizaje que se esta desarrollando.",
+    "enunciado": "En esta situacion, cual interpretacion describe mejor la diferencia entre inclusion efectiva y segregacion dentro del aula?",
+    "opciones": {
+      "A": "La inclusion implica que el estudiante participe del mismo proposito de aprendizaje con apoyos y ajustes pertinentes; la segregacion aparece cuando se le asignan tareas desconectadas solo para mantenerlo ocupado.",
+      "B": "La inclusion se garantiza con la sola presencia fisica del estudiante en el salon, aunque la actividad asignada no tenga relacion con la meta comun.",
+      "C": "Solo hay segregacion cuando el estudiante es retirado del establecimiento y enviado a otra institucion.",
+      "D": "Para incluir de verdad, todos deben resolver exactamente la misma actividad y demostrar el aprendizaje del mismo modo."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A mantiene el nucleo de la educacion inclusiva: mismo proposito formativo, participacion y apoyos pertinentes. Una tarea paralela sin valor curricular compartido produce segregacion encubierta.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Confunde inclusion con mera integracion fisica.",
+      "C": "Reduce la segregacion a separacion externa y desconoce que tambien puede ocurrir dentro del aula comun.",
+      "D": "Confunde equidad con uniformidad rigida y elimina la posibilidad de ajustes razonables."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El foco esta en la decision docente y no en deficit del estudiante."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Se simplifico el enunciado, pero todavia requiere pilotaje por visibilidad de la clave."
+    },
+    "metadata_editorial": {
+      "lote": "L020",
+      "ruta_origen": "content/items/stand-by/Inclusión práctica vs. segregación en aula/IDD_B06_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B06_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "IDD_B06_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "inclusion practica",
+    "subtema": "uso de apoyos visuales sin aislar al estudiante",
+    "competencia": "Seleccionar una decision de planificacion inclusiva coherente con DUA.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado comprende que los apoyos deben integrarse al diseno de la experiencia para todo el grupo y no convertirse en una via paralela de aislamiento.",
+    "evidencia": "Elige la intervencion que conecta intereses visuales con el mismo aprendizaje comun.",
+    "tarea": "Elegir una estrategia de planificacion inclusiva frente a barreras de aprendizaje e intereses visuales del estudiante.",
+    "contexto": "Un estudiante responde mejor a mapas, colores y organizadores graficos. El docente debe trabajar el mismo tema con todo el grupo sin excluirlo del objetivo comun.",
+    "enunciado": "Que decision de planificacion favorece mejor la inclusion efectiva en esta sesion?",
+    "opciones": {
+      "A": "Asignarle una actividad de dibujo libre relacionada de manera marginal con el tema mientras el grupo desarrolla el trabajo central.",
+      "B": "Delegar de forma permanente su aprendizaje a un adulto de apoyo que le explique aparte la clase del docente titular.",
+      "C": "Incorporar organizadores graficos, apoyos visuales y multiples formas de representacion para todo el grupo, manteniendo el mismo proposito de aprendizaje.",
+      "D": "Mantener una unica lectura y una unica prueba escrita, compensando luego con una nota mas flexible."
+    },
+    "clave": "C",
+    "justificacion_clave": "La opcion C traduce el principio del DUA: planear desde el inicio multiples formas de acceso y expresion sin romper el objetivo compartido ni aislar al estudiante.",
+    "distractores_funcion": {
+      "A": "Convierte el interes visual en actividad paralela y segregadora.",
+      "B": "Desplaza la responsabilidad pedagogica del docente de aula.",
+      "C": "Clave correcta.",
+      "D": "Conserva la barrera y solo ajusta la nota al final."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Usa la fortaleza del estudiante sin convertirla en una etiqueta fija."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea es clara, pero conviene pilotear por contraste fuerte entre alternativas."
+    },
+    "metadata_editorial": {
+      "lote": "L020",
+      "ruta_origen": "content/items/stand-by/Inclusión práctica vs. segregación en aula/IDD_B06_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B06_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "IDD_B06_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Inclusión práctica vs. segregación en aula/IDD_B06_I03.json",
+    "motivo": "Aunque el caso apunta a mediacion intercultural pertinente, los distractores quedan demasiado moralizantes y la mejor respuesta resulta obvia, con baja capacidad de discriminacion.",
+    "lote": "L020"
+  },
+  {
+    "id_item": "IDD_B06_I04",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Inclusión práctica vs. segregación en aula/IDD_B06_I04.json",
+    "motivo": "Depende de una definicion casi literal de inclusion efectiva y no de una decision docente observable o de una actuacion situada.",
+    "lote": "L020"
+  },
+  {
+    "id_item": "IDD_B06_I05",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "inclusion practica",
+    "subtema": "ajustes razonables con altas expectativas",
+    "competencia": "Tomar decisiones evaluativas que mantengan el aprendizaje esperado y flexibilicen los medios de demostracion.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado comprende que ajustar no equivale a eliminar el aprendizaje esperado, sino a ofrecer formas pertinentes para acceder y demostrarlo.",
+    "evidencia": "Selecciona la decision evaluativa que sostiene el proposito formativo con apoyos razonables.",
+    "tarea": "Diferenciar ajuste razonable de baja injustificada de exigencia o de evaluacion irrelevante.",
+    "contexto": "Un docente debe evaluar la comprension de un concepto en un estudiante que requiere apoyos y duda entre eliminar la meta de aprendizaje o ajustar la forma de evaluarla.",
+    "enunciado": "Cual decision evaluativa es mas coherente con una flexibilizacion inclusiva bien entendida?",
+    "opciones": {
+      "A": "Eliminar el aprendizaje esperado del proceso para evitar frustracion al estudiante.",
+      "B": "Mantener el proposito de aprendizaje y flexibilizar medios, tiempos o formatos para que el estudiante demuestre lo comprendido.",
+      "C": "Aplicar exactamente la misma prueba y condiciones a todo el grupo para asegurar igualdad.",
+      "D": "Reemplazar la evaluacion del aprendizaje por una valoracion general de conducta y esfuerzo."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opcion B protege el derecho al aprendizaje sin renunciar al criterio de logro. La equidad se expresa en flexibilizar medios y apoyos, no en borrar la meta ni en evaluar otra cosa.",
+    "distractores_funcion": {
+      "A": "Representa exclusion curricular anticipada.",
+      "B": "Clave correcta.",
+      "C": "Confunde equidad con igualdad formal sin considerar barreras.",
+      "D": "Desplaza la evaluacion del aprendizaje hacia un juicio conductual irrelevante."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Promueve apoyos con expectativas altas y evita tanto sobreexigencia como paternalismo."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea cognitiva esta bien focalizada y el ruido verbal es bajo."
+    },
+    "metadata_editorial": {
+      "lote": "L020",
+      "ruta_origen": "content/items/stand-by/Inclusión práctica vs. segregación en aula/IDD_B06_I05.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B06_I05.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "IDD_B07_I01",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "equidad socioeconomica",
+    "subtema": "adaptacion de recursos sin castigar vulnerabilidad",
+    "competencia": "Diseñar respuestas pedagogicas equitativas frente a barreras economicas de acceso a materiales.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado identifica ajustes equitativos que sostienen la meta formativa sin culpabilizar la condicion economica del estudiante.",
+    "evidencia": "Selecciona una alternativa que reorganiza recursos y apoyos sin reducir expectativas curriculares.",
+    "tarea": "Elegir una respuesta docente inclusiva cuando la falta de materiales proviene de limitaciones economicas familiares.",
+    "contexto": "En una actividad practica, varios estudiantes no cuentan con los materiales solicitados por limitaciones economicas del hogar.",
+    "enunciado": "Que ajuste pedagogico corresponde mejor a un enfoque de equidad socioeconomica en esta situacion?",
+    "opciones": {
+      "A": "Descontar puntaje por incumplimiento para reforzar responsabilidad individual.",
+      "B": "Usar materiales alternativos accesibles, organizar recursos compartidos y gestionar apoyos institucionales sin bajar la meta de aprendizaje.",
+      "C": "Suspender la actividad para todo el grupo hasta que todos consigan los mismos insumos.",
+      "D": "Eximir del producto final a quienes no tienen materiales para no aumentar su frustracion."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opcion B reconoce la barrera economica sin convertirla en sancion ni en renuncia al aprendizaje. Reorganiza la mediacion didactica para sostener el mismo proposito formativo.",
+    "distractores_funcion": {
+      "A": "Castiga una condicion externa al control del estudiante.",
+      "B": "Clave correcta.",
+      "C": "Detiene el aprendizaje del grupo en lugar de adaptar la mediacion.",
+      "D": "Baja expectativas y priva al estudiante de la experiencia de aprendizaje."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Evita estereotipos deficitarios y no responsabiliza al estudiante por su contexto economico."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Caso habitual de aula con alternativas semanticamente comparables."
+    },
+    "metadata_editorial": {
+      "lote": "L020",
+      "ruta_origen": "content/items/stand-by/Inclusión, equidad socioeconómica y adaptabilidad curricular/IDD_B07_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B07_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "IDD_B07_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "adaptabilidad curricular",
+    "subtema": "transformacion de la ensenanza frente a diversidad",
+    "competencia": "Distinguir entre un enfoque homogenizante y uno de adaptacion curricular inclusiva.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado comprende que la escuela debe transformar su ensenanza, recursos y evaluacion para alojar la diversidad.",
+    "evidencia": "Selecciona la postura que atribuye al sistema escolar la responsabilidad principal de flexibilizar la mediacion didactica.",
+    "tarea": "Elegir la posicion pedagogica mas coherente con inclusion cuando el debate es si el estudiante debe adaptarse al sistema o el sistema a la diversidad.",
+    "contexto": "En una reunion docente se discute si todos los estudiantes deben ajustarse a una unica forma de ensenar, trabajar y ser evaluados.",
+    "enunciado": "Que postura es mas coherente con un enfoque de inclusion y adaptabilidad curricular?",
+    "opciones": {
+      "A": "Flexibilizar metodologias, recursos y evaluacion para que el sistema escolar responda a la diversidad sin renunciar al aprendizaje comun.",
+      "B": "Mantener la misma ensenanza y la misma evaluacion para garantizar rigor e igualdad.",
+      "C": "Eliminar cualquier referente comun de aprendizaje y disenar un curriculo independiente para cada estudiante.",
+      "D": "Conservar intacta la didactica del aula y enviar por fuera a quienes no se ajustan al ritmo general."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A recoge el principio de adaptabilidad curricular: el sistema educativo se transforma para remover barreras y ampliar acceso, participacion y aprendizaje.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Confunde justicia con homogeneidad rigida.",
+      "C": "Rompe indebidamente el referente comun de aprendizaje.",
+      "D": "Traslada la respuesta fuera del aula sin revisar la didactica general."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No culpabiliza al estudiante, pero mantiene un contraste doctrinal fuerte; por eso queda para pilotaje."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Se entiende con facilidad, aunque la clave sigue destacandose con relativa facilidad."
+    },
+    "metadata_editorial": {
+      "lote": "L020",
+      "ruta_origen": "content/items/stand-by/Inclusión, equidad socioeconómica y adaptabilidad curricular/IDD_B07_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B07_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "IDD_B07_I03",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "accesibilidad institucional",
+    "subtema": "gestion de apoyos y barreras fisicas, comunicativas y pedagogicas",
+    "competencia": "Priorizar decisiones institucionales de accesibilidad que hagan posible la participacion y permanencia real.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado comprende que matricular no basta y que la accesibilidad requiere diagnostico institucional y plan de apoyos articulado.",
+    "evidencia": "Elige la estrategia que organiza una respuesta sistemica frente a barreras de movilidad, materiales y comunicacion.",
+    "tarea": "Analizar un caso de llegada de estudiantes con discapacidad y decidir la accion institucional prioritaria.",
+    "contexto": "Una institucion recibe estudiantes con barreras fisicas, visuales o de movilidad y reconoce que existen obstaculos para desplazamientos, materiales y participacion en clase.",
+    "enunciado": "Cual estrategia institucional debe priorizarse para avanzar hacia inclusion efectiva en este caso?",
+    "opciones": {
+      "A": "Reducir la presencialidad del estudiante para evitarle dificultades de desplazamiento.",
+      "B": "Dejar la adaptacion de materiales y apoyos de movilidad a terapeutas externos o a las familias.",
+      "C": "Solicitar traslado a otra institucion especializada por limitaciones de infraestructura actual.",
+      "D": "Realizar un diagnostico de accesibilidad y, con base en el, ajustar espacios, mediaciones, materiales y gestion de apoyos institucionales."
+    },
+    "clave": "D",
+    "justificacion_clave": "La opcion D entiende la inclusion como transformacion institucional y no como simple matricula. Permite remover barreras fisicas, comunicativas y pedagogicas de manera planificada.",
+    "distractores_funcion": {
+      "A": "Segrega al disminuir la participacion en lugar de transformar el entorno.",
+      "B": "Externaliza una responsabilidad institucional central.",
+      "C": "Responde con exclusion por desplazamiento del estudiante.",
+      "D": "Clave correcta."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No convierte la discapacidad en deficit individual; ubica la barrera en el entorno escolar."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La situacion es clara y la tarea corresponde a una decision institucional observable."
+    },
+    "metadata_editorial": {
+      "lote": "L020",
+      "ruta_origen": "content/items/stand-by/Inclusión, equidad socioeconómica y adaptabilidad curricular/IDD_B07_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B07_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "IDD_B07_I04",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "equidad socioeconomica",
+    "subtema": "confidencialidad y acompanamiento frente a barreras de contexto",
+    "competencia": "Responder pedagogicamente a dificultades de contexto sin estigmatizar ni renunciar al seguimiento formativo.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado comprende que las barreras familiares o economicas requieren manejo confidencial, flexibilidad razonable y articulacion de apoyos.",
+    "evidencia": "Selecciona la actuacion que combina discrecion, acompanamiento institucional y ajuste de tiempos sin paternalismo.",
+    "tarea": "Analizar una situacion de vulnerabilidad contextual y elegir una respuesta equitativa.",
+    "contexto": "Un estudiante presenta bajo rendimiento y entregas incompletas. El docente sabe que atraviesa dificultades familiares y economicas.",
+    "enunciado": "Que actuacion es mas coherente con equidad e inclusion en esta situacion?",
+    "opciones": {
+      "A": "Exponer el caso ante el grupo para dar un ejemplo de responsabilidad.",
+      "B": "Asignar directamente una nota aprobatoria para compensar su situacion sin exigir producto alguno.",
+      "C": "Abordar el caso con confidencialidad, flexibilizar tiempos de entrega y concertar un plan de acompanamiento institucional.",
+      "D": "Mantener fechas y sanciones sin variacion porque las dificultades de contexto pertenecen al ambito privado."
+    },
+    "clave": "C",
+    "justificacion_clave": "La opcion C protege dignidad, confidencialidad y derecho al aprendizaje. No castiga la vulnerabilidad, pero tampoco elimina la exigencia formativa: la acompana con apoyos y flexibilidad razonable.",
+    "distractores_funcion": {
+      "A": "Estigmatiza al estudiante y vulnera su privacidad.",
+      "B": "Reemplaza apoyo pedagogico por aprobacion paternalista.",
+      "C": "Clave correcta.",
+      "D": "Desconoce el efecto de las barreras de contexto sobre la participacion escolar."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Evita etiquetar al estudiante y trata la pobreza como barrera de contexto, no como defecto personal."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La situacion es comprensible y la tarea cognitiva se mantiene centrada."
+    },
+    "metadata_editorial": {
+      "lote": "L020",
+      "ruta_origen": "content/items/stand-by/Inclusión, equidad socioeconómica y adaptabilidad curricular/IDD_B07_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B07_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "IDD_B09_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Inteligencia, inteligencias múltiples y didáctica heterogénea/IDD_B09_I01.json",
+    "motivo": "El item mide definicion conceptual de inteligencia coherente con competencias, pero no exige decision docente observable ni evidencia situada de desempeno profesional.",
+    "lote": "L020"
+  },
+  {
+    "id_item": "IDD_B09_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Inteligencia, inteligencias múltiples y didáctica heterogénea/IDD_B09_I02.json",
+    "motivo": "La tarea descansa en una lectura superficial y tipologica de inteligencias multiples, con riesgo de pseudoteoria y baja utilidad para un banco serio orientado a decisiones docentes observables.",
+    "lote": "L020"
+  },
+  {
+    "id_item": "IDD_B09_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Inteligencia, inteligencias múltiples y didáctica heterogénea/IDD_B09_I03.json",
+    "motivo": "Se resuelve por asociacion memoristica entre actividades y un tipo de inteligencia, sin valor suficiente de aplicacion didactica o juicio profesional.",
+    "lote": "L020"
+  },
+  {
+    "id_item": "IDD_B09_I04",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "evaluacion diversificada",
+    "subtema": "distintas formas de demostrar el mismo aprendizaje",
+    "competencia": "Diseñar evidencias de aprendizaje diversas manteniendo un mismo criterio de logro.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado aplica una concepcion inclusiva de la evaluacion en la que cambia el medio de expresion, no la competencia ni el criterio de calidad.",
+    "evidencia": "Selecciona la decision evaluativa que permite multiples productos o formas de expresion con el mismo proposito de aprendizaje.",
+    "tarea": "Resolver un caso de evaluacion en grupo heterogeneo sin caer en rigidez instrumental ni en estandares separados por estudiante.",
+    "contexto": "Un docente quiere evaluar la comprension de un concepto en un grupo heterogeneo. Algunos estudiantes expresan mejor lo que saben oralmente, otros mediante esquemas, otros resolviendo problemas y otros escribiendo.",
+    "enunciado": "Que decision evaluativa es mas coherente con inclusion y diversificacion de la evidencia?",
+    "opciones": {
+      "A": "Aplicar una unica prueba obligatoria porque la uniformidad del instrumento es la unica garantia de imparcialidad.",
+      "B": "Eliminar la calificacion para evitar diferencias entre estudiantes con ritmos distintos.",
+      "C": "Evaluar a cada estudiante con un criterio propio segun su forma preferida de expresarse.",
+      "D": "Permitir distintas formas de producto o expresion, manteniendo el mismo proposito de aprendizaje y criterios claros de evaluacion."
+    },
+    "clave": "D",
+    "justificacion_clave": "La opcion D mantiene la competencia y los criterios de logro, pero flexibiliza el modo de evidenciarla. Eso incrementa equidad sin bajar rigor ni crear estandares paralelos.",
+    "distractores_funcion": {
+      "A": "Confunde imparcialidad con rigidez instrumental.",
+      "B": "Sustituye evaluacion por ausencia de juicio formativo.",
+      "C": "Rompe el referente comun al cambiar el criterio segun preferencias individuales.",
+      "D": "Clave correcta."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Se centra en diversas formas de demostrar aprendizaje y evita etiquetar estudiantes por una inteligencia fija."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Presenta una situacion autentica y una tarea funcional de aula."
+    },
+    "metadata_editorial": {
+      "lote": "L020",
+      "ruta_origen": "content/items/stand-by/Inteligencia, inteligencias múltiples y didáctica heterogénea/IDD_B09_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B09_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  }
+]
