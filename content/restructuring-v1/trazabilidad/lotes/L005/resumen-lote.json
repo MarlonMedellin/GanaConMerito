@@ -1,0 +1,73 @@
+{
+  "lote": "L005",
+  "sublotes_internos": [
+    "L005-A",
+    "L005-B"
+  ],
+  "fecha_revision": "2026-05-24",
+  "repositorio": "ProfeMarlonMDE/GanaConMerito",
+  "carpetas_procesadas": [
+    "content/items/stand-by/Constructivismo, indagacion y aprendizaje experimental/",
+    "content/items/stand-by/Contexto, curriculo y practica educativa/",
+    "content/items/stand-by/Corresponsabilidad educativa, ausentismo y posicion de garante/"
+  ],
+  "numero_items_leidos": 17,
+  "numero_listo_para_banco": 0,
+  "numero_listo_para_pilotaje": 5,
+  "numero_descartar": 12,
+  "numero_requiere_revision_humana": 5,
+  "decision_global": "APROBAR_PARCIALMENTE",
+  "calidad_global": "BAJA",
+  "hallazgos_principales": [
+    "En constructivismo e indagacion varios items aparentan aplicacion, pero realmente premian el reconocimiento de la teoria correcta frente a distractores caricaturescos.",
+    "En contexto, curriculo y practica educativa domina el pseudoanalisis: la mayor parte de los casos se resuelve poniendo nombre a un principio pedagogico ya insinuado por el contexto.",
+    "En corresponsabilidad educativa, el mejor material es el que obliga a decidir una actuacion institucional; cuando la clave depende de cita o composicion literal de la norma, el item se descarta."
+  ],
+  "alertas_criticas": [
+    "Predominio de contextos funcionalmente decorativos en los que la situacion no cambia la respuesta.",
+    "Baja discriminacion esperable por distractores extremos, obvios o moralmente autoaniquilados.",
+    "Inflacion de tarea cognitiva: varios items se rotulan como analisis o juicio, pero solo piden identificar una definicion pedagogica o normativa."
+  ],
+  "incidencias_github_o_fuente": [
+    "No existian archivos previos del lote L005; el cierre se creo desde cero dentro de las rutas permitidas.",
+    "Sin incidencias de lectura en las fuentes auditadas del lote."
+  ],
+  "items_rescatados": [
+    {
+      "id_item": "PPDC_B03_I01",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "Se pudo reconvertir a decision didactica real sobre indagacion sin depender de definiciones sueltas."
+    },
+    {
+      "id_item": "MTV_B36_I02",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "Se pudo enfocar en una decision curricular donde el contexto cumple funcion disciplinar real."
+    },
+    {
+      "id_item": "MTV_B36_I07",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "El caso permite evaluar juicio sobre pertinencia, sesgo y validez de la evaluacion en contexto."
+    },
+    {
+      "id_item": "NFL_B05_I01",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "Se pudo mantener como aplicacion situada del deber de garante y la corresponsabilidad frente al ausentismo."
+    },
+    {
+      "id_item": "NFL_B05_I03",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "Se pudo consolidar como toma de decision institucional temprana y no como memoria normativa."
+    }
+  ],
+  "archivos_escritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L005/reporte-procesos-anteriores.md",
+    "content/restructuring-v1/trazabilidad/lotes/L005/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L005/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L005/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "no_se_modifico_content_items_stand_by": true,
+    "no_se_modifico_trash_json": true,
+    "no_se_modificaron_bitacoras_globales": true
+  }
+}
