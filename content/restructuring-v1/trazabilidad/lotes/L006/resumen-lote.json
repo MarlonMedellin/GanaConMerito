@@ -1,0 +1,139 @@
+{
+  "lote": "L006",
+  "repository": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "processedAt": "2026-05-24",
+  "subBatches": [
+    {
+      "batchId": "L006-A",
+      "itemCount": 10,
+      "sourceFolders": [
+        "content/items/stand-by/Corresponsabilidad, entorno y cuidado institucional/",
+        "content/items/stand-by/Corresponsabilidad, garante y protección del estudiante/",
+        "content/items/stand-by/Corresponsabilidad, protección integral y sujetos de derechos/"
+      ],
+      "itemIds": [
+        "CEOL_B04_I01",
+        "CEOL_B04_I02",
+        "CEOL_B04_I03",
+        "CEOL_B04_I04",
+        "CEOL_B04_I05",
+        "IDD_B03_I01",
+        "IDD_B03_I03",
+        "DIL_B01_I01",
+        "DIL_B01_I02",
+        "DIL_B01_I03"
+      ]
+    },
+    {
+      "batchId": "L006-B",
+      "itemCount": 2,
+      "sourceFolders": [
+        "content/items/stand-by/Corresponsabilidad, protección integral y sujetos de derechos/"
+      ],
+      "itemIds": [
+        "DIL_B01_I04",
+        "DIL_B01_I05"
+      ]
+    }
+  ],
+  "scope": {
+    "allowedWritePaths": [
+      "content/restructuring-v1/trazabilidad/lotes/L006/",
+      "content/restructuring-v1/auditoria/lotes/L006/"
+    ]
+  },
+  "totals": {
+    "itemsReviewed": 12,
+    "listoParaBanco": 0,
+    "listoParaPilotaje": 7,
+    "descartar": 5,
+    "requierenRevisionHumana": 2
+  },
+  "distribution": {
+    "byDecision": {
+      "LISTO_PARA_PILOTAJE": 7,
+      "DESCARTAR": 5
+    },
+    "byArea": {
+      "competencias_ciudadanas": 2,
+      "normatividad": 4,
+      "pedagogia": 1,
+      "descartados": 5
+    },
+    "byType": {
+      "comportamental": 2,
+      "funcional": 5,
+      "descartados": 5
+    }
+  },
+  "criticalFindings": [
+    "El lote contiene un bloque recuperable de juicio institucional y deber de cuidado, pero también varios ítems de memoria normativa casi literal sobre corresponsabilidad y sujetos de derechos.",
+    "La carpeta DIL_B01 presenta repetición conceptual fuerte: dos ítems preguntan prácticamente la misma tríada de corresponsabilidad y otro reduce el constructo a definición declarativa.",
+    "Los mejores ítems del lote son los que obligan a decidir cómo actúa la escuela frente a riesgos, ausentismo, inclusión o entorno, no los que exigen recordar etiquetas legales."
+  ],
+  "systemicRisks": [
+    "Sobrerrepresentación de afirmaciones jurídicas obvias con distractores de baja competencia en DIL_B01 y CEOL_B04_I01.",
+    "Claims demasiado genéricos en varios originales, sin anclar bien la evidencia observable ni la tarea cognitiva real.",
+    "La clasificación por carpeta original mezcla convivencia, protección y deber de garante; dos ítems quedan marcados para confirmación humana de taxonomía final."
+  ],
+  "bankDecision": "APROBAR_PARCIALMENTE",
+  "bankRecommendation": "Conservar siete ítems en LISTO_PARA_PILOTAJE y excluir cinco por trivialidad normativa, redundancia o baja utilidad discriminativa.",
+  "itemDecisions": [
+    {
+      "id_item": "CEOL_B04_I01",
+      "decision": "DESCARTAR"
+    },
+    {
+      "id_item": "CEOL_B04_I02",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CEOL_B04_I02.json"
+    },
+    {
+      "id_item": "CEOL_B04_I03",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/CEOL_B04_I03.json"
+    },
+    {
+      "id_item": "CEOL_B04_I04",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CEOL_B04_I04.json"
+    },
+    {
+      "id_item": "CEOL_B04_I05",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/CEOL_B04_I05.json"
+    },
+    {
+      "id_item": "IDD_B03_I01",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/IDD_B03_I01.json"
+    },
+    {
+      "id_item": "IDD_B03_I03",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/IDD_B03_I03.json"
+    },
+    {
+      "id_item": "DIL_B01_I01",
+      "decision": "DESCARTAR"
+    },
+    {
+      "id_item": "DIL_B01_I02",
+      "decision": "DESCARTAR"
+    },
+    {
+      "id_item": "DIL_B01_I03",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/DIL_B01_I03.json"
+    },
+    {
+      "id_item": "DIL_B01_I04",
+      "decision": "DESCARTAR"
+    },
+    {
+      "id_item": "DIL_B01_I05",
+      "decision": "DESCARTAR"
+    }
+  ]
+}
