@@ -1,0 +1,47 @@
+{
+  "loteProcesado": "L036",
+  "decisionLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Constructivismo, indagación y aprendizaje experimental/",
+    "content/items/stand-by/Aula invertida y cambio de rol docente/",
+    "content/items/stand-by/Diagnóstico pedagógico integral/"
+  ],
+  "numeroItemsLeidos": 4,
+  "numeroItemsOmitidosPorAuditoriaPrevia": 4,
+  "conteoEstados": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 0,
+    "DESCARTAR": 0,
+    "OMITIDO_POR_AUDITORIA_PREVIA": 4
+  },
+  "numeroConRequiereRevisionHumana": 0,
+  "hallazgosPrincipales": [
+    "Los cuatro items del lote ya tenian decision previa y por eso fueron omitidos sin reproceso.",
+    "El bloque de constructivismo e indagacion ya habia sido resuelto en L005 con un item recuperable y otro descartado por teoria inflada.",
+    "El item de aula invertida ya habia sido auditado en L003 como recuperable para pilotaje.",
+    "El item de diagnostico pedagogico integral ya habia sido auditado en L011 y conservado como listo para banco."
+  ],
+  "problemasSistemicos": [
+    "Solapamiento total con lotes previos L003, L005 y L011.",
+    "Ningun item nuevo sobrevivio al filtro de duplicidad porque no habia material inedito en el lote.",
+    "El valor del lote estuvo en evitar reproceso y preservar trazabilidad previa."
+  ],
+  "incidenciasGithubOFuente": [
+    "La depuracion se sostuvo con decisiones recuperables de L003, L005 y L011.",
+    "No hubo incidencias bloqueantes de lectura o escritura en GitHub."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L036/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L036/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L036/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L036/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "modificoContentItemsStandBy": false,
+    "modificoTrashJson": false,
+    "modificoBitacorasGlobales": false,
+    "modificoOtrosLotes": false
+  }
+}
