@@ -1,0 +1,168 @@
+[
+  {
+    "id_item": "GA02_B08",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Normatividad y fines de la educación/GA02_B08.json",
+    "motivo": "El archivo aparecio listado en GitHub, pero no fue recuperable por la API de contenidos ni por URL directa durante esta auditoria. Sin acceso al contenido no es posible verificar clave, trazabilidad ni calidad psicometrica.",
+    "lote": "L023"
+  },
+  {
+    "id_item": "PPDC_B06_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "fines de la educacion",
+    "subtema": "integracion curricular de historia y diversidad cultural",
+    "competencia": "Traducir fines educativos en decisiones curriculares transversales.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado justifica decisiones curriculares orientadas a materializar fines de la educacion vinculados con identidad, memoria historica y respeto por la diversidad.",
+    "evidencia": "Selecciona la justificacion pedagógica mas consistente para integrar de forma transversal historia nacional, diversidad etnica y cultura.",
+    "tarea": "Identificar el proposito formativo de una decision curricular institucional apoyada en fines educativos y no en simple cumplimiento ceremonial.",
+    "contexto": "En una institucion se debate si la historia nacional y la diversidad etnica deben trabajarse solo en fechas conmemorativas o de manera transversal en varias areas.",
+    "enunciado": "Cual justificacion pedagogica y social sostiene mejor la decision de integrar transversalmente historia nacional, diversidad etnica y cultura en varias areas del plan de estudios?",
+    "opciones": {
+      "A": "Cumplir de manera formal con efemerides y actos civicos sin alterar realmente el trabajo curricular de las areas.",
+      "B": "Fortalecer identidad, memoria historica, respeto por la diversidad y comprension critica de la sociedad mediante experiencias curriculares sostenidas.",
+      "C": "Reemplazar el trabajo disciplinar por proyectos culturales libres sin referentes de aprendizaje compartidos.",
+      "D": "Homogeneizar la cultura escolar para evitar tensiones identitarias en la comunidad educativa."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opcion B convierte los fines de la educacion en una orientacion curricular concreta: formar identidad, memoria historica y respeto por la diversidad desde experiencias sostenidas y no desde actos simbolicos aislados.",
+    "distractores_funcion": {
+      "A": "Reduce el fin educativo a cumplimiento ceremonial.",
+      "B": "Clave correcta.",
+      "C": "Rompe indebidamente el equilibrio entre transversalidad y rigor curricular.",
+      "D": "Desconoce el caracter plural de la formacion ciudadana y cultural."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Promueve reconocimiento plural sin folclorizacion ni imposicion homogeneizante."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea se entiende bien, pero la clave sigue siendo relativamente visible frente a distractores menos fuertes."
+    },
+    "metadata_editorial": {
+      "lote": "L023",
+      "ruta_origen": "content/items/stand-by/Normatividad, fines de la educación y educación no formal/PPDC_B06_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/PPDC_B06_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "PPDC_B06_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Normatividad, fines de la educación y educación no formal/PPDC_B06_I02.json",
+    "motivo": "Aunque tiene apariencia de caso, la tarea central es clasificar juridicamente la oferta como educacion para el trabajo y el desarrollo humano; depende de recuerdo normativo y no de juicio institucional o pedagogico suficiente.",
+    "lote": "L023"
+  },
+  {
+    "id_item": "DIL_B02_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I01.json",
+    "motivo": "Pregunta por la expansion de la sigla PARD y su definicion general, lo que la convierte en memoria legal plana de baja utilidad para el banco.",
+    "lote": "L023"
+  },
+  {
+    "id_item": "DIL_B02_I02",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "normatividad",
+    "tema": "restablecimiento de derechos",
+    "subtema": "activacion de ruta ante indicios de vulneracion",
+    "competencia": "Distinguir entre dificultad escolar ordinaria y situacion que exige activacion de ruta de proteccion.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado diferencia situaciones escolares ordinarias de aquellas que exigen activar la ruta y remitir a autoridad competente para restablecimiento de derechos.",
+    "evidencia": "Selecciona la condicion en la que procede la activacion del PARD frente a indicios de amenaza, inobservancia o vulneracion.",
+    "tarea": "Resolver un caso plausible de aula y decidir cuando corresponde activar la ruta de proteccion.",
+    "contexto": "Un docente observa de manera recurrente hematomas inexplicables, desnutricion visible, somnolencia constante y desatencion grave del cuidado en un estudiante. Los cuidadores evaden explicaciones.",
+    "enunciado": "En cual tipo de situacion corresponde a la institucion educativa activar la ruta y remitir el caso para inicio de proceso de restablecimiento de derechos?",
+    "opciones": {
+      "A": "Cuando existen indicios de amenaza, inobservancia o vulneracion de derechos que requieren medidas de proteccion por autoridad competente.",
+      "B": "Cuando se presenta una falta menor al manual de convivencia que amerita una amonestacion verbal.",
+      "C": "Solo cuando el estudiante ha cometido una falta grave que amerita suspension o perdida del cupo escolar.",
+      "D": "Cuando la familia solicita voluntariamente el traslado del estudiante a otra institucion."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A es la unica que conecta el caso con el supuesto juridico y protector correcto: indicios de vulneracion de derechos que obligan a activar la ruta y dar traslado a autoridad competente.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Confunde convivencia ordinaria con vulneracion grave de derechos.",
+      "C": "Convierte un mecanismo protector en sancion disciplinaria.",
+      "D": "Asocia erradamente la ruta de proteccion con un tramite administrativo de traslado."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El item se centra en signos objetivos y en deber institucional de proteccion, no en prejuicios sobre la familia."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Caso claro, con tarea focalizada y mejor respuesta identificable por razon profesional."
+    },
+    "metadata_editorial": {
+      "lote": "L023",
+      "ruta_origen": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/DIL_B02_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "DIL_B02_I05",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I05.json",
+    "motivo": "La pregunta termina evaluando la definicion del hogar sustituto como medida provisional y no una decision situada de proteccion o una actuacion institucional concreta.",
+    "lote": "L023"
+  },
+  {
+    "id_item": "DIL_B02_I06",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "normatividad",
+    "tema": "rutas de proteccion",
+    "subtema": "limites de competencia escolar frente a presunto abuso",
+    "competencia": "Delimitar la actuacion de la escuela ante indicios de vulneracion grave y activar oportunamente a la autoridad competente.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado reconoce que la escuela debe proteger, documentar y remitir, pero no asumir funciones investigativas o de confrontacion judicial.",
+    "evidencia": "Selecciona la actuacion que respeta limites de competencia y evita revictimizacion o encubrimiento.",
+    "tarea": "Resolver un caso de presunto abuso fisico intrafamiliar determinando la respuesta institucional adecuada.",
+    "contexto": "Una institucion detecta indicios de presunto abuso fisico intrafamiliar. Algunos docentes proponen investigar formalmente, tomar declaraciones extensas y confrontar a los presuntos agresores.",
+    "enunciado": "Que actuacion respeta los limites de competencia de la escuela frente a este caso?",
+    "opciones": {
+      "A": "Registrar objetivamente la situacion, brindar contencion emocional, activar la ruta e informar de inmediato a la autoridad competente sin adelantar labores investigativas.",
+      "B": "Realizar un interrogatorio formal al estudiante para obtener una declaracion escrita antes de remitir el caso.",
+      "C": "Citar a los cuidadores para confrontarlos y exigir compromiso escrito bajo amenaza de expulsion inmediata.",
+      "D": "Esperar pruebas concluyentes antes de reportar externamente para evitar reclamaciones por falsas denuncias."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A recoge la respuesta institucional correcta: proteccion inmediata, documentacion objetiva y traslado oportuno a autoridad competente, evitando revictimizacion y extralimitacion de funciones.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Revictimiza e invade funciones de investigacion.",
+      "C": "Puede incrementar riesgo y excede las competencias de la escuela.",
+      "D": "Configura omision del deber de proteccion y reporte oportuno."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Protege al estudiante y evita actuaciones basadas en confrontacion improcedente o sospechas morales."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Escenario verosimil y decision profesional claramente situada."
+    },
+    "metadata_editorial": {
+      "lote": "L023",
+      "ruta_origen": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I06.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/DIL_B02_I06.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  }
+]
