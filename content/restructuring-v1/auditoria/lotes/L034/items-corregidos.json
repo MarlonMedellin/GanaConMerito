@@ -1,0 +1,186 @@
+[
+  {
+    "id_item": "CB05_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "Competencias ciudadanas",
+    "tema": "Comunicación asertiva",
+    "subtema": "Manejo profesional de desacuerdos entre pares",
+    "competencia": "Evalúa actuaciones de comunicación asertiva para encauzar desacuerdos profesionales con escucha, claridad y corresponsabilidad.",
+    "nivel_cognitivo": "ANÁLISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado distingue una intervención profesional que transforma un desacuerdo laboral en una conversación de trabajo con acuerdos verificables.",
+    "evidencia": "Selecciona la actuación que escucha a las partes, delimita el problema y produce compromisos compartidos sin evasión ni imposición jerárquica.",
+    "tarea": "Analizar un conflicto entre colegas y elegir la intervención más adecuada para encauzarlo de manera asertiva.",
+    "contexto": "Dos docentes discrepan sobre la distribución de responsabilidades en un proyecto institucional. La tensión ya empezó a afectar la coordinación del equipo y la ejecución de tareas compartidas.",
+    "enunciado": "¿Qué actuación expresa mejor una comunicación asertiva profesional para reconducir este desacuerdo?",
+    "opciones": {
+      "A": "Pedir a cada docente que envíe por escrito sus inconformidades y, con base en esos mensajes, redefinir unilateralmente las tareas para evitar nuevas fricciones.",
+      "B": "Convocar una conversación privada, escuchar activamente ambas posturas, precisar los puntos concretos de desacuerdo y acordar un plan de trabajo con responsabilidades y tiempos compartidos.",
+      "C": "Mantener la distribución actual y solicitar a ambos que se concentren en cumplirla, asumiendo que el paso del tiempo reducirá la tensión del equipo.",
+      "D": "Trasladar el desacuerdo a una reunión ampliada para que el resto del equipo vote cuál de los dos docentes tiene la razón."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opción B integra escucha activa, delimitación objetiva del problema y construcción de acuerdos verificables. Esa secuencia muestra comunicación asertiva observable y orientada a solución, no solo control del conflicto.",
+    "distractores_funcion": {
+      "A": "Recoge información, pero sustituye el diálogo por una decisión unilateral y reduce la corresponsabilidad entre las partes.",
+      "B": "Clave correcta. Resuelve el desacuerdo mediante escucha, claridad y compromisos compartidos.",
+      "C": "Apuesta por la dilación y conserva el foco en la tarea, pero no aborda la causa del conflicto ni mejora la interacción profesional.",
+      "D": "Introduce exposición pública y lógica de ganadores y perdedores, lo que puede amplificar la polarización y debilitar la confianza profesional."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Situación laboral transversal al contexto escolar, sin referencias culturales o personales irrelevantes para la tarea evaluada."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Una sola tarea cognitiva; se redujo el ruido normativo y se mantuvo vocabulario habitual del rol profesional."
+    },
+    "metadata_editorial": {
+      "lote": "L034",
+      "ruta_origen": "content/items/stand-by/Comunicación asertiva/CB05_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CB05_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CB05_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "Competencias ciudadanas",
+    "tema": "Comunicación asertiva",
+    "subtema": "Conversación restaurativa inicial con estudiantes",
+    "competencia": "Evalúa secuencias de mediación comunicativa que priorizan escucha, reconocimiento del daño y acuerdos restaurativos en convivencia escolar.",
+    "nivel_cognitivo": "ANÁLISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado reconoce una mediación inicial que promueve responsabilización y diálogo directo sin caer en humillación pública ni puro trámite sancionatorio.",
+    "evidencia": "Selecciona la secuencia que establece reglas de escucha, permite narrar hechos e impactos y cierra con acuerdos de reparación y seguimiento.",
+    "tarea": "Analizar una situación de agresión verbal entre estudiantes y elegir la secuencia de mediación más pertinente.",
+    "contexto": "Dos estudiantes intercambiaron mensajes ofensivos por redes sociales y luego discutieron en el aula. La coordinación busca realizar una primera conversación restaurativa para encauzar el caso antes de escalar otras medidas.",
+    "enunciado": "¿Cuál secuencia de acciones es más adecuada para conducir esa conversación restaurativa inicial desde una comunicación efectiva?",
+    "opciones": {
+      "A": "Acordar reglas de respeto para la escucha mutua, pedir a cada estudiante que describa hechos e impactos, reconocer afectaciones y construir compromisos de reparación y seguimiento.",
+      "B": "Solicitar a cada estudiante un descargo escrito por separado, definir quién empezó el conflicto y comunicar luego una decisión correctiva sin encuentro directo entre ellos.",
+      "C": "Leer los mensajes ofensivos frente al curso, exigir una disculpa pública inmediata y registrar la falta para enviar un mensaje de cero tolerancia.",
+      "D": "Pedir a ambos que eliminen los mensajes y se comprometan a no volver a hablar del tema para evitar que el conflicto siga creciendo."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opción A estructura una mediación restaurativa: escucha, reconocimiento del impacto, responsabilización y acuerdos verificables. Las demás opciones bloquean el diálogo o reemplazan la reparación por silenciamiento o exposición punitiva.",
+    "distractores_funcion": {
+      "A": "Clave correcta. Articula escucha mutua, reparación y seguimiento.",
+      "B": "Aporta información y debido registro, pero evita el encuentro comunicativo que justamente se busca desarrollar en una conversación restaurativa inicial.",
+      "C": "Convierte la intervención en escarmiento público y puede profundizar la humillación, sin construir comprensión ni reparación auténtica.",
+      "D": "Reduce el problema a apagar el síntoma inmediato y deja intactas las habilidades de diálogo y responsabilización que el caso requiere."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "La escena es escolar y generalizable; no depende de identidades particulares ni de conocimiento extraescolar especializado."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La secuencia pedida es única y el vocabulario se mantiene en registro institucional común."
+    },
+    "metadata_editorial": {
+      "lote": "L034",
+      "ruta_origen": "content/items/stand-by/Comunicación asertiva/CB05_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CB05_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CEOL_B09_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "Pedagogía",
+    "tema": "Gestión de aula, lectura, creatividad y honestidad académica",
+    "subtema": "Mediación didáctica de la lectura con autoría propia",
+    "competencia": "Evalúa decisiones didácticas para promover lectura crítica, producción auténtica y uso ético de fuentes en el aula.",
+    "nivel_cognitivo": "APLICACIÓN",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado distingue una intervención de lectura que reduce la copia mecánica porque cambia la tarea y exige interpretación, postura personal y trazabilidad de fuentes.",
+    "evidencia": "Selecciona una estrategia que combina mediación de lectura, preguntas interpretativas, producción propia y criterios explícitos para usar información externa.",
+    "tarea": "Analizar una práctica de lectura escolar y elegir la estrategia más formativa para mejorar comprensión y honestidad académica.",
+    "contexto": "Un docente observa que varios estudiantes entregan tareas copiadas de internet y muestran poco interés por los textos asignados. Busca fortalecer la comprensión crítica y una relación más auténtica con la lectura.",
+    "enunciado": "¿Qué estrategia pedagógica responde mejor a ese problema sin reducirlo a control o castigo?",
+    "opciones": {
+      "A": "Mantener los mismos resúmenes, pero aumentar la frecuencia de controles de lectura y la cantidad de preguntas cerradas para verificar cumplimiento individual.",
+      "B": "Restringir las fuentes a libros físicos de biblioteca y prohibir el uso de recursos digitales para evitar la copia de información en línea.",
+      "C": "Trabajar textos acotados con preguntas interpretativas, discusión guiada, producción de una postura propia y sustentación donde el estudiante explicite cómo usó sus fuentes.",
+      "D": "Aplicar un detector de plagio y asignar cero a cualquier trabajo con coincidencias textuales, manteniendo intacta la estructura habitual de las tareas de lectura."
+    },
+    "clave": "C",
+    "justificacion_clave": "La opción C rediseña la tarea para exigir lectura comprensiva, elaboración personal y uso trazable de fuentes. No se limita a vigilar la copia: transforma la experiencia de lectura y produce evidencia más válida del aprendizaje.",
+    "distractores_funcion": {
+      "A": "Aumenta el control, pero conserva una tarea reproductiva que sigue siendo fácil de tercerizar o copiar sin comprensión real.",
+      "B": "Parece proteger la autoría, aunque desplaza el problema hacia una falsa oposición entre lectura crítica e internet y no enseña uso ético de fuentes.",
+      "C": "Clave correcta. Integra mediación lectora, postura propia y responsabilidad en el uso de información externa.",
+      "D": "Fortalece la sanción, pero no cambia el diseño de la tarea ni amplía la evidencia de comprensión; por eso resulta insuficiente como respuesta pedagógica central."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No presupone acceso privilegiado a un tipo único de recurso y evita demonizar la tecnología; el foco está en la mediación docente y la autoría."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Contexto breve, tarea única y opciones paralelas con verbos de acción comparables."
+    },
+    "metadata_editorial": {
+      "lote": "L034",
+      "ruta_origen": "content/items/stand-by/Gestión de aula, lectura, creatividad y honestidad académica/CEOL_B09_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CEOL_B09_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CEOL_B09_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "Pedagogía",
+    "tema": "Gestión de aula, lectura, creatividad y honestidad académica",
+    "subtema": "Respuesta formativa ante plagio escolar",
+    "competencia": "Evalúa respuestas pedagógicas proporcionales frente al plagio que articulan responsabilidad, aprendizaje y nueva evidencia de autoría.",
+    "nivel_cognitivo": "APLICACIÓN",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado reconoce que una respuesta formativa al plagio debe enseñar autoría y uso de fuentes, no solo castigar ni relativizar la falta.",
+    "evidencia": "Selecciona la intervención que retroalimenta, enseña criterios de citación y exige una nueva producción propia verificable.",
+    "tarea": "Analizar un caso de copia en trabajos escolares y elegir la respuesta pedagógica más adecuada.",
+    "contexto": "Un docente encuentra que varios estudiantes copiaron fragmentos de internet en sus trabajos sin citarlos y sin desarrollar ideas propias. Busca responder desde la evaluación formativa y la honestidad académica.",
+    "enunciado": "¿Qué enfoque pedagógico es más adecuado para intervenir esta situación?",
+    "opciones": {
+      "A": "Asignar la nota mínima y remitir de inmediato el caso a la instancia disciplinaria, sin abrir oportunidad de revisión del trabajo presentado.",
+      "B": "Retroalimentar sobre autoría y citación, analizar con los estudiantes dónde se pierde la voz propia y pedir una reescritura sustentada con criterios claros de uso de fuentes.",
+      "C": "Tomar el episodio como una falta menor propia del curso y conservar la calificación, dejando la corrección ética para trabajos posteriores.",
+      "D": "Eliminar las tareas de escritura extraclase y exigir desde ahora solo producciones manuscritas en aula para bloquear cualquier posibilidad de copia."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opción B combina exigencia ética, enseñanza explícita y nueva evidencia de aprendizaje. Es la respuesta más sólida cuando el propósito es corregir el plagio sin vaciar la evaluación de sentido pedagógico.",
+    "distractores_funcion": {
+      "A": "Asegura sanción y trazabilidad, pero renuncia a enseñar la competencia de autoría que el caso muestra como deficitaria.",
+      "B": "Clave correcta. Reúne responsabilidad, formación en citación y oportunidad de demostrar una producción propia revisada.",
+      "C": "Evita el conflicto inmediato, pero relativiza una falta que sí debe ser trabajada de manera explícita y con nueva evidencia.",
+      "D": "Reduce el riesgo de copia por control del contexto, aunque no forma en investigación autónoma ni en uso ético de información."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Evita respuestas moralizantes extremas y no presupone mala fe uniforme; el foco está en la actuación docente ante evidencia de copia."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La redacción es directa y mantiene paralelismo estructural entre alternativas."
+    },
+    "metadata_editorial": {
+      "lote": "L034",
+      "ruta_origen": "content/items/stand-by/Gestión de aula, lectura, creatividad y honestidad académica/CEOL_B09_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CEOL_B09_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  }
+]
