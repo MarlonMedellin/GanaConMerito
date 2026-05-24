@@ -1,0 +1,246 @@
+[
+  {
+    "id_item": "PPDC_B05_I01",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Diagnóstico pedagógico en educación primaria",
+    "subtema": "Uso formativo del diagnóstico inicial",
+    "competencia": "Diseñar diagnósticos pedagógicos iniciales para orientar la planeación de aula en básica primaria.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que el diagnóstico inicial debe recoger información integral del grupo para ajustar la enseñanza, no para clasificar estudiantes por rendimiento.",
+    "evidencia": "Selecciona una estrategia diagnóstica que integra saberes previos, ritmos, condiciones del grupo y decisiones de planeación.",
+    "tarea": "Determinar el propósito y diseño más adecuado del diagnóstico de inicio de año en primaria.",
+    "contexto": "Una docente de tercero recibe un grupo heterogéneo y algunos colegas le sugieren aplicar una prueba escrita estandarizada para dividir desde el primer día a los estudiantes por niveles de rendimiento.",
+    "enunciado": "¿Cuál debe ser el propósito y diseño del diagnóstico inicial del curso?",
+    "opciones": {
+      "A": "Recoger información integral mediante observación, diálogo y actividades breves para conocer saberes previos, ritmos y necesidades del grupo y ajustar la planeación.",
+      "B": "Aplicar una prueba escrita única y ubicar aparte a quienes obtengan puntajes bajos para concentrarse en los estudiantes más adelantados.",
+      "C": "Limitar el diagnóstico a entrevistas con las familias y definir desde allí la promoción del curso.",
+      "D": "Usar el diagnóstico como la primera nota definitiva del periodo para elevar la exigencia desde el inicio."
+    },
+    "clave": "A",
+    "justificacion_clave": "El diagnóstico pedagógico inicial cumple una función formativa: ofrece información para adecuar la enseñanza a las características reales del grupo en básica primaria.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Usa el diagnóstico para segregar en lugar de orientar la enseñanza.",
+      "C": "Reduce la valoración pedagógica al relato familiar.",
+      "D": "Convierte una herramienta diagnóstica en mecanismo punitivo de calificación."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Favorece lectura inclusiva del grupo y evita respuestas excluyentes o clasificatorias."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El caso está bien delimitado y la tarea es única."
+    },
+    "metadata_editorial": {
+      "lote": "L011",
+      "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico en educación primaria/PPDC_B05_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/basica_primaria/funcional/PPDC_B05_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "EFCC_B05_I01",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Diagnóstico pedagógico integral",
+    "subtema": "Planeación desde múltiples dimensiones",
+    "competencia": "Integrar información diagnóstica académica y contextual para planificar apoyos y ajustes pedagógicos.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que una prueba escrita inicial es útil pero insuficiente cuando el docente necesita planear mediaciones y apoyos pertinentes.",
+    "evidencia": "Escoge la alternativa que articula saberes conceptuales con dimensiones cognitivas, socioemocionales y contextuales del grupo.",
+    "tarea": "Valorar por qué un diagnóstico integral no debe reducirse a una única prueba de contenidos.",
+    "contexto": "Al iniciar el año, un docente aplica una prueba escrita y concluye que ya conoce suficientemente a su grupo, aunque luego observa diferencias en habilidades comunicativas, ritmos, motivación, participación y condiciones familiares.",
+    "enunciado": "¿Por qué ese proceso inicial no debe limitarse a una prueba escrita de contenidos académicos?",
+    "opciones": {
+      "A": "Porque el diagnóstico debe centrarse solo en las condiciones socioeconómicas de las familias y prescindir de la dimensión académica.",
+      "B": "Porque las pruebas escritas carecen por completo de valor y deben reemplazarse siempre por observación libre.",
+      "C": "Porque el diagnóstico integral necesita valorar saberes previos en articulación con dimensiones cognitivas, socioemocionales, ritmos de aprendizaje y contexto para diseñar planeación y apoyos.",
+      "D": "Porque el diagnóstico existe únicamente para clasificar al grupo en subniveles homogéneos de desempeño."
+    },
+    "clave": "C",
+    "justificacion_clave": "El diagnóstico integral combina información académica y contextual para orientar decisiones de planeación, apoyos y mediación pedagógica pertinentes.",
+    "distractores_funcion": {
+      "A": "Reemplaza un reduccionismo por otro y elimina la dimensión académica.",
+      "B": "Invalida indebidamente un instrumento que sí puede aportar información útil.",
+      "C": "Clave correcta.",
+      "D": "Convierte el diagnóstico en mecanismo de etiquetado y segregación."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No depende de información cultural o regional irrelevante y evita estigmatización."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Se corrigió la mezcla de idioma y se conservó una sola demanda cognitiva."
+    },
+    "metadata_editorial": {
+      "lote": "L011",
+      "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico integral/EFCC_B05_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/EFCC_B05_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B14_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/IDD_B14_I01.json",
+    "motivo": "Demasiado genérico y redundante dentro del lote; no exige una decisión pedagógica suficientemente observable más allá de una formulación amplia sobre qué debe incluir el diagnóstico.",
+    "lote": "L011"
+  },
+  {
+    "id_item": "IDD_B14_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Saberes previos y aprendizaje significativo",
+    "subtema": "Conflicto cognitivo con sentido pedagógico",
+    "competencia": "Usar el diagnóstico de ideas previas para diseñar mediaciones y contrastes pertinentes.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que el conflicto cognitivo solo tiene valor didáctico cuando el docente conoce el punto de partida conceptual del estudiante.",
+    "evidencia": "Escoge la justificación que vincula saberes previos con diseño de preguntas, contrastes y mediación.",
+    "tarea": "Decidir por qué el docente debe identificar ideas previas antes de provocar conflicto cognitivo.",
+    "contexto": "Antes de enseñar un concepto nuevo, el docente quiere generar conflicto cognitivo, pero aún no sabe qué ideas previas o concepciones erróneas tienen sus estudiantes sobre el tema.",
+    "enunciado": "¿Por qué debe identificarlas primero?",
+    "opciones": {
+      "A": "Porque el nuevo aprendizaje se construye sobre lo que el estudiante ya sabe y conocer esas ideas permite diseñar preguntas y mediaciones pertinentes.",
+      "B": "Porque las ideas previas deben eliminarse sin analizarlas.",
+      "C": "Porque el conflicto cognitivo consiste en confundir al estudiante sin un propósito claro.",
+      "D": "Porque el docente debe enseñar ignorando lo que el estudiante piensa."
+    },
+    "clave": "A",
+    "justificacion_clave": "El conocimiento de las ideas previas permite que el conflicto cognitivo tenga dirección pedagógica y no se convierta en simple desconcierto.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Desconoce el valor diagnóstico de las concepciones iniciales.",
+      "C": "Confunde conflicto cognitivo con desorientación sin mediación.",
+      "D": "Niega el punto de partida constructivista del aprendizaje."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Evalúa una decisión didáctica general, no saber disciplinar especializado."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La clave es defendible, pero la oposición de distractores la hace relativamente evidente."
+    },
+    "metadata_editorial": {
+      "lote": "L011",
+      "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/IDD_B14_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B14_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B14_I03",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Evaluación formativa",
+    "subtema": "Uso de resultados y ajuste didáctico",
+    "competencia": "Usar evidencias de aprendizaje para retroalimentar, ajustar la mediación y ofrecer apoyos oportunos.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que la evaluación formativa exige analizar errores, intervenir pedagógicamente y recoger nueva evidencia.",
+    "evidencia": "Selecciona la secuencia de acciones que convierte los resultados en mejora pedagógica observable.",
+    "tarea": "Escoger la actuación más pertinente cuando el grupo no logra evidenciar la competencia esperada.",
+    "contexto": "Al finalizar un periodo, el docente observa que una parte importante del grupo no logró la competencia esperada y cuenta con resultados, errores frecuentes y evidencias del proceso.",
+    "enunciado": "¿Qué acciones debe implementar desde la evaluación formativa?",
+    "opciones": {
+      "A": "Registrar las notas y continuar con el siguiente periodo sin revisar lo ocurrido.",
+      "B": "Repetir exactamente la misma prueba sin retroalimentación.",
+      "C": "Concluir que el grupo no tiene capacidad para aprender el tema.",
+      "D": "Analizar patrones de dificultad, retroalimentar, ajustar la mediación didáctica, ofrecer apoyos y recoger nuevas evidencias de aprendizaje."
+    },
+    "clave": "D",
+    "justificacion_clave": "La evaluación formativa se reconoce en el uso pedagógico de los resultados para intervenir, retroalimentar y volver a recoger evidencia de avance.",
+    "distractores_funcion": {
+      "A": "Renuncia al uso pedagógico de la información obtenida.",
+      "B": "Repite el instrumento sin mediación ni aprendizaje a partir del error.",
+      "C": "Transforma la evaluación en juicio deficitario sobre el grupo.",
+      "D": "Clave correcta."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Promueve respuesta pedagógica basada en evidencias y no en etiquetas."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La situación es clara y las opciones están funcionalmente diferenciadas."
+    },
+    "metadata_editorial": {
+      "lote": "L011",
+      "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/IDD_B14_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B14_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B14_I04",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/IDD_B14_I04.json",
+    "motivo": "Se reduce a enumerar componentes del diagnóstico integral; la tarea no exige decisión pedagógica real y los distractores son demasiado obvios.",
+    "lote": "L011"
+  },
+  {
+    "id_item": "IDD_B14_I05",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Diagnóstico pedagógico y planeación inclusiva",
+    "subtema": "Uso diagnóstico para DUA y apoyos",
+    "competencia": "Usar información diagnóstica para planear desde DUA, prever apoyos y ajustar la mediación sin perder propósito común.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que la diversidad diagnosticada debe traducirse en decisiones concretas de representación, participación, expresión y apoyo.",
+    "evidencia": "Selecciona el uso pedagógico correcto de la información diagnóstica para diseñar la unidad.",
+    "tarea": "Decidir cómo transformar la información del diagnóstico inicial en planeación inclusiva.",
+    "contexto": "Después de un diagnóstico inicial, el docente identifica diversidad de ritmos, intereses, barreras de acceso, fortalezas visuales, dificultades de lectura y distintas formas de participación.",
+    "enunciado": "¿Cuál es el uso pedagógico correcto de esa información al planear la unidad?",
+    "opciones": {
+      "A": "Diseñar desde el DUA múltiples formas de representación, participación y expresión, prever apoyos y ajustar la mediación según las barreras identificadas.",
+      "B": "Clasificar a los estudiantes en buenos y malos para decidir quién merece apoyo.",
+      "C": "Guardar los resultados sin modificar la planeación inicial.",
+      "D": "Hacer una actividad totalmente distinta para cada estudiante sin un propósito común."
+    },
+    "clave": "A",
+    "justificacion_clave": "El uso formativo del diagnóstico se expresa cuando la información recogida transforma la planeación y orienta apoyos razonables e inclusivos.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Clasifica y estigmatiza en lugar de apoyar.",
+      "C": "Desaprovecha la información diagnóstica.",
+      "D": "Confunde atención a la diversidad con fragmentación sin propósito compartido."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Se centra en barreras y apoyos, no en etiquetado de estudiantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea es observable y la clave depende de decisión docente real."
+    },
+    "metadata_editorial": {
+      "lote": "L011",
+      "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/IDD_B14_I05.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B14_I05.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  }
+]
