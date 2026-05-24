@@ -1,0 +1,59 @@
+{
+  "loteProcesado": "L049",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Formación integral, fines de la educación y desarrollo de la personalidad/",
+    "content/items/stand-by/Propósitos de la educación/",
+    "content/items/stand-by/Normatividad y fines de la educación/"
+  ],
+  "itemsLeidos": 10,
+  "itemsAuditadosEnL049": 0,
+  "itemsOmitidosPorAuditoriaPrevia": 10,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 0,
+    "DESCARTAR": 0,
+    "OMITIDO_POR_AUDITORIA_PREVIA": 10
+  },
+  "requiereRevisionHumana": 0,
+  "omisionesPorAuditoriaPrevia": {
+    "L017": [
+      "NFL_B01_I01",
+      "NFL_B01_I02",
+      "NFL_B01_I03",
+      "NFL_B01_I04",
+      "NFL_B01_I05"
+    ],
+    "L025": [
+      "CB14_I01",
+      "CB14_I02",
+      "CB14_I03",
+      "CB14_I04"
+    ],
+    "L023": [
+      "GA02_B08"
+    ]
+  },
+  "hallazgosClave": [
+    "Las tres carpetas asignadas ya tenían trazabilidad de auditoría suficiente en lotes previos y no requirieron reprocesamiento.",
+    "Los ítems sobre fines de la educación ya habían sido depurados en L017, L023 y L025 para separar memoria normativa de selección pedagógica observable.",
+    "L049 queda como lote de consolidación por omisión trazada, sin remediación nueva."
+  ],
+  "incidenciasGithubOFuente": [
+    "Los archivos de salida de L049 no existían y devolvieron 404 antes de crearse.",
+    "No se identificaron ítems nuevos no auditados dentro de las carpetas asignadas.",
+    "reporte-acumulado-instancia.md no existía en L049 y se creó en este cierre."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L049/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L049/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L049/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L049/reporte-acumulado-instancia.md"
+  ],
+  "confirmaciones": {
+    "noSeModificoContentItemsStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true,
+    "noSeModificaronOtrosLotes": true
+  }
+}
