@@ -1,0 +1,80 @@
+{
+  "version": "v1",
+  "purpose": "Clasificacion intermedia de content/items/stand-by antes de tocar el banco canonico",
+  "primaryAxis": "area",
+  "secondaryAxis": "perfil",
+  "tertiaryAxis": "itemCategory",
+  "areas": [
+    "matematicas",
+    "pedagogia",
+    "normatividad",
+    "gestion",
+    "lectura_critica",
+    "competencias_ciudadanas"
+  ],
+  "profiles": [
+    "rector_director_rural",
+    "coordinador",
+    "preescolar",
+    "basica_primaria",
+    "secundaria_media",
+    "orientador",
+    "por_confirmar"
+  ],
+  "itemCategories": [
+    "basica",
+    "funcional",
+    "comportamental"
+  ],
+  "routingRules": {
+    "basica": "conocimiento transversal, comprension conceptual o normativa, aplicacion breve",
+    "funcional": "aplicacion al rol, decision de proceso, procedimiento tecnico, analisis contextual del trabajo",
+    "comportamental": "juicio situacional, colaboracion, orientacion al usuario, responsabilidad institucional"
+  },
+  "profileHeuristics": {
+    "rector_director_rural": [
+      "pei",
+      "gestion directiva",
+      "liderazgo escolar",
+      "participacion institucional",
+      "seguimiento y mejora"
+    ],
+    "coordinador": [
+      "acompanamiento academico",
+      "seguimiento docente",
+      "convivencia institucional",
+      "articulacion curricular",
+      "coordinacion"
+    ],
+    "preescolar": [
+      "identidad",
+      "autonomia",
+      "juego",
+      "desarrollo integral",
+      "educacion inicial"
+    ],
+    "basica_primaria": [
+      "diagnostico",
+      "planeacion de aula",
+      "evaluacion formativa",
+      "diversidad",
+      "mediacion pedagogica"
+    ],
+    "secundaria_media": [
+      "pensamiento cientifico",
+      "didactica disciplinar",
+      "analisis de aula",
+      "curriculo",
+      "aprendizajes especificos"
+    ],
+    "orientador": [
+      "rutas",
+      "convivencia",
+      "proyecto de vida",
+      "remisiones",
+      "proteccion integral"
+    ]
+  },
+  "fallbackProfile": "por_confirmar",
+  "discardRule": "No descartar por duda de clasificacion. Solo descartar despues de la fase de ajuste de calidad."
+}
