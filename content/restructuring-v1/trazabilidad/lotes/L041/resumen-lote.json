@@ -1,0 +1,47 @@
+{
+  "loteProcesado": "L041",
+  "decisionLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/",
+    "content/items/stand-by/Horario escolar/",
+    "content/items/stand-by/Normatividad, fines de la educación y educación no formal/"
+  ],
+  "numeroItemsLeidos": 15,
+  "numeroItemsOmitidosPorAuditoriaPrevia": 15,
+  "conteoEstados": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 0,
+    "DESCARTAR": 0,
+    "OMITIDO_POR_AUDITORIA_PREVIA": 15
+  },
+  "numeroConRequiereRevisionHumana": 0,
+  "hallazgosPrincipales": [
+    "Los quince items del lote ya tenian decision previa y por eso fueron omitidos sin reproceso.",
+    "El bloque de jornada y asignacion academica ya habia sido auditado integralmente en L021.",
+    "El item de horario escolar ya habia sido auditado en L018 como decision institucional situada.",
+    "Los dos items sobre fines de la educacion y educacion no formal ya habian sido resueltos en L023."
+  ],
+  "problemasSistemicos": [
+    "Solapamiento total con lotes previos L018, L021 y L023.",
+    "No hubo material inedito que justificara nueva auditoria psicometrica.",
+    "El valor del lote estuvo en evitar reproceso y preservar la trazabilidad existente."
+  ],
+  "incidenciasGithubOFuente": [
+    "La depuracion se sostuvo con decisiones recuperables de L018, L021 y L023.",
+    "No hubo incidencias bloqueantes de lectura o escritura en GitHub."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L041/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L041/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L041/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L041/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "modificoContentItemsStandBy": false,
+    "modificoTrashJson": false,
+    "modificoBitacorasGlobales": false,
+    "modificoOtrosLotes": false
+  }
+}
