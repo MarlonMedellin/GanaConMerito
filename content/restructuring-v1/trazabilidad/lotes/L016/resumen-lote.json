@@ -1,0 +1,141 @@
+{
+  "loteProcesado": "L016",
+  "repo": "ProfeMarlonMDE/GanaConMerito",
+  "rama": "master",
+  "fechaAuditoria": "2026-05-24",
+  "autorRevision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Evaluación integral por competencias/",
+    "content/items/stand-by/Evaluación tecnicista, punitiva y formativa/",
+    "content/items/stand-by/Evolución normativa - Código del Menor vs. Ley 1098/"
+  ],
+  "numeroItemsLeidos": 9,
+  "numeroListoParaBanco": 2,
+  "numeroListoParaPilotaje": 3,
+  "numeroDescartar": 4,
+  "numeroConRequiereRevisionHumana": 0,
+  "incidenciasGithubOFuente": [
+    "No existían previamente las salidas de L016 ni los reportes históricos obligatorios dentro de la carpeta del lote.",
+    "No se detectaron bloqueos de acceso a los nueve archivos origen del lote en GitHub."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L016/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L016/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L016/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L016/reporte-procesos-anteriores.md",
+    "content/restructuring-v1/trazabilidad/lotes/L016/reporte-acumulado-instancia.md"
+  ],
+  "confirmacionesProteccion": {
+    "noSeModificoContentItemsStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true
+  },
+  "decisionGlobal": "APROBAR_PARCIALMENTE",
+  "hallazgosPrincipales": [
+    "Los ítems más sólidos del lote convierten la evaluación o la protección integral en decisiones pedagógicas o institucionales situadas.",
+    "Las preguntas más débiles del bloque normativo reducen el constructo a recordar diferencias doctrinales entre el Código del Menor y la Ley 1098, sin una decisión jurídica o escolar situada.",
+    "En evaluación tecnicista, punitiva y formativa, la principal amenaza es que algunos contrastes se resuelven por palabras demasiado obvias; por eso solo se conservaron los que aún sostienen una mejor respuesta defendible."
+  ],
+  "items": [
+    {
+      "id_item": "EFCC_B04_I01",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "ruta_origen": "content/items/stand-by/Evaluación integral por competencias/EFCC_B04_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/EFCC_B04_I01.json",
+      "motivo": "Buen foco en evidencia de desempeño, pero conviene pilotear por la baja competitividad de algunos distractores.",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "EFCC_B01_I01",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "ruta_origen": "content/items/stand-by/Evaluación tecnicista, punitiva y formativa/EFCC_B01_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/EFCC_B01_I01.json",
+      "motivo": "Caso plausible y mejor respuesta clara, pero el contraste entre opciones sigue siendo algo visible y merece pilotaje.",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "EFCC_B01_I02",
+      "decision": "LISTO_PARA_BANCO",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "ruta_origen": "content/items/stand-by/Evaluación tecnicista, punitiva y formativa/EFCC_B01_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/EFCC_B01_I02.json",
+      "motivo": "La crítica a la prueba sorpresa punitiva está situada, la clave es única y el distractor principal compite razonablemente.",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "EFCC_B01_I03",
+      "decision": "DESCARTAR",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "ruta_origen": "content/items/stand-by/Evaluación tecnicista, punitiva y formativa/EFCC_B01_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/EFCC_B01_I03.json",
+      "motivo": "Se resuelve casi por definición del propósito de la evaluación formativa y el contraste entre opciones es demasiado evidente.",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "EFCC_B01_I04",
+      "decision": "LISTO_PARA_BANCO",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "ruta_origen": "content/items/stand-by/Evaluación tecnicista, punitiva y formativa/EFCC_B01_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/EFCC_B01_I04.json",
+      "motivo": "Buen juicio sobre recuperación formativa; el caso es auténtico y la mejor respuesta se apoya en evidencia de aprendizaje y retroalimentación.",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "DIL_B03_I01",
+      "decision": "DESCARTAR",
+      "area": "normatividad",
+      "perfil": "por_confirmar",
+      "tipo": "basica",
+      "ruta_origen": "content/items/stand-by/Evolución normativa - Código del Menor vs. Ley 1098/DIL_B03_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/basica/DIL_B03_I01.json",
+      "motivo": "El núcleo del ítem es recordar el giro doctrinal entre dos normas, sin una decisión jurídica o escolar situada.",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "DIL_B03_I02",
+      "decision": "DESCARTAR",
+      "area": "normatividad",
+      "perfil": "por_confirmar",
+      "tipo": "basica",
+      "ruta_origen": "content/items/stand-by/Evolución normativa - Código del Menor vs. Ley 1098/DIL_B03_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/basica/DIL_B03_I02.json",
+      "motivo": "Pregunta conceptual plana sobre situación irregular; depende de memoria jurídica más que de aplicación normativa situada.",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "DIL_B03_I03",
+      "decision": "DESCARTAR",
+      "area": "normatividad",
+      "perfil": "por_confirmar",
+      "tipo": "basica",
+      "ruta_origen": "content/items/stand-by/Evolución normativa - Código del Menor vs. Ley 1098/DIL_B03_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/basica/DIL_B03_I03.json",
+      "motivo": "La clave se apoya en recordar una formulación doctrinal general sobre titularidad de derechos sin conflicto aplicado suficiente.",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "DIL_B03_I04",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "area": "normatividad",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "ruta_origen": "content/items/stand-by/Evolución normativa - Código del Menor vs. Ley 1098/DIL_B03_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/DIL_B03_I04.json",
+      "motivo": "Es el ítem normativo más situado del lote porque aterriza la protección integral al rol preventivo y de activación de rutas de la institución; conviene pilotear competitividad de distractores.",
+      "requiere_revision_humana": false
+    }
+  ]
+}
