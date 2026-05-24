@@ -1,0 +1,316 @@
+[
+  {
+    "id_item": "PPDC_B03_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Constructivismo e indagacion cientifica",
+    "subtema": "Toma de decisiones didacticas en aprendizaje experimental",
+    "competencia": "Seleccionar una intervencion didactica que promueva indagacion guiada, contrastacion de ideas y construccion activa de explicaciones.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado distingue una intervencion de indagacion autentica de respuestas transmisivas, evasivas o experimentalmente desordenadas.",
+    "evidencia": "Elige la accion docente que convierte la pregunta del estudiante en una secuencia breve de exploracion, formulacion de hipotesis y contraste con observaciones.",
+    "tarea": "Seleccionar la mejor respuesta docente ante una inquietud cientifica para promover aprendizaje experimental con sentido.",
+    "contexto": "En una clase de ciencias, un estudiante pregunta por que algunas plantas crecen distinto cuando reciben diferente cantidad de luz. La docente quiere aprovechar la pregunta para promover aprendizaje por indagacion sin reducir la situacion a una explicacion magistral.",
+    "enunciado": "¿Que actuacion pedagogica ofrece mejor evidencia de un enfoque constructivista de indagacion?",
+    "opciones": {
+      "A": "Pedir a los estudiantes que formulen posibles explicaciones, definir una forma sencilla de comparar condiciones de luz y discutir los resultados para revisar sus ideas iniciales.",
+      "B": "Resolver la duda con una explicacion completa desde el tablero y cerrar el tema para evitar confusiones durante la practica.",
+      "C": "Permitir que cada grupo improvise libremente cualquier experimento sin acordar que observar ni como comparar resultados.",
+      "D": "Posponer la pregunta porque el contenido formal aparecera en un grado posterior y no conviene anticiparlo."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A convierte la curiosidad inicial en una secuencia de indagacion guiada con hipotesis, observacion y revision de ideas. No transmite la respuesta terminada ni confunde exploracion con improvisacion sin criterio.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Representa una salida transmisiva que cancela la construccion activa del conocimiento.",
+      "C": "Modela el error de confundir indagacion con activismo experimental sin control ni criterio de comparacion.",
+      "D": "Recoge la evasion pedagogica de una pregunta aprovechable para aprender."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "La tarea depende de juicio didactico general y no de una experiencia regional especifica."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Se redujo la teoria sobrante y se focalizo la situacion en una sola decision docente."
+    },
+    "metadata_editorial": {
+      "lote": "L005",
+      "ruta_origen": "content/items/stand-by/Constructivismo, indagación y aprendizaje experimental/PPDC_B03_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "PPDC_B03_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Constructivismo, indagación y aprendizaje experimental/PPDC_B03_I02.json",
+    "motivo": "El item pregunta teoria del tanteo experimental mas que una decision didactica real; la clave depende de un lugar comun teorico y los distractores son obvios.",
+    "lote": "L005"
+  },
+  {
+    "id_item": "MTV_B36_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Contexto, currículo y práctica educativa/MTV_B36_I01.json",
+    "motivo": "El contexto no aporta una decision real; solo conduce a nombrar la contextualizacion como criterio general.",
+    "lote": "L005"
+  },
+  {
+    "id_item": "MTV_B36_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Curriculo contextualizado",
+    "subtema": "Uso disciplinar del entorno en estadistica",
+    "competencia": "Tomar decisiones curriculares que integren informacion del entorno con el desarrollo de competencias disciplinares sin perder rigor.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado distingue una contextualizacion curricular funcional de salidas que reducen el contenido, lo sustituyen o lo vuelven activismo sin foco disciplinar.",
+    "evidencia": "Selecciona la decision de planeacion que usa datos del entorno para desarrollar pensamiento estadistico con comparacion y analisis.",
+    "tarea": "Elegir la mejor decision curricular para trabajar estadistica con datos cercanos a los estudiantes.",
+    "contexto": "Una docente de matematicas quiere trabajar tablas, graficas y porcentajes con estudiantes que se muestran poco interesados en ejercicios desanclados de su vida cotidiana. Para ello considera usar datos del barrio sobre transporte, acceso a servicios y habitos de lectura.",
+    "enunciado": "¿Cual decision refleja mejor una contextualizacion curricular funcional sin sacrificar el aprendizaje disciplinar?",
+    "opciones": {
+      "A": "Usar los datos del barrio para que los estudiantes organicen informacion, comparen frecuencias y argumenten con tablas, graficas y porcentajes.",
+      "B": "Reemplazar el trabajo estadistico por una conversacion abierta sobre problemas sociales del barrio, sin exigir tratamiento de datos.",
+      "C": "Mantener ejercicios abstractos estandarizados porque el contexto local distrae del rigor matematico.",
+      "D": "Presentar los datos del barrio solo como introduccion motivacional y despues volver a ejercicios que no los retomen."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A conserva la tarea disciplinar y usa el contexto como mediacion real para organizar, representar e interpretar datos. No reemplaza la estadistica por opinion ni reduce el contexto a un adorno inicial.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Modela el error de convertir la contextualizacion en activismo sin tarea disciplinar verificable.",
+      "C": "Representa la falsa oposicion entre rigor matematico y pertinencia contextual.",
+      "D": "Recoge el uso decorativo del contexto, sin funcion sostenida en la actividad central."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No exige conocimiento especializado del barrio especifico; evalua la decision pedagogica subyacente."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea se concentro en una sola comparacion curricular y se eliminó el pseudoanalisis por etiqueta."
+    },
+    "metadata_editorial": {
+      "lote": "L005",
+      "ruta_origen": "content/items/stand-by/Contexto, currículo y práctica educativa/MTV_B36_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "MTV_B36_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Contexto, currículo y práctica educativa/MTV_B36_I03.json",
+    "motivo": "El caso termina reduciendose a poner nombre al dialogo de saberes; la tarea cognitiva esta inflada.",
+    "lote": "L005"
+  },
+  {
+    "id_item": "MTV_B36_I04",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Contexto, currículo y práctica educativa/MTV_B36_I04.json",
+    "motivo": "La clave depende del reconocimiento de un principio deseable sobre diversidad linguistica y los distractores se autodestruyen.",
+    "lote": "L005"
+  },
+  {
+    "id_item": "MTV_B36_I05",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Contexto, currículo y práctica educativa/MTV_B36_I05.json",
+    "motivo": "El contexto local-global es decorativo: la respuesta correcta ya viene insinuada como formula conceptual unica.",
+    "lote": "L005"
+  },
+  {
+    "id_item": "MTV_B36_I06",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Contexto, currículo y práctica educativa/MTV_B36_I06.json",
+    "motivo": "Aunque mas aplicado, sigue resolviendose por reconocimiento de la unica evidencia correcta y no por comparacion didactica fina.",
+    "lote": "L005"
+  },
+  {
+    "id_item": "MTV_B36_I07",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Evaluacion en contexto y fairness",
+    "subtema": "Pertinencia cultural y sesgo de atribucion",
+    "competencia": "Juzgar la validez de decisiones evaluativas considerando pertinencia cultural, acceso al lenguaje del instrumento y riesgos de interpretacion sesgada.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado reconoce cuando un bajo resultado puede deberse a una barrera de contexto del instrumento y no a una incapacidad del estudiante.",
+    "evidencia": "Elige la interpretacion que distingue entre desempeno observado y sesgo de la situacion evaluativa.",
+    "tarea": "Seleccionar el mejor juicio pedagógico ante una evaluacion descontextualizada para un grupo rural.",
+    "contexto": "Un docente aplica una prueba de comprension lectora compuesta solo por situaciones urbanas desconocidas para sus estudiantes rurales. Despues concluye que los resultados bajos prueban falta de capacidad del grupo.",
+    "enunciado": "¿Que juicio sobre la evaluacion resulta mas defendible?",
+    "opciones": {
+      "A": "Los resultados pueden estar distorsionados por falta de pertinencia cultural del instrumento y no autorizan concluir incapacidad del grupo.",
+      "B": "Los resultados confirman objetivamente una limitacion cognitiva general, porque una prueba escrita es neutral por definicion.",
+      "C": "La dificultad se resuelve sustituyendo toda evaluacion de lectura por conversaciones orales para evitar sesgos futuros.",
+      "D": "La unica salida tecnica es comparar al grupo con una prueba estandarizada nacional y mantener la misma interpretacion."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A identifica el problema central: el instrumento no es neutral cuando usa codigos culturalmente ajenos al grupo evaluado. Por eso, el resultado no puede interpretarse automaticamente como falta de capacidad.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Representa el sesgo de atribucion que confunde barrera contextual con deficit del estudiante.",
+      "C": "Modela una sobrerreaccion que elimina la evaluacion en vez de mejorar su pertinencia.",
+      "D": "Recoge la falsa idea de que la estandarizacion corrige por si sola la falta de pertinencia cultural."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El item evalua precisamente sensibilidad a fairness y evita atribuir el problema al grupo rural como rasgo fijo."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea quedo focalizada en interpretar la validez del resultado, no en recordar etiquetas sueltas."
+    },
+    "metadata_editorial": {
+      "lote": "L005",
+      "ruta_origen": "content/items/stand-by/Contexto, currículo y práctica educativa/MTV_B36_I07.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "MTV_B36_I08",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Contexto, currículo y práctica educativa/MTV_B36_I08.json",
+    "motivo": "El item no evalua decision institucional sino reconocimiento de la etiqueta 'gestion comunitaria'.",
+    "lote": "L005"
+  },
+  {
+    "id_item": "MTV_B36_I09",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Contexto, currículo y práctica educativa/MTV_B36_I09.json",
+    "motivo": "La clave es moralmente evidente y el escenario no produce discriminacion comportamental real.",
+    "lote": "L005"
+  },
+  {
+    "id_item": "MTV_B36_I10",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Contexto, currículo y práctica educativa/MTV_B36_I10.json",
+    "motivo": "Se resuelve con un lugar comun sobre conocer a los estudiantes y no con analisis de opciones tecnicamente cercanas.",
+    "lote": "L005"
+  },
+  {
+    "id_item": "MTV_B36_I11",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Contexto, currículo y práctica educativa/MTV_B36_I11.json",
+    "motivo": "El item etiqueta un clima de aula deseable pero no obliga a comparar decisiones ni consecuencias reales.",
+    "lote": "L005"
+  },
+  {
+    "id_item": "MTV_B36_I12",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Contexto, currículo y práctica educativa/MTV_B36_I12.json",
+    "motivo": "No tiene contexto funcional y resume una definicion de practica contextualizada en forma directa.",
+    "lote": "L005"
+  },
+  {
+    "id_item": "NFL_B05_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Corresponsabilidad educativa y ausentismo",
+    "subtema": "Deber de garante y seguimiento institucional",
+    "competencia": "Tomar decisiones institucionales iniciales frente a ausentismo reiterado con enfoque de proteccion, permanencia y corresponsabilidad.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado identifica la obligacion institucional vulnerada cuando el ausentismo se trata solo como registro administrativo.",
+    "evidencia": "Distingue entre una comprension formalista del ausentismo y una respuesta que activa seguimiento, cuidado y proteccion del derecho a la educacion.",
+    "tarea": "Seleccionar el mejor juicio sobre la omision institucional frente a un caso de ausentismo prolongado.",
+    "contexto": "Un estudiante acumula varias semanas de inasistencia. El docente registra las fallas, pero no indaga causas, no informa a orientacion y no activa ningun seguimiento institucional.",
+    "enunciado": "¿Que obligacion institucional se incumple principalmente en este caso?",
+    "opciones": {
+      "A": "El deber de seguimiento y corresponsabilidad para proteger el acceso y la permanencia del estudiante en el sistema educativo.",
+      "B": "La obligacion de cerrar el caso con sancion automatica por inasistencia para mantener la disciplina escolar.",
+      "C": "La necesidad de esperar el cierre del periodo antes de actuar para no precipitar interpretaciones sobre la familia.",
+      "D": "La conveniencia de tratar la ausencia como un asunto privado sin intervencion de la institucion."
+    },
+    "clave": "A",
+    "justificacion_clave": "La omision central no es disciplinaria sino de proteccion. Frente a ausentismo prolongado, la institucion debe activar seguimiento y corresponsabilidad para cuidar el derecho a la educacion y detectar posibles riesgos asociados.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Modela una salida punitiva que sustituye el acompanamiento por castigo automatico.",
+      "C": "Recoge la inaccion diferida que agrava el riesgo y posterga la respuesta institucional.",
+      "D": "Representa la falsa idea de que la escuela no tiene deber de garante frente a la inasistencia reiterada."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "La situacion evalua juicio institucional y no presume culpabilidad familiar ni del estudiante."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Se simplifico el soporte normativo explicito para que la clave no dependa de memoria literal del articulado."
+    },
+    "metadata_editorial": {
+      "lote": "L005",
+      "ruta_origen": "content/items/stand-by/Corresponsabilidad educativa, ausentismo y posición de garante/NFL_B05_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "NFL_B05_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Corresponsabilidad educativa, ausentismo y posición de garante/NFL_B05_I02.json",
+    "motivo": "Depende de memoria literal sobre la composicion de la comunidad educativa segun la ley; no evalua aplicacion situada.",
+    "lote": "L005"
+  },
+  {
+    "id_item": "NFL_B05_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Corresponsabilidad educativa y permanencia",
+    "subtema": "Ausentismo como alerta temprana",
+    "competencia": "Elegir respuestas institucionales tempranas ante ausentismo reiterado con enfoque de prevencion, acompanamiento y permanencia escolar.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado identifica la actuacion institucional mas adecuada cuando el ausentismo puede estar asociado a barreras familiares o socioeconomicas.",
+    "evidencia": "Selecciona una respuesta que activa indagacion, contacto con acudientes, apoyos y seguimiento en lugar de castigo diferido o abstencion.",
+    "tarea": "Elegir la mejor actuacion institucional ante una alerta de ausentismo reiterado.",
+    "contexto": "Una estudiante comienza a faltar con frecuencia y la institucion sospecha barreras familiares o economicas. Algunas voces proponen esperar al final del periodo para sancionar las fallas acumuladas.",
+    "enunciado": "¿Que actuacion institucional resulta mas adecuada?",
+    "opciones": {
+      "A": "Tratar el ausentismo como alerta temprana, indagar las causas con la familia y activar apoyos academicos o de orientacion segun los riesgos identificados.",
+      "B": "Esperar el cierre del periodo para sancionar formalmente las inasistencias y definir si la estudiante reprueba por fallas.",
+      "C": "Suspender el cupo de manera preventiva mientras la familia aclara la situacion de asistencia.",
+      "D": "No intervenir, porque la asistencia pertenece solo al ambito domestico y la escuela no debe involucrarse."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A expresa una respuesta temprana y proporcional: reconoce el ausentismo como senal de riesgo, busca comprender sus causas y articula apoyos antes de que el caso derive en exclusion o sancion vacia.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Modela el error de aplazar la intervencion hasta cuando el dano educativo ya se agravo.",
+      "C": "Representa una salida expulsiva y contraria al enfoque de permanencia.",
+      "D": "Recoge la falsa abstencion institucional frente a un derecho que la escuela debe proteger."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "La situacion evita estigmatizar a la familia y centra el juicio en la respuesta institucional."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La remediacion redujo la dependencia de soporte legal textual y dejo una comparacion clara entre cursos de accion."
+    },
+    "metadata_editorial": {
+      "lote": "L005",
+      "ruta_origen": "content/items/stand-by/Corresponsabilidad educativa, ausentismo y posición de garante/NFL_B05_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  }
+]
