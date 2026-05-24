@@ -1,0 +1,80 @@
+{
+  "lote": "L027",
+  "repository": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaAuditoria": "2026-05-24",
+  "decisionGlobalLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "sublotesInternos": [
+    "L027-A",
+    "L027-B"
+  ],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/",
+    "content/items/stand-by/Rol, funciones y límites del orientador escolar/",
+    "content/items/stand-by/Sesgos culturales, lenguaje inclusivo y discriminación cotidiana/"
+  ],
+  "totalItemsDetectados": 12,
+  "totalItemsLeidos": 10,
+  "itemsPendientesPorTopeOperativo": [
+    "content/items/stand-by/Sesgos culturales, lenguaje inclusivo y discriminación cotidiana/IDD_B01_I03.json",
+    "content/items/stand-by/Sesgos culturales, lenguaje inclusivo y discriminación cotidiana/IDD_B01_I04.json"
+  ],
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 3,
+    "LISTO_PARA_PILOTAJE": 5,
+    "DESCARTAR": 2
+  },
+  "conteoClasificacion": {
+    "normatividad": 5,
+    "pedagogia": 1,
+    "competencias_ciudadanas": 1,
+    "gestion": 1,
+    "orientacion_escolar": 2
+  },
+  "conteoRequiereRevisionHumana": 7,
+  "fuentesConsultadas": [
+    "content/restructuring-v1/README.md",
+    "content/restructuring-v1/trazabilidad/reglas-clasificacion.json",
+    "content/restructuring-v1/trazabilidad/blueprint-sugerido.md",
+    "content/restructuring-v1/trazabilidad/protocolo-ejecucion.md",
+    "content/restructuring-v1/trazabilidad/lotes/README-lanzamiento-paralelo.md",
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I01.json",
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I02.json",
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I03.json",
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I04.json",
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I05.json",
+    "content/items/stand-by/Rol, funciones y límites del orientador escolar/CEOL_B03_I01.json",
+    "content/items/stand-by/Rol, funciones y límites del orientador escolar/CEOL_B03_I02.json",
+    "content/items/stand-by/Rol, funciones y límites del orientador escolar/CEOL_B03_I05.json",
+    "content/items/stand-by/Sesgos culturales, lenguaje inclusivo y discriminación cotidiana/IDD_B01_I01.json",
+    "content/items/stand-by/Sesgos culturales, lenguaje inclusivo y discriminación cotidiana/IDD_B01_I02.json"
+  ],
+  "fuentesAusentes": [],
+  "hallazgosPrincipales": [
+    "El bloque de responsabilidad legal escolar aporta mejor valor cuando fuerza una actuacion situada de proteccion, confidencialidad y activacion de ruta; cuando se desplaza a recordar principios o prohibiciones generales, pierde valor y se descarta o baja a pilotaje.",
+    "Los items del orientador mejor resueltos son los que distinguen con claridad acompanamiento, asesoria y activacion de rutas frente a funciones clinicas, disciplinarias o investigativas que no le corresponden.",
+    "En sesgos culturales, el item sobre mediacion docente quedo util para pilotaje, mientras que el item de identificacion del sesgo se descarto por distractores poco plausibles y una resolucion demasiado evidente."
+  ],
+  "riesgosSistemicos": [
+    "Persisten distractores demasiado extremos o juridicamente absurdos en varios items, lo que reduce discriminacion esperada.",
+    "La carpeta del orientador presento localizacion intermitente en la busqueda exacta del conector, aunque los archivos pudieron leerse sin afectar la auditoria.",
+    "Los pendientes de L027-B deben trabajarse luego sin mezclar con los rezagos ya reservados de L017."
+  ],
+  "incidenciasGithubOFuente": [
+    "Las salidas de L027 no existian en GitHub al iniciar y se crearon en este ciclo.",
+    "La carpeta del orientador no aparecio en una primera consulta exacta del conector, pero se resolvio por busqueda alternativa y no hubo perdida de fuente."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L027/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L027/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L027/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L027/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "noModificoContentItemsStandBy": true,
+    "noModificoTrashJson": true,
+    "noModificoBitacorasGlobales": true,
+    "noModificoOtrosLotes": true
+  }
+}
