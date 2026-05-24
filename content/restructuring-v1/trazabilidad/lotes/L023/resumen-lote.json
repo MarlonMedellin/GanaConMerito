@@ -1,0 +1,118 @@
+{
+  "loteProcesado": "L023",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Normatividad y fines de la educación/",
+    "content/items/stand-by/Normatividad, fines de la educación y educación no formal/",
+    "content/items/stand-by/PARD y restablecimiento de derechos/"
+  ],
+  "numeroItemsLeidos": 7,
+  "conteos": {
+    "LISTO_PARA_BANCO": 2,
+    "LISTO_PARA_PILOTAJE": 1,
+    "DESCARTAR": 4,
+    "requiere_revision_humana": 1
+  },
+  "decisionGlobalLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "alertasCriticas": [
+    "Varios items del lote descansan en siglas, definiciones o clasificaciones legales demasiado planas para un uso psicometrico fuerte.",
+    "El mejor desempeno del lote aparece cuando la norma se convierte en decision situada de proteccion o de mediacion institucional."
+  ],
+  "incidenciasGitHubOFuente": [
+    "El archivo content/items/stand-by/Normatividad y fines de la educación/GA02_B08.json aparecio listado en GitHub, pero no fue recuperable por la API de contenidos ni por URL directa durante esta auditoria.",
+    "No existian salidas previas para L023 y se crearon desde cero dentro de las rutas permitidas.",
+    "No fue necesario dividir en sublotes porque el lote quedo en 7 items operativos."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L023/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L023/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L023/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L023/reporte-acumulado-instancia.md"
+  ],
+  "confirmacionesProteccion": {
+    "noSeModificoContentItemsStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true,
+    "noSeModificaronOtrosLotes": true
+  },
+  "evaluacionPorItem": [
+    {
+      "id_item": "GA02_B08",
+      "ruta_origen": "content/items/stand-by/Normatividad y fines de la educación/GA02_B08.json",
+      "area": "normatividad",
+      "perfil": "por_confirmar",
+      "tipo": "basica",
+      "decision": "DESCARTAR",
+      "motivo": "La fuente no fue recuperable por GitHub durante la auditoria; no fue posible verificar clave, contenido ni trazabilidad interna, por lo que no puede dejarse solida.",
+      "ruta_destino_propuesta": "",
+      "requiere_revision_humana": true
+    },
+    {
+      "id_item": "PPDC_B06_I01",
+      "ruta_origen": "content/items/stand-by/Normatividad, fines de la educación y educación no formal/PPDC_B06_I01.json",
+      "area": "pedagogia",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "Convierte los fines de la educacion en decision curricular y no en recuerdo textual, pero la clave sigue destacandose por distractores demasiado visibles.",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/PPDC_B06_I01.json",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "PPDC_B06_I02",
+      "ruta_origen": "content/items/stand-by/Normatividad, fines de la educación y educación no formal/PPDC_B06_I02.json",
+      "area": "normatividad",
+      "perfil": "por_confirmar",
+      "tipo": "basica",
+      "decision": "DESCARTAR",
+      "motivo": "Se resuelve por clasificacion juridica de la oferta formativa y depende en exceso de recuerdo normativo, sin juicio institucional suficiente.",
+      "ruta_destino_propuesta": "",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "DIL_B02_I01",
+      "ruta_origen": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I01.json",
+      "area": "normatividad",
+      "perfil": "por_confirmar",
+      "tipo": "basica",
+      "decision": "DESCARTAR",
+      "motivo": "Pregunta directamente por el significado de la sigla PARD y su definicion general; cae en memoria legal plana.",
+      "ruta_destino_propuesta": "",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "DIL_B02_I02",
+      "ruta_origen": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I02.json",
+      "area": "normatividad",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "decision": "LISTO_PARA_BANCO",
+      "motivo": "Exige una decision situada de activacion de ruta ante indicios de vulneracion, con mejor respuesta clara y util para el banco.",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/DIL_B02_I02.json",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "DIL_B02_I05",
+      "ruta_origen": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I05.json",
+      "area": "normatividad",
+      "perfil": "por_confirmar",
+      "tipo": "basica",
+      "decision": "DESCARTAR",
+      "motivo": "Aunque tiene contexto, termina preguntando por la naturaleza definicional del hogar sustituto y no por una actuacion profesional situada.",
+      "ruta_destino_propuesta": "",
+      "requiere_revision_humana": false
+    },
+    {
+      "id_item": "DIL_B02_I06",
+      "ruta_origen": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I06.json",
+      "area": "normatividad",
+      "perfil": "por_confirmar",
+      "tipo": "funcional",
+      "decision": "LISTO_PARA_BANCO",
+      "motivo": "Evalua limites de competencia escolar y activacion oportuna de autoridad competente en un caso plausible de alto valor para el banco.",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/DIL_B02_I06.json",
+      "requiere_revision_humana": false
+    }
+  ]
+}
