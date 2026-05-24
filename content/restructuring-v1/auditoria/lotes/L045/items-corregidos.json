@@ -1,0 +1,48 @@
+[
+  {
+    "id_item": "CEOL_B02_I07",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Enfoque de derechos, debido proceso y justicia restaurativa",
+    "subtema": "Actuación disciplinaria restaurativa",
+    "competencia": "Aplica criterios de debido proceso y enfoque restaurativo en decisiones escolares de convivencia.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la secuencia institucional más adecuada para proteger derechos, garantizar contradicción y promover reparación ante un conflicto escolar.",
+    "evidencia": "Selecciona la respuesta que integra escucha de las partes, registro de hechos, proporcionalidad de la medida y acciones restaurativas con seguimiento.",
+    "tarea": "Analizar un conflicto escolar y elegir la actuación institucional más consistente con debido proceso y justicia restaurativa.",
+    "contexto": "Tras una agresión verbal entre estudiantes, el comité de convivencia debe definir la actuación institucional.",
+    "enunciado": "Tras una agresión verbal entre estudiantes, el comité de convivencia debe definir la actuación institucional.\n\n¿Qué actuación es técnicamente más adecuada según enfoque de derechos, debido proceso y justicia restaurativa?",
+    "opciones": {
+      "A": "Imponer una sanción inmediata para dar ejemplo, sin escuchar a las partes.",
+      "B": "Escuchar a las partes, documentar los hechos, permitir descargos, definir una medida proporcional y acordar acciones de reparación y seguimiento.",
+      "C": "Suspender a ambos estudiantes por igual para evitar reclamos, sin análisis del caso.",
+      "D": "Cerrar el caso con un llamado verbal porque cualquier registro puede estigmatizar."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opción B es la mejor respuesta porque articula garantías mínimas del debido proceso con una salida restaurativa que busca reparación y seguimiento, no solo castigo o cierre informal.",
+    "distractores_funcion": {
+      "A": "Modela la salida sancionatoria expedita que sacrifica garantías de escucha y contradicción.",
+      "B": "Clave correcta: integra escucha, trazabilidad, proporcionalidad y reparación en una actuación institucional defendible.",
+      "C": "Representa falsa neutralidad al igualar responsabilidades sin análisis ni individualización del caso.",
+      "D": "Recoge el error de evitar trazabilidad institucional bajo una lectura incompleta del no estigma."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No se detectan sesgos de representación; el riesgo principal es psicométrico por baja competencia real de dos distractores."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Contexto breve y tarea única, aunque conviene fortalecer la plausibilidad de las opciones incorrectas antes de banco activo."
+    },
+    "metadata_editorial": {
+      "lote": "L045",
+      "ruta_origen": "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/CEOL_B02_I07.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/coordinador/funcional/CEOL_B02_I07.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  }
+]
