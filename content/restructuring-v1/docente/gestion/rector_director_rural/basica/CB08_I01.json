@@ -1,0 +1,45 @@
+{
+  "id_item": "CB08_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "Gestión institucional",
+  "tema": "Proyecto Educativo Institucional",
+  "subtema": "Referentes para actualización del PEI",
+  "competencia": "Seleccionar referentes normativos, pedagógicos y contextuales para revisión del PEI.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "BAJA",
+  "claim": "El evaluado reconoce que el PEI se sustenta en fines educativos, diagnóstico de contexto, propuesta pedagógica y acuerdos comunitarios.",
+  "evidencia": "Selecciona el conjunto de referentes más pertinente para orientar la actualización institucional.",
+  "tarea": "Elegir la opción que integra fundamentos centrales del PEI y evita reducciones parciales.",
+  "contexto": "Equipo directivo revisa qué bases debe considerar para actualizar el PEI.",
+  "enunciado": "Una institución inicia la actualización de su PEI y debe definir los referentes para sustentar el proceso. ¿Cuál conjunto es más pertinente?",
+  "opciones": {
+    "A": "Preferencias personales de directivos y formatos tomados de otras instituciones.",
+    "B": "Fines de la educación, diagnóstico del contexto, propuesta pedagógica y acuerdos de la comunidad educativa.",
+    "C": "Solo resultados de pruebas externas como criterio único de calidad.",
+    "D": "Únicamente el manual de convivencia como reemplazo de los demás componentes."
+  },
+  "clave": "B",
+  "justificacion_clave": "El Proyecto Educativo Institucional (PEI) debe estructurarse y actualizarse considerando referentes integrales. Según el artículo 73 de la Ley 115 de 1994 y el Decreto 1860 de 1994, estos componentes obligatorios abarcan: la justificación del proyecto en relación con las necesidades del desarrollo social, los fines de la educación (artículo 5 de la Ley 115), el diagnóstico de la realidad comunitaria y local, la propuesta pedagógica institucional y los acuerdos y reglamentos de convivencia construidos con la comunidad educativa.",
+  "distractores_funcion": {
+    "A": "Incorrecto. Diseñar el PEI con base en preferencias personales o copiar formatos de otros colegios vulnera la autonomía institucional y anula la pertinencia de la propuesta frente a las características singulares del contexto local.",
+    "B": "Clave correcta.",
+    "C": "Incorrecto. Reducir los referentes institucionales al resultado cuantitativo de pruebas externas (Saber 11, etc.) es una visión tecnocrática sesgada que desatiende las dimensiones humanas, axiológicas y comunitarias de la educación integral.",
+    "D": "Incorrecto. El manual de convivencia es solo uno de los múltiples componentes de apoyo al PEI (específicamente de la gestión de la convivencia), y no puede sustituir a la propuesta pedagógica, el diagnóstico ni la misión general del establecimiento."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Aplicable a instituciones con distintos contextos; no exige citar artículos específicos."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado breve y opciones homogéneas en estructura."
+  },
+  "metadata_editorial": {
+    "fuente": "content/items/stand-by/Referentes PEI/CB08_I01.json",
+    "autor_revision": "Senior Psychometric-Editorial Architect",
+    "fecha_revision": "2026-05-24",
+    "apto_pilotaje": false,
+    "apto_banco": true
+  }
+}
