@@ -1,0 +1,313 @@
+[
+  {
+    "id_item": "EIP_B02_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Marco legal del preescolar y organización del nivel/EIP_B02_I02.json",
+    "motivo": "El ítem se reduce a recordar los grados del nivel preescolar y cuál es obligatorio. No produce evidencia de decisión pedagógica o institucional.",
+    "lote": "L022"
+  },
+  {
+    "id_item": "EIP_B02_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Marco legal del preescolar y organización del nivel/EIP_B02_I03.json",
+    "motivo": "Aunque presenta un caso, la respuesta depende de recuperar literalmente los principios normativos del nivel, con baja discriminación esperada.",
+    "lote": "L022"
+  },
+  {
+    "id_item": "EIP_B02_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Marco legal del preescolar y organización del nivel",
+    "subtema": "Carácter educativo del preescolar dentro del sistema formal",
+    "competencia": "Defiende el carácter pedagógico y formativo del preescolar frente a visiones asistenciales o escolarizantes.",
+    "nivel_cognitivo": "APLICACIÓN",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue el sentido educativo del preescolar como primer nivel de la educación formal y no como simple cuidado infantil.",
+    "evidencia": "Selecciona la explicación que articula formalidad, desarrollo integral y experiencias acordes con la edad, descartando lecturas asistenciales o de aprestamiento mecánico.",
+    "tarea": "Elegir la mejor respuesta institucional ante una familia que reduce el preescolar a guardería o cuidado básico.",
+    "contexto": "Una familia afirma que el preescolar es solo un lugar para cuidar niños mientras los padres trabajan y que no requiere planeación pedagógica ni currículo.",
+    "enunciado": "¿Cuál explicación institucional es más adecuada frente a esa afirmación?",
+    "opciones": {
+      "A": "Constituye un servicio educativo no formal enfocado en cuidado y recreación, sin vinculación curricular con el sistema educativo.",
+      "B": "Funciona como ciclo remedial de aprestamiento académico para anticipar lectura, escritura y cálculo de primaria.",
+      "C": "Corresponde a un servicio asistencial obligatorio cogestionado con salud, centrado en nutrición y cuidado básico.",
+      "D": "Hace parte de la educación formal y promueve desarrollo integral mediante experiencias pedagógicas, lúdicas, participativas y acordes con la edad."
+    },
+    "clave": "D",
+    "justificacion_clave": "La respuesta correcta reconoce que el preescolar integra la educación formal y tiene propósitos pedagógicos propios de desarrollo integral, sin reducirse al cuidado asistencial ni a la primarización temprana.",
+    "distractores_funcion": {
+      "A": "Saca al preescolar del sistema formal y lo reduce a recreación y cuidado.",
+      "B": "Lo convierte en entrenamiento anticipado para primaria.",
+      "C": "Lo redefine como servicio asistencial y no educativo.",
+      "D": "Clave correcta."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Es pertinente al nivel y no introduce sesgos ajenos al constructo; necesita solo mayor competencia entre opciones."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Caso claro, pero la clave sobresale demasiado frente a distractores muy extremos."
+    },
+    "metadata_editorial": {
+      "lote": "L022",
+      "ruta_origen": "content/items/stand-by/Marco legal del preescolar y organización del nivel/EIP_B02_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/preescolar/funcional/EIP_B02_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "EIP_B02_I05",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "normatividad",
+    "tema": "Marco legal del preescolar y organización del nivel",
+    "subtema": "Promoción y apoyo pedagógico en preescolar",
+    "competencia": "Aplica el enfoque normativo del nivel para decidir sobre promoción y apoyos sin recurrir a reprobación ni castigos pedagógicos.",
+    "nivel_cognitivo": "APLICACIÓN",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Determina la actuación institucional correcta ante dificultades de desarrollo en transición dentro del marco de promoción y apoyo del preescolar.",
+    "evidencia": "Selecciona la respuesta que combina promoción con apoyo pedagógico y descarta reprobación, segregación clínica o supresión de la lúdica.",
+    "tarea": "Resolver un caso de propuesta de reprobación en transición de acuerdo con la organización normativa del nivel.",
+    "contexto": "Una docente propone reprobar a un niño de transición porque no alcanza algunos desempeños de motricidad fina y lenguaje al mismo ritmo que sus compañeros.",
+    "enunciado": "¿Cuál actuación institucional es correcta en este caso?",
+    "opciones": {
+      "A": "Promover al niño al grado siguiente diseñando estrategias pedagógicas de apoyo para fortalecer su desarrollo.",
+      "B": "Hacer repetir transición para asegurar maduración antes del ingreso a básica primaria.",
+      "C": "Remitirlo de inmediato a educación especial extraescolar y condicionar su matrícula al diagnóstico clínico.",
+      "D": "Suspender su participación en actividades lúdicas para concentrarlo en talleres remediales de motricidad y lenguaje."
+    },
+    "clave": "A",
+    "justificacion_clave": "La respuesta correcta mantiene el enfoque del nivel: acompañar el desarrollo con apoyos pedagógicos sin convertir las diferencias de ritmo en causal de reprobación o exclusión.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Traslada al preescolar una lógica de repitencia impropia del nivel.",
+      "C": "Convierte una necesidad pedagógica en exclusión condicionada por diagnóstico externo.",
+      "D": "Suprime la lúdica, que es una vía central del desarrollo infantil."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Protege ritmos de desarrollo y evita respuestas punitivas o estigmatizantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La situación es clara y exige una sola decisión profesional observable."
+    },
+    "metadata_editorial": {
+      "lote": "L022",
+      "ruta_origen": "content/items/stand-by/Marco legal del preescolar y organización del nivel/EIP_B02_I05.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/preescolar/funcional/EIP_B02_I05.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "DIL_B07_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Mecanismos de participación ciudadana: plebiscito, consulta y límites/DIL_B07_I01.json",
+    "motivo": "Es una diferenciación técnico-constitucional de plebiscito y consulta popular sin actuación docente observable ni valor funcional para el banco.",
+    "lote": "L022"
+  },
+  {
+    "id_item": "DIL_B07_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "competencias_ciudadanas",
+    "tema": "Mecanismos de participación ciudadana: plebiscito, consulta y límites",
+    "subtema": "Límites de la democracia directa frente a derechos de la infancia",
+    "competencia": "Analiza límites constitucionales de decisiones mayoritarias cuando afectan derechos fundamentales de niños, niñas y adolescentes.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que la participación democrática tiene límites sustanciales cuando compromete derechos prevalentes de la infancia.",
+    "evidencia": "Selecciona la explicación que articula competencia del mecanismo y prevalencia de derechos fundamentales, descartando lecturas absolutas de mayoría o restricciones inventadas.",
+    "tarea": "Valorar la viabilidad constitucional de usar un mecanismo participativo para restringir movilidad nocturna de menores.",
+    "contexto": "Un alcalde quiere someter a votación una medida de restricción nocturna que afectaría directamente derechos de menores de edad.",
+    "enunciado": "¿Por qué la propuesta no es viable en el diseño constitucional colombiano?",
+    "opciones": {
+      "A": "Porque el mecanismo descrito es de resorte nacional y porque la democracia directa no puede usarse para someter a votación restricciones de derechos fundamentales de menores.",
+      "B": "Porque los alcaldes no tienen ninguna competencia en orden público ni movilidad dentro de su municipio.",
+      "C": "Porque los mecanismos locales solo pueden decidir asuntos tributarios o ambientales.",
+      "D": "Porque toda medida de este tipo requiere un referendo aprobatorio del Congreso."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opción correcta reconoce que no toda decisión mayoritaria es válida cuando se pretende afectar derechos fundamentales de la infancia y, además, diferencia la competencia del mecanismo invocado.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Niega competencias locales reales en materia de orden público.",
+      "C": "Reduce indebidamente el alcance de los mecanismos locales.",
+      "D": "Inventa un requisito normativo inexistente."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Es neutral en lo político, pero su vínculo con la práctica docente sigue siendo indirecto."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La carga lectora es razonable, aunque el ítem requiere mejor anclaje profesional para pasar a banco."
+    },
+    "metadata_editorial": {
+      "lote": "L022",
+      "ruta_origen": "content/items/stand-by/Mecanismos de participación ciudadana: plebiscito, consulta y límites/DIL_B07_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/funcional/DIL_B07_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "DIL_B07_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Mecanismos de participación ciudadana: plebiscito, consulta y límites/DIL_B07_I03.json",
+    "motivo": "Se limita a clasificar mecanismos del artículo 103 de la Constitución; es memoria cívica sin decisión profesional observable.",
+    "lote": "L022"
+  },
+  {
+    "id_item": "DIL_B07_I04",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Mecanismos de participación ciudadana: plebiscito, consulta y límites/DIL_B07_I04.json",
+    "motivo": "Aunque trata derechos de la infancia, sigue siendo una pregunta de principio constitucional con bajo anclaje al rol docente y baja utilidad para el banco.",
+    "lote": "L022"
+  },
+  {
+    "id_item": "DIL_B05_I01",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "normatividad",
+    "tema": "Menor infractor, edad penal y rutas de protección",
+    "subtema": "Activación institucional ante menor de 14 años",
+    "competencia": "Activa rutas de protección y restablecimiento de derechos ante conductas punibles de menores de 14 años en contexto escolar.",
+    "nivel_cognitivo": "APLICACIÓN",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue una actuación institucional protectora y legalmente correcta frente a respuestas punitivas o de judicialización ordinaria.",
+    "evidencia": "Selecciona la activación de ruta con autoridades competentes y descarta retención ilegal, expulsión inmediata y procesamiento penal ordinario.",
+    "tarea": "Determinar la actuación inmediata de la institución educativa ante un estudiante de 12 años sorprendido hurtando equipos escolares.",
+    "contexto": "Un estudiante de 12 años es sorprendido dentro del colegio sustrayendo computadores de la sala de sistemas y reacciona con agresividad verbal al ser confrontado.",
+    "enunciado": "De acuerdo con el marco de infancia y convivencia escolar, ¿cuál debe ser la actuación inmediata de la institución educativa?",
+    "opciones": {
+      "A": "Reportar la situación a autoridades de protección competentes y activar protocolos internos de resolución y restablecimiento, sin judicialización penal ordinaria.",
+      "B": "Retener al estudiante en rectoría hasta que la familia firme un compromiso económico y entregarlo formalmente a la Fiscalía.",
+      "C": "Imponer expulsión definitiva inmediata para proteger el nombre de la institución y omitir reporte externo.",
+      "D": "Entregarlo a la policía ordinaria para traslado a una URI y procesamiento penal por hurto agravado."
+    },
+    "clave": "A",
+    "justificacion_clave": "La respuesta correcta activa la ruta de protección y restablecimiento correspondiente para un menor de 14 años, evitando judicialización penal ordinaria y respuestas expulsivas o ilegales.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Combina retención improcedente con remisión penal ordinaria.",
+      "C": "Propone expulsión y ocultamiento institucional en vez de ruta de protección.",
+      "D": "Desconoce la inimputabilidad del menor y lo traslada al circuito penal ordinario."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El caso es fuerte pero pertinente al constructo; no introduce sesgos irrelevantes distintos de la decisión institucional exigida."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El escenario exige una decisión observable y relevante para la práctica escolar."
+    },
+    "metadata_editorial": {
+      "lote": "L022",
+      "ruta_origen": "content/items/stand-by/Menor infractor, edad penal y rutas de protección/DIL_B05_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/orientador/funcional/DIL_B05_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "DIL_B05_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Menor infractor, edad penal y rutas de protección",
+    "subtema": "Consecuencia jurídica e inimputabilidad antes de los 14 años",
+    "competencia": "Diferencia restablecimiento de derechos y responsabilidad penal adolescente a partir de la edad y la ruta institucional correspondiente.",
+    "nivel_cognitivo": "APLICACIÓN",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la consecuencia jurídica correcta ante una conducta gravísima cometida por un estudiante de 13 años.",
+    "evidencia": "Selecciona la remisión a autoridad de protección y descarta ingreso al SRPA, justicia de adultos o inacción institucional.",
+    "tarea": "Determinar la consecuencia jurídica y el procedimiento para un estudiante de 13 años detenido en flagrancia por lesiones graves.",
+    "contexto": "Un estudiante de 13 años agrede con arma blanca a un compañero fuera de la institución al finalizar la jornada y es detenido en flagrancia por la Policía de Infancia y Adolescencia.",
+    "enunciado": "Desde el marco de infancia en Colombia, ¿cuál es la consecuencia jurídica y el procedimiento correspondiente para este estudiante?",
+    "opciones": {
+      "A": "Puesta a disposición de autoridad administrativa de protección para verificación y restablecimiento de derechos, por ser penalmente inimputable.",
+      "B": "Ingreso preventivo al SRPA mientras Fiscalía formula acusación penal.",
+      "C": "Juzgamiento por el Código Penal de adultos con rebaja automática por ser menor de edad.",
+      "D": "Ausencia de actuación estatal y manejo exclusivo con familia e institución."
+    },
+    "clave": "A",
+    "justificacion_clave": "La respuesta correcta aplica la ruta administrativa de protección correspondiente a menores de 14 años, no el régimen penal adolescente ni la justicia ordinaria.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Judicializa al estudiante en un sistema que no le aplica por edad.",
+      "C": "Traslada indebidamente el caso a la justicia penal de adultos.",
+      "D": "Niega la obligación estatal de intervenir ante un hecho grave."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Es técnicamente claro, pero depende mucho del recuerdo del umbral de edad y por eso requiere una segunda mirada editorial."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea es única, aunque la edad del caso prácticamente anticipa la clave para quien recuerde la regla."
+    },
+    "metadata_editorial": {
+      "lote": "L022",
+      "ruta_origen": "content/items/stand-by/Menor infractor, edad penal y rutas de protección/DIL_B05_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/orientador/funcional/DIL_B05_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "DIL_B05_I03",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "normatividad",
+    "tema": "Menor infractor, edad penal y rutas de protección",
+    "subtema": "Distinción entre menor de 14 años y adolescente sujeto al SRPA",
+    "competencia": "Diferencia rutas institucionales y regímenes jurídicos aplicables según edad en un caso escolar grave.",
+    "nivel_cognitivo": "APLICACIÓN",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue la situación jurídica de un estudiante de 13 años frente a la de uno de 15 años involucrados en un mismo hecho escolar.",
+    "evidencia": "Selecciona la delimitación correcta entre restablecimiento de derechos para el menor de 14 años y SRPA para el adolescente de 15 años.",
+    "tarea": "Determinar la distinción institucional y jurídica fundamental entre dos estudiantes de 13 y 15 años implicados en tráfico de estupefacientes en el colegio.",
+    "contexto": "En una actualización sobre convivencia escolar, se debate cómo abordar el caso de dos estudiantes involucrados en tráfico de estupefacientes dentro del colegio: uno de 13 años y otro de 15 años.",
+    "enunciado": "¿Cuál es la distinción fundamental que debe aclararse en este caso?",
+    "opciones": {
+      "A": "El estudiante de 13 años es penalmente inimputable y solo es sujeto de medidas de restablecimiento de derechos; el de 15 años puede ingresar al SRPA, de carácter pedagógico y restaurativo.",
+      "B": "Ambos estudiantes ingresan al SRPA, pero el de 13 años recibe una medida más leve por su edad.",
+      "C": "El de 13 años debe ser excluido del sistema educativo y el de 15 remitido a la justicia ordinaria de adultos.",
+      "D": "Ninguno de los dos debe pasar por ruta externa y todo debe resolverse solo con mecanismos internos del gobierno escolar."
+    },
+    "clave": "A",
+    "justificacion_clave": "La respuesta correcta distingue dos rutas claramente diferentes: protección administrativa antes de los 14 años y sistema penal adolescente especializado a partir de los 14.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Mete al estudiante de 13 años en un sistema que no le aplica.",
+      "C": "Combina exclusión educativa con justicia penal ordinaria improcedente.",
+      "D": "Reduce un hecho grave a manejo escolar interno sin activar obligaciones legales externas."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El ítem es útil y aplicable, aunque conviene confirmar si el perfil objetivo más preciso es orientador o coordinación por la naturaleza de la decisión institucional."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La comparación de edades estructura bien la tarea y permite una inferencia útil para el banco."
+    },
+    "metadata_editorial": {
+      "lote": "L022",
+      "ruta_origen": "content/items/stand-by/Menor infractor, edad penal y rutas de protección/DIL_B05_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/orientador/funcional/DIL_B05_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  }
+]
