@@ -1,0 +1,50 @@
+{
+  "loteProcesado": "L028",
+  "decisionLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "sublotesInternos": [
+    "L028-A",
+    "L028-B"
+  ],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/",
+    "content/items/stand-by/Trabajo infantil y edad mínima/",
+    "content/items/stand-by/Tipos de currículo/"
+  ],
+  "numeroItemsLeidos": 22,
+  "conteoEstados": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 7,
+    "DESCARTAR": 15
+  },
+  "numeroConRequiereRevisionHumana": 7,
+  "hallazgosPrincipales": [
+    "El bloque de convivencia escolar fue util solo cuando el item exigia lectura situada de la ruta y respuesta proporcional; la mayor parte del bloque quedo en memoria de componentes, niveles o tipologias.",
+    "Los dos items de trabajo infantil sobrevivieron porque obligan a decidir una actuacion de proteccion u orientacion escolar y no solo a recordar edades minimas.",
+    "El bloque de tipos de curriculo estuvo dominado por clasificacion memoristica con contexto decorativo; solo se recuperaron los casos que traducian la idea curricular en una decision pedagogica o institucional observable.",
+    "No se incluyeron los rezagos de L017 solicitados por el usuario."
+  ],
+  "problemasSistemicos": [
+    "Pseudoaplicacion normativa en convivencia escolar y riesgo de clave visible por tecnicismo.",
+    "Clasificacion superficial de tipos de curriculo con bajo poder discriminativo.",
+    "Inflacion del nivel cognitivo en items que en realidad pedian reconocimiento o definicion.",
+    "Uso de contexto prestado que no alteraba la tarea cognitiva real."
+  ],
+  "incidenciasGithubOFuente": [
+    "La lectura del lote exigio inventario por busqueda de rutas y contraste con mapa-carpetas-stand-by.csv.",
+    "MTV_B18_I13 presento inconsistencia interna: la clave declarada no coincide con la justificacion ni con la funcion distractora, por lo que se descarto por riesgo tecnico.",
+    "No hubo incidencias bloqueantes de lectura o escritura en GitHub."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L028/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L028/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L028/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L028/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "modificoContentItemsStandBy": false,
+    "modificoTrashJson": false,
+    "modificoBitacorasGlobales": false,
+    "modificoOtrosLotes": false
+  }
+}
