@@ -1,0 +1,51 @@
+{
+  "lote": "L009",
+  "repo": "ProfeMarlonMDE/GanaConMerito",
+  "rama": "master",
+  "fechaAuditoria": "2026-05-24",
+  "autorRevision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+  "carpetasAsignadas": [
+    "content/items/stand-by/Currículo y Contexto Social/",
+    "content/items/stand-by/Currículo, PEI y evaluación didáctica/",
+    "content/items/stand-by/DUA, PIAR y ajustes razonables/"
+  ],
+  "motivoDivision": "El lote contiene 13 ítems reales y supera el máximo operativo de 10, por lo que se divide en L009-A y L009-B sin escribir fuera de la carpeta permitida de L009.",
+  "sublotes": [
+    {
+      "id": "L009-A",
+      "totalItems": 10,
+      "archivos": [
+        "content/restructuring-v1/trazabilidad/lotes/L009/resumen-lote-L009-A.json",
+        "content/restructuring-v1/trazabilidad/lotes/L009/decisiones-L009-A.csv",
+        "content/restructuring-v1/auditoria/lotes/L009/items-corregidos-L009-A.json"
+      ]
+    },
+    {
+      "id": "L009-B",
+      "totalItems": 3,
+      "archivos": [
+        "content/restructuring-v1/trazabilidad/lotes/L009/resumen-lote-L009-B.json",
+        "content/restructuring-v1/trazabilidad/lotes/L009/decisiones-L009-B.csv",
+        "content/restructuring-v1/auditoria/lotes/L009/items-corregidos-L009-B.json"
+      ]
+    }
+  ],
+  "conteoGlobal": {
+    "totalItemsAsignados": 13,
+    "listoParaBanco": 6,
+    "listoParaPilotaje": 3,
+    "descartar": 4
+  },
+  "hallazgosSistemicos": [
+    "El bloque de inclusión presenta varios ítems con inconsistencia entre clave declarada y justificación técnica, lo que obliga a remediación o descarte.",
+    "Los ítems más débiles son los que se reducen a recordar definiciones o roles normativos de DUA, PIAR y ajustes razonables sin una situación auténtica de decisión pedagógica.",
+    "Los ítems más sólidos del lote traducen el marco pedagógico o normativo a decisiones contextualizadas de currículo, inclusión y evaluación."
+  ],
+  "focoEspecialAuditado": [
+    "inclusión real",
+    "aplicación normativa situada",
+    "fairness",
+    "accesibilidad",
+    "calidad de tarea cognitiva"
+  ]
+}
