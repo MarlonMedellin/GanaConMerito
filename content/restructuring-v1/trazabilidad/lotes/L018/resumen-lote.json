@@ -1,0 +1,47 @@
+{
+  "lote_procesado": "L018",
+  "sublotes_internos": ["L018-A", "L018-B"],
+  "carpetas_procesadas": [
+    "content/items/stand-by/Habilidades blandas y duras/",
+    "content/items/stand-by/Horario escolar/",
+    "content/items/stand-by/Ideas previas, conflicto cognitivo y desarrollo constructivista/"
+  ],
+  "items_leidos": 12,
+  "conteo_decisiones": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 8,
+    "DESCARTAR": 4
+  },
+  "numero_con_requiere_revision_humana": 8,
+  "decision_global_lote": "APROBAR_PARCIALMENTE",
+  "calidad_global_lote": "MEDIA",
+  "alertas_criticas": [
+    "La carpeta de ideas previas mezcla dos items situados recuperables con cuatro items de pseudoanalisis centrados en definiciones o relaciones teoricas sin accion docente observable.",
+    "El lote presenta distractores debiles u obvios en varios items inicialmente marcados como LISTO_PARA_BANCO dentro de stand-by, por lo que se degradan a LISTO_PARA_PILOTAJE despues de remediacion ejecutiva.",
+    "La carpeta de habilidades blandas y duras era taxonomicamente inestable: varios casos no evaluan una etiqueta blanda/dura, sino juicio pedagogico, gestion de aula o interaccion institucional."
+  ],
+  "hallazgos_principales": [
+    "Habilidades blandas y duras si aporta evidencia util cuando el item obliga a decidir una actuacion observable frente a conflicto, evaluacion, trabajo en equipo o atencion a familias.",
+    "Horario escolar sobrevivio porque evalua gestion institucional situada y no memoria normativa plana.",
+    "Ideas previas y conflicto cognitivo solo resultan defendibles cuando se traducen en mediacion pedagogica o secuencia de cambio conceptual; cuando solo piden reconocer conceptos, se descartan."
+  ],
+  "incidencias_github_fuente": [
+    "La resolucion de rutas requirio busqueda por path y contraste con content/restructuring-v1/trazabilidad/mapa-carpetas-stand-by.csv.",
+    "No hubo incidencias bloqueantes de lectura o escritura en GitHub para este lote."
+  ],
+  "archivos_escritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L018/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L018/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L018/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L018/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "content_items_stand_by_no_modificado": true,
+    "trash_json_no_modificado": true,
+    "bitacoras_globales_no_modificadas": true,
+    "rutas_protegidas_no_modificadas": true
+  },
+  "resumen_ejecutivo": "El lote L018 aporta material recuperable, pero no para banco activo. Ocho items quedaron listos para pilotaje tras remediacion ejecutiva y cuatro se descartaron por pseudoanalisis, memoria conceptual o ausencia de accion docente observable.",
+  "fecha_revision": "2026-05-24",
+  "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO"
+}
