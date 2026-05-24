@@ -1,0 +1,105 @@
+{
+  "lote": "L003",
+  "repository": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "processedAt": "2026-05-24",
+  "scope": {
+    "assignedSourceFolders": [
+      "content/items/stand-by/Aula invertida y cambio de rol docente/",
+      "content/items/stand-by/Autonomía escolar, religión, colegios privados y equidad/",
+      "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/"
+    ],
+    "allowedWritePaths": [
+      "content/restructuring-v1/trazabilidad/lotes/L003/",
+      "content/restructuring-v1/auditoria/lotes/L003/"
+    ]
+  },
+  "sourcesConsulted": [
+    "content/restructuring-v1/README.md",
+    "content/restructuring-v1/trazabilidad/reglas-clasificacion.json",
+    "content/restructuring-v1/trazabilidad/blueprint-sugerido.md",
+    "content/restructuring-v1/trazabilidad/protocolo-ejecucion.md",
+    "content/restructuring-v1/trazabilidad/lotes/README-lanzamiento-paralelo.md",
+    "content/restructuring-v1/trazabilidad/mapa-carpetas-stand-by.csv",
+    "content/items/stand-by/Aula invertida y cambio de rol docente/PPDC_B07_I01.json",
+    "content/items/stand-by/Autonomía escolar, religión, colegios privados y equidad/IDD_B16_I01.json",
+    "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I01.json",
+    "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I02.json",
+    "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I03.json",
+    "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I04.json",
+    "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I05.json"
+  ],
+  "sourcesMissing": [],
+  "totals": {
+    "itemsReviewed": 7,
+    "listoParaBanco": 0,
+    "listoParaPilotaje": 5,
+    "descartar": 2,
+    "requierenRevisionHumana": 1
+  },
+  "distribution": {
+    "byArea": {
+      "pedagogia": 2,
+      "normatividad": 3,
+      "descartados_sin_migracion": 2
+    },
+    "byProfile": {
+      "por_confirmar": 3,
+      "rector_director_rural": 2,
+      "descartados_sin_migracion": 2
+    },
+    "byType": {
+      "funcional": 5,
+      "basica_descartada": 2
+    }
+  },
+  "criticalFindings": [
+    "El lote mezcla un núcleo recuperable de juicio pedagógico y gestión institucional con dos ítems normativos de memoria casi textual que no aportan suficiente poder discriminativo al banco.",
+    "La carpeta de autonomía institucional venía sobrerrepresentada como normatividad, pero uno de sus ítems funciona mejor como pedagogía aplicada sobre clima de aula y por eso se reclasifica fuera del eje directivo original.",
+    "No se observan ambigüedades graves de clave en los cinco recuperables, pero ninguno debería pasar a banco activo sin pilotaje porque la mayor parte del lote sigue dependiendo de calibración real de dificultad y competencia de distractores."
+  ],
+  "systemicRisks": [
+    "Tendencia a formular el claim de manera genérica, sin amarrarlo con suficiente precisión al constructo dominante del ítem.",
+    "Presencia de redacción normativa correcta pero demasiado cercana al reconocimiento literal de ley o reglamento en CEOL_B10_I01 y CEOL_B10_I05.",
+    "En algunos ítems del bloque CEOL_B10 la clasificación por área y perfil no coincide plenamente con la tarea real, lo que obliga a reubicar por constructo y no por nombre de carpeta."
+  ],
+  "bankDecision": "APROBAR_PARCIALMENTE",
+  "bankRecommendation": "Conservar cinco ítems en estado LISTO_PARA_PILOTAJE y excluir dos ítems por trivialidad normativa o baja utilidad discriminativa.",
+  "itemDecisions": [
+    {
+      "id_item": "PPDC_B07_I01",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/PPDC_B07_I01.json"
+    },
+    {
+      "id_item": "IDD_B16_I01",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/IDD_B16_I01.json"
+    },
+    {
+      "id_item": "CEOL_B10_I01",
+      "decision": "DESCARTAR",
+      "rutaDestinoPropuesta": ""
+    },
+    {
+      "id_item": "CEOL_B10_I02",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/normatividad/rector_director_rural/funcional/CEOL_B10_I02.json"
+    },
+    {
+      "id_item": "CEOL_B10_I03",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CEOL_B10_I03.json"
+    },
+    {
+      "id_item": "CEOL_B10_I04",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/normatividad/rector_director_rural/funcional/CEOL_B10_I04.json"
+    },
+    {
+      "id_item": "CEOL_B10_I05",
+      "decision": "DESCARTAR",
+      "rutaDestinoPropuesta": ""
+    }
+  ]
+}
