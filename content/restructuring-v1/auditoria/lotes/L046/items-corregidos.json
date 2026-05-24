@@ -1,0 +1,48 @@
+[
+  {
+    "id_item": "IDD_B01_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "Competencias ciudadanas",
+    "tema": "Sesgos culturales, lenguaje inclusivo y discriminación cotidiana",
+    "subtema": "Mediación docente frente a lenguaje estigmatizante",
+    "competencia": "Evalúa respuestas docentes que corrigen lenguaje estigmatizante y reorientan la interacción institucional desde dignidad, participación y enfoque de derechos.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado reconoce una actuación profesional que corrige el uso de expresiones discriminatorias sin reducir la intervención a sanción, silenciamiento o moralización vacía.",
+    "evidencia": "Selecciona la respuesta que nombra el problema, explica su impacto en la dignidad y reorienta la comunicación del equipo hacia un lenguaje centrado en la persona.",
+    "tarea": "Analizar una escena de interacción entre docentes y elegir la mediación más adecuada frente a un término estigmatizante.",
+    "contexto": "En una reunión de docentes, una persona se refiere a varios estudiantes como 'minusválidos'. Otra docente considera necesario intervenir porque ese lenguaje puede afectar la forma en que el equipo comprende la participación y las capacidades de esos estudiantes.",
+    "enunciado": "¿Cuál sería la intervención más adecuada en ese momento?",
+    "opciones": {
+      "A": "Pedir que se evite ese término porque puede generar quejas de las familias, pero continuar la reunión sin profundizar para no incomodar al equipo.",
+      "B": "Señalar que expresiones como esa reducen a los estudiantes a un déficit, proponer lenguaje centrado en la persona y reconducir la conversación hacia apoyos y barreras reales de participación.",
+      "C": "Suspender la reunión y remitir de inmediato el comentario a un proceso disciplinario formal, porque cualquier uso de ese término constituye por sí mismo una falta grave consumada.",
+      "D": "Aceptar el término siempre que no haya intención de ofender, ya que lo importante son las ayudas concretas y no la discusión sobre palabras."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opción B es la más sólida porque corrige el lenguaje de forma profesional y pedagógica, explicita el impacto del término en la dignidad y evita que la conversación siga organizada alrededor del déficit. Además, reconduce la discusión hacia decisiones institucionales observables sobre participación y apoyos.",
+    "distractores_funcion": {
+      "A": "Modela una corrección superficial enfocada en evitar conflicto externo, pero no en comprender por qué el lenguaje importa para la inclusión y el trato institucional.",
+      "B": "Clave correcta. Corrige el lenguaje, explica su efecto y reorienta la conversación hacia barreras y apoyos pertinentes.",
+      "C": "Representa una reacción punitiva desproporcionada que reemplaza la mediación inmediata por sanción automática, sin aprovechar la escena para corrección profesional del equipo.",
+      "D": "Modela el error de separar lenguaje y práctica institucional, como si las palabras no influyeran en expectativas, trato y participación de los estudiantes."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El ítem no exige adhesión ideológica abstracta ni usa la discapacidad como recurso decorativo; centra la decisión en trato digno, comunicación profesional y efecto institucional del lenguaje."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea es única, el contexto es suficiente y el lenguaje se mantiene claro sin tecnicismo jurídico innecesario."
+    },
+    "metadata_editorial": {
+      "lote": "L046",
+      "ruta_origen": "content/items/stand-by/Sesgos culturales, lenguaje inclusivo y discriminación cotidiana/IDD_B01_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/IDD_B01_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  }
+]
