@@ -1,0 +1,58 @@
+{
+  "loteProcesado": "L025",
+  "repo": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaCierre": "2026-05-24",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Praxis pedagógica, didáctica y selección metodológica/",
+    "content/items/stand-by/Propósitos de la educación/",
+    "content/items/stand-by/Prueba psicotécnica y escala Likert/"
+  ],
+  "itemsLeidos": 6,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 1,
+    "LISTO_PARA_PILOTAJE": 3,
+    "DESCARTAR": 2
+  },
+  "requiereRevisionHumana": 4,
+  "hallazgosClave": [
+    "La carpeta de praxis es rescatable solo cuando el ítem se acerca a una selección metodológica con función operativa; cuando se limita a diferenciar definiciones pierde valor de banco.",
+    "La carpeta de propósitos de la educación presenta varios ítems con enmarque institucional útil, pero con claves demasiado obvias y distractores poco competidores.",
+    "La carpeta 'Prueba psicotécnica y escala Likert' no apareció en el árbol real del repositorio, así que no hubo ítems auditables allí."
+  ],
+  "problemasDetectados": {
+    "definicionales_o_excesivamente_conceptuales": [
+      "PPDC_B04_I01",
+      "PPDC_B04_I02"
+    ],
+    "clave_moralmente_o_normativamente_obvia": [
+      "CB14_I01",
+      "CB14_I02",
+      "CB14_I04"
+    ],
+    "mejor_valor_para_banco": [
+      "CB14_I03"
+    ],
+    "carpeta_asignada_no_localizada_en_repo": [
+      "content/items/stand-by/Prueba psicotécnica y escala Likert/"
+    ]
+  },
+  "incidenciasGithubOFuente": [
+    "Los archivos de salida de L025 no existían y devolvieron 404 antes de su creación.",
+    "La carpeta 'Prueba psicotécnica y escala Likert' no aparece en el listado real de content/items/stand-by del repositorio y por tanto no fue posible auditar ítems allí.",
+    "reporte-acumulado-instancia.md no existía en L025 y se creó en este cierre."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L025/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L025/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L025/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L025/reporte-acumulado-instancia.md"
+  ],
+  "confirmaciones": {
+    "content_items_stand_by_no_modificado": true,
+    "trash_json_no_modificado": true,
+    "bitacoras_globales_no_modificadas": true,
+    "otros_lotes_no_modificados": true
+  }
+}
