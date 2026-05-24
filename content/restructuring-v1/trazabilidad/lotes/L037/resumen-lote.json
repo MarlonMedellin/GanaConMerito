@@ -1,0 +1,67 @@
+{
+  "loteProcesado": "L037",
+  "repo": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaCierre": "2026-05-24",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Desarrollo integral en preescolar - cinco dimensiones/",
+    "content/items/stand-by/Marco legal del preescolar y organización del nivel/",
+    "content/items/stand-by/Identidad, autonomía y reconocimiento del cuerpo/"
+  ],
+  "itemsLeidos": 13,
+  "itemsAuditadosEnL037": 0,
+  "itemsOmitidosPorAuditoriaPrevia": 13,
+  "conteoDecisiones": {
+    "OMITIDO_POR_AUDITORIA_PREVIA": 13,
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 0,
+    "DESCARTAR": 0
+  },
+  "requiereRevisionHumana": 0,
+  "hallazgosClave": [
+    "Las tres carpetas asignadas ya tenían auditoría previa suficiente en lotes de preescolar y no fue necesario reprocesar ningún ítem.",
+    "El núcleo de desarrollo integral quedó previamente depurado en L010, mientras el marco legal y la identidad/autonomía ya habían sido resueltos en L022 y L019.",
+    "L037 funciona como lote de consolidación trazable por omisión, no como lote de remediación nueva."
+  ],
+  "problemasDetectados": {
+    "omitidos_por_auditoria_previa": {
+      "L010": [
+        "EIP_B03_I01",
+        "EIP_B03_I02",
+        "EIP_B03_I03",
+        "EIP_B03_I04",
+        "EIP_B03_I05"
+      ],
+      "L022": [
+        "EIP_B02_I02",
+        "EIP_B02_I03",
+        "EIP_B02_I04",
+        "EIP_B02_I05"
+      ],
+      "L019": [
+        "EIP_B04_I01",
+        "EIP_B04_I02",
+        "EIP_B04_I03",
+        "EIP_B04_I04"
+      ]
+    }
+  },
+  "incidenciasGithubOFuente": [
+    "Los archivos de salida de L037 no existían y devolvieron 404 antes de crearse.",
+    "No se identificaron ítems nuevos no auditados en las carpetas asignadas; todo el lote quedó resuelto por cruce con decisiones previas.",
+    "reporte-acumulado-instancia.md no existía en L037 y se creó en este cierre."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L037/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L037/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L037/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L037/reporte-acumulado-instancia.md"
+  ],
+  "confirmaciones": {
+    "content_items_stand_by_no_modificado": true,
+    "trash_json_no_modificado": true,
+    "bitacoras_globales_no_modificadas": true,
+    "otros_lotes_no_modificados": true
+  }
+}
