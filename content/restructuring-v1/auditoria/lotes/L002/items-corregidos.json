@@ -1,0 +1,48 @@
+[
+  {
+    "id_item": "GA02_B01_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Articulación PEI y práctica pedagógica",
+    "subtema": "Coherencia entre enfoque pedagógico institucional y práctica de aula",
+    "competencia": "Evalúa la coherencia entre el enfoque pedagógico declarado en el PEI y las decisiones de planeación, mediación y evaluación formativa del docente.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Identifica la práctica pedagógica que traduce de manera observable el aprendizaje significativo declarado en el PEI en experiencias de aula con sentido para el estudiante.",
+    "evidencia": "Selecciona la alternativa que parte de saberes previos, contextualiza el nuevo aprendizaje y usa evaluación formativa para evidenciar comprensión.",
+    "tarea": "Analizar un caso institucional y elegir la actuación docente más coherente con el enfoque pedagógico del PEI.",
+    "contexto": "El PEI de una institución educativa declara el aprendizaje significativo como enfoque pedagógico. En una revisión de aula, la coordinación académica observa prácticas centradas en explicación magistral, copia de contenidos y evaluación memorística.",
+    "enunciado": "El PEI de una institución educativa declara el aprendizaje significativo como enfoque pedagógico. En una revisión de aula, la coordinación académica observa prácticas centradas en explicación magistral, copia de contenidos y evaluación memorística. ¿Cómo debe evidenciarse de manera coherente ese enfoque en la práctica pedagógica del docente?",
+    "opciones": {
+      "A": "Mediante talleres extensos e iguales para todos los estudiantes con prioridad en cubrir la mayor cantidad posible de contenidos.",
+      "B": "Mediante la explicación completa del tema por parte del docente antes de cualquier intervención del estudiante.",
+      "C": "Mediante actividades que partan de saberes previos, relacionen los nuevos aprendizajes con situaciones del contexto y permitan evidenciar comprensión a través de evaluación formativa.",
+      "D": "Mediante la asignación frecuente de tareas para la casa sin considerar su relación con las experiencias, intereses o necesidades de los estudiantes."
+    },
+    "clave": "C",
+    "justificacion_clave": "La opción C es la única que traduce el enfoque de aprendizaje significativo del PEI a decisiones observables de aula: conexión con saberes previos, contextualización del contenido y evaluación formativa para verificar comprensión y ajustar la mediación pedagógica.",
+    "distractores_funcion": {
+      "A": "Modela la confusión entre cobertura homogénea de contenidos y aprendizaje con sentido.",
+      "B": "Representa un enfoque transmisivo que contradice la participación activa y la construcción de significado.",
+      "C": "Clave correcta.",
+      "D": "Representa la falsa idea de que aumentar tareas equivale a mejorar la articulación pedagógica, sin garantizar comprensión ni pertinencia contextual."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El ítem no exige conocer un PEI particular ni privilegia una disciplina específica; el enfoque institucional necesario está explicitado en el caso."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El caso plantea una sola tarea cognitiva, con opciones paralelas y vocabulario pedagógico frecuente en evaluación docente."
+    },
+    "metadata_editorial": {
+      "lote": "L002",
+      "ruta_origen": "content/items/stand-by/Articulación PEI y práctica pedagógica/GA02_B01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/en_espera/funcional/GA02_B01_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  }
+]
