@@ -1,0 +1,385 @@
+[
+  {
+    "id_item": "DIL_B04_I01",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "normatividad",
+    "tema": "Responsabilidad legal escolar",
+    "subtema": "Activacion de ruta ante riesgo",
+    "competencia": "Aplicar deberes institucionales de proteccion frente a indicios de vulneracion de derechos de estudiantes.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue la actuacion protectora, reservada y documentada de conductas de omision, exposicion o extralimitacion funcional.",
+    "evidencia": "Selecciona la respuesta que prioriza registro de hechos observables, activacion de la ruta institucional y reporte a las autoridades competentes.",
+    "tarea": "Tomar una decision profesional ante senales reiteradas de malnutricion, posible explotacion y abandono psicoafectivo en un estudiante.",
+    "contexto": "Una docente observa en varias semanas que un estudiante llega con signos de malnutricion, cansancio persistente y comentarios que sugieren trabajo economico no apropiado para su edad. Tambien nota retraimiento afectivo y ausencia de acompanamiento familiar.",
+    "enunciado": "?Cual actuacion del educador es la mas adecuada y coherente con su deber de proteccion?",
+    "opciones": {
+      "A": "Esperar a reunir pruebas concluyentes y una declaracion escrita del estudiante antes de reportar para evitar errores institucionales.",
+      "B": "Registrar los hechos observables, reportar por la ruta institucional y activar de inmediato a las autoridades de proteccion competentes manteniendo reserva del caso.",
+      "C": "Interrogar extensamente al estudiante para identificar responsables y dejar lista una reconstruccion completa de los hechos antes de informar.",
+      "D": "Exponer la situacion ante las familias del curso para buscar apoyo economico y presionar una solucion rapida."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opcion correcta se ajusta al deber de garante de la institucion: actuar con reserva, documentar hechos observables y activar la ruta competente sin retrasar la proteccion ni revictimizar al estudiante.",
+    "distractores_funcion": {
+      "A": "Retrasa indebidamente la proteccion al exigir prueba concluyente antes del reporte.",
+      "B": "Clave correcta.",
+      "C": "Confunde apoyo escolar con investigacion de tipo judicial o forense.",
+      "D": "Vulnera la confidencialidad y expone publicamente un caso sensible."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "La decision se centra en proteccion institucional y evita detalles estigmatizantes innecesarios."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Tiene una sola tarea principal y vocabulario institucional frecuente."
+    },
+    "metadata_editorial": {
+      "lote": "L027",
+      "ruta_origen": "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/DIL_B04_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "DIL_B04_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I02.json",
+    "motivo": "El item pregunta por el principio constitucional o legal que fundamenta la prohibicion de tratos degradantes y se resuelve por memoria normativa, no por actuacion escolar situada.",
+    "lote": "L027"
+  },
+  {
+    "id_item": "DIL_B04_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Responsabilidad legal escolar",
+    "subtema": "Limites de la investigacion escolar",
+    "competencia": "Activar rutas externas de proteccion sin sustituir funciones judiciales o investigativas ante situaciones tipo III.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que la escuela no debe investigar penalmente ni someter a careos o interrogatorios exhaustivos a estudiantes cuando hay presuncion de delito.",
+    "evidencia": "Escoge la respuesta que protege al estudiante, evita revictimizacion y activa la ruta externa competente.",
+    "tarea": "Diferenciar la atencion escolar inicial de la investigacion penal o administrativa ante una situacion tipo III.",
+    "contexto": "En la institucion surge la presuncion de un delito sexual o de comercializacion de sustancias que podria involucrar a estudiantes. Algunos adultos proponen entrevistar a profundidad a los menores y reconstruir internamente los hechos antes de reportar.",
+    "enunciado": "?Por que la institucion debe abstenerse de realizar esa investigacion interna antes de reportar?",
+    "opciones": {
+      "A": "Porque carece de facultades judiciales y debe priorizar proteccion inmediata, reserva y reporte oportuno para evitar revictimizacion y alteracion de pruebas.",
+      "B": "Porque el manual de convivencia tiene prevalencia sobre la legislacion penal y toda situacion debe agotarse primero dentro del colegio.",
+      "C": "Porque solo el rector puede realizar careos institucionales antes de remitir cualquier situacion a otras autoridades.",
+      "D": "Porque la ruta externa solo procede si la familia autoriza formalmente el reporte ante las autoridades."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion correcta diferencia con nitidez la funcion protectora de la escuela frente a la investigacion judicial y evita practicas que podrian revictimizar o retrasar la respuesta estatal.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Invierte la jerarquia normativa y legitima una demora improcedente.",
+      "C": "Propone una facultad institucional inexistente y riesgosa para el estudiante.",
+      "D": "Condiciona indebidamente un deber de reporte que no depende de autorizacion familiar."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El caso se formula desde proteccion de derechos y no desde estigmatizacion del estudiante."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La escena es comprensible aunque conviene pilotear su discriminacion."
+    },
+    "metadata_editorial": {
+      "lote": "L027",
+      "ruta_origen": "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/orientador/funcional/DIL_B04_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "DIL_B04_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Responsabilidad legal escolar",
+    "subtema": "Confidencialidad en casos sensibles",
+    "competencia": "Manejar informacion sensible de estudiantes con reserva institucional y activacion de ruta de proteccion.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue entre confidencialidad protectora y omision de reporte cuando existe posible vulneracion de derechos.",
+    "evidencia": "Selecciona la actuacion que registra hechos objetivos, mantiene reserva y canaliza el caso por las instancias competentes.",
+    "tarea": "Elegir una respuesta etica y juridicamente adecuada ante un posible caso de abandono y maltrato.",
+    "contexto": "Un docente conoce un posible caso de abandono y maltrato. Considera mencionar el caso en clase para que el grupo reflexione y tambien piensa convocar a otras familias para buscar soluciones practicas.",
+    "enunciado": "?Cual es la actuacion correcta que debe seguir?",
+    "opciones": {
+      "A": "Presentar el caso en el aula sin decir el nombre para que el grupo aprenda sobre las consecuencias del maltrato.",
+      "B": "Convocar a las familias del curso para buscar una salida solidaria antes de reportar por la ruta institucional.",
+      "C": "Mantener estricta reserva, registrar los hechos objetivos y canalizar el caso por directivos u orientacion para activar la ruta de proteccion.",
+      "D": "Esperar autorizacion del estudiante o de su representante antes de registrar o reportar la situacion."
+    },
+    "clave": "C",
+    "justificacion_clave": "La opcion correcta protege la intimidad del estudiante y cumple el deber institucional de reporte, evitando tanto la exposicion publica como la omision por espera de autorizaciones improcedentes.",
+    "distractores_funcion": {
+      "A": "Expone un caso sensible y puede facilitar identificacion del estudiante.",
+      "B": "Involucra a terceros sin competencia y vulnera confidencialidad.",
+      "C": "Clave correcta.",
+      "D": "Confunde reserva con omision de un deber de proteccion y reporte."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Protege privacidad y dignidad sin introducir carga cultural irrelevante."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Tiene una sola demanda cognitiva y opciones claramente contrastadas."
+    },
+    "metadata_editorial": {
+      "lote": "L027",
+      "ruta_origen": "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/DIL_B04_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "DIL_B04_I05",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Responsabilidad legal escolar",
+    "subtema": "Disciplina formativa y dignidad",
+    "competencia": "Aplicar medidas de convivencia no degradantes, restaurativas y respetuosas del debido proceso.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que la correccion pedagogica no autoriza humillacion, sancion academica impropia ni suspension sin debido proceso.",
+    "evidencia": "Escoge la alternativa que promueve comprension del impacto, reparacion y seguimiento formativo.",
+    "tarea": "Comparar respuestas disciplinarias y seleccionar la no degradante frente a una falta de convivencia.",
+    "contexto": "Un estudiante comete una falta de convivencia. El docente quiere corregir la conducta sin humillar, agredir ni convertir la nota academica en castigo.",
+    "enunciado": "?Que accion es mas coherente con un enfoque formativo, restaurativo y respetuoso de los derechos del estudiante?",
+    "opciones": {
+      "A": "Promover un dialogo formativo sobre el impacto de la accion, acordar compromisos de reparacion y hacer seguimiento pedagico.",
+      "B": "Asignar tareas extras o bajar la nota academica para desincentivar la conducta.",
+      "C": "Exigir una disculpa publica frente a toda la comunidad como condicion para permanecer en la institucion.",
+      "D": "Suspenderlo temporalmente de inmediato sin indagacion previa para asegurar el orden."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion correcta protege dignidad, aprendizaje reflexivo y reparacion del dano, mientras evita castigos humillantes, sanciones academicas improcedentes y vulneraciones al debido proceso.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Usa la evaluacion academica como castigo disciplinario.",
+      "C": "Impone humillacion publica incompatible con dignidad y enfoque restaurativo.",
+      "D": "Omite debido proceso y audicion del estudiante."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "La situacion es transversal y se centra en decisiones institucionales, no en rasgos del estudiante."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea es unica y las opciones son comparables, aunque conviene pilotear su discriminacion."
+    },
+    "metadata_editorial": {
+      "lote": "L027",
+      "ruta_origen": "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I05.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/comportamental/DIL_B04_I05.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CEOL_B03_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Rol del orientador escolar",
+    "subtema": "Corresponsabilidad en proyectos transversales",
+    "competencia": "Asesorar la integracion curricular de proyectos transversales sin reemplazar la responsabilidad pedagogica del resto del equipo docente.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue entre la asesoria tecnica del orientador y la falsa idea de descargar en ese rol toda la ejecucion de un proyecto institucional como el PESCC.",
+    "evidencia": "Selecciona la alternativa que mantiene la transversalidad curricular y la corresponsabilidad docente institucional.",
+    "tarea": "Evaluar una propuesta de gestion institucional para implementar el proyecto de educacion sexual y ciudadania.",
+    "contexto": "El equipo directivo quiere actualizar el PESCC. Algunos coordinadores proponen que toda la responsabilidad del proyecto recaiga en el orientador mediante charlas masivas mensuales para no alterar las clases de las areas fundamentales.",
+    "enunciado": "?Por que esa propuesta resulta inapropiada?",
+    "opciones": {
+      "A": "Porque el proyecto debe integrarse transversalmente en los planes de estudio por todos los docentes, mientras el orientador asesora metodologicamente su articulacion.",
+      "B": "Porque el orientador no tiene ninguna formacion valida para intervenir en temas de sexualidad o afectividad escolar.",
+      "C": "Porque estos asuntos pertenecen solo al ambito familiar y no deben aparecer en el curriculo escolar.",
+      "D": "Porque el proyecto debe quedar exclusivamente bajo ciencias naturales al final del ano para evitar controversias."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion correcta mantiene la corresponsabilidad institucional y delimita el papel del orientador como asesor y articulador, no como sustituto de la accion pedagogica del conjunto docente.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Desconoce indebidamente la capacidad de asesoria del orientador.",
+      "C": "Externaliza fuera de la escuela una responsabilidad formativa institucional.",
+      "D": "Reduce un proyecto transversal a una sola asignatura y a un enfoque restringido."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Evalua diseno institucional y no una postura moral individual."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El acronimo institucional esta contextualizado por el caso, pero conviene pilotear por la transparencia de la clave."
+    },
+    "metadata_editorial": {
+      "lote": "L027",
+      "ruta_origen": "content/items/stand-by/Rol, funciones y límites del orientador escolar/CEOL_B03_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/orientador/funcional/CEOL_B03_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CEOL_B03_I02",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "normatividad",
+    "tema": "Rol del orientador escolar",
+    "subtema": "Limites frente a vulneracion grave de derechos",
+    "competencia": "Aplicar protocolos de proteccion y activar rutas externas evitando que el orientador asuma tareas investigativas impropias.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que el orientador no debe reunir pruebas judiciales ni confrontar a la familia antes de activar la ruta de proteccion ante agresiones o abuso.",
+    "evidencia": "Escoge la alternativa que prioriza proteccion inmediata, reserva y activacion oportuna de la ruta externa.",
+    "tarea": "Determinar la actuacion institucional correcta cuando un estudiante revela una posible agresion o abuso en el hogar.",
+    "contexto": "Un estudiante cuenta al orientador una posible situacion de agresion o abuso fisico en su hogar. El orientador piensa entrevistar por separado a la familia y grabar al estudiante para confirmar los hechos antes de reportar.",
+    "enunciado": "?Por que esa actuacion es incorrecta?",
+    "opciones": {
+      "A": "Porque excede sus funciones al asumir tareas de investigacion y puede revictimizar al estudiante en lugar de activar de inmediato la ruta de proteccion.",
+      "B": "Porque primero deberia someter la decision a votacion del consejo academico de la institucion.",
+      "C": "Porque la ruta escolar solo es obligatoria cuando existan evidencias fisicas ya certificadas por personal medico.",
+      "D": "Porque el orientador solo puede intervenir en asuntos estrictamente academicos y disciplinarios internos."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion correcta delimita con precision el rol del orientador frente a vulneraciones graves: contener, proteger y activar la ruta, no investigar ni producir prueba judicial."
+,
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Burocratiza impropiamente una respuesta que debe ser inmediata.",
+      "C": "Condiciona de forma indebida el deber de reporte a prueba fisica concluyente.",
+      "D": "Niega responsabilidades institucionales de proteccion que si hacen parte del rol."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Se centra en proteccion de derechos y no en sancion moral del estudiante o su familia."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Caso focalizado y lenguaje institucional claro."
+    },
+    "metadata_editorial": {
+      "lote": "L027",
+      "ruta_origen": "content/items/stand-by/Rol, funciones y límites del orientador escolar/CEOL_B03_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/orientador/funcional/CEOL_B03_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "CEOL_B03_I05",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "gestion",
+    "tema": "Rol del orientador escolar",
+    "subtema": "Limites frente a intervencion clinica",
+    "competencia": "Diferenciar el acompanamiento formativo del orientador respecto del diagnostico y tratamiento clinico en salud mental.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue claramente entre apoyo pedagógico e intervencion psicoterapeutica cuando aparecen riesgos psicosociales o autolesiones.",
+    "evidencia": "Elige la alternativa que orienta derivacion a salud y evita que la escuela asuma tratamiento clinico impropio.",
+    "tarea": "Resolver un caso donde se requiere delimitar funciones entre orientacion escolar y red de salud.",
+    "contexto": "Un docente deriva a orientacion a un estudiante con aislamiento persistente, cambios bruscos de comportamiento y autolesiones leves. El orientador decide programar sesiones semanales de psicoterapia individual para tratar directamente el trastorno que supone de fondo.",
+    "enunciado": "?Como debe valorarse esta decision?",
+    "opciones": {
+      "A": "Como una extralimitacion funcional, porque la orientacion escolar acompana, previene y deriva, pero no realiza diagnostico ni tratamiento psicoterapeutico clinico.",
+      "B": "Como la aplicacion correcta de sus competencias, ya que la institucion debe asumir directamente el tratamiento de salud mental de sus estudiantes.",
+      "C": "Como una omision, porque lo procedente era convocar primero a una junta disciplinaria para sancionar la autolesion como falta grave.",
+      "D": "Como una intervencion incompleta, porque las sesiones clinicas debieron hacerse con presencia del docente de aula para definir calificaciones."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion correcta delimita con claridad el alcance pedagogico del orientador y remite el componente clinico a la red de salud, evitando confundir acompanamiento escolar con psicoterapia.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Convierte indebidamente la orientacion escolar en un servicio clinico institucional.",
+      "C": "Traduce un riesgo en salud mental a una respuesta punitiva y disciplinaria.",
+      "D": "Vulnera reserva profesional e involucra al docente en una funcion que no le corresponde."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Caso tecnico y objetivo, sin sesgos sobre el estudiante ni sobre salud mental."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Las opciones son distinguibles y la tarea esta bien focalizada."
+    },
+    "metadata_editorial": {
+      "lote": "L027",
+      "ruta_origen": "content/items/stand-by/Rol, funciones y límites del orientador escolar/CEOL_B03_I05.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/orientador/funcional/CEOL_B03_I05.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "IDD_B01_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Sesgos culturales, lenguaje inclusivo y discriminación cotidiana/IDD_B01_I01.json",
+    "motivo": "Aunque el caso es reconocible, la clave se vuelve moralmente obvia y los distractores no funcionan como errores pedagogicos plausibles sino como caricaturas patologizantes o disciplinarias.",
+    "lote": "L027"
+  },
+  {
+    "id_item": "IDD_B01_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "competencias_ciudadanas",
+    "tema": "Sesgos culturales y lenguaje inclusivo",
+    "subtema": "Mediacion docente frente a expresion discriminatoria naturalizada",
+    "competencia": "Intervenir pedagogicamente ante expresiones cotidianas que invisibilizan la diversidad humana sin recurrir a sancion humillante ni omision.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue una mediacion docente reflexiva y formativa de respuestas omisivas, punitivas o autoritarias frente a un sesgo cotidiano.",
+    "evidencia": "Selecciona la actuacion que promueve dialogo, observacion de la diversidad y reconstruccion del significado de la expresion usada por el grupo.",
+    "tarea": "Resolver un caso practico de aula en el que varios estudiantes usan la expresion color piel como si existiera un unico tono valido.",
+    "contexto": "Durante una actividad de dibujo, un estudiante pide el color piel y varios companeros toman automaticamente un lapiz claro como si representara a todas las personas. El docente decide intervenir para evitar que esa asociacion quede normalizada.",
+    "enunciado": "?Cual actuacion docente es mas adecuada?",
+    "opciones": {
+      "A": "Preguntar al grupo si todas las pieles son iguales, observar distintos tonos, ofrecer varios colores y conversar sobre respeto y diversidad humana.",
+      "B": "Ignorar la expresion para no desviar la atencion del objetivo tecnico de la sesion de dibujo.",
+      "C": "Amonestar en publico al estudiante y recordar de inmediato las sanciones del manual de convivencia por expresiones discriminatorias.",
+      "D": "Prohibir el uso de lapices de tonos claros para forzar otras representaciones de piel en el aula."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion correcta trabaja el sesgo como oportunidad de aprendizaje, no como falta moral a castigar ni como asunto a omitir. Invita a observar, contrastar y reconstruir el lenguaje usado por el grupo.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Valida por omision el sesgo que ya se manifesto en el aula.",
+      "C": "Convierte un error cultural aprendido en una respuesta punitiva que cierra el aprendizaje.",
+      "D": "Reacciona de forma autoritaria y no corrige el nucleo del problema de reconocimiento."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Promueve reconocimiento de la diversidad sin culpabilizar ni estigmatizar a un estudiante concreto."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La escena es cotidiana y el lenguaje es comprensible para poblacion docente general."
+    },
+    "metadata_editorial": {
+      "lote": "L027",
+      "ruta_origen": "content/items/stand-by/Sesgos culturales, lenguaje inclusivo y discriminación cotidiana/IDD_B01_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/IDD_B01_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  }
+]
