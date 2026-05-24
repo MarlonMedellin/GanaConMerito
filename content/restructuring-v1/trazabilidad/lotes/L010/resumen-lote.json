@@ -1,0 +1,127 @@
+{
+  "lote": "L010",
+  "repository": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "processedAt": "2026-05-24",
+  "subLotesInternos": [
+    {
+      "batchId": "L010-A",
+      "itemCount": 10,
+      "itemIds": [
+        "CB10_I01",
+        "NFL_B03_I01",
+        "NFL_B03_I02",
+        "NFL_B03_I03",
+        "NFL_B03_I04",
+        "NFL_B03_I05",
+        "EIP_B03_I01",
+        "EIP_B03_I02",
+        "EIP_B03_I03",
+        "EIP_B03_I04"
+      ]
+    },
+    {
+      "batchId": "L010-B",
+      "itemCount": 1,
+      "itemIds": [
+        "EIP_B03_I05"
+      ]
+    }
+  ],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Debido proceso/",
+    "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/",
+    "content/items/stand-by/Desarrollo integral en preescolar - cinco dimensiones/"
+  ],
+  "itemsLeidos": 11,
+  "totals": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 10,
+    "DESCARTAR": 1,
+    "requiere_revision_humana": 1
+  },
+  "criticalFindings": [
+    "El bloque de debido proceso se sostuvo mejor de lo esperado: en general evalúa juicio situado sobre defensa, congruencia, tipicidad y proporcionalidad, más que memoria plana de artículos.",
+    "El principal riesgo del lote estaba en preescolar: un ítem sí reducía el constructo a recuerdo literal de la lista de aspectos del artículo 15, por lo que se descartó.",
+    "Los demás ítems de preescolar resultaron recuperables porque trasladan las dimensiones del desarrollo integral a decisiones pedagógicas concretas de aula y sí permiten inferir criterio profesional básico."
+  ],
+  "systemicProblems": [
+    "Varios originales declaran `LISTO_PARA_BANCO` sin evidencia de pilotaje suficiente; el estado se recalibra a `LISTO_PARA_PILOTAJE` para proteger la gobernanza del banco.",
+    "En el bloque NFL_B03 el claim y la evidencia venían formulados de manera genérica y legalista; se mantuvieron solo como ítems de pilotaje y no de banco activo.",
+    "La taxonomía del lote mezcla convivencia escolar, normatividad y pedagogía preescolar; se corrigió por tarea real y perfil cuando fue defendible."
+  ],
+  "bankDecision": "APROBAR_PARCIALMENTE",
+  "overallLotQuality": "MEDIA",
+  "incidenciasGitHubOFuente": [
+    "No existían previamente los archivos de salida de L010; se crearon dentro de las rutas permitidas.",
+    "No se detectaron faltantes de fuente en los once ítems revisados."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L010/reporte-procesos-anteriores.md",
+    "content/restructuring-v1/trazabilidad/lotes/L010/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L010/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L010/items-corregidos.json"
+  ],
+  "confirmacionesSeguridad": {
+    "noSeModificoStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true
+  },
+  "itemDecisions": [
+    {
+      "id_item": "CB10_I01",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/CB10_I01.json"
+    },
+    {
+      "id_item": "NFL_B03_I01",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/normatividad/coordinador/funcional/NFL_B03_I01.json"
+    },
+    {
+      "id_item": "NFL_B03_I02",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/normatividad/coordinador/funcional/NFL_B03_I02.json"
+    },
+    {
+      "id_item": "NFL_B03_I03",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/normatividad/coordinador/funcional/NFL_B03_I03.json"
+    },
+    {
+      "id_item": "NFL_B03_I04",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/normatividad/coordinador/funcional/NFL_B03_I04.json"
+    },
+    {
+      "id_item": "NFL_B03_I05",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/normatividad/coordinador/funcional/NFL_B03_I05.json"
+    },
+    {
+      "id_item": "EIP_B03_I01",
+      "decision": "DESCARTAR",
+      "rutaDestinoPropuesta": ""
+    },
+    {
+      "id_item": "EIP_B03_I02",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EIP_B03_I02.json"
+    },
+    {
+      "id_item": "EIP_B03_I03",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EIP_B03_I03.json"
+    },
+    {
+      "id_item": "EIP_B03_I04",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EIP_B03_I04.json"
+    },
+    {
+      "id_item": "EIP_B03_I05",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "rutaDestinoPropuesta": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EIP_B03_I05.json"
+    }
+  ]
+}
