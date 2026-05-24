@@ -1,0 +1,65 @@
+{
+  "loteProcesado": "L042",
+  "repo": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaCierre": "2026-05-24",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Participación infantil, agencia y Convención sobre los Derechos del Niño/",
+    "content/items/stand-by/Menor infractor, edad penal y rutas de protección/",
+    "content/items/stand-by/PARD y restablecimiento de derechos/"
+  ],
+  "itemsLeidos": 11,
+  "itemsAuditadosEnL042": 0,
+  "itemsOmitidosPorAuditoriaPrevia": 11,
+  "conteoDecisiones": {
+    "OMITIDO_POR_AUDITORIA_PREVIA": 11,
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 0,
+    "DESCARTAR": 0
+  },
+  "requiereRevisionHumana": 0,
+  "hallazgosClave": [
+    "Las tres carpetas asignadas ya tenían auditoría previa suficiente y no fue necesario reprocesar ningún ítem en L042.",
+    "Participación infantil ya había sido depurada en L024, mientras rutas de protección y PARD quedaron resueltas en L022 y L023.",
+    "L042 funciona como lote de consolidación por omisión trazada, no como lote de remediación nueva."
+  ],
+  "problemasDetectados": {
+    "omitidos_por_auditoria_previa": {
+      "L024": [
+        "DIL_B06_I01",
+        "DIL_B06_I02",
+        "DIL_B06_I03",
+        "DIL_B06_I04"
+      ],
+      "L022": [
+        "DIL_B05_I01",
+        "DIL_B05_I02",
+        "DIL_B05_I03"
+      ],
+      "L023": [
+        "DIL_B02_I01",
+        "DIL_B02_I02",
+        "DIL_B02_I05",
+        "DIL_B02_I06"
+      ]
+    }
+  },
+  "incidenciasGithubOFuente": [
+    "Los archivos de salida de L042 no existían y devolvieron 404 antes de crearse.",
+    "No se identificaron ítems nuevos no auditados en las carpetas asignadas; todo el lote quedó resuelto por cruce con decisiones previas.",
+    "reporte-acumulado-instancia.md no existía en L042 y se creó en este cierre."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L042/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L042/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L042/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L042/reporte-acumulado-instancia.md"
+  ],
+  "confirmaciones": {
+    "content_items_stand_by_no_modificado": true,
+    "trash_json_no_modificado": true,
+    "bitacoras_globales_no_modificadas": true,
+    "otros_lotes_no_modificados": true
+  }
+}
