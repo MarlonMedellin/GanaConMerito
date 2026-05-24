@@ -75,10 +75,9 @@
   - `CEOL_B08_I02`
   - `CEOL_B08_I03`
   - `CEOL_B08_I05`
+  - `IDD_B11_I02`
   - `NFL_B04_I01`
   - `NFL_B04_I04`
-  - `IDD_B11_I02`
-  - `IDD_B11_I04`
 - Incidencias encontradas:
   - La carpeta de conflicto cognitivo requirio rastreo adicional por busqueda tematica del conector antes de resolver las rutas reales del lote.
   - No existian salidas previas del lote `L014`; se creo el cierre desde cero dentro de las rutas permitidas.
