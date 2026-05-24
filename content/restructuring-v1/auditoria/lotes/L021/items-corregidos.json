@@ -1,0 +1,426 @@
+[
+  {
+    "id_item": "MTV_B31_I07",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "gestion",
+    "tema": "Asignacion academica",
+    "subtema": "Idoneidad docente y necesidades del servicio",
+    "competencia": "Aplica criterios de idoneidad profesional y necesidades del servicio para asignar academicamente a un docente.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "La institucion debe armonizar perfil profesional, especialidad y necesidades del servicio al asignar areas o asignaturas.",
+    "evidencia": "Selecciona el criterio institucional que justifica revisar una asignacion academica desalineada con la formacion del docente.",
+    "tarea": "Elegir el criterio prioritario para responder la solicitud de revision de una asignacion academica impropia.",
+    "contexto": "Un docente de ciencias sociales recibe por escrito una asignacion academica que incluye fisica y quimica, areas en las que no posee formacion profesional ni experiencia previa.",
+    "enunciado": "Al responder la solicitud del docente, la institucion debe priorizar:",
+    "opciones": {
+      "A": "La relacion entre el perfil del docente, su area de especialidad, las necesidades del servicio y los criterios de idoneidad definidos institucional y normativamente.",
+      "B": "La antiguedad en el establecimiento, asignando las areas sobrantes a quienes llevan menos tiempo en la institucion.",
+      "C": "La afinidad personal de los estudiantes con el docente, independientemente de su especialidad.",
+      "D": "La simple disponibilidad de horas en el horario general, asumiendo que cualquier docente puede impartir cualquier area."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A es la unica que convierte la norma en criterio tecnico de asignacion y protege la calidad educativa. Las demas respuestas usan criterios informales, afectivos o meramente logísticos.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Representa un criterio informal de reparto por antiguedad.",
+      "C": "Representa un criterio afectivo sin sustento tecnico ni legal.",
+      "D": "Representa la subordinacion de la idoneidad a la conveniencia horaria."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No penaliza perfiles ni niveles especificos; evalua criterio profesional generalizable."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Una sola decision institucional y opciones claramente distinguibles."
+    },
+    "metadata_editorial": {
+      "lote": "L021",
+      "ruta_origen": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I07.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/por_confirmar/funcional/MTV_B31_I07.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "MTV_B31_I08",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Deber de cuidado en jornada escolar",
+    "subtema": "Descanso pedagogico",
+    "competencia": "Aplica el deber de cuidado y la posicion de garante durante tiempos escolares no lectivos.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "La institucion no suspende su responsabilidad de cuidado durante el recreo o descanso pedagogico.",
+    "evidencia": "Selecciona la interpretacion que mantiene acompanamiento y turnos institucionales durante el descanso escolar.",
+    "tarea": "Elegir la interpretacion mas adecuada sobre la responsabilidad docente durante el descanso pedagogico.",
+    "contexto": "Durante el recreo, algunos docentes sostienen que no tienen obligacion de acompanamiento porque no estan dictando clase directa.",
+    "enunciado": "Teniendo en cuenta que los estudiantes siguen bajo la organizacion de la institucion, la interpretacion adecuada es:",
+    "opciones": {
+      "A": "El descanso hace parte de la jornada escolar y la institucion mantiene deberes de cuidado, por lo que deben cumplirse los turnos de acompanamiento definidos.",
+      "B": "El descanso suspende temporalmente la posicion de garante y traslada la responsabilidad a las familias aunque no esten presentes.",
+      "C": "El deber de cuidado existe solo en las horas exactas de clase directa frente a grupo.",
+      "D": "El descanso es tiempo libre no regulable y el rector no puede organizar acompanamiento docente."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A es la unica que traduce el marco de cuidado a una actuacion institucional concreta durante el descanso. Las otras opciones suspenden, reducen o niegan indebidamente la responsabilidad escolar.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Confunde pausa pedagogica con cese del deber de cuidado.",
+      "C": "Reduce indebidamente el deber de cuidado a la clase directa.",
+      "D": "Niega la competencia institucional para organizar tiempos de acompanamiento."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Caso general de servicio educativo sin sesgos de representacion."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La regla se aplica a una situacion concreta y no exige recordar articulos exactos."
+    },
+    "metadata_editorial": {
+      "lote": "L021",
+      "ruta_origen": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I08.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/MTV_B31_I08.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "MTV_B31_I09",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Responsabilidad escolar",
+    "subtema": "Supervision del grupo",
+    "competencia": "Actua conforme al deber de custodia evitando dejar grupos sin supervision adulta.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El docente reconoce que una ausencia urgente no autoriza dejar al grupo sin supervision y debe activar apoyo institucional.",
+    "evidencia": "Selecciona el principio que fundamenta la decision de no abandonar el curso sin relevo.",
+    "tarea": "Elegir el fundamento mas adecuado para la actuacion docente ante una salida urgente del aula.",
+    "contexto": "Durante una sesion de clase, un docente recibe una notificacion urgente de caracter administrativo y pide apoyo a coordinacion para que el grupo no quede solo.",
+    "enunciado": "¿Que principio de responsabilidad fundamenta esa accion?",
+    "opciones": {
+      "A": "El deber de custodia y cuidado derivado de la posicion de garante frente a menores de edad.",
+      "B": "La asignacion academica extraordinaria para justificar administrativamente la salida del docente.",
+      "C": "El debido proceso disciplinario ante posibles faltas de convivencia del curso.",
+      "D": "La autonomia docente para delegar informalmente la supervision en estudiantes con liderazgo."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A es la unica que explica la razon de fondo de no dejar al grupo sin supervision. Las otras opciones remiten a tramites ajenos, principios no pertinentes o delegaciones impropias.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Confunde cuidado de menores con un tramite de carga horaria.",
+      "C": "Mueve la situacion a un marco disciplinario que no explica la decision inicial.",
+      "D": "Normaliza una delegacion impropia de la custodia en estudiantes."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Escenario reconocible y sin barreras irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Contexto breve y una sola tarea de juicio."
+    },
+    "metadata_editorial": {
+      "lote": "L021",
+      "ruta_origen": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I09.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/MTV_B31_I09.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "MTV_B31_I11",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "gestion",
+    "tema": "Organizacion institucional de tiempos",
+    "subtema": "Finalidad pedagogica y administrativa",
+    "competencia": "Reconoce la organizacion del tiempo escolar como herramienta de gestion para sostener el servicio educativo y las metas curriculares.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "La direccion organiza horarios, turnos y espacios no para controlar la catedra, sino para hacer viable el proyecto educativo y el servicio.",
+    "evidencia": "Selecciona la finalidad institucional mas adecuada de la organizacion de tiempos escolares.",
+    "tarea": "Elegir la finalidad legal y pedagogica mejor sustentada de una organizacion institucional de horarios y actividades.",
+    "contexto": "La direccion de una institucion organiza horarios de clase, turnos de descanso pedagogico, reuniones de comisiones y espacios semanales de atencion a familias.",
+    "enunciado": "¿Que finalidad legal y pedagogica tiene esa organizacion de los tiempos escolares?",
+    "opciones": {
+      "A": "Estructurar jornada escolar y laboral para garantizar el servicio educativo, los tiempos de aprendizaje y la coordinacion institucional.",
+      "B": "Restringir la libertad de catedra obligando a seguir una secuencia didactica rigida fijada desde rectoria.",
+      "C": "Reemplazar el plan de estudios por una distribucion meramente administrativa de permanencias.",
+      "D": "Concentrar las decisiones pedagogicas en directivos y reducir la autonomia profesional docente."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A es la unica que reconoce la organizacion del tiempo como funcion de gestion al servicio del proyecto educativo. Las otras convierten esa organizacion en control pedagogico, sustitucion curricular o concentracion indebida del poder.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Confunde coordinacion institucional con imposicion didactica total.",
+      "C": "Plantea una sustitucion curricular que no se sigue de la organizacion horaria.",
+      "D": "Moraliza la funcion directiva y exagera su alcance."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No depende de conocimiento disciplinar especifico y se situa en gestion escolar general."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Texto legible y foco claro de interpretacion institucional."
+    },
+    "metadata_editorial": {
+      "lote": "L021",
+      "ruta_origen": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I11.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/por_confirmar/funcional/MTV_B31_I11.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "PPDC_B02_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Manejo del error",
+    "subtema": "Clima afectivo y mediacion docente",
+    "competencia": "Convierte el error conceptual en oportunidad de aprendizaje mediante exploracion del razonamiento y contraste con evidencias.",
+    "nivel_cognitivo": "ANALISIS_APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El docente no corrige de forma punitiva ni omisiva, sino que usa la confusion como insumo de retroalimentacion.",
+    "evidencia": "Selecciona la mediacion que explora lo que entienden los estudiantes y amplia su representacion conceptual.",
+    "tarea": "Elegir la intervencion mas adecuada ante una confusion entre sistema solar y universo.",
+    "contexto": "En ciencias, varios estudiantes confunden sistema solar con universo en una actividad de representacion grafica.",
+    "enunciado": "¿Que intervencion favorece mejor el aprendizaje y un clima afectivo adecuado?",
+    "opciones": {
+      "A": "Senalar la equivocacion y ordenar transcribir las definiciones correctas del libro.",
+      "B": "Omitir la confusion para proteger la autoestima y no retrasar el cronograma.",
+      "C": "Explorar lo que entienden por universo, contrastar ideas con evidencias y guiar la ampliacion de sus representaciones.",
+      "D": "Asignar una nota desfavorable para incentivarlos a corregir autonomamente en casa."
+    },
+    "clave": "C",
+    "justificacion_clave": "La opcion C es la unica que detiene la falsa disyuntiva entre rigor y cuidado, y usa el error como base de reconstruccion conceptual con mediacion docente.",
+    "distractores_funcion": {
+      "A": "Modela correccion transmisiva sin indagar el error.",
+      "B": "Modela omision pedagogica por evitacion afectiva.",
+      "C": "Clave correcta.",
+      "D": "Modela uso punitivo de la evaluacion."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Escenario comun de aula y lenguaje pedagogico controlado."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Contexto breve, tarea focalizada y opciones paralelas."
+    },
+    "metadata_editorial": {
+      "lote": "L021",
+      "ruta_origen": "content/items/stand-by/Manejo del error y clima afectivo/PPDC_B02_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/PPDC_B02_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "PPDC_B02_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Clima afectivo",
+    "subtema": "Manejo del error en interaccion grupal",
+    "competencia": "Protege la seguridad psicologica del aula y usa la respuesta errada como oportunidad de reconstruccion del razonamiento.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El docente detiene la burla, restaura el respeto y explora el razonamiento del estudiante antes de corregirlo.",
+    "evidencia": "Selecciona la actuacion que combina cuidado del clima afectivo con mediacion cognitiva.",
+    "tarea": "Determinar la intervencion docente adecuada ante una burla grupal por una respuesta incorrecta.",
+    "contexto": "Durante una actividad de aula, un estudiante da una respuesta equivocada y varios companeros se rien. El docente debe intervenir.",
+    "enunciado": "¿Cual actuacion docente es mas adecuada?",
+    "opciones": {
+      "A": "Reprochar a quienes se burlan y continuar la clase sin volver sobre la respuesta equivocada.",
+      "B": "Detener la burla, pedir al estudiante que explique su razonamiento, identificar el punto de confusion y orientar preguntas o ejemplos para reconstruir la idea.",
+      "C": "Omitir el error para evitar exponer al estudiante y dar la palabra a alguien con mejor desempeno.",
+      "D": "Calificar negativamente la participacion para fomentar preparacion rigurosa."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opcion B es la unica que actua simultaneamente sobre el dano relacional y sobre el valor pedagogico del error. Las otras cortan una de las dos dimensiones o ambas.",
+    "distractores_funcion": {
+      "A": "Corrige la conducta social, pero desaprovecha el error como insumo cognitivo.",
+      "B": "Clave correcta.",
+      "C": "Silencia el error y refuerza la idea de que equivocarse debe ocultarse.",
+      "D": "Convierte la participacion en riesgo punitivo."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Protege la dignidad del estudiante y evita normalizar la humillacion."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Opciones comparables y tarea unica de juicio profesional."
+    },
+    "metadata_editorial": {
+      "lote": "L021",
+      "ruta_origen": "content/items/stand-by/Manejo del error y clima afectivo/PPDC_B02_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/comportamental/PPDC_B02_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B02_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Inclusion educativa",
+    "subtema": "Cambio de paradigma institucional",
+    "competencia": "Distingue inclusion efectiva de integracion pasiva y reconoce la necesidad de transformar practicas, apoyos y evaluaciones.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA_ALTA",
+    "claim": "La inclusion no se reduce a matricular estudiantes con discapacidad; exige eliminar barreras del entorno comun.",
+    "evidencia": "Selecciona la formulacion que transforma aula, apoyos y evaluacion para asegurar participacion, aprendizaje y permanencia.",
+    "tarea": "Elegir el cambio fundamental que debe asumir una institucion que solo admite, pero no incluye.",
+    "contexto": "Una institucion afirma que ya es inclusiva porque matricula estudiantes con discapacidad, aunque mantiene las mismas clases, evaluaciones, materiales y ritmos para todos, sin apoyos ni ajustes.",
+    "enunciado": "¿Cual es el cambio fundamental que debe asumir la institucion?",
+    "opciones": {
+      "A": "Disenar trayectorias paralelas y segregadas para no alterar la dinamica general del aula regular.",
+      "B": "Eximir de manera amplia los contenidos complejos para evitar desercion y proteger la permanencia.",
+      "C": "Transformar practicas de aula, apoyos, evaluacion y ambiente para eliminar barreras y asegurar participacion y aprendizaje en un entorno comun.",
+      "D": "Condicionar el ingreso a que la familia adapte previamente el aula y gestione apoyos externos."
+    },
+    "clave": "C",
+    "justificacion_clave": "La opcion C es la unica que expresa inclusion como transformacion del entorno comun. Las otras respuestas segregan, rebajan expectativas o trasladan la carga a la familia.",
+    "distractores_funcion": {
+      "A": "Representa segregacion dentro del mismo plantel.",
+      "B": "Representa devaluacion academica en nombre de la inclusion.",
+      "C": "Clave correcta.",
+      "D": "Representa barrera de acceso y traslado indebido de responsabilidad."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El item responsabiliza al entorno y no al estudiante por las barreras existentes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Lenguaje claro y foco conceptual situado."
+    },
+    "metadata_editorial": {
+      "lote": "L021",
+      "ruta_origen": "content/items/stand-by/Marco constitucional, legal y jurisprudencial de inclusión/IDD_B02_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B02_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B02_I05",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Acceso y permanencia sin discriminacion",
+    "subtema": "Matricula y ajustes razonables",
+    "competencia": "Aplica el marco de educacion inclusiva a decisiones institucionales de ingreso y permanencia.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA_ALTA",
+    "claim": "Negar, postergar o condicionar la matricula por discapacidad constituye una barrera contraria al marco inclusivo.",
+    "evidencia": "Selecciona la actuacion que garantiza acceso inmediato y activa la ruta de valoracion pedagogica y ajustes razonables.",
+    "tarea": "Elegir la respuesta institucional mas coherente ante la solicitud de cupo de un estudiante con discapacidad.",
+    "contexto": "Una familia solicita cupo para un estudiante con discapacidad y la institucion considera negarlo porque no se siente preparada para atenderlo.",
+    "enunciado": "¿Cual actuacion es coherente con el marco de educacion inclusiva y no discriminacion?",
+    "opciones": {
+      "A": "Matricular sin condicionamientos, realizar valoracion pedagogica para identificar barreras y construir colaborativamente el plan de ajustes razonables.",
+      "B": "Postergar el ingreso hasta contar con personal especializado y recursos adicionales ya instalados.",
+      "C": "Sugerir traslado a una institucion especializada para garantizar una atencion supuestamente mas adecuada.",
+      "D": "Condicionar la matricula a que la familia contrate apoyo externo permanente."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A es la unica que garantiza el derecho de acceso sin barreras administrativas y activa una respuesta pedagogica institucional. Las otras respuestas dilatan, segregan o trasladan costos y responsabilidades.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Modela dilacion administrativa incompatible con acceso oportuno.",
+      "C": "Modela exclusion encubierta bajo lenguaje de mejor atencion.",
+      "D": "Modela condicionamiento economico de la matricula."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Sostiene enfoque de derechos y evita culpar a la familia o al estudiante por la falta de preparacion institucional."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Plantea una sola decision institucional con alternativas distinguibles."
+    },
+    "metadata_editorial": {
+      "lote": "L021",
+      "ruta_origen": "content/items/stand-by/Marco constitucional, legal y jurisprudencial de inclusión/IDD_B02_I05.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/IDD_B02_I05.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "MTV_B31_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I01.json",
+    "motivo": "Pregunta definicion literal de jornada escolar. El contexto no agrega decision profesional ni mejora la discriminacion.",
+    "lote": "L021"
+  },
+  {
+    "id_item": "MTV_B31_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I02.json",
+    "motivo": "La tarea real es recordar que la jornada laboral incluye asignacion academica y actividades complementarias. Pseudoaplicacion normativa.",
+    "lote": "L021"
+  },
+  {
+    "id_item": "MTV_B31_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I03.json",
+    "motivo": "Clasificacion conceptual sobre asignacion academica con distractores previsibles y sin accion profesional observable.",
+    "lote": "L021"
+  },
+  {
+    "id_item": "MTV_B31_I04",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I04.json",
+    "motivo": "Pregunta obligacion general de actividades complementarias. La dificultad proviene del reconocimiento normativo, no del constructo evaluado.",
+    "lote": "L021"
+  },
+  {
+    "id_item": "MTV_B31_I05",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I05.json",
+    "motivo": "Comparacion declarativa entre conceptos de tiempo escolar con distractores extremos y baja capacidad discriminativa.",
+    "lote": "L021"
+  },
+  {
+    "id_item": "MTV_B31_I06",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I06.json",
+    "motivo": "Se limita a clasificar actividades curriculares complementarias. No exige juicio profesional mas alla de la etiqueta normativa.",
+    "lote": "L021"
+  },
+  {
+    "id_item": "MTV_B31_I10",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I10.json",
+    "motivo": "Aunque usa voz docente, la clave sigue dependiendo de recordar que la asignacion academica no agota la jornada laboral.",
+    "lote": "L021"
+  },
+  {
+    "id_item": "MTV_B31_I12",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/MTV_B31_I12.json",
+    "motivo": "Sintesis de tres definiciones legales con distractores caricaturescos. No aporta valor nuevo al banco.",
+    "lote": "L021"
+  }
+]
