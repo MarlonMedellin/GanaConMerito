@@ -1,0 +1,25 @@
+{
+  "lote": "L009-B",
+  "loteMadre": "L009",
+  "fechaAuditoria": "2026-05-24",
+  "autorRevision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+  "totalItems": 3,
+  "conteo": {
+    "listoParaBanco": 2,
+    "listoParaPilotaje": 1,
+    "descartar": 0,
+    "requiereRevisionHumana": 0
+  },
+  "decisionGlobal": "APROBAR",
+  "areaDominante": "pedagogia",
+  "perfilDominante": "por_confirmar",
+  "tipoDominante": "funcional",
+  "hallazgos": [
+    "Los tres ítems del sublote B logran conectar inclusión con decisiones de aula más auténticas que los ítems conceptuales del sublote A.",
+    "IDD_B04_I05 y IDD_B04_I07 son los más fuertes porque convierten la normativa en decisiones sobre barreras, apoyos y participación real.",
+    "IDD_B04_I06 es defendible, pero conviene pilotearlo porque todavía se apoya en una formulación relativamente doctrinal del DUA."
+  ],
+  "riesgosAbiertos": [
+    "En IDD_B04_I06 la dificultad puede depender parcialmente de familiaridad con el lenguaje del DUA y no solo de juicio didáctico."
+  ]
+}
