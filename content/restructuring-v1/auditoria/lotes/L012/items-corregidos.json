@@ -1,0 +1,186 @@
+[
+  {
+    "id_item": "IDD_B12_I01",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Didáctica de áreas, resolución de problemas y material concreto",
+    "subtema": "Resolución de problemas contextualizada",
+    "competencia": "Selecciona estrategias didácticas contextualizadas para promover resolución significativa de problemas matemáticos.",
+    "nivel_cognitivo": "APLICACIÓN",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El docente reconoce estrategias de modelación y contextualización frente a prácticas mecánicas.",
+    "evidencia": "Selecciona acciones de aula centradas en resolución significativa de problemas.",
+    "tarea": "Elegir la intervención didáctica más pertinente ante una enseñanza algorítmica mecánica.",
+    "contexto": "Clase de matemáticas basada en repetición procedimental sin transferencia contextual.",
+    "enunciado": "¿Cuál acción didáctica favorece mejor la resolución significativa de problemas matemáticos?",
+    "opciones": {
+      "A": "Diseñar situaciones problema contextualizadas que requieran modelación y justificación.",
+      "B": "Agregar problemas verbales al final de ejercicios mecánicos.",
+      "C": "Aumentar la cantidad de algoritmos explicados antes del taller.",
+      "D": "Usar material manipulativo para repetir los mismos algoritmos."
+    },
+    "clave": "A",
+    "justificacion_clave": "Promueve transferencia, modelación y uso funcional de procedimientos.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Contextualización superficial.",
+      "C": "Memorización acumulativa sin comprensión.",
+      "D": "Material concreto usado de forma mecánica."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Sin sesgos culturales o de género."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Opciones equilibradas."
+    },
+    "metadata_editorial": {
+      "lote": "L012",
+      "ruta_origen": "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/secundaria_media/funcional/IDD_B12_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "IDD_B12_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Didáctica de áreas, resolución de problemas y material concreto",
+    "subtema": "Uso pedagógico del material concreto",
+    "competencia": "Evalúa el uso mediado del material concreto dentro de secuencias didácticas.",
+    "nivel_cognitivo": "APLICACIÓN",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El docente reconoce la necesidad de mediación para que el material concreto produzca aprendizaje conceptual.",
+    "evidencia": "Distingue entre uso recreativo y mediación pedagógica estructurada.",
+    "tarea": "Elegir el criterio que valida el uso pedagógico real del material concreto.",
+    "contexto": "Discusión docente sobre fracaso de una actividad manipulativa.",
+    "enunciado": "¿Cuándo el material concreto cumple una función didáctica auténtica?",
+    "opciones": {
+      "A": "Cuando se integra en una secuencia guiada que lleva de lo concreto a lo abstracto.",
+      "B": "Cuando el estudiante descubre todo autónomamente sin mediación.",
+      "C": "Cuando se usa como premio recreativo.",
+      "D": "Cuando basta memorizar visualmente el modelo físico."
+    },
+    "clave": "A",
+    "justificacion_clave": "La mediación docente estructura el tránsito conceptual.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Constructivismo ingenuo.",
+      "C": "Uso periférico del recurso.",
+      "D": "Reducción perceptiva del aprendizaje."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Contexto docente estándar."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Requiere pilotear discriminación fina entre A y B."
+    },
+    "metadata_editorial": {
+      "lote": "L012",
+      "ruta_origen": "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/basica_primaria/funcional/IDD_B12_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "GA02_B03_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Didáctica, diversidad y planeación de aula",
+    "subtema": "PIAR y co-enseñanza",
+    "competencia": "Articula trabajo colaborativo para diseñar ajustes razonables.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El docente reconoce la corresponsabilidad en el diseño del PIAR.",
+    "evidencia": "Selecciona trabajo interdisciplinario y participación familiar.",
+    "tarea": "Determinar la ruta metodológica adecuada para construir un PIAR.",
+    "contexto": "Diseño institucional de apoyos para estudiante con TEA.",
+    "enunciado": "¿Cuál es la ruta metodológica correcta para construir un PIAR?",
+    "opciones": {
+      "A": "Delegar totalmente el PIAR al docente de apoyo.",
+      "B": "Construirlo colaborativamente entre docentes, familia y apoyos.",
+      "C": "Solicitar traslado a educación especial.",
+      "D": "Diseñarlo unilateralmente con información genérica."
+    },
+    "clave": "B",
+    "justificacion_clave": "El PIAR requiere articulación interdisciplinaria y corresponsabilidad.",
+    "distractores_funcion": {
+      "A": "Desresponsabiliza al docente de aula.",
+      "B": "Clave correcta.",
+      "C": "Segregación escolar.",
+      "D": "Improvisación desarticulada."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Promueve inclusión educativa."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Conviene revisión normativa adicional sobre roles específicos."
+    },
+    "metadata_editorial": {
+      "lote": "L012",
+      "ruta_origen": "content/items/stand-by/Didáctica, diversidad y planeación de aula/GA02_B03_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/orientador/funcional/GA02_B03_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B18_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Dignidad humana y derechos de infancia",
+    "subtema": "Castigo físico y enfoque restaurativo",
+    "competencia": "Aplica rutas restaurativas frente a situaciones de castigo físico.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El docente reconoce el deber de intervención ante castigo físico.",
+    "evidencia": "Selecciona una respuesta institucional proporcional y pedagógica.",
+    "tarea": "Elegir la actuación más adecuada ante agresión física observada.",
+    "contexto": "Padre agrede físicamente a estudiante dentro de la institución.",
+    "enunciado": "¿Cuál actuación institucional es más adecuada según enfoque restaurativo y protección integral?",
+    "opciones": {
+      "A": "No intervenir porque es asunto familiar.",
+      "B": "Intervenir, detener la agresión y orientar hacia apoyo institucional.",
+      "C": "Respaldar el castigo físico como método correctivo.",
+      "D": "Solicitar captura policial inmediata omitiendo mediación inicial."
+    },
+    "clave": "B",
+    "justificacion_clave": "Integra protección del menor y orientación restaurativa proporcional.",
+    "distractores_funcion": {
+      "A": "Omisión de deber garante.",
+      "B": "Clave correcta.",
+      "C": "Normalización de violencia.",
+      "D": "Escalada punitiva extrema."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Alineado con derechos de infancia."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Distractor D requiere pilotaje por baja plausibilidad."
+    },
+    "metadata_editorial": {
+      "lote": "L012",
+      "ruta_origen": "content/items/stand-by/Dignidad humana, equidad y columna vertebral del Código de Infancia/IDD_B18_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/orientador/funcional/IDD_B18_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  }
+]
