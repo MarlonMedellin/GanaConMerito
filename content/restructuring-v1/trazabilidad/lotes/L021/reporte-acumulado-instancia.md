@@ -88,9 +88,9 @@ Este reporte consolida los lotes auditados por esta misma instancia dentro de es
   - `content/items/stand-by/Marco constitucional, legal y jurisprudencial de inclusión/`
 - Items leidos: 16
 - LISTO_PARA_BANCO: 0
-- LISTO_PARA_PILOTAJE: 7
-- DESCARTAR: 9
-- requiere_revision_humana: 7
+- LISTO_PARA_PILOTAJE: 8
+- DESCARTAR: 8
+- requiere_revision_humana: 8
 - Incidencias GitHub o de fuente:
   - La carpeta de jornada concentro pseudoaplicacion normativa: multiples items usaban contexto escolar solo para preguntar definiciones o equivalencias legales.
   - No hubo incidencias bloqueantes de lectura o escritura en GitHub.
