@@ -1,0 +1,78 @@
+{
+  "lote": "L007",
+  "repositorio": "ProfeMarlonMDE/GanaConMerito",
+  "fecha_revision": "2026-05-24",
+  "carpetas_asignadas": [
+    "content/items/stand-by/Criterios, instrumentos y tipos de evaluacion/",
+    "content/items/stand-by/Cultura escolar, identidad institucional y PEI/",
+    "content/items/stand-by/Curriculo en espiral, Bruner y material concreto/"
+  ],
+  "totales": {
+    "items_identificados": 8,
+    "items_auditados_contenido": 7,
+    "incidencias_fuente": 1,
+    "listo_para_banco": 0,
+    "listo_para_pilotaje": 2,
+    "descartar": 6
+  },
+  "decision_global": "APROBAR_PARCIALMENTE",
+  "calidad_global": "BAJA",
+  "criterio_especial_aplicado": [
+    "deteccion de pseudoanalisis",
+    "deteccion de distractores debiles",
+    "deteccion de baja discriminacion potencial",
+    "deteccion de contexto decorativo",
+    "descarte automatico por memoria literal, caricatura de distractores, dificultad artificial o analisis inflado"
+  ],
+  "alertas_criticas": [
+    "Mas del 20 % del lote se resuelve por recuerdo conceptual o eliminacion, no por analisis autentico.",
+    "La mayoria de los distractores son demasiado obvios, extremos o caricaturescos y reducen la discriminacion esperable.",
+    "Predomina dificultad artificial por terminologia pedagogica o normativa, no por tarea cognitiva defendible."
+  ],
+  "hallazgos_sistemicos": [
+    "Los items de evaluacion confunden aplicacion con memoria de etiquetas tecnicas como rubrica, heteroevaluacion o estandar.",
+    "En cultura escolar y PEI hay escenarios con apariencia institucional, pero la clave sigue siendo reconocible sin usar el contexto.",
+    "El mejor potencial de rescate aparece cuando el item obliga a escoger una decision de gestion o de planeacion, no una definicion."
+  ],
+  "clasificacion_resumen": [
+    {
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/basica/",
+      "cantidad": 4
+    },
+    {
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/por_confirmar/basica/",
+      "cantidad": 2
+    },
+    {
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/por_confirmar/funcional/",
+      "cantidad": 1
+    },
+    {
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/",
+      "cantidad": 1
+    }
+  ],
+  "items_rescatados": [
+    {
+      "id_item": "NFL_B02_I03",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "Se pudo reconvertir desde pseudoanalisis hacia juicio institucional verificable sobre coherencia PEI-practicas."
+    },
+    {
+      "id_item": "IDD_B08_I01",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "Se pudo reconvertir desde recuerdo teorico hacia decision de planeacion curricular con progresion cognitiva observable."
+    }
+  ],
+  "incidencias_fuente": [
+    {
+      "id_item": "EFCC_B02_I04",
+      "ruta_origen": "content/items/stand-by/Criterios, instrumentos y tipos de evaluacion/EFCC_B02_I04.json",
+      "detalle": "La ruta no resolvio en la rama master al momento de la auditoria; no fue posible hacer remediacion defendible sobre una fuente no disponible."
+    }
+  ],
+  "pendientes": [
+    "Confirmar perfil destino de los dos items rescatados en segunda pasada, porque el contenido no permite inferencia responsable de perfil especifico.",
+    "Verificar si EFCC_B02_I04 fue movido, renombrado o eliminado fuera del lote antes de cualquier reapertura."
+  ]
+}
