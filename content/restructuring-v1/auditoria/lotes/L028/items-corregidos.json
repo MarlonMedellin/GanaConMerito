@@ -1,0 +1,429 @@
+[
+  {
+    "id_item": "CEOL_B01_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/CEOL_B01_I01.json",
+    "motivo": "Pregunta de memoria literal sobre ejes del Sistema Nacional de Convivencia Escolar; no exige lectura situada de ruta ni decision profesional observable.",
+    "lote": "L028"
+  },
+  {
+    "id_item": "CEOL_B01_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/CEOL_B01_I02.json",
+    "motivo": "Usa contexto escolar para preguntar el origen de la ley; el contexto no altera la tarea y la discriminacion potencial es baja.",
+    "lote": "L028"
+  },
+  {
+    "id_item": "CEOL_B01_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/CEOL_B01_I03.json",
+    "motivo": "Reduce la Ruta de Atencion a recuerdo de componentes y no a decision situada frente a un caso.",
+    "lote": "L028"
+  },
+  {
+    "id_item": "CEOL_B01_I04",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/CEOL_B01_I04.json",
+    "motivo": "Pregunta solo la jerarquia del sistema; es clasificacion memoristica con poco valor para el banco.",
+    "lote": "L028"
+  },
+  {
+    "id_item": "CEOL_B01_I05",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "convivencia escolar",
+    "subtema": "respuesta institucional proporcional ante situacion Tipo I",
+    "competencia": "aplicacion situada de la ruta de convivencia escolar",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la primera actuacion pedagogica e institucional mas pertinente ante una situacion Tipo I de convivencia escolar.",
+    "evidencia": "Distingue acciones de mediacion, acuerdo y seguimiento frente a respuestas sobrerreaccionadas o negligentes.",
+    "tarea": "Seleccionar la actuacion inicial mas adecuada para un conflicto leve sin lesiones ni riesgo grave.",
+    "contexto": "En un curso de secundaria, dos estudiantes se insultan y se empujan durante el descanso. No hay lesiones, pero el conflicto ya ha generado tensiones en el grupo.",
+    "enunciado": "Como integrante del comite o apoyo de convivencia, cual es la respuesta inicial mas adecuada?",
+    "opciones": {
+      "A": "Registrar de inmediato la situacion como Tipo II y citar a las familias para imponer una sancion.",
+      "B": "Ignorar el hecho porque no hubo lesiones y dejar que el grupo lo resuelva por su cuenta.",
+      "C": "Activar acciones pedagogicas inmediatas de mediacion, acuerdos y seguimiento por tratarse de una situacion Tipo I.",
+      "D": "Denunciar penalmente a los estudiantes porque toda agresion verbal exige intervencion externa."
+    },
+    "clave": "C",
+    "justificacion_clave": "La situacion descrita exige una respuesta proporcional, formativa y de seguimiento propia de una situacion Tipo I, antes que sanciones maximas o desatencion.",
+    "distractores_funcion": {
+      "A": "Modela sobrerreaccion institucional al escalar un conflicto leve a una categoria mas grave.",
+      "B": "Modela omision de deber de atencion y normalizacion del conflicto.",
+      "C": "Respuesta correcta porque combina mediacion, reparacion y seguimiento proporcional.",
+      "D": "Modela juridizacion automatica sin analisis de gravedad ni gradualidad de la ruta."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El contexto escolar es comun y no introduce barreras culturales irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Se simplifico el lenguaje normativo para centrar la tarea en la decision profesional."
+    },
+    "metadata_editorial": {
+      "lote": "L028",
+      "ruta_origen": "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/CEOL_B01_I05.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/coordinador/funcional/CEOL_B01_I05.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CEOL_B01_I06",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "convivencia escolar",
+    "subtema": "lectura situada de ruta ante hostigamiento reiterado",
+    "competencia": "interpretacion aplicada de la ruta de atencion en convivencia escolar",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue una respuesta institucional pertinente cuando el conflicto supera la mediacion simple y exige proteccion y seguimiento.",
+    "evidencia": "Reconoce la necesidad de documentar, proteger y activar una ruta escolar proporcionada ante hostigamiento reiterado.",
+    "tarea": "Elegir la actuacion institucional mas pertinente frente a mensajes humillantes repetidos que afectan la asistencia de una estudiante.",
+    "contexto": "Una estudiante ha recibido durante varias semanas mensajes humillantes en un chat del curso. Ya ha faltado dos dias por temor a encontrarse con sus companeros.",
+    "enunciado": "Cual es la respuesta institucional mas adecuada en este caso?",
+    "opciones": {
+      "A": "Tratarlo como un desacuerdo pasajero y sugerir que la estudiante bloquee el chat.",
+      "B": "Activar atencion institucional, recoger informacion, proteger a la estudiante y coordinar seguimiento con las familias y el equipo escolar.",
+      "C": "Tipificarlo de inmediato como delito y remitirlo externamente sin valoracion institucional previa.",
+      "D": "Esperar a que ocurra una agresion fisica antes de intervenir."
+    },
+    "clave": "B",
+    "justificacion_clave": "La reiteracion, el impacto emocional y la afectacion de la asistencia exigen una respuesta escolar estructurada de proteccion, analisis y seguimiento, no minimizacion ni escalamiento automatico.",
+    "distractores_funcion": {
+      "A": "Modela minimizacion del dano y reduccion del caso a un problema privado.",
+      "B": "Respuesta correcta porque combina proteccion, documentacion y activacion institucional proporcionada.",
+      "C": "Modela externalizacion prematura sin agotar la lectura institucional del caso.",
+      "D": "Modela omision reactiva que espera dano mayor para actuar."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "La situacion evita detalles identitarios innecesarios y focaliza la conducta y su impacto escolar."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El caso mantiene informacion suficiente sin sobrecargar con tecnicismos de tipificacion."
+    },
+    "metadata_editorial": {
+      "lote": "L028",
+      "ruta_origen": "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/CEOL_B01_I06.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/coordinador/funcional/CEOL_B01_I06.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "DIL_B09_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "proteccion integral de ninos, ninas y adolescentes",
+    "subtema": "trabajo infantil y restablecimiento de derechos",
+    "competencia": "aplicacion situada de criterios de proteccion frente a trabajo infantil",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce cuando la situacion laboral de un estudiante exige activar medidas de proteccion y no una simple convalidacion escolar.",
+    "evidencia": "Distingue una vulneracion de derechos por edad y dedicacion laboral frente a respuestas permisivas o meramente administrativas.",
+    "tarea": "Seleccionar la respuesta escolar mas pertinente ante un estudiante de 13 anos retirado parcialmente de la escuela para trabajar tiempo completo.",
+    "contexto": "Un estudiante de 13 anos ha empezado a faltar con frecuencia porque trabaja tiempo completo en un negocio familiar. La familia argumenta que necesita su apoyo economico.",
+    "enunciado": "Cual debe ser la actuacion inicial mas adecuada desde la institucion educativa?",
+    "opciones": {
+      "A": "Validar la decision familiar porque el trabajo aporta a la economia del hogar.",
+      "B": "Orientar a la familia y activar la ruta de proteccion o restablecimiento de derechos porque la edad y la dedicacion comprometen la escolaridad y el bienestar.",
+      "C": "Permitir el trabajo si el estudiante mantiene notas aceptables en las pocas clases que asista.",
+      "D": "Solicitar solo una autorizacion escrita del acudiente para formalizar la situacion."
+    },
+    "clave": "B",
+    "justificacion_clave": "La combinacion de edad, dedicacion laboral y afectacion de la escolaridad configura un riesgo de vulneracion de derechos que exige proteccion y orientacion institucional.",
+    "distractores_funcion": {
+      "A": "Modela normalizacion economica del trabajo infantil sobre el derecho a la educacion.",
+      "B": "Respuesta correcta porque prioriza proteccion integral y no mera tolerancia administrativa.",
+      "C": "Modela criterio academicista insuficiente que desconoce la vulneracion estructural.",
+      "D": "Modela reduccion burocratica del problema a un permiso familiar."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El caso no estigmatiza a la familia y centra la decision en la proteccion de derechos."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La redaccion evita tecnicismos juridicos innecesarios y mantiene foco en la actuacion profesional."
+    },
+    "metadata_editorial": {
+      "lote": "L028",
+      "ruta_origen": "content/items/stand-by/Trabajo infantil y edad mínima/DIL_B09_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/orientador/funcional/DIL_B09_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "DIL_B09_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "proteccion integral de adolescentes",
+    "subtema": "trabajo adolescente permitido con condiciones",
+    "competencia": "orientacion escolar frente a trabajo adolescente protegido",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la respuesta escolar adecuada cuando una actividad laboral adolescente puede ser legal pero requiere condiciones y seguimiento.",
+    "evidencia": "Distingue entre prohibicion absoluta, autorizacion informal y orientacion con garantia de derechos.",
+    "tarea": "Elegir la actuacion escolar mas adecuada frente a una estudiante de 15 anos que desea trabajar los fines de semana.",
+    "contexto": "Una estudiante de 15 anos manifiesta que quiere trabajar los fines de semana en un comercio cercano sin dejar de asistir a clases.",
+    "enunciado": "Cual es la respuesta institucional mas pertinente?",
+    "opciones": {
+      "A": "Autorizar verbalmente desde la escuela porque la actividad sera fuera del horario de clases.",
+      "B": "Prohibir cualquier trabajo porque toda actividad laboral adolescente es ilegal.",
+      "C": "Orientar sobre las condiciones y autorizaciones requeridas y hacer seguimiento para que el trabajo no afecte la escolaridad, el descanso ni el bienestar.",
+      "D": "Iniciar un proceso sancionatorio porque la intencion de trabajar ya vulnera las normas escolares."
+    },
+    "clave": "C",
+    "justificacion_clave": "La escuela no debe autorizar informalmente ni prohibir de manera absoluta; debe orientar, verificar condiciones de proteccion y hacer seguimiento a la continuidad educativa y al bienestar.",
+    "distractores_funcion": {
+      "A": "Modela autorizacion improvisada sin revisar marco protector ni riesgos.",
+      "B": "Modela sobregeneralizacion normativa que desconoce casos permitidos con condiciones.",
+      "C": "Respuesta correcta porque articula orientacion, legalidad y seguimiento escolar.",
+      "D": "Modela enfoque punitivo frente a una situacion que exige orientacion y proteccion."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El item evita juicios morales sobre el trabajo y se concentra en condiciones de proteccion y acompanamiento."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Se redujo la carga normativa explicita y se enfatizo la toma de decision."
+    },
+    "metadata_editorial": {
+      "lote": "L028",
+      "ruta_origen": "content/items/stand-by/Trabajo infantil y edad mínima/DIL_B09_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/orientador/funcional/DIL_B09_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "MTV_B18_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Tipos de currículo/MTV_B18_I01.json",
+    "motivo": "Pregunta de clasificacion superficial sobre curriculo oculto; la clave se vuelve visible por terminologia tecnica.",
+    "lote": "L028"
+  },
+  {
+    "id_item": "MTV_B18_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Tipos de currículo/MTV_B18_I02.json",
+    "motivo": "Solo exige reconocer la definicion de curriculo oficial; no hay decision pedagogica observable.",
+    "lote": "L028"
+  },
+  {
+    "id_item": "MTV_B18_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Tipos de currículo/MTV_B18_I03.json",
+    "motivo": "Reduce el item a nombrar el curriculo operacional, con dificultad inflada por metalenguaje y no por razonamiento.",
+    "lote": "L028"
+  },
+  {
+    "id_item": "MTV_B18_I04",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Tipos de currículo/MTV_B18_I04.json",
+    "motivo": "Clasificacion memoristica de curriculo nulo sin potencia discriminativa util para el banco.",
+    "lote": "L028"
+  },
+  {
+    "id_item": "MTV_B18_I05",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Tipos de currículo/MTV_B18_I05.json",
+    "motivo": "Comparacion taxonomica entre curriculo formal y operacional; el contexto no agrega una tarea profesional real.",
+    "lote": "L028"
+  },
+  {
+    "id_item": "MTV_B18_I06",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Tipos de currículo/MTV_B18_I06.json",
+    "motivo": "El escenario termina resolviendose por una etiqueta curricular obvia y no por una decision pedagogica situada.",
+    "lote": "L028"
+  },
+  {
+    "id_item": "MTV_B18_I07",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "curriculo y acceso al aprendizaje",
+    "subtema": "flexibilizacion curricular",
+    "competencia": "toma de decisiones pedagogicas para garantizar acceso al aprendizaje",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la decision curricular mas adecuada cuando un estudiante enfrenta barreras de acceso a una actividad de aprendizaje.",
+    "evidencia": "Distingue ajustes razonables y de participacion frente a respuestas de homogeneizacion, exclusion o aplazamiento.",
+    "tarea": "Seleccionar la decision pedagogica mas adecuada para garantizar acceso al mismo proposito de aprendizaje.",
+    "contexto": "En ciencias, un estudiante con movilidad reducida no puede participar de la practica de laboratorio con el montaje previsto. El objetivo de aprendizaje sigue siendo analizar el fenomeno observado y argumentar conclusiones.",
+    "enunciado": "Que decision curricular es la mas adecuada?",
+    "opciones": {
+      "A": "Mantener exactamente la misma actividad y evaluacion para evitar tratos diferenciados.",
+      "B": "Aplazar indefinidamente su participacion hasta que la institucion adquiera un nuevo laboratorio.",
+      "C": "Ajustar materiales, tiempos y formas de participacion para asegurar acceso al mismo proposito de aprendizaje.",
+      "D": "Retirarlo del componente practico y evaluarlo solo con teoria durante todo el periodo."
+    },
+    "clave": "C",
+    "justificacion_clave": "La respuesta correcta mantiene el mismo proposito de aprendizaje y modifica medios de acceso y participacion, en lugar de excluir o uniformar indebidamente.",
+    "distractores_funcion": {
+      "A": "Modela falsa igualdad que desconoce barreras de acceso.",
+      "B": "Modela aplazamiento administrativo que suspende el derecho a aprender.",
+      "C": "Respuesta correcta porque articula acceso, participacion y conservacion del objetivo de aprendizaje.",
+      "D": "Modela reduccion del curriculo para resolver la barrera mediante exclusion parcial."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El item promueve acceso sin paternalismo y centra la decision en la eliminacion de barreras irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El caso es concreto y elimina terminologia curricular innecesaria del original."
+    },
+    "metadata_editorial": {
+      "lote": "L028",
+      "ruta_origen": "content/items/stand-by/Tipos de currículo/MTV_B18_I07.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/MTV_B18_I07.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "MTV_B18_I08",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "articulacion curricular institucional",
+    "subtema": "coherencia entre PEI, planeacion y practica",
+    "competencia": "lectura pedagogica de coherencia curricular institucional",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la decision institucional que mejora la coherencia entre el proyecto educativo y las practicas reales de aula.",
+    "evidencia": "Distingue articulacion curricular efectiva frente a soluciones declarativas o desconectadas de la planeacion.",
+    "tarea": "Elegir la accion institucional mas pertinente cuando las planeaciones y evaluaciones no reflejan las orientaciones del PEI.",
+    "contexto": "Una institucion declara en su PEI el trabajo por proyectos y la participacion estudiantil, pero las planeaciones de aula y las evaluaciones siguen organizadas solo como cobertura de contenidos aislados.",
+    "enunciado": "Que accion institucional contribuiria mejor a corregir esa incoherencia?",
+    "opciones": {
+      "A": "Conservar cada planeacion de aula aislada mientras se cubran los contenidos minimos.",
+      "B": "Articular planeacion, evaluacion y acuerdos pedagogicos con el PEI para que el curriculo se traduzca en practicas coherentes.",
+      "C": "Reescribir solo la mision institucional sin intervenir las practicas de aula.",
+      "D": "Delegar la coherencia curricular exclusivamente al manual de convivencia."
+    },
+    "clave": "B",
+    "justificacion_clave": "La correccion del problema exige que el PEI oriente efectivamente la planeacion, la evaluacion y las practicas pedagogicas, no solo los textos institucionales.",
+    "distractores_funcion": {
+      "A": "Modela cumplimiento minimo de contenidos sin coherencia institucional.",
+      "B": "Respuesta correcta porque traduce el PEI en decisiones curriculares y pedagogicas observables.",
+      "C": "Modela solucion declarativa sin impacto en la practica.",
+      "D": "Modela desplazamiento de la responsabilidad curricular a un instrumento con otra funcion principal."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El item se centra en decisiones institucionales comunes y no en conocimiento de siglas aisladas."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El lenguaje fue simplificado para evitar metalenguaje curricular innecesario."
+    },
+    "metadata_editorial": {
+      "lote": "L028",
+      "ruta_origen": "content/items/stand-by/Tipos de currículo/MTV_B18_I08.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/MTV_B18_I08.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "MTV_B18_I09",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Tipos de currículo/MTV_B18_I09.json",
+    "motivo": "Clasifica una actividad como extracurricular o complementaria sin tarea cognitiva ni decision pedagogica sustantiva.",
+    "lote": "L028"
+  },
+  {
+    "id_item": "MTV_B18_I10",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "coherencia curricular",
+    "subtema": "curriculo declarado y curriculo vivido",
+    "competencia": "analisis pedagogico de incoherencias entre discurso institucional y practica",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce una lectura pedagogica pertinente cuando la practica escolar contradice el aprendizaje democratico que la institucion declara promover.",
+    "evidencia": "Distingue incoherencia curricular significativa frente a interpretaciones simplistas centradas solo en disciplina o mas contenido teorico.",
+    "tarea": "Elegir la mejor interpretacion pedagogica de una discrepancia entre lo que la escuela enseña y lo que efectivamente hace.",
+    "contexto": "En clase se insiste en la participacion democratica y el debate argumentado, pero cuando los estudiantes cuestionan una decision del docente se les castiga de inmediato por opinar.",
+    "enunciado": "Que lectura permite intervenir mejor esta situacion?",
+    "opciones": {
+      "A": "El problema es solo de indisciplina estudiantil y no tiene implicacion curricular.",
+      "B": "Existe una incoherencia entre el curriculo declarado y el curriculo vivido que exige revisar practicas reales de participacion.",
+      "C": "Basta con aumentar el contenido teorico sobre democracia en las clases.",
+      "D": "La solucion principal es endurecer las sanciones para ordenar cualquier debate."
+    },
+    "clave": "B",
+    "justificacion_clave": "La situacion no se resuelve agregando discurso teorico ni sancion; exige revisar la coherencia entre valores ensenados y practicas cotidianas de aula.",
+    "distractores_funcion": {
+      "A": "Modela reduccion disciplinaria que borra la dimension curricular del problema.",
+      "B": "Respuesta correcta porque identifica la contradiccion entre curriculo declarado y experiencia escolar efectiva.",
+      "C": "Modela salida declarativa que agrega contenido sin modificar practicas.",
+      "D": "Modela respuesta autoritaria que profundiza la incoherencia del caso."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El item evita moralizacion y exige interpretar una practica docente comun desde su efecto pedagogico."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Se concentro la lectura en una sola tension pedagogica y se eliminaron etiquetas innecesarias."
+    },
+    "metadata_editorial": {
+      "lote": "L028",
+      "ruta_origen": "content/items/stand-by/Tipos de currículo/MTV_B18_I10.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/MTV_B18_I10.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "MTV_B18_I11",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Tipos de currículo/MTV_B18_I11.json",
+    "motivo": "La resolucion depende de una taxonomia poco estable y no de una decision pedagogica observable.",
+    "lote": "L028"
+  },
+  {
+    "id_item": "MTV_B18_I12",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Tipos de currículo/MTV_B18_I12.json",
+    "motivo": "Aunque el contexto es util, la pregunta termina pidiendo el nombre de un principio curricular y no una actuacion profesional concreta.",
+    "lote": "L028"
+  },
+  {
+    "id_item": "MTV_B18_I13",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Tipos de currículo/MTV_B18_I13.json",
+    "motivo": "Presenta inconsistencia entre la clave declarada, la justificacion y la funcion distractora; ademas es un item declarativo de baja discriminacion.",
+    "lote": "L028"
+  },
+  {
+    "id_item": "MTV_B18_I14",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Tipos de currículo/MTV_B18_I14.json",
+    "motivo": "Agrupa varios tipos de curriculo en una taxonomia memoristica con dificultad artificial y sin decision situada.",
+    "lote": "L028"
+  }
+]
