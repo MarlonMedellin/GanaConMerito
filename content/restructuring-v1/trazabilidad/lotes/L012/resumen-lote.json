@@ -1,0 +1,76 @@
+{
+  "lote": "L012",
+  "estado": "cerrado",
+  "fecha_revision": "2026-05-24",
+  "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+  "repositorio": "ProfeMarlonMDE/GanaConMerito",
+  "rama": "master",
+  "sublotes_internos": [
+    {
+      "id": "L012-A",
+      "criterio": "primeros 6 ítems procesados: didáctica de áreas completa + primer ítem de planeación inclusiva",
+      "items": [
+        "IDD_B12_I01",
+        "IDD_B12_I02",
+        "IDD_B12_I03",
+        "IDD_B12_I04",
+        "IDD_B12_I05",
+        "GA02_B03_I01"
+      ]
+    },
+    {
+      "id": "L012-B",
+      "criterio": "resto del lote: planeación inclusiva + dignidad humana y protección",
+      "items": [
+        "GA02_B03_I02",
+        "GA02_B03_I03",
+        "GA02_B03_I04",
+        "DIL_B10_I01",
+        "IDD_B18_I01",
+        "IDD_B18_I04"
+      ]
+    }
+  ],
+  "carpetas_procesadas": [
+    "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/",
+    "content/items/stand-by/Didáctica, diversidad y planeación de aula/",
+    "content/items/stand-by/Dignidad humana, equidad y columna vertebral del Código de Infancia/"
+  ],
+  "numero_items_leidos": 12,
+  "numero_items_procesados": 12,
+  "conteo_decisiones": {
+    "LISTO_PARA_BANCO": 9,
+    "LISTO_PARA_PILOTAJE": 3,
+    "DESCARTAR": 0
+  },
+  "numero_requiere_revision_humana": 3,
+  "criterios_aplicados": [
+    "didáctica aplicada y no solo teoría",
+    "resolución de problemas como acción pedagógica",
+    "diversidad y planeación como decisión docente",
+    "dignidad humana y equidad sin memoria normativa literal",
+    "fairness",
+    "accesibilidad",
+    "unicidad de clave",
+    "calidad de distractores"
+  ],
+  "incidencias_github_o_fuente": [
+    "No existían salidas previas para L012; se crearon archivos nuevos.",
+    "El buscador GitHub no listó directamente todos los archivos por carpeta exacta; se complementó con búsquedas por términos e identificadores.",
+    "Se respetó el máximo operativo mediante división interna L012-A/L012-B.",
+    "No se modificaron archivos originales de content/items/stand-by/."
+  ],
+  "archivos_escritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L012/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L012/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L012/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L012/reporte-procesos-anteriores.md"
+  ],
+  "confirmaciones": {
+    "no_modifico_content_items_stand_by": true,
+    "no_modifico_trash_json": true,
+    "no_modifico_bitacoras_globales": true,
+    "no_uso_workspace": true,
+    "trabajo_autocontenido_en_L012": true
+  }
+}
