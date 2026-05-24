@@ -1,0 +1,469 @@
+[
+  {
+    "id_item": "CB10_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Debido proceso",
+    "subtema": "confidencialidad_y_no_revictimizacion",
+    "competencia": "Identifica actuaciones institucionales acordes con debido proceso y protección de derechos en contextos escolares.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "ALTA",
+    "claim": "Reconoce la actuación inmediata que protege a una estudiante, evita revictimización y activa la ruta institucional sin invadir competencias judiciales.",
+    "evidencia": "Selecciona la respuesta que combina contención inicial, escucha respetuosa y activación oportuna de la ruta de atención.",
+    "tarea": "Analizar una revelación de presunto abuso y elegir la actuación docente inmediata más adecuada.",
+    "contexto": "Una estudiante de bachillerato se acerca de manera confidencial a una docente para manifestarle que ha sido víctima de presunto abuso por parte de un miembro de su entorno familiar. La docente considera los pasos a seguir.",
+    "enunciado": "Teniendo en cuenta el debido proceso escolar y la normativa colombiana de protección infantil, ¿cuál es la actuación inmediata y adecuada que debe realizar la docente?",
+    "opciones": {
+      "A": "Convocar de urgencia a varios miembros del equipo institucional para realizar una entrevista conjunta y minuciosa a la estudiante antes de notificar externamente.",
+      "B": "Citar de forma inmediata al familiar señalado para escuchar su versión antes de reportar a las autoridades.",
+      "C": "Brindar contención emocional inicial a la estudiante, escucharla sin interrogarla ni confrontarla para evitar revictimización, y activar de inmediato la ruta institucional reportando al directivo competente.",
+      "D": "Solicitar a la estudiante una carta firmada con pruebas o detalles exhaustivos para formalizar la activación de la ruta."
+    },
+    "clave": "C",
+    "justificacion_clave": "La clave es C porque la respuesta inicial debe proteger a la estudiante, evitar interrogatorios revictimizantes y activar la ruta sin trasladar la carga probatoria a la víctima ni alertar al presunto agresor.",
+    "distractores_funcion": {
+      "A": "Multiplica interrogatorios y aumenta riesgo de revictimización.",
+      "B": "Expone a la estudiante al riesgo de confrontación o retaliación y excede la competencia docente.",
+      "C": "Clave correcta; prioriza protección, contención y activación de la ruta.",
+      "D": "Crea barreras procedimentales y traslada a la estudiante una carga probatoria improcedente."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Caso delicado pero pertinente, tratado con lenguaje no morboso y centrado en protección."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Una sola decisión crítica y distractores claramente distinguibles por criterio profesional."
+    },
+    "metadata_editorial": {
+      "lote": "L010-A",
+      "ruta_origen": "content/items/stand-by/Debido proceso/CB10_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/CB10_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "NFL_B03_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Debido proceso, congruencia y medidas correctivas extremas",
+    "subtema": "debido_proceso_previo_a_medida_extrema",
+    "competencia": "Valora medidas correctivas según debido proceso, proporcionalidad y atención a condiciones relevantes del estudiante.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "ALTA",
+    "claim": "Reconoce la actuación institucional exigible antes de imponer una medida extrema en un caso de convivencia con posibles factores asociados de inclusión o apoyo.",
+    "evidencia": "Elige la alternativa que combina cargos claros, defensa, contradicción y valoración de circunstancias relevantes antes de sancionar.",
+    "tarea": "Analizar un caso de expulsión inmediata y seleccionar la exigencia procesal y pedagógica previa más adecuada.",
+    "contexto": "Un colegio privado expulsa de inmediato a un estudiante con diagnóstico de TDAH después de una agresión física sin realizar descargos ni valorar su versión.",
+    "enunciado": "Según el enfoque de derechos y el debido proceso institucional, ¿qué actuación es exigible a la institución antes de aplicar una medida de esta gravedad?",
+    "opciones": {
+      "A": "Notificar la remisión del caso a una entidad externa para transferirle de inmediato la competencia disciplinaria y pedagógica.",
+      "B": "Decretar una suspensión provisional indefinida firmada por rectoría, prescindiendo del trámite de descargos.",
+      "C": "Garantizar un debido proceso previo con cargos claros, defensa y contradicción, evaluando la incidencia del diagnóstico en la situación y los apoyos requeridos.",
+      "D": "Sugerir a la familia el retiro voluntario inmediato del estudiante para evitar afectaciones al historial académico."
+    },
+    "clave": "C",
+    "justificacion_clave": "La clave es C porque una medida extrema exige proceso previo, posibilidad real de defensa y valoración integral del caso, incluida la posible incidencia de necesidades de apoyo o de inclusión.",
+    "distractores_funcion": {
+      "A": "Traslada impropiamente la competencia escolar y evita el deber procesal de la institución.",
+      "B": "Impone una sanción de hecho sin defensa ni temporalidad clara.",
+      "C": "Clave correcta; integra defensa, contradicción y valoración contextual.",
+      "D": "Encubre una expulsión indirecta y evade el debido proceso."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El caso trata inclusión y disciplina sin culpabilizar la condición del estudiante."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Opciones bien contrastadas y sin tecnicismo excesivo innecesario."
+    },
+    "metadata_editorial": {
+      "lote": "L010-A",
+      "ruta_origen": "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/coordinador/funcional/NFL_B03_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "NFL_B03_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Debido proceso, congruencia y medidas correctivas extremas",
+    "subtema": "congruencia_y_derecho_de_defensa",
+    "competencia": "Valora medidas correctivas según debido proceso, congruencia y derecho de defensa en procesos de convivencia escolar.",
+    "nivel_cognitivo": "ALTA",
+    "dificultad_estimada": "ALTA",
+    "claim": "Reconoce la vulneración que se produce cuando la decisión sancionatoria incorpora hechos o cargos que no fueron comunicados ni debatidos.",
+    "evidencia": "Selecciona la alternativa que explica por qué la sanción debe ceñirse a los cargos previamente notificados y controvertidos.",
+    "tarea": "Analizar un proceso disciplinario escolar y determinar por qué se vulnera el principio de congruencia.",
+    "contexto": "Durante un proceso disciplinario escolar, al estudiante se le notificó inicialmente una falta específica. Sin embargo, al comunicar el fallo, la institución agrega nuevas faltas que nunca fueron informadas ni debatidas para aumentar el castigo.",
+    "enunciado": "¿Por qué esta actuación vulnera el principio de congruencia y el derecho de defensa?",
+    "opciones": {
+      "A": "Porque la resolución sancionatoria debe ceñirse a los cargos comunicados y debatidos; incorporar nuevos hechos al fallo impide al estudiante ejercer defensa sobre ellos.",
+      "B": "Porque la tipificación de conductas graves faculta al rector para modificar los cargos y agravar la medida de manera unilateral durante la etapa final del proceso.",
+      "C": "Porque al variar la tipificación inicial, el Manual de Convivencia obliga automáticamente a trasladar la competencia a otro órgano institucional.",
+      "D": "Porque la favorabilidad disciplinaria impide valorar conductas independientes si no se acumulan bajo el cargo inicial."
+    },
+    "clave": "A",
+    "justificacion_clave": "La clave es A porque la congruencia exige correspondencia entre cargos comunicados, debate y decisión final. Si la institución sanciona por hechos nuevos sin permitir contradicción, rompe el derecho de defensa.",
+    "distractores_funcion": {
+      "A": "Clave correcta; explica la lesión directa a congruencia y defensa.",
+      "B": "Confunde autoridad directiva con discrecionalidad absoluta sobre los cargos.",
+      "C": "Atribuye un efecto procedimental automático que no resuelve la falta de defensa.",
+      "D": "Usa de forma errada un principio jurídico distinto y no responde al problema de congruencia."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Escenario institucional generalizable y sin barreras culturales."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La pregunta es más abstracta, pero sigue anclada a un caso claro y una sola inferencia jurídica central."
+    },
+    "metadata_editorial": {
+      "lote": "L010-A",
+      "ruta_origen": "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/coordinador/funcional/NFL_B03_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "NFL_B03_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Debido proceso, congruencia y medidas correctivas extremas",
+    "subtema": "tipicidad_y_previsibilidad",
+    "competencia": "Valora medidas correctivas según debido proceso, legalidad previa y límites de la autonomía escolar.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA_ALTA",
+    "claim": "Reconoce la vulneración que ocurre cuando la institución crea una medida correctiva no prevista y la ampara indebidamente en la autonomía escolar.",
+    "evidencia": "Selecciona la alternativa que identifica la exigencia de definición previa y expresa de faltas y medidas correctivas.",
+    "tarea": "Analizar una medida no prevista en el manual y determinar qué principio del debido proceso resulta afectado.",
+    "contexto": "Después de una falta de convivencia, el colegio decide aplicar una medida correctiva que no aparece en el Manual de Convivencia. Las directivas argumentan que la autonomía escolar las faculta para crear soluciones a situaciones imprevistas.",
+    "enunciado": "¿Cuál principio del debido proceso se ve afectado en esta actuación institucional?",
+    "opciones": {
+      "A": "El principio de tipicidad, pues las faltas y sus medidas correctivas deben estar definidas previamente y de manera expresa en el manual.",
+      "B": "El principio de doble instancia, porque la familia pierde el derecho a apelar la decisión ante un órgano superior.",
+      "C": "El principio de inmediación, porque la institución no resolvió la situación en el mismo momento de los hechos.",
+      "D": "La autonomía escolar, ya que el manual no debería limitar el poder discrecional de las directivas para responder a casos atípicos."
+    },
+    "clave": "A",
+    "justificacion_clave": "La clave es A porque la autonomía escolar no autoriza crear sanciones ad hoc. La medida debe ser previsible y estar previamente definida, de modo que el estudiante conozca de antemano el marco sancionatorio aplicable.",
+    "distractores_funcion": {
+      "A": "Clave correcta; identifica la exigencia de norma previa sobre la medida.",
+      "B": "Desplaza el foco a recursos de apelación, que no son el problema central del caso.",
+      "C": "Confunde tipicidad con inmediatez en la respuesta institucional.",
+      "D": "Invierte la jerarquía entre autonomía escolar y legalidad previa."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Situación jurídica generalizable y pertinente para la función escolar."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El caso es claro, aunque conserva un componente conceptual alto propio del tema."
+    },
+    "metadata_editorial": {
+      "lote": "L010-A",
+      "ruta_origen": "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/coordinador/funcional/NFL_B03_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "NFL_B03_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Debido proceso, congruencia y medidas correctivas extremas",
+    "subtema": "proporcionalidad_de_la_sancion",
+    "competencia": "Valora medidas correctivas según proporcionalidad, gravedad del hecho y fines pedagógicos del manual de convivencia.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA_ALTA",
+    "claim": "Reconoce la vulneración que se produce cuando la institución impone una sanción extrema sin graduar la respuesta frente a una falta leve y sin antecedentes.",
+    "evidencia": "Elige la alternativa que explica por qué la medida debe guardar correspondencia con la gravedad del comportamiento y con los fines educativos.",
+    "tarea": "Analizar un caso de cancelación de matrícula por falta leve y determinar el principio ignorado.",
+    "contexto": "Ante una falta de convivencia leve de un estudiante sin antecedentes sancionatorios, la dirección de un colegio aplica de forma directa la cancelación de matrícula, omitiendo el análisis de atenuantes, gravedad y fines educativos del manual.",
+    "enunciado": "¿Qué principio del debido proceso está siendo ignorado por la institución educativa?",
+    "opciones": {
+      "A": "La presunción de inocencia, ya que al aplicar la sanción más severa se presume dolo e intencionalidad dañina.",
+      "B": "El principio de proporcionalidad, puesto que la medida adoptada debe guardar correspondencia con la gravedad del comportamiento, la afectación del entorno escolar y los fines pedagógicos.",
+      "C": "La favorabilidad formativa, según la cual siempre debe preferirse una respuesta restaurativa sin excepción.",
+      "D": "La legalidad procedimental, pues la severidad de una medida correctiva depende solo del cronograma de audiencias."
+    },
+    "clave": "B",
+    "justificacion_clave": "La clave es B porque el problema central no es probar culpabilidad sino graduar la respuesta. Una medida extrema frente a una falta leve sin antecedentes rompe la correspondencia entre hecho, contexto y finalidad pedagógica de la sanción.",
+    "distractores_funcion": {
+      "A": "Desplaza el foco hacia culpabilidad cuando el caso trata de exceso sancionatorio.",
+      "B": "Clave correcta; identifica la relación exigible entre gravedad y medida.",
+      "C": "Introduce un pseudo-principio no formulado así y confunde restauración con proporcionalidad.",
+      "D": "Reduce el debate sustancial a un detalle procedimental irrelevante para el caso."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El escenario es general y no depende de una experiencia localizada."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Opciones comparables y una sola inferencia jurídica central."
+    },
+    "metadata_editorial": {
+      "lote": "L010-A",
+      "ruta_origen": "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/coordinador/funcional/NFL_B03_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "NFL_B03_I05",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Debido proceso, congruencia y medidas correctivas extremas",
+    "subtema": "defensa_y_contradiccion_en_fraude_academico",
+    "competencia": "Valora medidas correctivas según derecho de defensa, notificación previa y contradicción en procesos escolares.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la garantía vulnerada cuando una sanción escolar se impone sin notificación previa de cargos ni espacio para descargos del estudiante y su familia.",
+    "evidencia": "Selecciona la alternativa que identifica la defensa y contradicción como núcleo de la vulneración procesal del caso.",
+    "tarea": "Analizar un caso de presunto fraude académico y determinar qué garantía constitucional se vulnera.",
+    "contexto": "Un docente reporta a un estudiante por presunto fraude académico en una prueba. El coordinador lo sanciona suspendiendo su participación en clases presenciales, sin notificar cargos a la familia ni permitir descargos.",
+    "enunciado": "¿Qué garantía constitucional del debido proceso se vulnera con esta decisión institucional?",
+    "opciones": {
+      "A": "El derecho a la defensa y contradicción, puesto que se priva al estudiante y a su familia de conocer los cargos y presentar descargos o pruebas.",
+      "B": "La presunción de veracidad del informe del docente, dado que el reporte escrito constituye prueba plena e indiscutible.",
+      "C": "La confidencialidad del proceso administrativo, ya que involucrar al acudiente expone indebidamente la intimidad del estudiante.",
+      "D": "La autonomía directiva del rector o coordinador, que permitiría sancionar discrecionalmente en situaciones críticas de indisciplina."
+    },
+    "clave": "A",
+    "justificacion_clave": "La clave es A porque sin conocimiento previo de los cargos ni oportunidad de responder, el estudiante y su familia quedan privados del núcleo básico del derecho de defensa.",
+    "distractores_funcion": {
+      "A": "Clave correcta; identifica la garantía directamente lesionada.",
+      "B": "Supone erróneamente que el reporte docente elimina el derecho a ser oído.",
+      "C": "Invierte la regla: la participación del acudiente es garantía, no vulneración.",
+      "D": "Confunde funciones directivas con poder sancionatorio absoluto."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Caso transversal y sin sesgos irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La situación y la pregunta están claramente delimitadas."
+    },
+    "metadata_editorial": {
+      "lote": "L010-A",
+      "ruta_origen": "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I05.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/coordinador/funcional/NFL_B03_I05.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "EIP_B03_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Desarrollo integral en preescolar - cinco dimensiones/EIP_B03_I01.json",
+    "motivo": "Depende del recuerdo literal de la lista del artículo 15 de la Ley 115 y reduce el desarrollo integral a nomenclatura normativa, justo el riesgo que este lote debía evitar.",
+    "lote": "L010-A"
+  },
+  {
+    "id_item": "EIP_B03_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Desarrollo integral en preescolar - cinco dimensiones",
+    "subtema": "dimension_sicomotriz_en_aula",
+    "competencia": "Analiza prácticas pedagógicas que promueven el desarrollo integral en preescolar, especialmente en el aspecto sicomotriz.",
+    "nivel_cognitivo": "APLICACIÓN",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la dimensión del desarrollo integral que una docente desconoce cuando devalúa actividades de movimiento, equilibrio y coordinación en preescolar.",
+    "evidencia": "Selecciona la alternativa que relaciona correctamente el caso con el aspecto sicomotriz y su función en la exploración corporal y espacial.",
+    "tarea": "Analizar una postura docente frente al movimiento en transición e identificar la dimensión del desarrollo integral comprometida.",
+    "contexto": "En transición, una docente considera que las actividades de movimiento, equilibrio, coordinación, juego corporal y desplazamiento son pérdida de tiempo porque todavía no son lectura ni escritura.",
+    "enunciado": "De acuerdo con el desarrollo integral en preescolar, ¿qué aspecto o dimensión del desarrollo infantil se está desconociendo principalmente con esta postura de la docente?",
+    "opciones": {
+      "A": "El aspecto cognoscitivo, orientado a la asimilación conceptual de la lectoescritura como prerrequisito académico único.",
+      "B": "El aspecto socioafectivo, enfocado en la autonomía emocional y el autocontrol.",
+      "C": "El aspecto sicomotriz, que fundamenta el conocimiento del propio cuerpo, la lateralidad y las posibilidades de acción y exploración espacial.",
+      "D": "El aspecto biológico, referido exclusivamente al crecimiento físico, la talla y el peso."
+    },
+    "clave": "C",
+    "justificacion_clave": "La clave es C porque las experiencias descritas se vinculan con coordinación, movimiento y exploración corporal, que son parte central del desarrollo sicomotriz en preescolar.",
+    "distractores_funcion": {
+      "A": "Confunde movimiento y exploración corporal con lectoescritura y procesamiento cognitivo formal.",
+      "B": "Desplaza el foco hacia vínculo emocional, que no es el centro del caso.",
+      "C": "Clave correcta; conecta la situación con el desarrollo sicomotriz.",
+      "D": "Reduce el tema a crecimiento biológico y omite la dimensión motriz voluntaria."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Caso pedagógico transversal del nivel preescolar."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea es única y las opciones son comparables."
+    },
+    "metadata_editorial": {
+      "lote": "L010-A",
+      "ruta_origen": "content/items/stand-by/Desarrollo integral en preescolar - cinco dimensiones/EIP_B03_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EIP_B03_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "EIP_B03_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Desarrollo integral en preescolar - cinco dimensiones",
+    "subtema": "dimension_socioafectiva_en_transicion",
+    "competencia": "Analiza prácticas pedagógicas que promueven el desarrollo socioafectivo en preescolar.",
+    "nivel_cognitivo": "APLICACIÓN",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la dimensión del desarrollo integral que se descuida cuando la docente omite acompañar emocionalmente el proceso de separación y socialización en preescolar.",
+    "evidencia": "Selecciona la alternativa que vincula correctamente el caso con identidad, seguridad, socialización y expresión regulada de emociones.",
+    "tarea": "Analizar una situación de adaptación escolar y determinar la dimensión del desarrollo integral comprometida.",
+    "contexto": "Un niño de preescolar llora al separarse de su acudiente, tiene dificultad para integrarse al grupo y necesita acompañamiento para expresar sus emociones. La docente afirma que eso no hace parte de su trabajo porque no es contenido académico.",
+    "enunciado": "Al omitir el acompañamiento emocional en la separación de la familia, ¿qué dimensión del desarrollo integral está dejando de atender la docente?",
+    "opciones": {
+      "A": "El aspecto espiritual, orientado a valores y principios de vida.",
+      "B": "El aspecto socioafectivo, que abarca identidad, seguridad, socialización y expresión acompañada de emociones.",
+      "C": "El aspecto cognoscitivo, enfocado en procesos intelectuales y memoria.",
+      "D": "El aspecto sicomotriz, orientado a movimiento y coordinación corporal."
+    },
+    "clave": "B",
+    "justificacion_clave": "La clave es B porque el caso trata de separación, vínculo, seguridad emocional y socialización, que pertenecen al núcleo socioafectivo del desarrollo en preescolar.",
+    "distractores_funcion": {
+      "A": "Desvía el problema hacia formación valorativa o espiritual.",
+      "B": "Clave correcta; nombra la dimensión directamente comprometida.",
+      "C": "Reduce el problema a procesos cognitivos formales.",
+      "D": "Confunde regulación emocional con movimiento corporal."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Caso típico del nivel sin sesgos irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Escenario sencillo y tarea focalizada."
+    },
+    "metadata_editorial": {
+      "lote": "L010-A",
+      "ruta_origen": "content/items/stand-by/Desarrollo integral en preescolar - cinco dimensiones/EIP_B03_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EIP_B03_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "EIP_B03_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Desarrollo integral en preescolar - cinco dimensiones",
+    "subtema": "dimension_cognoscitiva_mediante_juego_y_exploracion",
+    "competencia": "Analiza prácticas pedagógicas que promueven el aspecto cognoscitivo en preescolar sin escolarización prematura.",
+    "nivel_cognitivo": "APLICACIÓN",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la interpretación del desarrollo cognoscitivo que privilegia juego, exploración y resolución de situaciones sobre repetición mecánica de letras y números.",
+    "evidencia": "Selecciona la alternativa que vincula desarrollo cognitivo temprano con experiencias de observación, curiosidad, clasificación y juego.",
+    "tarea": "Analizar dos enfoques de aula en preescolar y elegir la interpretación más coherente del aspecto cognoscitivo.",
+    "contexto": "Una docente de preescolar centra toda la jornada en repetir letras y números sin juego, exploración, preguntas, clasificación de objetos ni resolución de situaciones sencillas. Otra docente propone experiencias de observación, curiosidad, comparación y juego.",
+    "enunciado": "¿Cuál es la interpretación más coherente sobre cómo debe abordarse el aspecto cognoscitivo en preescolar?",
+    "opciones": {
+      "A": "Se logra principalmente mediante la ejercitación repetitiva de letras y números para garantizar el aprestamiento académico.",
+      "B": "Debe aplazarse hasta primero de primaria, porque en preescolar solo se atienden aspectos biológicos y socioafectivos.",
+      "C": "Exige evaluaciones escritas y pruebas estandarizadas para clasificar el nivel intelectual de los niños.",
+      "D": "Se fortalece a través de juego, exploración del medio, observación, clasificación de objetos y resolución de situaciones cotidianas."
+    },
+    "clave": "D",
+    "justificacion_clave": "La clave es D porque en preescolar el desarrollo cognoscitivo se nutre de exploración, curiosidad, manipulación y juego, no de escolarización mecánica prematura.",
+    "distractores_funcion": {
+      "A": "Reduce el desarrollo cognoscitivo a repetición y aprestamiento formal.",
+      "B": "Postpone indebidamente el trabajo cognitivo en una etapa donde sí debe estimularse.",
+      "C": "Importa un modelo evaluativo formal que no corresponde al nivel.",
+      "D": "Clave correcta; formula el enfoque pedagógico más coherente."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Caso pedagógico amplio y pertinente para educación preescolar."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La comparación entre enfoques es clara y no exige memoria normativa fina."
+    },
+    "metadata_editorial": {
+      "lote": "L010-A",
+      "ruta_origen": "content/items/stand-by/Desarrollo integral en preescolar - cinco dimensiones/EIP_B03_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EIP_B03_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "EIP_B03_I05",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Desarrollo integral en preescolar - cinco dimensiones",
+    "subtema": "dimension_espiritual_y_libertad_de_cultos",
+    "competencia": "Analiza prácticas pedagógicas que orientan el aspecto espiritual en preescolar de forma respetuosa y no confesional.",
+    "nivel_cognitivo": "APLICACIÓN",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce el enfoque pedagógico más adecuado para trabajar el aspecto espiritual en preescolar sin imponer una doctrina religiosa específica.",
+    "evidencia": "Selecciona la alternativa que articula valores, empatía, convivencia y respeto por la libertad de cultos.",
+    "tarea": "Analizar cómo orientar la dimensión espiritual en preescolar y elegir el enfoque pedagógico más adecuado.",
+    "contexto": "Una institución quiere trabajar la dimensión espiritual en preescolar, pero el equipo docente advierte que debe hacerlo de manera respetuosa, sin imponer una creencia religiosa específica y favoreciendo valores, cuidado, sentido y convivencia.",
+    "enunciado": "De acuerdo con el marco de la Ley 115, ¿cuál es el enfoque más adecuado para orientar el desarrollo del aspecto espiritual en el nivel de preescolar?",
+    "opciones": {
+      "A": "Favorecer la construcción de valores, el respeto, la empatía y la convivencia pacífica, respetando la libertad de cultos de las familias.",
+      "B": "Implementar la enseñanza obligatoria de una doctrina religiosa específica y de prácticas confesionales para unificar la formación moral.",
+      "C": "Limitar esta dimensión al estudio teórico e histórico de las religiones dominantes a nivel global en el plan de estudios.",
+      "D": "Omitir el aspecto espiritual de la planeación escolar para evitar debates de carácter moral o religioso en el aula."
+    },
+    "clave": "A",
+    "justificacion_clave": "La clave es A porque permite trabajar interioridad, valores y convivencia respetando la libertad de cultos y evitando imponer una confesión específica a niños y familias.",
+    "distractores_funcion": {
+      "A": "Clave correcta; articula formación en valores con respeto por pluralidad y libertad religiosa.",
+      "B": "Impone un credo particular y vulnera libertad de cultos.",
+      "C": "Plantea un tratamiento abstracto e inadecuado para la edad.",
+      "D": "Elimina una dimensión formativa explícitamente incluida en la educación integral."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "La formulación es respetuosa, aunque conviene observar en pilotaje si el vocabulario espiritual genera interpretaciones confesionales no previstas."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea es clara, pero se marca revisión humana por sensibilidad potencial del constructo."
+    },
+    "metadata_editorial": {
+      "lote": "L010-B",
+      "ruta_origen": "content/items/stand-by/Desarrollo integral en preescolar - cinco dimensiones/EIP_B03_I05.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EIP_B03_I05.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  }
+]
