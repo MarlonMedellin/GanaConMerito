@@ -1,0 +1,47 @@
+{
+  "lote_procesado": "L021",
+  "sublotes_internos": ["L021-A", "L021-B"],
+  "carpetas_procesadas": [
+    "content/items/stand-by/Jornada escolar, horario laboral y asignación académica/",
+    "content/items/stand-by/Manejo del error y clima afectivo/",
+    "content/items/stand-by/Marco constitucional, legal y jurisprudencial de inclusión/"
+  ],
+  "items_leidos": 16,
+  "conteo_decisiones": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 7,
+    "DESCARTAR": 9
+  },
+  "numero_con_requiere_revision_humana": 7,
+  "decision_global_lote": "APROBAR_PARCIALMENTE",
+  "calidad_global_lote": "MEDIA",
+  "alertas_criticas": [
+    "La carpeta de jornada escolar concentra pseudoaplicacion normativa: la mayoria de items pregunta definiciones, equivalencias o clasificaciones de tiempo con contexto solo decorativo.",
+    "Varios distractores del bloque normativo son extremos o demasiado obvios, lo que reduce discriminacion real para banco.",
+    "Los items rescatables de inclusion y clima afectivo siguen siendo mejores para pilotaje que para banco activo, porque requieren contraste humano adicional de taxonomia y fortaleza distractora."
+  ],
+  "hallazgos_principales": [
+    "Manejo del error y clima afectivo si produce evidencia util cuando obliga a detener la humillacion, explorar el razonamiento y reconstruir el concepto con mediacion docente.",
+    "El bloque de inclusion es defendible cuando traduce el marco constitucional y legal en decisiones institucionales concretas de acceso, permanencia y transformacion del entorno.",
+    "En jornada, horario y asignacion academica solo sobrevivieron los casos donde la norma operaba como criterio para una decision profesional observable y no como recuerdo literal."
+  ],
+  "incidencias_github_fuente": [
+    "La lectura del lote requirio inventario por busqueda de rutas y contraste con content/restructuring-v1/trazabilidad/mapa-carpetas-stand-by.csv.",
+    "No hubo incidencias bloqueantes de lectura o escritura en GitHub para este lote."
+  ],
+  "archivos_escritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L021/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L021/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L021/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L021/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "content_items_stand_by_no_modificado": true,
+    "trash_json_no_modificado": true,
+    "bitacoras_globales_no_modificadas": true,
+    "rutas_protegidas_no_modificadas": true
+  },
+  "resumen_ejecutivo": "El lote L021 tiene valor parcial. Siete items quedaron listos para pilotaje por convertir norma o teoria en decision profesional observable, mientras nueve se descartaron por memoria normativa, pseudoaplicacion o baja discriminacion.",
+  "fecha_revision": "2026-05-24",
+  "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO"
+}
