@@ -1,0 +1,561 @@
+[
+  {
+    "id_item": "EIP_B01_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Currículo obligatorio y proyectos pedagógicos transversales/EIP_B01_I01.json",
+    "motivo": "La clave depende del recuerdo textual del artículo 14 de la Ley 115 y premia memoria normativa literal más que comprensión o decisión curricular.",
+    "lote": "L008"
+  },
+  {
+    "id_item": "EIP_B01_I02",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Currículo obligatorio y proyectos pedagógicos transversales",
+    "subtema": "Transversalidad curricular",
+    "competencia": "Tomar decisiones curriculares coherentes con el carácter transversal y continuo de los proyectos pedagógicos obligatorios.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que los proyectos transversales deben integrarse al PEI, a las áreas y a la vida institucional, no reducirse a eventos aislados.",
+    "evidencia": "Selecciona la decisión que convierte actividades ocasionales en un proceso curricular articulado y evaluable.",
+    "tarea": "Analizar una práctica escolar fragmentada y escoger el ajuste curricular más pertinente.",
+    "contexto": "Un colegio afirma que cumple los proyectos pedagógicos transversales porque realiza una cartelera de medio ambiente, una izada de bandera sobre democracia y una charla aislada de educación sexual una vez al año.",
+    "enunciado": "¿Qué ajuste es más coherente con el sentido curricular de esos proyectos obligatorios?",
+    "opciones": {
+      "A": "Integrarlos al PEI, a las áreas, a las prácticas de aula y a la vida institucional mediante acciones continuas, articuladas y evaluables.",
+      "B": "Mantenerlos como celebraciones aisladas, porque la transversalidad se cumple con una actividad anual.",
+      "C": "Eliminarlos del currículo, porque no hacen parte de las obligaciones institucionales.",
+      "D": "Usarlos como sanción formativa para estudiantes con bajo rendimiento o problemas de convivencia."
+    },
+    "clave": "A",
+    "justificacion_clave": "La transversalidad curricular exige continuidad, articulación con el PEI y presencia real en la enseñanza, no simples actos ocasionales.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Confunde transversalidad con cumplimiento episódico.",
+      "C": "Desconoce la obligatoriedad curricular del trabajo transversal.",
+      "D": "Desvirtúa el propósito pedagógico y convierte el proyecto en mecanismo disciplinario."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Evalúa una decisión institucional generalizable sin apoyarse en contexto sociocultural particular."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Tiene una sola tarea y opciones funcionalmente distinguibles."
+    },
+    "metadata_editorial": {
+      "lote": "L008",
+      "ruta_origen": "content/items/stand-by/Currículo obligatorio y proyectos pedagógicos transversales/EIP_B01_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/EIP_B01_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "EIP_B01_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Currículo obligatorio y proyectos pedagógicos transversales",
+    "subtema": "Educación ambiental transversal",
+    "competencia": "Interpretar el sentido formativo de la educación ambiental como proyecto pedagógico transversal.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que la educación ambiental no se reduce a actividades de aseo, sino que exige articulación curricular con problemas del territorio y prácticas de cuidado.",
+    "evidencia": "Escoge la interpretación que integra currículo, contexto y corresponsabilidad ambiental.",
+    "tarea": "Valorar si una práctica escolar realmente cumple el propósito curricular de la educación ambiental.",
+    "contexto": "En un colegio, la educación ambiental se limita a pedir a los estudiantes que recojan papeles una vez al mes, sin abordar problemas ambientales del entorno ni responsabilidad colectiva.",
+    "enunciado": "¿Qué interpretación curricular es más adecuada?",
+    "opciones": {
+      "A": "Cualquier jornada de aseo cumple por sí sola la educación ambiental escolar.",
+      "B": "La educación ambiental no es obligatoria porque depende de campañas externas.",
+      "C": "Debe eliminarse del currículo para priorizar las áreas básicas.",
+      "D": "Debe trabajarse como enseñanza transversal articulada al currículo, al contexto y a prácticas de cuidado y preservación."
+    },
+    "clave": "D",
+    "justificacion_clave": "La educación ambiental tiene sentido curricular cuando conecta comprensión del entorno, cuidado y prácticas formativas sostenidas.",
+    "distractores_funcion": {
+      "A": "Reduce el proyecto a una actividad mecánica sin propósito pedagógico.",
+      "B": "Desconoce su obligatoriedad formativa.",
+      "C": "Plantea una falsa oposición entre formación ambiental y currículo básico.",
+      "D": "Clave correcta."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Caso general y técnicamente pertinente."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La lectura es clara, pero la clave se distingue con demasiada facilidad frente a distractores débiles."
+    },
+    "metadata_editorial": {
+      "lote": "L008",
+      "ruta_origen": "content/items/stand-by/Currículo obligatorio y proyectos pedagógicos transversales/EIP_B01_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/EIP_B01_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "EIP_B01_I04",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Currículo obligatorio y proyectos pedagógicos transversales",
+    "subtema": "Educación sexual transversal",
+    "competencia": "Diseñar decisiones curriculares coherentes con la educación sexual como proceso gradual, contextualizado y transversal.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue entre una acción aislada y un proceso institucional sostenido de educación sexual.",
+    "evidencia": "Elige la implementación que articula edad, desarrollo, cuidado, dignidad y continuidad institucional.",
+    "tarea": "Analizar una práctica insuficiente y escoger la implementación curricular más coherente.",
+    "contexto": "Una institución considera que cumple la educación sexual porque invita una vez al año a una charla general para todos los grados, sin diferenciar edades, desarrollo ni contexto.",
+    "enunciado": "¿Qué implementación es más coherente con el currículo obligatorio?",
+    "opciones": {
+      "A": "Diseñar un proceso transversal, gradual y contextualizado, acorde con la edad y el desarrollo, articulado al PEI y orientado al cuidado, la dignidad y el respeto.",
+      "B": "Realizar una charla única y general, porque la educación sexual no requiere continuidad.",
+      "C": "Evitar cualquier trabajo pedagógico sobre sexualidad hasta el grado once.",
+      "D": "Delegar completamente el tema a agentes externos sin participación institucional."
+    },
+    "clave": "A",
+    "justificacion_clave": "La educación sexual curricular exige continuidad, adecuación al desarrollo y responsabilidad pedagógica institucional.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Reduce un proceso formativo a un evento aislado.",
+      "C": "Postergar el tema desprotege y rompe la gradualidad pedagógica.",
+      "D": "Desplaza indebidamente la responsabilidad curricular de la institución."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No introduce sesgos culturales irrelevantes y mantiene foco en protección y desarrollo."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Plantea una sola decisión institucional."
+    },
+    "metadata_editorial": {
+      "lote": "L008",
+      "ruta_origen": "content/items/stand-by/Currículo obligatorio y proyectos pedagógicos transversales/EIP_B01_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/EIP_B01_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "EIP_B01_I05",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Currículo obligatorio y proyectos pedagógicos transversales",
+    "subtema": "Formación cívica, paz y democracia",
+    "competencia": "Vincular la enseñanza constitucional con prácticas reales de participación, deliberación y convivencia.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que la formación ciudadana escolar no se agota en copiar normas, sino que debe traducirse en experiencias democráticas reales.",
+    "evidencia": "Escoge la propuesta que articula conocimiento constitucional con participación y resolución pacífica de conflictos.",
+    "tarea": "Evaluar el ajuste curricular más pertinente ante una enseñanza cívica memorística.",
+    "contexto": "Un colegio enseña Constitución y democracia pidiendo a los estudiantes copiar artículos en el cuaderno, pero no promueve participación, diálogo ni solución pacífica de conflictos.",
+    "enunciado": "¿Qué ajuste expresa mejor el sentido transversal de esta enseñanza obligatoria?",
+    "opciones": {
+      "A": "Mantener solo la copia de normas, porque la ciudadanía se forma memorizando artículos.",
+      "B": "Eliminar la formación democrática para evitar debates en clase.",
+      "C": "Articular el conocimiento constitucional con prácticas reales de participación, convivencia, deliberación y solución pacífica de conflictos.",
+      "D": "Trabajar democracia únicamente en una izada de bandera anual."
+    },
+    "clave": "C",
+    "justificacion_clave": "La apropiación ciudadana ocurre cuando la norma se enlaza con experiencias reales de participación y convivencia escolar.",
+    "distractores_funcion": {
+      "A": "Reduce ciudadanía a memorización normativa.",
+      "B": "Niega el sentido democrático de la escuela.",
+      "C": "Clave correcta.",
+      "D": "Limita la formación ciudadana a un acto protocolario sin continuidad."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Es generalizable y no introduce exigencias culturales externas al caso."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Caso claro y opciones con contraste funcional."
+    },
+    "metadata_editorial": {
+      "lote": "L008",
+      "ruta_origen": "content/items/stand-by/Currículo obligatorio y proyectos pedagógicos transversales/EIP_B01_I05.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/EIP_B01_I05.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CB13_I01",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Currículo vs plan vs malla",
+    "subtema": "Diferenciación conceptual",
+    "competencia": "Diferenciar currículo, plan de estudios y malla curricular según su función y nivel de concreción.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que currículo, plan de estudios y malla curricular son conceptos relacionados pero no equivalentes.",
+    "evidencia": "Escoge la explicación que distingue horizonte formativo, organización por áreas y secuenciación de aprendizajes.",
+    "tarea": "Aclarar conceptualmente tres instrumentos curriculares que suelen confundirse.",
+    "contexto": "En una reunión académica, un docente afirma que currículo, plan de estudios y malla curricular son exactamente lo mismo.",
+    "enunciado": "¿Cuál explicación es más adecuada?",
+    "opciones": {
+      "A": "El currículo reúne intenciones, enfoques y experiencias formativas; el plan de estudios organiza áreas y grados; la malla distribuye contenidos y secuencias.",
+      "B": "El currículo es solo la lista de temas y la malla es el horario semanal.",
+      "C": "El plan de estudios reemplaza al PEI y la malla corresponde al manual de convivencia.",
+      "D": "Los tres conceptos son idénticos y diferenciarlos no aporta a la gestión académica."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opción correcta distingue niveles de definición curricular sin confundir instrumentos ni funciones.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Reduce y deforma el concepto de currículo.",
+      "C": "Confunde instrumentos con funciones institucionales distintas.",
+      "D": "Niega una diferenciación necesaria para planear y hacer seguimiento."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Vocabulario institucional común y sin referencias externas irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Demanda una sola decisión conceptual."
+    },
+    "metadata_editorial": {
+      "lote": "L008",
+      "ruta_origen": "content/items/stand-by/Currículo vs plan vs malla/CB13_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/basica/CB13_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CB13_I02",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Currículo vs plan vs malla",
+    "subtema": "Progresión de aprendizajes",
+    "competencia": "Usar la distinción entre instrumentos curriculares para resolver problemas de secuenciación académica.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Identifica qué instrumento debe revisarse cuando el problema está en la secuencia y progresión de contenidos por grado.",
+    "evidencia": "Selecciona la herramienta curricular adecuada para reorganizar contenidos, prerrequisitos y desempeños.",
+    "tarea": "Resolver un problema de repetición y ubicación tardía de prerrequisitos en un área.",
+    "contexto": "El área de Ciencias Naturales detecta que algunos contenidos se repiten en varios grados, mientras otros prerrequisitos aparecen demasiado tarde.",
+    "enunciado": "¿Qué instrumento conviene revisar principalmente?",
+    "opciones": {
+      "A": "La malla curricular del área, porque permite organizar secuencias, contenidos y desempeños por grado.",
+      "B": "El manual de convivencia, porque regula la progresión conceptual de las asignaturas.",
+      "C": "El horario de clases, porque define los aprendizajes esperados por grado.",
+      "D": "El registro de asistencia, porque allí se establecen los prerrequisitos académicos."
+    },
+    "clave": "A",
+    "justificacion_clave": "Cuando el problema es la progresión interna del aprendizaje, la revisión debe recaer en el instrumento que organiza secuencias y contenidos por grado.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Asigna indebidamente una función curricular a un instrumento de convivencia.",
+      "C": "Confunde organización del tiempo con diseño de aprendizajes.",
+      "D": "Atribuye función curricular a un registro administrativo."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Caso técnico generalizable y sin barreras contextuales irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La situación está acotada y la tarea es única."
+    },
+    "metadata_editorial": {
+      "lote": "L008",
+      "ruta_origen": "content/items/stand-by/Currículo vs plan vs malla/CB13_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CB13_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CB13_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Currículo vs plan vs malla",
+    "subtema": "Plan de estudios",
+    "competencia": "Reconocer la función principal del plan de estudios dentro de la organización curricular institucional.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "BAJA",
+    "claim": "Identifica el instrumento que organiza áreas obligatorias, asignaturas, grados e intensidad horaria.",
+    "evidencia": "Escoge el instrumento correcto frente a distractores administrativos débiles.",
+    "tarea": "Asociar una descripción institucional con el instrumento curricular correspondiente.",
+    "contexto": "Una institución revisa la distribución de áreas obligatorias, asignaturas, grados e intensidad horaria y cómo se articulan con su propuesta pedagógica.",
+    "enunciado": "¿A qué instrumento corresponde principalmente esta revisión?",
+    "opciones": {
+      "A": "Al plan de estudios.",
+      "B": "Al observador del estudiante.",
+      "C": "Al acta de reunión de padres.",
+      "D": "Al inventario de recursos físicos."
+    },
+    "clave": "A",
+    "justificacion_clave": "La descripción corresponde al instrumento que organiza la estructura académica institucional por áreas, grados y tiempos.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Es un instrumento de seguimiento individual, no de organización curricular general.",
+      "C": "Registra acuerdos de reunión, no estructura académica.",
+      "D": "Se relaciona con administración de bienes, no con organización curricular."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El caso es neutro y técnicamente claro."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Ítem claro, pero con distractores poco plausibles y dificultad baja."
+    },
+    "metadata_editorial": {
+      "lote": "L008",
+      "ruta_origen": "content/items/stand-by/Currículo vs plan vs malla/CB13_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/basica/CB13_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B15_I01",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Currículo oficial, oculto, nulo, PEI y DUR 1075",
+    "subtema": "Inclusión curricular en PEI y aula regular",
+    "competencia": "Tomar decisiones curriculares inclusivas coherentes con la participación de todos los estudiantes en el aula regular.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue una propuesta inclusiva estructural de respuestas segregadoras o asistencialistas.",
+    "evidencia": "Elige la alternativa que integra apoyos, DUA y ajustes curriculares en el aula regular.",
+    "tarea": "Evaluar cómo incorporar la inclusión al PEI y a los planes de área.",
+    "contexto": "Durante la revisión del PEI, algunos docentes proponen crear un aula independiente para estudiantes con discapacidad para no alterar el ritmo de los demás grupos.",
+    "enunciado": "¿Qué propuesta se alinea mejor con una inclusión curricular auténtica?",
+    "opciones": {
+      "A": "Integrar apoyos de manera transversal en el aula regular mediante DUA y ajustes curriculares específicos que garanticen participación conjunta.",
+      "B": "Crear un aula separada con currículo simplificado y sin interacción académica en las áreas básicas.",
+      "C": "Mantener a todos en el aula regular, pero evaluarlos exactamente igual sin realizar ajustes.",
+      "D": "Eximir de evaluación y asistencia regular a quienes presenten mayores barreras, garantizando promoción automática."
+    },
+    "clave": "A",
+    "justificacion_clave": "La inclusión curricular exige participación en aula regular con apoyos y ajustes razonables, no segregación ni homogeneización formal.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Representa segregación pedagógica.",
+      "C": "Confunde igualdad con tratamiento uniforme sin apoyos.",
+      "D": "Sustituye el derecho a aprender por una salida asistencialista."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Centrada en barreras y participación, no en etiquetas personales."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea es única y el caso es relevante para la práctica escolar."
+    },
+    "metadata_editorial": {
+      "lote": "L008",
+      "ruta_origen": "content/items/stand-by/Currículo oficial, oculto, nulo, PEI y DUR 1075/IDD_B15_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B15_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B15_I02",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Currículo oficial, oculto, nulo, PEI y DUR 1075",
+    "subtema": "Currículo oculto",
+    "competencia": "Distinguir currículo oculto a partir de tensiones entre planeación formal e interacciones cotidianas.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que la escuela transmite valores y actitudes no escritos a través del clima de aula y las interacciones habituales.",
+    "evidencia": "Selecciona el concepto que explica aprendizajes implícitos que contradicen el discurso formal del aula.",
+    "tarea": "Analizar un caso de incongruencia entre planeación oficial y prácticas relacionales.",
+    "contexto": "Un docente promueve formalmente tolerancia y derechos humanos, pero observa que en las discusiones grupales los estudiantes reproducen exclusión y descalificación como formas de interacción cotidiana.",
+    "enunciado": "¿Qué concepto curricular explica mejor esta situación?",
+    "opciones": {
+      "A": "Currículo oculto, porque valores y conductas implícitas se aprenden en las interacciones cotidianas.",
+      "B": "Currículo nulo, porque los derechos humanos no aparecieron en una evaluación formal.",
+      "C": "Currículo oficial, porque el problema proviene de la falta de estándares escritos sobre empatía.",
+      "D": "Currículo extracurricular, porque las conductas observadas nacen fuera del horario escolar."
+    },
+    "clave": "A",
+    "justificacion_clave": "El currículo oculto nombra justamente los aprendizajes implícitos que circulan en el clima y en las relaciones, aunque no figuren en la planeación escrita.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Confunde omisión de contenidos con transmisión implícita de valores.",
+      "C": "Atribuye el fenómeno a un déficit documental y no a una dinámica relacional.",
+      "D": "Desplaza indebidamente el problema fuera de la experiencia escolar."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El caso es técnicamente pertinente y no patologiza a ningún grupo."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Escenario claro con distinción conceptual precisa."
+    },
+    "metadata_editorial": {
+      "lote": "L008",
+      "ruta_origen": "content/items/stand-by/Currículo oficial, oculto, nulo, PEI y DUR 1075/IDD_B15_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B15_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B15_I03",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Currículo oficial, oculto, nulo, PEI y DUR 1075",
+    "subtema": "Currículo nulo",
+    "competencia": "Reconocer cuándo procesos de aprendizaje previstos en el currículo formal son omitidos en la práctica escolar.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Identifica el currículo nulo cuando habilidades o procesos esenciales desaparecen de la experiencia real de aula aunque estén previstos en la planeación.",
+    "evidencia": "Escoge la opción que señala la omisión de procesos científicos clave frente a otras interpretaciones del caso.",
+    "tarea": "Analizar una práctica docente que sacrifica procesos por cubrir temario.",
+    "contexto": "Para cumplir todo el plan de área, un docente de primaria explica rápidamente todos los temas del libro y deja por fuera actividades de indagación, experimentación y retroalimentación previstas para el año.",
+    "enunciado": "¿Dónde se manifiesta aquí el currículo nulo?",
+    "opciones": {
+      "A": "En las habilidades de indagación y experimentación que estaban previstas, pero fueron omitidas en la práctica de aula.",
+      "B": "En las explicaciones teóricas del libro que sí fueron enseñadas.",
+      "C": "En los comportamientos de indisciplina tolerados mientras se avanzaba con las explicaciones.",
+      "D": "En los aprendizajes que nunca debieron estar en el currículo por no corresponder al nivel."
+    },
+    "clave": "A",
+    "justificacion_clave": "El currículo nulo aparece cuando procesos o contenidos previstos dejan de enseñarse efectivamente por decisiones de tiempo, método o priorización.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Confunde currículo nulo con contenido efectivamente enseñado.",
+      "C": "Desplaza el foco al clima de aula y no a la omisión curricular.",
+      "D": "Confunde error de diseño con desaparición del currículo en la práctica."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Caso pedagógico general y sin barreras irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La distinción conceptual está bien anclada en el caso."
+    },
+    "metadata_editorial": {
+      "lote": "L008",
+      "ruta_origen": "content/items/stand-by/Currículo oficial, oculto, nulo, PEI y DUR 1075/IDD_B15_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B15_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B15_I04",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Currículo oficial, oculto, nulo, PEI y DUR 1075",
+    "subtema": "Jornada Única y formación integral",
+    "competencia": "Tomar decisiones curriculares coherentes con el sentido formativo de la Jornada Única.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue entre ampliar tiempo para formación integral y usarlo solo para intensificación mecánica de áreas instrumentales.",
+    "evidencia": "Escoge la propuesta que articula tiempo ampliado, PEI y desarrollo integral.",
+    "tarea": "Evaluar el mejor uso curricular de horas adicionales en Jornada Única.",
+    "contexto": "Al pasar a Jornada Única, un grupo propone usar todas las horas adicionales para duplicar clases magistrales de Matemáticas y Lenguaje con ejercicios repetitivos.",
+    "enunciado": "¿Qué propuesta es más adecuada para ese tiempo adicional?",
+    "opciones": {
+      "A": "Integrar proyectos de arte, deporte, ciencia y ciudadanía que articulen competencias básicas con desarrollo socioemocional.",
+      "B": "Aumentar únicamente horas de Matemáticas y Lenguaje bajo modalidad de dictado y copia.",
+      "C": "Dejar el horario extendido sin planeación pedagógica para recreación espontánea sin mediación docente.",
+      "D": "Asignar las horas adicionales a clases magistrales desconectadas del plan institucional."
+    },
+    "clave": "A",
+    "justificacion_clave": "El tiempo ampliado gana sentido cuando se integra a una formación más rica, articulada al PEI y no reducida a intensificación mecánica.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Confunde calidad con repetición intensiva de áreas instrumentales.",
+      "C": "Renuncia al propósito curricular del tiempo escolar ampliado.",
+      "D": "Propone una extensión horaria sin coherencia institucional."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Plantea una tensión curricular real sin depender de contexto regional específico."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La decisión a evaluar está claramente focalizada."
+    },
+    "metadata_editorial": {
+      "lote": "L008",
+      "ruta_origen": "content/items/stand-by/Currículo oficial, oculto, nulo, PEI y DUR 1075/IDD_B15_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B15_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B15_I06",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Currículo oficial, oculto, nulo, PEI y DUR 1075",
+    "subtema": "Coherencia entre PEI, convivencia y currículo",
+    "competencia": "Alinear decisiones de convivencia y planes de área con el horizonte pedagógico del PEI.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que PEI, Manual de Convivencia y currículo deben guardar coherencia interna y no contradecir el horizonte institucional.",
+    "evidencia": "Escoge la solución que corrige una incoherencia estructural entre documentos y prácticas escolares.",
+    "tarea": "Resolver una discordancia entre principios pedagógicos institucionales y regulación de la convivencia.",
+    "contexto": "El PEI promueve un horizonte humanista y reflexivo, pero el Manual de Convivencia sanciona la confrontación argumental respetuosa y los planes de área privilegian obediencia y repetición.",
+    "enunciado": "¿Qué decisión institucional es más adecuada para armonizar estos documentos?",
+    "opciones": {
+      "A": "Modificar el Manual de Convivencia y los planes de área para reconocer y valorar la argumentación crítica, alineándolos con el PEI.",
+      "B": "Mantener el Manual de Convivencia sin cambios y flexibilizar solo algunas evaluaciones del área.",
+      "C": "Reformular el PEI hacia un enfoque de obediencia pasiva para ajustarlo a las prácticas disciplinarias existentes.",
+      "D": "Dejar que cada docente decida en su aula si permite o no la libre expresión, sin tocar los documentos institucionales."
+    },
+    "clave": "A",
+    "justificacion_clave": "Cuando PEI, convivencia y currículo se contradicen, la salida defendible es restaurar coherencia institucional con el horizonte pedagógico adoptado.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Ajusta solo un borde del problema y mantiene la incoherencia estructural.",
+      "C": "Sacrifica el horizonte institucional para legitimar prácticas punitivas.",
+      "D": "Promueve arbitrariedad individual en lugar de consistencia institucional."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Caso institucional neutral y pertinente para toma de decisiones pedagógicas."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El conflicto está bien delimitado y la tarea es única."
+    },
+    "metadata_editorial": {
+      "lote": "L008",
+      "ruta_origen": "content/items/stand-by/Currículo oficial, oculto, nulo, PEI y DUR 1075/IDD_B15_I06.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B15_I06.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  }
+]
