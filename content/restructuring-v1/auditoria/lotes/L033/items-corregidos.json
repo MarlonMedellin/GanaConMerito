@@ -1,0 +1,355 @@
+[
+  {
+    "id_item": "MTV_B22_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Aprendizaje significativo Ausubel",
+    "subtema": "Uso de saberes previos",
+    "competencia": "Analiza situaciones de aula y selecciona estrategias que conectan conocimiento nuevo con experiencias previas del estudiante.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce una decisión didáctica que activa saberes previos para facilitar comprensión con sentido.",
+    "evidencia": "Selecciona la alternativa que mejor justifica por qué partir de experiencias de reparto favorece la introducción del concepto de fracción.",
+    "tarea": "Analizar una decisión de aula y elegir la explicación pedagógica más pertinente.",
+    "contexto": "Antes de explicar fracciones, un docente pregunta a sus estudiantes cómo reparten una pizza, una chocolatina o una botella de jugo entre varias personas. Luego conecta esas experiencias con el concepto matemático.",
+    "enunciado": "Antes de explicar fracciones, un docente pregunta a sus estudiantes cómo reparten una pizza, una chocolatina o una botella de jugo entre varias personas. Luego conecta esas experiencias con el concepto matemático.\n\n¿Cuál es la mejor justificación pedagógica de esta decisión?",
+    "opciones": {
+      "A": "Activa saberes previos que sirven de apoyo para comprender el nuevo concepto antes de formalizarlo.",
+      "B": "Sustituye la necesidad de explicación docente porque el descubrimiento libre basta para construir el concepto.",
+      "C": "Garantiza el aprendizaje correcto porque las experiencias cotidianas eliminan toda dificultad conceptual.",
+      "D": "Reduce la enseñanza de fracciones a ejemplos concretos y evita que los estudiantes avancen hacia abstracciones matemáticas."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opción A es la mejor respuesta porque la secuencia parte de experiencias conocidas para enlazar el nuevo contenido con significados ya disponibles en los estudiantes.",
+    "distractores_funcion": {
+      "A": "Clave correcta: reconoce el uso de saberes previos como soporte para comprensión con sentido.",
+      "B": "Representa la confusión entre mediación docente y descubrimiento libre sin estructura.",
+      "C": "Modela la sobregeneralización de que el contexto cotidiano resuelve por sí solo la comprensión conceptual.",
+      "D": "Refleja el error de pensar que contextualizar impide avanzar a la formalización."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No se detectan sesgos de representación; el riesgo principal es que la clave todavía remite con facilidad a una etiqueta teórica conocida."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Situación clara y cercana al aula, con una sola tarea cognitiva."
+    },
+    "metadata_editorial": {
+      "lote": "L033",
+      "ruta_origen": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/MTV_B22_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "MTV_B22_I06",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Aprendizaje significativo Ausubel",
+    "subtema": "Reconstruccion de saberes previos",
+    "competencia": "Usa ideas previas de los estudiantes como punto de partida para promover comprensión conceptual más precisa.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Identifica una intervención docente que aprovecha concepciones iniciales para reorganizar el aprendizaje.",
+    "evidencia": "Selecciona la respuesta que mejor explica por qué una docente trabaja con la idea previa errónea en lugar de descartarla de inmediato.",
+    "tarea": "Analizar una intervención de aula y elegir la interpretación pedagógica más defendible.",
+    "contexto": "Al iniciar una clase de ciencias, varios estudiantes afirman que el Sol es amarillo porque así lo dibujan desde pequeños. La docente usa esa idea como punto de partida para observar imágenes, analizar luz y discutir percepción del color.",
+    "enunciado": "Al iniciar una clase de ciencias, varios estudiantes afirman que el Sol es amarillo porque así lo dibujan desde pequeños. La docente usa esa idea como punto de partida para observar imágenes, analizar luz y discutir percepción del color.\n\n¿Qué está haciendo pedagógicamente la docente?",
+    "opciones": {
+      "A": "Aprovecha una idea previa para ayudar a reorganizar la comprensión del fenómeno con nueva evidencia.",
+      "B": "Confirma la respuesta inicial para no generar tensión cognitiva en los estudiantes.",
+      "C": "Evita trabajar el error y reemplaza la discusión por la explicación final del libro.",
+      "D": "Convierte la observación en un ejercicio memorístico de nombres científicos sobre el color."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opción A es la mejor respuesta porque la docente parte de una concepción previa y la somete a contraste con evidencia para favorecer comprensión más elaborada.",
+    "distractores_funcion": {
+      "A": "Clave correcta: describe uso pedagógico del error inicial como base de reconstrucción conceptual.",
+      "B": "Representa el error de evitar toda tensión intelectual a costa del aprendizaje.",
+      "C": "Modela la práctica de cancelar la mediación sobre el error y volver a transmisión cerrada.",
+      "D": "Recoge la desviación hacia nomenclatura sin comprensión del fenómeno."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No se observan barreras injustificadas; conviene simplificar aún más el lenguaje teórico antes de banco activo."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La situación es concreta, aunque la versión final debería reducir tecnicismos residuales."
+    },
+    "metadata_editorial": {
+      "lote": "L033",
+      "ruta_origen": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I06.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/MTV_B22_I06.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "MTV_B22_I07",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Aprendizaje significativo Ausubel",
+    "subtema": "Sentido de formulas y conceptos",
+    "competencia": "Selecciona estrategias que conectan expresiones formales con significados conceptuales y fenómenos observables.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la intervención docente más pertinente para evitar aprendizaje arbitrario de una fórmula.",
+    "evidencia": "Selecciona la opción que convierte una expresión formal en una relación comprensible para el estudiante.",
+    "tarea": "Elegir la mejor estrategia didáctica para dar sentido a un conocimiento formal.",
+    "contexto": "Un estudiante aprende una fórmula, pero no sabe cuándo usarla, qué representa cada variable ni cómo se relaciona con un fenómeno real. La docente quiere evitar que el aprendizaje sea arbitrario.",
+    "enunciado": "Un estudiante aprende una fórmula, pero no sabe cuándo usarla, qué representa cada variable ni cómo se relaciona con un fenómeno real. La docente quiere evitar que el aprendizaje sea arbitrario.\n\n¿Qué estrategia es la más pertinente?",
+    "opciones": {
+      "A": "Repetir varias veces el algoritmo para asegurar retención exacta del procedimiento.",
+      "B": "Diseñar situaciones en las que el estudiante conecte las variables con conceptos previos y fenómenos observables.",
+      "C": "Eliminar el uso de fórmulas y reemplazarlo por exploraciones libres sin formalización.",
+      "D": "Evaluar memoria de nombres y símbolos antes de trabajar cualquier aplicación."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opción B es la mejor porque conecta la forma simbólica con significado conceptual y uso en situaciones reconocibles, lo que evita aprendizaje meramente mecánico.",
+    "distractores_funcion": {
+      "A": "Refleja la salida memorística que mantiene el problema inicial.",
+      "B": "Clave correcta: propone una mediación observable para dar sentido al conocimiento formal.",
+      "C": "Modela el error de oponer comprensión y formalización como si fueran incompatibles.",
+      "D": "Representa una respuesta evaluativa centrada en memoria aislada, no en comprensión."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El contexto es transversal y no introduce barreras irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Stem focalizado y opciones claramente distinguibles."
+    },
+    "metadata_editorial": {
+      "lote": "L033",
+      "ruta_origen": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I07.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/MTV_B22_I07.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "MTV_B22_I08",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Aprendizaje significativo Ausubel",
+    "subtema": "Evaluacion de comprension y transferencia",
+    "competencia": "Diseña o reconoce evidencias de evaluación centradas en comprensión, relación y transferencia conceptual.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue una evaluación de comprensión significativa frente a una de simple recuerdo literal.",
+    "evidencia": "Selecciona la alternativa que mejor describe qué se busca verificar cuando el estudiante explica, representa, compara y aplica un concepto.",
+    "tarea": "Analizar un diseño de evaluación y elegir la interpretación más pertinente.",
+    "contexto": "Después de enseñar un tema, la docente no pregunta solo definiciones. Pide que los estudiantes expliquen con sus palabras, representen el concepto, lo comparen con otro y resuelvan un caso nuevo.",
+    "enunciado": "Después de enseñar un tema, la docente no pregunta solo definiciones. Pide que los estudiantes expliquen con sus palabras, representen el concepto, lo comparen con otro y resuelvan un caso nuevo.\n\n¿Qué pretende verificar principalmente con estas actividades?",
+    "opciones": {
+      "A": "La retención literal de definiciones y frases del texto guía.",
+      "B": "La comprensión con sentido evidenciada en traducción, relación y transferencia a situaciones nuevas.",
+      "C": "La destreza motriz implicada en copiar organizadores y diagramas del tablero.",
+      "D": "La capacidad de descubrir contenidos sin apoyo previo de enseñanza formal."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opción B es la mejor porque recoge evidencias de comprensión más allá de la repetición literal y pone a prueba el uso del conocimiento en nuevas situaciones.",
+    "distractores_funcion": {
+      "A": "Representa la evaluación memorística que el caso justamente supera.",
+      "B": "Clave correcta: resume transferencia, reformulación y relación conceptual como evidencia de comprensión.",
+      "C": "Introduce una dimensión irrelevante al constructo evaluado.",
+      "D": "Confunde evaluación de comprensión con ausencia de instrucción."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El ítem es transversal y favorece interpretación clara del propósito evaluativo."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Buena focalización de la tarea y contraste claro entre opciones."
+    },
+    "metadata_editorial": {
+      "lote": "L033",
+      "ruta_origen": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I08.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/MTV_B22_I08.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "MTV_B22_I09",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Aprendizaje significativo Ausubel",
+    "subtema": "Contextualizacion antes de formalizacion",
+    "competencia": "Valora secuencias didácticas que parten de contextos familiares para construir conceptos formales.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce una secuencia didáctica que usa contextos familiares como puente hacia la formalización conceptual.",
+    "evidencia": "Selecciona la alternativa que mejor explica por qué una secuencia desde ejemplos cotidianos favorece comprensión de porcentajes.",
+    "tarea": "Analizar una secuencia de enseñanza y elegir la justificación pedagógica más defendible.",
+    "contexto": "Un docente enseña porcentajes usando ejemplos de descuentos, encuestas del curso, consumo de agua y estadísticas deportivas. Luego formaliza el procedimiento matemático.",
+    "enunciado": "Un docente enseña porcentajes usando ejemplos de descuentos, encuestas del curso, consumo de agua y estadísticas deportivas. Luego formaliza el procedimiento matemático.\n\n¿Por qué esta secuencia puede favorecer una comprensión más sólida?",
+    "opciones": {
+      "A": "Porque elimina la necesidad de abstracción matemática y mantiene todo en el plano cotidiano.",
+      "B": "Porque ofrece referencias conocidas que facilitan comprender el concepto antes de formalizarlo.",
+      "C": "Porque evita la explicación docente y delega el aprendizaje al descubrimiento espontáneo.",
+      "D": "Porque usa temas motivantes para fijar memoria procedimental sin necesidad de comprensión."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opción B es la mejor porque parte de situaciones familiares que ayudan a enlazar el nuevo concepto con experiencias previas antes de avanzar a la formalización.",
+    "distractores_funcion": {
+      "A": "Modela el error de confundir contextualización con renuncia a la abstracción.",
+      "B": "Clave correcta: reconoce la función de puente entre experiencia conocida y concepto formal.",
+      "C": "Representa una falsa oposición entre mediación docente y contextualización.",
+      "D": "Reduce la estrategia a motivación superficial y memoria mecánica."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No se identifican sesgos, aunque la clave sigue siendo muy visible por formulación."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El caso es concreto y la tarea es única."
+    },
+    "metadata_editorial": {
+      "lote": "L033",
+      "ruta_origen": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I09.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/MTV_B22_I09.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "MTV_B22_I12",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Aprendizaje significativo Ausubel",
+    "subtema": "Condiciones integrales para aprendizaje con sentido",
+    "competencia": "Reconoce configuraciones didácticas que articulan saberes previos, organización del material y aplicación contextualizada.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Identifica el conjunto de acciones que mejor favorece una transición desde enseñanza memorística hacia aprendizaje con sentido.",
+    "evidencia": "Selecciona la alternativa que integra diagnóstico de saberes previos, organización del contenido y transferencia.",
+    "tarea": "Elegir la combinación de acciones pedagógicas más coherente con una enseñanza orientada a comprensión.",
+    "contexto": "En una autoevaluación institucional, los docentes reflexionan sobre cómo transformar sus prácticas de aula para pasar de una enseñanza memorística a una orientada al aprendizaje con sentido.",
+    "enunciado": "En una autoevaluación institucional, los docentes reflexionan sobre cómo transformar sus prácticas de aula para pasar de una enseñanza memorística a una orientada al aprendizaje con sentido.\n\n¿Cuál conjunto de acciones aporta más a ese propósito?",
+    "opciones": {
+      "A": "Diagnosticar saberes previos, organizar el material con claridad y proponer aplicación en problemas contextualizados.",
+      "B": "Mantener dictado, copia textual y repetición para asegurar retención de largo plazo.",
+      "C": "Eliminar toda guía docente para dejar el aprendizaje al descubrimiento libre y no estructurado.",
+      "D": "Fragmentar el contenido en respuestas aisladas reforzadas por repetición inmediata."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opción A es la mejor porque articula conocimiento previo, organización del contenido y transferencia, tres rasgos centrales de una enseñanza orientada a comprensión.",
+    "distractores_funcion": {
+      "A": "Clave correcta: integra condiciones necesarias para aprendizaje con sentido.",
+      "B": "Representa el modelo memorístico que el caso busca superar.",
+      "C": "Modela una falsa equivalencia entre comprensión y ausencia de guía docente.",
+      "D": "Reduce el aprendizaje a fragmentos repetidos sin integración conceptual."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No se identifican sesgos; el punto débil sigue siendo la ventaja demasiado evidente de la opción correcta."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El planteamiento es comprensible, aunque conviene equilibrar mejor la longitud y plausibilidad de opciones antes de banco activo."
+    },
+    "metadata_editorial": {
+      "lote": "L033",
+      "ruta_origen": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I12.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/MTV_B22_I12.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "MTV_B22_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I01.json",
+    "motivo": "Premia reconocimiento de una definición central de Ausubel y no una decisión docente observable.",
+    "lote": "L033"
+  },
+  {
+    "id_item": "MTV_B22_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I03.json",
+    "motivo": "Obliga a clasificar el caso con jerga teórica y no a seleccionar una intervención pedagógica concreta.",
+    "lote": "L033"
+  },
+  {
+    "id_item": "MTV_B22_I04",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I04.json",
+    "motivo": "Se concentra en nombrar un recurso técnico y no en juzgar una decisión de aula observable.",
+    "lote": "L033"
+  },
+  {
+    "id_item": "MTV_B22_I05",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I05.json",
+    "motivo": "La clave es demasiado visible y la pregunta se resuelve como explicación doctrinal general.",
+    "lote": "L033"
+  },
+  {
+    "id_item": "MTV_B22_I10",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I10.json",
+    "motivo": "Formula una tesis amplia sobre el rol docente, pero no exige una decisión suficientemente fina y observable.",
+    "lote": "L033"
+  },
+  {
+    "id_item": "MTV_B22_I11",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I11.json",
+    "motivo": "Solapa un eje ya mejor cubierto por ítems previamente auditados sobre conflicto cognitivo y mantiene exceso de teorización.",
+    "lote": "L033"
+  },
+  {
+    "id_item": "IDD_B10_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento/IDD_B10_I01.json",
+    "motivo": "Es crítica doctrinal al modelo transmisivo, pero no convierte el problema en una actuación profesional específica.",
+    "lote": "L033"
+  },
+  {
+    "id_item": "IDD_B10_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento/IDD_B10_I02.json",
+    "motivo": "Pregunta taxonómica sobre tipos de memoria, con baja observabilidad de decisión docente.",
+    "lote": "L033"
+  },
+  {
+    "id_item": "IDD_B10_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento/IDD_B10_I03.json",
+    "motivo": "Pide reconocer la función del lenguaje desde Vygotsky como etiqueta teórica más que como mediación docente evaluable.",
+    "lote": "L033"
+  },
+  {
+    "id_item": "IDD_B10_I04",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento/IDD_B10_I04.json",
+    "motivo": "Es una disquisición filosófica sobre constructivismo radical con valor muy bajo para banco docente observable.",
+    "lote": "L033"
+  },
+  {
+    "id_item": "IDD_B10_I05",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento/IDD_B10_I05.json",
+    "motivo": "El contexto de sujeto situado no se traduce en una decisión pedagógica concreta y la clave queda en un plano doctrinal general.",
+    "lote": "L033"
+  }
+]
