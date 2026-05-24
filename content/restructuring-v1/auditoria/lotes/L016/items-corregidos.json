@@ -1,0 +1,260 @@
+[
+  {
+    "id_item": "EFCC_B04_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Evaluación integral por competencias",
+    "subtema": "Evidencia de desempeño y tareas auténticas",
+    "competencia": "Diseña evaluaciones que integran evidencia conceptual, procedimental y actitudinal mediante tareas auténticas y criterios transparentes.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue una evaluación por competencias centrada en evidencias de desempeño de un esquema dominado por pruebas memorísticas o externalización de la evaluación.",
+    "evidencia": "Selecciona la propuesta que combina proyectos, portafolios, rúbricas y participación evaluativa del estudiante para valorar desempeños complejos.",
+    "tarea": "Elegir el diseño de evaluación institucional más coherente con una evaluación integral por competencias.",
+    "contexto": "Un establecimiento educativo decide reformar su SIEE porque la evaluación se concentra casi totalmente en exámenes de opción múltiple, lo que ha debilitado el interés de los estudiantes por argumentar, experimentar y construir evidencias de desempeño.",
+    "enunciado": "¿Cuál propuesta metodológica está mejor alineada con una evaluación integral del desempeño por competencias?",
+    "opciones": {
+      "A": "Implementar proyectos integrados de aula, portafolios de evidencias y rúbricas analíticas, combinando heteroevaluación, autoevaluación y coevaluación.",
+      "B": "Mantener únicamente pruebas escritas de opción múltiple y aumentar la dificultad teórica y la rapidez exigida para responder.",
+      "C": "Eliminar toda evaluación académica y aprobar solo con reportes cualitativos de convivencia y actitud.",
+      "D": "Contratar pruebas estandarizadas mensuales externas para que asignen directamente las notas del periodo."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opción A es la única que genera evidencia plural y auténtica del desempeño: integra saber conceptual, procedimental y actitudinal, hace visibles procesos y permite criterios transparentes de valoración.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Representa continuidad del modelo memorístico que el caso busca superar.",
+      "C": "Anula indebidamente la dimensión cognitiva y académica del aprendizaje.",
+      "D": "Desplaza la función evaluativa docente y reduce autonomía institucional."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "La propuesta de evaluación amplía formas de demostrar aprendizaje y favorece accesibilidad pedagógica; aun así conviene pilotear si los distractores compiten lo suficiente."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Caso institucional claro y opciones distinguibles, aunque el contraste de calidad entre ellas sugiere pilotaje."
+    },
+    "metadata_editorial": {
+      "lote": "L016",
+      "ruta_origen": "content/items/stand-by/Evaluación integral por competencias/EFCC_B04_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/EFCC_B04_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "EFCC_B01_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Evaluación tecnicista, punitiva y formativa",
+    "subtema": "Literalidad mecánica frente a comprensión conceptual",
+    "competencia": "Emite juicio pedagógico sobre criterios de calificación y sus efectos en la comprensión del estudiante.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce cuándo una práctica de evaluación privilegia reproducción textual sobre comprensión conceptual genuina.",
+    "evidencia": "Selecciona la interpretación pedagógica más sólida ante una calificación que premia únicamente la definición literal.",
+    "tarea": "Juzgar una práctica de calificación en un caso breve de respuesta literal versus explicación con palabras propias.",
+    "contexto": "En ciencias, dos estudiantes responden una definición: uno la repite de forma literal y otro la explica correctamente con palabras propias. El docente otorga la máxima nota solo a la versión textual.",
+    "enunciado": "Si el docente otorga la máxima nota solo a la respuesta literal, ¿qué caracteriza mejor esa práctica?",
+    "opciones": {
+      "A": "Favorece evaluación formativa porque reduce la variabilidad del lenguaje de respuesta.",
+      "B": "Refuerza una lógica tecnicista de reproducción y limita la valoración de comprensión conceptual.",
+      "C": "Promueve autonomía intelectual al exigir fidelidad textual a la fuente.",
+      "D": "Garantiza justicia restaurativa porque evita interpretaciones subjetivas."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opción B es la mejor respuesta porque identifica el problema central del caso: la calificación se centra en fidelidad literal y no en evidencia de comprensión, con lo que castiga formas válidas de explicar el concepto.",
+    "distractores_funcion": {
+      "A": "Confunde control formal del lenguaje con acompañamiento formativo.",
+      "B": "Clave correcta.",
+      "C": "Asocia erróneamente obediencia textual con autonomía intelectual.",
+      "D": "Introduce un concepto ajeno al tipo de decisión pedagógica evaluada."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El caso protege la diversidad expresiva del estudiante y evita que el constructo se contamine con memoria verbal literal; aun así, conviene pilotear la competitividad de distractores."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Caso breve y una sola tarea cognitiva; el riesgo residual está en la obviedad relativa de algunas opciones."
+    },
+    "metadata_editorial": {
+      "lote": "L016",
+      "ruta_origen": "content/items/stand-by/Evaluación tecnicista, punitiva y formativa/EFCC_B01_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/EFCC_B01_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "EFCC_B01_I02",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Evaluación tecnicista, punitiva y formativa",
+    "subtema": "Prácticas punitivas en aula",
+    "competencia": "Analiza la coherencia entre instrumentos de evaluación, criterios comunicados y propósito formativo.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce cuándo una evaluación funciona como sanción y no como apoyo al aprendizaje.",
+    "evidencia": "Selecciona la crítica pedagógica mejor fundamentada frente a un quiz sorpresa desalineado y sin retroalimentación.",
+    "tarea": "Valorar pedagógicamente una práctica evaluativa punitiva.",
+    "contexto": "Un docente aplica un quiz sorpresa no alineado con lo trabajado y lo usa para bajar la nota sin retroalimentar a los estudiantes.",
+    "enunciado": "¿Cuál valoración pedagógica corresponde mejor a esta situación?",
+    "opciones": {
+      "A": "Es pertinente porque la sorpresa asegura por sí sola una evaluación objetiva.",
+      "B": "Es punitiva cuando sanciona sin criterios previos, sin alineación curricular y sin retroalimentación de mejora.",
+      "C": "Es coevaluación porque el estudiante responde en forma individual.",
+      "D": "Es formativa porque cualquier calificación genera aprendizaje automático."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opción B es la única que integra los tres problemas relevantes del caso: ausencia de criterios previos, desalineación con lo enseñado y falta de retroalimentación, lo que convierte la evaluación en castigo y no en apoyo al aprendizaje.",
+    "distractores_funcion": {
+      "A": "Confunde sorpresa con objetividad.",
+      "B": "Clave correcta.",
+      "C": "Confunde trabajo individual con coevaluación.",
+      "D": "Asume sin fundamento que toda calificación produce aprendizaje."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "La dificultad relevante es el análisis de coherencia pedagógica; no requiere familiaridad con una institución específica."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Enunciado breve y opciones nítidas; el distractor A compite de forma razonable con la idea errada de objetividad por sorpresa."
+    },
+    "metadata_editorial": {
+      "lote": "L016",
+      "ruta_origen": "content/items/stand-by/Evaluación tecnicista, punitiva y formativa/EFCC_B01_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/EFCC_B01_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "EFCC_B01_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Evaluación tecnicista, punitiva y formativa/EFCC_B01_I03.json",
+    "motivo": "La pregunta termina pidiendo la definición funcional de evaluación procesual formativa; el contraste entre opciones es demasiado evidente y la tarea no exige una decisión situada real.",
+    "lote": "L016"
+  },
+  {
+    "id_item": "EFCC_B01_I04",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Evaluación tecnicista, punitiva y formativa",
+    "subtema": "Recuperación académica con sentido formativo",
+    "competencia": "Diseña estrategias de recuperación que diagnostican dificultades, ofrecen mediación y exigen nueva evidencia de aprendizaje.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce por qué una recuperación basada solo en copia mecánica contradice la evaluación formativa.",
+    "evidencia": "Selecciona la crítica que enfatiza diagnóstico, retroalimentación y nueva evidencia de comprensión frente a una tarea punitiva de transcripción.",
+    "tarea": "Analizar una estrategia de recuperación y valorar su coherencia con el enfoque formativo.",
+    "contexto": "Un estudiante no alcanza los desempeños esperados y, como recuperación, el docente le exige transcribir todo el cuaderno sin revisar dificultades ni ofrecer nueva oportunidad para demostrar comprensión.",
+    "enunciado": "¿Por qué esta práctica contradice los principios de la evaluación formativa?",
+    "opciones": {
+      "A": "Porque toda recuperación debe eliminar cualquier exigencia académica.",
+      "B": "Porque copiar mucho siempre demuestra comprensión profunda del tema.",
+      "C": "Porque la recuperación formativa consiste únicamente en subir la nota sin nuevas evidencias.",
+      "D": "Porque la transcripción mecánica no identifica dificultades, no ofrece retroalimentación ni permite evidenciar comprensión o progreso."
+    },
+    "clave": "D",
+    "justificacion_clave": "La opción D es la única que identifica los rasgos irrenunciables de una recuperación formativa: diagnosticar la dificultad, mediar el proceso y ofrecer nueva evidencia de aprendizaje, no solo castigar con trabajo mecánico.",
+    "distractores_funcion": {
+      "A": "Confunde enfoque formativo con ausencia de exigencia.",
+      "B": "Supone erróneamente que la copia demuestra comprensión.",
+      "C": "Reduce la recuperación a manipulación de nota sin evidencia.",
+      "D": "Clave correcta."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El ítem evita castigar ritmos de escritura y centra el juicio en la calidad pedagógica de la recuperación."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Caso concreto, opciones claras y una sola decisión pedagógica relevante."
+    },
+    "metadata_editorial": {
+      "lote": "L016",
+      "ruta_origen": "content/items/stand-by/Evaluación tecnicista, punitiva y formativa/EFCC_B01_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/EFCC_B01_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "DIL_B03_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Evolución normativa - Código del Menor vs. Ley 1098/DIL_B03_I01.json",
+    "motivo": "El ítem se apoya en recordar el contraste doctrinal entre situación irregular y protección integral, sin llevar esa diferencia a una decisión institucional o jurídica situada.",
+    "lote": "L016"
+  },
+  {
+    "id_item": "DIL_B03_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Evolución normativa - Código del Menor vs. Ley 1098/DIL_B03_I02.json",
+    "motivo": "La tarea es una interpretación plana del concepto de situación irregular; predomina memoria jurídica y los distractores no ofrecen competencia suficiente.",
+    "lote": "L016"
+  },
+  {
+    "id_item": "DIL_B03_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Evolución normativa - Código del Menor vs. Ley 1098/DIL_B03_I03.json",
+    "motivo": "Aunque el contexto intenta situar el caso, la respuesta correcta depende sobre todo de recordar una formulación doctrinal general sobre titularidad de derechos y prevalencia del interés superior.",
+    "lote": "L016"
+  },
+  {
+    "id_item": "DIL_B03_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Evolución normativa - Código del Menor vs. Ley 1098",
+    "subtema": "Protección integral y corresponsabilidad institucional",
+    "competencia": "Aplica el principio de protección integral a decisiones preventivas y de activación de rutas en la institución educativa.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA_ALTA",
+    "claim": "Reconoce que la protección integral exige prevención, detección temprana y activación oportuna de rutas, no solo reacción ante daño consumado.",
+    "evidencia": "Selecciona la respuesta que traduce el principio de corresponsabilidad a actuaciones concretas del docente y de la institución.",
+    "tarea": "Elegir la implicación operativa más adecuada del principio de protección integral en el rol escolar.",
+    "contexto": "Una institución sostiene que solo debe actuar frente a los derechos de niños, niñas y adolescentes cuando existe abandono evidente, infracción o una situación extrema. Otro equipo recuerda que la Ley 1098 trabaja desde protección integral.",
+    "enunciado": "¿Qué implica operativamente para el rol del docente y de la institución educativa el principio de protección integral consagrado en la Ley 1098 en el marco de la corresponsabilidad?",
+    "opciones": {
+      "A": "Implementar acciones de prevención, promoción, detección temprana y activación oportuna de rutas ante amenazas o vulneraciones de derechos, articulándose con familia y Estado.",
+      "B": "Asumir la representación judicial y los costos de manutención total de los estudiantes vulnerados.",
+      "C": "Delegar exclusivamente la detección y el reporte en las comisarías de familia para no afectar el calendario académico.",
+      "D": "Intervenir solo cuando exista una orden judicial expresa emitida por un juez."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opción A es la mejor respuesta porque lleva el principio de protección integral a actuaciones escolares concretas: prevenir, detectar, reportar y articular rutas sin esperar daño extremo ni orden judicial previa.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Confunde corresponsabilidad con sustitución total de obligaciones civiles y financieras.",
+      "C": "Traslada indebidamente una obligación legal propia de la institución a otra autoridad.",
+      "D": "Reduce el enfoque garantista a reacción judicial tardía."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No estigmatiza a la niñez vulnerada; la dificultad se centra en aplicar un principio jurídico a una decisión escolar concreta."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El contexto es claro y la tarea única; conviene pilotear si el distractor B compite en exceso por su tono de protección."
+    },
+    "metadata_editorial": {
+      "lote": "L016",
+      "ruta_origen": "content/items/stand-by/Evolución normativa - Código del Menor vs. Ley 1098/DIL_B03_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/DIL_B03_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  }
+]
