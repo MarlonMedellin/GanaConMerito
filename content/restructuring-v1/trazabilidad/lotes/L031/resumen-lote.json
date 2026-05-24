@@ -1,0 +1,63 @@
+{
+  "lote": "L031",
+  "repository": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaAuditoria": "2026-05-24",
+  "decisionGlobalLote": "SIN_ITEMS_NUEVOS_PARA_AUDITAR",
+  "calidadGlobal": "NO_APLICA",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Currículo y Contexto Social/",
+    "content/items/stand-by/Currículo vs plan vs malla/",
+    "content/items/stand-by/Evaluación colaborativa, coevaluación y metacognición/"
+  ],
+  "totalItemsDetectados": 8,
+  "totalItemsLeidos": 0,
+  "itemsOmitidosPorAuditoriaPrevia": 8,
+  "conteoDecisiones": {
+    "OMITIDO_POR_AUDITORIA_PREVIA": 8,
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 0,
+    "DESCARTAR": 0
+  },
+  "conteoRequiereRevisionHumana": 0,
+  "fuentesConsultadas": [
+    "content/restructuring-v1/trazabilidad/lotes/L009/decisiones-L009-A.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L008/decisiones.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L015/decisiones.csv",
+    "content/items/stand-by/Currículo y Contexto Social/CB01_I01.json",
+    "content/items/stand-by/Currículo y Contexto Social/CB01_I02.json",
+    "content/items/stand-by/Currículo y Contexto Social/CB01_I03.json",
+    "content/items/stand-by/Currículo vs plan vs malla/CB13_I01.json",
+    "content/items/stand-by/Currículo vs plan vs malla/CB13_I02.json",
+    "content/items/stand-by/Currículo vs plan vs malla/CB13_I03.json",
+    "content/items/stand-by/Evaluación colaborativa, coevaluación y metacognición/IDD_B13_I02.json",
+    "content/items/stand-by/Evaluación colaborativa, coevaluación y metacognición/IDD_B13_I03.json"
+  ],
+  "fuentesAusentes": [],
+  "hallazgosPrincipales": [
+    "Los tres items de Currículo y Contexto Social ya quedaron auditados en L009-A, por lo que este lote los omite sin reproceso.",
+    "Los tres items de Currículo vs plan vs malla ya quedaron auditados en L008, asi que se registran como omitidos por auditoria previa.",
+    "Los dos items visibles de Evaluación colaborativa, coevaluación y metacognición ya fueron auditados en L015 y no quedaron items nuevos sin trazabilidad previa en este recorte."
+  ],
+  "riesgosSistemicos": [
+    "No se detectaron items nuevos auditables dentro del recorte visible del lote; cualquier ampliacion futura debe volver a verificar trazabilidad previa antes de reprocesar.",
+    "La tercera carpeta solo devolvio dos items visibles en las consultas del conector y ambos ya tenian decision previa registrada en L015."
+  ],
+  "incidenciasGithubOFuente": [
+    "No existian previamente las salidas de L031 y se crearon en este ciclo.",
+    "No hubo necesidad de reprocesar contenido porque toda la muestra visible ya tenia trazabilidad previa en lotes anteriores."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L031/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L031/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L031/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L031/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "noModificoContentItemsStandBy": true,
+    "noModificoTrashJson": true,
+    "noModificoBitacorasGlobales": true,
+    "noModificoOtrosLotes": true
+  }
+}
