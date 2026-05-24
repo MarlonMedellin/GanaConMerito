@@ -1,0 +1,412 @@
+[
+  {
+    "id_item": "CEOL_B08_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Motivacion didactica y autorregulacion",
+    "subtema": "Respuesta docente ante frustracion y baja participacion",
+    "competencia": "Diseñar respuestas de aula que sostengan el rigor academico mientras fortalecen autorregulacion, resiliencia y persistencia frente al error.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado distingue una intervencion pedagógica que cuida la motivacion sin bajar expectativas ni convertir la evaluacion en amenaza.",
+    "evidencia": "Selecciona la actuacion docente que combina metas alcanzables, apoyo al proceso y uso formativo del error.",
+    "tarea": "Elegir la decision de aula mas adecuada ante estudiantes que abandonan la tarea al primer tropiezo.",
+    "contexto": "En un curso de secundaria, varios estudiantes dejan de intentar resolver las tareas cuando encuentran una dificultad y prefieren no participar para no equivocarse en publico.",
+    "enunciado": "¿Que decision docente ofrece mejor evidencia de motivacion didactica con desarrollo socioemocional?",
+    "opciones": {
+      "A": "Plantear retos exigentes pero alcanzables, ofrecer apoyo progresivo y retroalimentacion centrada en el proceso, y normalizar el error como parte del aprendizaje.",
+      "B": "Reducir de manera general la complejidad de las tareas y flexibilizar los criterios para evitar cualquier experiencia de frustracion.",
+      "C": "Aumentar controles y evaluaciones punitivas para que los estudiantes participen por presion de la nota.",
+      "D": "Sustituir la participacion activa por clases expositivas para impedir que el error afecte la autoestima del grupo."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A sostiene la exigencia academica y, al mismo tiempo, modifica la experiencia del error mediante apoyo, metas reguladas y retroalimentacion formativa. No baja artificialmente el nivel ni usa coercion para motivar.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Modela el error de confundir apoyo socioemocional con rebaja general de la exigencia.",
+      "C": "Representa una salida coercitiva que probablemente aumenta miedo y evitacion.",
+      "D": "Recoge la falsa solucion de eliminar la participacion para reducir el malestar."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Evalua una decision docente generalizable y no presupone un contexto social especifico."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Se concentro la tarea en una sola respuesta docente observable."
+    },
+    "metadata_editorial": {
+      "lote": "L014",
+      "ruta_origen": "content/items/stand-by/Enseñar, formar, motivación didáctica y competencias socioemocionales/CEOL_B08_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CEOL_B08_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Enseñar, formar, motivación didáctica y competencias socioemocionales/CEOL_B08_I02.json",
+    "motivo": "Pregunta una definicion de enseñar por competencias y no una comparacion didactica fina con accion observable.",
+    "lote": "L014"
+  },
+  {
+    "id_item": "CEOL_B08_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Enseñar, formar, motivación didáctica y competencias socioemocionales/CEOL_B08_I03.json",
+    "motivo": "Se apoya en un lugar comun sobre formacion integral y distractores moralmente demasiado obvios.",
+    "lote": "L014"
+  },
+  {
+    "id_item": "CEOL_B08_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Motivacion didactica",
+    "subtema": "Contextualizacion de conceptos abstractos",
+    "competencia": "Responder pedagogicamente a preguntas sobre sentido y utilidad del contenido manteniendo el foco disciplinar.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado reconoce una respuesta docente que transforma el desinteres en una oportunidad para contextualizar sin vaciar el contenido.",
+    "evidencia": "Selecciona la estrategia que vincula un concepto matematico con problemas modelables del entorno y evita salidas autoritarias o decorativas.",
+    "tarea": "Elegir la mejor respuesta docente cuando un estudiante pregunta para que sirve el contenido.",
+    "contexto": "Durante una clase de ecuaciones lineales, varios estudiantes expresan que los ejercicios del tablero no les muestran para que sirve el tema en la vida real.",
+    "enunciado": "¿Que ajuste metodologico responde mejor a esta situacion sin renunciar al aprendizaje matematico?",
+    "opciones": {
+      "A": "Vincular las ecuaciones con situaciones modelables cercanas, como comparacion de costos, repartos o proyecciones simples, y usar esos casos para trabajar el procedimiento.",
+      "B": "Mantener la ejercitacion abstracta y explicar que la utilidad practica no es relevante mientras aprueben la evaluacion.",
+      "C": "Suspender el tema y reemplazarlo por actividades ludicas no matematicas para conservar la motivacion del grupo.",
+      "D": "Corregir la pregunta como una falta de respeto a la autoridad docente y continuar la clase sin abrir discusion."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A conserva la tarea matematica y usa la pregunta estudiantil para dotar de sentido al contenido. No cae en activismo sin disciplina ni en respuesta autoritaria.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Modela el formalismo desconectado que sostiene la desmotivacion.",
+      "C": "Representa el error de sacrificar el contenido en nombre del interes inmediato.",
+      "D": "Recoge una reaccion autoritaria que anula la curiosidad del estudiante."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "La tarea evalua decision didactica general, no pertenencia a un contexto cultural especifico."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La situacion se dejo breve y la decision central es clara."
+    },
+    "metadata_editorial": {
+      "lote": "L014",
+      "ruta_origen": "content/items/stand-by/Enseñar, formar, motivación didáctica y competencias socioemocionales/CEOL_B08_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CEOL_B08_I05",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Enseñar, formar, motivación didáctica y competencias socioemocionales/CEOL_B08_I05.json",
+    "motivo": "La clave depende de clasificacion normativa plana sobre competencias comportamentales segun una guia; no hay accion docente observable.",
+    "lote": "L014"
+  },
+  {
+    "id_item": "IDD_B11_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Error y reestructuracion de esquemas",
+    "subtema": "Mediacion ante errores procedimentales en matematicas",
+    "competencia": "Usar el error recurrente como insumo de mediacion para promover comprension conceptual y autocorreccion.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado distingue una intervencion que explora el razonamiento del estudiante de respuestas punitivas, sustitutivas o pasivas.",
+    "evidencia": "Elige la accion que hace visible la contradiccion del procedimiento errado y guia la reorganizacion conceptual.",
+    "tarea": "Seleccionar la mejor intervencion docente frente a un error sistematico al sumar fracciones.",
+    "contexto": "Un estudiante resuelve de forma repetida sumas de fracciones agregando numeradores y denominadores en linea recta, por ejemplo 1/2 + 1/3 = 2/5.",
+    "enunciado": "¿Que intervencion docente es mas coherente con un uso formativo del error?",
+    "opciones": {
+      "A": "Pedir al estudiante que represente la operacion y compare visualmente el resultado con las partes del entero para revisar su procedimiento.",
+      "B": "Asignar una nota baja e indicar que memorice el algoritmo correcto para la proxima clase.",
+      "C": "Escribir la respuesta correcta en el tablero para evitar que otros copien el error.",
+      "D": "No intervenir para respetar el ritmo individual y no afectar la autoestima."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A obliga a hacer visible el significado de la fraccion y confronta el procedimiento errado con una representacion que permite revisarlo. No castiga ni reemplaza la actividad cognitiva del estudiante.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Representa una salida sancionatoria y memoristica.",
+      "C": "Recoge la correccion sustitutiva que impide reconstruccion conceptual.",
+      "D": "Modela la pasividad pedagogica frente a una dificultad clara."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Se trata de un error escolar comun sin barreras externas irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El ejemplo y la tarea quedaron directos y observables."
+    },
+    "metadata_editorial": {
+      "lote": "L014",
+      "ruta_origen": "content/items/stand-by/Error, conflicto cognitivo y reestructuración de esquemas/IDD_B11_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B11_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Error, conflicto cognitivo y reestructuración de esquemas/IDD_B11_I02.json",
+    "motivo": "Aunque tiene accion docente, la clave sigue demasiado guiada por explicacion cientifica y contraejemplos esperables; discrimina poco.",
+    "lote": "L014"
+  },
+  {
+    "id_item": "IDD_B11_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Conflicto cognitivo formativo",
+    "subtema": "Contraste empirico de concepciones intuitivas",
+    "competencia": "Diseñar situaciones que confronten explicaciones intuitivas con evidencias observables para promover cambio conceptual.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado reconoce que el conflicto cognitivo requiere una evidencia que desafie la regla intuitiva del estudiante y lo obligue a revisarla.",
+    "evidencia": "Selecciona la mediacion que presenta un caso contraintuitivo y abre espacio de explicacion posterior.",
+    "tarea": "Elegir la mejor situacion para reestructurar una explicacion intuitiva sobre flotacion.",
+    "contexto": "Un estudiante afirma con seguridad que todo objeto de madera flota y todo objeto de metal se hunde.",
+    "enunciado": "¿Que actuacion docente genera mejor conflicto cognitivo formativo?",
+    "opciones": {
+      "A": "Presentar ejemplos observables que contradigan la regla inicial y pedir al estudiante explicar por que su criterio ya no alcanza para todos los casos.",
+      "B": "Leer el principio fisico correspondiente y pedir que lo copie para corregir la idea equivocada.",
+      "C": "Entregar una lista clasificada de objetos para que la memorice antes de la evaluacion.",
+      "D": "Registrar la respuesta como error de estudio y pedir que repase la clase anterior."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A no se limita a nombrar la teoria correcta: hace chocar la regla intuitiva con una evidencia incompatible y obliga a revisar la explicacion. Ese es el nucleo del conflicto cognitivo formativo.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Representa el formalismo verbal que evita la confrontacion con la evidencia.",
+      "C": "Recoge la memorizacion de clasificaciones sin cambio conceptual.",
+      "D": "Modela una lectura punitiva del error como falta de estudio."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El fenomeno es comun y no exige experiencias culturales especificas."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea se simplifico para resaltar la accion docente y no el tecnicismo."
+    },
+    "metadata_editorial": {
+      "lote": "L014",
+      "ruta_origen": "content/items/stand-by/Error, conflicto cognitivo y reestructuración de esquemas/IDD_B11_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B11_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Evaluacion formativa y analisis de errores",
+    "subtema": "Uso de errores colectivos para ajustar la enseñanza",
+    "competencia": "Usar patrones de error colectivo para decidir ajustes didacticos antes de continuar la progresion curricular.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado interpreta un error compartido por gran parte del grupo como insumo para rediseñar la mediacion y no solo para sancionar o maquillar resultados.",
+    "evidencia": "Selecciona la respuesta que conecta el desempeno colectivo con un ajuste metodologico verificable.",
+    "tarea": "Elegir la actuacion docente mas pertinente ante un error recurrente detectado en una evaluacion de fin de periodo.",
+    "contexto": "Al revisar una evaluacion, un docente encuentra que la mayoria del grupo fallo de manera semejante en tareas de estimacion de area y volumen.",
+    "enunciado": "¿Que decision docente ofrece mejor uso formativo de este hallazgo?",
+    "opciones": {
+      "A": "Redisenar actividades con materiales y situaciones concretas para identificar donde se rompio la comprension antes de seguir avanzando en la programacion.",
+      "B": "Continuar con el siguiente tema y trasladar el refuerzo a las familias de quienes reprobaron.",
+      "C": "Reducir el peso de la prueba en las notas para que el resultado no afecte tanto al grupo.",
+      "D": "Repetir la misma prueba al dia siguiente sin cambiar la mediacion didactica."
+    },
+    "clave": "A",
+    "justificacion_clave": "Cuando el error es colectivo, la lectura formativa apunta a revisar mediacion, representaciones y secuencia de aprendizaje. La opcion A convierte el resultado en informacion para intervenir, no solo para clasificar.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Representa la externalizacion de la responsabilidad didactica.",
+      "C": "Recoge una salida administrativa que oculta el problema de aprendizaje.",
+      "D": "Modela la repeticion mecanica sin ajuste de la ensenanza."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Evalua una decision profesional frente a informacion de desempeno del grupo."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Se redujo el tono caricaturesco de algunos distractores y quedo una comparacion mas limpia."
+    },
+    "metadata_editorial": {
+      "lote": "L014",
+      "ruta_origen": "content/items/stand-by/Error, conflicto cognitivo y reestructuración de esquemas/IDD_B11_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "MTV_B23_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Cambio conceptual en ciencias",
+    "subtema": "Secuencias experimentales para conflicto cognitivo",
+    "competencia": "Diseñar secuencias de contrastacion empirica que lleven al estudiante a revisar una explicacion intuitiva errada.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado identifica una secuencia didactica que hace visible la contradiccion entre la intuicion del estudiante y la evidencia observada.",
+    "evidencia": "Elige la secuencia que combina prediccion, prueba y reformulacion de hipotesis.",
+    "tarea": "Seleccionar la mejor secuencia para trabajar una concepcion intuitiva sobre la caida de los cuerpos.",
+    "contexto": "Varios estudiantes creen que los objetos pesados siempre caen mas rapido que los livianos.",
+    "enunciado": "¿Que secuencia didactica favorece mejor la reestructuracion conceptual de esa idea?",
+    "opciones": {
+      "A": "Pedir predicciones, realizar una prueba comparativa con variaciones controladas y discutir colectivamente por que algunos resultados contradicen la regla inicial.",
+      "B": "Presentar la formula correcta desde el tablero y asignar ejercicios de despeje para fijar el concepto.",
+      "C": "Mostrar un video del fenomeno y pedir un resumen individual sin experimentacion propia.",
+      "D": "Pedir a los estudiantes con mejor rendimiento que expliquen la teoria a quienes se equivocaron."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A conserva el nucleo del cambio conceptual: prediccion, contraste con evidencia y revision de la explicacion. Las otras opciones evitan o tercerizan esa confrontacion.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Representa el refugio en formalismo abstracto sin confrontacion empirica.",
+      "C": "Recoge una exposicion pasiva sin experimentacion directa.",
+      "D": "Modela delegacion pedagógica entre pares sin garantizar revision personal del esquema."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "La tarea depende de una secuencia de ensenanza general, no de una experiencia previa exclusiva."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La formulacion quedo mas limpia y centrada en la secuencia didactica."
+    },
+    "metadata_editorial": {
+      "lote": "L014",
+      "ruta_origen": "content/items/stand-by/Error, conflicto cognitivo y reestructuración de esquemas/MTV_B23_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "NFL_B04_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Estructura del sistema educativo - educación básica, secundaria y media/NFL_B04_I01.json",
+    "motivo": "La clave depende de memoria normativa sobre areas obligatorias y continuidad de la educacion basica; el contexto no modifica la naturaleza del recuerdo literal.",
+    "lote": "L014"
+  },
+  {
+    "id_item": "NFL_B04_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Estructura del sistema educativo",
+    "subtema": "Sentido formativo de la educacion media",
+    "competencia": "Juzgar decisiones curriculares institucionales a la luz de los fines de la educacion media sin reducir el nivel a entrenamiento para pruebas.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado reconoce cuando una propuesta de gestion academica desnaturaliza el sentido de la educacion media al convertirla en preparacion exclusiva para examenes.",
+    "evidencia": "Selecciona la interpretacion que mantiene la media como culminacion formativa articulada con educacion superior y trabajo.",
+    "tarea": "Elegir el mejor juicio sobre una propuesta institucional que quiere dedicar 10.° y 11.° solo a entrenamiento para Saber 11.",
+    "contexto": "En una autoevaluacion institucional se propone suspender proyectos e investigacion en 10.° y 11.° para dedicar esos grados exclusivamente a preparacion para Saber 11.",
+    "enunciado": "¿Por que esa propuesta resulta tecnicamente inapropiada?",
+    "opciones": {
+      "A": "Porque la educacion media no puede reducirse a entrenamiento para pruebas: debe consolidar la formacion previa y preparar para estudios posteriores y vida laboral.",
+      "B": "Porque las instituciones tienen prohibido legalmente realizar cualquier preparacion explicita para pruebas de Estado en la jornada escolar.",
+      "C": "Porque los proyectos transversales reemplazan por ley todas las asignaturas obligatorias del nivel de media.",
+      "D": "Porque la educacion media solo existe para profundizacion tecnica y no para trayectorias academicas."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A conserva el nucleo del nivel: culminacion y consolidacion de la formacion anterior con proyeccion a educacion superior y trabajo. No niega la preparacion para pruebas, pero la subordina al sentido formativo del nivel.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Modela una prohibicion normativa inexistente.",
+      "C": "Representa una exageracion sobre el lugar de los proyectos transversales.",
+      "D": "Recoge la falsa reduccion de la media a una sola modalidad."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "La situacion evalua juicio curricular institucional y no una cita textual del articulado."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Se simplifico la carga normativa para concentrar la comparacion entre decisiones institucionales."
+    },
+    "metadata_editorial": {
+      "lote": "L014",
+      "ruta_origen": "content/items/stand-by/Estructura del sistema educativo - educación básica, secundaria y media/NFL_B04_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "NFL_B04_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Estructura del sistema educativo",
+    "subtema": "Correspondencia entre perfil docente y nivel educativo",
+    "competencia": "Valorar decisiones de asignacion docente teniendo en cuenta la exigencia de especialidad y profundidad del nivel de media.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado reconoce cuando una reubicacion interna puede ser problematicamente desalineada con el perfil requerido por el nivel y la asignatura.",
+    "evidencia": "Selecciona el argumento tecnico que mejor explica la preocupacion por asignar una docente generalista de primaria a una asignatura de media.",
+    "tarea": "Elegir el mejor juicio tecnico sobre una reubicacion provisional de personal docente.",
+    "contexto": "Ante la salida inesperada de un docente de quimica en 10.° y 11.°, la rectoria considera trasladar provisionalmente a una docente de primaria con enfasis general en ciencias naturales.",
+    "enunciado": "¿Por que la preocupacion de la docente resulta tecnicamente fundada?",
+    "opciones": {
+      "A": "Porque la educacion media exige mayor especificidad disciplinar y la idoneidad para primaria no se traslada automaticamente a una asignatura de profundizacion en media.",
+      "B": "Porque la norma prohíbe de manera absoluta que un licenciado en ciencias naturales oriente quimica en cualquier nivel.",
+      "C": "Porque en educacion media solo pueden ensenar profesionales no licenciados con posgrado especifico.",
+      "D": "Porque toda reubicacion interna depende primero de autorizacion sindical antes que de criterio tecnico institucional."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A identifica el punto central: la profundidad y especialidad del nivel de media no quedan cubiertas automaticamente por un perfil generalista de primaria, incluso si existe cercania tematica.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Modela una prohibicion absoluta inexistente.",
+      "C": "Representa una exclusión falsa de las licenciaturas.",
+      "D": "Recoge un requisito procedimental ficticio."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "La situacion evalua criterio tecnico sobre asignacion de personal y no presupone inferioridad profesional de la docente."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La remediacion dejo una sola decision tecnico-institucional como foco del item."
+    },
+    "metadata_editorial": {
+      "lote": "L014",
+      "ruta_origen": "content/items/stand-by/Estructura del sistema educativo - educación básica, secundaria y media/NFL_B04_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "NFL_B04_I04",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Estructura del sistema educativo - educación básica, secundaria y media/NFL_B04_I04.json",
+    "motivo": "La clave depende de memoria normativa casi directa sobre objetivos comunes y formacion ciudadana transversal; el contexto aporta poco.",
+    "lote": "L014"
+  }
+]
