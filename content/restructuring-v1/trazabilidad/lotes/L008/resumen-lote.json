@@ -1,0 +1,79 @@
+{
+  "lote": "L008",
+  "repository": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaAuditoria": "2026-05-24",
+  "decisionGlobalLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "totalItems": 13,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 10,
+    "LISTO_PARA_PILOTAJE": 2,
+    "DESCARTAR": 1
+  },
+  "conteoClasificacion": {
+    "pedagogia": 13
+  },
+  "fuentesConsultadas": [
+    "content/restructuring-v1/README.md",
+    "content/restructuring-v1/trazabilidad/reglas-clasificacion.json",
+    "content/restructuring-v1/trazabilidad/blueprint-sugerido.md",
+    "content/restructuring-v1/trazabilidad/protocolo-ejecucion.md",
+    "content/restructuring-v1/trazabilidad/lotes/README-lanzamiento-paralelo.md",
+    "content/restructuring-v1/trazabilidad/mapa-carpetas-stand-by.csv"
+  ],
+  "fuentesAusentes": [],
+  "hallazgosPrincipales": [
+    "El lote está concentrado en comprensión curricular y, en general, sí aporta valor al banco cuando los ítems se leen como pedagogía funcional más que como normatividad pura.",
+    "Se detectó un caso claro de normatividad trivial y memorística: EIP_B01_I01 depende del recuerdo textual del artículo 14 de la Ley 115 y se descarta.",
+    "La nomenclatura original de área es inconsistente con la taxonomía del banco: aparecen rótulos como 'Gestión curricular' y 'Pedagogía y currículo', pero el ajuste defendible para el lote es 'pedagogia'.",
+    "Hay dos ítems con comprensión válida pero discriminación esperada baja por distractores débiles o clave demasiado evidente: EIP_B01_I03 y CB13_I03."
+  ],
+  "riesgosSistemicos": [
+    "Tendencia a sobrerrespaldar la clave con citas normativas extensas aunque la tarea real sea curricular o didáctica, lo que puede empujar algunos ítems hacia lectura memorística.",
+    "Uso frecuente de perfil no inferible desde el contenido; por prudencia se mantiene 'por_confirmar' en casi todo el lote."
+  ],
+  "problemasDetectados": {
+    "normatividadTrivial": [
+      "EIP_B01_I01"
+    ],
+    "preguntasMemoristicas": [
+      "EIP_B01_I01"
+    ],
+    "categoriasAmbiguas": [
+      "IDD_B15_I02",
+      "IDD_B15_I03",
+      "CB13_I02",
+      "CB13_I03"
+    ],
+    "nomenclaturaIncorrecta": [
+      "EIP_B01_I02",
+      "EIP_B01_I03",
+      "EIP_B01_I04",
+      "EIP_B01_I05",
+      "CB13_I01",
+      "CB13_I02",
+      "CB13_I03",
+      "IDD_B15_I01",
+      "IDD_B15_I02",
+      "IDD_B15_I03",
+      "IDD_B15_I04",
+      "IDD_B15_I06"
+    ]
+  },
+  "itemsRevisionHumana": [
+    "EIP_B01_I02",
+    "EIP_B01_I03",
+    "EIP_B01_I04",
+    "EIP_B01_I05",
+    "CB13_I01",
+    "CB13_I02",
+    "CB13_I03",
+    "IDD_B15_I01",
+    "IDD_B15_I02",
+    "IDD_B15_I03",
+    "IDD_B15_I04",
+    "IDD_B15_I06"
+  ],
+  "notaOperativa": "Se procesaron únicamente las tres carpetas asignadas para L008. No se modificaron archivos originales ni bitácoras globales."
+}
