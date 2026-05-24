@@ -1,0 +1,359 @@
+[
+  {
+    "id_item": "CEOL_B04_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Corresponsabilidad, entorno y cuidado institucional/CEOL_B04_I01.json",
+    "motivo": "Memoria normativa casi literal sobre los tres actores corresponsables. El contexto no cambia la tarea real y los distractores son demasiado débiles para sostener valor psicométrico.",
+    "lote": "L006-A"
+  },
+  {
+    "id_item": "CEOL_B04_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "competencias_ciudadanas",
+    "tema": "Corresponsabilidad, entorno y cuidado institucional",
+    "subtema": "entorno_escolar_y_redes_de_proteccion",
+    "competencia": "Selecciona acciones de cuidado y prevención con enfoque de corresponsabilidad entre institución, familia y entorno.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la actuación institucional que integra lectura del contexto, acompañamiento escolar y articulación intersectorial ante riesgos del entorno barrial.",
+    "evidencia": "Elige la alternativa que evita tanto la inacción como la sanción discriminatoria y propone una respuesta preventiva y articulada.",
+    "tarea": "Analizar una afectación del entorno barrial sobre la vida escolar y elegir la respuesta institucional más protectora y formativa.",
+    "contexto": "Una institución identifica que situaciones del barrio, como conflictos entre grupos juveniles, inseguridad y tensiones familiares, están afectando la asistencia, la convivencia y el bienestar emocional de varios estudiantes.",
+    "enunciado": "Una institución identifica que situaciones del barrio, como conflictos entre grupos juveniles, inseguridad y tensiones familiares, están afectando la asistencia, la convivencia y el bienestar emocional de varios estudiantes.\n\n¿De qué manera debe asumir la escuela estas situaciones externas que permean la vida escolar?",
+    "opciones": {
+      "A": "Desentenderse de la situación alegando falta de competencia territorial y legal de la escuela para intervenir en el espacio público exterior del barrio.",
+      "B": "Imponer medidas disciplinarias preventivas a los estudiantes procedentes de los sectores conflictivos para resguardar la seguridad interna del plantel.",
+      "C": "Caracterizar los factores del entorno, brindar acompañamiento pedagógico y socioemocional a los estudiantes afectados, coordinar acciones con las familias y articularse con la red intersectorial de protección.",
+      "D": "Suspender temporalmente la presencialidad hasta que las autoridades externas garanticen el orden público en los alrededores."
+    },
+    "clave": "C",
+    "justificacion_clave": "La clave es C porque responde desde la corresponsabilidad y la protección integral: reconoce el impacto del contexto, acompaña a los estudiantes, involucra a las familias y articula la red institucional y territorial sin criminalizar ni abandonar a la población escolar.",
+    "distractores_funcion": {
+      "A": "Representa inacción institucional y niega la función protectora de la escuela frente al impacto del entorno.",
+      "B": "Introduce sesgo territorial y sanciona a estudiantes por su procedencia, no por conductas probadas.",
+      "C": "Clave correcta; integra contexto, acompañamiento y articulación de redes.",
+      "D": "Propone una medida desproporcionada que afecta el derecho a la educación sin agotar respuestas pedagógicas e institucionales."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El caso evita estigmatizar territorios o familias y pone el foco en la respuesta institucional."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Escenario claro, una sola decisión y opciones bien diferenciadas."
+    },
+    "metadata_editorial": {
+      "lote": "L006-A",
+      "ruta_origen": "content/items/stand-by/Corresponsabilidad, entorno y cuidado institucional/CEOL_B04_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CEOL_B04_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "CEOL_B04_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Corresponsabilidad, entorno y cuidado institucional",
+    "subtema": "deber_de_cuidado_durante_el_descanso",
+    "competencia": "Selecciona decisiones institucionales de supervisión y cuidado coherentes con la posición de garante durante toda la jornada escolar.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la actuación institucional que mantiene el deber de cuidado durante el descanso pedagógico y evita delegaciones improcedentes o restricciones desproporcionadas.",
+    "evidencia": "Elige la alternativa que traduce la posición de garante en una medida concreta de supervisión y prevención durante el recreo.",
+    "tarea": "Analizar la responsabilidad institucional frente al descanso escolar y seleccionar la medida de cuidado más adecuada.",
+    "contexto": "Durante el descanso pedagógico, varios docentes consideran que no tienen responsabilidad sobre los estudiantes porque no se está desarrollando una clase formal. En ese tiempo se presentan conflictos, accidentes menores y situaciones que requieren intervención adulta.",
+    "enunciado": "Durante el descanso pedagógico, varios docentes consideran que no tienen responsabilidad sobre los estudiantes porque no se está desarrollando una clase formal. En ese tiempo se presentan conflictos, accidentes menores y situaciones que requieren intervención adulta.\n\n¿Cuál es la responsabilidad institucional durante el descanso pedagógico?",
+    "opciones": {
+      "A": "Garantizar acompañamiento activo y supervisión en las zonas de recreo por turnos programados, dado que el descanso hace parte de la jornada escolar y el deber de cuidado sigue vigente.",
+      "B": "Delegar la vigilancia del descanso en personal administrativo o de servicios porque los docentes deben usar ese tiempo solo para preparación o descanso personal.",
+      "C": "Permitir la libre resolución de conflictos sin mediación alguna, asumiendo que intervenir vulnera la autonomía estudiantil.",
+      "D": "Suspender las actividades al aire libre y restringir la permanencia de los estudiantes en los salones para anular todo riesgo de accidente."
+    },
+    "clave": "A",
+    "justificacion_clave": "La clave es A porque el descanso integra la jornada escolar y mantiene vigente el deber institucional de prevención, supervisión y mediación. La respuesta correcta traduce ese deber en organización concreta de turnos y presencia adulta activa.",
+    "distractores_funcion": {
+      "A": "Clave correcta; operacionaliza el deber de cuidado durante toda la jornada.",
+      "B": "Traslada indebidamente la responsabilidad pedagógica y de convivencia a personal que no sustituye el rol docente.",
+      "C": "Confunde autonomía con abandono de la mediación y de la prevención institucional.",
+      "D": "Reacciona con una restricción desproporcionada que elimina recreación en vez de gestionar el riesgo."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Situación transversal y sin barreras culturales irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Caso breve y opciones comparables, aunque la taxonomía final del área requiere confirmación humana."
+    },
+    "metadata_editorial": {
+      "lote": "L006-A",
+      "ruta_origen": "content/items/stand-by/Corresponsabilidad, entorno y cuidado institucional/CEOL_B04_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/CEOL_B04_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CEOL_B04_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "competencias_ciudadanas",
+    "tema": "Corresponsabilidad, entorno y cuidado institucional",
+    "subtema": "dialogo_comunitario_y_prevencion",
+    "competencia": "Selecciona respuestas institucionales de diálogo, concertación y prevención frente a tensiones comunitarias asociadas a la escuela.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la respuesta escolar que trata una tensión con la comunidad desde concertación pedagógica y no desde negación, estigmatización o externalización policial del conflicto.",
+    "evidencia": "Escoge la alternativa que integra gobierno escolar, comunidad y red de seguridad local en un plan preventivo.",
+    "tarea": "Analizar un conflicto entre vecinos y escuela y elegir la respuesta institucional más adecuada.",
+    "contexto": "Vecinos del plantel educativo manifiestan su intención de demandar al colegio porque, según ellos, algunos estudiantes generan situaciones de inseguridad en los alrededores. El docente conoce la preocupación y debe contribuir a una respuesta institucional adecuada.",
+    "enunciado": "Vecinos del plantel educativo manifiestan su intención de demandar al colegio porque, según ellos, algunos estudiantes generan situaciones de inseguridad en los alrededores. El docente conoce la preocupación y debe contribuir a una respuesta institucional adecuada.\n\n¿Cómo debe actuar la institución frente a esta situación?",
+    "opciones": {
+      "A": "Rechazar la interlocución con los vecinos aduciendo que la responsabilidad escolar termina en los linderos del edificio.",
+      "B": "Estigmatizar al cuerpo estudiantil en comunicados oficiales para justificar medidas inmediatas de control externo.",
+      "C": "Delegar unilateralmente el caso a la fuerza pública local y desvincular la gestión pedagógica de convivencia.",
+      "D": "Liderar mesas de diálogo con la comunidad y el gobierno escolar, analizar los factores del entorno, concertar acuerdos pedagógicos y coordinar acciones preventivas con la red local."
+    },
+    "clave": "D",
+    "justificacion_clave": "La clave es D porque incorpora mediación comunitaria, lectura del entorno y corresponsabilidad preventiva. La respuesta correcta evita tanto la negación del problema como la criminalización de los estudiantes o la delegación exclusiva a la policía.",
+    "distractores_funcion": {
+      "A": "Niega la dimensión comunitaria de la convivencia escolar.",
+      "B": "Responde desde estigmatización y vulnera presunción de inocencia y buen nombre.",
+      "C": "Reduce el conflicto a orden público y abandona la función formativa de la escuela.",
+      "D": "Clave correcta; integra comunidad, escuela y prevención territorial."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "La situación trabaja convivencia comunitaria sin construir estereotipos sobre estudiantes o vecinos."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Una sola tarea y opciones con paralelismo claro."
+    },
+    "metadata_editorial": {
+      "lote": "L006-A",
+      "ruta_origen": "content/items/stand-by/Corresponsabilidad, entorno y cuidado institucional/CEOL_B04_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CEOL_B04_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "CEOL_B04_I05",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Corresponsabilidad, entorno y cuidado institucional",
+    "subtema": "seguimiento_a_ausentismo_y_permanencia",
+    "competencia": "Selecciona acciones de seguimiento y articulación con familias para proteger permanencia escolar y prevenir deserción o riesgo intrainstitucional.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la respuesta institucional que aborda la evasión sistemática de clases desde seguimiento, corresponsabilidad familiar y protección de trayectorias, no desde castigo automático ni segregación.",
+    "evidencia": "Escoge la alternativa que activa diálogo, compromisos y seguimiento antes de respuestas expulsivas o indiferentes.",
+    "tarea": "Analizar un caso de evasión recurrente de clases y seleccionar la estrategia institucional más adecuada.",
+    "contexto": "Varios estudiantes evaden sistemáticamente algunas clases. La institución ha registrado ausencias internas, bajo rendimiento y conflictos asociados. Algunos docentes proponen limitarse a sancionar cada evasión sin indagar causas ni vincular a las familias.",
+    "enunciado": "Varios estudiantes evaden sistemáticamente algunas clases. La institución ha registrado ausencias internas, bajo rendimiento y conflictos asociados. Algunos docentes proponen limitarse a sancionar cada evasión sin indagar causas ni vincular a las familias.\n\n¿Cómo deben abordarse estratégicamente estos casos?",
+    "opciones": {
+      "A": "Aplicar la sanción disciplinaria del manual sin realizar indagaciones, porque el reglamento exige cumplimiento absoluto e igualitario.",
+      "B": "Activar el seguimiento interno, dialogar formativamente con el estudiante, convocar a los acudientes para concertar compromisos, realizar seguimiento académico y escalar la ruta si se detecta negligencia grave.",
+      "C": "Tolerar la inasistencia a clases específicas con la condición de que el estudiante apruebe las evaluaciones del periodo por su cuenta.",
+      "D": "Reubicar definitivamente al estudiante en jornadas flexibles o apartarlo de las asignaturas evadidas para evitar afectar el registro de ausentismo del grupo."
+    },
+    "clave": "B",
+    "justificacion_clave": "La clave es B porque responde al ausentismo como señal de riesgo sobre permanencia y protección: investiga causas, involucra a la familia, acompaña académicamente y articula la ruta institucional antes de escalar otras medidas.",
+    "distractores_funcion": {
+      "A": "Aplica castigo automático sin diagnóstico ni función formativa.",
+      "B": "Clave correcta; integra seguimiento, familia y protección de trayectorias.",
+      "C": "Normaliza la evasión y abandona el deber de cuidado y presencia institucional.",
+      "D": "Resuelve el problema con segregación o maquillaje administrativo en vez de atender sus causas."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "La respuesta correcta no penaliza procedencia ni condición del estudiante; se enfoca en protección y permanencia."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La situación es clara, pero la ubicación final entre normatividad y gestión merece una segunda revisión taxonómica humana."
+    },
+    "metadata_editorial": {
+      "lote": "L006-A",
+      "ruta_origen": "content/items/stand-by/Corresponsabilidad, entorno y cuidado institucional/CEOL_B04_I05.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/CEOL_B04_I05.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B03_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Corresponsabilidad, garante y protección del estudiante",
+    "subtema": "inclusion_y_posicion_de_garante",
+    "competencia": "Determina actuaciones de protección escolar coherentes con la posición de garante y la obligación de remover barreras para la participación educativa.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA_ALTA",
+    "claim": "Reconoce la actuación del docente de aula que responde oportunamente a una exclusión escolar por discapacidad sin trasladar la obligación a terceros.",
+    "evidencia": "Selecciona la alternativa que integra ajustes pedagógicos, reporte y articulación institucional para asegurar participación del estudiante.",
+    "tarea": "Analizar un caso de exclusión por barreras en el aula y elegir la actuación docente más adecuada.",
+    "contexto": "Un docente identifica que un estudiante con discapacidad está quedando sistemáticamente por fuera de las actividades de clase porque no comprende las instrucciones y no cuenta con apoyos suficientes. Algunos compañeros sugieren esperar a que la familia o el docente de apoyo resuelvan la situación.",
+    "enunciado": "Un docente identifica que un estudiante con discapacidad está quedando sistemáticamente por fuera de las actividades de clase porque no comprende las instrucciones y no cuenta con apoyos suficientes. Algunos compañeros sugieren esperar a que la familia o el docente de apoyo resuelvan la situación.\n\n¿Qué responsabilidad adquiere el docente de aula bajo el principio de corresponsabilidad y la posición de garante?",
+    "opciones": {
+      "A": "Actuar oportunamente para eliminar barreras en el aula, reportar y articular con el docente de apoyo y directivos, y realizar los ajustes pedagógicos necesarios para asegurar la participación del estudiante.",
+      "B": "Suspender la participación del estudiante en actividades grupales y trasladar la solución al sector salud para que reciba atención externa.",
+      "C": "Exigir a la familia que asista diariamente al aula para asumir el acompañamiento y cuidado individual del estudiante.",
+      "D": "Diseñar un currículo paralelo simplificado que no interfiera con el ritmo del resto del grupo."
+    },
+    "clave": "A",
+    "justificacion_clave": "La clave es A porque mantiene la responsabilidad del aula en remover barreras, activar apoyos y sostener la participación del estudiante. No delega la inclusión a la familia ni al sistema de salud y evita soluciones segregadoras.",
+    "distractores_funcion": {
+      "A": "Clave correcta; integra ajuste pedagógico, reporte y articulación institucional.",
+      "B": "Desvía el problema educativo al ámbito clínico y suspende indebidamente la participación escolar.",
+      "C": "Traslada el deber pedagógico de la institución a la familia.",
+      "D": "Segrega cognitivamente al estudiante y rompe la participación compartida en el aula."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El caso trabaja inclusión desde barreras de participación y no desde estereotipos sobre discapacidad."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Contexto claro, con una sola mejor respuesta y distractores funcionales."
+    },
+    "metadata_editorial": {
+      "lote": "L006-A",
+      "ruta_origen": "content/items/stand-by/Corresponsabilidad, garante y protección del estudiante/IDD_B03_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/IDD_B03_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "IDD_B03_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Corresponsabilidad, garante y protección del estudiante",
+    "subtema": "corresponsabilidad_en_apoyos_educativos",
+    "competencia": "Determina actuaciones de protección escolar coherentes con la corresponsabilidad institucional y la continuidad del servicio educativo inclusivo.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA_ALTA",
+    "claim": "Interpreta correctamente la corresponsabilidad en la atención educativa de un estudiante que requiere apoyos significativos.",
+    "evidencia": "Selecciona la alternativa que distribuye responsabilidades entre escuela, familia y entidades competentes sin condicionar ni suspender el servicio.",
+    "tarea": "Analizar un caso de apoyos educativos requeridos y elegir la interpretación correcta del principio de corresponsabilidad.",
+    "contexto": "Una institución identifica que un estudiante requiere apoyos significativos para participar en clase. Algunos docentes sostienen que no se debe hacer ningún ajuste hasta que la familia gestione diagnósticos y apoyos externos. Otros proponen articular esfuerzos institucionales de inmediato.",
+    "enunciado": "Una institución identifica que un estudiante requiere apoyos significativos para participar en clase. Algunos docentes sostienen que no se debe hacer ningún ajuste hasta que la familia gestione diagnósticos y apoyos externos. Otros proponen articular esfuerzos institucionales inmediatamente.\n\n¿Cuál respuesta interpreta correctamente el principio de corresponsabilidad en la atención educativa de este estudiante?",
+    "opciones": {
+      "A": "La articulación de acciones y compromisos entre la escuela, la familia y las entidades competentes para definir, implementar y hacer seguimiento a los apoyos requeridos.",
+      "B": "El deber legal de la familia de asumir la totalidad del costo y la contratación de los apoyos requeridos dentro de la jornada escolar.",
+      "C": "La facultad de la institución educativa de condicionar la continuidad del servicio a la entrega previa de diagnósticos e insumos externos por la familia.",
+      "D": "La exención de responsabilidades pedagógicas de la escuela cuando la familia incumple tratamientos médicos o terapéuticos."
+    },
+    "clave": "A",
+    "justificacion_clave": "La clave es A porque la corresponsabilidad no significa pasividad ni traslado de carga económica o documental a la familia. Exige articulación activa de la escuela con otros actores para garantizar apoyos y continuidad educativa.",
+    "distractores_funcion": {
+      "A": "Clave correcta; distribuye responsabilidades sin condicionar la escolarización.",
+      "B": "Traslada indebidamente a la familia el costo y la gestión de la inclusión escolar.",
+      "C": "Condiciona ilícitamente el derecho a la educación a requisitos externos.",
+      "D": "Justifica la inacción pedagógica de la escuela por conductas familiares ajenas."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No penaliza la condición del estudiante ni la situación de su familia; se concentra en deberes institucionales."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El caso es un poco más denso, pero mantiene una sola tarea y contraste claro entre opciones."
+    },
+    "metadata_editorial": {
+      "lote": "L006-A",
+      "ruta_origen": "content/items/stand-by/Corresponsabilidad, garante y protección del estudiante/IDD_B03_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/IDD_B03_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "DIL_B01_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Corresponsabilidad, protección integral y sujetos de derechos/DIL_B01_I01.json",
+    "motivo": "Pregunta por el nombre del principio jurídico de la Ley 1098. La tarea es nominal, el contexto no agrega decisión real y los distractores son de relleno.",
+    "lote": "L006-A"
+  },
+  {
+    "id_item": "DIL_B01_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Corresponsabilidad, protección integral y sujetos de derechos/DIL_B01_I02.json",
+    "motivo": "Ítem redundante y casi textual sobre la tríada familia-sociedad-Estado. Valor psicométrico bajo y solapamiento con otros del mismo bloque.",
+    "lote": "L006-A"
+  },
+  {
+    "id_item": "DIL_B01_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Corresponsabilidad, protección integral y sujetos de derechos",
+    "subtema": "actuacion_escolar_ante_riesgo_de_derechos",
+    "competencia": "Selecciona actuaciones escolares oportunas ante señales de vulneración de derechos, articulando apoyos y rutas sin abandonar la responsabilidad institucional.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la interpretación de corresponsabilidad que obliga a la escuela a actuar dentro de sus competencias cuando detecta riesgo sobre un estudiante.",
+    "evidencia": "Elige la alternativa que evita tanto la pasividad institucional como la delegación absoluta en la familia u otra entidad.",
+    "tarea": "Analizar una discusión escolar sobre vulneración de derechos y elegir la interpretación correcta de la corresponsabilidad.",
+    "contexto": "Un docente identifica señales de posible vulneración de derechos en un estudiante. En la reunión, alguien afirma: 'Como existe corresponsabilidad, que la familia resuelva sola; la escuela no debe intervenir'.",
+    "enunciado": "Un docente identifica señales de posible vulneración de derechos en un estudiante. En la reunión, alguien afirma: 'Como existe corresponsabilidad, que la familia resuelva sola; la escuela no debe intervenir'.\n\n¿Cuál interpretación es correcta?",
+    "opciones": {
+      "A": "La corresponsabilidad significa que la escuela puede desentenderse del caso.",
+      "B": "La corresponsabilidad elimina cualquier deber de actuación docente o institucional.",
+      "C": "La corresponsabilidad permite esperar indefinidamente hasta que otra entidad actúe.",
+      "D": "La corresponsabilidad exige que la escuela actúe dentro de sus competencias, articule apoyos y active las rutas pertinentes cuando sea necesario."
+    },
+    "clave": "D",
+    "justificacion_clave": "La clave es D porque convierte el principio en una obligación práctica: la escuela no reemplaza a toda la red, pero tampoco puede inhibirse cuando detecta riesgo. Debe actuar, articular y escalar según corresponda.",
+    "distractores_funcion": {
+      "A": "Confunde corresponsabilidad con abandono institucional.",
+      "B": "Elimina indebidamente deberes docentes e institucionales.",
+      "C": "Normaliza la espera indefinida y desconoce el criterio de oportunidad en protección.",
+      "D": "Clave correcta; traduce el principio a una actuación escolar concreta."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Lenguaje claro y situación institucional transversal."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea es única y el contraste entre opciones es nítido."
+    },
+    "metadata_editorial": {
+      "lote": "L006-A",
+      "ruta_origen": "content/items/stand-by/Corresponsabilidad, protección integral y sujetos de derechos/DIL_B01_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/DIL_B01_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "DIL_B01_I04",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Corresponsabilidad, protección integral y sujetos de derechos/DIL_B01_I04.json",
+    "motivo": "Definición declarativa de sujetos titulares de derechos con distractores poco plausibles. La tarea es conceptual básica y no aporta suficiente evidencia de juicio o aplicación.",
+    "lote": "L006-B"
+  },
+  {
+    "id_item": "DIL_B01_I05",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Corresponsabilidad, protección integral y sujetos de derechos/DIL_B01_I05.json",
+    "motivo": "Duplica el foco de memoria normativa sobre la corresponsabilidad y repite la misma tríada de actores con poca novedad evaluativa.",
+    "lote": "L006-B"
+  }
+]
