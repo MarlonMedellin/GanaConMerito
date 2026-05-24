@@ -51,10 +51,10 @@
   - `content/items/stand-by/Enseñar, formar, motivacion didactica y competencias socioemocionales/`
   - `content/items/stand-by/Error, conflicto cognitivo y reestructuracion de esquemas/`
   - `content/items/stand-by/Estructura del sistema educativo - educacion basica, secundaria y media/`
-- Cantidad de items leidos: 15
+- Cantidad de items leidos: 14
 - `LISTO_PARA_BANCO`: 0
 - `LISTO_PARA_PILOTAJE`: 8
-- `DESCARTAR`: 7
+- `DESCARTAR`: 6
 - `requiere_revision_humana`: 8
 - Incidencias GitHub o de fuente:
   - La carpeta de conflicto cognitivo requirio rastreo adicional por busqueda tematica del conector antes de resolver las rutas reales.
