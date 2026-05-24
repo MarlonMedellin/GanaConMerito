@@ -1,0 +1,98 @@
+{
+  "lote": "L015",
+  "repository": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaAuditoria": "2026-05-24",
+  "sublotesInternos": [
+    "L015-A",
+    "L015-B"
+  ],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Evaluación colaborativa, coevaluación y metacognición/",
+    "content/items/stand-by/Evaluación cualitativa, formativa y participativa/",
+    "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/"
+  ],
+  "decisionGlobalLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "numeroItemsLeidos": 11,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 7,
+    "LISTO_PARA_PILOTAJE": 1,
+    "DESCARTAR": 3
+  },
+  "numeroRequiereRevisionHumana": 8,
+  "conteoClasificacion": {
+    "pedagogia": 11
+  },
+  "fuentesConsultadas": [
+    "content/items/stand-by/Evaluación colaborativa, coevaluación y metacognición/IDD_B13_I02.json",
+    "content/items/stand-by/Evaluación colaborativa, coevaluación y metacognición/IDD_B13_I03.json",
+    "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EFCC_B06_I01.json",
+    "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EFCC_B06_I02.json",
+    "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EFCC_B06_I03.json",
+    "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EFCC_B06_I04.json",
+    "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EFCC_B06_I05.json",
+    "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/CEOL_B06_I01.json",
+    "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/CEOL_B06_I02.json",
+    "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/CEOL_B06_I03.json",
+    "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/CEOL_B06_I04.json"
+  ],
+  "fuentesAusentes": [],
+  "hallazgosPrincipales": [
+    "El lote aporta valor cuando la evaluación se formula como uso de evidencia para ajustar enseñanza, apoyar al estudiante y regular la participación entre pares.",
+    "Los ítems más sólidos son los que convierten evaluación formativa, coevaluación o lenguaje evaluativo en decisiones pedagógicas observables dentro de un caso concreto.",
+    "Los reactivos débiles caen en definición pura o en nombrar procesos participativos sin conflicto pedagógico real ni distractores suficientemente plausibles."
+  ],
+  "riesgosSistemicos": [
+    "Hay nomenclatura de área no canónica como 'Pedagogía y evaluación', 'Evaluación del aprendizaje' o 'Evaluación Formativa y Didáctica'; el ajuste defendible del lote es 'pedagogia'.",
+    "Tres ítems se acercan demasiado a formulación conceptual o de manual, debilitando la discriminación y el valor del banco.",
+    "En varios casos la clave queda verbalmente muy limpia frente a distractores más torpes o punitivos, lo que reduce la exigencia real del reactivo."
+  ],
+  "problemasDetectados": {
+    "definicionales": [
+      "CEOL_B06_I01",
+      "CEOL_B06_I02"
+    ],
+    "sinDecisionPedagogicaReal": [
+      "EFCC_B06_I04",
+      "CEOL_B06_I01",
+      "CEOL_B06_I02"
+    ],
+    "distractoresDebiles": [
+      "IDD_B13_I02",
+      "EFCC_B06_I04",
+      "CEOL_B06_I01"
+    ],
+    "evaluacionFormativaComoUsoDeEvidencia": [
+      "EFCC_B06_I03",
+      "CEOL_B06_I03",
+      "CEOL_B06_I04"
+    ],
+    "coevaluacionYMetacognicionConDecisionReal": [
+      "IDD_B13_I02",
+      "IDD_B13_I03",
+      "EFCC_B06_I05"
+    ],
+    "evaluacionCualitativaNoEsAusenciaDeCriterios": [
+      "EFCC_B06_I01",
+      "EFCC_B06_I02",
+      "EFCC_B06_I05"
+    ]
+  },
+  "incidenciasGitHubOFuente": [
+    "Las rutas previas de salida de L015 y ambos reportes internos no existían; GitHub respondió 404 al consultarlas y luego se crearon dentro del lote.",
+    "La búsqueda inicial de la carpeta 'Evaluación colaborativa, coevaluación y metacognición' no devolvió todos los resultados y se resolvió con consultas más específicas por palabras clave."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L015/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L015/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L015/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L015/reporte-procesos-anteriores.md",
+    "content/restructuring-v1/trazabilidad/lotes/L015/reporte-acumulado-instancia.md"
+  ],
+  "confirmaciones": {
+    "noSeModificoContentItemsStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true
+  }
+}
