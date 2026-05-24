@@ -1,0 +1,66 @@
+{
+  "loteProcesado": "L040",
+  "fechaCierre": "2026-05-24",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Inteligencia, inteligencias múltiples y didáctica heterogénea/",
+    "content/items/stand-by/Manejo del error y clima afectivo/",
+    "content/items/stand-by/Ideas previas, conflicto cognitivo y desarrollo constructivista/"
+  ],
+  "itemsLeidos": 12,
+  "itemsLeidosPorCarpeta": {
+    "Inteligencia, inteligencias múltiples y didáctica heterogénea": 4,
+    "Manejo del error y clima afectivo": 2,
+    "Ideas previas, conflicto cognitivo y desarrollo constructivista": 6
+  },
+  "itemsNoAuditadosProcesados": [],
+  "itemsOmitidosPorAuditoriaPrevia": [
+    {"id_item": "IDD_B09_I01", "lotePrevio": "L020"},
+    {"id_item": "IDD_B09_I02", "lotePrevio": "L020"},
+    {"id_item": "IDD_B09_I03", "lotePrevio": "L020"},
+    {"id_item": "IDD_B09_I04", "lotePrevio": "L020"},
+    {"id_item": "PPDC_B02_I01", "lotePrevio": "L021"},
+    {"id_item": "PPDC_B02_I02", "lotePrevio": "L021"},
+    {"id_item": "CEOL_B07_I01", "lotePrevio": "L018"},
+    {"id_item": "CEOL_B07_I02", "lotePrevio": "L018"},
+    {"id_item": "CEOL_B07_I03", "lotePrevio": "L018"},
+    {"id_item": "CEOL_B07_I04", "lotePrevio": "L018"},
+    {"id_item": "CEOL_B07_I05", "lotePrevio": "L018"},
+    {"id_item": "CEOL_B07_I06", "lotePrevio": "L018"}
+  ],
+  "conteosDecision": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 0,
+    "DESCARTAR": 0,
+    "OMITIDO_POR_AUDITORIA_PREVIA": 12
+  },
+  "requiereRevisionHumana": 0,
+  "incidenciasGitHubFuente": [
+    "No se encontraron items nuevos dentro de las tres carpetas asignadas: todo el lote ya tenia decision previa trazable en L018, L020 o L021.",
+    "El clonado directo y las llamadas HTTP externas a GitHub no fueron viables en este entorno; la lectura se resolvio con el conector GitHub y la evidencia previa de decisiones por lote.",
+    "La busqueda indexada del conector no fue fiable para rutas con espacios y tildes; el inventario se consolido a partir de decisiones previas y referencias de carpeta ya verificadas."
+  ],
+  "fuentesInternasConsultadas": [
+    "content/restructuring-v1/trazabilidad/mapa-carpetas-stand-by.csv",
+    "content/restructuring-v1/trazabilidad/reglas-clasificacion.json",
+    "content/restructuring-v1/trazabilidad/protocolo-ejecucion.md",
+    "content/restructuring-v1/trazabilidad/lotes/README-lanzamiento-paralelo.md",
+    "content/restructuring-v1/trazabilidad/lotes/L018/decisiones.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L020/decisiones.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L021/decisiones.csv"
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L040/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L040/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L040/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L040/reporte-acumulado-instancia.md"
+  ],
+  "confirmacionRutasProtegidasNoModificadas": true,
+  "rutasProtegidasNoModificadas": [
+    "content/items/stand-by/",
+    "content/restructuring-v1/trazabilidad/trash.json",
+    "content/restructuring-v1/trazabilidad/bitácora-lotes.csv",
+    "content/restructuring-v1/trazabilidad/manifiesto-control.json",
+    "content/restructuring-v1/trazabilidad/mapa-carpetas-stand-by.csv"
+  ]
+}
