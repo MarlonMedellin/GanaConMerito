@@ -1,0 +1,89 @@
+{
+  "lote": "L014",
+  "sublotes_internos": [
+    "L014-A",
+    "L014-B"
+  ],
+  "fecha_revision": "2026-05-24",
+  "repositorio": "ProfeMarlonMDE/GanaConMerito",
+  "carpetas_procesadas": [
+    "content/items/stand-by/Enseñar, formar, motivacion didactica y competencias socioemocionales/",
+    "content/items/stand-by/Error, conflicto cognitivo y reestructuracion de esquemas/",
+    "content/items/stand-by/Estructura del sistema educativo - educacion basica, secundaria y media/"
+  ],
+  "numero_items_leidos": 15,
+  "numero_listo_para_banco": 0,
+  "numero_listo_para_pilotaje": 8,
+  "numero_descartar": 7,
+  "numero_requiere_revision_humana": 8,
+  "decision_global": "APROBAR_PARCIALMENTE",
+  "calidad_global": "MEDIA_BAJA",
+  "hallazgos_principales": [
+    "En motivacion y competencias socioemocionales aparecieron varios lugares comunes pedagógicos con clave moralmente demasiado visible.",
+    "La carpeta de conflicto cognitivo aporto el mejor material del lote cuando la situacion exigia una mediacion observable y no solo teoria constructivista declarada.",
+    "La carpeta de estructura del sistema educativo alterna dos items recuperables con otros que siguen dependiendo de memoria normativa plana sobre niveles u objetivos legales."
+  ],
+  "alertas_criticas": [
+    "Varios items declaran aplicacion o juicio, pero realmente solo piden clasificar o definir categorias pedagogicas o normativas.",
+    "Persisten distractores moralmente obvios en parte del lote, sobre todo cuando la opcion incorrecta castiga, evade o ridiculiza al estudiante.",
+    "En normativa educativa, el contexto mejora la presentacion, pero no siempre cambia la naturaleza memoristica de la clave."
+  ],
+  "incidencias_github_o_fuente": [
+    "La carpeta de conflicto cognitivo requirio rastreo adicional por busqueda tematica del conector antes de resolver las rutas reales del lote.",
+    "No existian salidas previas del lote L014; el cierre se creo desde cero dentro de las rutas permitidas."
+  ],
+  "items_rescatados": [
+    {
+      "id_item": "CEOL_B08_I01",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "Puede sostener una decision de aula observable sobre motivacion, andamiaje y tolerancia al error."
+    },
+    {
+      "id_item": "CEOL_B08_I04",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "La pregunta del estudiante permite evaluar una respuesta didactica funcional y no solo un principio teorico."
+    },
+    {
+      "id_item": "IDD_B11_I01",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "Evalua una intervencion concreta de reestructuracion conceptual frente a un error matematico frecuente."
+    },
+    {
+      "id_item": "IDD_B11_I03",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "Presenta conflicto cognitivo observable con contraste empirico y no solo correccion verbal."
+    },
+    {
+      "id_item": "MTV_B23_I01",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "Sostiene una secuencia didactica clara para cambio conceptual en ciencias."
+    },
+    {
+      "id_item": "NFL_B04_I02",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "Convierte la norma en juicio curricular institucional sobre el sentido de la educacion media."
+    },
+    {
+      "id_item": "NFL_B04_I03",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "La situacion exige una decision tecnico-administrativa plausible sobre asignacion de perfil docente."
+    },
+    {
+      "id_item": "IDD_B11_I04",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "motivo": "Puede rescatarse como uso formativo de resultados colectivos si se reduce el exceso de opciones caricaturescas."
+    }
+  ],
+  "archivos_escritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L014/reporte-procesos-anteriores.md",
+    "content/restructuring-v1/trazabilidad/lotes/L014/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L014/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L014/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L014/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "no_se_modifico_content_items_stand_by": true,
+    "no_se_modifico_trash_json": true,
+    "no_se_modificaron_bitacoras_globales": true
+  }
+}
