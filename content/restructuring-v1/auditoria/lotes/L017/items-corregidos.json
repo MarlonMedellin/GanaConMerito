@@ -1,0 +1,384 @@
+[
+  {
+    "id_item": "CB15_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Fases de ensenanza",
+    "subtema": "Exploracion de saberes previos",
+    "competencia": "Planear aperturas de clase que permitan identificar ideas previas relevantes para ajustar la ensenanza.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que la fase inicial de una secuencia didactica debe producir evidencia sobre lo que el grupo ya comprende y no arrancar con transmision cerrada del contenido.",
+    "evidencia": "Selecciona una accion de apertura que recoge explicaciones iniciales de los estudiantes y permite al docente tomar decisiones pedagogicas posteriores.",
+    "tarea": "Elegir la accion inicial mas pertinente para explorar saberes previos antes de desarrollar un contenido nuevo.",
+    "contexto": "Una docente va a iniciar el tema de fracciones equivalentes. Antes de explicar el procedimiento formal, quiere identificar como estan representando sus estudiantes la relacion entre dibujos, partes de un todo y lenguaje numerico.",
+    "enunciado": "?Que accion ofrece mejor evidencia inicial para orientar la clase?",
+    "opciones": {
+      "A": "Presentar varios ejemplos cotidianos, pedir que expliquen con sus palabras cuales representan la misma cantidad y justificar por que.",
+      "B": "Entregar la regla formal de equivalencia y solicitar que copien tres definiciones antes de participar.",
+      "C": "Aplicar una prueba calificable de diez preguntas para registrar de inmediato quienes dominan el tema.",
+      "D": "Evitar preguntas iniciales para no reforzar ideas equivocadas y pasar directamente a la exposicion del algoritmo."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion correcta activa explicaciones previas observables y le da al docente informacion util para decidir como mediar el aprendizaje sin convertir la apertura en memoria o sancion.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Confunde exploracion de saberes con transmision anticipada de definiciones.",
+      "C": "Desplaza la funcion diagnostica hacia calificacion temprana y reduce el valor formativo del inicio.",
+      "D": "Evita evidencia pedagogica relevante y asume erroneamente que las ideas previas deben silenciarse."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "La situacion es comun de aula y no depende de contexto social especifico ni de experiencia en una metodologia de nicho."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Tiene una sola tarea y opciones semanticamente paralelas."
+    },
+    "metadata_editorial": {
+      "lote": "L017",
+      "ruta_origen": "content/items/stand-by/Fases enseñanza/CB15_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CB15_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CB15_I03",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Fases de ensenanza",
+    "subtema": "Mediacion durante la construccion del aprendizaje",
+    "competencia": "Intervenir en actividades de resolucion de problemas con preguntas y andamiajes que sostengan el razonamiento del grupo.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue entre acompanar el pensamiento de los estudiantes y reemplazarlo o abandonarlo durante la actividad.",
+    "evidencia": "Escoge la intervencion docente que usa preguntas, contraste de estrategias y retroalimentacion sin anular la participacion del grupo.",
+    "tarea": "Seleccionar la mediacion mas adecuada mientras los estudiantes resuelven un problema y aparecen errores conceptuales.",
+    "contexto": "En una actividad de resolucion de problemas, varios estudiantes proponen estrategias distintas y algunos sostienen explicaciones parcialmente incorrectas. El docente quiere intervenir sin cancelar la discusion ni dejar al grupo sin orientacion.",
+    "enunciado": "?Que intervencion docente resulta mas coherente con ese proposito?",
+    "opciones": {
+      "A": "Detener la actividad para dictar el procedimiento correcto y pedir que todos lo reproduzcan sin debate.",
+      "B": "No intervenir en absoluto para que el grupo descubra solo la respuesta aunque consolide errores persistentes.",
+      "C": "Pedir que comparen estrategias, formular preguntas sobre los pasos seguidos y ofrecer pistas breves para revisar donde aparece la dificultad.",
+      "D": "Registrar una nota negativa por cada error para incentivar precision inmediata y reducir intervenciones espontaneas."
+    },
+    "clave": "C",
+    "justificacion_clave": "La opcion correcta mantiene el foco en el razonamiento del estudiante y usa la mediacion docente como andamiaje, no como sustitucion ni como castigo.",
+    "distractores_funcion": {
+      "A": "Reemplaza el proceso de construccion por transmision directiva.",
+      "B": "Confunde autonomia con ausencia de acompanamiento pedagogico.",
+      "C": "Clave correcta.",
+      "D": "Transforma el error en sancion y debilita el uso formativo de la actividad."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Evalua una decision didactica general transferible a distintas areas y niveles."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La escena es concreta y las opciones son claramente distinguibles sin trucos de longitud."
+    },
+    "metadata_editorial": {
+      "lote": "L017",
+      "ruta_origen": "content/items/stand-by/Fases enseñanza/CB15_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CB15_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CB15_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Fases de ensenanza",
+    "subtema": "Cierre y transferencia",
+    "competencia": "Cerrar secuencias didacticas con actividades que consoliden comprension, transferencia y reflexion sobre el aprendizaje.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que el cierre de clase debe recoger evidencia de aplicacion y no limitarse a terminar o copiar un resumen.",
+    "evidencia": "Elige una accion de cierre que obliga a usar el concepto en una situacion nueva y a explicar el razonamiento seguido.",
+    "tarea": "Seleccionar el cierre mas pertinente despues de una secuencia de ensenanza guiada.",
+    "contexto": "Despues de trabajar un concepto con modelacion y discusion, la docente necesita verificar si el grupo puede usarlo en otro contexto antes de terminar la clase.",
+    "enunciado": "?Que cierre ofrece mejor evidencia de consolidacion del aprendizaje?",
+    "opciones": {
+      "A": "Proponer un caso breve diferente, pedir que expliquen como aplicarian el concepto y cerrar con una sintesis de lo aprendido y lo que aun genera duda.",
+      "B": "Dar por terminada la clase apenas se agote el tiempo para no interrumpir la continuidad del programa.",
+      "C": "Pedir que copien literalmente el resumen del tablero como evidencia suficiente de cierre.",
+      "D": "Iniciar de inmediato el siguiente tema para aprovechar que el grupo aun esta concentrado."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion correcta combina transferencia, explicitacion del razonamiento y retroalimentacion de cierre, que son rasgos defendibles de una fase final con sentido pedagogico.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Omite la consolidacion y deja sin evidencia el resultado de la sesion.",
+      "C": "Reduce el cierre a registro mecanico sin comprobar comprension.",
+      "D": "Fragmenta el proceso y sacrifica la sintesis del aprendizaje alcanzado."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No requiere conocimientos disciplinares avanzados ni contexto institucional especifico."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La carga verbal es moderada y la demanda cognitiva es unica."
+    },
+    "metadata_editorial": {
+      "lote": "L017",
+      "ruta_origen": "content/items/stand-by/Fases enseñanza/CB15_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CB15_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "NFL_B01_I01",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "pedagogia",
+    "tema": "Formacion integral",
+    "subtema": "Curriculo y PEI",
+    "competencia": "Traducir el principio de formacion integral en decisiones curriculares e institucionales verificables.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue ajustes institucionales que materializan la formacion integral de respuestas que la relegan a acciones aisladas o decorativas.",
+    "evidencia": "Selecciona la respuesta que integra metas socioemocionales, eticas y de convivencia dentro de la planeacion curricular ordinaria.",
+    "tarea": "Analizar un PEI centrado solo en calificaciones y escoger el ajuste mas coherente con una formacion integral.",
+    "contexto": "Al revisar el PEI, el equipo docente encuentra que el plan de estudios se concentra en resultados cuantitativos de areas basicas y no define como promover competencias socioemocionales, eticas ni de convivencia en la experiencia escolar cotidiana.",
+    "enunciado": "?Que ajuste responde mejor a la obligacion de brindar formacion integral?",
+    "opciones": {
+      "A": "Integrar en las planeaciones de distintas areas metas, actividades y criterios de seguimiento relacionados con empatia, trabajo colaborativo, autorregulacion y resolucion de conflictos.",
+      "B": "Crear una asignatura aislada de valores evaluada solo con pruebas de memoria para no alterar el resto del curriculo.",
+      "C": "Delegar estos desarrollos a actividades extracurriculares voluntarias y a la escuela de familias.",
+      "D": "Mantener el modelo actual porque un buen puntaje academico termina formando por si solo la dimension etica del estudiante."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion correcta incorpora la formacion integral en el trabajo ordinario del curriculo y la vuelve observable en decisiones, actividades y seguimiento, en lugar de externalizarla o suponerla automaticamente.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Aisla la formacion integral en una materia teorica y memoristica sin transversalidad real.",
+      "C": "Desplaza la responsabilidad institucional a espacios no obligatorios.",
+      "D": "Reduce indebidamente el desarrollo humano a rendimiento cognitivo en areas basicas."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "La situacion es institucionalmente reconocible y no privilegia una region o tipo de establecimiento especifico."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El enunciado plantea una sola decision y mantiene homogeneidad entre opciones."
+    },
+    "metadata_editorial": {
+      "lote": "L017",
+      "ruta_origen": "content/items/stand-by/Formación integral, fines de la educación y desarrollo de la personalidad/NFL_B01_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/NFL_B01_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "NFL_B01_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Formación integral, fines de la educación y desarrollo de la personalidad/NFL_B01_I02.json",
+    "motivo": "La respuesta correcta depende de reconocer casi literalmente el fin legal sobre pleno desarrollo de la personalidad y no de analizar una actuacion docente observable.",
+    "lote": "L017"
+  },
+  {
+    "id_item": "NFL_B01_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Formación integral, fines de la educación y desarrollo de la personalidad/NFL_B01_I03.json",
+    "motivo": "Pregunta basada en listado normativo y memoria de componentes transversales; los distractores son extremos y no modelan errores profesionales plausibles.",
+    "lote": "L017"
+  },
+  {
+    "id_item": "NFL_B01_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "gestion",
+    "tema": "Formacion integral",
+    "subtema": "Coherencia entre PEI y practica institucional",
+    "competencia": "Alinear declaraciones del PEI con practicas de aula y mecanismos de seguimiento institucional.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que un PEI no cumple su funcion cuando declara autonomia y responsabilidad, pero sostiene practicas autocraticas sin espacios de participacion ni seguimiento.",
+    "evidencia": "Selecciona el ajuste que transforma la practica institucional y no solo el discurso documental.",
+    "tarea": "Escoger la decision institucional mas coherente para corregir una inconsistencia entre el PEI y la vida escolar.",
+    "contexto": "Una institucion afirma en su PEI que busca formar estudiantes autonomos y responsables. Sin embargo, en las aulas predominan decisiones unilaterales del docente, ausencia de autoevaluacion y ningun mecanismo para revisar si la participacion estudiantil realmente ocurre.",
+    "enunciado": "?Que ajuste es mas coherente con esa declaracion institucional?",
+    "opciones": {
+      "A": "Incorporar metodologias de participacion activa, espacios de autoevaluacion y seguimiento institucional de como se promueven decisiones responsables en el aula.",
+      "B": "Eliminar del PEI la idea de autonomia para que el documento refleje mejor el estilo vertical ya instalado.",
+      "C": "Sustituir el modelo actual por asambleas permanentes donde el grupo defina por votacion las calificaciones de cada asignatura.",
+      "D": "Mantener la practica cotidiana y compensar la incoherencia con charlas ocasionales sobre liderazgo estudiantil."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion correcta interviene la practica y crea mecanismos de seguimiento, que es lo necesario cuando el problema no es solo declarativo sino de consistencia institucional.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Normaliza la incoherencia institucional en vez de corregirla.",
+      "C": "Confunde participacion con renuncia a la mediacion y evaluacion docente.",
+      "D": "Ofrece una respuesta cosmetica sin modificar las condiciones de aula."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Evalua una decision institucional general sin depender de contexto regional o de recursos extraordinarios."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El problema es claro y el contraste entre opciones es funcional."
+    },
+    "metadata_editorial": {
+      "lote": "L017",
+      "ruta_origen": "content/items/stand-by/Formación integral, fines de la educación y desarrollo de la personalidad/NFL_B01_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/por_confirmar/funcional/NFL_B01_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "NFL_B01_I05",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Formacion integral",
+    "subtema": "Reorientacion curricular ante desercion y convivencia",
+    "competencia": "Reorientar estrategias curriculares para equilibrar logro academico, bienestar y convivencia.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue respuestas institucionales que atienden simultaneamente rendimiento, convivencia y bienestar de aquellas que profundizan el reduccionismo academico o externalizan el problema.",
+    "evidencia": "Selecciona una formulacion curricular que integra desarrollo afectivo, ciudadano y artistico con rigor academico.",
+    "tarea": "Analizar un caso de alto rendimiento externo con problemas de convivencia y escoger la reorientacion mas coherente.",
+    "contexto": "Un establecimiento obtiene buenos resultados en pruebas externas, pero reporta altos niveles de desercion, acoso escolar y desmotivacion en los grados superiores. El Consejo Academico busca una respuesta que no reduzca el problema a disciplina o estadistica.",
+    "enunciado": "?Cual formulacion responde mejor a este reto desde los fines formativos nacionales?",
+    "opciones": {
+      "A": "Equilibrar el trabajo academico con estrategias curriculares de bienestar, convivencia, expresion artistica y desarrollo socioemocional sostenidas dentro de la jornada escolar.",
+      "B": "Aumentar la intensidad horaria de las areas basicas y endurecer el reglamento disciplinario para proteger los buenos puntajes alcanzados.",
+      "C": "Flexibilizar la promocion al final del periodo para bajar artificialmente la desercion sin modificar la experiencia escolar.",
+      "D": "Remitir todos los casos al sector salud para que el problema no interfiera con la agenda pedagogica del docente."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion correcta responde al problema como asunto curricular e institucional y no como simple falta disciplinaria, maquillaje estadistico o tercerizacion externa.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Profundiza el sesgo academico y punitivo ya asociado al problema.",
+      "C": "Altera indicadores sin intervenir las causas del malestar escolar.",
+      "D": "Desresponsabiliza a la institucion de una tarea formativa propia."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El caso es transversal y no presupone un tipo unico de institucion o poblacion."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La situacion es comprensible y mantiene una sola tarea principal."
+    },
+    "metadata_editorial": {
+      "lote": "L017",
+      "ruta_origen": "content/items/stand-by/Formación integral, fines de la educación y desarrollo de la personalidad/NFL_B01_I05.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/NFL_B01_I05.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CEOL_B09_I01",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "competencias_ciudadanas",
+    "tema": "Gestion de aula y convivencia",
+    "subtema": "Apropiacion formativa de normas",
+    "competencia": "Promover apropiacion de acuerdos de convivencia mediante analisis de casos, corresponsabilidad y practicas restaurativas.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue entre estrategias centradas en castigo o memorizacion y estrategias que ayudan a comprender el sentido pedagogico de las normas.",
+    "evidencia": "Escoge la actuacion docente e institucional que vincula incumplimiento, reparacion y comprension del acuerdo comun.",
+    "tarea": "Elegir la estrategia mas efectiva para favorecer apropiacion real del manual de convivencia ante incumplimientos frecuentes.",
+    "contexto": "En un grupo hay incumplimientos reiterados de normas basicas. Los estudiantes conocen las sanciones previstas, pero no logran explicar para que sirven los acuerdos ni como reparar el dano cuando afectan a otros.",
+    "enunciado": "?Que estrategia favorece mejor una apropiacion real del manual de convivencia?",
+    "opciones": {
+      "A": "Aumentar los reportes y sanciones automaticas para que el miedo a la falta reduzca el incumplimiento.",
+      "B": "Dedicar varias sesiones a memorizar articulos del manual y evaluarlos con preguntas cerradas.",
+      "C": "Permitir que cada estudiante decida en que momentos aplicar o no las normas para fortalecer autonomia.",
+      "D": "Trabajar casos concretos, revisar el sentido de las normas con el grupo y aplicar practicas restaurativas cuando haya afectacion a otros."
+    },
+    "clave": "D",
+    "justificacion_clave": "La opcion correcta conecta la norma con comprension, corresponsabilidad y reparacion, que es la evidencia mas defendible de una convivencia escolar formativa y no meramente sancionatoria.",
+    "distractores_funcion": {
+      "A": "Confunde regulacion de la convivencia con incremento de castigo.",
+      "B": "Reduce la apropiacion normativa a memoria verbal sin cambio practico.",
+      "C": "Confunde participacion con relativizacion del marco comun.",
+      "D": "Clave correcta."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No estigmatiza estudiantes ni depende de un contexto social particular; evalua una decision pedagogica observable."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La situacion es cotidiana, focalizada y con opciones homogeneas."
+    },
+    "metadata_editorial": {
+      "lote": "L017",
+      "ruta_origen": "content/items/stand-by/Gestión de aula, lectura, creatividad y honestidad académica/CEOL_B09_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CEOL_B09_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CEOL_B09_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Gestion de aula, lectura y creatividad",
+    "subtema": "Dinamizacion del trabajo de aula",
+    "competencia": "Disenar experiencias de aula que promuevan creatividad y pensamiento critico mas alla de copia y respuesta unica.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce que creatividad y pensamiento critico requieren tareas abiertas con argumentacion y produccion de alternativas, no repeticion mecanica.",
+    "evidencia": "Selecciona una estrategia de aula que obliga a plantear preguntas, justificar decisiones y construir soluciones en contexto.",
+    "tarea": "Diferenciar entre practicas repetitivas y acciones didacticas que realmente dinamizan el aula.",
+    "contexto": "Un docente quiere fortalecer creatividad y pensamiento critico, pero observa que la mayor parte de sus clases se reduce a copiar definiciones y resolver preguntas de una sola respuesta sin discusion ni produccion propia.",
+    "enunciado": "?Que ajuste didactico seria mas coherente con ese objetivo?",
+    "opciones": {
+      "A": "Proponer problemas abiertos, preguntas orientadoras y proyectos breves donde el grupo deba justificar decisiones y comparar alternativas de solucion.",
+      "B": "Aumentar la cantidad de lecturas y exposiciones individuales para asegurar rapidez en la asimilacion teorica.",
+      "C": "Sustituir las preguntas abiertas por ejercicios de falso y verdadero para agilizar la correccion del docente.",
+      "D": "Dar libertad total para que cada estudiante elija cualquier actividad sin metas ni criterios comunes de trabajo."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion correcta crea una exigencia cognitiva observable de argumentacion, elaboracion y comparacion de soluciones, que es mas pertinente que aumentar teoria, simplificar evaluacion o renunciar a la intencionalidad pedagogica.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Aumenta volumen teorico sin transformar la naturaleza de la tarea.",
+      "C": "Reduce la demanda cognitiva a reconocimiento binario.",
+      "D": "Confunde apertura creativa con ausencia de direccion pedagogica."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "La decision evaluada es transferible a distintas areas y no presupone tecnologia ni recursos de alto costo."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Mantiene foco unico y lenguaje de uso pedagogico frecuente."
+    },
+    "metadata_editorial": {
+      "lote": "L017",
+      "ruta_origen": "content/items/stand-by/Gestión de aula, lectura, creatividad y honestidad académica/CEOL_B09_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CEOL_B09_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  }
+]
