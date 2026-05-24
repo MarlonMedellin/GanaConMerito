@@ -9,10 +9,10 @@
   "items_leidos": 16,
   "conteo_decisiones": {
     "LISTO_PARA_BANCO": 0,
-    "LISTO_PARA_PILOTAJE": 7,
-    "DESCARTAR": 9
+    "LISTO_PARA_PILOTAJE": 8,
+    "DESCARTAR": 8
   },
-  "numero_con_requiere_revision_humana": 7,
+  "numero_con_requiere_revision_humana": 8,
   "decision_global_lote": "APROBAR_PARCIALMENTE",
   "calidad_global_lote": "MEDIA",
   "alertas_criticas": [
@@ -41,7 +41,7 @@
     "bitacoras_globales_no_modificadas": true,
     "rutas_protegidas_no_modificadas": true
   },
-  "resumen_ejecutivo": "El lote L021 tiene valor parcial. Siete items quedaron listos para pilotaje por convertir norma o teoria en decision profesional observable, mientras nueve se descartaron por memoria normativa, pseudoaplicacion o baja discriminacion.",
+  "resumen_ejecutivo": "El lote L021 tiene valor parcial. Ocho items quedaron listos para pilotaje por convertir norma o teoria en decision profesional observable, mientras ocho se descartaron por memoria normativa, pseudoaplicacion o baja discriminacion.",
   "fecha_revision": "2026-05-24",
   "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO"
 }
