@@ -1,0 +1,74 @@
+{
+  "loteProcesado": "L029",
+  "repo": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaCierre": "2026-05-24",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Currículo oficial, oculto, nulo, PEI y DUR 1075/",
+    "content/items/stand-by/Corresponsabilidad, protección integral y sujetos de derechos/",
+    "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/"
+  ],
+  "itemsLeidos": 14,
+  "itemsAuditadosEnL029": 5,
+  "itemsOmitidosPorAuditoriaPrevia": 9,
+  "conteoDecisiones": {
+    "OMITIDO_POR_AUDITORIA_PREVIA": 9,
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 1,
+    "DESCARTAR": 4
+  },
+  "requiereRevisionHumana": 1,
+  "hallazgosClave": [
+    "Dos de las tres carpetas asignadas ya habían sido auditadas en lotes previos y se omitieron para evitar reprocesamiento y duplicidad de trazabilidad.",
+    "La carpeta nueva de corresponsabilidad y sujetos de derechos mostró predominio de memoria normativa plana y repetición conceptual sobre la triada familia-sociedad-Estado.",
+    "El único ítem rescatable del tramo no auditado convierte la corresponsabilidad en una decisión situada de actuación escolar, pero todavía requiere pilotaje por distractores demasiado previsibles."
+  ],
+  "problemasDetectados": {
+    "omitidos_por_auditoria_previa": {
+      "L008": [
+        "IDD_B15_I01",
+        "IDD_B15_I02",
+        "IDD_B15_I03",
+        "IDD_B15_I04",
+        "IDD_B15_I06"
+      ],
+      "L015": [
+        "CEOL_B06_I01",
+        "CEOL_B06_I02",
+        "CEOL_B06_I03",
+        "CEOL_B06_I04"
+      ]
+    },
+    "memoria_normativa_o_definicional": [
+      "DIL_B01_I01",
+      "DIL_B01_I02",
+      "DIL_B01_I04",
+      "DIL_B01_I05"
+    ],
+    "duplicados_o_solapamientos_conceptuales": [
+      "DIL_B01_I02",
+      "DIL_B01_I05"
+    ],
+    "mejor_valor_relativo_del_tramo_nuevo": [
+      "DIL_B01_I03"
+    ]
+  },
+  "incidenciasGithubOFuente": [
+    "Los archivos de salida de L029 no existían y devolvieron 404 antes de crearse.",
+    "Fue necesario contrastar decisiones.csv de lotes previos para cumplir la regla de no reprocesamiento antes de auditar el material nuevo.",
+    "reporte-acumulado-instancia.md no existía en L029 y se creó en este cierre."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L029/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L029/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L029/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L029/reporte-acumulado-instancia.md"
+  ],
+  "confirmaciones": {
+    "content_items_stand_by_no_modificado": true,
+    "trash_json_no_modificado": true,
+    "bitacoras_globales_no_modificadas": true,
+    "otros_lotes_no_modificados": true
+  }
+}
