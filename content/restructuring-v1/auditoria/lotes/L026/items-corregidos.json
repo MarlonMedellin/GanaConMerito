@@ -1,0 +1,214 @@
+[
+  {
+    "id_item": "PPDC_B01_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "diversidad y no homogeneizacion",
+    "subtema": "plan lector con una unica via de acceso",
+    "competencia": "Tomar decisiones didacticas que atiendan diversidad de ritmos, intereses y niveles de comprension.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado reconoce que una decision didactica inclusiva no iguala mecanicamente el acceso a la lectura, sino que ajusta mediaciones y formatos segun la diversidad del grupo.",
+    "evidencia": "Selecciona la valoracion pedagogica que cuestiona una unica secuencia de lectura y evaluacion para todos los estudiantes.",
+    "tarea": "Analizar una decision de plan lector institucional y juzgar su coherencia con un enfoque no homogeneizador.",
+    "contexto": "En un plan lector institucional, el docente decide que todo el grupo debe leer el mismo libro al mismo ritmo y responder el mismo taller, sin apoyos ni variaciones para estudiantes con niveles de comprension diferentes.",
+    "enunciado": "Cual valoracion pedagogica es la mas coherente frente a esta decision didactica?",
+    "opciones": {
+      "A": "Es inadecuada porque una planeacion de lectura en aulas diversas exige mediaciones, niveles de complejidad y formas de acceso que amplien la comprension del grupo.",
+      "B": "Es adecuada porque aplicar exactamente el mismo texto y taller a todos garantiza por si sola una evaluacion equitativa.",
+      "C": "Es adecuada porque la autonomia docente permite imponer textos y ritmos sin relacion con las necesidades del grupo.",
+      "D": "Es inadecuada porque los libros impresos y los talleres no deberian usarse en el trabajo lector institucional."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A es la mas defendible porque ubica el problema en la homogeneizacion de los accesos y de la mediacion, no en el uso del libro o del taller en si mismos.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Confunde igualdad instrumental con equidad formativa.",
+      "C": "Sobredimensiona la autonomia docente y la despega de la responsabilidad pedagogica frente al grupo real.",
+      "D": "Critica el soporte en lugar de la decision homogeneizadora."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El foco recae en la decision didactica, no en deficit de estudiantes concretos."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Se simplifico la formulacion, pero aun conviene pilotear por debilidad relativa de distractores."
+    },
+    "metadata_editorial": {
+      "lote": "L026",
+      "ruta_origen": "content/items/stand-by/Práctica pedagógica no homogeneizadora y diversidad/PPDC_B01_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/PPDC_B01_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "PPDC_B01_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Práctica pedagógica no homogeneizadora y diversidad/PPDC_B01_I02.json",
+    "motivo": "La mejor respuesta resulta demasiado obvia y varios distractores se van hacia segregacion explicita o reduccion extrema del curriculo, con bajo valor discriminativo.",
+    "lote": "L026"
+  },
+  {
+    "id_item": "PPDC_B01_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Práctica pedagógica no homogeneizadora y diversidad/PPDC_B01_I03.json",
+    "motivo": "Aunque parte de un caso reconocible, el item queda resuelto por una critica doctrinal demasiado evidente a las guias iguales para todos y no por juicio pedagogico fino.",
+    "lote": "L026"
+  },
+  {
+    "id_item": "PPDC_B01_I04",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Práctica pedagógica no homogeneizadora y diversidad/PPDC_B01_I04.json",
+    "motivo": "Se responde casi por reconocimiento de la etiqueta DUA y por descarte de opciones extremas, sin competencia real entre distractores.",
+    "lote": "L026"
+  },
+  {
+    "id_item": "CB08_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Referentes PEI/CB08_I01.json",
+    "motivo": "Reduce el PEI a un listado generico de referentes y se resuelve por exclusion facil, sin lectura institucional situada ni suficiente valor discriminativo.",
+    "lote": "L026"
+  },
+  {
+    "id_item": "CB08_I02",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "gestion",
+    "tema": "referentes pei",
+    "subtema": "coherencia entre horizonte institucional y accion",
+    "competencia": "Analizar la coherencia interna del PEI entre principios declarados y componentes pedagogicos y de convivencia.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado identifica que la planeacion institucional exige coherencia operativa entre mision, propuestas pedagogicas y regulacion de convivencia.",
+    "evidencia": "Reconoce el problema cuando un PEI declara inclusion y participacion, pero no lo traduce en estrategias o acciones concretas.",
+    "tarea": "Analizar un desajuste entre el horizonte institucional y la implementacion del PEI para elegir el juicio institucional correcto.",
+    "contexto": "Al revisar el PEI, se observa que la mision menciona inclusion y participacion, pero los componentes pedagogicos y de convivencia no desarrollan acciones ni criterios acordes con esos principios.",
+    "enunciado": "Cual es el problema principal que revela esta revision del PEI?",
+    "opciones": {
+      "A": "La mision no deberia incluir principios axiologicos o pedagogicos, porque esos asuntos pertenecen solo al manual de convivencia.",
+      "B": "Existe una falta de coherencia interna entre el horizonte institucional y los componentes pedagogico y de convivencia del PEI.",
+      "C": "Las practicas de aula deben formularse por fuera del PEI para proteger completamente la libertad de catedra.",
+      "D": "La inclusion y la participacion son temas complementarios que no necesitan aparecer como orientacion estructural del PEI."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opcion B es la correcta porque el PEI solo gana fuerza institucional si sus principios se traducen en decisiones, estrategias y criterios verificables en los distintos componentes de la vida escolar.",
+    "distractores_funcion": {
+      "A": "Desplaza indebidamente la mision institucional fuera del PEI.",
+      "B": "Clave correcta.",
+      "C": "Desconecta la autonomia docente del proyecto institucional compartido.",
+      "D": "Minimiza principios que deben estructurar la vida institucional."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No exige experiencia en una institucion especifica; evalua lectura profesional de coherencia institucional."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Caso concreto, lenguaje manejable y tarea focalizada."
+    },
+    "metadata_editorial": {
+      "lote": "L026",
+      "ruta_origen": "content/items/stand-by/Referentes PEI/CB08_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/por_confirmar/funcional/CB08_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "CB08_I03",
+    "estado": "LISTO_PARA_BANCO",
+    "area": "gestion",
+    "tema": "referentes pei",
+    "subtema": "uso del diagnostico para priorizar el mejoramiento institucional",
+    "competencia": "Usar informacion diagnostica para orientar prioridades y recursos del PMI y del PEI.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado comprende que el diagnostico institucional debe guiar metas, presupuesto y acciones, no quedar como antecedente decorativo.",
+    "evidencia": "Selecciona el ajuste de planeacion que alinea el plan de mejoramiento con hallazgos de ausentismo, lectura y participacion familiar.",
+    "tarea": "Inferir la decision institucional mas pertinente a partir de un diagnostico de contexto y aprendizaje.",
+    "contexto": "El diagnostico institucional muestra ausentismo, baja participacion familiar y dificultades de lectura, pero el plan de mejoramiento prioriza solo obras administrativas.",
+    "enunciado": "Que ajuste seria mas pertinente frente a esta situacion institucional?",
+    "opciones": {
+      "A": "Eliminar la seccion diagnostica del PEI para evitar contradicciones visibles ante auditorias.",
+      "B": "Reestructurar el PMI para alinear metas, acciones y recursos con los hallazgos del diagnostico, incluyendo lectura y corresponsabilidad familiar.",
+      "C": "Mantener como prioridad exclusiva la remodelacion administrativa, asumiendo que ello repercutira indirectamente en el aula.",
+      "D": "Exigir al profesorado que resuelva el problema desde el aula sin cambiar planeacion, presupuesto ni acciones institucionales."
+    },
+    "clave": "B",
+    "justificacion_clave": "La opcion B es la unica que convierte el diagnostico en criterio real de priorizacion institucional y de asignacion de recursos, como corresponde a un PMI con sentido.",
+    "distractores_funcion": {
+      "A": "Oculta el problema en vez de gestionarlo.",
+      "B": "Clave correcta.",
+      "C": "Desconoce la prioridad de alertas pedagogicas e institucionales ya identificadas.",
+      "D": "Traslada la carga al aula y rompe la logica de gestion integrada."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Evalua uso profesional del diagnostico sin culpar a estudiantes, familias o docentes como grupos deficitarios."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Escenario claro y decision suficientemente situada para banco."
+    },
+    "metadata_editorial": {
+      "lote": "L026",
+      "ruta_origen": "content/items/stand-by/Referentes PEI/CB08_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/por_confirmar/funcional/CB08_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_BANCO",
+      "requiere_revision_humana": false
+    }
+  },
+  {
+    "id_item": "CB07_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "responsabilidad legal",
+    "subtema": "omision del deber de cuidado ante hostigamiento",
+    "competencia": "Valorar la responsabilidad institucional de activar rutas de atencion frente a riesgos evidentes para estudiantes.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado reconoce que la omision de reporte ante hostigamiento y riesgo conocido vulnera el deber de cuidado y puede generar responsabilidad profesional.",
+    "evidencia": "Selecciona la valoracion legal y profesional correcta frente a un docente que omite reportar una situacion reiterada de intimidacion y deterioro del estudiante.",
+    "tarea": "Analizar un caso de omision docente y decidir su valoracion juridica y profesional.",
+    "contexto": "Un docente observa hostigamiento fisico reiterado en pasillos y cambios de retraimiento y bajo rendimiento en el estudiante afectado, pero decide no reportar para evitar tramites y conflictos.",
+    "enunciado": "Cual es la valoracion legal y profesional mas coherente sobre esta actuacion?",
+    "opciones": {
+      "A": "Configura una omision del deber de cuidado y de la posicion de garante, con posibles responsabilidades administrativas, disciplinarias o civiles por no activar la ruta pertinente.",
+      "B": "Es una decision valida porque el deber de cuidado termina cuando el riesgo no ocurre durante la explicacion de clase dentro del aula.",
+      "C": "Es prudente no activar protocolos hasta que la victima presente una denuncia formal y escrita.",
+      "D": "Es recomendable dejar que la familia gestione sola el conflicto antes de involucrar a la institucion."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opcion A es la mejor porque vincula correctamente el caso con la posicion de garante y con la obligacion institucional de activar rutas de atencion cuando el riesgo es conocido.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Reduce indebidamente el deber de cuidado al espacio del aula.",
+      "C": "Introduce un requisito formal inexistente para la activacion oportuna.",
+      "D": "Privatiza un riesgo escolar que exige respuesta institucional."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El foco esta en la actuacion profesional y en la proteccion del estudiante, no en caracterizaciones de las familias o de la victima."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Caso claro, pero conviene pilotear porque la respuesta correcta sigue siendo cercana al sentido comun profesional esperado."
+    },
+    "metadata_editorial": {
+      "lote": "L026",
+      "ruta_origen": "content/items/stand-by/Responsabilidad legal/CB07_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/CB07_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": false
+    }
+  }
+]
