@@ -1,0 +1,11 @@
+agente,rango,tipo_inconsistencia,lote,detalle,prioridad,accion_sugerida
+F2_AGENT_B,L021-L050,ARCHIVOS_PREPARADOS_FUERA_REPO,L044,"El lote fue preparado como ZIP local y no quedó confirmado completamente en GitHub durante el cierre original.",ALTA,"Validar existencia física de las cuatro salidas y reinyectar si falta alguna."
+F2_AGENT_B,L021-L050,ARCHIVOS_PREPARADOS_FUERA_REPO,L048,"El lote fue preparado como ZIP local y no quedó confirmado completamente en GitHub durante el cierre original.",ALTA,"Validar existencia física de las cuatro salidas y reinyectar si falta alguna."
+F2_AGENT_B,L021-L050,TRAZABILIDAD_PARCIAL,L046,"Hubo timeout de verificación sobre decisiones.csv aunque el lote parece consistente.",MEDIA,"Releer decisiones.csv y validar integridad SHA lógica."
+F2_AGENT_B,L021-L050,FUENTE_INCONSISTENTE,L049,"GA02_B08 aparece en árbol GitHub pero no recuperable por contenido.",MEDIA,"Marcar item como fuente rota persistente en remediación."
+F2_AGENT_B,L021-L050,CONTROL_DUPLICADOS_EXCESIVO,L031,"Lote quedó solo como omisión trazada; requiere verificar si realmente no hubo ítems nuevos omitidos accidentalmente.",BAJA,"Muestreo manual posterior."
+F2_AGENT_B,L021-L050,CONTROL_DUPLICADOS_EXCESIVO,L032,"Lote quedó solo como omisión trazada y descartes conceptuales.",BAJA,"Muestreo manual posterior."
+F2_AGENT_B,L021-L050,CONTROL_DUPLICADOS_EXCESIVO,L035,"Lote quedó solo como omisión trazada.",BAJA,"Muestreo manual posterior."
+F2_AGENT_B,L021-L050,CONTROL_DUPLICADOS_EXCESIVO,L036,"Lote quedó solo como omisión trazada.",BAJA,"Muestreo manual posterior."
+F2_AGENT_B,L021-L050,CONTROL_DUPLICADOS_EXCESIVO,L037,"Lote quedó solo como omisión trazada.",BAJA,"Muestreo manual posterior."
+F2_AGENT_B,L021-L050,VALIDACION_PENDIENTE,L042,"Lote consistente pero nunca revalidado luego de creación.",BAJA,"Validación diferida opcional."
