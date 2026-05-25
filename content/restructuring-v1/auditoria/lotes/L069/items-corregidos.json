@@ -1,0 +1,292 @@
+[
+  {
+    "id_item": "PPDC_B07_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Aula invertida y cambio de rol docente",
+    "subtema": "Mediacion didactica en aula invertida",
+    "competencia": "Analiza decisiones didacticas y reorganiza la mediacion docente para usar el tiempo presencial en tareas cognitivas de mayor complejidad.",
+    "nivel_cognitivo": "ANALISIS",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la actuacion docente mas coherente con aula invertida cuando el tiempo presencial deja de centrarse en exposicion magistral.",
+    "evidencia": "Selecciona una unica respuesta que convierte el cambio metodologico en mediacion observable y no en simple consumo previo de contenidos.",
+    "tarea": "Analizar el caso y elegir el principal cambio de rol docente y de uso del tiempo presencial.",
+    "contexto": "Una institucion quiere implementar aula invertida para superar clases centradas exclusivamente en exposicion magistral. El equipo docente acuerda que los estudiantes revisaran materiales antes del encuentro presencial, pero duda sobre que debe cambiar realmente durante la clase.",
+    "enunciado": "En una institucion que implementa aula invertida, ¿cual es el cambio pedagogico central que debe ocurrir durante la sesion presencial?",
+    "opciones": {
+      "A": "Aprovechar el tiempo para que el docente exponga con mayor profundidad mientras el estudiantado toma apuntes organizados.",
+      "B": "Usar la sesion para aplicar, analizar y crear con mediacion activa del docente, que pasa de expositor principal a facilitador del aprendizaje.",
+      "C": "Reducir al minimo la intervencion docente para que el trabajo autonomo previo reemplace la planeacion de la clase.",
+      "D": "Sustituir la interaccion grupal por cuestionarios individuales en plataforma para verificar si vieron los materiales."
+    },
+    "clave": "B",
+    "justificacion_clave": "La respuesta correcta es B porque el aula invertida libera el tiempo presencial para tareas de mayor demanda cognitiva con acompanamiento docente directo. El cambio no consiste solo en mover contenidos a casa, sino en transformar la sesion en un espacio de mediacion, aplicacion y retroalimentacion.",
+    "distractores_funcion": {
+      "A": "Mantiene la logica magistral y no transforma la experiencia de aprendizaje.",
+      "B": "Clave correcta: convierte la metodologia en actuacion docente concreta y en trabajo cognitivo superior.",
+      "C": "Confunde autonomia con retiro del docente y desprofesionaliza la mediacion.",
+      "D": "Reduce la innovacion a control de cumplimiento y no a trabajo didactico significativo."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Contexto general de institucion escolar y lenguaje neutral."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Una sola tarea principal y opciones paralelas."
+    },
+    "metadata_editorial": {
+      "lote": "L069",
+      "ruta_origen": "content/items/stand-by/Aula invertida y cambio de rol docente/PPDC_B07_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/PPDC_B07_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "PPDC_B03_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Constructivismo, indagacion y aprendizaje experimental",
+    "subtema": "Indagacion cientifica con mediacion docente",
+    "competencia": "Selecciona intervenciones de indagacion coherentes con un enfoque constructivista y con el tratamiento pedagogico de preguntas genuinas del estudiantado.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la actuacion pedagógica que convierte una duda cientifica en oportunidad de construccion conceptual.",
+    "evidencia": "Elige una intervencion donde la curiosidad del estudiante se transforma en formulacion de hipotesis, observacion y contrastacion con acompanamiento docente.",
+    "tarea": "Determinar la intervencion pedagogica mas adecuada ante una duda cientifica desde una didactica constructivista.",
+    "contexto": "En una clase de ciencias naturales de educacion basica, un estudiante pregunta como la luz solar participa en la fotosintesis. El docente quiere responder desde un enfoque de indagacion y no desde memorizacion pasiva.",
+    "enunciado": "¿Cual es la actuacion pedagogica mas adecuada para responder esa inquietud desde un enfoque constructivista?",
+    "opciones": {
+      "A": "Promover que el grupo formule hipotesis sobre la influencia de la luz, observe evidencias y contraste sus ideas mediante actividades de exploracion guiada.",
+      "B": "Dar una definicion tecnica completa en el tablero y pedir su copia textual para el examen.",
+      "C": "Explicar de forma directa una version cerrada del proceso sin abrir espacio a comprobacion ni analisis estudiantil.",
+      "D": "Desestimar la pregunta por considerarla avanzada para el grado y continuar con el plan previsto."
+    },
+    "clave": "A",
+    "justificacion_clave": "La respuesta correcta es A porque la indagacion constructivista parte de una pregunta autentica, activa saberes previos y organiza observacion, contraste y mediacion docente para construir explicaciones con sentido.",
+    "distractores_funcion": {
+      "A": "Clave correcta: convierte la curiosidad inicial en investigacion guiada y aprendizaje con elaboracion propia.",
+      "B": "Representa transmision y memorizacion sin construccion.",
+      "C": "Conserva un formato expositivo cerrado y elimina el trabajo de indagacion del estudiante.",
+      "D": "Niega una oportunidad de aprendizaje y corta la mediacion didactica."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Escenario escolar comun, sin carga cultural irrelevante."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Lenguaje docente estandar y foco unico."
+    },
+    "metadata_editorial": {
+      "lote": "L069",
+      "ruta_origen": "content/items/stand-by/Constructivismo, indagación y aprendizaje experimental/PPDC_B03_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/PPDC_B03_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "PPDC_B03_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Constructivismo, indagación y aprendizaje experimental/PPDC_B03_I02.json",
+    "motivo": "Se queda en explicacion teorica sobre tanteo experimental y aprender haciendo. No exige actuacion docente concreta, la tarea cognitiva esta inflada y los distractores se resuelven por descarte facil.",
+    "lote": "L069"
+  },
+  {
+    "id_item": "IDD_B12_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Didactica de areas, resolucion de problemas y material concreto",
+    "subtema": "Resolucion significativa de problemas en matematicas",
+    "competencia": "Reorienta practicas mecanicas hacia situaciones problema donde los procedimientos funcionan como herramientas y no como fin en si mismos.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la accion didactica mas pertinente para desarrollar resolucion autentica de problemas de manera significativa.",
+    "evidencia": "Selecciona una respuesta donde la modelacion y la justificacion sustituyen la repeticion mecanica de algoritmos.",
+    "tarea": "Elegir la accion didactica mas pertinente para reorientar una clase centrada en ejercitacion mecanica.",
+    "contexto": "En una clase de matematicas, el docente llena tableros con procedimientos y luego asigna muchos ejercicios mecanicos. El estudiantado repite algunos pasos, pero no sabe cuando ni para que usarlos en situaciones reales.",
+    "enunciado": "¿Que accion didactica reorienta mejor esta practica hacia la competencia de resolucion de problemas?",
+    "opciones": {
+      "A": "Disenar situaciones problema contextualizadas que exijan identificar relaciones matematicas y usar procedimientos como herramientas para justificar soluciones.",
+      "B": "Dejar los problemas verbales al final de la guia, asegurando que se traduzcan literalmente a formulas ya conocidas.",
+      "C": "Aumentar la cantidad de algoritmos explicados antes del taller para ampliar el repertorio memoristico del grupo.",
+      "D": "Sustituir el tablero por material manipulativo para repetir fisicamente los mismos pasos algoritmicos explicados por el docente."
+    },
+    "clave": "A",
+    "justificacion_clave": "La respuesta correcta es A porque desplaza el centro de la clase desde la repeticion de procedimientos hacia la modelacion, el analisis y la justificacion de soluciones en contextos significativos.",
+    "distractores_funcion": {
+      "A": "Clave correcta: convierte el procedimiento en herramienta para resolver y justificar, no en meta de memorizacion.",
+      "B": "Mantiene la misma logica mecanica bajo un disfraz verbal.",
+      "C": "Refuerza el sesgo tradicional de acumulacion de algoritmos sin transferencia.",
+      "D": "Usa material concreto sin transformar la estructura cognitiva de la tarea."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Escenario de aula transversal y comprensible para distintos contextos escolares."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Opciones homogeneas y foco bien delimitado."
+    },
+    "metadata_editorial": {
+      "lote": "L069",
+      "ruta_origen": "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B12_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B12_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Didactica de areas, resolucion de problemas y material concreto",
+    "subtema": "Evaluacion formativa con material concreto",
+    "competencia": "Implementa intervenciones mediadas por material concreto para superar barreras conceptuales detectadas en el diagnostico de aula.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce una intervencion de evaluacion formativa donde el material concreto se articula con mediacion docente y construccion conceptual.",
+    "evidencia": "Selecciona una alternativa en la que el error recurrente del grupo se aborda con representacion, contraste y preguntas guiadas.",
+    "tarea": "Elegir la intervencion mas adecuada para atender una confusion entre adicion y multiplicacion en primaria.",
+    "contexto": "En un grupo de basica primaria, el docente observa que mas de la mitad del estudiantado confunde adicion y multiplicacion en problemas sencillos y comete errores sistematicos.",
+    "enunciado": "Con el fin de implementar evaluacion formativa mediada por material concreto para superar esta dificultad, el docente debe:",
+    "opciones": {
+      "A": "Disenar una sesion donde el grupo represente sumas repetidas de grupos iguales y las contraste con sumas simples, guiando la formulacion de la relacion conceptual entre adicion y multiplicacion.",
+      "B": "Entregar material para juego libre, confiando en que la familiarizacion espontanea resuelva por si sola las dudas procedimentales.",
+      "C": "Asignar una nueva guia de ejercicios y exigir memorizar primero las tablas antes de volver al material concreto.",
+      "D": "Usar el material frente al tablero para demostrar la diferencia entre ambas operaciones y luego pedir copia de conclusiones."
+    },
+    "clave": "A",
+    "justificacion_clave": "La respuesta correcta es A porque vincula diagnostico, manipulacion, contraste conceptual y mediacion intencional. No basta con usar recursos; se necesita orientarlos hacia la comprension del error y la construccion de relaciones matematicas.",
+    "distractores_funcion": {
+      "A": "Clave correcta: articula material, preguntas y reconstruccion conceptual a partir del error.",
+      "B": "Supone que el material enseña por si solo sin mediacion docente.",
+      "C": "Vuelve al enfoque memoristico y desplaza el trabajo conceptual.",
+      "D": "Conserva el rol transmisivo del docente y reduce al estudiante a copia y recepcion."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Contexto general de primaria, sin barreras culturales irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Pregunta unica y secuencia facil de seguir."
+    },
+    "metadata_editorial": {
+      "lote": "L069",
+      "ruta_origen": "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B12_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B12_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Didactica de areas, resolucion de problemas y material concreto",
+    "subtema": "Transferencia contextualizada del conocimiento cientifico",
+    "competencia": "Ajusta la ensenanza de conceptos cientificos para conectarlos con problemas reales del entorno del estudiantado.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce el ajuste didactico mas coherente con aprendizaje significativo y ensenanza por competencias en ciencias.",
+    "evidencia": "Selecciona una alternativa que vincula concepto abstracto, indagacion aplicada y toma de decisiones en contexto real.",
+    "tarea": "Elegir el ajuste didactico mas pertinente para contextualizar el concepto de pH en un entorno agricola.",
+    "contexto": "En secundaria, un docente presenta el concepto de pH solo con formulas y definiciones. El grupo pregunta como ese conocimiento se aplica en su comunidad agricola.",
+    "enunciado": "Para realizar un ajuste didactico coherente con ensenanza por competencias y aprendizaje significativo, el docente debe:",
+    "opciones": {
+      "A": "Plantear una actividad de indagacion donde el grupo recoja muestras de suelo, use indicadores de pH y relacione la acidez con decisiones sobre cultivos locales.",
+      "B": "Disenar primero un cuestionario teorico obligatorio sobre acidez y basicidad antes de abrir cualquier aplicacion practica.",
+      "C": "Organizar una exposicion escolar donde se repita la definicion de pH apoyada en carteleras ilustrativas.",
+      "D": "Sustituir el analisis del contexto por un protocolo fijo de laboratorio para evitar errores de medicion en clase."
+    },
+    "clave": "A",
+    "justificacion_clave": "La respuesta correcta es A porque convierte un concepto abstracto en investigacion contextualizada, con uso autentico del saber para interpretar y decidir sobre una situacion del entorno.",
+    "distractores_funcion": {
+      "A": "Clave correcta: integra concepto, contexto, indagacion y transferencia.",
+      "B": "Refuerza la secuencia teorica tradicional y posterga innecesariamente la aplicacion significativa.",
+      "C": "Reduce el aprendizaje a repeticion expositiva con apariencia motivacional.",
+      "D": "Mantiene una practica tecnica cerrada sin lectura del entorno ni toma de decisiones."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El contexto agricola aporta funcion didactica real y no introduce barreras irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Vocabulario disciplinar manejable y estructura limpia."
+    },
+    "metadata_editorial": {
+      "lote": "L069",
+      "ruta_origen": "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B12_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B12_I04",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I04.json",
+    "motivo": "El item se resuelve por reconocimiento de la teoria correcta sobre material concreto y no por una decision profesional situada. El contexto funciona como apoyo decorativo y los distractores son demasiado extremos.",
+    "lote": "L069"
+  },
+  {
+    "id_item": "IDD_B12_I05",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Didactica de areas, resolucion de problemas y material concreto",
+    "subtema": "Seleccion de estrategia didactica desde diagnostico",
+    "competencia": "Selecciona estrategias didacticas a partir de barreras de aprendizaje evidenciadas, propositos de aprendizaje y condiciones reales del aula.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce el criterio tecnico prioritario para ajustar la planeacion didactica ante una dificultad de interpretacion grafica.",
+    "evidencia": "Elige una respuesta que articula proposito, barrera diagnostica, contexto y recursos, descartando novedad metodologica, comodidad operativa o tecnocentrismo.",
+    "tarea": "Identificar el criterio prioritario para seleccionar una nueva estrategia didactica.",
+    "contexto": "Un docente de educacion media observa dificultades serias para interpretar graficas estadisticas complejas, lo que afecta el desempeno en ciencias sociales y matematicas.",
+    "enunciado": "Al seleccionar una nueva estrategia didactica para abordar esta problematica, el criterio prioritario que debe guiar su decision tecnica es:",
+    "opciones": {
+      "A": "Analizar de forma articulada el proposito de aprendizaje, las barreras evidenciadas, el contexto del aula y los recursos institucionales disponibles.",
+      "B": "Adoptar una metodologia activa novedosa sugerida en la literatura reciente, aunque no dialogue con el contexto local.",
+      "C": "Seleccionar la estrategia que ya trae guias y evaluaciones estandarizadas para reducir tiempos de planeacion.",
+      "D": "Elegir la actividad con mayor respaldo de herramientas digitales, asumiendo que la tecnologia garantiza el aprendizaje."
+    },
+    "clave": "A",
+    "justificacion_clave": "La respuesta correcta es A porque una seleccion didactica tecnicamente defendible parte de la relacion entre meta de aprendizaje, barreras reales, contexto y viabilidad. No depende de modas metodologicas ni de soluciones tecnologicas por si mismas.",
+    "distractores_funcion": {
+      "A": "Clave correcta: integra diagnostico, proposito y condiciones reales para decidir.",
+      "B": "Cae en sesgo de novedad pedagogica sin pertinencia contextual.",
+      "C": "Prioriza comodidad operativa y estandarizacion descontextualizada.",
+      "D": "Sobrevalora la tecnologia como respuesta suficiente a una dificultad conceptual."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Escenario profesional transversal a diferentes contextos escolares."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Buena delimitacion de tarea y opciones semanticas comparables."
+    },
+    "metadata_editorial": {
+      "lote": "L069",
+      "ruta_origen": "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I05.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B12_I05.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  }
+]
