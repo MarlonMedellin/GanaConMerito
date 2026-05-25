@@ -1,0 +1,50 @@
+{
+  "lote": "L063",
+  "fechaCierre": "2026-05-25",
+  "repositorio": "https://github.com/ProfeMarlonMDE/GanaConMerito",
+  "carpetasProcesadas": [
+    "content/items/stand-by/Normatividad y fines de la educación/",
+    "content/items/stand-by/Normatividad, fines de la educación y educación no formal/",
+    "content/items/stand-by/Educación como derecho fundamental, bien común y derecho pluridimensional/"
+  ],
+  "sublotesInternos": [],
+  "itemsDetectadosEnCarpetas": [
+    "GA02_B08.json",
+    "PPDC_B06_I01.json",
+    "PPDC_B06_I02.json",
+    "NFL_B07_I01.json",
+    "NFL_B07_I02.json",
+    "NFL_B07_I03.json",
+    "NFL_B07_I04.json"
+  ],
+  "itemsLeidos": 6,
+  "itemsOmitidosPorAuditoriaPrevia": [],
+  "itemsNoAuditadosProcesados": [
+    "PPDC_B06_I01",
+    "PPDC_B06_I02",
+    "NFL_B07_I01",
+    "NFL_B07_I02",
+    "NFL_B07_I03",
+    "NFL_B07_I04"
+  ],
+  "itemsConIncidenciaFuenteNoLeidos": [
+    "GA02_B08.json"
+  ],
+  "conteosDecision": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 3,
+    "DESCARTAR": 3
+  },
+  "requiereRevisionHumana": 1,
+  "incidenciasGithubFuente": [
+    "El arbol web de GitHub muestra `GA02_B08.json` en `content/items/stand-by/Normatividad y fines de la educación/`, pero el conector GitHub y la descarga por URL devolvieron 404 para ese archivo; quedo trazado como incidencia de fuente y no se forzo dictamen sin lectura.",
+    "La red externa directa a GitHub desde este entorno continuo devolviendo 403, por lo que la lectura operativa se hizo con el conector GitHub y la vista web del arbol."
+  ],
+  "archivosGenerados": [
+    "content/restructuring-v1/trazabilidad/lotes/L063/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L063/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L063/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L063/reporte-acumulado-instancia.md"
+  ],
+  "rutasProtegidasNoModificadas": true
+}
