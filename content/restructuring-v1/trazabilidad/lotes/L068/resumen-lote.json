@@ -1,0 +1,73 @@
+{
+  "lote": "L068",
+  "repository": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaAuditoria": "2026-05-25",
+  "decisionGlobalLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/",
+    "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/",
+    "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/"
+  ],
+  "totalItemsDetectados": 18,
+  "totalItemsLeidos": 18,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 2,
+    "LISTO_PARA_PILOTAJE": 9,
+    "DESCARTAR": 7
+  },
+  "conteoRequiereRevisionHumana": 0,
+  "fuentesConsultadas": [
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I01.json",
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I02.json",
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I03.json",
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I04.json",
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I05.json",
+    "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/CEOL_B01_I01.json",
+    "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/CEOL_B01_I02.json",
+    "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/CEOL_B01_I03.json",
+    "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/CEOL_B01_I04.json",
+    "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/CEOL_B01_I05.json",
+    "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/CEOL_B01_I06.json",
+    "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/CEOL_B02_I01.json",
+    "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/CEOL_B02_I02.json",
+    "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/CEOL_B02_I03.json",
+    "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/CEOL_B02_I04.json",
+    "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/CEOL_B02_I05.json",
+    "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/CEOL_B02_I06.json",
+    "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/CEOL_B02_I07.json"
+  ],
+  "hallazgosPrincipales": [
+    "La carpeta de responsabilidad legal escolar contiene los mejores reactivos situados del lote, con foco más claro en deber de protección, reserva y activación de rutas.",
+    "La carpeta del Sistema Nacional de Convivencia concentra varios ítems de memoria normativa o clasificación de componentes y niveles, con poca respuesta escolar observable.",
+    "La carpeta de enfoque de derechos mezcla dos ítems demasiado doctrinales con un grupo útil de decisiones sobre debido proceso y justicia restaurativa.",
+    "El lote funciona mejor cuando obliga a elegir una actuación institucional proporcional y peor cuando pide nombrar ejes, niveles o definiciones legales."
+  ],
+  "problemasSistemicos": [
+    "Presencia importante de clasificación normativa y memoria legal disfrazadas de contexto.",
+    "Varios distractores son demasiado extremos, lo que hace visible la clave y baja la exigencia discriminativa.",
+    "En algunos reactivos el contexto es decorativo y no transforma la tarea en una decisión profesional observable."
+  ],
+  "riesgosBanco": [
+    "Integrar los ítems descartados cargaría el banco con doctrina repetitiva y reconocimiento de reglas, en lugar de juicio institucional situado.",
+    "Los ítems en pilotaje requieren evidencia empírica para confirmar que sus distractores compiten lo suficiente antes de pasar a banco activo."
+  ],
+  "incidenciasGithubOFuente": [
+    "Las salidas de L068 no existían y se crearon en este ciclo.",
+    "La auditoría se resolvió leyendo directamente los ítems del lote en GitHub, sin depender de trazabilidad previa."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L068/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L068/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L068/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L068/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "noSeModificoStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true,
+    "noSeModificaronOtrosLotes": true
+  }
+}
