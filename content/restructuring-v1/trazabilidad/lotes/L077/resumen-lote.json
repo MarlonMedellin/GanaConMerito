@@ -1,0 +1,46 @@
+{
+  "loteProcesado": "L077",
+  "decisionLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "sublotesInternos": ["L077-A", "L077-B"],
+  "carpetasProcesadas": [
+    "content/items/stand-by/PEI, currículo oficial y Manual de Convivencia/",
+    "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/",
+    "content/items/stand-by/Referentes PEI/"
+  ],
+  "numeroItemsLeidos": 11,
+  "conteoEstados": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 5,
+    "DESCARTAR": 6
+  },
+  "numeroConRequiereRevisionHumana": 5,
+  "hallazgosPrincipales": [
+    "El bloque mas debil fue `PEI, currículo oficial y Manual de Convivencia`: sus tres items se resolvian por jerarquia documental o taxonomia institucional sin decision observable.",
+    "Lo rescatable del lote aparece cuando la tarea exige leer el PEI como instrumento vivo de coherencia institucional o tomar decisiones de gestion concretas en convivencia y organizacion del servicio.",
+    "`Referentes PEI` combina un item puramente definicional con dos escenarios institucionales mas defendibles sobre articulacion interna y uso del diagnostico para orientar el PMI.",
+    "Nada quedo suficientemente afinado en distractores y opacidad de clave como para banco activo."
+  ],
+  "problemasSistemicos": [
+    "Abunda la jerarquia documental memoristica y la doctrina repetitiva sobre que documento contiene a cual.",
+    "Varias claves se delatan por ser la unica opcion tecnicamente equilibrada frente a distractores muy burdos o extremos.",
+    "Parte del lote usa contexto institucional como decorado para preguntar definiciones o equivalencias planas."
+  ],
+  "incidenciasGithubOFuente": [
+    "La resolucion del inventario requirio navegacion directa por GitHub para carpetas con tildes y comas.",
+    "Se documentaron coincidencias parciales con dictamenes previos en `CEOL_B05_I01-I03` y `CEOL_B10_I01-I05`, pero el cierre de `L077` quedo autocontenido en este lote.",
+    "No hubo incidencias bloqueantes de lectura o escritura en GitHub."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L077/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L077/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L077/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L077/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "modificoContentItemsStandBy": false,
+    "modificoTrashJson": false,
+    "modificoBitacorasGlobales": false,
+    "modificoOtrosLotes": false
+  }
+}
