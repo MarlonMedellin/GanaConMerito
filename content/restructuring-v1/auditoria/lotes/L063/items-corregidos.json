@@ -1,0 +1,81 @@
+{
+  "lote": "L063",
+  "fechaCierre": "2026-05-25",
+  "itemsAuditados": [
+    {
+      "id_item": "PPDC_B06_I01",
+      "fuente": "content/items/stand-by/Normatividad, fines de la educación y educación no formal/PPDC_B06_I01.json",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "dictamen": "Conserva valor para banco porque traduce fines de la educación en una decisión curricular transversal y conectada con diversidad, memoria e identidad.",
+      "riesgosTecnicos": [
+        "La clave concentra demasiados valores positivos frente a distractores menos plausibles.",
+        "La competencia se acerca mas a interpretacion institucional que a mera evocacion normativa, pero aun necesita contraste empírico de discriminacion."
+      ],
+      "fairness": "Sin barreras irrelevantes claras; lenguaje accesible y contexto escolar general."
+    },
+    {
+      "id_item": "PPDC_B06_I02",
+      "fuente": "content/items/stand-by/Normatividad, fines de la educación y educación no formal/PPDC_B06_I02.json",
+      "decision": "DESCARTAR",
+      "dictamen": "No aporta utilidad docente autentica: se reduce a clasificar juridicamente una modalidad de formación a partir de definiciones legales.",
+      "riesgosTecnicos": [
+        "Memoria legal plana.",
+        "Taxonomia normativa con baja observabilidad profesional.",
+        "Distractores se descartan por descarte terminologico antes que por razonamiento situado."
+      ],
+      "fairness": "Sin sesgo relevante, pero la carga normativa no se justifica por el constructo buscado."
+    },
+    {
+      "id_item": "NFL_B07_I01",
+      "fuente": "content/items/stand-by/Educación como derecho fundamental, bien común y derecho pluridimensional/NFL_B07_I01.json",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "dictamen": "Tiene valor porque obliga a distinguir cobertura administrativa de garantía integral del derecho a la educación en un escenario institucional creíble.",
+      "riesgosTecnicos": [
+        "Dos distractores son demasiado débiles y facilitan la detección de la clave.",
+        "Conviene observar en pilotaje si discrimina más allá del acuerdo general con el enfoque de derechos."
+      ],
+      "fairness": "Contexto neutral y comprensible; la dificultad relevante proviene de la interpretación institucional."
+    },
+    {
+      "id_item": "NFL_B07_I02",
+      "fuente": "content/items/stand-by/Educación como derecho fundamental, bien común y derecho pluridimensional/NFL_B07_I02.json",
+      "decision": "DESCARTAR",
+      "dictamen": "Aunque usa un caso, la resolución real depende de recordar la fórmula de las 4A y su definición técnica.",
+      "riesgosTecnicos": [
+        "Definicion casi literal del marco internacional.",
+        "La tarea observable es baja y el constructo termina siendo recuerdo doctrinal."
+      ],
+      "fairness": "Sin sesgo manifiesto, pero la carga conceptual excede la utilidad aplicada para banco docente."
+    },
+    {
+      "id_item": "NFL_B07_I03",
+      "fuente": "content/items/stand-by/Educación como derecho fundamental, bien común y derecho pluridimensional/NFL_B07_I03.json",
+      "decision": "DESCARTAR",
+      "dictamen": "Queda como declaración doctrinal sobre bien común con una clave moralmente obvia y distractores poco competidores.",
+      "riesgosTecnicos": [
+        "Baja discriminacion esperable.",
+        "Opciones caricaturescas y fácilmente eliminables.",
+        "Utilidad docente limitada por falta de decisión institucional concreta."
+      ],
+      "fairness": "No presenta barreras relevantes, pero tampoco suficiente exigencia interpretativa auténtica."
+    },
+    {
+      "id_item": "NFL_B07_I04",
+      "fuente": "content/items/stand-by/Educación como derecho fundamental, bien común y derecho pluridimensional/NFL_B07_I04.json",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "dictamen": "Es el más aplicable del bloque de derechos porque sitúa barreras reales de permanencia y exige respuesta institucional coherente con garantía integral.",
+      "riesgosTecnicos": [
+        "La opción correcta sobresale por densidad conceptual positiva.",
+        "Necesita pilotaje para comprobar que discrimina por juicio institucional y no solo por reconocimiento del lenguaje de derechos."
+      ],
+      "fairness": "Buen nivel de accesibilidad y ausencia de sesgos; el contexto representa una barrera escolar frecuente y pertinente."
+    }
+  ],
+  "incidenciasFuente": [
+    {
+      "archivo": "content/items/stand-by/Normatividad y fines de la educación/GA02_B08.json",
+      "tipo": "archivo_visible_no_recuperable",
+      "detalle": "La carpeta muestra `GA02_B08.json` en el arbol web de GitHub, pero el conector devolvio 404 tanto por ruta como por URL, y la red externa directa a GitHub devolvio 403. Se deja para revision manual sin inventar dictamen."
+    }
+  ]
+}
