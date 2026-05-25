@@ -1,0 +1,181 @@
+# Reporte acumulado de la instancia
+
+Este reporte consolida los lotes auditados por esta misma instancia en este chat.
+
+## L001
+- Carpetas revisadas: lote inicial de referencia trazado en bitácora.
+- Ítems leídos: 12
+- LISTO_PARA_BANCO: 9
+- LISTO_PARA_PILOTAJE: 3
+- DESCARTAR: 0
+- Requiere revisión humana: 3
+- Incidencias: asignación inicial resuelta con trazabilidad disponible del repositorio.
+- Archivos escritos: resumen-lote.json, decisiones.csv, items-corregidos.json.
+- Rutas protegidas no modificadas: sí.
+
+## L008
+- Carpetas revisadas: Currículo obligatorio y proyectos pedagógicos transversales; Currículo oficial, oculto, nulo, PEI y DUR 1075; Currículo vs plan vs malla.
+- Ítems leídos: 13
+- LISTO_PARA_BANCO: 10
+- LISTO_PARA_PILOTAJE: 2
+- DESCARTAR: 1
+- Requiere revisión humana: 3
+- Incidencias: detección de normatividad trivial, memoria normativa y nomenclatura ambigua.
+- Archivos escritos: resumen-lote.json, decisiones.csv, items-corregidos.json.
+- Rutas protegidas no modificadas: sí.
+
+## L011
+- Carpetas revisadas: Diagnóstico pedagógico en educación primaria; Diagnóstico pedagógico integral; Diagnóstico pedagógico, saberes previos y evaluación formativa.
+- Ítems leídos: 7
+- LISTO_PARA_BANCO: 4
+- LISTO_PARA_PILOTAJE: 1
+- DESCARTAR: 2
+- Requiere revisión humana: 5
+- Incidencias: salidas inexistentes al inicio; búsqueda inicial con ruido resuelta por consulta más específica.
+- Archivos escritos: resumen-lote.json, decisiones.csv, items-corregidos.json, reporte-procesos-anteriores.md.
+- Rutas protegidas no modificadas: sí.
+
+## L015
+- Carpetas revisadas: Evaluación colaborativa, coevaluación y metacognición; Evaluación cualitativa, formativa y participativa; Evaluación formativa, mejora continua y lenguaje evaluativo.
+- Ítems leídos: 11
+- LISTO_PARA_BANCO: 7
+- LISTO_PARA_PILOTAJE: 1
+- DESCARTAR: 3
+- Requiere revisión humana: 8
+- Incidencias: salidas inexistentes al inicio; búsquedas con ruido resueltas por consultas más específicas.
+- Archivos escritos: resumen-lote.json, decisiones.csv, items-corregidos.json, reporte-procesos-anteriores.md, reporte-acumulado-instancia.md.
+- Rutas protegidas no modificadas: sí.
+
+## L019
+- Carpetas revisadas: Identidad, autonomía y reconocimiento del cuerpo; Igualdad material, discriminación positiva y debilidad manifiesta; Inclusión Decreto 1421.
+- Ítems leídos: 9
+- LISTO_PARA_BANCO: 4
+- LISTO_PARA_PILOTAJE: 3
+- DESCARTAR: 2
+- Requiere revisión humana: 5
+- Incidencias: salidas inexistentes al inicio; expansión manual del árbol del repo para identificar archivos.
+- Archivos escritos: resumen-lote.json, decisiones.csv, items-corregidos.json, reporte-acumulado-instancia.md.
+- Rutas protegidas no modificadas: sí.
+
+## L022
+- Carpetas revisadas: Marco legal del preescolar y organización del nivel; Mecanismos de participación ciudadana: plebiscito, consulta y límites; Menor infractor, edad penal y rutas de protección.
+- Ítems leídos: 11
+- LISTO_PARA_BANCO: 3
+- LISTO_PARA_PILOTAJE: 3
+- DESCARTAR: 5
+- Requiere revisión humana: 5
+- Incidencias: salidas inexistentes al inicio; búsqueda del conector insuficiente; identificación de JSON por vistas directas del repo.
+- Archivos escritos: resumen-lote.json, decisiones.csv, items-corregidos.json, reporte-acumulado-instancia.md.
+- Rutas protegidas no modificadas: sí.
+
+## L023
+- Carpetas revisadas: lote normativo relacionado con fines de la educación y rutas de protección.
+- Ítems leídos: 7
+- LISTO_PARA_BANCO: 2
+- LISTO_PARA_PILOTAJE: 1
+- DESCARTAR: 4
+- Requiere revisión humana: 1
+- Incidencias: lote usado posteriormente como trazabilidad de omisiones para cruces entre lotes.
+- Archivos escritos: resumen-lote.json, decisiones.csv, items-corregidos.json.
+- Rutas protegidas no modificadas: sí.
+
+## L025
+- Carpetas revisadas: Praxis pedagógica, didáctica y selección metodológica; Propósitos de la educación; Prueba psicotécnica y escala Likert.
+- Ítems leídos: 6
+- LISTO_PARA_BANCO: 1
+- LISTO_PARA_PILOTAJE: 3
+- DESCARTAR: 2
+- Requiere revisión humana: 4
+- Incidencias: la carpeta de Prueba psicotécnica y escala Likert no apareció en el árbol real del repositorio.
+- Archivos escritos: resumen-lote.json, decisiones.csv, items-corregidos.json, reporte-acumulado-instancia.md.
+- Rutas protegidas no modificadas: sí.
+
+## L029
+- Carpetas revisadas: Currículo oficial, oculto, nulo, PEI y DUR 1075; Corresponsabilidad, protección integral y sujetos de derechos; Evaluación formativa, mejora continua y lenguaje evaluativo.
+- Ítems leídos: 14
+- Ítems omitidos por auditoría previa: 9
+- LISTO_PARA_BANCO: 0
+- LISTO_PARA_PILOTAJE: 1
+- DESCARTAR: 4
+- Requiere revisión humana: 1
+- Incidencias: necesidad de contrastar decisiones.csv previos antes de auditar el material nuevo.
+- Archivos escritos: resumen-lote.json, decisiones.csv, items-corregidos.json, reporte-acumulado-instancia.md.
+- Rutas protegidas no modificadas: sí.
+
+## L033
+- Carpetas revisadas: Aprendizaje significativo Ausubel; Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento; Error, conflicto cognitivo y reestructuración de esquemas.
+- Ítems leídos: 22
+- Ítems omitidos por auditoría previa: 5
+- LISTO_PARA_BANCO: 2
+- LISTO_PARA_PILOTAJE: 4
+- DESCARTAR: 11
+- Requiere revisión humana: 4
+- Incidencias: L004 no mostró archivo de decisiones disponible; contraste sostenido con L001, L014 y lotes relacionados visibles.
+- Archivos escritos: resumen-lote.json, decisiones.csv, items-corregidos.json, reporte-acumulado-instancia.md.
+- Rutas protegidas no modificadas: sí.
+
+## L037
+- Carpetas revisadas: Desarrollo integral en preescolar - cinco dimensiones; Marco legal del preescolar y organización del nivel; Identidad, autonomía y reconocimiento del cuerpo.
+- Ítems leídos: 13
+- Ítems omitidos por auditoría previa: 13
+- LISTO_PARA_BANCO: 0
+- LISTO_PARA_PILOTAJE: 0
+- DESCARTAR: 0
+- Requiere revisión humana: 0
+- Incidencias: lote resuelto por omisión total con trazabilidad previa de L010, L019 y L022.
+- Archivos escritos: resumen-lote.json, decisiones.csv, items-corregidos.json, reporte-acumulado-instancia.md.
+- Rutas protegidas no modificadas: sí.
+
+## L042
+- Carpetas revisadas: Participación infantil, agencia y Convención sobre los Derechos del Niño; Menor infractor, edad penal y rutas de protección; PARD y restablecimiento de derechos.
+- Ítems leídos: 11
+- Ítems omitidos por auditoría previa: 11
+- LISTO_PARA_BANCO: 0
+- LISTO_PARA_PILOTAJE: 0
+- DESCARTAR: 0
+- Requiere revisión humana: 0
+- Incidencias: lote resuelto por omisión total con trazabilidad previa de L022, L023 y L024.
+- Archivos escritos: resumen-lote.json, decisiones.csv, items-corregidos.json, reporte-acumulado-instancia.md.
+- Rutas protegidas no modificadas: sí.
+
+## L045
+- Carpetas revisadas: Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes; Responsabilidad legal; Enfoque de derechos, debido proceso y justicia restaurativa.
+- Ítems leídos: 13
+- Ítems omitidos por auditoría previa: 12
+- LISTO_PARA_BANCO: 0
+- LISTO_PARA_PILOTAJE: 1
+- DESCARTAR: 0
+- Requiere revisión humana: 1
+- Incidencias: mayor parte del lote resuelta por cruce con L013, L026 y L027.
+- Archivos escritos: resumen-lote.json, decisiones.csv, items-corregidos.json, reporte-acumulado-instancia.md.
+- Rutas protegidas no modificadas: sí.
+
+## L049
+- Carpetas revisadas: Formación integral, fines de la educación y desarrollo de la personalidad; Propósitos de la educación; Normatividad y fines de la educación.
+- Ítems leídos: 10
+- Ítems omitidos por auditoría previa: 10
+- LISTO_PARA_BANCO: 0
+- LISTO_PARA_PILOTAJE: 0
+- DESCARTAR: 0
+- Requiere revisión humana: 0
+- Incidencias: salidas inexistentes al inicio; no se identificaron ítems nuevos no auditados dentro de las carpetas asignadas.
+- Archivos escritos: resumen-lote.json, decisiones.csv, items-corregidos.json, reporte-acumulado-instancia.md.
+- Rutas protegidas no modificadas: sí.
+
+## L051
+- Carpetas revisadas: Docente de apoyo, orientador y valoración pedagógica; Rol, funciones y límites del orientador escolar; Diagnóstico pedagógico, saberes previos y evaluación formativa.
+- Ítems leídos: 12
+- Ítems omitidos por auditoría previa: 12
+- LISTO_PARA_BANCO: 0
+- LISTO_PARA_PILOTAJE: 0
+- DESCARTAR: 0
+- Requiere revisión humana: 0
+- Incidencias: la carpeta del orientador exigió verificación adicional del inventario porque la búsqueda del conector no listó todos los archivos a la primera consulta; no se identificaron ítems nuevos no auditados dentro de las carpetas asignadas.
+- Archivos escritos: resumen-lote.json, decisiones.csv, items-corregidos.json, reporte-acumulado-instancia.md.
+- Rutas protegidas no modificadas: sí.
+
+## Confirmación global
+- No se modificó content/items/stand-by/.
+- No se modificó trash.json.
+- No se modificaron bitácoras globales.
+- No se modificaron otros lotes fuera del lote activo en cada ejecución.
