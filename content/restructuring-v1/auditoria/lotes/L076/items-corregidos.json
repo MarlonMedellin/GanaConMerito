@@ -1,0 +1,138 @@
+{
+  "lote": "L076",
+  "fechaCierre": "2026-05-25",
+  "itemsAuditados": [
+    {
+      "id_item": "DIL_B04_I01",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "fuente": "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I01.json",
+      "dictamen": "Tiene buen valor porque obliga a activar la ruta protectora ante señales de malnutrición, explotación y abandono, con actuación institucional observable.",
+      "riesgosTecnicos": [
+        "Distractores demasiado extremos.",
+        "La clave concentra todos los indicadores de actuación correcta."
+      ],
+      "fairness": "Caso fuerte pero no estigmatizante; centra la decisión en deberes institucionales."
+    },
+    {
+      "id_item": "DIL_B04_I02",
+      "decision": "DESCARTAR",
+      "fuente": "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I02.json",
+      "dictamen": "La pregunta termina pidiendo el principio jurídico que prohíbe el castigo degradante, más que una decisión profesional situada.",
+      "riesgosTecnicos": [
+        "Doctrina plana.",
+        "Clave muy visible frente a distractores débiles."
+      ],
+      "fairness": "Sin sesgo claro, pero con baja potencia para discriminar juicio profesional real."
+    },
+    {
+      "id_item": "DIL_B04_I03",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "fuente": "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I03.json",
+      "dictamen": "Sí mide si la institución entiende que no debe investigar internamente delitos sexuales o narcotráfico antes de reportar.",
+      "riesgosTecnicos": [
+        "Opciones incorrectas poco plausibles.",
+        "La solución correcta se reconoce con facilidad."
+      ],
+      "fairness": "Protege a potenciales víctimas y evita revictimización."
+    },
+    {
+      "id_item": "DIL_B04_I04",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "fuente": "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I04.json",
+      "dictamen": "Aterriza bien la confidencialidad y el reporte reservado de un caso sensible sin exposición pública del estudiante.",
+      "riesgosTecnicos": [
+        "La clave queda demasiado limpia.",
+        "Los distractores son fáciles de eliminar por exceso de torpeza institucional."
+      ],
+      "fairness": "Buen foco en intimidad, dignidad y no revictimización."
+    },
+    {
+      "id_item": "DIL_B04_I05",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "fuente": "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I05.json",
+      "dictamen": "Conserva valor porque diferencia una respuesta restaurativa y proporcional de sanciones humillantes o arbitrarias.",
+      "riesgosTecnicos": [
+        "La respuesta correcta es muy evidente.",
+        "Las alternativas incorrectas funcionan más como descarte que como competidoras reales."
+      ],
+      "fairness": "Mantiene dignidad del estudiante y foco formativo."
+    },
+    {
+      "id_item": "DIL_B05_I01",
+      "decision": "DESCARTAR",
+      "fuente": "content/items/stand-by/Menor infractor, edad penal y rutas de protección/DIL_B05_I01.json",
+      "dictamen": "Aunque usa un contexto escolar concreto, la resolución efectiva depende de recordar la inimputabilidad del menor de 14 años.",
+      "riesgosTecnicos": [
+        "Memoria jurídica.",
+        "Clasificación legal literal disfrazada de caso."
+      ],
+      "fairness": "Sin sesgo relevante, pero el constructo termina siendo recuerdo normativo."
+    },
+    {
+      "id_item": "DIL_B05_I02",
+      "decision": "DESCARTAR",
+      "fuente": "content/items/stand-by/Menor infractor, edad penal y rutas de protección/DIL_B05_I02.json",
+      "dictamen": "La pregunta gira sobre la consecuencia jurídica de un adolescente de 13 años y no sobre una actuación institucional auténtica.",
+      "riesgosTecnicos": [
+        "Pseudoaplicación normativa.",
+        "Enfoque excesivamente clasificador."
+      ],
+      "fairness": "Técnicamente clara, pero poco útil para un banco docente centrado en decisión observable."
+    },
+    {
+      "id_item": "DIL_B05_I03",
+      "decision": "DESCARTAR",
+      "fuente": "content/items/stand-by/Menor infractor, edad penal y rutas de protección/DIL_B05_I03.json",
+      "dictamen": "La diferencia entre 13 y 15 años se vuelve una taxonomía legal del SRPA y de la inimputabilidad, no una toma de decisiones situada.",
+      "riesgosTecnicos": [
+        "Clasificación normativa.",
+        "Clave apoyada en recuerdo de rangos de edad."
+      ],
+      "fairness": "Sin sesgo, pero de baja utilidad aplicada."
+    },
+    {
+      "id_item": "DIL_B02_I01",
+      "decision": "DESCARTAR",
+      "fuente": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I01.json",
+      "dictamen": "Se limita a expandir la sigla PARD y su objetivo general.",
+      "riesgosTecnicos": [
+        "Memoria jurídica plana.",
+        "Baja observabilidad profesional."
+      ],
+      "fairness": "Sin problemas de sesgo, pero fuera del umbral de utilidad auténtica para banco."
+    },
+    {
+      "id_item": "DIL_B02_I02",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "fuente": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I02.json",
+      "dictamen": "Sí exige decidir cuándo una institución debe pasar de una lectura escolar ordinaria a activar una ruta de protección integral.",
+      "riesgosTecnicos": [
+        "La opción correcta destaca demasiado por su precisión.",
+        "Los distractores están algo subdesarrollados."
+      ],
+      "fairness": "Buen foco en señales observables y protección integral."
+    },
+    {
+      "id_item": "DIL_B02_I05",
+      "decision": "DESCARTAR",
+      "fuente": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I05.json",
+      "dictamen": "Describe doctrinalmente el hogar sustituto como medida provisional, pero no demanda actuación institucional situada.",
+      "riesgosTecnicos": [
+        "Doctrina plana.",
+        "Competencia real baja entre opciones."
+      ],
+      "fairness": "No sesgado, aunque poco discriminativo para decisión docente."
+    },
+    {
+      "id_item": "DIL_B02_I06",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "fuente": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I06.json",
+      "dictamen": "Mide bien los límites de competencia de la escuela y la obligación de registrar, contener y reportar sin interrogar ni confrontar.",
+      "riesgosTecnicos": [
+        "La alternativa correcta resalta demasiado.",
+        "Las incorrectas son excesivamente riesgosas y fáciles de descartar."
+      ],
+      "fairness": "Protege al estudiante y evita revictimización."
+    }
+  ]
+}
