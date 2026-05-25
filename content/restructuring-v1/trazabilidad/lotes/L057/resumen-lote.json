@@ -1,0 +1,59 @@
+{
+  "lote": "L057",
+  "repository": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaAuditoria": "2026-05-25",
+  "decisionGlobalLote": "APROBAR_PARCIALMENTE_CON_DESCARTE",
+  "calidadGlobal": "BAJA",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Praxis pedagógica, didáctica y selección metodológica/",
+    "content/items/stand-by/Constructivismo, indagación y aprendizaje experimental/",
+    "content/items/stand-by/Fases enseñanza/"
+  ],
+  "totalItemsDetectados": 7,
+  "totalItemsLeidos": 2,
+  "itemsOmitidosPorAuditoriaPrevia": 5,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 0,
+    "DESCARTAR": 2,
+    "OMITIDO_POR_AUDITORIA_PREVIA": 5
+  },
+  "conteoRequiereRevisionHumana": 0,
+  "fuentesConsultadas": [
+    "content/restructuring-v1/trazabilidad/lotes/L003/decisiones.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L005/decisiones.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L017/decisiones.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L036/decisiones.csv",
+    "content/items/stand-by/Praxis pedagógica, didáctica y selección metodológica/PPDC_B04_I01.json",
+    "content/items/stand-by/Praxis pedagógica, didáctica y selección metodológica/PPDC_B04_I02.json"
+  ],
+  "fuentesAusentes": [],
+  "hallazgosPrincipales": [
+    "Los 2 ítems visibles de Constructivismo, indagación y aprendizaje experimental ya tenían trazabilidad previa en L005 y luego omisión explícita en L036.",
+    "Los 3 ítems visibles de Fases enseñanza ya tenían decisión previa en L017.",
+    "Los 2 ítems visibles de Praxis pedagógica, didáctica y selección metodológica no aparecían en las trazabilidades previas revisadas, por lo que se auditaron en este lote.",
+    "PPDC_B04_I01 y PPDC_B04_I02 se descartaron porque la tarea real es reconocer etiquetas conceptuales sobre pedagogía, didáctica, metodología, estrategia y técnica, sin mediación pedagógica observable ni decisión contextual suficientemente fina."
+  ],
+  "riesgosBanco": [
+    "La carpeta de praxis contiene ítems con pseudoaplicación: el contexto sugiere planeación, pero la evidencia pedida sigue siendo doctrinal y clasificatoria.",
+    "Mantener estos ítems degradaría la capacidad del banco para medir selección metodológica situada y aprendizaje activo verificable."
+  ],
+  "incidenciasGithubOFuente": [
+    "Las salidas de L057 no existían y se crearon en este ciclo.",
+    "La búsqueda textual del conector no devolvió la carpeta de praxis; el inventario se confirmó mediante la vista directa de GitHub y lectura de los archivos exactos."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L057/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L057/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L057/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L057/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "noSeModificoStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true,
+    "noSeModificaronOtrosLotes": true
+  }
+}
