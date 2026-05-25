@@ -1,0 +1,73 @@
+{
+  "loteProcesado": "L058",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Autonomía escolar, religión, colegios privados y equidad/",
+    "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/",
+    "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/"
+  ],
+  "itemsLeidos": 12,
+  "itemsAuditadosEnL058": 12,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 6,
+    "DESCARTAR": 6
+  },
+  "requiereRevisionHumana": 3,
+  "referenciasAuditoriaPrevias": {
+    "L003": [
+      "IDD_B16_I01",
+      "CEOL_B10_I01",
+      "CEOL_B10_I02",
+      "CEOL_B10_I03",
+      "CEOL_B10_I04",
+      "CEOL_B10_I05"
+    ],
+    "L028": [
+      "CEOL_B01_I01",
+      "CEOL_B01_I02",
+      "CEOL_B01_I03",
+      "CEOL_B01_I04",
+      "CEOL_B01_I05",
+      "CEOL_B01_I06"
+    ],
+    "L035": [
+      "IDD_B16_I01",
+      "CEOL_B10_I01",
+      "CEOL_B10_I02",
+      "CEOL_B10_I03",
+      "CEOL_B10_I04",
+      "CEOL_B10_I05"
+    ],
+    "L046": [
+      "CEOL_B01_I01",
+      "CEOL_B01_I02",
+      "CEOL_B01_I03",
+      "CEOL_B01_I04",
+      "CEOL_B01_I05",
+      "CEOL_B01_I06"
+    ]
+  },
+  "hallazgosClave": [
+    "El lote quedó resuelto por consolidación de dictámenes previos ya defendibles sobre autonomía escolar, convivencia aplicada y activación proporcional de rutas.",
+    "Los ítems descartados comparten problemas de memoria normativa plana, contexto decorativo o pseudoanálisis sin decisión institucional observable.",
+    "Los ítems conservados para pilotaje sí convierten la norma en juicio situado sobre libertad de conciencia, debido proceso, proporcionalidad y respuesta pedagógica en convivencia escolar."
+  ],
+  "incidenciasGithubOFuente": [
+    "Los archivos de salida de L058 no existían y devolvieron 404 antes de crearse.",
+    "La recuperación del inventario requirió apoyarse tanto en búsquedas directas por carpeta como en decisiones previas de L003, L028, L035 y L046 para confirmar cobertura completa del lote.",
+    "No fue necesario modificar ni reabrir archivos originales del banco stand-by."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L058/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L058/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L058/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L058/reporte-acumulado-instancia.md"
+  ],
+  "confirmaciones": {
+    "noSeModificoContentItemsStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true,
+    "noSeModificaronOtrosLotes": true
+  }
+}
