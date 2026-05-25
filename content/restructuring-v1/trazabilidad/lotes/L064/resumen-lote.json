@@ -1,0 +1,64 @@
+{
+  "lote": "L064",
+  "repository": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaAuditoria": "2026-05-25",
+  "decisionGlobalLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Trabajo infantil y edad mínima/",
+    "content/items/stand-by/Menor infractor, edad penal y rutas de protección/",
+    "content/items/stand-by/PARD y restablecimiento de derechos/"
+  ],
+  "totalItemsDetectados": 9,
+  "totalItemsLeidos": 9,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 1,
+    "LISTO_PARA_PILOTAJE": 4,
+    "DESCARTAR": 4
+  },
+  "conteoRequiereRevisionHumana": 0,
+  "fuentesConsultadas": [
+    "content/items/stand-by/Trabajo infantil y edad mínima/DIL_B09_I01.json",
+    "content/items/stand-by/Trabajo infantil y edad mínima/DIL_B09_I02.json",
+    "content/items/stand-by/Menor infractor, edad penal y rutas de protección/DIL_B05_I01.json",
+    "content/items/stand-by/Menor infractor, edad penal y rutas de protección/DIL_B05_I02.json",
+    "content/items/stand-by/Menor infractor, edad penal y rutas de protección/DIL_B05_I03.json",
+    "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I01.json",
+    "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I02.json",
+    "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I05.json",
+    "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I06.json"
+  ],
+  "hallazgosPrincipales": [
+    "El lote acierta cuando obliga a distinguir competencias institucionales, activar rutas y proteger sin invadir funciones judiciales o sancionatorias.",
+    "Los mejores ítems son los que exigen decisión situada frente a vulneración de derechos y delimitación de autoridad competente.",
+    "Los peores ítems se deslizan hacia memoria jurídica o reconocimiento de siglas y categorías legales, con claves demasiado visibles.",
+    "La carpeta de PARD muestra una mezcla clara entre ítems útiles de activación de ruta y otros excesivamente definicionales."
+  ],
+  "problemasSistemicos": [
+    "Distractores frecuentemente caricaturescos o extremos, lo que reduce competencia real frente a la clave.",
+    "Varios enunciados descansan demasiado en recordar umbrales legales o definiciones en lugar de forzar juicio profesional observable.",
+    "Se repite el riesgo de pseudoaplicación: casos dramáticos que en el fondo piden una regla jurídica directa."
+  ],
+  "riesgosBanco": [
+    "Si se integran los ítems descartados, el banco se cargará de memoria jurídica y claves obvias en lugar de medir decisiones situadas.",
+    "Los ítems en pilotaje requieren confirmar que sus distractores compiten mejor antes de pasar a banco activo."
+  ],
+  "incidenciasGithubOFuente": [
+    "Las salidas de L064 no existían y se crearon en este ciclo.",
+    "No fue necesario modificar fuentes originales; toda la auditoría se resolvió leyendo directamente los ítems del lote en GitHub."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L064/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L064/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L064/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L064/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "noSeModificoStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true,
+    "noSeModificaronOtrosLotes": true
+  }
+}
