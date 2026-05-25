@@ -1,0 +1,7 @@
+prioridad,tipo,lotes_afectados,problema,accion_operativa,escritura_recomendada
+CRITICA,LOTE_NO_LOCALIZADO,L004,"No hay salidas recuperables del lote.","Reconstruir lote desde bitacora/mapa o declarar lote inexistente con acta de cierre.","content/restructuring-v1/trazabilidad/lotes/L004/"
+CRITICA,VALIDACION_PENDIENTE,L082,"Cierre reportado pero fetch_file devolvio 404 para rutas principales.","Revalidar rutas exactas y recrear salidas solo si realmente no existen.","content/restructuring-v1/trazabilidad/lotes/L082/ y auditoria/lotes/L082/"
+ALTA,ARCHIVOS_PREPARADOS_FUERA_REPO,"L044;L048","Ejecuciones produjeron artefactos externos o no verificables en repo.","Reconciliar artefactos preparados y subirlos como salidas canonicas si faltan.","lotes L044 y L048"
+ALTA,FRAGMENTACION_SUBLOTES,L009,"Existe L009-A/L009-B sin consolidado canonico unico.","Crear resumen y decisiones canonicas sin borrar sublotes.","content/restructuring-v1/trazabilidad/lotes/L009/"
+MEDIA,FALTANTE_REPORTE_ACUMULADO,"L001;L002;L003;L005;L006;L007;L008;L010;L011;L012;L017","Falta reporte acumulado aunque existen salidas nucleares.","Generar reporte-acumulado-instancia.md desde resumen y decisiones.","cada lote afectado"
+MEDIA,FUENTE_ROTA,"GA02_B08;DIL_B08_I01;DIL_B08_I02;DIL_B08_I03;CB07_I02;CB07_I03","IDs visibles o mencionados pero no recuperables por API.","Crear lista oficial de fuentes rotas y excluir de banco operativo hasta verificacion.","consolidacion/fuentes-rotas/"
