@@ -1,0 +1,73 @@
+{
+  "lote": "L079",
+  "repository": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaAuditoria": "2026-05-24",
+  "decisionGlobalLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento/",
+    "content/items/stand-by/Aprendizaje significativo Ausubel/",
+    "content/items/stand-by/Aula invertida y cambio de rol docente/"
+  ],
+  "totalItemsDetectados": 18,
+  "totalItemsLeidos": 18,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 4,
+    "LISTO_PARA_PILOTAJE": 7,
+    "DESCARTAR": 7
+  },
+  "conteoRequiereRevisionHumana": 7,
+  "observacionesOperativasDeSolapamiento": [
+    "Hay coincidencias temáticas fuertes con L047 y L061, especialmente en Aprendizaje significativo Ausubel y Aula invertida, pero en este lote se procesó normalmente y no se reutilizaron dictámenes previos como filtro.",
+    "La carpeta de Constructivismo también había aparecido antes en la instancia; en L079 se confirmó de nuevo que la mayor parte del material sigue siendo demasiado doctrinal."
+  ],
+  "fuentesConsultadas": [
+    "content/items/stand-by/Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento/IDD_B10_I01.json",
+    "content/items/stand-by/Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento/IDD_B10_I02.json",
+    "content/items/stand-by/Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento/IDD_B10_I03.json",
+    "content/items/stand-by/Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento/IDD_B10_I04.json",
+    "content/items/stand-by/Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento/IDD_B10_I05.json",
+    "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I01.json",
+    "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I02.json",
+    "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I03.json",
+    "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I04.json",
+    "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I05.json",
+    "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I06.json",
+    "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I07.json",
+    "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I08.json",
+    "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I09.json",
+    "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I10.json",
+    "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I11.json",
+    "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I12.json",
+    "content/items/stand-by/Aula invertida y cambio de rol docente/PPDC_B07_I01.json"
+  ],
+  "hallazgosPrincipales": [
+    "La carpeta de Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento se descarta por completo: el lote está dominado por teoría pura y etiquetas pedagógicas con contexto decorativo.",
+    "Aprendizaje significativo Ausubel contiene el mayor valor del lote, pero mezcla preguntas fuertes de transferencia y mediación con otras todavía muy dependientes de terminología doctrinal.",
+    "PPDC_B07_I01 sí conserva utilidad para banco porque aterriza el aula invertida en reorganización del tiempo presencial y cambio real del rol docente."
+  ],
+  "problemasSistemicos": [
+    "Persisten distractores construidos como caricaturas de teorías rivales en vez de errores pedagógicos plausibles.",
+    "Varios ítems convierten el caso en un simple pretexto para pedir la etiqueta correcta de Ausubel o Vygotsky.",
+    "Hay tendencia a premiar el reconocimiento doctrinal más que la actuación docente concreta o la indagación aplicada."
+  ],
+  "riesgosBanco": [
+    "Si se operativizan directamente varios ítems de pilotaje, podrían discriminar por familiaridad con jerga pedagógica y no por criterio profesional auténtico.",
+    "La carpeta de constructivismo genera ruido interpretativo porque se apoya más en definiciones teóricas que en decisiones de aula observables."
+  ],
+  "incidenciasGithubOFuente": [],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L079/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L079/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L079/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L079/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "noSeModificoStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true,
+    "noSeModificaronOtrosLotes": true
+  }
+}
