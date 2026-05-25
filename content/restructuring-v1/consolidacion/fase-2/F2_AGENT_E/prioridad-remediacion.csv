@@ -1,0 +1,9 @@
+prioridad,categoria,lotes,criterio
+CRITICA,LOTE_NO_LOCALIZADO,L004,"No hay trazabilidad recuperable."
+CRITICA,ARCHIVOS_PREPARADOS_FUERA_REPO,"L044;L048","Posible existencia fuera del repositorio."
+CRITICA,VALIDACION_PENDIENTE,L082,"Cierre reportado pero no recuperable vía fetch."
+ALTA,FRAGMENTACION_SUBLOTES,L009,"Fragmentación sin consolidado canónico."
+ALTA,FUENTES_ROTAS,"GA02_B08;CB07_I02;CB07_I03","IDs visibles pero no recuperables."
+MEDIA,FALTANTE_REPORTE_ACUMULADO,"L001;L002;L003;L005;L006;L007;L008;L010;L011;L012;L017","Falta trazabilidad secundaria."
+MEDIA,TIMEOUT_VERIFICACION,L046,"Validación parcial de decisiones.csv."
+BAJA,SOLAPAMIENTOS_INTENSOS,"L031;L032;L035;L036;L037;L066;L067;L068;L070","No bloquean operación pero exigen deduplicación futura."
