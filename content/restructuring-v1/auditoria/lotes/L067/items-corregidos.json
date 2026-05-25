@@ -1,0 +1,149 @@
+{
+  "lote": "L067",
+  "fechaCierre": "2026-05-25",
+  "itemsAuditados": [
+    {
+      "id_item": "DIL_B06_I01",
+      "decision": "DESCARTAR",
+      "fuente": "content/items/stand-by/Participación infantil, agencia y Convención sobre los Derechos del Niño/DIL_B06_I01.json",
+      "dictamen": "La resolución depende de recordar el texto del Artículo 12 de la CDN. Aunque el contexto escolar existe, no sostiene una decisión profesional observable.",
+      "riesgosTecnicos": [
+        "Memoria normativa plana.",
+        "Clave muy visible frente a distractores abiertamente erróneos."
+      ],
+      "fairness": "Sin sesgo mayor, pero el constructo termina siendo evocación legal literal."
+    },
+    {
+      "id_item": "DIL_B06_I02",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "fuente": "content/items/stand-by/Participación infantil, agencia y Convención sobre los Derechos del Niño/DIL_B06_I02.json",
+      "dictamen": "Tiene valor porque identifica pseudoparticipación y exige reconocer ausencia de voz e incidencia real.",
+      "riesgosTecnicos": [
+        "La clave domina con mucha claridad.",
+        "El anclaje explícito en Hart puede reducirse a reconocimiento de marco teórico."
+      ],
+      "fairness": "Pertinente y sin barreras irrelevantes; protege la agencia infantil auténtica."
+    },
+    {
+      "id_item": "DIL_B06_I03",
+      "decision": "DESCARTAR",
+      "fuente": "content/items/stand-by/Participación infantil, agencia y Convención sobre los Derechos del Niño/DIL_B06_I03.json",
+      "dictamen": "El ítem promueve una tesis valiosa, pero la opción correcta es demasiado obvia y las incorrectas funcionan como caricaturas.",
+      "riesgosTecnicos": [
+        "Adhesión moral evidente.",
+        "Baja discriminación esperable."
+      ],
+      "fairness": "Sin sesgo, pero con pobre competencia real entre alternativas."
+    },
+    {
+      "id_item": "DIL_B06_I04",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "fuente": "content/items/stand-by/Participación infantil, agencia y Convención sobre los Derechos del Niño/DIL_B06_I04.json",
+      "dictamen": "Evalúa bien si la participación escolar tuvo información, devolución e incidencia real.",
+      "riesgosTecnicos": [
+        "La clave concentra demasiados indicadores positivos.",
+        "Los distractores son eliminables con relativa facilidad."
+      ],
+      "fairness": "Buen nivel de accesibilidad y foco en mediación auténtica."
+    },
+    {
+      "id_item": "NFL_B08_I01",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "fuente": "content/items/stand-by/Igualdad material, discriminación positiva y debilidad manifiesta/NFL_B08_I01.json",
+      "dictamen": "Sí mide inclusión observable mediante apoyos y ajustes razonables frente a barreras reales.",
+      "riesgosTecnicos": [
+        "Distractores demasiado débiles.",
+        "Clave casi autoevidente para quien comparte el marco inclusivo general."
+      ],
+      "fairness": "Acierta al centrarse en barreras y no en etiquetas diagnósticas."
+    },
+    {
+      "id_item": "NFL_B08_I02",
+      "decision": "DESCARTAR",
+      "fuente": "content/items/stand-by/Igualdad material, discriminación positiva y debilidad manifiesta/NFL_B08_I02.json",
+      "dictamen": "Se limita a definir acción afirmativa o discriminación positiva; el caso es accesorio y la resolución es doctrinal.",
+      "riesgosTecnicos": [
+        "Formulación definicional.",
+        "No exige actuación pedagógica concreta."
+      ],
+      "fairness": "Sin barreras extra, pero con baja utilidad docente auténtica."
+    },
+    {
+      "id_item": "NFL_B08_I03",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "fuente": "content/items/stand-by/Igualdad material, discriminación positiva y debilidad manifiesta/NFL_B08_I03.json",
+      "dictamen": "Presenta una situación creíble de evaluación excluyente y obliga a leer la desigualdad material en contexto.",
+      "riesgosTecnicos": [
+        "La opción correcta resalta demasiado por su formulación equilibrada.",
+        "Las alternativas incorrectas son poco plausibles."
+      ],
+      "fairness": "Buen encuadre diferencial aplicado y sin ruido irrelevante."
+    },
+    {
+      "id_item": "NFL_B08_I04",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "fuente": "content/items/stand-by/Igualdad material, discriminación positiva y debilidad manifiesta/NFL_B08_I04.json",
+      "dictamen": "La actuación esperada es concreta, digna y no estigmatizante, lo que le da utilidad pedagógica real.",
+      "riesgosTecnicos": [
+        "Distractores previsibles.",
+        "La clave es excesivamente limpia frente al resto."
+      ],
+      "fairness": "Fuerte en dignidad e intimidad; bien alineado con enfoque diferencial aplicado."
+    },
+    {
+      "id_item": "IDD_B06_I01",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "fuente": "content/items/stand-by/Inclusión práctica vs. segregación en aula/IDD_B06_I01.json",
+      "dictamen": "Es uno de los más útiles del lote porque separa inclusión efectiva de ocupación paralela sin propósito común.",
+      "riesgosTecnicos": [
+        "La clave está demasiado desarrollada comparativamente.",
+        "Los distractores representan errores fáciles de descartar."
+      ],
+      "fairness": "Mide decisión docente y no déficit del estudiante."
+    },
+    {
+      "id_item": "IDD_B06_I02",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "fuente": "content/items/stand-by/Inclusión práctica vs. segregación en aula/IDD_B06_I02.json",
+      "dictamen": "Aterriza bien el DUA en mediación auténtica para todo el grupo y evita la pseudoinclusión por aislamiento visual.",
+      "riesgosTecnicos": [
+        "La respuesta correcta es bastante esperable.",
+        "El marco DUA está demasiado señalado en el stem."
+      ],
+      "fairness": "Usa fortalezas del estudiante sin convertirlas en segregación."
+    },
+    {
+      "id_item": "IDD_B06_I03",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "fuente": "content/items/stand-by/Inclusión práctica vs. segregación en aula/IDD_B06_I03.json",
+      "dictamen": "La mediación intercultural es concreta y protege la agencia del estudiante extranjero sin forzarlo a exponerse.",
+      "riesgosTecnicos": [
+        "Las opciones incorrectas son algo extremas.",
+        "La clave resalta por equilibrio y prudencia."
+      ],
+      "fairness": "Buen manejo de diversidad cultural y participación voluntaria."
+    },
+    {
+      "id_item": "IDD_B06_I04",
+      "decision": "DESCARTAR",
+      "fuente": "content/items/stand-by/Inclusión práctica vs. segregación en aula/IDD_B06_I04.json",
+      "dictamen": "La pregunta termina funcionando como definición amplia de inclusión efectiva y no como decisión situada con competencia robusta entre opciones.",
+      "riesgosTecnicos": [
+        "Formulación doctrinal.",
+        "Clave evidente."
+      ],
+      "fairness": "Sin sesgo claro, pero con baja potencia discriminativa."
+    },
+    {
+      "id_item": "IDD_B06_I05",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "fuente": "content/items/stand-by/Inclusión práctica vs. segregación en aula/IDD_B06_I05.json",
+      "dictamen": "Conserva valor porque mide si el docente mantiene expectativas de aprendizaje con apoyos pertinentes en evaluación.",
+      "riesgosTecnicos": [
+        "La opción correcta es demasiado transparente.",
+        "Podría distinguir mejor entre flexibilización y ajuste de criterio sin verbalizar tanto la respuesta ideal."
+      ],
+      "fairness": "Favorece altas expectativas con apoyos y evita exclusión curricular anticipada."
+    }
+  ]
+}
