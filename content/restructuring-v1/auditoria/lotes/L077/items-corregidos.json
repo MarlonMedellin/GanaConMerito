@@ -1,0 +1,274 @@
+[
+  {
+    "id_item": "CEOL_B05_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/PEI, currículo oficial y Manual de Convivencia/CEOL_B05_I01.json",
+    "motivo": "El item solo pide distinguir curriculo oficial de curriculo oculto y nulo. El contexto institucional no cambia la tarea y la respuesta depende de memoria conceptual plana.",
+    "lote": "L077"
+  },
+  {
+    "id_item": "CEOL_B05_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/PEI, currículo oficial y Manual de Convivencia/CEOL_B05_I02.json",
+    "motivo": "Se disfraza de articulacion institucional, pero la tarea real es recordar la diferencia jerarquica entre PEI y Manual de Convivencia. Baja discriminacion y distractores obvios.",
+    "lote": "L077"
+  },
+  {
+    "id_item": "CEOL_B05_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/PEI, currículo oficial y Manual de Convivencia/CEOL_B05_I03.json",
+    "motivo": "Reduce la relacion entre PEI, curriculo y manual a taxonomia estructural. No exige decision institucional concreta ni lectura situada del funcionamiento escolar.",
+    "lote": "L077"
+  },
+  {
+    "id_item": "CEOL_B10_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I01.json",
+    "motivo": "Se resuelve por memoria normativa casi textual sobre los enfoques de la Ley 1620. El caso es decorativo y no aporta juicio de gestion real.",
+    "lote": "L077"
+  },
+  {
+    "id_item": "CEOL_B10_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Autonomía institucional, enfoques de convivencia y organización del servicio educativo",
+    "subtema": "Autonomia escolar y estrategias locales de convivencia",
+    "competencia": "Evalua decisiones de gestion sobre convivencia escolar respetando autonomia institucional, PEI y debido proceso.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce los limites y posibilidades de la autonomia escolar para crear estrategias propias de convivencia.",
+    "evidencia": "Selecciona una respuesta que armoniza innovacion institucional, marco normativo y deberes de reporte y debido proceso.",
+    "tarea": "Determinar la orientacion correcta frente a la creacion de aulas de mediacion y circulos restaurativos.",
+    "contexto": "El consejo directivo de una institucion propone crear aulas de mediacion y circulos restaurativos para reducir conflictividad. Parte del equipo duda si la autonomia escolar permite estas estrategias locales o si deben seguirse solo protocolos nacionales estandarizados.",
+    "enunciado": "De acuerdo con el marco normativo colombiano, ¿cual es la orientacion correcta frente a esta propuesta?",
+    "opciones": {
+      "A": "La institucion puede crear cualquier estrategia de convivencia, incluso si el manual interno contradice la reglamentacion nacional.",
+      "B": "La institucion no puede crear figuras locales y debe limitarse a aplicar de manera rigida lo estandarizado por el ministerio.",
+      "C": "La institucion puede disenar estrategias autonomas y contextualizadas de convivencia, siempre que se alineen con el PEI y respeten Constitucion, ley y debido proceso.",
+      "D": "La autonomia escolar permite crear aulas de mediacion con la condicion de omitir reportes formales de los casos atendidos."
+    },
+    "clave": "C",
+    "justificacion_clave": "La respuesta correcta es C porque la autonomia escolar permite organizar respuestas institucionales contextualizadas, pero no por fuera del marco constitucional, legal y procedimental que regula convivencia y derechos de los estudiantes.",
+    "distractores_funcion": {
+      "A": "Plantea una autonomia absoluta e ilegal.",
+      "B": "Niega la autonomia institucional reconocida por la ley para responder a contextos propios.",
+      "C": "Clave correcta: combina autonomia, alineacion con PEI y respeto normativo.",
+      "D": "Confunde estrategia local con exencion de deberes de reporte y seguimiento."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Caso institucional general, sin sesgos territoriales o poblacionales irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Escenario unico y opciones comparables."
+    },
+    "metadata_editorial": {
+      "lote": "L077",
+      "ruta_origen": "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/rector_director_rural/funcional/CEOL_B10_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CEOL_B10_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Autonomía institucional, enfoques de convivencia y organización del servicio educativo",
+    "subtema": "Clima de aula y gestion preventiva de convivencia",
+    "competencia": "Reconoce actuaciones docentes preventivas y formativas que configuran un clima de aula seguro y respetuoso.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Distingue acciones docentes de alto nivel en convivencia frente a respuestas autoritarias, omisivas o permisivas.",
+    "evidencia": "Selecciona un conjunto de practicas donde hay acuerdos, anticipacion de riesgos, mediacion y seguimiento del clima de aula.",
+    "tarea": "Elegir las acciones que mejor evidencian un desempeno sobresaliente en convivencia escolar.",
+    "contexto": "En la evaluacion anual de desempeno docente se valora la contribucion al clima institucional y de aula, especialmente la prevencion y el manejo cotidiano de conflictos.",
+    "enunciado": "¿Que conjunto de acciones evidencia mejor un desempeno sobresaliente en este componente?",
+    "opciones": {
+      "A": "Involucrar al grupo en acuerdos de convivencia, anticipar riesgos, mediar conflictos de forma constructiva y hacer seguimiento sistematico al clima del aula.",
+      "B": "Disenar un reglamento unilateral de aula, sancionar de inmediato cada incumplimiento y delegar los conflictos graves a coordinacion.",
+      "C": "Concentrarse solo en el cumplimiento tematico y exigir silencio absoluto, evitando intervenir en asuntos relacionales.",
+      "D": "Permitir que el grupo gestione por si solo sus diferencias y solo intervenir si aparece agresion fisica evidente."
+    },
+    "clave": "A",
+    "justificacion_clave": "La respuesta correcta es A porque combina prevencion, participacion, mediacion y seguimiento, que son rasgos de una gestion formativa y avanzada de convivencia en aula.",
+    "distractores_funcion": {
+      "A": "Clave correcta: integra gestion preventiva y seguimiento relacional.",
+      "B": "Representa un enfoque autoritario y reactivo.",
+      "C": "Separa artificialmente desarrollo academico y convivencia.",
+      "D": "Describe un modelo permisivo que desatiende el deber de cuidado."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Escenario docente general y sin carga cultural irrelevante."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Opciones paralelas y decision unica."
+    },
+    "metadata_editorial": {
+      "lote": "L077",
+      "ruta_origen": "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CEOL_B10_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CEOL_B10_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "normatividad",
+    "tema": "Autonomía institucional, enfoques de convivencia y organización del servicio educativo",
+    "subtema": "Contingencia institucional y continuidad del servicio",
+    "competencia": "Selecciona respuestas administrativas que preservan el derecho a la educacion sin vulnerar limites laborales del personal docente.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la actuacion institucional mas adecuada frente a una contingencia de ausencia docente inesperada.",
+    "evidencia": "Elige una alternativa que garantiza continuidad del servicio mediante plan institucional y no por sobrecarga informal de pares.",
+    "tarea": "Identificar la mejor actuacion directiva ante la ausencia temporal de un docente.",
+    "contexto": "Por una incapacidad medica de ultima hora, un docente no asiste y sus grupos quedan sin atencion. Se propone obligar informalmente a otros docentes a cubrir los cursos durante sus horas de planeacion o trabajo institucional.",
+    "enunciado": "Conforme a la reglamentacion sobre jornada laboral docente y continuidad del servicio educativo, ¿cual es la actuacion mas adecuada?",
+    "opciones": {
+      "A": "Asignar obligatoriamente la cobertura a cualquier docente libre y registrar esa carga como cumplimiento ordinario de permanencia.",
+      "B": "Suspender la jornada de los grupos afectados y autorizar su salida por imposibilidad material de brindar el servicio.",
+      "C": "Activar un plan de contingencia pedagogica concertado que organice autoestudio o rotacion, respetando permanencia y asignacion academica legal de los demas docentes.",
+      "D": "Disponer que el docente orientador asuma permanentemente los grupos sin clase por tratarse de un cargo de apoyo institucional."
+    },
+    "clave": "C",
+    "justificacion_clave": "La respuesta correcta es C porque armoniza continuidad del servicio, organizacion institucional y respeto de los limites laborales y funcionales del personal docente.",
+    "distractores_funcion": {
+      "A": "Impone sobrecarga informal y desconoce la distribucion legal del trabajo docente.",
+      "B": "Afecta el derecho a la educacion por falta de gestion institucional adecuada.",
+      "C": "Clave correcta: resuelve la contingencia con plan institucional y sin vulnerar limites laborales.",
+      "D": "Desnaturaliza el rol del orientador como reemplazo sistematico de docencia academica."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Caso comun de administracion escolar, sin sesgos demograficos irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Situacion administrativa clara y opciones distinguibles."
+    },
+    "metadata_editorial": {
+      "lote": "L077",
+      "ruta_origen": "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/rector_director_rural/funcional/CEOL_B10_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CEOL_B10_I05",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I05.json",
+    "motivo": "Depende de recordar cifras horarias exactas y mezcla varios cargos en opciones largas. La dificultad proviene del recuerdo literal y de la carga verbal, no de una decision de gestion autentica.",
+    "lote": "L077"
+  },
+  {
+    "id_item": "CB08_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Referentes PEI/CB08_I01.json",
+    "motivo": "Solo pide seleccionar el conjunto correcto de referentes del PEI. La clave es evidente y los distractores representan errores demasiado gruesos para discriminar juicio institucional real.",
+    "lote": "L077"
+  },
+  {
+    "id_item": "CB08_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "gestion",
+    "tema": "Referentes PEI",
+    "subtema": "Coherencia interna del PEI",
+    "competencia": "Detecta incoherencias entre horizonte institucional y componentes pedagogicos o de convivencia del PEI.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la falla principal cuando los principios declarados por la institucion no se traducen en acciones curriculares y de convivencia.",
+    "evidencia": "Selecciona una respuesta que nombra la falta de articulacion interna entre mision, pedagogia y convivencia frente a opciones de independencia impropia o minimizacion del problema.",
+    "tarea": "Identificar el problema principal en un PEI cuya mision declara inclusion y participacion sin acciones que las operativicen.",
+    "contexto": "Al revisar el PEI, se encuentra que la mision habla de inclusion y participacion, pero las estrategias pedagogicas y de convivencia no mencionan acciones relacionadas con estos principios.",
+    "enunciado": "¿Cual es el problema principal en este caso?",
+    "opciones": {
+      "A": "La mision no deberia incluir enunciados axiologicos o pedagogicos porque esos asuntos pertenecen solo al manual de convivencia.",
+      "B": "Existe falta de coherencia interna entre el horizonte institucional y los componentes pedagogico y de convivencia del PEI.",
+      "C": "Las practicas de aula deben formularse con independencia del PEI para proteger la libertad de catedra.",
+      "D": "Inclusion y participacion son asuntos complementarios que solo deben aparecer en proyectos transversales o campanas ocasionales."
+    },
+    "clave": "B",
+    "justificacion_clave": "La respuesta correcta es B porque un PEI institucionalmente coherente debe traducir sus principios declarados en orientaciones curriculares, pedagogicas y de convivencia observables. Si esto no ocurre, el documento pierde fuerza como carta de navegacion.",
+    "distractores_funcion": {
+      "A": "Reduce indebidamente el alcance misional del PEI.",
+      "B": "Clave correcta: identifica la fractura de coherencia interna del proyecto institucional.",
+      "C": "Desconecta impropiamente la practica de aula del marco institucional.",
+      "D": "Minimiza principios estructurales tratandolos como anexos decorativos."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Situacion institucional general y comprensible para directivos de distintos contextos."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Caso breve con una sola inferencia central."
+    },
+    "metadata_editorial": {
+      "lote": "L077",
+      "ruta_origen": "content/items/stand-by/Referentes PEI/CB08_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/rector_director_rural/funcional/CB08_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CB08_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "gestion",
+    "tema": "Referentes PEI",
+    "subtema": "Diagnostico institucional y priorizacion del PMI",
+    "competencia": "Usa hallazgos diagnosticos para alinear metas, presupuesto y proyectos del mejoramiento institucional.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce el ajuste mas pertinente cuando el PMI no responde a los problemas pedagogicos y comunitarios detectados por la institucion.",
+    "evidencia": "Selecciona una alternativa donde metas y recursos se reorganizan a partir del diagnostico de ausentismo, lectura y participacion familiar.",
+    "tarea": "Inferir la mejor decision de planeacion institucional a partir de informacion diagnostica.",
+    "contexto": "El diagnostico institucional muestra ausentismo frecuente, baja participacion familiar y dificultades en lectura en varios grados, pero el plan de mejoramiento prioriza solo la remodelacion de espacios administrativos.",
+    "enunciado": "¿Que ajuste seria mas pertinente en esta situacion?",
+    "opciones": {
+      "A": "Suprimir la seccion de diagnostico del PEI para evitar inconsistencias visibles ante procesos externos.",
+      "B": "Reestructurar el PMI para alinear metas y presupuesto con los hallazgos del diagnostico, incorporando proyectos de lectura y estrategias de corresponsabilidad familiar.",
+      "C": "Mantener la prioridad exclusiva en obras administrativas, asumiendo que el entorno directivo repercute indirectamente en el aprendizaje.",
+      "D": "Exigir al profesorado elevar el nivel lector mediante actividades complementarias sin modificar planeacion ni recursos institucionales."
+    },
+    "clave": "B",
+    "justificacion_clave": "La respuesta correcta es B porque un PMI defendible debe responder a la autoevaluacion y al diagnostico institucional. Si las alertas principales son pedagogicas y comunitarias, la planeacion y los recursos deben orientarse a esas barreras y no desplazarse a prioridades perifericas.",
+    "distractores_funcion": {
+      "A": "Oculta el diagnostico en lugar de usarlo como base de mejora.",
+      "B": "Clave correcta: articula diagnostico, metas y recursos con decisiones institucionales concretas.",
+      "C": "Privilegia una prioridad administrativa desconectada del problema central.",
+      "D": "Descarga la solucion solo en el aula sin soporte de gestion institucional."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No culpa a estudiantes, familias o docentes; se concentra en la decision institucional."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Enunciado funcional y opciones consistentes."
+    },
+    "metadata_editorial": {
+      "lote": "L077",
+      "ruta_origen": "content/items/stand-by/Referentes PEI/CB08_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/rector_director_rural/funcional/CB08_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  }
+]
