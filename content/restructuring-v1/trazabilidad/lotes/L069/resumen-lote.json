@@ -1,0 +1,46 @@
+{
+  "loteProcesado": "L069",
+  "decisionLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Aula invertida y cambio de rol docente/",
+    "content/items/stand-by/Constructivismo, indagación y aprendizaje experimental/",
+    "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/"
+  ],
+  "numeroItemsLeidos": 8,
+  "conteoEstados": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 6,
+    "DESCARTAR": 2
+  },
+  "numeroConRequiereRevisionHumana": 6,
+  "hallazgosPrincipales": [
+    "El lote tiene un nucleo util para pilotaje cuando la pregunta exige mediacion docente observable, uso intencional de recursos y resolucion autentica de problemas.",
+    "Aula invertida y didactica de areas aportan valor cuando el centro de la tarea es reorganizar la experiencia de aprendizaje y no repetir etiquetas metodologicas.",
+    "Constructivismo cae en dos registros distintos: un item funcional recuperable y otro de teoria general sobre tanteo experimental que no discrimina actuacion docente concreta.",
+    "No hubo ningun item lo bastante fino en distractores y opacidad de clave como para pasar directo a banco."
+  ],
+  "problemasSistemicos": [
+    "Persisten claves demasiado visibles por superioridad pedagogica abierta frente a distractores debiles o exagerados.",
+    "En parte del material aparece pseudoinnovacion: se nombra la metodologia correcta, pero no siempre se convierte en decision profesional suficientemente exigente.",
+    "Los descartes del lote se explican por teoria pura, etiquetas pedagogicas y actividad decorativa en lugar de transferencia autentica."
+  ],
+  "incidenciasGithubOFuente": [
+    "La lectura de carpetas requirio resolver el inventario con navegacion directa en GitHub por limitaciones del conector de busqueda para rutas con tildes y comas.",
+    "Se registraron coincidencias con auditorias previas en los ids PPDC_B07_I01, PPDC_B03_I01 y PPDC_B03_I02, pero el dictamen de L069 se rehizo y no dependio de esas decisiones previas.",
+    "No hubo incidencias bloqueantes de lectura o escritura en GitHub."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L069/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L069/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L069/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L069/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "modificoContentItemsStandBy": false,
+    "modificoTrashJson": false,
+    "modificoBitacorasGlobales": false,
+    "modificoOtrosLotes": false
+  }
+}
