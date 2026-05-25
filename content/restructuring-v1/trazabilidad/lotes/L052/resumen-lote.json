@@ -1,0 +1,64 @@
+{
+  "loteProcesado": "L052",
+  "fechaCierre": "2026-05-24",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Aptitud verbal y organización textual/",
+    "content/items/stand-by/Comunicación asertiva/",
+    "content/items/stand-by/Pedagogía y currículo/"
+  ],
+  "itemsLeidos": 8,
+  "itemsLeidosPorCarpeta": {
+    "Aptitud verbal y organización textual": 5,
+    "Comunicación asertiva": 3,
+    "Pedagogía y currículo": 0
+  },
+  "itemsNoAuditadosProcesados": [],
+  "itemsOmitidosPorAuditoriaPrevia": [
+    {"id_item": "IDD_B17_I01", "lotePrevio": "L030"},
+    {"id_item": "IDD_B17_I02", "lotePrevio": "L030"},
+    {"id_item": "IDD_B17_I03", "lotePrevio": "L030"},
+    {"id_item": "IDD_B17_I04", "lotePrevio": "L030"},
+    {"id_item": "IDD_B17_I05", "lotePrevio": "L030"},
+    {"id_item": "CB05_I01", "lotePrevio": "L030"},
+    {"id_item": "CB05_I02", "lotePrevio": "L001"},
+    {"id_item": "CB05_I03", "lotePrevio": "L030"}
+  ],
+  "conteosDecision": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 0,
+    "DESCARTAR": 0,
+    "OMITIDO_POR_AUDITORIA_PREVIA": 8
+  },
+  "requiereRevisionHumana": 0,
+  "incidenciasGitHubFuente": [
+    "La ruta content/items/stand-by/Pedagogía y currículo/ no fue localizable en GitHub con ese nombre; se registra como incidencia de fuente y no aportó items al lote.",
+    "El clonado directo y las llamadas HTTP externas a GitHub no fueron viables en este entorno; la lectura se resolvió con el conector GitHub y trazabilidad previa.",
+    "La búsqueda indexada del conector fue poco fiable para rutas con espacios y tildes; el inventario se consolidó con decisiones previas y verificación puntual de rutas."
+  ],
+  "fuentesInternasConsultadas": [
+    "content/restructuring-v1/trazabilidad/mapa-carpetas-stand-by.csv",
+    "content/restructuring-v1/trazabilidad/reglas-clasificacion.json",
+    "content/restructuring-v1/trazabilidad/protocolo-ejecucion.md",
+    "content/restructuring-v1/trazabilidad/lotes/README-lanzamiento-paralelo.md",
+    "content/restructuring-v1/trazabilidad/lotes/L005/decisiones.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L025/decisiones.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L026/decisiones.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L030/decisiones.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L046/decisiones.csv"
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L052/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L052/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L052/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L052/reporte-acumulado-instancia.md"
+  ],
+  "confirmacionRutasProtegidasNoModificadas": true,
+  "rutasProtegidasNoModificadas": [
+    "content/items/stand-by/",
+    "content/restructuring-v1/trazabilidad/trash.json",
+    "content/restructuring-v1/trazabilidad/bitácora-lotes.csv",
+    "content/restructuring-v1/trazabilidad/manifiesto-control.json",
+    "content/restructuring-v1/trazabilidad/mapa-carpetas-stand-by.csv"
+  ]
+}
