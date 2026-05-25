@@ -1,0 +1,68 @@
+{
+  "loteProcesado": "L056",
+  "fechaCierre": "2026-05-25",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/",
+    "content/items/stand-by/Responsabilidad legal/",
+    "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/"
+  ],
+  "itemsLeidos": 13,
+  "itemsLeidosPorCarpeta": {
+    "Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes": 5,
+    "Responsabilidad legal": 1,
+    "Enfoque de derechos, debido proceso y justicia restaurativa": 7
+  },
+  "itemsNoAuditadosProcesados": [
+    "CEOL_B02_I07"
+  ],
+  "itemsOmitidosPorAuditoriaPrevia": [
+    {"id_item": "DIL_B04_I01", "lotePrevio": "L027"},
+    {"id_item": "DIL_B04_I02", "lotePrevio": "L027"},
+    {"id_item": "DIL_B04_I03", "lotePrevio": "L027"},
+    {"id_item": "DIL_B04_I04", "lotePrevio": "L027"},
+    {"id_item": "DIL_B04_I05", "lotePrevio": "L027"},
+    {"id_item": "CB07_I01", "lotePrevio": "L026"},
+    {"id_item": "CEOL_B02_I01", "lotePrevio": "L013"},
+    {"id_item": "CEOL_B02_I02", "lotePrevio": "L013"},
+    {"id_item": "CEOL_B02_I03", "lotePrevio": "L013"},
+    {"id_item": "CEOL_B02_I04", "lotePrevio": "L013"},
+    {"id_item": "CEOL_B02_I05", "lotePrevio": "L013"},
+    {"id_item": "CEOL_B02_I06", "lotePrevio": "L013"}
+  ],
+  "conteosDecision": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 1,
+    "DESCARTAR": 0,
+    "OMITIDO_POR_AUDITORIA_PREVIA": 12
+  },
+  "requiereRevisionHumana": 1,
+  "incidenciasGitHubFuente": [
+    "content/restructuring-v1/trazabilidad/lotes/L048/decisiones.csv no fue localizable en la ruta esperada; se registró como ausencia de trazabilidad previa verificable para este cruce.",
+    "CB07_I02.json y CB07_I03.json no aparecieron en la ruta content/items/stand-by/Responsabilidad legal/ durante la lectura puntual con el conector GitHub; no se computaron como items del lote.",
+    "El clonado directo y las llamadas HTTP externas a GitHub no fueron viables en este entorno; la lectura se resolvió con el conector GitHub y la trazabilidad previa disponible."
+  ],
+  "fuentesInternasConsultadas": [
+    "content/restructuring-v1/trazabilidad/mapa-carpetas-stand-by.csv",
+    "content/restructuring-v1/trazabilidad/reglas-clasificacion.json",
+    "content/restructuring-v1/trazabilidad/protocolo-ejecucion.md",
+    "content/restructuring-v1/trazabilidad/lotes/README-lanzamiento-paralelo.md",
+    "content/restructuring-v1/trazabilidad/lotes/L013/decisiones.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L026/decisiones.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L027/decisiones.csv"
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L056/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L056/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L056/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L056/reporte-acumulado-instancia.md"
+  ],
+  "confirmacionRutasProtegidasNoModificadas": true,
+  "rutasProtegidasNoModificadas": [
+    "content/items/stand-by/",
+    "content/restructuring-v1/trazabilidad/trash.json",
+    "content/restructuring-v1/trazabilidad/bitácora-lotes.csv",
+    "content/restructuring-v1/trazabilidad/manifiesto-control.json",
+    "content/restructuring-v1/trazabilidad/mapa-carpetas-stand-by.csv"
+  ]
+}
