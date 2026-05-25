@@ -1,0 +1,33 @@
+{
+  "lote": "L076",
+  "fechaCierre": "2026-05-25",
+  "repositorio": "https://github.com/ProfeMarlonMDE/GanaConMerito",
+  "carpetasProcesadas": [
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/",
+    "content/items/stand-by/Menor infractor, edad penal y rutas de protección/",
+    "content/items/stand-by/PARD y restablecimiento de derechos/"
+  ],
+  "sublotesInternos": [],
+  "itemsLeidos": 12,
+  "itemsOmitidosPorAuditoriaPrevia": [],
+  "solapamientosDetectados": [
+    "El bloque de responsabilidad legal escolar y protección integral se cruza temáticamente con los lotes ya trabajados sobre responsabilidad legal y enfoque de derechos, pero aquí se auditó sin bloquear el flujo.",
+    "Los ítems sobre rutas de protección y PARD comparten territorio con convivencia escolar, restablecimiento de derechos y deber de cuidado institucional."
+  ],
+  "conteosDecision": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 6,
+    "DESCARTAR": 6
+  },
+  "requiereRevisionHumana": 0,
+  "incidenciasGithubFuente": [
+    "La lectura operativa se hizo directamente en GitHub con conector y vista de árbol; no se usó /workspace como fuente del repositorio."
+  ],
+  "archivosGenerados": [
+    "content/restructuring-v1/trazabilidad/lotes/L076/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L076/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L076/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L076/reporte-acumulado-instancia.md"
+  ],
+  "rutasProtegidasNoModificadas": true
+}
