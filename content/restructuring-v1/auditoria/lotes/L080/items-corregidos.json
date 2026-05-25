@@ -1,0 +1,214 @@
+[
+  {
+    "id_item": "IDD_B13_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Evaluación colaborativa, coevaluación y metacognición/IDD_B13_I02.json",
+    "motivo": "Se reduce a reconocer la bitácora reflexiva como etiqueta correcta para metacognición. La clave es demasiado visible y los distractores no compiten desde errores docentes plausibles.",
+    "lote": "L080"
+  },
+  {
+    "id_item": "IDD_B13_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Evaluación colaborativa, coevaluación y metacognición",
+    "subtema": "Coevaluación con criterios explícitos",
+    "competencia": "Diseñar secuencias de coevaluación formativa guiadas por criterios explícitos y retroalimentación respetuosa.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado propone una mediación de coevaluación que transforma valoraciones subjetivas en retroalimentación útil para mejorar el desempeño.",
+    "evidencia": "Selecciona la organización de aula que usa criterios visibles, andamiaje del lenguaje de retroalimentación y foco en la calidad del producto.",
+    "tarea": "Elegir la decisión didáctica más pertinente para convertir una coevaluación socialmente sesgada en una práctica de aprendizaje entre pares.",
+    "contexto": "En una clase de lenguaje, el docente detecta que en ejercicios previos de coevaluación algunos estudiantes asignaron valoraciones por afinidad personal y otros dejaron comentarios descalificadores sin relación con la calidad del texto revisado.",
+    "enunciado": "¿Qué decisión didáctica es la más adecuada para que la coevaluación cumpla una función formativa real?",
+    "opciones": {
+      "A": "Diseñar una guía de coevaluación con criterios explícitos del producto y modelar cómo formular retroalimentación descriptiva y propositiva.",
+      "B": "Pedir que la coevaluación sea secreta para evitar que los estudiantes tengan que justificar sus observaciones ante el grupo.",
+      "C": "Delegar la valoración final solo a quienes obtuvieron los puntajes más altos en el periodo anterior.",
+      "D": "Exponer públicamente los errores de cada trabajo para que el grupo aprenda qué no debe hacer."
+    },
+    "clave": "A",
+    "justificacion_clave": "La alternativa A convierte la coevaluación en una práctica guiada por criterios, evidencia y lenguaje formativo; eso sí expresa una mediación observable del docente sobre cómo evaluar entre pares.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Reduce la interacción pedagógica y evita el aprendizaje sobre cómo justificar una valoración.",
+      "C": "Desplaza la práctica evaluativa a un grupo selecto y no desarrolla capacidad de coevaluación en todo el curso.",
+      "D": "Usa el error de forma punitiva y deteriora el clima de aula necesario para la retroalimentación."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El escenario es generalizable y no introduce barreras culturales irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El enunciado tiene una sola tarea y las opciones mantienen paralelismo suficiente para pilotaje."
+    },
+    "metadata_editorial": {
+      "lote": "L080",
+      "ruta_origen": "content/items/stand-by/Evaluación colaborativa, coevaluación y metacognición/IDD_B13_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B13_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "EFCC_B04_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Evaluación integral por competencias",
+    "subtema": "Integralidad del desempeño",
+    "competencia": "Diseñar evaluaciones que articulen desempeño conceptual, procedimental y actitudinal mediante tareas auténticas.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado reconoce un diseño de evaluación coherente con el enfoque por competencias y con el uso pedagógico de múltiples evidencias.",
+    "evidencia": "Selecciona la propuesta que integra tareas auténticas, criterios transparentes y combinación de heteroevaluación, autoevaluación y coevaluación.",
+    "tarea": "Elegir el rediseño de evaluación más pertinente para superar un esquema centrado casi solo en pruebas escritas de memoria.",
+    "contexto": "Una institución revisa su sistema de evaluación porque los reportes internos muestran que la mayoría de las notas proviene de pruebas escritas y que eso ha desplazado la observación del desempeño, los productos de proceso y la argumentación de los estudiantes.",
+    "enunciado": "¿Qué propuesta metodológica se alinea mejor con una evaluación integral del desempeño por competencias?",
+    "opciones": {
+      "A": "Combinar proyectos de aula, portafolios de evidencias y rúbricas analíticas, articulando heteroevaluación con espacios de autoevaluación y coevaluación.",
+      "B": "Mantener pruebas escritas de opción múltiple como única fuente de nota y aumentar su dificultad teórica para fortalecer la exigencia académica.",
+      "C": "Reemplazar la evaluación académica por apreciaciones generales de convivencia sin valorar el desempeño en las tareas de aprendizaje.",
+      "D": "Externalizar toda la evaluación periódica para que un operador aplique pruebas estandarizadas y asigne las notas institucionales."
+    },
+    "clave": "A",
+    "justificacion_clave": "La alternativa A es la única que articula fuentes de evidencia diversas y criterios de desempeño consistentes con una evaluación por competencias; por eso es recuperable para pilotaje.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Preserva una medición reducida a pruebas escritas y limita la observación del desempeño complejo.",
+      "C": "Desbalancea la evaluación al eliminar la dimensión académica y procedimental del aprendizaje.",
+      "D": "Desplaza indebidamente la responsabilidad evaluativa del establecimiento y del docente."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "No se observan sesgos de representación; el riesgo principal es técnico, no de fairness."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La lectura es viable, aunque la opción correcta sobresale por densidad técnica idealizada."
+    },
+    "metadata_editorial": {
+      "lote": "L080",
+      "ruta_origen": "content/items/stand-by/Evaluación integral por competencias/EFCC_B04_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/EFCC_B04_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B14_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/IDD_B14_I01.json",
+    "motivo": "La respuesta correcta es una enumeración obvia de buenas prácticas diagnósticas frente a distractores absurdos. No discrimina bien y convierte el enfoque inclusivo en adhesión declarativa.",
+    "lote": "L080"
+  },
+  {
+    "id_item": "IDD_B14_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/IDD_B14_I02.json",
+    "motivo": "Pregunta teoría casi literal sobre Ausubel y saberes previos. Predomina la explicación correcta de manual, no una decisión didáctica situada con competencia real entre opciones.",
+    "lote": "L080"
+  },
+  {
+    "id_item": "IDD_B14_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Diagnóstico pedagógico, saberes previos y evaluación formativa",
+    "subtema": "Uso formativo de resultados",
+    "competencia": "Usar resultados, errores frecuentes y evidencias de proceso para ajustar la mediación didáctica y recoger nuevas evidencias de aprendizaje.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado decide cómo actuar cuando los resultados muestran que una parte importante del grupo no alcanzó la competencia esperada.",
+    "evidencia": "Selecciona la secuencia de acción que analiza patrones de dificultad, retroalimenta, ajusta la mediación y verifica nuevamente el aprendizaje.",
+    "tarea": "Elegir la respuesta pedagógica más pertinente ante evidencias de logro insuficiente al cierre de un periodo académico.",
+    "contexto": "Al terminar un periodo, el docente tiene registros de desempeño, errores frecuentes y productos de los estudiantes. Observa que una proporción importante del grupo no alcanzó la competencia esperada y debe decidir cómo proceder.",
+    "enunciado": "¿Qué acción corresponde mejor a un uso formativo de esa información evaluativa?",
+    "opciones": {
+      "A": "Registrar las notas y avanzar al siguiente periodo sin revisar lo ocurrido.",
+      "B": "Aplicar exactamente la misma prueba otra vez, sin cambiar la mediación ni ofrecer retroalimentación.",
+      "C": "Concluir que el grupo no tiene capacidad para aprender ese contenido.",
+      "D": "Analizar patrones de dificultad, retroalimentar, ajustar la mediación didáctica, ofrecer apoyos y recoger nuevas evidencias."
+    },
+    "clave": "D",
+    "justificacion_clave": "La alternativa D es la única que convierte los resultados en decisiones de mejora y verificación posterior, que es precisamente el núcleo de la evaluación formativa basada en evidencia.",
+    "distractores_funcion": {
+      "A": "Desaprovecha la evidencia y mantiene intacto el problema de aprendizaje.",
+      "B": "Repite la medición sin intervención pedagógica ni realimentación útil.",
+      "C": "Introduce una lectura deficitária del estudiante sin base pedagógica suficiente.",
+      "D": "Clave correcta."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El caso es general y no depende de rasgos extrínsecos al constructo."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea es clara, pero la superioridad técnica de la clave todavía es visible."
+    },
+    "metadata_editorial": {
+      "lote": "L080",
+      "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/IDD_B14_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B14_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B14_I04",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/IDD_B14_I04.json",
+    "motivo": "Se resuelve por una lista amplia y virtuosa frente a opciones estrechas u obvias. Mide reconocimiento del discurso integral, no juicio pedagógico fino.",
+    "lote": "L080"
+  },
+  {
+    "id_item": "IDD_B14_I05",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Diagnóstico pedagógico, saberes previos y evaluación formativa",
+    "subtema": "Diagnóstico para apoyos y DUA",
+    "competencia": "Usar información diagnóstica para diseñar apoyos y múltiples formas de acceso, participación y expresión.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado utiliza hallazgos diagnósticos sobre ritmos, barreras e intereses para decidir una mediación didáctica inclusiva.",
+    "evidencia": "Selecciona la alternativa que transforma la información diagnóstica en decisiones de diseño pedagógico coherentes con el DUA.",
+    "tarea": "Elegir el uso pedagógico más pertinente de un diagnóstico inicial que revela diversidad de ritmos, barreras y formas de participación.",
+    "contexto": "Tras un diagnóstico inicial, el docente identifica diferencias de ritmo, fortalezas visuales, barreras de acceso, dificultades de lectura e intereses distintos dentro del grupo. Debe planear la siguiente unidad.",
+    "enunciado": "¿Cuál es el uso pedagógico más adecuado de esa información diagnóstica?",
+    "opciones": {
+      "A": "Diseñar múltiples formas de representación, participación y expresión, prever apoyos y ajustar la mediación según las barreras identificadas.",
+      "B": "Clasificar a los estudiantes entre quienes merecen apoyo y quienes pueden avanzar solos sin nuevas mediaciones.",
+      "C": "Archivar el diagnóstico y mantener la planeación inicial para no introducir desigualdades en el grupo.",
+      "D": "Preparar una actividad totalmente distinta para cada estudiante sin propósito común de aprendizaje."
+    },
+    "clave": "A",
+    "justificacion_clave": "La alternativa A utiliza la evidencia diagnóstica para ajustar el diseño didáctico desde criterios de acceso, participación y expresión, que es la decisión pedagógica más defendible en este caso.",
+    "distractores_funcion": {
+      "A": "Clave correcta.",
+      "B": "Convierte el diagnóstico en clasificación estigmatizante en lugar de apoyo pedagógico.",
+      "C": "Niega el uso de la evidencia recogida y deja intactas las barreras detectadas.",
+      "D": "Confunde diversificación con fragmentación sin propósito común."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El caso promueve accesibilidad e inclusión sin introducir sesgos irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La lectura es clara y la situación es pedagógicamente recognoscible, aunque la clave aún resalta por formulación más técnica."
+    },
+    "metadata_editorial": {
+      "lote": "L080",
+      "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/IDD_B14_I05.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B14_I05.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  }
+]
