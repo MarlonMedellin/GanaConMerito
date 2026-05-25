@@ -1,0 +1,92 @@
+[
+  {
+    "lote": "L064",
+    "id_item": "DIL_B09_I01",
+    "ruta_origen": "content/items/stand-by/Trabajo infantil y edad mínima/DIL_B09_I01.json",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": false,
+    "motivo_dominante": "Clave visible con base legal directa",
+    "hallazgo": "La situación es pertinente para protección integral, pero la respuesta correcta se destaca demasiado frente a opciones caricaturescas.",
+    "accion_sugerida": "Pilotear y endurecer distractores alrededor de orientación, seguimiento y activación proporcional de ruta."
+  },
+  {
+    "lote": "L064",
+    "id_item": "DIL_B09_I02",
+    "ruta_origen": "content/items/stand-by/Trabajo infantil y edad mínima/DIL_B09_I02.json",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": false,
+    "motivo_dominante": "Distractores extremos",
+    "hallazgo": "El enfoque de protección al adolescente trabajador formal es defendible, pero las opciones incorrectas compiten poco.",
+    "accion_sugerida": "Pilotear tras reforzar errores plausibles sobre seguimiento escolar y riesgo de explotación."
+  },
+  {
+    "lote": "L064",
+    "id_item": "DIL_B05_I01",
+    "ruta_origen": "content/items/stand-by/Menor infractor, edad penal y rutas de protección/DIL_B05_I01.json",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": false,
+    "motivo_dominante": "Distractores caricaturescos",
+    "hallazgo": "La activación de ICBF y Policía de Infancia está bien planteada, pero varias alternativas erróneas son demasiado fáciles de desechar.",
+    "accion_sugerida": "Pilotear con distractores más cercanos a errores institucionales reales."
+  },
+  {
+    "lote": "L064",
+    "id_item": "DIL_B05_I02",
+    "ruta_origen": "content/items/stand-by/Menor infractor, edad penal y rutas de protección/DIL_B05_I02.json",
+    "decision": "DESCARTAR",
+    "requiere_revision_humana": false,
+    "motivo_dominante": "Memoria jurídica",
+    "hallazgo": "La resolución depende casi por completo de recordar que antes de los 14 años no hay SRPA.",
+    "accion_sugerida": "No remediar en este lote. Sustituir por un caso donde el foco sea la actuación institucional y no el dato normativo."
+  },
+  {
+    "lote": "L064",
+    "id_item": "DIL_B05_I03",
+    "ruta_origen": "content/items/stand-by/Menor infractor, edad penal y rutas de protección/DIL_B05_I03.json",
+    "decision": "DESCARTAR",
+    "requiere_revision_humana": false,
+    "motivo_dominante": "Pseudoaplicación legal",
+    "hallazgo": "El caso parece situado, pero la tarea real es aplicar el umbral de edad penal, no decidir una ruta institucional concreta.",
+    "accion_sugerida": "No remediar en este lote. Reemplazar por un escenario con coordinación entre escuela, familia y autoridades."
+  },
+  {
+    "lote": "L064",
+    "id_item": "DIL_B02_I01",
+    "ruta_origen": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I01.json",
+    "decision": "DESCARTAR",
+    "requiere_revision_humana": false,
+    "motivo_dominante": "Definición de sigla",
+    "hallazgo": "El contexto no altera que la tarea sea expandir una sigla jurídica.",
+    "accion_sugerida": "No remediar en este lote. Sustituir por una decisión de remisión o delimitación competencial."
+  },
+  {
+    "lote": "L064",
+    "id_item": "DIL_B02_I02",
+    "ruta_origen": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I02.json",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": false,
+    "motivo_dominante": "Clave visible",
+    "hallazgo": "La diferenciación entre dificultad escolar y vulneración de derechos es válida, pero la opción correcta sobresale demasiado.",
+    "accion_sugerida": "Pilotear con distractores más plausibles sobre escalamiento gradual y manejo interno."
+  },
+  {
+    "lote": "L064",
+    "id_item": "DIL_B02_I05",
+    "ruta_origen": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I05.json",
+    "decision": "DESCARTAR",
+    "requiere_revision_humana": false,
+    "motivo_dominante": "Doctrina repetitiva",
+    "hallazgo": "Pide explicar qué es un hogar sustituto, no decidir una actuación escolar o institucional.",
+    "accion_sugerida": "No remediar en este lote. Sustituir por un caso donde se deba orientar a la comunidad educativa frente a una medida de protección."
+  },
+  {
+    "lote": "L064",
+    "id_item": "DIL_B02_I06",
+    "ruta_origen": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I06.json",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false,
+    "motivo_dominante": "Delimitación institucional sólida",
+    "hallazgo": "Mide con claridad el deber de proteger, reportar y no investigar judicialmente desde la escuela, con buena diferenciación institucional y proporcionalidad.",
+    "accion_sugerida": "Mantener para banco."
+  }
+]
