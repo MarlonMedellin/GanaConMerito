@@ -1,0 +1,46 @@
+{
+  "loteProcesado": "L065",
+  "decisionLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Inteligencia, inteligencias múltiples y didáctica heterogénea/",
+    "content/items/stand-by/Habilidades blandas y duras/",
+    "content/items/stand-by/Comunicación asertiva/"
+  ],
+  "numeroItemsLeidos": 12,
+  "conteoEstados": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 7,
+    "DESCARTAR": 5
+  },
+  "numeroConRequiereRevisionHumana": 7,
+  "hallazgosPrincipales": [
+    "Los items rescatables del lote se concentran en habilidades blandas y en dos casos de didactica heterogenea donde si hay una decision docente o evaluativa observable.",
+    "El bloque de comunicacion asertiva repite un patron de respuestas socialmente deseables y claves demasiado visibles, por lo que no aporta valor nuevo al banco.",
+    "Dentro de inteligencias multiples, las formulaciones mas teoricas o tipologicas quedaron descartadas por pseudoteoria o clasificacion trivial.",
+    "No hubo material suficientemente solido para LISTO_PARA_BANCO."
+  ],
+  "problemasSistemicos": [
+    "Persisten tipologias triviales y formulaciones cercanas a pseudoteoria en el bloque de inteligencias.",
+    "Los distractores de comunicacion asertiva son demasiado caricaturescos o moralmente obvios.",
+    "En varios casos la clave destaca por lenguaje virtuoso o por una superioridad pedagogica demasiado visible.",
+    "El lote mezcla casos aplicados defendibles con items de baja discriminacion centrados en etiquetas."
+  ],
+  "incidenciasGithubOFuente": [
+    "La fuente del lote fue legible y consistente; no hubo incidencias bloqueantes de lectura o escritura en GitHub.",
+    "Se mantuvo coherencia con auditorias previas de esta misma instancia sobre habilidades blandas y comunicacion asertiva."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L065/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L065/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L065/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L065/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "modificoContentItemsStandBy": false,
+    "modificoTrashJson": false,
+    "modificoBitacorasGlobales": false,
+    "modificoOtrosLotes": false
+  }
+}
