@@ -1,0 +1,70 @@
+{
+  "loteProcesado": "L078",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Trabajo infantil y edad mínima/",
+    "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/",
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/"
+  ],
+  "itemsLeidos": 14,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 1,
+    "LISTO_PARA_PILOTAJE": 9,
+    "DESCARTAR": 4
+  },
+  "requiereRevisionHumana": 5,
+  "observacionesOperativasCoincidencias": [
+    {
+      "loteRelacionado": "L013",
+      "items": [
+        "CEOL_B02_I01",
+        "CEOL_B02_I02",
+        "CEOL_B02_I03",
+        "CEOL_B02_I04",
+        "CEOL_B02_I05",
+        "CEOL_B02_I06"
+      ]
+    },
+    {
+      "loteRelacionado": "L027",
+      "items": [
+        "DIL_B04_I01",
+        "DIL_B04_I02",
+        "DIL_B04_I03",
+        "DIL_B04_I04",
+        "DIL_B04_I05"
+      ]
+    },
+    {
+      "loteRelacionado": "L045",
+      "items": ["CEOL_B02_I07"]
+    },
+    {
+      "loteRelacionado": "L064",
+      "items": ["DIL_B09_I01", "DIL_B09_I02"]
+    }
+  ],
+  "hallazgosClave": [
+    "El lote es útil cuando obliga a activar rutas, delimitar competencias institucionales y responder con proporcionalidad frente a riesgos o vulneraciones.",
+    "Los mejores ítems convierten la norma en actuación escolar observable y no en doctrina jurídica plana.",
+    "Los descartes corresponden a memoria legal, definiciones de sujeto de derechos o prohibiciones resueltas por recuerdo normativo sin juicio profesional auténtico.",
+    "La mayor debilidad transversal sigue siendo la baja competencia de algunos distractores, que deja claves demasiado visibles en varios casos rescatables."
+  ],
+  "incidenciasGithubOFuente": [
+    "Los cuatro archivos de salida de L078 no existían y devolvieron 404 antes de su creación.",
+    "El inventario del lote se confirmó por lectura directa de carpetas en GitHub y contraste con decisiones visibles en L013, L027, L045 y L064.",
+    "Las coincidencias con otros lotes se registraron solo como observación operativa y no detuvieron el procesamiento del lote."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L078/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L078/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L078/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L078/reporte-acumulado-instancia.md"
+  ],
+  "confirmaciones": {
+    "noSeModificoContentItemsStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true,
+    "noSeModificaronOtrosLotes": true
+  }
+}
