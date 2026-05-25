@@ -1,0 +1,46 @@
+{
+  "loteProcesado": "L080",
+  "decisionLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Evaluación colaborativa, coevaluación y metacognición/",
+    "content/items/stand-by/Evaluación integral por competencias/",
+    "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/"
+  ],
+  "numeroItemsLeidos": 8,
+  "conteoEstados": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 4,
+    "DESCARTAR": 4
+  },
+  "numeroConRequiereRevisionHumana": 4,
+  "hallazgosPrincipales": [
+    "El lote conserva valor cuando la evaluación se traduce en retroalimentación observable, ajuste pedagógico y mediación basada en evidencias del aprendizaje.",
+    "Las preguntas más débiles caen en metacognición declarativa, discurso evaluativo ornamental o listas obvias donde la clave sobresale por vocabulario técnico correcto.",
+    "Nada quedó listo para banco porque incluso los ítems recuperables todavía necesitan una segunda pasada humana para cegar mejor la clave y endurecer distractores."
+  ],
+  "problemasSistemicos": [
+    "Claves visibles por lenguaje pedagógico idealizado.",
+    "Distractores caricaturescos o demasiado punitivos frente a la alternativa correcta.",
+    "Inflación del rótulo formativo sin suficiente competencia entre opciones."
+  ],
+  "incidenciasGithubOFuente": [
+    "La resolución del inventario exigió navegación directa en GitHub para carpetas con tildes y comas.",
+    "Se detectaron coincidencias temáticas y exactas con L073 en IDD_B13_I02, IDD_B13_I03 y EFCC_B04_I01; se documentaron, pero L080 se auditó como lote autocontenido.",
+    "No hubo incidencias bloqueantes de lectura o escritura en GitHub."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L080/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L080/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L080/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L080/reporte-acumulado-instancia.md"
+  ],
+  "confirmaciones": {
+    "modificoContentItemsStandBy": false,
+    "modificoTrashJson": false,
+    "modificoBitacorasGlobales": false,
+    "modificoOtrosLotes": false,
+    "loteAutocontenido": true
+  }
+}
