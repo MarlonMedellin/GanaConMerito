@@ -1,0 +1,61 @@
+{
+  "lote": "L061",
+  "repository": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaAuditoria": "2026-05-25",
+  "decisionGlobalLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Aula invertida y cambio de rol docente/",
+    "content/items/stand-by/Constructivismo, indagación y aprendizaje experimental/",
+    "content/items/stand-by/Aprendizaje significativo Ausubel/"
+  ],
+  "totalItemsDetectados": 15,
+  "totalItemsLeidos": 0,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 2,
+    "LISTO_PARA_PILOTAJE": 6,
+    "DESCARTAR": 7
+  },
+  "conteoRequiereRevisionHumana": 0,
+  "fuentesConsultadas": [
+    "content/restructuring-v1/trazabilidad/lotes/L003/decisiones.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L005/decisiones.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L033/decisiones.csv",
+    "https://github.com/ProfeMarlonMDE/GanaConMerito/tree/master/content/items/stand-by/Aula%20invertida%20y%20cambio%20de%20rol%20docente",
+    "https://github.com/ProfeMarlonMDE/GanaConMerito/tree/master/content/items/stand-by/Constructivismo%2C%20indagaci%C3%B3n%20y%20aprendizaje%20experimental",
+    "https://github.com/ProfeMarlonMDE/GanaConMerito/tree/master/content/items/stand-by/Aprendizaje%20significativo%20Ausubel"
+  ],
+  "hallazgosPrincipales": [
+    "El ítem visible de Aula invertida y cambio de rol docente ya contaba con una decisión funcional defendible orientada a pilotaje.",
+    "Los dos ítems visibles de Constructivismo, indagación y aprendizaje experimental ya habían sido diferenciados entre un caso recuperable de indagación auténtica y un descarte por teoría pura.",
+    "La carpeta de Aprendizaje significativo Ausubel ya mostraba un patrón mixto: dos ítems fuertes para banco, cuatro rescatables para pilotaje y seis descartables por etiquetas teóricas o pseudoaplicación.",
+    "El lote conserva valor parcial, pero presenta una carga alta de ítems conceptuales y doctrinales, sobre todo en Ausubel."
+  ],
+  "problemasSistemicos": [
+    "Presencia repetida de pseudoaplicación: escenarios que aparentan práctica docente, pero se resuelven por reconocer etiquetas pedagógicas.",
+    "Distractores débiles o excesivamente visibles en varios ítems que quedaron en pilotaje.",
+    "Concentración de descarte en el eje Ausubel por exceso de formulación doctrinal y baja observabilidad de la mediación."
+  ],
+  "riesgosBanco": [
+    "Integrar sin filtro los ítems descartados degradaría la capacidad del banco para medir mediación pedagógica observable, transferencia y aprendizaje activo.",
+    "Los ítems que quedan en pilotaje necesitan confirmación empírica de discriminación antes de pasar a banco activo."
+  ],
+  "incidenciasGithubOFuente": [
+    "Las salidas de L061 no existían y se crearon en este ciclo.",
+    "La consolidación del lote se apoyó en trazabilidad previa consistente; no fue necesario modificar las fuentes originales."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L061/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L061/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L061/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L061/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "noSeModificoStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true,
+    "noSeModificaronOtrosLotes": true
+  }
+}
