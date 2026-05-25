@@ -1,0 +1,66 @@
+{
+  "lote": "L075",
+  "repository": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaAuditoria": "2026-05-24",
+  "decisionGlobalLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Normatividad y fines de la educación/",
+    "content/items/stand-by/Educación como derecho fundamental, bien común y derecho pluridimensional/",
+    "content/items/stand-by/Propósitos de la educación/"
+  ],
+  "totalItemsDetectados": 9,
+  "totalItemsLeidos": 8,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 1,
+    "LISTO_PARA_PILOTAJE": 5,
+    "DESCARTAR": 3
+  },
+  "conteoRequiereRevisionHumana": 6,
+  "observacionesOperativasDeSolapamiento": [
+    "Hay continuidad temática con lotes previos sobre fines de la educación y enfoque de derechos, pero en este lote se procesó normalmente sin depender de auditoría previa.",
+    "La carpeta de propósitos mantiene cercanía conceptual con decisiones ya vistas en la instancia, sobre todo en formación integral y reduccionismos academicistas."
+  ],
+  "fuentesConsultadas": [
+    "content/items/stand-by/Educación como derecho fundamental, bien común y derecho pluridimensional/NFL_B07_I01.json",
+    "content/items/stand-by/Educación como derecho fundamental, bien común y derecho pluridimensional/NFL_B07_I02.json",
+    "content/items/stand-by/Educación como derecho fundamental, bien común y derecho pluridimensional/NFL_B07_I03.json",
+    "content/items/stand-by/Educación como derecho fundamental, bien común y derecho pluridimensional/NFL_B07_I04.json",
+    "content/items/stand-by/Propósitos de la educación/CB14_I01.json",
+    "content/items/stand-by/Propósitos de la educación/CB14_I02.json",
+    "content/items/stand-by/Propósitos de la educación/CB14_I03.json",
+    "content/items/stand-by/Propósitos de la educación/CB14_I04.json",
+    "Árbol GitHub de content/items/stand-by/Normatividad y fines de la educación/"
+  ],
+  "hallazgosPrincipales": [
+    "El lote ofrece valor parcial: la mayor parte de los ítems útiles quedan en pilotaje y solo uno alcanza solidez suficiente para banco.",
+    "La mejor pieza del lote es CB14_I03, porque transforma los propósitos de la educación en una decisión pedagógica situada con actuación observable.",
+    "La carpeta de educación como derecho mezcla dos ítems con aplicación institucional atendible y dos ítems demasiado doctrinales o clasificatorios."
+  ],
+  "problemasSistemicos": [
+    "Persisten respuestas correctas demasiado amplias frente a distractores de tono doctrinal o abiertamente débiles.",
+    "Hay tendencia a convertir lenguaje de derechos y fines legales en afirmaciones programáticas más que en decisiones profesionales observables.",
+    "Parte del lote todavía depende de reconocimiento conceptual o jurídico en vez de interpretación institucional auténtica."
+  ],
+  "riesgosBanco": [
+    "Si los ítems de pilotaje entran directo al banco, la discriminación podría quedar inflada por obviedad de clave y no por dominio real del constructo.",
+    "El archivo GA02_B08 no es verificable por la ruta de contenido de GitHub pese a aparecer en el árbol; esto vuelve su trazabilidad insuficiente."
+  ],
+  "incidenciasGithubOFuente": [
+    "GA02_B08.json aparece listado en el árbol de GitHub dentro de la carpeta Normatividad y fines de la educación, pero la lectura por ruta de contenido devuelve 404."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L075/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L075/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L075/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L075/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "noSeModificoStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true,
+    "noSeModificaronOtrosLotes": true
+  }
+}
