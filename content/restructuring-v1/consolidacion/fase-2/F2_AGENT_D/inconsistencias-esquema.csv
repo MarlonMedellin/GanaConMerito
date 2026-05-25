@@ -1,0 +1,7 @@
+agente,tipo_inconsistencia,detalle,impacto,accion_sugerida
+F2_AGENT_D,FALTANTE_REPORTE_ACUMULADO,"Múltiples lotes tempranos no tienen reporte-acumulado-instancia.md.",MEDIO,"Generación automatizada desde decisiones.csv y resumen-lote.json."
+F2_AGENT_D,FRAGMENTACION_SUBLOTES,"L009 quedó dividido en A/B sin consolidado canónico.",ALTO,"Construir decisiones.csv unificado."
+F2_AGENT_D,LOTS_SOLO_OMISION,"Varios lotes quedaron únicamente como OMITIDO_POR_AUDITORIA_PREVIA.",BAJO,"Marcar como consolidación, no como auditoría nueva."
+F2_AGENT_D,FUENTES_GITHUB_ROTAS,"GA02_B08 y otros ids visibles en árbol no recuperables por contenido.",ALTO,"Crear lista oficial de fuentes rotas persistentes."
+F2_AGENT_D,DEPENDENCIA_DE_SOLAPAMIENTOS,"Muchos lotes tardíos se apoyan en cruces parciales entre lotes previos.",MEDIO,"Construir matriz de duplicados temáticos."
+F2_AGENT_D,INCONSISTENCIA_BRANCH,"Varias corridas asumieron main cuando el repo usa master.",BAJO,"Normalizar configuración de rama en automatizaciones."
