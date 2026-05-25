@@ -1,0 +1,61 @@
+{
+  "loteProcesado": "L059",
+  "fechaCierre": "2026-05-25",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/PEI, currículo oficial y Manual de Convivencia/",
+    "content/items/stand-by/Referentes PEI/",
+    "content/items/stand-by/Concepto y tipos de currículo/"
+  ],
+  "itemsLeidos": 10,
+  "itemsLeidosPorCarpeta": {
+    "PEI, currículo oficial y Manual de Convivencia": 3,
+    "Referentes PEI": 3,
+    "Concepto y tipos de currículo": 4
+  },
+  "itemsNoAuditadosProcesados": [
+    "CEOL_B05_I01",
+    "CEOL_B05_I02",
+    "CEOL_B05_I03",
+    "GA02_B05_I01",
+    "GA02_B05_I02",
+    "GA02_B05_I03",
+    "GA02_B05_I04"
+  ],
+  "itemsOmitidosPorAuditoriaPrevia": [
+    {"id_item": "CB08_I01", "lotePrevio": "L026"},
+    {"id_item": "CB08_I02", "lotePrevio": "L026"},
+    {"id_item": "CB08_I03", "lotePrevio": "L026"}
+  ],
+  "conteosDecision": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 0,
+    "DESCARTAR": 7,
+    "OMITIDO_POR_AUDITORIA_PREVIA": 3
+  },
+  "requiereRevisionHumana": 0,
+  "incidenciasGitHubFuente": [
+    "Los archivos de las carpetas nuevas fueron legibles en GitHub, pero su estructura respondía sobre todo a clasificación conceptual de currículo y jerarquías documentales, con baja exigencia de decisión institucional observable.",
+    "El clonado directo y las llamadas HTTP externas a GitHub no fueron viables en este entorno; la lectura se resolvió con el conector GitHub y apoyo puntual de la vista web para listar archivos.",
+    "No se encontró evidencia de que los ítems nuevos de PEI/currículo hubieran sido auditados antes en las rutas previas revisadas, por lo que se procesaron en L059."
+  ],
+  "fuentesInternasConsultadas": [
+    "content/restructuring-v1/trazabilidad/mapa-carpetas-stand-by.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L026/decisiones.csv",
+    "content/restructuring-v1/trazabilidad/lotes/L059/reporte-acumulado-instancia.md"
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L059/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L059/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L059/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L059/reporte-acumulado-instancia.md"
+  ],
+  "confirmacionRutasProtegidasNoModificadas": true,
+  "rutasProtegidasNoModificadas": [
+    "content/items/stand-by/",
+    "content/restructuring-v1/trazabilidad/trash.json",
+    "content/restructuring-v1/trazabilidad/bitácora-lotes.csv",
+    "content/restructuring-v1/trazabilidad/manifiesto-control.json",
+    "content/restructuring-v1/trazabilidad/mapa-carpetas-stand-by.csv"
+  ]
+}
