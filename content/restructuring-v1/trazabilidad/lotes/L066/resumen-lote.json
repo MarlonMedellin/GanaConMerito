@@ -1,0 +1,64 @@
+{
+  "loteProcesado": "L066",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/PEI, currículo oficial y Manual de Convivencia/",
+    "content/items/stand-by/Referentes PEI/",
+    "content/items/stand-by/Concepto y tipos de currículo/"
+  ],
+  "itemsLeidos": 10,
+  "itemsAuditadosEnL066": 10,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 2,
+    "LISTO_PARA_PILOTAJE": 0,
+    "DESCARTAR": 8
+  },
+  "requiereRevisionHumana": 0,
+  "solapamientosDetectados": {
+    "L026": [
+      "CB08_I01",
+      "CB08_I02",
+      "CB08_I03"
+    ],
+    "L032": [
+      "GA02_B05_I01",
+      "GA02_B05_I02",
+      "GA02_B05_I03",
+      "GA02_B05_I04"
+    ],
+    "L059": [
+      "CEOL_B05_I01",
+      "CEOL_B05_I02",
+      "CEOL_B05_I03",
+      "CB08_I01",
+      "CB08_I02",
+      "CB08_I03",
+      "GA02_B05_I01",
+      "GA02_B05_I02",
+      "GA02_B05_I03",
+      "GA02_B05_I04"
+    ]
+  },
+  "hallazgosClave": [
+    "El valor real del lote aparece solo cuando el PEI se usa para leer incoherencias institucionales y priorizar decisiones de gestión o planeación auténticas.",
+    "La carpeta de Referentes PEI conserva dos ítems sólidos porque sí exigen aplicación institucional real y coherencia PEI-práctica.",
+    "Las carpetas sobre relación PEI-currículo-manual y concepto/tipos de currículo colapsan casi por completo en memoria conceptual, taxonomía curricular plana o contextos decorativos."
+  ],
+  "incidenciasGithubOFuente": [
+    "Los archivos de salida de L066 no existían y devolvieron 404 antes de crearse.",
+    "Se detectaron solapamientos evidentes con lotes previos sobre PEI y currículo, pero el procesamiento continuó normalmente y quedó registrado en las salidas del lote.",
+    "No fue necesario modificar ni reabrir archivos originales del banco stand-by."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L066/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L066/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L066/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L066/reporte-acumulado-instancia.md"
+  ],
+  "confirmaciones": {
+    "noSeModificoContentItemsStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true,
+    "noSeModificaronOtrosLotes": true
+  }
+}
