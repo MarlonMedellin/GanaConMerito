@@ -1,0 +1,74 @@
+[
+  {
+    "id_item": "CEOL_B05_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/PEI, currículo oficial y Manual de Convivencia/CEOL_B05_I01.json",
+    "motivo": "Taxonomía curricular plana sin lectura institucional situada.",
+    "solapamiento_relacionado": "L059"
+  },
+  {
+    "id_item": "CEOL_B05_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/PEI, currículo oficial y Manual de Convivencia/CEOL_B05_I02.json",
+    "motivo": "Jerarquía documental preguntada como memoria conceptual con contexto decorativo.",
+    "solapamiento_relacionado": "L059"
+  },
+  {
+    "id_item": "CEOL_B05_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/PEI, currículo oficial y Manual de Convivencia/CEOL_B05_I03.json",
+    "motivo": "Relación PEI-currículo-manual convertida en taxonomía funcional memorística, sin decisión observable.",
+    "solapamiento_relacionado": "L059"
+  },
+  {
+    "id_item": "CB08_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Referentes PEI/CB08_I01.json",
+    "motivo": "Memoria conceptual sobre referentes del PEI sin lectura institucional situada.",
+    "solapamiento_relacionado": "L026"
+  },
+  {
+    "id_item": "CB08_I02",
+    "estado": "LISTO_PARA_BANCO",
+    "ruta_origen": "content/items/stand-by/Referentes PEI/CB08_I02.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/por_confirmar/funcional/CB08_I02.json",
+    "motivo": "Conserva valor auténtico porque obliga a leer un desajuste real entre misión institucional y práctica pedagógica o de convivencia.",
+    "solapamiento_relacionado": "L026"
+  },
+  {
+    "id_item": "CB08_I03",
+    "estado": "LISTO_PARA_BANCO",
+    "ruta_origen": "content/items/stand-by/Referentes PEI/CB08_I03.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/por_confirmar/funcional/CB08_I03.json",
+    "motivo": "Conserva valor auténtico porque fuerza priorización institucional desde diagnóstico, PMI y PEI.",
+    "solapamiento_relacionado": "L026"
+  },
+  {
+    "id_item": "GA02_B05_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Concepto y tipos de currículo/GA02_B05_I01_concepto_curriculo.json",
+    "motivo": "Definición legal de currículo sin aplicación institucional ni mediación docente observable.",
+    "solapamiento_relacionado": "L032"
+  },
+  {
+    "id_item": "GA02_B05_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Concepto y tipos de currículo/GA02_B05_I02_curriculo_oficial.json",
+    "motivo": "Reconocimiento doctrinal del currículo oficial sin tarea profesional auténtica.",
+    "solapamiento_relacionado": "L032"
+  },
+  {
+    "id_item": "GA02_B05_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Concepto y tipos de currículo/GA02_B05_I03_curriculo_oculto.json",
+    "motivo": "Nombrar currículo oculto como etiqueta no aporta lectura curricular situada ni toma de decisiones.",
+    "solapamiento_relacionado": "L032"
+  },
+  {
+    "id_item": "GA02_B05_I04",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Concepto y tipos de currículo/GA02_B05_I04_curriculo_nulo.json",
+    "motivo": "Identificación de currículo nulo por definición extensa sin valor docente auténtico.",
+    "solapamiento_relacionado": "L032"
+  }
+]
