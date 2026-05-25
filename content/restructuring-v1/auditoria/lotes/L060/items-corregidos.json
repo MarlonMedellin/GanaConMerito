@@ -1,0 +1,143 @@
+[
+  {
+    "id_item": "PPDC_B02_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "manejo del error",
+    "subtema": "retroalimentacion constructiva y clima afectivo",
+    "competencia": "mediacion docente del error conceptual",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la intervencion docente que transforma una confusion conceptual en oportunidad de aprendizaje sin deteriorar el clima de aula.",
+    "evidencia": "Distingue una mediacion que explora razonamiento y contrasta evidencias frente a salidas punitivas, evasivas o meramente transmisivas.",
+    "tarea": "Elegir la actuacion docente mas adecuada cuando un grupo confunde dos conceptos durante una actividad de ciencias.",
+    "contexto": "En ciencias, varios estudiantes confunden sistema solar con universo mientras elaboran una representacion grafica del tema.",
+    "enunciado": "Que intervencion del docente favorece mejor el aprendizaje conceptual y un clima afectivo de aula adecuado?",
+    "opciones": {
+      "A": "Señalar el error y ordenar copiar la definicion correcta para corregir rapidamente la actividad.",
+      "B": "No intervenir para no afectar la autoestima del grupo y seguir con la planeacion prevista.",
+      "C": "Explorar como estan entendiendo el concepto, contrastar sus ideas con evidencias y guiarlos a reorganizar la representacion.",
+      "D": "Asignar una nota baja al grupo para que estudie con mas cuidado en casa."
+    },
+    "clave": "C",
+    "justificacion_clave": "La opcion correcta usa el error como evidencia para indagar, contrastar y reconstruir el concepto, sin convertirlo en castigo ni en silencio pedagogico.",
+    "distractores_funcion": {
+      "A": "Modela correccion transmisiva que clausura la exploracion del razonamiento del estudiante.",
+      "B": "Modela omision docente que preserva la apariencia emocional pero bloquea el aprendizaje.",
+      "C": "Respuesta correcta porque integra indagacion, reconstruccion conceptual y cuidado del clima de aula.",
+      "D": "Modela uso punitivo de la evaluacion frente a un error de proceso."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El caso es comun, no depende de capital cultural extra y centra la decision en la mediacion docente."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea es unica y el lenguaje tecnico se mantiene controlado."
+    },
+    "metadata_editorial": {
+      "lote": "L060",
+      "ruta_origen": "content/items/stand-by/Manejo del error y clima afectivo/PPDC_B02_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/PPDC_B02_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "PPDC_B02_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "manejo del error y clima afectivo",
+    "subtema": "seguridad psicologica y reestructuracion del razonamiento",
+    "competencia": "intervencion docente ante burla y error en el aula",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la actuacion docente que detiene la burla y aprovecha el error para reconstruir el razonamiento del estudiante.",
+    "evidencia": "Distingue una mediacion que protege el clima afectivo y usa preguntas de clarificacion frente a respuestas punitivas, evasivas o humillantes.",
+    "tarea": "Elegir la mejor intervencion cuando un estudiante se equivoca y el grupo se burla de su respuesta.",
+    "contexto": "Durante una actividad de aula, un estudiante responde de forma incorrecta y algunos compañeros se rién de el frente al grupo.",
+    "enunciado": "Cual actuacion docente es la mas adecuada desde una perspectiva de manejo del error y clima afectivo?",
+    "opciones": {
+      "A": "Regañar a quienes se burlan y continuar la clase sin volver sobre la respuesta equivocada.",
+      "B": "Detener la burla, pedir al estudiante que explique su razonamiento e intervenir con preguntas o ejemplos para reconstruir la idea.",
+      "C": "Omitir la respuesta para evitar mas exposicion y dar la palabra a otro estudiante.",
+      "D": "Calificar negativamente la participacion para que el grupo se prepare mejor."
+    },
+    "clave": "B",
+    "justificacion_clave": "La respuesta correcta restaura la seguridad psicologica y a la vez convierte la equivocacion en evidencia de aprendizaje que puede trabajarse con mediacion docente.",
+    "distractores_funcion": {
+      "A": "Modela correccion incompleta: atiende la conducta de burla pero desaprovecha el error como insumo pedagogico.",
+      "B": "Respuesta correcta porque protege al estudiante y promueve reconstruccion del razonamiento.",
+      "C": "Modela silenciamiento del error y refuerza la idea de que equivocarse debe ocultarse.",
+      "D": "Modela castigo evaluativo que deteriora participacion y confianza."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El item protege la dignidad del estudiante y evalua una respuesta profesional generalizable."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Se simplifico la redaccion para que la demanda este en la decision y no en el volumen verbal."
+    },
+    "metadata_editorial": {
+      "lote": "L060",
+      "ruta_origen": "content/items/stand-by/Manejo del error y clima afectivo/PPDC_B02_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/PPDC_B02_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CB05_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Comunicación asertiva/CB05_I01.json",
+    "motivo": "La clave es demasiado visible por superioridad moral y las opciones incorrectas no compiten como errores profesionales plausibles.",
+    "lote": "L060"
+  },
+  {
+    "id_item": "CB05_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Comunicación asertiva/CB05_I02.json",
+    "motivo": "Escenario potencialmente util, pero la respuesta correcta destaca por tono virtuoso mientras las demas alternativas son caricaturescas.",
+    "lote": "L060"
+  },
+  {
+    "id_item": "CB05_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Comunicación asertiva/CB05_I03.json",
+    "motivo": "Se resuelve por adhesion restaurativa obvia y las opciones incorrectas quedan demasiado punitivas o procedimentales.",
+    "lote": "L060"
+  },
+  {
+    "id_item": "IDD_B01_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Sesgos culturales, lenguaje inclusivo y discriminación cotidiana/IDD_B01_I01.json",
+    "motivo": "Pregunta de identificacion de sesgo con distractores extremados y baja discriminacion psicometrica real.",
+    "lote": "L060"
+  },
+  {
+    "id_item": "IDD_B01_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Sesgos culturales, lenguaje inclusivo y discriminación cotidiana/IDD_B01_I02.json",
+    "motivo": "La mejor intervencion es demasiado evidente y las alternativas restantes caen en omision o pseudoempatia punitiva.",
+    "lote": "L060"
+  },
+  {
+    "id_item": "IDD_B01_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Sesgos culturales, lenguaje inclusivo y discriminación cotidiana/IDD_B01_I03.json",
+    "motivo": "Predomina la adhesión discursiva a lenguaje de derechos; la tarea se resuelve por vocabulario normativo y no por juicio pedagógico fino.",
+    "lote": "L060"
+  },
+  {
+    "id_item": "IDD_B01_I04",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Sesgos culturales, lenguaje inclusivo y discriminación cotidiana/IDD_B01_I04.json",
+    "motivo": "La clave conceptual del conflicto cognitivo es visible y los distractores no modelan errores docentes suficientemente plausibles.",
+    "lote": "L060"
+  }
+]
