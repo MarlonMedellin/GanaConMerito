@@ -1,0 +1,56 @@
+[
+  {
+    "id_item": "PPDC_B05_I01",
+    "estado": "LISTO_PARA_BANCO",
+    "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico en educación primaria/PPDC_B05_I01.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/basica_primaria/funcional/PPDC_B05_I01.json",
+    "motivo": "Se conserva porque convierte el diagnóstico en decisión docente concreta para flexibilizar la planeación en primaria.",
+    "referencia_auditoria_previa": "content/restructuring-v1/trazabilidad/lotes/L011/decisiones.csv"
+  },
+  {
+    "id_item": "EFCC_B05_I01",
+    "estado": "LISTO_PARA_BANCO",
+    "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico integral/EFCC_B05_I01.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/EFCC_B05_I01.json",
+    "motivo": "Se conserva porque el diagnóstico integral se traduce en planeación y apoyos observables.",
+    "referencia_auditoria_previa": "content/restructuring-v1/trazabilidad/lotes/L011/decisiones.csv"
+  },
+  {
+    "id_item": "IDD_B14_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/IDD_B14_I01.json",
+    "motivo": "Generalidad pedagógica sin decisión auténtica ni evidencia de uso real del diagnóstico.",
+    "referencia_auditoria_previa": "content/restructuring-v1/trazabilidad/lotes/L011/decisiones.csv"
+  },
+  {
+    "id_item": "IDD_B14_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/IDD_B14_I02.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B14_I02.json",
+    "motivo": "Se conserva por su núcleo valioso sobre saberes previos y evaluación formativa, aunque todavía con clave demasiado visible.",
+    "referencia_auditoria_previa": "content/restructuring-v1/trazabilidad/lotes/L011/decisiones.csv"
+  },
+  {
+    "id_item": "IDD_B14_I03",
+    "estado": "LISTO_PARA_BANCO",
+    "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/IDD_B14_I03.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B14_I03.json",
+    "motivo": "Se conserva porque mide evaluación formativa observable sobre evidencias y ajustes didácticos.",
+    "referencia_auditoria_previa": "content/restructuring-v1/trazabilidad/lotes/L011/decisiones.csv"
+  },
+  {
+    "id_item": "IDD_B14_I04",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/IDD_B14_I04.json",
+    "motivo": "Pseudoanálisis basado en listado de componentes sin toma de decisiones pedagógicas real.",
+    "referencia_auditoria_previa": "content/restructuring-v1/trazabilidad/lotes/L011/decisiones.csv"
+  },
+  {
+    "id_item": "IDD_B14_I05",
+    "estado": "LISTO_PARA_BANCO",
+    "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/IDD_B14_I05.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B14_I05.json",
+    "motivo": "Se conserva por su uso auténtico de información diagnóstica para planear apoyos y accesibilidad sin perder propósito común.",
+    "referencia_auditoria_previa": "content/restructuring-v1/trazabilidad/lotes/L011/decisiones.csv"
+  }
+]
