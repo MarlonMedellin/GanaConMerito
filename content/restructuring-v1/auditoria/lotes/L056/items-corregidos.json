@@ -1,0 +1,48 @@
+[
+  {
+    "id_item": "CEOL_B02_I07",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "Normatividad",
+    "tema": "Enfoque de derechos, debido proceso y justicia restaurativa",
+    "subtema": "Respuesta institucional proporcional ante agresión verbal",
+    "competencia": "Evalúa actuaciones escolares que integran debido proceso, proporcionalidad disciplinaria y enfoque restaurativo ante conflictos de convivencia.",
+    "nivel_cognitivo": "JUICIO",
+    "dificultad_estimada": "MEDIA",
+    "claim": "El evaluado distingue una respuesta institucional que protege garantías, documenta el caso y promueve reparación sin caer en castigo automático ni minimización del conflicto.",
+    "evidencia": "Selecciona la secuencia de actuación que escucha a las partes, permite descargos, documenta hechos, define una medida proporcional y acuerda acciones restaurativas con seguimiento.",
+    "tarea": "Analizar un caso de agresión verbal entre estudiantes y elegir la respuesta técnicamente más adecuada desde el debido proceso y la justicia restaurativa.",
+    "contexto": "Tras una agresión verbal entre estudiantes, el comité de convivencia debe definir la respuesta institucional. El equipo busca evitar tanto la sanción inmediata sin garantías como la banalización del caso mediante acuerdos informales sin seguimiento.",
+    "enunciado": "¿Qué actuación resulta más adecuada en esta situación?",
+    "opciones": {
+      "A": "Escuchar a las partes por separado y en conjunto, dejar registro del caso, permitir descargos, definir una medida proporcional y acordar acciones de reparación y seguimiento.",
+      "B": "Realizar una mediación inmediata entre las partes y cerrar el caso sin registro formal, para privilegiar la reconciliación y evitar estigmatización institucional.",
+      "C": "Imponer una suspensión ejemplar al estudiante que inició la agresión, porque la rapidez de la respuesta disciplinaria evita la repetición de la conducta.",
+      "D": "Aplicar la misma consecuencia a ambos estudiantes para evitar discusiones sobre responsabilidades y garantizar un trato institucional neutral."
+    },
+    "clave": "A",
+    "justificacion_clave": "La opción A es la más sólida porque combina garantías procedimentales, documentación, proporcionalidad y reparación. No renuncia al enfoque restaurativo, pero tampoco elimina la trazabilidad ni el análisis individual de responsabilidades.",
+    "distractores_funcion": {
+      "A": "Clave correcta. Integra debido proceso, proporcionalidad y acciones restaurativas con seguimiento.",
+      "B": "Modela el error de confundir justicia restaurativa con cierre informal del caso, sin trazabilidad ni valoración suficiente de garantías y responsabilidades.",
+      "C": "Representa una respuesta punitiva acelerada que privilegia el ejemplarismo sobre la escucha, el análisis del caso y la proporcionalidad disciplinaria.",
+      "D": "Modela una falsa neutralidad: iguala consecuencias sin reconstruir hechos ni ponderar la responsabilidad de cada parte."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El contexto es escolar general, no depende de identidades sensibles particulares y centra la decisión en el procedimiento institucional más que en atributos de los estudiantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El enunciado plantea una sola tarea y las alternativas se mantienen en el mismo universo semántico de respuesta institucional."
+    },
+    "metadata_editorial": {
+      "lote": "L056",
+      "ruta_origen": "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/CEOL_B02_I07.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/coordinador/funcional/CEOL_B02_I07.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  }
+]
