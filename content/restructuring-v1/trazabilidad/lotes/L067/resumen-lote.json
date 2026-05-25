@@ -1,0 +1,33 @@
+{
+  "lote": "L067",
+  "fechaCierre": "2026-05-25",
+  "repositorio": "https://github.com/ProfeMarlonMDE/GanaConMerito",
+  "carpetasProcesadas": [
+    "content/items/stand-by/Participación infantil, agencia y Convención sobre los Derechos del Niño/",
+    "content/items/stand-by/Igualdad material, discriminación positiva y debilidad manifiesta/",
+    "content/items/stand-by/Inclusión práctica vs. segregación en aula/"
+  ],
+  "sublotesInternos": [],
+  "itemsLeidos": 13,
+  "itemsOmitidosPorAuditoriaPrevia": [],
+  "solapamientosEvidentes": [
+    "Los ítems de igualdad material e inclusión práctica se superponen temáticamente con el núcleo ya trabajado de ajustes razonables e inclusión aplicada, pero en este lote se auditaron por su formulación concreta sin bloquear el flujo.",
+    "Los ítems sobre participación infantil y agencia comparten territorio con ciudadanía escolar y enfoque de derechos, aunque aquí se priorizó su valor como mediación pedagógica observable."
+  ],
+  "conteosDecision": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 9,
+    "DESCARTAR": 4
+  },
+  "requiereRevisionHumana": 0,
+  "incidenciasGithubFuente": [
+    "La lectura operativa se hizo íntegramente con GitHub directo. No se usó /workspace como fuente del repositorio."
+  ],
+  "archivosGenerados": [
+    "content/restructuring-v1/trazabilidad/lotes/L067/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L067/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L067/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L067/reporte-acumulado-instancia.md"
+  ],
+  "rutasProtegidasNoModificadas": true
+}
