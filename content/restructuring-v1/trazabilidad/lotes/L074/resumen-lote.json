@@ -1,0 +1,60 @@
+{
+  "loteProcesado": "L074",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Diagnóstico pedagógico integral/",
+    "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/",
+    "content/items/stand-by/Evaluación cualitativa, formativa y participativa/"
+  ],
+  "itemsLeidos": 10,
+  "itemsAuditadosEnL074": 10,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 7,
+    "LISTO_PARA_PILOTAJE": 0,
+    "DESCARTAR": 3
+  },
+  "requiereRevisionHumana": 8,
+  "solapamientosDetectados": [
+    {
+      "loteRelacionado": "L011",
+      "items": ["EFCC_B05_I01"]
+    },
+    {
+      "loteRelacionado": "L015",
+      "items": [
+        "CEOL_B06_I01",
+        "CEOL_B06_I02",
+        "CEOL_B06_I03",
+        "CEOL_B06_I04",
+        "EFCC_B06_I01",
+        "EFCC_B06_I02",
+        "EFCC_B06_I03",
+        "EFCC_B06_I04",
+        "EFCC_B06_I05"
+      ]
+    }
+  ],
+  "hallazgosClave": [
+    "El lote aporta valor cuando la evaluación formativa se convierte en lectura de evidencia y ajuste pedagógico observable.",
+    "Los ítems más sólidos son los que vinculan diagnóstico, seguimiento y decisión docente concreta sobre apoyos, mediación o retroalimentación.",
+    "Los descartes corresponden a pseudoformatividad, definiciones generales o contextos decorativos sin mejora auténtica del aprendizaje."
+  ],
+  "incidenciasGithubOFuente": [
+    "Los cuatro archivos de salida de L074 no existían y devolvieron 404 antes de su creación.",
+    "El inventario del lote se confirmó por cruce entre búsquedas de carpetas y decisiones previas ya visibles en L011 y L015.",
+    "La primera escritura falló porque el repositorio usa la rama master y no main; luego se corrigió la rama de destino.",
+    "Se documentaron coincidencias con lotes anteriores sin detener el procesamiento ni modificar archivos fuera de L074."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L074/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L074/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L074/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L074/reporte-acumulado-instancia.md"
+  ],
+  "confirmaciones": {
+    "noSeModificoContentItemsStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true,
+    "noSeModificaronOtrosLotes": true
+  }
+}
