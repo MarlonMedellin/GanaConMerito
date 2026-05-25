@@ -1,0 +1,92 @@
+[
+  {
+    "lote": "L075",
+    "id_item": "GA02_B08",
+    "ruta_origen": "content/items/stand-by/Normatividad y fines de la educación/GA02_B08.json",
+    "decision": "DESCARTAR",
+    "requiere_revision_humana": true,
+    "motivo_dominante": "incidencia_de_fuente",
+    "hallazgo": "El archivo aparece en el árbol GitHub, pero su ruta de contenido devuelve 404 y no permite lectura verificable del ítem.",
+    "accion_sugerida": "Excluir del flujo hasta reconstruir o restaurar el archivo fuente legible."
+  },
+  {
+    "lote": "L075",
+    "id_item": "NFL_B07_I01",
+    "ruta_origen": "content/items/stand-by/Educación como derecho fundamental, bien común y derecho pluridimensional/NFL_B07_I01.json",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": true,
+    "motivo_dominante": "aplicacion_situada_con_clave_visible",
+    "hallazgo": "Tiene anclaje institucional útil y enfoque de derechos operativo, pero la clave sobresale demasiado sobre distractores doctrinales.",
+    "accion_sugerida": "Pilotear y revisar competencia real de distractores."
+  },
+  {
+    "lote": "L075",
+    "id_item": "NFL_B07_I02",
+    "ruta_origen": "content/items/stand-by/Educación como derecho fundamental, bien común y derecho pluridimensional/NFL_B07_I02.json",
+    "decision": "DESCARTAR",
+    "requiere_revision_humana": false,
+    "motivo_dominante": "clasificacion_doctrinal",
+    "hallazgo": "La tarea es principalmente conceptual y jurídica, con pseudoaplicación insuficiente para medir actuación profesional.",
+    "accion_sugerida": "Descartar."
+  },
+  {
+    "lote": "L075",
+    "id_item": "NFL_B07_I03",
+    "ruta_origen": "content/items/stand-by/Educación como derecho fundamental, bien común y derecho pluridimensional/NFL_B07_I03.json",
+    "decision": "DESCARTAR",
+    "requiere_revision_humana": false,
+    "motivo_dominante": "doctrina_plana",
+    "hallazgo": "Se resuelve por adhesión a formulaciones generales sobre bien común y función social, no por interpretación profesional auténtica.",
+    "accion_sugerida": "Descartar."
+  },
+  {
+    "lote": "L075",
+    "id_item": "NFL_B07_I04",
+    "ruta_origen": "content/items/stand-by/Educación como derecho fundamental, bien común y derecho pluridimensional/NFL_B07_I04.json",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": true,
+    "motivo_dominante": "respuesta_escolar_observable",
+    "hallazgo": "El caso exige una actuación institucional para remover barreras, pero la opción correcta sigue siendo la más completa de forma demasiado visible.",
+    "accion_sugerida": "Pilotear antes de banco."
+  },
+  {
+    "lote": "L075",
+    "id_item": "CB14_I01",
+    "ruta_origen": "content/items/stand-by/Propósitos de la educación/CB14_I01.json",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": true,
+    "motivo_dominante": "situacion_util_con_distractores_ideologizados",
+    "hallazgo": "Hay contexto institucional real, pero los distractores resultan demasiado extremados y la clave emerge por amplitud valorativa.",
+    "accion_sugerida": "Pilotear y endurecer distractores si se reescribe."
+  },
+  {
+    "lote": "L075",
+    "id_item": "CB14_I02",
+    "ruta_origen": "content/items/stand-by/Propósitos de la educación/CB14_I02.json",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": true,
+    "motivo_dominante": "interpretacion_profesional_parcial",
+    "hallazgo": "La postura correcta es defendible, pero el ítem sigue muy apoyado en formulaciones normativas generales y en una clave dominante.",
+    "accion_sugerida": "Pilotear."
+  },
+  {
+    "lote": "L075",
+    "id_item": "CB14_I03",
+    "ruta_origen": "content/items/stand-by/Propósitos de la educación/CB14_I03.json",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false,
+    "motivo_dominante": "decision_pedagogica_situada",
+    "hallazgo": "Convierte los propósitos educativos en una actuación didáctica concreta, con vínculo comunitario y evidencia observable de criterio profesional.",
+    "accion_sugerida": "Conservar para banco."
+  },
+  {
+    "lote": "L075",
+    "id_item": "CB14_I04",
+    "ruta_origen": "content/items/stand-by/Propósitos de la educación/CB14_I04.json",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": true,
+    "motivo_dominante": "anclaje_institucional_con_obviedad_de_clave",
+    "hallazgo": "El debate sobre SIEE aporta aplicación institucional genuina, pero la opción correcta domina por formulación más integradora que sus competidoras.",
+    "accion_sugerida": "Pilotear."
+  }
+]
