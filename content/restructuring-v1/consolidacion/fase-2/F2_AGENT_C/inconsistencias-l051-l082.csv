@@ -1,0 +1,8 @@
+agente,rango,tipo_inconsistencia,lote,detalle,prioridad,accion_sugerida
+F2_AGENT_C,L051-L082,FUENTE_INCONSISTENTE,L056,"L048/decisiones.csv no recuperable durante validación cruzada.",MEDIA,"Revalidar consolidado de L048."
+F2_AGENT_C,L051-L082,FUENTE_INCONSISTENTE,L063,"GA02_B08 visible en árbol pero no recuperable.",MEDIA,"Marcar fuente rota persistente."
+F2_AGENT_C,L051-L082,SOLAPAMIENTO_INTENSO,L066,"Solapamientos fuertes con L026, L032 y L059.",BAJA,"Documentar deduplicación futura."
+F2_AGENT_C,L051-L082,SOLAPAMIENTO_INTENSO,L067,"Cruces fuertes con L019, L020, L042 y L055.",BAJA,"Usar en matriz de deduplicación temática."
+F2_AGENT_C,L051-L082,SOLAPAMIENTO_INTENSO,L068,"Cruces fuertes con L013, L027, L045 y L064.",BAJA,"Usar en matriz de deduplicación temática."
+F2_AGENT_C,L051-L082,SOLAPAMIENTO_INTENSO,L070,"Cruces fuertes con L033 y L055.",BAJA,"Usar en matriz de deduplicación temática."
+F2_AGENT_C,L051-L082,VALIDACION_PENDIENTE,L082,"El cierre fue reportado consistente pero fetch_file devolvió 404 durante consolidación.",ALTA,"Verificar físicamente las cuatro salidas antes de remediación masiva."
