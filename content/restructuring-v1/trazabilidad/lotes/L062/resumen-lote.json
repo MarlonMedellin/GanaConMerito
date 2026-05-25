@@ -1,0 +1,57 @@
+{
+  "loteProcesado": "L062",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Diagnóstico pedagógico integral/",
+    "content/items/stand-by/Diagnóstico pedagógico en educación primaria/",
+    "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/"
+  ],
+  "itemsLeidos": 7,
+  "itemsAuditadosEnL062": 7,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 4,
+    "LISTO_PARA_PILOTAJE": 1,
+    "DESCARTAR": 2
+  },
+  "requiereRevisionHumana": 5,
+  "referenciasAuditoriaPrevias": {
+    "L011": [
+      "PPDC_B05_I01",
+      "EFCC_B05_I01",
+      "IDD_B14_I01",
+      "IDD_B14_I02",
+      "IDD_B14_I03",
+      "IDD_B14_I04",
+      "IDD_B14_I05"
+    ],
+    "L051": [
+      "IDD_B14_I01",
+      "IDD_B14_I02",
+      "IDD_B14_I03",
+      "IDD_B14_I04",
+      "IDD_B14_I05"
+    ]
+  },
+  "hallazgosClave": [
+    "El lote ya tenía una auditoría previa sólida sobre diagnóstico accionable, saberes previos reales y evaluación formativa observable.",
+    "Los ítems conservados para banco sí convierten la información diagnóstica en decisiones pedagógicas sobre planeación, apoyos, retroalimentación y ajustes didácticos.",
+    "Los descartes se mantienen donde el diagnóstico se vuelve generalidad pedagógica o listado de componentes sin tarea auténtica."
+  ],
+  "incidenciasGithubOFuente": [
+    "Los archivos de salida de L062 no existían y devolvieron 404 antes de crearse.",
+    "El inventario del lote coincidió exactamente con la auditoría previa de L011 y su posterior consolidación en L051.",
+    "No fue necesario modificar ni reabrir archivos originales del banco stand-by."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L062/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L062/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L062/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L062/reporte-acumulado-instancia.md"
+  ],
+  "confirmaciones": {
+    "noSeModificoContentItemsStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true,
+    "noSeModificaronOtrosLotes": true
+  }
+}
