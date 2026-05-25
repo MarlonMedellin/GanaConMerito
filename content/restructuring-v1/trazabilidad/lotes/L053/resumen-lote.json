@@ -1,0 +1,66 @@
+{
+  "lote": "L053",
+  "repositorio": "ProfeMarlonMDE/GanaConMerito",
+  "rama": "master",
+  "fecha_revision": "2026-05-24",
+  "carpetas_procesadas": [
+    "content/items/stand-by/Mecanismos de participación ciudadana: plebiscito, consulta y límites/",
+    "content/items/stand-by/Participación infantil, agencia y Convención sobre los Derechos del Niño/",
+    "content/items/stand-by/Corresponsabilidad, protección integral y sujetos de derechos/"
+  ],
+  "instruccion_especial_aplicada": [
+    "Se revisaron decisiones previas de L022, L024, L029 y L042.",
+    "Se verificó por búsqueda de rutas que los ítems fuente existen en las carpetas asignadas.",
+    "No se reprocesaron ítems con auditoría previa."
+  ],
+  "sublotes_internos": [],
+  "totales": {
+    "items_leidos": 13,
+    "items_nuevos_procesados": 0,
+    "items_omitidos_por_auditoria_previa": 13,
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 0,
+    "DESCARTAR": 0,
+    "OMITIDO_POR_AUDITORIA_PREVIA": 13,
+    "requiere_revision_humana": 0
+  },
+  "desglose_por_carpeta": [
+    {
+      "carpeta": "content/items/stand-by/Mecanismos de participación ciudadana: plebiscito, consulta y límites/",
+      "items_leidos": 4,
+      "omitidos_por_auditoria_previa": 4,
+      "auditoria_previa": "L022"
+    },
+    {
+      "carpeta": "content/items/stand-by/Participación infantil, agencia y Convención sobre los Derechos del Niño/",
+      "items_leidos": 4,
+      "omitidos_por_auditoria_previa": 4,
+      "auditorias_previas": ["L024", "L042"]
+    },
+    {
+      "carpeta": "content/items/stand-by/Corresponsabilidad, protección integral y sujetos de derechos/",
+      "items_leidos": 5,
+      "omitidos_por_auditoria_previa": 5,
+      "auditoria_previa": "L029"
+    }
+  ],
+  "hallazgo_central": "L053 funcionó como lote de control de solapamientos. No había ítems nuevos: mecanismos de participación ciudadana ya estaba auditado en L022; participación infantil, agencia y Convención sobre los Derechos del Niño ya estaba auditado en L024 y omitido en L042; corresponsabilidad, protección integral y sujetos de derechos ya estaba auditado en L029.",
+  "incidencias_github_fuente": [
+    "No existían salidas previas de L053 al consultar resumen-lote.json en master.",
+    "La búsqueda directa confirmó presencia de DIL_B07_I01 a DIL_B07_I04, DIL_B06_I01 a DIL_B06_I04 y DIL_B01_I01 a DIL_B01_I05 en las carpetas asignadas.",
+    "No hubo ítems nuevos que requirieran auditoría psicométrica de contenido."
+  ],
+  "archivos_escritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L053/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L053/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L053/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L053/reporte-acumulado-instancia.md"
+  ],
+  "confirmaciones": {
+    "content_items_stand_by_modificado": false,
+    "trash_json_modificado": false,
+    "bitacoras_globales_modificadas": false,
+    "otros_lotes_modificados": false,
+    "trabajo_autocontenido_en_L053": true
+  }
+}
