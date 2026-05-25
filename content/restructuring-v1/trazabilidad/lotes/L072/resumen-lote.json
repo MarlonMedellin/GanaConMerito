@@ -1,0 +1,71 @@
+{
+  "lote": "L072",
+  "repository": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaAuditoria": "2026-05-25",
+  "decisionGlobalLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Aptitud verbal y organización textual/",
+    "content/items/stand-by/Comunicación asertiva/",
+    "content/items/stand-by/Habilidades blandas y duras/"
+  ],
+  "totalItemsDetectados": 13,
+  "totalItemsLeidos": 13,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 8,
+    "LISTO_PARA_PILOTAJE": 0,
+    "DESCARTAR": 5
+  },
+  "conteoRequiereRevisionHumana": 0,
+  "observacionesOperativasDeSolapamiento": [
+    "La carpeta de Habilidades blandas y duras contiene ítems ya vistos en otros contextos del repositorio, pero en este lote se procesaron normalmente según la instrucción recibida."
+  ],
+  "fuentesConsultadas": [
+    "content/items/stand-by/Aptitud verbal y organización textual/IDD_B17_I01.json",
+    "content/items/stand-by/Aptitud verbal y organización textual/IDD_B17_I02.json",
+    "content/items/stand-by/Aptitud verbal y organización textual/IDD_B17_I03.json",
+    "content/items/stand-by/Aptitud verbal y organización textual/IDD_B17_I04.json",
+    "content/items/stand-by/Aptitud verbal y organización textual/IDD_B17_I05.json",
+    "content/items/stand-by/Comunicación asertiva/CB05_I01.json",
+    "content/items/stand-by/Comunicación asertiva/CB05_I02.json",
+    "content/items/stand-by/Comunicación asertiva/CB05_I03.json",
+    "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I06.json",
+    "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I07.json",
+    "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I08.json",
+    "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I09.json",
+    "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I13.json"
+  ],
+  "hallazgosPrincipales": [
+    "La carpeta de Aptitud verbal y organización textual no evalúa interacción profesional observable ni criterio profesional real; todos sus ítems son ejercicios de ordenación textual mecánica.",
+    "Comunicación asertiva muestra tres ítems bien situados con conflictos y respuestas profesionales observables, sin pseudoempatía dominante.",
+    "Habilidades blandas y duras aporta cinco ítems defendibles porque plantean actuación auténtica frente a familias, colegas, aula y convivencia.",
+    "El lote gana valor cuando pasa de mecanismos verbales abstractos a juicios profesionales en contexto educativo real."
+  ],
+  "problemasSistemicos": [
+    "Presencia de mecanicismo verbal puro en toda la carpeta de aptitud verbal.",
+    "Algunos ítems situacionales aún tienen distractores algo contrastados, pero conservan suficiente plausibilidad para banco en comparación con el resto del lote.",
+    "Existe heterogeneidad fuerte entre carpetas: una mide destrezas textuales descontextualizadas y las otras dos juicio profesional situado."
+  ],
+  "riesgosBanco": [
+    "Mantener la carpeta de aptitud verbal en este lote degradaría la coherencia del banco si el propósito es medir actuación profesional observable.",
+    "Los ítems conservados deben mantenerse asociados a competencias comportamentales y comunicativas, no mezclarse con lectura mecánica o secuenciación textual."
+  ],
+  "incidenciasGithubOFuente": [
+    "Las salidas de L072 no existían y se crearon en este ciclo.",
+    "No fue necesario modificar fuentes originales; la auditoría se resolvió leyendo directamente los ítems del lote en GitHub."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L072/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L072/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L072/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L072/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "noSeModificoStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true,
+    "noSeModificaronOtrosLotes": true
+  }
+}
