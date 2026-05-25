@@ -1,0 +1,68 @@
+{
+  "lote": "L081",
+  "repository": "ProfeMarlonMDE/GanaConMerito",
+  "branch": "master",
+  "fechaAuditoria": "2026-05-24",
+  "decisionGlobalLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Autonomía escolar, religión, colegios privados y equidad/",
+    "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/",
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/"
+  ],
+  "totalItemsDetectados": 12,
+  "totalItemsLeidos": 12,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 4,
+    "LISTO_PARA_PILOTAJE": 3,
+    "DESCARTAR": 5
+  },
+  "conteoRequiereRevisionHumana": 3,
+  "observacionesOperativasDeSolapamiento": [
+    "Hay cercanía temática clara con L035 en autonomía escolar y con L068 en convivencia, rutas y responsabilidad legal; en L081 se procesó normalmente sin depender de esos dictámenes previos.",
+    "La coincidencia más fuerte se da en la carpeta del Sistema Nacional de Convivencia Escolar, donde se confirma otra vez que varios ítems siguen siendo demasiado taxonómicos."
+  ],
+  "fuentesConsultadas": [
+    "content/items/stand-by/Autonomía escolar, religión, colegios privados y equidad/IDD_B16_I01.json",
+    "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/CEOL_B01_I01.json",
+    "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/CEOL_B01_I02.json",
+    "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/CEOL_B01_I03.json",
+    "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/CEOL_B01_I04.json",
+    "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/CEOL_B01_I05.json",
+    "content/items/stand-by/Sistema Nacional de Convivencia Escolar, Ruta de Atención y tipificación de situaciones/CEOL_B01_I06.json",
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I01.json",
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I02.json",
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I03.json",
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I04.json",
+    "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I05.json"
+  ],
+  "hallazgosPrincipales": [
+    "El mayor valor del lote está en los casos que exigen activación correcta de rutas, reserva institucional, proporcionalidad y libertad de conciencia aplicada.",
+    "La carpeta del Sistema Nacional de Convivencia Escolar mezcla dos ítems útiles para pilotaje con cuatro piezas descartables por memoria legal, taxonomía normativa o jerarquía documental.",
+    "Responsabilidad legal escolar aporta tres ítems fuertes para banco cuando la tarea se centra en protección integral, debido proceso y medidas restaurativas no degradantes."
+  ],
+  "problemasSistemicos": [
+    "Persisten distractores caricaturescos en varios ítems de convivencia y protección, lo que vuelve la clave demasiado transparente.",
+    "Parte del material sigue confundiendo comprensión jurídica básica con medición de criterio profesional situado.",
+    "La taxonomía normativa sigue ocupando demasiado espacio en ítems que deberían medir actuación institucional observable."
+  ],
+  "riesgosBanco": [
+    "Si los ítems de pilotaje entran directo al banco, la discriminación puede quedar inflada por obviedad de clave y no por juicio profesional real.",
+    "Los ítems descartados de convivencia pueden inducir aprendizaje de listados y nomenclaturas más que criterio de ruta o debido proceso."
+  ],
+  "incidenciasGithubOFuente": [],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L081/reporte-procesos-anteriores.md",
+    "content/restructuring-v1/trazabilidad/lotes/L081/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L081/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L081/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L081/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "noSeModificoStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true,
+    "noSeModificaronOtrosLotes": true
+  }
+}
