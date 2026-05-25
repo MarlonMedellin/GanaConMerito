@@ -1,0 +1,207 @@
+[
+  {
+    "id_item": "IDD_B13_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Evaluación colaborativa, coevaluación y metacognición/IDD_B13_I02.json",
+    "motivo": "El item se resuelve por reconocimiento directo de la bitacora reflexiva como herramienta de metacognicion. No exige analizar evidencia ni comparar errores docentes plausibles, y los distractores son demasiado obvios.",
+    "lote": "L073"
+  },
+  {
+    "id_item": "IDD_B13_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Evaluación colaborativa, coevaluación y metacognición",
+    "subtema": "Coevaluacion formativa con criterios",
+    "competencia": "Diseña situaciones de coevaluacion guiadas por criterios explicitos y retroalimentacion respetuosa para mejorar la calidad de los productos entre pares.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la estructura de coevaluacion que convierte la valoracion entre pares en una experiencia formativa y no en intercambio subjetivo de notas.",
+    "evidencia": "Selecciona una alternativa con criterios visibles de desempeno, pautas de retroalimentacion y mediacion docente para regular la interaccion entre estudiantes.",
+    "tarea": "Elegir la mejor estructura de sesion para una coevaluacion de borradores de ensayo.",
+    "contexto": "En clase de lenguaje, el grupo va a coevaluar borradores de ensayo. En experiencias anteriores, la valoracion entre pares se redujo a notas por afinidad o comentarios despectivos sin justificacion pedagogica.",
+    "enunciado": "Para convertir la coevaluacion en una practica realmente formativa, el docente debe estructurar la sesion:",
+    "opciones": {
+      "A": "Con una guia de coevaluacion basada en criterios explicitos de calidad y con entrenamiento previo en retroalimentacion descriptiva y lenguaje propositivo.",
+      "B": "De manera anonima y secreta, evitando toda conversacion entre pares para que no surjan desacuerdos en el aula.",
+      "C": "Delegando la valoracion en los estudiantes con mejor rendimiento del periodo anterior para garantizar mayor objetividad.",
+      "D": "Exponiendo publicamente los errores de cada borrador ante todo el curso para corregirlos de una vez."
+    },
+    "clave": "A",
+    "justificacion_clave": "La respuesta correcta es A porque la coevaluacion formativa requiere criterios compartidos, lenguaje descriptivo y mediacion docente para que la valoracion entre pares produzca aprendizaje, regulacion y mejora del trabajo.",
+    "distractores_funcion": {
+      "A": "Clave correcta: integra criterios, retroalimentacion y mediacion observable.",
+      "B": "Confunde control del conflicto con anulacion del dialogo pedagogico entre pares.",
+      "C": "Reduce la coevaluacion a un privilegio elitista y priva al grupo de aprender a evaluar.",
+      "D": "Expone el error de manera humillante y rompe el clima de confianza requerido para una revision formativa."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Escenario comun de aula, sin barreras culturales irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Una sola tarea y opciones semanticas comparables."
+    },
+    "metadata_editorial": {
+      "lote": "L073",
+      "ruta_origen": "content/items/stand-by/Evaluación colaborativa, coevaluación y metacognición/IDD_B13_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B13_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CEOL_B06_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/CEOL_B06_I01.json",
+    "motivo": "Formula la evaluacion formativa como definicion correcta frente a distractores muy previsibles. No pide usar evidencia, ni retroalimentacion, ni reajuste didactico en una situacion profesional concreta.",
+    "lote": "L073"
+  },
+  {
+    "id_item": "CEOL_B06_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/CEOL_B06_I02.json",
+    "motivo": "Se limita a preguntar el objetivo general de evaluar por competencias. La clave se reconoce por discurso oficial y los distractores no representan errores finos de interpretacion evaluativa.",
+    "lote": "L073"
+  },
+  {
+    "id_item": "CEOL_B06_I03",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Evaluación formativa, mejora continua y lenguaje evaluativo",
+    "subtema": "Acciones de mejoramiento basadas en evidencia",
+    "competencia": "Diseña acciones de mejora a partir del analisis del error, la retroalimentacion descriptiva y nuevas evidencias de aprendizaje.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce el plan de mejoramiento que usa la evaluacion como insumo para reorientar la enseñanza y no solo para repetir la prueba.",
+    "evidencia": "Selecciona una alternativa donde las dificultades detectadas se analizan, se intervienen didacticamente y se vuelven a valorar con nuevas evidencias.",
+    "tarea": "Elegir la caracteristica central de un plan de mejoramiento coherente con evaluacion formativa.",
+    "contexto": "Tras una evaluacion intermedia de matematicas, el docente observa que la mayoria del curso no comprendio fracciones mixtas y propone repetir el mismo examen de inmediato sin retroalimentacion ni ajuste didactico.",
+    "enunciado": "¿Que debe incluir un plan de mejoramiento para responder a esta situacion desde una logica formativa?",
+    "opciones": {
+      "A": "Analizar las dificultades recurrentes, retroalimentar, ajustar la ensenanza y recoger nuevas evidencias de aprendizaje con otra oportunidad de demostracion.",
+      "B": "Reaplicar de forma sucesiva la misma prueba hasta que el grupo memorice los items y mejore los promedios.",
+      "C": "Reducir los estandares del curso para facilitar la aprobacion del grupo sin trabajo conceptual adicional.",
+      "D": "Modificar la calificacion en la plataforma sin exigir nuevas actividades ni evidencias."
+    },
+    "clave": "A",
+    "justificacion_clave": "La respuesta correcta es A porque una accion de mejora formativa parte del analisis del error, ofrece retroalimentacion, ajusta la mediacion docente y solicita nuevas evidencias para verificar aprendizaje real.",
+    "distractores_funcion": {
+      "A": "Clave correcta: usa evidencia, retroalimentacion y nueva demostracion de aprendizaje.",
+      "B": "Confunde mejoramiento con repeticion memoristica del mismo instrumento.",
+      "C": "Responde bajando la exigencia en lugar de intervenir pedagogicamente la dificultad.",
+      "D": "Propone una salida administrativa sin aprendizaje ni evidencia nueva."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Situacion escolar transversal y tecnicamente defendible."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Enunciado funcional y opciones claramente comparables."
+    },
+    "metadata_editorial": {
+      "lote": "L073",
+      "ruta_origen": "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/CEOL_B06_I03.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CEOL_B06_I03.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CEOL_B06_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Evaluación formativa, mejora continua y lenguaje evaluativo",
+    "subtema": "Lenguaje evaluativo basado en evidencias",
+    "competencia": "Reconduce discusiones evaluativas hacia lenguaje descriptivo, evidencias observables y apoyos pedagogicos concretos.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la intervencion que transforma etiquetas subjetivas en analisis tecnico de desempenos y decisiones de apoyo.",
+    "evidencia": "Selecciona una alternativa centrada en desempenos no alcanzados, inasistencias registradas y estrategias de acompanamiento frente a juicios estigmatizantes.",
+    "tarea": "Elegir la mejor intervencion para reorientar una comision de evaluacion y promocion.",
+    "contexto": "En una comision de evaluacion de grado quinto, varios docentes describen a un estudiante con asignaturas reprobadas como perezoso, incapaz y problematico. El director de grupo quiere reconducir el debate hacia una logica formativa.",
+    "enunciado": "¿Que intervencion es la mas adecuada para reorientar el lenguaje y el enfoque de la comision?",
+    "opciones": {
+      "A": "Pedir que se analicen los desempenos no alcanzados y las inasistencias registradas, y proponer apoyos pedagogicos concretos con participacion de estudiante y familia.",
+      "B": "Respaldar las etiquetas de los colegas e incorporarlas al acta como sustento de la reprobacion.",
+      "C": "Aprobar al estudiante automaticamente para evitar desgaste administrativo y cerrar la discusion.",
+      "D": "Trasladar toda la valoracion a un unico test de personalidad aplicado por orientacion."
+    },
+    "clave": "A",
+    "justificacion_clave": "La respuesta correcta es A porque el lenguaje evaluativo profesional debe basarse en evidencias observables, dificultades especificas y apoyos concretos, no en adjetivos descalificadores ni soluciones administrativas o psicologizantes aisladas.",
+    "distractores_funcion": {
+      "A": "Clave correcta: reorienta el caso hacia evidencia, dignidad y apoyo pedagógico.",
+      "B": "Institucionaliza la estigmatizacion subjetiva del estudiante.",
+      "C": "Evade el problema formativo mediante una salida administrativa simplista.",
+      "D": "Desplaza la evaluacion pedagogica a un instrumento ajeno al proceso de aula."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "El item protege la dignidad del estudiante y no introduce barreras irrelevantes."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Una sola decision principal y sintaxis limpia."
+    },
+    "metadata_editorial": {
+      "lote": "L073",
+      "ruta_origen": "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/CEOL_B06_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CEOL_B06_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "EFCC_B04_I01",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "Evaluación integral por competencias",
+    "subtema": "Integralidad del desempeño por competencias",
+    "competencia": "Diseña propuestas de evaluacion integral que articulan productos, procesos, criterios y multiples agentes de evaluacion.",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la propuesta institucional mas coherente con una evaluacion integral del desempeño por competencias.",
+    "evidencia": "Selecciona una alternativa que combina proyectos, portafolios, rubricas y multiples formas de valoracion frente a modelos centrados en prueba unica o control externo.",
+    "tarea": "Elegir la propuesta metodologica mejor alineada con una reforma del SIEE orientada a competencias.",
+    "contexto": "Una institucion oficial quiere reformar su SIEE porque la evaluacion se concentra casi solo en examenes de opcion multiple y eso ha debilitado el interes por la argumentacion, los procesos y el trabajo experimental.",
+    "enunciado": "¿Que propuesta metodologica se alinea mejor con una evaluacion integral del desempeño por competencias?",
+    "opciones": {
+      "A": "Implementar proyectos integrados, portafolios de evidencias y rubricas analiticas, combinando heteroevaluacion, autoevaluacion y coevaluacion periodica.",
+      "B": "Mantener solo pruebas escritas de fin de periodo y aumentar su dificultad teorica para medir mayor rapidez de respuesta.",
+      "C": "Eliminar las evaluaciones academicas y aprobar con base exclusiva en convivencia y actitud diaria.",
+      "D": "Delegar la asignacion de notas en un servicio externo de pruebas estandarizadas mensuales para todas las asignaturas."
+    },
+    "clave": "A",
+    "justificacion_clave": "La respuesta correcta es A porque una evaluacion integral por competencias necesita recoger evidencias variadas del saber conceptual, procedimental y actitudinal en tareas autenticas, con criterios claros y varias fuentes de valoracion.",
+    "distractores_funcion": {
+      "A": "Clave correcta: integra diversidad de evidencias, criterios y agentes evaluativos.",
+      "B": "Insiste en un modelo restringido a prueba unica y rendimiento teorico.",
+      "C": "Desequilibra el juicio evaluativo y elimina el componente cognitivo del aprendizaje.",
+      "D": "Externaliza de forma impropia la responsabilidad pedagogica e institucional de evaluar."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Escenario institucional amplio y tecnicamente interpretable."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Opciones paralelas y contexto funcional."
+    },
+    "metadata_editorial": {
+      "lote": "L073",
+      "ruta_origen": "content/items/stand-by/Evaluación integral por competencias/EFCC_B04_I01.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/EFCC_B04_I01.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  }
+]
