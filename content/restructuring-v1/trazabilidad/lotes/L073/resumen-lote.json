@@ -1,0 +1,46 @@
+{
+  "loteProcesado": "L073",
+  "decisionLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Evaluación colaborativa, coevaluación y metacognición/",
+    "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/",
+    "content/items/stand-by/Evaluación integral por competencias/"
+  ],
+  "numeroItemsLeidos": 7,
+  "conteoEstados": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 4,
+    "DESCARTAR": 3
+  },
+  "numeroConRequiereRevisionHumana": 4,
+  "hallazgosPrincipales": [
+    "El lote solo se sostiene cuando la evaluacion aparece como uso real de evidencia, retroalimentacion observable o reorientacion didactica concreta.",
+    "La carpeta de evaluacion formativa aporta los casos mas utiles, pero aun con claves demasiado visibles frente a distractores exagerados.",
+    "La carpeta de coevaluacion y metacognicion mezcla una formulacion recuperable sobre coevaluacion con un item demasiado cercano a etiqueta instrumental sobre bitacoras reflexivas.",
+    "Evaluacion integral por competencias conserva valor para pilotaje institucional, pero no alcanza banco por discurso demasiado idealizado y competidores debiles."
+  ],
+  "problemasSistemicos": [
+    "Persisten distractores obvios y opciones incorrectas demasiado burdas o moralmente inviables.",
+    "Varios items se resuelven por definicion literal o por reconocimiento del discurso evaluativo correcto sin comparacion fina entre alternativas.",
+    "La clave suele delatarse por un lenguaje mas tecnico, mas equilibrado o mas pedagogicamente virtuoso que el resto."
+  ],
+  "incidenciasGithubOFuente": [
+    "La lectura del inventario requirio navegacion directa en GitHub para resolver carpetas con tildes y caracteres especiales.",
+    "No se detectaron coincidencias bloqueantes con auditorias previas a partir de la trazabilidad visible durante esta corrida.",
+    "No hubo incidencias bloqueantes de lectura o escritura en GitHub."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L073/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L073/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L073/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L073/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "modificoContentItemsStandBy": false,
+    "modificoTrashJson": false,
+    "modificoBitacorasGlobales": false,
+    "modificoOtrosLotes": false
+  }
+}
