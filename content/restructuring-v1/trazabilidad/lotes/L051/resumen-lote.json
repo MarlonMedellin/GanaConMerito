@@ -1,0 +1,62 @@
+{
+  "loteProcesado": "L051",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Docente de apoyo, orientador y valoración pedagógica/",
+    "content/items/stand-by/Rol, funciones y límites del orientador escolar/",
+    "content/items/stand-by/Diagnóstico pedagógico, saberes previos y evaluación formativa/"
+  ],
+  "itemsLeidos": 12,
+  "itemsAuditadosEnL051": 0,
+  "itemsOmitidosPorAuditoriaPrevia": 12,
+  "conteoDecisiones": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 0,
+    "DESCARTAR": 0,
+    "OMITIDO_POR_AUDITORIA_PREVIA": 12
+  },
+  "requiereRevisionHumana": 0,
+  "omisionesPorAuditoriaPrevia": {
+    "L013": [
+      "IDD_B05_I01",
+      "IDD_B05_I02",
+      "IDD_B05_I03",
+      "IDD_B05_I04"
+    ],
+    "L027": [
+      "CEOL_B03_I01",
+      "CEOL_B03_I02",
+      "CEOL_B03_I05"
+    ],
+    "L011": [
+      "IDD_B14_I01",
+      "IDD_B14_I02",
+      "IDD_B14_I03",
+      "IDD_B14_I04",
+      "IDD_B14_I05"
+    ]
+  },
+  "hallazgosClave": [
+    "Las tres carpetas asignadas ya contaban con auditoría trazable suficiente en L011, L013 y L027 y no requirieron reprocesamiento.",
+    "El lote confirma que valoración pedagógica, límites del orientador y evaluación formativa ya habían sido depurados para evitar confusión de roles, pseudoaplicación y definiciones planas.",
+    "L051 queda como lote de consolidación por omisión trazada, sin remediación nueva."
+  ],
+  "incidenciasGithubOFuente": [
+    "Los archivos de salida de L051 no existían y devolvieron 404 antes de crearse.",
+    "La carpeta del orientador exigió verificación adicional del inventario porque la búsqueda del conector no listó todos los archivos a la primera consulta.",
+    "No se identificaron ítems nuevos no auditados dentro de las carpetas asignadas.",
+    "reporte-acumulado-instancia.md no existía en L051 y se creó en este cierre."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L051/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L051/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L051/items-corregidos.json",
+    "content/restructuring-v1/trazabilidad/lotes/L051/reporte-acumulado-instancia.md"
+  ],
+  "confirmaciones": {
+    "noSeModificoContentItemsStandBy": true,
+    "noSeModificoTrashJson": true,
+    "noSeModificaronBitacorasGlobales": true,
+    "noSeModificaronOtrosLotes": true
+  }
+}
