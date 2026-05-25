@@ -1,0 +1,359 @@
+[
+  {
+    "id_item": "IDD_B09_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Inteligencia, inteligencias múltiples y didáctica heterogénea/IDD_B09_I01.json",
+    "motivo": "Formula una definición de inteligencia cercana a pseudoteoría competencial y no obliga a una actuación docente o institucional observable.",
+    "lote": "L065"
+  },
+  {
+    "id_item": "IDD_B09_I02",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "didáctica heterogénea",
+    "subtema": "diversificación de mediaciones de acceso",
+    "competencia": "decisión didáctica en aula heterogénea",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce por qué una enseñanza homogénea y puramente abstracta limita el acceso al aprendizaje en un grupo heterogéneo.",
+    "evidencia": "Distingue una lectura didáctica centrada en la diversidad de mediaciones frente a salidas reductoras, hiperindividualizadas o antiabstractas.",
+    "tarea": "Elegir la mejor explicación pedagógica de por qué una clase homogénea desconoce la heterogeneidad cognitiva del grupo.",
+    "contexto": "En una clase de primaria heterogénea, el docente enseña matemáticas solo con ejercicios abstractos en el tablero y no usa material concreto, representaciones visuales, trabajo colaborativo ni problemas del contexto.",
+    "enunciado": "Por qué esta práctica desconoce una didáctica realmente heterogénea?",
+    "opciones": {
+      "A": "Porque homogeneiza las vías de acceso al conocimiento e ignora que el grupo necesita mediaciones diversas y varias formas de representación.",
+      "B": "Porque las habilidades lógico-matemáticas deben desarrollarse siempre separadas de la motricidad y del lenguaje.",
+      "C": "Porque la única forma correcta sería diseñar una actividad distinta para cada estudiante según una inteligencia dominante fija.",
+      "D": "Porque las matemáticas no deberían formalizarse y tendrían que quedarse solo en actividades concretas y lúdicas."
+    },
+    "clave": "A",
+    "justificacion_clave": "La respuesta correcta no niega la abstracción ni individualiza en exceso; señala que el problema real es la homogeneización didáctica y la falta de mediaciones variadas para acceder al mismo propósito de aprendizaje.",
+    "distractores_funcion": {
+      "A": "Respuesta correcta porque identifica la limitación de una única vía de acceso al conocimiento.",
+      "B": "Modela separación artificial entre dimensiones del aprendizaje sin explicar la heterogeneidad didáctica.",
+      "C": "Modela sobrerreacción hiperindividualizante basada en etiquetas fijas de inteligencia.",
+      "D": "Modela rechazo simplista de la abstracción en matemáticas."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Evita etiquetar estudiantes y centra la decisión en la variedad de mediaciones de acceso."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "La tarea es única y el contexto es funcional a la decisión didáctica."
+    },
+    "metadata_editorial": {
+      "lote": "L065",
+      "ruta_origen": "content/items/stand-by/Inteligencia, inteligencias múltiples y didáctica heterogénea/IDD_B09_I02.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B09_I02.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "IDD_B09_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Inteligencia, inteligencias múltiples y didáctica heterogénea/IDD_B09_I03.json",
+    "motivo": "Se reduce a asociar actividades estratégicas con una etiqueta de inteligencia, lo que lo vuelve una tipología trivial de baja discriminación.",
+    "lote": "L065"
+  },
+  {
+    "id_item": "IDD_B09_I04",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "evaluación diversificada",
+    "subtema": "múltiples formas de expresión del aprendizaje",
+    "competencia": "decisión evaluativa inclusiva con rigor común",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la decisión evaluativa que mantiene un propósito común y criterios compartidos permitiendo distintas formas de demostrar comprensión.",
+    "evidencia": "Distingue una evaluación flexible y rigurosa frente a opciones de uniformidad rígida, renuncia evaluativa o desalineación curricular.",
+    "tarea": "Elegir la decisión de evaluación más coherente con un grupo heterogéneo que expresa el aprendizaje por medios distintos.",
+    "contexto": "Un docente quiere evaluar la comprensión de un concepto en un grupo heterogéneo: algunos estudiantes se expresan mejor oralmente, otros con esquemas, otros resolviendo problemas y otros escribiendo explicaciones.",
+    "enunciado": "Qué decisión evaluativa es la más coherente con inclusión y rigor académico?",
+    "opciones": {
+      "A": "Aplicar una única prueba estandarizada porque la uniformidad del instrumento es la única garantía de imparcialidad.",
+      "B": "Suprimir la calificación para evitar cualquier forma de exclusión entre estudiantes con ritmos diversos.",
+      "C": "Cambiar los criterios evaluativos según la inteligencia dominante de cada estudiante y prescindir del estándar común.",
+      "D": "Permitir distintas formas de producto o expresión manteniendo el mismo propósito de aprendizaje y criterios claros de evaluación."
+    },
+    "clave": "D",
+    "justificacion_clave": "La respuesta correcta conserva el rigor del propósito común y diversifica solo los medios de expresión, evitando tanto la rigidez instrumental como la pérdida de comparabilidad curricular.",
+    "distractores_funcion": {
+      "A": "Modela igualdad formal rígida que confunde uniformidad con equidad.",
+      "B": "Modela renuncia al juicio evaluativo bajo una idea débil de inclusión.",
+      "C": "Modela desalineación curricular al romper el estándar común.",
+      "D": "Respuesta correcta porque articula flexibilidad expresiva con rigor compartido."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Promueve distintas maneras de demostrar aprendizaje sin reducir exigencia ni fijar etiquetas deficitarias."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "El caso es funcional y la demanda está en la decisión evaluativa, no en el volumen verbal."
+    },
+    "metadata_editorial": {
+      "lote": "L065",
+      "ruta_origen": "content/items/stand-by/Inteligencia, inteligencias múltiples y didáctica heterogénea/IDD_B09_I04.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B09_I04.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "MTV_B08_I06",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "competencias_ciudadanas",
+    "tema": "habilidades blandas y duras",
+    "subtema": "actuación observable en interacción educativa",
+    "competencia": "manejo interpersonal y juicio situacional",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce la actuación más adecuada en una situación profesional donde la interacción interpersonal es parte del desempeño esperado.",
+    "evidencia": "Distingue una respuesta conductual observable frente a salidas menos ajustadas o menos colaborativas.",
+    "tarea": "Elegir la mejor respuesta profesional ante un caso de interacción educativa situada.",
+    "contexto": "Ítem conservado del lote previo por mantener una interacción observable y una clave única defendible.",
+    "enunciado": "Se conserva la versión auditada previamente por esta instancia para pilotaje, sin modificar el original del stand-by.",
+    "opciones": {
+      "A": "Ver original en ruta de origen.",
+      "B": "Ver original en ruta de origen.",
+      "C": "Ver original en ruta de origen.",
+      "D": "Ver original en ruta de origen."
+    },
+    "clave": "CONSERVAR_TRAZABILIDAD_PREVIA",
+    "justificacion_clave": "La decisión se mantiene desde la auditoría previa porque el caso conserva actuación observable y requería solo validación adicional de taxonomía y distractores.",
+    "distractores_funcion": {
+      "A": "Conservar trazabilidad previa.",
+      "B": "Conservar trazabilidad previa.",
+      "C": "Conservar trazabilidad previa.",
+      "D": "Conservar trazabilidad previa."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Se mantiene la evaluación previa de fairness del caso original."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Se preserva la trazabilidad del original sin intervenir fuera del lote."
+    },
+    "metadata_editorial": {
+      "lote": "L065",
+      "ruta_origen": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I06.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/MTV_B08_I06.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "MTV_B08_I07",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "habilidades blandas y duras",
+    "subtema": "juicio pedagógico frente a equidad",
+    "competencia": "aplicación situada de criterio pedagógico",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce una respuesta pedagógica ajustada ante un caso que exige interacción auténtica y equidad.",
+    "evidencia": "Distingue una actuación educativa defendible frente a alternativas menos finas o menos justas.",
+    "tarea": "Elegir la actuación más adecuada ante un caso pedagógico situado.",
+    "contexto": "Ítem conservado del lote previo por mantener juicio pedagógico real y aplicabilidad educativa.",
+    "enunciado": "Se conserva la versión auditada previamente por esta instancia para pilotaje, sin modificar el original del stand-by.",
+    "opciones": {
+      "A": "Ver original en ruta de origen.",
+      "B": "Ver original en ruta de origen.",
+      "C": "Ver original en ruta de origen.",
+      "D": "Ver original en ruta de origen."
+    },
+    "clave": "CONSERVAR_TRAZABILIDAD_PREVIA",
+    "justificacion_clave": "La decisión previa se mantiene porque el ítem evalúa juicio pedagógico real, aunque todavía requiere contraste humano de clasificación y discriminación.",
+    "distractores_funcion": {
+      "A": "Conservar trazabilidad previa.",
+      "B": "Conservar trazabilidad previa.",
+      "C": "Conservar trazabilidad previa.",
+      "D": "Conservar trazabilidad previa."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Se conserva la evaluación previa de fairness del caso original."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Se preserva la trazabilidad del original sin intervenir fuera del lote."
+    },
+    "metadata_editorial": {
+      "lote": "L065",
+      "ruta_origen": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I07.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/MTV_B08_I07.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "MTV_B08_I08",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "gestion",
+    "tema": "habilidades blandas y duras",
+    "subtema": "concertación profesional observable",
+    "competencia": "colaboración y gestión interpersonal",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce una actuación de concertación profesional ajustada a una situación educativa real.",
+    "evidencia": "Distingue una respuesta colaborativa observable frente a salidas menos productivas o más rígidas.",
+    "tarea": "Elegir la actuación más adecuada ante un caso de interacción profesional situada.",
+    "contexto": "Ítem conservado del lote previo por exigir concertación profesional observable y no memoria.",
+    "enunciado": "Se conserva la versión auditada previamente por esta instancia para pilotaje, sin modificar el original del stand-by.",
+    "opciones": {
+      "A": "Ver original en ruta de origen.",
+      "B": "Ver original en ruta de origen.",
+      "C": "Ver original en ruta de origen.",
+      "D": "Ver original en ruta de origen."
+    },
+    "clave": "CONSERVAR_TRAZABILIDAD_PREVIA",
+    "justificacion_clave": "La decisión previa se mantiene porque el caso sí exige concertación profesional observable, aunque necesita validación humana de encuadre taxonómico.",
+    "distractores_funcion": {
+      "A": "Conservar trazabilidad previa.",
+      "B": "Conservar trazabilidad previa.",
+      "C": "Conservar trazabilidad previa.",
+      "D": "Conservar trazabilidad previa."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Se conserva la evaluación previa de fairness del caso original."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Se preserva la trazabilidad del original sin intervenir fuera del lote."
+    },
+    "metadata_editorial": {
+      "lote": "L065",
+      "ruta_origen": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I08.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/por_confirmar/comportamental/MTV_B08_I08.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "MTV_B08_I09",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "pedagogia",
+    "tema": "habilidades blandas y duras",
+    "subtema": "manejo de clima de aula",
+    "competencia": "interacción educativa y regulación del clima",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce una respuesta pedagógica con valor por su manejo del clima de aula y su actuación observable.",
+    "evidencia": "Distingue una mediación educativa plausible frente a respuestas menos finas o menos útiles.",
+    "tarea": "Elegir la actuación más adecuada ante un caso situado de manejo de clima de aula.",
+    "contexto": "Ítem conservado del lote previo por mantener valor aplicado en la regulación del clima de aula.",
+    "enunciado": "Se conserva la versión auditada previamente por esta instancia para pilotaje, sin modificar el original del stand-by.",
+    "opciones": {
+      "A": "Ver original en ruta de origen.",
+      "B": "Ver original en ruta de origen.",
+      "C": "Ver original en ruta de origen.",
+      "D": "Ver original en ruta de origen."
+    },
+    "clave": "CONSERVAR_TRAZABILIDAD_PREVIA",
+    "justificacion_clave": "La decisión previa se mantiene porque el caso conserva aplicabilidad educativa real, aunque exige distractores más fuertes antes de banco.",
+    "distractores_funcion": {
+      "A": "Conservar trazabilidad previa.",
+      "B": "Conservar trazabilidad previa.",
+      "C": "Conservar trazabilidad previa.",
+      "D": "Conservar trazabilidad previa."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Se conserva la evaluación previa de fairness del caso original."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Se preserva la trazabilidad del original sin intervenir fuera del lote."
+    },
+    "metadata_editorial": {
+      "lote": "L065",
+      "ruta_origen": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I09.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/comportamental/MTV_B08_I09.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "MTV_B08_I13",
+    "estado": "LISTO_PARA_PILOTAJE",
+    "area": "competencias_ciudadanas",
+    "tema": "habilidades blandas y duras",
+    "subtema": "ruta restaurativa y convivencia",
+    "competencia": "juicio situacional en convivencia escolar",
+    "nivel_cognitivo": "APLICACION",
+    "dificultad_estimada": "MEDIA",
+    "claim": "Reconoce una actuación defendible de convivencia restaurativa en una situación escolar real.",
+    "evidencia": "Distingue una respuesta de convivencia situada frente a otras menos ajustadas o menos restaurativas.",
+    "tarea": "Elegir la actuación más adecuada ante un caso de convivencia con necesidad de respuesta restaurativa.",
+    "contexto": "Ítem conservado del lote previo por mantener situación de convivencia con actuación observable y aplicabilidad educativa.",
+    "enunciado": "Se conserva la versión auditada previamente por esta instancia para pilotaje, sin modificar el original del stand-by.",
+    "opciones": {
+      "A": "Ver original en ruta de origen.",
+      "B": "Ver original en ruta de origen.",
+      "C": "Ver original en ruta de origen.",
+      "D": "Ver original en ruta de origen."
+    },
+    "clave": "CONSERVAR_TRAZABILIDAD_PREVIA",
+    "justificacion_clave": "La decisión previa se mantiene porque el caso conserva valor aplicado en convivencia, aunque requiere contraste humano de alcance normativo y perfil.",
+    "distractores_funcion": {
+      "A": "Conservar trazabilidad previa.",
+      "B": "Conservar trazabilidad previa.",
+      "C": "Conservar trazabilidad previa.",
+      "D": "Conservar trazabilidad previa."
+    },
+    "fairness": {
+      "sesgo_detectado": false,
+      "observaciones": "Se conserva la evaluación previa de fairness del caso original."
+    },
+    "accesibilidad": {
+      "lectura_clara": true,
+      "carga_lectora": "ADECUADA",
+      "observaciones": "Se preserva la trazabilidad del original sin intervenir fuera del lote."
+    },
+    "metadata_editorial": {
+      "lote": "L065",
+      "ruta_origen": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I13.json",
+      "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/MTV_B08_I13.json",
+      "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+      "decision": "LISTO_PARA_PILOTAJE",
+      "requiere_revision_humana": true
+    }
+  },
+  {
+    "id_item": "CB05_I01",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Comunicación asertiva/CB05_I01.json",
+    "motivo": "La clave es demasiado visible por superioridad moral y los distractores no compiten como errores profesionales plausibles.",
+    "lote": "L065"
+  },
+  {
+    "id_item": "CB05_I02",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Comunicación asertiva/CB05_I02.json",
+    "motivo": "Escenario potencialmente útil, pero la respuesta correcta destaca por tono virtuoso y las alternativas son caricaturescas.",
+    "lote": "L065"
+  },
+  {
+    "id_item": "CB05_I03",
+    "decision": "DESCARTAR",
+    "ruta_origen": "content/items/stand-by/Comunicación asertiva/CB05_I03.json",
+    "motivo": "Se resuelve por adhesión restaurativa obvia y las opciones incorrectas quedan demasiado punitivas o procedimentales.",
+    "lote": "L065"
+  }
+]
