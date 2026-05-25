@@ -1,0 +1,62 @@
+[
+  {
+    "lote": "L057",
+    "id_item": "PPDC_B04_I01",
+    "ruta_origen": "content/items/stand-by/Praxis pedagógica, didáctica y selección metodológica/PPDC_B04_I01.json",
+    "decision": "DESCARTAR",
+    "requiere_revision_humana": false,
+    "motivo_dominante": "Conceptual y doctrinal",
+    "hallazgo": "El contexto es decorativo y la respuesta correcta depende de reconocer la definición de pedagogía frente a didáctica, no de seleccionar una mediación pedagógica observable.",
+    "accion_sugerida": "No remediar en este lote. Reemplazar por un ítem situado que obligue a escoger una actuación de aula o una secuencia metodológica frente a un grupo concreto."
+  },
+  {
+    "lote": "L057",
+    "id_item": "PPDC_B04_I02",
+    "ruta_origen": "content/items/stand-by/Praxis pedagógica, didáctica y selección metodológica/PPDC_B04_I02.json",
+    "decision": "DESCARTAR",
+    "requiere_revision_humana": false,
+    "motivo_dominante": "Pseudoaplicación por etiquetado",
+    "hallazgo": "La situación menciona coordinación académica y secuencia de aula, pero la tarea real es clasificar niveles conceptuales entre metodología, estrategia y técnica.",
+    "accion_sugerida": "No remediar en este lote. Sustituir por un caso en el que el evaluado deba elegir una combinación metodológica concreta según contexto, propósito y evidencia de aprendizaje."
+  },
+  {
+    "lote": "L057",
+    "id_item": "PPDC_B03_I01",
+    "ruta_origen": "content/items/stand-by/Constructivismo, indagación y aprendizaje experimental/PPDC_B03_I01.json",
+    "decision": "OMITIDO_POR_AUDITORIA_PREVIA",
+    "referencia_auditoria_previa": "content/restructuring-v1/trazabilidad/lotes/L005/decisiones.csv",
+    "decision_previa": "LISTO_PARA_PILOTAJE"
+  },
+  {
+    "lote": "L057",
+    "id_item": "PPDC_B03_I02",
+    "ruta_origen": "content/items/stand-by/Constructivismo, indagación y aprendizaje experimental/PPDC_B03_I02.json",
+    "decision": "OMITIDO_POR_AUDITORIA_PREVIA",
+    "referencia_auditoria_previa": "content/restructuring-v1/trazabilidad/lotes/L005/decisiones.csv",
+    "decision_previa": "DESCARTAR"
+  },
+  {
+    "lote": "L057",
+    "id_item": "CB15_I02",
+    "ruta_origen": "content/items/stand-by/Fases enseñanza/CB15_I02.json",
+    "decision": "OMITIDO_POR_AUDITORIA_PREVIA",
+    "referencia_auditoria_previa": "content/restructuring-v1/trazabilidad/lotes/L017/decisiones.csv",
+    "decision_previa": "LISTO_PARA_PILOTAJE"
+  },
+  {
+    "lote": "L057",
+    "id_item": "CB15_I03",
+    "ruta_origen": "content/items/stand-by/Fases enseñanza/CB15_I03.json",
+    "decision": "OMITIDO_POR_AUDITORIA_PREVIA",
+    "referencia_auditoria_previa": "content/restructuring-v1/trazabilidad/lotes/L017/decisiones.csv",
+    "decision_previa": "LISTO_PARA_BANCO"
+  },
+  {
+    "lote": "L057",
+    "id_item": "CB15_I04",
+    "ruta_origen": "content/items/stand-by/Fases enseñanza/CB15_I04.json",
+    "decision": "OMITIDO_POR_AUDITORIA_PREVIA",
+    "referencia_auditoria_previa": "content/restructuring-v1/trazabilidad/lotes/L017/decisiones.csv",
+    "decision_previa": "LISTO_PARA_PILOTAJE"
+  }
+]
