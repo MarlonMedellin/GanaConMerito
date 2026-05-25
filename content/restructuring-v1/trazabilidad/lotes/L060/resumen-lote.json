@@ -1,0 +1,46 @@
+{
+  "loteProcesado": "L060",
+  "decisionLote": "APROBAR_PARCIALMENTE",
+  "calidadGlobal": "MEDIA",
+  "sublotesInternos": [],
+  "carpetasProcesadas": [
+    "content/items/stand-by/Manejo del error y clima afectivo/",
+    "content/items/stand-by/Comunicación asertiva/",
+    "content/items/stand-by/Sesgos culturales, lenguaje inclusivo y discriminación cotidiana/"
+  ],
+  "numeroItemsLeidos": 9,
+  "conteoEstados": {
+    "LISTO_PARA_BANCO": 0,
+    "LISTO_PARA_PILOTAJE": 2,
+    "DESCARTAR": 7
+  },
+  "numeroConRequiereRevisionHumana": 2,
+  "hallazgosPrincipales": [
+    "Los dos items rescatables del lote fueron los de manejo del error, porque si exigen interaccion docente observable y convierten la equivocacion en mediacion pedagogica.",
+    "El bloque de comunicacion asertiva quedo dominado por respuestas socialmente deseables, con claves demasiado visibles y distractores debiles o caricaturescos.",
+    "El bloque de sesgos culturales e inclusion tendio a la adhesion discursiva: varias preguntas se resuelven por vocabulario normativo o por opciones moralmente obvias, sin suficiente discriminacion psicometrica.",
+    "No hubo material suficientemente solido para LISTO_PARA_BANCO."
+  ],
+  "problemasSistemicos": [
+    "Moralismo obvio en varias opciones incorrectas.",
+    "Pseudoempatia y formulaciones virtuosas que vuelven visible la clave.",
+    "Distractores decorativos o extremados que no modelan errores docentes reales.",
+    "Exceso de discurso inclusivo declarativo sin una decision situada suficientemente competida."
+  ],
+  "incidenciasGithubOFuente": [
+    "La fuente del lote fue legible y consistente; no hubo incidencias bloqueantes de lectura o escritura en GitHub.",
+    "Se detecto una tension entre el estado declarado en algunos originales y su verdadera defendibilidad psicometrica, por lo que se aplico criterio de auditoria dura del lote."
+  ],
+  "archivosEscritos": [
+    "content/restructuring-v1/trazabilidad/lotes/L060/reporte-acumulado-instancia.md",
+    "content/restructuring-v1/trazabilidad/lotes/L060/resumen-lote.json",
+    "content/restructuring-v1/trazabilidad/lotes/L060/decisiones.csv",
+    "content/restructuring-v1/auditoria/lotes/L060/items-corregidos.json"
+  ],
+  "confirmaciones": {
+    "modificoContentItemsStandBy": false,
+    "modificoTrashJson": false,
+    "modificoBitacorasGlobales": false,
+    "modificoOtrosLotes": false
+  }
+}
