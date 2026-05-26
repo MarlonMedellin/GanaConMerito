@@ -1,0 +1,6 @@
+categoria,regla,accion
+id_estable,"Mantener id_item original como clave historica.","No renombrar ids en lotes historicos."
+id_canonico,"Crear id_canonico solo en indice maestro.","Usar prefijo area-grupo-secuencia si se requiere."
+ids_no_recuperables,"Marcar ids con fuente rota como NO_RECUPERABLE.","Excluir de banco operativo."
+ids_fragmentados,"Cuando haya sublotes, conservar id_item y agregar lote_origen_detallado.","No fusionar sin trazabilidad."
+ids_repetidos,"Si aparece el mismo id en varios lotes, elegir decision final por jerarquia.","BANCO > PILOTAJE > DESCARTAR > OMITIDO."
