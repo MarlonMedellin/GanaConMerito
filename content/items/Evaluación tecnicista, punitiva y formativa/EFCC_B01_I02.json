@@ -1,0 +1,46 @@
+{
+  "id_item": "EFCC_B01_I02",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "Evaluación tecnicista, punitiva y formativa",
+  "subtema": "Prácticas punitivas en aula",
+  "competencia": "Analiza la coherencia entre instrumentos de evaluación, criterios comunicados y propósito formativo.",
+  "nivel_cognitivo": "ANALISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce cuándo una evaluación funciona como sanción y no como apoyo al aprendizaje.",
+  "evidencia": "Selecciona la crítica pedagógica mejor fundamentada frente a un quiz sorpresa desalineado y sin retroalimentación.",
+  "tarea": "Valorar pedagógicamente una práctica evaluativa punitiva.",
+  "contexto": "Un docente aplica un quiz sorpresa no alineado con lo trabajado y lo usa para bajar la nota sin retroalimentar a los estudiantes.",
+  "enunciado": "¿Cuál valoración pedagógica corresponde mejor a esta situación?",
+  "opciones": {
+    "A": "Es pertinente porque la sorpresa asegura por sí sola una evaluación objetiva.",
+    "B": "Es punitiva cuando sanciona sin criterios previos, sin alineación curricular y sin retroalimentación de mejora.",
+    "C": "Es coevaluación porque el estudiante responde en forma individual.",
+    "D": "Es formativa porque cualquier calificación genera aprendizaje automático."
+  },
+  "clave": "B",
+  "justificacion_clave": "La opción B es la única que integra los tres problemas relevantes del caso: ausencia de criterios previos, desalineación con lo enseñado y falta de retroalimentación, lo que convierte la evaluación en castigo y no en apoyo al aprendizaje.",
+  "distractores_funcion": {
+    "A": "Confunde sorpresa con objetividad.",
+    "B": "Clave correcta.",
+    "C": "Confunde trabajo individual con coevaluación.",
+    "D": "Asume sin fundamento que toda calificación produce aprendizaje."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "La dificultad relevante es el análisis de coherencia pedagógica; no requiere familiaridad con una institución específica."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Enunciado breve y opciones nítidas; el distractor A compite de forma razonable con la idea errada de objetividad por sorpresa."
+  },
+  "metadata_editorial": {
+    "lote": "L016",
+    "ruta_origen": "content/items/stand-by/Evaluación tecnicista, punitiva y formativa/EFCC_B01_I02.json",
+    "ruta_destino_propuesta": "content/items/Evaluación tecnicista, punitiva y formativa/EFCC_B01_I02.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  }
+}
