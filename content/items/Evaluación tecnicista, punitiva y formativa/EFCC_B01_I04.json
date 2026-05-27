@@ -1,0 +1,46 @@
+{
+  "id_item": "EFCC_B01_I04",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "Evaluación tecnicista, punitiva y formativa",
+  "subtema": "Recuperación académica con sentido formativo",
+  "competencia": "Diseña estrategias de recuperación que diagnostican dificultades, ofrecen mediación y exigen nueva evidencia de aprendizaje.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce por qué una recuperación basada solo en copia mecánica contradice la evaluación formativa.",
+  "evidencia": "Selecciona la crítica que enfatiza diagnóstico, retroalimentación y nueva evidencia de comprensión frente a una tarea punitiva de transcripción.",
+  "tarea": "Analizar una estrategia de recuperación y valorar su coherencia con el enfoque formativo.",
+  "contexto": "Un estudiante no alcanza los desempeños esperados y, como recuperación, el docente le exige transcribir todo el cuaderno sin revisar dificultades ni ofrecer nueva oportunidad para demostrar comprensión.",
+  "enunciado": "¿Por qué esta práctica contradice los principios de la evaluación formativa?",
+  "opciones": {
+    "A": "Porque toda recuperación debe eliminar cualquier exigencia académica.",
+    "B": "Porque copiar mucho siempre demuestra comprensión profunda del tema.",
+    "C": "Porque la recuperación formativa consiste únicamente en subir la nota sin nuevas evidencias.",
+    "D": "Porque la transcripción mecánica no identifica dificultades, no ofrece retroalimentación ni permite evidenciar comprensión o progreso."
+  },
+  "clave": "D",
+  "justificacion_clave": "La opción D es la única que identifica los rasgos irrenunciables de una recuperación formativa: diagnosticar la dificultad, mediar el proceso y ofrecer nueva evidencia de aprendizaje, no solo castigar con trabajo mecánico.",
+  "distractores_funcion": {
+    "A": "Confunde enfoque formativo con ausencia de exigencia.",
+    "B": "Supone erróneamente que la copia demuestra comprensión.",
+    "C": "Reduce la recuperación a manipulación de nota sin evidencia.",
+    "D": "Clave correcta."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem evita castigar ritmos de escritura y centra el juicio en la calidad pedagógica de la recuperación."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Caso concreto, opciones claras y una sola decisión pedagógica relevante."
+  },
+  "metadata_editorial": {
+    "lote": "L016",
+    "ruta_origen": "content/items/stand-by/Evaluación tecnicista, punitiva y formativa/EFCC_B01_I04.json",
+    "ruta_destino_propuesta": "content/items/Evaluación tecnicista, punitiva y formativa/EFCC_B01_I04.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  }
+}
