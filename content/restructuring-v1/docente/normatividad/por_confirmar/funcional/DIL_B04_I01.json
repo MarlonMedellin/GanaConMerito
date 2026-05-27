@@ -1,0 +1,46 @@
+{
+  "id_item": "DIL_B04_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "normatividad",
+  "tema": "Responsabilidad legal escolar",
+  "subtema": "Activacion de ruta ante riesgo",
+  "competencia": "Aplicar deberes institucionales de proteccion frente a indicios de vulneracion de derechos de estudiantes.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Distingue la actuacion protectora, reservada y documentada de conductas de omision, exposicion o extralimitacion funcional.",
+  "evidencia": "Selecciona la respuesta que prioriza registro de hechos observables, activacion de la ruta institucional y reporte a las autoridades competentes.",
+  "tarea": "Tomar una decision profesional ante senales reiteradas de malnutricion, posible explotacion y abandono psicoafectivo en un estudiante.",
+  "contexto": "Una docente observa en varias semanas que un estudiante llega con signos de malnutricion, cansancio persistente y comentarios que sugieren trabajo economico no apropiado para su edad. Tambien nota retraimiento afectivo y ausencia de acompanamiento familiar.",
+  "enunciado": "?Cual actuacion del educador es la mas adecuada y coherente con su deber de proteccion?",
+  "opciones": {
+    "A": "Esperar a reunir pruebas concluyentes y una declaracion escrita del estudiante antes de reportar para evitar errores institucionales.",
+    "B": "Registrar los hechos observables, reportar por la ruta institucional y activar de inmediato a las autoridades de proteccion competentes manteniendo reserva del caso.",
+    "C": "Interrogar extensamente al estudiante para identificar responsables y dejar lista una reconstruccion completa de los hechos antes de informar.",
+    "D": "Exponer la situacion ante las familias del curso para buscar apoyo economico y presionar una solucion rapida."
+  },
+  "clave": "B",
+  "justificacion_clave": "La opcion correcta se ajusta al deber de garante de la institucion: actuar con reserva, documentar hechos observables y activar la ruta competente sin retrasar la proteccion ni revictimizar al estudiante.",
+  "distractores_funcion": {
+    "A": "Retrasa indebidamente la proteccion al exigir prueba concluyente antes del reporte.",
+    "B": "Clave correcta.",
+    "C": "Confunde apoyo escolar con investigacion de tipo judicial o forense.",
+    "D": "Vulnera la confidencialidad y expone publicamente un caso sensible."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "La decision se centra en proteccion institucional y evita detalles estigmatizantes innecesarios."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Tiene una sola tarea principal y vocabulario institucional frecuente."
+  },
+  "metadata_editorial": {
+    "lote": "L027",
+    "ruta_origen": "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I01.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/DIL_B04_I01.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  }
+}
