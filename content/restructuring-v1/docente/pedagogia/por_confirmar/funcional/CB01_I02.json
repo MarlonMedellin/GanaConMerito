@@ -1,0 +1,46 @@
+{
+  "id_item": "CB01_I02",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "Currículo y Contexto Social",
+  "subtema": "Flexibilidad curricular ante movilidad estudiantil",
+  "competencia": "Diseña respuestas curriculares flexibles para garantizar continuidad educativa en contextos de movilidad y vulnerabilidad.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce la decisión curricular que protege trayectorias educativas sin bajar arbitrariamente la exigencia académica.",
+  "evidencia": "Selecciona la alternativa que combina flexibilidad curricular, nivelación y acogida pedagógica para estudiantes móviles.",
+  "tarea": "Elegir la respuesta institucional más pertinente ante interrupciones de aprendizaje causadas por alta movilidad familiar.",
+  "contexto": "Una institución educativa ubicada en un sector con alta movilidad familiar observa interrupciones en los procesos de aprendizaje y baja continuidad en proyectos de aula.",
+  "enunciado": "Teniendo en cuenta la pertinencia curricular y el derecho a la educación, ¿qué decisión institucional resulta más coherente con este contexto de alta movilidad familiar?",
+  "opciones": {
+    "A": "Mantener inalterable el cronograma de contenidos anual para cumplir estrictamente el plan de estudios de los estudiantes regulares.",
+    "B": "Establecer estrategias curriculares flexibles con guías modulares, nivelación permanente y tutorías de acogida para estudiantes móviles.",
+    "C": "Reducir de manera general la exigencia académica para que ningún estudiante móvil repruebe.",
+    "D": "Exigir a las familias que asuman de forma exclusiva la nivelación por las clases perdidas."
+  },
+  "clave": "B",
+  "justificacion_clave": "La opción B es la única que responde al contexto sin sacrificar la meta formativa: flexibiliza rutas, crea apoyos de continuidad y mantiene la responsabilidad institucional sobre el aprendizaje.",
+  "distractores_funcion": {
+    "A": "Modela rigidez curricular que profundiza exclusión.",
+    "B": "Clave correcta.",
+    "C": "Confunde inclusión con disminución indiscriminada de expectativas.",
+    "D": "Desplaza el deber pedagógico de la institución a las familias."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Aborda una condición social relevante al constructo y no estigmatiza a la población móvil."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "La carga verbal es funcional al análisis del caso y no introduce ruido innecesario."
+  },
+  "metadata_editorial": {
+    "lote": "L009-A",
+    "ruta_origen": "content/items/stand-by/Currículo y Contexto Social/CB01_I02.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CB01_I02.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  }
+}
