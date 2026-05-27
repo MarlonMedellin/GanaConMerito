@@ -1,0 +1,46 @@
+{
+  "id_item": "EFCC_B03_I03",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "Currículo, PEI y evaluación didáctica",
+  "subtema": "Autonomía escolar y uso de pruebas externas en evaluación docente",
+  "competencia": "Analiza propuestas de gestión curricular y evaluación docente a la luz de autonomía escolar, contexto y justicia evaluativa.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce que evaluar docencia exclusivamente por resultados de pruebas externas desconoce el contexto y deforma el horizonte pedagógico del PEI.",
+  "evidencia": "Selecciona la respuesta que cuestiona con fundamento curricular y de fairness el uso exclusivo de una métrica externa para valorar desempeño docente.",
+  "tarea": "Analizar una propuesta institucional de evaluación docente y elegir la postura más coherente con el marco pedagógico y legal.",
+  "contexto": "Una entidad territorial propone vincular permanencia y estímulos docentes de manera directa y exclusiva a los puntajes obtenidos por los estudiantes en pruebas estatales estandarizadas.",
+  "enunciado": "Al analizar esta propuesta desde el marco constitucional y de la Ley General de Educación, la posición más coherente del establecimiento educativo es:",
+  "opciones": {
+    "A": "Cuestionarla por reducir la complejidad pedagógica a una sola métrica externa e ignorar contexto, diversidad y autonomía del PEI.",
+    "B": "Aceptarla porque los resultados numéricos de pruebas masivas son la única variable pedagógica válida.",
+    "C": "Eliminar toda participación institucional en pruebas estandarizadas para proteger la autonomía del SIEE.",
+    "D": "Sustituir la evaluación técnica por valoraciones directas de la comunidad sin criterios académicos."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opción A es la mejor respuesta porque integra autonomía escolar, integralidad de la evaluación docente y fairness contextual; evita tanto el reduccionismo métricista como las salidas extremas o técnicamente débiles.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Modela reduccionismo eficientista y descontextualizado.",
+    "C": "Representa una reacción extrema que confunde autonomía con aislamiento.",
+    "D": "Propone una alternativa sin rigor técnico suficiente."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem incorpora fairness como parte del constructo, porque evalúa si el aspirante reconoce el peso del contexto y de la diversidad en la interpretación del desempeño docente."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Las opciones son largas pero comparables y el caso es institucionalmente verosímil."
+  },
+  "metadata_editorial": {
+    "lote": "L009-A",
+    "ruta_origen": "content/items/stand-by/Currículo, PEI y evaluación didáctica/EFCC_B03_I03.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/EFCC_B03_I03.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  }
+}
