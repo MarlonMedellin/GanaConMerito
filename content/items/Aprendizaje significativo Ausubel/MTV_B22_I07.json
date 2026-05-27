@@ -1,0 +1,46 @@
+{
+  "id_item": "MTV_B22_I07",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "Aprendizaje significativo Ausubel",
+  "subtema": "Sentido de formulas y conceptos",
+  "competencia": "Selecciona estrategias que conectan expresiones formales con significados conceptuales y fenómenos observables.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce la intervención docente más pertinente para evitar aprendizaje arbitrario de una fórmula.",
+  "evidencia": "Selecciona la opción que convierte una expresión formal en una relación comprensible para el estudiante.",
+  "tarea": "Elegir la mejor estrategia didáctica para dar sentido a un conocimiento formal.",
+  "contexto": "Un estudiante aprende una fórmula, pero no sabe cuándo usarla, qué representa cada variable ni cómo se relaciona con un fenómeno real. La docente quiere evitar que el aprendizaje sea arbitrario.",
+  "enunciado": "Un estudiante aprende una fórmula, pero no sabe cuándo usarla, qué representa cada variable ni cómo se relaciona con un fenómeno real. La docente quiere evitar que el aprendizaje sea arbitrario.\n\n¿Qué estrategia es la más pertinente?",
+  "opciones": {
+    "A": "Repetir varias veces el algoritmo para asegurar retención exacta del procedimiento.",
+    "B": "Diseñar situaciones en las que el estudiante conecte las variables con conceptos previos y fenómenos observables.",
+    "C": "Eliminar el uso de fórmulas y reemplazarlo por exploraciones libres sin formalización.",
+    "D": "Evaluar memoria de nombres y símbolos antes de trabajar cualquier aplicación."
+  },
+  "clave": "B",
+  "justificacion_clave": "La opción B es la mejor porque conecta la forma simbólica con significado conceptual y uso en situaciones reconocibles, lo que evita aprendizaje meramente mecánico.",
+  "distractores_funcion": {
+    "A": "Refleja la salida memorística que mantiene el problema inicial.",
+    "B": "Clave correcta: propone una mediación observable para dar sentido al conocimiento formal.",
+    "C": "Modela el error de oponer comprensión y formalización como si fueran incompatibles.",
+    "D": "Representa una respuesta evaluativa centrada en memoria aislada, no en comprensión."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El contexto es transversal y no introduce barreras irrelevantes."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Stem focalizado y opciones claramente distinguibles."
+  },
+  "metadata_editorial": {
+    "lote": "L033",
+    "ruta_origen": "content/items/stand-by/Aprendizaje significativo Ausubel/MTV_B22_I07.json",
+    "ruta_destino_propuesta": "content/items/Aprendizaje significativo Ausubel/MTV_B22_I07.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  }
+}
