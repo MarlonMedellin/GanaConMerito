@@ -1,0 +1,46 @@
+{
+  "id_item": "CB14_I03",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "Propósitos de la educación",
+  "subtema": "Vinculación entre saber disciplinar, contexto y participación comunitaria",
+  "competencia": "Selecciona propuestas pedagógicas que articulan saber disciplinar con necesidades del entorno y participación estudiantil.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce la propuesta de aula que mejor traduce los propósitos educativos en aprendizaje situado, análisis crítico del contexto y acción comunitaria.",
+  "evidencia": "Elige un proyecto pedagógico contextualizado y descarta transcripción mecánica, cuestionarios descontextualizados o charlas desligadas del currículo.",
+  "tarea": "Seleccionar la actividad que mejor conecta contenidos de ciencias naturales con una problemática ambiental del entorno.",
+  "contexto": "El departamento de ciencias naturales busca una estrategia para articular el estudio de ecosistemas con el análisis de problemas de contaminación del barrio y la participación estudiantil en soluciones locales.",
+  "enunciado": "¿Cuál propuesta responde mejor a este propósito formativo?",
+  "opciones": {
+    "A": "Diseñar un proyecto de aula donde los estudiantes investiguen una problemática ambiental de su comunidad, apliquen conceptos científicos y formulen alternativas de solución comunitarias.",
+    "B": "Asignar la transcripción de artículos virtuales sobre problemas globales y evaluar la actividad por caligrafía y extensión del texto.",
+    "C": "Realizar talleres de cuestionarios teóricos de opción múltiple sin vínculo con contextos locales ni análisis crítico.",
+    "D": "Organizar charlas motivacionales informales con invitados externos sin articulación curricular ni participación activa del alumnado."
+  },
+  "clave": "A",
+  "justificacion_clave": "La respuesta correcta conecta saber disciplinar, comprensión crítica del contexto y formulación de soluciones, que es precisamente donde el propósito educativo deja de ser declarativo y se vuelve observable.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Reduce la actividad a copia mecánica sin apropiación conceptual ni contextual.",
+    "C": "Mantiene el aprendizaje en un plano descontextualizado y de baja transferencia.",
+    "D": "Sustituye el trabajo pedagógico por exposición pasiva sin mediación curricular suficiente."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El contexto es accesible y relevante; la dificultad proviene del propósito pedagógico y no del ruido verbal."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "La tarea es única, comprensible y directamente conectada con el constructo."
+  },
+  "metadata_editorial": {
+    "lote": "L025",
+    "ruta_origen": "content/items/stand-by/Propósitos de la educación/CB14_I03.json",
+    "ruta_destino_propuesta": "content/items/Propósitos de la educación/CB14_I03.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  }
+}
