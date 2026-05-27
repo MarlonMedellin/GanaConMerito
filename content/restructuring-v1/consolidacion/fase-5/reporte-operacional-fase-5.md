@@ -6,9 +6,9 @@ Banco final usable cerrado en esta corrida.
 
 ## Resultado operativo
 
-Se publico banco final en rutas operativas del repo a partir de decisiones consolidadas de lote y versiones auditadas corregidas.
+Los 12 items listos para banco quedaron movidos a su ubicacion final dentro de `content/items/` en el repo.
 
-## Items publicados en banco operativo
+## Items movidos a ubicacion final
 
 - `CB01_I02`
 - `CB01_I03`
@@ -23,17 +23,22 @@ Se publico banco final en rutas operativas del repo a partir de decisiones conso
 - `MTV_B22_I08`
 - `CB14_I03`
 
-## Rutas operativas creadas o pobladas
+## Rutas finales usadas en content/items
 
-- `content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/`
-- `content/restructuring-v1/docente/normatividad/por_confirmar/funcional/`
+- `content/items/Currículo y Contexto Social/`
+- `content/items/Currículo, PEI y evaluación didáctica/`
+- `content/items/DUA, PIAR y ajustes razonables/`
+- `content/items/Evaluación tecnicista, punitiva y formativa/`
+- `content/items/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/`
+- `content/items/Aprendizaje significativo Ausubel/`
+- `content/items/Propósitos de la educación/`
 
 ## Criterio de cierre aplicado
 
-- solo quedaron en `banco-final.csv` items efectivamente publicados;
+- solo quedaron en `banco-final.csv` items efectivamente movidos a `content/items`;
 - se excluyeron registros heredados ambiguos;
 - no se reabrieron auditorias cerradas;
-- no se modifico `content/items/stand-by/`.
+- `content/items/stand-by/` se preservo como origen historico y no fue alterado.
 
 ## Deuda diferida por decision operativa
 
@@ -47,4 +52,4 @@ Se difiere para una corrida posterior:
 
 ## Confirmacion critica
 
-El banco final de esta fase queda materializado en el repo y no depende ya de filas heredadas ambiguas.
+El banco final de esta fase queda materializado en `content/items/` y no depende ya de filas heredadas ambiguas.
