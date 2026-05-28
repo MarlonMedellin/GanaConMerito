@@ -1,0 +1,34 @@
+{
+  "id": "NFL_B06_I02",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "normatividad",
+  "subarea": "tipos_de_normas",
+  "perfil": "rector_director_rural",
+  "tipoCompetencia": "funcional",
+  "competency": "normatividad_y_legislacion_educativa",
+  "nivelCognitivo": "comprension_literal_e_inferencial",
+  "dificultad": "media",
+  "contexto": "Ante una necesidad de ajuste a la estructura administrativa de la Secretaría de Educación, el Congreso tramita una norma que reforma la Constitución Política de Colombia.",
+  "enunciado": "Esta norma, que ocupa la cúspide de la jerarquía normativa interna, se denomina:",
+  "opciones": {
+    "A": "Ley estatutaria.",
+    "B": "Decreto ley.",
+    "C": "Acto legislativo.",
+    "D": "Resolución ejecutiva."
+  },
+  "respuestaCorrecta": "C",
+  "explicacionGeneral": "Los Actos Legislativos son los instrumentos jurídicos mediante los cuales se adiciona o reforma el texto de la Constitución Política de Colombia.",
+  "justificacionClave": "La opción C identifica correctamente el instrumento de reforma constitucional.",
+  "justificacionDistractores": {
+    "A": "Las leyes estatutarias desarrollan derechos fundamentales, pero no reforman la Constitución.",
+    "B": "Los decretos leyes son facultades extraordinarias del Presidente, no reforman la Constitución.",
+    "D": "Las resoluciones ejecutivas son actos administrativos que no tienen rango de reforma constitucional."
+  },
+  "normativaRefs": ["Constitución Política Art. 375"],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "NFL_B06_I02",
+    "rutaOrigen": "content/items/stand-by/Tipos de normas - acto legislativo, ley ordinaria y ley estatutaria/NFL_B06_I02.json"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "EIP_B01_I01",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "proyectos_pedagogicos",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "gestion_academica_y_curricular",
+  "nivelCognitivo": "comprension_literal_e_inferencial",
+  "dificultad": "media",
+  "contexto": "La Ley 115 de 1994 establece áreas obligatorias y fundamentales. Sin embargo, también exige que el currículo integre 'proyectos pedagógicos transversales'.",
+  "enunciado": "Un ejemplo fundamental de proyecto pedagógico transversal exigido por ley es:",
+  "opciones": {
+    "A": "La cátedra obligatoria de historia de la computación avanzada.",
+    "B": "La educación para la sexualidad y la construcción de ciudadanía.",
+    "C": "La formación exclusiva en gramática histórica de lenguas muertas.",
+    "D": "El entrenamiento en técnicas de marketing comercial empresarial."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La Ley 115 y los decretos reglamentarios exigen proyectos transversales como la educación sexual, la educación ambiental, la democracia y la educación vial, los cuales deben permear todas las áreas del conocimiento y no ser simplemente una cátedra más.",
+  "justificacionClave": "La opción B responde a la normativa vigente sobre proyectos obligatorios de carácter transversal.",
+  "justificacionDistractores": {
+    "A": "Es un tema técnico opcional o extracurricular, no un proyecto transversal de ley.",
+    "C": "Es un área académica específica, y los proyectos transversales buscan la integración, no el academicismo técnico aislado.",
+    "D": "El marketing es una formación técnica empresarial, ajena a los propósitos de formación ciudadana de la ley."
+  },
+  "normativaRefs": ["Ley 115 de 1994 (Artículo 36)"],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "EIP_B01_I01",
+    "rutaOrigen": "content/items/stand-by/Curr culo obligatorio y proyectos pedag gicos transversales/EIP_B01_I01.json"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "EIP_B01_I04",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "proyectos_pedagogicos",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "gestion_academica_y_curricular",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "La educación para la democracia es un proyecto transversal obligatorio.",
+  "enunciado": "Para que esta formación impacte efectivamente en el clima escolar, el docente debe:",
+  "opciones": {
+    "A": "Exigir que los estudiantes voten siempre por el candidato con mejores calificaciones académicas.",
+    "B": "Crear espacios donde se vivencien el diálogo, la construcción de consensos, la deliberación y el respeto a la diferencia en la toma de decisiones.",
+    "C": "Sancionar a los estudiantes que expresan opiniones diferentes a las del rector.",
+    "D": "Limitar la participación estudiantil a procesos de elección anual para cargos sin poder real."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La educación para la democracia no es solo enseñar el funcionamiento de las instituciones, sino generar una práctica de vida democrática dentro del aula, basada en el respeto, la deliberación y el ejercicio del poder compartido.",
+  "justificacionClave": "La opción B identifica las prácticas democráticas vivenciales exigidas por la ley.",
+  "justificacionDistractores": {
+    "A": "Vincular democracia con rendimiento académico es una distorsión de los derechos de representación estudiantil.",
+    "C": "Es una práctica autoritaria incompatible con los fines de la democracia escolar.",
+    "D": "La democracia se anula cuando se limitan los espacios de participación real."
+  },
+  "normativaRefs": ["Ley 115 de 1994 (Gobierno Escolar)"],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "EIP_B01_I04",
+    "rutaOrigen": "content/items/stand-by/Curr culo obligatorio y proyectos pedag gicos transversales/EIP_B01_I04.json"
+  }
+}

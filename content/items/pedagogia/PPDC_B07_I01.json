@@ -1,0 +1,37 @@
+{
+  "id": "PPDC_B07_I01",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "aula_invertida",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Un docente reorganiza el trabajo de aula implementando el modelo de Aula Invertida (Flipped Classroom). Asigna videos explicativos cortos y lecturas previas sobre conceptos teóricos para la casa, con el fin de dedicar el tiempo presencial del aula exclusivamente a la resolución de problemas grupales contextualizados y debates orientados.",
+  "enunciado": "Al descentralizar la instrucción magistral directa y cambiar el rol docente tradicional, el propósito pedagógico que se fortalece principalmente en los estudiantes es:",
+  "opciones": {
+    "A": "La memorización pasiva y literal de los datos abstractos contenidos en el software y los materiales audiovisuales entregados.",
+    "B": "La transferencia y aplicación guiada del conocimiento a través de la mediación pedagógica y el andamiaje interactivo directo.",
+    "C": "La disminución drástica del rigor conceptual de la asignatura al eliminar el control conductual tradicional del maestro.",
+    "D": "El desarrollo de un autoaprendizaje aislado e independiente que prescinde de la posición de garante del docente."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "El modelo de Aula Invertida busca transferir los procesos de aprendizaje de menor complejidad cognitiva (recordar, comprender de forma literal) fuera del aula, liberando el espacio presencial para que el docente guíe los procesos de mayor complejidad (aplicar, analizar, evaluar). Esto potencia la mediación didáctica y el andamiaje directo del error.",
+  "justificacionClave": "La opción B define el núcleo pedagógico del modelo: usar el tiempo presencial para la aplicación y la coconstrucción guiada del saber.",
+  "justificacionDistractores": {
+    "A": "Reduce el uso de tecnología a una simple memorización tradicional en el hogar, desnaturalizando la intención activa del giro de rol.",
+    "C": "Incurre en un sesgo erróneo al asumir que la flexibilización metodológica de aula deprime el rigor o la excelencia académica institucional.",
+    "D": "Plantea un aislamiento que destruye la corresponsabilidad y la función del docente como mediador y garante del andamiaje formativo."
+  },
+  "normativaRefs": [
+    "Ley 115 de 1994",
+    "Lineamientos de Innovación Educativa MEN"
+  ],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "PPDC_B07_I01",
+    "rutaOrigen": "content/items/stand-by/Aula invertida y cambio de rol docente/PPDC_B07_I01.json"
+  }
+}

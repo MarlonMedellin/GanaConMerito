@@ -1,0 +1,37 @@
+{
+  "id": "MTV_B22_I09",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "aprendizaje_significativo",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Un maestro de primaria desea que sus alumnos asimilen significativamente los conceptos de derechos y deberes ciudadanos dentro del aula. En lugar de hacerlos copiar de forma mecánica los artículos de la ley, organiza asambleas semanales donde el grupo debate y define de forma concertada las normas de convivencia del salón.",
+  "enunciado": "Al procesar la información a través de la vivencia participativa y la resolución de conflictos institucionales del entorno real, el docente está implementando una variable de:",
+  "opciones": {
+    "A": "Aprendizaje mecánico tradicional basado en el control punitivo y el silencio directivo rígido.",
+    "B": "Asimilación significativa situada, porque los conceptos adquieren sentido real al operar como herramientas de transformación del contexto de aula.",
+    "C": "Homogeneización doctrinal curricular para dar cumplimiento ciego a la planeación técnica fija.",
+    "D": "Educación no formal de carácter asistencialista desvinculada de la autonomía pedagógica del PEI."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "El modelo constructivista y la teoría de Ausubel determinan que los conceptos abstractos adquieren un significado psicológico real en el sujeto cuando son funcionales, es decir, cuando se vinculan de manera directa al contexto y operan para solucionar tensiones reales del entorno cotidiano de aula.",
+  "justificacionClave": "La opción B define el puente directo entre la vivencia democrática situada y la asimilación conceptual profunda del saber escolar.",
+  "justificacionDistractores": {
+    "A": "Corresponde al enfoque transmisionista tradicional centrado en la disciplina conductual pasiva, opuesto a la dinámica de asambleas.",
+    "C": "Reduce la práctica pedagógica a un formalismo burocrático de mallas y planeación fija sin importar la comprensión real.",
+    "D": "Invalida erróneamente una excelente práctica pedagógica formal institucional catalogándola como educación informal o asistencialista."
+  },
+  "normativaRefs": [
+    "Ley 115 de 1994 (Manual de Convivencia y Gobierno Escolar)",
+    "Ley 1620 de 2013 (Convivencia Escolar)"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "IDD_B17_I03",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "lectura_critica",
+  "subarea": "aptitud_verbal",
+  "perfil": "transversal",
+  "tipoCompetencia": "basica",
+  "competency": "interpretacion_e_inferencia_textual",
+  "nivelCognitivo": "comprension_literal_e_inferencial",
+  "dificultad": "media",
+  "contexto": "En un debate sobre modelos pedagógicos se afirma: 'El constructivismo exige un rol activo del estudiante; ________, el transmisionismo tradicional reduce al sujeto a un receptáculo pasivo de contenidos doctrinales'.",
+  "enunciado": "El conector gramatical y discursivo que restituye de forma correcta la cohesión de la oración introduciendo un contraste explícito es:",
+  "opciones": {
+    "A": "por consiguiente",
+    "B": "por el contrario",
+    "C": "es decir",
+    "D": "además"
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La estructura de la oración confronta dos modelos pedagógicos opuestos (el constructivismo y el transmisionismo) y dos roles estudiantiles contradictorios (activo y pasivo). Para marcar sintácticamente esta diferencia de sentido, la gramática exige un conector adversativo o de oposición directa como 'por el contrario'.",
+  "justificacionClave": "La opción B es la única alternativa adversativa que cumple la función textual de separar de forma clara los dos enfoques.",
+  "justificacionDistractores": {
+    "A": "Es un conector consecutivo o de causalidad que indicaría un efecto derivado, rompiendo la lógica de oposición de los modelos.",
+    "C": "Es un marcador de explicación o aclaración semántica que se usa para reiterar una idea con otras palabras, no para contrastar.",
+    "D": "Es un conector aditivo que acumula información de la misma naturaleza, incompatible con la contradicción de roles expuesta."
+  },
+  "normativeRefs": [
+    "Estándares Básicos de Competencias en Lenguaje MEN"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

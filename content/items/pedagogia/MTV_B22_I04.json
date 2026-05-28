@@ -1,0 +1,37 @@
+{
+  "id": "MTV_B22_I04",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "aprendizaje_significativo",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Un maestro desea asegurar que sus alumnos alcancen un aprendizaje significativo sobre los ecosistemas locales. Sabe que las condiciones para lograrlo incluyen no solo la estructura lógica del material de estudio, sino la disposición activa del propio sujeto evaluado.",
+  "enunciado": "Bajo las variables del modelo de Ausubel, para que se configure esta dimensión afectivo-motivacional del aprendizaje, se requiere de forma indispensable que el estudiante:",
+  "opciones": {
+    "A": "Manifieste una predisposición deliberada para relacionar el nuevo material de manera sustancial con su estructura cognitiva previa.",
+    "B": "Acepte de forma pasiva y silenciosa los dictados del docente para asegurar una calificación cuantitativa perfecta.",
+    "C": "Posea un coeficiente intelectual superior a la media de la población escolar verificado mediante pruebas estandarizadas externas.",
+    "D": "Ejecute de forma mecánica y repetitiva las guías de autoaprendizaje sin cuestionar el sentido didáctico de las tareas."
+  },
+  "respuestaCorrecta": "A",
+  "explicacionGeneral": "Ausubel señala que para que exista aprendizaje significativo deben cumplirse dos condiciones fundamentales: 1) que el material tenga significado lógico y 2) que el alumno muestre una predisposición o intencionalidad afectiva y cognitiva para relacionar las nuevas ideas con su saber previo, alejándose de la mera memorización literal.",
+  "justificacionClave": "La opción A define de manera exacta el componente actitudinal e intencional exigido por la teoría del aprendizaje significativo.",
+  "justificacionDistractores": {
+    "B": "Promueve una sumisión conductual pasiva de aula que bloquea la mediación activa y la autonomía crítica del sujeto.",
+    "C": "Establece un sesgo de exclusión psicométrica incompatible con las políticas vigentes de equidad material e inclusión educativa.",
+    "D": "Describe la esencia del aprendizaje repetitivo mecánico que Ausubel identifica como el principal obstáculo del saber significativo."
+  },
+  "normativaRefs": [
+    "Ley 115 de 1994 (Fines de la Educación)",
+    "Lineamientos Curriculares de Ciencias Naturales MEN"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

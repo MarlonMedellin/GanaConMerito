@@ -9,3 +9,101 @@ MIGRACION_ESTANDAR,IDD_B04_I05,content/items/pedagogia/IDD_B04_I05.json,Estructu
 MIGRACION_ESTANDAR,IDD_B04_I07,content/items/pedagogia/IDD_B04_I07.json,Estructura original sin retroalimentacion de distractores,Reconstruido pedagogicamente con el corpus analitico para el motor de IA.
 MIGRACION_ESTANDAR,EFCC_B01_I02,content/items/pedagogia/EFCC_B01_I02.json,Estructura original sin justificacion analitica,Se reescribieron las alternativas para asegurar distractores plausibles y situados.
 MIGRACION_ESTANDAR,EFCC_B01_I04,content/items/pedagogia/EFCC_B01_I04.json,Estructura original sin de justificacion analitica,Se reescribieron las alternativas para asegurar distractores plausibles y situados.
+tipo,id_item,ruta,descripcion,accion_tomada
+MIGRACION_ESTANDAR,gestion-liderazgo-apropiacion-pei-001,content/items/gestion/gestion-liderazgo-apropiacion-pei-001.json,Item legacy en formato original plano,Estructurado en 19 campos y aplanado a carpeta raiz de gestion sin subarboles.
+MIGRACION_ESTANDAR,GCM-DIR-GES-PEI-0001,content/items/gestion/GCM-DIR-GES-PEI-0001.json,Ubicacion profunda en subcarpeta experimental de gestion,Movido a la raiz oficial de gestion inyectando campos de perfil y version.
+MIGRACION_ESTANDAR,lectura-critica-analisis-argumentativo-001,content/items/lectura_critica/lectura-critica-analisis-argumentativo-001.json,Falta de distractores analiticos justificados,Reescrito para enriquecer la retroalimentacion requerida por el motor de IA.
+MIGRACION_ESTANDAR,lectura-critica-analisis-argumentativo-002,content/items/lectura_critica/lectura-critica-analisis-argumentativo-002.json,Falta de distractores analiticos justificados,Reescrito para enriquecer la retroalimentacion requerida por el motor de IA.
+MIGRACION_ESTANDAR,lectura-critica-estructura-textual-001,content/items/lectura_critica/lectura-critica-estructura-textual-001.json,Item sin modelo de competencias basicas transversales,Alineado a las competencias transversales evaluadas por el MEN.
+MIGRACION_ESTANDAR,lectura-critica-interpretacion-textual-001,content/items/lectura_critica/lectura-critica-interpretacion-textual-001.json,Item sin modelo de competencias basicas transversales,Alineado a las competencias transversales evaluadas por el MEN.
+MIGRACION_ESTANDAR,matematicas-analisis-datos-002,content/items/matematicas/matematicas-analisis-datos-002.json,Datos originales incompletos o sin justificar operacion,Reconstruido y situado en el contexto logico de coordinacion de convivencia.
+MIGRACION_ESTANDAR,matematicas-resolucion-problemas-001,content/items/matematicas/matematicas-resolucion-problemas-001.json,Datos originales sin justificar operacion,Estructurado con formulas LaTeX explicitas en los campos explicativos para mayor claridad del LLM.
+MIGRACION_ESTANDAR,matematicas-resolucion-problemas-002,content/items/matematicas/matematicas-resolucion-problemas-002.json,Datos originales sin justificar operacion,Estructurado con formulas LaTeX explicitas en los campos explicativos para mayor claridad del LLM.
+MIGRACION_ESTANDAR,normatividad-convivencia-escolar-001,content/items/normatividad/normatividad-convivencia-escolar-001.json,Item normativo sin distincion explicita de roles de Gobierno Escolar,Saneado y adaptado al rol de garante de aula.
+tipo,id_item,ruta,descripcion,accion_tomada
+MIGRACION_ESTANDAR,normatividad-convivencia-escolar-002,content/items/normatividad/normatividad-convivencia-escolar-002.json,Item legacy en formato original plano,Estructurado en 19 campos y aplanado a carpeta raiz de normatividad sin subarboles.
+MIGRACION_ESTANDAR,normatividad-evaluacion-normativa-001,content/items/normatividad/normatividad-evaluacion-normativa-001.json,Item legacy en formato original plano,Estructurado en 19 campos y aplanado a carpeta raiz de normatividad sin subarboles.
+MIGRACION_ESTANDAR,normatividad-funcion-docente-001,content/items/normatividad/normatividad-funcion-docente-001.json,Item legacy en formato original plano,Estructurado en 19 campos y aplanado a carpeta raiz de normatividad sin subarboles.
+MIGRACION_ESTANDAR,normatividad-inclusion-001,content/items/normatividad/normatividad-inclusion-001.json,Item legacy en formato original plano,Estructurado en 19 campos y aplanado a carpeta raiz de normatividad sin subarboles.
+MIGRACION_ESTANDAR,pedagogia-evaluacion-aprendizaje-001,content/items/pedagogia/pedagogia-evaluacion-aprendizaje-001.json,Item legacy en formato original plano,Estructurado en 19 campos y aplanado a carpeta raiz de pedagogia sin subarboles.
+MIGRACION_ESTANDAR,pedagogia-evaluacion-aprendizaje-002,content/items/pedagogia/pedagogia-evaluacion-aprendizaje-002.json,Item legacy en formato original plano,Estructurado en 19 campos y aplanado a carpeta raiz de pedagogia sin subarboles.
+MIGRACION_ESTANDAR,pedagogia-inclusion-001,content/items/pedagogia/pedagogia-inclusion-001.json,Item legacy en formato original plano,Estructurado en 19 campos y aplanado a carpeta raiz de pedagogia sin subarboles.
+MIGRACION_ESTANDAR,pedagogia-inclusion-002,content/items/pedagogia/pedagogia-inclusion-002.json,Item legacy en formato original plano,Estructurado en 19 campos y aplanado a carpeta raiz de pedagogia sin subarboles.
+MIGRACION_ESTANDAR,pedagogia-planeacion-aula-001,content/items/pedagogia/pedagogia-planeacion-aula-001.json,Item legacy en formato original plano,Estructurado en 19 campos y aplanado a carpeta raiz de pedagogia sin subarboles.
+MIGRACION_ESTANDAR,PPDC_B04_I01,content/items/pedagogia/PPDC_B04_I01.json,Ubicacion profunda en subcarpeta experimental por_confirmar/basica/,Movido a la raiz oficial de pedagogia inyectando los 19 campos analiticos de produccion.
+tipo,id_item,ruta,descripcion,accion_tomada
+MIGRACION_ESTANDAR,normatividad-convivencia-escolar-002,content/items/normatividad/normatividad-convivencia-escolar-002.json,Item legacy en formato original plano,Estructurado en 19 campos y aplanado a carpeta raiz de normatividad sin subarboles.
+MIGRACION_ESTANDAR,normatividad-evaluacion-normativa-001,content/items/normatividad/normatividad-evaluacion-normativa-001.json,Item legacy en formato original plano,Estructurado en 19 campos y aplanado a carpeta raiz de normatividad sin subarboles.
+MIGRACION_ESTANDAR,normatividad-funcion-docente-001,content/items/normatividad/normatividad-funcion-docente-001.json,Item legacy en formato original plano,Estructurado en 19 campos y aplanado a carpeta raiz de normatividad sin subarboles.
+MIGRACION_ESTANDAR,normatividad-inclusion-001,content/items/normatividad/normatividad-inclusion-001.json,Item legacy en formato original plano,Estructurado en 19 campos y aplanado a carpeta raiz de normatividad sin subarboles.
+MIGRACION_ESTANDAR,pedagogia-evaluacion-aprendizaje-001,content/items/pedagogia/pedagogia-evaluacion-aprendizaje-001.json,Item legacy en formato original plano,Estructurado en 19 campos y aplanado a carpeta raiz de pedagogia sin subarboles.
+MIGRACION_ESTANDAR,pedagogia-evaluacion-aprendizaje-002,content/items/pedagogia/pedagogia-evaluacion-aprendizaje-002.json,Item legacy en formato original plano,Estructurado en 19 campos y aplanado a carpeta raiz de pedagogia sin subarboles.
+MIGRACION_ESTANDAR,pedagogia-inclusion-001,content/items/pedagogia/pedagogia-inclusion-001.json,Item legacy en formato original plano,Estructurado en 19 campos y aplanado a carpeta raiz de pedagogia sin subarboles.
+MIGRACION_ESTANDAR,pedagogia-inclusion-002,content/items/pedagogia/pedagogia-inclusion-002.json,Item legacy en formato original plano,Estructurado en 19 campos y aplanado a carpeta raiz de pedagogia sin subarboles.
+MIGRACION_ESTANDAR,pedagogia-planeacion-aula-001,content/items/pedagogia/pedagogia-planeacion-aula-001.json,Item legacy en formato original plano,Estructurado en 19 campos y aplanado a carpeta raiz de pedagogia sin subarboles.
+MIGRACION_ESTANDAR,PPDC_B04_I01,content/items/pedagogia/PPDC_B04_I01.json,Ubicacion profunda en subcarpeta experimental por_confirmar/basica/,Movido a la raiz oficial de pedagogia inyectando los 19 campos analiticos de produccion.
+tipo,id_item,ruta,descripcion,accion_tomada
+MIGRACION_ESTANDAR,MTV_B22_I01,content/items/pedagogia/MTV_B22_I01.json,Item con metadatos reducidos en stand-by,Saneado e integrado a la raiz oficial de pedagogia con el esquema rico de 19 campos.
+MIGRACION_ESTANDAR,MTV_B22_I02,content/items/pedagogia/MTV_B22_I02.json,Item con metadatos reducidos en stand-by,Saneado e integrado a la raiz oficial de pedagogia con el esquema rico de 19 campos.
+MIGRACION_ESTANDAR,MTV_B22_I03,content/items/pedagogia/MTV_B22_I03.json,Item con metadatos reducidos en stand-by,Saneado e integrado a la raiz oficial de pedagogia con el esquema rico de 19 campos.
+MIGRACION_ESTANDAR,MTV_B22_I04,content/items/pedagogia/MTV_B22_I04.json,Item con metadatos reducidos en stand-by,Saneado e integrado a la raiz oficial de pedagogia con el esquema rico de 19 campos.
+MIGRACION_ESTANDAR,MTV_B22_I05,content/items/pedagogia/MTV_B22_I05.json,Item truncado parcialmente en sesion previa,Saneado por completo e inyectada la justificacion profunda de alternativas para la IA.
+MIGRACION_ESTANDAR,MTV_B22_I06,content/items/pedagogia/MTV_B22_I06.json,Item historico sin justificacion de distractores,Saneado e integrado a la raiz oficial de pedagogia con el esquema rico de 19 campos.
+MIGRACION_ESTANDAR,MTV_B22_I09,content/items/pedagogia/MTV_B22_I09.json,Item historico sin justificacion de distractores,Saneado e integrado a la raiz oficial de pedagogia con el esquema rico de 19 campos.
+MIGRACION_ESTANDAR,MTV_B22_I10,content/items/pedagogia/MTV_B22_I10.json,Item historico sin formulas LaTeX en justificacion,Reconstruido matematicamente agregando formulas en la justificacion clave para el LLM.
+MIGRACION_ESTANDAR,MTV_B22_I11,content/items/pedagogia/MTV_B22_I11.json,Item historico sin justificacion de distractores,Saneado e integrado a la raiz oficial de pedagogia con el esquema rico de 19 campos.
+MIGRACION_ESTANDAR,MTV_B22_I12,content/items/pedagogia/MTV_B22_I12.json,Item historico sin justificacion de distractores,Saneado e integrado a la raiz oficial de pedagogia con el esquema rico de 19 campos.
+tipo,id_item,ruta,descripcion,accion_tomada
+MIGRACION_ESTANDAR,IDD_B17_I01,content/items/lectura_critica/IDD_B17_I01.json,Item de aptitud verbal sin justificacion de distractores,Saneado y adaptado al estandar plano de 19 campos.
+MIGRACION_ESTANDAR,IDD_B17_I02,content/items/lectura_critica/IDD_B17_I02.json,Item de aptitud verbal sin justificacion de distractores,Saneado y adaptado al estandar plano de 19 campos.
+MIGRACION_ESTANDAR,IDD_B17_I03,content/items/lectura_critica/IDD_B17_I03.json,Item de aptitud verbal sin justificacion de distractores,Saneado y adaptado al estandar plano de 19 campos.
+MIGRACION_ESTANDAR,IDD_B17_I04,content/items/lectura_critica/IDD_B17_I04.json,Item de aptitud verbal sin justificacion de distractores,Saneado y adaptado al estandar plano de 19 campos.
+MIGRACION_ESTANDAR,IDD_B17_I05,content/items/lectura_critica/IDD_B17_I05.json,Item de aptitud verbal sin justificacion de distractores,Saneado y adaptado al estandar plano de 19 campos.
+MIGRACION_ESTANDAR,PPDC_B07_I01,content/items/pedagogia/PPDC_B07_I01.json,Item atrapado en backlog de subcarpeta tematica stand-by,Migrado a la raiz oficial de pedagogia enriqueciendo el corpus psicometrico.
+MIGRACION_ESTANDAR,IDD_B16_I01,content/items/pedagogia/IDD_B16_I01.json,Item atrapado en backlog de subcarpeta tematica stand-by,Migrado a la raiz oficial de pedagogia enriqueciendo el corpus psicometrico.
+MIGRACION_ESTANDAR,CEOL_B10_I01,content/items/normatividad/CEOL_B10_I01.json,Item atrapado en backlog de subcarpeta tematica stand-by,Migrado a la raiz oficial de normatividad enriqueciendo el corpus psicometrico.
+MIGRACION_ESTANDAR,CEOL_B10_I02,content/items/normatividad/CEOL_B10_I02.json,Item atrapado en backlog de subcarpeta tematica stand-by,Migrado a la raiz oficial de normatividad enriqueciendo el corpus psicometrico.
+MIGRACION_ESTANDAR,CEOL_B10_I03,content/items/normatividad/CEOL_B10_I03.json,Item atrapado en backlog de subcarpeta tematica stand-by,Migrado a la raiz oficial de normatividad enriqueciendo el corpus psicometrico.
+MIGRACION_ESTANDAR,CEOL_B10_I04,content/items/normatividad/CEOL_B10_I04.json,Item atrapado en backlog de subcarpeta tematica stand-by,Migrado a la raiz oficial de normatividad enriqueciendo el corpus psicometrico.
+MIGRACION_ESTANDAR,CEOL_B10_I05,content/items/normatividad/CEOL_B10_I05.json,Item atrapado en backlog de subcarpeta tematica stand-by,Migrado a la raiz oficial de normatividad enriqueciendo el corpus psicometrico.
+MIGRACION_ESTANDAR,CB05_I01,content/items/normatividad/CB05_I01.json,Item atrapado en backlog de subcarpeta tematica stand-by,Migrado a la raiz oficial de normatividad asignando perfil competencial comportamental.
+MIGRACION_ESTANDAR,CB05_I02,content/items/normatividad/CB05_I02.json,Item atrapado en backlog de subcarpeta tematica stand-by,Migrado a la raiz oficial de normatividad asignando perfil competencial comportamental.
+MIGRACION_ESTANDAR,CB05_I03,content/items/normatividad/CB05_I03.json,Item atrapado en backlog de subcarpeta tematica stand-by,Migrado a la raiz oficial de normatividad asignando perfil competencial comportamental.
+MIGRACION_ESTANDAR,GA02_B03_I01,content/items/pedagogia/GA02_B03_I01.json,Item atrapado en backlog de subcarpeta tematica stand-by,Migrado a la raiz de pedagogia con el nuevo esquema unificado de 19 campos.
+MIGRACION_ESTANDAR,GA02_B03_I02,content/items/pedagogia/GA02_B03_I02.json,Item atrapado en backlog de subcarpeta tematica stand-by,Migrado a la raiz de pedagogia con el nuevo esquema unificado de 19 campos.
+MIGRACION_ESTANDAR,GA02_B03_I03,content/items/pedagogia/GA02_B03_I03.json,Item atrapado en backlog de subcarpeta tematica stand-by,Migrado a la raiz de pedagogia con el nuevo esquema unificado de 19 campos.
+MIGRACION_ESTANDAR,GA02_B03_I04,content/items/pedagogia/GA02_B03_I04.json,Item atrapado en backlog de subcarpeta tematica stand-by,Migrado a la raiz de pedagogia con el nuevo esquema unificado de 19 campos.
+MIGRACION_ESTANDAR,GA02_B05_I01_concepto_curriculo,content/items/pedagogia/GA02_B05_I01_concepto_curriculo.json,Item atrapado en backlog de subcarpeta tematica stand-by,Migrado a la raiz de pedagogia con el nuevo esquema unificado de 19 campos.
+tipo,id_item,ruta,descripcion,accion_tomada
+MIGRACION_ESTANDAR,NFL_B03_I01,content/items/normatividad/NFL_B03_I01.json,Item con metadatos reducidos,Saneado e integrado a la raiz oficial de normatividad con metadatos de 19 campos.
+MIGRACION_ESTANDAR,NFL_B03_I02,content/items/normatividad/NFL_B03_I02.json,Item con metadatos reducidos,Saneado e integrado a la raiz oficial de normatividad con metadatos de 19 campos.
+MIGRACION_ESTANDAR,NFL_B03_I05,content/items/normatividad/NFL_B03_I05.json,Item con metadatos reducidos,Saneado e integrado a la raiz oficial de normatividad con metadatos de 19 campos.
+MIGRACION_ESTANDAR,DIL_B03_I01,content/items/normatividad/DIL_B03_I01.json,Item con metadatos reducidos,Saneado e integrado a la raiz oficial de normatividad con metadatos de 19 campos.
+MIGRACION_ESTANDAR,DIL_B03_I02,content/items/normatividad/DIL_B03_I02.json,Item con metadatos reducidos,Saneado e integrado a la raiz oficial de normatividad con metadatos de 19 campos.
+MIGRACION_ESTANDAR,DIL_B03_I03,content/items/normatividad/DIL_B03_I03.json,Item con metadatos reducidos,Saneado e integrado a la raiz oficial de normatividad con metadatos de 19 campos.
+MIGRACION_ESTANDAR,MTV_B22_I01,content/items/pedagogia/MTV_B22_I01.json,Item historico sin justificacion de distractores,Saneado e integrado a la raiz oficial de pedagogia con esquema de 19 campos.
+MIGRACION_ESTANDAR,MTV_B22_I02,content/items/pedagogia/MTV_B22_I02.json,Item historico sin justificacion de distractores,Saneado e integrado a la raiz oficial de pedagogia con esquema de 19 campos.
+MIGRACION_ESTANDAR,MTV_B22_I03,content/items/pedagogia/MTV_B22_I03.json,Item historico sin justificacion de distractores,Saneado e integrado a la raiz oficial de pedagogia con esquema de 19 campos.
+MIGRACION_ESTANDAR,MTV_B22_I04,content/items/pedagogia/MTV_B22_I04.json,Item historico sin justificacion de distractores,Saneado e integrado a la raiz oficial de pedagogia con esquema de 19 campos.
+tipo,id_item,ruta,descripcion,accion_tomada
+MIGRACION_ESTANDAR,DIL_B03_I04,content/items/normatividad/DIL_B03_I04.json,Item sin justificacion analitica profunda,Reconstruido bajo el estándar pedagógico de 19 campos.
+MIGRACION_ESTANDAR,DIL_B05_I01,content/items/normatividad/DIL_B05_I01.json,Item sin justificacion analitica profunda,Reconstruido bajo el estándar pedagógico de 19 campos.
+MIGRACION_ESTANDAR,DIL_B05_I02,content/items/normatividad/DIL_B05_I02.json,Item sin justificacion analitica profunda,Reconstruido bajo el estándar pedagógico de 19 campos.
+MIGRACION_ESTANDAR,DIL_B05_I03,content/items/normatividad/DIL_B05_I03.json,Item sin justificacion analitica profunda,Reconstruido bajo el estándar pedagógico de 19 campos.
+MIGRACION_ESTANDAR,CB12_I01,content/items/gestion/CB12_I01.json,Ubicación redundante,Movido a la raiz oficial de gestion inyectando metadatos de 19 campos.
+MIGRACION_ESTANDAR,EIP_B05_I01,content/items/pedagogia/EIP_B05_I01.json,Ubicacion profunda,Aplanado a carpeta raiz de pedagogia con esquema de datos enriquecido.
+MIGRACION_ESTANDAR,EIP_B05_I02,content/items/pedagogia/EIP_B05_I02.json,Ubicacion profunda,Aplanado a carpeta raiz de pedagogia con esquema de datos enriquecido.
+MIGRACION_ESTANDAR,EIP_B05_I03,content/items/pedagogia/EIP_B05_I03.json,Ubicacion profunda,Aplanado a carpeta raiz de pedagogia con esquema de datos enriquecido.
+MIGRACION_ESTANDAR,EIP_B05_I04,content/items/pedagogia/EIP_B05_I04.json,Ubicacion profunda,Aplanado a carpeta raiz de pedagogia con esquema de datos enriquecido.
+MIGRACION_ESTANDAR,EIP_B06_I01,content/items/pedagogia/EIP_B06_I01.json,Ubicacion profunda,Aplanado a carpeta raiz de pedagogia con esquema de datos enriquecido.
+tipo,id_item,ruta,descripcion,accion_tomada
+MIGRACION_ESTANDAR,EIP_B06_I02,content/items/pedagogia/EIP_B06_I02.json,Item sin justificacion de distractores,Enriquecido con justificaciones analiticas psicopedagogicas.
+MIGRACION_ESTANDAR,EIP_B06_I03,content/items/pedagogia/EIP_B06_I03.json,Item sin justificacion de distractores,Enriquecido con justificaciones analiticas psicopedagogicas.
+MIGRACION_ESTANDAR,EIP_B06_I04,content/items/pedagogia/EIP_B06_I04.json,Item sin justificacion de distractores,Enriquecido con justificaciones analiticas psicopedagogicas.
+MIGRACION_ESTANDAR,IDD_B08_I01,content/items/pedagogia/IDD_B08_I01.json,Item sin justificacion de distractores,Enriquecido con justificaciones analiticas psicopedagogicas.
+MIGRACION_ESTANDAR,EIP_B01_I01,content/items/pedagogia/EIP_B01_I01.json,Ubicacion en stand-by,Migrado a la raiz oficial de pedagogia con esquema de 19 campos.
+MIGRACION_ESTANDAR,EIP_B01_I02,content/items/pedagogia/EIP_B01_I02.json,Ubicacion en stand-by,Migrado a la raiz oficial de pedagogia con esquema de 19 campos.
+MIGRACION_ESTANDAR,EIP_B01_I03,content/items/pedagogia/EIP_B01_I03.json,Ubicacion en stand-by,Migrado a la raiz oficial de pedagogia con esquema de 19 campos.
+MIGRACION_ESTANDAR,EIP_B01_I04,content/items/pedagogia/EIP_B01_I04.json,Ubicacion en stand-by,Migrado a la raiz oficial de pedagogia con esquema de 19 campos.
+MIGRACION_ESTANDAR,EIP_B01_I05,content/items/pedagogia/EIP_B01_I05.json,Ubicacion en stand-by,Migrado a la raiz oficial de pedagogia con esquema de 19 campos.
+MIGRACION_ESTANDAR,IDD_B15_I01,content/items/normatividad/IDD_B15_I01.json,Ubicacion en stand-by,Integrado a la raiz oficial de normatividad.

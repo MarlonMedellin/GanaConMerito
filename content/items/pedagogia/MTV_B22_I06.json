@@ -1,0 +1,37 @@
+{
+  "id": "MTV_B22_I06",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "aprendizaje_significativo",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "Un docente de biología diseña un organizador previo complejo para introducir la teoría de la evolución. Al aplicarlo en un aula de grado noveno, nota que los alumnos se confunden aún más debido a que carecen por completo de las nociones básicas indispensables de genética y herencia mendeliana.",
+  "enunciado": "Analizando esta falla didáctica bajo los supuestos de Ausubel, la aplicación del organizador previo resultó ineficaz porque el docente ignoró que:",
+  "opciones": {
+    "A": "El material carecía de significado lógico intrínseco de acuerdo con los textos comerciales del MEN.",
+    "B": "La estructura cognitiva de los estudiantes no poseía los conceptos inclusores o anclajes mínimos para asimilar el nuevo saber.",
+    "C": "Los estudiantes presentaban barreras de aprendizaje severas que requerían un PIAR de educación especial segregada.",
+    "D": "El instrumento de medición no incluía una escala de calificación cuantitativa de corte punitivo inmediato."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "Para que un organizador previo funcione como puente cognitivo, debe existir en la mente del estudiante un conocimiento previo relevante (concepto inclusor o ancla) donde la nueva información pueda engancharse. Si el vacío conceptual previo es absoluto, el organizador previo no tiene donde apoyarse, impidiendo el anclaje y la inclusión significativa.",
+  "justificacionClave": "La opción B devela la causa psicopedagógica del fracaso del andamiaje al evidenciar la ausencia de conceptos inclusores en la estructura cognitiva del alumno.",
+  "justificacionDistractores": {
+    "A": "Atribuye el problema a la lógica del material o a factores comerciales externos, omitiendo la dimensión interna cognitiva del sujeto que aprende.",
+    "C": "Incurre en un sesgo patologizante de aula al sugerir segregación especial ante una simple desconexión de secuencia curricular didáctica.",
+    "D": "Busca una salida punitiva e instrumental basada en notas sumativas, desatendiendo el diagnóstico del proceso cognitivo real."
+  },
+  "normativaRefs": [
+    "Lineamientos Curriculares de Ciencias Naturales MEN",
+    "Decreto 1075 de 2015"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

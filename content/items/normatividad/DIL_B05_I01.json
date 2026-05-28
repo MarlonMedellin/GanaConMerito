@@ -1,0 +1,34 @@
+{
+  "id": "DIL_B05_I01",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "normatividad",
+  "subarea": "menor_infractor",
+  "perfil": "docente_orientador",
+  "tipoCompetencia": "funcional",
+  "competency": "orientacion_y_seguimiento_de_estudiantes",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "Un adolescente de 15 años es sorprendido por un docente portando un arma blanca al interior del plantel (Situación Tipo III).",
+  "enunciado": "Ante la presunta comisión de una conducta punible, el docente y el rector deben activar el protocolo de:",
+  "opciones": {
+    "A": "Justicia restaurativa interna realizada únicamente por el consejo académico.",
+    "B": "Atención Integral remitiendo a las autoridades competentes (Policía, ICBF, Fiscalía) por ser una presunta conducta delictiva.",
+    "C": "Conciliación privada entre los padres del infractor y la víctima sin informar a la autoridad educativa.",
+    "D": "Suspensión del menor hasta la mayoría de edad sin acceso a modalidades de educación flexible."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "Ante una Situación Tipo III, que involucra presuntos delitos (como el porte de armas), el protocolo de la Ley 1620 y el Decreto 1075 obliga a la institución a reportar inmediatamente a las autoridades competentes (Policía/Fiscalía) y aplicar las medidas de atención y protección integral del Sistema Nacional de Convivencia.",
+  "justificacionClave": "La opción B sigue el rigor del protocolo de ley para hechos que superan el ámbito disciplinario escolar.",
+  "justificacionDistractores": {
+    "A": "El Consejo Académico no tiene competencia para juzgar conductas punibles delictivas.",
+    "C": "La conciliación privada en delitos es ineficaz e ilegal al tratarse de un menor y un bien jurídico protegido.",
+    "D": "La suspensión indefinida sin oferta educativa contraviene el derecho fundamental a la educación."
+  },
+  "normativaRefs": ["Ley 1620 de 2013 (Situaciones Tipo III)", "Ley 1098 de 2006"],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "DIL_B05_I01",
+    "rutaOrigen": "content/items/stand-by/Menor infractor, edad penal y rutas de protecci n/DIL_B05_I01.json"
+  }
+}

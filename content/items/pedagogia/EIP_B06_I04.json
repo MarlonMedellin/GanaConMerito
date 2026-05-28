@@ -1,0 +1,34 @@
+{
+  "id": "EIP_B06_I04",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "teoria_curricular",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "comprension_literal_e_inferencial",
+  "dificultad": "media",
+  "contexto": "Bruner sostiene que el currículo debe ser 'intelectualmente honesto'.",
+  "enunciado": "Esto implica que, al enseñar conceptos complejos a niños pequeños:",
+  "opciones": {
+    "A": "Deben evitarse por completo los conceptos científicos hasta la universidad.",
+    "B": "Debe traducirse la estructura lógica de la disciplina a formas de pensamiento que el niño ya posee, sin desvirtuar el concepto.",
+    "C": "Se deben enseñar los conceptos siempre en su forma final y académica más rigurosa.",
+    "D": "Es preferible que el niño memorice términos técnicos sin importar si entiende su significado."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La honestidad intelectual bruneriana radica en que cualquier concepto se puede enseñar si el maestro es capaz de transponer el conocimiento a la estructura mental del estudiante, respetando la lógica de la ciencia pero usando los medios pedagógicos adecuados.",
+  "justificacionClave": "La opción B explica la esencia de la transposición didáctica según Bruner.",
+  "justificacionDistractores": {
+    "A": "Bruner argumenta que la educación no debe posponer temas, sino adaptar su forma de presentación.",
+    "C": "Esto contradice la tesis de la transposición didáctica; enseñar lo complejo tal cual es sin mediación es pedagogía inútil.",
+    "D": "La memorización sin sentido es precisamente lo que Bruner y Ausubel critican en el aprendizaje mecánico."
+  },
+  "normativaRefs": ["Lineamientos Pedagógicos MEN"],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "EIP_B06_I04",
+    "rutaOrigen": "content/items/stand-by/Curr culo en espiral, Bruner y material concreto/EIP_B06_I04.json"
+  }
+}

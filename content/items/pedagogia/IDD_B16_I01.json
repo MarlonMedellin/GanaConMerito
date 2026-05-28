@@ -1,0 +1,38 @@
+{
+  "id": "IDD_B16_I01",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "autonomia_escolar",
+  "perfil": "rector_director_rural",
+  "tipoCompetencia": "funcional",
+  "competency": "direccionamiento_institucional_y_gestion_del_clima_escolar",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "El padre de un estudiante matriculado en un colegio privado oficial interpone una queja formal argumentando que la institución obliga a su hijo a asistir a clases de educación religiosa de corte doctrinal específico, a pesar de haber manifestado formalmente por escrito su derecho a la objeción de conciencia y la libertad de cultos.",
+  "enunciado": "Para resolver este caso conforme al marco constitucional y legal de la autonomía escolar y los derechos fundamentales, la determinación correcta del Rector debe ser:",
+  "opciones": {
+    "A": "Mantener la obligatoriedad de la clase invocando la autonomía curricular privada de la institución aprobada en el pacto de matrícula y el PEI.",
+    "B": "Respetar la libertad de cultos, exonerar al estudiante de la formación doctrinal obligatoria y asignarle una actividad alternativa de carácter ético o de investigación secular.",
+    "C": "Sugerir a la familia la desvinculación inmediata y el retiro del estudiante del plantel para evitar sesgos o fisuras en la identidad religiosa del colegio.",
+    "D": "Remitir el caso al Comité de Convivencia Escolar para que sancione disciplinariamente al menor por incumplimiento de deberes académicos de la malla."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "Aunque la Ley 115 reconoce la autonomía escolar y permite que los colegios privados tengan un énfasis confesional o institucional en su PEI, la Corte Constitucional es taxativa en que los derechos fundamentales a la libertad de cultos y la objeción de conciencia priman sobre cualquier contrato de matrícula. La institución está obligada a ofrecer alternativas pedagógicas no doctrinales sin penalizar cuantitativamente al menor.",
+  "justificacionClave": "La opción B operativiza la protección del derecho fundamental a la diversidad y la libertad, resguardando la equidad material dentro del servicio educativo formal.",
+  "justificacionDistractores": {
+    "A": "Incurre en un abuso de la autonomía escolar, asumiendo falsamente que las reglas privadas de matrícula pueden violar derechos constitucionales de libertad.",
+    "C": "Constituye una exclusión o expulsión pasiva indirecta por motivos religiosos, lo cual viola el derecho al acceso a la educación y configura discriminación abierta.",
+    "D": "Aplica una lógica punitiva disciplinaria desproporcionada que vulnera de forma severa el debido proceso y la dignidad humana del estudiante."
+  },
+  "normativaRefs": [
+    "Constitución Política de Colombia (Artículo 19 - Libertad de Cultos)",
+    "Ley 115 de 1994 (Artículo 23 - Áreas obligatorias y libertad religiosa)",
+    "Decreto 1075 de 2015"
+  ],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "IDD_B16_I01",
+    "rutaOrigen": "content/items/stand-by/Autonom a escolar, religi n, colegios privados y equidad/IDD_B16_I01.json"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "IDD_B08_I01",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "teoria_curricular",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "Un maestro diseña una unidad curricular usando 'material concreto' y secuencias espirales para enseñar fracciones. Al evaluar, nota que los estudiantes manipulan bien los materiales físicos, pero fallan al escribir la operación numérica en sus cuadernos.",
+  "enunciado": "Para asegurar el éxito del modelo de Bruner, el maestro debe garantizar la transición hacia:",
+  "opciones": {
+    "A": "La etapa de representación simbólica, conectando la manipulación física (enativa) con la abstracción matemática.",
+    "B": "La eliminación del material concreto, forzando la escritura mecánica sin mediación.",
+    "C": "La repetición infinita de ejercicios escritos de suma de fracciones.",
+    "D": "La sustitución del docente por software de aprendizaje autónomo."
+  },
+  "respuestaCorrecta": "A",
+  "explicacionGeneral": "Bruner subraya que el aprendizaje ocurre mediante un proceso tripartito: enativo, icónico y simbólico. El maestro debe mediar el paso hacia la etapa simbólica (la escritura matemática), evitando el salto al vacío que ocurre si se manipula pero no se formaliza el concepto.",
+  "justificacionClave": "La opción A completa el ciclo de representación del aprendizaje bruneriano.",
+  "justificacionDistractores": {
+    "B": "La eliminación brusca de los apoyos sin la debida formalización simbólica genera caos cognitivo.",
+    "C": "La repetición sin comprensión es el modelo tradicional de aprendizaje memorístico que falla en la transferencia.",
+    "D": "La tecnología no sustituye la necesaria mediación didáctica del maestro para formalizar la abstracción."
+  },
+  "normativaRefs": ["Lineamientos Curriculares de Matemáticas MEN"],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "IDD_B08_I01",
+    "rutaOrigen": "content/items/stand-by/Curr culo en espiral, Bruner y material concreto/IDD_B08_I01.json"
+  }
+}

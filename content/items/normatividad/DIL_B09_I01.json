@@ -1,0 +1,34 @@
+{
+  "id": "DIL_B09_I01",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "normatividad",
+  "subarea": "proteccion_infancia",
+  "perfil": "docente_orientador",
+  "tipoCompetencia": "funcional",
+  "competency": "normatividad_y_legislacion_educativa",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "Una familia en extrema pobreza retira a su hijo de 13 años del colegio para que trabaje en la recolección de café. El rector tiene dudas sobre si debe reportar el caso ante el ICBF por tratarse de un menor en situación de riesgo.",
+  "enunciado": "Ante la prohibición legal de vincular menores a actividades laborales, el rector debe proceder reportando el caso ante el ICBF bajo la tipificación de:",
+  "opciones": {
+    "A": "Vulneración de derechos por trabajo infantil.",
+    "B": "Inasistencia escolar justificada por necesidad económica.",
+    "C": "Ejercicio de la libertad de empresa de la familia.",
+    "D": "Participación legítima del menor en la economía familiar."
+  },
+  "respuestaCorrecta": "A",
+  "explicacionGeneral": "El trabajo infantil antes de la edad mínima permitida está prohibido por ley y es una vulneración directa de los derechos fundamentales del niño. Es obligación del rector reportar la situación al ICBF para restablecer el derecho a la educación.",
+  "justificacionClave": "La opción A identifica correctamente la tipificación legal de la irregularidad detectada.",
+  "justificacionDistractores": {
+    "B": "La necesidad económica no es una excusa legal para desescolarizar y explotar laboralmente a un menor.",
+    "C": "La libertad de empresa no autoriza actividades que violen derechos humanos fundamentales.",
+    "D": "No existe la 'participación legítima' en el trabajo infantil prohibido por la normativa laboral y de infancia."
+  },
+  "normativaRefs": ["Ley 1098 de 2006 (Prohibición de trabajo infantil)"],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "DIL_B09_I01",
+    "rutaOrigen": "content/items/stand-by/Trabajo infantil y edad m nima/DIL_B09_I01.json"
+  }
+}

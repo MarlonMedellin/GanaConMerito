@@ -1,0 +1,37 @@
+{
+  "id": "IDD_B17_I02",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "lectura_critica",
+  "subarea": "aptitud_verbal",
+  "perfil": "transversal",
+  "tipoCompetencia": "basica",
+  "competency": "lectura_critica_y_evaluacion_de_argumentos",
+  "nivelCognitivo": "evaluacion_y_reflexion_critica",
+  "dificultad": "alta",
+  "contexto": "Analice la siguiente relación de analogía basada en la praxis educativa: El director es al Proyecto Educativo Institucional (PEI) lo que el docente de aula es a:",
+  "enunciado": "Para completar la analogía de manera consistente respetando la relación de jerarquía, función y diseño curricular situada en el sistema educativo, la opción correcta es:",
+  "opciones": {
+    "A": "El Manual de Convivencia.",
+    "B": "La planeación curricular o secuencia didáctica.",
+    "C": "El escalafón docente nacional.",
+    "D": "La planta física del plantel."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La analogía establece una relación de correspondencia funcional y ejecutiva: el director lidera, gobierna y orienta el macrodocumento estratégico de la institución (PEI), mientras que el docente de aula gobierna, diseña y ejecuta de forma directa su propia planeación curricular o secuencia didáctica en el microcontexto del salón.",
+  "justificacionClave": "La opción B respeta la proporcionalidad exacta de la función rectora frente al documento de nivel macro y la función docente frente al nivel micro.",
+  "justificacionDistractores": {
+    "A": "El Manual de Convivencia es un documento transversal que vincula a toda la comunidad y es co-diseñado por el Consejo Directivo, no es el microdiseño exclusivo del maestro.",
+    "C": "El escalafón docente es un marco normativo administrativo de carrera estatal, ajeno al diseño curricular operativo de aula.",
+    "D": "La planta física corresponde a un recurso de la gestión administrativa y logística, sin relación con el andamiaje pedagógico."
+  },
+  "normativeRefs": [
+    "Decreto 1075 de 2015",
+    "Estándares Básicos de Competencias en Lenguaje MEN"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

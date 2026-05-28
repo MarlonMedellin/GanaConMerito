@@ -1,0 +1,36 @@
+{
+  "id": "IDD_B17_I01",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "lectura_critica",
+  "subarea": "aptitud_verbal",
+  "perfil": "transversal",
+  "tipoCompetencia": "basica",
+  "competency": "identificacion_de_la_estructura_y_coherencia_textual",
+  "nivelCognitivo": "comprension_literal_e_inferencial",
+  "dificultad": "media",
+  "contexto": "Considere la siguiente secuencia desordenada de enunciados para la construcción de un párrafo cohesivo sobre gestión escolar:\n1. Por lo tanto, el Plan de Mejoramiento Institucional (PMI) debe reestructurarse anualmente.\n2. La autoevaluación institucional revela las metas de calidad que no fueron alcanzadas.\n3. Estas metas insatisfechas actúan como insumos directos para la toma de decisiones pedagógicas.",
+  "enunciado": "Para organizar los enunciados de forma que constituyan un fragmento textual con coherencia lineal y cohesión gramatical, el orden secuencial correcto es:",
+  "opciones": {
+    "A": "1, 3, 2",
+    "B": "2, 3, 1",
+    "C": "3, 2, 1",
+    "D": "2, 1, 3"
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La cohesión textual exige un ordenamiento lógico donde cada oración se encadene con la anterior mediante repetición de palabras clave o pronombres anafóricos. El enunciado 2 introduce el concepto amplio ('metas de calidad no alcanzadas'). El enunciado 3 se enlaza directamente mediante el pronombre demostrativo ('Estas metas insatisfechas'). Finalmente, el enunciado 1 cierra la secuencia introduciendo la consecuencia lógica mediante el conector conclusivo 'Por lo tanto'.",
+  "justificacionClave": "La opción B establece la única secuencia lineal sintáctica y semánticamente defendible del microbloque discursivo.",
+  "justificacionDistractores": {
+    "A": "Inicia con un conector de consecuencia lógica ('Por lo tanto'), lo cual rompe la estructura de apertura e inteligibilidad del párrafo.",
+    "C": "Arranca con un pronombre demostrativo ('Estas metas') que carece de antecedente o referente textual previo en la cadena de lectura.",
+    "D": "Ubica el cierre conclusivo (1) en el medio de la secuencia, dejando el enunciado explicativo (3) aislado e incoherente al final."
+  },
+  "normativaRefs": [
+    "Estándares Básicos de Competencias en Lenguaje MEN"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "NFL_B03_I03",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "normatividad",
+  "subarea": "debido_proceso",
+  "perfil": "rector_director_rural",
+  "tipoCompetencia": "funcional",
+  "competency": "normatividad_y_legislacion_educativa",
+  "nivelCognitivo": "evaluacion_y_reflexion_critica",
+  "dificultad": "alta",
+  "contexto": "Tras un proceso disciplinario, un rector decide sancionar a un estudiante con una suspensión de 10 días, notificándole verbalmente la decisión en el pasillo, sin emitir acto administrativo motivado y sin informar los recursos de reposición a los que tiene derecho el acudiente.",
+  "enunciado": "La omisión del rector al no emitir un acto administrativo motivado en este proceso constituye una violación directa al principio de:",
+  "opciones": {
+    "A": "Autonomía administrativa para la gestión ágil de los conflictos escolares.",
+    "B": "Debido proceso y derecho a la contradicción, al impedir que el afectado conozca las razones y fundamentos de la sanción para defenderse.",
+    "C": "Eficiencia en la resolución de problemas institucionales para descongestionar la secretaría académica.",
+    "D": "Jerarquía escolar que protege la imagen de la autoridad frente a los reclamos de los padres."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "Toda sanción disciplinaria en el marco educativo debe estar contenida en un acto administrativo motivado. La motivación es el sustento fáctico y legal que permite al ciudadano comprender los motivos de la decisión y, si es el caso, ejercer el derecho a la contradicción a través de los recursos de ley.",
+  "justificacionClave": "La opción B explica cómo la falta de motivación formal invalida el proceso al dejar al estudiante en estado de indefensión.",
+  "justificacionDistractores": {
+    "A": "La autonomía no faculta la arbitrariedad, sino que exige el cumplimiento de formas legales para que los actos administrativos sean válidos.",
+    "C": "La celeridad o eficiencia no pueden sobreponerse a las garantías fundamentales de rango constitucional como el debido proceso.",
+    "D": "El uso de la jerarquía como escudo para evitar la motivación es un ejercicio despótico incompatible con un Estado social de derecho."
+  },
+  "normativaRefs": ["Constitución Política Art. 29", "Código de Procedimiento Administrativo y de lo Contencioso Administrativo"],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "NFL_B03_I03",
+    "rutaOrigen": "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I03.json"
+  }
+}

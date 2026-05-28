@@ -1,0 +1,34 @@
+{
+  "id": "DIL_B03_I03",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "normatividad",
+  "subarea": "evolucion_normativa_infancia",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "normatividad_y_legislacion_educativa",
+  "nivelCognitivo": "comprension_literal_e_inferencial",
+  "dificultad": "media",
+  "contexto": "En un taller sobre el Código de Infancia, se debate el concepto de 'interés superior del niño'.",
+  "enunciado": "El interés superior del niño se entiende como:",
+  "opciones": {
+    "A": "La facultad de los padres para decidir qué carrera universitaria seguirá su hijo antes de que termine el bachillerato.",
+    "B": "Un imperativo que obliga a todas las personas (familia, Estado, sociedad) a garantizar la satisfacción integral de los derechos de los menores por encima de cualquier otro interés.",
+    "C": "La posibilidad de que el menor de edad participe en contratos laborales de tiempo completo para contribuir al sustento del hogar.",
+    "D": "La preferencia institucional por los hijos de familias con mayor aporte económico a la caja de compensación escolar."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "El interés superior es un principio orientador de obligatoria aplicación en toda decisión administrativa, judicial o pedagógica que involucre a un menor. Significa que, ante cualquier conflicto, el bienestar del niño debe prevalecer sobre intereses de terceros.",
+  "justificacionClave": "La opción B define con precisión constitucional el principio protector que debe guiar todas las actuaciones del sistema escolar.",
+  "justificacionDistractores": {
+    "A": "Es un ámbito de decisión familiar que no constituye un interés superior del menor, sino una opción de desarrollo personal futuro.",
+    "C": "Es una forma de trabajo infantil prohibida y que atenta contra los derechos fundamentales del niño, ignorando su desarrollo integral.",
+    "D": "Representa una práctica discriminatoria de exclusión y priorización económica que vulnera los derechos a la igualdad y la equidad."
+  },
+  "normativaRefs": ["Ley 1098 de 2006 (Artículo 8 - Interés superior)"],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "DIL_B03_I03",
+    "rutaOrigen": "content/items/stand-by/Evoluci n normativa - C digo del Menor vs. Ley 1098/DIL_B03_I03.json"
+  }
+}

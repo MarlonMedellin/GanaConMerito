@@ -1,0 +1,37 @@
+{
+  "id": "MTV_B22_I11",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "aprendizaje_significativo",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Un maestro de lengua castellana de básica primaria nota que sus estudiantes asimilan rápidamente el uso de los adjetivos calificativos en clase cuando los asocian con descripciones directas de sus mascotas o personajes de ficción favoritos, logrando una transferencia semántica inmediata en sus producciones escritas autónomas.",
+  "enunciado": "Este proceso de anclaje donde el concepto abstracto se subordina a nociones específicas previas muy claras y familiares para el sujeto se denomina teóricamente:",
+  "opciones": {
+    "A": "Inclusión inclusiva o asimilación subordinada, donde el nuevo saber se conecta como un caso específico de una estructura cognitiva preexistente.",
+    "B": "Aprendizaje de trivia descontextualizada de corte netamente doctrinal y memorístico tradicional.",
+    "C": "Segregación o exclusión pasiva institucional basada en las pautas rígidamente cronometradas del SIEE.",
+    "D": "Flexibilización curricular de corte asistencialista para mitigar barreras de la neurodiversidad severa."
+  },
+  "respuestaCorrecta": "A",
+  "explicacionGeneral": "En el marco de la teoría de asimilación de Ausubel, la inclusión subordinada ocurre cuando las nuevas ideas se conectan jerárquicamente bajo conceptos más amplios e inclusivos ya establecidos en la mente del estudiante (los anclajes). El uso de ejemplos familiares afectivos (mascotas/personajes) facilita esta inclusión didáctica formativa.",
+  "justificacionClave": "La opción A define con rigor técnico psicopedagógico el concepto fundamental de inclusión subordinada propio de la estructura ausueliana.",
+  "justificacionDistractores": {
+    "B": "Califica erróneamente un proceso cognitivo significativo exitoso de aula como un modelo memorístico doctrinal e instrumental obsoleto.",
+    "C": "Introduce términos de exclusión y marcos del SIEE institucional que no corresponden en absoluto a la dimensión cognitiva del ítem.",
+    "D": "Confunde un andamiaje didáctico estándar de motivación de aula con un ajuste razonable formal (PIAR) para la discapacidad severa."
+  },
+  "normativaRefs": [
+    "Estándares Básicos de Competencias en Lenguaje MEN",
+    "Decreto 1075 de 2015"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

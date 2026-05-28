@@ -1,0 +1,36 @@
+{
+  "id": "IDD_B17_I04",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "lectura_critica",
+  "subarea": "aptitud_verbal",
+  "perfil": "transversal",
+  "tipoCompetencia": "basica",
+  "competency": "interpretacion_e_inferencia_textual",
+  "nivelCognitivo": "comprension_literal_e_inferencial",
+  "dificultad": "media",
+  "contexto": "Considere la siguiente afirmación: 'La evaluación formativa busca la mejora continua del aprendizaje, ________ recolecta información en tiempo real para reestructurar la planeación del docente'.",
+  "enunciado": "El conector discursivo que completa la oración añadiendo una causa o un motivo justificado que explica el mecanismo del concepto es:",
+  "opciones": {
+    "A": "ya que",
+    "B": "sin embargo",
+    "C": "en conclusión",
+    "D": "a pesar de que"
+  },
+  "respuestaCorrecta": "A",
+  "explicacionGeneral": "La segunda parte de la oración ('recolecta información en tiempo real...') opera como la justificación causal o el mecanismo técnico explicativo de por qué la evaluación formativa logra la mejora continua. Por lo tanto, requiere un conector de corte causal como 'ya que' o 'puesto que'.",
+  "justificacionClave": "La opción A introduce correctamente la relación de subordinación causal que dota de lógica interna a la proposición pedagógica.",
+  "justificacionDistractores": {
+    "B": "Es un conector adversativo que introduce una restricción o limitación, rompiendo la coherencia positiva de la frase.",
+    "C": "Es un conector conclusivo que sirve para cerrar un bloque discursivo complejo, no para subordinar una causa inmediata.",
+    "D": "Es un marcador concesivo que introduce un obstáculo ineficaz, lo cual desnaturaliza la armonía de la definición dada."
+  },
+  "normativeRefs": [
+    "Estándares Básicos de Competencias en Lenguaje MEN"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

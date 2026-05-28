@@ -1,0 +1,37 @@
+{
+  "id": "CEOL_B10_I05",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "normatividad",
+  "subarea": "organizacion_educativa",
+  "perfil": "rector_director_rural",
+  "tipoCompetencia": "funcional",
+  "competency": "normatividad_y_legislacion_educativa",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "Un alcalde local emite una circular municipal ordenando a los rectores de las instituciones oficiales de su jurisdicción que suspendan temporalmente la enseñanza de las áreas obligatorias de ciencias sociales y educación ética durante un mes, con el fin de concentrar a los estudiantes en un programa municipal intensivo de ordenamiento del tráfico y civismo urbano.",
+  "enunciado": "Frente a esta orden de la autoridad civil territorial, y con el fin de resguardar el marco constitucional de las competencias curriculares del servicio educativo formal, el rector debe determinar que:",
+  "opciones": {
+    "A": "Debe acatar de forma ciega e inmediata la circular del alcalde debido a que el mandatario civil ejerce el control absoluto del currículo del municipio.",
+    "B": "La definición de las áreas obligatorias y fundamentales está fijada taxativamente por la Ley General de Educación nacional, por lo que un alcalde carece de competencia para suspender el plan de estudios obligatorio.",
+    "C": "Puede suspender las clases de ciencias sociales si el municipio le compensa económicamente mediante un incentivo monetario al consejo directivo.",
+    "D": "Debe delegar la decisión final en un plebiscito abierto de los estudiantes para eximirse de responsabilidad administrativa."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "Las áreas fundamentales y obligatorias de la educación formal están determinadas por el Congreso de la República a través de la Ley 115 de 1994. Ni los alcaldes ni los gobernadores, a pesar de ser los nominadores o jefes civiles de la entidad territorial certificada, tienen la facultad legal o constitucional de modificar, recortar o suspender los contenidos curriculares nacionales básicos obligatorios fijados por el legislador.",
+  "justificacionClave": "La opción B defiende la supremacía de la ley de la República frente a una extralimitación de funciones de una autoridad municipal o local civil.",
+  "justificacionDistractores": {
+    "A": "Muestra desconocimiento del principio de legalidad y jerarquía normativa, acatando un acto administrativo ilegal que vulnera la Ley General de Educación.",
+    "C": "Propone una salida de transacción comercial ilegal que configura una falta gravísima contra la administración pública y la continuidad del servicio.",
+    "D": "Utiliza un mecanismo de democracia participativa interna (plebiscito) de forma ilegal para evadir la responsabilidad y la posición de garante que la ley le otorga exclusivamente al rector."
+  },
+  "normativaRefs": [
+    "Ley 115 de 1994 (Artículo 23 - Áreas obligatorias y fundamentales)",
+    "Decreto 1075 de 2015"
+  ],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "CEOL_B10_I05",
+    "rutaOrigen": "content/items/stand-by/Autonom a institucional, enfoques de convivencia y organizaci n del servicio educativo/CEOL_B10_I05.json"
+  }
+}

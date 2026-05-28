@@ -1,0 +1,34 @@
+{
+  "id": "NFL_B03_I01",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "normatividad",
+  "subarea": "debido_proceso",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "normatividad_y_legislacion_educativa",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "Un estudiante es acusado por sus pares de hurto dentro del aula. Sin realizar una indagación previa, el rector ordena la expulsión inmediata del menor fundamentado en el Manual de Convivencia que permite sancionar faltas graves sin el agotamiento de descargos para proteger el 'buen nombre' de la institución.",
+  "enunciado": "Frente a la vulneración del debido proceso, el docente de aula, en ejercicio de su deber de garante, debe:",
+  "opciones": {
+    "A": "Apoyar la decisión rectoral para mantener la autoridad y evitar que el colegio sea visto como un espacio permisivo ante el delito.",
+    "B": "Solicitar la apertura de una indagación formal que garantice el derecho a la defensa, la contradicción y la presunción de inocencia, conforme a la Constitución.",
+    "C": "Solicitar que se le entregue el dinero presuntamente hurtado al docente para que este proceda a una devolución privada.",
+    "D": "Ignorar el procedimiento administrativo y aconsejar al estudiante que se retire voluntariamente para evitar una mancha en su hoja de vida."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "El debido proceso (Art. 29 C.P.) es un derecho fundamental irrenunciable. Ningún Manual de Convivencia puede estar por encima de la Constitución. La sanción sin descargos es nula de pleno derecho.",
+  "justificacionClave": "La opción B garantiza la protección de los derechos fundamentales del estudiante sobre la arbitrariedad administrativa.",
+  "justificacionDistractores": {
+    "A": "El apoyo al error procedimental del rector hace al docente cómplice de una violación constitucional flagrante.",
+    "C": "La gestión privada de hurtos desvirtúa la función pedagógica y puede incurrir en encubrimiento de delitos.",
+    "D": "El retiro voluntario forzado es una modalidad de exclusión ilegal que niega el acceso al debido proceso."
+  },
+  "normativaRefs": ["Constitución Política Art. 29", "Ley 1098 de 2006"],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "NFL_B03_I01",
+    "rutaOrigen": "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I01.json"
+  }
+}

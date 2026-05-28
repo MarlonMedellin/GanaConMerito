@@ -1,0 +1,37 @@
+{
+  "id": "MTV_B22_I01",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "aprendizaje_significativo",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Un docente de ciencias de básica primaria desea iniciar una unidad sobre el ciclo del agua. Para asegurar un aprendizaje significativo bajo los postulados de Ausubel, decide indagar qué nociones o explicaciones informales tienen sus estudiantes sobre la lluvia y la evaporación antes de introducir las definiciones científicas.",
+  "enunciado": "La acción metodológica que ejecuta el docente al explorar estas ideas previas constituye, dentro de la teoría del aprendizaje significativo, una fase de:",
+  "opciones": {
+    "A": "Activación y análisis de los conceptos ancla o inclusores necesarios para el anclaje de la nueva información estructural.",
+    "B": "Evaluación sumativa de control conductual para sancionar a los estudiantes que carecen de vocabulario científico.",
+    "C": "Transmisión magistral e impositiva de contenidos doctrinales para homogeneizar los saberes del aula.",
+    "D": "Memorización literal mecánica e independiente previa a la aplicación de un examen tradicional."
+  },
+  "respuestaCorrecta": "A",
+  "explicacionGeneral": "En la teoría de David Ausubel, la estructura cognitiva previa del alumno es el factor principal que influye en el aprendizaje significativo. Identificar los conceptos inclusores o 'anclas' permite al maestro tender puentes didácticos adecuados (andamiaje) para que la nueva información se asimile de forma sustancial y no arbitraria.",
+  "justificacionClave": "La opción A define con rigor conceptual la función psicopedagógica de recuperar los saberes previos como base del proceso de asimilación cognitiva.",
+  "justificacionDistractores": {
+    "B": "Aplica una lógica punitiva y sumativa descontextualizada que contradice el enfoque formativo y constructivista del aprendizaje.",
+    "C": "Corresponde al modelo pedagógico transmisionista tradicional, el cual es el opuesto teórico de la asimilación significativa.",
+    "D": "Describe un aprendizaje puramente memorístico o receptivo mecánico, el cual bloquea la reestructuración conceptual profunda del estudiante."
+  },
+  "normativaRefs": [
+    "Ley 115 de 1994 (Fines de la Educación)",
+    "Lineamientos Curriculares de Ciencias Naturales MEN"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "MTV_B22_I10",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "aprendizaje_significativo",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "Un docente de química de educación media observa que sus estudiantes confunden de manera sistemática los conceptos de enlace iónico y enlace covalente en los exámenes escritos tradicionales, resolviendo los ejercicios mediante la memorización algorítmica de fórmulas abstractas descontextualizadas.",
+  "enunciado": "Con el propósito de inducir una reconciliación integradora de estas estructuras conceptuales bajo los principios de Ausubel, la intervención didáctica más pertinente del maestro en su ambiente de aula es:",
+  "opciones": {
+    "A": "Incrementar el rigor punitivo de las pruebas escritas y sancionar cuantitativamente los errores mecánicos ortográficos de las fórmulas.",
+    "B": "Diseñar una secuencia de aula basada en la modelación molecular y diagramas de contraste gráfico que evidencien de forma explícita las diferencias y similitudes en la transferencia o compartición de electrones en situaciones reales.",
+    "C": "Exigir la transcripción literal repetitiva de los capítulos del libro guía de ciencias naturales durante el tiempo de permanencia laboral.",
+    "D": "Suspender las actividades analíticas de laboratorio y concentrar los esfuerzos en el dictado magistral de definiciones doctrinales directas."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La reconciliación integradora ocurre cuando el estudiante identifica de forma explícita las relaciones, similitudes y diferencias sustanciales entre conceptos que antes consideraba aislados o idénticos. El uso de modelación situada y organizadores gráficos dinámicos facilita este andamiaje cognitivo para superar el aprendizaje mecánico.",
+  "justificacionClave": "La opción B promueve herramientas didácticas de contraste explícito y modelación para alcanzar la diferenciación progresiva del saber químico.",
+  "justificacionDistractores": {
+    "A": "Aplica un enfoque conductista y punitivo centrado exclusivamente en la medición sumativa formal que invisibiliza el proceso cognitivo subyacente.",
+    "C": "Utiliza la transcripción literal mecánica, la cual es la antítesis del aprendizaje significativo y satura la jornada sin valor didáctico.",
+    "D": "Regresa al modelo tradicional transmisionista magistral puro, anulando el pensamiento crítico, la indagación y la validez psicométrica del banco."
+  },
+  "normativaRefs": [
+    "Lineamientos Curriculares de Ciencias Naturales MEN",
+    "Decreto 1075 de 2015"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

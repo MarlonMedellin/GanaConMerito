@@ -1,0 +1,37 @@
+{
+  "id": "MTV_B22_I05",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "aprendizaje_significativo",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "Un docente planifica la enseñanza del concepto de 'democracia participativa'. En lugar de dictar de forma literal la definición constitucional, decide proponer un juego de roles donde los estudiantes deben resolver un conflicto comunitario real de la escuela mediante la deliberación y el voto de mecanismos del Gobierno Escolar.",
+  "enunciado": "Al estructurar la clase a partir de la acción situada y la experiencia directa, el tipo de aprendizaje que se promueve, según la tipología de Ausubel, es significativo por:",
+  "opciones": {
+    "A": "Recepción mecánica abstracta, ya que el alumno asimila pasivamente los contenidos preestablecidos de la ley.",
+    "B": "Descubrimiento situado, debido a que el sujeto reordena la información y extrae la regla general resolviendo el problema del entorno.",
+    "C": "Homogeneización doctrinal punitiva, porque impone un criterio de superioridad moral excluyente ante el grupo.",
+    "D": "Memorización literal de mallas curriculares fijas, debido a que prioriza el control secuencial de la Guía 34."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "David Ausubel distingue entre aprendizaje por recepción (donde el contenido se presenta en su forma final) y aprendizaje por descubrimiento (donde el alumno debe reorganizar el material e inferir la regla o concepto). Al situar al estudiante ante un problema real donde experimenta y deduce los mecanismos democráticos, el aprendizaje opera por descubrimiento significativo.",
+  "justificacionClave": "La opción B identifica con precisión la modalidad de descubrimiento dentro del marco de la asimilación ausubeliana aplicada a la educación ciudadana.",
+  "justificacionDistractores": {
+    "A": "Describe la recepción tradicional de corte memorístico, que anula la participación activa y el conflicto cognitivo propuesto en el juego de roles.",
+    "C": "Introduce sesgos de carácter punitivo y adoctrinamiento doctrinal ajenos por completo a las bases de la didáctica activa y holística.",
+    "D": "Reduce el proceso de aula a un control burocrático e instrumental de documentos de mallas curriculares fijas, sin valor de asimilación real."
+  },
+  "normativaRefs": [
+    "Constitución Política de Colombia de 1991",
+    "Ley 115 de 1994 (Gobierno Escolar)"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

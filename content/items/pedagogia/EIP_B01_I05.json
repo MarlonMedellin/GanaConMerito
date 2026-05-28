@@ -1,0 +1,34 @@
+{
+  "id": "EIP_B01_I05",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "proyectos_pedagogicos",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "gestion_academica_y_curricular",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Ante una alta incidencia de accidentes de tránsito en la periferia de la escuela rural, se decide integrar la educación vial al currículo de manera transversal.",
+  "enunciado": "La forma correcta de integrar esta transversalidad sin fragmentar el conocimiento es:",
+  "opciones": {
+    "A": "Hacer que todos los estudiantes salgan al parque del pueblo a dirigir el tráfico automotor.",
+    "B": "Incorporar temáticas de seguridad vial, física de movimientos y análisis de riesgos en los proyectos integradores de ciencia, sociales y matemáticas.",
+    "C": "Suspender las clases de matemáticas para dictar clases sobre normas de tránsito.",
+    "D": "Pedir que cada docente dicte su materia normalmente sin hacer mención alguna a los riesgos de la comunidad."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La transversalidad no consiste en reemplazar áreas ni en actividades aisladas, sino en tejer los contenidos de las materias fundamentales con los problemas del contexto, logrando una enseñanza integrada y situada.",
+  "justificacionClave": "La opción B demuestra la articulación efectiva de áreas disciplinares bajo un eje común de seguridad vial.",
+  "justificacionDistractores": {
+    "A": "Es una actividad de alto riesgo que desborda las competencias pedagógicas y pone en peligro la seguridad de los menores.",
+    "C": "La transversalidad no implica la sustitución de las áreas fundamentales de ley.",
+    "D": "Omite la responsabilidad pedagógica de abordar los problemas urgentes del entorno de la escuela."
+  },
+  "normativaRefs": ["Ley 115 de 1994", "Ley 1503 de 2011"],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "EIP_B01_I05",
+    "rutaOrigen": "content/items/stand-by/Curr culo obligatorio y proyectos pedag gicos transversales/EIP_B01_I05.json"
+  }
+}

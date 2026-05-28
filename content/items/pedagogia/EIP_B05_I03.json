@@ -1,0 +1,34 @@
+{
+  "id": "EIP_B05_I03",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "desarrollo_preescolar",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Un niño de preescolar frecuentemente se ubica en el extremo opuesto del salón cuando el docente da instrucciones desde el tablero, evidenciando dificultades para seguir secuencias temporales en las actividades.",
+  "enunciado": "Esta conducta, evaluada desde la dimensión corporal y el desarrollo cognitivo-espacial, sugiere la necesidad de:",
+  "opciones": {
+    "A": "Sancionar al estudiante por desatención deliberada frente al docente.",
+    "B": "Fortalecer la estructuración espacio-temporal mediante actividades de movimiento corporal, ubicación en el espacio y referencia de lateralidad.",
+    "C": "Ignorar la conducta y esperar a que el estudiante se adapte solo al espacio del aula.",
+    "D": "Recomendar el cambio de colegio por inadaptación espacial."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La desorientación en el espacio y la incapacidad de seguir secuencias temporales en la primera infancia son indicadores de procesos de lateralidad y estructura espacio-temporal no consolidados. El docente debe mediar mediante juegos de movimiento y referencia corporal.",
+  "justificacionClave": "La opción B propone un andamiaje motor y espacial que responde al diagnóstico de desarrollo del niño.",
+  "justificacionDistractores": {
+    "A": "El castigo es inútil frente a un proceso de maduración neurológica y psicomotriz que no depende de la voluntad del alumno.",
+    "C": "La omisión del docente impide la intervención temprana que podría facilitar el éxito en procesos posteriores como la lectoescritura.",
+    "D": "La reubicación escolar es una medida extrema injustificada ante un proceso normal de aprestamiento pedagógico."
+  },
+  "normativaRefs": ["Lineamientos Pedagógicos de Educación Inicial"],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "EIP_B05_I03",
+    "rutaOrigen": "content/items/stand-by/Motricidad, aprestamiento y ubicaci n espacio-temporal/EIP_B05_I03.json"
+  }
+}

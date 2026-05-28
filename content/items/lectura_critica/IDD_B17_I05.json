@@ -1,0 +1,37 @@
+{
+  "id": "IDD_B17_I05",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "lectura_critica",
+  "subarea": "aptitud_verbal",
+  "perfil": "transversal",
+  "tipoCompetencia": "basica",
+  "competency": "lectura_critica_y_evaluacion_de_argumentos",
+  "nivelCognitivo": "evaluacion_y_reflexion_critica",
+  "dificultad": "alta",
+  "contexto": "Lea con atención la siguiente tesis sobre política curricular: 'La estandarización absoluta del currículo obligatorio ahoga la autonomía escolar y desatiende el enfoque territorial de las regiones más apartadas'.",
+  "enunciado": "Un argumento consistente que sirve para dar soporte sólido y defender técnicamente la tesis anterior es:",
+  "opciones": {
+    "A": "Las instituciones educativas de las zonas urbanas principales muestran mejores resultados en las pruebas de estado estandarizadas.",
+    "B": "La diversidad cultural y geográfica del país exige que las secuencias didácticas se adapten a las realidades y necesidades vivas del contexto social local.",
+    "C": "El MEN debe centralizar de forma obligatoria el 100% de los planes de estudio y las mallas curriculares de los colegios.",
+    "D": "Los manuales de convivencia deben priorizar el control conductual estricto para uniformar el rendimiento académico grupal."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "Para soportar una tesis que critica la estandarización por ignorar el enfoque territorial, el argumento debe demostrar la necesidad e importancia de dicho enfoque. Afirmar que la diversidad exige la adaptación a las realidades locales valida directamente la postura contra un currículo rígido y centralizado.",
+  "justificacionClave": "La opción B actúa como una premisa de soporte lógico que dota de validez y justifica la tesis del enunciado.",
+  "justificacionDistractores": {
+    "A": "Describe un dato estadístico urbano que no valida el enfoque territorial de las zonas apartadas, desenfocándose del núcleo de la tesis.",
+    "C": "Es una afirmación que apoya la centralización y la estandarización, contradiciendo frontalmente la postura crítica de la tesis.",
+    "D": "Se desvía hacia temas de convivencia, disciplina y control conductual, ajenos por completo al debate sobre diseño curricular situado."
+  },
+  "normativeRefs": [
+    "Ley 115 de 1994 (Autonomía escolar)",
+    "Estándares Básicos de Competencias en Lenguaje MEN"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "EIP_B06_I02",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "teoria_curricular",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "Un equipo docente de área propone una malla curricular donde los temas se repiten de forma idéntica en todos los grados escolares sin aumentar el nivel de complejidad, bajo la justificación de que 'es mejor asegurar que todos aprendan lo básico antes de avanzar'.",
+  "enunciado": "Esta estructura curricular es pedagógicamente ineficiente porque contraviene el principio del currículo en espiral de Bruner, que postula:",
+  "opciones": {
+    "A": "La prohibición absoluta de repetir cualquier tema después de su primera exposición.",
+    "B": "La necesidad de una secuenciación cíclica que permita revisitar los conceptos con mayor grado de abstracción y profundidad en cada nivel.",
+    "C": "La eliminación de los niveles escolares para que todos los estudiantes aprendan a su propio ritmo sin estructura.",
+    "D": "Que la profundidad del concepto debe ser la misma desde preescolar hasta el grado once."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "El currículo en espiral no busca la repetición simple, sino la profundización y complejización progresiva del saber. Se basa en que la estructura de la disciplina debe mantenerse, pero su representación (enativa, icónica o simbólica) debe ajustarse al desarrollo cognitivo creciente del estudiante.",
+  "justificacionClave": "La opción B define el principio dinámico y progresivo del currículo bruneriano.",
+  "justificacionDistractores": {
+    "A": "Confunde el currículo en espiral con una restricción de repetición, cuando la clave es la repetición con evolución.",
+    "C": "Anula la estructura organizativa de la escuela formal, lo cual no es el objetivo de la propuesta de Bruner.",
+    "D": "La falta de progresión en la complejidad es precisamente la falla que la teoría del currículo en espiral busca solucionar."
+  },
+  "normativaRefs": ["Lineamientos Curriculares MEN"],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "EIP_B06_I02",
+    "rutaOrigen": "content/items/stand-by/Curr culo en espiral, Bruner y material concreto/EIP_B06_I02.json"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "MTV_B22_I02",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "aprendizaje_significativo",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Un maestro nota que sus estudiantes logran definir textualmente las partes de la célula y sus funciones según el libro guía, pero en las prácticas de laboratorio confunden los orgánulos y no logran explicar cómo interactúa la célula como un sistema biológico interconectado.",
+  "enunciado": "Bajo la perspectiva de Ausubel, este fenómeno pedagógico evidencia que el aprendizaje alcanzado por los alumnos ha sido de tipo:",
+  "opciones": {
+    "A": "Significativo por recepción, debido a que comprenden la lógica holística estructural profunda del fenómeno.",
+    "B": "Memorístico o mecánico, ya que la información se almacenó de forma arbitraria y literal sin conectarse con estructuras de aplicación.",
+    "C": "Socio-crítico transformador, porque cuestiona las dinámicas tradicionales de la medición sumativa escolar.",
+    "D": "Autónomo por descubrimiento guiado, debido a que resolvieron de forma independiente un dilema situado."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "Cuando los contenidos se incorporan a la estructura cognitiva de manera puramente arbitraria y literal, se produce un aprendizaje mecánico o memorístico. Aunque el estudiante puede repetir el concepto ante una demanda de memoria textual, es incapaz de transferir el saber, resolver problemas situados o manifestar una comprensión sustancial.",
+  "justificacionClave": "La opción B describe con precisión el diagnóstico cognitivo del aprendizaje memorístico tradicional según la taxonomía ausubeliana.",
+  "justificacionDistractores": {
+    "A": "Es incorrecto, pues el aprendizaje significativo faculta la transferencia y la explicación relacional, ausentes en el caso expuesto.",
+    "C": "Confunde un vacío de asimilación didáctica con un enfoque socio-crítico de emancipación escolar y comunitaria.",
+    "D": "El caso no describe un proceso de indagación o descubrimiento autónomo, sino la reproducción pasiva de un texto comercial."
+  },
+  "normativaRefs": [
+    "Lineamientos Curriculares de Ciencias Naturales MEN",
+    "Decreto 1075 de 2015"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}
