@@ -1,0 +1,37 @@
+{
+  "id": "pedagogia-inclusion-002",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "inclusion_y_equidad",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "Un estudiante de grado octavo presenta dislexia severa diagnosticada, lo que le provoca serias dificultades en la velocidad de lectura mecánica y en la escritura ortográfica, afectando su rendimiento en las pruebas escritas tradicionales de opción múltiple cronometradas, a pesar de demostrar un excelente manejo conceptual de forma verbal.",
+  "enunciado": "Para operativizar un ajuste razonable pertinente en el marco de la construcción del PIAR de este alumno, el docente del área debe modificar el proceso de evaluación priorizando:",
+  "opciones": {
+    "A": "Eximir por completo al estudiante de presentar cualquier tipo de examen y asignarle la nota promedio que obtenga el resto del curso.",
+    "B": "Concederle tiempo adicional durante las pruebas escritas, permitir el uso de herramientas de software de dictado por voz y valorar sus competencias mediante sustentaciones orales estructuradas.",
+    "C": "Exigirle que realice las mismas pruebas escritas rígidamente cronometradas para asegurar la equidad formal respecto a sus compañeros.",
+    "D": "Aconsejar a la familia que desvincule al menor del bachillerato regular y lo inscriba en un instituto de validación de educación no formal."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "Un ajuste razonable no altera el estándar ni el derecho a aprender el contenido curricular; lo que modifica son las acciones, los soportes, el tiempo o los instrumentos para eliminar la barrera específica que bloquea la expresión de la competencia del sujeto. En casos de dislexia, el soporte tecnológico de voz y la priorización del canal oral garantizan que se mida el conocimiento y no la velocidad mecánica de lectura.",
+  "justificacionClave": "La opción B diseña ajustes razonables directos, observables y viables en el aula regular, cumpliendo con la flexibilización de procesos que estipula el PIAR.",
+  "justificacionDistractores": {
+    "A": "Adopta una medida asistencialista de abandono pedagógico que anula la retroalimentación formativa y desmotiva el esfuerzo académico del alumno.",
+    "C": "Mantiene una barrera de aprendizaje bajo una noción errónea de igualdad formal, incurriendo en una discriminación indirecta por omisión de ajustes.",
+    "D": "Representa una exclusión institucional pasiva que vulnera el derecho a la permanencia en el sistema formal de educación obligatoria."
+  },
+  "normativaRefs": [
+    "Decreto 1421 de 2017",
+    "Ley Estatutaria 1618 de 2013"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

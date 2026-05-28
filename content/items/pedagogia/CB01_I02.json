@@ -1,0 +1,37 @@
+{
+  "id": "CB01_I02",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "curriculo_y_contexto",
+  "perfil": "coordinador",
+  "tipoCompetencia": "funcional",
+  "competency": "gestion_academica_y_curricular",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "En los resultados del diagnóstico institucional de una escuela ubicada en una zona de alta vulnerabilidad socioeconómica, se observa una desconexión crítica entre los contenidos curriculares impartidos y las realidades del entorno laboral y comunitario de los jóvenes, lo que incide en el aumento de la deserción escolar.",
+  "enunciado": "Frente a esta problemática, y con el fin de restructurar el currículo desde un enfoque holístico e innovador, el equipo directivo pedagógico debe priorizar:",
+  "opciones": {
+    "A": "Adquirir plataformas de software extranjero estandarizado para homogeneizar la enseñanza técnica según parámetros internacionales.",
+    "B": "Diseñar e implementar metodologías activas basadas en la resolución de problemas (PBL) vinculados directamente al desarrollo sostenible local y el PEI.",
+    "C": "Incrementar la carga horaria semanal de las materias tradicionales mediante clases magistrales intensivas de refuerzo cognitivo.",
+    "D": "Suspender las actividades prácticas y comunitarias para concentrar los esfuerzos en el entrenamiento memorístico de pruebas estandarizadas."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La innovación curricular situada y el enfoque socio-crítico exigen que el diseño del aprendizaje responda a las necesidades y tensiones geográficas y culturales del contexto de los estudiantes. El Aprendizaje Basado en Problemas (PBL) permite articular los saberes disciplinares con la transformación del entorno real.",
+  "justificacionClave": "La opción B integra de manera directa las metodologías activas con las necesidades comunitarias, respondiendo a los principios de pertenencia y adaptabilidad del currículo escolar.",
+  "justificacionDistractores": {
+    "A": "Introduce una estrategia descontextualizada y homogeneizadora que profundiza la brecha pedagógica al ignorar las particularidades del territorio.",
+    "C": "La intensificación horaria de corte tecnicista y magistral satura el ambiente de aula sin modificar la pertinencia del modelo didáctico subyacente.",
+    "D": "Fomenta una visión punitiva y reduccionista de la educación que anula el desarrollo integral y agrava los factores de riesgo de exclusión."
+  },
+  "normativaRefs": [
+    "Ley 115 de 1994 (Artículo 73 - Proyecto Educativo Institucional)",
+    "Decreto 1075 de 2015"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

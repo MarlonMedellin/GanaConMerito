@@ -1,0 +1,37 @@
+{
+  "id": "normatividad-inclusion-001",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "normatividad",
+  "subarea": "inclusion_y_equidad",
+  "perfil": "rector_director_rural",
+  "tipoCompetencia": "funcional",
+  "competency": "normatividad_y_legislacion_educativa",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "Durante el proceso de matrículas ordinarias, el rector de una institución educativa oficial se abstiene de asentar el cupo de un estudiante con discapacidad intelectual moderada, argumentando que el colegio no cuenta actualmente con docentes de apoyo especializados ni con infraestructura física adaptada.",
+  "enunciado": "Al analizar esta determinación a la luz de la política pública de inclusión y el Decreto 1421 de 2017, la actuación del rector configura:",
+  "opciones": {
+    "A": "Una decisión administrativa correcta y preventiva que protege los estándares generales de calidad académica de la institución.",
+    "B": "Una barrera de acceso ilegal al servicio educativo que vulnera el derecho fundamental a la educación inclusiva y la prohibición de discriminación.",
+    "C": "Una omisión menor que puede ser subsanada si se le exige a la familia el pago de un terapeuta sombra privado como condición de ingreso.",
+    "D": "Un procedimiento estándar de gestión de cupos que cuenta con el respaldo de la autonomía del consejo directivo."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "El Decreto 1421 de 2017 es taxativo: ninguna institución educativa formal puede negar el acceso, la matrícula o la permanencia de un estudiante por motivos de discapacidad. La falta de docentes de apoyo o de infraestructura no es causal de rechazo; por el contrario, obliga a la institución a matricular al alumno, diseñar el PIAR y activar la solicitud de recursos de apoyo ante la Secretaría de Educación Territorial.",
+  "justificacionClave": "La opción B identifica con precisión la ilegalidad del acto de exclusión frente al marco constitucional de accesibilidad y debilidad manifiesta.",
+  "justificacionDistractores": {
+    "A": "Incurre en un sesgo discriminatorio de exclusión, asumiendo falsamente que la población con discapacidad deteriora la calidad escolar.",
+    "C": "Traslada la obligación financiera y de andamiaje estatal a la familia del menor, violando el principio de gratuidad y adaptabilidad de la inclusión.",
+    "D": "La autonomía escolar del Consejo Directivo está subordinada a la Constitución y los decretos nacionales, por lo que no puede amparar la negación de un derecho fundamental."
+  },
+  "normativaRefs": [
+    "Decreto 1421 de 2017 (Acceso y permanencia en educación inclusiva)",
+    "Ley Estatutaria 1618 de 2013"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

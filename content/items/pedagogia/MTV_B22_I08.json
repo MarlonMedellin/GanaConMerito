@@ -1,0 +1,37 @@
+{
+  "id": "MTV_B22_I08",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "aprendizaje_significativo",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "Al evaluar una unidad didáctica, el consejo académico evidencia que los docentes confunden de manera sistemática la ejecución de metodologías activas y lúdicas (como el uso de juegos en el aula) con la estructuración de un aprendizaje significativo genuino en el marco del Proyecto Educativo Institucional (PEI).",
+  "enunciado": "Para clarificar técnicamente esta distinción bajo la teoría de Ausubel, el coordinador pedagógico debe precisar que un aprendizaje es significativo prioritariamente cuando:",
+  "opciones": {
+    "A": "El estudiante manifiesta un estado de alta motivación intrínseca y agrado exclusivo por las dinámicas lúdicas implementadas.",
+    "B": "La información nueva se integra de manera sustancial, lógica y no arbitraria en la estructura de conocimientos previos del alumno.",
+    "C": "Los contenidos curriculares se memorizan con total fidelidad textual respecto a los textos escolares aprobados.",
+    "D": "El proceso pedagógico prescinde por completo de la intervención directa del docente y se apoya solo en el descubrimiento libre."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "David Ausubel es explícito al señalar que la condición sine qua non del aprendizaje significativo es la relación sustancial y no arbitraria del nuevo material con ideas correspondientes ya existentes en la estructura cognitiva. La lúdica es un facilitador motivacional, pero no garantiza per se la reestructuración cognitiva.",
+  "justificacionClave": "La opción B define con exactitud psicométrica y teórica el mecanismo sustancial del anclaje cognitivo característico de la asimilación ausubeliana.",
+  "justificacionDistractores": {
+    "A": "Confunde la disposición afectiva o motivacional del estudiante (condición necesaria pero insuficiente) con el proceso cognitivo de asimilación.",
+    "C": "Describe las bases del aprendizaje memorístico o receptivo tradicional, el cual contradice directamente la naturaleza del modelo socio-crítico y holístico.",
+    "D": "Corresponde a un sesgo extremo del aprendizaje por descubrimiento puro no guiado, el cual Ausubel matiza, validando la importancia del aprendizaje por recepción significativa."
+  },
+  "normativaRefs": [
+    "Decreto 1075 de 2015",
+    "Lineamientos Curriculares MEN"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

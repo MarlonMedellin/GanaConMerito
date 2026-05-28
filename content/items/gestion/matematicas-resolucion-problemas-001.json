@@ -1,0 +1,36 @@
+{
+  "id": "matematicas-resolucion-problemas-001",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "matematicas",
+  "subarea": "numérico_variacional",
+  "perfil": "transversal",
+  "tipoCompetencia": "basica",
+  "competency": "formulacion_y_ejecucion_matematica",
+  "nivelCognitivo": "formulacion_y_ejecucion",
+  "dificultad": "media",
+  "contexto": "Para financiar el proyecto de la huerta escolar, una institución decide destinar el 40% de los fondos recaudados en la tienda escolar. Si durante el primer mes la tienda reporta un recaudo total bruto de 1.200.000 pesos y se debe restar un 10% fijo por concepto de costos operativos de mantenimiento antes de asignar el porcentaje de la huerta.",
+  "enunciado": "El presupuesto neto exacto en pesos disponible para el inicio del proyecto de la huerta escolar durante este periodo es:",
+  "opciones": {
+    "A": "480.000 pesos",
+    "B": "432.000 pesos",
+    "C": "360.000 pesos",
+    "D": "540.000 pesos"
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "El problema exige ejecutar operaciones sucesivas de porcentaje. Primero se descuentan los costos operativos de mantenimiento (el 10% de 1.200.000 es 120.000), lo que deja un saldo neto de $1.200.000 - 120.000 = 1.080.000$ pesos. Sobre este valor remanente se calcula el 40% destinado a la huerta: $1.080.000 \\times 0.40 = 432.000$ pesos.",
+  "justificacionClave": "La opción B resuelve con exactitud matemática la secuencia de descuentos porcentuales sucesivos planteada por el enunciado.",
+  "justificacionDistractores": {
+    "A": "Calcula el 40% directamente sobre los 1.200.000 pesos brutos, omitiendo por completo el descuento previo por costos operativos fijado como obligatorio.",
+    "C": "Aplica de forma errónea una resta directa de porcentajes (40% - 10% = 30%) sobre el total bruto ($1.200.000 \\times 0.30 = 360.000$), que rompe la lógica secuencial.",
+    "D": "Realiza un cálculo inflado sumando los porcentajes o errando en el algoritmo de multiplicación decimal de la muestra de fondos."
+  },
+  "normativaRefs": [
+    "Estándares Básicos de Competencias en Matemáticas MEN"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

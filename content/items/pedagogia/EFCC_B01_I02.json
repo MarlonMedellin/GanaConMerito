@@ -1,0 +1,37 @@
+{
+  "id": "EFCC_B01_I02",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "evaluacion_formativa_y_punitiva",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "evaluacion_del_aprendizaje",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Un estudiante de básica secundaria no entrega el ensayo final debido a una situación de crisis familiar grave y debidamente justificada. El docente de la asignatura se niega a recibir el trabajo de forma extemporánea argumentando que el Manual de Convivencia institucional exige puntualidad estricta y le asigna una calificación de 1.0.",
+  "enunciado": "Al analizar esta situación bajo un enfoque de evaluación formativa de aula y el marco del debido proceso, la actuación pedagógica correcta del docente debió ser:",
+  "opciones": {
+    "A": "Mantener firmemente la calificación de 1.0 para sentar un precedente normativo riguroso de igualdad material ante el resto del grupo.",
+    "B": "Concertar un plazo extemporáneo razonable para la entrega del ensayo y ofrecer tutoría de aula para mediar y retroalimentar el proceso formativo.",
+    "C": "Recibir el ensayo sobre una calificación máxima rebajada a la mitad sin analizar el contexto socioemocional del estudiante.",
+    "D": "Delegar la decisión de recibir o no el ensayo en el voto democrático y público de los compañeros de clase."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La evaluación formativa concibe la valoración como parte del aprendizaje, no como un arma punitiva de control conductual o exclusión didáctica. Ante una atenuante o crisis, la posición de garante del docente obliga a flexibilizar los tiempos institucionales para salvaguardar el debido proceso y asegurar la equidad del aprendizaje.",
+  "justificacionClave": "La opción B equilibra la flexibilidad institucional ante la crisis con el andamiaje pedagógico directo que requiere la evaluación formativa.",
+  "justificacionDistractores": {
+    "A": "Prioriza un formalismo punitivo e inflexible que distorsiona la finalidad real del SIEE y vulnera la protección integral del menor.",
+    "C": "Aplica una sanción cuantitativa oculta que castiga la vulnerabilidad socioemocional del estudiante, alejándose de una visión justa del error.",
+    "D": "Expone públicamente la intimidad e integridad del estudiante a un juicio de pares, vulnerando de forma flagrante los principios éticos esenciales de la docencia."
+  },
+  "normativaRefs": [
+    "Decreto 1290 de 2009 (Derechos del estudiante ante la evaluación)",
+    "Constitución Política de Colombia (Artículo 29 - Debido Proceso)"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

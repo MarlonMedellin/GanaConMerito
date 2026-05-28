@@ -1,0 +1,37 @@
+{
+  "id": "EFCC_B03_I01",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "curriculo_pei_y_evaluacion",
+  "perfil": "coordinador",
+  "tipoCompetencia": "funcional",
+  "competency": "gestion_academica_y_curricular",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Al revisar las planeaciones de aula, el coordinador académico identifica que el Sistema Institucional de Evaluación de los Estudiantes (SIEE) del PEI plantea un enfoque formativo y holístico; sin embargo, en la práctica real, el 90% de las calificaciones de los docentes se derivan exclusivamente de exámenes escritos punitivos de final de periodo.",
+  "enunciado": "Con el propósito de alinear la praxis evaluativa de los docentes con los lineamientos del SIEE, la intervención institucional más pertinente que debe liderar el coordinador es:",
+  "opciones": {
+    "A": "Sancionar disciplinariamente a los docentes cuyas planeaciones muestren inconsistencias cuantitativas directas con el enfoque del SIEE.",
+    "B": "Coordinar talleres formativos presenciales orientados al diseño colectivo de rúbricas analíticas y estrategias variadas de evaluación del desempeño.",
+    "C": "Eliminar de manera radical los exámenes escritos finales para obligar la transición directa hacia el modelo cualitativo puro.",
+    "D": "Modificar el documento escrito del SIEE en el PEI para adaptarlo a las prácticas punitivas y tecnicistas reales de los docentes."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La coherencia curricular exige concordancia entre los propósitos del PEI, el SIEE y lo que sucede en el aula. El desarrollo de competencias funcionales en evaluación formativa requiere mediación institucional y formación docente para que los maestros dominen herramientas de evaluación auténtica.",
+  "justificacionClave": "La opción B promueve la reestructuración metodológica mediante un andamiaje formativo interno y el uso de rúbricas analíticas.",
+  "justificacionDistractores": {
+    "A": "Adopta un enfoque punitivo institucional que deteriora el clima laboral y no soluciona el desconocimiento técnico sobre evaluación formativa.",
+    "C": "Representa una medida extrema y descontextualizada que genera caos pedagógico, inseguridad e inestabilidad en el seguimiento de los alumnos.",
+    "D": "Constituye un retroceso normativo e institucional que sacrifica la calidad de la educación y contraviene los marcos de innovación pedagógica vigentes."
+  },
+  "normativaRefs": [
+    "Decreto 1290 de 2009 (Reglamentación de la evaluación del aprendizaje)",
+    "Decreto 1075 de 2015"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

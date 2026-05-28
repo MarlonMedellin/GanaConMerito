@@ -1,0 +1,37 @@
+{
+  "id": "IDD_B04_I05",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "dua_piar_y_ajustes",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "gestion_del_ambiente_de_aula",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "Un docente de secundaria incluye en su aula regular a un estudiante diagnosticado con Trastorno del Espectro Autista (TEA). A pesar de tener altas capacidades cognitivas abstractas, el estudiante experimenta crisis agudas debido a la sobrecarga sensorial provocada por el ruido excesivo durante las actividades de trabajo grupal cooperativo.",
+  "enunciado": "Para garantizar un ajuste razonable pertinente conforme a las directrices de la inclusión institucional (Decreto 1421), la acción más adecuada que debe implementar el docente es:",
+  "opciones": {
+    "A": "Eximir al estudiante de participar en todas las actividades grupales curriculares y asignarle tareas individuales aisladas en la biblioteca escolar.",
+    "B": "Estructurar anticipadamente las actividades con apoyos visuales y permitirle el uso temporal de auriculares con cancelación de ruido durante el trabajo cooperativo.",
+    "C": "Exigir de manera estricta al estudiante que tolere el ruido ambiental como parte necesaria de su proceso de adaptación socio-cultural.",
+    "D": "Remitir de inmediato el caso a educación especial externa y suspender la asistencia del alumno hasta que esté rehabilitado."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La inclusión educativa, regulada por el Decreto 1421 de 2017, prohíbe la exclusión o segregación. Los ajustes razonables son modificaciones operativas, físicas o de apoyo tecnológico dirigidas a mitigar barreras específicas del entorno para garantizar la equidad material sin flexibilizar a la baja los propósitos de aprendizaje.",
+  "justificacionClave": "La opción B define apoyos situados específicos (visuales y ambientales) que eliminan la barrera sensorial sin aislar al estudiante del entorno de aula cooperativa.",
+  "justificacionDistractores": {
+    "A": "Incurre en una práctica de segregación pasiva dentro de la escuela que vulnera el derecho a la socialización e inclusión efectiva del alumno.",
+    "C": "Ignora la condición de neurodiversidad del estudiante bajo un enfoque punitivo tradicional que vulnera la dignidad humana del menor.",
+    "D": "Constituye una exclusión abierta del servicio educativo regular que contradice el marco legal e internacional de los derechos humanos vigentes."
+  },
+  "normativaRefs": [
+    "Decreto 1421 de 2017 (Inclusión de la Población con Discapacidad)",
+    "Ley Estatutaria 1618 de 2013"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

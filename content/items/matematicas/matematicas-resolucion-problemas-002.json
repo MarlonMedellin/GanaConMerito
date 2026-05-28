@@ -1,0 +1,36 @@
+{
+  "id": "matematicas-resolucion-problemas-002",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "matematicas",
+  "subarea": "metrico_espacial",
+  "perfil": "transversal",
+  "tipoCompetencia": "basica",
+  "competency": "formulacion_y_ejecucion_matematica",
+  "nivelCognitivo": "formulacion_y_ejecucion",
+  "dificultad": "alta",
+  "contexto": "Con el propósito de adecuar una zona de juego segura en el patio de preescolar, el rector planea instalar baldosas de goma antichoque en un espacio rectangular que mide 6 metros de ancho por 8 metros de largo. El proveedor ofrece cajas de baldosas que cubren exactamente 4 metros cuadrados cada una.",
+  "enunciado": "La cantidad mínima total de cajas que la institución educativa debe adquirir para cubrir el área del patio rectangular sin dejar espacios vacíos es:",
+  "opciones": {
+    "A": "12 cajas",
+    "B": "14 cajas",
+    "C": "16 cajas",
+    "D": "48 cajas"
+  },
+  "respuestaCorrecta": "A",
+  "explicacionGeneral": "El problema requiere modelar el área de una figura geométrica bidimensional regular. El área del rectángulo se calcula multiplicando el ancho por el largo: $6\\text{ m} \\times 8\\text{ m} = 48\\text{ metros cuadrados}$. Posteriormente, para conocer el número de cajas, se divide el área total por la cobertura por caja: $48\\text{ m}^2 / 4\\text{ m}^2 = 12\\text{ cajas}$.",
+  "justificacionClave": "La opción A arroja el valor exacto tras aplicar las fórmulas de área y división de razón de cobertura.",
+  "justificacionDistractores": {
+    "B": "Deriva de un error común de cálculo aritmético en la división de los metros cuadrados o al confundir el perímetro con el área.",
+    "C": "Resulta de un error al multiplicar las dimensiones base o aplicar un factor de desperdicio excesivo no solicitado por el problema.",
+    "D": "Corresponde al valor total de los metros cuadrados del patio, omitiendo el paso crítico de dividir por la capacidad de cobertura de cada caja."
+  },
+  "normativaRefs": [
+    "Estándares Básicos de Competencias en Matemáticas MEN"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

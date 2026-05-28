@@ -1,0 +1,37 @@
+{
+  "id": "IDD_B04_I07",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "dua_piar_y_ajustes",
+  "perfil": "docente_orientador",
+  "tipoCompetencia": "funcional",
+  "competency": "orientacion_y_seguimiento_de_estudiantes",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "Un equipo docente de educación básica se resiste a diseñar los Planes Individuales de Ajustes Razonables (PIAR) para tres estudiantes que presentan dificultades severas de aprendizaje, argumentando que la flexibilización curricular atenta contra los estándares de excelencia académica de la institución y les duplica la carga laboral.",
+  "enunciado": "Como docente orientador, y con el fin de activar el marco de corresponsabilidad y sensibilización técnico-pedagógica de este caso, su intervención prioritaria debe centrarse en:",
+  "opciones": {
+    "A": "Denunciar formalmente a los docentes ante el control interno disciplinario de la Secretaría de Educación por omisión de funciones legales.",
+    "B": "Acompañar técnicamente a los docentes en la articulación de los PIAR a través del diseño del aula DUA, demostrando que la flexibilización no reduce el rigor conceptual.",
+    "C": "Asumir la responsabilidad directa de reescribir de forma aislada los tres documentos PIAR para librar a los docentes de dicha tarea.",
+    "D": "Recomendar al rector la reubicación de los tres estudiantes en instituciones especializadas fuera del sistema escolar regular."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "El docente orientador ejerce un rol de consultoría y asesoría técnico-pedagógica a la comunidad educativa. La construcción del PIAR es una responsabilidad del docente de aula regular, mediada y apoyada por la orientación. Vincular el Diseño Universal para el Aprendizaje (DUA) ayuda a los maestros a diversificar la enseñanza para todo el grupo.",
+  "justificacionClave": "La opción B fomenta el desarrollo de competencias funcionales a través del andamiaje pedagógico colaborativo, resguardando el principio de corresponsabilidad.",
+  "justificacionDistractores": {
+    "A": "Rompe de forma severa el clima escolar y la confianza interna, priorizando una vía de choque punitivo antes de agotar la ruta de mediación pedagógica.",
+    "C": "Incurre en centralización indebida de funciones y fomenta un rol asistencialista que debilita la capacidad didáctica instalada del equipo de maestros.",
+    "D": "Promueve la exclusión explícita del servicio educativo regular, violando de forma flagrante los principios básicos de accesibilidad y adaptabilidad."
+  },
+  "normativaRefs": [
+    "Decreto 1421 de 2017",
+    "Decreto 1075 de 2015 (Funciones del Docente Orientador)"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

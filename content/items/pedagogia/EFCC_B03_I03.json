@@ -1,0 +1,37 @@
+{
+  "id": "EFCC_B03_I03",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "curriculo_pei_y_evaluacion",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "evaluacion_del_aprendizaje",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Un docente implementa la metodología de proyectos de aula integrados para trabajar las ciencias sociales en básica primaria. Al finalizar el proceso, desea evaluar el progreso integral alcanzado por sus estudiantes en términos de habilidades colaborativas, apropiación cognitiva y juicio situado.",
+  "enunciado": "Para asegurar una evaluación didáctica coherente con este enfoque activo y holístico, el instrumento técnico que debe privilegiar el docente es:",
+  "opciones": {
+    "A": "Una prueba de selección múltiple con clave única enfocada en la memorización de datos geográficos e históricos puntuales.",
+    "B": "Una rúbrica de evaluación multidimensional que detalle de manera explícita descriptores de logro para cada criterio del proyecto.",
+    "C": "Una lista de verificación dicotómica para registrar únicamente la entrega física o la ausencia del portafolio del proyecto.",
+    "D": "Un reporte cualitativo global e informal redactado de forma abierta sin criterios estandarizados de verificación previa."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "Los enfoques activos, como el trabajo por proyectos, demandan instrumentos que capten la complejidad del desempeño real del estudiante. Una rúbrica multidimensional desagrega los niveles de logro con criterios claros, permitiendo visibilizar el aprendizaje formativo tanto para el docente como para el alumno.",
+  "justificacionClave": "La opción B permite evaluar de forma transparente, objetiva y holística procesos cognitivos y socioemocionales complejos desarrollados en el proyecto.",
+  "justificacionDistractores": {
+    "A": "Aplica una metodología tecnicista basada en la reproducción de memoria literal, desnaturalizando por completo la didáctica activa de proyectos.",
+    "C": "Evalúa únicamente aspectos meramente administrativos o formales de entrega, anulando el seguimiento formativo del proceso pedagógico.",
+    "D": "Su extrema informalidad introduce altos niveles de subjetividad y sesgo, vulnerando el derecho del estudiante a una evaluación justa y transparente."
+  },
+  "normativaRefs": [
+    "Decreto 1075 de 2015",
+    "Decreto 1290 de 2009 (Autonomía institucional para definir SIEE)"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

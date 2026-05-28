@@ -1,0 +1,37 @@
+{
+  "id": "EFCC_B01_I04",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "evaluacion_formativa_y_punitiva",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "evaluacion_del_aprendizaje",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "Un docente detecta un alto porcentaje de respuestas incorrectas en una pregunta específica durante una evaluación sumativa de ciencias naturales. Al analizar la estructura matemática e interpretativa del ítem, descubre que el enunciado contenía una ambigüedad semántica técnica que indujo al error a los estudiantes que demostraban mejor dominio teórico.",
+  "enunciado": "Frente a este riesgo técnico evidenciado por el propio maestro, la acción metodológica inmediata y éticamente correcta que debe ejecutar es:",
+  "opciones": {
+    "A": "Sostener la validez de los resultados cuantitativos obtenidos para salvaguardar la autoridad docente ante el grupo.",
+    "B": "Anular de oficio el ítem ambiguo para todos los estudiantes, ajustar la escala ponderada de la calificación y abrir un espacio de retroalimentación conceptual grupal.",
+    "C": "Otorgar los puntos válidos únicamente a los estudiantes que presenten reclamos formales por escrito de forma individual.",
+    "D": "Repetir la evaluación completa de forma punitiva e imprevista al día siguiente empleando un nivel de dificultad superior."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La ética de la evaluación formativa demanda objetividad, transparencia y validez psicométrica. Si el instrumento presenta fallas de diseño, el error es imputable a la docencia, no a la cognición de los alumnos. El manejo reflexivo del error propio del docente obliga a la remediación de oficio y el ajuste inmediato.",
+  "justificacionClave": "La opción B soluciona de raíz la falla técnica con equidad (para todo el grupo) y transforma el incidente en una oportunidad didáctica formativa.",
+  "justificacionDistractores": {
+    "A": "Prioriza un ejercicio de superioridad moral y vanidad pedagógica por encima de la justicia evaluativa institucional básica.",
+    "C": "Vulnera el derecho a la equidad material al privilegiar únicamente a los alumnos con mayores habilidades de reclamación formal o capital cultural.",
+    "D": "Aplica una lógica represiva e hiper-punitiva que destruye la confianza grupal y el clima afectivo indispensable para el aprendizaje."
+  },
+  "normativaRefs": [
+    "Decreto 1290 de 2009",
+    "Código de Ética Docente"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

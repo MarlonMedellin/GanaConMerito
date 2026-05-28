@@ -1,0 +1,37 @@
+{
+  "id": "MTV_B22_I07",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "aprendizaje_significativo",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Un docente de matemáticas de básica secundaria nota que sus estudiantes memorizan mecánicamente algoritmos algebraicos para aprobar los exámenes, pero son incapaces de aplicar dichos conceptos al modelar situaciones problemáticas de su entorno real o al articularlos con saberes previos de geometría.",
+  "enunciado": "Con el propósito de promover un aprendizaje significativo según el modelo de David Ausubel, la estrategia pedagógica más pertinente que debe priorizar el docente en su planeación de aula es:",
+  "opciones": {
+    "A": "Diseñar guías de autoaprendizaje con ejercicios secuenciales de alta complejidad matemática para fomentar la práctica repetitiva autónoma.",
+    "B": "Implementar organizadores previos que vinculen conceptualmente las estructuras algebraicas con nociones espaciales y problemas contextualizados de la comunidad.",
+    "C": "Sustituir las evaluaciones escritas tradicionales por debates abiertos sobre la historia de las matemáticas y la importancia social del álgebra.",
+    "D": "Asignar material de lectura avanzada sobre teoría de números para que los estudiantes lo memoricen de forma independiente antes de la clase."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "El aprendizaje significativo de Ausubel ocurre cuando el nuevo contenido se conecta de manera sustancial y no arbitraria con la estructura cognitiva previa del sujeto. El uso de organizadores previos actúa como un puente cognitivo esencial para facilitar este andamiaje didáctico.",
+  "justificacionClave": "La opción B activa directamente el concepto de organizador previo y busca la transferencia situada mediante la articulación explícita con saberes espaciales y el contexto real del estudiante.",
+  "justificacionDistractores": {
+    "A": "Se centra en la práctica repetitiva y el formalismo abstracto, lo cual perpetúa el aprendizaje mecánico o memorístico que se busca mitigar.",
+    "C": "Aunque promueve la participación activa, desatiende la estructura lógica formal y cognitiva específica requerida para el anclaje del contenido matemático.",
+    "D": "Exige una asimilación memorística de material conceptual complejo sin mediación didáctica ni puentes que faciliten la inclusión inclusiva del saber."
+  },
+  "normativaRefs": [
+    "Ley 115 de 1994 (Fines de la Educación)",
+    "Lineamientos Curriculares de Matemáticas MEN"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

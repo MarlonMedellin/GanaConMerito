@@ -1,0 +1,37 @@
+{
+  "id": "CB01_I03",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "curriculo_y_contexto",
+  "perfil": "rector_director_rural",
+  "tipoCompetencia": "funcional",
+  "competency": "direccionamiento_institucional_y_gestion_del_clima_escolar",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "Durante la actualización del Proyecto Educativo Institucional (PEI) de una institución educativa oficial, surge una tensión entre un sector docente que defiende un currículo cerrado estructurado rígidamente por materias aisladas, y las directrices del MEN que convocan a la transversalidad y la integración de competencias ciudadanas.",
+  "enunciado": "En su calidad de líder transformador y garante de la gobernanza académica, la acción más pertinente del Rector para resolver esta tensión de manera sostenible es:",
+  "opciones": {
+    "A": "Imponer de forma unilateral el nuevo plan de estudios integrador mediante resolución rectoral de obligatorio cumplimiento.",
+    "B": "Facilitar espacios de reflexión colectiva basados en comunidades de práctica pedagógica para codiseñar proyectos transversales situados.",
+    "C": "Mantener el currículo fragmentado tradicional para evitar conflictos laborales con el sindicato y preservar la estabilidad del clima escolar.",
+    "D": "Delegar la reestructuración completa a un asesor externo y externo a la comunidad educativa para evitar sesgos internos."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La gestión curricular y el direccionamiento institucional con enfoque holístico demandan liderazgo democrático y procesos participativos. La imposición rompe el clima de aula, mientras que el codiseño a través de comunidades de práctica garantiza la apropiación real del PEI por parte de los docentes.",
+  "justificacionClave": "La opción B promueve la gobernanza participativa y la innovación desde abajo, lo que asegura la sostenibilidad de los cambios de modelo pedagógico.",
+  "justificacionDistractores": {
+    "A": "Aplica un enfoque autocrático y punitivo que genera resistencia pasiva y fractura de manera severa el tejido del clima institucional.",
+    "C": "Adopta una posición de pasividad que evade la responsabilidad legal y pedagógica de mantener actualizado el currículo según los estándares vigentes.",
+    "D": "Sustituye la agencia comunitaria por un enfoque tecnocrático externo, impidiendo la construcción de una identidad escolar auténtica."
+  },
+  "normativaRefs": [
+    "Decreto 1075 de 2015 (Gobernanza escolar y funciones del rector)",
+    "Ley 115 de 1994"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

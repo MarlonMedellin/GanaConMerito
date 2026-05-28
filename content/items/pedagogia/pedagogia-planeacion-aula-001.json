@@ -1,0 +1,37 @@
+{
+  "id": "pedagogia-planeacion-aula-001",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "planeacion_curricular",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Un docente de básica secundaria inicia el diseño de una nueva secuencia didáctica para el área de ciencias naturales. Al revisar el Proyecto Educativo Institucional (PEI), constata que la institución declara explícitamente estar fundamentada en un modelo pedagógico socio-crítico y constructivista.",
+  "enunciado": "Para garantizar la coherencia interna de su planeación de aula con la plataforma estratégica del PEI, el docente debe estructurar la secuencia didáctica priorizando:",
+  "opciones": {
+    "A": "Una serie de clases magistrales intensivas enfocadas en el dictado de conceptos doctrinales y su posterior memorización exacta.",
+    "B": "El planteamiento de situaciones problema y preguntas problematizadoras del entorno local que inviten a la indagación, la confrontación de ideas previas y la acción transformadora.",
+    "C": "El seguimiento estricto del orden secuencial de capítulos propuesto por el texto guía comercial adoptado por la institución hace cinco años.",
+    "D": "El desarrollo exclusivo de talleres individuales de transcripción escrita para asegurar el control conductual y el silencio dentro del salón."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "Un modelo socio-crítico y constructivista concibe el aprendizaje como un proceso de reconstrucción activa del conocimiento a partir de la interacción del sujeto con situaciones problema de su contexto social. La planeación de aula debe romper el formalismo transmisivo tradicional y estructurarse a través de metodologías activas y de indagación que generen conflicto cognitivo y reflexión.",
+  "justificacionClave": "La opción B operativiza de forma directa los principios de la pedagogía socio-crítica y el constructivismo situado en las secuencias de aula.",
+  "justificacionDistractores": {
+    "A": "Responde al modelo pedagógico tradicional transmisionista, que contradice de raíz los enfoques socio-críticos y autónomos declarados en el PEI.",
+    "C": "Subordina la mediación didáctica del maestro a una estructura editorial mercantil y cerrada, desconectada de las necesidades reales de los estudiantes.",
+    "D": "Utiliza un enfoque puramente conductista centrado en el control y la disciplina punitiva del aula, anulando la participación democrática y el pensamiento crítico."
+  },
+  "normativaRefs": [
+    "Ley 115 de 1994",
+    "Decreto 1075 de 2015"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "pedagogia-inclusion-001",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "inclusion_y_equidad",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Un docente de ciencias sociales planea una clase sobre los derechos humanos. En su aula cuenta con dos estudiantes con pérdida auditiva severa que se comunican mediante Lengua de Señas Colombiana (LSC) y tres alumnos que pertenecen a una comunidad indígena local.",
+  "enunciado": "Con base en los principios del Diseño Universal para el Aprendizaje (DUA) enfocado en una práctica pedagógica no homogeneizadora, la acción del docente al diseñar sus materiales de aula debe ser:",
+  "opciones": {
+    "A": "Desarrollar el material ordinario en texto escrito plano e instruir a los estudiantes diversos para que se adapten de forma autónoma con apoyo de sus familias.",
+    "B": "Diversificar los canales de acceso presentando la información mediante infografías visuales, videos con subtítulos y traducción a LSC, e integrando dilemas éticos que recuperen los saberes ancestrales de la comunidad.",
+    "C": "Diseñar guías de estudio significativamente más sencillas e instrumentales para los estudiantes diversos, reduciendo el nivel de exigencia conceptual de la clase.",
+    "D": "Solicitar que los estudiantes con discapacidad y pertenecientes a minorías étnicas reciban la clase de forma separada en el aula de apoyo técnico."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "El Diseño Universal para el Aprendizaje (DUA) busca eliminar las barreras de aprendizaje ofreciendo múltiples formas de representación de la información, múltiples formas de acción y expresión, y múltiples formas de motivación. El DUA asume la diversidad como la norma y diseña una experiencia rica y plural desde el inicio para todo el grupo, sin segregar ni flexibilizar a la baja el rigor de los estándares conceptuales.",
+  "justificacionClave": "La opción B aplica con exactitud los pilares del DUA al garantizar accesibilidad sensorial y pertinencia multicultural situada en una sola experiencia integrada.",
+  "justificacionDistractores": {
+    "A": "Mantiene una práctica homogeneizante tradicional que perpetúa las barreras de exclusión al no ofrecer andamiajes de accesibilidad didáctica.",
+    "C": "Cae en un error común de discriminación positiva mal entendida al infantilizar el currículo, limitando el potencial cognitivo de los alumnos diversos.",
+    "D": "Constituye un procedimiento de segregación física abierta que contraviene flagrantemente las políticas vigentes de inclusión en el aula regular."
+  },
+  "normativaRefs": [
+    "Decreto 1421 de 2017",
+    "Lineamientos de Educación Inclusiva MEN"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

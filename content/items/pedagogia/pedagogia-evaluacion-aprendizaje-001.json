@@ -1,0 +1,37 @@
+{
+  "id": "pedagogia-evaluacion-aprendizaje-001",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "evaluacion_formativa",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "evaluacion_del_aprendizaje",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Un docente de lengua castellana diseña una unidad didáctica centrada en la producción de textos argumentativos. Para evaluar el proceso, decide que los estudiantes se organicen en parejas para revisar mutuamente los borradores de sus ensayos utilizando una guía de criterios preestablecida.",
+  "enunciado": "Al implementar este andamiaje participativo de aula, la modalidad de evaluación que está privilegiando el docente es:",
+  "opciones": {
+    "A": "La autoevaluación, porque faculta al estudiante a emitir un juicio cuantitativo directo sobre su propio nivel de desempeño.",
+    "B": "La coevaluación, ya que promueve la retroalimentación constructiva entre pares y el aprendizaje colaborativo a partir del error.",
+    "C": "La heteroevaluación, porque el docente conserva el control centralizado de los criterios lógicos y las calificaciones de la actividad.",
+    "D": "La evaluación sumativa, debido a que se enfoca exclusivamente en calificar el producto escrito final para cerrar el periodo."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La coevaluación es la evaluación mutua que se realiza entre pares o estudiantes. Su valor formativo reside en que permite descentralizar la autoridad evaluativa, promueve el diálogo crítico sobre el objeto de estudio, ayuda a identificar el error ajeno y propio como oportunidad de reestructuración conceptual y favorece la metacognición guiada.",
+  "justificacionClave": "La opción B define adecuadamente la naturaleza participativa y el valor interactivo de la coevaluación en procesos de aula.",
+  "justificacionDistractores": {
+    "A": "Describe la autoevaluación, la cual implicaría que el estudiante reflexione y valore de forma individual y autónoma su propia producción.",
+    "C": "Corresponde a la heteroevaluación, que es el proceso donde un sujeto evalúa el desempeño de otro con estatus distinto (clásicamente, docente a estudiante).",
+    "D": "Se enfoca en un modelo sumativo tradicional centrado en la medición del producto final, ignorando la mediación procesal activa de la revisión de borradores."
+  },
+  "normativaRefs": [
+    "Decreto 1290 de 2009",
+    "Lineamientos Curriculares de Lengua Castellana MEN"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "gestion-liderazgo-apropiacion-pei-001",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "gestion",
+  "subarea": "gestion_directiva",
+  "perfil": "rector_director_rural",
+  "tipoCompetencia": "funcional",
+  "competency": "direccionamiento_institucional_y_gestion_del_clima_escolar",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Durante la autoevaluación institucional utilizando la Guía 34 del MEN, el Consejo Directivo evidencia que la comunidad educativa (padres de familia y estudiantes) desconoce mayoritariamente los principios del modelo pedagógico y la misión declarados en el Proyecto Educativo Institucional (PEI).",
+  "enunciado": "Con el objetivo de liderar una auténtica apropiación comunitaria del PEI de acuerdo con las funciones de la gestión directiva, la acción más pertinente que debe implementar el Rector es:",
+  "opciones": {
+    "A": "Publicar el texto completo del PEI (de 200 páginas) en la cartelera principal y la página web institucional, exigiendo su lectura obligatoria.",
+    "B": "Diseñar e implementar asambleas participativas y talleres situados para traducir los principios del PEI en acciones cotidianas y metas compartidas.",
+    "C": "Contratar una agencia de publicidad externa para rediseñar el logotipo y los lemas institucionales sin modificar la praxis pedagógica.",
+    "D": "Sancionar a los directores de grupo cuyos estudiantes no memoricen textualmente la misión y visión institucionales."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La apropiación del PEI no se logra mediante la imposición burocrática o la memorización literal, sino a través de una gestión participativa que dote de significado comunitario a la plataforma estratégica de la institución, articulando las necesidades del contexto con las metas del plan de mejoramiento institucional (PMI).",
+  "justificacionClave": "La opción B promueve un liderazgo democrático y dinámicas de codiseño que involucran activamente a los estamentos del Gobierno Escolar, garantizando la sostenibilidad de la cultura institucional.",
+  "justificacionDistractores": {
+    "A": "Adopta un enfoque puramente formalista y burocrático que satura de información a la comunidad sin generar una comprensión o vinculación real.",
+    "C": "Se limita a un plano cosmético y de mercadeo que no impacta los procesos subyacentes de la gestión académica ni las prácticas de aula.",
+    "D": "Aplica una medida punitiva y conductista que deteriora el clima escolar y reduce la identidad institucional a una repetición mecánica."
+  },
+  "normativaRefs": [
+    "Ley 115 de 1994 (Artículo 73 - Proyecto Educativo Institucional)",
+    "Guía 34 del MEN (Guía para el Mejoramiento Institucional)"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

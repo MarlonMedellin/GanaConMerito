@@ -1,0 +1,37 @@
+{
+  "id": "normatividad-convivencia-escolar-002",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "normatividad",
+  "subarea": "convivencia_escolar",
+  "perfil": "coordinador",
+  "tipoCompetencia": "funcional",
+  "competency": "normatividad_y_legislacion_educativa",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "Un docente remite a la coordinación un caso reiterado de ciberacoso (Situación Tipo II) en el que una estudiante de grado décimo ha sido víctima de publicaciones difamatorias y fotomontajes degradantes creados y difundidos por dos de sus compañeros a través de redes sociales, afectando gravemente su salud mental y asistencia a clases.",
+  "enunciado": "Al asumir el caso y activar el protocolo de la Ruta de Atención Integral (Ley 1620 de 2013), la acción que debe ejecutar de inmediato el coordinador para garantizar el componente de atención y protección es:",
+  "opciones": {
+    "A": "Citar inmediatamente a los padres de los agresores para firmar la expulsión definitiva de la institución sin mediación previa.",
+    "B": "Adoptar medidas de protección inmediata para salvaguardar la integridad de la víctima, remitirla a atención en salud mental y citar de forma separada a los acudientes para iniciar el proceso de restauración.",
+    "C": "Aconsejar a la estudiante afectada que cierre sus redes sociales particulares para evitar que el conflicto digital siga escalando dentro del colegio.",
+    "D": "Remitir el expediente al Consejo Directivo para que modifique el Manual de Convivencia antes de tomar cualquier medida con los estudiantes."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "Frente a las Situaciones Tipo II (agresiones que no constituyen delitos pero son sistemáticas), la Ley 1620 establece que la prioridad absoluta es cesar la situación de ciberacoso, proteger la salud emocional de la víctima mediante remisión especializada y garantizar el debido proceso convocando a los acudientes para la concertación de alternativas restaurativas.",
+  "justificacionClave": "La opción B cumple estrictamente con los pasos de atención inmediata, protección integral de los derechos humanos de la menor y activación de la ruta debida.",
+  "justificacionDistractores": {
+    "A": "Aplica una sanción expulsiva directa sin agotar el debido proceso y la ruta restaurativa, lo cual genera vulneraciones legales institucionales.",
+    "C": "Traslada la carga de la prueba y la responsabilidad de la protección a la víctima, revictimizándola y evadiendo la posición de garante del plantel.",
+    "D": "Efectúa una dilación administrativa innecesaria ante una urgencia de convivencia que requiere intervención inmediata de acuerdo con los protocolos vigentes."
+  },
+  "normativaRefs": [
+    "Ley 1620 de 2013 (Artículo 41 - Situaciones Tipo II)",
+    "Decreto 1075 de 2015"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

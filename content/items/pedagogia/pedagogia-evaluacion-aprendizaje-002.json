@@ -1,0 +1,37 @@
+{
+  "id": "pedagogia-evaluacion-aprendizaje-002",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "evaluacion_formativa",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "evaluacion_del_aprendizaje",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Un maestro de primaria concluye una clase sobre ecosistemas y observa que un grupo significativo de estudiantes muestra confusión al diferenciar entre factores bióticos y abióticos durante la socialización oral espontánea del cierre.",
+  "enunciado": "Para actuar bajo un enfoque genuino de evaluación formativa de aula y mejora continua, la intervención inmediata del docente debe ser:",
+  "opciones": {
+    "A": "Asignar una nota deficiente a los estudiantes confundidos para que estudien autónomamente los conceptos en casa.",
+    "B": "Ajustar la planeación de la siguiente sesión para incorporar un andamiaje didáctico con material concreto que aclare las dudas evidenciadas.",
+    "C": "Continuar con el cronograma temático planeado originalmente para no retrasar los contenidos fijados en la malla curricular institucional.",
+    "D": "Aplicar un examen escrito imprevisto y de carácter sumativo en ese mismo instante para medir el porcentaje exacto de pérdida."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "El corazón de la evaluación formativa de aula radica en usar la información recolectada sobre el aprendizaje de los alumnos en tiempo real para regular y adaptar la enseñanza del propio maestro. Si se detecta un vacío conceptual masivo, la praxis pedagógica obliga a pausar el avance lineal y diseñar estrategias de remediación didáctica inmediata.",
+  "justificacionClave": "La opción B operativiza la retroalimentación formativa de doble vía: la evidencia del aula modifica la planeación del docente para asegurar el logro del aprendizaje.",
+  "justificacionDistractores": {
+    "A": "Aplica una medida de corte punitivo que castiga el proceso de construcción del saber y traslada la responsabilidad de la mediación a la familia.",
+    "C": "Adopta un formalismo curricular ciego e inflexible que prioriza el cumplimiento de contenidos burocráticos sobre la comprensión real de los estudiantes.",
+    "D": "Usa la evaluación de forma punitiva y tecnicista, lo que incrementa la frustración escolar y destruye el clima afectivo del aula de clase."
+  },
+  "normativaRefs": [
+    "Decreto 1075 de 2015",
+    "Decreto 1290 de 2009"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  }
+}

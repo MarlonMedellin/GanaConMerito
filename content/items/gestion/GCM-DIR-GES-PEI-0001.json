@@ -1,0 +1,37 @@
+{
+  "id": "GCM-DIR-GES-PEI-0001",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "gestion",
+  "subarea": "gestion_directiva",
+  "perfil": "rector_director_rural",
+  "tipoCompetencia": "funcional",
+  "competency": "direccionamiento_institucional_y_gestion_del_clima_escolar",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "Un rector asume la dirección de una institución educativa oficial que presenta un clima escolar fracturado por tensiones recurrentes entre el sindicato docente y la asociación de padres de familia. Esta situación ha paralizado las sesiones del Consejo Directivo e impactado negativamente el rendimiento académico.",
+  "enunciado": "Para restablecer la gobernanza y promover un clima institucional armónico centrado en el interés superior de los estudiantes, la primera línea de acción del Rector debe ser:",
+  "opciones": {
+    "A": "Gobernar de forma aislada mediante decretos rectorales y suspender las reuniones del Consejo Directivo hasta que cesen las disputas.",
+    "B": "Convocar a mesas de diálogo constructivo mediadas por metas comunes de calidad, reestructurando los canales de comunicación y la toma de decisiones participativa.",
+    "C": "Solicitar a la Secretaría de Educación el traslado inmediato de los docentes líderes del sindicato para disolver la oposición interna.",
+    "D": "Dar la razón de manera sistemática a la asociación de padres para mantener el apoyo social externo frente al cuerpo docente."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La gestión directiva exige capacidades de mediación, resolución pacífica de conflictos y liderazgo transformador. Como posición de garante y máxima autoridad ejecutiva, el rector debe usar el Gobierno Escolar no como un escenario de confrontación, sino como un espacio de concertación guiado por los fines de la educación y el PMI.",
+  "justificacionClave": "La opción B prioriza canales de comunicación asertiva, horizontalidad y enfoque restaurativo, restaurando la confianza de los estamentos sin medidas autoritarias.",
+  "justificacionDistractores": {
+    "A": "Incurre en una omisión de sus funciones legales al paralizar los órganos de gobierno escolar, adoptando un enfoque autocrático que agrava la crisis.",
+    "C": "Aplica una vía punitiva y de persecución que deteriora irreparablemente el clima laboral y viola los marcos de concertación democrática.",
+    "D": "Muestra parcialidad y debilidad en la gestión, profundizando la fractura interna al validar la polarización en lugar de actuar como un mediador neutral."
+  },
+  "normativaRefs": [
+    "Decreto 1075 de 2015 (Funciones del Rector y Gobierno Escolar)",
+    "Ley 1620 de 2013 (Convivencia Escolar)"
+  ],
+  "trazabilidad": {
+    "fuente": "content/items/gestion",
+    "loteOrigen": "GCM-DIR-GES-PEI-0001",
+    "rutaOrigen": "content/items/gestion/gestion_directiva/liderazgo_y_clima_escolar/GCM-DIR-GES-PEI-0001.json"
+  }
+}
