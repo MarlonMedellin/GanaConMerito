@@ -4,7 +4,7 @@ Este archivo deja trazabilidad de la revision documental de los Markdown bajo `c
 
 ## Resultado
 
-- Markdown revisados: 182
+- Markdown revisados: 183
 - Fuente activa beta confirmada: `content/items/beta-v1/`
 - Fuente editorial beta confirmada: `content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv`
 - Material no beta confirmado: `content/items/no-beta-v1/`
@@ -17,7 +17,7 @@ Este archivo deja trazabilidad de la revision documental de los Markdown bajo `c
 | Consolidacion historica | 52 | Historial de proceso |
 | Preguntas legacy fuera de beta | 29 | Historico / no beta |
 | Perfiles | 8 | Referencia por cargo |
-| Gobierno documental | 4 | Canonico |
+| Gobierno documental | 5 | Canonico |
 | Control operacional heredado | 3 | Evidencia previa |
 | Otros | 2 | Revisar caso a caso |
 | Normativa | 2 | Referencia |
@@ -104,6 +104,7 @@ Este archivo deja trazabilidad de la revision documental de los Markdown bajo `c
 - `content/INDICE-DOCUMENTAL.md`
 - `content/MANIFIESTO-SANEAMIENTO-BETA.md`
 - `content/README.md`
+- `content/REVISION-MD-CONTENT.md`
 
 ### Mesa editorial
 
