@@ -1,0 +1,56 @@
+{
+  "id_item": "CEOL_B02_I05",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "competencias_ciudadanas",
+  "tema": "Enfoque de derechos, debido proceso y justicia restaurativa",
+  "subtema": "respuesta_restaurativa_al_bullying",
+  "competencia": "Toma decisiones restaurativas frente a situaciones de acoso escolar sin reducir la respuesta a castigo aislado.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA_ALTA",
+  "claim": "Reconoce la respuesta institucional más coherente con justicia restaurativa cuando la comunidad propone resolver el bullying solo con suspensiones prolongadas.",
+  "evidencia": "Selecciona la actuación que integra protección de la víctima, responsabilización del agresor, reparación y seguimiento.",
+  "tarea": "Analizar una situación de acoso escolar y elegir la respuesta institucional más adecuada.",
+  "contexto": "En una institución aumentan los casos de bullying. Algunas voces proponen como única respuesta suspensiones largas para los agresores, sin trabajo pedagógico ni seguimiento.",
+  "enunciado": "¿Qué respuesta se ajusta mejor a un enfoque de justicia restaurativa frente a este problema?",
+  "opciones": {
+    "A": "Suspender de inmediato a los agresores por varios días y esperar que el temor a la sanción disuada nuevos casos.",
+    "B": "Facilitar un proceso institucional que proteja a la víctima, responsabilice a quienes agreden, acuerde reparación y haga seguimiento para evitar repetición.",
+    "C": "Pedir a los estudiantes involucrados que resuelvan el conflicto entre ellos para fortalecer su autonomía sin intervención adulta.",
+    "D": "Evitar consecuencias formales para no estigmatizar a nadie y concentrar la respuesta en actividades generales de convivencia."
+  },
+  "clave": "B",
+  "justificacion_clave": "La clave es B porque la justicia restaurativa no equivale a impunidad ni a sanción aislada: exige protección, responsabilización, reparación y seguimiento.",
+  "distractores_funcion": {
+    "A": "Modela una respuesta puramente punitiva que no asegura reparación ni no repetición.",
+    "B": "Clave correcta; expresa el núcleo restaurativo de la decisión escolar.",
+    "C": "Modela una abstención institucional improcedente ante un caso de acoso.",
+    "D": "Confunde no estigmatizar con renunciar a responsabilizar y reparar."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Protege a la víctima y evita presentar el enfoque restaurativo como impunidad."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Escenario claro; se marca revisión humana solo por perfil aún no cerrado."
+  },
+  "metadata_editorial": {
+    "lote": "L013-B",
+    "ruta_origen": "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/CEOL_B02_I05.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CEOL_B02_I05.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": true
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "competencias_ciudadanas",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 58,
+    "fuentes": "auditoria/L013 | auditoria/L068 | auditoria/L078",
+    "ruta_origen": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CEOL_B02_I05.json"
+  }
+}

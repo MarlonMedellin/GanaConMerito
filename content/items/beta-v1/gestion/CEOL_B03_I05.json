@@ -1,0 +1,56 @@
+{
+  "id_item": "CEOL_B03_I05",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "gestion",
+  "tema": "Rol del orientador escolar",
+  "subtema": "Limites frente a intervencion clinica",
+  "competencia": "Diferenciar el acompanamiento formativo del orientador respecto del diagnostico y tratamiento clinico en salud mental.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Distingue claramente entre apoyo pedagógico e intervencion psicoterapeutica cuando aparecen riesgos psicosociales o autolesiones.",
+  "evidencia": "Elige la alternativa que orienta derivacion a salud y evita que la escuela asuma tratamiento clinico impropio.",
+  "tarea": "Resolver un caso donde se requiere delimitar funciones entre orientacion escolar y red de salud.",
+  "contexto": "Un docente deriva a orientacion a un estudiante con aislamiento persistente, cambios bruscos de comportamiento y autolesiones leves. El orientador decide programar sesiones semanales de psicoterapia individual para tratar directamente el trastorno que supone de fondo.",
+  "enunciado": "?Como debe valorarse esta decision?",
+  "opciones": {
+    "A": "Como una extralimitacion funcional, porque la orientacion escolar acompana, previene y deriva, pero no realiza diagnostico ni tratamiento psicoterapeutico clinico.",
+    "B": "Como la aplicacion correcta de sus competencias, ya que la institucion debe asumir directamente el tratamiento de salud mental de sus estudiantes.",
+    "C": "Como una omision, porque lo procedente era convocar primero a una junta disciplinaria para sancionar la autolesion como falta grave.",
+    "D": "Como una intervencion incompleta, porque las sesiones clinicas debieron hacerse con presencia del docente de aula para definir calificaciones."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opcion correcta delimita con claridad el alcance pedagogico del orientador y remite el componente clinico a la red de salud, evitando confundir acompanamiento escolar con psicoterapia.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Convierte indebidamente la orientacion escolar en un servicio clinico institucional.",
+    "C": "Traduce un riesgo en salud mental a una respuesta punitiva y disciplinaria.",
+    "D": "Vulnera reserva profesional e involucra al docente en una funcion que no le corresponde."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Caso tecnico y objetivo, sin sesgos sobre el estudiante ni sobre salud mental."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Las opciones son distinguibles y la tarea esta bien focalizada."
+  },
+  "metadata_editorial": {
+    "lote": "L027",
+    "ruta_origen": "content/items/stand-by/Rol, funciones y límites del orientador escolar/CEOL_B03_I05.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/orientador/funcional/CEOL_B03_I05.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "gestion",
+  "perfil_sugerido_beta": "orientador",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 68,
+    "fuentes": "auditoria/L027",
+    "ruta_origen": "content/restructuring-v1/docente/gestion/orientador/funcional/CEOL_B03_I05.json"
+  }
+}

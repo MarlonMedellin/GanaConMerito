@@ -1,0 +1,56 @@
+{
+  "id_item": "EIP_B02_I05",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "normatividad",
+  "tema": "Marco legal del preescolar y organización del nivel",
+  "subtema": "Promoción y apoyo pedagógico en preescolar",
+  "competencia": "Aplica el enfoque normativo del nivel para decidir sobre promoción y apoyos sin recurrir a reprobación ni castigos pedagógicos.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Determina la actuación institucional correcta ante dificultades de desarrollo en transición dentro del marco de promoción y apoyo del preescolar.",
+  "evidencia": "Selecciona la respuesta que combina promoción con apoyo pedagógico y descarta reprobación, segregación clínica o supresión de la lúdica.",
+  "tarea": "Resolver un caso de propuesta de reprobación en transición de acuerdo con la organización normativa del nivel.",
+  "contexto": "Una docente propone reprobar a un niño de transición porque no alcanza algunos desempeños de motricidad fina y lenguaje al mismo ritmo que sus compañeros.",
+  "enunciado": "¿Cuál actuación institucional es correcta en este caso?",
+  "opciones": {
+    "A": "Promover al niño al grado siguiente diseñando estrategias pedagógicas de apoyo para fortalecer su desarrollo.",
+    "B": "Hacer repetir transición para asegurar maduración antes del ingreso a básica primaria.",
+    "C": "Remitirlo de inmediato a educación especial extraescolar y condicionar su matrícula al diagnóstico clínico.",
+    "D": "Suspender su participación en actividades lúdicas para concentrarlo en talleres remediales de motricidad y lenguaje."
+  },
+  "clave": "A",
+  "justificacion_clave": "La respuesta correcta mantiene el enfoque del nivel: acompañar el desarrollo con apoyos pedagógicos sin convertir las diferencias de ritmo en causal de reprobación o exclusión.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Traslada al preescolar una lógica de repitencia impropia del nivel.",
+    "C": "Convierte una necesidad pedagógica en exclusión condicionada por diagnóstico externo.",
+    "D": "Suprime la lúdica, que es una vía central del desarrollo infantil."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Protege ritmos de desarrollo y evita respuestas punitivas o estigmatizantes."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "La situación es clara y exige una sola decisión profesional observable."
+  },
+  "metadata_editorial": {
+    "lote": "L022",
+    "ruta_origen": "content/items/stand-by/Marco legal del preescolar y organización del nivel/EIP_B02_I05.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/preescolar/funcional/EIP_B02_I05.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "normatividad",
+  "perfil_sugerido_beta": "preescolar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 47,
+    "fuentes": "auditoria/L022",
+    "ruta_origen": "content/restructuring-v1/docente/normatividad/preescolar/funcional/EIP_B02_I05.json"
+  }
+}

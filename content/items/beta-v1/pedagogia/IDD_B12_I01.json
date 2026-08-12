@@ -1,0 +1,56 @@
+{
+  "id_item": "IDD_B12_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "Didáctica de áreas, resolución de problemas y material concreto",
+  "subtema": "Resolución de problemas contextualizada",
+  "competencia": "Selecciona estrategias didácticas contextualizadas para promover resolución significativa de problemas matemáticos.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El docente reconoce estrategias de modelación y contextualización frente a prácticas mecánicas.",
+  "evidencia": "Selecciona acciones de aula centradas en resolución significativa de problemas.",
+  "tarea": "Elegir la intervención didáctica más pertinente ante una enseñanza algorítmica mecánica.",
+  "contexto": "Clase de matemáticas basada en repetición procedimental sin transferencia contextual.",
+  "enunciado": "¿Cuál acción didáctica favorece mejor la resolución significativa de problemas matemáticos?",
+  "opciones": {
+    "A": "Diseñar situaciones problema contextualizadas que requieran modelación y justificación.",
+    "B": "Agregar problemas verbales al final de ejercicios mecánicos.",
+    "C": "Aumentar la cantidad de algoritmos explicados antes del taller.",
+    "D": "Usar material manipulativo para repetir los mismos algoritmos."
+  },
+  "clave": "A",
+  "justificacion_clave": "Promueve transferencia, modelación y uso funcional de procedimientos.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Contextualización superficial.",
+    "C": "Memorización acumulativa sin comprensión.",
+    "D": "Material concreto usado de forma mecánica."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Sin sesgos culturales o de género."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Opciones equilibradas."
+  },
+  "metadata_editorial": {
+    "lote": "L012",
+    "ruta_origen": "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I01.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/secundaria_media/funcional/IDD_B12_I01.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "pedagogia",
+  "perfil_sugerido_beta": "secundaria_media",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 18,
+    "fuentes": "auditoria/L012 | auditoria/L043 | auditoria/L069 | fase-5b/microbloque-01/banco-premium",
+    "ruta_origen": "content/items/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I01.json"
+  }
+}

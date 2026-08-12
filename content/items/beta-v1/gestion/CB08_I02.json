@@ -1,0 +1,56 @@
+{
+  "id_item": "CB08_I02",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "gestion",
+  "tema": "Referentes PEI",
+  "subtema": "Coherencia interna del PEI",
+  "competencia": "Detecta incoherencias entre horizonte institucional y componentes pedagogicos o de convivencia del PEI.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce la falla principal cuando los principios declarados por la institucion no se traducen en acciones curriculares y de convivencia.",
+  "evidencia": "Selecciona una respuesta que nombra la falta de articulacion interna entre mision, pedagogia y convivencia frente a opciones de independencia impropia o minimizacion del problema.",
+  "tarea": "Identificar el problema principal en un PEI cuya mision declara inclusion y participacion sin acciones que las operativicen.",
+  "contexto": "Al revisar el PEI, se encuentra que la mision habla de inclusion y participacion, pero las estrategias pedagogicas y de convivencia no mencionan acciones relacionadas con estos principios.",
+  "enunciado": "¿Cual es el problema principal en este caso?",
+  "opciones": {
+    "A": "La mision no deberia incluir enunciados axiologicos o pedagogicos porque esos asuntos pertenecen solo al manual de convivencia.",
+    "B": "Existe falta de coherencia interna entre el horizonte institucional y los componentes pedagogico y de convivencia del PEI.",
+    "C": "Las practicas de aula deben formularse con independencia del PEI para proteger la libertad de catedra.",
+    "D": "Inclusion y participacion son asuntos complementarios que solo deben aparecer en proyectos transversales o campanas ocasionales."
+  },
+  "clave": "B",
+  "justificacion_clave": "La respuesta correcta es B porque un PEI institucionalmente coherente debe traducir sus principios declarados en orientaciones curriculares, pedagogicas y de convivencia observables. Si esto no ocurre, el documento pierde fuerza como carta de navegacion.",
+  "distractores_funcion": {
+    "A": "Reduce indebidamente el alcance misional del PEI.",
+    "B": "Clave correcta: identifica la fractura de coherencia interna del proyecto institucional.",
+    "C": "Desconecta impropiamente la practica de aula del marco institucional.",
+    "D": "Minimiza principios estructurales tratandolos como anexos decorativos."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Situacion institucional general y comprensible para directivos de distintos contextos."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Caso breve con una sola inferencia central."
+  },
+  "metadata_editorial": {
+    "lote": "L077",
+    "ruta_origen": "content/items/stand-by/Referentes PEI/CB08_I02.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/rector_director_rural/funcional/CB08_I02.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": true
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "gestion",
+  "perfil_sugerido_beta": "rector_director_rural",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 65,
+    "fuentes": "auditoria/L026 | auditoria/L066 | auditoria/L077",
+    "ruta_origen": "content/restructuring-v1/docente/gestion/rector_director_rural/funcional/CB08_I02.json"
+  }
+}

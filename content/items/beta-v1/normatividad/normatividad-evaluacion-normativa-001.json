@@ -1,0 +1,48 @@
+{
+  "id": "normatividad-evaluacion-normativa-001",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "normatividad",
+  "subarea": "evaluacion_del_aprendizaje",
+  "perfil": "coordinador",
+  "tipoCompetencia": "funcional",
+  "competency": "normatividad_y_legislacion_educativa",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Un padre de familia interpone un recurso formal ante la coordinación académica argumentando que su hijo reprobó el año escolar debido a que un docente aplicó un criterio de evaluación cuantitativo que no se encuentra estipulado en el Sistema Institucional de Evaluación de los Estudiantes (SIEE) aprobado en el PEI.",
+  "enunciado": "Al revisar el caso bajo el marco legal del Decreto 1290 de 2009, la actuación inmediata que debe liderar el coordinador académico es:",
+  "opciones": {
+    "A": "Rechazar el recurso del padre de familia invocando el principio de autonomía escolar y el libre criterio de cátedra del docente.",
+    "B": "Revisar los registros oficiales del SIEE y, si se comprueba que el criterio del docente no es institucional, ordenar la rectificación de la nota conforme al debido proceso legal.",
+    "C": "Sugerir al docente que le realice un examen extraordinario imprevisto al estudiante para mantener la nota original sin modificar registros.",
+    "D": "Remitir el caso de forma directa al ICFES para que dicha entidad determine la validez del criterio de evaluación del colegio."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "El Decreto 1290 de 2009 confiere autonomía a las instituciones para crear su SIEE, pero determina que este es de obligatorio cumplimiento y constituye ley para la comunidad educativa. Ningún docente puede evaluar usando criterios que no estén explícitamente publicados y aprobados por el Consejo Superior/Directivo, pues se vulneraría la justicia y la transparencia evaluativa.",
+  "justificacionClave": "La opción B defiende el derecho del estudiante a una evaluación justa y transparente alineada estrictamente con los documentos de gobernanza aprobados en el PEI.",
+  "justificacionDistractores": {
+    "A": "Confunde la autonomía escolar con la arbitrariedad metodológica individual, ignorando que el docente está subordinado a las reglas del SIEE institucional.",
+    "C": "Propone una salida informal e irregular que evade el nudo legal y perpetúa la falta de transparencia del proceso evaluativo.",
+    "D": "Muestra desconocimiento de las competencias institucionales, ya que el SIEE es gobernado internamente y el ICFES no tiene facultades de mediación en notas de aula."
+  },
+  "normativaRefs": [
+    "Decreto 1290 de 2009 (Artículo 12 - Derechos del estudiante)",
+    "Decreto 1075 de 2015"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  },
+  "id_item": "normatividad-evaluacion-normativa-001",
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "normatividad",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 55,
+    "fuentes": "content/items | content/items/_banco-operacional.csv",
+    "ruta_origen": "content/items/normatividad/normatividad-evaluacion-normativa-001.json"
+  }
+}

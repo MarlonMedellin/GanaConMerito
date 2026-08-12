@@ -1,0 +1,56 @@
+{
+  "id_item": "DIL_B02_I02",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "normatividad",
+  "tema": "restablecimiento de derechos",
+  "subtema": "activacion de ruta ante indicios de vulneracion",
+  "competencia": "Distinguir entre dificultad escolar ordinaria y situacion que exige activacion de ruta de proteccion.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado diferencia situaciones escolares ordinarias de aquellas que exigen activar la ruta y remitir a autoridad competente para restablecimiento de derechos.",
+  "evidencia": "Selecciona la condicion en la que procede la activacion del PARD frente a indicios de amenaza, inobservancia o vulneracion.",
+  "tarea": "Resolver un caso plausible de aula y decidir cuando corresponde activar la ruta de proteccion.",
+  "contexto": "Un docente observa de manera recurrente hematomas inexplicables, desnutricion visible, somnolencia constante y desatencion grave del cuidado en un estudiante. Los cuidadores evaden explicaciones.",
+  "enunciado": "En cual tipo de situacion corresponde a la institucion educativa activar la ruta y remitir el caso para inicio de proceso de restablecimiento de derechos?",
+  "opciones": {
+    "A": "Cuando existen indicios de amenaza, inobservancia o vulneracion de derechos que requieren medidas de proteccion por autoridad competente.",
+    "B": "Cuando se presenta una falta menor al manual de convivencia que amerita una amonestacion verbal.",
+    "C": "Solo cuando el estudiante ha cometido una falta grave que amerita suspension o perdida del cupo escolar.",
+    "D": "Cuando la familia solicita voluntariamente el traslado del estudiante a otra institucion."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opcion A es la unica que conecta el caso con el supuesto juridico y protector correcto: indicios de vulneracion de derechos que obligan a activar la ruta y dar traslado a autoridad competente.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Confunde convivencia ordinaria con vulneracion grave de derechos.",
+    "C": "Convierte un mecanismo protector en sancion disciplinaria.",
+    "D": "Asocia erradamente la ruta de proteccion con un tramite administrativo de traslado."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El item se centra en signos objetivos y en deber institucional de proteccion, no en prejuicios sobre la familia."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Caso claro, con tarea focalizada y mejor respuesta identificable por razon profesional."
+  },
+  "metadata_editorial": {
+    "lote": "L023",
+    "ruta_origen": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I02.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/DIL_B02_I02.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "normatividad",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 43,
+    "fuentes": "auditoria/L023 | auditoria/L064",
+    "ruta_origen": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/DIL_B02_I02.json"
+  }
+}

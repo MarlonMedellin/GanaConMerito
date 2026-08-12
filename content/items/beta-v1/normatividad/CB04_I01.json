@@ -1,0 +1,56 @@
+{
+  "id_item": "CB04_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "normatividad",
+  "tema": "Inclusión Decreto 1421",
+  "subtema": "PIAR, DUA y ajustes razonables",
+  "competencia": "Aplica decisiones institucionales inclusivas basadas en barreras, DUA y ajustes razonables bajo el marco del Decreto 1421.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Valora la respuesta institucional más coherente con un enfoque de inclusión que transforma el aula y no segrega al estudiante.",
+  "evidencia": "Selecciona la actuación que combina acompañamiento docente, DUA y ajustes razonables, y descarta segregación, suspensión del deber institucional o rebaja homogénea de metas.",
+  "tarea": "Analizar un caso de resistencia docente al PIAR y elegir la respuesta institucional y pedagógica más coherente con inclusión.",
+  "contexto": "Durante una reunión de ciclo, varios docentes afirman que el diseño y aplicación de los PIAR retrasa el avance temático del grupo y disminuye la exigencia académica general.",
+  "enunciado": "¿Cuál es la respuesta institucional y pedagógica más coherente con el enfoque de inclusión establecido en el Decreto 1421 de 2017?",
+  "opciones": {
+    "A": "Acompañar a los docentes en el diseño universal para el aprendizaje y en la formulación de ajustes razonables focalizados, asumiendo la inclusión como una transformación del aula que beneficia a todo el estudiantado.",
+    "B": "Reubicar a los estudiantes con PIAR en aulas de apoyo exclusivas durante las asignaturas de mayor complejidad cognitiva.",
+    "C": "Suspender temporalmente la obligatoriedad de los PIAR hasta contar con docentes de apoyo permanentes para cada aula.",
+    "D": "Reducir de forma homogénea las metas de aprendizaje de toda la clase para equipararlas a los ajustes razonables del estudiante con discapacidad."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opción correcta mantiene la obligación institucional de remover barreras y concretar apoyos pertinentes dentro del aula común. El Decreto 1421 no ordena segregar ni suspender el PIAR, y tampoco equipara inclusión con rebajar las metas de todo el grupo.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Resuelve la tensión mediante segregación del estudiante, contraria al enfoque inclusivo.",
+    "C": "Condiciona una obligación vigente a la llegada de recursos adicionales.",
+    "D": "Confunde ajustes razonables con disminución homogénea de expectativas para toda la clase."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem usa lenguaje respetuoso, evita memorizar artículos y centra la decisión en barreras, apoyos y participación efectiva."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "La carga lectora es pertinente al juicio solicitado y las opciones son comparables."
+  },
+  "metadata_editorial": {
+    "lote": "L019",
+    "ruta_origen": "content/items/stand-by/Inclusión Decreto 1421/CB04_I01.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/CB04_I01.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": true
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "normatividad",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 37,
+    "fuentes": "auditoria/L019",
+    "ruta_origen": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/CB04_I01.json"
+  }
+}

@@ -10,7 +10,7 @@ tags: [deuda-tecnica, calidad, herencia]
 related:
   - ARCH-SYSTEM-OVERVIEW
   - DEL-SPRINT-LOG
-last_reviewed: 2026-04-23
+last_reviewed: 2026-08-11
 ---
 
 # Technical debt register
@@ -60,6 +60,45 @@ Toda deuda debe registrar origen, impacto y owner. No se usa este registro para 
 - relación: GOV-AGENT-ROSTER
 
 ## Deuda nueva
+
+### DEBT-N-004
+- título: cierre beta depende de revalidacion runtime fresca
+- descripción: el repo tiene base tecnica cercana a beta, pero HEAD actual `ca59cec` no cuenta todavia con evidencia documentada de triple verificacion source/deploy/runtime ni QA postdeploy/E2E fresco.
+- origen: homologacion documental beta 2026-08-11
+- tipo: ops-qa
+- módulo: runtime
+- impacto: alto
+- costo estimado: bajo
+- interés de demora: alto
+- owner: ops + qa
+- estado: abierto
+- relación: docs/02-delivery/release-checklist.md, docs/05-ops/runtime-and-release.md
+
+### DEBT-N-005
+- título: evidencia QA historica dispersa frente a snapshot beta
+- descripción: existen reportes historicos de QA/runtime con commits anteriores, pero no todos distinguen con suficiente claridad entre evidencia auxiliar y estado beta vigente.
+- origen: herencia documental de sprints runtime
+- tipo: documentación
+- módulo: quality
+- impacto: medio
+- costo estimado: medio
+- interés de demora: medio
+- owner: PM-Governance + QA
+- estado: abierto
+- relación: docs/project/status.md, docs/04-quality/known-issues.md
+
+### DEBT-N-006
+- título: tag/release beta pendiente
+- descripción: no existe release/tag publico `v0.6.0-beta.1`; debe crearse solo despues de runtime PASS fresco.
+- origen: preparacion beta 0.6.0
+- tipo: release
+- módulo: platform
+- impacto: medio
+- costo estimado: bajo
+- interés de demora: medio
+- owner: release owner
+- estado: abierto
+- relación: docs/02-delivery/release-checklist.md
 
 ### DEBT-N-001
 - título: falta de validación documental automatizada previa a commits

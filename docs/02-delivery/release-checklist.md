@@ -2,11 +2,23 @@
 
 Este documento define los pasos obligatorios para considerar un release como exitoso, trazable y operativamente verificable.
 
+## Snapshot beta candidata 0.6.0
+- Fecha de homologacion documental: 2026-08-11.
+- HEAD actual revisado: `ca59cec`.
+- Ultimo runtime publico verificado documentalmente: `716ec62`.
+- Estado: beta candidata, no release cerrado.
+- Proximo release sugerido: `v0.6.0-beta.1` despues de triple verificacion y QA runtime fresco.
+
 ## 1. Validación Pre-Release (fuente canónica)
+- [ ] Commit objetivo definido y registrado: `X`.
+- [ ] Confirmar si `X` sera `ca59cec` u otro commit posterior.
 - [ ] Trabajo realizado en `/home/ubuntu/.openclaw/product`, no en `/opt/gcm/app`.
 - [ ] `git status --short --branch` entendido y bajo control.
+- [ ] `npm run content:validate` verde.
+- [ ] `npm run lint` verde.
 - [ ] `npm run build` verde.
 - [ ] `npm run test:dashboard` verde como baseline mínima de contrato.
+- [ ] `npm test` o suite equivalente relevante verde; cualquier limitacion de entorno registrada explicitamente.
 - [ ] Si hubo cambios documentales críticos: `python3 scripts/validate_docs.py` y `python3 scripts/build_context_index.py`.
 - [ ] Documentación actualizada sin afirmar como “hecho” nada sin evidencia de runtime.
 
@@ -41,5 +53,7 @@ Este documento define los pasos obligatorios para considerar un release como exi
 
 ## 5. Cierre documental
 - [ ] Actualizar `docs/project/status.md`, `docs/02-delivery/sprint-log.md` y `docs/02-delivery/change-log.md`.
+- [ ] Actualizar `docs/01-product/backlog.md`, `docs/05-ops/runtime-and-release.md`, `docs/04-quality/known-issues.md` y `docs/04-quality/technical-debt-register.md` si cambia estado beta, runtime, QA o deuda.
 - [ ] Diferenciar explícitamente entre HEAD actual del repo y último runtime triple-verificado si no coinciden.
+- [ ] Registrar tag/release creado, o dejar explicitamente pendiente `v0.6.0-beta.1`.
 - [ ] No marcar sprint/release como cerrado mientras falte un gate obligatorio o no exista owner claro del bloqueo.

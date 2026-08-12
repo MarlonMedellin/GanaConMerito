@@ -1,0 +1,47 @@
+{
+  "id": "lectura-critica-interpretacion-textual-001",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "lectura_critica",
+  "subarea": "comprension_textual_critica",
+  "perfil": "transversal",
+  "tipoCompetencia": "basica",
+  "competency": "interpretacion_e_inferencia_textual",
+  "nivelCognitivo": "comprension_literal_e_inferencial",
+  "dificultad": "media",
+  "contexto": "Un fragmento de un manifiesto sobre la educación del futuro señala: 'La obsesión contemporánea por medirlo todo a través de indicadores estandarizados ha convertido a la evaluación en un fetiche estadístico. Olvidamos que las transformaciones humanas más profundas —la empatía, el juicio estético y el pensamiento socio-crítico— escapan por definición a las mallas cuadriculadas de las pruebas de opción múltiple'.",
+  "enunciado": "A partir del sentido global del texto, una inferencia válida sobre la postura del autor respecto a las pruebas estandarizadas es que estas:",
+  "opciones": {
+    "A": "Constituyen la herramienta más objetiva y exacta para captar la totalidad del desarrollo humano integral.",
+    "B": "Sufren de una limitación estructural que les impide cuantificar ciertas dimensiones críticas del ser.",
+    "C": "Deben ser aplicadas con mayor frecuencia diaria y rigor punitivo en los niveles de preescolar y básica primaria.",
+    "D": "Carecen de todo valor técnico y deben ser desterradas de forma inmediata de la gobernanza del sistema educativo."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La inferencia textual exige derivar conclusiones válidas que no están escritas de forma literal pero que se desprenden lógicamente del tono y las premisas del autor. Al afirmar que las transformaciones más profundas 'escapan por definición' a las mallas de estas pruebas, el autor demuestra que considera que el instrumento tiene un límite de alcance metodológico.",
+  "justificacionClave": "La opción B traduce de forma precisa e inferencial la restricción que el autor adjudica al enfoque métrico estandarizado.",
+  "justificacionDistractores": {
+    "A": "Plantea una premisa radicalmente opuesta a la postura crítica y escéptica del autor expuesta a lo largo del texto.",
+    "C": "Promueve una solución de intensificación punitiva que contradice la defensa de la empatía y la humanización de la enseñanza.",
+    "D": "Lleva la postura del autor a un extremo de abolicionismo radical que el texto no propone ni valida explícitamente."
+  },
+  "normativaRefs": [
+    "Estándares Básicos de Competencias en Lenguaje MEN"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  },
+  "id_item": "lectura-critica-interpretacion-textual-001",
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "lectura_critica",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 78,
+    "fuentes": "content/items | content/items/_banco-operacional.csv",
+    "ruta_origen": "content/items/lectura_critica/lectura-critica-interpretacion-textual-001.json"
+  }
+}

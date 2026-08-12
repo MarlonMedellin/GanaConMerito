@@ -1,0 +1,56 @@
+{
+  "id_item": "CEOL_B04_I04",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "competencias_ciudadanas",
+  "tema": "Corresponsabilidad, entorno y cuidado institucional",
+  "subtema": "dialogo_comunitario_y_prevencion",
+  "competencia": "Selecciona respuestas institucionales de diálogo, concertación y prevención frente a tensiones comunitarias asociadas a la escuela.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce la respuesta escolar que trata una tensión con la comunidad desde concertación pedagógica y no desde negación, estigmatización o externalización policial del conflicto.",
+  "evidencia": "Escoge la alternativa que integra gobierno escolar, comunidad y red de seguridad local en un plan preventivo.",
+  "tarea": "Analizar un conflicto entre vecinos y escuela y elegir la respuesta institucional más adecuada.",
+  "contexto": "Vecinos del plantel educativo manifiestan su intención de demandar al colegio porque, según ellos, algunos estudiantes generan situaciones de inseguridad en los alrededores. El docente conoce la preocupación y debe contribuir a una respuesta institucional adecuada.",
+  "enunciado": "Vecinos del plantel educativo manifiestan su intención de demandar al colegio porque, según ellos, algunos estudiantes generan situaciones de inseguridad en los alrededores. El docente conoce la preocupación y debe contribuir a una respuesta institucional adecuada.\n\n¿Cómo debe actuar la institución frente a esta situación?",
+  "opciones": {
+    "A": "Rechazar la interlocución con los vecinos aduciendo que la responsabilidad escolar termina en los linderos del edificio.",
+    "B": "Estigmatizar al cuerpo estudiantil en comunicados oficiales para justificar medidas inmediatas de control externo.",
+    "C": "Delegar unilateralmente el caso a la fuerza pública local y desvincular la gestión pedagógica de convivencia.",
+    "D": "Liderar mesas de diálogo con la comunidad y el gobierno escolar, analizar los factores del entorno, concertar acuerdos pedagógicos y coordinar acciones preventivas con la red local."
+  },
+  "clave": "D",
+  "justificacion_clave": "La clave es D porque incorpora mediación comunitaria, lectura del entorno y corresponsabilidad preventiva. La respuesta correcta evita tanto la negación del problema como la criminalización de los estudiantes o la delegación exclusiva a la policía.",
+  "distractores_funcion": {
+    "A": "Niega la dimensión comunitaria de la convivencia escolar.",
+    "B": "Responde desde estigmatización y vulnera presunción de inocencia y buen nombre.",
+    "C": "Reduce el conflicto a orden público y abandona la función formativa de la escuela.",
+    "D": "Clave correcta; integra comunidad, escuela y prevención territorial."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "La situación trabaja convivencia comunitaria sin construir estereotipos sobre estudiantes o vecinos."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Una sola tarea y opciones con paralelismo claro."
+  },
+  "metadata_editorial": {
+    "lote": "L006-A",
+    "ruta_origen": "content/items/stand-by/Corresponsabilidad, entorno y cuidado institucional/CEOL_B04_I04.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CEOL_B04_I04.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": false
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "competencias_ciudadanas",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "comportamental",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 60,
+    "fuentes": "auditoria/L006",
+    "ruta_origen": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CEOL_B04_I04.json"
+  }
+}

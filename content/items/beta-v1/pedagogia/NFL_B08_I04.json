@@ -1,0 +1,56 @@
+{
+  "id_item": "NFL_B08_I04",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "normatividad",
+  "tema": "Igualdad material, discriminación positiva y debilidad manifiesta",
+  "subtema": "Apoyos sin estigmatización",
+  "competencia": "Diseña apoyos pedagógicos respetuosos de la dignidad, la intimidad y la participación del estudiante.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Distingue apoyos inclusivos de actuaciones que exponen, segregan o vacían de contenido el aprendizaje.",
+  "evidencia": "Selecciona una actuación razonable y discreta que garantiza aprendizaje con el grupo sin vulnerar la intimidad.",
+  "tarea": "Elegir la respuesta docente más adecuada ante una necesidad de apoyo diferenciado.",
+  "contexto": "Una estudiante requiere apoyo diferenciado por una condición de debilidad manifiesta. El docente quiere garantizar igualdad material sin exponerla públicamente ni separarla innecesariamente del grupo.",
+  "enunciado": "¿Cuál actuación es más adecuada?",
+  "opciones": {
+    "A": "Anunciar ante todo el grupo la condición de la estudiante para explicar por qué recibe apoyo.",
+    "B": "Negar cualquier ajuste para evitar comentarios de sus compañeros.",
+    "C": "Diseñar apoyos razonables, pertinentes y discretos que le permitan participar con el grupo, protegiendo su dignidad, intimidad y derecho a aprender.",
+    "D": "Asignarle una actividad completamente desconectada del tema para mantenerla ocupada."
+  },
+  "clave": "C",
+  "justificacion_clave": "La actuación correcta sostiene el derecho a aprender con apoyos pertinentes, sin convertir la ayuda en exposición pública, segregación o desvinculación del contenido.",
+  "distractores_funcion": {
+    "A": "Vulnera intimidad en nombre del apoyo.",
+    "B": "Niega apoyos para preservar una falsa normalidad.",
+    "C": "Clave correcta.",
+    "D": "Mantiene ocupada a la estudiante, pero la excluye del aprendizaje común."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El ítem protege dignidad e intimidad y evita lenguaje excluyente o patologizante."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Plantea una sola decisión observable y usa un lenguaje directo."
+  },
+  "metadata_editorial": {
+    "lote": "L019",
+    "ruta_origen": "content/items/stand-by/Igualdad material, discriminación positiva y debilidad manifiesta/NFL_B08_I04.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/NFL_B08_I04.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": true
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "pedagogia",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 24,
+    "fuentes": "auditoria/L019 | auditoria/L039 | fase-5b/microbloque-01/banco-premium",
+    "ruta_origen": "content/items/Igualdad material, discriminación positiva y debilidad manifiesta/NFL_B08_I04.json"
+  }
+}

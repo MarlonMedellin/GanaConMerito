@@ -1,0 +1,79 @@
+{
+  "id": "item-ges-0001",
+  "slug": "gestion-liderazgo-apropiacion-pei-001",
+  "title": "Liderazgo directivo para la apropiacion del PEI",
+  "itemType": "multiple_choice",
+  "examType": "docente",
+  "tipo_item": "funcional",
+  "nivel_educativo": "directivo_docente",
+  "targetLevel": "directivo_docente",
+  "area": "gestion",
+  "subarea": "gestion_directiva",
+  "competencia": "liderazgo_y_clima_escolar",
+  "afirmacion": "El examinado reconoce la accion directiva que mejor convierte el PEI en una herramienta viva de orientacion pedagogica e institucional, y no en un documento formal sin apropiacion.",
+  "evidencia": "Selecciona la opcion que integra lectura del contexto, participacion de actores relevantes, ajuste de decisiones curriculares y de convivencia, e institucionalizacion del seguimiento.",
+  "proposito": "Aportar evidencia para decisiones de seleccion o pilotaje de directivos docentes sobre su capacidad de orientar procesos institucionales participativos y alineados con el contexto.",
+  "poblacion_objetivo": "Aspirantes o directivos docentes de roles como rector, director rural o coordinador.",
+  "blueprint": "Celda de aplicacion funcional en liderazgo y clima escolar; el examinado debe identificar una accion de gestion que articule lectura del contexto, participacion de la comunidad educativa y uso del PEI como orientador real de decisiones.",
+  "nivel_cognitivo": "aplicacion con juicio",
+  "dificultad": 0.58,
+  "contexto": "En una institucion educativa, los resultados de convivencia muestran aumento de conflictos entre estudiantes y las planeaciones de aula evidencian poca relacion con las caracteristicas del contexto local. Aunque el PEI menciona formacion integral y participacion, la mayoria de docentes y familias lo perciben como un documento que casi no orienta decisiones cotidianas. El rector y la coordinacion academica van a liderar una revision institucional.",
+  "enunciado": "Cual de las siguientes acciones ofrece la mejor evidencia de un liderazgo directivo orientado a que el PEI deje de ser un documento aislado y se convierta en una guia real para las decisiones pedagogicas y de convivencia?",
+  "opciones": {
+    "A": "Solicitar a cada docente ajustar sus planeaciones con un formato institucional comun y entregar evidencias al final del periodo, sin abrir en esta etapa una revision colegiada del PEI.",
+    "B": "Convocar a docentes, estudiantes y familias a revisar evidencias del contexto y de la convivencia, acordar ajustes curriculares y formativos, incorporarlos al PEI y definir seguimiento a su implementacion.",
+    "C": "Encargar a un asesor externo la reformulacion completa del PEI y presentarla despues en una jornada de socializacion para facilitar su adopcion.",
+    "D": "Priorizar un plan inmediato para subir indicadores academicos y dejar la revision del PEI para cuando mejoren los resultados de convivencia."
+  },
+  "respuesta_correcta": "B",
+  "explicacion": "La opcion B es la mejor respuesta porque expresa una accion de liderazgo funcional que conecta lectura del contexto, participacion de la comunidad educativa, toma de decisiones institucionales y seguimiento. Esa secuencia produce evidencia mas fuerte de apropiacion real del PEI que las alternativas centradas en rapidez operativa, delegacion externa o metas parciales desconectadas del proceso institucional.",
+  "justificacion_clave": "La clave B mide el constructo previsto porque propone un proceso directivo observable: usar evidencias del contexto, convocar actores relevantes, traducir hallazgos en ajustes curriculares y de convivencia, e institucionalizar seguimiento. Se alinea de forma clara con el blueprint, el claim y la tarea funcional esperada para un directivo docente.",
+  "justificacion_distractores": {
+    "A": "Modela una respuesta de estandarizacion operativa sin apropiacion institucional suficiente. Es plausible porque introduce una apariencia de orden y seguimiento, pero falla al omitir la deliberacion colegiada y la revision compartida del PEI.",
+    "C": "Modela dependencia de experticia externa. Compite porque ofrece orden y soporte tecnico, pero falla porque desplaza la deliberacion interna y reduce la apropiacion a una socializacion posterior.",
+    "D": "Modela una priorizacion reduccionista por indicadores. Parece razonable en contextos de presion por resultados, pero falla porque separa artificialmente lo academico, la convivencia y el PEI."
+  },
+  "errores_frecuentes": [
+    "Confundir rapidez operativa con liderazgo institucional.",
+    "Suponer que la socializacion final equivale a participacion real.",
+    "Separar metas academicas y convivencia como si no debieran integrarse en el PEI."
+  ],
+  "riesgos_tecnicos": {
+    "alineacion_blueprint": "baja",
+    "claim": "solido",
+    "evidencia_observable": "solida",
+    "tarea_cognitiva": "solida",
+    "unicidad_clave": "baja probabilidad de doble clave",
+    "distractor_muerto": "riesgo bajo a moderado; requiere verificacion en pilotaje",
+    "dificultad_irrelevante": "baja",
+    "fairness": "riesgo bajo",
+    "accesibilidad": "adecuada con carga de lectura moderada",
+    "utilidad_banco": "alta, con riesgo de repeticion si el bloque ya contiene varios items de participacion institucional",
+    "observaciones": [
+      "La opcion C puede competir con fuerza en poblaciones que valoran soluciones tecnicas externas; conviene observar su funcionamiento empirico.",
+      "El item depende de una lectura institucional relativamente densa, aunque la densidad sigue siendo pertinente al constructo."
+    ]
+  },
+  "estado": "apto_para_pilotaje",
+  "version": 2,
+  "published": false,
+  "normativeRefs": [],
+  "targetRole": "docente",
+  "applicantProfile": "directivo_docente",
+  "tags": [
+    "foco:pei",
+    "foco:liderazgo_escolar",
+    "uso:caso_situacional"
+  ],
+  "id_item": "item-ges-0001",
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "gestion",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 71,
+    "fuentes": "content/items",
+    "ruta_origen": "content/items/no-beta-v1/banco-operacional-previo/gestion/gestion_directiva/liderazgo_y_clima_escolar/GCM-DIR-GES-PEI-0001.json"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id_item": "EIP_B04_I03",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "Identidad, autonomía y reconocimiento del cuerpo",
+  "subtema": "Desarrollo de la autonomía en transición",
+  "competencia": "Justifica estrategias de aula que desarrollan autonomía progresiva con mediación docente en educación inicial.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Distingue una concepción pedagógica de la autonomía frente a enfoques autoritarios o espontaneístas.",
+  "evidencia": "Selecciona la justificación que entiende la autonomía como práctica progresiva de decisiones y responsabilidades mediadas por el docente.",
+  "tarea": "Determinar la mejor defensa técnica de una estrategia de rincones de aprendizaje en transición.",
+  "contexto": "Una docente organiza rincones de aprendizaje en los que los estudiantes eligen materiales, ordenan sus pertenencias y acuerdan normas del aula con acompañamiento pedagógico. Un padre interpreta la estrategia como falta de control y de instrucción formal.",
+  "enunciado": "La mejor justificación pedagógica para defender esta estrategia es que la autonomía en educación inicial:",
+  "opciones": {
+    "A": "Se desarrolla progresivamente mediante decisiones cotidianas, autocuidado, trabajo colaborativo y responsabilidades mediadas por el docente.",
+    "B": "Surge sola si se deja jugar libremente al estudiante sin mediación del adulto.",
+    "C": "Debe antecederse por clases expositivas sobre normas morales e institucionales.",
+    "D": "Se alcanza cuando el estudiante ya no requiere apoyo afectivo ni acompañamiento docente."
+  },
+  "clave": "A",
+  "justificacion_clave": "La autonomía infantil no es abandono pedagógico ni autosuficiencia temprana; se construye gradualmente en situaciones cotidianas con mediación del docente.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Confunde autonomía con ausencia de mediación.",
+    "C": "Traslada a la infancia pequeña un enfoque expositivo y abstracto impropio del nivel.",
+    "D": "Confunde autonomía con independencia emocional total."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El caso es habitual en la relación familia-escuela y no introduce barreras irrelevantes."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Las opciones son homogéneas y la tarea cognitiva está bien focalizada."
+  },
+  "metadata_editorial": {
+    "lote": "L019",
+    "ruta_origen": "content/items/stand-by/Identidad, autonomía y reconocimiento del cuerpo/EIP_B04_I03.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EIP_B04_I03.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "pedagogia",
+  "perfil_sugerido_beta": "preescolar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 90,
+    "fuentes": "auditoria/L019",
+    "ruta_origen": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EIP_B04_I03.json"
+  }
+}

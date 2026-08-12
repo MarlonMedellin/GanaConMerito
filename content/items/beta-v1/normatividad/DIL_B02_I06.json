@@ -1,0 +1,56 @@
+{
+  "id_item": "DIL_B02_I06",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "normatividad",
+  "tema": "rutas de proteccion",
+  "subtema": "limites de competencia escolar frente a presunto abuso",
+  "competencia": "Delimitar la actuacion de la escuela ante indicios de vulneracion grave y activar oportunamente a la autoridad competente.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado reconoce que la escuela debe proteger, documentar y remitir, pero no asumir funciones investigativas o de confrontacion judicial.",
+  "evidencia": "Selecciona la actuacion que respeta limites de competencia y evita revictimizacion o encubrimiento.",
+  "tarea": "Resolver un caso de presunto abuso fisico intrafamiliar determinando la respuesta institucional adecuada.",
+  "contexto": "Una institucion detecta indicios de presunto abuso fisico intrafamiliar. Algunos docentes proponen investigar formalmente, tomar declaraciones extensas y confrontar a los presuntos agresores.",
+  "enunciado": "Que actuacion respeta los limites de competencia de la escuela frente a este caso?",
+  "opciones": {
+    "A": "Registrar objetivamente la situacion, brindar contencion emocional, activar la ruta e informar de inmediato a la autoridad competente sin adelantar labores investigativas.",
+    "B": "Realizar un interrogatorio formal al estudiante para obtener una declaracion escrita antes de remitir el caso.",
+    "C": "Citar a los cuidadores para confrontarlos y exigir compromiso escrito bajo amenaza de expulsion inmediata.",
+    "D": "Esperar pruebas concluyentes antes de reportar externamente para evitar reclamaciones por falsas denuncias."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opcion A recoge la respuesta institucional correcta: proteccion inmediata, documentacion objetiva y traslado oportuno a autoridad competente, evitando revictimizacion y extralimitacion de funciones.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Revictimiza e invade funciones de investigacion.",
+    "C": "Puede incrementar riesgo y excede las competencias de la escuela.",
+    "D": "Configura omision del deber de proteccion y reporte oportuno."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Protege al estudiante y evita actuaciones basadas en confrontacion improcedente o sospechas morales."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Escenario verosimil y decision profesional claramente situada."
+  },
+  "metadata_editorial": {
+    "lote": "L023",
+    "ruta_origen": "content/items/stand-by/PARD y restablecimiento de derechos/DIL_B02_I06.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/DIL_B02_I06.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "normatividad",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 44,
+    "fuentes": "auditoria/L023 | auditoria/L064",
+    "ruta_origen": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/DIL_B02_I06.json"
+  }
+}

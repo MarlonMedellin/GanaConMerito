@@ -1,0 +1,48 @@
+{
+  "id": "GA02_B03_I04",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "didactica_y_planeacion",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Un docente de ciencias prepara una clase de laboratorio sobre mezclas homogéneas y heterogéneas. Para asegurar el pilar del DUA de múltiples formas de representación de la información, el maestro planea el uso simultáneo de diversas herramientas didácticas de andamiaje de aula.",
+  "enunciado": "La combinación de recursos de representación más coherente con el marco de la didáctica universal inclusiva es:",
+  "opciones": {
+    "A": "El dictado magistral continuo del capítulo del texto escolar comercial como canal único de asimilación.",
+    "B": "El uso integrado de proyecciones con diagramas de flujo visuales, subtítulos, manipulación directa de sustancias en el laboratorio de clase y modelación en software 3D interactivo.",
+    "C": "Exigir la memorización textual del glosario doctrinal de definiciones químicas antes de permitir el ingreso físico al mesón.",
+    "D": "Entregar una guía fotocopiada en texto plano y delegar la explicación completa en el monitor estudiantil del curso."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "El primer principio del DUA exige proporcionar múltiples formas de representación (el qué del aprendizaje). Dado que los estudiantes difieren en la forma en que perciben y comprenden la información que se les presenta (por barreras sensoriales, de lenguaje o de estilo cognitivo), ofrecer canales visuales, auditivos, táctiles y digitales simultáneos maximiza la accesibilidad del saber.",
+  "justificacionClave": "La opción B materializa con rigor el andamiaje diversificado de canales sensoriales e interpretativos que exige el DUA.",
+  "justificacionDistractores": {
+    "A": "Se encierra en un modelo tradicional transmisionista auditivo exclusivo que genera barreras automáticas de exclusión para muchos alumnos.",
+    "C": "Prioriza el enfoque tecnicista de memoria literal abstracta previa, impidiendo el valor de la experimentación científica y el manejo del error formativo.",
+    "D": "Incurre en una omisión de su función de mediación pedagógica directa, tercerizando el andamiaje técnico en un par estudiantil sin la debida guía."
+  },
+  "normativaRefs": [
+    "Decreto 1421 de 2017",
+    "Lineamientos Curriculares de Ciencias Naturales MEN"
+  ],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "GA02_B03_I04",
+    "rutaOrigen": "content/items/stand-by/Did ctica, diversidad y planeaci n de aula/GA02_B03_I04.json"
+  },
+  "id_item": "GA02_B03_I04",
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "pedagogia",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 11,
+    "fuentes": "auditoria/L043 | content/items | content/items/_banco-operacional.csv | fase-5b/microbloque-01/banco-premium",
+    "ruta_origen": "content/items/Didáctica, diversidad y planeación de aula/GA02_B03_I04.json"
+  }
+}

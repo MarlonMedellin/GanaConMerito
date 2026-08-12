@@ -1,0 +1,47 @@
+{
+  "id": "matematicas-analisis-datos-002",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "matematicas",
+  "subarea": "aleatorio_y_estadistica",
+  "perfil": "transversal",
+  "tipoCompetencia": "basica",
+  "competency": "razonamiento_cuantitativo_y_analisis_de_datos",
+  "nivelCognitivo": "comprension_literal_e_inferencial",
+  "dificultad": "media",
+  "contexto": "Un coordinador de convivencia analiza el número de faltas tipo I registradas en el software de la institución durante las primeras 4 semanas del año escolar. Los datos por semana son: Semana 1: 15 faltas; Semana 2: 20 faltas; Semana 3: 15 faltas; Semana 4: 30 faltas.",
+  "enunciado": "Al presentar el informe estadístico ante el Comité de Convivencia Escolar, el coordinador desea indicar el valor de la moda y la mediana de este conjunto de registros. Dichos valores son, respectivamente:",
+  "opciones": {
+    "A": "Moda: 15; Mediana: 15",
+    "B": "Moda: 15; Mediana: 17.5",
+    "C": "Moda: 20; Mediana: 20",
+    "D": "Moda: 30; Mediana: 15"
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La moda es el valor con mayor frecuencia absoluta en un conjunto de datos (el 15 se repite dos veces, por ende es la moda). Para hallar la mediana de un conjunto con número par de datos (N=4), se deben ordenar de forma ascendente (15, 15, 20, 30) y calcular el promedio aritmético de los dos valores centrales: $(15 + 20) / 2 = 35 / 2 = 17.5$.",
+  "justificacionClave": "La opción B aplica correctamente los algoritmos estadísticos de tendencia central sobre el microbloque de datos del contexto escolar.",
+  "justificacionDistractores": {
+    "A": "Calcula de forma correcta la moda, pero comete un error operacional al asumir la mediana como el primer valor central sin promediar la muestra par.",
+    "C": "Confunde la moda con el segundo valor del orden temporal e iguala de forma errónea la mediana a dicho dato.",
+    "D": "Toma el valor máximo (semana 4) como la moda y yerra en la ordenación y cálculo posicional de la mediana."
+  },
+  "normativaRefs": [
+    "Estándares Básicos de Competencias en Matemáticas MEN"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  },
+  "id_item": "matematicas-analisis-datos-002",
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "matematicas",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 79,
+    "fuentes": "content/items | content/items/_banco-operacional.csv",
+    "ruta_origen": "content/items/matematicas/matematicas-analisis-datos-002.json"
+  }
+}

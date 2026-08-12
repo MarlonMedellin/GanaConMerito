@@ -1,0 +1,56 @@
+{
+  "id_item": "CEOL_B03_I02",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "normatividad",
+  "tema": "Rol del orientador escolar",
+  "subtema": "Limites frente a vulneracion grave de derechos",
+  "competencia": "Aplicar protocolos de proteccion y activar rutas externas evitando que el orientador asuma tareas investigativas impropias.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce que el orientador no debe reunir pruebas judiciales ni confrontar a la familia antes de activar la ruta de proteccion ante agresiones o abuso.",
+  "evidencia": "Escoge la alternativa que prioriza proteccion inmediata, reserva y activacion oportuna de la ruta externa.",
+  "tarea": "Determinar la actuacion institucional correcta cuando un estudiante revela una posible agresion o abuso en el hogar.",
+  "contexto": "Un estudiante cuenta al orientador una posible situacion de agresion o abuso fisico en su hogar. El orientador piensa entrevistar por separado a la familia y grabar al estudiante para confirmar los hechos antes de reportar.",
+  "enunciado": "?Por que esa actuacion es incorrecta?",
+  "opciones": {
+    "A": "Porque excede sus funciones al asumir tareas de investigacion y puede revictimizar al estudiante en lugar de activar de inmediato la ruta de proteccion.",
+    "B": "Porque primero deberia someter la decision a votacion del consejo academico de la institucion.",
+    "C": "Porque la ruta escolar solo es obligatoria cuando existan evidencias fisicas ya certificadas por personal medico.",
+    "D": "Porque el orientador solo puede intervenir en asuntos estrictamente academicos y disciplinarios internos."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opcion correcta delimita con precision el rol del orientador frente a vulneraciones graves: contener, proteger y activar la ruta, no investigar ni producir prueba judicial.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Burocratiza impropiamente una respuesta que debe ser inmediata.",
+    "C": "Condiciona de forma indebida el deber de reporte a prueba fisica concluyente.",
+    "D": "Niega responsabilidades institucionales de proteccion que si hacen parte del rol."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Se centra en proteccion de derechos y no en sancion moral del estudiante o su familia."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Caso focalizado y lenguaje institucional claro."
+  },
+  "metadata_editorial": {
+    "lote": "L027",
+    "ruta_origen": "content/items/stand-by/Rol, funciones y límites del orientador escolar/CEOL_B03_I02.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/orientador/funcional/CEOL_B03_I02.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "normatividad",
+  "perfil_sugerido_beta": "orientador",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 39,
+    "fuentes": "auditoria/L027",
+    "ruta_origen": "content/restructuring-v1/docente/normatividad/orientador/funcional/CEOL_B03_I02.json"
+  }
+}

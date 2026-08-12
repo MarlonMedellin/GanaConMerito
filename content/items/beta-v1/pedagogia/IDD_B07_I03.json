@@ -1,0 +1,56 @@
+{
+  "id_item": "IDD_B07_I03",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "accesibilidad institucional",
+  "subtema": "gestion de apoyos y barreras fisicas, comunicativas y pedagogicas",
+  "competencia": "Priorizar decisiones institucionales de accesibilidad que hagan posible la participacion y permanencia real.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado comprende que matricular no basta y que la accesibilidad requiere diagnostico institucional y plan de apoyos articulado.",
+  "evidencia": "Elige la estrategia que organiza una respuesta sistemica frente a barreras de movilidad, materiales y comunicacion.",
+  "tarea": "Analizar un caso de llegada de estudiantes con discapacidad y decidir la accion institucional prioritaria.",
+  "contexto": "Una institucion recibe estudiantes con barreras fisicas, visuales o de movilidad y reconoce que existen obstaculos para desplazamientos, materiales y participacion en clase.",
+  "enunciado": "Cual estrategia institucional debe priorizarse para avanzar hacia inclusion efectiva en este caso?",
+  "opciones": {
+    "A": "Reducir la presencialidad del estudiante para evitarle dificultades de desplazamiento.",
+    "B": "Dejar la adaptacion de materiales y apoyos de movilidad a terapeutas externos o a las familias.",
+    "C": "Solicitar traslado a otra institucion especializada por limitaciones de infraestructura actual.",
+    "D": "Realizar un diagnostico de accesibilidad y, con base en el, ajustar espacios, mediaciones, materiales y gestion de apoyos institucionales."
+  },
+  "clave": "D",
+  "justificacion_clave": "La opcion D entiende la inclusion como transformacion institucional y no como simple matricula. Permite remover barreras fisicas, comunicativas y pedagogicas de manera planificada.",
+  "distractores_funcion": {
+    "A": "Segrega al disminuir la participacion en lugar de transformar el entorno.",
+    "B": "Externaliza una responsabilidad institucional central.",
+    "C": "Responde con exclusion por desplazamiento del estudiante.",
+    "D": "Clave correcta."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "No convierte la discapacidad en deficit individual; ubica la barrera en el entorno escolar."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "La situacion es clara y la tarea corresponde a una decision institucional observable."
+  },
+  "metadata_editorial": {
+    "lote": "L020",
+    "ruta_origen": "content/items/stand-by/Inclusión, equidad socioeconómica y adaptabilidad curricular/IDD_B07_I03.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B07_I03.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "pedagogia",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 16,
+    "fuentes": "auditoria/L020 | auditoria/L039 | fase-5b/microbloque-01/banco-premium",
+    "ruta_origen": "content/items/Inclusión, equidad socioeconómica y adaptabilidad curricular/IDD_B07_I03.json"
+  }
+}

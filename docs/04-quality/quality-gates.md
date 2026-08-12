@@ -2,7 +2,7 @@
 
 Status: canonical
 Owner: PM-Governance
-Last reviewed: 2026-05-10
+Last reviewed: 2026-08-11
 Related files:
 - AGENTS.md
 - package.json
@@ -41,6 +41,12 @@ Actualmente el proyecto opera con:
 - validación editorial;
 - QA operacional selectivo.
 
+Para Beta Candidate 0.6.0, el estado aceptado es:
+- base tecnica cercana a beta;
+- HEAD actual revisado `ca59cec`;
+- ultimo runtime publico verificado documentalmente `716ec62`;
+- cierre beta funcional bloqueado hasta runtime/release fresco sobre commit objetivo.
+
 Persisten limitaciones:
 
 - cobertura parcial;
@@ -62,6 +68,8 @@ Persisten limitaciones:
 | Documentation alignment | Advisory |
 | Agent traceability | Advisory |
 | Runtime verification | Selectivo |
+
+Para declarar `v0.6.0-beta.1`, runtime verification pasa de selectivo a obligatorio para ese release.
 
 ---
 

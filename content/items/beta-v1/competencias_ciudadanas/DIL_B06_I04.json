@@ -1,0 +1,56 @@
+{
+  "id_item": "DIL_B06_I04",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "competencias_ciudadanas",
+  "tema": "Participacion significativa",
+  "subtema": "Consulta con incidencia real",
+  "competencia": "Diseña o reconoce condiciones de participacion escolar autentica: informacion, voluntariedad, canales seguros, retroalimentacion e incidencia.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA_ALTA",
+  "claim": "No basta con consultar a estudiantes: la participacion significativa exige informar, responder y mostrar incidencia real de sus aportes.",
+  "evidencia": "Selecciona la condicion faltante en un proceso de encuesta sin devolucion ni uso de resultados.",
+  "tarea": "Evaluar la calidad de un proceso de participacion escolar.",
+  "contexto": "Una escuela aplica una encuesta a estudiantes sobre convivencia, pero nunca les explica el proposito, no devuelve resultados y no usa sus opiniones para ninguna decision. Luego afirma que ya garantizo participacion estudiantil.",
+  "enunciado": "¿Que condicion falta para que la participacion sea significativa?",
+  "opciones": {
+    "A": "Limitar la participacion a cuestionarios cerrados y registrar asistencia como indicador suficiente de cobertura.",
+    "B": "Garantizar consulta voluntaria e informada, canales seguros de expresion, sistematizacion de aportes y retroalimentacion sobre su incidencia real.",
+    "C": "Trasladar las decisiones finales a los adultos directivos para agilizar la gestion escolar antes de cualquier devolucion al estudiantado.",
+    "D": "Difundir los registros de participacion en redes y medios del colegio para dar visibilidad publica al proceso."
+  },
+  "clave": "B",
+  "justificacion_clave": "La opcion B es la unica que incorpora informacion, expresion segura, procesamiento de aportes y devolucion con incidencia. Las otras confunden cobertura, agilidad administrativa o publicidad con participacion real.",
+  "distractores_funcion": {
+    "A": "Reduce la participacion a tramite y cobertura cuantitativa.",
+    "B": "Clave correcta.",
+    "C": "Refuerza modelo adultocentrico sin incidencia estudiantil real.",
+    "D": "Transforma la participacion en visibilidad institucional o simbolica."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Protege el derecho de opinion y evita manipulacion simbolica del estudiantado."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Estructura clara y foco unico en calidad de la participacion."
+  },
+  "metadata_editorial": {
+    "lote": "L024",
+    "ruta_origen": "content/items/stand-by/Participación infantil, agencia y Convención sobre los Derechos del Niño/DIL_B06_I04.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/preescolar/funcional/DIL_B06_I04.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": true
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "competencias_ciudadanas",
+  "perfil_sugerido_beta": "preescolar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 63,
+    "fuentes": "auditoria/L024 | auditoria/L053",
+    "ruta_origen": "content/restructuring-v1/docente/competencias_ciudadanas/preescolar/funcional/DIL_B06_I04.json"
+  }
+}

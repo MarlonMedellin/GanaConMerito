@@ -1,0 +1,56 @@
+{
+  "id_item": "EFCC_B03_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "Currículo, PEI y evaluación didáctica",
+  "subtema": "Competencias y diseño de situaciones significativas",
+  "competencia": "Evalúa la alineación entre planeación curricular, mediación didáctica y evaluación por competencias en contextos auténticos.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Distingue una práctica centrada en memorización de otra coherente con aprendizaje por competencias.",
+  "evidencia": "Selecciona la crítica pedagógica técnicamente más sólida a una enseñanza reducida a reproducción de contenidos.",
+  "tarea": "Analizar una práctica de aula y explicar por qué es deficiente desde un enfoque de competencias.",
+  "contexto": "Un docente organiza todas sus clases a partir de definiciones del libro de texto, ejercicios mecánicos individuales y pruebas que miden reproducción literal de contenidos.",
+  "enunciado": "De acuerdo con un enfoque curricular de aprendizaje por competencias, esta práctica pedagógica resulta deficiente porque:",
+  "opciones": {
+    "A": "Reduce la enseñanza a reproducción de información declarativa e impide aplicación, análisis, argumentación y transferencia ante situaciones nuevas.",
+    "B": "El uso de libros de texto oficiales está formalmente prohibido por la normatividad nacional.",
+    "C": "La planeación por competencias exige que el docente no prepare la clase y solo improvise según el interés diario del grupo.",
+    "D": "Las pruebas escolares deben centrarse únicamente en conducta observable y competencias socioemocionales."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opción A es la única que identifica el problema central del caso: el estudiante no es llevado a desempeños significativos ni a transferir saberes en situaciones auténticas, que es justamente lo que exige un enfoque por competencias.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Introduce una falsa prohibición normativa fácil de descartar.",
+    "C": "Confunde pedagogía activa con ausencia de planeación.",
+    "D": "Ofrece una versión reduccionista del campo evaluativo."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Evalúa criterio pedagógico transversal y no depende de área disciplinar específica."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Aunque el contexto es extenso, la tarea es única y las opciones se distinguen con claridad."
+  },
+  "metadata_editorial": {
+    "lote": "L009-A",
+    "ruta_origen": "content/items/stand-by/Currículo, PEI y evaluación didáctica/EFCC_B03_I01.json",
+    "ruta_destino_propuesta": "content/items/Currículo, PEI y evaluación didáctica/EFCC_B03_I01.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "pedagogia",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 7,
+    "fuentes": "content/items | content/items/_banco-operacional.csv | fase-5/banco-final | fase-5b/microbloque-01/banco-premium",
+    "ruta_origen": "content/items/Currículo, PEI y evaluación didáctica/EFCC_B03_I01.json"
+  }
+}

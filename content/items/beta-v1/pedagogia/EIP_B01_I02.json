@@ -1,0 +1,48 @@
+{
+  "id": "EIP_B01_I02",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "proyectos_pedagogicos",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "gestion_academica_y_curricular",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "En una institución rural, los docentes ven los proyectos transversales como una 'carga extra' que les impide terminar de dictar sus programas académicos.",
+  "enunciado": "Desde la gestión curricular eficiente, el rector debe intervenir aclarando que los proyectos transversales:",
+  "opciones": {
+    "A": "Deben ser desarrollados solamente fuera de la jornada laboral de los docentes.",
+    "B": "Son ejes de articulación pedagógica que deben integrarse en todas las áreas del conocimiento para favorecer la formación integral.",
+    "C": "Solo deben ser ejecutados por personal externo contratado para dicho fin, eximiendo a los maestros.",
+    "D": "Son voluntarios y pueden ser omitidos si el docente tiene una carga horaria muy alta."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La transversalidad significa que los temas deben integrarse en el plan de estudios de todas las materias. El docente no debe verlo como algo 'extra', sino como la forma de darle significado al aprendizaje mediante la integración de competencias fundamentales.",
+  "justificacionClave": "La opción B define el concepto de articulación pedagógica y obligatoriedad de la transversalidad.",
+  "justificacionDistractores": {
+    "A": "El cumplimiento de la ley no puede basarse en la sobrecarga laboral fuera de la jornada de trabajo.",
+    "C": "La responsabilidad pedagógica es del personal docente nombrado, no puede trasladarse a externos.",
+    "D": "Los proyectos transversales son obligatorios por mandato de la Ley 115 de 1994."
+  },
+  "normativaRefs": [
+    "Ley 115 de 1994",
+    "Decreto 1075 de 2015"
+  ],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "EIP_B01_I02",
+    "rutaOrigen": "content/items/stand-by/Curr culo obligatorio y proyectos pedag gicos transversales/EIP_B01_I02.json"
+  },
+  "id_item": "EIP_B01_I02",
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "pedagogia",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 85,
+    "fuentes": "auditoria/L008 | content/items | content/items/_banco-operacional.csv",
+    "ruta_origen": "content/items/pedagogia/EIP_B01_I02.json"
+  }
+}

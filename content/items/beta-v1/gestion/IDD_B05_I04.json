@@ -1,0 +1,56 @@
+{
+  "id_item": "IDD_B05_I04",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "gestion",
+  "tema": "Docente de apoyo, orientador y valoración pedagógica",
+  "subtema": "articulacion_del_seguimiento_institucional",
+  "competencia": "Diseña estrategias de articulación institucional para sostener apoyos educativos coherentes y continuos.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce la estrategia institucional más adecuada cuando maestro de aula, familia y apoyos trabajan de forma fragmentada.",
+  "evidencia": "Selecciona la opción que integra seguimiento, compromisos y circulación de recomendaciones entre actores escolares.",
+  "tarea": "Analizar un caso de fragmentación del apoyo educativo y elegir la respuesta institucional más efectiva.",
+  "contexto": "Un estudiante con barreras de aprendizaje recibe apoyos en algunos momentos, pero el maestro de aula no conoce las recomendaciones, la familia no recibe orientación y el docente de apoyo no tiene espacios de seguimiento con el equipo.",
+  "enunciado": "¿Qué estrategia institucional es más adecuada para dar coherencia al proceso?",
+  "opciones": {
+    "A": "Establecer una mesa periódica de seguimiento con acuerdos concretos entre directivos, maestro de aula, docente de apoyo y familia.",
+    "B": "Asignar al docente de apoyo el seguimiento exclusivo del estudiante para evitar duplicación de esfuerzos.",
+    "C": "Trasladar el acompañamiento al orientador mediante sesiones individuales fuera del aula para no alterar la planeación.",
+    "D": "Esperar a que la Secretaría de Educación identifique fallas y reasigne recursos antes de reorganizar el proceso."
+  },
+  "clave": "A",
+  "justificacion_clave": "La clave es A porque el problema central es la falta de articulación; la solución exige coordinación y seguimiento compartido, no delegación a un solo actor.",
+  "distractores_funcion": {
+    "A": "Clave correcta; convierte el seguimiento en una práctica institucional articulada.",
+    "B": "Modela la fragmentación del proceso al descargarlo en un solo profesional.",
+    "C": "Confunde funciones de orientación con apoyo académico y agrega segregación fuera del aula.",
+    "D": "Modela una espera pasiva frente a un problema de liderazgo institucional inmediato."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "No responsabiliza a un único actor y mantiene foco en la organización escolar."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "La comparación entre opciones es clara y centrada en proceso institucional."
+  },
+  "metadata_editorial": {
+    "lote": "L013-A",
+    "ruta_origen": "content/items/stand-by/Docente de apoyo, orientador y valoración pedagógica/IDD_B05_I04.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/coordinador/funcional/IDD_B05_I04.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": false
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "gestion",
+  "perfil_sugerido_beta": "coordinador",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 74,
+    "fuentes": "auditoria/L013",
+    "ruta_origen": "content/restructuring-v1/docente/gestion/coordinador/funcional/IDD_B05_I04.json"
+  }
+}

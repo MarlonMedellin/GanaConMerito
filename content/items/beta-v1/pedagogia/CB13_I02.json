@@ -1,0 +1,56 @@
+{
+  "id_item": "CB13_I02",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "Currículo vs plan vs malla",
+  "subtema": "Progresión de aprendizajes",
+  "competencia": "Usar la distinción entre instrumentos curriculares para resolver problemas de secuenciación académica.",
+  "nivel_cognitivo": "ANALISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Identifica qué instrumento debe revisarse cuando el problema está en la secuencia y progresión de contenidos por grado.",
+  "evidencia": "Selecciona la herramienta curricular adecuada para reorganizar contenidos, prerrequisitos y desempeños.",
+  "tarea": "Resolver un problema de repetición y ubicación tardía de prerrequisitos en un área.",
+  "contexto": "El área de Ciencias Naturales detecta que algunos contenidos se repiten en varios grados, mientras otros prerrequisitos aparecen demasiado tarde.",
+  "enunciado": "¿Qué instrumento conviene revisar principalmente?",
+  "opciones": {
+    "A": "La malla curricular del área, porque permite organizar secuencias, contenidos y desempeños por grado.",
+    "B": "El manual de convivencia, porque regula la progresión conceptual de las asignaturas.",
+    "C": "El horario de clases, porque define los aprendizajes esperados por grado.",
+    "D": "El registro de asistencia, porque allí se establecen los prerrequisitos académicos."
+  },
+  "clave": "A",
+  "justificacion_clave": "Cuando el problema es la progresión interna del aprendizaje, la revisión debe recaer en el instrumento que organiza secuencias y contenidos por grado.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Asigna indebidamente una función curricular a un instrumento de convivencia.",
+    "C": "Confunde organización del tiempo con diseño de aprendizajes.",
+    "D": "Atribuye función curricular a un registro administrativo."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Caso técnico generalizable y sin barreras contextuales irrelevantes."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "La situación está acotada y la tarea es única."
+  },
+  "metadata_editorial": {
+    "lote": "L008",
+    "ruta_origen": "content/items/stand-by/Currículo vs plan vs malla/CB13_I02.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CB13_I02.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": true
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "pedagogia",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 26,
+    "fuentes": "auditoria/L008 | auditoria/L031",
+    "ruta_origen": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CB13_I02.json"
+  }
+}

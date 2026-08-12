@@ -1,0 +1,56 @@
+{
+  "id_item": "CEOL_B02_I01",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "competencias_ciudadanas",
+  "tema": "Enfoque de derechos, debido proceso y justicia restaurativa",
+  "subtema": "gestion_disciplinaria_con_enfoque_de_derechos",
+  "competencia": "Toma decisiones de convivencia que combinan debido proceso, responsabilidad y finalidad pedagógica.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA_ALTA",
+  "claim": "Reconoce la primera respuesta institucional más adecuada cuando existe una falta grave y surge presión por sancionar de inmediato sin escuchar al estudiante.",
+  "evidencia": "Selecciona la actuación que protege el debido proceso y orienta la respuesta disciplinaria hacia proporcionalidad, escucha y reparación.",
+  "tarea": "Analizar un conflicto disciplinario y elegir la actuación institucional más coherente con un enfoque de derechos.",
+  "contexto": "Un estudiante incurre en una falta grave prevista en el Manual de Convivencia. Parte del equipo propone sancionarlo de inmediato para enviar un mensaje de autoridad al resto del grupo.",
+  "enunciado": "¿Qué actuación inicial es más coherente con un enfoque de derechos en la gestión disciplinaria del caso?",
+  "opciones": {
+    "A": "Imponer una suspensión ejemplar inmediata y revisar después si el estudiante tenía alguna explicación relevante.",
+    "B": "Escuchar al estudiante y a las partes involucradas, verificar los hechos y definir una medida proporcional con sentido pedagógico y restaurativo.",
+    "C": "Remitir de inmediato el caso a la familia para que decida la consecuencia, evitando que la institución se desgaste en el proceso.",
+    "D": "Posponer cualquier decisión disciplinaria para no afectar emocionalmente al estudiante, aunque la falta haya impactado al grupo."
+  },
+  "clave": "B",
+  "justificacion_clave": "La clave es B porque el enfoque de derechos no elimina las consecuencias, pero exige debido proceso, valoración del caso y medidas proporcionales con finalidad pedagógica.",
+  "distractores_funcion": {
+    "A": "Modela una respuesta punitiva ejemplarizante sin garantías previas.",
+    "B": "Clave correcta; combina escucha, verificación y proporcionalidad pedagógica.",
+    "C": "Desplaza indebidamente la responsabilidad institucional al ámbito familiar.",
+    "D": "Confunde enfoque de derechos con ausencia de decisión disciplinaria."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Evalúa la actuación institucional y no estigmatiza al estudiante."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Escenario concreto y una decisión principal bien delimitada."
+  },
+  "metadata_editorial": {
+    "lote": "L013-A",
+    "ruta_origen": "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/CEOL_B02_I01.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/coordinador/comportamental/CEOL_B02_I01.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": false
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "competencias_ciudadanas",
+  "perfil_sugerido_beta": "coordinador",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 57,
+    "fuentes": "auditoria/L013 | auditoria/L068 | auditoria/L078",
+    "ruta_origen": "content/restructuring-v1/docente/competencias_ciudadanas/coordinador/comportamental/CEOL_B02_I01.json"
+  }
+}

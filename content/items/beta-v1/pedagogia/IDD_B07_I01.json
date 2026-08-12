@@ -1,0 +1,56 @@
+{
+  "id_item": "IDD_B07_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "equidad socioeconomica",
+  "subtema": "adaptacion de recursos sin castigar vulnerabilidad",
+  "competencia": "Diseñar respuestas pedagogicas equitativas frente a barreras economicas de acceso a materiales.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado identifica ajustes equitativos que sostienen la meta formativa sin culpabilizar la condicion economica del estudiante.",
+  "evidencia": "Selecciona una alternativa que reorganiza recursos y apoyos sin reducir expectativas curriculares.",
+  "tarea": "Elegir una respuesta docente inclusiva cuando la falta de materiales proviene de limitaciones economicas familiares.",
+  "contexto": "En una actividad practica, varios estudiantes no cuentan con los materiales solicitados por limitaciones economicas del hogar.",
+  "enunciado": "Que ajuste pedagogico corresponde mejor a un enfoque de equidad socioeconomica en esta situacion?",
+  "opciones": {
+    "A": "Descontar puntaje por incumplimiento para reforzar responsabilidad individual.",
+    "B": "Usar materiales alternativos accesibles, organizar recursos compartidos y gestionar apoyos institucionales sin bajar la meta de aprendizaje.",
+    "C": "Suspender la actividad para todo el grupo hasta que todos consigan los mismos insumos.",
+    "D": "Eximir del producto final a quienes no tienen materiales para no aumentar su frustracion."
+  },
+  "clave": "B",
+  "justificacion_clave": "La opcion B reconoce la barrera economica sin convertirla en sancion ni en renuncia al aprendizaje. Reorganiza la mediacion didactica para sostener el mismo proposito formativo.",
+  "distractores_funcion": {
+    "A": "Castiga una condicion externa al control del estudiante.",
+    "B": "Clave correcta.",
+    "C": "Detiene el aprendizaje del grupo en lugar de adaptar la mediacion.",
+    "D": "Baja expectativas y priva al estudiante de la experiencia de aprendizaje."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Evita estereotipos deficitarios y no responsabiliza al estudiante por su contexto economico."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Caso habitual de aula con alternativas semanticamente comparables."
+  },
+  "metadata_editorial": {
+    "lote": "L020",
+    "ruta_origen": "content/items/stand-by/Inclusión, equidad socioeconómica y adaptabilidad curricular/IDD_B07_I01.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B07_I01.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "pedagogia",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 15,
+    "fuentes": "auditoria/L020 | auditoria/L039 | fase-5b/microbloque-01/banco-premium",
+    "ruta_origen": "content/items/Inclusión, equidad socioeconómica y adaptabilidad curricular/IDD_B07_I01.json"
+  }
+}

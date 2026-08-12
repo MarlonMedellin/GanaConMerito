@@ -5,33 +5,37 @@ project: ganaconmerito
 owner: marlon-arcila
 status: active
 artifact_type: project
-last_reviewed: 2026-05-24
+last_reviewed: 2026-08-11
 ---
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-05-24 — Saneamiento y Depuración del Banco (stand-by).
+Ultima actualizacion: 2026-08-11 — Homologacion documental para beta candidata.
 
 ---
 
 # Executive Operational Snapshot
 
 ## Current Sprint
-Sprint 47 — Mantenimiento menor y saneamiento final.
+Beta Candidate 0.6.0 — Alineacion documental y preparacion de runtime.
 
 ## Current Runtime State
-Runtime publico verificado en `https://cnsc.profemarlon.com` sobre `716ec62`.
+Runtime publico previamente verificado en `https://cnsc.profemarlon.com` sobre `716ec62`.
+
+El HEAD actual del repo es `ca59cec`; no existe evidencia documental vigente de triple verificacion runtime sobre ese commit.
 
 ## Last Verified Commit
-`61e7d06`
+`716ec62` como ultimo runtime publico documentado con verificacion completa.
 
 ## Current Sprint Status
-Sprint 47 queda **CERRADO EN REPO (CIERRE DOCUMENTAL Y DE TRAZABILIDAD)**; runtime no revalidado en esta corrida.
+**BETA CANDIDATE DOCUMENTAL**: el repo tiene base tecnica para beta, pero la beta funcional queda pendiente de corrida fresca de release/runtime sobre el commit objetivo.
 
 ## Known Drift
 - Persisten contratos y validaciones parcialmente narrativas fuera del baseline canonico.
 - La trazabilidad multiagente todavia no es enforcement obligatorio.
 - La integracion del Tutor con LLM real queda como deuda tecnica futura y no forma parte del cierre de Sprint 47.
+- Hay drift temporal entre HEAD de repo (`ca59cec`) y ultimo runtime publico verificado (`716ec62`).
+- Los documentos historicos de QA/runtime deben tratarse como evidencia auxiliar, no como estado vigente.
 
 ## Pending Debt
 - calibracion posterior de senales con evidencia de uso real;
@@ -40,9 +44,10 @@ Sprint 47 queda **CERRADO EN REPO (CIERRE DOCUMENTAL Y DE TRAZABILIDAD)**; runti
 - sincronizacion documental automatica;
 - reduccion de documentacion legacy;
 - integracion fuerte rich-only.
+- tag/release beta publico (`v0.6.0-beta.1`) pendiente hasta cerrar runtime fresco.
 
 ## Last Audit
-2026-05-10 — saneamiento final posterior a Sprint 46; runtime no revalidado en esta entrega.
+2026-08-11 — homologacion documental para beta candidata; runtime no revalidado en esta entrega.
 
 ---
 
@@ -52,19 +57,39 @@ Sprint 47 queda **CERRADO EN REPO (CIERRE DOCUMENTAL Y DE TRAZABILIDAD)**; runti
 
 ## Estado general
 
-**Estado:** producto activo con core operativo, Tutor GCM gobernado, capa editorial de normalizacion rica conectada al banco activo, senales pedagogicas persistidas, learning signals integradas y calibracion/metricas internas basicas verificadas en runtime; cierre normativo documental y saneamiento final de trazabilidad completados en repo sin nuevos claims de runtime.
+**Estado:** producto activo con core operativo, Tutor GCM gobernado, capa editorial de normalizacion rica conectada al banco activo, senales pedagogicas persistidas, learning signals integradas y calibracion/metricas internas basicas previamente verificadas en runtime; cierre normativo documental y saneamiento final de trazabilidad completados en repo. El estado vigente para beta es **candidate**, no release cerrado.
 
 **Producto:** login, onboarding, practica y dashboard siguen siendo las superficies activas; Tutor GCM permanece bajo contrato, sin autoridad sobre scoring, avance ni estado de sesion.
 
-**Sprint actual en repo:** Sprint 47 — Mantenimiento menor y saneamiento final.
+**Bloque actual en repo:** Beta Candidate 0.6.0 — Alineacion documental y preparacion de runtime.
 
-**Estado del sprint actual:** CERRADO EN REPO (CIERRE DOCUMENTAL Y DE TRAZABILIDAD); runtime no revalidado en esta corrida.
+**Estado del bloque actual:** DOCUMENTALMENTE ALINEADO; runtime fresco pendiente.
 
 **Sprint anterior cerrado:** Sprint 46 — Cierre normativo del Tutor GCM.
 
 **Rama canonica:** `master`.
 
 **Version declarada en `package.json`:** `0.6.0`.
+
+## Beta Candidate 0.6.0 — snapshot ejecutivo
+
+### Estado
+**CANDIDATA A BETA, NO RELEASE CERRADO**
+
+### Evidencia positiva
+- HEAD actual de `master`: `ca59cec`.
+- Version declarada: `0.6.0`.
+- No se identifican PRs o issues abiertos en la auditoria previa.
+- Build local y typecheck/lint fueron reportados en PASS en la revision previa de Codex.
+- CI formal existe para build, tests, validacion de contenido, smoke de arranque y Docker build.
+- Core funcional documentado: login, onboarding, practica, dashboard, banco activo, Tutor GCM con guardrails, trazas y senales pedagogicas.
+
+### Gate que bloquea declararla beta funcional
+- Falta una corrida fresca sobre commit objetivo que pruebe alineacion `repo remoto -> ~/.openclaw/product -> /opt/gcm/app -> Docker -> https://cnsc.profemarlon.com`.
+- Falta registrar evidencia PASS de `content:validate`, tests, build, smoke runtime, postdeploy y E2E autenticado en entorno operativo.
+
+### Criterio de cierre beta recomendado
+Declarar `v0.6.0-beta.1` solo cuando `docs/02-delivery/release-checklist.md` quede completo para un commit unico y el runtime publico muestre ese mismo commit.
 
 ## Verdad operativa actual
 
@@ -73,8 +98,9 @@ Sprint 47 queda **CERRADO EN REPO (CIERRE DOCUMENTAL Y DE TRAZABILIDAD)**; runti
 - **Arbol de deploy:** `/opt/gcm/app`.
 - **URL publica canonica:** `https://cnsc.profemarlon.com`.
 - **Consola operacional:** `https://cnsc.profemarlon.com/update.html`.
-- **Commit actual desplegado y verificado:** `716ec62`.
-- **Short hash verificado:** `716ec62`.
+- **HEAD actual del repo revisado:** `ca59cec`.
+- **Ultimo commit publico desplegado y verificado documentalmente:** `716ec62`.
+- **Estado de paridad repo/runtime:** pendiente de revalidacion fresca.
 
 ## Sprint 47 — mantenimiento menor y saneamiento final
 

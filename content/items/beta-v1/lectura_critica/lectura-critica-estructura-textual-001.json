@@ -1,0 +1,47 @@
+{
+  "id": "lectura-critica-estructura-textual-001",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "lectura_critica",
+  "subarea": "comprension_textual_critica",
+  "perfil": "transversal",
+  "tipoCompetencia": "basica",
+  "competency": "identificacio_de_la_estructura_y_coherencia_textual",
+  "nivelCognitivo": "comprension_literal_e_inferencial",
+  "dificultad": "media",
+  "contexto": "Considere la siguiente estructura expositiva de un texto académico: 'En primer lugar, el holismo plantea que el aprendizaje no es una suma lineal de datos aislados. Por el contrario, involucra una red compleja de interconexiones socioemocionales y cognitivas. Así pues, reformar la malla curricular no es un asunto meramente administrativo, sino una transformación profunda de la cultura escolar'.",
+  "enunciado": "Dentro del fragmento citado, la función textual y discursiva que cumple el conector 'Por el contrario' es:",
+  "opciones": {
+    "A": "Introducir una consecuencia lógica directa derivada de la definición inicial del aprendizaje fabril.",
+    "B": "Establecer una oposición o contraste semántico entre la visión fragmentada por datos aislados y el enfoque complejo del holismo.",
+    "C": "Ejemplificar mediante un caso situado la aplicación práctica de los proyectos transversales en el aula.",
+    "D": "Señalar la conclusión definitiva e inapelable de la argumentación sobre el diseño curricular del SIEE."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "Los conectores adversativos u opositivos como 'por el contrario' estructuran la cohesión textual marcando un giro semántico de contraste entre dos ideas. En este caso, separa de forma explícita el reduccionismo lineal de la complejidad holística del aprendizaje.",
+  "justificacionClave": "La opción B describe técnicamente la operación discursiva y el valor de cohesión gramatical que aporta el conector en la secuencia expositiva.",
+  "justificacionDistractores": {
+    "A": "Confunde un marcador de oposición con uno de causalidad o consecutividad lógica (como 'por lo tanto' o 'en consecuencia').",
+    "C": "Atribuye una función ilustrativa o de ejemplificación que gramaticalmente corresponde a marcadores como 'por ejemplo' o 'a saber'.",
+    "D": "Confunde la transición de contraste intermedia con el cierre conclusivo del párrafo, el cual está introducido formalmente por 'Así pues'."
+  },
+  "normativaRefs": [
+    "Estándares Básicos de Competencias en Lenguaje MEN"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  },
+  "id_item": "lectura-critica-estructura-textual-001",
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "lectura_critica",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 77,
+    "fuentes": "content/items | content/items/_banco-operacional.csv",
+    "ruta_origen": "content/items/lectura_critica/lectura-critica-estructura-textual-001.json"
+  }
+}

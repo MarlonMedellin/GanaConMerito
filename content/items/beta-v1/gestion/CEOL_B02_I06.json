@@ -1,0 +1,56 @@
+{
+  "id_item": "CEOL_B02_I06",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "gestion",
+  "tema": "Enfoque de derechos, debido proceso y justicia restaurativa",
+  "subtema": "actualizacion_restaurativa_del_manual",
+  "competencia": "Evalúa decisiones de actualización institucional del Manual de Convivencia con enfoque pedagógico y restaurativo.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce por qué una institución debe pasar de un Manual centrado en castigos a uno que incorpore responsabilidad, reparación y garantías de no repetición.",
+  "evidencia": "Selecciona la justificación que mejor articula función normativa, finalidad pedagógica y sentido restaurativo del manual.",
+  "tarea": "Analizar una propuesta de actualización del Manual de Convivencia y elegir su fundamento más adecuado.",
+  "contexto": "Una institución revisa su Manual de Convivencia y encuentra que está centrado casi exclusivamente en suspensiones, expulsiones y castigos. El comité propone actualizarlo desde una lógica restaurativa.",
+  "enunciado": "¿Por qué este cambio es necesario desde las orientaciones actuales de convivencia escolar?",
+  "opciones": {
+    "A": "Porque el Manual debe orientar medidas pedagógicas y restaurativas que promuevan responsabilidad, reparación y no repetición, además de regular consecuencias proporcionales.",
+    "B": "Porque un enfoque restaurativo elimina la necesidad de protocolos, deberes y consecuencias cuando hay conflicto escolar.",
+    "C": "Porque la reparación del daño depende solo de acuerdos espontáneos entre estudiantes y no de reglas institucionales.",
+    "D": "Porque las expulsiones y suspensiones dejan de ser posibles en cualquier caso cuando una institución adopta lenguaje restaurativo."
+  },
+  "clave": "A",
+  "justificacion_clave": "La clave es A porque el Manual de Convivencia no debe ser solo un catálogo de castigos; también debe orientar respuestas pedagógicas, reparadoras y proporcionales.",
+  "distractores_funcion": {
+    "A": "Clave correcta; integra función normativa y finalidad restaurativa del manual.",
+    "B": "Modela la falsa oposición entre restauración y existencia de reglas o consecuencias.",
+    "C": "Desinstitucionaliza indebidamente la reparación del daño.",
+    "D": "Confunde enfoque restaurativo con prohibición absoluta de sanciones."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "No presenta restauración como indulgencia ni como castigo encubierto."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Opciones mejor equilibradas que en el original y centradas en criterio institucional."
+  },
+  "metadata_editorial": {
+    "lote": "L013-B",
+    "ruta_origen": "content/items/stand-by/Enfoque de derechos, debido proceso y justicia restaurativa/CEOL_B02_I06.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/coordinador/funcional/CEOL_B02_I06.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": false
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "gestion",
+  "perfil_sugerido_beta": "coordinador",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 72,
+    "fuentes": "auditoria/L013 | auditoria/L068 | auditoria/L078",
+    "ruta_origen": "content/restructuring-v1/docente/gestion/coordinador/funcional/CEOL_B02_I06.json"
+  }
+}

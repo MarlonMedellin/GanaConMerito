@@ -1,0 +1,48 @@
+{
+  "id": "GA02_B03_I01",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "didactica_y_planeacion",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Un docente de ciencias sociales prepara su planeación de aula sobre diversidad cultural. Sabe que para romper con la enseñanza homogeneizante tradicional tradicional, su secuencia didáctica debe permitir que los alumnos expresen sus saberes por múltiples vías alternativas de acción y expresión.",
+  "enunciado": "Para alinear su didáctica con el principio del DUA relacionado con ofrecer múltiples formas de acción y expresión, la estrategia de evaluación correcta es:",
+  "opciones": {
+    "A": "Exigir a todos los estudiantes de forma obligatoria la presentación de un examen escrito exclusivamente memorístico e individual.",
+    "B": "Permitir que los estudiantes demuestren su competencia eligiendo de forma libre entre un ensayo escrito, un debate oral guiado, un mapa conceptual digital o una dramatización situada.",
+    "C": "Asignar la misma nota estándar grupal a todos los alumnos para agilizar el diligenciamiento técnico de las mallas curriculares.",
+    "D": "Exonerar de toda evaluación didáctica a los estudiantes pertenecientes a comunidades indígenas locales bajo un enfoque asistencialista."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "El tercer pilar del Diseño Universal para el Aprendizaje (DUA) se enfoca en proporcionar múltiples formas de acción y expresión. Reconoce que los estudiantes difieren significativamente en las formas en que pueden navegar por un entorno de aprendizaje y expresar lo que saben, por lo que la evaluación formativa debe ofrecer alternativas viables sin deprimir los estándares.",
+  "justificacionClave": "La opción B aplica el principio del DUA al diversificar los canales de salida e instrumentos de la evaluación de aula.",
+  "justificacionDistractores": {
+    "A": "Mantiene el modelo homogeneizador tradicional rígido de un solo instrumento, penalizando a los alumnos con distintas habilidades expresivas.",
+    "C": "Incurre en un facilismo administrativo que anula la retroalimentación formativa y desvirtúa la validez psicométrica de la medición individual.",
+    "D": "Aplica un enfoque de exclusión pasiva condescendiente que priva a las minorías étnicas del derecho a ser evaluadas y andamiadas con rigor."
+  },
+  "normativaRefs": [
+    "Decreto 1421 de 2017",
+    "Lineamientos de Educación Inclusiva MEN"
+  ],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "GA02_B03_I01",
+    "rutaOrigen": "content/items/stand-by/Did ctica, diversidad y planeaci n de aula/GA02_B03_I01.json"
+  },
+  "id_item": "GA02_B03_I01",
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "pedagogia",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 9,
+    "fuentes": "auditoria/L043 | content/items | content/items/_banco-operacional.csv | fase-5b/microbloque-01/banco-premium",
+    "ruta_origen": "content/items/Didáctica, diversidad y planeación de aula/GA02_B03_I01.json"
+  }
+}

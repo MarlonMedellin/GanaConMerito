@@ -11,7 +11,7 @@ related:
   - QUAL-DEBT-REGISTER
   - QUAL-QB-LOAD-AUDIT-2026-04-26
   - DEL-QB-LOAD-CLOSE-2026-04-26
-last_reviewed: 2026-05-01
+last_reviewed: 2026-08-11
 ---
 
 # Known issues
@@ -19,6 +19,9 @@ last_reviewed: 2026-05-01
 ## Activos
 | issue | severidad | owner sugerido | estado | resumen |
 |---|---|---|---|---|
+| BETA-ISSUE-001 | alta | ops + qa | abierto | beta funcional pendiente de triple verificacion fresca sobre commit objetivo; HEAD actual `ca59cec` no debe asumirse desplegado |
+| BETA-ISSUE-002 | media | docs + qa | abierto | evidencia historica de QA/runtime existe pero debe tratarse como auxiliar hasta registrar corrida beta actual |
+| BETA-ISSUE-003 | media | producto + tutor | aceptado | frente normativo del Tutor sigue en `synthesized_governed_unverified`; aceptable para beta con disclaimers y guardrails |
 | QB-ISSUE-004 | media | delivery | resuelto | drift documental entre índice operativo y cierre real de fase ya reconciliado en el snapshot operativo final |
 | APP-ISSUE-001 | alta | producto + auth | resuelto | onboarding exige al menos un `Área activa` y quedó validado funcionalmente en runtime desplegado |
 | APP-ISSUE-002 | media | platform | resuelto | trazabilidad visible con `commit` + `buildTime` confirmada en `/login` del runtime objetivo |
@@ -28,15 +31,19 @@ last_reviewed: 2026-05-01
 | APP-ISSUE-006 | media | frontend + producto | resuelto | clasificación `Fuertes` / `Por reforzar` validada con pruebas y QA funcional |
 
 ## Detalle priorizado
+- Para Beta Candidate 0.6.0, el bloqueo principal es operacional: confirmar que repo, deploy y runtime publico apuntan al mismo commit y que los gates minimos pasan en el entorno real.
+- Ultimo runtime publico verificado documentalmente: `716ec62`.
+- HEAD actual revisado: `ca59cec`.
 - Ver auditoría específica: `docs/04-quality/question-bank-load-phase-audit-2026-04-26.md`
 - Ver corrida base: `docs/04-quality/chromium-qa-run-2026-04-27.md`
 - Prioridad inmediata:
-  1. mantener smoke postdeploy y E2E autenticada de `5` turnos como gate obligatorio de futuros deploys
-  2. evitar nueva desalineación entre `~/.openclaw/product` y `/opt/gcm/app`
-  3. conservar sincronizado el índice operativo del banco al cerrar futuras fases de carga
+  1. ejecutar triple verificacion source/deploy/runtime para el commit objetivo beta
+  2. mantener smoke postdeploy y E2E autenticada de `5` turnos como gate obligatorio de futuros deploys
+  3. evitar nueva desalineación entre `~/.openclaw/product` y `/opt/gcm/app`
+  4. conservar sincronizado el índice operativo del banco al cerrar futuras fases de carga
 
 ## Nota de alcance
-Estos issues están consolidados con evidencia local de repo y cierre documental de fase. No sustituyen una nueva validación remota de Supabase.
+Estos issues están consolidados con evidencia local de repo y cierre documental de fase. No sustituyen una nueva validación remota de Supabase ni una corrida fresca de runtime para beta.
 
 ## Evidencia local revisada el 2026-04-29
 - `package.json` expone runners versionados `qa:smoke:postdeploy`, `qa:e2e:api` y `qa:e2e:ui`.

@@ -1,0 +1,48 @@
+{
+  "id": "CEOL_B10_I03",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "normatividad",
+  "subarea": "organizacion_educativa",
+  "perfil": "rector_director_rural",
+  "tipoCompetencia": "funcional",
+  "competency": "normatividad_y_legislacion_educativa",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "El Consejo Académico de un colegio formal oficial propone al rector la creación de una jornada nocturna especial de alfabetización para adultos mayores de la comunidad, utilizando para ello las aulas físicas del plantel y vinculando horas de servicio social obligatorio de los estudiantes de grado undécimo.",
+  "enunciado": "Con el fin de viabilizar legalmente esta propuesta en el marco de la organización del servicio educativo según el DUR 1075, la gestión prioritaria del Rector debe ser:",
+  "opciones": {
+    "A": "Aprobar e iniciar la jornada nocturna de inmediato mediante resolución rectoral interna invocando la autonomía curricular holística.",
+    "B": "Tramitar ante la Secretaría de Educación Territorial la autorización oficial de ampliación de la licencia o canasta de la prestación del servicio educativo para la educación de adultos.",
+    "C": "Exigir una matrícula financiera mensual obligatoria a los adultos mayores para autofinanciar el pago de horas extras de los docentes.",
+    "D": "Rechazar la propuesta del consejo debido a que las instituciones formales oficiales tienen prohibido por ley dictar programas de alfabetización comunitaria."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La educación de adultos y la apertura de jornadas especiales nocturnas en instituciones oficiales están estrictamente reguladas por el Gobierno Nacional y compiladas en el Decreto 1075 de 2015. Aunque nace de la autonomía y la planeación institucional del Consejo Académico, la apertura de una nueva jornada o modalidad requiere la autorización administrativa y la asignación de viabilidad técnica y de planta por parte de la Secretaría de Educación certificada competente.",
+  "justificacionClave": "La opción B cursa de forma legal la ruta correspondiente ante el ente territorial certificado para la ampliación del servicio educativo público.",
+  "justificacionDistractores": {
+    "A": "Incurre en una extralimitación de funciones administrativas, ya que la rectoría no puede crear o ampliar jornadas oficiales de forma unilateral sin autorización del ente territorial.",
+    "C": "Vulnera el principio de gratuidad educativa pública y la normatividad de financiación estatal al cobrar cuotas obligatorias por fuera de los marcos legales establecidos.",
+    "D": "Es falsa, pues la ley y el Decreto 1075 promueven la alfabetización y la educación de adultos dentro de los planteles oficiales, siempre que sigan los cauces reglamentarios."
+  },
+  "normativaRefs": [
+    "Decreto 1075 de 2015 (Subtítulo de Educación de Adultos y regularización de jornadas)",
+    "Ley 115 de 1994"
+  ],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "CEOL_B10_I03",
+    "rutaOrigen": "content/items/stand-by/Autonom a institucional, enfoques de convivencia y organizaci n del servicio educativo/CEOL_B10_I03.json"
+  },
+  "id_item": "CEOL_B10_I03",
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "normatividad",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 41,
+    "fuentes": "auditoria/L003 | auditoria/L035 | auditoria/L058 | auditoria/L077 | content/items | content/items/_banco-operacional.csv",
+    "ruta_origen": "content/items/normatividad/CEOL_B10_I03.json"
+  }
+}

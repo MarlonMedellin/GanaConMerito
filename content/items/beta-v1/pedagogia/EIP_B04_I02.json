@@ -1,0 +1,56 @@
+{
+  "id_item": "EIP_B04_I02",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "Identidad, autonomía y reconocimiento del cuerpo",
+  "subtema": "Singularidad y diversidad en la infancia",
+  "competencia": "Sostiene decisiones pedagógicas que reconocen la singularidad, la historia personal y la expresión emocional en educación inicial.",
+  "nivel_cognitivo": "APLICACIÓN",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Defiende propuestas de aula que preservan la identidad infantil frente a prácticas homogeneizadoras.",
+  "evidencia": "Selecciona la justificación que vincula identidad, diversidad y desarrollo integral, y descarta uniformidad, reduccionismo psicomotor o falsa equidad formal.",
+  "tarea": "Determinar la mejor justificación pedagógica para mantener una actividad de expresión individual en transición.",
+  "contexto": "En un aula de transición, una docente propone actividades para que los niños describan su nombre, compartan historias familiares y expresen emociones. Un colega sugiere reemplazar estas producciones por fichas idénticas para facilitar el control y la presentación estética.",
+  "enunciado": "Frente a la sugerencia de homogeneizar las producciones del grupo, la docente mantiene su propuesta original porque, desde el desarrollo integral en educación inicial, esta decisión reconoce que:",
+  "opciones": {
+    "A": "La construcción de la identidad en la infancia requiere reconocer y valorar la singularidad, la historia de vida, la expresión emocional y el origen cultural de cada estudiante.",
+    "B": "El aprendizaje colaborativo en transición exige que los estudiantes supriman sus particularidades para consolidar una identidad grupal uniforme.",
+    "C": "El valor pedagógico principal de la actividad está en ejercitar la motricidad fina, aunque no promueva reflexión sobre sí mismos.",
+    "D": "Las producciones homogéneas garantizan igualdad material porque evitan diferencias visibles entre estudiantes."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opción correcta reconoce que la identidad infantil se construye cuando la escuela legitima la singularidad, la historia y la expresión emocional, en lugar de estandarizar las producciones.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Confunde convivencia con anulación de la individualidad.",
+    "C": "Reduce la actividad a un fin instrumental y omite su dimensión identitaria.",
+    "D": "Interpreta la igualdad material como uniformidad de resultados visibles."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Promueve reconocimiento de diversidad sin estigmatizar historias familiares ni expresiones personales."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "La tarea es única y el contexto es pertinente al constructo."
+  },
+  "metadata_editorial": {
+    "lote": "L019",
+    "ruta_origen": "content/items/stand-by/Identidad, autonomía y reconocimiento del cuerpo/EIP_B04_I02.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EIP_B04_I02.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "pedagogia",
+  "perfil_sugerido_beta": "preescolar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 89,
+    "fuentes": "auditoria/L019",
+    "ruta_origen": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EIP_B04_I02.json"
+  }
+}

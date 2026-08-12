@@ -1,0 +1,56 @@
+{
+  "id_item": "CB01_I03",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "Currículo y Contexto Social",
+  "subtema": "Autonomía escolar y adaptación contextual de referentes externos",
+  "competencia": "Toma decisiones curriculares coherentes con identidad institucional, autonomía escolar y análisis del contexto local.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Distingue entre usar referentes pedagógicos externos como insumo y copiar modelos de forma acrítica.",
+  "evidencia": "Selecciona la alternativa que adapta buenas prácticas externas al diagnóstico y a la identidad institucional propia.",
+  "tarea": "Resolver una decisión de diseño curricular durante la actualización del PEI.",
+  "contexto": "Durante la actualización del PEI, algunos docentes proponen copiar la estructura curricular de una institución reconocida por sus buenos resultados. Otros plantean revisar primero las características y necesidades de la comunidad propia.",
+  "enunciado": "Teniendo en cuenta los principios de pertinencia curricular, identidad institucional y autonomía escolar, ¿qué postura expresa mejor una toma de decisiones adecuada en el diseño pedagógico?",
+  "opciones": {
+    "A": "Adoptar de forma literal la propuesta curricular externa porque sus buenos resultados se transfieren automáticamente a cualquier contexto.",
+    "B": "Usar modelos pedagógicos externos exitosos como referentes y adaptarlos al diagnóstico, a las características y a la identidad del contexto local.",
+    "C": "Rechazar cualquier referente externo y exigir un diseño completamente inédito sin influencias previas.",
+    "D": "Solicitar que la Secretaría de Educación determine de manera centralizada el diseño pedagógico aplicable."
+  },
+  "clave": "B",
+  "justificacion_clave": "La opción B equilibra apertura a buenas prácticas y autonomía curricular: evita el trasplante acrítico, parte del contexto y conserva el carácter situado del PEI.",
+  "distractores_funcion": {
+    "A": "Representa transferencia mecánica y descontextualizada de modelos.",
+    "B": "Clave correcta.",
+    "C": "Plantea un aislamiento dogmático contrario al aprendizaje institucional.",
+    "D": "Renuncia a la autonomía escolar en una decisión sustantiva del PEI."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "La dificultad proviene del juicio curricular, no de familiaridad con una institución concreta."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Redacción clara y comparaciones entre opciones bien diferenciadas."
+  },
+  "metadata_editorial": {
+    "lote": "L009-A",
+    "ruta_origen": "content/items/stand-by/Currículo y Contexto Social/CB01_I03.json",
+    "ruta_destino_propuesta": "content/items/Currículo y Contexto Social/CB01_I03.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "pedagogia",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 2,
+    "fuentes": "auditoria/L031 | content/items | content/items/_banco-operacional.csv | fase-5/banco-final | fase-5b/microbloque-01/banco-premium",
+    "ruta_origen": "content/items/Currículo y Contexto Social/CB01_I03.json"
+  }
+}

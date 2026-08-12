@@ -1,0 +1,48 @@
+{
+  "id": "normatividad-funcion-docente-001",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "normatividad",
+  "subarea": "carrera_docente",
+  "perfil": "rector_director_rural",
+  "tipoCompetencia": "funcional",
+  "competency": "normatividad_y_legislacion_educativa",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Un docente que se encuentra bajo el régimen del Decreto 1278 de 2002 argumenta ante la rectoría que las actividades de asignación académica relacionadas con la atención a padres de familia y el diligenciamiento de los observadores de los alumnos no deben computarse dentro de sus horas de permanencia obligatoria en la institución.",
+  "enunciado": "Para resolver formalmente esta reclamación laboral con base en la normatividad de la jornada escolar y laboral, el rector debe precisar que:",
+  "opciones": {
+    "A": "El docente tiene razón, por lo que esas tareas complementarias pueden ejecutarse de manera libre y voluntaria desde el hogar.",
+    "B": "Estas actividades constituyen funciones obligatorias inherentes al rol docente y forman parte del tiempo de permanencia de 6 horas en el plantel.",
+    "C": "Esas labores deben pagarse de forma obligatoria como horas extras adicionales al salario básico mensual fijado por el MEN.",
+    "D": "El seguimiento de los observadores debe ser delegado exclusivamente en el personal administrativo y de secretaría para no recargar al maestro."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "El Decreto 1278 de 2002 y el Decreto 1075 de 2015 regulan la jornada laboral de los docentes de instituciones oficiales. Establecen que de las 8 horas diarias de la jornada de trabajo, 6 horas deben cumplirse obligatoriamente dentro de la planta física de la institución, dedicadas tanto a la asignación académica (clases) como a actividades curriculares complementarias (atención a padres, evaluación, planeación y registro de observadores).",
+  "justificacionClave": "La opción B aclara con exactitud la base reglamentaria del tiempo de permanencia y las obligaciones de la carrera docente.",
+  "justificacionDistractores": {
+    "A": "Desconoce el marco regulatorio del tiempo de permanencia institucional, restándole carácter obligatorio a tareas esenciales del proceso de aula.",
+    "C": "Incurre en un error de gestión presupuestal, dado que las actividades complementarias ordinarias están cubiertas por la asignación salarial base y no constituyen horas extras.",
+    "D": "Asigna responsabilidades de carácter pedagógico y convivencial (el observador del alumno) al personal administrativo, lo cual vulnera la idoneidad del rol docente."
+  },
+  "normativaRefs": [
+    "Decreto Ley 1278 de 2002 (Estatuto de Profesionalización Docente)",
+    "Decreto 1075 de 2015 (Jornada laboral y de permanencia)"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  },
+  "id_item": "normatividad-funcion-docente-001",
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "normatividad",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 82,
+    "fuentes": "content/items | content/items/_banco-operacional.csv",
+    "ruta_origen": "content/items/normatividad/normatividad-funcion-docente-001.json"
+  }
+}

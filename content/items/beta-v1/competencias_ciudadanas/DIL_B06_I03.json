@@ -1,0 +1,56 @@
+{
+  "id_item": "DIL_B06_I03",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "competencias_ciudadanas",
+  "tema": "Agencia infantil",
+  "subtema": "Agenciamiento politico",
+  "competencia": "Reconoce la agencia infantil como capacidad de leer criticamente el entorno, proponer cambios e incidir de manera gradual y protegida.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA_ALTA",
+  "claim": "Potenciar el agenciamiento politico de NNA no es militancia ni delegacion de responsabilidades adultas, sino participacion significativa con acompanamiento.",
+  "evidencia": "Selecciona la interpretacion del agenciamiento politico compatible con lectura critica del territorio, voz e incidencia gradual.",
+  "tarea": "Interpretar el concepto de agenciamiento politico en un contexto escolar y comunitario.",
+  "contexto": "Una institucion quiere que sus estudiantes analicen problemas de su barrio, expresen como les afectan, propongan soluciones y participen en escenarios escolares o comunitarios adecuados a su edad.",
+  "enunciado": "¿Que significa potenciar el agenciamiento politico de ninos, ninas y adolescentes frente a sus condiciones de vida en el territorio?",
+  "opciones": {
+    "A": "Involucrarlos en actividades de movilizacion adulta delegando en ellos la defensa publica de intereses institucionales o corporativos.",
+    "B": "Evitar que debatan sobre problematicas sociales porque la formacion politica corresponde solo a la familia y a la adultez.",
+    "C": "Reconocerlos como sujetos activos capaces de leer criticamente su realidad, proponer alternativas y participar gradualmente en decisiones que inciden en su bienestar.",
+    "D": "Trasladar a los estudiantes decisiones y responsabilidades legales complejas para fortalecer su autonomia ciudadana desde edades tempranas."
+  },
+  "clave": "C",
+  "justificacion_clave": "La opcion C es la unica que conjuga voz, lectura critica, incidencia gradual y acompanamiento. Las otras o instrumentalizan, silencian o adultizan de forma impropia la participacion.",
+  "distractores_funcion": {
+    "A": "Confunde agencia con instrumentalizacion de agendas adultas.",
+    "B": "Modela prohibicion adultocentrica del debate social escolar.",
+    "C": "Clave correcta.",
+    "D": "Modela traslado indebido de responsabilidades adultas a NNA."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Evita confundir participacion con partidismo y mantiene marco de proteccion."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Lenguaje exigente pero claro, sin tecnicismo innecesario."
+  },
+  "metadata_editorial": {
+    "lote": "L024",
+    "ruta_origen": "content/items/stand-by/Participación infantil, agencia y Convención sobre los Derechos del Niño/DIL_B06_I03.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/preescolar/funcional/DIL_B06_I03.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": true
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "competencias_ciudadanas",
+  "perfil_sugerido_beta": "preescolar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 62,
+    "fuentes": "auditoria/L024 | auditoria/L053",
+    "ruta_origen": "content/restructuring-v1/docente/competencias_ciudadanas/preescolar/funcional/DIL_B06_I03.json"
+  }
+}

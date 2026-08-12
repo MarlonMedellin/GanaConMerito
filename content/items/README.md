@@ -1,29 +1,29 @@
 # content/items
 
-Esta es la carpeta canónica del banco de preguntas.
-
-## Regla principal
-
-Los ítems finales se guardan aquí organizados por taxonomía:
-- `area`
-- `subarea`
-- `competency`
-
-## Estructura base
+Esta carpeta queda saneada para la beta. La lectura correcta es:
 
 ```text
 content/items/
-  matematicas/
-  pedagogia/
-  normatividad/
-  gestion/
-  lectura_critica/
-  competencias_ciudadanas/
+  beta-v1/       Banco beta materializado y navegable.
+  no-beta-v1/    Material fuera de beta, conservado y documentado.
 ```
 
-## Regla editorial
+## Fuente operativa beta
 
-No usar perfiles, cargos o convocatorias como eje principal de almacenamiento.
+Use `beta-v1/` como carpeta de preguntas listas para pilotaje. Contiene 100 JSON seleccionados desde el indice maestro de saneamiento:
 
-Para segmentación por perfiles docentes, usar la capa secundaria:
-- `content/profiles/docente/`
+```text
+content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv
+```
+
+## Material fuera de beta
+
+Todo lo que no debe alimentar el pilotaje queda en `no-beta-v1/`:
+
+- `banco-operacional-previo/`: preguntas operativas o legacy previas al cierre beta.
+- `stand-by-historico/`: preguntas historicas o pendientes de curacion.
+- `control-operacional/`: CSV, checklists e incidencias usados durante la transformacion.
+
+## Regla de trabajo
+
+No activar preguntas desde `no-beta-v1/` sin pasarlas primero por el indice maestro, remanufactura si aplica, y posterior materializacion en `beta-v1`.

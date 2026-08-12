@@ -1,0 +1,56 @@
+{
+  "id_item": "IDD_B06_I05",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "inclusion practica",
+  "subtema": "ajustes razonables con altas expectativas",
+  "competencia": "Tomar decisiones evaluativas que mantengan el aprendizaje esperado y flexibilicen los medios de demostracion.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El evaluado comprende que ajustar no equivale a eliminar el aprendizaje esperado, sino a ofrecer formas pertinentes para acceder y demostrarlo.",
+  "evidencia": "Selecciona la decision evaluativa que sostiene el proposito formativo con apoyos razonables.",
+  "tarea": "Diferenciar ajuste razonable de baja injustificada de exigencia o de evaluacion irrelevante.",
+  "contexto": "Un docente debe evaluar la comprension de un concepto en un estudiante que requiere apoyos y duda entre eliminar la meta de aprendizaje o ajustar la forma de evaluarla.",
+  "enunciado": "Cual decision evaluativa es mas coherente con una flexibilizacion inclusiva bien entendida?",
+  "opciones": {
+    "A": "Eliminar el aprendizaje esperado del proceso para evitar frustracion al estudiante.",
+    "B": "Mantener el proposito de aprendizaje y flexibilizar medios, tiempos o formatos para que el estudiante demuestre lo comprendido.",
+    "C": "Aplicar exactamente la misma prueba y condiciones a todo el grupo para asegurar igualdad.",
+    "D": "Reemplazar la evaluacion del aprendizaje por una valoracion general de conducta y esfuerzo."
+  },
+  "clave": "B",
+  "justificacion_clave": "La opcion B protege el derecho al aprendizaje sin renunciar al criterio de logro. La equidad se expresa en flexibilizar medios y apoyos, no en borrar la meta ni en evaluar otra cosa.",
+  "distractores_funcion": {
+    "A": "Representa exclusion curricular anticipada.",
+    "B": "Clave correcta.",
+    "C": "Confunde equidad con igualdad formal sin considerar barreras.",
+    "D": "Desplaza la evaluacion del aprendizaje hacia un juicio conductual irrelevante."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Promueve apoyos con expectativas altas y evita tanto sobreexigencia como paternalismo."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "La tarea cognitiva esta bien focalizada y el ruido verbal es bajo."
+  },
+  "metadata_editorial": {
+    "lote": "L020",
+    "ruta_origen": "content/items/stand-by/Inclusión práctica vs. segregación en aula/IDD_B06_I05.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B06_I05.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "pedagogia",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 14,
+    "fuentes": "auditoria/L020 | auditoria/L039 | fase-5b/microbloque-01/banco-premium",
+    "ruta_origen": "content/items/Inclusión práctica vs. segregación en aula/IDD_B06_I05.json"
+  }
+}

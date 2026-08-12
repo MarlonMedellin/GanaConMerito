@@ -1,0 +1,18 @@
+{
+  "lote": "L054",
+  "id_item": "EFCC_B06_I05",
+  "ruta_origen": "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EFCC_B06_I05.json",
+  "decision": "OMITIDO_POR_AUDITORIA_PREVIA",
+  "referencia_auditoria_previa": "content/restructuring-v1/trazabilidad/lotes/L015/decisiones.csv",
+  "decision_previa": "LISTO_PARA_BANCO",
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "pedagogia",
+  "perfil_sugerido_beta": "preescolar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 84,
+    "fuentes": "auditoria/L015 | auditoria/L054 | auditoria/L074",
+    "ruta_origen": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EFCC_B06_I05.json"
+  }
+}

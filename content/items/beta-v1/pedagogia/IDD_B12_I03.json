@@ -1,0 +1,18 @@
+{
+  "lote": "L043",
+  "id_item": "IDD_B12_I03",
+  "ruta_origen": "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I03.json",
+  "decision": "OMITIDO_POR_AUDITORIA_PREVIA",
+  "referencia_auditoria_previa": "content/restructuring-v1/trazabilidad/lotes/L012/decisiones.csv",
+  "decision_previa": "LISTO_PARA_BANCO",
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "pedagogia",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 20,
+    "fuentes": "auditoria/L043 | auditoria/L069 | fase-5b/microbloque-01/banco-premium",
+    "ruta_origen": "content/items/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I03.json"
+  }
+}

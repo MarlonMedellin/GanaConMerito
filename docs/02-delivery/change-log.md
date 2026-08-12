@@ -9,13 +9,13 @@ modules: [core, platform]
 tags: [changelog, cambios, entregas]
 related:
   - DEL-SPRINT-LOG
-last_reviewed: 2026-05-10
+last_reviewed: 2026-08-11
 ---
 
 ## Document control
 - Status: operational
 - Owner: PM-Governance
-- Last reviewed: 2026-05-10
+- Last reviewed: 2026-08-11
 - Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
 - Update trigger: governance, delivery, documentation, drift
 
@@ -27,6 +27,15 @@ last_reviewed: 2026-05-10
 - relacionados: docs/project/status.md, docs/project/canonical-docs.md, docs/archive/legacy-candidates.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/02-delivery/governance-hardening-roadmap.md
 - estado: in-progress (fase 3 documental en ejecucion; sin cierre de roadmap)
 - limitaciones: inventario inicial; no se archivaron ni removieron documentos legacy en esta entrega.
+
+## 2026-08-11
+- tipo: docs+governance+beta-readiness
+- modulo: docs/status/delivery/quality/ops
+- resumen: Homologacion documental para Beta Candidate 0.6.0. Se separa explicitamente HEAD actual de repo (`ca59cec`) del ultimo runtime publico verificado documentalmente (`716ec62`), se evita declarar beta funcional sin corrida fresca y se concentra el siguiente gate en triple verificacion source/deploy/runtime mas QA postdeploy/E2E.
+- sprint: Beta Candidate 0.6.0 — Alineacion documental y preparacion de runtime
+- agente: Codex
+- relacionados: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/release-checklist.md, docs/05-ops/runtime-and-release.md, docs/01-product/backlog.md, docs/04-quality/known-issues.md, docs/04-quality/technical-debt-register.md
+- limitaciones: sin deploy, sin runtime fresco, sin tag beta creado.
 
 ## 2026-05-24
 - tipo: content-audit+refactor

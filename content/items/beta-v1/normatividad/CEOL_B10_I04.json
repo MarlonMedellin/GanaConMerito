@@ -1,0 +1,49 @@
+{
+  "id": "CEOL_B10_I04",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "normatividad",
+  "subarea": "organizacion_educativa",
+  "perfil": "rector_director_rural",
+  "tipoCompetencia": "funcional",
+  "competency": "normatividad_y_legislacion_educativa",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "Un grupo de padres de familia de básica secundaria exige por escrito a la rectoría que se les permita revisar de forma directa las actas de calificación, los portafolios de evidencias y los soportes de las deliberaciones internas de los consejos de evaluación de sus hijos. Argumentan que el derecho de petición y la patria potestad les otorgan libre acceso confidencial a toda la documentación de los maestros.",
+  "enunciado": "Con base en los deberes de reserva, debido proceso y custodia de documentos oficiales fijados por la normatividad nacional, la respuesta correcta del Rector debe indicar que:",
+  "opciones": {
+    "A": "Los padres tienen acceso restringido exclusivo a las calificaciones finales oficiales de sus hijos, por lo que los documentos de trabajo interno del docente y de los consejos son reservados del plantel.",
+    "B": "Se debe entregar copia física de todos los diarios de campo de los docentes para evitar tutelas de los padres de familia.",
+    "C": "Los padres de familia pueden intervenir de forma directa en las deliberaciones y modificar con su voto los resultados del Consejo de Evaluación del PEI.",
+    "D": "Toda la documentación interna de los comités docentes es de carácter público irrestricto de libre descarga web."
+  },
+  "respuestaCorrecta": "A",
+  "explicacionGeneral": "El Decreto 1075 y las regulaciones del debido proceso evaluativo establecen que los padres de familia tienen el derecho constitucional a conocer los resultados finales, los informes de periodo y los criterios del SIEE. Sin embargo, las actas internas de debate técnico de los consejos de profesores, los diarios de campo y los exámenes en custodia de los maestros gozan de reserva técnica e institucional para proteger la confidencialidad y el debido proceso de los menores.",
+  "justificacionClave": "La opción A resguarda el equilibrio legal entre el derecho a la información de los padres y los límites de reserva y custodia del archivo escolar público.",
+  "justificacionDistractores": {
+    "B": "Vulnera el derecho a la intimidad, el debido proceso y la autonomía de cátedra de los docentes al entregar bitácoras de trabajo interno protegidas por reserva de ley.",
+    "C": "Confunde la veeduría y la corresponsabilidad con la co-administración técnica de los órganos del Gobierno Escolar, donde los padres no tienen voto de aula directos.",
+    "D": "Incurre en una violación flagrante de la Ley de Protección de Datos Personales (Habeas Data - Ley 1581 de 2012) al liberar información confidencial de menores."
+  },
+  "normativaRefs": [
+    "Decreto 1075 de 2015",
+    "Decreto 1290 de 2009 (Deberes y derechos de acudientes y planteles)",
+    "Ley 1581 de 2012 (Habeas Data)"
+  ],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "CEOL_B10_I04",
+    "rutaOrigen": "content/items/stand-by/Autonom a institucional, enfoques de convivencia y organizaci n del servicio educativo/CEOL_B10_I04.json"
+  },
+  "id_item": "CEOL_B10_I04",
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "normatividad",
+  "perfil_sugerido_beta": "rector_director_rural",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 42,
+    "fuentes": "auditoria/L003 | auditoria/L035 | auditoria/L058 | auditoria/L077 | content/items | content/items/_banco-operacional.csv",
+    "ruta_origen": "content/items/normatividad/CEOL_B10_I04.json"
+  }
+}

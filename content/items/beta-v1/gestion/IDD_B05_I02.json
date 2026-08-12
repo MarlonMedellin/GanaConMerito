@@ -1,0 +1,56 @@
+{
+  "id_item": "IDD_B05_I02",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "gestion",
+  "tema": "Docente de apoyo, orientador y valoración pedagógica",
+  "subtema": "estrategia_institucional_de_accesibilidad",
+  "competencia": "Prioriza decisiones institucionales que articulan accesibilidad, apoyos y seguimiento para inclusión educativa.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA_ALTA",
+  "claim": "Reconoce la estrategia institucional más adecuada cuando ingresan estudiantes con barreras físicas, visuales o de movilidad y el equipo no puede delegar la respuesta a cada docente por separado.",
+  "evidencia": "Selecciona la opción que articula accesibilidad física y curricular, formación docente y seguimiento institucional de apoyos.",
+  "tarea": "Analizar un caso de ingreso de estudiantes con discapacidad y elegir la prioridad de gestión institucional.",
+  "contexto": "A una institución llegan estudiantes con discapacidad física, visual o de movilidad. Algunos miembros del equipo creen que cada docente debe resolver por su cuenta y sin plan común.",
+  "enunciado": "¿Qué estrategia debe priorizar la institución para garantizar una respuesta inclusiva coherente?",
+  "opciones": {
+    "A": "Implementar un plan institucional de accesibilidad física y curricular, con responsabilidades definidas, ajustes razonables y seguimiento periódico del PIAR.",
+    "B": "Esperar a que cada docente adapte espontáneamente su asignatura y reportar solo los casos de mayor dificultad al final del periodo.",
+    "C": "Condicionar la permanencia de los estudiantes a la llegada previa de apoyos externos especializados para evitar improvisaciones.",
+    "D": "Delegar la flexibilización curricular exclusivamente en el docente de apoyo para que el resto del equipo mantenga su planeación sin cambios."
+  },
+  "clave": "A",
+  "justificacion_clave": "La clave es A porque la inclusión sostenible exige una respuesta institucional coordinada y no soluciones aisladas, condicionadas o delegadas a un solo actor.",
+  "distractores_funcion": {
+    "A": "Clave correcta; traduce la inclusión en gestión institucional articulada.",
+    "B": "Modela la inacción institucional y la respuesta reactiva tardía.",
+    "C": "Introduce una barrera de acceso al condicionar la permanencia a recursos externos previos.",
+    "D": "Modela la delegación improcedente de la inclusión a un único profesional."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "No presupone déficit del estudiante ni culpabiliza a la familia."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Las opciones compiten por criterio de gestión y no por pistas formales."
+  },
+  "metadata_editorial": {
+    "lote": "L013-A",
+    "ruta_origen": "content/items/stand-by/Docente de apoyo, orientador y valoración pedagógica/IDD_B05_I02.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/coordinador/funcional/IDD_B05_I02.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": false
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "gestion",
+  "perfil_sugerido_beta": "coordinador",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 73,
+    "fuentes": "auditoria/L013",
+    "ruta_origen": "content/restructuring-v1/docente/gestion/coordinador/funcional/IDD_B05_I02.json"
+  }
+}

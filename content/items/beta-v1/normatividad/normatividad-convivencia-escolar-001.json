@@ -1,0 +1,48 @@
+{
+  "id": "normatividad-convivencia-escolar-001",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "normatividad",
+  "subarea": "convivencia_escolar",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "normatividad_y_legislacion_educativa",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Un docente de aula presencia una agresión física directa entre dos estudiantes de grado noveno dentro del salón durante el cambio de clase. Uno de los menores resulta con un golpe visible en el rostro y sangrado nasal leve.",
+  "enunciado": "De acuerdo con la tipificación de situaciones de convivencia y la ruta de atención integral fijada por la Ley 1620 de 2013, la primera acción inmediata del docente en su condición de garante debe ser:",
+  "opciones": {
+    "A": "Citar de forma inmediata a una reunión extraordinaria de conciliación al Comité Escolar de Convivencia para redactar un acta de amonestación.",
+    "B": "Brindar atención inmediata en salud para detener el sangrado, separar físicamente a los implicados y reportar la situación a la orientación y coordinación.",
+    "C": "Llamar de forma directa a la Policía de Infancia y Adolescencia para que proceda con el arresto administrativo de los menores dentro del aula.",
+    "D": "Aplicar la sanción de suspensión del servicio educativo por tres días hábiles estipulada taxativamente en el Manual de Convivencia."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La Ley 1620 de 2013 clasifica las agresiones físicas que causan daño a la salud como Situaciones Tipo II o III dependiendo de la gravedad. En cualquiera de los casos, el protocolo obligatorio de la Ruta de Atención Integral (Componente de Atención) determina que la acción inmediata e inapelable de cualquier agente educativo es proteger la integridad física y la salud de los afectados antes de activar cualquier trámite formal.",
+  "justificacionClave": "La opción B cumple con el orden prioritario de atención médica, mitigación del riesgo y activación de la cadena de reporte interno institucional.",
+  "justificacionDistractores": {
+    "A": "Se salta el paso de los primeros auxilios de salud para ir de forma directa a un trámite burocrático de comité que requiere citación previa.",
+    "C": "Constituye una extralimitación punitiva desproporcionada que vulnera el debido proceso y la protección integral antes de agotar los protocolos internos.",
+    "D": "Aplica una medida punitiva sancionatoria directa que es competencia exclusiva del Rector y el Consejo Directivo tras un debido proceso, no del maestro de aula."
+  },
+  "normativaRefs": [
+    "Ley 1620 de 2013 (Sistema Nacional de Convivencia Escolar)",
+    "Decreto 1075 de 2015"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  },
+  "id_item": "normatividad-convivencia-escolar-001",
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "normatividad",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 53,
+    "fuentes": "content/items | content/items/_banco-operacional.csv",
+    "ruta_origen": "content/items/normatividad/normatividad-convivencia-escolar-001.json"
+  }
+}

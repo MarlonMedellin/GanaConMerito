@@ -1,0 +1,47 @@
+{
+  "id": "CB12_I01",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "gestion",
+  "subarea": "direccionamiento_institucional",
+  "perfil": "rector_director_rural",
+  "tipoCompetencia": "funcional",
+  "competency": "direccionamiento_institucional_y_gestion_del_clima_escolar",
+  "nivelCognitivo": "evaluacion_y_reflexion_critica",
+  "dificultad": "alta",
+  "contexto": "La misión de una institución debe definir su razón de ser. Una escuela rural propone como misión: 'Formar a los niños para que salgan rápido del campo y busquen empleo en la ciudad'.",
+  "enunciado": "Desde un enfoque de pertinencia territorial y desarrollo regional, esta misión es inadecuada porque:",
+  "opciones": {
+    "A": "Es demasiado corta y carece de términos técnicos sofisticados.",
+    "B": "Promueve el desarraigo y desconoce el valor de los saberes campesinos y el desarrollo sostenible de la región.",
+    "C": "No incluye metas numéricas de pruebas estandarizadas nacionales.",
+    "D": "No menciona el uso de tecnologías de inteligencia artificial."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La misión educativa debe guardar coherencia con el territorio. La educación debe ser un motor de transformación y desarrollo local, no una herramienta de expulsión del talento joven del agro.",
+  "justificacionClave": "La opción B señala la falta de pertinencia y el sesgo de desarraigo que invalida la misión propuesta.",
+  "justificacionDistractores": {
+    "A": "La longitud no es el criterio técnico de evaluación de una misión.",
+    "C": "Las metas numéricas son instrumentos de planeación (PMI), no el horizonte misional.",
+    "D": "La IA es un recurso, no el fin existencial de una institución educativa rural."
+  },
+  "normativaRefs": [
+    "Ley 115 de 1994 (Fines de la Educación)"
+  ],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "CB12_I01",
+    "rutaOrigen": "content/items/stand-by/Misi n institucional/CB12_I01.json"
+  },
+  "id_item": "CB12_I01",
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "gestion",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 67,
+    "fuentes": "content/items | content/items/_banco-operacional.csv",
+    "ruta_origen": "content/items/gestion/CB12_I01.json"
+  }
+}

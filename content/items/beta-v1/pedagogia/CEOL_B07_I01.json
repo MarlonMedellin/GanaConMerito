@@ -1,0 +1,56 @@
+{
+  "id_item": "CEOL_B07_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "Constructivismo",
+  "subtema": "Ideas previas y conflicto cognitivo",
+  "competencia": "Tomar decisiones didácticas que usen las ideas previas para promover reestructuración conceptual.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce que la duda del estudiante es un punto de partida para indagar y reconstruir conocimiento.",
+  "evidencia": "Elige la intervención docente que explora conceptos previos y los contrasta con evidencia.",
+  "tarea": "Escoger la respuesta didáctica más adecuada ante una confusión conceptual.",
+  "contexto": "En una clase de ciencias, un estudiante pregunta por qué al cruzarse dos haces de luz no se siente un choque de átomos.",
+  "enunciado": "¿Qué intervención docente es más adecuada desde un enfoque constructivista?",
+  "opciones": {
+    "A": "Descartar la pregunta y continuar con la planeación prevista.",
+    "B": "Afirmar que la luz está formada por átomos invisibles para simplificar la explicación.",
+    "C": "Indagar qué entiende el estudiante por átomo, masa y luz, contrastar con evidencias y orientar una explicación científica.",
+    "D": "Llamar la atención al estudiante porque su pregunta muestra desconocimiento del tema."
+  },
+  "clave": "C",
+  "justificacion_clave": "La opción correcta usa la pregunta del estudiante como entrada para explorar conceptos previos y producir reconstrucción conceptual fundamentada.",
+  "distractores_funcion": {
+    "A": "Ignora la oportunidad didáctica que ofrece la duda.",
+    "B": "Refuerza una explicación científicamente incorrecta.",
+    "C": "Clave correcta.",
+    "D": "Confunde mediación pedagógica con sanción del error."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Evalúa decisión didáctica general y no experticia disciplinar avanzada."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "El caso está focalizado y las opciones son distinguibles."
+  },
+  "metadata_editorial": {
+    "lote": "L001",
+    "ruta_origen": "content/items/stand-by/Ideas previas, conflicto cognitivo y desarrollo constructivista/CEOL_B07_I01.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CEOL_B07_I01.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": true
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "pedagogia",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 29,
+    "fuentes": "auditoria/L001 | auditoria/L018",
+    "ruta_origen": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CEOL_B07_I01.json"
+  }
+}

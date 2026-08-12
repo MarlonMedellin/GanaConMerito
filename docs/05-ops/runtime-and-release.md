@@ -2,7 +2,7 @@
 
 Status: canonical
 Owner: PM-Governance
-Last reviewed: 2026-05-10
+Last reviewed: 2026-08-11
 Related files:
 - AGENTS.md
 - docs/project/status.md
@@ -52,6 +52,13 @@ Deploy:
 Runtime público:
 - `https://cnsc.profemarlon.com`
 
+Snapshot vigente para beta candidata:
+- HEAD actual de repo revisado: `ca59cec`
+- Ultimo runtime publico verificado documentalmente: `716ec62`
+- Estado de paridad: pendiente de triple verificacion fresca
+- Version objetivo: `0.6.0`
+- Release beta sugerido despues de cierre: `v0.6.0-beta.1`
+
 ---
 
 # Regla de runtime
@@ -65,6 +72,8 @@ No declarar:
 
 sin evidencia mínima.
 
+Para Beta Candidate 0.6.0, la evidencia historica en `fcc40cb`, `716ec62` u otros commits sirve como contexto de madurez, pero no autoriza afirmar que `ca59cec` esta desplegado o validado en runtime.
+
 ---
 
 # Evidencia mínima recomendada
@@ -77,6 +86,20 @@ sin evidencia mínima.
 | QA relevante | Recomendado |
 | Runtime URL | Obligatoria |
 | Drift conocido | Recomendado |
+
+## Evidencia minima para cerrar `v0.6.0-beta.1`
+
+| Gate | Criterio |
+|---|---|
+| Source | `~/.openclaw/product` en el commit objetivo |
+| Deploy tree | `/opt/gcm/app` en el mismo commit objetivo |
+| Runtime visible | `/login` muestra el mismo commit y `buildTime` reciente |
+| Build | `npm run build` PASS |
+| Tests | suite relevante PASS; fallos por entorno documentados aparte |
+| Contenido | `npm run content:validate` PASS |
+| Smoke | `QA_BASE_URL=https://cnsc.profemarlon.com npm run qa:runtime:smoke` PASS |
+| Postdeploy/E2E | `qa:smoke:postdeploy`, `qa:e2e:api` y `qa:e2e:ui` PASS cuando aplique |
+| Registro | `status.md`, `sprint-log.md`, `change-log.md` y release checklist actualizados |
 
 ---
 
@@ -97,6 +120,7 @@ sin evidencia mínima.
 - la trazabilidad multiagente todavía no es enforcement obligatorio;
 - algunos cierres históricos mezclan repo y runtime;
 - la validación documental todavía depende de disciplina manual.
+- hay drift vigente entre HEAD de repo y ultimo runtime verificado documentado hasta que se ejecute la corrida beta.
 
 ---
 

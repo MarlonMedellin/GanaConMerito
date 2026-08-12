@@ -1,0 +1,56 @@
+{
+  "id_item": "CEOL_B06_I04",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "Evaluación formativa, mejora continua y lenguaje evaluativo",
+  "subtema": "Lenguaje evaluativo profesional",
+  "competencia": "Usar lenguaje evaluativo descriptivo y basado en evidencias al analizar desempeños y decidir apoyos.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce que el lenguaje evaluativo profesional se centra en desempeños, evidencias y apoyos, no en etiquetas personales descalificadoras.",
+  "evidencia": "Escoge la intervención que reorienta una comisión de evaluación hacia hechos observables, dificultades específicas y estrategias de apoyo.",
+  "tarea": "Decidir cómo reencauzar una comisión de evaluación que está usando etiquetas subjetivas sobre un estudiante.",
+  "contexto": "En una comisión de evaluación de grado quinto, algunos docentes califican a un estudiante como perezoso, incapaz, problemático e irresponsable mientras revisan su caso.",
+  "enunciado": "¿Qué intervención del director de grupo es la más adecuada para reorientar el lenguaje y el enfoque de la comisión?",
+  "opciones": {
+    "A": "Solicitar que se revisen los desempeños no alcanzados y las inasistencias registradas, y proponer apoyos pedagógicos concretos con participación de estudiante y familia.",
+    "B": "Respaldar las etiquetas y dejarlas consignadas en el acta como sustento de la reprobación.",
+    "C": "Aprobar automáticamente al estudiante para evitar discusiones y desgaste administrativo.",
+    "D": "Hacer depender la valoración de un test de personalidad aplicado por orientación."
+  },
+  "clave": "A",
+  "justificacion_clave": "El lenguaje evaluativo profesional parte de hechos y desempeños observables para orientar apoyos y decisiones pedagógicas justas.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Convierte prejuicios en criterio oficial y vulnera dignidad y debido proceso.",
+    "C": "Evita el análisis pedagógico y sustituye acompañamiento por salida administrativa.",
+    "D": "Desplaza la evaluación escolar a una prueba aislada ajena al proceso de aula."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Promueve trato respetuoso y evita estigmatización del estudiante."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "El conflicto está claramente planteado y exige una decisión profesional concreta."
+  },
+  "metadata_editorial": {
+    "lote": "L015",
+    "ruta_origen": "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/CEOL_B06_I04.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CEOL_B06_I04.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "pedagogia",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 28,
+    "fuentes": "auditoria/L015 | auditoria/L073 | auditoria/L074",
+    "ruta_origen": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CEOL_B06_I04.json"
+  }
+}

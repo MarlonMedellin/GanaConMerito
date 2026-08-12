@@ -1,0 +1,48 @@
+{
+  "id": "GA02_B03_I02",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "didactica_y_planeacion",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "media",
+  "contexto": "Un maestro de matemáticas se enfrenta a altos índices de apatía grupal en grado octavo. Al revisar su planeación, detecta que los problemas algebraicos planteados en su guía comercial abstracta no guardan ninguna conexión con los intereses reales, la música o el entorno digital de los adolescentes.",
+  "enunciado": "Bajo las pautas del DUA para captar el interés y ofrecer múltiples formas de motivación e implicación, el rediseño didáctico del docente debe:",
+  "opciones": {
+    "A": "Imponer un estricto control conductual punitivo y sancionar cuantitativamente la falta de atención con notas deficientes.",
+    "B": "Reestructurar los problemas algebraicos situándolos en contextos de analítica de redes sociales, algoritmos de streaming de música y finanzas domésticas de la comunidad.",
+    "C": "Avanzar de forma lineal con la malla temática original ignorando la apatía para cumplir rígidamente con los tiempos de la coordinación.",
+    "D": "Delegar el dictado de la clase en un software de gamificación libre sin mediación pedagógica directa de su parte."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "El pilar de implicación del DUA (múltiples formas de motivación) establece que para enganchar de forma sostenible al estudiante en su proceso de aprendizaje, los contenidos deben tener relevancia, valor y autenticidad situada para su vida. Contextualizar el álgebra en entornos significativos actuales activa el interés cognitivo.",
+  "justificacionClave": "La opción B reformula la didáctica tradicional a través de la significatividad psicológica y el enganche motivacional del DUA.",
+  "justificacionDistractores": {
+    "A": "Apendiza el conductismo clásico represivo de aula, incrementando la frustración escolar y destruyendo el clima afectivo de la clase.",
+    "C": "Prioriza el formalismo administrativo de cumplimiento burocrático sobre el logro del aprendizaje real de los estudiantes de la institución.",
+    "D": "Incurre en un abandono de su posición de garante didáctico, asumiendo falsamente que el software sustituye la mediación humana del maestro."
+  },
+  "normativaRefs": [
+    "Lineamientos Curriculares de Matemáticas MEN",
+    "Decreto 1075 de 2015"
+  ],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "GA02_B03_I02",
+    "rutaOrigen": "content/items/stand-by/Did ctica, diversidad y planeaci n de aula/GA02_B03_I02.json"
+  },
+  "id_item": "GA02_B03_I02",
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "pedagogia",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 10,
+    "fuentes": "auditoria/L043 | content/items | content/items/_banco-operacional.csv | fase-5b/microbloque-01/banco-premium",
+    "ruta_origen": "content/items/Didáctica, diversidad y planeación de aula/GA02_B03_I02.json"
+  }
+}

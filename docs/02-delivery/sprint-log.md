@@ -11,28 +11,56 @@ related:
   - PROD-BACKLOG
   - DEL-CHANGE-LOG
   - QUAL-RISK-REGISTER
-last_reviewed: 2026-05-10
+last_reviewed: 2026-08-11
 ---
 
 ## Document control
 - Status: operational
 - Owner: PM-Governance
-- Last reviewed: 2026-05-10
+- Last reviewed: 2026-08-11
 - Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
 - Update trigger: governance, delivery, documentation, drift
 
 # Sprint log
 
 ## Current delivery state
-- **Current/last real operational block**: Sprint 47 — Mantenimiento menor y saneamiento final (cerrado en repo documental el 2026-05-10).
-- **Last runtime-verified commit**: `fcc40cb`.
+- **Current operational block**: Beta Candidate 0.6.0 — homologacion documental y preparacion de runtime (2026-08-11).
+- **Current repo HEAD reviewed**: `ca59cec`.
+- **Last documented public runtime-verified commit**: `716ec62`.
+- **Beta status**: candidata documental; beta funcional pendiente de triple verificacion y QA runtime fresco.
 - **Governance Hardening Roadmap state**: Fase 1 y Fase 2 iniciadas; Fase 3 en ejecucion documental (reduccion y clasificacion), Fases 4-5 futuras.
 - **Open risks**:
+  - HEAD actual de repo y ultimo runtime verificado documentado no deben asumirse alineados hasta revalidacion;
   - la calibracion del Tutor sigue siendo heuristica y requiere evidencia de uso real para refinamiento posterior;
   - trazabilidad multiagente aun advisory y sin enforcement automatico;
   - parte del QA historico sigue narrativo y puede competir con baseline ejecutiva;
   - integracion futura del Tutor con LLM real sigue pendiente como deuda tecnica futura;
   - el frente normativo sigue en `synthesized_governed_unverified` hasta cargar anexos oficiales suficientes.
+
+## Beta Candidate 0.6.0 — homologacion documental y preparacion de runtime
+- **Estado**: CANDIDATA DOCUMENTAL; NO RELEASE BETA CERRADO
+- **Fecha de alineacion**: 2026-08-11
+- **Rama canonica**: `master`
+- **HEAD revisado**: `ca59cec`
+- **Version declarada**: `0.6.0`
+- **Objetivo**: dejar una sola lectura ejecutiva del estado beta: base tecnica cercana, deuda menor aceptable, y bloqueo concentrado en una corrida fresca de runtime/release.
+
+### Entregables principales
+- `docs/project/status.md` alinea HEAD actual, ultimo runtime verificado y criterio de cierre beta.
+- `docs/05-ops/runtime-and-release.md` declara la regla para no confundir evidencia historica con paridad vigente.
+- `docs/01-product/backlog.md`, `docs/04-quality/known-issues.md` y `docs/04-quality/technical-debt-register.md` consolidan pendientes de beta sin abrir frentes grandes.
+- `docs/02-delivery/release-checklist.md` queda como checklist ejecutable para cerrar `v0.6.0-beta.1`.
+
+### Evidencia operacional
+- Revision documental y auditoria previa de Codex sobre repo, PRs recientes y validacion local.
+- Build local y typecheck/lint reportados en PASS en la auditoria previa.
+- Tests y validaciones basadas en `tsx` no fueron concluyentes en el sandbox previo por restriccion IPC del entorno.
+- Runtime publico NO revalidado en esta entrega.
+
+### Criterio de cierre
+- Triple verificacion source/deploy/runtime sobre un unico commit objetivo.
+- `content:validate`, tests, build, smoke runtime, postdeploy y E2E autenticado PASS.
+- Tag/release `v0.6.0-beta.1` creado solo despues de evidencia runtime fresca.
 
 ## Sprint 47 — mantenimiento menor y saneamiento final
 - **Estado**: CERRADO EN REPO (CIERRE DOCUMENTAL Y DE TRAZABILIDAD)

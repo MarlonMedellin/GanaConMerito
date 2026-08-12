@@ -6,7 +6,8 @@ import { normalizeLegacyItemToRichItem } from "../src/domain/taxonomy/normalize-
 import { validateRichItemEditorial } from "../src/domain/taxonomy/validators";
 
 async function listAllItemFiles(itemsDir: string) {
-  const areaDirs = await fs.readdir(itemsDir, { withFileTypes: true });
+  const corpusDir = path.join(itemsDir, "no-beta-v1", "banco-operacional-previo");
+  const areaDirs = await fs.readdir(corpusDir, { withFileTypes: true });
   const files: string[] = [];
 
   for (const entry of areaDirs) {
@@ -14,7 +15,7 @@ async function listAllItemFiles(itemsDir: string) {
       continue;
     }
 
-    const subdir = path.join(itemsDir, entry.name);
+    const subdir = path.join(corpusDir, entry.name);
     const subfiles = await fs.readdir(subdir, { withFileTypes: true });
 
     for (const subfile of subfiles) {

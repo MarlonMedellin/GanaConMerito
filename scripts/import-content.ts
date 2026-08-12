@@ -3,7 +3,7 @@ import path from "node:path";
 import { importMarkdownFile } from "../src/domain/content/import-from-file";
 
 async function main() {
-  const itemsDir = path.resolve(process.cwd(), "content/items");
+  const itemsDir = path.resolve(process.cwd(), "content/items/no-beta-v1/banco-operacional-previo");
   const entries = await fs.readdir(itemsDir, { withFileTypes: true });
   const files: string[] = [];
 

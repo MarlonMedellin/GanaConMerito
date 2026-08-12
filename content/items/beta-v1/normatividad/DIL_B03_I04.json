@@ -1,0 +1,47 @@
+{
+  "id": "DIL_B03_I04",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "normatividad",
+  "subarea": "evolucion_normativa_infancia",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "normatividad_y_legislacion_educativa",
+  "nivelCognitivo": "comprension_literal_e_inferencial",
+  "dificultad": "alta",
+  "contexto": "Tras la promulgación de la Ley 1098 de 2006, se sustituye el concepto de 'menor' por el de 'niño, niña y adolescente'.",
+  "enunciado": "La justificación jurídica y pedagógica principal para este cambio terminológico, según el enfoque de derechos, es:",
+  "opciones": {
+    "A": "Facilitar el registro estadístico de los menores en las plataformas del DANE.",
+    "B": "Reconocerlos como sujetos activos de derechos con capacidad de agencia y protección integral, superando la visión del 'menor' como objeto de control.",
+    "C": "Simplificar los Manuales de Convivencia eliminando todas las sanciones disciplinarias para estudiantes adolescentes.",
+    "D": "Desvincular a la familia de la responsabilidad sobre los actos de los menores de edad."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "El cambio terminológico de 'menor' (asociado a la doctrina de la situación irregular) a 'niño, niña y adolescente' (sujeto de protección integral) es el eje de la Ley 1098. Reconoce al menor como titular de derechos exigibles y no como una categoría de exclusión social.",
+  "justificacionClave": "La opción B define el núcleo de la doctrina de protección integral y la superación de la visión tutelar.",
+  "justificacionDistractores": {
+    "A": "Es un objetivo técnico-administrativo secundario que no justifica la reforma integral del enfoque jurídico.",
+    "C": "La ley no propone la eliminación de la disciplina, sino el cambio de su enfoque hacia la formación y restauración.",
+    "D": "Al contrario, la ley fortalece la corresponsabilidad de la familia como garante primario del desarrollo del menor."
+  },
+  "normativaRefs": [
+    "Ley 1098 de 2006 (Artículo 3 - Sujetos titulares de derechos)"
+  ],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "DIL_B03_I04",
+    "rutaOrigen": "content/items/stand-by/Evoluci n normativa - C digo del Menor vs. Ley 1098/DIL_B03_I04.json"
+  },
+  "id_item": "DIL_B03_I04",
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "normatividad",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 45,
+    "fuentes": "auditoria/L016 | content/items | content/items/_banco-operacional.csv | fase-5/pilotaje",
+    "ruta_origen": "content/items/normatividad/DIL_B03_I04.json"
+  }
+}

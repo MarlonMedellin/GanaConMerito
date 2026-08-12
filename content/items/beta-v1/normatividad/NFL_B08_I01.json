@@ -1,0 +1,56 @@
+{
+  "id_item": "NFL_B08_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "normatividad",
+  "tema": "Igualdad material",
+  "subtema": "Ajustes razonables y barreras",
+  "competencia": "Aplicar el principio de igualdad material en decisiones pedagógicas e institucionales.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Distingue entre trato idéntico e igualdad efectiva cuando existen barreras para el aprendizaje y la participación.",
+  "evidencia": "Escoge la respuesta que propone apoyos proporcionales sin renunciar a metas formativas.",
+  "tarea": "Determinar la actuación más ajustada al principio de igualdad material en un caso escolar.",
+  "contexto": "Un estudiante en condición de debilidad manifiesta enfrenta barreras para aprender y algunos docentes proponen exigirle exactamente lo mismo, sin apoyos.",
+  "enunciado": "¿Qué decisión aplica correctamente la igualdad material?",
+  "opciones": {
+    "A": "Implementar apoyos y ajustes razonables según las barreras identificadas para garantizar acceso, participación y dignidad.",
+    "B": "Mantener un trato idéntico sin ajustes para evitar privilegios frente al resto del grupo.",
+    "C": "Difundir públicamente su condición para justificar las excepciones ante el grupo.",
+    "D": "Eliminar toda exigencia académica sin metas ni seguimiento pedagógico."
+  },
+  "clave": "A",
+  "justificacion_clave": "La igualdad material exige remover barreras con apoyos pertinentes, no uniformar el trato ni vaciar la experiencia educativa de propósito pedagógico.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Confunde igualdad con uniformidad excluyente.",
+    "C": "Vulnera la intimidad y la dignidad del estudiante.",
+    "D": "Confunde ajuste razonable con renuncia total a las metas de aprendizaje."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Se centra en barreras observables y no en etiquetas diagnósticas."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Caso claro y opciones mutuamente distinguibles."
+  },
+  "metadata_editorial": {
+    "lote": "L001",
+    "ruta_origen": "content/items/stand-by/Igualdad material, discriminación positiva y debilidad manifiesta/NFL_B08_I01.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/NFL_B08_I01.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": true
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "normatividad",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 52,
+    "fuentes": "auditoria/L001 | auditoria/L019 | auditoria/L039 | fase-5b/banco-operacional/part-003.csv | fase-5b/remediacion-liviana/part-003.csv",
+    "ruta_origen": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/NFL_B08_I01.json"
+  }
+}

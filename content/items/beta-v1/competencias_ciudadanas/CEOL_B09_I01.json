@@ -1,0 +1,56 @@
+{
+  "id_item": "CEOL_B09_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "competencias_ciudadanas",
+  "tema": "Gestion de aula y convivencia",
+  "subtema": "Apropiacion formativa de normas",
+  "competencia": "Promover apropiacion de acuerdos de convivencia mediante analisis de casos, corresponsabilidad y practicas restaurativas.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Distingue entre estrategias centradas en castigo o memorizacion y estrategias que ayudan a comprender el sentido pedagogico de las normas.",
+  "evidencia": "Escoge la actuacion docente e institucional que vincula incumplimiento, reparacion y comprension del acuerdo comun.",
+  "tarea": "Elegir la estrategia mas efectiva para favorecer apropiacion real del manual de convivencia ante incumplimientos frecuentes.",
+  "contexto": "En un grupo hay incumplimientos reiterados de normas basicas. Los estudiantes conocen las sanciones previstas, pero no logran explicar para que sirven los acuerdos ni como reparar el dano cuando afectan a otros.",
+  "enunciado": "?Que estrategia favorece mejor una apropiacion real del manual de convivencia?",
+  "opciones": {
+    "A": "Aumentar los reportes y sanciones automaticas para que el miedo a la falta reduzca el incumplimiento.",
+    "B": "Dedicar varias sesiones a memorizar articulos del manual y evaluarlos con preguntas cerradas.",
+    "C": "Permitir que cada estudiante decida en que momentos aplicar o no las normas para fortalecer autonomia.",
+    "D": "Trabajar casos concretos, revisar el sentido de las normas con el grupo y aplicar practicas restaurativas cuando haya afectacion a otros."
+  },
+  "clave": "D",
+  "justificacion_clave": "La opcion correcta conecta la norma con comprension, corresponsabilidad y reparacion, que es la evidencia mas defendible de una convivencia escolar formativa y no meramente sancionatoria.",
+  "distractores_funcion": {
+    "A": "Confunde regulacion de la convivencia con incremento de castigo.",
+    "B": "Reduce la apropiacion normativa a memoria verbal sin cambio practico.",
+    "C": "Confunde participacion con relativizacion del marco comun.",
+    "D": "Clave correcta."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "No estigmatiza estudiantes ni depende de un contexto social particular; evalua una decision pedagogica observable."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "La situacion es cotidiana, focalizada y con opciones homogeneas."
+  },
+  "metadata_editorial": {
+    "lote": "L017",
+    "ruta_origen": "content/items/stand-by/Gestión de aula, lectura, creatividad y honestidad académica/CEOL_B09_I01.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CEOL_B09_I01.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": true
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "competencias_ciudadanas",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "comportamental",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 56,
+    "fuentes": "auditoria/L017",
+    "ruta_origen": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CEOL_B09_I01.json"
+  }
+}

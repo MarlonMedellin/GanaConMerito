@@ -1,0 +1,47 @@
+{
+  "id": "EIP_B05_I02",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "pedagogia",
+  "subarea": "desarrollo_preescolar",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "modelos_pedagogicos_y_practica_de_aula",
+  "nivelCognitivo": "comprension_literal_e_inferencial",
+  "dificultad": "media",
+  "contexto": "En la educación inicial, el docente observa que un niño de 4 años muestra dificultades en la motricidad fina, lo que le impide manipular correctamente las tijeras y seguir contornos simples en papel.",
+  "enunciado": "Para favorecer el proceso de aprestamiento y el desarrollo de la pinza digital previo al trabajo con herramientas cortantes, la actividad más pertinente es:",
+  "opciones": {
+    "A": "Ejecutar ejercicios de repetición de caligrafía con lápiz grueso durante dos horas diarias.",
+    "B": "Realizar actividades de modelado con plastilina, rasgado de papel y enhebrado de cuentas pequeñas para fortalecer los músculos intrínsecos de la mano.",
+    "C": "Impedir el acceso al niño a cualquier material manipulativo hasta que cumpla 5 años.",
+    "D": "Solicitar a la familia que le compre tijeras de acero industriales para que se acostumbre a la dureza del material."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "El desarrollo de la motricidad fina requiere de estímulos graduados que involucren el fortalecimiento muscular y la coordinación óculo-manual. Las actividades de rasgado, amasado y enhebrado son pre-requisitos funcionales esenciales para el dominio de la pinza digital (trípode) que exige el uso correcto de las tijeras.",
+  "justificacionClave": "La opción B describe estrategias pedagógicas de aprestamiento basadas en el fortalecimiento muscular necesario para la motricidad fina.",
+  "justificacionDistractores": {
+    "A": "La caligrafía excesiva sin preparación previa fatiga al niño y no desarrolla la destreza necesaria para la manipulación instrumental.",
+    "C": "El aislamiento priva al estudiante de la estimulación motora indispensable en su etapa de desarrollo vital.",
+    "D": "Propone una medida de riesgo físico innecesaria y poco pedagógica al forzar el uso de herramientas de adulto sin la destreza previa desarrollada."
+  },
+  "normativaRefs": [
+    "Lineamientos Pedagógicos de Educación Inicial"
+  ],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "EIP_B05_I02",
+    "rutaOrigen": "content/items/stand-by/Motricidad, aprestamiento y ubicaci n espacio-temporal/EIP_B05_I02.json"
+  },
+  "id_item": "EIP_B05_I02",
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "pedagogia",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 92,
+    "fuentes": "content/items | content/items/_banco-operacional.csv",
+    "ruta_origen": "content/items/pedagogia/EIP_B05_I02.json"
+  }
+}

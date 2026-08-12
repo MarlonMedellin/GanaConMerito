@@ -1,0 +1,47 @@
+{
+  "id": "lectura-critica-analisis-argumentativo-001",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "lectura_critica",
+  "subarea": "comprension_textual_critica",
+  "perfil": "transversal",
+  "tipoCompetencia": "basica",
+  "competency": "lectura_critica_y_evaluacion_de_argumentos",
+  "nivelCognitivo": "evaluacion_y_reflexion_critica",
+  "dificultad": "media",
+  "contexto": "Considere el siguiente fragmento de un ensayo pedagógico contemporáneo: 'La escuela no puede seguir operando como una fábrica del siglo XIX, obsesionada con el control, el silencio y la repetición literal. Si el sistema educativo no evoluciona hacia la flexibilidad curricular y la mediación basada en problemas reales, las aulas se convertirán en museos de la obsolescencia cognitiva, desconectados de un mundo que demanda pensamiento socio-crítico y adaptabilidad'.",
+  "enunciado": "Al analizar la estructura argumentativa del texto anterior, el supuesto implícito que sostiene la tesis principal del autor es que:",
+  "opciones": {
+    "A": "Las fábricas tradicionales del siglo XIX tenían un modelo educativo interno superior al de las escuelas de hoy.",
+    "B": "La finalidad esencial de la educación actual debe ser la preparación para un entorno social dinámico y transformador.",
+    "C": "El silencio y el control estricto dentro del aula de clase son condiciones indispensables para el aprendizaje significativo.",
+    "D": "Los modelos de enseñanza tradicionales basados en la memoria literal son inmunes a los cambios tecnológicos y sociales."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "En el análisis argumentativo complejo, un supuesto implícito es una premisa no explícita pero lógicamente necesaria para que la conclusión o tesis sea válida. Si el autor afirma que la falta de evolución convertirá a la escuela en algo obsoleto y desconectado, es porque asume que el fin de la escuela es la conexión activa con las demandas de adaptación del mundo contemporáneo.",
+  "justificacionClave": "La opción B devela la premisa oculta que da coherencia a la crítica del autor contra el tradicionalismo y la rigidez fabril.",
+  "justificacionDistractores": {
+    "A": "Realiza una interpretación literal errónea e inversa de la analogía histórica usada por el autor para criticar el sistema actual.",
+    "C": "Contradice abiertamente el núcleo argumentativo del texto, el cual identifica al control y al silencio como rasgos de obsolescencia.",
+    "D": "Afirma un supuesto que anularía la urgencia de la tesis del autor, quien precisamente argumenta que el tradicionalismo condena a la escuela a la caducidad."
+  },
+  "normativaRefs": [
+    "Estándares Básicos de Competencias en Lenguaje MEN"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  },
+  "id_item": "lectura-critica-analisis-argumentativo-001",
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "lectura_critica",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 75,
+    "fuentes": "content/items | content/items/_banco-operacional.csv",
+    "ruta_origen": "content/items/lectura_critica/lectura-critica-analisis-argumentativo-001.json"
+  }
+}

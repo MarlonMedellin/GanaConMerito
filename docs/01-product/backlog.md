@@ -11,7 +11,7 @@ related:
   - PROD-VISION
   - DEL-SPRINT-LOG
   - QUAL-DEBT-REGISTER
-last_reviewed: 2026-05-10
+last_reviewed: 2026-08-11
 ---
 
 # Backlog de producto
@@ -39,7 +39,19 @@ GanaConMerito tiene activo el core real de producto:
 - **Cierre funcional Tutor GCM (Sprint 21):** PASS con WARN explicito.
 - **Frente normativo Tutor GCM (Sprint 22):** PASS con WARN explicito; contrato y guardrails verificados, fuente oficial suficiente pendiente.
 
+Estado beta vigente:
+- **Version objetivo:** `0.6.0`.
+- **HEAD actual de repo revisado:** `ca59cec`.
+- **Ultimo runtime publico verificado documentalmente:** `716ec62`.
+- **Dictamen:** candidata a beta; falta corrida fresca de runtime/release para declararla beta funcional.
+
 ## Implementado y validado recientemente
+
+### Beta Candidate 0.6.0 — Alineacion documental y preparacion de runtime
+- Estado: CANDIDATA DOCUMENTAL; NO RELEASE BETA CERRADO.
+- Resultado: se homologa el estado ejecutivo entre `status`, `sprint-log`, `change-log`, `runtime-and-release`, backlog y registros de calidad.
+- Evidencia: auditoria previa de repo/PRs y validacion local parcial reporto build y typecheck/lint PASS; runtime fresco pendiente.
+- Limite aceptado: se dejan deudas menores visibles y se concentra el bloqueo beta en una corrida operacional completa.
 
 ### Sprint 47 — Mantenimiento menor y saneamiento final
 - Estado: CERRADO EN REPO (CIERRE DOCUMENTAL Y DE TRAZABILIDAD).
@@ -86,22 +98,21 @@ GanaConMerito tiene activo el core real de producto:
 - WARN vigente: faltan acuerdo oficial, guia metodologica, estructura de prueba y soporte de convocatoria/manual trazables en repo.
 
 ## Now
-1. Prioridad normativa alta: cargar acuerdo oficial, guia metodologica, estructura de prueba y soporte de convocatoria/manual antes de volver a evaluar `source_verified`.
-2. Mantener Sprint 22 como clasificacion vigente del frente normativo hasta que exista nueva evidencia documental real.
-3. Mantener disciplina de promocion: PR al repo principal -> `master` -> `~/.openclaw/product` -> `/opt/gcm/app` -> Docker OCI -> validacion en `https://cnsc.profemarlon.com`.
-4. Ejecutar rotacion de `SUPABASE_SERVICE_ROLE_KEY` (Riesgo identificado en Sprint 20).
-5. Mantener `npm test`, `npm run lint` y `npm run build` como bundle minimo de cierre para sprints de contrato/taxonomia.
-6. Consolidar la calidad de `trace_signals` persistidos para que la calibracion posterior no dependa de ruido operacional.
-7. Mantener Tutor GCM bajo contrato: sin scoring, sin avance, sin cierre, sin fuente normativa inventada.
+1. Cerrar corrida beta `v0.6.0-beta.1`: alinear `master`/`~/.openclaw/product`/`/opt/gcm/app`/Docker/runtime sobre un unico commit objetivo.
+2. Ejecutar y registrar gates minimos: `content:validate`, tests relevantes, build, `qa:runtime:smoke`, `qa:smoke:postdeploy`, `qa:e2e:api` y `qa:e2e:ui`.
+3. Crear tag/release beta solo despues de evidencia PASS fresca.
+4. Mantener Tutor GCM bajo contrato: sin scoring, sin avance, sin cierre, sin fuente normativa inventada.
+5. Mantener Sprint 22 como clasificacion vigente del frente normativo hasta que exista nueva evidencia documental real.
+6. Ejecutar rotacion de `SUPABASE_SERVICE_ROLE_KEY` (Riesgo identificado en Sprint 20).
+7. Consolidar la calidad de `trace_signals` persistidos para que la calibracion posterior no dependa de ruido operacional.
 8. Mantener el bypass de onboarding QA explicitamente como workaround controlado hasta reemplazarlo por un mecanismo oficial y auditable.
 9. Mantener la expansion del banco bajo la regla editorial: taxonomia primero, perfiles como segunda capa opcional.
 
 ## Next
 1. Carga de anexos oficiales y eventual reevaluacion de `source_verified` para el frente normativo del Tutor.
-2. Release y runtime confiables: CI minima en GitHub Actions, build, tests unitarios, validacion documental y disciplina publica de runtime.
-3. Validacion visual aislada del resumen de trazas: obtener evidencia publica nueva del bloque de resumen del Tutor en dashboard si sigue siendo artefacto de cierre requerido.
-4. Runtime topology doc: documentar `docker-compose.yml`, env file, dominio, proxy y politica de secretos.
-5. Refinamiento posterior de calidad de evidencia y ruido/falso positivo en `trace_signals`, sin abrir scoring ni psicometria fuerte.
+2. Validacion visual aislada del resumen de trazas: obtener evidencia publica nueva del bloque de resumen del Tutor en dashboard si sigue siendo artefacto de cierre requerido.
+3. Runtime topology doc: documentar `docker-compose.yml`, env file, dominio, proxy y politica de secretos.
+4. Refinamiento posterior de calidad de evidencia y ruido/falso positivo en `trace_signals`, sin abrir scoring ni psicometria fuerte.
 
 ## Later
 1. Admin para editar fuente de verdad normativa y perfiles.

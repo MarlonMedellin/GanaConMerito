@@ -1,0 +1,47 @@
+{
+  "id": "lectura-critica-analisis-argumentativo-002",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "lectura_critica",
+  "subarea": "comprension_textual_critica",
+  "perfil": "transversal",
+  "tipoCompetencia": "basica",
+  "competency": "lectura_critica_y_evaluacion_de_argumentos",
+  "nivelCognitivo": "evaluacion_y_reflexion_critica",
+  "dificultad": "alta",
+  "contexto": "Analice el siguiente argumento sobre política educativa: 'Implementar incentivos económicos individuales basados exclusivamente en el promedio cuantitativo de las calificaciones de los estudiantes corrompe la praxis evaluativa. Los docentes, presionados por el entorno institucional o el estímulo monetario, tenderán a inflar las notas de forma artificial, debilitando la validez psicométrica del sistema e invisibilizando el error formativo que requiere remediación'.",
+  "enunciado": "La conclusión principal que se deriva lógicamente de las premisas presentadas por el emisor del argumento es:",
+  "opciones": {
+    "A": "Los estímulos económicos individuales para los docentes son la mejor estrategia existente para garantizar la excelencia académica.",
+    "B": "La inflación de calificaciones es un fenómeno inevitable provocado de forma exclusiva por las fallas cognitivas de los estudiantes.",
+    "C": "Los sistemas de incentivos atados rígidamente a notas numéricas desnaturalizan el propósito formativo y ético de la evaluación.",
+    "D": "La Secretaría de Educación debe eliminar todas las escalas de valoración cuantitativa de los Sistemas Institucionales de Evaluación (SIEE)."
+  },
+  "respuestaCorrecta": "C",
+  "explicacionGeneral": "En lectura crítica, identificar la conclusión exige sintetizar la afirmación central que las premisas pretenden demostrar. Si las premisas exponen que el incentivo basado en promedios numéricos empuja a inflar notas y destruye la validez y el valor del error, la inferencia directa es que dicha política deforma el sentido pedagógico de evaluar.",
+  "justificacionClave": "La opción C recoge sintéticamente la tesis y la consecuencia argumentativa de las premisas del fragmento.",
+  "justificacionDistractores": {
+    "A": "Expresa una idea diametralmente opuesta al argumento del emisor, el cual funge como una fuerte crítica contra este tipo de incentivos.",
+    "B": "Desvía la causalidad del fenómeno hacia la cognición de los alumnos, mientras que el texto atribuye la inflación a la presión de la estructura de incentivos.",
+    "D": "Lleva la conclusión a un extremo político-administrativo descontextualizado que no se menciona ni se defiende dentro del marco argumental del texto."
+  },
+  "normativaRefs": [
+    "Estándares Básicos de Competencias en Lenguaje MEN"
+  ],
+  "trazabilidad": {
+    "fuente": "restructuring-v1/auditoria",
+    "loteOrigen": "L001",
+    "rutaOrigen": "content/restructuring-v1/auditoria/lotes/L001/items-corregidos.json"
+  },
+  "id_item": "lectura-critica-analisis-argumentativo-002",
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "lectura_critica",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 76,
+    "fuentes": "content/items | content/items/_banco-operacional.csv",
+    "ruta_origen": "content/items/lectura_critica/lectura-critica-analisis-argumentativo-002.json"
+  }
+}

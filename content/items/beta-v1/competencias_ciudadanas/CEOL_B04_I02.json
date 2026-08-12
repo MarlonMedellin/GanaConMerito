@@ -1,0 +1,56 @@
+{
+  "id_item": "CEOL_B04_I02",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "competencias_ciudadanas",
+  "tema": "Corresponsabilidad, entorno y cuidado institucional",
+  "subtema": "entorno_escolar_y_redes_de_proteccion",
+  "competencia": "Selecciona acciones de cuidado y prevención con enfoque de corresponsabilidad entre institución, familia y entorno.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce la actuación institucional que integra lectura del contexto, acompañamiento escolar y articulación intersectorial ante riesgos del entorno barrial.",
+  "evidencia": "Elige la alternativa que evita tanto la inacción como la sanción discriminatoria y propone una respuesta preventiva y articulada.",
+  "tarea": "Analizar una afectación del entorno barrial sobre la vida escolar y elegir la respuesta institucional más protectora y formativa.",
+  "contexto": "Una institución identifica que situaciones del barrio, como conflictos entre grupos juveniles, inseguridad y tensiones familiares, están afectando la asistencia, la convivencia y el bienestar emocional de varios estudiantes.",
+  "enunciado": "Una institución identifica que situaciones del barrio, como conflictos entre grupos juveniles, inseguridad y tensiones familiares, están afectando la asistencia, la convivencia y el bienestar emocional de varios estudiantes.\n\n¿De qué manera debe asumir la escuela estas situaciones externas que permean la vida escolar?",
+  "opciones": {
+    "A": "Desentenderse de la situación alegando falta de competencia territorial y legal de la escuela para intervenir en el espacio público exterior del barrio.",
+    "B": "Imponer medidas disciplinarias preventivas a los estudiantes procedentes de los sectores conflictivos para resguardar la seguridad interna del plantel.",
+    "C": "Caracterizar los factores del entorno, brindar acompañamiento pedagógico y socioemocional a los estudiantes afectados, coordinar acciones con las familias y articularse con la red intersectorial de protección.",
+    "D": "Suspender temporalmente la presencialidad hasta que las autoridades externas garanticen el orden público en los alrededores."
+  },
+  "clave": "C",
+  "justificacion_clave": "La clave es C porque responde desde la corresponsabilidad y la protección integral: reconoce el impacto del contexto, acompaña a los estudiantes, involucra a las familias y articula la red institucional y territorial sin criminalizar ni abandonar a la población escolar.",
+  "distractores_funcion": {
+    "A": "Representa inacción institucional y niega la función protectora de la escuela frente al impacto del entorno.",
+    "B": "Introduce sesgo territorial y sanciona a estudiantes por su procedencia, no por conductas probadas.",
+    "C": "Clave correcta; integra contexto, acompañamiento y articulación de redes.",
+    "D": "Propone una medida desproporcionada que afecta el derecho a la educación sin agotar respuestas pedagógicas e institucionales."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El caso evita estigmatizar territorios o familias y pone el foco en la respuesta institucional."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Escenario claro, una sola decisión y opciones bien diferenciadas."
+  },
+  "metadata_editorial": {
+    "lote": "L006-A",
+    "ruta_origen": "content/items/stand-by/Corresponsabilidad, entorno y cuidado institucional/CEOL_B04_I02.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CEOL_B04_I02.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": false
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "competencias_ciudadanas",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "comportamental",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 59,
+    "fuentes": "auditoria/L006",
+    "ruta_origen": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/CEOL_B04_I02.json"
+  }
+}

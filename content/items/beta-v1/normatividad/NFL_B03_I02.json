@@ -1,0 +1,48 @@
+{
+  "id": "NFL_B03_I02",
+  "version": "1.0.0",
+  "estado": "BANCO_OPERACIONAL",
+  "area": "normatividad",
+  "subarea": "debido_proceso",
+  "perfil": "docente_aula",
+  "tipoCompetencia": "funcional",
+  "competency": "normatividad_y_legislacion_educativa",
+  "nivelCognitivo": "aplicacion_juicio_situacional",
+  "dificultad": "alta",
+  "contexto": "Durante un proceso disciplinario por agresiones verbales graves entre estudiantes, el Consejo Directivo decide sancionar a uno de los implicados sin permitirle presentar pruebas ni testigos, alegando que el Manual de Convivencia clasifica la agresión como falta 'gravísima' que no admite defensa.",
+  "enunciado": "Jurídicamente, esta decisión del Consejo Directivo es:",
+  "opciones": {
+    "A": "Válida, por tratarse de una falta tipificada como gravísima dentro del marco de la autonomía escolar.",
+    "B": "Inconstitucional, pues ningún manual puede anular el derecho fundamental al debido proceso y a la defensa en ninguna instancia.",
+    "C": "Aceptable, siempre que el rector firme un acta de confidencialidad para proteger a los testigos.",
+    "D": "Correcta, si la decisión cuenta con el voto favorable de la mayoría de los padres de familia del Consejo."
+  },
+  "respuestaCorrecta": "B",
+  "explicacionGeneral": "La Corte Constitucional ha reiterado que el debido proceso es una garantía mínima de rango superior. Cualquier norma interna que suprima el derecho a la defensa es inaplicable (principio de supremacía constitucional).",
+  "justificacionClave": "La opción B sostiene la supremacía de la Carta Magna frente a cualquier reglamento interno inferior.",
+  "justificacionDistractores": {
+    "A": "La tipificación de una falta no habilita la violación de derechos fundamentales ni la supresión de garantías procesales.",
+    "C": "La confidencialidad de los testigos no excusa la eliminación del derecho a la defensa del procesado.",
+    "D": "El voto de la mayoría no legitima la violación de un derecho constitucional individual."
+  },
+  "normativaRefs": [
+    "Constitución Política Art. 29",
+    "Sentencia T-002 de 2017"
+  ],
+  "trazabilidad": {
+    "fuente": "content/items/stand-by",
+    "loteOrigen": "NFL_B03_I02",
+    "rutaOrigen": "content/items/stand-by/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I02.json"
+  },
+  "id_item": "NFL_B03_I02",
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "normatividad",
+  "perfil_sugerido_beta": "coordinador",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 50,
+    "fuentes": "auditoria/L010 | auditoria/L035 | content/items | content/items/_banco-operacional.csv",
+    "ruta_origen": "content/items/normatividad/NFL_B03_I02.json"
+  }
+}

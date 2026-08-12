@@ -1,0 +1,56 @@
+{
+  "id_item": "CB13_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "Currículo vs plan vs malla",
+  "subtema": "Diferenciación conceptual",
+  "competencia": "Diferenciar currículo, plan de estudios y malla curricular según su función y nivel de concreción.",
+  "nivel_cognitivo": "ANALISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce que currículo, plan de estudios y malla curricular son conceptos relacionados pero no equivalentes.",
+  "evidencia": "Escoge la explicación que distingue horizonte formativo, organización por áreas y secuenciación de aprendizajes.",
+  "tarea": "Aclarar conceptualmente tres instrumentos curriculares que suelen confundirse.",
+  "contexto": "En una reunión académica, un docente afirma que currículo, plan de estudios y malla curricular son exactamente lo mismo.",
+  "enunciado": "¿Cuál explicación es más adecuada?",
+  "opciones": {
+    "A": "El currículo reúne intenciones, enfoques y experiencias formativas; el plan de estudios organiza áreas y grados; la malla distribuye contenidos y secuencias.",
+    "B": "El currículo es solo la lista de temas y la malla es el horario semanal.",
+    "C": "El plan de estudios reemplaza al PEI y la malla corresponde al manual de convivencia.",
+    "D": "Los tres conceptos son idénticos y diferenciarlos no aporta a la gestión académica."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opción correcta distingue niveles de definición curricular sin confundir instrumentos ni funciones.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Reduce y deforma el concepto de currículo.",
+    "C": "Confunde instrumentos con funciones institucionales distintas.",
+    "D": "Niega una diferenciación necesaria para planear y hacer seguimiento."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Vocabulario institucional común y sin referencias externas irrelevantes."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Demanda una sola decisión conceptual."
+  },
+  "metadata_editorial": {
+    "lote": "L008",
+    "ruta_origen": "content/items/stand-by/Currículo vs plan vs malla/CB13_I01.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/basica/CB13_I01.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": true
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "pedagogia",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 25,
+    "fuentes": "auditoria/L008 | auditoria/L031",
+    "ruta_origen": "content/restructuring-v1/docente/pedagogia/por_confirmar/basica/CB13_I01.json"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id_item": "CEOL_B06_I03",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "Evaluación formativa, mejora continua y lenguaje evaluativo",
+  "subtema": "Acciones de mejoramiento basadas en evidencia",
+  "competencia": "Diseñar acciones de mejora a partir del análisis del error, la retroalimentación y el ajuste de la enseñanza.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce que un plan de mejoramiento formativo exige analizar dificultades, intervenir didácticamente y recoger nueva evidencia de aprendizaje.",
+  "evidencia": "Escoge la acción de mejoramiento que usa el error como insumo pedagógico frente a repetición mecánica, baja arbitraria de estándares o manipulación de notas.",
+  "tarea": "Decidir cómo debe estructurarse un plan de mejoramiento después de una evaluación con alto porcentaje de no logro.",
+  "contexto": "Tras una evaluación intermedia de matemáticas, el docente observa que el 70% del curso no comprendió las fracciones mixtas y propone aplicar el mismo examen en la clase siguiente sin retroalimentar ni cambiar su método.",
+  "enunciado": "¿Qué características debe tener una acción de mejoramiento coherente con evaluación formativa?",
+  "opciones": {
+    "A": "Analizar dificultades recurrentes, retroalimentar, ajustar el diseño didáctico y permitir nuevas evidencias de aprendizaje.",
+    "B": "Reaplicar de forma idéntica la misma evaluación hasta que el grupo memorice los ítems.",
+    "C": "Bajar arbitrariamente la exigencia del estándar para asegurar aprobación general.",
+    "D": "Modificar directamente la calificación en la plataforma sin nuevas actividades ni evidencias."
+  },
+  "clave": "A",
+  "justificacion_clave": "La mejora continua se activa cuando el docente convierte los errores en información para replantear enseñanza, retroalimentar y pedir nuevas demostraciones de aprendizaje.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Confunde mejoramiento con repetición memorística del mismo instrumento.",
+    "C": "Sustituye intervención pedagógica por rebaja artificial de exigencia.",
+    "D": "Reduce la mejora a maquillaje administrativo de la nota."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Evalúa práctica docente basada en evidencia, no características personales de estudiantes."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Caso concreto y criterio de decisión claramente observable."
+  },
+  "metadata_editorial": {
+    "lote": "L015",
+    "ruta_origen": "content/items/stand-by/Evaluación formativa, mejora continua y lenguaje evaluativo/CEOL_B06_I03.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CEOL_B06_I03.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "pedagogia",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 27,
+    "fuentes": "auditoria/L015 | auditoria/L073 | auditoria/L074",
+    "ruta_origen": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CEOL_B06_I03.json"
+  }
+}
