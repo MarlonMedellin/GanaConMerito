@@ -17,4 +17,14 @@ Cada carpeta puede guardar:
 - criterios de curación
 - notas de alineación con áreas y subáreas
 
-Los ítems canónicos siguen viviendo en `content/items/`.
+Los ítems beta viven en `content/items/beta-v1/`.
+
+Las vistas oficiales de la cohorte piloto por perfil viven en:
+
+```text
+content/restructuring-v1/00-beta-v1/piloto-v1/por-perfil/
+```
+
+## Regla
+
+No duplicar preguntas aqui. Usar estas carpetas para criterios, cobertura y decisiones editoriales por cargo.

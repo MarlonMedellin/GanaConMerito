@@ -1,5 +1,19 @@
 # Estado de transformación a content/items
 
+Estado: reporte heredado anterior al saneamiento beta.
+
+Las rutas listadas abajo reflejan la organizacion previa. En la estructura actual, este material vive bajo:
+
+```text
+content/items/no-beta-v1/banco-operacional-previo/
+```
+
+La cohorte activa beta vive en:
+
+```text
+content/items/beta-v1/
+```
+
 ## Archivos preparados
 - item-doc-001 -> content/items/matematicas/matematicas-resolucion-problemas-001.md
 - item-doc-002 -> content/items/matematicas/matematicas-resolucion-problemas-002.md

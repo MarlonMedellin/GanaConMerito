@@ -22,3 +22,20 @@ content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv
 ```
 
 Si el contenido es aprovechable pero no esta listo, su destino es remanufactura, no `beta-v1`.
+
+## Como usarla
+
+| Subcarpeta | Uso correcto |
+|---|---|
+| `banco-operacional-previo/` | Consultar preguntas previas y corpus legacy |
+| `stand-by-historico/` | Buscar material historico para remanufactura |
+| `control-operacional/` | Revisar CSV, incidencias y reportes anteriores |
+
+## Regla de promocion
+
+Para promover algo desde `no-beta-v1`:
+
+1. Registrar el ID en el indice maestro beta.
+2. Definir estado editorial.
+3. Validar opciones, clave, justificacion y trazabilidad.
+4. Regenerar `content/items/beta-v1/`.

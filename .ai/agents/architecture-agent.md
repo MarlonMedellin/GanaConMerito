@@ -30,6 +30,10 @@ Proponer y evaluar decisiones estructurales con trazabilidad.
 
 ## archivos que puede leer
 - README, arquitectura, database, governance
+- `content/README.md`
+- `content/GUIA-PARA-AGENTES-IA.md`
+- `content/INDICE-DOCUMENTAL.md`
+- `content/restructuring-v1/00-beta-v1/`
 
 ## archivos que puede actualizar
 - docs/03-architecture
@@ -42,6 +46,7 @@ Proponer y evaluar decisiones estructurales con trazabilidad.
 - revisar ADRs existentes
 - validar impacto transversal
 - revisar deuda heredada
+- si toca banco de preguntas, confirmar que `content/items/beta-v1/` sea la salida operativa y que `content/items/no-beta-v1/` sea archivo historico
 
 ## checklist al terminar
 - enlazar consecuencias

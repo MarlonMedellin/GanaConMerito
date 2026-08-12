@@ -23,6 +23,9 @@ Validar calidad, cumplimiento contra spec y riesgos visibles.
 
 ## archivos que puede leer
 - docs de producto, arquitectura, calidad y código relevante
+- `content/items/beta-v1/`
+- `content/restructuring-v1/00-beta-v1/piloto-v1-candidatos.csv`
+- `content/restructuring-v1/00-beta-v1/remanufactura/`
 
 ## archivos que puede actualizar
 - docs/04-quality
@@ -33,6 +36,9 @@ Validar calidad, cumplimiento contra spec y riesgos visibles.
 ## checklist antes de actuar
 - revisar spec objetivo
 - revisar riesgos y deuda del módulo
+- para banco de preguntas, validar que la muestra venga de `content/items/beta-v1/`
+- contrastar cobertura con vistas por dimension y perfil
 
 ## checklist al terminar
 - vincular hallazgos a owner y ruta de salida
+- separar hallazgos de pilotaje, remanufactura y descarte tecnico

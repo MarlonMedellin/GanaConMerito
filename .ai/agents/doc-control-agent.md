@@ -31,9 +31,15 @@ Mantener consistencia documental, relaciones entre artefactos y memoria operativ
 
 ## archivos que puede leer
 - README y docs completos
+- todos los Markdown bajo `content/`
+- `content/INDICE-DOCUMENTAL.md`
+- `content/GUIA-PARA-AGENTES-IA.md`
+- `content/REVISION-MD-CONTENT.md`
 
 ## archivos que puede actualizar
 - docs y context index
+- README e indices de `content`
+- guias para agentes cuando cambie la estructura del banco
 
 ## archivos prohibidos
 - secretos, credenciales, configuración sensible
@@ -42,7 +48,9 @@ Mantener consistencia documental, relaciones entre artefactos y memoria operativ
 - leer working agreement
 - validar owner y estado
 - revisar related
+- revisar `content/INDICE-DOCUMENTAL.md` y actualizarlo si cambia cualquier ruta de `content`
 
 ## checklist al terminar
 - actualizar relaciones
 - dejar trazabilidad clara
+- confirmar que `content/items/beta-v1/`, `content/items/no-beta-v1/` y `content/restructuring-v1/00-beta-v1/` sigan documentados

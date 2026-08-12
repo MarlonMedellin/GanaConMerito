@@ -11,3 +11,10 @@ Archivos de control heredados del proceso de transformacion del banco.
 - `_transform-report.md`: reporte de transformacion.
 
 Estos archivos no son banco activo. Sirven como evidencia para el indice maestro beta.
+
+## Nota de rutas
+
+Los reportes heredados pueden mencionar rutas antiguas como `content/items/<area>/` o `content/items/stand-by/`. En la estructura saneada, esas rutas equivalen a:
+
+- `content/items/no-beta-v1/banco-operacional-previo/<area>/`
+- `content/items/no-beta-v1/stand-by-historico/`

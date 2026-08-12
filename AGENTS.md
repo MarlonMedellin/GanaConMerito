@@ -24,6 +24,38 @@ El runtime publico de validacion es `https://cnsc.profemarlon.com`.
 
 ---
 
+## Banco de Preguntas Beta
+
+Para cualquier tarea sobre preguntas, `content` o curacion editorial, leer primero:
+
+1. `content/README.md`
+2. `content/GUIA-PARA-AGENTES-IA.md`
+3. `content/INDICE-DOCUMENTAL.md`
+4. `content/REVISION-MD-CONTENT.md`
+5. `content/MANIFIESTO-SANEAMIENTO-BETA.md`
+
+Rutas canonicas:
+
+| Necesidad | Ruta |
+|---|---|
+| Preguntas listas para pilotaje beta | `content/items/beta-v1/` |
+| Material fuera de beta | `content/items/no-beta-v1/` |
+| Indice maestro editorial | `content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv` |
+| Cohorte piloto | `content/restructuring-v1/00-beta-v1/piloto-v1-candidatos.csv` |
+| Vistas por dimension | `content/restructuring-v1/00-beta-v1/piloto-v1/por-dimension/` |
+| Vistas por perfil | `content/restructuring-v1/00-beta-v1/piloto-v1/por-perfil/` |
+| Deuda de remanufactura | `content/restructuring-v1/00-beta-v1/remanufactura/` |
+
+Reglas:
+
+- No activar preguntas desde `content/items/no-beta-v1/`.
+- No tratar `restructuring-v1/auditoria`, `trazabilidad` o `consolidacion` como banco activo.
+- No duplicar preguntas por perfil; usar vistas CSV.
+- Si se cambia la cohorte, regenerar con `scripts/consolidate_question_bank_beta.py`.
+- Validar `content` con `python3 scripts/validate_docs.py` y `git diff --check`.
+
+---
+
 ## Regla Operativa Actual
 
 Estado actual de gobernanza:

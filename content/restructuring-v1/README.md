@@ -4,6 +4,8 @@ Mesa de trabajo editorial del banco de preguntas.
 
 La carpeta queda organizada por lectura de proceso. Para beta, empezar siempre por `00-beta-v1/`.
 
+Antes de editar esta carpeta, leer `content/GUIA-PARA-AGENTES-IA.md`.
+
 ## Navegacion rapida
 
 ```text

@@ -27,3 +27,10 @@ Todo lo que no debe alimentar el pilotaje queda en `no-beta-v1/`:
 ## Regla de trabajo
 
 No activar preguntas desde `no-beta-v1/` sin pasarlas primero por el indice maestro, remanufactura si aplica, y posterior materializacion en `beta-v1`.
+
+## Para agentes e IA
+
+- Buscar preguntas beta solo en `beta-v1/`.
+- Tratar `no-beta-v1/` como archivo de consulta, no como banco activo.
+- Consultar `content/GUIA-PARA-AGENTES-IA.md` antes de cambiar rutas o estados.
+- Si se genera una nueva cohorte, usar `scripts/consolidate_question_bank_beta.py`.

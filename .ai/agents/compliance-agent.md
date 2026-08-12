@@ -26,6 +26,9 @@ Proteger operación, seguridad y costo frente a cambios sensibles.
 
 ## archivos que puede leer
 - docs/07-compliance, governance, ops y configuración relevante
+- `content/GUIA-PARA-AGENTES-IA.md`
+- `content/MANIFIESTO-SANEAMIENTO-BETA.md`
+- `content/restructuring-v1/00-beta-v1/descarte-tecnico.csv`
 
 ## archivos que puede actualizar
 - hallazgos de cumplimiento y riesgos
@@ -36,6 +39,7 @@ Proteger operación, seguridad y costo frente a cambios sensibles.
 ## checklist antes de actuar
 - revisar guardrails y política HITL
 - identificar superficie sensible
+- verificar que ningun runtime o importador use directamente `content/items/no-beta-v1/`
 
 ## checklist al terminar
 - dejar bloqueo o recomendación explícita

@@ -9,3 +9,7 @@ Incluye JSON y Markdown previos, carpetas por area canonica y algunas carpetas t
 - Consultar como fuente historica.
 - No usar como runtime beta.
 - Promover a beta solo mediante el indice maestro y regeneracion de `content/items/beta-v1`.
+
+## Advertencia
+
+Esta carpeta conserva formatos mixtos (`.md` legacy y `.json`). La existencia de una pregunta aqui no significa que este aprobada para pilotaje.

@@ -2,6 +2,14 @@
 
 Esta carpeta es la fuente operativa para cerrar el banco de preguntas de la beta sin borrar originales.
 
+## Como leer esta carpeta
+
+1. `indice-maestro-beta.csv` es la fuente de decision.
+2. `piloto-v1-candidatos.csv` es la cohorte operativa.
+3. `piloto-v1/` organiza esa cohorte por dimension y perfil.
+4. `remanufactura/` guarda deuda aprovechable.
+5. `descarte-tecnico.csv` separa material no apto para beta.
+
 ## Entregables
 
 - `indice-maestro-beta.csv`: inventario unificado y deduplicado.
@@ -59,3 +67,7 @@ Una pregunta entra a pilotaje si tiene ID unico, area canonica, tipo de item, cu
 ## Siguiente gate
 
 Revisar manualmente `piloto-v1-candidatos.csv`, normalizar perfiles `por_confirmar` y materializar en `content/items/beta-v1` solo los seleccionados con estado final `PILOTAJE_V1`.
+
+## Relacion con `content/items`
+
+`content/items/beta-v1/` es el resultado materializado. Esta carpeta explica el criterio editorial que sostiene ese resultado.
