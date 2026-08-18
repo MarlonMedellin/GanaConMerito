@@ -229,7 +229,7 @@ ${bodyText.slice(0, 1500)}`
     ).not.toBe("unknown");
 
     if (detectedState === "login") {
-      await expect(page.getByText(/GanaConMerito/i)).toBeVisible();
+      await expect(page.getByRole("heading", { name: /GanaConMerito/i })).toBeVisible();
       await expect(page.getByRole("button", { name: /Continuar con Google/i })).toBeVisible();
 
       expect(
