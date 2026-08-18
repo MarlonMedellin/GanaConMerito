@@ -93,7 +93,7 @@ Declarar `v0.6.0-beta.1` solo cuando `docs/02-delivery/release-checklist.md` que
 
 ## Verdad operativa actual
 
-- **Fuente de verdad del producto:** `https://github.com/ProfeMarlonMDE/GanaConMerito`.
+- **Fuente de verdad del producto:** `https://github.com/MarlonMedellin/GanaConMerito`.
 - **Copia sincronizada operativa en VPS:** `~/.openclaw/product`.
 - **Arbol de deploy:** `/opt/gcm/app`.
 - **URL publica canonica:** `https://cnsc.profemarlon.com`.
