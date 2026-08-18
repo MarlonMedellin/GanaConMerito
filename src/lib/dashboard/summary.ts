@@ -1,5 +1,4 @@
-import { requireOwnedSession } from "@/lib/supabase/guards";
-import { getSupabaseServerClient } from "@/lib/supabase/server";
+import { requireAuthenticatedProfile, requireOwnedSession } from "@/lib/supabase/guards";
 import {
   buildDashboardSummaryMetrics,
   emptyDashboardSummaryMetrics,
@@ -31,27 +30,15 @@ interface ItemBankRow {
 
 
 async function getCurrentUserTopicStats(): Promise<DashboardTopicBreakdownRow[]> {
-  const supabase = await getSupabaseServerClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const auth = await requireAuthenticatedProfile();
+  if (!auth.ok) return [];
 
-  if (!user) return [];
-
-  const { data: profile } = await supabase
-    .from("profiles")
-    .select("id")
-    .eq("auth_user_id", user.id)
-    .single();
-
-  if (!profile) return [];
-
-  const { data } = await supabase
+  const { data } = await auth.supabase
     .from("user_topic_stats")
     .select(
       "area, competency, attempts, correct_count, avg_reasoning_score, avg_difficulty, estimated_level, percentile_segment, updated_at",
     )
-    .eq("profile_id", profile.id)
+    .eq("profile_id", auth.profile.id)
     .order("estimated_level", { ascending: false });
 
   return (data ?? []) as DashboardTopicBreakdownRow[];

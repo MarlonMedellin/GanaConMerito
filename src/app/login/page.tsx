@@ -1,11 +1,17 @@
 import { redirect } from "next/navigation";
 import { GoogleSignInButton } from "@/components/auth/google-sign-in-button";
+import { isTestAuthBypassEnabled } from "@/lib/auth/test-bypass";
 import { getBuildInfo } from "@/lib/build-info";
 import { getAuthenticatedLandingPath } from "@/lib/onboarding/routing";
 import { getSupabaseServerClient } from "@/lib/supabase/server";
 
 export default async function LoginPage() {
   const { commit, buildTime } = getBuildInfo();
+
+  if (isTestAuthBypassEnabled()) {
+    redirect("/home");
+  }
+
   const supabase = await getSupabaseServerClient();
   const {
     data: { user },

@@ -2,8 +2,8 @@ import { test, expect } from "@playwright/test";
 import path from "node:path";
 import fs from "node:fs";
 
-// Configuramos el test para usar la sesión guardada
-test.use({ storageState: "artifacts/auth-state.json" });
+const AUTH_STATE_PATH = "artifacts/auth-state.json";
+test.use({ storageState: fs.existsSync(AUTH_STATE_PATH) ? AUTH_STATE_PATH : undefined });
 
 test.describe("GanaConMerito - Práctica Autenticada", () => {
   test("debe cargar la interfaz de práctica y permitir iniciar sesión", async ({ page }) => {

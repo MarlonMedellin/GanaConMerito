@@ -2,21 +2,15 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { OnboardingForm } from "@/components/onboarding/onboarding-form";
 import { isLearningProfileOnboardingComplete } from "@/lib/onboarding/status";
-import { requireAuthenticatedUser } from "@/lib/supabase/guards";
+import { requireAuthenticatedProfile } from "@/lib/supabase/guards";
 
 export default async function OnboardingPage() {
-  const { supabase, user } = await requireAuthenticatedUser();
-
-  const { data: profile } = await supabase
-    .from("profiles")
-    .select("id")
-    .eq("auth_user_id", user.id)
-    .single();
-
-  if (!profile) {
+  const auth = await requireAuthenticatedProfile();
+  if (!auth.ok) {
     redirect("/login");
   }
 
+  const { supabase, profile } = auth;
   const { data: learningProfile } = await supabase
     .from("learning_profiles")
     .select(

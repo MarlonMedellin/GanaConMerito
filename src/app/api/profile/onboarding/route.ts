@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { getSupabaseServerClient } from "../../../../lib/supabase/server";
+import { requireAuthenticatedProfile } from "../../../../lib/supabase/guards";
 
 const onboardingSchema = z.object({
   targetRole: z.literal("docente"),
@@ -16,15 +16,12 @@ const onboardingSchema = z.object({
 });
 
 export async function POST(request: Request) {
-  const supabase = await getSupabaseServerClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
-  if (!user) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  const auth = await requireAuthenticatedProfile();
+  if (!auth.ok) {
+    return NextResponse.json({ error: auth.error }, { status: auth.status });
   }
 
+  const { supabase, profile } = auth;
   const json = await request.json();
   const parsed = onboardingSchema.safeParse(json);
 
@@ -33,16 +30,6 @@ export async function POST(request: Request) {
       { error: parsed.error.issues.map((issue) => issue.message).join(" | ") || "Datos de onboarding inválidos." },
       { status: 400 },
     );
-  }
-
-  const { data: profile, error: profileError } = await supabase
-    .from("profiles")
-    .select("id")
-    .eq("auth_user_id", user.id)
-    .single();
-
-  if (profileError || !profile) {
-    return NextResponse.json({ error: "Profile not found" }, { status: 404 });
   }
 
   const { data: professionalProfile, error: professionalProfileError } = await supabase

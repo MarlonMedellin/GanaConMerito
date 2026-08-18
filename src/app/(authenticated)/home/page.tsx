@@ -1,15 +1,15 @@
 import Link from "next/link";
 import { getDashboardSummaryForCurrentUser } from "@/lib/dashboard/summary";
 import { isLearningProfileOnboardingComplete } from "@/lib/onboarding/status";
-import { requireAuthenticatedUser } from "@/lib/supabase/guards";
+import { requireAuthenticatedProfile } from "@/lib/supabase/guards";
 
 export default async function HomePage() {
-  const { supabase, user } = await requireAuthenticatedUser();
-  const { data: profile } = await supabase
-    .from("profiles")
-    .select("id")
-    .eq("auth_user_id", user.id)
-    .single();
+  const auth = await requireAuthenticatedProfile();
+  if (!auth.ok) {
+    return null;
+  }
+
+  const { supabase, user, profile } = auth;
 
   const { data: learningProfile } = profile
     ? await supabase

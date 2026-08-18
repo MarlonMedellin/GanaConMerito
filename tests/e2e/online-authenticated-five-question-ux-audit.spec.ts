@@ -2,7 +2,8 @@ import { test, expect, request, ConsoleMessage } from "@playwright/test";
 import path from "node:path";
 import fs from "node:fs";
 
-test.use({ storageState: "artifacts/auth-state.json" });
+const AUTH_STATE_PATH = "artifacts/auth-state.json";
+test.use({ storageState: fs.existsSync(AUTH_STATE_PATH) ? AUTH_STATE_PATH : undefined });
 
 interface AuditReport {
   baseUrl: string;

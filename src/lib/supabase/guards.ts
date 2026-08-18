@@ -1,7 +1,13 @@
 import { redirect } from "next/navigation";
+import { isTestAuthBypassEnabled, getTestBypassProfileId, getTestBypassUser } from "@/lib/auth/test-bypass";
+import { getSupabaseAdminClient } from "./admin";
 import { getSupabaseServerClient } from "./server";
 
 export async function requireAuthenticatedUser(redirectTo = "/login") {
+  if (isTestAuthBypassEnabled()) {
+    return { supabase: getSupabaseAdminClient(), user: getTestBypassUser() };
+  }
+
   const supabase = await getSupabaseServerClient();
   const {
     data: { user },
@@ -15,6 +21,26 @@ export async function requireAuthenticatedUser(redirectTo = "/login") {
 }
 
 export async function requireAuthenticatedProfile() {
+  if (isTestAuthBypassEnabled()) {
+    const profileId = getTestBypassProfileId();
+    if (!profileId) {
+      return { ok: false as const, error: "Missing GCM_TEST_PROFILE_ID" as const, status: 500 };
+    }
+
+    const supabase = getSupabaseAdminClient();
+    const { data: profile, error: profileError } = await supabase
+      .from("profiles")
+      .select("id, auth_user_id")
+      .eq("id", profileId)
+      .single();
+
+    if (profileError || !profile) {
+      return { ok: false as const, error: "Test bypass profile not found" as const, status: 404 };
+    }
+
+    return { ok: true as const, supabase, user: getTestBypassUser(), profile };
+  }
+
   const supabase = await getSupabaseServerClient();
   const {
     data: { user },

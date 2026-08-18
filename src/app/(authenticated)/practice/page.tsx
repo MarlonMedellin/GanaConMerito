@@ -2,20 +2,15 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { PracticeSession } from "@/components/practice/practice-session";
 import { isLearningProfileOnboardingComplete } from "@/lib/onboarding/status";
-import { requireAuthenticatedUser } from "@/lib/supabase/guards";
+import { requireAuthenticatedProfile } from "@/lib/supabase/guards";
 
 export default async function PracticePage() {
-  const { supabase, user } = await requireAuthenticatedUser();
-  const { data: profile } = await supabase
-    .from("profiles")
-    .select("id")
-    .eq("auth_user_id", user.id)
-    .single();
-
-  if (!profile) {
+  const auth = await requireAuthenticatedProfile();
+  if (!auth.ok) {
     redirect("/onboarding");
   }
 
+  const { supabase, profile } = auth;
   const { data: learningProfile } = await supabase
     .from("learning_profiles")
     .select("onboarding_completed, active_areas")

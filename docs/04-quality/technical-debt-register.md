@@ -61,6 +61,19 @@ Toda deuda debe registrar origen, impacto y owner. No se usa este registro para 
 
 ## Deuda nueva
 
+### DEBT-N-007
+- título: bypass temporal de autenticación para QA beta cerrada
+- descripción: existe un modo controlado por `GCM_TEST_AUTH_BYPASS=1` que permite navegar sin login usando `GCM_TEST_PROFILE_ID` y cliente server con service role. Debe retirarse o reemplazarse por generación oficial de sesión QA antes de beta pública.
+- origen: necesidad de ejecutar recorridos de prueba sin sesión Google manual durante fase beta cerrada
+- tipo: seguridad-qa
+- módulo: auth
+- impacto: alto si se activa fuera de entorno controlado
+- costo estimado: bajo
+- interés de demora: alto
+- owner: ops + qa
+- estado: abierto
+- relación: PRD Beta funcional mínimo, E2E autenticado
+
 ### DEBT-N-004
 - título: cierre beta depende de revalidacion runtime fresca
 - descripción: el repo tiene base tecnica cercana a beta, pero HEAD actual `ca59cec` no cuenta todavia con evidencia documentada de triple verificacion source/deploy/runtime ni QA postdeploy/E2E fresco.
