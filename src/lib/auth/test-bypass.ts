@@ -1,11 +1,18 @@
 import type { User } from "@supabase/supabase-js";
 
 export function isTestAuthBypassEnabled() {
-  return process.env.GCM_TEST_AUTH_BYPASS === "1";
+  if (process.env.NEXT_PHASE === "phase-production-build") return false;
+  return process.env.GCM_TEST_AUTH_BYPASS !== "0";
 }
 
 export function getTestBypassProfileId() {
-  return process.env.GCM_TEST_PROFILE_ID?.trim() || null;
+  const profileId = process.env.GCM_TEST_PROFILE_ID?.trim();
+  if (!profileId || /^0{8}-0{4}-0{4}-0{4}-0{12}$/.test(profileId)) return null;
+  return profileId;
+}
+
+export function getTestBypassEmail() {
+  return process.env.GCM_TEST_EMAIL?.trim() || "qa-bypass@ganaconmerito.test";
 }
 
 export function getTestBypassUser(): User {
@@ -13,7 +20,7 @@ export function getTestBypassUser(): User {
     id: "00000000-0000-4000-8000-000000000001",
     aud: "authenticated",
     role: "authenticated",
-    email: "qa-bypass@ganaconmerito.test",
+    email: getTestBypassEmail(),
     email_confirmed_at: new Date(0).toISOString(),
     phone: "",
     confirmed_at: new Date(0).toISOString(),

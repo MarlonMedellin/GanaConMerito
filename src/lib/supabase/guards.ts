@@ -1,11 +1,99 @@
 import { redirect } from "next/navigation";
-import { isTestAuthBypassEnabled, getTestBypassProfileId, getTestBypassUser } from "@/lib/auth/test-bypass";
+import { isTestAuthBypassEnabled, getTestBypassEmail, getTestBypassProfileId, getTestBypassUser } from "@/lib/auth/test-bypass";
 import { getSupabaseAdminClient } from "./admin";
 import { getSupabaseServerClient } from "./server";
 
+async function resolveTestBypassAuth() {
+  const supabase = getSupabaseAdminClient();
+  const configuredProfileId = getTestBypassProfileId();
+
+  if (configuredProfileId) {
+    const { data: profile, error: profileError } = await supabase
+      .from("profiles")
+      .select("id, auth_user_id")
+      .eq("id", configuredProfileId)
+      .single();
+
+    if (profileError || !profile) {
+      return { ok: false as const, error: "Test bypass profile not found" as const, status: 404 };
+    }
+
+    return { ok: true as const, supabase, user: getTestBypassUser(), profile };
+  }
+
+  const email = getTestBypassEmail();
+  const users = await supabase.auth.admin.listUsers({ page: 1, perPage: 1000 });
+  if (users.error) {
+    return { ok: false as const, error: "Could not list QA users" as const, status: 500 };
+  }
+
+  let user = users.data.users.find((candidate) => candidate.email === email);
+  if (!user) {
+    const created = await supabase.auth.admin.createUser({
+      email,
+      email_confirm: true,
+      user_metadata: { full_name: "QA Bypass", qa_namespace: "gcm-test-bypass" },
+    });
+    if (created.error || !created.data.user) {
+      return { ok: false as const, error: "Could not create QA bypass user" as const, status: 500 };
+    }
+    user = created.data.user;
+  }
+
+  const profileResult = await supabase
+    .from("profiles")
+    .upsert(
+      {
+        auth_user_id: user.id,
+        full_name: user.user_metadata?.full_name ?? "QA Bypass",
+        email,
+        avatar_url: null,
+      },
+      { onConflict: "auth_user_id" },
+    )
+    .select("id, auth_user_id")
+    .single();
+
+  if (profileResult.error || !profileResult.data) {
+    return { ok: false as const, error: "Could not upsert QA bypass profile" as const, status: 500 };
+  }
+
+  const { data: professionalProfile } = await supabase
+    .from("professional_profiles")
+    .select("id")
+    .eq("is_active", true)
+    .order("name", { ascending: true })
+    .limit(1)
+    .maybeSingle();
+
+  const learningPayload = {
+    profile_id: profileResult.data.id,
+    target_role: "docente",
+    exam_type: "docente",
+    country_context: "colombia",
+    preferred_feedback_style: "socratic",
+    active_goal: "QA beta sin login",
+    active_areas: ["matematicas", "pedagogia", "normatividad"],
+    onboarding_completed: true,
+    professional_profile_id: professionalProfile?.id ?? null,
+  };
+
+  const learningResult = await supabase
+    .from("learning_profiles")
+    .upsert(learningPayload, { onConflict: "profile_id" });
+
+  if (learningResult.error) {
+    return { ok: false as const, error: "Could not upsert QA bypass learning profile" as const, status: 500 };
+  }
+
+  return { ok: true as const, supabase, user, profile: profileResult.data };
+}
+
 export async function requireAuthenticatedUser(redirectTo = "/login") {
   if (isTestAuthBypassEnabled()) {
-    return { supabase: getSupabaseAdminClient(), user: getTestBypassUser() };
+    const auth = await resolveTestBypassAuth();
+    if (auth.ok) return { supabase: auth.supabase, user: auth.user };
+    redirect(redirectTo);
   }
 
   const supabase = await getSupabaseServerClient();
@@ -22,23 +110,7 @@ export async function requireAuthenticatedUser(redirectTo = "/login") {
 
 export async function requireAuthenticatedProfile() {
   if (isTestAuthBypassEnabled()) {
-    const profileId = getTestBypassProfileId();
-    if (!profileId) {
-      return { ok: false as const, error: "Missing GCM_TEST_PROFILE_ID" as const, status: 500 };
-    }
-
-    const supabase = getSupabaseAdminClient();
-    const { data: profile, error: profileError } = await supabase
-      .from("profiles")
-      .select("id, auth_user_id")
-      .eq("id", profileId)
-      .single();
-
-    if (profileError || !profile) {
-      return { ok: false as const, error: "Test bypass profile not found" as const, status: 404 };
-    }
-
-    return { ok: true as const, supabase, user: getTestBypassUser(), profile };
+    return resolveTestBypassAuth();
   }
 
   const supabase = await getSupabaseServerClient();
