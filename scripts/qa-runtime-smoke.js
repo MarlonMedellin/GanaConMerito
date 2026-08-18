@@ -28,6 +28,20 @@ async function http(pathname) {
   };
 }
 
+async function firstOk(paths) {
+  const responses = [];
+
+  for (const pathname of paths) {
+    const response = await http(pathname);
+    responses.push({ pathname, response });
+    if (response.ok && response.text.includes('GanaConMerito')) {
+      return { pathname, response, responses };
+    }
+  }
+
+  return { pathname: paths[0], response: responses[0]?.response, responses };
+}
+
 function ensure(condition, message) {
   if (!condition) {
     throw new Error(message);
@@ -35,8 +49,12 @@ function ensure(condition, message) {
 }
 
 function extractBuildMetadata(html) {
-  const commitMatch = html.match(/Commit desplegado:\s*<code>([^<]+)<\/code>/i);
-  const buildTimeMatch = html.match(/Build time:\s*<code>([^<]+)<\/code>/i);
+  const commitMatch =
+    html.match(/Commit desplegado:\s*<code>([^<]+)<\/code>/i) ||
+    html.match(/Build<\/strong>:\s*<code>([^<]+)<\/code>/i);
+  const buildTimeMatch =
+    html.match(/Build time:\s*<code>([^<]+)<\/code>/i) ||
+    html.match(/Built at<\/strong>:\s*<code>([^<]+)<\/code>/i);
 
   return {
     commit: commitMatch?.[1]?.trim() || null,
@@ -45,13 +63,14 @@ function extractBuildMetadata(html) {
 }
 
 (async function main() {
-  const login = await http('/login');
-  ensure(login.ok, `GET /login falló con status ${login.status}.`);
-  ensure(login.text.includes('GanaConMerito'), 'El runtime no devolvió la marca esperada en /login.');
+  const runtimePage = await firstOk(['/login', '/home']);
+  const login = runtimePage.response;
+  ensure(login?.ok, `GET /login o /home falló. Status inicial: ${login?.status ?? 'sin respuesta'}.`);
+  ensure(login.text.includes('GanaConMerito'), `El runtime no devolvió la marca esperada en ${runtimePage.pathname}.`);
 
   const metadata = extractBuildMetadata(login.text);
-  ensure(metadata.commit, 'No se encontró commit visible en /login.');
-  ensure(metadata.buildTime, 'No se encontró buildTime visible en /login.');
+  ensure(metadata.commit, `No se encontró commit visible en ${runtimePage.pathname}.`);
+  ensure(metadata.buildTime, `No se encontró buildTime visible en ${runtimePage.pathname}.`);
 
   if (requireRuntimeMetadata) {
     ensure(metadata.commit !== 'unknown', 'El commit visible quedó en "unknown".');
@@ -68,6 +87,7 @@ function extractBuildMetadata(html) {
     baseUrl,
     checks: {
       login: {
+        pathname: runtimePage.pathname,
         status: login.status,
         commit: metadata.commit,
         buildTime: metadata.buildTime,

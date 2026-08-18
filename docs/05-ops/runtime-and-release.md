@@ -93,7 +93,7 @@ Para Beta Candidate 0.6.0, la evidencia historica en `fcc40cb`, `716ec62` u otro
 |---|---|
 | Source | `~/.openclaw/product` en el commit objetivo |
 | Deploy tree | `/opt/gcm/app` en el mismo commit objetivo |
-| Runtime visible | `/login` muestra el mismo commit y `buildTime` reciente |
+| Runtime visible | `/login` o `/home` muestra el mismo commit y `buildTime` reciente; en fase de pruebas con bypass QA, `/login` puede entregar la app ya autenticada o resolver hacia `/home` |
 | Build | `npm run build` PASS |
 | Tests | suite relevante PASS; fallos por entorno documentados aparte |
 | Contenido | `npm run content:validate` PASS |

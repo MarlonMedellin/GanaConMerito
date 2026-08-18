@@ -17,7 +17,7 @@ Validar la integridad operativa y semántica del sistema tras la integración de
 - `npm run content:validate:all`: Validación semántica del banco de preguntas completo.
 
 ## Pruebas Post-deploy (Runtime Interno)
-- `qa:runtime:smoke`: Verificación de salud básica y metadata.
+- `qa:runtime:smoke`: Verificación de salud básica y metadata. Durante la fase de pruebas con bypass QA, acepta metadata visible en `/login` o `/home`.
 - `qa:smoke:postdeploy`: Validación de flujo crítico post-despliegue.
 - `qa:e2e:api`: Pruebas funcionales de la API.
 
