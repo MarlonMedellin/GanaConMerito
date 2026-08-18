@@ -1,19 +1,47 @@
 {
   "id_item": "DIL_B07_I02",
-  "decision": "OMITIDO_POR_AUDITORIA_PREVIA",
-  "ruta_origen": "content/items/stand-by/Mecanismos de participación ciudadana: plebiscito, consulta y límites/DIL_B07_I02.json",
-  "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/funcional/DIL_B07_I02.json",
+  "estado": "LISTO_PARA_PILOTAJE",
   "area": "competencias_ciudadanas",
-  "perfil": "por_confirmar",
-  "tipo": "funcional",
-  "motivo": "Ítem ya auditado en L022 con decisión LISTO_PARA_PILOTAJE; no se reprocesa.",
-  "lote": "L053",
-  "auditoria_previa": "L022",
+  "tema": "Mecanismos de participación ciudadana: plebiscito, consulta y límites",
+  "subtema": "Límites de la democracia directa frente a derechos de la infancia",
+  "competencia": "Analiza límites constitucionales de decisiones mayoritarias cuando afectan derechos fundamentales de niños, niñas y adolescentes.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce que la participación democrática tiene límites sustanciales cuando compromete derechos prevalentes de la infancia.",
+  "evidencia": "Selecciona la explicación que articula competencia del mecanismo y prevalencia de derechos fundamentales, descartando lecturas absolutas de mayoría o restricciones inventadas.",
+  "tarea": "Valorar la viabilidad constitucional de usar un mecanismo participativo para restringir movilidad nocturna de menores.",
+  "contexto": "Un alcalde quiere someter a votación una medida de restricción nocturna que afectaría directamente derechos de menores de edad.",
+  "enunciado": "¿Por qué la propuesta no es viable en el diseño constitucional colombiano?",
+  "opciones": {
+    "A": "Porque el mecanismo descrito es de resorte nacional y porque la democracia directa no puede usarse para someter a votación restricciones de derechos fundamentales de menores.",
+    "B": "Porque los alcaldes no tienen ninguna competencia en orden público ni movilidad dentro de su municipio.",
+    "C": "Porque los mecanismos locales solo pueden decidir asuntos tributarios o ambientales.",
+    "D": "Porque toda medida de este tipo requiere un referendo aprobatorio del Congreso."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opción correcta reconoce que no toda decisión mayoritaria es válida cuando se pretende afectar derechos fundamentales de la infancia y, además, diferencia la competencia del mecanismo invocado.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Niega competencias locales reales en materia de orden público.",
+    "C": "Reduce indebidamente el alcance de los mecanismos locales.",
+    "D": "Inventa un requisito normativo inexistente."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Es neutral en lo político, pero su vínculo con la práctica docente sigue siendo indirecto."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "La carga lectora es razonable, aunque el ítem requiere mejor anclaje profesional para pasar a banco."
+  },
   "metadata_editorial": {
-    "lote": "L053",
+    "lote": "L022",
+    "ruta_origen": "content/items/stand-by/Mecanismos de participación ciudadana: plebiscito, consulta y límites/DIL_B07_I02.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/funcional/DIL_B07_I02.json",
     "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
-    "decision": "OMITIDO_POR_AUDITORIA_PREVIA",
-    "requiere_revision_humana": false
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": true
   },
   "estado_beta": "PILOTAJE_V1",
   "area_canonica_beta": "competencias_ciudadanas",
@@ -21,7 +49,7 @@
   "tipo_item_beta": "funcional",
   "trazabilidad_beta": {
     "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
-    "orden_piloto": 64,
+    "orden_piloto": 66,
     "fuentes": "auditoria/L022 | auditoria/L053",
     "ruta_origen": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/funcional/DIL_B07_I02.json"
   }

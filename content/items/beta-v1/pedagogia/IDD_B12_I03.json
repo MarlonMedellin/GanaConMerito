@@ -1,10 +1,48 @@
 {
-  "lote": "L043",
   "id_item": "IDD_B12_I03",
-  "ruta_origen": "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I03.json",
-  "decision": "OMITIDO_POR_AUDITORIA_PREVIA",
-  "referencia_auditoria_previa": "content/restructuring-v1/trazabilidad/lotes/L012/decisiones.csv",
-  "decision_previa": "LISTO_PARA_BANCO",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "pedagogia",
+  "tema": "Didactica de areas, resolucion de problemas y material concreto",
+  "subtema": "Transferencia contextualizada del conocimiento cientifico",
+  "competencia": "Ajusta la ensenanza de conceptos cientificos para conectarlos con problemas reales del entorno del estudiantado.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce el ajuste didactico mas coherente con aprendizaje significativo y ensenanza por competencias en ciencias.",
+  "evidencia": "Selecciona una alternativa que vincula concepto abstracto, indagacion aplicada y toma de decisiones en contexto real.",
+  "tarea": "Elegir el ajuste didactico mas pertinente para contextualizar el concepto de pH en un entorno agricola.",
+  "contexto": "En secundaria, un docente presenta el concepto de pH solo con formulas y definiciones. El grupo pregunta como ese conocimiento se aplica en su comunidad agricola.",
+  "enunciado": "Para realizar un ajuste didactico coherente con ensenanza por competencias y aprendizaje significativo, el docente debe:",
+  "opciones": {
+    "A": "Plantear una actividad de indagacion donde el grupo recoja muestras de suelo, use indicadores de pH y relacione la acidez con decisiones sobre cultivos locales.",
+    "B": "Disenar primero un cuestionario teorico obligatorio sobre acidez y basicidad antes de abrir cualquier aplicacion practica.",
+    "C": "Organizar una exposicion escolar donde se repita la definicion de pH apoyada en carteleras ilustrativas.",
+    "D": "Sustituir el analisis del contexto por un protocolo fijo de laboratorio para evitar errores de medicion en clase."
+  },
+  "clave": "A",
+  "justificacion_clave": "La respuesta correcta es A porque convierte un concepto abstracto en investigacion contextualizada, con uso autentico del saber para interpretar y decidir sobre una situacion del entorno.",
+  "distractores_funcion": {
+    "A": "Clave correcta: integra concepto, contexto, indagacion y transferencia.",
+    "B": "Refuerza la secuencia teorica tradicional y posterga innecesariamente la aplicacion significativa.",
+    "C": "Reduce el aprendizaje a repeticion expositiva con apariencia motivacional.",
+    "D": "Mantiene una practica tecnica cerrada sin lectura del entorno ni toma de decisiones."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El contexto agricola aporta funcion didactica real y no introduce barreras irrelevantes."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Vocabulario disciplinar manejable y estructura limpia."
+  },
+  "metadata_editorial": {
+    "lote": "L069",
+    "ruta_origen": "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I03.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B12_I03.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": true
+  },
   "estado_beta": "PILOTAJE_V1",
   "area_canonica_beta": "pedagogia",
   "perfil_sugerido_beta": "por_confirmar",

@@ -1,0 +1,56 @@
+{
+  "id_item": "DIL_B04_I03",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "normatividad",
+  "tema": "Responsabilidad legal escolar",
+  "subtema": "Limites de la investigacion escolar",
+  "competencia": "Activar rutas externas de proteccion sin sustituir funciones judiciales o investigativas ante situaciones tipo III.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce que la escuela no debe investigar penalmente ni someter a careos o interrogatorios exhaustivos a estudiantes cuando hay presuncion de delito.",
+  "evidencia": "Escoge la respuesta que protege al estudiante, evita revictimizacion y activa la ruta externa competente.",
+  "tarea": "Diferenciar la atencion escolar inicial de la investigacion penal o administrativa ante una situacion tipo III.",
+  "contexto": "En la institucion surge la presuncion de un delito sexual o de comercializacion de sustancias que podria involucrar a estudiantes. Algunos adultos proponen entrevistar a profundidad a los menores y reconstruir internamente los hechos antes de reportar.",
+  "enunciado": "?Por que la institucion debe abstenerse de realizar esa investigacion interna antes de reportar?",
+  "opciones": {
+    "A": "Porque carece de facultades judiciales y debe priorizar proteccion inmediata, reserva y reporte oportuno para evitar revictimizacion y alteracion de pruebas.",
+    "B": "Porque el manual de convivencia tiene prevalencia sobre la legislacion penal y toda situacion debe agotarse primero dentro del colegio.",
+    "C": "Porque solo el rector puede realizar careos institucionales antes de remitir cualquier situacion a otras autoridades.",
+    "D": "Porque la ruta externa solo procede si la familia autoriza formalmente el reporte ante las autoridades."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opcion correcta diferencia con nitidez la funcion protectora de la escuela frente a la investigacion judicial y evita practicas que podrian revictimizar o retrasar la respuesta estatal.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Invierte la jerarquia normativa y legitima una demora improcedente.",
+    "C": "Propone una facultad institucional inexistente y riesgosa para el estudiante.",
+    "D": "Condiciona indebidamente un deber de reporte que no depende de autorizacion familiar."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El caso se formula desde proteccion de derechos y no desde estigmatizacion del estudiante."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "La escena es comprensible aunque conviene pilotear su discriminacion."
+  },
+  "metadata_editorial": {
+    "lote": "L027",
+    "ruta_origen": "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I03.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/orientador/funcional/DIL_B04_I03.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": true
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "normatividad",
+  "perfil_sugerido_beta": "orientador",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 46,
+    "fuentes": "auditoria/L027 | auditoria/L068 | auditoria/L078 | auditoria/L081",
+    "ruta_origen": "content/restructuring-v1/docente/normatividad/orientador/funcional/DIL_B04_I03.json"
+  }
+}

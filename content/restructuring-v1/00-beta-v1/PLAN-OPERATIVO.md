@@ -4,10 +4,6 @@
 
 Cerrar una cohorte de 100 preguntas reales para pilotaje beta y dejar el resto del banco como deuda tecnica trazable, sin borrar originales ni mezclar material inmaduro con runtime.
 
-## Estado
-
-Plan aplicado. La cohorte beta esta materializada en `content/items/beta-v1/` y la deuda queda separada en `remanufactura/`.
-
 ## Estructura final de trabajo
 
 1. `indice-maestro-beta.csv`: unica fuente de verdad para decidir estado de cada ID.
@@ -30,7 +26,3 @@ Plan aplicado. La cohorte beta esta materializada en `content/items/beta-v1/` y 
 ## Regla ejecutiva
 
 Para beta no se intenta balance perfecto por perfil. Se cierra primero una cohorte real, trazable y usable. El balance fino por perfil queda como ajuste de pilotaje a partir de resultados y cobertura.
-
-## Proxima accion recomendada
-
-La siguiente accion no es mover carpetas: es revisar calidad pedagogica de la cohorte y reducir `perfil_sugerido=por_confirmar` donde exista evidencia suficiente.

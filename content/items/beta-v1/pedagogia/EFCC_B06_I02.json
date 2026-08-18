@@ -1,17 +1,55 @@
 {
-  "lote": "L054",
   "id_item": "EFCC_B06_I02",
-  "ruta_origen": "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EFCC_B06_I02.json",
-  "decision": "OMITIDO_POR_AUDITORIA_PREVIA",
-  "referencia_auditoria_previa": "content/restructuring-v1/trazabilidad/lotes/L015/decisiones.csv",
-  "decision_previa": "LISTO_PARA_BANCO",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "Evaluación cualitativa, formativa y participativa",
+  "subtema": "Informes cualitativos en preescolar",
+  "competencia": "Diseñar informes de evaluación coherentes con el desarrollo integral y el enfoque cualitativo de la educación inicial.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce que un informe de preescolar debe describir procesos, ritmos y apoyos, no ordenar a los niños por promedios o puestos.",
+  "evidencia": "Escoge el formato de informe descriptivo integral frente a alternativas numéricas, conductistas u omisivas.",
+  "tarea": "Decidir cómo debe estructurarse el boletín informativo de preescolar ante una propuesta de ranking y promedio numérico.",
+  "contexto": "Un colegio privado quiere reformar el boletín de preescolar e incluir promedio general y posiciones del salón para preparar a los niños para las exigencias de primaria.",
+  "enunciado": "¿Qué debe defender la docente de apoyo desde el marco pedagógico y normativo del nivel?",
+  "opciones": {
+    "A": "Informes descriptivos y cualitativos que comuniquen de forma integral el desarrollo, los ritmos de aprendizaje y los apoyos requeridos.",
+    "B": "Boletines en letras equivalentes a notas, evitando comentarios cualitativos para no sobrecargar a las familias.",
+    "C": "Informes centrados casi exclusivamente en conducta y adaptación social, dejando los logros de aprendizaje a reportes informales.",
+    "D": "Eliminar el informe escrito y limitar la comunicación a reuniones verbales en casos de alerta."
+  },
+  "clave": "A",
+  "justificacion_clave": "La evaluación cualitativa no elimina criterios ni informes: exige descripciones integrales útiles para familia y escuela, evitando jerarquías numéricas impropias del nivel.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Encubre una lógica cuantitativa y jerárquica bajo otro código.",
+    "C": "Reduce el desarrollo integral a conducta y fragmenta la comunicación pedagógica.",
+    "D": "Confunde no comparar con dejar de documentar el proceso."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Dilema frecuente y generalizable a distintos tipos de institución."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "La situación está bien acotada y la clave depende de una decisión institucional clara."
+  },
+  "metadata_editorial": {
+    "lote": "L015",
+    "ruta_origen": "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EFCC_B06_I02.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EFCC_B06_I02.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": true
+  },
   "estado_beta": "PILOTAJE_V1",
   "area_canonica_beta": "pedagogia",
   "perfil_sugerido_beta": "preescolar",
   "tipo_item_beta": "funcional",
   "trazabilidad_beta": {
     "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
-    "orden_piloto": 34,
+    "orden_piloto": 32,
     "fuentes": "auditoria/L015 | auditoria/L054 | auditoria/L074",
     "ruta_origen": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EFCC_B06_I02.json"
   }

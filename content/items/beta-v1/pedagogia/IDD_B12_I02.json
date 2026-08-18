@@ -1,10 +1,48 @@
 {
-  "lote": "L043",
   "id_item": "IDD_B12_I02",
-  "ruta_origen": "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I02.json",
-  "decision": "OMITIDO_POR_AUDITORIA_PREVIA",
-  "referencia_auditoria_previa": "content/restructuring-v1/trazabilidad/lotes/L012/decisiones.csv",
-  "decision_previa": "LISTO_PARA_BANCO",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "pedagogia",
+  "tema": "Didactica de areas, resolucion de problemas y material concreto",
+  "subtema": "Evaluacion formativa con material concreto",
+  "competencia": "Implementa intervenciones mediadas por material concreto para superar barreras conceptuales detectadas en el diagnostico de aula.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce una intervencion de evaluacion formativa donde el material concreto se articula con mediacion docente y construccion conceptual.",
+  "evidencia": "Selecciona una alternativa en la que el error recurrente del grupo se aborda con representacion, contraste y preguntas guiadas.",
+  "tarea": "Elegir la intervencion mas adecuada para atender una confusion entre adicion y multiplicacion en primaria.",
+  "contexto": "En un grupo de basica primaria, el docente observa que mas de la mitad del estudiantado confunde adicion y multiplicacion en problemas sencillos y comete errores sistematicos.",
+  "enunciado": "Con el fin de implementar evaluacion formativa mediada por material concreto para superar esta dificultad, el docente debe:",
+  "opciones": {
+    "A": "Disenar una sesion donde el grupo represente sumas repetidas de grupos iguales y las contraste con sumas simples, guiando la formulacion de la relacion conceptual entre adicion y multiplicacion.",
+    "B": "Entregar material para juego libre, confiando en que la familiarizacion espontanea resuelva por si sola las dudas procedimentales.",
+    "C": "Asignar una nueva guia de ejercicios y exigir memorizar primero las tablas antes de volver al material concreto.",
+    "D": "Usar el material frente al tablero para demostrar la diferencia entre ambas operaciones y luego pedir copia de conclusiones."
+  },
+  "clave": "A",
+  "justificacion_clave": "La respuesta correcta es A porque vincula diagnostico, manipulacion, contraste conceptual y mediacion intencional. No basta con usar recursos; se necesita orientarlos hacia la comprension del error y la construccion de relaciones matematicas.",
+  "distractores_funcion": {
+    "A": "Clave correcta: articula material, preguntas y reconstruccion conceptual a partir del error.",
+    "B": "Supone que el material enseña por si solo sin mediacion docente.",
+    "C": "Vuelve al enfoque memoristico y desplaza el trabajo conceptual.",
+    "D": "Conserva el rol transmisivo del docente y reduce al estudiante a copia y recepcion."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Contexto general de primaria, sin barreras culturales irrelevantes."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Pregunta unica y secuencia facil de seguir."
+  },
+  "metadata_editorial": {
+    "lote": "L069",
+    "ruta_origen": "content/items/stand-by/Didáctica de áreas, resolución de problemas y material concreto/IDD_B12_I02.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/IDD_B12_I02.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": true
+  },
   "estado_beta": "PILOTAJE_V1",
   "area_canonica_beta": "pedagogia",
   "perfil_sugerido_beta": "por_confirmar",

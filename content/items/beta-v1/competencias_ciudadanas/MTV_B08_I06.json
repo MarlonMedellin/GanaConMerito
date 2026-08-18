@@ -1,0 +1,56 @@
+{
+  "id_item": "MTV_B08_I06",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "competencias_ciudadanas",
+  "tema": "Relaciones interpersonales y comunicacion",
+  "subtema": "Comunicacion efectiva con familias",
+  "competencia": "Gestiona interacciones dificiles con familias mediante escucha activa, respeto y canalizacion institucional pertinente.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El docente responde a una queja agresiva sin escalar el conflicto y protege la relacion escuela-familia.",
+  "evidencia": "Selecciona una actuacion que escucha, explica criterios y abre una ruta individual de seguimiento.",
+  "tarea": "Elegir la respuesta institucional y relacional mas adecuada ante un reclamo agresivo de un acudiente.",
+  "contexto": "Durante una entrega de informes, un padre cuestiona en voz alta los criterios de evaluacion del docente y lo acusa de parcialidad frente a otros padres de familia.",
+  "enunciado": "Ante este reclamo, la actuacion del docente que mejor evidencia una respuesta ciudadana y profesional es:",
+  "opciones": {
+    "A": "Escuchar la queja con calma, explicar de manera breve los criterios aplicados y acordar un espacio individual para revisar el proceso del estudiante.",
+    "B": "Pedir al padre que abandone de inmediato el lugar y remitirlo sin mayor dialogo a coordinacion.",
+    "C": "Indicar que la autonomia docente le impide dar explicaciones en ese momento y exigir un reclamo solo por escrito.",
+    "D": "Responder con el mismo tono para defender su autoridad frente al grupo."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opcion A contiene escucha, autorregulacion, explicacion suficiente y una salida institucional proporcional. Es la unica que atiende la inquietud sin escalar el conflicto ni evadirlo.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Representa control del escenario sin escucha ni tratamiento pedagogico del conflicto.",
+    "C": "Modela una respuesta burocratica y defensiva que corta el dialogo.",
+    "D": "Modela perdida de autocontrol y escalamiento innecesario."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Contexto generalizable y sin marcas irrelevantes de grupo social."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Una sola tarea, opciones directas y vocabulario funcional."
+  },
+  "metadata_editorial": {
+    "lote": "L018",
+    "ruta_origen": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I06.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/MTV_B08_I06.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": true
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "competencias_ciudadanas",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 57,
+    "fuentes": "auditoria/L018 | auditoria/L065 | auditoria/L072",
+    "ruta_origen": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/MTV_B08_I06.json"
+  }
+}

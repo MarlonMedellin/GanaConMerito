@@ -1,0 +1,56 @@
+{
+  "id_item": "MTV_B08_I08",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "gestion",
+  "tema": "Trabajo en equipo",
+  "subtema": "Concertacion docente",
+  "competencia": "Participa de forma colaborativa en la construccion de acuerdos institucionales sin reducir el disenso a obediencia o delegacion.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El docente diferencia una concertacion productiva de la simple imposicion, neutralidad o delegacion de la decision.",
+  "evidencia": "Selecciona una accion que busca puntos de encuentro y estructura una propuesta viable para el equipo.",
+  "tarea": "Identificar la actuacion mas adecuada en una reunion con visiones opuestas sobre convivencia escolar.",
+  "contexto": "En una reunion para disenar una estrategia de convivencia escolar, un grupo de docentes defiende medidas severas y otro insiste en un enfoque exclusivamente dialogico y restaurativo.",
+  "enunciado": "Para contribuir de manera efectiva al trabajo en equipo y a una salida institucional viable, un docente participante debe:",
+  "opciones": {
+    "A": "Proponer un analisis comparado de ambas posturas para construir una estrategia que combine reparacion de vinculos y limites normativos claros.",
+    "B": "Mantenerse neutral y adherirse a la mayoria para no frenar la aprobacion del documento.",
+    "C": "Defender su propia postura como la unica valida por experiencia personal previa.",
+    "D": "Pedir que coordinacion decida sola para evitar el desacuerdo entre colegas."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opcion A es la unica que convierte el desacuerdo en trabajo tecnico conjunto y no en obediencia, confrontacion individual o renuncia al trabajo colaborativo.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Modela pasividad y conformismo, no concertacion genuina.",
+    "C": "Modela individualismo y cierre al acuerdo.",
+    "D": "Modela delegacion impropia del trabajo colegiado."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Escenario comun en institucion educativa y sin barreras de representacion."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Relacion clara entre contexto, tarea y opciones."
+  },
+  "metadata_editorial": {
+    "lote": "L018",
+    "ruta_origen": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I08.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/por_confirmar/comportamental/MTV_B08_I08.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": true
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "gestion",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 72,
+    "fuentes": "auditoria/L018 | auditoria/L065 | auditoria/L072",
+    "ruta_origen": "content/restructuring-v1/docente/gestion/por_confirmar/comportamental/MTV_B08_I08.json"
+  }
+}

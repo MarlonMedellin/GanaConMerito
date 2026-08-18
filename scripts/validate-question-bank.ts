@@ -1,12 +1,13 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { parseMarkdownItem } from "../src/domain/content/parse-md";
+import { parseBetaJsonItem } from "../src/domain/content/parse-beta-json";
 import { CURRENT_QUESTION_BANK_FILES } from "./question-bank-current-corpus";
 import { normalizeLegacyItemToRichItem } from "../src/domain/taxonomy/normalize-item";
 import { validateRichItemEditorial } from "../src/domain/taxonomy/validators";
 
 async function listAllItemFiles(itemsDir: string) {
-  const corpusDir = path.join(itemsDir, "no-beta-v1", "banco-operacional-previo");
+  const corpusDir = path.join(itemsDir, "beta-v1");
   const areaDirs = await fs.readdir(corpusDir, { withFileTypes: true });
   const files: string[] = [];
 
@@ -19,7 +20,7 @@ async function listAllItemFiles(itemsDir: string) {
     const subfiles = await fs.readdir(subdir, { withFileTypes: true });
 
     for (const subfile of subfiles) {
-      if (subfile.isFile() && subfile.name.endsWith(".md")) {
+      if (subfile.isFile() && subfile.name.endsWith(".json")) {
         files.push(path.join(subdir, subfile.name));
       }
     }
@@ -48,8 +49,8 @@ async function main() {
   const coverageTagCategory = new Map<string, number>();
 
   for (const filePath of selectedFiles) {
-    const rawMarkdown = await fs.readFile(filePath, "utf8");
-    const result = parseMarkdownItem(rawMarkdown);
+    const rawContent = await fs.readFile(filePath, "utf8");
+    const result = path.extname(filePath) === ".json" ? parseBetaJsonItem(rawContent) : parseMarkdownItem(rawContent);
     const relativePath = path.relative(repoRoot, filePath);
 
     if (result.warnings.length > 0) {

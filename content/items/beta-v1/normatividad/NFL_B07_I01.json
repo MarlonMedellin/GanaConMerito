@@ -1,0 +1,56 @@
+{
+  "id_item": "NFL_B07_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "normatividad",
+  "tema": "Derecho a la educación",
+  "subtema": "Acceso, permanencia e inclusión",
+  "competencia": "Interpretar el alcance del derecho a la educación para decisiones institucionales.",
+  "nivel_cognitivo": "ANALISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Distingue entre cobertura administrativa y garantía integral del derecho a la educación.",
+  "evidencia": "Selecciona la postura que integra acceso, permanencia, calidad, inclusión y corresponsabilidad.",
+  "tarea": "Elegir la postura institucional mejor alineada con el derecho fundamental a la educación.",
+  "contexto": "En un comité escolar se discute si basta con asegurar la matrícula para afirmar que el derecho a la educación está garantizado.",
+  "enunciado": "¿Qué postura está mejor alineada con ese derecho?",
+  "opciones": {
+    "A": "Garantizar matrícula es suficiente; la permanencia depende solo del estudiante.",
+    "B": "Se trata de una prestación condicionada por presupuesto y capacidad de autogestión de cada colegio.",
+    "C": "Garantizar educación exige acceso, permanencia, inclusión, calidad y corresponsabilidad entre Estado, familia, sociedad e institución.",
+    "D": "Es un principio ético orientador, pero no genera obligaciones exigibles para la institución."
+  },
+  "clave": "C",
+  "justificacion_clave": "El derecho a la educación no se agota en el cupo escolar: compromete condiciones efectivas de permanencia, inclusión y calidad.",
+  "distractores_funcion": {
+    "A": "Reduce el derecho al acceso inicial y traslada la responsabilidad de permanencia al estudiante.",
+    "B": "Condiciona indebidamente un derecho fundamental a variables administrativas.",
+    "C": "Clave correcta.",
+    "D": "Desconoce la fuerza jurídica del derecho en las actuaciones institucionales."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El contexto es general y no incorpora barreras culturales irrelevantes."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "La tarea es única y el vocabulario es institucionalmente frecuente."
+  },
+  "metadata_editorial": {
+    "lote": "L001",
+    "ruta_origen": "content/items/stand-by/Educación como derecho fundamental, bien común y derecho pluridimensional/NFL_B07_I01.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/NFL_B07_I01.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": true
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "normatividad",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 54,
+    "fuentes": "auditoria/L001 | auditoria/L075",
+    "ruta_origen": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/NFL_B07_I01.json"
+  }
+}

@@ -1,16 +1,55 @@
 {
   "id_item": "EFCC_B05_I01",
-  "decision": "OMITIDO_POR_AUDITORIA_PREVIA",
-  "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico integral/EFCC_B05_I01.json",
-  "motivo": "Ya auditado en L011; se conserva la trazabilidad previa y no se reprocesa en este lote.",
-  "lote": "L036",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "Diagnóstico pedagógico integral",
+  "subtema": "Planeación desde múltiples dimensiones",
+  "competencia": "Integrar información diagnóstica académica y contextual para planificar apoyos y ajustes pedagógicos.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce que una prueba escrita inicial es útil pero insuficiente cuando el docente necesita planear mediaciones y apoyos pertinentes.",
+  "evidencia": "Escoge la alternativa que articula saberes conceptuales con dimensiones cognitivas, socioemocionales y contextuales del grupo.",
+  "tarea": "Valorar por qué un diagnóstico integral no debe reducirse a una única prueba de contenidos.",
+  "contexto": "Al iniciar el año, un docente aplica una prueba escrita y concluye que ya conoce suficientemente a su grupo, aunque luego observa diferencias en habilidades comunicativas, ritmos, motivación, participación y condiciones familiares.",
+  "enunciado": "¿Por qué ese proceso inicial no debe limitarse a una prueba escrita de contenidos académicos?",
+  "opciones": {
+    "A": "Porque el diagnóstico debe centrarse solo en las condiciones socioeconómicas de las familias y prescindir de la dimensión académica.",
+    "B": "Porque las pruebas escritas carecen por completo de valor y deben reemplazarse siempre por observación libre.",
+    "C": "Porque el diagnóstico integral necesita valorar saberes previos en articulación con dimensiones cognitivas, socioemocionales, ritmos de aprendizaje y contexto para diseñar planeación y apoyos.",
+    "D": "Porque el diagnóstico existe únicamente para clasificar al grupo en subniveles homogéneos de desempeño."
+  },
+  "clave": "C",
+  "justificacion_clave": "El diagnóstico integral combina información académica y contextual para orientar decisiones de planeación, apoyos y mediación pedagógica pertinentes.",
+  "distractores_funcion": {
+    "A": "Reemplaza un reduccionismo por otro y elimina la dimensión académica.",
+    "B": "Invalida indebidamente un instrumento que sí puede aportar información útil.",
+    "C": "Clave correcta.",
+    "D": "Convierte el diagnóstico en mecanismo de etiquetado y segregación."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "No depende de información cultural o regional irrelevante y evita estigmatización."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Se corrigió la mezcla de idioma y se conservó una sola demanda cognitiva."
+  },
+  "metadata_editorial": {
+    "lote": "L011",
+    "ruta_origen": "content/items/stand-by/Diagnóstico pedagógico integral/EFCC_B05_I01.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/EFCC_B05_I01.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": true
+  },
   "estado_beta": "PILOTAJE_V1",
   "area_canonica_beta": "pedagogia",
   "perfil_sugerido_beta": "por_confirmar",
   "tipo_item_beta": "funcional",
   "trazabilidad_beta": {
     "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
-    "orden_piloto": 32,
+    "orden_piloto": 30,
     "fuentes": "auditoria/L011 | auditoria/L036 | auditoria/L062 | auditoria/L074",
     "ruta_origen": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/EFCC_B05_I01.json"
   }

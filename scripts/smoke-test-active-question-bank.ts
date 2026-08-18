@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { parseMarkdownItem } from "../src/domain/content/parse-md";
+import { parseBetaJsonItem } from "../src/domain/content/parse-beta-json";
 import { CURRENT_QUESTION_BANK_FILES, EXPECTED_ACTIVE_CORPUS_COUNT } from "./question-bank-current-corpus";
 
 type CheckStatus = "passed" | "failed";
@@ -38,8 +39,8 @@ async function main() {
 
   for (const relativeFile of CURRENT_QUESTION_BANK_FILES) {
     const absoluteFile = path.join(repoRoot, relativeFile);
-    const rawMarkdown = await fs.readFile(absoluteFile, "utf8");
-    const result = parseMarkdownItem(rawMarkdown);
+    const rawContent = await fs.readFile(absoluteFile, "utf8");
+    const result = path.extname(absoluteFile) === ".json" ? parseBetaJsonItem(rawContent) : parseMarkdownItem(rawContent);
 
     if (result.warnings.length > 0) {
       warnings.push({ file: relativeFile, warnings: result.warnings });

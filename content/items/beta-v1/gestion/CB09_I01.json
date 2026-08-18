@@ -1,0 +1,56 @@
+{
+  "id_item": "CB09_I01",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "gestion",
+  "tema": "Planeacion institucional",
+  "subtema": "Organizacion del horario escolar",
+  "competencia": "Organiza carga academica, espacios y tiempos escolares bajo criterios de continuidad del servicio y coherencia pedagogica.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El directivo o responsable de gestion reconoce que los problemas de horario se corrigen con diagnostico institucional y rediseño tecnico, no con arreglos informales.",
+  "evidencia": "Selecciona la accion que revisa carga, espacios y distribucion general del horario.",
+  "tarea": "Elegir la respuesta institucional tecnicamente adecuada ante cruces de horario, subutilizacion docente y conflictos de aulas.",
+  "contexto": "La institucion presenta cruces de grupos, docentes sin asignacion completa y conflictos recurrentes por el uso de aulas.",
+  "enunciado": "Ante esta situacion, ¿que accion evidencia una gestion administrativa y pedagogica efectiva?",
+  "opciones": {
+    "A": "Consolidar el diagnostico de carga academica, revisar uso de espacios y redisenar el horario general con criterios de equidad y optimizacion de recursos.",
+    "B": "Dejar que los docentes del mismo grado acuerden informalmente la ocupacion de salones cada semana.",
+    "C": "Suspender temporalmente las asignaturas con mayor conflicto de espacio hasta contar con nueva infraestructura.",
+    "D": "Autorizar trabajo autonomo permanente fuera del aula para evitar la coordinacion del horario fisico."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opcion A es la unica que asume la responsabilidad institucional del problema y lo corrige con criterios de gestion. Las otras opciones delegan, recortan el servicio o evaden el problema.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Modela solucion informal sin criterio institucional ni sostenibilidad.",
+    "C": "Modela afectacion impropia del servicio educativo por incapacidad de gestion.",
+    "D": "Modela salida evasiva que no resuelve la organizacion escolar."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "No exige memoria literal de norma y se apoya en una situacion de gestion reconocible."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Problema bien delimitado y opciones claramente distinguibles."
+  },
+  "metadata_editorial": {
+    "lote": "L018",
+    "ruta_origen": "content/items/stand-by/Horario escolar/CB09_I01.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/por_confirmar/funcional/CB09_I01.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": true
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "gestion",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 75,
+    "fuentes": "auditoria/L018 | auditoria/L041",
+    "ruta_origen": "content/restructuring-v1/docente/gestion/por_confirmar/funcional/CB09_I01.json"
+  }
+}

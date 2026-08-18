@@ -1,0 +1,56 @@
+{
+  "id_item": "MTV_B08_I13",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "competencias_ciudadanas",
+  "tema": "Convivencia escolar",
+  "subtema": "Intervencion restaurativa",
+  "competencia": "Interviene de forma inmediata y restaurativa ante agresiones leves entre estudiantes, protegiendo seguridad y reparacion del vinculo.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "El docente distingue entre contencion, mediacion y castigo automatico en una alteracion de convivencia.",
+  "evidencia": "Selecciona una secuencia que detiene la agresion, separa para bajar activacion y luego facilita un dialogo con acuerdos de reparacion.",
+  "tarea": "Elegir la actuacion inmediata mas adecuada ante una rinya fisica leve originada en trabajo de grupo.",
+  "contexto": "Durante un trabajo grupal, dos estudiantes de secundaria pasan de una discusion verbal a empujones fisicos por desacuerdos sobre el compromiso con la tarea.",
+  "enunciado": "De acuerdo con un enfoque restaurativo y de cuidado, la actuacion inmediata del docente debe ser:",
+  "opciones": {
+    "A": "Imponer suspension inmediata a ambos y cerrar el caso con registro disciplinario.",
+    "B": "Separar a los estudiantes para cortar el contacto fisico, permitir que bajen la tension y luego facilitar un dialogo con acuerdos de reparacion.",
+    "C": "Exigirles resolver el problema solos fuera del aula para que aprendan a manejar sus diferencias.",
+    "D": "Cambiar a uno de equipo y dar por superado el conflicto sin proceso adicional."
+  },
+  "clave": "B",
+  "justificacion_clave": "La opcion B es la unica que prioriza seguridad inmediata y tratamiento formativo posterior. Las otras opciones son punitivas, omisivas o solo cosméticas.",
+  "distractores_funcion": {
+    "A": "Representa respuesta exclusivamente sancionatoria.",
+    "B": "Clave correcta.",
+    "C": "Representa omision de la funcion de garante.",
+    "D": "Representa solucion superficial sin reparacion del conflicto."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Caso comun de convivencia escolar, sin marcadores identitarios irrelevantes."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Secuencia de accion clara y sin tecnicismo excesivo."
+  },
+  "metadata_editorial": {
+    "lote": "L018",
+    "ruta_origen": "content/items/stand-by/Habilidades blandas y duras/MTV_B08_I13.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/MTV_B08_I13.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": true
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "competencias_ciudadanas",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 58,
+    "fuentes": "auditoria/L018 | auditoria/L065 | auditoria/L072",
+    "ruta_origen": "content/restructuring-v1/docente/competencias_ciudadanas/por_confirmar/comportamental/MTV_B08_I13.json"
+  }
+}

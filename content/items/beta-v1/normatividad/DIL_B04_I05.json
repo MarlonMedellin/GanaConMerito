@@ -1,0 +1,56 @@
+{
+  "id_item": "DIL_B04_I05",
+  "estado": "LISTO_PARA_PILOTAJE",
+  "area": "normatividad",
+  "tema": "Responsabilidad legal escolar",
+  "subtema": "Disciplina formativa y dignidad",
+  "competencia": "Aplicar medidas de convivencia no degradantes, restaurativas y respetuosas del debido proceso.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce que la correccion pedagogica no autoriza humillacion, sancion academica impropia ni suspension sin debido proceso.",
+  "evidencia": "Escoge la alternativa que promueve comprension del impacto, reparacion y seguimiento formativo.",
+  "tarea": "Comparar respuestas disciplinarias y seleccionar la no degradante frente a una falta de convivencia.",
+  "contexto": "Un estudiante comete una falta de convivencia. El docente quiere corregir la conducta sin humillar, agredir ni convertir la nota academica en castigo.",
+  "enunciado": "?Que accion es mas coherente con un enfoque formativo, restaurativo y respetuoso de los derechos del estudiante?",
+  "opciones": {
+    "A": "Promover un dialogo formativo sobre el impacto de la accion, acordar compromisos de reparacion y hacer seguimiento pedagico.",
+    "B": "Asignar tareas extras o bajar la nota academica para desincentivar la conducta.",
+    "C": "Exigir una disculpa publica frente a toda la comunidad como condicion para permanecer en la institucion.",
+    "D": "Suspenderlo temporalmente de inmediato sin indagacion previa para asegurar el orden."
+  },
+  "clave": "A",
+  "justificacion_clave": "La opcion correcta protege dignidad, aprendizaje reflexivo y reparacion del dano, mientras evita castigos humillantes, sanciones academicas improcedentes y vulneraciones al debido proceso.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Usa la evaluacion academica como castigo disciplinario.",
+    "C": "Impone humillacion publica incompatible con dignidad y enfoque restaurativo.",
+    "D": "Omite debido proceso y audicion del estudiante."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "La situacion es transversal y se centra en decisiones institucionales, no en rasgos del estudiante."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "La tarea es unica y las opciones son comparables, aunque conviene pilotear su discriminacion."
+  },
+  "metadata_editorial": {
+    "lote": "L027",
+    "ruta_origen": "content/items/stand-by/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I05.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/comportamental/DIL_B04_I05.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_PILOTAJE",
+    "requiere_revision_humana": true
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "normatividad",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 47,
+    "fuentes": "auditoria/L027 | auditoria/L068 | auditoria/L078 | auditoria/L081",
+    "ruta_origen": "content/restructuring-v1/docente/normatividad/por_confirmar/comportamental/DIL_B04_I05.json"
+  }
+}

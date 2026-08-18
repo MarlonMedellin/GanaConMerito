@@ -1,10 +1,12 @@
 import fs from "node:fs/promises";
+import path from "node:path";
 import { parseMarkdownItem } from "./parse-md";
+import { parseBetaJsonItem } from "./parse-beta-json";
 import { getSupabaseAdminClient } from "../../lib/supabase/admin";
 
 export async function importMarkdownFile(filePath: string) {
-  const rawMarkdown = await fs.readFile(filePath, "utf8");
-  const result = parseMarkdownItem(rawMarkdown);
+  const rawContent = await fs.readFile(filePath, "utf8");
+  const result = path.extname(filePath) === ".json" ? parseBetaJsonItem(rawContent) : parseMarkdownItem(rawContent);
 
   if (!result.ok || !result.item) {
     return {

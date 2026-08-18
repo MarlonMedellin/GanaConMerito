@@ -1,31 +1,24 @@
-export const CURRENT_QUESTION_BANK_FILES = [
-  "content/items/no-beta-v1/banco-operacional-previo/competencias_ciudadanas/ciudadanas-participacion-001.md",
-  "content/items/no-beta-v1/banco-operacional-previo/competencias_ciudadanas/ciudadanas-participacion-002.md",
-  "content/items/no-beta-v1/banco-operacional-previo/competencias_ciudadanas/ciudadanas-pluralidad-diversidad-001.md",
-  "content/items/no-beta-v1/banco-operacional-previo/competencias_ciudadanas/ciudadanas-responsabilidad-democratica-001.md",
-  "content/items/no-beta-v1/banco-operacional-previo/competencias_ciudadanas/ciudadanas-responsabilidad-democratica-002.md",
-  "content/items/no-beta-v1/banco-operacional-previo/gestion/gestion-gestion-academica-001.md",
-  "content/items/no-beta-v1/banco-operacional-previo/gestion/gestion-gestion-academica-002.md",
-  "content/items/no-beta-v1/banco-operacional-previo/gestion/gestion-planeacion-institucional-001.md",
-  "content/items/no-beta-v1/banco-operacional-previo/gestion/gestion-seguimiento-mejora-001.md",
-  "content/items/no-beta-v1/banco-operacional-previo/gestion/gestion-seguimiento-mejora-002.md",
-  "content/items/no-beta-v1/banco-operacional-previo/lectura_critica/lectura-critica-analisis-argumentativo-001.md",
-  "content/items/no-beta-v1/banco-operacional-previo/lectura_critica/lectura-critica-analisis-argumentativo-002.md",
-  "content/items/no-beta-v1/banco-operacional-previo/lectura_critica/lectura-critica-estructura-textual-001.md",
-  "content/items/no-beta-v1/banco-operacional-previo/lectura_critica/lectura-critica-interpretacion-textual-001.md",
-  "content/items/no-beta-v1/banco-operacional-previo/matematicas/matematicas-analisis-datos-002.md",
-  "content/items/no-beta-v1/banco-operacional-previo/matematicas/matematicas-resolucion-problemas-001.md",
-  "content/items/no-beta-v1/banco-operacional-previo/matematicas/matematicas-resolucion-problemas-002.md",
-  "content/items/no-beta-v1/banco-operacional-previo/normatividad/normatividad-convivencia-escolar-001.md",
-  "content/items/no-beta-v1/banco-operacional-previo/normatividad/normatividad-convivencia-escolar-002.md",
-  "content/items/no-beta-v1/banco-operacional-previo/normatividad/normatividad-evaluacion-normativa-001.md",
-  "content/items/no-beta-v1/banco-operacional-previo/normatividad/normatividad-funcion-docente-001.md",
-  "content/items/no-beta-v1/banco-operacional-previo/normatividad/normatividad-inclusion-001.md",
-  "content/items/no-beta-v1/banco-operacional-previo/pedagogia/pedagogia-evaluacion-aprendizaje-001.md",
-  "content/items/no-beta-v1/banco-operacional-previo/pedagogia/pedagogia-evaluacion-aprendizaje-002.md",
-  "content/items/no-beta-v1/banco-operacional-previo/pedagogia/pedagogia-inclusion-001.md",
-  "content/items/no-beta-v1/banco-operacional-previo/pedagogia/pedagogia-inclusion-002.md",
-  "content/items/no-beta-v1/banco-operacional-previo/pedagogia/pedagogia-planeacion-aula-001.md",
-] as const;
+import fs from "node:fs";
+import path from "node:path";
 
-export const EXPECTED_ACTIVE_CORPUS_COUNT = 27;
+const ACTIVE_BETA_DIR = path.join(process.cwd(), "content/items/beta-v1");
+
+function listJsonFiles(dir: string): string[] {
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  const files: string[] = [];
+
+  for (const entry of entries) {
+    const absolutePath = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      files.push(...listJsonFiles(absolutePath));
+    } else if (entry.isFile() && entry.name.endsWith(".json")) {
+      files.push(path.relative(process.cwd(), absolutePath).replaceAll(path.sep, "/"));
+    }
+  }
+
+  return files.sort();
+}
+
+export const CURRENT_QUESTION_BANK_FILES = listJsonFiles(ACTIVE_BETA_DIR);
+
+export const EXPECTED_ACTIVE_CORPUS_COUNT = 100;

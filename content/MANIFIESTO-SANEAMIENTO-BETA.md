@@ -2,17 +2,6 @@
 
 Estado: saneamiento beta estructurado y congelado mediante indice maestro.
 
-## Lectura ejecutiva
-
-`content` ya no debe leerse como un deposito plano de preguntas. Para beta se divide en:
-
-- banco piloto materializado;
-- material no beta conservado;
-- mesa editorial con indice maestro;
-- evidencia historica de auditoria.
-
-La ruta activa es `content/items/beta-v1/`.
-
 ## Fuentes de verdad para beta
 
 1. `content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv` gobierna la decision de cada ID.
@@ -22,8 +11,7 @@ La ruta activa es `content/items/beta-v1/`.
 
 ## Regla de carpeta
 
-- `items/beta-v1/`: banco operativo beta materializado.
-- `items/no-beta-v1/`: material previo, historico o de control fuera de beta.
+- `items/`: banco operativo y materializado; no se borra ni se mezcla con mesas de trabajo.
 - `profiles/`: definicion de perfiles y vistas de pilotaje, no duplicacion fisica del banco.
 - `normative/`: soporte documental normativo.
 - `restructuring-v1/`: trazabilidad, auditoria, consolidacion y remanufactura.
@@ -36,4 +24,4 @@ La ruta activa es `content/items/beta-v1/`.
 
 ## Prohibicion operativa
 
-Para beta no se debe activar runtime desde `no-beta-v1`, `stand-by-historico`, auditorias por lote ni descartes. Todo consumo debe pasar por el indice maestro beta.
+Para beta no se debe activar runtime desde `stand-by`, auditorias por lote ni descartes. Todo consumo debe pasar por el indice maestro beta.

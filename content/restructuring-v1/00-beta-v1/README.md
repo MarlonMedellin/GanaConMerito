@@ -2,14 +2,6 @@
 
 Esta carpeta es la fuente operativa para cerrar el banco de preguntas de la beta sin borrar originales.
 
-## Como leer esta carpeta
-
-1. `indice-maestro-beta.csv` es la fuente de decision.
-2. `piloto-v1-candidatos.csv` es la cohorte operativa.
-3. `piloto-v1/` organiza esa cohorte por dimension y perfil.
-4. `remanufactura/` guarda deuda aprovechable.
-5. `descarte-tecnico.csv` separa material no apto para beta.
-
 ## Entregables
 
 - `indice-maestro-beta.csv`: inventario unificado y deduplicado.
@@ -38,19 +30,19 @@ Una pregunta entra a pilotaje si tiene ID unico, area canonica, tipo de item, cu
 
 ### Cobertura por dimension
 
-- pedagogia: 254
-- normatividad: 58
-- competencias_ciudadanas: 13
-- gestion: 13
+- pedagogia: 238
+- normatividad: 69
+- gestion: 17
+- competencias_ciudadanas: 14
 - lectura_critica: 9
 - matematicas: 3
 
 ### Piloto v1 por dimension
 
-- pedagogia: 52
-- normatividad: 22
+- pedagogia: 46
+- normatividad: 26
+- competencias_ciudadanas: 11
 - gestion: 10
-- competencias_ciudadanas: 9
 - lectura_critica: 4
 - matematicas: 3
 
@@ -58,8 +50,8 @@ Una pregunta entra a pilotaje si tiene ID unico, area canonica, tipo de item, cu
 
 - por_confirmar: 293
 - preescolar: 18
-- coordinador: 14
-- orientador: 12
+- coordinador: 15
+- orientador: 11
 - secundaria_media: 5
 - rector_director_rural: 5
 - basica_primaria: 3
@@ -67,7 +59,3 @@ Una pregunta entra a pilotaje si tiene ID unico, area canonica, tipo de item, cu
 ## Siguiente gate
 
 Revisar manualmente `piloto-v1-candidatos.csv`, normalizar perfiles `por_confirmar` y materializar en `content/items/beta-v1` solo los seleccionados con estado final `PILOTAJE_V1`.
-
-## Relacion con `content/items`
-
-`content/items/beta-v1/` es el resultado materializado. Esta carpeta explica el criterio editorial que sostiene ese resultado.

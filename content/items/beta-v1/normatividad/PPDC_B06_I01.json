@@ -1,0 +1,56 @@
+{
+  "id_item": "PPDC_B06_I01",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "normatividad",
+  "tema": "Fines de la educación",
+  "subtema": "Diversidad étnica, cultura e historia",
+  "competencia": "Interpretar fines educativos y traducirlos en decisiones curriculares transversales.",
+  "nivel_cognitivo": "ANALISIS",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Justifica decisiones curriculares que materializan fines legales de la educación vinculados con identidad, memoria y diversidad.",
+  "evidencia": "Elige la justificación más sólida para integrar de manera transversal historia, diversidad étnica y cultura en el currículo.",
+  "tarea": "Identificar el propósito formativo de una decisión curricular institucional.",
+  "contexto": "Una institución debate si trabajar historia nacional, diversidad étnica y cultura solo en fechas conmemorativas o integrarlas de manera transversal en varias áreas.",
+  "enunciado": "¿Cuál es la justificación pedagógica y social más sólida para integrarlas transversalmente?",
+  "opciones": {
+    "A": "Cumplir formalmente con efemérides patrias sin alterar los planes de estudio.",
+    "B": "Fortalecer identidad, memoria histórica, respeto por la diversidad, convivencia y comprensión crítica de la sociedad.",
+    "C": "Sustituir el trabajo disciplinar por proyectos libres sin estructura curricular.",
+    "D": "Homogeneizar referentes culturales para evitar conflictos identitarios en la comunidad."
+  },
+  "clave": "B",
+  "justificacion_clave": "La integración transversal permite materializar fines formativos asociados a ciudadanía crítica, memoria, identidad y reconocimiento de la diversidad.",
+  "distractores_funcion": {
+    "A": "Reduce el sentido formativo a cumplimiento ceremonial.",
+    "B": "Clave correcta.",
+    "C": "Plantea una falsa oposición entre enfoque transversal y rigor curricular.",
+    "D": "Asume la diferencia cultural como problema a neutralizar en lugar de reconocerla pedagógicamente."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Promueve reconocimiento plural sin esencializar grupos o territorios específicos."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "La demanda cognitiva está focalizada en justificar una decisión institucional."
+  },
+  "metadata_editorial": {
+    "lote": "L001",
+    "ruta_origen": "content/items/stand-by/Normatividad, fines de la educación y educación no formal/PPDC_B06_I01.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/PPDC_B06_I01.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": true
+  },
+  "estado_beta": "PILOTAJE_V1",
+  "area_canonica_beta": "normatividad",
+  "perfil_sugerido_beta": "por_confirmar",
+  "tipo_item_beta": "funcional",
+  "trazabilidad_beta": {
+    "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
+    "orden_piloto": 84,
+    "fuentes": "auditoria/L001 | auditoria/L023 | auditoria/L041",
+    "ruta_origen": "content/restructuring-v1/docente/normatividad/por_confirmar/funcional/PPDC_B06_I01.json"
+  }
+}

@@ -1,17 +1,55 @@
 {
-  "lote": "L054",
   "id_item": "EFCC_B06_I03",
-  "ruta_origen": "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EFCC_B06_I03.json",
-  "decision": "OMITIDO_POR_AUDITORIA_PREVIA",
-  "referencia_auditoria_previa": "content/restructuring-v1/trazabilidad/lotes/L015/decisiones.csv",
-  "decision_previa": "LISTO_PARA_BANCO",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "Evaluación cualitativa, formativa y participativa",
+  "subtema": "Seguimiento continuo en educación inicial",
+  "competencia": "Implementar evaluación continua que recoja evidencias y permita ajustar oportunamente la mediación pedagógica.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Distingue la revisión final de productos de una práctica formativa sostenida basada en observación, registro y reorientación didáctica.",
+  "evidencia": "Escoge el seguimiento permanente con registro descriptivo y ajuste de planeación frente a pruebas de cierre o rankings conductuales.",
+  "tarea": "Valorar por qué una revisión final de cuadernos y carpetas es insuficiente como evaluación formativa en transición.",
+  "contexto": "En una institución rural, una docente decide evaluar las dimensiones del desarrollo solo mediante revisión de cuadernos y carpetas al final de cada periodo para asignar las valoraciones del boletín.",
+  "enunciado": "¿Qué se requiere para que la evaluación sea realmente formativa y continua?",
+  "opciones": {
+    "A": "Seguimiento permanente de interacciones y producciones, registro descriptivo de avances y dificultades y reorientación oportuna de la planeación didáctica.",
+    "B": "Pruebas estandarizadas o juegos de control al cierre de cada unidad para objetivar aprendizajes.",
+    "C": "Autocalificación semanal del comportamiento del niño como base de la valoración.",
+    "D": "Clasificar a los estudiantes por desempeño conductual y compartir el ranking para fomentar autorregulación."
+  },
+  "clave": "A",
+  "justificacion_clave": "La evaluación formativa se reconoce cuando la información se recolecta a lo largo del proceso y se usa para intervenir la enseñanza mientras el aprendizaje aún puede mejorar.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Vuelve a una lógica de corte periódico y control de resultados.",
+    "C": "Reduce evaluación a autocalificación conductual sin mediación pedagógica suficiente.",
+    "D": "Usa ranking y presión social, no acompañamiento formativo."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "El contexto rural es incidental y no condiciona la respuesta."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "Buena relación entre caso, tarea y evidencia observable."
+  },
+  "metadata_editorial": {
+    "lote": "L015",
+    "ruta_origen": "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EFCC_B06_I03.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EFCC_B06_I03.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": true
+  },
   "estado_beta": "PILOTAJE_V1",
   "area_canonica_beta": "pedagogia",
   "perfil_sugerido_beta": "preescolar",
   "tipo_item_beta": "funcional",
   "trazabilidad_beta": {
     "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
-    "orden_piloto": 35,
+    "orden_piloto": 33,
     "fuentes": "auditoria/L015 | auditoria/L054 | auditoria/L074",
     "ruta_origen": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EFCC_B06_I03.json"
   }

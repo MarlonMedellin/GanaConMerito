@@ -1,47 +1,47 @@
 {
   "id_item": "CB08_I03",
-  "estado": "LISTO_PARA_PILOTAJE",
+  "estado": "LISTO_PARA_BANCO",
   "area": "gestion",
-  "tema": "Referentes PEI",
-  "subtema": "Diagnostico institucional y priorizacion del PMI",
-  "competencia": "Usa hallazgos diagnosticos para alinear metas, presupuesto y proyectos del mejoramiento institucional.",
+  "tema": "referentes pei",
+  "subtema": "uso del diagnostico para priorizar el mejoramiento institucional",
+  "competencia": "Usar informacion diagnostica para orientar prioridades y recursos del PMI y del PEI.",
   "nivel_cognitivo": "APLICACION",
   "dificultad_estimada": "MEDIA",
-  "claim": "Reconoce el ajuste mas pertinente cuando el PMI no responde a los problemas pedagogicos y comunitarios detectados por la institucion.",
-  "evidencia": "Selecciona una alternativa donde metas y recursos se reorganizan a partir del diagnostico de ausentismo, lectura y participacion familiar.",
-  "tarea": "Inferir la mejor decision de planeacion institucional a partir de informacion diagnostica.",
-  "contexto": "El diagnostico institucional muestra ausentismo frecuente, baja participacion familiar y dificultades en lectura en varios grados, pero el plan de mejoramiento prioriza solo la remodelacion de espacios administrativos.",
-  "enunciado": "¿Que ajuste seria mas pertinente en esta situacion?",
+  "claim": "El evaluado comprende que el diagnostico institucional debe guiar metas, presupuesto y acciones, no quedar como antecedente decorativo.",
+  "evidencia": "Selecciona el ajuste de planeacion que alinea el plan de mejoramiento con hallazgos de ausentismo, lectura y participacion familiar.",
+  "tarea": "Inferir la decision institucional mas pertinente a partir de un diagnostico de contexto y aprendizaje.",
+  "contexto": "El diagnostico institucional muestra ausentismo, baja participacion familiar y dificultades de lectura, pero el plan de mejoramiento prioriza solo obras administrativas.",
+  "enunciado": "Que ajuste seria mas pertinente frente a esta situacion institucional?",
   "opciones": {
-    "A": "Suprimir la seccion de diagnostico del PEI para evitar inconsistencias visibles ante procesos externos.",
-    "B": "Reestructurar el PMI para alinear metas y presupuesto con los hallazgos del diagnostico, incorporando proyectos de lectura y estrategias de corresponsabilidad familiar.",
-    "C": "Mantener la prioridad exclusiva en obras administrativas, asumiendo que el entorno directivo repercute indirectamente en el aprendizaje.",
-    "D": "Exigir al profesorado elevar el nivel lector mediante actividades complementarias sin modificar planeacion ni recursos institucionales."
+    "A": "Eliminar la seccion diagnostica del PEI para evitar contradicciones visibles ante auditorias.",
+    "B": "Reestructurar el PMI para alinear metas, acciones y recursos con los hallazgos del diagnostico, incluyendo lectura y corresponsabilidad familiar.",
+    "C": "Mantener como prioridad exclusiva la remodelacion administrativa, asumiendo que ello repercutira indirectamente en el aula.",
+    "D": "Exigir al profesorado que resuelva el problema desde el aula sin cambiar planeacion, presupuesto ni acciones institucionales."
   },
   "clave": "B",
-  "justificacion_clave": "La respuesta correcta es B porque un PMI defendible debe responder a la autoevaluacion y al diagnostico institucional. Si las alertas principales son pedagogicas y comunitarias, la planeacion y los recursos deben orientarse a esas barreras y no desplazarse a prioridades perifericas.",
+  "justificacion_clave": "La opcion B es la unica que convierte el diagnostico en criterio real de priorizacion institucional y de asignacion de recursos, como corresponde a un PMI con sentido.",
   "distractores_funcion": {
-    "A": "Oculta el diagnostico en lugar de usarlo como base de mejora.",
-    "B": "Clave correcta: articula diagnostico, metas y recursos con decisiones institucionales concretas.",
-    "C": "Privilegia una prioridad administrativa desconectada del problema central.",
-    "D": "Descarga la solucion solo en el aula sin soporte de gestion institucional."
+    "A": "Oculta el problema en vez de gestionarlo.",
+    "B": "Clave correcta.",
+    "C": "Desconoce la prioridad de alertas pedagogicas e institucionales ya identificadas.",
+    "D": "Traslada la carga al aula y rompe la logica de gestion integrada."
   },
   "fairness": {
     "sesgo_detectado": false,
-    "observaciones": "No culpa a estudiantes, familias o docentes; se concentra en la decision institucional."
+    "observaciones": "Evalua uso profesional del diagnostico sin culpar a estudiantes, familias o docentes como grupos deficitarios."
   },
   "accesibilidad": {
     "lectura_clara": true,
     "carga_lectora": "ADECUADA",
-    "observaciones": "Enunciado funcional y opciones consistentes."
+    "observaciones": "Escenario claro y decision suficientemente situada para banco."
   },
   "metadata_editorial": {
-    "lote": "L077",
+    "lote": "L026",
     "ruta_origen": "content/items/stand-by/Referentes PEI/CB08_I03.json",
-    "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/rector_director_rural/funcional/CB08_I03.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/gestion/por_confirmar/funcional/CB08_I03.json",
     "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
-    "decision": "LISTO_PARA_PILOTAJE",
-    "requiere_revision_humana": true
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": false
   },
   "estado_beta": "PILOTAJE_V1",
   "area_canonica_beta": "gestion",
@@ -49,8 +49,8 @@
   "tipo_item_beta": "funcional",
   "trazabilidad_beta": {
     "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
-    "orden_piloto": 66,
+    "orden_piloto": 68,
     "fuentes": "auditoria/L026 | auditoria/L066 | auditoria/L077",
-    "ruta_origen": "content/restructuring-v1/docente/gestion/rector_director_rural/funcional/CB08_I03.json"
+    "ruta_origen": "content/restructuring-v1/docente/gestion/por_confirmar/funcional/CB08_I03.json"
   }
 }

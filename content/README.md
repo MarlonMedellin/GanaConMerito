@@ -1,26 +1,17 @@
 # content
 
-Carpeta raiz del banco de preguntas, fuentes normativas, perfiles y trazabilidad editorial de GanaConMerito.
+Carpeta raiz del banco de preguntas, fuentes y perfiles de Gana con Merito.
 
-## Lectura obligatoria
+## Lectura beta
 
-Empieza por estos tres archivos:
-
-1. `content/GUIA-PARA-AGENTES-IA.md`
-2. `content/INDICE-DOCUMENTAL.md`
-3. `content/REVISION-MD-CONTENT.md`
-4. `content/MANIFIESTO-SANEAMIENTO-BETA.md`
-
-## Fuente de verdad beta
-
-La beta se entiende con dos rutas principales:
+La carpeta queda organizada para pilotaje con dos rutas principales:
 
 ```text
-content/items/beta-v1/                 # 100 preguntas materializadas para pilotaje
-content/restructuring-v1/00-beta-v1/   # indice maestro, vistas, remanufactura y descarte
+content/items/beta-v1/                 # 100 preguntas materializadas para beta
+content/restructuring-v1/00-beta-v1/  # indice maestro, vistas y deuda tecnica
 ```
 
-Ninguna pregunta fuera de `content/items/beta-v1/` debe activarse en beta sin pasar por `content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv`.
+Ninguna pregunta fuera de `content/items/beta-v1/` debe activarse en beta sin pasar por el indice maestro.
 
 ## Estructura oficial
 
@@ -45,16 +36,3 @@ content/
 - `items/no-beta-v1/` conserva todo lo que no entra a beta.
 - `restructuring-v1/00-beta-v1/` gobierna el cierre editorial.
 - `stand-by`, auditorias, descartes y remanufactura no alimentan runtime directamente.
-
-## Como decidir donde buscar
-
-| Necesidad | Ruta |
-|---|---|
-| Preguntas beta listas | `content/items/beta-v1/` |
-| Indice maestro y decision por ID | `content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv` |
-| Vistas por dimension | `content/restructuring-v1/00-beta-v1/piloto-v1/por-dimension/` |
-| Vistas por perfil | `content/restructuring-v1/00-beta-v1/piloto-v1/por-perfil/` |
-| Material previo no beta | `content/items/no-beta-v1/banco-operacional-previo/` |
-| Historico stand-by | `content/items/no-beta-v1/stand-by-historico/` |
-| Deuda de remanufactura | `content/restructuring-v1/00-beta-v1/remanufactura/` |
-| Evidencia de auditoria | `content/restructuring-v1/auditoria/` y `content/restructuring-v1/trazabilidad/` |

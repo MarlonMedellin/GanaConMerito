@@ -1,17 +1,55 @@
 {
-  "lote": "L054",
   "id_item": "EFCC_B06_I05",
-  "ruta_origen": "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EFCC_B06_I05.json",
-  "decision": "OMITIDO_POR_AUDITORIA_PREVIA",
-  "referencia_auditoria_previa": "content/restructuring-v1/trazabilidad/lotes/L015/decisiones.csv",
-  "decision_previa": "LISTO_PARA_BANCO",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "Evaluación cualitativa, formativa y participativa",
+  "subtema": "Autoevaluación y coevaluación en transición",
+  "competencia": "Diseñar estrategias de autoevaluación y coevaluación acordes con el desarrollo cognitivo y socioemocional de la primera infancia.",
+  "nivel_cognitivo": "APLICACION",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Reconoce que la participación evaluativa en transición debe apoyarse en lenguaje oral, dibujos y mediación docente, no en instrumentos abstractos o burocráticos.",
+  "evidencia": "Escoge una estrategia de asamblea, representación gráfica y construcción colectiva frente a rúbricas cuantificadas o tareas abstractas impropias del nivel.",
+  "tarea": "Seleccionar la estrategia de autoevaluación y coevaluación más pertinente para un proyecto de aula en transición.",
+  "contexto": "Una docente quiere involucrar a niños de transición en la autoevaluación y coevaluación de un proyecto sobre plantas, evitando instrumentos abstractos que no se ajusten a su desarrollo.",
+  "enunciado": "¿Qué estrategia metodológica resulta más pertinente para ese propósito?",
+  "opciones": {
+    "A": "Asambleas cortas de diálogo donde los niños compartan dibujos, expliquen qué aprendieron y co-construyan un mural de aprendizajes con apoyo docente.",
+    "B": "Una rúbrica con caras felices o tristes para que cada niño se asigne una nota del 1 al 5.",
+    "C": "Cartas individuales escritas sobre sus falencias y compromisos para el siguiente proyecto.",
+    "D": "Una encuesta aplicada por el personero estudiantil para medir satisfacción con la mediación docente."
+  },
+  "clave": "A",
+  "justificacion_clave": "En transición, la participación evaluativa gana sentido cuando se apoya en oralidad, representación gráfica y mediación cercana del docente.",
+  "distractores_funcion": {
+    "A": "Clave correcta.",
+    "B": "Introduce cuantificación prematura disfrazada de juego visual.",
+    "C": "Exige abstracción y escritura autorreflexiva desfasadas para el nivel.",
+    "D": "Desvía la evaluación hacia un mecanismo administrativo externo al proyecto de aula."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Respeta el desarrollo infantil y evita barreras instrumentales irrelevantes."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "El caso es pertinente y la clave depende de decisión didáctica real."
+  },
+  "metadata_editorial": {
+    "lote": "L015",
+    "ruta_origen": "content/items/stand-by/Evaluación cualitativa, formativa y participativa/EFCC_B06_I05.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EFCC_B06_I05.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": true
+  },
   "estado_beta": "PILOTAJE_V1",
   "area_canonica_beta": "pedagogia",
   "perfil_sugerido_beta": "preescolar",
   "tipo_item_beta": "funcional",
   "trazabilidad_beta": {
     "indice_maestro": "content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv",
-    "orden_piloto": 84,
+    "orden_piloto": 34,
     "fuentes": "auditoria/L015 | auditoria/L054 | auditoria/L074",
     "ruta_origen": "content/restructuring-v1/docente/pedagogia/preescolar/funcional/EFCC_B06_I05.json"
   }

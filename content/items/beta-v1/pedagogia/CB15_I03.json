@@ -1,10 +1,48 @@
 {
-  "lote": "L057",
   "id_item": "CB15_I03",
-  "ruta_origen": "content/items/stand-by/Fases enseñanza/CB15_I03.json",
-  "decision": "OMITIDO_POR_AUDITORIA_PREVIA",
-  "referencia_auditoria_previa": "content/restructuring-v1/trazabilidad/lotes/L017/decisiones.csv",
-  "decision_previa": "LISTO_PARA_BANCO",
+  "estado": "LISTO_PARA_BANCO",
+  "area": "pedagogia",
+  "tema": "Fases de ensenanza",
+  "subtema": "Mediacion durante la construccion del aprendizaje",
+  "competencia": "Intervenir en actividades de resolucion de problemas con preguntas y andamiajes que sostengan el razonamiento del grupo.",
+  "nivel_cognitivo": "JUICIO",
+  "dificultad_estimada": "MEDIA",
+  "claim": "Distingue entre acompanar el pensamiento de los estudiantes y reemplazarlo o abandonarlo durante la actividad.",
+  "evidencia": "Escoge la intervencion docente que usa preguntas, contraste de estrategias y retroalimentacion sin anular la participacion del grupo.",
+  "tarea": "Seleccionar la mediacion mas adecuada mientras los estudiantes resuelven un problema y aparecen errores conceptuales.",
+  "contexto": "En una actividad de resolucion de problemas, varios estudiantes proponen estrategias distintas y algunos sostienen explicaciones parcialmente incorrectas. El docente quiere intervenir sin cancelar la discusion ni dejar al grupo sin orientacion.",
+  "enunciado": "?Que intervencion docente resulta mas coherente con ese proposito?",
+  "opciones": {
+    "A": "Detener la actividad para dictar el procedimiento correcto y pedir que todos lo reproduzcan sin debate.",
+    "B": "No intervenir en absoluto para que el grupo descubra solo la respuesta aunque consolide errores persistentes.",
+    "C": "Pedir que comparen estrategias, formular preguntas sobre los pasos seguidos y ofrecer pistas breves para revisar donde aparece la dificultad.",
+    "D": "Registrar una nota negativa por cada error para incentivar precision inmediata y reducir intervenciones espontaneas."
+  },
+  "clave": "C",
+  "justificacion_clave": "La opcion correcta mantiene el foco en el razonamiento del estudiante y usa la mediacion docente como andamiaje, no como sustitucion ni como castigo.",
+  "distractores_funcion": {
+    "A": "Reemplaza el proceso de construccion por transmision directiva.",
+    "B": "Confunde autonomia con ausencia de acompanamiento pedagogico.",
+    "C": "Clave correcta.",
+    "D": "Transforma el error en sancion y debilita el uso formativo de la actividad."
+  },
+  "fairness": {
+    "sesgo_detectado": false,
+    "observaciones": "Evalua una decision didactica general transferible a distintas areas y niveles."
+  },
+  "accesibilidad": {
+    "lectura_clara": true,
+    "carga_lectora": "ADECUADA",
+    "observaciones": "La escena es concreta y las opciones son claramente distinguibles sin trucos de longitud."
+  },
+  "metadata_editorial": {
+    "lote": "L017",
+    "ruta_origen": "content/items/stand-by/Fases enseñanza/CB15_I03.json",
+    "ruta_destino_propuesta": "content/restructuring-v1/docente/pedagogia/por_confirmar/funcional/CB15_I03.json",
+    "autor_revision": "ARQUITECTO_PSICOMETRICO_GANACONMERITO",
+    "decision": "LISTO_PARA_BANCO",
+    "requiere_revision_humana": true
+  },
   "estado_beta": "PILOTAJE_V1",
   "area_canonica_beta": "pedagogia",
   "perfil_sugerido_beta": "por_confirmar",
