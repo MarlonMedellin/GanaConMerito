@@ -14,7 +14,7 @@ El estado actual ya no es “construir MVP”, sino **madurar producto, gobernar
 - fuente canónica de producto: `~/.openclaw/product`
 - deploy tree VPS: `/opt/gcm/app`
 - env persistente de deploy: `/opt/gcm/env/gcm-app.env`
-- repo remoto: `https://github.com/ProfeMarlonMDE/GanaConMerito.git`
+- repo remoto: `https://github.com/MarlonMedellin/GanaConMerito.git`
 - rama principal: `master`
 
 ## Regla de oro

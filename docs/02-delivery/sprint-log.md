@@ -25,8 +25,8 @@ last_reviewed: 2026-08-11
 
 ## Current delivery state
 - **Current operational block**: Beta Candidate 0.6.0 — homologacion documental y preparacion de runtime (2026-08-11).
-- **Current repo HEAD reviewed**: `ca59cec`.
-- **Last documented public runtime-verified commit**: `716ec62`.
+- **Current repo HEAD reviewed**: `7ade741`.
+- **Last documented public runtime-verified commit**: `7ade741`.
 - **Beta status**: candidata documental; beta funcional pendiente de triple verificacion y QA runtime fresco.
 - **Governance Hardening Roadmap state**: Fase 1 y Fase 2 iniciadas; Fase 3 en ejecucion documental (reduccion y clasificacion), Fases 4-5 futuras.
 - **Open risks**:
@@ -41,7 +41,7 @@ last_reviewed: 2026-08-11
 - **Estado**: CANDIDATA DOCUMENTAL; NO RELEASE BETA CERRADO
 - **Fecha de alineacion**: 2026-08-11
 - **Rama canonica**: `master`
-- **HEAD revisado**: `ca59cec`
+- **HEAD revisado**: `7ade741`
 - **Version declarada**: `0.6.0`
 - **Objetivo**: dejar una sola lectura ejecutiva del estado beta: base tecnica cercana, deuda menor aceptable, y bloqueo concentrado en una corrida fresca de runtime/release.
 

@@ -13,7 +13,7 @@ Source -> PR -> master -> VPS sync -> Docker -> Runtime validation
 Repositorio oficial:
 
 ```text
-https://github.com/ProfeMarlonMDE/GanaConMerito
+https://github.com/MarlonMedellin/GanaConMerito
 ```
 
 ## Flujo obligatorio

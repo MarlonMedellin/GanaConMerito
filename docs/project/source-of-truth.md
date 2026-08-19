@@ -33,7 +33,7 @@ Definir con claridad cuál es la fuente de verdad en cada capa del proyecto para
 **Fuente de verdad:**
 - branch `master`
 - worktree `/home/ubuntu/.openclaw/product`
-- GitHub (`ProfeMarlonMDE/GanaConMerito`)
+- GitHub (`MarlonMedellin/GanaConMerito`)
 
 ### Agencia, operación y memoria
 **Fuente de verdad:**

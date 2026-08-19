@@ -15,7 +15,7 @@ Definir un procedimiento manual, verificable y seguro para regresar el runtime d
 ## Fuente canonica
 
 ```text
-https://github.com/ProfeMarlonMDE/GanaConMerito
+https://github.com/MarlonMedellin/GanaConMerito
 ```
 
 ## Topologia operativa esperada

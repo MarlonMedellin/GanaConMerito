@@ -43,8 +43,8 @@ Actualmente el proyecto opera con:
 
 Para Beta Candidate 0.6.0, el estado aceptado es:
 - base tecnica cercana a beta;
-- HEAD actual revisado `ca59cec`;
-- ultimo runtime publico verificado documentalmente `716ec62`;
+- HEAD actual revisado `7ade741`;
+- ultimo runtime publico verificado documentalmente `7ade741`;
 - cierre beta funcional bloqueado hasta runtime/release fresco sobre commit objetivo.
 
 Persisten limitaciones:

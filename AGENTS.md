@@ -1,7 +1,7 @@
 # AGENTS.md — GanaConMerito
 
 Documento de gobernanza operativa para agentes IA que trabajan sobre este repositorio.
-Fuente canonica: `https://github.com/ProfeMarlonMDE/GanaConMerito` (rama `master`).
+Fuente canonica: `https://github.com/MarlonMedellin/GanaConMerito` (rama `master`).
 
 ---
 
@@ -15,7 +15,7 @@ Manten esta jerarquia cuando haya conflicto entre senales:
 4. arbol de deploy
 5. runtime visible
 
-La fuente de verdad del producto es `https://github.com/ProfeMarlonMDE/GanaConMerito`.
+La fuente de verdad del producto es `https://github.com/MarlonMedellin/GanaConMerito`.
 La copia sincronizada de desarrollo local/VPS es `~/.openclaw/product`.
 El arbol de deploy es `/opt/gcm/app`.
 El archivo de entorno persistente de deploy es `/opt/gcm/env/gcm-app.env`.
@@ -146,7 +146,7 @@ Distinguir siempre:
 
 ## Regla contextual de fuente de verdad
 
-- si esta instruccion vive dentro del repo o se ejecuta con contexto directo de GitHub, trata `https://github.com/ProfeMarlonMDE/GanaConMerito` como fuente de verdad operativa
+- si esta instruccion vive dentro del repo o se ejecuta con contexto directo de GitHub, trata `https://github.com/MarlonMedellin/GanaConMerito` como fuente de verdad operativa
 - si esta instruccion vive dentro del entorno local o VPS, trata `~/.openclaw/product` como copia sincronizada de trabajo, no como verdad final aislada
 - en ambos casos, el humano debe indicar explicitamente donde se debe trabajar cuando el contexto no sea inequivoco
 - si el humano no indico el lugar de trabajo y el contexto no lo hace inequivoco, pide esa precision antes de tocar codigo, docs o deploy
@@ -159,7 +159,7 @@ Antes de ejecutar cualquier cambio relevante, el humano debe indicar explicitame
 
 | Entorno | Ruta canonica | Cuando aplica |
 |---------|---------------|---------------|
-| GitHub / Repo remoto | `https://github.com/ProfeMarlonMDE/GanaConMerito` | contexto de repo online |
+| GitHub / Repo remoto | `https://github.com/MarlonMedellin/GanaConMerito` | contexto de repo online |
 | Local / VPS | `~/.openclaw/product` | trabajo desde terminal local o VPS |
 
 Si el agente no puede determinar inequivocamente el entorno de trabajo, debe detenerse y solicitar precision.

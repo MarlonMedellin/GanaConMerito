@@ -26,7 +26,7 @@ Env persistente de deploy:
 - `/opt/gcm/env/gcm-app.env`
 
 Repo remoto:
-- `https://github.com/ProfeMarlonMDE/GanaConMerito.git`
+- `https://github.com/MarlonMedellin/GanaConMerito.git`
 
 Rama principal:
 - `master`

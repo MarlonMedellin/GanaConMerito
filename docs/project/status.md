@@ -5,12 +5,12 @@ project: ganaconmerito
 owner: marlon-arcila
 status: active
 artifact_type: project
-last_reviewed: 2026-08-11
+last_reviewed: 2026-08-19
 ---
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-08-11 — Homologacion documental para beta candidata.
+Ultima actualizacion: 2026-08-19 — Cambio de repositorio principal y verificacion de paridad.
 
 ---
 
@@ -20,12 +20,12 @@ Ultima actualizacion: 2026-08-11 — Homologacion documental para beta candidata
 Beta Candidate 0.6.0 — Alineacion documental y preparacion de runtime.
 
 ## Current Runtime State
-Runtime publico previamente verificado en `https://cnsc.profemarlon.com` sobre `716ec62`.
+Runtime publico verificado en `https://cnsc.profemarlon.com` mostrando `7ade741`.
 
-El HEAD actual del repo es `ca59cec`; no existe evidencia documental vigente de triple verificacion runtime sobre ese commit.
+El HEAD actual del repo es `7ade741`; GitHub, `~/.openclaw/product` y `/opt/gcm/app` estan alineados en ese commit.
 
 ## Last Verified Commit
-`716ec62` como ultimo runtime publico documentado con verificacion completa.
+`7ade741` como ultimo commit visible en el runtime publico; la suite E2E autenticada completa aun no se ha ejecutado en esta revision.
 
 ## Current Sprint Status
 **BETA CANDIDATE DOCUMENTAL**: el repo tiene base tecnica para beta, pero la beta funcional queda pendiente de corrida fresca de release/runtime sobre el commit objetivo.
@@ -34,7 +34,8 @@ El HEAD actual del repo es `ca59cec`; no existe evidencia documental vigente de 
 - Persisten contratos y validaciones parcialmente narrativas fuera del baseline canonico.
 - La trazabilidad multiagente todavia no es enforcement obligatorio.
 - La integracion del Tutor con LLM real queda como deuda tecnica futura y no forma parte del cierre de Sprint 47.
-- Hay drift temporal entre HEAD de repo (`ca59cec`) y ultimo runtime publico verificado (`716ec62`).
+- Existe drift de metadata en `/opt/gcm/docker-compose.yml`: conserva `APP_COMMIT=0b7a563` aunque el runtime visible muestra `7ade741`.
+- `/opt/gcm/app` contiene archivos no rastreados de auditoria y una migracion SQL que requieren clasificacion antes de limpiar.
 - Los documentos historicos de QA/runtime deben tratarse como evidencia auxiliar, no como estado vigente.
 
 ## Pending Debt
@@ -77,7 +78,7 @@ El HEAD actual del repo es `ca59cec`; no existe evidencia documental vigente de 
 **CANDIDATA A BETA, NO RELEASE CERRADO**
 
 ### Evidencia positiva
-- HEAD actual de `master`: `ca59cec`.
+- HEAD actual de `master`: `7ade741`.
 - Version declarada: `0.6.0`.
 - No se identifican PRs o issues abiertos en la auditoria previa.
 - Build local y typecheck/lint fueron reportados en PASS en la revision previa de Codex.
@@ -85,7 +86,7 @@ El HEAD actual del repo es `ca59cec`; no existe evidencia documental vigente de 
 - Core funcional documentado: login, onboarding, practica, dashboard, banco activo, Tutor GCM con guardrails, trazas y senales pedagogicas.
 
 ### Gate que bloquea declararla beta funcional
-- Falta una corrida fresca sobre commit objetivo que pruebe alineacion `repo remoto -> ~/.openclaw/product -> /opt/gcm/app -> Docker -> https://cnsc.profemarlon.com`.
+- Falta una corrida fresca de build y E2E autenticada que cierre la alineacion `repo remoto -> ~/.openclaw/product -> /opt/gcm/app -> Docker -> https://cnsc.profemarlon.com`.
 - Falta registrar evidencia PASS de `content:validate`, tests, build, smoke runtime, postdeploy y E2E autenticado en entorno operativo.
 
 ### Criterio de cierre beta recomendado
@@ -98,9 +99,9 @@ Declarar `v0.6.0-beta.1` solo cuando `docs/02-delivery/release-checklist.md` que
 - **Arbol de deploy:** `/opt/gcm/app`.
 - **URL publica canonica:** `https://cnsc.profemarlon.com`.
 - **Consola operacional:** `https://cnsc.profemarlon.com/update.html`.
-- **HEAD actual del repo revisado:** `ca59cec`.
-- **Ultimo commit publico desplegado y verificado documentalmente:** `716ec62`.
-- **Estado de paridad repo/runtime:** pendiente de revalidacion fresca.
+- **HEAD actual del repo revisado:** `7ade741`.
+- **Ultimo commit publico desplegado y verificado documentalmente:** `7ade741`.
+- **Estado de paridad repo/runtime:** commit alineado; metadata Docker y E2E completa pendientes.
 
 ## Sprint 47 — mantenimiento menor y saneamiento final
 

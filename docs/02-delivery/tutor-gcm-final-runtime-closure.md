@@ -25,7 +25,7 @@ Cerrar funcionalmente el frente Tutor GCM con evidencia publica verificable, doc
 
 ## Entorno validado
 
-- **Repo auditado:** `https://github.com/ProfeMarlonMDE/GanaConMerito`
+- **Repo auditado:** `https://github.com/MarlonMedellin/GanaConMerito`
 - **Rama de trabajo documental:** `docs/sprint-21-tutor-runtime-closure`
 - **Base de rama:** `master`
 - **URL publica auditada:** `https://cnsc.profemarlon.com`

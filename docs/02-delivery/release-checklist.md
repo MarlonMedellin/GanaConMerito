@@ -4,14 +4,14 @@ Este documento define los pasos obligatorios para considerar un release como exi
 
 ## Snapshot beta candidata 0.6.0
 - Fecha de homologacion documental: 2026-08-11.
-- HEAD actual revisado: `ca59cec`.
-- Ultimo runtime publico verificado documentalmente: `716ec62`.
+- HEAD actual revisado: `7ade741`.
+- Ultimo runtime publico verificado documentalmente: `7ade741`.
 - Estado: beta candidata, no release cerrado.
 - Proximo release sugerido: `v0.6.0-beta.1` despues de triple verificacion y QA runtime fresco.
 
 ## 1. Validación Pre-Release (fuente canónica)
 - [ ] Commit objetivo definido y registrado: `X`.
-- [ ] Confirmar si `X` sera `ca59cec` u otro commit posterior.
+- [ ] Confirmar si `X` sera `7ade741` u otro commit posterior.
 - [ ] Trabajo realizado en `/home/ubuntu/.openclaw/product`, no en `/opt/gcm/app`.
 - [ ] `git status --short --branch` entendido y bajo control.
 - [ ] `npm run content:validate` verde.

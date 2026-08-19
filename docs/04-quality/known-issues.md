@@ -19,7 +19,7 @@ last_reviewed: 2026-08-11
 ## Activos
 | issue | severidad | owner sugerido | estado | resumen |
 |---|---|---|---|---|
-| BETA-ISSUE-001 | alta | ops + qa | abierto | beta funcional pendiente de triple verificacion fresca sobre commit objetivo; HEAD actual `ca59cec` no debe asumirse desplegado |
+| BETA-ISSUE-001 | alta | ops + qa | abierto | beta funcional pendiente de build y E2E fresca sobre `7ade741`; commit de repo, deploy y runtime visible ya coincide |
 | BETA-ISSUE-002 | media | docs + qa | abierto | evidencia historica de QA/runtime existe pero debe tratarse como auxiliar hasta registrar corrida beta actual |
 | BETA-ISSUE-003 | media | producto + tutor | aceptado | frente normativo del Tutor sigue en `synthesized_governed_unverified`; aceptable para beta con disclaimers y guardrails |
 | QB-ISSUE-004 | media | delivery | resuelto | drift documental entre índice operativo y cierre real de fase ya reconciliado en el snapshot operativo final |
@@ -32,8 +32,8 @@ last_reviewed: 2026-08-11
 
 ## Detalle priorizado
 - Para Beta Candidate 0.6.0, el bloqueo principal es operacional: confirmar que repo, deploy y runtime publico apuntan al mismo commit y que los gates minimos pasan en el entorno real.
-- Ultimo runtime publico verificado documentalmente: `716ec62`.
-- HEAD actual revisado: `ca59cec`.
+- Ultimo runtime publico verificado documentalmente: `7ade741`.
+- HEAD actual revisado: `7ade741`.
 - Ver auditoría específica: `docs/04-quality/question-bank-load-phase-audit-2026-04-26.md`
 - Ver corrida base: `docs/04-quality/chromium-qa-run-2026-04-27.md`
 - Prioridad inmediata:

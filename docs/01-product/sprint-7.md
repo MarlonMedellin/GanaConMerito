@@ -56,7 +56,7 @@ El core real del producto ya existe y funciona:
 
 ### Repo remoto
 ```bash
-https://github.com/ProfeMarlonMDE/GanaConMerito.git
+https://github.com/MarlonMedellin/GanaConMerito.git
 ```
 
 ### Rama principal

@@ -10,7 +10,7 @@ tags: [agentes, responsabilidades, gobernanza, handoff]
 related:
   - GOV-AGENT-ROSTER
   - GOV-WORKING-AGREEMENT
-last_reviewed: 2026-05-06
+last_reviewed: 2026-08-19
 ---
 
 # Contrato de Cambios y Handoff de IA
@@ -28,11 +28,11 @@ Mantén esta jerarquía cuando haya conflicto entre señales:
 La fuente canónica de desarrollo es `~/.openclaw/product`.
 El árbol de deploy es `/opt/gcm/app`.
 El archivo de entorno persistente de deploy es `/opt/gcm/env/gcm-app.env`.
-El repo remoto es `https://github.com/ProfeMarlonMDE/GanaConMerito.git` y la rama principal es `master`.
+El repo remoto es `https://github.com/MarlonMedellin/GanaConMerito.git` y la rama principal es `master`.
 
 ### Regla contextual de fuente de verdad
 
-- si esta instrucción vive dentro del repo o se ejecuta con contexto directo de GitHub, trata `https://github.com/ProfeMarlonMDE/GanaConMerito` como fuente de verdad operativa
+- si esta instrucción vive dentro del repo o se ejecuta con contexto directo de GitHub, trata `https://github.com/MarlonMedellin/GanaConMerito` como fuente de verdad operativa
 - si esta instrucción vive dentro del entorno local o VPS, trata `~/.openclaw/product` como fuente de verdad operativa
 - en ambos casos, el humano debe indicar explícitamente dónde se debe trabajar antes de ejecutar cambios relevantes
 - si el humano no indicó el lugar de trabajo y el contexto no lo hace inequívoco, pide esa precisión antes de tocar código, docs o deploy

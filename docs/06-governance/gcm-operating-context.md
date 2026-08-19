@@ -11,7 +11,7 @@ related:
   - PROJ-STATUS
   - DEL-SPRINT-LOG
   - DEL-CHANGE-LOG
-last_reviewed: 2026-05-06
+last_reviewed: 2026-08-19
 ---
 
 # GCM operating context
@@ -36,13 +36,13 @@ El proyecto no debe tratarse como MVP temprano. La prioridad operativa es madure
 ## Fuente de verdad y modelo de edicion
 
 La fuente de verdad del producto es el repositorio remoto principal:
-- `https://github.com/ProfeMarlonMDE/GanaConMerito`
+- `https://github.com/MarlonMedellin/GanaConMerito`
 
 Ese repositorio puede ser editado desde varios origenes de trabajo:
 1. Google Antigravity, corriendo desde un WSL en un PC.
 2. El agente Gauss desde ChatGPT.
-3. Un Codex conectado desde el perfil dueno del repo `https://github.com/ProfeMarlonMDE`.
-4. Un Codex conectado desde el perfil contributor `https://github.com/MarlonMedellin`.
+3. Un Codex conectado desde el perfil propietario del repo `https://github.com/MarlonMedellin`.
+4. El repositorio anterior `https://github.com/ProfeMarlonMDE/GanaConMerito` se conserva como secundario o fork.
 
 Cada uno de esos entornos puede tener su propia carpeta local. Ninguna carpeta local es por si sola la fuente de verdad final si no esta alineada con el repo remoto principal.
 
@@ -50,7 +50,7 @@ Cada uno de esos entornos puede tener su propia carpeta local. Ninguna carpeta l
 
 Toda fuente de trabajo debe seguir esta secuencia:
 1. hacer cambios en su entorno local o rama de trabajo
-2. abrir Pull Request hacia `https://github.com/ProfeMarlonMDE/GanaConMerito`
+2. integrar el cambio en `https://github.com/MarlonMedellin/GanaConMerito` (PR o commit directo según la tarea)
 3. integrar ese cambio en la rama `master` del repo principal
 4. descargar o actualizar ese estado en `~/.openclaw/product`
 5. alinear despues el deploy en `/opt/gcm/app`
@@ -77,7 +77,7 @@ Por eso:
 
 ## Infraestructura operativa
 
-- repo remoto principal: `https://github.com/ProfeMarlonMDE/GanaConMerito`
+- repo remoto principal: `https://github.com/MarlonMedellin/GanaConMerito`
 - rama principal: `master`
 - copia sincronizada en VPS: `~/.openclaw/product`
 - arbol de deploy: `/opt/gcm/app`

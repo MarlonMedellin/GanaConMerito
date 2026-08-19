@@ -2,7 +2,7 @@
 
 Status: canonical
 Owner: PM-Governance
-Last reviewed: 2026-08-11
+Last reviewed: 2026-08-19
 Related files:
 - AGENTS.md
 - docs/project/status.md
@@ -41,7 +41,7 @@ Prioridad operacional:
 5. runtime visible.
 
 Repositorio principal:
-- `https://github.com/ProfeMarlonMDE/GanaConMerito`
+- `https://github.com/MarlonMedellin/GanaConMerito`
 
 Copia sincronizada:
 - `~/.openclaw/product`
@@ -53,9 +53,9 @@ Runtime público:
 - `https://cnsc.profemarlon.com`
 
 Snapshot vigente para beta candidata:
-- HEAD actual de repo revisado: `ca59cec`
-- Ultimo runtime publico verificado documentalmente: `716ec62`
-- Estado de paridad: pendiente de triple verificacion fresca
+- HEAD actual de repo revisado: `7ade741`
+- Ultimo runtime publico verificado: `7ade741`
+- Estado de paridad: commit alineado; metadata Docker y E2E completa pendientes
 - Version objetivo: `0.6.0`
 - Release beta sugerido despues de cierre: `v0.6.0-beta.1`
 
@@ -72,7 +72,7 @@ No declarar:
 
 sin evidencia mínima.
 
-Para Beta Candidate 0.6.0, la evidencia historica en `fcc40cb`, `716ec62` u otros commits sirve como contexto de madurez, pero no autoriza afirmar que `ca59cec` esta desplegado o validado en runtime.
+Para Beta Candidate 0.6.0, la evidencia historica en `fcc40cb`, `716ec62` u otros commits sirve como contexto de madurez. La verificacion actual confirma que el runtime visible muestra `7ade741`, pero no sustituye la corrida completa de build y E2E.
 
 ---
 

@@ -41,8 +41,8 @@ GanaConMerito tiene activo el core real de producto:
 
 Estado beta vigente:
 - **Version objetivo:** `0.6.0`.
-- **HEAD actual de repo revisado:** `ca59cec`.
-- **Ultimo runtime publico verificado documentalmente:** `716ec62`.
+- **HEAD actual de repo revisado:** `7ade741`.
+- **Ultimo runtime publico verificado documentalmente:** `7ade741`.
 - **Dictamen:** candidata a beta; falta corrida fresca de runtime/release para declararla beta funcional.
 
 ## Implementado y validado recientemente
