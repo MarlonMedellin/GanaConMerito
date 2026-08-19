@@ -12,6 +12,8 @@ tsconfig.tsbuildinfo
 !.env.example
 test-results/
 playwright-report/
+output/playwright/*state.json
+.playwright-cli/
 content/exports/json/
 *:Zone.Identifier
 --current-corpus/

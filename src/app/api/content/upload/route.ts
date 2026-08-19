@@ -78,6 +78,7 @@ export async function POST(request: Request) {
     p_is_published: item.published,
     p_version: item.version,
     p_options: item.options,
+    p_source_path: null,
   });
 
   if (error || !data || data.length === 0) {

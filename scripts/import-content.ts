@@ -2,26 +2,27 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { importMarkdownFile } from "../src/domain/content/import-from-file";
 
-async function main() {
-  const itemsDir = path.resolve(process.cwd(), "content/items/no-beta-v1/banco-operacional-previo");
-  const entries = await fs.readdir(itemsDir, { withFileTypes: true });
+async function collectMarkdownFiles(directory: string): Promise<string[]> {
+  const entries = await fs.readdir(directory, { withFileTypes: true });
   const files: string[] = [];
 
   for (const entry of entries) {
-    if (entry.isDirectory()) {
-      const subdir = path.join(itemsDir, entry.name);
-      const subfiles = await fs.readdir(subdir);
-      for (const subfile of subfiles) {
-        if (subfile.endsWith(".md")) {
-          files.push(path.join(subdir, subfile));
-        }
-      }
-    }
+    const entryPath = path.join(directory, entry.name);
+    if (entry.isDirectory()) files.push(...await collectMarkdownFiles(entryPath));
+    else if (entry.isFile() && entry.name.endsWith(".md")) files.push(entryPath);
   }
+
+  return files;
+}
+
+async function main() {
+  const itemsDir = path.resolve(process.cwd(), "content/items/beta-v1");
+  const files = await collectMarkdownFiles(itemsDir);
 
   const results = [];
   for (const file of files) {
-    const result = await importMarkdownFile(file);
+    const sourcePath = path.relative(process.cwd(), file).split(path.sep).join("/");
+    const result = await importMarkdownFile(file, sourcePath);
     results.push(result);
   }
 

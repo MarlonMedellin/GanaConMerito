@@ -4,7 +4,7 @@ import { parseMarkdownItem } from "./parse-md";
 import { parseBetaJsonItem } from "./parse-beta-json";
 import { getSupabaseAdminClient } from "../../lib/supabase/admin";
 
-export async function importMarkdownFile(filePath: string) {
+export async function importMarkdownFile(filePath: string, sourcePath?: string) {
   const rawContent = await fs.readFile(filePath, "utf8");
   const result = path.extname(filePath) === ".json" ? parseBetaJsonItem(rawContent) : parseMarkdownItem(rawContent);
 
@@ -38,6 +38,7 @@ export async function importMarkdownFile(filePath: string) {
     p_is_published: item.published,
     p_version: item.version,
     p_options: item.options,
+    p_source_path: sourcePath ?? null,
   });
 
   if (error || !data || data.length === 0) {
