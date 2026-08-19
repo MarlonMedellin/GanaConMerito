@@ -57,6 +57,7 @@ export interface ContentItem {
   normativeRefs: string[];
   published: boolean;
   version: number;
+  editorialMetadata?: Record<string, unknown>;
 }
 
 export interface ParsedContentSummary {

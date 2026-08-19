@@ -39,6 +39,7 @@ export async function importMarkdownFile(filePath: string, sourcePath?: string) 
     p_version: item.version,
     p_options: item.options,
     p_source_path: sourcePath ?? null,
+    p_editorial_metadata: item.editorialMetadata ?? null,
   });
 
   if (error || !data || data.length === 0) {

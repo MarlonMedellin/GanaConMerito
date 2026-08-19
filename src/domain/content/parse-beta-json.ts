@@ -184,6 +184,21 @@ export function parseBetaJsonItem(rawJson: string): ContentValidationResult {
     normativeRefs: parseNormativeRefs(payload.normativaRefs),
     published: payload.estado_beta === "PILOTAJE_V1" || payload.estado === "LISTO_PARA_BANCO" || payload.estado === "BANCO_OPERACIONAL",
     version: 1,
+    editorialMetadata: {
+      estado: payload.estado,
+      estado_beta: payload.estado_beta,
+      perfil_sugerido_beta: payload.perfil_sugerido_beta,
+      tipo_item_beta: (payload as Record<string, unknown>).tipo_item_beta,
+      claim: (payload as Record<string, unknown>).claim,
+      evidencia: (payload as Record<string, unknown>).evidencia,
+      tarea: (payload as Record<string, unknown>).tarea,
+      nivel_cognitivo: (payload as Record<string, unknown>).nivel_cognitivo,
+      distractores_funcion: (payload as Record<string, unknown>).distractores_funcion,
+      fairness: (payload as Record<string, unknown>).fairness,
+      accesibilidad: (payload as Record<string, unknown>).accesibilidad,
+      metadata_editorial: (payload as Record<string, unknown>).metadata_editorial,
+      trazabilidad_beta: (payload as Record<string, unknown>).trazabilidad_beta,
+    },
   };
 
   return { ok: true, errors, warnings, parsed, item };
