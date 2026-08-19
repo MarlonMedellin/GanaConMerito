@@ -25,6 +25,12 @@ function ensureOk(response, label) {
   throw new Error(`${label} falló (${response.status}): ${detail}`);
 }
 
+function ensurePageOrExpectedRedirect(response, label, expectedLocation) {
+  if (response.status >= 200 && response.status < 300) return;
+  if (response.status === 307 && response.location === expectedLocation) return;
+  ensureOk(response, label);
+}
+
 async function http({ method = 'GET', pathname, body, cookie }) {
   const started = performance.now();
   const response = await fetch(`${baseUrl}${pathname}`, {
@@ -40,7 +46,15 @@ async function http({ method = 'GET', pathname, body, cookie }) {
   const text = await response.text();
   let json = null;
   try { json = JSON.parse(text); } catch {}
-  return { method, pathname, status: response.status, elapsedMs, text, json };
+  return {
+    method,
+    pathname,
+    status: response.status,
+    elapsedMs,
+    location: response.headers.get('location'),
+    text,
+    json,
+  };
 }
 
 async function ensureUserAndReset(admin) {
@@ -126,7 +140,7 @@ async function getAuthCookie() {
   save('prep.json', prep);
 
   const loginPage = await http({ pathname: '/login' });
-  ensureOk(loginPage, 'GET /login');
+  ensurePageOrExpectedRedirect(loginPage, 'GET /login', '/home');
 
   const cookie = await getAuthCookie();
   const selectedProfessionalProfile = prep.professionalProfiles.find((p) => p.code === 'docente-general') || prep.professionalProfiles[0];

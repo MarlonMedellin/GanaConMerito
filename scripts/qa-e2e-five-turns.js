@@ -133,6 +133,12 @@ function ensureOk(response, label) {
   throw new Error(`${label} falló (${response.status}): ${detail}`);
 }
 
+function ensurePageOrExpectedRedirect(response, label, expectedLocation) {
+  if (response.status >= 200 && response.status < 300) return;
+  if (response.status === 307 && response.headers?.location === expectedLocation) return;
+  ensureOk(response, label);
+}
+
 (async function main() {
   const admin = createClient(url, serviceRoleKey, { auth: { autoRefreshToken: false, persistSession: false } });
   const meta = { startedAt: nowIso(), baseUrl, runId, email, namespace, runner: 'api' };
@@ -163,7 +169,7 @@ function ensureOk(response, label) {
   results.home = await http({ pathname: '/home', cookie });
   results.onboardingPage = await http({ pathname: '/onboarding', cookie });
   ensureOk(results.home, 'Carga /home');
-  ensureOk(results.onboardingPage, 'Carga /onboarding');
+  ensurePageOrExpectedRedirect(results.onboardingPage, 'Carga /onboarding', '/practice');
   save('01-home.html', results.home.text);
   save('02-onboarding.html', results.onboardingPage.text);
 
