@@ -9,7 +9,9 @@ async function collectMarkdownFiles(directory: string): Promise<string[]> {
   for (const entry of entries) {
     const entryPath = path.join(directory, entry.name);
     if (entry.isDirectory()) files.push(...await collectMarkdownFiles(entryPath));
-    else if (entry.isFile() && entry.name.endsWith(".md")) files.push(entryPath);
+    else if (entry.isFile() && (entry.name.endsWith(".md") || entry.name.endsWith(".json"))) {
+      if (entry.name !== "README.md") files.push(entryPath);
+    }
   }
 
   return files;
