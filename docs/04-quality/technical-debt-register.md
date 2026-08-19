@@ -63,7 +63,7 @@ Toda deuda debe registrar origen, impacto y owner. No se usa este registro para 
 
 ### DEBT-N-007
 - título: bypass temporal de autenticación para QA beta cerrada
-- descripción: existe un modo temporal activo salvo `GCM_TEST_AUTH_BYPASS=0` que permite navegar sin login usando `GCM_TEST_PROFILE_ID` o un usuario QA autoaprovisionado con `GCM_TEST_EMAIL`. Usa cliente server con service role. Debe retirarse o reemplazarse por generación oficial de sesión QA antes de beta pública.
+- descripción: existe un bypass QA acotado a entornos no productivos mediante `GCM_TEST_AUTH_BYPASS=1`; producción fuerza autenticación real aunque la variable esté ausente. El modo usa `GCM_TEST_PROFILE_ID` o un usuario QA autoaprovisionado con `GCM_TEST_EMAIL` y cliente server con service role.
 - origen: necesidad de ejecutar recorridos de prueba sin sesión Google manual durante fase beta cerrada
 - tipo: seguridad-qa
 - módulo: auth

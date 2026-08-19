@@ -2,7 +2,8 @@ import type { User } from "@supabase/supabase-js";
 
 export function isTestAuthBypassEnabled() {
   if (process.env.NEXT_PHASE === "phase-production-build") return false;
-  return process.env.GCM_TEST_AUTH_BYPASS !== "0";
+  if (process.env.NODE_ENV === "production" || process.env.APP_ENV === "production") return false;
+  return process.env.GCM_TEST_AUTH_BYPASS === "1";
 }
 
 export function getTestBypassProfileId() {
