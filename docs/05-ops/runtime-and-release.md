@@ -53,9 +53,9 @@ Runtime público:
 - `https://cnsc.profemarlon.com`
 
 Snapshot vigente para beta candidata:
-- HEAD actual de repo revisado: `7ade741`
-- Ultimo runtime publico verificado: `7ade741`
-- Estado de paridad: commit alineado; metadata Docker y E2E completa pendientes
+- HEAD actual de repo revisado: `2cc274b`
+- Ultimo runtime publico verificado: `2cc274b`
+- Estado de paridad: commit alineado; E2E con cuenta real pendiente
 - Version objetivo: `0.6.0`
 - Release beta sugerido despues de cierre: `v0.6.0-beta.1`
 
@@ -72,7 +72,7 @@ No declarar:
 
 sin evidencia mínima.
 
-Para Beta Candidate 0.6.0, la evidencia historica en `fcc40cb`, `716ec62` u otros commits sirve como contexto de madurez. La verificacion actual confirma que el runtime visible muestra `7ade741`, pero no sustituye la corrida completa de build y E2E.
+Para Beta Candidate 0.6.0, la evidencia historica en `fcc40cb`, `716ec62` u otros commits sirve como contexto de madurez. La verificacion actual confirma que el runtime visible muestra `2cc274b` y exige login real, pero no sustituye la E2E autenticada completa.
 
 ---
 

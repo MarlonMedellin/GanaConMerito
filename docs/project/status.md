@@ -20,12 +20,12 @@ Ultima actualizacion: 2026-08-19 — Cambio de repositorio principal y verificac
 Beta Candidate 0.6.0 — Alineacion documental y preparacion de runtime.
 
 ## Current Runtime State
-Runtime publico verificado en `https://cnsc.profemarlon.com` mostrando `7ade741`.
+Runtime publico verificado en `https://cnsc.profemarlon.com` mostrando `2cc274b`.
 
-El HEAD actual del repo es `7ade741`; GitHub, `~/.openclaw/product` y `/opt/gcm/app` estan alineados en ese commit.
+El HEAD actual del repo es `2cc274b`; GitHub, `~/.openclaw/product`, `/opt/gcm/app` y el contenedor estan alineados en ese commit.
 
 ## Last Verified Commit
-`7ade741` como ultimo commit visible en el runtime publico; la suite E2E autenticada completa aun no se ha ejecutado en esta revision.
+`2cc274b` como ultimo commit visible en el runtime publico; la suite E2E autenticada con cuenta real aun no se ha ejecutado en esta revision.
 
 ## Current Sprint Status
 **BETA CANDIDATE DOCUMENTAL**: el repo tiene base tecnica para beta, pero la beta funcional queda pendiente de corrida fresca de release/runtime sobre el commit objetivo.
@@ -34,8 +34,9 @@ El HEAD actual del repo es `7ade741`; GitHub, `~/.openclaw/product` y `/opt/gcm/
 - Persisten contratos y validaciones parcialmente narrativas fuera del baseline canonico.
 - La trazabilidad multiagente todavia no es enforcement obligatorio.
 - La integracion del Tutor con LLM real queda como deuda tecnica futura y no forma parte del cierre de Sprint 47.
-- Existe drift de metadata en `/opt/gcm/docker-compose.yml`: conserva `APP_COMMIT=0b7a563` aunque el runtime visible muestra `7ade741`.
+- La metadata estatica de `/opt/gcm/docker-compose.yml` conserva valores historicos, pero la imagen y el runtime fueron reconstruidos explicitamente con `2cc274b`; queda pendiente normalizar ese compose fuera del repo.
 - `/opt/gcm/app` contiene archivos no rastreados de auditoria y una migracion SQL que requieren clasificacion antes de limpiar.
+- El bypass de autenticacion QA quedo desactivado en produccion; `/login` exige ahora acceso real con Google.
 - Los documentos historicos de QA/runtime deben tratarse como evidencia auxiliar, no como estado vigente.
 
 ## Pending Debt
@@ -78,7 +79,7 @@ El HEAD actual del repo es `7ade741`; GitHub, `~/.openclaw/product` y `/opt/gcm/
 **CANDIDATA A BETA, NO RELEASE CERRADO**
 
 ### Evidencia positiva
-- HEAD actual de `master`: `7ade741`.
+- HEAD actual de `master`: `2cc274b`.
 - Version declarada: `0.6.0`.
 - No se identifican PRs o issues abiertos en la auditoria previa.
 - Build local y typecheck/lint fueron reportados en PASS en la revision previa de Codex.
@@ -86,7 +87,7 @@ El HEAD actual del repo es `7ade741`; GitHub, `~/.openclaw/product` y `/opt/gcm/
 - Core funcional documentado: login, onboarding, practica, dashboard, banco activo, Tutor GCM con guardrails, trazas y senales pedagogicas.
 
 ### Gate que bloquea declararla beta funcional
-- Falta una corrida fresca de build y E2E autenticada que cierre la alineacion `repo remoto -> ~/.openclaw/product -> /opt/gcm/app -> Docker -> https://cnsc.profemarlon.com`.
+- Falta una corrida E2E autenticada con cuenta real que cierre el recorrido `login -> onboarding -> practica -> resultados`.
 - Falta registrar evidencia PASS de `content:validate`, tests, build, smoke runtime, postdeploy y E2E autenticado en entorno operativo.
 
 ### Criterio de cierre beta recomendado
@@ -99,9 +100,9 @@ Declarar `v0.6.0-beta.1` solo cuando `docs/02-delivery/release-checklist.md` que
 - **Arbol de deploy:** `/opt/gcm/app`.
 - **URL publica canonica:** `https://cnsc.profemarlon.com`.
 - **Consola operacional:** `https://cnsc.profemarlon.com/update.html`.
-- **HEAD actual del repo revisado:** `7ade741`.
-- **Ultimo commit publico desplegado y verificado documentalmente:** `7ade741`.
-- **Estado de paridad repo/runtime:** commit alineado; metadata Docker y E2E completa pendientes.
+- **HEAD actual del repo revisado:** `2cc274b`.
+- **Ultimo commit publico desplegado y verificado documentalmente:** `2cc274b`.
+- **Estado de paridad repo/runtime:** commit alineado; E2E con cuenta real pendiente.
 
 ## Sprint 47 — mantenimiento menor y saneamiento final
 
