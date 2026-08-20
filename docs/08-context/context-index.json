@@ -27,7 +27,7 @@
         "ARCH-ASSISTANT-COMPONENT-SPEC",
         "ADR-002-assistant-component-governance"
       ],
-      "last_reviewed": "2026-05-01"
+      "last_reviewed": "2026-05-08"
     },
     {
       "id": "PROD-BACKLOG",
@@ -52,7 +52,51 @@
         "DEL-SPRINT-LOG",
         "QUAL-DEBT-REGISTER"
       ],
-      "last_reviewed": "2026-05-02"
+      "last_reviewed": "2026-08-19"
+    },
+    {
+      "id": "PROD-FUTURE-PRACTICE-SESSION-LIGHT-REFACTOR",
+      "path": "docs/01-product/future-practice-session-light-refactor.md",
+      "type": "product",
+      "status": "proposed",
+      "project": "ganaconmerito",
+      "modules": [
+        "practice",
+        "ui",
+        "tutor"
+      ],
+      "tags": [
+        "refactor",
+        "practice-session",
+        "frontend",
+        "future-sprint"
+      ],
+      "owner": "marlon-arcila",
+      "related": [],
+      "last_reviewed": "2026-05-04"
+    },
+    {
+      "id": "PROD-NORMATIVE-SOURCE-TRUTH-V1",
+      "path": "docs/01-product/source-truth/normative-source-truth-v1.md",
+      "type": "product",
+      "status": "active",
+      "project": "ganaconmerito",
+      "modules": [
+        "tutor",
+        "contest",
+        "profile",
+        "question-bank"
+      ],
+      "tags": [
+        "source-truth",
+        "tutor-gcm",
+        "cnsc",
+        "normativa",
+        "contrato"
+      ],
+      "owner": "marlon-arcila",
+      "related": [],
+      "last_reviewed": "2026-05-06"
     },
     {
       "id": "PROD-UI-DESIGN-BRIEF-MOBILE-FIRST",
@@ -141,7 +185,7 @@
         "PROD-BACKLOG",
         "ARCH-SYSTEM-OVERVIEW"
       ],
-      "last_reviewed": "2026-04-23"
+      "last_reviewed": "2026-05-08"
     },
     {
       "id": "DEL-CHANGE-LOG",
@@ -162,7 +206,56 @@
       "related": [
         "DEL-SPRINT-LOG"
       ],
-      "last_reviewed": "2026-05-02"
+      "last_reviewed": "2026-08-11"
+    },
+    {
+      "id": "DEL-PARALLEL-SPRINT-BOARD-2026-05-06",
+      "path": "docs/02-delivery/parallel-sprint-board-2026-05-06.md",
+      "type": "delivery",
+      "status": "active",
+      "project": "ganaconmerito",
+      "modules": [
+        "core",
+        "platform",
+        "qa",
+        "governance"
+      ],
+      "tags": [
+        "sprint",
+        "paralelo",
+        "agentes",
+        "hardening"
+      ],
+      "owner": "marlon-arcila",
+      "related": [
+        "PROD-BACKLOG",
+        "DEL-SPRINT-LOG",
+        "GOV-AGENT-ROSTER"
+      ],
+      "last_reviewed": "2026-05-06"
+    },
+    {
+      "id": "DEL-PRIORITY-CLOSEOUT-PLAN",
+      "path": "docs/02-delivery/priority-closeout-plan.md",
+      "type": "delivery",
+      "status": "active",
+      "project": "ganaconmerito",
+      "modules": [
+        "qa",
+        "tutor",
+        "ci",
+        "governance"
+      ],
+      "tags": [
+        "prioridades",
+        "cierre",
+        "tutor-traces",
+        "ci",
+        "npm-test"
+      ],
+      "owner": "marlon-arcila",
+      "related": [],
+      "last_reviewed": "2026-05-05"
     },
     {
       "id": "DEL-QB-LOAD-CLOSE-2026-04-26",
@@ -189,6 +282,48 @@
       "last_reviewed": "2026-04-27"
     },
     {
+      "id": "DEL-SPRINT-42-RICH-INGESTION",
+      "path": "docs/02-delivery/sprint-42-rich-ingestion-normalization-plan.md",
+      "type": "delivery",
+      "status": "active",
+      "project": "ganaconmerito",
+      "modules": [
+        "tutor",
+        "taxonomy",
+        "content"
+      ],
+      "tags": [
+        "sprint",
+        "ingestion",
+        "taxonomy",
+        "tutor"
+      ],
+      "owner": "marlon-arcila",
+      "related": [],
+      "last_reviewed": "2026-05-09"
+    },
+    {
+      "id": "DEL-SPRINT-43-LEARNING-PATHS",
+      "path": "docs/02-delivery/sprint-43-learning-paths-misconception-engine-plan.md",
+      "type": "delivery",
+      "status": "active",
+      "project": "ganaconmerito",
+      "modules": [
+        "tutor",
+        "taxonomy",
+        "pedagogy"
+      ],
+      "tags": [
+        "sprint",
+        "tutor",
+        "learning-paths",
+        "misconceptions"
+      ],
+      "owner": "marlon-arcila",
+      "related": [],
+      "last_reviewed": "2026-05-10"
+    },
+    {
       "id": "DEL-SPRINT-LOG",
       "path": "docs/02-delivery/sprint-log.md",
       "type": "delivery",
@@ -209,7 +344,73 @@
         "DEL-CHANGE-LOG",
         "QUAL-RISK-REGISTER"
       ],
-      "last_reviewed": "2026-05-02"
+      "last_reviewed": "2026-08-19"
+    },
+    {
+      "id": "DEL-TUTOR-GCM-FINAL-RUNTIME-CLOSURE",
+      "path": "docs/02-delivery/tutor-gcm-final-runtime-closure.md",
+      "type": "delivery",
+      "status": "active",
+      "project": "ganaconmerito",
+      "modules": [
+        "tutor",
+        "qa",
+        "runtime",
+        "documentation"
+      ],
+      "tags": [
+        "sprint-21",
+        "tutor-gcm",
+        "runtime",
+        "closure"
+      ],
+      "owner": "marlon-arcila",
+      "related": [],
+      "last_reviewed": "2026-05-06"
+    },
+    {
+      "id": "DEL-TUTOR-GCM-NORMATIVE-VERIFICATION",
+      "path": "docs/02-delivery/tutor-gcm-normative-verification.md",
+      "type": "delivery",
+      "status": "active",
+      "project": "ganaconmerito",
+      "modules": [
+        "tutor",
+        "product",
+        "architecture",
+        "compliance"
+      ],
+      "tags": [
+        "tutor-gcm",
+        "normativa",
+        "source-truth",
+        "verification",
+        "sprint-22"
+      ],
+      "owner": "marlon-arcila",
+      "related": [],
+      "last_reviewed": "2026-05-06"
+    },
+    {
+      "id": "DEL-TUTOR-GCM-SPRINT-20-RUNTIME-AUDIT",
+      "path": "docs/02-delivery/tutor-gcm-sprint-20-runtime-audit.md",
+      "type": "delivery",
+      "status": "active",
+      "project": "ganaconmerito",
+      "modules": [
+        "tutor",
+        "qa",
+        "runtime"
+      ],
+      "tags": [
+        "tutor-gcm",
+        "sprint-20",
+        "runtime",
+        "audit"
+      ],
+      "owner": "marlon-arcila",
+      "related": [],
+      "last_reviewed": "2026-05-06"
     },
     {
       "id": "ADR-001-stack-base",
@@ -291,6 +492,30 @@
       "last_reviewed": "2026-05-01"
     },
     {
+      "id": "ARCH-RUNTIME-FLOW-MAP",
+      "path": "docs/03-architecture/runtime-flow-map.md",
+      "type": "architecture",
+      "status": "active",
+      "project": "ganaconmerito",
+      "modules": [
+        "auth",
+        "onboarding",
+        "practice",
+        "dashboard",
+        "tutor",
+        "deploy"
+      ],
+      "tags": [
+        "runtime",
+        "flow",
+        "architecture",
+        "qa"
+      ],
+      "owner": "marlon-arcila",
+      "related": [],
+      "last_reviewed": "2026-05-06"
+    },
+    {
       "id": "ARCH-SYSTEM-OVERVIEW",
       "path": "docs/03-architecture/system-overview.md",
       "type": "ops",
@@ -312,7 +537,7 @@
         "ADR-001-stack-base",
         "QUAL-DEBT-REGISTER"
       ],
-      "last_reviewed": "2026-04-23"
+      "last_reviewed": "2026-05-08"
     },
     {
       "id": "QUAL-ACTIVE-QUESTION-BANK-SMOKE",
@@ -414,7 +639,7 @@
         "QUAL-QB-LOAD-AUDIT-2026-04-26",
         "DEL-QB-LOAD-CLOSE-2026-04-26"
       ],
-      "last_reviewed": "2026-05-01"
+      "last_reviewed": "2026-08-19"
     },
     {
       "id": "QUAL-POST-BACKFILL-ACTIVE-BANK",
@@ -567,7 +792,7 @@
         "ARCH-SYSTEM-OVERVIEW",
         "DEL-SPRINT-LOG"
       ],
-      "last_reviewed": "2026-04-23"
+      "last_reviewed": "2026-08-11"
     },
     {
       "id": "OPS-DOCUMENT-ARCHIVE-NAMING-2026-05-01",
@@ -637,7 +862,7 @@
         "DEL-QB-LOAD-CLOSE-2026-04-26",
         "docs/database/content-model.md"
       ],
-      "last_reviewed": "2026-04-26"
+      "last_reviewed": "2026-05-23"
     },
     {
       "id": "OPS-ROLLBACK-RUNBOOK",
@@ -703,7 +928,55 @@
       "related": [
         "GOV-WORKING-AGREEMENT"
       ],
-      "last_reviewed": "2026-04-23"
+      "last_reviewed": "2026-05-06"
+    },
+    {
+      "id": "GOV-AI-CHANGE-CONTRACT",
+      "path": "docs/06-governance/ai-change-contract.md",
+      "type": "governance",
+      "status": "active",
+      "project": "ganaconmerito",
+      "modules": [
+        "core",
+        "platform"
+      ],
+      "tags": [
+        "agentes",
+        "responsabilidades",
+        "gobernanza",
+        "handoff"
+      ],
+      "owner": "marlon-arcila",
+      "related": [
+        "GOV-AGENT-ROSTER",
+        "GOV-WORKING-AGREEMENT"
+      ],
+      "last_reviewed": "2026-08-19"
+    },
+    {
+      "id": "GOV-GCM-OPERATING-CONTEXT",
+      "path": "docs/06-governance/gcm-operating-context.md",
+      "type": "governance",
+      "status": "active",
+      "project": "ganaconmerito",
+      "modules": [
+        "governance",
+        "release",
+        "runtime"
+      ],
+      "tags": [
+        "operacion",
+        "runtime",
+        "release",
+        "source-of-truth"
+      ],
+      "owner": "marlon-arcila",
+      "related": [
+        "PROJ-STATUS",
+        "DEL-SPRINT-LOG",
+        "DEL-CHANGE-LOG"
+      ],
+      "last_reviewed": "2026-08-19"
     },
     {
       "id": "GOV-HUMAN-APPROVAL",
@@ -772,6 +1045,29 @@
         "GOV-HUMAN-APPROVAL"
       ],
       "last_reviewed": "2026-04-23"
+    },
+    {
+      "id": "COMP-SERVER-SIDE-SERVICE-ROLE-POLICY",
+      "path": "docs/07-compliance/server-side-service-role-policy.md",
+      "type": "compliance",
+      "status": "active",
+      "project": "ganaconmerito",
+      "modules": [
+        "supabase",
+        "auth",
+        "api",
+        "tutor",
+        "dashboard"
+      ],
+      "tags": [
+        "service-role",
+        "rls",
+        "security",
+        "server-side"
+      ],
+      "owner": "marlon-arcila",
+      "related": [],
+      "last_reviewed": "2026-05-06"
     },
     {
       "id": "CTX-RETRIEVAL-POLICY",
@@ -851,12 +1147,31 @@
       "last_reviewed": ""
     },
     {
+      "id": "SCHEMA-DERIVED-JSON-V1",
+      "path": "docs/database/derived-json-schema-v1.md",
+      "type": "schema-contract",
+      "status": "canonical",
+      "project": "ganaconmerito",
+      "modules": [],
+      "tags": [],
+      "owner": "PM-Governance",
+      "related": [
+        "docs/database/content-model.md",
+        "docs/05-ops/question-bank-load-runbook.md",
+        "scripts/export-items-to-json.ts"
+      ],
+      "last_reviewed": "2026-05-23"
+    },
+    {
       "id": "PROJ-CORPUS-ACTIVATION-MAP",
       "path": "docs/project/current-corpus-runtime-activation-map.md",
       "type": "project",
       "status": "active",
       "project": "ganaconmerito",
-      "modules": [],
+      "modules": [
+        "question-bank",
+        "editorial"
+      ],
       "tags": [
         "corpus",
         "question-bank",
@@ -864,8 +1179,12 @@
         "activation"
       ],
       "owner": "marlon-arcila",
-      "related": [],
-      "last_reviewed": "2026-05-02"
+      "related": [
+        "docs/05-ops/question-bank-load-runbook.md",
+        "docs/database/content-model.md",
+        "docs/project/reference/estructura-hibrida-taxonomia-perfiles-docente.md"
+      ],
+      "last_reviewed": "2026-05-08"
     },
     {
       "id": "PROJ-REAL-BUG-FIX-PLAN-2026-04-28",
@@ -889,7 +1208,7 @@
       "last_reviewed": "2026-04-28"
     },
     {
-      "id": "PROJ-STATUS",
+      "id": "PROJECT-STATUS",
       "path": "docs/project/status.md",
       "type": "project",
       "status": "active",
@@ -898,31 +1217,92 @@
       "tags": [],
       "owner": "marlon-arcila",
       "related": [],
-      "last_reviewed": "2026-05-02"
+      "last_reviewed": "2026-08-19"
     }
   ],
   "missing": [
+    "docs/01-product/future-practice-session-light-refactor.md :: missing field related",
     "docs/01-product/guardrails.md",
+    "docs/01-product/source-truth/normative-source-truth-v1.md :: missing field related",
+    "docs/01-product/sprint-33-remediation-backlog.md",
+    "docs/01-product/sprint-7.md",
+    "docs/01-product/sprint-8.md",
+    "docs/01-product/sprint-9.md",
     "docs/01-product/sprint-master-plan.md",
+    "docs/01-product/tutor-copy-normalization-v1.md",
+    "docs/01-product/tutor-guided-ux-v1.md",
+    "docs/01-product/tutor-trace-metrics-v1.md",
+    "docs/01-product/tutor-trace-summary-consumer-v1.md",
     "docs/02-delivery/archive/sprint-4.md",
     "docs/02-delivery/archive/sprint-5-plan.md",
     "docs/02-delivery/archive/sprint-5.md",
+    "docs/02-delivery/governance-hardening-roadmap.md",
+    "docs/02-delivery/priority-closeout-plan.md :: missing field related",
+    "docs/02-delivery/qa-regression-notes.md",
     "docs/02-delivery/release-checklist.md",
+    "docs/02-delivery/sprint-33-post-merge-checklist.md",
+    "docs/02-delivery/sprint-33-repo-only-closeout.md",
+    "docs/02-delivery/sprint-33-stabilization-plan.md",
+    "docs/02-delivery/sprint-42-rich-ingestion-normalization-plan.md :: missing field related",
+    "docs/02-delivery/sprint-43-learning-paths-misconception-engine-plan.md :: missing field related",
     "docs/02-delivery/sprint-6.md",
+    "docs/02-delivery/tutor-gcm-final-runtime-closure.md :: missing field related",
+    "docs/02-delivery/tutor-gcm-normative-verification.md :: missing field related",
+    "docs/02-delivery/tutor-gcm-sprint-20-runtime-audit.md :: missing field related",
+    "docs/03-architecture/api-contract-migration-plan.md",
+    "docs/03-architecture/api-contract-standard-v1.md",
+    "docs/03-architecture/api-endpoint-contract-map.md",
+    "docs/03-architecture/migration-0008-remediation-plan.md",
+    "docs/03-architecture/mvp-event-taxonomy.md",
+    "docs/03-architecture/rate-limiting-adr-001.md",
+    "docs/03-architecture/runtime-flow-map.md :: missing field related",
+    "docs/03-architecture/semantic-governance-foundation-v1.md",
+    "docs/03-architecture/session-concurrency-adr-002.md",
+    "docs/03-architecture/supabase-migration-governance.md",
+    "docs/03-architecture/trace-retention-policy.md",
     "docs/04-quality/archive/audit-4-v2.md",
     "docs/04-quality/archive/audit-4.md",
+    "docs/04-quality/idempotency-gate-remediation-plan.md",
+    "docs/04-quality/playwright-selector-standard.md",
+    "docs/04-quality/quality-gates.md",
+    "docs/04-quality/sprint-31-43-runtime-regression-plan.md",
+    "docs/04-quality/sprint-31-43-runtime-regression-report.md",
+    "docs/05-ops/agent-traceability.md",
+    "docs/05-ops/decoupled-update-worker.md",
+    "docs/05-ops/deployment-report-1b331d1.md",
+    "docs/05-ops/deployment-report-7bcb6e8.md",
+    "docs/05-ops/documentation-trigger-map.md",
+    "docs/05-ops/drift-resolution-policy.md",
+    "docs/05-ops/manual-rollback-runbook.md",
+    "docs/05-ops/mvp-slo-sli-policy.md",
+    "docs/05-ops/playwright-ci-readiness.md",
+    "docs/05-ops/runtime-and-release.md",
+    "docs/05-ops/semantic-healthcheck-policy.md",
+    "docs/05-ops/web-update-endpoint.md",
+    "docs/06-governance/qa-smoke-vs-forensic-policy.md",
+    "docs/06-governance/runtime-release-rollback-policy.md",
+    "docs/06-governance/sprint-33-execution-board.md",
+    "docs/07-compliance/appsec-remediation-matrix-sprint-33.md",
+    "docs/07-compliance/auth-callback-hardening-plan.md",
+    "docs/07-compliance/security-acceptance-criteria-sprint-33.md",
+    "docs/07-compliance/server-side-service-role-policy.md :: missing field related",
     "docs/README.md",
     "docs/api/contracts.md",
     "docs/architecture/decisions.md",
     "docs/architecture/overview.md",
     "docs/architecture/project-structure.md",
     "docs/architecture/state-machine.md",
+    "docs/archive/02-delivery/sprint-33-post-merge-checklist.md",
+    "docs/archive/02-delivery/sprint-33-repo-only-closeout.md",
+    "docs/archive/06-governance/sprint-33-execution-board.md",
+    "docs/archive/README.md",
     "docs/archive/architecture/2026-05-01-editorial-admin-consolidated-plan.md",
     "docs/archive/architecture/2026-05-01-editorial-admin-implementation-plan.md",
     "docs/archive/architecture/2026-05-01-editorial-library-temporary-web-module.md",
     "docs/archive/architecture/2026-05-01-editorial-module-plan.md",
     "docs/archive/architecture/2026-05-01-editorial-runtime-paths-fix.md",
     "docs/archive/architecture/2026-05-01-question-bank-technical-architecture.md",
+    "docs/archive/archive-ready-queue.md",
     "docs/archive/banco-preguntas/2026-05-01-ciudadanas.md :: missing field name",
     "docs/archive/banco-preguntas/2026-05-01-ciudadanas.md :: missing field project",
     "docs/archive/banco-preguntas/2026-05-01-ciudadanas.md :: missing field owner",
@@ -945,16 +1325,18 @@
     "docs/archive/inbox/misc/2026-05-01-gemini-pc.md",
     "docs/archive/inbox/project/2026-05-01-audit-brief-editorial-segmentation.md",
     "docs/archive/inbox/project/2026-05-01-dominios.md",
+    "docs/archive/legacy-candidates.md",
     "docs/archive/project/2026-05-01-audit-brief-editorial-segmentation.md",
     "docs/archive/project/2026-05-01-question-bank-implementation-roadmap.md",
     "docs/arquitectura-mvp.md",
     "docs/database/active-question-bank-contract.md",
     "docs/database/content-model.md",
+    "docs/database/derived-json-schema-v1.md :: missing field modules",
+    "docs/database/derived-json-schema-v1.md :: missing field tags",
     "docs/database/schema.md",
     "docs/database/security.md",
     "docs/project/auth-hardening-audit.md",
-    "docs/project/current-corpus-runtime-activation-map.md :: missing field modules",
-    "docs/project/current-corpus-runtime-activation-map.md :: missing field related",
+    "docs/project/canonical-docs.md",
     "docs/project/current-workflow.md",
     "docs/project/docker-e2e-minimum-validation-plan.md",
     "docs/project/e2e-status.md",
@@ -964,6 +1346,9 @@
     "docs/project/reference/checklist-de-validacion-editorial.md",
     "docs/project/reference/descripcion-del-corpus-de-preguntas.md",
     "docs/project/reference/ejemplos-modelo-de-preguntas.md",
+    "docs/project/reference/estructura-hibrida-taxonomia-perfiles-docente.md",
+    "docs/project/reference/guia-decision-perfiles-docente.md",
+    "docs/project/reference/metadatos-secundarios-perfiles-docente.md",
     "docs/project/reference/plantillas-y-estructura-de-preguntas.md",
     "docs/project/reference/resumen-ejecutivo-del-corpus.md",
     "docs/project/reference/taxonomia-y-nomenclatura-del-banco-de-preguntas.md",
@@ -984,6 +1369,27 @@
     "docs/project/status.md :: missing field tags",
     "docs/project/status.md :: missing field related",
     "docs/project/tooling-stack.md",
-    "docs/temp/README.md"
+    "docs/release/mvp-launch-governance-review-2026-05-07.md",
+    "docs/strategy/mvp-audit-2026-05-07.md",
+    "docs/technical-debt/sprint-33-actionable-debt-matrix.md",
+    "docs/technical-debt/strategic-technical-debt-register-2026-05-07.md",
+    "docs/temp/README.md",
+    "docs/temp/pr-1.md",
+    "docs/temp/pr-10.md",
+    "docs/temp/pr-12-1.md",
+    "docs/temp/pr-12.md",
+    "docs/temp/pr-2.md",
+    "docs/temp/pr-20.md",
+    "docs/temp/pr-33.1.md",
+    "docs/temp/pr-33.md",
+    "docs/temp/pr-37.1.md",
+    "docs/temp/pr-43.md",
+    "docs/temp/pr-44.md",
+    "docs/temp/pr-45.md",
+    "docs/temp/pr44-1.md",
+    "docs/temp/test-movile.md",
+    "docs/templates/session-report.md",
+    "docs/ux/mvp-ux-audit-2026-05-07.md",
+    "docs/ux/sprint-33-ux-remediation-plan.md"
   ]
 }

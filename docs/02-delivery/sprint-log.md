@@ -24,14 +24,14 @@ last_reviewed: 2026-08-19
 # Sprint log
 
 ## Current delivery state
-- **Current operational block**: Beta Candidate 0.6.0 — cierre documental y preparacion del release (2026-08-19).
-- **Current repo HEAD reviewed**: `b0207e9`.
-- **Last documented public runtime-verified commit**: `ad6ad35` (`2026-08-19T04:20:00Z`).
-- **Beta status**: candidata con E2E real PASS; release pendiente de triple verificacion sobre un unico commit.
+- **Current operational block**: Beta Candidate 0.6.0 — checklist cerrado para release de codigo (2026-08-20).
+- **Current code release commit**: `9695d40`; HEAD documental: `271712f`.
+- **Public runtime-verified commit**: `9695d40` (`2026-08-19T00:00:00-05:00`).
+- **Beta status**: checklist cerrado con QA postdeploy fresco PASS; tag `v0.6.0-beta.1` publicado.
 - **Supabase**: migraciones `0013`-`0017` aplicadas; 100 preguntas beta visibles en `v_item_bank_active`.
 - **Governance Hardening Roadmap state**: Fase 1 y Fase 2 iniciadas; Fase 3 en ejecucion documental (reduccion y clasificacion), Fases 4-5 futuras.
 - **Open risks**:
-  - HEAD actual de repo y ultimo runtime verificado documentado no deben asumirse alineados hasta revalidacion;
+  - HEAD documental posterior al release de codigo debe conservarse separado de la imagen desplegada;
   - la calibracion del Tutor sigue siendo heuristica y requiere evidencia de uso real para refinamiento posterior;
   - trazabilidad multiagente aun advisory y sin enforcement automatico;
   - parte del QA historico sigue narrativo y puede competir con baseline ejecutiva;
@@ -39,30 +39,37 @@ last_reviewed: 2026-08-19
   - el frente normativo sigue en `synthesized_governed_unverified` hasta cargar anexos oficiales suficientes.
 
 ## Beta Candidate 0.6.0 — cierre documental y preparacion de runtime
-- **Estado**: CANDIDATA CON E2E REAL PASS; NO RELEASE BETA CERRADO
+- **Estado**: CHECKLIST CERRADO PARA RELEASE DE CODIGO; TAG PENDIENTE
 - **Fecha de alineacion**: 2026-08-19
 - **Rama canonica**: `master`
-- **HEAD revisado**: `b0207e9`
-- **Ultimo runtime publico verificado**: `ad6ad35` (`2026-08-19T04:20:00Z`)
+- **Commit de codigo release**: `9695d40`
+- **HEAD documental**: `271712f`
+- **Runtime publico verificado**: `9695d40` (`2026-08-19T00:00:00-05:00`)
 - **Version declarada**: `0.6.0`
-- **Objetivo**: dejar una sola lectura ejecutiva del estado beta: base tecnica cercana, deuda menor aceptable, y bloqueo concentrado en una corrida fresca de runtime/release.
+- **Objetivo**: dejar una sola lectura ejecutiva del estado beta con gates frescos, paridad de codigo y deuda residual explicita.
+
+### Evidencia de cierre 2026-08-20
+- Smoke publico: `/opt/gcm/app/artifacts/qa-smoke-postdeploy-smoke-mt0xrhmp-mzt8se`.
+- API E2E 5 turnos: `/opt/gcm/app/artifacts/qa-e2e-api-mt0xs2k0-m767ff`.
+- UI Chromium 5 turnos: `/opt/gcm/app/artifacts/qa-ui-e2e-ui-mt0xtcsa-u279gx`.
+- Gates locales: banco 100/100 sin errores, typecheck, unitarias, build y validacion documental PASS.
 
 ### Entregables principales
 - `docs/project/status.md` alinea HEAD actual, ultimo runtime verificado y criterio de cierre beta.
 - `docs/05-ops/runtime-and-release.md` declara la regla para no confundir evidencia historica con paridad vigente.
 - `docs/01-product/backlog.md`, `docs/04-quality/known-issues.md` y `docs/04-quality/technical-debt-register.md` consolidan pendientes de beta sin abrir frentes grandes.
-- `docs/02-delivery/release-checklist.md` queda como checklist ejecutable para cerrar `v0.6.0-beta.1`.
+- `docs/02-delivery/release-checklist.md` conserva la evidencia del cierre de `v0.6.0-beta.1`.
 
 ### Evidencia operacional
 - Revision documental y auditoria de repo, VPS, Supabase y runtime publico.
 - Build, typecheck/lint, tests, validacion de contenido y smoke runtime reportados PASS.
 - E2E Playwright autenticada real: 5 turnos, cierre de sesion y dashboard verificado.
-- Runtime aun no esta alineado al HEAD `b0207e9`; queda pendiente la corrida automatizada postdeploy.
+- Runtime/deploy tree están alineados al commit de código `9695d40`; la corrida automatizada postdeploy fresca está registrada en el checklist.
 
 ### Criterio de cierre
 - Triple verificacion source/deploy/runtime sobre un unico commit objetivo.
 - `content:validate`, tests, build, smoke runtime, postdeploy y E2E autenticado PASS.
-- Tag/release `v0.6.0-beta.1` creado solo despues de evidencia runtime fresca.
+- Tag/release `v0.6.0-beta.1` creado después de evidencia runtime fresca.
 
 ## Sprint 47 — mantenimiento menor y saneamiento final
 - **Estado**: CERRADO EN REPO (CIERRE DOCUMENTAL Y DE TRAZABILIDAD)

@@ -53,14 +53,15 @@ Runtime público:
 - `https://cnsc.profemarlon.com`
 
 Snapshot vigente para beta candidata:
-- HEAD actual de repo revisado: `b0207e9`
-- Ultimo runtime publico verificado: `ad6ad35`
-- Build time visible: `2026-08-19T04:20:00Z`
-- Estado de paridad: no alineado; E2E real PASS sobre `ad6ad35`
+- Commit de codigo release: `9695d40`
+- HEAD documental: `271712f`
+- Runtime publico verificado: `9695d40`
+- Build time visible: `2026-08-19T00:00:00-05:00`
+- Estado de paridad: codigo/deploy/runtime alineados; HEAD documental posterior solo contiene documentación
 - Base Supabase: migraciones `0013`-`0017` aplicadas; 100 items beta en `v_item_bank_active`
 - QA postdeploy: smoke local/publico, API E2E y UI Chromium PASS; artifacts registrados en `docs/02-delivery/release-checklist.md`
 - Version objetivo: `0.6.0`
-- Release beta sugerido despues de cierre: `v0.6.0-beta.1`
+- Release beta creado: `v0.6.0-beta.1` sobre `9695d40`
 
 ---
 
@@ -75,7 +76,7 @@ No declarar:
 
 sin evidencia mínima.
 
-Para Beta Candidate 0.6.0, la evidencia historica en `fcc40cb`, `716ec62` u otros commits sirve como contexto de madurez. La verificacion actual confirma que el runtime visible muestra `ad6ad35`, exige login real y completo una E2E autenticada de cinco turnos. Esto no sustituye la triple verificacion de release porque el repo principal ya avanzo a `b0207e9`.
+Para Beta Candidate 0.6.0, la evidencia histórica en `fcc40cb`, `716ec62` u otros commits sirve como contexto de madurez. La verificación actual confirma que el runtime visible muestra `9695d40`, exige login real y completó una E2E autenticada de cinco turnos. El release está etiquetado como `v0.6.0-beta.1`.
 
 ---
 

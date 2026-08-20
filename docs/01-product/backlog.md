@@ -41,18 +41,19 @@ GanaConMerito tiene activo el core real de producto:
 
 Estado beta vigente:
 - **Version objetivo:** `0.6.0`.
-- **HEAD actual de repo revisado:** `b0207e9`.
-- **Ultimo runtime publico verificado:** `ad6ad35` (`2026-08-19T04:20:00Z`).
+- **Commit de codigo release verificado:** `9695d40`.
+- **HEAD documental actual:** `271712f`.
+- **Runtime publico verificado:** `9695d40` (`2026-08-19T00:00:00-05:00`).
 - **Evidencia nueva:** 100 items beta visibles en Supabase y E2E autenticada real de 5 turnos con dashboard verificado.
-- **Dictamen:** candidata a beta funcional; falta alinear source/deploy/runtime y ejecutar gates automatizados de release.
+- **Dictamen:** beta funcional cerrada en `v0.6.0-beta.1`; permanece deuda editorial no bloqueante.
 
 ## Implementado y validado recientemente
 
 ### Beta Candidate 0.6.0 — Cierre documental y preparacion del release
-- Estado: CANDIDATA CON E2E REAL PASS; NO RELEASE BETA CERRADO.
-- Resultado: se homologa el estado ejecutivo entre `status`, `sprint-log`, `change-log`, `runtime-and-release`, backlog y registros de calidad.
-- Evidencia: build, typecheck/lint, tests, contenido, smoke runtime y E2E autenticada real de cinco turnos reportados PASS; queda pendiente alinear runtime al HEAD y ejecutar gates automatizados postdeploy.
-- Limite aceptado: se dejan deudas menores visibles y se concentra el bloqueo beta en paridad source/deploy/runtime y gates automatizados postdeploy.
+- Estado: BETA FUNCIONAL CERRADA; `v0.6.0-beta.1` PUBLICADO.
+- Resultado: estado ejecutivo, paridad de codigo/deploy/runtime y gates frescos documentados.
+- Evidencia: build, typecheck/lint, tests, contenido, smoke runtime y E2E autenticada real de cinco turnos PASS.
+- Limite aceptado: metadata editorial rica pendiente como deuda no bloqueante.
 
 ### Sprint 47 — Mantenimiento menor y saneamiento final
 - Estado: CERRADO EN REPO (CIERRE DOCUMENTAL Y DE TRAZABILIDAD).
@@ -99,9 +100,9 @@ Estado beta vigente:
 - WARN vigente: faltan acuerdo oficial, guia metodologica, estructura de prueba y soporte de convocatoria/manual trazables en repo.
 
 ## Now
-1. Cerrar corrida beta `v0.6.0-beta.1`: alinear `master`/`~/.openclaw/product`/`/opt/gcm/app`/Docker/runtime sobre un unico commit objetivo.
-2. Ejecutar y registrar gates minimos: `content:validate`, tests relevantes, build, `qa:runtime:smoke`, `qa:smoke:postdeploy`, `qa:e2e:api` y `qa:e2e:ui`.
-3. Crear tag/release beta solo despues de evidencia PASS fresca.
+1. Mantener el release `v0.6.0-beta.1` y su runtime sobre `9695d40`.
+2. Ejecutar y registrar gates minimos en cada deploy futuro: `content:validate`, tests relevantes, build, `qa:runtime:smoke`, `qa:smoke:postdeploy`, `qa:e2e:api` y `qa:e2e:ui`.
+3. Preparar la siguiente iteración editorial sin reabrir el checklist Beta cerrado.
 4. Mantener Tutor GCM bajo contrato: sin scoring, sin avance, sin cierre, sin fuente normativa inventada.
 5. Mantener Sprint 22 como clasificacion vigente del frente normativo hasta que exista nueva evidencia documental real.
 6. Ejecutar rotacion de `SUPABASE_SERVICE_ROLE_KEY` (Riesgo identificado en Sprint 20).

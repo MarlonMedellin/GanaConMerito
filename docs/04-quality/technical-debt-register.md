@@ -76,7 +76,7 @@ Toda deuda debe registrar origen, impacto y owner. No se usa este registro para 
 
 ### DEBT-N-004
 - título: cierre beta depende de revalidacion runtime fresca
-- descripción: la E2E autenticada real ya pasó sobre `ad6ad35`, pero el repo principal está en `b0207e9` y aún falta alinear source/deploy/runtime y completar QA automatizado postdeploy.
+- descripción: el checklist Beta ya cerró sobre `9695d40` y los gates postdeploy están documentados; esta deuda queda resuelta para el release y debe archivarse tras la siguiente revisión.
 - origen: cierre documental beta 2026-08-19
 - tipo: ops-qa
 - módulo: runtime
@@ -84,7 +84,7 @@ Toda deuda debe registrar origen, impacto y owner. No se usa este registro para 
 - costo estimado: bajo
 - interés de demora: alto
 - owner: ops + qa
-- estado: abierto
+- estado: resuelto
 - relación: docs/02-delivery/release-checklist.md, docs/05-ops/runtime-and-release.md
 
 ### DEBT-N-005
@@ -97,12 +97,12 @@ Toda deuda debe registrar origen, impacto y owner. No se usa este registro para 
 - costo estimado: medio
 - interés de demora: medio
 - owner: PM-Governance + QA
-- estado: abierto
+- estado: resuelto
 - relación: docs/project/status.md, docs/04-quality/known-issues.md
 
 ### DEBT-N-006
 - título: tag/release beta pendiente
-- descripción: no existe release/tag publico `v0.6.0-beta.1`; debe crearse solo despues de runtime PASS fresco.
+- descripción: release/tag publico `v0.6.0-beta.1` ya creado sobre `9695d40`; la siguiente deuda es la metadata editorial rica.
 - origen: preparacion beta 0.6.0
 - tipo: release
 - módulo: platform
@@ -110,7 +110,7 @@ Toda deuda debe registrar origen, impacto y owner. No se usa este registro para 
 - costo estimado: bajo
 - interés de demora: medio
 - owner: release owner
-- estado: abierto
+- estado: resuelto
 - relación: docs/02-delivery/release-checklist.md
 
 ### DEBT-N-001
@@ -153,6 +153,7 @@ Toda deuda debe registrar origen, impacto y owner. No se usa este registro para 
 - relación: PROD-BACKLOG
 
 ## Vacíos explícitos
+- Actualización 2026-08-20: el checklist Beta queda cerrado para `9695d40`, publicado como `v0.6.0-beta.1`; permanece como deuda abierta la metadata editorial rica del corpus.
 - TODO: inventario completo de deuda por módulo.
 - TODO: clasificación de deuda en seguridad, pruebas y datos.
 - TODO: relación formal con PRs o releases históricas.
