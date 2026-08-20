@@ -117,13 +117,22 @@ Para Beta Candidate 0.6.0, la evidencia historica en `fcc40cb`, `716ec62` u otro
 
 ---
 
+# Validacion UX movil — 2026-08-19
+
+- Runtime: `https://cnsc.profemarlon.com`.
+- Commit desplegado: `9695d40`.
+- Viewport: 390x844 con Playwright y sesion autenticada real.
+- Rutas: `/home`, `/practice`, `/dashboard`.
+- Resultado: `scrollWidth=375` en cada ruta; barra inferior dentro del viewport (`left=12`, `right=363`).
+- Artefactos: `/opt/gcm/app/artifacts/mobile-audit-fixes`.
+
 # Riesgos conocidos actuales
 
 - parte del QA sigue siendo narrativo;
 - la trazabilidad multiagente todavía no es enforcement obligatorio;
 - algunos cierres históricos mezclan repo y runtime;
 - la validación documental todavía depende de disciplina manual.
-- hay drift vigente entre HEAD de repo (`b0207e9`) y ultimo runtime verificado (`ad6ad35`) hasta reconstruir el runtime sobre un commit unico; los gates QA postdeploy ya estan en PASS.
+- los cierres historicos pueden conservar referencias de commits anteriores; la validacion movil actual se realizo sobre `9695d40`.
 
 ---
 

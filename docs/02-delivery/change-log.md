@@ -20,6 +20,16 @@ last_reviewed: 2026-08-11
 - Update trigger: governance, delivery, documentation, drift
 
 ## 2026-08-19
+- tipo: fix+qa+runtime
+- modulo: ux-movil/css/deploy
+- resumen: Se valida UX movil autenticada en `/home`, `/practice` y `/dashboard` a 390x844. Se corrigen restricciones de ancho minimo en grids y etiquetas de competencia sin espacios; el runtime publico queda sin overflow horizontal y con navegacion inferior dentro del viewport.
+- sprint: Mobile UX Validation
+- agente: Codex
+- commit: `9695d40`
+- validacion: `npm run typecheck`, `npm run test:unit`, `git diff --check`, Playwright publico y artefactos `/opt/gcm/app/artifacts/mobile-audit-fixes`
+- relacionados: src/app/globals.css, docs/project/status.md, docs/05-ops/runtime-and-release.md
+
+## 2026-08-19
 - tipo: docs+beta-readiness+runtime-evidence
 - modulo: docs/status/release/supabase/runtime
 - resumen: Actualizacion del cierre documental de Beta Candidate 0.6.0. Se registra `b0207e9` como HEAD del repositorio principal, `ad6ad35` como runtime publico verificado, la aplicacion de migraciones Supabase `0013`-`0017`, el banco beta de 100 items y la E2E autenticada real de cinco turnos. Se conserva el release como pendiente porque source, deploy tree y runtime aun no comparten commit.

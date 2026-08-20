@@ -259,6 +259,17 @@ El proyecto ya tiene fundacion semantica, validacion editorial rica, senales ped
 
 Estado Sprint 47 (mantenimiento menor y saneamiento final): **CERRADO EN REPO (CIERRE DOCUMENTAL Y DE TRAZABILIDAD)**.
 
+## Validacion UX movil — 2026-08-19
+
+**Estado:** VALIDADA EN RUNTIME PUBLICO
+
+- Viewport Playwright: 390x844, sesion autenticada real.
+- Rutas verificadas: `/home`, `/practice` y `/dashboard`.
+- `scrollWidth` final: 375 px en las tres rutas; no se detecto overflow horizontal.
+- Navegacion inferior movil visible dentro del viewport en las tres rutas.
+- Se corrigieron hijos de CSS Grid y etiquetas de competencia sin espacios que imponian un ancho mayor al viewport.
+- Evidencia adicional: `/opt/gcm/app/artifacts/mobile-audit-fixes`.
+
 ## Estado normativo
 
 Sprint 22 se mantiene en estado `synthesized_governed_unverified` dado que el sistema todavia no cuenta con anexos oficiales suficientes para promover `source_verified`.
