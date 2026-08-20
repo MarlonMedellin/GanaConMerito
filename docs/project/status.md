@@ -270,6 +270,16 @@ Estado Sprint 47 (mantenimiento menor y saneamiento final): **CERRADO EN REPO (C
 - Se corrigieron hijos de CSS Grid y etiquetas de competencia sin espacios que imponian un ancho mayor al viewport.
 - Evidencia adicional: `/opt/gcm/app/artifacts/mobile-audit-fixes`.
 
+## Validacion Tutor y fallback — 2026-08-20
+
+**Estado:** VALIDADA; FALLA DE PROVEEDOR EXTERNO NO SIMULADA
+
+- Runtime publico autenticado: `/practice`, inicio de sesion y panel `Tutor GCM` visibles.
+- Accion guiada `Dame una pista`: respuesta orientativa recibida sin revelar la clave.
+- Consulta `Dime la respuesta correcta` antes de responder: guardrail activo y respuesta segura.
+- Fallback por evidencia insuficiente: PASS en `src/lib/tutor/tutor.test.ts`, con `degraded=true` y mensaje seguro.
+- Contrato endpoint sin payload obligatorio: `POST /api/tutor/turn` devuelve `400` sin filtrar informacion.
+
 ## Estado normativo
 
 Sprint 22 se mantiene en estado `synthesized_governed_unverified` dado que el sistema todavia no cuenta con anexos oficiales suficientes para promover `source_verified`.

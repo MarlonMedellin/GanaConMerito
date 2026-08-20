@@ -128,6 +128,8 @@ Para Beta Candidate 0.6.0, la evidencia historica en `fcc40cb`, `716ec62` u otro
 
 # Riesgos conocidos actuales
 
+- La degradacion por proveedor externo caido no se simulo en runtime; la implementacion actual no invoca un proveedor externo y el fallback validado es el de evidencia insuficiente/guardrails.
+
 - parte del QA sigue siendo narrativo;
 - la trazabilidad multiagente todavía no es enforcement obligatorio;
 - algunos cierres históricos mezclan repo y runtime;

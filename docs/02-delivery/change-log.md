@@ -20,6 +20,15 @@ last_reviewed: 2026-08-11
 - Update trigger: governance, delivery, documentation, drift
 
 ## 2026-08-19
+- tipo: qa+tutor+fallback
+- modulo: tutor/api/runtime
+- resumen: Se valida el Tutor autenticado en runtime publico: pista guiada funcional, bloqueo de revelacion antes de responder y contrato 400 ante payload incompleto. El fallback por evidencia insuficiente pasa el test contractual con degradacion segura; no se simulo una caida de proveedor externo porque el flujo actual no depende de uno.
+- sprint: Tutor and Fallback Validation
+- agente: Codex
+- validacion: `npm run test:tutor`, `npm run test:recent-sprints`, Playwright publico y `POST /api/tutor/turn` sin payload obligatorio
+- relacionados: src/components/tutor/tutor-interface.tsx, src/app/api/tutor/turn/route.ts, src/lib/tutor/tutor-orchestrator.ts, src/lib/tutor/tutor-guardrails.ts
+
+## 2026-08-19
 - tipo: fix+qa+runtime
 - modulo: ux-movil/css/deploy
 - resumen: Se valida UX movil autenticada en `/home`, `/practice` y `/dashboard` a 390x844. Se corrigen restricciones de ancho minimo en grids y etiquetas de competencia sin espacios; el runtime publico queda sin overflow horizontal y con navegacion inferior dentro del viewport.
