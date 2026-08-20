@@ -5,14 +5,14 @@ Este documento define los pasos obligatorios para considerar un release como exi
 ## Snapshot beta candidata 0.6.0
 - Fecha de homologacion documental: 2026-08-20.
 - Commit de codigo release verificado: `9695d40`.
-- HEAD documental actual: `271712f` (cambios de documentacion posteriores, sin cambios de codigo).
+- HEAD documental: commits posteriores al release, sin cambios de codigo.
 - Runtime publico verificado: `9695d40` (`2026-08-19T00:00:00-05:00`).
 - Estado: beta candidata con gates locales y QA postdeploy fresco PASS; checklist cerrado con deuda editorial explicita.
 - Supabase: migraciones `0013`-`0017` aplicadas; 100 preguntas visibles en `v_item_bank_active`.
 - Release creado: `v0.6.0-beta.1` sobre `9695d40`.
 
 ## 1. Validación Pre-Release (fuente canónica)
-- [x] Commit objetivo de codigo definido y registrado: `9695d40`; HEAD documental `271712f`.
+- [x] Commit objetivo de codigo definido y registrado: `9695d40`; la documentación posterior no cambia el código.
 - [x] Evidencia funcional real registrada sobre runtime `9695d40`: 5 turnos, cierre y dashboard.
 - [x] Trabajo de sincronizacion realizado en `/home/ubuntu/.openclaw/product`; `/opt/gcm/app` actualizado desde Git.
 - [x] `git status --short --branch` bajo control: `master` alineado con `origin/master`, sin cambios pendientes al cierre.
@@ -40,7 +40,7 @@ Este documento define los pasos obligatorios para considerar un release como exi
   ```
 
 ## 3. Triple Verificación (obligatoria)
-- [x] **Source de codigo**: `9695d40` verificado; HEAD documental `271712f` contiene solo documentación.
+- [x] **Source de codigo**: `9695d40` verificado; los commits posteriores contienen solo documentación.
 - [x] **Deploy tree**: `/opt/gcm/app` en `9695d40`.
 - [x] **Runtime visible**: `https://cnsc.profemarlon.com` muestra `9695d40`.
 - [x] **BuildTime visible**: `2026-08-19T00:00:00-05:00`.
@@ -58,6 +58,6 @@ Este documento define los pasos obligatorios para considerar un release como exi
 ## 5. Cierre documental
 - [x] Actualizar `docs/project/status.md`, `docs/02-delivery/sprint-log.md` y `docs/02-delivery/change-log.md`.
 - [x] Actualizar `docs/01-product/backlog.md`, `docs/05-ops/runtime-and-release.md`, `docs/04-quality/known-issues.md` y `docs/04-quality/technical-debt-register.md` cuando cambia estado beta, runtime, QA o deuda; los cambios documentales están trazados en commits previos.
-- [x] Diferenciar explícitamente entre release de codigo (`9695d40`), HEAD documental (`271712f`) y runtime.
+- [x] Diferenciar explícitamente entre release de codigo (`9695d40`), documentación posterior y runtime.
 - [x] Tag/release `v0.6.0-beta.1` creado y publicado sobre `9695d40`.
 - [x] Checklist Beta cerrado para la candidata; queda como riesgo abierto únicamente la deuda editorial de metadata rica.

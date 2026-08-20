@@ -54,7 +54,7 @@ Runtime público:
 
 Snapshot vigente para beta candidata:
 - Commit de codigo release: `9695d40`
-- HEAD documental: `271712f`
+- Documentación: commits posteriores al release, sin cambios de código
 - Runtime publico verificado: `9695d40`
 - Build time visible: `2026-08-19T00:00:00-05:00`
 - Estado de paridad: codigo/deploy/runtime alineados; HEAD documental posterior solo contiene documentación

@@ -25,7 +25,7 @@ last_reviewed: 2026-08-19
 
 ## Current delivery state
 - **Current operational block**: Beta Candidate 0.6.0 — checklist cerrado para release de codigo (2026-08-20).
-- **Current code release commit**: `9695d40`; HEAD documental: `271712f`.
+- **Current code release commit**: `9695d40`; documentación posterior sin cambios de código.
 - **Public runtime-verified commit**: `9695d40` (`2026-08-19T00:00:00-05:00`).
 - **Beta status**: checklist cerrado con QA postdeploy fresco PASS; tag `v0.6.0-beta.1` publicado.
 - **Supabase**: migraciones `0013`-`0017` aplicadas; 100 preguntas beta visibles en `v_item_bank_active`.
@@ -43,7 +43,7 @@ last_reviewed: 2026-08-19
 - **Fecha de alineacion**: 2026-08-19
 - **Rama canonica**: `master`
 - **Commit de codigo release**: `9695d40`
-- **HEAD documental**: `271712f`
+- **Documentación**: commits posteriores al release, sin cambios de código.
 - **Runtime publico verificado**: `9695d40` (`2026-08-19T00:00:00-05:00`)
 - **Version declarada**: `0.6.0`
 - **Objetivo**: dejar una sola lectura ejecutiva del estado beta con gates frescos, paridad de codigo y deuda residual explicita.

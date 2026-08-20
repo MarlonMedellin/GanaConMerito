@@ -42,7 +42,7 @@ GanaConMerito tiene activo el core real de producto:
 Estado beta vigente:
 - **Version objetivo:** `0.6.0`.
 - **Commit de codigo release verificado:** `9695d40`.
-- **HEAD documental actual:** `271712f`.
+- **Documentación:** commits posteriores al release, sin cambios de código.
 - **Runtime publico verificado:** `9695d40` (`2026-08-19T00:00:00-05:00`).
 - **Evidencia nueva:** 100 items beta visibles en Supabase y E2E autenticada real de 5 turnos con dashboard verificado.
 - **Dictamen:** beta funcional cerrada en `v0.6.0-beta.1`; permanece deuda editorial no bloqueante.

@@ -33,7 +33,7 @@ last_reviewed: 2026-08-19
 ## Detalle priorizado
 - Para Beta Candidate 0.6.0, el release de codigo `9695d40` tiene repo de codigo, deploy y runtime publico verificados y los gates minimos pasan en el entorno real.
 - Runtime publico verificado: `9695d40` (`2026-08-19T00:00:00-05:00`).
-- HEAD documental actual: `271712f`.
+- Documentación posterior al release sin cambios de código.
 - Ver auditoría específica: `docs/04-quality/question-bank-load-phase-audit-2026-04-26.md`
 - Ver corrida base: `docs/04-quality/chromium-qa-run-2026-04-27.md`
 - Prioridad inmediata:
