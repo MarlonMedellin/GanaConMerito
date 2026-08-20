@@ -58,6 +58,7 @@ Snapshot vigente para beta candidata:
 - Build time visible: `2026-08-19T04:20:00Z`
 - Estado de paridad: no alineado; E2E real PASS sobre `ad6ad35`
 - Base Supabase: migraciones `0013`-`0017` aplicadas; 100 items beta en `v_item_bank_active`
+- QA postdeploy: smoke local/publico, API E2E y UI Chromium PASS; artifacts registrados en `docs/02-delivery/release-checklist.md`
 - Version objetivo: `0.6.0`
 - Release beta sugerido despues de cierre: `v0.6.0-beta.1`
 
@@ -122,7 +123,7 @@ Para Beta Candidate 0.6.0, la evidencia historica en `fcc40cb`, `716ec62` u otro
 - la trazabilidad multiagente todavía no es enforcement obligatorio;
 - algunos cierres históricos mezclan repo y runtime;
 - la validación documental todavía depende de disciplina manual.
-- hay drift vigente entre HEAD de repo (`b0207e9`) y ultimo runtime verificado (`ad6ad35`) hasta reconstruir el runtime sobre un commit unico.
+- hay drift vigente entre HEAD de repo (`b0207e9`) y ultimo runtime verificado (`ad6ad35`) hasta reconstruir el runtime sobre un commit unico; los gates QA postdeploy ya estan en PASS.
 
 ---
 

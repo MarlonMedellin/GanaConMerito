@@ -28,6 +28,14 @@ last_reviewed: 2026-08-11
 - relacionados: docs/project/status.md, docs/02-delivery/release-checklist.md, docs/02-delivery/sprint-log.md, docs/05-ops/runtime-and-release.md, supabase/migrations/0013_beta_source_boundary.sql, supabase/migrations/0017_backfill_beta_thematic_nuclei.sql
 - limitaciones: gates automatizados postdeploy/API/UI y tag `v0.6.0-beta.1` aun pendientes.
 
+## 2026-08-19 — QA postdeploy
+- tipo: qa+runtime+beta-readiness
+- modulo: postdeploy/api/ui/runtime
+- resumen: Smoke local y publico, API E2E de cinco turnos y UI E2E Chromium completaron PASS sobre el runtime `ad6ad35`. Los artifacts quedaron registrados en el checklist de release; no se crea tag beta porque source/deploy/runtime siguen fuera de paridad con `b0207e9`.
+- agente: Codex
+- relacionados: docs/project/status.md, docs/02-delivery/release-checklist.md, docs/05-ops/runtime-and-release.md
+- evidencia: `qa-smoke-postdeploy-smoke-mt0wd760-p8yke7`, `qa-smoke-postdeploy-smoke-mt0wkf4t-vycjn4`, `qa-e2e-api-mt0wdtcq-1anjty`, `qa-ui-e2e-ui-mt0wfn7a-mh3n8i`
+
 ## Governance Hardening (executive block)
 - tipo: governance
 - modulo: docs/ops/delivery

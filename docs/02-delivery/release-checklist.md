@@ -46,11 +46,12 @@ Este documento define los pasos obligatorios para considerar un release como exi
 - [ ] Si una de las 4 comprobaciones falla, el release no se considera cerrado.
 
 ## 4. Gates QA Postdeploy (runtime `:3000`)
-- [ ] `QA_BASE_URL=http://127.0.0.1:3000 npm run qa:smoke:postdeploy`
-- [ ] Si el cambio toca backend/sesiones/dashboard: `QA_BASE_URL=http://127.0.0.1:3000 npm run qa:e2e:api`
-- [ ] Si el cambio toca onboarding/practice/dashboard/UI: `QA_BASE_URL=http://127.0.0.1:3000 npm run qa:e2e:ui`
+- [x] Smoke local: `/opt/gcm/app/artifacts/qa-smoke-postdeploy-smoke-mt0wd760-p8yke7`.
+- [x] Smoke publico: `/opt/gcm/app/artifacts/qa-smoke-postdeploy-smoke-mt0wkf4t-vycjn4`.
+- [x] API E2E 5 turnos: `/opt/gcm/app/artifacts/qa-e2e-api-mt0wdtcq-1anjty` (`assertions.ok=true`).
+- [x] UI Chromium 5 turnos: `/opt/gcm/app/artifacts/qa-ui-e2e-ui-mt0wfn7a-mh3n8i` (`assertions.ok=true`).
 - [x] E2E Playwright autenticada manual: 5 turnos, sesión cerrada y dashboard verificado.
-- [ ] Guardar artifact roots de cada corrida automatizada verde en docs de cierre.
+- [x] Artifact roots de smoke, API E2E y UI E2E registrados arriba.
 - [ ] Si una corrida tarda anormalmente o depende de bootstrap host-specific, dejarlo explícito como riesgo operativo; no maquillarlo como verde limpio.
 
 ## 5. Cierre documental

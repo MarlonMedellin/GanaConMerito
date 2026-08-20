@@ -28,7 +28,7 @@ El HEAD actual del repo principal es `b0207e9`. `~/.openclaw/product` y `/opt/gc
 `ad6ad35` como ultimo commit visible en el runtime publico. La corrida E2E autenticada real fue ejecutada sobre ese runtime y completo 5/5 turnos, cierre de sesion y dashboard.
 
 ## Current Sprint Status
-**BETA CANDIDATE CON RECORRIDO FUNCIONAL VERIFICADO**: falta alinear el commit del runtime con el HEAD principal y completar los gates automatizados/documentales de release.
+**BETA CANDIDATE CON QA POSTDEPLOY PASS**: smoke publico, API E2E y UI Chromium estan verificados; falta alinear el commit del runtime con el HEAD principal y completar el cierre de release.
 
 ## Known Drift
 - Persisten contratos y validaciones parcialmente narrativas fuera del baseline canonico.
@@ -91,8 +91,8 @@ El HEAD actual del repo principal es `b0207e9`. `~/.openclaw/product` y `/opt/gc
 
 ### Gate que bloquea declararla beta funcional
 - Falta alinear `~/.openclaw/product`, `/opt/gcm/app` y la imagen runtime con `b0207e9`.
-- Falta ejecutar y registrar los gates automatizados postdeploy/API/UI de esta revision.
-- Falta actualizar el checklist con los artifacts concretos de cada gate.
+- QA postdeploy registrado como PASS: smoke local/publico, API E2E y UI Chromium.
+- Falta alinear source/deploy/runtime y crear el tag `v0.6.0-beta.1`.
 
 ### Criterio de cierre beta recomendado
 Declarar `v0.6.0-beta.1` solo cuando `docs/02-delivery/release-checklist.md` quede completo para un commit unico y el runtime publico muestre ese mismo commit.
