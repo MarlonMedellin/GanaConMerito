@@ -280,6 +280,13 @@ Estado Sprint 47 (mantenimiento menor y saneamiento final): **CERRADO EN REPO (C
 - Fallback por evidencia insuficiente: PASS en `src/lib/tutor/tutor.test.ts`, con `degraded=true` y mensaje seguro.
 - Contrato endpoint sin payload obligatorio: `POST /api/tutor/turn` devuelve `400` sin filtrar informacion.
 
+## Cumplimiento PRD Beta — 2026-08-20
+
+- Beta técnica funcional: PASS.
+- Fallback editorial ante caída simulada del endpoint Tutor: PASS en runtime público; la sesión conserva feedback y permite continuar.
+- PRD completo al 100%: pendiente de validación humana con perfiles A/B/C, cohorte de 10–20 usuarios y métrica de comprensión.
+- Matriz detallada: `docs/02-delivery/prd-beta-compliance.md`.
+
 ## Estado normativo
 
 Sprint 22 se mantiene en estado `synthesized_governed_unverified` dado que el sistema todavia no cuenta con anexos oficiales suficientes para promover `source_verified`.

@@ -20,6 +20,15 @@ last_reviewed: 2026-08-11
 - Update trigger: governance, delivery, documentation, drift
 
 ## 2026-08-19
+- tipo: feat+qa+fallback
+- modulo: tutor/practice/prd
+- resumen: Se conecta el feedback editorial de la respuesta como fallback visible cuando falla el endpoint del Tutor. La sesión conserva el resultado y permite continuar; la prueba pública con fallo inyectado pasa. Se agrega matriz de cumplimiento del PRD, distinguiendo Beta técnica PASS de validación humana pendiente.
+- agente: Codex
+- commit: `6926ca9`
+- validacion: `npm run typecheck`, `npm run test:unit`, build Docker y Playwright público con caída simulada de `/api/tutor/turn`
+- relacionados: src/components/tutor/tutor-interface.tsx, src/components/practice/practice-session.tsx, docs/02-delivery/prd-beta-compliance.md
+
+## 2026-08-19
 - tipo: qa+tutor+fallback
 - modulo: tutor/api/runtime
 - resumen: Se valida el Tutor autenticado en runtime publico: pista guiada funcional, bloqueo de revelacion antes de responder y contrato 400 ante payload incompleto. El fallback por evidencia insuficiente pasa el test contractual con degradacion segura; no se simulo una caida de proveedor externo porque el flujo actual no depende de uno.
