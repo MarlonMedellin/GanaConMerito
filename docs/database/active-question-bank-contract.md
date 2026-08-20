@@ -61,8 +61,11 @@ Estos campos aún no forman parte del contrato mínimo activo, pero ya existen e
 - `is_active boolean`
 - `source_type text`
 - `source_path text`
+- `editorial_metadata jsonb` — contrato editorial beta preservado desde los JSON de origen (perfil sugerido, claim, evidencia, tarea, nivel cognitivo, distractores, fairness, accesibilidad y trazabilidad)
 - `created_at timestamptz`
 - `updated_at timestamptz`
+
+La frontera runtime beta exige `source_path like 'content/items/beta-v1/%'`. Los registros sin esa trazabilidad permanecen fuera de `v_item_bank_active` aunque conserven compatibilidad histórica en `item_bank`.
 
 ### Flags derivados del contrato de lectura
 - `classification_bucket text null` — override transitorio (`legacy` | `blocked`) cuando aplique
@@ -199,9 +202,8 @@ Sin cambio arquitectónico mayor:
 - deja de depender indirectamente de `item_bank` crudo porque el backend ya lee la vista estable
 
 ### Escritura
-No cambiar todavía:
-- `upsert_content_item(...)` sigue escribiendo a `item_bank`
-- la vista es solo capa de lectura
+- `upsert_content_item(...)` escribe opciones, `source_path` y `editorial_metadata` de forma atómica en `item_bank`.
+- La vista es solo capa de lectura y expone el metadato editorial para consumidores autorizados.
 
 ---
 
