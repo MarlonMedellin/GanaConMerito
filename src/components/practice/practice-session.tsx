@@ -337,7 +337,11 @@ export function PracticeSession() {
           ) : null}
 
           <div className="mt-24 mb-24 tutor-zone">
-            <TutorInterface sessionId={session?.sessionId ?? ""} currentItemId={item.id} />
+            <TutorInterface
+              sessionId={session?.sessionId ?? ""}
+              currentItemId={item.id}
+              fallbackMessage={feedback?.feedbackText}
+            />
           </div>
         </article>
       ) : null}

@@ -6,9 +6,10 @@ import { TutorOutput } from "@/types/tutor-turn";
 interface TutorInterfaceProps {
   sessionId: string;
   currentItemId: string;
+  fallbackMessage?: string;
 }
 
-export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps) {
+export function TutorInterface({ sessionId, currentItemId, fallbackMessage }: TutorInterfaceProps) {
   const guidedActions = [
     "Dame una pista",
     "Explícame esta pregunta",
@@ -20,6 +21,7 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
   const [isOpen, setIsOpen] = useState(true);
   const [message, setMessage] = useState("");
   const [lastResponse, setLastResponse] = useState<TutorOutput | null>(null);
+  const [fallbackVisible, setFallbackVisible] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const messageInputRef = useRef<HTMLTextAreaElement | null>(null);
@@ -27,6 +29,7 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
 
   useEffect(() => {
     setLastResponse(null);
+    setFallbackVisible(false);
     setError(null);
 
     if (typeof window === "undefined") {
@@ -71,11 +74,17 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
       }
 
       setLastResponse(data.output);
+      setFallbackVisible(false);
       if (options?.clearMessage ?? true) {
         setMessage("");
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Error desconocido");
+      if (fallbackMessage) {
+        setFallbackVisible(true);
+        setError(null);
+      } else {
+        setError(err instanceof Error ? err.message : "Error desconocido");
+      }
     } finally {
       setLoading(false);
     }
@@ -168,6 +177,15 @@ export function TutorInterface({ sessionId, currentItemId }: TutorInterfaceProps
             <span className="subtle subtle-xs">
               {lastResponse.degraded ? "Modo limitado" : "Tutoría orientativa"}
             </span>
+          </div>
+        </div>
+      ) : null}
+
+      {fallbackVisible && fallbackMessage ? (
+        <div className="feedback-card tutor-feedback-card" data-testid="tutor-gcm-fallback">
+          <p className="body-sm tutor-feedback-text">{fallbackMessage}</p>
+          <div className="tutor-response-meta">
+            <span className="subtle subtle-xs">Feedback editorial disponible; el Tutor está temporalmente limitado.</span>
           </div>
         </div>
       ) : null}
