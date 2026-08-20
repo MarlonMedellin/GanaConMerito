@@ -742,6 +742,11 @@ pre {
   border-bottom: 1px solid var(--border-subtle);
 }
 
+.list-row > * {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .list-row:last-child {
   border-bottom: 0;
 }
