@@ -565,6 +565,13 @@ pre {
   padding-top: 24px;
 }
 
+/* Allow long dashboard copy and cards to shrink inside mobile grid tracks. */
+.content-stack > *,
+.metric-grid > *,
+.two-column-grid > * {
+  min-width: 0;
+}
+
 .hero-card,
 .surface-card,
 .metric-card,
