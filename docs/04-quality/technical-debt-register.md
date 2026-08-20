@@ -76,8 +76,8 @@ Toda deuda debe registrar origen, impacto y owner. No se usa este registro para 
 
 ### DEBT-N-004
 - título: cierre beta depende de revalidacion runtime fresca
-- descripción: el repo tiene base tecnica cercana a beta; `7ade741` ya coincide entre repo, deploy y metadata visible del runtime, pero falta QA postdeploy/E2E fresco.
-- origen: homologacion documental beta 2026-08-11
+- descripción: la E2E autenticada real ya pasó sobre `ad6ad35`, pero el repo principal está en `b0207e9` y aún falta alinear source/deploy/runtime y completar QA automatizado postdeploy.
+- origen: cierre documental beta 2026-08-19
 - tipo: ops-qa
 - módulo: runtime
 - impacto: alto

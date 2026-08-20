@@ -53,9 +53,11 @@ Runtime público:
 - `https://cnsc.profemarlon.com`
 
 Snapshot vigente para beta candidata:
-- HEAD actual de repo revisado: `2cc274b`
-- Ultimo runtime publico verificado: `2cc274b`
-- Estado de paridad: commit alineado; E2E con cuenta real pendiente
+- HEAD actual de repo revisado: `b0207e9`
+- Ultimo runtime publico verificado: `ad6ad35`
+- Build time visible: `2026-08-19T04:20:00Z`
+- Estado de paridad: no alineado; E2E real PASS sobre `ad6ad35`
+- Base Supabase: migraciones `0013`-`0017` aplicadas; 100 items beta en `v_item_bank_active`
 - Version objetivo: `0.6.0`
 - Release beta sugerido despues de cierre: `v0.6.0-beta.1`
 
@@ -72,7 +74,7 @@ No declarar:
 
 sin evidencia mínima.
 
-Para Beta Candidate 0.6.0, la evidencia historica en `fcc40cb`, `716ec62` u otros commits sirve como contexto de madurez. La verificacion actual confirma que el runtime visible muestra `2cc274b` y exige login real, pero no sustituye la E2E autenticada completa.
+Para Beta Candidate 0.6.0, la evidencia historica en `fcc40cb`, `716ec62` u otros commits sirve como contexto de madurez. La verificacion actual confirma que el runtime visible muestra `ad6ad35`, exige login real y completo una E2E autenticada de cinco turnos. Esto no sustituye la triple verificacion de release porque el repo principal ya avanzo a `b0207e9`.
 
 ---
 
@@ -120,7 +122,7 @@ Para Beta Candidate 0.6.0, la evidencia historica en `fcc40cb`, `716ec62` u otro
 - la trazabilidad multiagente todavía no es enforcement obligatorio;
 - algunos cierres históricos mezclan repo y runtime;
 - la validación documental todavía depende de disciplina manual.
-- hay drift vigente entre HEAD de repo y ultimo runtime verificado documentado hasta que se ejecute la corrida beta.
+- hay drift vigente entre HEAD de repo (`b0207e9`) y ultimo runtime verificado (`ad6ad35`) hasta reconstruir el runtime sobre un commit unico.
 
 ---
 

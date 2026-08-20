@@ -11,7 +11,7 @@ related:
   - PROD-VISION
   - DEL-SPRINT-LOG
   - QUAL-DEBT-REGISTER
-last_reviewed: 2026-08-11
+last_reviewed: 2026-08-19
 ---
 
 # Backlog de producto
@@ -41,17 +41,18 @@ GanaConMerito tiene activo el core real de producto:
 
 Estado beta vigente:
 - **Version objetivo:** `0.6.0`.
-- **HEAD actual de repo revisado:** `7ade741`.
-- **Ultimo runtime publico verificado documentalmente:** `7ade741`.
-- **Dictamen:** candidata a beta; falta corrida fresca de runtime/release para declararla beta funcional.
+- **HEAD actual de repo revisado:** `b0207e9`.
+- **Ultimo runtime publico verificado:** `ad6ad35` (`2026-08-19T04:20:00Z`).
+- **Evidencia nueva:** 100 items beta visibles en Supabase y E2E autenticada real de 5 turnos con dashboard verificado.
+- **Dictamen:** candidata a beta funcional; falta alinear source/deploy/runtime y ejecutar gates automatizados de release.
 
 ## Implementado y validado recientemente
 
-### Beta Candidate 0.6.0 — Alineacion documental y preparacion de runtime
-- Estado: CANDIDATA DOCUMENTAL; NO RELEASE BETA CERRADO.
+### Beta Candidate 0.6.0 — Cierre documental y preparacion del release
+- Estado: CANDIDATA CON E2E REAL PASS; NO RELEASE BETA CERRADO.
 - Resultado: se homologa el estado ejecutivo entre `status`, `sprint-log`, `change-log`, `runtime-and-release`, backlog y registros de calidad.
-- Evidencia: auditoria previa de repo/PRs y validacion local parcial reporto build y typecheck/lint PASS; runtime fresco pendiente.
-- Limite aceptado: se dejan deudas menores visibles y se concentra el bloqueo beta en una corrida operacional completa.
+- Evidencia: build, typecheck/lint, tests, contenido, smoke runtime y E2E autenticada real de cinco turnos reportados PASS; queda pendiente alinear runtime al HEAD y ejecutar gates automatizados postdeploy.
+- Limite aceptado: se dejan deudas menores visibles y se concentra el bloqueo beta en paridad source/deploy/runtime y gates automatizados postdeploy.
 
 ### Sprint 47 — Mantenimiento menor y saneamiento final
 - Estado: CERRADO EN REPO (CIERRE DOCUMENTAL Y DE TRAZABILIDAD).

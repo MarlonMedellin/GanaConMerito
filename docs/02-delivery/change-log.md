@@ -19,6 +19,15 @@ last_reviewed: 2026-08-11
 - Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
 - Update trigger: governance, delivery, documentation, drift
 
+## 2026-08-19
+- tipo: docs+beta-readiness+runtime-evidence
+- modulo: docs/status/release/supabase/runtime
+- resumen: Actualizacion del cierre documental de Beta Candidate 0.6.0. Se registra `b0207e9` como HEAD del repositorio principal, `ad6ad35` como runtime publico verificado, la aplicacion de migraciones Supabase `0013`-`0017`, el banco beta de 100 items y la E2E autenticada real de cinco turnos. Se conserva el release como pendiente porque source, deploy tree y runtime aun no comparten commit.
+- sprint: Beta Candidate 0.6.0 — Cierre documental y preparacion del release
+- agente: Codex
+- relacionados: docs/project/status.md, docs/02-delivery/release-checklist.md, docs/02-delivery/sprint-log.md, docs/05-ops/runtime-and-release.md, supabase/migrations/0013_beta_source_boundary.sql, supabase/migrations/0017_backfill_beta_thematic_nuclei.sql
+- limitaciones: gates automatizados postdeploy/API/UI y tag `v0.6.0-beta.1` aun pendientes.
+
 ## Governance Hardening (executive block)
 - tipo: governance
 - modulo: docs/ops/delivery

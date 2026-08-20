@@ -10,31 +10,31 @@ last_reviewed: 2026-08-19
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-08-19 — Cambio de repositorio principal y verificacion de paridad.
+Ultima actualizacion: 2026-08-19 — Cierre documental de Beta Candidate 0.6.0 con evidencia runtime diferenciada.
 
 ---
 
 # Executive Operational Snapshot
 
 ## Current Sprint
-Beta Candidate 0.6.0 — Alineacion documental y preparacion de runtime.
+Beta Candidate 0.6.0 — Cierre documental y preparacion del release.
 
 ## Current Runtime State
-Runtime publico verificado en `https://cnsc.profemarlon.com` mostrando `2cc274b`.
+Runtime publico verificado en `https://cnsc.profemarlon.com` mostrando `ad6ad35` y build time `2026-08-19T04:20:00Z`.
 
-El HEAD actual del repo es `2cc274b`; GitHub, `~/.openclaw/product`, `/opt/gcm/app` y el contenedor estan alineados en ese commit.
+El HEAD actual del repo principal es `b0207e9`. `~/.openclaw/product` y `/opt/gcm/app` estan en `ad6ad35`; Supabase tiene aplicadas las migraciones `0013` a `0017` y expone 100 items beta en `v_item_bank_active`.
 
 ## Last Verified Commit
-`2cc274b` como ultimo commit visible en el runtime publico; la suite E2E autenticada con cuenta real aun no se ha ejecutado en esta revision.
+`ad6ad35` como ultimo commit visible en el runtime publico. La corrida E2E autenticada real fue ejecutada sobre ese runtime y completo 5/5 turnos, cierre de sesion y dashboard.
 
 ## Current Sprint Status
-**BETA CANDIDATE DOCUMENTAL**: el repo tiene base tecnica para beta, pero la beta funcional queda pendiente de corrida fresca de release/runtime sobre el commit objetivo.
+**BETA CANDIDATE CON RECORRIDO FUNCIONAL VERIFICADO**: falta alinear el commit del runtime con el HEAD principal y completar los gates automatizados/documentales de release.
 
 ## Known Drift
 - Persisten contratos y validaciones parcialmente narrativas fuera del baseline canonico.
 - La trazabilidad multiagente todavia no es enforcement obligatorio.
 - La integracion del Tutor con LLM real queda como deuda tecnica futura y no forma parte del cierre de Sprint 47.
-- La metadata estatica de `/opt/gcm/docker-compose.yml` conserva valores historicos, pero la imagen y el runtime fueron reconstruidos explicitamente con `2cc274b`; queda pendiente normalizar ese compose fuera del repo.
+- La metadata estatica de `/opt/gcm/docker-compose.yml` conserva valores historicos, pero la imagen y el runtime fueron reconstruidos explicitamente con `ad6ad35`; queda pendiente normalizar ese compose fuera del repo.
 - `/opt/gcm/app` contiene archivos no rastreados de auditoria y una migracion SQL que requieren clasificacion antes de limpiar.
 - El bypass de autenticacion QA quedo desactivado en produccion; `/login` exige ahora acceso real con Google.
 - Los documentos historicos de QA/runtime deben tratarse como evidencia auxiliar, no como estado vigente.
@@ -46,10 +46,10 @@ El HEAD actual del repo es `2cc274b`; GitHub, `~/.openclaw/product`, `/opt/gcm/a
 - sincronizacion documental automatica;
 - reduccion de documentacion legacy;
 - integracion fuerte rich-only.
-- tag/release beta publico (`v0.6.0-beta.1`) pendiente hasta cerrar runtime fresco.
+- tag/release beta publico (`v0.6.0-beta.1`) pendiente hasta cerrar la triple verificacion sobre un unico commit.
 
 ## Last Audit
-2026-08-11 — homologacion documental para beta candidata; runtime no revalidado en esta entrega.
+2026-08-19 — cierre documental: Supabase, runtime publico y E2E real revalidados; paridad repo/runtime aun pendiente.
 
 ---
 
@@ -59,13 +59,13 @@ El HEAD actual del repo es `2cc274b`; GitHub, `~/.openclaw/product`, `/opt/gcm/a
 
 ## Estado general
 
-**Estado:** producto activo con core operativo, Tutor GCM gobernado, capa editorial de normalizacion rica conectada al banco activo, senales pedagogicas persistidas, learning signals integradas y calibracion/metricas internas basicas previamente verificadas en runtime; cierre normativo documental y saneamiento final de trazabilidad completados en repo. El estado vigente para beta es **candidate**, no release cerrado.
+**Estado:** producto activo con core operativo y beta candidate funcionalmente recorrida. El banco beta, su contrato editorial JSONB y su segmentacion por nucleo estan conectados al runtime. El estado vigente es **candidate**, no release cerrado, porque repo y runtime aun no comparten el mismo commit.
 
 **Producto:** login, onboarding, practica y dashboard siguen siendo las superficies activas; Tutor GCM permanece bajo contrato, sin autoridad sobre scoring, avance ni estado de sesion.
 
-**Bloque actual en repo:** Beta Candidate 0.6.0 — Alineacion documental y preparacion de runtime.
+**Bloque actual en repo:** Beta Candidate 0.6.0 — Cierre documental y preparacion del release.
 
-**Estado del bloque actual:** DOCUMENTALMENTE ALINEADO; runtime fresco pendiente.
+**Estado del bloque actual:** EVIDENCIA FUNCIONAL FRESCA; triple verificacion de release pendiente.
 
 **Sprint anterior cerrado:** Sprint 46 — Cierre normativo del Tutor GCM.
 
@@ -79,7 +79,10 @@ El HEAD actual del repo es `2cc274b`; GitHub, `~/.openclaw/product`, `/opt/gcm/a
 **CANDIDATA A BETA, NO RELEASE CERRADO**
 
 ### Evidencia positiva
-- HEAD actual de `master`: `2cc274b`.
+- HEAD actual de `master`: `b0207e9`.
+- Runtime publico y deploy tree verificados en `ad6ad35`.
+- E2E autenticado real: 5/5 respuestas correctas, sesion cerrada y dashboard con 5 intentos.
+- Supabase: 100 preguntas beta importadas y 100 filas visibles en `v_item_bank_active`.
 - Version declarada: `0.6.0`.
 - No se identifican PRs o issues abiertos en la auditoria previa.
 - Build local y typecheck/lint fueron reportados en PASS en la revision previa de Codex.
@@ -87,8 +90,9 @@ El HEAD actual del repo es `2cc274b`; GitHub, `~/.openclaw/product`, `/opt/gcm/a
 - Core funcional documentado: login, onboarding, practica, dashboard, banco activo, Tutor GCM con guardrails, trazas y senales pedagogicas.
 
 ### Gate que bloquea declararla beta funcional
-- Falta una corrida E2E autenticada con cuenta real que cierre el recorrido `login -> onboarding -> practica -> resultados`.
-- Falta registrar evidencia PASS de `content:validate`, tests, build, smoke runtime, postdeploy y E2E autenticado en entorno operativo.
+- Falta alinear `~/.openclaw/product`, `/opt/gcm/app` y la imagen runtime con `b0207e9`.
+- Falta ejecutar y registrar los gates automatizados postdeploy/API/UI de esta revision.
+- Falta actualizar el checklist con los artifacts concretos de cada gate.
 
 ### Criterio de cierre beta recomendado
 Declarar `v0.6.0-beta.1` solo cuando `docs/02-delivery/release-checklist.md` quede completo para un commit unico y el runtime publico muestre ese mismo commit.
@@ -100,9 +104,9 @@ Declarar `v0.6.0-beta.1` solo cuando `docs/02-delivery/release-checklist.md` que
 - **Arbol de deploy:** `/opt/gcm/app`.
 - **URL publica canonica:** `https://cnsc.profemarlon.com`.
 - **Consola operacional:** `https://cnsc.profemarlon.com/update.html`.
-- **HEAD actual del repo revisado:** `2cc274b`.
-- **Ultimo commit publico desplegado y verificado documentalmente:** `2cc274b`.
-- **Estado de paridad repo/runtime:** commit alineado; E2E con cuenta real pendiente.
+- **HEAD actual del repo revisado:** `b0207e9`.
+- **Ultimo commit publico desplegado y verificado:** `ad6ad35`.
+- **Estado de paridad repo/runtime:** no alineado; E2E real verificado sobre `ad6ad35`.
 
 ## Sprint 47 — mantenimiento menor y saneamiento final
 

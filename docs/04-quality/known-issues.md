@@ -11,7 +11,7 @@ related:
   - QUAL-DEBT-REGISTER
   - QUAL-QB-LOAD-AUDIT-2026-04-26
   - DEL-QB-LOAD-CLOSE-2026-04-26
-last_reviewed: 2026-08-11
+last_reviewed: 2026-08-19
 ---
 
 # Known issues
@@ -19,8 +19,8 @@ last_reviewed: 2026-08-11
 ## Activos
 | issue | severidad | owner sugerido | estado | resumen |
 |---|---|---|---|---|
-| BETA-ISSUE-001 | alta | ops + qa | abierto | beta funcional pendiente de build y E2E fresca sobre `7ade741`; commit de repo, deploy y runtime visible ya coincide |
-| BETA-ISSUE-002 | media | docs + qa | abierto | evidencia historica de QA/runtime existe pero debe tratarse como auxiliar hasta registrar corrida beta actual |
+| BETA-ISSUE-001 | alta | ops + qa | abierto | beta tiene E2E real PASS sobre `ad6ad35`, pero repo principal `b0207e9`, deploy tree y runtime aun no comparten commit |
+| BETA-ISSUE-002 | media | docs + qa | abierto | falta registrar los gates automatizados postdeploy/API/UI de la revision actual y sus artifacts |
 | BETA-ISSUE-003 | media | producto + tutor | aceptado | frente normativo del Tutor sigue en `synthesized_governed_unverified`; aceptable para beta con disclaimers y guardrails |
 | QB-ISSUE-004 | media | delivery | resuelto | drift documental entre índice operativo y cierre real de fase ya reconciliado en el snapshot operativo final |
 | APP-ISSUE-001 | alta | producto + auth | resuelto | onboarding exige al menos un `Área activa` y quedó validado funcionalmente en runtime desplegado |
@@ -32,8 +32,8 @@ last_reviewed: 2026-08-11
 
 ## Detalle priorizado
 - Para Beta Candidate 0.6.0, el bloqueo principal es operacional: confirmar que repo, deploy y runtime publico apuntan al mismo commit y que los gates minimos pasan en el entorno real.
-- Ultimo runtime publico verificado documentalmente: `7ade741`.
-- HEAD actual revisado: `7ade741`.
+- Ultimo runtime publico verificado: `ad6ad35` (`2026-08-19T04:20:00Z`).
+- HEAD actual revisado: `b0207e9`.
 - Ver auditoría específica: `docs/04-quality/question-bank-load-phase-audit-2026-04-26.md`
 - Ver corrida base: `docs/04-quality/chromium-qa-run-2026-04-27.md`
 - Prioridad inmediata:
@@ -43,7 +43,7 @@ last_reviewed: 2026-08-11
   4. conservar sincronizado el índice operativo del banco al cerrar futuras fases de carga
 
 ## Nota de alcance
-Estos issues están consolidados con evidencia local de repo y cierre documental de fase. No sustituyen una nueva validación remota de Supabase ni una corrida fresca de runtime para beta.
+Estos issues están consolidados con evidencia local de repo, Supabase y runtime. No sustituyen la triple verificación de release ni los gates automatizados postdeploy aún pendientes.
 
 ## Evidencia local revisada el 2026-04-29
 - `package.json` expone runners versionados `qa:smoke:postdeploy`, `qa:e2e:api` y `qa:e2e:ui`.

@@ -11,7 +11,7 @@ related:
   - PROD-BACKLOG
   - DEL-CHANGE-LOG
   - QUAL-RISK-REGISTER
-last_reviewed: 2026-08-11
+last_reviewed: 2026-08-19
 ---
 
 ## Document control
@@ -24,10 +24,11 @@ last_reviewed: 2026-08-11
 # Sprint log
 
 ## Current delivery state
-- **Current operational block**: Beta Candidate 0.6.0 — homologacion documental y preparacion de runtime (2026-08-11).
-- **Current repo HEAD reviewed**: `7ade741`.
-- **Last documented public runtime-verified commit**: `7ade741`.
-- **Beta status**: candidata documental; beta funcional pendiente de triple verificacion y QA runtime fresco.
+- **Current operational block**: Beta Candidate 0.6.0 — cierre documental y preparacion del release (2026-08-19).
+- **Current repo HEAD reviewed**: `b0207e9`.
+- **Last documented public runtime-verified commit**: `ad6ad35` (`2026-08-19T04:20:00Z`).
+- **Beta status**: candidata con E2E real PASS; release pendiente de triple verificacion sobre un unico commit.
+- **Supabase**: migraciones `0013`-`0017` aplicadas; 100 preguntas beta visibles en `v_item_bank_active`.
 - **Governance Hardening Roadmap state**: Fase 1 y Fase 2 iniciadas; Fase 3 en ejecucion documental (reduccion y clasificacion), Fases 4-5 futuras.
 - **Open risks**:
   - HEAD actual de repo y ultimo runtime verificado documentado no deben asumirse alineados hasta revalidacion;
@@ -37,11 +38,12 @@ last_reviewed: 2026-08-11
   - integracion futura del Tutor con LLM real sigue pendiente como deuda tecnica futura;
   - el frente normativo sigue en `synthesized_governed_unverified` hasta cargar anexos oficiales suficientes.
 
-## Beta Candidate 0.6.0 — homologacion documental y preparacion de runtime
-- **Estado**: CANDIDATA DOCUMENTAL; NO RELEASE BETA CERRADO
-- **Fecha de alineacion**: 2026-08-11
+## Beta Candidate 0.6.0 — cierre documental y preparacion de runtime
+- **Estado**: CANDIDATA CON E2E REAL PASS; NO RELEASE BETA CERRADO
+- **Fecha de alineacion**: 2026-08-19
 - **Rama canonica**: `master`
-- **HEAD revisado**: `7ade741`
+- **HEAD revisado**: `b0207e9`
+- **Ultimo runtime publico verificado**: `ad6ad35` (`2026-08-19T04:20:00Z`)
 - **Version declarada**: `0.6.0`
 - **Objetivo**: dejar una sola lectura ejecutiva del estado beta: base tecnica cercana, deuda menor aceptable, y bloqueo concentrado en una corrida fresca de runtime/release.
 
@@ -52,10 +54,10 @@ last_reviewed: 2026-08-11
 - `docs/02-delivery/release-checklist.md` queda como checklist ejecutable para cerrar `v0.6.0-beta.1`.
 
 ### Evidencia operacional
-- Revision documental y auditoria previa de Codex sobre repo, PRs recientes y validacion local.
-- Build local y typecheck/lint reportados en PASS en la auditoria previa.
-- Tests y validaciones basadas en `tsx` no fueron concluyentes en el sandbox previo por restriccion IPC del entorno.
-- Runtime publico NO revalidado en esta entrega.
+- Revision documental y auditoria de repo, VPS, Supabase y runtime publico.
+- Build, typecheck/lint, tests, validacion de contenido y smoke runtime reportados PASS.
+- E2E Playwright autenticada real: 5 turnos, cierre de sesion y dashboard verificado.
+- Runtime aun no esta alineado al HEAD `b0207e9`; queda pendiente la corrida automatizada postdeploy.
 
 ### Criterio de cierre
 - Triple verificacion source/deploy/runtime sobre un unico commit objetivo.
