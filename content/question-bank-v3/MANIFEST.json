@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "gcm.questionBank.v3",
+  "name": "Banco de preguntas v3 por OPEC",
+  "version": "3.0.0",
+  "status": "new_clean_structure",
+  "defaultQuestionSource": true,
+  "legacyPolicy": "No se migra, copia ni normaliza contenido legacy; los items son nuevos y trazados a fuentes oficiales.",
+  "namespace": "content/question-bank-v3/opecs/<opecId>/{sources,blueprint,items,reviews,pilots,releases,metrics}",
+  "createdAt": "2026-08-20"
+}

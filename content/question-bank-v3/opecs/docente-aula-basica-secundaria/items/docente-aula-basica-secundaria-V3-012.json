@@ -1,0 +1,252 @@
+{
+  "schemaVersion": "gcm.question.item.v3",
+  "opecId": "docente-aula-basica-secundaria",
+  "itemId": "docente-aula-basica-secundaria-V3-012",
+  "version": 1,
+  "status": "ready_for_pilot",
+  "runtimeEligible": false,
+  "nucleusId": "N03",
+  "competencyId": "C03",
+  "claimId": "CL03",
+  "evidenceId": "EV03",
+  "taskId": "T03",
+  "entityId": "perfil-generico-docente-sector-oficial",
+  "employmentProfileId": "docente-aula-basica-secundaria",
+  "employmentAnchor": "Seguimiento, valoracion y mejoramiento de la practica educativa escolar.",
+  "title": "Coherencia entre SIEE y aula",
+  "context": "El SIEE de una institucion declara evaluacion continua y formativa, pero en noveno solo se define una prueba final con 80 % de la nota.",
+  "stem": "¿Que decision docente alinea mejor la practica con el SIEE?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Aplicar la prueba final porque simplifica el cierre administrativo."
+    },
+    {
+      "key": "B",
+      "text": "Distribuir evidencias durante la unidad, retroalimentar avances y conservar una prueba final proporcional a los desempenos trabajados."
+    },
+    {
+      "key": "C",
+      "text": "Eliminar toda calificacion numerica aunque el sistema institucional la exija."
+    },
+    {
+      "key": "D",
+      "text": "Subir la nota a quienes participen para compensar la dificultad de la prueba."
+    }
+  ],
+  "correctAnswer": "B",
+  "keyJustification": "La opcion B traduce el enfoque continuo y formativo en evidencias distribuidas, retroalimentacion y coherencia con desempenos.",
+  "distractorModels": {
+    "A": {
+      "code": "administrative_compliance",
+      "observable": "Prioriza formato, cronograma o tramite sobre pertinencia pedagogica.",
+      "explanation": "Cumplir un documento no basta si no responde al aprendizaje ni al contexto.",
+      "question": "¿Que parte de la decision impacta realmente el aprendizaje?",
+      "hints": [
+        "Identifica el dato critico del caso.",
+        "Descarta respuestas que evaden la mediacion docente.",
+        "Elige la accion que conserva aprendizaje y pertinencia."
+      ],
+      "lesson": "Una buena decision docente responde a una evidencia concreta del contexto y conserva la finalidad formativa.",
+      "check": "¿La medida mejora aprendizaje o solo resuelve apariencia de control?",
+      "transfer": "Aplica el mismo criterio a otro curso de basica secundaria."
+    },
+    "C": {
+      "code": "generic_solution",
+      "observable": "Propone una accion atractiva pero no conectada con la barrera o evidencia del caso.",
+      "explanation": "La opcion es plausible en abstracto, pero no resuelve la condicion decisiva.",
+      "question": "¿Que dato del caso exige una respuesta especifica?",
+      "hints": [
+        "Identifica el dato critico del caso.",
+        "Descarta respuestas que evaden la mediacion docente.",
+        "Elige la accion que conserva aprendizaje y pertinencia."
+      ],
+      "lesson": "Una buena decision docente responde a una evidencia concreta del contexto y conserva la finalidad formativa.",
+      "check": "¿La medida mejora aprendizaje o solo resuelve apariencia de control?",
+      "transfer": "Aplica el mismo criterio a otro curso de basica secundaria."
+    },
+    "D": {
+      "code": "punitive_control",
+      "observable": "Asume que sancionar o bajar nota resuelve una dificultad pedagogica.",
+      "explanation": "La opcion castiga, pero no genera informacion para mejorar la ensenanza.",
+      "question": "¿Que accion daria evidencia para ajustar la mediacion?",
+      "hints": [
+        "Identifica el dato critico del caso.",
+        "Descarta respuestas que evaden la mediacion docente.",
+        "Elige la accion que conserva aprendizaje y pertinencia."
+      ],
+      "lesson": "Una buena decision docente responde a una evidencia concreta del contexto y conserva la finalidad formativa.",
+      "check": "¿La medida mejora aprendizaje o solo resuelve apariencia de control?",
+      "transfer": "Aplica el mismo criterio a otro curso de basica secundaria."
+    }
+  },
+  "commonErrors": {
+    "administrative_compliance": "Prioriza formato, cronograma o tramite sobre pertinencia pedagogica.",
+    "generic_solution": "Propone una accion atractiva pero no conectada con la barrera o evidencia del caso.",
+    "punitive_control": "Asume que sancionar o bajar nota resuelve una dificultad pedagogica."
+  },
+  "normativeAsOf": "2026-08-20",
+  "sourceEvidence": [
+    {
+      "sourceId": "SRC-MEN-SIEE",
+      "locator": "Orientaciones sobre coherencia de la evaluacion con propuesta educativa, criterios y proceso formativo",
+      "url": "https://www.mineducacion.gov.co/portal/micrositios-preescolar-basica-y-media/Evaluacion/Evaluacion-de-estudiantes/397381:Sistema-Institucional-de-Evaluacion-de-los-Estudiantes-SIEE",
+      "status": "verified",
+      "supports": "Evaluacion formativa y SIEE",
+      "sourceNote": "Soporta evaluacion formativa, criterios, retroalimentacion y coherencia institucional."
+    },
+    {
+      "sourceId": "SRC-MEN-GUIA-COMP-DOCENTE-2014",
+      "locator": "Secciones sobre rol docente, competencias pedagogicas, componentes y tipos de pregunta",
+      "url": "https://www.mineducacion.gov.co/1759/articles-342767_recurso_nuevo_1.pdf",
+      "status": "verified",
+      "supports": "Evaluacion formativa y SIEE",
+      "sourceNote": "Soporta competencias pedagogicas: planeacion, desarrollo, seguimiento, reflexion y mejora de la practica educativa escolar."
+    }
+  ],
+  "sourceNote": "Fuentes de soporte: SRC-MEN-SIEE, SRC-MEN-GUIA-COMP-DOCENTE-2014. Fecha de corte: 2026-08-20.",
+  "feedbackByOption": {
+    "A": {
+      "responseClass": "misconception",
+      "diagnosisCode": "administrative_compliance",
+      "observableEvidence": "Prioriza formato, cronograma o tramite sobre pertinencia pedagogica.",
+      "explanation": "Cumplir un documento no basta si no responde al aprendizaje ni al contexto.",
+      "guidingQuestion": "¿Que parte de la decision impacta realmente el aprendizaje?",
+      "hints": [
+        "Identifica el dato critico del caso.",
+        "Descarta respuestas que evaden la mediacion docente.",
+        "Elige la accion que conserva aprendizaje y pertinencia."
+      ],
+      "microLesson": "Una buena decision docente responde a una evidencia concreta del contexto y conserva la finalidad formativa.",
+      "checkQuestion": "¿La medida mejora aprendizaje o solo resuelve apariencia de control?",
+      "transferTask": "Aplica el mismo criterio a otro curso de basica secundaria.",
+      "sourceNote": "Fuentes de soporte: SRC-MEN-SIEE, SRC-MEN-GUIA-COMP-DOCENTE-2014. Fecha de corte: 2026-08-20.",
+      "avoidStatements": [
+        "No inferir rasgos personales del estudiante.",
+        "No prometer resultados oficiales de convocatoria.",
+        "No presentar la fuente como copia literal de una prueba oficial."
+      ]
+    },
+    "B": {
+      "responseClass": "correct",
+      "diagnosisCode": "correct_condition_decisive",
+      "observableEvidence": "Reconoce la condicion pedagogica decisiva del caso y la conecta con el nucleo evaluado.",
+      "explanation": "La opcion B traduce el enfoque continuo y formativo en evidencias distribuidas, retroalimentacion y coherencia con desempenos.",
+      "guidingQuestion": "¿Que criterio de la situacion vuelve esta alternativa mas defendible que las demas?",
+      "hints": [
+        "Identifica la necesidad central del caso.",
+        "Relaciona esa necesidad con la funcion docente evaluada.",
+        "Verifica que la respuesta conserve aprendizaje, inclusion y trazabilidad."
+      ],
+      "microLesson": "La opcion B traduce el enfoque continuo y formativo en evidencias distribuidas, retroalimentacion y coherencia con desempenos.",
+      "checkQuestion": "Si cambia el contexto, ¿que evidencia conservarias para defender la misma decision?",
+      "transferTask": "Propone una variacion del caso en otra area de secundaria manteniendo el mismo criterio de decision.",
+      "sourceNote": "Fuentes de soporte: SRC-MEN-SIEE, SRC-MEN-GUIA-COMP-DOCENTE-2014. Fecha de corte: 2026-08-20.",
+      "avoidStatements": [
+        "No inferir rasgos personales del estudiante.",
+        "No prometer resultados oficiales de convocatoria.",
+        "No presentar la fuente como copia literal de una prueba oficial."
+      ]
+    },
+    "C": {
+      "responseClass": "misconception",
+      "diagnosisCode": "generic_solution",
+      "observableEvidence": "Propone una accion atractiva pero no conectada con la barrera o evidencia del caso.",
+      "explanation": "La opcion es plausible en abstracto, pero no resuelve la condicion decisiva.",
+      "guidingQuestion": "¿Que dato del caso exige una respuesta especifica?",
+      "hints": [
+        "Identifica el dato critico del caso.",
+        "Descarta respuestas que evaden la mediacion docente.",
+        "Elige la accion que conserva aprendizaje y pertinencia."
+      ],
+      "microLesson": "Una buena decision docente responde a una evidencia concreta del contexto y conserva la finalidad formativa.",
+      "checkQuestion": "¿La medida mejora aprendizaje o solo resuelve apariencia de control?",
+      "transferTask": "Aplica el mismo criterio a otro curso de basica secundaria.",
+      "sourceNote": "Fuentes de soporte: SRC-MEN-SIEE, SRC-MEN-GUIA-COMP-DOCENTE-2014. Fecha de corte: 2026-08-20.",
+      "avoidStatements": [
+        "No inferir rasgos personales del estudiante.",
+        "No prometer resultados oficiales de convocatoria.",
+        "No presentar la fuente como copia literal de una prueba oficial."
+      ]
+    },
+    "D": {
+      "responseClass": "misconception",
+      "diagnosisCode": "punitive_control",
+      "observableEvidence": "Asume que sancionar o bajar nota resuelve una dificultad pedagogica.",
+      "explanation": "La opcion castiga, pero no genera informacion para mejorar la ensenanza.",
+      "guidingQuestion": "¿Que accion daria evidencia para ajustar la mediacion?",
+      "hints": [
+        "Identifica el dato critico del caso.",
+        "Descarta respuestas que evaden la mediacion docente.",
+        "Elige la accion que conserva aprendizaje y pertinencia."
+      ],
+      "microLesson": "Una buena decision docente responde a una evidencia concreta del contexto y conserva la finalidad formativa.",
+      "checkQuestion": "¿La medida mejora aprendizaje o solo resuelve apariencia de control?",
+      "transferTask": "Aplica el mismo criterio a otro curso de basica secundaria.",
+      "sourceNote": "Fuentes de soporte: SRC-MEN-SIEE, SRC-MEN-GUIA-COMP-DOCENTE-2014. Fecha de corte: 2026-08-20.",
+      "avoidStatements": [
+        "No inferir rasgos personales del estudiante.",
+        "No prometer resultados oficiales de convocatoria.",
+        "No presentar la fuente como copia literal de una prueba oficial."
+      ]
+    }
+  },
+  "hintLadder": [
+    "Lee primero la tension pedagogica del contexto, no la palabra mas llamativa.",
+    "Descarta respuestas que trasladan la responsabilidad docente, castigan o simplifican el problema.",
+    "Elige la opcion que conserva la meta de aprendizaje y ajusta la mediacion al caso."
+  ],
+  "remediation": {
+    "microLesson": "La decision docente de calidad combina evidencia del contexto, meta de aprendizaje, mediacion pertinente y limite normativo o institucional.",
+    "checkQuestion": "¿Que cambio concreto harias en una clase real para aplicar este criterio?",
+    "transferTask": "Reescribe la decision para otro grupo de basica secundaria con una barrera distinta."
+  },
+  "estimatedDifficulty": "media",
+  "scoringRule": {
+    "points": 1,
+    "negativeMarking": false,
+    "singleBestAnswer": true
+  },
+  "pilotStats": {
+    "status": "not_piloted",
+    "observedDifficulty": "not_available_until_pilot",
+    "distractorActivation": "not_available_until_pilot",
+    "medianTimeSeconds": "not_available_until_pilot",
+    "flags": 0,
+    "note": "Sin datos observados; dificultad solo estimada editorialmente."
+  },
+  "fairness": {
+    "status": "pass",
+    "notes": "No usa rasgos personales, origen social, discapacidad o pertenencia cultural como deficit; las variables contextuales son pertinentes al constructo."
+  },
+  "accessibility": {
+    "status": "pass",
+    "readingLoad": "media",
+    "notes": "Enunciado situacional con una sola tarea cognitiva, opciones paralelas y vocabulario propio del desempeno docente."
+  },
+  "reviews": {
+    "automatic": "pass",
+    "editorial": "self_review_pass_pending_human_gate",
+    "normative": "self_review_pass_pending_human_gate",
+    "fairness": "pass",
+    "accessibility": "pass"
+  },
+  "blockingFindings": {
+    "status": "none",
+    "findings": "Sin hallazgos bloqueantes en revision automatica y auto-revision editorial; queda pendiente gate humano para activar segun PRD."
+  },
+  "createdBy": "Codex",
+  "reviewedBy": [
+    "Codex editorial self-review"
+  ],
+  "changeLog": [
+    {
+      "version": 1,
+      "date": "2026-08-20",
+      "change": "Creacion original v3. Pregunta nueva basada en blueprint y fuentes oficiales; no migra ni copia items legacy."
+    }
+  ],
+  "releaseRefs": [
+    "releases/v3-ready-for-pilot-0001/release.json"
+  ]
+}

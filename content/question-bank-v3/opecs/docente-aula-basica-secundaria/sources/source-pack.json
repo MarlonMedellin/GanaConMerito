@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "gcm.sourcePack.v3",
+  "opecId": "docente-aula-basica-secundaria",
+  "version": "3.0.0",
+  "status": "verified_with_limited_opec_identity",
+  "normativeAsOf": "2026-08-20",
+  "sources": [
+    {
+      "sourceId": "SRC-CNSC-DDD-2021-2022",
+      "title": "CNSC - Convocatorias Directivos Docentes y Docentes 2150 a 2237 de 2021, 2316 y 2406 de 2022",
+      "issuer": "Comision Nacional del Servicio Civil",
+      "type": "convocatoria",
+      "url": "https://www.cnsc.gov.co/convocatorias/directivos-docentes-y-docentes",
+      "status": "limited",
+      "locator": "Pagina de convocatoria; usar OPEC especifica cuando se obtenga publicacion oficial detallada",
+      "scopeNote": "Soporta el uso de OPEC/perfil docente como frontera editorial; no sustituye el acuerdo ni MEFCL de una OPEC concreta.",
+      "capturedAt": "2026-08-20",
+      "hash": "e1e778c2c08a5b842cba8309080135c7a192fa285287d23631a563158e3adfc4"
+    },
+    {
+      "sourceId": "SRC-MEN-GUIA-COMP-DOCENTE-2014",
+      "title": "MEN Documento guia - Evaluacion de competencias docentes y directivos docentes Decreto Ley 1278 de 2002",
+      "issuer": "Ministerio de Educacion Nacional",
+      "type": "guia_metodologica",
+      "url": "https://www.mineducacion.gov.co/1759/articles-342767_recurso_nuevo_1.pdf",
+      "status": "verified",
+      "locator": "Secciones sobre rol docente, competencias pedagogicas, componentes y tipos de pregunta",
+      "scopeNote": "Soporta competencias pedagogicas: planeacion, desarrollo, seguimiento, reflexion y mejora de la practica educativa escolar.",
+      "capturedAt": "2026-08-20",
+      "hash": "19abdd739a5134c61b205c97431d4a17c80e7555b40231f87aeecaf9c9f0afcc"
+    },
+    {
+      "sourceId": "SRC-MEN-EBC-2006",
+      "title": "MEN - Estandares Basicos de Competencias en Lenguaje, Matematicas, Ciencias y Ciudadanas",
+      "issuer": "Ministerio de Educacion Nacional",
+      "type": "referente_calidad",
+      "url": "https://www.mineducacion.gov.co/portal/men/Publicaciones/Guias/116042:Estandares-Basicos-de-Competencias-en-Lenguaje-Matematicas-Ciencias-y-Ciudadanas",
+      "status": "verified",
+      "locator": "Referentes de calidad para areas fundamentales y grupos de grados",
+      "scopeNote": "Soporta planeacion y evaluacion por competencias en basica secundaria.",
+      "capturedAt": "2026-08-20",
+      "hash": "2f2b536d02e742384a4dba9a842e95b426e8bb0f5999ba93e402657494d84953"
+    },
+    {
+      "sourceId": "SRC-MEN-SIEE",
+      "title": "MEN - Sistema Institucional de Evaluacion de los Estudiantes (SIEE)",
+      "issuer": "Ministerio de Educacion Nacional",
+      "type": "orientacion_evaluacion",
+      "url": "https://www.mineducacion.gov.co/portal/micrositios-preescolar-basica-y-media/Evaluacion/Evaluacion-de-estudiantes/397381:Sistema-Institucional-de-Evaluacion-de-los-Estudiantes-SIEE",
+      "status": "verified",
+      "locator": "Orientaciones sobre coherencia de la evaluacion con propuesta educativa, criterios y proceso formativo",
+      "scopeNote": "Soporta evaluacion formativa, criterios, retroalimentacion y coherencia institucional.",
+      "capturedAt": "2026-08-20",
+      "hash": "7158b086534a6e0b6e3f370eb86b9fd38fa8a0add96507228caec1aaf0c4dd04"
+    },
+    {
+      "sourceId": "SRC-MEN-DECRETO-1421",
+      "title": "MEN - Decreto 1421 de 2017 educacion inclusiva",
+      "issuer": "Ministerio de Educacion Nacional",
+      "type": "decreto",
+      "url": "https://www.mineducacion.gov.co/portal/normativa/Decretos/381928:Decreto-1421-de-agosto-29-de-2017",
+      "status": "verified",
+      "locator": "Reglamentacion de atencion educativa a poblacion con discapacidad en educacion inclusiva",
+      "scopeNote": "Soporta DUA, ajustes razonables, PIAR y corresponsabilidad pedagogica en aula regular.",
+      "capturedAt": "2026-08-20",
+      "hash": "242bdb4acfac62a3f2c7e2bc7c3bd1e52657fe4202fdd621e2b82682b799aa2b"
+    },
+    {
+      "sourceId": "SRC-MEN-COMP-CIUDADANAS",
+      "title": "MEN - Guia No. 6 Estandares Basicos de Competencias Ciudadanas",
+      "issuer": "Ministerio de Educacion Nacional",
+      "type": "referente_calidad",
+      "url": "https://www.mineducacion.gov.co/portal/men/Publicaciones/Guias/75768:Guia-No-6-Estandares-Basicos-de-Competencias-Ciudadanas",
+      "status": "verified",
+      "locator": "Formacion ciudadana, convivencia, participacion y manejo de conflictos",
+      "scopeNote": "Soporta decisiones docentes de convivencia y deliberacion en basica secundaria.",
+      "capturedAt": "2026-08-20",
+      "hash": "36f616e84b70717a2d6d0f01c6241eee347b761b70f9a23007be6221a7ee58ce"
+    }
+  ]
+}

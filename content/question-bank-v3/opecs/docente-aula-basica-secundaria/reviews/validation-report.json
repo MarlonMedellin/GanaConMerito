@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "gcm.validationReport.v3",
+  "opecId": "docente-aula-basica-secundaria",
+  "runAt": "2026-08-20",
+  "itemCount": 20,
+  "blockingFindings": {
+    "status": "none",
+    "findings": "Sin hallazgos bloqueantes detectados en el lote v3; la promocion a active requiere responsable humano."
+  },
+  "schema": "pass",
+  "isolation": "pass",
+  "crossField": "pass",
+  "blueprint": "pass",
+  "normative": "pass",
+  "editorial": "self_review_pass_pending_human_gate",
+  "distractors": "pass",
+  "tutoring": "pass",
+  "fairness": "pass",
+  "accessibility": "pass",
+  "note": "Revision realizada por Codex. PRD exige gate humano para promocion a active."
+}

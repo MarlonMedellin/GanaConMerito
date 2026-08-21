@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "gcm.blueprint.v3",
+  "opecId": "docente-aula-basica-secundaria",
+  "version": "3.0.0",
+  "status": "approved_for_authoring",
+  "normativeAsOf": "2026-08-20",
+  "employmentProfile": {
+    "entityId": "perfil-generico-docente-sector-oficial",
+    "employmentProfileId": "docente-aula-basica-secundaria",
+    "denomination": "Docente de aula basica secundaria",
+    "level": "basica_secundaria",
+    "boundary": "Perfil de empleo usado cuando no se dispone de codigo OPEC oficial especifico."
+  },
+  "cells": [
+    {
+      "nucleusId": "N01",
+      "competencyId": "C01",
+      "claimId": "CL01",
+      "evidenceId": "EV01",
+      "taskId": "T01",
+      "nucleus": "Planeacion curricular contextualizada",
+      "competency": "Ajusta la planeacion de aula a estandares, contexto y progresion de aprendizajes.",
+      "employmentAnchor": "Planeacion y desarrollo de actividades pedagogicas en basica secundaria.",
+      "claim": "El aspirante selecciona decisiones de planeacion que articulan referentes de calidad, contexto del grupo y metas evaluables.",
+      "evidence": "Elige la alternativa que conserva exigencia academica y adapta mediaciones sin convertir el estandar en lista mecanica.",
+      "task": "Decidir el ajuste mas pertinente de una secuencia didactica.",
+      "cognitiveDemand": "juicio",
+      "sourceScope": [
+        "SRC-MEN-GUIA-COMP-DOCENTE-2014",
+        "SRC-MEN-EBC-2006"
+      ],
+      "quota": {
+        "practice": 4,
+        "simulacro": 2
+      },
+      "restrictions": [
+        "No preguntar memoria literal.",
+        "No usar distractores caricaturescos.",
+        "No activar sin gate humano."
+      ]
+    },
+    {
+      "nucleusId": "N02",
+      "competencyId": "C02",
+      "claimId": "CL02",
+      "evidenceId": "EV02",
+      "taskId": "T02",
+      "nucleus": "Didactica, indagacion y resolucion de problemas",
+      "competency": "Disena mediaciones que promueven comprension, indagacion, argumentacion y transferencia.",
+      "employmentAnchor": "Conduccion de procesos de ensenanza-aprendizaje en secundaria.",
+      "claim": "El aspirante identifica estrategias que transforman contenidos en problemas investigables o transferibles.",
+      "evidence": "Selecciona mediaciones centradas en evidencia, representaciones y razonamiento estudiantil.",
+      "task": "Elegir una estrategia didactica ante una dificultad de comprension.",
+      "cognitiveDemand": "analisis",
+      "sourceScope": [
+        "SRC-MEN-EBC-2006",
+        "SRC-MEN-GUIA-COMP-DOCENTE-2014"
+      ],
+      "quota": {
+        "practice": 4,
+        "simulacro": 2
+      },
+      "restrictions": [
+        "No preguntar memoria literal.",
+        "No usar distractores caricaturescos.",
+        "No activar sin gate humano."
+      ]
+    },
+    {
+      "nucleusId": "N03",
+      "competencyId": "C03",
+      "claimId": "CL03",
+      "evidenceId": "EV03",
+      "taskId": "T03",
+      "nucleus": "Evaluacion formativa y SIEE",
+      "competency": "Usa evaluacion, criterios y retroalimentacion para mejorar aprendizajes.",
+      "employmentAnchor": "Seguimiento, valoracion y mejoramiento de la practica educativa escolar.",
+      "claim": "El aspirante diferencia evaluacion formativa de calificacion punitiva o administrativa.",
+      "evidence": "Elige acciones que usan evidencias, criterios previos y retroalimentacion para orientar mejora.",
+      "task": "Resolver una decision de evaluacion de aula o de recuperacion.",
+      "cognitiveDemand": "juicio",
+      "sourceScope": [
+        "SRC-MEN-SIEE",
+        "SRC-MEN-GUIA-COMP-DOCENTE-2014"
+      ],
+      "quota": {
+        "practice": 4,
+        "simulacro": 2
+      },
+      "restrictions": [
+        "No preguntar memoria literal.",
+        "No usar distractores caricaturescos.",
+        "No activar sin gate humano."
+      ]
+    },
+    {
+      "nucleusId": "N04",
+      "competencyId": "C04",
+      "claimId": "CL04",
+      "evidenceId": "EV04",
+      "taskId": "T04",
+      "nucleus": "Educacion inclusiva, DUA y ajustes razonables",
+      "competency": "Planifica apoyos y ajustes que garantizan participacion y aprendizaje sin segregacion.",
+      "employmentAnchor": "Atencion a diversidad y barreras de aprendizaje en aula regular.",
+      "claim": "El aspirante reconoce que la inclusion exige diseno flexible, apoyos situados y metas comunes con ajustes razonables.",
+      "evidence": "Selecciona decisiones que remueven barreras y conservan participacion en la experiencia curricular.",
+      "task": "Elegir respuesta pedagogica frente a una barrera de acceso, expresion o participacion.",
+      "cognitiveDemand": "juicio",
+      "sourceScope": [
+        "SRC-MEN-DECRETO-1421",
+        "SRC-MEN-GUIA-COMP-DOCENTE-2014"
+      ],
+      "quota": {
+        "practice": 4,
+        "simulacro": 2
+      },
+      "restrictions": [
+        "No preguntar memoria literal.",
+        "No usar distractores caricaturescos.",
+        "No activar sin gate humano."
+      ]
+    },
+    {
+      "nucleusId": "N05",
+      "competencyId": "C05",
+      "claimId": "CL05",
+      "evidenceId": "EV05",
+      "taskId": "T05",
+      "nucleus": "Convivencia, ciudadania y gestion de aula",
+      "competency": "Promueve participacion, deliberacion y manejo pedagogico de conflictos en secundaria.",
+      "employmentAnchor": "Formacion integral y convivencia en el aula de basica secundaria.",
+      "claim": "El aspirante selecciona intervenciones que protegen derechos, corresponsabilidad y aprendizaje democratico.",
+      "evidence": "Elige acciones restaurativas, participativas y formativas frente a conflictos o tensiones de aula.",
+      "task": "Tomar una decision docente ante una situacion de convivencia o participacion.",
+      "cognitiveDemand": "analisis",
+      "sourceScope": [
+        "SRC-MEN-COMP-CIUDADANAS",
+        "SRC-MEN-GUIA-COMP-DOCENTE-2014"
+      ],
+      "quota": {
+        "practice": 4,
+        "simulacro": 2
+      },
+      "restrictions": [
+        "No preguntar memoria literal.",
+        "No usar distractores caricaturescos.",
+        "No activar sin gate humano."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "gcm.pilotPlan.v3",
+  "opecId": "docente-aula-basica-secundaria",
+  "status": "not_started",
+  "minimumCohort": 30,
+  "items": [
+    "docente-aula-basica-secundaria-V3-001",
+    "docente-aula-basica-secundaria-V3-002",
+    "docente-aula-basica-secundaria-V3-003",
+    "docente-aula-basica-secundaria-V3-004",
+    "docente-aula-basica-secundaria-V3-005",
+    "docente-aula-basica-secundaria-V3-006",
+    "docente-aula-basica-secundaria-V3-007",
+    "docente-aula-basica-secundaria-V3-008",
+    "docente-aula-basica-secundaria-V3-009",
+    "docente-aula-basica-secundaria-V3-010",
+    "docente-aula-basica-secundaria-V3-011",
+    "docente-aula-basica-secundaria-V3-012",
+    "docente-aula-basica-secundaria-V3-013",
+    "docente-aula-basica-secundaria-V3-014",
+    "docente-aula-basica-secundaria-V3-015",
+    "docente-aula-basica-secundaria-V3-016",
+    "docente-aula-basica-secundaria-V3-017",
+    "docente-aula-basica-secundaria-V3-018",
+    "docente-aula-basica-secundaria-V3-019",
+    "docente-aula-basica-secundaria-V3-020"
+  ],
+  "metrics": [
+    "observedDifficulty",
+    "distractorActivation",
+    "omissionRate",
+    "medianTimeSeconds",
+    "flags"
+  ],
+  "decisionRule": "Promocion posterior solo con responsable humano y sin hallazgos bloqueantes."
+}

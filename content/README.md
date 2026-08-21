@@ -2,6 +2,16 @@
 
 Carpeta raiz del banco de preguntas, fuentes y perfiles de Gana con Merito.
 
+## Fuente por defecto v3
+
+El banco editorial por defecto para nuevas preguntas por OPEC es:
+
+```text
+content/question-bank-v3/
+```
+
+La version v3 sigue el PRD de fabricas editoriales por OPEC: fuentes verificadas, blueprint aprobado, items completos, revision, pilotaje, release y metricas dentro de `opecs/<opecId>/`. No se migra ni se mezcla contenido legacy.
+
 ## Lectura beta
 
 La carpeta queda organizada para pilotaje con dos rutas principales:
@@ -20,6 +30,8 @@ content/
   items/
     beta-v1/       Banco beta listo para pilotaje.
     no-beta-v1/    Material historico, previo o pendiente.
+  question-bank-v3/
+    opecs/         Nueva fuente editorial por OPEC, limpia y sin legacy.
   normative/       Soporte normativo.
   profiles/        Definicion de perfiles y vistas; no duplica banco.
   restructuring-v1/
