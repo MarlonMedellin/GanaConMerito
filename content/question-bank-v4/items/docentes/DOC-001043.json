@@ -1,0 +1,28 @@
+{
+  "id": "DOC-001043",
+  "scope": "general",
+  "domain": "convivencia",
+  "topic": "debido_proceso",
+  "competency": "interpretacion_normativa",
+  "questionType": "normative_applied",
+  "cognitiveLevel": "judge",
+  "context": "En un proceso disciplinario escolar se informó al estudiante que debía responder por una conducta concreta y se recibieron sus descargos. Al redactar la decisión final, la institución incorpora otras conductas que nunca habían sido formuladas como cargos y las utiliza para justificar una consecuencia más grave.",
+  "stem": "¿Qué actuación preserva mejor el debido proceso?",
+  "options": {
+    "A": "Decidir únicamente sobre los cargos que fueron comunicados y debatidos; si aparecen hechos nuevos relevantes, comunicarlos mediante el procedimiento correspondiente y garantizar oportunidad real de defensa antes de valorarlos para sancionar.",
+    "B": "Incluir los nuevos hechos en la decisión porque la autoridad escolar puede ampliar libremente los cargos mientras no cambie el estudiante investigado.",
+    "C": "Mantener los hechos nuevos en la decisión y compensar la falta de comunicación reduciendo parcialmente la consecuencia impuesta.",
+    "D": "Eliminar todos los cargos y cerrar definitivamente el caso, porque cualquier cambio posterior a los descargos invalida de manera automática toda actuación institucional."
+  },
+  "correctAnswer": "A",
+  "explanations": {
+    "A": "Es la mejor opción porque la decisión debe ser congruente con los cargos sobre los cuales el estudiante tuvo oportunidad de conocer, controvertir y ejercer defensa; los hechos nuevos no pueden convertirse sorpresivamente en fundamento sancionatorio.",
+    "B": "La potestad disciplinaria escolar está limitada por el debido proceso y no permite ampliar en el fallo los reproches sin dar oportunidad de defensa.",
+    "C": "Reducir la consecuencia no corrige la falta de contradicción respecto de hechos que nunca fueron formulados y debatidos.",
+    "D": "La aparición de nueva información no impide continuar un procedimiento válido; exige tramitarla con las garantías correspondientes antes de usarla como fundamento de una decisión."
+  },
+  "hint": "Compara aquello sobre lo que el estudiante pudo defenderse con aquello que finalmente fundamenta la decisión.",
+  "learningNote": "El debido proceso escolar exige formulación clara de cargos, traslado de las pruebas, oportunidad de descargos y una decisión motivada y congruente. Una autoridad no puede fundar la sanción en reproches nuevos que el estudiante no tuvo oportunidad de conocer y controvertir.",
+  "source": {"reference": "Corte Constitucional de Colombia, Sentencia T-004 de 2024, garantías mínimas del debido proceso disciplinario escolar"},
+  "estimatedDifficulty": "high"
+}
