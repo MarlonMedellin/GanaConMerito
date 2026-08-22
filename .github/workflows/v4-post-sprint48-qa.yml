@@ -4,54 +4,132 @@ on:
   push:
     branches: [remediate-v4-phase-a-b-20260822]
     paths:
+      - 'content/question-bank-v4/**'
       - '.github/workflows/v4-post-sprint48-qa.yml'
   pull_request:
-    branches: [master]
-    types: [opened, reopened, synchronize]
+    branches: [audit-v4-phase-a-b-adversarial-20260822]
+    paths:
+      - 'content/question-bank-v4/**'
+      - '.github/workflows/v4-post-sprint48-qa.yml'
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  append-register:
+  qa:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: remediate-v4-phase-a-b-20260822
           fetch-depth: 0
-      - name: Append corrected remediation rows exactly once
+      - name: Validate remediated V4 corpus read-only
         shell: bash
         run: |
-          set -euo pipefail
-          F='content/question-bank-v4/legacy-processing-register.csv'
-          MARKER='DOC-READVERSARIAL-REMEDIATION-20260822'
-          if grep -q "$MARKER" "$F"; then
-            echo 'Rows already present; no-op.'
-            exit 0
-          fi
-          cat >> "$F" <<'CSV'
-DOC-READVERSARIAL-REMEDIATION-20260822,2026-08-22,DOC-001206,content/question-bank-v4/items/docentes/DOC-001206.json,7347ab1af4343631d778796d0f2f53e18b5aa415,GPT-5.6 Sol,PRODUCE,GPT-5.6 Sol,APPROVED,DOC-001295,content/question-bank-v4/items/docentes/DOC-001295.json,processed_serialized,"REJECTED por taxonomia/constructo: operacion normativa mal clasificada; REGENERATE_FROM_ZERO; reemplazo DOC-001295 APPROVED."
-DOC-READVERSARIAL-REMEDIATION-20260822,2026-08-22,DOC-001218,content/question-bank-v4/items/docentes/DOC-001218.json,3da937313ce49e4410996839d9fdc4ece425fa3d,GPT-5.6 Sol,DISCARD,GPT-5.6 Sol,NOT_APPLICABLE,,,processed_discarded,"REJECTED por taxonomia/constructo; ABANDON por solapamiento con confidencialidad/proteccion ya cubierta en DOC-001147."
-DOC-READVERSARIAL-REMEDIATION-20260822,2026-08-22,DOC-001220,content/question-bank-v4/items/docentes/DOC-001220.json,2e33782028f99bae87329862fcd59e89d60fa981,GPT-5.6 Sol,PRODUCE,GPT-5.6 Sol,APPROVED,DOC-001296,content/question-bank-v4/items/docentes/DOC-001296.json,processed_serialized,"REJECTED por demanda cognitiva; REGENERATE_FROM_ZERO; derecho a ser escuchado reconstruido como apply; DOC-001296 APPROVED."
-DOC-READVERSARIAL-REMEDIATION-20260822,2026-08-22,DOC-001222,content/question-bank-v4/items/docentes/DOC-001222.json,4fcaace79770cd84f86ef1220513447f009d7bae,GPT-5.6 Sol,DISCARD,GPT-5.6 Sol,NOT_APPLICABLE,,,processed_discarded,"REJECTED por taxonomia/constructo; ABANDON por solapamiento con continuidad educativa/proteccion ya cubierta en DOC-001219."
-DOC-READVERSARIAL-REMEDIATION-20260822,2026-08-22,DOC-001225,content/question-bank-v4/items/docentes/DOC-001225.json,e318be3c3eaf4f1ec17c251674a59f05ac571b64,GPT-5.6 Sol,PRODUCE,GPT-5.6 Sol,APPROVED,DOC-001297,content/question-bank-v4/items/docentes/DOC-001297.json,processed_serialized,"REJECTED por taxonomia; REGENERATE_FROM_ZERO como interpretacion normativa; DOC-001297 APPROVED."
-DOC-READVERSARIAL-REMEDIATION-20260822,2026-08-22,DOC-001227,content/question-bank-v4/items/docentes/DOC-001227.json,6cc6a3282d13a543c66649e2ae18d0cb26bb9370,GPT-5.6 Sol,PRODUCE,GPT-5.6 Sol,APPROVED,DOC-001298,content/question-bank-v4/items/docentes/DOC-001298.json,processed_serialized,"REJECTED por taxonomia/demanda; REGENERATE_FROM_ZERO como aplicacion normativa; DOC-001298 APPROVED."
-DOC-READVERSARIAL-REMEDIATION-20260822,2026-08-22,DOC-001228,content/question-bank-v4/items/docentes/DOC-001228.json,576f4df9703a3787a5c08eb2b6927b641ab7c926,GPT-5.6 Sol,DISCARD,GPT-5.6 Sol,NOT_APPLICABLE,,,processed_discarded,"REJECTED por taxonomia/demanda; ABANDON por cobertura suficiente de jornada/asignacion en DOC-001184 y DOC-001224."
-DOC-READVERSARIAL-REMEDIATION-20260822,2026-08-22,DOC-001230,content/question-bank-v4/items/docentes/DOC-001230.json,6050448c989421a5c84e095f342d414218599630,GPT-5.6 Sol,PRODUCE,GPT-5.6 Sol,APPROVED,DOC-001299,content/question-bank-v4/items/docentes/DOC-001299.json,processed_serialized,"REJECTED por demanda cognitiva; REGENERATE_FROM_ZERO como apply; DOC-001299 APPROVED."
-DOC-READVERSARIAL-REMEDIATION-20260822,2026-08-22,DOC-001232,content/question-bank-v4/items/docentes/DOC-001232.json,894e86b894b397535b75a656af4ecc8458c1f379,GPT-5.6 Sol,PRODUCE,GPT-5.6 Sol,APPROVED,DOC-001300,content/question-bank-v4/items/docentes/DOC-001300.json,processed_serialized,"REJECTED por demanda cognitiva; REGENERATE_FROM_ZERO como apply; DOC-001300 APPROVED."
-DOC-READVERSARIAL-REMEDIATION-20260822,2026-08-22,DOC-001246,content/question-bank-v4/items/docentes/DOC-001246.json,bd16032a9f13d554ae2af5ef53990c21543550f9,GPT-5.6 Sol,DISCARD,GPT-5.6 Sol,NOT_APPLICABLE,,,processed_discarded,"REJECTED por taxonomia/demanda; ABANDON por bajo valor diferencial frente a cobertura vigente de gobierno/participacion estudiantil."
-DOC-READVERSARIAL-REMEDIATION-20260822,2026-08-22,DOC-001249,content/question-bank-v4/items/docentes/DOC-001249.json,0a1b5ece72b6e765fa26edc2f43e73efe66b1390,GPT-5.6 Sol,DISCARD,GPT-5.6 Sol,NOT_APPLICABLE,,,processed_discarded,"REJECTED por duplicacion conceptual; ABANDON; duplica DOC-001243."
-DOC-READVERSARIAL-REMEDIATION-20260822,2026-08-22,DOC-001250,content/question-bank-v4/items/docentes/DOC-001250.json,4b38a4461982cacd4d1e25fed8b3128092478a3e,GPT-5.6 Sol,PRODUCE,GPT-5.6 Sol,APPROVED,DOC-001301,content/question-bank-v4/items/docentes/DOC-001301.json,processed_serialized,"REJECTED por pistas de forma; REGENERATE_FROM_ZERO con distractores/longitud equilibrados; DOC-001301 APPROVED."
-DOC-READVERSARIAL-REMEDIATION-20260822,2026-08-22,DOC-001251,content/question-bank-v4/items/docentes/DOC-001251.json,0629d0a3853e00ff1e31665183c71f1cfca369e5,GPT-5.6 Sol,PRODUCE,GPT-5.6 Sol,APPROVED,DOC-001302,content/question-bank-v4/items/docentes/DOC-001302.json,processed_serialized,"REJECTED por pistas de forma; REGENERATE_FROM_ZERO con alternativas equivalentes; DOC-001302 APPROVED."
-DOC-READVERSARIAL-REMEDIATION-20260822,2026-08-22,DOC-001252,content/question-bank-v4/items/docentes/DOC-001252.json,694e65363c010c61980cdb973b8044aae7039b09,GPT-5.6 Sol,PRODUCE,GPT-5.6 Sol,APPROVED,DOC-001303,content/question-bank-v4/items/docentes/DOC-001303.json,processed_serialized,"REJECTED por pistas de forma; REGENERATE_FROM_ZERO con alternativas equivalentes; DOC-001303 APPROVED."
-DOC-READVERSARIAL-REMEDIATION-20260822,2026-08-22,DOC-001253,content/question-bank-v4/items/docentes/DOC-001253.json,25daff7ecda91f9845e66775d50ee6f7c91b6981,GPT-5.6 Sol,DISCARD,GPT-5.6 Sol,NOT_APPLICABLE,,,processed_discarded,"REJECTED por duplicacion; ABANDON; no se recrea una segunda variante de la oportunidad recuperada en DOC-001301."
-DOC-READVERSARIAL-REMEDIATION-20260822,2026-08-22,DOC-001254,content/question-bank-v4/items/docentes/DOC-001254.json,654eccad4754e33a862ffa221dec85d23d39072d,GPT-5.6 Sol,DISCARD,GPT-5.6 Sol,NOT_APPLICABLE,,,processed_discarded,"REJECTED por duplicacion fuerte; ABANDON; duplica DOC-001145."
-DOC-READVERSARIAL-REMEDIATION-20260822,2026-08-22,DOC-001255,content/question-bank-v4/items/docentes/DOC-001255.json,66aad9ccc23fc22b2d866a2c7717797a32382d1e,GPT-5.6 Sol,PRODUCE,GPT-5.6 Sol,APPROVED,DOC-001304,content/question-bank-v4/items/docentes/DOC-001304.json,processed_serialized,"REJECTED por pistas/dificultad; REGENERATE_FROM_ZERO con dificultad y distractores reequilibrados; DOC-001304 APPROVED."
-DOC-READVERSARIAL-REMEDIATION-20260822,2026-08-22,DOC-001290,content/question-bank-v4/items/docentes/DOC-001290.json,0fa0a62924d7c2d40f65981c00739f96de2af57f,GPT-5.6 Sol,DISCARD,GPT-5.6 Sol,NOT_APPLICABLE,,,processed_discarded,"REJECTED por duplicacion conceptual; ABANDON; duplica DOC-001271."
-CSV
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add "$F"
-          git commit -m 'docs(v4): register adversarial remediation dispositions'
-          git push origin HEAD:remediate-v4-phase-a-b-20260822
+          python - <<'PY'
+          import collections, json, pathlib, re, statistics, subprocess, sys
+
+          ROOT = pathlib.Path('content/question-bank-v4')
+          ITEMS = ROOT / 'items' / 'docentes'
+          SNAP = ROOT / 'COVERAGE-AFTER-A-B-REMEDIATION-20260822.json'
+          EXPECTED = 248
+          REJECTED = {
+            'DOC-001206','DOC-001218','DOC-001220','DOC-001222','DOC-001225','DOC-001227',
+            'DOC-001228','DOC-001230','DOC-001232','DOC-001246','DOC-001249','DOC-001250',
+            'DOC-001251','DOC-001252','DOC-001253','DOC-001254','DOC-001255','DOC-001290'}
+          RETIRED = {'DOC-001258','DOC-001259','DOC-001261','DOC-001265','DOC-001268','DOC-001291','DOC-001294'}
+          REPLACEMENTS = {f'DOC-{n:06d}' for n in range(1295,1305)}
+          PRESERVE = {'DOC-001104','DOC-001110','DOC-001292','DOC-001293'}
+
+          def load(path):
+            def hook(pairs):
+              out = {}
+              for k,v in pairs:
+                if k in out: raise ValueError(f'duplicate JSON key {k}')
+                out[k] = v
+              return out
+            return json.loads(path.read_text(encoding='utf-8'), object_pairs_hook=hook)
+
+          def words(x): return len(re.findall(r'\b\w+\b', str(x), re.UNICODE))
+          def num(qid): return int(re.fullmatch(r'DOC-(\d{6})', qid).group(1))
+
+          qt = load(ROOT/'taxonomy'/'question-types.json')
+          tax = {
+            'domain': set(load(ROOT/'taxonomy'/'domains.json')),
+            'topic': set(load(ROOT/'taxonomy'/'topics.json')),
+            'competency': set(load(ROOT/'taxonomy'/'competencies.json')),
+            'questionType': set(qt['questionTypes']),
+            'cognitiveLevel': set(qt['cognitiveLevels']),
+            'estimatedDifficulty': set(qt['estimatedDifficultyLevels'])}
+          required = {'id','scope','domain','topic','competency','questionType','cognitiveLevel','context','stem','options','correctAnswer','explanations','hint','learningNote','source','estimatedDifficulty'}
+          coverage = {k: collections.Counter() for k in ['domains','topics','competencies','questionTypes','cognitiveLevels','estimatedDifficulty']}
+          cmap = {'domain':'domains','topic':'topics','competency':'competencies','questionType':'questionTypes','cognitiveLevel':'cognitiveLevels','estimatedDifficulty':'estimatedDifficulty'}
+          keys = collections.Counter(); rows=[]; seen=set(); errors=[]; outliers=[]; new_outliers=[]
+          files = sorted(ITEMS.glob('DOC-*.json'))
+
+          for path in files:
+            try: obj = load(path)
+            except Exception as e:
+              errors.append(f'{path}: {e}'); continue
+            missing = required - set(obj)
+            if missing: errors.append(f'{path}: missing {sorted(missing)}'); continue
+            qid = obj['id']
+            if qid in seen: errors.append(f'duplicate id {qid}')
+            seen.add(qid)
+            if path.stem != qid: errors.append(f'{qid}: filename mismatch')
+            if obj['scope'] != 'general': errors.append(f'{qid}: invalid scope')
+            for f, allowed in tax.items():
+              if obj[f] not in allowed: errors.append(f'{qid}: invalid {f}={obj[f]}')
+            if set(obj['options']) != set('ABCD'): errors.append(f'{qid}: options != A-D')
+            if obj['correctAnswer'] not in 'ABCD': errors.append(f'{qid}: invalid key')
+            if set(obj['explanations']) != set('ABCD'): errors.append(f'{qid}: explanations != A-D')
+            if not isinstance(obj['source'],dict) or set(obj['source']) != {'reference'} or not str(obj['source']['reference']).strip(): errors.append(f'{qid}: invalid source')
+            for f in ('context','stem','hint','learningNote'):
+              if not isinstance(obj[f],str) or not obj[f].strip(): errors.append(f'{qid}: empty {f}')
+            for f in cmap: coverage[cmap[f]][obj[f]] += 1
+            key = obj['correctAnswer']; keys[key] += 1; rows.append((num(qid),qid,key))
+            lens={k:words(v) for k,v in obj['options'].items()}; med=statistics.median(lens[k] for k in 'ABCD' if k!=key); ratio=lens[key]/med if med else 999
+            if ratio > 1.65:
+              rec={'id':qid,'ratio':round(ratio,3)}; outliers.append(rec)
+              if qid in REPLACEMENTS: new_outliers.append(rec)
+
+          if len(files) != EXPECTED: errors.append(f'count {len(files)} != {EXPECTED}')
+          if REJECTED & seen: errors.append(f'rejected active: {sorted(REJECTED & seen)}')
+          if RETIRED & seen: errors.append(f'historical retired active: {sorted(RETIRED & seen)}')
+          if REPLACEMENTS - seen: errors.append(f'replacements missing: {sorted(REPLACEMENTS-seen)}')
+          if PRESERVE - seen: errors.append(f'C1/preserved missing: {sorted(PRESERVE-seen)}')
+          if new_outliers: errors.append(f'replacement length outliers: {new_outliers}')
+
+          rows.sort(); max_streak=0; streak=0; prev=None; start=None; span=None
+          for _,qid,key in rows:
+            if key == prev: streak += 1
+            else: streak=1; start=qid; prev=key
+            if streak > max_streak: max_streak=streak; span=[start,qid,key]
+          cov={k:dict(sorted(v.items())) for k,v in coverage.items()}; kd={k:keys.get(k,0) for k in 'ABCD'}
+          metrics={'itemCount':len(files),'keyDistribution':kd,'maxKeyStreak':max_streak,'maxKeyStreakSpan':span,'lengthOutlierCount':len(outliers),'replacementLengthOutlierCount':len(new_outliers),'coverage':cov}
+
+          if not SNAP.exists(): errors.append('remediation snapshot missing')
+          else:
+            snap=load(SNAP)
+            for f,actual in [('itemCount',len(files)),('keyDistribution',kd),('maxKeyStreak',max_streak),('coverage',cov)]:
+              if snap.get(f) != actual: errors.append(f'snapshot {f} mismatch')
+          for f in ['AUDIT-PHASE-A-B-READVERSARIAL-20260822.json','AUDIT-PHASE-A-B-READVERSARIAL-20260822.md']:
+            if not (ROOT/f).exists(): errors.append(f'historical audit missing: {f}')
+
+          try:
+            base='origin/audit-v4-phase-a-b-adversarial-20260822'
+            changed=subprocess.check_output(['git','diff','--name-only',f'{base}...HEAD'],text=True).splitlines()
+            exact={'.github/workflows/v4-post-sprint48-qa.yml','content/question-bank-v4/legacy-processing-register.csv','content/question-bank-v4/REMEDIATION-PHASE-A-B-READVERSARIAL-20260822.md','content/question-bank-v4/COVERAGE-AFTER-A-B-REMEDIATION-20260822.json'}
+            items={f'content/question-bank-v4/items/docentes/{x}.json' for x in REJECTED|REPLACEMENTS}
+            unexpected=sorted(set(changed)-exact-items)
+            if unexpected: errors.append(f'out-of-scope files: {unexpected}')
+            forbidden=[x for x in changed if x.startswith(('src/','scripts/','supabase/'))]
+            if forbidden: errors.append(f'forbidden paths: {forbidden}')
+          except Exception as e: errors.append(f'scope diff check failed: {e}')
+
+          print('FINAL_METRICS_JSON='+json.dumps(metrics,ensure_ascii=False,sort_keys=True))
+          if errors:
+            for e in errors: print('ERROR:',e)
+            sys.exit(1)
+          print('QA_OK: remediated corpus is internally consistent and read-only checks passed')
+          PY
