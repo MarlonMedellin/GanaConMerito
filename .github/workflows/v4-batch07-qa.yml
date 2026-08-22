@@ -68,6 +68,8 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add content/question-bank-v4/COVERAGE-AFTER-BATCH-07-20260822.json
-          git commit -m 'docs(v4): record coverage after expansion batch 07'
+          if ! git diff --cached --quiet; then
+            git commit -m 'docs(v4): record coverage after expansion batch 07'
+          fi
           git pull --rebase origin master
           git push origin HEAD:master
