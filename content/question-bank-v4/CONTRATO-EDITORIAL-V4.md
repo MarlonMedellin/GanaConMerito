@@ -49,7 +49,6 @@ objeto JSON con este contrato:
 {
   "id": "DOC-000001",
   "scope": "general",
-  "opecId": null,
   "domain": "evaluacion",
   "topic": "evaluacion_formativa",
   "competency": "decision_pedagogica",
@@ -62,7 +61,7 @@ objeto JSON con este contrato:
   "explanations": { "A": "...", "B": "...", "C": "...", "D": "..." },
   "hint": "...",
   "learningNote": "...",
-  "source": { "reference": "...", "locator": "...", "url": "..." },
+  "source": { "reference": "..." },
   "estimatedDifficulty": "medium"
 }
 ```
@@ -71,7 +70,7 @@ objeto JSON con este contrato:
 
 - `id`: `DOC-######` para docentes o `GEN-######` para generales; único e inmutable.
 - `scope`: `general` u `opec_specific`. Si es específico, `opecId` es obligatorio;
-  si es general, `opecId` debe ser `null` u omitirse.
+  si es general, `opecId` se omite (no usar `null`).
 - `domain`, `topic`, `competency`, `questionType` y `cognitiveLevel`: valores de los
   catálogos V4. Un catálogo se amplía solo por necesidad editorial real.
 - `context` y `stem`: autosuficientes, consistentes y con una sola tarea evaluable.
@@ -81,13 +80,14 @@ objeto JSON con este contrato:
   sustituyen la evidencia de la fuente.
 - `hint`: ayuda previa que guía el análisis sin revelar la clave.
 - `learningNote`: síntesis pedagógica posterior, sustentada y consistente con la clave.
-- `source`: `reference` es obligatorio; `locator` y `url` son obligatorios cuando
-  existan para la fuente. Una pregunta normativa requiere fuente oficial vigente.
+- `source`: solo `reference` (obligatorio). El `locator`/`url` de verificación vive
+  en `editorialRunContext` durante fábrica y auditoría, no en el ítem. Una pregunta
+  normativa requiere fuente oficial vigente y una referencia específica (norma +
+  artículo o sección cuando aplique).
 - `estimatedDifficulty`: `low`, `medium` o `high`; es estimación editorial, no
   parámetro psicométrico observado.
 
-`source`, `scope` y `opecId` se incorporan como campos obligatorios de todo nuevo
-ítem V4 aunque el primer ejemplo histórico aún no los materialice completamente.
+`scope` y `source` son obligatorios en todo ítem; `opecId` solo en `opec_specific`.
 
 ## 4. Estados y gates
 

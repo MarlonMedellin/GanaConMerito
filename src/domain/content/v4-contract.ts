@@ -27,25 +27,22 @@ export const v4ItemSchema = z.object({
   explanations: v4OptionSchema,
   hint: z.string().trim().min(1),
   learningNote: z.string().trim().min(1),
+  // El ítem persiste solo `reference`. El locator/url de verificación vive en
+  // `editorialRunContext` durante fábrica/auditoría (ver skills y CONTRATO-EDITORIAL-V4.md).
   source: z.object({
     reference: z.string().trim().min(1),
-    locator: z.string().trim().min(1).optional(),
-    url: z.string().url().optional(),
   }).strict(),
   estimatedDifficulty: z.enum(["low", "medium", "high"]),
 }).strict().superRefine((item, ctx) => {
   if (item.scope === "opec_specific" && !item.opecId) {
     ctx.addIssue({ code: "custom", path: ["opecId"], message: "opecId es obligatorio para scope opec_specific" });
   }
-  if (item.scope === "general" && item.opecId) {
-    ctx.addIssue({ code: "custom", path: ["opecId"], message: "opecId debe omitirse o ser null para scope general" });
+  if (item.scope === "general" && item.opecId !== undefined) {
+    ctx.addIssue({ code: "custom", path: ["opecId"], message: "opecId debe omitirse para scope general (no usar null)" });
   }
   const optionTexts = Object.values(item.options).map((value) => value.trim().toLowerCase());
   if (new Set(optionTexts).size !== optionTexts.length) {
     ctx.addIssue({ code: "custom", path: ["options"], message: "Las opciones deben ser únicas" });
-  }
-  if (!item.source.locator && !item.source.url && /decreto|ley|resolución|resolucion|artículo|articulo/i.test(item.source.reference)) {
-    ctx.addIssue({ code: "custom", path: ["source"], message: "Una fuente normativa requiere locator o url" });
   }
 });
 
