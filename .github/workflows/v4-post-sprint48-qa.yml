@@ -1,0 +1,168 @@
+name: V4 post-Sprint48 branch QA
+
+on:
+  push:
+    branches:
+      - v4-post-sprint48-expansion
+    paths:
+      - 'content/question-bank-v4/**'
+      - '.github/workflows/v4-post-sprint48-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate 254-item expansion corpus read-only
+        shell: bash
+        run: |
+          python - <<'PY'
+          import collections
+          import glob
+          import json
+          import re
+          import sys
+
+          BASE = 'content/question-bank-v4'
+          ITEM_GLOB = f'{BASE}/items/docentes/*.json'
+
+          def strict_pairs(pairs):
+              out = {}
+              for key, value in pairs:
+                  if key in out:
+                      raise ValueError(f'duplicate key: {key}')
+                  out[key] = value
+              return out
+
+          def load(path):
+              with open(path, encoding='utf-8') as handle:
+                  return json.load(handle, object_pairs_hook=strict_pairs)
+
+          domains = load(f'{BASE}/taxonomy/domains.json')
+          topics = load(f'{BASE}/taxonomy/topics.json')
+          competencies = load(f'{BASE}/taxonomy/competencies.json')
+          qtypes = load(f'{BASE}/taxonomy/question-types.json')
+
+          allowed = {
+              'domain': set(domains),
+              'topic': set(topics),
+              'competency': set(competencies),
+              'questionType': set(qtypes['questionTypes']),
+              'cognitiveLevel': set(qtypes['cognitiveLevels']),
+              'estimatedDifficulty': set(qtypes['estimatedDifficultyLevels']),
+          }
+          required = {
+              'id', 'scope', 'domain', 'topic', 'competency', 'questionType',
+              'cognitiveLevel', 'context', 'stem', 'options', 'correctAnswer',
+              'explanations', 'hint', 'learningNote', 'source',
+              'estimatedDifficulty'
+          }
+
+          counters = {key: collections.Counter() for key in allowed}
+          errors = []
+          ids = []
+          files = sorted(glob.glob(ITEM_GLOB))
+
+          for path in files:
+              try:
+                  item = load(path)
+              except Exception as exc:
+                  errors.append(f'{path}: parse error: {exc}')
+                  continue
+
+              ids.append(item.get('id'))
+              if set(item) != required:
+                  errors.append(f'{path}: top-level keys mismatch')
+              if not re.fullmatch(r'DOC-\d{6}', str(item.get('id', ''))):
+                  errors.append(f'{path}: invalid id')
+              if item.get('scope') != 'general':
+                  errors.append(f'{path}: scope must be general')
+              if 'opecId' in item:
+                  errors.append(f'{path}: opecId forbidden for general item')
+
+              for field, values in allowed.items():
+                  value = item.get(field)
+                  if value not in values:
+                      errors.append(f'{path}: invalid {field}={value!r}')
+                  counters[field][value] += 1
+
+              if set(item.get('options', {})) != {'A', 'B', 'C', 'D'}:
+                  errors.append(f'{path}: options must be A-D')
+              if set(item.get('explanations', {})) != {'A', 'B', 'C', 'D'}:
+                  errors.append(f'{path}: explanations must be A-D')
+              if item.get('correctAnswer') not in {'A', 'B', 'C', 'D'}:
+                  errors.append(f'{path}: invalid correctAnswer')
+              for letter in ('A', 'B', 'C', 'D'):
+                  if not isinstance(item.get('options', {}).get(letter), str) or not item['options'][letter].strip():
+                      errors.append(f'{path}: empty option {letter}')
+                  if not isinstance(item.get('explanations', {}).get(letter), str) or not item['explanations'][letter].strip():
+                      errors.append(f'{path}: empty explanation {letter}')
+              for field in ('context', 'stem', 'hint', 'learningNote'):
+                  if not isinstance(item.get(field), str) or not item[field].strip():
+                      errors.append(f'{path}: empty {field}')
+              if set(item.get('source', {})) != {'reference'}:
+                  errors.append(f'{path}: source must contain only reference')
+              elif not isinstance(item['source']['reference'], str) or not item['source']['reference'].strip():
+                  errors.append(f'{path}: empty source.reference')
+
+          if len(files) != 254:
+              errors.append(f'expected 254 items, got {len(files)}')
+          if len(ids) != len(set(ids)):
+              errors.append('duplicate ids')
+
+          phase_b = [f'DOC-{number:06d}' for number in range(1256, 1286)]
+          missing_b = [item_id for item_id in phase_b if item_id not in ids]
+          if missing_b:
+              errors.append('missing Phase B ids: ' + ','.join(missing_b))
+
+          expected_topics = {
+              'competencias_comportamentales': 8,
+              'comprension_lectora': 12,
+              'educacion_inicial_transicion': 6,
+              'razonamiento_cuantitativo': 6,
+              'modelizacion': 3,
+          }
+          for topic, expected in expected_topics.items():
+              actual = counters['topic'][topic]
+              if actual != expected:
+                  errors.append(f'expected topic {topic}={expected}, got {actual}')
+
+          snapshot = load(f'{BASE}/COVERAGE-AFTER-PHASE-B4-20260822.json')
+          if snapshot.get('frozenMasterItemCount') != 224:
+              errors.append('snapshot frozenMasterItemCount must be 224')
+          if snapshot.get('phaseBItemCount') != 30:
+              errors.append('snapshot phaseBItemCount must be 30')
+          if snapshot.get('itemCount') != 254:
+              errors.append('snapshot itemCount must be 254')
+          if snapshot.get('errors') != []:
+              errors.append(f'snapshot errors must be [], got {snapshot.get("errors")!r}')
+
+          computed = {
+              'domains': {key: counters['domain'][key] for key in domains},
+              'topics': {key: counters['topic'][key] for key in topics},
+              'competencies': {key: counters['competency'][key] for key in competencies},
+              'questionTypes': {key: counters['questionType'][key] for key in qtypes['questionTypes']},
+              'cognitiveLevels': {key: counters['cognitiveLevel'][key] for key in qtypes['cognitiveLevels']},
+              'estimatedDifficulty': {key: counters['estimatedDifficulty'][key] for key in qtypes['estimatedDifficultyLevels']},
+          }
+          if snapshot.get('coverage') != computed:
+              errors.append('snapshot coverage differs from computed branch coverage')
+
+          report = {
+              'branch': 'v4-post-sprint48-expansion',
+              'frozenMasterItemCount': 224,
+              'phaseBItemCount': 30,
+              'itemCount': len(files),
+              'errors': errors,
+          }
+          print(json.dumps(report, ensure_ascii=False, indent=2))
+          if errors:
+              sys.exit(1)
+          PY
