@@ -1,0 +1,30 @@
+{
+  "id": "DOC-001171",
+  "scope": "general",
+  "domain": "didactica",
+  "topic": "resolucion_de_problemas",
+  "competency": "decision_pedagogica",
+  "questionType": "reasoning",
+  "cognitiveLevel": "analyze",
+  "context": "En física, los estudiantes estudian varios ejemplos resueltos sobre movimiento. Algunos pueden imitar los pasos mientras tienen el ejemplo al lado, pero fallan cuando el problema cambia ligeramente. El docente quiere que los ejemplos ayuden a construir conocimiento transferible y no dependencia del modelo.",
+  "stem": "¿Qué tipo de consigna durante el estudio de los ejemplos favorece mejor ese propósito?",
+  "options": {
+    "A": "Pedir que copien cada línea exactamente y memoricen el orden de los pasos para reproducirlo en ejercicios posteriores.",
+    "B": "Pedir que identifiquen únicamente la respuesta numérica final y comparen si coincide con la del ejemplo.",
+    "C": "Pedir que expliquen por qué se realiza cada paso, qué principio lo justifica, qué información del problema lo hace pertinente y en qué condiciones ese procedimiento tendría que cambiar.",
+    "D": "Permitir que consulten continuamente el ejemplo durante todos los problemas nuevos para evitar cualquier error durante la práctica."
+  },
+  "correctAnswer": "C",
+  "explanations": {
+    "A": "Copiar y memorizar la secuencia puede facilitar la imitación superficial, pero no necesariamente construye relaciones entre los pasos y los principios que permiten transferir el procedimiento.",
+    "B": "Comparar solo resultados finales omite el razonamiento que explica cómo y por qué se llega a ellos.",
+    "C": "Es la mejor respuesta porque induce autoexplicaciones que relacionan acciones concretas con principios, condiciones y comprensión del problema, favoreciendo conocimiento menos dependiente del ejemplo específico.",
+    "D": "Mantener el ejemplo como apoyo permanente puede impedir que el estudiante compruebe si ha construido una representación propia del procedimiento y cuándo aplicarlo."
+  },
+  "hint": "El objetivo no es recordar qué hizo el ejemplo, sino comprender por qué funcionó y cuándo sus pasos son aplicables.",
+  "learningNote": "Las autoexplicaciones ayudan a que el estudiante conecte los pasos de un ejemplo con principios y condiciones de aplicación. Explicar por qué una solución funciona favorece comprensión y transferencia más allá de la reproducción literal del procedimiento mostrado.",
+  "source": {
+    "reference": "Chi, M. T. H., Bassok, M., Lewis, M. W., Reimann, P., & Glaser, R. (1989). Self-Explanations: How Students Study and Use Examples in Learning to Solve Problems. Cognitive Science, 13(2), 145–182"
+  },
+  "estimatedDifficulty": "medium"
+}
