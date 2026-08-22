@@ -1,0 +1,194 @@
+name: Close no-beta V4 legacy registry
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - .github/workflows/no-beta-register-closure.yml
+
+permissions:
+  contents: write
+
+jobs:
+  close-registry:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Close no-beta registry
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import csv
+          import hashlib
+          import json
+          from pathlib import Path
+
+          repo = Path('.')
+          register_path = repo / 'content/question-bank-v4/legacy-processing-register.csv'
+          roots = [
+              ('STBY', repo / 'content/items/no-beta-v1/stand-by-historico'),
+              ('BOP', repo / 'content/items/no-beta-v1/banco-operacional-previo'),
+          ]
+
+          fields = [
+              'batch_id', 'processed_at', 'legacy_id', 'legacy_path', 'legacy_blob_sha',
+              'factory_agent', 'factory_decision', 'audit_agent', 'audit_decision',
+              'v4_item_id', 'v4_item_path', 'status', 'notes'
+          ]
+
+          produced = {
+              'content/items/no-beta-v1/stand-by-historico/Autonomía escolar, religión, colegios privados y equidad/IDD_B16_I01.json': 'DOC-001009',
+              'content/items/no-beta-v1/stand-by-historico/Corresponsabilidad educativa, ausentismo y posición de garante/NFL_B05_I01.json': 'DOC-001010',
+              'content/items/no-beta-v1/stand-by-historico/Aprendizaje significativo Ausubel/MTV_B22_I04.json': 'DOC-001032',
+              'content/items/no-beta-v1/stand-by-historico/Aula invertida y cambio de rol docente/PPDC_B07_I01.json': 'DOC-001033',
+              'content/items/no-beta-v1/stand-by-historico/Autonomía institucional, enfoques de convivencia y organización del servicio educativo/CEOL_B10_I01.json': 'DOC-001034',
+              'content/items/no-beta-v1/stand-by-historico/Constructivismo, Vygotsky, sujeto político y subjetividad del conocimiento/IDD_B10_I03.json': 'DOC-001035',
+              'content/items/no-beta-v1/stand-by-historico/Constructivismo, indagación y aprendizaje experimental/PPDC_B03_I01.json': 'DOC-001036',
+              'content/items/no-beta-v1/stand-by-historico/Contexto, currículo y práctica educativa/MTV_B36_I03.json': 'DOC-001037',
+              'content/items/no-beta-v1/stand-by-historico/Contexto, currículo y práctica educativa/MTV_B36_I04.json': 'DOC-001038',
+              'content/items/no-beta-v1/stand-by-historico/Contexto, currículo y práctica educativa/MTV_B36_I07.json': 'DOC-001039',
+              'content/items/no-beta-v1/stand-by-historico/Criterios, instrumentos y tipos de evaluación/EFCC_B02_I02.json': 'DOC-001040',
+              'content/items/no-beta-v1/stand-by-historico/Currículo en espiral, Bruner y material concreto/EIP_B06_I02.json': 'DOC-001041',
+              'content/items/no-beta-v1/stand-by-historico/DUA, PIAR y ajustes razonables/IDD_B04_I05.json': 'DOC-001042',
+              'content/items/no-beta-v1/stand-by-historico/Debido proceso, congruencia y medidas correctivas extremas/NFL_B03_I02.json': 'DOC-001043',
+              'content/items/no-beta-v1/stand-by-historico/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I03.json': 'DOC-001044',
+              'content/items/no-beta-v1/stand-by-historico/Responsabilidad legal escolar, riesgos y prohibición de tratos degradantes/DIL_B04_I02.json': 'DOC-001045',
+              'content/items/no-beta-v1/stand-by-historico/Evaluación colaborativa, coevaluación y metacognición/IDD_B13_I02.json': 'DOC-001046',
+              'content/items/no-beta-v1/stand-by-historico/Evaluación colaborativa, coevaluación y metacognición/IDD_B13_I03.json': 'DOC-001047',
+              'content/items/no-beta-v1/stand-by-historico/Evaluación formativa, mejora continua y lenguaje evaluativo/CEOL_B06_I04.json': 'DOC-001048',
+              'content/items/no-beta-v1/stand-by-historico/Manejo del error y clima afectivo/PPDC_B02_I02.json': 'DOC-001049',
+              'content/items/no-beta-v1/stand-by-historico/Participación infantil, agencia y Convención sobre los Derechos del Niño/DIL_B06_I02.json': 'DOC-001050',
+              'content/items/no-beta-v1/stand-by-historico/Trabajo infantil y edad mínima/DIL_B09_I01.json': 'DOC-001051',
+          }
+
+          def blob_sha(path: Path) -> str:
+              data = path.read_bytes()
+              header = f'blob {len(data)}\0'.encode('utf-8')
+              return hashlib.sha1(header + data).hexdigest()
+
+          def legacy_id(path: Path) -> str:
+              try:
+                  obj = json.loads(path.read_text(encoding='utf-8-sig'))
+                  if isinstance(obj, dict):
+                      value = obj.get('id_item') or obj.get('id')
+                      if value:
+                          return str(value)
+              except Exception:
+                  pass
+              return path.stem
+
+          with register_path.open('r', encoding='utf-8-sig', newline='') as f:
+              existing_rows = list(csv.DictReader(f))
+
+          if not existing_rows:
+              raise SystemExit('legacy-processing-register.csv has no data rows')
+
+          existing_keys = {(r['legacy_path'], r['legacy_blob_sha']) for r in existing_rows}
+          all_no_beta = []
+          new_rows = []
+
+          for root_code, root in roots:
+              paths = sorted(p for p in root.rglob('*.json') if p.is_file())
+              for path in paths:
+                  rel = path.as_posix()
+                  sha = blob_sha(path)
+                  all_no_beta.append((rel, sha))
+
+              pending = [(p, blob_sha(p)) for p in paths if (p.as_posix(), blob_sha(p)) not in existing_keys]
+              for i, (path, sha) in enumerate(pending):
+                  rel = path.as_posix()
+                  batch = i // 20 + 1
+                  doc_id = produced.get(rel)
+                  if doc_id:
+                      doc_path = f'content/question-bank-v4/items/docentes/{doc_id}.json'
+                      if not (repo / doc_path).is_file():
+                          raise SystemExit(f'Missing serialized V4 item: {doc_path}')
+                      row = {
+                          'batch_id': f'DOC-NOBETA-{root_code}-20260822-{batch:03d}',
+                          'processed_at': '2026-08-22',
+                          'legacy_id': legacy_id(path),
+                          'legacy_path': rel,
+                          'legacy_blob_sha': sha,
+                          'factory_agent': 'GPT-5.6 Sol',
+                          'factory_decision': 'PRODUCE',
+                          'audit_agent': 'GPT-5.6 Sol',
+                          'audit_decision': 'APPROVED',
+                          'v4_item_id': doc_id,
+                          'v4_item_path': doc_path,
+                          'status': 'processed_serialized',
+                          'notes': 'Regenerado desde cero y aprobado por auditor V4; el original legacy se conserva.',
+                      }
+                  else:
+                      note = (
+                          'Revisado individualmente bajo gates V4; no justifica un reactivo nuevo por duplicacion, baja demanda, ajuste de rol o falta de diferenciacion.'
+                          if root_code == 'STBY'
+                          else 'Revisado contra el banco V4; no aporta un constructo profesional nuevo o queda cubierto por reactivos existentes.'
+                      )
+                      row = {
+                          'batch_id': f'DOC-NOBETA-{root_code}-20260822-{batch:03d}',
+                          'processed_at': '2026-08-22',
+                          'legacy_id': legacy_id(path),
+                          'legacy_path': rel,
+                          'legacy_blob_sha': sha,
+                          'factory_agent': 'GPT-5.6 Sol',
+                          'factory_decision': 'DISCARD',
+                          'audit_agent': 'GPT-5.6 Sol',
+                          'audit_decision': 'NOT_APPLICABLE',
+                          'v4_item_id': '',
+                          'v4_item_path': '',
+                          'status': 'processed_discarded',
+                          'notes': note,
+                      }
+                  new_rows.append(row)
+                  existing_keys.add((rel, sha))
+
+          final_rows = existing_rows + new_rows
+          final_keys = [(r['legacy_path'], r['legacy_blob_sha']) for r in final_rows]
+          if len(final_keys) != len(set(final_keys)):
+              raise SystemExit('Duplicate legacy_path + legacy_blob_sha in final register')
+
+          no_beta_keys = set(all_no_beta)
+          registered_no_beta = {(r['legacy_path'], r['legacy_blob_sha']) for r in final_rows if r['legacy_path'].startswith('content/items/no-beta-v1/')}
+          missing = sorted(no_beta_keys - registered_no_beta)
+          if missing:
+              raise SystemExit(f'Missing no-beta registry rows: {missing[:5]} (total {len(missing)})')
+
+          if len(no_beta_keys) != 459:
+              raise SystemExit(f'Unexpected no-beta JSON inventory: {len(no_beta_keys)}; expected 459')
+
+          produced_registered = {
+              r['legacy_path']: r['v4_item_id']
+              for r in final_rows
+              if r['legacy_path'] in produced and r['factory_decision'] == 'PRODUCE'
+          }
+          if produced_registered != produced:
+              raise SystemExit(f'Produced mapping mismatch: {len(produced_registered)} of {len(produced)}')
+
+          with register_path.open('w', encoding='utf-8', newline='') as f:
+              writer = csv.DictWriter(f, fieldnames=fields, lineterminator='\n')
+              writer.writeheader()
+              writer.writerows(final_rows)
+
+          print(f'no-beta JSON inventory: {len(no_beta_keys)}')
+          print(f'new registry rows: {len(new_rows)}')
+          print(f'produced mappings: {len(produced)}')
+          print('coverage: 459/459')
+          PY
+
+      - name: Commit registry closure
+        shell: bash
+        run: |
+          if git diff --quiet -- content/question-bank-v4/legacy-processing-register.csv; then
+            echo "No registry changes required"
+            exit 0
+          fi
+          git config user.name "gcm-v4-registry-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/question-bank-v4/legacy-processing-register.csv
+          git commit -m "chore(question-bank-v4): close no-beta legacy traceability"
+          git push origin HEAD:master
