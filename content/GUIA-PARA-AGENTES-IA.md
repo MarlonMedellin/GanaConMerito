@@ -26,6 +26,8 @@ content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv
 6. Usar `content/items/no-beta-v1/` solo como archivo historico o fuente de remanufactura.
 7. Para procesar un registro legacy hacia V4, leer las cuatro especificaciones de
    `docs/ai/skills/` y aplicar el par adecuado de fabrica y auditor.
+8. Validar todo resultado contra `content/question-bank-v4/CONTRATO-EDITORIAL-V4.md`
+   antes de serializarlo.
 
 ## Protocolo V4 para registros legacy
 

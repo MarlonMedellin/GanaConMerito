@@ -11,6 +11,9 @@ Entrada:
 Lectura de banco recomendada:
 - usar `public.v_item_bank_active` (ver `docs/database/active-question-bank-contract.md`)
 - no leer `item_bank` crudo como contrato funcional por defecto
+- cuando V4 se active, el backend debe elegir la vista V4 autorizada según el
+  contrato `docs/database/question-bank-v4-contract.md`; el navegador no consulta
+  tablas ni vistas con `correct_option` directamente
 
 Salida:
 - `sessionId`
@@ -91,6 +94,10 @@ Salida (compatibilidad + preparación rich):
   - `misconceptionHints?`
   - `rationale?`
   - `sourceTruthStatus?` (uso interno / trazabilidad)
+- extensión V4 pendiente de activación:
+  - `context?`, `topic?`, `questionType?`, `cognitiveLevel?`, `hint?`
+  - la clave, explicaciones y `learningNote` solo aparecen en un payload posterior
+    a la respuesta autorizada
 
 ### `GET /api/dashboard/summary`
 Contrato detallado: `docs/api/dashboard-summary-contract.md`

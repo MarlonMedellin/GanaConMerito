@@ -8,6 +8,14 @@ Este contrato resuelve tres problemas inmediatos sin rehacer la arquitectura:
 - excluir por defecto contenido legado o bloqueado
 - dar un punto único para frontend y backend al seleccionar o renderizar preguntas
 
+## Frontera V4
+
+Este contrato describe la lectura activa actualmente implementada para Beta/V3.
+No incluye V4 todavía. La futura incorporación de V4 debe seguir
+`docs/database/question-bank-v4-contract.md`: vista de lectura separada, campos
+editoriales estructurados, RLS y activación gradual. No ampliar
+`v_item_bank_active` para V4 antes de validar esa migración y el piloto.
+
 ---
 
 ## Nota de coherencia editorial

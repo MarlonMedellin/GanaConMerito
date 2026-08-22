@@ -20,6 +20,14 @@ last_reviewed: 2026-08-11
 - Update trigger: governance, delivery, documentation, drift
 
 ## 2026-08-21
+- tipo: docs+architecture+database
+- modulo: question-bank-v4
+- resumen: Se formaliza el contrato editorial V4 en `content`, junto con planes canónicos de adopción para backend, frontend y Supabase. V4 queda explícitamente como propuesta no activada: requiere validador, importador dry-run, migración versionada, vista/RLS, DTOs sin fuga de clave y piloto controlado antes de ser fuente de runtime.
+- agente: Codex
+- validacion: `python3 scripts/validate_docs.py`, `git diff --check` y parseo JSON V4
+- relacionados: content/question-bank-v4/CONTRATO-EDITORIAL-V4.md, docs/architecture/question-bank-v4-adoption.md, docs/database/question-bank-v4-contract.md
+
+## 2026-08-21
 - tipo: docs+editorial-governance
 - modulo: question-bank-v3/question-bank-v4/legacy
 - resumen: Se documenta la suite V4 de cuatro skills como protocolo obligatorio para revisar registros legacy de preguntas uno por uno: fabrica desde cero seguida de auditoria adversarial independiente. Solo los reactivos nuevos con `PRODUCE` y `APPROVED` pueden serializarse en `question-bank-v4`; no se migran claves, opciones ni explicaciones legacy.

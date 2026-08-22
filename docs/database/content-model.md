@@ -8,6 +8,17 @@
 
 ## Fuente canónica
 
+Existen dos contratos editoriales durante la transición:
+
+- **Legacy/Beta/V3:** Markdown en `content/items/` conserva el canon histórico y
+  sus JSON son derivados cuando aplica.
+- **V4:** el JSON definido por `content/question-bank-v4/CONTRATO-EDITORIAL-V4.md`
+  es canónico porque los reactivos se producen nuevos, completos y auditados; no
+  se deriva de Markdown legacy.
+
+La coexistencia no autoriza mezclar formatos ni activar V4 sin la migración y los
+gates de `docs/database/question-bank-v4-contract.md`.
+
 Los ítems se modelan en Markdown con frontmatter ubicado en `content/items/`.
 
 ## Identidad canónica

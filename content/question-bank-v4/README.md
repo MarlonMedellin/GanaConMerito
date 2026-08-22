@@ -9,6 +9,10 @@ a partir de materia prima legacy (contexto y enunciado antiguos usados solo como
 inspiración temática). La fábrica editorial que lo produce es el agente
 **GCM Master Question Factory — Docentes** (`gcm-master-question-factory-docentes`).
 
+La definición completa de campos, estados, seguridad y reglas de serialización está
+en [CONTRATO-EDITORIAL-V4.md](./CONTRATO-EDITORIAL-V4.md). Este README no es el
+contrato de runtime ni autoriza activar V4 en la aplicación.
+
 Regla central:
 
 > **Rescatar conocimiento útil, no preguntas antiguas.**

@@ -17,6 +17,9 @@ La entrada legacy solo aporta contexto, enunciado y tema recuperable. Opciones,
 claves, explicaciones, metadatos y fuentes no verificadas no se migran. Solo se
 serializa un reactivo con veredicto `APPROVED`; los demas se descartan. Esta regla
 aplica al contenido legacy del banco, no al codigo fuente legacy de la aplicacion.
+El contrato canónico de esos nuevos archivos está en
+`content/question-bank-v4/CONTRATO-EDITORIAL-V4.md`; su activación técnica se
+define fuera de `content`, en la documentación de arquitectura y base de datos.
 
 ## Fuente por defecto v3
 
