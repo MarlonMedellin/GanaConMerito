@@ -92,9 +92,11 @@ jobs:
           existing_keys = {(r['legacy_path'], r['legacy_blob_sha']) for r in existing_rows}
           all_no_beta = []
           new_rows = []
+          root_counts = {}
 
           for root_code, root in roots:
               paths = sorted(p for p in root.rglob('*.json') if p.is_file())
+              root_counts[root_code] = len(paths)
               for path in paths:
                   rel = path.as_posix()
                   sha = blob_sha(path)
@@ -154,13 +156,16 @@ jobs:
               raise SystemExit('Duplicate legacy_path + legacy_blob_sha in final register')
 
           no_beta_keys = set(all_no_beta)
+          if not no_beta_keys:
+              raise SystemExit('No no-beta JSON signals found')
+
           registered_no_beta = {(r['legacy_path'], r['legacy_blob_sha']) for r in final_rows if r['legacy_path'].startswith('content/items/no-beta-v1/')}
           missing = sorted(no_beta_keys - registered_no_beta)
+          extra = sorted(registered_no_beta - no_beta_keys)
           if missing:
               raise SystemExit(f'Missing no-beta registry rows: {missing[:5]} (total {len(missing)})')
-
-          if len(no_beta_keys) != 459:
-              raise SystemExit(f'Unexpected no-beta JSON inventory: {len(no_beta_keys)}; expected 459')
+          if extra:
+              raise SystemExit(f'Stale no-beta registry rows not present in current tree: {extra[:5]} (total {len(extra)})')
 
           produced_registered = {
               r['legacy_path']: r['v4_item_id']
@@ -175,10 +180,12 @@ jobs:
               writer.writeheader()
               writer.writerows(final_rows)
 
+          print(f"stand-by JSON: {root_counts['STBY']}")
+          print(f"banco-operacional JSON: {root_counts['BOP']}")
           print(f'no-beta JSON inventory: {len(no_beta_keys)}')
           print(f'new registry rows: {len(new_rows)}')
           print(f'produced mappings: {len(produced)}')
-          print('coverage: 459/459')
+          print(f'coverage: {len(registered_no_beta)}/{len(no_beta_keys)}')
           PY
 
       - name: Commit registry closure to PR branch
