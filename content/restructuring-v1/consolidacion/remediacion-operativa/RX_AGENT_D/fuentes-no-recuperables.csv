@@ -3,5 +3,6 @@ GA02_B08,NO_RECUPERABLE,"Visible en arbol GitHub pero no recuperable por API o U
 DIL_B08_I01,NO_RECUPERABLE,"Listado parcialmente visible pero no descargable."
 DIL_B08_I02,NO_RECUPERABLE,"Listado parcialmente visible pero no descargable."
 DIL_B08_I03,NO_RECUPERABLE,"Listado parcialmente visible pero no descargable."
-CB07_I02,NO_RECUPERABLE,"No visible durante lectura puntual."
-CB07_I03,NO_RECUPERABLE,"No visible durante lectura puntual."
+CB07_I02,NO_RECUPERABLE,"No visible durante lectura puntual; no existe blob legacy recuperable para procesamiento V4."
+CB07_I03,NO_RECUPERABLE,"No visible durante lectura puntual; no existe blob legacy recuperable para procesamiento V4."
+EFCC_B02_I04,NO_RECUPERABLE,"La ruta fuente no resuelve en master; sin blob legacy no puede procesarse ni registrarse como entrada V4 cerrada."
