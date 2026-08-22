@@ -83,7 +83,7 @@ Si el sprint termina en promoción operativa sobre VPS, recordar siempre:
 1. actualizar primero la carpeta fuente `~/.openclaw/product`
 2. alinear después el deploy tree `/opt/gcm/app`
 3. actualizar, reconstruir, reiniciar o verificar Docker según corresponda
-4. validar al final en `https://cnsc.profemarlon.com`
+4. validar al final en `https://ganaconmerito.com`
 
 ## Riesgos
 - Sobreinterpretar metadata aún incompleta como si ya fuera señal fuerte.

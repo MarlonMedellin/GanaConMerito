@@ -7,7 +7,7 @@ test.use({ storageState: fs.existsSync(AUTH_STATE_PATH) ? AUTH_STATE_PATH : unde
 
 test.describe("GanaConMerito - Idempotency Practice Test", () => {
   const artifactDir = path.join(process.cwd(), "artifacts", "idempotency-practice-test");
-  const BASE_URL = process.env.E2E_BASE_URL ?? "https://cnsc.profemarlon.com";
+  const BASE_URL = process.env.E2E_BASE_URL ?? "https://ganaconmerito.com";
 
   test.beforeAll(async () => {
     if (!fs.existsSync(artifactDir)) {

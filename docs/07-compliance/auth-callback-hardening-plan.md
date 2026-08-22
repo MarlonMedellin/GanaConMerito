@@ -44,13 +44,13 @@ El callback no debe confiar ciegamente en headers forwarded. Debe resolver un or
 ### Variable obligatoria recomendada
 
 ```env
-AUTH_CALLBACK_ALLOWED_ORIGINS=https://cnsc.profemarlon.com,http://localhost:3000
+AUTH_CALLBACK_ALLOWED_ORIGINS=https://ganaconmerito.com,http://localhost:3000
 ```
 
 ### Variable opcional recomendada
 
 ```env
-APP_CANONICAL_ORIGIN=https://cnsc.profemarlon.com
+APP_CANONICAL_ORIGIN=https://ganaconmerito.com
 ```
 
 ## Comportamiento esperado

@@ -6,7 +6,7 @@ async function run() {
   const context = await browser.newContext();
   const page = await context.newPage();
   
-  await page.goto('https://cnsc.profemarlon.com/login');
+  await page.goto('https://ganaconmerito.com/login');
   await page.screenshot({ path: 'artifacts/live-login-state.png' });
   console.log('Screenshot saved to artifacts/live-login-state.png');
   

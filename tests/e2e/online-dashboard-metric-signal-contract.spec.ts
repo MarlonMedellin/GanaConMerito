@@ -4,12 +4,12 @@ import path from "path";
 
 /**
  * Sprint 12: Dashboard Metric Signal & Prudence Contract Audit
- * Target: https://cnsc.profemarlon.com
+ * Target: https://ganaconmerito.com
  */
 
 test.describe.configure({ mode: "serial" });
 
-const BASE_URL = process.env.E2E_BASE_URL ?? "https://cnsc.profemarlon.com";
+const BASE_URL = process.env.E2E_BASE_URL ?? "https://ganaconmerito.com";
 const AUTH_STATE_PATH = "artifacts/auth-state.json";
 const ARTIFACTS_DIR = "artifacts/online-dashboard-metric-signal-contract";
 const EXPECTED_COMMIT = process.env.EXPECTED_COMMIT ?? "64d78de";

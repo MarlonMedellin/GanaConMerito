@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import * as fs from 'fs';
 import * as path from 'path';
 
-const BASE_URL = process.env.E2E_BASE_URL || 'https://cnsc.profemarlon.com';
+const BASE_URL = process.env.E2E_BASE_URL || 'https://ganaconmerito.com';
 const EXPECTED_COMMIT = process.env.EXPECTED_COMMIT || '';
 const ARTIFACTS_DIR = path.join(process.cwd(), 'artifacts', 'online-post-sprint13-priority-regression');
 

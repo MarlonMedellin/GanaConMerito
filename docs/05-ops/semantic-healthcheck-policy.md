@@ -225,7 +225,7 @@ curl -fsS http://127.0.0.1:3000/api/health
 Validar runtime publico:
 
 ```bash
-curl -fsS https://cnsc.profemarlon.com/api/health
+curl -fsS https://ganaconmerito.com/api/auth/public-config >/dev/null
 ```
 
 ## Integracion con rollback

@@ -2,7 +2,7 @@
 
 Status: canonical
 Owner: PM-Governance
-Last reviewed: 2026-08-19
+Last reviewed: 2026-08-22
 Related files:
 - AGENTS.md
 - docs/project/status.md
@@ -49,8 +49,8 @@ Copia sincronizada:
 Deploy:
 - `/opt/gcm/app`
 
-Runtime público:
-- `https://cnsc.profemarlon.com`
+Runtime público canónico:
+- `https://ganaconmerito.com`
 
 Snapshot vigente para beta candidata:
 - Commit de codigo release: `9695d40`
@@ -101,7 +101,7 @@ Para Beta Candidate 0.6.0, la evidencia histórica en `fcc40cb`, `716ec62` u otr
 | Build | `npm run build` PASS |
 | Tests | suite relevante PASS; fallos por entorno documentados aparte |
 | Contenido | `npm run content:validate` PASS |
-| Smoke | `QA_BASE_URL=https://cnsc.profemarlon.com npm run qa:runtime:smoke` PASS |
+| Smoke | `QA_BASE_URL=https://ganaconmerito.com npm run qa:runtime:smoke` PASS |
 | Postdeploy/E2E | `qa:smoke:postdeploy`, `qa:e2e:api` y `qa:e2e:ui` PASS cuando aplique |
 | Registro | `status.md`, `sprint-log.md`, `change-log.md` y release checklist actualizados |
 

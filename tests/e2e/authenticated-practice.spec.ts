@@ -10,7 +10,7 @@ test.describe("GanaConMerito - Práctica Autenticada", () => {
     const artifactDir = path.join(process.cwd(), "artifacts", "authenticated-practice");
     if (!fs.existsSync(artifactDir)) fs.mkdirSync(artifactDir, { recursive: true });
     
-    const BASE_URL = process.env.E2E_BASE_URL ?? "https://cnsc.profemarlon.com";
+    const BASE_URL = process.env.E2E_BASE_URL ?? "https://ganaconmerito.com";
 
     console.log(`[E2E] Navegando a práctica como usuario autenticado: ${BASE_URL}/practice`);
 

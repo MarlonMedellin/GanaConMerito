@@ -4,12 +4,12 @@ import path from "path";
 
 /**
  * Sprint 10: Tutor GCM Contract & Guardrails Audit
- * Target: https://cnsc.profemarlon.com
+ * Target: https://ganaconmerito.com
  */
 
 test.describe.configure({ mode: "serial" });
 
-const BASE_URL = process.env.E2E_BASE_URL ?? "https://cnsc.profemarlon.com";
+const BASE_URL = process.env.E2E_BASE_URL ?? "https://ganaconmerito.com";
 const AUTH_STATE_PATH = "artifacts/auth-state.json";
 const ARTIFACTS_DIR = "artifacts/online-tutor-gcm-sprint-10-contract";
 const EXPECTED_COMMIT = "7a38032";

@@ -1,7 +1,7 @@
 import { chromium } from 'playwright';
 
 async function reproduceLogout() {
-  console.log('Iniciando reproducción de logout en https://cnsc.profemarlon.com...');
+  console.log('Iniciando reproducción de logout en https://ganaconmerito.com...');
   
   const browser = await chromium.launch();
   const context = await browser.newContext();
@@ -24,7 +24,7 @@ async function reproduceLogout() {
   // o si podemos forzar su renderizado para pruebas.
   // En este caso, el usuario dice que el botón dice "Saliendo..." y se queda colgado.
   
-  await page.goto('https://cnsc.profemarlon.com/login');
+  await page.goto('https://ganaconmerito.com/login');
   await page.waitForLoadState('networkidle');
 
   console.log('Buscando botón de logout (Cerrar sesión)...');

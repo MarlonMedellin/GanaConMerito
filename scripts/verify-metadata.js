@@ -2,7 +2,7 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
 
-const baseUrl = 'https://cnsc.profemarlon.com';
+const baseUrl = 'https://ganaconmerito.com';
 const artifactRoot = path.join(process.cwd(), 'artifacts', 'qa-logout-verify');
 if (!fs.existsSync(artifactRoot)) fs.mkdirSync(artifactRoot, { recursive: true });
 

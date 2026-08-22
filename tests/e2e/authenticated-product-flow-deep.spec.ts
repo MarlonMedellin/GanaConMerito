@@ -33,7 +33,7 @@ interface AuditReport {
 test.describe("GanaConMerito - Deep Product Flow Audit", () => {
   const artifactDir = path.join(process.cwd(), "artifacts", "authenticated-product-flow-deep");
   const reportPath = path.join(artifactDir, "product-flow-report.json");
-  const BASE_URL = process.env.E2E_BASE_URL ?? "https://cnsc.profemarlon.com";
+  const BASE_URL = process.env.E2E_BASE_URL ?? "https://ganaconmerito.com";
 
   let report: AuditReport = {
     baseUrl: BASE_URL,

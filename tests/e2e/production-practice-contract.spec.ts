@@ -2,7 +2,7 @@ import { test, expect, Request, Response, ConsoleMessage, TestInfo } from "@play
 import fs from "node:fs";
 import path from "node:path";
 
-const BASE_URL = process.env.E2E_BASE_URL ?? "https://cnsc.profemarlon.com";
+const BASE_URL = process.env.E2E_BASE_URL ?? "https://ganaconmerito.com";
 const EXPECTED_COMMIT = process.env.EXPECTED_COMMIT ?? "";
 
 type NetworkEntry = {

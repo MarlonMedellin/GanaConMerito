@@ -37,7 +37,7 @@ interface AuditReport {
 test.describe("GanaConMerito - Online UX & Flow Audit", () => {
   const artifactDir = path.join(process.cwd(), "artifacts", "online-authenticated-five-question-ux-audit");
   const reportPath = path.join(artifactDir, "online-five-question-ux-report.json");
-  const BASE_URL = process.env.E2E_BASE_URL ?? "https://cnsc.profemarlon.com";
+  const BASE_URL = process.env.E2E_BASE_URL ?? "https://ganaconmerito.com";
 
   let report: AuditReport = {
     baseUrl: BASE_URL,

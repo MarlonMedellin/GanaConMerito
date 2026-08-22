@@ -55,7 +55,7 @@ Toda fuente de trabajo debe seguir esta secuencia:
 4. descargar o actualizar ese estado en `~/.openclaw/product`
 5. alinear despues el deploy en `/opt/gcm/app`
 6. actualizar, reconstruir, reiniciar o verificar Docker en el VPS OCI
-7. validar el resultado final en `https://cnsc.profemarlon.com`
+7. validar el resultado final en `https://ganaconmerito.com`
 
 ## Jerarquia de verdad operativa
 
@@ -64,7 +64,7 @@ Cuando haya conflicto entre senales, usar este orden:
 2. documentacion canonica alineada
 3. copia sincronizada en `~/.openclaw/product`
 4. arbol de deploy `/opt/gcm/app`
-5. runtime visible en `https://cnsc.profemarlon.com`
+5. runtime visible en `https://ganaconmerito.com`
 
 ## Nota sobre hashes y ramas
 
@@ -83,12 +83,12 @@ Por eso:
 - arbol de deploy: `/opt/gcm/app`
 - entorno persistente de deploy: `/opt/gcm/env/gcm-app.env`
 - hosting operativo final: VPS en OCI
-- runtime publico de validacion: `https://cnsc.profemarlon.com`
+- runtime publico de validacion: `https://ganaconmerito.com`
 
 ## Validacion obligatoria
 
 Las pruebas relevantes deben correrse contra la URL publica cuando aplique:
-- `https://cnsc.profemarlon.com`
+- `https://ganaconmerito.com`
 
 Orden preferido cuando el cambio toque flujo real:
 1. build
@@ -130,7 +130,7 @@ Por lo tanto, la continuidad de planeacion debe arrancar desde:
 2. no desarrollar directamente sobre `/opt/gcm/app` como fuente principal
 3. no cerrar trabajo sin pasar por PR hacia el repo principal
 4. no cerrar release sin actualizar `~/.openclaw/product`, luego `/opt/gcm/app`, y finalmente Docker en el VPS OCI
-5. no declarar exito sin validar en `https://cnsc.profemarlon.com`
+5. no declarar exito sin validar en `https://ganaconmerito.com`
 6. no abrir Tutor GCM como chat libre dominante
 7. no mover logica critica del sistema al LLM
 8. no reabrir editorial como frente principal sin decision explicita

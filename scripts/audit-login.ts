@@ -1,7 +1,7 @@
 import { chromium } from 'playwright';
 
 async function auditLogin() {
-  console.log('Iniciando auditoría de login en https://cnsc.profemarlon.com/login...');
+  console.log('Iniciando auditoría de login en https://ganaconmerito.com/login...');
   
   const browser = await chromium.launch();
   const context = await browser.newContext();
@@ -25,7 +25,7 @@ async function auditLogin() {
   });
 
   const startTime = Date.now();
-  const response = await page.goto('https://cnsc.profemarlon.com/login', { waitUntil: 'networkidle' });
+  const response = await page.goto('https://ganaconmerito.com/login', { waitUntil: 'networkidle' });
   const loadTime = Date.now() - startTime;
   
   console.log(`\n--- Resultados de la Auditoría ---`);

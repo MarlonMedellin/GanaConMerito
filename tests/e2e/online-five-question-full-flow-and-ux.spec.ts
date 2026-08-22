@@ -29,7 +29,7 @@ test.describe("GanaConMerito - Full Flow & UX Audit", () => {
   test.setTimeout(180000);
   const artifactDir = path.join(process.cwd(), "artifacts", "online-five-question-full-flow-and-ux");
   const reportPath = path.join(artifactDir, "online-five-question-full-flow-report.json");
-  const BASE_URL = process.env.E2E_BASE_URL ?? "https://cnsc.profemarlon.com";
+  const BASE_URL = process.env.E2E_BASE_URL ?? "https://ganaconmerito.com";
 
   let report: AuditReport = {
     verdict: "PENDING",

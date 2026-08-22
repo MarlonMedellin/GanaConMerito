@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 import fs from "node:fs";
 import path from "node:path";
 
-const BASE_URL = process.env.E2E_BASE_URL ?? "https://cnsc.profemarlon.com";
+const BASE_URL = process.env.E2E_BASE_URL ?? "https://ganaconmerito.com";
 
 test.describe("Forense Auth Google - GanaConMerito", () => {
   test("captura callback, errores de query y cookies después del login manual", async ({ page }, testInfo) => {
@@ -21,7 +21,7 @@ test.describe("Forense Auth Google - GanaConMerito", () => {
       const url = request.url();
 
       if (
-        url.includes("cnsc.profemarlon.com") ||
+        url.includes("ganaconmerito.com") ||
         url.includes("supabase.co") ||
         url.includes("accounts.google.com")
       ) {
@@ -38,7 +38,7 @@ test.describe("Forense Auth Google - GanaConMerito", () => {
       const url = response.url();
 
       if (
-        url.includes("cnsc.profemarlon.com") ||
+        url.includes("ganaconmerito.com") ||
         url.includes("supabase.co") ||
         url.includes("accounts.google.com")
       ) {
@@ -120,7 +120,7 @@ test.describe("Forense Auth Google - GanaConMerito", () => {
     );
 
     const ownDomainErrors = responses.filter((entry) =>
-      entry.url.includes("cnsc.profemarlon.com") && entry.status >= 400
+      entry.url.includes("ganaconmerito.com") && entry.status >= 400
     );
 
     const supabaseErrors = responses.filter((entry) =>

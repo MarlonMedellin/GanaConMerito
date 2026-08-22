@@ -46,7 +46,7 @@ docker compose up -d --build
 Validar runtime publico:
 
 ```text
-https://cnsc.profemarlon.com
+https://ganaconmerito.com
 ```
 
 ## Triple verificacion

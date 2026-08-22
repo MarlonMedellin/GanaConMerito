@@ -183,7 +183,7 @@ npx tsc --noEmit
 ### 7.3 Health check
 ```bash
 curl -I http://127.0.0.1:3000
-curl -Ik https://cnsc.profemarlon.com
+curl -Ik https://ganaconmerito.com
 ```
 
 ---

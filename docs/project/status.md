@@ -17,15 +17,15 @@ Ultima actualizacion: 2026-08-22 — Sprint 48 propuesto tras auditoria V4, Supa
 # Executive Operational Snapshot
 
 ## Current Sprint
-Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (**propuesto; no iniciado**).
+Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (**en ejecución; Bloque 0 publicado**).
 
 ## Current Runtime State
-El runtime publico responde en `https://cnsc.profemarlon.com` y reporta el commit
+El runtime publico canonico responde en `https://ganaconmerito.com` y reporta el commit
 `e43f612` con build time `2026-08-21 03:51:03 +0000 UTC`. El smoke publico de
 login y configuracion paso el 2026-08-22.
 
-La base online incorporada de `master` es `8c4be39`; el runtime esta al menos 178
-commits detras de esa base, sin contar el commit de seguridad de este bloque.
+La base online incorporada de `master` es `7baac9f`; el runtime esta 207
+commits detras de esa base, incluyendo el bloque de seguridad ya publicado.
 La administracion de VPS no fue verificada porque la huella SSH presentada cambio
 y debe confirmarse antes de aceptar la conexion.
 
@@ -47,8 +47,9 @@ ventana controlada.
 - `/api/session/item` devuelve `rationale` antes de responder.
 - La app sigue leyendo `v_item_bank_active`/`item_bank` con fallback legacy y no
   consume de forma nativa todos los campos V4.
-- El banco V4 local tiene 110 reactivos docentes validos, pero cero
-  documentos en `sources/`; calidad editorial no equivale a fuente normativa verificada.
+- El banco V4 local tiene 130 reactivos docentes validos al corte `7baac9f`, pero
+  mantiene cero documentos en `sources/`; calidad editorial no equivale a fuente
+  normativa verificada.
 - Persisten contratos y validaciones parcialmente narrativas fuera del baseline canonico.
 - La trazabilidad multiagente todavia no es enforcement obligatorio.
 - La integracion del Tutor con LLM real queda como deuda tecnica futura y no forma parte del cierre de Sprint 47.
@@ -64,11 +65,11 @@ ventana controlada.
 - sincronizacion documental automatica;
 - reduccion de documentacion legacy;
 - integracion fuerte rich-only.
-- corte seguro de V4, importacion 110/110 e integracion OpenRouter shadow pendientes.
+- corte seguro de V4, importacion completa e integracion OpenRouter shadow pendientes.
 
 ## Last Audit
 2026-08-22 — repo remoto sincronizado; estructura V4, REST publico de Supabase,
-contratos de practica/Tutor y runtime publico auditados. VPS admin no verificado.
+contratos de practica/Tutor y runtime publico canonico auditados. VPS admin no verificado.
 
 ---
 
@@ -82,9 +83,9 @@ contratos de practica/Tutor y runtime publico auditados. VPS admin no verificado
 
 **Producto:** login, onboarding, practica y dashboard siguen siendo las superficies activas; Tutor GCM permanece bajo contrato, sin autoridad sobre scoring, avance ni estado de sesion.
 
-**Bloque actual en repo:** Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (propuesto).
+**Bloque actual en repo:** Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (en ejecución).
 
-**Estado del bloque actual:** PRD y plan definidos; implementacion no iniciada.
+**Estado del bloque actual:** Bloque 0 publicado; Bloque 1 en curso.
 
 **Sprint anterior cerrado:** Sprint 46 — Cierre normativo del Tutor GCM.
 
@@ -141,8 +142,8 @@ Declarar `v0.6.0-beta.1` solo cuando `docs/02-delivery/release-checklist.md` que
 - **Fuente de verdad del producto:** `https://github.com/MarlonMedellin/GanaConMerito`.
 - **Copia sincronizada operativa en VPS:** `~/.openclaw/product`.
 - **Arbol de deploy:** `/opt/gcm/app`.
-- **URL publica canonica:** `https://cnsc.profemarlon.com`.
-- **Consola operacional:** `https://cnsc.profemarlon.com/update.html`.
+- **URL publica canonica:** `https://ganaconmerito.com`.
+- **Consola operacional:** `https://ganaconmerito.com/update.html`.
 - **HEAD actual del repo revisado:** `b0207e9`.
 - **Ultimo commit publico desplegado y verificado:** `ad6ad35`.
 - **Estado de paridad repo/runtime:** no alineado; E2E real verificado sobre `ad6ad35`.

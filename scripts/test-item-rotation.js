@@ -4,7 +4,7 @@ const { createBrowserClient } = require('@supabase/ssr');
 const fs = require('fs');
 const path = require('path');
 
-const baseUrl = process.env.QA_BASE_URL || 'https://cnsc.profemarlon.com';
+const baseUrl = process.env.QA_BASE_URL || 'https://ganaconmerito.com';
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;

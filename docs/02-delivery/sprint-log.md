@@ -25,10 +25,10 @@ last_reviewed: 2026-08-22
 
 ## Current delivery state
 - **Current operational block**: Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (en ejecución; Bloque 0 en repo).
-- **Base online incorporada**: `8c4be39` en `master`; commit de Bloque 0 pendiente de publicación al registrar esta entrada.
-- **Public runtime-verified commit**: `e43f612`; smoke publico PASS el 2026-08-22, sin nueva E2E autenticada.
+- **Base online incorporada**: `7baac9f` en `master`; Bloque 0 publicado en `f977d46`.
+- **Public runtime canonico**: `https://ganaconmerito.com`; commit visible `e43f612`, smoke publico PASS el 2026-08-22, sin nueva E2E autenticada.
 - **Supabase publico**: 121 filas visibles en `item_bank`: 120 legacy y 1 V4; existe exposicion P0 de clave/explicacion.
-- **V4 local**: 110 reactivos docentes validos; 1/110 observado en Supabase.
+- **V4 local**: 130 reactivos válidos al corte `7baac9f`; 1 V4 observado en Supabase.
 - **Governance Hardening Roadmap state**: Fase 1 y Fase 2 iniciadas; Fase 3 en ejecucion documental (reduccion y clasificacion), Fases 4-5 futuras.
 - **Open risks**:
   - acceso anonimo directo a claves y explicaciones del banco;
@@ -44,7 +44,7 @@ last_reviewed: 2026-08-22
   - el frente normativo sigue en `synthesized_governed_unverified` hasta cargar anexos oficiales suficientes.
 
 ## Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow
-- **Estado**: EN EJECUCIÓN; BLOQUE 0 IMPLEMENTADO EN REPO, REMOTO PENDIENTE
+- **Estado**: EN EJECUCIÓN; BLOQUE 0 PUBLICADO EN REPO, BLOQUE 1 EN CURSO
 - **Fecha de definicion**: 2026-08-22
 - **Rama canonica**: `master`
 - **Objetivo**: cortar la lectura runtime a V4 y ejecutar OpenRouter en shadow con
@@ -52,16 +52,16 @@ last_reviewed: 2026-08-22
 
 ### Orden y gates
 1. Cerrar exposicion P0 de claves, explicaciones y metadata privada.
-2. Hacer operativa e idempotente la importacion 110/110 V4.
+2. Hacer operativa e idempotente la importacion completa del corpus V4 aprobado.
 3. Adaptar repositorio, DTO, UI y selector sin fallback legacy.
 4. Adaptar el expediente Tutor a todos los campos V4.
 5. Integrar un proveedor OpenRouter restringido en shadow.
 6. Aprobar evaluacion adversarial y gates de repo/staging.
 
 ### Evidencia de preparacion
-- Auditoria estructural V4: 110 archivos validos, sin inspeccion de items individuales.
+- Auditoria estructural V4: corpus valido al corte, sin inspeccion de items individuales.
 - Contraste REST publico Supabase y lectura de migraciones/contratos de app.
-- Smoke publico PASS sobre `e43f612`; runtime al menos 178 commits detras de `8c4be39`.
+- Smoke publico PASS sobre `e43f612` en `https://ganaconmerito.com`; runtime 207 commits detras de `7baac9f`.
 - PRD y plan detallado creados; sin cambios de codigo, DB o deploy.
 - Migración `0020`, lecturas server-only, contratos pre/post y suite de seguridad
   implementados; typecheck y pruebas específicas PASS.

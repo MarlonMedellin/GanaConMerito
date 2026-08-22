@@ -9,7 +9,7 @@ async function run() {
   const page = await context.newPage();
   
   console.log('Navigating to /home...');
-  await page.goto('https://cnsc.profemarlon.com/home');
+  await page.goto('https://ganaconmerito.com/home');
   await page.waitForTimeout(5000);
   
   console.log('Current URL:', page.url());

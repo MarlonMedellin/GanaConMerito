@@ -1,7 +1,7 @@
 import { chromium } from 'playwright';
 
 async function auditPage() {
-  console.log('Iniciando auditoría de https://cnsc.profemarlon.com/home...');
+  console.log('Iniciando auditoría de https://ganaconmerito.com/home...');
   
   const browser = await chromium.launch();
   const context = await browser.newContext();
@@ -25,7 +25,7 @@ async function auditPage() {
   const startTime = Date.now();
   
   // Navegar a la página y esperar a que la red se estabilice
-  const response = await page.goto('https://cnsc.profemarlon.com/home', { waitUntil: 'networkidle' });
+  const response = await page.goto('https://ganaconmerito.com/home', { waitUntil: 'networkidle' });
   
   const loadTime = Date.now() - startTime;
   

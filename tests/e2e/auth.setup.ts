@@ -1,6 +1,6 @@
 import { test as setup, expect } from "@playwright/test";
 
-const BASE_URL = process.env.E2E_BASE_URL ?? "https://cnsc.profemarlon.com";
+const BASE_URL = process.env.E2E_BASE_URL ?? "https://ganaconmerito.com";
 const AUTH_STATE_PATH = "artifacts/auth-state.json";
 
 setup("guardar sesión autenticada manual", async ({ page }) => {

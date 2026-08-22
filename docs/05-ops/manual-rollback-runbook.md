@@ -26,7 +26,7 @@ https://github.com/MarlonMedellin/GanaConMerito
 | Copia sincronizada | `~/.openclaw/product` | copia operativa de trabajo |
 | Arbol deploy | `/opt/gcm/app` | runtime deployable |
 | Env persistente | `/opt/gcm/env/gcm-app.env` | variables de entorno |
-| Runtime publico | `https://cnsc.profemarlon.com` | validacion usuario |
+| Runtime publico | `https://ganaconmerito.com` | validacion usuario |
 
 ## Condiciones de rollback inmediato
 
@@ -63,15 +63,15 @@ Evidencia:
 Validaciones minimas:
 
 ```bash
-curl -I https://cnsc.profemarlon.com/login
-curl -I https://cnsc.profemarlon.com/practice
-curl -I https://cnsc.profemarlon.com/dashboard
+curl -I https://ganaconmerito.com/login
+curl -I https://ganaconmerito.com/practice
+curl -I https://ganaconmerito.com/dashboard
 ```
 
 Cuando exista healthcheck semantico:
 
 ```bash
-curl -fsS https://cnsc.profemarlon.com/api/health
+curl -fsS https://ganaconmerito.com/api/auth/public-config >/dev/null
 ```
 
 Si el problema es solo cosmetico o documental, preferir hotfix por PR y no rollback.
@@ -154,16 +154,16 @@ docker compose logs --tail=100
 Validar rutas minimas:
 
 ```bash
-curl -I https://cnsc.profemarlon.com/login
-curl -I https://cnsc.profemarlon.com/practice
-curl -I https://cnsc.profemarlon.com/dashboard
+curl -I https://ganaconmerito.com/login
+curl -I https://ganaconmerito.com/practice
+curl -I https://ganaconmerito.com/dashboard
 ```
 
 Validar proteccion de rutas privadas sin sesion:
 
 ```bash
-curl -I https://cnsc.profemarlon.com/practice
-curl -I https://cnsc.profemarlon.com/dashboard
+curl -I https://ganaconmerito.com/practice
+curl -I https://ganaconmerito.com/dashboard
 ```
 
 Resultado esperado:
@@ -224,8 +224,8 @@ docker system df
 ```
 
 ```bash
-curl -v https://cnsc.profemarlon.com/login
-curl -v https://cnsc.profemarlon.com/api/auth/public-config
+curl -v https://ganaconmerito.com/login
+curl -v https://ganaconmerito.com/api/auth/public-config
 ```
 
 ## Guardrails

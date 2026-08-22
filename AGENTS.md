@@ -20,7 +20,7 @@ La copia sincronizada de desarrollo local/VPS es `~/.openclaw/product`.
 El arbol de deploy es `/opt/gcm/app`.
 El archivo de entorno persistente de deploy es `/opt/gcm/env/gcm-app.env`.
 La rama principal es `master`.
-El runtime publico de validacion es `https://cnsc.profemarlon.com`.
+El runtime publico de validacion es `https://ganaconmerito.com`.
 
 ---
 

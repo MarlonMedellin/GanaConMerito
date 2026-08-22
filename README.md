@@ -124,7 +124,7 @@ Si hay divergencia entre `~/.openclaw/product` y `/opt/gcm/app`, la corrección 
 ### Smoke de runtime
 - Comando exacto: `npm run qa:runtime:smoke`
 - Uso típico local: con la app levantada en `http://localhost:3000`
-- Uso típico remoto: `QA_BASE_URL=https://cnsc.profemarlon.com npm run qa:runtime:smoke`
+- Uso típico remoto: `QA_BASE_URL=https://ganaconmerito.com npm run qa:runtime:smoke`
 - Cobertura actual:
   - `/login` responde y expone `commit` y `buildTime`
   - `/api/auth/public-config` responde con configuración pública de Supabase

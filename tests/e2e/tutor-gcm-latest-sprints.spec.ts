@@ -4,7 +4,7 @@ import path from "path";
 
 test.describe.configure({ mode: "serial" });
 
-const BASE_URL = process.env.E2E_BASE_URL ?? "https://cnsc.profemarlon.com";
+const BASE_URL = process.env.E2E_BASE_URL ?? "https://ganaconmerito.com";
 const AUTH_STATE_PATH = "artifacts/auth-state.json";
 const ARTIFACTS_DIR = "artifacts/tutor-gcm-latest-sprints";
 const EXPECTED_COMMIT = "9cd7ce4"; 

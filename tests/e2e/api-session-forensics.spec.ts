@@ -7,7 +7,7 @@ test.use({ storageState: fs.existsSync(AUTH_STATE_PATH) ? AUTH_STATE_PATH : unde
 
 test.describe("GanaConMerito - Session API Forensics", () => {
   const artifactDir = path.join(process.cwd(), "artifacts", "api-session-forensics");
-  const BASE_URL = process.env.E2E_BASE_URL ?? "https://cnsc.profemarlon.com";
+  const BASE_URL = process.env.E2E_BASE_URL ?? "https://ganaconmerito.com";
 
   let forensicLog: any[] = [];
 

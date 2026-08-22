@@ -19,6 +19,22 @@ last_reviewed: 2026-08-22
 - Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
 - Update trigger: governance, delivery, documentation, drift
 
+## 2026-08-22 — Dominio canonico de runtime y QA
+- tipo: ops+qa+docs
+- modulo: runtime/e2e/auth
+- resumen: `https://ganaconmerito.com` pasa a ser la URL publica canonica. Se
+  actualizan los valores predeterminados de Playwright, scripts de QA, filtros de
+  host, callbacks y documentación operativa. Las URLs anteriores se conservan solo
+  donde forman parte de evidencia histórica.
+- agente: Codex
+- via: Codex Desktop / repositorio local
+- contributor: Marlon Medellin
+- environment: WSL local / master / runtime publico
+- validacion: smoke público en el dominio nuevo y suites locales al cierre
+- runtime-verified: parcial; `/login` y configuración pública responden, sin deploy nuevo
+- relacionados: playwright.config.ts, tests/e2e/, scripts/, .env.example, AGENTS.md,
+  docs/05-ops/runtime-and-release.md
+
 ## 2026-08-22 — Sprint 48 Bloque 0 en repo
 - tipo: security+database+api+test
 - modulo: question-bank/session/tutor/dashboard

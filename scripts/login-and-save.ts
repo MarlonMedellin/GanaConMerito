@@ -5,7 +5,7 @@ import * as path from 'path';
 
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY!;
-const baseUrl = process.env.E2E_BASE_URL ?? 'https://cnsc.profemarlon.com';
+const baseUrl = process.env.E2E_BASE_URL ?? 'https://ganaconmerito.com';
 
 async function run() {
   const admin = createClient(url, serviceRoleKey);

@@ -3,7 +3,7 @@ import { defineConfig, devices } from '@playwright/test';
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
-const BASE_URL = process.env.E2E_BASE_URL || 'https://cnsc.profemarlon.com';
+const BASE_URL = process.env.E2E_BASE_URL || 'https://ganaconmerito.com';
 
 export default defineConfig({
   testDir: './tests',
