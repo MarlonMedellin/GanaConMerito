@@ -20,6 +20,18 @@ last_reviewed: 2026-08-11
 - Update trigger: governance, delivery, documentation, drift
 
 ## 2026-08-21
+- tipo: feat+content+database
+- modulo: question-bank-v4
+- resumen: Se ejecuta la base técnica del PRD V4: contrato Zod estricto y validación contra catálogos, importador dry-run con rechazo de ítems sin APPROVED, ejemplo V4 completo y migración reversible con metadatos consultables y vista V4 activa segura. No se activa V4 ni se modifica el banco histórico.
+- agente: Codex
+- via: repositorio local con push al remoto canónico
+- contributor: Marlon Medellín
+- environment: WSL local / GitHub
+- validacion: `npm run content:validate:v4`, `npm run content:import:v4`, `npm run typecheck`, `git diff --check`
+- runtime-verified: no; migración Supabase y corte runtime pendientes
+- relacionados: src/domain/content/v4-contract.ts, scripts/validate-question-bank-v4.ts, scripts/import-question-bank-v4.ts, supabase/migrations/0019_question_bank_v4_contract.sql
+
+## 2026-08-21
 - tipo: prd+editorial+database
 - modulo: question-bank-v4/default-source/supabase
 - resumen: Se agregan dos PRD separados para convertir V4 en fuente predeterminada: uno de repositorio, backend y frontend, y otro de Supabase con migraciones, vistas, RLS, importación, piloto y corte controlado.

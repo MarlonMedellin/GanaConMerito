@@ -1,6 +1,22 @@
 # Adopción de Question Bank V4 en la aplicación
 
-**Estado:** plan de implementación; no activa V4 todavía.
+**Estado:** base técnica implementada en repositorio; V4 no está activada en runtime.
+
+## Entrega ejecutada — 2026-08-21
+
+- `src/domain/content/v4-contract.ts` valida el contrato estricto del ítem y sus
+  reglas de scope, opciones, fuente y dificultad.
+- `npm run content:validate:v4` valida todos los JSON bajo `content/question-bank-v4/items/`
+  contra los catálogos locales.
+- `npm run content:import:v4` ejecuta dry-run por defecto; `--apply` conserva el
+  rechazo de ítems sin evidencia `APPROVED` y no activa inventario.
+- La migración `0019_question_bank_v4_contract.sql` agrega metadatos consultables y
+  `v_question_bank_v4_active`, sin reemplazar la vista histórica activa.
+
+Pendiente para fases posteriores: aplicar la migración en Supabase, importar una
+cohorte con auditoría editorial verificable, crear el repositorio/DTO de lectura
+V4, adaptar sesiones/UI y ejecutar piloto antes del corte exclusivo. No se declara
+runtime verificado ni fuente predeterminada V4 en esta entrega.
 
 ## Situación verificada
 
