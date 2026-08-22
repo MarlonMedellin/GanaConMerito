@@ -122,6 +122,13 @@ Gate 2:
 
 ### Bloque 3 — Refactor mínimo Tutor V4 (P1)
 
+Estado 2026-08-22: implementación de repo completada. `QuestionTruth` y el
+constructor de evidencia consumen V4 nativo, el expediente pre-respuesta no carga
+la verdad de respuesta y el post-respuesta la obtiene solo tras hallar un turno
+contestado. Guardrails, fallback determinístico, trazas y autoridad permanecen.
+Gate 3 local queda sujeto a la suite completa de cierre; validación runtime sigue
+pendiente.
+
 1. Ampliar `QuestionTruth` con `context`, taxonomía V4, explicaciones, `hint`,
    `learningNote`, `scope` y fuente.
 2. Crear expedientes distintos para pre y post respuesta.

@@ -37,6 +37,23 @@ last_reviewed: 2026-08-22
   src/domain/item-selection/select-next-item.ts, src/app/api/session/,
   src/components/practice/practice-session.tsx, supabase/migrations/0022_v4_safe_runtime_view.sql
 
+## 2026-08-22 — Sprint 48 Bloque 3 en repo
+- tipo: tutor+backend+security+test
+- modulo: tutor-gcm/question-bank-v4
+- resumen: El expediente del Tutor consume V4 nativo con contexto, taxonomía,
+  scope, pista, explicaciones, nota de aprendizaje y fuente. La capa pre-respuesta
+  no carga verdad de respuesta; la capa post solo se construye tras un turno contestado.
+- agente: Codex
+- via: Codex Desktop / repositorio local
+- contributor: Marlon Medellin
+- environment: WSL local / master
+- validacion: typecheck, pruebas Tutor existentes y nuevos contratos V4 pre/post;
+  suite completa/build pendientes del cierre del commit
+- runtime-verified: no; no se desplegó ni se activó una cohorte V4
+- relacionados: src/lib/tutor/tutor-evidence-builder.ts,
+  src/domain/tutor/question-truth-adapter.ts, src/types/tutor-turn.ts,
+  src/lib/tutor/v4-tutor-dossier.test.ts
+
 ## 2026-08-22 — Dominio canonico de runtime y QA
 - tipo: ops+qa+docs
 - modulo: runtime/e2e/auth

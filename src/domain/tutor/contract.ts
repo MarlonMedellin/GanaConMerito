@@ -22,10 +22,12 @@ export function hasQuestionEvidence(evidence: TutorEvidence): boolean {
   return Boolean(
     question?.itemId &&
       question.stem &&
-      question.options.length > 0 &&
-      question.correctOption &&
-      question.correctExplanation,
+      question.options.length === 4,
   );
+}
+
+export function hasAnsweredQuestionEvidence(evidence: TutorEvidence): boolean {
+  return Boolean(hasQuestionEvidence(evidence) && evidence.question?.correctOption && evidence.question.correctExplanation);
 }
 
 export function hasContestEvidence(evidence: TutorEvidence): boolean {

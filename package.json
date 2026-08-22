@@ -11,7 +11,7 @@
     "test": "npm run test:unit",
     "test:unit": "npm run test:dashboard && npm run test:tutor && npm run test:ops && npm run test:security && npm run test:v4-import && npm run test:recent-sprints",
     "test:dashboard": "tsx --test src/lib/dashboard/summary-metrics.test.ts",
-    "test:tutor": "tsx --test src/lib/tutor/tutor.test.ts",
+    "test:tutor": "tsx --test src/lib/tutor/tutor.test.ts src/lib/tutor/v4-tutor-dossier.test.ts",
     "test:ops": "tsx --test src/lib/ops/update-jobs.test.ts scripts/ops-update-contract.test.ts scripts/runtime-domain-contract.test.ts",
     "test:security": "tsx --test src/lib/session/practice-question.test.ts scripts/sprint-48-security-contract.test.ts scripts/sprint-48-v4-runtime-contract.test.ts",
     "test:v4-import": "tsx --test scripts/v4-import-plan.test.ts",

@@ -47,3 +47,16 @@ test("empty V4 inventory reports a controlled state and alternatives", async () 
   assert.match(startRoute, /alternatives:/);
   assert.match(sessionTypes, /reason: "no_active_v4_items"/);
 });
+
+test("Tutor dossier uses the V4 repository and keeps pre/post evidence separate", async () => {
+  const builder = await readRepoFile("src/lib/tutor/tutor-evidence-builder.ts");
+  const tutorTypes = await readRepoFile("src/types/tutor-turn.ts");
+
+  assert.match(builder, /new V4QuestionRepository\(\)/);
+  assert.match(builder, /currentTurn\?\.selected_option[\s\S]+getAnsweredQuestion/);
+  assert.match(builder, /getPracticeQuestion/);
+  assert.doesNotMatch(builder, /normalizeLegacyItemToRichItem|runWithActiveItemBankFallback|v_item_bank_active/);
+  for (const field of ["context", "questionType", "cognitiveLevel", "scope", "explanations", "hint", "learningNote"]) {
+    assert.match(tutorTypes, new RegExp(`${field}\\?:`));
+  }
+});

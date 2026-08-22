@@ -2,6 +2,28 @@ import { buildTutorSupportContract } from "../../lib/tutor/normative-source-trut
 import type { QuestionTruth, TutorSupportContract } from "../../types/tutor-turn";
 import type { NormalizedRichItem } from "../taxonomy/normalize-item";
 
+export interface V4QuestionTruthInput {
+  id: string;
+  area: string | null;
+  topic: string | null;
+  competency: string | null;
+  context: string | null;
+  stem: string | null;
+  questionType: string | null;
+  cognitiveLevel: string | null;
+  scope: string | null;
+  hint: string | null;
+  sourceType: string | null;
+  sourceReference: string | null;
+  sourcePath: string | null;
+  options: QuestionTruth["options"];
+  answered?: {
+    correctOption: "A" | "B" | "C" | "D";
+    explanations: Partial<Record<"A" | "B" | "C" | "D", string>>;
+    learningNote?: string;
+  };
+}
+
 export interface QuestionTruthCore {
   itemId: string;
   stem: string;
@@ -100,6 +122,39 @@ export function richItemToQuestionTruth(
   };
 }
 
+export function v4QuestionToQuestionTruth(item: V4QuestionTruthInput): QuestionTruth {
+  const correctExplanation = item.answered
+    ? item.answered.explanations[item.answered.correctOption]
+    : undefined;
+  const sourceRefs = [item.sourceReference, item.sourcePath].filter((ref): ref is string => Boolean(ref));
+
+  return {
+    itemId: item.id,
+    area: item.area ?? "general",
+    competency: item.competency ?? "competencia no especificada",
+    topic: item.topic ?? "tema no especificado",
+    context: item.context ?? undefined,
+    questionType: item.questionType ?? undefined,
+    cognitiveLevel: item.cognitiveLevel ?? undefined,
+    scope: item.scope ?? undefined,
+    cognitiveIntent: item.cognitiveLevel
+      ? `Resolver el caso en el nivel cognitivo ${item.cognitiveLevel}.`
+      : "Analizar el caso y contrastar sus alternativas.",
+    expectedUserTask: "Leer el contexto y el enunciado, contrastar las cuatro opciones y seleccionar la alternativa más consistente.",
+    sourceType: item.sourceType ?? "source_pending",
+    sourceRefs,
+    sourceTruthStatus: item.sourceType === "official_source" ? "source_verified" : "synthesized_governed_unverified",
+    stem: item.stem ?? "",
+    options: item.options,
+    correctOption: item.answered?.correctOption,
+    correctExplanation,
+    explanations: item.answered?.explanations,
+    hint: item.hint ?? undefined,
+    learningNote: item.answered?.learningNote,
+    canonicalRationale: correctExplanation,
+  };
+}
+
 export function questionTruthToTutorSupportContract(question: QuestionTruth): TutorSupportContract {
   const base = buildTutorSupportContract(question) ?? {};
   const qualityFlags = [...new Set([...(base.qualityFlags ?? []), "semantic_governance_v1"])];
@@ -107,12 +162,12 @@ export function questionTruthToTutorSupportContract(question: QuestionTruth): Tu
   const instructional: TutorInstructionalContract = {
     instructionalGoal:
       base.instructionalGoal ?? `Fortalecer ${question.competency} sin revelar la clave antes de la respuesta del usuario.`,
-    canonicalRationale: base.canonicalRationale ?? question.correctExplanation,
+    canonicalRationale: base.canonicalRationale ?? question.correctExplanation ?? question.learningNote ?? question.expectedUserTask,
   };
   const hints: TutorHintContract = {
     hintLadder:
       base.hintLadder ?? [
-        { level: 1, hint: `Identifica la tarea esperada: ${question.expectedUserTask}` },
+        { level: 1, hint: question.hint ?? `Identifica la tarea esperada: ${question.expectedUserTask}` },
         { level: 2, hint: "Contrasta cada opción con la competencia declarada." },
         { level: 3, hint: "Justifica tu elección con evidencia del enunciado." },
       ],

@@ -27,6 +27,8 @@ interface V4ItemRow {
   cognitive_level: string | null;
   source_reference: string | null;
   source_type: string | null;
+  source_path: string | null;
+  editorial_scope: string | null;
   tags: string[] | null;
   correct_option?: string | null;
   explanation?: string | null;
@@ -53,6 +55,9 @@ export interface V4PracticeQuestionRecord {
   cognitiveLevel: string | null;
   sourceReference: string | null;
   sourceType: string | null;
+  sourcePath: string | null;
+  scope: string | null;
+  hint: string | null;
   tags: string[] | null;
   options: Array<{ key: "A" | "B" | "C" | "D"; text: string }>;
 }
@@ -105,7 +110,7 @@ export class V4QuestionRepository {
   async getPracticeQuestion(itemId: string): Promise<V4PracticeQuestionRecord | null> {
     const { data, error } = await this.client
       .from("v_question_bank_v4_active")
-      .select("id, title, area, topic_code, competency, difficulty, stem, question_type, cognitive_level, source_reference, source_type, tags, editorial_metadata")
+      .select("id, title, area, topic_code, competency, difficulty, stem, question_type, cognitive_level, source_reference, source_type, source_path, editorial_scope, tags, editorial_metadata")
       .eq("id", itemId)
       .maybeSingle();
     if (error) throw error;
@@ -128,6 +133,9 @@ export class V4QuestionRepository {
       cognitiveLevel: row.cognitive_level,
       sourceReference: row.source_reference,
       sourceType: row.source_type,
+      sourcePath: row.source_path,
+      scope: row.editorial_scope,
+      hint: row.editorial_metadata?.hint ?? null,
       tags: row.tags,
       options,
     };

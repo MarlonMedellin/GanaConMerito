@@ -1,31 +1,13 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
-import { applyActiveItemBankFilters, runWithActiveItemBankFallback } from "../supabase/active-item-bank";
-import { getSupabaseAdminClient } from "../supabase/admin";
+import { V4QuestionRepository } from "../question-bank/v4-question-repository";
 import type { TutorEvidence } from "../../types/tutor-turn";
-import { normalizeLegacyItemToRichItem } from "../../domain/taxonomy/normalize-item";
-import { questionTruthToTutorSupportContract, richItemToQuestionTruth } from "../../domain/tutor/question-truth-adapter";
+import { questionTruthToTutorSupportContract, v4QuestionToQuestionTruth } from "../../domain/tutor/question-truth-adapter";
 import {
   buildAspirationalProfileTruthV1,
   buildContestTruthV1,
   buildTutorSupportContract,
   enrichQuestionTruthWithNormativeSource,
 } from "./normative-source-truth";
-
-interface TutorItemRecord {
-  id: string;
-  area: string | null;
-  competency: string | null;
-  stem: string | null;
-  correct_option: string | null;
-  explanation: string | null;
-  source_type: string | null;
-  source_path: string | null;
-}
-
-interface TutorOptionRecord {
-  option_key: string | null;
-  option_text: string | null;
-}
 
 interface TutorSessionTurnRecord {
   id: string;
@@ -132,19 +114,10 @@ export async function buildTutorEvidence(params: {
   itemId: string;
 }): Promise<TutorEvidence> {
   const { supabase, userId, sessionId, itemId } = params;
-  const questionBank = getSupabaseAdminClient();
+  const questionBank = new V4QuestionRepository();
 
-  const [itemResult, optionsResult, turnsResult, currentTurnResult, learningProfileResult] = await Promise.all([
-    runWithActiveItemBankFallback<TutorItemRecord>((source) =>
-      applyActiveItemBankFilters(
-        questionBank
-          .from(source)
-          .select("id, area, competency, stem, correct_option, explanation, source_type, source_path")
-          .eq("id", itemId),
-        source,
-      ).single(),
-    ),
-    questionBank.from("item_options").select("option_key, option_text").eq("item_id", itemId).order("option_key", { ascending: true }),
+  const [practiceQuestion, turnsResult, currentTurnResult, learningProfileResult] = await Promise.all([
+    questionBank.getPracticeQuestion(itemId),
     supabase
       .from("session_turns")
       .select("id, item_id, selected_option, user_rationale, model_feedback, created_at")
@@ -163,8 +136,6 @@ export async function buildTutorEvidence(params: {
     supabase.from("learning_profiles").select("professional_profile_id").eq("profile_id", userId).single(),
   ]);
 
-  const item = itemResult.data;
-  const options = (optionsResult.data ?? []) as TutorOptionRecord[];
   const turns = (turnsResult.data ?? []) as TutorSessionTurnRecord[];
   const currentTurnRecord = (currentTurnResult.data ?? null) as TutorSessionTurnRecord | null;
   const learningProfile = learningProfileResult.data as TutorLearningProfileRecord | null;
@@ -189,28 +160,26 @@ export async function buildTutorEvidence(params: {
   const recentPerformanceSummary = buildRecentPerformanceSummary(turnsWithEvaluation);
   const contest = buildContestTruthV1();
   const aspirationalProfile = buildAspirationalProfileTruthV1(professionalProfile);
-  const question = item
+  const answeredQuestion = currentTurn?.selected_option
+    ? await questionBank.getAnsweredQuestion(itemId)
+    : null;
+  const question = practiceQuestion
     ? enrichQuestionTruthWithNormativeSource(
-        richItemToQuestionTruth(
-          normalizeLegacyItemToRichItem({
-            id: item.id,
-            area: item.area,
-            competency: item.competency,
-            stem: item.stem,
-            source_type: item.source_type,
-            source_path: item.source_path,
-          }),
-          options
-            .filter((option) => option.option_key && option.option_text)
-            .map((option) => ({
-              key: option.option_key as string,
-              text: option.option_text as string,
-              rationale: buildOptionRationale(option.option_key as string, item.correct_option),
-              isCorrect: currentTurn?.selected_option ? option.option_key === item.correct_option : undefined,
-            })),
-          item.correct_option ?? "",
-          item.explanation ?? "",
-        ),
+        v4QuestionToQuestionTruth({
+          ...practiceQuestion,
+          options: practiceQuestion.options.map((option) => ({
+            ...option,
+            rationale: answeredQuestion?.explanations[option.key],
+            isCorrect: answeredQuestion ? option.key === answeredQuestion.correctOption : undefined,
+          })),
+          answered: answeredQuestion
+            ? {
+                correctOption: answeredQuestion.correctOption,
+                explanations: answeredQuestion.explanations,
+                learningNote: answeredQuestion.learningNote,
+              }
+            : undefined,
+        }),
       )
     : undefined;
 
@@ -267,11 +236,4 @@ function buildRecentPerformanceSummary(turns: TutorSessionTurnWithEvaluation[]):
 
 export function selectAnsweredTurnForItem(turns: TutorSessionTurnWithEvaluation[], itemId: string) {
   return turns.find((turn) => turn.item_id === itemId && Boolean(turn.selected_option));
-}
-
-function buildOptionRationale(optionKey: string, correctOption?: string | null): string {
-  if (!correctOption) return "Evalúa si esta alternativa responde al enunciado.";
-  return optionKey === correctOption
-    ? "Esta alternativa coincide con la clave registrada en la fuente de verdad."
-    : "Esta alternativa funciona como distractor frente a la clave registrada.";
 }

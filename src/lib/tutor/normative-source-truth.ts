@@ -86,7 +86,7 @@ export function buildTutorSupportContract(question?: QuestionTruth): TutorSuppor
 
   return {
     instructionalGoal: `Fortalecer ${question.competency} sin revelar la clave antes de la respuesta del usuario.`,
-    canonicalRationale: question.canonicalRationale ?? question.correctExplanation,
+    canonicalRationale: question.canonicalRationale ?? question.correctExplanation ?? question.learningNote,
     misconceptionMap: [
       ...(question.misconceptionMap ?? []).map((entry) => ({
         misconception: entry.feedback,
@@ -99,7 +99,7 @@ export function buildTutorSupportContract(question?: QuestionTruth): TutorSuppor
       },
     ],
     hintLadder: [
-      { level: 1, hint: `Ubica qué pide exactamente la tarea esperada: ${question.expectedUserTask}` },
+      { level: 1, hint: question.hint ?? `Ubica qué pide exactamente la tarea esperada: ${question.expectedUserTask}` },
       { level: 2, hint: "Contrasta señales del caso contra la competencia evaluada antes de mirar la letra." },
       { level: 3, hint: "Justifica tu elección con una razón y una alternativa descartada, sin pedir la clave." },
     ],

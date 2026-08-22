@@ -111,7 +111,7 @@ export class TutorOrchestrator {
 
     if (intent === "give_hint") {
       return trimToWordLimit(
-        `Pista: enfócate en la competencia "${question.competency}". Antes de elegir, separa el caso del enunciado de las opciones. La mejor alternativa debe resolver la tarea esperada: ${question.expectedUserTask}`,
+        `Pista: ${question.hint ?? `enfócate en la competencia "${question.competency}" y separa el contexto del enunciado antes de comparar opciones.`} La mejor alternativa debe resolver la tarea esperada: ${question.expectedUserTask}`,
         maxWords,
       );
     }
@@ -135,8 +135,11 @@ export class TutorOrchestrator {
     }
 
     if (intent === "explain_feedback" && canRevealCorrectAnswer) {
+      const selectedExplanation = session.selectedOption
+        ? question.explanations?.[session.selectedOption as "A" | "B" | "C" | "D"]
+        : undefined;
       return trimToWordLimit(
-        `La opción correcta registrada es ${question.correctOption}. ${question.correctExplanation} ${session.feedback ? `Feedback oficial registrado: ${session.feedback}` : ""} Si marcaste ${session.selectedOption}, revisa por qué esa elección quedó bien o mal frente al enunciado. Los distractores deben leerse como alternativas que no satisfacen completamente la tarea esperada. Esta explicación es pedagógica y no cambia el puntaje oficial ni avanza la sesión.`,
+        `La opción correcta registrada es ${question.correctOption}. ${question.correctExplanation} ${selectedExplanation ? `Sobre tu elección ${session.selectedOption}: ${selectedExplanation}` : ""} ${question.learningNote ? `Aprendizaje transferible: ${question.learningNote}` : ""} ${session.feedback ? `Feedback oficial registrado: ${session.feedback}` : ""} Revisa los distractores frente a la tarea esperada. Esta explicación es pedagógica y no cambia el puntaje oficial ni avanza la sesión.`,
         maxWords,
       );
     }
@@ -245,7 +248,7 @@ export class TutorOrchestrator {
       createdAt: params.createdAt,
     };
 
-    // TODO: Persist TutorTurnTrace when a governed tutor telemetry table exists.
+    // La ruta API persiste esta traza mediante persistTutorTurnTrace.
     return { output, trace };
   }
 }

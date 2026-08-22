@@ -24,7 +24,7 @@ last_reviewed: 2026-08-22
 # Sprint log
 
 ## Current delivery state
-- **Current operational block**: Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (en ejecución; Bloques 0–2 en repo).
+- **Current operational block**: Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (en ejecución; Bloques 0–3 en repo).
 - **Corte editorial congelado y validado**: 224 reactivos en `master`; Bloque 0 publicado en `f977d46`, dominio canónico en `7f73f32`, importador base en `420f1bf` y congelación operativa en `98e65f8`.
 - **Public runtime canonico**: `https://ganaconmerito.com`; commit visible `e43f612`, smoke publico PASS el 2026-08-22, sin nueva E2E autenticada.
 - **Supabase publico**: 121 filas visibles en `item_bank`: 120 legacy y 1 V4; existe exposicion P0 de clave/explicacion.
@@ -34,7 +34,7 @@ last_reviewed: 2026-08-22
 - **Open risks**:
   - acceso anonimo directo a claves y explicaciones del banco;
   - runtime desplegado conserva el payload y selector anteriores;
-  - V4 gobierna selección/práctica solo en repo; Tutor todavía no está adaptado;
+  - V4 gobierna selección, práctica y expediente Tutor solo en repo;
   - fuentes V4 sin documentos verificables;
   - huella SSH del VPS cambio y requiere confirmacion del propietario;
   - HEAD documental posterior al release de codigo debe conservarse separado de la imagen desplegada;
@@ -45,7 +45,7 @@ last_reviewed: 2026-08-22
   - el frente normativo sigue en `synthesized_governed_unverified` hasta cargar anexos oficiales suficientes.
 
 ## Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow
-- **Estado**: EN EJECUCIÓN; BLOQUES 0–2 VALIDADOS EN REPO, APLICACIÓN REMOTA PENDIENTE; BLOQUE 3 PENDIENTE
+- **Estado**: EN EJECUCIÓN; BLOQUES 0–3 VALIDADOS EN REPO, APLICACIÓN REMOTA PENDIENTE; BLOQUE 4 PENDIENTE
 - **Fecha de definicion**: 2026-08-22
 - **Rama canonica**: `master`
 - **Objetivo**: cortar la lectura runtime a V4 y ejecutar OpenRouter en shadow con
@@ -72,6 +72,8 @@ last_reviewed: 2026-08-22
   `af6f87601015cdf05e47575cbe05896a21860741c30e05ef87d907f4cd148195`.
 - Repositorio server-only, selector V4 exclusivo, contratos pre/post, UI de
   contexto y estado sin inventario implementados; pruebas de frontera PASS.
+- Expediente Tutor V4 pre/post implementado sin normalizador legacy; autoridad
+  determinística, guardrails, fallback y persistencia de trazas preservados.
 
 ### Limitaciones
 - VPS administrativo no verificado por cambio de huella SSH.

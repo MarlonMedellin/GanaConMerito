@@ -2,6 +2,7 @@ import {
   TUTOR_AUTHORITY_GUARDRAILS,
   TUTOR_INSUFFICIENT_EVIDENCE_MESSAGE,
   hasContestEvidence,
+  hasAnsweredQuestionEvidence,
   hasProfileEvidence,
   hasQuestionEvidence,
   hasUserAnswered,
@@ -32,6 +33,16 @@ export function evaluateTutorGuardrails(params: {
   }
 
   const hasRequiredEvidence = hasEvidenceForIntent(params.evidence, params.mode, params.intent);
+  if (canRevealCorrectAnswer && !hasAnsweredQuestionEvidence(params.evidence)) {
+    guardrailsApplied.push("degrade_on_missing_post_answer_evidence");
+    return {
+      degraded: true,
+      canRevealCorrectAnswer: false,
+      guardrailsApplied,
+      evidenceUsed,
+      degradationMessage: TUTOR_INSUFFICIENT_EVIDENCE_MESSAGE,
+    };
+  }
   if (!hasRequiredEvidence) {
     guardrailsApplied.push("degrade_on_missing_evidence");
     return {
