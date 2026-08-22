@@ -1,0 +1,30 @@
+{
+  "id": "DOC-001270",
+  "scope": "general",
+  "domain": "evaluacion",
+  "topic": "comprension_lectora",
+  "competency": "analisis_de_evidencia",
+  "questionType": "reading_analysis",
+  "cognitiveLevel": "analyze",
+  "context": "Un informe incluye tres enunciados: (1) ‘Dieciocho estudiantes solicitaron retroalimentación adicional’. (2) ‘Es probable que parte del grupo necesite más oportunidades para revisar sus producciones’. (3) ‘Se recomienda abrir una franja semanal de revisión durante el próximo mes’. ",
+  "stem": "¿Cómo se clasifican correctamente los tres enunciados?",
+  "options": {
+    "A": "(1) recomendación; (2) hecho; (3) inferencia.",
+    "B": "(1) hecho reportado; (2) inferencia o interpretación; (3) recomendación de acción.",
+    "C": "Los tres son hechos porque aparecen dentro de un informe institucional.",
+    "D": "Los tres son recomendaciones porque están relacionados con una necesidad de mejora."
+  },
+  "correctAnswer": "B",
+  "explanations": {
+    "A": "Invierte la función discursiva de los tres enunciados.",
+    "B": "Es la mejor respuesta: el primero reporta un dato, el segundo interpreta su posible significado y el tercero propone una acción.",
+    "C": "La ubicación en un informe no convierte inferencias y recomendaciones en hechos observados.",
+    "D": "Solo el tercer enunciado formula explícitamente una acción recomendada."
+  },
+  "hint": "Pregunta en cada caso si el texto reporta algo observado, interpreta lo observado o propone qué hacer.",
+  "learningNote": "Una lectura crítica distingue entre datos, inferencias y recomendaciones. Confundirlos puede convertir interpretaciones plausibles en hechos o presentar decisiones como si fueran resultados observados.",
+  "source": {
+    "reference": "ICFES, Marco de referencia de la prueba Lectura Crítica Saber 11°, Saber TyT y Saber Pro, competencias de comprensión local y reflexión sobre el contenido"
+  },
+  "estimatedDifficulty": "medium"
+}
