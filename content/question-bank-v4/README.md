@@ -7,13 +7,17 @@ Banco maestro de preguntas nuevas del proyecto **GanaConMerito**.
 **Corte:** 2026-08-22  
 **Corte congelado en `master` para Sprint 48:** **224 reactivos aprobados**  
 **Rama de expansión:** `v4-post-sprint48-expansion`  
-**Reactivos docentes V4 válidos en esta rama:** **232**  
-**Fase en curso:** **Fase B — expansión post-Sprint 48**  
-**Microbloque cerrado:** **B1 — 8 reactivos de competencias comportamentales (`DOC-001256`–`DOC-001263`)**  
-**Snapshot de rama:** [`COVERAGE-AFTER-PHASE-B1-20260822.json`](./COVERAGE-AFTER-PHASE-B1-20260822.json)  
-**Plan de expansión:** [`EXPANSION-PHASE-B-HIGH-RETURN-20260822.md`](./EXPANSION-PHASE-B-HIGH-RETURN-20260822.md)
+**Reactivos docentes V4 válidos en esta rama:** **254**  
+**Fase:** **Fase B — meta inicial 30/30 completada en rama**  
+**Rango nuevo:** **`DOC-001256`–`DOC-001285`**  
+**Snapshot vigente de rama:** [`COVERAGE-AFTER-PHASE-B4-20260822.json`](./COVERAGE-AFTER-PHASE-B4-20260822.json)  
+**Plan y gate de continuación:** [`EXPANSION-PHASE-B-HIGH-RETURN-20260822.md`](./EXPANSION-PHASE-B-HIGH-RETURN-20260822.md)
 
-`master` permanece congelada en 224 reactivos durante Sprint 48. Los 8 reactivos de B1 existen únicamente en esta rama y no representan activación, importación ni cambio del corte productivo. El snapshot B1 reporta `errors: []`. La taxonomía de la rama incorpora `competencias_comportamentales` por necesidad editorial real; no se reutilizó `competencias_ciudadanas`, `evaluacion_desempeno_docente` ni `planeacion_curricular` porque describen constructos distintos. El siguiente identificador previsto en esta rama es `DOC-001264`, sujeto siempre a comprobación de disponibilidad.
+`master` permanece congelada en 224 reactivos durante Sprint 48. Los 30 reactivos de Fase B existen únicamente en `v4-post-sprint48-expansion` y no representan activación, importación ni cambio del corte productivo. La meta inicial se distribuye así: B1 competencias comportamentales (8), B2 lectura crítica profesional (8), B3 educación inicial/transición (6) y B4 razonamiento cuantitativo/modelización (8).
+
+La taxonomía de esta rama incorporó tres tópicos con justificación editorial fuerte: `competencias_comportamentales`, `educacion_inicial_transicion` y `razonamiento_cuantitativo`. B2 reutilizó `comprension_lectora`, y B4 reutilizó `modelizacion` solo cuando el reactivo realmente construye o interpreta un modelo. La documentación detallada está sincronizada en `taxonomy/README.md`.
+
+**No se autoriza automáticamente un B5.** Antes de usar `DOC-001286` debe hacerse una auditoría de cobertura y duplicación sobre los 254 reactivos de la rama. Si no persiste un vacío de alto retorno con argumento fuerte, la Fase B se cierra en 30 reactivos.
 
 ## Propósito
 
@@ -46,6 +50,8 @@ La fabrica decide `PRODUCE` o `DISCARD`; el auditor decide `APPROVED` o
 El registro anterior no se repara: sus opciones, clave, explicaciones, metadatos
 e identificadores quedan fuera del proceso. Esta suite revisa contenido editorial
 legacy, no codigo fuente legacy de la aplicacion.
+
+Las skills consumen la taxonomía vigente desde `content/question-bank-v4/taxonomy/*.json`; no mantienen una lista paralela de tópicos. Por eso las ampliaciones de Fase B se referencian en los catálogos y en `taxonomy/README.md`, sin duplicar nombres de tópicos dentro de las skills.
 
 ## Estructura
 
