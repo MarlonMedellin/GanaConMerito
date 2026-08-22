@@ -1,0 +1,30 @@
+{
+  "id": "DOC-001282",
+  "scope": "general",
+  "domain": "gestion_educativa",
+  "topic": "razonamiento_cuantitativo",
+  "competency": "resolucion_de_problemas",
+  "questionType": "technical_applied",
+  "cognitiveLevel": "apply",
+  "context": "Para una jornada de asesorías hay 5 docentes disponibles. Cada uno puede atender 4 franjas individuales durante la jornada. Se han inscrito 32 estudiantes y se mantiene la regla de un estudiante por franja.",
+  "stem": "¿Qué conclusión permite planear correctamente la capacidad?",
+  "options": {
+    "A": "Hay capacidad para 20 estudiantes y quedan 12 solicitudes sin cubrir, por lo que debe ampliarse la oferta, priorizarse o reorganizarse la atención.",
+    "B": "Hay capacidad para 32 estudiantes porque cinco docentes pueden repartir cualquier número de solicitudes.",
+    "C": "Faltan solo 7 franjas porque debe restarse el número de docentes al número de estudiantes.",
+    "D": "La capacidad es de 16 estudiantes porque una de las cuatro franjas de cada docente debe excluirse automáticamente."
+  },
+  "correctAnswer": "A",
+  "explanations": {
+    "A": "Es la mejor respuesta: 5 docentes por 4 franjas producen 20 cupos; frente a 32 solicitudes existe una brecha de 12.",
+    "B": "Ignora el límite de franjas por docente.",
+    "C": "La capacidad depende del producto entre docentes y franjas, no de una resta entre estudiantes y docentes.",
+    "D": "El caso no establece que alguna franja deba descartarse."
+  },
+  "hint": "Calcula primero la capacidad total como número de docentes por franjas disponibles y compárala con la demanda.",
+  "learningNote": "El razonamiento cuantitativo apoya decisiones de gestión cuando transforma recursos y restricciones en capacidad operativa y permite identificar brechas entre oferta y demanda.",
+  "source": {
+    "reference": "ICFES, Marco de referencia del módulo Razonamiento Cuantitativo, competencia de formulación y ejecución"
+  },
+  "estimatedDifficulty": "low"
+}
