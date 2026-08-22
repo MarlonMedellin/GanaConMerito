@@ -6,6 +6,7 @@ Banco maestro de preguntas nuevas del proyecto **GanaConMerito**.
 
 **Corte:** 2026-08-22  
 **Reactivos docentes V4 válidos:** **224**  
+**Corte congelado para Sprint 48: 224 reactivos aprobados**  
 **Última expansión cerrada:** **Fase A — 54 reactivos de alto retorno**  
 **Snapshot de cobertura:** [`COVERAGE-AFTER-PHASE-A-20260822.json`](./COVERAGE-AFTER-PHASE-A-20260822.json)  
 **Cierre de fase:** [`EXPANSION-PHASE-A-CLOSURE-54-20260822.md`](./EXPANSION-PHASE-A-CLOSURE-54-20260822.md)
