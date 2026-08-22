@@ -1,6 +1,10 @@
 name: V4 A+B remediation QA
 
 on:
+  push:
+    branches: [remediate-v4-phase-a-b-20260822]
+    paths:
+      - '.github/workflows/v4-post-sprint48-qa.yml'
   pull_request:
     branches: [master]
     types: [opened, reopened, synchronize]
