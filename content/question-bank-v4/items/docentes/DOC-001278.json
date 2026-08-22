@@ -1,0 +1,30 @@
+{
+  "id": "DOC-001278",
+  "scope": "general",
+  "domain": "gestion_educativa",
+  "topic": "razonamiento_cuantitativo",
+  "competency": "resolucion_de_problemas",
+  "questionType": "technical_applied",
+  "cognitiveLevel": "apply",
+  "context": "La tasa de inasistencia de un grupo pasó de 20 % en el primer corte a 15 % en el segundo. En un informe se quiere expresar tanto la diferencia absoluta como la disminución relativa.",
+  "stem": "¿Cuál descripción es correcta?",
+  "options": {
+    "A": "La inasistencia disminuyó 5 puntos porcentuales, lo que equivale a una reducción relativa del 25 % respecto del valor inicial.",
+    "B": "La inasistencia disminuyó 5 %, y esa cifra también representa exactamente 5 puntos porcentuales.",
+    "C": "La inasistencia disminuyó 25 puntos porcentuales porque 15 es el 75 % de 20.",
+    "D": "La disminución relativa fue del 33,3 % porque el valor final es 5 puntos menor."
+  },
+  "correctAnswer": "A",
+  "explanations": {
+    "A": "Es la mejor respuesta: 20 % menos 15 % son 5 puntos porcentuales; 5 dividido entre 20 equivale a una reducción relativa del 25 %.",
+    "B": "Confunde diferencia en puntos porcentuales con porcentaje de cambio relativo.",
+    "C": "La disminución absoluta entre las tasas es de 5 puntos, no de 25.",
+    "D": "La reducción relativa se calcula con respecto al valor inicial: 5/20 = 25 %."
+  },
+  "hint": "Distingue entre restar dos porcentajes y calcular qué fracción representa esa disminución respecto del valor inicial.",
+  "learningNote": "Los puntos porcentuales expresan la diferencia directa entre dos tasas; el cambio porcentual relativo compara esa diferencia con el valor inicial. Son medidas distintas y no deben usarse como sinónimos.",
+  "source": {
+    "reference": "ICFES, Marco de referencia del módulo Razonamiento Cuantitativo, competencias de interpretación y representación y formulación y ejecución"
+  },
+  "estimatedDifficulty": "medium"
+}
