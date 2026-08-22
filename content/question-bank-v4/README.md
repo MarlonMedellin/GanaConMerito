@@ -7,22 +7,22 @@ Banco maestro de preguntas nuevas del proyecto **GanaConMerito**.
 **Corte:** 2026-08-22  
 **Corte congelado en `master` para Sprint 48:** **224 reactivos aprobados**  
 **Rama de expansión:** `v4-post-sprint48-expansion`  
-**Corpus físico en la rama:** **254 reactivos**  
-**Aprobados editoriales efectivos en la rama:** **254**  
-**Fase:** **Fase B cerrada y reauditada — 30/30 APPROVED**  
-**IDs activos de Fase B:** 25 supervivientes de `DOC-001256`–`DOC-001285` + `DOC-001286`–`DOC-001290`  
-**IDs retirados/no reutilizables:** `DOC-001258`, `DOC-001259`, `DOC-001261`, `DOC-001265`, `DOC-001268`  
-**Snapshot vigente:** [`COVERAGE-AFTER-PHASE-B-REMEDIATION-20260822.json`](./COVERAGE-AFTER-PHASE-B-REMEDIATION-20260822.json)  
-**Reauditoría:** [`REAUDIT-PHASE-B-REMEDIATED-20260822.md`](./REAUDIT-PHASE-B-REMEDIATED-20260822.md)  
-**Plan de Fase B:** [`EXPANSION-PHASE-B-HIGH-RETURN-20260822.md`](./EXPANSION-PHASE-B-HIGH-RETURN-20260822.md)
+**Corpus físico en la rama:** **258 reactivos**  
+**Aprobados editoriales efectivos en la rama:** **258**  
+**Fase B:** **cerrada y reauditada — 30/30 APPROVED**  
+**Fase C1:** **cerrada — 4/4 APPROVED (`DOC-001291`–`DOC-001294`)**  
+**IDs retirados/no reutilizables de Fase B:** `DOC-001258`, `DOC-001259`, `DOC-001261`, `DOC-001265`, `DOC-001268`  
+**Snapshot vigente:** [`COVERAGE-AFTER-PHASE-C1-20260822.json`](./COVERAGE-AFTER-PHASE-C1-20260822.json)  
+**Auditoría C1:** [`AUDIT-PHASE-C1-20260822.md`](./AUDIT-PHASE-C1-20260822.md)  
+**Plan selectivo:** [`EXPANSION-PHASE-C-SELECTIVE-20260822.md`](./EXPANSION-PHASE-C-SELECTIVE-20260822.md)
 
-`master` permanece congelada en 224 reactivos durante Sprint 48. La rama mantiene 254 reactivos activos: los 224 del corte congelado más 30 reactivos aprobados de Fase B. Los cinco reactivos rechazados en la primera auditoría fueron retirados sin reutilizar sus IDs y sustituidos por cinco reactivos nuevos creados desde cero.
+`master` permanece congelada en 224 reactivos durante Sprint 48. La rama contiene esos 224 más 30 reactivos aprobados de Fase B y 4 reactivos aprobados de C1. Los cinco IDs rechazados durante la primera auditoría de B permanecen retirados y no se reutilizan.
 
-La reauditoría final deja la distribución de claves de Fase B en `A=8`, `B=8`, `C=7`, `D=7`, con racha máxima de 3 y sin outliers de longitud de la alternativa correcta por encima del umbral de 1,65 frente a la mediana de distractores.
+C1 amplía `desarrollo_aprendizaje` de 13 a 17 reactivos y añade el tópico `aprendizaje_y_desarrollo_cognitivo` con cuatro constructos: ZDP/apoyo temporal, conocimiento previo/aprendizaje significativo, asimilación-acomodación y metacognición/autorregulación. Las claves C1 están distribuidas `A=1`, `B=1`, `C=1`, `D=1` y no presentan outliers de longitud según el gate de la rama.
 
-La taxonomía de esta rama incorporó tres tópicos con justificación editorial fuerte: `competencias_comportamentales`, `educacion_inicial_transicion` y `razonamiento_cuantitativo`. B2 reutilizó `comprension_lectora`, y B4 reutilizó `modelizacion` solo cuando el reactivo realmente construye o interpreta un modelo.
+La taxonomía post-Sprint 48 de esta rama incorpora cuatro tópicos con justificación editorial explícita: `competencias_comportamentales`, `educacion_inicial_transicion`, `razonamiento_cuantitativo` y `aprendizaje_y_desarrollo_cognitivo`. Los catálogos de `taxonomy/` siguen siendo la fuente canónica.
 
-**Fase B está cerrada.** No se extiende mediante un B5 por inercia de volumen. La siguiente expansión, si se justifica con cobertura y valor editorial, debe abrir una fase distinta. El próximo identificador nunca usado disponible es `DOC-001291`.
+**C2 no está autorizado automáticamente.** El siguiente paso es revisar cobertura sobre 258 y justificar cualquier expansión adicional. El próximo identificador nunca usado es `DOC-001295`.
 
 ## Propósito
 
@@ -56,7 +56,7 @@ El registro anterior no se repara: sus opciones, clave, explicaciones, metadatos
 e identificadores quedan fuera del proceso. Esta suite revisa contenido editorial
 legacy, no codigo fuente legacy de la aplicacion.
 
-Las skills consumen la taxonomía vigente desde `content/question-bank-v4/taxonomy/*.json`; no mantienen una lista paralela de tópicos. Por eso las ampliaciones de Fase B se referencian en los catálogos y en `taxonomy/README.md`, sin duplicar nombres de tópicos dentro de las skills.
+Las skills consumen la taxonomía vigente desde `content/question-bank-v4/taxonomy/*.json`; no mantienen una lista paralela de tópicos. Las ampliaciones se documentan en los catálogos y en `taxonomy/README.md`.
 
 ## Estructura
 

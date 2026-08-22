@@ -20,7 +20,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Validate remediated 254-item corpus read-only
+      - name: Validate 258-item post-Sprint48 corpus read-only
         shell: bash
         run: |
           python - <<'PY'
@@ -33,7 +33,7 @@ jobs:
 
           BASE = 'content/question-bank-v4'
           ITEM_GLOB = f'{BASE}/items/docentes/*.json'
-          SNAPSHOT = f'{BASE}/COVERAGE-AFTER-PHASE-B-REMEDIATION-20260822.json'
+          SNAPSHOT = f'{BASE}/COVERAGE-AFTER-PHASE-C1-20260822.json'
 
           def strict_pairs(pairs):
               out = {}
@@ -66,7 +66,7 @@ jobs:
               'estimatedDifficulty'
           }
 
-          active_phase = [
+          phase_b = [
               'DOC-001256','DOC-001257','DOC-001260','DOC-001262','DOC-001263',
               'DOC-001264','DOC-001266','DOC-001267','DOC-001269','DOC-001270',
               'DOC-001271','DOC-001272','DOC-001273','DOC-001274','DOC-001275',
@@ -74,6 +74,8 @@ jobs:
               'DOC-001281','DOC-001282','DOC-001283','DOC-001284','DOC-001285',
               'DOC-001286','DOC-001287','DOC-001288','DOC-001289','DOC-001290'
           ]
+          phase_c1 = ['DOC-001291','DOC-001292','DOC-001293','DOC-001294']
+          active_post_sprint = phase_b + phase_c1
           retired = {'DOC-001258','DOC-001259','DOC-001261','DOC-001265','DOC-001268'}
 
           counters = {key: collections.Counter() for key in allowed}
@@ -123,22 +125,27 @@ jobs:
               elif not isinstance(item['source']['reference'], str) or not item['source']['reference'].strip():
                   errors.append(f'{path}: empty source.reference')
 
-          if len(files) != 254:
-              errors.append(f'expected 254 items, got {len(files)}')
+          if len(files) != 258:
+              errors.append(f'expected 258 items, got {len(files)}')
           if len(ids) != len(set(ids)):
               errors.append('duplicate ids')
-          missing_active = [x for x in active_phase if x not in ids]
+
+          missing_active = [x for x in active_post_sprint if x not in ids]
           if missing_active:
-              errors.append('missing active Phase B ids: ' + ','.join(missing_active))
+              errors.append('missing active post-Sprint IDs: ' + ','.join(missing_active))
           leaked_retired = sorted(retired.intersection(ids))
           if leaked_retired:
               errors.append('retired rejected ids still serialized: ' + ','.join(leaked_retired))
 
-          key_distribution = collections.Counter(items[x]['correctAnswer'] for x in active_phase if x in items)
-          if dict(key_distribution) != {'A': 8, 'B': 8, 'C': 7, 'D': 7}:
-              errors.append(f'unbalanced Phase B key distribution: {dict(key_distribution)}')
+          c1_distribution = collections.Counter(items[x]['correctAnswer'] for x in phase_c1 if x in items)
+          if dict(c1_distribution) != {'A':1,'B':1,'C':1,'D':1}:
+              errors.append(f'unbalanced C1 key distribution: {dict(c1_distribution)}')
 
-          keys = [items[x]['correctAnswer'] for x in active_phase if x in items]
+          post_distribution = collections.Counter(items[x]['correctAnswer'] for x in active_post_sprint if x in items)
+          if dict(post_distribution) != {'A':9,'B':9,'C':8,'D':8}:
+              errors.append(f'unexpected post-Sprint key distribution: {dict(post_distribution)}')
+
+          keys = [items[x]['correctAnswer'] for x in active_post_sprint if x in items]
           longest_streak = 0
           current = 0
           previous = None
@@ -147,10 +154,10 @@ jobs:
               longest_streak = max(longest_streak, current)
               previous = key
           if longest_streak > 3:
-              errors.append(f'Phase B answer-position streak too long: {longest_streak}')
+              errors.append(f'answer-position streak too long: {longest_streak}')
 
           shape_outliers = []
-          for item_id in active_phase:
+          for item_id in active_post_sprint:
               if item_id not in items:
                   continue
               item = items[item_id]
@@ -163,21 +170,28 @@ jobs:
           if shape_outliers:
               errors.append('correct-option length outliers: ' + ', '.join(f'{i}({c}/{m:g})' for i,c,m in shape_outliers))
 
+          for item_id in phase_c1:
+              item = items.get(item_id)
+              if item and (item.get('domain') != 'desarrollo_aprendizaje' or item.get('topic') != 'aprendizaje_y_desarrollo_cognitivo'):
+                  errors.append(f'{item_id}: C1 domain/topic mismatch')
+
           snapshot = load(SNAPSHOT)
           if snapshot.get('frozenMasterItemCount') != 224:
               errors.append('snapshot frozenMasterItemCount must be 224')
-          if snapshot.get('phaseBActiveItemCount') != 30:
-              errors.append('snapshot phaseBActiveItemCount must be 30')
-          if snapshot.get('itemCount') != 254:
-              errors.append('snapshot itemCount must be 254')
+          if snapshot.get('baselineBranchItemCount') != 254:
+              errors.append('snapshot baselineBranchItemCount must be 254')
+          if snapshot.get('phaseC1ItemCount') != 4:
+              errors.append('snapshot phaseC1ItemCount must be 4')
+          if snapshot.get('itemCount') != 258:
+              errors.append('snapshot itemCount must be 258')
           if snapshot.get('errors') != []:
               errors.append('snapshot errors must be []')
-          if snapshot.get('activePhaseIds') != active_phase:
-              errors.append('snapshot activePhaseIds mismatch')
+          if snapshot.get('phaseC1Ids') != phase_c1:
+              errors.append('snapshot phaseC1Ids mismatch')
           if set(snapshot.get('retiredRejectedIds', [])) != retired:
               errors.append('snapshot retiredRejectedIds mismatch')
-          if snapshot.get('keyDistribution') != {'A':8,'B':8,'C':7,'D':7}:
-              errors.append('snapshot keyDistribution mismatch')
+          if snapshot.get('keyDistributionC1') != {'A':1,'B':1,'C':1,'D':1}:
+              errors.append('snapshot keyDistributionC1 mismatch')
 
           computed = {
               'domains': {key: counters['domain'][key] for key in domains},
@@ -193,8 +207,9 @@ jobs:
           print(json.dumps({
               'branch': 'v4-post-sprint48-expansion',
               'itemCount': len(files),
-              'activePhaseB': len(active_phase),
-              'keyDistribution': dict(key_distribution),
+              'phaseC1': len(phase_c1),
+              'c1KeyDistribution': dict(c1_distribution),
+              'postSprintKeyDistribution': dict(post_distribution),
               'longestAnswerStreak': longest_streak,
               'shapeOutliers': shape_outliers,
               'errors': errors,
