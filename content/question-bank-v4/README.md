@@ -5,13 +5,15 @@ Banco maestro de preguntas nuevas del proyecto **GanaConMerito**.
 ## Estado actual
 
 **Corte:** 2026-08-22  
-**Reactivos docentes V4 válidos:** **224**  
-**Corte congelado para Sprint 48: 224 reactivos aprobados**  
-**Última expansión cerrada:** **Fase A — 54 reactivos de alto retorno**  
-**Snapshot de cobertura:** [`COVERAGE-AFTER-PHASE-A-20260822.json`](./COVERAGE-AFTER-PHASE-A-20260822.json)  
-**Cierre de fase:** [`EXPANSION-PHASE-A-CLOSURE-54-20260822.md`](./EXPANSION-PHASE-A-CLOSURE-54-20260822.md)
+**Corte congelado en `master` para Sprint 48:** **224 reactivos aprobados**  
+**Rama de expansión:** `v4-post-sprint48-expansion`  
+**Reactivos docentes V4 válidos en esta rama:** **232**  
+**Fase en curso:** **Fase B — expansión post-Sprint 48**  
+**Microbloque cerrado:** **B1 — 8 reactivos de competencias comportamentales (`DOC-001256`–`DOC-001263`)**  
+**Snapshot de rama:** [`COVERAGE-AFTER-PHASE-B1-20260822.json`](./COVERAGE-AFTER-PHASE-B1-20260822.json)  
+**Plan de expansión:** [`EXPANSION-PHASE-B-HIGH-RETURN-20260822.md`](./EXPANSION-PHASE-B-HIGH-RETURN-20260822.md)
 
-El snapshot final reporta `errors: []` y cobertura en los **10 dominios, 22 tópicos, 8 competencias, 7 tipos de pregunta y 4 niveles cognitivos** canónicos. La Fase A incorporó 54 reactivos (`DOC-001202`–`DOC-001255`) y seis tópicos nuevos justificados por necesidad editorial real: `evaluacion_desempeno_docente`, `carrera_docente`, `proteccion_integral`, `funciones_y_jornada_docente`, `prae_proyectos_transversales` y `gobierno_escolar_participacion`. El siguiente identificador esperado es `DOC-001256`; siempre debe comprobarse que esté libre antes de usarlo.
+`master` permanece congelada en 224 reactivos durante Sprint 48. Los 8 reactivos de B1 existen únicamente en esta rama y no representan activación, importación ni cambio del corte productivo. El snapshot B1 reporta `errors: []`. La taxonomía de la rama incorpora `competencias_comportamentales` por necesidad editorial real; no se reutilizó `competencias_ciudadanas`, `evaluacion_desempeno_docente` ni `planeacion_curricular` porque describen constructos distintos. El siguiente identificador previsto en esta rama es `DOC-001264`, sujeto siempre a comprobación de disponibilidad.
 
 ## Propósito
 
