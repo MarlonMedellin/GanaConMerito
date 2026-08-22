@@ -5,32 +5,48 @@ project: ganaconmerito
 owner: marlon-arcila
 status: active
 artifact_type: project
-last_reviewed: 2026-08-19
+last_reviewed: 2026-08-22
 ---
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-08-19 — Cierre documental de Beta Candidate 0.6.0 con evidencia runtime diferenciada.
+Ultima actualizacion: 2026-08-22 — Sprint 48 propuesto tras auditoria V4, Supabase publico y Tutor GCM.
 
 ---
 
 # Executive Operational Snapshot
 
 ## Current Sprint
-Beta Candidate 0.6.0 — Cierre documental y preparacion del release.
+Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (**propuesto; no iniciado**).
 
 ## Current Runtime State
-Runtime publico verificado en `https://cnsc.profemarlon.com` mostrando `ad6ad35` y build time `2026-08-19T04:20:00Z`.
+El runtime publico responde en `https://cnsc.profemarlon.com` y reporta el commit
+`e43f612` con build time `2026-08-21 03:51:03 +0000 UTC`. El smoke publico de
+login y configuracion paso el 2026-08-22.
 
-El HEAD actual del repo principal es `b0207e9`. `~/.openclaw/product` y `/opt/gcm/app` estan en `ad6ad35`; Supabase tiene aplicadas las migraciones `0013` a `0017` y expone 100 items beta en `v_item_bank_active`.
+El HEAD sincronizado de `master` es `adef22e`; el runtime esta 149 commits detras.
+La administracion de VPS no fue verificada porque la huella SSH presentada cambio
+y debe confirmarse antes de aceptar la conexion.
 
 ## Last Verified Commit
-`ad6ad35` como ultimo commit visible en el runtime publico. La corrida E2E autenticada real fue ejecutada sobre ese runtime y completo 5/5 turnos, cierre de sesion y dashboard.
+`e43f612` como commit declarado por el runtime publico. Esta auditoria solo verifico
+smoke publico; no reejecuto E2E autenticada ni verifico el arbol de deploy.
 
 ## Current Sprint Status
-**BETA CANDIDATE CON QA POSTDEPLOY PASS**: smoke publico, API E2E y UI Chromium estan verificados; falta alinear el commit del runtime con el HEAD principal y completar el cierre de release.
+**SPRINT 48 PROPUESTO; BLOQUEADO PARA IMPLEMENTACION POR P0 DE SEGURIDAD**:
+antes de importar y activar V4 o conectar OpenRouter se debe cerrar la lectura
+anonima de claves/explicaciones y separar los contratos pre/post respuesta.
 
 ## Known Drift
+- Supabase contiene 121 filas visibles por REST anon: 120 legacy y solo 1 V4;
+  `v_question_bank_v4_active` expone 1 V4 activa.
+- La politica publica permite consultar `correct_option`, `explanation` y metadata
+  editorial directamente desde `item_bank`; RLS por fila no protege columnas.
+- `/api/session/item` devuelve `rationale` antes de responder.
+- La app sigue leyendo `v_item_bank_active`/`item_bank` con fallback legacy y no
+  consume de forma nativa todos los campos V4.
+- El banco V4 local tiene 90 reactivos docentes validos, pero cero
+  documentos en `sources/`; calidad editorial no equivale a fuente normativa verificada.
 - Persisten contratos y validaciones parcialmente narrativas fuera del baseline canonico.
 - La trazabilidad multiagente todavia no es enforcement obligatorio.
 - La integracion del Tutor con LLM real queda como deuda tecnica futura y no forma parte del cierre de Sprint 47.
@@ -46,10 +62,11 @@ El HEAD actual del repo principal es `b0207e9`. `~/.openclaw/product` y `/opt/gc
 - sincronizacion documental automatica;
 - reduccion de documentacion legacy;
 - integracion fuerte rich-only.
-- tag/release beta publico (`v0.6.0-beta.1`) pendiente hasta cerrar la triple verificacion sobre un unico commit.
+- corte seguro de V4, importacion 90/90 e integracion OpenRouter shadow pendientes.
 
 ## Last Audit
-2026-08-19 — cierre documental: Supabase, runtime publico y E2E real revalidados; paridad repo/runtime aun pendiente.
+2026-08-22 — repo remoto sincronizado; estructura V4, REST publico de Supabase,
+contratos de practica/Tutor y runtime publico auditados. VPS admin no verificado.
 
 ---
 
@@ -63,15 +80,33 @@ El HEAD actual del repo principal es `b0207e9`. `~/.openclaw/product` y `/opt/gc
 
 **Producto:** login, onboarding, practica y dashboard siguen siendo las superficies activas; Tutor GCM permanece bajo contrato, sin autoridad sobre scoring, avance ni estado de sesion.
 
-**Bloque actual en repo:** Beta Candidate 0.6.0 — Cierre documental y preparacion del release.
+**Bloque actual en repo:** Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (propuesto).
 
-**Estado del bloque actual:** EVIDENCIA FUNCIONAL FRESCA; triple verificacion de release pendiente.
+**Estado del bloque actual:** PRD y plan definidos; implementacion no iniciada.
 
 **Sprint anterior cerrado:** Sprint 46 — Cierre normativo del Tutor GCM.
 
 **Rama canonica:** `master`.
 
 **Version declarada en `package.json`:** `0.6.0`.
+
+## Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow
+
+### Estado
+**PROPUESTO; NO INICIADO**
+
+### Resultado de la preparacion
+- PRD integral: `docs/01-product/prd-v4-tutor-ai-openrouter.md`.
+- Plan ejecutable: `docs/02-delivery/sprint-48-v4-runtime-secure-tutor-shadow.md`.
+- V4 queda decidido como unica fuente predeterminada, sin fallback legacy silencioso.
+- OpenRouter queda limitado a shadow, un modelo/endpoint aprobado, salida estructurada,
+  ZDR, sin herramientas y con fallback deterministico.
+- El P0 de exposicion de respuestas precede importacion, corte V4 e integracion LLM.
+
+### Evidencia y limites
+- 90/90 archivos V4 pasan validacion estructural; no se revisaron items individuales.
+- El contraste Supabase fue de lectura publica, no administrativo.
+- No se aplicaron migraciones, no se importaron filas y no se desplego codigo.
 
 ## Beta Candidate 0.6.0 — snapshot ejecutivo
 

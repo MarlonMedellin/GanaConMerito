@@ -1,0 +1,234 @@
+---
+id: DEL-SPRINT-48-V4-RUNTIME-SECURE-TUTOR-SHADOW
+name: sprint-48-v4-runtime-secure-tutor-shadow
+project: ganaconmerito
+owner: marlon-arcila
+status: proposed
+artifact_type: delivery
+modules: [question-bank-v4, database, practice, tutor, security, qa]
+tags: [sprint-48, v4-cutover, openrouter, shadow-mode]
+last_reviewed: 2026-08-22
+related:
+  - docs/01-product/prd-v4-tutor-ai-openrouter.md
+  - docs/04-quality/quality-gates.md
+  - docs/05-ops/documentation-trigger-map.md
+---
+
+# Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow
+
+## Estado
+
+**PROPUESTO; NO INICIADO.**
+
+## Objetivo
+
+Cerrar el corte técnico a V4 y dejar OpenRouter funcionando en shadow mode sin
+exponer respuestas, datos personales ni autoridad operativa al LLM.
+
+## Alcance real
+
+Este sprint termina con:
+
+- V4 como única fuente de selección runtime;
+- 90 preguntas V4 importadas y activables;
+- contratos pre/post respuesta seguros;
+- exposición directa de `item_bank` corregida;
+- Tutor adaptado a campos V4;
+- `TutorProvider` y `OpenRouterProvider` en shadow;
+- fallback determinístico preservado;
+- evaluación automatizada y documentación alineada.
+
+No termina con canary público, web/RAG, OPEC específica ni deploy productivo del
+LLM.
+
+## Orden de ejecución
+
+### Bloque 0 — Seguridad inmediata (P0)
+
+1. Crear una migración nueva que retire acceso directo `anon`/`authenticated` a
+   `item_bank`, `item_options` y vistas que exponen `correct_option`.
+2. Conservar escritura/importación sólo para `service_role`/admin.
+3. Añadir pruebas REST negativas con la clave anónima.
+4. Eliminar `correct_option`, `explanation` y `rationale` del contrato previo a
+   respuesta de `/api/session/item`.
+5. Confirmar que la evaluación se ejecuta únicamente server-side después de
+   validar ownership de sesión.
+
+Gate 0:
+
+- `anon` y un usuario autenticado no pueden leer clave, explicación ni metadata
+  privada directamente;
+- el payload pre-respuesta no contiene esos campos;
+- las sesiones existentes continúan funcionando por las APIs server-side.
+
+### Bloque 1 — Importación V4 operativa (P0)
+
+1. Unificar las validaciones de `content:validate:v4`, `--dry-run` y `--apply`.
+2. Parsear y validar `legacy-processing-register.csv`.
+3. Implementar la función SQL V4 idempotente y versionada.
+4. Importar 90/90 ítems inicialmente inactivos.
+5. Verificar A–D, metadatos V4, source path y aprobación.
+6. Crear reporte agregado de cobertura por taxonomía y perfil.
+
+Gate 1:
+
+- dry-run y apply producen el mismo plan validado;
+- segunda importación no duplica filas;
+- Supabase contiene exactamente 90 V4 esperadas;
+- ninguna fila legacy fue borrada.
+
+### Bloque 2 — Repositorio, DTO y selector V4 (P0)
+
+1. Crear `V4QuestionRepository` server-only.
+2. Crear `PracticeQuestion` y `AnsweredQuestion`.
+3. Separar `context` y `stem` en API y UI.
+4. Adaptar `session/start`, `session/item`, `session/advance` y selección.
+5. Eliminar fallback runtime a legacy.
+6. Añadir estado sin inventario con alternativas pertinentes.
+7. Activar la cohorte V4 sólo después de pasar Gate 2.
+
+Gate 2:
+
+- práctica usa exclusivamente `bank_version=v4`;
+- no hay clave/explicación antes de responder;
+- después de responder aparecen explicación elegida, explicación correcta,
+  `learningNote` y fuente;
+- filtros vacíos generan reporte y alternativas, no fallback legacy.
+
+### Bloque 3 — Refactor mínimo Tutor V4 (P1)
+
+1. Ampliar `QuestionTruth` con `context`, taxonomía V4, explicaciones, `hint`,
+   `learningNote`, `scope` y fuente.
+2. Crear expedientes distintos para pre y post respuesta.
+3. Mantener intent detection, guardrails, fallback, trazas y autoridad actuales.
+4. Eliminar dependencia del normalizador legacy en el flujo V4.
+5. Corregir comentarios y documentación que afirman que las trazas no persisten.
+
+Gate 3:
+
+- tests existentes del Tutor permanecen verdes;
+- nuevos tests prueban todos los campos V4 y la frontera pre/post;
+- scoring, avance y selección no dependen del Tutor.
+
+### Bloque 4 — OpenRouter shadow (P1)
+
+1. Crear interfaz `TutorProvider`.
+2. Implementar `DeterministicTutorProvider` y `OpenRouterProvider`.
+3. Configurar un único modelo/proveedor aprobado por ambiente.
+4. Implementar JSON Schema estricto y validación Zod.
+5. Fijar `require_parameters`, `data_collection=deny`, `zdr=true`,
+   `allow_fallbacks=false` y provider allowlist.
+6. Implementar timeout, un reintento transitorio y circuit breaker simple.
+7. Ejecutar OpenRouter en shadow; no mostrar su salida.
+8. Registrar sólo métricas minimizadas.
+
+Gate 4:
+
+- proveedor puede sustituirse con mock;
+- sin clave o con proveedor caído, la sesión usa fallback;
+- salida inválida o peligrosa nunca llega al usuario;
+- no se envían datos personales, secretos, rutas ni instrucciones internas.
+
+### Bloque 5 — Evaluación y cierre de repo (P1)
+
+1. Construir 100–200 escenarios de turno sobre contratos V4.
+2. Incluir pre/post respuesta, prompt injection, extracción de secretos,
+   normativa ausente, timeout, 429, 5xx y JSON inválido.
+3. Medir esquema, seguridad, contradicción, latencia, tokens y costo.
+4. Ejecutar typecheck, tests, build, validación V4, validación documental y diff.
+5. Actualizar estado, backlog, sprint log, change-log, QA y runtime docs.
+
+Gate 5:
+
+- 0 revelaciones indebidas;
+- 0 contradicciones críticas;
+- 100 % de respuestas aceptadas válidas;
+- p95 <= 8 s y timeout <= 10 s;
+- costo p95 objetivo <= USD 0.01/turno;
+- fallback seguro para todo fallo rechazado.
+
+## Archivos o áreas previstos
+
+### Nuevos
+
+- migraciones posteriores a `0019` para seguridad e importación V4;
+- repositorio y DTO V4;
+- proveedor OpenRouter y contrato de salida;
+- tests de seguridad, importación, Tutor shadow y cobertura;
+- catálogo central de fuentes/perfiles V4 en su fase estructural.
+
+### Modificados
+
+- `scripts/import-question-bank-v4.ts`;
+- rutas `session/start`, `session/item`, `session/advance`;
+- selector de ítems;
+- tipos de sesión y Tutor;
+- evidence builder/orchestrator;
+- UI de práctica y feedback;
+- configuración de entorno documentada;
+- documentación canónica relacionada.
+
+### Deliberadamente no tocados
+
+- contenido individual de reactivos V4;
+- scoring baseline salvo adaptación de lectura;
+- historiales de sesiones;
+- bancos Beta/V3/legacy, excepto para desactivarlos de la política por defecto;
+- VPS/deploy hasta que el repo y Supabase staging pasen todos los gates.
+
+## Pruebas mínimas
+
+```text
+npm run typecheck
+npm run test:unit
+npm run build
+npm run content:validate:v4
+npm run content:import:v4 -- --dry-run
+python3 scripts/validate_docs.py
+git diff --check
+```
+
+Se deben agregar además:
+
+- prueba REST con anon que niegue columnas sensibles;
+- prueba de payload pre-respuesta;
+- prueba post-respuesta completa;
+- prueba de importación idempotente;
+- prueba selector V4 exclusivo;
+- prueba de inventario vacío y alternativas;
+- prueba OpenRouter mock: éxito, timeout, 429, 5xx, JSON inválido y guardrail;
+- E2E autenticada de al menos cinco turnos V4.
+
+## Precondiciones operativas
+
+1. Confirmar con el propietario la nueva huella SSH del VPS antes de acceder.
+2. Definir `OPENROUTER_API_KEY` por ambiente sin guardarla en Git.
+3. Seleccionar un modelo y endpoint exactos que soporten structured outputs y ZDR.
+4. Definir límite de gasto de la clave.
+5. Tener entorno de prueba Supabase o ventana controlada para aplicar migraciones.
+
+## Rollback
+
+- desactivar feature flag V4/LLM;
+- volver al `DeterministicTutorProvider`;
+- marcar cohorte V4 `is_active=false` sin borrar filas;
+- conservar bancos e historiales anteriores inactivos;
+- revertir grants/policies mediante migración explícita, nunca con cambios manuales
+  no versionados.
+
+El rollback técnico no autoriza fallback silencioso al usuario.
+
+## Pregunta humana del piloto posterior
+
+> ¿La ayuda del Tutor te permitió entender mejor cómo analizar la pregunta sin
+> darte directamente la respuesta?
+
+Escala 1–5 y comentario opcional.
+
+## Definition of Done
+
+- Bloques 0–5 y sus gates aprobados en repo/staging.
+- Evidencia de Supabase sin exposición de secretos.
+- OpenRouter ejecutado únicamente en shadow.
+- Ningún claim de runtime/deploy productivo sin triple verificación.
+- Documentación alineada y deuda posterior explícita.

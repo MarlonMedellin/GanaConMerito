@@ -11,7 +11,7 @@ related:
   - PROD-VISION
   - DEL-SPRINT-LOG
   - QUAL-DEBT-REGISTER
-last_reviewed: 2026-08-19
+last_reviewed: 2026-08-22
 ---
 
 # Backlog de producto
@@ -38,6 +38,16 @@ GanaConMerito tiene activo el core real de producto:
 - calibracion interna inicial y metricas/analytics internos del Tutor verificados en runtime sobre `fcc40cb`
 - **Cierre funcional Tutor GCM (Sprint 21):** PASS con WARN explicito.
 - **Frente normativo Tutor GCM (Sprint 22):** PASS con WARN explicito; contrato y guardrails verificados, fuente oficial suficiente pendiente.
+
+Siguiente bloque propuesto:
+- **Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow.**
+- P0: retirar lectura anonima/autenticada directa de claves y explicaciones y
+  eliminar `rationale` del payload previo a responder.
+- P0: importar y activar de forma controlada 90/90 V4; hoy Supabase publico muestra 1/90.
+- P0: usar exclusivamente V4 en practica/seleccion, sin fallback legacy silencioso.
+- P1: consumir todos los campos V4 en UI, feedback y expediente del Tutor.
+- P1: integrar OpenRouter en shadow con salida estructurada, ZDR, allowlist y
+  fallback deterministico.
 
 Estado beta vigente:
 - **Version objetivo:** `0.6.0`.
@@ -100,21 +110,19 @@ Estado beta vigente:
 - WARN vigente: faltan acuerdo oficial, guia metodologica, estructura de prueba y soporte de convocatoria/manual trazables en repo.
 
 ## Now
-1. Mantener el release `v0.6.0-beta.1` y su runtime sobre `9695d40`.
-2. Ejecutar y registrar gates minimos en cada deploy futuro: `content:validate`, tests relevantes, build, `qa:runtime:smoke`, `qa:smoke:postdeploy`, `qa:e2e:api` y `qa:e2e:ui`.
-3. Preparar la siguiente iteración editorial sin reabrir el checklist Beta cerrado.
-4. Mantener Tutor GCM bajo contrato: sin scoring, sin avance, sin cierre, sin fuente normativa inventada.
-5. Mantener Sprint 22 como clasificacion vigente del frente normativo hasta que exista nueva evidencia documental real.
-6. Ejecutar rotacion de `SUPABASE_SERVICE_ROLE_KEY` (Riesgo identificado en Sprint 20).
-7. Consolidar la calidad de `trace_signals` persistidos para que la calibracion posterior no dependa de ruido operacional.
-8. Mantener el bypass de onboarding QA explicitamente como workaround controlado hasta reemplazarlo por un mecanismo oficial y auditable.
-9. Mantener la expansion del banco bajo la regla editorial: taxonomia primero, perfiles como segunda capa opcional.
+1. Ejecutar el Bloque 0 de Sprint 48: corregir la exposicion P0 de respuestas.
+2. Confirmar la huella SSH del VPS por un canal confiable antes de acceso administrativo.
+3. Hacer idempotente y auditable la importacion 90/90 V4.
+4. Separar contratos pre/post respuesta y cortar seleccion runtime a V4.
+5. Mantener Tutor GCM sin autoridad sobre scoring, avance, cierre o fuente normativa.
+6. Preparar OpenRouter en shadow; no habilitar canary antes de los gates.
+7. Ejecutar y registrar gates minimos de repo, Supabase staging y runtime.
 
 ## Next
-1. Carga de anexos oficiales y eventual reevaluacion de `source_verified` para el frente normativo del Tutor.
-2. Validacion visual aislada del resumen de trazas: obtener evidencia publica nueva del bloque de resumen del Tutor en dashboard si sigue siendo artefacto de cierre requerido.
-3. Runtime topology doc: documentar `docker-compose.yml`, env file, dominio, proxy y politica de secretos.
-4. Refinamiento posterior de calidad de evidencia y ruido/falso positivo en `trace_signals`, sin abrir scoring ni psicometria fuerte.
+1. Canary limitado del Tutor LLM, solo tras aprobar shadow y decision humana.
+2. Carga de anexos oficiales y catalogo central V4 para reevaluar `source_verified`.
+3. Expansion `opec_specific` y cobertura docente basada en reportes, sin duplicar items.
+4. Calibracion con datos reales de piloto, incluida dificultad observada.
 
 ## Later
 1. Admin para editar fuente de verdad normativa y perfiles.

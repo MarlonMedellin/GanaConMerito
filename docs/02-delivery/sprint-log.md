@@ -11,7 +11,7 @@ related:
   - PROD-BACKLOG
   - DEL-CHANGE-LOG
   - QUAL-RISK-REGISTER
-last_reviewed: 2026-08-19
+last_reviewed: 2026-08-22
 ---
 
 ## Document control
@@ -24,19 +24,49 @@ last_reviewed: 2026-08-19
 # Sprint log
 
 ## Current delivery state
-- **Current operational block**: Beta Candidate 0.6.0 — checklist cerrado para release de codigo (2026-08-20).
-- **Current code release commit**: `9695d40`; documentación posterior sin cambios de código.
-- **Public runtime-verified commit**: `9695d40` (`2026-08-19T00:00:00-05:00`).
-- **Beta status**: checklist cerrado con QA postdeploy fresco PASS; tag `v0.6.0-beta.1` publicado.
-- **Supabase**: migraciones `0013`-`0017` aplicadas; 100 preguntas beta visibles en `v_item_bank_active`.
+- **Current operational block**: Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (propuesto; no iniciado).
+- **Current repo HEAD**: `adef22e` en `master`.
+- **Public runtime-verified commit**: `e43f612`; smoke publico PASS el 2026-08-22, sin nueva E2E autenticada.
+- **Supabase publico**: 121 filas visibles en `item_bank`: 120 legacy y 1 V4; existe exposicion P0 de clave/explicacion.
+- **V4 local**: 90 reactivos docentes validos; 1/90 observado en Supabase.
 - **Governance Hardening Roadmap state**: Fase 1 y Fase 2 iniciadas; Fase 3 en ejecucion documental (reduccion y clasificacion), Fases 4-5 futuras.
 - **Open risks**:
+  - acceso anonimo directo a claves y explicaciones del banco;
+  - payload pre-respuesta de sesion incluye `rationale`;
+  - V4 no gobierna todavia seleccion, practica ni Tutor;
+  - fuentes V4 sin documentos verificables;
+  - huella SSH del VPS cambio y requiere confirmacion del propietario;
   - HEAD documental posterior al release de codigo debe conservarse separado de la imagen desplegada;
   - la calibracion del Tutor sigue siendo heuristica y requiere evidencia de uso real para refinamiento posterior;
   - trazabilidad multiagente aun advisory y sin enforcement automatico;
   - parte del QA historico sigue narrativo y puede competir con baseline ejecutiva;
   - integracion futura del Tutor con LLM real sigue pendiente como deuda tecnica futura;
   - el frente normativo sigue en `synthesized_governed_unverified` hasta cargar anexos oficiales suficientes.
+
+## Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow
+- **Estado**: PROPUESTO; NO INICIADO
+- **Fecha de definicion**: 2026-08-22
+- **Rama canonica**: `master`
+- **Objetivo**: cortar la lectura runtime a V4 y ejecutar OpenRouter en shadow con
+  contratos pre/post seguros, autoridad deterministica y fallback preservado.
+
+### Orden y gates
+1. Cerrar exposicion P0 de claves, explicaciones y metadata privada.
+2. Hacer operativa e idempotente la importacion 90/90 V4.
+3. Adaptar repositorio, DTO, UI y selector sin fallback legacy.
+4. Adaptar el expediente Tutor a todos los campos V4.
+5. Integrar un proveedor OpenRouter restringido en shadow.
+6. Aprobar evaluacion adversarial y gates de repo/staging.
+
+### Evidencia de preparacion
+- Auditoria estructural V4: 90 archivos validos, sin inspeccion de items individuales.
+- Contraste REST publico Supabase y lectura de migraciones/contratos de app.
+- Smoke publico PASS sobre `e43f612`; runtime 149 commits detras de `adef22e`.
+- PRD y plan detallado creados; sin cambios de codigo, DB o deploy.
+
+### Limitaciones
+- VPS administrativo no verificado por cambio de huella SSH.
+- No hay canary, RAG/web, OPEC especifica ni activacion productiva en este sprint.
 
 ## Beta Candidate 0.6.0 — cierre documental y preparacion de runtime
 - **Estado**: CHECKLIST CERRADO PARA RELEASE DE CODIGO; TAG PENDIENTE

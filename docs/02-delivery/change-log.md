@@ -9,7 +9,7 @@ modules: [core, platform]
 tags: [changelog, cambios, entregas]
 related:
   - DEL-SPRINT-LOG
-last_reviewed: 2026-08-11
+last_reviewed: 2026-08-22
 ---
 
 ## Document control
@@ -18,6 +18,23 @@ last_reviewed: 2026-08-11
 - Last reviewed: 2026-08-11
 - Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
 - Update trigger: governance, delivery, documentation, drift
+
+## 2026-08-22
+- tipo: audit+prd+delivery+security
+- modulo: question-bank-v4/supabase/practice/tutor/openrouter
+- resumen: Se sincroniza `master` a `adef22e`, se audita la estructura completa
+  del banco V4 sin revisar reactivos individuales y se define Sprint 48. Se verifica
+  que existen 90 V4 locales pero solo 1 V4 activa en Supabase publico, y se identifica
+  como P0 la lectura anonima de claves/explicaciones y el `rationale` pre-respuesta.
+  OpenRouter queda aprobado solo para shadow gobernado, no para canary productivo.
+- agente: Codex
+- via: repositorio local sincronizado + lecturas publicas GitHub/runtime/Supabase
+- contributor: Marlon Medellin
+- environment: WSL local / GitHub / runtime publico
+- validacion: `npm run content:validate:v4`, smoke runtime publico y auditoria estructural/contratos; validaciones documentales al cierre
+- runtime-verified: parcial; endpoints publicos PASS sobre `e43f612`, sin VPS admin ni E2E autenticada
+- relacionados: docs/01-product/prd-v4-tutor-ai-openrouter.md, docs/02-delivery/sprint-48-v4-runtime-secure-tutor-shadow.md, docs/project/status.md
+- limitaciones: sin cambios de codigo, migraciones, importacion, deploy o inspeccion individual de reactivos; huella SSH pendiente de confirmacion.
 
 ## 2026-08-21
 - tipo: feat+content+database
