@@ -4,6 +4,9 @@ on:
   push:
     branches: [remediate-v4-phase-a-b-20260822]
     paths: ['.github/workflows/_one-shot-append-remediation-register.yml']
+  pull_request:
+    branches: [audit-v4-phase-a-b-adversarial-20260822]
+    paths: ['.github/workflows/_one-shot-append-remediation-register.yml']
 
 permissions:
   contents: write
