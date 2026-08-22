@@ -1,0 +1,36 @@
+name: Sync V4 legacy register batch
+
+on:
+  push:
+    paths:
+      - '.github/workflows/v4-register-sync.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  sync-register:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Append audited batch if absent
+        shell: bash
+        run: |
+          set -euo pipefail
+          register='content/question-bank-v4/legacy-processing-register.csv'
+          batch='content/restructuring-v1/trazabilidad/v4-batches/DOC-CONTENT-MD-20260822-001.csv'
+
+          if grep -q '^DOC-CONTENT-MD-20260822-001,' "$register"; then
+            echo 'Batch already present; no changes required.'
+            exit 0
+          fi
+
+          tail -n +2 "$batch" >> "$register"
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$register"
+          git commit -m 'chore(question-bank-v4): register markdown source batch'
+          git push
