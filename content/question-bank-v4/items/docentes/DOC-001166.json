@@ -1,0 +1,30 @@
+{
+  "id": "DOC-001166",
+  "scope": "general",
+  "domain": "didactica",
+  "topic": "planeacion_curricular",
+  "competency": "analisis_de_evidencia",
+  "questionType": "reading_analysis",
+  "cognitiveLevel": "analyze",
+  "context": "Dos grupos estudian durante el mismo tiempo un conjunto de conceptos. El grupo 1 relee los apuntes tres veces. El grupo 2 estudia una vez y después intenta recordar las ideas sin mirar el material antes de comprobar sus respuestas. En una prueba aplicada varios días después, el grupo 2 retiene más información.",
+  "stem": "¿Qué interpretación didáctica explica mejor ese resultado?",
+  "options": {
+    "A": "La relectura es menos útil únicamente porque expone al estudiante demasiadas veces al mismo contenido y siempre debería eliminarse de la enseñanza.",
+    "B": "Intentar recuperar activamente la información fortalece su disponibilidad posterior; por eso actividades breves de recuerdo sin apoyo pueden funcionar como oportunidades de aprendizaje y no solo como medición.",
+    "C": "El grupo 2 obtiene mejores resultados porque recordar sin consultar equivale a memorizar mecánicamente y evita que los conceptos se relacionen con conocimientos previos.",
+    "D": "La diferencia demuestra que cualquier prueba mejora el aprendizaje, independientemente de lo que pregunte, del tiempo transcurrido o de si se relaciona con los contenidos estudiados."
+  },
+  "correctAnswer": "B",
+  "explanations": {
+    "A": "La relectura puede tener funciones útiles; la evidencia no implica que deba eliminarse, sino que la recuperación activa puede producir mayor retención a largo plazo que volver a estudiar repetidamente.",
+    "B": "Es la mejor interpretación porque describe el efecto de práctica de recuperación: intentar producir la información desde la memoria contribuye a fortalecer el aprendizaje y la retención posterior.",
+    "C": "La recuperación no se reduce a memorización mecánica; puede utilizarse con conceptos, relaciones, explicaciones y otros aprendizajes significativos.",
+    "D": "El beneficio no autoriza a afirmar que cualquier prueba, bajo cualquier condición, produzca el mismo efecto; la actividad debe requerir recuperar el aprendizaje pertinente."
+  },
+  "hint": "Distingue entre volver a exponerse a la información y tener que producirla desde la memoria.",
+  "learningNote": "La práctica de recuperación convierte el acto de recordar en parte del aprendizaje. Preguntas breves, evocaciones sin apuntes o explicaciones recuperadas de memoria pueden fortalecer la retención posterior, especialmente cuando se integran a una secuencia de enseñanza y se corrigen errores después de la recuperación.",
+  "source": {
+    "reference": "Roediger, H. L., & Karpicke, J. D. (2006). Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention. Psychological Science, 17(3), 249–255"
+  },
+  "estimatedDifficulty": "medium"
+}
