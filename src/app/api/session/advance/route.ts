@@ -4,21 +4,12 @@ import { selectNextItem } from "../../../../domain/item-selection/select-next-it
 import { getNextState } from "../../../../domain/orchestrator/session-machine";
 import { getMaxSessionTurns } from "../../../../lib/config/session";
 import { isLearningProfileOnboardingComplete } from "../../../../lib/onboarding/status";
-import { applyActiveItemBankFilters, runWithActiveItemBankFallback } from "../../../../lib/supabase/active-item-bank";
+import { V4QuestionRepository } from "../../../../lib/question-bank/v4-question-repository";
 import { getSupabaseAdminClient } from "../../../../lib/supabase/admin";
 import { requireOwnedSession } from "../../../../lib/supabase/guards";
 import { advanceSessionSchema } from "../../../../lib/validation/session";
 import type { AdvanceSessionResponse } from "../../../../types/evaluation";
 import type { SessionState } from "../../../../types/session";
-
-interface SessionAdvanceItemRecord {
-  id: string;
-  correct_option: string;
-  difficulty: number | string | null;
-  area: string | null;
-  competency: string | null;
-  explanation: string | null;
-}
 
 export async function POST(request: Request) {
   const json = await request.json();
@@ -58,14 +49,9 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Learning profile not found" }, { status: 404 });
   }
 
-  const { data: item, error: itemError } = await runWithActiveItemBankFallback<SessionAdvanceItemRecord>((source) =>
-    applyActiveItemBankFilters(
-      admin.from(source).select("id, correct_option, difficulty, area, competency, explanation").eq("id", body.itemId),
-      source,
-    ).single(),
-  );
-
-  if (itemError || !item) {
+  const repository = new V4QuestionRepository();
+  const item = await repository.getAnsweredQuestion(body.itemId);
+  if (!item) {
     return NextResponse.json({ error: "Item not found" }, { status: 404 });
   }
 
@@ -81,8 +67,8 @@ export async function POST(request: Request) {
 
   const evaluation = scoreResponseBaselineHeuristicV1({
     selectedOption: body.selectedOption,
-    correctOption: item.correct_option,
-    difficulty: Number(item.difficulty),
+    correctOption: item.correctOption,
+    difficulty: item.difficulty,
     userRationale: body.userRationale,
   });
 
@@ -169,8 +155,11 @@ export async function POST(request: Request) {
     evaluation,
     answerReview: {
       selectedOption: body.selectedOption,
-      correctOption: item.correct_option as "A" | "B" | "C" | "D",
-      explanation: item.explanation ?? undefined,
+      correctOption: item.correctOption,
+      selectedExplanation: item.explanations[body.selectedOption],
+      correctExplanation: item.explanations[item.correctOption],
+      learningNote: item.learningNote,
+      sourceReference: item.sourceReference,
     },
     feedbackText,
     hintLevel: evaluation.remediationNeeded ? 1 : 0,

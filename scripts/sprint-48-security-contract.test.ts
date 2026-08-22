@@ -25,13 +25,15 @@ test("pre-answer route does not select or serialize answer-bearing fields", asyn
 
   assert.doesNotMatch(route, /correct_option|editorial_metadata|item\.explanation|rationale:/i);
   assert.doesNotMatch(sessionTypes, /^\s*rationale\?:/im);
-  assert.match(route, /getSupabaseAdminClient/);
+  assert.match(route, /V4QuestionRepository/);
+  assert.doesNotMatch(route, /runWithActiveItemBankFallback|getSupabaseAdminClient/);
 });
 
 test("answer evaluation and persistence use server-only service-role access", async () => {
   const route = await readRepoFile("src/app/api/session/advance/route.ts");
 
   assert.match(route, /getSupabaseAdminClient/);
+  assert.match(route, /V4QuestionRepository/);
   assert.match(route, /admin\.rpc\("advance_session_atomic"/);
   assert.doesNotMatch(route, /supabase\.rpc\("advance_session_atomic"/);
   assert.ok(route.indexOf("admin.rpc") < route.indexOf("answerReview"));

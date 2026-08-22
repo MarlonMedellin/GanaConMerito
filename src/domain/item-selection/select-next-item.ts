@@ -1,5 +1,5 @@
 import { getSupabaseAdminClient } from "@/lib/supabase/admin";
-import { applyActiveItemBankFilters, runWithActiveItemBankFallback } from "@/lib/supabase/active-item-bank";
+import { V4QuestionRepository } from "@/lib/question-bank/v4-question-repository";
 
 interface SelectNextItemParams {
   professionalProfileId?: string | null;
@@ -13,15 +13,6 @@ interface SelectNextItemParams {
 interface SelectionScope {
   activeArea?: string;
   activeCompetency?: string;
-}
-
-interface SelectedItem {
-  id: string;
-  area: string | null;
-  competency: string | null;
-  difficulty: number | string | null;
-  correct_option: string | null;
-  thematic_nucleus_id: string | null;
 }
 
 const CANDIDATE_LIMIT = 20;
@@ -78,78 +69,14 @@ async function resolveRecentItemIds(profileIdForRotation?: string) {
   return Array.from(new Set((data ?? []).map((row) => row.item_id).filter(Boolean)));
 }
 
-async function resolveEligibleNucleusIds(professionalProfileId?: string | null) {
-  const admin = getSupabaseAdminClient();
-
-  const { data: universalNuclei, error: universalNucleiError } = await admin
-    .from("thematic_nuclei")
-    .select("id")
-    .eq("is_active", true)
-    .eq("is_universal", true);
-
-  if (universalNucleiError) {
-    throw universalNucleiError;
-  }
-
-  const universalIds = (universalNuclei ?? []).map((row) => row.id).filter(Boolean);
-
-  if (!professionalProfileId) {
-    return Array.from(new Set(universalIds));
-  }
-
-  const { data: assignedNuclei, error: assignedNucleiError } = await admin
-    .from("profile_thematic_nuclei")
-    .select("thematic_nucleus_id")
-    .eq("professional_profile_id", professionalProfileId)
-    .eq("is_enabled", true);
-
-  if (assignedNucleiError) {
-    throw assignedNucleiError;
-  }
-
-  return Array.from(
-    new Set([
-      ...universalIds,
-      ...(assignedNuclei ?? []).map((row) => row.thematic_nucleus_id),
-    ].filter(Boolean)),
-  );
-}
-
-async function runSelectionAttempt(params: SelectNextItemParams, scope: SelectionScope, eligibleNucleusIds: string[]) {
-  const admin = getSupabaseAdminClient();
-
-  const { data, error } = await runWithActiveItemBankFallback<SelectedItem[]>((source) => {
-    let query = applyActiveItemBankFilters(
-      admin
-        .from(source)
-        .select("id, area, competency, difficulty, correct_option, thematic_nucleus_id")
-        .in("thematic_nucleus_id", eligibleNucleusIds)
-        .order("difficulty", { ascending: true })
-        .order("id", { ascending: true }),
-      source,
-    );
-
-    if (scope.activeArea) {
-      query = query.eq("area", scope.activeArea);
-    }
-
-    if (scope.activeCompetency) {
-      query = query.eq("competency", scope.activeCompetency);
-    }
-
-    if (params.excludeItemIds && params.excludeItemIds.length > 0) {
-      const quotedIds = params.excludeItemIds.map((id) => `"${id}"`).join(",");
-      query = query.not("id", "in", `(${quotedIds})`);
-    }
-
-    return query.limit(CANDIDATE_LIMIT);
+async function runSelectionAttempt(params: SelectNextItemParams, scope: SelectionScope) {
+  const repository = new V4QuestionRepository();
+  const candidates = await repository.listCandidates({
+    area: scope.activeArea,
+    competency: scope.activeCompetency,
+    excludeItemIds: params.excludeItemIds,
+    limit: CANDIDATE_LIMIT,
   });
-
-  if (error) {
-    throw error;
-  }
-
-  const candidates = data ?? [];
   if (candidates.length === 0) {
     return null;
   }
@@ -185,14 +112,8 @@ function buildSelectionScopes(params: SelectNextItemParams): SelectionScope[] {
 }
 
 export async function selectNextItem(params: SelectNextItemParams) {
-  const eligibleNucleusIds = await resolveEligibleNucleusIds(params.professionalProfileId);
-
-  if (eligibleNucleusIds.length === 0) {
-    return null;
-  }
-
   for (const scope of buildSelectionScopes(params)) {
-    const nextItem = await runSelectionAttempt(params, scope, eligibleNucleusIds);
+    const nextItem = await runSelectionAttempt(params, scope);
 
     if (nextItem) {
       return nextItem;

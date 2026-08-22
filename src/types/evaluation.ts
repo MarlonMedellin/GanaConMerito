@@ -33,7 +33,10 @@ export interface AdvanceSessionResponse {
   answerReview: {
     selectedOption: "A" | "B" | "C" | "D";
     correctOption: "A" | "B" | "C" | "D";
-    explanation?: string;
+    selectedExplanation?: string;
+    correctExplanation?: string;
+    learningNote?: string;
+    sourceReference?: string;
   };
   feedbackText: string;
   hintLevel: number;

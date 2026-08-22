@@ -98,6 +98,12 @@ Gate 1:
 
 ### Bloque 2 — Repositorio, DTO y selector V4 (P0)
 
+Estado 2026-08-22: implementación de repo completada y validada. El repositorio
+server-only lee la vista segura V4 para selección/pre-respuesta y la tabla base
+solo para evaluación post-respuesta; no existe fallback legacy. La activación,
+prueba E2E y evidencia Supabase permanecen abiertas, por lo que Gate 2 remoto no
+se declara aprobado.
+
 1. Crear `V4QuestionRepository` server-only.
 2. Crear `PracticeQuestion` y `AnsweredQuestion`.
 3. Separar `context` y `stem` en API y UI.

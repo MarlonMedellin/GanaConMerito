@@ -19,6 +19,24 @@ last_reviewed: 2026-08-22
 - Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
 - Update trigger: governance, delivery, documentation, drift
 
+## 2026-08-22 — Sprint 48 Bloque 2 en repo
+- tipo: backend+api+ui+security+test
+- modulo: question-bank-v4/session/practice
+- resumen: Se incorpora `V4QuestionRepository` server-only, el selector queda
+  limitado a V4 activa sin fallback legacy, se separan contratos pre/post y la UI
+  distingue contexto, enunciado y feedback por opción. El banco vacío produce un
+  estado explícito con alternativas.
+- agente: Codex
+- via: Codex Desktop / repositorio local
+- contributor: Marlon Medellin
+- environment: WSL local / master
+- validacion: typecheck y suites de contratos V4/seguridad PASS; suite completa y
+  build se ejecutan antes del cierre del commit
+- runtime-verified: no; migraciones, cohorte V4 y deploy siguen pendientes
+- relacionados: src/lib/question-bank/v4-question-repository.ts,
+  src/domain/item-selection/select-next-item.ts, src/app/api/session/,
+  src/components/practice/practice-session.tsx, supabase/migrations/0022_v4_safe_runtime_view.sql
+
 ## 2026-08-22 — Dominio canonico de runtime y QA
 - tipo: ops+qa+docs
 - modulo: runtime/e2e/auth

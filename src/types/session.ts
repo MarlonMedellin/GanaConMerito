@@ -42,6 +42,11 @@ export interface StartSessionResponse {
   hintLevel: number;
   activeArea?: string;
   activeCompetency?: string;
+  inventory?: {
+    status: "empty";
+    reason: "no_active_v4_items";
+    alternatives: string[];
+  };
 }
 
 export interface AdvanceSessionRequest {
@@ -65,7 +70,11 @@ export interface PracticeQuestionViewModel {
   competency: string;
   stem: string;
   options: PracticeQuestionOptionViewModel[];
-  subarea?: string;
+  topic?: string;
+  context?: string;
+  questionType?: string;
+  cognitiveLevel?: string;
+  sourceReference?: string;
   topicLabel?: string;
   expectedUserTask?: string;
   cognitiveIntent?: string;

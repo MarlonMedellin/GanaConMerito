@@ -10,14 +10,14 @@ last_reviewed: 2026-08-22
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-08-22 — Sprint 48 propuesto tras auditoria V4, Supabase publico y Tutor GCM.
+Ultima actualizacion: 2026-08-22 — Sprint 48 en ejecución; Bloque 2 implementado en repo.
 
 ---
 
 # Executive Operational Snapshot
 
 ## Current Sprint
-Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (**en ejecución; Bloque 0 publicado**).
+Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (**en ejecución; Bloques 0–2 en repo**).
 
 ## Current Runtime State
 El runtime publico canonico responde en `https://ganaconmerito.com` y reporta el commit
@@ -35,8 +35,8 @@ y debe confirmarse antes de aceptar la conexion.
 smoke publico; no reejecuto E2E autenticada ni verifico el arbol de deploy.
 
 ## Current Sprint Status
-**SPRINT 48 EN EJECUCIÓN; BLOQUE 0 IMPLEMENTADO EN REPO, NO APLICADO**: la
-migración y los contratos server-only están probados localmente. La exposición
+**SPRINT 48 EN EJECUCIÓN; BLOQUES 0–2 IMPLEMENTADOS EN REPO, NO APLICADOS**: las
+migraciones, importador, repositorio V4 y contratos pre/post están probados localmente. La exposición
 pública permanece en el runtime hasta desplegar el código y aplicar `0020` en una
 ventana controlada.
 
@@ -45,9 +45,8 @@ ventana controlada.
   `v_question_bank_v4_active` expone 1 V4 activa.
 - La politica publica permite consultar `correct_option`, `explanation` y metadata
   editorial directamente desde `item_bank`; RLS por fila no protege columnas.
-- `/api/session/item` devuelve `rationale` antes de responder.
-- La app sigue leyendo `v_item_bank_active`/`item_bank` con fallback legacy y no
-  consume de forma nativa todos los campos V4.
+- El runtime desplegado aún devuelve el contrato anterior y lee
+  `v_item_bank_active`/`item_bank`; el repo ya eliminó ese fallback para práctica.
 - El banco V4 tiene 224 reactivos estructuralmente validos y aprobados al corte
   congelado; los lotes posteriores no se cuentan hasta su cierre. Mantiene cero
   documentos en `sources/`;
@@ -87,8 +86,8 @@ contratos de practica/Tutor y runtime publico canonico auditados. VPS admin no v
 
 **Bloque actual en repo:** Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (en ejecución).
 
-**Estado del bloque actual:** Bloques 0 y 1 implementados y validados en repo;
-aplicación remota pendiente. Bloque 2 en curso.
+**Estado del bloque actual:** Bloques 0, 1 y 2 implementados y validados en repo;
+aplicación remota pendiente. Bloque 3 pendiente.
 
 **Sprint anterior cerrado:** Sprint 46 — Cierre normativo del Tutor GCM.
 
@@ -99,7 +98,7 @@ aplicación remota pendiente. Bloque 2 en curso.
 ## Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow
 
 ### Estado
-**EN EJECUCIÓN — BLOQUE 0 EN REPO**
+**EN EJECUCIÓN — BLOQUES 0–2 EN REPO**
 
 ### Resultado de la preparacion
 - PRD integral: `docs/01-product/prd-v4-tutor-ai-openrouter.md`.
@@ -116,6 +115,8 @@ aplicación remota pendiente. Bloque 2 en curso.
 - No se aplicaron migraciones, no se importaron filas y no se desplego codigo.
 - `0020_secure_question_answer_boundary.sql`, contratos pre/post y pruebas de
   seguridad están implementados localmente; no constituyen evidencia de cierre remoto.
+- El selector, rutas y UI usan el contrato V4-only en repo, reportan inventario
+  vacío sin fallback y separan contexto/enunciado y feedback post-respuesta.
 
 ## Beta Candidate 0.6.0 — snapshot ejecutivo
 

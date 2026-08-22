@@ -8,12 +8,10 @@ Entrada:
 - `area?`
 - `competency?`
 
-Lectura de banco recomendada:
-- usar `public.v_item_bank_active` (ver `docs/database/active-question-bank-contract.md`)
-- no leer `item_bank` crudo como contrato funcional por defecto
-- cuando V4 se active, el backend debe elegir la vista V4 autorizada según el
-  contrato `docs/database/question-bank-v4-contract.md`; el navegador no consulta
-  tablas ni vistas con `correct_option` directamente
+Lectura de banco implementada en repo:
+- `V4QuestionRepository` server-only consulta `public.v_question_bank_v4_active`
+- no existe fallback a `v_item_bank_active`, Beta/V3 o legacy
+- el navegador no consulta tablas ni vistas del banco directamente
 
 Salida:
 - `sessionId`
@@ -23,19 +21,20 @@ Salida:
 - `hintLevel`
 - `activeArea?`
 - `activeCompetency?`
+- `inventory?` con estado, motivo y alternativas cuando no hay V4 activa
 
 ### `POST /api/session/advance`
 Entrada:
 - `sessionId`
 - `itemId`
-- `selectedOption?`
+- `selectedOption`
 - `userRationale?`
 - `responseTimeMs?`
 - `confidenceSelfReport?`
 
-Lectura de banco recomendada:
-- resolver ítem y elegibilidad desde `public.v_item_bank_active`
-- reservar `item_bank` como tabla base de escritura/transición
+Lectura de banco implementada en repo:
+- la evaluación autorizada usa `V4QuestionRepository` server-only
+- la respuesta se persiste antes de revelar feedback por opción
 
 Salida:
 - `sessionId`
@@ -46,6 +45,12 @@ Salida:
 - `hintLevel`
 - `nextItemId?`
 - `shouldTransition`
+- `answerReview.selectedOption`
+- `answerReview.correctOption`
+- `answerReview.selectedExplanation?`
+- `answerReview.correctExplanation?`
+- `answerReview.learningNote?`
+- `answerReview.sourceReference?`
 
 ### `POST /api/content/validate`
 Entrada:
@@ -72,9 +77,9 @@ Entrada:
 - `sessionId`
 - `itemId`
 
-Lectura de banco recomendada:
-- metadatos del ítem desde `public.v_item_bank_active`
-- opciones desde `item_options` mientras no exista una vista de detalle consolidada
+Lectura de banco implementada en repo:
+- metadatos seguros desde `public.v_question_bank_v4_active`
+- opciones desde `item_options` mediante el repositorio server-only
 
 Salida (compatibilidad + preparación rich):
 - legacy estable para UI actual:
@@ -85,19 +90,20 @@ Salida (compatibilidad + preparación rich):
   - `stem`
   - `options[]`
 - capa extendida de presentación (`PracticeQuestionViewModel`):
-  - `subarea?`
+  - `topic?`
+  - `context?`
+  - `questionType?`
+  - `cognitiveLevel?`
+  - `sourceReference?`
   - `topicLabel?`
   - `expectedUserTask?`
   - `cognitiveIntent?`
   - `difficulty?`
   - `tags?`
   - `misconceptionHints?`
-  - `rationale?`
   - `sourceTruthStatus?` (uso interno / trazabilidad)
-- extensión V4 pendiente de activación:
-  - `context?`, `topic?`, `questionType?`, `cognitiveLevel?`, `hint?`
-  - la clave, explicaciones y `learningNote` solo aparecen en un payload posterior
-    a la respuesta autorizada
+- la clave, explicaciones y `learningNote` no forman parte de esta respuesta;
+  solo aparecen tras una respuesta autorizada en `POST /api/session/advance`
 
 ### `GET /api/dashboard/summary`
 Contrato detallado: `docs/api/dashboard-summary-contract.md`

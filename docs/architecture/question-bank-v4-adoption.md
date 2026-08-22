@@ -13,20 +13,20 @@
 - La migración `0019_question_bank_v4_contract.sql` agrega metadatos consultables y
   `v_question_bank_v4_active`, sin reemplazar la vista histórica activa.
 
-Pendiente para fases posteriores: aplicar la migración en Supabase, importar una
-cohorte con auditoría editorial verificable, crear el repositorio/DTO de lectura
-V4, adaptar sesiones/UI y ejecutar piloto antes del corte exclusivo. No se declara
-runtime verificado ni fuente predeterminada V4 en esta entrega.
+El repositorio ya incluye `V4QuestionRepository`, DTO pre/post, selector exclusivo
+V4, UI diferenciada y estado de inventario vacío. Sigue pendiente aplicar las
+migraciones en Supabase, importar y activar una cohorte aprobada, desplegar y ejecutar
+el piloto/E2E. No se declara runtime verificado ni cohorte V4 activa en esta entrega.
 
 ## Situación verificada
 
-El runtime actual consume `v_item_bank_active` y los datos legacy/V3 almacenados
+El runtime público desplegado consume `v_item_bank_active` y los datos legacy/V3 almacenados
 en `item_bank` e `item_options`. V4 define un contrato JSON nuevo, con `context`,
 `topic`, `questionType`, `cognitiveLevel`, fuente estructurada y tutoría por
 opción. Por tanto, copiar archivos V4 a `content/` no basta para que aparezcan en
 la práctica: hacen falta importación, lectura segura y activación explícita.
 
-## Backend: trabajo necesario
+## Backend: estado del trabajo
 
 1. Crear un validador V4 con Zod/TypeScript que lea
    `CONTRATO-EDITORIAL-V4.md` y los catálogos de `taxonomy/`. Debe validar un
@@ -36,10 +36,10 @@ la práctica: hacen falta importación, lectura segura y activación explícita.
    función SQL V4 versionada.
 3. Mantener `context` y `stem` separados al importar. El backend forma la
    presentación; no concatena ambos como solución permanente.
-4. Crear un repositorio de lectura V4 que consulte la vista V4 activa, no
+4. Implementado en repo: repositorio de lectura V4 que consulta la vista V4 activa, no
    `item_bank` directamente. El selector debe filtrar por OPEC, scope, dominio,
    competencia y núcleo cuando corresponda.
-5. Separar dos DTO: `PracticeQuestion` sin clave/feedback y `AnsweredQuestion`
+5. Implementado en repo: dos DTO, `PracticeQuestion` sin clave/feedback y `AnsweredQuestion`
    con explicación de la opción elegida, clave, `hint` y `learningNote` solo tras
    responder.
 6. Mantener la evaluación y la autorización de revelar respuestas exclusivamente
@@ -77,5 +77,6 @@ UI de práctica y feedback posterior
 piloto pequeño, métricas y activación gradual
 ```
 
-No cambiar el selector global ni marcar V4 como fuente por defecto hasta que un
-piloto haya superado validación técnica, editorial humana y pruebas end-to-end.
+El selector del repositorio ya es V4-only, pero el cambio no debe desplegarse ni
+activarse hasta importar una cohorte, aplicar la frontera de seguridad y superar
+validación técnica, editorial humana y pruebas end-to-end.

@@ -15,6 +15,11 @@ interface SessionStartResult {
   sessionId: string;
   currentState: string;
   currentItemId?: string;
+  inventory?: {
+    status: "empty";
+    reason: "no_active_v4_items";
+    alternatives: string[];
+  };
 }
 
 interface AdvanceResult {
@@ -31,7 +36,10 @@ interface AdvanceResult {
   answerReview: {
     selectedOption: OptionKey;
     correctOption: OptionKey;
-    explanation?: string;
+    selectedExplanation?: string;
+    correctExplanation?: string;
+    learningNote?: string;
+    sourceReference?: string;
   };
 }
 
@@ -108,7 +116,12 @@ export function PracticeSession() {
       }
 
       if (!data.currentItemId) {
-        setSessionMessage("La sesión fue creada, pero no hay un ítem disponible todavía para continuar.");
+        const alternatives = data.inventory?.alternatives?.join(". ");
+        setSessionMessage(
+          alternatives
+            ? `No hay preguntas V4 activas para esta práctica. Alternativas: ${alternatives}.`
+            : "La sesión fue creada, pero no hay una pregunta V4 disponible todavía para continuar.",
+        );
         return;
       }
 
@@ -255,17 +268,18 @@ export function PracticeSession() {
                 <p className="body-sm m-0">{item.cognitiveIntent}</p>
               </div>
             ) : null}
-            {item.subarea || item.difficulty ? (
+            {item.topic || item.difficulty ? (
               <div className="practice-rich-item">
                 <p className="eyebrow mt-4">Contexto del ítem</p>
                 <p className="body-sm m-0">
-                  {item.subarea ? `Subárea: ${item.subarea}` : "Subárea no especificada"}
+                  {item.topic ? `Tema: ${item.topic}` : "Tema no especificado"}
                   {typeof item.difficulty === "number" ? ` · Dificultad ${item.difficulty.toFixed(2)}` : ""}
                 </p>
               </div>
             ) : null}
           </div>
 
+          {item.context ? <p className="body-sm practice-context">{item.context}</p> : null}
           <p className="practice-stem">{item.stem}</p>
 
           <div className="option-list option-list-strong">
@@ -330,8 +344,17 @@ export function PracticeSession() {
               <p className="body-sm m-0">
                 Tu respuesta: {feedback.answerReview.selectedOption} · Clave: {feedback.answerReview.correctOption}
               </p>
-              {feedback.answerReview.explanation ? (
-                <p className="subtle m-0">{feedback.answerReview.explanation}</p>
+              {feedback.answerReview.selectedExplanation ? (
+                <p className="subtle m-0">Sobre tu elección: {feedback.answerReview.selectedExplanation}</p>
+              ) : null}
+              {feedback.answerReview.correctExplanation ? (
+                <p className="subtle m-0">Fundamento de la clave: {feedback.answerReview.correctExplanation}</p>
+              ) : null}
+              {feedback.answerReview.learningNote ? (
+                <p className="subtle m-0">Para aprender: {feedback.answerReview.learningNote}</p>
+              ) : null}
+              {feedback.answerReview.sourceReference ? (
+                <p className="subtle m-0">Fuente: {feedback.answerReview.sourceReference}</p>
               ) : null}
               <div className="metric-grid metric-grid-2 mt-8">
                 <div className="metric-card metric-card-compact">

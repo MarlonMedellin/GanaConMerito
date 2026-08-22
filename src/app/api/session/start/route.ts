@@ -71,6 +71,16 @@ export async function POST(request: Request) {
     hintLevel: 0,
     activeArea: body.area,
     activeCompetency: body.competency,
+    inventory: onboardingCompleted && !nextItem
+      ? {
+          status: "empty",
+          reason: "no_active_v4_items",
+          alternatives: [
+            "Revisar los filtros de área y competencia",
+            "Intentar de nuevo cuando exista una cohorte V4 activa",
+          ],
+        }
+      : undefined,
   };
 
   return NextResponse.json(response, { status: 200 });
