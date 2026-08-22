@@ -1,0 +1,30 @@
+{
+  "id": "DOC-001162",
+  "scope": "general",
+  "domain": "didactica",
+  "topic": "planeacion_curricular",
+  "competency": "comprension_conceptual",
+  "questionType": "conceptual",
+  "cognitiveLevel": "understand",
+  "context": "En ciencias, una docente compara la corriente eléctrica con el flujo de agua por una tubería para introducir un concepto que el grupo aún no domina. Quiere que la analogía ayude a comprender sin generar una equivalencia falsa entre ambos fenómenos.",
+  "stem": "¿Qué uso de la analogía es didácticamente más sólido?",
+  "options": {
+    "A": "Presentar la analogía como si ambos fenómenos funcionaran de manera idéntica, porque una comparación útil debe eliminar las diferencias entre el concepto conocido y el nuevo.",
+    "B": "Explicitar qué relaciones de la analogía ayudan a comprender el fenómeno eléctrico y señalar también sus límites, para evitar que los estudiantes transfieran características que no corresponden.",
+    "C": "Usar la analogía únicamente como recurso motivacional y evitar discutir relaciones conceptuales, porque cualquier comparación entre dominios distintos introduce errores.",
+    "D": "Sustituir la explicación científica por la analogía durante toda la unidad, ya que comprender el caso familiar hace innecesario volver al concepto formal."
+  },
+  "correctAnswer": "B",
+  "explanations": {
+    "A": "Una analogía no implica identidad entre dos fenómenos. Ocultar las diferencias favorece transferencias incorrectas y puede consolidar concepciones erróneas.",
+    "B": "Es la mejor respuesta porque una analogía eficaz mapea relaciones relevantes entre un dominio familiar y uno nuevo, pero también hace explícitos los puntos donde la comparación deja de ser válida.",
+    "C": "Las analogías pueden apoyar la comprensión conceptual cuando se trabajan de manera intencional; reducirlas a motivación desaprovecha su función explicativa.",
+    "D": "La analogía es un apoyo transitorio para comprender el concepto, no un reemplazo permanente del lenguaje y las explicaciones propios de la disciplina."
+  },
+  "hint": "Una buena analogía ayuda por sus semejanzas relevantes, pero también puede confundir si no se reconocen sus diferencias.",
+  "learningNote": "Las analogías pueden facilitar el aprendizaje de conceptos abstractos al relacionarlos con situaciones familiares, pero son herramientas de doble filo. Su valor didáctico aumenta cuando el docente identifica las correspondencias útiles y discute explícitamente los límites de la comparación.",
+  "source": {
+    "reference": "Duit, R., Roth, W.-M., Komorek, M., & Wilbers, J. (2001). Fostering conceptual change by analogies. Learning and Instruction, 11, 283–303"
+  },
+  "estimatedDifficulty": "low"
+}
