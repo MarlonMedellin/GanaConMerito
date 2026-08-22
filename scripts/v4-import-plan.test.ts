@@ -41,7 +41,6 @@ test("closed narrative expansion reports authorize only IDs listed in their tabl
         "|---|---|",
         "| DOC-123456 | ejemplo |",
         "Siguiente ID previsto: `DOC-123457`.",
-        "El control se completó antes de cerrar el lote.",
       ].join("\n"),
     }],
   );

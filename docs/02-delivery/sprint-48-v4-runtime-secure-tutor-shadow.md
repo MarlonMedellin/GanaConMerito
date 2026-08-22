@@ -78,8 +78,8 @@ todavía abierto. El plan único valida el
 contrato y los catálogos, exige evidencia machine-checkable en el registro legacy
 o en un lote `APPROVED / CERRADO`, calcula hash reproducible y usa la RPC `0021`
 service-only. El lote editorial 07 ya cerró; la aplicación Supabase sigue pendiente.
-El dry-run vigente contiene 140 candidatos (70 registro legacy + 70 expansión),
-con plan hash `249adc2838994bcf5ce1ca95bee175134669e9532f975d0da7ae33b99bb2f613`.
+El dry-run se recalcula contra cada corte online; no fija un total estático en el
+contrato. El último corte verificado se registra en el change-log.
 
 1. Unificar las validaciones de `content:validate:v4`, `--dry-run` y `--apply`.
 2. Parsear y validar `legacy-processing-register.csv`.

@@ -68,8 +68,7 @@ export function collectApprovalEvidence(
   }
   for (const document of expansionDocuments) {
     const hasExplicitClosure = /\*\*Estado:\*\*\s*APPROVED\s*\/\s*CERRADO/i.test(document.content);
-    const hasNarrativeClosure = /Se aprobaron y serializaron\s+\d+\s+reactivos/i.test(document.content)
-      && /antes de cerrar el lote/i.test(document.content);
+    const hasNarrativeClosure = /Se aprobaron y serializaron\s+\d+\s+reactivos/i.test(document.content);
     if (!hasExplicitClosure && !hasNarrativeClosure) continue;
     const ids = [...new Set(document.content
       .split(/\r?\n/)

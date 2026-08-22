@@ -45,8 +45,8 @@ last_reviewed: 2026-08-22
 - via: Codex Desktop / repositorio local
 - contributor: Marlon Medellin
 - environment: WSL local / master
-- validacion: plan dry-run 140/140 con hash `249adc2838994bcf5ce1ca95bee175134669e9532f975d0da7ae33b99bb2f613`,
-  contrato SQL, validador V4, typecheck y suite local PASS
+- validacion: plan dry-run completo al corte online, contrato SQL, validador V4,
+  typecheck y suite local PASS; el conteo/hash se recalculan ante cada lote cerrado
 - runtime-verified: no; `0021` y la importación no se aplicaron en Supabase
 - relacionados: scripts/lib/v4-import-plan.ts, scripts/import-question-bank-v4.ts,
   scripts/v4-import-plan.test.ts, supabase/migrations/0021_upsert_question_bank_v4.sql

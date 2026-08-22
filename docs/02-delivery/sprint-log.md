@@ -25,10 +25,10 @@ last_reviewed: 2026-08-22
 
 ## Current delivery state
 - **Current operational block**: Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (en ejecución; Bloque 0 en repo).
-- **Base online incorporada**: `a97c4db` en `master`; Bloque 0 publicado en `f977d46` y dominio canónico en `7f73f32`.
+- **Último corte editorial aprobado validado**: `9429c55` en `master`; Bloque 0 publicado en `f977d46`, dominio canónico en `7f73f32` e importador en `420f1bf`.
 - **Public runtime canonico**: `https://ganaconmerito.com`; commit visible `e43f612`, smoke publico PASS el 2026-08-22, sin nueva E2E autenticada.
 - **Supabase publico**: 121 filas visibles en `item_bank`: 120 legacy y 1 V4; existe exposicion P0 de clave/explicacion.
-- **V4 local**: 140 reactivos estructuralmente válidos y aprobados para importación;
+- **V4 local**: 150 reactivos estructuralmente válidos y aprobados para importación;
   1 V4 observado en Supabase.
 - **Governance Hardening Roadmap state**: Fase 1 y Fase 2 iniciadas; Fase 3 en ejecucion documental (reduccion y clasificacion), Fases 4-5 futuras.
 - **Open risks**:
@@ -62,7 +62,7 @@ last_reviewed: 2026-08-22
 ### Evidencia de preparacion
 - Auditoria estructural V4: corpus valido al corte, sin inspeccion de items individuales.
 - Contraste REST publico Supabase y lectura de migraciones/contratos de app.
-- Smoke publico PASS sobre `e43f612` en `https://ganaconmerito.com`; runtime 227 commits detras de `a97c4db`.
+- Smoke publico PASS sobre `e43f612` en `https://ganaconmerito.com`; persiste drift amplio frente al repositorio.
 - PRD y plan detallado creados; sin cambios de codigo, DB o deploy.
 - Migración `0020`, lecturas server-only, contratos pre/post y suite de seguridad
   implementados; typecheck y pruebas específicas PASS.
