@@ -2,6 +2,16 @@
 
 Banco maestro de preguntas nuevas del proyecto **GanaConMerito**.
 
+## Estado actual
+
+**Corte:** 2026-08-22  
+**Reactivos docentes V4 válidos:** **170**  
+**Última expansión cerrada:** **100 reactivos nuevos / 10 dominios × 10**  
+**Snapshot de cobertura:** [`COVERAGE-AFTER-BATCH-10-20260822.json`](./COVERAGE-AFTER-BATCH-10-20260822.json)  
+**Cierre de expansión:** [`EXPANSION-CLOSURE-100-DOMINIOS-20260822.md`](./EXPANSION-CLOSURE-100-DOMINIOS-20260822.md)
+
+El snapshot final reporta `errors: []` y cobertura en los 10 dominios, 16 temas, 8 competencias, 7 tipos de pregunta y 4 niveles cognitivos canónicos. El siguiente identificador esperado para nuevas preguntas docentes es `DOC-001202`; siempre debe comprobarse que esté libre antes de usarlo.
+
 ## Propósito
 
 Cada pregunta de este banco es un **reactivo nuevo y completo**, creado desde cero
