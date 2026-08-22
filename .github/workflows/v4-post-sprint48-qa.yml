@@ -72,13 +72,14 @@ jobs:
           replacements = {f'DOC-{n:06d}' for n in range(1295, 1305)}
           must_remain_active = {'DOC-001104','DOC-001110','DOC-001292','DOC-001293'}
 
+          qt = load_json(ROOT/'taxonomy'/'question-types.json')
           tax = {
               'domain': set(load_json(ROOT/'taxonomy'/'domains.json')),
               'topic': set(load_json(ROOT/'taxonomy'/'topics.json')),
               'competency': set(load_json(ROOT/'taxonomy'/'competencies.json')),
-              'questionType': set(load_json(ROOT/'taxonomy'/'question-types.json')),
-              'cognitiveLevel': set(load_json(ROOT/'taxonomy'/'cognitive-levels.json')),
-              'estimatedDifficulty': set(load_json(ROOT/'taxonomy'/'difficulty-levels.json')),
+              'questionType': set(qt['questionTypes']),
+              'cognitiveLevel': set(qt['cognitiveLevels']),
+              'estimatedDifficulty': set(qt['estimatedDifficultyLevels']),
           }
 
           required = {
@@ -136,8 +137,8 @@ jobs:
                   errors.append(f'{qid}: invalid correctAnswer')
               if set(obj['explanations']) != {'A','B','C','D'}:
                   errors.append(f'{qid}: explanations must be exactly A-D')
-              if not isinstance(obj.get('source'), dict) or not str(obj['source'].get('reference','')).strip():
-                  errors.append(f'{qid}: missing source.reference')
+              if not isinstance(obj.get('source'), dict) or set(obj['source']) != {'reference'} or not str(obj['source'].get('reference','')).strip():
+                  errors.append(f'{qid}: source must contain non-empty reference only')
               for field in ('context','stem','hint','learningNote'):
                   if not isinstance(obj[field], str) or not obj[field].strip():
                       errors.append(f'{qid}: empty {field}')
