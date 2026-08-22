@@ -1,0 +1,30 @@
+{
+  "id": "DOC-001285",
+  "scope": "general",
+  "domain": "evaluacion",
+  "topic": "razonamiento_cuantitativo",
+  "competency": "juicio_profesional",
+  "questionType": "case_analysis",
+  "cognitiveLevel": "judge",
+  "context": "Después de implementar una estrategia de acompañamiento, el porcentaje de estudiantes que entregó todas las actividades pasó de 62 % a 74 %. En el mismo periodo también cambiaron el calendario de entregas y el sistema de recordatorios. El informe concluye: ‘La estrategia de acompañamiento causó por sí sola todo el aumento observado’.",
+  "stem": "¿Cuál valoración es más rigurosa?",
+  "options": {
+    "A": "La conclusión causal es válida porque cualquier aumento posterior a una intervención demuestra que esa intervención fue la única causa.",
+    "B": "Los datos muestran una mejora temporal asociada al periodo de implementación, pero no permiten atribuir todo el cambio exclusivamente a la estrategia porque ocurrieron otras modificaciones que también podrían influir.",
+    "C": "El aumento no puede considerarse real porque una tasa solo es válida si supera 75 %.",
+    "D": "La estrategia necesariamente tuvo efecto nulo porque no existe un grupo control en toda evaluación educativa."
+  },
+  "correctAnswer": "B",
+  "explanations": {
+    "A": "Confunde secuencia temporal con demostración de causalidad exclusiva.",
+    "B": "Es la mejor respuesta porque reconoce el cambio observado y limita la inferencia causal frente a factores concurrentes.",
+    "C": "No existe un umbral general de 75 % para reconocer un cambio en una tasa.",
+    "D": "La ausencia de un grupo control limita la fuerza de una inferencia causal, pero no demuestra que el efecto sea nulo."
+  },
+  "hint": "Distingue entre observar que dos hechos ocurrieron en el mismo periodo y demostrar que uno explica por sí solo el otro.",
+  "learningNote": "El razonamiento cuantitativo también exige evaluar argumentos basados en datos. Una mejora antes/después puede ser informativa, pero la atribución causal requiere considerar factores concurrentes y el diseño de la evidencia.",
+  "source": {
+    "reference": "ICFES, Marco de referencia del módulo Razonamiento Cuantitativo, competencia de argumentación"
+  },
+  "estimatedDifficulty": "high"
+}
