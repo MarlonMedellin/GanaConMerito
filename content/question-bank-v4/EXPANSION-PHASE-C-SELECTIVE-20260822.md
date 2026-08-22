@@ -2,53 +2,60 @@
 
 **Rama:** `v4-post-sprint48-expansion`  
 **Fecha:** 2026-08-22  
-**Base de rama:** 254 reactivos aprobados tras cierre de Fase B  
-**Estado:** **C1 AUDITADA Y CERRADA — 4/4 APPROVED**  
-**C1:** `DOC-001291`–`DOC-001294`  
-**Corpus tras C1:** 258 reactivos  
+**Base de rama:** 254 reactivos aprobados tras Fase B  
+**Estado:** **C1 CERRADA TRAS AUDITORÍA AMPLIADA**  
+**Resultado neto:** 2 reactivos nuevos + 2 reclasificaciones  
+**Corpus final C1:** **256 reactivos**  
 **Auditoría:** [`AUDIT-PHASE-C1-20260822.md`](./AUDIT-PHASE-C1-20260822.md)
 
 ## Justificación
 
-Tras Fase B, `desarrollo_aprendizaje` tenía 13 reactivos y permanecía entre los dominios con menor representación. C1 se limitó a cuatro constructos con utilidad docente clara y soporte académico verificable.
+Tras Fase B, `desarrollo_aprendizaje` tenía 13 reactivos. C1 investigó procesos de aprendizaje y cambio cognitivo y abrió el tópico `aprendizaje_y_desarrollo_cognitivo` porque los tópicos anteriores no describían honestamente estos constructos.
 
-El tópico `aprendizaje_y_desarrollo_cognitivo` se incorporó porque ninguno de los tópicos anteriores describía honestamente estos procesos. Reutilizar `planeacion_curricular`, `comprension_lectora` o `evaluacion_formativa` habría falseado el constructo.
+La auditoría ampliada mostró que dos oportunidades ya estaban cubiertas por V4 pero clasificadas bajo tópicos genéricos. Por ello C1 se cerró sin fabricar sustitutos para completar una cuota.
 
-## C1 ejecutada
+## Resultado final C1
 
-| ID | Constructo | Fuente rectora | Clave | Auditoría |
-|---|---|---|---|---|
-| `DOC-001291` | ZDP, apoyo temporal y retirada progresiva | OpenStax, Vygotsky/ZDP/scaffolding | A | APPROVED |
-| `DOC-001292` | conocimiento previo y aprendizaje significativo | Agra et al.; Bryce & Blown / Ausubel | B | APPROVED |
-| `DOC-001293` | asimilación y acomodación de esquemas | OpenStax / Piaget | C | APPROVED |
-| `DOC-001294` | metacognición: planificar, monitorear y evaluar | EEF 2025 | D | APPROVED |
+| ID | Constructo | Acción | Estado |
+|---|---|---|---|
+| `DOC-001104` | ZDP y mediación | reclasificar desde `pedagogia/planeacion_curricular` | APPROVED existente |
+| `DOC-001110` | metacognición | reclasificar desde `pedagogia/evaluacion_formativa` | APPROVED existente |
+| `DOC-001292` | conocimiento previo y aprendizaje significativo | nuevo | APPROVED |
+| `DOC-001293` | asimilación y acomodación | nuevo | APPROVED |
+| `DOC-001291` | ZDP y apoyo temporal | retirar por duplicación con 104 | REJECTED |
+| `DOC-001294` | metacognición y autorregulación | retirar por duplicación con 110 | REJECTED |
 
-## Resultado de cobertura
+## Fuentes rectoras
 
-- corpus: **254 → 258**;
+- Vygotsky / `DOC-001104`: *Mind in Society*, pp. 86–87.
+- EEF 2025 / `DOC-001110`: *Metacognition and Self-Regulated Learning*, 2.ª edición.
+- Agra et al. (2019) y Bryce & Blown (2024) / `DOC-001292`: aprendizaje significativo y conocimiento previo.
+- OpenStax / `DOC-001293`: asimilación y acomodación en Piaget.
+
+## Cobertura final C1
+
+- corpus: **254 → 256**;
+- `pedagogia`: **10 → 8**;
 - `desarrollo_aprendizaje`: **13 → 17**;
-- `aprendizaje_y_desarrollo_cognitivo`: **0 → 4**;
-- claves C1: **A=1, B=1, C=1, D=1**;
-- outliers de longitud de clave (>1,65 × mediana de distractores): **0**.
+- `aprendizaje_y_desarrollo_cognitivo`: **4**;
+- `planeacion_curricular`: **57 → 56**;
+- `evaluacion_formativa`: **24 → 23**.
 
 Snapshot: `COVERAGE-AFTER-PHASE-C1-20260822.json`.
 
-## Fuentes verificadas
+## IDs y no reutilización
 
-- OpenStax, *Lifespan Development*: ZDP, apoyo de adulto/par más capaz y scaffolding como soporte; asimilación y acomodación como ajuste de esquemas.
-- Agra et al. (2019), revisión de aprendizaje significativo a la luz de Ausubel.
-- Bryce & Blown (2024), revisión contemporánea de la teoría de aprendizaje significativo.
-- Education Endowment Foundation (2025), *Metacognition and Self-Regulated Learning*, 2.ª edición.
+Los candidatos `DOC-001291` y `DOC-001294` fueron serializados durante la primera iteración y luego rechazados al detectar duplicación conceptual. Se retiran y sus IDs quedan consumidos/no reutilizables. Los nuevos aprobados son `DOC-001292` y `DOC-001293`. El siguiente ID nunca usado es `DOC-001295`.
 
-## Gates heredados
+## Aprendizaje de proceso
 
-1. Auditoría individual previa a serialización.
-2. IDs inmutables y no reutilizables.
-3. Control de posición de claves a nivel de lote sin determinar la respuesta por posición.
-4. Gate de pistas de forma y longitud.
-5. Fuente verificable y vigente.
-6. No crear tópico nuevo si un valor existente describe honestamente el constructo.
+La deduplicación no puede apoyarse solo en similitud literal del escenario. Desde C1, el gate debe consultar también:
+
+1. constructo y autor/teoría;
+2. informes de lotes anteriores;
+3. `source.reference` y términos conceptuales;
+4. escenarios semánticamente distintos que midan la misma decisión.
 
 ## Gate antes de C2
 
-**C2 no está autorizado por anticipado.** El próximo paso es recalcular la cobertura de los 258 reactivos y decidir si persiste otro vacío selectivo con retorno suficiente. El siguiente ID nunca usado es `DOC-001295`.
+**No existe C2 autorizado por anticipado.** Debe revisarse la cobertura corregida de 256 reactivos y abrir otra expansión solo si existe un vacío de alto valor que no esté ya cubierto por otro dominio o tópico.
