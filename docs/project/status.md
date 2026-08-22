@@ -24,9 +24,9 @@ El runtime publico canonico responde en `https://ganaconmerito.com` y reporta el
 `e43f612` con build time `2026-08-21 03:51:03 +0000 UTC`. El smoke publico de
 login y configuracion paso el 2026-08-22.
 
-El ultimo corte editorial aprobado validado es `9429c55`; `master` puede contener
-lotes posteriores en curso. El runtime mantiene un drift amplio frente al repositorio.
-commits detras de esa base, incluyendo el bloque de seguridad ya publicado.
+El corte editorial aprobado está congelado en 224 reactivos sobre `98e65f8`.
+La expansión posterior trabaja en `v4-post-sprint48-expansion`; el runtime mantiene
+un drift amplio frente al repositorio.
 La administracion de VPS no fue verificada porque la huella SSH presentada cambio
 y debe confirmarse antes de aceptar la conexion.
 
@@ -48,8 +48,8 @@ ventana controlada.
 - `/api/session/item` devuelve `rationale` antes de responder.
 - La app sigue leyendo `v_item_bank_active`/`item_bank` con fallback legacy y no
   consume de forma nativa todos los campos V4.
-- El banco V4 tiene 150 reactivos estructuralmente validos y aprobados al corte
-  `9429c55`; los lotes posteriores no se cuentan hasta su cierre. Mantiene cero
+- El banco V4 tiene 224 reactivos estructuralmente validos y aprobados al corte
+  congelado; los lotes posteriores no se cuentan hasta su cierre. Mantiene cero
   documentos en `sources/`;
   calidad editorial no equivale a fuente normativa verificada.
 - Persisten contratos y validaciones parcialmente narrativas fuera del baseline canonico.
@@ -87,7 +87,8 @@ contratos de practica/Tutor y runtime publico canonico auditados. VPS admin no v
 
 **Bloque actual en repo:** Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (en ejecución).
 
-**Estado del bloque actual:** Bloque 0 publicado; Bloque 1 en curso.
+**Estado del bloque actual:** Bloques 0 y 1 implementados y validados en repo;
+aplicación remota pendiente. Bloque 2 en curso.
 
 **Sprint anterior cerrado:** Sprint 46 — Cierre normativo del Tutor GCM.
 
@@ -109,7 +110,7 @@ contratos de practica/Tutor y runtime publico canonico auditados. VPS admin no v
 - El P0 de exposicion de respuestas precede importacion, corte V4 e integracion LLM.
 
 ### Evidencia y limites
-- Al corte actual hay 150 archivos V4 estructuralmente válidos y con evidencia
+- Al corte congelado hay 224 archivos V4 estructuralmente válidos y con evidencia
   cerrada para el plan de importación. No se revisaron items individuales.
 - El contraste Supabase fue de lectura publica, no administrativo.
 - No se aplicaron migraciones, no se importaron filas y no se desplego codigo.

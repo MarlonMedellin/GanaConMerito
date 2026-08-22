@@ -53,6 +53,21 @@ last_reviewed: 2026-08-22
 - limitaciones: los lotes editoriales abiertos no se consideran aprobados ni importables;
   Gate 1 remoto sigue abierto hasta aplicar/verificar `0021` en Supabase.
 
+## 2026-08-22 — Corte V4 congelado 224/224
+- tipo: content+governance+test
+- modulo: question-bank-v4/import
+- resumen: Se congela `master` en 224 reactivos aprobados y se mueve la expansión
+  posterior a `v4-post-sprint48-expansion`. El importador reconoce actas cerradas
+  solo cuando rangos, microbloques y conteos coinciden.
+- agente: Codex
+- via: Codex Desktop / repositorio local
+- contributor: Marlon Medellin
+- environment: WSL local / master
+- validacion: V4 224/224 PASS; dry-run 224 candidatos con hash
+  `af6f87601015cdf05e47575cbe05896a21860741c30e05ef87d907f4cd148195`;
+  pruebas de fases abiertas/cerradas PASS
+- runtime-verified: no; migraciones e importación remota pendientes
+
 ## 2026-08-22 — Sprint 48 Bloque 0 en repo
 - tipo: security+database+api+test
 - modulo: question-bank/session/tutor/dashboard

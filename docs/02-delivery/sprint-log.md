@@ -25,10 +25,10 @@ last_reviewed: 2026-08-22
 
 ## Current delivery state
 - **Current operational block**: Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (en ejecución; Bloque 0 en repo).
-- **Último corte editorial aprobado validado**: `9429c55` en `master`; Bloque 0 publicado en `f977d46`, dominio canónico en `7f73f32` e importador en `420f1bf`.
+- **Corte editorial congelado y validado**: 224 reactivos en `master`; Bloque 0 publicado en `f977d46`, dominio canónico en `7f73f32`, importador base en `420f1bf` y congelación operativa en `98e65f8`.
 - **Public runtime canonico**: `https://ganaconmerito.com`; commit visible `e43f612`, smoke publico PASS el 2026-08-22, sin nueva E2E autenticada.
 - **Supabase publico**: 121 filas visibles en `item_bank`: 120 legacy y 1 V4; existe exposicion P0 de clave/explicacion.
-- **V4 local**: 150 reactivos estructuralmente válidos y aprobados para importación;
+- **V4 local**: 224 reactivos estructuralmente válidos y aprobados para importación;
   1 V4 observado en Supabase.
 - **Governance Hardening Roadmap state**: Fase 1 y Fase 2 iniciadas; Fase 3 en ejecucion documental (reduccion y clasificacion), Fases 4-5 futuras.
 - **Open risks**:
@@ -45,7 +45,7 @@ last_reviewed: 2026-08-22
   - el frente normativo sigue en `synthesized_governed_unverified` hasta cargar anexos oficiales suficientes.
 
 ## Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow
-- **Estado**: EN EJECUCIÓN; BLOQUE 0 PUBLICADO EN REPO, BLOQUE 1 EN CURSO
+- **Estado**: EN EJECUCIÓN; BLOQUES 0–1 VALIDADOS EN REPO, APLICACIÓN REMOTA PENDIENTE; BLOQUE 2 EN CURSO
 - **Fecha de definicion**: 2026-08-22
 - **Rama canonica**: `master`
 - **Objetivo**: cortar la lectura runtime a V4 y ejecutar OpenRouter en shadow con
@@ -68,6 +68,8 @@ last_reviewed: 2026-08-22
   implementados; typecheck y pruebas específicas PASS.
 - Importador idempotente y migración `0021` implementados; dry-run reproduce el
   conjunto aprobado y deja fuera cualquier lote sin cierre editorial.
+- Plan congelado 224/224: hash
+  `af6f87601015cdf05e47575cbe05896a21860741c30e05ef87d907f4cd148195`.
 
 ### Limitaciones
 - VPS administrativo no verificado por cambio de huella SSH.

@@ -22,6 +22,19 @@ export interface V4ImportPlan {
   planHash: string;
 }
 
+function expandItemRange(startId: string, endId: string, expectedCount: number): string[] | null {
+  const start = startId.match(/^((?:DOC|GEN)-)(\d{6})$/);
+  const end = endId.match(/^((?:DOC|GEN)-)(\d{6})$/);
+  if (!start || !end || start[1] !== end[1]) return null;
+  const startNumber = Number(start[2]);
+  const endNumber = Number(end[2]);
+  if (endNumber < startNumber || endNumber - startNumber + 1 !== expectedCount) return null;
+  return Array.from(
+    { length: expectedCount },
+    (_, offset) => `${start[1]}${String(startNumber + offset).padStart(6, "0")}`,
+  );
+}
+
 function parseCsv(input: string): string[][] {
   const rows: string[][] = [];
   let row: string[] = [];
@@ -69,24 +82,34 @@ export function collectApprovalEvidence(
   for (const document of expansionDocuments) {
     const hasExplicitClosure = /\*\*Estado:\*\*\s*APPROVED\s*\/\s*CERRADO/i.test(document.content);
     const approvedCountMatch = document.content.match(/Se aprobaron y serializaron\s+(\d+)\s+reactivos/i);
-    const hasNarrativeClosure = Boolean(approvedCountMatch);
-    if (!hasExplicitClosure && !hasNarrativeClosure) continue;
+    const phaseCountMatch = document.content.match(/\*\*Expansión:\*\*\s*\+(\d+)\s+reactivos aprobados/i);
+    const hasCompletedPhase = /\*\*Estado:\*\*\s*COMPLETADO/i.test(document.content)
+      && Boolean(phaseCountMatch);
+    if (!hasExplicitClosure && !approvedCountMatch && !hasCompletedPhase) continue;
     let ids = [...new Set(document.content
       .split(/\r?\n/)
       .map((line) => line.match(/^\|\s*((?:DOC|GEN)-\d{6})\s*\|/)?.[1])
       .filter((itemId): itemId is string => Boolean(itemId)))];
     if (ids.length === 0 && approvedCountMatch) {
       const range = document.content.match(/Rango:\s*`?((?:DOC|GEN)-(\d{6}))`?\s*[–-]\s*`?((?:DOC|GEN)-(\d{6}))`?/i);
-      if (!range || range[1].slice(0, 3) !== range[3].slice(0, 3)) continue;
-      const prefix = range[1].slice(0, 3);
-      const start = Number(range[2]);
-      const end = Number(range[4]);
-      const expectedCount = Number(approvedCountMatch[1]);
-      if (end < start || end - start + 1 !== expectedCount) continue;
-      ids = Array.from(
-        { length: expectedCount },
-        (_, offset) => `${prefix}-${String(start + offset).padStart(6, "0")}`,
+      const expanded = range
+        ? expandItemRange(range[1], range[3], Number(approvedCountMatch[1]))
+        : null;
+      if (!expanded) continue;
+      ids = expanded;
+    }
+    if (ids.length === 0 && hasCompletedPhase && phaseCountMatch) {
+      const expandedRanges: string[] = [];
+      const rangeRows = document.content.matchAll(
+        /^\|\s*[A-Z]\d+\s*\|\s*`?((?:DOC|GEN)-\d{6})`?\s*[–-]\s*`?((?:DOC|GEN)-\d{6})`?\s*\|\s*(\d+)\s*\|/gim,
       );
+      for (const rangeRow of rangeRows) {
+        const expanded = expandItemRange(rangeRow[1], rangeRow[2], Number(rangeRow[3]));
+        if (!expanded) { expandedRanges.length = 0; break; }
+        expandedRanges.push(...expanded);
+      }
+      if (expandedRanges.length !== Number(phaseCountMatch[1])) continue;
+      ids = [...new Set(expandedRanges)];
     }
     const batch = document.content.match(/(?:\*\*Batch:\*\*|^Lote:)\s*`([^`]+)`/im)?.[1]
       ?? document.sourcePath;
@@ -109,7 +132,11 @@ async function jsonFiles(directory: string): Promise<string[]> {
 export async function buildV4ImportPlan(repoRoot: string): Promise<V4ImportPlan> {
   const bankRoot = path.join(repoRoot, "content/question-bank-v4");
   const rootEntries = await fs.readdir(bankRoot);
-  const expansionPaths = rootEntries.filter((name) => /^EXPANSION-BATCH-.*\.md$/.test(name)).sort().map((name) => path.join(bankRoot, name));
+  const expansionPaths = rootEntries
+    .filter((name) => /^EXPANSION-BATCH-.*\.md$/.test(name)
+      || /^EXPANSION-PHASE-.*-CLOSURE-.*\.md$/.test(name))
+    .sort()
+    .map((name) => path.join(bankRoot, name));
   const [itemPaths, legacyRegister, expansionDocuments, domains, topics, competencies, questionTypes] = await Promise.all([
     jsonFiles(path.join(bankRoot, "items")),
     fs.readFile(path.join(bankRoot, "legacy-processing-register.csv"), "utf8"),

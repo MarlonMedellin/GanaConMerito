@@ -18,7 +18,7 @@ related:
 
 ## Estado
 
-**EN EJECUCIÓN — BLOQUE 0 PUBLICADO; BLOQUE 1 IMPLEMENTADO EN REPO, APLICACIÓN REMOTA PENDIENTE.**
+**EN EJECUCIÓN — BLOQUES 0–1 VALIDADOS EN REPO; APLICACIÓN REMOTA PENDIENTE; BLOQUE 2 EN CURSO.**
 
 ## Objetivo
 
@@ -79,7 +79,8 @@ contrato y los catálogos, exige evidencia machine-checkable en el registro lega
 o en un lote `APPROVED / CERRADO`, calcula hash reproducible y usa la RPC `0021`
 service-only. El lote editorial 07 ya cerró; la aplicación Supabase sigue pendiente.
 El dry-run se recalcula contra cada corte online; no fija un total estático en el
-contrato. El último corte verificado se registra en el change-log.
+contrato. El corte congelado del Sprint 48 contiene 224/224 candidatos y plan hash
+`af6f87601015cdf05e47575cbe05896a21860741c30e05ef87d907f4cd148195`.
 
 1. Unificar las validaciones de `content:validate:v4`, `--dry-run` y `--apply`.
 2. Parsear y validar `legacy-processing-register.csv`.

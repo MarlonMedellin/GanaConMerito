@@ -80,6 +80,44 @@ test("a range whose size differs from the approved count authorizes nothing", ()
   assert.equal(evidence.size, 0);
 });
 
+test("a completed phase closure authorizes only count-matched microblock ranges", () => {
+  const evidence = collectApprovalEvidence(
+    "batch_id,factory_decision,audit_decision,v4_item_id,v4_item_path,status\n",
+    [{
+      sourcePath: "content/question-bank-v4/EXPANSION-PHASE-A-CLOSURE-4.md",
+      content: [
+        "**Estado:** COMPLETADO",
+        "**Expansión:** +4 reactivos aprobados",
+        "| Bloque | Rango | Nuevos | Núcleo |",
+        "|---|---|---:|---|",
+        "| A1 | `DOC-123470`–`DOC-123471` | 2 | uno |",
+        "| A2 | `DOC-123472`–`DOC-123473` | 2 | dos |",
+      ].join("\n"),
+    }],
+  );
+
+  assert.deepEqual(
+    [...evidence.keys()],
+    ["DOC-123470", "DOC-123471", "DOC-123472", "DOC-123473"],
+  );
+});
+
+test("an incomplete phase never authorizes its planned ranges", () => {
+  const evidence = collectApprovalEvidence(
+    "batch_id,factory_decision,audit_decision,v4_item_id,v4_item_path,status\n",
+    [{
+      sourcePath: "content/question-bank-v4/EXPANSION-PHASE-A-PLAN.md",
+      content: [
+        "**Estado:** EN EJECUCIÓN",
+        "**Meta:** +4 reactivos aprobados",
+        "| A1 | `DOC-123470`–`DOC-123473` | 4 | uno |",
+      ].join("\n"),
+    }],
+  );
+
+  assert.equal(evidence.size, 0);
+});
+
 test("V4 upsert remains service-only, idempotent and inactive by default", async () => {
   const migration = await readFile(
     "supabase/migrations/0021_upsert_question_bank_v4.sql",
