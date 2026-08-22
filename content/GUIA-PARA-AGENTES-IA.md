@@ -24,6 +24,25 @@ content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv
 4. Consultar `content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv`.
 5. Usar `content/items/beta-v1/` solo para preguntas materializadas.
 6. Usar `content/items/no-beta-v1/` solo como archivo historico o fuente de remanufactura.
+7. Para procesar un registro legacy hacia V4, leer las cuatro especificaciones de
+   `docs/ai/skills/` y aplicar el par adecuado de fabrica y auditor.
+
+## Protocolo V4 para registros legacy
+
+El material legacy de preguntas se revisa **uno por uno**, sin migrar ni reparar
+el item anterior. La fabrica correspondiente usa unicamente contexto, enunciado y
+tematica recuperable para decidir `PRODUCE` o `DISCARD`. Si produce, el auditor
+adversarial correspondiente emite `APPROVED` o `REJECTED`; solo `APPROVED` puede
+guardarse como un nuevo archivo en `content/question-bank-v4/`.
+
+| Ambito | Fabrica | Auditor |
+|---|---|---|
+| Docentes | `GCM-Master-Question-Factory-Docentes.md` | `GCM-Adversarial-Item-Auditor-Docentes.md` |
+| OPEC general/especifica | `GCM-Master-Question-Factory-OPEC-General.md` | `GCM-Adversarial-Item-Auditor-OPEC-General.md` |
+
+No marques un registro como procesado ni lo muevas hasta que exista un resultado
+cerrado. Este protocolo cubre contenido editorial legacy; no es una instruccion
+para refactorizar codigo fuente legacy.
 
 ## Mapa de rutas
 

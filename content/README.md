@@ -2,6 +2,22 @@
 
 Carpeta raiz del banco de preguntas, fuentes y perfiles de Gana con Merito.
 
+## Banco maestro V4 y revision de material legacy
+
+`content/question-bank-v4/` recibe reactivos nuevos generados desde cero a partir
+de registros legacy. La revision es obligatoria y se realiza de uno en uno con la
+suite en `docs/ai/skills/`:
+
+- Docentes: `GCM-Master-Question-Factory-Docentes` →
+  `GCM-Adversarial-Item-Auditor-Docentes`.
+- OPEC general/especifica: `GCM-Master-Question-Factory-OPEC-General` →
+  `GCM-Adversarial-Item-Auditor-OPEC-General`.
+
+La entrada legacy solo aporta contexto, enunciado y tema recuperable. Opciones,
+claves, explicaciones, metadatos y fuentes no verificadas no se migran. Solo se
+serializa un reactivo con veredicto `APPROVED`; los demas se descartan. Esta regla
+aplica al contenido legacy del banco, no al codigo fuente legacy de la aplicacion.
+
 ## Fuente por defecto v3
 
 El banco editorial por defecto para nuevas preguntas por OPEC es:
@@ -32,6 +48,8 @@ content/
     no-beta-v1/    Material historico, previo o pendiente.
   question-bank-v3/
     opecs/         Nueva fuente editorial por OPEC, limpia y sin legacy.
+  question-bank-v4/
+    items/         Reactivos nuevos, creados y auditados por la suite V4.
   normative/       Soporte normativo.
   profiles/        Definicion de perfiles y vistas; no duplica banco.
   restructuring-v1/

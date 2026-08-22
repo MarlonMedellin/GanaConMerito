@@ -14,6 +14,22 @@ Regla central:
 > **Rescatar conocimiento útil, no preguntas antiguas.**
 > Una pregunta sale completa o no sale (`DISCARD`).
 
+## Suite V4 obligatoria
+
+Todo registro legacy de preguntas debe pasar por el par de skills adecuado,
+ubicado en `docs/ai/skills/`:
+
+| Ambito | Produccion | Revision independiente |
+|---|---|---|
+| Docentes | `GCM-Master-Question-Factory-Docentes.md` | `GCM-Adversarial-Item-Auditor-Docentes.md` |
+| OPEC general/especifica | `GCM-Master-Question-Factory-OPEC-General.md` | `GCM-Adversarial-Item-Auditor-OPEC-General.md` |
+
+La fabrica decide `PRODUCE` o `DISCARD`; el auditor decide `APPROVED` o
+`REJECTED`. La serializacion en este banco requiere ambos resultados positivos.
+El registro anterior no se repara: sus opciones, clave, explicaciones, metadatos
+e identificadores quedan fuera del proceso. Esta suite revisa contenido editorial
+legacy, no codigo fuente legacy de la aplicacion.
+
 ## Estructura
 
 ```text

@@ -19,6 +19,14 @@ last_reviewed: 2026-08-11
 - Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
 - Update trigger: governance, delivery, documentation, drift
 
+## 2026-08-21
+- tipo: docs+editorial-governance
+- modulo: question-bank-v3/question-bank-v4/legacy
+- resumen: Se documenta la suite V4 de cuatro skills como protocolo obligatorio para revisar registros legacy de preguntas uno por uno: fabrica desde cero seguida de auditoria adversarial independiente. Solo los reactivos nuevos con `PRODUCE` y `APPROVED` pueden serializarse en `question-bank-v4`; no se migran claves, opciones ni explicaciones legacy.
+- agente: Codex
+- validacion: `python3 scripts/validate_docs.py`, `git diff --check`
+- relacionados: AGENTS.md, content/README.md, content/GUIA-PARA-AGENTES-IA.md, content/question-bank-v3/PROMPTS-PROCESAMIENTO.md, content/question-bank-v4/README.md, docs/ai/skills/
+
 ## 2026-08-19
 - tipo: feat+qa+fallback
 - modulo: tutor/practice/prd

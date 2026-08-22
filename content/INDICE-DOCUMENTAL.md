@@ -24,6 +24,11 @@ Este indice resume como estan organizados los Markdown de `content` y como debe 
 | `content/GUIA-PARA-AGENTES-IA.md` | Reglas para agentes e IA |
 | `content/REVISION-MD-CONTENT.md` | Inventario y evidencia de revision de Markdown |
 | `content/MANIFIESTO-SANEAMIENTO-BETA.md` | Cierre ejecutivo del saneamiento |
+| `content/question-bank-v4/README.md` | Banco maestro V4 y reglas de entrada de reactivos nuevos |
+| `docs/ai/skills/GCM-Master-Question-Factory-Docentes.md` | Fabrica desde cero para registros legacy docentes |
+| `docs/ai/skills/GCM-Adversarial-Item-Auditor-Docentes.md` | Auditoria adversarial de reactivos docentes nuevos |
+| `docs/ai/skills/GCM-Master-Question-Factory-OPEC-General.md` | Fabrica desde cero para registros legacy OPEC |
+| `docs/ai/skills/GCM-Adversarial-Item-Auditor-OPEC-General.md` | Auditoria adversarial de reactivos OPEC nuevos |
 | `content/items/README.md` | Como navegar preguntas beta y no beta |
 | `content/items/beta-v1/README.md` | Regla de la cohorte piloto |
 | `content/items/no-beta-v1/README.md` | Regla del material fuera de beta |
@@ -47,6 +52,7 @@ Los Markdown de lotes, reportes acumulados, manifiestos de microbloques y pregun
 | Normativa | `content/normative/*.md` | Referencia resumida para justificar preguntas |
 | Fase 2/3/5/5B | `content/restructuring-v1/consolidacion/` | Historial de curacion |
 | Trazabilidad por lote | `content/restructuring-v1/trazabilidad/lotes/` | Evidencia de decisiones |
+| Skills V4 | `docs/ai/skills/` | Proceso obligatorio para reconstruir y auditar registros legacy uno por uno |
 
 ## Criterio de precedencia
 

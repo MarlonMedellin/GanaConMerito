@@ -34,6 +34,19 @@ Para cualquier tarea sobre preguntas, `content` o curacion editorial, leer prime
 4. `content/REVISION-MD-CONTENT.md`
 5. `content/MANIFIESTO-SANEAMIENTO-BETA.md`
 
+Para revisar material legacy del banco mediante IA, consultar tambien:
+
+6. `docs/ai/skills/GCM-Master-Question-Factory-Docentes.md`
+7. `docs/ai/skills/GCM-Adversarial-Item-Auditor-Docentes.md`
+8. `docs/ai/skills/GCM-Master-Question-Factory-OPEC-General.md`
+9. `docs/ai/skills/GCM-Adversarial-Item-Auditor-OPEC-General.md`
+
+Regla V4: todo registro legacy de preguntas se procesa de uno en uno. La fabrica
+aplicable crea un reactivo nuevo desde cero o lo descarta; el auditor adversarial
+correspondiente debe aprobarlo antes de serializarlo en `content/question-bank-v4/`.
+No se corrigen ni se migran opciones, claves, explicaciones o metadatos legacy.
+Este alcance editorial no autoriza cambios al codigo fuente legacy de la aplicacion.
+
 Rutas canonicas:
 
 | Necesidad | Ruta |

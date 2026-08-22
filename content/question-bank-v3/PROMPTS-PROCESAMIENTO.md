@@ -1,8 +1,14 @@
 # Prompts de procesamiento legacy → question-bank-v4
 
 Prompts operativos para convertir las entradas legacy de `content/question-bank-v3/`
-en preguntas nuevas del banco maestro `content/question-bank-v4/`, mediante el skill
-**GCM Master Question Factory — Docentes** (`gcm-master-question-factory-docentes`).
+en preguntas nuevas del banco maestro `content/question-bank-v4/`, mediante el
+par obligatorio **GCM Master Question Factory — Docentes** y **GCM Adversarial
+Item Auditor — Docentes**. Para contenido OPEC general/especifico, se usan los
+dos skills equivalentes OPEC ubicados en `docs/ai/skills/`.
+
+La fabrica decide `PRODUCE` o `DISCARD`. Ninguna salida `PRODUCE` se serializa
+sin un veredicto independiente `APPROVED` del auditor. El protocolo se aplica a
+todo registro legacy de preguntas, uno por uno; no al codigo fuente legacy.
 
 ## Prerrequisitos
 
@@ -100,7 +106,9 @@ Trabaja en /home/ubuntu/.openclaw/product y respeta AGENTS.md. Protocolo estrict
    a) Si devolvió preguntas: valida cada una contra el contrato canónico
       (15 campos exactos, opciones y explicaciones A–D completas, una única
       mejor respuesta, valores de taxonomy/). Revisa además que no dupliquen
-      conceptualmente preguntas ya guardadas (skill §30). Las que pasen:
+      conceptualmente preguntas ya guardadas (skill §30). Envia cada candidata al
+      auditor adversarial aplicable; solo las que reciban `APPROVED` pasan a
+      serializacion. Las que pasen:
       asigna el siguiente id disponible leyendo
       content/question-bank-v4/items/docentes/ y guarda UN JSON por pregunta
       (el nombre del archivo = id). Las que no pasen: no las guardes.
