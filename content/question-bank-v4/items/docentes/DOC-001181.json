@@ -1,0 +1,30 @@
+{
+  "id": "DOC-001181",
+  "scope": "general",
+  "domain": "gestion_educativa",
+  "topic": "evaluacion_formativa",
+  "competency": "analisis_de_evidencia",
+  "questionType": "reading_analysis",
+  "cognitiveLevel": "analyze",
+  "context": "Un PMI establece la meta 'mejorar la asistencia'. Al hacer seguimiento, el equipo solo registra que se realizaron tres campañas de sensibilización, pero no compara las tasas de inasistencia ni analiza qué estudiantes continúan ausentándose o por qué.",
+  "stem": "¿Qué modificación haría más útil el seguimiento para la toma de decisiones?",
+  "options": {
+    "A": "Aumentar el número de campañas y usar su cantidad como indicador principal, porque ejecutar más actividades demuestra automáticamente mayor impacto.",
+    "B": "Mantener el registro de actividades y esperar al final de varios años antes de revisar resultados para evitar cambios prematuros en el plan.",
+    "C": "Definir indicadores de resultado y proceso vinculados a la meta, comparar periódicamente la evidencia con una línea de base, analizar diferencias y ajustar las acciones cuando los datos muestren que no producen el avance esperado.",
+    "D": "Eliminar la meta cuantificable y reemplazarla por una descripción general del compromiso institucional con la asistencia para evitar interpretaciones negativas de los datos."
+  },
+  "correctAnswer": "C",
+  "explanations": {
+    "A": "Contar actividades informa sobre ejecución, pero no permite inferir por sí solo si la asistencia mejoró ni qué grupos requieren otra respuesta.",
+    "B": "El seguimiento permanente existe para detectar avances y dificultades durante la implementación y permitir ajustes oportunos, no solo para documentar el cierre.",
+    "C": "Es la mejor respuesta porque conecta metas, indicadores, línea de base, análisis periódico y decisiones de ajuste, transformando el seguimiento en un proceso de aprendizaje institucional.",
+    "D": "Eliminar indicadores reduce la posibilidad de verificar avances y debilita la rendición de cuentas sobre el resultado que se pretende mejorar."
+  },
+  "hint": "Distingue entre comprobar que una actividad ocurrió y comprobar si esa actividad contribuyó al resultado que justificó el plan.",
+  "learningNote": "El seguimiento del PMI debe observar tanto la ejecución como los resultados. Comparar indicadores con una línea de base y revisar periódicamente la evidencia permite identificar desviaciones, comprender causas y ajustar las acciones antes de que el plan se convierta en un simple registro de actividades realizadas.",
+  "source": {
+    "reference": "Ministerio de Educación Nacional, Guía N.° 34: Guía para el mejoramiento institucional, etapa de seguimiento permanente al plan de mejoramiento"
+  },
+  "estimatedDifficulty": "medium"
+}
