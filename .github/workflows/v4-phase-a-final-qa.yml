@@ -1,0 +1,78 @@
+name: V4 phase A final strict QA
+
+on:
+  push:
+    paths:
+      - '.github/workflows/v4-phase-a-final-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - name: Validate full V4 and Phase A closure
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, glob, collections, sys, re
+          class DuplicateKeyError(ValueError): pass
+          def strict_pairs(pairs):
+              d={}
+              for k,v in pairs:
+                  if k in d: raise DuplicateKeyError(f'duplicate key: {k}')
+                  d[k]=v
+              return d
+          def load(path):
+              with open(path,encoding='utf-8') as f:return json.load(f,object_pairs_hook=strict_pairs)
+          domains=load('content/question-bank-v4/taxonomy/domains.json')
+          topics=load('content/question-bank-v4/taxonomy/topics.json')
+          competencies=load('content/question-bank-v4/taxonomy/competencies.json')
+          qt=load('content/question-bank-v4/taxonomy/question-types.json')
+          allowed={'domain':set(domains),'topic':set(topics),'competency':set(competencies),'questionType':set(qt['questionTypes']),'cognitiveLevel':set(qt['cognitiveLevels']),'estimatedDifficulty':set(qt['estimatedDifficultyLevels'])}
+          required={'id','scope','domain','topic','competency','questionType','cognitiveLevel','context','stem','options','correctAnswer','explanations','hint','learningNote','source','estimatedDifficulty'}
+          counters={k:collections.Counter() for k in allowed}; errors=[]; ids=[]
+          files=sorted(glob.glob('content/question-bank-v4/items/docentes/*.json'))
+          for p in files:
+              try:d=load(p)
+              except Exception as e:errors.append(f'{p}: parse error: {e}');continue
+              ids.append(d.get('id'))
+              if set(d)!=required: errors.append(f'{p}: top-level keys mismatch: {sorted(set(d)^required)}')
+              if not re.fullmatch(r'DOC-\d{6}',str(d.get('id',''))):errors.append(f'{p}: invalid id')
+              if d.get('scope')!='general':errors.append(f'{p}: unexpected scope={d.get("scope")}')
+              for k,vals in allowed.items():
+                  if d.get(k) not in vals:errors.append(f'{p}: invalid {k}={d.get(k)!r}')
+                  counters[k][d.get(k)]+=1
+              if set(d.get('options',{}))!={'A','B','C','D'}:errors.append(f'{p}: options keys')
+              if set(d.get('explanations',{}))!={'A','B','C','D'}:errors.append(f'{p}: explanation keys')
+              if d.get('correctAnswer') not in {'A','B','C','D'}:errors.append(f'{p}: correctAnswer')
+              for letter in ['A','B','C','D']:
+                  if not isinstance(d.get('options',{}).get(letter),str) or not d['options'][letter].strip():errors.append(f'{p}: empty option {letter}')
+                  if not isinstance(d.get('explanations',{}).get(letter),str) or not d['explanations'][letter].strip():errors.append(f'{p}: empty explanation {letter}')
+              for fld in ['context','stem','hint','learningNote']:
+                  if not isinstance(d.get(fld),str) or not d[fld].strip():errors.append(f'{p}: empty {fld}')
+              if set(d.get('source',{}))!={'reference'} or not isinstance(d.get('source',{}).get('reference'),str) or not d['source']['reference'].strip():errors.append(f'{p}: source')
+          if len(ids)!=len(set(ids)):errors.append('duplicate ids')
+          phase=[f'DOC-{i:06d}' for i in range(1202,1256)]
+          missing=[x for x in phase if x not in ids]
+          if missing:errors.append('Phase A missing ids: '+','.join(missing))
+          if len(files)!=224:errors.append(f'expected 224 items, got {len(files)}')
+          expected_topics={'evaluacion_desempeno_docente':8,'carrera_docente':4,'proteccion_integral':10,'funciones_y_jornada_docente':10,'prae_proyectos_transversales':8,'gobierno_escolar_participacion':8,'ajustes_razonables':7}
+          for k,v in expected_topics.items():
+              got=counters['topic'][k]
+              if got!=v:errors.append(f'expected topic {k}={v}, got {got}')
+          cov={'domains':{k:counters['domain'][k] for k in domains},'topics':{k:counters['topic'][k] for k in topics},'competencies':{k:counters['competency'][k] for k in competencies},'questionTypes':{k:counters['questionType'][k] for k in qt['questionTypes']},'cognitiveLevels':{k:counters['cognitiveLevel'][k] for k in qt['cognitiveLevels']},'estimatedDifficulty':{k:counters['estimatedDifficulty'][k] for k in qt['estimatedDifficultyLevels']}}
+          report={'generatedAt':'2026-08-22','phase':'PHASE-A-54-HIGH-RETURN','baselineItemCount':170,'phaseItemCount':54,'itemCount':len(files),'phaseIds':phase,'errors':errors,'coverage':cov,'topicExpansion':['evaluacion_desempeno_docente','carrera_docente','proteccion_integral','gobierno_escolar_participacion','prae_proyectos_transversales','funciones_y_jornada_docente']}
+          report['missing']={k:[x for x,v in vals.items() if v==0] for k,vals in cov.items() if k!='estimatedDifficulty'}
+          with open('content/question-bank-v4/COVERAGE-AFTER-PHASE-A-20260822.json','w',encoding='utf-8') as f:json.dump(report,f,ensure_ascii=False,indent=2);f.write('\n')
+          print(json.dumps(report,ensure_ascii=False,indent=2))
+          if errors:sys.exit(1)
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content/question-bank-v4/COVERAGE-AFTER-PHASE-A-20260822.json
+          git commit -m 'docs(v4): record final coverage after Phase A 54'
+          git pull --rebase origin master
+          git push origin HEAD:master
