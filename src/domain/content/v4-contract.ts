@@ -11,6 +11,10 @@ export const v4ItemSchema = z.object({
   id: z.string().regex(/^(DOC|GEN)-\d{6}$/),
   scope: z.enum(["general", "opec_specific"]),
   opecId: z.string().trim().min(1).nullable().optional(),
+  // domain / topic / competency / questionType / cognitiveLevel son vocabulario
+  // controlado: deben pertenecer a content/question-bank-v4/taxonomy/*.json.
+  // La verificación autoritativa la ejecuta scripts/validate-question-bank-v4.ts,
+  // que lee esos catálogos y falla ante valores fuera de vocabulario.
   domain: z.string().trim().min(1),
   topic: z.string().trim().min(1),
   competency: z.string().trim().min(1),

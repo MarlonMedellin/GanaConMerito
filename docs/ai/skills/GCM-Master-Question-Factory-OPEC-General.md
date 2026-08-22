@@ -99,6 +99,8 @@ con `scope: "opec_specific"` e ID `OPEC-123456-000001`.
 
 No añadas `title`, `locator`, `url` ni otros campos de fuente dentro del reactivo. La trazabilidad operativa completa puede vivir en `editorialRunContext`; el contrato de pregunta conserva únicamente `source.reference`.
 
+Clasifica `domain`, `topic`, `competency`, `questionType` y `cognitiveLevel` usando EXCLUSIVAMENTE los valores de `content/question-bank-v4/taxonomy/*.json`; no inventes valores nuevos: si un constructo no encaja, usa el valor más cercano y reporta la ampliación propuesta por separado (nunca dentro del ítem).
+
 `PRODUCE` puede devolver un único objeto o un arreglo cuando una misma señal legacy sustenta varios constructos distintos; `DISCARD` es el único retorno de tipo texto. Cada ítem se audita por separado.
 
 La fábrica devuelve el JSON y no escribe archivos. La serialización —asignar el `id` definitivo y persistir en el banco— la ejecuta el orquestador únicamente tras `APPROVED`. El `id` del contrato es una propuesta; en fan-out paralelo el orquestador lo asigna de forma central.

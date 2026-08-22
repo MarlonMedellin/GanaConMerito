@@ -76,7 +76,7 @@ No expongas razonamiento privado detallado.
 2. **Scope y OPEC:** las generales deben reutilizarse sin una entidad o función exclusiva. Las específicas deben depender demostrablemente del propósito, función, conocimiento, competencia, proceso o norma aplicable. Rechaza OPEC decorativa.
 3. **Rol docente:** valida atribuciones, nivel de responsabilidad y límites reales. No asignes facultades de directivo, nominador, autoridad disciplinaria o especialista a quien no las tiene.
 4. **Fuente:** `source.reference` debe sostener la condición decisiva, no solo existir. Confirma vigencia, modificación, reglamentación y ámbito. Para normas, exige fuente oficial o autoridad competente.
-5. **Constructo y taxonomía:** identifica qué mide realmente. Debe ser relevante y coincidir con `domain`, `topic`, `competency`, `questionType` y `cognitiveLevel`.
+5. **Constructo y taxonomía:** identifica qué mide realmente. Debe ser relevante y coincidir con `domain`, `topic`, `competency`, `questionType` y `cognitiveLevel`, y que esos cinco valores pertenezcan a `content/question-bank-v4/taxonomy/*.json`.
 6. **Tipos de pregunta:** `technical_applied` solo es válido si exige aplicar conocimiento técnico o disciplinar vinculado con funciones o conocimientos esenciales del empleo para seleccionar un procedimiento, interpretar información o determinar una solución.
 7. **Contexto y stem:** información suficiente, pertinente y consistente; una sola tarea, condición temporal clara y sin supuestos externos.
 8. **Single best answer:** resuelve primero de forma ciega y defiende cada distractor. Si otra opción es razonablemente equivalente, rechaza.

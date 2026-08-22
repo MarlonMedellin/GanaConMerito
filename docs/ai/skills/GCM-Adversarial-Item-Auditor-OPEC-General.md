@@ -80,7 +80,7 @@ No mostrar razonamiento privado detallado.
 4. **Jerarquía y funciones.** Contrasta ficha OPEC/MEFCL/acuerdo/anexo. No apruebes actuación fuera de atribuciones o responsabilidad del nivel.
 5. **Fuente y vigencia.** `source.reference` debe sostener la condición decisiva. Revisa vigencia, modificación, derogatoria, reglamentación y ámbito. Para norma, exige fuente oficial o autoridad competente; ante duda material, rechaza.
 6. **Exactitud y constructo.** Contexto y solución deben ser técnicamente correctos. El ítem debe medir una capacidad relevante, no intuición, memoria irrelevante, pista verbal o estilo.
-7. **Taxonomía.** `domain`, `topic`, `competency`, `questionType` y `cognitiveLevel` deben describir el reactivo real.
+7. **Taxonomía.** `domain`, `topic`, `competency`, `questionType` y `cognitiveLevel` deben describir el reactivo real y pertenecer a `content/question-bank-v4/taxonomy/*.json`.
 8. **Tipos de pregunta.** `technical_applied` solo es válido cuando exige aplicar conocimiento técnico o disciplinar vinculado con funciones o conocimientos esenciales del empleo para seleccionar un procedimiento, interpretar información o determinar una solución.
 9. **Contexto y stem.** Comprueba suficiencia, consistencia, una sola tarea, temporalidad y criterio de decisión claros.
 10. **Ataque ciego a la respuesta.** Busca norma contraria, excepción, procedimiento alterno, función incompatible o distractor equivalentemente defendible antes de ver la clave. Si existe, rechaza.
