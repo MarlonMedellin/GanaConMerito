@@ -1,0 +1,28 @@
+{
+  "id": "DOC-001005",
+  "scope": "general",
+  "domain": "didactica",
+  "topic": "planeacion_curricular",
+  "competency": "decision_pedagogica",
+  "questionType": "situational",
+  "cognitiveLevel": "apply",
+  "context": "En una clase de ciencias, los estudiantes pueden repetir una fórmula relacionada con movimiento, pero al observar una situación cotidiana no logran explicar qué representan sus variables ni cuándo resulta pertinente usarla.",
+  "stem": "¿Qué intervención favorece mejor que ese conocimiento adquiera significado?",
+  "options": {
+    "A": "Aumentar la cantidad de ejercicios idénticos hasta que el procedimiento se ejecute sin consultar apuntes.",
+    "B": "Presentar situaciones observables, recuperar las ideas previas sobre las magnitudes involucradas y pedir que relacionen cada variable y la fórmula con lo que ocurre en esas situaciones.",
+    "C": "Posponer cualquier aplicación hasta que todos memoricen de manera literal la definición de cada símbolo.",
+    "D": "Eliminar temporalmente la expresión matemática y trabajar solo experiencias prácticas para evitar que la formalización interfiera con la comprensión."
+  },
+  "correctAnswer": "B",
+  "explanations": {
+    "A": "La automatización del procedimiento puede mejorar fluidez, pero no resuelve la ausencia de relaciones conceptuales que muestra el caso.",
+    "B": "Es la mejor intervención porque vincula el conocimiento nuevo con ideas previas, significados conceptuales y situaciones reconocibles, permitiendo comprender cuándo y por qué se usa la expresión formal.",
+    "C": "La memorización de símbolos por sí sola no establece relaciones entre el conocimiento formal y los fenómenos que representa.",
+    "D": "La experiencia contextual es valiosa, pero excluir la formalización impide construir precisamente la relación entre representación matemática y fenómeno que se necesita aprender."
+  },
+  "hint": "El problema no es que falte repetición de la fórmula, sino que el estudiante aún no puede relacionarla con significados y situaciones.",
+  "learningNote": "El aprendizaje significativo se fortalece cuando la información nueva se relaciona con conocimientos previos y con contextos donde adquiere utilidad. Comprender una fórmula implica conectar símbolos, conceptos y fenómenos, no escoger entre formalización y experiencia.",
+  "source": {"reference": "MEN, Modelo Aceleración del Aprendizaje, Guía del docente: aprendizaje significativo"},
+  "estimatedDifficulty": "medium"
+}
