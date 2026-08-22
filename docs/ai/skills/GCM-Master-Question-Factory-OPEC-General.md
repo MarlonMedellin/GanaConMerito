@@ -103,7 +103,9 @@ Clasifica `domain`, `topic`, `competency`, `questionType` y `cognitiveLevel` usa
 
 `PRODUCE` puede devolver un único objeto o un arreglo cuando una misma señal legacy sustenta varios constructos distintos; `DISCARD` es el único retorno de tipo texto. Cada ítem se audita por separado.
 
-La fábrica devuelve el JSON y no escribe archivos. La serialización —asignar el `id` definitivo y persistir en el banco— la ejecuta el orquestador únicamente tras `APPROVED`. El `id` del contrato es una propuesta; en fan-out paralelo el orquestador lo asigna de forma central.
+La fábrica devuelve el JSON y no escribe archivos. La serialización —asignar el `id` definitivo y persistir en el banco— la ejecuta el orquestador únicamente tras `APPROVED`. El `id` del contrato es una propuesta; en fan-out paralelo el orquestador lo asigna de forma central. Los `id` son inmutables y no se reutilizan: un `REJECTED` no libera su id.
+
+El orquestador —no la fábrica— registra cada entrada (tanto `PRODUCE` como `DISCARD`) en `content/question-bank-v4/legacy-processing-register.csv`, consignando el agente real en `factory_agent` y `audit_agent`.
 
 ## Disposición de un rechazo posterior
 

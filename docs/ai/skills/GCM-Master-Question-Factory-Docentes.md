@@ -119,7 +119,9 @@ No inventes una fuente, no uses conocimiento no sustentado y no emitas contenido
 
 Clasifica `domain`, `topic`, `competency`, `questionType` y `cognitiveLevel` usando EXCLUSIVAMENTE los valores de `content/question-bank-v4/taxonomy/*.json`; no inventes valores nuevos: si un constructo no encaja, usa el valor más cercano y reporta la ampliación propuesta por separado (nunca dentro del ítem).
 
-La fábrica devuelve el JSON y no escribe archivos. La serialización —asignar el `id` definitivo y persistir en el banco— la ejecuta el orquestador únicamente tras un `APPROVED` del auditor. El `id` del contrato es una propuesta; en fan-out paralelo el orquestador lo asigna de forma central para evitar colisiones.
+La fábrica devuelve el JSON y no escribe archivos. La serialización —asignar el `id` definitivo y persistir en el banco— la ejecuta el orquestador únicamente tras un `APPROVED` del auditor. El `id` del contrato es una propuesta; en fan-out paralelo el orquestador lo asigna de forma central para evitar colisiones. Los `id` son inmutables y no se reutilizan: un `REJECTED` no libera su id.
+
+El orquestador —no la fábrica— registra cada entrada (tanto `PRODUCE` como `DISCARD`) en `content/question-bank-v4/legacy-processing-register.csv`, consignando el agente real en `factory_agent` y `audit_agent`.
 
 ## Disposición de un rechazo posterior
 

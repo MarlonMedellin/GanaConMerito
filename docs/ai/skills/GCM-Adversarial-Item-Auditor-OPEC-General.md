@@ -110,3 +110,5 @@ El auditor informa al orquestador, que debe elegir una sola acción:
 - `ABANDON`: abandonar esa oportunidad editorial.
 
 No almacenes preguntas rechazadas dentro del banco productivo ni crees carpetas `rejected`, `pending` o equivalentes por defecto.
+
+El orquestador —no el auditor— registra el veredicto en `content/question-bank-v4/legacy-processing-register.csv`, consignando el agente real en `audit_agent`. Un `REJECTED` no es terminal: se resuelve con `REGENERATE_FROM_ZERO` (→ `processed_serialized`) o `ABANDON` (→ `processed_discarded`), dejando la cadena de resolución explícita en `notes`.

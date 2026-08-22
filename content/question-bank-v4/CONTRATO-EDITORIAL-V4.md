@@ -136,6 +136,10 @@ Reglas:
 - `status`: `processed_serialized` (aprobado y guardado) o `processed_discarded`.
 - Un `REJECTED` no es estado final: se resuelve con `REGENERATE_FROM_ZERO` (que,
   si aprueba, queda `processed_serialized`) o `ABANDON` (queda `processed_discarded`).
+- Un `DISCARD` y un `ABANDON` comparten `status: processed_discarded`; se distinguen
+  por `factory_decision` (`DISCARD` vs `PRODUCE`) y `audit_decision` (`NOT_APPLICABLE`
+  vs `REJECTED`). La resolución de un `REJECTED` se deja explícita en `notes`
+  (`REGENERATE_FROM_ZERO -> processed_serialized` o `ABANDON -> processed_discarded`).
 
 **Antes de procesar una entrada**, el orquestador consulta el registro por
 `legacy_id` (y confirma por `legacy_blob_sha`); si ya aparece, la omite: no se

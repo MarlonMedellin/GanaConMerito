@@ -106,3 +106,5 @@ El auditor no deja un ítem huérfano. Su salida informa al orquestador, que deb
 - `ABANDON`: abandonar esa oportunidad editorial.
 
 No almacenes ítems rechazados dentro del banco productivo ni crees carpetas `rejected`, `pending` o similares por defecto.
+
+El orquestador —no el auditor— registra el veredicto en `content/question-bank-v4/legacy-processing-register.csv`, consignando el agente real en `audit_agent`. Un `REJECTED` no es terminal: se resuelve con `REGENERATE_FROM_ZERO` (→ `processed_serialized`) o `ABANDON` (→ `processed_discarded`), dejando la cadena de resolución explícita en `notes`.
