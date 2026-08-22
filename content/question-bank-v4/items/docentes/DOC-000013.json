@@ -1,0 +1,30 @@
+{
+  "id": "DOC-000013",
+  "scope": "general",
+  "domain": "evaluacion",
+  "topic": "retroalimentacion",
+  "competency": "analisis_de_evidencia",
+  "questionType": "situational",
+  "cognitiveLevel": "judge",
+  "context": "Después de una prueba de ciencias, la mayoría del grupo falló las preguntas que exigían interpretar gráficas. El docente debe decidir qué hacer antes de cerrar la unidad.",
+  "stem": "¿Cuál acción usa mejor la evaluación?",
+  "options": {
+    "A": "Registrar las notas en la planilla y cerrar la unidad, pues la prueba ya cumplió su función de calificar el desempeño.",
+    "B": "Repetir la misma prueba sin cambios y promediar las dos calificaciones para que el grupo mejore su resultado final.",
+    "C": "Analizar los errores, retroalimentar la interpretación de gráficas y reenseñarla antes de hacer una nueva verificación del aprendizaje.",
+    "D": "Ajustar la escala de valoración para que la mayoría del grupo alcance el nivel aprobatorio y cerrar la unidad."
+  },
+  "correctAnswer": "C",
+  "explanations": {
+    "A": "Registrar la nota sin una acción pedagógica posterior trata la evaluación solo como calificación o certificación y desaprovecha la información sobre lo que el grupo aún no logra; la función formativa exige usar esos resultados para ajustar la enseñanza.",
+    "B": "Repetir el mismo instrumento sin intervención y promediar no mejora la competencia: los estudiantes volverían a fallar las mismas preguntas. La evidencia se usa para sumar notas, no para orientar el aprendizaje.",
+    "C": "Correcta. Analizar los errores permite identificar el aprendizaje no logrado (interpretar gráficas); a partir de esa evidencia se retroalimenta y se reenseña antes de verificar de nuevo, de modo que la evaluación oriente la enseñanza en lugar de solo cerrar la unidad.",
+    "D": "Modificar la escala de valoración para que la mayoría apruebe oculta el problema real y no desarrolla la habilidad de interpretar gráficas; no es un uso formativo de la evaluación, sino un ajuste artificial del resultado."
+  },
+  "hint": "Antes de cerrar la unidad, pregúntate qué te indican los errores mayoritarios sobre lo que todavía no se ha aprendido y qué acción pedagógica responde a esa información.",
+  "learningNote": "La evaluación cumple su función formativa cuando la evidencia del desempeño se analiza para identificar aprendizajes no logrados y se convierte en retroalimentación y reenseñanza; calificar, repetir instrumentos o ajustar escalas sin intervención no mejora el aprendizaje.",
+  "source": {
+    "reference": "MEN, Sistema Institucional de Evaluacion de los Estudiantes (SIEE)"
+  },
+  "estimatedDifficulty": "medium"
+}

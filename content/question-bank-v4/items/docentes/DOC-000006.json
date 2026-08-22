@@ -1,0 +1,30 @@
+{
+  "id": "DOC-000006",
+  "scope": "general",
+  "domain": "curriculo",
+  "topic": "planeacion_curricular",
+  "competency": "planeacion_pedagogica",
+  "questionType": "situational",
+  "cognitiveLevel": "judge",
+  "context": "Un docente de octavo detecta que algunos estudiantes dominan operaciones básicas, mientras otros ya modelan relaciones proporcionales. Debe iniciar una unidad sobre funciones lineales sin fragmentar el grupo ni bajar la meta común.",
+  "stem": "¿Qué decisión de planeación responde mejor al diagnóstico?",
+  "options": {
+    "A": "Plantear un objetivo de aprendizaje común sobre la función lineal y diferenciar las actividades con distintos niveles de andamiaje y puntos de entrada, usando agrupaciones flexibles según el avance de cada estudiante.",
+    "B": "Organizar grupos homogéneos según el nivel de dominio y asignar a cada grupo un objetivo y unos contenidos diferentes, ajustados a su punto de partida.",
+    "C": "Dedicar las primeras sesiones a reforzar operaciones básicas con actividades uniformes para todo el grupo, antes de abordar la función lineal, para nivelar los desempeños.",
+    "D": "Mantener una única secuencia de actividades y un mismo ritmo para todos los estudiantes, presentando el mismo material para evitar diferencias en el aula."
+  },
+  "correctAnswer": "A",
+  "explanations": {
+    "A": "La diferenciación pedagógica ajusta el proceso —andamiaje, puntos de entrada y agrupación— sin modificar el objetivo común: todos avanzan hacia la comprensión de la función lineal, pero por caminos adecuados a su punto de partida. Así se atiende el diagnóstico sin fragmentar el grupo ni rebajar la meta.",
+    "B": "Asignar objetivos y contenidos distintos a grupos homogéneos fragmenta el grupo y rebaja la meta para quienes parten de las operaciones básicas, convirtiendo la diferencia en desigualdad de expectativas. La diferenciación opera sobre el proceso, no sobre la meta de aprendizaje.",
+    "C": "Nivelar a todo el grupo con operaciones básicas antes de comenzar retrasa el objetivo común y estanca a quienes ya modelan relaciones proporcionales; equivale a bajar la meta para acomodarla al ritmo más lento en lugar de diferenciar el apoyo.",
+    "D": "Una secuencia y un ritmo únicos ignoran la heterogeneidad detectada en el diagnóstico: no reta a quienes ya avanzan ni da andamiaje a quienes lo necesitan, por lo que la meta común se vuelve insuficiente o inalcanzable para una parte del grupo."
+  },
+  "hint": "Piensa qué debe mantenerse igual para todos (la meta) y qué puede variar (el proceso y los apoyos) para atender distintos puntos de partida.",
+  "learningNote": "Diferenciar la enseñanza no significa repartir objetivos distintos ni nivelar a la baja: consiste en sostener un objetivo de aprendizaje común y variar el andamiaje, los puntos de entrada y las agrupaciones para que cada estudiante avance desde su nivel real hacia esa misma meta.",
+  "source": {
+    "reference": "Ministerio de Educación Nacional, Estándares Básicos de Competencias en Lenguaje, Matemáticas, Ciencias y Ciudadanas (2006)"
+  },
+  "estimatedDifficulty": "medium"
+}
