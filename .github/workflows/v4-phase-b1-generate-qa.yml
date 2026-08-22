@@ -1,0 +1,267 @@
+name: V4 phase B1 generate and QA
+
+on:
+  push:
+    paths:
+      - '.github/workflows/v4-phase-b1-generate-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate Phase B1 and validate branch corpus
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, glob, collections, re
+          from pathlib import Path
+
+          BRANCH = 'v4-post-sprint48-expansion'
+          BASE = Path('content/question-bank-v4')
+          ITEMS = BASE / 'items' / 'docentes'
+
+          def strict_pairs(pairs):
+              out = {}
+              for k, v in pairs:
+                  if k in out:
+                      raise ValueError(f'duplicate key: {k}')
+                  out[k] = v
+              return out
+
+          def load(path):
+              with open(path, encoding='utf-8') as f:
+                  return json.load(f, object_pairs_hook=strict_pairs)
+
+          def dump(path, data):
+              with open(path, 'w', encoding='utf-8') as f:
+                  json.dump(data, f, ensure_ascii=False, indent=2)
+                  f.write('\n')
+
+          # Taxonomy expansion: only the one topic required by B1.
+          topics_path = BASE / 'taxonomy' / 'topics.json'
+          topics = load(topics_path)
+          if 'competencias_comportamentales' not in topics:
+              insert_at = topics.index('competencias_ciudadanas') + 1 if 'competencias_ciudadanas' in topics else len(topics)
+              topics.insert(insert_at, 'competencias_comportamentales')
+              dump(topics_path, topics)
+
+          plan = '''# Expansión V4 — Fase B: alta rentabilidad post-Sprint 48
+
+**Rama:** `v4-post-sprint48-expansion`  
+**Fecha de inicio:** 2026-08-22  
+**Base congelada en `master`:** 224 reactivos aprobados  
+**Estado:** EN EJECUCIÓN SOLO EN RAMA  
+**Meta inicial:** 30 reactivos; cualquier ampliación posterior exige recalcular cobertura.
+
+## Regla de aislamiento
+
+`master` permanece congelada en 224 reactivos durante Sprint 48. Ningún reactivo de esta fase debe llegar a `master` por escritura directa. La rama se usa para investigar, producir, auditar y medir una expansión posterior.
+
+## Microbloques previstos
+
+| Bloque | Rango previsto | Meta | Núcleo | Taxonomía |
+|---|---|---:|---|---|
+| B1 | `DOC-001256`–`DOC-001263` | 8 | Competencias comportamentales profesionales | nuevo `competencias_comportamentales` |
+| B2 | `DOC-001264`–`DOC-001271` | 8 | Lectura crítica profesional | reutiliza `comprension_lectora` |
+| B3 | `DOC-001272`–`DOC-001277` | 6 | Educación inicial y transición | evaluar `educacion_inicial_transicion` antes de producir |
+| B4 | `DOC-001278`–`DOC-001285` | 8 | Razonamiento cuantitativo, datos y modelización | evaluar `razonamiento_cuantitativo`; reutilizar `modelizacion` cuando corresponda |
+
+Después de B4 se recalcula la cobertura completa. No se autoriza por anticipado un B5.
+
+## Criterio para ampliar tópicos
+
+Solo se amplía `topics.json` cuando reutilizar un tópico vigente describiría falsamente el constructo o volvería a inflar una categoría genérica. No se crean sinónimos taxonómicos.
+
+Para B1 la ampliación `competencias_comportamentales` está justificada porque estas competencias son un constructo profesional específico —liderazgo, comunicación y relaciones interpersonales, trabajo en equipo, negociación y mediación, compromiso social e institucional, iniciativa y orientación al logro— y no equivalen a `competencias_ciudadanas`, `evaluacion_desempeno_docente` ni `planeacion_curricular`.
+
+## Fuentes rectoras B1
+
+- Decreto 3782 de 2007, especialmente artículos 13 y 17.
+- Ministerio de Educación Nacional, Guía No. 31 — Guía Metodológica Evaluación Anual de Desempeño Laboral, glosario de competencias y actuaciones intencionales.
+- Portal MEN de evaluación de docentes y directivos docentes, consultado en 2026.
+
+## Gates
+
+Cada ítem debe ser nuevo frente al corte de 224, medir una sola competencia o distinción profesional, evitar memoria nominal trivial, tener una única mejor respuesta, distractores profesionales plausibles, fuente verificable y QA estructural/taxonómico antes del cierre del microbloque.
+'''
+          (BASE / 'EXPANSION-PHASE-B-HIGH-RETURN-20260822.md').write_text(plan, encoding='utf-8')
+
+          items = [
+          {
+            "id":"DOC-001256","scope":"general","domain":"practica_docente","topic":"competencias_comportamentales","competency":"analisis_de_evidencia","questionType":"reading_analysis","cognitiveLevel":"analyze",
+            "context":"En una evaluación de desempeño se comparan dos evidencias del mismo docente. La primera muestra que el grupo alcanzó la meta académica prevista. La segunda registra que, durante el proceso, el docente escuchó propuestas de colegas, ajustó acuerdos con el equipo y sostuvo relaciones respetuosas aun cuando hubo desacuerdos.",
+            "stem":"¿Cuál interpretación distingue mejor una competencia comportamental de una competencia funcional?",
+            "options":{"A":"La primera evidencia es comportamental porque todo resultado académico depende de actitudes personales.","B":"La segunda evidencia aporta información comportamental porque muestra la manera como el educador cumple sus funciones, mientras la primera se relaciona principalmente con resultados y responsabilidades del cargo.","C":"Ambas evidencias son exclusivamente comportamentales porque provienen del mismo docente.","D":"Ninguna puede usarse porque las competencias comportamentales no se observan mediante actuaciones concretas."},
+            "correctAnswer":"B","explanations":{"A":"El logro académico puede apoyar la valoración de responsabilidades funcionales; no se convierte automáticamente en evidencia comportamental.","B":"Es la mejor respuesta porque diferencia el resultado o responsabilidad funcional de las actuaciones que muestran cómo el educador se relaciona y actúa al cumplir su trabajo.","C":"La clasificación depende del constructo evidenciado, no de quién produce la evidencia.","D":"Aunque una competencia es una característica subyacente, se valora mediante actuaciones intencionales observables relacionadas con el desempeño."},
+            "hint":"Distingue entre qué resultado se obtiene y cómo actúa profesionalmente el educador para realizar su trabajo.","learningNote":"Las competencias funcionales se vinculan con responsabilidades específicas y resultados del cargo; las comportamentales describen actitudes, valores, intereses y motivaciones que se manifiestan en actuaciones intencionales durante el trabajo.","source":{"reference":"Decreto 3782 de 2007, artículos 13, 14 y 17; MEN, Guía No. 31, apartado de competencias"},"estimatedDifficulty":"medium"
+          },
+          {
+            "id":"DOC-001257","scope":"general","domain":"practica_docente","topic":"competencias_comportamentales","competency":"juicio_profesional","questionType":"case_analysis","cognitiveLevel":"judge",
+            "context":"Un equipo docente debe implementar una estrategia institucional de lectura. Una profesora con experiencia propone asumir todas las decisiones porque considera que liderar significa indicar al resto exactamente qué hacer y revisar personalmente cada producto.",
+            "stem":"¿Qué actuación evidenciaría mejor liderazgo como competencia comportamental?",
+            "options":{"A":"Centralizar decisiones y tareas para garantizar que el equipo siga una única forma de trabajo.","B":"Movilizar al equipo hacia el objetivo compartido, aportar orientación, escuchar capacidades y propuestas, distribuir responsabilidades y favorecer que otros también asuman iniciativa y compromiso.","C":"Evitar intervenir en las decisiones para que cada docente trabaje de manera completamente independiente.","D":"Concentrarse solo en obtener el mejor resultado de su propio grupo y dejar la coordinación institucional al rector."},
+            "correctAnswer":"B","explanations":{"A":"Confunde liderazgo con control centralizado y limita la participación y el desarrollo del equipo.","B":"Es la mejor respuesta porque el liderazgo profesional moviliza hacia metas compartidas, orienta y potencia la participación de otros.","C":"La ausencia deliberada de orientación no muestra capacidad de movilizar ni coordinar esfuerzos hacia una meta común.","D":"Un objetivo institucional requiere compromiso con el trabajo colectivo, no únicamente desempeño individual."},
+            "hint":"Liderar no equivale a hacer todo ni a imponer; observa quién ayuda a que el equipo avance hacia una meta común.","learningNote":"El liderazgo comportamental se evidencia cuando el educador influye constructivamente, orienta y moviliza a otros hacia propósitos compartidos sin sustituir su autonomía profesional.","source":{"reference":"Decreto 3782 de 2007, artículo 17; MEN, Guía No. 31, glosario de competencia Liderazgo"},"estimatedDifficulty":"medium"
+          },
+          {
+            "id":"DOC-001258","scope":"general","domain":"practica_docente","topic":"competencias_comportamentales","competency":"gestion_de_aula","questionType":"situational","cognitiveLevel":"apply",
+            "context":"Una madre llega molesta porque interpretó un mensaje del docente como una acusación contra su hijo. El docente sabe que el mensaje fue ambiguo y que la conversación puede escalar si responde a la defensiva.",
+            "stem":"¿Qué actuación muestra mejor comunicación y relaciones interpersonales?",
+            "options":{"A":"Responder de inmediato que la familia entendió mal y leer el reglamento para cerrar la discusión.","B":"Escuchar la preocupación, aclarar el sentido del mensaje con lenguaje respetuoso, reconocer la ambigüedad, verificar que ambas partes comprendan los acuerdos y definir un canal adecuado de seguimiento.","C":"Evitar hablar con la madre y pedir a otro docente que transmita cualquier información futura.","D":"Publicar una aclaración general en el grupo de familias para demostrar que el docente tenía razón."},
+            "correctAnswer":"B","explanations":{"A":"Una respuesta defensiva puede aumentar la tensión y no garantiza comprensión mutua.","B":"Integra escucha, claridad, respeto, verificación de comprensión y uso pertinente de canales, elementos propios de una comunicación profesional efectiva.","C":"Delegar sistemáticamente la comunicación evita el conflicto pero no desarrolla una relación profesional adecuada.","D":"Exponer el desacuerdo públicamente puede deteriorar la relación y no es necesario para resolver la ambigüedad concreta."},
+            "hint":"Busca una respuesta que cuide simultáneamente claridad, escucha y relación profesional.","learningNote":"La comunicación profesional no consiste solo en transmitir información: exige escuchar, expresarse con claridad y respeto, ajustar el canal y construir comprensión con los distintos miembros de la comunidad educativa.","source":{"reference":"Decreto 3782 de 2007, artículo 17; MEN, Guía No. 31, glosario de competencia Comunicación y relaciones interpersonales"},"estimatedDifficulty":"medium"
+          },
+          {
+            "id":"DOC-001259","scope":"general","domain":"practica_docente","topic":"competencias_comportamentales","competency":"planeacion_pedagogica","questionType":"technical_applied","cognitiveLevel":"apply",
+            "context":"Cuatro docentes deben diseñar una secuencia interdisciplinaria. Una propuesta reparte cuatro tareas independientes y solo reúne los productos al final; otra define una meta común, acuerda responsabilidades complementarias, comparte avances y revisa conjuntamente las decisiones antes de implementar.",
+            "stem":"¿Cuál organización evidencia mejor trabajo en equipo?",
+            "options":{"A":"La primera, porque trabajar en equipo significa dividir el trabajo para evitar depender de los demás.","B":"La segunda, porque articula cooperación, responsabilidades complementarias, comunicación sobre avances y corresponsabilidad frente a un objetivo compartido.","C":"Ambas por igual, porque basta con que varias personas participen en un mismo proyecto.","D":"Ninguna, porque el trabajo en equipo exige que todos realicen exactamente las mismas tareas."},
+            "correctAnswer":"B","explanations":{"A":"La división aislada de tareas puede ser coordinación mínima, pero no demuestra por sí sola cooperación ni construcción conjunta.","B":"Es la mejor respuesta porque muestra relaciones de colaboración orientadas a un propósito común y responsabilidad compartida por el resultado.","C":"La presencia de varias personas no garantiza interacción cooperativa ni decisiones colectivas.","D":"El trabajo en equipo admite funciones diferentes y complementarias; no exige duplicar tareas."},
+            "hint":"Distingue entre repartir trabajo y construir un resultado compartido mediante cooperación real.","learningNote":"El trabajo en equipo implica colaborar con otros miembros de la organización escolar, coordinar aportes y asumir corresponsabilidad por objetivos compartidos; no se reduce a fragmentar tareas.","source":{"reference":"Decreto 3782 de 2007, artículo 17; MEN, Guía No. 31, glosario de competencia Trabajo en equipo"},"estimatedDifficulty":"medium"
+          },
+          {
+            "id":"DOC-001260","scope":"general","domain":"gestion_educativa","topic":"competencias_comportamentales","competency":"resolucion_de_problemas","questionType":"case_analysis","cognitiveLevel":"analyze",
+            "context":"Dos docentes comparten un laboratorio y discuten porque ambos necesitan el mismo horario. Cada uno sostiene que su asignatura tiene prioridad y la conversación empieza a afectar el trabajo conjunto.",
+            "stem":"¿Qué intervención muestra mejor negociación y mediación?",
+            "options":{"A":"Decidir cuál asignatura es más importante y pedir al otro docente que ceda para terminar rápidamente el conflicto.","B":"Separar a los docentes y prohibir que vuelvan a discutir el uso del laboratorio.","C":"Identificar necesidades e intereses de ambas partes, establecer criterios comunes, explorar alternativas de distribución y construir un acuerdo verificable que preserve el trabajo institucional.","D":"Remitir de inmediato el desacuerdo a una autoridad externa sin intentar ninguna solución dentro de las competencias institucionales."},
+            "correctAnswer":"C","explanations":{"A":"Imponer una prioridad sin explorar intereses puede terminar la discusión, pero no constituye una negociación profesional equilibrada.","B":"Evitar el contacto no resuelve el problema de recursos ni construye acuerdos sostenibles.","C":"Es la mejor respuesta porque combina escucha de intereses, criterios, alternativas y construcción de acuerdos.","D":"Escalar puede ser necesario en ciertos casos, pero un desacuerdo ordinario sobre recursos admite primero una gestión institucional de negociación."},
+            "hint":"La negociación busca un acuerdo viable a partir de intereses y criterios, no simplemente determinar un ganador.","learningNote":"Negociar y mediar supone reconocer posiciones e intereses, facilitar comunicación y construir acuerdos que permitan continuar el trabajo sin convertir el conflicto en imposición o evasión.","source":{"reference":"Decreto 3782 de 2007, artículo 17; MEN, Guía No. 31, glosario de competencia Negociación y mediación"},"estimatedDifficulty":"medium"
+          },
+          {
+            "id":"DOC-001261","scope":"general","domain":"practica_docente","topic":"competencias_comportamentales","competency":"decision_pedagogica","questionType":"reasoning","cognitiveLevel":"analyze",
+            "context":"La institución identifica ausentismo creciente en un sector rural. Un docente afirma que su responsabilidad termina al impartir la clase a quienes asisten y que el problema institucional no debe influir en sus decisiones profesionales.",
+            "stem":"¿Qué actuación reflejaría mejor compromiso social e institucional?",
+            "options":{"A":"Limitarse a registrar ausencias porque cualquier acción adicional corresponde exclusivamente a directivos.","B":"Participar, desde las funciones propias del cargo, en las acciones institucionales de permanencia, aportar conocimiento del contexto de estudiantes y familias y coordinar apoyos con el equipo sin asumir competencias ajenas.","C":"Resolver personalmente las condiciones económicas de todas las familias antes de continuar enseñando.","D":"Modificar por cuenta propia las reglas de asistencia para que las ausencias dejen de aparecer en los reportes."},
+            "correctAnswer":"B","explanations":{"A":"Reduce el rol a una tarea aislada y desconoce la corresponsabilidad profesional con metas y necesidades institucionales.","B":"Es la mejor respuesta porque vincula el trabajo docente con los propósitos institucionales y el contexto social respetando los límites del cargo.","C":"El compromiso no exige sustituir funciones de otras instituciones ni asumir responsabilidades imposibles para el docente.","D":"Alterar unilateralmente reglas o registros no atiende el problema ni muestra compromiso institucional responsable."},
+            "hint":"El compromiso institucional conecta el propio trabajo con metas colectivas sin invadir funciones que corresponden a otros actores.","learningNote":"El compromiso social e institucional se expresa al asumir los propósitos de la organización educativa, comprender su contexto y contribuir responsablemente a respuestas colectivas dentro de las funciones propias.","source":{"reference":"Decreto 3782 de 2007, artículo 17; MEN, Guía No. 31, glosario de competencia Compromiso social e institucional"},"estimatedDifficulty":"medium"
+          },
+          {
+            "id":"DOC-001262","scope":"general","domain":"practica_docente","topic":"competencias_comportamentales","competency":"resolucion_de_problemas","questionType":"situational","cognitiveLevel":"apply",
+            "context":"Durante varias semanas una docente observa que el cambio entre dos clases genera pérdida de tiempo y conflictos menores. No existe una instrucción específica para resolverlo, pero la situación sí está dentro de su capacidad de acción pedagógica.",
+            "stem":"¿Qué conducta muestra mejor iniciativa profesional?",
+            "options":{"A":"Esperar indefinidamente una orden formal porque proponer cambios sin instrucción previa siempre excede el rol docente.","B":"Cambiar por su cuenta horarios institucionales y funciones de otros docentes para eliminar el problema.","C":"Analizar el patrón, proponer una rutina viable dentro de su competencia, coordinarla con quienes corresponda, probarla y revisar sus resultados.","D":"Aceptar la pérdida de tiempo como parte normal de la jornada para evitar responsabilidades adicionales."},
+            "correctAnswer":"C","explanations":{"A":"La iniciativa implica capacidad de anticipar o atender necesidades sin depender de instrucciones innecesarias, dentro de los límites del cargo.","B":"Tomar iniciativa no autoriza modificar unilateralmente competencias, horarios o responsabilidades ajenas.","C":"Es la mejor respuesta porque combina identificación de oportunidad, propuesta autónoma responsable, coordinación y seguimiento.","D":"Normalizar un problema abordable muestra pasividad, no iniciativa."},
+            "hint":"La iniciativa profesional está entre la pasividad y la extralimitación: actuar con autonomía dentro del propio ámbito.","learningNote":"La iniciativa se manifiesta al identificar oportunidades o problemas y emprender acciones pertinentes sin esperar instrucciones innecesarias, respetando competencias y articulando a otros cuando la solución lo requiere.","source":{"reference":"Decreto 3782 de 2007, artículo 17; MEN, Guía No. 31, glosario de competencia Iniciativa"},"estimatedDifficulty":"medium"
+          },
+          {
+            "id":"DOC-001263","scope":"general","domain":"practica_docente","topic":"competencias_comportamentales","competency":"analisis_de_evidencia","questionType":"reasoning","cognitiveLevel":"analyze",
+            "context":"Un docente quiere mejorar la comprensión lectora de su grupo. Formula una meta concreta, revisa periódicamente evidencias, identifica que una estrategia no funciona con parte del grupo, la ajusta y sostiene el esfuerzo hasta comparar el resultado con la meta inicial.",
+            "stem":"¿Qué competencia comportamental se evidencia principalmente en esa secuencia?",
+            "options":{"A":"Orientación al logro, porque organiza esfuerzos hacia metas, hace seguimiento a resultados y ajusta acciones para mejorar el desempeño.","B":"Negociación y mediación, porque toda modificación de una estrategia implica resolver un conflicto entre partes.","C":"Comunicación y relaciones interpersonales, porque cualquier actividad de lectura depende principalmente de transmitir información.","D":"Trabajo en equipo, porque una meta pedagógica solo puede alcanzarse si varias personas realizan simultáneamente la misma tarea."},
+            "correctAnswer":"A","explanations":{"A":"Es la mejor respuesta: la secuencia muestra foco en metas, seguimiento, persistencia y ajuste orientado a resultados de calidad.","B":"No se describe un conflicto entre partes ni un proceso de construcción de acuerdos.","C":"Puede existir comunicación, pero el rasgo decisivo del caso es la gestión persistente del desempeño frente a una meta.","D":"El caso no exige cooperación entre varias personas y el trabajo en equipo no se define por hacer tareas idénticas."},
+            "hint":"Observa qué rasgo conecta meta, seguimiento, ajuste y persistencia.","learningNote":"La orientación al logro supone dirigir el esfuerzo hacia resultados de calidad, monitorear el avance y ajustar la actuación cuando la evidencia muestra que la meta aún no se alcanza.","source":{"reference":"Decreto 3782 de 2007, artículo 17; MEN, Guía No. 31, glosario de competencia Orientación al logro"},"estimatedDifficulty":"medium"
+          }
+          ]
+
+          for item in items:
+              path = ITEMS / f"{item['id']}.json"
+              if path.exists():
+                  raise SystemExit(f'B1 collision: {path}')
+              dump(path, item)
+
+          # Branch-only README marker.
+          readme_path = BASE / 'README.md'
+          readme = readme_path.read_text(encoding='utf-8')
+          marker = '**Rama de expansión post-Sprint 48:** `v4-post-sprint48-expansion` — trabajo experimental posterior al corte congelado; no equivale a cambio de `master`.  \n'
+          if marker not in readme:
+              needle = '**Corte congelado para Sprint 48: 224 reactivos aprobados**  \n'
+              if needle not in readme:
+                  raise SystemExit('README frozen-cut marker not found')
+              readme = readme.replace(needle, needle + marker, 1)
+              readme_path.write_text(readme, encoding='utf-8')
+
+          # Strict validation of the expanded branch corpus.
+          domains = load(BASE / 'taxonomy' / 'domains.json')
+          topics = load(BASE / 'taxonomy' / 'topics.json')
+          competencies = load(BASE / 'taxonomy' / 'competencies.json')
+          qt = load(BASE / 'taxonomy' / 'question-types.json')
+          allowed = {
+              'domain': set(domains),
+              'topic': set(topics),
+              'competency': set(competencies),
+              'questionType': set(qt['questionTypes']),
+              'cognitiveLevel': set(qt['cognitiveLevels']),
+              'estimatedDifficulty': set(qt['estimatedDifficultyLevels']),
+          }
+          required = {'id','scope','domain','topic','competency','questionType','cognitiveLevel','context','stem','options','correctAnswer','explanations','hint','learningNote','source','estimatedDifficulty'}
+          counters = {k: collections.Counter() for k in allowed}
+          errors, ids = [], []
+          files = sorted(glob.glob(str(ITEMS / '*.json')))
+          for p in files:
+              try:
+                  d = load(p)
+              except Exception as e:
+                  errors.append(f'{p}: parse error {e}')
+                  continue
+              ids.append(d.get('id'))
+              if set(d) != required:
+                  errors.append(f'{p}: top-level keys mismatch')
+              if not re.fullmatch(r'DOC-\d{6}', str(d.get('id',''))):
+                  errors.append(f'{p}: id')
+              if d.get('scope') != 'general':
+                  errors.append(f'{p}: scope')
+              for k, values in allowed.items():
+                  if d.get(k) not in values:
+                      errors.append(f'{p}: invalid {k}={d.get(k)!r}')
+                  counters[k][d.get(k)] += 1
+              if set(d.get('options',{})) != {'A','B','C','D'}:
+                  errors.append(f'{p}: options')
+              if set(d.get('explanations',{})) != {'A','B','C','D'}:
+                  errors.append(f'{p}: explanations')
+              if d.get('correctAnswer') not in {'A','B','C','D'}:
+                  errors.append(f'{p}: correctAnswer')
+              if set(d.get('source',{})) != {'reference'} or not str(d.get('source',{}).get('reference','')).strip():
+                  errors.append(f'{p}: source')
+              for fld in ['context','stem','hint','learningNote']:
+                  if not isinstance(d.get(fld), str) or not d[fld].strip():
+                      errors.append(f'{p}: empty {fld}')
+          if len(ids) != len(set(ids)):
+              errors.append('duplicate ids')
+          b1 = [f'DOC-{i:06d}' for i in range(1256, 1264)]
+          missing = [x for x in b1 if x not in ids]
+          if missing:
+              errors.append('missing B1: ' + ','.join(missing))
+          if len(files) != 232:
+              errors.append(f'expected 232 branch items after B1, got {len(files)}')
+          if counters['topic']['competencias_comportamentales'] != 8:
+              errors.append(f"expected competencias_comportamentales=8, got {counters['topic']['competencias_comportamentales']}")
+
+          coverage = {
+              'domains': {k:counters['domain'][k] for k in domains},
+              'topics': {k:counters['topic'][k] for k in topics},
+              'competencies': {k:counters['competency'][k] for k in competencies},
+              'questionTypes': {k:counters['questionType'][k] for k in qt['questionTypes']},
+              'cognitiveLevels': {k:counters['cognitiveLevel'][k] for k in qt['cognitiveLevels']},
+              'estimatedDifficulty': {k:counters['estimatedDifficulty'][k] for k in qt['estimatedDifficultyLevels']},
+          }
+          report = {
+              'generatedAt':'2026-08-22',
+              'branch':BRANCH,
+              'phase':'PHASE-B1-COMPETENCIAS-COMPORTAMENTALES',
+              'frozenMasterItemCount':224,
+              'batchItemCount':8,
+              'itemCount':len(files),
+              'batchIds':b1,
+              'errors':errors,
+              'coverage':coverage,
+          }
+          dump(BASE / 'COVERAGE-AFTER-PHASE-B1-20260822.json', report)
+          print(json.dumps(report, ensure_ascii=False, indent=2))
+          if errors:
+              raise SystemExit(1)
+          PY
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content/question-bank-v4
+          git commit -m 'feat(v4): add Phase B1 behavioral competency items'
+          git pull --rebase origin v4-post-sprint48-expansion
+          git push origin HEAD:v4-post-sprint48-expansion
