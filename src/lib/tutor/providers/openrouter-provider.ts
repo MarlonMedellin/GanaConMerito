@@ -3,6 +3,8 @@ import type { TutorTurnRequest } from "../../../types/tutor-turn";
 import type { TutorProvider, TutorShadowExecution, TutorShadowOutput } from "./tutor-provider";
 
 const SHADOW_SCHEMA_VERSION = "tutor-shadow-v1" as const;
+export const APPROVED_OPENROUTER_MODEL = "openai/gpt-4o-2024-08-06";
+export const APPROVED_OPENROUTER_PROVIDER = "azure";
 const TIMEOUT_MS = 10_000;
 const CIRCUIT_FAILURE_LIMIT = 3;
 const CIRCUIT_OPEN_MS = 60_000;
@@ -146,7 +148,7 @@ export class OpenRouterProvider implements TutorProvider<TutorShadowExecution> {
               zdr: true,
             },
             temperature: 0.2,
-            max_tokens: 500,
+            max_completion_tokens: 400,
           }),
         });
         clearTimeout(timeout);
@@ -188,6 +190,8 @@ export class OpenRouterProvider implements TutorProvider<TutorShadowExecution> {
 export function getOpenRouterShadowConfig(env: Record<string, string | undefined> = process.env): OpenRouterConfig | null {
   if (env.GCM_TUTOR_LLM_SHADOW !== "1") return null;
   if (!env.OPENROUTER_API_KEY || !env.OPENROUTER_MODEL || !env.OPENROUTER_PROVIDER) return null;
+  if (env.OPENROUTER_MODEL !== APPROVED_OPENROUTER_MODEL) return null;
+  if (env.OPENROUTER_PROVIDER !== APPROVED_OPENROUTER_PROVIDER) return null;
   return {
     apiKey: env.OPENROUTER_API_KEY,
     model: env.OPENROUTER_MODEL,

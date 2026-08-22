@@ -88,6 +88,21 @@ last_reviewed: 2026-08-22
   src/lib/tutor/openrouter-provider.test.ts,
   docs/04-quality/sprint-48-repo-evaluation-report.md
 
+## 2026-08-22 — Allowlist inicial OpenRouter shadow
+- tipo: architecture+security+config
+- modulo: tutor-gcm/openrouter-shadow
+- resumen: Se fija `openai/gpt-4o-2024-08-06` sobre `azure` como única combinación
+  inicial, tras verificar structured outputs y presencia en el catálogo ZDR actual.
+  El runtime rechaza valores distintos y usa `max_completion_tokens`.
+- agente: Codex
+- via: Codex Desktop / documentación oficial y endpoints públicos OpenRouter
+- contributor: Marlon Medellin
+- environment: WSL local / master
+- validacion: contrato de configuración y payload mediante mocks; pruebas completas al cierre
+- runtime-verified: no; clave segura y llamada real pendientes
+- relacionados: src/lib/tutor/providers/openrouter-provider.ts, .env.example,
+  docs/03-architecture/openrouter-shadow-provider-decision.md
+
 ## 2026-08-22 — Dominio canonico de runtime y QA
 - tipo: ops+qa+docs
 - modulo: runtime/e2e/auth

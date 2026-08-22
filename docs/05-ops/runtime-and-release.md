@@ -166,3 +166,11 @@ El shadow LLM es server-only y permanece apagado salvo que existan simultáneame
 `GCM_TUTOR_LLM_SHADOW=1`, `OPENROUTER_API_KEY`, `OPENROUTER_MODEL` y
 `OPENROUTER_PROVIDER`. Modelo y proveedor deben corresponder a un endpoint aprobado
 con structured outputs y ZDR. Nunca registrar la clave ni copiarla al navegador.
+
+Allowlist inicial aprobada:
+
+- `OPENROUTER_MODEL=openai/gpt-4o-2024-08-06`
+- `OPENROUTER_PROVIDER=azure`
+
+Una clave pegada en chats, tickets, commits o logs debe revocarse y reemplazarse;
+no puede reutilizarse para shadow ni producción.

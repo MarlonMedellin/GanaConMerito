@@ -150,7 +150,9 @@ de recolección, timeout, reintento transitorio y circuit breaker. Su ejecución
 programa después de responder con el Tutor determinístico y solo persiste métricas
 minimizadas. Sin `OPENROUTER_API_KEY`, modelo, proveedor y flag explícitos queda
 desactivado. Gate 4 real permanece abierto hasta seleccionar endpoint, configurar
-un ambiente y ejecutar shadow contra OpenRouter.
+un ambiente y ejecutar shadow contra OpenRouter. La selección inicial quedó fijada
+en `openai/gpt-4o-2024-08-06` sobre `azure`; la clave segura y la prueba real siguen
+pendientes.
 
 1. Crear interfaz `TutorProvider`.
 2. Implementar `DeterministicTutorProvider` y `OpenRouterProvider`.

@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import type { TutorTurnRequest } from "../../types/tutor-turn";
-import { buildMinimizedShadowDossier, getOpenRouterShadowConfig, OpenRouterProvider, resetOpenRouterCircuitForTests } from "./providers/openrouter-provider";
+import { APPROVED_OPENROUTER_MODEL, APPROVED_OPENROUTER_PROVIDER, buildMinimizedShadowDossier, getOpenRouterShadowConfig, OpenRouterProvider, resetOpenRouterCircuitForTests } from "./providers/openrouter-provider";
 
 const input: TutorTurnRequest = {
   userId: "private-user-id",
@@ -80,6 +80,8 @@ test("OpenRouter request fixes provider privacy controls and strict schema", asy
   assert.equal(requestBody.response_format.type, "json_schema");
   assert.equal(requestBody.response_format.json_schema.strict, true);
   assert.equal(requestBody.response_format.json_schema.schema.additionalProperties, false);
+  assert.equal(requestBody.max_completion_tokens, 400);
+  assert.equal(requestBody.max_tokens, undefined);
   assert.equal(requestBody.plugins, undefined);
   assert.equal(requestBody.tools, undefined);
 });
@@ -103,6 +105,22 @@ test("unsafe pre-answer output is rejected and shadow stays opt-in", async () =>
   assert.equal((await provider.generate(input)).status, "rejected");
   assert.equal(getOpenRouterShadowConfig({}), null);
   assert.equal(getOpenRouterShadowConfig({ GCM_TUTOR_LLM_SHADOW: "1", OPENROUTER_API_KEY: "x" }), null);
+  assert.equal(getOpenRouterShadowConfig({
+    GCM_TUTOR_LLM_SHADOW: "1",
+    OPENROUTER_API_KEY: "x",
+    OPENROUTER_MODEL: "unapproved/model",
+    OPENROUTER_PROVIDER: APPROVED_OPENROUTER_PROVIDER,
+  }), null);
+  assert.deepEqual(getOpenRouterShadowConfig({
+    GCM_TUTOR_LLM_SHADOW: "1",
+    OPENROUTER_API_KEY: "x",
+    OPENROUTER_MODEL: APPROVED_OPENROUTER_MODEL,
+    OPENROUTER_PROVIDER: APPROVED_OPENROUTER_PROVIDER,
+  }), {
+    apiKey: "x",
+    model: APPROVED_OPENROUTER_MODEL,
+    provider: APPROVED_OPENROUTER_PROVIDER,
+  });
 });
 
 test("OpenRouter retries one transient 429 or 5xx and rejects invalid JSON", async () => {
