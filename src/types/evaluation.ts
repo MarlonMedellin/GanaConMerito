@@ -30,6 +30,11 @@ export interface AdvanceSessionResponse {
   previousState: import("./session").SessionState;
   currentState: import("./session").SessionState;
   evaluation: EvaluationResult;
+  answerReview: {
+    selectedOption: "A" | "B" | "C" | "D";
+    correctOption: "A" | "B" | "C" | "D";
+    explanation?: string;
+  };
   feedbackText: string;
   hintLevel: number;
   nextItemId?: string;

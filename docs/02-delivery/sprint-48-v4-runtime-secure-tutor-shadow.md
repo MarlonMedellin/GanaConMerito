@@ -3,7 +3,7 @@ id: DEL-SPRINT-48-V4-RUNTIME-SECURE-TUTOR-SHADOW
 name: sprint-48-v4-runtime-secure-tutor-shadow
 project: ganaconmerito
 owner: marlon-arcila
-status: proposed
+status: in-progress
 artifact_type: delivery
 modules: [question-bank-v4, database, practice, tutor, security, qa]
 tags: [sprint-48, v4-cutover, openrouter, shadow-mode]
@@ -18,7 +18,7 @@ related:
 
 ## Estado
 
-**PROPUESTO; NO INICIADO.**
+**EN EJECUCIÓN — BLOQUE 0 IMPLEMENTADO EN REPO; APLICACIÓN REMOTA PENDIENTE.**
 
 ## Objetivo
 
@@ -30,7 +30,7 @@ exponer respuestas, datos personales ni autoridad operativa al LLM.
 Este sprint termina con:
 
 - V4 como única fuente de selección runtime;
-- 90 preguntas V4 importadas y activables;
+- 110 preguntas V4 importadas y activables;
 - contratos pre/post respuesta seguros;
 - exposición directa de `item_bank` corregida;
 - Tutor adaptado a campos V4;
@@ -44,6 +44,11 @@ LLM.
 ## Orden de ejecución
 
 ### Bloque 0 — Seguridad inmediata (P0)
+
+Estado 2026-08-22: implementación de repo completada. Incluye migración `0020`,
+lecturas server-only, contrato pre-respuesta sin explicación, respuesta obligatoria
+antes del contrato posterior y pruebas automatizadas. Falta aplicar la migración,
+desplegar y ejecutar pruebas negativas anon/autenticada en el ambiente remoto.
 
 1. Crear una migración nueva que retire acceso directo `anon`/`authenticated` a
    `item_bank`, `item_options` y vistas que exponen `correct_option`.
@@ -61,12 +66,17 @@ Gate 0:
 - el payload pre-respuesta no contiene esos campos;
 - las sesiones existentes continúan funcionando por las APIs server-side.
 
+Orden operacional obligatorio: desplegar primero el código que usa `service_role`,
+validar rutas autenticadas y aplicar después `0020` en la misma ventana. No aplicar
+la migración sobre el runtime anterior porque sus rutas todavía dependen de permisos
+de usuario autenticado para leer el banco.
+
 ### Bloque 1 — Importación V4 operativa (P0)
 
 1. Unificar las validaciones de `content:validate:v4`, `--dry-run` y `--apply`.
 2. Parsear y validar `legacy-processing-register.csv`.
 3. Implementar la función SQL V4 idempotente y versionada.
-4. Importar 90/90 ítems inicialmente inactivos.
+4. Importar 110/110 ítems inicialmente inactivos.
 5. Verificar A–D, metadatos V4, source path y aprobación.
 6. Crear reporte agregado de cobertura por taxonomía y perfil.
 
@@ -74,7 +84,7 @@ Gate 1:
 
 - dry-run y apply producen el mismo plan validado;
 - segunda importación no duplica filas;
-- Supabase contiene exactamente 90 V4 esperadas;
+- Supabase contiene exactamente 110 V4 esperadas;
 - ninguna fila legacy fue borrada.
 
 ### Bloque 2 — Repositorio, DTO y selector V4 (P0)
@@ -184,6 +194,8 @@ npm run test:unit
 npm run build
 npm run content:validate:v4
 npm run content:import:v4 -- --dry-run
+npm run test:security
+npm run qa:security:question-bank -- --require-authenticated
 python3 scripts/validate_docs.py
 git diff --check
 ```

@@ -5,6 +5,7 @@ import { getNextState } from "../../../../domain/orchestrator/session-machine";
 import { getMaxSessionTurns } from "../../../../lib/config/session";
 import { isLearningProfileOnboardingComplete } from "../../../../lib/onboarding/status";
 import { applyActiveItemBankFilters, runWithActiveItemBankFallback } from "../../../../lib/supabase/active-item-bank";
+import { getSupabaseAdminClient } from "../../../../lib/supabase/admin";
 import { requireOwnedSession } from "../../../../lib/supabase/guards";
 import { advanceSessionSchema } from "../../../../lib/validation/session";
 import type { AdvanceSessionResponse } from "../../../../types/evaluation";
@@ -16,6 +17,7 @@ interface SessionAdvanceItemRecord {
   difficulty: number | string | null;
   area: string | null;
   competency: string | null;
+  explanation: string | null;
 }
 
 export async function POST(request: Request) {
@@ -36,6 +38,7 @@ export async function POST(request: Request) {
   }
 
   const { supabase, profile, session } = auth;
+  const admin = getSupabaseAdminClient();
 
   if (session.status !== "active") {
     return NextResponse.json({ error: "Session is no longer active" }, { status: 409 });
@@ -57,7 +60,7 @@ export async function POST(request: Request) {
 
   const { data: item, error: itemError } = await runWithActiveItemBankFallback<SessionAdvanceItemRecord>((source) =>
     applyActiveItemBankFilters(
-      supabase.from(source).select("id, correct_option, difficulty, area, competency").eq("id", body.itemId),
+      admin.from(source).select("id, correct_option, difficulty, area, competency, explanation").eq("id", body.itemId),
       source,
     ).single(),
   );
@@ -105,7 +108,7 @@ export async function POST(request: Request) {
     hasError: false,
   });
 
-  const { error: advanceError } = await supabase.rpc("advance_session_atomic", {
+  const { error: advanceError } = await admin.rpc("advance_session_atomic", {
     p_profile_id: profile.id,
     p_session_id: body.sessionId,
     p_item_id: body.itemId,
@@ -164,6 +167,11 @@ export async function POST(request: Request) {
     previousState,
     currentState,
     evaluation,
+    answerReview: {
+      selectedOption: body.selectedOption,
+      correctOption: item.correct_option as "A" | "B" | "C" | "D",
+      explanation: item.explanation ?? undefined,
+    },
     feedbackText,
     hintLevel: evaluation.remediationNeeded ? 1 : 0,
     nextItemId: nextItem?.id,

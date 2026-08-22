@@ -24,7 +24,8 @@ El runtime publico responde en `https://cnsc.profemarlon.com` y reporta el commi
 `e43f612` con build time `2026-08-21 03:51:03 +0000 UTC`. El smoke publico de
 login y configuracion paso el 2026-08-22.
 
-El HEAD sincronizado de `master` es `adef22e`; el runtime esta 149 commits detras.
+La base online incorporada de `master` es `8c4be39`; el runtime esta al menos 178
+commits detras de esa base, sin contar el commit de seguridad de este bloque.
 La administracion de VPS no fue verificada porque la huella SSH presentada cambio
 y debe confirmarse antes de aceptar la conexion.
 
@@ -33,9 +34,10 @@ y debe confirmarse antes de aceptar la conexion.
 smoke publico; no reejecuto E2E autenticada ni verifico el arbol de deploy.
 
 ## Current Sprint Status
-**SPRINT 48 PROPUESTO; BLOQUEADO PARA IMPLEMENTACION POR P0 DE SEGURIDAD**:
-antes de importar y activar V4 o conectar OpenRouter se debe cerrar la lectura
-anonima de claves/explicaciones y separar los contratos pre/post respuesta.
+**SPRINT 48 EN EJECUCIÓN; BLOQUE 0 IMPLEMENTADO EN REPO, NO APLICADO**: la
+migración y los contratos server-only están probados localmente. La exposición
+pública permanece en el runtime hasta desplegar el código y aplicar `0020` en una
+ventana controlada.
 
 ## Known Drift
 - Supabase contiene 121 filas visibles por REST anon: 120 legacy y solo 1 V4;
@@ -45,7 +47,7 @@ anonima de claves/explicaciones y separar los contratos pre/post respuesta.
 - `/api/session/item` devuelve `rationale` antes de responder.
 - La app sigue leyendo `v_item_bank_active`/`item_bank` con fallback legacy y no
   consume de forma nativa todos los campos V4.
-- El banco V4 local tiene 90 reactivos docentes validos, pero cero
+- El banco V4 local tiene 110 reactivos docentes validos, pero cero
   documentos en `sources/`; calidad editorial no equivale a fuente normativa verificada.
 - Persisten contratos y validaciones parcialmente narrativas fuera del baseline canonico.
 - La trazabilidad multiagente todavia no es enforcement obligatorio.
@@ -62,7 +64,7 @@ anonima de claves/explicaciones y separar los contratos pre/post respuesta.
 - sincronizacion documental automatica;
 - reduccion de documentacion legacy;
 - integracion fuerte rich-only.
-- corte seguro de V4, importacion 90/90 e integracion OpenRouter shadow pendientes.
+- corte seguro de V4, importacion 110/110 e integracion OpenRouter shadow pendientes.
 
 ## Last Audit
 2026-08-22 — repo remoto sincronizado; estructura V4, REST publico de Supabase,
@@ -93,7 +95,7 @@ contratos de practica/Tutor y runtime publico auditados. VPS admin no verificado
 ## Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow
 
 ### Estado
-**PROPUESTO; NO INICIADO**
+**EN EJECUCIÓN — BLOQUE 0 EN REPO**
 
 ### Resultado de la preparacion
 - PRD integral: `docs/01-product/prd-v4-tutor-ai-openrouter.md`.
@@ -104,9 +106,11 @@ contratos de practica/Tutor y runtime publico auditados. VPS admin no verificado
 - El P0 de exposicion de respuestas precede importacion, corte V4 e integracion LLM.
 
 ### Evidencia y limites
-- 90/90 archivos V4 pasan validacion estructural; no se revisaron items individuales.
+- 110/110 archivos V4 pasan validacion estructural; no se revisaron items individuales.
 - El contraste Supabase fue de lectura publica, no administrativo.
 - No se aplicaron migraciones, no se importaron filas y no se desplego codigo.
+- `0020_secure_question_answer_boundary.sql`, contratos pre/post y pruebas de
+  seguridad están implementados localmente; no constituyen evidencia de cierre remoto.
 
 ## Beta Candidate 0.6.0 — snapshot ejecutivo
 

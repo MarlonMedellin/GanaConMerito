@@ -40,10 +40,10 @@ GanaConMerito tiene activo el core real de producto:
 - **Frente normativo Tutor GCM (Sprint 22):** PASS con WARN explicito; contrato y guardrails verificados, fuente oficial suficiente pendiente.
 
 Siguiente bloque propuesto:
-- **Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow.**
+- **Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (en ejecución).**
 - P0: retirar lectura anonima/autenticada directa de claves y explicaciones y
   eliminar `rationale` del payload previo a responder.
-- P0: importar y activar de forma controlada 90/90 V4; hoy Supabase publico muestra 1/90.
+- P0: importar y activar de forma controlada 110/110 V4; hoy Supabase publico muestra 1/110.
 - P0: usar exclusivamente V4 en practica/seleccion, sin fallback legacy silencioso.
 - P1: consumir todos los campos V4 en UI, feedback y expediente del Tutor.
 - P1: integrar OpenRouter en shadow con salida estructurada, ZDR, allowlist y
@@ -110,9 +110,10 @@ Estado beta vigente:
 - WARN vigente: faltan acuerdo oficial, guia metodologica, estructura de prueba y soporte de convocatoria/manual trazables en repo.
 
 ## Now
-1. Ejecutar el Bloque 0 de Sprint 48: corregir la exposicion P0 de respuestas.
+1. Desplegar el código server-only del Bloque 0, aplicar `0020` y verificar
+   negativamente con roles anon/autenticado.
 2. Confirmar la huella SSH del VPS por un canal confiable antes de acceso administrativo.
-3. Hacer idempotente y auditable la importacion 90/90 V4.
+3. Hacer idempotente y auditable la importacion 110/110 V4.
 4. Separar contratos pre/post respuesta y cortar seleccion runtime a V4.
 5. Mantener Tutor GCM sin autoridad sobre scoring, avance, cierre o fuente normativa.
 6. Preparar OpenRouter en shadow; no habilitar canary antes de los gates.

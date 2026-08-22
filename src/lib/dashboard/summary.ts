@@ -5,6 +5,7 @@ import {
   type DashboardTopicBreakdownRow,
 } from "@/lib/dashboard/summary-metrics";
 import type { DashboardSummaryResponse } from "@/types/evaluation";
+import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 
 interface SessionTurnRow {
   id: string;
@@ -52,6 +53,7 @@ async function getSessionTopicStats(sessionId: string): Promise<DashboardTopicBr
   }
 
   const { supabase } = auth;
+  const admin = getSupabaseAdminClient();
   const { data: turns, error: turnsError } = await supabase
     .from("session_turns")
     .select("id, item_id, turn_number, created_at")
@@ -72,7 +74,7 @@ async function getSessionTopicStats(sessionId: string): Promise<DashboardTopicBr
       .select("session_turn_id, is_correct, reasoning_score, estimated_theta_delta, created_at")
       .in("session_turn_id", turnIds),
     itemIds.length > 0
-      ? supabase.from("item_bank").select("id, area, competency, difficulty").in("id", itemIds)
+      ? admin.from("item_bank").select("id, area, competency, difficulty").in("id", itemIds)
       : Promise.resolve({ data: [], error: null }),
   ]);
 

@@ -1,5 +1,6 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { applyActiveItemBankFilters, runWithActiveItemBankFallback } from "../supabase/active-item-bank";
+import { getSupabaseAdminClient } from "../supabase/admin";
 import type { TutorEvidence } from "../../types/tutor-turn";
 import { normalizeLegacyItemToRichItem } from "../../domain/taxonomy/normalize-item";
 import { questionTruthToTutorSupportContract, richItemToQuestionTruth } from "../../domain/tutor/question-truth-adapter";
@@ -131,18 +132,19 @@ export async function buildTutorEvidence(params: {
   itemId: string;
 }): Promise<TutorEvidence> {
   const { supabase, userId, sessionId, itemId } = params;
+  const questionBank = getSupabaseAdminClient();
 
   const [itemResult, optionsResult, turnsResult, currentTurnResult, learningProfileResult] = await Promise.all([
     runWithActiveItemBankFallback<TutorItemRecord>((source) =>
       applyActiveItemBankFilters(
-        supabase
+        questionBank
           .from(source)
           .select("id, area, competency, stem, correct_option, explanation, source_type, source_path")
           .eq("id", itemId),
         source,
       ).single(),
     ),
-    supabase.from("item_options").select("option_key, option_text").eq("item_id", itemId).order("option_key", { ascending: true }),
+    questionBank.from("item_options").select("option_key, option_text").eq("item_id", itemId).order("option_key", { ascending: true }),
     supabase
       .from("session_turns")
       .select("id, item_id, selected_option, user_rationale, model_feedback, created_at")

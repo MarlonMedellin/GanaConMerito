@@ -47,7 +47,7 @@ export interface StartSessionResponse {
 export interface AdvanceSessionRequest {
   sessionId: string;
   itemId: string;
-  selectedOption?: "A" | "B" | "C" | "D";
+  selectedOption: "A" | "B" | "C" | "D";
   userRationale?: string;
   responseTimeMs?: number;
   confidenceSelfReport?: 1 | 2 | 3 | 4 | 5;
@@ -72,6 +72,5 @@ export interface PracticeQuestionViewModel {
   difficulty?: number;
   tags?: string[];
   misconceptionHints?: string[];
-  rationale?: string;
   sourceTruthStatus?: "source_verified" | "synthesized_governed_unverified" | "missing";
 }

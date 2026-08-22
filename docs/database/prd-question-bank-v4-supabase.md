@@ -41,7 +41,13 @@ Agregar índices para `bank_version`, `editorial_scope`, `opec_id`, `topic_code`
 la combinación usada por el selector. Agregar constraints para valores válidos y
 para exigir `source_reference`/`opec_id` cuando corresponda a V4.
 
-### M-0020 — Escritura V4
+### M-0020 — Frontera urgente de respuestas
+
+Revocar acceso directo de roles cliente a tablas/vistas con claves o explicaciones,
+restringir RPC críticas a `service_role` y migrar las rutas de servidor antes de
+aplicar los permisos. Artefacto: `0020_secure_question_answer_boundary.sql`.
+
+### M-0021 — Escritura V4
 
 Crear una función nueva `public.upsert_content_item_v4(...)`; no modificar ni
 reutilizar la firma actual de `upsert_content_item(...)`. La función debe:
@@ -53,7 +59,7 @@ reutilizar la firma actual de `upsert_content_item(...)`. La función debe:
   `approval_status = 'pending_approval'`;
 - devolver el UUID e información de versión para el importador.
 
-### M-0021 — Vistas de lectura y RLS
+### M-0022 — Vistas de lectura y RLS
 
 Crear:
 
@@ -66,7 +72,7 @@ Crear:
 Usar `security_invoker = true`, grants mínimos y RLS alineada con los endpoints
 actuales. Ninguna vista accesible al navegador expone claves o explicaciones.
 
-### M-0022 — Corte de fuente predeterminada
+### M-0023 — Corte de fuente predeterminada
 
 Después del piloto, actualizar `v_item_bank_active` o el repositorio de selección
 para que solo el banco V4 autorizado sea predeterminado. Preservar una vista de
@@ -76,12 +82,12 @@ lectura histórica para diagnóstico y rollback, sin selección automática.
 
 1. Hacer backup verificable y registrar conteos de `item_bank`, `item_options`,
    sesiones y turnos antes de cada migración.
-2. Aplicar M-0019 a M-0021 en staging.
+2. Aplicar M-0019 a M-0022 en staging.
 3. Importar una cohorte V4 usando dry-run y después aplicación controlada.
 4. Verificar opciones, estado, fuente, OPEC, vista de práctica y vista posterior.
 5. Aprobar editorialmente la cohorte y activar de forma explícita.
 6. Repetir en producción con una cohorte pequeña.
-7. Aplicar M-0022 únicamente cuando el piloto y las pruebas de runtime estén
+7. Aplicar M-0023 únicamente cuando el piloto y las pruebas de runtime estén
    aprobados.
 
 No se migran datos legacy a V4: se importan reactivos V4 nuevos. No se borran filas

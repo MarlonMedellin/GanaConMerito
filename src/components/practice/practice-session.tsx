@@ -28,6 +28,11 @@ interface AdvanceResult {
     competencyScore: number;
     qualitativeFeedback?: string;
   };
+  answerReview: {
+    selectedOption: OptionKey;
+    correctOption: OptionKey;
+    explanation?: string;
+  };
 }
 
 export function PracticeSession() {
@@ -322,6 +327,12 @@ export function PracticeSession() {
                 </span>
               </div>
               <p className="body-sm m-0">{feedback.feedbackText}</p>
+              <p className="body-sm m-0">
+                Tu respuesta: {feedback.answerReview.selectedOption} · Clave: {feedback.answerReview.correctOption}
+              </p>
+              {feedback.answerReview.explanation ? (
+                <p className="subtle m-0">{feedback.answerReview.explanation}</p>
+              ) : null}
               <div className="metric-grid metric-grid-2 mt-8">
                 <div className="metric-card metric-card-compact">
                   <span className="metric-label">Razonamiento</span>

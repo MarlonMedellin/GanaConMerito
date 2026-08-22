@@ -33,17 +33,17 @@ los gates de seguridad y calidad permitan un canary posterior.
 
 | Señal | Resultado |
 |---|---|
-| Repo remoto/local | `master` sincronizado en `adef22e` |
-| Archivos V4 | 90 reactivos docentes válidos |
-| Scope V4 | 90 `general`; 0 `opec_specific` |
-| Dificultad | 76 `medium`; 12 `high`; 2 `low` |
-| Trazabilidad editorial | 70 con registro legacy `APPROVED`; 20 con evidencia de expansión fuera de ese registro que debe unificarse antes de importar |
+| Repo remoto/local | base de `master` sincronizada en `8c4be39` |
+| Archivos V4 | 110 reactivos docentes válidos |
+| Scope V4 | 110 `general`; 0 `opec_specific` |
+| Dificultad | 92 `medium`; 15 `high`; 3 `low` |
+| Trazabilidad editorial | 70 con registro legacy `APPROVED`; 40 con evidencia de expansión fuera de ese registro que debe unificarse antes de importar |
 | Fuentes estructuradas V4 | directorios `sources/` sin documentos |
 | Supabase | 121 filas visibles: 120 legacy y 1 V4 |
 | V4 activo en Supabase | 1 fila activa y aprobada |
 | Campos V4 persistidos | la fila V4 conserva `context`, explicaciones, `hint` y `learningNote` |
 | Seguridad DB | `anon` puede leer filas de `item_bank`, incluida clave y explicación |
-| Runtime público | disponible, commit `e43f612`; 149 commits detrás de `master` |
+| Runtime público | disponible, commit `e43f612`; al menos 178 commits detrás de la base online incorporada |
 | VPS administrativo | no verificado: cambió la huella SSH y debe confirmarse antes de conectar |
 
 ## 3. Decisiones de producto cerradas
@@ -53,7 +53,7 @@ los gates de seguridad y calidad permitan un canary posterior.
 2. Los bancos anteriores se conservan inactivos para historial y rollback técnico;
    no participan en selección ni Tutor.
 3. El primer alcance es exclusivamente docente.
-4. Los 90 reactivos permiten iniciar un piloto técnico, pero no acreditan cobertura
+4. Los 110 reactivos permiten iniciar un piloto técnico, pero no acreditan cobertura
    suficiente para todos los perfiles o categorías.
 5. El piloto inicial puede operar con `scope: general`; `opec_specific` queda como
    deuda explícita posterior.
@@ -415,7 +415,7 @@ romper la sesión.
 
 - Lectura anónima/autenticada directa de claves y explicaciones queda bloqueada.
 - `/api/session/item` no filtra explicación ni clave antes de responder.
-- 90/90 ítems V4 importados con cuatro opciones y metadatos completos.
+- 110/110 ítems V4 importados con cuatro opciones y metadatos completos.
 - Selector, práctica, evaluación y Tutor consumen exclusivamente V4.
 - Ausencia de inventario no provoca fallback legacy.
 - DTO pre/post y expedientes pre/post tienen pruebas de no filtración.

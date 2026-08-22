@@ -19,12 +19,28 @@ last_reviewed: 2026-08-22
 - Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
 - Update trigger: governance, delivery, documentation, drift
 
+## 2026-08-22 — Sprint 48 Bloque 0 en repo
+- tipo: security+database+api+test
+- modulo: question-bank/session/tutor/dashboard
+- resumen: Se implementa la frontera P0 server-only. El payload pre-respuesta deja
+  de consultar o serializar clave/explicación, la opción pasa a ser obligatoria y
+  el contrato posterior se entrega después de persistir. La migración `0020` revoca
+  tablas, vistas y RPC sensibles a roles cliente y conserva acceso de `service_role`.
+- agente: Codex
+- via: Codex Desktop / repositorio local
+- contributor: Marlon Medellin
+- environment: WSL local / master
+- validacion: typecheck, `test:security`, Tutor, dashboard y `git diff --check` PASS; suite completa/build pendientes de cierre
+- runtime-verified: no; migración y deploy no aplicados
+- relacionados: supabase/migrations/0020_secure_question_answer_boundary.sql, src/app/api/session/item/route.ts, src/app/api/session/advance/route.ts, scripts/verify-question-bank-boundary.ts
+- limitaciones: la exposición pública actual continúa hasta desplegar código y aplicar la migración en orden controlado.
+
 ## 2026-08-22
 - tipo: audit+prd+delivery+security
 - modulo: question-bank-v4/supabase/practice/tutor/openrouter
-- resumen: Se sincroniza `master` a `adef22e`, se audita la estructura completa
+- resumen: Se sincroniza la base de `master` a `8c4be39`, se audita la estructura completa
   del banco V4 sin revisar reactivos individuales y se define Sprint 48. Se verifica
-  que existen 90 V4 locales pero solo 1 V4 activa en Supabase publico, y se identifica
+  que existen 110 V4 locales pero solo 1 V4 activa en Supabase publico, y se identifica
   como P0 la lectura anonima de claves/explicaciones y el `rationale` pre-respuesta.
   OpenRouter queda aprobado solo para shadow gobernado, no para canary productivo.
 - agente: Codex
