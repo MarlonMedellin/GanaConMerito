@@ -1,0 +1,30 @@
+{
+  "id": "DOC-001206",
+  "scope": "general",
+  "domain": "gestion_educativa",
+  "topic": "evaluacion_desempeno_docente",
+  "competency": "planeacion_pedagogica",
+  "questionType": "technical_applied",
+  "cognitiveLevel": "apply",
+  "context": "Una rectoría diseña el cronograma de evaluación anual y propone una única reunión en diciembre para asignar la calificación definitiva, sin valoración intermedia ni comunicación previa al docente.",
+  "stem": "¿Qué ajuste debe hacer al cronograma para respetar la lógica de seguimiento prevista en el Decreto 3782?",
+  "options": {
+    "A": "Mantener una sola reunión y permitir que el docente entregue una autoevaluación escrita al final.",
+    "B": "Incluir una primera valoración hacia la mitad del año con las evidencias disponibles, comunicarla al evaluado y realizar una segunda valoración al final con las evidencias posteriores.",
+    "C": "Sustituir las valoraciones por una encuesta semestral de estudiantes y promediar sus resultados.",
+    "D": "Realizar valoraciones mensuales con calificación definitiva acumulativa, aunque la norma no prevea ese procedimiento."
+  },
+  "correctAnswer": "B",
+  "explanations": {
+    "A": "La autoevaluación final no reemplaza el seguimiento y las dos valoraciones previstas para el proceso anual.",
+    "B": "Es la mejor respuesta porque reproduce la estructura de valoración intermedia, comunicación y valoración final basada en evidencias.",
+    "C": "Una encuesta puede aportar información, pero no sustituye las valoraciones de competencias y el conjunto de evidencias.",
+    "D": "El seguimiento puede ser continuo, pero la regulación no exige convertir cada mes en una calificación definitiva acumulativa."
+  },
+  "hint": "La evaluación anual incluye seguimiento antes de la calificación final.",
+  "learningNote": "El proceso anual contempla una primera valoración a mitad del año académico y una segunda al final; la primera debe comunicarse al evaluado y ambas se sustentan en las evidencias recogidas en sus respectivos períodos.",
+  "source": {
+    "reference": "Decreto 3782 de 2007, artículo 20"
+  },
+  "estimatedDifficulty": "medium"
+}
