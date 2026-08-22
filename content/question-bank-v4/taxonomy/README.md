@@ -58,6 +58,10 @@ o un autor consolidado. No se agregan valores "por si acaso".
 | `rutas_de_atencion` | Ley 1620 de 2013; Decreto 1965 de 2013 (rutas de atención integral) |
 | `competencias_ciudadanas` | Estándares Básicos de Competencias Ciudadanas (MEN, 2004) |
 | `planeacion_curricular` | Ley 115 de 1994; lineamientos curriculares MEN |
+| `indagacion` | Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006), proceso de indagación |
+| `modelizacion` | Estándares Básicos de Competencias en Matemáticas (MEN, 2006), pensamiento variacional y formulación/resolución de problemas |
+| `argumentacion` | Estándares Básicos de Competencias en Lenguaje (MEN, 2006); Estándares Básicos de Competencias Ciudadanas (MEN, 2004) |
+| `comprension_lectora` | Estándares Básicos de Competencias en Lenguaje (MEN, 2006), comprensión e interpretación textual |
 
 ### `competencies.json`
 
