@@ -25,14 +25,33 @@ jobs:
         run: |
           python - <<'PY'
           import collections
-          import glob
           import json
-          import os
           import pathlib
           import re
           import statistics
           import subprocess
           import sys
+
+          def no_dupes(pairs, label):
+              out = {}
+              for key, value in pairs:
+                  if key in out:
+                      raise ValueError(f'{label}: duplicate JSON key {key}')
+                  out[key] = value
+              return out
+
+          def load_json(path):
+              text = path.read_text(encoding='utf-8')
+              return json.loads(text, object_pairs_hook=lambda pairs: no_dupes(pairs, str(path)))
+
+          def numeric_id(qid):
+              match = re.fullmatch(r'DOC-(\d{6})', qid)
+              if not match:
+                  raise ValueError(f'invalid id format {qid}')
+              return int(match.group(1))
+
+          def word_count(text):
+              return len(re.findall(r'\b\w+\b', str(text), flags=re.UNICODE))
 
           ROOT = pathlib.Path('content/question-bank-v4')
           ITEMS = ROOT / 'items' / 'docentes'
@@ -50,17 +69,16 @@ jobs:
               'DOC-001258','DOC-001259','DOC-001261','DOC-001265','DOC-001268',
               'DOC-001291','DOC-001294'
           }
-          all_retired = rejected | historical_retired
           replacements = {f'DOC-{n:06d}' for n in range(1295, 1305)}
           must_remain_active = {'DOC-001104','DOC-001110','DOC-001292','DOC-001293'}
 
           tax = {
-              'domain': set(json.load(open(ROOT/'taxonomy'/'domains.json', encoding='utf-8'))),
-              'topic': set(json.load(open(ROOT/'taxonomy'/'topics.json', encoding='utf-8'))),
-              'competency': set(json.load(open(ROOT/'taxonomy'/'competencies.json', encoding='utf-8'))),
-              'questionType': set(json.load(open(ROOT/'taxonomy'/'question-types.json', encoding='utf-8'))),
-              'cognitiveLevel': set(json.load(open(ROOT/'taxonomy'/'cognitive-levels.json', encoding='utf-8'))),
-              'estimatedDifficulty': set(json.load(open(ROOT/'taxonomy'/'difficulty-levels.json', encoding='utf-8'))),
+              'domain': set(load_json(ROOT/'taxonomy'/'domains.json')),
+              'topic': set(load_json(ROOT/'taxonomy'/'topics.json')),
+              'competency': set(load_json(ROOT/'taxonomy'/'competencies.json')),
+              'questionType': set(load_json(ROOT/'taxonomy'/'question-types.json')),
+              'cognitiveLevel': set(load_json(ROOT/'taxonomy'/'cognitive-levels.json')),
+              'estimatedDifficulty': set(load_json(ROOT/'taxonomy'/'difficulty-levels.json')),
           }
 
           required = {
@@ -86,7 +104,7 @@ jobs:
           files = sorted(ITEMS.glob('DOC-*.json'))
           for path in files:
               try:
-                  obj = json.load(open(path, encoding='utf-8'), object_pairs_hook=lambda pairs: _pairs_no_dupes(pairs, str(path)))
+                  obj = load_json(path)
               except Exception as exc:
                   errors.append(f'{path}: invalid JSON or duplicate key: {exc}')
                   continue
@@ -97,6 +115,11 @@ jobs:
                   continue
 
               qid = obj['id']
+              try:
+                  num = numeric_id(qid)
+              except Exception as exc:
+                  errors.append(f'{path}: {exc}')
+                  continue
               if qid in seen:
                   errors.append(f'{path}: duplicate id {qid}')
               seen.add(qid)
@@ -137,7 +160,7 @@ jobs:
                   length_outliers.append(rec)
                   if qid in replacements:
                       replacement_length_outliers.append(rec)
-              rows.append((numeric_id(qid), qid, obj['correctAnswer']))
+              rows.append((num, qid, obj['correctAnswer']))
 
           if len(files) != EXPECTED_COUNT:
               errors.append(f'active item count {len(files)} != {EXPECTED_COUNT}')
@@ -156,9 +179,8 @@ jobs:
           max_streak = 0
           streak = 0
           prev = None
-          streak_start = None
-          max_span = None
           current_start = None
+          max_span = None
           for _, qid, key in rows:
               if key == prev:
                   streak += 1
@@ -168,8 +190,7 @@ jobs:
                   prev = key
               if streak > max_streak:
                   max_streak = streak
-                  streak_start = current_start
-                  max_span = (streak_start, qid, key)
+                  max_span = [current_start, qid, key]
 
           cov_json = {k: dict(sorted(v.items())) for k,v in coverage.items()}
           key_json = {k: key_dist.get(k,0) for k in 'ABCD'}
@@ -184,7 +205,7 @@ jobs:
           }
 
           if SNAPSHOT.exists():
-              snap = json.load(open(SNAPSHOT, encoding='utf-8'))
+              snap = load_json(SNAPSHOT)
               if snap.get('itemCount') != len(files):
                   errors.append('snapshot itemCount does not match files')
               if snap.get('keyDistribution') != key_json:
@@ -197,10 +218,9 @@ jobs:
           if not AUDIT_JSON.exists() or not AUDIT_MD.exists():
               errors.append('historical adversarial audit artifacts missing')
 
-          # Scope control against the authoritative audit branch.
           try:
               subprocess.run([
-                  'git','fetch','origin','audit-v4-phase-a-b-adversarial-20260822:'
+                  'git','fetch','origin','audit-v4-phase-a-b-adversarial-20260822:',
                   'refs/remotes/origin/audit-v4-phase-a-b-adversarial-20260822'
               ], check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
               changed = subprocess.check_output([
@@ -217,8 +237,7 @@ jobs:
               unexpected = sorted(set(changed) - permitted_exact - permitted_items)
               if unexpected:
                   errors.append(f'out-of-scope changed files: {unexpected}')
-              forbidden_prefixes = ('src/','scripts/','supabase/')
-              forbidden = [x for x in changed if x.startswith(forbidden_prefixes)]
+              forbidden = [x for x in changed if x.startswith(('src/','scripts/','supabase/'))]
               if forbidden:
                   errors.append(f'forbidden paths changed: {forbidden}')
           except Exception as exc:
@@ -232,11 +251,4 @@ jobs:
                   print('ERROR:', e)
               sys.exit(1)
           print('QA_OK: remediated corpus is internally consistent and read-only checks passed')
-
-          def _unused():
-              pass
           PY
-        env:
-          PYTHONUNBUFFERED: '1'
-
-# Helper definitions are injected before execution by rewriting the heredoc below.
