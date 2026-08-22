@@ -41,7 +41,7 @@ o un autor consolidado. No se agregan valores "por si acaso".
 | `didactica` | Literatura pedagógica reconocida (MEN, autores consolidados) |
 | `gestion_educativa` | Ley 715 de 2001; Decreto 1075 de 2015 |
 | `normativa_educativa` | Ley 115 de 1994; Decreto 1075 de 2015 (compilatorio) |
-| `desarrollo_aprendizaje` | Piaget, Vygotsky, Ausubel (teorías del desarrollo y aprendizaje) |
+| `desarrollo_aprendizaje` | Piaget, Vygotsky, Ausubel; investigación contemporánea sobre aprendizaje y metacognición |
 | `practica_docente` | Decreto 1278 de 2002; marco ECDF/MEN |
 
 ### `topics.json`
@@ -68,6 +68,7 @@ o un autor consolidado. No se agregan valores "por si acaso".
 | `prae_proyectos_transversales` | Decreto 1743 de 1994; Proyecto Ambiental Escolar y transversalidad |
 | `funciones_y_jornada_docente` | Ley 715 de 2001; Decreto 1075 de 2015; Decreto 277 de 2025 |
 | `educacion_inicial_transicion` | Decreto 1411 de 2022; DBA para el grado Transición (MEN/UdeA) |
+| `aprendizaje_y_desarrollo_cognitivo` | Piaget (asimilación/acomodación), Vygotsky (ZDP), Ausubel (conocimiento previo/aprendizaje significativo) y EEF 2025 (metacognición y autorregulación) |
 | `razonamiento_cuantitativo` | ICFES, Marco de referencia del módulo Razonamiento Cuantitativo |
 | `indagacion` | Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006), proceso de indagación |
 | `modelizacion` | Estándares Básicos de Competencias en Matemáticas (MEN, 2006); ICFES, formulación y ejecución en Razonamiento Cuantitativo |
@@ -107,15 +108,21 @@ o un autor consolidado. No se agregan valores "por si acaso".
    funciones o conocimientos esenciales del empleo (seleccionar procedimiento,
    interpretar información o determinar una solución).
 
-## Estado de rama — expansión post-Sprint 48
+## Estado de rama — expansiones post-Sprint 48
 
-En `v4-post-sprint48-expansion` se añadieron, con justificación documentada en
-`EXPANSION-PHASE-B-HIGH-RETURN-20260822.md`, tres tópicos posteriores al corte
-congelado de 224 reactivos de `master`:
+En `v4-post-sprint48-expansion` se añadieron, con justificación editorial documentada,
+cuatro tópicos posteriores al corte congelado de 224 reactivos de `master`:
 
-- `competencias_comportamentales`;
-- `educacion_inicial_transicion`;
-- `razonamiento_cuantitativo`.
+- `competencias_comportamentales` (Fase B);
+- `educacion_inicial_transicion` (Fase B);
+- `razonamiento_cuantitativo` (Fase B);
+- `aprendizaje_y_desarrollo_cognitivo` (Fase C1).
+
+El tópico de C1 agrupa procesos de aprendizaje y cambio cognitivo que no pueden
+clasificarse honestamente como currículo, lectura, evaluación o didáctica específica:
+activación y conexión del conocimiento previo, ZDP y apoyos temporales, revisión de
+esquemas mediante asimilación/acomodación y regulación metacognitiva del aprendizaje.
+No se usa para cualquier estrategia pedagógica genérica.
 
 Estos valores pertenecen únicamente al trabajo de la rama hasta que exista una
 decisión explícita de integración. No modifican por sí solos el corte congelado de
