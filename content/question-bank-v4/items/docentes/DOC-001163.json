@@ -1,0 +1,30 @@
+{
+  "id": "DOC-001163",
+  "scope": "general",
+  "domain": "didactica",
+  "topic": "resolucion_de_problemas",
+  "competency": "decision_pedagogica",
+  "questionType": "reasoning",
+  "cognitiveLevel": "apply",
+  "context": "Un grupo comienza a resolver ecuaciones con fracciones. Los estudiantes aún son novatos y, cuando enfrentan un ejercicio completo sin apoyo, suelen perder el hilo entre un paso y otro aunque comprendan operaciones aisladas.",
+  "stem": "¿Qué secuencia didáctica favorece mejor el aprendizaje inicial sin convertir la clase en copia mecánica?",
+  "options": {
+    "A": "Asignar desde el inicio una lista extensa de problemas completos para que los estudiantes descubran por ensayo y error una forma eficiente de resolverlos.",
+    "B": "Explicar únicamente la regla general y pedir después que memoricen el procedimiento antes de observar cualquier aplicación concreta.",
+    "C": "Modelar uno o varios ejemplos resueltos explicando por qué se ejecuta cada paso, alternarlos con problemas semejantes y retirar progresivamente el apoyo a medida que aumenta la competencia.",
+    "D": "Resolver todos los ejercicios frente al grupo durante la unidad para evitar errores y dejar la práctica autónoma únicamente para la evaluación final."
+  },
+  "correctAnswer": "C",
+  "explanations": {
+    "A": "Para estudiantes novatos, una tarea completa sin apoyos puede consumir recursos cognitivos en búsquedas poco productivas y dificultar que identifiquen principios y pasos relevantes.",
+    "B": "La regla aislada no muestra cómo se aplica ni por qué los pasos se relacionan; memorizarla no garantiza comprensión del procedimiento.",
+    "C": "Es la mejor respuesta porque combina modelado y ejemplos resueltos con práctica guiada y una transferencia gradual de responsabilidad hacia el estudiante.",
+    "D": "Observar indefinidamente al docente mantiene la dependencia y no ofrece oportunidades suficientes para que el estudiante practique y automatice el procedimiento por sí mismo."
+  },
+  "hint": "Busca una secuencia que reduzca la carga inicial, haga visibles los pasos y después transfiera gradualmente la responsabilidad al estudiante.",
+  "learningNote": "Los ejemplos resueltos y el modelado son especialmente útiles al introducir tareas nuevas o complejas. Su propósito no es reemplazar la práctica, sino mostrar principios y procedimientos para que luego el estudiante practique con apoyo decreciente hasta alcanzar independencia.",
+  "source": {
+    "reference": "Rosenshine, B. (2012). Principles of Instruction: Research-Based Strategies That All Teachers Should Know. American Educator, 36(1), 12–19, 39"
+  },
+  "estimatedDifficulty": "medium"
+}
