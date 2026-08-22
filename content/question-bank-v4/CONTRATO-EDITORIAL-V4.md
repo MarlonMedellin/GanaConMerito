@@ -29,6 +29,7 @@ content/question-bank-v4/
 │   ├── topics.json
 │   ├── competencies.json
 │   └── question-types.json
+├── legacy-processing-register.csv
 ├── sources/
 │   ├── normative/
 │   └── academic/
@@ -97,12 +98,51 @@ Los estados de la fábrica no se guardan dentro de un archivo V4 final:
 entrada legacy → PRODUCE | DISCARD
 PRODUCE → auditor independiente → APPROVED | REJECTED
 APPROVED → serialización V4 → validación técnica → candidato a importación
+(tras cerrar cada entrada: registrar en legacy-processing-register.csv)
 ```
 
 Solo un ítem `APPROVED` y técnicamente válido se serializa. `DISCARD` y
 `REJECTED` no se convierten en preguntas incompletas ni entran al runtime.
 
-## 5. Calidad mínima
+## 5. Registro de procesamiento legacy (no reproceso)
+
+`legacy-processing-register.csv` es el registro maestro de no reproceso: una fila
+por cada entrada legacy ya procesada, con independencia del resultado. Lo
+diligencia el **orquestador** —no la fábrica ni el auditor, que solo devuelven
+JSON— tras cerrar cada entrada.
+
+Columnas:
+
+```text
+batch_id, processed_at, legacy_id, legacy_path, legacy_blob_sha,
+factory_agent, factory_decision, audit_agent, audit_decision,
+v4_item_id, v4_item_path, status, notes
+```
+
+Reglas:
+
+- **Una fila por entrada legacy**, tanto en `PRODUCE` como en `DISCARD`.
+- `batch_id`: identificador del lote (p. ej. `DOC-LEGACY-YYYYMMDD-NNN`).
+- `processed_at`: fecha `YYYY-MM-DD`.
+- `legacy_blob_sha`: SHA git del archivo legacy procesado
+  (`git rev-parse HEAD:<ruta>` o `git hash-object <ruta>`); permite deduplicar por
+  contenido aunque el archivo se mueva o se renombre.
+- `factory_agent`: identificador de la IA/agente que ejecutó la fase de creación
+  (fábrica), p. ej. `deepseek-v4-pro`, `Codex`, `GPT-5.3-Codex`.
+- `audit_agent`: identificador de la IA/agente que ejecutó la fase de auditoría.
+- `factory_decision`: `PRODUCE` o `DISCARD`.
+- `audit_decision`: `APPROVED`, `REJECTED` o `NOT_APPLICABLE` (para `DISCARD`).
+- `v4_item_id` / `v4_item_path`: solo con `PRODUCE` + `APPROVED`; vacíos en otro caso.
+- `status`: `processed_serialized` (aprobado y guardado) o `processed_discarded`.
+- Un `REJECTED` no es estado final: se resuelve con `REGENERATE_FROM_ZERO` (que,
+  si aprueba, queda `processed_serialized`) o `ABANDON` (queda `processed_discarded`).
+
+**Antes de procesar una entrada**, el orquestador consulta el registro por
+`legacy_id` (y confirma por `legacy_blob_sha`); si ya aparece, la omite: no se
+reprocesa. Este registro es la fuente del inventario de no reproceso y reemplaza
+cualquier carpeta `processed/` o marcador dentro de los archivos legacy.
+
+## 6. Calidad mínima
 
 Antes de serializar se exige fuente verificable, pertinencia de OPEC cuando
 corresponda, constructo relevante, una sola mejor respuesta, cuatro distractores
@@ -112,16 +152,17 @@ coherente y ausencia de duplicación conceptual frente al banco V4.
 La calidad psicométrica solo se confirma tras pilotaje. Hasta entonces,
 `estimatedDifficulty` no debe usarse para afirmar calibración estadística.
 
-## 6. Seguridad de producto
+## 7. Seguridad de producto
 
 La clave, explicaciones y `learningNote` son datos de evaluación. El cliente solo
 recibe contexto, stem, opciones y metadatos de presentación antes de contestar.
 El backend evalúa la respuesta y, después, puede entregar feedback autorizado.
 
-## 7. Fuentes de autoridad
+## 8. Fuentes de autoridad
 
 1. Este contrato para forma y reglas de ítems V4.
 2. Las cuatro skills en `docs/ai/skills/` para producción y auditoría.
 3. Los catálogos de `taxonomy/` para valores controlados.
 4. `docs/database/question-bank-v4-contract.md` para persistencia y activación.
 5. `docs/architecture/question-bank-v4-adoption.md` para el plan de integración.
+6. `legacy-processing-register.csv` para el no reproceso de entradas legacy.
