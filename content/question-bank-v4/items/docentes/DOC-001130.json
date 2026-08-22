@@ -1,0 +1,30 @@
+{
+  "id": "DOC-001130",
+  "scope": "general",
+  "domain": "evaluacion",
+  "topic": "evaluacion_formativa",
+  "competency": "resolucion_de_problemas",
+  "questionType": "reasoning",
+  "cognitiveLevel": "apply",
+  "context": "En mitad de una clase de ciencias, un docente plantea una pregunta breve diseñada para distinguir entre cuatro explicaciones posibles de un fenómeno. Las respuestas muestran que casi la mitad del grupo comparte la misma concepción errónea, mientras el resto se distribuye entre la explicación correcta y otros errores menos frecuentes. Aún quedan treinta minutos de clase.",
+  "stem": "¿Qué uso de esa evidencia es más coherente con una evaluación formativa integrada a la enseñanza?",
+  "options": {
+    "A": "Registrar los resultados como una nota corta y continuar la secuencia prevista para no alterar la planeación originalmente diseñada.",
+    "B": "Repetir exactamente la misma explicación inicial y aplicar al final la misma pregunta para comprobar si aumenta el porcentaje de respuestas correctas.",
+    "C": "Usar el patrón de respuestas para seleccionar una intervención que confronte la concepción dominante, promover contraste entre explicaciones y volver a recoger evidencia antes de continuar con el siguiente contenido.",
+    "D": "Revelar inmediatamente la respuesta correcta y pedir que todos la copien, porque identificar el error durante la clase ya cumple la función principal de la evaluación formativa."
+  },
+  "correctAnswer": "C",
+  "explanations": {
+    "A": "Convertir la evidencia en nota sin modificar la enseñanza desaprovecha su valor para tomar decisiones durante el proceso de aprendizaje.",
+    "B": "Repetir la misma explicación puede dejar intacta la concepción que produjo el error; la evidencia debería orientar una respuesta pedagógica diferente y deliberada.",
+    "C": "Es la mejor respuesta porque interpreta el patrón de respuestas, actúa sobre la dificultad detectada y comprueba nuevamente el aprendizaje antes de avanzar.",
+    "D": "Dar la respuesta puede corregir el producto inmediato, pero no necesariamente permite reconstruir la comprensión ni verificar que la concepción errónea haya cambiado."
+  },
+  "hint": "La pregunta no solo sirve para descubrir qué saben; sirve para decidir qué hacer en los minutos siguientes.",
+  "learningNote": "Las preguntas bisagra son útiles cuando se diseñan para revelar cómo están pensando los estudiantes y permiten tomar una decisión instruccional inmediata. La evaluación formativa ocurre cuando la evidencia cambia lo que docentes y estudiantes hacen a continuación.",
+  "source": {
+    "reference": "Wiliam, D. (2011). Embedded Formative Assessment. Solution Tree Press, capítulos 4 y 5"
+  },
+  "estimatedDifficulty": "medium"
+}
