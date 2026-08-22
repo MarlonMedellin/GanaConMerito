@@ -7,6 +7,12 @@ on:
     paths:
       - 'content/question-bank-v4/**'
       - '.github/workflows/v4-post-sprint48-qa.yml'
+  pull_request:
+    branches:
+      - audit-v4-phase-a-b-adversarial-20260822
+    paths:
+      - 'content/question-bank-v4/**'
+      - '.github/workflows/v4-post-sprint48-qa.yml'
   workflow_dispatch:
 
 permissions:
