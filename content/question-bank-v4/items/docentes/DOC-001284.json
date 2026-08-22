@@ -1,0 +1,30 @@
+{
+  "id": "DOC-001284",
+  "scope": "general",
+  "domain": "gestion_educativa",
+  "topic": "modelizacion",
+  "competency": "resolucion_de_problemas",
+  "questionType": "technical_applied",
+  "cognitiveLevel": "apply",
+  "context": "Para planear un taller, el costo total se representa mediante C(n) = 120000 + 8000n, donde n es el número de estudiantes participantes y C(n) está en pesos.",
+  "stem": "¿Cuál interpretación del modelo es correcta?",
+  "options": {
+    "A": "120000 representa un costo fijo independiente del número de estudiantes y 8000 es el costo adicional asociado a cada participante.",
+    "B": "120000 es el costo por cada estudiante y 8000 es un descuento que se aplica al total.",
+    "C": "El taller siempre cuesta 128000 pesos sin importar cuántos estudiantes asistan.",
+    "D": "El modelo indica que cada ocho estudiantes el costo disminuye en 120000 pesos."
+  },
+  "correctAnswer": "A",
+  "explanations": {
+    "A": "Es la mejor respuesta: el término constante representa la parte fija del costo y el coeficiente de n representa cuánto aumenta el costo por cada estudiante adicional.",
+    "B": "Intercambia los significados del término fijo y del término variable.",
+    "C": "El costo cambia con n; 128000 sería el valor únicamente cuando n = 1.",
+    "D": "La expresión muestra un aumento lineal y no una disminución periódica."
+  },
+  "hint": "Observa qué parte de la expresión cambia cuando cambia n y qué parte permanece constante.",
+  "learningNote": "Interpretar un modelo algebraico implica vincular cada término con una característica de la situación. En un modelo lineal de costo, un término puede representar el componente fijo y otro el cambio por unidad.",
+  "source": {
+    "reference": "ICFES, Marco de referencia del módulo Razonamiento Cuantitativo, competencia de formulación y ejecución; representación algebraica de situaciones"
+  },
+  "estimatedDifficulty": "medium"
+}
