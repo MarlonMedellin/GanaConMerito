@@ -149,10 +149,14 @@ El proveedor usa esquema estricto, allowlist de un solo proveedor, ZDR, denegaci
 de recolección, timeout, reintento transitorio y circuit breaker. Su ejecución se
 programa después de responder con el Tutor determinístico y solo persiste métricas
 minimizadas. Sin `OPENROUTER_API_KEY`, modelo, proveedor y flag explícitos queda
-desactivado. Gate 4 real permanece abierto hasta seleccionar endpoint, configurar
-un ambiente y ejecutar shadow contra OpenRouter. La selección inicial quedó fijada
-en `openai/gpt-4o-2024-08-06` sobre `azure`; la clave segura y la prueba real siguen
-pendientes.
+desactivado. La selección inicial quedó fijada en `openai/gpt-4o-2024-08-06`
+sobre `azure`; la credencial rotada quedó instalada localmente y la conectividad
+pasó. Gate 4 real permanece abierto hasta configurar y ejecutar shadow en runtime.
+
+Evidencia adicional 2026-08-22: conectividad local controlada PASS contra la
+combinación aprobada (HTTP 200 y esquema estricto válido; USD 0.000365). El flag
+shadow siguió en `0`; Gate 4 operativo permanece abierto hasta aplicar migración,
+configurar el VPS y observar turnos reales minimizados.
 
 1. Crear interfaz `TutorProvider`.
 2. Implementar `DeterministicTutorProvider` y `OpenRouterProvider`.

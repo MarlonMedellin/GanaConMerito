@@ -34,3 +34,19 @@ migraciones aplicadas, cohorte V4 activa, E2E autenticada ni runtime público. E
 p95 medido corresponde únicamente al orquestador determinístico local y no puede
 usarse para aprobar el gate de latencia del proveedor. Sprint 48 permanece abierto
 hasta completar esas validaciones operativas.
+
+## Conectividad OpenRouter controlada — 2026-08-22
+
+Se ejecutó una llamada local mínima sin datos de usuario, con el modelo
+`openai/gpt-4o-2024-08-06`, proveedor `Azure`, ZDR, denegación de recolección,
+sin fallback y JSON Schema estricto.
+
+- HTTP: 200;
+- esquema válido: sí;
+- tokens de entrada: 82;
+- tokens de salida: 16;
+- costo reportado: USD 0.000365.
+
+La clave no se imprimió ni se versionó. El flag shadow permaneció apagado. Esta
+prueba confirma credencial y endpoint local, no migraciones, persistencia de
+métricas, ejecución desde VPS ni comportamiento del runtime público.

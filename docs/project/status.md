@@ -122,7 +122,8 @@ aplicación remota, shadow real y E2E pendientes.
   scoring, avance y selección siguen fuera de su autoridad.
 - OpenRouter está integrado como shadow opt-in, no visible, con proveedor/modelo
   fijados en `openai/gpt-4o-2024-08-06`/`azure` y métricas minimizadas; falta una
-  clave segura nueva y no se ejecutó contra API real.
+  ejecución shadow en runtime. Una llamada local controlada con clave rotada pasó
+  HTTP 200 y JSON Schema estricto; no se verificó VPS ni producción.
 - La evaluación local cubre 120 escenarios y fallos mock; no sustituye métricas
   reales de latencia/costo ni E2E sobre una cohorte V4 activa.
 

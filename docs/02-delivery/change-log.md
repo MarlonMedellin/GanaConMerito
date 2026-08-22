@@ -103,6 +103,20 @@ last_reviewed: 2026-08-22
 - relacionados: src/lib/tutor/providers/openrouter-provider.ts, .env.example,
   docs/03-architecture/openrouter-shadow-provider-decision.md
 
+## 2026-08-22 — Conectividad OpenRouter local verificada
+- tipo: qa+security+llm
+- modulo: tutor-gcm/openrouter-shadow
+- resumen: Tras rotar la credencial expuesta, una llamada mínima sin datos de
+  usuario valida el modelo/proveedor aprobados, ZDR, no-fallback y JSON Schema.
+- agente: Codex
+- via: Codex Desktop / OpenRouter API
+- contributor: Marlon Medellin
+- environment: WSL local / master / shadow desactivado
+- validacion: HTTP 200; esquema válido; 82 tokens entrada; 16 salida; USD 0.000365
+- runtime-verified: no; conectividad local únicamente
+- relacionados: docs/04-quality/sprint-48-repo-evaluation-report.md,
+  docs/03-architecture/openrouter-shadow-provider-decision.md
+
 ## 2026-08-22 — Dominio canonico de runtime y QA
 - tipo: ops+qa+docs
 - modulo: runtime/e2e/auth
