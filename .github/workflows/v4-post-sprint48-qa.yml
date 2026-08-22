@@ -20,7 +20,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Validate 254-item expansion corpus read-only
+      - name: Validate remediated 254-item corpus read-only
         shell: bash
         run: |
           python - <<'PY'
@@ -28,10 +28,12 @@ jobs:
           import glob
           import json
           import re
+          import statistics
           import sys
 
           BASE = 'content/question-bank-v4'
           ITEM_GLOB = f'{BASE}/items/docentes/*.json'
+          SNAPSHOT = f'{BASE}/COVERAGE-AFTER-PHASE-B-REMEDIATION-20260822.json'
 
           def strict_pairs(pairs):
               out = {}
@@ -49,7 +51,6 @@ jobs:
           topics = load(f'{BASE}/taxonomy/topics.json')
           competencies = load(f'{BASE}/taxonomy/competencies.json')
           qtypes = load(f'{BASE}/taxonomy/question-types.json')
-
           allowed = {
               'domain': set(domains),
               'topic': set(topics),
@@ -65,9 +66,20 @@ jobs:
               'estimatedDifficulty'
           }
 
+          active_phase = [
+              'DOC-001256','DOC-001257','DOC-001260','DOC-001262','DOC-001263',
+              'DOC-001264','DOC-001266','DOC-001267','DOC-001269','DOC-001270',
+              'DOC-001271','DOC-001272','DOC-001273','DOC-001274','DOC-001275',
+              'DOC-001276','DOC-001277','DOC-001278','DOC-001279','DOC-001280',
+              'DOC-001281','DOC-001282','DOC-001283','DOC-001284','DOC-001285',
+              'DOC-001286','DOC-001287','DOC-001288','DOC-001289','DOC-001290'
+          ]
+          retired = {'DOC-001258','DOC-001259','DOC-001261','DOC-001265','DOC-001268'}
+
           counters = {key: collections.Counter() for key in allowed}
           errors = []
           ids = []
+          items = {}
           files = sorted(glob.glob(ITEM_GLOB))
 
           for path in files:
@@ -76,35 +88,34 @@ jobs:
               except Exception as exc:
                   errors.append(f'{path}: parse error: {exc}')
                   continue
-
-              ids.append(item.get('id'))
+              item_id = item.get('id')
+              ids.append(item_id)
+              items[item_id] = item
               if set(item) != required:
                   errors.append(f'{path}: top-level keys mismatch')
-              if not re.fullmatch(r'DOC-\d{6}', str(item.get('id', ''))):
+              if not re.fullmatch(r'DOC-\d{6}', str(item_id or '')):
                   errors.append(f'{path}: invalid id')
               if item.get('scope') != 'general':
                   errors.append(f'{path}: scope must be general')
               if 'opecId' in item:
                   errors.append(f'{path}: opecId forbidden for general item')
-
               for field, values in allowed.items():
                   value = item.get(field)
                   if value not in values:
                       errors.append(f'{path}: invalid {field}={value!r}')
                   counters[field][value] += 1
-
-              if set(item.get('options', {})) != {'A', 'B', 'C', 'D'}:
+              if set(item.get('options', {})) != {'A','B','C','D'}:
                   errors.append(f'{path}: options must be A-D')
-              if set(item.get('explanations', {})) != {'A', 'B', 'C', 'D'}:
+              if set(item.get('explanations', {})) != {'A','B','C','D'}:
                   errors.append(f'{path}: explanations must be A-D')
-              if item.get('correctAnswer') not in {'A', 'B', 'C', 'D'}:
+              if item.get('correctAnswer') not in {'A','B','C','D'}:
                   errors.append(f'{path}: invalid correctAnswer')
-              for letter in ('A', 'B', 'C', 'D'):
+              for letter in ('A','B','C','D'):
                   if not isinstance(item.get('options', {}).get(letter), str) or not item['options'][letter].strip():
                       errors.append(f'{path}: empty option {letter}')
                   if not isinstance(item.get('explanations', {}).get(letter), str) or not item['explanations'][letter].strip():
                       errors.append(f'{path}: empty explanation {letter}')
-              for field in ('context', 'stem', 'hint', 'learningNote'):
+              for field in ('context','stem','hint','learningNote'):
                   if not isinstance(item.get(field), str) or not item[field].strip():
                       errors.append(f'{path}: empty {field}')
               if set(item.get('source', {})) != {'reference'}:
@@ -116,33 +127,57 @@ jobs:
               errors.append(f'expected 254 items, got {len(files)}')
           if len(ids) != len(set(ids)):
               errors.append('duplicate ids')
+          missing_active = [x for x in active_phase if x not in ids]
+          if missing_active:
+              errors.append('missing active Phase B ids: ' + ','.join(missing_active))
+          leaked_retired = sorted(retired.intersection(ids))
+          if leaked_retired:
+              errors.append('retired rejected ids still serialized: ' + ','.join(leaked_retired))
 
-          phase_b = [f'DOC-{number:06d}' for number in range(1256, 1286)]
-          missing_b = [item_id for item_id in phase_b if item_id not in ids]
-          if missing_b:
-              errors.append('missing Phase B ids: ' + ','.join(missing_b))
+          key_distribution = collections.Counter(items[x]['correctAnswer'] for x in active_phase if x in items)
+          if dict(key_distribution) != {'A': 8, 'B': 8, 'C': 7, 'D': 7}:
+              errors.append(f'unbalanced Phase B key distribution: {dict(key_distribution)}')
 
-          expected_topics = {
-              'competencias_comportamentales': 8,
-              'comprension_lectora': 12,
-              'educacion_inicial_transicion': 6,
-              'razonamiento_cuantitativo': 6,
-              'modelizacion': 3,
-          }
-          for topic, expected in expected_topics.items():
-              actual = counters['topic'][topic]
-              if actual != expected:
-                  errors.append(f'expected topic {topic}={expected}, got {actual}')
+          keys = [items[x]['correctAnswer'] for x in active_phase if x in items]
+          longest_streak = 0
+          current = 0
+          previous = None
+          for key in keys:
+              current = current + 1 if key == previous else 1
+              longest_streak = max(longest_streak, current)
+              previous = key
+          if longest_streak > 3:
+              errors.append(f'Phase B answer-position streak too long: {longest_streak}')
 
-          snapshot = load(f'{BASE}/COVERAGE-AFTER-PHASE-B4-20260822.json')
+          shape_outliers = []
+          for item_id in active_phase:
+              if item_id not in items:
+                  continue
+              item = items[item_id]
+              answer = item['correctAnswer']
+              correct_len = len(item['options'][answer].split())
+              distractor_lens = [len(item['options'][x].split()) for x in 'ABCD' if x != answer]
+              med = statistics.median(distractor_lens)
+              if med and correct_len / med > 1.65:
+                  shape_outliers.append((item_id, correct_len, med))
+          if shape_outliers:
+              errors.append('correct-option length outliers: ' + ', '.join(f'{i}({c}/{m:g})' for i,c,m in shape_outliers))
+
+          snapshot = load(SNAPSHOT)
           if snapshot.get('frozenMasterItemCount') != 224:
               errors.append('snapshot frozenMasterItemCount must be 224')
-          if snapshot.get('phaseBItemCount') != 30:
-              errors.append('snapshot phaseBItemCount must be 30')
+          if snapshot.get('phaseBActiveItemCount') != 30:
+              errors.append('snapshot phaseBActiveItemCount must be 30')
           if snapshot.get('itemCount') != 254:
               errors.append('snapshot itemCount must be 254')
           if snapshot.get('errors') != []:
-              errors.append(f'snapshot errors must be [], got {snapshot.get("errors")!r}')
+              errors.append('snapshot errors must be []')
+          if snapshot.get('activePhaseIds') != active_phase:
+              errors.append('snapshot activePhaseIds mismatch')
+          if set(snapshot.get('retiredRejectedIds', [])) != retired:
+              errors.append('snapshot retiredRejectedIds mismatch')
+          if snapshot.get('keyDistribution') != {'A':8,'B':8,'C':7,'D':7}:
+              errors.append('snapshot keyDistribution mismatch')
 
           computed = {
               'domains': {key: counters['domain'][key] for key in domains},
@@ -155,14 +190,15 @@ jobs:
           if snapshot.get('coverage') != computed:
               errors.append('snapshot coverage differs from computed branch coverage')
 
-          report = {
+          print(json.dumps({
               'branch': 'v4-post-sprint48-expansion',
-              'frozenMasterItemCount': 224,
-              'phaseBItemCount': 30,
               'itemCount': len(files),
+              'activePhaseB': len(active_phase),
+              'keyDistribution': dict(key_distribution),
+              'longestAnswerStreak': longest_streak,
+              'shapeOutliers': shape_outliers,
               'errors': errors,
-          }
-          print(json.dumps(report, ensure_ascii=False, indent=2))
+          }, ensure_ascii=False, indent=2))
           if errors:
               sys.exit(1)
           PY

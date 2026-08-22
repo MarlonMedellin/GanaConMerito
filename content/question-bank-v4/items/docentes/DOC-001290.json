@@ -1,0 +1,30 @@
+{
+  "id": "DOC-001290",
+  "scope": "general",
+  "domain": "practica_docente",
+  "topic": "comprension_lectora",
+  "competency": "analisis_de_evidencia",
+  "questionType": "reading_analysis",
+  "cognitiveLevel": "analyze",
+  "context": "Un memorando presenta esta secuencia: ‘La asistencia a las tutorías bajó en las dos últimas semanas. En ese mismo periodo se trasladaron varias sesiones a un horario distinto. Antes de concluir que los estudiantes perdieron interés, conviene revisar si el nuevo horario coincide con otras actividades académicas’. ",
+  "stem": "¿Qué función cumple principalmente la última oración dentro del razonamiento del memorando?",
+  "options": {
+    "A": "Reemplaza los datos de asistencia por una opinión subjetiva y propone ignorar la disminución observada hasta contar con una explicación definitiva.",
+    "B": "Afirma que el cambio de horario causó necesariamente toda la disminución y descarta cualquier otra explicación relacionada con la participación estudiantil.",
+    "C": "Introduce una recomendación administrativa sobre los horarios, pero no modifica la interpretación de la evidencia presentada en las oraciones anteriores.",
+    "D": "Cuestiona una explicación precipitada y propone contrastarla con una variable alternativa antes de atribuir la disminución a falta de interés estudiantil."
+  },
+  "correctAnswer": "D",
+  "explanations": {
+    "A": "La última oración no elimina los datos; propone examinarlos con una explicación alternativa antes de formular una conclusión causal.",
+    "B": "El texto no afirma que el horario sea la causa demostrada, sino que su posible efecto debe revisarse antes de atribuir la baja a desinterés.",
+    "C": "La oración sí afecta la interpretación porque limita la inferencia causal que podría hacerse a partir de la disminución de asistencia.",
+    "D": "Es la mejor respuesta porque identifica la función crítica de la oración: introducir una explicación alternativa y frenar una atribución causal insuficientemente sustentada."
+  },
+  "hint": "Observa si la última oración confirma una causa, añade un dato independiente o limita una conclusión que todavía no está demostrada.",
+  "learningNote": "En un argumento, una oración puede funcionar como reserva crítica: introduce una variable alternativa o una condición que limita la conclusión. Reconocer esa función ayuda a distinguir evidencia de atribuciones causales no demostradas.",
+  "source": {
+    "reference": "ICFES, Marco de referencia del módulo Lectura Crítica Saber Pro, competencias de articulación de partes y reflexión y evaluación del contenido"
+  },
+  "estimatedDifficulty": "medium"
+}
