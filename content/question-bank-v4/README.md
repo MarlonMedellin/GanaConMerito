@@ -5,12 +5,12 @@ Banco maestro de preguntas nuevas del proyecto **GanaConMerito**.
 ## Estado actual
 
 **Corte:** 2026-08-22  
-**Reactivos docentes V4 válidos:** **170**  
-**Última expansión cerrada:** **100 reactivos nuevos / 10 dominios × 10**  
-**Snapshot de cobertura:** [`COVERAGE-AFTER-BATCH-10-20260822.json`](./COVERAGE-AFTER-BATCH-10-20260822.json)  
-**Cierre de expansión:** [`EXPANSION-CLOSURE-100-DOMINIOS-20260822.md`](./EXPANSION-CLOSURE-100-DOMINIOS-20260822.md)
+**Reactivos docentes V4 válidos:** **224**  
+**Última expansión cerrada:** **Fase A — 54 reactivos de alto retorno**  
+**Snapshot de cobertura:** [`COVERAGE-AFTER-PHASE-A-20260822.json`](./COVERAGE-AFTER-PHASE-A-20260822.json)  
+**Cierre de fase:** [`EXPANSION-PHASE-A-CLOSURE-54-20260822.md`](./EXPANSION-PHASE-A-CLOSURE-54-20260822.md)
 
-El snapshot final reporta `errors: []` y cobertura en los 10 dominios, 16 temas, 8 competencias, 7 tipos de pregunta y 4 niveles cognitivos canónicos. El siguiente identificador esperado para nuevas preguntas docentes es `DOC-001202`; siempre debe comprobarse que esté libre antes de usarlo.
+El snapshot final reporta `errors: []` y cobertura en los **10 dominios, 22 tópicos, 8 competencias, 7 tipos de pregunta y 4 niveles cognitivos** canónicos. La Fase A incorporó 54 reactivos (`DOC-001202`–`DOC-001255`) y seis tópicos nuevos justificados por necesidad editorial real: `evaluacion_desempeno_docente`, `carrera_docente`, `proteccion_integral`, `funciones_y_jornada_docente`, `prae_proyectos_transversales` y `gobierno_escolar_participacion`. El siguiente identificador esperado es `DOC-001256`; siempre debe comprobarse que esté libre antes de usarlo.
 
 ## Propósito
 
@@ -84,7 +84,9 @@ content/question-bank-v4/
 
 Los catálogos de `taxonomy/` son los valores preferidos para clasificar.
 Pueden ampliarse solo cuando un constructo genuinamente nuevo lo exija;
-nunca para inflar etiquetas.
+nunca para inflar etiquetas. Toda ampliación debe documentar la necesidad editorial
+y demostrar que reutilizar un tópico existente produciría una clasificación engañosa
+o excesivamente genérica.
 
 ## Calidad
 
