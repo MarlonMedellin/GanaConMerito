@@ -18,7 +18,7 @@ related:
 
 ## Estado
 
-**EN EJECUCIÓN — BLOQUE 0 IMPLEMENTADO EN REPO; APLICACIÓN REMOTA PENDIENTE.**
+**EN EJECUCIÓN — BLOQUE 0 PUBLICADO; BLOQUE 1 IMPLEMENTADO EN REPO, APLICACIÓN REMOTA PENDIENTE.**
 
 ## Objetivo
 
@@ -30,7 +30,7 @@ exponer respuestas, datos personales ni autoridad operativa al LLM.
 Este sprint termina con:
 
 - V4 como única fuente de selección runtime;
-- 110 preguntas V4 importadas y activables;
+- corpus V4 aprobado al corte importado e inicialmente inactivo;
 - contratos pre/post respuesta seguros;
 - exposición directa de `item_bank` corregida;
 - Tutor adaptado a campos V4;
@@ -73,10 +73,18 @@ de usuario autenticado para leer el banco.
 
 ### Bloque 1 — Importación V4 operativa (P0)
 
+Estado 2026-08-22: implementación y validación de repo completadas; Gate 1 remoto
+todavía abierto. El plan único valida el
+contrato y los catálogos, exige evidencia machine-checkable en el registro legacy
+o en un lote `APPROVED / CERRADO`, calcula hash reproducible y usa la RPC `0021`
+service-only. El lote editorial 07 ya cerró; la aplicación Supabase sigue pendiente.
+El dry-run vigente contiene 140 candidatos (70 registro legacy + 70 expansión),
+con plan hash `249adc2838994bcf5ce1ca95bee175134669e9532f975d0da7ae33b99bb2f613`.
+
 1. Unificar las validaciones de `content:validate:v4`, `--dry-run` y `--apply`.
 2. Parsear y validar `legacy-processing-register.csv`.
 3. Implementar la función SQL V4 idempotente y versionada.
-4. Importar 110/110 ítems inicialmente inactivos.
+4. Importar el 100 % del corpus aprobado al corte, inicialmente inactivo.
 5. Verificar A–D, metadatos V4, source path y aprobación.
 6. Crear reporte agregado de cobertura por taxonomía y perfil.
 
@@ -84,7 +92,7 @@ Gate 1:
 
 - dry-run y apply producen el mismo plan validado;
 - segunda importación no duplica filas;
-- Supabase contiene exactamente 110 V4 esperadas;
+- Supabase contiene exactamente las V4 aprobadas incluidas en el plan;
 - ninguna fila legacy fue borrada.
 
 ### Bloque 2 — Repositorio, DTO y selector V4 (P0)

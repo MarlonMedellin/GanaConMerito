@@ -24,7 +24,7 @@ El runtime publico canonico responde en `https://ganaconmerito.com` y reporta el
 `e43f612` con build time `2026-08-21 03:51:03 +0000 UTC`. El smoke publico de
 login y configuracion paso el 2026-08-22.
 
-La base online incorporada de `master` es `7baac9f`; el runtime esta 207
+La base online incorporada de `master` es `a97c4db`; el runtime esta 227
 commits detras de esa base, incluyendo el bloque de seguridad ya publicado.
 La administracion de VPS no fue verificada porque la huella SSH presentada cambio
 y debe confirmarse antes de aceptar la conexion.
@@ -47,9 +47,9 @@ ventana controlada.
 - `/api/session/item` devuelve `rationale` antes de responder.
 - La app sigue leyendo `v_item_bank_active`/`item_bank` con fallback legacy y no
   consume de forma nativa todos los campos V4.
-- El banco V4 local tiene 130 reactivos docentes validos al corte `7baac9f`, pero
-  mantiene cero documentos en `sources/`; calidad editorial no equivale a fuente
-  normativa verificada.
+- El banco V4 local tiene 140 reactivos estructuralmente validos y aprobados al
+  corte `a97c4db`. Mantiene cero documentos en `sources/`;
+  calidad editorial no equivale a fuente normativa verificada.
 - Persisten contratos y validaciones parcialmente narrativas fuera del baseline canonico.
 - La trazabilidad multiagente todavia no es enforcement obligatorio.
 - La integracion del Tutor con LLM real queda como deuda tecnica futura y no forma parte del cierre de Sprint 47.
@@ -107,7 +107,8 @@ contratos de practica/Tutor y runtime publico canonico auditados. VPS admin no v
 - El P0 de exposicion de respuestas precede importacion, corte V4 e integracion LLM.
 
 ### Evidencia y limites
-- 110/110 archivos V4 pasan validacion estructural; no se revisaron items individuales.
+- Al corte actual hay 140 archivos V4 estructuralmente válidos y con evidencia
+  cerrada para el plan de importación. No se revisaron items individuales.
 - El contraste Supabase fue de lectura publica, no administrativo.
 - No se aplicaron migraciones, no se importaron filas y no se desplego codigo.
 - `0020_secure_question_answer_boundary.sql`, contratos pre/post y pruebas de

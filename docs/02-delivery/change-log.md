@@ -35,6 +35,24 @@ last_reviewed: 2026-08-22
 - relacionados: playwright.config.ts, tests/e2e/, scripts/, .env.example, AGENTS.md,
   docs/05-ops/runtime-and-release.md
 
+## 2026-08-22 — Sprint 48 Bloque 1 en repo
+- tipo: database+content+test
+- modulo: question-bank-v4/import
+- resumen: Se reemplaza el importador narrativo por un plan reproducible que comparte
+  dry-run y apply, exige aprobación machine-checkable, calcula hashes y usa una RPC
+  idempotente service-only. Toda fila queda `draft`, inactiva y no publicada.
+- agente: Codex
+- via: Codex Desktop / repositorio local
+- contributor: Marlon Medellin
+- environment: WSL local / master
+- validacion: plan dry-run 140/140 con hash `249adc2838994bcf5ce1ca95bee175134669e9532f975d0da7ae33b99bb2f613`,
+  contrato SQL, validador V4, typecheck y suite local PASS
+- runtime-verified: no; `0021` y la importación no se aplicaron en Supabase
+- relacionados: scripts/lib/v4-import-plan.ts, scripts/import-question-bank-v4.ts,
+  scripts/v4-import-plan.test.ts, supabase/migrations/0021_upsert_question_bank_v4.sql
+- limitaciones: los lotes editoriales abiertos no se consideran aprobados ni importables;
+  Gate 1 remoto sigue abierto hasta aplicar/verificar `0021` en Supabase.
+
 ## 2026-08-22 — Sprint 48 Bloque 0 en repo
 - tipo: security+database+api+test
 - modulo: question-bank/session/tutor/dashboard

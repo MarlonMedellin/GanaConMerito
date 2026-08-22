@@ -415,7 +415,9 @@ romper la sesión.
 
 - Lectura anónima/autenticada directa de claves y explicaciones queda bloqueada.
 - `/api/session/item` no filtra explicación ni clave antes de responder.
-- 110/110 ítems V4 importados con cuatro opciones y metadatos completos.
+- 100 % de los ítems V4 con evidencia `APPROVED` al corte importados con cuatro
+  opciones y metadatos completos; los lotes abiertos quedan excluidos y bloquean
+  un cierre que pretenda incluirlos.
 - Selector, práctica, evaluación y Tutor consumen exclusivamente V4.
 - Ausencia de inventario no provoca fallback legacy.
 - DTO pre/post y expedientes pre/post tienen pruebas de no filtración.

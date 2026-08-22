@@ -1,40 +1,75 @@
-import fs from "node:fs/promises";
-import path from "node:path";
-import { getSupabaseAdminClient } from "../src/lib/supabase/admin";
-import { v4ItemSchema, type V4Item } from "../src/domain/content/v4-contract";
-
-async function files(dir: string): Promise<string[]> {
-  const entries = await fs.readdir(dir, { withFileTypes: true });
-  const result: string[] = [];
-  for (const entry of entries) {
-    const target = path.join(dir, entry.name);
-    if (entry.isDirectory()) result.push(...await files(target));
-    else if (entry.name.endsWith(".json")) result.push(target);
-  }
-  return result.sort();
-}
-
-function difficulty(value: V4Item["estimatedDifficulty"]) { return value === "low" ? 0.25 : value === "high" ? 0.75 : 0.5; }
+import { createClient } from "@supabase/supabase-js";
+import { buildV4ImportPlan } from "./lib/v4-import-plan";
 
 async function main() {
-  const dryRun = !process.argv.includes("--apply");
-  const root = process.cwd();
-  const base = path.join(root, "content/question-bank-v4");
-  const imported: string[] = [], rejected: Array<{ file: string; reason: string }> = [], existing: string[] = [];
-  const client = dryRun ? null : getSupabaseAdminClient();
-  for (const file of await files(path.join(base, "items"))) {
-    const relative = path.relative(root, file);
-    let item: V4Item;
-    try { item = v4ItemSchema.parse(JSON.parse(await fs.readFile(file, "utf8"))); }
-    catch (error) { rejected.push({ file: relative, reason: error instanceof Error ? error.message : String(error) }); continue; }
-    if (!file.startsWith(base + path.sep)) { rejected.push({ file: relative, reason: "source_path fuera de content/question-bank-v4" }); continue; }
-    if (dryRun) { imported.push(item.id); continue; }
-    const { data: found, error: lookupError } = await client!.from("item_bank").select("id").eq("slug", item.id.toLowerCase()).maybeSingle();
-    if (lookupError) throw lookupError;
-    if (found) { existing.push(item.id); continue; }
-    rejected.push({ file: relative, reason: "sin evidencia de auditoría APPROVED; la importación V4 exige aprobación" });
+  const apply = process.argv.includes("--apply");
+  const plan = await buildV4ImportPlan(process.cwd());
+
+  if (!apply) {
+    console.log(JSON.stringify({
+      mode: "dry-run",
+      candidateCount: plan.candidates.length,
+      planHash: plan.planHash,
+      approvedEvidence: {
+        legacyRegister: plan.candidates.filter((candidate) => candidate.approvalEvidence.kind === "legacy-register").length,
+        expansionBatch: plan.candidates.filter((candidate) => candidate.approvalEvidence.kind === "expansion-batch").length,
+      },
+      note: "No se modificó Supabase.",
+    }, null, 2));
+    return;
   }
-  console.log(JSON.stringify({ mode: dryRun ? "dry-run" : "apply", imported, existing, rejected, note: dryRun ? "No se modificó Supabase." : undefined }, null, 2));
-  if (rejected.length) process.exit(1);
+
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!url || !serviceRoleKey) {
+    throw new Error("Missing NEXT_PUBLIC_SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY for --apply.");
+  }
+
+  const client = createClient(url, serviceRoleKey, {
+    auth: { autoRefreshToken: false, persistSession: false },
+  });
+  let changed = 0;
+  let unchanged = 0;
+
+  for (const candidate of plan.candidates) {
+    const { data, error } = await client.rpc("upsert_content_item_v4", {
+      p_item: candidate.item,
+      p_source_path: candidate.sourcePath,
+      p_content_hash: candidate.contentHash,
+      p_approval_evidence: candidate.approvalEvidence.reference,
+    });
+    if (error) throw new Error(`${candidate.itemId}: ${error.message}`);
+    const result = Array.isArray(data) ? data[0] : data;
+    if (result?.changed) changed += 1;
+    else unchanged += 1;
+  }
+
+  const { data: verification, error: verificationError } = await client
+    .from("item_bank")
+    .select("content_id, status, is_active, approval_status, source_path")
+    .eq("bank_version", "v4")
+    .order("content_id");
+  if (verificationError) throw verificationError;
+
+  const expectedIds = new Set(plan.candidates.map((candidate) => candidate.itemId));
+  const rows = verification ?? [];
+  const missing = [...expectedIds].filter((itemId) => !rows.some((row) => row.content_id === itemId));
+  const unsafe = rows.filter((row) => row.status !== "draft" || row.is_active !== false || row.approval_status !== "approved");
+  if (rows.length !== plan.candidates.length || missing.length || unsafe.length) {
+    throw new Error(`V4 verification failed: rows=${rows.length}, missing=${missing.length}, unsafe=${unsafe.length}`);
+  }
+
+  console.log(JSON.stringify({
+    mode: "apply",
+    candidateCount: plan.candidates.length,
+    planHash: plan.planHash,
+    changed,
+    unchanged,
+    verifiedInactiveRows: rows.length,
+  }, null, 2));
 }
-main().catch((error) => { console.error(error); process.exit(1); });
+
+main().catch((error) => {
+  console.error(error instanceof Error ? error.message : error);
+  process.exit(1);
+});
