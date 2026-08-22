@@ -1,0 +1,30 @@
+{
+  "id": "DOC-001269",
+  "scope": "general",
+  "domain": "gestion_educativa",
+  "topic": "comprension_lectora",
+  "competency": "analisis_de_evidencia",
+  "questionType": "reading_analysis",
+  "cognitiveLevel": "analyze",
+  "context": "Un tablero de seguimiento presenta tres filas: ‘Asistencia: mejora sostenida’; ‘Entrega de actividades: sin cambio significativo’; ‘Participación en tutorías: aumento inicial y descenso en las últimas dos semanas’. En la conclusión alguien escribe: ‘Todos los indicadores muestran una mejora sostenida’. ",
+  "stem": "¿Qué lectura del tablero es correcta?",
+  "options": {
+    "A": "La conclusión resume fielmente las tres filas porque ningún indicador empeora desde el inicio.",
+    "B": "La conclusión es imprecisa: solo la asistencia muestra mejora sostenida; la entrega permanece estable y la participación en tutorías presenta una tendencia mixta.",
+    "C": "El tablero demuestra que las tutorías reducen la asistencia.",
+    "D": "La entrega de actividades es el indicador con mayor crecimiento porque no presenta descensos."
+  },
+  "correctAnswer": "B",
+  "explanations": {
+    "A": "La expresión ‘mejora sostenida’ no corresponde a los otros dos indicadores descritos.",
+    "B": "Es la mejor respuesta porque integra correctamente la información de las tres filas y detecta la generalización indebida de la conclusión.",
+    "C": "El tablero no establece relación causal entre tutorías y asistencia.",
+    "D": "‘Sin cambio significativo’ no equivale a crecimiento."
+  },
+  "hint": "Contrasta cada fila con la conclusión general y verifica si todas describen realmente la misma tendencia.",
+  "learningNote": "Los textos discontinuos exigen integrar categorías, tendencias y relaciones sin transformar estabilidad, variación o asociación en afirmaciones que los datos no sostienen.",
+  "source": {
+    "reference": "ICFES, Marco de referencia de la prueba Lectura Crítica Saber 11°, Saber TyT y Saber Pro; uso de textos discontinuos y evaluación de contenido"
+  },
+  "estimatedDifficulty": "medium"
+}
