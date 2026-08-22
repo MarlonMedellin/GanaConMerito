@@ -68,12 +68,26 @@ export function collectApprovalEvidence(
   }
   for (const document of expansionDocuments) {
     const hasExplicitClosure = /\*\*Estado:\*\*\s*APPROVED\s*\/\s*CERRADO/i.test(document.content);
-    const hasNarrativeClosure = /Se aprobaron y serializaron\s+\d+\s+reactivos/i.test(document.content);
+    const approvedCountMatch = document.content.match(/Se aprobaron y serializaron\s+(\d+)\s+reactivos/i);
+    const hasNarrativeClosure = Boolean(approvedCountMatch);
     if (!hasExplicitClosure && !hasNarrativeClosure) continue;
-    const ids = [...new Set(document.content
+    let ids = [...new Set(document.content
       .split(/\r?\n/)
       .map((line) => line.match(/^\|\s*((?:DOC|GEN)-\d{6})\s*\|/)?.[1])
       .filter((itemId): itemId is string => Boolean(itemId)))];
+    if (ids.length === 0 && approvedCountMatch) {
+      const range = document.content.match(/Rango:\s*`?((?:DOC|GEN)-(\d{6}))`?\s*[–-]\s*`?((?:DOC|GEN)-(\d{6}))`?/i);
+      if (!range || range[1].slice(0, 3) !== range[3].slice(0, 3)) continue;
+      const prefix = range[1].slice(0, 3);
+      const start = Number(range[2]);
+      const end = Number(range[4]);
+      const expectedCount = Number(approvedCountMatch[1]);
+      if (end < start || end - start + 1 !== expectedCount) continue;
+      ids = Array.from(
+        { length: expectedCount },
+        (_, offset) => `${prefix}-${String(start + offset).padStart(6, "0")}`,
+      );
+    }
     const batch = document.content.match(/(?:\*\*Batch:\*\*|^Lote:)\s*`([^`]+)`/im)?.[1]
       ?? document.sourcePath;
     for (const itemId of ids) evidence.set(itemId, { kind: "expansion-batch", reference: `${batch}:${itemId}` });

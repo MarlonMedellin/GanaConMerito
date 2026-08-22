@@ -49,6 +49,37 @@ test("closed narrative expansion reports authorize only IDs listed in their tabl
   assert.equal(evidence.has("DOC-123457"), false);
 });
 
+test("closed narrative expansion reports may authorize a count-matched contiguous range", () => {
+  const evidence = collectApprovalEvidence(
+    "batch_id,factory_decision,audit_decision,v4_item_id,v4_item_path,status\n",
+    [{
+      sourcePath: "content/question-bank-v4/EXPANSION-BATCH-09.md",
+      content: [
+        "Lote: `DOC-EXPANSION-009`",
+        "Rango: `DOC-123460`–`DOC-123462`",
+        "Se aprobaron y serializaron 3 reactivos nuevos sobre:",
+      ].join("\n"),
+    }],
+  );
+
+  assert.deepEqual(
+    [...evidence.keys()],
+    ["DOC-123460", "DOC-123461", "DOC-123462"],
+  );
+});
+
+test("a range whose size differs from the approved count authorizes nothing", () => {
+  const evidence = collectApprovalEvidence(
+    "batch_id,factory_decision,audit_decision,v4_item_id,v4_item_path,status\n",
+    [{
+      sourcePath: "content/question-bank-v4/EXPANSION-BATCH-BAD.md",
+      content: "Rango: `DOC-123460`–`DOC-123462`\nSe aprobaron y serializaron 2 reactivos nuevos.",
+    }],
+  );
+
+  assert.equal(evidence.size, 0);
+});
+
 test("V4 upsert remains service-only, idempotent and inactive by default", async () => {
   const migration = await readFile(
     "supabase/migrations/0021_upsert_question_bank_v4.sql",
