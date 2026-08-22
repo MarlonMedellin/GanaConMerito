@@ -43,10 +43,11 @@ Siguiente bloque propuesto:
 - **Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (en ejecución).**
 - P0: retirar lectura anonima/autenticada directa de claves y explicaciones y
   eliminar `rationale` del payload previo a responder.
-- P0: importar y activar de forma controlada 110/110 V4; hoy Supabase publico muestra 1/110.
-- P0: usar exclusivamente V4 en practica/seleccion, sin fallback legacy silencioso.
-- P1: consumir todos los campos V4 en UI, feedback y expediente del Tutor.
-- P1: integrar OpenRouter en shadow con salida estructurada, ZDR, allowlist y
+- P0: aplicar importación y activar de forma controlada el corte congelado 224/224;
+  el repo está listo, Supabase remoto sigue pendiente.
+- P0: desplegar y validar el selector exclusivo V4, sin fallback legacy silencioso.
+- P1: validar en runtime los campos V4 ya integrados en UI, feedback y Tutor.
+- P1: ejecutar OpenRouter shadow real sobre la integración con salida estructurada, ZDR, allowlist y
   fallback deterministico.
 
 Estado beta vigente:

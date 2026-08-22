@@ -171,6 +171,12 @@ Gate 4:
 
 ### Bloque 5 — Evaluación y cierre de repo (P1)
 
+Estado 2026-08-22: cierre de repo completado. La suite ejecuta 120 escenarios
+pre/post y adversariales, más fallos OpenRouter mock (timeout, 429, 5xx, JSON
+inválido y salida insegura). Typecheck, suite completa, build y validaciones V4 y
+documental pasan. Gate 5 real sigue abierto: no hay métricas de proveedor real,
+Supabase aplicado, cohorte activa, E2E autenticada ni despliegue.
+
 1. Construir 100–200 escenarios de turno sobre contratos V4.
 2. Incluir pre/post respuesta, prompt injection, extracción de secretos,
    normativa ausente, timeout, 429, 5xx y JSON inválido.

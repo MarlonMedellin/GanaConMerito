@@ -105,6 +105,7 @@ export class OpenRouterProvider implements TutorProvider<TutorShadowExecution> {
   constructor(
     private readonly config: OpenRouterConfig,
     private readonly fetchImpl: FetchLike = fetch,
+    private readonly timeoutMs = TIMEOUT_MS,
   ) {}
 
   async generate(input: TutorTurnRequest): Promise<TutorShadowExecution> {
@@ -115,7 +116,7 @@ export class OpenRouterProvider implements TutorProvider<TutorShadowExecution> {
 
     for (let attempt = 0; attempt < 2; attempt += 1) {
       const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), TIMEOUT_MS);
+      const timeout = setTimeout(() => controller.abort(), this.timeoutMs);
       try {
         const response = await this.fetchImpl("https://openrouter.ai/api/v1/chat/completions", {
           method: "POST",
@@ -192,4 +193,9 @@ export function getOpenRouterShadowConfig(env: Record<string, string | undefined
     model: env.OPENROUTER_MODEL,
     provider: env.OPENROUTER_PROVIDER,
   };
+}
+
+export function resetOpenRouterCircuitForTests() {
+  consecutiveFailures = 0;
+  circuitOpenedAt = 0;
 }

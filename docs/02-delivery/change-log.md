@@ -71,6 +71,23 @@ last_reviewed: 2026-08-22
 - relacionados: src/lib/tutor/providers/, src/lib/tutor/tutor-shadow-runner.ts,
   src/app/api/tutor/turn/route.ts, supabase/migrations/0023_tutor_shadow_metrics.sql
 
+## 2026-08-22 — Sprint 48 Bloque 5 y cierre de repo
+- tipo: qa+security+delivery
+- modulo: tutor-gcm/v4-runtime
+- resumen: Se completa una matriz local de 120 escenarios gobernados y
+  adversariales, junto con fallos mock de OpenRouter. El repositorio queda completo
+  para los bloques 0–5, sin declarar cerrados los gates remotos.
+- agente: Codex
+- via: Codex Desktop / repositorio local
+- contributor: Marlon Medellin
+- environment: WSL local / master
+- validacion: 120/120 escenarios PASS; timeout, 429, 5xx, JSON inválido y salida
+  peligrosa usan fallback; suite completa, build, V4 y docs PASS al cierre
+- runtime-verified: no
+- relacionados: src/lib/tutor/sprint-48-shadow-evaluation.test.ts,
+  src/lib/tutor/openrouter-provider.test.ts,
+  docs/04-quality/sprint-48-repo-evaluation-report.md
+
 ## 2026-08-22 — Dominio canonico de runtime y QA
 - tipo: ops+qa+docs
 - modulo: runtime/e2e/auth

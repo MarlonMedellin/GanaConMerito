@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import type { TutorTurnRequest } from "../../types/tutor-turn";
-import { buildMinimizedShadowDossier, getOpenRouterShadowConfig, OpenRouterProvider } from "./providers/openrouter-provider";
+import { buildMinimizedShadowDossier, getOpenRouterShadowConfig, OpenRouterProvider, resetOpenRouterCircuitForTests } from "./providers/openrouter-provider";
 
 const input: TutorTurnRequest = {
   userId: "private-user-id",
@@ -85,6 +85,7 @@ test("OpenRouter request fixes provider privacy controls and strict schema", asy
 });
 
 test("unsafe pre-answer output is rejected and shadow stays opt-in", async () => {
+  resetOpenRouterCircuitForTests();
   const fetchMock = async () => new Response(JSON.stringify({
     choices: [{ message: { content: JSON.stringify({
       schemaVersion: "tutor-shadow-v1",
@@ -102,4 +103,44 @@ test("unsafe pre-answer output is rejected and shadow stays opt-in", async () =>
   assert.equal((await provider.generate(input)).status, "rejected");
   assert.equal(getOpenRouterShadowConfig({}), null);
   assert.equal(getOpenRouterShadowConfig({ GCM_TUTOR_LLM_SHADOW: "1", OPENROUTER_API_KEY: "x" }), null);
+});
+
+test("OpenRouter retries one transient 429 or 5xx and rejects invalid JSON", async () => {
+  for (const status of [429, 503]) {
+    resetOpenRouterCircuitForTests();
+    let calls = 0;
+    const fetchMock = async () => {
+      calls += 1;
+      return new Response(calls === 1 ? "transient" : "still unavailable", { status });
+    };
+    const provider = new OpenRouterProvider(
+      { apiKey: "test-secret", model: "approved/model", provider: "approved-provider" },
+      fetchMock as typeof fetch,
+    );
+    assert.equal((await provider.generate(input)).errorCode, `http_${status}`);
+    assert.equal(calls, 2);
+  }
+
+  resetOpenRouterCircuitForTests();
+  const invalidJsonProvider = new OpenRouterProvider(
+    { apiKey: "test-secret", model: "approved/model", provider: "approved-provider" },
+    (async () => new Response("not-json", { status: 200 })) as typeof fetch,
+  );
+  assert.equal((await invalidJsonProvider.generate(input)).errorCode, "invalid_json");
+});
+
+test("OpenRouter applies a hard timeout and fails closed", async () => {
+  resetOpenRouterCircuitForTests();
+  const fetchMock = ((_url: string | URL | Request, init?: RequestInit) => new Promise<Response>((_resolve, reject) => {
+    init?.signal?.addEventListener("abort", () => reject(new DOMException("Aborted", "AbortError")));
+  })) as typeof fetch;
+  const provider = new OpenRouterProvider(
+    { apiKey: "test-secret", model: "approved/model", provider: "approved-provider" },
+    fetchMock,
+    5,
+  );
+  const result = await provider.generate(input);
+  assert.equal(result.status, "failed");
+  assert.equal(result.errorCode, "network_or_timeout");
+  assert.ok(result.latencyMs < 500);
 });
