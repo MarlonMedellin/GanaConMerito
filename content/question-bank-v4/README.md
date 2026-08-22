@@ -8,20 +8,21 @@ Banco maestro de preguntas nuevas del proyecto **GanaConMerito**.
 **Corte congelado en `master` para Sprint 48:** **224 reactivos aprobados**  
 **Rama de expansión:** `v4-post-sprint48-expansion`  
 **Corpus físico en la rama:** **254 reactivos**  
-**Aprobados editoriales efectivos en la rama:** **249**  
-**Fase:** **Fase B auditada — 25 APPROVED / 5 REJECTED; lote BLOQUEADO**  
-**Rango nuevo:** **`DOC-001256`–`DOC-001285`**  
-**Snapshot material B4:** [`COVERAGE-AFTER-PHASE-B4-20260822.json`](./COVERAGE-AFTER-PHASE-B4-20260822.json)  
-**Auditoría adversarial:** [`AUDIT-PHASE-B-20260822.md`](./AUDIT-PHASE-B-20260822.md)  
-**Plan y gate:** [`EXPANSION-PHASE-B-HIGH-RETURN-20260822.md`](./EXPANSION-PHASE-B-HIGH-RETURN-20260822.md)
+**Aprobados editoriales efectivos en la rama:** **254**  
+**Fase:** **Fase B cerrada y reauditada — 30/30 APPROVED**  
+**IDs activos de Fase B:** 25 supervivientes de `DOC-001256`–`DOC-001285` + `DOC-001286`–`DOC-001290`  
+**IDs retirados/no reutilizables:** `DOC-001258`, `DOC-001259`, `DOC-001261`, `DOC-001265`, `DOC-001268`  
+**Snapshot vigente:** [`COVERAGE-AFTER-PHASE-B-REMEDIATION-20260822.json`](./COVERAGE-AFTER-PHASE-B-REMEDIATION-20260822.json)  
+**Reauditoría:** [`REAUDIT-PHASE-B-REMEDIATED-20260822.md`](./REAUDIT-PHASE-B-REMEDIATED-20260822.md)  
+**Plan de Fase B:** [`EXPANSION-PHASE-B-HIGH-RETURN-20260822.md`](./EXPANSION-PHASE-B-HIGH-RETURN-20260822.md)
 
-`master` permanece congelada en 224 reactivos durante Sprint 48. Los 30 archivos de Fase B existen únicamente en `v4-post-sprint48-expansion` y no representan activación, importación ni cambio del corte productivo.
+`master` permanece congelada en 224 reactivos durante Sprint 48. La rama mantiene 254 reactivos activos: los 224 del corte congelado más 30 reactivos aprobados de Fase B. Los cinco reactivos rechazados en la primera auditoría fueron retirados sin reutilizar sus IDs y sustituidos por cinco reactivos nuevos creados desde cero.
 
-La auditoría adversarial posterior a B4 aprobó individualmente 25 reactivos y rechazó 5: `DOC-001258`, `DOC-001259`, `DOC-001261`, `DOC-001265` y `DOC-001268`. Los rechazos responden a clasificación de competencia/tipo o demanda cognitiva, no a errores de vigencia de las fuentes.
+La reauditoría final deja la distribución de claves de Fase B en `A=8`, `B=8`, `C=7`, `D=7`, con racha máxima de 3 y sin outliers de longitud de la alternativa correcta por encima del umbral de 1,65 frente a la mediana de distractores.
 
-Además, la Fase B falla como lote por integridad de opciones: las claves del delta de 30 están distribuidas `A=11`, `B=17`, `C=2`, `D=0`, con recurrencia de alternativas correctas más desarrolladas que los distractores. Por tanto, **no se autoriza B5 ni el uso de `DOC-001286`** hasta resolver los rechazados, controlar pistas de forma y reauditar el delta.
+La taxonomía de esta rama incorporó tres tópicos con justificación editorial fuerte: `competencias_comportamentales`, `educacion_inicial_transicion` y `razonamiento_cuantitativo`. B2 reutilizó `comprension_lectora`, y B4 reutilizó `modelizacion` solo cuando el reactivo realmente construye o interpreta un modelo.
 
-La taxonomía de esta rama incorporó tres tópicos con justificación editorial fuerte: `competencias_comportamentales`, `educacion_inicial_transicion` y `razonamiento_cuantitativo`. B2 reutilizó `comprension_lectora`, y B4 reutilizó `modelizacion` solo cuando el reactivo realmente construye o interpreta un modelo. La documentación detallada está sincronizada en `taxonomy/README.md`.
+**Fase B está cerrada.** No se extiende mediante un B5 por inercia de volumen. La siguiente expansión, si se justifica con cobertura y valor editorial, debe abrir una fase distinta. El próximo identificador nunca usado disponible es `DOC-001291`.
 
 ## Propósito
 
@@ -84,7 +85,7 @@ content/question-bank-v4/
 - **Sin subcarpetas por tema, competencia, OPEC o dificultad.** Esas dimensiones son
   metadatos; la selección para prácticas, simulacros o tutoría la hace el backend.
 - **Nunca sobrescribir un id.** El siguiente identificador se determina leyendo el
-  directorio destino (`DOC-000001`, `DOC-000002`, …).
+  directorio destino (`DOC-000001`, `DOC-000002`, …). Un `REJECTED` no libera su identificador.
 - **Sin deuda editorial:** no se almacenan borradores, placeholders, registros de
   descarte ni preguntas parciales.
 - **Evidencia verificable:** toda afirmación sustantiva se apoya en fuente oficial o

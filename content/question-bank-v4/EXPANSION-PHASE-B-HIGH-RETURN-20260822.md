@@ -3,35 +3,56 @@
 **Rama:** `v4-post-sprint48-expansion`  
 **Fecha:** 2026-08-22  
 **Base congelada en `master`:** 224 reactivos aprobados  
-**Estado:** **AUDITADA Y BLOQUEADA — 25 APPROVED / 5 REJECTED; B5 NO AUTORIZADO**  
+**Estado:** **CERRADA Y REAUDITADA — 30/30 APPROVED**  
 **Corpus físico de rama:** 254 reactivos.  
-**Auditoría:** [`AUDIT-PHASE-B-20260822.md`](./AUDIT-PHASE-B-20260822.md)
+**Reauditoría final:** [`REAUDIT-PHASE-B-REMEDIATED-20260822.md`](./REAUDIT-PHASE-B-REMEDIATED-20260822.md)
 
 ## Regla de aislamiento
 
-`master` permanece congelada en 224 reactivos durante Sprint 48. Ningún reactivo de esta fase debe llegar a `master` por escritura directa. La rama se usa para investigar, producir, auditar y medir una expansión posterior.
+`master` permanece congelada en 224 reactivos durante Sprint 48. Ningún reactivo de esta fase debe llegar a `master` por escritura directa. La rama se usa para investigar, producir, auditar y medir expansiones posteriores.
 
-## Microbloques ejecutados y auditados
+## Microbloques ejecutados
 
-| Bloque | Rango | Nuevos | Núcleo | Decisión taxonómica | Auditoría individual |
-|---|---|---:|---|---|---|
-| B1 | `DOC-001256`–`DOC-001263` | 8 | Competencias comportamentales profesionales | nuevo `competencias_comportamentales` | **5 APPROVED / 3 REJECTED** |
-| B2 | `DOC-001264`–`DOC-001271` | 8 | Lectura crítica profesional | reutiliza `comprension_lectora` | **6 APPROVED / 2 REJECTED** |
-| B3 | `DOC-001272`–`DOC-001277` | 6 | Educación inicial y transición | nuevo `educacion_inicial_transicion` | **6 APPROVED / 0 REJECTED** |
-| B4 | `DOC-001278`–`DOC-001285` | 8 | Razonamiento cuantitativo, datos y modelización | nuevo `razonamiento_cuantitativo`; `modelizacion` solo para modelos reales | **8 APPROVED / 0 REJECTED** |
-| **Total** | `DOC-001256`–`DOC-001285` | **30** |  |  | **25 APPROVED / 5 REJECTED** |
+| Bloque | Núcleo | Activos aprobados | Decisión taxonómica |
+|---|---|---:|---|
+| B1 | Competencias comportamentales profesionales | 8 | nuevo `competencias_comportamentales` |
+| B2 | Lectura crítica profesional | 8 | reutiliza `comprension_lectora` |
+| B3 | Educación inicial y transición | 6 | nuevo `educacion_inicial_transicion` |
+| B4 | Razonamiento cuantitativo, datos y modelización | 8 | nuevo `razonamiento_cuantitativo`; reutiliza `modelizacion` |
+| **Total** |  | **30** | **30/30 APPROVED** |
 
-## Criterio para ampliar tópicos
+## Trazabilidad de remediación
 
-Solo se amplía `topics.json` cuando reutilizar un tópico vigente describiría falsamente el constructo o volvería a inflar una categoría genérica. No se crean sinónimos taxonómicos.
+La primera auditoría (`AUDIT-PHASE-B-20260822.md`) rechazó cinco reactivos: `DOC-001258`, `DOC-001259`, `DOC-001261`, `DOC-001265` y `DOC-001268`.
 
-### Ampliaciones justificadas
+De acuerdo con la regla de IDs inmutables y con la disposición `REGENERATE_FROM_ZERO`:
 
-- `competencias_comportamentales`: constructo profesional específico definido en Decreto 3782 de 2007 y Guía MEN No. 31; no equivale a competencias ciudadanas ni a evaluación del desempeño.
-- `educacion_inicial_transicion`: marco pedagógico y normativo específico para menores de seis años, grados prejardín/jardín/transición y DBA propios; no equivale a comprensión lectora ni a planeación curricular genérica.
-- `razonamiento_cuantitativo`: constructo ICFES para interpretar/representar, formular/ejecutar y argumentar con información cuantitativa en contextos reales; no equivale a `modelizacion`, que solo se usa cuando el reactivo construye o interpreta un modelo.
+- esos cinco IDs se retiraron del corpus y no se reutilizan;
+- se generaron desde cero `DOC-001286`–`DOC-001290`;
+- los cinco nuevos reactivos aprobaron la reauditoría;
+- el corpus permanece en 254 archivos porque se retiraron 5 y se incorporaron 5.
 
-B2 no amplió taxonomía: `comprension_lectora` ya describe correctamente lectura crítica profesional. `modelizacion` se conservó como tópico específico y pasó de 1 a 3 reactivos.
+## Integridad del lote final
+
+Snapshot: `COVERAGE-AFTER-PHASE-B-REMEDIATION-20260822.json`.
+
+- `master`: **224** aprobados y congelados.
+- rama: **254** aprobados.
+- Fase B activa: **30**.
+- claves: **A=8, B=8, C=7, D=7**.
+- racha máxima de una misma clave: **3**.
+- outliers de longitud de clave (>1,65 × mediana de distractores): **0**.
+- QA: `.github/workflows/v4-post-sprint48-qa.yml`, solo lectura (`contents: read`).
+
+## Cobertura temática lograda
+
+- `competencias_comportamentales`: 8.
+- `comprension_lectora`: 12 en el banco total.
+- `educacion_inicial_transicion`: 6.
+- `razonamiento_cuantitativo`: 6.
+- `modelizacion`: 3 en el banco total.
+
+Las tres ampliaciones taxonómicas de Fase B permanecen justificadas por necesidad editorial real y están documentadas en `taxonomy/README.md`.
 
 ## Fuentes rectoras verificadas
 
@@ -40,8 +61,7 @@ B2 no amplió taxonomía: `comprension_lectora` ya describe correctamente lectur
 - MEN, Guía No. 31 — Guía Metodológica Evaluación Anual de Desempeño Laboral.
 
 ### B2 — Lectura crítica profesional
-- ICFES, Marco de referencia de la prueba Lectura Crítica Saber 11°, Saber TyT y Saber Pro.
-- ICFES, guías vigentes: comprensión local, articulación global y reflexión/evaluación; textos continuos y discontinuos.
+- ICFES, Marco de referencia de Lectura Crítica Saber 11°, Saber TyT y Saber Pro.
 
 ### B3 — Educación inicial y transición
 - Decreto 1411 de 2022, incorporado al Decreto 1075 de 2015.
@@ -49,32 +69,18 @@ B2 no amplió taxonomía: `comprension_lectora` ya describe correctamente lectur
 
 ### B4 — Razonamiento cuantitativo y modelización
 - ICFES, Marco de referencia del módulo Razonamiento Cuantitativo.
-- ICFES: interpretación y representación, formulación y ejecución, argumentación.
 
-## Cobertura material tras B4
+## Decisión sobre B5
 
-Snapshot: `COVERAGE-AFTER-PHASE-B4-20260822.json`.
+**No se abre B5.** Los cuatro vacíos de alta rentabilidad definidos para Fase B ya fueron cubiertos y auditados. Extender la fase con temas de prioridad inferior convertiría la cuota de volumen en criterio editorial, contrario al contrato V4.
 
-- `master`: **224** aprobados y congelados.
-- rama: **254 archivos**.
-- Fase B materializada: **30**.
-- Fase B aprobada individualmente: **25**.
-- Fase B rechazada: **5** (`DOC-001258`, `DOC-001259`, `DOC-001261`, `DOC-001265`, `DOC-001268`).
-- aprobados editoriales efectivos en la rama: **249** hasta resolver los rechazados.
+La siguiente expansión debe abrir una **Fase C selectiva**, con un plan independiente y un argumento de cobertura explícito. El próximo ID nunca usado disponible es `DOC-001291`.
 
-## Gate de lote tras auditoría
+## Gates que se heredan a la siguiente fase
 
-La Fase B **NO está aprobada para promoción** aunque 25 reactivos hayan pasado individualmente. La distribución de claves del delta es `A=11`, `B=17`, `C=2`, `D=0`, y se detectó recurrencia de alternativas correctas más desarrolladas que sus distractores. Antes de cualquier B5 debe resolverse este patrón y reauditarse el delta completo.
-
-## Gate antes de cualquier B5
-
-1. No usar `DOC-001286`.
-2. Resolver los cinco `REJECTED` mediante `REGENERATE_FROM_ZERO` o `ABANDON`, sin parche incremental.
-3. Aplicar control de integridad de opciones a los 25 `APPROVED`; si alguno falla por pistas de forma, se rechaza y regenera desde cero.
-4. Recalcular cobertura y claves.
-5. Ejecutar nuevamente `GCM-Adversarial-Item-Auditor-Docentes`.
-6. Solo con delta limpio puede evaluarse si B5 tiene justificación editorial.
-
-## Gates de calidad
-
-Cada ítem debe ser nuevo frente al corte de 224, medir un constructo distinto, evitar memoria trivial, tener una única mejor respuesta, distractores profesionales plausibles, fuente verificable y superar validación estructural/taxonómica. Los snapshots intermedios son evidencia de cobertura editorial; el QA de rama es de solo lectura y no modifica reactivos ni snapshots.
+1. Auditoría individual antes de serialización.
+2. IDs inmutables y no reutilizables.
+3. Distribución de claves controlada a nivel de lote, sin imponer una respuesta por posición.
+4. Gate de pistas de forma y longitud desde el primer microbloque.
+5. Fuentes vigentes y verificables.
+6. No crear un tópico nuevo si un valor existente describe honestamente el constructo.
