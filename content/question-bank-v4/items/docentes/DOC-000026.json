@@ -1,0 +1,30 @@
+{
+  "id": "DOC-000026",
+  "scope": "general",
+  "domain": "didactica",
+  "topic": "modelizacion",
+  "competency": "decision_pedagogica",
+  "questionType": "situational",
+  "cognitiveLevel": "apply",
+  "context": "En octavo grado, un grupo resuelve ecuaciones mecánicamente, pero falla cuando debe representar una situación de costos de transporte escolar.",
+  "stem": "¿Qué intervención responde mejor a la dificultad?",
+  "options": {
+    "A": "Plantear más ejercicios de ecuaciones ya formuladas para que el grupo automatice con fluidez el procedimiento de despeje y de solución.",
+    "B": "Presentar la situación de costos ya traducida en una ecuación y pedir que determinen el valor de la incógnita que esta plantea.",
+    "C": "Pedir que identifiquen la incógnita y las relaciones del problema, y que traduzcan esa situación a una ecuación antes de resolverla.",
+    "D": "Entregar una secuencia fija de pasos para resolver cualquier ecuación y pedir que la apliquen a distintos problemas de transporte."
+  },
+  "correctAnswer": "C",
+  "explanations": {
+    "A": "Refuerza la destreza que el grupo ya domina, el cálculo, pero no atiende la dificultad real: pasar de la situación verbal a la expresión algebraica, el paso que no consigue.",
+    "B": "Mantiene la traducción en manos del docente: al recibir la ecuación ya formulada, el grupo vuelve a ejercitar solo la resolución y no practica la representación del problema.",
+    "C": "La dificultad no está en despejar sino en modelar: pedir que identifiquen la incógnita y las relaciones del contexto y las traduzcan a una ecuación ejercita el tránsito de la situación a la representación algebraica.",
+    "D": "Una secuencia fija de pasos automatiza aún más la resolución algorítmica, pero no desarrolla la capacidad de construir la ecuación a partir de la situación planteada."
+  },
+  "hint": "Identifica cuál de los dos pasos del proceso, representar la situación o despejar la incógnita, ya domina el grupo y cuál es el que falla.",
+  "learningNote": "La modelización consiste en traducir una situación real a lenguaje matemático: identificar la incógnita y las relaciones y expresarlas como ecuación. Cuando los estudiantes resuelven ecuaciones pero no las construyen desde un contexto, la intervención debe centrarse en ese tránsito del enunciado a la representación, no en reforzar el cálculo.",
+  "source": {
+    "reference": "Ministerio de Educación Nacional, Estándares Básicos de Competencias en Lenguaje, Matemáticas, Ciencias y Ciudadanas (2006)"
+  },
+  "estimatedDifficulty": "medium"
+}

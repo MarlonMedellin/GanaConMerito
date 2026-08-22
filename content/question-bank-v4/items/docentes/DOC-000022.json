@@ -1,0 +1,30 @@
+{
+  "id": "DOC-000022",
+  "scope": "general",
+  "domain": "didactica",
+  "topic": "indagacion",
+  "competency": "decision_pedagogica",
+  "questionType": "situational",
+  "cognitiveLevel": "apply",
+  "context": "En grado sexto, varios estudiantes explican la evaporación afirmando que el agua \"desaparece\". El docente quiere superar esa idea previa sin limitarse a corregirla verbalmente.",
+  "stem": "¿Qué estrategia didáctica es más potente para lograr ese propósito?",
+  "options": {
+    "A": "Explicar en clase el cambio de estado de líquido a vapor y pedir que cada estudiante copie y repita la explicación correcta.",
+    "B": "Proyectar una animación del ciclo del agua y pedir que cada estudiante describa lo que observa y lo relacione con la evaporación.",
+    "C": "Plantear la analogía de una prenda mojada que se seca al sol y discutir por qué el agua no se ve, aunque siga existiendo.",
+    "D": "Guiar una indagación en la que el grupo registre durante varios días el nivel de agua en un recipiente abierto y en otro cerrado para contrastar su idea con evidencia."
+  },
+  "correctAnswer": "D",
+  "explanations": {
+    "A": "Sustituye la idea previa por la versión autorizada mediante explicación, pero no genera en el estudiante una razón propia para dudar de ella ni le permite ponerla a prueba, por lo que el cambio conceptual suele quedar superficial.",
+    "B": "La animación es un recurso pasivo: el estudiante observa y reformula, pero no confronta su predicción con datos que él mismo haya registrado, de modo que la idea inicial puede convivir con la nueva explicación.",
+    "C": "La analogía apoya la comprensión, pero sigue siendo una mediación verbal; al no producirse evidencia por parte del estudiante, no se genera el conflicto necesario para reorganizar la idea de que la materia se conserva.",
+    "D": "La indagación confronta la idea inicial con evidencia observable: en el recipiente cerrado el agua no se pierde, lo que crea el conflicto cognitivo que favorece un cambio conceptual duradero, más allá de la corrección verbal."
+  },
+  "hint": "El cambio conceptual se favorece cuando el estudiante encuentra una razón propia para dudar de su idea inicial, más que cuando recibe la idea correcta ya elaborada.",
+  "learningNote": "En ciencias, las ideas previas como \"el agua desaparece\" se transforman de manera más duradera cuando el estudiante las pone a prueba con evidencia que él mismo observa o registra mediante la indagación, y no solo cuando se le sustituye verbalmente la explicación. Por eso los Estándares Básicos de Competencias en Ciencias promueven la indagación como camino para explicar fenómenos naturales.",
+  "source": {
+    "reference": "Ministerio de Educación Nacional, Estándares Básicos de Competencias en Lenguaje, Matemáticas, Ciencias y Ciudadanas (2006)"
+  },
+  "estimatedDifficulty": "medium"
+}
