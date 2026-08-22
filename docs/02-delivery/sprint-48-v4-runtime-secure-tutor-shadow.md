@@ -144,6 +144,14 @@ Gate 3:
 
 ### Bloque 4 — OpenRouter shadow (P1)
 
+Estado 2026-08-22: implementación de repo completada con configuración opt-in.
+El proveedor usa esquema estricto, allowlist de un solo proveedor, ZDR, denegación
+de recolección, timeout, reintento transitorio y circuit breaker. Su ejecución se
+programa después de responder con el Tutor determinístico y solo persiste métricas
+minimizadas. Sin `OPENROUTER_API_KEY`, modelo, proveedor y flag explícitos queda
+desactivado. Gate 4 real permanece abierto hasta seleccionar endpoint, configurar
+un ambiente y ejecutar shadow contra OpenRouter.
+
 1. Crear interfaz `TutorProvider`.
 2. Implementar `DeterministicTutorProvider` y `OpenRouterProvider`.
 3. Configurar un único modelo/proveedor aprobado por ambiente.

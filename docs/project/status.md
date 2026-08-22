@@ -17,7 +17,7 @@ Ultima actualizacion: 2026-08-22 — Sprint 48 en ejecución; Bloque 2 implement
 # Executive Operational Snapshot
 
 ## Current Sprint
-Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (**en ejecución; Bloques 0–3 en repo**).
+Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (**en ejecución; Bloques 0–4 en repo**).
 
 ## Current Runtime State
 El runtime publico canonico responde en `https://ganaconmerito.com` y reporta el commit
@@ -35,7 +35,7 @@ y debe confirmarse antes de aceptar la conexion.
 smoke publico; no reejecuto E2E autenticada ni verifico el arbol de deploy.
 
 ## Current Sprint Status
-**SPRINT 48 EN EJECUCIÓN; BLOQUES 0–3 IMPLEMENTADOS EN REPO, NO APLICADOS**: las
+**SPRINT 48 EN EJECUCIÓN; BLOQUES 0–4 IMPLEMENTADOS EN REPO, NO APLICADOS**: las
 migraciones, importador, repositorio V4 y contratos pre/post están probados localmente. La exposición
 pública permanece en el runtime hasta desplegar el código y aplicar `0020` en una
 ventana controlada.
@@ -66,7 +66,8 @@ ventana controlada.
 - sincronizacion documental automatica;
 - reduccion de documentacion legacy;
 - integracion fuerte rich-only.
-- corte seguro de V4, importacion completa e integracion OpenRouter shadow pendientes.
+- aplicación remota del corte V4, importación completa y ejecución real de
+  OpenRouter shadow pendientes.
 
 ## Last Audit
 2026-08-22 — repo remoto sincronizado; estructura V4, REST publico de Supabase,
@@ -86,8 +87,8 @@ contratos de practica/Tutor y runtime publico canonico auditados. VPS admin no v
 
 **Bloque actual en repo:** Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (en ejecución).
 
-**Estado del bloque actual:** Bloques 0–3 implementados y validados en repo;
-aplicación remota pendiente. Bloque 4 pendiente.
+**Estado del bloque actual:** Bloques 0–4 implementados y validados en repo;
+aplicación remota pendiente. Bloque 5 pendiente.
 
 **Sprint anterior cerrado:** Sprint 46 — Cierre normativo del Tutor GCM.
 
@@ -98,7 +99,7 @@ aplicación remota pendiente. Bloque 4 pendiente.
 ## Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow
 
 ### Estado
-**EN EJECUCIÓN — BLOQUES 0–3 EN REPO**
+**EN EJECUCIÓN — BLOQUES 0–4 EN REPO**
 
 ### Resultado de la preparacion
 - PRD integral: `docs/01-product/prd-v4-tutor-ai-openrouter.md`.
@@ -119,6 +120,8 @@ aplicación remota pendiente. Bloque 4 pendiente.
   vacío sin fallback y separan contexto/enunciado y feedback post-respuesta.
 - El Tutor construye expedientes V4 pre/post separados sin normalizador legacy;
   scoring, avance y selección siguen fuera de su autoridad.
+- OpenRouter está integrado como shadow opt-in, no visible, con proveedor/modelo
+  obligatoriamente explícitos y métricas minimizadas; no se ejecutó contra API real.
 
 ## Beta Candidate 0.6.0 — snapshot ejecutivo
 

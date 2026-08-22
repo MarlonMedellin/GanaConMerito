@@ -54,6 +54,23 @@ last_reviewed: 2026-08-22
   src/domain/tutor/question-truth-adapter.ts, src/types/tutor-turn.ts,
   src/lib/tutor/v4-tutor-dossier.test.ts
 
+## 2026-08-22 — Sprint 48 Bloque 4 en repo
+- tipo: tutor+llm+privacy+test
+- modulo: tutor-gcm/openrouter-shadow
+- resumen: Se añade `TutorProvider`, proveedor determinístico y proveedor
+  OpenRouter estrictamente shadow. El payload minimiza y redacta datos, fija
+  structured output, proveedor único, ZDR y no-fallback; la salida LLM nunca se
+  entrega al usuario y solo se guardan métricas agregadas del turno.
+- agente: Codex
+- via: Codex Desktop / repositorio local
+- contributor: Marlon Medellin
+- environment: WSL local / master
+- validacion: mocks de esquema, privacidad, controles de proveedor y rechazo de
+  salida peligrosa; typecheck y suites Tutor/seguridad PASS
+- runtime-verified: no; faltan modelo/proveedor exactos, clave, migración y shadow real
+- relacionados: src/lib/tutor/providers/, src/lib/tutor/tutor-shadow-runner.ts,
+  src/app/api/tutor/turn/route.ts, supabase/migrations/0023_tutor_shadow_metrics.sql
+
 ## 2026-08-22 — Dominio canonico de runtime y QA
 - tipo: ops+qa+docs
 - modulo: runtime/e2e/auth

@@ -60,3 +60,19 @@ test("Tutor dossier uses the V4 repository and keeps pre/post evidence separate"
     assert.match(tutorTypes, new RegExp(`${field}\\?:`));
   }
 });
+
+test("OpenRouter remains post-response shadow and stores only minimized metrics", async () => {
+  const route = await readRepoFile("src/app/api/tutor/turn/route.ts");
+  const provider = await readRepoFile("src/lib/tutor/providers/openrouter-provider.ts");
+  const migration = await readRepoFile("supabase/migrations/0023_tutor_shadow_metrics.sql");
+
+  assert.match(route, /const result = await tutor\.generate/);
+  assert.match(route, /after\(\(\) => runTutorShadow/);
+  assert.ok(route.indexOf("const result = await tutor.generate") < route.indexOf("after(() => runTutorShadow"));
+  assert.match(route, /NextResponse\.json\(result/);
+  assert.doesNotMatch(route, /NextResponse\.json\([^\n]*shadow/i);
+  for (const control of ["allow_fallbacks: false", "require_parameters: true", 'data_collection: "deny"', "zdr: true"]) {
+    assert.match(provider, new RegExp(control.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+  assert.doesNotMatch(migration, /\b(?:prompt|visible_message|response_body|user_id|session_id)\s+(?:text|jsonb?|uuid)/i);
+});

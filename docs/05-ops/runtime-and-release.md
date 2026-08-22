@@ -160,3 +160,9 @@ Todavía NO existe:
 3. runtime verification checklist;
 4. enforcement selectivo;
 5. rollback governance más estricta.
+# Tutor OpenRouter shadow
+
+El shadow LLM es server-only y permanece apagado salvo que existan simultáneamente
+`GCM_TUTOR_LLM_SHADOW=1`, `OPENROUTER_API_KEY`, `OPENROUTER_MODEL` y
+`OPENROUTER_PROVIDER`. Modelo y proveedor deben corresponder a un endpoint aprobado
+con structured outputs y ZDR. Nunca registrar la clave ni copiarla al navegador.

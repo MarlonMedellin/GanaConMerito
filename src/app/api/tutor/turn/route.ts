@@ -1,10 +1,11 @@
-import { NextResponse } from "next/server";
+import { after, NextResponse } from "next/server";
 import { requireOwnedSession } from "../../../../lib/supabase/guards";
 import { buildTutorEvidence } from "../../../../lib/tutor/tutor-evidence-builder";
-import { TutorOrchestrator } from "../../../../lib/tutor/tutor-orchestrator";
+import { DeterministicTutorProvider } from "../../../../lib/tutor/providers/deterministic-tutor-provider";
+import { runTutorShadow } from "../../../../lib/tutor/tutor-shadow-runner";
 import { persistTutorTurnTrace } from "../../../../lib/tutor/tutor-trace-repository";
 
-const tutor = new TutorOrchestrator();
+const tutor = new DeterministicTutorProvider();
 
 export async function POST(request: Request) {
   try {
@@ -33,13 +34,14 @@ export async function POST(request: Request) {
       itemId,
     });
 
-    const result = await tutor.processTurn({
+    const tutorInput = {
       userId: profile.id,
       sessionId,
       itemId,
       message: userMessage,
       evidence,
-    });
+    };
+    const result = await tutor.generate(tutorInput);
 
     const traceWrite = await persistTutorTurnTrace({
       supabase,
@@ -50,6 +52,8 @@ export async function POST(request: Request) {
     if (!traceWrite.ok) {
       console.warn("[Tutor Trace Persist Warning]:", traceWrite.error.message);
     }
+
+    after(() => runTutorShadow({ input: tutorInput, deterministic: result }));
 
     return NextResponse.json(result, { status: 200 });
   } catch (error) {
