@@ -1,0 +1,72 @@
+name: V4 batch 03 strict QA
+
+on:
+  push:
+    paths:
+      - '.github/workflows/v4-batch03-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate all V4 docente items and snapshot coverage
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, glob, collections, sys
+          class DuplicateKeyError(ValueError): pass
+          def strict_pairs(pairs):
+              d={}
+              for k,v in pairs:
+                  if k in d: raise DuplicateKeyError(f'duplicate key: {k}')
+                  d[k]=v
+              return d
+          def load_strict(path):
+              with open(path,encoding='utf-8') as f: return json.load(f, object_pairs_hook=strict_pairs)
+          domains=load_strict('content/question-bank-v4/taxonomy/domains.json')
+          topics=load_strict('content/question-bank-v4/taxonomy/topics.json')
+          competencies=load_strict('content/question-bank-v4/taxonomy/competencies.json')
+          qtax=load_strict('content/question-bank-v4/taxonomy/question-types.json')
+          allowed={'domain':set(domains),'topic':set(topics),'competency':set(competencies),'questionType':set(qtax['questionTypes']),'cognitiveLevel':set(qtax['cognitiveLevels']),'estimatedDifficulty':set(qtax['estimatedDifficultyLevels'])}
+          required={'id','scope','domain','topic','competency','questionType','cognitiveLevel','context','stem','options','correctAnswer','explanations','hint','learningNote','source','estimatedDifficulty'}
+          counters={k:collections.Counter() for k in allowed}; errors=[]; ids=[]
+          files=sorted(glob.glob('content/question-bank-v4/items/docentes/*.json'))
+          for p in files:
+              try: d=load_strict(p)
+              except Exception as e: errors.append(f'{p}: parse error: {e}'); continue
+              ids.append(d.get('id'))
+              req=set(required); req.update({'opecId'} if d.get('scope')=='opec_specific' else set())
+              if req-set(d): errors.append(f'{p}: missing {sorted(req-set(d))}')
+              if set(d)-req: errors.append(f'{p}: unexpected {sorted(set(d)-req)}')
+              if d.get('scope') not in {'general','opec_specific'}: errors.append(f'{p}: invalid scope')
+              if d.get('scope')=='general' and 'opecId' in d: errors.append(f'{p}: opecId forbidden for general')
+              for k,vals in allowed.items():
+                  if d.get(k) not in vals: errors.append(f'{p}: invalid {k}={d.get(k)!r}')
+                  counters[k][d.get(k)] += 1
+              if set(d.get('options',{})) != {'A','B','C','D'}: errors.append(f'{p}: options keys')
+              if set(d.get('explanations',{})) != {'A','B','C','D'}: errors.append(f'{p}: explanations keys')
+              if d.get('correctAnswer') not in {'A','B','C','D'}: errors.append(f'{p}: correctAnswer')
+              if set(d.get('source',{})) != {'reference'} or not d.get('source',{}).get('reference'): errors.append(f'{p}: source')
+              for f in ['context','stem','hint','learningNote']:
+                  if not isinstance(d.get(f),str) or not d[f].strip(): errors.append(f'{p}: empty {f}')
+          if len(ids)!=len(set(ids)): errors.append('duplicate item ids')
+          expected=[f'DOC-{i:06d}' for i in range(1122,1132)]
+          absent=[i for i in expected if i not in ids]
+          if absent: errors.append(f'batch 03 missing ids: {absent}')
+          cov={'domains':{k:counters['domain'].get(k,0) for k in domains},'topics':{k:counters['topic'].get(k,0) for k in topics},'competencies':{k:counters['competency'].get(k,0) for k in competencies},'questionTypes':{k:counters['questionType'].get(k,0) for k in qtax['questionTypes']},'cognitiveLevels':{k:counters['cognitiveLevel'].get(k,0) for k in qtax['cognitiveLevels']},'estimatedDifficulty':{k:counters['estimatedDifficulty'].get(k,0) for k in qtax['estimatedDifficultyLevels']}}
+          report={'generatedAt':'2026-08-22','batch':'DOC-EXPANSION-20260822-003','itemCount':len(files),'batchIds':expected,'errors':errors,'coverage':cov}
+          report['missing']={k:[x for x,v in vals.items() if v==0] for k,vals in cov.items() if k!='estimatedDifficulty'}
+          with open('content/question-bank-v4/COVERAGE-AFTER-BATCH-03-20260822.json','w',encoding='utf-8') as f: json.dump(report,f,ensure_ascii=False,indent=2); f.write('\n')
+          print(json.dumps(report,ensure_ascii=False,indent=2))
+          if errors: sys.exit(1)
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content/question-bank-v4/COVERAGE-AFTER-BATCH-03-20260822.json
+          git commit -m 'docs(v4): record coverage after expansion batch 03'
+          git push
