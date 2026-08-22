@@ -1,13 +1,13 @@
 # Expansión V4 — Fase A: 54 reactivos de alto retorno
 
 **Fecha:** 2026-08-22  
-**Estado:** EN EJECUCIÓN  
+**Estado:** COMPLETADO  
 **Línea base:** 170 reactivos V4 válidos  
-**Meta:** +54 reactivos aprobados, para un total esperado de 224.
+**Resultado:** +54 reactivos aprobados; **224 reactivos V4 válidos**.
 
 ## Justificación taxonómica
 
-El contrato V4 permite ampliar catálogos únicamente por necesidad editorial real. La línea base presenta una concentración excesiva en `planeacion_curricular` (57/170), mientras varios constructos de alto valor no podían clasificarse sin distorsión semántica. Por ello se añadieron exactamente seis tópicos:
+El contrato V4 permite ampliar catálogos únicamente por necesidad editorial real. La línea base presentaba una concentración excesiva en `planeacion_curricular` (57/170), mientras varios constructos de alto valor no podían clasificarse sin distorsión semántica. Por ello se añadieron exactamente seis tópicos:
 
 - `evaluacion_desempeno_docente`
 - `carrera_docente`
@@ -16,18 +16,18 @@ El contrato V4 permite ampliar catálogos únicamente por necesidad editorial re
 - `prae_proyectos_transversales`
 - `gobierno_escolar_participacion`
 
-No se añadió un tópico para inclusión porque `ajustes_razonables` ya existe y es suficiente.
+No se añadió un tópico para inclusión porque `ajustes_razonables` ya existía y era suficiente. Tras la fase, `planeacion_curricular` se mantiene en 57 y `ajustes_razonables` pasa de 1 a 7.
 
-## Microbloques
+## Microbloques cerrados
 
-| Bloque | Rango | Meta | Núcleo |
-|---|---|---:|---|
-| A1 | DOC-001202–DOC-001213 | 12 | Evaluación del desempeño y carrera docente |
-| A2 | DOC-001214–DOC-001223 | 10 | Protección integral, Ley 1098 y PARD |
-| A3 | DOC-001224–DOC-001233 | 10 | Funciones, jornada y régimen profesional |
-| A4 | DOC-001234–DOC-001241 | 8 | PRAE y proyectos pedagógicos transversales |
-| A5 | DOC-001242–DOC-001249 | 8 | Gobierno escolar y participación democrática |
-| A6 | DOC-001250–DOC-001255 | 6 | Ajustes razonables y accesibilidad real |
+| Bloque | Rango | Nuevos | Núcleo | Estado |
+|---|---|---:|---|---|
+| A1 | DOC-001202–DOC-001213 | 12 | Evaluación del desempeño y carrera docente | CERRADO |
+| A2 | DOC-001214–DOC-001223 | 10 | Protección integral, Ley 1098 y PARD | CERRADO |
+| A3 | DOC-001224–DOC-001233 | 10 | Funciones, jornada y régimen profesional | CERRADO |
+| A4 | DOC-001234–DOC-001241 | 8 | PRAE y proyectos pedagógicos transversales | CERRADO |
+| A5 | DOC-001242–DOC-001249 | 8 | Gobierno escolar y participación democrática | CERRADO |
+| A6 | DOC-001250–DOC-001255 | 6 | Ajustes razonables y accesibilidad real | CERRADO |
 
 ## Fuentes rectoras verificadas
 
@@ -39,6 +39,23 @@ No se añadió un tópico para inclusión porque `ajustes_razonables` ya existe 
 - Ley 115 de 1994 y Decreto 1075 de 2015, gobierno escolar.
 - Decreto 1421 de 2017 compilado en Decreto 1075 de 2015 y Circular MEN 024 de 2026.
 
-## Gates
+## Resultado de QA
 
-Cada reactivo debe: medir un constructo distinto frente a los 170 actuales; tener fuente específica y vigente; usar solo taxonomía canónica; ofrecer una única mejor respuesta; evitar memoria normativa trivial cuando pueda evaluarse decisión profesional; superar auditoría adversarial; y aprobar QA estructural/taxonómico antes del cierre de la fase.
+Snapshot canónico: `COVERAGE-AFTER-PHASE-A-20260822.json`.
+
+- `itemCount`: **224**.
+- Reactivos de la fase: **54/54** (`DOC-001202`–`DOC-001255`).
+- `errors`: **[]**.
+- Dominios con cobertura: **10/10**.
+- Tópicos con cobertura: **22/22**.
+- Competencias con cobertura: **8/8**.
+- Tipos con cobertura: **7/7**.
+- Niveles cognitivos con cobertura: **4/4**.
+
+Acta de cierre: `EXPANSION-PHASE-A-CLOSURE-54-20260822.md`.
+
+## Gates aplicados
+
+Cada reactivo debía medir un constructo distinto frente al banco previo; tener fuente específica y vigente; usar taxonomía canónica; ofrecer una única mejor respuesta; evitar memoria normativa trivial cuando podía evaluarse decisión profesional; superar revisión adversarial de constructo, distractores y clave; y aprobar QA estructural/taxonómico antes del cierre.
+
+La Fase A queda formalmente completada. El siguiente identificador esperado es `DOC-001256`, sujeto a comprobación previa de disponibilidad.
