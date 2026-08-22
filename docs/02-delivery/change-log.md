@@ -20,6 +20,14 @@ last_reviewed: 2026-08-11
 - Update trigger: governance, delivery, documentation, drift
 
 ## 2026-08-21
+- tipo: prd+editorial+database
+- modulo: question-bank-v4/default-source/supabase
+- resumen: Se agregan dos PRD separados para convertir V4 en fuente predeterminada: uno de repositorio, backend y frontend, y otro de Supabase con migraciones, vistas, RLS, importación, piloto y corte controlado.
+- agente: Codex
+- validacion: `python3 scripts/validate_docs.py`, `git diff --check`
+- relacionados: docs/01-product/prd-question-bank-v4-default-source.md, docs/database/prd-question-bank-v4-supabase.md
+
+## 2026-08-21
 - tipo: docs+architecture+database
 - modulo: question-bank-v4
 - resumen: Se formaliza el contrato editorial V4 en `content`, junto con planes canónicos de adopción para backend, frontend y Supabase. V4 queda explícitamente como propuesta no activada: requiere validador, importador dry-run, migración versionada, vista/RLS, DTOs sin fuga de clave y piloto controlado antes de ser fuente de runtime.
