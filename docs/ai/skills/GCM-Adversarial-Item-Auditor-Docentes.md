@@ -30,16 +30,19 @@ No hay `warning`, aprobación parcial, corrección menor ni `needs review`: un d
     },
     "sources": [{ "reference": "..." }]
   },
-  "item": { "...": "ítem completo" },
+  "blindItem": { "...": "reactivo SIN correctAnswer, explanations, hint, learningNote ni estimatedDifficulty" },
+  "item": { "...": "reactivo completo" },
   "existingBank": []
 }
 ```
 
 `editorialRunContext` debe ser la misma instancia lógica usada por la fábrica. No reconstruyas empleo o fuentes con una versión distinta para auditar.
 
+`blindItem` y `item` son el mismo reactivo en dos vistas. El orquestador entrega `blindItem` ya despojado de `correctAnswer`, `explanations`, `hint`, `learningNote` y `estimatedDifficulty`; la pasada ciega se ejecuta exclusivamente sobre `blindItem`, y el `item` completo solo se revela en la segunda pasada.
+
 ## Vista ciega obligatoria
 
-Antes de atacar la clave, crea internamente una vista temporal que excluya:
+Antes de atacar la clave, trabaja exclusivamente con `blindItem` (la ceguera es estructural, provista por el orquestador; no reconstruyas una vista interna sobre el `item` completo). `blindItem` excluye:
 
 ```text
 correctAnswer
@@ -49,15 +52,15 @@ learningNote
 estimatedDifficulty
 ```
 
-La vista ciega conserva únicamente clasificación, contexto, stem, opciones, `scope`, `opecId` cuando corresponda y `source.reference`.
+`blindItem` conserva únicamente clasificación, contexto, stem, opciones, `scope`, `opecId` cuando corresponda y `source.reference`.
 
-Con esa vista determina de forma independiente:
+Con `blindItem` determina de forma independiente:
 
 - cuál es la mejor respuesta;
 - si existe una segunda respuesta defendible;
 - qué condición sustantiva separa la mejor alternativa de las demás.
 
-Solo después consulta la clave declarada y las explicaciones. Si la respuesta independiente no coincide con `correctAnswer`, el ítem queda `REJECTED`, salvo error inequívoco del auditor por haber omitido información permitida.
+Solo después revela el `item` completo y consulta la clave declarada y las explicaciones. Si la respuesta independiente no coincide con `correctAnswer`, el ítem queda `REJECTED`, salvo error inequívoco del auditor por haber omitido información permitida.
 
 Las `explanations` nunca se usan para descubrir cuál debería ser la clave; se auditan después como contenido pedagógico.
 

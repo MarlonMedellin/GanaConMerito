@@ -28,6 +28,7 @@ La auditoría se ejecuta obligatoriamente en dos pasadas:
     },
     "sources": [{ "reference": "..." }]
   },
+  "blindItem": { "...": "pregunta SIN correctAnswer, explanations, hint, learningNote ni estimatedDifficulty" },
   "item": { "...": "pregunta completa" },
   "existingBank": []
 }
@@ -35,9 +36,11 @@ La auditoría se ejecuta obligatoriamente en dos pasadas:
 
 `editorialRunContext` debe ser la misma instancia lógica usada por la fábrica. No reconstruyas la OPEC ni las fuentes con una versión distinta para auditar.
 
+`blindItem` y `item` son la misma pregunta en dos vistas. El orquestador entrega `blindItem` ya despojado de `correctAnswer`, `explanations`, `hint`, `learningNote` y `estimatedDifficulty`; la pasada ciega se ejecuta exclusivamente sobre `blindItem`, y el `item` completo solo se revela en la segunda pasada.
+
 ## Vista ciega obligatoria
 
-Antes de evaluar la clave, crea internamente una vista temporal que excluya:
+Antes de evaluar la clave, trabaja exclusivamente con `blindItem` (la ceguera es estructural, provista por el orquestador; no reconstruyas una vista interna sobre el `item` completo). `blindItem` excluye:
 
 ```text
 correctAnswer
@@ -47,15 +50,15 @@ learningNote
 estimatedDifficulty
 ```
 
-Conserva clasificación, `scope`, `opecId` solo cuando corresponda, contexto, stem, opciones y `source.reference`.
+`blindItem` conserva clasificación, `scope`, `opecId` solo cuando corresponda, contexto, stem, opciones y `source.reference`.
 
-Con esa vista determina de forma independiente:
+Con `blindItem` determina de forma independiente:
 
 - cuál opción es la mejor respuesta;
 - si una segunda opción es razonablemente defendible;
 - qué condición técnica, normativa, funcional o lógica distingue la mejor alternativa.
 
-Solo después consulta `correctAnswer` y la capa pedagógica. Si la respuesta independiente no coincide con la clave declarada, devuelve `REJECTED`, salvo error inequívoco del auditor por haber omitido información permitida.
+Solo después revela el `item` completo y consulta `correctAnswer` y la capa pedagógica. Si la respuesta independiente no coincide con la clave declarada, devuelve `REJECTED`, salvo error inequívoco del auditor por haber omitido información permitida.
 
 Las `explanations` nunca se usan para descubrir cuál debería ser la clave.
 

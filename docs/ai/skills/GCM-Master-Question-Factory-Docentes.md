@@ -23,13 +23,15 @@ Del material legacy solo puede usarse el contexto, el enunciado y la temática r
       "level": "...", "purpose": "...", "functions": ["..."],
       "knowledge": ["..."], "competencies": ["..."]
     },
-    "sources": [{ "reference": "..." }]
+    "sources": [{ "reference": "...", "locator": "...", "url": "..." }]
   },
   "existingBank": []
 }
 ```
 
 `editorialRunContext` es el contexto autoritativo de la ejecución. La misma instancia lógica debe entregarse al auditor posterior; no debe reconstruirse con datos distintos.
+
+En `sources`, `locator` y `url` son opcionales y sirven únicamente para verificar la fuente durante la investigación; el reactivo persiste solo `source.reference`.
 
 Para una pregunta general docente, el empleo solo sirve para comprobar compatibilidad. Para una específica de OPEC, el empleo y la fuente que soporta el caso son obligatorios.
 
@@ -49,7 +51,7 @@ No agregues motivos salvo solicitud expresa del orquestador o del usuario. Un mo
 
 ## Flujo interno obligatorio
 
-`triage → investigación → constructo → alineación docente/OPEC → diseño → distractores → redacción → tutoría → QA adversarial → serialización`.
+`triage → investigación → constructo → alineación docente/OPEC → diseño → distractores → redacción → tutoría → QA adversarial → entrega`.
 
 No muestres razonamiento privado. Si falla una fase esencial, devuelve `DISCARD`.
 
@@ -111,7 +113,11 @@ Para `scope: "opec_specific"`, añade además:
 
 `opecId` está prohibido en ítems `general`; no uses `null`.
 
+`PRODUCE` puede devolver un único objeto o un arreglo de objetos cuando una misma señal legacy sustenta varios constructos distintos; `DISCARD` es el único retorno de tipo texto, y todo lo demás es JSON de ítem. El orquestador envía cada ítem a una auditoría independiente.
+
 No inventes una fuente, no uses conocimiento no sustentado y no emitas contenido fuera del contrato.
+
+La fábrica devuelve el JSON y no escribe archivos. La serialización —asignar el `id` definitivo y persistir en el banco— la ejecuta el orquestador únicamente tras un `APPROVED` del auditor. El `id` del contrato es una propuesta; en fan-out paralelo el orquestador lo asigna de forma central para evitar colisiones.
 
 ## Disposición de un rechazo posterior
 
