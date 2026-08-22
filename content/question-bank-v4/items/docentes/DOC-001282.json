@@ -9,17 +9,17 @@
   "context": "Para una jornada de asesorías hay 5 docentes disponibles. Cada uno puede atender 4 franjas individuales durante la jornada. Se han inscrito 32 estudiantes y se mantiene la regla de un estudiante por franja.",
   "stem": "¿Qué conclusión permite planear correctamente la capacidad?",
   "options": {
-    "A": "Hay capacidad para 20 estudiantes y quedan 12 solicitudes sin cubrir, por lo que debe ampliarse la oferta, priorizarse o reorganizarse la atención.",
-    "B": "Hay capacidad para 32 estudiantes porque cinco docentes pueden repartir cualquier número de solicitudes.",
-    "C": "Faltan solo 7 franjas porque debe restarse el número de docentes al número de estudiantes.",
-    "D": "La capacidad es de 16 estudiantes porque una de las cuatro franjas de cada docente debe excluirse automáticamente."
+    "A": "La capacidad total es de 20 estudiantes y quedan 12 solicitudes sin cubrir, por lo que será necesario ampliar, priorizar o reorganizar la atención prevista.",
+    "B": "La capacidad puede considerarse suficiente para 32 estudiantes porque cinco docentes permiten distribuir las solicitudes, aunque cada uno tenga un número limitado de franjas disponibles.",
+    "C": "La brecha es de 7 cupos porque debe compararse el número de estudiantes inscritos con el número de docentes, sin incorporar las franjas individuales de atención.",
+    "D": "La capacidad efectiva es de 16 estudiantes porque una de las cuatro franjas de cada docente debe reservarse automáticamente para tareas de coordinación durante la jornada."
   },
   "correctAnswer": "A",
   "explanations": {
     "A": "Es la mejor respuesta: 5 docentes por 4 franjas producen 20 cupos; frente a 32 solicitudes existe una brecha de 12.",
-    "B": "Ignora el límite de franjas por docente.",
-    "C": "La capacidad depende del producto entre docentes y franjas, no de una resta entre estudiantes y docentes.",
-    "D": "El caso no establece que alguna franja deba descartarse."
+    "B": "Ignora la restricción explícita de cuatro franjas por docente y por eso sobreestima la capacidad disponible.",
+    "C": "La capacidad depende del producto entre docentes y franjas, no de restar estudiantes y docentes.",
+    "D": "El caso no establece que alguna franja deba descartarse o reservarse para otra actividad."
   },
   "hint": "Calcula primero la capacidad total como número de docentes por franjas disponibles y compárala con la demanda.",
   "learningNote": "El razonamiento cuantitativo apoya decisiones de gestión cuando transforma recursos y restricciones en capacidad operativa y permite identificar brechas entre oferta y demanda.",

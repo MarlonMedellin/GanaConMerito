@@ -9,16 +9,16 @@
   "context": "Después de implementar una estrategia de acompañamiento, el porcentaje de estudiantes que entregó todas las actividades pasó de 62 % a 74 %. En el mismo periodo también cambiaron el calendario de entregas y el sistema de recordatorios. El informe concluye: ‘La estrategia de acompañamiento causó por sí sola todo el aumento observado’.",
   "stem": "¿Cuál valoración es más rigurosa?",
   "options": {
-    "A": "La conclusión causal es válida porque cualquier aumento posterior a una intervención demuestra que esa intervención fue la única causa.",
-    "B": "Los datos muestran una mejora temporal asociada al periodo de implementación, pero no permiten atribuir todo el cambio exclusivamente a la estrategia porque ocurrieron otras modificaciones que también podrían influir.",
-    "C": "El aumento no puede considerarse real porque una tasa solo es válida si supera 75 %.",
-    "D": "La estrategia necesariamente tuvo efecto nulo porque no existe un grupo control en toda evaluación educativa."
+    "A": "La conclusión causal es válida porque el aumento ocurrió después de iniciar el acompañamiento y la secuencia temporal basta para demostrar que esa intervención produjo todo el cambio.",
+    "B": "Los datos muestran una mejora durante el periodo de implementación, pero no permiten atribuir todo el aumento exclusivamente al acompañamiento porque hubo otros cambios que también pudieron influir.",
+    "C": "El aumento no puede considerarse relevante porque la tasa final no supera 75 %, umbral necesario para interpretar cualquier variación como mejora en un indicador educativo.",
+    "D": "La estrategia debe considerarse ineficaz porque no existe un grupo control, y sin ese diseño toda comparación antes-después demuestra necesariamente ausencia de efecto de la intervención."
   },
   "correctAnswer": "B",
   "explanations": {
-    "A": "Confunde secuencia temporal con demostración de causalidad exclusiva.",
+    "A": "Confunde secuencia temporal con demostración de causalidad exclusiva y omite cambios concurrentes que también pudieron afectar el resultado.",
     "B": "Es la mejor respuesta porque reconoce el cambio observado y limita la inferencia causal frente a factores concurrentes.",
-    "C": "No existe un umbral general de 75 % para reconocer un cambio en una tasa.",
+    "C": "No existe un umbral general de 75 % para reconocer un cambio en una tasa ni para decidir si un indicador mejoró.",
     "D": "La ausencia de un grupo control limita la fuerza de una inferencia causal, pero no demuestra que el efecto sea nulo."
   },
   "hint": "Distingue entre observar que dos hechos ocurrieron en el mismo periodo y demostrar que uno explica por sí solo el otro.",

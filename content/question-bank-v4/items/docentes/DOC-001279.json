@@ -9,17 +9,17 @@
   "context": "En el grupo A, 12 de 30 estudiantes reprobaron una actividad. En el grupo B, reprobaron 15 de 50. Un docente afirma que el problema es mayor en B porque allí hay más estudiantes reprobados en números absolutos.",
   "stem": "¿Cuál comparación es más adecuada?",
   "options": {
-    "A": "El grupo B tiene mayor tasa de reprobación porque 15 es mayor que 12.",
-    "B": "El grupo A tiene mayor tasa de reprobación: 12/30 = 40 %, mientras 15/50 = 30 %; los conteos absolutos no son suficientes cuando los tamaños de grupo son distintos.",
-    "C": "Ambos grupos tienen la misma situación porque la diferencia es solo de tres estudiantes.",
-    "D": "No puede compararse ninguna proporción cuando los grupos tienen tamaños diferentes."
+    "A": "El grupo B presenta mayor reprobación porque tiene tres estudiantes más en esa condición y el conteo absoluto es el indicador principal para comparar cualquier grupo.",
+    "B": "El grupo A presenta mayor tasa de reprobación: 12 de 30 equivale a 40 %, mientras 15 de 50 equivale a 30 %; los tamaños distintos exigen comparar proporciones.",
+    "C": "Ambos grupos tienen prácticamente la misma situación porque la diferencia absoluta es de solo tres estudiantes y las proporciones pueden ignorarse cuando los conteos son cercanos.",
+    "D": "Los grupos no pueden compararse de manera válida porque tienen tamaños distintos y cualquier porcentaje obtenido a partir de denominadores diferentes carece de significado común."
   },
   "correctAnswer": "B",
   "explanations": {
-    "A": "Compara conteos sin considerar que los grupos tienen tamaños diferentes.",
-    "B": "Es la mejor respuesta porque normaliza los resultados mediante tasas y permite una comparación proporcional.",
-    "C": "La diferencia absoluta no determina la tasa relativa de cada grupo.",
-    "D": "Precisamente las proporciones permiten comparar grupos de tamaños distintos cuando el indicador está bien definido."
+    "A": "Compara conteos sin considerar que los grupos tienen tamaños diferentes, por lo que puede producir una conclusión engañosa.",
+    "B": "Es la mejor respuesta porque normaliza los resultados mediante tasas y permite una comparación proporcional entre grupos de tamaños distintos.",
+    "C": "La cercanía de los conteos absolutos no determina que las tasas sean equivalentes.",
+    "D": "Precisamente las proporciones permiten comparar grupos de tamaños distintos cuando el indicador y el denominador están bien definidos."
   },
   "hint": "Convierte cada conteo en una proporción del tamaño de su propio grupo.",
   "learningNote": "Cuando se comparan grupos de tamaños diferentes, las tasas o proporciones suelen ofrecer una lectura más informativa que los conteos absolutos. El denominador es parte esencial del indicador.",

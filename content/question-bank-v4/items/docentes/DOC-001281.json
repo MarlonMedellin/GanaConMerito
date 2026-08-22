@@ -9,15 +9,15 @@
   "context": "Una gráfica de barras compara dos tasas de asistencia: 94 % y 96 %. El eje vertical comienza en 93 % y termina en 97 %, por lo que visualmente la segunda barra parece varias veces más alta que la primera. El título afirma: ‘La asistencia se disparó’. ",
   "stem": "¿Cuál evaluación de la gráfica es más adecuada?",
   "options": {
-    "A": "La gráfica es necesariamente falsa porque todo eje vertical debe comenzar en cero.",
-    "B": "Los datos pueden ser correctos, pero la escala truncada amplifica visualmente una diferencia de solo 2 puntos porcentuales; la interpretación debe considerar valores y escala antes de aceptar el título.",
-    "C": "La segunda tasa es más del doble de la primera porque su barra se ve mucho más alta.",
-    "D": "La escala no influye en la interpretación porque las barras conservan el orden de los valores."
+    "A": "La gráfica debe considerarse falsa porque cualquier eje vertical que no comience en cero invalida automáticamente los valores representados y no puede utilizarse en un informe.",
+    "B": "Los datos pueden ser correctos, pero la escala truncada amplifica visualmente una diferencia de solo 2 puntos porcentuales; por eso deben revisarse valores, escala y título conjuntamente.",
+    "C": "La segunda tasa es varias veces mayor que la primera porque la altura aparente de las barras permite comparar directamente la razón entre 96 % y 94 %.",
+    "D": "La escala elegida no afecta la interpretación porque las barras mantienen el orden correcto de los valores y eso basta para representar con fidelidad la magnitud del cambio."
   },
   "correctAnswer": "B",
   "explanations": {
-    "A": "Un eje truncado puede ser válido para mostrar diferencias pequeñas si se presenta con claridad; el problema es interpretar su efecto visual sin revisar la escala.",
-    "B": "Es la mejor respuesta porque distingue entre los datos numéricos y la impresión visual producida por la escala.",
+    "A": "Un eje truncado puede ser válido para mostrar diferencias pequeñas si se presenta con claridad; no convierte por sí solo los datos en falsos.",
+    "B": "Es la mejor respuesta porque distingue entre los valores numéricos y la impresión visual producida por la escala y el título.",
     "C": "La relación visual entre alturas no representa la razón 96/94 cuando el eje no parte de cero.",
     "D": "La escala puede cambiar fuertemente la percepción de magnitud aunque el orden de los datos sea correcto."
   },

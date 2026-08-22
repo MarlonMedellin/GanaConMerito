@@ -9,17 +9,17 @@
   "context": "Para planear un taller, el costo total se representa mediante C(n) = 120000 + 8000n, donde n es el número de estudiantes participantes y C(n) está en pesos.",
   "stem": "¿Cuál interpretación del modelo es correcta?",
   "options": {
-    "A": "120000 representa un costo fijo independiente del número de estudiantes y 8000 es el costo adicional asociado a cada participante.",
-    "B": "120000 es el costo por cada estudiante y 8000 es un descuento que se aplica al total.",
-    "C": "El taller siempre cuesta 128000 pesos sin importar cuántos estudiantes asistan.",
-    "D": "El modelo indica que cada ocho estudiantes el costo disminuye en 120000 pesos."
+    "A": "El término 120000 representa un costo fijo independiente del número de estudiantes y el coeficiente 8000 indica cuánto aumenta el costo por cada participante adicional.",
+    "B": "El término 120000 corresponde al costo de cada estudiante y el valor 8000 representa un descuento fijo que se resta del total cuando aumenta la participación.",
+    "C": "La expresión indica que el taller cuesta siempre 128000 pesos, porque el término variable solo sirve para identificar el número de estudiantes y no modifica el total.",
+    "D": "El modelo establece que cada ocho estudiantes el costo disminuye en 120000 pesos, porque el coeficiente y el término constante representan cambios periódicos en sentidos opuestos."
   },
   "correctAnswer": "A",
   "explanations": {
-    "A": "Es la mejor respuesta: el término constante representa la parte fija del costo y el coeficiente de n representa cuánto aumenta el costo por cada estudiante adicional.",
-    "B": "Intercambia los significados del término fijo y del término variable.",
+    "A": "Es la mejor respuesta: el término constante representa la parte fija del costo y el coeficiente de n representa el aumento por cada estudiante adicional.",
+    "B": "Intercambia los significados del término fijo y del término variable y además atribuye un descuento que no aparece en la expresión.",
     "C": "El costo cambia con n; 128000 sería el valor únicamente cuando n = 1.",
-    "D": "La expresión muestra un aumento lineal y no una disminución periódica."
+    "D": "La expresión muestra un aumento lineal y no una disminución periódica relacionada con grupos de ocho estudiantes."
   },
   "hint": "Observa qué parte de la expresión cambia cuando cambia n y qué parte permanece constante.",
   "learningNote": "Interpretar un modelo algebraico implica vincular cada término con una característica de la situación. En un modelo lineal de costo, un término puede representar el componente fijo y otro el cambio por unidad.",
