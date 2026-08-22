@@ -35,6 +35,7 @@ jobs:
           ]
 
           replacements = {
+              'seed-doc-000001': 'REJECTED (gate 12: hint revelador); REGENERATE_FROM_ZERO -> processed_serialized.',
               'docente-aula-basica-secundaria-V3-005': 'REJECTED (gate 10, DOC-000003: clave detectable por longitud); REGENERATE_FROM_ZERO -> processed_serialized.',
               'docente-aula-basica-secundaria-V3-006': 'REJECTED (gate 12, DOC-000009: hint revelador; gate 10, DOC-000023: longitud tras primera regeneracion); REGENERATE_FROM_ZERO -> processed_serialized.',
               'docente-aula-basica-secundaria-V3-007': 'REJECTED (gate 5, DOC-000010: topic planeacion_curricular incorrecto); REGENERATE_FROM_ZERO -> processed_serialized.',
