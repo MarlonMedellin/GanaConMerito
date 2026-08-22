@@ -1,0 +1,30 @@
+{
+  "id": "DOC-001129",
+  "scope": "general",
+  "domain": "evaluacion",
+  "topic": "evaluacion_formativa",
+  "competency": "analisis_de_evidencia",
+  "questionType": "technical_applied",
+  "cognitiveLevel": "analyze",
+  "context": "Tres docentes de la misma asignatura utilizan una rúbrica común para valorar informes de laboratorio. Al comparar una muestra de trabajos, descubren diferencias frecuentes de dos niveles en la puntuación del mismo desempeño, aunque todos afirman aplicar los mismos criterios.",
+  "stem": "¿Qué acción fortalece mejor la consistencia de la valoración sin convertir la evaluación en una aplicación mecánica de la rúbrica?",
+  "options": {
+    "A": "Seleccionar trabajos ancla de distintos niveles, calificarlos de manera independiente, contrastar las decisiones con los descriptores y acordar cómo interpretar evidencias límite antes de valorar el resto de producciones.",
+    "B": "Promediar automáticamente las tres calificaciones de cada trabajo, porque el promedio elimina la necesidad de revisar cómo cada docente interpreta los criterios.",
+    "C": "Asignar a un solo docente la calificación definitiva de todos los grupos para evitar cualquier diferencia entre evaluadores, aunque los demás dejen de discutir los criterios.",
+    "D": "Reducir la rúbrica a una lista de presencia o ausencia de elementos, porque eliminar los niveles de calidad garantiza que todos los docentes obtengan la misma calificación."
+  },
+  "correctAnswer": "A",
+  "explanations": {
+    "A": "Es la mejor respuesta porque la moderación con ejemplos reales permite hacer explícita la interpretación de los criterios, discutir casos frontera y construir mayor consistencia profesional entre evaluadores.",
+    "B": "El promedio puede disminuir diferencias numéricas, pero no identifica ni corrige las discrepancias de interpretación que las originan.",
+    "C": "Centralizar toda la calificación puede producir uniformidad operativa, pero no fortalece la capacidad del equipo para aplicar criterios de manera compartida y sostenible.",
+    "D": "Eliminar niveles de calidad sacrifica información relevante sobre el desempeño y no garantiza una mejor interpretación del constructo evaluado."
+  },
+  "hint": "El problema no se resuelve solo haciendo coincidir números; hay que construir una interpretación compartida de qué evidencia corresponde a cada criterio y nivel.",
+  "learningNote": "La moderación entre docentes usa criterios, ejemplares y discusión profesional para aumentar la consistencia de los juicios. El objetivo no es eliminar el juicio experto, sino hacerlo más explícito, comparable y sustentado en evidencia común.",
+  "source": {
+    "reference": "Brookhart, S. M. (2013). How to Create and Use Rubrics for Formative Assessment and Grading. ASCD, capítulos 2 y 8"
+  },
+  "estimatedDifficulty": "high"
+}
