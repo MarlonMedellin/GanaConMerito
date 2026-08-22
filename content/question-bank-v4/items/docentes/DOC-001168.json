@@ -1,0 +1,30 @@
+{
+  "id": "DOC-001168",
+  "scope": "general",
+  "domain": "didactica",
+  "topic": "indagacion",
+  "competency": "analisis_de_evidencia",
+  "questionType": "case_analysis",
+  "cognitiveLevel": "analyze",
+  "context": "En álgebra, un estudiante afirma que (-3)^2 = -9. La docente identifica que no se trata de un descuido aislado: el estudiante está aplicando una regla de signos que usa correctamente en otras operaciones, pero la está transfiriendo de manera inadecuada a la potenciación.",
+  "stem": "¿Qué intervención aprovecha mejor el error como oportunidad de aprendizaje?",
+  "options": {
+    "A": "Pedir al estudiante que explique su razonamiento, contrastarlo con la multiplicación (-3)·(-3), comparar casos cercanos y usar las diferencias para revisar la regla que estaba aplicando.",
+    "B": "Indicar inmediatamente que la respuesta correcta es 9 y pedir que copie diez veces la regla de potenciación para evitar que vuelva a equivocarse.",
+    "C": "Ignorar el procedimiento y calificar únicamente el resultado final, porque discutir errores puede reforzar ideas incorrectas en el resto del grupo.",
+    "D": "Sustituir los ejercicios con números negativos por casos más sencillos hasta que el estudiante deje de cometer errores en las operaciones básicas."
+  },
+  "correctAnswer": "A",
+  "explanations": {
+    "A": "Es la mejor respuesta porque convierte el error en evidencia sobre el razonamiento del estudiante y lo utiliza para formular, contrastar y revisar la regla que originó la respuesta.",
+    "B": "Corregir y repetir una regla puede cambiar la respuesta inmediata, pero no necesariamente modifica la estructura de razonamiento que produjo el error.",
+    "C": "El procedimiento contiene información didáctica valiosa. Analizarlo permite identificar concepciones y relaciones que deben reconstruirse.",
+    "D": "Reducir la complejidad evita temporalmente el error, pero no ayuda a comprender por qué la regla fue transferida de manera incorrecta al nuevo caso."
+  },
+  "hint": "El error aporta información sobre cómo está pensando el estudiante; la pregunta es cómo convertir esa información en una investigación sobre la regla utilizada.",
+  "learningNote": "Un error puede funcionar como punto de partida para indagar el razonamiento que lo produjo. Pedir explicaciones, comparar casos y poner a prueba una regla permite transformar la equivocación en evidencia para reconstruir el conocimiento, en lugar de limitarse a reemplazar una respuesta incorrecta por una correcta.",
+  "source": {
+    "reference": "Borasi, R. (1994). Capitalizing on Errors as 'Springboards for Inquiry': A Teaching Experiment. Journal for Research in Mathematics Education, 25(2), 166–208"
+  },
+  "estimatedDifficulty": "medium"
+}
