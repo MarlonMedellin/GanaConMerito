@@ -19,8 +19,10 @@ debe clasificar únicamente con estos valores, el auditor los verifica, y
 > Los campos `domain`, `topic`, `competency`, `questionType`, `cognitiveLevel` y
 > `estimatedDifficulty` deben tomar **exclusivamente** valores de estos catálogos.
 > Está prohibido inventar valores nuevos dentro de un ítem. Si un constructo no
-> encaja, usa el valor más cercano y reporta la propuesta de ampliación por
-> separado (nunca dentro del JSON del reactivo).
+> encaja honestamente en un valor vigente, no se fuerza una etiqueta “cercana” que
+> distorsione lo que realmente mide: se documenta por separado la necesidad editorial
+> y el catálogo solo se amplía cuando existe una justificación fuerte, una fuente
+> verificable y ausencia de un valor canónico equivalente.
 
 ## Fundamentación de cada dimensión
 
@@ -49,6 +51,8 @@ o un autor consolidado. No se agregan valores "por si acaso".
 | `evaluacion_formativa` | Decreto 1290 de 2009, art. 3 |
 | `evaluacion_diagnostica` | Decreto 1290 de 2009 (identificación de características/ritmos) |
 | `retroalimentacion` | Evaluación formativa (Black & Wiliam); orientaciones MEN |
+| `evaluacion_desempeno_docente` | Decreto 3782 de 2007; evaluación anual de desempeño laboral docente |
+| `carrera_docente` | Decreto Ley 1278 de 2002; procesos de carrera y evaluación docente |
 | `ajustes_razonables` | Decreto 1421 de 2017 |
 | `dua` | Decreto 1421 de 2017; orientaciones MEN (Diseño Universal para el Aprendizaje) |
 | `piar` | Decreto 1421 de 2017 (Plan Individual de Ajustes Razonables) |
@@ -56,12 +60,19 @@ o un autor consolidado. No se agregan valores "por si acaso".
 | `convivencia_escolar` | Ley 1620 de 2013 |
 | `debido_proceso` | Ley 1620 de 2013; Decreto 1965 de 2013 |
 | `rutas_de_atencion` | Ley 1620 de 2013; Decreto 1965 de 2013 (rutas de atención integral) |
+| `proteccion_integral` | Ley 1098 de 2006 y Ley 1878 de 2018; restablecimiento de derechos |
 | `competencias_ciudadanas` | Estándares Básicos de Competencias Ciudadanas (MEN, 2004) |
+| `competencias_comportamentales` | Decreto 3782 de 2007, art. 17; MEN, Guía No. 31 |
+| `gobierno_escolar_participacion` | Ley 115 de 1994 y Decreto 1075 de 2015, Gobierno Escolar |
 | `planeacion_curricular` | Ley 115 de 1994; lineamientos curriculares MEN |
+| `prae_proyectos_transversales` | Decreto 1743 de 1994; Proyecto Ambiental Escolar y transversalidad |
+| `funciones_y_jornada_docente` | Ley 715 de 2001; Decreto 1075 de 2015; Decreto 277 de 2025 |
+| `educacion_inicial_transicion` | Decreto 1411 de 2022; DBA para el grado Transición (MEN/UdeA) |
+| `razonamiento_cuantitativo` | ICFES, Marco de referencia del módulo Razonamiento Cuantitativo |
 | `indagacion` | Estándares Básicos de Competencias en Ciencias Naturales (MEN, 2006), proceso de indagación |
-| `modelizacion` | Estándares Básicos de Competencias en Matemáticas (MEN, 2006), pensamiento variacional y formulación/resolución de problemas |
+| `modelizacion` | Estándares Básicos de Competencias en Matemáticas (MEN, 2006); ICFES, formulación y ejecución en Razonamiento Cuantitativo |
 | `argumentacion` | Estándares Básicos de Competencias en Lenguaje (MEN, 2006); Estándares Básicos de Competencias Ciudadanas (MEN, 2004) |
-| `comprension_lectora` | Estándares Básicos de Competencias en Lenguaje (MEN, 2006), comprensión e interpretación textual |
+| `comprension_lectora` | Estándares Básicos de Competencias en Lenguaje (MEN, 2006); ICFES, Marco de referencia de Lectura Crítica |
 
 ### `competencies.json`
 
@@ -89,11 +100,26 @@ o un autor consolidado. No se agregan valores "por si acaso".
 1. **Vocabulario cerrado.** Solo los valores listados son válidos.
 2. **Ampliación con justificación.** Agregar un valor exige: (a) una fuente normativa,
    académica o institucional que lo fundamente; (b) actualizar este README y el JSON;
-   (c) no duplicar un valor existente.
+   (c) no duplicar un valor existente; y (d) demostrar que reutilizar un valor vigente
+   falsearía o volvería excesivamente genérico el constructo.
 3. **Sin sinónimos en el banco.** Un concepto tiene un único valor canónico.
 4. **`technical_applied`** exige aplicar conocimiento técnico/disciplinar vinculado a
    funciones o conocimientos esenciales del empleo (seleccionar procedimiento,
    interpretar información o determinar una solución).
+
+## Estado de rama — expansión post-Sprint 48
+
+En `v4-post-sprint48-expansion` se añadieron, con justificación documentada en
+`EXPANSION-PHASE-B-HIGH-RETURN-20260822.md`, tres tópicos posteriores al corte
+congelado de 224 reactivos de `master`:
+
+- `competencias_comportamentales`;
+- `educacion_inicial_transicion`;
+- `razonamiento_cuantitativo`.
+
+Estos valores pertenecen únicamente al trabajo de la rama hasta que exista una
+decisión explícita de integración. No modifican por sí solos el corte congelado de
+Sprint 48 en `master`.
 
 ## Relación con la taxonomía legacy de la app
 
