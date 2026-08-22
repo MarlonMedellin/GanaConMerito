@@ -1,0 +1,28 @@
+{
+  "id": "DOC-001030",
+  "scope": "general",
+  "domain": "didactica",
+  "topic": "planeacion_curricular",
+  "competency": "resolucion_de_problemas",
+  "questionType": "situational",
+  "cognitiveLevel": "apply",
+  "context": "En matemáticas, los estudiantes resuelven con fluidez algoritmos practicados, pero tienen dificultades para decidir qué relaciones matemáticas utilizar cuando enfrentan situaciones nuevas.",
+  "stem": "¿Qué cambio didáctico favorece mejor el desarrollo de la resolución de problemas?",
+  "options": {
+    "A": "Aumentar la cantidad de ejercicios que repiten exactamente el algoritmo antes de presentar cualquier situación distinta.",
+    "B": "Organizar el aprendizaje alrededor de situaciones problemáticas significativas en las que los estudiantes interpreten información, formulen preguntas, representen relaciones, prueben estrategias y justifiquen sus decisiones.",
+    "C": "Presentar problemas verbales únicamente al final de cada unidad como aplicación opcional de procedimientos ya memorizados.",
+    "D": "Entregar desde el inicio el procedimiento que debe usarse en cada problema para evitar que los estudiantes ensayen estrategias ineficientes."
+  },
+  "correctAnswer": "B",
+  "explanations": {
+    "A": "La ejercitación puede desarrollar fluidez, pero por sí sola no exige decidir cómo modelar ni transferir conocimientos a una situación nueva.",
+    "B": "Es la mejor respuesta porque las situaciones problema convierten el razonamiento, la modelación, la formulación y la resolución en parte del proceso de construcción matemática y no en una aplicación posterior.",
+    "C": "Reservar los problemas para el final mantiene la separación entre aprendizaje del procedimiento y construcción de sentido en contextos problemáticos.",
+    "D": "Indicar siempre el procedimiento elimina una parte central de la resolución de problemas: seleccionar, contrastar y justificar estrategias."
+  },
+  "hint": "La dificultad del grupo no es ejecutar procedimientos conocidos, sino decidir cómo usarlos en situaciones nuevas.",
+  "learningNote": "Los lineamientos de matemáticas plantean que las situaciones problemáticas pueden ser el contexto donde ocurre el aprendizaje. Resolver problemas implica interpretar, modelar, formular estrategias, verificar resultados y transferir conocimientos, no solo aplicar al final un algoritmo previamente indicado.",
+  "source": {"reference": "MEN, Lineamientos Curriculares de Matemáticas, apartado 2.4.1: Las situaciones problemáticas como contexto"},
+  "estimatedDifficulty": "medium"
+}
