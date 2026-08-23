@@ -1,5 +1,9 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
+import {
+  assertV4ImportTarget,
+  productionImportConfirmation,
+} from "./lib/v4-production-guard";
 import test from "node:test";
 import { buildV4ImportPlan, collectApprovalEvidence } from "./lib/v4-import-plan";
 
@@ -139,10 +143,52 @@ test("V4 importer uses one atomic batch RPC and isolated credentials", async () 
   assert.doesNotMatch(importer, /rpc\("upsert_content_item_v4"/);
   assert.match(importer, /V4_IMPORT_SUPABASE_URL/);
   assert.match(importer, /V4_IMPORT_SUPABASE_SERVICE_ROLE_KEY/);
+  assert.match(importer, /V4_IMPORT_EXPECTED_PROJECT_REF/);
+  assert.match(importer, /V4_IMPORT_EXPECTED_GIT_SHA/);
+  assert.match(importer, /V4_IMPORT_PRODUCTION_CONFIRMATION/);
   assert.match(migration, /perform pg_advisory_xact_lock/i);
   assert.match(migration, /exception when others/i);
   assert.match(migration, /partialQuestionWrites', 0/i);
   assert.match(migration, /revoke execute[\s\S]+from public, anon, authenticated/i);
   assert.match(migration, /grant execute[\s\S]+to service_role/i);
   assert.match(migration, /set search_path = public, pg_temp/i);
+});
+
+test("V4 production import requires exact project, SHA, clean tree and plan confirmation", () => {
+  const projectRef = "abcdefghijklmnopqrst";
+  const planHash = "a".repeat(64);
+  const gitSha = "b".repeat(40);
+  const valid = {
+    environment: "production",
+    url: `https://${projectRef}.supabase.co`,
+    expectedProjectRef: projectRef,
+    expectedGitSha: gitSha,
+    currentGitSha: gitSha,
+    workingTreeClean: true,
+    confirmation: productionImportConfirmation(projectRef, 248, planHash),
+    planHash,
+    expectedCount: 248,
+  };
+
+  assert.deepEqual(assertV4ImportTarget(valid), { environment: "production", projectRef });
+  assert.throws(() => assertV4ImportTarget({ ...valid, url: "https://wrong.supabase.co" }));
+  assert.throws(() => assertV4ImportTarget({ ...valid, expectedGitSha: "c".repeat(40) }));
+  assert.throws(() => assertV4ImportTarget({ ...valid, workingTreeClean: false }));
+  assert.throws(() => assertV4ImportTarget({ ...valid, confirmation: "APPLY" }));
+});
+
+test("isolated V4 imports still reject the application Supabase URL", () => {
+  const url = "http://127.0.0.1:54321";
+  assert.throws(() => assertV4ImportTarget({
+    environment: "staging",
+    url,
+    expectedProjectRef: undefined,
+    expectedGitSha: undefined,
+    currentGitSha: "b".repeat(40),
+    workingTreeClean: true,
+    confirmation: undefined,
+    planHash: "a".repeat(64),
+    expectedCount: 248,
+    applicationUrl: url,
+  }));
 });

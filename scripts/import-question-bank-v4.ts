@@ -1,5 +1,17 @@
 import { createClient } from "@supabase/supabase-js";
+import { execFileSync } from "node:child_process";
 import { buildV4ImportPlan } from "./lib/v4-import-plan";
+import { assertV4ImportTarget } from "./lib/v4-production-guard";
+
+function readGitState() {
+  const currentGitSha = execFileSync("git", ["rev-parse", "HEAD"], {
+    encoding: "utf8",
+  }).trim();
+  const workingTreeClean = execFileSync("git", ["status", "--porcelain"], {
+    encoding: "utf8",
+  }).trim().length === 0;
+  return { currentGitSha, workingTreeClean };
+}
 
 async function main() {
   const apply = process.argv.includes("--apply");
@@ -24,15 +36,22 @@ async function main() {
   const environment = process.env.V4_IMPORT_ENVIRONMENT;
   const url = process.env.V4_IMPORT_SUPABASE_URL;
   const serviceRoleKey = process.env.V4_IMPORT_SUPABASE_SERVICE_ROLE_KEY;
-  if (!environment || !["local", "test", "preview", "staging"].includes(environment)) {
-    throw new Error("V4_IMPORT_ENVIRONMENT must be local, test, preview, or staging for --apply.");
-  }
   if (!url || !serviceRoleKey) {
-    throw new Error("Missing isolated V4_IMPORT_SUPABASE_URL or V4_IMPORT_SUPABASE_SERVICE_ROLE_KEY for --apply.");
+    throw new Error("Missing dedicated V4 import URL or service-role key for --apply.");
   }
-  if (process.env.NEXT_PUBLIC_SUPABASE_URL && url === process.env.NEXT_PUBLIC_SUPABASE_URL) {
-    throw new Error("Refusing to use the application's Supabase URL for this isolated PRD 2 import.");
-  }
+  const gitState = readGitState();
+  const target = assertV4ImportTarget({
+    environment,
+    url,
+    expectedProjectRef: process.env.V4_IMPORT_EXPECTED_PROJECT_REF,
+    expectedGitSha: process.env.V4_IMPORT_EXPECTED_GIT_SHA,
+    currentGitSha: gitState.currentGitSha,
+    workingTreeClean: gitState.workingTreeClean,
+    confirmation: process.env.V4_IMPORT_PRODUCTION_CONFIRMATION,
+    planHash: plan.planHash,
+    expectedCount: plan.expectedCount,
+    applicationUrl: process.env.NEXT_PUBLIC_SUPABASE_URL,
+  });
 
   const client = createClient(url, serviceRoleKey, {
     auth: { autoRefreshToken: false, persistSession: false },
@@ -68,7 +87,8 @@ async function main() {
 
   console.log(JSON.stringify({
     mode: "apply",
-    environment,
+    environment: target.environment,
+    projectRef: target.projectRef,
     executionId: result.execution_id,
     candidateCount: plan.candidates.length,
     sourceSha: plan.sourceSha,

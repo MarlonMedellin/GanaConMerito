@@ -171,6 +171,11 @@ sin convertir joins de perfiles/OPEC en una vía para exponer campos reservados.
 9. Cuando exista targeting normalizado, asociar perfiles/OPEC en un paso separado y
    auditable; no inferirlos silenciosamente a partir del texto.
 
+Para producción, el ejecutor debe además fijar el proyecto remoto y el SHA Git,
+rechazar árboles con cambios locales y exigir una confirmación derivada del hash
+del plan. La autorización operacional vive en el acta de la ventana; no requiere
+alterar el `MANIFEST.json` congelado ni relajar el comportamiento seguro del lote.
+
 ## RLS y seguridad
 
 - El `service_role` importa; los usuarios no insertan ni aprueban contenido.

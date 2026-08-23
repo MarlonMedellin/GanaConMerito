@@ -90,6 +90,13 @@ Toda pregunta importada queda `draft`, inactiva, no publicada y fuera del piloto
 La migración fue reconstruida y ensayada localmente desde cero; su aplicación en
 staging remoto y producción requiere autorización separada.
 
+La ejecución en producción conserva las protecciones de los entornos aislados y
+añade un gate específico en el importador versionado. Debe coincidir de forma
+exacta el proyecto Supabase esperado, el SHA Git comprobado, el árbol debe estar
+limpio y la confirmación debe incorporar el hash y conteo del plan canónico. Este
+gate no autoriza activación, despliegue de aplicación, cambios del manifiesto ni
+migraciones posteriores a `0028`.
+
 ### Evolución posterior — targeting y knowledge graph
 
 No mezclar esta evolución con el corte inicial V4 si todavía no está estabilizado.
