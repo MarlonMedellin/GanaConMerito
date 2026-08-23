@@ -47,6 +47,9 @@ jobs:
       - name: Validate active content
         run: npm run content:validate
 
+      - name: Validate knowledge and targeting catalogs
+        run: npm run content:validate:knowledge-targeting
+
       - name: Run lint
         run: npm run lint
 
