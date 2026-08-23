@@ -3,7 +3,8 @@
 **Estado:** contrato de coordinación entre la consolidación editorial/arquitectónica y la implementación Supabase de PRD 3.  
 **Rama de origen:** `reorg-v4-architecture-20260822`.  
 **Base conocida:** `master@023e94f737ccd95dfe2ac9a093884dd4dc426aac`.  
-**PR arquitectónico:** #97, todavía draft y no fusionado.
+**PR arquitectónico:** #97, todavía draft y no fusionado.  
+**Ejecución paralela:** **AUTORIZADA**. PRD 3 puede diseñarse, implementarse y probarse en una rama independiente desde el `master` vigente; antes de fusionar su migración/backfill debe contrastarse con este handoff y con los contratos editoriales del PR #97.
 
 ## 1. Frontera ya cerrada por PRD 2
 
@@ -128,7 +129,7 @@ Un clasificador automático puede producir mappings `candidate`, pero una relaci
 
 Los 248 reactivos todavía no tienen cerrado su mapa many-to-many por perfil/OPEC. `question-bank-v4.json` permanece vacío hasta iniciar esa revisión.
 
-## 8. Gate de catálogos y mapas
+## 8. Gate de catálogos, mapas y vocabularios
 
 La rama arquitectónica incorpora:
 
@@ -136,7 +137,7 @@ La rama arquitectónica incorpora:
 npm run content:validate:knowledge-targeting
 ```
 
-implementado por `scripts/validate-knowledge-targeting.ts` y conectado a `PR Checks`.
+El comando ejecuta `scripts/validate-knowledge-targeting.ts` y `scripts/validate-knowledge-vocabularies.ts`, y está conectado a `PR Checks`.
 
 Valida:
 
@@ -145,6 +146,7 @@ Valida:
 - unicidad de identidad externa OPEC;
 - `active => verificationStatus=verified` para OPEC;
 - unicidad de `sourceId`;
+- vocabulario controlado de `verificationStatus` para fuentes;
 - mapas de conocimiento contra inventario/familias/perfiles/OPEC;
 - una relación de conocimiento `active` solo si la fuente está `verified` y la relación tiene `verifiedAt` + `verifiedBy`;
 - `itemId` de los item maps contra los IDs del `MANIFEST.json` V4;
@@ -153,6 +155,8 @@ Valida:
 - `approved` de reactivo con evidencia editorial.
 
 PRD 3 debe ejecutar este gate antes de consumir/importar catálogos o mappings editoriales.
+
+Además, `npm run content:inventory:v4-sources` recorre los 248 reactivos y genera un inventario determinista de sus `source.reference`; ese inventario es materia prima para normalizar `source.reference → sourceId → item_source_links`, nunca autorización automática para promover una referencia textual a fuente canónica.
 
 ## 9. Temario docente — advertencia de integridad
 
@@ -189,5 +193,7 @@ Especialmente:
 La deuda de crear contratos machine-readable y validación para mapas de reactivos/fuentes queda resuelta en esta rama mediante los schemas y `content:validate:knowledge-targeting`.
 
 ## 12. Regla de coordinación
+
+PRD 3 **no necesita esperar** a que el PR #97 se fusione para desarrollar y probar su migración en una rama independiente. Sí debe esperar antes de **fusionar** cualquier decisión que contradiga o dependa de contratos todavía abiertos en #97.
 
 Si PRD 3 necesita cambiar alguno de estos contratos, no debe crear silenciosamente una semántica paralela. Debe documentar el conflicto, proponer el cambio y mantener una estrategia explícita de compatibilidad/migración.
