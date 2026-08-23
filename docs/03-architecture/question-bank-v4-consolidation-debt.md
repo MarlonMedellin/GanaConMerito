@@ -105,7 +105,7 @@ La reorganización histórica de V4 ya separa estado operativo de evidencia hist
 
 - **Estado:** `IN_PROGRESS`.
 - La comparación actual contra `master` no muestra cambios atribuibles a la reorganización en `items/`, `taxonomy/`, `MANIFEST.json`, `legacy-processing-register.csv`, `src/`, `scripts/` o `supabase/`.
-- Falta ejecutar/observar los gates finales sobre un PR de la rama antes de merge.
+- Falta ejecutar/observar los gates finales sobre el PR de la rama antes de merge.
 
 ### V4-ARCH-DEBT-014 — Preservar provenance de `temas.md` / `temas(1).md`
 
@@ -145,9 +145,8 @@ La reorganización histórica de V4 ya separa estado operativo de evidencia hist
 
 ### V4-ARCH-DEBT-019 — Actualizar documento arquitectónico tras la reorganización física
 
-- **Estado:** `OPEN`.
-- `docs/03-architecture/question-bank-knowledge-targeting-architecture.md` fue escrito cuando la migración histórica estaba en ejecución.
-- **Cierre requerido:** reflejar que `history/` ya está materializado, que `0028` está versionada y que SQL de targeting/knowledge empieza solo desde el siguiente número libre posterior.
+- **Estado:** `CLOSED`.
+- `docs/03-architecture/question-bank-knowledge-targeting-architecture.md` ya refleja `history/` materializado, `INDEX.md`, `PROVENANCE.md`, la Fase 1 completada en la rama, `0028` versionada/validada localmente y targeting/knowledge diferido hasta el siguiente número libre posterior.
 
 ## Handoff obligatorio al agente de Supabase
 
