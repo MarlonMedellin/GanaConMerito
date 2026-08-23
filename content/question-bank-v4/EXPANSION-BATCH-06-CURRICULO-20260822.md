@@ -38,7 +38,7 @@ El lote amplió el dominio hacia arquitectura curricular, coherencia institucion
 
 Se aplicaron los gates de fábrica docente y auditoría adversarial, con control de respuesta única, distractores profesionales, fuentes, taxonomía, pistas y duplicación conceptual.
 
-Resultado final en `COVERAGE-AFTER-BATCH-06-20260822.json`:
+Resultado final en `history/snapshots/COVERAGE-AFTER-BATCH-06-20260822.json`:
 
 - 130 reactivos V4 válidos.
 - 0 errores estructurales o taxonómicos.
