@@ -19,12 +19,20 @@ test("Sprint 48 migration removes direct answer-bank access from client roles", 
   assert.match(migration, /grant execute on function public\.advance_session_atomic[\s\S]+to service_role/i);
 });
 
-test("Sprint 48 safe V4 view preserves its dependent runtime views", async () => {
+test("Sprint 48 rebuilds the three V4 read boundaries without cascade", async () => {
   const migration = await readRepoFile("supabase/migrations/0022_v4_safe_runtime_view.sql");
 
-  assert.match(migration, /create or replace view public\.v_question_bank_v4_active/i);
-  assert.doesNotMatch(migration, /drop view(?: if exists)? public\.v_question_bank_v4_active/i);
+  assert.match(migration, /drop view if exists public\.v_question_bank_v4_practice/i);
+  assert.match(migration, /drop view if exists public\.v_question_bank_v4_answered/i);
+  assert.match(migration, /drop view if exists public\.v_question_bank_v4_active/i);
+  assert.match(migration, /create view public\.v_question_bank_v4_active/i);
+  assert.match(migration, /create view public\.v_question_bank_v4_practice/i);
+  assert.match(migration, /create view public\.v_question_bank_v4_answered/i);
+  assert.doesNotMatch(migration, /drop view[^;]+cascade/i);
   assert.match(migration, /revoke all on table public\.v_question_bank_v4_active from public, anon, authenticated/i);
+  assert.match(migration, /revoke all on table public\.v_question_bank_v4_practice from public, anon, authenticated/i);
+  assert.match(migration, /revoke all on table public\.v_question_bank_v4_answered from public, anon, authenticated/i);
+  assert.match(migration, /grant select on table public\.v_question_bank_v4_answered to service_role/i);
 });
 
 test("pre-answer route does not select or serialize answer-bearing fields", async () => {

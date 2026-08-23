@@ -11,6 +11,9 @@ test("runtime selection is V4-only and never falls back to the legacy bank", asy
   const repository = await readRepoFile("src/lib/question-bank/v4-question-repository.ts");
   const selector = await readRepoFile("src/domain/item-selection/select-next-item.ts");
   const safeView = await readRepoFile("supabase/migrations/0022_v4_safe_runtime_view.sql");
+  const preAnswerView = safeView.match(
+    /create view public\.v_question_bank_v4_active[\s\S]+?(?=create view public\.v_question_bank_v4_practice)/i,
+  )?.[0];
 
   assert.match(repository, /from\("v_question_bank_v4_active"\)/);
   assert.match(repository, /\.eq\("bank_version", "v4"\)/);
@@ -18,9 +21,10 @@ test("runtime selection is V4-only and never falls back to the legacy bank", asy
   assert.match(repository, /\.in\("pilot_status", ACTIVE_PILOT_STATES\)/);
   assert.match(selector, /V4QuestionRepository/);
   assert.doesNotMatch(`${repository}\n${selector}`, /runWithActiveItemBankFallback|v_item_bank_active/);
+  assert.ok(preAnswerView);
   assert.match(safeView, /where ib\.bank_version = 'v4'/);
   assert.match(safeView, /grant select on table public\.v_question_bank_v4_active to service_role/i);
-  assert.doesNotMatch(safeView, /ib\.correct_option|ib\.explanation/);
+  assert.doesNotMatch(preAnswerView, /ib\.correct_option|ib\.explanation/);
 });
 
 test("pre-answer and post-answer contracts expose the required V4 fields at the right boundary", async () => {
