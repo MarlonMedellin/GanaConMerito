@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "status": "working_inventory",
+  "notes": [
+    "Este inventario registra fuentes canónicas y candidatos legacy; no convierte automáticamente un candidato en fuente verificada.",
+    "La aplicabilidad por familia, perfil u OPEC se mantiene fuera de este catálogo, en maps/targeting.",
+    "repoPathLegacy conserva procedencia histórica y no implica que esa ruta sea canónica."
+  ],
+  "sources": [
+    {
+      "sourceId": "col-decreto-1075-sector-educacion",
+      "sourceType": "normative",
+      "title": "Decreto Único Reglamentario del Sector Educación",
+      "reference": "Decreto 1075 de 2015",
+      "issuerOrAuthor": null,
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "needs_review",
+      "verifiedAt": null,
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": "content/normative/decreto_1075.md",
+      "locator": null,
+      "rightsNote": "Ficha legacy resumida; verificar contra fuente oficial antes de promover o usar como soporte decisivo.",
+      "notes": "El archivo legacy contiene resumen y principios generales, no el texto integral ni localizadores específicos."
+    },
+    {
+      "sourceId": "col-ley-1098-infancia-adolescencia",
+      "sourceType": "normative",
+      "title": "Código de la Infancia y la Adolescencia",
+      "reference": "Ley 1098 de 2006",
+      "issuerOrAuthor": null,
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "needs_review",
+      "verifiedAt": null,
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": "content/normative/ley_1098.md",
+      "locator": null,
+      "rightsNote": "Ficha legacy resumida; verificar contra fuente oficial antes de promover o usar como soporte decisivo.",
+      "notes": "El archivo legacy contiene resumen y principios generales, no el texto integral ni localizadores específicos."
+    }
+  ]
+}
