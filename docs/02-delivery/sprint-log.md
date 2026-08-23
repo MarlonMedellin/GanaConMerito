@@ -11,7 +11,7 @@ related:
   - PROD-BACKLOG
   - DEL-CHANGE-LOG
   - QUAL-RISK-REGISTER
-last_reviewed: 2026-08-22
+last_reviewed: 2026-08-23
 ---
 
 ## Document control
@@ -24,8 +24,8 @@ last_reviewed: 2026-08-22
 # Sprint log
 
 ## Current delivery state
-- **Current operational block**: Sprint 48 — checkpoint PRD 3 publicado; `0028`
-  aplicada sin lote y `0029` correctiva validada solo localmente.
+- **Current operational block**: remediación P0 del banco; PRD 3 pausado. `0028`
+  aplicada sin lote; `0029 → 0030` validadas solo localmente.
 - **Corte editorial congelado y validado**: `content/question-bank-v4/MANIFEST.json`
   gobierna conteo, inventario y hashes en `master`.
 - **Public runtime canonico**: `https://ganaconmerito.com`; commit visible
@@ -36,9 +36,10 @@ last_reviewed: 2026-08-22
   idempotencia y rollback total pasan en Supabase local aislado.
 - **Governance Hardening Roadmap state**: Fase 1 y Fase 2 iniciadas; Fase 3 en ejecucion documental (reduccion y clasificacion), Fases 4-5 futuras.
 - **Open risks**:
-  - `0029` está validada localmente pero no aplicada en producción; el lote sigue
-    pendiente hasta revisar/sincronizar el PR #97 y reabrir la ventana;
-  - acceso anonimo directo a claves y explicaciones del banco;
+  - `0029` y `0030` están validadas localmente pero no aplicadas en producción;
+    el lote permanece fuera de alcance;
+  - acceso anónimo directo a claves y explicaciones del banco confirmado por probe
+    REST HEAD HTTP 206; producción continúa abierta hasta aplicar `0030`;
   - runtime desplegado conserva el payload y selector anteriores;
   - V4 gobierna selección, práctica y expediente Tutor solo en repo;
   - fuentes V4 sin documentos verificables;

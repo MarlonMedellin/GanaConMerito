@@ -169,6 +169,9 @@ El artefacto ejecutable vigente está en las migraciones del repositorio. La
 seguridad y la semántica reales se verifican contra el SQL aplicado, no solo contra
 este documento.
 
+La remediación P0 `0030` mantiene esta vista exclusivamente para `service_role`:
+su proyección histórica contiene respuesta y no es una superficie cliente segura.
+
 ### Regla operativa de uso
 Toda lectura de producto debe filtrar el estado activo correspondiente y no leer
 `item_bank` crudo como fuente funcional por defecto.

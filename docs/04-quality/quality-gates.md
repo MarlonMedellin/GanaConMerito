@@ -67,6 +67,7 @@ Persisten limitaciones:
 | Editorial validation | Importante |
 | V4 freeze manifest | Obligatorio para cambios V4 |
 | V4 atomic database import | Obligatorio para importador/migraciones V4 |
+| Question-bank security boundary | Obligatorio para migraciones/lecturas/RPC del banco |
 | Documentation alignment | Advisory |
 | Agent traceability | Advisory |
 | Runtime verification | Selectivo |
@@ -102,6 +103,12 @@ y ejecuta `npm run test:v4-import:db`. El gate debe probar lote limpio,
 idempotencia, errores de contrato/ID/hash/conteo, rollback intermedio, cuatro
 opciones, inactividad, permisos, vistas seguras y preservación histórica. La suite
 rechaza conexiones que no sean loopback.
+
+Para cambios de banco, vistas o RPC, `npm run test:security` es bloqueante y exige
+Supabase local aislado. Ejecuta contratos estáticos, el probe REST real mediante
+`HEAD` para `anon` y `authenticated`, y pruebas PostgreSQL de ACL, policies,
+ejecución por rol, overloads dinámicos, `SECURITY DEFINER`, `search_path`, lectura
+de respuestas y contratos V4. Un fallo del probe real hace fallar el gate normal.
 
 ## Cambios de runtime
 

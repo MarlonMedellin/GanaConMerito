@@ -47,6 +47,8 @@ jobs:
         run: npx supabase start
       - name: Rebuild from all versioned migrations
         run: npx supabase db reset --local
+      - name: Test question-bank security boundary
+        run: npm run test:security
       - name: Test atomic V4 import
         run: npm run test:v4-import:db
       - name: Stop isolated Supabase

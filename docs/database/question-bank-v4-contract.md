@@ -1,7 +1,7 @@
 # Contrato de persistencia y lectura del banco V4
 
-**Estado:** contrato inicial y batch atómico implementados en repositorio y
-validados localmente; no aplicados en producción.
+**Estado:** contrato inicial y batch `0028` presentes en producción; hardening
+`0029` y remediación P0 `0030` validados localmente, no aplicados remotamente.
 **Precondición:** un ítem debe cumplir
 `content/question-bank-v4/CONTRATO-EDITORIAL-V4.md` y haber sido auditado.
 
@@ -185,8 +185,10 @@ alterar el `MANIFEST.json` congelado ni relajar el comportamiento seguro del lot
 - El `service_role` importa; los usuarios no insertan ni aprueban contenido.
 - La función batch, el manifiesto, el snapshot taxonómico y la tabla de ejecuciones
   revocan acceso a `public`, `anon` y `authenticated`, con `search_path` fijo.
-- Las vistas públicas usan `security_invoker` y políticas que permitan solo el
-  subconjunto publicado/autorizado.
+- Las vistas pre-answer y answered permanecen server-only bajo el contrato actual;
+  las primeras excluyen clave/feedback y la segunda los expone solo al servidor.
+- `0030` elimina policies cliente sobre las tablas, revoca vistas y endurece
+  dinámicamente todos los overloads `SECURITY DEFINER` pertinentes.
 - Ningún endpoint del navegador consulta `item_bank` con una columna de clave.
 - La evaluación de `selectedOption` ocurre en una ruta de servidor autenticada.
 - Los catálogos de perfil/OPEC pueden ser legibles según necesidad de producto, pero
