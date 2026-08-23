@@ -5,7 +5,7 @@
 **Base congelada en `master`:** 224 reactivos aprobados  
 **Estado:** **CERRADA Y REAUDITADA — 30/30 APPROVED**  
 **Corpus físico de rama:** 254 reactivos.  
-**Reauditoría final:** [`REAUDIT-PHASE-B-REMEDIATED-20260822.md`](./REAUDIT-PHASE-B-REMEDIATED-20260822.md)
+**Reauditoría final:** [`REAUDIT-PHASE-B-REMEDIATED-20260822.md`](./history/audits/REAUDIT-PHASE-B-REMEDIATED-20260822.md)
 
 ## Regla de aislamiento
 
@@ -23,7 +23,7 @@
 
 ## Trazabilidad de remediación
 
-La primera auditoría (`AUDIT-PHASE-B-20260822.md`) rechazó cinco reactivos: `DOC-001258`, `DOC-001259`, `DOC-001261`, `DOC-001265` y `DOC-001268`.
+La primera auditoría (`history/audits/AUDIT-PHASE-B-20260822.md`) rechazó cinco reactivos: `DOC-001258`, `DOC-001259`, `DOC-001261`, `DOC-001265` y `DOC-001268`.
 
 De acuerdo con la regla de IDs inmutables y con la disposición `REGENERATE_FROM_ZERO`:
 
@@ -34,7 +34,7 @@ De acuerdo con la regla de IDs inmutables y con la disposición `REGENERATE_FROM
 
 ## Integridad del lote final
 
-Snapshot: `COVERAGE-AFTER-PHASE-B-REMEDIATION-20260822.json`.
+Snapshot: `history/snapshots/COVERAGE-AFTER-PHASE-B-REMEDIATION-20260822.json`.
 
 - `master`: **224** aprobados y congelados.
 - rama: **254** aprobados.
