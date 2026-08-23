@@ -126,6 +126,45 @@ async function main() {
     assert.equal(second.status, "succeeded");
     assert.equal(second.changed_count, 0);
     assert.equal(second.unchanged_count, plan.expectedCount);
+    assert.equal(second.reconciliation_result.canonicalPlanMatched, true);
+    assert.equal(second.reconciliation_result.canonicalDataMismatches, 0);
+    assert.equal(second.reconciliation_result.unsafeV4Rows, 0);
+    assert.equal(second.reconciliation_result.orphanOptions, 0);
+
+    const driftedId = plan.candidates[30].itemId;
+    const driftedUuid = await client.query(
+      "select id from public.item_bank where content_id = $1",
+      [driftedId],
+    );
+    await client.query(`
+      update public.item_bank
+      set stem = stem || ' [drift-test]', source_reference = 'DRIFTED',
+        status = 'published', is_active = true, is_published = true,
+        pilot_status = 'pilot_running'
+      where content_id = $1
+    `, [driftedId]);
+    await client.query(`
+      update public.item_options option
+      set option_text = option.option_text || ' [drift-test]'
+      from public.item_bank item
+      where option.item_id = item.id and item.content_id = $1 and option.option_key = 'A'
+    `, [driftedId]);
+    const repaired = await callBatch(
+      client, plan.candidates, plan.planHash, plan.expectedCount, plan.sourceSha,
+    );
+    assert.equal(repaired.status, "succeeded");
+    assert.equal(repaired.changed_count, 1);
+    assert.equal(repaired.unchanged_count, plan.expectedCount - 1);
+    const repairedUuid = await client.query(
+      "select id from public.item_bank where content_id = $1",
+      [driftedId],
+    );
+    assert.equal(repairedUuid.rows[0].id, driftedUuid.rows[0].id);
+    const afterRepair = await callBatch(
+      client, plan.candidates, plan.planHash, plan.expectedCount, plan.sourceSha,
+    );
+    assert.equal(afterRepair.changed_count, 0);
+    assert.equal(afterRepair.unchanged_count, plan.expectedCount);
 
     await expectRejectedWithoutPartialWrites(
       client,
@@ -142,7 +181,7 @@ async function main() {
     await expectRejectedWithoutPartialWrites(
       client,
       invalidItem,
-      calculateV4PlanHash(invalidItem),
+      plan.planHash,
       plan.expectedCount,
       plan.sourceSha,
       "INVALID_V4_ITEM_CONTRACT",
@@ -153,7 +192,7 @@ async function main() {
     await expectRejectedWithoutPartialWrites(
       client,
       duplicateId,
-      calculateV4PlanHash(duplicateId),
+      plan.planHash,
       plan.expectedCount,
       plan.sourceSha,
       "DUPLICATE_V4_ID",
@@ -165,7 +204,19 @@ async function main() {
       "0".repeat(64),
       plan.expectedCount,
       plan.sourceSha,
-      "INVALID_V4_PLAN_HASH",
+      "V4_MANIFEST_PLAN_MISMATCH",
+    );
+
+    const alternateCorpus = cloneCandidates(plan.candidates);
+    alternateCorpus[30].item.stem = `${alternateCorpus[30].item.stem} [alternate-corpus]`;
+    rehashCandidate(alternateCorpus[30]);
+    await expectRejectedWithoutPartialWrites(
+      client,
+      alternateCorpus,
+      calculateV4PlanHash(alternateCorpus),
+      plan.expectedCount,
+      plan.sourceSha,
+      "V4_MANIFEST_PLAN_MISMATCH",
     );
 
     await expectRejectedWithoutPartialWrites(
@@ -177,11 +228,11 @@ async function main() {
       "INVALID_V4_EXPECTED_COUNT",
     );
 
-    const intermediateFailure = cloneCandidates(plan.candidates);
-    for (const candidate of intermediateFailure.slice(0, 80)) {
-      candidate.item.hint = `${candidate.item.hint} [atomic-test]`;
-      rehashCandidate(candidate);
-    }
+    await client.query(`
+      update public.item_bank
+      set stem = stem || ' [atomic-test]'
+      where content_id = 'DOC-001105'
+    `);
     await client.query(`
       create or replace function public.fail_v4_atomic_test()
       returns trigger language plpgsql as $$
@@ -199,8 +250,8 @@ async function main() {
     try {
       await expectRejectedWithoutPartialWrites(
         client,
-        intermediateFailure,
-        calculateV4PlanHash(intermediateFailure),
+        plan.candidates,
+        plan.planHash,
         plan.expectedCount,
         plan.sourceSha,
         "V4_BATCH_IMPORT_FAILED",
@@ -209,6 +260,11 @@ async function main() {
       await client.query("drop trigger if exists trg_fail_v4_atomic_test on public.item_bank");
       await client.query("drop function if exists public.fail_v4_atomic_test()");
     }
+    const repairedAfterRollback = await callBatch(
+      client, plan.candidates, plan.planHash, plan.expectedCount, plan.sourceSha,
+    );
+    assert.equal(repairedAfterRollback.status, "succeeded");
+    assert.equal(repairedAfterRollback.changed_count, 1);
 
     const historical = structuredClone(plan.candidates[0]);
     historical.item.id = "DOC-999999";
@@ -271,6 +327,8 @@ async function main() {
         has_function_privilege('anon', 'public.import_question_bank_v4_batch(jsonb,text,integer,text)', 'EXECUTE') as anon_execute,
         has_function_privilege('authenticated', 'public.import_question_bank_v4_batch(jsonb,text,integer,text)', 'EXECUTE') as authenticated_execute,
         has_function_privilege('service_role', 'public.import_question_bank_v4_batch(jsonb,text,integer,text)', 'EXECUTE') as service_execute,
+        has_function_privilege('service_role', 'public.import_question_bank_v4_batch_0028_unbound(jsonb,text,integer,text)', 'EXECUTE') as service_unbound_execute,
+        has_function_privilege('service_role', 'public.question_bank_v4_item_matches(jsonb,text,text,text)', 'EXECUTE') as service_matcher_execute,
         has_function_privilege('anon', 'public.question_bank_v4_canonical_json(jsonb)', 'EXECUTE') as anon_helper_execute,
         has_function_privilege('service_role', 'public.question_bank_v4_canonical_json(jsonb)', 'EXECUTE') as service_helper_execute,
         has_table_privilege('anon', 'public.question_bank_v4_manifests', 'SELECT') as anon_manifest_select,
@@ -289,6 +347,8 @@ async function main() {
       anon_execute: false,
       authenticated_execute: false,
       service_execute: true,
+      service_unbound_execute: false,
+      service_matcher_execute: false,
       anon_helper_execute: false,
       service_helper_execute: true,
       anon_manifest_select: false,
@@ -322,7 +382,7 @@ async function main() {
       historicalPreserved: true,
       failureCases: [
         "invalid-batch-json", "invalid-item-contract", "duplicate-id",
-        "wrong-hash", "wrong-count", "intermediate-write",
+        "wrong-hash", "alternate-corpus", "wrong-count", "intermediate-write",
       ],
       runAudit: runAudit.rows,
       durationMs: Date.now() - startedAt,

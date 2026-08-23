@@ -97,6 +97,15 @@ limpio y la confirmación debe incorporar el hash y conteo del plan canónico. E
 gate no autoriza activación, despliegue de aplicación, cambios del manifiesto ni
 migraciones posteriores a `0028`.
 
+### M-0029 — Anclaje canónico y reconciliación fuerte (checkpoint)
+
+`supabase/migrations/0029_harden_v4_manifest_reconciliation.sql` se creó después
+de aplicar `0028` sin ejecutar el lote. Añade el hash de plan esperado al manifiesto
+administrativo, rechaza cargas alternativas y solo declara una fila `unchanged`
+cuando columnas, metadata y opciones A–D coinciden realmente. También verifica el
+estado final completo dentro de la transacción. Está validada en base local y no
+aplicada en producción al cierre del checkpoint.
+
 ### Evolución posterior — targeting y knowledge graph
 
 No mezclar esta evolución con el corte inicial V4 si todavía no está estabilizado.

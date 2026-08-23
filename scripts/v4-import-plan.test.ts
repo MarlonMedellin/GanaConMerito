@@ -154,7 +154,7 @@ test("V4 importer uses one atomic batch RPC and isolated credentials", async () 
   assert.match(migration, /set search_path = public, pg_temp/i);
 });
 
-test("V4 production import requires exact project, SHA, clean tree and plan confirmation", () => {
+test("V4 production import requires exact project, SHA, critical files and plan confirmation", () => {
   const projectRef = "abcdefghijklmnopqrst";
   const planHash = "a".repeat(64);
   const gitSha = "b".repeat(40);
@@ -175,6 +175,24 @@ test("V4 production import requires exact project, SHA, clean tree and plan conf
   assert.throws(() => assertV4ImportTarget({ ...valid, expectedGitSha: "c".repeat(40) }));
   assert.throws(() => assertV4ImportTarget({ ...valid, workingTreeClean: false }));
   assert.throws(() => assertV4ImportTarget({ ...valid, confirmation: "APPLY" }));
+});
+
+test("V4 hardening binds the canonical plan and revokes the unbound implementation", async () => {
+  const migration = await readFile(
+    "supabase/migrations/0029_harden_v4_manifest_reconciliation.sql",
+    "utf8",
+  );
+
+  assert.match(migration, /expected_plan_hash/);
+  assert.match(migration, /6f09c0fc60c9b7cb47ba4e9d076589207c051cf8b63fe0468f87c9bd42f2f418/);
+  assert.match(migration, /V4_MANIFEST_PLAN_MISMATCH/);
+  assert.match(migration, /question_bank_v4_item_matches/);
+  assert.match(migration, /jsonb_object_agg\(option\.option_key, option\.option_text/);
+  assert.match(migration, /rename to import_question_bank_v4_batch_0028_unbound/);
+  assert.match(migration, /revoke execute[\s\S]+import_question_bank_v4_batch_0028_unbound[\s\S]+service_role/i);
+  assert.match(migration, /canonicalDataMismatches/);
+  assert.match(migration, /orphanOptions/);
+  assert.match(migration, /set search_path = public, pg_temp/i);
 });
 
 test("isolated V4 imports still reject the application Supabase URL", () => {

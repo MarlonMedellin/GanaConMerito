@@ -69,7 +69,7 @@ export function assertV4ImportTarget(input: V4ImportTargetGuardInput) {
     throw new Error("Production import requires the exact checked-out Git SHA.");
   }
   if (!input.workingTreeClean) {
-    throw new Error("Production import requires a clean working tree.");
+    throw new Error("Production import requires all critical importer files to match the checked-out SHA.");
   }
 
   const expectedConfirmation = productionImportConfirmation(

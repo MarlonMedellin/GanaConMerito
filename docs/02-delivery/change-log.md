@@ -19,6 +19,25 @@ last_reviewed: 2026-08-22
 - Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
 - Update trigger: governance, delivery, documentation, drift
 
+## 2026-08-22 — PRD 3 checkpoint: hardening V4 posterior a `0028`
+- tipo: database+security+qa+ops+docs
+- modulo: question-bank-v4
+- resumen: La auditoría productiva confirmó 163/248 V4 inactivas. Se aplicó
+  `0028` sin ejecutar el lote. Una revisión adversarial bloqueó la importación y
+  originó `0029`, que vincula el plan canónico y reconcilia deriva real preservando
+  UUID. El trabajo se detiene antes de aplicar `0029` o importar.
+- agente: Codex
+- via: Codex Desktop / repositorio GitHub
+- contributor: Marlon Medellin
+- environment: WSL local / Docker / Supabase local / Supabase producción
+- validacion: reset `0001–0029`; integración DB con importación 248/248,
+  idempotencia, drift reparado, corpus alternativo rechazado, rollback, histórico,
+  permisos y vistas
+- runtime-verified: smoke público read-only PASS; sin deploy
+- relacionados: `0029_harden_v4_manifest_reconciliation.sql`, importador y suite DB,
+  `docs/04-quality/prd-3-v4-production-checkpoint-2026-08-22.md`
+- limitaciones: `0029` no aplicada; lote productivo no ejecutado; PRD 3 sigue abierto
+
 ## 2026-08-22 — PRD 2: importador V4 atómico en repo
 - tipo: database+backend+security+ci+docs
 - modulo: question-bank-v4

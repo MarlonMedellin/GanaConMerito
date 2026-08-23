@@ -10,7 +10,7 @@ last_reviewed: 2026-08-22
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-08-22 — Sprint 48 en ejecución; PRD 2 validado en base local aislada.
+Ultima actualizacion: 2026-08-22 — PRD 3 en checkpoint; `0028` aplicada sin lote y `0029` pendiente.
 
 ---
 
@@ -21,7 +21,7 @@ Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (**repo completo; cierre op
 
 ## Current Runtime State
 El runtime publico canonico responde en `https://ganaconmerito.com` y reporta el commit
-`e43f612` con build time `2026-08-21 03:51:03 +0000 UTC`. El smoke publico de
+`e1dc63bb51a1f42f585fa31d2695238b2d933aa5` con build time `2026-08-22 23:58:20 +0000 UTC`. El smoke publico de
 login y configuracion paso el 2026-08-22.
 
 El corte editorial aprobado está congelado en `master` mediante
@@ -36,15 +36,15 @@ y debe confirmarse antes de aceptar la conexion.
 smoke publico; no reejecuto E2E autenticada ni verifico el arbol de deploy.
 
 ## Current Sprint Status
-**SPRINT 48 EN EJECUCIÓN; BLOQUES 0–5 IMPLEMENTADOS EN REPO, NO APLICADOS**: las
-migraciones, el importador batch, el repositorio V4 y los contratos pre/post tienen
-pruebas locales. PRD 2 reconcilia 248/248 desde el manifiesto, prueba idempotencia y
-rollback total en Supabase local. La exposición pública permanece en el runtime
-hasta desplegar el código y aplicar las migraciones en una ventana controlada.
+**SPRINT 48 EN EJECUCIÓN; PRD 3 PAUSADO EN CHECKPOINT**: `0028` fue aplicada en
+producción, pero el lote no se ejecutó. La auditoría confirmó 163 V4 y 652 opciones,
+todas inactivas, no publicadas y fuera del piloto. `0029` endurece localmente el
+anclaje canónico y la reconciliación de drift; queda pendiente de aplicación tras
+la revisión del PR #97.
 
 ## Known Drift
-- Supabase contiene 121 filas visibles por REST anon: 120 legacy y solo 1 V4;
-  `v_question_bank_v4_active` expone 1 V4 activa.
+- Supabase contiene 163 filas V4 y 652 opciones; `v_question_bank_v4_active`
+  devuelve cero filas porque ninguna V4 está activa.
 - La politica publica permite consultar `correct_option`, `explanation` y metadata
   editorial directamente desde `item_bank`; RLS por fila no protege columnas.
 - El runtime desplegado aún devuelve el contrato anterior y lee
@@ -53,8 +53,8 @@ hasta desplegar el código y aplicar las migraciones en una ventana controlada.
   duplicados ni retirados activos. Mantiene cero
   documentos en `sources/`;
   calidad editorial no equivale a fuente normativa verificada.
-- La evidencia `APPROVED` de `DOC-001256` ya se resuelve desde el manifiesto
-  canónico en el plan PRD 2; `0028` sigue sin aplicación remota/productiva.
+- `0028` está aplicada remotamente sin ejecuciones batch. `0029` y la importación
+  canónica siguen pendientes.
 - Persisten contratos y validaciones parcialmente narrativas fuera del baseline canonico.
 - La trazabilidad multiagente todavia no es enforcement obligatorio.
 - La integracion del Tutor con LLM real queda como deuda tecnica futura y no forma parte del cierre de Sprint 47.
@@ -70,8 +70,8 @@ hasta desplegar el código y aplicar las migraciones en una ventana controlada.
 - sincronizacion documental automatica;
 - reduccion de documentacion legacy;
 - integracion fuerte rich-only.
-- aplicación remota de `0028`, importación en staging/producción, activación de
-  cohorte y ejecución real de OpenRouter shadow pendientes.
+- aplicación remota de `0029`, importación productiva, activación de cohorte y
+  ejecución real de OpenRouter shadow pendientes.
 
 ## Last Audit
 2026-08-22 — repo remoto sincronizado; estructura V4, REST publico de Supabase,
