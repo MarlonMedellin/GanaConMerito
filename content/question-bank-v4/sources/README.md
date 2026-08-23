@@ -1,6 +1,6 @@
 # Fuentes locales V4 — capa de compatibilidad
 
-Esta carpeta **no es una segunda biblioteca de conocimiento** y no debe almacenar copias de normas, guías, teoría o documentos académicos.
+Esta carpeta **no es una segunda biblioteca de conocimiento** y no debe almacenar copias canónicas de normas, guías, teoría o documentos académicos.
 
 La biblioteca canónica compartida para V4 y futuros bancos vive en:
 
@@ -10,7 +10,7 @@ content/knowledge-base/
 
 ## Función permitida de `question-bank-v4/sources/`
 
-Esta ruta se conserva como punto de compatibilidad y navegación para documentos o herramientas históricas que esperen una noción de “fuentes V4”. Su contenido futuro, si fuera necesario, debe limitarse a:
+Esta ruta se conserva como punto de compatibilidad y navegación para el contrato V4 congelado y para documentos o herramientas históricas que esperen una noción de “fuentes V4”. Su contenido debe limitarse a:
 
 - índices o punteros hacia `content/knowledge-base/`;
 - mapas de compatibilidad específicos de V4;
@@ -23,25 +23,34 @@ Una fuente real se registra **una sola vez** en `content/knowledge-base/`. Su ap
 
 Por ejemplo, una norma aplicable a docentes, coordinadores y rectores sigue teniendo una sola identidad de fuente; los tres destinos se asocian a ella desde la capa de targeting/conocimiento.
 
-## Estructura anterior
+## Compatibilidad con el contrato V4 congelado
 
-Esta carpeta contenía únicamente los placeholders vacíos:
+`CONTRATO-EDITORIAL-V4.md` documenta estas rutas:
 
 ```text
-academic/.gitkeep
-normative/.gitkeep
+sources/
+├── normative/
+└── academic/
 ```
 
-No existían documentos de fuente ni consumidores detectados de esas rutas exactas. Los placeholders se retiran para evitar que parezcan bibliotecas canónicas paralelas.
+El contrato está protegido por el hash del `MANIFEST.json`; no se modifica únicamente para reflejar la nueva biblioteca compartida.
+
+Por eso las dos rutas se conservan mediante README de compatibilidad:
+
+- `sources/normative/README.md` → apunta a `content/knowledge-base/sources/normative/`;
+- `sources/academic/README.md` → apunta a `content/knowledge-base/sources/academic/`.
+
+Antes de esta reconciliación ambas carpetas solo contenían `.gitkeep`; no existían fuentes reales allí. Los `.gitkeep` fueron sustituidos por documentación explícita para evitar que parezcan bibliotecas canónicas paralelas sin romper la estructura histórica del contrato.
 
 ## Para agentes y herramientas
 
 Para nuevas operaciones:
 
-1. buscar fuentes en `content/knowledge-base/`;
+1. buscar fuentes reales en `content/knowledge-base/`;
 2. usar `content/targeting/` para destinatarios;
 3. usar `content/question-bank-v4/taxonomy/` para clasificar qué evalúa el reactivo;
-4. no inferir que la presencia de una fuente en esta carpeta determina su targeting.
+4. tratar `question-bank-v4/sources/` únicamente como compatibilidad;
+5. no inferir targeting por la ubicación física de una fuente.
 
 Arquitectura completa:
 
