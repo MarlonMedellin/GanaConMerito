@@ -1,6 +1,8 @@
 name: Canary V4 plan artifact
 
 on:
+  pull_request:
+    branches: [master]
   push:
     branches:
       - canary/supabase-v4-candidate-plan-20260823
