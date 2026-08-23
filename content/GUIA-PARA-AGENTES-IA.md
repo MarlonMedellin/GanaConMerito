@@ -28,6 +28,8 @@ content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv
    `docs/ai/skills/` y aplicar el par adecuado de fabrica y auditor.
 8. Validar todo resultado contra `content/question-bank-v4/CONTRATO-EDITORIAL-V4.md`
    antes de serializarlo.
+9. Consultar `content/question-bank-v4/MANIFEST.json` para el conteo y los hashes
+   del corte vigente; los snapshots históricos no sustituyen ese manifiesto.
 
 ## Protocolo V4 para registros legacy
 
@@ -94,3 +96,13 @@ scripts/question-bank-current-corpus.ts
 scripts/import-content.ts
 scripts/validate-question-bank.ts
 ```
+
+Para cualquier cambio autorizado en V4, ejecutar además:
+
+```bash
+npm run content:validate:v4
+python3 scripts/question_bank_v4_manifest.py --check
+```
+
+La regeneración con `python3 scripts/question_bank_v4_manifest.py --write` solo
+corresponde cuando el nuevo corte editorial haya sido aprobado explícitamente.

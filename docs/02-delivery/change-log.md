@@ -19,6 +19,25 @@ last_reviewed: 2026-08-22
 - Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
 - Update trigger: governance, delivery, documentation, drift
 
+## 2026-08-22 — Reconciliación y congelación canónica del corte V4
+- tipo: governance+content+ci+docs
+- modulo: question-bank-v4
+- resumen: Se reemplazan conteos y ramas temporales contradictorios por un
+  manifiesto determinista único con commit fuente, inventario ordenado, hashes,
+  métricas agregadas, taxonomías, contrato e IDs retirados. CI valida el corte en
+  push a `master` y pull requests hacia `master`.
+- agente: Codex
+- via: Codex Desktop / repositorio GitHub
+- contributor: Marlon Medellin
+- environment: WSL local / master
+- validacion: `npm run content:validate:v4`, verificación determinista del manifiesto,
+  `python3 scripts/validate_docs.py`, `npm run typecheck` y `git diff --check`
+- runtime-verified: no; Supabase, VPS, despliegue y activación fuera de alcance
+- limitaciones: el dry-run del importador existente se detiene en `DOC-001256` por
+  evidencia `APPROVED` no reconocida; su corrección pertenece al PRD 2
+- relacionados: content/question-bank-v4/MANIFEST.json,
+  scripts/question_bank_v4_manifest.py, .github/workflows/question-bank-v4-freeze.yml
+
 ## 2026-08-22 — Sprint 48 Bloque 2 en repo
 - tipo: backend+api+ui+security+test
 - modulo: question-bank-v4/session/practice

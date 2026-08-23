@@ -4,29 +4,30 @@ Banco maestro de preguntas nuevas del proyecto **GanaConMerito**.
 
 ## Estado actual
 
-**Corte:** 2026-08-22  
-**Corte congelado en `master` para Sprint 48:** **224 reactivos aprobados**  
-**Rama de expansión:** `v4-post-sprint48-expansion`  
-**Corpus físico en la rama:** **256 reactivos**  
-**Aprobados editoriales efectivos en la rama:** **256**  
-**Fase B:** **cerrada y reauditada — 30/30 APPROVED**  
-**Fase C1:** **cerrada — 2 reactivos nuevos + 2 reclasificaciones**  
-**Nuevos C1 aprobados:** `DOC-001292`, `DOC-001293`  
-**Reclasificados C1:** `DOC-001104`, `DOC-001110`  
-**IDs retirados/no reutilizables:** `DOC-001258`, `DOC-001259`, `DOC-001261`, `DOC-001265`, `DOC-001268`, `DOC-001291`, `DOC-001294`  
-**Snapshot vigente:** [`COVERAGE-AFTER-PHASE-C1-20260822.json`](./COVERAGE-AFTER-PHASE-C1-20260822.json)  
-**Auditoría C1:** [`AUDIT-PHASE-C1-20260822.md`](./AUDIT-PHASE-C1-20260822.md)  
-**Plan selectivo:** [`EXPANSION-PHASE-C-SELECTIVE-20260822.md`](./EXPANSION-PHASE-C-SELECTIVE-20260822.md)
+**Corte canónico:** [`MANIFEST.json`](./MANIFEST.json).
 
-`master` permanece congelada en 224 reactivos durante Sprint 48. La rama contiene los 224 del corte congelado, 30 reactivos activos de Fase B y 2 reactivos nuevos de C1. C1 también corrige la clasificación de dos reactivos preexistentes sin modificar su contenido.
+El único conteo oficial vigente es `expectedItemCount` en ese manifiesto. El mismo
+archivo conserva el commit fuente, la lista ordenada y el hash de IDs, el hash del
+corpus, el tamaño total, las distribuciones agregadas, el contrato, las taxonomías,
+los IDs retirados y el estado editorial. Los reportes `COVERAGE-*`, `AUDIT-*`,
+`EXPANSION-*` y `REMEDIATION-*` son evidencia histórica; no compiten con el
+manifiesto como fuente del corte actual.
 
-La auditoría ampliada de C1 detectó que dos candidatos inicialmente serializados duplicaban constructos ya cubiertos: `DOC-001291` duplicaba la ZDP evaluada en `DOC-001104`, y `DOC-001294` duplicaba la metacognición evaluada en `DOC-001110`. Ambos fueron retirados y sus IDs no se reutilizan.
+El estado `FROZEN / APPROVED` es exclusivamente editorial y de repositorio. El
+manifiesto declara expresamente que no autoriza migración Supabase ni activación de
+runtime. Cualquier expansión posterior requiere un nuevo cierre editorial y una
+regeneración coherente del manifiesto.
 
-El nuevo tópico `aprendizaje_y_desarrollo_cognitivo` reúne cuatro reactivos: `DOC-001104` (ZDP), `DOC-001110` (metacognición), `DOC-001292` (aprendizaje significativo) y `DOC-001293` (asimilación/acomodación). Esta consolidación lleva `desarrollo_aprendizaje` de 13 a 17 sin fabricar volumen innecesario.
+Para validar el corte:
 
-La taxonomía post-Sprint 48 de esta rama incorpora cuatro tópicos con justificación editorial explícita: `competencias_comportamentales`, `educacion_inicial_transicion`, `razonamiento_cuantitativo` y `aprendizaje_y_desarrollo_cognitivo`. Los catálogos de `taxonomy/` siguen siendo la fuente canónica.
+```bash
+npm run content:validate:v4
+python3 scripts/question_bank_v4_manifest.py --check
+```
 
-**C2 no está autorizado automáticamente.** El siguiente paso es revisar la cobertura sobre 256 y justificar cualquier expansión adicional. El próximo identificador nunca usado es `DOC-001295`.
+Solo al aprobar un nuevo corte se regenera con
+`python3 scripts/question_bank_v4_manifest.py --write`; un cambio en reactivos,
+contrato o taxonomía sin la actualización correspondiente del manifiesto falla en CI.
 
 ## Propósito
 
@@ -67,6 +68,7 @@ Las skills consumen la taxonomía vigente desde `content/question-bank-v4/taxono
 ```text
 content/question-bank-v4/
 ├── README.md
+├── MANIFEST.json             # Corte canónico y hashes reproducibles
 ├── taxonomy/
 │   ├── domains.json          # Áreas amplias de conocimiento/desempeño
 │   ├── topics.json           # Temas específicos evaluados

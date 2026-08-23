@@ -65,6 +65,7 @@ Persisten limitaciones:
 | Typecheck | Obligatorio |
 | Tutor regression | Importante |
 | Editorial validation | Importante |
+| V4 freeze manifest | Obligatorio para cambios V4 |
 | Documentation alignment | Advisory |
 | Agent traceability | Advisory |
 | Runtime verification | Selectivo |
@@ -88,6 +89,12 @@ Esperado:
 - content validation;
 - revisión taxonómica;
 - warnings explícitos.
+
+Para `content/question-bank-v4/`, `npm run content:validate:v4` y
+`python3 scripts/question_bank_v4_manifest.py --check` son bloqueantes en push a
+`master` y pull requests hacia `master`. El gate compara reactivos, IDs, contrato,
+taxonomías, métricas y hashes contra `MANIFEST.json`; un cambio sin reconciliar el
+manifiesto falla.
 
 ## Cambios de runtime
 
@@ -152,7 +159,8 @@ Fases futuras:
 | selective enforcement | Bloqueos puntuales para claims críticos y metadata mínima. | Futuro |
 | strict governance | Enforcement amplio y consistente en CI y flujo release. | Futuro |
 
-Estado actual del repo: **advisory-heavy incremental hardening** entre niveles `advisory` y `advisory+CI`, sin enforcement bloqueante.
+Estado actual del repo: **advisory-heavy incremental hardening** entre niveles
+`advisory` y `advisory+CI`, con enforcement selectivo bloqueante para el corte V4.
 
 
 ---

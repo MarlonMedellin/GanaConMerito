@@ -108,10 +108,10 @@ o un autor consolidado. No se agregan valores "por si acaso".
    funciones o conocimientos esenciales del empleo (seleccionar procedimiento,
    interpretar información o determinar una solución).
 
-## Estado de rama — expansiones post-Sprint 48
+## Integración de expansiones post-Sprint 48
 
-En `v4-post-sprint48-expansion` se añadieron, con justificación editorial documentada,
-cuatro tópicos posteriores al corte congelado de 224 reactivos de `master`:
+Las expansiones post-Sprint 48 integradas en `master` añadieron, con justificación
+editorial documentada, cuatro tópicos:
 
 - `competencias_comportamentales` (Fase B);
 - `educacion_inicial_transicion` (Fase B);
@@ -124,9 +124,9 @@ activación y conexión del conocimiento previo, ZDP y apoyos temporales, revisi
 esquemas mediante asimilación/acomodación y regulación metacognitiva del aprendizaje.
 No se usa para cualquier estrategia pedagógica genérica.
 
-Estos valores pertenecen únicamente al trabajo de la rama hasta que exista una
-decisión explícita de integración. No modifican por sí solos el corte congelado de
-Sprint 48 en `master`.
+Estos valores ya pertenecen al catálogo V4 canónico. El hash agregado del catálogo
+y sus valores ordenados se congelan en `content/question-bank-v4/MANIFEST.json`;
+cualquier modificación requiere actualizar el manifiesto y superar el QA V4.
 
 ## Relación con la taxonomía legacy de la app
 

@@ -24,9 +24,10 @@ El runtime publico canonico responde en `https://ganaconmerito.com` y reporta el
 `e43f612` con build time `2026-08-21 03:51:03 +0000 UTC`. El smoke publico de
 login y configuracion paso el 2026-08-22.
 
-El corte editorial aprobado está congelado en 224 reactivos sobre `98e65f8`.
-La expansión posterior trabaja en `v4-post-sprint48-expansion`; el runtime mantiene
-un drift amplio frente al repositorio.
+El corte editorial aprobado está congelado en `master` mediante
+`content/question-bank-v4/MANIFEST.json`; ese archivo es la única fuente vigente
+para conteo, hashes e inventario. El runtime mantiene un drift amplio frente al
+repositorio.
 La administracion de VPS no fue verificada porque la huella SSH presentada cambio
 y debe confirmarse antes de aceptar la conexion.
 
@@ -36,9 +37,10 @@ smoke publico; no reejecuto E2E autenticada ni verifico el arbol de deploy.
 
 ## Current Sprint Status
 **SPRINT 48 EN EJECUCIÓN; BLOQUES 0–5 IMPLEMENTADOS EN REPO, NO APLICADOS**: las
-migraciones, importador, repositorio V4 y contratos pre/post están probados localmente. La exposición
-pública permanece en el runtime hasta desplegar el código y aplicar `0020` en una
-ventana controlada.
+migraciones, el importador base, el repositorio V4 y los contratos pre/post tienen
+pruebas locales. El dry-run del corte reconciliado aún requiere alinear evidencia
+`APPROVED` de Fase B. La exposición pública permanece en el runtime hasta desplegar
+el código y aplicar `0020` en una ventana controlada.
 
 ## Known Drift
 - Supabase contiene 121 filas visibles por REST anon: 120 legacy y solo 1 V4;
@@ -47,10 +49,12 @@ ventana controlada.
   editorial directamente desde `item_bank`; RLS por fila no protege columnas.
 - El runtime desplegado aún devuelve el contrato anterior y lee
   `v_item_bank_active`/`item_bank`; el repo ya eliminó ese fallback para práctica.
-- El banco V4 tiene 224 reactivos estructuralmente validos y aprobados al corte
-  congelado; los lotes posteriores no se cuentan hasta su cierre. Mantiene cero
+- El banco V4 coincide con el conteo y los hashes del manifiesto canónico, sin IDs
+  duplicados ni retirados activos. Mantiene cero
   documentos en `sources/`;
   calidad editorial no equivale a fuente normativa verificada.
+- El importador dry-run actual se detiene en `DOC-001256` porque todavía no reconoce
+  su evidencia `APPROVED`; PRD 2 debe reconciliar esa trazabilidad antes de importar.
 - Persisten contratos y validaciones parcialmente narrativas fuera del baseline canonico.
 - La trazabilidad multiagente todavia no es enforcement obligatorio.
 - La integracion del Tutor con LLM real queda como deuda tecnica futura y no forma parte del cierre de Sprint 47.
@@ -110,8 +114,9 @@ aplicación remota, shadow real y E2E pendientes.
 - El P0 de exposicion de respuestas precede importacion, corte V4 e integracion LLM.
 
 ### Evidencia y limites
-- Al corte congelado hay 224 archivos V4 estructuralmente válidos y con evidencia
-  cerrada para el plan de importación. No se revisaron items individuales.
+- El corte congelado se deriva del manifiesto V4 y tiene validación estructural y
+  cierre editorial agregado. La evidencia machine-checkable del importador para
+  Fase B sigue pendiente. No se revisaron items individuales.
 - El contraste Supabase fue de lectura publica, no administrativo.
 - No se aplicaron migraciones, no se importaron filas y no se desplego codigo.
 - `0020_secure_question_answer_boundary.sql`, contratos pre/post y pruebas de

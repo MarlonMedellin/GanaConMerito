@@ -43,7 +43,8 @@ Siguiente bloque propuesto:
 - **Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (en ejecución).**
 - P0: retirar lectura anonima/autenticada directa de claves y explicaciones y
   eliminar `rationale` del payload previo a responder.
-- P0: aplicar importación y activar de forma controlada el corte congelado 224/224;
+- P0: aplicar importación y activar de forma controlada el corte definido por el
+  manifiesto V4 canónico;
   el repo está listo, Supabase remoto sigue pendiente.
 - P0: desplegar y validar el selector exclusivo V4, sin fallback legacy silencioso.
 - P1: validar en runtime los campos V4 ya integrados en UI, feedback y Tutor.

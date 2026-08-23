@@ -20,6 +20,8 @@ aplica al contenido legacy del banco, no al codigo fuente legacy de la aplicacio
 El contrato canónico de esos nuevos archivos está en
 `content/question-bank-v4/CONTRATO-EDITORIAL-V4.md`; su activación técnica se
 define fuera de `content`, en la documentación de arquitectura y base de datos.
+El corte físico vigente, su conteo y sus hashes se consultan únicamente en
+`content/question-bank-v4/MANIFEST.json`.
 
 ## Fuente por defecto v3
 

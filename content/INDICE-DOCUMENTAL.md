@@ -26,6 +26,7 @@ Este indice resume como estan organizados los Markdown de `content` y como debe 
 | `content/MANIFIESTO-SANEAMIENTO-BETA.md` | Cierre ejecutivo del saneamiento |
 | `content/question-bank-v4/README.md` | Banco maestro V4 y reglas de entrada de reactivos nuevos |
 | `content/question-bank-v4/CONTRATO-EDITORIAL-V4.md` | Contrato canónico de campos, gates y seguridad de reactivos V4 |
+| `content/question-bank-v4/MANIFEST.json` | Corte V4 canónico: conteo, hashes, métricas e IDs retirados |
 | `docs/ai/skills/GCM-Master-Question-Factory-Docentes.md` | Fabrica desde cero para registros legacy docentes |
 | `docs/ai/skills/GCM-Adversarial-Item-Auditor-Docentes.md` | Auditoria adversarial de reactivos docentes nuevos |
 | `docs/ai/skills/GCM-Master-Question-Factory-OPEC-General.md` | Fabrica desde cero para registros legacy OPEC |

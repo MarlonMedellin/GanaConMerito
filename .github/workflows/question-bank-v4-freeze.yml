@@ -1,0 +1,42 @@
+name: Question Bank V4 freeze
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'content/question-bank-v4/**'
+      - 'src/domain/content/v4-contract.ts'
+      - 'scripts/validate-question-bank-v4.ts'
+      - 'scripts/question_bank_v4_manifest.py'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/question-bank-v4-freeze.yml'
+  pull_request:
+    branches: [master]
+    paths:
+      - 'content/question-bank-v4/**'
+      - 'src/domain/content/v4-contract.ts'
+      - 'scripts/validate-question-bank-v4.ts'
+      - 'scripts/question_bank_v4_manifest.py'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/question-bank-v4-freeze.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-freeze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Validate V4 contract
+        run: npm run content:validate:v4
+      - name: Verify canonical V4 manifest
+        run: python3 scripts/question_bank_v4_manifest.py --check
