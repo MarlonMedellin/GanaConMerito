@@ -47,8 +47,8 @@ function getSignalCopy(signalLevel: MetricSignalLevel) {
     case "usable_signal":
       return {
         signalLabel: "Señal usable",
-        signalDescription: "Ya hay suficiente evidencia para tomar decisiones de práctica con más confianza.",
-        recommendedAction: "Prioriza los focos de refuerzo y consolida las competencias que ya muestran estabilidad.",
+        signalDescription: "Hay una muestra útil para orientar la práctica, sin equivaler a una medición psicométrica calibrada.",
+        recommendedAction: "Prioriza focos preliminares y confirma los patrones con más práctica comparable.",
       };
   }
 }
@@ -86,10 +86,6 @@ function dedupeCompetencies(rows: DashboardTopicBreakdownRow[]) {
   });
 }
 
-function hasComparableTrendWindow(rows: DashboardTopicBreakdownRow[]) {
-  return rows.filter((row) => row.updated_at && row.attempts > 0).length >= 2;
-}
-
 export function buildDashboardSummaryMetrics(stats: DashboardTopicBreakdownRow[]): DashboardSummaryMetrics {
   const totalAttempts = stats.reduce((sum, row) => sum + row.attempts, 0);
   const totalCorrect = stats.reduce((sum, row) => sum + row.correct_count, 0);
@@ -109,22 +105,6 @@ export function buildDashboardSummaryMetrics(stats: DashboardTopicBreakdownRow[]
     stats.length > 0
       ? Number((stats.reduce((sum, row) => sum + Number(row.estimated_level), 0) / stats.length).toFixed(3))
       : 0;
-
-  const recentWindow = [...stats]
-    .filter((row) => row.updated_at)
-    .sort((a, b) => String(b.updated_at).localeCompare(String(a.updated_at)));
-
-  let recentTrend: DashboardSummaryMetrics["recentTrend"] = "stable";
-  const canShowTrend = hasComparableTrendWindow(recentWindow);
-  if (canShowTrend) {
-    const latest = Number(recentWindow[0].estimated_level);
-    const previous = Number(recentWindow[1].estimated_level);
-    if (latest > previous) recentTrend = "up";
-    else if (latest < previous) recentTrend = "down";
-  }
-
-  const canShowPercentile =
-    canShowStrongConclusion && stats.some((row) => typeof row.percentile_segment === "number");
 
   const strongestCompetencies = dedupeCompetencies(
     [...stats]
@@ -174,13 +154,13 @@ export function buildDashboardSummaryMetrics(stats: DashboardTopicBreakdownRow[]
     avgReasoningScore,
     strongestCompetencies,
     weakestCompetencies,
-    recentTrend,
+    recentTrend: "stable",
     signalLevel,
     signalLabel: signalCopy.signalLabel,
     signalDescription: signalCopy.signalDescription,
     canShowStrongConclusion,
-    canShowTrend,
-    canShowPercentile,
+    canShowTrend: false,
+    canShowPercentile: false,
     recommendedAction: signalCopy.recommendedAction,
   };
 }
