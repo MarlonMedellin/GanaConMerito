@@ -31,12 +31,12 @@ function requireEnv(value, name) {
   return value;
 }
 
-function save(name, value) {
-  fs.writeFileSync(path.join(artifactRoot, name), typeof value === 'string' ? value : JSON.stringify(value, null, 2));
-}
-
 function ensure(condition, message) {
   if (!condition) throw new Error(message);
+}
+
+function save(name, value) {
+  fs.writeFileSync(path.join(artifactRoot, name), JSON.stringify(value, null, 2));
 }
 
 function ensureOk(response, label) {
@@ -49,11 +49,7 @@ function containsForbiddenTruth(value) {
   const visit = (node) => {
     if (!node || typeof node !== 'object') return false;
     if (Array.isArray(node)) return node.some(visit);
-    for (const [key, child] of Object.entries(node)) {
-      if (forbidden.has(key)) return true;
-      if (visit(child)) return true;
-    }
-    return false;
+    return Object.entries(node).some(([key, child]) => forbidden.has(key) || visit(child));
   };
   return visit(value);
 }
@@ -83,6 +79,14 @@ async function http({ method = 'GET', pathname, body, cookie }) {
 
 async function ensureUserAndReset(admin) {
   await cleanupOldQaUsers(admin, namespace);
+  const listed = await admin.auth.admin.listUsers({ page: 1, perPage: 1000 });
+  if (listed.error) throw listed.error;
+  const existing = listed.data.users.find((user) => user.email === email);
+  if (existing) {
+    const removed = await admin.auth.admin.deleteUser(existing.id);
+    if (removed.error && !String(removed.error.message || '').includes('User not found')) throw removed.error;
+  }
+
   const created = await admin.auth.admin.createUser({
     email,
     password,
@@ -157,10 +161,7 @@ async function checkDirectBoundary(accessToken) {
     for (const role of ['anon', 'authenticated']) {
       const token = role === 'anon' ? anonKey : accessToken;
       const response = await fetch(`${url}/rest/v1/${surface}?select=*&limit=1`, {
-        headers: {
-          apikey: anonKey,
-          Authorization: `Bearer ${token}`,
-        },
+        headers: { apikey: anonKey, Authorization: `Bearer ${token}` },
       });
       result[role][surface] = response.status;
     }
@@ -187,8 +188,27 @@ async function assertMobileLayout(page, label, essentialLocator) {
     ensure(Boolean(box), `${label} essential control has no visible bounding box.`);
     ensure(box.x + box.width <= metrics.innerWidth + 1, `${label} essential control extends beyond viewport width.`);
   }
-
   return metrics;
+}
+
+async function waitForItemResponse(page, expectedItemId, action) {
+  const responsePromise = page.waitForResponse((response) => {
+    if (!response.url().includes('/api/session/item') || response.request().method() !== 'GET') return false;
+    try {
+      return new URL(response.url()).searchParams.get('itemId') === expectedItemId;
+    } catch {
+      return false;
+    }
+  }, { timeout: 45000 });
+  await action();
+  const response = await responsePromise;
+  ensure(response.status() === 200, `Loading item ${expectedItemId} failed with ${response.status()}.`);
+  const payload = await response.json();
+  ensure(payload.id === expectedItemId, `UI loaded ${payload.id}; expected ${expectedItemId}.`);
+  await page.waitForFunction(() => {
+    const option = document.querySelector('button.option-card');
+    return Boolean(option && !option.disabled);
+  }, undefined, { timeout: 45000 });
 }
 
 async function countRows(admin, table, column, value) {
@@ -207,7 +227,6 @@ async function countRows(admin, table, column, value) {
   let qaUser = null;
   let browser = null;
   let context = null;
-
   const result = {
     ok: false,
     runId,
@@ -227,6 +246,7 @@ async function countRows(admin, table, column, value) {
     const prep = await ensureUserAndReset(admin);
     qaUser = prep.user;
     const auth = await getAuthState();
+    result.login = { authenticated: true };
     result.security = await checkDirectBoundary(auth.accessToken);
 
     browser = await chromium.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'] });
@@ -234,11 +254,7 @@ async function countRows(admin, table, column, value) {
     const loginContext = await browser.newContext({ baseURL: baseUrl, viewport: result.viewport });
     const loginPage = await loginContext.newPage();
     await loginPage.goto('/login', { waitUntil: 'networkidle', timeout: 45000 });
-    result.mobile.login = await assertMobileLayout(
-      loginPage,
-      'login',
-      loginPage.getByRole('button', { name: 'Continuar con Google' }),
-    );
+    result.mobile.login = await assertMobileLayout(loginPage, 'login', loginPage.getByRole('button', { name: 'Continuar con Google' }));
     await loginPage.screenshot({ path: path.join(artifactRoot, '01-login-mobile.png'), fullPage: true });
     await loginContext.close();
 
@@ -247,19 +263,14 @@ async function countRows(admin, table, column, value) {
     const page = await context.newPage();
 
     await page.goto('/onboarding', { waitUntil: 'networkidle', timeout: 45000 });
-    const profileSelect = page.getByLabel('Perfil reusable');
-    await profileSelect.selectOption(targetProfileCode);
-    const opecSelect = page.getByLabel('Cargo oficial / OPEC verificada (opcional)');
-    await opecSelect.selectOption(targetOpecId);
+    await page.getByLabel('Perfil reusable').selectOption(targetProfileCode);
+    await page.getByLabel('Cargo oficial / OPEC verificada (opcional)').selectOption(targetOpecId);
     await page.getByLabel('Meta activa').fill('CAN-005 vertical QA');
     await page.getByLabel('Áreas activas').fill('matematicas');
-    result.mobile.onboarding = await assertMobileLayout(
-      page,
-      'onboarding',
-      page.getByRole('button', { name: 'Guardar onboarding' }),
-    );
+    const saveOnboarding = page.getByRole('button', { name: 'Guardar onboarding' });
+    result.mobile.onboarding = await assertMobileLayout(page, 'onboarding', saveOnboarding);
     await page.screenshot({ path: path.join(artifactRoot, '02-onboarding-mobile.png'), fullPage: true });
-    await page.getByRole('button', { name: 'Guardar onboarding' }).click();
+    await saveOnboarding.click();
     await page.waitForURL('**/practice', { timeout: 45000 });
 
     const learning = await admin
@@ -279,6 +290,10 @@ async function countRows(admin, table, column, value) {
       (response) => response.url().includes('/api/session/start') && response.request().method() === 'POST',
       { timeout: 45000 },
     );
+    const firstItemResponsePromise = page.waitForResponse(
+      (response) => response.url().includes('/api/session/item') && response.request().method() === 'GET',
+      { timeout: 45000 },
+    );
     await startButton.click();
     const startResponse = await startResponsePromise;
     const startJson = await startResponse.json();
@@ -287,10 +302,17 @@ async function countRows(admin, table, column, value) {
     let currentItemId = startJson.currentItemId;
     ensure(sessionId && currentItemId, 'Session start did not return sessionId/currentItemId.');
     result.sessionId = sessionId;
+    const firstItemResponse = await firstItemResponsePromise;
+    const firstItemPayload = await firstItemResponse.json();
+    ensure(firstItemResponse.status() === 200 && firstItemPayload.id === currentItemId, 'UI did not load the item returned by session start.');
+    await page.waitForFunction(() => {
+      const option = document.querySelector('button.option-card');
+      return Boolean(option && !option.disabled);
+    }, undefined, { timeout: 45000 });
 
-    await page.locator('button.option-card').first().waitFor({ state: 'visible', timeout: 45000 });
+    const tutorMessage = page.getByTestId('tutor-gcm-message');
     await page.getByTestId('tutor-gcm-panel').scrollIntoViewIfNeeded();
-    await assertMobileLayout(page, 'tutor', page.getByTestId('tutor-gcm-submit'));
+    result.mobile.tutor = await assertMobileLayout(page, 'tutor', tutorMessage);
     await page.screenshot({ path: path.join(artifactRoot, '03-practice-tutor-mobile.png'), fullPage: true });
 
     const preAnswerItem = await http({
@@ -301,21 +323,11 @@ async function countRows(admin, table, column, value) {
     ensure(!containsForbiddenTruth(preAnswerItem.json), 'Pre-answer payload exposed editorial answer truth.');
 
     const turnsBeforeTutor = await countRows(admin, 'session_turns', 'session_id', sessionId);
-    const eventsBeforeTutor = await admin
-      .from('evaluation_events')
-      .select('id', { count: 'exact', head: true })
-      .in('session_turn_id', ['00000000-0000-0000-0000-000000000000']);
-    if (eventsBeforeTutor.error) throw eventsBeforeTutor.error;
-
     const tutorResponse = await http({
       method: 'POST',
       pathname: '/api/tutor/turn',
       cookie: auth.cookieHeader,
-      body: {
-        sessionId,
-        itemId: currentItemId,
-        message: 'Dame una pista sin revelar la respuesta correcta.',
-      },
+      body: { sessionId, itemId: currentItemId, message: 'Dame una pista sin revelar la respuesta correcta.' },
     });
     ensureOk(tutorResponse, 'POST /api/tutor/turn');
     ensure(Boolean(tutorResponse.requestId), 'Tutor response is missing x-request-id.');
@@ -327,7 +339,6 @@ async function countRows(admin, table, column, value) {
 
     const turnsAfterTutor = await countRows(admin, 'session_turns', 'session_id', sessionId);
     ensure(turnsAfterTutor === turnsBeforeTutor, 'Tutor changed deterministic scoring/session_turn persistence.');
-
     const trace = await admin
       .from('tutor_turn_traces')
       .select('trace_id, session_id, question_id, can_reveal_correct_answer, mode, intent')
@@ -340,6 +351,15 @@ async function countRows(admin, table, column, value) {
     if (trace.error) throw trace.error;
     ensure(Boolean(trace.data), 'Tutor trace was not persisted.');
     ensure(trace.data.can_reveal_correct_answer === false, 'Persisted Tutor trace violates answer-reveal guardrail.');
+
+    const unownedTutor = await http({
+      method: 'POST',
+      pathname: '/api/tutor/turn',
+      cookie: auth.cookieHeader,
+      body: { sessionId: crypto.randomUUID(), itemId: currentItemId, message: 'Ownership probe' },
+    });
+    ensure(unownedTutor.status === 404, `Tutor ownership probe expected 404, got ${unownedTutor.status}.`);
+
     result.tutor = {
       status: tutorResponse.status,
       requestId: tutorResponse.requestId,
@@ -349,6 +369,7 @@ async function countRows(admin, table, column, value) {
       canRevealCorrectAnswer: trace.data.can_reveal_correct_answer,
       scoringRowsBefore: turnsBeforeTutor,
       scoringRowsAfter: turnsAfterTutor,
+      ownershipProbeStatus: unownedTutor.status,
     };
 
     for (let turn = 1; turn <= 5; turn += 1) {
@@ -357,7 +378,7 @@ async function countRows(admin, table, column, value) {
       ensure(!result.turns.some((entry) => entry.itemId === itemId), `Turn ${turn} repeated ${itemId}.`);
 
       const firstOption = page.locator('button.option-card').first();
-      await firstOption.waitFor({ state: 'visible', timeout: 45000 });
+      ensure(await firstOption.isEnabled(), `Turn ${turn} option is not actionable.`);
       const selectedOption = (await firstOption.locator('.option-key').textContent())?.trim() || 'A';
       await firstOption.click();
       await page.getByLabel('Justificación opcional').fill(`CAN-005 turno ${turn}: respuesta QA.`);
@@ -381,12 +402,14 @@ async function countRows(admin, table, column, value) {
         feedbackText: advanceJson.feedbackText,
         advanceStatus: advanceResponse.status(),
       });
-      currentItemId = advanceJson.nextItemId;
 
+      currentItemId = advanceJson.nextItemId;
       if (turn < 5) {
         ensure(currentItemId, `Turn ${turn} did not produce a next item.`);
-        await page.getByRole('button', { name: 'Siguiente pregunta' }).click();
-        await page.locator('button.option-card').first().waitFor({ state: 'visible', timeout: 45000 });
+        const nextItemId = currentItemId;
+        await waitForItemResponse(page, nextItemId, async () => {
+          await page.getByRole('button', { name: 'Siguiente pregunta' }).click();
+        });
       }
     }
 
@@ -409,13 +432,15 @@ async function countRows(admin, table, column, value) {
     result.mobile.dashboard = await assertMobileLayout(page, 'dashboard', page.getByRole('link', { name: 'Ir a práctica' }));
     const dashboardBodyText = await page.locator('main').innerText();
     await page.screenshot({ path: path.join(artifactRoot, '04-dashboard-mobile.png'), fullPage: true });
-
-    const dashboardApi = await http({
-      pathname: `/api/dashboard/summary?sessionId=${encodeURIComponent(sessionId)}`,
-      cookie: auth.cookieHeader,
-    });
+    const dashboardApi = await http({ pathname: `/api/dashboard/summary?sessionId=${encodeURIComponent(sessionId)}`, cookie: auth.cookieHeader });
     ensureOk(dashboardApi, 'GET session dashboard summary');
     ensure(Boolean(dashboardApi.requestId), 'Dashboard response is missing x-request-id.');
+
+    const unownedDashboard = await http({ pathname: `/api/dashboard/summary?sessionId=${crypto.randomUUID()}`, cookie: auth.cookieHeader });
+    ensure(unownedDashboard.status === 404, `Dashboard ownership probe expected 404, got ${unownedDashboard.status}.`);
+
+    await page.goto('/dashboard', { waitUntil: 'networkidle', timeout: 45000 });
+    const historicalBodyText = await page.locator('main').innerText();
     const historicalDashboardApi = await http({ pathname: '/api/dashboard/summary', cookie: auth.cookieHeader });
     ensureOk(historicalDashboardApi, 'GET historical dashboard summary');
 
@@ -432,7 +457,7 @@ async function countRows(admin, table, column, value) {
       dashboardSummary: dashboardApi.json,
       dashboardBodyText,
       historicalDashboardSummary: historicalDashboardApi.json,
-      historicalDashboardBodyText: dashboardBodyText,
+      historicalDashboardBodyText: historicalBodyText,
       expectedTurnCount: 5,
     });
     ensure(semantic.ok, `Dashboard semantic assertions failed: ${semantic.failures.join(' | ')}`);
@@ -443,6 +468,7 @@ async function countRows(admin, table, column, value) {
       avgReasoningScore: dashboardApi.json?.currentSession?.avgReasoningScore,
       persistedTurns: dbTurns.data.length,
       evaluationEvents: evaluationEvents.data.length,
+      ownershipProbeStatus: unownedDashboard.status,
       semanticAssertions: 'passed',
     };
 
@@ -465,6 +491,7 @@ async function countRows(admin, table, column, value) {
       ok: true,
       artifactRoot,
       sessionId,
+      itemIds: result.turns.map((turn) => turn.itemId),
       turnCount: result.turns.length,
       tutorStatus: result.tutor.status,
       dashboardAttempts: result.dashboard.totalAttempts,
