@@ -7,7 +7,7 @@
 
 ## Línea base
 
-Snapshot reproducible: `COVERAGE-SNAPSHOT-20260822.json`.
+Snapshot reproducible: `history/snapshots/COVERAGE-SNAPSHOT-20260822.json`.
 
 - Reactivos V4 válidos al inicio: 70.
 - Dominios sin cobertura: `pedagogia`, `practica_docente`.
@@ -62,7 +62,7 @@ Los perfiles sirven para variar contextos y pertinencia; no se inventan OPEC ni 
 
 ## Cierre alcanzado
 
-Snapshot final: `COVERAGE-AFTER-BATCH-10-20260822.json`.
+Snapshot final: `history/snapshots/COVERAGE-AFTER-BATCH-10-20260822.json`.
 
 - Reactivos V4 válidos: **170**.
 - Nuevos aprobados en esta expansión: **100/100**.
