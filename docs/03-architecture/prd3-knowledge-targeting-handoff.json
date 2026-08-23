@@ -4,6 +4,12 @@
   "branch": "reorg-v4-architecture-20260822",
   "baseMaster": "023e94f737ccd95dfe2ac9a093884dd4dc426aac",
   "pullRequest": 97,
+  "parallelExecution": {
+    "authorized": true,
+    "scope": "design, additive migration implementation and isolated tests on an independent branch",
+    "mergeGate": "before merge, contrast migration/backfill/selector against PR #97 canonical contracts and current master migration sequence",
+    "productionAuthorized": false
+  },
   "prd2Boundary": {
     "lastKnownMigration": "0028_atomic_v4_batch_import.sql",
     "productionModified": false,
@@ -70,7 +76,12 @@
   },
   "validation": {
     "command": "npm run content:validate:knowledge-targeting",
-    "script": "scripts/validate-knowledge-targeting.ts",
+    "scripts": [
+      "scripts/validate-knowledge-targeting.ts",
+      "scripts/validate-knowledge-vocabularies.ts"
+    ],
+    "sourceReferenceInventoryCommand": "npm run content:inventory:v4-sources",
+    "sourceReferenceInventoryScript": "scripts/inventory-v4-source-references.ts",
     "ciWorkflow": ".github/workflows/pr-checks.yml",
     "infrastructureStatus": "implemented",
     "checks": [
@@ -78,6 +89,7 @@
       "OPEC external identity uniqueness",
       "OPEC activation requires verification",
       "knowledge sourceId uniqueness",
+      "controlled knowledge source verificationStatus vocabulary",
       "knowledge map target/source referential integrity for every populated map",
       "active knowledge relation requires verified source and verification metadata",
       "itemId exists in V4 MANIFEST",
@@ -109,6 +121,7 @@
     "V4-ARCH-DEBT-009",
     "V4-ARCH-DEBT-011",
     "V4-ARCH-DEBT-018",
-    "V4-ARCH-DEBT-021"
+    "V4-ARCH-DEBT-021",
+    "V4-ARCH-DEBT-023"
   ]
 }
