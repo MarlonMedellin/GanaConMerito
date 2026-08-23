@@ -50,6 +50,9 @@ jobs:
       - name: Validate knowledge and targeting catalogs
         run: npm run content:validate:knowledge-targeting
 
+      - name: Inventory V4 source references
+        run: npm run content:inventory:v4-sources
+
       - name: Run lint
         run: npm run lint
 
