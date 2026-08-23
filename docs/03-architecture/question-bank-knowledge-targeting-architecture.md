@@ -64,15 +64,16 @@ content/
 │
 └── question-bank-v4/
     ├── README.md
-    ├── MANIFEST.json
+    ├── MANIFEST.json              # autoridad canónica; permanece en raíz
     ├── CONTRATO-EDITORIAL-V4.md
     ├── items/                     # único lugar de reactivos productivos V4
     ├── taxonomy/
-    ├── state/                     # estado vigente/snapshots canónicos futuros
+    ├── sources/                   # compatibilidad/índices locales V4
+    ├── state/                     # estado auxiliar vigente
     └── history/                   # expansión, auditorías, remediaciones y snapshots históricos
 ```
 
-La reorganización física de los documentos históricos de V4 se hará en una tarea separada para evitar mezclar cambios documentales con movimientos masivos de archivos.
+La reorganización física de V4 se ejecuta por fases en una rama dedicada para no romper consumidores heredados. `MANIFEST.json` permanece en la raíz porque scripts y CI lo consumen allí. La Fase C2 fue el primer lote histórico trasladado a `history/`; los históricos anteriores se moverán después de verificar referencias internas y externas.
 
 ## 4. Lugar del Markdown de temas
 
@@ -307,7 +308,7 @@ Evolución recomendada:
 
 Los archivos `AUDIT-*`, `COVERAGE-*`, `EXPANSION-*`, `REAUDIT-*` y `REMEDIATION-*` son evidencia histórica, no estado operativo actual.
 
-Destino futuro recomendado:
+Estructura adoptada de forma progresiva:
 
 ```text
 content/question-bank-v4/history/
@@ -317,7 +318,7 @@ content/question-bank-v4/history/
 └── snapshots/
 ```
 
-El estado vigente continúa gobernado por `MANIFEST.json` mientras no se apruebe otro mecanismo.
+La Fase C2 ya está ubicada en esta estructura como primer lote de migración. Los históricos anteriores que continúan en la raíz se moverán por lotes después de verificar referencias. El estado vigente continúa gobernado por `MANIFEST.json`.
 
 ## 13. Plan de implementación
 
@@ -327,10 +328,12 @@ El estado vigente continúa gobernado por `MANIFEST.json` mientras no se apruebe
 - ubicar el Markdown original de temas docentes en `knowledge-base/themes/docentes/`;
 - definir catálogo inicial de perfiles docentes.
 
-### Fase 1 — orden documental
+### Fase 1 — orden documental — EN EJECUCIÓN
+- establecer `history/` y `state/`;
 - mover históricos V4 a `history/` sin cambiar contenido;
-- mantener redirects/índice cuando una ruta sea referenciada por documentación técnica;
-- conservar `MANIFEST.json`, contrato, taxonomía e ítems en la raíz operativa.
+- hacerlo por lotes y actualizar referencias antes de retirar rutas antiguas;
+- conservar `MANIFEST.json`, contrato, taxonomía e ítems en la raíz operativa;
+- mantener `legacy-processing-register.csv` en su ruta actual mientras existan consumidores que dependan de ella.
 
 ### Fase 2 — corpus de conocimiento
 - inventariar `content/normative/` y fuentes V4 actuales;
