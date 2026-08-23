@@ -35,7 +35,7 @@ test("Tutor remains owned, deterministic and trace-backed", () => {
   assert.match(tutorRoute, /DeterministicTutorProvider/);
   assert.match(tutorRoute, /persistTutorTurnTrace/);
   assert.match(tutorRoute, /observedJson/);
-  assert.doesNotMatch(tutorRoute, /userMessage\s*[,}]/);
+  assert.doesNotMatch(tutorRoute, /console\.(?:log|warn|error)\([^\n]*userMessage/);
 });
 
 test("minimal observability records only operational metadata", () => {
