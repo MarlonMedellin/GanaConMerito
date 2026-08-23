@@ -1,7 +1,7 @@
 # PRD — Migración de Question Bank V4 en Supabase
 
-**Estado:** propuesto. No ejecutar cambios directamente en producción sin aplicar
-las migraciones versionadas desde el repositorio.
+**Estado:** base `0019–0027` materializada; importador atómico `0028` implementado y
+validado en Supabase local aislado. No aplicado en producción.
 
 ## 1. Resultado esperado
 
@@ -31,12 +31,15 @@ Arquitectura de referencia:
 
 `docs/03-architecture/question-bank-knowledge-targeting-architecture.md`
 
-## 3. Migraciones requeridas
+## 3. Secuencia versionada real
 
-### M-0019 — Contrato de columnas V4
+Las migraciones `0019–0027` ya existen en el repositorio y no deben modificarse.
+El historial remoto fue auditado en modo lectura y coincide hasta `0027`. La nueva
+operación usa el siguiente número libre, `0028`.
 
-Crear `supabase/migrations/0019_question_bank_v4_contract.sql` (reconfirmar el
-siguiente número disponible antes de crear el archivo) para añadir:
+### M-0019 — Contrato de columnas V4 (materializada)
+
+`supabase/migrations/0019_question_bank_v4_contract.sql` añade:
 
 | Columna | Tipo | Regla |
 |---|---|---|
@@ -53,47 +56,39 @@ Agregar índices para `bank_version`, `editorial_scope`, `opec_id`, `topic_code`
 la combinación usada por el selector. Agregar constraints para valores válidos y
 para exigir `source_reference`/`opec_id` cuando corresponda a V4.
 
-> Nota de gobernanza: el repositorio puede contener ya artefactos con estos números.
-> Antes de crear o modificar migraciones, verificar la secuencia real en
-> `supabase/migrations/` y el historial aplicado en cada ambiente. No reutilizar ni
-> reescribir una migración ya aplicada.
+> Regla de gobernanza: verificar la secuencia real en `supabase/migrations/` y el
+> historial aplicado en cada ambiente. No reutilizar ni reescribir migraciones.
 
-### M-0020 — Frontera urgente de respuestas
+### M-0020 a M-0027 — Seguridad y runtime V4 (materializadas)
 
-Revocar acceso directo de roles cliente a tablas/vistas con claves o explicaciones,
-restringir RPC críticas a `service_role` y migrar las rutas de servidor antes de
-aplicar los permisos. Artefacto: `0020_secure_question_answer_boundary.sql`.
+Esta secuencia incorpora la frontera de respuestas, el upsert unitario V4, las
+vistas seguras, métricas shadow, políticas server-only y ajustes de runtime. Sus
+definiciones ejecutables viven en `supabase/migrations/`.
 
-### M-0021 — Escritura V4
+### M-0028 — Importación V4 atómica y auditable
 
-Crear una función nueva `public.upsert_content_item_v4(...)`; no modificar ni
-reutilizar la firma actual de `upsert_content_item(...)`. La función debe:
+`supabase/migrations/0028_atomic_v4_batch_import.sql` añade, sin reescribir la
+historia:
 
-- insertar/actualizar el ítem y reescribir sus cuatro opciones atómicamente;
-- guardar metadatos de tutoría y auditoría en `editorial_metadata`;
-- definir `bank_version = 'v4'` y `source_path` V4;
-- iniciar en `status = 'draft'`, `is_published = false`, `is_active = false` y
-  `approval_status = 'pending_approval'`;
-- devolver el UUID e información de versión para el importador.
+- `question_bank_v4_manifests`, registro del corte congelado con SHA, hashes y conteo;
+- `question_bank_v4_taxonomy_snapshot`, catálogo exacto usado para validar el lote;
+- `question_bank_v4_import_runs`, trazabilidad de inicio, final, estado, error seguro
+  y reconciliación;
+- `import_question_bank_v4_batch(candidates, plan_hash, expected_count, source_sha)`,
+  función `SECURITY DEFINER`, `search_path` fijo y acceso exclusivo de
+  `service_role`;
+- validación completa del lote antes de escribir y reutilización del upsert unitario
+  solo después de superar ese gate;
+- rollback de todas las preguntas/opciones ante cualquier falla, conservando una
+  fila administrativa segura de la ejecución fallida;
+- reconciliación idempotente y desactivación, nunca borrado, de V4 históricas
+  ausentes del manifiesto;
+- vistas pre-respuesta sin clave ni explicaciones y vista post-respuesta reservada
+  a servidor.
 
-### M-0022 — Vistas de lectura y RLS
-
-Crear:
-
-- `v_question_bank_v4_active`: solo V4 publicado, aprobado, activo y elegible.
-- `v_question_bank_v4_practice`: proyección sin `correct_option`, explicaciones ni
-  `learningNote`, apta para entregar antes de responder.
-- `v_question_bank_v4_answered`: lectura exclusiva de servidor para feedback
-  posterior autorizado.
-
-Usar `security_invoker = true`, grants mínimos y RLS alineada con los endpoints
-actuales. Ninguna vista accesible al navegador expone claves o explicaciones.
-
-### M-0023 — Corte de fuente predeterminada
-
-Después del piloto, actualizar `v_item_bank_active` o el repositorio de selección
-para que solo el banco V4 autorizado sea predeterminado. Preservar una vista de
-lectura histórica para diagnóstico y rollback, sin selección automática.
+Toda pregunta importada queda `draft`, inactiva, no publicada y fuera del piloto.
+La migración fue reconstruida y ensayada localmente desde cero; su aplicación en
+staging remoto y producción requiere autorización separada.
 
 ### Evolución posterior — targeting y knowledge graph
 
@@ -138,11 +133,11 @@ denormalizados de la fuente principal durante la transición.
 
 1. Hacer backup verificable y registrar conteos de `item_bank`, `item_options`,
    sesiones y turnos antes de cada migración.
-2. Aplicar M-0019 a M-0022 en staging cuando corresponda al historial real.
-3. Importar una cohorte V4 usando dry-run y después aplicación controlada.
-4. Verificar opciones, estado, fuente, OPEC, vista de práctica y vista posterior.
-5. Aprobar editorialmente la cohorte y activar de forma explícita.
-6. Repetir en producción con una cohorte pequeña.
+2. Confirmar que el ambiente objetivo esté alineado hasta `0027`.
+3. Aplicar `0028` solo en una rama/base aislada autorizada.
+4. Ejecutar dry-run y después una única llamada batch controlada.
+5. Verificar opciones, estado, fuente, OPEC, vista de práctica y vista posterior.
+6. Aprobar editorialmente la cohorte y activar de forma explícita.
 7. Aplicar el corte de fuente predeterminada únicamente cuando el piloto y las
    pruebas de runtime estén aprobados.
 8. Adoptar targeting/perfiles y knowledge graph como evolución aditiva posterior,
@@ -157,8 +152,11 @@ solo debe backfillearse con evidencia editorial validada.
 
 ## 5. Pruebas obligatorias
 
-- tests SQL de constraints, función de upsert, vistas y RLS;
-- importación idempotente y rechazo de JSON incompleto/no aprobado;
+- reconstrucción desde cero de todas las migraciones en Supabase aislado;
+- importación completa, segunda ejecución idempotente y rollback intermedio;
+- rechazo de JSON inválido, ID duplicado, hash y conteo incorrectos;
+- preservación inactiva de filas V4 históricas;
+- pruebas de constraints, función de upsert, vistas, grants y RLS;
 - prueba de que `v_question_bank_v4_practice` no devuelve clave ni feedback;
 - prueba de que la vista posterior autorizada devuelve la explicación correcta;
 - integración de `session/start`, `session/item` y `session/advance`;

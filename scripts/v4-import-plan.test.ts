@@ -4,21 +4,17 @@ import test from "node:test";
 import { buildV4ImportPlan, collectApprovalEvidence } from "./lib/v4-import-plan";
 
 test("current V4 bank forms one approved plan or rejects an open editorial batch", async () => {
-  try {
-    const plan = await buildV4ImportPlan(process.cwd());
-    const legacyApproved = plan.candidates.filter((candidate) => candidate.approvalEvidence.kind === "legacy-register").length;
-    const expansionApproved = plan.candidates.filter((candidate) => candidate.approvalEvidence.kind === "expansion-batch").length;
-    assert.ok(plan.candidates.length > 0);
-    assert.ok(legacyApproved > 0);
-    assert.ok(expansionApproved > 0);
-    assert.equal(legacyApproved + expansionApproved, plan.candidates.length);
-    assert.match(plan.planHash, /^[a-f0-9]{64}$/);
-  } catch (error) {
-    assert.match(
-      error instanceof Error ? error.message : String(error),
-      /^(?:DOC|GEN)-\d{6}: missing APPROVED editorial evidence$/,
-    );
-  }
+  const plan = await buildV4ImportPlan(process.cwd());
+  const manifestApproved = plan.candidates.filter(
+    (candidate) => candidate.approvalEvidence.kind === "canonical-manifest",
+  ).length;
+  assert.equal(plan.candidates.length, 248);
+  assert.equal(plan.expectedCount, 248);
+  assert.equal(manifestApproved, plan.candidates.length);
+  assert.match(plan.sourceSha, /^[a-f0-9]{40}$/);
+  assert.match(plan.corpusHash, /^[a-f0-9]{64}$/);
+  assert.match(plan.idsHash, /^[a-f0-9]{64}$/);
+  assert.match(plan.planHash, /^[a-f0-9]{64}$/);
 });
 
 test("open expansion batches do not authorize items", () => {
@@ -130,4 +126,23 @@ test("V4 upsert remains service-only, idempotent and inactive by default", async
   assert.match(migration, /grant execute[\s\S]*to service_role/i);
   assert.match(migration, /v_existing_hash = p_content_hash[\s\S]*v_existing_approval = p_approval_evidence/i);
   assert.match(migration, /is_published = false[\s\S]*status = 'draft'[\s\S]*is_active = false/i);
+});
+
+test("V4 importer uses one atomic batch RPC and isolated credentials", async () => {
+  const importer = await readFile("scripts/import-question-bank-v4.ts", "utf8");
+  const migration = await readFile(
+    "supabase/migrations/0028_atomic_v4_batch_import.sql",
+    "utf8",
+  );
+
+  assert.match(importer, /rpc\("import_question_bank_v4_batch"/);
+  assert.doesNotMatch(importer, /rpc\("upsert_content_item_v4"/);
+  assert.match(importer, /V4_IMPORT_SUPABASE_URL/);
+  assert.match(importer, /V4_IMPORT_SUPABASE_SERVICE_ROLE_KEY/);
+  assert.match(migration, /perform pg_advisory_xact_lock/i);
+  assert.match(migration, /exception when others/i);
+  assert.match(migration, /partialQuestionWrites', 0/i);
+  assert.match(migration, /revoke execute[\s\S]+from public, anon, authenticated/i);
+  assert.match(migration, /grant execute[\s\S]+to service_role/i);
+  assert.match(migration, /set search_path = public, pg_temp/i);
 });

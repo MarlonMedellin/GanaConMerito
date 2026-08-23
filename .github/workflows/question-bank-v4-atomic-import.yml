@@ -1,0 +1,54 @@
+name: Question Bank V4 atomic import
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'content/question-bank-v4/**'
+      - 'scripts/import-question-bank-v4.ts'
+      - 'scripts/lib/v4-import-plan.ts'
+      - 'scripts/test-v4-atomic-import.ts'
+      - 'scripts/v4-import-plan.test.ts'
+      - 'supabase/migrations/**'
+      - 'supabase/seed.sql'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/question-bank-v4-atomic-import.yml'
+  pull_request:
+    branches: [master]
+    paths:
+      - 'content/question-bank-v4/**'
+      - 'scripts/import-question-bank-v4.ts'
+      - 'scripts/lib/v4-import-plan.ts'
+      - 'scripts/test-v4-atomic-import.ts'
+      - 'scripts/v4-import-plan.test.ts'
+      - 'supabase/migrations/**'
+      - 'supabase/seed.sql'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/question-bank-v4-atomic-import.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  isolated-database:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Start isolated Supabase
+        run: npx supabase start
+      - name: Rebuild from all versioned migrations
+        run: npx supabase db reset --local
+      - name: Test atomic V4 import
+        run: npm run test:v4-import:db
+      - name: Stop isolated Supabase
+        if: always()
+        run: npx supabase stop --no-backup

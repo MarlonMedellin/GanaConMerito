@@ -55,6 +55,21 @@ Arquitectura de referencia:
 
 `docs/03-architecture/question-bank-knowledge-targeting-architecture.md`
 
+## Administración del importador V4 (`0028`)
+
+La migración versionada `0028_atomic_v4_batch_import.sql`, validada en Supabase
+local aislado y todavía no aplicada en producción, añade:
+
+- `question_bank_v4_manifests`: SHA fuente, hashes y conteo del corte congelado;
+- `question_bank_v4_taxonomy_snapshot`: valores exactos aceptados por ese lote;
+- `question_bank_v4_import_runs`: estado, tiempos, error seguro y reconciliación;
+- `import_question_bank_v4_batch(...)`: operación transaccional exclusiva de
+  `service_role`.
+
+Estas tablas son administrativas, tienen RLS y no otorgan acceso a `anon` ni
+`authenticated`. El snapshot valida la taxonomía del manifiesto importado; no es
+el futuro catálogo de targeting ni sustituye la capa de conocimiento.
+
 ## Evolución de esquema propuesta — NO implementada por este documento
 
 Cuando se autorice mediante migraciones nuevas, el modelo debe poder incorporar:

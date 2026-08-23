@@ -4,7 +4,7 @@ import path from "node:path";
 import { v4ItemSchema, type V4Item } from "../../src/domain/content/v4-contract";
 
 export interface V4ApprovalEvidence {
-  kind: "legacy-register" | "expansion-batch";
+  kind: "legacy-register" | "expansion-batch" | "canonical-manifest";
   reference: string;
   expectedPath?: string;
 }
@@ -20,6 +20,47 @@ export interface V4ImportCandidate {
 export interface V4ImportPlan {
   candidates: V4ImportCandidate[];
   planHash: string;
+  sourceSha: string;
+  expectedCount: number;
+  corpusHash: string;
+  idsHash: string;
+}
+
+interface V4CanonicalManifest {
+  repository: { sourceCommit: string };
+  expectedItemCount: number;
+  corpus: { sha256: string; idsSha256: string; ids: string[] };
+  editorialState: {
+    status: string;
+    approval: string;
+    runtimeActivationAuthorized: boolean;
+    supabaseMigrationAuthorized: boolean;
+  };
+}
+
+export function canonicalJson(value: unknown): string {
+  if (value === null || typeof value !== "object") {
+    const encoded = JSON.stringify(value);
+    if (encoded === undefined) throw new Error("Unsupported value in canonical JSON");
+    return encoded;
+  }
+  if (Array.isArray(value)) return `[${value.map(canonicalJson).join(",")}]`;
+  const record = value as Record<string, unknown>;
+  return `{${Object.keys(record).sort().map((key) => `${JSON.stringify(key)}:${canonicalJson(record[key])}`).join(",")}}`;
+}
+
+export function calculateV4PlanHash(candidates: V4ImportCandidate[]): string {
+  const payload = [...candidates]
+    .sort((left, right) => left.itemId.localeCompare(right.itemId))
+    .map((candidate) => [
+      candidate.itemId,
+      candidate.contentHash,
+      candidate.sourcePath,
+      candidate.approvalEvidence.reference,
+    ].join(":"))
+    .map((line) => `${line}\n`)
+    .join("");
+  return createHash("sha256").update(payload).digest("hex");
 }
 
 function expandItemRange(startId: string, endId: string, expectedCount: number): string[] | null {
@@ -131,24 +172,26 @@ async function jsonFiles(directory: string): Promise<string[]> {
 
 export async function buildV4ImportPlan(repoRoot: string): Promise<V4ImportPlan> {
   const bankRoot = path.join(repoRoot, "content/question-bank-v4");
-  const rootEntries = await fs.readdir(bankRoot);
-  const expansionPaths = rootEntries
-    .filter((name) => /^EXPANSION-BATCH-.*\.md$/.test(name)
-      || /^EXPANSION-PHASE-.*-CLOSURE-.*\.md$/.test(name))
-    .sort()
-    .map((name) => path.join(bankRoot, name));
-  const [itemPaths, legacyRegister, expansionDocuments, domains, topics, competencies, questionTypes] = await Promise.all([
+  const [itemPaths, manifest, domains, topics, competencies, questionTypes] = await Promise.all([
     jsonFiles(path.join(bankRoot, "items")),
-    fs.readFile(path.join(bankRoot, "legacy-processing-register.csv"), "utf8"),
-    Promise.all(expansionPaths.map(async (file) => ({ sourcePath: path.relative(repoRoot, file).replaceAll("\\", "/"), content: await fs.readFile(file, "utf8") }))),
+    fs.readFile(path.join(bankRoot, "MANIFEST.json"), "utf8").then(JSON.parse) as Promise<V4CanonicalManifest>,
     fs.readFile(path.join(bankRoot, "taxonomy/domains.json"), "utf8").then(JSON.parse) as Promise<string[]>,
     fs.readFile(path.join(bankRoot, "taxonomy/topics.json"), "utf8").then(JSON.parse) as Promise<string[]>,
     fs.readFile(path.join(bankRoot, "taxonomy/competencies.json"), "utf8").then(JSON.parse) as Promise<string[]>,
     fs.readFile(path.join(bankRoot, "taxonomy/question-types.json"), "utf8").then(JSON.parse) as Promise<{ questionTypes: string[]; cognitiveLevels: string[] }>,
   ]);
-  const approvals = collectApprovalEvidence(legacyRegister, expansionDocuments);
+  if (manifest.editorialState.status !== "FROZEN" || manifest.editorialState.approval !== "APPROVED") {
+    throw new Error("V4 canonical manifest is not FROZEN / APPROVED");
+  }
+  if (manifest.editorialState.runtimeActivationAuthorized || manifest.editorialState.supabaseMigrationAuthorized) {
+    throw new Error("V4 canonical manifest must remain runtime and production-migration inactive");
+  }
+  if (!/^[a-f0-9]{40}$/.test(manifest.repository.sourceCommit)) {
+    throw new Error("V4 canonical manifest sourceCommit is invalid");
+  }
   const ids = new Set<string>();
   const candidates: V4ImportCandidate[] = [];
+  const corpusDigest = createHash("sha256");
   for (const file of itemPaths) {
     const sourcePath = path.relative(repoRoot, file).replaceAll("\\", "/");
     const raw = await fs.readFile(file, "utf8");
@@ -160,11 +203,38 @@ export async function buildV4ImportPlan(repoRoot: string): Promise<V4ImportPlan>
     if (!competencies.includes(item.competency)) throw new Error(`${item.id}: competency outside catalog`);
     if (!questionTypes.questionTypes.includes(item.questionType)) throw new Error(`${item.id}: questionType outside catalog`);
     if (!questionTypes.cognitiveLevels.includes(item.cognitiveLevel)) throw new Error(`${item.id}: cognitiveLevel outside catalog`);
-    const approvalEvidence = approvals.get(item.id);
-    if (!approvalEvidence) throw new Error(`${item.id}: missing APPROVED editorial evidence`);
-    if (approvalEvidence.expectedPath && approvalEvidence.expectedPath !== sourcePath) throw new Error(`${item.id}: approval path does not match ${sourcePath}`);
-    candidates.push({ item, itemId: item.id, sourcePath, contentHash: createHash("sha256").update(raw).digest("hex"), approvalEvidence });
+    const fileHash = createHash("sha256").update(raw).digest("hex");
+    corpusDigest.update(sourcePath).update("\0").update(fileHash).update("\n");
+    const approvalEvidence: V4ApprovalEvidence = {
+      kind: "canonical-manifest",
+      reference: `manifest:${manifest.repository.sourceCommit}:${item.id}`,
+      expectedPath: sourcePath,
+    };
+    candidates.push({
+      item,
+      itemId: item.id,
+      sourcePath,
+      contentHash: createHash("sha256").update(canonicalJson(item)).digest("hex"),
+      approvalEvidence,
+    });
   }
-  const planHash = createHash("sha256").update(candidates.map((candidate) => `${candidate.itemId}:${candidate.contentHash}:${candidate.approvalEvidence.reference}`).join("\n")).digest("hex");
-  return { candidates, planHash };
+  const sortedIds = [...ids].sort();
+  const idsHash = createHash("sha256").update(sortedIds.map((itemId) => `${itemId}\n`).join("")).digest("hex");
+  const corpusHash = corpusDigest.digest("hex");
+  if (candidates.length !== manifest.expectedItemCount) {
+    throw new Error(`V4 manifest count mismatch: expected ${manifest.expectedItemCount}, found ${candidates.length}`);
+  }
+  if (JSON.stringify(sortedIds) !== JSON.stringify([...manifest.corpus.ids].sort())) {
+    throw new Error("V4 manifest IDs do not match the physical corpus");
+  }
+  if (idsHash !== manifest.corpus.idsSha256) throw new Error("V4 manifest IDs hash mismatch");
+  if (corpusHash !== manifest.corpus.sha256) throw new Error("V4 manifest corpus hash mismatch");
+  return {
+    candidates,
+    planHash: calculateV4PlanHash(candidates),
+    sourceSha: manifest.repository.sourceCommit,
+    expectedCount: manifest.expectedItemCount,
+    corpusHash,
+    idsHash,
+  };
 }

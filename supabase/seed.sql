@@ -10,10 +10,11 @@ begin;
 -- =========================================================
 with upsert_item_1 as (
   insert into public.item_bank (
-    slug, title, area, subarea, exam_type, competency, difficulty,
+    content_id, slug, title, area, subarea, exam_type, competency, difficulty,
     target_level, item_type, stem, correct_option, explanation,
     normative_refs, is_published, version
   ) values (
+    'caso-convivencia-001',
     'caso-convivencia-001',
     'Caso de convivencia escolar',
     'normatividad',
@@ -49,10 +50,11 @@ with upsert_item_1 as (
   returning id
 ), upsert_item_2 as (
   insert into public.item_bank (
-    slug, title, area, subarea, exam_type, competency, difficulty,
+    content_id, slug, title, area, subarea, exam_type, competency, difficulty,
     target_level, item_type, stem, correct_option, explanation,
     normative_refs, is_published, version
   ) values (
+    'planeacion-aula-001',
     'planeacion-aula-001',
     'Planeación de aula con evaluación formativa',
     'pedagogia',
@@ -88,10 +90,11 @@ with upsert_item_1 as (
   returning id
 ), upsert_item_3 as (
   insert into public.item_bank (
-    slug, title, area, subarea, exam_type, competency, difficulty,
+    content_id, slug, title, area, subarea, exam_type, competency, difficulty,
     target_level, item_type, stem, correct_option, explanation,
     normative_refs, is_published, version
   ) values (
+    'razonamiento-matematico-001',
     'razonamiento-matematico-001',
     'Interpretación de patrones numéricos',
     'matematicas',
