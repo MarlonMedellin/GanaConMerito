@@ -2,13 +2,21 @@
 
 **Estado:** contrato de coordinación entre la consolidación editorial/arquitectónica y la implementación Supabase de PRD 3.  
 **Rama de origen:** `reorg-v4-architecture-20260822`.  
-**Base conocida:** `master@023e94f737ccd95dfe2ac9a093884dd4dc426aac`.  
+**Base sincronizada al freeze:** `master@7be92b655dee4965872963f1ca57d6eb96107599`.  
 **PR arquitectónico:** #97, todavía draft y no fusionado.  
-**Ejecución paralela:** **AUTORIZADA**. PRD 3 puede diseñarse, implementarse y probarse en una rama independiente desde el `master` vigente; antes de fusionar su migración/backfill debe contrastarse con este handoff y con los contratos editoriales del PR #97.
+**Ejecución paralela:** **AUTORIZADA** en rama independiente. Antes de fusionar cualquier migración/backfill/selector, contrastar este handoff, los contratos editoriales de #97 y la secuencia de migraciones vigente en `master`.
 
-## 1. Frontera ya cerrada por PRD 2
+## 1. Frontera V4 vigente después del checkpoint de Codex
 
-PRD 2 deja versionada la migración `0028_atomic_v4_batch_import.sql` y el importador V4 atómico. PRD 3 debe ser estrictamente aditivo respecto de esa frontera.
+La secuencia `0001–0029` ya está ocupada en repositorio.
+
+- `0028_atomic_v4_batch_import.sql` fue aplicada en producción **sin ejecutar el lote V4**.
+- Producción quedó con 163 V4 presentes, 85 faltantes, 652 opciones y cero V4 activas/publicadas/en piloto según el checkpoint versionado.
+- `0029_harden_v4_manifest_reconciliation.sql` está versionada y validada localmente, pero **no aplicada en producción** al freeze.
+- El lote canónico de 248 reactivos **no fue importado en producción** en ese checkpoint.
+- PRD 3 continúa abierto.
+
+Evidencia operativa: `docs/04-quality/prd-3-v4-production-checkpoint-2026-08-22.md`.
 
 Preservar:
 
@@ -19,9 +27,9 @@ Preservar:
 - `content/question-bank-v4/legacy-processing-register.csv` mientras tenga consumidores;
 - vistas/controles de seguridad V4;
 - `item_bank.opec_id` durante la transición;
-- migraciones `0001–0028` sin reescritura.
+- migraciones `0001–0029` sin reescritura.
 
-Antes de crear una nueva migración, releer `supabase/migrations/`. `0029` es solo candidato si continúa siendo el siguiente número realmente libre.
+**Regla numérica:** releer siempre `supabase/migrations/` antes de escribir. Con el estado del freeze, una migración nueva de targeting/knowledge debe comenzar en `0030` o superior; nunca reutilizar `0029`.
 
 ## 2. Contratos editoriales canónicos
 
@@ -33,7 +41,7 @@ Antes de crear una nueva migración, releer `supabase/migrations/`. `0029` es so
 
 `content/targeting/profiles/docentes.json`
 
-Códigos iniciales:
+Códigos congelados para esta etapa:
 
 - `rector_director_rural`
 - `coordinador`
@@ -44,13 +52,27 @@ Códigos iniciales:
 
 `content/profiles/docente/` es histórico/puente y no debe convertirse en un segundo catálogo.
 
+### Semántica simple de targeting congelada
+
+Hasta canary/pruebas con primeros usuarios:
+
+```text
+perfil reutilizable → positionName oficial → OPEC concreta
+```
+
+- **perfil**: grupo reusable de preparación;
+- **`positionName`**: denominación oficial concreta del cargo/área;
+- **OPEC**: oferta concreta y trazable.
+
+No crear perfiles por disciplina (`docente_matematicas`, `docente_filosofia`, etc.) mientras `positionName` resuelva esa especificidad. No introducir ahora capas adicionales `area`, `specialty` o `employment_identity`.
+
 ### OPEC
 
 - contrato: `content/targeting/opecs/README.md`
 - schema: `content/targeting/opecs/catalog.schema.json`
 - catálogo: `content/targeting/opecs/catalog.json`
 
-El catálogo está vacío de manera deliberada. No inventar OPEC de ejemplo para poblar base de datos. Una OPEC debe ser real, trazable y mapear a un perfil canónico.
+El catálogo está vacío de manera deliberada. No inventar OPEC de ejemplo. Una OPEC debe ser real, trazable y mapear a un perfil canónico.
 
 ### Reactivo → targeting
 
@@ -74,6 +96,16 @@ Una fuente real debe tener una sola identidad canónica. Su aplicabilidad se exp
 El inventario puede registrar identidad y URL oficial sin declarar una fuente completamente verificada. `verificationStatus: needs_review` debe preservarse hasta revisar vigencia/localizador del contenido normativo usado.
 
 No se crean mapas `active` mientras la fuente asociada no tenga `verificationStatus: verified`.
+
+### Rol de fuentes sin nuevas capas de datos
+
+Los agentes deben distinguir:
+
+- norma/Acuerdo/Anexo/OPEC oficial → reglas oficiales en su ámbito;
+- matriz/guía/ejes oficiales → orientación de evaluación;
+- temario/material académico/técnico → material de estudio y construcción.
+
+Esta distinción es documental. No crear ahora otra taxonomía, tabla o campo de pregunta para representarla.
 
 ## 3. Modelo relacional esperado
 
@@ -146,7 +178,7 @@ Valida:
 - unicidad de identidad externa OPEC;
 - `active => verificationStatus=verified` para OPEC;
 - unicidad de `sourceId`;
-- vocabulario controlado de `verificationStatus` para fuentes;
+- vocabulario de fuentes `needs_review|verified|rejected`;
 - mapas de conocimiento contra inventario/familias/perfiles/OPEC;
 - una relación de conocimiento `active` solo si la fuente está `verified` y la relación tiene `verifiedAt` + `verifiedBy`;
 - `itemId` de los item maps contra los IDs del `MANIFEST.json` V4;
@@ -173,9 +205,9 @@ La restauración íntegra está pendiente bajo `V4-ARCH-DEBT-021`. No derivar pe
 
 ## 10. Producción
 
-PRD 2 no modificó producción. Este handoff tampoco autoriza despliegue productivo.
+Este handoff **no autoriza nuevas escrituras productivas**.
 
-Mantener diseño, migración y pruebas de PRD 3 en ambiente aislado hasta que exista autorización explícita para despliegue remoto.
+El checkpoint anterior sí aplicó `0028` en producción sin ejecutar el lote. `0029` y el lote V4 permanecen pendientes. Cualquier aplicación remota/productiva posterior requiere autorización explícita del propietario y un preflight nuevo sobre el `master` vigente.
 
 ## 11. Deudas que PRD 3 debe conocer
 
@@ -187,13 +219,28 @@ Especialmente:
 - `V4-ARCH-DEBT-008` — catálogo OPEC real;
 - `V4-ARCH-DEBT-009` — poblar y revisar el mapa 248 reactivos → perfiles/OPEC;
 - `V4-ARCH-DEBT-011` — posible evolución futura de `editorial_scope`;
-- `V4-ARCH-DEBT-018` — verificación/despliegue fuera de entorno local;
+- `V4-ARCH-DEBT-018` — continuidad operativa de `0029`/lote fuera del entorno local;
 - `V4-ARCH-DEBT-021` — integridad exacta del temario base.
 
-La deuda de crear contratos machine-readable y validación para mapas de reactivos/fuentes queda resuelta en esta rama mediante los schemas y `content:validate:knowledge-targeting`.
+La deuda de crear contratos machine-readable y validación para mapas de reactivos/fuentes queda resuelta mediante los schemas y `content:validate:knowledge-targeting`.
 
-## 12. Regla de coordinación
+## 12. Freeze de arquitectura/onboarding
 
-PRD 3 **no necesita esperar** a que el PR #97 se fusione para desarrollar y probar su migración en una rama independiente. Sí debe esperar antes de **fusionar** cualquier decisión que contradiga o dependa de contratos todavía abiertos en #97.
+Con este checkpoint se congela la estructura de onboarding/knowledge/targeting hasta la fase canary y primeras pruebas con stakeholders/early adopters.
 
-Si PRD 3 necesita cambiar alguno de estos contratos, no debe crear silenciosamente una semántica paralela. Debe documentar el conflicto, proponer el cambio y mantener una estrategia explícita de compatibilidad/migración.
+Antes de canary solo se reabre por una causa estrictamente necesaria:
+
+1. defecto de corrección que impida el flujo previsto;
+2. vulnerabilidad o ruptura de frontera de seguridad;
+3. riesgo demostrable de pérdida/corrupción de datos;
+4. incompatibilidad objetiva con una migración ya aplicada que no admita solución compatible.
+
+Preferencias de modelado, nuevos niveles, renombres o mayor granularidad se difieren hasta tener evidencia de uso real.
+
+## 13. Regla de coordinación
+
+PRD 3 puede continuar en rama independiente sobre el `master` vigente. Debe releer `master` antes de empezar porque puede haber avanzado después de este freeze.
+
+Si #97 aún no está fusionado, PRD 3 debe leer este handoff directamente desde `reorg-v4-architecture-20260822` y evitar editar los mismos contratos editoriales. Antes de fusionar SQL o backfills, debe contrastar sus decisiones contra #97.
+
+Si PRD 3 necesita cambiar alguno de estos contratos, no debe crear silenciosamente una semántica paralela. Debe documentar el bloqueo y solicitar reapertura del freeze únicamente si cumple uno de los criterios estrictos de la sección anterior.
