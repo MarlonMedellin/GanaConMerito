@@ -2,7 +2,7 @@
 
 Biblioteca compartida de conocimiento para construir, auditar y mantener bancos de preguntas presentes y futuros.
 
-Esta carpeta **no es un banco de reactivos**. Contiene las fuentes, temarios, mapas y referencias que permiten justificar nuevos reactivos y determinar su aplicabilidad.
+Esta carpeta **no es un banco de reactivos**. Contiene fuentes, temarios, mapas y referencias que permiten justificar nuevos reactivos y determinar su aplicabilidad.
 
 ## Principios
 
@@ -11,17 +11,21 @@ Esta carpeta **no es un banco de reactivos**. Contiene las fuentes, temarios, ma
 3. Un temario orienta cobertura; no crea automáticamente una taxonomía ni una pregunta.
 4. Toda fuente debe conservar procedencia, vigencia/fecha de consulta y localizador cuando aplique.
 5. El banco V4 sigue gobernado por `content/question-bank-v4/CONTRATO-EDITORIAL-V4.md` y `MANIFEST.json`.
+6. Un archivo legacy no se promueve automáticamente a fuente verificada: primero debe pasar por inventario y normalización.
 
-## Estructura objetivo
+## Estructura actual
 
 ```text
 content/knowledge-base/
 ├── README.md
-├── catalog/                  # índice de fuentes y metadatos
-├── themes/                   # temarios y blueprints
+├── catalog/
+│   ├── README.md
+│   └── source-inventory.json    # fuentes canónicas y candidatos legacy
+├── themes/
 │   ├── docentes/
 │   └── <familia>/
 ├── sources/
+│   ├── README.md
 │   ├── normative/
 │   ├── academic/
 │   ├── technical/
@@ -34,24 +38,24 @@ content/knowledge-base/
 
 ## Temario docente original
 
-El Markdown de temas que sirvió para analizar la expansión docente debe conservarse, cuando se incorpore como archivo del repositorio, en:
+El Markdown original aportado por el usuario se conserva en:
 
 ```text
 content/knowledge-base/themes/docentes/temario-base.md
 ```
 
-No se recrea aquí de memoria: debe copiarse desde el documento fuente original para preservar fidelidad y procedencia.
+Es una fuente de planeación, gap analysis y descubrimiento de cobertura. No es un catálogo automático de `topic`, no prueba por sí solo la vigencia de una afirmación y no autoriza la creación automática de reactivos.
 
-## Fuentes normativas
+## Fuentes normativas legacy
 
-`content/normative/` contiene actualmente material normativo previo. Su contenido debe inventariarse y migrarse de forma controlada a esta biblioteca; no se deben crear copias paralelas de la misma ley o decreto mientras dure la transición.
+`content/normative/` conserva material previo a esta arquitectura. En el primer inventario se identificaron:
 
-Una norma puede ser:
+- `decreto_1075.md`;
+- `ley_1098.md`.
 
-- común a toda la aplicación;
-- común a una familia como `docentes`;
-- especialmente relevante para uno o varios perfiles/cargos;
-- exclusiva de una OPEC o convocatoria concreta.
+Son fichas resumidas, no copias integrales verificadas de las normas. Permanecen temporalmente en su ruta legacy y están registradas en `catalog/source-inventory.json` con `verificationStatus: needs_review`.
+
+No agregar nuevas fuentes en `content/normative/`. El destino canónico de una fuente ya normalizada es `content/knowledge-base/sources/`.
 
 ## Perfiles docentes iniciales
 
@@ -64,7 +68,7 @@ La familia `docentes` utiliza como perfiles canónicos iniciales:
 - `docente_aula_secundaria_media`
 - `docente_orientador`
 
-La base normativa/pedagógica común se comparte. Los mapas de perfil añaden únicamente lo diferencial.
+La base normativa/pedagógica común se comparte. Los mapas de perfil añaden únicamente lo diferencial. Para nueva arquitectura, la identidad canónica de perfiles vive en `content/targeting/profiles/docentes.json`.
 
 ## Relación con preguntas
 
@@ -97,4 +101,5 @@ Una fuente puede sostener muchos reactivos y un reactivo puede relacionarse con 
 - fuentes sin procedencia;
 - copias repetidas por perfil;
 - reactivos productivos;
-- snapshots históricos de auditoría V4.
+- snapshots históricos de auditoría V4;
+- nuevas fuentes en rutas legacy cuando ya exista destino canónico en `knowledge-base`.
