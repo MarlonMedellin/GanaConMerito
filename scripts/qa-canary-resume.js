@@ -136,8 +136,19 @@ async function getAuthCookie() {
 function mergeSetCookie(cookieHeader, response) {
   const setCookie = response.headers.get('set-cookie');
   if (!setCookie) return cookieHeader;
-  const canaryCookie = setCookie.match(/(?:^|,\s*)(gcm_canary_targeting=[^;]+)/)?.[1];
-  return canaryCookie ? `${cookieHeader}; ${canaryCookie}` : cookieHeader;
+
+  const jar = new Map();
+  for (const part of cookieHeader.split('; ').filter(Boolean)) {
+    const separator = part.indexOf('=');
+    if (separator > 0) jar.set(part.slice(0, separator), part.slice(separator + 1));
+  }
+
+  for (const name of ['gcm_canary_targeting', 'gcm_canary_session_targeting']) {
+    const match = setCookie.match(new RegExp(`(?:^|,\\s*)${name}=([^;]+)`));
+    if (match?.[1]) jar.set(name, match[1]);
+  }
+
+  return Array.from(jar.entries()).map(([name, value]) => `${name}=${value}`).join('; ');
 }
 
 async function http({ method = 'GET', pathname, body, cookie }) {
@@ -195,6 +206,7 @@ function ensureOk(response, label) {
 
   const start = await http({ method: 'POST', pathname: '/api/session/start', cookie, body: { mode: 'practice' } });
   ensureOk(start, 'POST /api/session/start');
+  cookie = mergeSetCookie(cookie, start);
   const sessionId = start.json?.sessionId;
   const firstItemId = start.json?.currentItemId;
   if (!sessionId || !firstItemId) {
