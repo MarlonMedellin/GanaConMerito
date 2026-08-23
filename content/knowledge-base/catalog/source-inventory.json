@@ -5,7 +5,8 @@
     "Este inventario registra fuentes canónicas y candidatos legacy; no convierte automáticamente un candidato en fuente verificada.",
     "La aplicabilidad por familia, perfil u OPEC se mantiene fuera de este catálogo, en maps/targeting.",
     "repoPathLegacy conserva procedencia histórica y no implica que esa ruta sea canónica.",
-    "Una URL oficial verificada demuestra identidad/procedencia de la norma, pero no sustituye la revisión de vigencia y localizador del artículo usado por cada reactivo."
+    "Una URL oficial verificada demuestra identidad/procedencia de la norma, pero no sustituye la revisión de vigencia y localizador del artículo usado por cada reactivo.",
+    "Una fuente oficial en fase de proyecto puede tener procedencia verificada sin tratarse como acto definitivo; su verificationScope y notes deben declarar expresamente esa provisionalidad y su regla de supersesión."
   ],
   "sources": [
     {
@@ -51,6 +52,48 @@
       "locator": null,
       "rightsNote": "Ficha legacy resumida; la ley oficial es pública, pero la copia local no es texto integral ni sustituye la fuente oficial.",
       "notes": "La identidad, fecha de expedición, entrada en vigencia y referencia oficial fueron contrastadas. La Ley 1098 ha sido modificada; cualquier artículo usado por un reactivo exige verificación de vigencia/localizador antes de considerarse fuente decisiva."
+    },
+    {
+      "sourceId": "cnsc-docentes-2026-proyecto-acuerdo-antioquia",
+      "sourceType": "normative",
+      "title": "Proyecto de Acuerdo - Proceso de Selección Docentes y Directivos Docentes 2026 - Secretaría de Educación Departamental de Antioquia",
+      "reference": "Proyecto de Acuerdo Docentes y Directivos Docentes 2026 - Antioquia",
+      "issuerOrAuthor": "Comisión Nacional del Servicio Civil (CNSC)",
+      "jurisdiction": "colombia/antioquia",
+      "publicationDate": "2026-08-19",
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-23T13:48:00.000Z",
+      "lastCheckedAt": "2026-08-23",
+      "verificationScope": "official_project_publication_and_provenance_verified; preliminary_not_final_act; local_copy_sha256_verified",
+      "sourceSystem": "cnsc_official_projects",
+      "url": "https://www.cnsc.gov.co/proyecto-de-acuerdos-y-anexos-de-nuevos-procesos-de-seleccion",
+      "repoPath": "content/knowledge-base/sources/normative/cnsc-docentes-2026-proyecto-acuerdo-antioquia.md",
+      "locator": "Secretaría de Educación Departamental de Antioquia; artículo 8 y tablas de empleos/vacantes; reglas de OPEC y divulgación",
+      "rightsNote": "Documento público oficial en fase de proyecto. Se conserva en repo la ficha normalizada, URL oficial y hash de la copia aportada; el binario se difiere hasta la versión definitiva para evitar fijar como final una versión sometida a observaciones.",
+      "notes": "Fuente oficial provisional aceptada para preparación/Canary con regla de supersesión. Copia aportada: 24 páginas, 819957 bytes, SHA-256 220922ab13a2b608c43e5bec88b060710dba6220ba0ca9ab6577c273940236f5. No autoriza inventar externalOpecId; los identificadores deben provenir de SIMO/OPEC preliminar o definitiva."
+    },
+    {
+      "sourceId": "cnsc-docentes-2026-proyecto-anexo-tecnico",
+      "sourceType": "normative",
+      "title": "Proyecto de Anexo Técnico - Proceso de Selección Docentes y Directivos Docentes 2026",
+      "reference": "Proyecto Anexo Técnico Docentes y Directivos Docentes 2026",
+      "issuerOrAuthor": "Comisión Nacional del Servicio Civil (CNSC)",
+      "jurisdiction": "colombia",
+      "publicationDate": "2026-08-19",
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-23T13:48:00.000Z",
+      "lastCheckedAt": "2026-08-23",
+      "verificationScope": "official_project_publication_and_provenance_verified; preliminary_not_final_annex; accessible_copy_sha256_verified",
+      "sourceSystem": "cnsc_official_projects",
+      "url": "https://www.cnsc.gov.co/proyecto-de-acuerdos-y-anexos-de-nuevos-procesos-de-seleccion",
+      "repoPath": "content/knowledge-base/sources/normative/cnsc-docentes-2026-proyecto-anexo-tecnico.md",
+      "locator": "Anexo Técnico; inscripción/OPEC; pruebas; VRM; valoración de antecedentes; entrevista; listas de elegibles",
+      "rightsNote": "Documento público oficial en fase de proyecto. Se conserva en repo la ficha normalizada, URL oficial y hash de la copia aportada; la versión accesible advierte que ante discrepancia prevalece el documento físico o firmado digitalmente.",
+      "notes": "Fuente oficial provisional aceptada para preparación/Canary con regla de supersesión. Copia aportada: 80 páginas, 9920632 bytes, SHA-256 8c3a60a0d5a30dec5b5869cceae4699dfa87e076f91c39900cdef519722df81e. Debe contrastarse y reemplazarse cuando se publique el Anexo definitivo."
     }
   ]
 }

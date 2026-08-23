@@ -49,6 +49,33 @@ function buildRelationCoveragePlan(base: ContentSyncPlan): ContentSyncPlan {
   return plan;
 }
 
+function expectedInitialWriteCounts(plan: ContentSyncPlan) {
+  const itemTargets = plan.entities.itemTargets.reduce((counts, target) => {
+    if (target.targetType === "family") counts.item_target_families += 1;
+    else if (target.targetType === "profile") counts.item_target_profiles += 1;
+    else if (target.targetType === "opec") counts.item_opec_targets += 1;
+    else assert.fail(`Unexpected item target type: ${target.targetType}`);
+    return counts;
+  }, { item_target_families: 0, item_target_profiles: 0, item_opec_targets: 0 });
+
+  return {
+    question_releases: 1,
+    target_families: plan.entities.families.length,
+    target_profiles: plan.entities.profiles.length,
+    opec_catalog: plan.entities.opecs.length,
+    questions: plan.entities.questions.length,
+    question_options: plan.entities.questions.reduce((count, question) => count + question.options.length, 0),
+    ...itemTargets,
+    knowledge_sources: plan.entities.knowledgeSources.length,
+    knowledge_source_targets: plan.entities.knowledgeTargets.length,
+    item_source_links: plan.entities.itemSources.length,
+  };
+}
+
+function totalWrites(writeCounts: Record<string, number>) {
+  return Object.values(writeCounts).reduce((total, count) => total + count, 0);
+}
+
 async function apply(client: Client, plan: ContentSyncPlan, approvedHash?: string) {
   const planHash = calculateContentSyncPlanHash(plan);
   const instance = await client.query("select instance_id from public.runtime_metadata where singleton");
@@ -116,11 +143,14 @@ async function main() {
     auditInstalled = true;
 
     const plan = buildRelationCoveragePlan(await buildContentSyncPlan(process.cwd()));
+    const expectedWriteCounts = expectedInitialWriteCounts(plan);
+    const expectedWrites = totalWrites(expectedWriteCounts);
     const first = await apply(client, plan);
     assert.equal(first.status, "succeeded");
-    assert.equal(first.changed, 1258);
-    assert.equal(first.writes, 1258);
+    assert.equal(first.changed, expectedWrites);
+    assert.equal(first.writes, expectedWrites);
     assert.equal(first.repaired, 0);
+    assert.deepEqual(first.writeCounts, expectedWriteCounts);
     const corpus = await client.query(`select count(*)::integer as questions, (select count(*)::integer from public.question_options) as options,
       (select count(*)::integer from public.target_profiles) as profiles from public.questions`);
     assert.deepEqual(corpus.rows[0], { questions: 248, options: 992, profiles: 6 });
@@ -132,7 +162,7 @@ async function main() {
     assert.equal(second.changed, 0);
     assert.equal(second.writes, 0);
     assert.equal(second.repaired, 0);
-    assert.equal(second.unchanged, 1258);
+    assert.equal(second.unchanged, expectedWrites);
     assert.deepEqual(second.writeCounts, Object.fromEntries(managedTables.map((table) => [table, 0])));
     assert.deepEqual(await readDmlAudit(client), []);
     assert.equal(await managedStateHash(client), stateAfterFirstApply);
@@ -237,7 +267,8 @@ async function main() {
     const verified = await client.query("select public.verify_content_sync($1) as result", [calculateContentSyncPlanHash(plan)]);
     assert.equal(verified.rows[0].result.ok, true);
 
-    console.log(JSON.stringify({ status: "passed", managedTables: managedTables.length, questions: 248, options: 992, profiles: 6,
+    console.log(JSON.stringify({ status: "passed", managedTables: managedTables.length, questions: plan.entities.questions.length,
+      options: expectedWriteCounts.question_options, profiles: plan.entities.profiles.length,
       firstWrites: first.writes, secondWrites: second.writes, secondPhysicalDml: 0, driftRepairedWrites: repaired.repaired,
       driftAfterRepair: 0, obsoleteRowsDeleted: removedRelation.removed, atomicFailureRolledBack: true, durationMs: Date.now() - startedAt }, null, 2));
   } finally {
