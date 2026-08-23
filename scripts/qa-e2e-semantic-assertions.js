@@ -164,7 +164,7 @@ function computeExpectedTopicStats({ dbTurns, evaluationEvents, itemsById }) {
 
   for (const turn of dbTurns) {
     const evaluation = evaluationEvents.find((event) => event.session_turn_id === turn.id);
-    const item = itemsById.get(turn.item_id);
+    const item = itemsById.get(turn.question_id);
     if (!evaluation || !item || !item.area || !item.competency) continue;
 
     const key = `${item.area}::${item.competency}`;
@@ -211,7 +211,7 @@ function createFailureCollector() {
 }
 
 function compareStatsRows({ actualStats, expectedStats, collector }) {
-  const actualByKey = new Map((actualStats || []).map((row) => [`${row.area}::${row.competency}`, row]));
+  const actualByKey = new Map((actualStats || []).map((row) => [`${row.domain ?? row.area}::${row.competency}`, row]));
   const expectedByKey = new Map((expectedStats || []).map((row) => [`${row.area}::${row.competency}`, row]));
 
   collector.check(actualByKey.size === expectedByKey.size, 'user_topic_stats tiene número inesperado de filas', `esperadas=${expectedByKey.size} actuales=${actualByKey.size}`);
@@ -319,7 +319,7 @@ function runSemanticAssertions({ turns, db, dashboardSummary, dashboardBodyText,
     collector.check(Boolean(evaluation), 'Falta evaluation_event para session_turn', `turnId=${turn.id}`);
     if (!evaluation || !observed?.evaluation) return;
 
-    collector.check(Boolean(itemsById.get(turn.item_id)), 'Falta item_bank para session_turn', `turnId=${turn.id} itemId=${turn.item_id}`);
+    collector.check(Boolean(itemsById.get(turn.question_id)), 'Falta question para session_turn', `turnId=${turn.id} questionId=${turn.question_id}`);
     collector.check(String(turn.selected_option || '') === String(observed.selectedOption || turn.selected_option || ''), 'selected_option persistida no coincide', `turno=${index + 1} esperado=${observed.selectedOption || '(vacío)'} actual=${turn.selected_option || '(vacío)'}`);
     collector.check(nearlyEqual(evaluation.reasoning_score, observed.evaluation.reasoningScore, 0.01), 'reasoning_score persistido no coincide con respuesta API/UI', `turno=${index + 1} esperado=${observed.evaluation.reasoningScore} actual=${evaluation.reasoning_score}`);
     collector.check(nearlyEqual(evaluation.normative_consistency_score, observed.evaluation.normativeConsistencyScore, 0.01), 'normative_consistency_score persistido no coincide', `turno=${index + 1} esperado=${observed.evaluation.normativeConsistencyScore} actual=${evaluation.normative_consistency_score}`);

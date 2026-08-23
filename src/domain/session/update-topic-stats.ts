@@ -15,16 +15,16 @@ export async function updateUserTopicStats(params: UpdateTopicStatsParams) {
 
   const { data: existing } = await admin
     .from("user_topic_stats")
-    .select("id, attempts, correct_count, avg_reasoning_score, avg_difficulty, estimated_level")
+    .select("attempts, correct_count, avg_reasoning_score, avg_difficulty, estimated_level")
     .eq("profile_id", params.profileId)
-    .eq("area", params.area)
+    .eq("domain", params.area)
     .eq("competency", params.competency)
     .maybeSingle();
 
   if (!existing) {
     const { error } = await admin.from("user_topic_stats").insert({
       profile_id: params.profileId,
-      area: params.area,
+      domain: params.area,
       competency: params.competency,
       attempts: 1,
       correct_count: params.isCorrect ? 1 : 0,
@@ -54,7 +54,9 @@ export async function updateUserTopicStats(params: UpdateTopicStatsParams) {
       avg_difficulty: Number(nextAvgDifficulty.toFixed(2)),
       estimated_level: Number(nextEstimatedLevel.toFixed(3)),
     })
-    .eq("id", existing.id);
+    .eq("profile_id", params.profileId)
+    .eq("domain", params.area)
+    .eq("competency", params.competency);
 
   if (error) throw error;
 }

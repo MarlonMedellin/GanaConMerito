@@ -2,7 +2,8 @@ import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 import { V4QuestionRepository } from "@/lib/question-bank/v4-question-repository";
 
 interface SelectNextItemParams {
-  professionalProfileId?: string | null;
+  targetProfileCode?: string | null;
+  targetOpecId?: string | null;
   activeArea?: string;
   activeCompetency?: string;
   excludeItemIds?: string[];
@@ -54,11 +55,11 @@ async function resolveRecentItemIds(profileIdForRotation?: string) {
   const { data, error } = await admin
     .from("session_turns")
     .select(`
-      item_id,
+      question_id,
       sessions!inner(profile_id)
     `)
     .eq("sessions.profile_id", profileIdForRotation)
-    .not("item_id", "is", null)
+    .not("question_id", "is", null)
     .order("created_at", { ascending: false })
     .limit(RECENT_HISTORY_LIMIT);
 
@@ -66,7 +67,7 @@ async function resolveRecentItemIds(profileIdForRotation?: string) {
     throw error;
   }
 
-  return Array.from(new Set((data ?? []).map((row) => row.item_id).filter(Boolean)));
+  return Array.from(new Set((data ?? []).map((row) => row.question_id).filter(Boolean)));
 }
 
 async function runSelectionAttempt(params: SelectNextItemParams, scope: SelectionScope) {
@@ -74,6 +75,8 @@ async function runSelectionAttempt(params: SelectNextItemParams, scope: Selectio
   const candidates = await repository.listCandidates({
     area: scope.activeArea,
     competency: scope.activeCompetency,
+    targetProfileCode: params.targetProfileCode,
+    targetOpecId: params.targetOpecId,
     excludeItemIds: params.excludeItemIds,
     limit: CANDIDATE_LIMIT,
   });

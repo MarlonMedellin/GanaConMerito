@@ -26,7 +26,7 @@ export async function POST(request: Request) {
 
   const { data: learningProfile, error: learningProfileError } = await supabase
     .from("learning_profiles")
-    .select("onboarding_completed, professional_profile_id, active_areas")
+    .select("onboarding_completed, target_profile_code, target_opec_id, active_areas")
     .eq("profile_id", profile.id)
     .single();
 
@@ -35,7 +35,8 @@ export async function POST(request: Request) {
   }
 
   const nextItem = await selectNextItem({
-    professionalProfileId: learningProfile.professional_profile_id,
+    targetProfileCode: learningProfile.target_profile_code,
+    targetOpecId: learningProfile.target_opec_id,
     profileIdForRotation: profile.id,
     activeArea: body.area,
     activeCompetency: body.competency,
@@ -55,6 +56,8 @@ export async function POST(request: Request) {
       mode: body.mode,
       current_state: currentState,
       status: "active",
+      target_profile_code: learningProfile.target_profile_code,
+      target_opec_id: learningProfile.target_opec_id,
     })
     .select("id")
     .single();

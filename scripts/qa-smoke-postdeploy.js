@@ -87,8 +87,6 @@ async function ensureUserAndReset(admin) {
   if (!learningLookup.data) {
     const inserted = await admin.from('learning_profiles').insert({
       profile_id: profileId,
-      target_role: 'docente',
-      exam_type: 'docente',
       country_context: 'colombia',
       preferred_feedback_style: 'socratic',
       active_goal: 'Smoke postdeploy',
@@ -99,8 +97,8 @@ async function ensureUserAndReset(admin) {
   }
 
   const learningReset = await admin.from('learning_profiles').update({
-    target_role: 'docente',
-    exam_type: 'docente',
+    target_profile_code: null,
+    target_opec_id: null,
     active_goal: 'Smoke postdeploy',
     active_areas: [],
     preferred_feedback_style: 'socratic',
@@ -113,7 +111,7 @@ async function ensureUserAndReset(admin) {
   const cleanupTopicStats = await admin.from('user_topic_stats').delete().eq('profile_id', profileId);
   if (cleanupTopicStats.error) throw cleanupTopicStats.error;
 
-  const pp = await admin.from('professional_profiles').select('id,code').eq('is_active', true).order('name', { ascending: true });
+  const pp = await admin.from('target_profiles').select('code').eq('is_active', true).order('name', { ascending: true });
   if (pp.error) throw pp.error;
 
   return { user, profileId, professionalProfiles: pp.data };
@@ -143,16 +141,14 @@ async function getAuthCookie() {
   ensurePageOrExpectedRedirect(loginPage, 'GET /login', '/home');
 
   const cookie = await getAuthCookie();
-  const selectedProfessionalProfile = prep.professionalProfiles.find((p) => p.code === 'docente-general') || prep.professionalProfiles[0];
+  const selectedProfessionalProfile = prep.professionalProfiles.find((p) => p.code === 'docente_aula_secundaria_media') || prep.professionalProfiles[0];
 
   const onboarding = await http({
     method: 'POST',
     pathname: '/api/profile/onboarding',
     cookie,
     body: {
-      targetRole: 'docente',
-      examType: 'docente',
-      professionalProfileId: selectedProfessionalProfile.id,
+      targetProfileCode: selectedProfessionalProfile.code,
       activeGoal: 'Smoke postdeploy',
       activeAreas: ['matematicas'],
       preferredFeedbackStyle: 'socratic',

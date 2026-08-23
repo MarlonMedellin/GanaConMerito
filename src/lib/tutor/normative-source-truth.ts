@@ -9,8 +9,8 @@ const DEFAULT_CONTEST_ID = "cnsc-docente-directivo-docente-v1";
 
 const SOURCE_REFS = [
   "docs/01-product/source-truth/normative-source-truth-v1.md",
-  "runtime:item_bank",
-  "runtime:professional_profiles",
+  "runtime:questions",
+  "runtime:target_profiles",
 ];
 
 export function buildContestTruthV1(): ContestTruth {

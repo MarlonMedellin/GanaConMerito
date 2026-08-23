@@ -17,7 +17,7 @@ export async function getAuthenticatedLandingPath(
 
   const { data: learningProfile } = await supabase
     .from("learning_profiles")
-    .select("onboarding_completed, active_areas")
+    .select("onboarding_completed, active_areas, target_profile_code")
     .eq("profile_id", profile.id)
     .single();
 

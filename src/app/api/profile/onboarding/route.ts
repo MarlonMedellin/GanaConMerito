@@ -3,9 +3,8 @@ import { z } from "zod";
 import { requireAuthenticatedProfile } from "../../../../lib/supabase/guards";
 
 const onboardingSchema = z.object({
-  targetRole: z.literal("docente"),
-  examType: z.literal("docente"),
-  professionalProfileId: z.string().uuid(),
+  targetProfileCode: z.string().trim().min(1),
+  targetOpecId: z.string().uuid().nullable().optional(),
   activeGoal: z.string().trim().min(1, "La meta activa es obligatoria.").max(240),
   activeAreas: z
     .array(z.string().trim().min(1))
@@ -32,23 +31,33 @@ export async function POST(request: Request) {
     );
   }
 
-  const { data: professionalProfile, error: professionalProfileError } = await supabase
-    .from("professional_profiles")
-    .select("id")
-    .eq("id", parsed.data.professionalProfileId)
+  const { data: targetProfile, error: targetProfileError } = await supabase
+    .from("target_profiles")
+    .select("code")
+    .eq("code", parsed.data.targetProfileCode)
     .eq("is_active", true)
     .single();
 
-  if (professionalProfileError || !professionalProfile) {
-    return NextResponse.json({ error: "Professional profile not found" }, { status: 400 });
+  if (targetProfileError || !targetProfile) {
+    return NextResponse.json({ error: "Target profile not found" }, { status: 400 });
+  }
+  if (parsed.data.targetOpecId) {
+    const { data: opec, error: opecError } = await supabase
+      .from("opec_catalog")
+      .select("id")
+      .eq("id", parsed.data.targetOpecId)
+      .eq("profile_code", parsed.data.targetProfileCode)
+      .eq("verification_status", "verified")
+      .eq("is_active", true)
+      .maybeSingle();
+    if (opecError || !opec) return NextResponse.json({ error: "OPEC does not belong to the selected profile" }, { status: 400 });
   }
 
   const { error: updateError } = await supabase
     .from("learning_profiles")
     .update({
-      target_role: parsed.data.targetRole,
-      exam_type: parsed.data.examType,
-      professional_profile_id: parsed.data.professionalProfileId,
+      target_profile_code: parsed.data.targetProfileCode,
+      target_opec_id: parsed.data.targetOpecId ?? null,
       active_goal: parsed.data.activeGoal,
       active_areas: parsed.data.activeAreas,
       preferred_feedback_style: parsed.data.preferredFeedbackStyle,
