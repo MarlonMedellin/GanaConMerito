@@ -1,10 +1,11 @@
-import { after } from "next/server";
+import { after, NextResponse } from "next/server";
 import { API_ERROR_CODES } from "@/lib/api/error-codes";
 import {
   beginRequestObservation,
   jsonWithRequestId,
   logRequestOutcome,
 } from "@/lib/api/canary-observability";
+import { getRequestIdHeaderName } from "@/lib/api/request-id";
 import { requireOwnedSession } from "../../../../lib/supabase/guards";
 import { buildTutorEvidence } from "../../../../lib/tutor/tutor-evidence-builder";
 import { DeterministicTutorProvider } from "../../../../lib/tutor/providers/deterministic-tutor-provider";
@@ -87,7 +88,9 @@ export async function POST(request: Request) {
         intent: result.trace.intent,
       },
     });
-    return jsonWithRequestId(result, 200, observation);
+    const response = NextResponse.json(result, { status: 200 });
+    response.headers.set(getRequestIdHeaderName(), observation.requestId);
+    return response;
   } catch (error) {
     logRequestOutcome(observation, {
       event: "canary.tutor.failed",
