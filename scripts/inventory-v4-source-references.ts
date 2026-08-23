@@ -1,3 +1,4 @@
+import crypto from "node:crypto";
 import fs from "node:fs/promises";
 import path from "node:path";
 
@@ -77,13 +78,22 @@ async function main() {
     }))
     .sort((a, b) => a.reference.localeCompare(b.reference, "es"));
 
-  const output = {
+  const inventory = {
     schemaVersion: 1,
     bank: "question-bank-v4",
     scannedItems: files.length,
     uniqueReferences: references.length,
     references,
     errors,
+  };
+  const inventorySha256 = crypto
+    .createHash("sha256")
+    .update(JSON.stringify(inventory))
+    .digest("hex");
+
+  const output = {
+    ...inventory,
+    inventorySha256,
   };
 
   console.log(JSON.stringify(output, null, 2));
