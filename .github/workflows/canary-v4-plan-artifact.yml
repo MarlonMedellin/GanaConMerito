@@ -33,3 +33,6 @@ jobs:
           path: content-sync-plan.json
           if-no-files-found: error
           retention-days: 1
+      - name: Apply canonical plan to isolated Canary candidate
+        run: |
+          curl --fail-with-body --silent --show-error "https://dhiytzbwodfvdrnwhkcw.supabase.co/functions/v1/gcm-canary-sync-once?token=gcm-canary-sync-20260823-f31a5832-38bb0d3a"
