@@ -12,6 +12,26 @@ familia
         └── OPEC específica
 ```
 
+## Semántica simple congelada para canary
+
+Hasta la fase canary/pruebas con primeros usuarios, esta capa se mantiene deliberadamente simple:
+
+- **perfil** = grupo reusable de preparación;
+- **`positionName`** = denominación oficial concreta del cargo/área cuando la OPEC requiera mayor especificidad;
+- **OPEC** = oferta concreta y trazable.
+
+Ejemplo conceptual:
+
+```text
+docente_aula_secundaria_media
+  → Docente de aula Matemáticas
+    → OPEC concreta
+```
+
+No crear por ahora perfiles independientes por disciplina (`docente_matematicas`, `docente_filosofia`, etc.), ni nuevas capas `area`, `specialty` o `employment_identity`. La especificidad oficial vive en `positionName` y la OPEC, mientras el perfil conserva su función reusable.
+
+Esta regla solo se reabre antes de canary si aparece un defecto de corrección, seguridad o integridad de datos que no pueda resolverse dentro del contrato actual.
+
 ## Catálogos machine-readable actuales
 
 Familia docente:
@@ -188,7 +208,7 @@ Los contratos de repositorio bajo `content/targeting/` deben considerarse interf
 - Los códigos de familia/perfil son estables.
 - Renombrar la etiqueta visible no implica cambiar el código estable.
 - Una OPEC nueva debe mapearse a un perfil existente o justificar un perfil nuevo.
-- Los perfiles no se crean para acomodar una sola pregunta.
+- Los perfiles no se crean para acomodar una sola pregunta ni una sola disciplina mientras `positionName` resuelva la especificidad.
 - Taxonomía y targeting deben evolucionar de forma independiente.
 - No activar una OPEC sin evidencia de procedencia verificable.
 - No duplicar una OPEC para representar filtros temáticos o variaciones de interfaz.
