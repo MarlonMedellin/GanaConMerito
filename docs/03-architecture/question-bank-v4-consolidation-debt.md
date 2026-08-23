@@ -102,17 +102,17 @@ La arquitectura de `knowledge + targeting` ya tiene estructura física de reposi
 
 ### V4-ARCH-DEBT-012 — Derivar gap analysis desde `temario-base.md`
 
-- **Estado:** `OPEN`.
-- El temario original se conserva como fuente de planeación, pero es heterogéneo y contiene posibles duplicaciones y referencias por verificar.
-- **Cierre requerido:** artefacto derivado separado con unidad temática normalizada, fuente/verificación, cobertura V4, constructo y targeting candidato.
-- `temario-base.md` permanece inmutable como fuente original.
+- **Estado:** `BLOCKED` por `V4-ARCH-DEBT-021`.
+- El temario es fuente de planeación, pero la copia actual del repositorio no es idéntica al archivo original aportado.
+- **Cierre requerido:** una vez restaurada/verificada la integridad, crear un artefacto derivado separado con unidad temática normalizada, fuente/verificación, cobertura V4, constructo y targeting candidato.
+- El archivo fuente restaurado debe permanecer inmutable; el gap analysis vive en otro artefacto.
 
 ### V4-ARCH-DEBT-013 — Verificar consumidores y gates de la reorganización
 
 - **Estado:** `IN_PROGRESS`.
-- La comparación contra `master` no muestra cambios atribuibles a la reorganización en `items/`, `taxonomy/`, `MANIFEST.json`, `legacy-processing-register.csv`, `src/`, `scripts/` o `supabase/`.
-- En una corrida reciente del PR, `PR Checks` y `Question Bank V4 freeze` resultaron `success`; el gate de importación atómica seguía en progreso antes de los commits documentales posteriores.
-- **Cierre requerido:** observar los gates sobre el HEAD definitivo inmediatamente antes de merge.
+- El PR no modifica los 248 JSON de `items/`, `taxonomy/`, `MANIFEST.json`, `legacy-processing-register.csv`, migraciones Supabase ni runtime.
+- Sí incorpora deliberadamente gobernanza adicional: `scripts/validate-knowledge-targeting.ts`, el script npm `content:validate:knowledge-targeting` y su ejecución desde `PR Checks`.
+- **Cierre requerido:** observar todos los gates sobre el HEAD definitivo inmediatamente antes de merge y confirmar que esas adiciones de validación no introducen cambios funcionales fuera de repositorio/CI.
 
 ### V4-ARCH-DEBT-014 — Preservar provenance de `temas.md` / `temas(1).md`
 
@@ -132,7 +132,7 @@ La arquitectura de `knowledge + targeting` ya tiene estructura física de reposi
   1. revisar PR de `reorg-v4-architecture-20260822` hacia `master`;
   2. verificar que la rama continúe `behind_by: 0` o resincronizar;
   3. confirmar ausencia de cambios de corpus/contrato runtime no intencionados;
-  4. observar `content:validate:v4`, manifest check, docs, tests y CI aplicables sobre el HEAD final;
+  4. observar `content:validate:v4`, manifest check, knowledge/targeting, docs, tests y CI aplicables sobre el HEAD final;
   5. revisar el diff de renames y enlaces;
   6. emitir handoff actualizado al agente Supabase antes del merge.
 
@@ -157,24 +157,33 @@ La arquitectura de `knowledge + targeting` ya tiene estructura física de reposi
 
 ### V4-ARCH-DEBT-020 — Validación automática de catálogos knowledge/targeting
 
-- **Estado:** `OPEN`.
-- Los nuevos catálogos y schemas son todavía gobernanza de repositorio; falta un gate automático que detecte referencias inválidas antes del merge.
-- **Cierre requerido:** validar sintaxis/esquema y, al menos, estas integridades:
+- **Estado:** `CLOSED` para los catálogos materializados actualmente.
+- `scripts/validate-knowledge-targeting.ts` valida estructura y referencias de familias, perfiles, OPEC e inventario de fuentes.
+- El gate comprueba:
   - `familyCode` existente;
   - `profileCode` perteneciente a la familia declarada;
-  - OPEC `active` únicamente con `verificationStatus: verified`;
+  - OPEC `active` solo con `verificationStatus: verified`;
   - ausencia de duplicados por identidad externa OPEC;
-  - `sourceId` únicos;
-  - mapas que apunten solo a fuentes/familias/perfiles/OPEC existentes.
-- **Impacto PRD 3:** este gate debería ejecutarse antes de importar/backfillear targeting o knowledge hacia Supabase.
+  - unicidad de `sourceId`.
+- El comando `npm run content:validate:knowledge-targeting` está versionado y `PR Checks` lo ejecuta.
+- Los mapas machine-readable aún no existen; su contrato/validación se separa en `V4-ARCH-DEBT-022` y no mantiene esta deuda artificialmente abierta.
 
-### V4-ARCH-DEBT-021 — Verificar integridad exacta del `temario-base.md`
+### V4-ARCH-DEBT-021 — Restaurar y verificar integridad exacta de `temario-base.md`
+
+- **Estado:** `OPEN` y bloqueante para `V4-ARCH-DEBT-012`.
+- Archivo original aportado `temas(3).md`: `94850` bytes, SHA-256 `4dd3e7d1df2af89e4818f77ca244dc26187930a8d7faf19d1c7f05538bc88bb7`, Git blob SHA `f5c90d8393f8dbb7a83794134b27b1a0849de807`.
+- Copia actual del repositorio: Git blob SHA `2d022f1d66e5d98653178d3d772db210c3aec442`; no coincide tampoco bajo normalizaciones simples LF/CRLF.
+- Se confirmó al menos una diferencia sustantiva: después de `5. Tema - Tiempos del PARD (Ley 1888)` la copia contiene una segunda entrada `7. Competencia - Capacidad de Agencia...` que no está allí en el original.
+- Evidencia detallada: `content/knowledge-base/themes/docentes/INTEGRITY.md`.
+- **Cierre requerido:** sustituir por los bytes exactos del original o documentar expresamente una transformación; para identidad exacta, el Git blob SHA final debe ser `f5c90d8393f8dbb7a83794134b27b1a0849de807`.
+- **Regla:** no aplicar parches manuales parciales ni derivar gap analysis de la copia corrupta.
+
+### V4-ARCH-DEBT-022 — Materializar y validar mapas machine-readable de aplicabilidad
 
 - **Estado:** `OPEN`.
-- El archivo `content/knowledge-base/themes/docentes/temario-base.md` se preservó a partir del Markdown aportado por el usuario, pero no se ha demostrado todavía equivalencia byte a byte o una equivalencia normalizada documentada con el archivo original.
-- **Riesgo:** diferencias de saltos de línea, wrapping o una duplicación accidental podrían tratarse después como contenido original.
-- **Cierre requerido:** comparar el archivo original aportado con la copia del repositorio, registrar hash/normalización y corregir únicamente si existe una diferencia demostrada.
-- **Regla:** no afirmar identidad exacta hasta cerrar esta deuda.
+- `content/knowledge-base/maps/{families,profiles,opecs}/` contiene por ahora contratos/documentación, no mapas JSON poblados.
+- **Cierre requerido:** definir schema estable, crear mapas explícitos y extender `content:validate:knowledge-targeting` para exigir que cada referencia apunte a `sourceId`, `familyCode`, `profileCode` u OPEC existentes.
+- **Impacto PRD 3:** no backfillear `knowledge_source_targets` desde texto libre; cuando existan mapas, PRD 3 debe consumir el contrato validado.
 
 ## Handoff obligatorio al agente de Supabase / PRD 3
 
@@ -188,8 +197,10 @@ Antes de integrar esta rama o fusionar SQL de targeting/knowledge, comunicar com
 6. `content/targeting/profiles/docentes.json` es el catálogo canónico de perfiles; `content/profiles/docente/` es histórico/puente;
 7. `content/targeting/opecs/catalog.json` + `catalog.schema.json` definen la interfaz editorial de OPEC y no contienen datos ficticios;
 8. `content/knowledge-base/catalog/source-inventory.json` es inventario de conocimiento; `needs_review` no equivale a fuente verificada;
-9. cualquier decisión sobre `editorial_scope`, `opec_id`, vistas, RLS o nuevas tablas debe contrastarse con la arquitectura y este registro de deuda;
-10. antes de backfill/import de targeting/knowledge debe cerrarse o mitigarse `V4-ARCH-DEBT-020`.
+9. `content:validate:knowledge-targeting` ya valida los catálogos materializados y debe permanecer verde antes de cualquier import/backfill;
+10. `V4-ARCH-DEBT-021` bloquea el gap analysis del temario hasta restaurar su integridad;
+11. los mapas de aplicabilidad machine-readable siguen pendientes en `V4-ARCH-DEBT-022`; no inferir `knowledge_source_targets` desde texto libre;
+12. cualquier decisión sobre `editorial_scope`, `opec_id`, vistas, RLS o nuevas tablas debe contrastarse con la arquitectura y este registro de deuda.
 
 ## Regla de mantenimiento
 
