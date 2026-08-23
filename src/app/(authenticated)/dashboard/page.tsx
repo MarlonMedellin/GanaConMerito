@@ -44,8 +44,10 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
   const activeSummary = isSessionView && currentBlock ? currentBlock : summary.historical;
   const activeAccuracy = isSessionView ? currentAccuracy : historicalAccuracy;
   const activePercentile = activeSummary.canShowPercentile ? activeSummary.percentileSegment ?? "—" : "Lectura no concluyente";
-  const strongestLabel = activeSummary.canShowStrongConclusion ? "Fortaleza principal" : "Fortaleza aún no concluyente";
-  const weakestLabel = activeSummary.canShowStrongConclusion ? "Refuerzo principal" : "Refuerzo sugerido inicial";
+  const hasStrongestConclusion = activeSummary.strongestCompetencies.length > 0;
+  const hasWeakestConclusion = activeSummary.weakestCompetencies.length > 0;
+  const strongestLabel = hasStrongestConclusion ? "Fortaleza principal" : "Fortaleza aún no concluyente";
+  const weakestLabel = hasWeakestConclusion ? "Refuerzo principal" : "Refuerzo sugerido inicial";
   const levelLabel = activeSummary.signalLevel === "usable_signal" ? "Nivel estimado" : "Señal de nivel";
   const attemptsCopy =
     activeSummary.signalLevel === "usable_signal"
@@ -114,7 +116,7 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
               <p className="eyebrow">Tendencia</p>
               <h2 className="section-title">{isSessionView ? "Sesión en contexto" : "Progreso histórico acumulado"}</h2>
             </div>
-            <span className="status-pill premium">{activeSummary.signalLevel === "usable_signal" ? "High signal" : activeSummary.signalLabel}</span>
+            <span className="status-pill premium">{activeSummary.signalLabel}</span>
           </div>
           <p className="body-sm">
             {contextCopy}
@@ -162,7 +164,7 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
         <article className="list-card">
           <div className="inline-cluster cluster-between">
             <h2 className="section-title panel-title-md">Áreas con mejor señal</h2>
-            <span className="status-pill success">{activeSummary.canShowStrongConclusion ? "Fuerte" : "Inicial"}</span>
+            <span className="status-pill success">{topStrong.length > 0 ? "Fuerte" : "Inicial"}</span>
           </div>
           {topStrong.length > 0 ? topStrong.map((row) => (
             <div key={`${row.area}-${row.competency}`} className="list-row">
@@ -174,7 +176,7 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
         <article className="list-card">
           <div className="inline-cluster cluster-between">
             <h2 className="section-title panel-title-md">Focos de refuerzo</h2>
-            <span className="status-pill warning">{activeSummary.canShowStrongConclusion ? "Atención" : "Prudente"}</span>
+            <span className="status-pill warning">{topWeak.length > 0 ? "Atención" : "Prudente"}</span>
           </div>
           {topWeak.length > 0 ? topWeak.map((row) => (
             <div key={`${row.area}-${row.competency}`} className="list-row">

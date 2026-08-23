@@ -58,7 +58,6 @@ export async function POST(request: Request) {
     const result = await tutor.generate(tutorInput);
 
     const traceWrite = await persistTutorTurnTrace({
-      supabase,
       profileId: profile.id,
       trace: result.trace,
     });

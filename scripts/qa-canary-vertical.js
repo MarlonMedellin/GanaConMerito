@@ -263,15 +263,39 @@ async function countRows(admin, table, column, value) {
     const page = await context.newPage();
 
     await page.goto('/onboarding', { waitUntil: 'networkidle', timeout: 45000 });
-    await page.getByLabel('Perfil reusable').selectOption(targetProfileCode);
+    await page.locator('label.form-field', { hasText: /^Perfil reusable/ }).locator('select').selectOption(targetProfileCode);
     await page.getByLabel('Cargo oficial / OPEC verificada (opcional)').selectOption(targetOpecId);
     await page.getByLabel('Meta activa').fill('CAN-005 vertical QA');
     await page.getByLabel('Áreas activas').fill('matematicas');
     const saveOnboarding = page.getByRole('button', { name: 'Guardar onboarding' });
     result.mobile.onboarding = await assertMobileLayout(page, 'onboarding', saveOnboarding);
     await page.screenshot({ path: path.join(artifactRoot, '02-onboarding-mobile.png'), fullPage: true });
+    const resumeResponsePromise = page
+      .waitForResponse(
+        (response) => response.url().includes('/api/session/resume') && response.request().method() === 'GET',
+        { timeout: 45000 },
+      )
+      .then(
+        (response) => ({ response }),
+        (error) => ({ error }),
+      );
     await saveOnboarding.click();
     await page.waitForURL('**/practice', { timeout: 45000 });
+    const resumeResult = await resumeResponsePromise;
+    if (resumeResult.error) {
+      const navigationState = {
+        url: page.url(),
+        title: await page.title(),
+        mainText: (await page.locator('main').innerText().catch(() => '')).slice(0, 2000),
+      };
+      save('practice-navigation-diagnostic.json', navigationState);
+      await page.screenshot({ path: path.join(artifactRoot, '02b-practice-navigation-timeout.png'), fullPage: true });
+      throw new Error(`Practice resume request was not observed after onboarding; url=${navigationState.url}.`);
+    }
+    const resumeResponse = resumeResult.response;
+    const resumeJson = await resumeResponse.json();
+    ensure(resumeResponse.status() === 200, `Initial practice resume failed with ${resumeResponse.status()}: ${resumeJson?.error || 'unknown error'}.`);
+    ensure(resumeJson?.session === null, `Fresh QA identity unexpectedly resumed session ${resumeJson?.session?.sessionId || 'unknown'}.`);
 
     const learning = await admin
       .from('learning_profiles')

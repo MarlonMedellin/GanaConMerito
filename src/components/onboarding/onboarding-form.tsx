@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { useRouter } from "next/navigation";
 
 interface TargetProfileOption {
   code: string;
@@ -24,7 +23,6 @@ export function OnboardingForm(props: {
   initialPreferredFeedbackStyle: string;
   initialActiveAreas: string[];
 }) {
-  const router = useRouter();
   const [targetProfileCode, setTargetProfileCode] = useState(
     props.initialTargetProfileCode || props.targetProfiles[0]?.code || "",
   );
@@ -84,8 +82,7 @@ export function OnboardingForm(props: {
       return;
     }
 
-    router.push("/practice");
-    router.refresh();
+    window.location.assign("/practice");
   }
 
   return (
