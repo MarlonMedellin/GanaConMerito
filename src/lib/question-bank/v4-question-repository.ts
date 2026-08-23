@@ -91,6 +91,7 @@ export class V4QuestionRepository {
   async listCandidates(params: {
     area?: string;
     competency?: string;
+    opecId?: string | null;
     excludeItemIds?: string[];
     limit: number;
   }): Promise<V4QuestionCandidate[]> {
@@ -101,6 +102,9 @@ export class V4QuestionRepository {
       .order("id", { ascending: true });
     if (params.area) query = query.eq("area", params.area);
     if (params.competency) query = query.eq("competency", params.competency);
+    if (params.opecId !== undefined) {
+      query = params.opecId === null ? query.is("opec_id", null) : query.eq("opec_id", params.opecId);
+    }
     if (params.excludeItemIds?.length) {
       query = query.not("id", "in", `(${params.excludeItemIds.map((id) => `"${id}"`).join(",")})`);
     }

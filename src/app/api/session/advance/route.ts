@@ -1,4 +1,9 @@
-import { NextResponse } from "next/server";
+import { API_ERROR_CODES } from "@/lib/api/error-codes";
+import {
+  beginRequestObservation,
+  jsonWithRequestId,
+  logRequestOutcome,
+} from "@/lib/api/canary-observability";
 import { scoreResponseBaselineHeuristicV1 } from "../../../../domain/evaluation/score-response";
 import { selectNextItem } from "../../../../domain/item-selection/select-next-item";
 import { getNextState } from "../../../../domain/orchestrator/session-machine";
@@ -7,36 +12,69 @@ import { isLearningProfileOnboardingComplete } from "../../../../lib/onboarding/
 import { V4QuestionRepository } from "../../../../lib/question-bank/v4-question-repository";
 import { getSupabaseAdminClient } from "../../../../lib/supabase/admin";
 import { requireOwnedSession } from "../../../../lib/supabase/guards";
+import {
+  getCanarySessionTargetingContext,
+  getCanarySessionTargetingCookieName,
+  isCanaryTargetingEnabled,
+} from "@/lib/targeting/canary-targeting-server";
 import { advanceSessionSchema } from "../../../../lib/validation/session";
 import type { AdvanceSessionResponse } from "../../../../types/evaluation";
 import type { SessionState } from "../../../../types/session";
 
 export async function POST(request: Request) {
-  const json = await request.json();
-  const parsedBody = advanceSessionSchema.safeParse(json);
+  const observation = beginRequestObservation(request, "/api/session/advance");
+  let json: unknown;
+  try {
+    json = await request.json();
+  } catch (error) {
+    logRequestOutcome(observation, {
+      event: "canary.session_advance.invalid_json",
+      status: 400,
+      errorCode: API_ERROR_CODES.VALIDATION_INVALID_JSON,
+      error,
+    });
+    return jsonWithRequestId({ error: "Invalid session advance payload" }, 400, observation);
+  }
 
+  const parsedBody = advanceSessionSchema.safeParse(json);
   if (!parsedBody.success) {
-    return NextResponse.json(
+    logRequestOutcome(observation, {
+      event: "canary.session_advance.invalid_body",
+      status: 400,
+      errorCode: API_ERROR_CODES.VALIDATION_INVALID_BODY,
+    });
+    return jsonWithRequestId(
       { error: parsedBody.error.issues.map((issue) => issue.message).join(" | ") },
-      { status: 400 },
+      400,
+      observation,
     );
   }
 
   const body = parsedBody.data;
   const auth = await requireOwnedSession({ sessionId: body.sessionId });
   if (!auth.ok) {
-    return NextResponse.json({ error: auth.error }, { status: auth.status });
+    logRequestOutcome(observation, {
+      event: "canary.session_advance.auth_or_ownership_failed",
+      status: auth.status,
+      errorCode: auth.status === 401 ? API_ERROR_CODES.AUTH_UNAUTHORIZED : API_ERROR_CODES.SESSION_NOT_FOUND,
+      sessionId: body.sessionId,
+      itemId: body.itemId,
+    });
+    return jsonWithRequestId({ error: auth.error }, auth.status, observation);
   }
 
   const { supabase, profile, session } = auth;
   const admin = getSupabaseAdminClient();
 
-  if (session.status !== "active") {
-    return NextResponse.json({ error: "Session is no longer active" }, { status: 409 });
-  }
-
-  if (["session_close", "expired", "error"].includes(session.current_state)) {
-    return NextResponse.json({ error: "Session is already closed" }, { status: 409 });
+  if (session.status !== "active" || ["session_close", "expired", "error"].includes(session.current_state)) {
+    logRequestOutcome(observation, {
+      event: "canary.session_advance.terminal_session",
+      status: 409,
+      errorCode: API_ERROR_CODES.SESSION_TERMINAL,
+      sessionId: body.sessionId,
+      itemId: body.itemId,
+    });
+    return jsonWithRequestId({ error: "Session is no longer active" }, 409, observation);
   }
 
   const { data: learningProfile, error: learningProfileError } = await supabase
@@ -46,13 +84,84 @@ export async function POST(request: Request) {
     .single();
 
   if (learningProfileError || !learningProfile) {
-    return NextResponse.json({ error: "Learning profile not found" }, { status: 404 });
+    logRequestOutcome(observation, {
+      event: "canary.session_advance.learning_profile_missing",
+      status: 404,
+      errorCode: API_ERROR_CODES.INTERNAL_DEPENDENCY_FAILED,
+      sessionId: body.sessionId,
+      itemId: body.itemId,
+      error: learningProfileError,
+    });
+    return jsonWithRequestId({ error: "Learning profile not found" }, 404, observation);
+  }
+
+  let canaryTargeting = null;
+  if (isCanaryTargetingEnabled()) {
+    let sessionTargeting;
+    try {
+      sessionTargeting = await getCanarySessionTargetingContext();
+    } catch (error) {
+      logRequestOutcome(observation, {
+        event: "canary.session_advance.catalog_invalid",
+        status: 500,
+        errorCode: API_ERROR_CODES.INTERNAL_DEPENDENCY_FAILED,
+        sessionId: body.sessionId,
+        itemId: body.itemId,
+        error,
+      });
+      return jsonWithRequestId({ error: "Canary targeting catalog is not valid." }, 500, observation);
+    }
+
+    if (!sessionTargeting || sessionTargeting.sessionId !== body.sessionId) {
+      logRequestOutcome(observation, {
+        event: "canary.session_advance.session_targeting_missing",
+        status: 409,
+        errorCode: API_ERROR_CODES.SESSION_INVALID_STATE,
+        sessionId: body.sessionId,
+        itemId: body.itemId,
+      });
+      return jsonWithRequestId(
+        { error: "La sesión perdió su contexto de OPEC. Inicia una nueva práctica canary." },
+        409,
+        observation,
+      );
+    }
+
+    canaryTargeting = sessionTargeting.selection;
+    const { data: selectedProfile } = await supabase
+      .from("professional_profiles")
+      .select("code")
+      .eq("id", learningProfile.professional_profile_id)
+      .maybeSingle();
+    if (!selectedProfile || selectedProfile.code !== canaryTargeting.professionalProfileCode) {
+      logRequestOutcome(observation, {
+        event: "canary.session_advance.targeting_profile_drift",
+        status: 409,
+        errorCode: API_ERROR_CODES.SESSION_INVALID_STATE,
+        sessionId: body.sessionId,
+        itemId: body.itemId,
+        opecKey: canaryTargeting.opecKey,
+      });
+      return jsonWithRequestId(
+        { error: "La selección de perfil y OPEC ya no coincide. Revisa el onboarding antes de continuar." },
+        409,
+        observation,
+      );
+    }
   }
 
   const repository = new V4QuestionRepository();
   const item = await repository.getAnsweredQuestion(body.itemId);
   if (!item) {
-    return NextResponse.json({ error: "Item not found" }, { status: 404 });
+    logRequestOutcome(observation, {
+      event: "canary.session_advance.item_missing",
+      status: 404,
+      errorCode: API_ERROR_CODES.CONTENT_INVALID,
+      sessionId: body.sessionId,
+      itemId: body.itemId,
+      opecKey: canaryTargeting?.opecKey,
+    });
+    return jsonWithRequestId({ error: "Item not found" }, 404, observation);
   }
 
   const { data: existingTurns, error: existingTurnsError } = await supabase
@@ -62,7 +171,15 @@ export async function POST(request: Request) {
     .order("turn_number", { ascending: true });
 
   if (existingTurnsError) {
-    return NextResponse.json({ error: "Could not load session turns" }, { status: 500 });
+    logRequestOutcome(observation, {
+      event: "canary.session_advance.turns_load_failed",
+      status: 500,
+      errorCode: API_ERROR_CODES.INTERNAL_DATABASE_ERROR,
+      sessionId: body.sessionId,
+      itemId: body.itemId,
+      error: existingTurnsError,
+    });
+    return jsonWithRequestId({ error: "Could not load session turns" }, 500, observation);
   }
 
   const evaluation = scoreResponseBaselineHeuristicV1({
@@ -116,21 +233,22 @@ export async function POST(request: Request) {
   });
 
   if (advanceError) {
-    console.error("advance_session_atomic failed", {
-      message: advanceError.message,
-      details: advanceError.details,
-      hint: advanceError.hint,
-      code: advanceError.code,
+    logRequestOutcome(observation, {
+      event: "canary.session_advance.atomic_persist_failed",
+      status: 500,
+      errorCode: API_ERROR_CODES.INTERNAL_DATABASE_ERROR,
       sessionId: body.sessionId,
       itemId: body.itemId,
-      profileId: profile.id,
-      previousState,
-      currentState,
-      evaluationSource: evaluation.evaluationSource,
-      evaluationVersion: evaluation.evaluationVersion,
+      opecKey: canaryTargeting?.opecKey,
+      extra: {
+        previousState,
+        currentState,
+        evaluationSource: evaluation.evaluationSource,
+        evaluationVersion: evaluation.evaluationVersion,
+      },
+      error: advanceError,
     });
-
-    return NextResponse.json({ error: "Could not persist session advance atomically" }, { status: 500 });
+    return jsonWithRequestId({ error: "Could not persist session advance atomically" }, 500, observation);
   }
 
   const seenItemIds = [
@@ -145,6 +263,7 @@ export async function POST(request: Request) {
         sessionIdForRotation: body.sessionId,
         activeArea: item.area ?? undefined,
         activeCompetency: item.competency ?? undefined,
+        canaryOpecId: canaryTargeting?.opecKey,
         excludeItemIds: seenItemIds as string[],
       });
 
@@ -167,5 +286,22 @@ export async function POST(request: Request) {
     shouldTransition: previousState !== currentState,
   };
 
-  return NextResponse.json(response, { status: 200 });
+  logRequestOutcome(observation, {
+    event: "canary.session_advance.completed",
+    status: 200,
+    sessionId: body.sessionId,
+    itemId: body.itemId,
+    opecKey: canaryTargeting?.opecKey,
+    extra: {
+      currentState,
+      nextItemAvailable: Boolean(nextItem),
+      isCorrect: evaluation.isCorrect,
+    },
+  });
+
+  const httpResponse = jsonWithRequestId(response, 200, observation);
+  if (currentState === "session_close" && isCanaryTargetingEnabled()) {
+    httpResponse.cookies.delete(getCanarySessionTargetingCookieName());
+  }
+  return httpResponse;
 }

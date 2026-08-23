@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { pickDeterministicCandidate } from "./select-next-item";
+import { buildSelectionScopes, pickDeterministicCandidate } from "./select-next-item";
 
 test("returns null when there are no candidates", () => {
   assert.equal(pickDeterministicCandidate([], "seed"), null);
@@ -36,5 +36,34 @@ test("selection is based on stable id ordering, not input order", () => {
   assert.deepEqual(
     pickDeterministicCandidate(ordered, seed),
     pickDeterministicCandidate(shuffled, seed),
+  );
+});
+
+test("legacy selection scopes stay unchanged when canary targeting is absent", () => {
+  assert.deepEqual(
+    buildSelectionScopes({ activeArea: "matematicas", activeCompetency: "razonamiento" }),
+    [
+      { activeArea: "matematicas", activeCompetency: "razonamiento" },
+      { activeArea: "matematicas" },
+      {},
+    ],
+  );
+});
+
+test("canary selection prefers concrete OPEC before general fallback", () => {
+  assert.deepEqual(
+    buildSelectionScopes({
+      activeArea: "matematicas",
+      activeCompetency: "razonamiento",
+      canaryOpecId: "cnsc:12345",
+    }),
+    [
+      { activeArea: "matematicas", activeCompetency: "razonamiento", opecId: "cnsc:12345" },
+      { activeArea: "matematicas", opecId: "cnsc:12345" },
+      { opecId: "cnsc:12345" },
+      { activeArea: "matematicas", activeCompetency: "razonamiento", opecId: null },
+      { activeArea: "matematicas", opecId: null },
+      { opecId: null },
+    ],
   );
 });

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { LoadingState } from "@/components/ui/loading-state";
 import { ErrorState } from "@/components/ui/error-state";
 import { EmptyState } from "@/components/ui/empty-state";
@@ -15,11 +15,16 @@ interface SessionStartResult {
   sessionId: string;
   currentState: string;
   currentItemId?: string;
+  resumed?: boolean;
   inventory?: {
     status: "empty";
     reason: "no_active_v4_items";
     alternatives: string[];
   };
+}
+
+interface ResumeResult {
+  session: SessionStartResult | null;
 }
 
 interface AdvanceResult {
@@ -43,6 +48,17 @@ interface AdvanceResult {
   };
 }
 
+function getNoItemMessage(session: SessionStartResult) {
+  if (session.currentState === "onboarding") {
+    return "Debes completar el onboarding antes de iniciar una práctica real.";
+  }
+
+  const alternatives = session.inventory?.alternatives?.join(". ");
+  return alternatives
+    ? `No hay preguntas V4 activas para esta práctica. Alternativas: ${alternatives}.`
+    : "La sesión está activa, pero no hay una pregunta V4 disponible todavía para continuar.";
+}
+
 export function PracticeSession() {
   const [session, setSession] = useState<SessionStartResult | null>(null);
   const [item, setItem] = useState<PracticeQuestionViewModel | null>(null);
@@ -50,6 +66,7 @@ export function PracticeSession() {
   const [userRationale, setUserRationale] = useState("");
   const [feedback, setFeedback] = useState<AdvanceResult | null>(null);
   const [pendingNextItemId, setPendingNextItemId] = useState<string | null>(null);
+  const [initializing, setInitializing] = useState(true);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [sessionMessage, setSessionMessage] = useState<string | null>(null);
@@ -74,6 +91,7 @@ export function PracticeSession() {
   async function loadItem(sessionId: string, itemId: string) {
     const response = await fetch(
       `/api/session/item?sessionId=${encodeURIComponent(sessionId)}&itemId=${encodeURIComponent(itemId)}`,
+      { cache: "no-store" },
     );
     const data = await response.json();
 
@@ -87,6 +105,43 @@ export function PracticeSession() {
     setFeedback(null);
     setPendingNextItemId(null);
   }
+
+  async function resumeActiveSession() {
+    setInitializing(true);
+    setError(null);
+    setSessionMessage(null);
+
+    try {
+      const response = await fetch("/api/session/resume", { cache: "no-store" });
+      const data = (await response.json()) as ResumeResult & { error?: string };
+
+      if (!response.ok) {
+        setError(data.error ?? "No se pudo recuperar la sesión activa.");
+        return;
+      }
+
+      if (!data.session) {
+        setSession(null);
+        return;
+      }
+
+      setSession(data.session);
+      if (data.session.currentItemId) {
+        await loadItem(data.session.sessionId, data.session.currentItemId);
+      } else {
+        resetItemState();
+        setSessionMessage(getNoItemMessage(data.session));
+      }
+    } catch (resumeError) {
+      setError(resumeError instanceof Error ? resumeError.message : "No se pudo recuperar la sesión activa.");
+    } finally {
+      setInitializing(false);
+    }
+  }
+
+  useEffect(() => {
+    void resumeActiveSession();
+  }, []);
 
   async function handleStart() {
     setLoading(true);
@@ -110,18 +165,8 @@ export function PracticeSession() {
 
       setSession(data);
 
-      if (data.currentState === "onboarding") {
-        setSessionMessage("Debes completar el onboarding antes de iniciar una práctica real.");
-        return;
-      }
-
       if (!data.currentItemId) {
-        const alternatives = data.inventory?.alternatives?.join(". ");
-        setSessionMessage(
-          alternatives
-            ? `No hay preguntas V4 activas para esta práctica. Alternativas: ${alternatives}.`
-            : "La sesión fue creada, pero no hay una pregunta V4 disponible todavía para continuar.",
-        );
+        setSessionMessage(getNoItemMessage(data));
         return;
       }
 
@@ -204,7 +249,9 @@ export function PracticeSession() {
 
   return (
     <section className="content-stack">
-      {!session ? (
+      {initializing ? <LoadingState message="Recuperando sesión activa..." /> : null}
+
+      {!initializing && !session ? (
         <div className="hero-card">
           <p className="eyebrow">Sesión real</p>
           <h2 className="section-title">Pregunta, responde y recibe feedback trazable.</h2>
@@ -220,7 +267,7 @@ export function PracticeSession() {
         </div>
       ) : null}
 
-      {error ? <ErrorState message={error} onRetry={!session ? handleStart : undefined} /> : null}
+      {error ? <ErrorState message={error} onRetry={!session && !initializing ? resumeActiveSession : undefined} /> : null}
       {sessionMessage && !error ? (
         <EmptyState
           title={sessionMessage}
@@ -233,6 +280,7 @@ export function PracticeSession() {
           <div className="inline-cluster">
             <span className="pill">Sesión {session.sessionId.slice(0, 8)}</span>
             <span className="pill">Estado: {feedback?.currentState ?? session.currentState}</span>
+            {session.resumed ? <span className="pill">Reanudada</span> : null}
             {item ? <span className="pill">{formatAreaCompetency(item.area, item.competency)}</span> : null}
           </div>
           {sessionDashboardHref ? <Link href={sessionDashboardHref} className="subtle">Ver sesión →</Link> : null}
