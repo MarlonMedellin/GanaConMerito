@@ -6,7 +6,7 @@ import {
   calculateV4PlanHash,
   canonicalJson,
   type V4ImportCandidate,
-} from "./lib/v4-import-plan";
+} from "../lib/v4-import-plan";
 
 const databaseUrl = process.env.V4_IMPORT_TEST_DATABASE_URL
   ?? "postgresql://postgres:postgres@127.0.0.1:54322/postgres";
