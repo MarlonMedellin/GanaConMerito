@@ -62,8 +62,8 @@ jobs:
           APP_PID=$!
           trap "kill $APP_PID" EXIT
           for i in {1..30}; do
-            if curl -fsS "http://127.0.0.1:${PORT}" >/dev/null; then
-              echo "Application responded on ${PORT}"
+            if curl -fsS "http://127.0.0.1:${PORT}/icon.svg" >/dev/null; then
+              echo "Production server responded on ${PORT}"
               exit 0
             fi
             sleep 2

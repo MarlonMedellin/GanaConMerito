@@ -91,3 +91,8 @@ La primera corrida publicada reveló que una prueba histórica de metadata no ai
 eliminar explícitamente esa variable en el caso «no proporcionada»; no cambia el
 runtime ni el importador y permite que CI evalúe el comportamiento que la prueba
 declara.
+
+La siguiente corrida confirmó build y arranque de Next, pero el smoke consultaba
+la página dinámica `/` sin variables Supabase y obtenía el 500 esperado por falta
+de configuración. El workflow ahora verifica `/icon.svg`: confirma que el servidor
+de producción arrancó y atiende HTTP sin incorporar secretos ni simular un backend.
