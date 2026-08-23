@@ -8,7 +8,8 @@ import { selectNextItem } from "@/domain/item-selection/select-next-item";
 import { V4QuestionRepository } from "@/lib/question-bank/v4-question-repository";
 import { requireAuthenticatedProfile } from "@/lib/supabase/guards";
 import {
-  getCanaryTargetingSelection,
+  getCanarySessionTargetingContext,
+  getCanarySessionTargetingCookieName,
   isCanaryTargetingEnabled,
 } from "@/lib/targeting/canary-targeting-server";
 
@@ -27,34 +28,6 @@ export async function GET(request: Request) {
   }
 
   const { supabase, profile } = auth;
-  let canaryTargeting = null;
-  if (isCanaryTargetingEnabled()) {
-    try {
-      canaryTargeting = await getCanaryTargetingSelection();
-    } catch (error) {
-      logRequestOutcome(observation, {
-        event: "canary.session_resume.catalog_invalid",
-        status: 500,
-        errorCode: API_ERROR_CODES.INTERNAL_DEPENDENCY_FAILED,
-        error,
-      });
-      return jsonWithRequestId({ error: "Canary targeting catalog is not valid." }, 500, observation);
-    }
-
-    if (!canaryTargeting) {
-      logRequestOutcome(observation, {
-        event: "canary.session_resume.targeting_required",
-        status: 409,
-        errorCode: API_ERROR_CODES.SESSION_INVALID_STATE,
-      });
-      return jsonWithRequestId(
-        { error: "Debes revisar el onboarding antes de reanudar una práctica canary." },
-        409,
-        observation,
-      );
-    }
-  }
-
   const { data: learningProfile, error: learningProfileError } = await supabase
     .from("learning_profiles")
     .select("professional_profile_id")
@@ -68,27 +41,6 @@ export async function GET(request: Request) {
       error: learningProfileError,
     });
     return jsonWithRequestId({ error: "Learning profile not found" }, 404, observation);
-  }
-
-  if (canaryTargeting) {
-    const { data: selectedProfile } = await supabase
-      .from("professional_profiles")
-      .select("code")
-      .eq("id", learningProfile.professional_profile_id)
-      .maybeSingle();
-    if (!selectedProfile || selectedProfile.code !== canaryTargeting.professionalProfileCode) {
-      logRequestOutcome(observation, {
-        event: "canary.session_resume.targeting_profile_drift",
-        status: 409,
-        errorCode: API_ERROR_CODES.SESSION_INVALID_STATE,
-        opecKey: canaryTargeting.opecKey,
-      });
-      return jsonWithRequestId(
-        { error: "La selección de perfil y OPEC ya no coincide. Revisa el onboarding antes de continuar." },
-        409,
-        observation,
-      );
-    }
   }
 
   const { data: session, error: sessionError } = await supabase
@@ -114,9 +66,64 @@ export async function GET(request: Request) {
     logRequestOutcome(observation, {
       event: "canary.session_resume.none",
       status: 200,
-      opecKey: canaryTargeting?.opecKey,
     });
-    return jsonWithRequestId({ session: null }, 200, observation);
+    const response = jsonWithRequestId({ session: null }, 200, observation);
+    if (isCanaryTargetingEnabled()) {
+      response.cookies.delete(getCanarySessionTargetingCookieName());
+    }
+    return response;
+  }
+
+  let canaryTargeting = null;
+  if (isCanaryTargetingEnabled()) {
+    let sessionTargeting;
+    try {
+      sessionTargeting = await getCanarySessionTargetingContext();
+    } catch (error) {
+      logRequestOutcome(observation, {
+        event: "canary.session_resume.catalog_invalid",
+        status: 500,
+        errorCode: API_ERROR_CODES.INTERNAL_DEPENDENCY_FAILED,
+        sessionId: session.id,
+        error,
+      });
+      return jsonWithRequestId({ error: "Canary targeting catalog is not valid." }, 500, observation);
+    }
+
+    if (!sessionTargeting || sessionTargeting.sessionId !== session.id) {
+      logRequestOutcome(observation, {
+        event: "canary.session_resume.session_targeting_missing",
+        status: 409,
+        errorCode: API_ERROR_CODES.SESSION_INVALID_STATE,
+        sessionId: session.id,
+      });
+      return jsonWithRequestId(
+        { error: "La sesión activa perdió su contexto de OPEC. Inicia una nueva práctica canary." },
+        409,
+        observation,
+      );
+    }
+
+    canaryTargeting = sessionTargeting.selection;
+    const { data: selectedProfile } = await supabase
+      .from("professional_profiles")
+      .select("code")
+      .eq("id", learningProfile.professional_profile_id)
+      .maybeSingle();
+    if (!selectedProfile || selectedProfile.code !== canaryTargeting.professionalProfileCode) {
+      logRequestOutcome(observation, {
+        event: "canary.session_resume.targeting_profile_drift",
+        status: 409,
+        errorCode: API_ERROR_CODES.SESSION_INVALID_STATE,
+        sessionId: session.id,
+        opecKey: canaryTargeting.opecKey,
+      });
+      return jsonWithRequestId(
+        { error: "La selección de perfil y OPEC ya no coincide. Revisa el onboarding antes de continuar." },
+        409,
+        observation,
+      );
+    }
   }
 
   const { data: turns, error: turnsError } = await supabase
