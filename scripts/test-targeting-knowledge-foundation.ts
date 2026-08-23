@@ -218,6 +218,28 @@ async function main() {
     );
     assert.equal(schema.rows.every((row) => row.rls_enabled === true), true);
 
+    const profileTargetColumns = await client.query(`
+      select column_name
+      from information_schema.columns
+      where table_schema = 'public'
+        and table_name = 'item_target_profiles'
+      order by ordinal_position
+    `);
+    assert.deepEqual(
+      profileTargetColumns.rows.map((row) => row.column_name),
+      [
+        "item_id",
+        "profile_id",
+        "review_status",
+        "evidence",
+        "reviewed_by",
+        "reviewed_at",
+        "notes",
+        "created_at",
+        "updated_at",
+      ],
+    );
+
     const family = await client.query(`
       select id, code, name, is_active
       from public.target_families
@@ -442,8 +464,8 @@ async function main() {
       await expectDatabaseError(
         client,
         `insert into public.item_target_profiles
-          (item_id, profile_id, target_kind, review_status, evidence)
-         values ($1, $2, null, 'approved', ${evidence})`,
+          (item_id, profile_id, review_status, evidence)
+         values ($1, $2, 'approved', ${evidence})`,
         [itemId, canonicalProfileId],
         "23514",
       );
@@ -459,16 +481,8 @@ async function main() {
     await expectDatabaseError(
       client,
       `insert into public.item_target_profiles
-        (item_id, profile_id, target_kind, review_status)
-       values ($1, $2, 'primary', 'approved')`,
-      [itemId, canonicalProfileId],
-      "23514",
-    );
-    await expectDatabaseError(
-      client,
-      `insert into public.item_target_profiles
-        (item_id, profile_id, target_kind)
-       values ($1, $2, 'invented-kind')`,
+        (item_id, profile_id, review_status)
+       values ($1, $2, 'approved')`,
       [itemId, canonicalProfileId],
       "23514",
     );
@@ -479,8 +493,8 @@ async function main() {
     `, [itemId, docentesFamilyId]);
     await client.query(`
       insert into public.item_target_profiles
-        (item_id, profile_id, target_kind, review_status, evidence, reviewed_by, reviewed_at)
-      values ($1, $2, null, 'approved', array['integration:test'], 'integration-test', now())
+        (item_id, profile_id, review_status, evidence, reviewed_by, reviewed_at)
+      values ($1, $2, 'approved', array['integration:test'], 'integration-test', now())
     `, [itemId, canonicalProfileId]);
     await client.query(`
       insert into public.item_opec_targets
@@ -544,7 +558,7 @@ async function main() {
         "active-source-downgrade",
         "unique-applicability",
         "approved-item-evidence",
-        "nullable-profile-target-kind",
+        "exact-profile-target-columns",
         "item-link-cascade",
         "concurrent-source-target-invariant",
       ],

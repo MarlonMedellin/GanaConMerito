@@ -36,8 +36,7 @@ pasaron. Este cierre técnico local no autoriza ni declara aplicación remota.
   el contrato congelado, sin expandirlo artificialmente a seis perfiles;
 - el invariante `target activo => fuente verificada` ahora bloquea la fila fuente
   y resiste la carrera concurrente reproducida durante la auditoría;
-- `target_kind` quedó opcional porque el contrato editorial no autoriza inventar
-  `primary|compatible`;
+- se eliminó de `0030` la clasificación no contractual de targets de perfil;
 - la evidencia aprobada rechaza arrays vacíos, nulos o con texto en blanco;
 - `verified_by` de la fuente es opcional para coincidir con el inventario canónico;
   las relaciones activas sí conservan `verified_at` y `verified_by` obligatorios.
@@ -76,36 +75,47 @@ pasaron. Este cierre técnico local no autoriza ni declara aplicación remota.
   parámetro no usado `p_previous_state` en `advance_session_atomic`;
 - typecheck y `git diff --check`: **PASS**.
 
-El preflight remoto de solo lectura confirmó historial aplicado `0001–0028`, 163
-V4 con 652 opciones, cero filas inseguras/activas y cero ejecuciones batch. `0029`
-y `0030` permanecen sin aplicar remotamente. Supabase reportó WAL-G habilitado,
-PITR deshabilitado y sin timestamps de backup físico disponibles; por ello no se
-autorizó ni realizó ninguna escritura remota.
+El preflight remoto de solo lectura confirmó historial aplicado `0001–0028`, 298
+reactivos totales, 163 V4 con 652 opciones, cero V4 activas/publicadas/en piloto y
+cero ejecuciones batch. `0029` y `0030` permanecen sin aplicar; las nueve tablas
+de `0030` no existen remotamente, por lo que tampoco existen allí sus OPEC,
+fuentes, mappings ni backfill. El runtime público declara `e1dc63b` y está 251
+commits detrás del `master` observado; no hay evidencia de deploy de este gate.
+
+La auditoría también produjo evidencia negativa crítica: aunque el historial
+incluye `0020`, el esquema efectivo conserva grants/policies de cliente sobre
+`item_bank`/`item_options` y una consulta REST anónima puede acceder a
+`correct_option` en 120 filas activas. Las vistas V4 sí permanecen server-only.
+Este drift bloquea escrituras, importación, activación y la apertura del PR draft
+hasta que se explique o repare mediante un bloque autorizado separado.
+
+Supabase reportó WAL-G habilitado, PITR deshabilitado y sin timestamps de backup
+físico disponibles; no se autorizó ni realizó ninguna escritura remota.
 
 ## Límites operativos
 
-No se aplicó `0029`, no se ejecutó el lote V4, no se activaron reactivos y no se
-realizó despliegue. Cualquier aplicación de `0030` requiere autorización y un
-preflight remoto independiente; este bloque no aporta evidencia de runtime ni de
-producción.
+No se aplicó `0029`/`0030`, no se ejecutó el lote V4, no se activaron reactivos y
+no se realizó despliegue. No se abrió PR draft porque el gate remoto de seguridad
+resultó negativo. Cualquier escritura o remediación requiere autorización y un
+bloque independiente; este trabajo no modifica el runtime ni producción.
 
-## Preparación de integración
+## Gate de integración tras PR #97
 
 Corte remoto observado el **2026-08-23**:
 
-- `master`: `7be92b655dee4965872963f1ca57d6eb96107599`;
-- PR #97, contratos editoriales knowledge/targeting: draft, cabeza
-  `9c1963e11de8ea7a267cf938840b96abf0063285`, checks verdes;
-- rama de esta foundation: `b591a07242ffbcdbafc32b4089607193b912f0c2`;
-- PR #101, readiness canary: draft y en evolución; usa transitoriamente
+- `master`: `12c620b3af461576d35ffa2e29342af962449db8`;
+- PR #97 fusionado; sus contratos editoriales knowledge/targeting forman parte de
+  ese `master`;
+- esta rama fue rebaseada sobre el nuevo `master` sin conflictos textuales;
+- PR #101, readiness canary: permanece draft sobre una base anterior; usa
+  transitoriamente
   `professional_profiles`, catálogo OPEC de entorno e `item_bank.opec_id`, no las
   tablas normalizadas de `0030`.
 
-La foundation no debe integrarse todavía sobre `master`: depende de que los
-contratos del PR #97 sean autorizados e integrados primero. Después de ello se
-debe actualizar esta rama sobre el nuevo `master`, resolver cualquier conflicto
-de CI y repetir el gate completo `0001–0030`. No se congelará en este documento
-un SHA de PR #101 porque su rama está activa.
+La integración conservó los scripts knowledge/targeting incorporados por PR #97
+y los gates PRD 3 en `package.json`. Se eliminó de `0030` y de la documentación
+canónica la clasificación de targets de perfil que no existe en los schemas
+machine-readable fusionados.
 
 ### Matriz contrato editorial → persistencia `0030`
 
@@ -115,7 +125,7 @@ un SHA de PR #101 porque su rama está activa.
 | perfil `familyCode/profileCode/name/legacyApplicantProfile/status` | `target_profiles` | familia resuelta por código; seis perfiles canónicos; sin disciplinas |
 | OPEC `sourceSystem/externalOpecId/familyCode/profileCode/...` | `opec_catalog` | identidad natural fuente+ID externo; perfil debe pertenecer a la familia |
 | target de reactivo tipo `family` | `item_target_families` | relación explícita; no expandir automáticamente a todos los perfiles |
-| target de reactivo tipo `profile` | `item_target_profiles` | `target_kind=NULL`; el contrato no define primary/compatible |
+| target de reactivo tipo `profile` | `item_target_profiles` | relación directa; no añade clasificaciones ajenas al contrato |
 | target de reactivo tipo `opec` | `item_opec_targets` | OPEC existente y revisión/evidencia preservadas |
 | inventario de fuente | `knowledge_sources` | fuente `needs_review` permanece no verificada y sin targets activos |
 | mapa knowledge `common/family/profile/opec` | `knowledge_source_targets` | una sola forma de target; estado `active` exige verificación completa |
@@ -126,20 +136,25 @@ OPEC, dos fuentes `needs_review`, cero mapas knowledge y cero mappings de
 reactivos. Por tanto, cualquier importador futuro debe tratar archivos vacíos
 como “sin instrucciones”, no como borrado, y queda fuera de este bloque.
 
-### Gate pendiente tras integrar PR #97
+### Gate repetido tras integrar PR #97
 
-1. actualizar esta rama desde el `master` que ya contenga los contratos;
-2. ejecutar `content:validate:knowledge-targeting`;
-3. reconstruir Supabase local desde `0001` hasta `0030`;
-4. repetir contrato estático, integración PostgreSQL, seguridad y concurrencia;
-5. repetir suites V4, typecheck, documentación y diff check;
-6. confirmar nuevamente que `0029`/`0030`, lote, OPEC, fuentes, mappings,
-   backfill, activación y deploy siguen sin ejecutarse remotamente.
+1. rebase sobre `master` con PR #97: **PASS**, sin conflictos textuales;
+2. `content:validate:knowledge-targeting`: **PASS**, 1 familia, 6 perfiles,
+   0 OPEC, 2 fuentes `needs_review`, 0 mapas y 0 mappings;
+3. reset Supabase local `0001–0030`: **PASS**;
+4. contrato estático, integración PostgreSQL, seguridad/RLS y concurrencia:
+   **PASS**;
+5. V4 248/248, dry-run 248 sin escrituras e importación atómica local: **PASS**;
+6. unitarias, typecheck, documentación, lint Supabase y diff check: **PASS**; el
+   lint conserva solo la advertencia histórica de `p_previous_state`;
+7. verificación remota: solo lectura; `0029`/`0030`, lote, OPEC, fuentes,
+   mappings, backfill, activación y deploy permanecen fuera de este gate.
 
-El PR #101 requiere una decisión de integración separada: su catálogo canary
-debe declararse adaptador transitorio o migrarse después al modelo normalizado.
-Mezclar ambos modelos sin esa decisión crearía dos fuentes de verdad para OPEC y
-perfiles.
+El catálogo y las cookies de PR #101 quedan clasificados explícitamente como un
+**adaptador canary transitorio, apagado y no canónico**. No deben poblar la base
+ni habilitarse cuando existan catálogos o mappings normalizados independientes.
+PR #101 deberá rebasearse después de esta foundation y repetir sus checks; sus
+verdes sobre la base anterior no prueban compatibilidad con `0030`.
 
 ## Sincronización documental
 
@@ -147,6 +162,9 @@ Actualizados en este bloque:
 
 - `docs/database/schema.md`;
 - `docs/database/prd-question-bank-v4-supabase.md`;
+- `docs/database/question-bank-v4-contract.md`;
+- `docs/03-architecture/question-bank-knowledge-targeting-architecture.md`;
+- `content/targeting/README.md`;
 - `docs/project/status.md`;
 - este reporte.
 
@@ -154,7 +172,7 @@ Deliberadamente no tocados:
 
 - `content/question-bank-v4/**` y sus contratos congelados;
 - `content/knowledge-base/**`;
-- `content/targeting/**`;
+- catálogos, schemas y mappings bajo `content/targeting/**`;
 - contratos de lectura V4 y migraciones `0001–0029`;
 - runtime, despliegue y datos de ambientes remotos.
 
@@ -163,6 +181,8 @@ Known documentation drift accepted:
 - `docs/02-delivery/sprint-log.md` y `docs/02-delivery/change-log.md` quedan para
   la integración/release; este bloque registra su estado en `docs/project/status.md`
   y en el presente reporte técnico.
+- el checkpoint propio de PR #101 no existe en esta rama; deberá alinearse al
+  rebasar esa rama y no se promueve aquí como fuente ejecutiva.
 
 ## Metadata operacional
 
@@ -182,7 +202,5 @@ Known documentation drift accepted:
 ## Riesgos abiertos
 
 - no existe todavía evidencia para poblar OPEC, fuentes o mappings;
-- `target_kind` permanece opcional hasta una decisión editorial explícita; no se
-  derivará por orden ni heurística;
 - una futura carga o backfill debe ser otro bloque auditable y no forma parte de
   esta foundation.

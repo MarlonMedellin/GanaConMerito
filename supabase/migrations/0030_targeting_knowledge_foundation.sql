@@ -98,9 +98,6 @@ create table public.item_target_families (
 create table public.item_target_profiles (
   item_id uuid not null references public.item_bank(id) on delete cascade,
   profile_id uuid not null references public.target_profiles(id),
-  target_kind text check (
-    target_kind is null or target_kind in ('primary', 'compatible')
-  ),
   review_status text not null default 'candidate' check (
     review_status in ('candidate', 'reviewed', 'approved', 'rejected')
   ),

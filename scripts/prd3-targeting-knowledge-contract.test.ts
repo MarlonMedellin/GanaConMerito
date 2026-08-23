@@ -45,8 +45,7 @@ test("PRD 3 keeps taxonomy, reusable profiles, and concrete OPEC identities sepa
   assert.match(migration, /create table public\.item_target_families[\s\S]+item_id uuid not null references public\.item_bank\(id\) on delete cascade[\s\S]+family_id uuid not null references public\.target_families\(id\)/i);
   assert.match(migration, /create table public\.item_target_profiles[\s\S]+item_id uuid not null references public\.item_bank\(id\) on delete cascade[\s\S]+profile_id uuid not null references public\.target_profiles\(id\)/i);
   assert.match(migration, /create table public\.item_opec_targets[\s\S]+item_id uuid not null references public\.item_bank\(id\) on delete cascade[\s\S]+opec_id uuid not null references public\.opec_catalog\(id\)/i);
-  assert.match(migration, /target_kind text check \([\s\S]*target_kind is null or target_kind in \('primary', 'compatible'\)[\s\S]*\)/i);
-  assert.doesNotMatch(migration, /target_kind text not null/i);
+  assert.doesNotMatch(migration, /target_kind/i);
   assert.match(migration, /create function public\.text_array_has_only_nonblank_values\(p_values text\[\]\)[\s\S]+strict[\s\S]+bool_and\(nullif\(btrim\(value\), ''\) is not null\)/i);
   assert.equal(
     migration.match(/review_status <> 'approved'[\s\S]{0,100}text_array_has_only_nonblank_values\(evidence\)/gi)?.length,

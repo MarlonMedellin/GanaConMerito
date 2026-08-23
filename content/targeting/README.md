@@ -124,8 +124,7 @@ Para integridad de datos **no son sinónimos de identidad**:
 Un reactivo puede ser:
 
 - común a toda una familia;
-- principal para un perfil;
-- compatible con varios perfiles;
+- aplicable a uno o varios perfiles;
 - específico de una OPEC.
 
 Por tanto, la persistencia futura debe admitir relaciones many-to-many y no una sola columna de cargo como única clasificación.

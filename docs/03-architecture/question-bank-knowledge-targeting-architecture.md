@@ -242,7 +242,6 @@ El diseño normalizado recomendado para una evolución posterior es:
 `item_target_profiles`
 - `item_id`
 - `profile_id`
-- `target_kind` (`primary`, `compatible`)
 
 `item_opec_targets`
 - `item_id`

@@ -105,8 +105,7 @@ editorial. Evita expandir artificialmente una familia a todos sus perfiles.
 
 ### `item_target_profiles`
 Relación many-to-many entre `item_bank` y perfiles/cargos, con estado de revisión,
-evidencia y auditoría. `target_kind` es opcional hasta que exista una decisión
-editorial explícita; queda sin backfill.
+evidencia y auditoría. Queda sin backfill.
 
 ### `item_opec_targets`
 Relación many-to-many para reactivos verdaderamente específicos de una OPEC, con

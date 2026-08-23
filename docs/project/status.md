@@ -10,8 +10,8 @@ last_reviewed: 2026-08-23
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-08-23 — foundation PRD 3 `0030` implementada y validada
-en Supabase local aislado; no aplicada en remoto.
+Ultima actualizacion: 2026-08-23 — PR #97 fusionado; foundation PRD 3 `0030`
+rebaseada y revalidada en Supabase local aislado; no aplicada en remoto.
 
 ---
 
@@ -33,23 +33,26 @@ La administracion de VPS no fue verificada porque la huella SSH presentada cambi
 y debe confirmarse antes de aceptar la conexion.
 
 ## Last Verified Commit
-`e43f612` como commit declarado por el runtime publico. Esta auditoria solo verifico
-smoke publico; no reejecuto E2E autenticada ni verifico el arbol de deploy.
+`e1dc63b` como commit declarado por el runtime publico. Está 251 commits detrás de
+`master@12c620b3`; esta auditoría no reejecutó E2E autenticada ni verificó el
+árbol de deploy.
 
 ## Current Sprint Status
 **SPRINT 48 EN EJECUCIÓN; PRD 3 CONTINÚA EN RAMA AISLADA**: `0028` fue aplicada en
 producción, pero el lote no se ejecutó. La auditoría confirmó 163 V4 y 652 opciones,
 todas inactivas, no publicadas y fuera del piloto. `0029` endurece localmente el
-anclaje canónico y la reconciliación de drift; queda pendiente de aplicación tras
-la revisión del PR #97. La nueva `0030_targeting_knowledge_foundation.sql` implementa
+anclaje canónico y la reconciliación de drift; continúa pendiente de aplicación
+remota aunque PR #97 ya fue fusionado. La nueva
+`0030_targeting_knowledge_foundation.sql` implementa
 persistencia aditiva para familia/perfil/OPEC y procedencia de conocimiento; la
 reconstrucción local `0001–0030` y sus pruebas pasaron, sin aplicación remota.
 
 ## Known Drift
 - Supabase contiene 163 filas V4 y 652 opciones; `v_question_bank_v4_active`
   devuelve cero filas porque ninguna V4 está activa.
-- La politica publica permite consultar `correct_option`, `explanation` y metadata
-  editorial directamente desde `item_bank`; RLS por fila no protege columnas.
+- Aunque `0020` figura aplicada, el esquema efectivo conserva grants/policies de
+  cliente sobre `item_bank`/`item_options`; REST anónimo puede consultar
+  `correct_option` en 120 filas activas. Las vistas V4 permanecen server-only.
 - El runtime desplegado aún devuelve el contrato anterior y lee
   `v_item_bank_active`/`item_bank`; el repo ya eliminó ese fallback para práctica.
 - El banco V4 coincide con el conteo y los hashes del manifiesto canónico, sin IDs
@@ -60,6 +63,10 @@ reconstrucción local `0001–0030` y sus pruebas pasaron, sin aplicación remot
   canónica siguen pendientes.
 - `0030` existe solo como implementación validada en rama: no tiene aplicación
   remota, OPEC cargadas, fuentes verificadas ni backfill de reactivos.
+- PR #101 permanece como canary draft sobre una base anterior. Su catálogo de
+  entorno y cookies se consideran adaptador transitorio, apagado y no canónico;
+  deberá rebasearse después de `0030` y no puede coexistir habilitado como segunda
+  fuente de verdad.
 - Persisten contratos y validaciones parcialmente narrativas fuera del baseline canonico.
 - La trazabilidad multiagente todavia no es enforcement obligatorio.
 - La integracion del Tutor con LLM real queda como deuda tecnica futura y no forma parte del cierre de Sprint 47.
@@ -79,10 +86,12 @@ reconstrucción local `0001–0030` y sus pruebas pasaron, sin aplicación remot
   ejecución real de OpenRouter shadow pendientes.
 - cualquier aplicación remota de `0030` requiere una ventana y autorización
   separadas.
+- el PR draft de PRD 3 queda bloqueado hasta explicar o reparar el drift remoto de
+  exposición de respuestas y volver a auditar la frontera completa.
 
 ## Last Audit
-2026-08-23 — `master`, PR #97, historial Supabase y conteos V4 reconfirmados en
-lectura; runtime público y VPS no se revalidaron en este bloque.
+2026-08-23 — `master@12c620b3`, PR #97 fusionado, historial Supabase y conteos V4
+reconfirmados en lectura; runtime público y VPS no se revalidaron en este bloque.
 
 ---
 

@@ -137,13 +137,12 @@ perfiles por disciplina, no inventa OPEC y deja `opec_catalog` sin registros.
 #### Relaciones de aplicabilidad
 
 - `item_target_families(item_id, family_id)`;
-- `item_target_profiles(item_id, profile_id, target_kind)`;
+- `item_target_profiles(item_id, profile_id)`;
 - `item_opec_targets(item_id, opec_id)`.
 
 Las tres relaciones incorporan estado de revisión, evidencia no vacía y auditoría.
-`target_kind` queda opcional porque el contrato editorial congelado no distingue
-todavía `primary|compatible`; ningún importador debe inventarlo. La migración no
-ejecuta backfill: ningún reactivo recibe targeting canónico por texto o heurística.
+La migración no ejecuta backfill: ningún reactivo recibe targeting canónico por
+texto o heurística.
 
 El campo existente `item_bank.opec_id` se conserva durante la transición por
 compatibilidad, pero no debe ser la única representación futura de aplicabilidad.

@@ -89,8 +89,8 @@ Catálogo de perfiles/cargos canónicos, asociado a una familia.
 Catálogo de OPEC concretas, cada una mapeada a un `target_profile`.
 
 ### `item_target_profiles`
-Relación many-to-many entre reactivos y perfiles. Debe permitir distinguir al menos
-perfil `primary` y `compatible`.
+Relación many-to-many directa entre reactivos y perfiles, sin añadir una jerarquía
+de aplicabilidad que no exista en el contrato editorial.
 
 ### `item_opec_targets`
 Relación many-to-many para reactivos verdaderamente `opec_specific`.
