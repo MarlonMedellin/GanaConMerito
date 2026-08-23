@@ -1,0 +1,17 @@
+name: Canary V4 security probe
+
+on:
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  strict-security:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Verify anon and authenticated boundaries on isolated candidate
+        run: |
+          curl --fail-with-body --silent --show-error "https://dhiytzbwodfvdrnwhkcw.supabase.co/functions/v1/gcm-canary-security-once?token=gcm-canary-security-20260823-84b32e14"
