@@ -53,6 +53,14 @@ test("Sprint 48 repairs V4 option counting without weakening importer grants", a
   assert.match(migration, /revoke execute on function public\.upsert_content_item_v4\(jsonb, text, text, text\)[\s\S]+from public, anon, authenticated/i);
 });
 
+test("Sprint 48 resolves content_id conflicts through the canonical unique constraint", async () => {
+  const migration = await readRepoFile("supabase/migrations/0026_fix_v4_content_id_conflict.sql");
+
+  assert.match(migration, /on conflict on constraint item_bank_content_id_unique do update set/i);
+  assert.match(migration, /V4_IMPORT_CONTENT_ID_CONFLICT_CLAUSE_NOT_FOUND/);
+  assert.match(migration, /revoke execute on function public\.upsert_content_item_v4\(jsonb, text, text, text\)[\s\S]+from public, anon, authenticated/i);
+});
+
 test("pre-answer route does not select or serialize answer-bearing fields", async () => {
   const route = await readRepoFile("src/app/api/session/item/route.ts");
   const sessionTypes = await readRepoFile("src/types/session.ts");
