@@ -94,7 +94,7 @@ Los cinco reactivos miden oportunidades editoriales distintas y no son paráfras
 - Fase B activa: **30** reactivos.
 - Fase B: **30 APPROVED / 0 REJECTED activos**.
 - Total editorialmente aprobado en rama: **254**.
-- Snapshot canónico post-remediación: `COVERAGE-AFTER-PHASE-B-REMEDIATION-20260822.json`.
+- Snapshot canónico post-remediación: `../snapshots/COVERAGE-AFTER-PHASE-B-REMEDIATION-20260822.json`.
 - QA de rama: `.github/workflows/v4-post-sprint48-qa.yml`, `permissions: contents: read`.
 - Próximo ID nunca usado disponible: `DOC-001291`.
 
