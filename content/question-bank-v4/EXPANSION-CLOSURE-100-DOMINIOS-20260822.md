@@ -37,7 +37,7 @@
 
 ## Cobertura final
 
-Snapshot canónico de cierre: `COVERAGE-AFTER-BATCH-10-20260822.json`.
+Snapshot canónico de cierre: `history/snapshots/COVERAGE-AFTER-BATCH-10-20260822.json`.
 
 - Dominios: **10/10**.
 - Temas: **16/16**.
