@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "status": "coordination_contract",
+  "branch": "reorg-v4-architecture-20260822",
+  "baseMaster": "023e94f737ccd95dfe2ac9a093884dd4dc426aac",
+  "pullRequest": 97,
+  "prd2Boundary": {
+    "lastKnownMigration": "0028_atomic_v4_batch_import.sql",
+    "productionModified": false,
+    "nextMigrationRule": "re-read supabase/migrations and use the next actually free number"
+  },
+  "canonicalPaths": {
+    "familyCatalog": "content/targeting/families/docentes.json",
+    "profileCatalog": "content/targeting/profiles/docentes.json",
+    "opecCatalog": "content/targeting/opecs/catalog.json",
+    "opecSchema": "content/targeting/opecs/catalog.schema.json",
+    "knowledgeInventory": "content/knowledge-base/catalog/source-inventory.json",
+    "knowledgeSources": "content/knowledge-base/sources/",
+    "knowledgeMaps": "content/knowledge-base/maps/",
+    "v4Manifest": "content/question-bank-v4/MANIFEST.json",
+    "v4OperationalRegister": "content/question-bank-v4/legacy-processing-register.csv"
+  },
+  "profileCodes": [
+    "rector_director_rural",
+    "coordinador",
+    "docente_aula_preescolar",
+    "docente_aula_basica_primaria",
+    "docente_aula_secundaria_media",
+    "docente_orientador"
+  ],
+  "expectedResponsibilities": [
+    "target_families",
+    "target_profiles",
+    "opec_catalog",
+    "item_target_profiles",
+    "item_opec_targets",
+    "knowledge_sources",
+    "knowledge_source_targets",
+    "item_source_links"
+  ],
+  "preserve": [
+    "item_bank",
+    "existing UUIDs",
+    "248 frozen V4 item JSON files",
+    "MANIFEST.json",
+    "legacy-processing-register.csv while consumed",
+    "V4 safe views and security boundary",
+    "item_bank.opec_id during transition",
+    "migrations 0001-0028 without rewriting"
+  ],
+  "rules": {
+    "taxonomyIsTargeting": false,
+    "duplicateItemsPerProfileOrOpec": false,
+    "automaticKeywordBackfillAllowed": false,
+    "inventFakeOpecs": false,
+    "mutateFrozenItemsForTargeting": false,
+    "introduceProfileSpecificOnlyInSql": false,
+    "manyToManyItemProfilesRequired": true,
+    "singleCanonicalIdentityPerKnowledgeSource": true
+  },
+  "validation": {
+    "command": "npm run content:validate:knowledge-targeting",
+    "script": "scripts/validate-knowledge-targeting.ts",
+    "ciWorkflow": ".github/workflows/pr-checks.yml"
+  },
+  "blockedInputs": [
+    {
+      "path": "content/knowledge-base/themes/docentes/temario-base.md",
+      "reason": "integrity mismatch against original upload",
+      "debtId": "V4-ARCH-DEBT-021",
+      "originalSizeBytes": 94850,
+      "originalGitBlobSha": "f5c90d8393f8dbb7a83794134b27b1a0849de807",
+      "repositorySizeBytes": 95094,
+      "repositoryGitBlobSha": "2d022f1d66e5d98653178d3d772db210c3aec442"
+    }
+  ],
+  "openDebtsForPrd3": [
+    "V4-ARCH-DEBT-007",
+    "V4-ARCH-DEBT-008",
+    "V4-ARCH-DEBT-009",
+    "V4-ARCH-DEBT-011",
+    "V4-ARCH-DEBT-018",
+    "V4-ARCH-DEBT-021"
+  ]
+}
