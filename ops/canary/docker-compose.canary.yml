@@ -1,0 +1,29 @@
+name: gcm-canary
+
+services:
+  gcm-canary-app:
+    build:
+      context: ../..
+      dockerfile: Dockerfile
+      args:
+        APP_COMMIT: ${APP_COMMIT:?APP_COMMIT must identify the approved Canary candidate}
+        APP_BUILD_TIME: ${APP_BUILD_TIME:?APP_BUILD_TIME is required for a reproducible build}
+    container_name: gcm-canary-app
+    restart: "no"
+    env_file:
+      - ${CANARY_ENV_FILE:?CANARY_ENV_FILE must point to the isolated Canary env file}
+    environment:
+      NODE_ENV: production
+      APP_ENV: production
+      GCM_TEST_AUTH_BYPASS: "0"
+      PORT: "3000"
+    ports:
+      - "127.0.0.1:${CANARY_HOST_PORT:?CANARY_HOST_PORT is required}:3000"
+    labels:
+      com.ganaconmerito.runtime: canary
+      com.ganaconmerito.canary.hostname: ${CANARY_HOSTNAME:?CANARY_HOSTNAME must be assigned before exposure}
+    logging:
+      driver: local
+      options:
+        max-size: "10m"
+        max-file: "3"
