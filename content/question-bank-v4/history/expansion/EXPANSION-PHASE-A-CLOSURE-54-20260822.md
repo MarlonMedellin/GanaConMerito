@@ -33,7 +33,7 @@ No se creó un tópico adicional para inclusión: `ajustes_razonables` ya era se
 
 ## Cobertura final
 
-Snapshot canónico: `history/snapshots/COVERAGE-AFTER-PHASE-A-20260822.json`.
+Snapshot canónico: `../snapshots/COVERAGE-AFTER-PHASE-A-20260822.json`.
 
 - Reactivos: **224**.
 - Errores estructurales o taxonómicos: **0**.
