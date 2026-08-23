@@ -1,0 +1,100 @@
+name: Canary V4 resume gate
+
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - 'src/app/api/session/**'
+      - 'src/components/practice/**'
+      - 'scripts/qa-canary-resume.js'
+      - 'scripts/canary-resume-contract.test.ts'
+      - 'package.json'
+      - '.github/workflows/canary-v4-resume.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  candidate-resume:
+    name: CAN-004 candidate resume E2E
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    env:
+      CI: true
+      PORT: 3001
+      QA_BASE_URL: http://127.0.0.1:3001
+      QA_CANARY_PROJECT_REF: dhiytzbwodfvdrnwhkcw
+      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      NEXT_PUBLIC_APP_COMMIT: ${{ github.event.pull_request.head.sha || github.sha }}
+      NEXT_PUBLIC_APP_BUILD_TIME: ${{ github.event.pull_request.updated_at || github.event.head_commit.timestamp }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Verify Candidate credentials and target
+        shell: bash
+        run: |
+          test -n "$NEXT_PUBLIC_SUPABASE_URL"
+          test -n "$NEXT_PUBLIC_SUPABASE_ANON_KEY"
+          test -n "$SUPABASE_SERVICE_ROLE_KEY"
+          case "$NEXT_PUBLIC_SUPABASE_URL" in
+            *"$QA_CANARY_PROJECT_REF"*) ;;
+            *) echo "Configured Supabase URL is not the Canary Candidate" >&2; exit 1 ;;
+          esac
+
+      - name: Verify resume contract
+        run: npm run test:canary:resume-contract
+
+      - name: Build Candidate runtime
+        run: npm run build
+
+      - name: Start Candidate runtime
+        shell: bash
+        run: |
+          npm run start > /tmp/gcm-canary.log 2>&1 &
+          echo $! > /tmp/gcm-canary.pid
+          for i in {1..30}; do
+            if curl -fsS "http://127.0.0.1:${PORT}/icon.svg" >/dev/null; then
+              exit 0
+            fi
+            sleep 2
+          done
+          cat /tmp/gcm-canary.log
+          exit 1
+
+      - name: Execute CAN-004 remote gate
+        run: npm run qa:canary:resume
+
+      - name: Upload CAN-004 evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: can-004-resume-${{ github.run_id }}
+          path: artifacts/qa-canary-resume-*/
+          if-no-files-found: ignore
+
+      - name: Show runtime log on failure
+        if: failure()
+        run: cat /tmp/gcm-canary.log || true
+
+      - name: Stop Candidate runtime
+        if: always()
+        shell: bash
+        run: |
+          if test -f /tmp/gcm-canary.pid; then
+            kill "$(cat /tmp/gcm-canary.pid)" || true
+          fi
