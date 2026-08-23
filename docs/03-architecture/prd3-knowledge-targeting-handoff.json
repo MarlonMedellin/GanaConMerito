@@ -25,8 +25,8 @@
   },
   "catalogStates": {
     "opecCatalog": "empty_until_real_verified_data",
-    "itemTargetMap": "empty_until_editorial_review",
-    "knowledgeSourceMaps": "no_active_maps_until_sources_are_verified"
+    "itemTargetMap": "schema_and_validator_ready_but_mappings_empty_until_editorial_review",
+    "knowledgeSourceMaps": "schema_and_validator_ready_but_no_populated_maps_until_sources_and_applicability_are_reviewed"
   },
   "profileCodes": [
     "rector_director_rural",
@@ -72,13 +72,14 @@
     "command": "npm run content:validate:knowledge-targeting",
     "script": "scripts/validate-knowledge-targeting.ts",
     "ciWorkflow": ".github/workflows/pr-checks.yml",
+    "infrastructureStatus": "implemented",
     "checks": [
       "family and profile referential integrity",
       "OPEC external identity uniqueness",
       "OPEC activation requires verification",
       "knowledge sourceId uniqueness",
-      "knowledge map target/source referential integrity",
-      "active knowledge relation requires verified source",
+      "knowledge map target/source referential integrity for every populated map",
+      "active knowledge relation requires verified source and verification metadata",
       "itemId exists in V4 MANIFEST",
       "item target profile/OPEC exists",
       "approved item targeting relation has evidence"
@@ -90,10 +91,16 @@
       "reason": "integrity mismatch against original upload",
       "debtId": "V4-ARCH-DEBT-021",
       "originalSizeBytes": 94850,
+      "originalSha256": "4dd3e7d1df2af89e4818f77ca244dc26187930a8d7faf19d1c7f05538bc88bb7",
       "originalGitBlobSha": "f5c90d8393f8dbb7a83794134b27b1a0849de807",
-      "repositorySizeBytes": 95094,
       "repositoryGitBlobSha": "2d022f1d66e5d98653178d3d772db210c3aec442"
     }
+  ],
+  "closedDebtsRelevantToPrd3": [
+    "V4-ARCH-DEBT-001",
+    "V4-ARCH-DEBT-006",
+    "V4-ARCH-DEBT-017",
+    "V4-ARCH-DEBT-020"
   ],
   "openDebtsForPrd3": [
     "V4-ARCH-DEBT-007",
@@ -101,6 +108,7 @@
     "V4-ARCH-DEBT-009",
     "V4-ARCH-DEBT-011",
     "V4-ARCH-DEBT-018",
-    "V4-ARCH-DEBT-021"
+    "V4-ARCH-DEBT-021",
+    "V4-ARCH-DEBT-022"
   ]
 }
