@@ -125,7 +125,7 @@ export function OnboardingForm(props: {
           <input className="text-input" value={preferredFeedbackStyle} disabled readOnly />
         </label>
         <label className="form-field">
-          <span className="field-label">Áreas declaradas (opcional)</span>
+          <span className="field-label">Áreas declaradas (opcional) — áreas activas de referencia</span>
           <input
             className="text-input"
             value={activeAreas}
