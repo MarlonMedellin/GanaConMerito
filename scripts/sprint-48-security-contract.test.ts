@@ -61,6 +61,15 @@ test("Sprint 48 resolves content_id conflicts through the canonical unique const
   assert.match(migration, /revoke execute on function public\.upsert_content_item_v4\(jsonb, text, text, text\)[\s\S]+from public, anon, authenticated/i);
 });
 
+test("Sprint 48 maps V4 imports to the existing source_type catalog", async () => {
+  const migration = await readRepoFile("supabase/migrations/0027_fix_v4_source_type.sql");
+
+  assert.match(migration, /v_incompatible_value text := '''v4_editorial'''/i);
+  assert.match(migration, /v_compatible_value text := '''import'''/i);
+  assert.match(migration, /V4_IMPORT_SOURCE_TYPE_EXPRESSION_NOT_FOUND/);
+  assert.match(migration, /bank_version=v4/);
+});
+
 test("pre-answer route does not select or serialize answer-bearing fields", async () => {
   const route = await readRepoFile("src/app/api/session/item/route.ts");
   const sessionTypes = await readRepoFile("src/types/session.ts");
