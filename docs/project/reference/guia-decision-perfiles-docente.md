@@ -1,17 +1,23 @@
 # Guía de decisión para perfiles docentes
 
+> **Estado: documento puente/histórico.** Conserva criterios editoriales útiles para
+> reconocer cuándo un cargo añade valor, pero la arquitectura canónica objetivo de
+> familia → perfil/cargo → OPEC vive en
+> `docs/03-architecture/question-bank-knowledge-targeting-architecture.md` y
+> `content/targeting/README.md`. Los campos históricos `applicantProfile` y
+> `targetPosition` no deben convertirse en el modelo persistente definitivo por sí
+> solos.
+
 ## Propósito
 
-Ayudar al equipo editorial a decidir, de forma rápida y consistente, cuándo usar:
-- solo taxonomía base
-- `applicantProfile`
-- `targetPosition`
+Ayudar al equipo editorial a decidir, de forma rápida y consistente, cuándo un
+reactivo es transversal y cuándo requiere targeting profesional específico.
 
 ## Regla madre
 
-Primero decide el ítem por:
-- `area`
-- `subarea`
+Primero decide el ítem por su taxonomía:
+- `area/domain`
+- `subarea/topic`
 - `competency`
 
 Solo después pregunta si el perfil profesional agrega valor real.
@@ -19,33 +25,33 @@ Solo después pregunta si el perfil profesional agrega valor real.
 ## Árbol de decisión rápido
 
 ### Paso 1
-Pregunta:
 
 > ¿El ítem sirve de manera amplia para muchos docentes sin cambiar su interpretación central?
 
-Si la respuesta es sí:
-- no uses `targetPosition`
-- usa solo taxonomía base
-- si aporta algo al análisis, usa `applicantProfile`
+Si sí:
+- mantenerlo transversal;
+- no inventar un perfil específico;
+- en la arquitectura futura puede relacionarse con la familia `docentes` sin un perfil principal.
 
 ### Paso 2
-Pregunta:
 
 > ¿El ítem pertenece claramente a una gran familia profesional?
 
-Si la respuesta es sí, usa `applicantProfile`:
+En el modelo histórico se usó `applicantProfile`:
 - `directivo_docente`
 - `docente_de_aula`
 - `docente_orientador`
 
+En la arquitectura objetivo, esta noción se expresa mediante familia y relaciones
+de targeting controladas, no como texto libre.
+
 ### Paso 3
-Pregunta:
 
 > ¿El enunciado, la tarea o la decisión evaluada dependen claramente de un cargo específico?
 
-Si la respuesta es sí, usa `targetPosition`.
+Si sí, el perfil/cargo canónico debe poder identificarse con evidencia editorial.
 
-Valores permitidos:
+Valores docentes actuales:
 - `rector_director_rural`
 - `coordinador`
 - `docente_aula_preescolar`
@@ -53,79 +59,70 @@ Valores permitidos:
 - `docente_aula_secundaria_media`
 - `docente_orientador`
 
-## Cuándo usar solo `applicantProfile`
+## Cuándo usar un perfil/cargo específico
 
-Úsalo cuando el ítem:
-- evalúa práctica de aula general
-- sirve para múltiples niveles o grados
-- trata evaluación, planeación o inclusión de forma transversal
-- no pierde sentido si cambia el cargo puntual
+Cuando el ítem:
+- evalúa una decisión propia del cargo;
+- depende de sus funciones o posición institucional;
+- perdería precisión si se presentara como transversal;
+- tiene soporte normativo/técnico que demuestra esa especificidad.
 
-### Ejemplos típicos
-- evaluación formativa
-- planeación de aula
-- atención a la diversidad
-- convivencia inmediata en el aula
+Ejemplos:
+- coordinador ante una decisión propia de seguimiento/gestión que no corresponde al docente de aula;
+- rector/director rural en funciones directivas;
+- docente orientador en intervenciones propias de su rol.
 
-## Cuándo usar `targetPosition`
+## Cuándo NO usar un perfil/cargo específico
 
-Úsalo cuando el ítem:
-- menciona explícitamente el cargo y esa mención no es decorativa
-- evalúa una decisión propia del cargo
-- depende del lugar funcional del cargo dentro de la institución
-- perdería precisión si lo dejaras solo como perfil amplio
+No usarlo cuando:
+- el cargo es mera ambientación;
+- la decisión puede resolverla cualquier docente;
+- no cambia la clave ni la operación cognitiva;
+- se está adivinando entre preescolar, primaria o secundaria sin evidencia;
+- el único criterio es una palabra presente en el enunciado.
 
-### Ejemplos típicos
-- coordinador que integra proyectos transversales al PEI
-- rector o director rural que usa resultados institucionales para seguimiento del PEI
-- docente orientador que activa rutas o acompaña procesos socioemocionales propios de su rol
+## OPEC y perfil/cargo
 
-## Cuándo no usar `targetPosition`
+Una OPEC concreta debe mapearse a un perfil/cargo canónico. Varias OPEC pueden
+pertenecer al mismo perfil y reutilizar preguntas transversales y de perfil.
 
-No lo uses cuando:
-- el cargo aparece solo como ambientación
-- la tarea la podría resolver casi cualquier docente del mismo banco
-- el perfil específico no cambia la clave ni el razonamiento
-- estás adivinando entre preescolar, primaria o secundaria sin evidencia suficiente
+No crear una copia del reactivo por cada OPEC.
 
 ## Regla de prudencia
 
-Si dudas entre un perfil específico y uno amplio:
-- elige `applicantProfile`
-- no fuerces `targetPosition`
+Ante duda entre transversal y específico:
+- conservar el reactivo transversal;
+- documentar la afinidad como candidata si hace falta;
+- no asignar un perfil principal sin evidencia.
 
 ## Criterio por niveles de precisión
 
-### Nivel 1
-Solo taxonomía base.
+### Nivel 1 — Familia/transversal
+Ítem reusable para buena parte de la familia docente.
 
-Úsalo para ítems altamente reusables.
+### Nivel 2 — Perfil/cargo
+Ítem cuya decisión profesional depende de un cargo canónico.
 
-### Nivel 2
-Taxonomía base + `applicantProfile`.
+### Nivel 3 — OPEC
+Ítem dependiente de una función, entidad, convocatoria o requisito específico de
+una OPEC concreta.
 
-Úsalo para ítems claramente orientados a una familia profesional, pero no a un cargo único.
+## Reglas de simplicidad
 
-### Nivel 3
-Taxonomía base + `applicantProfile` + `targetPosition`.
-
-Úsalo solo cuando la evidencia editorial del cargo es fuerte.
-
-## Reglas para mantener la estructura simple
-
-- no hagas obligatoria la segunda capa para todo el banco
-- no uses más de 2 o 3 `tags` por ítem
-- no inventes nuevos nombres de perfiles fuera del catálogo
-- no sustituyas `area`, `subarea` o `competency` por metadatos de cargo
-- si el ítem es transversal, déjalo transversal
+- no hacer obligatoria la especificidad para todo reactivo;
+- no inventar nuevos nombres fuera del catálogo controlado;
+- no sustituir taxonomía por cargo;
+- no inferir OPEC/perfil automáticamente desde texto;
+- no duplicar preguntas para representar múltiples afinidades;
+- usar relaciones many-to-many en la evolución persistente.
 
 ## Recomendación operativa final
 
-Cuando el equipo redacte o revise un ítem, cierre esta mini secuencia:
+Al redactar o revisar un ítem:
 
-1. ¿Cuál es el eje cognitivo del ítem?
-2. ¿Aporta algo clasificarlo por familia profesional?
-3. ¿Aporta algo clasificarlo por cargo exacto?
-4. Si no aporta, no se agrega.
-
-Ese criterio mantiene la segunda capa útil, pero liviana.
+1. ¿Qué constructo evalúa?
+2. ¿Es común a la familia?
+3. ¿Depende de un perfil/cargo?
+4. ¿Depende de una OPEC concreta?
+5. ¿Qué fuente demuestra esa aplicabilidad?
+6. Si la especificidad no aporta valor o no está soportada, no se agrega.
