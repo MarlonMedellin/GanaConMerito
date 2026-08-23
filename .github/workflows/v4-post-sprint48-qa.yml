@@ -1,13 +1,8 @@
-name: V4 A+B remediation QA
+name: V4 Phase C2 selective QA
 
 on:
   push:
-    branches: [remediate-v4-phase-a-b-20260822]
-    paths:
-      - 'content/question-bank-v4/**'
-      - '.github/workflows/v4-post-sprint48-qa.yml'
-  pull_request:
-    branches: [audit-v4-phase-a-b-adversarial-20260822]
+    branches: [v4-phase-c2-selective-20260822]
     paths:
       - 'content/question-bank-v4/**'
       - '.github/workflows/v4-post-sprint48-qa.yml'
@@ -23,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Validate remediated V4 corpus read-only
+      - name: Validate Phase C2 corpus read-only
         shell: bash
         run: |
           python - <<'PY'
@@ -31,15 +26,16 @@ jobs:
 
           ROOT = pathlib.Path('content/question-bank-v4')
           ITEMS = ROOT / 'items' / 'docentes'
-          SNAP = ROOT / 'COVERAGE-AFTER-A-B-REMEDIATION-20260822.json'
+          SNAP = ROOT / 'COVERAGE-AFTER-PHASE-C2-20260822.json'
           EXPECTED = 248
-          REJECTED = {
+          BASE = '68dfae07baaafa59e00fa7a085ac4b903b62aa07'
+          REJECTED_RETIRED = {
             'DOC-001206','DOC-001218','DOC-001220','DOC-001222','DOC-001225','DOC-001227',
             'DOC-001228','DOC-001230','DOC-001232','DOC-001246','DOC-001249','DOC-001250',
-            'DOC-001251','DOC-001252','DOC-001253','DOC-001254','DOC-001255','DOC-001290'}
-          RETIRED = {'DOC-001258','DOC-001259','DOC-001261','DOC-001265','DOC-001268','DOC-001291','DOC-001294'}
+            'DOC-001251','DOC-001252','DOC-001253','DOC-001254','DOC-001255','DOC-001258',
+            'DOC-001259','DOC-001261','DOC-001265','DOC-001268','DOC-001290','DOC-001291','DOC-001294'}
           REPLACEMENTS = {f'DOC-{n:06d}' for n in range(1295,1305)}
-          PRESERVE = {'DOC-001104','DOC-001110','DOC-001292','DOC-001293'}
+          C1_ACTIVE = {'DOC-001104','DOC-001110','DOC-001292','DOC-001293'}
 
           def load(path):
             def hook(pairs):
@@ -64,7 +60,7 @@ jobs:
           required = {'id','scope','domain','topic','competency','questionType','cognitiveLevel','context','stem','options','correctAnswer','explanations','hint','learningNote','source','estimatedDifficulty'}
           coverage = {k: collections.Counter() for k in ['domains','topics','competencies','questionTypes','cognitiveLevels','estimatedDifficulty']}
           cmap = {'domain':'domains','topic':'topics','competency':'competencies','questionType':'questionTypes','cognitiveLevel':'cognitiveLevels','estimatedDifficulty':'estimatedDifficulty'}
-          keys = collections.Counter(); rows=[]; seen=set(); errors=[]; outliers=[]; new_outliers=[]
+          keys = collections.Counter(); rows=[]; seen=set(); errors=[]; outliers=[]
           files = sorted(ITEMS.glob('DOC-*.json'))
 
           for path in files:
@@ -89,16 +85,13 @@ jobs:
             for f in cmap: coverage[cmap[f]][obj[f]] += 1
             key = obj['correctAnswer']; keys[key] += 1; rows.append((num(qid),qid,key))
             lens={k:words(v) for k,v in obj['options'].items()}; med=statistics.median(lens[k] for k in 'ABCD' if k!=key); ratio=lens[key]/med if med else 999
-            if ratio > 1.65:
-              rec={'id':qid,'ratio':round(ratio,3)}; outliers.append(rec)
-              if qid in REPLACEMENTS: new_outliers.append(rec)
+            if ratio > 1.65: outliers.append({'id':qid,'ratio':round(ratio,3)})
 
           if len(files) != EXPECTED: errors.append(f'count {len(files)} != {EXPECTED}')
-          if REJECTED & seen: errors.append(f'rejected active: {sorted(REJECTED & seen)}')
-          if RETIRED & seen: errors.append(f'historical retired active: {sorted(RETIRED & seen)}')
-          if REPLACEMENTS - seen: errors.append(f'replacements missing: {sorted(REPLACEMENTS-seen)}')
-          if PRESERVE - seen: errors.append(f'C1/preserved missing: {sorted(PRESERVE-seen)}')
-          if new_outliers: errors.append(f'replacement length outliers: {new_outliers}')
+          if REJECTED_RETIRED & seen: errors.append(f'retired active: {sorted(REJECTED_RETIRED & seen)}')
+          if REPLACEMENTS - seen: errors.append(f'A+B replacements missing: {sorted(REPLACEMENTS-seen)}')
+          if C1_ACTIVE - seen: errors.append(f'C1 active missing: {sorted(C1_ACTIVE-seen)}')
+          if 'DOC-001305' in seen: errors.append('DOC-001305 unexpectedly consumed although C2 approved zero items')
 
           rows.sort(); max_streak=0; streak=0; prev=None; start=None; span=None
           for _,qid,key in rows:
@@ -106,30 +99,42 @@ jobs:
             else: streak=1; start=qid; prev=key
             if streak > max_streak: max_streak=streak; span=[start,qid,key]
           cov={k:dict(sorted(v.items())) for k,v in coverage.items()}; kd={k:keys.get(k,0) for k in 'ABCD'}
-          metrics={'itemCount':len(files),'keyDistribution':kd,'maxKeyStreak':max_streak,'maxKeyStreakSpan':span,'lengthOutlierCount':len(outliers),'replacementLengthOutlierCount':len(new_outliers),'coverage':cov}
+          metrics={'itemCount':len(files),'keyDistribution':kd,'maxKeyStreak':max_streak,'maxKeyStreakSpan':span,'lengthOutlierCount':len(outliers),'coverage':cov}
 
-          if not SNAP.exists(): errors.append('remediation snapshot missing')
+          if not SNAP.exists(): errors.append('C2 snapshot missing')
           else:
             snap=load(SNAP)
-            for f,actual in [('itemCount',len(files)),('keyDistribution',kd),('maxKeyStreak',max_streak),('coverage',cov)]:
-              if snap.get(f) != actual: errors.append(f'snapshot {f} mismatch')
-          for f in ['AUDIT-PHASE-A-B-READVERSARIAL-20260822.json','AUDIT-PHASE-A-B-READVERSARIAL-20260822.md']:
-            if not (ROOT/f).exists(): errors.append(f'historical audit missing: {f}')
+            expected_fields={
+              'baselineCount':EXPECTED,
+              'newApprovedCount':0,
+              'finalItemCount':len(files),
+              'keyDistribution':kd,
+              'maxKeyStreak':max_streak,
+              'domains':cov['domains'],
+              'topics':cov['topics'],
+              'competencies':cov['competencies'],
+              'questionTypes':cov['questionTypes'],
+              'cognitiveLevels':cov['cognitiveLevels'],
+              'estimatedDifficulty':cov['estimatedDifficulty'],
+              'newIds':[]}
+            for f,actual in expected_fields.items():
+              if snap.get(f) != actual: errors.append(f'C2 snapshot {f} mismatch')
+
+          required_docs=['EXPANSION-PHASE-C2-SELECTIVE-20260822.md','AUDIT-PHASE-C2-20260822.json','AUDIT-PHASE-C2-20260822.md','COVERAGE-AFTER-PHASE-C2-20260822.json']
+          for f in required_docs:
+            if not (ROOT/f).exists(): errors.append(f'C2 document missing: {f}')
 
           try:
-            base='origin/audit-v4-phase-a-b-adversarial-20260822'
-            changed=subprocess.check_output(['git','diff','--name-only',f'{base}...HEAD'],text=True).splitlines()
-            exact={'.github/workflows/v4-post-sprint48-qa.yml','content/question-bank-v4/legacy-processing-register.csv','content/question-bank-v4/REMEDIATION-PHASE-A-B-READVERSARIAL-20260822.md','content/question-bank-v4/COVERAGE-AFTER-A-B-REMEDIATION-20260822.json'}
-            items={f'content/question-bank-v4/items/docentes/{x}.json' for x in REJECTED|REPLACEMENTS}
-            unexpected=sorted(set(changed)-exact-items)
-            if unexpected: errors.append(f'out-of-scope files: {unexpected}')
+            changed=subprocess.check_output(['git','diff','--name-only',f'{BASE}...HEAD'],text=True).splitlines()
             forbidden=[x for x in changed if x.startswith(('src/','scripts/','supabase/'))]
             if forbidden: errors.append(f'forbidden paths: {forbidden}')
+            item_changes=[x for x in changed if x.startswith('content/question-bank-v4/items/docentes/')]
+            if item_changes: errors.append(f'C2 zero-item close must not modify active item files: {item_changes}')
           except Exception as e: errors.append(f'scope diff check failed: {e}')
 
           print('FINAL_METRICS_JSON='+json.dumps(metrics,ensure_ascii=False,sort_keys=True))
           if errors:
             for e in errors: print('ERROR:',e)
             sys.exit(1)
-          print('QA_OK: remediated corpus is internally consistent and read-only checks passed')
+          print('QA_OK: Phase C2 zero-item close is internally consistent; corpus recalculated from active JSON files')
           PY
