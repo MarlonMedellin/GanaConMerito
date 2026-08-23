@@ -41,7 +41,7 @@ Los temas del archivo `temas.md` se usaron como mapa de oportunidades, especialm
 
 Se aplicaron los gates de fábrica y auditoría V4: fuente, constructo, taxonomía, respuesta única, distractores profesionales, pistas lingüísticas, demanda cognitiva y control de duplicación conceptual.
 
-Resultado de `COVERAGE-AFTER-BATCH-03-20260822.json`:
+Resultado de `history/snapshots/COVERAGE-AFTER-BATCH-03-20260822.json`:
 
 - 100 reactivos V4 válidos.
 - 0 errores estructurales o taxonómicos.
