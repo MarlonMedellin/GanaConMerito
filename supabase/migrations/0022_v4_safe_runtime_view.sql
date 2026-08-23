@@ -1,7 +1,7 @@
 begin;
 
-drop view if exists public.v_question_bank_v4_active;
-create view public.v_question_bank_v4_active with (security_invoker = true) as
+-- Preserve dependent practice/answered views while tightening the active view.
+create or replace view public.v_question_bank_v4_active with (security_invoker = true) as
 select ib.id, ib.content_id, ib.slug, ib.title, ib.area, ib.subarea, ib.competency,
   ib.opec_id, ib.editorial_scope, ib.topic_code, ib.question_type, ib.cognitive_level,
   ib.difficulty, ib.stem, ib.status, ib.is_published, ib.is_active, ib.source_type,

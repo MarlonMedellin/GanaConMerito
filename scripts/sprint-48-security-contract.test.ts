@@ -19,6 +19,14 @@ test("Sprint 48 migration removes direct answer-bank access from client roles", 
   assert.match(migration, /grant execute on function public\.advance_session_atomic[\s\S]+to service_role/i);
 });
 
+test("Sprint 48 safe V4 view preserves its dependent runtime views", async () => {
+  const migration = await readRepoFile("supabase/migrations/0022_v4_safe_runtime_view.sql");
+
+  assert.match(migration, /create or replace view public\.v_question_bank_v4_active/i);
+  assert.doesNotMatch(migration, /drop view(?: if exists)? public\.v_question_bank_v4_active/i);
+  assert.match(migration, /revoke all on table public\.v_question_bank_v4_active from public, anon, authenticated/i);
+});
+
 test("pre-answer route does not select or serialize answer-bearing fields", async () => {
   const route = await readRepoFile("src/app/api/session/item/route.ts");
   const sessionTypes = await readRepoFile("src/types/session.ts");
