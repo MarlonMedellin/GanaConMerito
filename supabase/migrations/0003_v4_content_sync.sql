@@ -41,15 +41,28 @@ declare
   v_release_id uuid;
   v_row jsonb;
   v_target jsonb;
-  v_existing_hash text;
   v_effective_hash text;
-  v_changed integer := 0;
   v_unchanged integer := 0;
   v_archived integer := 0;
   v_removed integer := 0;
   v_count integer := 0;
   v_opec_id uuid;
   v_safe_error text;
+  v_prior_success boolean := false;
+  v_writes integer := 0;
+  v_repaired integer := 0;
+  v_release_writes integer := 0;
+  v_family_writes integer := 0;
+  v_profile_writes integer := 0;
+  v_opec_writes integer := 0;
+  v_question_writes integer := 0;
+  v_option_writes integer := 0;
+  v_family_target_writes integer := 0;
+  v_profile_target_writes integer := 0;
+  v_opec_target_writes integer := 0;
+  v_knowledge_source_writes integer := 0;
+  v_knowledge_target_writes integer := 0;
+  v_item_source_writes integer := 0;
 begin
   select instance_id into v_opec_id
   from public.runtime_metadata
@@ -79,6 +92,11 @@ begin
     end if;
   end loop;
 
+  select exists (
+    select 1 from public.content_sync_runs
+    where plan_hash = p_plan_hash and status in ('succeeded', 'verified')
+  ) into v_prior_success;
+
   insert into public.content_sync_runs (
     git_sha, manifest_hash, corpus_hash, ids_hash, targeting_catalog_hash,
     opec_catalog_hash, knowledge_catalog_hash, plan_hash, status, actor,
@@ -92,38 +110,46 @@ begin
 
   begin
     for v_row in select value from jsonb_array_elements(p_plan #> '{entities,families}') loop
-      select content_hash into v_existing_hash from public.target_families where code = v_row->>'code';
       insert into public.target_families (code, name, description, is_active, content_hash, synced_at)
       values (v_row->>'code', v_row->>'name', v_row->>'description', (v_row->>'isActive')::boolean, v_row->>'contentHash', now())
       on conflict (code) do update set name = excluded.name, description = excluded.description,
         is_active = excluded.is_active, content_hash = excluded.content_hash, synced_at = now()
-      where public.target_families.content_hash is distinct from excluded.content_hash;
+      where public.target_families.name is distinct from excluded.name
+         or public.target_families.description is distinct from excluded.description
+         or public.target_families.is_active is distinct from excluded.is_active
+         or public.target_families.content_hash is distinct from excluded.content_hash;
       get diagnostics v_count = row_count;
-      if v_count = 0 then v_unchanged := v_unchanged + 1; else v_changed := v_changed + 1; end if;
+      v_family_writes := v_family_writes + v_count;
+      if v_count = 0 then v_unchanged := v_unchanged + 1; end if;
     end loop;
 
     update public.target_families set is_active = false
     where code not in (select value from jsonb_array_elements_text(p_plan #> '{entityIds,families}')) and is_active;
-    get diagnostics v_count = row_count; v_archived := v_archived + v_count;
+    get diagnostics v_count = row_count;
+    v_family_writes := v_family_writes + v_count;
+    v_archived := v_archived + v_count;
 
     for v_row in select value from jsonb_array_elements(p_plan #> '{entities,profiles}') loop
-      select content_hash into v_existing_hash from public.target_profiles where code = v_row->>'code';
       insert into public.target_profiles (code, family_code, name, is_active, content_hash, synced_at)
       values (v_row->>'code', v_row->>'familyCode', v_row->>'name', (v_row->>'isActive')::boolean, v_row->>'contentHash', now())
       on conflict (code) do update set family_code = excluded.family_code, name = excluded.name,
         is_active = excluded.is_active, content_hash = excluded.content_hash, synced_at = now()
-      where public.target_profiles.content_hash is distinct from excluded.content_hash;
+      where public.target_profiles.family_code is distinct from excluded.family_code
+         or public.target_profiles.name is distinct from excluded.name
+         or public.target_profiles.is_active is distinct from excluded.is_active
+         or public.target_profiles.content_hash is distinct from excluded.content_hash;
       get diagnostics v_count = row_count;
-      if v_count = 0 then v_unchanged := v_unchanged + 1; else v_changed := v_changed + 1; end if;
+      v_profile_writes := v_profile_writes + v_count;
+      if v_count = 0 then v_unchanged := v_unchanged + 1; end if;
     end loop;
 
     update public.target_profiles set is_active = false
     where code not in (select value from jsonb_array_elements_text(p_plan #> '{entityIds,profiles}')) and is_active;
-    get diagnostics v_count = row_count; v_archived := v_archived + v_count;
+    get diagnostics v_count = row_count;
+    v_profile_writes := v_profile_writes + v_count;
+    v_archived := v_archived + v_count;
 
     for v_row in select value from jsonb_array_elements(p_plan #> '{entities,opecs}') loop
-      select content_hash into v_existing_hash from public.opec_catalog
-      where source_system = v_row->>'sourceSystem' and external_opec_id = v_row->>'externalOpecId';
       insert into public.opec_catalog (
         source_system, external_opec_id, family_code, profile_code, convocation_code,
         entity_name, position_name, source_reference, source_url,
@@ -139,14 +165,27 @@ begin
         position_name = excluded.position_name, source_reference = excluded.source_reference,
         source_url = excluded.source_url, verification_status = 'verified', is_active = excluded.is_active,
         metadata = excluded.metadata, content_hash = excluded.content_hash, synced_at = now()
-      where public.opec_catalog.content_hash is distinct from excluded.content_hash;
+      where public.opec_catalog.family_code is distinct from excluded.family_code
+         or public.opec_catalog.profile_code is distinct from excluded.profile_code
+         or public.opec_catalog.convocation_code is distinct from excluded.convocation_code
+         or public.opec_catalog.entity_name is distinct from excluded.entity_name
+         or public.opec_catalog.position_name is distinct from excluded.position_name
+         or public.opec_catalog.source_reference is distinct from excluded.source_reference
+         or public.opec_catalog.source_url is distinct from excluded.source_url
+         or public.opec_catalog.verification_status is distinct from 'verified'
+         or public.opec_catalog.is_active is distinct from excluded.is_active
+         or public.opec_catalog.metadata is distinct from excluded.metadata
+         or public.opec_catalog.content_hash is distinct from excluded.content_hash;
       get diagnostics v_count = row_count;
-      if v_count = 0 then v_unchanged := v_unchanged + 1; else v_changed := v_changed + 1; end if;
+      v_opec_writes := v_opec_writes + v_count;
+      if v_count = 0 then v_unchanged := v_unchanged + 1; end if;
     end loop;
 
     update public.opec_catalog set is_active = false
     where (source_system || ':' || external_opec_id) not in (select value from jsonb_array_elements_text(p_plan #> '{entityIds,opecs}')) and is_active;
-    get diagnostics v_count = row_count; v_archived := v_archived + v_count;
+    get diagnostics v_count = row_count;
+    v_opec_writes := v_opec_writes + v_count;
+    v_archived := v_archived + v_count;
 
     insert into public.question_releases (
       bank, git_sha, manifest_source_sha, manifest_hash, corpus_hash, ids_hash, expected_item_count
@@ -158,10 +197,20 @@ begin
       git_sha = excluded.git_sha, manifest_source_sha = excluded.manifest_source_sha,
       corpus_hash = excluded.corpus_hash, ids_hash = excluded.ids_hash,
       expected_item_count = excluded.expected_item_count
-    returning id into v_release_id;
+    where public.question_releases.git_sha is distinct from excluded.git_sha
+       or public.question_releases.manifest_source_sha is distinct from excluded.manifest_source_sha
+       or public.question_releases.corpus_hash is distinct from excluded.corpus_hash
+       or public.question_releases.ids_hash is distinct from excluded.ids_hash
+       or public.question_releases.expected_item_count is distinct from excluded.expected_item_count;
+    get diagnostics v_count = row_count;
+    v_release_writes := v_release_writes + v_count;
+    if v_count = 0 then v_unchanged := v_unchanged + 1; end if;
+
+    select id into strict v_release_id from public.question_releases
+    where bank = p_plan #>> '{release,bank}'
+      and manifest_hash = p_plan #>> '{hashes,manifest}';
 
     for v_row in select value from jsonb_array_elements(p_plan #> '{entities,questions}') loop
-      select content_hash into v_existing_hash from public.questions where id = v_row->>'id';
       insert into public.questions (
         id, release_id, domain, topic, competency, question_type, cognitive_level,
         estimated_difficulty, editorial_scope, editorial_opec_id, context, stem,
@@ -208,6 +257,8 @@ begin
          or public.questions.source_type is distinct from excluded.source_type
          or public.questions.source_path is distinct from excluded.source_path;
       get diagnostics v_count = row_count;
+      v_question_writes := v_question_writes + v_count;
+      if v_count = 0 then v_unchanged := v_unchanged + 1; end if;
 
       for v_target in select value from jsonb_array_elements(v_row->'options') loop
         insert into public.question_options (question_id, option_key, option_text, content_hash)
@@ -215,32 +266,96 @@ begin
         on conflict (question_id, option_key) do update set option_text = excluded.option_text, content_hash = excluded.content_hash
         where public.question_options.content_hash is distinct from excluded.content_hash
            or public.question_options.option_text is distinct from excluded.option_text;
+        get diagnostics v_count = row_count;
+        v_option_writes := v_option_writes + v_count;
+        if v_count = 0 then v_unchanged := v_unchanged + 1; end if;
       end loop;
       delete from public.question_options
       where question_id = v_row->>'id'
         and option_key not in (select value->>'key' from jsonb_array_elements(v_row->'options'));
-
-      if v_count = 0 then v_unchanged := v_unchanged + 1; else v_changed := v_changed + 1; end if;
+      get diagnostics v_count = row_count;
+      v_option_writes := v_option_writes + v_count;
+      v_removed := v_removed + v_count;
     end loop;
 
     update public.questions set sync_state = 'archived', updated_at = now()
     where id not in (select value from jsonb_array_elements_text(p_plan #> '{entityIds,questions}')) and sync_state = 'current';
-    get diagnostics v_count = row_count; v_archived := v_archived + v_count;
+    get diagnostics v_count = row_count;
+    v_question_writes := v_question_writes + v_count;
+    v_archived := v_archived + v_count;
 
-    delete from public.item_target_families where content_hash is not null;
-    delete from public.item_target_profiles where content_hash is not null;
-    delete from public.item_opec_targets where content_hash is not null;
     for v_row in select value from jsonb_array_elements(p_plan #> '{entities,itemTargets}') loop
       if v_row->>'targetType' = 'family' then
-        insert into public.item_target_families values (v_row->>'questionId', v_row->>'familyCode', v_row->'evidence', v_row->>'contentHash');
+        insert into public.item_target_families (question_id, family_code, evidence, content_hash)
+        values (v_row->>'questionId', v_row->>'familyCode', v_row->'evidence', v_row->>'contentHash')
+        on conflict (question_id, family_code) do update set
+          evidence = excluded.evidence, content_hash = excluded.content_hash
+        where public.item_target_families.evidence is distinct from excluded.evidence
+           or public.item_target_families.content_hash is distinct from excluded.content_hash;
+        get diagnostics v_count = row_count;
+        v_family_target_writes := v_family_target_writes + v_count;
+        if v_count = 0 then v_unchanged := v_unchanged + 1; end if;
       elsif v_row->>'targetType' = 'profile' then
-        insert into public.item_target_profiles values (v_row->>'questionId', v_row->>'profileCode', v_row->'evidence', v_row->>'contentHash');
+        insert into public.item_target_profiles (question_id, profile_code, evidence, content_hash)
+        values (v_row->>'questionId', v_row->>'profileCode', v_row->'evidence', v_row->>'contentHash')
+        on conflict (question_id, profile_code) do update set
+          evidence = excluded.evidence, content_hash = excluded.content_hash
+        where public.item_target_profiles.evidence is distinct from excluded.evidence
+           or public.item_target_profiles.content_hash is distinct from excluded.content_hash;
+        get diagnostics v_count = row_count;
+        v_profile_target_writes := v_profile_target_writes + v_count;
+        if v_count = 0 then v_unchanged := v_unchanged + 1; end if;
       elsif v_row->>'targetType' = 'opec' then
         select id into v_opec_id from public.opec_catalog where source_system = v_row->>'sourceSystem' and external_opec_id = v_row->>'externalOpecId';
-        insert into public.item_opec_targets values (v_row->>'questionId', v_opec_id, v_row->'evidence', v_row->>'contentHash');
+        insert into public.item_opec_targets (question_id, opec_id, evidence, content_hash)
+        values (v_row->>'questionId', v_opec_id, v_row->'evidence', v_row->>'contentHash')
+        on conflict (question_id, opec_id) do update set
+          evidence = excluded.evidence, content_hash = excluded.content_hash
+        where public.item_opec_targets.evidence is distinct from excluded.evidence
+           or public.item_opec_targets.content_hash is distinct from excluded.content_hash;
+        get diagnostics v_count = row_count;
+        v_opec_target_writes := v_opec_target_writes + v_count;
+        if v_count = 0 then v_unchanged := v_unchanged + 1; end if;
       else raise exception 'INVALID_ITEM_TARGET_TYPE';
       end if;
     end loop;
+
+    delete from public.item_target_families persisted
+    where not exists (
+      select 1 from jsonb_array_elements(p_plan #> '{entities,itemTargets}') planned
+      where planned->>'targetType' = 'family'
+        and planned->>'questionId' = persisted.question_id
+        and planned->>'familyCode' = persisted.family_code
+    );
+    get diagnostics v_count = row_count;
+    v_family_target_writes := v_family_target_writes + v_count;
+    v_removed := v_removed + v_count;
+
+    delete from public.item_target_profiles persisted
+    where not exists (
+      select 1 from jsonb_array_elements(p_plan #> '{entities,itemTargets}') planned
+      where planned->>'targetType' = 'profile'
+        and planned->>'questionId' = persisted.question_id
+        and planned->>'profileCode' = persisted.profile_code
+    );
+    get diagnostics v_count = row_count;
+    v_profile_target_writes := v_profile_target_writes + v_count;
+    v_removed := v_removed + v_count;
+
+    delete from public.item_opec_targets persisted
+    where not exists (
+      select 1
+      from jsonb_array_elements(p_plan #> '{entities,itemTargets}') planned
+      join public.opec_catalog planned_opec
+        on planned_opec.source_system = planned->>'sourceSystem'
+       and planned_opec.external_opec_id = planned->>'externalOpecId'
+      where planned->>'targetType' = 'opec'
+        and planned->>'questionId' = persisted.question_id
+        and planned_opec.id = persisted.opec_id
+    );
+    get diagnostics v_count = row_count;
+    v_opec_target_writes := v_opec_target_writes + v_count;
+    v_removed := v_removed + v_count;
 
     for v_row in select value from jsonb_array_elements(p_plan #> '{entities,knowledgeSources}') loop
       insert into public.knowledge_sources (
@@ -259,13 +374,24 @@ begin
         last_checked_at = excluded.last_checked_at, source_system = excluded.source_system,
         source_url = excluded.source_url, repo_path = excluded.repo_path, locator = excluded.locator,
         metadata = excluded.metadata, content_hash = excluded.content_hash, synced_at = now()
-      where public.knowledge_sources.content_hash is distinct from excluded.content_hash;
+      where public.knowledge_sources.source_type is distinct from excluded.source_type
+         or public.knowledge_sources.title is distinct from excluded.title
+         or public.knowledge_sources.reference is distinct from excluded.reference
+         or public.knowledge_sources.issuer_or_author is distinct from excluded.issuer_or_author
+         or public.knowledge_sources.jurisdiction is distinct from excluded.jurisdiction
+         or public.knowledge_sources.verification_status is distinct from 'verified'
+         or public.knowledge_sources.verified_at is distinct from excluded.verified_at
+         or public.knowledge_sources.last_checked_at is distinct from excluded.last_checked_at
+         or public.knowledge_sources.source_system is distinct from excluded.source_system
+         or public.knowledge_sources.source_url is distinct from excluded.source_url
+         or public.knowledge_sources.repo_path is distinct from excluded.repo_path
+         or public.knowledge_sources.locator is distinct from excluded.locator
+         or public.knowledge_sources.metadata is distinct from excluded.metadata
+         or public.knowledge_sources.content_hash is distinct from excluded.content_hash;
+      get diagnostics v_count = row_count;
+      v_knowledge_source_writes := v_knowledge_source_writes + v_count;
+      if v_count = 0 then v_unchanged := v_unchanged + 1; end if;
     end loop;
-    delete from public.knowledge_sources
-    where source_id not in (select value from jsonb_array_elements_text(p_plan #> '{entityIds,knowledgeSources}'));
-    get diagnostics v_count = row_count; v_removed := v_removed + v_count;
-
-    delete from public.knowledge_source_targets where content_hash is not null;
     for v_row in select value from jsonb_array_elements(p_plan #> '{entities,knowledgeTargets}') loop
       v_opec_id := null;
       if v_row->>'targetType' = 'opec' then
@@ -276,23 +402,107 @@ begin
       ) values (
         v_row->>'sourceId', v_row->>'targetType', v_row->>'familyCode', v_row->>'profileCode', v_opec_id,
         v_row->>'relevance', v_row->>'locator', v_row->>'reason', v_row->>'contentHash'
-      );
+      ) on conflict (source_id, target_type, content_hash) do update set
+        family_code = excluded.family_code, profile_code = excluded.profile_code,
+        opec_id = excluded.opec_id, relevance = excluded.relevance,
+        locator = excluded.locator, reason = excluded.reason
+      where public.knowledge_source_targets.family_code is distinct from excluded.family_code
+         or public.knowledge_source_targets.profile_code is distinct from excluded.profile_code
+         or public.knowledge_source_targets.opec_id is distinct from excluded.opec_id
+         or public.knowledge_source_targets.relevance is distinct from excluded.relevance
+         or public.knowledge_source_targets.locator is distinct from excluded.locator
+         or public.knowledge_source_targets.reason is distinct from excluded.reason;
+      get diagnostics v_count = row_count;
+      v_knowledge_target_writes := v_knowledge_target_writes + v_count;
+      if v_count = 0 then v_unchanged := v_unchanged + 1; end if;
     end loop;
 
-    delete from public.item_source_links where content_hash is not null;
+    delete from public.knowledge_source_targets persisted
+    where not exists (
+      select 1 from jsonb_array_elements(p_plan #> '{entities,knowledgeTargets}') planned
+      where planned->>'sourceId' = persisted.source_id
+        and planned->>'targetType' = persisted.target_type
+        and planned->>'contentHash' = persisted.content_hash
+    );
+    get diagnostics v_count = row_count;
+    v_knowledge_target_writes := v_knowledge_target_writes + v_count;
+    v_removed := v_removed + v_count;
+
     for v_row in select value from jsonb_array_elements(p_plan #> '{entities,itemSources}') loop
       insert into public.item_source_links (question_id, source_id, relation_type, locator, content_hash)
-      values (v_row->>'questionId', v_row->>'sourceId', v_row->>'relationType', v_row->>'locator', v_row->>'contentHash');
+      values (v_row->>'questionId', v_row->>'sourceId', v_row->>'relationType', v_row->>'locator', v_row->>'contentHash')
+      on conflict (question_id, source_id, relation_type) do update set
+        locator = excluded.locator, content_hash = excluded.content_hash
+      where public.item_source_links.locator is distinct from excluded.locator
+         or public.item_source_links.content_hash is distinct from excluded.content_hash;
+      get diagnostics v_count = row_count;
+      v_item_source_writes := v_item_source_writes + v_count;
+      if v_count = 0 then v_unchanged := v_unchanged + 1; end if;
     end loop;
+
+    delete from public.item_source_links persisted
+    where not exists (
+      select 1 from jsonb_array_elements(p_plan #> '{entities,itemSources}') planned
+      where planned->>'questionId' = persisted.question_id
+        and planned->>'sourceId' = persisted.source_id
+        and planned->>'relationType' = persisted.relation_type
+    );
+    get diagnostics v_count = row_count;
+    v_item_source_writes := v_item_source_writes + v_count;
+    v_removed := v_removed + v_count;
+
+    delete from public.knowledge_sources
+    where source_id not in (select value from jsonb_array_elements_text(p_plan #> '{entityIds,knowledgeSources}'));
+    get diagnostics v_count = row_count;
+    v_knowledge_source_writes := v_knowledge_source_writes + v_count;
+    v_removed := v_removed + v_count;
+
+    v_writes := v_release_writes + v_family_writes + v_profile_writes + v_opec_writes
+      + v_question_writes + v_option_writes + v_family_target_writes
+      + v_profile_target_writes + v_opec_target_writes + v_knowledge_source_writes
+      + v_knowledge_target_writes + v_item_source_writes;
+    v_repaired := case when v_prior_success then v_writes else 0 end;
 
     update public.content_sync_runs set
       status = 'succeeded', finished_at = now(),
-      counts = jsonb_build_object('changed', v_changed, 'unchanged', v_unchanged, 'archived', v_archived, 'removed', v_removed)
+      counts = jsonb_build_object(
+        'changed', v_writes, 'writes', v_writes, 'repaired', v_repaired,
+        'unchanged', v_unchanged, 'archived', v_archived, 'removed', v_removed,
+        'writeCounts', jsonb_build_object(
+          'question_releases', v_release_writes,
+          'target_families', v_family_writes,
+          'target_profiles', v_profile_writes,
+          'opec_catalog', v_opec_writes,
+          'questions', v_question_writes,
+          'question_options', v_option_writes,
+          'item_target_families', v_family_target_writes,
+          'item_target_profiles', v_profile_target_writes,
+          'item_opec_targets', v_opec_target_writes,
+          'knowledge_sources', v_knowledge_source_writes,
+          'knowledge_source_targets', v_knowledge_target_writes,
+          'item_source_links', v_item_source_writes
+        )
+      )
     where id = v_run_id;
 
     return jsonb_build_object(
-      'executionId', v_run_id, 'status', 'succeeded', 'changed', v_changed,
-      'unchanged', v_unchanged, 'archived', v_archived, 'removed', v_removed
+      'executionId', v_run_id, 'status', 'succeeded',
+      'changed', v_writes, 'writes', v_writes, 'repaired', v_repaired,
+      'unchanged', v_unchanged, 'archived', v_archived, 'removed', v_removed,
+      'writeCounts', jsonb_build_object(
+        'question_releases', v_release_writes,
+        'target_families', v_family_writes,
+        'target_profiles', v_profile_writes,
+        'opec_catalog', v_opec_writes,
+        'questions', v_question_writes,
+        'question_options', v_option_writes,
+        'item_target_families', v_family_target_writes,
+        'item_target_profiles', v_profile_target_writes,
+        'item_opec_targets', v_opec_target_writes,
+        'knowledge_sources', v_knowledge_source_writes,
+        'knowledge_source_targets', v_knowledge_target_writes,
+        'item_source_links', v_item_source_writes
+      )
     );
   exception when others then
     v_safe_error := left(sqlstate || ':' || regexp_replace(sqlerrm, '[\r\n]+', ' ', 'g'), 500);

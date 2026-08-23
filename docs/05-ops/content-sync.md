@@ -53,8 +53,10 @@ Cada plan registra:
 
 La aplicación SQL vuelve a comprobar baseline, instancia, hash aprobado y hash
 efectivo antes de escribir. Preguntas ausentes quedan archivadas; catálogos
-ausentes se desactivan; relaciones se reconcilian. Todo el contenido se aplica en
-un bloque transaccional. Un fallo revierte el lote y conserva solo un registro de
+ausentes se desactivan; relaciones se reconcilian por delta. Una fila idéntica no
+se actualiza; solo se insertan o actualizan diferencias y solo se eliminan
+relaciones que dejaron de figurar en el plan. Todo el contenido se aplica en un
+bloque transaccional. Un fallo revierte el lote y conserva solo un registro de
 ejecución fallida con error saneado.
 
 ## Criterios de promoción editorial
@@ -72,11 +74,18 @@ verificadas producen cero filas de forma deliberada hasta que exista evidencia.
 
 ## Idempotencia y recuperación de drift
 
-Repetir el mismo snapshot sobre una base sincronizada debe devolver `changed = 0`
-y `drift = 0`. El comparador recalcula el estado materializado, no confía solo en
-hashes almacenados; por ello detecta cambios manuales y `apply` restaura el canon.
+Repetir el mismo snapshot sobre una base sincronizada debe devolver `changed = 0`,
+`writes = 0`, `repaired = 0` y `drift = 0`, sin `INSERT`, `UPDATE` ni `DELETE` en
+ninguna tabla gestionada. El comparador recalcula el estado materializado, no
+confía solo en hashes almacenados; por ello detecta cambios manuales y `apply`
+restaura el canon. Cada aplicación informa `writeCounts` por tabla. Si repara
+drift después de una ejecución previa, las escrituras aparecen también en
+`repaired`, de modo que una reparación material nunca se reporta como no-op.
 
-Las pruebas locales inyectan hash/plan incorrecto, ítem u opción ausente y fallo a
-mitad de sincronización. También cubren targeting inválido, OPEC/fuentes no
-verificadas, mapping no aprobado y target remoto equivocado mediante validadores y
-guards. Ningún caso deja un release parcialmente promovido.
+Las pruebas locales instalan auditoría transaccional temporal sobre las doce
+tablas gestionadas para demostrar cero DML en el segundo apply. También inducen y
+reparan drift en cada tabla, eliminan una relación obsoleta e inyectan hash/plan
+incorrecto, ítem u opción ausente y fallo a mitad de sincronización. Targeting
+inválido, OPEC/fuentes no verificadas, mapping no aprobado y target remoto
+equivocado se cubren mediante validadores y guards. Ningún caso deja un release
+parcialmente promovido.
