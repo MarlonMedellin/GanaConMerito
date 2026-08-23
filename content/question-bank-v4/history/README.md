@@ -8,6 +8,8 @@ No define el corte vigente. La única autoridad del corpus activo sigue siendo `
 
 El punto de entrada recomendado es [`INDEX.md`](./INDEX.md), que reconstruye la secuencia editorial y relaciona expansión, auditorías, remediaciones y snapshots.
 
+Para interpretar nombres/rutas legacy como `temas.md`, `temas(1).md` y `content/profiles/docente/` frente a la arquitectura actual, consultar [`PROVENANCE.md`](./PROVENANCE.md).
+
 ## Organización
 
 - `expansion/`: planes, lotes y cierres de expansión.
