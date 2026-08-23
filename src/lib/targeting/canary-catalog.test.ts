@@ -28,7 +28,14 @@ test("accepts only verified concrete OPEC entries", () => {
 
 test("rejects non-verified entries", () => {
   assert.throws(
-    () => parseCanaryOpecCatalog(JSON.stringify([{ ...verifiedEntry, verificationStatus: "candidate" }])) ,
+    () => parseCanaryOpecCatalog(JSON.stringify([{ ...verifiedEntry, verificationStatus: "candidate" }])),
+    /Invalid GCM_CANARY_OPEC_CATALOG_JSON/,
+  );
+});
+
+test("rejects legacy discipline-specific profile codes", () => {
+  assert.throws(
+    () => parseCanaryOpecCatalog(JSON.stringify([{ ...verifiedEntry, professionalProfileCode: "docente-matematicas" }])),
     /Invalid GCM_CANARY_OPEC_CATALOG_JSON/,
   );
 });
