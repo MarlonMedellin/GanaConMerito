@@ -3,6 +3,7 @@ import { PracticeSession } from "@/components/practice/practice-session";
 import { isLearningProfileOnboardingComplete } from "@/lib/onboarding/status";
 import { requireAuthenticatedProfile } from "@/lib/supabase/guards";
 import {
+  getCanarySessionTargetingContext,
   getCanaryTargetingSelection,
   isCanaryTargetingEnabled,
 } from "@/lib/targeting/canary-targeting-server";
@@ -25,7 +26,11 @@ export default async function PracticePage() {
   }
 
   if (isCanaryTargetingEnabled()) {
-    const canaryTargeting = await getCanaryTargetingSelection();
+    const [configuredTargeting, sessionTargeting] = await Promise.all([
+      getCanaryTargetingSelection(),
+      getCanarySessionTargetingContext(),
+    ]);
+    const canaryTargeting = configuredTargeting ?? sessionTargeting?.selection ?? null;
     if (!canaryTargeting) {
       redirect("/onboarding");
     }
