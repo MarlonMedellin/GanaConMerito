@@ -14,16 +14,21 @@ export default async function OnboardingPage() {
   const { data: learningProfile } = await supabase
     .from("learning_profiles")
     .select(
-      "target_role, exam_type, professional_profile_id, active_goal, preferred_feedback_style, active_areas, onboarding_completed",
+      "target_profile_code, target_opec_id, active_goal, preferred_feedback_style, active_areas, onboarding_completed",
     )
     .eq("profile_id", profile.id)
     .single();
 
-  const { data: professionalProfiles } = await supabase
-    .from("professional_profiles")
-    .select("id, code, name")
+  const [{ data: targetProfiles }, { data: opecs }] = await Promise.all([supabase
+    .from("target_profiles")
+    .select("code, name")
     .eq("is_active", true)
-    .order("name", { ascending: true });
+    .order("name", { ascending: true }), supabase
+    .from("opec_catalog")
+    .select("id, profile_code, position_name, external_opec_id")
+    .eq("is_active", true)
+    .eq("verification_status", "verified")
+    .order("position_name", { ascending: true })]);
 
   if (isLearningProfileOnboardingComplete(learningProfile)) {
     redirect("/practice");
@@ -43,14 +48,10 @@ export default async function OnboardingPage() {
       </section>
 
       <OnboardingForm
-        initialTargetRole={learningProfile?.target_role ?? "docente"}
-        initialExamType={learningProfile?.exam_type ?? "docente"}
-        initialProfessionalProfileId={learningProfile?.professional_profile_id ?? professionalProfiles?.[0]?.id ?? ""}
-        professionalProfiles={(professionalProfiles ?? []).map((profile) => ({
-          id: profile.id,
-          code: profile.code,
-          name: profile.name,
-        }))}
+        initialTargetProfileCode={learningProfile?.target_profile_code ?? targetProfiles?.[0]?.code ?? ""}
+        initialTargetOpecId={learningProfile?.target_opec_id ?? ""}
+        targetProfiles={targetProfiles ?? []}
+        opecs={opecs ?? []}
         initialActiveGoal={learningProfile?.active_goal ?? ""}
         initialPreferredFeedbackStyle={learningProfile?.preferred_feedback_style ?? "socratic"}
         initialActiveAreas={learningProfile?.active_areas ?? []}

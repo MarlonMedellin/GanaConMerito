@@ -48,8 +48,8 @@ test("Sprint 22 enriches question truth without duplicating refs and preserves e
     topic: "pedagogia - evaluacion",
     cognitiveIntent: "Contrastar opciones",
     expectedUserTask: "Elegir la mejor opción",
-    sourceType: "runtime_item_bank",
-    sourceRefs: ["runtime:item_bank", "custom:question-1"],
+    sourceType: "runtime_questions",
+    sourceRefs: ["runtime:questions", "custom:question-1"],
     stem: "Caso de práctica",
     options: [
       { key: "A", text: "A" },
@@ -64,10 +64,10 @@ test("Sprint 22 enriches question truth without duplicating refs and preserves e
   assert.equal(enriched.userExpectedAnswer, "Elegir la mejor opción");
   assert.match(enriched.normativeAlignmentSummary ?? "", /alineación normativa fina debe validarse/i);
   assert.deepEqual(enriched.sourceRefs, [
-    "runtime:item_bank",
+    "runtime:questions",
     "custom:question-1",
     "docs/01-product/source-truth/normative-source-truth-v1.md",
-    "runtime:professional_profiles",
+    "runtime:target_profiles",
   ]);
 });
 

@@ -1,76 +1,34 @@
-# Seguridad y autorización
+# Seguridad de la baseline V4
 
-## Base de autenticación
+**Estado:** contrato aplicado y probado en Supabase local; no verificado remoto.
 
-Se asume:
-- `profiles.auth_user_id = auth.users.id`
+## Frontera del banco
 
-## Modelo actual
+- `anon`: cero acceso a banco crudo, opciones, releases, mappings, knowledge,
+  vistas V4 y sync runs.
+- `authenticated`: el mismo cero acceso al banco; solo identidad propia,
+  learning profile, sesiones propias, estadísticas propias y catálogos públicos
+  activos/verificados de targeting.
+- `service_role`: acceso backend para selección, evaluación, Tutor y sync.
+- toda mutación editorial/sync es backend autorizado.
 
-### Usuario normal
-Puede acceder solo a:
-- su perfil
-- su learning profile
-- sus sesiones
-- sus turnos
-- sus eventos de evaluación
-- sus estadísticas
-- sus snapshots
+El DTO pre-respuesta nunca contiene clave, explicaciones, learning note o fuente
+editorial reservada. La verdad post-respuesta se consulta solo en servidor.
 
-### Admin
-Puede además:
-- insertar y actualizar `item_bank`
-- insertar y actualizar `item_options`
+## Controles SQL
 
-## RLS
+- RLS habilitada en todas las tablas públicas;
+- privilegios revocados primero y grants mínimos explícitos;
+- funciones `SECURITY DEFINER` con `search_path = public, pg_temp`;
+- RPC de sesión y sync ejecutables solo por `service_role`;
+- `baseline_id` e `instance_id` evitan operar sobre la base equivocada;
+- errores de sync saneados, sin payload editorial ni secretos.
 
-La RLS está definida en la migración inicial para:
-- `profiles`
-- `learning_profiles`
-- `sessions`
-- `item_bank`
-- `item_options`
-- `session_turns`
-- `evaluation_events`
-- `user_topic_stats`
-- `user_skill_snapshots`
+## Evidencia obligatoria
 
-## Criterios prácticos
+Los gates locales prueban ACL/RLS como anon, authenticated y service role; probes
+REST; frontera pre/post; función atómica de sesión; atomicidad e idempotencia del
+sync. Un estado local verde no demuestra que producción comparta este esquema.
 
-- cliente: usar `anon key` + sesión autenticada
-- backend: usar `service role` solo cuando sea realmente necesario
-- el MVP asume un único admin inicial
-
-## Frontera de respuestas — Sprint 48
-
-La migración `0020_secure_question_answer_boundary.sql` implementa en repositorio
-una frontera server-only para el banco de preguntas:
-
-- `anon` y `authenticated` pierden acceso directo a `item_bank`, `item_options`,
-  `v_item_bank_active` y `v_question_bank_v4_active`;
-- `advance_session_atomic` y `upsert_content_item` dejan de ser ejecutables por
-  roles cliente;
-- sólo `service_role`, usado después de validar autenticación y ownership en la
-  API, lee claves, explicaciones y metadatos editoriales;
-- el payload previo a responder no contiene clave, explicación ni `rationale`;
-- el contrato posterior se genera únicamente tras persistir una opción válida.
-
-La auditoría efectiva del 2026-08-23 confirmó que producción no respeta esa
-frontera pese a registrar `0020`: tablas, vistas legacy y RPC mutantes son
-ejecutables por clientes. La remediación monotónica reservada es
-`0030_security_question_bank_boundary_remediation.sql`, posterior a `0029`.
-
-`0030` elimina todas las policies de las tablas answer-bearing, revoca ACL cliente
-en tablas y vistas, descubre todos los overloads `SECURITY DEFINER` pertinentes,
-revoca su ejecución cliente y fija `search_path=public, pg_temp`. Conserva la
-superficie server-side de `service_role` y falla atómicamente si la frontera no
-queda cerrada. Está validada solo en Supabase local; producción sigue sin cambio.
-
-## Riesgos todavía abiertos
-
-- aún no existe flujo completo de bootstrap automático de `profiles`
-- aún no hay auditoría administrativa
-- aún no se diferenciaron roles más finos que `is_admin`
-- falta autorizar y aplicar la secuencia remota `0029 → 0030`, seguida por pruebas
-  negativas `anon`/`authenticated` y positivas `service_role`;
-- producción continúa expuesta hasta que `0030` quede aplicada y verificada.
+PR #102 y la migración legacy `0030` siguen siendo evidencia histórica útil, pero
+la seguridad de la base nueva nace de `supabase/migrations/0001–0003`.

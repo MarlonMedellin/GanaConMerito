@@ -14,7 +14,6 @@ export interface SafePracticeItemRecord {
   stem: string | null;
   questionType: string | null;
   cognitiveLevel: string | null;
-  sourceReference: string | null;
   sourceType: string | null;
   tags: string[] | null;
 }
@@ -33,7 +32,6 @@ export function buildPracticeQuestionViewModel(
     context: item.context ?? undefined,
     questionType: item.questionType ?? undefined,
     cognitiveLevel: item.cognitiveLevel ?? undefined,
-    sourceReference: item.sourceReference ?? undefined,
     competency: item.competency ?? "competencia_no_especificada",
     stem: item.stem ?? "",
     options,

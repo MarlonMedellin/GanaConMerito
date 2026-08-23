@@ -9,7 +9,7 @@ import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 
 interface SessionTurnRow {
   id: string;
-  item_id: string | null;
+  question_id: string | null;
   turn_number: number;
   created_at?: string | null;
 }
@@ -36,13 +36,11 @@ async function getCurrentUserTopicStats(): Promise<DashboardTopicBreakdownRow[]>
 
   const { data } = await auth.supabase
     .from("user_topic_stats")
-    .select(
-      "area, competency, attempts, correct_count, avg_reasoning_score, avg_difficulty, estimated_level, percentile_segment, updated_at",
-    )
+    .select("domain, competency, attempts, correct_count, avg_reasoning_score, avg_difficulty, estimated_level, updated_at")
     .eq("profile_id", auth.profile.id)
     .order("estimated_level", { ascending: false });
 
-  return (data ?? []) as DashboardTopicBreakdownRow[];
+  return (data ?? []).map((row) => ({ ...row, area: row.domain })) as DashboardTopicBreakdownRow[];
 }
 
 async function getSessionTopicStats(sessionId: string): Promise<DashboardTopicBreakdownRow[]> {
@@ -56,7 +54,7 @@ async function getSessionTopicStats(sessionId: string): Promise<DashboardTopicBr
   const admin = getSupabaseAdminClient();
   const { data: turns, error: turnsError } = await supabase
     .from("session_turns")
-    .select("id, item_id, turn_number, created_at")
+    .select("id, question_id, turn_number, created_at")
     .eq("session_id", sessionId)
     .order("turn_number", { ascending: true });
 
@@ -66,7 +64,7 @@ async function getSessionTopicStats(sessionId: string): Promise<DashboardTopicBr
 
   const turnRows = (turns ?? []) as SessionTurnRow[];
   const turnIds = turnRows.map((turn) => turn.id);
-  const itemIds = [...new Set(turnRows.map((turn) => turn.item_id).filter((itemId): itemId is string => Boolean(itemId)))];
+  const itemIds = [...new Set(turnRows.map((turn) => turn.question_id).filter((itemId): itemId is string => Boolean(itemId)))];
 
   const [{ data: events, error: eventsError }, { data: items, error: itemsError }] = await Promise.all([
     supabase
@@ -74,7 +72,7 @@ async function getSessionTopicStats(sessionId: string): Promise<DashboardTopicBr
       .select("session_turn_id, is_correct, reasoning_score, estimated_theta_delta, created_at")
       .in("session_turn_id", turnIds),
     itemIds.length > 0
-      ? admin.from("item_bank").select("id, area, competency, difficulty").in("id", itemIds)
+      ? admin.from("v_question_bank_v4_active").select("id, area, competency, difficulty").in("id", itemIds)
       : Promise.resolve({ data: [], error: null }),
   ]);
 
@@ -90,7 +88,7 @@ async function getSessionTopicStats(sessionId: string): Promise<DashboardTopicBr
 
   for (const turn of turnRows) {
     const event = eventByTurnId.get(turn.id);
-    const item = turn.item_id ? itemById.get(turn.item_id) : null;
+    const item = turn.question_id ? itemById.get(turn.question_id) : null;
     const area = item?.area ?? "Sin área";
     const competency = item?.competency ?? "Sin competencia";
     const key = `${area}::${competency}`;

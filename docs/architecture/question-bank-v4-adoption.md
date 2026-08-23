@@ -1,6 +1,11 @@
 # Adopción de Question Bank V4 en la aplicación
 
-**Estado:** base técnica implementada en repositorio; V4 no debe considerarse activa en runtime sin evidencia de despliegue, importación y activación.
+**Estado:** rebaseline y runtime V4 limpio implementados/validados solo localmente;
+V4 no debe considerarse activa sin evidencia remota, despliegue y activación.
+
+**Decisión superseding (2026-08-23):** la adopción futura ya no es aditiva sobre
+`item_bank`. Usa `questions`, targeting/knowledge normalizados y el reconciliador
+GitHub → Supabase; Legacy/V3 quedan históricos y no existe fallback.
 
 ## Corte editorial
 
@@ -17,10 +22,9 @@ El repositorio contiene piezas para la adopción V4, entre ellas:
 
 - `src/domain/content/v4-contract.ts` para validar el contrato V4;
 - `npm run content:validate:v4` para validar los JSON del banco;
-- importación V4 con dry-run como frontera de seguridad;
-- importación batch atómica e idempotente mediante la migración `0028`, con ensayo
-  local completo y sin aplicación productiva;
-- migraciones V4 versionadas en `supabase/migrations/`;
+- sync V4 con validate/plan/diff/apply/verify/status;
+- lote atómico, idempotente y sensible a drift mediante la baseline `0001–0003`;
+- migraciones antiguas conservadas en `supabase/legacy-migrations/`;
 - repositorio/DTO y frontera pre/post respuesta.
 
 La existencia en el repositorio no equivale a confirmar que cada migración esté
@@ -83,13 +87,13 @@ La adopción inicial debe mantener:
 1. validación estricta del JSON V4 y taxonomías locales;
 2. importación idempotente y sin activación automática;
 3. `context` y `stem` separados;
-4. lectura desde una vista/repositorio seguro V4, no desde `item_bank` crudo;
+4. lectura desde vistas/repositorio V4 y `question_options` server-only;
 5. DTO de práctica sin clave/feedback y DTO post-respuesta autorizado;
 6. evaluación y autorización de respuestas exclusivamente en servidor.
 
-El selector inicial puede usar las dimensiones ya soportadas por el contrato V4.
-La segmentación normalizada por perfil/cargo se incorpora después, mediante tablas
-y relaciones explícitas, no como parche de texto libre.
+El selector resuelve familia + perfil + OPEC mediante relaciones explícitas. El
+snapshot actual carece de mappings aprobados; esa ausencia es deuda editorial y no
+se rellena con inferencias de texto.
 
 ## Frontend
 

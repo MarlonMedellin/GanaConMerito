@@ -15,6 +15,11 @@ related:
 
 # PRD — V4 como fuente predeterminada del banco de preguntas
 
+> **Decisión superseding (2026-08-23):** V4 se adopta sobre una nueva baseline
+> limpia. No se preservan filas/UUID/sesiones legacy para el cutover, no existe
+> fallback y GitHub es la autoridad editorial. Supabase es su proyección
+> operacional mediante `content:sync`. La implementación está validada solo localmente.
+
 ## 1. Resultado esperado
 
 `content/question-bank-v4/` y su representación autorizada en Supabase se
@@ -35,7 +40,7 @@ Incluye:
 No incluye:
 
 - reescribir o corregir ítems legacy;
-- borrar filas legacy/V3 o historiales de sesiones;
+- borrar o modificar todavía la instancia Supabase legacy;
 - afirmar calibración psicométrica antes de un piloto con datos.
 
 ## 3. Fuente de verdad
@@ -61,20 +66,15 @@ fuente, taxonomía y dificultad. El comando debe fallar ante cualquier ítem inv
 
 ### RF-03 — Importación controlada
 
-Implementar `scripts/import-question-bank-v4.ts` con:
-
-- `--dry-run` por defecto;
-- importación idempotente por `content_id`/slug;
-- rechazo de ítem no aprobado o inválido;
-- `source_path` bajo `content/question-bank-v4/`;
-- estado inicial no activo;
-- reporte de ítems importados, rechazados y ya existentes.
+Implementar un reconciliador único `content:sync` con validate, plan, diff, apply,
+verify y status; hash aprobado exacto, idempotencia, detección/reparación de drift,
+atomicidad y reporte seguro. No existe reverse-sync.
 
 ### RF-04 — Lectura de práctica
 
-El backend debe leer V4 desde la vista autorizada de Supabase, no desde
-`item_bank` crudo. El selector debe poder filtrar por `scope`, `opec_id`, dominio,
-tema, competencia, tipo y dificultad.
+El backend debe leer V4 desde las vistas/tablas server-only de la baseline limpia.
+El selector combina familia, perfil y OPEC y después dominio, tema, competencia y
+dificultad.
 
 ### RF-05 — Protección de respuestas
 

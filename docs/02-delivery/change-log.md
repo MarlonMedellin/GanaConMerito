@@ -15,9 +15,28 @@ last_reviewed: 2026-08-23
 ## Document control
 - Status: operational
 - Owner: PM-Governance
-- Last reviewed: 2026-08-11
+- Last reviewed: 2026-08-23
 - Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
 - Update trigger: governance, delivery, documentation, drift
+
+## 2026-08-23 — Rebaseline limpio V4 y reconciliador canónico local
+- tipo: database+runtime+security+sync+qa+docs
+- modulo: question-bank-v4
+- resumen: La rama local reemplaza la compatibilidad `item_bank` por una baseline
+  V4 desde cero, conserva `0001–0030` en historia, adapta runtime/Tutor/sesiones y
+  crea un motor único GitHub → Supabase compartido por CLI/API. Los 248 reactivos,
+  IDs, manifiesto y taxonomía congelada permanecen intactos.
+- agente: Codex
+- via: Codex Desktop
+- contributor: Marlon Medellin
+- environment: rama aislada / WSL / Docker / Supabase local
+- validacion: reset limpio, sync 248/992, idempotencia, drift, failure injection,
+  ACL/RLS/REST, pre/post, Tutor, sesión, unitarias, typecheck, build y docs
+- runtime-verified: no; sin acciones remotas, deploy o activación
+- relacionados: baseline `0001–0003`, `scripts/content-sync.ts`, API admin y docs
+  de baseline/sync
+- limitaciones: OPEC/mappings/fuentes promovibles en cero; UI admin diferida;
+  checkpoint requerido antes de push/PR o cualquier acción remota
 
 ## 2026-08-23 — Remediación P0 de frontera del banco en repo
 - tipo: database+security+qa+ci+docs

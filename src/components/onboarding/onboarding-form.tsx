@@ -3,27 +3,32 @@
 import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 
-interface ProfessionalProfileOption {
-  id: string;
+interface TargetProfileOption {
   code: string;
   name: string;
 }
 
+interface OpecOption {
+  id: string;
+  profile_code: string;
+  position_name: string;
+  external_opec_id: string;
+}
+
 export function OnboardingForm(props: {
-  initialTargetRole: string;
-  initialExamType: string;
-  initialProfessionalProfileId: string;
-  professionalProfiles: ProfessionalProfileOption[];
+  initialTargetProfileCode: string;
+  initialTargetOpecId: string;
+  targetProfiles: TargetProfileOption[];
+  opecs: OpecOption[];
   initialActiveGoal: string;
   initialPreferredFeedbackStyle: string;
   initialActiveAreas: string[];
 }) {
   const router = useRouter();
-  const [targetRole] = useState(props.initialTargetRole || "docente");
-  const [examType] = useState(props.initialExamType || "docente");
-  const [professionalProfileId, setProfessionalProfileId] = useState(
-    props.initialProfessionalProfileId || props.professionalProfiles[0]?.id || "",
+  const [targetProfileCode, setTargetProfileCode] = useState(
+    props.initialTargetProfileCode || props.targetProfiles[0]?.code || "",
   );
+  const [targetOpecId, setTargetOpecId] = useState(props.initialTargetOpecId || "");
   const [activeGoal, setActiveGoal] = useState(props.initialActiveGoal || "");
   const [preferredFeedbackStyle] = useState(props.initialPreferredFeedbackStyle || "socratic");
   const [activeAreas, setActiveAreas] = useState((props.initialActiveAreas || []).join(", "));
@@ -43,6 +48,10 @@ export function OnboardingForm(props: {
     [activeAreas],
   );
   const hasActiveAreas = parsedActiveAreas.length > 0;
+  const compatibleOpecs = useMemo(
+    () => props.opecs.filter((opec) => opec.profile_code === targetProfileCode),
+    [props.opecs, targetProfileCode],
+  );
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -59,9 +68,8 @@ export function OnboardingForm(props: {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        targetRole,
-        examType,
-        professionalProfileId,
+        targetProfileCode,
+        targetOpecId: targetOpecId || null,
         activeGoal: activeGoalValue,
         preferredFeedbackStyle,
         activeAreas: parsedActiveAreas,
@@ -82,30 +90,29 @@ export function OnboardingForm(props: {
 
   return (
     <form className="form-shell" onSubmit={handleSubmit}>
-      <div className="form-grid two">
-        <label className="form-field">
-          <span className="field-label">Rol objetivo</span>
-          <input className="text-input" value={targetRole} disabled readOnly />
-        </label>
-        <label className="form-field">
-          <span className="field-label">Tipo de prueba</span>
-          <input className="text-input" value={examType} disabled readOnly />
-        </label>
-      </div>
-
       <label className="form-field">
-        <span className="field-label">Perfil profesional</span>
+        <span className="field-label">Perfil reusable</span>
         <select
           className="select-input"
-          value={professionalProfileId}
-          onChange={(event) => setProfessionalProfileId(event.target.value)}
-          disabled={loading || props.professionalProfiles.length === 0}
+          value={targetProfileCode}
+          onChange={(event) => { setTargetProfileCode(event.target.value); setTargetOpecId(""); }}
+          disabled={loading || props.targetProfiles.length === 0}
         >
-          {props.professionalProfiles.length === 0 ? <option value="">No hay perfiles disponibles</option> : null}
-          {props.professionalProfiles.map((profile) => (
-            <option key={profile.id} value={profile.id}>
+          {props.targetProfiles.length === 0 ? <option value="">No hay perfiles disponibles</option> : null}
+          {props.targetProfiles.map((profile) => (
+            <option key={profile.code} value={profile.code}>
               {profile.name}
             </option>
+          ))}
+        </select>
+      </label>
+
+      <label className="form-field">
+        <span className="field-label">Cargo oficial / OPEC verificada (opcional)</span>
+        <select className="select-input" value={targetOpecId} onChange={(event) => setTargetOpecId(event.target.value)} disabled={loading}>
+          <option value="">Usar solo el perfil reusable</option>
+          {compatibleOpecs.map((opec) => (
+            <option key={opec.id} value={opec.id}>{opec.position_name} · {opec.external_opec_id}</option>
           ))}
         </select>
       </label>
@@ -148,7 +155,7 @@ export function OnboardingForm(props: {
       </div>
 
       <div className="page-actions">
-        <button type="submit" className="primary-button" disabled={loading || !professionalProfileId || !activeGoalValue || !hasActiveAreas}>
+        <button type="submit" className="primary-button" disabled={loading || !targetProfileCode || !activeGoalValue || !hasActiveAreas}>
           {loading ? "Guardando..." : "Guardar onboarding"}
         </button>
       </div>

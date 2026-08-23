@@ -67,15 +67,15 @@ Arquitectura completa:
 
 `docs/03-architecture/question-bank-knowledge-targeting-architecture.md`
 
-## Fuente por defecto v3
+## Fuente futura única: V4
 
-El banco editorial por defecto para nuevas preguntas por OPEC es:
+`content/question-bank-v4/` es el único banco canónico futuro. Supabase es una
+proyección operacional del repositorio mediante sincronización determinista.
+`content/question-bank-v3/`, Beta y Legacy permanecen como evidencia histórica y
+no forman parte del runtime V4 limpio.
 
-```text
-content/question-bank-v3/
-```
-
-La version v3 sigue el PRD de fabricas editoriales por OPEC: fuentes verificadas, blueprint aprobado, items completos, revision, pilotaje, release y metricas dentro de `opecs/<opecId>/`. No se migra ni se mezcla contenido legacy.
+Targeting continúa externo: no se modifican los 248 reactivos congelados para
+agregar familia, perfil u OPEC.
 
 ## Lectura beta
 

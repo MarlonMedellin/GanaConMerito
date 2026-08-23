@@ -12,7 +12,7 @@ export async function persistTutorTurnTrace(params: {
     trace_id: trace.traceId,
     profile_id: profileId,
     session_id: trace.sessionId ?? null,
-    item_id: trace.itemId ?? null,
+    question_id: trace.itemId ?? null,
     contest_id: trace.contestId ?? null,
     profile_source_id: trace.profileId ?? null,
     mode: trace.mode,

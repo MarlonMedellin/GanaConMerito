@@ -190,7 +190,7 @@ test("selectAnsweredTurnForItem chooses the matching answered turn for the item"
     [
       {
         id: "turn-3",
-        item_id: "item-2",
+        question_id: "item-2",
         selected_option: "C",
         user_rationale: null,
         model_feedback: "Otro turno",
@@ -198,7 +198,7 @@ test("selectAnsweredTurnForItem chooses the matching answered turn for the item"
       },
       {
         id: "turn-2",
-        item_id: "item-1",
+        question_id: "item-1",
         selected_option: "A",
         user_rationale: "Porque descarto distractores",
         model_feedback: "Feedback correcto",
@@ -208,7 +208,7 @@ test("selectAnsweredTurnForItem chooses the matching answered turn for the item"
       },
       {
         id: "turn-1",
-        item_id: "item-1",
+        question_id: "item-1",
         selected_option: null,
         user_rationale: null,
         model_feedback: null,
@@ -227,7 +227,7 @@ test("selectAnsweredTurnForItem ignores a newer unanswered turn for the same ite
     [
       {
         id: "turn-3",
-        item_id: "item-1",
+        question_id: "item-1",
         selected_option: null,
         user_rationale: null,
         model_feedback: null,
@@ -235,7 +235,7 @@ test("selectAnsweredTurnForItem ignores a newer unanswered turn for the same ite
       },
       {
         id: "turn-2",
-        item_id: "item-1",
+        question_id: "item-1",
         selected_option: "B",
         user_rationale: "Descarto distractores",
         model_feedback: "Feedback oficial",

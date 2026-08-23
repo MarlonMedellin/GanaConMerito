@@ -41,7 +41,7 @@ export async function POST(request: Request) {
 
   const { data: learningProfile, error: learningProfileError } = await supabase
     .from("learning_profiles")
-    .select("onboarding_completed, professional_profile_id, active_areas")
+    .select("onboarding_completed, target_profile_code, target_opec_id, active_areas")
     .eq("profile_id", session.profile_id)
     .single();
 
@@ -57,7 +57,7 @@ export async function POST(request: Request) {
 
   const { data: existingTurns, error: existingTurnsError } = await supabase
     .from("session_turns")
-    .select("id, item_id")
+    .select("id, question_id")
     .eq("session_id", body.sessionId)
     .order("turn_number", { ascending: true });
 
@@ -134,13 +134,14 @@ export async function POST(request: Request) {
   }
 
   const seenItemIds = [
-    ...new Set([...(existingTurns?.map((turn) => turn.item_id).filter(Boolean) ?? []), body.itemId]),
+    ...new Set([...(existingTurns?.map((turn) => turn.question_id).filter(Boolean) ?? []), body.itemId]),
   ];
 
   const nextItem = currentState === "session_close"
     ? null
     : await selectNextItem({
-        professionalProfileId: learningProfile.professional_profile_id,
+        targetProfileCode: learningProfile.target_profile_code,
+        targetOpecId: learningProfile.target_opec_id,
         profileIdForRotation: profile.id,
         sessionIdForRotation: body.sessionId,
         activeArea: item.area ?? undefined,

@@ -1,14 +1,19 @@
-name: Question Bank V4 atomic import
+name: Question Bank V4 clean sync
 
 on:
   push:
     branches: [master]
     paths:
       - 'content/question-bank-v4/**'
-      - 'scripts/import-question-bank-v4.ts'
+      - 'content/targeting/**'
+      - 'content/knowledge-base/**'
+      - 'scripts/content-sync.ts'
+      - 'scripts/lib/content-sync-*.ts'
       - 'scripts/lib/v4-import-plan.ts'
-      - 'scripts/test-v4-atomic-import.ts'
-      - 'scripts/v4-import-plan.test.ts'
+      - 'scripts/*content-sync*.test.ts'
+      - 'scripts/test-content-sync-db.ts'
+      - 'scripts/test-v4-clean-baseline-guard.ts'
+      - 'scripts/test-v4-runtime-db.ts'
       - 'supabase/migrations/**'
       - 'supabase/seed.sql'
       - 'package.json'
@@ -18,10 +23,15 @@ on:
     branches: [master]
     paths:
       - 'content/question-bank-v4/**'
-      - 'scripts/import-question-bank-v4.ts'
+      - 'content/targeting/**'
+      - 'content/knowledge-base/**'
+      - 'scripts/content-sync.ts'
+      - 'scripts/lib/content-sync-*.ts'
       - 'scripts/lib/v4-import-plan.ts'
-      - 'scripts/test-v4-atomic-import.ts'
-      - 'scripts/v4-import-plan.test.ts'
+      - 'scripts/*content-sync*.test.ts'
+      - 'scripts/test-content-sync-db.ts'
+      - 'scripts/test-v4-clean-baseline-guard.ts'
+      - 'scripts/test-v4-runtime-db.ts'
       - 'supabase/migrations/**'
       - 'supabase/seed.sql'
       - 'package.json'
@@ -47,10 +57,14 @@ jobs:
         run: npx supabase start
       - name: Rebuild from all versioned migrations
         run: npx supabase db reset --local
+      - name: Prove clean-baseline Legacy guard
+        run: npm run test:v4-baseline-guard
       - name: Test question-bank security boundary
         run: npm run test:security
-      - name: Test atomic V4 import
+      - name: Test clean V4 sync
         run: npm run test:v4-import:db
+      - name: Test V4 runtime contracts
+        run: npm run test:v4-runtime:db
       - name: Stop isolated Supabase
         if: always()
         run: npx supabase stop --no-backup

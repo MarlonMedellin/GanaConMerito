@@ -52,8 +52,6 @@ export async function bootstrapUserProfile(user: User) {
       .from("learning_profiles")
       .insert({
         profile_id: profile.id,
-        target_role: "docente",
-        exam_type: "docente",
         country_context: "colombia",
         preferred_feedback_style: "socratic",
         active_goal: "Completar onboarding inicial",

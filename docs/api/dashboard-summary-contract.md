@@ -97,7 +97,7 @@ Límite: máximo `3`.
 
 ## Fuente de datos por bloque
 - `historical`: `user_topic_stats` del usuario autenticado
-- `currentSession`: agregación derivada de `session_turns` + `evaluation_events` + `item_bank` para el `sessionId`
+- `currentSession`: agregación derivada de `session_turns` + `evaluation_events` + `questions` para el `sessionId`
 
 ## Ejemplos
 ### Sin `sessionId`

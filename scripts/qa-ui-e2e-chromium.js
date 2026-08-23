@@ -76,8 +76,6 @@ async function ensureUserAndReset(admin) {
   if (!learningLookup.data) {
     const inserted = await admin.from('learning_profiles').insert({
       profile_id: profileId,
-      target_role: 'docente',
-      exam_type: 'docente',
       country_context: 'colombia',
       preferred_feedback_style: 'socratic',
       active_goal: 'Completar onboarding inicial',
@@ -88,8 +86,8 @@ async function ensureUserAndReset(admin) {
   }
 
   const learningReset = await admin.from('learning_profiles').update({
-    target_role: 'docente',
-    exam_type: 'docente',
+    target_profile_code: null,
+    target_opec_id: null,
     active_goal: 'Completar onboarding inicial',
     active_areas: [],
     preferred_feedback_style: 'socratic',
@@ -103,7 +101,7 @@ async function ensureUserAndReset(admin) {
   const cleanupTopicStats = await admin.from('user_topic_stats').delete().eq('profile_id', profileId);
   if (cleanupTopicStats.error) throw cleanupTopicStats.error;
 
-  const pp = await admin.from('professional_profiles').select('id,code,name').eq('is_active', true).order('name', { ascending: true });
+  const pp = await admin.from('target_profiles').select('code,name').eq('is_active', true).order('name', { ascending: true });
   if (pp.error) throw pp.error;
 
   return { user, profileId, professionalProfiles: pp.data };
@@ -249,12 +247,12 @@ async function getAuthCookies() {
   const lastSession = await admin.from('sessions').select('*').eq('profile_id', profile.data.id).order('created_at', { ascending: false }).limit(1).single();
   const dbTurns = lastSession.data ? await admin.from('session_turns').select('*').eq('session_id', lastSession.data.id).order('turn_number', { ascending: true }) : { data: [], error: null };
   const turnIds = (dbTurns.data || []).map((turn) => turn.id);
-  const itemIds = [...new Set((dbTurns.data || []).map((turn) => turn.item_id).filter(Boolean))];
+  const itemIds = [...new Set((dbTurns.data || []).map((turn) => turn.question_id).filter(Boolean))];
   const evaluationEvents = turnIds.length
     ? await admin.from('evaluation_events').select('*').in('session_turn_id', turnIds).order('created_at', { ascending: true })
     : { data: [], error: null };
   const items = itemIds.length
-    ? await admin.from('item_bank').select('id,title,area,competency,difficulty').in('id', itemIds)
+    ? await admin.from('questions').select('id,title:stem,area:domain,competency,difficulty:estimated_difficulty').in('id', itemIds)
     : { data: [], error: null };
   result.db = {
     session: lastSession.data,
@@ -267,7 +265,7 @@ async function getAuthCookies() {
 
   result.assertions = runSemanticAssertions({
     turns: turns.map((turn, index) => ({
-      itemId: dbTurns.data?.[index]?.item_id,
+      itemId: dbTurns.data?.[index]?.question_id,
       selectedOption: turn.selectedOption,
       previousState: turn.advanceJson?.previousState,
       currentState: turn.advanceJson?.currentState,

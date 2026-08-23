@@ -2,7 +2,7 @@
 
 Status: canonical
 Owner: PM-Governance
-Last reviewed: 2026-08-22
+Last reviewed: 2026-08-23
 Related files:
 - AGENTS.md
 - docs/project/status.md
@@ -15,6 +15,11 @@ Update trigger:
 - QA
 
 ---
+
+> **Checkpoint V4 limpio:** la ruta `0029 → 0030` descrita en el historial queda
+> superseded para el futuro cutover V4. La baseline nueva `0001–0003` solo se
+> aplicará en un proyecto vacío con autorización separada. Producción no fue
+> modificada ni verificada por esta rama.
 
 # Objetivo
 
@@ -116,14 +121,12 @@ Para Beta Candidate 0.6.0, la evidencia histórica en `fcc40cb`, `716ec62` u otr
 5. ejecutar validación;
 6. registrar evidencia.
 
-## Ventana P0 del banco de preguntas
+## Cutover V4 futuro
 
-La remediación pendiente no autoriza deploy ni lote. Con autorización separada,
-el orden de base es estrictamente `0029 → 0030`, sin tráfico de administración
-entre ambas. Después se verifican ledger, ACL/policies/RPC, probes negativas de
-cliente, acceso positivo de `service_role`, conteos invariables y cero activación.
-Si `0030` falla, su transacción revierte y se corrige hacia adelante; no se
-restauran permisos públicos como rollback.
+La antigua ventana `0029 → 0030` no se ejecuta para el cutover limpio. El proceso
+vigente requiere proyecto Supabase nuevo, baseline `0001–0003`, identidad de
+instancia aprobada, sync determinista, verificación, activación, deploy y E2E en
+checkpoints separados. La instancia legacy permanece intacta hasta orden expresa.
 
 ---
 

@@ -10,7 +10,7 @@ async function resolveTestBypassAuth() {
   if (configuredProfileId) {
     const { data: profile, error: profileError } = await supabase
       .from("profiles")
-      .select("id, auth_user_id")
+      .select("id, auth_user_id, is_admin")
       .eq("id", configuredProfileId)
       .single();
 
@@ -51,16 +51,16 @@ async function resolveTestBypassAuth() {
       },
       { onConflict: "auth_user_id" },
     )
-    .select("id, auth_user_id")
+    .select("id, auth_user_id, is_admin")
     .single();
 
   if (profileResult.error || !profileResult.data) {
     return { ok: false as const, error: "Could not upsert QA bypass profile" as const, status: 500 };
   }
 
-  const { data: professionalProfile } = await supabase
-    .from("professional_profiles")
-    .select("id")
+  const { data: targetProfile } = await supabase
+    .from("target_profiles")
+    .select("code")
     .eq("is_active", true)
     .order("name", { ascending: true })
     .limit(1)
@@ -68,14 +68,12 @@ async function resolveTestBypassAuth() {
 
   const learningPayload = {
     profile_id: profileResult.data.id,
-    target_role: "docente",
-    exam_type: "docente",
     country_context: "colombia",
     preferred_feedback_style: "socratic",
     active_goal: "QA beta sin login",
     active_areas: ["matematicas", "pedagogia", "normatividad"],
     onboarding_completed: true,
-    professional_profile_id: professionalProfile?.id ?? null,
+    target_profile_code: targetProfile?.code ?? null,
   };
 
   const learningResult = await supabase
@@ -124,7 +122,7 @@ export async function requireAuthenticatedProfile() {
 
   const { data: profile, error: profileError } = await supabase
     .from("profiles")
-    .select("id, auth_user_id")
+    .select("id, auth_user_id, is_admin")
     .eq("auth_user_id", user.id)
     .single();
 
@@ -155,4 +153,13 @@ export async function requireOwnedSession(params: { sessionId: string }) {
   }
 
   return { ok: true as const, supabase, user: auth.user, profile, session };
+}
+
+export async function requireAdminProfile() {
+  const auth = await requireAuthenticatedProfile();
+  if (!auth.ok) return auth;
+  if (!auth.profile.is_admin) {
+    return { ok: false as const, error: "Forbidden" as const, status: 403 };
+  }
+  return auth;
 }
