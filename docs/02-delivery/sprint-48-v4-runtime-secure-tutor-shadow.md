@@ -237,6 +237,8 @@ npm run test:unit
 npm run build
 npm run content:validate:v4
 npm run content:import:v4 -- --dry-run
+npx supabase db reset --local
+npm run test:v4-import:db
 npm run test:security
 npm run qa:security:question-bank -- --require-authenticated
 python3 scripts/validate_docs.py

@@ -19,6 +19,25 @@ last_reviewed: 2026-08-22
 - Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
 - Update trigger: governance, delivery, documentation, drift
 
+## 2026-08-22 — PRD 2: importador V4 atómico en repo
+- tipo: database+backend+security+ci+docs
+- modulo: question-bank-v4
+- resumen: Se añade la migración monotónica `0028`, un único RPC batch
+  transaccional, plan determinista ligado al manifiesto canónico, trazabilidad de
+  ejecuciones y reconciliación histórica sin borrado. El ensayo local cubre carga
+  completa, idempotencia, fallos de JSON/contrato/ID/hash/conteo, rollback intermedio,
+  vistas y permisos.
+- agente: Codex
+- via: Codex Desktop / repositorio GitHub
+- contributor: Marlon Medellin
+- environment: WSL local / Docker / Supabase local aislado / master
+- validacion: reset desde cero `0019–0028`, dry-run 248/248, pruebas unitarias e
+  integración DB, typecheck, suite completa, build, contenido y documentos
+- runtime-verified: no; no se aplicó Supabase productivo, no se activaron cohortes
+- relacionados: supabase/migrations/0028_atomic_v4_batch_import.sql,
+  scripts/import-question-bank-v4.ts, scripts/test-v4-atomic-import.ts,
+  docs/04-quality/prd-2-v4-atomic-import-trial-report.md
+
 ## 2026-08-22 — Reconciliación y congelación canónica del corte V4
 - tipo: governance+content+ci+docs
 - modulo: question-bank-v4
@@ -33,8 +52,9 @@ last_reviewed: 2026-08-22
 - validacion: `npm run content:validate:v4`, verificación determinista del manifiesto,
   `python3 scripts/validate_docs.py`, `npm run typecheck` y `git diff --check`
 - runtime-verified: no; Supabase, VPS, despliegue y activación fuera de alcance
-- limitaciones: el dry-run del importador existente se detiene en `DOC-001256` por
-  evidencia `APPROVED` no reconocida; su corrección pertenece al PRD 2
+- limitaciones: la aplicación en staging remoto/producción y la activación siguen
+  fuera de alcance; PRD 2 resuelve localmente la evidencia de `DOC-001256` mediante
+  el manifiesto canónico congelado
 - relacionados: content/question-bank-v4/MANIFEST.json,
   scripts/question_bank_v4_manifest.py, .github/workflows/question-bank-v4-freeze.yml
 

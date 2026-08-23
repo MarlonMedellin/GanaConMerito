@@ -66,6 +66,7 @@ Persisten limitaciones:
 | Tutor regression | Importante |
 | Editorial validation | Importante |
 | V4 freeze manifest | Obligatorio para cambios V4 |
+| V4 atomic database import | Obligatorio para importador/migraciones V4 |
 | Documentation alignment | Advisory |
 | Agent traceability | Advisory |
 | Runtime verification | Selectivo |
@@ -95,6 +96,12 @@ Para `content/question-bank-v4/`, `npm run content:validate:v4` y
 `master` y pull requests hacia `master`. El gate compara reactivos, IDs, contrato,
 taxonomías, métricas y hashes contra `MANIFEST.json`; un cambio sin reconciliar el
 manifiesto falla.
+
+Para cambios al importador o a migraciones V4, CI reconstruye Supabase desde cero
+y ejecuta `npm run test:v4-import:db`. El gate debe probar lote limpio,
+idempotencia, errores de contrato/ID/hash/conteo, rollback intermedio, cuatro
+opciones, inactividad, permisos, vistas seguras y preservación histórica. La suite
+rechaza conexiones que no sean loopback.
 
 ## Cambios de runtime
 

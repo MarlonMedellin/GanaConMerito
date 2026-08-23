@@ -18,12 +18,17 @@ El repositorio contiene piezas para la adopción V4, entre ellas:
 - `src/domain/content/v4-contract.ts` para validar el contrato V4;
 - `npm run content:validate:v4` para validar los JSON del banco;
 - importación V4 con dry-run como frontera de seguridad;
+- importación batch atómica e idempotente mediante la migración `0028`, con ensayo
+  local completo y sin aplicación productiva;
 - migraciones V4 versionadas en `supabase/migrations/`;
 - repositorio/DTO y frontera pre/post respuesta.
 
 La existencia en el repositorio no equivale a confirmar que cada migración esté
 aplicada en todos los ambientes ni que una cohorte V4 esté activa. La evidencia de
 runtime se verifica de forma separada.
+
+El reporte reproducible del ensayo aislado de PRD 2 vive en
+`docs/04-quality/prd-2-v4-atomic-import-trial-report.md`.
 
 ## Tres capas que la adopción debe preservar
 

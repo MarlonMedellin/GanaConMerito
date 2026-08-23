@@ -24,17 +24,18 @@ last_reviewed: 2026-08-22
 # Sprint log
 
 ## Current delivery state
-- **Current operational block**: Sprint 48 — repo completo; aplicación y gates remotos pendientes.
+- **Current operational block**: Sprint 48 — repo completo; PRD 2 atómico validado
+  localmente; aplicación y gates remotos pendientes.
 - **Corte editorial congelado y validado**: `content/question-bank-v4/MANIFEST.json`
   gobierna conteo, inventario y hashes en `master`.
 - **Public runtime canonico**: `https://ganaconmerito.com`; commit visible `e43f612`, smoke publico PASS el 2026-08-22, sin nueva E2E autenticada.
 - **Supabase publico**: 121 filas visibles en `item_bank`: 120 legacy y 1 V4; existe exposicion P0 de clave/explicacion.
-- **V4 local**: corpus estructuralmente válido y reconciliado contra el manifiesto;
-  1 V4 observado en Supabase.
+- **V4 local**: corte de 248 reconciliado contra el manifiesto; importación atómica,
+  idempotencia y rollback total pasan en Supabase local aislado.
 - **Governance Hardening Roadmap state**: Fase 1 y Fase 2 iniciadas; Fase 3 en ejecucion documental (reduccion y clasificacion), Fases 4-5 futuras.
 - **Open risks**:
-  - el dry-run del corte V4 reconciliado no reconoce aún evidencia `APPROVED` para
-    `DOC-001256`; PRD 2 debe resolver la trazabilidad antes de importar;
+  - PRD 2 está validado y versionado en repo, pero `0028` no se ha aplicado en un
+    Supabase remoto ni en producción;
   - acceso anonimo directo a claves y explicaciones del banco;
   - runtime desplegado conserva el payload y selector anteriores;
   - V4 gobierna selección, práctica y expediente Tutor solo en repo;
@@ -71,6 +72,9 @@ last_reviewed: 2026-08-22
   implementados; typecheck y pruebas específicas PASS.
 - Importador idempotente y migración `0021` implementados; dry-run reproduce el
   conjunto aprobado y deja fuera cualquier lote sin cierre editorial.
+- Migración `0028` y RPC batch atómico ensayados desde cero sobre Supabase local:
+  carga 248/248, segunda ejecución sin duplicados, seis fallos con rollback total,
+  permisos y preservación histórica PASS.
 - El plan histórico previo queda supersedido para conteo por el manifiesto V4;
   cualquier importación futura debe recalcularse desde ese corte.
 - Repositorio server-only, selector V4 exclusivo, contratos pre/post, UI de

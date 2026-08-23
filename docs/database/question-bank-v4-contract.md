@@ -1,6 +1,7 @@
 # Contrato de persistencia y lectura del banco V4
 
-**Estado:** propuesto; no ejecutar cambios de producción solo a partir de este documento.
+**Estado:** contrato inicial y batch atómico implementados en repositorio y
+validados localmente; no aplicados en producción.
 **Precondición:** un ítem debe cumplir
 `content/question-bank-v4/CONTRATO-EDITORIAL-V4.md` y haber sido auditado.
 
@@ -154,20 +155,27 @@ sin convertir joins de perfiles/OPEC en una vía para exponer campos reservados.
 
 ## Importación y activación
 
-1. Validar JSON contra el contrato V4 y catálogos locales.
-2. Ejecutar la auditoría adversarial y comprobar `APPROVED`.
-3. Importar de modo idempotente por `content_id`/`slug`, usando la función V4
-   versionada vigente.
-4. Guardar opciones en `item_options` y metadatos tutor/auditoría en
-   `editorial_metadata`.
-5. Dejar inicialmente `is_active = false` hasta completar pruebas y aprobación.
-6. Activar mediante una operación explícita y auditable, nunca por el importador.
-7. Cuando exista targeting normalizado, asociar perfiles/OPEC en un paso separado y
+1. Reconciliar archivos, IDs, conteo y hashes contra `MANIFEST.json`.
+2. Construir un plan determinista con SHA fuente, hash de IDs, hashes de contenido
+   y evidencia `APPROVED` del manifiesto canónico.
+3. Enviar el lote completo en una llamada a
+   `import_question_bank_v4_batch(candidates, plan_hash, expected_count, source_sha)`.
+4. Validar todo el plan antes de la primera escritura y ejecutar los upserts dentro
+   de una sola transacción.
+5. Registrar ejecución y reconciliación en `question_bank_v4_import_runs`, con
+   errores seguros y sin payload editorial.
+6. Dejar todo el lote `draft`, inactivo, no publicado y fuera del piloto.
+7. Preservar las V4 históricas ausentes del nuevo manifiesto, desactivándolas sin
+   borrarlas.
+8. Activar mediante una operación explícita y auditable, nunca por el importador.
+9. Cuando exista targeting normalizado, asociar perfiles/OPEC en un paso separado y
    auditable; no inferirlos silenciosamente a partir del texto.
 
 ## RLS y seguridad
 
 - El `service_role` importa; los usuarios no insertan ni aprueban contenido.
+- La función batch, el manifiesto, el snapshot taxonómico y la tabla de ejecuciones
+  revocan acceso a `public`, `anon` y `authenticated`, con `search_path` fijo.
 - Las vistas públicas usan `security_invoker` y políticas que permitan solo el
   subconjunto publicado/autorizado.
 - Ningún endpoint del navegador consulta `item_bank` con una columna de clave.

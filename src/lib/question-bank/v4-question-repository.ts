@@ -30,6 +30,8 @@ interface V4ItemRow {
   source_path: string | null;
   editorial_scope: string | null;
   tags: string[] | null;
+  context?: string | null;
+  hint?: string | null;
   correct_option?: string | null;
   explanation?: string | null;
   editorial_metadata: V4EditorialMetadata | null;
@@ -110,7 +112,7 @@ export class V4QuestionRepository {
   async getPracticeQuestion(itemId: string): Promise<V4PracticeQuestionRecord | null> {
     const { data, error } = await this.client
       .from("v_question_bank_v4_active")
-      .select("id, title, area, topic_code, competency, difficulty, stem, question_type, cognitive_level, source_reference, source_type, source_path, editorial_scope, tags, editorial_metadata")
+      .select("id, title, area, topic_code, competency, difficulty, context, stem, question_type, cognitive_level, source_reference, source_type, source_path, editorial_scope, hint, tags")
       .eq("id", itemId)
       .maybeSingle();
     if (error) throw error;
@@ -127,7 +129,7 @@ export class V4QuestionRepository {
       topic: row.topic_code,
       competency: row.competency,
       difficulty: row.difficulty === null ? null : Number(row.difficulty),
-      context: row.editorial_metadata?.context ?? null,
+      context: row.context ?? null,
       stem: row.stem,
       questionType: row.question_type,
       cognitiveLevel: row.cognitive_level,
@@ -135,7 +137,7 @@ export class V4QuestionRepository {
       sourceType: row.source_type,
       sourcePath: row.source_path,
       scope: row.editorial_scope,
-      hint: row.editorial_metadata?.hint ?? null,
+      hint: row.hint ?? null,
       tags: row.tags,
       options,
     };

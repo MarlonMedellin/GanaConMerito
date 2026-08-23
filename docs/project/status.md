@@ -10,7 +10,7 @@ last_reviewed: 2026-08-22
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-08-22 — Sprint 48 en ejecución; Bloque 2 implementado en repo.
+Ultima actualizacion: 2026-08-22 — Sprint 48 en ejecución; PRD 2 validado en base local aislada.
 
 ---
 
@@ -37,10 +37,10 @@ smoke publico; no reejecuto E2E autenticada ni verifico el arbol de deploy.
 
 ## Current Sprint Status
 **SPRINT 48 EN EJECUCIÓN; BLOQUES 0–5 IMPLEMENTADOS EN REPO, NO APLICADOS**: las
-migraciones, el importador base, el repositorio V4 y los contratos pre/post tienen
-pruebas locales. El dry-run del corte reconciliado aún requiere alinear evidencia
-`APPROVED` de Fase B. La exposición pública permanece en el runtime hasta desplegar
-el código y aplicar `0020` en una ventana controlada.
+migraciones, el importador batch, el repositorio V4 y los contratos pre/post tienen
+pruebas locales. PRD 2 reconcilia 248/248 desde el manifiesto, prueba idempotencia y
+rollback total en Supabase local. La exposición pública permanece en el runtime
+hasta desplegar el código y aplicar las migraciones en una ventana controlada.
 
 ## Known Drift
 - Supabase contiene 121 filas visibles por REST anon: 120 legacy y solo 1 V4;
@@ -53,8 +53,8 @@ el código y aplicar `0020` en una ventana controlada.
   duplicados ni retirados activos. Mantiene cero
   documentos en `sources/`;
   calidad editorial no equivale a fuente normativa verificada.
-- El importador dry-run actual se detiene en `DOC-001256` porque todavía no reconoce
-  su evidencia `APPROVED`; PRD 2 debe reconciliar esa trazabilidad antes de importar.
+- La evidencia `APPROVED` de `DOC-001256` ya se resuelve desde el manifiesto
+  canónico en el plan PRD 2; `0028` sigue sin aplicación remota/productiva.
 - Persisten contratos y validaciones parcialmente narrativas fuera del baseline canonico.
 - La trazabilidad multiagente todavia no es enforcement obligatorio.
 - La integracion del Tutor con LLM real queda como deuda tecnica futura y no forma parte del cierre de Sprint 47.
@@ -70,8 +70,8 @@ el código y aplicar `0020` en una ventana controlada.
 - sincronizacion documental automatica;
 - reduccion de documentacion legacy;
 - integracion fuerte rich-only.
-- aplicación remota del corte V4, importación completa y ejecución real de
-  OpenRouter shadow pendientes.
+- aplicación remota de `0028`, importación en staging/producción, activación de
+  cohorte y ejecución real de OpenRouter shadow pendientes.
 
 ## Last Audit
 2026-08-22 — repo remoto sincronizado; estructura V4, REST publico de Supabase,
@@ -115,10 +115,11 @@ aplicación remota, shadow real y E2E pendientes.
 
 ### Evidencia y limites
 - El corte congelado se deriva del manifiesto V4 y tiene validación estructural y
-  cierre editorial agregado. La evidencia machine-checkable del importador para
-  Fase B sigue pendiente. No se revisaron items individuales.
+  cierre editorial agregado. El importador verifica evidencia machine-checkable,
+  SHA, hashes y conteo; no se revisaron ítems individuales en este PRD.
 - El contraste Supabase fue de lectura publica, no administrativo.
-- No se aplicaron migraciones, no se importaron filas y no se desplego codigo.
+- No se aplicaron migraciones ni se importaron filas en producción; `0028` y el
+  lote completo solo se ejecutaron en Supabase local aislado.
 - `0020_secure_question_answer_boundary.sql`, contratos pre/post y pruebas de
   seguridad están implementados localmente; no constituyen evidencia de cierre remoto.
 - El selector, rutas y UI usan el contrato V4-only en repo, reportan inventario
@@ -131,6 +132,8 @@ aplicación remota, shadow real y E2E pendientes.
   HTTP 200 y JSON Schema estricto; no se verificó VPS ni producción.
 - La evaluación local cubre 120 escenarios y fallos mock; no sustituye métricas
   reales de latencia/costo ni E2E sobre una cohorte V4 activa.
+- El ensayo PRD 2 reconstruye `0019–0028`, importa 248/248, reejecuta sin
+  duplicados y verifica rollback total, permisos y vistas; no activa preguntas.
 
 ## Beta Candidate 0.6.0 — snapshot ejecutivo
 
