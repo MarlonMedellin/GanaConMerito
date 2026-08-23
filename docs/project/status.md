@@ -5,12 +5,13 @@ project: ganaconmerito
 owner: marlon-arcila
 status: active
 artifact_type: project
-last_reviewed: 2026-08-22
+last_reviewed: 2026-08-23
 ---
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-08-22 — PRD 3 en checkpoint; `0028` aplicada sin lote y `0029` pendiente.
+Ultima actualizacion: 2026-08-23 — foundation PRD 3 `0030` implementada y validada
+en Supabase local aislado; no aplicada en remoto.
 
 ---
 
@@ -36,11 +37,13 @@ y debe confirmarse antes de aceptar la conexion.
 smoke publico; no reejecuto E2E autenticada ni verifico el arbol de deploy.
 
 ## Current Sprint Status
-**SPRINT 48 EN EJECUCIÓN; PRD 3 PAUSADO EN CHECKPOINT**: `0028` fue aplicada en
+**SPRINT 48 EN EJECUCIÓN; PRD 3 CONTINÚA EN RAMA AISLADA**: `0028` fue aplicada en
 producción, pero el lote no se ejecutó. La auditoría confirmó 163 V4 y 652 opciones,
 todas inactivas, no publicadas y fuera del piloto. `0029` endurece localmente el
 anclaje canónico y la reconciliación de drift; queda pendiente de aplicación tras
-la revisión del PR #97.
+la revisión del PR #97. La nueva `0030_targeting_knowledge_foundation.sql` implementa
+persistencia aditiva para familia/perfil/OPEC y procedencia de conocimiento; la
+reconstrucción local `0001–0030` y sus pruebas pasaron, sin aplicación remota.
 
 ## Known Drift
 - Supabase contiene 163 filas V4 y 652 opciones; `v_question_bank_v4_active`
@@ -55,6 +58,8 @@ la revisión del PR #97.
   calidad editorial no equivale a fuente normativa verificada.
 - `0028` está aplicada remotamente sin ejecuciones batch. `0029` y la importación
   canónica siguen pendientes.
+- `0030` existe solo como implementación validada en rama: no tiene aplicación
+  remota, OPEC cargadas, fuentes verificadas ni backfill de reactivos.
 - Persisten contratos y validaciones parcialmente narrativas fuera del baseline canonico.
 - La trazabilidad multiagente todavia no es enforcement obligatorio.
 - La integracion del Tutor con LLM real queda como deuda tecnica futura y no forma parte del cierre de Sprint 47.
@@ -72,10 +77,12 @@ la revisión del PR #97.
 - integracion fuerte rich-only.
 - aplicación remota de `0029`, importación productiva, activación de cohorte y
   ejecución real de OpenRouter shadow pendientes.
+- cualquier aplicación remota de `0030` requiere una ventana y autorización
+  separadas.
 
 ## Last Audit
-2026-08-22 — repo remoto sincronizado; estructura V4, REST publico de Supabase,
-contratos de practica/Tutor y runtime publico canonico auditados. VPS admin no verificado.
+2026-08-23 — `master`, PR #97, historial Supabase y conteos V4 reconfirmados en
+lectura; runtime público y VPS no se revalidaron en este bloque.
 
 ---
 

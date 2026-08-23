@@ -55,7 +55,7 @@ Arquitectura de referencia:
 
 `docs/03-architecture/question-bank-knowledge-targeting-architecture.md`
 
-## Administración del importador V4 (`0028–0029`)
+## Administración del importador V4 y foundation PRD 3 (`0028–0030`)
 
 La migración versionada `0028_atomic_v4_batch_import.sql`, aplicada en producción
 sin ejecutar todavía el lote, añade:
@@ -75,39 +75,59 @@ localmente y pendiente de aplicación remota, fija el hash exacto del plan canó
 detecta deriva real de columnas/opciones y amplía la reconciliación transaccional.
 No contiene targeting ni modifica el corpus congelado.
 
-## Evolución de esquema propuesta — NO implementada por este documento
+La migración aditiva `0030_targeting_knowledge_foundation.sql` está implementada
+en una rama aislada y validada con reconstrucción local `0001–0030`, pruebas de
+integridad y frontera de permisos. No fue aplicada en un ambiente Supabase remoto.
+No modifica el corte editorial V4 congelado, `item_bank`, sus UUID, sus vistas
+seguras ni `item_bank.opec_id`.
 
-Cuando se autorice mediante migraciones nuevas, el modelo debe poder incorporar:
+## Foundation de targeting y conocimiento — implementada en rama (`0030`)
+
+`0030` incorpora persistencia normalizada y aditiva para separar destinatarios,
+fuentes y reactivos sin convertir targeting en taxonomía.
 
 ### `target_families`
-Familias amplias de preparación/concurso.
+Familias amplias de preparación/concurso. La migración siembra únicamente la
+familia canónica `docentes`.
 
 ### `target_profiles`
 Perfiles/cargos canónicos reusables. Para docentes, el catálogo inicial contempla
 rector/director rural, coordinador, docente de aula preescolar, básica primaria,
-secundaria/media y docente orientador.
+secundaria/media y docente orientador. No añade perfiles por disciplina.
 
 ### `opec_catalog`
-OPEC concretas de una convocatoria/entidad, cada una mapeada a un perfil/cargo.
+OPEC concretas de una convocatoria/entidad, cada una mapeada a un perfil/cargo y
+familia. La tabla queda vacía: `0030` no inventa ni importa OPEC.
+
+### `item_target_families`
+Relación many-to-many para targets de familia ya admitidos por el contrato
+editorial. Evita expandir artificialmente una familia a todos sus perfiles.
 
 ### `item_target_profiles`
-Relación many-to-many entre `item_bank` y perfiles/cargos.
+Relación many-to-many entre `item_bank` y perfiles/cargos, con estado de revisión,
+evidencia y auditoría. `target_kind` es opcional hasta que exista una decisión
+editorial explícita; queda sin backfill.
 
 ### `item_opec_targets`
-Relación many-to-many para reactivos verdaderamente específicos de una OPEC.
+Relación many-to-many para reactivos verdaderamente específicos de una OPEC, con
+estado de revisión y evidencia. Queda sin backfill.
 
 ### `knowledge_sources`
-Catálogo de normas, teoría, guías, documentos técnicos y temarios.
+Catálogo de normas, teoría, guías, documentos técnicos y temarios, con estado de
+verificación. Queda vacío y ninguna fuente se declara verificada.
 
 ### `knowledge_source_targets`
-Aplicabilidad de una fuente a familia, perfil/cargo u OPEC.
+Aplicabilidad revisable de una fuente como común o dirigida a familia,
+perfil/cargo u OPEC. Una relación activa exige fuente verificada y auditoría.
 
 ### `item_source_links`
-Relación reactivo-fuente con tipo de relación y localizador.
+Relación reactivo-fuente con tipo de relación y localizador. Queda sin backfill.
 
-Estas tablas son **objetivo de evolución**, no descripción de un estado ya desplegado.
-Antes de implementarlas se debe verificar la secuencia real de migraciones y el
-estado aplicado en cada ambiente Supabase.
+Las nueve tablas habilitan RLS, no conceden acceso a `anon` ni `authenticated` y
+reservan CRUD a `service_role`. Este documento describe el SQL versionado en la
+rama; no declara que el esquema esté desplegado. Antes de aplicar `0030` se debe
+reconfirmar por separado el historial, recuperación, seguridad y datos del ambiente
+objetivo dentro de una ventana autorizada.
 
 ## Compatibilidad de transición
 
@@ -131,8 +151,8 @@ Tienen `updated_at`:
 - `user_skill_snapshots`
 - `evaluation_events`
 
-Las tablas futuras de catálogos/relaciones deberán definir también timestamps,
-auditoría y política RLS acorde con su función.
+La implementación `0030` añade `created_at` y `updated_at` a sus catálogos y
+relaciones, además de estados y campos de evidencia/revisión donde aplica.
 
 ## Contrato activo de lectura del banco
 

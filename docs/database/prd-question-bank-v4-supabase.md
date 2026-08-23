@@ -1,7 +1,8 @@
 # PRD — Migración de Question Bank V4 en Supabase
 
-**Estado:** base `0019–0027` materializada; importador atómico `0028` implementado y
-validado en Supabase local aislado. No aplicado en producción.
+**Estado:** base/importador `0019–0029` versionados. La foundation de targeting y
+conocimiento `0030` está implementada y validada en Supabase local aislado, sin
+aplicación en ningún ambiente Supabase remoto.
 
 ## 1. Resultado esperado
 
@@ -106,10 +107,14 @@ cuando columnas, metadata y opciones A–D coinciden realmente. También verific
 estado final completo dentro de la transacción. Está validada en base local y no
 aplicada en producción al cierre del checkpoint.
 
-### Evolución posterior — targeting y knowledge graph
+### M-0030 — Foundation aditiva de targeting y conocimiento
 
-No mezclar esta evolución con el corte inicial V4 si todavía no está estabilizado.
-Cuando se autorice, crear migraciones nuevas y monotónicas para incorporar:
+`supabase/migrations/0030_targeting_knowledge_foundation.sql` implementa en la rama
+aislada la primera persistencia del PRD 3. La secuencia completa `0001–0030` y sus
+pruebas de integración pasaron en Supabase local; la migración no fue aplicada en
+ningún ambiente remoto. La migración no modifica el corpus V4 congelado,
+`item_bank`, sus UUID, sus vistas seguras ni el campo
+transicional `item_bank.opec_id`.
 
 #### Catálogos de destinatarios
 
@@ -126,10 +131,19 @@ Para la familia docente el catálogo inicial debe poder representar:
 - `docente_aula_secundaria_media`;
 - `docente_orientador`.
 
+`0030` siembra únicamente la familia `docentes` y esos seis perfiles. No crea
+perfiles por disciplina, no inventa OPEC y deja `opec_catalog` sin registros.
+
 #### Relaciones de aplicabilidad
 
+- `item_target_families(item_id, family_id)`;
 - `item_target_profiles(item_id, profile_id, target_kind)`;
 - `item_opec_targets(item_id, opec_id)`.
+
+Las tres relaciones incorporan estado de revisión, evidencia no vacía y auditoría.
+`target_kind` queda opcional porque el contrato editorial congelado no distingue
+todavía `primary|compatible`; ningún importador debe inventarlo. La migración no
+ejecuta backfill: ningún reactivo recibe targeting canónico por texto o heurística.
 
 El campo existente `item_bank.opec_id` se conserva durante la transición por
 compatibilidad, pero no debe ser la única representación futura de aplicabilidad.
@@ -145,6 +159,12 @@ compatibilidad, pero no debe ser la única representación futura de aplicabilid
 `source_reference`, `source_locator` y `source_url` pueden mantenerse como datos
 denormalizados de la fuente principal durante la transición.
 
+La foundation deja vacíos los catálogos/relaciones de conocimiento y exige
+verificación explícita antes de activar aplicabilidad. Las nueve tablas nuevas
+habilitan RLS, niegan acceso a roles cliente y reservan CRUD a `service_role`.
+No se usa `content/knowledge-base/themes/docentes/temario-base.md` para carga ni
+gap analysis mientras permanezca abierta `V4-ARCH-DEBT-021`.
+
 ## 4. Datos y activación
 
 1. Hacer backup verificable y registrar conteos de `item_bank`, `item_options`,
@@ -156,8 +176,13 @@ denormalizados de la fuente principal durante la transición.
 6. Aprobar editorialmente la cohorte y activar de forma explícita.
 7. Aplicar el corte de fuente predeterminada únicamente cuando el piloto y las
    pruebas de runtime estén aprobados.
-8. Adoptar targeting/perfiles y knowledge graph como evolución aditiva posterior,
-   con migraciones separadas y backfill explícitamente auditado.
+8. Validar `0030` desde cero en Supabase local aislado, incluida la coexistencia
+   con `0019–0029`, constraints, triggers, RLS, grants y semillas canónicas.
+9. Aplicar `0030` en un ambiente remoto solo mediante una ventana autorizada y
+   preflight independiente; mantener OPEC, fuentes y mappings vacíos hasta contar
+   con evidencia y revisión explícitas.
+10. Ejecutar cualquier backfill futuro mediante una migración posterior separada
+    y auditable; nunca como inferencia final por palabras clave.
 
 No se migran datos legacy a V4: se importan reactivos V4 nuevos. No se borran filas
 legacy/V3 ni datos de sesiones durante este proyecto.
@@ -182,6 +207,13 @@ solo debe backfillearse con evidencia editorial validada.
 - prueba de que un reactivo multi-perfil no se duplica físicamente;
 - prueba de que una OPEC solo hereda preguntas del perfil/familia correctos;
 - pruebas de integridad referencial entre fuentes, perfiles, OPEC y reactivos.
+- para `0030`: verificar exactamente una familia y seis perfiles sembrados, con
+  OPEC, fuentes, relaciones y backfills en cero;
+- para `0030`: rechazar activación de OPEC no verificada, mappings aprobados sin
+  evidencia, fuentes verificadas sin auditoría y aplicabilidad activa de fuentes
+  no verificadas;
+- para `0030`: comprobar que `anon` y `authenticated` no tienen privilegios sobre
+  las nueve tablas y que `service_role` conserva la frontera administrativa.
 
 ## 6. Criterios de corte
 
