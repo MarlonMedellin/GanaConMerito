@@ -38,7 +38,7 @@ Se excluyeron los dos reactivos previos del dominio: objetivos de preescolar rel
 
 ## QA
 
-`history/snapshots/COVERAGE-AFTER-BATCH-10-20260822.json`:
+`../snapshots/COVERAGE-AFTER-BATCH-10-20260822.json`:
 - `itemCount`: **170**
 - `errors`: **[]**
 - `desarrollo_aprendizaje`: **12** reactivos
