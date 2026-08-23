@@ -24,8 +24,11 @@ last_reviewed: 2026-08-23
 # Sprint log
 
 ## Current delivery state
-- **Current operational block**: rebaseline V4 limpio implementado y validado en
-  rama local; checkpoint previo a toda acción remota.
+- **Current operational block**: rebaseline V4 limpio implementado y validado
+  localmente, publicado en `codex/v4-clean-rebaseline-sync` con checkpoint técnico
+  `92a12ab6e69b1db98ab0e6b46f2f19e2516a1f35`; base/merge-base
+  `master@544ebf883dc72fe474afe7d13be355d8f9e846b1`, `5` commits adelante y `0`
+  atrás. El draft PR todavía no se ha abierto.
 - **Baseline futura**: `0001–0003` desde cero, sin `item_bank`, UUID legacy ni
   fallback. La ruta `0029 → 0030` queda histórica/superseded para el cutover.
 - **Sync**: motor GitHub → Supabase con validate/plan/diff/apply/verify/status,
@@ -38,11 +41,17 @@ last_reviewed: 2026-08-23
   publicadas o en piloto; lote de 248 no ejecutado.
 - **V4 local**: 248 preguntas y 992 opciones reconciliadas; segunda ejecución sin
   cambios, drift reparado y rollback total pasan en Supabase local aislado.
+- **P1 técnicos**: idempotencia física del content-sync y guard transaccional
+  contra una base Legacy cerrados en el checkpoint remoto.
 - **Governance Hardening Roadmap state**: Fase 1 y Fase 2 iniciadas; Fase 3 en ejecucion documental (reduccion y clasificacion), Fases 4-5 futuras.
 - **Open risks**:
   - cero OPEC verificadas, mappings aprobados y fuentes promovibles en el snapshot;
   - UI administrativa diferida; engine y API server-only completos;
-  - ninguna evidencia remota nueva ni autorización de push/PR/cutover;
+  - la rama está publicada, pero no existe autorización de draft PR, merge,
+    Supabase remoto, activación, deploy, producción ni cutover;
+  - cero OPEC reales verificadas, cero mappings aprobados y fuentes en
+    `needs_review`; Supabase V4 remoto no está creado/aprobado/sincronizado y
+    Canary/Candidate SHA permanecen en **NO-GO**;
   - `0029` y `0030` están validadas localmente pero no aplicadas en producción;
     el lote permanece fuera de alcance;
   - acceso anónimo directo a claves y explicaciones del banco confirmado por probe

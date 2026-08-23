@@ -10,25 +10,35 @@ last_reviewed: 2026-08-23
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-08-23 — rebaseline V4 limpio implementado en rama local; checkpoint remoto pendiente.
+Ultima actualizacion: 2026-08-23 — rebaseline V4 limpio implementado, validado
+localmente y publicado en rama remota; draft PR pendiente.
 
 ---
 
 # Executive Operational Snapshot
 
-## Checkpoint local V4 limpio (vigente para este bloque)
+## Checkpoint remoto V4 limpio (vigente para este bloque)
 
-- Rama local: `codex/v4-clean-rebaseline-sync`; todavía sin push/PR/merge.
+- Rama publicada: `codex/v4-clean-rebaseline-sync`.
+- Checkpoint técnico remoto: `92a12ab6e69b1db98ab0e6b46f2f19e2516a1f35`.
+- Base y merge-base: `master@544ebf883dc72fe474afe7d13be355d8f9e846b1`;
+  el checkpoint técnico está `5` commits adelante y `0` atrás.
+- El rebaseline V4 limpio está implementado, validado únicamente en local y
+  publicado en la rama remota. El draft PR todavía no se ha abierto.
 - `supabase/migrations/0001–0003` crea una base V4 nueva sin la cadena histórica.
 - Las migraciones antiguas quedan en `supabase/legacy-migrations/`; la ruta
   `0029 → 0030` queda superseded para el cutover limpio.
 - Runtime de repositorio, Tutor y sesión usan V4 sin fallback `item_bank`.
 - Sync GitHub → Supabase implementado con CLI/API, guards, atomicidad,
   idempotencia y drift.
-- Evidencia únicamente local. Supabase remoto, VPS y runtime público no fueron
-  modificados ni revalidados en este bloque.
-- Deuda editorial: cero OPEC verificadas, cero mappings aprobados y cero fuentes
-  promovibles en el snapshot canónico actual.
+- Los P1 de idempotencia física del content-sync y guard transaccional contra una
+  base Legacy están cerrados en el checkpoint técnico remoto.
+- No existe autorización de merge, Supabase remoto, activación, deploy ni
+  producción. Supabase remoto, VPS y runtime público no fueron modificados ni
+  revalidados en este bloque.
+- Gates posteriores: `0` OPEC reales verificadas, `0` mappings aprobados,
+  fuentes todavía en `needs_review`, proyecto Supabase V4 remoto aún no
+  creado/aprobado/sincronizado y estados Canary/Candidate SHA en **NO-GO**.
 
 Los apartados siguientes conservan el último snapshot legacy/remoto conocido como
 contexto histórico y no autorizan ejecutar su ruta de migración.
