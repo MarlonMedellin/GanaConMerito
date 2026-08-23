@@ -1,8 +1,8 @@
 # Arquitectura de conocimiento, perfiles, cargos y OPEC para el banco de preguntas
 
-**Estado:** propuesta arquitectónica canónica para evolución del contenido y Supabase.  
+**Estado:** arquitectura canónica para evolución del contenido y Supabase; orden documental V4 materializado en la rama de reorganización.  
 **Alcance:** repositorio, banco V4, biblioteca de conocimiento, segmentación por perfil/cargo/OPEC y diseño de persistencia.  
-**No autoriza:** migraciones SQL, backfills, activación V4 en runtime ni cambios sobre el corte congelado de 248 reactivos.
+**No autoriza:** nuevas migraciones SQL de targeting/knowledge, backfills, activación V4 en runtime ni cambios sobre el corte congelado de 248 reactivos.
 
 ## 1. Problema que resuelve
 
@@ -66,20 +66,28 @@ content/
     ├── README.md
     ├── MANIFEST.json              # autoridad canónica; permanece en raíz
     ├── CONTRATO-EDITORIAL-V4.md
+    ├── legacy-processing-register.csv
     ├── items/                     # único lugar de reactivos productivos V4
     ├── taxonomy/
     ├── sources/                   # compatibilidad/índices locales V4
     ├── state/                     # estado auxiliar vigente
-    └── history/                   # expansión, auditorías, remediaciones y snapshots históricos
+    └── history/                   # evidencia histórica; nunca fuente runtime
+        ├── README.md
+        ├── INDEX.md
+        ├── PROVENANCE.md
+        ├── expansion/
+        ├── audits/
+        ├── remediation/
+        └── snapshots/
 ```
 
-La reorganización física de V4 se ejecuta por fases en una rama dedicada para no romper consumidores heredados. `MANIFEST.json` permanece en la raíz porque scripts y CI lo consumen allí. La Fase C2 fue el primer lote histórico trasladado a `history/`; los históricos anteriores se moverán después de verificar referencias internas y externas.
+La reorganización física de los artefactos históricos V4 ya fue ejecutada en `reorg-v4-architecture-20260822`: los conjuntos `EXPANSION-*`, `AUDIT-*`, `REAUDIT-*`, `REMEDIATION-*` y `COVERAGE-*` identificados fueron trasladados a `history/` y sus referencias internas reparadas. `MANIFEST.json` y `legacy-processing-register.csv` permanecen en la raíz porque tienen consumidores operativos y no deben moverse por razones únicamente visuales.
 
 ## 4. Lugar del Markdown de temas
 
 El documento Markdown que originó el análisis de temas docentes debe conservarse como **fuente de planeación**, no como taxonomía ni como reactivo.
 
-Destino recomendado:
+Destino canónico actual:
 
 ```text
 content/knowledge-base/themes/docentes/temario-base.md
@@ -92,6 +100,8 @@ Reglas:
 - no convertir automáticamente cada encabezado en `topic`;
 - usarlo para gap analysis, blueprints y generación de nuevas oportunidades;
 - cualquier ampliación de `taxonomy/topics.json` debe seguir el contrato editorial y demostrar necesidad independiente.
+
+Los informes históricos que mencionan `temas.md` o `temas(1).md` conservan esos nombres como parte de la trazabilidad original. La relación con `temario-base.md` se documenta en `content/question-bank-v4/history/PROVENANCE.md` sin afirmar identidad byte a byte cuando no esté demostrada.
 
 Si aparecen nuevos temarios para otros concursos, usar:
 
@@ -169,6 +179,8 @@ docente_aula_basica_primaria
 docente_aula_secundaria_media
 docente_orientador
 ```
+
+`content/profiles/docente/` se conserva como carpeta editorial histórica/puente. Para nueva arquitectura, la identidad canónica de perfiles se gobierna desde `content/targeting/profiles/docentes.json`.
 
 #### OPEC
 Representa una oferta/empleo específico de una convocatoria o entidad. Una OPEC debe mapear a un perfil/cargo canónico.
@@ -264,7 +276,9 @@ Esto permite que un mismo reactivo pertenezca a varios perfiles sin duplicarse.
 
 ## 9. Compatibilidad con el modelo Supabase actual
 
-El sistema actual ya dispone de `item_bank.opec_id`, `editorial_scope`, `source_reference`, `source_locator`, `source_url` y campos de clasificación V4.
+La línea V4 ya dispone en repositorio de la base materializada `0019–0027` y del importador atómico `0028_atomic_v4_batch_import.sql`, validado en un entorno Supabase local aislado. Esto **no equivale** a afirmar que `0028` esté aplicada o activa en producción.
+
+El sistema actual dispone de `item_bank.opec_id`, `editorial_scope`, `source_reference`, `source_locator`, `source_url` y campos de clasificación V4.
 
 La evolución propuesta debe ser **aditiva**:
 
@@ -274,6 +288,8 @@ La evolución propuesta debe ser **aditiva**:
 - introducir los catálogos/relaciones normalizados mediante migraciones nuevas;
 - usar `source_reference` como referencia primaria/denormalizada mientras se adopta `item_source_links`;
 - no ejecutar backfill automático sin mapa validado de perfiles y OPEC.
+
+La próxima migración de targeting/knowledge **no tiene número reservado permanentemente**. Después de `0028`, `0029` es el candidato inmediato solo mientras continúe libre; antes de crear SQL se debe releer `supabase/migrations/` y usar el siguiente número realmente disponible.
 
 ## 10. Regla para el selector futuro
 
@@ -308,53 +324,64 @@ Evolución recomendada:
 
 Los archivos `AUDIT-*`, `COVERAGE-*`, `EXPANSION-*`, `REAUDIT-*` y `REMEDIATION-*` son evidencia histórica, no estado operativo actual.
 
-Estructura adoptada de forma progresiva:
+La estructura adoptada es:
 
 ```text
 content/question-bank-v4/history/
+├── README.md
+├── INDEX.md
+├── PROVENANCE.md
 ├── expansion/
 ├── audits/
 ├── remediation/
 └── snapshots/
 ```
 
-La Fase C2 ya está ubicada en esta estructura como primer lote de migración. Los históricos anteriores que continúan en la raíz se moverán por lotes después de verificar referencias. El estado vigente continúa gobernado por `MANIFEST.json`.
+La migración física de los históricos identificados está completada en la rama de reorganización. `INDEX.md` reconstruye la secuencia editorial y `PROVENANCE.md` conecta insumos/rutas legacy con la arquitectura canónica sin falsificar su historia. El estado vigente continúa gobernado por `MANIFEST.json` en la raíz.
 
 ## 13. Plan de implementación
 
-### Fase 0 — documentación y catálogos
-- aprobar esta arquitectura;
+### Fase 0 — documentación y catálogos — COMPLETADA EN SU BASE
+- establecer esta arquitectura;
 - establecer `content/knowledge-base/` y `content/targeting/`;
 - ubicar el Markdown original de temas docentes en `knowledge-base/themes/docentes/`;
 - definir catálogo inicial de perfiles docentes.
 
-### Fase 1 — orden documental — EN EJECUCIÓN
-- establecer `history/` y `state/`;
-- mover históricos V4 a `history/` sin cambiar contenido;
-- hacerlo por lotes y actualizar referencias antes de retirar rutas antiguas;
-- conservar `MANIFEST.json`, contrato, taxonomía e ítems en la raíz operativa;
-- mantener `legacy-processing-register.csv` en su ruta actual mientras existan consumidores que dependan de ella.
+Quedan abiertas la ampliación del corpus de conocimiento, catálogo real de OPEC y mapas editoriales de targeting.
 
-### Fase 2 — corpus de conocimiento
-- inventariar `content/normative/` y fuentes V4 actuales;
+### Fase 1 — orden documental — COMPLETADA EN LA RAMA DE REORGANIZACIÓN
+- `history/` y `state/` establecidos;
+- históricos V4 identificados trasladados a `history/`;
+- referencias relativas reparadas;
+- índice y provenance creados;
+- `MANIFEST.json`, contrato, taxonomía e ítems conservados en ubicación operativa;
+- `legacy-processing-register.csv` conservado en raíz mientras existan consumidores.
+
+La integración a `master` depende de los gates finales y revisión del PR correspondiente.
+
+### Fase 2 — corpus de conocimiento — PENDIENTE
+- inventariar `content/normative/`, fuentes V4 y otras fuentes existentes;
 - deduplicar por identidad de fuente;
 - crear metadatos de vigencia, localizador y aplicabilidad;
-- añadir normas/guías/teoría por familia, perfil y OPEC mediante mapas, no copias.
+- añadir normas/guías/teoría por familia, perfil y OPEC mediante mapas, no copias;
+- producir un gap analysis derivado del temario sin modificar el original.
 
-### Fase 3 — Supabase
-- diseñar una migración nueva posterior a la secuencia vigente;
+### Fase 3 — Supabase targeting/knowledge — DIFERIDA
+- `0028` ya implementa el importador V4 atómico y está validada localmente;
+- comprobar nuevamente la secuencia real antes de numerar la siguiente migración;
 - crear catálogos de familias, perfiles y OPEC;
 - crear relaciones many-to-many de reactivos y fuentes;
 - mantener compatibilidad con `item_bank.opec_id` durante transición;
-- probar RLS, índices, importador y vistas antes de cualquier activación.
+- probar RLS, índices, importador y vistas antes de cualquier activación;
+- no confundir implementación/versionado local con despliegue productivo.
 
-### Fase 4 — targeting del corpus V4
+### Fase 4 — targeting del corpus V4 — PENDIENTE
 - mapear los 248 reactivos actuales a familia/perfiles solo con evidencia editorial;
 - no inferir perfiles por palabras clave automáticamente sin revisión;
 - permitir muchos perfiles por reactivo;
 - dejar los reactivos verdaderamente transversales en la capa común.
 
-### Fase 5 — runtime
+### Fase 5 — runtime — PENDIENTE
 - selector jerárquico familia/perfil/OPEC;
 - cobertura y dashboards por destino;
 - recomendación adaptativa sin duplicar reactivos.
@@ -371,3 +398,11 @@ Antes de crear una nueva pregunta, un agente debe poder responder:
 6. ¿el nuevo reactivo requiere cambiar taxonomía o solo targeting?
 
 La biblioteca de conocimiento sirve para **descubrir y justificar** oportunidades; la taxonomía sirve para **clasificar lo evaluado**; el targeting sirve para **decidir a quién mostrarlo**. Mantener esas tres funciones separadas es la decisión arquitectónica central.
+
+## 15. Registro de deuda y coordinación
+
+El registro vivo de decisiones diferidas y dependencias está en:
+
+`docs/03-architecture/question-bank-v4-consolidation-debt.md`
+
+Ese archivo debe consultarse antes de iniciar nuevas migraciones, mover artefactos operativos o convertir perfiles/OPEC en estructura de base de datos.
