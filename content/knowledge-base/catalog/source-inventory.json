@@ -4,7 +4,8 @@
   "notes": [
     "Este inventario registra fuentes canónicas y candidatos legacy; no convierte automáticamente un candidato en fuente verificada.",
     "La aplicabilidad por familia, perfil u OPEC se mantiene fuera de este catálogo, en maps/targeting.",
-    "repoPathLegacy conserva procedencia histórica y no implica que esa ruta sea canónica."
+    "repoPathLegacy conserva procedencia histórica y no implica que esa ruta sea canónica.",
+    "Una URL oficial verificada demuestra identidad/procedencia de la norma, pero no sustituye la revisión de vigencia y localizador del artículo usado por cada reactivo."
   ],
   "sources": [
     {
@@ -12,38 +13,44 @@
       "sourceType": "normative",
       "title": "Decreto Único Reglamentario del Sector Educación",
       "reference": "Decreto 1075 de 2015",
-      "issuerOrAuthor": null,
+      "issuerOrAuthor": "Presidencia de la República de Colombia",
       "jurisdiction": "colombia",
-      "publicationDate": null,
+      "publicationDate": "2015-05-26",
       "effectiveFrom": null,
       "effectiveTo": null,
       "verificationStatus": "needs_review",
       "verifiedAt": null,
-      "url": null,
+      "lastCheckedAt": "2026-08-22",
+      "verificationScope": "official_identity_and_reference_verified; article_level_currency_pending",
+      "sourceSystem": "funcion_publica_gestor_normativo",
+      "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
       "repoPath": null,
       "repoPathLegacy": "content/normative/decreto_1075.md",
       "locator": null,
-      "rightsNote": "Ficha legacy resumida; verificar contra fuente oficial antes de promover o usar como soporte decisivo.",
-      "notes": "El archivo legacy contiene resumen y principios generales, no el texto integral ni localizadores específicos."
+      "rightsNote": "Ficha legacy resumida; la norma oficial es pública, pero la copia local no es texto integral ni sustituye la fuente oficial.",
+      "notes": "Función Pública presenta una versión integrada con modificaciones y reporta actualización de la página; antes de usar un artículo como soporte decisivo se debe verificar su vigencia y localizador concreto."
     },
     {
       "sourceId": "col-ley-1098-infancia-adolescencia",
       "sourceType": "normative",
       "title": "Código de la Infancia y la Adolescencia",
       "reference": "Ley 1098 de 2006",
-      "issuerOrAuthor": null,
+      "issuerOrAuthor": "Congreso de la República de Colombia",
       "jurisdiction": "colombia",
-      "publicationDate": null,
-      "effectiveFrom": null,
+      "publicationDate": "2006-11-08",
+      "effectiveFrom": "2007-05-08",
       "effectiveTo": null,
       "verificationStatus": "needs_review",
       "verifiedAt": null,
-      "url": null,
+      "lastCheckedAt": "2026-08-22",
+      "verificationScope": "official_identity_and_reference_verified; article_level_currency_pending",
+      "sourceSystem": "funcion_publica_gestor_normativo",
+      "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=22106",
       "repoPath": null,
       "repoPathLegacy": "content/normative/ley_1098.md",
       "locator": null,
-      "rightsNote": "Ficha legacy resumida; verificar contra fuente oficial antes de promover o usar como soporte decisivo.",
-      "notes": "El archivo legacy contiene resumen y principios generales, no el texto integral ni localizadores específicos."
+      "rightsNote": "Ficha legacy resumida; la ley oficial es pública, pero la copia local no es texto integral ni sustituye la fuente oficial.",
+      "notes": "La identidad, fecha de expedición, entrada en vigencia y referencia oficial fueron contrastadas. La Ley 1098 ha sido modificada; cualquier artículo usado por un reactivo exige verificación de vigencia/localizador antes de considerarse fuente decisiva."
     }
   ]
 }
