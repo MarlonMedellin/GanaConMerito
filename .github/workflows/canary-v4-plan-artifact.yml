@@ -26,7 +26,7 @@ jobs:
       - run: npm ci
       - name: Generate canonical plan from frozen master SHA
         run: |
-          npx tsx -e '(async () => { const { buildContentSyncPlan, calculateContentSyncPlanHash } = await import("./scripts/lib/content-sync-plan.ts"); const plan = await buildContentSyncPlan(process.cwd()); const planHash = calculateContentSyncPlanHash(plan); await import("node:fs").then(({writeFileSync}) => writeFileSync("content-sync-plan.json", JSON.stringify({planHash, plan}, null, 2))); console.log(JSON.stringify({gitSha: plan.gitSha, planHash, counts: Object.fromEntries(Object.entries(plan.entities).map(([k,v]) => [k,v.length]))})); })()'
+          npx tsx -e '(async () => { const imported = await import("./scripts/lib/content-sync-plan.ts"); const api = imported.default ?? imported; const plan = await api.buildContentSyncPlan(process.cwd()); const planHash = api.calculateContentSyncPlanHash(plan); const { writeFileSync } = await import("node:fs"); writeFileSync("content-sync-plan.json", JSON.stringify({planHash, plan}, null, 2)); console.log(JSON.stringify({gitSha: plan.gitSha, planHash, counts: Object.fromEntries(Object.entries(plan.entities).map(([k,v]) => [k,v.length]))})); })()'
       - uses: actions/upload-artifact@v4
         with:
           name: canary-v4-content-sync-plan
