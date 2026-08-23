@@ -89,6 +89,58 @@ realizó despliegue. Cualquier aplicación de `0030` requiere autorización y un
 preflight remoto independiente; este bloque no aporta evidencia de runtime ni de
 producción.
 
+## Preparación de integración
+
+Corte remoto observado el **2026-08-23**:
+
+- `master`: `7be92b655dee4965872963f1ca57d6eb96107599`;
+- PR #97, contratos editoriales knowledge/targeting: draft, cabeza
+  `9c1963e11de8ea7a267cf938840b96abf0063285`, checks verdes;
+- rama de esta foundation: `b591a07242ffbcdbafc32b4089607193b912f0c2`;
+- PR #101, readiness canary: draft y en evolución; usa transitoriamente
+  `professional_profiles`, catálogo OPEC de entorno e `item_bank.opec_id`, no las
+  tablas normalizadas de `0030`.
+
+La foundation no debe integrarse todavía sobre `master`: depende de que los
+contratos del PR #97 sean autorizados e integrados primero. Después de ello se
+debe actualizar esta rama sobre el nuevo `master`, resolver cualquier conflicto
+de CI y repetir el gate completo `0001–0030`. No se congelará en este documento
+un SHA de PR #101 porque su rama está activa.
+
+### Matriz contrato editorial → persistencia `0030`
+
+| Contrato editorial del PR #97 | Persistencia `0030` | Regla de compatibilidad |
+|---|---|---|
+| familia `code/name/description/status` | `target_families` | identidad por `code`; `active` se representa con `is_active=true` |
+| perfil `familyCode/profileCode/name/legacyApplicantProfile/status` | `target_profiles` | familia resuelta por código; seis perfiles canónicos; sin disciplinas |
+| OPEC `sourceSystem/externalOpecId/familyCode/profileCode/...` | `opec_catalog` | identidad natural fuente+ID externo; perfil debe pertenecer a la familia |
+| target de reactivo tipo `family` | `item_target_families` | relación explícita; no expandir automáticamente a todos los perfiles |
+| target de reactivo tipo `profile` | `item_target_profiles` | `target_kind=NULL`; el contrato no define primary/compatible |
+| target de reactivo tipo `opec` | `item_opec_targets` | OPEC existente y revisión/evidencia preservadas |
+| inventario de fuente | `knowledge_sources` | fuente `needs_review` permanece no verificada y sin targets activos |
+| mapa knowledge `common/family/profile/opec` | `knowledge_source_targets` | una sola forma de target; estado `active` exige verificación completa |
+| relación reactivo–fuente | `item_source_links` | solo evidencia editorial explícita; nunca inferida desde texto o keywords |
+
+El corte machine-readable del PR #97 contiene una familia, seis perfiles, cero
+OPEC, dos fuentes `needs_review`, cero mapas knowledge y cero mappings de
+reactivos. Por tanto, cualquier importador futuro debe tratar archivos vacíos
+como “sin instrucciones”, no como borrado, y queda fuera de este bloque.
+
+### Gate pendiente tras integrar PR #97
+
+1. actualizar esta rama desde el `master` que ya contenga los contratos;
+2. ejecutar `content:validate:knowledge-targeting`;
+3. reconstruir Supabase local desde `0001` hasta `0030`;
+4. repetir contrato estático, integración PostgreSQL, seguridad y concurrencia;
+5. repetir suites V4, typecheck, documentación y diff check;
+6. confirmar nuevamente que `0029`/`0030`, lote, OPEC, fuentes, mappings,
+   backfill, activación y deploy siguen sin ejecutarse remotamente.
+
+El PR #101 requiere una decisión de integración separada: su catálogo canary
+debe declararse adaptador transitorio o migrarse después al modelo normalizado.
+Mezclar ambos modelos sin esa decisión crearía dos fuentes de verdad para OPEC y
+perfiles.
+
 ## Sincronización documental
 
 Actualizados en este bloque:
