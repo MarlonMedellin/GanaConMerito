@@ -2,7 +2,7 @@
 
 Biblioteca compartida de conocimiento para construir, auditar y mantener bancos de preguntas presentes y futuros.
 
-Esta carpeta **no es un banco de reactivos**. Contiene las fuentes, temarios, mapas y referencias que permiten justificar nuevos reactivos y determinar su aplicabilidad.
+Esta carpeta **no es un banco de reactivos**. Contiene fuentes, temarios, mapas y referencias que permiten justificar nuevos reactivos y determinar su aplicabilidad.
 
 ## Principios
 
@@ -11,17 +11,31 @@ Esta carpeta **no es un banco de reactivos**. Contiene las fuentes, temarios, ma
 3. Un temario orienta cobertura; no crea automáticamente una taxonomía ni una pregunta.
 4. Toda fuente debe conservar procedencia, vigencia/fecha de consulta y localizador cuando aplique.
 5. El banco V4 sigue gobernado por `content/question-bank-v4/CONTRATO-EDITORIAL-V4.md` y `MANIFEST.json`.
+6. Un archivo legacy no se promueve automáticamente a fuente verificada: primero debe pasar por inventario y normalización.
 
-## Estructura objetivo
+## Rol de las fuentes — regla simple congelada
+
+Para evitar complejidad adicional, no se crean nuevas capas ni enums en esta etapa. Los agentes deben distinguir conceptualmente tres usos:
+
+- **fuente oficial de reglas:** norma, Acuerdo, Anexo u OPEC oficial; gobierna las reglas que efectivamente le correspondan;
+- **orientación de evaluación:** matriz de estructura de pruebas, guía y ejes temáticos oficiales; orienta qué y cómo se evalúa sin reemplazar las reglas jurídicas superiores;
+- **material de estudio:** temarios, referencias académicas, documentos técnicos y guías complementarias; sirven para preparar y construir contenido, pero no adquieren autoridad normativa por estar almacenados aquí.
+
+Una misma fuente puede ser relevante para más de un propósito, pero su autoridad no se infiere de su carpeta. Esta distinción es documental y no ensancha el contrato de preguntas ni el modelo de datos antes de canary.
+
+## Estructura actual
 
 ```text
 content/knowledge-base/
 ├── README.md
-├── catalog/                  # índice de fuentes y metadatos
-├── themes/                   # temarios y blueprints
+├── catalog/
+│   ├── README.md
+│   └── source-inventory.json    # fuentes canónicas y candidatos legacy
+├── themes/
 │   ├── docentes/
 │   └── <familia>/
 ├── sources/
+│   ├── README.md
 │   ├── normative/
 │   ├── academic/
 │   ├── technical/
@@ -32,26 +46,34 @@ content/knowledge-base/
     └── opecs/
 ```
 
-## Temario docente original
+## Temario docente
 
-El Markdown de temas que sirvió para analizar la expansión docente debe conservarse, cuando se incorpore como archivo del repositorio, en:
+El Markdown de trabajo derivado del archivo aportado por el usuario vive en:
 
 ```text
 content/knowledge-base/themes/docentes/temario-base.md
 ```
 
-No se recrea aquí de memoria: debe copiarse desde el documento fuente original para preservar fidelidad y procedencia.
+Es una fuente de planeación, gap analysis y descubrimiento de cobertura. No es un catálogo automático de `topic`, no prueba por sí solo la vigencia de una afirmación y no autoriza la creación automática de reactivos.
 
-## Fuentes normativas
+La verificación de integridad del archivo fuente está documentada en:
 
-`content/normative/` contiene actualmente material normativo previo. Su contenido debe inventariarse y migrarse de forma controlada a esta biblioteca; no se deben crear copias paralelas de la misma ley o decreto mientras dure la transición.
+```text
+content/knowledge-base/themes/docentes/INTEGRITY.md
+```
 
-Una norma puede ser:
+Mientras esa verificación permanezca abierta, no describir `temario-base.md` como copia byte a byte del archivo original.
 
-- común a toda la aplicación;
-- común a una familia como `docentes`;
-- especialmente relevante para uno o varios perfiles/cargos;
-- exclusiva de una OPEC o convocatoria concreta.
+## Fuentes normativas legacy
+
+`content/normative/` conserva material previo a esta arquitectura. En el primer inventario se identificaron:
+
+- `decreto_1075.md`;
+- `ley_1098.md`.
+
+Son fichas resumidas, no copias integrales verificadas de las normas. Permanecen temporalmente en su ruta legacy y están registradas en `catalog/source-inventory.json` con `verificationStatus: needs_review`.
+
+No agregar nuevas fuentes en `content/normative/`. El destino canónico de una fuente ya normalizada es `content/knowledge-base/sources/`.
 
 ## Perfiles docentes iniciales
 
@@ -64,7 +86,7 @@ La familia `docentes` utiliza como perfiles canónicos iniciales:
 - `docente_aula_secundaria_media`
 - `docente_orientador`
 
-La base normativa/pedagógica común se comparte. Los mapas de perfil añaden únicamente lo diferencial.
+La base normativa/pedagógica común se comparte. Los mapas de perfil añaden únicamente lo diferencial. Para nueva arquitectura, la identidad canónica de perfiles vive en `content/targeting/profiles/docentes.json`.
 
 ## Relación con preguntas
 
@@ -77,6 +99,25 @@ content/question-bank-v4/items/
 Una fuente puede sostener muchos reactivos y un reactivo puede relacionarse con varias fuentes. La arquitectura normalizada futura para Supabase se documenta en:
 
 `docs/03-architecture/question-bank-knowledge-targeting-architecture.md`
+
+## Validación de catálogos
+
+Antes de fusionar cambios en `knowledge-base` o `targeting`, ejecutar:
+
+```bash
+npm run content:validate:knowledge-targeting
+```
+
+El gate valida actualmente:
+
+- familias canónicas;
+- pertenencia de perfiles a su familia;
+- catálogo OPEC y sus referencias a familia/perfil;
+- regla `active => verified` para OPEC;
+- duplicados de identidad OPEC;
+- unicidad de `sourceId` en el inventario de conocimiento.
+
+`PR Checks` ejecuta este validador automáticamente. Los mapas de aplicabilidad machine-readable se incorporarán al mismo gate cuando se materialicen sus contratos JSON.
 
 ## Qué almacenar
 
@@ -97,4 +138,5 @@ Una fuente puede sostener muchos reactivos y un reactivo puede relacionarse con 
 - fuentes sin procedencia;
 - copias repetidas por perfil;
 - reactivos productivos;
-- snapshots históricos de auditoría V4.
+- snapshots históricos de auditoría V4;
+- nuevas fuentes en rutas legacy cuando ya exista destino canónico en `knowledge-base`.

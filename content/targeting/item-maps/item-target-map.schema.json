@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gcm://content/targeting/item-maps/item-target-map.schema.json",
+  "title": "GanaConMerito item targeting map",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "bank", "mappings"],
+  "properties": {
+    "schemaVersion": {"type": "integer", "const": 1},
+    "bank": {"type": "string", "minLength": 1},
+    "mappings": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/mapping"}
+    }
+  },
+  "$defs": {
+    "nullableString": {"type": ["string", "null"]},
+    "familyTarget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "familyCode"],
+      "properties": {
+        "type": {"const": "family"},
+        "familyCode": {"type": "string", "minLength": 1}
+      }
+    },
+    "profileTarget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "familyCode", "profileCode"],
+      "properties": {
+        "type": {"const": "profile"},
+        "familyCode": {"type": "string", "minLength": 1},
+        "profileCode": {"type": "string", "minLength": 1}
+      }
+    },
+    "opecTarget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "sourceSystem", "externalOpecId"],
+      "properties": {
+        "type": {"const": "opec"},
+        "sourceSystem": {"type": "string", "minLength": 1},
+        "externalOpecId": {"type": "string", "minLength": 1}
+      }
+    },
+    "target": {
+      "oneOf": [
+        {"$ref": "#/$defs/familyTarget"},
+        {"$ref": "#/$defs/profileTarget"},
+        {"$ref": "#/$defs/opecTarget"}
+      ]
+    },
+    "mapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["itemId", "targets", "reviewStatus", "evidence"],
+      "properties": {
+        "itemId": {"type": "string", "minLength": 1},
+        "targets": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/target"}
+        },
+        "reviewStatus": {
+          "type": "string",
+          "enum": ["candidate", "reviewed", "approved", "rejected"]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1}
+        },
+        "reviewedBy": {"$ref": "#/$defs/nullableString"},
+        "reviewedAt": {"$ref": "#/$defs/nullableString"},
+        "notes": {"$ref": "#/$defs/nullableString"}
+      }
+    }
+  }
+}

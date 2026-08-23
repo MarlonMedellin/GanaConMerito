@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "status": "coordination_contract_frozen_for_canary",
+  "branch": "reorg-v4-architecture-20260822",
+  "baseMaster": "7be92b655dee4965872963f1ca57d6eb96107599",
+  "pullRequest": 97,
+  "parallelExecution": {
+    "authorized": true,
+    "scope": "design, additive migration implementation and isolated tests on an independent branch",
+    "mergeGate": "before merge, contrast migration/backfill/selector against PR #97 canonical contracts and current master migration sequence",
+    "productionAuthorized": false
+  },
+  "v4Boundary": {
+    "migrationsOccupiedThrough": "0029_harden_v4_manifest_reconciliation.sql",
+    "migration0028ProductionApplied": true,
+    "productionBatchExecuted": false,
+    "migration0029ProductionApplied": false,
+    "migration0029LocalValidation": "passed_at_checkpoint",
+    "nextMigrationRule": "re-read supabase/migrations; with the freeze state, use 0030 or the next actually free higher number"
+  },
+  "architectureFreeze": {
+    "active": true,
+    "until": "canary_and_first_stakeholder_or_early_adopter_testing",
+    "reopenOnlyFor": [
+      "blocking correctness defect",
+      "security boundary defect",
+      "demonstrable data integrity or data loss risk",
+      "objective incompatibility with an already applied migration that cannot be solved compatibly"
+    ],
+    "defer": [
+      "new modeling layers",
+      "profile renames",
+      "discipline-specific profile proliferation",
+      "additional question contract fields",
+      "preference-driven restructuring"
+    ]
+  },
+  "canonicalPaths": {
+    "familyCatalog": "content/targeting/families/docentes.json",
+    "profileCatalog": "content/targeting/profiles/docentes.json",
+    "opecCatalog": "content/targeting/opecs/catalog.json",
+    "opecSchema": "content/targeting/opecs/catalog.schema.json",
+    "itemTargetMap": "content/targeting/item-maps/question-bank-v4.json",
+    "itemTargetMapSchema": "content/targeting/item-maps/item-target-map.schema.json",
+    "knowledgeInventory": "content/knowledge-base/catalog/source-inventory.json",
+    "knowledgeSources": "content/knowledge-base/sources/",
+    "knowledgeMaps": "content/knowledge-base/maps/",
+    "knowledgeMapSchema": "content/knowledge-base/maps/map.schema.json",
+    "v4Manifest": "content/question-bank-v4/MANIFEST.json",
+    "v4OperationalRegister": "content/question-bank-v4/legacy-processing-register.csv",
+    "prd3Checkpoint": "docs/04-quality/prd-3-v4-production-checkpoint-2026-08-22.md"
+  },
+  "catalogStates": {
+    "opecCatalog": "empty_until_real_verified_data",
+    "itemTargetMap": "schema_and_validator_ready_but_mappings_empty_until_editorial_review",
+    "knowledgeSourceMaps": "schema_and_validator_ready_but_no_populated_maps_until_sources_and_applicability_are_reviewed"
+  },
+  "profileCodes": [
+    "rector_director_rural",
+    "coordinador",
+    "docente_aula_preescolar",
+    "docente_aula_basica_primaria",
+    "docente_aula_secundaria_media",
+    "docente_orientador"
+  ],
+  "targetingSemantics": {
+    "profile": "reusable preparation group",
+    "positionName": "exact official position or discipline/area denomination when greater specificity is required",
+    "opec": "concrete traceable offer",
+    "flow": "profile -> positionName -> OPEC",
+    "createProfilesPerDisciplineNow": false,
+    "addAreaSpecialtyEmploymentIdentityLayersNow": false
+  },
+  "sourceAuthorityRoles": {
+    "officialRules": "norm, Agreement, Annex or official OPEC within its legal/operational scope",
+    "assessmentOrientation": "official test matrix, guide or thematic axes",
+    "studyMaterial": "themes, academic references, technical documents and complementary guides",
+    "newDataLayerRequiredNow": false
+  },
+  "expectedResponsibilities": [
+    "target_families",
+    "target_profiles",
+    "opec_catalog",
+    "item_target_profiles",
+    "item_opec_targets",
+    "knowledge_sources",
+    "knowledge_source_targets",
+    "item_source_links"
+  ],
+  "preserve": [
+    "item_bank",
+    "existing UUIDs",
+    "248 frozen V4 item JSON files",
+    "MANIFEST.json",
+    "legacy-processing-register.csv while consumed",
+    "V4 safe views and security boundary",
+    "item_bank.opec_id during transition",
+    "migrations 0001-0029 without rewriting"
+  ],
+  "rules": {
+    "taxonomyIsTargeting": false,
+    "duplicateItemsPerProfileOrOpec": false,
+    "automaticKeywordBackfillAllowed": false,
+    "inventFakeOpecs": false,
+    "mutateFrozenItemsForTargeting": false,
+    "introduceProfileSpecificOnlyInSql": false,
+    "manyToManyItemProfilesRequired": true,
+    "singleCanonicalIdentityPerKnowledgeSource": true,
+    "approvedItemTargetRequiresEvidence": true,
+    "activeKnowledgeTargetRequiresVerifiedSource": true
+  },
+  "validation": {
+    "command": "npm run content:validate:knowledge-targeting",
+    "scripts": [
+      "scripts/validate-knowledge-targeting.ts",
+      "scripts/validate-knowledge-vocabularies.ts"
+    ],
+    "allowedSourceVerificationStatus": [
+      "needs_review",
+      "verified",
+      "rejected"
+    ],
+    "sourceReferenceInventoryCommand": "npm run content:inventory:v4-sources",
+    "sourceReferenceInventoryScript": "scripts/inventory-v4-source-references.ts",
+    "ciWorkflow": ".github/workflows/pr-checks.yml",
+    "infrastructureStatus": "implemented",
+    "checks": [
+      "family and profile referential integrity",
+      "OPEC external identity uniqueness",
+      "OPEC activation requires verification",
+      "knowledge sourceId uniqueness",
+      "controlled knowledge source verificationStatus vocabulary",
+      "knowledge map target/source referential integrity for every populated map",
+      "active knowledge relation requires verified source and verification metadata",
+      "itemId exists in V4 MANIFEST",
+      "item target profile/OPEC exists",
+      "approved item targeting relation has evidence"
+    ]
+  },
+  "blockedInputs": [
+    {
+      "path": "content/knowledge-base/themes/docentes/temario-base.md",
+      "reason": "integrity mismatch against original upload",
+      "debtId": "V4-ARCH-DEBT-021",
+      "originalSizeBytes": 94850,
+      "originalSha256": "4dd3e7d1df2af89e4818f77ca244dc26187930a8d7faf19d1c7f05538bc88bb7",
+      "originalGitBlobSha": "f5c90d8393f8dbb7a83794134b27b1a0849de807",
+      "repositoryGitBlobSha": "2d022f1d66e5d98653178d3d772db210c3aec442"
+    }
+  ],
+  "closedDebtsRelevantToPrd3": [
+    "V4-ARCH-DEBT-001",
+    "V4-ARCH-DEBT-006",
+    "V4-ARCH-DEBT-017",
+    "V4-ARCH-DEBT-020",
+    "V4-ARCH-DEBT-022"
+  ],
+  "openDebtsForPrd3": [
+    "V4-ARCH-DEBT-007",
+    "V4-ARCH-DEBT-008",
+    "V4-ARCH-DEBT-009",
+    "V4-ARCH-DEBT-011",
+    "V4-ARCH-DEBT-018",
+    "V4-ARCH-DEBT-021"
+  ]
+}
