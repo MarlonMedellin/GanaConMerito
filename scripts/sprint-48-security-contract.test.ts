@@ -44,6 +44,15 @@ test("Sprint 48 reconciles the governed V4 importer without replacing its histor
   assert.match(migration, /grant execute on function public\.upsert_content_item_v4\(jsonb, text, text, text\)[\s\S]+to service_role/i);
 });
 
+test("Sprint 48 repairs V4 option counting without weakening importer grants", async () => {
+  const migration = await readRepoFile("supabase/migrations/0025_fix_v4_option_count.sql");
+
+  assert.match(migration, /pg_get_functiondef/);
+  assert.match(migration, /jsonb_object_keys\(p_item->''options''\)/);
+  assert.match(migration, /V4_IMPORT_OPTION_COUNT_EXPRESSION_NOT_FOUND/);
+  assert.match(migration, /revoke execute on function public\.upsert_content_item_v4\(jsonb, text, text, text\)[\s\S]+from public, anon, authenticated/i);
+});
+
 test("pre-answer route does not select or serialize answer-bearing fields", async () => {
   const route = await readRepoFile("src/app/api/session/item/route.ts");
   const sessionTypes = await readRepoFile("src/types/session.ts");
