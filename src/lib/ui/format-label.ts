@@ -6,6 +6,9 @@ const TECHNICAL_LABEL_DICTIONARY: Record<string, string> = {
   normatividad: "Normatividad",
   lectura_de_indicadores: "Lectura de indicadores",
   gestion_academica: "Gestión académica",
+  planeacion_curricular: "Planeación curricular",
+  decision_pedagogica: "Decisión pedagógica",
+  gestion_educativa: "Gestión educativa",
 };
 
 function normalizeWhitespace(value: string) {

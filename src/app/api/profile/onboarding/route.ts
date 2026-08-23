@@ -8,8 +8,8 @@ const onboardingSchema = z.object({
   activeGoal: z.string().trim().min(1, "La meta activa es obligatoria.").max(240),
   activeAreas: z
     .array(z.string().trim().min(1))
-    .min(1, "Debes indicar al menos un área activa.")
     .max(20)
+    .default([])
     .transform((areas) => Array.from(new Set(areas.map((area) => area.trim()).filter(Boolean)))),
   preferredFeedbackStyle: z.enum(["socratic"]).default("socratic"),
 });
@@ -61,7 +61,7 @@ export async function POST(request: Request) {
       active_goal: parsed.data.activeGoal,
       active_areas: parsed.data.activeAreas,
       preferred_feedback_style: parsed.data.preferredFeedbackStyle,
-      onboarding_completed: parsed.data.activeAreas.length > 0,
+      onboarding_completed: true,
     })
     .eq("profile_id", profile.id);
 

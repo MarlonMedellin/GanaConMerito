@@ -1,12 +1,12 @@
-import type { SupabaseClient } from "@supabase/supabase-js";
+import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 import type { TutorTurnTrace } from "../../types/tutor-turn";
 
 export async function persistTutorTurnTrace(params: {
-  supabase: SupabaseClient;
   profileId: string;
   trace: TutorTurnTrace;
 }) {
-  const { supabase, profileId, trace } = params;
+  const { profileId, trace } = params;
+  const supabase = getSupabaseAdminClient();
 
   const { error } = await supabase.from("tutor_turn_traces").insert({
     trace_id: trace.traceId,

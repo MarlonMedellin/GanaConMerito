@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { useRouter } from "next/navigation";
 
 interface TargetProfileOption {
   code: string;
@@ -24,7 +23,6 @@ export function OnboardingForm(props: {
   initialPreferredFeedbackStyle: string;
   initialActiveAreas: string[];
 }) {
-  const router = useRouter();
   const [targetProfileCode, setTargetProfileCode] = useState(
     props.initialTargetProfileCode || props.targetProfiles[0]?.code || "",
   );
@@ -47,7 +45,6 @@ export function OnboardingForm(props: {
       ),
     [activeAreas],
   );
-  const hasActiveAreas = parsedActiveAreas.length > 0;
   const compatibleOpecs = useMemo(
     () => props.opecs.filter((opec) => opec.profile_code === targetProfileCode),
     [props.opecs, targetProfileCode],
@@ -55,12 +52,6 @@ export function OnboardingForm(props: {
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-
-    if (!hasActiveAreas) {
-      setError("Debes indicar al menos un área activa.");
-      return;
-    }
-
     setLoading(true);
     setError(null);
 
@@ -84,8 +75,7 @@ export function OnboardingForm(props: {
       return;
     }
 
-    router.push("/practice");
-    router.refresh();
+    window.location.assign("/practice");
   }
 
   return (
@@ -108,13 +98,14 @@ export function OnboardingForm(props: {
       </label>
 
       <label className="form-field">
-        <span className="field-label">Cargo oficial / OPEC verificada (opcional)</span>
+        <span className="field-label">Cargo / referencia OPEC Canary (opcional)</span>
         <select className="select-input" value={targetOpecId} onChange={(event) => setTargetOpecId(event.target.value)} disabled={loading}>
           <option value="">Usar solo el perfil reusable</option>
           {compatibleOpecs.map((opec) => (
-            <option key={opec.id} value={opec.id}>{opec.position_name} · {opec.external_opec_id}</option>
+            <option key={opec.id} value={opec.id}>{opec.position_name}</option>
           ))}
         </select>
+        <span className="subtle subtle-xs">Las referencias OPEC disponibles en esta versión son provisionales para prueba Canary.</span>
       </label>
 
       <label className="form-field">
@@ -123,7 +114,7 @@ export function OnboardingForm(props: {
           className="text-input"
           value={activeGoal}
           onChange={(e) => setActiveGoal(e.target.value)}
-          placeholder="Ej.: Examen de admisión 2026"
+          placeholder="Ej.: Preparar una sesión de práctica"
           required
         />
       </label>
@@ -134,28 +125,30 @@ export function OnboardingForm(props: {
           <input className="text-input" value={preferredFeedbackStyle} disabled readOnly />
         </label>
         <label className="form-field">
-          <span className="field-label">Áreas activas</span>
+          <span className="field-label">Áreas declaradas (opcional) — áreas activas de referencia</span>
           <input
             className="text-input"
             value={activeAreas}
             onChange={(e) => setActiveAreas(e.target.value)}
-            aria-invalid={!hasActiveAreas}
             placeholder="Ej.: matemáticas, lectura crítica"
           />
+          <span className="subtle subtle-xs">Se guardan como referencia. En esta Canary no filtran ni priorizan las preguntas de la sesión.</span>
         </label>
       </div>
 
-      <div className="surface-card" style={{ padding: 18 }}>
-        <p className="metric-label" style={{ marginTop: 0 }}>Áreas detectadas</p>
-        <div className="inline-cluster">
-          {parsedActiveAreas.length > 0 ? parsedActiveAreas.map((area) => (
-            <span key={area} className="pill">{area}</span>
-          )) : <span className="subtle">Aún no hay áreas activas válidas.</span>}
+      {parsedActiveAreas.length > 0 ? (
+        <div className="surface-card" style={{ padding: 18 }}>
+          <p className="metric-label" style={{ marginTop: 0 }}>Áreas declaradas</p>
+          <div className="inline-cluster">
+            {parsedActiveAreas.map((area) => (
+              <span key={area} className="pill">{area}</span>
+            ))}
+          </div>
         </div>
-      </div>
+      ) : null}
 
       <div className="page-actions">
-        <button type="submit" className="primary-button" disabled={loading || !targetProfileCode || !activeGoalValue || !hasActiveAreas}>
+        <button type="submit" className="primary-button" disabled={loading || !targetProfileCode || !activeGoalValue}>
           {loading ? "Guardando..." : "Guardar onboarding"}
         </button>
       </div>

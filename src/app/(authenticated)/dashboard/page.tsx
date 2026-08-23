@@ -17,12 +17,6 @@ function getAccuracy(totalCorrect: number, totalAttempts: number) {
   return totalAttempts > 0 ? Number(((totalCorrect / totalAttempts) * 100).toFixed(1)) : 0;
 }
 
-function getTrendLabel(recentTrend: "up" | "stable" | "down") {
-  if (recentTrend === "up") return "al alza";
-  if (recentTrend === "down") return "a la baja";
-  return "estable";
-}
-
 export default async function DashboardPage({ searchParams }: DashboardPageProps) {
   await requireAuthenticatedUser();
 
@@ -43,17 +37,15 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
   const activeRows = isSessionView ? breakdown.currentSession : breakdown.historical;
   const activeSummary = isSessionView && currentBlock ? currentBlock : summary.historical;
   const activeAccuracy = isSessionView ? currentAccuracy : historicalAccuracy;
-  const activePercentile = activeSummary.canShowPercentile ? activeSummary.percentileSegment ?? "—" : "Lectura no concluyente";
-  const strongestLabel = activeSummary.canShowStrongConclusion ? "Fortaleza principal" : "Fortaleza aún no concluyente";
-  const weakestLabel = activeSummary.canShowStrongConclusion ? "Refuerzo principal" : "Refuerzo sugerido inicial";
-  const levelLabel = activeSummary.signalLevel === "usable_signal" ? "Nivel estimado" : "Señal de nivel";
+  const hasStrongestConclusion = activeSummary.strongestCompetencies.length > 0;
+  const hasWeakestConclusion = activeSummary.weakestCompetencies.length > 0;
+  const strongestLabel = hasStrongestConclusion ? "Fortaleza principal" : "Fortaleza aún no concluyente";
+  const weakestLabel = hasWeakestConclusion ? "Refuerzo principal" : "Refuerzo sugerido inicial";
   const attemptsCopy =
     activeSummary.signalLevel === "usable_signal"
-      ? "Ya hay una base razonable para decidir el siguiente frente de práctica."
+      ? "Hay una muestra útil para orientar la siguiente práctica, sin convertirla en una medición calibrada."
       : "Muestra útil para observar, pero todavía corta para cerrar conclusiones fuertes.";
-  const trendCopy = activeSummary.canShowTrend
-    ? `Tendencia ${getTrendLabel(activeSummary.recentTrend)}.`
-    : "Aún no hay dos puntos comparables para hablar de tendencia.";
+  const trendCopy = "Aún no hay una serie temporal suficiente para mostrar tendencia.";
   const contextCopy = isSessionView
     ? `Session ID: ${sessionId}. ${activeSummary.signalDescription}`
     : activeSummary.signalDescription;
@@ -71,9 +63,9 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
     <>
       <section className="page-header metrics-header">
         <p className="eyebrow">Métricas</p>
-        <h1 className="display-title">Insights útiles antes que tablas.</h1>
+        <h1 className="display-title">Actividad y señales útiles para orientar la práctica.</h1>
         <p className="body-lg">
-          Vista móvil pensada para entender tendencia, fortalezas y focos de refuerzo sin convertir el progreso en ruido.
+          Esta Canary prioriza intentos, precisión y patrones preliminares. Las señales internas son orientativas y no equivalen a psicometría calibrada.
         </p>
         <div className="inline-cluster">
           <span className={`segment-pill ${!isSessionView ? "active" : ""}`}>Histórico</span>
@@ -86,9 +78,7 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
         <article className="metric-card">
           <span className="metric-label">Precisión {isSessionView ? "sesión" : "global"}</span>
           <strong className="metric-value">{activeAccuracy}%</strong>
-          <span className={`metric-delta ${activeSummary.canShowTrend && activeSummary.recentTrend === "up" ? "success" : activeSummary.canShowTrend && activeSummary.recentTrend === "down" ? "warning" : ""}`}>
-            {trendCopy}
-          </span>
+          <span className="metric-delta">{trendCopy}</span>
         </article>
         <article className="metric-card">
           <span className="metric-label">Intentos</span>
@@ -96,14 +86,14 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
           <span className="subtle">{attemptsCopy}</span>
         </article>
         <article className="metric-card">
-          <span className="metric-label">Razonamiento promedio</span>
+          <span className="metric-label">Señal de razonamiento</span>
           <strong className="metric-value">{activeSummary.avgReasoningScore}</strong>
-          <span className="subtle">Ayuda a leer calidad, no solo acierto bruto.</span>
+          <span className="subtle">Índice heurístico interno para orientar la práctica; no es una escala calibrada.</span>
         </article>
         <article className="metric-card">
-          <span className="metric-label">{levelLabel}</span>
+          <span className="metric-label">Índice orientativo</span>
           <strong className="metric-value">{activeSummary.estimatedLevel}</strong>
-          <span className="subtle">{activeSummary.signalLevel === "usable_signal" ? "Lectura resumida del momento actual." : "Lectura preliminar del nivel observada hasta ahora."}</span>
+          <span className="subtle">Señal interna de desempeño acumulado; no representa nivel psicométrico.</span>
         </article>
       </section>
 
@@ -111,14 +101,13 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
         <article className="surface-card panel-compact">
           <div className="inline-cluster cluster-between">
             <div>
-              <p className="eyebrow">Tendencia</p>
-              <h2 className="section-title">{isSessionView ? "Sesión en contexto" : "Progreso histórico acumulado"}</h2>
+              <p className="eyebrow">Lectura de actividad</p>
+              <h2 className="section-title">{isSessionView ? "Sesión en contexto" : "Actividad histórica acumulada"}</h2>
             </div>
-            <span className="status-pill premium">{activeSummary.signalLevel === "usable_signal" ? "High signal" : activeSummary.signalLabel}</span>
+            <span className="status-pill premium">{activeSummary.signalLabel}</span>
           </div>
-          <p className="body-sm">
-            {contextCopy}
-          </p>
+          <p className="body-sm">{contextCopy}</p>
+          <p className="subtle">{trendCopy}</p>
           <div className="mt-16">
             <div className="inline-cluster cluster-between">
               <span className="metric-label">Precisión</span>
@@ -133,7 +122,7 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
               <p className="metric-label m-0">Tutor GCM</p>
               <p className="body-sm mt-8 m-0">
                 {activeSummary.weakestCompetencies.length > 0
-                  ? `Siguiente foco sugerido: ${activeSummary.weakestCompetencies[0]}. ${activeSummary.recommendedAction}`
+                  ? `Siguiente foco sugerido: ${formatTechnicalLabel(activeSummary.weakestCompetencies[0])}. ${activeSummary.recommendedAction}`
                   : activeSummary.recommendedAction}
               </p>
             </div>
@@ -143,17 +132,19 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
 
         <article className="surface-card panel-compact">
           <p className="eyebrow">Lectura ejecutiva</p>
-          <div className="list-row">
-            <span>Percentil</span>
-            <strong>{activePercentile}</strong>
-          </div>
+          {activeSummary.canShowPercentile ? (
+            <div className="list-row">
+              <span>Percentil</span>
+              <strong>{activeSummary.percentileSegment ?? "—"}</strong>
+            </div>
+          ) : null}
           <div className="list-row">
             <span>{strongestLabel}</span>
-            <strong>{activeSummary.strongestCompetencies[0] ?? "Sin conclusión todavía"}</strong>
+            <strong>{activeSummary.strongestCompetencies[0] ? formatTechnicalLabel(activeSummary.strongestCompetencies[0]) : "Sin conclusión todavía"}</strong>
           </div>
           <div className="list-row">
             <span>{weakestLabel}</span>
-            <strong>{activeSummary.weakestCompetencies[0] ?? "Sin prioridad concluyente"}</strong>
+            <strong>{activeSummary.weakestCompetencies[0] ? formatTechnicalLabel(activeSummary.weakestCompetencies[0]) : "Sin prioridad concluyente"}</strong>
           </div>
         </article>
       </section>
@@ -162,7 +153,7 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
         <article className="list-card">
           <div className="inline-cluster cluster-between">
             <h2 className="section-title panel-title-md">Áreas con mejor señal</h2>
-            <span className="status-pill success">{activeSummary.canShowStrongConclusion ? "Fuerte" : "Inicial"}</span>
+            <span className="status-pill success">{topStrong.length > 0 ? "Fuerte" : "Inicial"}</span>
           </div>
           {topStrong.length > 0 ? topStrong.map((row) => (
             <div key={`${row.area}-${row.competency}`} className="list-row">
@@ -174,7 +165,7 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
         <article className="list-card">
           <div className="inline-cluster cluster-between">
             <h2 className="section-title panel-title-md">Focos de refuerzo</h2>
-            <span className="status-pill warning">{activeSummary.canShowStrongConclusion ? "Atención" : "Prudente"}</span>
+            <span className="status-pill warning">{topWeak.length > 0 ? "Atención" : "Prudente"}</span>
           </div>
           {topWeak.length > 0 ? topWeak.map((row) => (
             <div key={`${row.area}-${row.competency}`} className="list-row">
@@ -191,7 +182,7 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
         <div className="inline-cluster cluster-between">
           <div>
             <p className="eyebrow">Desglose</p>
-            <h2 className="section-title">Detalle por tema</h2>
+            <h2 className="section-title">Detalle por área y competencia</h2>
           </div>
           <Link href="/practice" className="subtle">Ir a práctica →</Link>
         </div>

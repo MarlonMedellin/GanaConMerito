@@ -38,9 +38,9 @@ export default async function OnboardingPage() {
     <>
       <section className="page-header">
         <p className="eyebrow">Onboarding</p>
-        <h1 className="display-title">Configura una base corta, útil y sin ansiedad.</h1>
+        <h1 className="display-title">Configura una base corta para iniciar la práctica.</h1>
         <p className="body-lg">
-          Define perfil, meta activa y áreas prioritarias. El objetivo no es llenar formularios: es dejar lista la práctica real.
+          Define el perfil y la meta de trabajo. Las áreas que declares son solo una referencia en esta Canary y no filtran las preguntas.
         </p>
         <div className="page-actions">
           <Link href="/home" className="subtle">← Volver a inicio</Link>

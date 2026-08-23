@@ -1,5 +1,5 @@
 function toNumber(value) {
-  if (value === null || value === undefined || value === "") return 0;
+  if (value === null || value === undefined || value === '') return 0;
   const num = Number(value);
   return Number.isFinite(num) ? num : 0;
 }
@@ -48,10 +48,6 @@ function dedupeCompetencies(rows) {
   });
 }
 
-function hasComparableTrendWindow(rows) {
-  return rows.filter((row) => row.updated_at && toNumber(row.attempts) > 0).length >= 2;
-}
-
 function buildDashboardSummary(stats) {
   const rows = Array.isArray(stats) ? stats : [];
   const totalAttempts = rows.reduce((sum, row) => sum + toNumber(row.attempts), 0);
@@ -64,21 +60,6 @@ function buildDashboardSummary(stats) {
   const estimatedLevel = rows.length > 0
     ? round(rows.reduce((sum, row) => sum + toNumber(row.estimated_level), 0) / rows.length, 3)
     : 0;
-
-  const recentWindow = [...rows]
-    .filter((row) => row.updated_at)
-    .sort((a, b) => String(b.updated_at).localeCompare(String(a.updated_at)));
-
-  let recentTrend = 'stable';
-  const canShowTrend = hasComparableTrendWindow(recentWindow);
-  if (canShowTrend) {
-    const latest = toNumber(recentWindow[0].estimated_level);
-    const previous = toNumber(recentWindow[1].estimated_level);
-    if (latest > previous) recentTrend = 'up';
-    else if (latest < previous) recentTrend = 'down';
-  }
-
-  const canShowPercentile = canShowStrongConclusion && rows.some((row) => typeof row.percentile_segment === 'number');
 
   const strongestCompetencies = dedupeCompetencies(
     [...rows]
@@ -122,12 +103,12 @@ function buildDashboardSummary(stats) {
     avgReasoningScore,
     strongestCompetencies,
     weakestCompetencies,
-    recentTrend,
+    recentTrend: 'stable',
     signalLevel,
     signalLabel: getSignalLabel(signalLevel),
     canShowStrongConclusion,
-    canShowTrend,
-    canShowPercentile,
+    canShowTrend: false,
+    canShowPercentile: false,
   };
 }
 
@@ -251,8 +232,8 @@ function compareDashboardSummary({ actual, expected, collector, label = 'Dashboa
   collector.check(String(actual.signalLevel || '') === String(expected.signalLevel || ''), `${label} signalLevel no cuadra con contrato de señal`, `esperado=${expected.signalLevel} actual=${actual.signalLevel}`);
   collector.check(String(actual.signalLabel || '') === String(expected.signalLabel || ''), `${label} signalLabel no cuadra con contrato de señal`, `esperado=${expected.signalLabel} actual=${actual.signalLabel}`);
   collector.check(Boolean(actual.canShowStrongConclusion) === Boolean(expected.canShowStrongConclusion), `${label} canShowStrongConclusion no cuadra con contrato de señal`, `esperado=${expected.canShowStrongConclusion} actual=${actual.canShowStrongConclusion}`);
-  collector.check(Boolean(actual.canShowTrend) === Boolean(expected.canShowTrend), `${label} canShowTrend no cuadra con contrato de señal`, `esperado=${expected.canShowTrend} actual=${actual.canShowTrend}`);
-  collector.check(Boolean(actual.canShowPercentile) === Boolean(expected.canShowPercentile), `${label} canShowPercentile no cuadra con contrato de señal`, `esperado=${expected.canShowPercentile} actual=${actual.canShowPercentile}`);
+  collector.check(Boolean(actual.canShowTrend) === false, `${label} canShowTrend debe permanecer desactivado hasta contar con serie temporal comparable`);
+  collector.check(Boolean(actual.canShowPercentile) === false, `${label} canShowPercentile debe permanecer desactivado sin distribución normativa calibrada`);
 }
 
 function normalizeDashboardText(input) {
@@ -347,11 +328,13 @@ function runSemanticAssertions({ turns, db, dashboardSummary, dashboardBodyText,
     collector.check(normalizedDashboardText.includes('Sesión actual'), 'El HTML del dashboard de sesión no indica el modo de sesión actual');
     collector.check(normalizedDashboardText.includes('Session ID:'), 'El HTML del dashboard de sesión no muestra contexto de la corrida');
     collector.check(normalizedDashboardText.includes(String(expectedSummary.totalAttempts)), 'El HTML del dashboard de sesión no expone la señal esperada de intentos');
+    collector.check(normalizedDashboardText.includes('Aún no hay una serie temporal suficiente para mostrar tendencia.'), 'El Dashboard debe mostrar prudencia explícita sobre tendencia');
+    collector.check(!normalizedDashboardText.includes('Percentil'), 'El Dashboard no debe mostrar percentil sin distribución normativa calibrada');
     expectedSummary.strongestCompetencies.forEach((competency) => {
-      collector.check(normalizedDashboardText.includes(String(competency)), 'El HTML del dashboard de sesión no refleja una competencia fuerte esperada', competency);
+      collector.check(normalizedDashboardText.toLowerCase().includes(String(competency).replace(/[_-]+/g, ' ').toLowerCase()), 'El HTML del dashboard de sesión no refleja una competencia fuerte esperada', competency);
     });
     expectedSummary.weakestCompetencies.forEach((competency) => {
-      collector.check(normalizedDashboardText.includes(String(competency)), 'El HTML del dashboard de sesión no refleja una competencia por reforzar esperada', competency);
+      collector.check(normalizedDashboardText.toLowerCase().includes(String(competency).replace(/[_-]+/g, ' ').toLowerCase()), 'El HTML del dashboard de sesión no refleja una competencia por reforzar esperada', competency);
     });
   }
 

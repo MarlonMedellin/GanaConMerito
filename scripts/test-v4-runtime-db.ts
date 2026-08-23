@@ -99,7 +99,7 @@ async function main() {
     const tutor = new DeterministicTutorProvider();
     const turn = await tutor.generate({ userId: profile.id, sessionId: session.id, itemId: "DOC-000001", message: "Explícame el feedback", evidence: post });
     assert.equal(turn.output.canRevealCorrectAnswer, true);
-    assert.equal((await persistTutorTurnTrace({ supabase: admin, profileId: profile.id, trace: turn.trace })).ok, true);
+    assert.equal((await persistTutorTurnTrace({ profileId: profile.id, trace: turn.trace })).ok, true);
     const traces = await admin.from("tutor_turn_traces").select("question_id, can_reveal_correct_answer").eq("trace_id", turn.trace.traceId).single();
     assert.deepEqual(traces.data, { question_id: "DOC-000001", can_reveal_correct_answer: true });
 
