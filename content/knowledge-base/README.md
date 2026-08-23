@@ -36,15 +36,23 @@ content/knowledge-base/
     └── opecs/
 ```
 
-## Temario docente original
+## Temario docente
 
-El Markdown original aportado por el usuario se conserva en:
+El Markdown de trabajo derivado del archivo aportado por el usuario vive en:
 
 ```text
 content/knowledge-base/themes/docentes/temario-base.md
 ```
 
 Es una fuente de planeación, gap analysis y descubrimiento de cobertura. No es un catálogo automático de `topic`, no prueba por sí solo la vigencia de una afirmación y no autoriza la creación automática de reactivos.
+
+La verificación de integridad del archivo fuente está documentada en:
+
+```text
+content/knowledge-base/themes/docentes/INTEGRITY.md
+```
+
+Mientras esa verificación permanezca abierta, no describir `temario-base.md` como copia byte a byte del archivo original.
 
 ## Fuentes normativas legacy
 
@@ -81,6 +89,25 @@ content/question-bank-v4/items/
 Una fuente puede sostener muchos reactivos y un reactivo puede relacionarse con varias fuentes. La arquitectura normalizada futura para Supabase se documenta en:
 
 `docs/03-architecture/question-bank-knowledge-targeting-architecture.md`
+
+## Validación de catálogos
+
+Antes de fusionar cambios en `knowledge-base` o `targeting`, ejecutar:
+
+```bash
+npm run content:validate:knowledge-targeting
+```
+
+El gate valida actualmente:
+
+- familias canónicas;
+- pertenencia de perfiles a su familia;
+- catálogo OPEC y sus referencias a familia/perfil;
+- regla `active => verified` para OPEC;
+- duplicados de identidad OPEC;
+- unicidad de `sourceId` en el inventario de conocimiento.
+
+`PR Checks` ejecuta este validador automáticamente. Los mapas de aplicabilidad machine-readable se incorporarán al mismo gate cuando se materialicen sus contratos JSON.
 
 ## Qué almacenar
 
