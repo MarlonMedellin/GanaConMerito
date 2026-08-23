@@ -3,7 +3,7 @@
 **Fecha:** 2026-08-22  
 **Rama:** `remediate-v4-phase-a-b-20260822`  
 **Base autoritativa:** `audit-v4-phase-a-b-adversarial-20260822`  
-**Estado:** CERRADA editorialmente; sin merge a `master`.
+**Estado:** CERRADA técnica y editorialmente; sin merge a `master`.
 
 ## 1. Resultado ejecutivo
 
@@ -89,11 +89,16 @@ No se generó Fase C adicional.
 - 8 oportunidades ABANDON/DISCARD no reaparecieron como variantes cosméticas.
 - 10/10 reemplazos serializados solo después de `APPROVED`.
 - `DOC-001295`–`DOC-001304` son IDs nuevos y secuenciales.
+- `legacy-processing-register.csv` registra las **18/18 disposiciones** bajo el batch `DOC-READVERSARIAL-REMEDIATION-20260822`.
 - Los informes históricos `AUDIT-PHASE-A-B-READVERSARIAL-20260822.json/.md` permanecen intactos.
-- `master` no fue modificado ni se realizó merge.
+- No se realizó merge a `master` ni a ninguna otra rama.
 - No se modificaron `src/`, `scripts/` ni `supabase/`.
-- El workflow `.github/workflows/v4-post-sprint48-qa.yml` permanece read-only (`permissions: contents: read`).
+- Los workflows escritores temporales fueron retirados del diff final y `pr-checks.yml` fue restaurado a la base autoritativa.
+- El workflow `.github/workflows/v4-post-sprint48-qa.yml` queda read-only (`permissions: contents: read`).
+- La comparación final contra la base autoritativa contiene **32 archivos exactos**: workflow QA, snapshot, este informe, registro, 18 retiros y 10 reemplazos; sin archivos fuera de alcance.
 
 ## 8. QA
 
-El workflow de QA fue actualizado para validar el corpus real: esquema, taxonomías, IDs únicos, ausencia de retirados, presencia de reemplazos aprobados, preservación de C1, concordancia con snapshot, distribución de claves, racha máxima, heurística de longitud y control de archivos fuera de alcance. La ejecución final verificable se registra en GitHub Actions al cierre de esta rama.
+El workflow de QA valida el corpus real en modo read-only: esquema, taxonomías, IDs únicos, ausencia de retirados, presencia de reemplazos aprobados, preservación de C1, concordancia con snapshot, distribución de claves, racha máxima, heurística de longitud y control de archivos fuera de alcance.
+
+La ejecución verificable `32602729979` finalizó correctamente sobre el corpus remediado, con `QA_OK` y las métricas canónicas de 248 reactivos. Las operaciones posteriores fueron exclusivamente de cierre administrativo y saneamiento de workflows: incorporación de las 18 filas del registro, retiro de mecanismos temporales de escritura y actualización de este informe; no modificaron los reactivos ni el snapshot previamente validados.
