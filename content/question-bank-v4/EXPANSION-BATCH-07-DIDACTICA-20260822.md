@@ -42,7 +42,7 @@ Se excluyeron constructos ya cubiertos en V4, entre ellos: aprendizaje significa
 
 Durante el control se detectó que `DOC-001163` y `DOC-001171` habían sido serializados inicialmente con `resolucion_de_problemas` en `topic`; ese valor pertenece a `competencies.json` y no a `topics.json`. Ambos archivos se corrigieron a `planeacion_curricular` antes de cerrar el lote.
 
-Un commit concurrente de Codex Desktop (`7f73f32`) fue inspeccionado y no contiene cambios en `content/question-bank-v4`, por lo que el snapshot estricto del Lote 06 conserva validez para los 130 reactivos previos. Tras validar los 10 nuevos contra contrato y taxonomías, el snapshot `COVERAGE-AFTER-BATCH-07-20260822.json` queda en 140 reactivos y `errors: []`.
+Un commit concurrente de Codex Desktop (`7f73f32`) fue inspeccionado y no contiene cambios en `content/question-bank-v4`, por lo que el snapshot estricto del Lote 06 conserva validez para los 130 reactivos previos. Tras validar los 10 nuevos contra contrato y taxonomías, el snapshot `history/snapshots/COVERAGE-AFTER-BATCH-07-20260822.json` queda en 140 reactivos y `errors: []`.
 
 ## Estado de expansión
 
