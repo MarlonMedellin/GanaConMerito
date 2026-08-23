@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gcm://content/knowledge-base/maps/map.schema.json",
+  "title": "GanaConMerito knowledge source applicability map",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "target", "sources"],
+  "properties": {
+    "schemaVersion": {"type": "integer", "const": 1},
+    "target": {"$ref": "#/$defs/target"},
+    "sources": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/sourceRelation"}
+    }
+  },
+  "$defs": {
+    "nullableString": {"type": ["string", "null"]},
+    "commonTarget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type"],
+      "properties": {"type": {"const": "common"}}
+    },
+    "familyTarget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "familyCode"],
+      "properties": {
+        "type": {"const": "family"},
+        "familyCode": {"type": "string", "minLength": 1}
+      }
+    },
+    "profileTarget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "familyCode", "profileCode"],
+      "properties": {
+        "type": {"const": "profile"},
+        "familyCode": {"type": "string", "minLength": 1},
+        "profileCode": {"type": "string", "minLength": 1}
+      }
+    },
+    "opecTarget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "sourceSystem", "externalOpecId"],
+      "properties": {
+        "type": {"const": "opec"},
+        "sourceSystem": {"type": "string", "minLength": 1},
+        "externalOpecId": {"type": "string", "minLength": 1}
+      }
+    },
+    "target": {
+      "oneOf": [
+        {"$ref": "#/$defs/commonTarget"},
+        {"$ref": "#/$defs/familyTarget"},
+        {"$ref": "#/$defs/profileTarget"},
+        {"$ref": "#/$defs/opecTarget"}
+      ]
+    },
+    "sourceRelation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceId",
+        "relevance",
+        "locator",
+        "reason",
+        "status",
+        "verifiedAt",
+        "verifiedBy"
+      ],
+      "properties": {
+        "sourceId": {"type": "string", "minLength": 1},
+        "relevance": {
+          "type": "string",
+          "enum": ["core", "supporting", "optional"]
+        },
+        "locator": {"$ref": "#/$defs/nullableString"},
+        "reason": {"type": "string", "minLength": 1},
+        "status": {
+          "type": "string",
+          "enum": ["needs_review", "active", "superseded"]
+        },
+        "verifiedAt": {"$ref": "#/$defs/nullableString"},
+        "verifiedBy": {"$ref": "#/$defs/nullableString"}
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {"status": {"const": "active"}},
+            "required": ["status"]
+          },
+          "then": {
+            "properties": {
+              "verifiedAt": {"type": "string", "minLength": 1},
+              "verifiedBy": {"type": "string", "minLength": 1}
+            }
+          }
+        }
+      ]
+    }
+  }
+}
