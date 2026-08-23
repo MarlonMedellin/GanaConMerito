@@ -34,7 +34,7 @@ Se excluyeron los tres constructos previos del dominio: Educación para el Traba
 
 ## QA
 
-`history/snapshots/COVERAGE-AFTER-BATCH-09-20260822.json`:
+`../snapshots/COVERAGE-AFTER-BATCH-09-20260822.json`:
 - `itemCount`: **160**
 - `errors`: **[]**
 - `normativa_educativa`: **13** reactivos
