@@ -8,6 +8,8 @@ import { selectNextItem } from "../../../../domain/item-selection/select-next-it
 import { isLearningProfileOnboardingComplete } from "../../../../lib/onboarding/status";
 import { requireAuthenticatedProfile } from "../../../../lib/supabase/guards";
 import {
+  buildCanarySessionTargetingCookieValue,
+  getCanarySessionTargetingCookieName,
   getCanaryTargetingSelection,
   isCanaryTargetingEnabled,
 } from "@/lib/targeting/canary-targeting-server";
@@ -185,5 +187,20 @@ export async function POST(request: Request) {
     opecKey: canaryTargeting?.opecKey,
     extra: { currentState, inventoryEmpty: onboardingCompleted && !nextItem },
   });
-  return jsonWithRequestId(response, 200, observation);
+
+  const httpResponse = jsonWithRequestId(response, 200, observation);
+  if (canaryTargeting) {
+    httpResponse.cookies.set(
+      getCanarySessionTargetingCookieName(),
+      buildCanarySessionTargetingCookieValue(session.id, canaryTargeting.opecKey),
+      {
+        httpOnly: true,
+        sameSite: "lax",
+        secure: process.env.NODE_ENV === "production",
+        path: "/",
+        maxAge: 60 * 60 * 24,
+      },
+    );
+  }
+  return httpResponse;
 }
