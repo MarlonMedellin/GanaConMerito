@@ -9,15 +9,17 @@ Banco maestro de preguntas nuevas del proyecto **GanaConMerito**.
 El único conteo oficial vigente es `expectedItemCount` en ese manifiesto. El mismo
 archivo conserva el commit fuente, la lista ordenada y el hash de IDs, el hash del
 corpus, el tamaño total, las distribuciones agregadas, el contrato, las taxonomías,
-los IDs retirados y el estado editorial. Los reportes `COVERAGE-*`, `AUDIT-*`,
-`EXPANSION-*` y `REMEDIATION-*` son evidencia histórica; no compiten con el
+los IDs retirados y el estado editorial. Los reportes históricos no compiten con el
 manifiesto como fuente del corte actual.
 
-La Fase C2 queda preservada como evidencia histórica en
-`EXPANSION-PHASE-C2-SELECTIVE-20260822.md`, `AUDIT-PHASE-C2-20260822.*` y
-`COVERAGE-AFTER-PHASE-C2-20260822.json`. C2 cerró con **0 reactivos nuevos** y no
-modificó el corpus; por tanto, tampoco reemplaza ni altera el corte canónico del
-manifiesto.
+La Fase C2 queda preservada como evidencia histórica en:
+
+- `history/expansion/EXPANSION-PHASE-C2-SELECTIVE-20260822.md`;
+- `history/audits/AUDIT-PHASE-C2-20260822.*`;
+- `history/snapshots/COVERAGE-AFTER-PHASE-C2-20260822.json`.
+
+C2 cerró con **0 reactivos nuevos** y no modificó el corpus; por tanto, tampoco
+reemplaza ni altera el corte canónico del manifiesto.
 
 El estado `FROZEN / APPROVED` es exclusivamente editorial y de repositorio. El
 manifiesto declara expresamente que no autoriza migración Supabase ni activación de
@@ -125,35 +127,39 @@ content/question-bank-v4/
 ├── README.md
 ├── MANIFEST.json             # Corte canónico y hashes reproducibles
 ├── CONTRATO-EDITORIAL-V4.md
-├── taxonomy/
-│   ├── domains.json          # Áreas amplias de conocimiento/desempeño
-│   ├── topics.json           # Temas específicos evaluados
-│   ├── competencies.json     # Capacidades cognitivas principales
-│   └── question-types.json   # Tipos de pregunta, niveles cognitivos y dificultad
-├── sources/                  # Compatibilidad/índices locales V4; la biblioteca compartida es knowledge-base
-│   ├── normative/
-│   └── academic/
-└── items/
-    ├── docentes/             # Preguntas maestras para concursos docentes (DOC-######.json)
-    └── general/              # Futura fábrica general (GEN-######.json)
+├── items/
+│   ├── docentes/             # Reactivos maestros DOC-######.json
+│   └── general/              # Futura fábrica general GEN-######.json
+├── taxonomy/                 # Qué evalúa cada reactivo
+├── sources/                  # Compatibilidad/índices locales V4
+├── state/                    # Estado auxiliar vigente; MANIFEST permanece en raíz
+│   └── README.md
+└── history/                  # Evidencia histórica, nunca fuente runtime
+    ├── README.md
+    ├── expansion/
+    ├── audits/
+    ├── remediation/
+    └── snapshots/
 ```
 
-### Estructura histórica futura
+La biblioteca normativa, académica y técnica transversal no se duplica aquí: vive
+en `content/knowledge-base/`. La aplicabilidad por familia, perfil/cargo y OPEC vive
+en `content/targeting/`.
 
-Los documentos `AUDIT-*`, `COVERAGE-*`, `EXPANSION-*`, `REAUDIT-*` y
-`REMEDIATION-*` son evidencia histórica. Se propone moverlos, sin alterar su
-contenido, a:
+## Historial y migración de estructura
 
-```text
-history/
-├── expansion/
-├── audits/
-├── remediation/
-└── snapshots/
-```
+La reorganización física de históricos se ejecuta por lotes para no romper enlaces o
+consumidores heredados. La Fase C2 ya fue migrada a `history/` como primer lote.
+Los documentos históricos anteriores que todavía permanezcan en la raíz se moverán
+solo después de verificar sus referencias internas y externas.
 
-Ese movimiento se realizará en una tarea separada. Hasta entonces, `MANIFEST.json`
-sigue siendo la única fuente de estado vigente.
+`MANIFEST.json` **no se mueve** a `state/`: scripts y CI lo consumen actualmente en
+la raíz y seguirá allí hasta que una migración explícita de rutas actualice y valide
+todos los consumidores.
+
+`legacy-processing-register.csv` tampoco se mueve en esta fase porque tiene
+consumidores operativos y de importación documentados. Su eventual reubicación exige
+una actualización coordinada de esos consumidores.
 
 ## Reglas del banco
 
