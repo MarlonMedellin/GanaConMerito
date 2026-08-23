@@ -1,4 +1,41 @@
 {
   "schemaVersion": 1,
-  "opecs": []
+  "opecs": [
+    {
+      "sourceSystem": "GCM_CANARY_SYNTHETIC",
+      "externalOpecId": "CAN001-ANTIOQUIA-DOCENTE-AULA-MATEMATICAS-001",
+      "familyCode": "docentes",
+      "profileCode": "docente_aula_secundaria_media",
+      "convocationCode": null,
+      "entityName": "Secretaría de Educación Departamental de Antioquia",
+      "positionName": "Docente de aula matemáticas",
+      "status": "active",
+      "verificationStatus": "verified",
+      "source": {
+        "reference": "GanaConMerito CAN-001 synthetic Canary identity backed by CNSC Docentes y Directivos Docentes 2026 aggregate Antioquia evidence",
+        "url": "https://www.cnsc.gov.co/proyecto-de-acuerdos-y-anexos-de-nuevos-procesos-de-seleccion",
+        "retrievedAt": "2026-08-23T15:14:00.000Z"
+      },
+      "metadata": {
+        "synthetic": true,
+        "authoritative": false,
+        "provisional": true,
+        "purpose": "CAN-001 Canary bootstrap",
+        "officialProcess": "Docentes y Directivos Docentes 2026",
+        "intendedSourceSystem": "SIMO",
+        "realExternalOpecId": null,
+        "officialAggregateEvidence": {
+          "positionName": "Docente de aula matemáticas",
+          "vacancies": 229,
+          "entityName": "Secretaría de Educación Departamental de Antioquia"
+        },
+        "verificationScope": "Official CNSC evidence verifies the entity, aggregate position denomination and 229 aggregate vacancies. The OPEC identity itself is synthetic for controlled Canary use and is not a SIMO identifier.",
+        "replacementRequired": true,
+        "replacementWhen": "Post-Canary, when an individual SIMO OPEC identifier is available",
+        "replacementRule": "compare -> revalidate -> replace synthetic identity with real SIMO identity -> preserve synthetic-to-real traceability",
+        "verifiedAt": "2026-08-23T15:14:00.000Z",
+        "verifiedBy": "release-gatekeeper"
+      }
+    }
+  ]
 }

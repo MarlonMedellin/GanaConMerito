@@ -1,5 +1,91 @@
 {
   "schemaVersion": 1,
   "bank": "question-bank-v4",
-  "mappings": []
+  "mappings": [
+    {
+      "itemId": "DOC-001001",
+      "targets": [
+        {
+          "type": "family",
+          "familyCode": "docentes"
+        }
+      ],
+      "reviewStatus": "approved",
+      "evidence": [
+        "content/question-bank-v4/items/docentes/DOC-001001.json: scope=general",
+        "Editorial review 2026-08-23: PEI and curricular planning content is transversal to the docentes family and is not Mathematics-specific."
+      ],
+      "reviewedBy": "release-gatekeeper",
+      "reviewedAt": "2026-08-23T15:14:00.000Z",
+      "notes": "CAN-001 minimum Canary inventory. Family-level targeting only; no OPEC-specific or Mathematics-exclusive claim."
+    },
+    {
+      "itemId": "DOC-001002",
+      "targets": [
+        {
+          "type": "family",
+          "familyCode": "docentes"
+        }
+      ],
+      "reviewStatus": "approved",
+      "evidence": [
+        "content/question-bank-v4/items/docentes/DOC-001002.json: scope=general",
+        "Editorial review 2026-08-23: citizenship, diversity and pedagogical intervention content is transversal to the docentes family and is not Mathematics-specific."
+      ],
+      "reviewedBy": "release-gatekeeper",
+      "reviewedAt": "2026-08-23T15:14:00.000Z",
+      "notes": "CAN-001 minimum Canary inventory. Family-level targeting only; no OPEC-specific or Mathematics-exclusive claim."
+    },
+    {
+      "itemId": "DOC-001003",
+      "targets": [
+        {
+          "type": "family",
+          "familyCode": "docentes"
+        }
+      ],
+      "reviewStatus": "approved",
+      "evidence": [
+        "content/question-bank-v4/items/docentes/DOC-001003.json: scope=general",
+        "Editorial review 2026-08-23: formative assessment, feedback and recovery content is transversal to the docentes family and is not Mathematics-specific."
+      ],
+      "reviewedBy": "release-gatekeeper",
+      "reviewedAt": "2026-08-23T15:14:00.000Z",
+      "notes": "CAN-001 minimum Canary inventory. Family-level targeting only; no OPEC-specific or Mathematics-exclusive claim."
+    },
+    {
+      "itemId": "DOC-001004",
+      "targets": [
+        {
+          "type": "family",
+          "familyCode": "docentes"
+        }
+      ],
+      "reviewStatus": "approved",
+      "evidence": [
+        "content/question-bank-v4/items/docentes/DOC-001004.json: scope=general",
+        "Editorial review 2026-08-23: diagnostic assessment and instructional adjustment content is transversal to the docentes family and is not Mathematics-specific."
+      ],
+      "reviewedBy": "release-gatekeeper",
+      "reviewedAt": "2026-08-23T15:14:00.000Z",
+      "notes": "CAN-001 minimum Canary inventory. Family-level targeting only; no OPEC-specific or Mathematics-exclusive claim."
+    },
+    {
+      "itemId": "DOC-001005",
+      "targets": [
+        {
+          "type": "family",
+          "familyCode": "docentes"
+        }
+      ],
+      "reviewStatus": "approved",
+      "evidence": [
+        "content/question-bank-v4/items/docentes/DOC-001005.json: scope=general",
+        "Editorial review 2026-08-23: didactics and meaningful-learning content is transversal to the docentes family and is not Mathematics-specific."
+      ],
+      "reviewedBy": "release-gatekeeper",
+      "reviewedAt": "2026-08-23T15:14:00.000Z",
+      "notes": "CAN-001 minimum Canary inventory. Family-level targeting only; no OPEC-specific or Mathematics-exclusive claim."
+    }
+  ]
 }
