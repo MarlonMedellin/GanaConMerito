@@ -1,0 +1,45 @@
+{
+  "phase": "C2",
+  "date": "2026-08-22",
+  "branch": "v4-phase-c2-selective-20260822",
+  "baseMasterSha": "68dfae07baaafa59e00fa7a085ac4b903b62aa07",
+  "baselineCount": 248,
+  "preTriageOpportunities": [
+    {
+      "opportunity": "retrieval_practice",
+      "verdict": "DISCARD",
+      "blockingGates": ["semantic_deduplication"],
+      "disposition": "DISCARD",
+      "summary": "DOC-001166 already evaluates retrieval practice as a learning mechanism; a new scenario would not add a distinct construct."
+    },
+    {
+      "opportunity": "worked_examples_cognitive_load",
+      "verdict": "DISCARD",
+      "blockingGates": ["marginal_value", "semantic_proximity"],
+      "disposition": "DISCARD",
+      "summary": "DOC-001171 already evaluates worked examples as a didactic device for transferable learning; the adjacent novice worked-example effect did not clear C2's marginal-value threshold."
+    },
+    {
+      "opportunity": "interleaved_practice",
+      "verdict": "DISCARD",
+      "blockingGates": ["transferability", "condition_specificity"],
+      "disposition": "DISCARD",
+      "summary": "Evidence supports interleaving under moderated conditions; a general teacher item would overgeneralize the decisive condition."
+    },
+    {
+      "opportunity": "preventive_classroom_management",
+      "verdict": "DISCARD",
+      "blockingGates": ["source_transferability", "single_best_answer_generality"],
+      "disposition": "DISCARD",
+      "summary": "PBIS-associated preventive practices have supportive evidence, but the reviewed evidence did not justify one universally best combination for a general Colombian teacher item."
+    }
+  ],
+  "candidates": [],
+  "approvedCount": 0,
+  "rejectedCount": 0,
+  "discardCount": 4,
+  "regenerateFromZeroCount": 0,
+  "abandonCount": 0,
+  "serializedIds": [],
+  "chainOfThoughtIncluded": false
+}
