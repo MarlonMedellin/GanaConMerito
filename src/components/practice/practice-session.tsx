@@ -420,7 +420,7 @@ export function PracticeSession() {
 
           <div className="mt-24 mb-24 tutor-zone">
             <TutorInterface
-              sessionId={session.sessionId}
+              sessionId={session?.sessionId ?? ""}
               currentItemId={item.id}
               fallbackMessage={feedback?.feedbackText}
             />
