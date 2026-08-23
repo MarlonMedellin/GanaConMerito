@@ -4,6 +4,8 @@ import { PracticeSession } from "@/components/practice/practice-session";
 import { isLearningProfileOnboardingComplete } from "@/lib/onboarding/status";
 import { requireAuthenticatedProfile } from "@/lib/supabase/guards";
 
+export const dynamic = "force-dynamic";
+
 export default async function PracticePage() {
   const auth = await requireAuthenticatedProfile();
   if (!auth.ok) {

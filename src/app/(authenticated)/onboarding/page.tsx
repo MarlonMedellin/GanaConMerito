@@ -4,6 +4,8 @@ import { OnboardingForm } from "@/components/onboarding/onboarding-form";
 import { isLearningProfileOnboardingComplete } from "@/lib/onboarding/status";
 import { requireAuthenticatedProfile } from "@/lib/supabase/guards";
 
+export const dynamic = "force-dynamic";
+
 export default async function OnboardingPage() {
   const auth = await requireAuthenticatedProfile();
   if (!auth.ok) {
