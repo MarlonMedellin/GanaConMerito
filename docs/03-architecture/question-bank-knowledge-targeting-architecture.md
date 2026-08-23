@@ -162,14 +162,12 @@ Para docentes:
 
 ```text
 rector_director_rural
-a coordinador
+coordinador
 docente_aula_preescolar
 docente_aula_basica_primaria
 docente_aula_secundaria_media
 docente_orientador
 ```
-
-> Nota: el código correcto es `coordinador`; la línea anterior se interpreta sin el prefijo accidental `a` si apareciera en copias de este documento.
 
 #### OPEC
 Representa una oferta/empleo específico de una convocatoria o entidad. Una OPEC debe mapear a un perfil/cargo canónico.
