@@ -264,9 +264,9 @@ async function countRows(admin, table, column, value) {
 
     await page.goto('/onboarding', { waitUntil: 'networkidle', timeout: 45000 });
     await page.locator('label.form-field', { hasText: /^Perfil reusable/ }).locator('select').selectOption(targetProfileCode);
-    await page.getByLabel('Cargo oficial / OPEC verificada (opcional)').selectOption(targetOpecId);
+    await page.getByLabel('Cargo / referencia OPEC Canary (opcional)').selectOption(targetOpecId);
     await page.getByLabel('Meta activa').fill('CAN-005 vertical QA');
-    await page.getByLabel('Áreas activas').fill('matematicas');
+    await page.getByLabel('Áreas declaradas (opcional)').fill('matematicas');
     const saveOnboarding = page.getByRole('button', { name: 'Guardar onboarding' });
     result.mobile.onboarding = await assertMobileLayout(page, 'onboarding', saveOnboarding);
     await page.screenshot({ path: path.join(artifactRoot, '02-onboarding-mobile.png'), fullPage: true });
