@@ -1,82 +1,175 @@
 # Adopción de Question Bank V4 en la aplicación
 
-**Estado:** base técnica implementada en repositorio; V4 no está activada en runtime.
+**Estado:** base técnica implementada en repositorio; V4 no debe considerarse activa en runtime sin evidencia de despliegue, importación y activación.
 
-## Entrega ejecutada — 2026-08-21
+## Corte editorial
 
-- `src/domain/content/v4-contract.ts` valida el contrato estricto del ítem y sus
-  reglas de scope, opciones, fuente y dificultad.
-- `npm run content:validate:v4` valida todos los JSON bajo `content/question-bank-v4/items/`
-  contra los catálogos locales.
-- `npm run content:import:v4` ejecuta dry-run por defecto; `--apply` conserva el
-  rechazo de ítems sin evidencia `APPROVED` y no activa inventario.
-- La migración `0019_question_bank_v4_contract.sql` agrega metadatos consultables y
-  `v_question_bank_v4_active`, sin reemplazar la vista histórica activa.
+El estado editorial vigente de V4 se consulta en:
 
-El repositorio ya incluye `V4QuestionRepository`, DTO pre/post, selector exclusivo
-V4, UI diferenciada y estado de inventario vacío. Sigue pendiente aplicar las
-migraciones en Supabase, importar y activar una cohorte aprobada, desplegar y ejecutar
-el piloto/E2E. No se declara runtime verificado ni cohorte V4 activa en esta entrega.
+`content/question-bank-v4/MANIFEST.json`
 
-## Situación verificada
+Ese manifiesto gobierna el corpus congelado y no autoriza por sí mismo migración ni
+runtime.
 
-El runtime público desplegado consume `v_item_bank_active` y los datos legacy/V3 almacenados
-en `item_bank` e `item_options`. V4 define un contrato JSON nuevo, con `context`,
-`topic`, `questionType`, `cognitiveLevel`, fuente estructurada y tutoría por
-opción. Por tanto, copiar archivos V4 a `content/` no basta para que aparezcan en
-la práctica: hacen falta importación, lectura segura y activación explícita.
+## Entrega técnica base
 
-## Backend: estado del trabajo
+El repositorio contiene piezas para la adopción V4, entre ellas:
 
-1. Crear un validador V4 con Zod/TypeScript que lea
-   `CONTRATO-EDITORIAL-V4.md` y los catálogos de `taxonomy/`. Debe validar un
-   archivo por ítem, A–D, clave única, `scope`/`opecId`, fuente y dificultad.
-2. Crear `scripts/import-question-bank-v4.ts` con `--dry-run` por defecto. Debe
-   asignar/validar ids, evitar duplicados por `content_id`/slug y llamar solo a la
-   función SQL V4 versionada.
-3. Mantener `context` y `stem` separados al importar. El backend forma la
-   presentación; no concatena ambos como solución permanente.
-4. Implementado en repo: repositorio de lectura V4 que consulta la vista V4 activa, no
-   `item_bank` directamente. El selector debe filtrar por OPEC, scope, dominio,
-   competencia y núcleo cuando corresponda.
-5. Implementado en repo: dos DTO, `PracticeQuestion` sin clave/feedback y `AnsweredQuestion`
-   con explicación de la opción elegida, clave, `hint` y `learningNote` solo tras
-   responder.
-6. Mantener la evaluación y la autorización de revelar respuestas exclusivamente
-   en el servidor. Añadir pruebas unitarias del mapeo V4 y E2E de no filtración de
-   `correctAnswer` antes de contestar.
+- `src/domain/content/v4-contract.ts` para validar el contrato V4;
+- `npm run content:validate:v4` para validar los JSON del banco;
+- importación V4 con dry-run como frontera de seguridad;
+- migraciones V4 versionadas en `supabase/migrations/`;
+- repositorio/DTO y frontera pre/post respuesta.
 
-## Frontend: trabajo necesario
+La existencia en el repositorio no equivale a confirmar que cada migración esté
+aplicada en todos los ambientes ni que una cohorte V4 esté activa. La evidencia de
+runtime se verifica de forma separada.
 
-1. Actualizar el view model de práctica para mostrar `context` y `stem` como
-   bloques diferenciados y las cuatro opciones A–D de forma accesible.
-2. Antes de responder, mostrar únicamente la ayuda autorizada (`hint`) si el
-   usuario la solicita; no renderizar explicaciones, nota de aprendizaje ni clave.
-3. Tras responder, mostrar feedback por alternativa, la explicación de la clave,
-   `learningNote` y la referencia de fuente con etiquetas claras de correcto/error.
-4. Usar `topic`, `competency`, dificultad y OPEC para navegación, filtrado y
-   analítica solo cuando el backend los entregue; no inferirlos desde texto.
-5. Añadir estados visibles para banco vacío, ítem no disponible y fuente no
-   verificable. No mezclar una pantalla V4 con campos específicos de V1/V3.
-6. Probar lector de pantalla, navegación por teclado, móvil y que el payload de
-   red previo a responder no contenga clave ni explicaciones.
+## Tres capas que la adopción debe preservar
 
-## Orden recomendado
+La evolución del banco distingue:
+
+1. **Knowledge base** — normas, teoría, guías, documentos técnicos y temarios;
+2. **Banco + taxonomía** — reactivos y clasificación de qué se evalúa;
+3. **Targeting** — familia, perfil/cargo y OPEC a los que aplica cada reactivo/fuente.
+
+Arquitectura canónica de evolución:
+
+`docs/03-architecture/question-bank-knowledge-targeting-architecture.md`
+
+Rutas editoriales:
 
 ```text
-contrato editorial + DB V4
-          ↓
-validador e importador dry-run
-          ↓
-vista/repositorio de lectura de servidor
-          ↓
-DTOs y rutas de sesión
-          ↓
-UI de práctica y feedback posterior
-          ↓
-piloto pequeño, métricas y activación gradual
+content/knowledge-base/
+content/targeting/
+content/question-bank-v4/
 ```
 
-El selector del repositorio ya es V4-only, pero el cambio no debe desplegarse ni
-activarse hasta importar una cohorte, aplicar la frontera de seguridad y superar
-validación técnica, editorial humana y pruebas end-to-end.
+La adopción runtime no debe colapsar estas tres capas en una sola columna o una
+jerarquía de carpetas.
+
+## Perfil/cargo y OPEC
+
+Para la experiencia de selección, perfil/cargo y OPEC son destinos equivalentes.
+En persistencia son entidades distintas:
+
+- perfil/cargo: categoría profesional estable y reusable;
+- OPEC: oferta específica de una convocatoria/entidad;
+- varias OPEC pueden mapear al mismo perfil;
+- una OPEC hereda preguntas comunes de su familia y perfil, además de las
+  verdaderamente `opec_specific`.
+
+Perfiles docentes iniciales:
+
+- `rector_director_rural`
+- `coordinador`
+- `docente_aula_preescolar`
+- `docente_aula_basica_primaria`
+- `docente_aula_secundaria_media`
+- `docente_orientador`
+
+No duplicar una pregunta por cada cargo/OPEC y no inferir estos destinos desde el
+texto en runtime.
+
+## Backend: contrato inicial V4
+
+La adopción inicial debe mantener:
+
+1. validación estricta del JSON V4 y taxonomías locales;
+2. importación idempotente y sin activación automática;
+3. `context` y `stem` separados;
+4. lectura desde una vista/repositorio seguro V4, no desde `item_bank` crudo;
+5. DTO de práctica sin clave/feedback y DTO post-respuesta autorizado;
+6. evaluación y autorización de respuestas exclusivamente en servidor.
+
+El selector inicial puede usar las dimensiones ya soportadas por el contrato V4.
+La segmentación normalizada por perfil/cargo se incorpora después, mediante tablas
+y relaciones explícitas, no como parche de texto libre.
+
+## Frontend
+
+La UI V4 debe:
+
+1. mostrar `context` y `stem` de forma diferenciada;
+2. no exponer explicaciones ni clave antes de responder;
+3. mostrar feedback autorizado tras la respuesta;
+4. usar metadatos entregados por backend, nunca inferir taxonomía/OPEC desde texto;
+5. representar de forma explícita el destino seleccionado cuando se incorpore
+   familia/perfil/OPEC;
+6. mantener accesibilidad, móvil y pruebas de no filtración.
+
+## Fase posterior: targeting jerárquico
+
+Después de estabilizar V4, la selección objetivo es:
+
+```text
+OPEC seleccionada
+      ↓
+perfil/cargo canónico
+      ↓
+familia
+      ↓
+universo elegible =
+  OPEC-specific
+  + preguntas del perfil
+  + preguntas comunes de la familia
+      ↓
+taxonomía + dificultad + adaptación
+```
+
+Si se selecciona directamente un perfil/cargo, se usan perfil + familia.
+
+La persistencia propuesta usa catálogos y relaciones many-to-many. Ver:
+
+- `docs/database/question-bank-v4-contract.md`
+- `docs/database/prd-question-bank-v4-supabase.md`
+
+## Fase posterior: knowledge base
+
+La biblioteca compartida debe permitir que:
+
+- una norma se registre una vez;
+- una fuente se relacione con múltiples perfiles/OPEC;
+- un reactivo cite una o varias fuentes;
+- el generador pueda hacer gap analysis a partir de temarios y fuentes;
+- la vigencia y procedencia de una fuente se auditen independientemente de las
+  preguntas que la consumen.
+
+El Markdown original de temas docentes debe incorporarse desde su fuente exacta en:
+
+`content/knowledge-base/themes/docentes/temario-base.md`
+
+No recrearlo desde memoria ni convertir automáticamente sus encabezados en topics.
+
+## Orden recomendado de adopción
+
+```text
+corte editorial V4 congelado
+          ↓
+seguridad + importador + vista V4
+          ↓
+piloto y evidencia runtime
+          ↓
+catálogos family/profile/OPEC
+          ↓
+relaciones de targeting
+          ↓
+knowledge sources normalizadas
+          ↓
+selector jerárquico y dashboards
+```
+
+La normalización de perfiles/OPEC y conocimiento es una evolución posterior y
+aditiva. No debe bloquear la seguridad inicial de V4 ni justificar reescribir
+migraciones ya aplicadas.
+
+## Regla de cierre
+
+No declarar V4/targeting/knowledge graph desplegados por el hecho de que existan
+documentos, migraciones o código en el repositorio. Para cada capa distinguir:
+
+- diseño documentado;
+- implementación en repo;
+- migración aplicada;
+- datos importados;
+- runtime verificado.

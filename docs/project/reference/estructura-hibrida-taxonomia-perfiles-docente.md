@@ -1,81 +1,52 @@
 # Estructura híbrida del banco por taxonomía y perfiles docentes
 
-## Decisión de organización
+> **Estado: documento puente.** La decisión que este documento introdujo —separar
+> taxonomía de perfil profesional y no duplicar preguntas por cargo— se conserva.
+> La arquitectura canónica ampliada ahora vive en
+> `docs/03-architecture/question-bank-knowledge-targeting-architecture.md`.
 
-El banco de preguntas de GanaConMerito debe mantener como eje canónico:
+## Decisión vigente
 
-1. `area`
-2. `subarea`
-3. `competency`
+El banco debe mantener separados:
 
-Los perfiles profesionales docentes deben operar como una capa secundaria de organización, planeación y filtrado editorial, sin convertirse en la base principal del almacenamiento.
+1. **taxonomía** — qué se evalúa;
+2. **targeting** — a quién aplica;
+3. **knowledge base** — qué fuente lo sustenta.
 
-## Carpeta canónica de preguntas
+La taxonomía no debe reorganizarse por cargo. Los perfiles profesionales siguen
+siendo una capa independiente de selección y análisis.
 
-```text
-content/items/
-  matematicas/
-  pedagogia/
-  normatividad/
-  gestion/
-  lectura_critica/
-  competencias_ciudadanas/
-```
+## Evolución de las rutas
 
-Aquí viven los ítems finales en formato canónico del proyecto.
-
-## Carpeta secundaria por perfiles docentes
+La carpeta histórica:
 
 ```text
-content/profiles/
-  docente/
-    rector_director_rural/
-    coordinador/
-    docente_aula_preescolar/
-    docente_aula_basica_primaria/
-    docente_aula_secundaria_media/
-    docente_orientador/
+content/profiles/docente/
 ```
 
-Estas carpetas sirven para:
-- planeación editorial por perfil
-- curación de lotes por cargo
-- mapeo entre perfiles y taxonomía
-- organización de trabajo futuro sin duplicar ítems canónicos
+se conserva como material editorial/puente.
 
-## Segunda capa dentro del ítem
+El catálogo objetivo de destinatarios es:
 
-Además de la carpeta por perfil, cada ítem puede llevar metadatos opcionales para segmentación secundaria.
-
-Campos recomendados:
-- `targetRole`
-- `targetPosition`
-- `applicantProfile`
-- `tags`
-
-### Ejemplo
-
-```yaml
-targetRole: docente
-targetPosition: coordinador
-applicantProfile: directivo_docente
-tags:
-  - perfil:coordinador
-  - foco:seguimiento_academico
+```text
+content/targeting/
 ```
 
-## Regla de uso
+y la biblioteca de normas, teoría, guías, documentos técnicos y temarios es:
 
-### Guardar aquí
-- preguntas definitivas: `content/items/<area>/`
-- notas, mapas, lotes y criterios por perfil: `content/profiles/docente/<perfil>/`
+```text
+content/knowledge-base/
+```
 
-### No hacer
-- duplicar un mismo ítem final en `content/items/` y `content/profiles/`
-- reorganizar el banco primero por cargo
-- crear carpetas principales por convocatoria
+Los reactivos V4 continúan en:
 
-## Perfiles docentes cubiertos
+```text
+content/question-bank-v4/items/
+```
+
+No duplicar un reactivo en las carpetas de targeting/perfiles.
+
+## Perfiles docentes canónicos iniciales
 
 1. `rector_director_rural`
 2. `coordinador`
@@ -84,74 +55,54 @@ tags:
 5. `docente_aula_secundaria_media`
 6. `docente_orientador`
 
-## Relación recomendada entre taxonomía y perfiles
+## OPEC y cargo
 
-### rector_director_rural
-Mayor afinidad con:
-- `gestion`
-- `pedagogia`
-- `normatividad`
-- `competencias_ciudadanas`
+La arquitectura ampliada agrega una distinción que este documento histórico no
+modelaba por completo:
 
-### coordinador
-Mayor afinidad con:
-- `gestion`
-- `pedagogia`
-- `normatividad`
-- `lectura_critica`
+- perfil/cargo = rol profesional estable y reusable;
+- OPEC = oferta concreta de una convocatoria/entidad;
+- varias OPEC pueden mapear al mismo perfil/cargo;
+- para selección ambos son destinos equivalentes, pero no comparten identidad.
 
-### docente_aula_preescolar
-Mayor afinidad con:
-- `pedagogia`
-- `competencias_ciudadanas`
-- `lectura_critica`
+Una pregunta general de coordinador, por ejemplo, debe poder reutilizarse en varias
+OPEC de coordinador sin crear copias.
 
-### docente_aula_basica_primaria
-Mayor afinidad con:
-- `pedagogia`
-- `lectura_critica`
-- `matematicas`
-- `competencias_ciudadanas`
+## Metadatos históricos
 
-### docente_aula_secundaria_media
-Mayor afinidad con:
-- `pedagogia`
-- `lectura_critica`
-- `matematicas`
-- `normatividad`
+Los campos:
 
-### docente_orientador
-Mayor afinidad con:
-- `pedagogia`
-- `competencias_ciudadanas`
-- `normatividad`
-- `gestion`
-
-## Esto mejora o complica
-
-Mejora la estructura si se usa como capa secundaria, porque:
-- no parte el banco en silos por cargo
-- deja filtrar por perfil cuando sí importa
-- conserva reusabilidad entre perfiles
-- reduce duplicación editorial
-
-Complica la estructura si se abusa, por ejemplo:
-- marcando todos los ítems con demasiadas etiquetas
-- creando nuevos perfiles sin catálogo controlado
-- usando la capa secundaria como sustituto del eje taxonómico
-
-## Criterio operativo
-
-Usa la segunda capa solo cuando el perfil profesional añade valor real a la interpretación, selección o curación del ítem.
-
-Si no añade valor, deja el ítem solo con su taxonomía principal.
-
-## Convención práctica sugerida
-
-Cuando un ítem necesite segmentación adicional por perfil, usar metadatos secundarios futuros como:
 - `targetRole`
 - `targetPosition`
 - `applicantProfile`
 - `tags`
 
-Sin romper la carpeta base `content/items/<area>/`.
+siguen siendo antecedentes válidos de la segmentación editorial Legacy/Beta/V3,
+pero no deben asumirse como el modelo persistente final. La evolución Supabase
+recomendada usa catálogos y relaciones normalizadas many-to-many.
+
+## Regla de uso
+
+### Sí
+- clasificar el constructo con taxonomía;
+- añadir targeting solo cuando la aplicabilidad profesional esté justificada;
+- permitir que una pregunta sea compatible con varios perfiles;
+- dejar transversales las preguntas que realmente lo sean;
+- mapear cada OPEC a un perfil canónico.
+
+### No
+- duplicar preguntas por perfil/OPEC;
+- convertir cargos en topics;
+- crear carpetas principales por convocatoria como sustituto del catálogo;
+- inferir perfil exclusivamente por palabras del enunciado;
+- copiar la misma norma en cada carpeta de perfil.
+
+## Fuente canónica actual
+
+Para nuevas decisiones sobre esta materia consultar, en este orden:
+
+1. `docs/03-architecture/question-bank-knowledge-targeting-architecture.md`
+2. `content/targeting/README.md`
+3. `content/knowledge-base/README.md`
+4. `docs/database/content-model.md`
+5. `docs/database/question-bank-v4-contract.md`

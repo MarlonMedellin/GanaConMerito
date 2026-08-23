@@ -2,7 +2,7 @@
 
 Status: canonical
 Owner: PM-Governance
-Last reviewed: 2026-05-10
+Last reviewed: 2026-08-22
 
 Este documento define advertencias no bloqueantes para reducir drift documental y operativo.
 
@@ -42,7 +42,30 @@ Cuando un archivo crítico sea modificado, el agente debe revisar archivos relac
 | src/lib/tutor/ | tutor contracts, runtime QA | Alta |
 | src/lib/supabase/ | docs DB, runtime, deploy docs | Alta |
 | content/items/ | validation scripts, taxonomy, editorial docs | Alta |
+| content/question-bank-v4/items/ | MANIFEST.json, contrato V4, taxonomy, validador/importador V4, QA | Alta |
+| content/question-bank-v4/taxonomy/ | contrato V4, MANIFEST.json, skills V4, docs DB/importador | Alta |
+| content/question-bank-v4/CONTRATO-EDITORIAL-V4.md | MANIFEST.json, validador/importador, skills, docs DB V4 | Alta |
+| content/knowledge-base/ | content/targeting/, arquitectura knowledge-targeting, guías de agentes, docs de fuentes | Media |
+| content/targeting/ | arquitectura knowledge-targeting, content-model, contratos DB V4, selector futuro | Alta |
+| docs/03-architecture/question-bank-knowledge-targeting-architecture.md | content/README, GUIA-PARA-AGENTES-IA, targeting/knowledge README, docs DB V4, canonical-docs | Alta |
+| docs/database/question-bank-v4-contract.md | PRD Supabase V4, architecture adoption, schema, active bank contract | Alta |
+| docs/database/prd-question-bank-v4-supabase.md | migrations reales, question-bank-v4-contract, schema, architecture | Alta |
+| supabase/migrations/ | docs/database/schema.md, contratos DB, runtime/release, status si afecta despliegue | Alta |
 | package.json | CI, QA docs, runtime docs | Media |
+
+## Reglas específicas de knowledge/targeting
+
+Si se cambia el catálogo de perfiles/cargos u OPEC:
+- revisar que no se esté creando una taxonomía paralela;
+- revisar compatibilidad con DB/selector;
+- no hacer backfill del corpus solo por el cambio documental;
+- no inventar OPEC sin fuente real.
+
+Si se añade o cambia una fuente de conocimiento:
+- revisar procedencia y vigencia;
+- revisar duplicación física de la fuente;
+- actualizar mapas de aplicabilidad cuando corresponda;
+- no regenerar preguntas automáticamente.
 
 ## Evolución futura
 

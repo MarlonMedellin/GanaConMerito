@@ -13,6 +13,12 @@ los IDs retirados y el estado editorial. Los reportes `COVERAGE-*`, `AUDIT-*`,
 `EXPANSION-*` y `REMEDIATION-*` son evidencia histórica; no compiten con el
 manifiesto como fuente del corte actual.
 
+La Fase C2 queda preservada como evidencia histórica en
+`EXPANSION-PHASE-C2-SELECTIVE-20260822.md`, `AUDIT-PHASE-C2-20260822.*` y
+`COVERAGE-AFTER-PHASE-C2-20260822.json`. C2 cerró con **0 reactivos nuevos** y no
+modificó el corpus; por tanto, tampoco reemplaza ni altera el corte canónico del
+manifiesto.
+
 El estado `FROZEN / APPROVED` es exclusivamente editorial y de repositorio. El
 manifiesto declara expresamente que no autoriza migración Supabase ni activación de
 runtime. Cualquier expansión posterior requiere un nuevo cierre editorial y una
@@ -63,24 +69,91 @@ legacy, no codigo fuente legacy de la aplicacion.
 
 Las skills consumen la taxonomía vigente desde `content/question-bank-v4/taxonomy/*.json`; no mantienen una lista paralela de tópicos. Las ampliaciones se documentan en los catálogos y en `taxonomy/README.md`.
 
+## Arquitectura de conocimiento y destinatarios
+
+V4 separa tres funciones que no deben confundirse:
+
+1. **conocimiento fuente**: normas, teoría, guías, documentos técnicos y temarios;
+2. **taxonomía evaluativa**: qué constructo mide el reactivo;
+3. **targeting**: para qué familia, perfil/cargo u OPEC resulta aplicable.
+
+La biblioteca compartida de conocimiento vive en:
+
+```text
+content/knowledge-base/
+```
+
+El catálogo de destinatarios vive en:
+
+```text
+content/targeting/
+```
+
+La arquitectura completa y la propuesta para Supabase están en:
+
+`docs/03-architecture/question-bank-knowledge-targeting-architecture.md`
+
+El Markdown original de temas docentes se conserva como fuente de planeación en
+`content/knowledge-base/themes/docentes/temario-base.md`. Es insumo de gap analysis
+y cobertura, no un catálogo automático de `topic` ni autorización para crear
+reactivos.
+
+## Perfiles/cargos y OPEC
+
+Para docentes, los perfiles canónicos iniciales son:
+
+- `rector_director_rural`
+- `coordinador`
+- `docente_aula_preescolar`
+- `docente_aula_basica_primaria`
+- `docente_aula_secundaria_media`
+- `docente_orientador`
+
+Cargo/perfil y OPEC funcionan como destinos equivalentes para selección, pero no
+son el mismo identificador: el perfil es reusable entre convocatorias y la OPEC es
+una instancia concreta. Una pregunta general para coordinadores no debe duplicarse
+por cada OPEC de coordinador.
+
+El corte V4 congelado no se reescribe para agregar esta segmentación. La adopción
+por perfil/cargo debe hacerse como capa externa o en una evolución explícita del
+contrato V4 y del esquema Supabase.
+
 ## Estructura
 
 ```text
 content/question-bank-v4/
 ├── README.md
 ├── MANIFEST.json             # Corte canónico y hashes reproducibles
+├── CONTRATO-EDITORIAL-V4.md
 ├── taxonomy/
 │   ├── domains.json          # Áreas amplias de conocimiento/desempeño
 │   ├── topics.json           # Temas específicos evaluados
 │   ├── competencies.json     # Capacidades cognitivas principales
 │   └── question-types.json   # Tipos de pregunta, niveles cognitivos y dificultad
-├── sources/
-│   ├── normative/            # Corpus normativo estructural (MEN, CNSC, leyes, decretos)
-│   └── academic/             # Corpus académico/pedagógico estructural (ICFES, autores)
+├── sources/                  # Compatibilidad/índices locales V4; la biblioteca compartida es knowledge-base
+│   ├── normative/
+│   └── academic/
 └── items/
     ├── docentes/             # Preguntas maestras para concursos docentes (DOC-######.json)
     └── general/              # Futura fábrica general (GEN-######.json)
 ```
+
+### Estructura histórica futura
+
+Los documentos `AUDIT-*`, `COVERAGE-*`, `EXPANSION-*`, `REAUDIT-*` y
+`REMEDIATION-*` son evidencia histórica. Se propone moverlos, sin alterar su
+contenido, a:
+
+```text
+history/
+├── expansion/
+├── audits/
+├── remediation/
+└── snapshots/
+```
+
+Ese movimiento se realizará en una tarea separada. Hasta entonces, `MANIFEST.json`
+sigue siendo la única fuente de estado vigente.
 
 ## Reglas del banco
 
@@ -100,14 +173,18 @@ content/question-bank-v4/
   constructo, evidencia, clave única, distractores plausibles, pistas accidentales,
   realismo evaluativo y valor pedagógico antes de serializarse.
 - **Deduplicación por constructo:** no basta buscar frases o escenarios parecidos; antes de producir se revisan también autor/teoría, constructo, fuente y lotes V4 previos.
+- **No duplicar por cargo/OPEC:** la aplicabilidad a varios perfiles debe modelarse como targeting, no copiando el reactivo.
 
 ## Taxonomía
 
-Los catálogos de `taxonomy/` son los valores preferidos para clasificar.
-Pueden ampliarse solo cuando un constructo genuinamente nuevo lo exija;
+Los catálogos de `taxonomy/` son los valores preferidos para clasificar **qué se
+evalúa**. Pueden ampliarse solo cuando un constructo genuinamente nuevo lo exija;
 nunca para inflar etiquetas. Toda ampliación debe documentar la necesidad editorial
 y demostrar que reutilizar un tópico existente produciría una clasificación engañosa
 o excesivamente genérica.
+
+Los perfiles/cargos y OPEC no pertenecen a `taxonomy/`; pertenecen a la capa de
+targeting.
 
 ## Calidad
 

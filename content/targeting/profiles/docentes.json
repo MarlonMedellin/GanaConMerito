@@ -1,0 +1,41 @@
+{
+  "familyCode": "docentes",
+  "profiles": [
+    {
+      "code": "rector_director_rural",
+      "name": "Rector / director rural",
+      "legacyApplicantProfile": "directivo_docente",
+      "status": "active"
+    },
+    {
+      "code": "coordinador",
+      "name": "Coordinador",
+      "legacyApplicantProfile": "directivo_docente",
+      "status": "active"
+    },
+    {
+      "code": "docente_aula_preescolar",
+      "name": "Docente de aula preescolar",
+      "legacyApplicantProfile": "docente_de_aula",
+      "status": "active"
+    },
+    {
+      "code": "docente_aula_basica_primaria",
+      "name": "Docente de aula básica primaria",
+      "legacyApplicantProfile": "docente_de_aula",
+      "status": "active"
+    },
+    {
+      "code": "docente_aula_secundaria_media",
+      "name": "Docente de aula secundaria y media / bachillerato",
+      "legacyApplicantProfile": "docente_de_aula",
+      "status": "active"
+    },
+    {
+      "code": "docente_orientador",
+      "name": "Docente orientador",
+      "legacyApplicantProfile": "docente_orientador",
+      "status": "active"
+    }
+  ]
+}

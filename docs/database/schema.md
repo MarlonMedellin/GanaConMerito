@@ -1,6 +1,6 @@
 # Modelo de datos resumido
 
-## Tablas principales
+## Tablas principales actuales
 
 ### `profiles`
 Perfil base del usuario autenticado.
@@ -41,6 +41,64 @@ Memoria comprimida por usuario.
 - `content_id` único en `item_bank`
 - `target_role` y `exam_type` restringidos por CHECK para el dominio actual
 
+## V4: clasificación vs destinatario
+
+Para V4 deben mantenerse dos ejes separados:
+
+- **taxonomía:** dominio/área, tópico, competencia, tipo de pregunta, nivel cognitivo y dificultad;
+- **targeting:** familia de concurso, perfil/cargo y OPEC específica.
+
+Una OPEC concreta puede mapear al mismo perfil/cargo que otras OPEC. Un reactivo
+puede ser común a varios perfiles y no debe duplicarse físicamente por esa razón.
+
+Arquitectura de referencia:
+
+`docs/03-architecture/question-bank-knowledge-targeting-architecture.md`
+
+## Evolución de esquema propuesta — NO implementada por este documento
+
+Cuando se autorice mediante migraciones nuevas, el modelo debe poder incorporar:
+
+### `target_families`
+Familias amplias de preparación/concurso.
+
+### `target_profiles`
+Perfiles/cargos canónicos reusables. Para docentes, el catálogo inicial contempla
+rector/director rural, coordinador, docente de aula preescolar, básica primaria,
+secundaria/media y docente orientador.
+
+### `opec_catalog`
+OPEC concretas de una convocatoria/entidad, cada una mapeada a un perfil/cargo.
+
+### `item_target_profiles`
+Relación many-to-many entre `item_bank` y perfiles/cargos.
+
+### `item_opec_targets`
+Relación many-to-many para reactivos verdaderamente específicos de una OPEC.
+
+### `knowledge_sources`
+Catálogo de normas, teoría, guías, documentos técnicos y temarios.
+
+### `knowledge_source_targets`
+Aplicabilidad de una fuente a familia, perfil/cargo u OPEC.
+
+### `item_source_links`
+Relación reactivo-fuente con tipo de relación y localizador.
+
+Estas tablas son **objetivo de evolución**, no descripción de un estado ya desplegado.
+Antes de implementarlas se debe verificar la secuencia real de migraciones y el
+estado aplicado en cada ambiente Supabase.
+
+## Compatibilidad de transición
+
+- `item_bank` continúa siendo la identidad técnica del reactivo;
+- `item_bank.opec_id` se conserva durante la transición;
+- `source_reference`, `source_locator` y `source_url` pueden funcionar como datos
+  denormalizados de la fuente principal;
+- las nuevas relaciones no deben romper las vistas V4 seguras ni exponer claves;
+- el corte V4 congelado no debe reescribirse para insertar targeting sin un cambio
+  explícito de contrato y manifiesto.
+
 ## Trazabilidad operativa
 
 Tienen `updated_at`:
@@ -53,17 +111,22 @@ Tienen `updated_at`:
 - `user_skill_snapshots`
 - `evaluation_events`
 
+Las tablas futuras de catálogos/relaciones deberán definir también timestamps,
+auditoría y política RLS acorde con su función.
+
 ## Contrato activo de lectura del banco
 
-Para consumo seguro de la app, la lectura del banco no debe quedar acoplada a `item_bank` crudo.
+Para consumo seguro de la app, la lectura del banco no debe quedar acoplada a
+`item_bank` crudo.
 
-Referencia canónica de diseño:
+Referencias canónicas de diseño:
+
 - `docs/database/active-question-bank-contract.md`
+- `docs/database/question-bank-v4-contract.md`
+- `docs/database/prd-question-bank-v4-supabase.md`
 
 ## Fuente ejecutable
 
-La definición real vive en:
-- `supabase/migrations/0001_init_mvp.sql`
-- `supabase/migrations/0002_remediation_r3.sql`
-- migraciones posteriores de segmentación/editorial (`0006` y `0007`)
-- `supabase/migrations/0008_create_v_item_bank_active.sql` para el contrato ejecutable `public.v_item_bank_active`
+La definición real del esquema vigente vive en `supabase/migrations/`. Los documentos
+de arquitectura describen intención y evolución; las migraciones efectivamente
+aplicadas prevalecen como hecho operativo.

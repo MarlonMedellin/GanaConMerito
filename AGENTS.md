@@ -24,48 +24,119 @@ El runtime publico de validacion es `https://ganaconmerito.com`.
 
 ---
 
-## Banco de Preguntas Beta
+## Banco de Preguntas y Arquitectura Editorial
 
-Para cualquier tarea sobre preguntas, `content` o curacion editorial, leer primero:
+Para cualquier tarea sobre preguntas, `content`, fuentes, perfiles/cargos u OPEC,
+leer primero según el alcance:
 
 1. `content/README.md`
 2. `content/GUIA-PARA-AGENTES-IA.md`
-3. `content/INDICE-DOCUMENTAL.md`
-4. `content/REVISION-MD-CONTENT.md`
-5. `content/MANIFIESTO-SANEAMIENTO-BETA.md`
+3. `content/question-bank-v4/README.md` cuando sea V4
+4. `content/question-bank-v4/MANIFEST.json` para el corte físico/editorial V4 vigente
+5. `content/knowledge-base/README.md` para normas, teoría, guías, documentos técnicos y temarios
+6. `content/targeting/README.md` para familia, perfil/cargo y OPEC
+7. `docs/03-architecture/question-bank-knowledge-targeting-architecture.md` para la arquitectura transversal
 
-Para revisar material legacy del banco mediante IA, consultar tambien:
+Para trabajo Beta/legacy histórico consultar además:
 
-6. `docs/ai/skills/GCM-Master-Question-Factory-Docentes.md`
-7. `docs/ai/skills/GCM-Adversarial-Item-Auditor-Docentes.md`
-8. `docs/ai/skills/GCM-Master-Question-Factory-OPEC-General.md`
-9. `docs/ai/skills/GCM-Adversarial-Item-Auditor-OPEC-General.md`
+- `content/INDICE-DOCUMENTAL.md`
+- `content/REVISION-MD-CONTENT.md`
+- `content/MANIFIESTO-SANEAMIENTO-BETA.md`
+- `content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv`
 
-Regla V4: todo registro legacy de preguntas se procesa de uno en uno. La fabrica
-aplicable crea un reactivo nuevo desde cero o lo descarta; el auditor adversarial
-correspondiente debe aprobarlo antes de serializarlo en `content/question-bank-v4/`.
-No se corrigen ni se migran opciones, claves, explicaciones o metadatos legacy.
-Este alcance editorial no autoriza cambios al codigo fuente legacy de la aplicacion.
+Para revisar material legacy mediante IA, consultar también:
 
-Rutas canonicas:
+- `docs/ai/skills/GCM-Master-Question-Factory-Docentes.md`
+- `docs/ai/skills/GCM-Adversarial-Item-Auditor-Docentes.md`
+- `docs/ai/skills/GCM-Master-Question-Factory-OPEC-General.md`
+- `docs/ai/skills/GCM-Adversarial-Item-Auditor-OPEC-General.md`
+
+### Regla de tres capas
+
+Nunca mezclar estas responsabilidades:
+
+```text
+knowledge base → qué evidencia/fuente sustenta el contenido
+taxonomía       → qué constructo se evalúa
+targeting       → a quién aplica: familia → perfil/cargo → OPEC
+```
+
+Consecuencias obligatorias:
+
+- un cargo/perfil NO es `domain`, `topic` ni `competency`;
+- una OPEC NO es una categoría temática;
+- una norma/guía NO se duplica físicamente por cada perfil;
+- una pregunta NO se duplica por cada OPEC;
+- no inferir cargo u OPEC desde palabras del enunciado como sustituto de metadata/relaciones controladas.
+
+Para selección de producto, perfil/cargo y OPEC pueden ser destinos equivalentes.
+Para persistencia son identidades distintas: el perfil/cargo es reusable entre
+convocatorias y la OPEC es una instancia concreta que debe mapear al perfil.
+
+### Perfiles docentes iniciales
+
+- `rector_director_rural`
+- `coordinador`
+- `docente_aula_preescolar`
+- `docente_aula_basica_primaria`
+- `docente_aula_secundaria_media`
+- `docente_orientador`
+
+No inventar nuevos códigos de perfil de forma aislada. Toda ampliación debe pasar
+por el catálogo de targeting y la documentación correspondiente.
+
+### Regla V4
+
+Todo registro legacy de preguntas se procesa de uno en uno. La fábrica aplicable
+crea un reactivo nuevo desde cero o lo descarta; el auditor adversarial debe
+aprobarlo antes de serializarlo en `content/question-bank-v4/`.
+
+- No reparar un `REJECTED` de forma incremental.
+- No reutilizar IDs consumidos.
+- No fabricar volumen para cumplir cuotas.
+- Deduplicar por constructo, fuente, teoría/norma y operación cognitiva, no solo por texto.
+- El corte vigente se toma de `MANIFEST.json`, no de snapshots históricos.
+
+### Temarios y fuentes
+
+Los temarios son insumos de planeación/gap analysis, no taxonomía automática.
+El temario docente original, cuando se incorpore desde su archivo exacto, debe vivir
+en `content/knowledge-base/themes/docentes/temario-base.md`.
+
+`content/normative/` conserva material histórico/transicional. Antes de mover o
+copiar una fuente hacia `knowledge-base`, inventariar y deduplicar. No recrear un
+documento fuente desde memoria.
+
+### Supabase y runtime
+
+La arquitectura de knowledge/targeting es una evolución documentada, no evidencia
+de implementación. No declarar tablas, backfills, migraciones aplicadas o selector
+jerárquico activos salvo evidencia correspondiente.
+
+Para trabajo de datos V4 consultar:
+
+- `docs/database/question-bank-v4-contract.md`
+- `docs/database/prd-question-bank-v4-supabase.md`
+- `docs/database/content-model.md`
+- `docs/database/schema.md`
+
+Las migraciones efectivamente aplicadas y el runtime verificado prevalecen como
+hechos operativos sobre documentos de diseño.
+
+### Rutas canónicas relevantes
 
 | Necesidad | Ruta |
 |---|---|
-| Preguntas listas para pilotaje beta | `content/items/beta-v1/` |
+| Corte V4 vigente | `content/question-bank-v4/MANIFEST.json` |
+| Reactivos V4 | `content/question-bank-v4/items/` |
+| Taxonomía V4 | `content/question-bank-v4/taxonomy/` |
+| Knowledge base | `content/knowledge-base/` |
+| Targeting familia/perfil/OPEC | `content/targeting/` |
+| Arquitectura transversal | `docs/03-architecture/question-bank-knowledge-targeting-architecture.md` |
+| Preguntas listas para pilotaje beta histórico | `content/items/beta-v1/` |
 | Material fuera de beta | `content/items/no-beta-v1/` |
-| Indice maestro editorial | `content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv` |
-| Cohorte piloto | `content/restructuring-v1/00-beta-v1/piloto-v1-candidatos.csv` |
-| Vistas por dimension | `content/restructuring-v1/00-beta-v1/piloto-v1/por-dimension/` |
-| Vistas por perfil | `content/restructuring-v1/00-beta-v1/piloto-v1/por-perfil/` |
-| Deuda de remanufactura | `content/restructuring-v1/00-beta-v1/remanufactura/` |
-
-Reglas:
-
-- No activar preguntas desde `content/items/no-beta-v1/`.
-- No tratar `restructuring-v1/auditoria`, `trazabilidad` o `consolidacion` como banco activo.
-- No duplicar preguntas por perfil; usar vistas CSV.
-- Si se cambia la cohorte, regenerar con `scripts/consolidate_question_bank_beta.py`.
-- Validar `content` con `python3 scripts/validate_docs.py` y `git diff --check`.
+| Indice maestro beta | `content/restructuring-v1/00-beta-v1/indice-maestro-beta.csv` |
+| Vistas beta por perfil | `content/restructuring-v1/00-beta-v1/piloto-v1/por-perfil/` |
 
 ---
 
@@ -77,14 +148,15 @@ Estado actual de gobernanza:
 - endurecimiento progresivo.
 
 Politica operativa vigente:
-- trabajar preferiblemente directo sobre `master`;
+- trabajar preferiblemente directo sobre `master` cuando el alcance sea pequeño y seguro;
+- usar rama aislada cuando el cambio sea amplio, experimental o requiera revisión antes de integrar;
 - realizar commits pequenos y trazables;
 - evitar mega commits;
 - evitar ramas auxiliares innecesarias;
 - evitar drift silencioso;
 - mantener sincronizacion documental incremental.
 
-Todavia NO existe enforcement automatico fuerte.
+Todavia NO existe enforcement automatico fuerte para todos los flujos.
 La disciplina operacional sigue dependiendo parcialmente de:
 - comportamiento humano;
 - trazabilidad explicita;
@@ -147,6 +219,8 @@ No declarar:
 - sprint cerrado;
 - sincronizacion completa;
 - drift resuelto;
+- migracion aplicada;
+- targeting desplegado;
 
 sin evidencia minima.
 
@@ -278,6 +352,7 @@ Al cerrar cualquier tarea relevante, el agente debe reportar:
 
 ## Referencia cruzada
 
+→ `docs/03-architecture/question-bank-knowledge-targeting-architecture.md`
 → `docs/05-ops/documentation-trigger-map.md`
 → `docs/05-ops/agent-traceability.md`
 → `docs/04-quality/quality-gates.md`
