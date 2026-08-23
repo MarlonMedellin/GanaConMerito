@@ -4,6 +4,10 @@ Esta carpeta conserva evidencia editorial y técnica histórica del banco V4.
 
 No define el corte vigente. La única autoridad del corpus activo sigue siendo `../MANIFEST.json`.
 
+## Navegación
+
+El punto de entrada recomendado es [`INDEX.md`](./INDEX.md), que reconstruye la secuencia editorial y relaciona expansión, auditorías, remediaciones y snapshots.
+
 ## Organización
 
 - `expansion/`: planes, lotes y cierres de expansión.
@@ -13,24 +17,19 @@ No define el corte vigente. La única autoridad del corpus activo sigue siendo `
 
 ## Estado de la reorganización
 
-La migración se ejecuta por lotes verificables. Ya se trasladaron:
+La migración física de históricos desde la raíz de `question-bank-v4/` está completada para los conjuntos `EXPANSION-*`, `AUDIT-*`, `REAUDIT-*`, `REMEDIATION-*` y `COVERAGE-*` identificados en el corte reorganizado.
 
-- evidencia completa de Fase C2;
-- auditorías y reauditorías históricas de Fases A/B/C1;
-- remediación adversarial A+B;
-- snapshots canónicos asociados a C2, C1 y cierres de remediación A+B/B.
+La reorganización no modifica por sí misma el corpus, el contrato editorial ni el manifiesto. Las rutas internas de los informes se ajustaron para apuntar a sus nuevas ubicaciones.
 
-Los históricos de batches, fases y snapshots restantes continúan temporalmente en la raíz hasta completar la revisión de referencias.
-
-La deuda y condiciones de cierre de esta reorganización se registran en:
+La deuda y condiciones de consolidación se registran en:
 
 `../../../docs/03-architecture/question-bank-v4-consolidation-debt.md`
 
 ## Reglas
 
-1. Mover un archivo a `history/` no cambia su contenido ni su significado histórico.
+1. Mover un archivo a `history/` no cambia su significado histórico.
 2. Ningún archivo de `history/` debe ser usado por runtime como fuente de preguntas activas.
 3. Los scripts y contratos deben consultar `MANIFEST.json`, `items/` y `taxonomy/` para el estado vigente.
-4. Si un documento histórico tiene enlaces internos, se actualizan al moverlo o se deja temporalmente en su ruta anterior hasta completar el mapa de referencias.
-5. La migración física de históricos se hace por lotes verificables para evitar romper referencias heredadas.
-6. `MANIFEST.json` y `legacy-processing-register.csv` no se mueven por orden visual: cualquier cambio de ruta exige migrar sus consumidores en el mismo cambio.
+4. Los nombres y rutas antiguas mencionados dentro del relato histórico —por ejemplo `temas.md` o perfiles legacy— se preservan cuando forman parte de la evidencia original; su equivalencia con la arquitectura actual se documenta mediante provenance.
+5. `MANIFEST.json` y `legacy-processing-register.csv` no se mueven por orden visual: cualquier cambio de ruta exige migrar sus consumidores en el mismo cambio.
+6. Cualquier nuevo artefacto histórico debe incorporarse en la subcarpeta correspondiente y enlazarse desde `INDEX.md` cuando sea relevante para reconstruir un corte o decisión editorial.
