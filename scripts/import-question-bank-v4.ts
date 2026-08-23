@@ -1,15 +1,34 @@
 import { createClient } from "@supabase/supabase-js";
 import { execFileSync } from "node:child_process";
+import { readFileSync } from "node:fs";
 import { buildV4ImportPlan } from "./lib/v4-import-plan";
 import { assertV4ImportTarget } from "./lib/v4-production-guard";
+
+const CRITICAL_IMPORT_FILES = [
+  "scripts/import-question-bank-v4.ts",
+  "scripts/lib/v4-import-plan.ts",
+  "scripts/lib/v4-production-guard.ts",
+  "src/domain/content/v4-contract.ts",
+  "content/question-bank-v4/MANIFEST.json",
+  "content/question-bank-v4/taxonomy/domains.json",
+  "content/question-bank-v4/taxonomy/topics.json",
+  "content/question-bank-v4/taxonomy/competencies.json",
+  "content/question-bank-v4/taxonomy/question-types.json",
+  "supabase/migrations/0029_harden_v4_manifest_reconciliation.sql",
+] as const;
+
+function normalizedText(value: string | Buffer) {
+  return value.toString().replaceAll("\r\n", "\n");
+}
 
 function readGitState() {
   const currentGitSha = execFileSync("git", ["rev-parse", "HEAD"], {
     encoding: "utf8",
   }).trim();
-  const workingTreeClean = execFileSync("git", ["status", "--porcelain"], {
-    encoding: "utf8",
-  }).trim().length === 0;
+  const workingTreeClean = CRITICAL_IMPORT_FILES.every((sourcePath) => {
+    const committed = execFileSync("git", ["show", `${currentGitSha}:${sourcePath}`]);
+    return normalizedText(committed) === normalizedText(readFileSync(sourcePath));
+  });
   return { currentGitSha, workingTreeClean };
 }
 

@@ -160,6 +160,8 @@ sin convertir joins de perfiles/OPEC en una vía para exponer campos reservados.
    y evidencia `APPROVED` del manifiesto canónico.
 3. Enviar el lote completo en una llamada a
    `import_question_bank_v4_batch(candidates, plan_hash, expected_count, source_sha)`.
+   El `plan_hash` debe coincidir tanto con el payload recalculado como con
+   `expected_plan_hash` persistido para el manifiesto canónico.
 4. Validar todo el plan antes de la primera escritura y ejecutar los upserts dentro
    de una sola transacción.
 5. Registrar ejecución y reconciliación en `question_bank_v4_import_runs`, con
@@ -167,8 +169,10 @@ sin convertir joins de perfiles/OPEC en una vía para exponer campos reservados.
 6. Dejar todo el lote `draft`, inactivo, no publicado y fuera del piloto.
 7. Preservar las V4 históricas ausentes del nuevo manifiesto, desactivándolas sin
    borrarlas.
-8. Activar mediante una operación explícita y auditable, nunca por el importador.
-9. Cuando exista targeting normalizado, asociar perfiles/OPEC en un paso separado y
+8. Antes de declarar idempotencia, comparar el estado persistido real —incluidos
+   textos A–D— y reparar cualquier drift conservando el UUID.
+9. Activar mediante una operación explícita y auditable, nunca por el importador.
+10. Cuando exista targeting normalizado, asociar perfiles/OPEC en un paso separado y
    auditable; no inferirlos silenciosamente a partir del texto.
 
 Para producción, el ejecutor debe además fijar el proyecto remoto y el SHA Git,

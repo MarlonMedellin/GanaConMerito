@@ -24,18 +24,20 @@ last_reviewed: 2026-08-22
 # Sprint log
 
 ## Current delivery state
-- **Current operational block**: Sprint 48 — repo completo; PRD 2 atómico validado
-  localmente; aplicación y gates remotos pendientes.
+- **Current operational block**: Sprint 48 — checkpoint PRD 3 publicado; `0028`
+  aplicada sin lote y `0029` correctiva validada solo localmente.
 - **Corte editorial congelado y validado**: `content/question-bank-v4/MANIFEST.json`
   gobierna conteo, inventario y hashes en `master`.
-- **Public runtime canonico**: `https://ganaconmerito.com`; commit visible `e43f612`, smoke publico PASS el 2026-08-22, sin nueva E2E autenticada.
-- **Supabase publico**: 121 filas visibles en `item_bank`: 120 legacy y 1 V4; existe exposicion P0 de clave/explicacion.
+- **Public runtime canonico**: `https://ganaconmerito.com`; commit visible
+  `e1dc63b`, smoke publico PASS el 2026-08-22, sin nueva E2E autenticada.
+- **Supabase productivo**: `0028` aplicada; 163 V4, 652 opciones, cero activas,
+  publicadas o en piloto; lote de 248 no ejecutado.
 - **V4 local**: corte de 248 reconciliado contra el manifiesto; importación atómica,
   idempotencia y rollback total pasan en Supabase local aislado.
 - **Governance Hardening Roadmap state**: Fase 1 y Fase 2 iniciadas; Fase 3 en ejecucion documental (reduccion y clasificacion), Fases 4-5 futuras.
 - **Open risks**:
-  - PRD 2 está validado y versionado en repo, pero `0028` no se ha aplicado en un
-    Supabase remoto ni en producción;
+  - `0029` está validada localmente pero no aplicada en producción; el lote sigue
+    pendiente hasta revisar/sincronizar el PR #97 y reabrir la ventana;
   - acceso anonimo directo a claves y explicaciones del banco;
   - runtime desplegado conserva el payload y selector anteriores;
   - V4 gobierna selección, práctica y expediente Tutor solo en repo;
