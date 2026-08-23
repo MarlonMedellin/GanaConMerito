@@ -5,13 +5,28 @@ Banco maestro de preguntas nuevas del proyecto **GanaConMerito**.
 ## Estado actual
 
 **Corte:** 2026-08-22  
-**Reactivos docentes V4 válidos:** **224**  
-**Corte congelado para Sprint 48: 224 reactivos aprobados**  
-**Última expansión cerrada:** **Fase A — 54 reactivos de alto retorno**  
-**Snapshot de cobertura:** [`COVERAGE-AFTER-PHASE-A-20260822.json`](./COVERAGE-AFTER-PHASE-A-20260822.json)  
-**Cierre de fase:** [`EXPANSION-PHASE-A-CLOSURE-54-20260822.md`](./EXPANSION-PHASE-A-CLOSURE-54-20260822.md)
+**Corte congelado en `master` para Sprint 48:** **224 reactivos aprobados**  
+**Rama de expansión:** `v4-post-sprint48-expansion`  
+**Corpus físico en la rama:** **256 reactivos**  
+**Aprobados editoriales efectivos en la rama:** **256**  
+**Fase B:** **cerrada y reauditada — 30/30 APPROVED**  
+**Fase C1:** **cerrada — 2 reactivos nuevos + 2 reclasificaciones**  
+**Nuevos C1 aprobados:** `DOC-001292`, `DOC-001293`  
+**Reclasificados C1:** `DOC-001104`, `DOC-001110`  
+**IDs retirados/no reutilizables:** `DOC-001258`, `DOC-001259`, `DOC-001261`, `DOC-001265`, `DOC-001268`, `DOC-001291`, `DOC-001294`  
+**Snapshot vigente:** [`COVERAGE-AFTER-PHASE-C1-20260822.json`](./COVERAGE-AFTER-PHASE-C1-20260822.json)  
+**Auditoría C1:** [`AUDIT-PHASE-C1-20260822.md`](./AUDIT-PHASE-C1-20260822.md)  
+**Plan selectivo:** [`EXPANSION-PHASE-C-SELECTIVE-20260822.md`](./EXPANSION-PHASE-C-SELECTIVE-20260822.md)
 
-El snapshot final reporta `errors: []` y cobertura en los **10 dominios, 22 tópicos, 8 competencias, 7 tipos de pregunta y 4 niveles cognitivos** canónicos. La Fase A incorporó 54 reactivos (`DOC-001202`–`DOC-001255`) y seis tópicos nuevos justificados por necesidad editorial real: `evaluacion_desempeno_docente`, `carrera_docente`, `proteccion_integral`, `funciones_y_jornada_docente`, `prae_proyectos_transversales` y `gobierno_escolar_participacion`. El siguiente identificador esperado es `DOC-001256`; siempre debe comprobarse que esté libre antes de usarlo.
+`master` permanece congelada en 224 reactivos durante Sprint 48. La rama contiene los 224 del corte congelado, 30 reactivos activos de Fase B y 2 reactivos nuevos de C1. C1 también corrige la clasificación de dos reactivos preexistentes sin modificar su contenido.
+
+La auditoría ampliada de C1 detectó que dos candidatos inicialmente serializados duplicaban constructos ya cubiertos: `DOC-001291` duplicaba la ZDP evaluada en `DOC-001104`, y `DOC-001294` duplicaba la metacognición evaluada en `DOC-001110`. Ambos fueron retirados y sus IDs no se reutilizan.
+
+El nuevo tópico `aprendizaje_y_desarrollo_cognitivo` reúne cuatro reactivos: `DOC-001104` (ZDP), `DOC-001110` (metacognición), `DOC-001292` (aprendizaje significativo) y `DOC-001293` (asimilación/acomodación). Esta consolidación lleva `desarrollo_aprendizaje` de 13 a 17 sin fabricar volumen innecesario.
+
+La taxonomía post-Sprint 48 de esta rama incorpora cuatro tópicos con justificación editorial explícita: `competencias_comportamentales`, `educacion_inicial_transicion`, `razonamiento_cuantitativo` y `aprendizaje_y_desarrollo_cognitivo`. Los catálogos de `taxonomy/` siguen siendo la fuente canónica.
+
+**C2 no está autorizado automáticamente.** El siguiente paso es revisar la cobertura sobre 256 y justificar cualquier expansión adicional. El próximo identificador nunca usado es `DOC-001295`.
 
 ## Propósito
 
@@ -45,6 +60,8 @@ El registro anterior no se repara: sus opciones, clave, explicaciones, metadatos
 e identificadores quedan fuera del proceso. Esta suite revisa contenido editorial
 legacy, no codigo fuente legacy de la aplicacion.
 
+Las skills consumen la taxonomía vigente desde `content/question-bank-v4/taxonomy/*.json`; no mantienen una lista paralela de tópicos. Las ampliaciones se documentan en los catálogos y en `taxonomy/README.md`.
+
 ## Estructura
 
 ```text
@@ -72,7 +89,7 @@ content/question-bank-v4/
 - **Sin subcarpetas por tema, competencia, OPEC o dificultad.** Esas dimensiones son
   metadatos; la selección para prácticas, simulacros o tutoría la hace el backend.
 - **Nunca sobrescribir un id.** El siguiente identificador se determina leyendo el
-  directorio destino (`DOC-000001`, `DOC-000002`, …).
+  directorio destino (`DOC-000001`, `DOC-000002`, …). Un `REJECTED` no libera su identificador.
 - **Sin deuda editorial:** no se almacenan borradores, placeholders, registros de
   descarte ni preguntas parciales.
 - **Evidencia verificable:** toda afirmación sustantiva se apoya en fuente oficial o
@@ -80,6 +97,7 @@ content/question-bank-v4/
 - **QA adversarial obligatorio:** cada reactivo supera internamente pruebas de
   constructo, evidencia, clave única, distractores plausibles, pistas accidentales,
   realismo evaluativo y valor pedagógico antes de serializarse.
+- **Deduplicación por constructo:** no basta buscar frases o escenarios parecidos; antes de producir se revisan también autor/teoría, constructo, fuente y lotes V4 previos.
 
 ## Taxonomía
 

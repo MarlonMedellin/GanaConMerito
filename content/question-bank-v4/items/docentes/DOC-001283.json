@@ -1,0 +1,30 @@
+{
+  "id": "DOC-001283",
+  "scope": "general",
+  "domain": "gestion_educativa",
+  "topic": "modelizacion",
+  "competency": "resolucion_de_problemas",
+  "questionType": "reasoning",
+  "cognitiveLevel": "analyze",
+  "context": "La participación semanal en una estrategia fue de 70, 75 y 80 estudiantes durante las primeras tres semanas. Para estimar la cuarta semana, un equipo propone continuar el patrón lineal y proyectar 85 estudiantes.",
+  "stem": "¿Cuál interpretación del modelo es más adecuada?",
+  "options": {
+    "A": "La proyección de 85 es coherente con el patrón observado, pero depende del supuesto de que el aumento de cinco estudiantes por semana continúe y debe contrastarse con datos posteriores.",
+    "B": "La cuarta semana tendrá exactamente 85 estudiantes porque una secuencia de tres observaciones consecutivas permite determinar con certeza el comportamiento futuro mientras conserve una tendencia creciente.",
+    "C": "No puede construirse un modelo con esos datos porque cualquier estimación válida exige conocer de antemano el valor real de la siguiente semana para confirmar la relación matemática.",
+    "D": "La única proyección válida es 80 estudiantes porque un modelo debe limitarse a reproducir valores observados y no puede generar resultados diferentes de los datos disponibles."
+  },
+  "correctAnswer": "A",
+  "explanations": {
+    "A": "Es la mejor respuesta porque usa el patrón para estimar y, al mismo tiempo, explicita el supuesto y la necesidad de verificar el modelo con datos posteriores.",
+    "B": "Confunde una proyección condicionada con una predicción cierta; tres observaciones no garantizan que el patrón continúe.",
+    "C": "Los modelos permiten representar patrones y estimar bajo supuestos; no requieren conocer previamente el resultado futuro.",
+    "D": "Un modelo puede generar valores estimados diferentes de los observados cuando su estructura y supuestos lo permiten."
+  },
+  "hint": "Un modelo no solo produce un número: también depende de supuestos que deben hacerse explícitos y comprobarse.",
+  "learningNote": "Modelizar implica representar una situación mediante relaciones cuantitativas, usar esa representación para estimar y reconocer sus supuestos y límites. La proyección no equivale a certeza.",
+  "source": {
+    "reference": "ICFES, Marco de referencia del módulo Razonamiento Cuantitativo, competencia de formulación y ejecución; modelación de situaciones cuantitativas"
+  },
+  "estimatedDifficulty": "medium"
+}

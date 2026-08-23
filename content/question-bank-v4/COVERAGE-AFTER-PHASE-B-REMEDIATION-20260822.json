@@ -1,0 +1,132 @@
+{
+  "generatedAt": "2026-08-22",
+  "branch": "v4-post-sprint48-expansion",
+  "phase": "PHASE-B-REMEDIATION-R1",
+  "frozenMasterItemCount": 224,
+  "phaseBActiveItemCount": 30,
+  "itemCount": 254,
+  "activePhaseIds": [
+    "DOC-001256",
+    "DOC-001257",
+    "DOC-001260",
+    "DOC-001262",
+    "DOC-001263",
+    "DOC-001264",
+    "DOC-001266",
+    "DOC-001267",
+    "DOC-001269",
+    "DOC-001270",
+    "DOC-001271",
+    "DOC-001272",
+    "DOC-001273",
+    "DOC-001274",
+    "DOC-001275",
+    "DOC-001276",
+    "DOC-001277",
+    "DOC-001278",
+    "DOC-001279",
+    "DOC-001280",
+    "DOC-001281",
+    "DOC-001282",
+    "DOC-001283",
+    "DOC-001284",
+    "DOC-001285",
+    "DOC-001286",
+    "DOC-001287",
+    "DOC-001288",
+    "DOC-001289",
+    "DOC-001290"
+  ],
+  "retiredRejectedIds": [
+    "DOC-001258",
+    "DOC-001259",
+    "DOC-001261",
+    "DOC-001265",
+    "DOC-001268"
+  ],
+  "errors": [],
+  "keyDistribution": {
+    "A": 8,
+    "B": 8,
+    "C": 7,
+    "D": 7
+  },
+  "coverage": {
+    "domains": {
+      "pedagogia": 10,
+      "evaluacion": 31,
+      "convivencia": 30,
+      "inclusion": 25,
+      "curriculo": 20,
+      "didactica": 22,
+      "gestion_educativa": 43,
+      "normativa_educativa": 37,
+      "desarrollo_aprendizaje": 13,
+      "practica_docente": 23
+    },
+    "topics": {
+      "evaluacion_formativa": 24,
+      "evaluacion_diagnostica": 5,
+      "retroalimentacion": 11,
+      "evaluacion_desempeno_docente": 8,
+      "carrera_docente": 4,
+      "ajustes_razonables": 7,
+      "dua": 4,
+      "piar": 6,
+      "inclusion_educativa": 8,
+      "convivencia_escolar": 10,
+      "debido_proceso": 4,
+      "rutas_de_atencion": 14,
+      "proteccion_integral": 10,
+      "competencias_ciudadanas": 14,
+      "competencias_comportamentales": 8,
+      "gobierno_escolar_participacion": 8,
+      "planeacion_curricular": 57,
+      "prae_proyectos_transversales": 8,
+      "funciones_y_jornada_docente": 10,
+      "educacion_inicial_transicion": 6,
+      "razonamiento_cuantitativo": 6,
+      "indagacion": 4,
+      "modelizacion": 3,
+      "argumentacion": 3,
+      "comprension_lectora": 12
+    },
+    "competencies": {
+      "decision_pedagogica": 42,
+      "interpretacion_normativa": 44,
+      "analisis_de_evidencia": 42,
+      "planeacion_pedagogica": 35,
+      "resolucion_de_problemas": 17,
+      "comprension_conceptual": 36,
+      "juicio_profesional": 28,
+      "gestion_de_aula": 10
+    },
+    "questionTypes": {
+      "situational": 48,
+      "conceptual": 25,
+      "normative_applied": 44,
+      "reasoning": 32,
+      "reading_analysis": 28,
+      "case_analysis": 44,
+      "technical_applied": 33
+    },
+    "cognitiveLevels": {
+      "understand": 25,
+      "apply": 77,
+      "analyze": 82,
+      "judge": 70
+    },
+    "estimatedDifficulty": {
+      "low": 23,
+      "medium": 199,
+      "high": 32
+    }
+  },
+  "missing": {
+    "domains": [],
+    "topics": [],
+    "competencies": [],
+    "questionTypes": [],
+    "cognitiveLevels": []
+  }
+}

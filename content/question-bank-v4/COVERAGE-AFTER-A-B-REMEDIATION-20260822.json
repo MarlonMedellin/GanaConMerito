@@ -1,0 +1,141 @@
+{
+  "generatedOn": "2026-08-22",
+  "branch": "remediate-v4-phase-a-b-20260822",
+  "baseAuditBranch": "audit-v4-phase-a-b-adversarial-20260822",
+  "itemCount": 248,
+  "removedRejectedCount": 18,
+  "replacementCount": 10,
+  "abandonCount": 8,
+  "keyDistribution": {
+    "A": 76,
+    "B": 85,
+    "C": 62,
+    "D": 25
+  },
+  "maxKeyStreak": 14,
+  "maxKeyStreakSpan": [
+    "DOC-001032",
+    "DOC-001045",
+    "A"
+  ],
+  "lengthOutlierCount": 50,
+  "replacementLengthOutlierCount": 0,
+  "coverage": {
+    "domains": {
+      "convivencia": 29,
+      "curriculo": 20,
+      "desarrollo_aprendizaje": 17,
+      "didactica": 22,
+      "evaluacion": 31,
+      "gestion_educativa": 37,
+      "inclusion": 23,
+      "normativa_educativa": 39,
+      "pedagogia": 8,
+      "practica_docente": 22
+    },
+    "topics": {
+      "ajustes_razonables": 5,
+      "aprendizaje_y_desarrollo_cognitivo": 4,
+      "argumentacion": 3,
+      "carrera_docente": 4,
+      "competencias_ciudadanas": 14,
+      "competencias_comportamentales": 8,
+      "comprension_lectora": 11,
+      "convivencia_escolar": 10,
+      "debido_proceso": 4,
+      "dua": 4,
+      "educacion_inicial_transicion": 6,
+      "evaluacion_desempeno_docente": 8,
+      "evaluacion_diagnostica": 5,
+      "evaluacion_formativa": 23,
+      "funciones_y_jornada_docente": 9,
+      "gobierno_escolar_participacion": 6,
+      "inclusion_educativa": 8,
+      "indagacion": 4,
+      "modelizacion": 3,
+      "piar": 6,
+      "planeacion_curricular": 56,
+      "prae_proyectos_transversales": 8,
+      "proteccion_integral": 8,
+      "razonamiento_cuantitativo": 6,
+      "retroalimentacion": 11,
+      "rutas_de_atencion": 14
+    },
+    "competencies": {
+      "analisis_de_evidencia": 40,
+      "comprension_conceptual": 35,
+      "decision_pedagogica": 41,
+      "gestion_de_aula": 7,
+      "interpretacion_normativa": 50,
+      "juicio_profesional": 26,
+      "planeacion_pedagogica": 33,
+      "resolucion_de_problemas": 16
+    },
+    "questionTypes": {
+      "case_analysis": 42,
+      "conceptual": 25,
+      "normative_applied": 51,
+      "reading_analysis": 24,
+      "reasoning": 31,
+      "situational": 49,
+      "technical_applied": 26
+    },
+    "cognitiveLevels": {
+      "analyze": 76,
+      "apply": 80,
+      "judge": 67,
+      "understand": 25
+    },
+    "estimatedDifficulty": {
+      "high": 29,
+      "low": 22,
+      "medium": 197
+    }
+  },
+  "approvedReplacementIds": [
+    "DOC-001295",
+    "DOC-001296",
+    "DOC-001297",
+    "DOC-001298",
+    "DOC-001299",
+    "DOC-001300",
+    "DOC-001301",
+    "DOC-001302",
+    "DOC-001303",
+    "DOC-001304"
+  ],
+  "rejectedRemovedIds": [
+    "DOC-001206",
+    "DOC-001218",
+    "DOC-001220",
+    "DOC-001222",
+    "DOC-001225",
+    "DOC-001227",
+    "DOC-001228",
+    "DOC-001230",
+    "DOC-001232",
+    "DOC-001246",
+    "DOC-001249",
+    "DOC-001250",
+    "DOC-001251",
+    "DOC-001252",
+    "DOC-001253",
+    "DOC-001254",
+    "DOC-001255",
+    "DOC-001290"
+  ],
+  "historicalRetiredIdsPreserved": [
+    "DOC-001258",
+    "DOC-001259",
+    "DOC-001261",
+    "DOC-001265",
+    "DOC-001268",
+    "DOC-001291",
+    "DOC-001294"
+  ],
+  "c1Preserved": {
+    "active": ["DOC-001292", "DOC-001293"],
+    "reclassifiedActive": ["DOC-001104", "DOC-001110"],
+    "retired": ["DOC-001291", "DOC-001294"]
+  }
+}

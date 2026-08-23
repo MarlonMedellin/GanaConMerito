@@ -1,0 +1,30 @@
+{
+  "id": "DOC-001280",
+  "scope": "general",
+  "domain": "gestion_educativa",
+  "topic": "razonamiento_cuantitativo",
+  "competency": "resolucion_de_problemas",
+  "questionType": "technical_applied",
+  "cognitiveLevel": "apply",
+  "context": "En el programa X completaron una actividad 60 de 80 estudiantes. En el programa Y la completaron 40 de 50. Para informar un resultado conjunto de los dos programas se propone promediar 75 % y 80 % sin considerar el tamaño de cada grupo.",
+  "stem": "¿Cuál cálculo representa correctamente la tasa conjunta de finalización?",
+  "options": {
+    "A": "Calcular 77,5 %, porque el promedio simple de 75 % y 80 % representa la tasa conjunta aunque los programas tengan tamaños de matrícula diferentes.",
+    "B": "Calcular aproximadamente 76,9 %, porque en total completaron 100 de 130 estudiantes y la proporción conjunta debe reconstruirse con numeradores y denominadores.",
+    "C": "Usar 80 %, porque el resultado conjunto debe conservar la tasa del programa con mejor desempeño cuando ambos programas participaron en la misma actividad.",
+    "D": "Usar 75 %, porque el programa X tiene más estudiantes y su tamaño permite tomar su tasa como representación suficiente del total combinado."
+  },
+  "correctAnswer": "B",
+  "explanations": {
+    "A": "El promedio simple de tasas da el mismo peso a grupos de tamaños diferentes y no representa exactamente el total combinado.",
+    "B": "Es la mejor respuesta: 60 + 40 = 100 finalizaciones sobre 80 + 50 = 130 estudiantes, es decir, aproximadamente 76,9 %.",
+    "C": "La tasa conjunta debe incorporar los resultados de ambos programas y no puede conservar solo el mejor porcentaje.",
+    "D": "El tamaño mayor de X le da más peso en el total, pero no elimina la contribución del programa Y."
+  },
+  "hint": "Para combinar tasas de grupos distintos, vuelve a los numeradores y denominadores antes de calcular el porcentaje global.",
+  "learningNote": "Un promedio simple de porcentajes puede ser engañoso cuando los grupos tienen tamaños diferentes. La tasa global se obtiene combinando los conteos correspondientes y recalculando la proporción total.",
+  "source": {
+    "reference": "ICFES, Marco de referencia del módulo Razonamiento Cuantitativo, competencias de interpretación y representación y formulación y ejecución"
+  },
+  "estimatedDifficulty": "medium"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "DOC-001267",
+  "scope": "general",
+  "domain": "gestion_educativa",
+  "topic": "comprension_lectora",
+  "competency": "juicio_profesional",
+  "questionType": "case_analysis",
+  "cognitiveLevel": "judge",
+  "context": "Una propuesta afirma: ‘La nueva estrategia de tutorías debe extenderse a toda la institución porque tres estudiantes dijeron que les gustó mucho’. No se presentan resultados de aprendizaje, participación, permanencia ni información sobre cuántos estudiantes usaron la estrategia.",
+  "stem": "¿Cuál evaluación crítica es más adecuada?",
+  "options": {
+    "A": "La conclusión es suficientemente sólida porque una valoración positiva de usuarios directos permite inferir que la estrategia funcionará de manera semejante para el resto de la institución.",
+    "B": "La conclusión es demasiado amplia para la evidencia presentada: las opiniones aportan información útil, pero no bastan para demostrar eficacia ni justificar por sí solas una extensión institucional.",
+    "C": "La propuesta debe descartarse porque las opiniones estudiantiles son evidencia exclusivamente subjetiva y no pueden contribuir a ninguna decisión sobre continuidad o ampliación de una estrategia.",
+    "D": "La conclusión puede aceptarse si los tres estudiantes participaron voluntariamente, porque esa condición elimina los problemas de suficiencia, representatividad y medición de resultados institucionales."
+  },
+  "correctAnswer": "B",
+  "explanations": {
+    "A": "Una valoración positiva de una muestra mínima no permite inferir eficacia general ni anticipar que el mismo resultado se producirá en toda la institución.",
+    "B": "Es la mejor respuesta porque evalúa la suficiencia y el alcance de la evidencia sin descartarla por completo.",
+    "C": "Las percepciones estudiantiles pueden aportar evidencia relevante, aunque deben complementarse según la afirmación que se pretende sostener.",
+    "D": "La participación voluntaria no resuelve por sí misma los problemas de suficiencia, representatividad ni medición de resultados."
+  },
+  "hint": "Compara la amplitud de la conclusión con la cantidad y tipo de evidencia que realmente se presenta.",
+  "learningNote": "Evaluar un argumento implica revisar si la evidencia es pertinente y suficiente para la conclusión. Una evidencia puede ser válida y, al mismo tiempo, insuficiente para sostener una generalización amplia.",
+  "source": {
+    "reference": "ICFES, Marco de referencia de la prueba Lectura Crítica Saber 11°, Saber TyT y Saber Pro, competencia de reflexión y evaluación del contenido"
+  },
+  "estimatedDifficulty": "medium"
+}

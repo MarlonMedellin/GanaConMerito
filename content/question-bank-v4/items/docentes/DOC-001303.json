@@ -1,0 +1,30 @@
+{
+  "id": "DOC-001303",
+  "scope": "general",
+  "domain": "inclusion",
+  "topic": "ajustes_razonables",
+  "competency": "resolucion_de_problemas",
+  "questionType": "case_analysis",
+  "cognitiveLevel": "analyze",
+  "context": "En una evaluación virtual, los botones no tienen nombres accesibles, varias gráficas aparecen solo como imágenes sin alternativa textual y una actividad exige arrastrar objetos con el mouse. Un estudiante con discapacidad visual usa lector de pantalla y navegación por teclado.",
+  "stem": "¿Qué rediseño responde de manera más completa a las barreras tecnológicas identificadas?",
+  "options": {
+    "A": "Asignar una persona que lea la pantalla y opere el mouse por el estudiante durante toda la evaluación, manteniendo sin cambios la plataforma y los criterios.",
+    "B": "Preparar una evaluación distinta y más corta que elimine las gráficas y las tareas interactivas, aunque mida menos aspectos que la prueba aplicada al grupo.",
+    "C": "Duplicar el tiempo disponible y permitir varios intentos, conservando los mismos controles, imágenes y mecanismos de interacción de la plataforma original.",
+    "D": "Hacer operables los controles por teclado, identificar sus funciones y ofrecer alternativas textuales equivalentes para la información visual, manteniendo los mismos criterios de evaluación."
+  },
+  "correctAnswer": "D",
+  "explanations": {
+    "A": "El apoyo humano puede ser necesario en algunos casos, pero no corrige las barreras de la plataforma ni favorece el acceso autónomo.",
+    "B": "Eliminar contenidos evaluados modifica el constructo y reduce las oportunidades en lugar de hacer accesible la misma evaluación.",
+    "C": "Más tiempo no resuelve controles inoperables ni información que el lector de pantalla no puede interpretar.",
+    "D": "Actúa sobre las barreras de navegación y representación manteniendo el propósito y los criterios comunes de evaluación."
+  },
+  "hint": "Diferencia entre dar más ayuda para usar un entorno inaccesible y hacer accesible el propio entorno.",
+  "learningNote": "La accesibilidad digital exige que la información y los controles puedan percibirse y operarse con tecnologías de apoyo. Un ajuste adecuado busca remover esas barreras sin disminuir el constructo evaluado.",
+  "source": {
+    "reference": "Decreto 1075 de 2015, artículo 2.3.3.5.1.4, definición de accesibilidad, adicionado por el Decreto 1421 de 2017"
+  },
+  "estimatedDifficulty": "medium"
+}

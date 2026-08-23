@@ -1,0 +1,30 @@
+{
+  "id": "DOC-001266",
+  "scope": "general",
+  "domain": "evaluacion",
+  "topic": "comprension_lectora",
+  "competency": "analisis_de_evidencia",
+  "questionType": "reading_analysis",
+  "cognitiveLevel": "analyze",
+  "context": "Un reporte señala: ‘De 38 estudiantes, 31 entregaron el proyecto final. Entre quienes lo entregaron, 24 cumplieron los criterios de argumentación. El reporte no incluye información sobre las causas de las siete entregas pendientes’. ",
+  "stem": "¿Cuál conclusión está respaldada por la información disponible?",
+  "options": {
+    "A": "Las siete entregas pendientes se explican principalmente por falta de interés, porque esa es la causa más probable cuando un proyecto no se presenta.",
+    "B": "Quienes no cumplieron los criterios de argumentación pertenecen al grupo que no entregó, porque ambos conjuntos representan estudiantes con dificultades académicas.",
+    "C": "La mayoría de quienes entregaron cumplió los criterios de argumentación, pero el reporte no permite establecer por qué siete estudiantes no presentaron el proyecto.",
+    "D": "El proyecto fue demasiado difícil para una parte importante del grupo, porque siete estudiantes no entregaron y otros siete no cumplieron la argumentación."
+  },
+  "correctAnswer": "C",
+  "explanations": {
+    "A": "El reporte no aporta información sobre las causas de las entregas pendientes, por lo que atribuirlas a desinterés excede la evidencia disponible.",
+    "B": "Quienes no entregaron no forman parte del conjunto de 31 proyectos evaluados; no puede afirmarse que coincidan con quienes fallaron un criterio.",
+    "C": "Es la mejor respuesta porque distingue lo que los datos permiten afirmar de aquello que permanece desconocido.",
+    "D": "La falta de entrega o de cumplimiento de un criterio no demuestra por sí sola que la dificultad del proyecto sea la causa."
+  },
+  "hint": "Separa los datos explícitos de las explicaciones causales que el reporte no ofrece.",
+  "learningNote": "La lectura crítica exige controlar el alcance de las inferencias: una conclusión es válida cuando se deriva de la evidencia disponible sin introducir causas, intenciones o relaciones que el texto no sustenta.",
+  "source": {
+    "reference": "ICFES, Marco de referencia de la prueba Lectura Crítica Saber 11°, Saber TyT y Saber Pro, competencia de reflexión y evaluación del contenido"
+  },
+  "estimatedDifficulty": "medium"
+}
