@@ -6,7 +6,7 @@
 **Estado:** **C1 CERRADA TRAS AUDITORÍA AMPLIADA**  
 **Resultado neto:** 2 reactivos nuevos + 2 reclasificaciones  
 **Corpus final C1:** **256 reactivos**  
-**Auditoría:** [`AUDIT-PHASE-C1-20260822.md`](./history/audits/AUDIT-PHASE-C1-20260822.md)
+**Auditoría:** [`AUDIT-PHASE-C1-20260822.md`](../audits/AUDIT-PHASE-C1-20260822.md)
 
 ## Justificación
 
@@ -41,7 +41,7 @@ La auditoría ampliada mostró que dos oportunidades ya estaban cubiertas por V4
 - `planeacion_curricular`: **57 → 56**;
 - `evaluacion_formativa`: **24 → 23**.
 
-Snapshot: `history/snapshots/COVERAGE-AFTER-PHASE-C1-20260822.json`.
+Snapshot: `../snapshots/COVERAGE-AFTER-PHASE-C1-20260822.json`.
 
 ## IDs y no reutilización
 
