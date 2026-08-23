@@ -1,36 +1,32 @@
 # Metadatos secundarios para perfiles docentes
 
-## Propósito
+> **Estado: documento puente/histórico.** Describe los campos usados en el modelo
+> editorial Legacy/Beta/V3. La arquitectura objetivo de destinatarios ahora se
+> define en `content/targeting/README.md` y
+> `docs/03-architecture/question-bank-knowledge-targeting-architecture.md`.
 
-Agregar una segunda capa de clasificación para perfiles docentes sin romper la estructura principal del banco.
+## Propósito histórico
 
-## Regla central
+Agregar una segunda capa de clasificación para perfiles docentes sin romper la
+estructura temática principal del banco.
 
-La organización base sigue siendo:
-- `area`
-- `subarea`
-- `competency`
+La decisión conceptual sigue vigente: **perfil/cargo no sustituye taxonomía**.
 
-La segunda capa no reemplaza esa estructura. Solo la complementa.
-
-## Catálogo controlado
-
-Estos metadatos ya no deben llenarse libremente. Deben usar el catálogo acordado para evitar deriva editorial.
-
-## Metadatos opcionales recomendados
+## Campos históricos
 
 ### `targetRole`
 Familia general del examen o rol macro.
 
-Valor recomendado para esta línea del banco:
+Valor histórico de esta línea:
+
 ```yaml
 targetRole: docente
 ```
 
 ### `targetPosition`
-Perfil puntual al que el ítem apunta de manera principal.
+Perfil puntual principal.
 
-Valores permitidos:
+Catálogo docente reconocido:
 - `rector_director_rural`
 - `coordinador`
 - `docente_aula_preescolar`
@@ -39,112 +35,68 @@ Valores permitidos:
 - `docente_orientador`
 
 ### `applicantProfile`
-Agrupador más amplio para análisis, filtros y cobertura.
-
-Valores permitidos:
+Agrupador histórico más amplio:
 - `directivo_docente`
 - `docente_de_aula`
 - `docente_orientador`
 
 ### `tags`
-Lista opcional para afinidades secundarias, doble pertinencia o filtros livianos.
+Afinidades secundarias livianas.
 
-Ejemplos:
-```yaml
-tags:
-  - perfil:coordinador
-  - perfil:rector_director_rural
-  - foco:liderazgo_escolar
-  - uso:caso_situacional
-```
+## Qué cambia con la arquitectura nueva
 
-## Cuándo usar cada campo
+Estos campos pueden seguir existiendo por compatibilidad en contenido histórico,
+pero **no deben asumirse como el modelo persistente definitivo**.
 
-### Usa `targetPosition`
-Cuando el ítem fue diseñado claramente para un perfil principal.
+La evolución objetivo separa:
 
-### Usa `applicantProfile`
-Cuando necesitas agrupar varios perfiles bajo una misma familia.
-
-### Usa `tags`
-Cuando el ítem también sirve para otros perfiles o quieres dejar pistas de búsqueda sin crear más columnas rígidas.
-
-## Cuándo no usar esta capa
-
-No la uses si el ítem es ampliamente reusable y no gana valor real al asociarlo a un perfil.
-
-En esos casos basta con:
-- `area`
-- `subarea`
-- `competency`
-- `difficulty`
-- `targetLevel`
-
-## Plantilla mínima con segunda capa
-
-```yaml
----
-id: item-ped-0042
-slug: pedagogia-evaluacion-aprendizaje-004
-title: Uso pedagógico de evidencias de aprendizaje
-area: pedagogia
-subarea: evaluacion_del_aprendizaje
-examType: docente
-competency: evaluacion_formativa
-difficulty: 0.42
-targetLevel: intermedio
-targetRole: docente
-targetPosition: coordinador
-applicantProfile: directivo_docente
-tags:
-  - perfil:coordinador
-  - foco:seguimiento_academico
-itemType: multiple_choice
-normativeRefs: []
-published: true
-version: 1
----
-```
-
-## Cómo queda la segunda capa en la práctica
-
-### Capa 1: estructura canónica
 ```text
-content/items/pedagogia/
+familia → perfil/cargo canónico → OPEC concreta
 ```
 
-### Capa 2: lectura editorial y filtrado
-```yaml
-targetRole: docente
-targetPosition: coordinador
-applicantProfile: directivo_docente
-```
+y propone relaciones many-to-many entre reactivos y perfiles/OPEC.
 
-Esto permite que el archivo siga viviendo donde mejor conversa con el banco, pero quede marcado para búsquedas, lotes y filtros por perfil.
+Esto resuelve limitaciones del modelo de una sola columna:
 
-## Beneficio real
+- una pregunta puede servir a varios perfiles;
+- varias OPEC pueden mapear al mismo cargo;
+- un reactivo OPEC-specific puede coexistir con reactivos comunes del perfil;
+- no hace falta duplicar el ítem para representar varias afinidades.
 
-Mejora la estructura porque:
-- conserva reusabilidad
-- evita duplicación de ítems
-- permite segmentar por perfil sin partir el banco en seis mini bancos
-- facilita futuros dashboards, filtros e importaciones
+## Regla OPEC vs perfil/cargo
 
-## Riesgo de complejidad
+Para selección, ambos son destinos equivalentes. Para identidad son diferentes:
 
-Sí crea una complejidad pequeña, pero controlada.
+- perfil/cargo es estable y reusable;
+- OPEC es una instancia concreta de una convocatoria/entidad;
+- una OPEC hereda la base común del perfil y la familia.
 
-La complejidad se mantiene baja si cumples estas reglas:
-- no vuelvas obligatorios estos campos para todos los ítems
-- no inventes nuevos valores fuera del catálogo acordado
-- no reemplaces `area`, `subarea` y `competency` por etiquetas de cargo
-- usa `tags` con moderación
+## Aplicación a V4
 
-## Recomendación operativa
+El corte V4 congelado no debe reescribirse para agregar estos campos históricos.
+Su contrato actual se preserva. La segmentación futura puede añadirse mediante
+relaciones externas o una evolución explícita del contrato V4.
 
-Adopta esta segunda capa como `opcional pero estándar`.
+## Aplicación a Legacy/Beta/V3
 
-Eso significa:
-- obligatoria para ítems claramente diseñados para un perfil específico
-- opcional para ítems transversales
-- útil para lotes, filtros y cobertura editorial
+Los campos existentes siguen siendo válidos donde el parser/contrato histórico los
+requiera. No eliminarlos de contenido legacy solo porque exista la nueva arquitectura.
+
+## Reglas vigentes
+
+- no inventar nuevos valores sin catálogo;
+- no usar perfil/cargo como `area/domain`, `topic/subarea` o `competency`;
+- no usar `tags` como sustituto de una relación de OPEC en persistencia futura;
+- no inferir perfil automáticamente por palabras del texto;
+- no duplicar una pregunta por cada perfil/OPEC;
+- dejar transversal el ítem que no gana valor con segmentación específica.
+
+## Fuente de autoridad para trabajo nuevo
+
+1. `docs/03-architecture/question-bank-knowledge-targeting-architecture.md`
+2. `content/targeting/README.md`
+3. `docs/database/content-model.md`
+4. `docs/database/question-bank-v4-contract.md`
+
+Este archivo debe consultarse principalmente para comprender compatibilidad con el
+modelo histórico de metadatos secundarios.
