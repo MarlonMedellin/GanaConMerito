@@ -1,185 +1,166 @@
 # Deuda de consolidación — Banco V4, Knowledge, Targeting y Supabase
 
 **Estado:** registro vivo de coordinación arquitectónica.  
-**Rama de trabajo inicial:** `reorg-v4-architecture-20260822`.  
-**Regla:** este archivo registra trabajo pendiente o diferido; no autoriza cambios de runtime, SQL, backfills ni modificación del corpus congelado por sí mismo.
-
-## Objetivo
-
-Evitar que la reorganización física del banco V4, la migración a Supabase y la nueva arquitectura `knowledge + taxonomy + targeting` evolucionen como líneas desconectadas. Cada deuda debe tener una condición de cierre verificable y, cuando afecte a otro agente, una nota de coordinación explícita.
+**Rama de trabajo:** `reorg-v4-architecture-20260822`.  
+**Última base sincronizada:** `master@023e94f737ccd95dfe2ac9a093884dd4dc426aac`.  
+**Regla:** registrar aquí decisiones diferidas, dependencias y riesgos; este archivo no autoriza runtime, SQL, backfills ni cambios sobre el corpus congelado.
 
 ## Estados
 
 - `OPEN`: pendiente y accionable.
 - `BLOCKED`: depende de otro cambio o agente.
 - `IN_PROGRESS`: trabajo iniciado.
-- `DEFERRED`: decisión consciente de posponer; no es un error inmediato.
-- `CLOSED`: resuelta y verificada.
+- `DEFERRED`: pospuesto de forma deliberada.
+- `CLOSED`: resuelto con evidencia verificable.
+
+## Resumen ejecutivo
+
+La reorganización histórica de V4 ya separa estado operativo de evidencia histórica. `MANIFEST.json`, `items/`, `taxonomy/` y `legacy-processing-register.csv` no fueron modificados por esta reorganización. La migración `0028` del importador atómico ya forma parte de `master` y fue sincronizada a esta rama; targeting/knowledge sigue siendo una evolución posterior y aditiva.
 
 ## Registro
 
 ### V4-ARCH-DEBT-001 — Reconciliar documentación tras migración `0028`
 
 - **Estado:** `CLOSED`.
-- **Evento de cierre:** `master@283207e4ee55571c2fe1e882efe1a59180f98877` publicó `supabase/migrations/0028_atomic_v4_batch_import.sql` y sincronizó PRD, contrato, adopción, esquema, calidad y estado de proyecto.
-- **Evidencia:** reconstrucción local `0001–0028`, importación 248/248, idempotencia y rollback documentados por PRD 2; la rama de reorganización incorporó ese commit mediante PR #95.
-- **Resultado documental:** `0019–0027` se tratan como base materializada; `0028` como importador atómico implementado y validado localmente; targeting/knowledge permanece como evolución posterior.
-- **Regla de numeración vigente:** la primera migración de targeting/knowledge puede usar `0029` **solo si sigue siendo el siguiente número libre en el momento de crearla**. Siempre releer `supabase/migrations/` antes de numerar.
+- `master@283207e4ee55571c2fe1e882efe1a59180f98877` publicó `0028_atomic_v4_batch_import.sql`.
+- PRD 2 documenta reset `0001–0028`, importación 248/248, idempotencia y rollback locales.
+- La rama incorporó `0028` y después los ajustes de CI posteriores de `master`.
+- **Regla futura:** `0029` es solo un número candidato; antes de crear targeting/knowledge se relee `supabase/migrations/` y se usa el siguiente número realmente libre.
 
 ### V4-ARCH-DEBT-002 — Completar migración de históricos V4 a `history/`
 
-- **Estado:** `IN_PROGRESS`.
-- **Problema:** la raíz de `content/question-bank-v4/` todavía mezcla estado operativo con documentos `EXPANSION-*` históricos. Auditorías, remediaciones y todos los `COVERAGE-*` ya fueron trasladados.
-- **Acción de cierre:** terminar el traslado de `EXPANSION-*` a `history/expansion/`, actualizando enlaces internos y externos.
-- **Criterio de cierre:** ningún histórico permanece en raíz salvo excepción documentada por dependencia técnica.
+- **Estado:** `CLOSED`.
+- Los conjuntos identificados `EXPANSION-*`, `AUDIT-*`, `REAUDIT-*`, `REMEDIATION-*` y `COVERAGE-*` fueron retirados de la raíz y organizados en `history/expansion/`, `history/audits/`, `history/remediation/` y `history/snapshots/`.
+- La raíz V4 queda reservada para contrato, manifiesto, registro operacional y carpetas operativas.
 
-### V4-ARCH-DEBT-003 — Mapear y corregir referencias a rutas históricas
+### V4-ARCH-DEBT-003 — Corregir referencias a rutas históricas
 
-- **Estado:** `IN_PROGRESS`.
-- **Problema:** varios históricos se enlazan entre sí mediante rutas relativas desde la raíz.
-- **Acción de cierre:** por cada lote movido, buscar referencias por nombre exacto y actualizar los documentos consumidores.
-- **Avance:** referencias de snapshots y auditorías en los informes principales ya fueron ajustadas a `history/`.
-- **Criterio de cierre:** búsquedas de las rutas antiguas no deben devolver consumidores activos, salvo notas históricas que mencionen deliberadamente la ruta anterior.
+- **Estado:** `CLOSED` para el lote reorganizado.
+- Se ajustaron las referencias relativas entre expansiones, auditorías, remediaciones y snapshots después de los movimientos.
+- Las búsquedas de consumidores realizadas no identificaron consumidores runtime/CI externos que dependieran de las rutas históricas movidas.
+- Si aparece en el futuro un consumidor no indexado, se tratará como nueva deuda y no como razón para revertir la estructura.
 
 ### V4-ARCH-DEBT-004 — Decidir destino de `legacy-processing-register.csv`
 
 - **Estado:** `DEFERRED`.
-- **Problema:** visualmente pertenece a control/trazabilidad, pero actualmente tiene consumidores operativos y de importación, incluyendo `scripts/lib/v4-import-plan.ts` y documentación/skills.
-- **Acción de cierre:** definir destino estable (por ejemplo `state/` o un registro operacional específico), actualizar todos los consumidores en el mismo cambio y ejecutar los gates V4.
-- **Regla:** no mover el archivo solo por orden visual.
+- Tiene consumidores operativos y de importación, entre ellos `scripts/lib/v4-import-plan.ts`, skills y documentación.
+- **Regla:** no moverlo por orden visual. Su reubicación exige actualizar todos los consumidores y ejecutar gates V4/importador en el mismo cambio.
 
-### V4-ARCH-DEBT-005 — Evaluar si `MANIFEST.json` debe permanecer permanentemente en raíz
+### V4-ARCH-DEBT-005 — Decidir ubicación permanente de `MANIFEST.json`
 
 - **Estado:** `DEFERRED`.
-- **Problema:** la arquitectura objetivo introdujo `state/`, pero `MANIFEST.json` es hoy autoridad canónica y su ruta es consumida por scripts/CI y ahora también por el importador atómico PRD 2.
-- **Decisión actual:** permanece en la raíz.
-- **Acción de cierre:** o bien documentar la raíz como ubicación permanente, o realizar una migración coordinada de todos los consumidores con gates reproducibles.
-- **Regla:** no moverlo durante la reorganización documental ordinaria.
+- El manifiesto es la autoridad canónica y su ruta raíz es consumida por scripts, CI y el flujo de importación V4.
+- **Decisión actual:** permanece en `content/question-bank-v4/MANIFEST.json`.
+- Solo se moverá mediante una migración explícita de rutas con todos los consumidores y gates actualizados.
 
-### V4-ARCH-DEBT-006 — Clarificar el rol de `question-bank-v4/sources/` frente a `knowledge-base/`
-
-- **Estado:** `OPEN`.
-- **Problema:** existe una carpeta local `sources/` por compatibilidad, mientras la fuente de conocimiento transversal debe vivir en `content/knowledge-base/`.
-- **Acción de cierre:** inventariar `sources/`, decidir qué queda como índice/compatibilidad V4 y qué fuente debe migrar o registrarse en `knowledge-base/`, sin duplicar documentos.
-- **Criterio:** una fuente real tiene una sola identidad y ubicación canónica; los demás puntos son referencias o mapas.
-
-### V4-ARCH-DEBT-007 — Inventariar y normalizar corpus de conocimiento
+### V4-ARCH-DEBT-006 — Clarificar `question-bank-v4/sources/` frente a `knowledge-base/`
 
 - **Estado:** `OPEN`.
-- **Problema:** la arquitectura existe, pero falta poblar de forma gobernada `knowledge-base/sources/` con normas, guías, teoría y documentos técnicos.
-- **Acción de cierre:** inventario, deduplicación por identidad de fuente, metadatos de vigencia, localizadores y mapas de aplicabilidad.
-- **Regla:** no convertir automáticamente el temario original en fuentes verificadas ni en `topics`.
+- `question-bank-v4/sources/` existe por compatibilidad/índices locales; la biblioteca transversal canónica es `content/knowledge-base/`.
+- **Cierre requerido:** inventariar fuentes locales, deduplicar identidades y decidir qué permanece como índice V4 y qué pasa a la biblioteca compartida.
+- Una fuente real debe tener una sola identidad canónica; los demás puntos son referencias o mapas.
 
-### V4-ARCH-DEBT-008 — Crear catálogo real de OPEC y su mapeo a perfiles
+### V4-ARCH-DEBT-007 — Inventariar y normalizar el corpus de conocimiento
 
 - **Estado:** `OPEN`.
-- **Problema:** ya existen familia y perfiles docentes canónicos, pero aún falta el catálogo de OPEC concretas y su relación estable con perfiles/cargos.
-- **Acción de cierre:** definir formato de `content/targeting/opecs/`, identidad externa, convocatoria, entidad, cargo y `profile_code` asociado.
-- **Dependencia:** puede avanzar documentalmente antes de SQL; la persistencia final depende de la evolución Supabase.
+- Falta poblar de forma gobernada `knowledge-base/sources/` con normas, guías, teoría y documentos técnicos.
+- **Cierre requerido:** identidad de fuente, tipo, procedencia, vigencia, localizador, licencia/derecho de conservación y mapas de aplicabilidad.
+
+### V4-ARCH-DEBT-008 — Crear catálogo real de OPEC y mapeo a perfiles
+
+- **Estado:** `OPEN`.
+- Ya existen familia y perfiles docentes canónicos, pero falta el catálogo de OPEC concretas.
+- **Cierre requerido:** definir identidad externa, convocatoria, entidad, cargo, metadata y `profile_code` asociado en `content/targeting/opecs/`.
+- Puede avanzarse en repositorio antes de SQL.
 
 ### V4-ARCH-DEBT-009 — Mapear los 248 reactivos V4 a perfiles/cargos
 
 - **Estado:** `OPEN`.
-- **Problema:** el corpus congelado no contiene todavía relaciones many-to-many de targeting.
-- **Acción de cierre:** construir un mapa externo revisado editorialmente para familia/perfiles y, cuando corresponda, OPEC.
-- **Regla:** no inferir perfiles por palabras clave como decisión final y no duplicar reactivos.
-- **Dependencia:** el mapa puede existir en repositorio antes de la migración SQL.
+- El corpus congelado no contiene aún relaciones many-to-many de targeting.
+- **Cierre requerido:** mapa externo revisado editorialmente para familia/perfiles y, cuando corresponda, OPEC.
+- **Regla:** no duplicar reactivos ni aceptar inferencia final por palabras clave sin revisión.
 
 ### V4-ARCH-DEBT-010 — Implementar targeting/knowledge en Supabase de forma aditiva
 
 - **Estado:** `DEFERRED`.
-- **Dependencia anterior resuelta:** `0028` ya está publicada en repositorio y validada localmente.
-- **Motivo del diferimiento actual:** evitar mezclar la reorganización/definición editorial con una migración SQL antes de cerrar catálogos, mapas y autorización de implementación.
-- **Número candidato:** `0029`, únicamente si continúa libre al iniciar el trabajo.
-- **Alcance esperado:** catálogos/relaciones equivalentes a `target_families`, `target_profiles`, `opec_catalog`, `item_target_profiles`, `item_opec_targets`, `knowledge_sources`, `knowledge_source_targets`, `item_source_links`.
-- **Regla:** conservar `item_bank`, UUID, vistas seguras y `opec_id` durante la transición; no reescribir migraciones aplicadas.
+- La dependencia numérica de `0028` ya está resuelta; el diferimiento actual es arquitectónico/editorial.
+- Antes de SQL deben estabilizarse catálogos, mapas y contrato de adopción.
+- Alcance esperado: entidades equivalentes a `target_families`, `target_profiles`, `opec_catalog`, `item_target_profiles`, `item_opec_targets`, `knowledge_sources`, `knowledge_source_targets`, `item_source_links`.
+- **Regla:** conservar `item_bank`, UUID, vistas seguras y `opec_id` durante la transición; nunca reescribir migraciones aplicadas.
 
 ### V4-ARCH-DEBT-011 — Resolver evolución de `editorial_scope`
 
 - **Estado:** `DEFERRED`.
-- **Problema:** V4 distingue hoy `general` y `opec_specific`; la nueva arquitectura permite targeting a perfiles sin exigir duplicación.
-- **Acción de cierre:** decidir si basta con relaciones externas o si un futuro contrato V4.x necesita `profile_specific`.
-- **Regla:** no introducir `profile_specific` solo en SQL ni silenciosamente; cualquier cambio exige contrato, validador, importador, manifest y DB coherentes.
+- V4 distingue `general` y `opec_specific`; targeting por perfil puede resolverse externamente.
+- Si se propone `profile_specific`, debe aprobarse como evolución contractual completa: contrato, validador, importador, manifiesto y DB. No introducirlo solo en SQL.
 
-### V4-ARCH-DEBT-012 — Convertir `temario-base.md` en insumo trazable de gap analysis sin alterar el original
+### V4-ARCH-DEBT-012 — Derivar gap analysis desde `temario-base.md`
 
 - **Estado:** `OPEN`.
-- **Problema:** el temario original está preservado, pero contiene material heterogéneo, posibles duplicaciones, formulaciones históricas y referencias por verificar.
-- **Acción de cierre:** crear un artefacto derivado separado con unidades temáticas normalizadas, fuente/verificación, cobertura V4 y targeting candidato.
-- **Regla:** `temario-base.md` permanece inmutable como fuente original; el artefacto derivado no se convierte automáticamente en taxonomía.
+- El temario original se conserva como fuente de planeación, pero es heterogéneo y contiene posibles duplicaciones y referencias por verificar.
+- **Cierre requerido:** artefacto derivado separado con unidad temática normalizada, fuente/verificación, cobertura V4, constructo y targeting candidato.
+- `temario-base.md` permanece inmutable como fuente original.
 
-### V4-ARCH-DEBT-013 — Verificar consumidores después de cada reorganización física
+### V4-ARCH-DEBT-013 — Verificar consumidores y gates de la reorganización
 
 - **Estado:** `IN_PROGRESS`.
-- **Problema:** una ruta puede ser usada por scripts, workflows, documentación o skills aunque el archivo parezca histórico.
-- **Acción de cierre:** antes de cada movimiento: búsqueda de consumidores; después del movimiento: comparación de rama, validación V4 y revisión de referencias.
-- **Regla:** cualquier archivo con consumidor runtime/CI se pospone o se migra junto con ese consumidor.
+- La comparación actual contra `master` no muestra cambios atribuibles a la reorganización en `items/`, `taxonomy/`, `MANIFEST.json`, `legacy-processing-register.csv`, `src/`, `scripts/` o `supabase/`.
+- Falta ejecutar/observar los gates finales sobre un PR de la rama antes de merge.
 
-### V4-ARCH-DEBT-014 — Preservar provenance del antiguo `temas.md`
+### V4-ARCH-DEBT-014 — Preservar provenance de `temas.md` / `temas(1).md`
 
-- **Estado:** `OPEN`.
-- **Problema:** informes históricos de expansión mencionan un `temas.md` o `temas(1).md` usado en el proceso editorial original, mientras la arquitectura actual preserva el insumo docente en `content/knowledge-base/themes/docentes/temario-base.md`.
-- **Riesgo:** reemplazar retrospectivamente todas las menciones haría parecer que los lotes históricos fueron construidos desde una ruta que no existía entonces y degradaría la trazabilidad.
-- **Acción de cierre:** crear una nota/índice de provenance que documente la relación entre el insumo histórico y el temario preservado actualmente, indicando qué puede demostrarse y qué no.
-- **Regla:** no reescribir afirmaciones históricas para modernizarlas; enlazar la equivalencia/procedencia desde documentación de consolidación.
+- **Estado:** `CLOSED`.
+- Se creó `content/question-bank-v4/history/PROVENANCE.md`.
+- Los informes conservan sus nombres históricos; el documento explica su relación funcional con `content/knowledge-base/themes/docentes/temario-base.md` sin afirmar identidad byte a byte que no esté demostrada.
 
-### V4-ARCH-DEBT-015 — Crear índice estable de historial V4
+### V4-ARCH-DEBT-015 — Crear índice estable del historial V4
 
-- **Estado:** `OPEN`.
-- **Problema:** al sacar los informes históricos de la raíz mejora la arquitectura, pero disminuye su descubribilidad para agentes y humanos si solo quedan carpetas por tipo.
-- **Acción de cierre:** crear un índice cronológico/por fase dentro de `history/` que relacione expansión → auditoría → remediación → snapshot y señale claramente qué documentos son solo históricos.
-- **Criterio:** un agente nuevo debe poder reconstruir la evolución editorial sin depender de los nombres de archivo ni de la antigua estructura de raíz.
+- **Estado:** `CLOSED`.
+- Se creó `content/question-bank-v4/history/INDEX.md` con la secuencia expansión → auditoría → remediación → snapshot y la advertencia de que `MANIFEST.json` es la autoridad actual.
 
-### V4-ARCH-DEBT-016 — Gate final de reorganización antes de merge
+### V4-ARCH-DEBT-016 — Gate final antes de integrar la reorganización
 
 - **Estado:** `OPEN`.
-- **Problema:** los movimientos de archivos pueden ser correctos individualmente pero dejar referencias, documentación o consumidores desalineados al acumularse.
-- **Acción de cierre:** inmediatamente antes del PR/merge de esta rama:
-  1. comparar la rama contra `master`;
-  2. confirmar que `items/`, `taxonomy/`, `MANIFEST.json`, `legacy-processing-register.csv`, `src/`, `scripts/` y `supabase/` solo difieren de `master` por cambios traídos expresamente desde `master`, no por la reorganización;
-  3. buscar referencias a antiguas rutas históricas;
-  4. ejecutar los gates V4 disponibles;
-  5. revisar que los renames no alteraron bytes de los históricos salvo reparaciones documentales de enlace explícitamente registradas;
-  6. generar un handoff ejecutivo para el agente de Supabase.
-- **Criterio de cierre:** reorganización estructural verificable sin cambios de corpus ni contrato runtime atribuibles a esta rama.
+- Antes de merge a `master`:
+  1. abrir/revisar PR de `reorg-v4-architecture-20260822` hacia `master`;
+  2. verificar que la rama continúe `behind_by: 0` o resincronizar;
+  3. confirmar ausencia de cambios de corpus/contrato runtime no intencionados;
+  4. ejecutar/observar `content:validate:v4`, manifest check, docs, tests y CI aplicables;
+  5. revisar el diff de renames y enlaces;
+  6. emitir handoff al agente Supabase antes del merge.
 
-### V4-ARCH-DEBT-017 — Mapear perfiles históricos al catálogo de targeting canónico
+### V4-ARCH-DEBT-017 — Mapear perfiles históricos al targeting canónico
 
-- **Estado:** `OPEN`.
-- **Problema:** documentación histórica de expansión referencia `content/profiles/docente/` y usa perfiles como insumo contextual. La arquitectura actual define la identidad canónica de perfiles en `content/targeting/profiles/docentes.json`.
-- **Riesgo:** reemplazar retrospectivamente la ruta histórica ocultaría cómo se produjo el corpus; ignorarla puede llevar a que un agente trate ambos catálogos como fuentes canónicas concurrentes.
-- **Acción de cierre:** documentar un mapa de equivalencia/provenance entre los perfiles históricos y los `profile_code` actuales; revisar si `content/profiles/docente/` sigue teniendo consumidores y decidir su retiro, compatibilidad o archivado en una tarea separada.
-- **Regla:** para nuevas decisiones de targeting se usa `content/targeting/`; las rutas históricas se conservan solo como evidencia de proceso hasta cerrar esta deuda.
-- **Impacto Supabase:** el agente de migración debe usar los códigos canónicos de `content/targeting/profiles/docentes.json`, nunca derivar una segunda tabla de perfiles desde la estructura legacy.
+- **Estado:** `CLOSED` como decisión de gobernanza; el archivado físico queda fuera de alcance.
+- `content/profiles/docente/README.md` declara esa ruta como carpeta editorial histórica/puente y reconoce los mismos seis códigos.
+- `history/PROVENANCE.md` establece que el trabajo nuevo y la futura persistencia deben usar `content/targeting/profiles/docentes.json` como catálogo canónico.
+- Las carpetas legacy no se eliminan hasta revisar sus consumidores en una tarea separada.
 
 ### V4-ARCH-DEBT-018 — Aplicar/verificar `0028` fuera del entorno local
 
 - **Estado:** `OPEN`.
-- **Responsable lógico:** línea de migración/operación Supabase, no la reorganización documental.
-- **Hecho actual:** `0028` está implementada en repositorio y superó reset `0001–0028`, importación 248/248, idempotencia, rollback y seguridad en Supabase local aislado.
-- **Pendiente:** evidencia de aplicación controlada en staging/remoto y, si se autoriza, producción; importación/activación productiva sigue fuera de alcance.
-- **Riesgo:** confundir “migración versionada y validada localmente” con “migración aplicada en el ambiente que sirve el runtime”.
-- **Acción de cierre:** registrar ambiente, migration history, conteos, resultado del batch, estados de activación, gates de seguridad/E2E y rollback.
-- **Impacto targeting:** esta deuda no impide diseñar catálogos/maps en repositorio, pero debe considerarse antes de acoplar un selector runtime nuevo a tablas aún no desplegadas.
+- **Responsable lógico:** migración/operación Supabase, no reorganización documental.
+- `0028` está implementada y validada localmente, pero no existe aquí evidencia de aplicación/activación productiva.
+- **Cierre requerido:** ambiente, migration history, conteos, resultado del batch, estado de activación, gates de seguridad/E2E y rollback.
+
+### V4-ARCH-DEBT-019 — Actualizar documento arquitectónico tras la reorganización física
+
+- **Estado:** `OPEN`.
+- `docs/03-architecture/question-bank-knowledge-targeting-architecture.md` fue escrito cuando la migración histórica estaba en ejecución.
+- **Cierre requerido:** reflejar que `history/` ya está materializado, que `0028` está versionada y que SQL de targeting/knowledge empieza solo desde el siguiente número libre posterior.
 
 ## Handoff obligatorio al agente de Supabase
 
-Antes de integrar esta rama o iniciar SQL de targeting/knowledge, comunicar al agente de Supabase como mínimo:
+Antes de integrar esta rama o iniciar SQL de targeting/knowledge, comunicar como mínimo:
 
-1. `V4-ARCH-DEBT-001` está cerrada: `0028` ya es parte de la secuencia versionada;
-2. la siguiente migración candidata es `0029`, pero debe comprobarse de nuevo el número libre antes de crearla;
-3. `V4-ARCH-DEBT-018` sigue abierta: `0028` está validada localmente, no verificada como aplicada/activa en producción;
-4. la reorganización de `history/` no cambia el corpus ni `MANIFEST.json`;
-5. `legacy-processing-register.csv` y `MANIFEST.json` no se moverán sin migrar consumidores;
-6. targeting/knowledge es una evolución aditiva posterior y no debe invalidar el importador atómico;
-7. usar `content/targeting/profiles/docentes.json` como catálogo canónico de perfiles para la evolución futura, no estructuras legacy;
-8. cualquier deuda nueva con impacto en contrato, importación, vistas, RLS o esquema.
+1. `0028` ya pertenece a la secuencia versionada y `0029` es solo candidato condicionado al siguiente número libre;
+2. `V4-ARCH-DEBT-018` sigue abierta: validación local no equivale a despliegue productivo;
+3. la reorganización de `history/` no modifica el corpus, `MANIFEST.json`, `legacy-processing-register.csv` ni las migraciones;
+4. `MANIFEST.json` y el registro operacional permanecen en raíz por sus consumidores;
+5. targeting/knowledge es una evolución aditiva y no reemplaza el importador atómico;
+6. `content/targeting/profiles/docentes.json` es el catálogo canónico futuro de perfiles; `content/profiles/docente/` es histórico/puente;
+7. cualquier decisión sobre `editorial_scope`, `opec_id`, vistas, RLS o nuevas tablas debe contrastarse con la arquitectura y este registro de deuda.
 
 ## Regla de mantenimiento
 
-Cada vez que durante esta reorganización aparezca una dependencia, decisión diferida o incompatibilidad potencial:
-
-- agregar una entrada `V4-ARCH-DEBT-###`;
-- indicar estado y condición de cierre;
-- señalar si afecta al agente de Supabase;
-- cerrar la deuda solo con evidencia verificable en repositorio o gates.
+Cada nueva dependencia, incompatibilidad o decisión diferida debe crear o actualizar una entrada `V4-ARCH-DEBT-###`, con estado, condición de cierre e impacto sobre Supabase cuando corresponda. Una deuda solo se marca `CLOSED` con evidencia verificable.
