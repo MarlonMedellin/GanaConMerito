@@ -38,9 +38,23 @@ Contrato OPEC:
 content/targeting/opecs/catalog.schema.json
 ```
 
+Mapa externo reactivo → targeting:
+
+```text
+content/targeting/item-maps/question-bank-v4.json
+```
+
+Contrato del mapa:
+
+```text
+content/targeting/item-maps/item-target-map.schema.json
+```
+
 Estos JSON son catálogos editoriales para alinear agentes y futuras migraciones. No implican que las tablas equivalentes ya existan o estén desplegadas en Supabase.
 
 El catálogo OPEC existe desde ahora como estructura canónica, pero permanece vacío hasta incorporar ofertas reales, trazables y verificadas. No se crean OPEC ficticias para probar la arquitectura.
+
+El mapa de reactivos V4 también inicia vacío. Se poblará mediante revisión editorial y no mediante backfill automático por palabras clave.
 
 ### Familia
 Agrupa una línea amplia de preparación.
@@ -96,6 +110,19 @@ Un reactivo puede ser:
 
 Por tanto, la persistencia futura debe admitir relaciones many-to-many y no una sola columna de cargo como única clasificación.
 
+### Mapa externo de reactivos
+
+Los bancos congelados no deben modificarse únicamente para agregar targeting. La relación se registra externamente en `content/targeting/item-maps/`.
+
+Cada mapping identifica un `itemId`, uno o más destinos y un estado de revisión:
+
+- `candidate`;
+- `reviewed`;
+- `approved`;
+- `rejected`.
+
+Para V4, un mapping `approved` debe tener evidencia editorial y el `itemId` debe existir en el `MANIFEST.json`. El validador de catálogos comprueba además que perfiles y OPEC referenciadas existan realmente.
+
 ### Regla de herencia conceptual
 
 Cuando el usuario selecciona una OPEC:
@@ -124,9 +151,19 @@ Los documentos se almacenan una vez en `content/knowledge-base/`; los mapas de t
 
 El corte V4 congelado conserva su contrato actual (`scope: general|opec_specific`). No se deben agregar campos nuevos a los 248 reactivos congelados sin un cambio explícito de contrato y manifiesto.
 
-La evolución hacia targeting por perfil/cargo debe hacerse mediante una capa externa o una versión posterior del contrato, coordinada con Supabase.
+La evolución hacia targeting por perfil/cargo debe hacerse mediante la capa externa `item-maps/` o una versión posterior del contrato, coordinada con Supabase.
 
 No realizar backfill automático de los 248 reactivos por palabras clave. El mapeo a perfiles debe basarse en evidencia editorial del constructo/rol.
+
+## Validación
+
+Ejecutar:
+
+```bash
+npm run content:validate:knowledge-targeting
+```
+
+El gate valida catálogos de familia/perfil/OPEC, inventario de knowledge y mapas externos de reactivos. También se ejecuta dentro de `PR Checks`.
 
 ## Diseño Supabase recomendado
 
@@ -144,7 +181,7 @@ Allí se propone separar:
 
 Esta estructura permite reutilizar preguntas entre cargos y preservar `opec_id` actual durante la transición.
 
-El contrato de repositorio en `content/targeting/opecs/` debe considerarse una interfaz editorial de entrada para PRD 3, no una copia del esquema SQL. Supabase puede usar UUID y claves foráneas internas mientras conserva los identificadores externos y el `profileCode` de procedencia.
+Los contratos de repositorio bajo `content/targeting/` deben considerarse interfaces editoriales de entrada para PRD 3, no copias del esquema SQL. Supabase puede usar UUID y claves foráneas internas mientras conserva las identidades editoriales y externas de procedencia.
 
 ## Gobernanza del catálogo
 
@@ -155,3 +192,4 @@ El contrato de repositorio en `content/targeting/opecs/` debe considerarse una i
 - Taxonomía y targeting deben evolucionar de forma independiente.
 - No activar una OPEC sin evidencia de procedencia verificable.
 - No duplicar una OPEC para representar filtros temáticos o variaciones de interfaz.
+- No aprobar un mapping de reactivo sin evidencia editorial suficiente.
