@@ -32,12 +32,14 @@ test("Sprint 21 build metadata script honors explicit commit and build time", as
 
 test("Sprint 21 build metadata script generates build time when not provided", async () => {
   const cwd = await mkdtemp(join(tmpdir(), "gcm-build-meta-generated-"));
+  const environmentWithoutBuildTime = { ...process.env };
+  delete environmentWithoutBuildTime.NEXT_PUBLIC_APP_BUILD_TIME;
 
   try {
     await execFileAsync("node", [scriptPath], {
       cwd,
       env: {
-        ...process.env,
+        ...environmentWithoutBuildTime,
         NEXT_PUBLIC_APP_COMMIT: "9cd7ce4",
       },
     });
