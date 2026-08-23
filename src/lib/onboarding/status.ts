@@ -12,6 +12,5 @@ export function isLearningProfileOnboardingComplete(
   learningProfile?: LearningProfileOnboardingStatusInput | null,
 ) {
   return Boolean(learningProfile?.onboarding_completed)
-    && Boolean(learningProfile?.target_profile_code)
-    && hasActiveAreas(learningProfile?.active_areas);
+    && Boolean(learningProfile?.target_profile_code);
 }
