@@ -13,6 +13,16 @@ Esta carpeta **no es un banco de reactivos**. Contiene fuentes, temarios, mapas 
 5. El banco V4 sigue gobernado por `content/question-bank-v4/CONTRATO-EDITORIAL-V4.md` y `MANIFEST.json`.
 6. Un archivo legacy no se promueve automáticamente a fuente verificada: primero debe pasar por inventario y normalización.
 
+## Rol de las fuentes — regla simple congelada
+
+Para evitar complejidad adicional, no se crean nuevas capas ni enums en esta etapa. Los agentes deben distinguir conceptualmente tres usos:
+
+- **fuente oficial de reglas:** norma, Acuerdo, Anexo u OPEC oficial; gobierna las reglas que efectivamente le correspondan;
+- **orientación de evaluación:** matriz de estructura de pruebas, guía y ejes temáticos oficiales; orienta qué y cómo se evalúa sin reemplazar las reglas jurídicas superiores;
+- **material de estudio:** temarios, referencias académicas, documentos técnicos y guías complementarias; sirven para preparar y construir contenido, pero no adquieren autoridad normativa por estar almacenados aquí.
+
+Una misma fuente puede ser relevante para más de un propósito, pero su autoridad no se infiere de su carpeta. Esta distinción es documental y no ensancha el contrato de preguntas ni el modelo de datos antes de canary.
+
 ## Estructura actual
 
 ```text
