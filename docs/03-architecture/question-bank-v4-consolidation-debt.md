@@ -17,7 +17,7 @@
 
 La reorganización histórica de V4 ya separa estado operativo de evidencia histórica. `MANIFEST.json`, `items/`, `taxonomy/` y `legacy-processing-register.csv` no fueron modificados por esta reorganización. La migración `0028` del importador atómico ya forma parte de `master` y fue sincronizada a esta rama.
 
-La arquitectura de `knowledge + targeting` ya tiene estructura física de repositorio: catálogo inicial de fuentes, carpetas canónicas de fuentes, mapas de familia/perfil/OPEC y contrato machine-readable para OPEC. La persistencia Supabase correspondiente sigue siendo evolución aditiva de PRD 3.
+La arquitectura de `knowledge + targeting` ya tiene estructura física de repositorio: catálogo inicial de fuentes, carpetas canónicas de fuentes, contratos de familia/perfil/OPEC, mapa externo de reactivos, schema de mapas de conocimiento y validación automática integrada a `PR Checks`. La persistencia Supabase correspondiente sigue siendo evolución aditiva de PRD 3.
 
 ## Registro
 
@@ -69,7 +69,8 @@ La arquitectura de `knowledge + targeting` ya tiene estructura física de reposi
 - Ya existe `content/knowledge-base/catalog/source-inventory.json` y la estructura `sources/{normative,academic,technical,guides}`.
 - El inventario inicial registró los dos únicos archivos normativos legacy identificados en `content/normative/`: `decreto_1075.md` y `ley_1098.md`.
 - Ambos permanecen como `verificationStatus: needs_review`; no se consideran fuentes decisivas verificadas.
-- **Cierre requerido:** verificar procedencia oficial, vigencia, localizadores, derechos de conservación y promover de forma controlada las fuentes que correspondan a `knowledge-base/sources/`.
+- Ya existe el contrato `content/knowledge-base/maps/map.schema.json`, pero no se crean relaciones `active` antes de verificar la fuente.
+- **Cierre requerido:** verificar procedencia oficial, vigencia, localizadores, derechos de conservación y promover de forma controlada las fuentes que correspondan a `knowledge-base/sources/`; después poblar sus mapas de aplicabilidad cuando exista evidencia suficiente.
 
 ### V4-ARCH-DEBT-008 — Crear catálogo real de OPEC y mapeo a perfiles
 
@@ -81,10 +82,13 @@ La arquitectura de `knowledge + targeting` ya tiene estructura física de reposi
 
 ### V4-ARCH-DEBT-009 — Mapear los 248 reactivos V4 a perfiles/cargos
 
-- **Estado:** `OPEN`.
-- El corpus congelado no contiene aún relaciones many-to-many de targeting.
-- **Cierre requerido:** mapa externo revisado editorialmente para familia/perfiles y, cuando corresponda, OPEC.
-- **Regla:** no duplicar reactivos ni aceptar inferencia final por palabras clave sin revisión.
+- **Estado:** `IN_PROGRESS`.
+- El corpus congelado no contiene relaciones many-to-many de targeting y no será modificado para agregarlas.
+- Ya existen `content/targeting/item-maps/item-target-map.schema.json` y el mapa canónico vacío `content/targeting/item-maps/question-bank-v4.json`.
+- El gate valida `itemId` contra `MANIFEST.json`, referencias a familia/perfil/OPEC, targets duplicados y evidencia para mappings `approved`.
+- El mapa vacío es deliberado: todavía no se ha realizado la revisión editorial de los 248 reactivos.
+- **Cierre requerido:** poblar y revisar editorialmente los 248 reactivos para familia/perfiles y, cuando corresponda, OPEC.
+- **Regla:** no duplicar reactivos ni aceptar inferencia final por palabras clave; un clasificador automático solo puede producir candidatos.
 
 ### V4-ARCH-DEBT-010 — Implementar targeting/knowledge en Supabase de forma aditiva
 
@@ -92,7 +96,7 @@ La arquitectura de `knowledge + targeting` ya tiene estructura física de reposi
 - La dependencia numérica de `0028` está resuelta.
 - Alcance esperado: entidades equivalentes a `target_families`, `target_profiles`, `opec_catalog`, `item_target_profiles`, `item_opec_targets`, `knowledge_sources`, `knowledge_source_targets`, `item_source_links`.
 - **Regla:** conservar `item_bank`, UUID, vistas seguras y `opec_id` durante la transición; nunca reescribir migraciones aplicadas.
-- **Coordinación:** PRD 3 debe tomar los catálogos de `content/targeting/` y `content/knowledge-base/` como contratos editoriales de entrada, no inventar un catálogo paralelo.
+- **Coordinación:** PRD 3 debe tomar los catálogos y mapas de `content/targeting/` y `content/knowledge-base/` como contratos editoriales de entrada, no inventar un catálogo paralelo.
 
 ### V4-ARCH-DEBT-011 — Resolver evolución de `editorial_scope`
 
@@ -157,22 +161,26 @@ La arquitectura de `knowledge + targeting` ya tiene estructura física de reposi
 
 ### V4-ARCH-DEBT-020 — Validación automática de catálogos knowledge/targeting
 
-- **Estado:** `CLOSED` para los catálogos materializados actualmente.
-- `scripts/validate-knowledge-targeting.ts` valida estructura y referencias de familias, perfiles, OPEC e inventario de fuentes.
-- El gate comprueba:
+- **Estado:** `CLOSED`.
+- `scripts/validate-knowledge-targeting.ts` valida estructura y referencias de familias, perfiles, OPEC, inventario de fuentes, mapas de conocimiento e item maps.
+- El gate comprueba, entre otros:
   - `familyCode` existente;
   - `profileCode` perteneciente a la familia declarada;
   - OPEC `active` solo con `verificationStatus: verified`;
   - ausencia de duplicados por identidad externa OPEC;
-  - unicidad de `sourceId`.
+  - unicidad de `sourceId`;
+  - referencias de mapas de conocimiento a fuentes/targets existentes;
+  - relación de conocimiento `active` únicamente con fuente `verified` y datos de verificación;
+  - `itemId` existente en el `MANIFEST.json` V4;
+  - targets de reactivo existentes y no duplicados;
+  - mapping `approved` con evidencia editorial.
 - El comando `npm run content:validate:knowledge-targeting` está versionado y `PR Checks` lo ejecuta.
-- Los mapas machine-readable aún no existen; su contrato/validación se separa en `V4-ARCH-DEBT-022` y no mantiene esta deuda artificialmente abierta.
 
 ### V4-ARCH-DEBT-021 — Restaurar y verificar integridad exacta de `temario-base.md`
 
 - **Estado:** `OPEN` y bloqueante para `V4-ARCH-DEBT-012`.
 - Archivo original aportado `temas(3).md`: `94850` bytes, SHA-256 `4dd3e7d1df2af89e4818f77ca244dc26187930a8d7faf19d1c7f05538bc88bb7`, Git blob SHA `f5c90d8393f8dbb7a83794134b27b1a0849de807`.
-- Copia actual del repositorio: Git blob SHA `2d022f1d66e5d98653178d3d772db210c3aec442`; no coincide tampoco bajo normalizaciones simples LF/CRLF.
+- Copia actual del repositorio: `95094` bytes, Git blob SHA `2d022f1d66e5d98653178d3d772db210c3aec442`; no coincide tampoco bajo normalizaciones simples LF/CRLF.
 - Se confirmó al menos una diferencia sustantiva: después de `5. Tema - Tiempos del PARD (Ley 1888)` la copia contiene una segunda entrada `7. Competencia - Capacidad de Agencia...` que no está allí en el original.
 - Evidencia detallada: `content/knowledge-base/themes/docentes/INTEGRITY.md`.
 - **Cierre requerido:** sustituir por los bytes exactos del original o documentar expresamente una transformación; para identidad exacta, el Git blob SHA final debe ser `f5c90d8393f8dbb7a83794134b27b1a0849de807`.
@@ -180,10 +188,12 @@ La arquitectura de `knowledge + targeting` ya tiene estructura física de reposi
 
 ### V4-ARCH-DEBT-022 — Materializar y validar mapas machine-readable de aplicabilidad
 
-- **Estado:** `OPEN`.
-- `content/knowledge-base/maps/{families,profiles,opecs}/` contiene por ahora contratos/documentación, no mapas JSON poblados.
-- **Cierre requerido:** definir schema estable, crear mapas explícitos y extender `content:validate:knowledge-targeting` para exigir que cada referencia apunte a `sourceId`, `familyCode`, `profileCode` u OPEC existentes.
-- **Impacto PRD 3:** no backfillear `knowledge_source_targets` desde texto libre; cuando existan mapas, PRD 3 debe consumir el contrato validado.
+- **Estado:** `CLOSED` como contrato arquitectónico.
+- Se creó `content/knowledge-base/maps/map.schema.json` para relaciones fuente → `common|family|profile|opec`.
+- Se creó `content/targeting/item-maps/item-target-map.schema.json` y el mapa V4 vacío `question-bank-v4.json` para relaciones reactivo → familia/perfil/OPEC.
+- `content:validate:knowledge-targeting` valida ambos tipos de mapa contra inventarios/catálogos canónicos.
+- No se crean mapas de conocimiento `active` con fuentes `needs_review`, ni mappings de reactivos ficticios para llenar estructura.
+- La población real de relaciones continúa bajo `V4-ARCH-DEBT-007`, `008` y `009`; no reabre esta deuda de contrato.
 
 ## Handoff obligatorio al agente de Supabase / PRD 3
 
@@ -196,11 +206,12 @@ Antes de integrar esta rama o fusionar SQL de targeting/knowledge, comunicar com
 5. targeting/knowledge es una evolución aditiva y no reemplaza el importador atómico;
 6. `content/targeting/profiles/docentes.json` es el catálogo canónico de perfiles; `content/profiles/docente/` es histórico/puente;
 7. `content/targeting/opecs/catalog.json` + `catalog.schema.json` definen la interfaz editorial de OPEC y no contienen datos ficticios;
-8. `content/knowledge-base/catalog/source-inventory.json` es inventario de conocimiento; `needs_review` no equivale a fuente verificada;
-9. `content:validate:knowledge-targeting` ya valida los catálogos materializados y debe permanecer verde antes de cualquier import/backfill;
-10. `V4-ARCH-DEBT-021` bloquea el gap analysis del temario hasta restaurar su integridad;
-11. los mapas de aplicabilidad machine-readable siguen pendientes en `V4-ARCH-DEBT-022`; no inferir `knowledge_source_targets` desde texto libre;
-12. cualquier decisión sobre `editorial_scope`, `opec_id`, vistas, RLS o nuevas tablas debe contrastarse con la arquitectura y este registro de deuda.
+8. `content/targeting/item-maps/question-bank-v4.json` es la interfaz externa para targeting de los 248 reactivos y está vacía hasta revisión editorial;
+9. `content/knowledge-base/catalog/source-inventory.json` es inventario de conocimiento; `needs_review` no equivale a fuente verificada;
+10. `content/knowledge-base/maps/map.schema.json` define el contrato editorial de `knowledge_source_targets`; no existen relaciones activas hasta verificar fuentes;
+11. `content:validate:knowledge-targeting` valida catálogos y mapas y debe permanecer verde antes de cualquier import/backfill;
+12. `V4-ARCH-DEBT-021` bloquea el gap analysis del temario hasta restaurar su integridad;
+13. cualquier decisión sobre `editorial_scope`, `opec_id`, vistas, RLS o nuevas tablas debe contrastarse con la arquitectura, `prd3-knowledge-targeting-handoff.*` y este registro de deuda.
 
 ## Regla de mantenimiento
 
