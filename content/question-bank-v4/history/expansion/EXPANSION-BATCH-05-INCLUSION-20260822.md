@@ -37,7 +37,7 @@ El lote se concentró en nuevas decisiones y comprensiones sobre barreras, valor
 
 Se aplicaron los gates de fábrica docente y auditoría adversarial, con control de respuesta única, pertinencia de distractores, fuente, taxonomía, pistas y duplicación conceptual.
 
-Resultado final en `history/snapshots/COVERAGE-AFTER-BATCH-05-20260822.json`:
+Resultado final en `../snapshots/COVERAGE-AFTER-BATCH-05-20260822.json`:
 
 - 120 reactivos V4 válidos.
 - 0 errores estructurales o taxonómicos.
