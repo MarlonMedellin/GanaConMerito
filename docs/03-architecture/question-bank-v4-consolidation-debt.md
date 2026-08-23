@@ -120,6 +120,34 @@ Evitar que la reorganización física del banco V4, la migración a Supabase y l
 - **Acción de cierre:** antes de cada movimiento: búsqueda de consumidores; después del movimiento: comparación de rama, validación V4 y revisión de referencias.
 - **Regla:** cualquier archivo con consumidor runtime/CI se pospone o se migra junto con ese consumidor.
 
+### V4-ARCH-DEBT-014 — Preservar provenance del antiguo `temas.md`
+
+- **Estado:** `OPEN`.
+- **Problema:** informes históricos de expansión mencionan un `temas.md` usado en el proceso editorial original, mientras la arquitectura actual preserva el insumo docente en `content/knowledge-base/themes/docentes/temario-base.md`.
+- **Riesgo:** reemplazar retrospectivamente todas las menciones a `temas.md` haría parecer que los lotes históricos fueron construidos desde una ruta que no existía entonces y degradaría la trazabilidad.
+- **Acción de cierre:** crear una nota/índice de provenance que documente la relación entre el insumo histórico y el temario preservado actualmente, indicando qué puede demostrarse y qué no.
+- **Regla:** no reescribir afirmaciones históricas para modernizarlas; enlazar la equivalencia/procedencia desde documentación de consolidación.
+
+### V4-ARCH-DEBT-015 — Crear índice estable de historial V4
+
+- **Estado:** `OPEN`.
+- **Problema:** al sacar los informes históricos de la raíz mejora la arquitectura, pero disminuye su descubribilidad para agentes y humanos si solo quedan carpetas por tipo.
+- **Acción de cierre:** crear un índice cronológico/por fase dentro de `history/` que relacione expansión → auditoría → remediación → snapshot y señale claramente qué documentos son solo históricos.
+- **Criterio:** un agente nuevo debe poder reconstruir la evolución editorial sin depender de los nombres de archivo ni de la antigua estructura de raíz.
+
+### V4-ARCH-DEBT-016 — Gate final de reorganización antes de merge
+
+- **Estado:** `OPEN`.
+- **Problema:** los movimientos de archivos pueden ser correctos individualmente pero dejar referencias, documentación o consumidores desalineados al acumularse.
+- **Acción de cierre:** inmediatamente antes del PR/merge de esta rama:
+  1. comparar la rama contra `master`;
+  2. confirmar que `items/`, `taxonomy/`, `MANIFEST.json`, `legacy-processing-register.csv`, `src/`, `scripts/` y `supabase/` no cambiaron salvo decisión explícita aprobada;
+  3. buscar referencias a antiguas rutas históricas;
+  4. ejecutar los gates V4 disponibles;
+  5. revisar que los renames no alteraron bytes de los históricos salvo reparaciones documentales de enlace explícitamente registradas;
+  6. generar un handoff ejecutivo para el agente de Supabase.
+- **Criterio de cierre:** reorganización estructural verificable sin cambios de corpus ni contrato runtime.
+
 ## Handoff obligatorio al agente de Supabase
 
 Antes de integrar esta rama o iniciar SQL de targeting/knowledge, comunicar al agente de Supabase como mínimo:
