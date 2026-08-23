@@ -72,7 +72,7 @@ No se alteraron reactivos previamente aprobados para maquillar la distribución 
 
 ## 6. Cobertura y C1
 
-El snapshot canónico de este cierre es `COVERAGE-AFTER-A-B-REMEDIATION-20260822.json` y refleja exactamente 248 reactivos activos.
+El snapshot canónico de este cierre es `../snapshots/COVERAGE-AFTER-A-B-REMEDIATION-20260822.json` y refleja exactamente 248 reactivos activos.
 
 Se preservó C1 sin expansión adicional:
 
@@ -90,7 +90,7 @@ No se generó Fase C adicional.
 - 10/10 reemplazos serializados solo después de `APPROVED`.
 - `DOC-001295`–`DOC-001304` son IDs nuevos y secuenciales.
 - `legacy-processing-register.csv` registra las **18/18 disposiciones** bajo el batch `DOC-READVERSARIAL-REMEDIATION-20260822`.
-- Los informes históricos `AUDIT-PHASE-A-B-READVERSARIAL-20260822.json/.md` permanecen intactos.
+- Los informes históricos `../audits/AUDIT-PHASE-A-B-READVERSARIAL-20260822.json` y `../audits/AUDIT-PHASE-A-B-READVERSARIAL-20260822.md` permanecen intactos.
 - No se realizó merge a `master` ni a ninguna otra rama.
 - No se modificaron `src/`, `scripts/` ni `supabase/`.
 - Los workflows escritores temporales fueron retirados del diff final y `pr-checks.yml` fue restaurado a la base autoritativa.
