@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gcm://content/targeting/opecs/catalog.schema.json",
+  "title": "GanaConMerito OPEC catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "opecs"],
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "const": 1
+    },
+    "opecs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/opec"
+      }
+    }
+  },
+  "$defs": {
+    "nullableString": {
+      "type": ["string", "null"]
+    },
+    "opec": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceSystem",
+        "externalOpecId",
+        "familyCode",
+        "profileCode",
+        "positionName",
+        "status",
+        "verificationStatus",
+        "source",
+        "metadata"
+      ],
+      "properties": {
+        "sourceSystem": {
+          "type": "string",
+          "minLength": 1
+        },
+        "externalOpecId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "familyCode": {
+          "type": "string",
+          "minLength": 1
+        },
+        "profileCode": {
+          "type": "string",
+          "minLength": 1
+        },
+        "convocationCode": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "entityName": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "positionName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "active", "inactive"]
+        },
+        "verificationStatus": {
+          "type": "string",
+          "enum": ["needs_review", "verified", "rejected"]
+        },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["reference"],
+          "properties": {
+            "reference": {
+              "type": "string",
+              "minLength": 1
+            },
+            "url": {
+              "$ref": "#/$defs/nullableString"
+            },
+            "retrievedAt": {
+              "$ref": "#/$defs/nullableString"
+            }
+          }
+        },
+        "metadata": {
+          "type": "object"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {"const": "active"}
+            },
+            "required": ["status"]
+          },
+          "then": {
+            "properties": {
+              "verificationStatus": {"const": "verified"}
+            }
+          }
+        }
+      ]
+    }
+  }
+}
