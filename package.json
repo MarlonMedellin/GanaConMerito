@@ -26,7 +26,7 @@
     "check:doc-triggers": "tsx scripts/check-doc-triggers.ts",
     "content:validate": "tsx scripts/validate-question-bank.ts",
     "content:validate:v4": "tsx scripts/validate-question-bank-v4.ts",
-    "content:validate:knowledge-targeting": "tsx scripts/validate-knowledge-targeting.ts",
+    "content:validate:knowledge-targeting": "tsx scripts/validate-knowledge-targeting.ts && tsx scripts/validate-knowledge-vocabularies.ts",
     "content:inventory:v4-sources": "tsx scripts/inventory-v4-source-references.ts",
     "content:import:v4": "tsx scripts/import-question-bank-v4.ts",
     "content:validate:all": "tsx scripts/validate-question-bank.ts --all",
