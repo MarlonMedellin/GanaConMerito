@@ -13,6 +13,12 @@ los IDs retirados y el estado editorial. Los reportes `COVERAGE-*`, `AUDIT-*`,
 `EXPANSION-*` y `REMEDIATION-*` son evidencia histórica; no compiten con el
 manifiesto como fuente del corte actual.
 
+La Fase C2 queda preservada como evidencia histórica en
+`EXPANSION-PHASE-C2-SELECTIVE-20260822.md`, `AUDIT-PHASE-C2-20260822.*` y
+`COVERAGE-AFTER-PHASE-C2-20260822.json`. C2 cerró con **0 reactivos nuevos** y no
+modificó el corpus; por tanto, tampoco reemplaza ni altera el corte canónico del
+manifiesto.
+
 El estado `FROZEN / APPROVED` es exclusivamente editorial y de repositorio. El
 manifiesto declara expresamente que no autoriza migración Supabase ni activación de
 runtime. Cualquier expansión posterior requiere un nuevo cierre editorial y una
@@ -87,9 +93,9 @@ La arquitectura completa y la propuesta para Supabase están en:
 
 `docs/03-architecture/question-bank-knowledge-targeting-architecture.md`
 
-El Markdown de temas docentes que originó la expansión debe conservarse como fuente
-de planeación en `content/knowledge-base/themes/docentes/temario-base.md` cuando se
-incorpore desde su documento original. Un temario no crea automáticamente topics ni
+El Markdown original de temas docentes se conserva como fuente de planeación en
+`content/knowledge-base/themes/docentes/temario-base.md`. Es insumo de gap analysis
+y cobertura, no un catálogo automático de `topic` ni autorización para crear
 reactivos.
 
 ## Perfiles/cargos y OPEC
