@@ -5,7 +5,8 @@
     "Este inventario registra fuentes canónicas y candidatos legacy; no convierte automáticamente un candidato en fuente verificada.",
     "La aplicabilidad por familia, perfil u OPEC se mantiene fuera de este catálogo, en maps/targeting.",
     "repoPathLegacy conserva procedencia histórica y no implica que esa ruta sea canónica.",
-    "Una URL oficial verificada demuestra identidad/procedencia de la norma, pero no sustituye la revisión de vigencia y localizador del artículo usado por cada reactivo."
+    "Una URL oficial verificada demuestra identidad/procedencia de la norma, pero no sustituye la revisión de vigencia y localizador del artículo usado por cada reactivo.",
+    "Para Docentes y Directivos Docentes 2026, la CNSC confirma una publicación para observaciones y una OPEC preliminar; no promover reglas detalladas, cifras territoriales ni targeting específico hasta verificar directamente el documento oficial que las sustenta."
   ],
   "sources": [
     {
@@ -51,6 +52,28 @@
       "locator": null,
       "rightsNote": "Ficha legacy resumida; la ley oficial es pública, pero la copia local no es texto integral ni sustituye la fuente oficial.",
       "notes": "La identidad, fecha de expedición, entrada en vigencia y referencia oficial fueron contrastadas. La Ley 1098 ha sido modificada; cualquier artículo usado por un reactivo exige verificación de vigencia/localizador antes de considerarse fuente decisiva."
+    },
+    {
+      "sourceId": "cnsc-docentes-2026-project-publication-index",
+      "sourceType": "guide",
+      "title": "Proyecto de Acuerdo y Anexo Técnico del Proceso de Selección Docentes y Directivos Docentes 2026",
+      "reference": "Página oficial CNSC de proyectos de acuerdos y anexos de nuevos procesos de selección",
+      "issuerOrAuthor": "Comisión Nacional del Servicio Civil",
+      "jurisdiction": "colombia",
+      "publicationDate": "2026-08-19",
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-22",
+      "lastCheckedAt": "2026-08-22",
+      "verificationScope": "official_publication_status_window_and_preliminary_opec_verified; detailed_rules_and_entity_level_offer_not_verified_by_this_source",
+      "sourceSystem": "cnsc",
+      "url": "https://www.cnsc.gov.co/proyecto-de-acuerdos-y-anexos-de-nuevos-procesos-de-seleccion",
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": "Sección 'Docentes y Directivos Docentes 2026'",
+      "rightsNote": "Referencia pública oficial; conservar metadatos y localizadores, no duplicar innecesariamente el contenido íntegro.",
+      "notes": "Hecho verificado: la CNSC mantiene el proceso en etapa de publicación para observaciones, con recepción del 19 al 25 de agosto de 2026, y declara visible una OPEC preliminar en SIMO. Esta fuente no verifica por sí sola reglas detalladas del Anexo, cifras por entidad ni números OPEC concretos."
     }
   ]
 }
