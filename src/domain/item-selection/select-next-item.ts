@@ -5,14 +5,16 @@ interface SelectNextItemParams {
   professionalProfileId?: string | null;
   activeArea?: string;
   activeCompetency?: string;
+  canaryOpecId?: string;
   excludeItemIds?: string[];
   profileIdForRotation?: string;
   sessionIdForRotation?: string;
 }
 
-interface SelectionScope {
+export interface SelectionScope {
   activeArea?: string;
   activeCompetency?: string;
+  opecId?: string | null;
 }
 
 const CANDIDATE_LIMIT = 20;
@@ -30,6 +32,7 @@ function buildRotationSeed(params: SelectNextItemParams) {
   return [
     params.profileIdForRotation ?? "anon",
     params.sessionIdForRotation ?? "session",
+    params.canaryOpecId ?? "any-opec",
     params.activeArea ?? "any-area",
     params.activeCompetency ?? "any-competency",
   ].join("|");
@@ -74,6 +77,7 @@ async function runSelectionAttempt(params: SelectNextItemParams, scope: Selectio
   const candidates = await repository.listCandidates({
     area: scope.activeArea,
     competency: scope.activeCompetency,
+    opecId: scope.opecId,
     excludeItemIds: params.excludeItemIds,
     limit: CANDIDATE_LIMIT,
   });
@@ -89,25 +93,33 @@ async function runSelectionAttempt(params: SelectNextItemParams, scope: Selectio
   return pickDeterministicCandidate(pool, buildRotationSeed(params));
 }
 
-function buildSelectionScopes(params: SelectNextItemParams): SelectionScope[] {
-  const scopes: SelectionScope[] = [];
+export function buildSelectionScopes(params: Pick<SelectNextItemParams, "activeArea" | "activeCompetency" | "canaryOpecId">): SelectionScope[] {
+  const contentScopes: SelectionScope[] = [];
 
   if (params.activeArea && params.activeCompetency) {
-    scopes.push({ activeArea: params.activeArea, activeCompetency: params.activeCompetency });
+    contentScopes.push({ activeArea: params.activeArea, activeCompetency: params.activeCompetency });
   }
 
   if (params.activeArea) {
-    scopes.push({ activeArea: params.activeArea });
+    contentScopes.push({ activeArea: params.activeArea });
   }
 
-  scopes.push({});
+  contentScopes.push({});
 
-  return scopes.filter(
+  const uniqueContentScopes = contentScopes.filter(
     (scope, index, allScopes) =>
       allScopes.findIndex(
         (candidate) =>
           candidate.activeArea === scope.activeArea && candidate.activeCompetency === scope.activeCompetency,
       ) === index,
+  );
+
+  if (!params.canaryOpecId) {
+    return uniqueContentScopes;
+  }
+
+  return [params.canaryOpecId, null].flatMap((opecId) =>
+    uniqueContentScopes.map((scope) => ({ ...scope, opecId })),
   );
 }
 
