@@ -35,6 +35,15 @@ test("Sprint 48 rebuilds the three V4 read boundaries without cascade", async ()
   assert.match(migration, /grant select on table public\.v_question_bank_v4_answered to service_role/i);
 });
 
+test("Sprint 48 reconciles the governed V4 importer without replacing its historical overload", async () => {
+  const migration = await readRepoFile("supabase/migrations/0024_reconcile_v4_import_signature.sql");
+
+  assert.match(migration, /upsert_content_item_v4\(\s*p_item jsonb,\s*p_source_path text,\s*p_content_hash text,\s*p_approval_evidence text/i);
+  assert.match(migration, /status = 'draft'[\s\S]+is_active = false/i);
+  assert.match(migration, /revoke execute on function public\.upsert_content_item_v4\(jsonb, text, text, text\)[\s\S]+from public, anon, authenticated/i);
+  assert.match(migration, /grant execute on function public\.upsert_content_item_v4\(jsonb, text, text, text\)[\s\S]+to service_role/i);
+});
+
 test("pre-answer route does not select or serialize answer-bearing fields", async () => {
   const route = await readRepoFile("src/app/api/session/item/route.ts");
   const sessionTypes = await readRepoFile("src/types/session.ts");
