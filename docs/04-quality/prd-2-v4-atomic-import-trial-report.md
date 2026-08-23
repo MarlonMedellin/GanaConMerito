@@ -83,3 +83,11 @@ esperadas. Cada fallo conserva solo un código seguro y una reconciliación con
 - No se aplicó ninguna migración ni importación en Supabase de producción.
 - La prueba local no equivale a runtime público ni autoriza el PRD 3 por sí sola;
   aún se requiere CI verde y revisión/publicación del commit.
+
+## Observación de CI
+
+La primera corrida publicada reveló que una prueba histórica de metadata no aislaba
+`NEXT_PUBLIC_APP_BUILD_TIME` definido por el workflow. El test se corrigió para
+eliminar explícitamente esa variable en el caso «no proporcionada»; no cambia el
+runtime ni el importador y permite que CI evalúe el comportamiento que la prueba
+declara.
