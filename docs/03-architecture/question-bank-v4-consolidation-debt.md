@@ -148,6 +148,15 @@ Evitar que la reorganización física del banco V4, la migración a Supabase y l
   6. generar un handoff ejecutivo para el agente de Supabase.
 - **Criterio de cierre:** reorganización estructural verificable sin cambios de corpus ni contrato runtime.
 
+### V4-ARCH-DEBT-017 — Mapear perfiles históricos al catálogo de targeting canónico
+
+- **Estado:** `OPEN`.
+- **Problema:** documentación histórica de expansión referencia `content/profiles/docente/` y usa perfiles como insumo contextual. La arquitectura actual define la identidad canónica de perfiles en `content/targeting/profiles/docentes.json`.
+- **Riesgo:** reemplazar retrospectivamente la ruta histórica ocultaría cómo se produjo el corpus; ignorarla puede llevar a que un agente trate ambos catálogos como fuentes canónicas concurrentes.
+- **Acción de cierre:** documentar un mapa de equivalencia/provenance entre los perfiles históricos y los `profile_code` actuales; revisar si `content/profiles/docente/` sigue teniendo consumidores y decidir su retiro, compatibilidad o archivado en una tarea separada.
+- **Regla:** para nuevas decisiones de targeting se usa `content/targeting/`; las rutas históricas se conservan solo como evidencia de proceso hasta cerrar esta deuda.
+- **Impacto Supabase:** el agente de migración debe usar los códigos canónicos de `content/targeting/profiles/docentes.json`, nunca derivar una segunda tabla de perfiles desde la estructura legacy.
+
 ## Handoff obligatorio al agente de Supabase
 
 Antes de integrar esta rama o iniciar SQL de targeting/knowledge, comunicar al agente de Supabase como mínimo:
@@ -157,7 +166,8 @@ Antes de integrar esta rama o iniciar SQL de targeting/knowledge, comunicar al a
 3. que la reorganización de `history/` no cambia el corpus ni `MANIFEST.json`;
 4. que `legacy-processing-register.csv` y `MANIFEST.json` no se moverán sin migrar consumidores;
 5. que targeting/knowledge es una evolución aditiva posterior y no debe invalidar su importador;
-6. cualquier deuda nueva con impacto en contrato, importación, vistas, RLS o esquema.
+6. usar `content/targeting/profiles/docentes.json` como catálogo canónico de perfiles para la evolución futura, no estructuras legacy;
+7. cualquier deuda nueva con impacto en contrato, importación, vistas, RLS o esquema.
 
 ## Regla de mantenimiento
 
