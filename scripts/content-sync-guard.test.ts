@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import fs from "node:fs/promises";
 import test from "node:test";
 import { buildContentSyncPlan, calculateContentSyncPlanHash } from "./lib/content-sync-plan";
 import { assertContentSyncTarget } from "./lib/content-sync-guard";
@@ -66,5 +67,23 @@ test("remote targets fail closed without all remote-only gates", async () => {
     else process.env.CONTENT_SYNC_EXPECTED_PROJECT_REF = previous.ref;
     if (previous.sha === undefined) delete process.env.CONTENT_SYNC_EXPECTED_GIT_SHA;
     else process.env.CONTENT_SYNC_EXPECTED_GIT_SHA = previous.sha;
+  }
+});
+
+test("SQL baseline guard precedes V4 DDL and apply exposes physical-write telemetry", async () => {
+  const [foundation, sync] = await Promise.all([
+    fs.readFile("supabase/migrations/0001_v4_clean_foundation.sql", "utf8"),
+    fs.readFile("supabase/migrations/0003_v4_content_sync.sql", "utf8"),
+  ]);
+  const guard = foundation.indexOf("GCM_V4_CLEAN_BASELINE_REFUSES_LEGACY_DATABASE");
+  const firstV4Ddl = foundation.indexOf("create extension if not exists pgcrypto");
+  assert.ok(guard > 0 && guard < firstV4Ddl);
+  assert.match(foundation, /to_regclass\('supabase_migrations\.schema_migrations'\)/);
+  assert.match(foundation, /public\.item_bank/);
+  assert.match(sync, /'writes', v_writes/);
+  assert.match(sync, /'repaired', v_repaired/);
+  assert.match(sync, /'writeCounts', jsonb_build_object/);
+  for (const table of ["item_target_families", "item_target_profiles", "item_opec_targets", "knowledge_source_targets", "item_source_links"]) {
+    assert.doesNotMatch(sync, new RegExp(`delete from public\\.${table}\\s*;`, "i"));
   }
 });

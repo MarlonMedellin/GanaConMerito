@@ -19,10 +19,18 @@ continúa siendo evidencia útil del contrato de seguridad.
 
 La cadena ejecutable nueva vive en `supabase/migrations/` y puede crear una base
 vacía sin ejecutar la historia. Las migraciones `0001–0030` anteriores se
-conservan sin reescritura en `supabase/legacy-migrations/`. La reutilización
-deliberada de sus números impide aplicar accidentalmente el rebaseline sobre una
-base legacy cuyo ledger ya los registró. El motor exige además `baseline_id =
-gcm-v4-clean-v1` e identidad exacta de instancia.
+conservan sin reescritura en `supabase/legacy-migrations/`. Antes del primer DDL,
+`0001_v4_clean_foundation.sql` ejecuta dentro de la misma transacción un guard que
+aborta con `GCM_V4_CLEAN_BASELINE_REFUSES_LEGACY_DATABASE` si encuentra marcadores
+Legacy (`item_bank`, `item_options`, perfiles/núcleos/vistas/importadores
+históricos, columnas representativas) o versiones `0001–0030` en el ledger de
+Supabase. Al estar al inicio de la transacción, el rechazo deja cero objetos V4
+parciales. El motor exige además `baseline_id = gcm-v4-clean-v1` e identidad
+exacta de instancia.
+
+`npm run test:v4-baseline-guard` crea dos bases PostgreSQL locales desechables:
+una limpia debe construir `0001–0003`; otra con `item_bank`, `item_options` y
+ledger `0029` debe ser rechazada por el guard y conservar cero objetos V4.
 
 ## Modelo y relaciones
 

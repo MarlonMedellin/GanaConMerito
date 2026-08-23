@@ -99,10 +99,13 @@ taxonomías, métricas y hashes contra `MANIFEST.json`; un cambio sin reconcilia
 manifiesto falla.
 
 Para cambios al reconciliador o migraciones V4, CI reconstruye Supabase únicamente
-con `0001–0003` y ejecuta `npm run test:v4-import:db` y
-`npm run test:v4-runtime:db`. El gate prueba 248/992, plan determinista,
-idempotencia, drift inducido/reparado, failure injection y rollback, catálogos,
-frontera pre/post, Tutor y sesión atómica. La suite rechaza conexiones no-loopback.
+con `0001–0003` y ejecuta `npm run test:v4-baseline-guard`,
+`npm run test:v4-import:db` y `npm run test:v4-runtime:db`. El guard prueba una
+construcción limpia y el rechazo transaccional de una huella Legacy sin objetos V4
+parciales. El gate de sync prueba 248/992, plan determinista, cero DML físico en
+las doce tablas gestionadas durante el segundo apply idéntico, métricas de drift
+reparado, failure injection y rollback, catálogos, frontera pre/post, Tutor y
+sesión atómica. La suite rechaza conexiones no-loopback.
 
 Para cambios de banco, vistas o RPC, `npm run test:security` es bloqueante y exige
 Supabase local aislado. Ejecuta contratos estáticos, el probe REST real mediante

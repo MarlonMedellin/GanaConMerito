@@ -3,6 +3,69 @@
 
 begin;
 
+do $clean_baseline_guard$
+declare
+  v_schema_markers text[] := '{}'::text[];
+  v_legacy_versions text[] := '{}'::text[];
+begin
+  select coalesce(array_agg(marker order by marker), '{}'::text[])
+    into v_schema_markers
+  from unnest(array[
+    'public.item_bank',
+    'public.item_options',
+    'public.professional_profiles',
+    'public.thematic_nuclei',
+    'public.v_item_bank_active',
+    'public.question_bank_v4_manifests',
+    'public.question_bank_v4_import_runs'
+  ]) marker
+  where to_regclass(marker) is not null;
+
+  if exists (
+    select 1
+    from pg_proc procedure
+    join pg_namespace namespace on namespace.oid = procedure.pronamespace
+    where namespace.nspname = 'public'
+      and procedure.proname in (
+        'upsert_content_item',
+        'upsert_content_item_v4',
+        'import_question_bank_v4_batch'
+      )
+  ) then
+    v_schema_markers := array_append(v_schema_markers, 'public.legacy_question_bank_function');
+  end if;
+
+  if exists (
+    select 1 from information_schema.columns
+    where table_schema = 'public'
+      and table_name in ('item_bank', 'learning_profiles', 'session_turns')
+      and column_name in ('bank_version', 'target_role', 'exam_type', 'item_id')
+  ) then
+    v_schema_markers := array_append(v_schema_markers, 'public.legacy_question_bank_column');
+  end if;
+
+  if to_regclass('supabase_migrations.schema_migrations') is not null then
+    execute $ledger$
+      select coalesce(array_agg(version::text order by version::text), '{}'::text[])
+      from supabase_migrations.schema_migrations
+      where version::text ~ '^(000[1-9]|00[12][0-9]|0030)$'
+    $ledger$ into v_legacy_versions;
+  end if;
+
+  if cardinality(v_schema_markers) > 0 or cardinality(v_legacy_versions) > 0 then
+    raise exception using
+      errcode = 'P0001',
+      message = 'GCM_V4_CLEAN_BASELINE_REFUSES_LEGACY_DATABASE',
+      detail = format(
+        'schema_markers=%s legacy_migration_versions=%s',
+        array_to_string(v_schema_markers, ','),
+        array_to_string(v_legacy_versions, ',')
+      ),
+      hint = 'Apply the V4 clean baseline only to a new empty Supabase project.';
+  end if;
+end;
+$clean_baseline_guard$;
+
 create extension if not exists pgcrypto;
 
 create function public.set_updated_at()

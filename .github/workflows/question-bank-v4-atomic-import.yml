@@ -12,6 +12,7 @@ on:
       - 'scripts/lib/v4-import-plan.ts'
       - 'scripts/*content-sync*.test.ts'
       - 'scripts/test-content-sync-db.ts'
+      - 'scripts/test-v4-clean-baseline-guard.ts'
       - 'scripts/test-v4-runtime-db.ts'
       - 'supabase/migrations/**'
       - 'supabase/seed.sql'
@@ -29,6 +30,7 @@ on:
       - 'scripts/lib/v4-import-plan.ts'
       - 'scripts/*content-sync*.test.ts'
       - 'scripts/test-content-sync-db.ts'
+      - 'scripts/test-v4-clean-baseline-guard.ts'
       - 'scripts/test-v4-runtime-db.ts'
       - 'supabase/migrations/**'
       - 'supabase/seed.sql'
@@ -55,6 +57,8 @@ jobs:
         run: npx supabase start
       - name: Rebuild from all versioned migrations
         run: npx supabase db reset --local
+      - name: Prove clean-baseline Legacy guard
+        run: npm run test:v4-baseline-guard
       - name: Test question-bank security boundary
         run: npm run test:security
       - name: Test clean V4 sync

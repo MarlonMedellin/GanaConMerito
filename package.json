@@ -17,6 +17,7 @@
     "test:security:db": "tsx scripts/test-question-bank-security-boundary.ts",
     "test:v4-import": "tsx --test scripts/v4-import-plan.test.ts scripts/content-sync-plan.test.ts scripts/content-sync-guard.test.ts",
     "test:v4-import:db": "tsx scripts/test-content-sync-db.ts",
+    "test:v4-baseline-guard": "tsx scripts/test-v4-clean-baseline-guard.ts",
     "test:v4-runtime:db": "tsx scripts/test-v4-runtime-db.ts",
     "test:recent-sprints": "tsx --test src/lib/tutor/normative-source-truth.test.ts scripts/prepare-build-metadata.test.ts scripts/recent-sprints-contract.test.ts",
     "qa:local": "npm run lint && npm run build && npm run test:unit && npm run content:validate",
