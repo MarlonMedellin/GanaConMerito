@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
+import { advanceSessionSchema } from "../src/lib/validation/session";
 
 const resumeRoute = fs.readFileSync("src/app/api/session/resume/route.ts", "utf8");
 const practiceSession = fs.readFileSync("src/components/practice/practice-session.tsx", "utf8");
@@ -18,6 +19,18 @@ test("resume uses the canonical V4 targeting and turn schema", () => {
   assert.doesNotMatch(resumeRoute, /professional_profiles/);
   assert.doesNotMatch(resumeRoute, /session_turns[\s\S]*item_id/);
   assert.doesNotMatch(resumeRoute, /GCM_CANARY_OPEC_CATALOG_JSON/);
+
+  const basePayload = {
+    sessionId: "760c4aed-1159-47a7-883c-9f84da70851f",
+    selectedOption: "A" as const,
+  };
+
+  assert.equal(advanceSessionSchema.safeParse({ ...basePayload, itemId: "DOC-001001" }).success, true);
+  assert.equal(advanceSessionSchema.safeParse({ ...basePayload, itemId: "GEN-001001" }).success, true);
+  assert.equal(
+    advanceSessionSchema.safeParse({ ...basePayload, itemId: "760c4aed-1159-47a7-883c-9f84da70851f" }).success,
+    false,
+  );
 });
 
 test("resume reconstructs state without persisting a turn", () => {

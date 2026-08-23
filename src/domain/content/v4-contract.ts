@@ -7,8 +7,10 @@ export const v4OptionSchema = z.object({
   D: z.string().trim().min(1),
 }).strict();
 
+export const v4ItemIdSchema = z.string().regex(/^(DOC|GEN)-\d{6}$/);
+
 export const v4ItemSchema = z.object({
-  id: z.string().regex(/^(DOC|GEN)-\d{6}$/),
+  id: v4ItemIdSchema,
   scope: z.enum(["general", "opec_specific"]),
   opecId: z.string().trim().min(1).nullable().optional(),
   // domain / topic / competency / questionType / cognitiveLevel son vocabulario
