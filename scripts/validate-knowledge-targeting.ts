@@ -79,7 +79,18 @@ const opecTargetSchema = z.object({
   externalOpecId: z.string().min(1),
 });
 
+const commonTargetSchema = z.object({
+  type: z.literal("common"),
+});
+
 const itemTargetSchema = z.discriminatedUnion("type", [
+  familyTargetSchema,
+  profileTargetSchema,
+  opecTargetSchema,
+]);
+
+const knowledgeTargetSchema = z.discriminatedUnion("type", [
+  commonTargetSchema,
   familyTargetSchema,
   profileTargetSchema,
   opecTargetSchema,
@@ -101,6 +112,22 @@ const itemTargetMapSchema = z.object({
   mappings: z.array(itemMappingSchema),
 });
 
+const knowledgeMapSourceSchema = z.object({
+  sourceId: z.string().min(1),
+  relevance: z.enum(["core", "supporting", "optional"]),
+  locator: z.string().nullable(),
+  reason: z.string().min(1),
+  status: z.enum(["needs_review", "active", "superseded"]),
+  verifiedAt: z.string().nullable(),
+  verifiedBy: z.string().nullable(),
+});
+
+const knowledgeMapSchema = z.object({
+  schemaVersion: z.literal(1),
+  target: knowledgeTargetSchema,
+  sources: z.array(knowledgeMapSourceSchema),
+});
+
 const v4ManifestSchema = z.object({
   bank: z.string().min(1),
   corpus: z.object({
@@ -116,6 +143,17 @@ async function jsonFiles(directory: string): Promise<string[]> {
     .filter((entry) => entry.isFile() && entry.name.endsWith(".json") && !entry.name.endsWith(".schema.json"))
     .map((entry) => path.join(directory, entry.name))
     .sort();
+}
+
+async function jsonFilesRecursive(directory: string): Promise<string[]> {
+  const entries = await fs.readdir(directory, { withFileTypes: true });
+  const files: string[] = [];
+  for (const entry of entries) {
+    const target = path.join(directory, entry.name);
+    if (entry.isDirectory()) files.push(...await jsonFilesRecursive(target));
+    else if (entry.isFile() && entry.name.endsWith(".json") && !entry.name.endsWith(".schema.json")) files.push(target);
+  }
+  return files.sort();
 }
 
 async function readJson(file: string): Promise<unknown> {
@@ -136,6 +174,26 @@ function targetIdentity(target: z.infer<typeof itemTargetSchema>): string {
   if (target.type === "family") return `family:${target.familyCode}`;
   if (target.type === "profile") return `profile:${target.familyCode}:${target.profileCode}`;
   return `opec:${target.sourceSystem}:${target.externalOpecId}`;
+}
+
+function validateTargetReference(
+  target: z.infer<typeof knowledgeTargetSchema>,
+  familyCodes: Set<string>,
+  profileKeys: Set<string>,
+  opecIdentities: Set<string>,
+): string | null {
+  if (target.type === "common") return null;
+  if (target.type === "family") {
+    return familyCodes.has(target.familyCode) ? null : `family target inexistente ${target.familyCode}`;
+  }
+  if (target.type === "profile") {
+    return profileKeys.has(`${target.familyCode}:${target.profileCode}`)
+      ? null
+      : `profile target ${target.profileCode} no pertenece a ${target.familyCode}`;
+  }
+  return opecIdentities.has(opecIdentity(target.sourceSystem, target.externalOpecId))
+    ? null
+    : `OPEC target inexistente ${target.sourceSystem}::${target.externalOpecId}`;
 }
 
 async function main() {
@@ -246,6 +304,7 @@ async function main() {
   }
 
   const inventoryFile = path.join(knowledge, "catalog/source-inventory.json");
+  const sourceVerificationById = new Map<string, string>();
   let sourceCount = 0;
   try {
     const inventory = sourceInventorySchema.parse(await readJson(inventoryFile));
@@ -259,12 +318,74 @@ async function main() {
         });
       }
       sourceIds.add(source.sourceId);
+      sourceVerificationById.set(source.sourceId, source.verificationStatus);
     }
   } catch (error) {
     errors.push({
       file: path.relative(root, inventoryFile),
       issue: error instanceof z.ZodError ? formatZodError(error) : String(error),
     });
+  }
+
+  const knowledgeMapFiles = await jsonFilesRecursive(path.join(knowledge, "maps"));
+  let knowledgeMapCount = 0;
+  let knowledgeSourceRelationCount = 0;
+
+  for (const file of knowledgeMapFiles) {
+    const relative = path.relative(root, file);
+    try {
+      const map = knowledgeMapSchema.parse(await readJson(file));
+      knowledgeMapCount += 1;
+      knowledgeSourceRelationCount += map.sources.length;
+
+      const mapsRelative = path.relative(path.join(knowledge, "maps"), file).replaceAll("\\", "/");
+      if (mapsRelative.startsWith("families/") && map.target.type !== "family") {
+        errors.push({ file: relative, issue: `archivo bajo maps/families requiere target.type=family` });
+      }
+      if (mapsRelative.startsWith("profiles/") && map.target.type !== "profile") {
+        errors.push({ file: relative, issue: `archivo bajo maps/profiles requiere target.type=profile` });
+      }
+      if (mapsRelative.startsWith("opecs/") && map.target.type !== "opec") {
+        errors.push({ file: relative, issue: `archivo bajo maps/opecs requiere target.type=opec` });
+      }
+
+      const targetIssue = validateTargetReference(map.target, familyCodes, profileKeys, opecIdentities);
+      if (targetIssue) errors.push({ file: relative, issue: targetIssue });
+
+      const seenSourceIds = new Set<string>();
+      for (const relation of map.sources) {
+        if (seenSourceIds.has(relation.sourceId)) {
+          errors.push({ file: relative, issue: `sourceId duplicado en mapa: ${relation.sourceId}` });
+        }
+        seenSourceIds.add(relation.sourceId);
+
+        const verificationStatus = sourceVerificationById.get(relation.sourceId);
+        if (!verificationStatus) {
+          errors.push({ file: relative, issue: `sourceId inexistente en inventario: ${relation.sourceId}` });
+          continue;
+        }
+
+        if (relation.status === "active") {
+          if (verificationStatus !== "verified") {
+            errors.push({
+              file: relative,
+              issue: `${relation.sourceId}: relación active requiere fuente verificationStatus=verified`,
+            });
+          }
+          if (!relation.verifiedAt || !relation.verifiedBy) {
+            errors.push({
+              file: relative,
+              issue: `${relation.sourceId}: relación active requiere verifiedAt y verifiedBy`,
+            });
+          }
+        }
+      }
+    } catch (error) {
+      errors.push({
+        file: relative,
+        issue: error instanceof z.ZodError ? formatZodError(error) : String(error),
+      });
+    }
   }
 
   const manifestFile = path.join(root, "content/question-bank-v4/MANIFEST.json");
@@ -317,26 +438,8 @@ async function main() {
           }
           seenTargets.add(identity);
 
-          if (target.type === "family" && !familyCodes.has(target.familyCode)) {
-            errors.push({
-              file: relative,
-              issue: `${mapping.itemId}: family target inexistente ${target.familyCode}`,
-            });
-          }
-
-          if (target.type === "profile" && !profileKeys.has(`${target.familyCode}:${target.profileCode}`)) {
-            errors.push({
-              file: relative,
-              issue: `${mapping.itemId}: profile target ${target.profileCode} no pertenece a ${target.familyCode}`,
-            });
-          }
-
-          if (target.type === "opec" && !opecIdentities.has(opecIdentity(target.sourceSystem, target.externalOpecId))) {
-            errors.push({
-              file: relative,
-              issue: `${mapping.itemId}: OPEC target inexistente ${target.sourceSystem}::${target.externalOpecId}`,
-            });
-          }
+          const issue = validateTargetReference(target, familyCodes, profileKeys, opecIdentities);
+          if (issue) errors.push({ file: relative, issue: `${mapping.itemId}: ${issue}` });
         }
       }
     } catch (error) {
@@ -353,6 +456,8 @@ async function main() {
     profiles: profileKeys.size,
     opecs: opecCount,
     knowledgeSources: sourceCount,
+    knowledgeMaps: knowledgeMapCount,
+    knowledgeSourceRelations: knowledgeSourceRelationCount,
     itemMappings: itemMappingCount,
     v4ManifestItems: v4ItemIds.size,
     valid: errors.length === 0,
