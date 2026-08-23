@@ -5,28 +5,23 @@ Banco maestro de preguntas nuevas del proyecto **GanaConMerito**.
 ## Estado actual
 
 **Corte:** 2026-08-22  
-**Corte congelado en `master` para Sprint 48:** **224 reactivos aprobados**  
-**Rama de expansión:** `v4-post-sprint48-expansion`  
-**Corpus físico en la rama:** **256 reactivos**  
-**Aprobados editoriales efectivos en la rama:** **256**  
-**Fase B:** **cerrada y reauditada — 30/30 APPROVED**  
-**Fase C1:** **cerrada — 2 reactivos nuevos + 2 reclasificaciones**  
+**Estado autoritativo de partida:** `master` integra la remediación A+B en `68dfae07baaafa59e00fa7a085ac4b903b62aa07`  
+**Corpus activo validado al abrir C2:** **248 reactivos**  
+**Fase C1:** **histórico cerrado — 2 reactivos nuevos + 2 reclasificaciones**  
+**Fase C2:** **cerrada selectivamente — 0 reactivos nuevos**  
+**Rama C2:** `v4-phase-c2-selective-20260822`  
 **Nuevos C1 aprobados:** `DOC-001292`, `DOC-001293`  
 **Reclasificados C1:** `DOC-001104`, `DOC-001110`  
-**IDs retirados/no reutilizables:** `DOC-001258`, `DOC-001259`, `DOC-001261`, `DOC-001265`, `DOC-001268`, `DOC-001291`, `DOC-001294`  
-**Snapshot vigente:** [`COVERAGE-AFTER-PHASE-C1-20260822.json`](./COVERAGE-AFTER-PHASE-C1-20260822.json)  
-**Auditoría C1:** [`AUDIT-PHASE-C1-20260822.md`](./AUDIT-PHASE-C1-20260822.md)  
-**Plan selectivo:** [`EXPANSION-PHASE-C-SELECTIVE-20260822.md`](./EXPANSION-PHASE-C-SELECTIVE-20260822.md)
+**IDs retirados/no reutilizables:** `DOC-001258`, `DOC-001259`, `DOC-001261`, `DOC-001265`, `DOC-001268`, `DOC-001291`, `DOC-001294` y los rechazados históricos documentados en A+B  
+**Snapshot C2:** [`COVERAGE-AFTER-PHASE-C2-20260822.json`](./COVERAGE-AFTER-PHASE-C2-20260822.json)  
+**Auditoría C2:** [`AUDIT-PHASE-C2-20260822.md`](./AUDIT-PHASE-C2-20260822.md)  
+**Informe C2:** [`EXPANSION-PHASE-C2-SELECTIVE-20260822.md`](./EXPANSION-PHASE-C2-SELECTIVE-20260822.md)
 
-`master` permanece congelada en 224 reactivos durante Sprint 48. La rama contiene los 224 del corte congelado, 30 reactivos activos de Fase B y 2 reactivos nuevos de C1. C1 también corrige la clasificación de dos reactivos preexistentes sin modificar su contenido.
+La remediación A+B está integrada en `master` y constituye la base autoritativa de C2. C1 permanece cerrada: `DOC-001104`, `DOC-001110`, `DOC-001292` y `DOC-001293` siguen activos; `DOC-001291` y `DOC-001294` permanecen retirados.
 
-La auditoría ampliada de C1 detectó que dos candidatos inicialmente serializados duplicaban constructos ya cubiertos: `DOC-001291` duplicaba la ZDP evaluada en `DOC-001104`, y `DOC-001294` duplicaba la metacognición evaluada en `DOC-001110`. Ambos fueron retirados y sus IDs no se reutilizan.
+C2 investigó de forma selectiva práctica de recuperación, ejemplos resueltos/carga cognitiva, práctica intercalada y gestión preventiva del aula. Ninguna oportunidad superó simultáneamente los gates de novedad conceptual, deduplicación profunda, transferibilidad y soporte de la condición decisiva. Por ello C2 cierra con **0 serializaciones** y `DOC-001305` permanece libre.
 
-El nuevo tópico `aprendizaje_y_desarrollo_cognitivo` reúne cuatro reactivos: `DOC-001104` (ZDP), `DOC-001110` (metacognición), `DOC-001292` (aprendizaje significativo) y `DOC-001293` (asimilación/acomodación). Esta consolidación lleva `desarrollo_aprendizaje` de 13 a 17 sin fabricar volumen innecesario.
-
-La taxonomía post-Sprint 48 de esta rama incorpora cuatro tópicos con justificación editorial explícita: `competencias_comportamentales`, `educacion_inicial_transicion`, `razonamiento_cuantitativo` y `aprendizaje_y_desarrollo_cognitivo`. Los catálogos de `taxonomy/` siguen siendo la fuente canónica.
-
-**C2 no está autorizado automáticamente.** El siguiente paso es revisar la cobertura sobre 256 y justificar cualquier expansión adicional. El próximo identificador nunca usado es `DOC-001295`.
+La taxonomía vigente incorpora los tópicos documentados en `taxonomy/`; los catálogos siguen siendo la fuente canónica. La frecuencia baja de un dominio, tópico o competencia no constituye por sí sola autorización para expandirlo.
 
 ## Propósito
 
