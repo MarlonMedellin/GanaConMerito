@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "process": "Docentes y Directivos Docentes 2026",
+  "sourceSystem": "CNSC/SIMO",
+  "snapshotDate": "2026-08-22",
+  "status": "preliminary",
+  "canonicalOpecCatalog": "content/targeting/opecs/catalog.json",
+  "disclaimer": [
+    "Este archivo no contiene identificadores OPEC canónicos.",
+    "Los valores provienen de proyectos publicados para observaciones y pueden cambiar antes de la versión definitiva.",
+    "No usar los índices de las tablas ni los nombres de cargo como externalOpecId ficticios."
+  ],
+  "national": {
+    "reportedVacancies": ">28000",
+    "sourceReference": "Noticia CNSC del 19 de agosto de 2026 y página de proyectos"
+  },
+  "entities": [
+    {
+      "entityName": "Secretaría de Educación Distrital de Medellín",
+      "department": "Antioquia",
+      "totalVacancies": 589,
+      "reservedVacancies": 42,
+      "unreservedVacancies": 547,
+      "positions": [
+        {"name": "Coordinador", "vacancies": 13},
+        {"name": "Director Rural", "vacancies": 3},
+        {"name": "Rector", "vacancies": 7},
+        {"name": "Docente de aula ciencias naturales física", "vacancies": 6},
+        {"name": "Docente de aula ciencias naturales química", "vacancies": 4},
+        {"name": "Docente de aula ciencias naturales y educación ambiental", "vacancies": 16},
+        {"name": "Docente de aula ciencias sociales, historia, geografía, constitución política y democracia", "vacancies": 16},
+        {"name": "Docente de aula educación - música", "vacancies": 4},
+        {"name": "Docente de aula educación artística - danzas", "vacancies": 6},
+        {"name": "Docente de aula educación ética y valores humanos", "vacancies": 6},
+        {"name": "Docente de aula educación artística - artes plásticas", "vacancies": 8},
+        {"name": "Docente de aula educación física, recreación y deporte", "vacancies": 16},
+        {"name": "Docente de aula educación religiosa", "vacancies": 2},
+        {"name": "Docente de aula filosofía", "vacancies": 10},
+        {"name": "Docente de aula humanidades y lengua castellana", "vacancies": 20},
+        {"name": "Docente de aula idioma extranjero inglés", "vacancies": 54},
+        {"name": "Docente de aula matemáticas", "vacancies": 54},
+        {"name": "Docente de aula tecnología e informática", "vacancies": 55},
+        {"name": "Docente de preescolar", "vacancies": 37},
+        {"name": "Docente de primaria", "vacancies": 252}
+      ],
+      "sourceUrl": "https://www.cnsc.gov.co/sites/default/files/2026-08/proyecto-de-acuerdo-secretaria-de-educacion-distrital-de-medellin.pdf"
+    },
+    {
+      "entityName": "Secretaría de Educación Departamental de Antioquia",
+      "department": "Antioquia",
+      "totalVacancies": 1952,
+      "reservedVacancies": 137,
+      "unreservedVacancies": 1815,
+      "positions": [
+        {"name": "Coordinador", "vacancies": 87},
+        {"name": "Rector", "vacancies": 52},
+        {"name": "Docente de aula ciencias naturales física", "vacancies": 25},
+        {"name": "Docente de aula ciencias naturales química", "vacancies": 67},
+        {"name": "Docente de aula ciencias naturales y educación ambiental", "vacancies": 110},
+        {"name": "Docente de aula ciencias sociales, historia, geografía, constitución política y democracia", "vacancies": 123},
+        {"name": "Docente de aula educación artística - artes plásticas", "vacancies": 22},
+        {"name": "Docente de aula educación artística - danzas", "vacancies": 20},
+        {"name": "Docente de aula educación artística - música", "vacancies": 31},
+        {"name": "Docente de aula educación ética y valores humanos", "vacancies": 13},
+        {"name": "Docente de aula educación física, recreación y deporte", "vacancies": 42},
+        {"name": "Docente de aula educación religiosa", "vacancies": 18},
+        {"name": "Docente de aula filosofía", "vacancies": 14},
+        {"name": "Docente de aula humanidades y lengua castellana", "vacancies": 116},
+        {"name": "Docente de aula idioma extranjero inglés", "vacancies": 62},
+        {"name": "Docente de aula matemáticas", "vacancies": 229},
+        {"name": "Docente de aula tecnología e informática", "vacancies": 114},
+        {"name": "Docente de preescolar", "vacancies": 53},
+        {"name": "Docente de primaria", "vacancies": 651},
+        {"name": "Docente orientador", "vacancies": 103}
+      ],
+      "sourceUrl": "https://www.cnsc.gov.co/sites/default/files/2026-08/proyecto-de-acuerdo-secretaria-de-educacion-departamental-de-antioquia.pdf"
+    },
+    {
+      "entityName": "Secretaría de Educación Municipal de Bello",
+      "department": "Antioquia",
+      "totalVacancies": 145,
+      "reservedVacancies": 11,
+      "unreservedVacancies": 134,
+      "positions": [
+        {"name": "Coordinador", "vacancies": 1},
+        {"name": "Rector", "vacancies": 7},
+        {"name": "Docente de aula ciencias naturales física", "vacancies": 2},
+        {"name": "Docente de aula ciencias naturales química", "vacancies": 2},
+        {"name": "Docente de aula ciencias naturales y educación ambiental", "vacancies": 12},
+        {"name": "Docente de aula ciencias sociales, historia, geografía, constitución política y democracia", "vacancies": 1},
+        {"name": "Docente de aula educación artística - artes plásticas", "vacancies": 11},
+        {"name": "Docente de aula educación física, recreación y deporte", "vacancies": 5},
+        {"name": "Docente de aula educación religiosa", "vacancies": 1},
+        {"name": "Docente de aula filosofía", "vacancies": 1},
+        {"name": "Docente de aula humanidades y lengua castellana", "vacancies": 1},
+        {"name": "Docente de aula matemáticas", "vacancies": 1},
+        {"name": "Docente de aula tecnología e informática", "vacancies": 1},
+        {"name": "Docente de preescolar", "vacancies": 44},
+        {"name": "Docente de primaria", "vacancies": 50},
+        {"name": "Docente orientador", "vacancies": 5}
+      ],
+      "sourceUrl": "https://www.cnsc.gov.co/sites/default/files/2026-08/proyecto-de-acuerdo-secretaria-de-educacion-municipal-de-bello.pdf"
+    }
+  ]
+}
