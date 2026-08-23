@@ -25,6 +25,7 @@
     "qa:canary:resume": "node scripts/qa-canary-resume.js",
     "qa:smoke:postdeploy": "node scripts/qa-smoke-postdeploy.js",
     "qa:security:question-bank": "tsx scripts/verify-question-bank-boundary.ts",
+    "qa:security:question-bank:strict": "tsx scripts/verify-question-bank-boundary.ts --require-authenticated",
     "check:doc-triggers": "tsx scripts/check-doc-triggers.ts",
     "content:validate": "tsx scripts/validate-question-bank.ts",
     "content:validate:v4": "tsx scripts/validate-question-bank-v4.ts",
