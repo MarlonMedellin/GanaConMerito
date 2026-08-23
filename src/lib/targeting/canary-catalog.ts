@@ -1,10 +1,19 @@
 import { z } from "zod";
 
+export const CANARY_REUSABLE_PROFILE_CODES = [
+  "rector_director_rural",
+  "coordinador",
+  "docente_aula_preescolar",
+  "docente_aula_basica_primaria",
+  "docente_aula_secundaria_media",
+  "docente_orientador",
+] as const;
+
 const canaryOpecEntrySchema = z.object({
   sourceSystem: z.string().trim().toLowerCase().regex(/^[a-z0-9._-]{2,64}$/),
   externalOpecId: z.string().trim().regex(/^[A-Za-z0-9._-]{1,128}$/),
   convocationCode: z.string().trim().min(1).max(128).optional(),
-  professionalProfileCode: z.string().trim().regex(/^[a-z0-9._-]{2,128}$/),
+  professionalProfileCode: z.enum(CANARY_REUSABLE_PROFILE_CODES),
   positionName: z.string().trim().min(2).max(240),
   verificationStatus: z.literal("verified"),
 }).strict();
