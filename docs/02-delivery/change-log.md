@@ -9,7 +9,7 @@ modules: [core, platform]
 tags: [changelog, cambios, entregas]
 related:
   - DEL-SPRINT-LOG
-last_reviewed: 2026-08-22
+last_reviewed: 2026-08-23
 ---
 
 ## Document control
@@ -18,6 +18,24 @@ last_reviewed: 2026-08-22
 - Last reviewed: 2026-08-11
 - Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
 - Update trigger: governance, delivery, documentation, drift
+
+## 2026-08-23 — Remediación P0 de frontera del banco en repo
+- tipo: database+security+qa+ci+docs
+- modulo: question-bank-v4
+- resumen: Se reserva `0030` para cerrar de forma monotónica ACL, policies y todos
+  los overloads `SECURITY DEFINER` pertinentes. El probe REST real queda corregido
+  y dentro de `test:security`; la integración PostgreSQL prueba deriva y un overload
+  no versionado. PRD 3 permanece pausado.
+- agente: Codex
+- via: Codex Desktop / repositorio GitHub
+- contributor: Marlon Medellin
+- environment: rama aislada / WSL / Docker / Supabase local; remoto solo lectura
+- validacion: reset `0001–0030`, probe anon/auth, PostgreSQL, V4 248/248, dry-run,
+  importación atómica, unitarias, typecheck, lint, build, docs y diff-check
+- runtime-verified: no; probe remoto previo confirma HTTP 206, sin deploy ni escritura
+- relacionados: `0030_security_question_bank_boundary_remediation.sql`, probe,
+  suite PostgreSQL y reporte P0
+- limitaciones: `0029/0030` no aplicadas; lote, activación y deploy no ejecutados
 
 ## 2026-08-22 — PRD 3 checkpoint: hardening V4 posterior a `0028`
 - tipo: database+security+qa+ops+docs

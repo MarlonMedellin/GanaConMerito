@@ -55,7 +55,7 @@ Arquitectura de referencia:
 
 `docs/03-architecture/question-bank-knowledge-targeting-architecture.md`
 
-## Administración del importador V4 (`0028–0029`)
+## Administración y frontera V4 (`0028–0030`)
 
 La migración versionada `0028_atomic_v4_batch_import.sql`, aplicada en producción
 sin ejecutar todavía el lote, añade:
@@ -74,6 +74,12 @@ La migración monotónica `0029_harden_v4_manifest_reconciliation.sql`, validada
 localmente y pendiente de aplicación remota, fija el hash exacto del plan canónico,
 detecta deriva real de columnas/opciones y amplía la reconciliación transaccional.
 No contiene targeting ni modifica el corpus congelado.
+
+La migración monotónica `0030_security_question_bank_boundary_remediation.sql`
+restaura la frontera server-only observada en deriva remota: elimina policies de
+cliente sobre `item_bank`/`item_options`, cierra tablas y vistas answer-bearing y
+endurece dinámicamente todos los overloads `SECURITY DEFINER` pertinentes. Está
+validada localmente y pendiente de aplicación remota después de `0029`.
 
 ## Evolución de esquema propuesta — NO implementada por este documento
 

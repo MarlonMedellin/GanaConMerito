@@ -1,7 +1,7 @@
 # PRD — Migración de Question Bank V4 en Supabase
 
-**Estado:** base `0019–0027` materializada; importador atómico `0028` implementado y
-validado en Supabase local aislado. No aplicado en producción.
+**Estado:** producción reporta `0001–0028`; `0029` y la remediación P0 `0030`
+están implementadas y validadas en Supabase local aislado, no aplicadas remotamente.
 
 ## 1. Resultado esperado
 
@@ -105,6 +105,14 @@ administrativo, rechaza cargas alternativas y solo declara una fila `unchanged`
 cuando columnas, metadata y opciones A–D coinciden realmente. También verifica el
 estado final completo dentro de la transacción. Está validada en base local y no
 aplicada en producción al cierre del checkpoint.
+
+### M-0030 — Remediación P0 de frontera del banco
+
+`0030_security_question_bank_boundary_remediation.sql` queda reservado para
+seguridad. Tras inventariar el esquema remoto efectivo, cierra ACL y policies de
+cliente, endurece todos los overloads `SECURITY DEFINER` pertinentes y preserva
+las vistas V4 pre/post según su contrato server-only. La única secuencia remota
+admisible es `0029 → 0030` dentro de una ventana autorizada, sin lote ni activación.
 
 ### Evolución posterior — targeting y knowledge graph
 

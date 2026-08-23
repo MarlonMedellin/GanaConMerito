@@ -5,12 +5,12 @@ project: ganaconmerito
 owner: marlon-arcila
 status: active
 artifact_type: project
-last_reviewed: 2026-08-22
+last_reviewed: 2026-08-23
 ---
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-08-22 — PRD 3 en checkpoint; `0028` aplicada sin lote y `0029` pendiente.
+Ultima actualizacion: 2026-08-23 — PRD 3 pausado; remediación P0 `0030` validada localmente y pendiente.
 
 ---
 
@@ -36,25 +36,26 @@ y debe confirmarse antes de aceptar la conexion.
 smoke publico; no reejecuto E2E autenticada ni verifico el arbol de deploy.
 
 ## Current Sprint Status
-**SPRINT 48 EN EJECUCIÓN; PRD 3 PAUSADO EN CHECKPOINT**: `0028` fue aplicada en
+**SPRINT 48 EN EJECUCIÓN; PRD 3 PAUSADO POR P0 DE SEGURIDAD**: `0028` fue aplicada en
 producción, pero el lote no se ejecutó. La auditoría confirmó 163 V4 y 652 opciones,
 todas inactivas, no publicadas y fuera del piloto. `0029` endurece localmente el
-anclaje canónico y la reconciliación de drift; queda pendiente de aplicación tras
-la revisión del PR #97.
+anclaje canónico. `0030` restaura de forma monotónica la frontera server-only y
+cubre el overload remoto adicional; ambas quedan pendientes de autorización remota.
 
 ## Known Drift
 - Supabase contiene 163 filas V4 y 652 opciones; `v_question_bank_v4_active`
   devuelve cero filas porque ninguna V4 está activa.
-- La politica publica permite consultar `correct_option`, `explanation` y metadata
-  editorial directamente desde `item_bank`; RLS por fila no protege columnas.
+- La política pública permite consultar `correct_option`, `explanation` y metadata
+  editorial directamente desde `item_bank`; el probe HEAD remoto corregido obtuvo
+  HTTP 206. RLS por fila no protege columnas.
 - El runtime desplegado aún devuelve el contrato anterior y lee
   `v_item_bank_active`/`item_bank`; el repo ya eliminó ese fallback para práctica.
 - El banco V4 coincide con el conteo y los hashes del manifiesto canónico, sin IDs
   duplicados ni retirados activos. Mantiene cero
   documentos en `sources/`;
   calidad editorial no equivale a fuente normativa verificada.
-- `0028` está aplicada remotamente sin ejecuciones batch. `0029` y la importación
-  canónica siguen pendientes.
+- `0028` está aplicada remotamente sin ejecuciones batch. `0029`, `0030` y la
+  importación canónica siguen pendientes; el reset y gate local `0001–0030` pasan.
 - Persisten contratos y validaciones parcialmente narrativas fuera del baseline canonico.
 - La trazabilidad multiagente todavia no es enforcement obligatorio.
 - La integracion del Tutor con LLM real queda como deuda tecnica futura y no forma parte del cierre de Sprint 47.
@@ -70,7 +71,7 @@ la revisión del PR #97.
 - sincronizacion documental automatica;
 - reduccion de documentacion legacy;
 - integracion fuerte rich-only.
-- aplicación remota de `0029`, importación productiva, activación de cohorte y
+- aplicación remota autorizada `0029 → 0030`, importación productiva, activación de cohorte y
   ejecución real de OpenRouter shadow pendientes.
 
 ## Last Audit
