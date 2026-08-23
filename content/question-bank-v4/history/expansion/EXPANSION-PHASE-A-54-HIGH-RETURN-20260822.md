@@ -41,7 +41,7 @@ No se añadió un tópico para inclusión porque `ajustes_razonables` ya existí
 
 ## Resultado de QA
 
-Snapshot canónico: `history/snapshots/COVERAGE-AFTER-PHASE-A-20260822.json`.
+Snapshot canónico: `../snapshots/COVERAGE-AFTER-PHASE-A-20260822.json`.
 
 - `itemCount`: **224**.
 - Reactivos de la fase: **54/54** (`DOC-001202`–`DOC-001255`).
