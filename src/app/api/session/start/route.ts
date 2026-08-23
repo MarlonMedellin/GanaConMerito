@@ -1,29 +1,60 @@
-import { NextResponse } from "next/server";
+import { API_ERROR_CODES } from "@/lib/api/error-codes";
+import {
+  beginRequestObservation,
+  jsonWithRequestId,
+  logRequestOutcome,
+} from "@/lib/api/canary-observability";
 import { selectNextItem } from "../../../../domain/item-selection/select-next-item";
 import { isLearningProfileOnboardingComplete } from "../../../../lib/onboarding/status";
 import { requireAuthenticatedProfile } from "../../../../lib/supabase/guards";
+import {
+  getCanaryTargetingSelection,
+  isCanaryTargetingEnabled,
+} from "@/lib/targeting/canary-targeting-server";
 import { startSessionSchema } from "../../../../lib/validation/session";
 import type { StartSessionResponse, SessionState } from "../../../../types/session";
 
 export async function POST(request: Request) {
-  const json = await request.json();
-  const parsedBody = startSessionSchema.safeParse(json);
+  const observation = beginRequestObservation(request, "/api/session/start");
+  let json: unknown;
+  try {
+    json = await request.json();
+  } catch (error) {
+    logRequestOutcome(observation, {
+      event: "canary.session_start.invalid_json",
+      status: 400,
+      errorCode: API_ERROR_CODES.VALIDATION_INVALID_JSON,
+      error,
+    });
+    return jsonWithRequestId({ error: "Invalid session start payload" }, 400, observation);
+  }
 
+  const parsedBody = startSessionSchema.safeParse(json);
   if (!parsedBody.success) {
-    return NextResponse.json(
+    logRequestOutcome(observation, {
+      event: "canary.session_start.invalid_body",
+      status: 400,
+      errorCode: API_ERROR_CODES.VALIDATION_INVALID_BODY,
+    });
+    return jsonWithRequestId(
       { error: parsedBody.error.issues.map((issue) => issue.message).join(" | ") },
-      { status: 400 },
+      400,
+      observation,
     );
   }
 
   const auth = await requireAuthenticatedProfile();
   if (!auth.ok) {
-    return NextResponse.json({ error: auth.error }, { status: auth.status });
+    logRequestOutcome(observation, {
+      event: "canary.session_start.auth_failed",
+      status: auth.status,
+      errorCode: API_ERROR_CODES.AUTH_UNAUTHORIZED,
+    });
+    return jsonWithRequestId({ error: auth.error }, auth.status, observation);
   }
 
   const { supabase, profile } = auth;
   const body = parsedBody.data;
-
   const { data: learningProfile, error: learningProfileError } = await supabase
     .from("learning_profiles")
     .select("onboarding_completed, professional_profile_id, active_areas")
@@ -31,17 +62,73 @@ export async function POST(request: Request) {
     .single();
 
   if (learningProfileError || !learningProfile) {
-    return NextResponse.json({ error: "Learning profile not found" }, { status: 404 });
+    logRequestOutcome(observation, {
+      event: "canary.session_start.learning_profile_missing",
+      status: 404,
+      errorCode: API_ERROR_CODES.INTERNAL_DEPENDENCY_FAILED,
+      error: learningProfileError,
+    });
+    return jsonWithRequestId({ error: "Learning profile not found" }, 404, observation);
   }
 
-  const nextItem = await selectNextItem({
-    professionalProfileId: learningProfile.professional_profile_id,
-    profileIdForRotation: profile.id,
-    activeArea: body.area,
-    activeCompetency: body.competency,
-  });
+  let canaryTargeting = null;
+  if (isCanaryTargetingEnabled()) {
+    try {
+      canaryTargeting = await getCanaryTargetingSelection();
+    } catch (error) {
+      logRequestOutcome(observation, {
+        event: "canary.session_start.catalog_invalid",
+        status: 500,
+        errorCode: API_ERROR_CODES.INTERNAL_DEPENDENCY_FAILED,
+        error,
+      });
+      return jsonWithRequestId({ error: "Canary targeting catalog is not valid." }, 500, observation);
+    }
+
+    if (!canaryTargeting) {
+      logRequestOutcome(observation, {
+        event: "canary.session_start.targeting_required",
+        status: 409,
+        errorCode: API_ERROR_CODES.SESSION_INVALID_STATE,
+      });
+      return jsonWithRequestId(
+        { error: "Debes seleccionar un perfil, cargo oficial y OPEC verificada antes de iniciar la práctica." },
+        409,
+        observation,
+      );
+    }
+
+    const { data: selectedProfile } = await supabase
+      .from("professional_profiles")
+      .select("code")
+      .eq("id", learningProfile.professional_profile_id)
+      .maybeSingle();
+
+    if (!selectedProfile || selectedProfile.code !== canaryTargeting.professionalProfileCode) {
+      logRequestOutcome(observation, {
+        event: "canary.session_start.targeting_profile_drift",
+        status: 409,
+        errorCode: API_ERROR_CODES.SESSION_INVALID_STATE,
+        opecKey: canaryTargeting.opecKey,
+      });
+      return jsonWithRequestId(
+        { error: "La selección de perfil y OPEC ya no coincide. Revisa el onboarding antes de continuar." },
+        409,
+        observation,
+      );
+    }
+  }
 
   const onboardingCompleted = isLearningProfileOnboardingComplete(learningProfile);
+  const nextItem = onboardingCompleted
+    ? await selectNextItem({
+        professionalProfileId: learningProfile.professional_profile_id,
+        profileIdForRotation: profile.id,
+        activeArea: body.area,
+        activeCompetency: body.competency,
+        canaryOpecId: canaryTargeting?.opecKey,
+      })
+    : null;
 
   let currentState: SessionState = "onboarding";
   if (onboardingCompleted) {
@@ -60,7 +147,14 @@ export async function POST(request: Request) {
     .single();
 
   if (sessionError || !session) {
-    return NextResponse.json({ error: "Could not create session" }, { status: 500 });
+    logRequestOutcome(observation, {
+      event: "canary.session_start.persist_failed",
+      status: 500,
+      errorCode: API_ERROR_CODES.INTERNAL_DATABASE_ERROR,
+      opecKey: canaryTargeting?.opecKey,
+      error: sessionError,
+    });
+    return jsonWithRequestId({ error: "Could not create session" }, 500, observation);
   }
 
   const response: StartSessionResponse = {
@@ -77,11 +171,19 @@ export async function POST(request: Request) {
           reason: "no_active_v4_items",
           alternatives: [
             "Revisar los filtros de área y competencia",
-            "Intentar de nuevo cuando exista una cohorte V4 activa",
+            "Confirmar que exista inventario activo compatible con la OPEC seleccionada",
           ],
         }
       : undefined,
   };
 
-  return NextResponse.json(response, { status: 200 });
+  logRequestOutcome(observation, {
+    event: "canary.session_start.completed",
+    status: 200,
+    sessionId: session.id,
+    itemId: nextItem?.id,
+    opecKey: canaryTargeting?.opecKey,
+    extra: { currentState, inventoryEmpty: onboardingCompleted && !nextItem },
+  });
+  return jsonWithRequestId(response, 200, observation);
 }
