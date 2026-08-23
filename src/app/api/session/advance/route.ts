@@ -13,7 +13,8 @@ import { V4QuestionRepository } from "../../../../lib/question-bank/v4-question-
 import { getSupabaseAdminClient } from "../../../../lib/supabase/admin";
 import { requireOwnedSession } from "../../../../lib/supabase/guards";
 import {
-  getCanaryTargetingSelection,
+  getCanarySessionTargetingContext,
+  getCanarySessionTargetingCookieName,
   isCanaryTargetingEnabled,
 } from "@/lib/targeting/canary-targeting-server";
 import { advanceSessionSchema } from "../../../../lib/validation/session";
@@ -96,8 +97,9 @@ export async function POST(request: Request) {
 
   let canaryTargeting = null;
   if (isCanaryTargetingEnabled()) {
+    let sessionTargeting;
     try {
-      canaryTargeting = await getCanaryTargetingSelection();
+      sessionTargeting = await getCanarySessionTargetingContext();
     } catch (error) {
       logRequestOutcome(observation, {
         event: "canary.session_advance.catalog_invalid",
@@ -110,21 +112,22 @@ export async function POST(request: Request) {
       return jsonWithRequestId({ error: "Canary targeting catalog is not valid." }, 500, observation);
     }
 
-    if (!canaryTargeting) {
+    if (!sessionTargeting || sessionTargeting.sessionId !== body.sessionId) {
       logRequestOutcome(observation, {
-        event: "canary.session_advance.targeting_required",
+        event: "canary.session_advance.session_targeting_missing",
         status: 409,
         errorCode: API_ERROR_CODES.SESSION_INVALID_STATE,
         sessionId: body.sessionId,
         itemId: body.itemId,
       });
       return jsonWithRequestId(
-        { error: "La selección de OPEC ya no está disponible. Revisa el onboarding antes de continuar." },
+        { error: "La sesión perdió su contexto de OPEC. Inicia una nueva práctica canary." },
         409,
         observation,
       );
     }
 
+    canaryTargeting = sessionTargeting.selection;
     const { data: selectedProfile } = await supabase
       .from("professional_profiles")
       .select("code")
@@ -295,5 +298,10 @@ export async function POST(request: Request) {
       isCorrect: evaluation.isCorrect,
     },
   });
-  return jsonWithRequestId(response, 200, observation);
+
+  const httpResponse = jsonWithRequestId(response, 200, observation);
+  if (currentState === "session_close" && isCanaryTargetingEnabled()) {
+    httpResponse.cookies.delete(getCanarySessionTargetingCookieName());
+  }
+  return httpResponse;
 }
