@@ -48,7 +48,7 @@ Correcciones efectuadas antes del cierre:
 
 ## Cobertura después del lote
 
-Fuente: `history/snapshots/COVERAGE-AFTER-BATCH-01-20260822.json`.
+Fuente: `../snapshots/COVERAGE-AFTER-BATCH-01-20260822.json`.
 
 - Banco: 80 ítems válidos.
 - Dominio `pedagogia`: 10.
