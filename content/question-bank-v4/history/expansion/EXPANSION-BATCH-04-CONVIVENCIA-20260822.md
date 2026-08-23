@@ -37,7 +37,7 @@ Los temas de `temas.md` se usaron como mapa para tipificación de situaciones, R
 
 Se aplicaron los gates V4 de fuente, constructo, taxonomía, respuesta única, distractores, ausencia de pistas y duplicación conceptual.
 
-Resultado en `history/snapshots/COVERAGE-AFTER-BATCH-04-20260822.json`:
+Resultado en `../snapshots/COVERAGE-AFTER-BATCH-04-20260822.json`:
 
 - 110 reactivos V4 válidos.
 - 0 errores estructurales o taxonómicos.
