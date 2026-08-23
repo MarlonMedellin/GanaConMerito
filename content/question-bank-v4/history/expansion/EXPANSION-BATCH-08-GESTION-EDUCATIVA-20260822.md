@@ -36,7 +36,7 @@ Fuentes principales:
 
 ## QA
 
-`history/snapshots/COVERAGE-AFTER-BATCH-08-20260822.json`:
+`../snapshots/COVERAGE-AFTER-BATCH-08-20260822.json`:
 - `itemCount`: **150**
 - `errors`: **[]**
 - `gestion_educativa`: **15** reactivos
