@@ -67,10 +67,11 @@ La arquitectura de `knowledge + targeting` ya tiene estructura física de reposi
 
 - **Estado:** `IN_PROGRESS`.
 - Ya existe `content/knowledge-base/catalog/source-inventory.json` y la estructura `sources/{normative,academic,technical,guides}`.
-- El inventario inicial registró los dos únicos archivos normativos legacy identificados en `content/normative/`: `decreto_1075.md` y `ley_1098.md`.
-- Ambos permanecen como `verificationStatus: needs_review`; no se consideran fuentes decisivas verificadas.
+- El inventario inicial registró los dos archivos normativos legacy identificados en `content/normative/`: `decreto_1075.md` y `ley_1098.md`.
+- Se contrastó la identidad de ambas normas con el Gestor Normativo oficial de Función Pública y el inventario ya conserva emisor, fechas conocidas y URL oficial.
+- Ambas permanecen como `verificationStatus: needs_review`: identidad/procedencia oficial verificada no equivale a vigencia/localizador verificado para cada artículo usado por un reactivo.
 - Ya existe el contrato `content/knowledge-base/maps/map.schema.json`, pero no se crean relaciones `active` antes de verificar la fuente.
-- **Cierre requerido:** verificar procedencia oficial, vigencia, localizadores, derechos de conservación y promover de forma controlada las fuentes que correspondan a `knowledge-base/sources/`; después poblar sus mapas de aplicabilidad cuando exista evidencia suficiente.
+- **Cierre requerido:** verificar vigencia, localizadores, derechos de conservación y promover de forma controlada las fuentes que correspondan a `knowledge-base/sources/`; después poblar sus mapas de aplicabilidad cuando exista evidencia suficiente.
 
 ### V4-ARCH-DEBT-008 — Crear catálogo real de OPEC y mapeo a perfiles
 
@@ -195,6 +196,21 @@ La arquitectura de `knowledge + targeting` ya tiene estructura física de reposi
 - No se crean mapas de conocimiento `active` con fuentes `needs_review`, ni mappings de reactivos ficticios para llenar estructura.
 - La población real de relaciones continúa bajo `V4-ARCH-DEBT-007`, `008` y `009`; no reabre esta deuda de contrato.
 
+### V4-ARCH-DEBT-023 — Restringir vocabularios de estado en el validador knowledge/targeting
+
+- **Estado:** `OPEN`.
+- El validador controla semánticamente `verified` al activar relaciones, pero `knowledgeSourceSchema.verificationStatus` todavía acepta cualquier string no vacío.
+- **Riesgo:** un typo como `verfied` o un estado no gobernado puede superar la validación estructural del inventario y producir comportamiento incoherente en procesos posteriores.
+- **Cierre requerido:** convertir los estados editoriales de fuentes —y otros campos de estado que se decida gobernar— en enums explícitos compartidos con sus contratos/schema; añadir pruebas de rechazo para valores desconocidos.
+- **Impacto PRD 3:** no asumir que cualquier valor textual de `verificationStatus` es canónico; persistencia y backfill deben aceptar únicamente el vocabulario acordado.
+
+### V4-ARCH-DEBT-024 — Congelar el HEAD arquitectónico durante el gate final
+
+- **Estado:** `IN_PROGRESS`.
+- Varias escrituras concurrentes sobre #97 han reiniciado o cancelado corridas de CI antes de que pudieran representar el HEAD definitivo.
+- **Regla operativa:** después de este registro no añadir cambios a la rama salvo corrección exigida por un gate fallido o resincronización imprescindible con `master`.
+- **Cierre requerido:** mantener un único HEAD estable, observar en ese mismo SHA `Question Bank V4 freeze`, `PR Checks` y `Question Bank V4 atomic import`, y solo entonces cerrar `V4-ARCH-DEBT-013/016` o proponer integración.
+
 ## Handoff obligatorio al agente de Supabase / PRD 3
 
 Antes de integrar esta rama o fusionar SQL de targeting/knowledge, comunicar como mínimo:
@@ -211,7 +227,9 @@ Antes de integrar esta rama o fusionar SQL de targeting/knowledge, comunicar com
 10. `content/knowledge-base/maps/map.schema.json` define el contrato editorial de `knowledge_source_targets`; no existen relaciones activas hasta verificar fuentes;
 11. `content:validate:knowledge-targeting` valida catálogos y mapas y debe permanecer verde antes de cualquier import/backfill;
 12. `V4-ARCH-DEBT-021` bloquea el gap analysis del temario hasta restaurar su integridad;
-13. cualquier decisión sobre `editorial_scope`, `opec_id`, vistas, RLS o nuevas tablas debe contrastarse con la arquitectura, `prd3-knowledge-targeting-handoff.*` y este registro de deuda.
+13. `V4-ARCH-DEBT-023` exige que PRD 3 trate los estados editoriales como vocabulario controlado, no como texto libre;
+14. `V4-ARCH-DEBT-024` obliga a observar los gates sobre un HEAD estable antes de integrar;
+15. cualquier decisión sobre `editorial_scope`, `opec_id`, vistas, RLS o nuevas tablas debe contrastarse con la arquitectura, `prd3-knowledge-targeting-handoff.*` y este registro de deuda.
 
 ## Regla de mantenimiento
 
