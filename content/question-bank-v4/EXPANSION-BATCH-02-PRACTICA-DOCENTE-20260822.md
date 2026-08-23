@@ -52,7 +52,7 @@ Se aplicaron los gates de la fábrica docente y auditoría adversarial V4, inclu
 
 El QA mecánico final se ejecutó sobre todo el banco con lectura JSON estricta —incluida detección de claves duplicadas— y validación de contrato/taxonomías.
 
-Resultado en `COVERAGE-AFTER-BATCH-02-20260822.json`:
+Resultado en `history/snapshots/COVERAGE-AFTER-BATCH-02-20260822.json`:
 
 - 90 reactivos V4 válidos.
 - 0 errores estructurales o taxonómicos.
