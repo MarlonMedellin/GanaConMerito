@@ -6,7 +6,7 @@ import { LoadingState } from "@/components/ui/loading-state";
 import { ErrorState } from "@/components/ui/error-state";
 import { EmptyState } from "@/components/ui/empty-state";
 import { TutorInterface } from "@/components/tutor/tutor-interface";
-import { formatAreaCompetency } from "@/lib/ui/format-label";
+import { formatAreaCompetency, formatTechnicalLabel } from "@/lib/ui/format-label";
 import type { PracticeQuestionViewModel } from "@/types/session";
 
 type OptionKey = "A" | "B" | "C" | "D";
@@ -301,7 +301,7 @@ export function PracticeSession() {
             {item.topicLabel ? (
               <div className="practice-rich-item">
                 <p className="eyebrow mt-4">Mapa temático</p>
-                <p className="body-sm m-0">{item.topicLabel}</p>
+                <p className="body-sm m-0">{formatTechnicalLabel(item.topicLabel)}</p>
               </div>
             ) : null}
             {item.expectedUserTask ? (
@@ -313,15 +313,15 @@ export function PracticeSession() {
             {item.cognitiveIntent ? (
               <div className="practice-rich-item">
                 <p className="eyebrow mt-4">Intención cognitiva</p>
-                <p className="body-sm m-0">{item.cognitiveIntent}</p>
+                <p className="body-sm m-0">{formatTechnicalLabel(item.cognitiveIntent)}</p>
               </div>
             ) : null}
-            {item.topic || item.difficulty ? (
+            {item.topic || typeof item.difficulty === "number" ? (
               <div className="practice-rich-item">
                 <p className="eyebrow mt-4">Contexto del ítem</p>
                 <p className="body-sm m-0">
-                  {item.topic ? `Tema: ${item.topic}` : "Tema no especificado"}
-                  {typeof item.difficulty === "number" ? ` · Dificultad ${item.difficulty.toFixed(2)}` : ""}
+                  {item.topic ? `Tema: ${formatTechnicalLabel(item.topic)}` : "Tema no especificado"}
+                  {typeof item.difficulty === "number" ? " · Dificultad editorial estimada" : ""}
                 </p>
               </div>
             ) : null}
@@ -404,16 +404,9 @@ export function PracticeSession() {
               {feedback.answerReview.sourceReference ? (
                 <p className="subtle m-0">Fuente: {feedback.answerReview.sourceReference}</p>
               ) : null}
-              <div className="metric-grid metric-grid-2 mt-8">
-                <div className="metric-card metric-card-compact">
-                  <span className="metric-label">Razonamiento</span>
-                  <strong className="metric-value metric-value-lg">{feedback.evaluation.reasoningScore}</strong>
-                </div>
-                <div className="metric-card metric-card-compact">
-                  <span className="metric-label">Competencia</span>
-                  <strong className="metric-value metric-value-lg">{feedback.evaluation.competencyScore}</strong>
-                </div>
-              </div>
+              <p className="subtle m-0">
+                Las señales internas de razonamiento y desempeño orientan la práctica; no representan mediciones psicométricas calibradas.
+              </p>
               {feedback.evaluation.qualitativeFeedback ? <p className="subtle m-0">{feedback.evaluation.qualitativeFeedback}</p> : null}
             </div>
           ) : null}
