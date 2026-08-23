@@ -26,8 +26,21 @@ Perfiles docentes:
 content/targeting/profiles/docentes.json
 ```
 
-Estos JSON son catálogos editoriales para alinear agentes y futuras migraciones. No
-implican que las tablas equivalentes ya existan o estén desplegadas en Supabase.
+Catálogo OPEC:
+
+```text
+content/targeting/opecs/catalog.json
+```
+
+Contrato OPEC:
+
+```text
+content/targeting/opecs/catalog.schema.json
+```
+
+Estos JSON son catálogos editoriales para alinear agentes y futuras migraciones. No implican que las tablas equivalentes ya existan o estén desplegadas en Supabase.
+
+El catálogo OPEC existe desde ahora como estructura canónica, pero permanece vacío hasta incorporar ofertas reales, trazables y verificadas. No se crean OPEC ficticias para probar la arquitectura.
 
 ### Familia
 Agrupa una línea amplia de preparación.
@@ -52,14 +65,14 @@ Para la familia `docentes`:
 | `docente_aula_secundaria_media` | Docente de aula secundaria y media / bachillerato |
 | `docente_orientador` | Docente orientador |
 
-Otros concursos deben incorporar sus perfiles mediante catálogo controlado; no
-mediante texto libre dentro de cada pregunta.
+Otros concursos deben incorporar sus perfiles mediante catálogo controlado; no mediante texto libre dentro de cada pregunta.
 
 ### OPEC
 Es una instancia concreta de empleo/oferta dentro de una convocatoria o entidad. Debe mapearse a un perfil/cargo canónico.
 
-No se crean archivos OPEC de ejemplo o placeholders con identificadores inventados.
-`content/targeting/opecs/` se poblará únicamente con datos reales y trazables.
+La identidad externa se conserva mediante `sourceSystem + externalOpecId` y, cuando corresponda, `convocationCode`. No se debe asumir que un número de OPEC es globalmente único entre sistemas de origen.
+
+Una OPEC solo puede pasar a estado editorial `active` cuando su `verificationStatus` sea `verified`.
 
 ## Regla OPEC vs cargo
 
@@ -113,8 +126,7 @@ El corte V4 congelado conserva su contrato actual (`scope: general|opec_specific
 
 La evolución hacia targeting por perfil/cargo debe hacerse mediante una capa externa o una versión posterior del contrato, coordinada con Supabase.
 
-No realizar backfill automático de los 248 reactivos por palabras clave. El mapeo a
-perfiles debe basarse en evidencia editorial del constructo/rol.
+No realizar backfill automático de los 248 reactivos por palabras clave. El mapeo a perfiles debe basarse en evidencia editorial del constructo/rol.
 
 ## Diseño Supabase recomendado
 
@@ -132,6 +144,8 @@ Allí se propone separar:
 
 Esta estructura permite reutilizar preguntas entre cargos y preservar `opec_id` actual durante la transición.
 
+El contrato de repositorio en `content/targeting/opecs/` debe considerarse una interfaz editorial de entrada para PRD 3, no una copia del esquema SQL. Supabase puede usar UUID y claves foráneas internas mientras conserva los identificadores externos y el `profileCode` de procedencia.
+
 ## Gobernanza del catálogo
 
 - Los códigos de familia/perfil son estables.
@@ -139,3 +153,5 @@ Esta estructura permite reutilizar preguntas entre cargos y preservar `opec_id` 
 - Una OPEC nueva debe mapearse a un perfil existente o justificar un perfil nuevo.
 - Los perfiles no se crean para acomodar una sola pregunta.
 - Taxonomía y targeting deben evolucionar de forma independiente.
+- No activar una OPEC sin evidencia de procedencia verificable.
+- No duplicar una OPEC para representar filtros temáticos o variaciones de interfaz.
