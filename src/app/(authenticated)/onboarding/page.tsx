@@ -34,6 +34,16 @@ export default async function OnboardingPage() {
   const canaryOpecOptions = getCanaryOpecCatalog();
   const canaryTargetingSelection = await getCanaryTargetingSelection();
   const onboardingComplete = isLearningProfileOnboardingComplete(learningProfile);
+  const allowedCanaryProfileCodes = new Set(canaryOpecOptions.map((option) => option.professionalProfileCode));
+  const visibleProfessionalProfiles = canaryTargetingEnabled
+    ? (professionalProfiles ?? []).filter((professionalProfile) => allowedCanaryProfileCodes.has(professionalProfile.code))
+    : (professionalProfiles ?? []);
+  const currentProfileStillAvailable = visibleProfessionalProfiles.some(
+    (professionalProfile) => professionalProfile.id === learningProfile?.professional_profile_id,
+  );
+  const initialProfessionalProfileId = currentProfileStillAvailable
+    ? learningProfile?.professional_profile_id ?? ""
+    : visibleProfessionalProfiles[0]?.id ?? "";
 
   if (onboardingComplete && (!canaryTargetingEnabled || canaryTargetingSelection)) {
     redirect("/practice");
@@ -57,8 +67,8 @@ export default async function OnboardingPage() {
       <OnboardingForm
         initialTargetRole={learningProfile?.target_role ?? "docente"}
         initialExamType={learningProfile?.exam_type ?? "docente"}
-        initialProfessionalProfileId={learningProfile?.professional_profile_id ?? professionalProfiles?.[0]?.id ?? ""}
-        professionalProfiles={(professionalProfiles ?? []).map((professionalProfile) => ({
+        initialProfessionalProfileId={initialProfessionalProfileId}
+        professionalProfiles={visibleProfessionalProfiles.map((professionalProfile) => ({
           id: professionalProfile.id,
           code: professionalProfile.code,
           name: professionalProfile.name,
