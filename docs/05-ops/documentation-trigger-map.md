@@ -2,7 +2,7 @@
 
 Status: canonical
 Owner: PM-Governance
-Last reviewed: 2026-08-22
+Last reviewed: 2026-08-23
 
 Este documento define advertencias no bloqueantes para reducir drift documental y operativo.
 
@@ -50,6 +50,8 @@ Cuando un archivo crítico sea modificado, el agente debe revisar archivos relac
 | docs/03-architecture/question-bank-knowledge-targeting-architecture.md | content/README, GUIA-PARA-AGENTES-IA, targeting/knowledge README, docs DB V4, canonical-docs | Alta |
 | docs/database/question-bank-v4-contract.md | PRD Supabase V4, architecture adoption, schema, active bank contract | Alta |
 | docs/database/prd-question-bank-v4-supabase.md | migrations reales, question-bank-v4-contract, schema, architecture | Alta |
+| docs/database/v4-clean-baseline.md | migrations, runtime V4, security, status, content-sync | Alta |
+| scripts/content-sync.ts o scripts/lib/content-sync-* | migrations, content-sync, quality-gates, workflows | Alta |
 | supabase/migrations/ | docs/database/schema.md, contratos DB, runtime/release, status si afecta despliegue | Alta |
 | package.json | CI, QA docs, runtime docs | Media |
 

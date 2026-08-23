@@ -1,8 +1,14 @@
 # Arquitectura de conocimiento, perfiles, cargos y OPEC para el banco de preguntas
 
-**Estado:** arquitectura canónica para evolución del contenido y Supabase; orden documental V4 materializado en la rama de reorganización.  
-**Alcance:** repositorio, banco V4, biblioteca de conocimiento, segmentación por perfil/cargo/OPEC y diseño de persistencia.  
-**No autoriza:** nuevas migraciones SQL de targeting/knowledge, backfills, activación V4 en runtime ni cambios sobre el corte congelado de 248 reactivos.
+**Estado:** arquitectura canónica; persistencia limpia materializada y validada solo localmente en la rama de rebaseline.
+**Alcance:** repositorio, banco V4, biblioteca de conocimiento, segmentación por perfil/cargo/OPEC y diseño de persistencia.
+**No autoriza:** acciones remotas, backfills, activación V4 ni cambios sobre el corte congelado de 248 reactivos.
+
+**Decisión superseding (2026-08-23):** V4 es la única arquitectura futura;
+GitHub es autoridad y Supabase una proyección reconstruible. La adopción aditiva
+sobre `item_bank`, la conservación de UUID y la ruta `0029 → 0030` quedan
+históricas para el futuro cutover limpio. El modelo ejecutable vigente está en
+`docs/database/v4-clean-baseline.md`.
 
 ## 1. Problema que resuelve
 
@@ -207,24 +213,21 @@ Una pregunta puede ser:
 
 El corte V4 actual de 248 reactivos permanece sin modificación. La segmentación nueva debe incorporarse en una evolución explícita del contrato (V4.x) o mediante relaciones externas sin reescribir el corpus congelado.
 
-## 8. Propuesta para Supabase
+## 8. Persistencia Supabase V4 limpia
 
-El diseño normalizado recomendado para una evolución posterior es:
+El diseño normalizado implementado localmente es:
 
 ### Catálogos
 
 `target_families`
-- `id`
 - `code`
 - `name`
 - `is_active`
 
 `target_profiles`
-- `id`
-- `family_id`
 - `code`
+- `family_code`
 - `name`
-- `parent_profile_id null`
 - `is_active`
 
 `opec_catalog`
@@ -234,21 +237,26 @@ El diseño normalizado recomendado para una evolución posterior es:
 - `convocation_code null`
 - `entity_name null`
 - `position_name`
+- procedencia y verificación
 - `metadata jsonb`
 - `is_active`
 
 ### Relación reactivo-destinatario
 
 `item_target_profiles`
-- `item_id`
-- `profile_id`
-- `target_kind` (`primary`, `compatible`)
+- `question_id`
+- `profile_code`
+
+`item_target_families`
+- `question_id`
+- `family_code`
 
 `item_opec_targets`
-- `item_id`
+- `question_id`
 - `opec_id`
 
-Esto permite que un mismo reactivo pertenezca a varios perfiles sin duplicarse.
+Las relaciones no usan `targetKind` ni semántica `primary|compatible`. Esto permite
+que un mismo reactivo se relacione con varios destinos sin duplicarse.
 
 ### Biblioteca de conocimiento
 
@@ -274,22 +282,13 @@ Esto permite que un mismo reactivo pertenezca a varios perfiles sin duplicarse.
 - `relation_type` (`decisive`, `supporting`);
 - localizador específico usado por el reactivo.
 
-## 9. Compatibilidad con el modelo Supabase actual
+## 9. Ruptura con el modelo Supabase legacy
 
-La línea V4 ya dispone en repositorio de la base materializada `0019–0027` y del importador atómico `0028_atomic_v4_batch_import.sql`, validado en un entorno Supabase local aislado. Esto **no equivale** a afirmar que `0028` esté aplicada o activa en producción.
-
-El sistema actual dispone de `item_bank.opec_id`, `editorial_scope`, `source_reference`, `source_locator`, `source_url` y campos de clasificación V4.
-
-La evolución propuesta debe ser **aditiva**:
-
-- conservar `item_bank` como identidad técnica del reactivo;
-- conservar `opec_id` durante la transición para compatibilidad;
-- no romper `v_question_bank_v4_active`;
-- introducir los catálogos/relaciones normalizados mediante migraciones nuevas;
-- usar `source_reference` como referencia primaria/denormalizada mientras se adopta `item_source_links`;
-- no ejecutar backfill automático sin mapa validado de perfiles y OPEC.
-
-La próxima migración de targeting/knowledge **no tiene número reservado permanentemente**. Después de `0028`, `0029` es el candidato inmediato solo mientras continúe libre; antes de crear SQL se debe releer `supabase/migrations/` y usar el siguiente número realmente disponible.
+La nueva base no conserva `item_bank`, UUID de ítem ni compatibilidad runtime con
+Legacy/V3. `supabase/migrations/0001–0003` construye desde cero preguntas,
+targeting, knowledge y el runtime realmente consumido. La cadena anterior se
+conserva como evidencia en `supabase/legacy-migrations/` y no se ejecuta en la base
+nueva. La instancia remota legacy no se modifica desde este bloque.
 
 ## 10. Regla para el selector futuro
 
@@ -366,14 +365,12 @@ La integración a `master` depende de los gates finales y revisión del PR corre
 - añadir normas/guías/teoría por familia, perfil y OPEC mediante mapas, no copias;
 - producir un gap analysis derivado del temario sin modificar el original.
 
-### Fase 3 — Supabase targeting/knowledge — DIFERIDA
-- `0028` ya implementa el importador V4 atómico y está validada localmente;
-- comprobar nuevamente la secuencia real antes de numerar la siguiente migración;
-- crear catálogos de familias, perfiles y OPEC;
-- crear relaciones many-to-many de reactivos y fuentes;
-- mantener compatibilidad con `item_bank.opec_id` durante transición;
-- probar RLS, índices, importador y vistas antes de cualquier activación;
-- no confundir implementación/versionado local con despliegue productivo.
+### Fase 3 — Supabase targeting/knowledge — IMPLEMENTADA LOCALMENTE
+- baseline `0001–0003`, catálogos y relaciones creados;
+- reconciliador GitHub → Supabase compartido por CLI/API;
+- RLS, ACL, vistas y guards probados en Supabase local;
+- sin compatibilidad ni fallback `item_bank`;
+- no confundir implementación local con despliegue productivo.
 
 ### Fase 4 — targeting del corpus V4 — PENDIENTE
 - mapear los 248 reactivos actuales a familia/perfiles solo con evidencia editorial;
@@ -381,10 +378,10 @@ La integración a `master` depende de los gates finales y revisión del PR corre
 - permitir muchos perfiles por reactivo;
 - dejar los reactivos verdaderamente transversales en la capa común.
 
-### Fase 5 — runtime — PENDIENTE
-- selector jerárquico familia/perfil/OPEC;
-- cobertura y dashboards por destino;
-- recomendación adaptativa sin duplicar reactivos.
+### Fase 5 — runtime — IMPLEMENTADA LOCALMENTE CON DEUDA EDITORIAL
+- selector jerárquico familia/perfil/OPEC y repositorio V4 exclusivos;
+- práctica, sesión, evaluación y Tutor adaptados al ID V4;
+- falta poblar mappings/OPEC/fuentes verificadas antes del cutover real.
 
 ## 14. Regla de gobernanza
 

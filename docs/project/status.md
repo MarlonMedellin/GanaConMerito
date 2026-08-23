@@ -10,11 +10,28 @@ last_reviewed: 2026-08-23
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-08-23 — PRD 3 pausado; remediación P0 `0030` validada localmente y pendiente.
+Ultima actualizacion: 2026-08-23 — rebaseline V4 limpio implementado en rama local; checkpoint remoto pendiente.
 
 ---
 
 # Executive Operational Snapshot
+
+## Checkpoint local V4 limpio (vigente para este bloque)
+
+- Rama local: `codex/v4-clean-rebaseline-sync`; todavía sin push/PR/merge.
+- `supabase/migrations/0001–0003` crea una base V4 nueva sin la cadena histórica.
+- Las migraciones antiguas quedan en `supabase/legacy-migrations/`; la ruta
+  `0029 → 0030` queda superseded para el cutover limpio.
+- Runtime de repositorio, Tutor y sesión usan V4 sin fallback `item_bank`.
+- Sync GitHub → Supabase implementado con CLI/API, guards, atomicidad,
+  idempotencia y drift.
+- Evidencia únicamente local. Supabase remoto, VPS y runtime público no fueron
+  modificados ni revalidados en este bloque.
+- Deuda editorial: cero OPEC verificadas, cero mappings aprobados y cero fuentes
+  promovibles en el snapshot canónico actual.
+
+Los apartados siguientes conservan el último snapshot legacy/remoto conocido como
+contexto histórico y no autorizan ejecutar su ruta de migración.
 
 ## Current Sprint
 Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (**repo completo; cierre operativo pendiente**).
@@ -36,7 +53,7 @@ y debe confirmarse antes de aceptar la conexion.
 smoke publico; no reejecuto E2E autenticada ni verifico el arbol de deploy.
 
 ## Current Sprint Status
-**SPRINT 48 EN EJECUCIÓN; PRD 3 PAUSADO POR P0 DE SEGURIDAD**: `0028` fue aplicada en
+**SNAPSHOT REMOTO LEGACY PREVIO; NO REVALIDADO EN ESTE BLOQUE**: `0028` fue aplicada en
 producción, pero el lote no se ejecutó. La auditoría confirmó 163 V4 y 652 opciones,
 todas inactivas, no publicadas y fuera del piloto. `0029` endurece localmente el
 anclaje canónico. `0030` restaura de forma monotónica la frontera server-only y
@@ -71,8 +88,8 @@ cubre el overload remoto adicional; ambas quedan pendientes de autorización rem
 - sincronizacion documental automatica;
 - reduccion de documentacion legacy;
 - integracion fuerte rich-only.
-- aplicación remota autorizada `0029 → 0030`, importación productiva, activación de cohorte y
-  ejecución real de OpenRouter shadow pendientes.
+- proyecto Supabase V4 nuevo, aprobación de sync, activación, deploy y ejecución
+  real de OpenRouter shadow pendientes; no ejecutar `0029 → 0030` como cutover.
 
 ## Last Audit
 2026-08-22 — repo remoto sincronizado; estructura V4, REST publico de Supabase,

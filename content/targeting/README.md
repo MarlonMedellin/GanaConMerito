@@ -121,12 +121,14 @@ Para integridad de datos **no son sinónimos de identidad**:
 
 ## Aplicabilidad de preguntas
 
-Un reactivo puede ser:
+Un reactivo puede relacionarse de forma directa con:
 
-- común a toda una familia;
-- principal para un perfil;
-- compatible con varios perfiles;
-- específico de una OPEC.
+- una familia común;
+- uno o varios perfiles;
+- una o varias OPEC específicas.
+
+La relación no usa `targetKind` ni clasifica destinos como
+`primary|compatible`; su significado proviene del nivel de la relación.
 
 Por tanto, la persistencia futura debe admitir relaciones many-to-many y no una sola columna de cargo como única clasificación.
 

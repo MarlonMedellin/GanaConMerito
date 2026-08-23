@@ -1,9 +1,14 @@
 # Deuda de consolidación — Banco V4, Knowledge, Targeting y Supabase
 
-**Estado:** registro vivo de coordinación arquitectónica.  
-**Rama de trabajo:** `reorg-v4-architecture-20260822`.  
-**Última base sincronizada conocida:** `master@7be92b655dee4965872963f1ca57d6eb96107599`.  
+**Estado:** registro vivo de coordinación arquitectónica.
+**Rama de trabajo vigente:** `codex/v4-clean-rebaseline-sync`.
+**Base de la rama:** `master@544ebf883dc72fe474afe7d13be355d8f9e846b1`.
 **Regla:** registrar aquí decisiones diferidas, dependencias y riesgos; este archivo no autoriza runtime, SQL, backfills ni cambios sobre el corpus congelado.
+
+**Decisión superseding (2026-08-23):** V4 adopta una baseline limpia desde cero.
+Las reglas anteriores de evolución aditiva, conservación de `item_bank`/UUID y
+ruta `0029 → 0030` quedan como contexto histórico, no como instrucciones de
+cutover. La instancia legacy permanece intacta.
 
 ## Estados
 
@@ -19,7 +24,9 @@ La reorganización histórica de V4 ya separa estado operativo de evidencia hist
 
 La rama está sincronizada con el checkpoint de Codex en `master@7be92b6`: `0028_atomic_v4_batch_import.sql` fue aplicada en producción sin ejecutar el lote; `0029_harden_v4_manifest_reconciliation.sql` está versionada y validada localmente, pero no aplicada en producción. La secuencia `0001–0029` está ocupada.
 
-La arquitectura de `knowledge + targeting` ya tiene estructura física de repositorio: catálogo inicial de fuentes, carpetas canónicas de fuentes, contratos de familia/perfil/OPEC, mapa externo de reactivos, schema de mapas de conocimiento y validación automática integrada a `PR Checks`. La persistencia Supabase correspondiente sigue siendo evolución aditiva de PRD 3.
+La arquitectura de `knowledge + targeting` tiene estructura física y persistencia
+limpia implementada localmente. Sus catálogos canónicos siguen limitando la
+proyección: OPEC, mappings y fuentes promovibles permanecen en cero.
 
 La estructura de onboarding/knowledge/targeting queda congelada hasta canary y primeras pruebas con stakeholders/early adopters. Antes de esa etapa solo se reabre por corrección bloqueante, seguridad, integridad de datos o incompatibilidad objetiva con una migración ya aplicada.
 
@@ -96,13 +103,14 @@ La estructura de onboarding/knowledge/targeting queda congelada hasta canary y p
 - **Cierre requerido:** poblar y revisar editorialmente los 248 reactivos para familia/perfiles y, cuando corresponda, OPEC.
 - **Regla:** no duplicar reactivos ni aceptar inferencia final por palabras clave; un clasificador automático solo puede producir candidatos.
 
-### V4-ARCH-DEBT-010 — Implementar targeting/knowledge en Supabase de forma aditiva
+### V4-ARCH-DEBT-010 — Implementar targeting/knowledge en Supabase limpio
 
-- **Estado:** `IN_PROGRESS` por PRD 3 en línea paralela; esta rama no implementa SQL de targeting/knowledge.
-- La secuencia `0001–0029` está ocupada. Con el freeze actual, cualquier nueva migración debe usar `0030` o el siguiente número realmente libre superior.
-- Alcance esperado: entidades equivalentes a `target_families`, `target_profiles`, `opec_catalog`, `item_target_profiles`, `item_opec_targets`, `knowledge_sources`, `knowledge_source_targets`, `item_source_links`.
-- **Regla:** conservar `item_bank`, UUID, vistas seguras y `opec_id` durante la transición; nunca reescribir migraciones aplicadas.
-- **Coordinación:** PRD 3 debe tomar los catálogos y mapas de `content/targeting/` y `content/knowledge-base/` como contratos editoriales de entrada, no inventar un catálogo paralelo.
+- **Estado:** `CLOSED` en repositorio/local; despliegue remoto pendiente de otro checkpoint.
+- `0001_v4_clean_foundation.sql` crea familias, perfiles, OPEC, relaciones y
+  knowledge normalizado sin `item_bank` ni UUID de ítem legacy.
+- El sync toma exclusivamente `content/targeting/` y `content/knowledge-base/` y
+  filtra OPEC/fuentes verificadas y mappings/aplicabilidad aprobados.
+- La deuda restante es editorial/datos reales, registrada en 007–009.
 
 ### V4-ARCH-DEBT-011 — Resolver evolución de `editorial_scope`
 
@@ -155,14 +163,15 @@ La estructura de onboarding/knowledge/targeting queda congelada hasta canary y p
 - `history/PROVENANCE.md` establece que el trabajo nuevo y la futura persistencia deben usar `content/targeting/profiles/docentes.json` como catálogo canónico.
 - Las carpetas legacy no se eliminan hasta revisar sus consumidores en una tarea separada.
 
-### V4-ARCH-DEBT-018 — Continuidad operativa de `0029` y lote V4 fuera del entorno local
+### V4-ARCH-DEBT-018 — Cutover V4 fuera del entorno local
 
 - **Estado:** `OPEN`.
-- **Responsable lógico:** migración/operación Supabase, no reorganización documental.
-- `0028` fue aplicada en producción sin ejecutar el lote V4.
-- `0029_harden_v4_manifest_reconciliation.sql` está versionada y validada localmente, pero no aplicada en producción al checkpoint.
-- El lote canónico de 248 no fue ejecutado en producción.
-- **Cierre requerido:** nuevo preflight sobre el `master` vigente, migration history, snapshot/recuperación, aplicación autorizada de `0029`, resultado del batch si se autoriza, estados de activación, gates de seguridad/E2E y evidencia de rollback/recuperación.
+- `0028/0029/0030` describen el estado y seguridad de la instancia legacy; no son
+  la ruta del cutover limpio.
+- **Cierre requerido:** crear proyecto nuevo autorizado, aplicar baseline
+  `0001–0003`, aprobar/sincronizar el plan canónico, completar targeting elegible,
+  activar, desplegar y obtener evidencia E2E. La disposición de la base legacy es
+  una decisión posterior separada.
 
 ### V4-ARCH-DEBT-019 — Actualizar documento arquitectónico tras la reorganización física
 
@@ -220,16 +229,16 @@ La estructura de onboarding/knowledge/targeting queda congelada hasta canary y p
 - **Regla operativa:** no añadir nuevos cambios de arquitectura/onboarding antes de canary. Desde este punto solo se permiten correcciones exigidas por un gate fallido o por corrección/seguridad/integridad/incompatibilidad crítica demostrada.
 - **Cierre requerido:** mantener un único HEAD estable, observar en ese mismo SHA `Question Bank V4 freeze`, `PR Checks` y `Question Bank V4 atomic import`, y solo entonces cerrar `V4-ARCH-DEBT-013/016` o proponer integración.
 
-## Handoff obligatorio al agente de Supabase / PRD 3
+## Handoff obligatorio para el futuro cutover Supabase
 
-Antes de integrar esta rama o fusionar SQL de targeting/knowledge, comunicar como mínimo:
+Antes de cualquier acción remota, comunicar como mínimo:
 
-1. la secuencia `0001–0029` está ocupada; releer migraciones y usar `0030` o el siguiente número realmente libre superior;
-2. `0028` fue aplicada en producción sin ejecutar el lote V4;
-3. `0029` está versionada y validada localmente, pero no aplicada en producción al checkpoint;
+1. usar un proyecto vacío y solo la baseline limpia `0001–0003`;
+2. no ejecutar `0029 → 0030` como ruta de cutover;
+3. no modificar ni borrar la instancia legacy sin autorización posterior;
 4. la reorganización de `history/` no modifica el corpus, `MANIFEST.json`, `legacy-processing-register.csv` ni el runtime;
 5. `MANIFEST.json` y el registro operacional permanecen en raíz por sus consumidores;
-6. targeting/knowledge es una evolución aditiva y no reemplaza el importador atómico;
+6. targeting/knowledge forma parte del reconciliador único GitHub → Supabase;
 7. `content/targeting/profiles/docentes.json` es el catálogo canónico de perfiles; `content/profiles/docente/` es histórico/puente;
 8. semántica congelada: perfil reusable → `positionName` oficial → OPEC concreta; no proliferar perfiles por disciplina antes de canary;
 9. `content/targeting/opecs/catalog.json` + `catalog.schema.json` definen la interfaz editorial de OPEC y no contienen datos ficticios;

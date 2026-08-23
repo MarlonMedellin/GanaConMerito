@@ -2,7 +2,7 @@
 
 Status: canonical
 Owner: PM-Governance
-Last reviewed: 2026-08-11
+Last reviewed: 2026-08-23
 Related files:
 - AGENTS.md
 - package.json
@@ -66,7 +66,7 @@ Persisten limitaciones:
 | Tutor regression | Importante |
 | Editorial validation | Importante |
 | V4 freeze manifest | Obligatorio para cambios V4 |
-| V4 atomic database import | Obligatorio para importador/migraciones V4 |
+| V4 clean database sync | Obligatorio para sync/migraciones V4 |
 | Question-bank security boundary | Obligatorio para migraciones/lecturas/RPC del banco |
 | Documentation alignment | Advisory |
 | Agent traceability | Advisory |
@@ -98,17 +98,18 @@ Para `content/question-bank-v4/`, `npm run content:validate:v4` y
 taxonomías, métricas y hashes contra `MANIFEST.json`; un cambio sin reconciliar el
 manifiesto falla.
 
-Para cambios al importador o a migraciones V4, CI reconstruye Supabase desde cero
-y ejecuta `npm run test:v4-import:db`. El gate debe probar lote limpio,
-idempotencia, errores de contrato/ID/hash/conteo, rollback intermedio, cuatro
-opciones, inactividad, permisos, vistas seguras y preservación histórica. La suite
-rechaza conexiones que no sean loopback.
+Para cambios al reconciliador o migraciones V4, CI reconstruye Supabase únicamente
+con `0001–0003` y ejecuta `npm run test:v4-import:db` y
+`npm run test:v4-runtime:db`. El gate prueba 248/992, plan determinista,
+idempotencia, drift inducido/reparado, failure injection y rollback, catálogos,
+frontera pre/post, Tutor y sesión atómica. La suite rechaza conexiones no-loopback.
 
 Para cambios de banco, vistas o RPC, `npm run test:security` es bloqueante y exige
 Supabase local aislado. Ejecuta contratos estáticos, el probe REST real mediante
 `HEAD` para `anon` y `authenticated`, y pruebas PostgreSQL de ACL, policies,
 ejecución por rol, overloads dinámicos, `SECURITY DEFINER`, `search_path`, lectura
 de respuestas y contratos V4. Un fallo del probe real hace fallar el gate normal.
+El gate exige además cero fallback `item_bank` en consumidores runtime V4.
 
 ## Cambios de runtime
 

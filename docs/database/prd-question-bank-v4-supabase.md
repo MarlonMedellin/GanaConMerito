@@ -1,222 +1,60 @@
-# PRD — Migración de Question Bank V4 en Supabase
+# PRD — Supabase limpio para Question Bank V4
 
-**Estado:** producción reporta `0001–0028`; `0029` y la remediación P0 `0030`
-están implementadas y validadas en Supabase local aislado, no aplicadas remotamente.
+**Estado:** implementación local candidata; proyecto remoto, cutover y deploy no
+autorizados ni ejecutados.
 
-## 1. Resultado esperado
+## Resultado esperado
 
-Supabase almacena, valida y sirve el banco V4 con trazabilidad editorial, acceso
-seguro y una lectura predeterminada V4. Los datos Beta/V3/legacy permanecen
-intactos e inaccesibles para selección por defecto después del corte.
+Construir desde cero una base Supabase V4 segura y reproducible con el repositorio
+como autoridad. No se preservan filas, UUID, sesiones, estadísticas ni contratos
+runtime Legacy/V3. La instancia Supabase existente permanece intacta hasta una
+decisión productiva posterior.
 
-## 2. Decisiones de modelo
+## Decisiones
 
-- Mantener `public.item_bank` como tabla principal y `public.item_options` para
-  las opciones A–D.
-- No crear una tabla paralela de preguntas en la primera adopción V4.
-- Añadir frontera explícita por versión y vistas de lectura separadas.
-- Mantener el UUID existente como identidad técnica para sesiones e historial.
-- Usar JSONB solo para detalle editorial/tutor; guardar campos filtrables en
-  columnas estructuradas.
-- Separar **taxonomía** (qué se evalúa) de **targeting** (a quién aplica).
-- Tratar perfil/cargo y OPEC como destinos equivalentes para selección, pero no
-  como el mismo identificador: el perfil/cargo es reusable y la OPEC es una
-  instancia concreta de convocatoria/entidad.
-- Una pregunta puede aplicar a varios perfiles; por ello la evolución posterior
-  debe admitir relaciones many-to-many y evitar duplicar reactivos por cargo.
-- La base de conocimiento normativa/académica/técnica debe normalizarse como una
-  capa reutilizable y no copiarse por cada perfil u OPEC.
+1. Ejecutar únicamente `supabase/migrations/0001–0003` en una base nueva.
+2. Conservar `0001–0030` anteriores en `supabase/legacy-migrations/` como historia.
+3. Reutilizar los números de versión y comprobar `gcm-v4-clean-v1` + `instance_id`
+   para impedir que una base legacy reciba accidentalmente el rebaseline.
+4. Reemplazar `item_bank` por `questions`/`question_options` con ID editorial V4.
+5. Separar banco/taxonomía, targeting y knowledge base.
+6. Reconciliar solo GitHub → Supabase mediante un motor compartido CLI/API.
+7. Denegar banco crudo y verdad editorial a `anon`/`authenticated` desde el origen.
 
-Arquitectura de referencia:
+PR #102 y la migración histórica `0030` se conservan como evidencia de pruebas y
+frontera de seguridad; no son la ruta de cutover de esta baseline.
 
-`docs/03-architecture/question-bank-knowledge-targeting-architecture.md`
+## Entregables de repositorio
 
-## 3. Secuencia versionada real
+- baseline reproducible y semilla vacía;
+- modelo runtime para identidad, práctica, evaluación, estadísticas consumidas y Tutor;
+- releases y trazabilidad de sincronización;
+- targeting perfil → `positionName` → OPEC;
+- knowledge sources y relaciones verificadas;
+- reconciliador validate/plan/diff/apply/verify/status;
+- API administrativa server-only sin secretos;
+- pruebas de idempotencia, drift, atomicidad, ACL/RLS y pre/post respuesta.
 
-Las migraciones `0019–0027` ya existen en el repositorio y no deben modificarse.
-El historial remoto fue auditado en modo lectura y coincide hasta `0027`. La nueva
-operación usa el siguiente número libre, `0028`.
+Detalles de modelo: `docs/database/v4-clean-baseline.md`.
+Operación: `docs/05-ops/content-sync.md`.
 
-### M-0019 — Contrato de columnas V4 (materializada)
+## Criterios de aceptación local
 
-`supabase/migrations/0019_question_bank_v4_contract.sql` añade:
+- reset desde cero ejecuta solo la baseline nueva;
+- 248 preguntas y 992 opciones materializadas;
+- segunda sincronización `changed = 0`, `drift = 0`;
+- drift manual detectado y reparado;
+- un fallo de lote no deja release parcial;
+- exactamente una familia y seis perfiles docentes;
+- OPEC/mappings/fuentes no verificadas no se promueven;
+- repositorio, práctica, sesión, evaluación y Tutor usan IDs V4 sin fallback;
+- cliente no obtiene clave ni explicación antes de responder;
+- `anon`/`authenticated` no leen banco crudo; `service_role` sí puede servirlo;
+- typecheck, tests, build y validadores documentales verdes.
 
-| Columna | Tipo | Regla |
-|---|---|---|
-| `bank_version` | `text not null` | `legacy`, `v3`, `v4` |
-| `editorial_scope` | `text null` | `general` u `opec_specific` para V4 |
-| `topic_code` | `text null` | catálogo V4 |
-| `question_type` | `text null` | catálogo V4 |
-| `cognitive_level` | `text null` | catálogo V4 |
-| `source_reference` | `text null` | obligatorio para V4 |
-| `source_locator` | `text null` | artículo, sección o página |
-| `source_url` | `text null` | URL de evidencia si existe |
+## Gate de cutover futuro
 
-Agregar índices para `bank_version`, `editorial_scope`, `opec_id`, `topic_code` y
-la combinación usada por el selector. Agregar constraints para valores válidos y
-para exigir `source_reference`/`opec_id` cuando corresponda a V4.
-
-> Regla de gobernanza: verificar la secuencia real en `supabase/migrations/` y el
-> historial aplicado en cada ambiente. No reutilizar ni reescribir migraciones.
-
-### M-0020 a M-0027 — Seguridad y runtime V4 (materializadas)
-
-Esta secuencia incorpora la frontera de respuestas, el upsert unitario V4, las
-vistas seguras, métricas shadow, políticas server-only y ajustes de runtime. Sus
-definiciones ejecutables viven en `supabase/migrations/`.
-
-### M-0028 — Importación V4 atómica y auditable
-
-`supabase/migrations/0028_atomic_v4_batch_import.sql` añade, sin reescribir la
-historia:
-
-- `question_bank_v4_manifests`, registro del corte congelado con SHA, hashes y conteo;
-- `question_bank_v4_taxonomy_snapshot`, catálogo exacto usado para validar el lote;
-- `question_bank_v4_import_runs`, trazabilidad de inicio, final, estado, error seguro
-  y reconciliación;
-- `import_question_bank_v4_batch(candidates, plan_hash, expected_count, source_sha)`,
-  función `SECURITY DEFINER`, `search_path` fijo y acceso exclusivo de
-  `service_role`;
-- validación completa del lote antes de escribir y reutilización del upsert unitario
-  solo después de superar ese gate;
-- rollback de todas las preguntas/opciones ante cualquier falla, conservando una
-  fila administrativa segura de la ejecución fallida;
-- reconciliación idempotente y desactivación, nunca borrado, de V4 históricas
-  ausentes del manifiesto;
-- vistas pre-respuesta sin clave ni explicaciones y vista post-respuesta reservada
-  a servidor.
-
-Toda pregunta importada queda `draft`, inactiva, no publicada y fuera del piloto.
-La migración fue reconstruida y ensayada localmente desde cero; su aplicación en
-staging remoto y producción requiere autorización separada.
-
-La ejecución en producción conserva las protecciones de los entornos aislados y
-añade un gate específico en el importador versionado. Debe coincidir de forma
-exacta el proyecto Supabase esperado, el SHA Git comprobado, el árbol debe estar
-limpio y la confirmación debe incorporar el hash y conteo del plan canónico. Este
-gate no autoriza activación, despliegue de aplicación, cambios del manifiesto ni
-migraciones posteriores a `0028`.
-
-### M-0029 — Anclaje canónico y reconciliación fuerte (checkpoint)
-
-`supabase/migrations/0029_harden_v4_manifest_reconciliation.sql` se creó después
-de aplicar `0028` sin ejecutar el lote. Añade el hash de plan esperado al manifiesto
-administrativo, rechaza cargas alternativas y solo declara una fila `unchanged`
-cuando columnas, metadata y opciones A–D coinciden realmente. También verifica el
-estado final completo dentro de la transacción. Está validada en base local y no
-aplicada en producción al cierre del checkpoint.
-
-### M-0030 — Remediación P0 de frontera del banco
-
-`0030_security_question_bank_boundary_remediation.sql` queda reservado para
-seguridad. Tras inventariar el esquema remoto efectivo, cierra ACL y policies de
-cliente, endurece todos los overloads `SECURITY DEFINER` pertinentes y preserva
-las vistas V4 pre/post según su contrato server-only. La única secuencia remota
-admisible es `0029 → 0030` dentro de una ventana autorizada, sin lote ni activación.
-
-### Evolución posterior — targeting y knowledge graph
-
-No mezclar esta evolución con el corte inicial V4 si todavía no está estabilizado.
-Cuando se autorice, crear migraciones nuevas y monotónicas para incorporar:
-
-#### Catálogos de destinatarios
-
-- `target_families`: familias amplias de preparación/concurso;
-- `target_profiles`: cargos/perfiles canónicos reusables;
-- `opec_catalog`: OPEC concretas, cada una asociada a un perfil/cargo.
-
-Para la familia docente el catálogo inicial debe poder representar:
-
-- `rector_director_rural`;
-- `coordinador`;
-- `docente_aula_preescolar`;
-- `docente_aula_basica_primaria`;
-- `docente_aula_secundaria_media`;
-- `docente_orientador`.
-
-#### Relaciones de aplicabilidad
-
-- `item_target_profiles(item_id, profile_id, target_kind)`;
-- `item_opec_targets(item_id, opec_id)`.
-
-El campo existente `item_bank.opec_id` se conserva durante la transición por
-compatibilidad, pero no debe ser la única representación futura de aplicabilidad.
-
-#### Biblioteca de conocimiento
-
-- `knowledge_sources`: identidad y metadatos de normas, teoría, guías, documentos
-  técnicos y temarios;
-- `knowledge_source_targets`: relación de una fuente con familia/perfil/OPEC;
-- `item_source_links`: relación entre reactivo y una o varias fuentes, con
-  `relation_type` y localizador.
-
-`source_reference`, `source_locator` y `source_url` pueden mantenerse como datos
-denormalizados de la fuente principal durante la transición.
-
-## 4. Datos y activación
-
-1. Hacer backup verificable y registrar conteos de `item_bank`, `item_options`,
-   sesiones y turnos antes de cada migración.
-2. Confirmar que el ambiente objetivo esté alineado hasta `0027`.
-3. Aplicar `0028` solo en una rama/base aislada autorizada.
-4. Ejecutar dry-run y después una única llamada batch controlada.
-5. Verificar opciones, estado, fuente, OPEC, vista de práctica y vista posterior.
-6. Aprobar editorialmente la cohorte y activar de forma explícita.
-7. Aplicar el corte de fuente predeterminada únicamente cuando el piloto y las
-   pruebas de runtime estén aprobados.
-8. Adoptar targeting/perfiles y knowledge graph como evolución aditiva posterior,
-   con migraciones separadas y backfill explícitamente auditado.
-
-No se migran datos legacy a V4: se importan reactivos V4 nuevos. No se borran filas
-legacy/V3 ni datos de sesiones durante este proyecto.
-
-El corte editorial V4 congelado tampoco debe reescribirse para agregar perfiles.
-El mapeo inicial de los reactivos existentes puede residir en relaciones externas y
-solo debe backfillearse con evidencia editorial validada.
-
-## 5. Pruebas obligatorias
-
-- reconstrucción desde cero de todas las migraciones en Supabase aislado;
-- importación completa, segunda ejecución idempotente y rollback intermedio;
-- rechazo de JSON inválido, ID duplicado, hash y conteo incorrectos;
-- preservación inactiva de filas V4 históricas;
-- pruebas de constraints, función de upsert, vistas, grants y RLS;
-- prueba de que `v_question_bank_v4_practice` no devuelve clave ni feedback;
-- prueba de que la vista posterior autorizada devuelve la explicación correcta;
-- integración de `session/start`, `session/item` y `session/advance`;
-- E2E autenticada y smoke de runtime tras cada activación;
-- verificación de rollback por desactivación sin pérdida de historial;
-- para targeting futuro: tests de herencia `OPEC → perfil → familia`;
-- prueba de que un reactivo multi-perfil no se duplica físicamente;
-- prueba de que una OPEC solo hereda preguntas del perfil/familia correctos;
-- pruebas de integridad referencial entre fuentes, perfiles, OPEC y reactivos.
-
-## 6. Criterios de corte
-
-V4 puede ser fuente predeterminada solo cuando:
-
-1. existe una cohorte V4 suficiente y aprobada;
-2. la vista de práctica devuelve exclusivamente V4;
-3. no existe fuga de clave antes de responder;
-4. los filtros activos tienen cobertura V4;
-5. importación, API, UI, RLS y E2E pasan;
-6. existe evidencia de piloto y plan de rollback probado.
-
-La incorporación de targeting normalizado tiene además estos criterios:
-
-7. existe catálogo controlado de perfiles/cargos;
-8. cada OPEC cargada puede resolverse a un perfil canónico;
-9. el selector distingue preguntas comunes, de perfil y OPEC-specific;
-10. no se depende de texto libre para inferir cargos en runtime.
-
-## 7. Operación posterior
-
-- El importador usa `service_role` solo en servidor/CI seguro.
-- La activación/desactivación se registra en una operación auditable.
-- Nuevos ítems V4 permanecen inactivos hasta aprobación editorial y técnica.
-- Las métricas de uso y respuesta se registran sin alterar el historial legacy.
-- El catálogo de OPEC debe ser versionable/auditable por convocatoria.
-- Los perfiles/cargos se mantienen como catálogo estable; una nueva OPEC se mapea a
-  uno de ellos o requiere una decisión explícita de catálogo.
-- La biblioteca de conocimiento no se expone al cliente como sustituto del contrato
-  seguro de preguntas; sirve para trazabilidad, generación, auditoría y gestión.
+Requiere autorización separada para crear el proyecto nuevo, aplicar migraciones,
+aprobar el hash, sincronizar, completar datos de targeting/knowledge, activar un
+release, desplegar y ejecutar E2E. Borrar o modificar la instancia legacy no forma
+parte de este PRD sin un nuevo checkpoint.
