@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import {
   buildCanarySessionTargetingCookieValue,
   parseCanarySessionTargetingCookieValue,
-} from "./canary-targeting-server";
+} from "./canary-session-targeting";
 
 test("session targeting cookie round-trips session and source-scoped OPEC", () => {
   const value = buildCanarySessionTargetingCookieValue(
