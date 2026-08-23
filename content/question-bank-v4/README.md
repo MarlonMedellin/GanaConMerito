@@ -127,6 +127,7 @@ content/question-bank-v4/
 ├── README.md
 ├── MANIFEST.json             # Corte canónico y hashes reproducibles
 ├── CONTRATO-EDITORIAL-V4.md
+├── legacy-processing-register.csv
 ├── items/
 │   ├── docentes/             # Reactivos maestros DOC-######.json
 │   └── general/              # Futura fábrica general GEN-######.json
@@ -136,6 +137,7 @@ content/question-bank-v4/
 │   └── README.md
 └── history/                  # Evidencia histórica, nunca fuente runtime
     ├── README.md
+    ├── INDEX.md              # Secuencia expansión → auditoría → remediación → snapshot
     ├── expansion/
     ├── audits/
     ├── remediation/
@@ -148,14 +150,19 @@ en `content/targeting/`.
 
 ## Historial y migración de estructura
 
-La reorganización física de históricos se ejecuta por lotes para no romper enlaces o
-consumidores heredados. La Fase C2 ya fue migrada a `history/` como primer lote.
-Los documentos históricos anteriores que todavía permanezcan en la raíz se moverán
-solo después de verificar sus referencias internas y externas.
+Los artefactos históricos `EXPANSION-*`, `AUDIT-*`, `REAUDIT-*`, `REMEDIATION-*` y
+`COVERAGE-*` fueron retirados de la raíz operativa y organizados bajo `history/`.
+El punto de entrada para reconstruir la evolución editorial es
+[`history/INDEX.md`](./history/INDEX.md).
 
-`MANIFEST.json` **no se mueve** a `state/`: scripts y CI lo consumen actualmente en
-la raíz y seguirá allí hasta que una migración explícita de rutas actualice y valide
-todos los consumidores.
+Este movimiento reorganiza evidencia; no cambia el corpus congelado. Los nombres
+históricos como `temas.md`, `temas(1).md` o rutas legacy de perfiles se preservan
+en los relatos originales cuando forman parte de la trazabilidad y se resolverán
+mediante mapas de provenance, no reescribiendo retrospectivamente la historia.
+
+`MANIFEST.json` **no se mueve** a `state/`: scripts, CI y el flujo de importación V4
+lo consumen actualmente en la raíz y seguirá allí hasta que una migración explícita
+de rutas actualice y valide todos los consumidores.
 
 `legacy-processing-register.csv` tampoco se mueve en esta fase porque tiene
 consumidores operativos y de importación documentados. Su eventual reubicación exige
