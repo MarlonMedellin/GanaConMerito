@@ -11,25 +11,48 @@ Este contrato resuelve tres problemas inmediatos sin rehacer la arquitectura:
 ## Frontera V4
 
 Este contrato describe la lectura activa actualmente implementada para Beta/V3.
-No incluye V4 todavía. La futura incorporación de V4 debe seguir
-`docs/database/question-bank-v4-contract.md`: vista de lectura separada, campos
-editoriales estructurados, RLS y activación gradual. No ampliar
-`v_item_bank_active` para V4 antes de validar esa migración y el piloto.
+La incorporación de V4 sigue `docs/database/question-bank-v4-contract.md`: vista de
+lectura separada, campos editoriales estructurados, RLS y activación gradual.
+
+La evolución posterior de segmentación por familia, perfil/cargo y OPEC se define
+en:
+
+`docs/03-architecture/question-bank-knowledge-targeting-architecture.md`
+
+Esa arquitectura **no cambia por sí sola este contrato runtime**. No se debe ampliar
+`v_item_bank_active`, alterar el selector ni activar targeting nuevo hasta que exista
+una migración, pruebas y una decisión explícita de producto/runtime.
 
 ---
 
 ## Nota de coherencia editorial
-El sistema editorial vigente del banco ya distingue:
+
+El sistema editorial histórico ya distingue:
 - eje principal: `area`, `subarea`, `competency`
 - eje secundario opcional: `targetRole`, `targetPosition`, `applicantProfile`, `tags`
-- carpeta canónica de ítems finales: `content/items/`
+- carpeta canónica Legacy/Beta/V3 de ítems finales: `content/items/`
 - carpeta secundaria de trabajo editorial por perfil: `content/profiles/docente/`
 
-Este documento describe solo el **contrato mínimo de lectura activa en runtime**. La segunda capa por perfiles docentes ya existe en el Markdown editorial, pero no debe asumirse como completamente adoptada aquí hasta que exista migración o contrato explícito de base de datos para ello.
+La arquitectura objetivo formaliza esa idea de forma más general:
+
+- **taxonomía** = qué se evalúa;
+- **targeting** = a quién aplica;
+- **knowledge base** = qué fuente lo sustenta.
+
+Rutas objetivo:
+
+```text
+content/knowledge-base/
+content/targeting/
+```
+
+Para selección, cargo/perfil y OPEC son destinos equivalentes. Para identidad de
+datos son distintos: el perfil/cargo es reusable y la OPEC es una instancia concreta.
+No inferir ninguno de ellos desde palabras del enunciado en runtime.
 
 ---
 
-## 1. Catálogo activo propuesto
+## 1. Catálogo activo actual
 
 ### Identidad mínima
 - `id uuid` — identificador técnico interno; mantiene compatibilidad con sesiones actuales
@@ -57,27 +80,43 @@ Este documento describe solo el **contrato mínimo de lectura activa en runtime*
 - `thematic_nucleus_name text`
 - `thematic_nucleus_is_universal boolean`
 
-### Segmentación editorial secundaria futura
-Estos campos aún no forman parte del contrato mínimo activo, pero ya existen en la capa Markdown editorial y podrían adoptarse después:
-- `target_role text`
-- `target_position text`
-- `applicant_profile text`
-- `tags text[]` o estructura equivalente
+### Segmentación editorial futura
+Los campos históricos `target_role`, `target_position` y `applicant_profile` no
+deben convertirse en un catálogo paralelo indefinido. La evolución recomendada es
+normalizar:
+
+- familias de destino;
+- perfiles/cargos canónicos;
+- OPEC concretas;
+- relaciones many-to-many entre preguntas y perfiles/OPEC.
+
+Para docentes, el catálogo inicial esperado incluye:
+- `rector_director_rural`
+- `coordinador`
+- `docente_aula_preescolar`
+- `docente_aula_basica_primaria`
+- `docente_aula_secundaria_media`
+- `docente_orientador`
+
+La adopción runtime de estas relaciones es posterior y debe conservar compatibilidad
+con `opec_id` mientras dure la transición.
 
 ### Trazabilidad mínima
 - `status text`
 - `is_active boolean`
 - `source_type text`
 - `source_path text`
-- `editorial_metadata jsonb` — contrato editorial beta preservado desde los JSON de origen (perfil sugerido, claim, evidencia, tarea, nivel cognitivo, distractores, fairness, accesibilidad y trazabilidad)
+- `editorial_metadata jsonb`
 - `created_at timestamptz`
 - `updated_at timestamptz`
 
-La frontera runtime beta exige `source_path like 'content/items/beta-v1/%'`. Los registros sin esa trazabilidad permanecen fuera de `v_item_bank_active` aunque conserven compatibilidad histórica en `item_bank`.
+La frontera runtime beta exige `source_path like 'content/items/beta-v1/%'`. Los
+registros sin esa trazabilidad permanecen fuera de `v_item_bank_active` aunque
+conserven compatibilidad histórica en `item_bank`.
 
 ### Flags derivados del contrato de lectura
-- `classification_bucket text null` — override transitorio (`legacy` | `blocked`) cuando aplique
-- `classification_reason text null` — motivo operativo del override
+- `classification_bucket text null`
+- `classification_reason text null`
 - `is_legacy boolean`
 - `is_blocked boolean`
 - `read_state text`
@@ -94,7 +133,7 @@ Se respetan los ya existentes en `item_bank.status`:
 - `archived`
 
 ### Estado derivado de lectura (`read_state`)
-Valores propuestos:
+Valores:
 - `active`
 - `inactive`
 - `legacy`
@@ -115,154 +154,90 @@ Un ítem entra al banco activo solo si cumple **todo**:
 
 ---
 
-## 3. Contrato estable de lectura propuesto
+## 3. Contrato estable de lectura actual
 
-## Opción recomendada
-Crear una vista estable:
+La vista estable para el banco activo histórico es:
+
 - `public.v_item_bank_active`
 
-### Propósito
-Ser la única fuente de lectura funcional para:
+Su propósito es ser la fuente de lectura funcional para:
 - selector de siguiente ítem
 - detalle de ítem en sesión
-- futuros listados operativos del banco activo
+- listados operativos del banco activo
 
-### Definición final propuesta para migración
-> Artefacto ejecutable: `supabase/migrations/0008_create_v_item_bank_active.sql`
-
-```sql
-create or replace view public.v_item_bank_active
-with (security_invoker = true) as
-select
-  ib.id,
-  ib.content_id,
-  ib.slug,
-  ib.title,
-  ib.area,
-  ib.subarea,
-  ib.competency,
-  ib.exam_type,
-  ib.item_type,
-  ib.difficulty,
-  ib.stem,
-  ib.correct_option,
-  ib.explanation,
-  ib.version,
-  ib.status,
-  ib.is_active,
-  ib.source_type,
-  ib.source_path,
-  ib.created_at,
-  ib.updated_at,
-  ib.thematic_nucleus_id,
-  tn.code as thematic_nucleus_code,
-  tn.name as thematic_nucleus_name,
-  tn.is_universal as thematic_nucleus_is_universal,
-  coalesce(tn.is_active, false) as thematic_nucleus_is_active,
-  null::text as classification_bucket,
-  null::text as classification_reason,
-  false as is_legacy,
-  false as is_blocked,
-  case
-    when ib.status = 'published'
-      and ib.is_active = true
-      and ib.thematic_nucleus_id is not null
-      and coalesce(tn.is_active, false) = true
-      then 'active'
-    else 'inactive'
-  end::text as read_state
-from public.item_bank ib
-left join public.thematic_nuclei tn
-  on tn.id = ib.thematic_nucleus_id;
-```
-
-Notas de implementación:
-- `security_invoker = true` evita que la vista amplíe acceso por encima de la RLS vigente.
-- `classification_bucket` y `classification_reason` quedan reservadas para clasificaciones editoriales futuras.
-- `thematic_nucleus_is_active` deja visible el último gate antes de `read_state = 'active'`.
-- La ausencia de `target_role`, `target_position` y `applicant_profile` en esta vista no significa que la capa editorial no exista; solo significa que aún no es parte del contrato mínimo de runtime.
+El artefacto ejecutable vigente está en las migraciones del repositorio. La
+seguridad y la semántica reales se verifican contra el SQL aplicado, no solo contra
+este documento.
 
 ### Regla operativa de uso
-Toda lectura de producto debe agregar:
-```sql
-where read_state = 'active'
+Toda lectura de producto debe filtrar el estado activo correspondiente y no leer
+`item_bank` crudo como fuente funcional por defecto.
+
+---
+
+## 4. Targeting futuro sin romper el contrato
+
+Cuando se autorice la evolución de selección por destinatario, el flujo recomendado es:
+
+```text
+usuario elige OPEC
+    ↓
+resolver perfil/cargo canónico
+    ↓
+resolver familia
+    ↓
+combinar preguntas:
+  OPEC-specific
+  + perfil/cargo
+  + comunes de familia
+    ↓
+aplicar filtros temáticos, dificultad y estrategia adaptativa
 ```
 
----
+Si el usuario elige directamente un cargo/perfil, se usan perfil + familia.
 
-## 4. Contrato mínimo de adopción en código
+Reglas:
 
-### Backend
-Cambios mínimos recomendados:
-1. `src/domain/item-selection/select-next-item.ts`
-   - leer desde `v_item_bank_active`
-   - filtrar `read_state = 'active'`
-   - mantener filtros actuales de `area`, `competency` y `thematic_nucleus_id`
-2. `src/app/api/session/item/route.ts`
-   - leer metadatos del ítem desde `v_item_bank_active`
-   - seguir leyendo `item_options` aparte por ahora
-3. `src/app/api/session/advance/route.ts`
-   - leer `correct_option`, `difficulty`, `area`, `competency` desde `v_item_bank_active`
-
-### Frontend
-Sin cambio arquitectónico mayor:
-- sigue consumiendo `/api/session/start`, `/api/session/item`, `/api/session/advance`
-- deja de depender indirectamente de `item_bank` crudo porque el backend ya lee la vista estable
-
-### Escritura
-- `upsert_content_item(...)` escribe opciones, `source_path` y `editorial_metadata` de forma atómica en `item_bank`.
-- La vista es solo capa de lectura y expone el metadato editorial para consumidores autorizados.
+- no duplicar una pregunta por cada OPEC;
+- no convertir cargo/OPEC en `area`, `topic` o `competency`;
+- no usar arrays o texto libre como sustituto permanente de relaciones normalizadas;
+- no inferir perfil/OPEC automáticamente desde el texto de una pregunta;
+- preservar la frontera pre/post respuesta y no ampliar acceso a claves por los joins de targeting.
 
 ---
 
-## 5. Dónde debe vivir esta definición
+## 5. Dónde vive cada definición
 
-### Canonical
+### Runtime activo Legacy/Beta/V3
 - `docs/database/active-question-bank-contract.md`
 
-### Referencias puente
-- `docs/database/schema.md` — resumen del modelo y referencia al contrato activo
-- `docs/api/contracts.md` — declarar que los endpoints de sesión leen del contrato activo, no de `item_bank` directo
-- `docs/database/content-model.md` — declarar que la capa editorial Markdown incluye metadatos secundarios por perfil aunque el contrato mínimo activo aún no los use
+### V4
+- `docs/database/question-bank-v4-contract.md`
+- `docs/database/prd-question-bank-v4-supabase.md`
 
-### Razón
-Este diseño es principalmente un **contrato de lectura de datos**, no una feature de UI ni una migración editorial completa.
+### Conocimiento + perfiles/cargos + OPEC
+- `docs/03-architecture/question-bank-knowledge-targeting-architecture.md`
+- `content/knowledge-base/README.md`
+- `content/targeting/README.md`
+
+### Modelo de contenido
+- `docs/database/content-model.md`
 
 ---
 
 ## 6. Adopción sin romper el producto actual
 
-### Paso 1
-Documentar y aprobar este contrato.
-
-### Paso 2
-Aplicar la migración pequeña `supabase/migrations/0008_create_v_item_bank_active.sql` para crear la vista `public.v_item_bank_active`.
-
-### Paso 3
-Cambiar solo las lecturas críticas actuales:
-- selector
-- `session/item`
-- `session/advance`
-
-### Paso 4
-Mantener `item_bank` como tabla base de escritura durante la transición.
-
-### Paso 5
-Más adelante reemplazar el CTE `classified_content` por una tabla editorial explícita, por ejemplo:
-- `public.item_bank_read_overrides`
-
-### Paso 6
-Si la segunda capa por perfiles demuestra valor estable en producto, definir una adopción explícita y gobernada para esos metadatos en la capa de lectura activa.
-
----
+1. Mantener el contrato activo existente hasta que una migración explícita diga lo contrario.
+2. Consolidar primero catálogo y documentación de familias/perfiles/OPEC.
+3. Inventariar la biblioteca de conocimiento sin duplicar fuentes.
+4. Crear las relaciones de targeting mediante migraciones nuevas y monotónicas.
+5. Backfill de reactivos solo con evidencia editorial revisada.
+6. Añadir el targeting al selector detrás de pruebas y rollout controlado.
+7. Mantener rollback por desactivación/configuración, no por borrado de datos.
 
 ## 7. Recomendación final
 
-La solución mínima y segura es:
-- **no tocar la arquitectura masiva**
-- **no migrar todavía el modelo editorial completo**
-- **sí introducir una vista de lectura estable del banco activo**
-- **sí centralizar ahí la exclusión de legado y bloqueados**
-- **sí documentar por separado que la capa editorial del banco ya soporta segmentación secundaria por perfil**
-
-Con eso, la app deja de depender del estado accidental de `item_bank` y gana un puente claro entre banco cargado y consumo seguro.
+La solución segura es mantener estable la lectura actual mientras se construye la
+capa normalizada de conocimiento y targeting. La nueva arquitectura permite crecer
+a otras OPEC y cargos sin partir el banco en silos, sin duplicar preguntas y sin
+confundir perfil profesional con taxonomía temática.
