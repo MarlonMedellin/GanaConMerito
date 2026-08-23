@@ -1,4 +1,10 @@
-import { after, NextResponse } from "next/server";
+import { after } from "next/server";
+import { API_ERROR_CODES } from "@/lib/api/error-codes";
+import {
+  beginRequestObservation,
+  jsonWithRequestId,
+  logRequestOutcome,
+} from "@/lib/api/canary-observability";
 import { requireOwnedSession } from "../../../../lib/supabase/guards";
 import { buildTutorEvidence } from "../../../../lib/tutor/tutor-evidence-builder";
 import { DeterministicTutorProvider } from "../../../../lib/tutor/providers/deterministic-tutor-provider";
@@ -8,22 +14,41 @@ import { persistTutorTurnTrace } from "../../../../lib/tutor/tutor-trace-reposit
 const tutor = new DeterministicTutorProvider();
 
 export async function POST(request: Request) {
+  const observation = beginRequestObservation(request, "/api/tutor/turn");
+  let sessionId = "";
+  let itemId = "";
+
   try {
     const body = await request.json();
-    const sessionId = typeof body.sessionId === "string" ? body.sessionId : "";
-    const itemId = typeof body.itemId === "string" ? body.itemId : "";
+    sessionId = typeof body.sessionId === "string" ? body.sessionId : "";
+    itemId = typeof body.itemId === "string" ? body.itemId : "";
     const userMessage = typeof body.message === "string" ? body.message.trim() : "";
 
     if (!sessionId || !itemId || !userMessage) {
-      return NextResponse.json(
+      logRequestOutcome(observation, {
+        event: "canary.tutor.invalid_body",
+        status: 400,
+        errorCode: API_ERROR_CODES.VALIDATION_INVALID_BODY,
+        sessionId,
+        itemId,
+      });
+      return jsonWithRequestId(
         { error: "sessionId, itemId y message son obligatorios" },
-        { status: 400 },
+        400,
+        observation,
       );
     }
 
     const auth = await requireOwnedSession({ sessionId });
     if (!auth.ok) {
-      return NextResponse.json({ error: auth.error }, { status: auth.status });
+      logRequestOutcome(observation, {
+        event: "canary.tutor.auth_or_ownership_failed",
+        status: auth.status,
+        errorCode: auth.status === 401 ? API_ERROR_CODES.AUTH_UNAUTHORIZED : API_ERROR_CODES.SESSION_NOT_FOUND,
+        sessionId,
+        itemId,
+      });
+      return jsonWithRequestId({ error: auth.error }, auth.status, observation);
     }
 
     const { supabase, profile } = auth;
@@ -49,18 +74,33 @@ export async function POST(request: Request) {
       trace: result.trace,
     });
 
-    if (!traceWrite.ok) {
-      console.warn("[Tutor Trace Persist Warning]:", traceWrite.error.message);
-    }
-
     after(() => runTutorShadow({ input: tutorInput, deterministic: result }));
 
-    return NextResponse.json(result, { status: 200 });
+    logRequestOutcome(observation, {
+      event: "canary.tutor.completed",
+      status: 200,
+      sessionId,
+      itemId,
+      extra: {
+        degraded: result.trace.degraded,
+        tracePersisted: traceWrite.ok,
+        intent: result.trace.intent,
+      },
+    });
+    return jsonWithRequestId(result, 200, observation);
   } catch (error) {
-    console.error("[Tutor API Error]:", error);
-    return NextResponse.json(
+    logRequestOutcome(observation, {
+      event: "canary.tutor.failed",
+      status: 500,
+      errorCode: API_ERROR_CODES.INTERNAL_DEPENDENCY_FAILED,
+      sessionId,
+      itemId,
+      error,
+    });
+    return jsonWithRequestId(
       { error: "Error al procesar la solicitud del tutor" },
-      { status: 500 },
+      500,
+      observation,
     );
   }
 }
