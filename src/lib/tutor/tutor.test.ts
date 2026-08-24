@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert";
 import { TutorOrchestrator } from "./tutor-orchestrator";
+import { getTutorGuidedActions } from "../../components/tutor/tutor-interface";
 import { selectAnsweredTurnForItem } from "./tutor-evidence-builder";
 import type { TutorEvidence, TutorTurnRequest } from "../../types/tutor-turn";
 
@@ -183,6 +184,19 @@ test("TutorOrchestrator keeps guided actions compatible with current intent dete
 
   assert.strictEqual(feedback.output.intent, "explain_feedback");
   assert.strictEqual(feedback.output.canRevealCorrectAnswer, true);
+});
+
+test("Tutor guided actions separate pre-answer help from post-answer feedback", () => {
+  const preAnswerActions = getTutorGuidedActions(false).join(" ");
+  const postAnswerActions = getTutorGuidedActions(true).join(" ");
+
+  assert.match(preAnswerActions, /Dame una pista/);
+  assert.match(preAnswerActions, /comparar opciones/);
+  assert.doesNotMatch(preAnswerActions, /respuesta correcta|feedback|opción no funciona/i);
+
+  assert.match(postAnswerActions, /respuesta correcta/);
+  assert.match(postAnswerActions, /opción no funciona/);
+  assert.doesNotMatch(postAnswerActions, /sin decir cuál es la correcta/i);
 });
 
 test("selectAnsweredTurnForItem chooses the matching answered turn for the item", () => {

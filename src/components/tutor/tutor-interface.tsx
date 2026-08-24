@@ -6,18 +6,27 @@ import { TutorOutput } from "@/types/tutor-turn";
 interface TutorInterfaceProps {
   sessionId: string;
   currentItemId: string;
+  answered?: boolean;
   fallbackMessage?: string;
 }
 
-export function TutorInterface({ sessionId, currentItemId, fallbackMessage }: TutorInterfaceProps) {
-  const guidedActions = [
+export function getTutorGuidedActions(answered: boolean) {
+  return answered ? [
+    "¿Por qué mi opción no funciona?",
+    "Explícame la respuesta correcta",
+    "¿Qué debo aprender?",
+    "Dame otra forma de entenderlo",
+    "¿Qué debería practicar ahora?",
+  ] : [
     "Dame una pista",
-    "Explícame esta pregunta",
-    "Compara las opciones sin decir cuál es la correcta",
-    "Analiza mi justificación",
-    "Explícame el feedback",
-    "Qué tema debo reforzar",
+    "Ayúdame a entender qué me preguntan",
+    "Ayúdame a comparar opciones",
+    "¿Qué concepto debo recordar?",
   ];
+}
+
+export function TutorInterface({ sessionId, currentItemId, answered = false, fallbackMessage }: TutorInterfaceProps) {
+  const guidedActions = getTutorGuidedActions(answered);
   const [isOpen, setIsOpen] = useState(true);
   const [message, setMessage] = useState("");
   const [lastResponse, setLastResponse] = useState<TutorOutput | null>(null);
@@ -112,7 +121,9 @@ export function TutorInterface({ sessionId, currentItemId, fallbackMessage }: Tu
           <div className="avatar-chip avatar-mini">T</div>
           <div>
             <p className="eyebrow m-0">Tutor GCM</p>
-            <p className="body-sm m-0">¿Quieres orientación para resolver esta pregunta?</p>
+            <p className="body-sm m-0">
+              {answered ? "Revisa el feedback con apoyo pedagógico." : "Pide orientación sin recibir la respuesta."}
+            </p>
           </div>
         </div>
         <span className="status-pill premium">Abrir tutor</span>
@@ -131,7 +142,9 @@ export function TutorInterface({ sessionId, currentItemId, fallbackMessage }: Tu
           <div className="avatar-chip avatar-mini">T</div>
           <div>
             <p className="eyebrow m-0">Tutor GCM</p>
-            <h3 className="section-title tutor-headline">Guía paso a paso para esta pregunta</h3>
+            <h3 className="section-title tutor-headline">
+              {answered ? "Entiende el resultado" : "Guía para decidir mejor"}
+            </h3>
           </div>
         </div>
         <button
@@ -144,7 +157,9 @@ export function TutorInterface({ sessionId, currentItemId, fallbackMessage }: Tu
       </div>
 
       <p className="body-sm m-0">
-        Usa una acción guiada si necesitas apoyo puntual. También puedes escribir tu duda en texto libre; el tutor orienta sin revelar la clave antes de que respondas.
+        {answered
+          ? "Usa una acción guiada para entender el feedback. También puedes escribir tu duda en texto libre."
+          : "Usa una acción guiada si necesitas apoyo puntual. También puedes escribir tu duda; el tutor orienta sin revelar la clave."}
       </p>
 
       <div className="tutor-guided-wrap">
@@ -202,7 +217,9 @@ export function TutorInterface({ sessionId, currentItemId, fallbackMessage }: Tu
             id="tutor-gcm-message"
             data-testid="tutor-gcm-message"
             className="text-area text-area-compact"
-            placeholder="Ejemplo: Estoy entre dos opciones. ¿Qué criterio puedo usar para compararlas sin ver la respuesta?"
+            placeholder={answered
+              ? "Ejemplo: ¿Por qué mi opción no responde bien al enunciado?"
+              : "Ejemplo: Estoy entre dos opciones. ¿Qué criterio puedo usar para compararlas sin ver la respuesta?"}
             value={message}
             onChange={(event) => setMessage(event.target.value)}
             disabled={loading}
