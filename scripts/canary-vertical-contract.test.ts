@@ -39,11 +39,12 @@ test("dashboard surfaces auth and ownership failures instead of empty 200 respon
   assert.match(dashboardRoute, /observedJson/);
 });
 
-test("dashboard Canary copy does not overclaim trend, percentile or psychometric calibration", () => {
+test("dashboard student copy hides internal heuristics and does not overclaim trends", () => {
   assert.match(dashboardPage, /Aún no hay una serie temporal suficiente para mostrar tendencia/);
-  assert.match(dashboardPage, /Señal de razonamiento/);
-  assert.match(dashboardPage, /Índice orientativo/);
-  assert.match(dashboardPage, /no equivalen a psicometría calibrada/);
+  assert.doesNotMatch(dashboardPage, /Señal de razonamiento/);
+  assert.doesNotMatch(dashboardPage, /Índice orientativo/);
+  assert.doesNotMatch(dashboardPage, /Session ID/);
+  assert.doesNotMatch(dashboardPage, /TutorTraceSummaryCard/);
   assert.match(dashboardPage, /Detalle por área y competencia/);
   assert.doesNotMatch(dashboardPage, /Nivel estimado/);
   assert.match(dashboardMetrics, /canShowTrend: false/);
@@ -51,24 +52,29 @@ test("dashboard Canary copy does not overclaim trend, percentile or psychometric
   assert.doesNotMatch(dashboardMetrics, /latest > previous/);
 });
 
-test("onboarding makes active areas optional and identifies provisional Canary OPEC", () => {
-  assert.match(onboardingForm, /Cargo \/ referencia OPEC Canary \(opcional\)/);
-  assert.match(onboardingForm, /provisionales para prueba Canary/);
+test("onboarding makes active areas optional without exposing Canary labels", () => {
+  assert.match(onboardingForm, /Cargo \/ referencia OPEC \(opcional\)/);
+  assert.doesNotMatch(onboardingForm, /Canary/);
   assert.doesNotMatch(onboardingForm, /OPEC verificada/);
   assert.match(onboardingForm, /Áreas declaradas \(opcional\)/);
-  assert.match(onboardingForm, /no filtran ni priorizan las preguntas/);
+  assert.match(onboardingForm, /No filtran ni priorizan las preguntas/);
   assert.doesNotMatch(onboardingForm, /!hasActiveAreas/);
   assert.match(onboardingRoute, /\.default\(\[\]\)/);
   assert.match(onboardingRoute, /onboarding_completed: true/);
   assert.doesNotMatch(onboardingStatus, /&& hasActiveAreas/);
 });
 
-test("practice hides numeric editorial difficulty and heuristic score cards", () => {
-  assert.match(practiceSession, /Dificultad editorial estimada/);
+test("practice hides editorial metadata and heuristic score cards", () => {
+  assert.doesNotMatch(practiceSession, /Dificultad editorial estimada/);
+  assert.doesNotMatch(practiceSession, /Mapa temático/);
+  assert.doesNotMatch(practiceSession, /Tarea esperada/);
+  assert.doesNotMatch(practiceSession, /Intención cognitiva/);
+  assert.doesNotMatch(practiceSession, /Sesión \{session\.sessionId/);
+  assert.doesNotMatch(practiceSession, /Estado: \{feedback\?\.currentState/);
   assert.doesNotMatch(practiceSession, /Dificultad \$\{item\.difficulty\.toFixed\(2\)\}/);
-  assert.match(practiceSession, /no representan mediciones psicométricas calibradas/);
-  assert.doesNotMatch(practiceSession, /metric-label">Razonamiento</);
-  assert.doesNotMatch(practiceSession, /metric-label">Competencia</);
+  assert.doesNotMatch(practiceSession, /no representan mediciones psicométricas calibradas/);
+  assert.doesNotMatch(practiceSession, /metric-label">Razonamiento/);
+  assert.doesNotMatch(practiceSession, /metric-label">Competencia/);
 });
 
 test("common V4 technical labels have human-readable representations", () => {

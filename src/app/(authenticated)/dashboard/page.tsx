@@ -5,7 +5,6 @@ import {
 } from "@/lib/dashboard/summary";
 import { requireAuthenticatedUser } from "@/lib/supabase/guards";
 import { formatAreaCompetency, formatTechnicalLabel } from "@/lib/ui/format-label";
-import { TutorTraceSummaryCard } from "@/components/tutor/tutor-trace-summary-card";
 
 interface DashboardPageProps {
   searchParams?: Promise<{
@@ -41,14 +40,11 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
   const hasWeakestConclusion = activeSummary.weakestCompetencies.length > 0;
   const strongestLabel = hasStrongestConclusion ? "Fortaleza principal" : "Fortaleza aún no concluyente";
   const weakestLabel = hasWeakestConclusion ? "Refuerzo principal" : "Refuerzo sugerido inicial";
-  const attemptsCopy =
-    activeSummary.signalLevel === "usable_signal"
-      ? "Hay una muestra útil para orientar la siguiente práctica, sin convertirla en una medición calibrada."
-      : "Muestra útil para observar, pero todavía corta para cerrar conclusiones fuertes.";
+  const attemptsCopy = "Cuenta de práctica registrada para esta vista.";
   const trendCopy = "Aún no hay una serie temporal suficiente para mostrar tendencia.";
   const contextCopy = isSessionView
-    ? `Session ID: ${sessionId}. ${activeSummary.signalDescription}`
-    : activeSummary.signalDescription;
+    ? "Vista de la sesión seleccionada."
+    : "Vista acumulada de tu actividad registrada.";
   const activeRowsByCompetency = new Map(activeRows.map((row) => [row.competency, row]));
   const topStrong = activeSummary.strongestCompetencies
     .map((competency) => activeRowsByCompetency.get(competency))
@@ -65,7 +61,7 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
         <p className="eyebrow">Métricas</p>
         <h1 className="display-title">Actividad y señales útiles para orientar la práctica.</h1>
         <p className="body-lg">
-          Esta Canary prioriza intentos, precisión y patrones preliminares. Las señales internas son orientativas y no equivalen a psicometría calibrada.
+          Esta vista prioriza intentos y precisión observada. Las conclusiones fuertes requieren más evidencia.
         </p>
         <div className="inline-cluster">
           <span className={`segment-pill ${!isSessionView ? "active" : ""}`}>Histórico</span>
@@ -85,16 +81,6 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
           <strong className="metric-value">{activeSummary.totalAttempts}</strong>
           <span className="subtle">{attemptsCopy}</span>
         </article>
-        <article className="metric-card">
-          <span className="metric-label">Señal de razonamiento</span>
-          <strong className="metric-value">{activeSummary.avgReasoningScore}</strong>
-          <span className="subtle">Índice heurístico interno para orientar la práctica; no es una escala calibrada.</span>
-        </article>
-        <article className="metric-card">
-          <span className="metric-label">Índice orientativo</span>
-          <strong className="metric-value">{activeSummary.estimatedLevel}</strong>
-          <span className="subtle">Señal interna de desempeño acumulado; no representa nivel psicométrico.</span>
-        </article>
       </section>
 
       <section className="two-column-grid">
@@ -104,7 +90,6 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
               <p className="eyebrow">Lectura de actividad</p>
               <h2 className="section-title">{isSessionView ? "Sesión en contexto" : "Actividad histórica acumulada"}</h2>
             </div>
-            <span className="status-pill premium">{activeSummary.signalLabel}</span>
           </div>
           <p className="body-sm">{contextCopy}</p>
           <p className="subtle">{trendCopy}</p>
@@ -152,8 +137,7 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
       <section className="two-column-grid">
         <article className="list-card">
           <div className="inline-cluster cluster-between">
-            <h2 className="section-title panel-title-md">Áreas con mejor señal</h2>
-            <span className="status-pill success">{topStrong.length > 0 ? "Fuerte" : "Inicial"}</span>
+            <h2 className="section-title panel-title-md">Áreas con mejores resultados observados</h2>
           </div>
           {topStrong.length > 0 ? topStrong.map((row) => (
             <div key={`${row.area}-${row.competency}`} className="list-row">
@@ -165,7 +149,6 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
         <article className="list-card">
           <div className="inline-cluster cluster-between">
             <h2 className="section-title panel-title-md">Focos de refuerzo</h2>
-            <span className="status-pill warning">{topWeak.length > 0 ? "Atención" : "Prudente"}</span>
           </div>
           {topWeak.length > 0 ? topWeak.map((row) => (
             <div key={`${row.area}-${row.competency}`} className="list-row">
@@ -175,9 +158,6 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
           )) : <p className="subtle">Todavía no hay señal suficiente para priorizar un refuerzo claro.</p>}
         </article>
       </section>
-
-      <TutorTraceSummaryCard />
-
       <section className="surface-card panel-compact">
         <div className="inline-cluster cluster-between">
           <div>
