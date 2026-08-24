@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Question Bank Review · GanaConMerito</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <strong>GanaConMerito</strong>
+      <span>Question Bank Review</span>
+    </div>
+    <span id="status">Cargando banco…</span>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <label for="folderSelect">Carpeta</label>
+      <select id="folderSelect"></select>
+
+      <label for="questionSelect">Pregunta</label>
+      <select id="questionSelect"></select>
+
+      <div class="counter" id="counter">—</div>
+
+      <div class="nav-buttons">
+        <button id="prevBtn" type="button">← Anterior</button>
+        <button id="nextBtn" type="button">Siguiente →</button>
+      </div>
+
+      <label for="jumpInput">Ir a ID</label>
+      <div class="jump">
+        <input id="jumpInput" placeholder="DOC-000001">
+        <button id="jumpBtn" type="button">Ir</button>
+      </div>
+
+      <p class="hint">Atajos: ← → para cambiar de pregunta.</p>
+    </aside>
+
+    <section class="content">
+      <article id="questionCard" class="card loading">Cargando pregunta…</article>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
