@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import "./globals.css";
-
+import "./template-v2.css";
 
 export const metadata = {
   title: "GanaConMerito",
