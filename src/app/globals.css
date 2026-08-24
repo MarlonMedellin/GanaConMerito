@@ -216,6 +216,28 @@ pre {
 .tutor-minimize { background: none; border: none; cursor: pointer; padding: 4px; }
 .tutor-guided-wrap { display: grid; gap: 8px; }
 .tutor-guided-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.rationale-disclosure {
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  background: rgba(248, 251, 255, 0.72);
+  padding: 14px 16px;
+}
+
+.rationale-disclosure summary {
+  cursor: pointer;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.rationale-text-area {
+  min-height: 96px;
+}
+
+.practice-feedback {
+  scroll-margin-top: 96px;
+}
+
 .tutor-response-meta { display: flex; justify-content: flex-end; margin-top: 8px; }
 .subtle-xs { font-size: 10px; }
 .subtle-xxs { font-size: 11px; }
@@ -1193,7 +1215,12 @@ pre {
 
 .option-list-strong .option-card { border-width: 1.4px; }
 .option-list-strong .option-card:hover { box-shadow: 0 10px 18px rgba(37, 99, 235, 0.1); }
-.tutor-zone .tutor-panel { border: 1px solid #d8e5f5; border-radius: 18px; }
+.tutor-zone .tutor-panel {
+  border: 1px solid #d8e5f5;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #f8fbff, #ffffff);
+  box-shadow: 0 10px 22px rgba(37, 99, 235, 0.07);
+}
 .tutor-chip { width: 100%; text-align: left; }
 .tutor-head-main-open { gap: 12px; }
 .tutor-feedback-card { margin: 0; background: var(--surface-secondary); border: 1px solid var(--border-subtle); }
@@ -1265,11 +1292,35 @@ pre {
   }
 
   .practice-sticky {
-    position: sticky;
-    bottom: 88px;
+    position: static;
     z-index: 40;
     padding: 10px 0 8px;
     margin-top: 12px;
-    background: linear-gradient(180deg, transparent, rgba(248, 251, 255, 0.96) 46%);
+    background: transparent;
+  }
+
+  .tutor-panel {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .tutor-head {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .tutor-guided-list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .guided-chip {
+    width: 100%;
+    text-align: left;
+    border-radius: 14px;
+  }
+
+  .rationale-disclosure {
+    padding: 12px 14px;
   }
 }

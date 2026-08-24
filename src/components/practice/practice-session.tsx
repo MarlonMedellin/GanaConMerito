@@ -285,7 +285,9 @@ export function PracticeSession() {
           <div className="practice-panel-header practice-panel-header-strong mb-24">
             <div>
               <p className="eyebrow">Práctica</p>
-              <h2 className="section-title panel-title-sm">Responde la pregunta</h2>
+              <h2 className="section-title panel-title-sm">
+                {hasFeedback ? "Revisa tu respuesta" : "Lee, decide y pide ayuda si la necesitas"}
+              </h2>
             </div>
           </div>
 
@@ -317,35 +319,10 @@ export function PracticeSession() {
             })}
           </div>
 
-          <div className="form-field mt-24">
-            <label className="field-label" htmlFor="practice-rationale">Justificación opcional</label>
-            <textarea
-              id="practice-rationale"
-              className="text-area"
-              value={userRationale}
-              onChange={(event) => setUserRationale(event.target.value)}
-              placeholder="Explica brevemente por qué elegiste esa respuesta"
-              rows={5}
-              disabled={loading || hasFeedback}
-            />
-          </div>
-
-          <div className="practice-sticky">
-            {feedback && pendingNextItemId ? (
-              <button onClick={handleContinue} className="primary-button" disabled={loading}>
-                {loading ? "Cargando..." : "Siguiente pregunta"}
-              </button>
-            ) : !feedback ? (
-              <button onClick={handleSubmitAnswer} className="primary-button" disabled={loading || !selectedOption}>
-                {loading ? "Enviando..." : "Responder"}
-              </button>
-            ) : null}
-          </div>
-
           {feedback ? (
-            <div className={`feedback-card ${feedback.evaluation.isCorrect ? "success" : "error"} mt-24`}>
+            <div className={`feedback-card ${feedback.evaluation.isCorrect ? "success" : "error"} practice-feedback mt-24`}>
               <div className="inline-cluster cluster-between">
-                <h3 className="m-0">{feedback.evaluation.isCorrect ? "Respuesta correcta" : "Respuesta enviada"}</h3>
+                <h3 className="m-0">{feedback.evaluation.isCorrect ? "Has acertado esta pregunta." : "Respuesta registrada."}</h3>
               </div>
               <p className="body-sm m-0">{feedback.feedbackText}</p>
               <p className="body-sm m-0">
@@ -367,12 +344,43 @@ export function PracticeSession() {
             </div>
           ) : null}
 
-          <div className="mt-24 mb-24 tutor-zone">
+          <div className="mt-24 tutor-zone">
             <TutorInterface
               sessionId={session?.sessionId ?? ""}
               currentItemId={item.id}
+              answered={hasFeedback}
               fallbackMessage={feedback?.feedbackText}
             />
+          </div>
+
+          {!hasFeedback ? (
+            <details className="rationale-disclosure mt-24">
+              <summary>Agregar justificación opcional</summary>
+              <div className="form-field mt-14">
+                <label className="field-label" htmlFor="practice-rationale">Justificación opcional</label>
+                <textarea
+                  id="practice-rationale"
+                  className="text-area rationale-text-area"
+                  value={userRationale}
+                  onChange={(event) => setUserRationale(event.target.value)}
+                  placeholder="Explica brevemente por qué elegiste esa respuesta"
+                  rows={3}
+                  disabled={loading}
+                />
+              </div>
+            </details>
+          ) : null}
+
+          <div className="practice-sticky">
+            {feedback && pendingNextItemId ? (
+              <button onClick={handleContinue} className="primary-button" disabled={loading}>
+                {loading ? "Cargando..." : "Siguiente pregunta"}
+              </button>
+            ) : !feedback ? (
+              <button onClick={handleSubmitAnswer} className="primary-button" disabled={loading || !selectedOption}>
+                {loading ? "Enviando..." : "Responder"}
+              </button>
+            ) : null}
           </div>
         </article>
       ) : null}
