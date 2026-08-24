@@ -281,108 +281,117 @@ export function PracticeSession() {
       ) : null}
 
       {item ? (
-        <article className="surface-card practice-workspace">
-          <div className="practice-panel-header practice-panel-header-strong mb-24">
-            <div>
-              <p className="eyebrow">Práctica</p>
-              <h2 className="section-title panel-title-sm">
-                {hasFeedback ? "Revisa tu respuesta" : "Lee, decide y pide ayuda si la necesitas"}
-              </h2>
-            </div>
-          </div>
-
-          {item.context ? <p className="body-sm practice-context">{item.context}</p> : null}
-          <p className="practice-stem">{item.stem}</p>
-
-          <div className="option-list option-list-strong">
-            {item.options.map((option) => {
-              const isSelected = selectedOption === option.key;
-              const className = [
-                "option-card",
-                isSelected ? "selected" : "",
-                feedback?.evaluation.isCorrect && isSelected ? "correct" : "",
-                feedback && !isSelected ? "dimmed" : "",
-              ].filter(Boolean).join(" ");
-
-              return (
-                <button
-                  key={option.key}
-                  type="button"
-                  className={className}
-                  onClick={() => !hasFeedback && setSelectedOption(option.key)}
-                  disabled={loading || hasFeedback}
-                >
-                  <span className="option-key">{option.key}</span>
-                  <span>{option.text}</span>
-                </button>
-              );
-            })}
-          </div>
-
-          {feedback ? (
-            <div className={`feedback-card ${feedback.evaluation.isCorrect ? "success" : "error"} practice-feedback mt-24`}>
-              <div className="inline-cluster cluster-between">
-                <h3 className="m-0">{feedback.evaluation.isCorrect ? "Has acertado esta pregunta." : "Respuesta registrada."}</h3>
+        <div className="practice-template-grid">
+          <article className="surface-card practice-workspace">
+            <div className="practice-panel-header practice-panel-header-strong mb-24">
+              <div>
+                <p className="eyebrow">Sesión</p>
+                <h2 className="section-title panel-title-sm">
+                  {hasFeedback ? "Revisa tu respuesta" : "Lee, decide y pide ayuda si la necesitas"}
+                </h2>
               </div>
-              <p className="body-sm m-0">{feedback.feedbackText}</p>
-              <p className="body-sm m-0">
-                Tu respuesta: {feedback.answerReview.selectedOption} · Clave: {feedback.answerReview.correctOption}
-              </p>
-              {feedback.answerReview.selectedExplanation ? (
-                <p className="subtle m-0">Sobre tu elección: {feedback.answerReview.selectedExplanation}</p>
-              ) : null}
-              {feedback.answerReview.correctExplanation ? (
-                <p className="subtle m-0">Fundamento de la clave: {feedback.answerReview.correctExplanation}</p>
-              ) : null}
-              {feedback.answerReview.learningNote ? (
-                <p className="subtle m-0">Para aprender: {feedback.answerReview.learningNote}</p>
-              ) : null}
-              {feedback.answerReview.sourceReference ? (
-                <p className="subtle m-0">Fuente: {feedback.answerReview.sourceReference}</p>
-              ) : null}
-              {feedback.evaluation.qualitativeFeedback ? <p className="subtle m-0">{feedback.evaluation.qualitativeFeedback}</p> : null}
+              <span className="session-count-pill">{session?.resumed ? "Retomada" : "En curso"}</span>
             </div>
-          ) : null}
 
-          {!hasFeedback ? (
-            <details className="rationale-disclosure mt-24">
-              <summary>Agregar justificación opcional</summary>
-              <div className="form-field mt-14">
-                <label className="field-label" htmlFor="practice-rationale">Justificación opcional</label>
-                <textarea
-                  id="practice-rationale"
-                  className="text-area rationale-text-area"
-                  value={userRationale}
-                  onChange={(event) => setUserRationale(event.target.value)}
-                  placeholder="Explica brevemente por qué elegiste esa respuesta"
-                  rows={3}
-                  disabled={loading}
-                />
+            <div className="practice-meta-strip mb-24" aria-label="Resumen de la práctica">
+              <span>Foco actual <strong>{item.competency ?? "Competencia evaluada"}</strong></span>
+              <span>Tipo <strong>{item.questionType ?? "Situacional"}</strong></span>
+              <span>Dominio <strong>{item.area ?? "Práctica"}</strong></span>
+            </div>
+
+            {item.context ? <p className="body-sm practice-context">{item.context}</p> : null}
+            <p className="practice-stem">{item.stem}</p>
+
+            <div className="option-list option-list-strong">
+              {item.options.map((option) => {
+                const isSelected = selectedOption === option.key;
+                const className = [
+                  "option-card",
+                  isSelected ? "selected" : "",
+                  feedback?.evaluation.isCorrect && isSelected ? "correct" : "",
+                  feedback && !isSelected ? "dimmed" : "",
+                ].filter(Boolean).join(" ");
+
+                return (
+                  <button
+                    key={option.key}
+                    type="button"
+                    className={className}
+                    onClick={() => !hasFeedback && setSelectedOption(option.key)}
+                    disabled={loading || hasFeedback}
+                  >
+                    <span className="option-key">{option.key}</span>
+                    <span>{option.text}</span>
+                  </button>
+                );
+              })}
+            </div>
+
+            {feedback ? (
+              <div className={`feedback-card ${feedback.evaluation.isCorrect ? "success" : "error"} practice-feedback mt-24`}>
+                <div className="inline-cluster cluster-between">
+                  <h3 className="m-0">{feedback.evaluation.isCorrect ? "Bien razonado." : "Revisa el criterio central."}</h3>
+                </div>
+                <p className="body-sm m-0">{feedback.feedbackText}</p>
+                <p className="body-sm m-0">
+                  Tu respuesta: {feedback.answerReview.selectedOption} · Clave: {feedback.answerReview.correctOption}
+                </p>
+                {feedback.answerReview.selectedExplanation ? (
+                  <p className="subtle m-0">Sobre tu elección: {feedback.answerReview.selectedExplanation}</p>
+                ) : null}
+                {feedback.answerReview.correctExplanation ? (
+                  <p className="subtle m-0">Fundamento de la clave: {feedback.answerReview.correctExplanation}</p>
+                ) : null}
+                {feedback.answerReview.learningNote ? (
+                  <p className="subtle m-0">Nota de aprendizaje: {feedback.answerReview.learningNote}</p>
+                ) : null}
+                {feedback.answerReview.sourceReference ? (
+                  <p className="subtle m-0">Fuente: {feedback.answerReview.sourceReference}</p>
+                ) : null}
+                {feedback.evaluation.qualitativeFeedback ? <p className="subtle m-0">{feedback.evaluation.qualitativeFeedback}</p> : null}
               </div>
-            </details>
-          ) : null}
-
-          <div className="practice-sticky">
-            {feedback && pendingNextItemId ? (
-              <button onClick={handleContinue} className="primary-button practice-action-button" disabled={loading}>
-                {loading ? "Cargando..." : "Siguiente pregunta"}
-              </button>
-            ) : !feedback ? (
-              <button onClick={handleSubmitAnswer} className="primary-button practice-action-button" disabled={loading || !selectedOption}>
-                {loading ? "Enviando..." : "Responder"}
-              </button>
             ) : null}
-          </div>
 
-          <div className="mt-24 tutor-zone">
+            {!hasFeedback ? (
+              <details className="rationale-disclosure mt-24">
+                <summary>Agregar justificación opcional</summary>
+                <div className="form-field mt-14">
+                  <label className="field-label" htmlFor="practice-rationale">Justificación opcional</label>
+                  <textarea
+                    id="practice-rationale"
+                    className="text-area rationale-text-area"
+                    value={userRationale}
+                    onChange={(event) => setUserRationale(event.target.value)}
+                    placeholder="Explica brevemente por qué elegiste esa respuesta"
+                    rows={3}
+                    disabled={loading}
+                  />
+                </div>
+              </details>
+            ) : null}
+
+            <div className="practice-sticky">
+              {feedback && pendingNextItemId ? (
+                <button onClick={handleContinue} className="primary-button practice-action-button" disabled={loading}>
+                  {loading ? "Cargando..." : "Siguiente pregunta"}
+                </button>
+              ) : !feedback ? (
+                <button onClick={handleSubmitAnswer} className="primary-button practice-action-button" disabled={loading || !selectedOption}>
+                  {loading ? "Enviando..." : "Responder"}
+                </button>
+              ) : null}
+            </div>
+          </article>
+
+          <aside className="tutor-zone">
             <TutorInterface
               sessionId={session?.sessionId ?? ""}
               currentItemId={item.id}
               answered={hasFeedback}
               fallbackMessage={feedback?.feedbackText}
             />
-          </div>
-        </article>
+          </aside>
+        </div>
       ) : null}
 
       {sessionEnded && sessionDashboardHref ? (
