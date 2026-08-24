@@ -1,7 +1,5 @@
-const OWNER = 'MarlonMedellin';
-const REPO = 'GanaConMerito';
-const REF = 'web_review_question';
-const ITEMS_ROOT = 'content/question-bank-v4/items/';
+const BANK_INDEX = './bank-index.json';
+const ITEMS_ROOT = './items/';
 
 const folderList = document.querySelector('#folderList');
 const folderCount = document.querySelector('#folderCount');
@@ -29,35 +27,17 @@ const pretty = value => String(value ?? '—').replaceAll('_', ' ');
 const questionId = item => item.name.replace(/\.json$/i, '');
 
 async function loadBank() {
-  const url = `https://api.github.com/repos/${OWNER}/${REPO}/git/trees/${encodeURIComponent(REF)}?recursive=1`;
-  const response = await fetch(url);
-  if (!response.ok) throw new Error(`No fue posible leer el banco (${response.status}).`);
+  const response = await fetch(BANK_INDEX, { cache: 'no-cache' });
+  if (!response.ok) throw new Error(`No fue posible leer el índice del banco (${response.status}).`);
 
   const data = await response.json();
   folders = {};
 
-  for (const item of data.tree || []) {
-    if (!item.path.startsWith(ITEMS_ROOT)) continue;
-
-    const relative = item.path.slice(ITEMS_ROOT.length);
-    if (!relative) continue;
-
-    if (item.type === 'tree') {
-      folders[relative] ||= [];
-      continue;
-    }
-
-    if (item.type !== 'blob' || !item.path.endsWith('.json')) continue;
-
-    const parts = relative.split('/');
-    if (parts.length < 2) continue;
-
-    const folder = parts.slice(0, -1).join('/');
-    (folders[folder] ||= []).push({
-      name: parts.at(-1),
-      path: item.path,
-      sha: item.sha
-    });
+  for (const entry of data.folders || []) {
+    folders[entry.name] = (entry.items || []).map(item => ({
+      name: item.name,
+      path: item.path
+    }));
   }
 
   Object.values(folders).forEach(items =>
@@ -192,8 +172,8 @@ async function renderQuestionList() {
 async function getQuestion(item) {
   if (loadedQuestions.has(item.path)) return loadedQuestions.get(item.path);
 
-  const raw = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${REF}/${item.path}`;
-  const response = await fetch(raw);
+  const localPath = ITEMS_ROOT + item.path.split('/').map(encodeURIComponent).join('/');
+  const response = await fetch(localPath);
   if (!response.ok) throw new Error(`No fue posible cargar ${item.name}.`);
 
   const question = await response.json();
@@ -314,7 +294,13 @@ function move(delta) {
 prevBtn.addEventListener('click', () => move(-1));
 nextBtn.addEventListener('click', () => move(1));
 
-searchInput.addEventListener('input', () => renderQuestionList());
+searchInput.addEventListener('input', async () => {
+  const items = folders[currentFolder] || [];
+  if (searchInput.value.trim()) {
+    await Promise.allSettled(items.map(item => getQuestion(item)));
+  }
+  await renderQuestionList();
+});
 
 searchInput.addEventListener('keydown', event => {
   if (event.key !== 'Enter' || filteredIndexes.length !== 1) return;
