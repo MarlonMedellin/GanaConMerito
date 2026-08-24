@@ -37,9 +37,18 @@ async function loadBank() {
   folders = {};
 
   for (const item of data.tree || []) {
-    if (item.type !== 'blob' || !item.path.startsWith(ITEMS_ROOT) || !item.path.endsWith('.json')) continue;
+    if (!item.path.startsWith(ITEMS_ROOT)) continue;
 
     const relative = item.path.slice(ITEMS_ROOT.length);
+    if (!relative) continue;
+
+    if (item.type === 'tree') {
+      folders[relative] ||= [];
+      continue;
+    }
+
+    if (item.type !== 'blob' || !item.path.endsWith('.json')) continue;
+
     const parts = relative.split('/');
     if (parts.length < 2) continue;
 
@@ -56,7 +65,7 @@ async function loadBank() {
   );
 
   const names = Object.keys(folders).sort((a, b) => a.localeCompare(b));
-  if (!names.length) throw new Error('No se encontraron preguntas JSON en content/question-bank-v4/items.');
+  if (!names.length) throw new Error('No se encontraron carpetas en content/question-bank-v4/items.');
 
   const total = Object.values(folders).reduce((sum, items) => sum + items.length, 0);
   status.textContent = `${total} preguntas · ${names.length} carpetas`;
@@ -92,7 +101,24 @@ async function selectFolder(folder, preferredId = null) {
   const items = folders[folder] || [];
   questionCount.textContent = `${items.length}`;
 
-  let preferredIndex = preferredId
+  if (!items.length) {
+    currentIndex = 0;
+    filteredIndexes = [];
+    questionList.innerHTML = '<div class="empty-list">Esta carpeta todavía no contiene preguntas JSON.</div>';
+    counter.textContent = '0 preguntas';
+    prevBtn.disabled = true;
+    nextBtn.disabled = true;
+    history.replaceState(null, '', `?folder=${encodeURIComponent(currentFolder)}`);
+    card.className = 'question-card';
+    card.innerHTML = `
+      <p class="question-id">${esc(currentFolder)}</p>
+      <h1 class="question-title">Carpeta sin preguntas</h1>
+      <div class="context-box">Esta carpeta existe en el banco, pero actualmente no contiene archivos de preguntas JSON.</div>
+    `;
+    return;
+  }
+
+  const preferredIndex = preferredId
     ? items.findIndex(item => questionId(item) === preferredId)
     : -1;
 
@@ -178,11 +204,7 @@ async function getQuestion(item) {
 async function loadCurrent() {
   const items = folders[currentFolder] || [];
   const item = items[currentIndex];
-  if (!item) {
-    card.className = 'question-card error';
-    card.textContent = 'Esta carpeta no contiene preguntas.';
-    return;
-  }
+  if (!item) return;
 
   const id = questionId(item);
   counter.textContent = `${currentIndex + 1} de ${items.length}`;
