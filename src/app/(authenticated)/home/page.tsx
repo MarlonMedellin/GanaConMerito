@@ -16,22 +16,24 @@ export default async function HomePage() {
   const { data: learningProfile } = profile
     ? await supabase
         .from("learning_profiles")
-        .select("onboarding_completed, active_areas, active_goal")
+        .select("onboarding_completed, active_goal, target_profile_code")
         .eq("profile_id", profile.id)
         .single()
     : { data: null };
 
   const onboardingComplete = isLearningProfileOnboardingComplete(learningProfile);
   const primaryHref = onboardingComplete ? "/practice" : "/onboarding";
-  const primaryLabel = onboardingComplete ? "Continuar práctica" : "Completar onboarding";
+  const primaryLabel = onboardingComplete ? "Practicar ahora" : "Completar configuración";
   const summary = await getDashboardSummaryForCurrentUser();
   const historical = summary.historical;
   const accuracy = historical.totalAttempts > 0
     ? Number(((historical.totalCorrect / historical.totalAttempts) * 100).toFixed(0))
     : 0;
   const progress = historical.totalAttempts > 0 ? Math.min(100, Math.max(8, accuracy)) : 18;
-  const activeGoal = learningProfile?.active_goal?.trim() || "Configura tu meta activa para priorizar la práctica correcta.";
-  const activeAreas = learningProfile?.active_areas?.length ? learningProfile.active_areas : [];
+  const activeGoal = learningProfile?.active_goal?.trim() || "Práctica lista para empezar.";
+  const observedResult = historical.totalAttempts > 0
+    ? `${historical.totalCorrect}/${historical.totalAttempts} respuestas correctas`
+    : "Sin práctica registrada";
 
   return (
     <>
@@ -47,12 +49,12 @@ export default async function HomePage() {
             <h2 className="section-title">
               {onboardingComplete 
                 ? activeGoal 
-                : "Completa tu configuración para empezar."}
+                : "Completa tu configuración inicial."}
             </h2>
             <p className="body-sm mt-8">
               {onboardingComplete
-                ? `Practicando en: ${activeAreas.length > 0 ? activeAreas.join(", ") : "áreas por definir"}.`
-                : "El sistema necesita saber tu perfil y metas para seleccionar las mejores preguntas para ti."}
+                ? "Entra a Practice para responder preguntas y usar Tutor GCM dentro de cada ejercicio."
+                : "Define un perfil y una meta breve para orientar la experiencia de práctica."}
             </p>
           </div>
           {!onboardingComplete && <span className="status-pill warning">Pendiente</span>}
@@ -86,15 +88,15 @@ export default async function HomePage() {
 
       <section className="two-column-grid">
         <article className="surface-card panel-compact">
-          <p className="eyebrow">Tu rendimiento</p>
-          <h2 className="section-title panel-title-sm">{historical.estimatedLevel}</h2>
-          <p className="subtle mt-4">Nivel estimado actual</p>
+          <p className="eyebrow">Actividad observada</p>
+          <h2 className="section-title panel-title-sm">{observedResult}</h2>
+          <p className="subtle mt-4">Basado solo en intentos guardados.</p>
           
           <div className="tutor-chip mt-20">
             <p className="body-sm m-0">
               {onboardingComplete 
-                ? "Listo para una nueva sesión de práctica." 
-                : "Configura tu perfil para activar el Tutor GCM."}
+                ? "Tutor GCM está disponible dentro de Practice cuando estés resolviendo una pregunta."
+                : "Completa la configuración para entrar a Practice."}
             </p>
           </div>
         </article>
