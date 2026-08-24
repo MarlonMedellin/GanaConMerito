@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { requireAuthenticatedProfile } from "../../../../lib/supabase/guards";
 
@@ -68,6 +69,11 @@ export async function POST(request: Request) {
   if (updateError) {
     return NextResponse.json({ error: updateError.message }, { status: 500 });
   }
+
+  revalidatePath("/home");
+  revalidatePath("/onboarding");
+  revalidatePath("/practice");
+  revalidatePath("/dashboard");
 
   return NextResponse.json({ ok: true }, { status: 200 });
 }

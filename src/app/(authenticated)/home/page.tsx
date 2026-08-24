@@ -3,6 +3,8 @@ import { getDashboardSummaryForCurrentUser } from "@/lib/dashboard/summary";
 import { isLearningProfileOnboardingComplete } from "@/lib/onboarding/status";
 import { requireAuthenticatedProfile } from "@/lib/supabase/guards";
 
+export const dynamic = "force-dynamic";
+
 export default async function HomePage() {
   const auth = await requireAuthenticatedProfile();
   if (!auth.ok) {
