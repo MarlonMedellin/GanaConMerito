@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { redirect } from "next/navigation";
 import { PracticeSession } from "@/components/practice/practice-session";
 import { isLearningProfileOnboardingComplete } from "@/lib/onboarding/status";
@@ -8,9 +7,7 @@ export const dynamic = "force-dynamic";
 
 export default async function PracticePage() {
   const auth = await requireAuthenticatedProfile();
-  if (!auth.ok) {
-    redirect("/onboarding");
-  }
+  if (!auth.ok) redirect("/onboarding");
 
   const { supabase, profile } = auth;
   const { data: learningProfile } = await supabase
@@ -19,15 +16,13 @@ export default async function PracticePage() {
     .eq("profile_id", profile.id)
     .single();
 
-  if (!isLearningProfileOnboardingComplete(learningProfile)) {
-    redirect("/onboarding");
-  }
+  if (!isLearningProfileOnboardingComplete(learningProfile)) redirect("/onboarding");
 
   return (
     <>
-      <section className="page-header practice-header" style={{ paddingBottom: 0 }}>
-        <p className="eyebrow">Práctica</p>
-        <h1 className="display-title">Pregunta, decide y revisa feedback.</h1>
+      <section className="page-header practice-header">
+        <p className="eyebrow">Sesión</p>
+        <h1 className="display-title">Piensa como te van a evaluar.</h1>
       </section>
       <PracticeSession />
     </>
