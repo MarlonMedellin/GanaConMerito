@@ -1,22 +1,36 @@
-# Question Bank Review
+# Revisión del banco de preguntas
 
-Visor estático y aislado para revisar las preguntas de `content/question-bank-v4/items`.
+Frontend estático, aislado y orientado a lectura para revisar las preguntas de `content/question-bank-v4/items`.
 
-## Características
+## Qué permite hacer
 
-- Detecta dinámicamente las carpetas que contienen preguntas JSON.
-- Permite cambiar de carpeta y de pregunta.
-- Navegación Anterior / Siguiente y con flechas del teclado.
-- Búsqueda directa por ID.
-- Presenta contexto, enunciado, opciones, respuesta correcta, explicaciones, nota de aprendizaje y metadatos.
-- No depende de Next.js, Supabase ni del runtime de la aplicación.
+- Ver todas las carpetas existentes dentro de `items`, incluso si alguna está vacía.
+- Cambiar de carpeta con un clic.
+- Ver la lista de preguntas de la carpeta seleccionada.
+- Abrir cada pregunta como una ficha legible, sin mostrar JSON crudo.
+- Leer contexto, enunciado y opciones A/B/C/D.
+- Revelar bajo demanda la respuesta correcta, explicaciones, pista y nota de aprendizaje.
+- Consultar metadatos de la pregunta.
+- Recorrer preguntas con Anterior / Siguiente o con las flechas del teclado.
+- Buscar por ID y, para preguntas ya cargadas, por texto.
+- Mantener en la URL la carpeta y el ID de la pregunta seleccionada.
+
+## Aislamiento
+
+El sistema vive en `content/review/` y no depende de Next.js, Supabase ni del runtime de GanaConMerito.
+
+La única pieza adicional es `.github/workflows/question-review-pages.yml`, que publica exclusivamente `content/review/` en GitHub Pages desde la rama `web_review_question`.
 
 ## GitHub Pages
 
-El visor es HTML/CSS/JavaScript puro. Para publicarlo con GitHub Pages, configura Pages para desplegar la rama `web_review_question` y usa como directorio publicado el árbol que incluya `content/review` (o un workflow que publique esa carpeta como artifact de Pages).
+El workflow `Question Bank Review Pages` se ejecuta al modificar:
 
-La página de entrada es:
+- `content/review/**`
+- `content/question-bank-v4/items/**`
+- el propio workflow
 
-`content/review/index.html`
+La carpeta publicada como sitio es únicamente:
 
-El visor lee el árbol del banco mediante la API pública de GitHub y descarga cada JSON desde `raw.githubusercontent.com`, siempre desde la rama `web_review_question`.
+`content/review`
+
+El frontend lee el árbol del banco desde GitHub y las preguntas JSON desde `raw.githubusercontent.com`, siempre usando la rama `web_review_question`.
