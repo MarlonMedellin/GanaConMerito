@@ -344,15 +344,6 @@ export function PracticeSession() {
             </div>
           ) : null}
 
-          <div className="mt-24 tutor-zone">
-            <TutorInterface
-              sessionId={session?.sessionId ?? ""}
-              currentItemId={item.id}
-              answered={hasFeedback}
-              fallbackMessage={feedback?.feedbackText}
-            />
-          </div>
-
           {!hasFeedback ? (
             <details className="rationale-disclosure mt-24">
               <summary>Agregar justificación opcional</summary>
@@ -373,14 +364,23 @@ export function PracticeSession() {
 
           <div className="practice-sticky">
             {feedback && pendingNextItemId ? (
-              <button onClick={handleContinue} className="primary-button" disabled={loading}>
+              <button onClick={handleContinue} className="primary-button practice-action-button" disabled={loading}>
                 {loading ? "Cargando..." : "Siguiente pregunta"}
               </button>
             ) : !feedback ? (
-              <button onClick={handleSubmitAnswer} className="primary-button" disabled={loading || !selectedOption}>
+              <button onClick={handleSubmitAnswer} className="primary-button practice-action-button" disabled={loading || !selectedOption}>
                 {loading ? "Enviando..." : "Responder"}
               </button>
             ) : null}
+          </div>
+
+          <div className="mt-24 tutor-zone">
+            <TutorInterface
+              sessionId={session?.sessionId ?? ""}
+              currentItemId={item.id}
+              answered={hasFeedback}
+              fallbackMessage={feedback?.feedbackText}
+            />
           </div>
         </article>
       ) : null}

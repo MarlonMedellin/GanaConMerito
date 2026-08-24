@@ -167,9 +167,10 @@ pre {
 }
 
 .practice-stem {
-  font-size: clamp(1.05rem, 2.8vw, 1.35rem);
-  line-height: 1.5;
+  font-size: clamp(1.18rem, 2.8vw, 1.5rem);
+  line-height: 1.55;
   margin: 0 0 var(--space-4);
+  color: var(--text-primary);
 }
 
 .guided-chip {
@@ -180,6 +181,9 @@ pre {
   color: var(--primary-soft);
   font-size: 12px;
   font-weight: 600;
+  line-height: 1.25;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .cluster-between { justify-content: space-between; }
@@ -803,12 +807,21 @@ pre {
   place-items: center;
   gap: 6px;
   min-height: 62px;
+  min-width: 0;
   border-radius: 18px;
   color: var(--text-muted);
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   text-transform: uppercase;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.bottom-nav-link span:last-child {
+  max-width: 100%;
+  overflow: visible;
+  overflow-wrap: anywhere;
 }
 
 .bottom-nav-link.active {
@@ -968,6 +981,14 @@ pre {
   padding-top: 8px;
   z-index: 20;
   background: linear-gradient(180deg, transparent, rgba(248, 251, 255, 0.96) 36%);
+}
+
+.practice-action-button {
+  min-height: 60px;
+  padding: 0 22px;
+  font-size: 1rem;
+  line-height: 1.2;
+  white-space: normal;
 }
 
 .tutor-chip {
@@ -1184,6 +1205,12 @@ pre {
   font-size: 13px;
 }
 
+.auth-sidebar .bottom-nav-link.active {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: var(--text-inverse);
+}
+
 .hero-card-premium {
   background: linear-gradient(160deg, #ffffff 0%, #f2f7ff 70%);
   border: 1px solid #d7e3f2;
@@ -1297,6 +1324,11 @@ pre {
     padding: 10px 0 8px;
     margin-top: 12px;
     background: transparent;
+  }
+
+  .practice-action-button {
+    min-height: 62px;
+    font-size: 1.05rem;
   }
 
   .tutor-panel {
