@@ -7,6 +7,7 @@ function read(path: string) {
 }
 
 const dashboardRoute = read("src/app/api/dashboard/summary/route.ts");
+const homePage = read("src/app/(authenticated)/home/page.tsx");
 const dashboardPage = read("src/app/(authenticated)/dashboard/page.tsx");
 const dashboardMetrics = read("src/lib/dashboard/summary-metrics.ts");
 const tutorRoute = read("src/app/api/tutor/turn/route.ts");
@@ -50,6 +51,17 @@ test("dashboard student copy hides internal heuristics and does not overclaim tr
   assert.match(dashboardMetrics, /canShowTrend: false/);
   assert.match(dashboardMetrics, /canShowPercentile: false/);
   assert.doesNotMatch(dashboardMetrics, /latest > previous/);
+});
+
+test("home keeps next action truthful without unsupported activation or level claims", () => {
+  assert.doesNotMatch(homePage, /activar el Tutor/i);
+  assert.doesNotMatch(homePage, /Nivel estimado/i);
+  assert.doesNotMatch(homePage, /mejores preguntas/i);
+  assert.doesNotMatch(homePage, /Practicando en:/i);
+  assert.doesNotMatch(homePage, /Continuar práctica/i);
+  assert.match(homePage, /Practicar ahora/);
+  assert.match(homePage, /Completar configuración/);
+  assert.match(homePage, /Tutor GCM está disponible dentro de Practice/);
 });
 
 test("onboarding makes active areas optional without exposing Canary labels", () => {
