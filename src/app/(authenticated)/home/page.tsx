@@ -7,12 +7,9 @@ export const dynamic = "force-dynamic";
 
 export default async function HomePage() {
   const auth = await requireAuthenticatedProfile();
-  if (!auth.ok) {
-    return null;
-  }
+  if (!auth.ok) return null;
 
-  const { supabase, user, profile } = auth;
-
+  const { supabase, profile } = auth;
   const { data: learningProfile } = profile
     ? await supabase
         .from("learning_profiles")
@@ -23,7 +20,7 @@ export default async function HomePage() {
 
   const onboardingComplete = isLearningProfileOnboardingComplete(learningProfile);
   const primaryHref = onboardingComplete ? "/practice" : "/onboarding";
-  const primaryLabel = onboardingComplete ? "Practicar ahora" : "Completar configuración";
+  const primaryLabel = onboardingComplete ? "Continuar mi preparación" : "Completar configuración";
   const summary = await getDashboardSummaryForCurrentUser();
   const historical = summary.historical;
   const accuracy = historical.totalAttempts > 0
@@ -31,83 +28,53 @@ export default async function HomePage() {
     : 0;
   const progress = historical.totalAttempts > 0 ? Math.min(100, Math.max(8, accuracy)) : 18;
   const activeGoal = learningProfile?.active_goal?.trim() || "Práctica lista para empezar.";
-  const observedResult = historical.totalAttempts > 0
-    ? `${historical.totalCorrect}/${historical.totalAttempts} respuestas correctas`
-    : "Sin práctica registrada";
 
   return (
     <>
       <section className="page-header home-header">
-        <p className="eyebrow">Panel de control</p>
-        <h1 className="display-title">Bienvenido, {user.email?.split("@")[0]}</h1>
+        <p className="eyebrow">Preparación inteligente para concursos de mérito CNSC</p>
+        <h1 className="display-title">No practiques más.<br />Practica mejor.</h1>
+        <p className="body-lg">
+          GanaConMérito convierte cada respuesta en una señal para decidir qué reforzar después. Banco de preguntas verificadas con criterios técnicos, feedback explicativo y un Tutor AI 🤖 que acompaña sin regalarte la respuesta.
+        </p>
       </section>
 
       <section className="hero-card hero-card-premium">
         <div className="inline-cluster cluster-between cluster-start">
           <div className="hero-content">
-            <p className="eyebrow">{onboardingComplete ? "Tu enfoque actual" : "Acción inmediata"}</p>
-            <h2 className="section-title">
-              {onboardingComplete 
-                ? activeGoal 
-                : "Completa tu configuración inicial."}
-            </h2>
+            <p className="eyebrow">{onboardingComplete ? "Tu próxima mejor acción" : "Acción inmediata"}</p>
+            <h2 className="section-title">{onboardingComplete ? activeGoal : "Completa tu configuración inicial."}</h2>
             <p className="body-sm mt-8">
               {onboardingComplete
-                ? "Entra a Practice para responder preguntas y usar Tutor GCM dentro de cada ejercicio."
+                ? "Entra a Práctica, responde preguntas y usa el Tutor AI 🤖 para razonar sin revelar la clave."
                 : "Define un perfil y una meta breve para orientar la experiencia de práctica."}
             </p>
           </div>
           {!onboardingComplete && <span className="status-pill warning">Pendiente</span>}
         </div>
-        
         <div className="page-actions mt-24">
-          <Link href={primaryHref} className="primary-button button-grow">
-            {primaryLabel} →
-          </Link>
-          {onboardingComplete && (
-            <Link href="/dashboard" className="secondary-button button-grow">
-              Revisar progreso
-            </Link>
-          )}
+          <Link href={primaryHref} className="primary-button button-grow">{primaryLabel} →</Link>
+          {onboardingComplete && <Link href="/dashboard" className="secondary-button button-grow">Ver mi diagnóstico</Link>}
         </div>
       </section>
 
       <section className="metric-grid">
         <article className="metric-card">
-          <span className="metric-label">Precisión</span>
+          <span className="metric-label">Precisión observada</span>
           <strong className="metric-value">{accuracy}%</strong>
-          <div className="progress-rail progress-compact">
-            <div className="progress-fill" style={{ width: `${progress}%` }} />
-          </div>
+          <div className="progress-rail progress-compact"><div className="progress-fill" style={{ width: `${progress}%` }} /></div>
         </article>
         <article className="metric-card">
-          <span className="metric-label">Intentos</span>
+          <span className="metric-label">Práctica útil</span>
           <strong className="metric-value">{historical.totalAttempts}</strong>
+          <span className="subtle">reactivos respondidos</span>
         </article>
       </section>
 
-      <section className="two-column-grid">
-        <article className="surface-card panel-compact">
-          <p className="eyebrow">Actividad observada</p>
-          <h2 className="section-title panel-title-sm">{observedResult}</h2>
-          <p className="subtle mt-4">Basado solo en intentos guardados.</p>
-          
-          <div className="tutor-chip mt-20">
-            <p className="body-sm m-0">
-              {onboardingComplete 
-                ? "Tutor GCM está disponible dentro de Practice cuando estés resolviendo una pregunta."
-                : "Completa la configuración para entrar a Practice."}
-            </p>
-          </div>
-        </article>
-
-        <article className="surface-card panel-compact">
-          <p className="eyebrow">Próximo paso</p>
-          <h2 className="section-title panel-title-sm">{onboardingComplete ? "Sesión de práctica" : "Formulario inicial"}</h2>
-          <Link href={primaryHref} className="subtle mt-12 inline-link">
-            {primaryLabel} →
-          </Link>
-        </article>
+      <section className="surface-card panel-compact">
+        <p className="eyebrow">Tutor AI 🤖</p>
+        <h2 className="section-title panel-title-sm">Ayuda, pero no te revelamos la clave.</h2>
+        <p className="body-sm mt-8">Antes de responderte, el Tutor AI 🤖 debe hacerte pensar. Después puede explicarte por qué cada alternativa es plausible o no plausible.</p>
       </section>
     </>
   );
