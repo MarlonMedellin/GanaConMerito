@@ -11,18 +11,9 @@ interface TutorInterfaceProps {
 }
 
 export function getTutorGuidedActions(answered: boolean) {
-  return answered ? [
-    "¿Por qué mi opción no funciona?",
-    "Explícame la respuesta correcta",
-    "¿Qué debo aprender?",
-    "Dame otra forma de entenderlo",
-    "¿Qué debería practicar ahora?",
-  ] : [
-    "Dame una pista",
-    "Ayúdame a entender qué me preguntan",
-    "Ayúdame a comparar opciones",
-    "¿Qué concepto debo recordar?",
-  ];
+  return answered
+    ? ["¿Por qué mi opción no funciona?", "Explícame la respuesta correcta", "¿Qué debo aprender?"]
+    : ["Dame una pista", "Ayúdame a entender qué me preguntan", "Ayúdame a comparar opciones"];
 }
 
 export function TutorInterface({ sessionId, currentItemId, answered = false, fallbackMessage }: TutorInterfaceProps) {
@@ -40,23 +31,19 @@ export function TutorInterface({ sessionId, currentItemId, answered = false, fal
     setLastResponse(null);
     setFallbackVisible(false);
     setError(null);
-
     if (typeof window === "undefined") {
       setMessage("");
       return;
     }
-
     setMessage(window.sessionStorage.getItem(draftStorageKey) ?? "");
   }, [draftStorageKey]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-
     if (message.trim()) {
       window.sessionStorage.setItem(draftStorageKey, message);
       return;
     }
-
     window.sessionStorage.removeItem(draftStorageKey);
   }, [draftStorageKey, message]);
 
@@ -64,29 +51,17 @@ export function TutorInterface({ sessionId, currentItemId, answered = false, fal
     if (!nextMessage.trim() || loading) return;
     setLoading(true);
     setError(null);
-
     try {
       const response = await fetch("/api/tutor/turn", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          sessionId,
-          itemId: currentItemId,
-          message: nextMessage.trim(),
-        }),
+        body: JSON.stringify({ sessionId, itemId: currentItemId, message: nextMessage.trim() }),
       });
-
       const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error || "Error al consultar al tutor");
-      }
-
+      if (!response.ok) throw new Error(data.error || "Error al consultar al Tutor AI");
       setLastResponse(data.output);
       setFallbackVisible(false);
-      if (options?.clearMessage ?? true) {
-        setMessage("");
-      }
+      if (options?.clearMessage ?? true) setMessage("");
     } catch (err) {
       if (fallbackMessage) {
         setFallbackVisible(true);
@@ -104,140 +79,63 @@ export function TutorInterface({ sessionId, currentItemId, answered = false, fal
     await sendMessage(message);
   }
 
-  async function handleGuidedAction(action: string) {
-    await sendMessage(action, { clearMessage: false });
-  }
-
   if (!isOpen) {
     return (
-      <button
-        type="button"
-        onClick={() => setIsOpen(true)}
-        className="tutor-chip"
-        data-testid="tutor-gcm-open-button"
-        
-      >
-        <div className="tutor-head-main tutor-head-main-open">
-          <div className="avatar-chip avatar-mini">T</div>
-          <div>
-            <p className="eyebrow m-0">Tutor GCM</p>
-            <p className="body-sm m-0">
-              {answered ? "Revisa el feedback con apoyo pedagógico." : "Pide orientación sin recibir la respuesta."}
-            </p>
-          </div>
+      <button type="button" onClick={() => setIsOpen(true)} className="tutor-chip" data-testid="tutor-gcm-open-button">
+        <div>
+          <p className="eyebrow m-0">Tutor AI 🤖</p>
+          <p className="body-sm m-0">Ayuda para razonar sin revelar la clave.</p>
         </div>
-        <span className="status-pill premium">Abrir tutor</span>
+        <span className="status-pill premium">Abrir</span>
       </button>
     );
   }
 
   return (
-    <section
-      className="surface-card tutor-panel"
-      data-testid="tutor-gcm-panel"
-      aria-label="Tutor GCM"
-    >
+    <section className="surface-card tutor-panel tutor-ai-panel" data-testid="tutor-gcm-panel" aria-label="Tutor AI">
       <div className="tutor-head">
-        <div className="tutor-head-main">
-          <div className="avatar-chip avatar-mini">T</div>
-          <div>
-            <p className="eyebrow m-0">Tutor GCM</p>
-            <h3 className="section-title tutor-headline">
-              {answered ? "Entiende el resultado" : "Guía para decidir mejor"}
-            </h3>
-          </div>
+        <div>
+          <p className="eyebrow m-0">Tutor AI 🤖</p>
+          <h3 className="section-title tutor-headline">Ayuda, pero no te revelamos la clave</h3>
         </div>
-        <button
-          type="button"
-          onClick={() => setIsOpen(false)}
-          className="subtle tutor-minimize"
-        >
-          Minimizar
-        </button>
+        <button type="button" onClick={() => setIsOpen(false)} className="subtle tutor-minimize">Minimizar</button>
       </div>
 
-      <p className="body-sm m-0">
-        {answered
-          ? "Usa una acción guiada para entender el feedback. También puedes escribir tu duda en texto libre."
-          : "Usa una acción guiada si necesitas apoyo puntual. También puedes escribir tu duda; el tutor orienta sin revelar la clave."}
-      </p>
-
-      <div className="tutor-guided-wrap">
-        <p className="eyebrow m-0">
-          Acciones guiadas recomendadas
-        </p>
-        <p className="subtle subtle-xxs m-0">
-          Elige la acción que mejor describa tu necesidad actual para recibir una ayuda más precisa.
-        </p>
-        <div className="tutor-guided-list">
-          {guidedActions.map((action) => (
-            <button
-              key={action}
-              type="button"
-              className="guided-chip"
-              aria-busy={loading ? "true" : "false"}
-              disabled={loading}
-              onClick={() => handleGuidedAction(action)}
-            >
-              {action}
-            </button>
-          ))}
+      <div className="tutor-conversation" aria-live="polite">
+        <div className="tutor-message tutor-message-intro">
+          Antes de responderte, el Tutor AI 🤖 debe hacerte pensar. Después puede explicarte por qué cada alternativa es plausible o no plausible.
         </div>
+        {lastResponse ? <div className="tutor-message tutor-message-response">{lastResponse.visibleMessage}</div> : null}
+        {fallbackVisible && fallbackMessage ? <div className="tutor-message tutor-message-response" data-testid="tutor-gcm-fallback">{fallbackMessage}</div> : null}
+        {error ? <div className="tutor-message tutor-error-text">{error}</div> : null}
       </div>
 
-      {lastResponse ? (
-        <div className="feedback-card tutor-feedback-card">
-          <p className="body-sm tutor-feedback-text">{lastResponse.visibleMessage}</p>
-          <div className="tutor-response-meta">
-            <span className="subtle subtle-xs">
-              {lastResponse.degraded ? "Respuesta disponible" : "Tutoría orientativa"}
-            </span>
-          </div>
-        </div>
-      ) : null}
+      <div className="tutor-guided-list tutor-guided-list-compact">
+        {guidedActions.map((action) => (
+          <button key={action} type="button" className="guided-chip" disabled={loading} onClick={() => sendMessage(action, { clearMessage: false })}>
+            {action}
+          </button>
+        ))}
+      </div>
 
-      {fallbackVisible && fallbackMessage ? (
-        <div className="feedback-card tutor-feedback-card" data-testid="tutor-gcm-fallback">
-          <p className="body-sm tutor-feedback-text">{fallbackMessage}</p>
-          <div className="tutor-response-meta">
-            <span className="subtle subtle-xs">Feedback editorial disponible; el Tutor está temporalmente limitado.</span>
-          </div>
-        </div>
-      ) : null}
-
-      {error ? (
-        <p className="body-sm tutor-error-text">{error}</p>
-      ) : null}
-
-      <form onSubmit={handleSendMessage} className="form-grid-sm" data-testid="tutor-gcm-form">
+      <form onSubmit={handleSendMessage} className="form-grid-sm tutor-compose" data-testid="tutor-gcm-form">
         <div className="form-field">
-          <label className="field-label" htmlFor="tutor-gcm-message">Escribe tu consulta al Tutor GCM</label>
+          <label className="field-label" htmlFor="tutor-gcm-message">Pregunta al Tutor AI 🤖</label>
           <textarea
             ref={messageInputRef}
             id="tutor-gcm-message"
             data-testid="tutor-gcm-message"
             className="text-area text-area-compact"
-            placeholder={answered
-              ? "Ejemplo: ¿Por qué mi opción no responde bien al enunciado?"
-              : "Ejemplo: Estoy entre dos opciones. ¿Qué criterio puedo usar para compararlas sin ver la respuesta?"}
+            placeholder="Escribe tu pregunta sobre el caso o sobre cómo analizar las alternativas."
             value={message}
             onChange={(event) => setMessage(event.target.value)}
             disabled={loading}
           />
         </div>
-        <button
-          type="submit"
-          className="primary-button"
-          data-testid="tutor-gcm-submit"
-          disabled={loading || !message.trim()}
-        >
-          {loading ? "Pensando..." : "Pedir orientación"}
+        <button type="submit" className="primary-button" data-testid="tutor-gcm-submit" disabled={loading || !message.trim()}>
+          {loading ? "Pensando..." : "Enviar"}
         </button>
       </form>
-
-      <p className="subtle subtle-xxs tutor-footnote">
-        El tutor no modifica tu puntaje ni el avance de tu sesión; solo te guía para razonar mejor.
-      </p>
     </section>
   );
 }
