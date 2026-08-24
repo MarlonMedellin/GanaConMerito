@@ -3,44 +3,56 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Question Bank Review · GanaConMerito</title>
+  <meta name="color-scheme" content="light">
+  <title>Revisión del banco de preguntas · GanaConMerito</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="topbar">
-    <div>
+    <div class="brand">
       <strong>GanaConMerito</strong>
-      <span>Question Bank Review</span>
+      <span>Revisión del banco de preguntas</span>
     </div>
-    <span id="status">Cargando banco…</span>
+    <div class="bank-status" id="status">Cargando banco…</div>
   </header>
 
-  <main class="layout">
-    <aside class="sidebar">
-      <label for="folderSelect">Carpeta</label>
-      <select id="folderSelect"></select>
+  <main class="workspace">
+    <aside class="explorer" aria-label="Explorador del banco">
+      <section class="explorer-section folders-section">
+        <div class="section-heading">
+          <h2>Carpetas</h2>
+          <span id="folderCount"></span>
+        </div>
+        <nav id="folderList" class="folder-list" aria-label="Carpetas de preguntas"></nav>
+      </section>
 
-      <label for="questionSelect">Pregunta</label>
-      <select id="questionSelect"></select>
-
-      <div class="counter" id="counter">—</div>
-
-      <div class="nav-buttons">
-        <button id="prevBtn" type="button">← Anterior</button>
-        <button id="nextBtn" type="button">Siguiente →</button>
-      </div>
-
-      <label for="jumpInput">Ir a ID</label>
-      <div class="jump">
-        <input id="jumpInput" placeholder="DOC-000001">
-        <button id="jumpBtn" type="button">Ir</button>
-      </div>
-
-      <p class="hint">Atajos: ← → para cambiar de pregunta.</p>
+      <section class="explorer-section questions-section">
+        <div class="section-heading">
+          <h2>Preguntas</h2>
+          <span id="questionCount"></span>
+        </div>
+        <div class="search-box">
+          <input id="searchInput" type="search" placeholder="Buscar por ID o texto…" autocomplete="off">
+        </div>
+        <div id="questionList" class="question-list" aria-label="Preguntas de la carpeta"></div>
+      </section>
     </aside>
 
-    <section class="content">
-      <article id="questionCard" class="card loading">Cargando pregunta…</article>
+    <section class="reader">
+      <div class="reader-toolbar">
+        <div>
+          <span class="folder-badge" id="currentFolderLabel">—</span>
+          <span class="position" id="counter">—</span>
+        </div>
+        <div class="nav-actions">
+          <button id="prevBtn" type="button" title="Pregunta anterior">← Anterior</button>
+          <button id="nextBtn" type="button" title="Pregunta siguiente">Siguiente →</button>
+        </div>
+      </div>
+
+      <article id="questionCard" class="question-card loading">
+        Cargando preguntas…
+      </article>
     </section>
   </main>
 
