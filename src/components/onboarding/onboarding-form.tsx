@@ -98,14 +98,14 @@ export function OnboardingForm(props: {
       </label>
 
       <label className="form-field">
-        <span className="field-label">Cargo / referencia OPEC Canary (opcional)</span>
+        <span className="field-label">Cargo / referencia OPEC (opcional)</span>
         <select className="select-input" value={targetOpecId} onChange={(event) => setTargetOpecId(event.target.value)} disabled={loading}>
           <option value="">Usar solo el perfil reusable</option>
           {compatibleOpecs.map((opec) => (
             <option key={opec.id} value={opec.id}>{opec.position_name}</option>
           ))}
         </select>
-        <span className="subtle subtle-xs">Las referencias OPEC disponibles en esta versión son provisionales para prueba Canary.</span>
+        <span className="subtle subtle-xs">Las referencias OPEC disponibles son opcionales para orientar la práctica.</span>
       </label>
 
       <label className="form-field">
@@ -132,7 +132,7 @@ export function OnboardingForm(props: {
             onChange={(e) => setActiveAreas(e.target.value)}
             placeholder="Ej.: matemáticas, lectura crítica"
           />
-          <span className="subtle subtle-xs">Se guardan como referencia. En esta Canary no filtran ni priorizan las preguntas de la sesión.</span>
+          <span className="subtle subtle-xs">Se guardan como referencia. No filtran ni priorizan las preguntas de la sesión.</span>
         </label>
       </div>
 

@@ -175,7 +175,7 @@ export function TutorInterface({ sessionId, currentItemId, fallbackMessage }: Tu
           <p className="body-sm tutor-feedback-text">{lastResponse.visibleMessage}</p>
           <div className="tutor-response-meta">
             <span className="subtle subtle-xs">
-              {lastResponse.degraded ? "Modo limitado" : "Tutoría orientativa"}
+              {lastResponse.degraded ? "Respuesta disponible" : "Tutoría orientativa"}
             </span>
           </div>
         </div>

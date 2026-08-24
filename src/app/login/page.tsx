@@ -1,13 +1,10 @@
 import { redirect } from "next/navigation";
 import { GoogleSignInButton } from "@/components/auth/google-sign-in-button";
 import { isTestAuthBypassEnabled } from "@/lib/auth/test-bypass";
-import { getBuildInfo } from "@/lib/build-info";
 import { getAuthenticatedLandingPath } from "@/lib/onboarding/routing";
 import { getSupabaseServerClient } from "@/lib/supabase/server";
 
 export default async function LoginPage() {
-  const { commit, buildTime } = getBuildInfo();
-
   if (isTestAuthBypassEnabled()) {
     redirect("/home");
   }
@@ -35,14 +32,6 @@ export default async function LoginPage() {
         </p>
         <div style={{ marginTop: 24 }}>
           <GoogleSignInButton />
-        </div>
-        <div className="trust-note">
-          <p className="subtle" style={{ margin: 0 }}>
-            Entorno académico autenticado. El acceso conserva build y commit visibles para mantener trazabilidad operativa.
-          </p>
-          <p className="subtle" style={{ marginBottom: 0, marginTop: 10 }}>
-            Commit desplegado: <code>{commit}</code> · Build time: <code>{buildTime}</code>
-          </p>
         </div>
       </section>
     </main>

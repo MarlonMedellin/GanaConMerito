@@ -45,9 +45,7 @@ export function StartPracticeForm() {
       {error ? <p>{error}</p> : null}
       {result ? (
         <div>
-          <p>Session ID: {result.sessionId}</p>
-          <p>Estado: {result.currentState}</p>
-          <p>Primer ítem: {result.currentItemId ?? "No disponible"}</p>
+          <p>Práctica iniciada.</p>
         </div>
       ) : null}
     </section>

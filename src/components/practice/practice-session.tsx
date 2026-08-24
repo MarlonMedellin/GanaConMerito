@@ -6,7 +6,6 @@ import { LoadingState } from "@/components/ui/loading-state";
 import { ErrorState } from "@/components/ui/error-state";
 import { EmptyState } from "@/components/ui/empty-state";
 import { TutorInterface } from "@/components/tutor/tutor-interface";
-import { formatAreaCompetency, formatTechnicalLabel } from "@/lib/ui/format-label";
 import type { PracticeQuestionViewModel } from "@/types/session";
 
 type OptionKey = "A" | "B" | "C" | "D";
@@ -277,13 +276,7 @@ export function PracticeSession() {
 
       {session ? (
         <div className="inline-cluster cluster-between">
-          <div className="inline-cluster">
-            <span className="pill">Sesión {session.sessionId.slice(0, 8)}</span>
-            <span className="pill">Estado: {feedback?.currentState ?? session.currentState}</span>
-            {session.resumed ? <span className="pill">Reanudada</span> : null}
-            {item ? <span className="pill">{formatAreaCompetency(item.area, item.competency)}</span> : null}
-          </div>
-          {sessionDashboardHref ? <Link href={sessionDashboardHref} className="subtle">Ver sesión →</Link> : null}
+          <p className="subtle m-0">{session.resumed ? "Retomaste una práctica en curso." : "Práctica en curso."}</p>
         </div>
       ) : null}
 
@@ -292,39 +285,8 @@ export function PracticeSession() {
           <div className="practice-panel-header practice-panel-header-strong mb-24">
             <div>
               <p className="eyebrow">Práctica</p>
-              <h2 className="section-title panel-title-sm">{item.title}</h2>
+              <h2 className="section-title panel-title-sm">Responde la pregunta</h2>
             </div>
-            <span className="status-pill premium">Foco activo</span>
-          </div>
-
-          <div className="practice-rich-grid">
-            {item.topicLabel ? (
-              <div className="practice-rich-item">
-                <p className="eyebrow mt-4">Mapa temático</p>
-                <p className="body-sm m-0">{formatTechnicalLabel(item.topicLabel)}</p>
-              </div>
-            ) : null}
-            {item.expectedUserTask ? (
-              <div className="practice-rich-item">
-                <p className="eyebrow mt-4">Tarea esperada</p>
-                <p className="body-sm m-0">{item.expectedUserTask}</p>
-              </div>
-            ) : null}
-            {item.cognitiveIntent ? (
-              <div className="practice-rich-item">
-                <p className="eyebrow mt-4">Intención cognitiva</p>
-                <p className="body-sm m-0">{formatTechnicalLabel(item.cognitiveIntent)}</p>
-              </div>
-            ) : null}
-            {item.topic || typeof item.difficulty === "number" ? (
-              <div className="practice-rich-item">
-                <p className="eyebrow mt-4">Contexto del ítem</p>
-                <p className="body-sm m-0">
-                  {item.topic ? `Tema: ${formatTechnicalLabel(item.topic)}` : "Tema no especificado"}
-                  {typeof item.difficulty === "number" ? " · Dificultad editorial estimada" : ""}
-                </p>
-              </div>
-            ) : null}
           </div>
 
           {item.context ? <p className="body-sm practice-context">{item.context}</p> : null}
@@ -384,9 +346,6 @@ export function PracticeSession() {
             <div className={`feedback-card ${feedback.evaluation.isCorrect ? "success" : "error"} mt-24`}>
               <div className="inline-cluster cluster-between">
                 <h3 className="m-0">{feedback.evaluation.isCorrect ? "Respuesta correcta" : "Respuesta enviada"}</h3>
-                <span className={`status-pill ${feedback.evaluation.isCorrect ? "success" : "warning"}`}>
-                  Nivel de ayuda {feedback.hintLevel}
-                </span>
               </div>
               <p className="body-sm m-0">{feedback.feedbackText}</p>
               <p className="body-sm m-0">
@@ -404,9 +363,6 @@ export function PracticeSession() {
               {feedback.answerReview.sourceReference ? (
                 <p className="subtle m-0">Fuente: {feedback.answerReview.sourceReference}</p>
               ) : null}
-              <p className="subtle m-0">
-                Las señales internas de razonamiento y desempeño orientan la práctica; no representan mediciones psicométricas calibradas.
-              </p>
               {feedback.evaluation.qualitativeFeedback ? <p className="subtle m-0">{feedback.evaluation.qualitativeFeedback}</p> : null}
             </div>
           ) : null}
