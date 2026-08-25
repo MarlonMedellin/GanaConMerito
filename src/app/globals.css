@@ -1265,12 +1265,22 @@ pre {
 }
 
 
-.auth-page {
+.login-layout-shell {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-page {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 24px;
+}
+
+.login-layout-shell .release-stamp {
+  flex-shrink: 0;
 }
 
 .auth-panel {
