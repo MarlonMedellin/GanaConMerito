@@ -15,9 +15,34 @@ last_reviewed: 2026-08-23
 ## Document control
 - Status: operational
 - Owner: PM-Governance
-- Last reviewed: 2026-08-23
+- Last reviewed: 2026-08-24
 - Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
 - Update trigger: governance, delivery, documentation, drift
+
+## 2026-08-24 — v0.9.1 patch release preparation
+- tipo: frontend+release
+- modulo: application-versioning
+- resumen: Se prepara el release PATCH `v0.9.1` para publicar el fix visual ya
+  integrado de `ReleaseStamp` en `/login`, manteniendo el sello en el footer
+  normal de la página y preservando metadata de build dinámica.
+- cambio principal: corrección compatible de layout; no cambia flujo de login,
+  Auth, Supabase, V4, contenido ni infraestructura.
+- agente: Codex
+- via: Codex Desktop
+- contributor: Marlon Medellin
+- environment: rama aislada local / WSL; sin VPS, deploy, Supabase ni migraciones
+- validacion: `git diff --check`, `npm run lint`, `npm run typecheck`,
+  `npm exec -- tsx --test src/lib/app-version.test.ts
+  scripts/prepare-build-metadata.test.ts`, `npm run test:recent-sprints` y
+  `npm run build` PASS; `npm run check:doc-triggers` PASS con warnings advisory
+  no bloqueantes
+- runtime-verified: no; preparación de release sin deploy
+- release candidate base: `4131ba642cb6476296f2950558dcdcf33ea7381d`
+- final release SHA: pendiente de merge
+- relacionados: `VERSION.json`, `src/app/login/page.tsx`,
+  `src/app/globals.css`, `src/components/release/release-stamp.tsx`
+- limitaciones: `package.json.version=0.6.0` permanece como metadata histórica
+  Beta; no es la fuente pública canónica de aplicación.
 
 ## 2026-08-25 — v0.9.0 release versioning policy and visible stamp
 - tipo: frontend+release+docs
