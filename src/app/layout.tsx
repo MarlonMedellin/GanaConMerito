@@ -3,7 +3,7 @@ import "./globals.css";
 
 
 export const metadata = {
-  title: "GanaConMerito",
+  title: "GanaConMérito",
   description: "Práctica guiada y evaluación adaptativa para avanzar con foco.",
 };
 

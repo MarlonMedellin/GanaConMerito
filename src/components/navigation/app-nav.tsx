@@ -32,16 +32,17 @@ function IconDashboard() {
 }
 
 const items = [
-  { href: "/home", label: "Home", Icon: IconHome },
+  { href: "/home", label: "Inicio", Icon: IconHome },
   { href: "/practice", label: "Práctica", Icon: IconPractice },
-  { href: "/dashboard", label: "Dashboard", Icon: IconDashboard },
+  { href: "/dashboard", label: "Progreso", Icon: IconDashboard },
+  { href: "/onboarding", label: "Perfil", Icon: IconHome },
 ];
 
 export function AppNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="bottom-nav" aria-label="Navegación principal">
+    <nav className="bottom-nav nav" aria-label="Navegación principal">
       <ul className="bottom-nav-list">
         {items.map((item) => {
           const active = pathname === item.href || pathname.startsWith(`${item.href}/`);

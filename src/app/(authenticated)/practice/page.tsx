@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { redirect } from "next/navigation";
 import { PracticeSession } from "@/components/practice/practice-session";
 import { isLearningProfileOnboardingComplete } from "@/lib/onboarding/status";
@@ -24,12 +23,6 @@ export default async function PracticePage() {
   }
 
   return (
-    <>
-      <section className="page-header practice-header" style={{ paddingBottom: 0 }}>
-        <p className="eyebrow">Práctica</p>
-        <h1 className="display-title">Pregunta, decide y revisa feedback.</h1>
-      </section>
-      <PracticeSession />
-    </>
+    <PracticeSession />
   );
 }

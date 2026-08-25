@@ -20,7 +20,7 @@ export default async function EditorialLayout({ children }: { children: ReactNod
               {getInitial(user.email)}
             </div>
             <div>
-              <div className="topbar-title">GanaConMerito</div>
+              <div className="topbar-title">GanaConMérito</div>
               <div className="subtle">Biblioteca curada</div>
             </div>
           </div>
