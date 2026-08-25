@@ -2,7 +2,7 @@
 
 Status: canonical
 Owner: Release Owner
-Last reviewed: 2026-08-24
+Last reviewed: 2026-08-25
 Related files:
 - VERSION.json
 - src/lib/app-version.ts
@@ -27,7 +27,7 @@ The canonical application version source is `VERSION.json`.
 Current release metadata:
 
 - version: `0.9.1`
-- release date: `2026-08-24`
+- release date: `2026-08-25`
 - release candidate base: `4131ba642cb6476296f2950558dcdcf33ea7381d`
 - final release SHA: pending merge
 

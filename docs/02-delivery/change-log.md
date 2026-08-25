@@ -19,7 +19,7 @@ last_reviewed: 2026-08-23
 - Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
 - Update trigger: governance, delivery, documentation, drift
 
-## 2026-08-24 — v0.9.1 patch release preparation
+## 2026-08-25 — v0.9.1 patch release preparation
 - tipo: frontend+release
 - modulo: application-versioning
 - resumen: Se prepara el release PATCH `v0.9.1` para publicar el fix visual ya
