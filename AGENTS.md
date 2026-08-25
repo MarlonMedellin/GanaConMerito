@@ -123,6 +123,23 @@ Para trabajo de datos V4 consultar:
 Las migraciones efectivamente aplicadas y el runtime verificado prevalecen como
 hechos operativos sobre documentos de diseño.
 
+## Application versioning
+
+Antes de cualquier release, deploy, promocion Canary o hotfix, leer:
+
+- `docs/02-delivery/versioning-and-releases.md`
+
+Todo agente debe verificar:
+
+- version actual en `VERSION.json`;
+- release date actual en `VERSION.json`;
+- candidate SHA;
+- runtime SHA cuando exista deploy.
+
+No se permite deploy sin version metadata coherente. La version visible de
+aplicacion se gobierna desde `VERSION.json`; `src/lib/build-info.ts` gobierna
+commit/buildTime del runtime y no debe duplicarse.
+
 ### Rutas canónicas relevantes
 
 | Necesidad | Ruta |

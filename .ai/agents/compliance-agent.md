@@ -39,6 +39,7 @@ Proteger operación, seguridad y costo frente a cambios sensibles.
 ## checklist antes de actuar
 - revisar guardrails y política HITL
 - identificar superficie sensible
+- si el cambio toca release/deploy/hotfix, verificar que se haya consultado `docs/02-delivery/versioning-and-releases.md`
 - verificar que ningun runtime o importador use directamente `content/items/no-beta-v1/`
 
 ## checklist al terminar

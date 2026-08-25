@@ -48,6 +48,7 @@ Mantener consistencia documental, relaciones entre artefactos y memoria operativ
 - leer working agreement
 - validar owner y estado
 - revisar related
+- si cambia release, versionado, Canary, producción o hotfix, enlazar `docs/02-delivery/versioning-and-releases.md`
 - revisar `content/INDICE-DOCUMENTAL.md` y actualizarlo si cambia cualquier ruta de `content`
 
 ## checklist al terminar

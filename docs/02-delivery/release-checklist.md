@@ -2,6 +2,13 @@
 
 Este documento define los pasos obligatorios para considerar un release como exitoso, trazable y operativamente verificable.
 
+Política canónica de versionado visible:
+`docs/02-delivery/versioning-and-releases.md`.
+
+Antes de release, Canary, producción o hotfix, registrar `CURRENT_APP_VERSION`,
+`CURRENT_RELEASE_DATE` y `CANDIDATE_SHA`. Después de merge, registrar
+`FINAL_RELEASE_SHA`. Después de deploy, verificar visualmente `ReleaseStamp`.
+
 ## Snapshot beta candidata 0.6.0
 - Fecha de homologacion documental: 2026-08-20.
 - Commit de codigo release verificado: `9695d40`.

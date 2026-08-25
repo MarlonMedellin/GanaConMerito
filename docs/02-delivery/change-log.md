@@ -19,6 +19,28 @@ last_reviewed: 2026-08-23
 - Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
 - Update trigger: governance, delivery, documentation, drift
 
+## 2026-08-25 — v0.9.0 release versioning policy and visible stamp
+- tipo: frontend+release+docs
+- modulo: application-versioning
+- resumen: Se formaliza `VERSION.json` como fuente canónica de versión visible
+  de aplicación, se prepara `v0.9.0` con fecha de release `2026-08-25`, y se
+  agrega `ReleaseStamp` para mostrar versión, release date y SHA corto sin
+  hardcodear metadata de build.
+- cambio principal: Approved product mockup / visual product redesign.
+- agente: Codex
+- via: Codex Desktop
+- contributor: Marlon Medellin
+- environment: rama aislada local / WSL; sin VPS, deploy, Supabase ni migraciones
+- validacion: pendiente en esta rama hasta ejecutar gates locales
+- runtime-verified: no; implementación local sin deploy
+- release candidate base: `3677b1d7231df67db8ef4cd2fa2fb761c2f293ce`
+- final release SHA: pendiente de merge
+- relacionados: `VERSION.json`, `src/lib/app-version.ts`,
+  `src/components/release/release-stamp.tsx`,
+  `docs/02-delivery/versioning-and-releases.md`
+- limitaciones: `package.json.version=0.6.0` queda como metadata histórica Beta,
+  no como fuente pública canónica de aplicación
+
 ## 2026-08-23 — Rebaseline limpio V4 y reconciliador canónico local
 - tipo: database+runtime+security+sync+qa+docs
 - modulo: question-bank-v4

@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 import { GoogleSignInButton } from "@/components/auth/google-sign-in-button";
+import { ReleaseStamp } from "@/components/release/release-stamp";
 import { isTestAuthBypassEnabled } from "@/lib/auth/test-bypass";
 import { getAuthenticatedLandingPath } from "@/lib/onboarding/routing";
 import { getSupabaseServerClient } from "@/lib/supabase/server";
@@ -34,6 +35,7 @@ export default async function LoginPage() {
           <GoogleSignInButton />
         </div>
       </section>
+      <ReleaseStamp />
     </main>
   );
 }

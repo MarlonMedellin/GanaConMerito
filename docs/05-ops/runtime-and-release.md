@@ -5,6 +5,7 @@ Owner: PM-Governance
 Last reviewed: 2026-08-23
 Related files:
 - AGENTS.md
+- docs/02-delivery/versioning-and-releases.md
 - docs/project/status.md
 - docs/04-quality/quality-gates.md
 - docs/05-ops/documentation-trigger-map.md
@@ -56,6 +57,15 @@ Deploy:
 
 Runtime público canónico:
 - `https://ganaconmerito.com`
+
+Application versioning:
+- Canonical policy: `docs/02-delivery/versioning-and-releases.md`
+- Canonical release metadata: `VERSION.json`
+- Visible runtime stamp: `ReleaseStamp`
+- Required precheck before release, Canary, production or hotfix:
+  `CURRENT_APP_VERSION`, `CURRENT_RELEASE_DATE`, `CANDIDATE_SHA`
+- Required records after merge/deploy: `FINAL_RELEASE_SHA`, runtime SHA and
+  visual `ReleaseStamp` verification
 
 Snapshot vigente para beta candidata:
 - Commit de codigo release: `9695d40`

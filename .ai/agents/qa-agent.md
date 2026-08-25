@@ -36,9 +36,11 @@ Validar calidad, cumplimiento contra spec y riesgos visibles.
 ## checklist antes de actuar
 - revisar spec objetivo
 - revisar riesgos y deuda del módulo
+- para release, Canary, producción o hotfix, leer `docs/02-delivery/versioning-and-releases.md` y comprobar versión, release date, candidate SHA y runtime SHA
 - para banco de preguntas, validar que la muestra venga de `content/items/beta-v1/`
 - contrastar cobertura con vistas por dimension y perfil
 
 ## checklist al terminar
 - vincular hallazgos a owner y ruta de salida
+- si valida runtime, confirmar visualmente `ReleaseStamp`
 - separar hallazgos de pilotaje, remanufactura y descarte tecnico

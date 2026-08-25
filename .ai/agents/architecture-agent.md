@@ -46,6 +46,7 @@ Proponer y evaluar decisiones estructurales con trazabilidad.
 - revisar ADRs existentes
 - validar impacto transversal
 - revisar deuda heredada
+- si diseña flujo de release/runtime, consultar `docs/02-delivery/versioning-and-releases.md`
 - si toca banco de preguntas, confirmar que `content/items/beta-v1/` sea la salida operativa y que `content/items/no-beta-v1/` sea archivo historico
 
 ## checklist al terminar

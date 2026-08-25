@@ -59,6 +59,10 @@ Estos directorios contienen mezcla de material vigente, puente e histórico:
 - `project/status.md` — estado real del repo, entregables ya implementados y siguiente trabajo
 - `project/canonical-docs.md` — jerarquía documental y autoridad
 
+### Delivery / Releases
+- `02-delivery/versioning-and-releases.md` — fuente canónica para versionado visible de aplicación y procedimiento de release
+- `02-delivery/release-checklist.md` — checklist operacional de release y verificación runtime
+
 ## Principio de arquitectura editorial
 
 Para el banco de preguntas deben mantenerse separadas tres preguntas:
