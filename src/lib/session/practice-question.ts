@@ -16,6 +16,7 @@ export interface SafePracticeItemRecord {
   cognitiveLevel: string | null;
   sourceType: string | null;
   tags: string[] | null;
+  hint: string | null;
 }
 
 export function buildPracticeQuestionViewModel(
@@ -39,6 +40,7 @@ export function buildPracticeQuestionViewModel(
     expectedUserTask: "Leer el enunciado, comparar opciones y seleccionar la alternativa más consistente.",
     cognitiveIntent: "Aplicar criterio disciplinar y justificar el descarte de distractores.",
     difficulty: item.difficulty ?? undefined,
+    hint: item.hint ?? undefined,
     tags: item.tags ?? undefined,
     misconceptionHints: ["Evita responder por intuición; contrasta cada opción con el enunciado."],
     sourceTruthStatus: item.sourceType === "official_source"

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { OnboardingForm } from "@/components/onboarding/onboarding-form";
-import { isLearningProfileOnboardingComplete } from "@/lib/onboarding/status";
 import { requireAuthenticatedProfile } from "@/lib/supabase/guards";
 
 export const dynamic = "force-dynamic";
@@ -32,20 +31,16 @@ export default async function OnboardingPage() {
     .eq("verification_status", "verified")
     .order("position_name", { ascending: true })]);
 
-  if (isLearningProfileOnboardingComplete(learningProfile)) {
-    redirect("/practice");
-  }
-
   return (
     <>
       <section className="page-header">
-        <p className="eyebrow">Onboarding</p>
-        <h1 className="display-title">Configura una base corta para iniciar la práctica.</h1>
+        <p className="eyebrow">PERFIL DE PREPARACIÓN</p>
+        <h1 className="display-title">Primero, dime a qué mérito apuntas.</h1>
         <p className="body-lg">
-          Define el perfil y la meta de trabajo. Las áreas que declares son solo una referencia y no filtran las preguntas.
+          Una configuración breve debe traducirse inmediatamente en una ruta de práctica.
         </p>
         <div className="page-actions">
-          <Link href="/home" className="subtle">← Volver a inicio</Link>
+          <Link href="/home" className="subtle">Volver a inicio</Link>
         </div>
       </section>
 

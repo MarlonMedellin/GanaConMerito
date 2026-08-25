@@ -32,9 +32,10 @@ function IconDashboard() {
 }
 
 const items = [
-  { href: "/home", label: "Home", Icon: IconHome },
+  { href: "/home", label: "Inicio", Icon: IconHome },
   { href: "/practice", label: "Práctica", Icon: IconPractice },
-  { href: "/dashboard", label: "Dashboard", Icon: IconDashboard },
+  { href: "/dashboard", label: "Progreso", Icon: IconDashboard },
+  { href: "/onboarding", label: "Perfil", Icon: IconHome },
 ];
 
 export function AppNav() {

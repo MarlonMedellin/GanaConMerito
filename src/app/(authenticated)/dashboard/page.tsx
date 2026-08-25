@@ -3,6 +3,11 @@ import {
   getDashboardSummaryForCurrentUser,
   getDashboardTopicBreakdownForCurrentUser,
 } from "@/lib/dashboard/summary";
+import {
+  getPriorityFocus,
+  getReadinessLabel,
+  getStrongestSignal,
+} from "@/lib/dashboard/product-insights";
 import { requireAuthenticatedUser } from "@/lib/supabase/guards";
 import { formatAreaCompetency, formatTechnicalLabel } from "@/lib/ui/format-label";
 
@@ -45,23 +50,16 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
   const contextCopy = isSessionView
     ? "Vista de la sesión seleccionada."
     : "Vista acumulada de tu actividad registrada.";
-  const activeRowsByCompetency = new Map(activeRows.map((row) => [row.competency, row]));
-  const topStrong = activeSummary.strongestCompetencies
-    .map((competency) => activeRowsByCompetency.get(competency))
-    .filter((row): row is NonNullable<typeof row> => Boolean(row))
-    .slice(0, 2);
-  const topWeak = activeSummary.weakestCompetencies
-    .map((competency) => activeRowsByCompetency.get(competency))
-    .filter((row): row is NonNullable<typeof row> => Boolean(row))
-    .slice(0, 2);
+  const priorityFocus = getPriorityFocus(activeRows);
+  const strongestSignal = getStrongestSignal(activeRows);
 
   return (
     <>
       <section className="page-header metrics-header">
-        <p className="eyebrow">Métricas</p>
-        <h1 className="display-title">Actividad y señales útiles para orientar la práctica.</h1>
+        <p className="eyebrow">DIAGNÓSTICO ACCIONABLE</p>
+        <h1 className="display-title">Tu progreso debe decirte qué hacer después.</h1>
         <p className="body-lg">
-          Esta vista prioriza intentos y precisión observada. Las conclusiones fuertes requieren más evidencia.
+          No basta con mostrar precisión. La información del banco de preguntas te permite convertir el desempeño en una ruta de preparación.
         </p>
         <div className="inline-cluster">
           <span className={`segment-pill ${!isSessionView ? "active" : ""}`}>Histórico</span>
@@ -70,16 +68,21 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
         </div>
       </section>
 
-      <section className="metric-grid">
+      <section className="metric-grid metric-grid-3">
         <article className="metric-card">
-          <span className="metric-label">Precisión {isSessionView ? "sesión" : "global"}</span>
+          <span className="metric-label">PRECISIÓN GLOBAL</span>
           <strong className="metric-value">{activeAccuracy}%</strong>
-          <span className="metric-delta">{trendCopy}</span>
+          <span className="subtle">{activeSummary.totalAttempts} intentos</span>
         </article>
         <article className="metric-card">
-          <span className="metric-label">Intentos</span>
-          <strong className="metric-value">{activeSummary.totalAttempts}</strong>
-          <span className="subtle">{attemptsCopy}</span>
+          <span className="metric-label">MEJOR SEÑAL</span>
+          <strong className="metric-value">{strongestSignal ? `${strongestSignal.percent}%` : "No disponible aún"}</strong>
+          <span className="subtle">{strongestSignal ? formatTechnicalLabel(strongestSignal.row.competency) : "sin evidencia suficiente"}</span>
+        </article>
+        <article className="metric-card">
+          <span className="metric-label">FOCO PRIORITARIO</span>
+          <strong className="metric-value">{priorityFocus ? `${priorityFocus.percent}%` : "Completa más práctica"}</strong>
+          <span className="subtle">{priorityFocus ? formatTechnicalLabel(priorityFocus.row.competency) : attemptsCopy}</span>
         </article>
       </section>
 
@@ -104,7 +107,7 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
           </div>
           <div className="tutor-chip mt-18">
             <div>
-              <p className="metric-label m-0">Tutor GCM</p>
+              <p className="metric-label m-0">Tutor AI GCM 🤖</p>
               <p className="body-sm mt-8 m-0">
                 {activeSummary.weakestCompetencies.length > 0
                   ? `Siguiente foco sugerido: ${formatTechnicalLabel(activeSummary.weakestCompetencies[0])}. ${activeSummary.recommendedAction}`
@@ -137,25 +140,29 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
       <section className="two-column-grid">
         <article className="list-card">
           <div className="inline-cluster cluster-between">
-            <h2 className="section-title panel-title-md">Áreas con mejores resultados observados</h2>
+            <h2 className="section-title panel-title-md">Mapa de preparación</h2>
           </div>
-          {topStrong.length > 0 ? topStrong.map((row) => (
+          {activeRows.length > 0 ? activeRows.map((row) => {
+            const accuracy = getAccuracy(row.correct_count, row.attempts);
+            return (
             <div key={`${row.area}-${row.competency}`} className="list-row">
               <span>{formatAreaCompetency(row.area, row.competency)}</span>
-              <strong>{getAccuracy(row.correct_count, row.attempts)}%</strong>
+              <strong>{accuracy}% · {getReadinessLabel(accuracy / 100)}</strong>
             </div>
-          )) : <p className="subtle">Aún no hay evidencia suficiente para hablar de fortalezas consolidadas.</p>}
+            );
+          }) : <p className="subtle">Aún no hay evidencia suficiente para construir mapa de preparación.</p>}
+          <p className="subtle subtle-xs">Categorías orientativas basadas en desempeño observado; no son clasificación psicométrica validada.</p>
         </article>
-        <article className="list-card">
-          <div className="inline-cluster cluster-between">
-            <h2 className="section-title panel-title-md">Focos de refuerzo</h2>
-          </div>
-          {topWeak.length > 0 ? topWeak.map((row) => (
-            <div key={`${row.area}-${row.competency}`} className="list-row">
-              <span>{formatAreaCompetency(row.area, row.competency)}</span>
-              <strong>{getAccuracy(row.correct_count, row.attempts)}%</strong>
-            </div>
-          )) : <p className="subtle">Todavía no hay señal suficiente para priorizar un refuerzo claro.</p>}
+        <article className="list-card recommendation-card">
+          <p className="eyebrow">RECOMENDACIÓN</p>
+          <h2 className="section-title panel-title-md">Haz ahora una micro-sesión de práctica</h2>
+          <p className="body-sm">
+            {priorityFocus
+              ? `Prioriza ${formatTechnicalLabel(priorityFocus.row.competency)} con feedback del Tutor AI GCM 🤖.`
+              : "Completa más práctica para identificar un foco con evidencia suficiente."}
+          </p>
+          <p className="subtle subtle-xs">El botón abre práctica general hasta implementar targeting adaptativo explícito por competencia.</p>
+          <Link href="/practice" className="primary-button primary-button-fit mt-12">Entrenar este foco →</Link>
         </article>
       </section>
       <section className="surface-card panel-compact">

@@ -1,7 +1,15 @@
 import Link from "next/link";
-import { getDashboardSummaryForCurrentUser } from "@/lib/dashboard/summary";
+import {
+  getDashboardSummaryForCurrentUser,
+  getDashboardTopicBreakdownForCurrentUser,
+} from "@/lib/dashboard/summary";
+import {
+  getPriorityFocus,
+  getStrongestSignal,
+} from "@/lib/dashboard/product-insights";
 import { isLearningProfileOnboardingComplete } from "@/lib/onboarding/status";
 import { requireAuthenticatedProfile } from "@/lib/supabase/guards";
+import { formatTechnicalLabel } from "@/lib/ui/format-label";
 
 export const dynamic = "force-dynamic";
 
@@ -11,7 +19,7 @@ export default async function HomePage() {
     return null;
   }
 
-  const { supabase, user, profile } = auth;
+  const { supabase, profile } = auth;
 
   const { data: learningProfile } = profile
     ? await supabase
@@ -23,91 +31,94 @@ export default async function HomePage() {
 
   const onboardingComplete = isLearningProfileOnboardingComplete(learningProfile);
   const primaryHref = onboardingComplete ? "/practice" : "/onboarding";
-  const primaryLabel = onboardingComplete ? "Practicar ahora" : "Completar configuración";
-  const summary = await getDashboardSummaryForCurrentUser();
+  const primaryLabel = onboardingComplete ? "Continuar mi preparación →" : "Completar configuración →";
+  const [summary, breakdown] = await Promise.all([
+    getDashboardSummaryForCurrentUser(),
+    getDashboardTopicBreakdownForCurrentUser(),
+  ]);
   const historical = summary.historical;
   const accuracy = historical.totalAttempts > 0
     ? Number(((historical.totalCorrect / historical.totalAttempts) * 100).toFixed(0))
-    : 0;
-  const progress = historical.totalAttempts > 0 ? Math.min(100, Math.max(8, accuracy)) : 18;
-  const activeGoal = learningProfile?.active_goal?.trim() || "Práctica lista para empezar.";
-  const observedResult = historical.totalAttempts > 0
-    ? `${historical.totalCorrect}/${historical.totalAttempts} respuestas correctas`
-    : "Sin práctica registrada";
+    : null;
+  const priorityFocus = getPriorityFocus(breakdown.historical);
+  const strongestSignal = getStrongestSignal(breakdown.historical);
 
   return (
     <>
-      <section className="page-header home-header">
-        <p className="eyebrow">Panel de control</p>
-        <h1 className="display-title">Bienvenido, {user.email?.split("@")[0]}</h1>
-      </section>
-
-      <section className="hero-card hero-card-premium">
-        <div className="inline-cluster cluster-between cluster-start">
-          <div className="hero-content">
-            <p className="eyebrow">{onboardingComplete ? "Tu enfoque actual" : "Acción inmediata"}</p>
-            <h2 className="section-title">
-              {onboardingComplete 
-                ? activeGoal 
-                : "Completa tu configuración inicial."}
-            </h2>
-            <p className="body-sm mt-8">
-              {onboardingComplete
-                ? "Entra a Practice para responder preguntas y usar Tutor GCM dentro de cada ejercicio."
-                : "Define un perfil y una meta breve para orientar la experiencia de práctica."}
-            </p>
-          </div>
-          {!onboardingComplete && <span className="status-pill warning">Pendiente</span>}
-        </div>
-        
-        <div className="page-actions mt-24">
-          <Link href={primaryHref} className="primary-button button-grow">
-            {primaryLabel} →
-          </Link>
-          {onboardingComplete && (
-            <Link href="/dashboard" className="secondary-button button-grow">
-              Revisar progreso
+      <section className="home-hero">
+        <div className="home-hero-copy">
+          <p className="eyebrow">PREPARACIÓN INTELIGENTE PARA CONCURSOS DE MÉRITO CNSC</p>
+          <h1 className="display-title">No practiques más.<br />Practica mejor.</h1>
+          <p className="body-lg">
+            GanaConMérito convierte cada respuesta en una señal para decidir qué reforzar después. Banco de preguntas verificadas con criterios técnicos, feedback explicativo y un Tutor AI GCM 🤖 que acompaña sin regalarte la respuesta.
+          </p>
+          <div className="page-actions mt-24">
+            <Link href={primaryHref} className="primary-button primary-button-fit">
+              {primaryLabel}
             </Link>
-          )}
+            {onboardingComplete ? (
+              <Link href="/dashboard" className="secondary-button secondary-button-fit">
+                Ver mi diagnóstico
+              </Link>
+            ) : null}
+          </div>
         </div>
+
+        <article className="hero-card hero-card-premium next-action-card">
+          <p className="eyebrow">TU PRÓXIMA MEJOR ACCIÓN</p>
+          {priorityFocus ? (
+            <>
+              <h2 className="section-title">Refuerza {formatTechnicalLabel(priorityFocus.row.competency)}</h2>
+              <p className="body-sm mt-8">Prioridad basada en desempeño observado; no es una medición psicométrica calibrada.</p>
+              <strong className="hero-metric">{priorityFocus.percent}%</strong>
+              <span className="body-sm">{priorityFocus.row.attempts} intentos</span>
+              <div className="progress-rail mt-20">
+                <div className="progress-fill lime" style={{ width: `${Math.max(8, priorityFocus.percent)}%` }} />
+              </div>
+            </>
+          ) : (
+            <>
+              <h2 className="section-title">Empieza tu diagnóstico</h2>
+              <p className="body-sm mt-8">Aún no hay intentos suficientes para priorizar una competencia.</p>
+              <Link href={primaryHref} className="primary-button primary-button-fit mt-20">Continuar práctica</Link>
+            </>
+          )}
+        </article>
       </section>
 
-      <section className="metric-grid">
+      <section className="metric-grid metric-grid-3">
         <article className="metric-card">
-          <span className="metric-label">Precisión</span>
-          <strong className="metric-value">{accuracy}%</strong>
-          <div className="progress-rail progress-compact">
-            <div className="progress-fill" style={{ width: `${progress}%` }} />
-          </div>
-        </article>
-        <article className="metric-card">
-          <span className="metric-label">Intentos</span>
+          <span className="metric-label">PRÁCTICA ÚTIL</span>
           <strong className="metric-value">{historical.totalAttempts}</strong>
+          <span className="subtle">reactivos respondidos</span>
+        </article>
+        <article className="metric-card">
+          <span className="metric-label">PRECISIÓN</span>
+          <strong className="metric-value">{accuracy === null ? "No disponible aún" : `${accuracy}%`}</strong>
+          <span className="subtle">correctas sobre intentos guardados</span>
+        </article>
+        <article className="metric-card">
+          <span className="metric-label">FORTALEZA</span>
+          <strong className="metric-value">{strongestSignal ? `${strongestSignal.percent}%` : "No disponible aún"}</strong>
+          <span className="subtle">{strongestSignal ? formatTechnicalLabel(strongestSignal.row.competency) : "sin evidencia suficiente"}</span>
         </article>
       </section>
 
-      <section className="two-column-grid">
-        <article className="surface-card panel-compact">
-          <p className="eyebrow">Actividad observada</p>
-          <h2 className="section-title panel-title-sm">{observedResult}</h2>
-          <p className="subtle mt-4">Basado solo en intentos guardados.</p>
-          
-          <div className="tutor-chip mt-20">
-            <p className="body-sm m-0">
-              {onboardingComplete 
-                ? "Tutor GCM está disponible dentro de Practice cuando estés resolviendo una pregunta."
-                : "Completa la configuración para entrar a Practice."}
-            </p>
-          </div>
-        </article>
-
-        <article className="surface-card panel-compact">
-          <p className="eyebrow">Próximo paso</p>
-          <h2 className="section-title panel-title-sm">{onboardingComplete ? "Sesión de práctica" : "Formulario inicial"}</h2>
-          <Link href={primaryHref} className="subtle mt-12 inline-link">
-            {primaryLabel} →
+      <section className="surface-card product-session-card">
+        <div>
+          <p className="eyebrow">SIGUIENTE SESIÓN</p>
+          <h2 className="section-title">Continúa práctica con feedback del Tutor AI GCM 🤖</h2>
+          <p className="body-sm">
+            {priorityFocus
+              ? `Foco observado: ${formatTechnicalLabel(priorityFocus.row.competency)}. La sesión todavía no consume explícitamente este foco como filtro adaptativo.`
+              : "La práctica general sumará evidencia para orientar la siguiente acción."}
+          </p>
+        </div>
+        <div className="page-actions">
+          <Link href={primaryHref} className="primary-button primary-button-fit">
+            Continuar práctica
           </Link>
-        </article>
+        </div>
       </section>
     </>
   );

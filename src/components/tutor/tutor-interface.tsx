@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { TutorOutput } from "@/types/tutor-turn";
+import { useEffect, useState } from "react";
 
 interface TutorInterfaceProps {
   sessionId: string;
@@ -9,6 +8,14 @@ interface TutorInterfaceProps {
   answered?: boolean;
   fallbackMessage?: string;
 }
+
+interface TutorMessage {
+  role: "assistant" | "user";
+  text: string;
+}
+
+const INITIAL_TUTOR_MESSAGE =
+  "Tutor AI GCM 🤖: Antes de responderte, te ayudaré a pensar. Pregúntame sobre el caso o sobre cómo analizar las alternativas; puedo explicarte por qué una alternativa es plausible o no plausible, sin revelarte la clave.";
 
 export function getTutorGuidedActions(answered: boolean) {
   return answered ? [
@@ -25,20 +32,17 @@ export function getTutorGuidedActions(answered: boolean) {
   ];
 }
 
-export function TutorInterface({ sessionId, currentItemId, answered = false, fallbackMessage }: TutorInterfaceProps) {
-  const guidedActions = getTutorGuidedActions(answered);
-  const [isOpen, setIsOpen] = useState(true);
+export function TutorInterface({ sessionId, currentItemId, fallbackMessage }: TutorInterfaceProps) {
   const [message, setMessage] = useState("");
-  const [lastResponse, setLastResponse] = useState<TutorOutput | null>(null);
-  const [fallbackVisible, setFallbackVisible] = useState(false);
+  const [messages, setMessages] = useState<TutorMessage[]>([
+    { role: "assistant", text: INITIAL_TUTOR_MESSAGE },
+  ]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const messageInputRef = useRef<HTMLTextAreaElement | null>(null);
-  const draftStorageKey = `tutor-gcm:draft:${sessionId}:${currentItemId}`;
+  const draftStorageKey = `tutor-ai-gcm:draft:${sessionId}:${currentItemId}`;
 
   useEffect(() => {
-    setLastResponse(null);
-    setFallbackVisible(false);
+    setMessages([{ role: "assistant", text: INITIAL_TUTOR_MESSAGE }]);
     setError(null);
 
     if (typeof window === "undefined") {
@@ -60,10 +64,14 @@ export function TutorInterface({ sessionId, currentItemId, answered = false, fal
     window.sessionStorage.removeItem(draftStorageKey);
   }, [draftStorageKey, message]);
 
-  async function sendMessage(nextMessage: string, options?: { clearMessage?: boolean }) {
-    if (!nextMessage.trim() || loading) return;
+  async function handleSendMessage(event: React.FormEvent) {
+    event.preventDefault();
+    const nextMessage = message.trim();
+    if (!nextMessage || loading) return;
+
     setLoading(true);
     setError(null);
+    setMessages((current) => [...current, { role: "user", text: nextMessage }]);
 
     try {
       const response = await fetch("/api/tutor/turn", {
@@ -72,25 +80,20 @@ export function TutorInterface({ sessionId, currentItemId, answered = false, fal
         body: JSON.stringify({
           sessionId,
           itemId: currentItemId,
-          message: nextMessage.trim(),
+          message: nextMessage,
         }),
       });
 
       const data = await response.json();
-
       if (!response.ok) {
-        throw new Error(data.error || "Error al consultar al tutor");
+        throw new Error(data.error || "Error al consultar al Tutor AI GCM");
       }
 
-      setLastResponse(data.output);
-      setFallbackVisible(false);
-      if (options?.clearMessage ?? true) {
-        setMessage("");
-      }
+      setMessages((current) => [...current, { role: "assistant", text: data.output.visibleMessage }]);
+      setMessage("");
     } catch (err) {
       if (fallbackMessage) {
-        setFallbackVisible(true);
-        setError(null);
+        setMessages((current) => [...current, { role: "assistant", text: fallbackMessage }]);
       } else {
         setError(err instanceof Error ? err.message : "Error desconocido");
       }
@@ -99,145 +102,55 @@ export function TutorInterface({ sessionId, currentItemId, answered = false, fal
     }
   }
 
-  async function handleSendMessage(e: React.FormEvent) {
-    e.preventDefault();
-    await sendMessage(message);
-  }
-
-  async function handleGuidedAction(action: string) {
-    await sendMessage(action, { clearMessage: false });
-  }
-
-  if (!isOpen) {
-    return (
-      <button
-        type="button"
-        onClick={() => setIsOpen(true)}
-        className="tutor-chip"
-        data-testid="tutor-gcm-open-button"
-        
-      >
-        <div className="tutor-head-main tutor-head-main-open">
-          <div className="avatar-chip avatar-mini">T</div>
-          <div>
-            <p className="eyebrow m-0">Tutor GCM</p>
-            <p className="body-sm m-0">
-              {answered ? "Revisa el feedback con apoyo pedagógico." : "Pide orientación sin recibir la respuesta."}
-            </p>
-          </div>
-        </div>
-        <span className="status-pill premium">Abrir tutor</span>
-      </button>
-    );
-  }
-
   return (
     <section
       className="surface-card tutor-panel"
       data-testid="tutor-gcm-panel"
-      aria-label="Tutor GCM"
+      aria-label="Tutor AI GCM"
     >
       <div className="tutor-head">
         <div className="tutor-head-main">
-          <div className="avatar-chip avatar-mini">T</div>
+          <div className="avatar-chip avatar-mini">🤖</div>
           <div>
-            <p className="eyebrow m-0">Tutor GCM</p>
-            <h3 className="section-title tutor-headline">
-              {answered ? "Entiende el resultado" : "Guía para decidir mejor"}
-            </h3>
+            <p className="eyebrow m-0">Tutor AI GCM 🤖</p>
+            <h3 className="section-title tutor-headline">Ayuda pero no te revelamos la clave</h3>
           </div>
-        </div>
-        <button
-          type="button"
-          onClick={() => setIsOpen(false)}
-          className="subtle tutor-minimize"
-        >
-          Minimizar
-        </button>
-      </div>
-
-      <p className="body-sm m-0">
-        {answered
-          ? "Usa una acción guiada para entender el feedback. También puedes escribir tu duda en texto libre."
-          : "Usa una acción guiada si necesitas apoyo puntual. También puedes escribir tu duda; el tutor orienta sin revelar la clave."}
-      </p>
-
-      <div className="tutor-guided-wrap">
-        <p className="eyebrow m-0">
-          Acciones guiadas recomendadas
-        </p>
-        <p className="subtle subtle-xxs m-0">
-          Elige la acción que mejor describa tu necesidad actual para recibir una ayuda más precisa.
-        </p>
-        <div className="tutor-guided-list">
-          {guidedActions.map((action) => (
-            <button
-              key={action}
-              type="button"
-              className="guided-chip"
-              aria-busy={loading ? "true" : "false"}
-              disabled={loading}
-              onClick={() => handleGuidedAction(action)}
-            >
-              {action}
-            </button>
-          ))}
         </div>
       </div>
 
-      {lastResponse ? (
-        <div className="feedback-card tutor-feedback-card">
-          <p className="body-sm tutor-feedback-text">{lastResponse.visibleMessage}</p>
-          <div className="tutor-response-meta">
-            <span className="subtle subtle-xs">
-              {lastResponse.degraded ? "Respuesta disponible" : "Tutoría orientativa"}
-            </span>
+      <div className="tutor-chat" aria-live="polite">
+        {messages.map((entry, index) => (
+          <div
+            key={`${entry.role}-${index}`}
+            className={entry.role === "user" ? "user-message" : "tutor-message"}
+          >
+            {entry.text}
           </div>
-        </div>
-      ) : null}
+        ))}
+      </div>
 
-      {fallbackVisible && fallbackMessage ? (
-        <div className="feedback-card tutor-feedback-card" data-testid="tutor-gcm-fallback">
-          <p className="body-sm tutor-feedback-text">{fallbackMessage}</p>
-          <div className="tutor-response-meta">
-            <span className="subtle subtle-xs">Feedback editorial disponible; el Tutor está temporalmente limitado.</span>
-          </div>
-        </div>
-      ) : null}
+      {error ? <p className="body-sm tutor-error-text">{error}</p> : null}
 
-      {error ? (
-        <p className="body-sm tutor-error-text">{error}</p>
-      ) : null}
-
-      <form onSubmit={handleSendMessage} className="form-grid-sm" data-testid="tutor-gcm-form">
-        <div className="form-field">
-          <label className="field-label" htmlFor="tutor-gcm-message">Escribe tu consulta al Tutor GCM</label>
-          <textarea
-            ref={messageInputRef}
-            id="tutor-gcm-message"
-            data-testid="tutor-gcm-message"
-            className="text-area text-area-compact"
-            placeholder={answered
-              ? "Ejemplo: ¿Por qué mi opción no responde bien al enunciado?"
-              : "Ejemplo: Estoy entre dos opciones. ¿Qué criterio puedo usar para compararlas sin ver la respuesta?"}
-            value={message}
-            onChange={(event) => setMessage(event.target.value)}
-            disabled={loading}
-          />
-        </div>
+      <form onSubmit={handleSendMessage} className="tutor-input" data-testid="tutor-gcm-form">
+        <label className="field-label" htmlFor="tutor-gcm-message">Escribe tu pregunta para el Tutor AI GCM 🤖</label>
+        <textarea
+          id="tutor-gcm-message"
+          data-testid="tutor-gcm-message"
+          className="text-area text-area-compact"
+          placeholder="Escribe tu pregunta para el Tutor AI GCM 🤖"
+          value={message}
+          onChange={(event) => setMessage(event.target.value)}
+          disabled={loading}
+        />
         <button
           type="submit"
           className="primary-button"
           data-testid="tutor-gcm-submit"
           disabled={loading || !message.trim()}
         >
-          {loading ? "Pensando..." : "Pedir orientación"}
+          {loading ? "Enviando..." : "Enviar"}
         </button>
       </form>
-
-      <p className="subtle subtle-xxs tutor-footnote">
-        El tutor no modifica tu puntaje ni el avance de tu sesión; solo te guía para razonar mejor.
-      </p>
     </section>
   );
 }

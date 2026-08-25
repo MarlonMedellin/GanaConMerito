@@ -78,6 +78,7 @@ export interface PracticeQuestionViewModel {
   expectedUserTask?: string;
   cognitiveIntent?: string;
   difficulty?: number;
+  hint?: string;
   tags?: string[];
   misconceptionHints?: string[];
   sourceTruthStatus?: "source_verified" | "synthesized_governed_unverified" | "missing";

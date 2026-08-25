@@ -81,7 +81,7 @@ export function OnboardingForm(props: {
   return (
     <form className="form-shell" onSubmit={handleSubmit}>
       <label className="form-field">
-        <span className="field-label">Perfil reusable</span>
+        <span className="field-label">Perfil objetivo</span>
         <select
           className="select-input"
           value={targetProfileCode}
@@ -109,7 +109,7 @@ export function OnboardingForm(props: {
       </label>
 
       <label className="form-field">
-        <span className="field-label">Meta activa</span>
+        <span className="field-label">Tu objetivo</span>
         <input
           className="text-input"
           value={activeGoal}
@@ -121,11 +121,11 @@ export function OnboardingForm(props: {
 
       <div className="form-grid two">
         <label className="form-field">
-          <span className="field-label">Estilo de feedback</span>
+          <span className="field-label">Estilo de acompañamiento</span>
           <input className="text-input" value={preferredFeedbackStyle} disabled readOnly />
         </label>
         <label className="form-field">
-          <span className="field-label">Áreas declaradas (opcional) — áreas activas de referencia</span>
+          <span className="field-label">Áreas activas de referencia</span>
           <input
             className="text-input"
             value={activeAreas}
@@ -149,7 +149,7 @@ export function OnboardingForm(props: {
 
       <div className="page-actions">
         <button type="submit" className="primary-button" disabled={loading || !targetProfileCode || !activeGoalValue}>
-          {loading ? "Guardando..." : "Guardar onboarding"}
+          {loading ? "Guardando..." : "Guardar perfil"}
         </button>
       </div>
 
