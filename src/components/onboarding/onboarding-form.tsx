@@ -22,14 +22,16 @@ export function OnboardingForm(props: {
   initialActiveGoal: string;
   initialPreferredFeedbackStyle: string;
   initialActiveAreas: string[];
+  existing?: boolean;
 }) {
   const [targetProfileCode, setTargetProfileCode] = useState(
     props.initialTargetProfileCode || props.targetProfiles[0]?.code || "",
   );
   const [targetOpecId, setTargetOpecId] = useState(props.initialTargetOpecId || "");
-  const [activeGoal, setActiveGoal] = useState(props.initialActiveGoal || "");
-  const [preferredFeedbackStyle] = useState(props.initialPreferredFeedbackStyle || "socratic");
-  const [activeAreas, setActiveAreas] = useState((props.initialActiveAreas || []).join(", "));
+  const [activeGoal, setActiveGoal] = useState(props.initialActiveGoal || "Prepararme para concurso");
+  const [preferredFeedbackStyle] = useState("socratic");
+  const [activeAreas] = useState((props.initialActiveAreas || []).join(", "));
+  const [showOpec, setShowOpec] = useState(Boolean(props.initialTargetOpecId));
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const activeGoalValue = activeGoal.trim();
@@ -49,6 +51,15 @@ export function OnboardingForm(props: {
     () => props.opecs.filter((opec) => opec.profile_code === targetProfileCode),
     [props.opecs, targetProfileCode],
   );
+  const compactProfiles = useMemo(() => {
+    const currentDocente = props.targetProfiles.find((profile) => profile.code === targetProfileCode && profile.code.includes("docente_aula"));
+    const docente = currentDocente ?? props.targetProfiles.find((profile) => profile.code.includes("docente_aula")) ?? props.targetProfiles[0];
+    const general = props.targetProfiles.find((profile) => profile.code !== docente?.code) ?? props.targetProfiles[1];
+    return [
+      docente ? { label: "Docente de aula", code: docente.code } : null,
+      general ? { label: "General", code: general.code } : null,
+    ].filter((profile): profile is { label: string; code: string } => Boolean(profile));
+  }, [props.targetProfiles, targetProfileCode]);
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -79,81 +90,79 @@ export function OnboardingForm(props: {
   }
 
   return (
-    <form className="form-shell" onSubmit={handleSubmit}>
-      <label className="form-field">
-        <span className="field-label">Perfil reusable</span>
-        <select
-          className="select-input"
-          value={targetProfileCode}
-          onChange={(event) => { setTargetProfileCode(event.target.value); setTargetOpecId(""); }}
-          disabled={loading || props.targetProfiles.length === 0}
-        >
-          {props.targetProfiles.length === 0 ? <option value="">No hay perfiles disponibles</option> : null}
-          {props.targetProfiles.map((profile) => (
-            <option key={profile.code} value={profile.code}>
-              {profile.name}
-            </option>
+    <form className="card profile-card" onSubmit={handleSubmit}>
+      <div className="field">
+        <label>Perfil objetivo</label>
+        <div className="choice">
+          {compactProfiles.map((profile) => (
+            <button
+              key={profile.code}
+              type="button"
+              className={
+                targetProfileCode === profile.code ||
+                (profile.label === "Docente de aula" && targetProfileCode.includes("docente_aula"))
+                  ? "active"
+                  : ""
+              }
+              onClick={() => { setTargetProfileCode(profile.code); setTargetOpecId(""); }}
+              disabled={loading}
+            >
+              {profile.label}
+            </button>
           ))}
-        </select>
-      </label>
-
-      <label className="form-field">
-        <span className="field-label">Cargo / referencia OPEC (opcional)</span>
-        <select className="select-input" value={targetOpecId} onChange={(event) => setTargetOpecId(event.target.value)} disabled={loading}>
-          <option value="">Usar solo el perfil reusable</option>
-          {compatibleOpecs.map((opec) => (
-            <option key={opec.id} value={opec.id}>{opec.position_name}</option>
-          ))}
-        </select>
-        <span className="subtle subtle-xs">Las referencias OPEC disponibles son opcionales para orientar la práctica.</span>
-      </label>
-
-      <label className="form-field">
-        <span className="field-label">Meta activa</span>
-        <input
-          className="text-input"
-          value={activeGoal}
-          onChange={(e) => setActiveGoal(e.target.value)}
-          placeholder="Ej.: Preparar una sesión de práctica"
-          required
-        />
-      </label>
-
-      <div className="form-grid two">
-        <label className="form-field">
-          <span className="field-label">Estilo de feedback</span>
-          <input className="text-input" value={preferredFeedbackStyle} disabled readOnly />
-        </label>
-        <label className="form-field">
-          <span className="field-label">Áreas declaradas (opcional) — áreas activas de referencia</span>
-          <input
-            className="text-input"
-            value={activeAreas}
-            onChange={(e) => setActiveAreas(e.target.value)}
-            placeholder="Ej.: matemáticas, lectura crítica"
-          />
-          <span className="subtle subtle-xs">Se guardan como referencia. No filtran ni priorizan las preguntas de la sesión.</span>
-        </label>
+          {props.targetProfiles.length === 0 ? <button type="button" disabled>No disponible</button> : null}
+        </div>
       </div>
 
-      {parsedActiveAreas.length > 0 ? (
-        <div className="surface-card" style={{ padding: 18 }}>
-          <p className="metric-label" style={{ marginTop: 0 }}>Áreas declaradas</p>
-          <div className="inline-cluster">
-            {parsedActiveAreas.map((area) => (
-              <span key={area} className="pill">{area}</span>
-            ))}
-          </div>
+      <div className="field">
+        <label>Tu objetivo</label>
+        <div className="choice">
+          {["Prepararme para concurso", "Diagnosticarme", "Reforzar un tema"].map((goal) => (
+            <button
+              key={goal}
+              type="button"
+              className={activeGoalValue === goal ? "active" : ""}
+              onClick={() => setActiveGoal(goal)}
+              disabled={loading}
+            >
+              {goal}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="field">
+        <label>Estilo de acompañamiento</label>
+        <div className="choice">
+          <button type="button" className="active" disabled={loading}>Socrático</button>
+          <button type="button" disabled>Directo</button>
+          <button type="button" disabled>Breve</button>
+        </div>
+      </div>
+
+      {compatibleOpecs.length > 0 ? (
+        <div className="field secondary-disclosure">
+          <button type="button" className="ghost" onClick={() => setShowOpec((value) => !value)}>
+            Configurar OPEC específica
+          </button>
+          {showOpec ? (
+            <select className="select-input" value={targetOpecId} onChange={(event) => setTargetOpecId(event.target.value)} disabled={loading}>
+              <option value="">Usar solo el perfil reusable</option>
+              {compatibleOpecs.map((opec) => (
+                <option key={opec.id} value={opec.id}>{opec.position_name}</option>
+              ))}
+            </select>
+          ) : null}
         </div>
       ) : null}
 
-      <div className="page-actions">
-        <button type="submit" className="primary-button" disabled={loading || !targetProfileCode || !activeGoalValue}>
-          {loading ? "Guardando..." : "Guardar onboarding"}
+      <div className="actions">
+        <button type="submit" className="primary" disabled={loading || !targetProfileCode || !activeGoalValue}>
+          {loading ? "Guardando..." : props.existing ? "Actualizar mi ruta →" : "Crear mi ruta →"}
         </button>
       </div>
 
-      {error ? <p className="subtle" style={{ color: "var(--error)", margin: 0 }}>{error}</p> : null}
+      {error ? <p className="muted" style={{ color: "var(--error)", margin: 0 }}>{error}</p> : null}
     </form>
   );
 }

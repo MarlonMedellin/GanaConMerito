@@ -73,6 +73,7 @@ export interface PracticeQuestionViewModel {
   topic?: string;
   context?: string;
   questionType?: string;
+  hint?: string;
   cognitiveLevel?: string;
   topicLabel?: string;
   expectedUserTask?: string;

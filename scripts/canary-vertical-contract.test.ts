@@ -13,6 +13,7 @@ const dashboardMetrics = read("src/lib/dashboard/summary-metrics.ts");
 const tutorRoute = read("src/app/api/tutor/turn/route.ts");
 const tutorTraceRepository = read("src/lib/tutor/tutor-trace-repository.ts");
 const observability = read("src/lib/api/canary-observability.ts");
+const onboardingPage = read("src/app/(authenticated)/onboarding/page.tsx");
 const onboardingForm = read("src/components/onboarding/onboarding-form.tsx");
 const onboardingStatus = read("src/lib/onboarding/status.ts");
 const onboardingRoute = read("src/app/api/profile/onboarding/route.ts");
@@ -41,12 +42,17 @@ test("dashboard surfaces auth and ownership failures instead of empty 200 respon
 });
 
 test("dashboard student copy hides internal heuristics and does not overclaim trends", () => {
-  assert.match(dashboardPage, /Aún no hay una serie temporal suficiente para mostrar tendencia/);
+  assert.match(dashboardPage, /Diagnóstico accionable/i);
+  assert.match(dashboardPage, /Tu progreso debe decirte qué hacer después/);
+  assert.match(dashboardPage, /Precisión global/i);
+  assert.match(dashboardPage, /Mejor señal/i);
+  assert.match(dashboardPage, /Foco prioritario/i);
+  assert.match(dashboardPage, /Mapa de preparación/i);
+  assert.match(dashboardPage, /Recomendación/i);
   assert.doesNotMatch(dashboardPage, /Señal de razonamiento/);
   assert.doesNotMatch(dashboardPage, /Índice orientativo/);
   assert.doesNotMatch(dashboardPage, /Session ID/);
   assert.doesNotMatch(dashboardPage, /TutorTraceSummaryCard/);
-  assert.match(dashboardPage, /Detalle por área y competencia/);
   assert.doesNotMatch(dashboardPage, /Nivel estimado/);
   assert.match(dashboardMetrics, /canShowTrend: false/);
   assert.match(dashboardMetrics, /canShowPercentile: false/);
@@ -58,18 +64,28 @@ test("home keeps next action truthful without unsupported activation or level cl
   assert.doesNotMatch(homePage, /Nivel estimado/i);
   assert.doesNotMatch(homePage, /mejores preguntas/i);
   assert.doesNotMatch(homePage, /Practicando en:/i);
-  assert.doesNotMatch(homePage, /Continuar práctica/i);
-  assert.match(homePage, /Practicar ahora/);
-  assert.match(homePage, /Completar configuración/);
-  assert.match(homePage, /Tutor GCM está disponible dentro de Practice/);
+  assert.doesNotMatch(homePage, /Tutor GCM/i);
+  assert.match(homePage, /Preparación inteligente para concursos de mérito CNSC/i);
+  assert.match(homePage, /No practiques más/);
+  assert.match(homePage, /Practica mejor/);
+  assert.match(homePage, /Continuar mi preparación/);
+  assert.match(homePage, /Ver mi diagnóstico/);
+  assert.match(homePage, /Tu próxima mejor acción/i);
+  assert.match(homePage, /Práctica útil/i);
+  assert.match(homePage, /Fortaleza/i);
+  assert.match(homePage, /Tutor AI 🤖/);
 });
 
 test("onboarding makes active areas optional without exposing Canary labels", () => {
-  assert.match(onboardingForm, /Cargo \/ referencia OPEC \(opcional\)/);
+  assert.match(onboardingPage, /Perfil de preparación/i);
+  assert.match(onboardingPage, /Primero, dime a qué mérito apuntas/);
+  assert.match(onboardingForm, /Perfil objetivo/);
+  assert.match(onboardingForm, /Tu objetivo/);
+  assert.match(onboardingForm, /Estilo de acompañamiento/);
+  assert.match(onboardingForm, /Crear mi ruta/);
+  assert.match(onboardingForm, /Actualizar mi ruta/);
   assert.doesNotMatch(onboardingForm, /Canary/);
   assert.doesNotMatch(onboardingForm, /OPEC verificada/);
-  assert.match(onboardingForm, /Áreas declaradas \(opcional\)/);
-  assert.match(onboardingForm, /No filtran ni priorizan las preguntas/);
   assert.doesNotMatch(onboardingForm, /!hasActiveAreas/);
   assert.match(onboardingRoute, /\.default\(\[\]\)/);
   assert.match(onboardingRoute, /onboarding_completed: true/);

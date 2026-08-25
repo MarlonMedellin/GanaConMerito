@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { TutorOutput } from "@/types/tutor-turn";
 
 interface TutorInterfaceProps {
   sessionId: string;
@@ -9,6 +8,14 @@ interface TutorInterfaceProps {
   answered?: boolean;
   fallbackMessage?: string;
 }
+
+interface TutorMessage {
+  role: "assistant" | "user";
+  text: string;
+}
+
+const initialTutorMessage =
+  "Tutor AI 🤖: Antes de responderte, te ayudaré a pensar. Pregúntame sobre el caso o sobre cómo analizar las alternativas; puedo explicarte por qué una alternativa es plausible o no plausible, sin revelarte la clave.";
 
 export function getTutorGuidedActions(answered: boolean) {
   return answered ? [
@@ -25,219 +32,98 @@ export function getTutorGuidedActions(answered: boolean) {
   ];
 }
 
-export function TutorInterface({ sessionId, currentItemId, answered = false, fallbackMessage }: TutorInterfaceProps) {
-  const guidedActions = getTutorGuidedActions(answered);
-  const [isOpen, setIsOpen] = useState(true);
-  const [message, setMessage] = useState("");
-  const [lastResponse, setLastResponse] = useState<TutorOutput | null>(null);
-  const [fallbackVisible, setFallbackVisible] = useState(false);
+export function TutorInterface({ sessionId, currentItemId, fallbackMessage }: TutorInterfaceProps) {
+  const [draft, setDraft] = useState("");
+  const [messages, setMessages] = useState<TutorMessage[]>([{ role: "assistant", text: initialTutorMessage }]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const messageInputRef = useRef<HTMLTextAreaElement | null>(null);
-  const draftStorageKey = `tutor-gcm:draft:${sessionId}:${currentItemId}`;
+  const chatRef = useRef<HTMLDivElement | null>(null);
+  const draftStorageKey = `tutor-ai:draft:${sessionId}:${currentItemId}`;
 
   useEffect(() => {
-    setLastResponse(null);
-    setFallbackVisible(false);
+    setMessages([{ role: "assistant", text: initialTutorMessage }]);
     setError(null);
 
     if (typeof window === "undefined") {
-      setMessage("");
+      setDraft("");
       return;
     }
 
-    setMessage(window.sessionStorage.getItem(draftStorageKey) ?? "");
+    setDraft(window.sessionStorage.getItem(draftStorageKey) ?? "");
   }, [draftStorageKey]);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    if (message.trim()) {
-      window.sessionStorage.setItem(draftStorageKey, message);
+    if (draft.trim()) {
+      window.sessionStorage.setItem(draftStorageKey, draft);
       return;
     }
 
     window.sessionStorage.removeItem(draftStorageKey);
-  }, [draftStorageKey, message]);
+  }, [draft, draftStorageKey]);
 
-  async function sendMessage(nextMessage: string, options?: { clearMessage?: boolean }) {
-    if (!nextMessage.trim() || loading) return;
+  useEffect(() => {
+    chatRef.current?.scrollTo({ top: chatRef.current.scrollHeight });
+  }, [messages]);
+
+  async function handleSendMessage(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const message = draft.trim();
+    if (!message || loading) return;
+
     setLoading(true);
     setError(null);
+    setMessages((current) => [...current, { role: "user", text: message }]);
 
     try {
       const response = await fetch("/api/tutor/turn", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          sessionId,
-          itemId: currentItemId,
-          message: nextMessage.trim(),
-        }),
+        body: JSON.stringify({ sessionId, itemId: currentItemId, message }),
       });
-
       const data = await response.json();
 
       if (!response.ok) {
         throw new Error(data.error || "Error al consultar al tutor");
       }
 
-      setLastResponse(data.output);
-      setFallbackVisible(false);
-      if (options?.clearMessage ?? true) {
-        setMessage("");
-      }
+      setMessages((current) => [...current, { role: "assistant", text: data.output.visibleMessage }]);
+      setDraft("");
     } catch (err) {
-      if (fallbackMessage) {
-        setFallbackVisible(true);
-        setError(null);
-      } else {
-        setError(err instanceof Error ? err.message : "Error desconocido");
-      }
+      const text = fallbackMessage || (err instanceof Error ? err.message : "Error desconocido");
+      setMessages((current) => [...current, { role: "assistant", text }]);
+      setError(fallbackMessage ? null : text);
     } finally {
       setLoading(false);
     }
   }
 
-  async function handleSendMessage(e: React.FormEvent) {
-    e.preventDefault();
-    await sendMessage(message);
-  }
-
-  async function handleGuidedAction(action: string) {
-    await sendMessage(action, { clearMessage: false });
-  }
-
-  if (!isOpen) {
-    return (
-      <button
-        type="button"
-        onClick={() => setIsOpen(true)}
-        className="tutor-chip"
-        data-testid="tutor-gcm-open-button"
-        
-      >
-        <div className="tutor-head-main tutor-head-main-open">
-          <div className="avatar-chip avatar-mini">T</div>
-          <div>
-            <p className="eyebrow m-0">Tutor GCM</p>
-            <p className="body-sm m-0">
-              {answered ? "Revisa el feedback con apoyo pedagógico." : "Pide orientación sin recibir la respuesta."}
-            </p>
-          </div>
-        </div>
-        <span className="status-pill premium">Abrir tutor</span>
-      </button>
-    );
-  }
-
   return (
-    <section
-      className="surface-card tutor-panel"
-      data-testid="tutor-gcm-panel"
-      aria-label="Tutor GCM"
-    >
-      <div className="tutor-head">
-        <div className="tutor-head-main">
-          <div className="avatar-chip avatar-mini">T</div>
-          <div>
-            <p className="eyebrow m-0">Tutor GCM</p>
-            <h3 className="section-title tutor-headline">
-              {answered ? "Entiende el resultado" : "Guía para decidir mejor"}
-            </h3>
+    <section className="card tutor-panel" data-testid="tutor-gcm-panel" aria-label="Tutor AI">
+      <p className="eyebrow">TUTOR AI 🤖</p>
+      <h3>Ayuda pero no te revelamos la clave</h3>
+      <div className="tutor-chat" ref={chatRef}>
+        {messages.map((message, index) => (
+          <div key={`${message.role}-${index}`} className={message.role === "assistant" ? "tutor-message" : "user-message"}>
+            {message.text}
           </div>
-        </div>
-        <button
-          type="button"
-          onClick={() => setIsOpen(false)}
-          className="subtle tutor-minimize"
-        >
-          Minimizar
-        </button>
+        ))}
       </div>
-
-      <p className="body-sm m-0">
-        {answered
-          ? "Usa una acción guiada para entender el feedback. También puedes escribir tu duda en texto libre."
-          : "Usa una acción guiada si necesitas apoyo puntual. También puedes escribir tu duda; el tutor orienta sin revelar la clave."}
-      </p>
-
-      <div className="tutor-guided-wrap">
-        <p className="eyebrow m-0">
-          Acciones guiadas recomendadas
-        </p>
-        <p className="subtle subtle-xxs m-0">
-          Elige la acción que mejor describa tu necesidad actual para recibir una ayuda más precisa.
-        </p>
-        <div className="tutor-guided-list">
-          {guidedActions.map((action) => (
-            <button
-              key={action}
-              type="button"
-              className="guided-chip"
-              aria-busy={loading ? "true" : "false"}
-              disabled={loading}
-              onClick={() => handleGuidedAction(action)}
-            >
-              {action}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {lastResponse ? (
-        <div className="feedback-card tutor-feedback-card">
-          <p className="body-sm tutor-feedback-text">{lastResponse.visibleMessage}</p>
-          <div className="tutor-response-meta">
-            <span className="subtle subtle-xs">
-              {lastResponse.degraded ? "Respuesta disponible" : "Tutoría orientativa"}
-            </span>
-          </div>
-        </div>
-      ) : null}
-
-      {fallbackVisible && fallbackMessage ? (
-        <div className="feedback-card tutor-feedback-card" data-testid="tutor-gcm-fallback">
-          <p className="body-sm tutor-feedback-text">{fallbackMessage}</p>
-          <div className="tutor-response-meta">
-            <span className="subtle subtle-xs">Feedback editorial disponible; el Tutor está temporalmente limitado.</span>
-          </div>
-        </div>
-      ) : null}
-
-      {error ? (
-        <p className="body-sm tutor-error-text">{error}</p>
-      ) : null}
-
-      <form onSubmit={handleSendMessage} className="form-grid-sm" data-testid="tutor-gcm-form">
-        <div className="form-field">
-          <label className="field-label" htmlFor="tutor-gcm-message">Escribe tu consulta al Tutor GCM</label>
-          <textarea
-            ref={messageInputRef}
-            id="tutor-gcm-message"
-            data-testid="tutor-gcm-message"
-            className="text-area text-area-compact"
-            placeholder={answered
-              ? "Ejemplo: ¿Por qué mi opción no responde bien al enunciado?"
-              : "Ejemplo: Estoy entre dos opciones. ¿Qué criterio puedo usar para compararlas sin ver la respuesta?"}
-            value={message}
-            onChange={(event) => setMessage(event.target.value)}
-            disabled={loading}
-          />
-        </div>
-        <button
-          type="submit"
-          className="primary-button"
-          data-testid="tutor-gcm-submit"
-          disabled={loading || !message.trim()}
-        >
-          {loading ? "Pensando..." : "Pedir orientación"}
+      <form className="tutor-input" onSubmit={handleSendMessage} data-testid="tutor-gcm-form">
+        <textarea
+          id="tutor-gcm-message"
+          data-testid="tutor-gcm-message"
+          placeholder="Escribe tu pregunta para el Tutor AI 🤖"
+          value={draft}
+          onChange={(event) => setDraft(event.target.value)}
+          disabled={loading}
+        />
+        <button type="submit" className="primary" data-testid="tutor-gcm-submit" disabled={loading || !draft.trim()}>
+          {loading ? "Enviando..." : "Enviar"}
         </button>
       </form>
-
-      <p className="subtle subtle-xxs tutor-footnote">
-        El tutor no modifica tu puntaje ni el avance de tu sesión; solo te guía para razonar mejor.
-      </p>
+      {error ? <p className="small tutor-error-text">{error}</p> : null}
     </section>
   );
 }

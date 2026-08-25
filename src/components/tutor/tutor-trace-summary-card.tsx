@@ -54,14 +54,14 @@ export function TutorTraceSummaryCard() {
         const payload = await response.json();
 
         if (!response.ok) {
-          throw new Error(payload?.error ?? "No fue posible cargar el resumen del Tutor GCM.");
+          throw new Error(payload?.error ?? "No fue posible cargar el resumen del Tutor AI.");
         }
 
         if (!active) return;
         setSummary(payload as TutorTraceSummary);
       } catch (e) {
         if (!active) return;
-        setError(e instanceof Error ? e.message : "Error inesperado al cargar el resumen del Tutor GCM.");
+        setError(e instanceof Error ? e.message : "Error inesperado al cargar el resumen del Tutor AI.");
       } finally {
         if (active) setLoading(false);
       }
@@ -83,7 +83,7 @@ export function TutorTraceSummaryCard() {
     <article className="surface-card panel-compact">
       <div className="inline-cluster cluster-between">
         <div>
-          <p className="eyebrow">Tutor GCM</p>
+          <p className="eyebrow">Tutor AI 🤖</p>
           <h2 className="section-title">Resumen de uso reciente</h2>
         </div>
         <span className="status-pill">Solo lectura</span>

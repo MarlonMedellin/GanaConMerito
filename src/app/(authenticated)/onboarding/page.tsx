@@ -1,7 +1,5 @@
-import Link from "next/link";
 import { redirect } from "next/navigation";
 import { OnboardingForm } from "@/components/onboarding/onboarding-form";
-import { isLearningProfileOnboardingComplete } from "@/lib/onboarding/status";
 import { requireAuthenticatedProfile } from "@/lib/supabase/guards";
 
 export const dynamic = "force-dynamic";
@@ -32,32 +30,25 @@ export default async function OnboardingPage() {
     .eq("verification_status", "verified")
     .order("position_name", { ascending: true })]);
 
-  if (isLearningProfileOnboardingComplete(learningProfile)) {
-    redirect("/practice");
-  }
-
   return (
     <>
-      <section className="page-header">
-        <p className="eyebrow">Onboarding</p>
-        <h1 className="display-title">Configura una base corta para iniciar la práctica.</h1>
-        <p className="body-lg">
-          Define el perfil y la meta de trabajo. Las áreas que declares son solo una referencia y no filtran las preguntas.
+      <section className="page onboard">
+        <p className="eyebrow">PERFIL DE PREPARACIÓN</p>
+        <h1>Primero, dime a qué mérito apuntas.</h1>
+        <p className="lead">
+          Una configuración breve debe traducirse inmediatamente en una ruta de práctica.
         </p>
-        <div className="page-actions">
-          <Link href="/home" className="subtle">← Volver a inicio</Link>
-        </div>
+        <OnboardingForm
+          initialTargetProfileCode={learningProfile?.target_profile_code ?? targetProfiles?.[0]?.code ?? ""}
+          initialTargetOpecId={learningProfile?.target_opec_id ?? ""}
+          targetProfiles={targetProfiles ?? []}
+          opecs={opecs ?? []}
+          initialActiveGoal={learningProfile?.active_goal ?? ""}
+          initialPreferredFeedbackStyle={learningProfile?.preferred_feedback_style ?? "socratic"}
+          initialActiveAreas={learningProfile?.active_areas ?? []}
+          existing={Boolean(learningProfile?.onboarding_completed)}
+        />
       </section>
-
-      <OnboardingForm
-        initialTargetProfileCode={learningProfile?.target_profile_code ?? targetProfiles?.[0]?.code ?? ""}
-        initialTargetOpecId={learningProfile?.target_opec_id ?? ""}
-        targetProfiles={targetProfiles ?? []}
-        opecs={opecs ?? []}
-        initialActiveGoal={learningProfile?.active_goal ?? ""}
-        initialPreferredFeedbackStyle={learningProfile?.preferred_feedback_style ?? "socratic"}
-        initialActiveAreas={learningProfile?.active_areas ?? []}
-      />
     </>
   );
 }

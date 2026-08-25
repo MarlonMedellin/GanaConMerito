@@ -25,7 +25,7 @@ export default async function LoginPage() {
           <div className="brand-dot" />
         </div>
         <p className="eyebrow">Acceso seguro</p>
-        <h1 className="display-title">GanaConMerito</h1>
+        <h1 className="display-title">GanaConMérito</h1>
         <h2 className="section-title" style={{ marginTop: 14 }}>Preparación académica con foco, claridad y progreso trazable.</h2>
         <p className="body-lg" style={{ marginTop: 12 }}>
           Entra con Google para retomar práctica, revisar tu avance y trabajar sobre una superficie móvil más limpia y directa.
