@@ -63,6 +63,14 @@ Debe existir igualdad entre:
 - commit hash
 - build time
 - version
+- release date
+
+La política canónica para versionado visible de aplicación y procedimiento de
+release es `docs/02-delivery/versioning-and-releases.md`. Antes de merge de
+release, Canary, producción o hotfix se deben verificar `CURRENT_APP_VERSION`,
+`CURRENT_RELEASE_DATE` y `CANDIDATE_SHA`; después del merge se debe registrar
+`FINAL_RELEASE_SHA`; después del deploy se debe verificar visualmente
+`ReleaseStamp`.
 
 ## QA minima obligatoria
 

@@ -33,6 +33,12 @@ Este repositorio concentra código, documentación operativa, decisiones técnic
 - Contenedorización: Docker
 - Scripts auxiliares: Node.js, TypeScript y Python estándar
 
+## Versioning / Releases
+La fuente canónica de versionado visible de aplicación es `VERSION.json`, con
+política y procedimiento en `docs/02-delivery/versioning-and-releases.md`.
+Antes de cualquier release, Canary, producción o hotfix se debe verificar versión,
+release date, candidate SHA y runtime SHA.
+
 ## Estructura documental objetivo
 - `docs/01-product/`: visión, backlog, requerimientos
 - `docs/02-delivery/`: sprint log, changelog, releases

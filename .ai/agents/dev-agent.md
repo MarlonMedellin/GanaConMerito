@@ -43,10 +43,12 @@ Implementar funcionalidad alineada con specs y decisiones aprobadas.
 - revisar contexto mínimo
 - confirmar ADR si aplica
 - revisar deuda del módulo
+- para release, Canary, producción o hotfix, leer `docs/02-delivery/versioning-and-releases.md` y verificar `CURRENT_APP_VERSION`, `CURRENT_RELEASE_DATE` y `CANDIDATE_SHA`
 - si toca preguntas, no leer `content/items/no-beta-v1/` como banco activo
 - si cambia la cohorte, regenerar `content/items/beta-v1/` con `scripts/consolidate_question_bank_beta.py`
 
 ## checklist al terminar
 - actualizar docs afectadas
+- si hubo merge/deploy de release, registrar `FINAL_RELEASE_SHA` y verificar visualmente `ReleaseStamp`
 - registrar workaround como deuda si existió
 - validar JSON beta y rutas de `scripts/question-bank-current-corpus.ts` si se tocan loaders

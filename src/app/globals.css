@@ -1178,6 +1178,34 @@ pre {
   font-size: 12px;
 }
 
+.release-stamp {
+  width: min(calc(100% - 32px), var(--content-width));
+  margin: 0 auto;
+  padding: 10px 0 24px;
+  color: var(--text-muted);
+  font-size: 11px;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.release-stamp code {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* UI States: Loading, Empty, Error */
 .loading-state {
   display: flex;

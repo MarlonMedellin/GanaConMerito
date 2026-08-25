@@ -32,10 +32,14 @@ Cuando un archivo crítico sea modificado, el agente debe revisar archivos relac
 | AGENTS.md | docs/05-ops/, status.md, plantillas, trazabilidad | Alta |
 | docs/project/status.md | sprint-log.md, change-log.md, QA/runtime reports | Alta |
 | docs/02-delivery/sprint-log.md | status.md, change-log.md, backlog | Alta |
-| docs/02-delivery/change-log.md | sprint-log.md, status.md | Alta |
+| docs/02-delivery/change-log.md | sprint-log.md, status.md, versioning-and-releases si cambia release/version | Alta |
+| docs/02-delivery/versioning-and-releases.md | VERSION.json, AGENTS.md, README.md, docs/README.md, runtime/release docs, agentes IA | Alta |
 | docs/01-product/backlog.md | status.md, sprint-log.md | Media |
 | docs/04-quality/ | scripts de test, runtime reports, status.md | Alta |
 | docs/05-ops/ | AGENTS.md, release/runtime docs | Alta |
+| VERSION.json | app-version.ts, ReleaseStamp, changelog, release checklist, runtime/release docs | Alta |
+| src/lib/app-version.ts | VERSION.json, ReleaseStamp, tests, versioning policy | Alta |
+| src/components/release/ | VERSION.json, build-info, QA runtime smoke, release docs | Alta |
 | scripts/validate-question-bank.ts | taxonomy, content/items/, quality docs | Alta |
 | src/domain/taxonomy/ | content/items/, taxonomy docs | Alta |
 | src/domain/tutor/ | tutor contracts, QA, status.md | Alta |
@@ -53,7 +57,7 @@ Cuando un archivo crítico sea modificado, el agente debe revisar archivos relac
 | docs/database/v4-clean-baseline.md | migrations, runtime V4, security, status, content-sync | Alta |
 | scripts/content-sync.ts o scripts/lib/content-sync-* | migrations, content-sync, quality-gates, workflows | Alta |
 | supabase/migrations/ | docs/database/schema.md, contratos DB, runtime/release, status si afecta despliegue | Alta |
-| package.json | CI, QA docs, runtime docs | Media |
+| package.json | CI, QA docs, runtime docs, versioning policy si cambia metadata de version | Media |
 
 ## Reglas específicas de knowledge/targeting
 
