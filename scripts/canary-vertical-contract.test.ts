@@ -45,13 +45,21 @@ test("dashboard student copy hides internal heuristics and does not overclaim tr
   assert.match(dashboardPage, /Diagnóstico accionable/i);
   assert.match(dashboardPage, /Tu progreso debe decirte qué hacer después/);
   assert.match(dashboardPage, /Precisión global/i);
-  assert.match(dashboardPage, /Mejor señal/i);
-  assert.match(dashboardPage, /Foco prioritario/i);
+  assert.match(dashboardPage, /FORTALEZA/);
+  assert.match(dashboardPage, /ÚLTIMA PRÁCTICA/);
+  assert.match(dashboardPage, /EN QUÉ DEBO MEJORAR/);
+  assert.match(dashboardPage, /ACUMULADO HISTÓRICO/);
   assert.match(dashboardPage, /Mapa de preparación/i);
   assert.match(dashboardPage, /Recomendación/i);
+  assert.match(dashboardPage, /getDashboardSummaryForCurrentUser\(requestedSessionId\)/);
+  assert.match(dashboardPage, /getDashboardTopicBreakdownForCurrentUser\(requestedSessionId\)/);
+  assert.match(dashboardPage, /breakdown\.currentSession/);
   assert.doesNotMatch(dashboardPage, /Señal de razonamiento/);
   assert.doesNotMatch(dashboardPage, /Índice orientativo/);
   assert.doesNotMatch(dashboardPage, /Session ID/);
+  assert.doesNotMatch(dashboardPage, /MEJOR SEÑAL/);
+  assert.doesNotMatch(dashboardPage, /FOCO PRIORITARIO/);
+  assert.doesNotMatch(dashboardPage, /Entrenar este foco/);
   assert.doesNotMatch(dashboardPage, /TutorTraceSummaryCard/);
   assert.doesNotMatch(dashboardPage, /Nivel estimado/);
   assert.match(dashboardMetrics, /canShowTrend: false/);
@@ -69,11 +77,15 @@ test("home keeps next action truthful without unsupported activation or level cl
   assert.match(homePage, /No practiques más/);
   assert.match(homePage, /Practica mejor/);
   assert.match(homePage, /Continuar mi preparación/);
-  assert.match(homePage, /Ver mi diagnóstico/);
+  assert.match(homePage, /Ver mi progreso/);
+  assert.match(homePage, /Debo mejorar en/);
   assert.match(homePage, /Tu próxima mejor acción/i);
   assert.match(homePage, /Práctica útil/i);
   assert.match(homePage, /Fortaleza/i);
   assert.match(homePage, /Tutor AI 🤖/);
+  assert.doesNotMatch(homePage, /Ver mi diagnóstico/);
+  assert.doesNotMatch(homePage, /Continuar práctica/);
+  assert.doesNotMatch(homePage, /Refuerza \$\{formatTechnicalLabel/);
 });
 
 test("onboarding makes active areas optional without exposing Canary labels", () => {
@@ -106,9 +118,9 @@ test("practice hides editorial metadata and heuristic score cards", () => {
 });
 
 test("common V4 technical labels have human-readable representations", () => {
-  assert.match(formatLabel, /planeacion_curricular: "Planeación curricular"/);
-  assert.match(formatLabel, /decision_pedagogica: "Decisión pedagógica"/);
-  assert.match(formatLabel, /gestion_educativa: "Gestión educativa"/);
+  assert.doesNotMatch(formatLabel, /decision_pedagogica: "Decisión pedagógica"/);
+  assert.match(formatLabel, /applySpanishAccentHints/);
+  assert.match(formatLabel, /replace\(\/\\bdecision\\b\/g, "decisión"\)/);
 });
 
 test("Tutor remains owned, deterministic and trace-backed", () => {
