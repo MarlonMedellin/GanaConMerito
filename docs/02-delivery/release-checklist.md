@@ -9,6 +9,29 @@ Antes de release, Canary, producción o hotfix, registrar `CURRENT_APP_VERSION`,
 `CURRENT_RELEASE_DATE` y `CANDIDATE_SHA`. Después de merge, registrar
 `FINAL_RELEASE_SHA`. Después de deploy, verificar visualmente `ReleaseStamp`.
 
+## v0.10.0 / V4.1 release preparation
+- CURRENT_APP_VERSION=0.9.1
+- TARGET_APP_VERSION=0.10.0
+- TARGET_RELEASE_DATE=2026-08-30
+- CANDIDATE_BASE_SHA=b7e20a163dd9fe510bbb7fe26595bfd805f8b903
+- FINAL_RELEASE_SHA=PENDING
+
+### Evidencia reutilizada
+- Content Sync: APPLIED_AND_VERIFIED.
+- G6: GREEN_CANDIDATE.
+- CAN-004: GREEN.
+- Runtime activation gate: authorized.
+- Candidate Supabase: `dhiytzbwodfvdrnwhkcw`.
+
+### Pendiente antes de cierre operacional
+- Merge de release.
+- FINAL_RELEASE_SHA.
+- Deploy.
+- Runtime SHA.
+- ReleaseStamp v0.10.0.
+- Smoke postdeploy.
+- Exposición de usuarios.
+
 ## Snapshot beta candidata 0.6.0
 - Fecha de homologacion documental: 2026-08-20.
 - Commit de codigo release verificado: `9695d40`.

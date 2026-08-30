@@ -19,6 +19,33 @@ last_reviewed: 2026-08-23
 - Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
 - Update trigger: governance, delivery, documentation, drift
 
+## 2026-08-30 — v0.10.0 V4.1 release preparation
+- tipo: release+governance+content-runtime
+- modulo: question-bank-v4.1
+- resumen: Se prepara el release MINOR `v0.10.0` para contener el corte V4.1 ya
+  aprobado, manteniendo deploy, exposición de usuarios y mutaciones Supabase fuera
+  de alcance.
+- cambio principal: el corte V4.1 incorpora `sourceId` gobernado en 248/248
+  reactivos, Knowledge Base con 78 sources, 251 `item_source_links`,
+  `decisive=248` y `supporting=3`.
+- tutor/openrouter: integración de evidencia Tutor/OpenRouter gobernada ya
+  incluida en el candidato de release.
+- evidencia reutilizada: Content Sync Candidate `APPLIED_AND_VERIFIED`, plan hash
+  `d3eafc22e7b83b140b595b8ce71bca14693585a356481542f9e31379d598c279`,
+  G6 `GREEN_CANDIDATE`, CAN-004 `GREEN` y runtime activation gate autorizado.
+- candidate supabase: `dhiytzbwodfvdrnwhkcw`.
+- agente: Codex
+- via: Codex Desktop
+- contributor: Marlon Medellin
+- environment: rama aislada local / WSL; sin VPS, deploy, Supabase ni migraciones
+- validacion: pendiente en esta rama hasta ejecutar gates proporcionales de release
+- runtime-verified: no; preparación de release sin deploy
+- release candidate base: `b7e20a163dd9fe510bbb7fe26595bfd805f8b903`
+- final release SHA: pendiente de merge
+- limitaciones: v0.10.0 no está desplegada; no existe verificación de runtime
+  público para v0.10.0; exposición de usuarios y Supabase migrations permanecen
+  no autorizadas.
+
 ## 2026-08-25 — v0.9.1 patch release preparation
 - tipo: frontend+release
 - modulo: application-versioning
