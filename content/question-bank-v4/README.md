@@ -6,6 +6,8 @@ Banco maestro de preguntas nuevas del proyecto **GanaConMerito**.
 
 **Corte canónico:** [`MANIFEST.json`](./MANIFEST.json).
 
+**Ventana de evolución V4.1 (2026-08-29):** el freeze editorial anterior se encuentra temporalmente levantado de forma **controlada y limitada** para ejecutar [`PRD-V4.1-KNOWLEDGE-BASE-TUTOR-READINESS.md`](./PRD-V4.1-KNOWLEDGE-BASE-TUTOR-READINESS.md). El alcance y las prohibiciones están registrados en [`state/V4.1-CONTROLLED-UNFREEZE-20260829.md`](./state/V4.1-CONTROLLED-UNFREEZE-20260829.md). Esto no autoriza activación remota, migraciones ni reescritura masiva del corpus. Finalizados los gates V4.1, el banco debe volver a `FROZEN / APPROVED` antes de continuar el cierre del Tutor GCM.
+
 El único conteo oficial vigente es `expectedItemCount` en ese manifiesto. El mismo
 archivo conserva el commit fuente, la lista ordenada y el hash de IDs, el hash del
 corpus, el tamaño total, las distribuciones agregadas, el contrato, las taxonomías,
@@ -21,10 +23,7 @@ La Fase C2 queda preservada como evidencia histórica en:
 C2 cerró con **0 reactivos nuevos** y no modificó el corpus; por tanto, tampoco
 reemplaza ni altera el corte canónico del manifiesto.
 
-El estado `FROZEN / APPROVED` es exclusivamente editorial y de repositorio. El
-manifiesto declara expresamente que no autoriza migración Supabase ni activación de
-runtime. Cualquier expansión posterior requiere un nuevo cierre editorial y una
-regeneración coherente del manifiesto.
+El estado `FROZEN / APPROVED` registrado en el manifiesto identifica el último corte editorial cerrado. Durante la ventana V4.1 no debe interpretarse como prohibición de los cambios limitados autorizados por el documento de descongelamiento. El manifiesto sigue siendo la fuente del corte de reactivos y no autoriza por sí mismo migración Supabase ni activación de runtime. Al cerrar V4.1 deberá regenerarse o ratificarse coherentemente y restablecerse el freeze.
 
 Para validar el corte:
 
@@ -79,6 +78,8 @@ V4 separa tres funciones que no deben confundirse:
 2. **taxonomía evaluativa**: qué constructo mide el reactivo;
 3. **targeting**: para qué familia, perfil/cargo u OPEC resulta aplicable.
 
+La evolución V4.1 mantiene esta separación. La clasificación de conocimiento aprobada usa seis niveles semánticos: **A Concurso vigente, B normativa estructural, C actuación/procedimientos, D referentes pedagógicos-curriculares, E didáctica y saber disciplinar, F histórico**. Estos niveles pertenecen a Knowledge Base; no se añaden como estructura obligatoria a cada reactivo.
+
 La biblioteca compartida de conocimiento vive en:
 
 ```text
@@ -116,7 +117,7 @@ son el mismo identificador: el perfil es reusable entre convocatorias y la OPEC 
 una instancia concreta. Una pregunta general para coordinadores no debe duplicarse
 por cada OPEC de coordinador.
 
-El corte V4 congelado no se reescribe para agregar esta segmentación. La adopción
+El corte V4 congelado no se reescribe masivamente para agregar esta segmentación. La adopción
 por perfil/cargo debe hacerse como capa externa o en una evolución explícita del
 contrato V4 y del esquema Supabase.
 
@@ -127,6 +128,7 @@ content/question-bank-v4/
 ├── README.md
 ├── MANIFEST.json             # Corte canónico y hashes reproducibles
 ├── CONTRATO-EDITORIAL-V4.md
+├── PRD-V4.1-KNOWLEDGE-BASE-TUTOR-READINESS.md
 ├── legacy-processing-register.csv
 ├── items/
 │   ├── docentes/             # Reactivos maestros DOC-######.json
@@ -150,57 +152,28 @@ en `content/targeting/`.
 
 ## Historial y migración de estructura
 
-Los artefactos históricos `EXPANSION-*`, `AUDIT-*`, `REAUDIT-*`, `REMEDIATION-*` y
-`COVERAGE-*` fueron retirados de la raíz operativa y organizados bajo `history/`.
-El punto de entrada para reconstruir la evolución editorial es
-[`history/INDEX.md`](./history/INDEX.md).
-
-Este movimiento reorganiza evidencia; no cambia el corpus congelado. Los nombres
-históricos como `temas.md`, `temas(1).md` o rutas legacy de perfiles se preservan
-en los relatos originales cuando forman parte de la trazabilidad y se resolverán
-mediante mapas de provenance, no reescribiendo retrospectivamente la historia.
-
-`MANIFEST.json` **no se mueve** a `state/`: scripts, CI y el flujo de importación V4
-lo consumen actualmente en la raíz y seguirá allí hasta que una migración explícita
-de rutas actualice y valide todos los consumidores.
-
-`legacy-processing-register.csv` tampoco se mueve en esta fase porque tiene
-consumidores operativos y de importación documentados. Su eventual reubicación exige
-una actualización coordinada de esos consumidores.
+Los artefactos `EXPANSION-*`, `AUDIT-*`, `REAUDIT-*`, `REMEDIATION-*` y
+`COVERAGE-*` históricos están bajo `history/` y no constituyen estado operativo.
+`MANIFEST.json` permanece en la raíz porque tiene consumidores operativos.
+`legacy-processing-register.csv` permanece igualmente en raíz mientras existan esos consumidores.
 
 ## Reglas del banco
 
-- **Una pregunta = un JSON.** Cada archivo contiene exactamente una pregunta con el
-  contrato canónico: `id`, `domain`, `topic`, `competency`, `questionType`,
-  `cognitiveLevel`, `context`, `stem`, `options` (A–D), `correctAnswer`,
-  `explanations`, `hint`, `learningNote`, `source.reference`, `estimatedDifficulty`.
-- **Sin subcarpetas por tema, competencia, OPEC o dificultad.** Esas dimensiones son
-  metadatos; la selección para prácticas, simulacros o tutoría la hace el backend.
-- **Nunca sobrescribir un id.** El siguiente identificador se determina leyendo el
-  directorio destino (`DOC-000001`, `DOC-000002`, …). Un `REJECTED` no libera su identificador.
-- **Sin deuda editorial:** no se almacenan borradores, placeholders, registros de
-  descarte ni preguntas parciales.
-- **Evidencia verificable:** toda afirmación sustantiva se apoya en fuente oficial o
-  académica; no se fabrican normas, decretos, autores ni datos.
-- **QA adversarial obligatorio:** cada reactivo supera internamente pruebas de
-  constructo, evidencia, clave única, distractores plausibles, pistas accidentales,
-  realismo evaluativo y valor pedagógico antes de serializarse.
-- **Deduplicación por constructo:** no basta buscar frases o escenarios parecidos; antes de producir se revisan también autor/teoría, constructo, fuente y lotes V4 previos.
-- **No duplicar por cargo/OPEC:** la aplicabilidad a varios perfiles debe modelarse como targeting, no copiando el reactivo.
+- **Una pregunta = un JSON.** Cada archivo contiene exactamente una pregunta con el contrato canónico: `id`, `scope`, `domain`, `topic`, `competency`, `questionType`, `cognitiveLevel`, `context`, `stem`, `options` (A–D), `correctAnswer`, `explanations`, `hint`, `learningNote`, `source.reference`, `estimatedDifficulty` y `opecId` solo cuando corresponda.
+- **V4.1 no añade A–F al JSON.** A–F clasifica Knowledge Base, no el reactivo.
+- **Cambio mínimo candidato:** `source.sourceId` puede aprobarse como campo opcional tras validación técnica; no implica backfill obligatorio.
+- **Sin subcarpetas por tema, competencia, OPEC o dificultad.** Esas dimensiones son metadatos; la selección para prácticas, simulacros o tutoría la hace el backend.
+- **Nunca sobrescribir un id.**
+- **Sin deuda editorial:** no se almacenan borradores, placeholders, registros de descarte ni preguntas parciales.
+- **Evidencia verificable:** toda afirmación sustantiva se apoya en fuente oficial o académica; no se fabrican normas, decretos, autores ni datos.
+- **QA adversarial obligatorio.**
+- **Deduplicación por constructo.**
+- **No duplicar por cargo/OPEC.**
 
 ## Taxonomía
 
-Los catálogos de `taxonomy/` son los valores preferidos para clasificar **qué se
-evalúa**. Pueden ampliarse solo cuando un constructo genuinamente nuevo lo exija;
-nunca para inflar etiquetas. Toda ampliación debe documentar la necesidad editorial
-y demostrar que reutilizar un tópico existente produciría una clasificación engañosa
-o excesivamente genérica.
-
-Los perfiles/cargos y OPEC no pertenecen a `taxonomy/`; pertenecen a la capa de
-targeting.
+Los catálogos de `taxonomy/` clasifican **qué se evalúa**. Pueden ampliarse solo cuando un constructo genuinamente nuevo lo exija; nunca para replicar A–F o inflar etiquetas. Los perfiles/cargos y OPEC pertenecen a targeting.
 
 ## Calidad
 
-`estimatedDifficulty` es una **estimación editorial**, no dificultad psicométrica
-observada. La calidad psicométrica real solo podrá establecerse después del pilotaje
-con datos observados.
+`estimatedDifficulty` es una **estimación editorial**, no dificultad psicométrica observada. La calidad psicométrica real solo podrá establecerse después del pilotaje con datos observados.
