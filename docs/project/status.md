@@ -5,19 +5,30 @@ project: ganaconmerito
 owner: marlon-arcila
 status: active
 artifact_type: project
-last_reviewed: 2026-08-23
+last_reviewed: 2026-08-30
 ---
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-08-23 — rebaseline V4 limpio implementado, validado
-localmente y publicado en rama remota; draft PR pendiente.
+Ultima actualizacion: 2026-08-30 — preparación de release `v0.10.0` para V4.1
+en rama aislada; sin deploy, sin mutaciones Supabase y sin exposición de usuarios.
 
 ---
 
 # Executive Operational Snapshot
 
-## Checkpoint remoto V4 limpio (vigente para este bloque)
+## Preparación release v0.10.0 / V4.1
+
+- Release en preparación: `v0.10.0`.
+- Release date objetivo: `2026-08-30`.
+- Candidate base: `b7e20a163dd9fe510bbb7fe26595bfd805f8b903`.
+- Final release SHA: pendiente de merge.
+- Evidencia V4.1 reutilizada: Content Sync `APPLIED_AND_VERIFIED`, G6
+  `GREEN_CANDIDATE`, CAN-004 `GREEN` y runtime activation gate autorizado.
+- No hay deploy, activación runtime, exposición de usuarios ni nuevas mutaciones
+  Supabase autorizadas por este checkpoint.
+
+## Snapshot histórico V4 limpio
 
 - Rama publicada: `codex/v4-clean-rebaseline-sync`.
 - Checkpoint técnico remoto: `92a12ab6e69b1db98ab0e6b46f2f19e2516a1f35`.
