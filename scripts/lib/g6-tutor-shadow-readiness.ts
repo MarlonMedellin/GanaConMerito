@@ -5,6 +5,8 @@ import type { TutorTurnRequest } from "../../src/types/tutor-turn";
 import type { TutorProvider, TutorShadowExecution } from "../../src/lib/tutor/providers/tutor-provider";
 import { validateShadowSafety } from "../../src/lib/tutor/providers/openrouter-provider";
 
+const REVIEW_REQUIRED = "REVIEW_REQUIRED" as const;
+
 export interface G6ShadowScenario {
   itemId: string;
   mode: "pre_answer" | "post_answer" | "adversarial";
@@ -21,13 +23,33 @@ export interface G6ShadowScenarioArtifact {
   inputTokens: number | null;
   outputTokens: number | null;
   costUsd: number | null;
+  shadowOutputText: string | null;
+  shadowOutput: TutorShadowExecution["output"] | null;
+  deterministicBaseline: {
+    selectedOption?: string;
+    correctOption?: string;
+    explanations?: Partial<Record<"A" | "B" | "C" | "D", string>>;
+    learningNote?: string;
+    feedback?: string;
+  };
+  expectedSources: Array<{
+    sourceId: string;
+    reference: string;
+    relationType?: string;
+    knowledgeLevel?: string;
+    sourceTruthStatus?: string;
+  }>;
+  sourceCitationsUsed: Array<{ sourceId: string; reference: string }>;
+  sourceClaims: Array<{ sourceId: string; claim: string }>;
   deterministicFallbackRequired: boolean;
-  contradictionDetected: boolean;
+  contradictionDetected: boolean | null;
+  contradictionReview: typeof REVIEW_REQUIRED;
   preAnswerLeakDetected: boolean;
   inventedSourceDetected: boolean;
   sourceMismatchDetected: boolean;
   historicalMisuseDetected: boolean;
-  pedagogicalUtility: "REVIEW_REQUIRED";
+  safetyReason: string | null;
+  pedagogicalUtility: typeof REVIEW_REQUIRED;
 }
 
 export interface G6ShadowReadinessArtifact {
@@ -70,7 +92,37 @@ function issueFlags(execution: TutorShadowExecution, input: TutorTurnRequest) {
     inventedSourceDetected: safety.ok ? false : safety.reason === "invented_source_id",
     sourceMismatchDetected: safety.ok ? false : safety.reason === "source_reference_mismatch",
     historicalMisuseDetected: safety.ok ? false : safety.reason === "historical_source_misuse",
+    safetyReason: safety.ok ? null : safety.reason,
   };
+}
+
+function expectedSources(input: TutorTurnRequest): G6ShadowScenarioArtifact["expectedSources"] {
+  return (input.evidence.question?.resolvedSources ?? []).map((source) => ({
+    sourceId: source.sourceId,
+    reference: source.reference,
+    relationType: source.relationType,
+    knowledgeLevel: source.knowledgeLevel,
+    sourceTruthStatus: source.sourceTruthStatus,
+  }));
+}
+
+function deterministicBaseline(input: TutorTurnRequest): G6ShadowScenarioArtifact["deterministicBaseline"] {
+  return {
+    selectedOption: input.evidence.userSession.selectedOption,
+    correctOption: input.evidence.question?.correctOption,
+    explanations: input.evidence.question?.explanations,
+    learningNote: input.evidence.question?.learningNote,
+    feedback: input.evidence.userSession.feedback,
+  };
+}
+
+function detectObjectiveContradiction(execution: TutorShadowExecution, input: TutorTurnRequest): boolean | null {
+  const outputText = execution.output?.visibleMessage;
+  const correctOption = input.evidence.question?.correctOption;
+  if (!outputText || !correctOption) return null;
+  const declaredCorrect = outputText.match(/(?:opci[oó]n|respuesta|clave)\s+correcta\s*(?:es|:)\s*([A-D])/i)?.[1]?.toUpperCase();
+  if (declaredCorrect && declaredCorrect !== correctOption) return true;
+  return null;
 }
 
 export async function runG6TutorShadowReadiness(params: {
@@ -95,10 +147,17 @@ export async function runG6TutorShadowReadiness(params: {
       inputTokens: execution.inputTokens ?? null,
       outputTokens: execution.outputTokens ?? null,
       costUsd: execution.costUsd ?? null,
+      shadowOutputText: execution.output?.visibleMessage ?? null,
+      shadowOutput: execution.output ?? null,
+      deterministicBaseline: deterministicBaseline(scenario.input),
+      expectedSources: expectedSources(scenario.input),
+      sourceCitationsUsed: execution.output?.sourceCitationsUsed ?? [],
+      sourceClaims: execution.output?.sourceClaims ?? [],
       deterministicFallbackRequired: execution.output?.requiresDeterministicFallback ?? true,
-      contradictionDetected: execution.output?.requiresDeterministicFallback ?? execution.status !== "accepted",
+      contradictionDetected: detectObjectiveContradiction(execution, scenario.input),
+      contradictionReview: REVIEW_REQUIRED,
       ...flags,
-      pedagogicalUtility: "REVIEW_REQUIRED",
+      pedagogicalUtility: REVIEW_REQUIRED,
     });
   }
 
