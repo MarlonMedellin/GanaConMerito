@@ -119,6 +119,12 @@ function toResolvedSources(sources: V4QuestionSourceRecord[]): QuestionSourceEvi
   }));
 }
 
+function assertLiveSourceEvidence(itemId: string, sources: V4QuestionSourceRecord[]) {
+  if (sources.length === 0) {
+    throw new Error(`G6_LIVE_SOURCE_EVIDENCE_MISSING:${itemId}`);
+  }
+}
+
 function liveInput(params: {
   practice: V4PracticeQuestionRecord;
   answered?: V4AnsweredQuestionRecord | null;
@@ -195,6 +201,8 @@ export async function buildLiveScenarios(repository: G6LiveRepository = new V4Qu
   if (!prePractice || !postPractice || !postAnswered) {
     throw new Error("Candidate V4 question data is incomplete for G6 live shadow.");
   }
+  assertLiveSourceEvidence(prePractice.id, preSources);
+  assertLiveSourceEvidence(postPractice.id, postSources);
   return [
     {
       itemId: prePractice.id,

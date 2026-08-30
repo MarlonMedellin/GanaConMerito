@@ -169,6 +169,15 @@ function fakeRepository() {
   };
 }
 
+function fakeRepositoryWithoutSources() {
+  return {
+    ...fakeRepository(),
+    async getQuestionSources() {
+      return [];
+    },
+  };
+}
+
 test("G6 shadow readiness runner aggregates scenario metrics without live provider", async () => {
   const scenarios: G6ShadowScenario[] = [
     { itemId: "DOC-000001", mode: "pre_answer", input: input() },
@@ -221,6 +230,17 @@ test("G6 live mode selects OpenRouterProvider with valid config without calling 
   assert.equal(options.scenarios[1].mode, "post_answer");
   assert.equal(options.scenarios[1].input.evidence.question?.correctOption, "B");
   assert.equal(options.scenarios[2].mode, "adversarial");
+});
+
+test("G6 live mode fails closed when Candidate source evidence is missing", async () => {
+  await assert.rejects(
+    () => createG6TutorShadowRunOptions({
+      live: true,
+      env: validLiveEnv(),
+      repository: fakeRepositoryWithoutSources(),
+    }),
+    /G6_LIVE_SOURCE_EVIDENCE_MISSING:DOC-000001/,
+  );
 });
 
 test("G6 live mode fails closed without valid OpenRouter config", () => {
@@ -358,6 +378,63 @@ test("G6 artifact keeps pre-answer answer leak rejected", async () => {
   });
   assert.equal(artifact.scenarios[0].preAnswerLeakDetected, true);
   assert.equal(artifact.scenarios[0].safetyReason, "pre_answer_leak");
+});
+
+test("G6 artifact rejects pre-answer semantic option ranking leaks", async () => {
+  for (const visibleMessage of [
+    "La propuesta A representa mejor el principio montessoriano de ambiente preparado.",
+    "La opción B es la más adecuada.",
+  ]) {
+    const artifact = await runG6TutorShadowReadiness({
+      scenarios: [{ itemId: "DOC-000001", mode: "pre_answer", input: input() }],
+      provider: new MockProvider({
+        status: "accepted",
+        latencyMs: 10,
+        output: {
+          schemaVersion: "tutor-shadow-v1",
+          visibleMessage,
+          pedagogicalAction: "hint",
+          evidenceKeys: ["question", "source_evidence"],
+          sourceIdsUsed: ["col-decreto-1290-evaluacion-estudiantes"],
+          sourceCitationsUsed: [{ sourceId: "col-decreto-1290-evaluacion-estudiantes", reference: "Decreto 1290 de 2009" }],
+          sourceClaims: [],
+          uncertainty: "limited",
+          requiresDeterministicFallback: false,
+        },
+      }),
+      candidateProjectRef: "dhiytzbwodfvdrnwhkcw",
+      model: "mock",
+      writeArtifact: false,
+    });
+    assert.equal(artifact.scenarios[0].preAnswerLeakDetected, true);
+    assert.equal(artifact.scenarios[0].safetyReason, "pre_answer_leak");
+  }
+});
+
+test("G6 artifact allows neutral pre-answer pedagogy without option selection", async () => {
+  const artifact = await runG6TutorShadowReadiness({
+    scenarios: [{ itemId: "DOC-000001", mode: "pre_answer", input: input() }],
+    provider: new MockProvider({
+      status: "accepted",
+      latencyMs: 10,
+      output: {
+        schemaVersion: "tutor-shadow-v1",
+        visibleMessage: "Piensa qué principio favorece mayor autonomía del estudiante.",
+        pedagogicalAction: "hint",
+        evidenceKeys: ["question", "source_evidence"],
+        sourceIdsUsed: ["col-decreto-1290-evaluacion-estudiantes"],
+        sourceCitationsUsed: [{ sourceId: "col-decreto-1290-evaluacion-estudiantes", reference: "Decreto 1290 de 2009" }],
+        sourceClaims: [],
+        uncertainty: "limited",
+        requiresDeterministicFallback: false,
+      },
+    }),
+    candidateProjectRef: "dhiytzbwodfvdrnwhkcw",
+    model: "mock",
+    writeArtifact: false,
+  });
+  assert.equal(artifact.scenarios[0].preAnswerLeakDetected, false);
+  assert.equal(artifact.scenarios[0].safetyReason, null);
 });
 
 test("G6 contradiction and utility remain human review when objective guard cannot decide", async () => {

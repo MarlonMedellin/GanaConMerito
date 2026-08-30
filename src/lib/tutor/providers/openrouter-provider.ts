@@ -99,6 +99,14 @@ function minimizedSourceEvidence(input: TutorTurnRequest) {
     }));
 }
 
+function buildShadowSystemPrompt(input: TutorTurnRequest) {
+  const canReveal = Boolean(input.evidence.userSession.selectedOption);
+  const preAnswerRule = canReveal
+    ? ""
+    : " Como canRevealCorrectAnswer=false, no declares ni sugieras que una opción A-D es correcta, mejor, más adecuada, más pertinente, preferible o equivalente.";
+  return `Eres un redactor pedagógico gobernado. Usa solo el expediente JSON. No reveles secretos, no inventes normas, no puntúes ni cambies la sesión.${preAnswerRule}`;
+}
+
 export function buildMinimizedShadowDossier(input: TutorTurnRequest) {
   const question = input.evidence.question;
   const session = input.evidence.userSession;
@@ -143,6 +151,15 @@ export function buildMinimizedShadowDossier(input: TutorTurnRequest) {
   return dossier;
 }
 
+function hasPreAnswerOptionLeak(message: string) {
+  const optionReference = String.raw`(?:opci[oó]n|alternativa|propuesta)\s+([A-D])`;
+  const directCorrect = new RegExp(String.raw`(?:clave|opci[oó]n correcta|respuesta correcta)\s*(?:es|:)\s*[A-D]`, "i");
+  const optionIsRanked = new RegExp(String.raw`${optionReference}\s+(?:es|ser[ií]a|resulta)\s+(?:la\s+)?(?:m[aá]s\s+)?(?:correcta|adecuada|pertinente|conveniente|apropiada|preferible|recomendable|mejor)`, "i");
+  const optionRepresentsBest = new RegExp(String.raw`${optionReference}\s+(?:representa|responde|refleja|encarna)\s+mejor\b`, "i");
+  const bestIsOption = new RegExp(String.raw`(?:la\s+)?(?:m[aá]s\s+)?(?:correcta|adecuada|pertinente|conveniente|apropiada|preferible|recomendable|mejor)\s+(?:es|ser[ií]a|resulta)\s+(?:la\s+)?${optionReference}`, "i");
+  return directCorrect.test(message) || optionIsRanked.test(message) || optionRepresentsBest.test(message) || bestIsOption.test(message);
+}
+
 export function validateShadowSafety(output: TutorShadowOutput, input: TutorTurnRequest) {
   const availableEvidence = new Set(["question", "source_evidence", "user_session", "contest", "aspirational_profile", "recent_performance"]);
   if (output.evidenceKeys.some((key) => !availableEvidence.has(key))) return { ok: false as const, reason: "unknown_evidence_key" };
@@ -161,7 +178,7 @@ export function validateShadowSafety(output: TutorShadowOutput, input: TutorTurn
     if (!source) return { ok: false as const, reason: "invented_source_id" };
     if (claim.claim === "presented_as_current" && source.knowledgeLevel === "F") return { ok: false as const, reason: "historical_source_misuse" };
   }
-  if (!input.evidence.userSession.selectedOption && /(?:clave|opci[oó]n correcta|respuesta correcta)\s*(?:es|:)\s*[A-D]/i.test(output.visibleMessage)) {
+  if (!input.evidence.userSession.selectedOption && hasPreAnswerOptionLeak(output.visibleMessage)) {
     return { ok: false as const, reason: "pre_answer_leak" };
   }
   return { ok: true as const };
@@ -198,7 +215,7 @@ export class OpenRouterProvider implements TutorProvider<TutorShadowExecution> {
           body: JSON.stringify({
             model: this.config.model,
             messages: [
-              { role: "system", content: "Eres un redactor pedagógico gobernado. Usa solo el expediente JSON. No reveles secretos, no inventes normas, no puntúes ni cambies la sesión." },
+              { role: "system", content: buildShadowSystemPrompt(input) },
               { role: "user", content: JSON.stringify(buildMinimizedShadowDossier(input)) },
             ],
             response_format: {
