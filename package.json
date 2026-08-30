@@ -15,7 +15,7 @@
     "test:ops": "tsx --test src/lib/ops/update-jobs.test.ts scripts/ops-update-contract.test.ts scripts/runtime-domain-contract.test.ts",
     "test:security": "tsx --test src/lib/session/practice-question.test.ts scripts/sprint-48-security-contract.test.ts scripts/sprint-48-v4-runtime-contract.test.ts scripts/question-bank-security-remediation-contract.test.ts && npm run qa:security:question-bank -- --local && npm run test:security:db",
     "test:security:db": "tsx scripts/test-question-bank-security-boundary.ts",
-    "test:v4-import": "tsx --test scripts/v4-import-plan.test.ts scripts/content-sync-plan.test.ts scripts/content-sync-guard.test.ts",
+    "test:v4-import": "tsx --test scripts/v4-import-plan.test.ts scripts/content-sync-plan.test.ts scripts/content-sync-guard.test.ts scripts/v4-source-guard.test.ts",
     "test:v4-import:db": "tsx scripts/test-content-sync-db.ts",
     "test:v4-baseline-guard": "tsx scripts/test-v4-clean-baseline-guard.ts",
     "test:v4-runtime:db": "tsx scripts/test-v4-runtime-db.ts",

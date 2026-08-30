@@ -1,6 +1,10 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { v4ItemSchema } from "../src/domain/content/v4-contract";
+import {
+  validateV4SourceGuard,
+  type KnowledgeSourceGuardRecord,
+} from "./lib/v4-source-guard";
 
 async function jsonFiles(directory: string): Promise<string[]> {
   const entries = await fs.readdir(directory, { withFileTypes: true });
@@ -16,20 +20,31 @@ async function jsonFiles(directory: string): Promise<string[]> {
 async function main() {
   const root = process.cwd();
   const base = path.join(root, "content/question-bank-v4");
-  const [itemPaths, domain, topics, competencies, types] = await Promise.all([
+  const requireSourceId = process.argv.includes("--require-source-id");
+  const [itemPaths, domain, topics, competencies, types, sourceInventory] = await Promise.all([
     jsonFiles(path.join(base, "items")),
     fs.readFile(path.join(base, "taxonomy/domains.json"), "utf8").then(JSON.parse) as Promise<string[]>,
     fs.readFile(path.join(base, "taxonomy/topics.json"), "utf8").then(JSON.parse) as Promise<string[]>,
     fs.readFile(path.join(base, "taxonomy/competencies.json"), "utf8").then(JSON.parse) as Promise<string[]>,
     fs.readFile(path.join(base, "taxonomy/question-types.json"), "utf8").then(JSON.parse) as Promise<{ questionTypes: string[]; cognitiveLevels: string[] }> ,
+    fs.readFile(path.join(root, "content/knowledge-base/catalog/source-inventory.json"), "utf8").then(JSON.parse) as Promise<{ sources?: KnowledgeSourceGuardRecord[] }>,
   ]);
+  const sourceIds = new Set<string>();
+  const sourcesById = new Map<string, KnowledgeSourceGuardRecord>();
+  for (const source of sourceInventory.sources ?? []) {
+    if (typeof source.sourceId !== "string") continue;
+    sourceIds.add(source.sourceId);
+    sourcesById.set(source.sourceId, source);
+  }
   const ids = new Set<string>();
+  let itemsWithSourceId = 0;
   const errors: Array<{ file: string; issues: string[] }> = [];
   for (const file of itemPaths) {
     const relative = path.relative(root, file);
     try {
       const item = v4ItemSchema.parse(JSON.parse(await fs.readFile(file, "utf8")));
       const issues: string[] = [];
+      if (item.source.sourceId) itemsWithSourceId += 1;
       if (ids.has(item.id)) issues.push(`id duplicado: ${item.id}`);
       ids.add(item.id);
       if (!domain.includes(item.domain)) issues.push(`domain fuera de catálogo: ${item.domain}`);
@@ -37,12 +52,24 @@ async function main() {
       if (!competencies.includes(item.competency)) issues.push(`competency fuera de catálogo: ${item.competency}`);
       if (!types.questionTypes.includes(item.questionType)) issues.push(`questionType fuera de catálogo: ${item.questionType}`);
       if (!types.cognitiveLevels.includes(item.cognitiveLevel)) issues.push(`cognitiveLevel fuera de catálogo: ${item.cognitiveLevel}`);
+      issues.push(...validateV4SourceGuard(item, sourcesById, { requireSourceId }));
       if (issues.length) errors.push({ file: relative, issues });
     } catch (error) {
       errors.push({ file: relative, issues: error instanceof Error ? [error.message] : [String(error)] });
     }
   }
-  console.log(JSON.stringify({ bank: "v4", validatedFiles: itemPaths.length, valid: errors.length === 0, errors }, null, 2));
+  console.log(JSON.stringify({
+    bank: "v4",
+    validatedFiles: itemPaths.length,
+    sourceIdCoverage: {
+      itemsWithSourceId,
+      itemsMissingSourceId: itemPaths.length - itemsWithSourceId,
+      knowledgeSources: sourceIds.size,
+      requireSourceId,
+    },
+    valid: errors.length === 0,
+    errors,
+  }, null, 2));
   if (errors.length) process.exit(1);
 }
 main().catch((error) => { console.error(error); process.exit(1); });

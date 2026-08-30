@@ -67,6 +67,9 @@ ejecución fallida con error saneado.
 - mapping reactivo-target: solo `reviewStatus = approved`;
 - fuente: solo verificada y con fecha de verificación;
 - aplicabilidad de conocimiento: activa, verificada y referida a fuente promovida.
+- relación reactivo-fuente V4.1: si el JSON declara `source.sourceId`, debe
+  resolver contra una fuente verificada y se materializa como `item_source_links`
+  decisivo; si no resuelve, el plan falla cerrado.
 
 El estado canónico actual produce 248 preguntas, 992 opciones, una familia y seis
 perfiles. El catálogo OPEC, los mappings aprobados y las fuentes plenamente

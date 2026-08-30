@@ -173,7 +173,11 @@ una actualización coordinada de esos consumidores.
 - **Una pregunta = un JSON.** Cada archivo contiene exactamente una pregunta con el
   contrato canónico: `id`, `domain`, `topic`, `competency`, `questionType`,
   `cognitiveLevel`, `context`, `stem`, `options` (A–D), `correctAnswer`,
-  `explanations`, `hint`, `learningNote`, `source.reference`, `estimatedDifficulty`.
+  `explanations`, `hint`, `learningNote`, `source.reference`, `source.sourceId`
+  en V4.1, `estimatedDifficulty`.
+- **Fuente resoluble V4.1:** `source.reference` sigue siendo legible por humanos;
+  `source.sourceId` enlaza con Knowledge Base. Durante el backfill pueden quedar
+  ítems legacy-V4 sin `sourceId`, pero el re-freeze V4.1 exige cobertura completa.
 - **Sin subcarpetas por tema, competencia, OPEC o dificultad.** Esas dimensiones son
   metadatos; la selección para prácticas, simulacros o tutoría la hace el backend.
 - **Nunca sobrescribir un id.** El siguiente identificador se determina leyendo el

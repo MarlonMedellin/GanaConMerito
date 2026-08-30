@@ -29,10 +29,12 @@ export const v4ItemSchema = z.object({
   explanations: v4OptionSchema,
   hint: z.string().trim().min(1),
   learningNote: z.string().trim().min(1),
-  // El ítem persiste solo `reference`. El locator/url de verificación vive en
-  // `editorialRunContext` durante fábrica/auditoría (ver skills y CONTRATO-EDITORIAL-V4.md).
+  // V4.1 mantiene `reference` como etiqueta humana y agrega `sourceId` como
+  // vínculo resoluble hacia Knowledge Base. Durante el backfill controlado el
+  // validador puede aceptar ítems legacy-V4 sin `sourceId`.
   source: z.object({
     reference: z.string().trim().min(1),
+    sourceId: z.string().trim().min(1).optional(),
   }).strict(),
   estimatedDifficulty: z.enum(["low", "medium", "high"]),
 }).strict().superRefine((item, ctx) => {

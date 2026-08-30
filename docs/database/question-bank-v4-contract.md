@@ -22,6 +22,11 @@ acepta edición editorial como fuente alternativa.
   verificada y aplicabilidad aprobada.
 - `content_sync_runs`: historia segura de reconciliación.
 
+En V4.1, `source.sourceId` es la ancla editorial principal hacia
+`knowledge_sources`. La persistencia no requiere una tabla nueva: el vínculo
+principal se materializa como `item_source_links` con `relation_type = decisive`;
+fuentes complementarias usan la misma relación cuando estén aprobadas.
+
 No existen `item_bank`, UUID de ítem, `bank_version`, fallback Legacy/V3,
 `targetKind` ni semántica `primary|compatible` en la baseline nueva.
 
@@ -55,6 +60,8 @@ evidencia acotada y nunca decide scoring, selección ni autoridad operacional.
 El único reconciliador está descrito en `docs/05-ops/content-sync.md`. La
 aplicación exige identidad exacta de baseline/instancia y que el hash efectivo sea
 igual al plan aprobado; aplica el lote de forma atómica, verifica e informa drift.
+Si un reactivo declara `sourceId`, el plan debe resolverlo contra una fuente
+verificada de Knowledge Base o fallar cerrado.
 
 ## Activación
 

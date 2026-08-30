@@ -24,11 +24,18 @@ Cada registro futuro de catálogo debería poder representar:
 - `url`;
 - `repoPath` cuando exista archivo local autorizado;
 - `locator` — artículo, página, capítulo o sección;
+- `knowledgeLevel` — `A|B|C|D|E|F`, como clasificación de fuente/conocimiento;
+- `compatibleDomains` / `compatibleTopics` / `compatibleCompetencies` cuando se
+  necesite un guardarraíl simple de clasificación para reactivos V4.1;
 - `rightsNote` cuando aplique;
 - `notes`.
 
 La aplicabilidad por familia/perfil/OPEC no debe duplicarse dentro del archivo de
 fuente si puede modelarse mediante mapas/relaciones dedicadas.
+
+La compatibilidad con `domain`, `topic` y `competency` no es una ontología
+exhaustiva. Se declara solo cuando ayuda a detectar usos claramente inválidos de
+`sourceId` durante validación editorial o importación.
 
 ## Normativa
 

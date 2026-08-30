@@ -98,6 +98,10 @@ Para `content/question-bank-v4/`, `npm run content:validate:v4` y
 taxonomías, métricas y hashes contra `MANIFEST.json`; un cambio sin reconciliar el
 manifiesto falla.
 
+Para el re-freeze V4.1, `npm run content:validate:v4 -- --require-source-id`
+debe pasar: 100 % de reactivos productivos deben declarar un
+`source.sourceId` resoluble y compatible con Knowledge Base.
+
 Para cambios al reconciliador o migraciones V4, CI reconstruye Supabase únicamente
 con `0001–0003` y ejecuta `npm run test:v4-baseline-guard`,
 `npm run test:v4-import:db` y `npm run test:v4-runtime:db`. El guard prueba una

@@ -62,7 +62,7 @@ objeto JSON con este contrato:
   "explanations": { "A": "...", "B": "...", "C": "...", "D": "..." },
   "hint": "...",
   "learningNote": "...",
-  "source": { "reference": "..." },
+  "source": { "reference": "...", "sourceId": "..." },
   "estimatedDifficulty": "medium"
 }
 ```
@@ -81,14 +81,21 @@ objeto JSON con este contrato:
   sustituyen la evidencia de la fuente.
 - `hint`: ayuda previa que guía el análisis sin revelar la clave.
 - `learningNote`: síntesis pedagógica posterior, sustentada y consistente con la clave.
-- `source`: solo `reference` (obligatorio). El `locator`/`url` de verificación vive
-  en `editorialRunContext` durante fábrica y auditoría, no en el ítem. Una pregunta
+- `source`: `reference` obligatorio y `sourceId` V4.1. `reference` conserva una
+  etiqueta legible por humanos; `sourceId` enlaza el reactivo con una fuente
+  canónica de `content/knowledge-base/catalog/source-inventory.json`. Durante el
+  backfill controlado de V4.1 pueden existir ítems legacy-V4 sin `sourceId`, pero
+  el re-freeze V4.1 exige 100 % de reactivos productivos con `sourceId` resoluble.
+  El `locator`/`url` de verificación vive en Knowledge Base o en
+  `editorialRunContext` durante fábrica y auditoría, no en el ítem. Una pregunta
   normativa requiere fuente oficial vigente y una referencia específica (norma +
   artículo o sección cuando aplique).
 - `estimatedDifficulty`: `low`, `medium` o `high`; es estimación editorial, no
   parámetro psicométrico observado.
 
-`scope` y `source` son obligatorios en todo ítem; `opecId` solo en `opec_specific`.
+`scope` y `source.reference` son obligatorios en todo ítem; `source.sourceId` es
+obligatorio para nuevo contenido V4.1 y para el freeze final V4.1; `opecId` solo
+en `opec_specific`.
 
 ## 4. Estados y gates
 
