@@ -4,9 +4,9 @@
   "repository": {
     "remote": "https://github.com/MarlonMedellin/GanaConMerito",
     "branch": "master",
-    "sourceCommit": "68dfae07baaafa59e00fa7a085ac4b903b62aa07"
+    "sourceCommit": "5c610cb15d42d79703722bfbbc0e5629bea17b69"
   },
-  "generatedOn": "2026-08-22",
+  "generatedOn": "2026-08-30",
   "contract": {
     "path": "content/question-bank-v4/CONTRATO-EDITORIAL-V4.md",
     "sha256": "d1eb7dfd42592ec56255be993e7831a8b2db4e90ac381c2dbfe63c1bce54e1ea"
@@ -21,8 +21,8 @@
   "corpus": {
     "path": "content/question-bank-v4/items",
     "hashAlgorithm": "sha256(relative_path + NUL + file_sha256 + LF), sorted by relative_path",
-    "sha256": "3845d22280819f3d17cb946936f9c41720801d026124b5d726042ec28bbc7533",
-    "totalBytes": 647253,
+    "sha256": "cd1fd69e957a064f6b85aba320ddad517f96d813a40d361672f0d56bb655550d",
+    "totalBytes": 660038,
     "idsSha256": "3e1a4ca114ad6393fa48f9e293fc3136e17570f3b09d67953731f6c3a79f2b23",
     "ids": [
       "DOC-000001",
@@ -404,7 +404,7 @@
       },
       "topic": {
         "ajustes_razonables": 5,
-        "aprendizaje_y_desarrollo_cognitivo": 4,
+        "aprendizaje_y_desarrollo_cognitivo": 5,
         "argumentacion": 3,
         "carrera_docente": 4,
         "competencias_ciudadanas": 14,
@@ -413,7 +413,7 @@
         "convivencia_escolar": 10,
         "debido_proceso": 4,
         "dua": 4,
-        "educacion_inicial_transicion": 6,
+        "educacion_inicial_transicion": 7,
         "evaluacion_desempeno_docente": 8,
         "evaluacion_diagnostica": 5,
         "evaluacion_formativa": 23,
@@ -423,7 +423,7 @@
         "indagacion": 4,
         "modelizacion": 3,
         "piar": 6,
-        "planeacion_curricular": 56,
+        "planeacion_curricular": 54,
         "prae_proyectos_transversales": 8,
         "proteccion_integral": 8,
         "razonamiento_cuantitativo": 6,
@@ -441,10 +441,10 @@
         "resolucion_de_problemas": 16
       },
       "questionType": {
-        "case_analysis": 42,
+        "case_analysis": 43,
         "conceptual": 25,
         "normative_applied": 51,
-        "reading_analysis": 24,
+        "reading_analysis": 23,
         "reasoning": 31,
         "situational": 49,
         "technical_applied": 26

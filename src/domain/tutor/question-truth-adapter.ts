@@ -1,5 +1,5 @@
 import { buildTutorSupportContract } from "../../lib/tutor/normative-source-truth";
-import type { QuestionTruth, TutorSupportContract } from "../../types/tutor-turn";
+import type { QuestionSourceEvidence, QuestionTruth, TutorSupportContract } from "../../types/tutor-turn";
 import type { NormalizedRichItem } from "../taxonomy/normalize-item";
 
 export interface V4QuestionTruthInput {
@@ -14,8 +14,10 @@ export interface V4QuestionTruthInput {
   scope: string | null;
   hint: string | null;
   sourceType: string | null;
+  sourceId?: string | null;
   sourceReference: string | null;
   sourcePath: string | null;
+  resolvedSources?: QuestionSourceEvidence[];
   options: QuestionTruth["options"];
   answered?: {
     correctOption: "A" | "B" | "C" | "D";
@@ -126,7 +128,15 @@ export function v4QuestionToQuestionTruth(item: V4QuestionTruthInput): QuestionT
   const correctExplanation = item.answered
     ? item.answered.explanations[item.answered.correctOption]
     : undefined;
-  const sourceRefs = [item.sourceReference, item.sourcePath].filter((ref): ref is string => Boolean(ref));
+  const sourceRefs = [
+    item.sourceId ? `sourceId:${item.sourceId}` : undefined,
+    item.sourceReference,
+    item.sourcePath,
+    ...(item.resolvedSources ?? []).map((source) => `sourceId:${source.sourceId}`),
+  ].filter((ref): ref is string => Boolean(ref));
+  const sourceTruthStatus = item.resolvedSources?.some((source) => source.sourceTruthStatus === "source_verified")
+    ? "source_verified"
+    : item.sourceType === "official_source" ? "source_verified" : "synthesized_governed_unverified";
 
   return {
     itemId: item.id,
@@ -142,8 +152,10 @@ export function v4QuestionToQuestionTruth(item: V4QuestionTruthInput): QuestionT
       : "Analizar el caso y contrastar sus alternativas.",
     expectedUserTask: "Leer el contexto y el enunciado, contrastar las cuatro opciones y seleccionar la alternativa más consistente.",
     sourceType: item.sourceType ?? "source_pending",
+    sourceId: item.sourceId ?? item.resolvedSources?.find((source) => source.relationType === "decisive")?.sourceId,
     sourceRefs,
-    sourceTruthStatus: item.sourceType === "official_source" ? "source_verified" : "synthesized_governed_unverified",
+    resolvedSources: item.resolvedSources,
+    sourceTruthStatus,
     stem: item.stem ?? "",
     options: item.options,
     correctOption: item.answered?.correctOption,

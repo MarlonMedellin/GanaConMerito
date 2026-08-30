@@ -1,30 +1,11 @@
 {
-  "id": "DOC-001128",
-  "scope": "general",
-  "domain": "evaluacion",
-  "topic": "retroalimentacion",
-  "competency": "decision_pedagogica",
-  "questionType": "situational",
-  "cognitiveLevel": "judge",
-  "context": "Al devolver ensayos, un docente suele escribir comentarios como «excelente», «regular», «debes esforzarte más» o «falta profundidad». Los estudiantes reciben la nota, pero con frecuencia preguntan qué deben cambiar exactamente en la siguiente versión.",
-  "stem": "¿Qué forma de retroalimentación favorece mejor que puedan usar la información para mejorar su desempeño?",
-  "options": {
-    "A": "Escribir comentarios más extensos sobre la personalidad académica de cada estudiante para que comprenda cómo lo percibe el docente como escritor.",
-    "B": "Relacionar el comentario con el propósito y los criterios, señalar evidencia concreta del trabajo actual y proponer uno o dos pasos específicos que el estudiante pueda aplicar en la revisión siguiente.",
-    "C": "Entregar únicamente la rúbrica con el nivel obtenido, porque conocer la categoría alcanzada hace innecesaria cualquier explicación adicional.",
-    "D": "Concentrar la retroalimentación en los errores de ortografía y presentación, porque son aspectos objetivos y fáciles de corregir independientemente del propósito del ensayo."
-  },
-  "correctAnswer": "B",
-  "explanations": {
-    "A": "Los juicios sobre rasgos personales son menos accionables y pueden desplazar la atención desde el desempeño concreto hacia una valoración del estudiante como persona.",
-    "B": "Es la mejor respuesta porque ubica la retroalimentación respecto de la meta, describe evidencia observable del desempeño y ofrece una orientación concreta para avanzar.",
-    "C": "Una categoría puede resumir el desempeño, pero no siempre informa qué evidencia produjo esa valoración ni cuál es el siguiente paso para mejorar.",
-    "D": "Corregir aspectos formales puede ser pertinente si forman parte del criterio, pero priorizarlos sin relación con el propósito puede dejar intacta la dificultad central del aprendizaje."
-  },
-  "hint": "La retroalimentación útil ayuda a responder tres preguntas: hacia dónde voy, cómo voy y qué puedo hacer después.",
-  "learningNote": "La retroalimentación es más útil cuando se refiere al trabajo y a la tarea, se conecta con criterios comprensibles y ofrece información que el estudiante puede convertir en una acción posterior. Elogios generales o juicios personales comunican valoración, pero orientan poco la mejora.",
-  "source": {
-    "reference": "Hattie, J. & Timperley, H. (2007). The Power of Feedback. Review of Educational Research, 77(1), 81–112"
-  },
-  "estimatedDifficulty": "medium"
+  "id":"DOC-001128","scope":"general","domain":"evaluacion","topic":"retroalimentacion","competency":"decision_pedagogica","questionType":"situational","cognitiveLevel":"judge",
+  "context":"Al devolver ensayos, un docente suele escribir comentarios como «excelente», «regular», «debes esforzarte más» o «falta profundidad». Los estudiantes reciben la nota, pero con frecuencia preguntan qué deben cambiar exactamente en la siguiente versión.",
+  "stem":"¿Qué forma de retroalimentación favorece mejor que puedan usar la información para mejorar su desempeño?",
+  "options":{"A":"Escribir comentarios más extensos sobre la personalidad académica de cada estudiante para que comprenda cómo lo percibe el docente como escritor.","B":"Relacionar el comentario con el propósito y los criterios, señalar evidencia concreta del trabajo actual y proponer uno o dos pasos específicos que el estudiante pueda aplicar en la revisión siguiente.","C":"Entregar únicamente la rúbrica con el nivel obtenido, porque conocer la categoría alcanzada hace innecesaria cualquier explicación adicional.","D":"Concentrar la retroalimentación en los errores de ortografía y presentación, porque son aspectos objetivos y fáciles de corregir independientemente del propósito del ensayo."},
+  "correctAnswer":"B",
+  "explanations":{"A":"Los juicios sobre rasgos personales son menos accionables y pueden desplazar la atención desde el desempeño concreto hacia una valoración del estudiante como persona.","B":"Es la mejor respuesta porque ubica la retroalimentación respecto de la meta, describe evidencia observable del desempeño y ofrece una orientación concreta para avanzar.","C":"Una categoría puede resumir el desempeño, pero no siempre informa qué evidencia produjo esa valoración ni cuál es el siguiente paso para mejorar.","D":"Corregir aspectos formales puede ser pertinente si forman parte del criterio, pero priorizarlos sin relación con el propósito puede dejar intacta la dificultad central del aprendizaje."},
+  "hint":"La retroalimentación útil ayuda a responder tres preguntas: hacia dónde voy, cómo voy y qué puedo hacer después.",
+  "learningNote":"La retroalimentación es más útil cuando se refiere al trabajo y a la tarea, se conecta con criterios comprensibles y ofrece información que el estudiante puede convertir en una acción posterior. Elogios generales o juicios personales comunican valoración, pero orientan poco la mejora.",
+  "source":{"reference":"Hattie, J. & Timperley, H. (2007). The Power of Feedback. Review of Educational Research, 77(1), 81–112","sourceId":"hattie-timperley-2007-power-feedback"},"estimatedDifficulty":"medium"
 }

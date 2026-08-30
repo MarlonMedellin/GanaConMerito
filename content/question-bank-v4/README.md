@@ -23,7 +23,7 @@ La Fase C2 queda preservada como evidencia histórica en:
 C2 cerró con **0 reactivos nuevos** y no modificó el corpus; por tanto, tampoco
 reemplaza ni altera el corte canónico del manifiesto.
 
-El estado `FROZEN / APPROVED` registrado en el manifiesto identifica el último corte editorial cerrado. Durante la ventana V4.1 no debe interpretarse como prohibición de los cambios limitados autorizados por el documento de descongelamiento. El manifiesto sigue siendo la fuente del corte de reactivos y no autoriza por sí mismo migración Supabase ni activación de runtime. Al cerrar V4.1 deberá regenerarse o ratificarse coherentemente y restablecerse el freeze.
+El estado `FROZEN / APPROVED` registrado en el manifiesto identifica el último corte editorial cerrado. La ventana V4.1 cerró formalmente el 2026-08-30 (ver [V4.1-FINAL-FREEZE-20260830.md](state/V4.1-FINAL-FREEZE-20260830.md)). El manifiesto vuelve a ser el corte canónico activo, pero el freeze no equivale a deploy, ni autoriza por sí mismo migración Supabase ni activación de runtime.
 
 Para validar el corte:
 

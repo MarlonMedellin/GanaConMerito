@@ -66,6 +66,17 @@ export interface QuestionTruthOption {
   isCorrect?: boolean;
 }
 
+export interface QuestionSourceEvidence {
+  sourceId: string;
+  reference: string;
+  title?: string;
+  sourceType?: string;
+  relationType?: "decisive" | "supporting" | string;
+  locator?: string;
+  sourceTruthStatus?: SourceTruthStatus;
+  knowledgeLevel?: "A" | "B" | "C" | "D" | "E" | "F" | string;
+}
+
 export interface MisconceptionHint {
   pattern: string;
   feedback: string;
@@ -83,7 +94,9 @@ export interface QuestionTruth {
   cognitiveIntent: string;
   expectedUserTask: string;
   sourceType: string;
+  sourceId?: string;
   sourceRefs: string[];
+  resolvedSources?: QuestionSourceEvidence[];
   stem: string;
   options: QuestionTruthOption[];
   correctOption?: string;

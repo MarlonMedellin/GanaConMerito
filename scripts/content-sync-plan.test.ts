@@ -13,6 +13,7 @@ import {
 
 interface KnowledgeInventorySource {
   sourceId: string;
+  knowledgeLevel?: string | null;
   verificationStatus: string;
   verifiedAt: string | null;
   url?: string | null;
@@ -46,6 +47,14 @@ async function readKnowledgeInventory() {
   };
 }
 
+async function readSourceRemediation() {
+  return JSON.parse(await fs.readFile("content/knowledge-base/catalog/v4-source-remediation.json", "utf8")) as {
+    replacedSourceIds?: string[];
+    sources?: KnowledgeInventorySource[];
+    itemLinks?: Array<{ questionId: string; sourceId: string; relationType: string }>;
+  };
+}
+
 async function readOpecCatalog() {
   return JSON.parse(await fs.readFile("content/targeting/opecs/catalog.json", "utf8")) as {
     opecs: OpecCatalogRecord[];
@@ -63,19 +72,27 @@ test("canonical repository builds a deterministic complete clean V4 sync plan", 
   const second = await buildContentSyncPlan(process.cwd());
   assert.deepEqual(first, second);
 
-  const [inventory, opecCatalog, itemMap] = await Promise.all([
+  const [inventory, sourceRemediation, opecCatalog, itemMap] = await Promise.all([
     readKnowledgeInventory(),
+    readSourceRemediation(),
     readOpecCatalog(),
     readItemTargetMap(),
   ]);
 
+  const replacedSourceIds = new Set(sourceRemediation.replacedSourceIds ?? []);
   const expectedKnowledgeSourceIds = inventory.sources
+    .filter((source) => !replacedSourceIds.has(source.sourceId))
+    .concat(sourceRemediation.sources ?? [])
     .filter(isVerifiedKnowledgeSource)
     .map((source) => source.sourceId)
     .sort();
   const plannedKnowledgeSourceIds = first.entities.knowledgeSources
     .map((source) => String(source.sourceId))
     .sort();
+  const rawExpectedSources = inventory.sources
+    .filter((source) => !replacedSourceIds.has(source.sourceId))
+    .concat(sourceRemediation.sources ?? [])
+    .filter(isVerifiedKnowledgeSource);
   const expectedOpecIds = opecCatalog.opecs
     .filter(isVerifiedOpec)
     .map((opec) => `${opec.sourceSystem}:${opec.externalOpecId}`)
@@ -93,11 +110,16 @@ test("canonical repository builds a deterministic complete clean V4 sync plan", 
   assert.deepEqual(plannedOpecIds, expectedOpecIds);
   assert.equal(summary.counts.knowledgeSources, expectedKnowledgeSourceIds.length);
   assert.deepEqual(plannedKnowledgeSourceIds, expectedKnowledgeSourceIds);
-  assert.deepEqual(expectedKnowledgeSourceIds, [
-    "cnsc-docentes-2026-proyecto-acuerdo-antioquia",
-    "cnsc-docentes-2026-proyecto-anexo-tecnico",
-  ]);
+  assert.ok(expectedKnowledgeSourceIds.includes("cnsc-docentes-2026-proyecto-acuerdo-antioquia"));
+  assert.ok(expectedKnowledgeSourceIds.includes("cnsc-docentes-2026-proyecto-anexo-tecnico"));
   assert.equal(first.entityIds.questions.length, 248);
+  assert.equal(first.entities.itemSources.filter((source) => source.relationType === "decisive").length, 248);
+  assert.equal(first.entities.itemSources.filter((source) => source.relationType === "supporting").length, sourceRemediation.itemLinks?.length ?? 0);
+  assert.equal(first.entities.questions.some((question) => JSON.stringify(question).match(/"knowledgeLevel":"[A-F]"/)), false);
+  for (const source of rawExpectedSources.filter((source) => source.knowledgeLevel)) {
+    const planned = first.entities.knowledgeSources.find((candidate) => candidate.sourceId === source.sourceId);
+    assert.equal(planned?.metadata?.knowledgeLevel, source.knowledgeLevel);
+  }
   assert.equal(calculateContentSyncPlanHash(first), summary.planHash);
 });
 
@@ -139,12 +161,15 @@ test("CAN-001 minimum inventory keeps five approved items at docentes family lev
 
 test("unverified catalogs and unapproved mappings never enter a sync plan", async () => {
   const plan = await buildContentSyncPlan(process.cwd());
-  const [inventory, itemMap] = await Promise.all([readKnowledgeInventory(), readItemTargetMap()]);
+  const [inventory, sourceRemediation, itemMap] = await Promise.all([readKnowledgeInventory(), readSourceRemediation(), readItemTargetMap()]);
   const plannedKnowledgeSourceIds = new Set(plan.entities.knowledgeSources.map((source) => String(source.sourceId)));
-  const needsReviewSourceIds = inventory.sources
-    .filter((source) => source.verificationStatus === "needs_review")
-    .map((source) => source.sourceId);
   const approvedMappingIds = new Set(itemMap.mappings.filter(isApprovedItemMapping).map((mapping) => mapping.itemId));
+  const replacedSourceIds = new Set(sourceRemediation.replacedSourceIds ?? []);
+  const verifiedSourceIds = new Set(inventory.sources
+    .filter((source) => !replacedSourceIds.has(source.sourceId))
+    .concat(sourceRemediation.sources ?? [])
+    .filter(isVerifiedKnowledgeSource)
+    .map((source) => source.sourceId));
   const cnscSourceIds = [
     "cnsc-docentes-2026-proyecto-acuerdo-antioquia",
     "cnsc-docentes-2026-proyecto-anexo-tecnico",
@@ -152,10 +177,9 @@ test("unverified catalogs and unapproved mappings never enter a sync plan", asyn
 
   assert.equal(plan.entities.knowledgeSources.every((source) => Boolean(source.verifiedAt)), true);
   assert.equal(plan.entities.itemTargets.every((target) => approvedMappingIds.has(String(target.questionId))), true);
+  assert.equal(plan.entities.itemSources.filter((source) => source.relationType === "decisive").length, 248);
+  assert.equal(plan.entities.itemSources.every((source) => verifiedSourceIds.has(String(source.sourceId))), true);
   assert.equal(plan.entities.knowledgeTargets.length, 0);
-  assert.equal(plan.entities.itemSources.length, 0);
-  assert.ok(needsReviewSourceIds.length > 0);
-  assert.equal(needsReviewSourceIds.some((sourceId) => plannedKnowledgeSourceIds.has(sourceId)), false);
   for (const sourceId of cnscSourceIds) {
     const source = inventory.sources.find((candidate) => candidate.sourceId === sourceId);
     assert.ok(source, `Missing canonical CNSC source ${sourceId}`);

@@ -1,0 +1,16 @@
+import assert from "node:assert/strict";
+import test from "node:test";
+import { buildKnowledgeSourceMap, validateV4SourceGuard, type KnowledgeSourceGuardRecord, type V4SourceGuardItem } from "./lib/v4-source-guard";
+
+const verified: KnowledgeSourceGuardRecord = {sourceId:"col-decreto-1290-evaluacion-estudiantes",reference:"Decreto 1290 de 2009",referenceAliases:["Decreto 1290 de 2009, artículo 3"],verificationStatus:"verified",knowledgeLevel:"B",compatibleDomains:["evaluacion"],compatibleTopics:["evaluacion_formativa"],compatibleCompetencies:["decision_pedagogica"]};
+const item: V4SourceGuardItem = {id:"DOC-999001",domain:"evaluacion",topic:"evaluacion_formativa",competency:"decision_pedagogica",source:{reference:"Decreto 1290 de 2009, artículo 3",sourceId:verified.sourceId}};
+const sourceMap=(...sources:KnowledgeSourceGuardRecord[])=>buildKnowledgeSourceMap(sources).map;
+
+test("accepts a verified same-work bibliographic variant",()=>assert.deepEqual(validateV4SourceGuard(item,sourceMap(verified),{requireSourceId:true}),[]));
+test("missing sourceId fails when required",()=>assert.deepEqual(validateV4SourceGuard({...item,source:{reference:item.source.reference}},sourceMap(verified),{requireSourceId:true}),["source.sourceId es obligatorio para freeze V4.1"]));
+test("unknown and unverified decisive sources fail",()=>{assert.deepEqual(validateV4SourceGuard({...item,source:{...item.source,sourceId:"missing"}},sourceMap(verified)),["sourceId inexistente en Knowledge Base: missing"]);assert.match(validateV4SourceGuard(item,sourceMap({...verified,verificationStatus:"needs_review"}))[0],/verificationStatus/);});
+test("level F decisive source fails",()=>assert.match(validateV4SourceGuard(item,sourceMap({...verified,knowledgeLevel:"F"}))[0],/nivel F/));
+test("duplicate sourceId fails before Map collapse",()=>assert.deepEqual(buildKnowledgeSourceMap([verified,{...verified,reference:"Other work"}]).issues,[`sourceId duplicado en Knowledge Base: ${verified.sourceId}`]));
+test("Hattie cannot validate the DBA Transition sourceId even if legacy alias mixed the works",()=>{const dba:KnowledgeSourceGuardRecord={sourceId:"men-udea-dba-transicion",reference:"MEN y Universidad de Antioquia, Derechos Básicos de Aprendizaje para el grado Transición",referenceAliases:["Hattie, J. & Timperley, H. (2007). The Power of Feedback"],verificationStatus:"verified",knowledgeLevel:"C"};const issues=validateV4SourceGuard({...item,source:{reference:"Hattie, J. & Timperley, H. (2007). The Power of Feedback",sourceId:dba.sourceId}},sourceMap(dba));assert.match(issues[0],/una única identidad documental/);});
+test("source A cannot accept source B reference through a mixed alias",()=>{const sourceA:KnowledgeSourceGuardRecord={sourceId:"a",reference:"Ministerio de Educación Nacional, Documento A (2020)",referenceAliases:["Ministerio de Educación Nacional, Documento A (2020); Danielson Group, Framework for Teaching (2022)"],verificationStatus:"verified"};const issues=validateV4SourceGuard({...item,source:{reference:"Danielson Group, Framework for Teaching (2022)",sourceId:"a"}},sourceMap(sourceA));assert.match(issues[0],/una única identidad documental/);});
+test("taxonomy incompatibility fails",()=>assert.match(validateV4SourceGuard({...item,domain:"convivencia"},sourceMap(verified))[0],/domain incompatible/));

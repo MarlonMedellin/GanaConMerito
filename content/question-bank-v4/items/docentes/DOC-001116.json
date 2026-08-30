@@ -1,30 +1,11 @@
 {
-  "id": "DOC-001116",
-  "scope": "general",
-  "domain": "practica_docente",
-  "topic": "retroalimentacion",
-  "competency": "analisis_de_evidencia",
-  "questionType": "reasoning",
-  "cognitiveLevel": "analyze",
-  "context": "En una observación entre pares, una docente nota que formula preguntas interesantes pero suele responderlas ella misma después de uno o dos segundos. Los registros muestran que intervienen casi siempre los mismos estudiantes y que las respuestas del grupo son breves. La docente quiere usar la observación para mejorar su práctica, no para defenderla ni para adoptar una técnica de manera automática.",
-  "stem": "¿Cuál uso de la evidencia representa mejor una práctica profesional reflexiva?",
-  "options": {
-    "A": "Concluir que el grupo tiene poca motivación y mantener la misma dinámica hasta que los estudiantes demuestren mayor iniciativa para participar.",
-    "B": "Adoptar de forma permanente cualquier técnica sugerida por el observador, porque la retroalimentación externa debe reemplazar el criterio profesional de quien dirige la clase.",
-    "C": "Cambiar simultáneamente todas las estrategias de participación y asumir que una mejora en la siguiente clase demostrará cuál de los cambios produjo el efecto.",
-    "D": "Interpretar el patrón observado, ensayar un ajuste específico —por ejemplo, ampliar el tiempo de espera y pedir elaboración entre pares— y recoger nueva evidencia para valorar si cambia la participación y la calidad de las respuestas."
-  },
-  "correctAnswer": "D",
-  "explanations": {
-    "A": "Atribuye el problema al grupo sin examinar cómo la propia interacción docente puede estar condicionando quién participa y con qué profundidad.",
-    "B": "La retroalimentación profesional aporta evidencia y perspectivas, pero no sustituye el análisis contextual ni el juicio del docente sobre qué ajuste probar y cómo valorar su efecto.",
-    "C": "Modificar muchas variables a la vez dificulta aprender de la intervención porque no permite relacionar con claridad la evidencia posterior con decisiones específicas de la práctica.",
-    "D": "Usa la observación como evidencia para formular una hipótesis sobre la práctica, probar un ajuste concreto y volver a observar sus efectos, convirtiendo la retroalimentación en un ciclo de mejora profesional."
-  },
-  "hint": "Una práctica reflexiva no termina en recibir una opinión: transforma la evidencia en una decisión que después puede volver a examinarse.",
-  "learningNote": "La mejora profesional se fortalece cuando el docente analiza evidencias específicas de su práctica, identifica un aspecto susceptible de ajuste, implementa un cambio intencional y observa nuevamente sus efectos. La retroalimentación entre pares es más útil como insumo para investigar la propia enseñanza que como lista de recetas.",
-  "source": {
-    "reference": "Ministerio de Educación Nacional, Cultura de la Evaluación Docente, seguimiento sistemático basado en evidencias; The Danielson Group (2022), Framework for Teaching, componentes 3e y 4e"
-  },
-  "estimatedDifficulty": "high"
+  "id":"DOC-001116","scope":"general","domain":"practica_docente","topic":"retroalimentacion","competency":"analisis_de_evidencia","questionType":"reasoning","cognitiveLevel":"analyze",
+  "context":"En una observación entre pares, una docente nota que formula preguntas interesantes pero suele responderlas ella misma después de uno o dos segundos. Los registros muestran que intervienen casi siempre los mismos estudiantes y que las respuestas del grupo son breves. La docente quiere usar la observación para mejorar su práctica, no para defenderla ni para adoptar una técnica de manera automática.",
+  "stem":"¿Cuál uso de la evidencia representa mejor una práctica profesional reflexiva?",
+  "options":{"A":"Concluir que el grupo tiene poca motivación y mantener la misma dinámica hasta que los estudiantes demuestren mayor iniciativa para participar.","B":"Adoptar de forma permanente cualquier técnica sugerida por el observador, porque la retroalimentación externa debe reemplazar el criterio profesional de quien dirige la clase.","C":"Cambiar simultáneamente todas las estrategias de participación y asumir que una mejora en la siguiente clase demostrará cuál de los cambios produjo el efecto.","D":"Interpretar el patrón observado, ensayar un ajuste específico —por ejemplo, ampliar el tiempo de espera y pedir elaboración entre pares— y recoger nueva evidencia para valorar si cambia la participación y la calidad de las respuestas."},
+  "correctAnswer":"D",
+  "explanations":{"A":"Atribuye el problema al grupo sin examinar cómo la propia interacción docente puede estar condicionando quién participa y con qué profundidad.","B":"La retroalimentación profesional aporta evidencia y perspectivas, pero no sustituye el análisis contextual ni el juicio del docente sobre qué ajuste probar y cómo valorar su efecto.","C":"Modificar muchas variables a la vez dificulta aprender de la intervención porque no permite relacionar con claridad la evidencia posterior con decisiones específicas de la práctica.","D":"Usa la observación como evidencia para formular una hipótesis sobre la práctica, probar un ajuste concreto y volver a observar sus efectos, convirtiendo la retroalimentación en un ciclo de mejora profesional."},
+  "hint":"Una práctica reflexiva no termina en recibir una opinión: transforma la evidencia en una decisión que después puede volver a examinarse.",
+  "learningNote":"La mejora profesional se fortalece cuando el docente analiza evidencias específicas de su práctica, identifica un aspecto susceptible de ajuste, implementa un cambio intencional y observa nuevamente sus efectos. La retroalimentación entre pares es más útil como insumo para investigar la propia enseñanza que como lista de recetas.",
+  "source":{"reference":"Ministerio de Educación Nacional, Cultura de la Evaluación Docente, seguimiento sistemático basado en evidencias","sourceId":"men-cultura-evaluacion-docente"},"estimatedDifficulty":"high"
 }
