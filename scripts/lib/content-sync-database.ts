@@ -42,8 +42,10 @@ function storedHashDiff(entity: string, planned: Row[], actual: Row[], plannedId
   return { entity, insert, update, unchanged, archiveOrRemove: actualById.size, driftIds };
 }
 
-function normalizeQuestionRow(row: Row, options: Row[]) {
+function normalizeQuestionRow(row: Row, options: Row[], plannedSourceIdByQuestion: ReadonlyMap<string, string>, actualDecisiveSourceIdsByQuestion: ReadonlyMap<string, ReadonlySet<string>>) {
   const source: Row = { reference: row.source_reference };
+  const sourceId = plannedSourceIdByQuestion.get(row.id);
+  if (sourceId && actualDecisiveSourceIdsByQuestion.get(row.id)?.has(sourceId)) source.sourceId = sourceId;
   if (row.source_locator) source.locator = row.source_locator;
   if (row.source_url) source.url = row.source_url;
   if (row.source_type) source.type = row.source_type;
@@ -144,7 +146,15 @@ export async function diffContentSyncPlan(client: SupabaseClient, plan: ContentS
   const plannedProfileIds = new Set(plan.entityIds.profiles);
   const plannedOpecIds = new Set(plan.entityIds.opecs);
   const opecById = new Map(opecs.map((row) => [row.id, row]));
-  const actualQuestions = questions.filter((question) => question.sync_state === "current").map((question) => normalizeQuestionRow(question, options));
+  const plannedSourceIdByQuestion = new Map(plan.entities.questions.flatMap((question) => question.source?.sourceId ? [[String(question.id), String(question.source.sourceId)]] : []));
+  const actualDecisiveSourceIdsByQuestion = new Map<string, Set<string>>();
+  for (const row of itemSources.filter((source) => source.relation_type === "decisive")) {
+    const questionId = String(row.question_id);
+    const sourceIds = actualDecisiveSourceIdsByQuestion.get(questionId) ?? new Set<string>();
+    sourceIds.add(String(row.source_id));
+    actualDecisiveSourceIdsByQuestion.set(questionId, sourceIds);
+  }
+  const actualQuestions = questions.filter((question) => question.sync_state === "current").map((question) => normalizeQuestionRow(question, options, plannedSourceIdByQuestion, actualDecisiveSourceIdsByQuestion));
   const actualItemTargets = [
     ...familyTargets.map((row) => withContentHash({ questionId: row.question_id, targetType: "family", familyCode: row.family_code, evidence: row.evidence })),
     ...profileTargets.map((row) => withContentHash({ questionId: row.question_id, targetType: "profile", profileCode: row.profile_code, evidence: row.evidence })),
