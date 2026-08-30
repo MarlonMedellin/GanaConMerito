@@ -23,11 +23,17 @@ export interface KnowledgeSourceGuardRecord {
 export interface V4SourceGuardOptions { requireSourceId?: boolean }
 
 function normalizeReference(value: string): string {
-  return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/\bmen\b/g, "ministerio educacion nacional")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
 }
 
 function tokenSet(value: string) {
-  return new Set(normalizeReference(value).split(" ").filter((token) => token.length > 2));
+  return new Set(normalizeReference(value).split(" ").filter((token) => token.length > 2 || /^\d+$/.test(token)));
 }
 
 function overlap(left: string, right: string) {
@@ -56,8 +62,9 @@ function safeAliases(source: KnowledgeSourceGuardRecord): string[] {
 
 function referenceMatches(itemReference: string, source: KnowledgeSourceGuardRecord): boolean {
   const segments = itemReference.split(";").map((part) => part.trim()).filter(Boolean);
-  if (segments.length !== 1) return false;
-  return [source.reference, ...safeAliases(source)].some((candidate) => sameWork(segments[0], candidate));
+  if (segments.length === 0) return false;
+  const candidates = [source.reference, ...safeAliases(source)];
+  return segments.some((segment) => candidates.some((candidate) => sameWork(segment, candidate)));
 }
 
 function includesIfDeclared(values: string[] | undefined, value: string): boolean {

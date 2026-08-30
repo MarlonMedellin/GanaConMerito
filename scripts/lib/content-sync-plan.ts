@@ -21,7 +21,18 @@ function hashed<T extends JsonRecord>(record: T): T & { contentHash: string } { 
 export function entityContentHash(record: JsonRecord) { const { contentHash: _ignored, ...content } = record; return sha256(canonicalJson(content)); }
 async function readJson(file: string) { return JSON.parse(await fs.readFile(file, "utf8")); }
 async function jsonFiles(directory: string): Promise<string[]> { const entries = await fs.readdir(directory, { withFileTypes: true }); const files: string[] = []; for (const entry of entries) { const target = path.join(directory, entry.name); if (entry.isDirectory()) files.push(...await jsonFiles(target)); else if (entry.isFile() && entry.name.endsWith(".json") && !entry.name.endsWith(".schema.json")) files.push(target); } return files.sort(); }
-function nonNullEntries(record: JsonRecord) { return Object.fromEntries(Object.entries(record).filter(([, value]) => value !== null && value !== undefined)); }
+function cleanNullish(value: unknown): unknown {
+  if (Array.isArray(value)) return value.map(cleanNullish);
+  if (value && typeof value === "object") {
+    return Object.fromEntries(
+      Object.entries(value as JsonRecord)
+        .filter(([, entry]) => entry !== null && entry !== undefined)
+        .map(([key, entry]) => [key, cleanNullish(entry)]),
+    );
+  }
+  return value;
+}
+function nonNullEntries(record: JsonRecord) { return cleanNullish(record) as JsonRecord; }
 function difficultyValue(value: string) { if (value === "low") return 0.25; if (value === "high") return 0.75; return 0.5; }
 export function isVerifiedOpec(record: JsonRecord) { return record.verificationStatus === "verified"; }
 export function isApprovedItemMapping(record: JsonRecord) { return record.reviewStatus === "approved"; }

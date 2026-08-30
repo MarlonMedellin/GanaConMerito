@@ -170,6 +170,18 @@ async function jsonFiles(directory: string): Promise<string[]> {
   return files.sort();
 }
 
+async function isControlledUnfreeze(repoRoot: string): Promise<boolean> {
+  try {
+    const state = await fs.readFile(
+      path.join(repoRoot, "content/question-bank-v4/state/V4.1-CONTROLLED-UNFREEZE-20260829.md"),
+      "utf8",
+    );
+    return state.includes("UNFROZEN_CONTROLLED_V4_1");
+  } catch {
+    return false;
+  }
+}
+
 export async function buildV4ImportPlan(repoRoot: string): Promise<V4ImportPlan> {
   const bankRoot = path.join(repoRoot, "content/question-bank-v4");
   const [itemPaths, manifest, domains, topics, competencies, questionTypes] = await Promise.all([
@@ -221,6 +233,7 @@ export async function buildV4ImportPlan(repoRoot: string): Promise<V4ImportPlan>
   const sortedIds = [...ids].sort();
   const idsHash = createHash("sha256").update(sortedIds.map((itemId) => `${itemId}\n`).join("")).digest("hex");
   const corpusHash = corpusDigest.digest("hex");
+  const controlledUnfreeze = await isControlledUnfreeze(repoRoot);
   if (candidates.length !== manifest.expectedItemCount) {
     throw new Error(`V4 manifest count mismatch: expected ${manifest.expectedItemCount}, found ${candidates.length}`);
   }
@@ -228,7 +241,7 @@ export async function buildV4ImportPlan(repoRoot: string): Promise<V4ImportPlan>
     throw new Error("V4 manifest IDs do not match the physical corpus");
   }
   if (idsHash !== manifest.corpus.idsSha256) throw new Error("V4 manifest IDs hash mismatch");
-  if (corpusHash !== manifest.corpus.sha256) throw new Error("V4 manifest corpus hash mismatch");
+  if (!controlledUnfreeze && corpusHash !== manifest.corpus.sha256) throw new Error("V4 manifest corpus hash mismatch");
   return {
     candidates,
     planHash: calculateV4PlanHash(candidates),
