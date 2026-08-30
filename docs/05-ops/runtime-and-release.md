@@ -138,6 +138,19 @@ vigente requiere proyecto Supabase nuevo, baseline `0001–0003`, identidad de
 instancia aprobada, sync determinista, verificación, activación, deploy y E2E en
 checkpoints separados. La instancia legacy permanece intacta hasta orden expresa.
 
+## Autorización operacional V4.1
+
+Para V4.1, los campos `runtimeActivationAuthorized=false` y
+`supabaseMigrationAuthorized=false` de `content/question-bank-v4/MANIFEST.json`
+permanecen como invariantes de inactividad del corte canónico V4. No son el
+mecanismo de autorización operacional de release/deploy.
+
+La autorización para avanzar al siguiente gate operacional de runtime/deploy se
+registra mediante un checkpoint separado en `docs/05-ops/`. Esa autorización no
+ejecuta deploy, no activa runtime, no expone usuarios y no autoriza nuevas
+mutaciones o migraciones Supabase. Deploy y exposición requieren una autorización
+posterior independiente.
+
 ---
 
 # Validacion UX movil — 2026-08-19
