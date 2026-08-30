@@ -5,6 +5,14 @@ import type { TutorProvider, TutorShadowExecution, TutorShadowOutput } from "./t
 const SHADOW_SCHEMA_VERSION = "tutor-shadow-v1" as const;
 export const APPROVED_OPENROUTER_MODEL = "openai/gpt-4o-2024-08-06";
 export const APPROVED_OPENROUTER_PROVIDER = "azure";
+export const TUTOR_SHADOW_EVIDENCE_KEYS = [
+  "question",
+  "source_evidence",
+  "user_session",
+  "contest",
+  "aspirational_profile",
+  "recent_performance",
+] as const;
 const TIMEOUT_MS = 10_000;
 const CIRCUIT_FAILURE_LIMIT = 3;
 const CIRCUIT_OPEN_MS = 60_000;
@@ -13,7 +21,7 @@ const tutorShadowOutputSchema = z.object({
   schemaVersion: z.literal(SHADOW_SCHEMA_VERSION),
   visibleMessage: z.string().min(1).max(1_500),
   pedagogicalAction: z.enum(["explain", "hint", "compare", "feedback", "recommend", "degrade"]),
-  evidenceKeys: z.array(z.string().min(1).max(80)).max(16),
+  evidenceKeys: z.array(z.enum(TUTOR_SHADOW_EVIDENCE_KEYS)).max(16),
   sourceIdsUsed: z.array(z.string().min(1).max(120)).max(16).default([]),
   sourceCitationsUsed: z.array(z.object({
     sourceId: z.string().min(1).max(120),
@@ -33,7 +41,7 @@ export const TUTOR_SHADOW_JSON_SCHEMA = {
     schemaVersion: { type: "string", const: SHADOW_SCHEMA_VERSION },
     visibleMessage: { type: "string", minLength: 1, maxLength: 1500 },
     pedagogicalAction: { type: "string", enum: ["explain", "hint", "compare", "feedback", "recommend", "degrade"] },
-    evidenceKeys: { type: "array", items: { type: "string" }, maxItems: 16 },
+    evidenceKeys: { type: "array", items: { type: "string", enum: TUTOR_SHADOW_EVIDENCE_KEYS }, maxItems: 16 },
     sourceIdsUsed: { type: "array", items: { type: "string" }, maxItems: 16 },
     sourceCitationsUsed: {
       type: "array",
@@ -101,10 +109,11 @@ function minimizedSourceEvidence(input: TutorTurnRequest) {
 
 function buildShadowSystemPrompt(input: TutorTurnRequest) {
   const canReveal = Boolean(input.evidence.userSession.selectedOption);
+  const evidenceKeyRule = ` En evidenceKeys usa exclusivamente: ${TUTOR_SHADOW_EVIDENCE_KEYS.join(", ")}.`;
   const preAnswerRule = canReveal
     ? ""
     : " Como canRevealCorrectAnswer=false, no declares ni sugieras que una opción A-D es correcta, mejor, más adecuada, más pertinente, preferible o equivalente.";
-  return `Eres un redactor pedagógico gobernado. Usa solo el expediente JSON. No reveles secretos, no inventes normas, no puntúes ni cambies la sesión.${preAnswerRule}`;
+  return `Eres un redactor pedagógico gobernado. Usa solo el expediente JSON. No reveles secretos, no inventes normas, no puntúes ni cambies la sesión.${evidenceKeyRule}${preAnswerRule}`;
 }
 
 export function buildMinimizedShadowDossier(input: TutorTurnRequest) {
@@ -161,7 +170,7 @@ function hasPreAnswerOptionLeak(message: string) {
 }
 
 export function validateShadowSafety(output: TutorShadowOutput, input: TutorTurnRequest) {
-  const availableEvidence = new Set(["question", "source_evidence", "user_session", "contest", "aspirational_profile", "recent_performance"]);
+  const availableEvidence = new Set<string>(TUTOR_SHADOW_EVIDENCE_KEYS);
   if (output.evidenceKeys.some((key) => !availableEvidence.has(key))) return { ok: false as const, reason: "unknown_evidence_key" };
   const sourceEvidence = minimizedSourceEvidence(input);
   const sourcesById = new Map(sourceEvidence.map((source) => [source.sourceId, source]));
