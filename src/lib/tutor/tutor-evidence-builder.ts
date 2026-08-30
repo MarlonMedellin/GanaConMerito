@@ -1,6 +1,6 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
-import { V4QuestionRepository } from "../question-bank/v4-question-repository";
-import type { TutorEvidence } from "../../types/tutor-turn";
+import { V4QuestionRepository, type V4QuestionSourceRecord } from "../question-bank/v4-question-repository";
+import type { QuestionSourceEvidence, SourceTruthStatus, TutorEvidence } from "../../types/tutor-turn";
 import { questionTruthToTutorSupportContract, v4QuestionToQuestionTruth } from "../../domain/tutor/question-truth-adapter";
 import {
   buildAspirationalProfileTruthV1,
@@ -46,6 +46,22 @@ interface LearningSignalInput {
   turns: TutorSessionTurnWithEvaluation[];
   currentTurn?: TutorSessionTurnWithEvaluation | null;
   question?: TutorEvidence["question"];
+}
+
+function sourceTruthStatusFromVerification(status: string | null): SourceTruthStatus {
+  return status === "verified" ? "source_verified" : "synthesized_governed_unverified";
+}
+
+function toTutorSourceEvidence(source: V4QuestionSourceRecord): QuestionSourceEvidence {
+  return {
+    sourceId: source.sourceId,
+    reference: source.reference,
+    title: source.title ?? undefined,
+    sourceType: source.sourceType ?? undefined,
+    relationType: source.relationType,
+    locator: source.locator ?? undefined,
+    sourceTruthStatus: sourceTruthStatusFromVerification(source.verificationStatus),
+  };
 }
 
 function detectLearningSignals({ turns, currentTurn, question }: LearningSignalInput): TutorEvidence["userSession"]["learningSignals"] | undefined {
@@ -116,8 +132,9 @@ export async function buildTutorEvidence(params: {
   const { supabase, userId, sessionId, itemId } = params;
   const questionBank = new V4QuestionRepository();
 
-  const [practiceQuestion, turnsResult, currentTurnResult, learningProfileResult] = await Promise.all([
+  const [practiceQuestion, questionSources, turnsResult, currentTurnResult, learningProfileResult] = await Promise.all([
     questionBank.getPracticeQuestion(itemId),
+    questionBank.getQuestionSources(itemId),
     supabase
       .from("session_turns")
       .select("id, question_id, selected_option, user_rationale, model_feedback, created_at")
@@ -160,6 +177,8 @@ export async function buildTutorEvidence(params: {
   const recentPerformanceSummary = buildRecentPerformanceSummary(turnsWithEvaluation);
   const contest = buildContestTruthV1();
   const aspirationalProfile = buildAspirationalProfileTruthV1(professionalProfile);
+  const resolvedSources = questionSources.map(toTutorSourceEvidence);
+  const decisiveSource = resolvedSources.find((source) => source.relationType === "decisive") ?? resolvedSources[0];
   const answeredQuestion = currentTurn?.selected_option
     ? await questionBank.getAnsweredQuestion(itemId)
     : null;
@@ -172,6 +191,9 @@ export async function buildTutorEvidence(params: {
             rationale: answeredQuestion?.explanations[option.key],
             isCorrect: answeredQuestion ? option.key === answeredQuestion.correctOption : undefined,
           })),
+          sourceId: decisiveSource?.sourceId ?? answeredQuestion?.sourceId ?? practiceQuestion.sourceId,
+          sourceReference: decisiveSource?.reference ?? answeredQuestion?.sourceReference ?? practiceQuestion.sourceReference,
+          resolvedSources,
           answered: answeredQuestion
             ? {
                 correctOption: answeredQuestion.correctOption,

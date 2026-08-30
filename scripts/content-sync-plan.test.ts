@@ -93,10 +93,8 @@ test("canonical repository builds a deterministic complete clean V4 sync plan", 
   assert.deepEqual(plannedOpecIds, expectedOpecIds);
   assert.equal(summary.counts.knowledgeSources, expectedKnowledgeSourceIds.length);
   assert.deepEqual(plannedKnowledgeSourceIds, expectedKnowledgeSourceIds);
-  assert.deepEqual(expectedKnowledgeSourceIds, [
-    "cnsc-docentes-2026-proyecto-acuerdo-antioquia",
-    "cnsc-docentes-2026-proyecto-anexo-tecnico",
-  ]);
+  assert.ok(expectedKnowledgeSourceIds.includes("cnsc-docentes-2026-proyecto-acuerdo-antioquia"));
+  assert.ok(expectedKnowledgeSourceIds.includes("cnsc-docentes-2026-proyecto-anexo-tecnico"));
   assert.equal(first.entityIds.questions.length, 248);
   assert.equal(calculateContentSyncPlanHash(first), summary.planHash);
 });
@@ -141,10 +139,8 @@ test("unverified catalogs and unapproved mappings never enter a sync plan", asyn
   const plan = await buildContentSyncPlan(process.cwd());
   const [inventory, itemMap] = await Promise.all([readKnowledgeInventory(), readItemTargetMap()]);
   const plannedKnowledgeSourceIds = new Set(plan.entities.knowledgeSources.map((source) => String(source.sourceId)));
-  const needsReviewSourceIds = inventory.sources
-    .filter((source) => source.verificationStatus === "needs_review")
-    .map((source) => source.sourceId);
   const approvedMappingIds = new Set(itemMap.mappings.filter(isApprovedItemMapping).map((mapping) => mapping.itemId));
+  const verifiedSourceIds = new Set(inventory.sources.filter(isVerifiedKnowledgeSource).map((source) => source.sourceId));
   const cnscSourceIds = [
     "cnsc-docentes-2026-proyecto-acuerdo-antioquia",
     "cnsc-docentes-2026-proyecto-anexo-tecnico",
@@ -152,10 +148,9 @@ test("unverified catalogs and unapproved mappings never enter a sync plan", asyn
 
   assert.equal(plan.entities.knowledgeSources.every((source) => Boolean(source.verifiedAt)), true);
   assert.equal(plan.entities.itemTargets.every((target) => approvedMappingIds.has(String(target.questionId))), true);
+  assert.equal(plan.entities.itemSources.length, 248);
+  assert.equal(plan.entities.itemSources.every((source) => verifiedSourceIds.has(String(source.sourceId))), true);
   assert.equal(plan.entities.knowledgeTargets.length, 0);
-  assert.equal(plan.entities.itemSources.length, 0);
-  assert.ok(needsReviewSourceIds.length > 0);
-  assert.equal(needsReviewSourceIds.some((sourceId) => plannedKnowledgeSourceIds.has(sourceId)), false);
   for (const sourceId of cnscSourceIds) {
     const source = inventory.sources.find((candidate) => candidate.sourceId === sourceId);
     assert.ok(source, `Missing canonical CNSC source ${sourceId}`);

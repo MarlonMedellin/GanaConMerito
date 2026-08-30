@@ -11,7 +11,7 @@ interface V4EditorialMetadata {
   explanations?: Partial<Record<"A" | "B" | "C" | "D", string>>;
   hint?: string;
   learningNote?: string;
-  source?: { reference?: string };
+  source?: { reference?: string; sourceId?: string };
 }
 
 interface V4ItemRow {
@@ -55,6 +55,7 @@ export interface V4PracticeQuestionRecord {
   questionType: string | null;
   cognitiveLevel: string | null;
   sourceReference: string | null;
+  sourceId: string | null;
   sourceType: string | null;
   sourcePath: string | null;
   scope: string | null;
@@ -72,6 +73,17 @@ export interface V4AnsweredQuestionRecord {
   explanations: Partial<Record<"A" | "B" | "C" | "D", string>>;
   learningNote?: string;
   sourceReference?: string;
+  sourceId?: string;
+}
+
+export interface V4QuestionSourceRecord {
+  sourceId: string;
+  reference: string;
+  title: string | null;
+  sourceType: string | null;
+  relationType: string;
+  locator: string | null;
+  verificationStatus: string | null;
 }
 
 export class V4QuestionRepository {
@@ -130,6 +142,7 @@ export class V4QuestionRepository {
       questionType: row.question_type,
       cognitiveLevel: row.cognitive_level,
       sourceReference: null,
+      sourceId: null,
       sourceType: row.source_type,
       sourcePath: row.source_path,
       scope: row.editorial_scope,
@@ -162,7 +175,42 @@ export class V4QuestionRepository {
       explanations,
       learningNote: (data as any).learning_note ?? undefined,
       sourceReference: row.source_reference ?? undefined,
+      sourceId: row.editorial_metadata?.source?.sourceId ?? undefined,
     };
+  }
+
+  async getQuestionSources(itemId: string): Promise<V4QuestionSourceRecord[]> {
+    const { data, error } = await this.client
+      .from("item_source_links")
+      .select(`
+        source_id,
+        relation_type,
+        locator,
+        knowledge_sources (
+          source_id,
+          title,
+          reference,
+          source_type,
+          verification_status
+        )
+      `)
+      .eq("question_id", itemId)
+      .order("relation_type", { ascending: true });
+    if (error) throw error;
+
+    return (data ?? []).flatMap((row: any) => {
+      const source = Array.isArray(row.knowledge_sources) ? row.knowledge_sources[0] : row.knowledge_sources;
+      if (!source?.source_id || !source.reference) return [];
+      return [{
+        sourceId: source.source_id,
+        reference: source.reference,
+        title: source.title ?? null,
+        sourceType: source.source_type ?? null,
+        relationType: row.relation_type ?? "decisive",
+        locator: row.locator ?? null,
+        verificationStatus: source.verification_status ?? null,
+      }];
+    });
   }
 
   private async getOptions(itemId: string) {

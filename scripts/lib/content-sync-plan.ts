@@ -178,7 +178,7 @@ export async function buildContentSyncPlan(repoRoot: string): Promise<ContentSyn
       explanations: item.explanations,
       hint: item.hint,
       learningNote: item.learningNote,
-      source: { reference: item.source.reference, type: "editorial_reference" },
+      source: nonNullEntries({ reference: item.source.reference, sourceId: item.source.sourceId, type: "editorial_reference" }),
       sourcePath: candidate.sourcePath,
       options,
     }));
@@ -230,7 +230,11 @@ export async function buildContentSyncPlan(repoRoot: string): Promise<ContentSyn
 
   const sourceIdByReference = new Map(knowledgeSources.map((source: JsonRecord) => [source.reference, source.sourceId]));
   const itemSources = questions.flatMap((question: JsonRecord) => {
-    const sourceId = sourceIdByReference.get(question.source.reference);
+    const declaredSourceId = question.source.sourceId;
+    if (declaredSourceId && !verifiedSourceIds.has(declaredSourceId)) {
+      throw new Error(`${question.id}: sourceId is not a verified Knowledge Base source: ${declaredSourceId}`);
+    }
+    const sourceId = declaredSourceId ?? sourceIdByReference.get(question.source.reference);
     return sourceId ? [hashed({ questionId: question.id, sourceId, relationType: "decisive" })] : [];
   }).sort((left, right) => canonicalJson(left).localeCompare(canonicalJson(right)));
 
