@@ -13,6 +13,7 @@ import {
 
 interface KnowledgeInventorySource {
   sourceId: string;
+  knowledgeLevel?: string | null;
   verificationStatus: string;
   verifiedAt: string | null;
   url?: string | null;
@@ -88,6 +89,10 @@ test("canonical repository builds a deterministic complete clean V4 sync plan", 
   const plannedKnowledgeSourceIds = first.entities.knowledgeSources
     .map((source) => String(source.sourceId))
     .sort();
+  const rawExpectedSources = inventory.sources
+    .filter((source) => !replacedSourceIds.has(source.sourceId))
+    .concat(sourceRemediation.sources ?? [])
+    .filter(isVerifiedKnowledgeSource);
   const expectedOpecIds = opecCatalog.opecs
     .filter(isVerifiedOpec)
     .map((opec) => `${opec.sourceSystem}:${opec.externalOpecId}`)
@@ -111,6 +116,10 @@ test("canonical repository builds a deterministic complete clean V4 sync plan", 
   assert.equal(first.entities.itemSources.filter((source) => source.relationType === "decisive").length, 248);
   assert.equal(first.entities.itemSources.filter((source) => source.relationType === "supporting").length, sourceRemediation.itemLinks?.length ?? 0);
   assert.equal(first.entities.questions.some((question) => JSON.stringify(question).match(/"knowledgeLevel":"[A-F]"/)), false);
+  for (const source of rawExpectedSources.filter((source) => source.knowledgeLevel)) {
+    const planned = first.entities.knowledgeSources.find((candidate) => candidate.sourceId === source.sourceId);
+    assert.equal(planned?.metadata?.knowledgeLevel, source.knowledgeLevel);
+  }
   assert.equal(calculateContentSyncPlanHash(first), summary.planHash);
 });
 

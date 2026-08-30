@@ -74,6 +74,7 @@ export interface QuestionSourceEvidence {
   relationType?: "decisive" | "supporting" | string;
   locator?: string;
   sourceTruthStatus?: SourceTruthStatus;
+  knowledgeLevel?: "A" | "B" | "C" | "D" | "E" | "F" | string;
 }
 
 export interface MisconceptionHint {

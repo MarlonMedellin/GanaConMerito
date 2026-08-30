@@ -14,6 +14,15 @@ const tutorShadowOutputSchema = z.object({
   visibleMessage: z.string().min(1).max(1_500),
   pedagogicalAction: z.enum(["explain", "hint", "compare", "feedback", "recommend", "degrade"]),
   evidenceKeys: z.array(z.string().min(1).max(80)).max(16),
+  sourceIdsUsed: z.array(z.string().min(1).max(120)).max(16).default([]),
+  sourceCitationsUsed: z.array(z.object({
+    sourceId: z.string().min(1).max(120),
+    reference: z.string().min(1).max(500),
+  }).strict()).max(16).default([]),
+  sourceClaims: z.array(z.object({
+    sourceId: z.string().min(1).max(120),
+    claim: z.enum(["used_as_evidence", "presented_as_current"]),
+  }).strict()).max(16).default([]),
   uncertainty: z.enum(["none", "limited", "insufficient"]),
   requiresDeterministicFallback: z.boolean(),
 }).strict();
@@ -25,10 +34,37 @@ export const TUTOR_SHADOW_JSON_SCHEMA = {
     visibleMessage: { type: "string", minLength: 1, maxLength: 1500 },
     pedagogicalAction: { type: "string", enum: ["explain", "hint", "compare", "feedback", "recommend", "degrade"] },
     evidenceKeys: { type: "array", items: { type: "string" }, maxItems: 16 },
+    sourceIdsUsed: { type: "array", items: { type: "string" }, maxItems: 16 },
+    sourceCitationsUsed: {
+      type: "array",
+      items: {
+        type: "object",
+        properties: {
+          sourceId: { type: "string" },
+          reference: { type: "string" },
+        },
+        required: ["sourceId", "reference"],
+        additionalProperties: false,
+      },
+      maxItems: 16,
+    },
+    sourceClaims: {
+      type: "array",
+      items: {
+        type: "object",
+        properties: {
+          sourceId: { type: "string" },
+          claim: { type: "string", enum: ["used_as_evidence", "presented_as_current"] },
+        },
+        required: ["sourceId", "claim"],
+        additionalProperties: false,
+      },
+      maxItems: 16,
+    },
     uncertainty: { type: "string", enum: ["none", "limited", "insufficient"] },
     requiresDeterministicFallback: { type: "boolean" },
   },
-  required: ["schemaVersion", "visibleMessage", "pedagogicalAction", "evidenceKeys", "uncertainty", "requiresDeterministicFallback"],
+  required: ["schemaVersion", "visibleMessage", "pedagogicalAction", "evidenceKeys", "sourceIdsUsed", "sourceCitationsUsed", "sourceClaims", "uncertainty", "requiresDeterministicFallback"],
   additionalProperties: false,
 } as const;
 
@@ -50,10 +86,24 @@ function redactUserText(value: string) {
     .slice(0, 1_000);
 }
 
+function minimizedSourceEvidence(input: TutorTurnRequest) {
+  return (input.evidence.question?.resolvedSources ?? [])
+    .filter((source) => source.sourceId && source.reference)
+    .map((source) => ({
+      sourceId: source.sourceId,
+      reference: source.reference,
+      relationType: source.relationType,
+      locator: source.locator,
+      sourceTruthStatus: source.sourceTruthStatus,
+      knowledgeLevel: source.knowledgeLevel,
+    }));
+}
+
 export function buildMinimizedShadowDossier(input: TutorTurnRequest) {
   const question = input.evidence.question;
   const session = input.evidence.userSession;
   const canReveal = Boolean(session.selectedOption);
+  const sourceEvidence = minimizedSourceEvidence(input);
   const dossier = {
     schemaVersion: SHADOW_SCHEMA_VERSION,
     mode: canReveal ? "post_answer" : "pre_answer",
@@ -70,6 +120,7 @@ export function buildMinimizedShadowDossier(input: TutorTurnRequest) {
       options: question.options.map(({ key, text }) => ({ key, text })),
       hint: question.hint,
       sourceTruthStatus: question.sourceTruthStatus,
+      sourceEvidence,
       ...(canReveal ? {
         selectedOption: session.selectedOption,
         correctOption: question.correctOption,
@@ -92,13 +143,28 @@ export function buildMinimizedShadowDossier(input: TutorTurnRequest) {
   return dossier;
 }
 
-function validateShadowSafety(output: TutorShadowOutput, input: TutorTurnRequest) {
-  const availableEvidence = new Set(["question", "user_session", "contest", "aspirational_profile", "recent_performance"]);
-  if (output.evidenceKeys.some((key) => !availableEvidence.has(key))) return false;
-  if (!input.evidence.userSession.selectedOption && /(?:clave|opci[oó]n correcta|respuesta correcta)\s*(?:es|:)\s*[A-D]/i.test(output.visibleMessage)) {
-    return false;
+export function validateShadowSafety(output: TutorShadowOutput, input: TutorTurnRequest) {
+  const availableEvidence = new Set(["question", "source_evidence", "user_session", "contest", "aspirational_profile", "recent_performance"]);
+  if (output.evidenceKeys.some((key) => !availableEvidence.has(key))) return { ok: false as const, reason: "unknown_evidence_key" };
+  const sourceEvidence = minimizedSourceEvidence(input);
+  const sourcesById = new Map(sourceEvidence.map((source) => [source.sourceId, source]));
+  for (const sourceId of output.sourceIdsUsed ?? []) {
+    if (!sourcesById.has(sourceId)) return { ok: false as const, reason: "invented_source_id" };
   }
-  return true;
+  for (const citation of output.sourceCitationsUsed ?? []) {
+    const source = sourcesById.get(citation.sourceId);
+    if (!source) return { ok: false as const, reason: "invented_source_id" };
+    if (source.reference !== citation.reference) return { ok: false as const, reason: "source_reference_mismatch" };
+  }
+  for (const claim of output.sourceClaims ?? []) {
+    const source = sourcesById.get(claim.sourceId);
+    if (!source) return { ok: false as const, reason: "invented_source_id" };
+    if (claim.claim === "presented_as_current" && source.knowledgeLevel === "F") return { ok: false as const, reason: "historical_source_misuse" };
+  }
+  if (!input.evidence.userSession.selectedOption && /(?:clave|opci[oó]n correcta|respuesta correcta)\s*(?:es|:)\s*[A-D]/i.test(output.visibleMessage)) {
+    return { ok: false as const, reason: "pre_answer_leak" };
+  }
+  return { ok: true as const };
 }
 
 export class OpenRouterProvider implements TutorProvider<TutorShadowExecution> {
@@ -159,8 +225,12 @@ export class OpenRouterProvider implements TutorProvider<TutorShadowExecution> {
         const payload = await response.json() as any;
         const content = payload?.choices?.[0]?.message?.content;
         const parsed = tutorShadowOutputSchema.safeParse(typeof content === "string" ? JSON.parse(content) : content);
-        if (!parsed.success || !validateShadowSafety(parsed.data, input)) {
+        if (!parsed.success) {
           return this.fail(startedAt, "invalid_or_unsafe_output", "rejected");
+        }
+        const safety = validateShadowSafety(parsed.data, input);
+        if (!safety.ok) {
+          return this.fail(startedAt, safety.reason, "rejected");
         }
         consecutiveFailures = 0;
         circuitOpenedAt = 0;

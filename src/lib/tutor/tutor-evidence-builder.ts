@@ -61,6 +61,7 @@ function toTutorSourceEvidence(source: V4QuestionSourceRecord): QuestionSourceEv
     relationType: source.relationType,
     locator: source.locator ?? undefined,
     sourceTruthStatus: sourceTruthStatusFromVerification(source.verificationStatus),
+    knowledgeLevel: source.knowledgeLevel ?? undefined,
   };
 }
 

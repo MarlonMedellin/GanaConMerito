@@ -10,6 +10,9 @@ export interface TutorShadowOutput {
   visibleMessage: string;
   pedagogicalAction: "explain" | "hint" | "compare" | "feedback" | "recommend" | "degrade";
   evidenceKeys: string[];
+  sourceIdsUsed?: string[];
+  sourceCitationsUsed?: Array<{ sourceId: string; reference: string }>;
+  sourceClaims?: Array<{ sourceId: string; claim: "used_as_evidence" | "presented_as_current" }>;
   uncertainty: "none" | "limited" | "insufficient";
   requiresDeterministicFallback: boolean;
 }

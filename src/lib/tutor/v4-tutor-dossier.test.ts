@@ -27,6 +27,7 @@ const practiceQuestion = {
       sourceType: "normative",
       relationType: "decisive",
       sourceTruthStatus: "source_verified" as const,
+      knowledgeLevel: "B",
     },
   ],
   options: [
@@ -61,6 +62,7 @@ test("V4 pre-answer dossier carries context and taxonomy without answer truth", 
   assert.equal(question.hint, practiceQuestion.hint);
   assert.equal(question.sourceId, "col-decreto-1075-sector-educacion");
   assert.equal(question.resolvedSources?.[0]?.sourceId, "col-decreto-1075-sector-educacion");
+  assert.equal(question.resolvedSources?.[0]?.knowledgeLevel, "B");
   assert.equal(question.sourceTruthStatus, "source_verified");
   assert.ok(question.sourceRefs.includes("sourceId:col-decreto-1075-sector-educacion"));
   assert.equal(hasQuestionEvidence(evidence(question)), true);

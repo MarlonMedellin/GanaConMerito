@@ -84,6 +84,7 @@ export interface V4QuestionSourceRecord {
   relationType: string;
   locator: string | null;
   verificationStatus: string | null;
+  knowledgeLevel: string | null;
 }
 
 export class V4QuestionRepository {
@@ -191,7 +192,8 @@ export class V4QuestionRepository {
           title,
           reference,
           source_type,
-          verification_status
+          verification_status,
+          metadata
         )
       `)
       .eq("question_id", itemId)
@@ -209,6 +211,7 @@ export class V4QuestionRepository {
         relationType: row.relation_type ?? "decisive",
         locator: row.locator ?? null,
         verificationStatus: source.verification_status ?? null,
+        knowledgeLevel: typeof source.metadata?.knowledgeLevel === "string" ? source.metadata.knowledgeLevel : null,
       }];
     });
   }

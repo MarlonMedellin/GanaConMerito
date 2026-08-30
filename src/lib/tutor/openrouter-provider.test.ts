@@ -18,7 +18,29 @@ const input: TutorTurnRequest = {
       cognitiveIntent: "Aplicar",
       expectedUserTask: "Comparar opciones",
       sourceType: "official_source",
+      sourceId: "col-decreto-1290-evaluacion-estudiantes",
       sourceRefs: ["/opt/internal/source.pdf"],
+      resolvedSources: [
+        {
+          sourceId: "col-decreto-1290-evaluacion-estudiantes",
+          reference: "Decreto 1290 de 2009",
+          title: "Evaluación del aprendizaje",
+          sourceType: "normative",
+          relationType: "decisive",
+          locator: "artículo 3",
+          sourceTruthStatus: "source_verified",
+          knowledgeLevel: "B",
+        },
+        {
+          sourceId: "legacy-concurso-docente-2016",
+          reference: "Material histórico concurso docente 2016",
+          title: "Antecedente histórico",
+          sourceType: "historical",
+          relationType: "supporting",
+          sourceTruthStatus: "source_verified",
+          knowledgeLevel: "F",
+        },
+      ],
       stem: "¿Qué debe hacer?",
       options: [
         { key: "A", text: "A" },
@@ -40,10 +62,29 @@ const input: TutorTurnRequest = {
 };
 
 test("shadow dossier redacts identity-like text, paths and pre-answer truth", () => {
-  const serialized = JSON.stringify(buildMinimizedShadowDossier(input));
+  const dossier = buildMinimizedShadowDossier(input);
+  const serialized = JSON.stringify(dossier);
   assert.doesNotMatch(serialized, /private-user-id|private-session-id|persona@example\.com|\/opt\/gcm|\/opt\/internal/);
   assert.doesNotMatch(serialized, /correctOption|correctExplanation|explanations|learningNote/);
   assert.match(serialized, /email-redacted|path-redacted/);
+  assert.deepEqual(dossier.question?.sourceEvidence, [
+    {
+      sourceId: "col-decreto-1290-evaluacion-estudiantes",
+      reference: "Decreto 1290 de 2009",
+      relationType: "decisive",
+      locator: "artículo 3",
+      sourceTruthStatus: "source_verified",
+      knowledgeLevel: "B",
+    },
+    {
+      sourceId: "legacy-concurso-docente-2016",
+      reference: "Material histórico concurso docente 2016",
+      relationType: "supporting",
+      locator: undefined,
+      sourceTruthStatus: "source_verified",
+      knowledgeLevel: "F",
+    },
+  ]);
 });
 
 test("OpenRouter request fixes provider privacy controls and strict schema", async () => {
@@ -55,7 +96,10 @@ test("OpenRouter request fixes provider privacy controls and strict schema", asy
         schemaVersion: "tutor-shadow-v1",
         visibleMessage: "Revisa la tarea esperada sin pedir la clave.",
         pedagogicalAction: "hint",
-        evidenceKeys: ["question"],
+        evidenceKeys: ["question", "source_evidence"],
+        sourceIdsUsed: ["col-decreto-1290-evaluacion-estudiantes"],
+        sourceCitationsUsed: [{ sourceId: "col-decreto-1290-evaluacion-estudiantes", reference: "Decreto 1290 de 2009" }],
+        sourceClaims: [{ sourceId: "col-decreto-1290-evaluacion-estudiantes", claim: "used_as_evidence" }],
         uncertainty: "limited",
         requiresDeterministicFallback: false,
       }) } }],
@@ -93,7 +137,10 @@ test("unsafe pre-answer output is rejected and shadow stays opt-in", async () =>
       schemaVersion: "tutor-shadow-v1",
       visibleMessage: "La respuesta correcta es B",
       pedagogicalAction: "feedback",
-      evidenceKeys: ["question"],
+      evidenceKeys: ["question", "source_evidence"],
+      sourceIdsUsed: ["col-decreto-1290-evaluacion-estudiantes"],
+      sourceCitationsUsed: [{ sourceId: "col-decreto-1290-evaluacion-estudiantes", reference: "Decreto 1290 de 2009" }],
+      sourceClaims: [{ sourceId: "col-decreto-1290-evaluacion-estudiantes", claim: "used_as_evidence" }],
       uncertainty: "none",
       requiresDeterministicFallback: false,
     }) } }],
@@ -121,6 +168,57 @@ test("unsafe pre-answer output is rejected and shadow stays opt-in", async () =>
     model: APPROVED_OPENROUTER_MODEL,
     provider: APPROVED_OPENROUTER_PROVIDER,
   });
+});
+
+test("OpenRouter rejects invented source ids, source mismatches and historical current claims", async () => {
+  const cases = [
+    {
+      output: {
+        sourceIdsUsed: ["invented-source"],
+        sourceCitationsUsed: [],
+        sourceClaims: [],
+      },
+      errorCode: "invented_source_id",
+    },
+    {
+      output: {
+        sourceIdsUsed: ["col-decreto-1290-evaluacion-estudiantes"],
+        sourceCitationsUsed: [{ sourceId: "col-decreto-1290-evaluacion-estudiantes", reference: "Referencia inventada" }],
+        sourceClaims: [],
+      },
+      errorCode: "source_reference_mismatch",
+    },
+    {
+      output: {
+        sourceIdsUsed: ["legacy-concurso-docente-2016"],
+        sourceCitationsUsed: [{ sourceId: "legacy-concurso-docente-2016", reference: "Material histórico concurso docente 2016" }],
+        sourceClaims: [{ sourceId: "legacy-concurso-docente-2016", claim: "presented_as_current" }],
+      },
+      errorCode: "historical_source_misuse",
+    },
+  ];
+
+  for (const testCase of cases) {
+    resetOpenRouterCircuitForTests();
+    const fetchMock = async () => new Response(JSON.stringify({
+      choices: [{ message: { content: JSON.stringify({
+        schemaVersion: "tutor-shadow-v1",
+        visibleMessage: "Salida simulada.",
+        pedagogicalAction: "hint",
+        evidenceKeys: ["question", "source_evidence"],
+        ...testCase.output,
+        uncertainty: "limited",
+        requiresDeterministicFallback: false,
+      }) } }],
+    }), { status: 200, headers: { "Content-Type": "application/json" } });
+    const provider = new OpenRouterProvider(
+      { apiKey: "test-secret", model: "approved/model", provider: "approved-provider" },
+      fetchMock as typeof fetch,
+    );
+    const result = await provider.generate(input);
+    assert.equal(result.status, "rejected");
+    assert.equal(result.errorCode, testCase.errorCode);
+  }
 });
 
 test("OpenRouter retries one transient 429 or 5xx and rejects invalid JSON", async () => {
