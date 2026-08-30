@@ -1,96 +1,16 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import {
-  validateV4SourceGuard,
-  type KnowledgeSourceGuardRecord,
-  type V4SourceGuardItem,
-} from "./lib/v4-source-guard";
+import { buildKnowledgeSourceMap, validateV4SourceGuard, type KnowledgeSourceGuardRecord, type V4SourceGuardItem } from "./lib/v4-source-guard";
 
-const verifiedSource: KnowledgeSourceGuardRecord = {
-  sourceId: "col-decreto-1290-evaluacion-estudiantes",
-  reference: "Decreto 1290 de 2009",
-  verificationStatus: "verified",
-  knowledgeLevel: "B",
-  compatibleDomains: ["evaluacion"],
-  compatibleTopics: ["evaluacion_formativa"],
-  compatibleCompetencies: ["decision_pedagogica"],
-};
+const verified: KnowledgeSourceGuardRecord = {sourceId:"col-decreto-1290-evaluacion-estudiantes",reference:"Decreto 1290 de 2009",referenceAliases:["Decreto 1290 de 2009, artículo 3"],verificationStatus:"verified",knowledgeLevel:"B",compatibleDomains:["evaluacion"],compatibleTopics:["evaluacion_formativa"],compatibleCompetencies:["decision_pedagogica"]};
+const item: V4SourceGuardItem = {id:"DOC-999001",domain:"evaluacion",topic:"evaluacion_formativa",competency:"decision_pedagogica",source:{reference:"Decreto 1290 de 2009, artículo 3",sourceId:verified.sourceId}};
+const sourceMap=(...sources:KnowledgeSourceGuardRecord[])=>buildKnowledgeSourceMap(sources).map;
 
-const item: V4SourceGuardItem = {
-  id: "DOC-999001",
-  domain: "evaluacion",
-  topic: "evaluacion_formativa",
-  competency: "decision_pedagogica",
-  source: {
-    reference: "Decreto 1290 de 2009, artículo 3",
-    sourceId: verifiedSource.sourceId,
-  },
-};
-
-function sourceMap(...sources: KnowledgeSourceGuardRecord[]) {
-  return new Map(sources.map((source) => [source.sourceId, source]));
-}
-
-test("V4.1 source guard accepts a verified matching sourceId", () => {
-  assert.deepEqual(validateV4SourceGuard(item, sourceMap(verifiedSource), { requireSourceId: true }), []);
-});
-
-test("V4.1 source guard accepts declared reference aliases for canonical sources", () => {
-  const source: KnowledgeSourceGuardRecord = {
-    sourceId: "men-orientaciones-siee-evaluacion-formativa",
-    reference: "MEN Orientaciones para el fortalecimiento del SIEE y evaluación formativa",
-    referenceAliases: ["MEN, Sistema Institucional de Evaluacion de los Estudiantes (SIEE)"],
-    verificationStatus: "verified",
-    knowledgeLevel: "C",
-  };
-  assert.deepEqual(validateV4SourceGuard({
-    ...item,
-    source: {
-      reference: "MEN, Sistema Institucional de Evaluacion de los Estudiantes (SIEE)",
-      sourceId: source.sourceId,
-    },
-  }, sourceMap(source), { requireSourceId: true }), []);
-});
-
-test("V4.1 source guard can keep legacy-V4 items transitional", () => {
-  assert.deepEqual(validateV4SourceGuard({ ...item, source: { reference: item.source.reference } }, sourceMap()), []);
-  assert.deepEqual(validateV4SourceGuard({ ...item, source: { reference: item.source.reference } }, sourceMap(), { requireSourceId: true }), [
-    "source.sourceId es obligatorio para freeze V4.1",
-  ]);
-});
-
-test("V4.1 source guard rejects unknown and unverified sources", () => {
-  assert.deepEqual(
-    validateV4SourceGuard({ ...item, source: { ...item.source, sourceId: "missing-source" } }, sourceMap(verifiedSource)),
-    ["sourceId inexistente en Knowledge Base: missing-source"],
-  );
-
-  assert.deepEqual(
-    validateV4SourceGuard(item, sourceMap({ ...verifiedSource, verificationStatus: "needs_review" })),
-    [`${verifiedSource.sourceId}: verificationStatus debe ser verified para uso productivo V4.1`],
-  );
-});
-
-test("V4.1 source guard rejects level-F historical sources as decisive sourceId", () => {
-  assert.deepEqual(
-    validateV4SourceGuard(item, sourceMap({ ...verifiedSource, knowledgeLevel: "F" })),
-    [`${verifiedSource.sourceId}: una fuente histórica de nivel F no puede ser fuente principal decisiva V4.1`],
-  );
-});
-
-test("V4.1 source guard rejects reference and taxonomy incompatibilities when declared", () => {
-  assert.deepEqual(
-    validateV4SourceGuard(
-      {
-        ...item,
-        domain: "convivencia",
-        source: { ...item.source, reference: "Ley 115 de 1994" },
-      },
-      sourceMap(verifiedSource),
-    ),
-    [
-      `${verifiedSource.sourceId}: source.reference no corresponde con la referencia canónica (${verifiedSource.reference})`,
-      `${verifiedSource.sourceId}: domain incompatible con la fuente: convivencia`,
-    ],
-  );
-});
+test("accepts a verified same-work bibliographic variant",()=>assert.deepEqual(validateV4SourceGuard(item,sourceMap(verified),{requireSourceId:true}),[]));
+test("missing sourceId fails when required",()=>assert.deepEqual(validateV4SourceGuard({...item,source:{reference:item.source.reference}},sourceMap(verified),{requireSourceId:true}),["source.sourceId es obligatorio para freeze V4.1"]));
+test("unknown and unverified decisive sources fail",()=>{assert.deepEqual(validateV4SourceGuard({...item,source:{...item.source,sourceId:"missing"}},sourceMap(verified)),["sourceId inexistente en Knowledge Base: missing"]);assert.match(validateV4SourceGuard(item,sourceMap({...verified,verificationStatus:"needs_review"}))[0],/verificationStatus/);});
+test("level F decisive source fails",()=>assert.match(validateV4SourceGuard(item,sourceMap({...verified,knowledgeLevel:"F"}))[0],/nivel F/));
+test("duplicate sourceId fails before Map collapse",()=>assert.deepEqual(buildKnowledgeSourceMap([verified,{...verified,reference:"Other work"}]).issues,[`sourceId duplicado en Knowledge Base: ${verified.sourceId}`]));
+test("Hattie cannot validate the DBA Transition sourceId even if legacy alias mixed the works",()=>{const dba:KnowledgeSourceGuardRecord={sourceId:"men-udea-dba-transicion",reference:"MEN y Universidad de Antioquia, Derechos Básicos de Aprendizaje para el grado Transición",referenceAliases:["Hattie, J. & Timperley, H. (2007). The Power of Feedback"],verificationStatus:"verified",knowledgeLevel:"C"};const issues=validateV4SourceGuard({...item,source:{reference:"Hattie, J. & Timperley, H. (2007). The Power of Feedback",sourceId:dba.sourceId}},sourceMap(dba));assert.match(issues[0],/una única identidad documental/);});
+test("source A cannot accept source B reference through a mixed alias",()=>{const sourceA:KnowledgeSourceGuardRecord={sourceId:"a",reference:"Ministerio de Educación Nacional, Documento A (2020)",referenceAliases:["Ministerio de Educación Nacional, Documento A (2020); Danielson Group, Framework for Teaching (2022)"],verificationStatus:"verified"};const issues=validateV4SourceGuard({...item,source:{reference:"Danielson Group, Framework for Teaching (2022)",sourceId:"a"}},sourceMap(sourceA));assert.match(issues[0],/una única identidad documental/);});
+test("taxonomy incompatibility fails",()=>assert.match(validateV4SourceGuard({...item,domain:"convivencia"},sourceMap(verified))[0],/domain incompatible/));

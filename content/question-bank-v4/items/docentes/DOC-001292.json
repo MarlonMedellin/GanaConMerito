@@ -1,31 +1,11 @@
 {
-  "id": "DOC-001292",
-  "scope": "general",
-  "domain": "desarrollo_aprendizaje",
-  "topic": "aprendizaje_y_desarrollo_cognitivo",
-  "competency": "planeacion_pedagogica",
-  "questionType": "case_analysis",
-  "cognitiveLevel": "apply",
-  "context": "Antes de iniciar el tema de flujo de energía en los ecosistemas, una docente encuentra que sus estudiantes pueden describir cadenas alimentarias de su entorno, pero todavía explican cada relación como una lista aislada de quién se come a quién y no conectan esas relaciones con transferencia de energía y niveles tróficos.",
-  "stem": "¿Qué diseño favorece mejor un aprendizaje significativo a partir del conocimiento previo disponible?",
-  "options": {
-    "A": "Presentar primero definiciones formales de energía, productor y consumidor para que el grupo memorice un vocabulario común antes de volver sobre las ideas que ya posee acerca de cadenas alimentarias.",
-    "B": "Hacer explícitas las ideas que ya manejan sobre cadenas alimentarias, organizarlas y relacionarlas deliberadamente con transferencia de energía y niveles tróficos mediante ejemplos y representaciones con sentido.",
-    "C": "Evitar recuperar las explicaciones previas porque podrían contener imprecisiones, e iniciar el tema como contenido completamente nuevo para impedir que las concepciones anteriores interfieran con la enseñanza.",
-    "D": "Pedir que estudien de manera independiente una lista de conceptos y evaluar su recuerdo antes de trabajar situaciones del entorno, porque la conexión contextual debe ocurrir después de dominar las definiciones."
-  },
-  "correctAnswer": "B",
-  "explanations": {
-    "A": "El vocabulario puede ser necesario, pero memorizarlo antes de establecer relaciones no garantiza que la nueva información se integre con la estructura de conocimientos existente.",
-    "B": "Es la mejor respuesta porque parte de conocimientos relevantes ya disponibles y construye relaciones explícitas entre esos saberes y los nuevos conceptos.",
-    "C": "Las ideas previas no deben ignorarse; conocerlas permite identificar puntos de anclaje, limitaciones y relaciones que orientan la incorporación del nuevo conocimiento.",
-    "D": "El recuerdo aislado de definiciones puede producir aprendizaje mecánico si los conceptos no se conectan de manera sustantiva con conocimientos y situaciones que ya tienen significado para el estudiante."
-  },
-  "hint": "Observa qué propuesta convierte lo que los estudiantes ya saben en un punto de anclaje para las nuevas relaciones conceptuales.",
-  "learningNote": "En el aprendizaje significativo, el conocimiento nuevo se relaciona de manera sustantiva con conocimientos relevantes que ya existen en la estructura cognitiva. Recuperar y organizar esos saberes ayuda a construir conexiones y no solo a acumular definiciones.",
-  "source": {
-    "reference": "Agra et al. (2019), Analysis of the concept of Meaningful Learning in light of Ausubel's Theory; Bryce & Blown (2024), Ausubel’s meaningful learning re-visited",
-    "sourceId": "ausubel-aprendizaje-significativo"
-  },
-  "estimatedDifficulty": "medium"
+  "id":"DOC-001292","scope":"general","domain":"desarrollo_aprendizaje","topic":"aprendizaje_y_desarrollo_cognitivo","competency":"planeacion_pedagogica","questionType":"case_analysis","cognitiveLevel":"apply",
+  "context":"Antes de iniciar el tema de flujo de energía en los ecosistemas, una docente encuentra que sus estudiantes pueden describir cadenas alimentarias de su entorno, pero todavía explican cada relación como una lista aislada de quién se come a quién y no conectan esas relaciones con transferencia de energía y niveles tróficos.",
+  "stem":"¿Qué diseño favorece mejor un aprendizaje significativo a partir del conocimiento previo disponible?",
+  "options":{"A":"Presentar primero definiciones formales de energía, productor y consumidor para que el grupo memorice un vocabulario común antes de volver sobre las ideas que ya posee acerca de cadenas alimentarias.","B":"Hacer explícitas las ideas que ya manejan sobre cadenas alimentarias, organizarlas y relacionarlas deliberadamente con transferencia de energía y niveles tróficos mediante ejemplos y representaciones con sentido.","C":"Evitar recuperar las explicaciones previas porque podrían contener imprecisiones, e iniciar el tema como contenido completamente nuevo para impedir que las concepciones anteriores interfieran con la enseñanza.","D":"Pedir que estudien de manera independiente una lista de conceptos y evaluar su recuerdo antes de trabajar situaciones del entorno, porque la conexión contextual debe ocurrir después de dominar las definiciones."},
+  "correctAnswer":"B",
+  "explanations":{"A":"El vocabulario puede ser necesario, pero memorizarlo antes de establecer relaciones no garantiza que la nueva información se integre con la estructura de conocimientos existente.","B":"Es la mejor respuesta porque parte de conocimientos relevantes ya disponibles y construye relaciones explícitas entre esos saberes y los nuevos conceptos.","C":"Las ideas previas no deben ignorarse; conocerlas permite identificar puntos de anclaje, limitaciones y relaciones que orientan la incorporación del nuevo conocimiento.","D":"El recuerdo aislado de definiciones puede producir aprendizaje mecánico si los conceptos no se conectan de manera sustantiva con conocimientos y situaciones que ya tienen significado para el estudiante."},
+  "hint":"Observa qué propuesta convierte lo que los estudiantes ya saben en un punto de anclaje para las nuevas relaciones conceptuales.",
+  "learningNote":"En el aprendizaje significativo, el conocimiento nuevo se relaciona de manera sustantiva con conocimientos relevantes que ya existen en la estructura cognitiva. Recuperar y organizar esos saberes ayuda a construir conexiones y no solo a acumular definiciones.",
+  "source":{"reference":"Agra et al. (2019). Analysis of the concept of Meaningful Learning","sourceId":"agra-meaningful-learning"},"estimatedDifficulty":"medium"
 }

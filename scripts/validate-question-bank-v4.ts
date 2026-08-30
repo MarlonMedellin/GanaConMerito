@@ -1,75 +1,46 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { v4ItemSchema } from "../src/domain/content/v4-contract";
-import {
-  validateV4SourceGuard,
-  type KnowledgeSourceGuardRecord,
-} from "./lib/v4-source-guard";
+import { buildKnowledgeSourceMap, validateV4SourceGuard, type KnowledgeSourceGuardRecord } from "./lib/v4-source-guard";
 
 async function jsonFiles(directory: string): Promise<string[]> {
-  const entries = await fs.readdir(directory, { withFileTypes: true });
-  const files: string[] = [];
-  for (const entry of entries) {
-    const target = path.join(directory, entry.name);
-    if (entry.isDirectory()) files.push(...await jsonFiles(target));
-    else if (entry.isFile() && entry.name.endsWith(".json")) files.push(target);
-  }
+  const entries = await fs.readdir(directory, { withFileTypes: true }); const files: string[] = [];
+  for (const entry of entries) { const target = path.join(directory, entry.name); if (entry.isDirectory()) files.push(...await jsonFiles(target)); else if (entry.isFile() && entry.name.endsWith(".json")) files.push(target); }
   return files.sort();
 }
 
 async function main() {
-  const root = process.cwd();
-  const base = path.join(root, "content/question-bank-v4");
-  const requireSourceId = process.argv.includes("--require-source-id");
-  const [itemPaths, domain, topics, competencies, types, sourceInventory] = await Promise.all([
+  const root = process.cwd(); const base = path.join(root, "content/question-bank-v4"); const requireSourceId = process.argv.includes("--require-source-id");
+  const [itemPaths, domain, topics, competencies, types, inventory, remediation] = await Promise.all([
     jsonFiles(path.join(base, "items")),
     fs.readFile(path.join(base, "taxonomy/domains.json"), "utf8").then(JSON.parse) as Promise<string[]>,
     fs.readFile(path.join(base, "taxonomy/topics.json"), "utf8").then(JSON.parse) as Promise<string[]>,
     fs.readFile(path.join(base, "taxonomy/competencies.json"), "utf8").then(JSON.parse) as Promise<string[]>,
-    fs.readFile(path.join(base, "taxonomy/question-types.json"), "utf8").then(JSON.parse) as Promise<{ questionTypes: string[]; cognitiveLevels: string[] }> ,
-    fs.readFile(path.join(root, "content/knowledge-base/catalog/source-inventory.json"), "utf8").then(JSON.parse) as Promise<{ sources?: KnowledgeSourceGuardRecord[] }>,
+    fs.readFile(path.join(base, "taxonomy/question-types.json"), "utf8").then(JSON.parse) as Promise<{questionTypes:string[];cognitiveLevels:string[]}>,
+    fs.readFile(path.join(root, "content/knowledge-base/catalog/source-inventory.json"), "utf8").then(JSON.parse) as Promise<{sources?:KnowledgeSourceGuardRecord[]}>,
+    fs.readFile(path.join(root, "content/knowledge-base/catalog/v4-source-remediation.json"), "utf8").then(JSON.parse) as Promise<{replacedSourceIds?:string[];sources?:KnowledgeSourceGuardRecord[]}>,
   ]);
-  const sourceIds = new Set<string>();
-  const sourcesById = new Map<string, KnowledgeSourceGuardRecord>();
-  for (const source of sourceInventory.sources ?? []) {
-    if (typeof source.sourceId !== "string") continue;
-    sourceIds.add(source.sourceId);
-    sourcesById.set(source.sourceId, source);
-  }
-  const ids = new Set<string>();
-  let itemsWithSourceId = 0;
-  const errors: Array<{ file: string; issues: string[] }> = [];
+  const replaced = new Set(remediation.replacedSourceIds ?? []);
+  const effectiveSources = [...(inventory.sources ?? []).filter((source) => !replaced.has(source.sourceId)), ...(remediation.sources ?? [])];
+  const sourceMap = buildKnowledgeSourceMap(effectiveSources);
+  const ids = new Set<string>(); let itemsWithSourceId = 0;
+  const errors: Array<{file:string;issues:string[]}> = sourceMap.issues.map((issue) => ({file:"content/knowledge-base/catalog",issues:[issue]}));
   for (const file of itemPaths) {
     const relative = path.relative(root, file);
     try {
-      const item = v4ItemSchema.parse(JSON.parse(await fs.readFile(file, "utf8")));
-      const issues: string[] = [];
+      const item = v4ItemSchema.parse(JSON.parse(await fs.readFile(file, "utf8"))); const issues: string[] = [];
       if (item.source.sourceId) itemsWithSourceId += 1;
-      if (ids.has(item.id)) issues.push(`id duplicado: ${item.id}`);
-      ids.add(item.id);
+      if (ids.has(item.id)) issues.push(`id duplicado: ${item.id}`); ids.add(item.id);
       if (!domain.includes(item.domain)) issues.push(`domain fuera de catálogo: ${item.domain}`);
       if (!topics.includes(item.topic)) issues.push(`topic fuera de catálogo: ${item.topic}`);
       if (!competencies.includes(item.competency)) issues.push(`competency fuera de catálogo: ${item.competency}`);
       if (!types.questionTypes.includes(item.questionType)) issues.push(`questionType fuera de catálogo: ${item.questionType}`);
       if (!types.cognitiveLevels.includes(item.cognitiveLevel)) issues.push(`cognitiveLevel fuera de catálogo: ${item.cognitiveLevel}`);
-      issues.push(...validateV4SourceGuard(item, sourcesById, { requireSourceId }));
-      if (issues.length) errors.push({ file: relative, issues });
-    } catch (error) {
-      errors.push({ file: relative, issues: error instanceof Error ? [error.message] : [String(error)] });
-    }
+      issues.push(...validateV4SourceGuard(item, sourceMap.map, { requireSourceId }));
+      if (issues.length) errors.push({file:relative,issues});
+    } catch (error) { errors.push({file:relative,issues:error instanceof Error?[error.message]:[String(error)]}); }
   }
-  console.log(JSON.stringify({
-    bank: "v4",
-    validatedFiles: itemPaths.length,
-    sourceIdCoverage: {
-      itemsWithSourceId,
-      itemsMissingSourceId: itemPaths.length - itemsWithSourceId,
-      knowledgeSources: sourceIds.size,
-      requireSourceId,
-    },
-    valid: errors.length === 0,
-    errors,
-  }, null, 2));
+  console.log(JSON.stringify({bank:"v4",validatedFiles:itemPaths.length,sourceIdCoverage:{itemsWithSourceId,itemsMissingSourceId:itemPaths.length-itemsWithSourceId,knowledgeSources:sourceMap.map.size,requireSourceId},valid:errors.length===0,errors},null,2));
   if (errors.length) process.exit(1);
 }
-main().catch((error) => { console.error(error); process.exit(1); });
+main().catch((error)=>{console.error(error);process.exit(1);});

@@ -1,31 +1,11 @@
 {
-  "id": "DOC-001293",
-  "scope": "general",
-  "domain": "desarrollo_aprendizaje",
-  "topic": "aprendizaje_y_desarrollo_cognitivo",
-  "competency": "comprension_conceptual",
-  "questionType": "reasoning",
-  "cognitiveLevel": "analyze",
-  "context": "Un estudiante ha construido la regla informal ‘multiplicar siempre hace que un número sea mayor’. La aplica correctamente en varios ejercicios con números naturales. Después representa 8 × 0,5 con un modelo gráfico, obtiene 4 y, tras comparar otros ejemplos con factores entre 0 y 1, modifica su regla para incluir estos casos.",
-  "stem": "¿Cuál interpretación describe mejor el cambio cognitivo observado?",
-  "options": {
-    "A": "El estudiante solo asimiló la nueva información porque conservó intacta su regla inicial y ubicó el resultado 4 dentro del mismo esquema sin modificarlo.",
-    "B": "El estudiante sustituyó el razonamiento por memorización, porque cambiar una regla después de observar contraejemplos impide que exista una reorganización conceptual genuina.",
-    "C": "El estudiante necesitó acomodar su esquema, porque la nueva evidencia no encajaba en la regla previa y lo llevó a reorganizarla para explicar una clase más amplia de casos.",
-    "D": "El estudiante mostró únicamente repetición procedimental, porque comparar varios ejemplos no puede producir cambios en la forma como organiza conceptualmente una operación matemática."
-  },
-  "correctAnswer": "C",
-  "explanations": {
-    "A": "La asimilación integra información que puede encajar en un esquema existente; aquí la regla inicial tuvo que modificarse para explicar el contraejemplo.",
-    "B": "Revisar una explicación frente a evidencia incompatible es precisamente un cambio en la organización conceptual, no una simple sustitución por memoria.",
-    "C": "Es la mejor respuesta porque la acomodación implica modificar o reorganizar un esquema cuando la nueva información no puede incorporarse sin cambiarlo.",
-    "D": "El caso describe explícitamente una revisión de la regla conceptual después de contrastar evidencia, no solo repetición de un procedimiento."
-  },
-  "hint": "Pregunta si la nueva experiencia pudo entrar en la regla existente sin cambiarla o si obligó a revisar esa regla.",
-  "learningNote": "En la teoría de Piaget, la asimilación incorpora experiencias compatibles con esquemas existentes; la acomodación modifica o reorganiza esos esquemas cuando la nueva información no encaja adecuadamente en ellos.",
-  "source": {
-    "reference": "OpenStax, Lifespan Development, sección 3.4 Cognition and Memory in Infants and Toddlers; Piaget, procesos de asimilación y acomodación",
-    "sourceId": "piaget-desarrollo-cognitivo"
-  },
-  "estimatedDifficulty": "medium"
+  "id":"DOC-001293","scope":"general","domain":"desarrollo_aprendizaje","topic":"aprendizaje_y_desarrollo_cognitivo","competency":"comprension_conceptual","questionType":"reasoning","cognitiveLevel":"analyze",
+  "context":"Un estudiante ha construido la regla informal ‘multiplicar siempre hace que un número sea mayor’. La aplica correctamente en varios ejercicios con números naturales. Después representa 8 × 0,5 con un modelo gráfico, obtiene 4 y, tras comparar otros ejemplos con factores entre 0 y 1, modifica su regla para incluir estos casos.",
+  "stem":"¿Cuál interpretación describe mejor el cambio cognitivo observado?",
+  "options":{"A":"El estudiante solo asimiló la nueva información porque conservó intacta su regla inicial y ubicó el resultado 4 dentro del mismo esquema sin modificarlo.","B":"El estudiante sustituyó el razonamiento por memorización, porque cambiar una regla después de observar contraejemplos impide que exista una reorganización conceptual genuina.","C":"El estudiante necesitó acomodar su esquema, porque la nueva evidencia no encajaba en la regla previa y lo llevó a reorganizarla para explicar una clase más amplia de casos.","D":"El estudiante mostró únicamente repetición procedimental, porque comparar varios ejemplos no puede producir cambios en la forma como organiza conceptualmente una operación matemática."},
+  "correctAnswer":"C",
+  "explanations":{"A":"La asimilación integra información que puede encajar en un esquema existente; aquí la regla inicial tuvo que modificarse para explicar el contraejemplo.","B":"Revisar una explicación frente a evidencia incompatible es precisamente un cambio en la organización conceptual, no una simple sustitución por memoria.","C":"Es la mejor respuesta porque la acomodación implica modificar o reorganizar un esquema cuando la nueva información no puede incorporarse sin cambiarlo.","D":"El caso describe explícitamente una revisión de la regla conceptual después de contrastar evidencia, no solo repetición de un procedimiento."},
+  "hint":"Pregunta si la nueva experiencia pudo entrar en la regla existente sin cambiarla o si obligó a revisar esa regla.",
+  "learningNote":"En la teoría de Piaget, la asimilación incorpora experiencias compatibles con esquemas existentes; la acomodación modifica o reorganiza esos esquemas cuando la nueva información no encaja adecuadamente en ellos.",
+  "source":{"reference":"OpenStax, Lifespan Development, sección 3.4 Cognition and Memory in Infants and Toddlers","sourceId":"openstax-lifespan-development-3-4"},"estimatedDifficulty":"medium"
 }
