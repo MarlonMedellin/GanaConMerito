@@ -23,7 +23,7 @@ Resultado de referencia:
 
 El hash permite detectar deriva en las referencias que ya contienen los reactivos V4. No acredita la validez, vigencia, autoridad ni identidad canónica de cada referencia.
 
-La normalización posterior debe ocurrir fuera de los JSON congelados, mediante identidades `sourceId` en `content/knowledge-base/` y relaciones equivalentes a `item_source_links`. Variantes textuales que describan una misma norma, guía, obra o documento deberán reconciliarse editorialmente antes de crear una identidad canónica compartida.
+Estado V4.1: la normalización canónica ya ocurre en `content/knowledge-base/catalog/source-inventory.json` mediante identidades `sourceId`, clasificación A-F y compatibilidad simple con la taxonomía V4. Los reactivos conservan la referencia humana y agregan únicamente `source.sourceId`; las relaciones de evidencia se proyectan a `item_source_links`.
 
 ## Límites
 
@@ -31,4 +31,4 @@ La normalización posterior debe ocurrir fuera de los JSON congelados, mediante 
 - Este inventario no autoriza cambios en `items/`.
 - No se deducen perfiles u OPEC a partir de palabras clave de las referencias.
 - Una referencia inventariada no se considera `verified` por aparecer en un reactivo.
-- La incorporación de una fuente al catálogo canónico exige revisión independiente y estado de verificación explícito.
+- La fuente canónica debe resolverse por `sourceId` y pasar el guardarraíl V4.1 antes de re-freeze o sync productivo.

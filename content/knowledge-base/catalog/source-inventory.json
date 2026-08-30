@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "working_inventory",
+  "status": "v4_1_sourceid_backfill_inventory",
   "notes": [
     "Este inventario registra fuentes canónicas y candidatos legacy; no convierte automáticamente un candidato en fuente verificada.",
     "La aplicabilidad por familia, perfil u OPEC se mantiene fuera de este catálogo, en maps/targeting.",
@@ -10,48 +10,518 @@
   ],
   "sources": [
     {
-      "sourceId": "col-decreto-1075-sector-educacion",
-      "sourceType": "normative",
-      "title": "Decreto Único Reglamentario del Sector Educación",
-      "reference": "Decreto 1075 de 2015",
-      "issuerOrAuthor": "Presidencia de la República de Colombia",
-      "jurisdiction": "colombia",
-      "publicationDate": "2015-05-26",
+      "sourceId": "aero-school-belonging-connectedness",
+      "sourceType": "technical",
+      "title": "School belonging and connectedness in secondary schools",
+      "reference": "Australian Education Research Organisation, School belonging and connectedness in secondary schools",
+      "referenceAliases": [
+        "Australian Education Research Organisation (AERO), School belonging and connectedness in secondary schools, evidence guidance"
+      ],
+      "issuerOrAuthor": "Australian Education Research Organisation",
+      "jurisdiction": "international",
+      "publicationDate": null,
       "effectiveFrom": null,
       "effectiveTo": null,
-      "verificationStatus": "needs_review",
-      "verifiedAt": null,
-      "lastCheckedAt": "2026-08-22",
-      "verificationScope": "official_identity_and_reference_verified; article_level_currency_pending",
-      "sourceSystem": "funcion_publica_gestor_normativo",
-      "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
       "repoPath": null,
-      "repoPathLegacy": "content/normative/decreto_1075.md",
+      "repoPathLegacy": null,
       "locator": null,
-      "rightsNote": "Ficha legacy resumida; la norma oficial es pública, pero la copia local no es texto integral ni sustituye la fuente oficial.",
-      "notes": "Función Pública presenta una versión integrada con modificaciones y reporta actualización de la página; antes de usar un artículo como soporte decisivo se debe verificar su vigencia y localizador concreto."
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "desarrollo_aprendizaje"
+      ],
+      "compatibleTopics": [
+        "convivencia_escolar"
+      ],
+      "compatibleCompetencies": [
+        "decision_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
     },
     {
-      "sourceId": "col-ley-1098-infancia-adolescencia",
-      "sourceType": "normative",
-      "title": "Código de la Infancia y la Adolescencia",
-      "reference": "Ley 1098 de 2006",
-      "issuerOrAuthor": "Congreso de la República de Colombia",
-      "jurisdiction": "colombia",
-      "publicationDate": "2006-11-08",
-      "effectiveFrom": "2007-05-08",
+      "sourceId": "agra-meaningful-learning",
+      "sourceType": "academic",
+      "title": "Analysis of Meaningful Learning in light of Ausubel",
+      "reference": "Agra et al. (2019). Analysis of the concept of Meaningful Learning",
+      "referenceAliases": [],
+      "issuerOrAuthor": "Agra et al.",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
       "effectiveTo": null,
-      "verificationStatus": "needs_review",
-      "verifiedAt": null,
-      "lastCheckedAt": "2026-08-22",
-      "verificationScope": "official_identity_and_reference_verified; article_level_currency_pending",
-      "sourceSystem": "funcion_publica_gestor_normativo",
-      "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=22106",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
       "repoPath": null,
-      "repoPathLegacy": "content/normative/ley_1098.md",
+      "repoPathLegacy": null,
       "locator": null,
-      "rightsNote": "Ficha legacy resumida; la ley oficial es pública, pero la copia local no es texto integral ni sustituye la fuente oficial.",
-      "notes": "La identidad, fecha de expedición, entrada en vigencia y referencia oficial fueron contrastadas. La Ley 1098 ha sido modificada; cualquier artículo usado por un reactivo exige verificación de vigencia/localizador antes de considerarse fuente decisiva."
+      "knowledgeLevel": "E",
+      "compatibleDomains": [],
+      "compatibleTopics": [],
+      "compatibleCompetencies": [],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "ami-montessori-environments",
+      "sourceType": "technical",
+      "title": "Montessori Environments",
+      "reference": "Association Montessori Internationale, Montessori Environments",
+      "referenceAliases": [
+        "Association Montessori Internationale (AMI), Montessori Environments, apartado sobre ambiente preparado y aprendizaje autodirigido"
+      ],
+      "issuerOrAuthor": "Association Montessori Internationale",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "pedagogia"
+      ],
+      "compatibleTopics": [
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "comprension_conceptual"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "andrade-valtcheva-self-assessment",
+      "sourceType": "academic",
+      "title": "Promoting Learning and Achievement Through Self-Assessment",
+      "reference": "Andrade, H. & Valtcheva, A. (2009). Promoting Learning and Achievement Through Self-Assessment",
+      "referenceAliases": [
+        "Andrade, H. & Valtcheva, A. (2009). Promoting Learning and Achievement Through Self-Assessment. Theory Into Practice, 48(1), 12–19"
+      ],
+      "issuerOrAuthor": "Andrade & Valtcheva",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "evaluacion"
+      ],
+      "compatibleTopics": [
+        "evaluacion_formativa"
+      ],
+      "compatibleCompetencies": [
+        "comprension_conceptual"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "ausubel-aprendizaje-significativo",
+      "sourceType": "academic",
+      "title": "Aprendizaje significativo",
+      "reference": "Ausubel, D. P., aprendizaje significativo",
+      "referenceAliases": [
+        "Agra et al. (2019), Analysis of the concept of Meaningful Learning in light of Ausubel's Theory; Bryce & Blown (2024), Ausubel’s meaningful learning re-visited",
+        "Ausubel, D. P. (1960). The use of advance organizers in the learning and retention of meaningful verbal material. Journal of Educational Psychology, 51(5), 267–272. DOI: 10.1037/h0046669"
+      ],
+      "issuerOrAuthor": "David P. Ausubel",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "desarrollo_aprendizaje",
+        "didactica"
+      ],
+      "compatibleTopics": [
+        "aprendizaje_y_desarrollo_cognitivo",
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "planeacion_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "bandura-self-efficacy",
+      "sourceType": "academic",
+      "title": "Self-Efficacy: The Exercise of Control",
+      "reference": "Bandura, A. (1997). Self-Efficacy",
+      "referenceAliases": [
+        "Bandura, A. (1997). Self-Efficacy: The Exercise of Control. W. H. Freeman"
+      ],
+      "issuerOrAuthor": "Albert Bandura",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "desarrollo_aprendizaje"
+      ],
+      "compatibleTopics": [
+        "retroalimentacion"
+      ],
+      "compatibleCompetencies": [
+        "comprension_conceptual"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "barrows-tamblyn-problem-based-learning",
+      "sourceType": "academic",
+      "title": "Problem-Based Learning",
+      "reference": "Barrows, H. S., & Tamblyn, R. M. (1980). Problem-Based Learning",
+      "referenceAliases": [
+        "Barrows, H. S., & Tamblyn, R. M. (1980). Problem-Based Learning: An Approach to Medical Education. Springer"
+      ],
+      "issuerOrAuthor": "Barrows & Tamblyn",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "didactica"
+      ],
+      "compatibleTopics": [
+        "indagacion"
+      ],
+      "compatibleCompetencies": [
+        "decision_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "bishop-verleger-flipped-classroom",
+      "sourceType": "academic",
+      "title": "The Flipped Classroom: A Survey of the Research",
+      "reference": "Bishop, J. L., & Verleger, M. A. (2013). The Flipped Classroom",
+      "referenceAliases": [
+        "Bishop, J. L., & Verleger, M. A. (2013). The Flipped Classroom: A Survey of the Research. 120th ASEE Annual Conference & Exposition"
+      ],
+      "issuerOrAuthor": "Bishop & Verleger",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "didactica"
+      ],
+      "compatibleTopics": [
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "decision_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "black-wiliam-assessment-classroom-learning",
+      "sourceType": "academic",
+      "title": "Assessment and Classroom Learning",
+      "reference": "Black, P. & Wiliam, D. (1998). Assessment and Classroom Learning",
+      "referenceAliases": [
+        "Black, P. & Wiliam, D. (1998). Assessment and Classroom Learning. Assessment in Education, 5(1), 7–74"
+      ],
+      "issuerOrAuthor": "Black & Wiliam",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "evaluacion"
+      ],
+      "compatibleTopics": [
+        "retroalimentacion"
+      ],
+      "compatibleCompetencies": [
+        "decision_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "borasi-errors-springboards-inquiry",
+      "sourceType": "academic",
+      "title": "Capitalizing on Errors as Springboards for Inquiry",
+      "reference": "Borasi, R. (1994). Capitalizing on Errors as Springboards for Inquiry",
+      "referenceAliases": [
+        "Borasi, R. (1994). Capitalizing on Errors as 'Springboards for Inquiry': A Teaching Experiment. Journal for Research in Mathematics Education, 25(2), 166–208"
+      ],
+      "issuerOrAuthor": "Raffaella Borasi",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "didactica"
+      ],
+      "compatibleTopics": [
+        "indagacion"
+      ],
+      "compatibleCompetencies": [
+        "analisis_de_evidencia"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "brookhart-rubrics-formative-assessment",
+      "sourceType": "academic",
+      "title": "How to Create and Use Rubrics for Formative Assessment and Grading",
+      "reference": "Brookhart, S. M. (2013). How to Create and Use Rubrics for Formative Assessment and Grading",
+      "referenceAliases": [
+        "Brookhart, S. M. (2013). How to Create and Use Rubrics for Formative Assessment and Grading. ASCD, capítulo 1",
+        "Brookhart, S. M. (2013). How to Create and Use Rubrics for Formative Assessment and Grading. ASCD, capítulos 2 y 8"
+      ],
+      "issuerOrAuthor": "Susan M. Brookhart",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "evaluacion"
+      ],
+      "compatibleTopics": [
+        "evaluacion_formativa"
+      ],
+      "compatibleCompetencies": [
+        "analisis_de_evidencia",
+        "decision_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "bruner-theory-instruction",
+      "sourceType": "academic",
+      "title": "Toward a Theory of Instruction",
+      "reference": "Bruner, J. S. (1966). Toward a Theory of Instruction",
+      "referenceAliases": [
+        "Bruner, J. S. (1966). Toward a Theory of Instruction. Harvard University Press, pp. 44–48"
+      ],
+      "issuerOrAuthor": "Jerome S. Bruner",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "didactica"
+      ],
+      "compatibleTopics": [
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "decision_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "cast-udl-guidelines",
+      "sourceType": "technical",
+      "title": "Pautas de Diseño Universal para el Aprendizaje",
+      "reference": "CAST, Pautas del Diseño Universal para el Aprendizaje (UDL Guidelines)",
+      "referenceAliases": [],
+      "issuerOrAuthor": "CAST",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "D",
+      "compatibleDomains": [],
+      "compatibleTopics": [],
+      "compatibleCompetencies": [],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "cepeda-distributed-practice",
+      "sourceType": "academic",
+      "title": "Distributed Practice in Verbal Recall Tasks",
+      "reference": "Cepeda et al. (2006). Distributed Practice in Verbal Recall Tasks",
+      "referenceAliases": [
+        "Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., & Rohrer, D. (2006). Distributed Practice in Verbal Recall Tasks: A Review and Quantitative Synthesis. Psychological Bulletin, 132(3), 354–380"
+      ],
+      "issuerOrAuthor": "Cepeda et al.",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "didactica"
+      ],
+      "compatibleTopics": [
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "planeacion_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "chi-self-explanations",
+      "sourceType": "academic",
+      "title": "Self-Explanations",
+      "reference": "Chi et al. (1989). Self-Explanations",
+      "referenceAliases": [
+        "Chi, M. T. H., Bassok, M., Lewis, M. W., Reimann, P., & Glaser, R. (1989). Self-Explanations: How Students Study and Use Examples in Learning to Solve Problems. Cognitive Science, 13(2), 145–182"
+      ],
+      "issuerOrAuthor": "Chi et al.",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "didactica"
+      ],
+      "compatibleTopics": [
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "decision_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
     },
     {
       "sourceId": "cnsc-docentes-2026-proyecto-acuerdo-antioquia",
@@ -94,6 +564,2249 @@
       "locator": "Anexo Técnico; inscripción/OPEC; pruebas; VRM; valoración de antecedentes; entrevista; listas de elegibles",
       "rightsNote": "Documento público oficial en fase de proyecto. Se conserva en repo la ficha normalizada, URL oficial y hash de la copia aportada; la versión accesible advierte que ante discrepancia prevalece el documento físico o firmado digitalmente.",
       "notes": "Fuente oficial provisional aceptada para preparación/Canary con regla de supersesión. Copia aportada: 80 páginas, 9920632 bytes, SHA-256 8c3a60a0d5a30dec5b5869cceae4699dfa87e076f91c39900cdef519722df81e. Debe contrastarse y reemplazarse cuando se publique el Anexo definitivo."
+    },
+    {
+      "sourceId": "col-constitucion-politica-1991",
+      "sourceType": "normative",
+      "title": "Constitución Política de Colombia",
+      "reference": "Constitución Política de Colombia",
+      "referenceAliases": [
+        "Constitución Política de Colombia, artículo 67",
+        "Constitución Política de Colombia, artículos 18 y 19; Corte Constitucional, Sentencia T-662 de 1999",
+        "Constitución Política de Colombia, artículos 18, 19 y 68"
+      ],
+      "issuerOrAuthor": "Asamblea Nacional Constituyente",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "B",
+      "compatibleDomains": [
+        "convivencia",
+        "normativa_educativa"
+      ],
+      "compatibleTopics": [
+        "competencias_ciudadanas"
+      ],
+      "compatibleCompetencies": [
+        "comprension_conceptual",
+        "interpretacion_normativa"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "col-decreto-1075-sector-educacion",
+      "sourceType": "normative",
+      "title": "Decreto Único Reglamentario del Sector Educación",
+      "reference": "Decreto 1075 de 2015",
+      "issuerOrAuthor": "Presidencia de la República de Colombia",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=77913",
+      "repoPath": null,
+      "repoPathLegacy": "content/normative/decreto_1075.md",
+      "locator": null,
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva.",
+      "referenceAliases": [
+        "Decreto 1075 de 2015, artículo 2.3.3.1.4.1; Ley 115 de 1994, artículos 76 y 79",
+        "Decreto 1075 de 2015, artículo 2.3.3.1.5.11",
+        "Decreto 1075 de 2015, artículo 2.3.3.1.5.4, parágrafo 2",
+        "Decreto 1075 de 2015, artículo 2.3.3.1.5.7",
+        "Decreto 1075 de 2015, artículo 2.3.3.1.6.3",
+        "Decreto 1075 de 2015, artículo 2.3.3.1.6.4, compilación del Decreto 1860 de 1994",
+        "Decreto 1075 de 2015, artículo 2.3.3.1.6.7",
+        "Decreto 1075 de 2015, artículo 2.3.3.2.1.1, subrogado por Decreto 1411 de 2022",
+        "Decreto 1075 de 2015, artículo 2.3.3.2.2.2.1, subrogado por Decreto 1411 de 2022",
+        "Decreto 1075 de 2015, artículo 2.3.3.2.2.2.2, subrogado por Decreto 1411 de 2022",
+        "Decreto 1075 de 2015, artículo 2.3.3.2.2.3.4, adicionado por el Decreto 1411 de 2022",
+        "Decreto 1075 de 2015, artículo 2.3.3.3.3.4, numeral 5; MEN, Orientaciones para el fortalecimiento del SIEE, sección 2.3.1",
+        "Decreto 1075 de 2015, artículo 2.3.3.3.3.7",
+        "Decreto 1075 de 2015, artículo 2.3.3.3.7.5, compilación del Decreto 869 de 2010",
+        "Decreto 1075 de 2015, artículo 2.3.3.5.1.4, definiciones de accesibilidad y ajustes razonables, adicionado por el Decreto 1421 de 2017",
+        "Decreto 1075 de 2015, artículo 2.3.3.5.1.4, definiciones incorporadas por el Decreto 1421 de 2017",
+        "Decreto 1075 de 2015, artículo 2.3.3.5.1.4, definiciones incorporadas por el Decreto 1421 de 2017; MEN, Circular 024 de 2026",
+        "Decreto 1075 de 2015, artículo 2.3.3.5.1.4, definición de accesibilidad, adicionado por el Decreto 1421 de 2017",
+        "Decreto 1075 de 2015, artículo 2.3.3.5.1.4, definición de ajustes razonables, adicionado por el Decreto 1421 de 2017",
+        "Decreto 1075 de 2015, artículo 2.3.3.5.1.4, definición de currículo flexible incorporada por el Decreto 1421 de 2017",
+        "Decreto 1075 de 2015, artículo 2.3.3.5.2.1.3, definición de Diseño Universal del Aprendizaje incorporada por el Decreto 1421 de 2017",
+        "Decreto 1075 de 2015, artículo 2.3.3.5.2.3.10, incorporado por el Decreto 1421 de 2017",
+        "Decreto 1075 de 2015, artículo 2.3.3.5.2.3.5, incorporado por el Decreto 1421 de 2017",
+        "Decreto 1075 de 2015, artículo 2.3.3.5.2.3.5, parágrafo 2, incorporado por el Decreto 1421 de 2017",
+        "Decreto 1075 de 2015, artículo 2.3.3.5.2.3.7, incorporado por el Decreto 1421 de 2017",
+        "Decreto 1075 de 2015, artículo 2.3.3.5.2.3.9, incorporado por el Decreto 1421 de 2017",
+        "Decreto 1075 de 2015, artículos 2.3.1.6.3.3 a 2.3.1.6.3.6, Fondo de Servicios Educativos",
+        "Decreto 1075 de 2015, artículos 2.3.1.6.3.3 a 2.3.1.6.3.8; Resolución MEN 003842 de 2022, Rector o Director Rural, función específica 12",
+        "Decreto 1075 de 2015, artículos 2.3.1.6.4.1, 2.3.1.6.4.2 y 2.3.1.6.4.9, compilación del Decreto 4807 de 2011",
+        "Decreto 1075 de 2015, artículos 2.3.3.1.4.1 y 2.3.3.1.5.7",
+        "Decreto 1075 de 2015, artículos 2.3.3.1.5.3 y 2.3.3.1.5.8",
+        "Decreto 1075 de 2015, artículos 2.3.3.2.2.3.1 y 2.3.3.2.2.3.4, adicionados por el Decreto 1411 de 2022",
+        "Decreto 1075 de 2015, artículos 2.3.3.3.3.11 numerales 3 y 4; MEN, Resolución 003842 de 2022, Anexo Técnico 1, funciones del docente de aula, numerales 13 y 23",
+        "Decreto 1075 de 2015, artículos 2.3.3.3.3.3 numerales 2, 3 y 5, y 2.3.3.3.3.11 numeral 8",
+        "Decreto 1075 de 2015, artículos 2.3.3.3.3.3 y 2.3.3.3.3.4; MEN, Orientaciones para el fortalecimiento del SIEE, sección 2.3",
+        "Decreto 1075 de 2015, artículos 2.3.3.3.3.4 y 2.3.3.3.3.12",
+        "Decreto 1075 de 2015, artículos 2.3.3.3.4.1.1 a 2.3.3.3.4.1.3, compilación del Decreto 2832 de 2005",
+        "Decreto 1075 de 2015, artículos 2.3.3.5.2.1.3 y 2.3.3.5.2.3.5, incorporados por el Decreto 1421 de 2017",
+        "Decreto 1075 de 2015, artículos 2.3.3.5.2.3.3 y 2.3.3.5.2.3.10, incorporados por el Decreto 1421 de 2017",
+        "Decreto 1075 de 2015, artículos 2.4.3.1.1 y 2.4.3.3.1; Decreto 277 de 2025, artículos 1, 2 y 3",
+        "Decreto 277 de 2025, artículo 1, que modifica el artículo 2.4.3.1.2 del Decreto 1075 de 2015",
+        "Decreto 277 de 2025, artículo 2, artículo 2.4.3.2.1 del Decreto 1075 de 2015",
+        "Decreto 277 de 2025, artículo 2, parágrafo del artículo 2.4.3.2.1 del Decreto 1075 de 2015",
+        "Decreto 277 de 2025, artículo 3, parágrafo 2 del artículo 2.4.3.3.3 del Decreto 1075 de 2015",
+        "Decreto 277 de 2025, artículo 3, parágrafo 3 del artículo 2.4.3.3.3 del Decreto 1075 de 2015",
+        "Decreto 277 de 2025, artículos 1 y 2, que modifican los artículos 2.4.3.1.2 y 2.4.3.2.1 del Decreto 1075 de 2015",
+        "Ley 115 de 1994, artículo 142; Decreto 1075 de 2015, artículo 2.3.3.1.5.3",
+        "Ley 115 de 1994, artículo 142; Decreto 1075 de 2015, artículos 2.3.3.1.5.11 y 2.3.3.1.5.12",
+        "Ley 115 de 1994, artículos 11 y 19; Decreto 1075 de 2015, artículo 2.3.3.3.1.1",
+        "Ley 115 de 1994, artículos 144 y 145; Decreto 1075 de 2015, disposiciones sobre Gobierno Escolar",
+        "Ley 115 de 1994, artículos 23 y 77; Decreto 1075 de 2015, artículo 2.3.3.1.6.1"
+      ],
+      "knowledgeLevel": "B",
+      "compatibleDomains": [
+        "curriculo",
+        "desarrollo_aprendizaje",
+        "evaluacion",
+        "gestion_educativa",
+        "inclusion",
+        "normativa_educativa",
+        "practica_docente"
+      ],
+      "compatibleTopics": [
+        "ajustes_razonables",
+        "competencias_ciudadanas",
+        "debido_proceso",
+        "dua",
+        "educacion_inicial_transicion",
+        "evaluacion_diagnostica",
+        "evaluacion_formativa",
+        "funciones_y_jornada_docente",
+        "gobierno_escolar_participacion",
+        "inclusion_educativa",
+        "piar",
+        "planeacion_curricular",
+        "retroalimentacion"
+      ],
+      "compatibleCompetencies": [
+        "analisis_de_evidencia",
+        "comprension_conceptual",
+        "decision_pedagogica",
+        "gestion_de_aula",
+        "interpretacion_normativa",
+        "juicio_profesional",
+        "planeacion_pedagogica",
+        "resolucion_de_problemas"
+      ]
+    },
+    {
+      "sourceId": "col-decreto-1290-evaluacion-estudiantes",
+      "sourceType": "normative",
+      "title": "Evaluación del aprendizaje y promoción de estudiantes",
+      "reference": "Decreto 1290 de 2009",
+      "referenceAliases": [
+        "Decreto 1075 de 2015, artículo 2.3.3.3.3.6, compilación del Decreto 1290 de 2009",
+        "Decreto 1075 de 2015, artículos 2.3.3.3.3.4 y 2.3.3.3.3.12, compilación del Decreto 1290 de 2009",
+        "Decreto 1290 de 2009, artículo 3",
+        "Decreto 1290 de 2009, artículo 3, compilado en el Decreto 1075 de 2015",
+        "Decreto 1290 de 2009, artículos 3 y 4",
+        "Decreto 1290 de 2009, artículos 4, 8, 11 y 12"
+      ],
+      "issuerOrAuthor": "Ministerio de Educación Nacional",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "C",
+      "compatibleDomains": [
+        "evaluacion",
+        "normativa_educativa"
+      ],
+      "compatibleTopics": [
+        "evaluacion_diagnostica",
+        "evaluacion_formativa",
+        "retroalimentacion"
+      ],
+      "compatibleCompetencies": [
+        "analisis_de_evidencia",
+        "decision_pedagogica",
+        "interpretacion_normativa"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "col-decreto-1421-educacion-inclusiva",
+      "sourceType": "normative",
+      "title": "Atención educativa a la población con discapacidad en educación inclusiva",
+      "reference": "Decreto 1421 de 2017",
+      "referenceAliases": [
+        "Decreto 1421 de 2017, artículo 2.3.3.5.1.4 (definiciones de DUA y PIAR) y artículo 2.3.3.5.2.3.5",
+        "MEN, Decreto 1421 de 2017, educacion inclusiva",
+        "MEN, Decreto 1421 de 2017, educación inclusiva; CAST, Pautas del Diseño Universal para el Aprendizaje (UDL Guidelines)",
+        "Ministerio de Educación Nacional, Guía para la implementación del Decreto 1421 de 2017: valoración pedagógica y construcción del PIAR"
+      ],
+      "issuerOrAuthor": "Ministerio de Educación Nacional",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "C",
+      "compatibleDomains": [
+        "inclusion"
+      ],
+      "compatibleTopics": [
+        "ajustes_razonables",
+        "dua",
+        "inclusion_educativa",
+        "piar"
+      ],
+      "compatibleCompetencies": [
+        "analisis_de_evidencia",
+        "interpretacion_normativa",
+        "juicio_profesional",
+        "planeacion_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "col-decreto-1743-prae",
+      "sourceType": "normative",
+      "title": "Proyecto de Educación Ambiental Escolar",
+      "reference": "Decreto 1743 de 1994",
+      "referenceAliases": [
+        "Decreto 1743 de 1994, artículo 1",
+        "Decreto 1743 de 1994, artículo 1, inciso sobre comunidades étnicas",
+        "Decreto 1743 de 1994, artículo 2",
+        "Decreto 1743 de 1994, artículo 3",
+        "Decreto 1743 de 1994, artículo 6",
+        "Decreto 1743 de 1994, artículo 7",
+        "Decreto 1743 de 1994, artículos 3 y 4"
+      ],
+      "issuerOrAuthor": "Presidencia de la República de Colombia",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "C",
+      "compatibleDomains": [
+        "curriculo",
+        "gestion_educativa",
+        "practica_docente"
+      ],
+      "compatibleTopics": [
+        "prae_proyectos_transversales"
+      ],
+      "compatibleCompetencies": [
+        "analisis_de_evidencia",
+        "comprension_conceptual",
+        "decision_pedagogica",
+        "juicio_profesional",
+        "planeacion_pedagogica",
+        "resolucion_de_problemas"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "col-decreto-1965-convivencia-escolar",
+      "sourceType": "normative",
+      "title": "Reglamentación del Sistema Nacional de Convivencia Escolar",
+      "reference": "Decreto 1965 de 2013",
+      "referenceAliases": [
+        "Decreto 1965 de 2013, artículo 37",
+        "Decreto 1965 de 2013, artículo 42, parágrafo, y artículos 43 y 44",
+        "Decreto 1965 de 2013, artículos 33, 35 y 41; Ley 1581 de 2012",
+        "Decreto 1965 de 2013, artículos 35 y 44",
+        "Decreto 1965 de 2013, artículos 40 numeral 1 y 42",
+        "Decreto 1965 de 2013, artículos 40 y 44",
+        "Decreto 1965 de 2013, artículos 42 numeral 3, 43 numeral 7 y 48",
+        "Ley 1620 de 2013, artículo 2; Decreto 1965 de 2013, artículos 39 y 40",
+        "Ley 1620 de 2013, artículo 30; Decreto 1965 de 2013, artículos 36 a 38 y 48",
+        "Ley 1620 de 2013, artículos 17 y 21; Decreto 1965 de 2013, artículos 28 y 29"
+      ],
+      "issuerOrAuthor": "Presidencia de la República de Colombia",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "C",
+      "compatibleDomains": [
+        "convivencia"
+      ],
+      "compatibleTopics": [
+        "convivencia_escolar",
+        "rutas_de_atencion"
+      ],
+      "compatibleCompetencies": [
+        "analisis_de_evidencia",
+        "comprension_conceptual",
+        "decision_pedagogica",
+        "interpretacion_normativa",
+        "juicio_profesional"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "col-decreto-277-jornada-docente-2025",
+      "sourceType": "normative",
+      "title": "Modificación de jornada escolar y jornada laboral docente",
+      "reference": "Decreto 277 de 2025",
+      "referenceAliases": [
+        "Decreto 277 de 2025, artículos 1 y 2"
+      ],
+      "issuerOrAuthor": "Presidencia de la República de Colombia",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "C",
+      "compatibleDomains": [
+        "normativa_educativa"
+      ],
+      "compatibleTopics": [
+        "funciones_y_jornada_docente"
+      ],
+      "compatibleCompetencies": [
+        "interpretacion_normativa"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "col-decreto-3782-evaluacion-docente",
+      "sourceType": "normative",
+      "title": "Evaluación anual de desempeño laboral docente y directivo docente",
+      "reference": "Decreto 3782 de 2007",
+      "referenceAliases": [
+        "Decreto 3782 de 2007, artículo 17; MEN, Guía No. 31, competencia Compromiso social e institucional",
+        "Decreto 3782 de 2007, artículo 17; MEN, Guía No. 31, competencia Comunicación y relaciones interpersonales",
+        "Decreto 3782 de 2007, artículo 17; MEN, Guía No. 31, competencia Trabajo en equipo",
+        "Decreto 3782 de 2007, artículo 17; MEN, Guía No. 31, glosario de competencia Iniciativa",
+        "Decreto 3782 de 2007, artículo 17; MEN, Guía No. 31, glosario de competencia Liderazgo",
+        "Decreto 3782 de 2007, artículo 17; MEN, Guía No. 31, glosario de competencia Negociación y mediación",
+        "Decreto 3782 de 2007, artículo 17; MEN, Guía No. 31, glosario de competencia Orientación al logro",
+        "Decreto 3782 de 2007, artículo 19",
+        "Decreto 3782 de 2007, artículo 20",
+        "Decreto 3782 de 2007, artículo 25; Decreto Ley 1278 de 2002, artículo 36",
+        "Decreto 3782 de 2007, artículo 3",
+        "Decreto 3782 de 2007, artículo 4; Decreto Ley 1278 de 2002, artículo 29",
+        "Decreto 3782 de 2007, artículos 1 y 5",
+        "Decreto 3782 de 2007, artículos 13, 14 y 17; MEN, Guía No. 31, apartado de competencias",
+        "Decreto 3782 de 2007, artículos 2, 3 y 4",
+        "Decreto 3782 de 2007, artículos 2, 4 y 19",
+        "Decreto 3782 de 2007, artículos 6 y 7"
+      ],
+      "issuerOrAuthor": "Presidencia de la República de Colombia",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "C",
+      "compatibleDomains": [
+        "gestion_educativa",
+        "normativa_educativa",
+        "practica_docente"
+      ],
+      "compatibleTopics": [
+        "carrera_docente",
+        "competencias_comportamentales",
+        "evaluacion_desempeno_docente"
+      ],
+      "compatibleCompetencies": [
+        "analisis_de_evidencia",
+        "comprension_conceptual",
+        "interpretacion_normativa",
+        "juicio_profesional",
+        "resolucion_de_problemas"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "col-decreto-ley-1278-estatuto-docente",
+      "sourceType": "normative",
+      "title": "Estatuto de Profesionalización Docente",
+      "reference": "Decreto Ley 1278 de 2002",
+      "referenceAliases": [
+        "Decreto Ley 1278 de 2002, artículo 12",
+        "Decreto Ley 1278 de 2002, artículos 27, 31 y 32; Ministerio de Educación Nacional, Información sobre procesos de evaluación, actualización 2026-08-04",
+        "MEN, Documento guia - Evaluacion de competencias docentes y directivos docentes, Decreto Ley 1278 de 2002 (2014)",
+        "Ministerio de Educación Nacional, Información sobre procesos de evaluación, actualización 2026-08-04; Decreto Ley 1278 de 2002, artículos 26 y 27"
+      ],
+      "issuerOrAuthor": "Presidencia de la República de Colombia",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "B",
+      "compatibleDomains": [
+        "curriculo",
+        "normativa_educativa"
+      ],
+      "compatibleTopics": [
+        "carrera_docente",
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "analisis_de_evidencia",
+        "comprension_conceptual",
+        "interpretacion_normativa",
+        "planeacion_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "col-ley-1064-educacion-trabajo-desarrollo-humano",
+      "sourceType": "normative",
+      "title": "Educación para el trabajo y el desarrollo humano",
+      "reference": "Ley 1064 de 2006",
+      "referenceAliases": [
+        "Ley 1064 de 2006, artículos 1 y 2"
+      ],
+      "issuerOrAuthor": "Congreso de la República de Colombia",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "B",
+      "compatibleDomains": [
+        "normativa_educativa"
+      ],
+      "compatibleTopics": [
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "interpretacion_normativa"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "col-ley-1098-infancia-adolescencia",
+      "sourceType": "normative",
+      "title": "Código de la Infancia y la Adolescencia",
+      "reference": "Ley 1098 de 2006",
+      "issuerOrAuthor": "Congreso de la República de Colombia",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=22106",
+      "repoPath": null,
+      "repoPathLegacy": "content/normative/ley_1098.md",
+      "locator": null,
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva.",
+      "referenceAliases": [
+        "Ley 1098 de 2006, artículo 10",
+        "Ley 1098 de 2006, artículo 26",
+        "Ley 1098 de 2006, artículo 31",
+        "Ley 1098 de 2006, artículo 42, numerales 1 y 5",
+        "Ley 1098 de 2006, artículo 53; artículo 42 sobre obligaciones de las instituciones educativas",
+        "Ley 1098 de 2006, artículos 35 y 44",
+        "Ley 1098 de 2006, artículos 42 y 44; artículos 50 y 51 sobre restablecimiento de derechos",
+        "Ley 1098 de 2006, artículos 43 y 45",
+        "Ley 1098 de 2006, artículos 50 y 51",
+        "Ley 1098 de 2006, artículos 50, 51 y 99, modificado por Ley 1878 de 2018",
+        "Ley 1098 de 2006, artículos 50, 51 y 99, modificado por Ley 1878 de 2018; ICBF, Proceso Administrativo de Restablecimiento de Derechos",
+        "Ley 1098 de 2006, artículos 52, 53 y 99, modificado por Ley 1878 de 2018",
+        "Ley 1098 de 2006, artículos 8, 9 y 10"
+      ],
+      "knowledgeLevel": "C",
+      "compatibleDomains": [
+        "convivencia",
+        "gestion_educativa",
+        "normativa_educativa"
+      ],
+      "compatibleTopics": [
+        "competencias_ciudadanas",
+        "debido_proceso",
+        "proteccion_integral",
+        "rutas_de_atencion"
+      ],
+      "compatibleCompetencies": [
+        "comprension_conceptual",
+        "decision_pedagogica",
+        "interpretacion_normativa",
+        "juicio_profesional",
+        "resolucion_de_problemas"
+      ]
+    },
+    {
+      "sourceId": "col-ley-115-ley-general-educacion",
+      "sourceType": "normative",
+      "title": "Ley General de Educación",
+      "reference": "Ley 115 de 1994",
+      "referenceAliases": [
+        "Ley 115 de 1994, artículo 142",
+        "Ley 115 de 1994, artículo 142; Roger Hart, Children's Participation: From Tokenism to Citizenship, UNICEF Innocenti, 1992",
+        "Ley 115 de 1994, artículo 16, literal a",
+        "Ley 115 de 1994, artículo 73",
+        "Ley 115 de 1994, artículo 79",
+        "Ley 115 de 1994, artículos 5, 13, 91 y 92",
+        "Ley 115 de 1994, artículos 56 y 57, con la modificación vigente del artículo 57",
+        "Ley 115 de 1994, artículos 76 y 79",
+        "Ministerio de Educación Nacional, Resolución 003842 de 2022, Anexo Técnico 1, función 20 del docente de aula; Ley 115 de 1994, artículo 5 numeral 6"
+      ],
+      "issuerOrAuthor": "Congreso de la República de Colombia",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "B",
+      "compatibleDomains": [
+        "convivencia",
+        "curriculo",
+        "desarrollo_aprendizaje",
+        "gestion_educativa",
+        "inclusion",
+        "pedagogia",
+        "practica_docente"
+      ],
+      "compatibleTopics": [
+        "competencias_ciudadanas",
+        "gobierno_escolar_participacion",
+        "inclusion_educativa",
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "analisis_de_evidencia",
+        "comprension_conceptual",
+        "decision_pedagogica",
+        "interpretacion_normativa",
+        "juicio_profesional",
+        "planeacion_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "col-ley-1618-discapacidad",
+      "sourceType": "normative",
+      "title": "Disposiciones para garantizar los derechos de las personas con discapacidad",
+      "reference": "Ley 1618 de 2013",
+      "referenceAliases": [],
+      "issuerOrAuthor": "Congreso de la República de Colombia",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "B",
+      "compatibleDomains": [],
+      "compatibleTopics": [],
+      "compatibleCompetencies": [],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "col-ley-1620-convivencia-escolar",
+      "sourceType": "normative",
+      "title": "Sistema Nacional de Convivencia Escolar",
+      "reference": "Ley 1620 de 2013",
+      "referenceAliases": [
+        "Ley 1620 de 2013, artículo 21",
+        "Ley 1620 de 2013, artículo 29",
+        "Ley 1620 de 2013, artículos 3 y 4"
+      ],
+      "issuerOrAuthor": "Congreso de la República de Colombia",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "C",
+      "compatibleDomains": [
+        "convivencia"
+      ],
+      "compatibleTopics": [
+        "convivencia_escolar",
+        "debido_proceso",
+        "rutas_de_atencion"
+      ],
+      "compatibleCompetencies": [
+        "decision_pedagogica",
+        "juicio_profesional"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "col-ley-715-competencias-educacion",
+      "sourceType": "normative",
+      "title": "Sistema General de Participaciones y competencias del sector educación",
+      "reference": "Ley 715 de 2001",
+      "referenceAliases": [
+        "Ley 715 de 2001, artículo 10, numeral 10.9"
+      ],
+      "issuerOrAuthor": "Congreso de la República de Colombia",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "B",
+      "compatibleDomains": [
+        "gestion_educativa"
+      ],
+      "compatibleTopics": [
+        "funciones_y_jornada_docente"
+      ],
+      "compatibleCompetencies": [
+        "interpretacion_normativa"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "corte-constitucional-sentencia-t004-2024",
+      "sourceType": "normative",
+      "title": "Sentencia T-004 de 2024",
+      "reference": "Corte Constitucional de Colombia, Sentencia T-004 de 2024",
+      "referenceAliases": [
+        "Corte Constitucional de Colombia, Sentencia T-004 de 2024, garantías mínimas del debido proceso disciplinario escolar"
+      ],
+      "issuerOrAuthor": "Corte Constitucional de Colombia",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "C",
+      "compatibleDomains": [
+        "convivencia"
+      ],
+      "compatibleTopics": [
+        "debido_proceso"
+      ],
+      "compatibleCompetencies": [
+        "interpretacion_normativa"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "corte-constitucional-sentencia-t662-1999",
+      "sourceType": "normative",
+      "title": "Sentencia T-662 de 1999",
+      "reference": "Corte Constitucional de Colombia, Sentencia T-662 de 1999",
+      "referenceAliases": [],
+      "issuerOrAuthor": "Corte Constitucional de Colombia",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "C",
+      "compatibleDomains": [],
+      "compatibleTopics": [],
+      "compatibleCompetencies": [],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "dewey-democracy-education",
+      "sourceType": "academic",
+      "title": "Democracy and Education",
+      "reference": "Dewey, J. (1916). Democracy and Education",
+      "referenceAliases": [
+        "Dewey, J. (1916). Democracy and Education, capítulo 11: Experience and Thinking"
+      ],
+      "issuerOrAuthor": "John Dewey",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "pedagogia"
+      ],
+      "compatibleTopics": [
+        "indagacion"
+      ],
+      "compatibleCompetencies": [
+        "decision_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "duit-conceptual-change-analogies",
+      "sourceType": "academic",
+      "title": "Fostering conceptual change by analogies",
+      "reference": "Duit et al. (2001). Fostering conceptual change by analogies",
+      "referenceAliases": [
+        "Duit, R., Roth, W.-M., Komorek, M., & Wilbers, J. (2001). Fostering conceptual change by analogies. Learning and Instruction, 11, 283–303"
+      ],
+      "issuerOrAuthor": "Duit et al.",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "didactica"
+      ],
+      "compatibleTopics": [
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "comprension_conceptual"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "eef-interactive-reading",
+      "sourceType": "technical",
+      "title": "Interactive Reading",
+      "reference": "Education Endowment Foundation, Interactive Reading",
+      "referenceAliases": [
+        "Education Endowment Foundation, Interactive Reading, Early Years Evidence Store, 2026"
+      ],
+      "issuerOrAuthor": "Education Endowment Foundation",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "desarrollo_aprendizaje"
+      ],
+      "compatibleTopics": [
+        "comprension_lectora"
+      ],
+      "compatibleCompetencies": [
+        "planeacion_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "eef-metacognition-self-regulated-learning",
+      "sourceType": "technical",
+      "title": "Metacognition and Self-Regulated Learning",
+      "reference": "Education Endowment Foundation, Metacognition and Self-Regulated Learning",
+      "referenceAliases": [
+        "Education Endowment Foundation (2025). Metacognition and Self-Regulated Learning: Guidance Report, 2nd edition"
+      ],
+      "issuerOrAuthor": "Education Endowment Foundation",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "desarrollo_aprendizaje"
+      ],
+      "compatibleTopics": [
+        "aprendizaje_y_desarrollo_cognitivo"
+      ],
+      "compatibleCompetencies": [
+        "planeacion_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "eef-reading-comprehension-strategies",
+      "sourceType": "technical",
+      "title": "Reading Comprehension Strategies",
+      "reference": "Education Endowment Foundation, Reading Comprehension Strategies",
+      "referenceAliases": [
+        "Education Endowment Foundation, Reading Comprehension Strategies, Teaching and Learning Toolkit, actualización 2025; Palincsar, A. S., & Brown, A. L. (1984), Reciprocal Teaching"
+      ],
+      "issuerOrAuthor": "Education Endowment Foundation",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "didactica"
+      ],
+      "compatibleTopics": [
+        "comprension_lectora"
+      ],
+      "compatibleCompetencies": [
+        "planeacion_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "eisner-educational-imagination",
+      "sourceType": "academic",
+      "title": "The Educational Imagination",
+      "reference": "Eisner, E. W. (1985). The Educational Imagination",
+      "referenceAliases": [
+        "Eisner, E. W. (1985). The Educational Imagination, concepto de null curriculum"
+      ],
+      "issuerOrAuthor": "Elliot W. Eisner",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "curriculo"
+      ],
+      "compatibleTopics": [
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "juicio_profesional"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "freire-pedagogy-oppressed",
+      "sourceType": "academic",
+      "title": "Pedagogy of the Oppressed",
+      "reference": "Freire, P. Pedagogy of the Oppressed",
+      "referenceAliases": [
+        "Freire, P. (2018). Pedagogy of the Oppressed, 50th Anniversary Edition. Bloomsbury Academic, capítulos 2 y 3"
+      ],
+      "issuerOrAuthor": "Paulo Freire",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "pedagogia"
+      ],
+      "compatibleTopics": [
+        "argumentacion"
+      ],
+      "compatibleCompetencies": [
+        "comprension_conceptual"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "hart-children-participation",
+      "sourceType": "academic",
+      "title": "Children’s Participation: From Tokenism to Citizenship",
+      "reference": "Roger Hart, Children’s Participation: From Tokenism to Citizenship",
+      "referenceAliases": [],
+      "issuerOrAuthor": "Roger Hart / UNICEF Innocenti",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [],
+      "compatibleTopics": [],
+      "compatibleCompetencies": [],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "harvard-executive-function-air-traffic-control",
+      "sourceType": "technical",
+      "title": "Building the Brain’s Air Traffic Control System",
+      "reference": "Center on the Developing Child at Harvard University, Building the Brain’s Air Traffic Control System",
+      "referenceAliases": [
+        "Center on the Developing Child at Harvard University, Building the Brain’s ‘Air Traffic Control’ System: How Early Experiences Shape the Development of Executive Function"
+      ],
+      "issuerOrAuthor": "Center on the Developing Child at Harvard University",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "desarrollo_aprendizaje"
+      ],
+      "compatibleTopics": [
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "comprension_conceptual"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "harvard-executive-function-skills",
+      "sourceType": "technical",
+      "title": "Enhancing and Practicing Executive Function Skills",
+      "reference": "Center on the Developing Child at Harvard University, Enhancing and Practicing Executive Function Skills",
+      "referenceAliases": [
+        "Center on the Developing Child at Harvard University, Enhancing and Practicing Executive Function Skills with Children from Infancy to Adolescence"
+      ],
+      "issuerOrAuthor": "Center on the Developing Child at Harvard University",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "desarrollo_aprendizaje"
+      ],
+      "compatibleTopics": [
+        "convivencia_escolar"
+      ],
+      "compatibleCompetencies": [
+        "decision_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "icbf-pard",
+      "sourceType": "technical",
+      "title": "Proceso Administrativo de Restablecimiento de Derechos",
+      "reference": "ICBF, Proceso Administrativo de Restablecimiento de Derechos",
+      "referenceAliases": [],
+      "issuerOrAuthor": "Instituto Colombiano de Bienestar Familiar",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "C",
+      "compatibleDomains": [],
+      "compatibleTopics": [],
+      "compatibleCompetencies": [],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "icfes-marco-lectura-critica",
+      "sourceType": "technical",
+      "title": "Marco de referencia de Lectura Crítica",
+      "reference": "ICFES, Marco de referencia de la prueba Lectura Crítica",
+      "referenceAliases": [
+        "ICFES, Marco de referencia de la prueba Lectura Crítica Saber 11°, Saber TyT y Saber Pro, competencia de articulación de partes y sentido global",
+        "ICFES, Marco de referencia de la prueba Lectura Crítica Saber 11°, Saber TyT y Saber Pro, competencia de reflexión y evaluación del contenido",
+        "ICFES, Marco de referencia de la prueba Lectura Crítica Saber 11°, Saber TyT y Saber Pro, competencias de comprensión local y reflexión sobre el contenido",
+        "ICFES, Marco de referencia de la prueba Lectura Crítica Saber 11°, Saber TyT y Saber Pro; uso de textos discontinuos y evaluación de contenido",
+        "ICFES, Marco de referencia del módulo Lectura Crítica Saber Pro, competencias de articulación global y reflexión y evaluación del contenido"
+      ],
+      "issuerOrAuthor": "ICFES",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "D",
+      "compatibleDomains": [
+        "evaluacion",
+        "gestion_educativa",
+        "practica_docente"
+      ],
+      "compatibleTopics": [
+        "comprension_lectora"
+      ],
+      "compatibleCompetencies": [
+        "analisis_de_evidencia",
+        "comprension_conceptual",
+        "juicio_profesional"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "icfes-marco-razonamiento-cuantitativo",
+      "sourceType": "technical",
+      "title": "Marco de referencia del módulo Razonamiento Cuantitativo",
+      "reference": "ICFES",
+      "referenceAliases": [
+        "ICFES, Marco de referencia del módulo Razonamiento Cuantitativo, competencia de argumentación",
+        "ICFES, Marco de referencia del módulo Razonamiento Cuantitativo, competencia de formulación y ejecución",
+        "ICFES, Marco de referencia del módulo Razonamiento Cuantitativo, competencia de formulación y ejecución; modelación de situaciones cuantitativas",
+        "ICFES, Marco de referencia del módulo Razonamiento Cuantitativo, competencia de formulación y ejecución; representación algebraica de situaciones",
+        "ICFES, Marco de referencia del módulo Razonamiento Cuantitativo, competencia de interpretación y representación",
+        "ICFES, Marco de referencia del módulo Razonamiento Cuantitativo, competencias de interpretación y representación y formulación y ejecución"
+      ],
+      "issuerOrAuthor": "ICFES",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "D",
+      "compatibleDomains": [
+        "evaluacion",
+        "gestion_educativa"
+      ],
+      "compatibleTopics": [
+        "modelizacion",
+        "razonamiento_cuantitativo"
+      ],
+      "compatibleCompetencies": [
+        "analisis_de_evidencia",
+        "juicio_profesional",
+        "resolucion_de_problemas"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "jackson-life-in-classrooms",
+      "sourceType": "academic",
+      "title": "Life in Classrooms",
+      "reference": "Jackson, P. W. (1968). Life in Classrooms",
+      "referenceAliases": [
+        "Jackson, P. W. (1968). Life in Classrooms. Holt, Rinehart and Winston",
+        "Jackson, P. W. (1968). Life in Classrooms. Holt, Rinehart and Winston, capítulo 1"
+      ],
+      "issuerOrAuthor": "Philip W. Jackson",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "curriculo",
+        "pedagogia"
+      ],
+      "compatibleTopics": [
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "comprension_conceptual"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "johnson-johnson-cooperative-learning",
+      "sourceType": "academic",
+      "title": "Social Interdependence Theory and Cooperative Learning",
+      "reference": "Johnson, D. W. & Johnson, R. T. (2009). Social Interdependence Theory and Cooperative Learning",
+      "referenceAliases": [
+        "Johnson, D. W. & Johnson, R. T. (2009). An Educational Psychology Success Story: Social Interdependence Theory and Cooperative Learning. Educational Researcher, 38(5), 365–379"
+      ],
+      "issuerOrAuthor": "David W. Johnson y Roger T. Johnson",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "pedagogia"
+      ],
+      "compatibleTopics": [
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "gestion_de_aula"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "men-bases-curriculares-educacion-inicial",
+      "sourceType": "guide",
+      "title": "Bases Curriculares para la Educación Inicial y Preescolar",
+      "reference": "Ministerio de Educación Nacional, Bases Curriculares para la Educación Inicial y Preescolar (2017)",
+      "referenceAliases": [
+        "MEN, Actividades rectoras de la primera infancia y de la educación inicial",
+        "Ministerio de Educación Nacional, Bases Curriculares para la Educación Inicial y Preescolar (2017), apartado de actividades rectoras; MEN, Actividades rectoras de la primera infancia y de la educación inicial, actualización 26 de junio de 2026"
+      ],
+      "issuerOrAuthor": "Ministerio de Educación Nacional",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "D",
+      "compatibleDomains": [
+        "pedagogia"
+      ],
+      "compatibleTopics": [
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "planeacion_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "men-cultura-evaluacion-docente-danielson",
+      "sourceType": "guide",
+      "title": "Cultura de la Evaluación Docente",
+      "reference": "Ministerio de Educación Nacional, Cultura de la Evaluación Docente",
+      "referenceAliases": [
+        "Ministerio de Educación Nacional, Cultura de la Evaluación Docente, seguimiento sistemático basado en evidencias; The Danielson Group (2022), Framework for Teaching, componentes 3e y 4e",
+        "The Danielson Group (2022), Framework for Teaching"
+      ],
+      "issuerOrAuthor": "Ministerio de Educación Nacional",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "C",
+      "compatibleDomains": [
+        "practica_docente"
+      ],
+      "compatibleTopics": [
+        "retroalimentacion"
+      ],
+      "compatibleCompetencies": [
+        "analisis_de_evidencia"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "men-estandares-basicos-competencias-2006",
+      "sourceType": "guide",
+      "title": "Estándares Básicos de Competencias en Lenguaje, Matemáticas, Ciencias y Ciudadanas",
+      "reference": "Ministerio de Educación Nacional, Estándares Básicos de Competencias en Lenguaje, Matemáticas, Ciencias y Ciudadanas (2006)",
+      "referenceAliases": [
+        "Ministerio de Educacion Nacional, Estandares Basicos de Competencias en Lenguaje, Matematicas, Ciencias y Ciudadanas (2006)",
+        "Ministerio de Educación Nacional, Estándares Básicos de Competencias en Ciencias Naturales y Ciencias Sociales (2006), organización por grupos de grados y progresión de competencias",
+        "Ministerio de Educación Nacional. Estándares Básicos de Competencias en Ciencias Naturales y Ciencias Sociales (2006), componente 'Me aproximo al conocimiento como científico(a) natural'",
+        "Ministerio de Educación Nacional. Estándares Básicos de Competencias en Ciencias Naturales y Ciencias Sociales (2006), formación científica orientada a comprender, actuar en la vida real y aportar al mejoramiento del entorno"
+      ],
+      "issuerOrAuthor": "Ministerio de Educación Nacional",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "D",
+      "compatibleDomains": [
+        "curriculo",
+        "didactica"
+      ],
+      "compatibleTopics": [
+        "argumentacion",
+        "comprension_lectora",
+        "indagacion",
+        "modelizacion",
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "decision_pedagogica",
+        "planeacion_pedagogica",
+        "resolucion_de_problemas"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "men-estandares-competencias-ciudadanas",
+      "sourceType": "guide",
+      "title": "Estándares Básicos de Competencias Ciudadanas",
+      "reference": "MEN Estándares Básicos de Competencias Ciudadanas",
+      "referenceAliases": [
+        "MEN, Estándares Básicos de Competencias Ciudadanas, grupo Pluralidad, identidad y valoración de las diferencias",
+        "MEN, Guia No. 6 Estandares Basicos de Competencias Ciudadanas",
+        "MEN, Guía No. 6 Estándares Básicos de Competencias Ciudadanas",
+        "Ministerio de Educación Nacional, Estándares Básicos de Competencias Ciudadanas, Participación y responsabilidad democrática, grados 10.º y 11.º, 2006, p. 177",
+        "Ministerio de Educación Nacional, Estándares Básicos de Competencias Ciudadanas, competencias emocionales e integradoras, 2006",
+        "Ministerio de Educación Nacional, Estándares Básicos de Competencias Ciudadanas, eje Convivencia y Paz, 2006"
+      ],
+      "issuerOrAuthor": "Ministerio de Educación Nacional",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "D",
+      "compatibleDomains": [
+        "convivencia"
+      ],
+      "compatibleTopics": [
+        "competencias_ciudadanas",
+        "convivencia_escolar",
+        "rutas_de_atencion"
+      ],
+      "compatibleCompetencies": [
+        "decision_pedagogica",
+        "gestion_de_aula"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "men-guia-31-evaluacion-desempeno-docente",
+      "sourceType": "guide",
+      "title": "Guía No. 31 - Evaluación anual de desempeño laboral docente",
+      "reference": "MEN Guía No. 31",
+      "referenceAliases": [
+        "MEN, Guía No. 31",
+        "MEN, Guía N.° 31"
+      ],
+      "issuerOrAuthor": "Ministerio de Educación Nacional",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "C",
+      "compatibleDomains": [],
+      "compatibleTopics": [],
+      "compatibleCompetencies": [],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "men-guia-34-mejoramiento-institucional",
+      "sourceType": "guide",
+      "title": "Guía No. 34 - Guía para el mejoramiento institucional",
+      "reference": "MEN Guía No. 34",
+      "referenceAliases": [
+        "MEN, Guía N.° 34",
+        "MEN, Guía N.° 34: Ruta de Mejoramiento Institucional para una Educación de Calidad",
+        "Ministerio de Educación Nacional, Guía N.° 34: Guía para el mejoramiento institucional, estrategia de priorización de factores críticos mediante urgencia, tendencia e impacto",
+        "Ministerio de Educación Nacional, Guía N.° 34: Guía para el mejoramiento institucional, etapa de seguimiento permanente al plan de mejoramiento",
+        "Ministerio de Educación Nacional, Guía N.° 34: Guía para el mejoramiento institucional; actualización Ruta de Mejoramiento Institucional para una Educación de Calidad, 5 de agosto de 2026",
+        "Ministerio de Educación Nacional, Ruta de Mejoramiento Institucional para una Educación de Calidad, actualización de la Guía N.° 34, 5 de agosto de 2026",
+        "Ruta de Mejoramiento Institucional"
+      ],
+      "issuerOrAuthor": "Ministerio de Educación Nacional",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "C",
+      "compatibleDomains": [
+        "gestion_educativa"
+      ],
+      "compatibleTopics": [
+        "competencias_ciudadanas",
+        "evaluacion_formativa",
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "analisis_de_evidencia",
+        "comprension_conceptual",
+        "decision_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "men-guia-49-convivencia-escolar",
+      "sourceType": "guide",
+      "title": "Guía No. 49 - Guías pedagógicas para la convivencia escolar",
+      "reference": "MEN Guía No. 49",
+      "referenceAliases": [
+        "Ministerio de Educación Nacional, Guía No. 49. Guías pedagógicas para la convivencia escolar, sección de enfoques para la convivencia escolar"
+      ],
+      "issuerOrAuthor": "Ministerio de Educación Nacional",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "C",
+      "compatibleDomains": [
+        "convivencia"
+      ],
+      "compatibleTopics": [
+        "convivencia_escolar"
+      ],
+      "compatibleCompetencies": [
+        "interpretacion_normativa"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "men-guia-evaluacion-competencias-docentes-1278",
+      "sourceType": "guide",
+      "title": "Documento guía - Evaluación de competencias docentes y directivos docentes",
+      "reference": "MEN, Documento guía - Evaluación de competencias docentes y directivos docentes, Decreto Ley 1278 de 2002",
+      "referenceAliases": [],
+      "issuerOrAuthor": "Ministerio de Educación Nacional",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "C",
+      "compatibleDomains": [],
+      "compatibleTopics": [],
+      "compatibleCompetencies": [],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "men-lineamientos-curriculares-matematicas",
+      "sourceType": "guide",
+      "title": "Lineamientos Curriculares de Matemáticas",
+      "reference": "MEN, Lineamientos Curriculares de Matemáticas",
+      "referenceAliases": [
+        "MEN, Lineamientos Curriculares de Matemáticas, apartado 2.4.1: Las situaciones problemáticas como contexto"
+      ],
+      "issuerOrAuthor": "Ministerio de Educación Nacional",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "D",
+      "compatibleDomains": [
+        "didactica"
+      ],
+      "compatibleTopics": [
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "resolucion_de_problemas"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "men-modelo-aceleracion-aprendizaje",
+      "sourceType": "guide",
+      "title": "Modelo Aceleración del Aprendizaje",
+      "reference": "MEN, Modelo Aceleración del Aprendizaje",
+      "referenceAliases": [
+        "MEN, Modelo Aceleración del Aprendizaje, Guía del docente: aprendizaje significativo"
+      ],
+      "issuerOrAuthor": "Ministerio de Educación Nacional",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "D",
+      "compatibleDomains": [
+        "didactica"
+      ],
+      "compatibleTopics": [
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "decision_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "men-orientaciones-siee-evaluacion-formativa",
+      "sourceType": "guide",
+      "title": "Orientaciones para el fortalecimiento del SIEE y evaluación formativa",
+      "reference": "MEN Orientaciones para el fortalecimiento del SIEE y evaluación formativa",
+      "referenceAliases": [
+        "MEN, Evaluación Formativa",
+        "MEN, Evaluación Formativa: uso pedagógico de resultados para toma de decisiones y estrategias contextualizadas",
+        "MEN, Evaluación Formativa: uso pedagógico de resultados, retroalimentación y toma de decisiones, 2025",
+        "MEN, Orientaciones para el fortalecimiento del Sistema Institucional de Evaluación de los Estudiantes (SIEE)",
+        "MEN, Orientaciones para el fortalecimiento del Sistema Institucional de Evaluación de los Estudiantes (SIEE), sección 2.3.1 Evaluación formativa",
+        "MEN, Orientaciones para el fortalecimiento del Sistema Institucional de Evaluación de los Estudiantes (SIEE), sección 2.3.2 La coevaluación",
+        "MEN, Sistema Institucional de Evaluacion de los Estudiantes (SIEE)",
+        "Ministerio de Educación Nacional, Orientaciones para el fortalecimiento del Sistema Institucional de Evaluación de los Estudiantes (SIEE), 2018"
+      ],
+      "issuerOrAuthor": "Ministerio de Educación Nacional",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "C",
+      "compatibleDomains": [
+        "evaluacion"
+      ],
+      "compatibleTopics": [
+        "evaluacion_diagnostica",
+        "evaluacion_formativa",
+        "retroalimentacion"
+      ],
+      "compatibleCompetencies": [
+        "analisis_de_evidencia",
+        "comprension_conceptual",
+        "decision_pedagogica",
+        "interpretacion_normativa"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "men-resolucion-003842-manual-funciones-2022",
+      "sourceType": "normative",
+      "title": "Manual de Funciones, Requisitos y Competencias docentes y directivos docentes",
+      "reference": "Resolución MEN 003842 de 2022",
+      "referenceAliases": [
+        "Ministerio de Educación Nacional, Resolución 003842 de 2022, Anexo Técnico 1, funciones 18 y 24 del docente de aula; The Danielson Group (2022), Framework for Teaching, componente 2d",
+        "Ministerio de Educación Nacional, Resolución 003842 de 2022, Anexo Técnico 1, funciones 4, 6 y 11 del docente de aula; The Danielson Group (2022), Framework for Teaching, componentes 1e y 1f",
+        "Ministerio de Educación Nacional, Resolución 003842 de 2022, Anexo Técnico 1, funciones del docente de aula, numerales 22, 23 y 27",
+        "Ministerio de Educación Nacional, Resolución 003842 de 2022, Anexo Técnico 1, funciones del docente de aula, numerales 8 y 20",
+        "Ministerio de Educación Nacional, Resolución 003842 de 2022, Anexo Técnico 1, función 17 del docente de aula; MEN, Política Pública de Recursos Educativos (2022–2023), criterios de calidad, pertinencia, acceso y disponibilidad",
+        "Ministerio de Educación Nacional, Resolución 003842 de 2022, Anexo Técnico 1, función 23 del docente de aula; MEN, Bases Curriculares para la Educación Inicial y Preescolar (2017)",
+        "Ministerio de Educación Nacional, Resolución 003842 de 2022, Anexo Técnico 1, función 7 del docente de aula; The Danielson Group (2022), Framework for Teaching, componentes 2e y 3e",
+        "Resolución MEN 003842 de 2022, Manual de Funciones, Rector o Director Rural, funciones específicas 2 y 4",
+        "Resolución MEN 003842 de 2022, Manual de Funciones, Rector o Director Rural, función específica 10",
+        "Resolución MEN 003842 de 2022, Manual de Funciones, Requisitos y Competencias, numeral 2.2 Docente Orientador",
+        "Resolución MEN 003842 de 2022, anexo técnico, numeral 2.2.3, funciones 1 y 2 del docente orientador"
+      ],
+      "issuerOrAuthor": "Ministerio de Educación Nacional",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "C",
+      "compatibleDomains": [
+        "gestion_educativa",
+        "practica_docente"
+      ],
+      "compatibleTopics": [
+        "competencias_ciudadanas",
+        "convivencia_escolar",
+        "funciones_y_jornada_docente",
+        "planeacion_curricular",
+        "retroalimentacion",
+        "rutas_de_atencion"
+      ],
+      "compatibleCompetencies": [
+        "decision_pedagogica",
+        "gestion_de_aula",
+        "juicio_profesional",
+        "planeacion_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "men-sistema-colombiano-formacion-educadores",
+      "sourceType": "guide",
+      "title": "Sistema Colombiano de Formación de Educadores y Lineamientos de Política",
+      "reference": "MEN, Sistema Colombiano de Formación de Educadores y Lineamientos de Política",
+      "referenceAliases": [
+        "MEN, Sistema Colombiano de Formación de Educadores y Lineamientos de Política, 2013"
+      ],
+      "issuerOrAuthor": "Ministerio de Educación Nacional",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "D",
+      "compatibleDomains": [
+        "didactica"
+      ],
+      "compatibleTopics": [
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "decision_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "men-udea-dba-transicion",
+      "sourceType": "technical",
+      "title": "Derechos Básicos de Aprendizaje para el grado Transición",
+      "reference": "MEN y Universidad de Antioquia, Derechos Básicos de Aprendizaje para el grado Transición",
+      "referenceAliases": [
+        "Hattie, J. & Timperley, H. (2007). The Power of Feedback. Review of Educational Research, 77(1), 81–112",
+        "MEN y Universidad de Antioquia, Derechos Básicos de Aprendizaje para el grado Transición, propósitos generales y orientaciones para la planeación integral",
+        "MEN y Universidad de Antioquia, Derechos Básicos de Aprendizaje para el grado Transición, sección ‘¿Cómo están estructurados los DBA?’",
+        "Ministerio de Educación Nacional y Universidad de Antioquia, Derechos Básicos de Aprendizaje para el grado Transición, DBA 10: expresión de ideas, intereses y emociones mediante grafías propias y formas semejantes a letras convencionales"
+      ],
+      "issuerOrAuthor": "Ministerio de Educación Nacional y Universidad de Antioquia",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "D",
+      "compatibleDomains": [
+        "curriculo",
+        "desarrollo_aprendizaje",
+        "evaluacion"
+      ],
+      "compatibleTopics": [
+        "comprension_lectora",
+        "educacion_inicial_transicion",
+        "retroalimentacion"
+      ],
+      "compatibleCompetencies": [
+        "decision_pedagogica",
+        "planeacion_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "naeyc-dap-position-statement",
+      "sourceType": "technical",
+      "title": "Developmentally Appropriate Practice Position Statement",
+      "reference": "NAEYC, Developmentally Appropriate Practice Position Statement",
+      "referenceAliases": [
+        "NAEYC, Developmentally Appropriate Practice Position Statement, principles for observing, documenting, and assessing children’s development and learning",
+        "NAEYC, Principles of Child Development and Learning and Implications That Inform Practice, Developmentally Appropriate Practice Position Statement"
+      ],
+      "issuerOrAuthor": "NAEYC",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "desarrollo_aprendizaje"
+      ],
+      "compatibleTopics": [
+        "evaluacion_diagnostica",
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "analisis_de_evidencia",
+        "comprension_conceptual"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "niemiec-ryan-self-determination-classroom",
+      "sourceType": "academic",
+      "title": "Autonomy, competence, and relatedness in the classroom",
+      "reference": "Niemiec, C. P., & Ryan, R. M. (2009). Self-determination theory in educational practice",
+      "referenceAliases": [
+        "Niemiec, C. P., & Ryan, R. M. (2009). Autonomy, competence, and relatedness in the classroom: Applying self-determination theory to educational practice. Theory and Research in Education, 7(2), 133–144"
+      ],
+      "issuerOrAuthor": "Niemiec & Ryan",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "desarrollo_aprendizaje"
+      ],
+      "compatibleTopics": [
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "comprension_conceptual"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "openstax-lifespan-development",
+      "sourceType": "academic",
+      "title": "Lifespan Development",
+      "reference": "OpenStax, Lifespan Development",
+      "referenceAliases": [],
+      "issuerOrAuthor": "OpenStax",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [],
+      "compatibleTopics": [],
+      "compatibleCompetencies": [],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "osborne-argumentation-school-science",
+      "sourceType": "academic",
+      "title": "Enhancing the Quality of Argumentation in School Science",
+      "reference": "Osborne, Erduran & Simon (2004). Enhancing the Quality of Argumentation in School Science",
+      "referenceAliases": [
+        "Osborne, J., Erduran, S., & Simon, S. (2004). Enhancing the Quality of Argumentation in School Science. Journal of Research in Science Teaching, 41(10), 994–1020"
+      ],
+      "issuerOrAuthor": "Osborne, Erduran & Simon",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "didactica"
+      ],
+      "compatibleTopics": [
+        "argumentacion"
+      ],
+      "compatibleCompetencies": [
+        "analisis_de_evidencia"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "pellegrino-knowing-what-students-know",
+      "sourceType": "academic",
+      "title": "Knowing What Students Know",
+      "reference": "Pellegrino, Chudowsky & Glaser (2001). Knowing What Students Know",
+      "referenceAliases": [
+        "Pellegrino, J. W., Chudowsky, N. & Glaser, R. (eds.) (2001). Knowing What Students Know: The Science and Design of Educational Assessment. National Academies Press, capítulos 2 y 4"
+      ],
+      "issuerOrAuthor": "National Academies Press",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "evaluacion"
+      ],
+      "compatibleTopics": [
+        "evaluacion_formativa"
+      ],
+      "compatibleCompetencies": [
+        "analisis_de_evidencia"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "piaget-desarrollo-cognitivo",
+      "sourceType": "academic",
+      "title": "Procesos de asimilación y acomodación",
+      "reference": "Piaget, procesos de asimilación y acomodación",
+      "referenceAliases": [
+        "OpenStax, Lifespan Development, sección 3.4 Cognition and Memory in Infants and Toddlers; Piaget, procesos de asimilación y acomodación"
+      ],
+      "issuerOrAuthor": "Jean Piaget",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "desarrollo_aprendizaje"
+      ],
+      "compatibleTopics": [
+        "aprendizaje_y_desarrollo_cognitivo"
+      ],
+      "compatibleCompetencies": [
+        "comprension_conceptual"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "roediger-karpicke-test-enhanced-learning",
+      "sourceType": "academic",
+      "title": "Test-Enhanced Learning",
+      "reference": "Roediger, H. L., & Karpicke, J. D. (2006). Test-Enhanced Learning",
+      "referenceAliases": [
+        "Roediger, H. L., & Karpicke, J. D. (2006). Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention. Psychological Science, 17(3), 249–255"
+      ],
+      "issuerOrAuthor": "Roediger & Karpicke",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "didactica"
+      ],
+      "compatibleTopics": [
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "analisis_de_evidencia"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "rosenshine-principles-instruction",
+      "sourceType": "academic",
+      "title": "Principles of Instruction",
+      "reference": "Rosenshine, B. (2012). Principles of Instruction",
+      "referenceAliases": [
+        "Rosenshine, B. (2012). Principles of Instruction: Research-Based Strategies That All Teachers Should Know. American Educator, 36(1), 12–19, 39"
+      ],
+      "issuerOrAuthor": "Barak Rosenshine",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "didactica"
+      ],
+      "compatibleTopics": [
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "decision_pedagogica",
+        "planeacion_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "vygotsky-mind-in-society",
+      "sourceType": "academic",
+      "title": "Mind in Society",
+      "reference": "Vygotsky, L. S. (1978). Mind in Society",
+      "referenceAliases": [
+        "Vygotsky, L. S. (1978). Mind in Society: The Development of Higher Psychological Processes. Harvard University Press, pp. 86–87",
+        "Vygotsky, L. S. (1978). Mind in Society: The Development of Higher Psychological Processes. Harvard University Press, sección 'Interaction between Learning and Development'"
+      ],
+      "issuerOrAuthor": "L. S. Vygotsky",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "desarrollo_aprendizaje",
+        "didactica"
+      ],
+      "compatibleTopics": [
+        "aprendizaje_y_desarrollo_cognitivo",
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "comprension_conceptual",
+        "decision_pedagogica"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "wiliam-embedded-formative-assessment",
+      "sourceType": "academic",
+      "title": "Embedded Formative Assessment",
+      "reference": "Wiliam, D. (2011). Embedded Formative Assessment",
+      "referenceAliases": [
+        "Wiliam, D. (2011). Embedded Formative Assessment. Solution Tree Press, capítulos 4 y 5"
+      ],
+      "issuerOrAuthor": "Dylan Wiliam",
+      "jurisdiction": "international",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "evaluacion"
+      ],
+      "compatibleTopics": [
+        "evaluacion_formativa"
+      ],
+      "compatibleCompetencies": [
+        "resolucion_de_problemas"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
+    },
+    {
+      "sourceId": "zambrano-pedagogia-didactica",
+      "sourceType": "academic",
+      "title": "Pedagogía y didáctica",
+      "reference": "Zambrano Leal, A. (2016). Pedagogía y didáctica",
+      "referenceAliases": [
+        "Zambrano Leal, A. (2016). Pedagogía y didáctica: esbozo de las diferencias, tensiones y relaciones de dos campos. Praxis & Saber, 7(13)"
+      ],
+      "issuerOrAuthor": "Armando Zambrano Leal",
+      "jurisdiction": "colombia",
+      "publicationDate": null,
+      "effectiveFrom": null,
+      "effectiveTo": null,
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-08-30T05:55:00.000Z",
+      "lastCheckedAt": "2026-08-30",
+      "verificationScope": "v4_editorial_reference_identity_resolved; locator_and_article_currency_require_semantic_audit_before new item production",
+      "sourceSystem": "v4_editorial_inventory",
+      "url": null,
+      "repoPath": null,
+      "repoPathLegacy": null,
+      "locator": null,
+      "knowledgeLevel": "E",
+      "compatibleDomains": [
+        "pedagogia"
+      ],
+      "compatibleTopics": [
+        "planeacion_curricular"
+      ],
+      "compatibleCompetencies": [
+        "comprension_conceptual"
+      ],
+      "rightsNote": "Registro de Knowledge Base para trazabilidad editorial V4.1; no incorpora texto completo de la fuente.",
+      "notes": "Fuente principal resoluble para reactivos V4 existentes. La compatibilidad declarada se deriva del uso aprobado en el corpus V4 y funciona como guardarrail minimo, no como ontologia exhaustiva."
     }
   ]
 }

@@ -5,17 +5,36 @@ project: ganaconmerito
 owner: marlon-arcila
 status: active
 artifact_type: project
-last_reviewed: 2026-08-23
+last_reviewed: 2026-08-30
 ---
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-08-23 — rebaseline V4 limpio implementado, validado
-localmente y publicado en rama remota; draft PR pendiente.
+Ultima actualizacion: 2026-08-30 — V4.1 Knowledge Base + Tutor Readiness
+implementado y validado localmente en rama aislada; aplicación remota pendiente.
 
 ---
 
 # Executive Operational Snapshot
+
+## V4.1 Knowledge Base + Tutor Readiness (repo local)
+
+- Rama local: `codex-asus/v4-1-sourceid-guardrail`.
+- Checkpoint local previo de contrato/guardarraíl: `92d496b6e625532a87551de545ea9345de21d6d3`.
+- El contrato V4.1 agrega únicamente `source.sourceId` al JSON del reactivo.
+- Los 248 reactivos V4 tienen `sourceId` resoluble contra
+  `content/knowledge-base/catalog/source-inventory.json`.
+- Knowledge Base registra clasificación A-F y compatibilidad simple
+  fuente-taxonomía; no se crearon campos A-F dentro de reactivos.
+- El sync local proyecta fuentes verificadas e `item_source_links` decisivos para
+  Tutor/evidencia server-side.
+- El builder del Tutor queda preparado para incorporar fuentes resueltas desde
+  `item_source_links`/`knowledge_sources` sin enviar clave, explicaciones ni
+  `learningNote` antes de respuesta.
+- Validación local: `content:validate:v4`, `--require-source-id`,
+  `content:validate:knowledge-targeting`, manifiesto V4 y pruebas V4 pasan.
+- No existe autorización ni evidencia de merge, push, Supabase remoto, migración,
+  deploy, runtime público o shadow real para este bloque.
 
 ## Checkpoint remoto V4 limpio (vigente para este bloque)
 

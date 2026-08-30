@@ -12,7 +12,7 @@ related:
   - DEL-SPRINT-LOG
   - ARCH-ASSISTANT-COMPONENT-SPEC
   - ADR-002-assistant-component-governance
-last_reviewed: 2026-05-08
+last_reviewed: 2026-08-30
 ---
 
 # Mapa formal de features activas con estado real
@@ -30,7 +30,8 @@ Mantener inventario explícito de lo que está activo, activo con guardrails, di
 ## Resumen ejecutivo actualizado
 - El core activo real es: **login -> onboarding -> práctica -> dashboard**.
 - El Tutor GCM está **activo con guardrails** dentro de práctica.
-- El Tutor GCM tiene **fuente normativa sintetizada v1**, marcada como `synthesized_governed_unverified`.
+- El Tutor GCM conserva guardrails y queda preparado en repo para consumir
+  `sourceId`/`item_source_links` server-side; runtime remoto no verificado.
 - El dashboard tiene **contrato de métricas prudentes** para no vender humo.
 - El banco de preguntas está **operativo como corpus activo curado**.
 - El banco ya tiene una **estructura editorial definida**: base taxonómica en `content/items/` y segunda capa opcional por perfiles docentes.
@@ -162,7 +163,7 @@ Mantener inventario explícito de lo que está activo, activo con guardrails, di
   - tutor niega autoridad sobre puntaje, avance o cierre
 
 ### Contrato de fuente de verdad v1
-- Estado: **Activo con fuente sintetizada no verificada**
+- Estado: **Activo con guardrails; V4.1 preparado en repo**
 - Evidencia: `src/types/tutor-turn.ts`, `src/domain/tutor/contract.ts`, `src/lib/tutor/tutor-evidence-builder.ts`, `src/lib/tutor/normative-source-truth.ts`, `docs/01-product/source-truth/normative-source-truth-v1.md`
 - Alcance real:
   - `ContestTruth`
@@ -172,8 +173,18 @@ Mantener inventario explícito de lo que está activo, activo con guardrails, di
   - `TutorTurnResponse`
   - `TutorTurnTrace`
   - `SourceTruthStatus`
-  - estado `synthesized_governed_unverified`
+  - estado `source_verified` cuando el servidor resuelve fuente verificada desde
+    `item_source_links`/`knowledge_sources`
   - degradación cuando falta evidencia
+
+### Evidencia V4.1 por `sourceId`
+- Estado: **Preparado en repo; runtime pendiente**
+- Evidencia: `content/question-bank-v4/PRD-V4.1-KNOWLEDGE-BASE-TUTOR-READINESS.md`, `content/knowledge-base/catalog/source-inventory.json`, `src/lib/tutor/tutor-evidence-builder.ts`
+- Alcance real:
+  - 248 reactivos V4 tienen `source.sourceId`
+  - el sync materializa `item_source_links` decisivos
+  - el builder de Tutor puede incorporar fuentes resueltas server-side
+  - no se aplicó Supabase remoto ni deploy
 
 ### Sincronización post-respuesta
 - Estado: **Activo**

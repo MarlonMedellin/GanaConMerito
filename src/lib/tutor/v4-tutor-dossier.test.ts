@@ -16,8 +16,19 @@ const practiceQuestion = {
   scope: "general",
   hint: "Identifica qué acción usa la evidencia para mejorar.",
   sourceType: "official_source",
+  sourceId: "col-decreto-1075-sector-educacion",
   sourceReference: "Decreto 1075 de 2015",
   sourcePath: "content/question-bank-v4/items/v4-doc-001.json",
+  resolvedSources: [
+    {
+      sourceId: "col-decreto-1075-sector-educacion",
+      reference: "Decreto 1075 de 2015",
+      title: "Decreto Único Reglamentario del Sector Educación",
+      sourceType: "normative",
+      relationType: "decisive",
+      sourceTruthStatus: "source_verified" as const,
+    },
+  ],
   options: [
     { key: "A" as const, text: "Acción A" },
     { key: "B" as const, text: "Acción B" },
@@ -48,6 +59,10 @@ test("V4 pre-answer dossier carries context and taxonomy without answer truth", 
   assert.equal(question.cognitiveLevel, practiceQuestion.cognitiveLevel);
   assert.equal(question.scope, practiceQuestion.scope);
   assert.equal(question.hint, practiceQuestion.hint);
+  assert.equal(question.sourceId, "col-decreto-1075-sector-educacion");
+  assert.equal(question.resolvedSources?.[0]?.sourceId, "col-decreto-1075-sector-educacion");
+  assert.equal(question.sourceTruthStatus, "source_verified");
+  assert.ok(question.sourceRefs.includes("sourceId:col-decreto-1075-sector-educacion"));
   assert.equal(hasQuestionEvidence(evidence(question)), true);
   assert.equal(hasAnsweredQuestionEvidence(evidence(question)), false);
   assert.doesNotMatch(serialized, /correctOption|correctExplanation|learningNote|explanations/);

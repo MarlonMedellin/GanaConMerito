@@ -7,7 +7,7 @@ status: in-progress
 artifact_type: delivery
 modules: [question-bank-v4, database, practice, tutor, security, qa]
 tags: [sprint-48, v4-cutover, openrouter, shadow-mode]
-last_reviewed: 2026-08-22
+last_reviewed: 2026-08-30
 related:
   - docs/01-product/prd-v4-tutor-ai-openrouter.md
   - docs/04-quality/quality-gates.md
@@ -18,7 +18,7 @@ related:
 
 ## Estado
 
-**EN EJECUCIÓN — BLOQUES 0–1 VALIDADOS EN REPO; APLICACIÓN REMOTA PENDIENTE; BLOQUE 2 EN CURSO.**
+**EN EJECUCIÓN — V4.1 VALIDADO EN REPO LOCAL; APLICACIÓN REMOTA, SHADOW REAL Y DEPLOY PENDIENTES.**
 
 ## Objetivo
 
@@ -142,6 +142,12 @@ Gate 3:
 - tests existentes del Tutor permanecen verdes;
 - nuevos tests prueban todos los campos V4 y la frontera pre/post;
 - scoring, avance y selección no dependen del Tutor.
+
+Estado V4.1 2026-08-30: el builder del Tutor incorpora evidencia resuelta desde
+`item_source_links`/`knowledge_sources` cuando el sync V4.1 ha materializado
+`sourceId`. El expediente pre-respuesta puede incluir `sourceId`, referencia y
+metadatos acotados de fuente, pero no clave, explicaciones ni `learningNote`.
+No se ejecutó Supabase remoto ni shadow real.
 
 ### Bloque 4 — OpenRouter shadow (P1)
 

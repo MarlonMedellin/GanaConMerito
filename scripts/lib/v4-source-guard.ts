@@ -16,6 +16,7 @@ export interface V4SourceGuardItem {
 export interface KnowledgeSourceGuardRecord {
   sourceId: string;
   reference: string;
+  referenceAliases?: string[];
   verificationStatus: string;
   knowledgeLevel?: KnowledgeLevel;
   compatibleDomains?: string[];
@@ -73,7 +74,8 @@ export function validateV4SourceGuard(
     issues.push(`${sourceId}: una fuente histórica de nivel F no puede ser fuente principal decisiva V4.1`);
   }
 
-  if (!referenceMatches(item.source.reference, source.reference)) {
+  const references = [source.reference, ...(source.referenceAliases ?? [])];
+  if (!references.some((reference) => referenceMatches(item.source.reference, reference))) {
     issues.push(`${sourceId}: source.reference no corresponde con la referencia canónica (${source.reference})`);
   }
 

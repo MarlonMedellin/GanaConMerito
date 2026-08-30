@@ -214,8 +214,13 @@ def validate_item(
         if not non_empty_string(item.get(field)):
             errors.append(f"{item_path}: {field} must be a non-empty string")
     source = item.get("source")
-    if not isinstance(source, dict) or set(source) != {"reference"} or not non_empty_string(source.get("reference")):
-        errors.append(f"{item_path}: source must contain one non-empty reference")
+    if (
+        not isinstance(source, dict)
+        or not {"reference"} <= set(source) <= {"reference", "sourceId"}
+        or not non_empty_string(source.get("reference"))
+        or ("sourceId" in source and not non_empty_string(source.get("sourceId")))
+    ):
+        errors.append(f"{item_path}: source must contain one non-empty reference and optional non-empty sourceId")
     return errors
 
 

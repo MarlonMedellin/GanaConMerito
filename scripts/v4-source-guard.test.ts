@@ -35,6 +35,23 @@ test("V4.1 source guard accepts a verified matching sourceId", () => {
   assert.deepEqual(validateV4SourceGuard(item, sourceMap(verifiedSource), { requireSourceId: true }), []);
 });
 
+test("V4.1 source guard accepts declared reference aliases for canonical sources", () => {
+  const source: KnowledgeSourceGuardRecord = {
+    sourceId: "men-orientaciones-siee-evaluacion-formativa",
+    reference: "MEN Orientaciones para el fortalecimiento del SIEE y evaluación formativa",
+    referenceAliases: ["MEN, Sistema Institucional de Evaluacion de los Estudiantes (SIEE)"],
+    verificationStatus: "verified",
+    knowledgeLevel: "C",
+  };
+  assert.deepEqual(validateV4SourceGuard({
+    ...item,
+    source: {
+      reference: "MEN, Sistema Institucional de Evaluacion de los Estudiantes (SIEE)",
+      sourceId: source.sourceId,
+    },
+  }, sourceMap(source), { requireSourceId: true }), []);
+});
+
 test("V4.1 source guard can keep legacy-V4 items transitional", () => {
   assert.deepEqual(validateV4SourceGuard({ ...item, source: { reference: item.source.reference } }, sourceMap()), []);
   assert.deepEqual(validateV4SourceGuard({ ...item, source: { reference: item.source.reference } }, sourceMap(), { requireSourceId: true }), [
