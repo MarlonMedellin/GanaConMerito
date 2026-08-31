@@ -93,8 +93,12 @@ Snapshot operativo vigente para `v0.11.0`:
 - Migrations during promotion: false
 - Content Sync during promotion: false
 - G6 during promotion: false
-- Release tag: `PENDING`
-- GitHub Release: `PENDING`
+- Release tag: `v0.11.0`
+- Release tag target SHA: `e3e9b3436f57a0354c7fed941140df468499d624`
+- GitHub Release: `published`
+- GitHub Release URL:
+  `https://github.com/MarlonMedellin/GanaConMerito/releases/tag/v0.11.0`
+- Cleanup: `NOT_PERFORMED`
 - Old production runtime `v0.10.0` on `:3002`: preserved
 - Previous runtime on `:3005`: preserved
 - Rollback: available; cleanup reserved to a separate gate

@@ -12,7 +12,7 @@ Antes de release, Canary, producción o hotfix, registrar `CURRENT_APP_VERSION`,
 ## v0.11.0 / dashboard update production closeout
 - VERSION=0.11.0
 - RELEASE_DATE=2026-08-30
-- RELEASE_STATUS=PRODUCTION_GREEN
+- RELEASE_STATUS=CLOSED
 - RELEASE_CLASSIFICATION=MINOR
 - FINAL_RELEASE_SHA=e3e9b3436f57a0354c7fed941140df468499d624
 - CANARY=PASS
@@ -23,8 +23,11 @@ Antes de release, Canary, producción o hotfix, registrar `CURRENT_APP_VERSION`,
 - PUBLIC_RUNTIME_SMOKE=PASS
 - AUTHENTICATED_SMOKE=PASS
 - V4_ACTIVE_COUNT=248
-- RELEASE_TAG=PENDING
-- GITHUB_RELEASE=PENDING
+- RELEASE_TAG=v0.11.0
+- RELEASE_TAG_TARGET_SHA=e3e9b3436f57a0354c7fed941140df468499d624
+- GITHUB_RELEASE=published
+- GITHUB_RELEASE_URL=https://github.com/MarlonMedellin/GanaConMerito/releases/tag/v0.11.0
+- CLEANUP=NOT_PERFORMED
 - Runtime verified: yes.
 - Deploy performed: yes.
 - User exposure: true.
@@ -60,8 +63,8 @@ Antes de release, Canary, producción o hotfix, registrar `CURRENT_APP_VERSION`,
 - [x] Runtime productivo anterior `v0.10.0` preservado en `:3002`.
 - [x] Runtime previo adicional preservado en `:3005`.
 - [x] No migrations, no Content Sync, no G6 durante promoción.
-- [ ] Tag `v0.11.0` pendiente sobre `FINAL_RELEASE_SHA`.
-- [ ] GitHub Release `v0.11.0` pendiente.
+- [x] Tag `v0.11.0` publicado sobre `FINAL_RELEASE_SHA`.
+- [x] GitHub Release `v0.11.0` publicada.
 - [ ] Cleanup de runtimes antiguos reservado a gate separado.
 
 ### Cierre documental
@@ -70,6 +73,8 @@ Antes de release, Canary, producción o hotfix, registrar `CURRENT_APP_VERSION`,
 - [x] Política de versionado alineada con runtime productivo `v0.11.0`.
 - [x] No se afirma que el commit documental posterior sea el release SHA; el tag
   debe apuntar al runtime desplegado `e3e9b3436f57a0354c7fed941140df468499d624`.
+- [x] Tag y GitHub Release verificados sobre
+  `e3e9b3436f57a0354c7fed941140df468499d624`.
 
 ## v0.10.0 / V4.1 production closeout
 - VERSION=0.10.0
