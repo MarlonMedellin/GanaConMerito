@@ -29,7 +29,12 @@ Current release metadata:
 - version: `0.10.0`
 - release date: `2026-08-30`
 - release candidate base: `b7e20a163dd9fe510bbb7fe26595bfd805f8b903`
-- final release SHA: pending merge
+- final release SHA: `fc0f9e62ca798a25f84d2c4dd8cfe76ca4040a01`
+- public runtime: `https://ganaconmerito.com`
+- public runtime SHA: `fc0f9e62ca798a25f84d2c4dd8cfe76ca4040a01`
+- release tag: `v0.10.0`
+- GitHub Release: published
+- release closeout: `docs/05-ops/V0.10.0-PRODUCTION-CLOSEOUT-20260830.md`
 
 Runtime identity is composed from:
 

@@ -15,9 +15,39 @@ last_reviewed: 2026-08-23
 ## Document control
 - Status: operational
 - Owner: PM-Governance
-- Last reviewed: 2026-08-24
+- Last reviewed: 2026-08-30
 - Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
 - Update trigger: governance, delivery, documentation, drift
+
+## 2026-08-30 — v0.10.0 V4.1 production closeout
+- tipo: release+governance+runtime-closeout
+- modulo: question-bank-v4.1
+- resumen: Se cierra formalmente la release publica `v0.10.0` ya desplegada y
+  validada en produccion.
+- final release SHA: `fc0f9e62ca798a25f84d2c4dd8cfe76ca4040a01`.
+- runtime publico: `https://ganaconmerito.com`.
+- runtime SHA: `fc0f9e62ca798a25f84d2c4dd8cfe76ca4040a01`.
+- evidencia: ReleaseStamp `PASS`, public smoke `PASS`, V4 active count `248`,
+  Content Sync `APPLIED_AND_VERIFIED`, G6 `GREEN_CANDIDATE`, CAN-004 `GREEN`,
+  Canary deploy `GREEN` y Production promotion `GREEN`.
+- github: tag `v0.10.0` y GitHub Release publicados sobre el `FINAL_RELEASE_SHA`.
+- limites: `authenticated_smoke=NOT_AVAILABLE`; no se afirman pruebas
+  autenticadas. No hubo nuevas migraciones Supabase ni mutaciones Supabase durante
+  la promocion.
+- rollback: el runtime anterior fue preservado durante la promocion y quedo
+  disponible como rollback inmediato.
+- agente: Codex
+- via: Codex Desktop
+- contributor: Marlon Medellin
+- environment: rama documental local / WSL; sin deploy, Docker, nginx,
+  migraciones ni escrituras Supabase en este cierre documental
+- validacion: `git diff --check` PASS, `npm run check:doc-triggers` PASS en modo
+  advisory y `python3 scripts/validate_docs.py` PASS con warnings legacy
+  existentes
+- runtime-verified: si; evidencia autoritativa de promocion ya desplegada
+- relacionados: `docs/05-ops/V0.10.0-PRODUCTION-CLOSEOUT-20260830.md`,
+  `docs/02-delivery/release-checklist.md`,
+  `docs/05-ops/runtime-and-release.md`, `docs/project/status.md`
 
 ## 2026-08-30 — v0.10.0 V4.1 release preparation
 - tipo: release+governance+content-runtime

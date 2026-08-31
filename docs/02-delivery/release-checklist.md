@@ -9,28 +9,38 @@ Antes de release, Canary, producción o hotfix, registrar `CURRENT_APP_VERSION`,
 `CURRENT_RELEASE_DATE` y `CANDIDATE_SHA`. Después de merge, registrar
 `FINAL_RELEASE_SHA`. Después de deploy, verificar visualmente `ReleaseStamp`.
 
-## v0.10.0 / V4.1 release preparation
-- CURRENT_APP_VERSION=0.9.1
-- TARGET_APP_VERSION=0.10.0
-- TARGET_RELEASE_DATE=2026-08-30
-- CANDIDATE_BASE_SHA=b7e20a163dd9fe510bbb7fe26595bfd805f8b903
-- FINAL_RELEASE_SHA=PENDING
+## v0.10.0 / V4.1 production closeout
+- VERSION=0.10.0
+- RELEASE_DATE=2026-08-30
+- FINAL_RELEASE_SHA=fc0f9e62ca798a25f84d2c4dd8cfe76ca4040a01
+- PUBLIC_RUNTIME=https://ganaconmerito.com
+- PUBLIC_RUNTIME_SHA=fc0f9e62ca798a25f84d2c4dd8cfe76ca4040a01
+- Release tag: `v0.10.0`
+- GitHub Release: published
 
-### Evidencia reutilizada
+### Evidencia de cierre
 - Content Sync: APPLIED_AND_VERIFIED.
 - G6: GREEN_CANDIDATE.
 - CAN-004: GREEN.
-- Runtime activation gate: authorized.
+- Canary deploy: GREEN.
+- Production promotion: GREEN.
+- ReleaseStamp: PASS.
+- Public smoke: PASS.
+- Authenticated smoke: NOT_AVAILABLE.
+- V4 active count: 248.
+- User exposure: true.
+- Supabase mutation during promotion: false.
+- Previous runtime preserved: true; rollback available at promotion close.
 - Candidate Supabase: `dhiytzbwodfvdrnwhkcw`.
 
-### Pendiente antes de cierre operacional
-- Merge de release.
-- FINAL_RELEASE_SHA.
-- Deploy.
-- Runtime SHA.
-- ReleaseStamp v0.10.0.
-- Smoke postdeploy.
-- Exposición de usuarios.
+### Cierre operacional
+- [x] Release merge registrado en `fc0f9e62ca798a25f84d2c4dd8cfe76ca4040a01`.
+- [x] Runtime publico verificado en el mismo SHA.
+- [x] Tag `v0.10.0` publicado sobre el `FINAL_RELEASE_SHA`.
+- [x] GitHub Release publicado.
+- [x] Cierre documental registrado en `docs/05-ops/V0.10.0-PRODUCTION-CLOSEOUT-20260830.md`.
+- [x] No se ejecutaron nuevas migraciones ni mutaciones Supabase durante la promocion.
+- [x] No se afirma E2E autenticada: `authenticated_smoke=NOT_AVAILABLE`.
 
 ## Snapshot beta candidata 0.6.0
 - Fecha de homologacion documental: 2026-08-20.
