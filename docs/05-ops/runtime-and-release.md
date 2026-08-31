@@ -2,7 +2,7 @@
 
 Status: canonical
 Owner: PM-Governance
-Last reviewed: 2026-08-23
+Last reviewed: 2026-08-30
 Related files:
 - AGENTS.md
 - docs/02-delivery/versioning-and-releases.md
@@ -67,16 +67,27 @@ Application versioning:
 - Required records after merge/deploy: `FINAL_RELEASE_SHA`, runtime SHA and
   visual `ReleaseStamp` verification
 
-Snapshot vigente para beta candidata:
-- Commit de codigo release: `9695d40`
-- Documentación: commits posteriores al release, sin cambios de código
-- Runtime publico verificado: `9695d40`
-- Build time visible: `2026-08-19T00:00:00-05:00`
-- Estado de paridad: codigo/deploy/runtime alineados; HEAD documental posterior solo contiene documentación
-- Base Supabase: migraciones `0013`-`0017` aplicadas; 100 items beta en `v_item_bank_active`
-- QA postdeploy: smoke local/publico, API E2E y UI Chromium PASS; artifacts registrados en `docs/02-delivery/release-checklist.md`
-- Version objetivo: `0.6.0`
-- Release beta creado: `v0.6.0-beta.1` sobre `9695d40`
+Snapshot operativo vigente para `v0.10.0` / V4.1:
+- Version: `0.10.0`
+- Release date: `2026-08-30`
+- Final release SHA: `fc0f9e62ca798a25f84d2c4dd8cfe76ca4040a01`
+- Runtime publico: `https://ganaconmerito.com`
+- Runtime publico verificado: `fc0f9e62ca798a25f84d2c4dd8cfe76ca4040a01`
+- ReleaseStamp: PASS
+- Public smoke: PASS
+- Authenticated smoke: NOT_AVAILABLE
+- V4 active count: 248
+- Content Sync: APPLIED_AND_VERIFIED
+- G6: GREEN_CANDIDATE
+- CAN-004: GREEN
+- Canary deploy: GREEN
+- Production promotion: GREEN
+- User exposure: true
+- Supabase mutation during promotion: false
+- Release tag: `v0.10.0`
+- GitHub Release: published
+- Rollback: runtime anterior preservado al momento de la promocion y disponible
+  como rollback inmediato
 
 ---
 
@@ -91,7 +102,9 @@ No declarar:
 
 sin evidencia mínima.
 
-Para Beta Candidate 0.6.0, la evidencia histórica en `fcc40cb`, `716ec62` u otros commits sirve como contexto de madurez. La verificación actual confirma que el runtime visible muestra `9695d40`, exige login real y completó una E2E autenticada de cinco turnos. El release está etiquetado como `v0.6.0-beta.1`.
+Para Beta Candidate 0.6.0, la evidencia histórica en `fcc40cb`, `716ec62` u otros
+commits sirve como contexto de madurez historica. El estado vigente de produccion
+es `v0.10.0` sobre `fc0f9e62ca798a25f84d2c4dd8cfe76ca4040a01`.
 
 ---
 

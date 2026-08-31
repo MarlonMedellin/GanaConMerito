@@ -10,23 +10,35 @@ last_reviewed: 2026-08-30
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-08-30 — preparación de release `v0.10.0` para V4.1
-en rama aislada; sin deploy, sin mutaciones Supabase y sin exposición de usuarios.
+Ultima actualizacion: 2026-08-30 — cierre operacional de release publica
+`v0.10.0` / V4.1 ya desplegada en produccion.
 
 ---
 
 # Executive Operational Snapshot
 
-## Preparación release v0.10.0 / V4.1
+## Release publica v0.10.0 / V4.1
 
-- Release en preparación: `v0.10.0`.
-- Release date objetivo: `2026-08-30`.
-- Candidate base: `b7e20a163dd9fe510bbb7fe26595bfd805f8b903`.
-- Final release SHA: pendiente de merge.
-- Evidencia V4.1 reutilizada: Content Sync `APPLIED_AND_VERIFIED`, G6
-  `GREEN_CANDIDATE`, CAN-004 `GREEN` y runtime activation gate autorizado.
-- No hay deploy, activación runtime, exposición de usuarios ni nuevas mutaciones
-  Supabase autorizadas por este checkpoint.
+- Estado: release publica cerrada operacionalmente.
+- Version: `0.10.0`.
+- Release date: `2026-08-30`.
+- Final release SHA: `fc0f9e62ca798a25f84d2c4dd8cfe76ca4040a01`.
+- Runtime publico: `https://ganaconmerito.com`.
+- Runtime SHA: `fc0f9e62ca798a25f84d2c4dd8cfe76ca4040a01`.
+- ReleaseStamp: PASS.
+- Public smoke: PASS.
+- Authenticated smoke: NOT_AVAILABLE.
+- V4 active count: 248.
+- Content Sync: `APPLIED_AND_VERIFIED`.
+- G6: `GREEN_CANDIDATE`.
+- CAN-004: `GREEN`.
+- Canary deploy: `GREEN`.
+- Production promotion: `GREEN`.
+- User exposure: true.
+- Supabase mutation during promotion: false.
+- Rollback: el runtime anterior fue preservado al momento de la promocion y
+  quedo disponible como rollback inmediato.
+- Tag/GitHub Release: `v0.10.0` publicado sobre el `FINAL_RELEASE_SHA`.
 
 ## Snapshot histórico V4 limpio
 
@@ -51,27 +63,27 @@ en rama aislada; sin deploy, sin mutaciones Supabase y sin exposición de usuari
   fuentes todavía en `needs_review`, proyecto Supabase V4 remoto aún no
   creado/aprobado/sincronizado y estados Canary/Candidate SHA en **NO-GO**.
 
-Los apartados siguientes conservan el último snapshot legacy/remoto conocido como
-contexto histórico y no autorizan ejecutar su ruta de migración.
+Los apartados siguientes conservan snapshots legacy/remotos previos como contexto
+historico. No representan el estado vigente de `v0.10.0` ni autorizan ejecutar
+rutas de migracion antiguas.
 
 ## Current Sprint
-Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow (**repo completo; cierre operativo pendiente**).
+Sprint 48 — V4 Runtime Seguro + Tutor IA en Shadow; release publica `v0.10.0`
+cerrada operacionalmente para V4.1.
 
 ## Current Runtime State
-El runtime publico canonico responde en `https://ganaconmerito.com` y reporta el commit
-`e1dc63bb51a1f42f585fa31d2695238b2d933aa5` con build time `2026-08-22 23:58:20 +0000 UTC`. El smoke publico de
-login y configuracion paso el 2026-08-22.
+El runtime publico canonico responde en `https://ganaconmerito.com` y reporta el
+commit `fc0f9e62ca798a25f84d2c4dd8cfe76ca4040a01` para `v0.10.0`.
+ReleaseStamp `PASS` y public smoke `PASS` quedaron registrados al cierre de la
+promocion. La E2E autenticada no esta disponible para este cierre:
+`authenticated_smoke=NOT_AVAILABLE`.
 
-El corte editorial aprobado está congelado en `master` mediante
-`content/question-bank-v4/MANIFEST.json`; ese archivo es la única fuente vigente
-para conteo, hashes e inventario. El runtime mantiene un drift amplio frente al
-repositorio.
-La administracion de VPS no fue verificada porque la huella SSH presentada cambio
-y debe confirmarse antes de aceptar la conexion.
+El corte V4.1 vigente registra 248 reactivos activos. No hubo nuevas migraciones
+Supabase ni mutaciones Supabase durante la promocion.
 
 ## Last Verified Commit
-`e43f612` como commit declarado por el runtime publico. Esta auditoria solo verifico
-smoke publico; no reejecuto E2E autenticada ni verifico el arbol de deploy.
+`fc0f9e62ca798a25f84d2c4dd8cfe76ca4040a01` como commit declarado por el runtime
+publico de `v0.10.0`. Este cierre no afirma E2E autenticada.
 
 ## Current Sprint Status
 **SNAPSHOT REMOTO LEGACY PREVIO; NO REVALIDADO EN ESTE BLOQUE**: `0028` fue aplicada en
