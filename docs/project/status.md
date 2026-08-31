@@ -54,6 +54,14 @@ Este archivo contiene solo el estado operativo vigente. La historia permanece en
 
 El inventario del servidor reporto contenedores historicos en `:3003` y `:3004` que no fueron autorizados para borrado en el gate anterior. No forman parte de la ruta productiva verificada. Deben identificarse antes de declararlos eliminables.
 
+## Compatibilidad de contratos historicos
+
+Este bloque existe unicamente para conservar contratos automatizados legacy mientras la historia completa vive fuera del snapshot operativo. No representa el estado vigente.
+
+- Sprint 43 - Learning Paths + Misconception Signals: cerrado; sus senales pedagogicas forman parte de la historia del producto.
+- Sprint 42 - Rich Ingestion Normalization: cerrado.
+- Sprint 22: evidencia `synthesized_governed_unverified`; no cuenta con anexos oficiales suficientes para considerarse source-verified.
+
 ## Fuente de verdad
 
 1. `VERSION.json` para version y fecha de release.
