@@ -51,7 +51,8 @@ test("dashboard student copy hides internal heuristics and does not overclaim tr
   assert.match(dashboardPage, /ACUMULADO HISTÓRICO/);
   assert.match(dashboardPage, /Mapa de preparación/i);
   assert.match(dashboardPage, /Recomendación/i);
-  assert.match(dashboardPage, /getDashboardSummaryForCurrentUser\(requestedSessionId\)/);
+  assert.match(dashboardPage, /getDashboardSummaryForCurrentUser\(\)/);
+  assert.doesNotMatch(dashboardPage, /getDashboardSummaryForCurrentUser\(requestedSessionId\)/);
   assert.match(dashboardPage, /getDashboardTopicBreakdownForCurrentUser\(requestedSessionId\)/);
   assert.match(dashboardPage, /breakdown\.currentSession/);
   assert.doesNotMatch(dashboardPage, /Señal de razonamiento/);

@@ -28,7 +28,7 @@ export default async function DashboardPage({ searchParams }: DashboardPageProps
   const requestedSessionId = typeof params?.sessionId === "string" ? params.sessionId : undefined;
 
   const [summary, breakdown] = await Promise.all([
-    getDashboardSummaryForCurrentUser(requestedSessionId),
+    getDashboardSummaryForCurrentUser(),
     getDashboardTopicBreakdownForCurrentUser(requestedSessionId),
   ]);
   const historicalAccuracy = getAccuracy(summary.historical.totalCorrect, summary.historical.totalAttempts);
