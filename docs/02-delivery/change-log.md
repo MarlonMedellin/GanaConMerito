@@ -19,6 +19,44 @@ last_reviewed: 2026-08-23
 - Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
 - Update trigger: governance, delivery, documentation, drift
 
+## 2026-08-30 — v0.10.1 dashboard patch release preparation
+- tipo: frontend+release
+- modulo: dashboard/application-versioning
+- resumen: Se prepara el release PATCH compatible `v0.10.1` para publicar el
+  ajuste de copy y alcance temporal de métricas del dashboard ya integrado y
+  validado por PR #123.
+- clasificacion: PATCH compatible; copy frontend, aclaración compatible de
+  métricas y eliminación de consulta duplicada, sin breaking changes.
+- alcance funcional ya integrado por PR #123: `Ver mi diagnóstico` ->
+  `Ver mi progreso`; `Continuar práctica` -> `Continuar mi preparación`;
+  `MEJOR SEÑAL` -> `FORTALEZA`; `FOCO PRIORITARIO` -> `EN QUÉ DEBO MEJORAR`;
+  `Entrenar este foco` -> `Practicar este foco`; fortaleza puede usar
+  `currentSession` con `sessionId`; foco de mejora y mapa permanecen
+  `historical`; `getDashboardSummaryForCurrentUser()` no recibe
+  `requestedSessionId`; solo breakdown calcula detalle de sesión; consulta
+  duplicada eliminada.
+- evidencia reutilizada: typecheck `PASS`; vertical contract `PASS`; PR Checks
+  `SUCCESS`; run final `33348524090`; Container build reproducibility `PASS`;
+  Build, test, and runtime smoke `PASS`; Codex re-review `CLEAN`; revisión
+  visual autenticada `PASS` reutilizable.
+- release candidate base: `662c175b4b1288e1a7003e4b2139435e8a470183`.
+- final release SHA: pendiente de merge.
+- limites: no Supabase changes; no migrations; no V4.1 changes; no Knowledge
+  Base changes; no targeting changes; no Tutor contract changes;
+  `VISIBLE_TUTOR_EXPECTED=true`; `VISIBLE_OPENROUTER_LLM=false`; no deploy; no
+  user exposure adicional.
+- agente: Codex
+- via: Codex local
+- contributor: MarlonMedellin
+- environment: rama aislada local / WSL; sin VPS, deploy, Canary, producción,
+  Supabase ni migraciones
+- validacion: `git diff --check` PASS; `npm run check:doc-triggers` PASS en
+  modo advisory; `npm exec -- tsx --test src/lib/app-version.test.ts
+  scripts/prepare-build-metadata.test.ts` PASS
+- runtime-verified: no; preparación de release sin deploy
+- relacionados: `VERSION.json`, `docs/02-delivery/versioning-and-releases.md`,
+  `docs/02-delivery/release-checklist.md`, `docs/project/status.md`
+
 ## 2026-08-30 — v0.10.0 V4.1 production closeout
 - tipo: release+governance+runtime-closeout
 - modulo: question-bank-v4.1
