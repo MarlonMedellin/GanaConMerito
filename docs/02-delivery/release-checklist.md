@@ -9,38 +9,67 @@ Antes de release, Canary, producción o hotfix, registrar `CURRENT_APP_VERSION`,
 `CURRENT_RELEASE_DATE` y `CANDIDATE_SHA`. Después de merge, registrar
 `FINAL_RELEASE_SHA`. Después de deploy, verificar visualmente `ReleaseStamp`.
 
-## v0.11.0 / dashboard update release preparation
+## v0.11.0 / dashboard update production closeout
 - VERSION=0.11.0
 - RELEASE_DATE=2026-08-30
-- RELEASE_STATUS=RELEASE_PREPARATION
+- RELEASE_STATUS=PRODUCTION_GREEN
 - RELEASE_CLASSIFICATION=MINOR
-- CANDIDATE_SHA=662c175b4b1288e1a7003e4b2139435e8a470183
-- FINAL_RELEASE_SHA=PENDING
-- CANARY=NOT_STARTED
-- PRODUCTION_VERSION=0.10.0
-- PRODUCTION_RUNTIME_SHA=fc0f9e62ca798a25f84d2c4dd8cfe76ca4040a01
-- Runtime verified: no.
-- Deploy performed: no.
-- User exposure adicional: no.
+- FINAL_RELEASE_SHA=e3e9b3436f57a0354c7fed941140df468499d624
+- CANARY=PASS
+- PRODUCTION_PROMOTION=PASS
+- PRODUCTION_RUNTIME=https://ganaconmerito.com
+- PRODUCTION_RUNTIME_SHA=e3e9b3436f57a0354c7fed941140df468499d624
+- RELEASE_STAMP=PASS
+- PUBLIC_RUNTIME_SMOKE=PASS
+- AUTHENTICATED_SMOKE=PASS
+- V4_ACTIVE_COUNT=248
+- RELEASE_TAG=PENDING
+- GITHUB_RELEASE=PENDING
+- Runtime verified: yes.
+- Deploy performed: yes.
+- User exposure: true.
 
 ### Alcance
-- Release metadata y documentación requerida para MINOR compatible `v0.11.0`.
-- Cambios funcionales ya integrados y validados por PR #123.
-- Incluye cambios visibles de UX/copy y cambio compatible de comportamiento de
-  producto en el alcance temporal de la métrica de fortaleza cuando existe
-  `sessionId`.
+- Release MINOR compatible `v0.11.0` para los cambios de dashboard ya integrados
+  y validados por PR #123.
+- Incluye UX/copy visible y cambio compatible de comportamiento de producto en el
+  alcance temporal de la métrica de fortaleza cuando existe `sessionId`.
 - No existen breaking changes.
-- No Supabase changes, no migrations, no V4.1 changes, no Knowledge Base
-  changes, no targeting changes, no Tutor contract changes.
+- No Supabase product/schema/content changes, no migrations, no V4.1 changes, no
+  Knowledge Base changes, no targeting changes, no Tutor contract changes.
 - `VISIBLE_TUTOR_EXPECTED=true`.
 - `VISIBLE_OPENROUTER_LLM=false`.
 
-### Gates locales de esta preparación
-- [x] `git diff --check`.
-- [x] `npm run check:doc-triggers`.
-- [x] `npm exec -- tsx --test src/lib/app-version.test.ts scripts/prepare-build-metadata.test.ts`.
-- [ ] GitHub PR CI pendiente.
-- [ ] Merge reservado a ChatGPT web después de GREEN.
+### Evidencia de Canary y producción
+- [x] PR #124 fusionado y `FINAL_RELEASE_SHA` registrado.
+- [x] Canary desplegado sobre el SHA exacto.
+- [x] ReleaseStamp Canary PASS.
+- [x] Public smoke Canary PASS.
+- [x] Postdeploy smoke Canary PASS.
+- [x] V4 active count `248`.
+- [x] Mutación del postdeploy clasificada como `EXPECTED_QA_ONLY` bajo namespace
+  `gcm-e2e`; sin mutación Supabase de producto, schema o contenido.
+- [x] Producción promovida reutilizando el runtime Canary validado, sin rebuild.
+- [x] `nginx -t` PASS antes del reload.
+- [x] ReleaseStamp producción PASS.
+- [x] Public runtime smoke producción PASS.
+- [x] Smoke autenticado manual con Google real PASS.
+- [x] Dashboard producción PASS en desktop y mobile.
+- [x] Tutor visible PASS.
+- [x] OpenRouter visible LLM permanece false.
+- [x] Runtime productivo anterior `v0.10.0` preservado en `:3002`.
+- [x] Runtime previo adicional preservado en `:3005`.
+- [x] No migrations, no Content Sync, no G6 durante promoción.
+- [ ] Tag `v0.11.0` pendiente sobre `FINAL_RELEASE_SHA`.
+- [ ] GitHub Release `v0.11.0` pendiente.
+- [ ] Cleanup de runtimes antiguos reservado a gate separado.
+
+### Cierre documental
+- [x] Cierre operacional registrado en
+  `docs/05-ops/V0.11.0-PRODUCTION-CLOSEOUT-20260830.md`.
+- [x] Política de versionado alineada con runtime productivo `v0.11.0`.
+- [x] No se afirma que el commit documental posterior sea el release SHA; el tag
+  debe apuntar al runtime desplegado `e3e9b3436f57a0354c7fed941140df468499d624`.
 
 ## v0.10.0 / V4.1 production closeout
 - VERSION=0.10.0
