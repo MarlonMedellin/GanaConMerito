@@ -24,26 +24,37 @@ Update trigger:
 
 The canonical application version source is `VERSION.json`.
 
-Current release preparation metadata:
+Current release metadata:
 
 - version: `0.11.0`
 - release date: `2026-08-30`
-- release candidate base: `662c175b4b1288e1a7003e4b2139435e8a470183`
-- final release SHA: `PENDING`
-- release status: `RELEASE_PREPARATION`
-- Canary: `NOT_STARTED`
-- production promotion: `NOT_STARTED`
+- final release SHA: `e3e9b3436f57a0354c7fed941140df468499d624`
+- release status: `PRODUCTION_GREEN`
+- Canary: `PASS`
+- production promotion: `PASS`
+- ReleaseStamp: `PASS`
+- public runtime smoke: `PASS`
+- authenticated smoke: `PASS`
+- V4 active count: `248`
+- release tag: `PENDING`
+- GitHub Release: `PENDING`
+- release closeout: `docs/05-ops/V0.11.0-PRODUCTION-CLOSEOUT-20260830.md`
 
 Current production runtime metadata:
 
-- production version: `0.10.0`
+- production version: `0.11.0`
 - production release date: `2026-08-30`
-- production final release SHA: `fc0f9e62ca798a25f84d2c4dd8cfe76ca4040a01`
+- production final release SHA: `e3e9b3436f57a0354c7fed941140df468499d624`
 - public runtime: `https://ganaconmerito.com`
-- public runtime SHA: `fc0f9e62ca798a25f84d2c4dd8cfe76ca4040a01`
-- release tag: `v0.10.0`
-- GitHub Release: published
-- release closeout: `docs/05-ops/V0.10.0-PRODUCTION-CLOSEOUT-20260830.md`
+- public runtime SHA: `e3e9b3436f57a0354c7fed941140df468499d624`
+- public runtime container: `gcm-canary-l2-e3e9b34`
+- public runtime port: `3006`
+- build time: `2026-08-31T02:28:58Z`
+- previous production runtime `v0.10.0` on port `3002`: preserved
+- previous rollback runtime on port `3005`: preserved
+- release tag: `PENDING`
+- GitHub Release: `PENDING`
+- release closeout: `docs/05-ops/V0.11.0-PRODUCTION-CLOSEOUT-20260830.md`
 
 Runtime identity is composed from:
 
