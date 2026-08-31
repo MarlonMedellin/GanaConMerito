@@ -19,14 +19,16 @@ last_reviewed: 2026-08-23
 - Related files: docs/project/status.md, docs/02-delivery/sprint-log.md, docs/02-delivery/change-log.md, docs/project/canonical-docs.md
 - Update trigger: governance, delivery, documentation, drift
 
-## 2026-08-30 — v0.10.1 dashboard patch release preparation
+## 2026-08-30 — v0.11.0 dashboard update release preparation
 - tipo: frontend+release
 - modulo: dashboard/application-versioning
-- resumen: Se prepara el release PATCH compatible `v0.10.1` para publicar el
-  ajuste de copy y alcance temporal de métricas del dashboard ya integrado y
-  validado por PR #123.
-- clasificacion: PATCH compatible; copy frontend, aclaración compatible de
-  métricas y eliminación de consulta duplicada, sin breaking changes.
+- resumen: Se prepara el release MINOR compatible `v0.11.0` para publicar los
+  cambios visibles de UX/copy y el cambio compatible de comportamiento/producto
+  en el alcance temporal de la métrica de fortaleza ya integrados y validados
+  por PR #123.
+- clasificacion: MINOR compatible; UX/copy visible, cambio compatible de
+  comportamiento/producto en la métrica de fortaleza cuando existe `sessionId`,
+  y eliminación de consulta duplicada, sin breaking changes.
 - alcance funcional ya integrado por PR #123: `Ver mi diagnóstico` ->
   `Ver mi progreso`; `Continuar práctica` -> `Continuar mi preparación`;
   `MEJOR SEÑAL` -> `FORTALEZA`; `FOCO PRIORITARIO` -> `EN QUÉ DEBO MEJORAR`;

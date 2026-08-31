@@ -9,10 +9,11 @@ Antes de release, Canary, producción o hotfix, registrar `CURRENT_APP_VERSION`,
 `CURRENT_RELEASE_DATE` y `CANDIDATE_SHA`. Después de merge, registrar
 `FINAL_RELEASE_SHA`. Después de deploy, verificar visualmente `ReleaseStamp`.
 
-## v0.10.1 / dashboard patch release preparation
-- VERSION=0.10.1
+## v0.11.0 / dashboard update release preparation
+- VERSION=0.11.0
 - RELEASE_DATE=2026-08-30
 - RELEASE_STATUS=RELEASE_PREPARATION
+- RELEASE_CLASSIFICATION=MINOR
 - CANDIDATE_SHA=662c175b4b1288e1a7003e4b2139435e8a470183
 - FINAL_RELEASE_SHA=PENDING
 - CANARY=NOT_STARTED
@@ -23,8 +24,12 @@ Antes de release, Canary, producción o hotfix, registrar `CURRENT_APP_VERSION`,
 - User exposure adicional: no.
 
 ### Alcance
-- Release metadata y documentación requerida para PATCH `v0.10.1`.
+- Release metadata y documentación requerida para MINOR compatible `v0.11.0`.
 - Cambios funcionales ya integrados y validados por PR #123.
+- Incluye cambios visibles de UX/copy y cambio compatible de comportamiento de
+  producto en el alcance temporal de la métrica de fortaleza cuando existe
+  `sessionId`.
+- No existen breaking changes.
 - No Supabase changes, no migrations, no V4.1 changes, no Knowledge Base
   changes, no targeting changes, no Tutor contract changes.
 - `VISIBLE_TUTOR_EXPECTED=true`.

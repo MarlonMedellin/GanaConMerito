@@ -26,7 +26,7 @@ The canonical application version source is `VERSION.json`.
 
 Current release preparation metadata:
 
-- version: `0.10.1`
+- version: `0.11.0`
 - release date: `2026-08-30`
 - release candidate base: `662c175b4b1288e1a7003e4b2139435e8a470183`
 - final release SHA: `PENDING`
