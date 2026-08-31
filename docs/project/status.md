@@ -10,12 +10,32 @@ last_reviewed: 2026-08-30
 
 # Estado del Proyecto - GanaConMerito
 
-Ultima actualizacion: 2026-08-30 — cierre operacional de release publica
-`v0.10.0` / V4.1 ya desplegada en produccion.
+Ultima actualizacion: 2026-08-30 — preparación de release MINOR `v0.11.0`
+pendiente de GitHub PR CI y revisión de merge por ChatGPT web; producción sigue
+en `v0.10.0`.
 
 ---
 
 # Executive Operational Snapshot
+
+## Release preparation v0.11.0 / dashboard update
+
+- Estado: release preparation; no desplegada.
+- Version preparada: `0.11.0`.
+- Clasificación: MINOR compatible.
+- Release date: `2026-08-30`.
+- Candidate SHA/base: `662c175b4b1288e1a7003e4b2139435e8a470183`.
+- Final release SHA: `PENDING`.
+- Canary: `NOT_STARTED`.
+- Production: sigue en `v0.10.0`.
+- Alcance: metadata de versión y documentación de release para el dashboard
+  update ya integrado por PR #123; incluye UX/copy visible y cambio compatible
+  de comportamiento/producto en la métrica de fortaleza con `sessionId`.
+- Breaking changes: no.
+- Exclusiones: no deploy, no Canary, no producción, no Supabase, no migraciones,
+  no V4.1, no Knowledge Base, no targeting, no cambios de contrato Tutor.
+- Tutor visibility: `VISIBLE_TUTOR_EXPECTED=true`.
+- OpenRouter visible LLM: `VISIBLE_OPENROUTER_LLM=false`.
 
 ## Release publica v0.10.0 / V4.1
 

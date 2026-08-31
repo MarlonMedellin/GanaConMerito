@@ -9,6 +9,39 @@ Antes de release, Canary, producción o hotfix, registrar `CURRENT_APP_VERSION`,
 `CURRENT_RELEASE_DATE` y `CANDIDATE_SHA`. Después de merge, registrar
 `FINAL_RELEASE_SHA`. Después de deploy, verificar visualmente `ReleaseStamp`.
 
+## v0.11.0 / dashboard update release preparation
+- VERSION=0.11.0
+- RELEASE_DATE=2026-08-30
+- RELEASE_STATUS=RELEASE_PREPARATION
+- RELEASE_CLASSIFICATION=MINOR
+- CANDIDATE_SHA=662c175b4b1288e1a7003e4b2139435e8a470183
+- FINAL_RELEASE_SHA=PENDING
+- CANARY=NOT_STARTED
+- PRODUCTION_VERSION=0.10.0
+- PRODUCTION_RUNTIME_SHA=fc0f9e62ca798a25f84d2c4dd8cfe76ca4040a01
+- Runtime verified: no.
+- Deploy performed: no.
+- User exposure adicional: no.
+
+### Alcance
+- Release metadata y documentación requerida para MINOR compatible `v0.11.0`.
+- Cambios funcionales ya integrados y validados por PR #123.
+- Incluye cambios visibles de UX/copy y cambio compatible de comportamiento de
+  producto en el alcance temporal de la métrica de fortaleza cuando existe
+  `sessionId`.
+- No existen breaking changes.
+- No Supabase changes, no migrations, no V4.1 changes, no Knowledge Base
+  changes, no targeting changes, no Tutor contract changes.
+- `VISIBLE_TUTOR_EXPECTED=true`.
+- `VISIBLE_OPENROUTER_LLM=false`.
+
+### Gates locales de esta preparación
+- [x] `git diff --check`.
+- [x] `npm run check:doc-triggers`.
+- [x] `npm exec -- tsx --test src/lib/app-version.test.ts scripts/prepare-build-metadata.test.ts`.
+- [ ] GitHub PR CI pendiente.
+- [ ] Merge reservado a ChatGPT web después de GREEN.
+
 ## v0.10.0 / V4.1 production closeout
 - VERSION=0.10.0
 - RELEASE_DATE=2026-08-30
