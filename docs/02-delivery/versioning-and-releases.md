@@ -29,15 +29,19 @@ Current release metadata:
 - version: `0.11.0`
 - release date: `2026-08-30`
 - final release SHA: `e3e9b3436f57a0354c7fed941140df468499d624`
-- release status: `PRODUCTION_GREEN`
+- release status: `CLOSED`
 - Canary: `PASS`
 - production promotion: `PASS`
 - ReleaseStamp: `PASS`
 - public runtime smoke: `PASS`
 - authenticated smoke: `PASS`
 - V4 active count: `248`
-- release tag: `PENDING`
-- GitHub Release: `PENDING`
+- release tag: `v0.11.0`
+- release tag target SHA: `e3e9b3436f57a0354c7fed941140df468499d624`
+- GitHub Release: `published`
+- GitHub Release URL:
+  `https://github.com/MarlonMedellin/GanaConMerito/releases/tag/v0.11.0`
+- cleanup: `NOT_PERFORMED`
 - release closeout: `docs/05-ops/V0.11.0-PRODUCTION-CLOSEOUT-20260830.md`
 
 Current production runtime metadata:
@@ -52,8 +56,12 @@ Current production runtime metadata:
 - build time: `2026-08-31T02:28:58Z`
 - previous production runtime `v0.10.0` on port `3002`: preserved
 - previous rollback runtime on port `3005`: preserved
-- release tag: `PENDING`
-- GitHub Release: `PENDING`
+- release tag: `v0.11.0`
+- release tag target SHA: `e3e9b3436f57a0354c7fed941140df468499d624`
+- GitHub Release: `published`
+- GitHub Release URL:
+  `https://github.com/MarlonMedellin/GanaConMerito/releases/tag/v0.11.0`
+- cleanup: `NOT_PERFORMED`
 - release closeout: `docs/05-ops/V0.11.0-PRODUCTION-CLOSEOUT-20260830.md`
 
 Runtime identity is composed from:
