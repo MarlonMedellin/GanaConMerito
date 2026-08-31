@@ -54,14 +54,20 @@ export default async function HomePage() {
               {primaryLabel}
             </Link>
             <Link href="/dashboard" className="secondary">
-              Ver mi diagnóstico
+              Ver mi progreso
             </Link>
           </div>
         </div>
 
         <article className="card hero-card">
           <p className="eyebrow">TU PRÓXIMA MEJOR ACCIÓN</p>
-          <h2>{priorityFocus ? `Refuerza ${formatTechnicalLabel(priorityFocus.row.competency)}` : "Empieza tu diagnóstico"}</h2>
+          <h2>
+            {priorityFocus ? (
+              <>Debo mejorar en <strong>{formatTechnicalLabel(priorityFocus.row.competency)}</strong></>
+            ) : (
+              "Empieza tu progreso"
+            )}
+          </h2>
           <p className="muted">
             {priorityFocus
               ? "Es el foco donde hoy puedes ganar más precisión."
@@ -77,7 +83,7 @@ export default async function HomePage() {
             </>
           ) : (
             <div className="actions">
-              <Link href="/practice" className="primary">Continuar práctica</Link>
+              <Link href="/practice" className="primary">Continuar mi preparación</Link>
             </div>
           )}
         </article>
@@ -101,7 +107,7 @@ export default async function HomePage() {
           <h3>Continúa tu preparación</h3>
           <p className="small">Practica para seguir identificando tus fortalezas y focos de mejora.</p>
           <Link href="/practice" className="primary compact-link">
-            Continuar práctica →
+            Continuar mi preparación →
           </Link>
         </article>
       </section>

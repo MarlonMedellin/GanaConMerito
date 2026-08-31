@@ -16,18 +16,31 @@ function getAccuracy(totalCorrect: number, totalAttempts: number) {
   return totalAttempts > 0 ? Number(((totalCorrect / totalAttempts) * 100).toFixed(1)) : 0;
 }
 
-export default async function DashboardPage() {
+interface DashboardPageProps {
+  searchParams?: Promise<{
+    sessionId?: string | string[];
+  }>;
+}
+
+export default async function DashboardPage({ searchParams }: DashboardPageProps) {
   await requireAuthenticatedUser();
+  const params = await searchParams;
+  const requestedSessionId = typeof params?.sessionId === "string" ? params.sessionId : undefined;
 
   const [summary, breakdown] = await Promise.all([
     getDashboardSummaryForCurrentUser(),
-    getDashboardTopicBreakdownForCurrentUser(),
+    getDashboardTopicBreakdownForCurrentUser(requestedSessionId),
   ]);
   const historicalAccuracy = getAccuracy(summary.historical.totalCorrect, summary.historical.totalAttempts);
-  const rows = breakdown.historical;
-  const strongestSignal = getStrongestSignal(rows);
-  const priorityFocus = getPriorityFocus(rows);
-  const mapRows = getPreparationMapRows(rows);
+  const strengthRows = requestedSessionId && breakdown.currentSession.length > 0
+    ? breakdown.currentSession
+    : breakdown.historical;
+  const strongestSignal = getStrongestSignal(strengthRows);
+  const priorityFocus = getPriorityFocus(breakdown.historical);
+  const mapRows = getPreparationMapRows(breakdown.historical);
+  const strengthLabel = requestedSessionId && breakdown.currentSession.length > 0
+    ? "FORTALEZA · ÚLTIMA PRÁCTICA"
+    : "FORTALEZA";
 
   return (
     <>
@@ -46,12 +59,12 @@ export default async function DashboardPage() {
           <span className="muted">{summary.historical.totalAttempts} intentos</span>
         </article>
         <article className="card metric">
-          <span className="eyebrow">MEJOR SEÑAL</span>
+          <span className="eyebrow">{strengthLabel}</span>
           <strong>{strongestSignal ? `${strongestSignal.percent}%` : "No disponible aún"}</strong>
           <span className="muted">{strongestSignal ? formatTechnicalLabel(strongestSignal.row.competency) : "sin evidencia suficiente"}</span>
         </article>
         <article className="card metric">
-          <span className="eyebrow">FOCO PRIORITARIO</span>
+          <span className="eyebrow">EN QUÉ DEBO MEJORAR · ACUMULADO HISTÓRICO</span>
           <strong>{priorityFocus ? `${priorityFocus.percent}%` : "Completa más práctica"}</strong>
           <span className="muted">{priorityFocus ? formatTechnicalLabel(priorityFocus.row.competency) : "sin evidencia suficiente"}</span>
         </article>
@@ -80,7 +93,7 @@ export default async function DashboardPage() {
           <p>
             Prioriza <strong>{priorityFocus ? formatTechnicalLabel(priorityFocus.row.competency) : "tu siguiente foco"}</strong> con feedback del Tutor AI 🤖.
           </p>
-          <Link href="/practice" className="primary compact-link">Entrenar este foco →</Link>
+          <Link href="/practice" className="primary compact-link">Practicar este foco →</Link>
         </article>
       </section>
     </>

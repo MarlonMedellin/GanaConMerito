@@ -5,14 +5,20 @@ const TECHNICAL_LABEL_DICTIONARY: Record<string, string> = {
   ciudadanas: "Ciudadanas",
   normatividad: "Normatividad",
   lectura_de_indicadores: "Lectura de indicadores",
-  gestion_academica: "Gestión académica",
-  planeacion_curricular: "Planeación curricular",
-  decision_pedagogica: "Decisión pedagógica",
-  gestion_educativa: "Gestión educativa",
 };
 
 function normalizeWhitespace(value: string) {
   return value.replace(/[\s_-]+/g, " ").trim();
+}
+
+function applySpanishAccentHints(value: string) {
+  return value
+    .replace(/\bgestion\b/g, "gestión")
+    .replace(/\bacademica\b/g, "académica")
+    .replace(/\bplaneacion\b/g, "planeación")
+    .replace(/\bdecision\b/g, "decisión")
+    .replace(/\bpedagogica\b/g, "pedagógica")
+    .replace(/\bmatematicas\b/g, "matemáticas");
 }
 
 function capitalizeSentence(value: string) {
@@ -32,7 +38,7 @@ export function formatTechnicalLabel(value?: string | null): string {
     return dictionaryValue;
   }
 
-  return capitalizeSentence(normalizeWhitespace(value));
+  return capitalizeSentence(applySpanishAccentHints(normalizeWhitespace(value).toLowerCase()));
 }
 
 export function formatAreaCompetency(area?: string | null, competency?: string | null): string {
