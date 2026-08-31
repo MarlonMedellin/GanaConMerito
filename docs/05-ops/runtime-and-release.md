@@ -20,7 +20,7 @@ Update trigger:
 > **Checkpoint V4 limpio:** la ruta `0029 → 0030` descrita en el historial queda
 > superseded para el futuro cutover V4. La baseline nueva `0001–0003` solo se
 > aplicará en un proyecto vacío con autorización separada. Producción no fue
-> modificada ni verificada por esta rama.
+> modificada ni verificada por esa rama histórica.
 
 # Objetivo
 
@@ -67,27 +67,38 @@ Application versioning:
 - Required records after merge/deploy: `FINAL_RELEASE_SHA`, runtime SHA and
   visual `ReleaseStamp` verification
 
-Snapshot operativo vigente para `v0.10.0` / V4.1:
-- Version: `0.10.0`
+Snapshot operativo vigente para `v0.11.0`:
+- Version: `0.11.0`
 - Release date: `2026-08-30`
-- Final release SHA: `fc0f9e62ca798a25f84d2c4dd8cfe76ca4040a01`
+- Final release SHA: `e3e9b3436f57a0354c7fed941140df468499d624`
 - Runtime publico: `https://ganaconmerito.com`
-- Runtime publico verificado: `fc0f9e62ca798a25f84d2c4dd8cfe76ca4040a01`
+- Runtime publico verificado: `e3e9b3436f57a0354c7fed941140df468499d624`
+- Runtime container: `gcm-canary-l2-e3e9b34`
+- Runtime port: `3006`
+- Build time: `2026-08-31T02:28:58Z`
 - ReleaseStamp: PASS
-- Public smoke: PASS
-- Authenticated smoke: NOT_AVAILABLE
+- Public runtime smoke: PASS
+- Authenticated smoke: PASS
+- Dashboard production: PASS
+- Desktop visual: PASS
+- Mobile visual: PASS
+- Tutor visible: PASS
+- OpenRouter visible LLM: false
 - V4 active count: 248
-- Content Sync: APPLIED_AND_VERIFIED
-- G6: GREEN_CANDIDATE
-- CAN-004: GREEN
-- Canary deploy: GREEN
-- Production promotion: GREEN
-- User exposure: true
-- Supabase mutation during promotion: false
-- Release tag: `v0.10.0`
-- GitHub Release: published
-- Rollback: runtime anterior preservado al momento de la promocion y disponible
-  como rollback inmediato
+- Canary deploy: PASS
+- Production promotion: PASS
+- Supabase product mutation during promotion: false
+- Supabase schema mutation during promotion: false
+- Supabase content mutation during promotion: false
+- Migrations during promotion: false
+- Content Sync during promotion: false
+- G6 during promotion: false
+- Release tag: `PENDING`
+- GitHub Release: `PENDING`
+- Old production runtime `v0.10.0` on `:3002`: preserved
+- Previous runtime on `:3005`: preserved
+- Rollback: available; cleanup reserved to a separate gate
+- Closeout evidence: `docs/05-ops/V0.11.0-PRODUCTION-CLOSEOUT-20260830.md`
 
 ---
 
@@ -104,7 +115,7 @@ sin evidencia mínima.
 
 Para Beta Candidate 0.6.0, la evidencia histórica en `fcc40cb`, `716ec62` u otros
 commits sirve como contexto de madurez historica. El estado vigente de produccion
-es `v0.10.0` sobre `fc0f9e62ca798a25f84d2c4dd8cfe76ca4040a01`.
+es `v0.11.0` sobre `e3e9b3436f57a0354c7fed941140df468499d624`.
 
 ---
 
@@ -183,7 +194,7 @@ posterior independiente.
 - la trazabilidad multiagente todavía no es enforcement obligatorio;
 - algunos cierres históricos mezclan repo y runtime;
 - la validación documental todavía depende de disciplina manual.
-- los cierres historicos pueden conservar referencias de commits anteriores; la validacion movil actual se realizo sobre `9695d40`.
+- los cierres historicos pueden conservar referencias de commits anteriores; la validacion movil histórica se realizó sobre `9695d40`.
 
 ---
 
