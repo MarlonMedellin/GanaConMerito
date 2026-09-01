@@ -5,6 +5,10 @@ import { buildTutorEvidence } from "@/lib/tutor/tutor-evidence-builder";
 import { DeterministicTutorProvider } from "@/lib/tutor/providers/deterministic-tutor-provider";
 import { runTutorShadow } from "@/lib/tutor/tutor-shadow-runner";
 import { persistTutorTurnTrace } from "@/lib/tutor/tutor-trace-repository";
+import { normalizeTutorConversation } from "@/lib/tutor/tutor-conversation";
+import { coordinateVisibleTutorTurn } from "@/lib/tutor/tutor-visible-coordinator";
+import { isTutorVisibleRequested } from "@/lib/tutor/tutor-candidate-policy";
+import { loadTutorBudgetSnapshot } from "@/lib/tutor/tutor-budget";
 
 const tutor = new DeterministicTutorProvider();
 
@@ -17,7 +21,8 @@ export async function POST(request: Request) {
     const body = await request.json();
     sessionId = typeof body.sessionId === "string" ? body.sessionId : "";
     itemId = typeof body.itemId === "string" ? body.itemId : "";
-    const userMessage = typeof body.message === "string" ? body.message.trim() : "";
+    const conversation = normalizeTutorConversation({ message: body.message, history: body.history });
+    const userMessage = conversation.currentMessage;
 
     if (!sessionId || !itemId || !userMessage) {
       return observedJson(observation, { error: "sessionId, itemId y message son obligatorios" }, {
@@ -53,9 +58,24 @@ export async function POST(request: Request) {
       sessionId,
       itemId,
       message: userMessage,
+      history: conversation.history,
       evidence,
     };
-    const result = await tutor.generate(tutorInput);
+    const deterministic = await tutor.generate(tutorInput);
+    const budget = isTutorVisibleRequested()
+      ? await loadTutorBudgetSnapshot({ supabase, profileId: profile.id, sessionId, itemId })
+      : undefined;
+    const coordinated = await coordinateVisibleTutorTurn({ input: tutorInput, deterministic, budget });
+    const result = coordinated.result;
+    if (conversation.reasons.length) {
+      const traceSignals = {
+        ...result.output.traceSignals,
+        fallbackReason: result.output.traceSignals?.fallbackReason ?? (conversation.rejected ? "history_normalized" : undefined),
+        conversationNormalization: conversation.reasons.join(","),
+      };
+      result.output.traceSignals = traceSignals as typeof result.output.traceSignals;
+      result.trace.traceSignals = traceSignals as typeof result.trace.traceSignals;
+    }
 
     const traceWrite = await persistTutorTurnTrace({
       profileId: profile.id,
@@ -71,7 +91,9 @@ export async function POST(request: Request) {
       }));
     }
 
-    after(() => runTutorShadow({ input: tutorInput, deterministic: result }));
+    if (coordinated.shouldRunShadow) {
+      after(() => runTutorShadow({ input: tutorInput, deterministic: result }));
+    }
 
     return observedJson(observation, result, {
       status: 200,

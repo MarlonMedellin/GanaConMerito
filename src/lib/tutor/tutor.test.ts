@@ -163,6 +163,25 @@ test("TutorOrchestrator maps post-answer feedback phrasing to explain_feedback i
   assert.match(result.output.visibleMessage, /puntaje oficial/i);
 });
 
+test("TutorOrchestrator uses answered state for a generic post-answer follow-up", async () => {
+  const result = await new TutorOrchestrator().processTurn(
+    makeInput("Dame otra forma de entenderlo", {
+      ...baseEvidence,
+      userSession: {
+        ...baseEvidence.userSession,
+        selectedOption: "A",
+        feedback: "La elección no atendió el criterio principal.",
+      },
+    }),
+  );
+
+  assert.strictEqual(result.output.mode, "post_answer_feedback");
+  assert.strictEqual(result.output.canRevealCorrectAnswer, true);
+  assert.match(result.output.visibleMessage, /clave registrada es B|opción correcta registrada es B/i);
+  assert.ok(result.output.guardrailsApplied.includes("no_score_mutation"));
+  assert.ok(result.output.guardrailsApplied.includes("no_session_advance"));
+});
+
 test("TutorOrchestrator keeps guided actions compatible with current intent detection", async () => {
   const hint = await new TutorOrchestrator().processTurn(makeInput("Dame una pista"));
   assert.strictEqual(hint.output.intent, "give_hint");

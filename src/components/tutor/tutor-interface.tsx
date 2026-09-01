@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { buildClientTutorHistory } from "@/lib/tutor/tutor-conversation";
 
 interface TutorInterfaceProps {
   sessionId: string;
@@ -32,7 +33,7 @@ export function getTutorGuidedActions(answered: boolean) {
   ];
 }
 
-export function TutorInterface({ sessionId, currentItemId, fallbackMessage }: TutorInterfaceProps) {
+export function TutorInterface({ sessionId, currentItemId, answered = false, fallbackMessage }: TutorInterfaceProps) {
   const [draft, setDraft] = useState("");
   const [messages, setMessages] = useState<TutorMessage[]>([{ role: "assistant", text: initialTutorMessage }]);
   const [loading, setLoading] = useState(false);
@@ -67,20 +68,20 @@ export function TutorInterface({ sessionId, currentItemId, fallbackMessage }: Tu
     chatRef.current?.scrollTo({ top: chatRef.current.scrollHeight });
   }, [messages]);
 
-  async function handleSendMessage(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const message = draft.trim();
+  async function sendTutorMessage(rawMessage: string) {
+    const message = rawMessage.trim();
     if (!message || loading) return;
 
     setLoading(true);
     setError(null);
+    const history = buildClientTutorHistory(messages);
     setMessages((current) => [...current, { role: "user", text: message }]);
 
     try {
       const response = await fetch("/api/tutor/turn", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ sessionId, itemId: currentItemId, message }),
+        body: JSON.stringify({ sessionId, itemId: currentItemId, message, history }),
       });
       const data = await response.json();
 
@@ -99,6 +100,13 @@ export function TutorInterface({ sessionId, currentItemId, fallbackMessage }: Tu
     }
   }
 
+  async function handleSendMessage(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    await sendTutorMessage(draft);
+  }
+
+  const guidedActions = getTutorGuidedActions(answered);
+
   return (
     <section className="card tutor-panel" data-testid="tutor-gcm-panel" aria-label="Tutor AI">
       <p className="eyebrow">TUTOR AI 🤖</p>
@@ -108,6 +116,19 @@ export function TutorInterface({ sessionId, currentItemId, fallbackMessage }: Tu
           <div key={`${message.role}-${index}`} className={message.role === "assistant" ? "tutor-message" : "user-message"}>
             {message.text}
           </div>
+        ))}
+      </div>
+      <div className="tutor-guided-actions" aria-label="Acciones del Tutor AI">
+        {guidedActions.map((action) => (
+          <button
+            key={action}
+            type="button"
+            className="secondary tutor-action"
+            onClick={() => sendTutorMessage(action)}
+            disabled={loading}
+          >
+            {action}
+          </button>
         ))}
       </div>
       <form className="tutor-input" onSubmit={handleSendMessage} data-testid="tutor-gcm-form">
