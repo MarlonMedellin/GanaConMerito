@@ -1,7 +1,7 @@
 ---
 id: PRD-CONSOLE-AUTOMATION-RUNNERS
 name: console-automation-runners
-status: implementation-v1
+status: validated-v1
 artifact_type: prd
 modules: [quality, delivery, operations, tutor, content]
 owner: GanaConMerito
@@ -86,7 +86,7 @@ Los gates deben terminar con líneas `KEY=value` y código `0` para PASS o disti
 
 ## Integración CI
 
-`pr-checks.yml` ejecutará `runner/gcm-runner-selftest.sh`. El workflow existente continúa siendo la autoridad para Supabase aislado, contenido, lint, unit tests, build, runtime smoke y Docker build.
+`pr-checks.yml` ejecuta `runner/gcm-runner-selftest.sh`. El workflow existente continúa siendo la autoridad para Supabase aislado, contenido, lint, unit tests, build, runtime smoke y Docker build.
 
 ## Criterios de aceptación V1
 
@@ -97,6 +97,19 @@ Los gates deben terminar con líneas `KEY=value` y código `0` para PASS o disti
 - ninguna clave o secreto se imprime.
 - CI conserva sus gates actuales y añade self-test de runners.
 
+## Evidencia de validación
+
+GitHub Actions `PR Checks` run `33532685380` finalizó en `success` para el HEAD `1c37aac34bddce915e564ee3f6ebec10e81eb13a` del PR #130. Pasaron el self-test de runners, Supabase aislado y reset de migraciones, validaciones de contenido, lint, unit tests, build, production runtime smoke y build reproducible de Docker.
+
+Los cambios documentales posteriores deben volver a pasar CI en el nuevo HEAD antes del merge.
+
+## Operación
+
+La política de uso diario, orden por fase, variables opt-in y reglas de seguridad está en `docs/05-ops/console-automation-runners.md`.
+
 ## Evolución posterior
 
 V2 podrá incorporar servidor local administrado por PID, auth-state Playwright, regresión visual, RLS multiusuario, secret scanning, release evidence pack, inspección de rollback y selección de pruebas basada en un manifiesto declarativo.
+
+Agent: ChatGPT Web
+Model: GPT-5.6 Sol
