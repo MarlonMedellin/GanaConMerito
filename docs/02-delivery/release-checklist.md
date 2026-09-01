@@ -2,7 +2,7 @@
 
 Status: canonical
 Owner: Release Owner
-Last reviewed: 2026-08-30
+Last reviewed: 2026-09-01
 Related files:
 - `VERSION.json`
 - `docs/02-delivery/versioning-and-releases.md`
@@ -65,3 +65,24 @@ Residual operativo: contenedores historicos en `:3003` y `:3004` fueron preserva
 11. Retirar rollback en gate separado cuando la nueva produccion este suficientemente validada.
 
 No repetir tests, sync, G6, migraciones o deploys si el cambio no los afecta.
+
+## Candidata v0.12.0 - metadata preparada
+
+- VERSION=`0.12.0`
+- RELEASE_DATE=`2026-09-01`
+- RELEASE_STATUS=`CANDIDATE_METADATA`
+- SOURCE_PR=`#128`
+- SOURCE_PR_MERGED=`true`
+- CODE_BASELINE_SHA=`3f2b18a981328f3deaaea41fad869c8cd88a77a5`
+- PRODUCTION_VERSION_REMAINS=`0.11.0`
+- CI=`PENDING`
+- CANARY=`PENDING`
+- PRODUCTION_PROMOTION=`PENDING`
+- RELEASE_TAG=`PENDING`
+- GITHUB_RELEASE=`PENDING`
+- MIGRATIONS=`NO`
+- CONTENT_SYNC=`NO`
+- G6=`NO`
+- SUPABASE_REMOTE_CHANGE=`NO`
+
+Esta seccion prepara metadata candidata. No declara v0.12.0 desplegada, publicada, cerrada ni promovida a produccion.
