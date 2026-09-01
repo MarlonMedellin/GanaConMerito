@@ -16,21 +16,6 @@ const protectedObjects = [
   "v_question_bank_v4_active", "v_question_bank_v4_practice", "v_question_bank_v4_answered",
 ];
 
-interface PrivilegeRow {
-  can_select: boolean;
-  can_insert: boolean;
-  can_update: boolean;
-  can_delete: boolean;
-}
-
-interface FunctionPrivilegeRow {
-  prosecdef: boolean;
-  proconfig: string[] | null;
-  anon_execute: boolean;
-  authenticated_execute: boolean;
-  service_execute: boolean;
-}
-
 async function expectDenied(client: Client, role: string, sql: string) {
   await client.query("begin");
   try {
@@ -55,7 +40,7 @@ async function main() {
         has_table_privilege(role_name, format('public.%I', object_name), 'UPDATE') as can_update,
         has_table_privilege(role_name, format('public.%I', object_name), 'DELETE') as can_delete
       from unnest($1::text[]) role_name cross join unnest($2::text[]) object_name
-    `, [roles, protectedObjects]) as { rows: PrivilegeRow[] };
+    `, [roles, protectedObjects]);
     assert.equal(privileges.rows.every((row) => !row.can_select && !row.can_insert && !row.can_update && !row.can_delete), true);
 
     for (const role of roles) {
@@ -71,7 +56,7 @@ async function main() {
         has_function_privilege('service_role', p.oid, 'EXECUTE') as service_execute
       from pg_proc p join pg_namespace n on n.oid = p.pronamespace
       where n.nspname = 'public' and p.proname in ('advance_session_atomic', 'apply_content_sync', 'verify_content_sync')
-    `) as { rows: FunctionPrivilegeRow[] };
+    `);
     assert.equal(functions.rows.length, 3);
     assert.equal(functions.rows.every((row) => row.prosecdef && row.proconfig?.includes("search_path=public, pg_temp")), true);
     assert.equal(functions.rows.every((row) => !row.anon_execute && !row.authenticated_execute && row.service_execute), true);

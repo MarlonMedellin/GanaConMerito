@@ -1,8 +1,8 @@
 import { hasQuestionEvidence } from "../../domain/tutor/contract";
 import type { TutorTurnRequest, TutorTurnResult, TutorTraceSignals } from "../../types/tutor-turn";
-import { APPROVED_OPENROUTER_MODEL, getOpenRouterVisibleConfig, OpenRouterProvider } from "./providers/openrouter-provider";
+import { APPROVED_OPENROUTER_MODEL, buildMinimizedShadowDossier, getOpenRouterVisibleConfig, OpenRouterProvider } from "./providers/openrouter-provider";
 import type { TutorProvider, TutorShadowExecution } from "./providers/tutor-provider";
-import { evaluateTutorCandidatePolicy, type TutorCandidateBudgetSnapshot } from "./tutor-candidate-policy";
+import { evaluateTutorCandidatePolicy, isTutorVisibleRequested, type TutorCandidateBudgetSnapshot } from "./tutor-candidate-policy";
 
 export interface TutorVisibleCoordinatorResult {
   result: TutorTurnResult;
@@ -17,10 +17,10 @@ export async function coordinateVisibleTutorTurn(params: {
   budget?: TutorCandidateBudgetSnapshot;
 }): Promise<TutorVisibleCoordinatorResult> {
   const config = getOpenRouterVisibleConfig(params.env);
-  const visibleRequested = params.env?.GCM_TUTOR_LLM_VISIBLE === "1" || (!params.env && process.env.GCM_TUTOR_LLM_VISIBLE === "1");
+  const visibleRequested = isTutorVisibleRequested(params.env);
   const shadowEnabled = params.env?.GCM_TUTOR_LLM_SHADOW === "1" || (!params.env && process.env.GCM_TUTOR_LLM_SHADOW === "1");
 
-  if (!config && !params.provider) {
+  if (!visibleRequested || (!config && !params.provider)) {
     return {
       result: withLlmTrace(params.deterministic, {
         deliveryProvider: "deterministic",
@@ -49,7 +49,12 @@ export async function coordinateVisibleTutorTurn(params: {
   }
 
   const provider = params.provider ?? new OpenRouterProvider(config!);
-  const execution = await provider.generate(params.input);
+  let execution: TutorShadowExecution;
+  try {
+    execution = await provider.generate(params.input);
+  } catch {
+    execution = { status: "failed", latencyMs: 0, errorCode: "provider_exception" };
+  }
   const policy = evaluateTutorCandidatePolicy({
     input: params.input,
     intent: params.deterministic.output.intent,
@@ -100,8 +105,9 @@ function getEligibilityFallbackReason(params: {
 }) {
   if (params.deterministic.output.degraded) return "deterministic_degraded";
   if (!hasQuestionEvidence(params.input.evidence)) return "missing_question_evidence";
-  if (JSON.stringify(params.input.evidence).length > 12_000) return "dossier_size_limit";
+  if (JSON.stringify(buildMinimizedShadowDossier(params.input)).length > 12_000) return "dossier_size_limit";
   if (estimateTokens(params.input) > 4_000) return "input_token_limit";
+  if (!params.budget?.budgetAvailable) return "budget_unavailable";
   if ((params.budget?.itemAttempts ?? 0) >= 8) return "item_attempt_limit";
   if ((params.budget?.userAttemptsInWindow ?? 0) >= 20) return "user_rate_limit";
   if ((params.budget?.sessionCostUsd ?? 0) >= 0.20) return "session_budget_exceeded";

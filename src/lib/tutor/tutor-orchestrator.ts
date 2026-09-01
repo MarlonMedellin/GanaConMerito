@@ -7,7 +7,7 @@ export class TutorOrchestrator {
   public async processTurn(input: TutorTurnRequest): Promise<TutorTurnResult> {
     const traceId = crypto.randomUUID();
     const createdAt = new Date().toISOString();
-    const mode = detectTutorMode(input.message);
+    const mode = detectTutorMode(input.message, hasUserAnswered(input.evidence));
     const intent = detectTutorIntent(input.message);
 
     if (!validateTutorTurnRequest(input)) {

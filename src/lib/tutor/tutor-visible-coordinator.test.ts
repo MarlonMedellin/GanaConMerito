@@ -68,6 +68,15 @@ function acceptedProvider(message = "Mensaje LLM gobernado."): TutorProvider<Tut
   };
 }
 
+function providerWithExecution(execution: TutorShadowExecution): TutorProvider<TutorShadowExecution> {
+  return {
+    name: "openrouter",
+    async generate() {
+      return execution;
+    },
+  };
+}
+
 test("visible accepted replaces only visibleMessage and keeps deterministic authority metadata", async () => {
   const turnInput = input();
   const deterministic = await new TutorOrchestrator().processTurn(turnInput);
@@ -76,7 +85,7 @@ test("visible accepted replaces only visibleMessage and keeps deterministic auth
     deterministic,
     provider: acceptedProvider(),
     env: { GCM_TUTOR_LLM_VISIBLE: "1" },
-    budget: { itemAttempts: 0, userAttemptsInWindow: 0, sessionCostUsd: 0 },
+    budget: { budgetAvailable: true, itemAttempts: 0, userAttemptsInWindow: 0, sessionCostUsd: 0 },
   });
   assert.equal(coordinated.result.output.visibleMessage, "Mensaje LLM gobernado.");
   assert.equal(coordinated.result.output.intent, deterministic.output.intent);
@@ -88,13 +97,22 @@ test("visible accepted replaces only visibleMessage and keeps deterministic auth
 test("visible disabled uses deterministic and permits shadow once", async () => {
   const turnInput = input();
   const deterministic = await new TutorOrchestrator().processTurn(turnInput);
+  let calls = 0;
   const coordinated = await coordinateVisibleTutorTurn({
     input: turnInput,
     deterministic,
+    provider: {
+      name: "openrouter",
+      async generate() {
+        calls += 1;
+        return acceptedProvider().generate(turnInput);
+      },
+    },
     env: { GCM_TUTOR_LLM_SHADOW: "1" },
   });
   assert.equal(coordinated.result.output.visibleMessage, deterministic.output.visibleMessage);
   assert.equal(coordinated.result.output.traceSignals?.llmMode, "shadow");
+  assert.equal(calls, 0);
   assert.equal(coordinated.shouldRunShadow, true);
 });
 
@@ -120,7 +138,7 @@ test("visible suppresses shadow and falls back on unsafe output", async () => {
     deterministic,
     provider: acceptedProvider("La propuesta B representa mejor el caso."),
     env: { GCM_TUTOR_LLM_VISIBLE: "1", GCM_TUTOR_LLM_SHADOW: "1" },
-    budget: { itemAttempts: 0, userAttemptsInWindow: 0, sessionCostUsd: 0 },
+    budget: { budgetAvailable: true, itemAttempts: 0, userAttemptsInWindow: 0, sessionCostUsd: 0 },
   });
   assert.equal(coordinated.result.output.visibleMessage, deterministic.output.visibleMessage);
   assert.equal(coordinated.result.output.traceSignals?.deliveryProvider, "deterministic");
@@ -142,7 +160,7 @@ test("visible falls back for resilience and budget gates", async () => {
     deterministic,
     provider: failedProvider,
     env: { GCM_TUTOR_LLM_VISIBLE: "1" },
-    budget: { itemAttempts: 0, userAttemptsInWindow: 0, sessionCostUsd: 0 },
+    budget: { budgetAvailable: true, itemAttempts: 0, userAttemptsInWindow: 0, sessionCostUsd: 0 },
   });
   assert.equal(failed.result.output.visibleMessage, deterministic.output.visibleMessage);
   assert.equal(failed.result.output.traceSignals?.fallbackReason, "network_or_timeout");
@@ -152,7 +170,107 @@ test("visible falls back for resilience and budget gates", async () => {
     deterministic,
     provider: acceptedProvider(),
     env: { GCM_TUTOR_LLM_VISIBLE: "1" },
-    budget: { itemAttempts: 8, userAttemptsInWindow: 0, sessionCostUsd: 0 },
+    budget: { budgetAvailable: true, itemAttempts: 8, userAttemptsInWindow: 0, sessionCostUsd: 0 },
   });
   assert.equal(limited.result.output.traceSignals?.fallbackReason, "item_attempt_limit");
+});
+
+test("provider exception returns deterministic with safe fallback reason", async () => {
+  const turnInput = input();
+  const deterministic = await new TutorOrchestrator().processTurn(turnInput);
+  const coordinated = await coordinateVisibleTutorTurn({
+    input: turnInput,
+    deterministic,
+    provider: {
+      name: "openrouter",
+      async generate() {
+        throw new Error("provider exploded");
+      },
+    },
+    env: { GCM_TUTOR_LLM_VISIBLE: "1", GCM_TUTOR_LLM_SHADOW: "1" },
+    budget: { budgetAvailable: true, itemAttempts: 0, userAttemptsInWindow: 0, sessionCostUsd: 0 },
+  });
+  assert.equal(coordinated.result.output.visibleMessage, deterministic.output.visibleMessage);
+  assert.equal(coordinated.result.output.traceSignals?.llmStatus, "failed");
+  assert.equal(coordinated.result.output.traceSignals?.fallbackReason, "provider_exception");
+  assert.equal(coordinated.shouldRunShadow, false);
+});
+
+test("budget unavailable fails closed before provider invocation", async () => {
+  const turnInput = input();
+  const deterministic = await new TutorOrchestrator().processTurn(turnInput);
+  let calls = 0;
+  const coordinated = await coordinateVisibleTutorTurn({
+    input: turnInput,
+    deterministic,
+    provider: {
+      name: "openrouter",
+      async generate() {
+        calls += 1;
+        return acceptedProvider().generate(turnInput);
+      },
+    },
+    env: { GCM_TUTOR_LLM_VISIBLE: "1" },
+    budget: { budgetAvailable: false, itemAttempts: 0, userAttemptsInWindow: 0, sessionCostUsd: 0 },
+  });
+  assert.equal(calls, 0);
+  assert.equal(coordinated.result.output.visibleMessage, deterministic.output.visibleMessage);
+  assert.equal(coordinated.result.output.traceSignals?.fallbackReason, "budget_unavailable");
+});
+
+test("visible failure matrix always returns deterministic message", async () => {
+  const cases: Array<{ reason: string; execution: TutorShadowExecution }> = [
+    { reason: "requires_deterministic_fallback", execution: await acceptedProvider().generate(input()) },
+    { reason: "uncertainty_insufficient", execution: await acceptedProvider().generate(input()) },
+    { reason: "circuit_open", execution: { status: "failed", latencyMs: 0, errorCode: "circuit_open" } },
+    { reason: "invalid_or_unsafe_output", execution: { status: "rejected", latencyMs: 0, errorCode: "invalid_or_unsafe_output" } },
+    { reason: "http_429", execution: { status: "failed", latencyMs: 0, errorCode: "http_429" } },
+    { reason: "http_503", execution: { status: "failed", latencyMs: 0, errorCode: "http_503" } },
+    { reason: "network_or_timeout", execution: { status: "failed", latencyMs: 0, errorCode: "network_or_timeout" } },
+    { reason: "source_reference_mismatch", execution: await acceptedProvider().generate(input()) },
+  ];
+  cases[0].execution.output!.requiresDeterministicFallback = true;
+  cases[1].execution.output!.uncertainty = "insufficient";
+  cases[7].execution.output!.sourceCitationsUsed = [{ sourceId: "source-1", reference: "Otra fuente" }];
+
+  for (const testCase of cases) {
+    const turnInput = input();
+    const deterministic = await new TutorOrchestrator().processTurn(turnInput);
+    const coordinated = await coordinateVisibleTutorTurn({
+      input: turnInput,
+      deterministic,
+      provider: providerWithExecution(testCase.execution),
+      env: { GCM_TUTOR_LLM_VISIBLE: "1" },
+      budget: { budgetAvailable: true, itemAttempts: 0, userAttemptsInWindow: 0, sessionCostUsd: 0 },
+    });
+    assert.equal(coordinated.result.output.visibleMessage, deterministic.output.visibleMessage);
+    assert.equal(coordinated.result.output.traceSignals?.fallbackReason, testCase.reason);
+  }
+});
+
+test("visible checks real minimized dossier size before provider invocation", async () => {
+  const longInput = input("Dame una pista", {
+    question: {
+      ...evidence.question!,
+      context: "x".repeat(12_500),
+    },
+  });
+  const deterministic = await new TutorOrchestrator().processTurn(longInput);
+  let calls = 0;
+  const coordinated = await coordinateVisibleTutorTurn({
+    input: longInput,
+    deterministic,
+    provider: {
+      name: "openrouter",
+      async generate() {
+        calls += 1;
+        return acceptedProvider().generate(longInput);
+      },
+    },
+    env: { GCM_TUTOR_LLM_VISIBLE: "1" },
+    budget: { budgetAvailable: true, itemAttempts: 0, userAttemptsInWindow: 0, sessionCostUsd: 0 },
+  });
+  assert.equal(calls, 0);
+  assert.equal(coordinated.result.output.visibleMessage, deterministic.output.visibleMessage);
+  assert.equal(coordinated.result.output.traceSignals?.fallbackReason, "dossier_size_limit");
 });

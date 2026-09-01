@@ -45,3 +45,26 @@ test("client history excludes the initial greeting and keeps recent messages onl
     { role: "assistant", content: "Pista segura" },
   ]);
 });
+
+test("third guided turn sends the prior two exchanges as bounded history", () => {
+  const history = buildClientTutorHistory([
+    { role: "assistant", text: "Tutor AI 🤖: Antes de responderte, te ayudaré a pensar." },
+    { role: "user", text: "Dame una pista" },
+    { role: "assistant", text: "Pista segura sobre la tarea esperada." },
+    { role: "user", text: "No entendí esa parte" },
+    { role: "assistant", text: "Separaremos el contexto del enunciado." },
+  ]);
+  const thirdRequest = normalizeTutorConversation({
+    message: "Explícamelo de otra forma",
+    history,
+  });
+
+  assert.equal(thirdRequest.currentMessage, "Explícamelo de otra forma");
+  assert.deepEqual(thirdRequest.history, [
+    { role: "user", content: "Dame una pista" },
+    { role: "assistant", content: "Pista segura sobre la tarea esperada." },
+    { role: "user", content: "No entendí esa parte" },
+    { role: "assistant", content: "Separaremos el contexto del enunciado." },
+  ]);
+  assert.equal(thirdRequest.rejected, false);
+});
