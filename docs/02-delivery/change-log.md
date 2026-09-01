@@ -14,6 +14,19 @@ last_reviewed: 2026-08-30
 
 Este archivo conserva solo los cambios recientes que afectan el estado vigente. La historia completa permanece en Git, PRs, tags y GitHub Releases.
 
+## 2026-09-01 - v0.12.0 candidata de release
+
+- Tipo: `release-candidate-metadata`.
+- Version candidata: `0.12.0`.
+- Release date candidata: `2026-09-01`.
+- Source PR: `#128`, ya fusionado.
+- Baseline de codigo: `3f2b18a981328f3deaaea41fad869c8cd88a77a5`.
+- Produccion vigente: `0.11.0`.
+- CI, Canary, produccion, tag y GitHub Release: pendientes.
+- No hubo deploy.
+- Sin migraciones, Content Sync, G6 ni cambios Supabase.
+- Sin cambios en Content V4 ni manifiesto.
+
 ## 2026-08-30 - v0.11.0 cerrada y publicada
 
 - Tipo: `release+frontend+runtime`.

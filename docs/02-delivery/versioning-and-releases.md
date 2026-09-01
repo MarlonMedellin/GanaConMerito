@@ -2,7 +2,7 @@
 
 Status: canonical
 Owner: Release Owner
-Last reviewed: 2026-08-30
+Last reviewed: 2026-09-01
 Related files:
 - `VERSION.json`
 - `src/lib/app-version.ts`
@@ -41,6 +41,21 @@ No crear una segunda constante editable de version. `package.json.version` no es
 - Rollback `:3005`: retirado.
 
 El inventario del host todavia reporto contenedores historicos en `:3003` y `:3004`; no forman parte de la produccion verificada y requieren clasificacion antes de eliminarlos.
+
+## Candidata v0.12.0
+
+- Version candidata: `0.12.0`.
+- Release date candidata: `2026-09-01`.
+- Source PR funcional: `#128`, ya fusionado.
+- Baseline de codigo revisado: `3f2b18a981328f3deaaea41fad869c8cd88a77a5`.
+- Estado: `CANDIDATE_METADATA_PREPARED`.
+- Produccion vigente: `0.11.0` hasta completar promocion.
+- CI: pendiente de PR de metadata candidata.
+- Canary: pendiente.
+- Produccion: pendiente; no desplegada.
+- Tag: pendiente; no creado.
+- GitHub Release: pendiente; no creada.
+- Sin migraciones, Content Sync, G6 ni cambios Supabase.
 
 ## Semantic Versioning
 
