@@ -1,6 +1,7 @@
 import { z } from "zod";
 import type { TutorTurnRequest } from "../../../types/tutor-turn";
 import type { TutorProvider, TutorShadowExecution, TutorShadowOutput } from "./tutor-provider";
+export { validateShadowSafety } from "../tutor-candidate-policy";
 
 const SHADOW_SCHEMA_VERSION = "tutor-shadow-v1" as const;
 export const APPROVED_OPENROUTER_MODEL = "openai/gpt-4o-2024-08-06";
@@ -156,41 +157,12 @@ export function buildMinimizedShadowDossier(input: TutorTurnRequest) {
       noSessionMutation: true,
       noNormativeInvention: true,
     },
+    history: input.history?.map((message) => ({
+      role: message.role,
+      content: redactUserText(message.content),
+    })).slice(-6),
   };
   return dossier;
-}
-
-function hasPreAnswerOptionLeak(message: string) {
-  const optionReference = String.raw`(?:opci[oó]n|alternativa|propuesta)\s+([A-D])`;
-  const directCorrect = new RegExp(String.raw`(?:clave|opci[oó]n correcta|respuesta correcta)\s*(?:es|:)\s*[A-D]`, "i");
-  const optionIsRanked = new RegExp(String.raw`${optionReference}\s+(?:es|ser[ií]a|resulta)\s+(?:la\s+)?(?:m[aá]s\s+)?(?:correcta|adecuada|pertinente|conveniente|apropiada|preferible|recomendable|mejor)`, "i");
-  const optionRepresentsBest = new RegExp(String.raw`${optionReference}\s+(?:representa|responde|refleja|encarna)\s+mejor\b`, "i");
-  const bestIsOption = new RegExp(String.raw`(?:la\s+)?(?:m[aá]s\s+)?(?:correcta|adecuada|pertinente|conveniente|apropiada|preferible|recomendable|mejor)\s+(?:es|ser[ií]a|resulta)\s+(?:la\s+)?${optionReference}`, "i");
-  return directCorrect.test(message) || optionIsRanked.test(message) || optionRepresentsBest.test(message) || bestIsOption.test(message);
-}
-
-export function validateShadowSafety(output: TutorShadowOutput, input: TutorTurnRequest) {
-  const availableEvidence = new Set<string>(TUTOR_SHADOW_EVIDENCE_KEYS);
-  if (output.evidenceKeys.some((key) => !availableEvidence.has(key))) return { ok: false as const, reason: "unknown_evidence_key" };
-  const sourceEvidence = minimizedSourceEvidence(input);
-  const sourcesById = new Map(sourceEvidence.map((source) => [source.sourceId, source]));
-  for (const sourceId of output.sourceIdsUsed ?? []) {
-    if (!sourcesById.has(sourceId)) return { ok: false as const, reason: "invented_source_id" };
-  }
-  for (const citation of output.sourceCitationsUsed ?? []) {
-    const source = sourcesById.get(citation.sourceId);
-    if (!source) return { ok: false as const, reason: "invented_source_id" };
-    if (source.reference !== citation.reference) return { ok: false as const, reason: "source_reference_mismatch" };
-  }
-  for (const claim of output.sourceClaims ?? []) {
-    const source = sourcesById.get(claim.sourceId);
-    if (!source) return { ok: false as const, reason: "invented_source_id" };
-    if (claim.claim === "presented_as_current" && source.knowledgeLevel === "F") return { ok: false as const, reason: "historical_source_misuse" };
-  }
-  if (!input.evidence.userSession.selectedOption && hasPreAnswerOptionLeak(output.visibleMessage)) {
-    return { ok: false as const, reason: "pre_answer_leak" };
-  }
-  return { ok: true as const };
 }
 
 export class OpenRouterProvider implements TutorProvider<TutorShadowExecution> {
@@ -254,10 +226,6 @@ export class OpenRouterProvider implements TutorProvider<TutorShadowExecution> {
         if (!parsed.success) {
           return this.fail(startedAt, "invalid_or_unsafe_output", "rejected");
         }
-        const safety = validateShadowSafety(parsed.data, input);
-        if (!safety.ok) {
-          return this.fail(startedAt, safety.reason, "rejected");
-        }
         consecutiveFailures = 0;
         circuitOpenedAt = 0;
         return {
@@ -285,6 +253,15 @@ export class OpenRouterProvider implements TutorProvider<TutorShadowExecution> {
 
 export function getOpenRouterShadowConfig(env: Record<string, string | undefined> = process.env): OpenRouterConfig | null {
   if (env.GCM_TUTOR_LLM_SHADOW !== "1") return null;
+  return getApprovedOpenRouterConfig(env);
+}
+
+export function getOpenRouterVisibleConfig(env: Record<string, string | undefined> = process.env): OpenRouterConfig | null {
+  if (env.GCM_TUTOR_LLM_VISIBLE !== "1") return null;
+  return getApprovedOpenRouterConfig(env);
+}
+
+function getApprovedOpenRouterConfig(env: Record<string, string | undefined>): OpenRouterConfig | null {
   if (!env.OPENROUTER_API_KEY || !env.OPENROUTER_MODEL || !env.OPENROUTER_PROVIDER) return null;
   if (env.OPENROUTER_MODEL !== APPROVED_OPENROUTER_MODEL) return null;
   if (env.OPENROUTER_PROVIDER !== APPROVED_OPENROUTER_PROVIDER) return null;

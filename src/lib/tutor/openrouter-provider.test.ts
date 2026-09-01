@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import type { TutorTurnRequest } from "../../types/tutor-turn";
-import { APPROVED_OPENROUTER_MODEL, APPROVED_OPENROUTER_PROVIDER, buildMinimizedShadowDossier, getOpenRouterShadowConfig, OpenRouterProvider, resetOpenRouterCircuitForTests } from "./providers/openrouter-provider";
+import { APPROVED_OPENROUTER_MODEL, APPROVED_OPENROUTER_PROVIDER, buildMinimizedShadowDossier, getOpenRouterShadowConfig, getOpenRouterVisibleConfig, OpenRouterProvider, resetOpenRouterCircuitForTests, validateShadowSafety } from "./providers/openrouter-provider";
 
 const input: TutorTurnRequest = {
   userId: "private-user-id",
@@ -130,26 +130,32 @@ test("OpenRouter request fixes provider privacy controls and strict schema", asy
   assert.equal(requestBody.tools, undefined);
 });
 
-test("unsafe pre-answer output is rejected and shadow stays opt-in", async () => {
+test("unsafe pre-answer output is schema-valid but rejected by candidate safety", async () => {
   resetOpenRouterCircuitForTests();
+  const unsafeOutput = {
+    schemaVersion: "tutor-shadow-v1" as const,
+    visibleMessage: "La respuesta correcta es B",
+    pedagogicalAction: "hint" as const,
+    evidenceKeys: ["question", "source_evidence"],
+    sourceIdsUsed: ["col-decreto-1290-evaluacion-estudiantes"],
+    sourceCitationsUsed: [{ sourceId: "col-decreto-1290-evaluacion-estudiantes", reference: "Decreto 1290 de 2009" }],
+    sourceClaims: [{ sourceId: "col-decreto-1290-evaluacion-estudiantes", claim: "used_as_evidence" as const }],
+    uncertainty: "none" as const,
+    requiresDeterministicFallback: false,
+  };
   const fetchMock = async () => new Response(JSON.stringify({
-    choices: [{ message: { content: JSON.stringify({
-      schemaVersion: "tutor-shadow-v1",
-      visibleMessage: "La respuesta correcta es B",
-      pedagogicalAction: "feedback",
-      evidenceKeys: ["question", "source_evidence"],
-      sourceIdsUsed: ["col-decreto-1290-evaluacion-estudiantes"],
-      sourceCitationsUsed: [{ sourceId: "col-decreto-1290-evaluacion-estudiantes", reference: "Decreto 1290 de 2009" }],
-      sourceClaims: [{ sourceId: "col-decreto-1290-evaluacion-estudiantes", claim: "used_as_evidence" }],
-      uncertainty: "none",
-      requiresDeterministicFallback: false,
-    }) } }],
+    choices: [{ message: { content: JSON.stringify(unsafeOutput) } }],
   }), { status: 200, headers: { "Content-Type": "application/json" } });
   const provider = new OpenRouterProvider(
     { apiKey: "test-secret", model: "approved/model", provider: "approved-provider" },
     fetchMock as typeof fetch,
   );
-  assert.equal((await provider.generate(input)).status, "rejected");
+  const result = await provider.generate(input);
+  assert.equal(result.status, "accepted");
+  assert.deepEqual(validateShadowSafety(unsafeOutput, input), { ok: false, reason: "pre_answer_leak" });
+});
+
+test("OpenRouter shadow and visible config are independently opt-in", () => {
   assert.equal(getOpenRouterShadowConfig({}), null);
   assert.equal(getOpenRouterShadowConfig({ GCM_TUTOR_LLM_SHADOW: "1", OPENROUTER_API_KEY: "x" }), null);
   assert.equal(getOpenRouterShadowConfig({
@@ -168,9 +174,25 @@ test("unsafe pre-answer output is rejected and shadow stays opt-in", async () =>
     model: APPROVED_OPENROUTER_MODEL,
     provider: APPROVED_OPENROUTER_PROVIDER,
   });
+  assert.equal(getOpenRouterVisibleConfig({
+    GCM_TUTOR_LLM_SHADOW: "1",
+    OPENROUTER_API_KEY: "x",
+    OPENROUTER_MODEL: APPROVED_OPENROUTER_MODEL,
+    OPENROUTER_PROVIDER: APPROVED_OPENROUTER_PROVIDER,
+  }), null);
+  assert.deepEqual(getOpenRouterVisibleConfig({
+    GCM_TUTOR_LLM_VISIBLE: "1",
+    OPENROUTER_API_KEY: "x",
+    OPENROUTER_MODEL: APPROVED_OPENROUTER_MODEL,
+    OPENROUTER_PROVIDER: APPROVED_OPENROUTER_PROVIDER,
+  }), {
+    apiKey: "x",
+    model: APPROVED_OPENROUTER_MODEL,
+    provider: APPROVED_OPENROUTER_PROVIDER,
+  });
 });
 
-test("OpenRouter rejects invented source ids, source mismatches and historical current claims", async () => {
+test("candidate safety rejects invented source ids, source mismatches and historical current claims", () => {
   const cases = [
     {
       output: {
@@ -192,32 +214,23 @@ test("OpenRouter rejects invented source ids, source mismatches and historical c
       output: {
         sourceIdsUsed: ["legacy-concurso-docente-2016"],
         sourceCitationsUsed: [{ sourceId: "legacy-concurso-docente-2016", reference: "Material histórico concurso docente 2016" }],
-        sourceClaims: [{ sourceId: "legacy-concurso-docente-2016", claim: "presented_as_current" }],
+        sourceClaims: [{ sourceId: "legacy-concurso-docente-2016", claim: "presented_as_current" as const }],
       },
       errorCode: "historical_source_misuse",
     },
   ];
 
   for (const testCase of cases) {
-    resetOpenRouterCircuitForTests();
-    const fetchMock = async () => new Response(JSON.stringify({
-      choices: [{ message: { content: JSON.stringify({
-        schemaVersion: "tutor-shadow-v1",
-        visibleMessage: "Salida simulada.",
-        pedagogicalAction: "hint",
-        evidenceKeys: ["question", "source_evidence"],
-        ...testCase.output,
-        uncertainty: "limited",
-        requiresDeterministicFallback: false,
-      }) } }],
-    }), { status: 200, headers: { "Content-Type": "application/json" } });
-    const provider = new OpenRouterProvider(
-      { apiKey: "test-secret", model: "approved/model", provider: "approved-provider" },
-      fetchMock as typeof fetch,
-    );
-    const result = await provider.generate(input);
-    assert.equal(result.status, "rejected");
-    assert.equal(result.errorCode, testCase.errorCode);
+    const result = validateShadowSafety({
+      schemaVersion: "tutor-shadow-v1",
+      visibleMessage: "Salida simulada.",
+      pedagogicalAction: "hint",
+      evidenceKeys: ["question", "source_evidence"],
+      ...testCase.output,
+      uncertainty: "limited",
+      requiresDeterministicFallback: false,
+    }, input);
+    assert.deepEqual(result, { ok: false, reason: testCase.errorCode });
   }
 });
 
