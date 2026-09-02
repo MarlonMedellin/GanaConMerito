@@ -9,6 +9,50 @@ Antes de release, Canary, producción o hotfix, registrar `CURRENT_APP_VERSION`,
 `CURRENT_RELEASE_DATE` y `CANDIDATE_SHA`. Después de merge, registrar
 `FINAL_RELEASE_SHA`. Después de deploy, verificar visualmente `ReleaseStamp`.
 
+## v0.12.0 / Tutor AI production closeout
+- VERSION=0.12.0
+- RELEASE_STATUS=CLOSED
+- RELEASE_TAG=v0.12.0
+- GITHUB_RELEASE=published
+- FINAL_RELEASE_SHA=132f78113cf3b0917b459db39d79c710450bed52
+- PRODUCTION_SHA=132f78113cf3b0917b459db39d79c710450bed52
+- PRODUCTION_VERSION=v0.12.0
+- PRODUCTION_UPSTREAM=127.0.0.1:3007
+- PRODUCTION_HEALTH=PASS
+- RELEASESTAMP=PASS
+- PUBLIC_SMOKE=PASS
+- AUTHENTICATED_SMOKE=PASS
+- TUTOR_VISIBLE=PASS
+- OPENROUTER_VISIBLE=PASS
+- DETERMINISTIC_FALLBACK=PASS
+- MULTITURN=PASS
+- ROLLBACK_REMAINING=PASS
+- MIGRATIONS=NO
+- SUPABASE_REMOTE_CHANGE=NO
+- CONTENT_SYNC=NO
+- CONTENT_V4_CHANGE=NO
+- DATABASE_CHANGED=false
+- SECRETS_EXPOSED=false
+
+### Alcance
+- Release `v0.12.0` promovido y validado en produccion para Tutor AI visible.
+- Cierre exclusivamente documental sobre evidencia previamente confirmada; no
+  ejecuta deploy, Nginx, Canary, Supabase, base de datos, tag ni GitHub Release.
+- No modifica codigo funcional, `VERSION.json`, contenido V4 ni infraestructura.
+
+### Evidencia de cierre
+- [x] Release `v0.12.0` cerrado sobre
+  `132f78113cf3b0917b459db39d79c710450bed52`.
+- [x] GitHub Release `v0.12.0` publicada.
+- [x] Produccion validada en `v0.12.0` con upstream `127.0.0.1:3007`.
+- [x] ReleaseStamp, smoke publico, smoke autenticado, Tutor visible,
+  OpenRouter visible, fallback deterministico y multiturno registrados como PASS
+  desde evidencia ya confirmada.
+- [x] Sin migraciones, cambios remotos Supabase, Content Sync, cambios V4,
+  cambios de base de datos ni secretos expuestos durante este cierre documental.
+- [x] Rollback conservado: `gcm-canary-l2-e3e9b34`,
+  `127.0.0.1:3006`, version `v0.11.0`.
+
 ## v0.11.0 / dashboard update production closeout
 - VERSION=0.11.0
 - RELEASE_DATE=2026-08-30

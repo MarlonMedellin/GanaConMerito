@@ -2,7 +2,7 @@
 
 Status: canonical
 Owner: PM-Governance
-Last reviewed: 2026-08-30
+Last reviewed: 2026-09-01
 Related files:
 - AGENTS.md
 - docs/02-delivery/versioning-and-releases.md
@@ -67,42 +67,33 @@ Application versioning:
 - Required records after merge/deploy: `FINAL_RELEASE_SHA`, runtime SHA and
   visual `ReleaseStamp` verification
 
-Snapshot operativo vigente para `v0.11.0`:
-- Version: `0.11.0`
-- Release date: `2026-08-30`
-- Final release SHA: `e3e9b3436f57a0354c7fed941140df468499d624`
-- Runtime publico: `https://ganaconmerito.com`
-- Runtime publico verificado: `e3e9b3436f57a0354c7fed941140df468499d624`
-- Runtime container: `gcm-canary-l2-e3e9b34`
-- Runtime port: `3006`
-- Build time: `2026-08-31T02:28:58Z`
-- ReleaseStamp: PASS
-- Public runtime smoke: PASS
-- Authenticated smoke: PASS
-- Dashboard production: PASS
-- Desktop visual: PASS
-- Mobile visual: PASS
-- Tutor visible: PASS
-- OpenRouter visible LLM: false
-- V4 active count: 248
-- Canary deploy: PASS
-- Production promotion: PASS
-- Supabase product mutation during promotion: false
-- Supabase schema mutation during promotion: false
-- Supabase content mutation during promotion: false
-- Migrations during promotion: false
-- Content Sync during promotion: false
-- G6 during promotion: false
-- Release tag: `v0.11.0`
-- Release tag target SHA: `e3e9b3436f57a0354c7fed941140df468499d624`
+Snapshot operativo vigente para `v0.12.0`:
+- Version: `0.12.0`
+- Release status: `CLOSED`
+- Release tag: `v0.12.0`
 - GitHub Release: `published`
-- GitHub Release URL:
-  `https://github.com/MarlonMedellin/GanaConMerito/releases/tag/v0.11.0`
-- Cleanup: `NOT_PERFORMED`
-- Old production runtime `v0.10.0` on `:3002`: preserved
-- Previous runtime on `:3005`: preserved
-- Rollback: available; cleanup reserved to a separate gate
-- Closeout evidence: `docs/05-ops/V0.11.0-PRODUCTION-CLOSEOUT-20260830.md`
+- Final release SHA: `132f78113cf3b0917b459db39d79c710450bed52`
+- Production SHA: `132f78113cf3b0917b459db39d79c710450bed52`
+- Production version: `v0.12.0`
+- Runtime publico: `https://ganaconmerito.com`
+- Production upstream: `127.0.0.1:3007`
+- Production health: PASS
+- ReleaseStamp: PASS
+- Public smoke: PASS
+- Authenticated smoke: PASS
+- Tutor visible: PASS
+- OpenRouter visible: PASS
+- Deterministic fallback: PASS
+- Multiturn: PASS
+- Rollback remaining: PASS
+- Migrations: NO
+- Supabase remote change: NO
+- Content Sync: NO
+- Content V4 change: NO
+- Database changed: false
+- Secrets exposed: false
+- Rollback `v0.11.0`: `gcm-canary-l2-e3e9b34` on `127.0.0.1:3006`,
+  preserved
 
 ---
 
@@ -119,7 +110,7 @@ sin evidencia mínima.
 
 Para Beta Candidate 0.6.0, la evidencia histórica en `fcc40cb`, `716ec62` u otros
 commits sirve como contexto de madurez historica. El estado vigente de produccion
-es `v0.11.0` sobre `e3e9b3436f57a0354c7fed941140df468499d624`.
+es `v0.12.0` sobre `132f78113cf3b0917b459db39d79c710450bed52`.
 
 ---
 
