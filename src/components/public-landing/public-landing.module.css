@@ -1,8 +1,8 @@
-/* Public Landing CSS Module */
+/* Public Landing CSS Module - Practice Section Theme Sync */
 .shell {
   min-height: 100vh;
-  background-color: #FFF8F4;
-  color: #1e1b18;
+  background-color: #f7f8f4;
+  color: #17231e;
   font-family: inherit;
   display: flex;
   flex-direction: column;
@@ -12,16 +12,15 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  background-color: rgba(255, 248, 244, 0.95);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(196, 197, 213, 0.4);
+  background-color: #ffffff;
+  border-bottom: 1px solid #dfe4dd;
 }
 
 .headerNav {
-  max-width: 1200px;
+  max-width: 1120px;
   margin: 0 auto;
   padding: 0 24px;
-  height: 64px;
+  height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,14 +29,15 @@
 .brand {
   font-size: 20px;
   font-weight: 700;
-  color: #1e1b18;
+  color: #17231e;
   text-decoration: none;
+  letter-spacing: -0.02em;
 }
 
 .desktopNav {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
 }
 
 @media (max-width: 768px) {
@@ -47,15 +47,18 @@
 }
 
 .navLink {
+  padding: 8px 12px;
+  border-radius: 10px;
   font-size: 14px;
-  font-weight: 500;
-  color: #444653;
+  font-weight: 600;
+  color: #66716c;
   text-decoration: none;
-  transition: color 0.2s;
+  transition: all 0.2s ease;
 }
 
 .navLink:hover {
-  color: #1E40AF;
+  background-color: #eef3ed;
+  color: #17231e;
 }
 
 .btnPrimary {
@@ -64,19 +67,19 @@
   justify-content: center;
   padding: 10px 24px;
   min-height: 44px;
-  background-color: #1E40AF;
+  background-color: #153f32;
   color: #ffffff;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 16px;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 15px;
   text-decoration: none;
   border: none;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .btnPrimary:hover {
-  background-color: #1b3899;
+  background-color: #0f3026;
 }
 
 .btnSecondary {
@@ -86,17 +89,17 @@
   padding: 10px 24px;
   min-height: 44px;
   background-color: #ffffff;
-  color: #1e1b18;
-  border: 1px solid rgba(196, 197, 213, 0.6);
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 16px;
+  color: #17231e;
+  border: 1px solid #dfe4dd;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 15px;
   text-decoration: none;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s ease;
 }
 
 .btnSecondary:hover {
-  background-color: #e9e1db;
+  background-color: #eef3ed;
 }
 
 .menuBtn {
@@ -105,7 +108,7 @@
   border: none;
   padding: 8px;
   cursor: pointer;
-  color: #1e1b18;
+  color: #17231e;
 }
 
 @media (max-width: 768px) {
@@ -116,16 +119,16 @@
 
 .mobileMenu {
   position: fixed;
-  top: 64px;
+  top: 72px;
   left: 0;
   right: 0;
-  background-color: #FFF8F4;
-  border-bottom: 1px solid rgba(196, 197, 213, 0.4);
+  background-color: #ffffff;
+  border-bottom: 1px solid #dfe4dd;
   padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 35px rgba(24, 43, 34, 0.08);
 }
 
 .heroSection {
@@ -135,12 +138,12 @@
 
 @media (min-width: 768px) {
   .heroSection {
-    padding: 80px 24px;
+    padding: 64px 24px 80px;
   }
 }
 
 .heroContainer {
-  max-width: 1200px;
+  max-width: 1120px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -151,7 +154,7 @@
 @media (min-width: 1024px) {
   .heroContainer {
     flex-direction: row;
-    gap: 64px;
+    gap: 56px;
   }
 }
 
@@ -168,40 +171,32 @@
 
 .badge {
   display: inline-block;
-  font-weight: 600;
-  font-size: 14px;
-  color: #10B981;
+  font-weight: 700;
+  font-size: 13px;
+  color: #153f32;
+  background-color: #edf7d4;
+  border: 1px solid #d2e59e;
+  padding: 6px 14px;
+  border-radius: 20px;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 16px;
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
 }
 
 .title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1;
-  color: #1e1b18;
-  letter-spacing: -0.02em;
-  margin-bottom: 24px;
-}
-
-@media (min-width: 768px) {
-  .title {
-    font-size: 48px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .title {
-    font-size: 56px;
-  }
+  font-size: clamp(36px, 5vw, 62px);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  color: #17231e;
+  margin-bottom: 20px;
 }
 
 .subtitle {
   font-size: 18px;
-  line-height: 1.6;
-  color: #444653;
-  max-width: 672px;
+  line-height: 1.55;
+  color: #66716c;
+  max-width: 640px;
   margin: 0 auto 32px auto;
 }
 
@@ -215,7 +210,7 @@
 .actions {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
   justify-content: center;
 }
 
@@ -232,13 +227,14 @@
 }
 
 .securityNote {
-  font-size: 14px;
-  color: #757684;
+  font-size: 13px;
+  font-weight: 600;
+  color: #66716c;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 @media (min-width: 1024px) {
@@ -250,13 +246,14 @@
 .securityIcon {
   width: 16px;
   height: 16px;
+  color: #153f32;
   flex-shrink: 0;
 }
 
 .heroVisual {
   flex: 1;
   width: 100%;
-  max-width: 512px;
+  max-width: 520px;
   position: relative;
 }
 
@@ -274,30 +271,33 @@
 .sectionAlt {
   width: 100%;
   padding: 64px 24px;
-  background-color: #faf2ec;
+  background-color: #ffffff;
+  border-top: 1px solid #dfe4dd;
+  border-bottom: 1px solid #dfe4dd;
 }
 
 .sectionTitle {
-  font-size: 30px;
+  font-size: clamp(28px, 4vw, 40px);
   font-weight: 700;
+  letter-spacing: -0.03em;
   text-align: center;
-  color: #1e1b18;
-  margin-bottom: 16px;
+  color: #17231e;
+  margin-bottom: 14px;
 }
 
 .sectionSubtitle {
-  font-size: 18px;
-  color: #444653;
+  font-size: 17px;
+  color: #66716c;
   text-align: center;
-  max-width: 672px;
+  max-width: 640px;
   margin: 0 auto 48px auto;
 }
 
 .grid3 {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 32px;
-  max-width: 1200px;
+  gap: 24px;
+  max-width: 1120px;
   margin: 0 auto;
 }
 
@@ -310,8 +310,8 @@
 .grid2 {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 32px;
-  max-width: 1200px;
+  gap: 24px;
+  max-width: 1120px;
   margin: 0 auto;
 }
 
@@ -324,9 +324,19 @@
 .card {
   background-color: #ffffff;
   padding: 32px;
-  border-radius: 16px;
-  border: 1px solid rgba(196, 197, 213, 0.4);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+  border-radius: 24px;
+  border: 1px solid #dfe4dd;
+  box-shadow: 0 10px 35px rgba(24, 43, 34, 0.04);
+  display: flex;
+  flex-direction: column;
+}
+
+.cardHighlight {
+  background-color: #edf7d4;
+  border: 1px solid #d2e59e;
+  padding: 32px;
+  border-radius: 24px;
+  box-shadow: 0 10px 35px rgba(24, 43, 34, 0.04);
   display: flex;
   flex-direction: column;
 }
@@ -334,7 +344,7 @@
 .cardIcon {
   width: 48px;
   height: 48px;
-  border-radius: 12px;
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -342,42 +352,44 @@
 }
 
 .iconGreen {
-  background-color: rgba(16, 185, 129, 0.1);
-  color: #10B981;
+  background-color: #edf7d4;
+  color: #153f32;
+  border: 1px solid #d2e59e;
 }
 
-.iconBlue {
-  background-color: rgba(30, 64, 175, 0.1);
-  color: #1E40AF;
+.iconForest {
+  background-color: #153f32;
+  color: #ffffff;
 }
 
 .cardTitle {
   font-size: 20px;
-  font-weight: 600;
-  color: #1e1b18;
+  font-weight: 700;
+  color: #17231e;
+  letter-spacing: -0.01em;
   margin-bottom: 12px;
 }
 
 .cardText {
-  font-size: 16px;
-  color: #444653;
+  font-size: 15px;
+  color: #66716c;
   line-height: 1.6;
 }
 
 .footer {
   width: 100%;
   padding: 48px 24px;
-  border-top: 1px solid rgba(196, 197, 213, 0.4);
-  background-color: #FFF8F4;
+  border-top: 1px solid #dfe4dd;
+  background-color: #f7f8f4;
   margin-top: auto;
 }
 
 .footerContainer {
-  max-width: 1200px;
+  max-width: 1120px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
   align-items: center;
 }
 
@@ -390,15 +402,14 @@
 
 .footerText {
   font-size: 14px;
-  color: #757684;
+  color: #66716c;
 }
 
 .footerLinks {
   display: flex;
-  gap: 24px;
+  gap: 20px;
 }
 
-/* SVG Hero Illustration Fixes */
 .heroSvg {
   width: 100%;
   height: auto;

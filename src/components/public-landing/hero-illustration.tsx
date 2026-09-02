@@ -11,28 +11,36 @@ export function HeroIllustration() {
         aria-label="Ilustración representativa de interfaz interactiva de evaluación adaptativa y acompañamiento docente"
         role="img"
       >
-        <rect width="500" height="400" rx="16" fill="#FFFFFF" />
-        <rect x="20" y="20" width="460" height="50" rx="8" fill="#F8FAFC" stroke="#E2E8F0" strokeWidth="2" />
-        <circle cx="50" cy="45" r="10" fill="#10B981" />
-        <rect x="75" y="40" width="120" height="10" rx="4" fill="#cbd5e1" />
-        <rect x="360" y="35" width="100" height="20" rx="4" fill="#1E40AF" />
+        {/* Outer Card Shell */}
+        <rect width="500" height="400" rx="24" fill="#FFFFFF" stroke="#DFE4DD" strokeWidth="2" />
         
-        <rect x="20" y="90" width="460" height="280" rx="8" fill="#FFFFFF" stroke="#E2E8F0" strokeWidth="2" />
+        {/* Top Header Bar */}
+        <rect x="20" y="20" width="460" height="52" rx="14" fill="#F7F8F4" stroke="#DFE4DD" strokeWidth="1.5" />
+        <circle cx="50" cy="46" r="10" fill="#153F32" />
+        <rect x="75" y="41" width="130" height="10" rx="5" fill="#17231E" />
+        <rect x="350" y="34" width="110" height="24" rx="8" fill="#153F32" />
         
-        <rect x="40" y="120" width="420" height="14" rx="4" fill="#1E1B18" />
-        <rect x="40" y="145" width="300" height="10" rx="4" fill="#757684" />
+        {/* Main Content Area */}
+        <rect x="20" y="90" width="460" height="285" rx="18" fill="#FFFFFF" stroke="#DFE4DD" strokeWidth="1.5" />
         
-        <rect x="40" y="180" width="420" height="44" rx="8" fill="#F0FDF4" stroke="#10B981" strokeWidth="2" />
-        <circle cx="65" cy="202" r="8" fill="#10B981" />
-        <rect x="85" y="197" width="200" height="10" rx="4" fill="#166534" />
+        {/* Stem Title & Meta */}
+        <rect x="40" y="118" width="420" height="14" rx="4" fill="#17231E" />
+        <rect x="40" y="140" width="280" height="10" rx="4" fill="#66716C" />
         
-        <rect x="40" y="236" width="420" height="44" rx="8" fill="#F8FAFC" stroke="#E2E8F0" strokeWidth="1" />
-        <circle cx="65" cy="258" r="8" fill="#CBD5E1" />
-        <rect x="85" y="253" width="180" height="10" rx="4" fill="#64748B" />
+        {/* Correct Option (Selected) - Lime Green Theme */}
+        <rect x="40" y="172" width="420" height="46" rx="12" fill="#EDF7D4" stroke="#D2E59E" strokeWidth="2" />
+        <circle cx="65" cy="195" r="8" fill="#153F32" />
+        <rect x="85" y="190" width="230" height="10" rx="4" fill="#153F32" />
+        
+        {/* Option B */}
+        <rect x="40" y="228" width="420" height="46" rx="12" fill="#F7F8F4" stroke="#DFE4DD" strokeWidth="1" />
+        <circle cx="65" cy="251" r="8" fill="#DFE4DD" />
+        <rect x="85" y="246" width="190" height="10" rx="4" fill="#66716C" />
 
-        <rect x="40" y="292" width="420" height="44" rx="8" fill="#F8FAFC" stroke="#E2E8F0" strokeWidth="1" />
-        <circle cx="65" cy="314" r="8" fill="#CBD5E1" />
-        <rect x="85" y="309" width="220" height="10" rx="4" fill="#64748B" />
+        {/* Option C */}
+        <rect x="40" y="284" width="420" height="46" rx="12" fill="#F7F8F4" stroke="#DFE4DD" strokeWidth="1" />
+        <circle cx="65" cy="307" r="8" fill="#DFE4DD" />
+        <rect x="85" y="302" width="210" height="10" rx="4" fill="#66716C" />
       </svg>
     </div>
   );
