@@ -14,6 +14,8 @@ Related files:
 
 La version publica de la aplicacion se define unicamente en `VERSION.json`.
 
+No crear una segunda constante editable de version. package.json.version no es la fuente publica de release salvo decision futura explicita.
+
 Runtime identity:
 
 - version y release date: `VERSION.json`;
