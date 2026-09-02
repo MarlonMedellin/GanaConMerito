@@ -1,40 +1,35 @@
 import { PublicHeader } from "@/components/public-landing/public-header";
 import { PublicFooter } from "@/components/public-landing/public-footer";
-import { Metadata } from "next";
 import Link from "next/link";
+import styles from "@/components/public-landing/public-landing.module.css";
 
-export const metadata: Metadata = {
-  title: "Tutor GCM IA | GanaConMérito",
-  description: "Conoce cómo el Tutor GCM IA apoya tu comprensión mediante el método socrático sin revelar las respuestas directas.",
-};
-
-export default function TutorPage() {
+export default function TutorGcmIaPage() {
   return (
-    <div className="min-h-screen bg-[#FFF8F4] text-[#1e1b18] font-body-lg antialiased flex flex-col">
+    <div className={styles.shell}>
       <PublicHeader />
-      <main className="flex-1 w-full max-w-[800px] mx-auto px-6 py-16 space-y-12">
-        <h1 className="text-4xl font-bold text-[#1e1b18]">Tutor GCM IA</h1>
-        <section className="space-y-6">
-          <p className="text-lg text-[#444653] leading-relaxed">
-            El Tutor GCM IA es una herramienta diseñada para acompañar tu proceso de análisis y comprensión de cada pregunta. En lugar de entregarte respuestas directas, utiliza principios del método socrático para guiarte.
+      <main className={styles.section} style={{ flex: 1 }}>
+        <div style={{ maxWidth: 800, margin: "0 auto" }}>
+          <h1 className={styles.sectionTitle}>Tutor GCM IA</h1>
+          <p className={styles.sectionSubtitle}>
+            Un asistente pedagógico diseñado para fortalecer el razonamiento crítico sin dar respuestas directas.
           </p>
-        </section>
-        <section className="space-y-6">
-          <h2 className="text-2xl font-semibold">Apoyo contextual</h2>
-          <p className="text-lg text-[#444653] leading-relaxed">
-            Si tienes dudas sobre una alternativa o el enfoque de una pregunta, el Tutor puede proporcionarte pistas basadas en el contexto específico de esa situación, ayudándote a identificar la información clave sin resolver el problema por ti.
-          </p>
-        </section>
-        <section className="space-y-6">
-          <h2 className="text-2xl font-semibold">Preguntas orientadoras</h2>
-          <p className="text-lg text-[#444653] leading-relaxed">
-            Ante la duda, el Tutor te devolverá preguntas orientadoras (por ejemplo: "¿Qué evidencia de la pregunta respalda mejor tu elección?"). Este enfoque promueve el razonamiento crítico, una habilidad fundamental tanto para el concurso como para tu labor profesional.
-          </p>
-        </section>
-        <div className="pt-8 text-center">
-          <Link href="/login" className="inline-flex items-center justify-center px-8 py-4 min-h-[44px] bg-[#1E40AF] text-white hover:bg-[#1E40AF]/90 rounded-lg font-bold text-lg transition-colors shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#1E40AF]">
-            Comenzar mi preparación
-          </Link>
+          <div className={styles.card} style={{ marginBottom: 24 }}>
+            <h2 className={styles.cardTitle}>Guía Socrática</h2>
+            <p className={styles.cardText}>
+              El Tutor te orienta a través de preguntas reflexivas para que identifiques el principio pedagógico detrás de cada caso.
+            </p>
+          </div>
+          <div className={styles.card} style={{ marginBottom: 32 }}>
+            <h2 className={styles.cardTitle}>Enfoque en Aprendizaje Accionable</h2>
+            <p className={styles.cardText}>
+              Te ayuda a relacionar la teoría normativa con situaciones reales del aula y la gestión directiva.
+            </p>
+          </div>
+          <div style={{ textAlign: "center" }}>
+            <Link href="/login" className={styles.btnPrimary}>
+              Probar Tutor
+            </Link>
+          </div>
         </div>
       </main>
       <PublicFooter />

@@ -1,54 +1,39 @@
+import styles from "./public-landing.module.css";
+
 export function HeroIllustration() {
   return (
-    <div className="w-full h-full bg-[#f8fafc] rounded-[16px] shadow-[0_10px_25px_rgba(0,0,0,0.08)] relative z-10 overflow-hidden border border-[#D6D3D1]/30 p-6 flex flex-col gap-6" aria-hidden="true">
-      <div className="flex items-center justify-between border-b border-[#e2e8f0] pb-4">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-[#e2e8f0]"></div>
-          <div className="h-4 w-32 bg-[#e2e8f0] rounded"></div>
-        </div>
-        <div className="h-8 w-24 bg-[#1E40AF]/10 rounded-full flex items-center justify-center">
-          <div className="h-3 w-16 bg-[#1E40AF]/40 rounded"></div>
-        </div>
-      </div>
+    <div className={styles.heroVisual}>
+      <svg
+        viewBox="0 0 500 400"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className={styles.heroSvg}
+        aria-label="Ilustración representativa de interfaz interactiva de evaluación adaptativa y acompañamiento docente"
+        role="img"
+      >
+        <rect width="500" height="400" rx="16" fill="#FFFFFF" />
+        <rect x="20" y="20" width="460" height="50" rx="8" fill="#F8FAFC" stroke="#E2E8F0" strokeWidth="2" />
+        <circle cx="50" cy="45" r="10" fill="#10B981" />
+        <rect x="75" y="40" width="120" height="10" rx="4" fill="#cbd5e1" />
+        <rect x="360" y="35" width="100" height="20" rx="4" fill="#1E40AF" />
+        
+        <rect x="20" y="90" width="460" height="280" rx="8" fill="#FFFFFF" stroke="#E2E8F0" strokeWidth="2" />
+        
+        <rect x="40" y="120" width="420" height="14" rx="4" fill="#1E1B18" />
+        <rect x="40" y="145" width="300" height="10" rx="4" fill="#757684" />
+        
+        <rect x="40" y="180" width="420" height="44" rx="8" fill="#F0FDF4" stroke="#10B981" strokeWidth="2" />
+        <circle cx="65" cy="202" r="8" fill="#10B981" />
+        <rect x="85" y="197" width="200" height="10" rx="4" fill="#166534" />
+        
+        <rect x="40" y="236" width="420" height="44" rx="8" fill="#F8FAFC" stroke="#E2E8F0" strokeWidth="1" />
+        <circle cx="65" cy="258" r="8" fill="#CBD5E1" />
+        <rect x="85" y="253" width="180" height="10" rx="4" fill="#64748B" />
 
-      <div className="flex-1 flex flex-col gap-4">
-        <div className="space-y-2">
-          <div className="h-4 w-full bg-[#cbd5e1] rounded"></div>
-          <div className="h-4 w-[80%] bg-[#cbd5e1] rounded"></div>
-        </div>
-
-        <div className="space-y-3 mt-4">
-          <div className="p-4 rounded-lg border border-[#e2e8f0] flex items-center gap-3">
-            <div className="w-5 h-5 rounded-full border-2 border-[#cbd5e1]"></div>
-            <div className="h-3 w-[70%] bg-[#e2e8f0] rounded"></div>
-          </div>
-          <div className="p-4 rounded-lg border-2 border-[#10B981] bg-[#10B981]/5 flex flex-col gap-3">
-            <div className="flex items-center gap-3">
-              <div className="w-5 h-5 rounded-full bg-[#10B981] flex items-center justify-center">
-                <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <div className="h-3 w-[65%] bg-[#cbd5e1] rounded"></div>
-            </div>
-            <div className="mt-2 p-3 bg-white rounded-md border border-[#10B981]/20 flex items-start gap-2">
-              <div className="w-4 h-4 text-[#10B981] mt-0.5">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <div className="space-y-2 flex-1">
-                <div className="h-2 w-[90%] bg-[#cbd5e1] rounded"></div>
-                <div className="h-2 w-[60%] bg-[#cbd5e1] rounded"></div>
-              </div>
-            </div>
-          </div>
-          <div className="p-4 rounded-lg border border-[#e2e8f0] flex items-center gap-3">
-            <div className="w-5 h-5 rounded-full border-2 border-[#cbd5e1]"></div>
-            <div className="h-3 w-[80%] bg-[#e2e8f0] rounded"></div>
-          </div>
-        </div>
-      </div>
+        <rect x="40" y="292" width="420" height="44" rx="8" fill="#F8FAFC" stroke="#E2E8F0" strokeWidth="1" />
+        <circle cx="65" cy="314" r="8" fill="#CBD5E1" />
+        <rect x="85" y="309" width="220" height="10" rx="4" fill="#64748B" />
+      </svg>
     </div>
   );
 }

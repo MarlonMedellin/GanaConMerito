@@ -1,6 +1,5 @@
 import type { ReactNode } from "react";
 import "./globals.css";
-import "./public-landing.css";
 
 
 export const metadata = {
