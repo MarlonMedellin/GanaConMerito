@@ -215,6 +215,7 @@ Todo cambio relevante debe intentar registrar:
 | Campo | Estado recomendado |
 |---|---|
 | Agent | Obligatorio |
+| Model | Obligatorio para trabajo generado o modificado por IA |
 | Via | Obligatorio |
 | Contributor | Obligatorio |
 | Environment | Obligatorio |
@@ -224,6 +225,39 @@ Todo cambio relevante debe intentar registrar:
 | Governance-Context | Recomendado |
 | Shell | Recomendado |
 | Timezone | Recomendado |
+
+---
+
+## Regla obligatoria de atribucion en comentarios
+
+Todo comentario nuevo o modificado por un agente IA debe indicar explicitamente el agente y el modelo que lo produjo.
+
+Aplica a comentarios de codigo, scripts, configuracion, SQL/migraciones, infraestructura, documentacion operativa, PRs, reviews, issues, handoffs y checkpoints cuando funcionen como comentario o evidencia de ejecucion.
+
+Formato minimo, adaptado a la sintaxis de cada superficie:
+
+```text
+Agent: NOMBRE-DEL-AGENTE
+Model: IDENTIFICADOR-DEL-MODELO
+```
+
+Ejemplo en codigo:
+
+```text
+// Agent: PM-Dev | Model: GPT-5.6 Sol
+// Explicacion tecnica del comentario.
+```
+
+Reglas:
+- usar el identificador mas especifico que la herramienta exponga de forma fiable;
+- nunca inferir ni inventar una version exacta del modelo;
+- si la herramienta no expone el modelo, usar `Model: unknown/not-exposed`;
+- no es obligatorio modificar comentarios historicos que el cambio actual no toque;
+- si un agente modifica sustancialmente un comentario existente, debe agregar o actualizar la atribucion;
+- comentarios exclusivamente humanos no requieren `Model`;
+- no insertar metadata si altera parsing, hashes, snapshots o contratos machine-readable: registrar la atribucion en la evidencia operativa mas cercana y documentar la excepcion.
+
+La politica detallada y canonica vive en `docs/05-ops/agent-traceability.md`.
 
 ---
 
@@ -275,6 +309,7 @@ Si el agente no puede determinar inequivocamente el entorno de trabajo, debe det
 Todo commit generado por un agente IA debe incluir de forma visible:
 
 - agente;
+- modelo;
 - via;
 - contributor;
 - entorno;
@@ -301,6 +336,7 @@ Tipos validos:
 
 ```text
 Agent:
+Model:
 Via:
 Contributor:
 Environment:
@@ -363,7 +399,7 @@ Al cerrar cualquier tarea relevante, el agente debe reportar:
 - drift aceptado;
 - runtime verificado o no;
 - commit creado;
-- metadata operacional utilizada.
+- metadata operacional utilizada, incluyendo `Agent` y `Model` cuando intervino IA.
 
 ---
 

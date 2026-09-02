@@ -10,7 +10,7 @@ tags: [agentes, responsabilidades, gobernanza, handoff]
 related:
   - GOV-AGENT-ROSTER
   - GOV-WORKING-AGREEMENT
-last_reviewed: 2026-08-19
+last_reviewed: 2026-08-31
 ---
 
 # Contrato de Cambios y Handoff de IA
@@ -53,7 +53,7 @@ Usa GitHub para inspeccionar repositorio, commits, ramas, archivos, issues y PRs
 
 ### Regla de commits
 
-- todo commit debe incluir de forma visible el agente, la vía y el contributor operativo
+- todo commit debe incluir de forma visible el agente, el modelo, la vía y el contributor operativo
 - formato obligatorio del subject: `tipo(agente/via): resumen breve`
 - ejemplo: `docs(PM-DocControl/codex-marlonmedellin): aclara fuente de verdad y disciplina de commits`
 - tipos preferidos: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, `governance`
@@ -64,17 +64,38 @@ Todo commit debe cerrar con:
 
 ```text
 Agent: NOMBRE-DEL-AGENTE
-Via: codex-marlonmedellin | codex-owner | chatgpt
+Model: IDENTIFICADOR-DEL-MODELO
+Via: codex-marlonmedellin | codex-owner | chatgpt | antigravity
 Contributor: NOMBRE-DE-CUENTA-O-PERSONA
 ```
 
-#### Vías reconocidas al 2026-05-06
+Para `Model`, registrar el identificador más específico expuesto de forma fiable por la herramienta. No inferir ni inventar una versión. Si no está expuesto, usar `Model: unknown/not-exposed`.
+
+#### Vías reconocidas al 2026-08-31
 
 - `codex-marlonmedellin`
 - `codex-owner`
 - `chatgpt`
+- `antigravity`
 
 No se debe inventar una vía nueva dentro de un commit productivo sin actualizar antes la gobernanza.
+
+### Regla obligatoria para comments/comentarios
+
+Todo comentario nuevo o modificado por un agente IA debe dejar trazabilidad de:
+
+```text
+Agent: NOMBRE-DEL-AGENTE
+Model: IDENTIFICADOR-DEL-MODELO
+```
+
+Esto incluye comentarios de código, scripts, configuración, SQL/migraciones, infraestructura, documentación operativa, PRs, reviews, issues, handoffs y checkpoints cuando funcionen como comentarios o evidencia de ejecución.
+
+No es necesario modificar retroactivamente comentarios históricos que el agente no toque. Los comentarios exclusivamente humanos no requieren `Model`.
+
+Si insertar la atribución dentro del archivo altera parsing, semántica, hashes, snapshots o contratos machine-readable, el agente debe registrar `Agent` y `Model` en la evidencia operativa más cercana y explicar la excepción.
+
+La definición detallada y canónica está en `docs/05-ops/agent-traceability.md`.
 
 ## Rama de Trabajo Obligatoria
 
@@ -88,6 +109,7 @@ No se debe inventar una vía nueva dentro de un commit productivo sin actualizar
 - confirmar que el archivo editado existe en la fuente correcta
 - confirmar diff limpio y acotado
 - confirmar que la regla nueva no contradice la jerarquía existente
+- si el cambio incorpora o modifica comentarios de IA, comprobar presencia de `Agent` y `Model` o una excepción documentada
 
 ## Regla Operativa Obligatoria para VPS
 
@@ -113,4 +135,4 @@ Al terminar, el agente debe reportar siempre este listado completo:
 - si el runtime fue verificado o no
 - rama real usada
 - commit creado
-- identidad declarada de `Agent`, `Via` y `Contributor`
+- identidad declarada de `Agent`, `Model`, `Via` y `Contributor`

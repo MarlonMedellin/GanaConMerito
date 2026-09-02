@@ -736,6 +736,19 @@ body {
   margin-top: 10px;
 }
 
+.tutor-guided-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tutor-action {
+  flex: 1 1 180px;
+  min-height: 40px;
+  white-space: normal;
+  text-align: left;
+}
+
 .tutor-input textarea {
   width: 100%;
   resize: vertical;

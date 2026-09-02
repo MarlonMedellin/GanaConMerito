@@ -4,68 +4,79 @@ Status: canonical
 Owner: PM-Governance
 Last reviewed: 2026-09-01
 Related files:
-- AGENTS.md
-- docs/02-delivery/versioning-and-releases.md
-- docs/project/status.md
-- docs/04-quality/quality-gates.md
-- docs/05-ops/documentation-trigger-map.md
-Update trigger:
-- runtime
-- deploy
-- release
-- QA
+- `AGENTS.md`
+- `VERSION.json`
+- `docs/project/status.md`
+- `docs/02-delivery/versioning-and-releases.md`
+- `docs/02-delivery/release-checklist.md`
 
----
+## Objetivo
 
-> **Checkpoint V4 limpio:** la ruta `0029 → 0030` descrita en el historial queda
-> superseded para el futuro cutover V4. La baseline nueva `0001–0003` solo se
-> aplicará en un proyecto vacío con autorización separada. Producción no fue
-> modificada ni verificada por esa rama histórica.
+Mantener una sola referencia breve del runtime vigente y evitar que evidencia historica compita con produccion actual.
 
-# Objetivo
+## Fuente de verdad operacional
 
-Definir una referencia operacional mínima para runtime, release y deploy.
+1. repositorio remoto principal;
+2. `VERSION.json`;
+3. runtime visible;
+4. evidencia de release/closeout.
 
-La meta actual es:
+Repositorio: `https://github.com/MarlonMedellin/GanaConMerito`
 
-- reducir contradicciones;
-- distinguir repo vs runtime;
-- evitar cierres falsos;
-- mejorar trazabilidad;
-- preparar gobernanza futura.
+Runtime publico: `https://ganaconmerito.com`
 
----
+## Produccion vigente
 
-# Fuente de verdad
+- Version: `0.11.0`.
+- Release date: `2026-08-30`.
+- Final release SHA: `e3e9b3436f57a0354c7fed941140df468499d624`.
+- Container: `gcm-canary-l2-e3e9b34`.
+- Puerto: `3006`.
+- Imagen: `sha256:01eefe55cb6b024ac5a7adce5ca4fe0b724583ce9db4b3521ef442f5ecb8b76f`.
+- Build time: `2026-08-31T02:28:58Z`.
+- nginx upstream: `127.0.0.1:3006`.
+- ReleaseStamp: `PASS`.
+- Public smoke: `PASS`.
+- Authenticated smoke: `PASS`.
+- Dashboard desktop/mobile: `PASS`.
+- Tutor visible: `PASS`.
+- OpenRouter visible LLM: `false`.
+- V4 active count: `248`.
+- Tag: `v0.11.0` -> `e3e9b3436f57a0354c7fed941140df468499d624`.
+- GitHub Release: `published`.
 
-Prioridad operacional:
+## Cleanup ejecutado
 
-1. repo remoto principal;
-2. documentación canónica alineada;
-3. copia sincronizada VPS;
-4. árbol deploy;
-5. runtime visible.
+- `:3002` / `gcm-canary-app`: retirado.
+- `:3005` / `gcm-canary-l2-0e710b7`: retirado.
+- Imagenes antiguas asociadas sin uso: retiradas.
+- Backup nginx `cnsc.profemarlon.com.rollback-v0.11.0-promotion-20260831T024215Z`: retirado.
+- `:3002`: libre.
+- `:3005`: libre.
+- `:3006`: activo.
+- `nginx -t`: `PASS`.
+- Public smoke posterior al cleanup: `PASS`.
+- Deploy durante cleanup: `false`.
+- Rebuild durante cleanup: `false`.
+- Supabase cambiado: `false`.
+- Migrations: `false`.
+- Content Sync: `false`.
+- G6: `false`.
 
-Repositorio principal:
-- `https://github.com/MarlonMedellin/GanaConMerito`
+## Residual del host
 
-Copia sincronizada:
-- `~/.openclaw/product`
+El ultimo inventario reporto contenedores historicos en `:3003` y `:3004`. No fueron modificados porque no estaban clasificados/autorizados en el gate de cleanup. No forman parte del upstream productivo. Deben inspeccionarse por nombre, imagen, SHA y dependencias antes de eliminarlos.
 
-Deploy:
-- `/opt/gcm/app`
+## Reglas operativas
 
-Runtime público canónico:
-- `https://ganaconmerito.com`
+- No declarar un runtime verificado sin SHA visible y smoke correspondiente.
+- No usar reportes historicos como fuente del estado actual.
+- No mover un tag publicado a commits documentales posteriores.
+- Reutilizar evidencia valida del mismo SHA; no repetir gates sin cambio material.
+- No ejecutar migraciones, Content Sync o G6 como parte de un cleanup de containers.
+- No usar `docker system prune` como sustituto de una limpieza selectiva.
 
-Application versioning:
-- Canonical policy: `docs/02-delivery/versioning-and-releases.md`
-- Canonical release metadata: `VERSION.json`
-- Visible runtime stamp: `ReleaseStamp`
-- Required precheck before release, Canary, production or hotfix:
-  `CURRENT_APP_VERSION`, `CURRENT_RELEASE_DATE`, `CANDIDATE_SHA`
-- Required records after merge/deploy: `FINAL_RELEASE_SHA`, runtime SHA and
-  visual `ReleaseStamp` verification
+## Evidencia de cierre
 
 Snapshot operativo vigente para `v0.12.0`:
 - Version: `0.12.0`

@@ -2,17 +2,25 @@ import type { TutorTurnRequest, TutorTurnResult } from "../../types/tutor-turn";
 import { getSupabaseAdminClient } from "../supabase/admin";
 import { getOpenRouterShadowConfig, OpenRouterProvider } from "./providers/openrouter-provider";
 import type { TutorProvider, TutorShadowExecution } from "./providers/tutor-provider";
+import { isTutorVisibleRequested, validateShadowSafety } from "./tutor-candidate-policy";
 
 export async function runTutorShadow(params: {
   input: TutorTurnRequest;
   deterministic: TutorTurnResult;
   provider?: TutorProvider<TutorShadowExecution>;
 }) {
+  if (isTutorVisibleRequested()) return { status: "disabled" as const };
   const config = getOpenRouterShadowConfig();
   const provider = params.provider ?? (config ? new OpenRouterProvider(config) : null);
   if (!provider) return { status: "disabled" as const };
 
-  const execution = await provider.generate(params.input);
+  const rawExecution = await provider.generate(params.input);
+  const safety = rawExecution.output
+    ? validateShadowSafety(rawExecution.output, params.input)
+    : { ok: true as const };
+  const execution: TutorShadowExecution = safety.ok
+    ? rawExecution
+    : { ...rawExecution, status: "rejected", errorCode: safety.reason };
   const metric = {
     trace_id: params.deterministic.trace.traceId,
     provider: provider.name,

@@ -187,7 +187,13 @@ export interface TutorTurnRequest {
   sessionId: string;
   itemId: string;
   message: string;
+  history?: TutorConversationMessage[];
   evidence: TutorEvidence;
+}
+
+export interface TutorConversationMessage {
+  role: "user" | "assistant";
+  content: string;
 }
 
 export type TutorTraceSignalStrength = "strong" | "weak" | "insufficient";
@@ -212,6 +218,23 @@ export interface TutorTraceSignals {
   likelyFalsePositive?: boolean;
   guardrailTriggered: boolean;
   fallbackReason?: string;
+  deliveryProvider?: "deterministic" | "openrouter";
+  model?: string;
+  llmMode?: "off" | "shadow" | "visible";
+  llmStatus?: "accepted" | "rejected" | "failed" | "disabled" | "skipped";
+  latencyMs?: number;
+  inputTokens?: number;
+  outputTokens?: number;
+  costUsd?: number;
+  safetyResult?: "accepted" | "rejected" | "skipped";
+  llmEvidenceKeys?: string[];
+  sourceSignals?: {
+    sourceIdsUsed?: number;
+    sourceCitationsUsed?: number;
+    historicalCurrentClaims?: number;
+  };
+  conversationNormalization?: string;
+  traceId?: string;
 }
 
 export interface TutorTurnResponse {
