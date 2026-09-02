@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import "./globals.css";
+import "./public-landing.css";
 
 
 export const metadata = {
@@ -16,3 +17,4 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     </html>
   );
 }
+
