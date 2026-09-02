@@ -12,22 +12,72 @@ Este archivo contiene el baseline vigente y el procedimiento reutilizable para l
 
 ## Baseline vigente
 
-- VERSION=`0.11.0`
-- RELEASE_DATE=`2026-08-30`
-- RELEASE_STATUS=`CLOSED`
-- FINAL_RELEASE_SHA=`e3e9b3436f57a0354c7fed941140df468499d624`
-- PRODUCTION_URL=`https://ganaconmerito.com`
-- PRODUCTION_RUNTIME=`gcm-canary-l2-e3e9b34`
-- PRODUCTION_PORT=`3006`
-- PRODUCTION_RUNTIME_SHA=`e3e9b3436f57a0354c7fed941140df468499d624`
-- RELEASE_STAMP=`PASS`
-- PUBLIC_RUNTIME_SMOKE=`PASS`
-- AUTHENTICATED_SMOKE=`PASS`
-- V4_ACTIVE_COUNT=`248`
-- RELEASE_TAG=`v0.11.0`
-- GITHUB_RELEASE=`published`
-- CLEANUP_3002=`COMPLETE`
-- CLEANUP_3005=`COMPLETE`
+## v0.12.0 / Tutor AI production closeout
+- VERSION=0.12.0
+- RELEASE_STATUS=CLOSED
+- RELEASE_TAG=v0.12.0
+- GITHUB_RELEASE=published
+- FINAL_RELEASE_SHA=132f78113cf3b0917b459db39d79c710450bed52
+- PRODUCTION_SHA=132f78113cf3b0917b459db39d79c710450bed52
+- PRODUCTION_VERSION=v0.12.0
+- PRODUCTION_UPSTREAM=127.0.0.1:3007
+- PRODUCTION_HEALTH=PASS
+- RELEASESTAMP=PASS
+- PUBLIC_SMOKE=PASS
+- AUTHENTICATED_SMOKE=PASS
+- TUTOR_VISIBLE=PASS
+- OPENROUTER_VISIBLE=PASS
+- DETERMINISTIC_FALLBACK=PASS
+- MULTITURN=PASS
+- ROLLBACK_REMAINING=PASS
+- MIGRATIONS=NO
+- SUPABASE_REMOTE_CHANGE=NO
+- CONTENT_SYNC=NO
+- CONTENT_V4_CHANGE=NO
+- DATABASE_CHANGED=false
+- SECRETS_EXPOSED=false
+
+### Alcance
+- Release `v0.12.0` promovido y validado en produccion para Tutor AI visible.
+- Cierre exclusivamente documental sobre evidencia previamente confirmada; no
+  ejecuta deploy, Nginx, Canary, Supabase, base de datos, tag ni GitHub Release.
+- No modifica codigo funcional, `VERSION.json`, contenido V4 ni infraestructura.
+
+### Evidencia de cierre
+- [x] Release `v0.12.0` cerrado sobre
+  `132f78113cf3b0917b459db39d79c710450bed52`.
+- [x] GitHub Release `v0.12.0` publicada.
+- [x] Produccion validada en `v0.12.0` con upstream `127.0.0.1:3007`.
+- [x] ReleaseStamp, smoke publico, smoke autenticado, Tutor visible,
+  OpenRouter visible, fallback deterministico y multiturno registrados como PASS
+  desde evidencia ya confirmada.
+- [x] Sin migraciones, cambios remotos Supabase, Content Sync, cambios V4,
+  cambios de base de datos ni secretos expuestos durante este cierre documental.
+- [x] Rollback conservado: `gcm-canary-l2-e3e9b34`,
+  `127.0.0.1:3006`, version `v0.11.0`.
+
+## v0.11.0 / dashboard update production closeout
+- VERSION=0.11.0
+- RELEASE_DATE=2026-08-30
+- RELEASE_STATUS=CLOSED
+- RELEASE_CLASSIFICATION=MINOR
+- FINAL_RELEASE_SHA=e3e9b3436f57a0354c7fed941140df468499d624
+- CANARY=PASS
+- PRODUCTION_PROMOTION=PASS
+- PRODUCTION_RUNTIME=https://ganaconmerito.com
+- PRODUCTION_RUNTIME_SHA=e3e9b3436f57a0354c7fed941140df468499d624
+- RELEASE_STAMP=PASS
+- PUBLIC_RUNTIME_SMOKE=PASS
+- AUTHENTICATED_SMOKE=PASS
+- V4_ACTIVE_COUNT=248
+- RELEASE_TAG=v0.11.0
+- RELEASE_TAG_TARGET_SHA=e3e9b3436f57a0354c7fed941140df468499d624
+- GITHUB_RELEASE=published
+- GITHUB_RELEASE_URL=https://github.com/MarlonMedellin/GanaConMerito/releases/tag/v0.11.0
+- CLEANUP=NOT_PERFORMED
+- Runtime verified: yes.
+- Deploy performed: yes.
+- User exposure: true.
 
 ## Cierre v0.11.0
 

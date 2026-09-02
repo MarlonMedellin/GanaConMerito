@@ -14,31 +14,93 @@ Related files:
 
 La version publica de la aplicacion se define unicamente en `VERSION.json`.
 
+No crear una segunda constante editable de version. package.json.version no es la fuente publica de release salvo decision futura explicita.
+
 Runtime identity:
 
 - version y release date: `VERSION.json`;
 - build commit y build time: `src/lib/build-info.ts`;
 - evidencia de deploy: runtime visible y `ReleaseStamp`.
 
-No crear una segunda constante editable de version. `package.json.version` no es la fuente publica de release salvo decision futura explicita.
+- version: `0.12.0`
+- release status: `CLOSED`
+- release tag: `v0.12.0`
+- GitHub Release: `published`
+- final release SHA: `132f78113cf3b0917b459db39d79c710450bed52`
+- production SHA: `132f78113cf3b0917b459db39d79c710450bed52`
+- production version: `v0.12.0`
+- production upstream: `127.0.0.1:3007`
+- production health: `PASS`
+- ReleaseStamp: `PASS`
+- public smoke: `PASS`
+- authenticated smoke: `PASS`
+- Tutor visible: `PASS`
+- OpenRouter visible: `PASS`
+- deterministic fallback: `PASS`
+- multiturn: `PASS`
+- rollback remaining: `PASS`
+- migrations: `NO`
+- Supabase remote change: `NO`
+- Content Sync: `NO`
+- Content V4 change: `NO`
+- database changed: `false`
+- secrets exposed: `false`
+
+Rollback preserved:
+
+- runtime container: `gcm-canary-l2-e3e9b34`
+- upstream: `127.0.0.1:3006`
+- version: `v0.11.0`
+
+Previous production release metadata:
+
+- version: `0.11.0`
+- release date: `2026-08-30`
+- final release SHA: `e3e9b3436f57a0354c7fed941140df468499d624`
+- release status: `CLOSED`
+- Canary: `PASS`
+- production promotion: `PASS`
+- ReleaseStamp: `PASS`
+- public runtime smoke: `PASS`
+- authenticated smoke: `PASS`
+- V4 active count: `248`
+- release tag: `v0.11.0`
+- release tag target SHA: `e3e9b3436f57a0354c7fed941140df468499d624`
+- GitHub Release: `published`
+- GitHub Release URL:
+  `https://github.com/MarlonMedellin/GanaConMerito/releases/tag/v0.11.0`
+- cleanup: `NOT_PERFORMED`
+- release closeout: `docs/05-ops/V0.11.0-PRODUCTION-CLOSEOUT-20260830.md`
 
 ## Release vigente
 
-- Version: `0.11.0`.
-- Release date: `2026-08-30`.
-- Final release SHA: `e3e9b3436f57a0354c7fed941140df468499d624`.
-- Estado: `CLOSED`.
-- Produccion: `https://ganaconmerito.com`.
-- Runtime: `gcm-canary-l2-e3e9b34` en `:3006`.
-- Runtime SHA: `e3e9b3436f57a0354c7fed941140df468499d624`.
-- Tag: `v0.11.0`.
-- GitHub Release: `published`.
-- ReleaseStamp: `PASS`.
-- Public smoke: `PASS`.
-- Authenticated smoke: `PASS`.
-- V4 active count: `248`.
-- Rollback `:3002`: retirado.
-- Rollback `:3005`: retirado.
+- production version: `v0.12.0`
+- production final release SHA: `132f78113cf3b0917b459db39d79c710450bed52`
+- public runtime: `https://ganaconmerito.com`
+- public runtime SHA: `132f78113cf3b0917b459db39d79c710450bed52`
+- production upstream: `127.0.0.1:3007`
+- production health: `PASS`
+- ReleaseStamp: `PASS`
+- public smoke: `PASS`
+- authenticated smoke: `PASS`
+- Tutor visible: `PASS`
+- OpenRouter visible: `PASS`
+- deterministic fallback: `PASS`
+- multiturn: `PASS`
+- rollback remaining: `PASS`
+- release tag: `v0.12.0`
+- release tag target SHA: `132f78113cf3b0917b459db39d79c710450bed52`
+- GitHub Release: `published`
+- GitHub Release URL:
+  `https://github.com/MarlonMedellin/GanaConMerito/releases/tag/v0.12.0`
+- migrations: `NO`
+- Supabase remote change: `NO`
+- Content Sync: `NO`
+- Content V4 change: `NO`
+- database changed: `false`
+- secrets exposed: `false`
+- rollback runtime `v0.11.0`: `gcm-canary-l2-e3e9b34` on
+  `127.0.0.1:3006`, preserved
 
 El inventario del host todavia reporto contenedores historicos en `:3003` y `:3004`; no forman parte de la produccion verificada y requieren clasificacion antes de eliminarlos.
 
