@@ -9,6 +9,8 @@ import { normalizeTutorConversation } from "@/lib/tutor/tutor-conversation";
 import { coordinateVisibleTutorTurn } from "@/lib/tutor/tutor-visible-coordinator";
 import { isTutorVisibleRequested } from "@/lib/tutor/tutor-candidate-policy";
 import { loadTutorBudgetSnapshot } from "@/lib/tutor/tutor-budget";
+import { defaultAttemptStore } from "@/domain/session/attempt-service";
+import type { PracticeMode } from "@/types/session";
 
 const tutor = new DeterministicTutorProvider();
 
@@ -52,6 +54,27 @@ export async function POST(request: Request) {
     }
 
     const { supabase, profile } = auth;
+
+    // Validate authoritative attempt if attemptId provided or query latest
+    let attemptRecord = attemptId
+      ? await defaultAttemptStore.getAttempt(attemptId)
+      : await defaultAttemptStore.getLatestAttemptForSessionItem(sessionId, itemId);
+
+    if (attemptId && !attemptRecord) {
+      return observedJson(observation, { error: "Attempt not found" }, { status: 400, event: "canary.tutor.attempt_not_found", sessionId, itemId });
+    }
+
+    if (attemptRecord) {
+      if (attemptRecord.sessionId !== sessionId || attemptRecord.itemId !== itemId || attemptRecord.profileId !== profile.id) {
+        return observedJson(observation, { error: "Attempt ownership mismatch" }, { status: 403, event: "canary.tutor.attempt_mismatch", sessionId, itemId });
+      }
+      if (attemptRecord.phase === "expired") {
+        return observedJson(observation, { error: "Attempt has expired" }, { status: 400, event: "canary.tutor.attempt_expired", sessionId, itemId });
+      }
+    }
+
+    const effectiveMode: PracticeMode = attemptRecord?.mode ?? (mode === "simulation" || mode === "review" ? mode : "guided");
+
     const evidence = await buildTutorEvidence({
       supabase,
       userId: profile.id,
@@ -59,8 +82,8 @@ export async function POST(request: Request) {
       itemId,
     });
 
-    const isAnswered = Boolean(evidence.userSession.selectedOption);
-    if (mode === "simulation" && !isAnswered) {
+    const isAnswered = Boolean(evidence.userSession.selectedOption) || attemptRecord?.phase === "submitted";
+    if (effectiveMode === "simulation" && !isAnswered) {
       return observedJson(
         observation,
         {
@@ -99,11 +122,16 @@ export async function POST(request: Request) {
       );
     }
 
+    // Mark assistance used on pre-answer turn
+    if (attemptRecord && !isAnswered) {
+      await defaultAttemptStore.markAssistanceUsed(attemptRecord.attemptId);
+    }
+
     const tutorInput = {
       userId: profile.id,
       sessionId,
       itemId,
-      attemptId,
+      attemptId: attemptRecord?.attemptId ?? attemptId,
       clientTurnId,
       profile: requestedProfile,
       message: userMessage,

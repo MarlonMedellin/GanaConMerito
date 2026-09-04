@@ -114,6 +114,8 @@ export function PracticeSession() {
     mobileTriggerRef.current?.focus();
   }
 
+  const [currentAttempt, setCurrentAttempt] = useState<{ id: string; phase: string; mode: string } | null>(null);
+
   const sessionEnded = useMemo(() => {
     const currentState = feedback?.currentState ?? session?.currentState;
     return currentState === "session_close";
@@ -131,11 +133,12 @@ export function PracticeSession() {
     setFeedback(null);
     setPendingNextItemId(null);
     setAssistanceUsed(false);
+    setCurrentAttempt(null);
   }
 
   async function loadItem(sessionId: string, itemId: string) {
     const response = await fetch(
-      `/api/session/item?sessionId=${encodeURIComponent(sessionId)}&itemId=${encodeURIComponent(itemId)}&mode=${practiceMode}&profile=${tutorProfile}`,
+      `/api/session/item?sessionId=${encodeURIComponent(sessionId)}&itemId=${encodeURIComponent(itemId)}&profile=${tutorProfile}`,
       { cache: "no-store" },
     );
     const data = await response.json();
@@ -145,6 +148,12 @@ export function PracticeSession() {
     }
 
     setItem(data);
+    if (data.attempt) {
+      setCurrentAttempt(data.attempt);
+      if (data.attempt.mode) {
+        setPracticeMode(data.attempt.mode);
+      }
+    }
     setSelectedOption(null);
     setHintVisible(false);
     setFeedback(null);
@@ -200,7 +209,7 @@ export function PracticeSession() {
       const response = await fetch("/api/session/start", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ mode: "practice" }),
+        body: JSON.stringify({ mode: practiceMode === "simulation" ? "exam" : practiceMode === "review" ? "review" : "practice" }),
       });
 
       const data = await response.json();
@@ -233,6 +242,8 @@ export function PracticeSession() {
     setError(null);
     setSessionMessage(null);
 
+    const clientRequestId = `req-${Date.now()}-${Math.random().toString(36).substring(2, 7)}`;
+
     try {
       const response = await fetch("/api/session/advance", {
         method: "POST",
@@ -240,10 +251,10 @@ export function PracticeSession() {
         body: JSON.stringify({
           sessionId: session.sessionId,
           itemId: item.id,
+          attemptId: currentAttempt?.id,
           selectedOption,
           userRationale: userRationale.trim() || undefined,
-          mode: practiceMode,
-          assistanceUsed,
+          clientRequestId,
         }),
       });
 

@@ -143,7 +143,7 @@ export async function requireOwnedSession(params: { sessionId: string }) {
   const { supabase, profile } = auth;
   const { data: session, error: sessionError } = await supabase
     .from("sessions")
-    .select("id, profile_id, current_state, status, ended_at")
+    .select("id, profile_id, mode, current_state, status, ended_at")
     .eq("id", params.sessionId)
     .eq("profile_id", profile.id)
     .single();

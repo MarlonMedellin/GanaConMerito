@@ -229,3 +229,60 @@ test("vNext Tutor Orchestrator: Brief profile pre-answer returns bullet points w
   const words = result.output.visibleMessage.trim().split(/\s+/).length;
   assert.ok(words <= 80, `Brief profile output should be concise (got ${words} words)`);
 });
+
+test("Attempt Service: enforces ownership, expiration, replay idempotency and deduplication", async () => {
+  const { defaultAttemptStore } = await import("../src/domain/session/attempt-service");
+
+  const attempt = await defaultAttemptStore.createAttempt({
+    sessionId: "sess-adv-1",
+    itemId: "item-adv-1",
+    profileId: "user-adv-1",
+    mode: "guided",
+  });
+
+  assert.equal(attempt.phase, "evaluating");
+  assert.equal(attempt.assistanceUsed, false);
+
+  // Mark assistance used
+  await defaultAttemptStore.markAssistanceUsed(attempt.attemptId);
+  const updatedAssistance = await defaultAttemptStore.getAttempt(attempt.attemptId);
+  assert.equal(updatedAssistance?.assistanceUsed, true);
+
+  // Submit attempt
+  const submitResult1 = await defaultAttemptStore.submitAttempt({
+    attemptId: attempt.attemptId,
+    sessionId: "sess-adv-1",
+    itemId: "item-adv-1",
+    profileId: "user-adv-1",
+    selectedOption: "B",
+    clientRequestId: "req-unique-001",
+  });
+
+  assert.equal(submitResult1.attempt.phase, "submitted");
+  assert.equal(submitResult1.isReplay, false);
+
+  // Replay submit attempt with same clientRequestId
+  const submitResult2 = await defaultAttemptStore.submitAttempt({
+    attemptId: attempt.attemptId,
+    sessionId: "sess-adv-1",
+    itemId: "item-adv-1",
+    profileId: "user-adv-1",
+    selectedOption: "B",
+    clientRequestId: "req-unique-001",
+  });
+
+  assert.equal(submitResult2.isReplay, true);
+
+  // Mismatch error tests
+  await assert.rejects(
+    () => defaultAttemptStore.submitAttempt({
+      attemptId: attempt.attemptId,
+      sessionId: "other-session",
+      itemId: "item-adv-1",
+      profileId: "user-adv-1",
+      selectedOption: "B",
+      clientRequestId: "req-mismatch",
+    }),
+    /ATTEMPT_SESSION_MISMATCH/
+  );
+});

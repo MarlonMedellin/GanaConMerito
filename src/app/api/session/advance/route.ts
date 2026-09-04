@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { scoreResponseBaselineHeuristicV1 } from "../../../../domain/evaluation/score-response";
 import { selectNextItem } from "../../../../domain/item-selection/select-next-item";
 import { getNextState } from "../../../../domain/orchestrator/session-machine";
+import { defaultAttemptStore } from "../../../../domain/session/attempt-service";
 import { getMaxSessionTurns } from "../../../../lib/config/session";
 import { isLearningProfileOnboardingComplete } from "../../../../lib/onboarding/status";
 import { V4QuestionRepository } from "../../../../lib/question-bank/v4-question-repository";
@@ -65,6 +66,34 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Could not load session turns" }, { status: 500 });
   }
 
+  const clientRequestId = typeof json.clientRequestId === "string" ? json.clientRequestId : "";
+  const attemptIdParam = typeof json.attemptId === "string" ? json.attemptId : "";
+
+  let attemptRecord = attemptIdParam
+    ? await defaultAttemptStore.getAttempt(attemptIdParam)
+    : await defaultAttemptStore.getLatestAttemptForSessionItem(body.sessionId, body.itemId);
+
+  if (!attemptRecord) {
+    return NextResponse.json({ error: "No active attempt found for session and item" }, { status: 400 });
+  }
+
+  if (attemptRecord.sessionId !== body.sessionId || attemptRecord.itemId !== body.itemId || attemptRecord.profileId !== profile.id) {
+    return NextResponse.json({ error: "Attempt parameters do not match authenticated session" }, { status: 403 });
+  }
+
+  if (attemptRecord.phase === "expired") {
+    return NextResponse.json({ error: "Attempt has expired" }, { status: 400 });
+  }
+
+  const { attempt: submittedAttempt, isReplay } = await defaultAttemptStore.submitAttempt({
+    attemptId: attemptRecord.attemptId,
+    sessionId: body.sessionId,
+    itemId: body.itemId,
+    profileId: profile.id,
+    selectedOption: body.selectedOption,
+    clientRequestId,
+  });
+
   const evaluation = scoreResponseBaselineHeuristicV1({
     selectedOption: body.selectedOption,
     correctOption: item.correctOption,
@@ -94,43 +123,45 @@ export async function POST(request: Request) {
     hasError: false,
   });
 
-  const { error: advanceError } = await admin.rpc("advance_session_atomic", {
-    p_profile_id: profile.id,
-    p_session_id: body.sessionId,
-    p_item_id: body.itemId,
-    p_selected_option: body.selectedOption ?? null,
-    p_user_rationale: body.userRationale ?? null,
-    p_response_time_ms: body.responseTimeMs ?? null,
-    p_confidence_self_report: body.confidenceSelfReport ?? null,
-    p_feedback_text: feedbackText,
-    p_is_correct: evaluation.isCorrect,
-    p_reasoning_score: evaluation.reasoningScore,
-    p_normative_consistency_score: evaluation.normativeConsistencyScore,
-    p_competency_score: evaluation.competencyScore,
-    p_estimated_theta_delta: evaluation.estimatedThetaDelta,
-    p_remediation_needed: evaluation.remediationNeeded,
-    p_evaluation_source: evaluation.evaluationSource,
-    p_evaluation_version: evaluation.evaluationVersion,
-    p_previous_state: previousState,
-    p_current_state: currentState,
-  });
-
-  if (advanceError) {
-    console.error("advance_session_atomic failed", {
-      message: advanceError.message,
-      details: advanceError.details,
-      hint: advanceError.hint,
-      code: advanceError.code,
-      sessionId: body.sessionId,
-      itemId: body.itemId,
-      profileId: profile.id,
-      previousState,
-      currentState,
-      evaluationSource: evaluation.evaluationSource,
-      evaluationVersion: evaluation.evaluationVersion,
+  if (!isReplay) {
+    const { error: advanceError } = await admin.rpc("advance_session_atomic", {
+      p_profile_id: profile.id,
+      p_session_id: body.sessionId,
+      p_item_id: body.itemId,
+      p_selected_option: body.selectedOption ?? null,
+      p_user_rationale: body.userRationale ?? null,
+      p_response_time_ms: body.responseTimeMs ?? null,
+      p_confidence_self_report: body.confidenceSelfReport ?? null,
+      p_feedback_text: feedbackText,
+      p_is_correct: evaluation.isCorrect,
+      p_reasoning_score: evaluation.reasoningScore,
+      p_normative_consistency_score: evaluation.normativeConsistencyScore,
+      p_competency_score: evaluation.competencyScore,
+      p_estimated_theta_delta: evaluation.estimatedThetaDelta,
+      p_remediation_needed: evaluation.remediationNeeded,
+      p_evaluation_source: evaluation.evaluationSource,
+      p_evaluation_version: evaluation.evaluationVersion,
+      p_previous_state: previousState,
+      p_current_state: currentState,
     });
 
-    return NextResponse.json({ error: "Could not persist session advance atomically" }, { status: 500 });
+    if (advanceError) {
+      console.error("advance_session_atomic failed", {
+        message: advanceError.message,
+        details: advanceError.details,
+        hint: advanceError.hint,
+        code: advanceError.code,
+        sessionId: body.sessionId,
+        itemId: body.itemId,
+        profileId: profile.id,
+        previousState,
+        currentState,
+        evaluationSource: evaluation.evaluationSource,
+        evaluationVersion: evaluation.evaluationVersion,
+      });
+
+      return NextResponse.json({ error: "Could not persist session advance atomically" }, { status: 500 });
+    }
   }
 
   const seenItemIds = [
@@ -149,15 +180,12 @@ export async function POST(request: Request) {
         excludeItemIds: seenItemIds as string[],
       });
 
-  const modeParam = json.mode && ["guided", "simulation", "review"].includes(json.mode) ? json.mode : "guided";
-  const assistanceUsed = Boolean(json.assistanceUsed);
-
   const attemptResult = {
-    attemptId: `att-${body.sessionId}-${body.itemId}`,
+    attemptId: submittedAttempt.attemptId,
     itemId: body.itemId,
     phase: "submitted" as const,
-    mode: modeParam,
-    assistanceUsed,
+    mode: submittedAttempt.mode,
+    assistanceUsed: submittedAttempt.assistanceUsed,
     selectedOption: body.selectedOption,
     correctAnswer: item.correctOption,
     isCorrect: evaluation.isCorrect,

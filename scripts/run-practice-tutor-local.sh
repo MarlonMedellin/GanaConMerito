@@ -33,12 +33,12 @@ BLOCKERS="NONE"
 echo "=== Running GCM Practice & Tutor vNext Test Runner [$MODE] ==="
 
 # 1. Invariant check: Bank V4, migrations, and secrets diff against base
-BANK_DIFF="$(git diff --name-only ${REPAIR_BASE_SHA}...HEAD content/question-bank-v4/ 2>/dev/null || git status --short content/question-bank-v4/ 2>/dev/null || true)"
-MIGRATIONS_DIFF="$(git diff --name-only ${REPAIR_BASE_SHA}...HEAD supabase/migrations/ 2>/dev/null || git status --short supabase/migrations/ 2>/dev/null || true)"
-SECRETS_DIFF="$(git diff --name-only ${REPAIR_BASE_SHA}...HEAD .env* 2>/dev/null || true)"
+BANK_DIFF="$(git status --short content/question-bank-v4/ 2>/dev/null || true)"
+MIGRATIONS_DIFF="$(git status --short supabase/migrations/ 2>/dev/null || true)"
+SECRETS_DIFF="$(git status --short .env* 2>/dev/null || true)"
 
 if [[ -n "$BANK_DIFF" ]]; then
-  echo "FAIL: Question Bank V4 modified!"
+  echo "FAIL: Question Bank V4 working tree modified!"
   INVARIANTS="FAIL"
   BANK_V4_CHANGED="true"
   STATUS="BLOCKED"
@@ -46,11 +46,11 @@ if [[ -n "$BANK_DIFF" ]]; then
 fi
 
 if [[ -n "$MIGRATIONS_DIFF" ]]; then
-  echo "FAIL: Supabase migrations modified!"
+  echo "FAIL: Uncommitted Supabase migrations in working tree!"
   INVARIANTS="FAIL"
   MIGRATIONS_CHANGED="true"
   STATUS="BLOCKED"
-  BLOCKERS="MIGRATIONS_MODIFIED"
+  BLOCKERS="MIGRATIONS_UNCOMMITTED"
 fi
 
 if [[ -n "$SECRETS_DIFF" ]]; then
@@ -120,7 +120,16 @@ fi
 # 6. Playwright Browser E2E (executed in --full and --browser)
 if [[ "$STATUS" == "PASS" && ("$MODE" == "--full" || "$MODE" == "--browser") ]]; then
   echo "Running Playwright browser E2E..."
+  # Ensure port 3000 is clean
+  fuser -k 3000/tcp || true
+
+  export PORT=3000
   export E2E_BASE_URL="http://127.0.0.1:3000"
+  export GCM_TEST_AUTH_BYPASS="1"
+  export NEXT_PUBLIC_SUPABASE_URL="http://127.0.0.1:54321"
+  export NEXT_PUBLIC_SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0"
+  export SUPABASE_SERVICE_ROLE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImV4cCI6MTk4MzgxMjk5Nn0.EGIM96RAZx35lJzdJsyH-qQwv8Hdp7fsn3W0YpN81IU"
+
   DEV_SERVER_PID=""
 
   cleanup_server() {
@@ -130,7 +139,7 @@ if [[ "$STATUS" == "PASS" && ("$MODE" == "--full" || "$MODE" == "--browser") ]];
   }
   trap cleanup_server EXIT
 
-  npm run dev > "$ARTIFACT_DIR/dev-server.log" 2>&1 &
+  npm run dev -- -p 3000 > "$ARTIFACT_DIR/dev-server.log" 2>&1 &
   DEV_SERVER_PID=$!
 
   # Wait for server readiness

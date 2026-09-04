@@ -114,19 +114,19 @@ export class TutorOrchestrator {
     if (requestsCorrectAnswer(input.message) && !canRevealCorrectAnswer) {
       if (profile === "socratic") {
         return trimToWordLimit(
-          "El Tutor te ayuda a organizar el análisis sin indicar ni descartar respuestas. No puedo revelar la clave antes de que respondas. Antes de elegir, ¿qué decisión puede tomar directamente el actor del caso y cuál requeriría la intervención de otra instancia? Separa esas dos categorías y luego compara las consecuencias.",
+          `El Tutor te ayuda a organizar el análisis sin indicar ni descartar respuestas. No puedo revelar la clave antes de que respondas. Para este ítem de ${question.area}, ¿qué acción responde directamente a la función descrita en el caso? Separa los hechos de las suposiciones y compara las opciones.`,
           110,
         );
       }
       if (profile === "brief") {
         return trimToWordLimit(
-          "• No puedo revelar la clave antes de responder.\n• Identifica qué puede decidir realmente el actor.\n• Revisa qué finalidad debe proteger.",
+          `• No puedo revelar la clave antes de responder.\n• Revisa los hechos del caso en ${question.area}.\n• Compara cuál opción cumple la tarea requerida.`,
           80,
         );
       }
       // direct profile
       return trimToWordLimit(
-        "No puedo revelar la clave antes de responder. Analiza tres criterios neutrales: competencia del actor, finalidad pedagógica y debido proceso. Comprueba qué hechos sustentan el caso y descarta cualquier acción que exceda el rol.",
+        `No puedo revelar la clave antes de responder. Analiza los criterios centrales: 1. Competencia en ${question.area}. 2. Coherencia con la tarea requerida. 3. Ajuste factual al enunciado. Comprueba los hechos y descarta opciones no sustentadas.`,
         150,
       );
     }
