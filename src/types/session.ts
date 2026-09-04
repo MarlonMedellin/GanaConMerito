@@ -1,5 +1,20 @@
 export type SessionMode = "practice" | "exam" | "review";
 
+export type PracticeMode = "guided" | "simulation" | "review";
+
+export type AttemptPhase =
+  | "loading"
+  | "evaluating"
+  | "submitting"
+  | "submitted"
+  | "transitioning"
+  | "expired"
+  | "error";
+
+export type TutorProfile = "socratic" | "direct" | "brief";
+
+export const TUTOR_PROFILES: readonly TutorProfile[] = ["socratic", "direct", "brief"] as const;
+
 export type SessionState =
   | "onboarding"
   | "diagnostic"
@@ -82,4 +97,61 @@ export interface PracticeQuestionViewModel {
   tags?: string[];
   misconceptionHints?: string[];
   sourceTruthStatus?: "source_verified" | "synthesized_governed_unverified" | "missing";
+}
+
+export interface PracticeItemPublic {
+  schemaVersion: string;
+  item: {
+    id: string;
+    domain: string;
+    competency: string;
+    context: string;
+    stem: string;
+    options: Array<{ id: string; text: string }>;
+    presentation?: Record<string, unknown>;
+  };
+  attempt: {
+    id: string;
+    phase: "evaluating" | "submitted";
+    mode: PracticeMode;
+    assistanceUsed: boolean;
+  };
+  tutor: {
+    preAnswerEnabled: boolean;
+    allowedProfiles: TutorProfile[];
+    selectedProfile: TutorProfile;
+  };
+}
+
+export interface SubmitAttemptRequest {
+  attemptId: string;
+  itemId: string;
+  selectedOption: "A" | "B" | "C" | "D";
+  clientRequestId: string;
+  mode?: PracticeMode;
+  profile?: TutorProfile;
+}
+
+export interface SubmittedAttemptResult {
+  attemptId: string;
+  itemId: string;
+  phase: "submitted";
+  mode: PracticeMode;
+  assistanceUsed: boolean;
+  selectedOption: string;
+  correctAnswer: string;
+  isCorrect: boolean;
+  feedback: {
+    selectedExplanation: string;
+    correctExplanation: string;
+    distractorExplanations?: Record<string, string>;
+    learningNote: string;
+    sourcePresentation?: {
+      title: string;
+      issuer?: string;
+      locator?: string;
+      url?: string;
+      verificationStatus?: string;
+    };
+  };
 }

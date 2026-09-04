@@ -149,7 +149,33 @@ export async function POST(request: Request) {
         excludeItemIds: seenItemIds as string[],
       });
 
-  const response: AdvanceSessionResponse = {
+  const modeParam = json.mode && ["guided", "simulation", "review"].includes(json.mode) ? json.mode : "guided";
+  const assistanceUsed = Boolean(json.assistanceUsed);
+
+  const attemptResult = {
+    attemptId: `att-${body.sessionId}-${body.itemId}`,
+    itemId: body.itemId,
+    phase: "submitted" as const,
+    mode: modeParam,
+    assistanceUsed,
+    selectedOption: body.selectedOption,
+    correctAnswer: item.correctOption,
+    isCorrect: evaluation.isCorrect,
+    feedback: {
+      selectedExplanation: item.explanations[body.selectedOption as "A" | "B" | "C" | "D"] ?? "",
+      correctExplanation: item.explanations[item.correctOption] ?? "",
+      distractorExplanations: item.explanations as Record<string, string>,
+      learningNote: item.learningNote ?? "",
+      sourcePresentation: item.sourceReference
+        ? {
+            title: item.sourceReference,
+            verificationStatus: "source_verified",
+          }
+        : undefined,
+    },
+  };
+
+  const response: AdvanceSessionResponse & { attemptResult?: typeof attemptResult } = {
     sessionId: body.sessionId,
     previousState,
     currentState,
@@ -166,6 +192,7 @@ export async function POST(request: Request) {
     hintLevel: evaluation.remediationNeeded ? 1 : 0,
     nextItemId: nextItem?.id,
     shouldTransition: previousState !== currentState,
+    attemptResult,
   };
 
   return NextResponse.json(response, { status: 200 });

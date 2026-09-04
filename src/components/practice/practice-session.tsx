@@ -73,6 +73,9 @@ export function PracticeSession() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [sessionMessage, setSessionMessage] = useState<string | null>(null);
+  const [practiceMode, setPracticeMode] = useState<"guided" | "simulation" | "review">("guided");
+  const [tutorProfile, setTutorProfile] = useState<"socratic" | "direct" | "brief">("socratic");
+  const [assistanceUsed, setAssistanceUsed] = useState(false);
 
   const sessionEnded = useMemo(() => {
     const currentState = feedback?.currentState ?? session?.currentState;
@@ -90,11 +93,12 @@ export function PracticeSession() {
     setTutorMobileOpen(false);
     setFeedback(null);
     setPendingNextItemId(null);
+    setAssistanceUsed(false);
   }
 
   async function loadItem(sessionId: string, itemId: string) {
     const response = await fetch(
-      `/api/session/item?sessionId=${encodeURIComponent(sessionId)}&itemId=${encodeURIComponent(itemId)}`,
+      `/api/session/item?sessionId=${encodeURIComponent(sessionId)}&itemId=${encodeURIComponent(itemId)}&mode=${practiceMode}&profile=${tutorProfile}`,
       { cache: "no-store" },
     );
     const data = await response.json();
@@ -108,6 +112,7 @@ export function PracticeSession() {
     setHintVisible(false);
     setFeedback(null);
     setPendingNextItemId(null);
+    setAssistanceUsed(false);
   }
 
   async function resumeActiveSession() {
@@ -200,6 +205,8 @@ export function PracticeSession() {
           itemId: item.id,
           selectedOption,
           userRationale: userRationale.trim() || undefined,
+          mode: practiceMode,
+          assistanceUsed,
         }),
       });
 
@@ -261,16 +268,37 @@ export function PracticeSession() {
       {!initializing && !session && !error ? (
         <div className="card">
           <div className="session-heading">
-            <p className="eyebrow">SESIÓN</p>
+            <p className="eyebrow">SESIÓN DE PRÁCTICA</p>
             <span className="session-count">lista para empezar</span>
           </div>
           <h1>Piensa como te van a evaluar.</h1>
+
+          <div className="mode-selection" style={{ margin: "1rem 0" }}>
+            <p className="small"><strong>Elige la modalidad de práctica:</strong></p>
+            <div className="actions" style={{ marginTop: "0.5rem" }}>
+              <button
+                type="button"
+                className={practiceMode === "guided" ? "primary" : "secondary"}
+                onClick={() => setPracticeMode("guided")}
+              >
+                💡 Práctica Guiada (Tutor previo)
+              </button>
+              <button
+                type="button"
+                className={practiceMode === "simulation" ? "primary" : "secondary"}
+                onClick={() => setPracticeMode("simulation")}
+              >
+                ⏱️ Simulación (Desempeño independiente)
+              </button>
+            </div>
+          </div>
+
           <div className="actions">
             {loading ? (
               <LoadingState message="Iniciando sesión..." />
             ) : (
               <button onClick={handleStart} className="primary">
-                Iniciar práctica
+                Iniciar práctica en modo {practiceMode === "guided" ? "Guiado" : "Simulación"}
               </button>
             )}
           </div>
@@ -287,18 +315,37 @@ export function PracticeSession() {
 
       {item ? (
         <section className="page">
-          <div className="session-heading">
-            <p className="eyebrow">SESIÓN</p>
-            <span className="session-count">{turnNumber} de práctica</span>
+          <div className="session-heading" style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <div>
+              <p className="eyebrow">SESIÓN DE PRÁCTICA</p>
+              <span className="session-count">{turnNumber} de práctica</span>
+            </div>
+            <div className="mode-toggle-header" style={{ display: "flex", gap: "0.5rem" }}>
+              <button
+                type="button"
+                className={`small ${practiceMode === "guided" ? "primary" : "secondary"}`}
+                onClick={() => !hasFeedback && setPracticeMode("guided")}
+                disabled={hasFeedback}
+              >
+                Guided
+              </button>
+              <button
+                type="button"
+                className={`small ${practiceMode === "simulation" ? "primary" : "secondary"}`}
+                onClick={() => !hasFeedback && setPracticeMode("simulation")}
+                disabled={hasFeedback}
+              >
+                Simulation
+              </button>
+            </div>
           </div>
-          <h1>Piensa como te van a evaluar.</h1>
 
           <div className="practice">
             <article className="card question-card">
               <div className="practice-meta">
-                <span>Foco actual <strong>{formatTechnicalLabel(item.competency)}</strong></span>
-                <span>Meta de sesión <strong>práctica activa</strong></span>
-                <span>Dominio <strong>{formatTechnicalLabel(item.area)}</strong></span>
+                <span>Foco <strong>{formatTechnicalLabel(item.competency)}</strong></span>
+                <span>Modalidad <strong>{practiceMode === "guided" ? "Guiada" : "Simulación"}</strong></span>
+                <span>Asistencia <strong>{assistanceUsed ? "Sí (Tutor consultado)" : "No (Independiente)"}</strong></span>
               </div>
               <h2 className="question-type">Tipo de Pregunta {item.questionType ? formatTechnicalLabel(item.questionType) : "no especificado"}</h2>
               {item.context ? <p className="practice-context">{item.context}</p> : null}
@@ -344,7 +391,7 @@ export function PracticeSession() {
                   </p>
                   {feedback.answerReview.selectedExplanation ? <p className="small">Sobre tu elección: {feedback.answerReview.selectedExplanation}</p> : null}
                   {feedback.answerReview.correctExplanation ? <p className="small">Fundamento de la clave: {feedback.answerReview.correctExplanation}</p> : null}
-                  {feedback.answerReview.learningNote ? <p className="small"><strong>Nota de aprendizaje:</strong> {feedback.answerReview.learningNote}</p> : null}
+                  {feedback.answerReview.learningNote ? <p className="small"><strong>Regla de decisión:</strong> {feedback.answerReview.learningNote}</p> : null}
                 </div>
               ) : null}
 
@@ -372,6 +419,10 @@ export function PracticeSession() {
                 sessionId={session?.sessionId ?? ""}
                 currentItemId={item.id}
                 answered={hasFeedback}
+                mode={practiceMode}
+                profile={tutorProfile}
+                onProfileChange={setTutorProfile}
+                onTurnExecuted={() => setAssistanceUsed(true)}
                 fallbackMessage={feedback?.feedbackText}
               />
             </aside>

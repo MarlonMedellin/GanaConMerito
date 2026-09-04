@@ -1,3 +1,5 @@
+import type { TutorProfile } from "./session";
+
 export type TutorMode =
   | "current_question"
   | "contest_preparation"
@@ -186,6 +188,9 @@ export interface TutorTurnRequest {
   userId: string;
   sessionId: string;
   itemId: string;
+  attemptId?: string;
+  clientTurnId?: string;
+  profile?: TutorProfile;
   message: string;
   history?: TutorConversationMessage[];
   evidence: TutorEvidence;
@@ -240,6 +245,8 @@ export interface TutorTraceSignals {
 export interface TutorTurnResponse {
   mode: TutorMode;
   intent: TutorIntent;
+  phase?: "pre_answer" | "post_answer";
+  profile?: TutorProfile;
   visibleMessage: string;
   evidenceUsed: TutorEvidenceKey[];
   sourceTruthRefs: string[];
@@ -250,6 +257,13 @@ export interface TutorTurnResponse {
   suggestedAction?: string;
   rationaleQuality?: RationaleQuality;
   traceSignals?: TutorTraceSignals;
+  safety?: {
+    status: "allowed" | "redirected" | "blocked";
+    policyVersion: string;
+  };
+  delivery?: {
+    fallbackUsed: boolean;
+  };
 }
 
 export interface TutorTurnTrace {

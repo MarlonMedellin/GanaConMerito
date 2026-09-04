@@ -49,10 +49,15 @@ export class TutorOrchestrator {
       });
     }
 
+    const profile = input.profile && ["socratic", "direct", "brief"].includes(input.profile) ? input.profile : "socratic";
+    const phase: "pre_answer" | "post_answer" = guardrail.canRevealCorrectAnswer ? "post_answer" : "pre_answer";
     const rationaleQuality = classifyRationale(input.evidence.userSession.userRationale);
-    const rawVisibleMessage = this.buildVisibleMessage(input, intent, guardrail.canRevealCorrectAnswer, rationaleQuality);
+    const rawVisibleMessage = this.buildVisibleMessage(input, intent, guardrail.canRevealCorrectAnswer, profile, rationaleQuality);
     const sanitized = enforceNoRevealMessage(rawVisibleMessage, guardrail.canRevealCorrectAnswer);
     const confidence = guardrail.canRevealCorrectAnswer || !requestsCorrectAnswer(input.message) ? 0.82 : 0.68;
+
+    const isRedirected = requestsCorrectAnswer(input.message) && !guardrail.canRevealCorrectAnswer;
+    const safetyStatus = sanitized.guardrailTriggered ? "blocked" : isRedirected ? "redirected" : "allowed";
 
     return this.createTurn({
       input,
@@ -60,6 +65,8 @@ export class TutorOrchestrator {
       createdAt,
       mode,
       intent,
+      phase,
+      profile,
       visibleMessage: sanitized.message,
       degraded: false,
       confidence,
@@ -68,6 +75,8 @@ export class TutorOrchestrator {
       canRevealCorrectAnswer: guardrail.canRevealCorrectAnswer,
       rationaleQuality: intent === "analyze_user_rationale" || rationaleQuality ? rationaleQuality : undefined,
       suggestedAction: this.suggestAction(intent, guardrail.canRevealCorrectAnswer),
+      safety: { status: safetyStatus, policyVersion: "vNext-1.0" },
+      delivery: { fallbackUsed: false },
       traceSignals: {
         dossierAvailable: Boolean(input.evidence.question),
         responseModeUsed: this.mapResponseMode(intent, guardrail.canRevealCorrectAnswer),
@@ -94,42 +103,79 @@ export class TutorOrchestrator {
     input: TutorTurnRequest,
     intent: TutorIntent,
     canRevealCorrectAnswer: boolean,
+    profile: "socratic" | "direct" | "brief" = "socratic",
     rationaleQuality?: "weak" | "acceptable" | "strong",
   ): string {
     const question = input.evidence.question;
     const session = input.evidence.userSession;
-    const maxWords = input.evidence.userSession.selectedOption ? 220 : 120;
 
     if (!question) return TUTOR_INSUFFICIENT_EVIDENCE_MESSAGE;
 
     if (requestsCorrectAnswer(input.message) && !canRevealCorrectAnswer) {
+      if (profile === "socratic") {
+        return trimToWordLimit(
+          "El Tutor te ayuda a organizar el análisis sin indicar ni descartar respuestas. No puedo revelar la clave antes de que respondas. Antes de elegir, ¿qué decisión puede tomar directamente el actor del caso y cuál requeriría la intervención de otra instancia? Separa esas dos categorías y luego compara las consecuencias.",
+          110,
+        );
+      }
+      if (profile === "brief") {
+        return trimToWordLimit(
+          "• No puedo revelar la clave antes de responder.\n• Identifica qué puede decidir realmente el actor.\n• Revisa qué finalidad debe proteger.",
+          80,
+        );
+      }
+      // direct profile
       return trimToWordLimit(
-        "Todavía no puedo revelar la respuesta correcta. Primero responde la pregunta. Sí puedo ayudarte así: identifica qué pide el enunciado, descarta opciones que no atiendan la competencia evaluada y revisa qué alternativa se sostiene mejor con la información disponible.",
-        maxWords,
+        "No puedo revelar la clave antes de responder. Analiza tres criterios neutrales: competencia del actor, finalidad pedagógica y debido proceso. Comprueba qué hechos sustentan el caso y descarta cualquier acción que exceda el rol.",
+        150,
+      );
+    }
+
+    if (!canRevealCorrectAnswer) {
+      if (profile === "socratic") {
+        return trimToWordLimit(
+          `Para analizar "${question.area}", ¿cuál es la restricción o deber principal que la norma impone al actor del caso? Examina esa condición antes de ponderar las alternativas.`,
+          100,
+        );
+      }
+      if (profile === "brief") {
+        return trimToWordLimit(
+          `• Revisa el objetivo de ${question.competency}.\n• Separa los hechos del enunciado.\n• Compara las opciones objetivamente.`,
+          70,
+        );
+      }
+      return trimToWordLimit(
+        `Examina los criterios clave: 1. Competencia del rol en ${question.area}. 2. Coherencia con la tarea esperada. 3. Respeto al debido proceso. Realiza el contraste de opciones sin anticipar la clave.`,
+        140,
+      );
+    }
+
+    // Post-answer responses with profiles
+    const maxWords = profile === "brief" ? 110 : profile === "direct" ? 240 : 180;
+
+    if (profile === "brief" && canRevealCorrectAnswer) {
+      return trimToWordLimit(
+        `• La opción correcta registrada es ${question.correctOption}\n• Criterio: ${question.correctExplanation}\n• Aprendizaje: ${question.learningNote ?? "Aplica este principio a casos similares."}`,
+        110,
       );
     }
 
     if (intent === "give_hint") {
       return trimToWordLimit(
-        `Pista: ${question.hint ?? `enfócate en la competencia "${question.competency}" y separa el contexto del enunciado antes de comparar opciones.`} La mejor alternativa debe resolver la tarea esperada: ${question.expectedUserTask}`,
+        `Pista: ${question.hint ?? `enfócate en la competencia "${question.competency}" y separa el contexto del enunciado.`} La mejor alternativa responde a: ${question.expectedUserTask}`,
         maxWords,
       );
     }
 
     if (intent === "compare_options") {
-      const options = question.options.map((option) => `${option.key}: revisa si responde directamente al enunciado`).join(" ");
-      const suffix = canRevealCorrectAnswer ? ` La clave registrada es ${question.correctOption}: ${question.correctExplanation}` : " Aún no diré cuál es correcta.";
+      const options = question.options.map((option) => `${option.key}: revisa su ajuste al enunciado`).join(" ");
+      const suffix = canRevealCorrectAnswer ? ` La opción correcta registrada es ${question.correctOption}.` : "";
       return trimToWordLimit(`${options}.${suffix}`, maxWords);
     }
 
     if (intent === "analyze_user_rationale" && session.userRationale && rationaleQuality) {
-      const labels = {
-        weak: "débil: necesita conectar mejor la opción con el enunciado.",
-        acceptable: "aceptable: presenta una razón útil, pero puede contrastar distractores.",
-        strong: "fuerte: justifica y contrasta con claridad.",
-      };
       return trimToWordLimit(
-        `Tu justificación es ${labels[rationaleQuality]} Esta valoración es pedagógica y no cambia el puntaje oficial. ${session.feedback ? `Feedback registrado: ${session.feedback}` : ""} ${canRevealCorrectAnswer ? `La clave registrada es ${question.correctOption} y los distractores deben descartarse porque no sostienen tan bien la tarea esperada.` : ""}`,
+        `Justificación evaluada como ${rationaleQuality}. La opción correcta registrada es ${question.correctOption}. Esta valoración es pedagógica y no cambia el puntaje oficial. Revisa los distractores frente a la tarea esperada. ${session.feedback ? `Feedback oficial registrado: ${session.feedback}` : ""}`,
         maxWords,
       );
     }
@@ -138,8 +184,9 @@ export class TutorOrchestrator {
       const selectedExplanation = session.selectedOption
         ? question.explanations?.[session.selectedOption as "A" | "B" | "C" | "D"]
         : undefined;
+      const officialFeedback = session.feedback ? `Feedback oficial registrado: ${session.feedback}` : "Feedback oficial registrado.";
       return trimToWordLimit(
-        `La opción correcta registrada es ${question.correctOption}. ${question.correctExplanation} ${selectedExplanation ? `Sobre tu elección ${session.selectedOption}: ${selectedExplanation}` : ""} ${question.learningNote ? `Aprendizaje transferible: ${question.learningNote}` : ""} ${session.feedback ? `Feedback oficial registrado: ${session.feedback}` : ""} Revisa los distractores frente a la tarea esperada. Esta explicación es pedagógica y no cambia el puntaje oficial ni avanza la sesión.`,
+        `La opción correcta registrada es ${question.correctOption}. ${question.correctExplanation} ${selectedExplanation ? `Tu elección (${session.selectedOption}): ${selectedExplanation}` : ""} ${question.learningNote ? `Regla de decisión: ${question.learningNote}` : ""} ${officialFeedback} Revisa los distractores frente a la tarea esperada. Esta explicación es pedagógica y no cambia el puntaje oficial.`,
         maxWords,
       );
     }
@@ -203,6 +250,8 @@ export class TutorOrchestrator {
     createdAt: string;
     mode: TutorTurnResponse["mode"];
     intent: TutorIntent;
+    phase?: "pre_answer" | "post_answer";
+    profile?: "socratic" | "direct" | "brief";
     visibleMessage: string;
     evidenceUsed: TutorTurnResponse["evidenceUsed"];
     guardrailsApplied: string[];
@@ -211,12 +260,16 @@ export class TutorOrchestrator {
     degraded: boolean;
     suggestedAction?: string;
     rationaleQuality?: "weak" | "acceptable" | "strong";
+    safety?: { status: "allowed" | "redirected" | "blocked"; policyVersion: string };
+    delivery?: { fallbackUsed: boolean };
     traceSignals?: TutorTurnResponse["traceSignals"];
   }): TutorTurnResult {
     const sourceTruthRefs = buildSourceTruthRefs(params.input);
     const output: TutorTurnResponse = {
       mode: params.mode,
       intent: params.intent,
+      phase: params.phase ?? (params.canRevealCorrectAnswer ? "post_answer" : "pre_answer"),
+      profile: params.profile ?? "socratic",
       visibleMessage: params.visibleMessage,
       evidenceUsed: params.evidenceUsed,
       sourceTruthRefs,
@@ -226,6 +279,8 @@ export class TutorOrchestrator {
       degraded: params.degraded,
       suggestedAction: params.suggestedAction,
       rationaleQuality: params.rationaleQuality,
+      safety: params.safety ?? { status: "allowed", policyVersion: "vNext-1.0" },
+      delivery: params.delivery ?? { fallbackUsed: false },
       traceSignals: params.traceSignals,
     };
     const trace: TutorTurnTrace = {

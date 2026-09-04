@@ -23,6 +23,12 @@ export async function POST(request: Request) {
     itemId = typeof body.itemId === "string" ? body.itemId : "";
     const conversation = normalizeTutorConversation({ message: body.message, history: body.history });
     const userMessage = conversation.currentMessage;
+    const requestedProfile = typeof body.profile === "string" && ["socratic", "direct", "brief"].includes(body.profile)
+      ? (body.profile as "socratic" | "direct" | "brief")
+      : "socratic";
+    const attemptId = typeof body.attemptId === "string" ? body.attemptId : undefined;
+    const clientTurnId = typeof body.clientTurnId === "string" ? body.clientTurnId : undefined;
+    const mode = typeof body.mode === "string" ? body.mode : "guided";
 
     if (!sessionId || !itemId || !userMessage) {
       return observedJson(observation, { error: "sessionId, itemId y message son obligatorios" }, {
@@ -53,10 +59,53 @@ export async function POST(request: Request) {
       itemId,
     });
 
+    const isAnswered = Boolean(evidence.userSession.selectedOption);
+    if (mode === "simulation" && !isAnswered) {
+      return observedJson(
+        observation,
+        {
+          output: {
+            mode: "pre_answer",
+            intent: "clarify_concept",
+            phase: "pre_answer",
+            profile: requestedProfile,
+            visibleMessage: "El Tutor antes de responder está deshabilitado en modo Simulación. Se activará después de contestar el reactivo.",
+            evidenceUsed: ["user_session"],
+            sourceTruthRefs: [],
+            guardrailsApplied: ["simulation_mode_pre_answer_disabled"],
+            canRevealCorrectAnswer: false,
+            confidence: 1.0,
+            degraded: true,
+            safety: { status: "blocked", policyVersion: "vNext-1.0" },
+            delivery: { fallbackUsed: true },
+          },
+          trace: {
+            traceId: crypto.randomUUID(),
+            userId: profile.id,
+            sessionId,
+            itemId,
+            mode: "pre_answer",
+            intent: "clarify_concept",
+            evidenceUsed: ["user_session"],
+            sourceTruthRefs: [],
+            guardrailsApplied: ["simulation_mode_pre_answer_disabled"],
+            canRevealCorrectAnswer: false,
+            degraded: true,
+            confidence: 1.0,
+            createdAt: new Date().toISOString(),
+          },
+        },
+        { status: 200, event: "canary.tutor.simulation_blocked", sessionId, itemId },
+      );
+    }
+
     const tutorInput = {
       userId: profile.id,
       sessionId,
       itemId,
+      attemptId,
+      clientTurnId,
+      profile: requestedProfile,
       message: userMessage,
       history: conversation.history,
       evidence,
