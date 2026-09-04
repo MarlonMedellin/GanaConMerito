@@ -13,6 +13,9 @@ interface TutorInterfaceProps {
   onProfileChange?: (profile: TutorProfile) => void;
   fallbackMessage?: string;
   onTurnExecuted?: () => void;
+  attemptId?: string;
+  clientTurnId?: string;
+  cancelSignal?: AbortSignal;
 }
 
 interface TutorMessage {
@@ -55,6 +58,9 @@ export function TutorInterface({
   onProfileChange,
   fallbackMessage,
   onTurnExecuted,
+  attemptId,
+  clientTurnId,
+  cancelSignal,
 }: TutorInterfaceProps) {
   const [draft, setDraft] = useState("");
   const [selectedProfile, setSelectedProfile] = useState<TutorProfile>(externalProfile);
@@ -62,7 +68,14 @@ export function TutorInterface({
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const chatRef = useRef<HTMLDivElement | null>(null);
+  const activeFetchController = useRef<AbortController | null>(null);
   const draftStorageKey = `tutor-ai:draft:${sessionId}:${currentItemId}`;
+
+  useEffect(() => {
+    return () => {
+      activeFetchController.current?.abort();
+    };
+  }, [currentItemId]);
 
   useEffect(() => {
     setSelectedProfile(externalProfile);
@@ -116,13 +129,24 @@ export function TutorInterface({
     const history = buildClientTutorHistory(messages);
     setMessages((current: TutorMessage[]) => [...current, { role: "user", text: message }]);
 
+    activeFetchController.current?.abort();
+    const controller = new AbortController();
+    activeFetchController.current = controller;
+
+    if (cancelSignal) {
+      cancelSignal.addEventListener("abort", () => controller.abort(), { once: true });
+    }
+
     try {
       const response = await fetch("/api/tutor/turn", {
         method: "POST",
+        signal: controller.signal,
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           sessionId,
           itemId: currentItemId,
+          attemptId,
+          clientTurnId,
           message,
           history,
           mode,
@@ -141,6 +165,9 @@ export function TutorInterface({
         onTurnExecuted();
       }
     } catch (err) {
+      if (err instanceof DOMException && err.name === "AbortError") {
+        return;
+      }
       const text = fallbackMessage || (err instanceof Error ? err.message : "Error desconocido");
       setMessages((current: TutorMessage[]) => [...current, { role: "assistant", text }]);
       setError(fallbackMessage ? null : text);

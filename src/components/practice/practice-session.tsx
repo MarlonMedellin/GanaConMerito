@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { ErrorState } from "@/components/ui/error-state";
 import { EmptyState } from "@/components/ui/empty-state";
 import { LoadingState } from "@/components/ui/loading-state";
@@ -76,6 +76,43 @@ export function PracticeSession() {
   const [practiceMode, setPracticeMode] = useState<"guided" | "simulation" | "review">("guided");
   const [tutorProfile, setTutorProfile] = useState<"socratic" | "direct" | "brief">("socratic");
   const [assistanceUsed, setAssistanceUsed] = useState(false);
+
+  const feedbackHeaderRef = useRef<HTMLDivElement | null>(null);
+  const mobileSheetRef = useRef<HTMLElement | null>(null);
+  const sheetCloseButtonRef = useRef<HTMLButtonElement | null>(null);
+  const mobileTriggerRef = useRef<HTMLButtonElement | null>(null);
+
+  useEffect(() => {
+    if (feedback && feedbackHeaderRef.current) {
+      feedbackHeaderRef.current.focus();
+    }
+  }, [feedback]);
+
+  useEffect(() => {
+    if (!tutorMobileOpen) return;
+
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        closeMobileSheet();
+      }
+    }
+
+    window.addEventListener("keydown", handleKeyDown);
+    sheetCloseButtonRef.current?.focus();
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [tutorMobileOpen]);
+
+  function openMobileSheet() {
+    setTutorMobileOpen(true);
+  }
+
+  function closeMobileSheet() {
+    setTutorMobileOpen(false);
+    mobileTriggerRef.current?.focus();
+  }
 
   const sessionEnded = useMemo(() => {
     const currentState = feedback?.currentState ?? session?.currentState;
@@ -351,38 +388,51 @@ export function PracticeSession() {
               {item.context ? <p className="practice-context">{item.context}</p> : null}
               <div className="stem">{item.stem}</div>
 
-              {item.options.map((option) => {
-                const isSelected = selectedOption === option.key;
-                const className = [
-                  "option",
-                  isSelected ? "selected" : "",
-                  feedback?.evaluation.isCorrect && isSelected ? "correct" : "",
-                  feedback && !isSelected ? "dimmed" : "",
-                ].filter(Boolean).join(" ");
+              <div role="radiogroup" aria-label="Opciones de respuesta" className="options-group">
+                {item.options.map((option) => {
+                  const isSelected = selectedOption === option.key;
+                  const isCorrectOption = feedback?.answerReview.correctOption === option.key;
+                  const isSelectedOption = feedback?.answerReview.selectedOption === option.key;
+                  const className = [
+                    "option",
+                    isSelected ? "selected" : "",
+                    feedback && isCorrectOption ? "correct" : "",
+                    feedback && isSelectedOption && !feedback.evaluation.isCorrect ? "incorrect" : "",
+                    feedback && !isSelected && !isCorrectOption ? "dimmed" : "",
+                  ].filter(Boolean).join(" ");
 
-                return (
-                  <button
-                    key={option.key}
-                    type="button"
-                    className={className}
-                    onClick={() => !hasFeedback && setSelectedOption(option.key)}
-                    disabled={loading || hasFeedback}
-                  >
-                    <span className="key">{option.key}</span>
-                    <span>{option.text}</span>
-                  </button>
-                );
-              })}
+                  return (
+                    <button
+                      key={option.key}
+                      type="button"
+                      role="radio"
+                      aria-checked={isSelected}
+                      className={className}
+                      onClick={() => !hasFeedback && setSelectedOption(option.key)}
+                      disabled={loading || hasFeedback}
+                    >
+                      <span className="key">{option.key}</span>
+                      <span>{option.text}</span>
+                    </button>
+                  );
+                })}
+              </div>
 
               {hintVisible && !hasFeedback ? (
-                <div className="card hint small">
+                <div className="card hint small" role="status" aria-live="polite">
                   <strong>Pista</strong><br />
                   {item.hint ?? "Revisa qué decisión se sostiene mejor con la evidencia del caso."}
                 </div>
               ) : null}
 
               {feedback ? (
-                <div className={`card feedback ${feedback.evaluation.isCorrect ? "success" : "error"}`}>
+                <div
+                  className={`card feedback ${feedback.evaluation.isCorrect ? "success" : "error"}`}
+                  role="region"
+                  aria-live="assertive"
+                  tabIndex={-1}
+                  ref={feedbackHeaderRef}
+                >
                   <p className="eyebrow">Feedback después de responder</p>
                   <h3>{feedback.evaluation.isCorrect ? "Bien razonado" : "Revisa el criterio central"}</h3>
                   <p>{feedback.feedbackText}</p>
@@ -413,8 +463,23 @@ export function PracticeSession() {
               </div>
             </article>
 
-            <aside className={`tutor-zone${tutorMobileOpen ? " open" : ""}`}>
-              <button type="button" className="ghost mobile-sheet-close" onClick={() => setTutorMobileOpen(false)}>Cerrar</button>
+            <aside
+              className={`tutor-zone${tutorMobileOpen ? " open" : ""}`}
+              role={tutorMobileOpen ? "dialog" : undefined}
+              aria-modal={tutorMobileOpen ? true : undefined}
+              aria-label={tutorMobileOpen ? "Panel Tutor GCM" : undefined}
+              ref={mobileSheetRef}
+            >
+              {tutorMobileOpen ? (
+                <button
+                  type="button"
+                  className="ghost mobile-sheet-close"
+                  onClick={closeMobileSheet}
+                  ref={sheetCloseButtonRef}
+                >
+                  Cerrar
+                </button>
+              ) : null}
               <TutorInterface
                 sessionId={session?.sessionId ?? ""}
                 currentItemId={item.id}
@@ -429,7 +494,14 @@ export function PracticeSession() {
           </div>
 
           <div className="mobile-practice-actions">
-            <button type="button" className="secondary" onClick={() => setTutorMobileOpen(true)}>🤖 Tutor AI</button>
+            <button
+              type="button"
+              className="secondary"
+              onClick={openMobileSheet}
+              ref={mobileTriggerRef}
+            >
+              🤖 Tutor AI
+            </button>
             {!hasFeedback ? (
               <button type="button" className="primary" onClick={handleSubmitAnswer} disabled={loading || !selectedOption}>Responder</button>
             ) : pendingNextItemId ? (
