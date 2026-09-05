@@ -23,6 +23,6 @@ test("pre-answer view contains no editorial truth", async () => {
 test("answer evaluation stays behind server service-role access", async () => {
   const route = await readFile("src/app/api/session/advance/route.ts", "utf8");
   assert.match(route, /getSupabaseAdminClient/);
-  assert.match(route, /admin\.rpc\("advance_session_atomic"/);
+  assert.match(route, /admin\.rpc\("(advance_session_atomic|submit_practice_attempt)"/);
   assert.ok(route.indexOf("admin.rpc") < route.indexOf("answerReview"));
 });

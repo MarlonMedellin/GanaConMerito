@@ -700,6 +700,72 @@ body {
   margin: 8px 0 12px;
 }
 
+.tutor-profile-selector {
+  margin: 10px 0 14px;
+  width: 100%;
+}
+
+.tutor-profile-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--text-muted, #66716c);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.tutor-profile-segmented {
+  display: flex;
+  background: var(--surface-secondary, #eef3ed);
+  border: 1px solid var(--border-subtle, #dfe4dd);
+  border-radius: 14px;
+  padding: 4px;
+  gap: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tutor-profile-option {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-muted, #66716c);
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.tutor-profile-option:hover:not(:disabled) {
+  color: var(--text-primary, #17231e);
+}
+
+.tutor-profile-option.active,
+.tutor-profile-option[aria-checked="true"] {
+  background: #ffffff;
+  color: #153f32;
+  font-weight: 800;
+  box-shadow: 0 2px 6px rgba(24, 43, 34, 0.08);
+}
+
+.tutor-profile-option:focus-visible {
+  outline: 2px solid #153f32;
+  outline-offset: 1px;
+}
+
+.tutor-profile-option:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
 .tutor-chat {
   flex: 1;
   min-height: 360px;

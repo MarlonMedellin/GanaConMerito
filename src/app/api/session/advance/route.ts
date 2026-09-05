@@ -156,44 +156,7 @@ export async function POST(request: Request) {
     attemptResult,
   };
 
-  const { error: advanceError } = await admin.rpc("advance_session_atomic", {
-    p_profile_id: profile.id,
-    p_session_id: body.sessionId,
-    p_item_id: body.itemId,
-    p_selected_option: body.selectedOption ?? null,
-    p_user_rationale: body.userRationale ?? null,
-    p_response_time_ms: body.responseTimeMs ?? null,
-    p_confidence_self_report: body.confidenceSelfReport ?? null,
-    p_feedback_text: feedbackText,
-    p_is_correct: evaluation.isCorrect,
-    p_reasoning_score: evaluation.reasoningScore,
-    p_normative_consistency_score: evaluation.normativeConsistencyScore,
-    p_competency_score: evaluation.competencyScore,
-    p_estimated_theta_delta: evaluation.estimatedThetaDelta,
-    p_remediation_needed: evaluation.remediationNeeded,
-    p_evaluation_source: evaluation.evaluationSource,
-    p_evaluation_version: evaluation.evaluationVersion,
-    p_previous_state: previousState,
-    p_current_state: currentState,
-  });
 
-  if (advanceError) {
-    console.error("advance_session_atomic failed", {
-      message: advanceError.message,
-      details: advanceError.details,
-      hint: advanceError.hint,
-      code: advanceError.code,
-      sessionId: body.sessionId,
-      itemId: body.itemId,
-      profileId: profile.id,
-      previousState,
-      currentState,
-      evaluationSource: evaluation.evaluationSource,
-      evaluationVersion: evaluation.evaluationVersion,
-    });
-
-    return NextResponse.json({ error: "Could not persist session advance atomically" }, { status: 500 });
-  }
 
   const {data: persisted, error: persistError} = await admin.rpc("submit_practice_attempt", {
     p_profile_id: profile.id, p_attempt_id: body.attemptId, p_request_id: body.clientRequestId,

@@ -180,17 +180,67 @@ export function TutorInterface({
         </span>
       </div>
 
-      <div className="tutor-profile-selector" style={{ margin: "0.5rem 0" }}>
-        <label htmlFor="tutor-profile-select" className="small" style={{ marginRight: "0.5rem" }}>
-          Perfil del Tutor:
+      <div className="tutor-profile-selector">
+        <label id="tutor-profile-label" className="small tutor-profile-label">
+          Perfil del Tutor
         </label>
+        <div
+          role="radiogroup"
+          aria-labelledby="tutor-profile-label"
+          className="tutor-profile-segmented"
+        >
+          {(
+            [
+              { key: "socratic", label: "Socrático", desc: "Preguntas guiadas" },
+              { key: "direct", label: "Directo", desc: "Criterios neutros" },
+              { key: "brief", label: "Breve", desc: "Viñetas sintéticas" },
+            ] as const
+          ).map((p) => {
+            const isSelected = selectedProfile === p.key;
+            return (
+              <button
+                key={p.key}
+                type="button"
+                role="radio"
+                aria-checked={isSelected}
+                tabIndex={isSelected ? 0 : -1}
+                title={`${p.label} (${p.desc})`}
+                data-testid={`tutor-profile-option-${p.key}`}
+                disabled={loading}
+                className={`tutor-profile-option ${isSelected ? "active" : ""}`}
+                onClick={() => handleProfileSelect(p.key)}
+                onKeyDown={(e) => {
+                  if (["ArrowRight", "ArrowDown"].includes(e.key)) {
+                    e.preventDefault();
+                    const profiles: TutorProfile[] = ["socratic", "direct", "brief"];
+                    const idx = profiles.indexOf(p.key);
+                    const next = profiles[(idx + 1) % profiles.length];
+                    handleProfileSelect(next);
+                    (e.currentTarget.parentElement?.children[(idx + 1) % profiles.length] as HTMLElement)?.focus();
+                  } else if (["ArrowLeft", "ArrowUp"].includes(e.key)) {
+                    e.preventDefault();
+                    const profiles: TutorProfile[] = ["socratic", "direct", "brief"];
+                    const idx = profiles.indexOf(p.key);
+                    const next = profiles[(idx + 2) % profiles.length];
+                    handleProfileSelect(next);
+                    (e.currentTarget.parentElement?.children[(idx + 2) % profiles.length] as HTMLElement)?.focus();
+                  }
+                }}
+              >
+                {p.label}
+              </button>
+            );
+          })}
+        </div>
         <select
           id="tutor-profile-select"
           data-testid="tutor-profile-select"
           value={selectedProfile}
           onChange={(e) => handleProfileSelect(e.target.value as TutorProfile)}
-          className="small-select"
-          disabled={loading}
+          tabIndex={-1}
+          aria-hidden="true"
+          className="sr-only"
+          style={{ position: "absolute", width: "1px", height: "1px", padding: 0, margin: "-1px", overflow: "hidden", clip: "rect(0,0,0,0)", border: 0 }}
         >
           <option value="socratic">Socrático (Preguntas guiadas)</option>
           <option value="direct">Directo (Criterios neutros)</option>
