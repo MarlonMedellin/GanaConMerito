@@ -64,7 +64,7 @@ test("Guided, Simulation, Review, correlation and complete keyboard flow",async(
     expect(replay.status()).toBe(200);expect(await replay.json()).toEqual(result);
     const before=await admin.from('practice_metric_summary').select('*');expect(before.error).toBeNull();
     await page.getByRole('button',{name:'Revisar respuesta guardada',exact:true}).click();
-    await expect(page.locator('.practice-meta')).toContainText('Revisión');
+    await expect(page.locator('.tutor-mode-badge')).toContainText('Revisión');
     await expect(page.locator('.feedback')).toContainText(result.feedbackText);
     const after=await admin.from('practice_metric_summary').select('*');expect(after.error).toBeNull();expect(after.data).toEqual(before.data);
     await expect(page.getByRole('button',{name:'Responder',exact:true})).toHaveCount(0);

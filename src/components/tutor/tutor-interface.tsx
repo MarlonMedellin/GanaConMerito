@@ -23,29 +23,17 @@ interface TutorMessage {
 }
 
 const initialTutorMessage =
-  "El Tutor GCM te ayuda a organizar el análisis sin indicar ni descartar respuestas.";
+  "Tutor AI gana con mérito. Las letras. Antes de responderte, te ayudaré a pensar. Pregúntame sobre el caso o sobre cómo analizar las alternativas. Puedo explicarte por qué una alternativa es plausible o no plausible sin revelarte la respuesta.";
 
 export function getTutorGuidedActions(answered: boolean, mode: PracticeMode = "guided") {
-  if (mode === "simulation" && !answered) {
+  if (mode === "simulation" || answered) {
     return [];
   }
-  return answered
-    ? [
-        "¿Por qué mi opción no funciona?",
-        "Explícame la respuesta correcta",
-        "Pedir explicación alternativa",
-        "Comparar mi opción con la clave",
-        "Preguntar por fundamento documental",
-        "Pedir ejemplo de transferencia",
-        "Resumir el aprendizaje",
-      ]
-    : [
-        "Identificar hechos y responsabilidades",
-        "Definir criterios para decidir",
-        "Comparar consecuencias sin elegir por mí",
-        "Ayúdame a comparar opciones",
-        "Dame una pista",
-      ];
+  return [
+    "Identificar hechos y responsabilidades",
+    "Definir criterios para decidir",
+    "Comparar consecuencias sin elegir por mí",
+  ];
 }
 
 export function TutorInterface({

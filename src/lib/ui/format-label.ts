@@ -1,4 +1,26 @@
 const TECHNICAL_LABEL_DICTIONARY: Record<string, string> = {
+  // Question types
+  normative_applied: "Normativa aplicada",
+  technical_applied: "Técnica aplicada",
+  reasoning: "Razonamiento",
+  conceptual: "Conceptual",
+  case_analysis: "Análisis de caso",
+  situational: "Situacional",
+  reading_analysis: "Análisis de lectura",
+
+  // Cognitive levels
+  understand: "Comprender",
+  apply: "Aplicar",
+  analyze: "Analizar",
+  judge: "Juzgar",
+
+  // Difficulty levels
+  low: "Bajo",
+  medium: "Medio",
+  high: "Alto",
+
+
+  // Domains / Areas
   gestion: "Gestión",
   pedagogia: "Pedagogía",
   matematicas: "Matemáticas",

@@ -240,3 +240,57 @@ test("submission requires UUID correlation and rejects client authority", async 
   }
   for (const extra of [{mode:"guided"},{assistanceUsed:false}]) assert.equal(advanceSessionSchema.safeParse({...valid,...extra}).success,false);
 });
+
+test("exactly three predefined chips before answering and zero after answering", async () => {
+  const { getTutorGuidedActions } = await import("../src/components/tutor/tutor-interface");
+  const preAnswerActions = getTutorGuidedActions(false, "guided");
+  assert.equal(preAnswerActions.length, 3);
+  assert.deepEqual(preAnswerActions, [
+    "Identificar hechos y responsabilidades",
+    "Definir criterios para decidir",
+    "Comparar consecuencias sin elegir por mí",
+  ]);
+
+  const postAnswerActions = getTutorGuidedActions(true, "guided");
+  assert.equal(postAnswerActions.length, 0);
+
+  const simulationActions = getTutorGuidedActions(false, "simulation");
+  assert.equal(simulationActions.length, 0);
+});
+
+test("translation of all required question types and technical labels", async () => {
+  const { formatTechnicalLabel } = await import("../src/lib/ui/format-label");
+  assert.equal(formatTechnicalLabel("normative_applied"), "Normativa aplicada");
+  assert.equal(formatTechnicalLabel("technical_applied"), "Técnica aplicada");
+  assert.equal(formatTechnicalLabel("reasoning"), "Razonamiento");
+  assert.equal(formatTechnicalLabel("conceptual"), "Conceptual");
+  assert.equal(formatTechnicalLabel("case_analysis"), "Análisis de caso");
+  assert.equal(formatTechnicalLabel("situational"), "Situacional");
+  assert.equal(formatTechnicalLabel("reading_analysis"), "Análisis de lectura");
+});
+
+test("practice-session interface contains user justification field and accessible controls", async () => {
+  const fs = await import("node:fs");
+  const practiceSession = fs.readFileSync("src/components/practice/practice-session.tsx", "utf8");
+  const tutorInterface = fs.readFileSync("src/components/tutor/tutor-interface.tsx", "utf8");
+
+  // User rationale field
+  assert.match(practiceSession, /data-testid="user-rationale"/);
+  assert.match(practiceSession, /Justificación de tu respuesta/);
+
+  // Exact initial tutor message
+  assert.match(
+    tutorInterface,
+    /Tutor AI gana con mérito\. Las letras\. Antes de responderte, te ayudaré a pensar\. Pregúntame sobre el caso o sobre cómo analizar las alternativas\. Puedo explicarte por qué una alternativa es plausible o no plausible sin revelarte la respuesta\./,
+  );
+
+  // No top block franja
+  assert.doesNotMatch(practiceSession, /className="practice-meta"/);
+
+  // Accessibility checks
+  assert.match(practiceSession, /role="radiogroup"/);
+  assert.match(practiceSession, /role="radio"/);
+  assert.match(practiceSession, /feedbackHeaderRef\.current\.focus\(\)/);
+  assert.match(practiceSession, /mobileSheetRef/);
+});
+

@@ -63,7 +63,7 @@ export function PracticeSession() {
   const [session, setSession] = useState<SessionStartResult | null>(null);
   const [item, setItem] = useState<PracticeQuestionViewModel | null>(null);
   const [selectedOption, setSelectedOption] = useState<OptionKey | null>(null);
-  const [userRationale] = useState("");
+  const [userRationale, setUserRationale] = useState("");
   const [hintVisible, setHintVisible] = useState(false);
   const [tutorMobileOpen, setTutorMobileOpen] = useState(false);
   const [turnNumber, setTurnNumber] = useState(1);
@@ -136,6 +136,7 @@ export function PracticeSession() {
   function resetItemState() {
     setItem(null);
     setSelectedOption(null);
+    setUserRationale("");
     setHintVisible(false);
     setTutorMobileOpen(false);
     setFeedback(null);
@@ -405,11 +406,6 @@ export function PracticeSession() {
 
           <div className="practice">
             <article className="card question-card">
-              <div className="practice-meta">
-                <span>Foco <strong>{formatTechnicalLabel(item.competency)}</strong></span>
-                <span>Modalidad <strong>{practiceMode === "guided" ? "Guiada" : practiceMode === "review" ? "Revisión" : "Simulación"}</strong></span>
-                <span>Asistencia <strong>{assistanceUsed ? "Sí (Tutor consultado)" : "No (Independiente)"}</strong></span>
-              </div>
               <h2 className="question-type">Tipo de Pregunta {item.questionType ? formatTechnicalLabel(item.questionType) : "no especificado"}</h2>
               {item.context ? <p className="practice-context">{item.context}</p> : null}
               <div className="stem">{item.stem}</div>
@@ -435,12 +431,17 @@ export function PracticeSession() {
                       aria-checked={isSelected}
                       tabIndex={isSelected || (!selectedOption && option.key === "A") ? 0 : -1}
                       onKeyDown={(event) => {
-                        if (!["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].includes(event.key)) return;
-                        event.preventDefault();
-                        const keys:OptionKey[] = ["A","B","C","D"];
-                        const next = (keys.indexOf(option.key) + (["ArrowUp","ArrowLeft"].includes(event.key) ? 3 : 1)) % 4;
-                        setSelectedOption(keys[next]);
-                        (event.currentTarget.parentElement?.children[next] as HTMLElement)?.focus();
+                        if (["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].includes(event.key)) {
+                          event.preventDefault();
+                          const keys:OptionKey[] = ["A","B","C","D"];
+                          const next = (keys.indexOf(option.key) + (["ArrowUp","ArrowLeft"].includes(event.key) ? 3 : 1)) % 4;
+                          setSelectedOption(keys[next]);
+                          (event.currentTarget.parentElement?.children[next] as HTMLElement)?.focus();
+                        }
+                        if (event.key === " " || event.key === "Spacebar") {
+                          event.preventDefault();
+                          setSelectedOption(option.key);
+                        }
                       }}
                       className={className}
                       onClick={() => !hasFeedback && setSelectedOption(option.key)}
@@ -452,6 +453,23 @@ export function PracticeSession() {
                   );
                 })}
               </div>
+
+              {!hasFeedback ? (
+                <div className="user-rationale-section" style={{ marginTop: "1rem" }}>
+                  <label htmlFor="user-rationale" className="small" style={{ display: "block", marginBottom: "0.25rem" }}>
+                    Justificación de tu respuesta (opcional):
+                  </label>
+                  <textarea
+                    id="user-rationale"
+                    data-testid="user-rationale"
+                    value={userRationale}
+                    onChange={(e) => setUserRationale(e.target.value)}
+                    placeholder="Explica brevemente tu justificación..."
+                    disabled={loading}
+                    style={{ width: "100%", minHeight: "60px", padding: "0.5rem", borderRadius: "6px", border: "1px solid #ccc" }}
+                  />
+                </div>
+              ) : null}
 
               {hintVisible && !hasFeedback && practiceMode === "guided" ? (
                 <div className="card hint small" role="status" aria-live="polite">
@@ -474,8 +492,20 @@ export function PracticeSession() {
                   <p className="small">
                     Tu respuesta: {feedback.answerReview.selectedOption} · Clave: {feedback.answerReview.correctOption}
                   </p>
-                  {feedback.answerReview.selectedExplanation ? <p className="small">Sobre tu elección: {feedback.answerReview.selectedExplanation}</p> : null}
-                  {feedback.answerReview.correctExplanation ? <p className="small">Fundamento de la clave: {feedback.answerReview.correctExplanation}</p> : null}
+                  {(() => {
+                    const selectedExp = feedback.answerReview.selectedExplanation?.trim();
+                    const correctExp = feedback.answerReview.correctExplanation?.trim();
+                    const sameExp = Boolean(selectedExp && correctExp && selectedExp === correctExp);
+                    if (sameExp) {
+                      return <p className="small">Fundamento de la clave: {correctExp}</p>;
+                    }
+                    return (
+                      <>
+                        {selectedExp ? <p className="small">Sobre tu elección: {selectedExp}</p> : null}
+                        {correctExp ? <p className="small">Fundamento de la clave: {correctExp}</p> : null}
+                      </>
+                    );
+                  })()}
                   {feedback.answerReview.learningNote ? <p className="small"><strong>Regla de decisión:</strong> {feedback.answerReview.learningNote}</p> : null}
                 </div>
               ) : null}

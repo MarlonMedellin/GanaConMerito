@@ -22,6 +22,8 @@ test("resume uses the canonical V4 targeting and turn schema", () => {
 
   const basePayload = {
     sessionId: "760c4aed-1159-47a7-883c-9f84da70851f",
+    attemptId: "760c4aed-1159-47a7-883c-9f84da70851f",
+    clientRequestId: "760c4aed-1159-47a7-883c-9f84da70851f",
     selectedOption: "A" as const,
   };
 
