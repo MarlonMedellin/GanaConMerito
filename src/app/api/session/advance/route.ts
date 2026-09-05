@@ -195,5 +195,10 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Could not persist session advance atomically" }, { status: 500 });
   }
 
-  return NextResponse.json(response, {status:200});
+  const {data: persisted, error: persistError} = await admin.rpc("submit_practice_attempt", {
+    p_profile_id: profile.id, p_attempt_id: body.attemptId, p_request_id: body.clientRequestId,
+    p_payload: body, p_result: response, p_next_question_id: nextItem?.id ?? null,
+  });
+  if (persistError) return NextResponse.json({error:"Submission rejected", code:persistError.code}, {status:409});
+  return NextResponse.json(persisted, {status:200});
 }
