@@ -23,7 +23,7 @@ test("Guided, Simulation, Review, correlation and complete keyboard flow",async(
     ]);
     const item = await pendingResponse.json(); safe(item);
     await expect(page).toHaveURL(/\/practice$/);
-    const radios=page.getByRole('radio');await expect(radios).toHaveCount(4);
+    const radios = page.locator('.options-group [role="radio"]'); await expect(radios).toHaveCount(4);
     for(let i=0;i<4;i++)await expect(radios.nth(i)).toBeVisible();
     await expect(page.locator('.stem')).not.toBeEmpty();
     await radios.first().focus();await page.keyboard.press('ArrowDown');await expect(radios.nth(1)).toBeFocused();
@@ -87,7 +87,7 @@ test('late Tutor response never reaches the next item',async({page})=>{
     await route.fulfill({json:{attemptId:item.attempt.id,clientTurnId:payload.clientTurnId,output:{visibleMessage:'LATE_RESPONSE_SENTINEL'}}}).catch(()=>{});
   });
   await page.getByTestId('tutor-gcm-message').fill('Criterios');await page.getByTestId('tutor-gcm-submit').click();
-  await page.getByRole('radio').first().click();
+  await page.locator('.options-group [role="radio"]').first().click();
   await page.getByRole('button',{name:'Responder',exact:true}).first().click();
   const next=page.waitForResponse(r=>r.url().includes('/api/session/item')&&r.status()===200);
   await page.getByRole('button',{name:'Siguiente pregunta →',exact:true}).click();
