@@ -341,7 +341,6 @@ export function PracticeSession() {
 
   return (
     <section className="practice-page">
-      {!initializing ? <button type="button" onClick={handleReview} disabled={loading}>Revisar respuesta guardada</button> : null}
       {initializing ? <LoadingState message="Recuperando sesión activa..." /> : null}
 
       {!initializing && !session && !error ? (
@@ -394,11 +393,16 @@ export function PracticeSession() {
 
       {item ? (
         <section className="page">
-          <div className="session-heading" style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-            <div>
-              <p className="eyebrow">SESIÓN DE PRÁCTICA</p>
+          <div className="session-heading" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1rem" }}>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <p className="eyebrow" style={{ margin: 0 }}>SESIÓN DE PRÁCTICA</p>
               <span className="session-count">{turnNumber} de práctica</span>
             </div>
+            {!initializing ? (
+              <button type="button" className="ghost" onClick={handleReview} disabled={loading} style={{ fontSize: "14px", fontWeight: 700 }}>
+                Revisar respuesta guardada
+              </button>
+            ) : null}
           </div>
 
           <div className="practice">

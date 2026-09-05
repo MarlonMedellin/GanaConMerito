@@ -290,8 +290,11 @@ test("practice-session interface has user-rationale removed and feedback without
   assert.doesNotMatch(scoreResponse, /siguiente turno/i);
   assert.doesNotMatch(scoreResponse, /Intenta explicar tu razonamiento/i);
 
-  // No top block franja
+  // No top block franja and restored header layout
   assert.doesNotMatch(practiceSession, /className="practice-meta"/);
+  assert.match(practiceSession, /SESIÓN DE PRÁCTICA/);
+  assert.match(practiceSession, /de práctica/);
+  assert.match(practiceSession, /Revisar respuesta guardada/);
 
   // Accessibility checks
   assert.match(practiceSession, /role="radiogroup"/);
