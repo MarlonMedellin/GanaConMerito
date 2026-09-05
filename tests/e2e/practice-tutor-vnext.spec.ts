@@ -17,9 +17,11 @@ test("Guided, Simulation, Review, correlation and complete keyboard flow",async(
     const started=await page.request.post("/api/session/start",{data:{mode}});
     expect(started.status()).toBe(200);
     const session=await started.json();expect(session.currentItemId).toBeTruthy();
-    const pending=page.waitForResponse(r=>r.url().includes('/api/session/item')&&r.status()===200);
-    await page.goto('/practice');
-    const item=await (await pending).json();safe(item);
+    const [pendingResponse] = await Promise.all([
+      page.waitForResponse(r => r.url().includes('/api/session/item') && r.status() === 200),
+      page.goto('/practice'),
+    ]);
+    const item = await pendingResponse.json(); safe(item);
     await expect(page).toHaveURL(/\/practice$/);
     const radios=page.getByRole('radio');await expect(radios).toHaveCount(4);
     for(let i=0;i<4;i++)await expect(radios.nth(i)).toBeVisible();
@@ -73,8 +75,11 @@ test("Guided, Simulation, Review, correlation and complete keyboard flow",async(
 
 test('late Tutor response never reaches the next item',async({page})=>{
   const start=await page.request.post('/api/session/start',{data:{mode:'practice'}});expect(start.status()).toBe(200);
-  const itemResponse=page.waitForResponse(r=>r.url().includes('/api/session/item')&&r.status()===200);
-  await page.goto('/practice');const item=await (await itemResponse).json();
+  const [itemResponsePromise] = await Promise.all([
+    page.waitForResponse(r => r.url().includes('/api/session/item') && r.status() === 200),
+    page.goto('/practice'),
+  ]);
+  const item = await itemResponsePromise.json();
   let release:()=>void=()=>{};
   const delay=new Promise<void>(resolve=>{release=resolve;});
   await page.route('**/api/tutor/turn',async route=>{
