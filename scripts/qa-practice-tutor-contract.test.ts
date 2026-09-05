@@ -336,4 +336,26 @@ test("tutor polish contract: S/D/B profile initials-only cards, active profile b
   );
 });
 
+test("onboarding feedback style contract: accepts socratic, direct, brief and rejects invalid values", async () => {
+  const fs = await import("node:fs");
+  const route = fs.readFileSync("src/app/api/profile/onboarding/route.ts", "utf8");
+  const form = fs.readFileSync("src/components/onboarding/onboarding-form.tsx", "utf8");
+
+  // Schema accepts all 3 options
+  assert.match(route, /preferredFeedbackStyle:\s*z\.enum\(\["socratic",\s*"direct",\s*"brief"\]\)/);
+
+  // Form renders options without disabled attribute on direct/brief
+  assert.doesNotMatch(form, /<button type="button" disabled>Directo<\/button>/);
+  assert.doesNotMatch(form, /<button type="button" disabled>Breve<\/button>/);
+
+  // Form includes descriptions and initials
+  assert.match(form, /Socrático/);
+  assert.match(form, /Directo/);
+  assert.match(form, /Breve/);
+  assert.match(form, /preguntas guiadas antes de revelar la clave\./);
+  assert.match(form, /criterios claros y explicación estructurada\./);
+  assert.match(form, /orientación en viñetas sintéticas\./);
+});
+
+
 

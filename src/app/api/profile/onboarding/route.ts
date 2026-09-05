@@ -12,7 +12,7 @@ const onboardingSchema = z.object({
     .max(20)
     .default([])
     .transform((areas) => Array.from(new Set(areas.map((area) => area.trim()).filter(Boolean)))),
-  preferredFeedbackStyle: z.enum(["socratic"]).default("socratic"),
+  preferredFeedbackStyle: z.enum(["socratic", "direct", "brief"]).default("socratic"),
 });
 
 export async function POST(request: Request) {

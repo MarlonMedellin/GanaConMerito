@@ -29,7 +29,9 @@ export function OnboardingForm(props: {
   );
   const [targetOpecId, setTargetOpecId] = useState(props.initialTargetOpecId || "");
   const [activeGoal, setActiveGoal] = useState(props.initialActiveGoal || "Prepararme para concurso");
-  const [preferredFeedbackStyle] = useState("socratic");
+  const [preferredFeedbackStyle, setPreferredFeedbackStyle] = useState<"socratic" | "direct" | "brief">(
+    (props.initialPreferredFeedbackStyle as "socratic" | "direct" | "brief") || "socratic",
+  );
   const [activeAreas] = useState((props.initialActiveAreas || []).join(", "));
   const [showOpec, setShowOpec] = useState(Boolean(props.initialTargetOpecId));
   const [loading, setLoading] = useState(false);
@@ -133,10 +135,41 @@ export function OnboardingForm(props: {
 
       <div className="field">
         <label>Estilo de acompañamiento</label>
-        <div className="choice">
-          <button type="button" className="active" disabled={loading}>Socrático</button>
-          <button type="button" disabled>Directo</button>
-          <button type="button" disabled>Breve</button>
+        <div className="choice style-choice">
+          {[
+            {
+              key: "socratic",
+              initial: "S",
+              name: "Socrático",
+              desc: "preguntas guiadas antes de revelar la clave.",
+            },
+            {
+              key: "direct",
+              initial: "D",
+              name: "Directo",
+              desc: "criterios claros y explicación estructurada.",
+            },
+            {
+              key: "brief",
+              initial: "B",
+              name: "Breve",
+              desc: "orientación en viñetas sintéticas.",
+            },
+          ].map((style) => (
+            <button
+              key={style.key}
+              type="button"
+              className={`style-option-card${preferredFeedbackStyle === style.key ? " active" : ""}`}
+              onClick={() => setPreferredFeedbackStyle(style.key as "socratic" | "direct" | "brief")}
+              disabled={loading}
+            >
+              <span className="style-option-header">
+                <span className="style-option-initial">{style.initial}</span>
+                <strong className="style-option-name">{style.name}</strong>
+              </span>
+              <span className="style-option-desc">{style.desc}</span>
+            </button>
+          ))}
         </div>
       </div>
 

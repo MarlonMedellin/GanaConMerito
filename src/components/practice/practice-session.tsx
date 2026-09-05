@@ -59,7 +59,7 @@ function getNoItemMessage(session: SessionStartResult) {
     : "La sesión está activa, pero no hay una pregunta V4 disponible todavía para continuar.";
 }
 
-export function PracticeSession() {
+export function PracticeSession(props: { initialTutorProfile?: "socratic" | "direct" | "brief" }) {
   const [session, setSession] = useState<SessionStartResult | null>(null);
   const [item, setItem] = useState<PracticeQuestionViewModel | null>(null);
   const [selectedOption, setSelectedOption] = useState<OptionKey | null>(null);
@@ -73,7 +73,7 @@ export function PracticeSession() {
   const [error, setError] = useState<string | null>(null);
   const [sessionMessage, setSessionMessage] = useState<string | null>(null);
   const [practiceMode, setPracticeMode] = useState<"guided" | "simulation" | "review">("guided");
-  const [tutorProfile, setTutorProfile] = useState<"socratic" | "direct" | "brief">("socratic");
+  const [tutorProfile, setTutorProfile] = useState<"socratic" | "direct" | "brief">(props.initialTutorProfile ?? "socratic");
   const [assistanceUsed, setAssistanceUsed] = useState(false);
 
   const submissionRef = useRef<{id:string; option:OptionKey} | null>(null);
