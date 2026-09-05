@@ -393,20 +393,19 @@ export function PracticeSession() {
 
       {item ? (
         <section className="page">
-          <div className="session-heading" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1rem" }}>
-            <div style={{ display: "flex", alignItems: "center" }}>
-              <p className="eyebrow" style={{ margin: 0 }}>SESIÓN DE PRÁCTICA</p>
-              <span className="session-count">{turnNumber} de práctica</span>
-            </div>
-            {!initializing ? (
-              <button type="button" className="ghost" onClick={handleReview} disabled={loading} style={{ fontSize: "14px", fontWeight: 700 }}>
-                Revisar respuesta guardada
-              </button>
-            ) : null}
+          <div className="session-heading">
+            <p className="eyebrow">SESIÓN</p>
+            <span className="session-count">{turnNumber} de práctica</span>
           </div>
+          <h1>Piensa como te van a evaluar.</h1>
 
           <div className="practice">
             <article className="card question-card">
+              <div className="practice-meta">
+                <span>Foco actual <strong>{formatTechnicalLabel(item.competency)}</strong></span>
+                <span>Meta de sesión <strong>práctica activa</strong></span>
+                <span>Dominio <strong>{formatTechnicalLabel(item.area)}</strong></span>
+              </div>
               <h2 className="question-type">Tipo de Pregunta {item.questionType ? formatTechnicalLabel(item.questionType) : "no especificado"}</h2>
               {item.context ? <p className="practice-context">{item.context}</p> : null}
               <div className="stem">{item.stem}</div>
