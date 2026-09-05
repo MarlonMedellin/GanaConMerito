@@ -86,6 +86,7 @@ export function PracticeSession() {
   useEffect(() => {
     if (feedback && feedbackHeaderRef.current) {
       feedbackHeaderRef.current.focus();
+      feedbackHeaderRef.current.scrollIntoView({ behavior: "smooth", block: "nearest" });
     }
   }, [feedback]);
 

@@ -174,7 +174,15 @@ export function TutorInterface({
   return (
     <section className="card tutor-panel" data-testid="tutor-gcm-panel" aria-label="Tutor GCM vNext">
       <div className="tutor-header">
-        <p className="eyebrow">TUTOR GCM 🤖</p>
+        <p className="eyebrow" data-testid="tutor-header-title">
+          {`Tutor AI GCM 🤖 — ${
+            selectedProfile === "socratic"
+              ? "S · Socrático"
+              : selectedProfile === "direct"
+              ? "D · Directo"
+              : "B · Breve"
+          }`}
+        </p>
         <span className={`tutor-mode-badge mode-${mode}`}>
           {mode === "guided" ? "Práctica Guiada" : mode === "simulation" ? "Simulación" : "Revisión"}
         </span>
@@ -187,13 +195,14 @@ export function TutorInterface({
         <div
           role="radiogroup"
           aria-labelledby="tutor-profile-label"
-          className="tutor-profile-segmented"
+          className="tutor-profile-cards"
+          data-testid="tutor-profile-radiogroup"
         >
           {(
             [
-              { key: "socratic", label: "Socrático", desc: "Preguntas guiadas" },
-              { key: "direct", label: "Directo", desc: "Criterios neutros" },
-              { key: "brief", label: "Breve", desc: "Viñetas sintéticas" },
+              { key: "socratic", initial: "S", label: "Socrático", desc: "Preguntas guiadas antes de revelar" },
+              { key: "direct", initial: "D", label: "Directo", desc: "Criterios claros y explicación estructurada" },
+              { key: "brief", initial: "B", label: "Breve", desc: "Orientación en viñetas sintéticas" },
             ] as const
           ).map((p) => {
             const isSelected = selectedProfile === p.key;
@@ -204,10 +213,10 @@ export function TutorInterface({
                 role="radio"
                 aria-checked={isSelected}
                 tabIndex={isSelected ? 0 : -1}
-                title={`${p.label} (${p.desc})`}
+                title={`${p.label}: ${p.desc}`}
                 data-testid={`tutor-profile-option-${p.key}`}
                 disabled={loading}
-                className={`tutor-profile-option ${isSelected ? "active" : ""}`}
+                className={`tutor-profile-card ${isSelected ? "active" : ""}`}
                 onClick={() => handleProfileSelect(p.key)}
                 onKeyDown={(e) => {
                   if (["ArrowRight", "ArrowDown"].includes(e.key)) {
@@ -227,7 +236,11 @@ export function TutorInterface({
                   }
                 }}
               >
-                {p.label}
+                <span className="tutor-profile-initial">{p.initial}</span>
+                <div className="tutor-profile-info">
+                  <span className="tutor-profile-name">{p.label}</span>
+                  <span className="tutor-profile-desc">{p.desc}</span>
+                </div>
               </button>
             );
           })}
@@ -285,6 +298,8 @@ export function TutorInterface({
           placeholder={
             mode === "simulation" && !answered
               ? "Tutor deshabilitado en simulación previa..."
+              : answered
+              ? "¿Tienes una objeción o duda sobre la norma? Escribe aquí..."
               : "Consulta al Tutor GCM (sin revelar la clave)..."
           }
           value={draft}

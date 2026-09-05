@@ -307,4 +307,30 @@ test("practice-session interface has user-rationale removed and feedback without
   assert.match(practiceSession, /mobileSheetRef/);
 });
 
+test("tutor polish contract: S/D/B profile cards, dynamic header, and contextual placeholders", async () => {
+  const fs = await import("node:fs");
+  const tutorInterface = fs.readFileSync("src/components/tutor/tutor-interface.tsx", "utf8");
+
+  // Three profile options with initials S, D, B and descriptions
+  assert.match(tutorInterface, /key: "socratic", initial: "S", label: "Socrático", desc: "Preguntas guiadas antes de revelar"/);
+  assert.match(tutorInterface, /key: "direct", initial: "D", label: "Directo", desc: "Criterios claros y explicación estructurada"/);
+  assert.match(tutorInterface, /key: "brief", initial: "B", label: "Breve", desc: "Orientación en viñetas sintéticas"/);
+
+  // Dynamic header title per active profile
+  assert.match(tutorInterface, /Tutor AI GCM 🤖 — /);
+  assert.match(tutorInterface, /S · Socrático/);
+  assert.match(tutorInterface, /D · Directo/);
+  assert.match(tutorInterface, /B · Breve/);
+
+  // Contextual placeholder before and after answering
+  assert.match(tutorInterface, /Consulta al Tutor GCM \(sin revelar la clave\)\.\.\./);
+  assert.match(tutorInterface, /¿Tienes una objeción o duda sobre la norma\? Escribe aquí\.\.\./);
+
+  // Initial exact tutor message preserved
+  assert.match(
+    tutorInterface,
+    /Tutor AI GCM🤖: Antes de responderte, te ayudaré a pensar\. Pregúntame sobre el caso o sobre cómo analizar las alternativas; puedo explicarte por qué una alternativa es plausible o no plausible, sin revelarte la clave\./,
+  );
+});
+
 

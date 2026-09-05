@@ -32,7 +32,9 @@ test("Guided, Simulation, Review, correlation and complete keyboard flow",async(
     await page.keyboard.press('ArrowLeft');await page.keyboard.press('Space');await expect(radios.first()).toHaveAttribute('aria-checked','true');
     if(mode==='practice') {
       for(const profile of ['socratic','direct','brief']) {
-        await page.getByTestId('tutor-profile-select').selectOption(profile);
+        await page.getByTestId(`tutor-profile-option-${profile}`).click();
+        await expect(page.getByTestId('tutor-header-title')).toContainText(profile === 'socratic' ? 'S · Socrático' : profile === 'direct' ? 'D · Directo' : 'B · Breve');
+        await expect(page.getByTestId('tutor-gcm-message')).toHaveAttribute('placeholder', 'Consulta al Tutor GCM (sin revelar la clave)...');
         await page.getByTestId('tutor-gcm-message').fill('Ayúdame a identificar los criterios sin resolver.');
         const turn=page.waitForResponse(r=>r.url().includes('/api/tutor/turn'));
         await page.getByTestId('tutor-gcm-submit').click();
@@ -62,6 +64,9 @@ test("Guided, Simulation, Review, correlation and complete keyboard flow",async(
     const answer=await submitted;expect(answer.status()).toBe(200);
     const result=await answer.json();expect(result.attemptResult.attemptId).toBe(item.attempt.id);
     await expect(page.locator('.feedback[role="region"]')).toBeFocused();
+    if(mode==='practice') {
+      await expect(page.getByTestId('tutor-gcm-message')).toHaveAttribute('placeholder', '¿Tienes una objeción o duda sobre la norma? Escribe aquí...');
+    }
     const replay=await page.request.post('/api/session/advance',{data:answer.request().postDataJSON()});
     expect(replay.status()).toBe(200);expect(await replay.json()).toEqual(result);
     const before=await admin.from('practice_metric_summary').select('*');expect(before.error).toBeNull();
