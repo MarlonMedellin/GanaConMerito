@@ -33,7 +33,14 @@ test("Guided, Simulation, Review, correlation and complete keyboard flow",async(
     if(mode==='practice') {
       for(const profile of ['socratic','direct','brief']) {
         await page.getByTestId(`tutor-profile-option-${profile}`).click();
-        await expect(page.getByTestId('tutor-header-title')).toContainText(profile === 'socratic' ? 'S · Socrático' : profile === 'direct' ? 'D · Directo' : 'B · Breve');
+        await expect(page.getByTestId('tutor-active-profile-name')).toContainText(profile === 'socratic' ? 'S · Socrático' : profile === 'direct' ? 'D · Directo' : 'B · Breve');
+        await expect(page.getByTestId('tutor-active-profile-desc')).toContainText(
+          profile === 'socratic'
+            ? 'Preguntas guiadas antes de revelar la clave.'
+            : profile === 'direct'
+            ? 'Criterios claros y explicación estructurada.'
+            : 'Orientación en viñetas sintéticas.'
+        );
         await expect(page.getByTestId('tutor-gcm-message')).toHaveAttribute('placeholder', 'Consulta al Tutor GCM (sin revelar la clave)...');
         await page.getByTestId('tutor-gcm-message').fill('Ayúdame a identificar los criterios sin resolver.');
         const turn=page.waitForResponse(r=>r.url().includes('/api/tutor/turn'));

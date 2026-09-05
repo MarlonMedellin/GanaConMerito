@@ -307,20 +307,23 @@ test("practice-session interface has user-rationale removed and feedback without
   assert.match(practiceSession, /mobileSheetRef/);
 });
 
-test("tutor polish contract: S/D/B profile cards, dynamic header, and contextual placeholders", async () => {
+test("tutor polish contract: S/D/B profile initials-only cards, active profile banner in chat, and contextual placeholders", async () => {
   const fs = await import("node:fs");
   const tutorInterface = fs.readFileSync("src/components/tutor/tutor-interface.tsx", "utf8");
 
-  // Three profile options with initials S, D, B and descriptions
-  assert.match(tutorInterface, /key: "socratic", initial: "S", label: "Socrático", desc: "Preguntas guiadas antes de revelar"/);
-  assert.match(tutorInterface, /key: "direct", initial: "D", label: "Directo", desc: "Criterios claros y explicación estructurada"/);
-  assert.match(tutorInterface, /key: "brief", initial: "B", label: "Breve", desc: "Orientación en viñetas sintéticas"/);
+  // Profile cards render ONLY initials S, D, B
+  assert.match(tutorInterface, /<span className="tutor-profile-initial">\{p\.initial\}<\/span>/);
+  assert.doesNotMatch(tutorInterface, /<span className="tutor-profile-name">/);
+  assert.doesNotMatch(tutorInterface, /<span className="tutor-profile-desc">/);
 
-  // Dynamic header title per active profile
-  assert.match(tutorInterface, /Tutor AI GCM 🤖 — /);
+  // Active profile banner inside tutor chat box with exact specified text
+  assert.match(tutorInterface, /className="active-profile-banner"/);
   assert.match(tutorInterface, /S · Socrático/);
   assert.match(tutorInterface, /D · Directo/);
   assert.match(tutorInterface, /B · Breve/);
+  assert.match(tutorInterface, /Preguntas guiadas antes de revelar la clave\./);
+  assert.match(tutorInterface, /Criterios claros y explicación estructurada\./);
+  assert.match(tutorInterface, /Orientación en viñetas sintéticas\./);
 
   // Contextual placeholder before and after answering
   assert.match(tutorInterface, /Consulta al Tutor GCM \(sin revelar la clave\)\.\.\./);

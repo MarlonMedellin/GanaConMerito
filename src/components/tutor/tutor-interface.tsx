@@ -175,13 +175,7 @@ export function TutorInterface({
     <section className="card tutor-panel" data-testid="tutor-gcm-panel" aria-label="Tutor GCM vNext">
       <div className="tutor-header">
         <p className="eyebrow" data-testid="tutor-header-title">
-          {`Tutor AI GCM 🤖 — ${
-            selectedProfile === "socratic"
-              ? "S · Socrático"
-              : selectedProfile === "direct"
-              ? "D · Directo"
-              : "B · Breve"
-          }`}
+          TUTOR GCM 🤖
         </p>
         <span className={`tutor-mode-badge mode-${mode}`}>
           {mode === "guided" ? "Práctica Guiada" : mode === "simulation" ? "Simulación" : "Revisión"}
@@ -200,9 +194,9 @@ export function TutorInterface({
         >
           {(
             [
-              { key: "socratic", initial: "S", label: "Socrático", desc: "Preguntas guiadas antes de revelar" },
-              { key: "direct", initial: "D", label: "Directo", desc: "Criterios claros y explicación estructurada" },
-              { key: "brief", initial: "B", label: "Breve", desc: "Orientación en viñetas sintéticas" },
+              { key: "socratic", initial: "S", label: "Socrático", desc: "Preguntas guiadas antes de revelar la clave." },
+              { key: "direct", initial: "D", label: "Directo", desc: "Criterios claros y explicación estructurada." },
+              { key: "brief", initial: "B", label: "Breve", desc: "Orientación en viñetas sintéticas." },
             ] as const
           ).map((p) => {
             const isSelected = selectedProfile === p.key;
@@ -212,6 +206,7 @@ export function TutorInterface({
                 type="button"
                 role="radio"
                 aria-checked={isSelected}
+                aria-label={`${p.initial} · ${p.label}: ${p.desc}`}
                 tabIndex={isSelected ? 0 : -1}
                 title={`${p.label}: ${p.desc}`}
                 data-testid={`tutor-profile-option-${p.key}`}
@@ -237,10 +232,6 @@ export function TutorInterface({
                 }}
               >
                 <span className="tutor-profile-initial">{p.initial}</span>
-                <div className="tutor-profile-info">
-                  <span className="tutor-profile-name">{p.label}</span>
-                  <span className="tutor-profile-desc">{p.desc}</span>
-                </div>
               </button>
             );
           })}
@@ -268,6 +259,22 @@ export function TutorInterface({
       ) : null}
 
       <div className="tutor-chat" ref={chatRef} aria-live="polite">
+        <div className="active-profile-banner" data-testid="tutor-active-profile-info">
+          <strong data-testid="tutor-active-profile-name">
+            {selectedProfile === "socratic"
+              ? "S · Socrático"
+              : selectedProfile === "direct"
+              ? "D · Directo"
+              : "B · Breve"}
+          </strong>
+          <span data-testid="tutor-active-profile-desc">
+            {selectedProfile === "socratic"
+              ? "Preguntas guiadas antes de revelar la clave."
+              : selectedProfile === "direct"
+              ? "Criterios claros y explicación estructurada."
+              : "Orientación en viñetas sintéticas."}
+          </span>
+        </div>
         {messages.map((message: TutorMessage, index: number) => (
           <div key={`${message.role}-${index}`} className={message.role === "assistant" ? "tutor-message" : "user-message"}>
             {message.text}
