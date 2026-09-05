@@ -96,7 +96,8 @@ begin
     perform public.open_practice_attempt(p_profile_id,a.session_id,p_next_question_id);
   end if;
   return r;
-end $$;
+end;
+$$;
 
 create function public.claim_practice_tutor_turn(p_profile_id uuid, p_attempt_id uuid, p_client_turn_id uuid, p_payload jsonb)
 returns jsonb language plpgsql security invoker set search_path = '' as $$
