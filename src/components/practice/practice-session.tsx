@@ -341,6 +341,13 @@ export function PracticeSession() {
 
   return (
     <section className="practice-page">
+      {!initializing ? (
+        <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: "0.5rem" }}>
+          <button type="button" className="ghost" onClick={handleReview} disabled={loading} style={{ fontSize: "14px", fontWeight: 700 }}>
+            Revisar respuesta guardada
+          </button>
+        </div>
+      ) : null}
       {initializing ? <LoadingState message="Recuperando sesión activa..." /> : null}
 
       {!initializing && !session && !error ? (
