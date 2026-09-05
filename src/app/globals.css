@@ -2650,8 +2650,8 @@ body {
 }
 
 .style-choice {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   width: 100%;
 }
@@ -2661,59 +2661,80 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 4px;
-  padding: 12px 14px;
-  border-radius: 12px;
-  border: 1px solid var(--border, #e5e7eb);
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1.5px solid var(--border, #d1d5db);
   background: var(--surface, #ffffff);
   cursor: pointer;
   text-align: left;
-  transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+  transition: all 0.15s ease;
   width: 100%;
 }
 
 .style-option-card:hover {
-  border-color: var(--primary, #006644);
+  border-color: #006644;
+  background: #f8fafc;
 }
 
 .style-option-card.active {
-  border-color: var(--primary, #006644);
-  background: var(--primary-light, #f0fdf4);
-  box-shadow: 0 0 0 1px var(--primary, #006644);
+  border-color: #004d33;
+  background: #006644;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.style-option-card.active:focus-visible {
+  outline: 3px solid #10b981;
+  outline-offset: 2px;
 }
 
 .style-option-header {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .style-option-initial {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 26px;
-  height: 26px;
-  border-radius: 6px;
-  background: var(--surface-tertiary, #e2e8f0);
-  color: var(--text-primary, #0f172a);
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  background: #e2e8f0;
+  color: #0f172a;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .style-option-card.active .style-option-initial {
-  background: var(--primary, #006644);
-  color: #ffffff;
+  background: #ffffff;
+  color: #006644;
 }
 
 .style-option-name {
   font-weight: 700;
-  font-size: 15px;
-  color: var(--text-primary, #0f172a);
+  font-size: 13.5px;
+  color: #1e293b;
+}
+
+.style-option-card.active .style-option-name {
+  color: #ffffff;
 }
 
 .style-option-desc {
-  font-size: 13px;
-  line-height: 1.4;
-  color: var(--text-muted, #64748b);
+  font-size: 11.5px;
+  line-height: 1.35;
+  color: #475569;
 }
+
+.style-option-card.active .style-option-desc {
+  color: #e2e8f0;
+}
+
+@media (max-width: 640px) {
+  .style-choice {
+    grid-template-columns: 1fr;
+  }
+}
+
 
