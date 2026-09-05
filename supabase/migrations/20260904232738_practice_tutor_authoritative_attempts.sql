@@ -1,4 +1,4 @@
--- Agent: CODEX_LOCAL | Model: GPT-6
+-- Agent: Google Antigravity | Model: Gemini 3.6 Flash
 begin;
 
 alter table public.sessions add constraint sessions_id_profile_unique unique(id, profile_id);
@@ -61,11 +61,12 @@ begin
   insert into public.practice_attempts(session_id,profile_id,question_id,practice_mode)
   values(s.id,p_profile_id,p_question_id,case s.mode when 'exam' then 'simulation' when 'review' then 'review' else 'guided' end) returning * into a;
   return to_jsonb(a);
-end $$;
+end;
+$$;
 
 create function public.submit_practice_attempt(p_profile_id uuid, p_attempt_id uuid, p_request_id uuid, p_payload jsonb, p_result jsonb, p_next_question_id text)
 returns jsonb language plpgsql security invoker set search_path = '' as $$
-declare a public.practice_attempts; s public.sessions; e jsonb; t uuid; r jsonb; assisted boolean;
+declare a public.practice_attempts; s public.sessions; e jsonb; t uuid; r jsonb;
 begin
   if current_user not in ('service_role','postgres') then raise exception 'UNAUTHORIZED'; end if;
   select * into a from public.practice_attempts where id=p_attempt_id for update;
@@ -79,7 +80,7 @@ begin
   select * into s from public.sessions where id=a.session_id and profile_id=p_profile_id for update;
   if not found or s.status <> 'active' or s.current_state in ('session_close','expired','error') then raise exception 'SESSION_INACTIVE'; end if;
   if a.phase <> 'evaluating' or a.expires_at <= clock_timestamp() then raise exception 'ATTEMPT_EXPIRED'; end if;
-  if a.practice_mode is distinct from case s.mode when 'exam' then 'simulation' when 'review' then 'review' else 'guided' end then raise exception 'MODE_MISMATCH'; end if;
+  if a.practice_mode is distinct from (case when s.mode = 'exam' then 'simulation' when s.mode = 'review' then 'review' else 'guided' end) then raise exception 'MODE_MISMATCH'; end if;
   if a.practice_mode='review' then raise exception 'REVIEW_NO_RESCORING'; end if;
   if p_payload ? 'mode' or p_payload ? 'assistanceUsed' then raise exception 'CLIENT_AUTHORITY_FORBIDDEN'; end if;
   e := p_result->'evaluation';
@@ -118,7 +119,8 @@ begin
   insert into public.practice_tutor_requests(attempt_id,client_turn_id,payload) values(a.id,p_client_turn_id,p_payload);
   update public.practice_attempts set assistance_used=assistance_used or phase='evaluating',tutor_profile=p_payload->>'profile' where id=a.id returning * into a;
   return jsonb_build_object('claimed',true,'attempt',to_jsonb(a));
-end $$;
+end;
+$$;
 
 revoke all on function public.open_practice_attempt(uuid,uuid,text) from public,anon,authenticated;
 revoke all on function public.submit_practice_attempt(uuid,uuid,uuid,jsonb,jsonb,text) from public,anon,authenticated;
