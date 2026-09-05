@@ -23,16 +23,16 @@ interface TutorMessage {
 }
 
 const initialTutorMessage =
-  "Tutor AI gana con mérito. Las letras. Antes de responderte, te ayudaré a pensar. Pregúntame sobre el caso o sobre cómo analizar las alternativas. Puedo explicarte por qué una alternativa es plausible o no plausible sin revelarte la respuesta.";
+  "Tutor AI GCM🤖: Antes de responderte, te ayudaré a pensar. Pregúntame sobre el caso o sobre cómo analizar las alternativas; puedo explicarte por qué una alternativa es plausible o no plausible, sin revelarte la clave.";
 
 export function getTutorGuidedActions(answered: boolean, mode: PracticeMode = "guided") {
   if (mode === "simulation" || answered) {
     return [];
   }
   return [
-    "Identificar hechos y responsabilidades",
-    "Definir criterios para decidir",
-    "Comparar consecuencias sin elegir por mí",
+    "¿Cuál es mi rol y competencia aquí?",
+    "¿Cuál es la tarea evaluativa real?",
+    "¿Qué trampa esconden los distractores?",
   ];
 }
 

@@ -211,9 +211,9 @@ test("Tutor guided actions separate pre-answer help from post-answer feedback", 
 
   assert.equal(preAnswerActions.length, 3);
   assert.deepEqual(preAnswerActions, [
-    "Identificar hechos y responsabilidades",
-    "Definir criterios para decidir",
-    "Comparar consecuencias sin elegir por mí",
+    "¿Cuál es mi rol y competencia aquí?",
+    "¿Cuál es la tarea evaluativa real?",
+    "¿Qué trampa esconden los distractores?",
   ]);
 
   assert.equal(postAnswerActions.length, 0);

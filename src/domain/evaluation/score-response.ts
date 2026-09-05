@@ -29,14 +29,14 @@ function buildQualitativeFeedback(input: {
   }
 
   if (input.isCorrect) {
-    return "Respuesta correcta. Intenta justificarla brevemente en el siguiente turno.";
+    return "Respuesta correcta. Revisa el fundamento y la regla de decisión.";
   }
 
   if (input.remediationNeeded && input.userRationale?.trim()) {
     return "La respuesta no fue correcta. Tu justificación ayuda a detectar la premisa a reforzar.";
   }
 
-  return "La respuesta no fue correcta. Intenta explicar tu razonamiento para dar una mejor retroalimentación.";
+  return "La respuesta no fue correcta. Examina el fundamento de la clave para reforzar el criterio.";
 }
 
 export function scoreResponseBaselineHeuristicV1(

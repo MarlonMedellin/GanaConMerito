@@ -63,7 +63,6 @@ export function PracticeSession() {
   const [session, setSession] = useState<SessionStartResult | null>(null);
   const [item, setItem] = useState<PracticeQuestionViewModel | null>(null);
   const [selectedOption, setSelectedOption] = useState<OptionKey | null>(null);
-  const [userRationale, setUserRationale] = useState("");
   const [hintVisible, setHintVisible] = useState(false);
   const [tutorMobileOpen, setTutorMobileOpen] = useState(false);
   const [turnNumber, setTurnNumber] = useState(1);
@@ -136,7 +135,6 @@ export function PracticeSession() {
   function resetItemState() {
     setItem(null);
     setSelectedOption(null);
-    setUserRationale("");
     setHintVisible(false);
     setTutorMobileOpen(false);
     setFeedback(null);
@@ -283,7 +281,6 @@ export function PracticeSession() {
           itemId: item.id,
           attemptId: currentAttempt?.id,
           selectedOption:submissionRef.current.option,
-          userRationale: userRationale.trim() || undefined,
           clientRequestId,
         }),
       });
@@ -453,23 +450,6 @@ export function PracticeSession() {
                   );
                 })}
               </div>
-
-              {!hasFeedback ? (
-                <div className="user-rationale-section" style={{ marginTop: "1rem" }}>
-                  <label htmlFor="user-rationale" className="small" style={{ display: "block", marginBottom: "0.25rem" }}>
-                    Justificación de tu respuesta (opcional):
-                  </label>
-                  <textarea
-                    id="user-rationale"
-                    data-testid="user-rationale"
-                    value={userRationale}
-                    onChange={(e) => setUserRationale(e.target.value)}
-                    placeholder="Explica brevemente tu justificación..."
-                    disabled={loading}
-                    style={{ width: "100%", minHeight: "60px", padding: "0.5rem", borderRadius: "6px", border: "1px solid #ccc" }}
-                  />
-                </div>
-              ) : null}
 
               {hintVisible && !hasFeedback && practiceMode === "guided" ? (
                 <div className="card hint small" role="status" aria-live="polite">
