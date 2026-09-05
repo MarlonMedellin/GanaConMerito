@@ -8,6 +8,8 @@ export const startSessionSchema = z.object({
 });
 
 export const advanceSessionSchema = z.object({
+  attemptId: z.string().uuid(),
+  clientRequestId: z.string().uuid(),
   sessionId: z.string().uuid(),
   itemId: v4ItemIdSchema,
   selectedOption: z.enum(["A", "B", "C", "D"]),
@@ -20,7 +22,7 @@ export const advanceSessionSchema = z.object({
     z.literal(4),
     z.literal(5),
   ]).optional(),
-});
+}).strict();
 
 export type StartSessionInput = z.infer<typeof startSessionSchema>;
 export type AdvanceSessionInput = z.infer<typeof advanceSessionSchema>;

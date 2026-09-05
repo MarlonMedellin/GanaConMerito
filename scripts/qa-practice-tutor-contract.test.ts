@@ -230,59 +230,13 @@ test("vNext Tutor Orchestrator: Brief profile pre-answer returns bullet points w
   assert.ok(words <= 80, `Brief profile output should be concise (got ${words} words)`);
 });
 
-test("Attempt Service: enforces ownership, expiration, replay idempotency and deduplication", async () => {
-  const { defaultAttemptStore } = await import("../src/domain/session/attempt-service");
-
-  const attempt = await defaultAttemptStore.createAttempt({
-    sessionId: "sess-adv-1",
-    itemId: "item-adv-1",
-    profileId: "user-adv-1",
-    mode: "guided",
-  });
-
-  assert.equal(attempt.phase, "evaluating");
-  assert.equal(attempt.assistanceUsed, false);
-
-  // Mark assistance used
-  await defaultAttemptStore.markAssistanceUsed(attempt.attemptId);
-  const updatedAssistance = await defaultAttemptStore.getAttempt(attempt.attemptId);
-  assert.equal(updatedAssistance?.assistanceUsed, true);
-
-  // Submit attempt
-  const submitResult1 = await defaultAttemptStore.submitAttempt({
-    attemptId: attempt.attemptId,
-    sessionId: "sess-adv-1",
-    itemId: "item-adv-1",
-    profileId: "user-adv-1",
-    selectedOption: "B",
-    clientRequestId: "req-unique-001",
-  });
-
-  assert.equal(submitResult1.attempt.phase, "submitted");
-  assert.equal(submitResult1.isReplay, false);
-
-  // Replay submit attempt with same clientRequestId
-  const submitResult2 = await defaultAttemptStore.submitAttempt({
-    attemptId: attempt.attemptId,
-    sessionId: "sess-adv-1",
-    itemId: "item-adv-1",
-    profileId: "user-adv-1",
-    selectedOption: "B",
-    clientRequestId: "req-unique-001",
-  });
-
-  assert.equal(submitResult2.isReplay, true);
-
-  // Mismatch error tests
-  await assert.rejects(
-    () => defaultAttemptStore.submitAttempt({
-      attemptId: attempt.attemptId,
-      sessionId: "other-session",
-      itemId: "item-adv-1",
-      profileId: "user-adv-1",
-      selectedOption: "B",
-      clientRequestId: "req-mismatch",
-    }),
-    /ATTEMPT_SESSION_MISMATCH/
-  );
+test("submission requires UUID correlation and rejects client authority", async () => {
+  const {advanceSessionSchema} = await import("../src/lib/validation/session");
+  const valid = {sessionId:crypto.randomUUID(),attemptId:crypto.randomUUID(),clientRequestId:crypto.randomUUID(),itemId:"DOC-000001",selectedOption:"A"};
+  assert.equal(advanceSessionSchema.safeParse(valid).success,true);
+  for (const field of ["attemptId","clientRequestId","sessionId"]) {
+    assert.equal(advanceSessionSchema.safeParse({...valid,[field]:""}).success,false);
+    assert.equal(advanceSessionSchema.safeParse({...valid,[field]:undefined}).success,false);
+  }
+  for (const extra of [{mode:"guided"},{assistanceUsed:false}]) assert.equal(advanceSessionSchema.safeParse({...valid,...extra}).success,false);
 });

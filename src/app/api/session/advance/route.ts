@@ -13,7 +13,7 @@ import type { AdvanceSessionResponse } from "../../../../types/evaluation";
 import type { SessionState } from "../../../../types/session";
 
 export async function POST(request: Request) {
-  const json = await request.json();
+  const json = await request.json().catch(() => null);
   const parsedBody = advanceSessionSchema.safeParse(json);
 
   if (!parsedBody.success) {
@@ -32,14 +32,11 @@ export async function POST(request: Request) {
   const { supabase, profile, session } = auth;
   const admin = getSupabaseAdminClient();
 
-  if (session.status !== "active") {
-    return NextResponse.json({ error: "Session is no longer active" }, { status: 409 });
+  const {data: prior} = await admin.from("practice_attempts").select("phase,client_request_id,request_payload,result").eq("id",body.attemptId).eq("profile_id",profile.id).maybeSingle();
+  if (prior?.phase === "submitted") {
+    const {data,error} = await admin.rpc("submit_practice_attempt", {p_profile_id:profile.id,p_attempt_id:body.attemptId,p_request_id:body.clientRequestId,p_payload:body,p_result:prior.result,p_next_question_id:null});
+    return NextResponse.json(error ? {error:"Idempotency conflict"} : data,{status:error ? 409 : 200});
   }
-
-  if (["session_close", "expired", "error"].includes(session.current_state)) {
-    return NextResponse.json({ error: "Session is already closed" }, { status: 409 });
-  }
-
   const { data: learningProfile, error: learningProfileError } = await supabase
     .from("learning_profiles")
     .select("onboarding_completed, target_profile_code, target_opec_id, active_areas")
@@ -66,34 +63,11 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Could not load session turns" }, { status: 500 });
   }
 
-  const clientRequestId = typeof json.clientRequestId === "string" ? json.clientRequestId : "";
-  const attemptIdParam = typeof json.attemptId === "string" ? json.attemptId : "";
-
-  let attemptRecord = attemptIdParam
-    ? await defaultAttemptStore.getAttempt(attemptIdParam)
-    : await defaultAttemptStore.getLatestAttemptForSessionItem(body.sessionId, body.itemId);
-
-  if (!attemptRecord) {
-    return NextResponse.json({ error: "No active attempt found for session and item" }, { status: 400 });
+  const attemptRecord = await defaultAttemptStore.getAttempt(body.attemptId);
+  if (!attemptRecord || attemptRecord.profileId !== profile.id || attemptRecord.sessionId !== body.sessionId || attemptRecord.itemId !== body.itemId) {
+    return NextResponse.json({error:"Attempt not found"}, {status:404});
   }
-
-  if (attemptRecord.sessionId !== body.sessionId || attemptRecord.itemId !== body.itemId || attemptRecord.profileId !== profile.id) {
-    return NextResponse.json({ error: "Attempt parameters do not match authenticated session" }, { status: 403 });
-  }
-
-  if (attemptRecord.phase === "expired") {
-    return NextResponse.json({ error: "Attempt has expired" }, { status: 400 });
-  }
-
-  const { attempt: submittedAttempt, isReplay } = await defaultAttemptStore.submitAttempt({
-    attemptId: attemptRecord.attemptId,
-    sessionId: body.sessionId,
-    itemId: body.itemId,
-    profileId: profile.id,
-    selectedOption: body.selectedOption,
-    clientRequestId,
-  });
-
+  const submittedAttempt = attemptRecord;
   const evaluation = scoreResponseBaselineHeuristicV1({
     selectedOption: body.selectedOption,
     correctOption: item.correctOption,
@@ -122,47 +96,6 @@ export async function POST(request: Request) {
     isExpired: false,
     hasError: false,
   });
-
-  if (!isReplay) {
-    const { error: advanceError } = await admin.rpc("advance_session_atomic", {
-      p_profile_id: profile.id,
-      p_session_id: body.sessionId,
-      p_item_id: body.itemId,
-      p_selected_option: body.selectedOption ?? null,
-      p_user_rationale: body.userRationale ?? null,
-      p_response_time_ms: body.responseTimeMs ?? null,
-      p_confidence_self_report: body.confidenceSelfReport ?? null,
-      p_feedback_text: feedbackText,
-      p_is_correct: evaluation.isCorrect,
-      p_reasoning_score: evaluation.reasoningScore,
-      p_normative_consistency_score: evaluation.normativeConsistencyScore,
-      p_competency_score: evaluation.competencyScore,
-      p_estimated_theta_delta: evaluation.estimatedThetaDelta,
-      p_remediation_needed: evaluation.remediationNeeded,
-      p_evaluation_source: evaluation.evaluationSource,
-      p_evaluation_version: evaluation.evaluationVersion,
-      p_previous_state: previousState,
-      p_current_state: currentState,
-    });
-
-    if (advanceError) {
-      console.error("advance_session_atomic failed", {
-        message: advanceError.message,
-        details: advanceError.details,
-        hint: advanceError.hint,
-        code: advanceError.code,
-        sessionId: body.sessionId,
-        itemId: body.itemId,
-        profileId: profile.id,
-        previousState,
-        currentState,
-        evaluationSource: evaluation.evaluationSource,
-        evaluationVersion: evaluation.evaluationVersion,
-      });
-
-      return NextResponse.json({ error: "Could not persist session advance atomically" }, { status: 500 });
-    }
-  }
 
   const seenItemIds = [
     ...new Set([...(existingTurns?.map((turn) => turn.question_id).filter(Boolean) ?? []), body.itemId]),
@@ -223,5 +156,10 @@ export async function POST(request: Request) {
     attemptResult,
   };
 
-  return NextResponse.json(response, { status: 200 });
+  const {data: persisted, error: persistError} = await admin.rpc("submit_practice_attempt", {
+    p_profile_id: profile.id, p_attempt_id: body.attemptId, p_request_id: body.clientRequestId,
+    p_payload: body, p_result: response, p_next_question_id: nextItem?.id ?? null,
+  });
+  if (persistError) return NextResponse.json({error:"Submission rejected", code:persistError.code}, {status:409});
+  return NextResponse.json(persisted, {status:200});
 }

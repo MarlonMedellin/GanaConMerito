@@ -1,3 +1,5 @@
+import { z } from "zod";
+import { getSupabaseAdminClient } from "@/lib/supabase/admin";
 import { after } from "next/server";
 import { beginRequestObservation, observedJson } from "@/lib/api/canary-observability";
 import { requireOwnedSession } from "@/lib/supabase/guards";
@@ -28,10 +30,9 @@ export async function POST(request: Request) {
     const requestedProfile = typeof body.profile === "string" && ["socratic", "direct", "brief"].includes(body.profile)
       ? (body.profile as "socratic" | "direct" | "brief")
       : "socratic";
-    const attemptId = typeof body.attemptId === "string" ? body.attemptId : undefined;
-    const clientTurnId = typeof body.clientTurnId === "string" ? body.clientTurnId : undefined;
-    const mode = typeof body.mode === "string" ? body.mode : "guided";
-
+    const ids = z.object({attemptId:z.string().uuid(),clientTurnId:z.string().uuid()}).safeParse(body);
+    if (!ids.success) return observedJson(observation,{error:"attemptId and clientTurnId are required UUIDs"},{status:400,event:"canary.tutor.invalid_request"});
+    const {attemptId,clientTurnId} = ids.data;
     if (!sessionId || !itemId || !userMessage) {
       return observedJson(observation, { error: "sessionId, itemId y message son obligatorios" }, {
         status: 400,
@@ -55,26 +56,16 @@ export async function POST(request: Request) {
 
     const { supabase, profile } = auth;
 
-    // Validate authoritative attempt if attemptId provided or query latest
-    let attemptRecord = attemptId
-      ? await defaultAttemptStore.getAttempt(attemptId)
-      : await defaultAttemptStore.getLatestAttemptForSessionItem(sessionId, itemId);
-
-    if (attemptId && !attemptRecord) {
-      return observedJson(observation, { error: "Attempt not found" }, { status: 400, event: "canary.tutor.attempt_not_found", sessionId, itemId });
-    }
-
-    if (attemptRecord) {
-      if (attemptRecord.sessionId !== sessionId || attemptRecord.itemId !== itemId || attemptRecord.profileId !== profile.id) {
-        return observedJson(observation, { error: "Attempt ownership mismatch" }, { status: 403, event: "canary.tutor.attempt_mismatch", sessionId, itemId });
-      }
-      if (attemptRecord.phase === "expired") {
-        return observedJson(observation, { error: "Attempt has expired" }, { status: 400, event: "canary.tutor.attempt_expired", sessionId, itemId });
-      }
-    }
-
-    const effectiveMode: PracticeMode = attemptRecord?.mode ?? (mode === "simulation" || mode === "review" ? mode : "guided");
-
+    const admin = getSupabaseAdminClient();
+    const claimPayload = {sessionId,itemId,message:userMessage,history:conversation.history,profile:requestedProfile};
+    const {data:claim,error:claimError} = await admin.rpc("claim_practice_tutor_turn", {
+      p_profile_id:profile.id,p_attempt_id:attemptId,p_client_turn_id:clientTurnId,p_payload:claimPayload,
+    });
+    if (claimError) return observedJson(observation,{error:"Tutor turn rejected",attemptId,clientTurnId},{status:409,event:"canary.tutor.attempt_rejected"});
+    if (!claim.claimed) return observedJson(observation,claim.result ?? {error:"Turn already accepted; result unavailable",attemptId,clientTurnId},{status:claim.result ? 200 : 409,event:"canary.tutor.replay"});
+    const attemptRecord = await defaultAttemptStore.getAttempt(attemptId);
+    if (!attemptRecord) throw new Error("Persisted attempt unavailable");
+    const effectiveMode = attemptRecord.mode;
     const evidence = await buildTutorEvidence({
       supabase,
       userId: profile.id,
@@ -82,51 +73,8 @@ export async function POST(request: Request) {
       itemId,
     });
 
-    const isAnswered = Boolean(evidence.userSession.selectedOption) || attemptRecord?.phase === "submitted";
-    if (effectiveMode === "simulation" && !isAnswered) {
-      return observedJson(
-        observation,
-        {
-          output: {
-            mode: "pre_answer",
-            intent: "clarify_concept",
-            phase: "pre_answer",
-            profile: requestedProfile,
-            visibleMessage: "El Tutor antes de responder está deshabilitado en modo Simulación. Se activará después de contestar el reactivo.",
-            evidenceUsed: ["user_session"],
-            sourceTruthRefs: [],
-            guardrailsApplied: ["simulation_mode_pre_answer_disabled"],
-            canRevealCorrectAnswer: false,
-            confidence: 1.0,
-            degraded: true,
-            safety: { status: "blocked", policyVersion: "vNext-1.0" },
-            delivery: { fallbackUsed: true },
-          },
-          trace: {
-            traceId: crypto.randomUUID(),
-            userId: profile.id,
-            sessionId,
-            itemId,
-            mode: "pre_answer",
-            intent: "clarify_concept",
-            evidenceUsed: ["user_session"],
-            sourceTruthRefs: [],
-            guardrailsApplied: ["simulation_mode_pre_answer_disabled"],
-            canRevealCorrectAnswer: false,
-            degraded: true,
-            confidence: 1.0,
-            createdAt: new Date().toISOString(),
-          },
-        },
-        { status: 200, event: "canary.tutor.simulation_blocked", sessionId, itemId },
-      );
-    }
-
-    // Mark assistance used on pre-answer turn
-    if (attemptRecord && !isAnswered) {
-      await defaultAttemptStore.markAssistanceUsed(attemptRecord.attemptId);
-    }
-
+    const isAnswered = attemptRecord.phase === "submitted";
+    evidence.userSession.selectedOption = isAnswered ? attemptRecord.selectedOption : undefined;
     const tutorInput = {
       userId: profile.id,
       sessionId,
@@ -172,7 +120,10 @@ export async function POST(request: Request) {
       after(() => runTutorShadow({ input: tutorInput, deterministic: result }));
     }
 
-    return observedJson(observation, result, {
+    const correlated = {...result,attemptId,clientTurnId,assistanceUsed:claim.attempt.assistance_used};
+    const {error:resultError} = await admin.from("practice_tutor_requests").update({result:correlated}).eq("attempt_id",attemptId).eq("client_turn_id",clientTurnId);
+    if (resultError) throw new Error("Tutor result persistence failed");
+    return observedJson(observation, correlated, {
       status: 200,
       event: "canary.tutor.turn_completed",
       sessionId,

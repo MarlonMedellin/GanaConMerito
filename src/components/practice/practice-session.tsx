@@ -77,6 +77,8 @@ export function PracticeSession() {
   const [tutorProfile, setTutorProfile] = useState<"socratic" | "direct" | "brief">("socratic");
   const [assistanceUsed, setAssistanceUsed] = useState(false);
 
+  const submissionRef = useRef<{id:string; option:OptionKey} | null>(null);
+  const submittingRef = useRef(false);
   const feedbackHeaderRef = useRef<HTMLDivElement | null>(null);
   const mobileSheetRef = useRef<HTMLElement | null>(null);
   const sheetCloseButtonRef = useRef<HTMLButtonElement | null>(null);
@@ -92,6 +94,12 @@ export function PracticeSession() {
     if (!tutorMobileOpen) return;
 
     function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Tab") {
+        const nodes = Array.from(mobileSheetRef.current?.querySelectorAll<HTMLElement>('button:not(:disabled),select:not(:disabled),textarea:not(:disabled),[tabindex="0"]') ?? []).filter(el => el.getClientRects().length);
+        const first = nodes[0], last = nodes[nodes.length-1];
+        if (event.shiftKey && document.activeElement === first) {event.preventDefault();last?.focus();}
+        else if (!event.shiftKey && document.activeElement === last) {event.preventDefault();first?.focus();}
+      }
       if (event.key === "Escape") {
         closeMobileSheet();
       }
@@ -134,6 +142,7 @@ export function PracticeSession() {
     setPendingNextItemId(null);
     setAssistanceUsed(false);
     setCurrentAttempt(null);
+    submissionRef.current = null;
   }
 
   async function loadItem(sessionId: string, itemId: string) {
@@ -148,6 +157,7 @@ export function PracticeSession() {
     }
 
     setItem(data);
+    submissionRef.current = null;
     if (data.attempt) {
       setCurrentAttempt(data.attempt);
       if (data.attempt.mode) {
@@ -158,7 +168,7 @@ export function PracticeSession() {
     setHintVisible(false);
     setFeedback(null);
     setPendingNextItemId(null);
-    setAssistanceUsed(false);
+    setAssistanceUsed(data.attempt?.assistanceUsed === true);
   }
 
   async function resumeActiveSession() {
@@ -199,6 +209,23 @@ export function PracticeSession() {
     void resumeActiveSession();
   }, []);
 
+  async function handleReview() {
+    setLoading(true);
+    try {
+      const response = await fetch("/api/session/review", {cache:"no-store"});
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error);
+      const itemResponse = await fetch(`/api/session/item?sessionId=${data.sessionId}&attemptId=${data.attemptId}`,{cache:"no-store"});
+      const reviewed = await itemResponse.json();
+      if (!itemResponse.ok) throw new Error(reviewed.error);
+      setSession({sessionId:data.sessionId,currentState:"review",currentItemId:data.itemId});
+      setItem(reviewed);setCurrentAttempt(reviewed.attempt);setPracticeMode("review");
+      setFeedback(data.result);setSelectedOption(data.result.answerReview.selectedOption);
+      setAssistanceUsed(reviewed.attempt.assistanceUsed);setPendingNextItemId(null);
+    } catch (error) {setError(error instanceof Error ? error.message : "Review unavailable");}
+    finally {setLoading(false);}
+  }
+
   async function handleStart() {
     setLoading(true);
     setError(null);
@@ -236,13 +263,15 @@ export function PracticeSession() {
   }
 
   async function handleSubmitAnswer() {
-    if (!session || !item || !selectedOption) return;
+    if (!session || !item || !selectedOption || !currentAttempt || submittingRef.current) return;
+    submittingRef.current = true;
 
     setLoading(true);
     setError(null);
     setSessionMessage(null);
 
-    const clientRequestId = `req-${Date.now()}-${Math.random().toString(36).substring(2, 7)}`;
+    submissionRef.current ??= {id:crypto.randomUUID(),option:selectedOption};
+    const clientRequestId = submissionRef.current.id;
 
     try {
       const response = await fetch("/api/session/advance", {
@@ -252,7 +281,7 @@ export function PracticeSession() {
           sessionId: session.sessionId,
           itemId: item.id,
           attemptId: currentAttempt?.id,
-          selectedOption,
+          selectedOption:submissionRef.current.option,
           userRationale: userRationale.trim() || undefined,
           clientRequestId,
         }),
@@ -265,6 +294,8 @@ export function PracticeSession() {
         return;
       }
 
+      if (data.attemptResult?.attemptId !== currentAttempt.id) return;
+      setAssistanceUsed(data.attemptResult.assistanceUsed === true);
       setFeedback(data);
 
       if (data.currentState === "session_close") {
@@ -281,6 +312,7 @@ export function PracticeSession() {
     } catch (submitError) {
       setError(submitError instanceof Error ? submitError.message : "No se pudo avanzar la sesión.");
     } finally {
+      submittingRef.current = false;
       setLoading(false);
     }
   }
@@ -311,6 +343,7 @@ export function PracticeSession() {
 
   return (
     <section className="practice-page">
+      {!initializing ? <button type="button" onClick={handleReview} disabled={loading}>Revisar respuesta guardada</button> : null}
       {initializing ? <LoadingState message="Recuperando sesión activa..." /> : null}
 
       {!initializing && !session && !error ? (
@@ -368,31 +401,13 @@ export function PracticeSession() {
               <p className="eyebrow">SESIÓN DE PRÁCTICA</p>
               <span className="session-count">{turnNumber} de práctica</span>
             </div>
-            <div className="mode-toggle-header" style={{ display: "flex", gap: "0.5rem" }}>
-              <button
-                type="button"
-                className={`small ${practiceMode === "guided" ? "primary" : "secondary"}`}
-                onClick={() => !hasFeedback && setPracticeMode("guided")}
-                disabled={hasFeedback}
-              >
-                Guided
-              </button>
-              <button
-                type="button"
-                className={`small ${practiceMode === "simulation" ? "primary" : "secondary"}`}
-                onClick={() => !hasFeedback && setPracticeMode("simulation")}
-                disabled={hasFeedback}
-              >
-                Simulation
-              </button>
-            </div>
           </div>
 
           <div className="practice">
             <article className="card question-card">
               <div className="practice-meta">
                 <span>Foco <strong>{formatTechnicalLabel(item.competency)}</strong></span>
-                <span>Modalidad <strong>{practiceMode === "guided" ? "Guiada" : "Simulación"}</strong></span>
+                <span>Modalidad <strong>{practiceMode === "guided" ? "Guiada" : practiceMode === "review" ? "Revisión" : "Simulación"}</strong></span>
                 <span>Asistencia <strong>{assistanceUsed ? "Sí (Tutor consultado)" : "No (Independiente)"}</strong></span>
               </div>
               <h2 className="question-type">Tipo de Pregunta {item.questionType ? formatTechnicalLabel(item.questionType) : "no especificado"}</h2>
@@ -418,6 +433,15 @@ export function PracticeSession() {
                       type="button"
                       role="radio"
                       aria-checked={isSelected}
+                      tabIndex={isSelected || (!selectedOption && option.key === "A") ? 0 : -1}
+                      onKeyDown={(event) => {
+                        if (!["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].includes(event.key)) return;
+                        event.preventDefault();
+                        const keys:OptionKey[] = ["A","B","C","D"];
+                        const next = (keys.indexOf(option.key) + (["ArrowUp","ArrowLeft"].includes(event.key) ? 3 : 1)) % 4;
+                        setSelectedOption(keys[next]);
+                        (event.currentTarget.parentElement?.children[next] as HTMLElement)?.focus();
+                      }}
                       className={className}
                       onClick={() => !hasFeedback && setSelectedOption(option.key)}
                       disabled={loading || hasFeedback}
@@ -429,7 +453,7 @@ export function PracticeSession() {
                 })}
               </div>
 
-              {hintVisible && !hasFeedback ? (
+              {hintVisible && !hasFeedback && practiceMode === "guided" ? (
                 <div className="card hint small" role="status" aria-live="polite">
                   <strong>Pista</strong><br />
                   {item.hint ?? "Revisa qué decisión se sostiene mejor con la evidencia del caso."}
@@ -459,9 +483,7 @@ export function PracticeSession() {
               <div className="actions practice-actions">
                 {!hasFeedback ? (
                   <>
-                    <button type="button" className="secondary" onClick={() => setHintVisible(true)} disabled={loading || hintVisible}>
-                      Necesito una pista
-                    </button>
+
                     <button type="button" className="primary" onClick={handleSubmitAnswer} disabled={loading || !selectedOption}>
                       {loading ? "Enviando..." : "Responder"}
                     </button>
@@ -474,7 +496,7 @@ export function PracticeSession() {
               </div>
             </article>
 
-            <aside
+            {practiceMode !== "simulation" || hasFeedback ? <aside
               className={`tutor-zone${tutorMobileOpen ? " open" : ""}`}
               role={tutorMobileOpen ? "dialog" : undefined}
               aria-modal={tutorMobileOpen ? true : undefined}
@@ -492,16 +514,18 @@ export function PracticeSession() {
                 </button>
               ) : null}
               <TutorInterface
+                key={currentAttempt?.id}
+                attemptId={currentAttempt?.id}
                 sessionId={session?.sessionId ?? ""}
                 currentItemId={item.id}
                 answered={hasFeedback}
                 mode={practiceMode}
                 profile={tutorProfile}
                 onProfileChange={setTutorProfile}
-                onTurnExecuted={() => setAssistanceUsed(true)}
+                onTurnExecuted={setAssistanceUsed}
                 fallbackMessage={feedback?.feedbackText}
               />
-            </aside>
+            </aside> : null}
           </div>
 
           <div className="mobile-practice-actions">
@@ -509,6 +533,7 @@ export function PracticeSession() {
               type="button"
               className="secondary"
               onClick={openMobileSheet}
+              disabled={practiceMode === "simulation" && !hasFeedback}
               ref={mobileTriggerRef}
             >
               🤖 Tutor AI

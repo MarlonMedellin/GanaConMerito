@@ -1,3 +1,4 @@
+import { defaultAttemptStore } from "@/domain/session/attempt-service";
 import { NextResponse } from "next/server";
 import { selectNextItem } from "@/domain/item-selection/select-next-item";
 import { V4QuestionRepository } from "@/lib/question-bank/v4-question-repository";
@@ -74,7 +75,8 @@ export async function GET() {
     activeCompetency = lastAnswered?.competency ?? undefined;
   }
 
-  const nextItem = await selectNextItem({
+  const persisted = await defaultAttemptStore.getActiveAttempt(session.id);
+  const nextItem = persisted ? {id:persisted.itemId} : await selectNextItem({
     targetProfileCode: session.target_profile_code,
     targetOpecId: session.target_opec_id,
     profileIdForRotation: profile.id,
@@ -84,13 +86,14 @@ export async function GET() {
     excludeItemIds: seenItemIds,
   });
 
+  const attempt = persisted ?? (nextItem ? await defaultAttemptStore.createAttempt({sessionId:session.id,profileId:profile.id,itemId:nextItem.id,mode:session.mode === "exam" ? "simulation" : session.mode === "review" ? "review" : "guided"}) : null);
   return NextResponse.json(
     {
       session: {
         sessionId: session.id,
         currentState: session.current_state,
         mode: session.mode,
-        currentItemId: nextItem?.id,
+        currentItemId: attempt?.itemId,
         hintLevel: 0,
         resumed: true,
         inventory: !nextItem

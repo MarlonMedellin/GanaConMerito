@@ -12,9 +12,8 @@ interface TutorInterfaceProps {
   profile?: TutorProfile;
   onProfileChange?: (profile: TutorProfile) => void;
   fallbackMessage?: string;
-  onTurnExecuted?: () => void;
+  onTurnExecuted?: (assistanceUsed: boolean) => void;
   attemptId?: string;
-  clientTurnId?: string;
   cancelSignal?: AbortSignal;
 }
 
@@ -59,7 +58,6 @@ export function TutorInterface({
   fallbackMessage,
   onTurnExecuted,
   attemptId,
-  clientTurnId,
   cancelSignal,
 }: TutorInterfaceProps) {
   const [draft, setDraft] = useState("");
@@ -75,7 +73,7 @@ export function TutorInterface({
     return () => {
       activeFetchController.current?.abort();
     };
-  }, [currentItemId]);
+  }, [currentItemId, attemptId]);
 
   useEffect(() => {
     setSelectedProfile(externalProfile);
@@ -117,7 +115,8 @@ export function TutorInterface({
 
   async function sendTutorMessage(rawMessage: string) {
     const message = rawMessage.trim();
-    if (!message || loading) return;
+    if (!message || loading || !attemptId || activeFetchController.current) return;
+    const clientTurnId = crypto.randomUUID();
 
     if (mode === "simulation" && !answered) {
       setError("El Tutor antes de responder está deshabilitado en modo Simulación.");
@@ -129,7 +128,6 @@ export function TutorInterface({
     const history = buildClientTutorHistory(messages);
     setMessages((current: TutorMessage[]) => [...current, { role: "user", text: message }]);
 
-    activeFetchController.current?.abort();
     const controller = new AbortController();
     activeFetchController.current = controller;
 
@@ -149,22 +147,24 @@ export function TutorInterface({
           clientTurnId,
           message,
           history,
-          mode,
           profile: selectedProfile,
         }),
       });
       const data = await response.json();
 
+      if (controller.signal.aborted || activeFetchController.current !== controller) return;
       if (!response.ok) {
         throw new Error(data.error || "Error al consultar al tutor");
       }
 
+      if (data.attemptId !== attemptId || data.clientTurnId !== clientTurnId) return;
       setMessages((current: TutorMessage[]) => [...current, { role: "assistant", text: data.output.visibleMessage }]);
       setDraft("");
       if (onTurnExecuted && !answered) {
-        onTurnExecuted();
+        onTurnExecuted(data.assistanceUsed === true);
       }
     } catch (err) {
+      if (controller.signal.aborted || activeFetchController.current !== controller) return;
       if (err instanceof DOMException && err.name === "AbortError") {
         return;
       }
@@ -172,7 +172,7 @@ export function TutorInterface({
       setMessages((current: TutorMessage[]) => [...current, { role: "assistant", text }]);
       setError(fallbackMessage ? null : text);
     } finally {
-      setLoading(false);
+      if (activeFetchController.current === controller) { activeFetchController.current = null; setLoading(false); }
     }
   }
 

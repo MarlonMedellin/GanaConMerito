@@ -5,7 +5,7 @@ import test from "node:test";
 test("legacy migrations remain evidence but are absent from the executable baseline", async () => {
   const executable = await readdir("supabase/migrations");
   const legacy = await readdir("supabase/legacy-migrations");
-  assert.deepEqual(executable.sort(), ["0001_v4_clean_foundation.sql", "0002_v4_runtime_security.sql", "0003_v4_content_sync.sql"]);
+  assert.deepEqual(executable.sort(), ["0001_v4_clean_foundation.sql", "0002_v4_runtime_security.sql", "0003_v4_content_sync.sql", "20260904232738_practice_tutor_authoritative_attempts.sql"]);
   assert.equal(legacy.length, 30);
   assert.ok(legacy.includes("0030_security_question_bank_boundary_remediation.sql"));
 });

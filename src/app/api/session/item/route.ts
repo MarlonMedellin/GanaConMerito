@@ -1,3 +1,4 @@
+import { z } from "zod";
 import { NextResponse } from "next/server";
 import { defaultAttemptStore } from "../../../../domain/session/attempt-service";
 import { V4QuestionRepository } from "../../../../lib/question-bank/v4-question-repository";
@@ -7,53 +8,31 @@ import type { PracticeMode, TutorProfile } from "../../../../types/session";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
-  const itemId = searchParams.get("itemId");
-  const sessionId = searchParams.get("sessionId");
-
-  if (!itemId) {
-    return NextResponse.json({ error: "itemId is required" }, { status: 400 });
-  }
-
-  if (!sessionId) {
-    return NextResponse.json({ error: "sessionId is required" }, { status: 400 });
-  }
-
+  const parsed = z.object({sessionId: z.string().uuid(), attemptId: z.string().uuid().optional()}).safeParse({
+    sessionId: searchParams.get("sessionId"), attemptId: searchParams.get("attemptId") ?? undefined,
+  });
+  if (!parsed.success) return NextResponse.json({error: "Invalid attempt request"}, {status:400});
+  const {sessionId, attemptId} = parsed.data;
   const auth = await requireOwnedSession({ sessionId });
   if (!auth.ok) {
     return NextResponse.json({ error: auth.error }, { status: auth.status });
   }
 
-  const { session, profile } = auth;
+  const { profile } = auth;
+  const attemptRecord = attemptId ? await defaultAttemptStore.getAttempt(attemptId) : await defaultAttemptStore.getActiveAttempt(sessionId);
+  if (!attemptRecord || attemptRecord.sessionId !== sessionId || attemptRecord.profileId !== profile.id) {
+    return NextResponse.json({error: "Attempt not found"}, {status:404});
+  }
+  if (attemptRecord.phase === "expired" || (attemptRecord.phase === "evaluating" && Date.parse(attemptRecord.expiresAt) <= Date.now())) return NextResponse.json({error:"Attempt expired"}, {status:409});
   const repository = new V4QuestionRepository();
-  const item = await repository.getPracticeQuestion(itemId);
-  if (!item) {
-    return NextResponse.json({ error: "Item not found" }, { status: 404 });
-  }
-
-  // Server-authoritative mode resolution from session record (fallback to guided)
-  const sessionMode: PracticeMode = session.mode === "exam" || session.mode === "simulation"
-    ? "simulation"
-    : session.mode === "review"
-    ? "review"
-    : "guided";
-
-  const profileParam = searchParams.get("profile");
-  const selectedProfile: TutorProfile = typeof profileParam === "string" && ["socratic", "direct", "brief"].includes(profileParam)
-    ? (profileParam as TutorProfile)
-    : "socratic";
-
-  // Check existing or create new authoritative attempt
-  let attemptRecord = await defaultAttemptStore.getLatestAttemptForSessionItem(sessionId, itemId);
-  if (!attemptRecord || attemptRecord.phase === "expired") {
-    attemptRecord = await defaultAttemptStore.createAttempt({
-      sessionId,
-      itemId,
-      profileId: profile.id,
-      mode: sessionMode,
-    });
-  }
-
+  const item = await repository.getPracticeQuestion(attemptRecord.itemId);
+  if (!item) return NextResponse.json({error:"Item not found"}, {status:404});
+  const selectedProfile = "socratic";
   const viewModel = buildPracticeQuestionViewModel(item, item.options);
+  if (attemptRecord.mode === "simulation") {
+    delete viewModel.hint;
+    delete viewModel.misconceptionHints;
+  }
   const publicContract = {
     schemaVersion: "vNext-1.0",
     item: {

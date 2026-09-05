@@ -1,3 +1,4 @@
+import { defaultAttemptStore } from "@/domain/session/attempt-service";
 import { NextResponse } from "next/server";
 import { selectNextItem } from "../../../../domain/item-selection/select-next-item";
 import { isLearningProfileOnboardingComplete } from "../../../../lib/onboarding/status";
@@ -66,11 +67,13 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Could not create session" }, { status: 500 });
   }
 
+  const attempt = nextItem ? await defaultAttemptStore.createAttempt({sessionId: session.id, profileId:profile.id, itemId:nextItem.id, mode:body.mode === "exam" ? "simulation" : body.mode === "review" ? "review" : "guided"}) : null;
+
   const response: StartSessionResponse = {
     sessionId: session.id,
     currentState,
     mode: body.mode,
-    currentItemId: nextItem?.id,
+    currentItemId: attempt?.itemId,
     hintLevel: 0,
     activeArea: body.area,
     activeCompetency: body.competency,
