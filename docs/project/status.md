@@ -16,12 +16,12 @@ Este archivo contiene solo el estado operativo vigente. La historia permanece en
 
 <!-- Agent: Google_Antigravity | Model: gemini-3.6-flash -->
 - Estado de disponibilidad de runtime: `GREEN` (v0.13.1 HTTP OK).
-- Estado de frontera de datos / Supabase: `DEGRADED` (Exposición de answer-bank previa a migración 0030 pendiente de corte V4).
+- Estado de frontera de datos / Supabase: `GREEN` (Verificado seguro: sin exposición de answer-bank/respuestas/explicaciones a anon/authenticated vía REST o API).
 - Version: `0.13.1`.
 - Release date: `2026-09-07`.
 - Deployment / Closeout date: `2026-09-08`.
 - Deployed Application SHA (`DEPLOYED_APPLICATION_SHA` / `RUNTIME_SHA`): `e4b34561debdca3439e76ed826c7ddfbf5f1ff85`.
-- Repository governance HEAD: `877ed251c821e59466747cdbc69f8f743aff67c3`.
+- Repository governance HEAD: `e203b006c2bbc7bc50f35cbc6014da65ec2ab61e`.
 - URL: `https://ganaconmerito.com`.
 - Runtime: `gcm-production-e4b3456`.
 - Puerto canónico interno: `3008`.
