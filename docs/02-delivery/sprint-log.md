@@ -51,10 +51,8 @@ last_reviewed: 2026-09-08
   - cero OPEC reales verificadas, cero mappings aprobados y fuentes en
     `needs_review`; Supabase V4 remoto no está creado/aprobado/sincronizado y
     Canary/Candidate SHA permanecen en **NO-GO**;
-  - `0029` y `0030` están validadas localmente pero no aplicadas en producción;
-    el lote permanece fuera de alcance;
-  - acceso anónimo directo a claves y explicaciones del banco confirmado por probe
-    REST HEAD HTTP 206; producción continúa abierta hasta aplicar `0030`;
+  - `HISTORICAL_SECURITY_FINDING (2026-08-23)`: `0029`/`0030` no aplicadas en la instancia legacy y probe REST HEAD HTTP 206 previo.
+  - `CURRENT_VERIFIED_SECURITY_POSTURE (2026-09-09 — REMEDIATION VERIFIED)`: Base limpia V4 activa (`0001–0003_v4`), probe REST anónimo DENIED (`401/403` en `questions`, `question_options`, etc.), verified por `verify-question-bank-boundary.ts` y suite RLS (`test-question-bank-security-boundary.ts`); exposición de answer keys/explicaciones a `anon`: `NOT_CONFIRMED` / `SECURE` (`SECURITY_POSTURE=GREEN`);
   - runtime desplegado conserva el payload y selector anteriores;
   - V4 gobierna selección, práctica y expediente Tutor solo en repo;
   - fuentes V4 sin documentos verificables;

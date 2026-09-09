@@ -33,7 +33,7 @@ Runtime publico: `https://ganaconmerito.com`
 - Release date: `2026-09-07`.
 - Deployment / Closeout date: `2026-09-08`.
 - Application release SHA (`DEPLOYED_APPLICATION_SHA` / `RUNTIME_SHA`): `e4b34561debdca3439e76ed826c7ddfbf5f1ff85`.
-- Repository governance HEAD: `877ed251c821e59466747cdbc69f8f743aff67c3`.
+- Documentation baseline SHA: `0d64a5f3b3756ff527e372f966eecfe68b4fe8da` (HEAD autoritativo gestionado monotónicamente vía Git).
 - Container: `gcm-production-e4b3456`.
 - Puerto canónico interno: `3008`.
 - Imagen inmutable: `gcm-canary-app:e4b3456`.
