@@ -21,7 +21,7 @@ Este archivo contiene solo el estado operativo vigente. La historia permanece en
 - Release date: `2026-09-07`.
 - Deployment / Closeout date: `2026-09-08`.
 - Deployed Application SHA (`DEPLOYED_APPLICATION_SHA` / `RUNTIME_SHA`): `e4b34561debdca3439e76ed826c7ddfbf5f1ff85`.
-- Repository governance HEAD: `e203b006c2bbc7bc50f35cbc6014da65ec2ab61e`.
+- Documentation baseline SHA: `0d64a5f3b3756ff527e372f966eecfe68b4fe8da` (HEAD autoritativo gestionado monotónicamente vía Git).
 - URL: `https://ganaconmerito.com`.
 - Runtime: `gcm-production-e4b3456`.
 - Puerto canónico interno: `3008`.

@@ -18,7 +18,7 @@ Este archivo contiene el baseline vigente y el procedimiento reutilizable para l
 - CLOSEOUT_DATE=`2026-09-08`
 - RELEASE_STATUS=`CLOSED`
 - DEPLOYED_APPLICATION_SHA=`e4b34561debdca3439e76ed826c7ddfbf5f1ff85`
-- REPOSITORY_GOVERNANCE_HEAD=`877ed251c821e59466747cdbc69f8f743aff67c3`
+- DOCUMENTATION_BASELINE_SHA=`0d64a5f3b3756ff527e372f966eecfe68b4fe8da`
 - PRODUCTION_URL=`https://ganaconmerito.com`
 - PRODUCTION_RUNTIME=`gcm-production-e4b3456`
 - PRODUCTION_PORT=`3008`
