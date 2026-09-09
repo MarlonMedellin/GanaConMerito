@@ -194,7 +194,12 @@ activación ni deploy remotamente.
 - **HISTORICAL_SECURITY_FINDING (2026-08-23)**: El diseño de este documento analizó la migración legacy `0030` sobre el ledger histórico.
 - **CURRENT_VERIFIED_SECURITY_POSTURE (2026-09-09 — REMEDIATED / GREEN)**:
   - `SECURITY_POSTURE=GREEN`
-  - `REST_ANONYMOUS_ACCESS=DENIED` (HTTP 401/403 en vivo verificado por `scripts/verify-question-bank-boundary.ts` en Supabase de producción).
-  - `RLS_V4_BASELINE_STATUS=VERIFIED_APPLIED` (tablas `questions`, `question_options`, `v_question_bank_v4_active`, `v_question_bank_v4_practice`, `v_question_bank_v4_answered`, `content_sync_runs`).
+  - `LEGACY_PRODUCTION_PROBE_DATE=2026-09-09`
+  - `item_bank anonymous=HTTP 404 (NOT_EXPOSED / NOT_FOUND)`
+  - `item_options anonymous=HTTP 404 (NOT_EXPOSED / NOT_FOUND)`
+  - `REST_ANONYMOUS_ACCESS=DENIED` (HTTP 401/403 en tablas V4 y HTTP 404 en tablas legacy, verificado por `scripts/verify-question-bank-boundary.ts` en Supabase de producción `https://dhiytzbwodfvdrnwhkcw.supabase.co`).
+  - `RLS_V4_BASELINE_STATUS=VERIFIED_APPLIED` (tablas protegidas V4: `questions`, `question_options`, `v_question_bank_v4_active`, `v_question_bank_v4_practice`, `v_question_bank_v4_answered`, `content_sync_runs`).
+  - `ANSWER_KEY_EXPOSURE=NOT_CONFIRMED`
+  - `EXPLANATION_EXPOSURE=NOT_CONFIRMED`
   - `EXPOSURE_CONFIRMED=FALSE` (cero fuga de respuestas/explicaciones a usuarios anónimos/no autenticados).
-  - Nota de gobernanza: La ruta legacy `0029 → 0030` quedó superada (superseded) por la base limpia V4 (`0001–0003_v4`), que implementa el aislamiento de RLS en producción.
+  - Nota de gobernanza: La ruta legacy `0029 → 0030` quedó superada (superseded) por la base limpia V4 (`0001–0003_v4`), que eliminó la superficie de `item_bank`/`item_options` e implementó el aislamiento estricto de RLS en producción.
