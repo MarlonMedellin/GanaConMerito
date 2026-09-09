@@ -44,6 +44,8 @@ const checks = [
   ["content_sync_runs", "plan_hash,status"],
 ] as const;
 
+const legacyChecks = ["item_bank", "item_options"] as const;
+
 async function denied(url: string, key: string, accessToken: string) {
   for (const [object, columns] of checks) {
     const endpoint = new URL(`/rest/v1/${object}`, url);
@@ -51,6 +53,13 @@ async function denied(url: string, key: string, accessToken: string) {
     endpoint.searchParams.set("limit", "1");
     const response = await fetch(endpoint, { method: "HEAD", headers: { apikey: key, Authorization: `Bearer ${accessToken}` } });
     if (![401, 403].includes(response.status)) throw new Error(`${object} returned ${response.status}`);
+  }
+  for (const object of legacyChecks) {
+    const endpoint = new URL(`/rest/v1/${object}`, url);
+    endpoint.searchParams.set("select", "*");
+    endpoint.searchParams.set("limit", "1");
+    const response = await fetch(endpoint, { method: "HEAD", headers: { apikey: key, Authorization: `Bearer ${accessToken}` } });
+    if (![401, 403, 404].includes(response.status)) throw new Error(`Legacy endpoint ${object} returned ${response.status}`);
   }
 }
 
