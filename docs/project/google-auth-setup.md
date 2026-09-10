@@ -51,6 +51,10 @@ Configurar:
 Definir al menos:
 
 ```text
+https://ganaconmerito.com
+https://ganaconmerito.com/api/auth/callback
+https://cnsc.profemarlon.com
+https://cnsc.profemarlon.com/api/auth/callback
 http://localhost:3000
 http://localhost:3000/api/auth/callback
 ```

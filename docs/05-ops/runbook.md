@@ -24,6 +24,7 @@ Tener una guía mínima para operar, validar y recuperar contexto del repositori
 3. Revisar migraciones de Supabase pendientes o recientes.
 4. Validar que cambios estructurales tengan ADR asociado.
 5. Confirmar que `~/.openclaw/product` y el estado publicado en GitHub sean la referencia antes de tocar deploy.
+6. Si se requiere acceso remoto autenticado a GitHub, aplicar `docs/05-ops/github-authentication-runbook.md` antes de tocar `origin` o credenciales.
 
 ## Antes de desarrollar
 - Leer contexto mínimo obligatorio.
@@ -75,6 +76,7 @@ Runbook de rollback: `docs/05-ops/rollback-runbook.md`
 2. revisar diff
 3. commit en `~/.openclaw/product`
 4. push a GitHub
+5. confirmar que `git remote -v` no contiene tokens ni credenciales embebidas
 
 ### Antes de deploy
 1. confirmar que GitHub ya contiene el cambio correcto

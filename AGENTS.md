@@ -255,6 +255,19 @@ Asume multiples origenes concurrentes:
 
 Ninguna copia local debe tratarse como verdad final aislada.
 
+### Autenticacion GitHub y secretos
+
+Antes de configurar credenciales, hacer `push` autenticado o modificar `origin`,
+leer y seguir `docs/05-ops/github-authentication-runbook.md`.
+
+Reglas no negociables:
+- mantener `origin` como `https://github.com/MarlonMedellin/GanaConMerito.git`;
+- no guardar PATs/tokens en el repo, prompts, logs ni `.git/config`;
+- no pedir al humano que pegue tokens en el chat;
+- usar Fine-grained PAT limitado a `MarlonMedellin/GanaConMerito` con permiso minimo `Contents: Read and write`;
+- preferir credential helper protegido; si se usa archivo local, debe vivir fuera del repo y con permisos `600`;
+- si un token se expone, detener la operacion y pedir revocacion/rotacion.
+
 ---
 
 ## Entrega Final Obligatoria
@@ -283,3 +296,4 @@ Al cerrar cualquier tarea relevante, el agente debe reportar:
 → `docs/04-quality/quality-gates.md`
 → `docs/05-ops/runtime-and-release.md`
 → `docs/project/status.md`
+→ `docs/05-ops/github-authentication-runbook.md`

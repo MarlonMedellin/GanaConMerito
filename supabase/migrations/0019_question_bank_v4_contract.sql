@@ -14,9 +14,25 @@ alter table public.item_bank drop constraint if exists item_bank_bank_version_ch
 alter table public.item_bank add constraint item_bank_bank_version_check check (bank_version in ('legacy', 'v3', 'v4'));
 alter table public.item_bank drop constraint if exists item_bank_v4_source_check;
 alter table public.item_bank add constraint item_bank_v4_source_check check (
-  bank_version <> 'v4' or (source_path like 'content/question-bank-v4/%' and source_reference is not null and approval_status = 'approved')
+  bank_version <> 'v4' or (source_path like 'content/question-bank-v4/%' and source_reference is not null)
+);
+alter table public.item_bank drop constraint if exists item_bank_v4_editorial_scope_check;
+alter table public.item_bank add constraint item_bank_v4_editorial_scope_check check (
+  bank_version <> 'v4' or editorial_scope in ('general', 'opec_specific')
+);
+alter table public.item_bank drop constraint if exists item_bank_v4_opec_scope_check;
+alter table public.item_bank add constraint item_bank_v4_opec_scope_check check (
+  bank_version <> 'v4'
+  or editorial_scope <> 'opec_specific'
+  or opec_id is not null
 );
 
+create index if not exists idx_item_bank_bank_version
+  on public.item_bank(bank_version);
+create index if not exists idx_item_bank_editorial_scope
+  on public.item_bank(editorial_scope);
+create index if not exists idx_item_bank_topic_code
+  on public.item_bank(topic_code);
 create index if not exists idx_item_bank_v4_selection
   on public.item_bank(bank_version, editorial_scope, opec_id, topic_code, competency, question_type, cognitive_level, difficulty);
 

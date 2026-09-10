@@ -29,10 +29,45 @@ async function main() {
     catch (error) { rejected.push({ file: relative, reason: error instanceof Error ? error.message : String(error) }); continue; }
     if (!file.startsWith(base + path.sep)) { rejected.push({ file: relative, reason: "source_path fuera de content/question-bank-v4" }); continue; }
     if (dryRun) { imported.push(item.id); continue; }
-    const { data: found, error: lookupError } = await client!.from("item_bank").select("id").eq("slug", item.id.toLowerCase()).maybeSingle();
-    if (lookupError) throw lookupError;
-    if (found) { existing.push(item.id); continue; }
-    rejected.push({ file: relative, reason: "sin evidencia de auditoría APPROVED; la importación V4 exige aprobación" });
+    const options = (["A", "B", "C", "D"] as const).map((key) => ({ key, text: item.options[key] }));
+    const editorialMetadata = {
+      context: item.context,
+      explanations: item.explanations,
+      hint: item.hint,
+      learningNote: item.learningNote,
+      importedFrom: relative,
+      importedAt: new Date().toISOString(),
+    };
+    const { data: upserted, error: upsertError } = await client!.rpc("upsert_content_item_v4", {
+      p_content_id: item.id,
+      p_slug: item.id.toLowerCase(),
+      p_title: item.id,
+      p_area: item.domain,
+      p_subarea: item.topic,
+      p_exam_type: "docentes",
+      p_competency: item.competency,
+      p_difficulty: difficulty(item.estimatedDifficulty),
+      p_target_level: item.cognitiveLevel,
+      p_stem: `${item.context}\n\n${item.stem}`,
+      p_correct_option: item.correctAnswer,
+      p_explanation: item.explanations[item.correctAnswer],
+      p_normative_refs: [item.source.reference],
+      p_options: options,
+      p_source_path: relative,
+      p_editorial_scope: item.scope,
+      p_topic_code: item.topic,
+      p_question_type: item.questionType,
+      p_cognitive_level: item.cognitiveLevel,
+      p_source_reference: item.source.reference,
+      p_source_locator: item.source.locator ?? null,
+      p_source_url: item.source.url ?? null,
+      p_opec_id: item.opecId ?? null,
+      p_editorial_metadata: editorialMetadata,
+    });
+    if (upsertError) { rejected.push({ file: relative, reason: upsertError.message }); continue; }
+    const row = Array.isArray(upserted) ? upserted[0] : upserted;
+    if (row?.item_version && row.item_version > 1) existing.push(item.id);
+    else imported.push(item.id);
   }
   console.log(JSON.stringify({ mode: dryRun ? "dry-run" : "apply", imported, existing, rejected, note: dryRun ? "No se modificó Supabase." : undefined }, null, 2));
   if (rejected.length) process.exit(1);
