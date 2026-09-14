@@ -52,10 +52,6 @@ async function cleanupOldQaUsers(admin, namespace) {
 
   const deleted = [];
   for (const user of candidates) {
-    const { data: profile } = await admin.from('profiles').select('id').eq('auth_user_id', user.id).single();
-    if (profile?.id) {
-      await admin.from('practice_attempts').delete().eq('profile_id', profile.id);
-    }
     const result = await admin.auth.admin.deleteUser(user.id);
     if (result.error) {
       const message = String(result.error.message || '');
