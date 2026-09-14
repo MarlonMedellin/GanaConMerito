@@ -413,7 +413,7 @@ export function PracticeSession(props: { initialTutorProfile?: "socratic" | "dir
       ) : null}
       {initializing ? <LoadingState message="Recuperando sesión activa..." /> : null}
 
-      {!initializing && !session && !error ? (
+      {!initializing && !session ? (
         <div className="card">
           <div className="session-heading">
             <p className="eyebrow">SESIÓN DE PRÁCTICA</p>
@@ -453,7 +453,7 @@ export function PracticeSession(props: { initialTutorProfile?: "socratic" | "dir
         </div>
       ) : null}
 
-      {error ? <ErrorState message={error} onRetry={!session && !initializing ? resumeActiveSession : undefined} /> : null}
+      {error ? <ErrorState message={error} onRetry={!session && !initializing ? handleStart : undefined} /> : null}
       {sessionMessage && !error ? (
         <EmptyState
           title={sessionMessage}
