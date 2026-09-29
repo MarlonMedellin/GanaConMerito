@@ -36,11 +36,19 @@ export function detectTutorIntent(message: string): TutorIntent {
   if (["por que mi respuesta", "porque mi respuesta", "esta bien o mal", "explícame mi feedback", "explicame mi feedback"].some((term) => normalized.includes(term))) {
     return "explain_feedback";
   }
+  if (["rol y competencia", "mi rol", "competencia aqui", "competencia aquí", "marco de actuacion", "marco de actuación"].some((term) => normalized.includes(term))) {
+    return "explain_profile_alignment";
+  }
+  if (["tarea evaluativa real", "qué me piden", "que me piden", "tarea", "espera"].some((term) => normalized.includes(term))) {
+    return "explain_expected_task";
+  }
+  if (["trampa esconden", "trampa", "distractor", "distractores", "opciones"].some((term) => normalized.includes(term))) {
+    return "compare_options";
+  }
   if (["respuesta correcta", "correcta", "cuál es", "cual es"].some((term) => normalized.includes(term))) return "explain_question";
   if (["pista", "ayuda", "hint"].some((term) => normalized.includes(term))) return "give_hint";
   if (["compara", "comparar", "diferencia", "opciones"].some((term) => normalized.includes(term))) return "compare_options";
   if (["concepto", "tema", "significa"].some((term) => normalized.includes(term))) return "clarify_concept";
-  if (["qué me piden", "que me piden", "tarea", "espera"].some((term) => normalized.includes(term))) return "explain_expected_task";
   if (["justificación", "justificacion", "mi argumento", "analiza mi razonamiento", "analiza mi justificacion"].some((term) => normalized.includes(term))) return "analyze_user_rationale";
   if (["feedback", "retroalimentación", "retroalimentacion"].some((term) => normalized.includes(term))) return "explain_feedback";
   if (["siguiente práctica", "siguiente practica", "qué practico", "que practico"].some((term) => normalized.includes(term))) return "recommend_next_practice";

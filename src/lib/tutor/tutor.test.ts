@@ -219,6 +219,70 @@ test("Tutor guided actions separate pre-answer help from post-answer feedback", 
   assert.equal(postAnswerActions.length, 0);
 });
 
+test("TutorOrchestrator keeps guided pre-answer intents distinct for situational questions", async () => {
+  const messages = [
+    "¿Cuál es mi rol y competencia aquí?",
+    "¿Cuál es la tarea evaluativa real?",
+    "¿Qué trampa esconden los distractores?",
+  ];
+  const results = await Promise.all(messages.map((message) => new TutorOrchestrator().processTurn(makeInput(message))));
+  const visibleMessages = results.map((result) => result.output.visibleMessage);
+
+  assert.deepStrictEqual(results.map((result) => result.output.intent), [
+    "explain_profile_alignment",
+    "explain_expected_task",
+    "compare_options",
+  ]);
+  assert.strictEqual(new Set(visibleMessages).size, 3);
+  assert.match(visibleMessages[0], /rol|competencia|marco de actuación/i);
+  assert.match(visibleMessages[1], /tarea evaluativa real|criterio debe usar/i);
+  assert.match(visibleMessages[2], /distractores|opciones disponibles|A:/i);
+  assert.notStrictEqual(visibleMessages[0], visibleMessages[1]);
+});
+
+test("TutorOrchestrator keeps guided pre-answer intents distinct for normativa aplicada gestion_educativa", async () => {
+  const normativeEvidence: TutorEvidence = {
+    ...baseEvidence,
+    question: {
+      ...baseEvidence.question!,
+      itemId: "normativa-1",
+      area: "gestion_educativa",
+      competency: "gestion_institucional",
+      topic: "gestion_educativa",
+      questionType: "Normativa aplicada",
+      context:
+        "Una institución educativa actualizará su PEI con modelos externos y diagnóstico reciente de necesidades locales.",
+      stem: "¿Qué decisión orienta mejor la actualización del PEI?",
+      expectedUserTask:
+        "Evaluar si la decisión parte del diagnóstico institucional y adapta referentes con participación de la comunidad.",
+      options: [
+        { key: "A", text: "Adoptar el modelo externo con mejores resultados y ajustar nombres.", rationale: "Confunde referente externo con copia institucional." },
+        { key: "B", text: "Partir del diagnóstico propio, revisar principios y gestionar participación.", isCorrect: true },
+        { key: "C", text: "Conservar el PEI vigente si cumple requisitos formales.", rationale: "Reduce el PEI a cumplimiento formal." },
+        { key: "D", text: "Encargar la actualización exclusivamente al equipo directivo.", rationale: "Excluye participación de la comunidad." },
+      ],
+    },
+  };
+  const messages = [
+    "¿Cuál es mi rol y competencia aquí?",
+    "¿Cuál es la tarea evaluativa real?",
+    "¿Qué trampa esconden los distractores?",
+  ];
+  const results = await Promise.all(messages.map((message) => new TutorOrchestrator().processTurn(makeInput(message, normativeEvidence))));
+  const visibleMessages = results.map((result) => result.output.visibleMessage);
+  const staticTemplate =
+    'Para analizar "gestion_educativa", ¿cuál es la restricción o deber principal que la norma impone al actor del caso? Examina esa condición antes de ponderar las alternativas.';
+
+  assert.strictEqual(new Set(visibleMessages).size, 3);
+  assert.ok(visibleMessages.every((message) => message !== staticTemplate));
+  assert.match(visibleMessages[0], /rol|competencia|marco de actuación|gestion_institucional/i);
+  assert.match(visibleMessages[1], /tarea evaluativa real|criterio debe usar|diagnóstico/i);
+  assert.match(visibleMessages[2], /distractores|opciones disponibles|A:|C:|D:/i);
+  assert.match(visibleMessages[2], /modelo externo|requisitos formales|equipo directivo/i);
+  assert.notStrictEqual(visibleMessages[1], visibleMessages[0]);
+  assert.doesNotMatch(visibleMessages.join("\n"), /opción correcta registrada|clave registrada|La correcta es/i);
+});
+
 test("selectAnsweredTurnForItem chooses the matching answered turn for the item", () => {
   const turn = selectAnsweredTurnForItem(
     [

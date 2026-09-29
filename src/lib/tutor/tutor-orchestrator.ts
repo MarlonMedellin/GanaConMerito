@@ -1,5 +1,5 @@
 import { TUTOR_CONTRACT_VERSION, TUTOR_INSUFFICIENT_EVIDENCE_MESSAGE, hasUserAnswered, validateTutorTurnRequest } from "../../domain/tutor/contract";
-import type { TutorIntent, TutorTurnRequest, TutorTurnResponse, TutorTurnResult, TutorTurnTrace } from "../../types/tutor-turn";
+import type { QuestionTruthOption, TutorIntent, TutorTurnRequest, TutorTurnResponse, TutorTurnResult, TutorTurnTrace } from "../../types/tutor-turn";
 import { evaluateTutorGuardrails } from "./tutor-guardrails";
 import { classifyRationale, detectTutorIntent, detectTutorMode, enforceNoRevealMessage, requestsCorrectAnswer, trimToWordLimit } from "./tutor-response-policy";
 
@@ -133,10 +133,7 @@ export class TutorOrchestrator {
 
     if (!canRevealCorrectAnswer) {
       if (profile === "socratic") {
-        return trimToWordLimit(
-          `Para analizar "${question.area}", ¿cuál es la restricción o deber principal que la norma impone al actor del caso? Examina esa condición antes de ponderar las alternativas.`,
-          100,
-        );
+        return this.buildPreAnswerSocraticMessage(input, intent);
       }
       if (profile === "brief") {
         return trimToWordLimit(
@@ -221,6 +218,57 @@ export class TutorOrchestrator {
     return trimToWordLimit(
       `La pregunta evalúa ${question.competency} en ${question.area}. Tu tarea es: ${question.expectedUserTask} ${answerLine}`,
       maxWords,
+    );
+  }
+
+  private buildPreAnswerSocraticMessage(input: TutorTurnRequest, intent: TutorIntent): string {
+    const question = input.evidence.question;
+    const profile = input.evidence.aspirationalProfile;
+    const selectedState = input.evidence.userSession.selectedOption
+      ? "Ya hay una respuesta registrada; aun así evita depender de la letra y revisa el criterio."
+      : "Antes de elegir, mantén separadas la lectura del caso y la comparación de alternativas.";
+    if (!question) return TUTOR_INSUFFICIENT_EVIDENCE_MESSAGE;
+
+    const topic = question.topic || question.area;
+    const roleFrame = [
+      question.competency ? `competencia "${question.competency}"` : undefined,
+      profile?.jobName ? `rol ${profile.jobName}` : undefined,
+      profile?.performanceArea ? `área de desempeño ${profile.performanceArea}` : undefined,
+    ].filter(Boolean).join(", ");
+    const optionSummary = summarizeOptions(question.options);
+    const distractorSummary = summarizeDistractors(question.options);
+
+    if (intent === "explain_profile_alignment") {
+      return trimToWordLimit(
+        `Mira tu rol antes de mirar las letras: en "${topic}", ¿qué marco de actuación delimita a quien decide en el caso? Relaciona ${roleFrame || `la competencia "${question.competency}"`} con el hecho central: ${compact(question.stem || question.context || question.expectedUserTask, 170)}. ${selectedState}`,
+        120,
+      );
+    }
+
+    if (intent === "explain_expected_task") {
+      return trimToWordLimit(
+        `La tarea evaluativa real no es recordar una frase normativa ni copiar un modelo: es decidir qué criterio debe usar el estudiante para resolver este caso. Ubica el verbo de la pregunta, contrástalo con "${question.expectedUserTask}", y pregúntate qué evidencia del diagnóstico, contexto o deber institucional debe pesar más sin adelantar la clave.`,
+        120,
+      );
+    }
+
+    if (intent === "compare_options") {
+      return trimToWordLimit(
+        `Analiza los distractores por su función, no por intuición. Opciones disponibles: ${optionSummary}. Posibles trampas a revisar: ${distractorSummary}. ¿Qué alternativa se aparta del caso por copiar, formalizar, aplazar o concentrar la decisión sin justificarlo desde el enunciado? No elimines por letra; contrasta cada opción con la tarea.`,
+        135,
+      );
+    }
+
+    if (intent === "give_hint") {
+      return trimToWordLimit(
+        `Pista inicial: ${question.hint ?? `en "${topic}", busca qué deber o criterio organiza la decisión del actor.`} Luego compara ese criterio con las alternativas sin descartar letras por descarte rápido.`,
+        100,
+      );
+    }
+
+    return trimToWordLimit(
+      `Para analizar "${topic}", conecta la competencia "${question.competency}" con el caso concreto: ${compact(question.stem || question.context || question.expectedUserTask, 150)}. Después revisa las opciones (${optionSummary}) y pregunta cuál cumple mejor la tarea sin revelar la clave.`,
+      120,
     );
   }
 
@@ -315,4 +363,28 @@ function buildSourceTruthRefs(input: TutorTurnRequest): string[] {
     ...(input.evidence.question?.sourceRefs ?? []),
     `session:${input.sessionId}`,
   ].filter((ref): ref is string => Boolean(ref));
+}
+
+function summarizeOptions(options: QuestionTruthOption[] = []): string {
+  return options
+    .map((option) => `${option.key}: ${compact(option.text, 80)}`)
+    .join(" | ");
+}
+
+function summarizeDistractors(options: QuestionTruthOption[] = []): string {
+  const candidates = options.filter((option) => option.isCorrect !== true);
+  const source = candidates.length ? candidates : options;
+  return source
+    .slice(0, 4)
+    .map((option) => {
+      const rationale = option.rationale ? ` (${compact(option.rationale, 70)})` : "";
+      return `${option.key}: ${compact(option.text, 70)}${rationale}`;
+    })
+    .join(" | ");
+}
+
+function compact(value: string | undefined, maxLength: number): string {
+  const text = (value ?? "").replace(/\s+/g, " ").trim();
+  if (text.length <= maxLength) return text;
+  return `${text.slice(0, Math.max(0, maxLength - 3)).trim()}...`;
 }
