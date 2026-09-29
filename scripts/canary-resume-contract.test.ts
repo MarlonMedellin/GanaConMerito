@@ -46,7 +46,8 @@ test("resume reconstructs state without persisting a turn", () => {
 test("practice attempts resume before exposing start", () => {
   assert.match(practiceSession, /useEffect\(\(\) => \{\s*void resumeActiveSession\(\);/);
   assert.match(practiceSession, /fetch\("\/api\/session\/resume", \{ cache: "no-store" \}\)/);
-  assert.match(practiceSession, /!initializing && !session && !error/);
+  assert.match(practiceSession, /!initializing && !session/);
+  assert.match(practiceSession, /onRetry=\{!session && !initializing \? handleStart : undefined\}/);
 });
 
 test("remote runner enforces CAN-004 continuity and security assertions", () => {
