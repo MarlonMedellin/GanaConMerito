@@ -31,6 +31,20 @@ echo "Target SHA: $SHA ($SHORT_SHA)"
 echo "Imagen objetivo: $IMAGE_TAG"
 echo "Puerto canónico: $CANONICAL_PORT"
 
+# 0. Storage Pre-flight
+echo "=== Storage Pre-flight ==="
+AVAILABLE_SPACE=$(df -m / | awk 'NR==2 {print $4}')
+if [ "$AVAILABLE_SPACE" -lt 10240 ]; then
+  echo "ABORT DEPLOY BEFORE BUILD: Espacio insuficiente en disco. Solo hay ${AVAILABLE_SPACE} MB libres. Se requiere un margen de 10GB."
+  exit 1
+fi
+echo "Espacio en disco OK (${AVAILABLE_SPACE} MB libres)."
+
+# Docker Safe Maintenance
+echo "Limpiando cache de build de Docker y rotando logs (Mantenimiento preventivo)..."
+sudo docker builder prune -f || true
+sudo journalctl --vacuum-size=500M || true
+
 # 1. Registrar estado y contenedor actual para rollback
 CURRENT_CONTAINER=$(sudo docker ps --filter "publish=${CANONICAL_PORT}" --format "{{.Names}}" | head -n 1 || true)
 CURRENT_IMAGE=$(sudo docker ps --filter "publish=${CANONICAL_PORT}" --format "{{.Image}}" | head -n 1 || true)
