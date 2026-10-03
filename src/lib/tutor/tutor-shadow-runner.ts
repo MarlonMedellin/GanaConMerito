@@ -14,7 +14,7 @@ export async function runTutorShadow(params: {
   const provider = params.provider ?? (config ? new OpenRouterProvider(config) : null);
   if (!provider) return { status: "disabled" as const };
 
-  const rawExecution = await provider.generate(params.input);
+  const rawExecution = await provider.generate(params.input, params.deterministic.output.intent);
   const safety = rawExecution.output
     ? validateShadowSafety(rawExecution.output, params.input)
     : { ok: true as const };

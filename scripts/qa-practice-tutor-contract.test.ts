@@ -248,7 +248,7 @@ test("exactly three tactical predefined chips before answering and zero after an
   assert.deepEqual(preAnswerActions, [
     "¿Cuál es mi rol y competencia aquí?",
     "¿Cuál es la tarea evaluativa real?",
-    "¿Qué trampa esconden los distractores?",
+    "¿Qué debo vigilar al comparar las opciones?",
   ]);
 
   const postAnswerActions = getTutorGuidedActions(true, "guided");

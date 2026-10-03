@@ -143,6 +143,7 @@ export interface UserSessionTruth {
   feedback?: string;
   recentPerformanceSummary?: string;
   learningSignals?: TutorLearningSignal;
+  supportLevel?: "LOW" | "MEDIUM" | "HIGH";
 }
 
 export interface TutorSupportMisconception {

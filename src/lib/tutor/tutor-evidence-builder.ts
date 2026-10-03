@@ -129,8 +129,9 @@ export async function buildTutorEvidence(params: {
   userId: string;
   sessionId: string;
   itemId: string;
+  isAnswered?: boolean;
 }): Promise<TutorEvidence> {
-  const { supabase, userId, sessionId, itemId } = params;
+  const { supabase, userId, sessionId, itemId, isAnswered } = params;
   const questionBank = new V4QuestionRepository();
 
   const [practiceQuestion, questionSources, turnsResult, currentTurnResult, learningProfileResult] = await Promise.all([
@@ -176,11 +177,12 @@ export async function buildTutorEvidence(params: {
 
   const professionalProfile = await loadProfessionalProfile(supabase, learningProfile?.target_profile_code);
   const recentPerformanceSummary = buildRecentPerformanceSummary(turnsWithEvaluation);
+  const supportLevel = calculateSupportLevel(turnsWithEvaluation);
   const contest = buildContestTruthV1();
   const aspirationalProfile = buildAspirationalProfileTruthV1(professionalProfile);
   const resolvedSources = questionSources.map(toTutorSourceEvidence);
   const decisiveSource = resolvedSources.find((source) => source.relationType === "decisive") ?? resolvedSources[0];
-  const answeredQuestion = currentTurn?.selected_option
+  const answeredQuestion = (isAnswered ?? true) && currentTurn?.selected_option
     ? await questionBank.getAnsweredQuestion(itemId)
     : null;
   const question = practiceQuestion
@@ -224,6 +226,7 @@ export async function buildTutorEvidence(params: {
       feedback: currentTurn?.model_feedback ?? undefined,
       recentPerformanceSummary,
       learningSignals,
+      supportLevel,
     },
   };
 }
@@ -259,4 +262,15 @@ function buildRecentPerformanceSummary(turns: TutorSessionTurnWithEvaluation[]):
 
 export function selectAnsweredTurnForItem(turns: TutorSessionTurnWithEvaluation[], itemId: string) {
   return turns.find((turn) => turn.question_id === itemId && Boolean(turn.selected_option));
+}
+
+export function calculateSupportLevel(turns: TutorSessionTurnWithEvaluation[]): "LOW" | "MEDIUM" | "HIGH" {
+  const answered = turns.filter((turn) => turn.selected_option && turn.is_correct !== null);
+  const recent = answered.slice(0, 6);
+  if (recent.length < 5) return "MEDIUM";
+  const correctCount = recent.filter((t) => t.is_correct).length;
+  const accuracy = correctCount / recent.length;
+  if (accuracy >= 0.8) return "LOW";
+  if (accuracy <= 0.4) return "HIGH";
+  return "MEDIUM";
 }

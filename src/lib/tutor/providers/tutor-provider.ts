@@ -2,7 +2,7 @@ import type { TutorTurnRequest } from "../../../types/tutor-turn";
 
 export interface TutorProvider<TOutput> {
   readonly name: string;
-  generate(input: TutorTurnRequest): Promise<TOutput>;
+  generate(input: TutorTurnRequest, intent?: string): Promise<TOutput>;
 }
 
 export interface TutorShadowOutput {
