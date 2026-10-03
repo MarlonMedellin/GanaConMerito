@@ -14,6 +14,18 @@ last_reviewed: 2026-08-30
 
 Este archivo conserva solo los cambios recientes que afectan el estado vigente. La historia completa permanece en Git, PRs, tags y GitHub Releases.
 
+## 2026-10-03 - v0.14.0 publicada en producción
+
+<!-- Agent: Google_Antigravity | Model: Gemini 3.1 Pro -->
+
+- Tipo: `release+runtime`.
+- Version: `0.14.0`.
+- Release date: `2026-10-03`.
+- Deployed Application SHA: `31050a06c7d86b2820d673ad5f6e81c466791ad0`.
+- Funcionalidades: Tutor vNext adaptativo (Trusted Intents, SafeScaffold, Frontera PRE/POST segura).
+- Deuda documentada: `GCM_DEBT_OPEC_SPECIFIC_TARGETING` pendiente.
+
+
 ## 2026-09-08 - v0.13.1 cerrada y publicada en producción
 
 <!-- Agent: Google_Antigravity | Model: gemini-3.6-flash -->

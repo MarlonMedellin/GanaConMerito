@@ -25,9 +25,9 @@ No crear una segunda constante editable de version. `package.json.version` no es
 ## Release vigente en producción
 
 <!-- Agent: Google_Antigravity | Model: gemini-3.6-flash -->
-- Version: `0.13.1`.
-- Release date: `2026-09-07`.
-- Deployment / Closeout date: `2026-09-08`.
+- Version: `0.14.0`.
+- Release date: `2026-10-03`.
+- Deployment / Closeout date: `2026-10-03`.
 - Deployed Application SHA (`DEPLOYED_APPLICATION_SHA` / `RUNTIME_SHA`): `e4b34561debdca3439e76ed826c7ddfbf5f1ff85`.
 - Documentation baseline SHA: `0d64a5f3b3756ff527e372f966eecfe68b4fe8da` (HEAD autoritativo gestionado monotónicamente vía Git).
 - Estado: `CLOSED`.
