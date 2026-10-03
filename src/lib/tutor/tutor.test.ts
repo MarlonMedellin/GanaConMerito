@@ -235,7 +235,7 @@ test("TutorOrchestrator keeps guided pre-answer intents distinct for situational
   ]);
   assert.strictEqual(new Set(visibleMessages).size, 3);
   assert.match(visibleMessages[0], /rol|competencia|marco de actuación/i);
-  assert.match(visibleMessages[1], /tarea evaluativa real|criterio debe usar/i);
+  assert.match(visibleMessages[1], /operación específica te exige el caso|Contrástalo con la expectativa/i);
   assert.match(visibleMessages[2], /distractores|opciones disponibles|A:/i);
   assert.notStrictEqual(visibleMessages[0], visibleMessages[1]);
 });
