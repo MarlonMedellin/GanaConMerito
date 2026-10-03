@@ -51,7 +51,7 @@ export async function coordinateVisibleTutorTurn(params: {
   const provider = params.provider ?? new OpenRouterProvider(config!);
   let execution: TutorShadowExecution;
   try {
-    execution = await provider.generate(params.input);
+    execution = await provider.generate(params.input, params.deterministic.output.intent);
   } catch {
     execution = { status: "failed", latencyMs: 0, errorCode: "provider_exception" };
   }

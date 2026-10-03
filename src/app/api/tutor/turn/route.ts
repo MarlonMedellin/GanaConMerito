@@ -66,14 +66,14 @@ export async function POST(request: Request) {
     const attemptRecord = await defaultAttemptStore.getAttempt(attemptId);
     if (!attemptRecord) throw new Error("Persisted attempt unavailable");
     const effectiveMode = attemptRecord.mode;
+    const isAnswered = attemptRecord.phase === "submitted";
     const evidence = await buildTutorEvidence({
       supabase,
       userId: profile.id,
       sessionId,
       itemId,
+      isAnswered,
     });
-
-    const isAnswered = attemptRecord.phase === "submitted";
     evidence.userSession.selectedOption = isAnswered ? attemptRecord.selectedOption : undefined;
     const tutorInput = {
       userId: profile.id,

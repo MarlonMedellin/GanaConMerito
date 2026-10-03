@@ -38,7 +38,7 @@ export function getTutorGuidedActions(answered: boolean, mode: PracticeMode = "g
   return [
     "¿Cuál es mi rol y competencia aquí?",
     "¿Cuál es la tarea evaluativa real?",
-    "¿Qué trampa esconden los distractores?",
+    "¿Qué debo vigilar al comparar las opciones?",
   ];
 }
 

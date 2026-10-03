@@ -213,7 +213,7 @@ test("Tutor guided actions separate pre-answer help from post-answer feedback", 
   assert.deepEqual(preAnswerActions, [
     "¿Cuál es mi rol y competencia aquí?",
     "¿Cuál es la tarea evaluativa real?",
-    "¿Qué trampa esconden los distractores?",
+    "¿Qué debo vigilar al comparar las opciones?",
   ]);
 
   assert.equal(postAnswerActions.length, 0);
@@ -223,7 +223,7 @@ test("TutorOrchestrator keeps guided pre-answer intents distinct for situational
   const messages = [
     "¿Cuál es mi rol y competencia aquí?",
     "¿Cuál es la tarea evaluativa real?",
-    "¿Qué trampa esconden los distractores?",
+    "¿Qué debo vigilar al comparar las opciones?",
   ];
   const results = await Promise.all(messages.map((message) => new TutorOrchestrator().processTurn(makeInput(message))));
   const visibleMessages = results.map((result) => result.output.visibleMessage);
@@ -266,7 +266,7 @@ test("TutorOrchestrator keeps guided pre-answer intents distinct for normativa a
   const messages = [
     "¿Cuál es mi rol y competencia aquí?",
     "¿Cuál es la tarea evaluativa real?",
-    "¿Qué trampa esconden los distractores?",
+    "¿Qué debo vigilar al comparar las opciones?",
   ];
   const results = await Promise.all(messages.map((message) => new TutorOrchestrator().processTurn(makeInput(message, normativeEvidence))));
   const visibleMessages = results.map((result) => result.output.visibleMessage);
