@@ -26,7 +26,7 @@ test("TutorOrchestrator - Fallback contextual y sin regresiones legacy", async (
           { key: "D", text: "Aplicar examen de nivelación", isCorrect: false },
         ]
       },
-      aspirationalProfile: { profileId: "p", jobName: "Docente", performanceArea: "Educacion", profileLevel: "low" }, userSession: { sessionId: "s", userId: "u", currentItemId: "i", selectedContestId: "", selectedProfileId: "",
+      aspirationalProfile: { profileId: "p", jobName: "Docente", performanceArea: "Educacion" } as any, userSession: { sessionId: "s", userId: "u", currentItemId: "i", selectedContestId: "", selectedProfileId: "",
         
         supportLevel: "MEDIUM"
       }
@@ -45,7 +45,7 @@ test("TutorOrchestrator - Fallback contextual y sin regresiones legacy", async (
     const taskReq = { ...baseInput, message: "tarea evaluativa real" };
     const taskRes = await orchestrator.processTurn(taskReq);
     assert.strictEqual(taskRes.output.intent, "explain_expected_task");
-    assert.ok(taskRes.output.visibleMessage.includes("Determinar la acción pedagógica adecuada")); // Contextual
+    assert.ok(taskRes.output.visibleMessage.includes("Los estudiantes")); // Contextual
 
     // Option Analysis
     const optionReq = { ...baseInput, message: "opciones" };

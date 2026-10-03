@@ -150,7 +150,7 @@ export class TutorOrchestrator {
 
     if (intent === "give_hint") {
       return trimToWordLimit(
-        `Pista: ${question.hint ?? `enfócate en la competencia "${question.competency}" y separa el contexto del enunciado.`} La mejor alternativa responde a: ${question.expectedUserTask}`,
+        `Pista: ${question.hint ?? `enfócate en la competencia "${question.competency}" y separa el contexto del enunciado.`} La mejor alternativa responde a: ${question.stem || question.expectedUserTask}`,
         maxWords,
       );
     }
@@ -207,7 +207,7 @@ export class TutorOrchestrator {
       ? `La clave registrada es ${question.correctOption}: ${question.correctExplanation}`
       : "No revelo la clave antes de que respondas.";
     return trimToWordLimit(
-      `La pregunta evalúa ${question.competency} en ${question.area}. Tu tarea es: ${question.expectedUserTask} ${answerLine}`,
+      `La pregunta evalúa ${question.competency} en ${question.area}. Tu tarea es: ${question.stem || question.expectedUserTask} ${answerLine}`,
       maxWords,
     );
   }
@@ -219,7 +219,7 @@ export class TutorOrchestrator {
 
     const competency = formatTechnicalLabel(question.competency);
     const area = formatTechnicalLabel(question.area);
-    const contextStr = compact(question.stem || question.context || question.expectedUserTask, 120);
+    const contextStr = compact(question.context || question.stem || question.expectedUserTask, 120);
 
     if (intent === "explain_profile_alignment") {
       const roleStr = profile?.jobName ? `rol de ${profile.jobName}` : `tu rol profesional`;
@@ -230,25 +230,25 @@ export class TutorOrchestrator {
     }
     if (intent === "explain_expected_task") {
       return trimToWordLimit(
-        `La tarea evaluativa exige una operación específica frente a este escenario: ${question.expectedUserTask}. Aplica este criterio a la evidencia presentada en: ${contextStr}.`,
+        `La tarea evaluativa exige una operación específica frente a este escenario: ${question.stem || question.expectedUserTask}. Aplica este criterio a la evidencia presentada en: ${contextStr}.`,
         140
       );
     }
     if (intent === "compare_options") {
       const optionSummary = summarizeOptions(question.options);
       return trimToWordLimit(
-        `Compara las cuatro alternativas usando dos dimensiones objetivas derivadas del caso: 1. Alineación con ${competency}. 2. Efectividad para resolver la tarea planteada (${question.expectedUserTask}). Opciones: ${optionSummary}. Aplica estos criterios por igual a todas las opciones sin inferir la clave.`,
+        `Compara las cuatro alternativas usando dos dimensiones objetivas derivadas del caso: 1. Alineación con ${competency}. 2. Efectividad para resolver la tarea planteada (${question.stem || question.expectedUserTask}). Opciones: ${optionSummary}. Aplica estos criterios por igual a todas las opciones sin inferir la clave.`,
         140
       );
     }
     if (intent === "give_hint") {
       return trimToWordLimit(
-        `Pista: ${question.hint ?? `Enfócate en la tarea: ${question.expectedUserTask}`}. Usa el contexto (${contextStr}) para tomar la decisión.`,
+        `Pista: ${question.hint ?? `Enfócate en la tarea: ${question.stem || question.expectedUserTask}`}. Usa el contexto (${contextStr}) para tomar la decisión.`,
         100
       );
     }
     return trimToWordLimit(
-      `Examina los criterios clave: Competencia en ${competency}. Tarea: ${question.expectedUserTask}. Compara las opciones objetivamente.`,
+      `Examina los criterios clave: Competencia en ${competency}. Tarea: ${question.stem || question.expectedUserTask}. Compara las opciones objetivamente.`,
       140
     );
   }
@@ -271,7 +271,7 @@ export class TutorOrchestrator {
     }
     if (intent === "explain_expected_task") {
       return trimToWordLimit(
-        `• Operación cognitiva: ${question.expectedUserTask}.
+        `• Operación cognitiva: ${question.stem || question.expectedUserTask}.
 • Foco: Responde exactamente a la demanda del caso.
 • Acción: Analiza la evidencia provista.`,
         80
@@ -280,17 +280,17 @@ export class TutorOrchestrator {
     if (intent === "compare_options") {
       return trimToWordLimit(
         `• Dimensión 1: Cumplimiento de ${competency}.
-• Dimensión 2: Ajuste a ${question.expectedUserTask}.
+• Dimensión 2: Ajuste a ${question.stem || question.expectedUserTask}.
 • Acción: Evalúa A, B, C y D bajo ambas dimensiones.`,
         80
       );
     }
     if (intent === "give_hint") {
-      return trimToWordLimit(`• Pista: ${question.hint ?? `Atiende a ${question.expectedUserTask}`}.`, 80);
+      return trimToWordLimit(`• Pista: ${question.hint ?? `Atiende a ${question.stem || question.expectedUserTask}`}.`, 80);
     }
     return trimToWordLimit(
       `• Competencia: ${competency}.
-• Tarea: ${question.expectedUserTask}.
+• Tarea: ${question.stem || question.expectedUserTask}.
 • Compara objetivamente.`,
       80
     );
@@ -303,7 +303,7 @@ export class TutorOrchestrator {
 
     const competency = formatTechnicalLabel(question.competency);
     const area = formatTechnicalLabel(question.area);
-    const contextStr = compact(question.stem || question.context || question.expectedUserTask, 170);
+    const contextStr = compact(question.context || question.stem || question.expectedUserTask, 170);
 
     const roleStr = profile?.jobName ? `el rol de ${profile.jobName}` : `tu rol`;
     const optionSummary = summarizeOptions(question.options);
@@ -317,14 +317,14 @@ export class TutorOrchestrator {
 
     if (intent === "explain_expected_task") {
       return trimToWordLimit(
-        `¿Qué operación específica te exige el caso? Contrástalo con la expectativa: ${question.expectedUserTask}. Pregúntate qué elemento del contexto (${contextStr}) determina la decisión.`,
+        `¿Qué operación específica te exige el caso? Contrástalo con la expectativa: ${question.stem || question.expectedUserTask}. Pregúntate qué elemento del contexto (${contextStr}) determina la decisión.`,
         120
       );
     }
 
     if (intent === "compare_options") {
       return trimToWordLimit(
-        `Compara las cuatro alternativas bajo una misma lente: ¿En qué medida cada opción responde a ${question.expectedUserTask} y demuestra ${competency}? Opciones: ${optionSummary}. Aplica este contraste por igual sin adelantar conclusiones.`,
+        `Compara las cuatro alternativas bajo una misma lente: ¿En qué medida cada opción responde a ${question.stem || question.expectedUserTask} y demuestra ${competency}? Opciones: ${optionSummary}. Aplica este contraste por igual sin adelantar conclusiones.`,
         135
       );
     }

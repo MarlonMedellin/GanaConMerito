@@ -220,6 +220,7 @@ export class OpenRouterProvider implements TutorProvider<TutorShadowExecution> {
           },
           body: JSON.stringify({
             model: this.config.model,
+            max_tokens: 250,
             messages: [
               { role: "system", content: buildShadowSystemPrompt(input, intent) },
               { role: "user", content: JSON.stringify(buildMinimizedShadowDossier(input, intent)) },
